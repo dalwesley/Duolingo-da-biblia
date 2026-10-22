@@ -1,0 +1,704 @@
+{
+ "study": {
+  "passageRef": "Mateus 6:19–21",
+  "passages": [
+   {
+    "ref": "Mateus 6:19–21"
+   },
+   {
+    "ref": "Mateus 6:25–27"
+   },
+   {
+    "ref": "Mateus 6:33–34"
+   }
+  ],
+  "context": "Jesus liga tesouro, olho e senhor: onde está o tesouro, ali está o coração. Contra a ansiedade por comida e roupa, ele aponta aves e lírios e manda buscar primeiro o Reino do Pai que sabe.",
+  "keyword": "Reino",
+  "keywordGloss": "Governo de Deus buscado em primeiro lugar, acima de tesouros e ansiedades da vida.",
+  "focusQuestion": "O que seu dinheiro, seu olhar e suas preocupações revelam sobre o seu senhor?",
+  "reflectionPrompts": [
+   "Tesouro que puxa o coração",
+   "Olhar para aves e lírios",
+   "Reino em primeiro lugar"
+  ],
+  "facts": [
+   {
+    "text": "Tesouros na terra são corroídos e roubados.",
+    "evidenceRef": "Mateus 6:19",
+    "evidenceSpan": "onde a traça e a ferrugem corroem"
+   },
+   {
+    "text": "Onde está o tesouro, ali está o coração.",
+    "evidenceRef": "Mateus 6:21",
+    "evidenceSpan": "onde estiver o seu tesouro, ali estará também o seu coração"
+   },
+   {
+    "text": "Ninguém pode servir a dois senhores ao mesmo tempo.",
+    "evidenceRef": "Mateus 6:24",
+    "evidenceSpan": "Ninguém pode servir a dois senhores"
+   },
+   {
+    "text": "As aves são sustentadas pelo Pai celestial sem semear.",
+    "evidenceRef": "Mateus 6:26",
+    "evidenceSpan": "o seu Pai celestial as sustenta"
+   },
+   {
+    "text": "Buscar primeiro o Reino vem antes das outras coisas.",
+    "evidenceRef": "Mateus 6:33",
+    "evidenceSpan": "Busquem, pois, em primeiro lugar, o reino de Deus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "tesouro",
+    "gloss": "Aquilo que a pessoa guarda como maior valor e que puxa seu coração."
+   },
+   {
+    "term": "coração",
+    "gloss": "Centro que segue o tesouro escolhido, seja na terra ou no céu."
+   },
+   {
+    "term": "ansiosos",
+    "gloss": "Preocupados como quem não conhece o Pai que sustenta e sabe."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Tesouro na terra contra tesouro no céu",
+    "evidenceRef": "Mateus 6:19"
+   },
+   {
+    "label": "Coração segue o tesouro escolhido",
+    "evidenceRef": "Mateus 6:21"
+   },
+   {
+    "label": "Um só senhor para o coração",
+    "evidenceRef": "Mateus 6:24"
+   },
+   {
+    "label": "Reino primeiro e Pai que acrescenta",
+    "evidenceRef": "Mateus 6:33"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "O coração estará onde o tesouro estiver guardado pela pessoa.",
+    "marker": "Pois",
+    "evidenceRef": "Mateus 6:21"
+   },
+   {
+    "kind": "contraste",
+    "text": "Aves e lírios vivem sem ansiedade sob o cuidado do Pai celestial.",
+    "marker": "contudo",
+    "evidenceRef": "Mateus 6:26"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Timóteo 6:10",
+    "bridge": "Dinheiro não pode reinar"
+   },
+   {
+    "ref": "Filipenses 4:6",
+    "bridge": "Ansiedade entregue em oração"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Buscar primeiro o Reino é fórmula automática de prosperidade material.",
+    "why": "Jesus promete o necessário do Pai que sabe, não um manual de riqueza (6:32–33)."
+   },
+   {
+    "text": "Não ficar ansioso significa nunca planejar nem trabalhar pelo sustento.",
+    "why": "O ensino troca o senhor do coração: aves e lírios apontam ao Pai, não à preguiça."
+   },
+   {
+    "text": "Tesouro no céu é conta de méritos que obriga Deus a pagar depois.",
+    "why": "É onde o coração fica: com o Pai, não numa negociação com ele."
+   }
+  ],
+  "centralInsight": "O tesouro puxa o coração",
+  "anchorQuestion": "Onde estará o coração de uma pessoa, segundo Mateus 6:21?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 6:21, onde estiver o tesouro da pessoa, ali estará o coração dela",
+   "verseRef": "Mateus 6:21",
+   "correctOptionId": "true",
+   "evidenceSpan": "onde estiver o seu tesouro, ali estará também o seu coração",
+   "feedbackCorrect": "Tesouro e coração andam juntos: um mostra onde o outro realmente está.",
+   "feedbackWrong": {
+    "false": "É a frase central de Jesus nesse bloco inteiro."
+   },
+   "hint": "Junte tesouro e coração na mesma frase.",
+   "learningObjective": "Observar a ligação entre tesouro e coração.",
+   "evidence": [
+    "Mateus 6:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:19, toque onde Jesus manda não acumular tesouros.",
+   "verseRef": "Mateus 6:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre a terra"
+    },
+    {
+     "id": "b",
+     "text": "tesouros"
+    },
+    {
+     "id": "c",
+     "text": "a ferrugem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não acumulem para vocês tesouros sobre a terra",
+   "feedbackCorrect": "O problema não é ter pão de hoje, mas guardar o coração em tesouro passageiro.",
+   "feedbackWrong": {
+    "b": "Isso é o que se acumula, não o lugar onde não acumular.",
+    "c": "Isso corrói o tesouro, não é o lugar citado no começo."
+   },
+   "hint": "Procure o lugar citado logo após o que se acumula.",
+   "learningObjective": "Identificar o lugar do tesouro passageiro.",
+   "evidence": [
+    "Mateus 6:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 6:20, onde ajuntar tesouros que traça e ladrão não alcançam?",
+   "verseRef": "Mateus 6:19–20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Num cofre mais forte sobre a terra"
+    },
+    {
+     "id": "b",
+     "text": "No céu, junto do Pai que vê"
+    },
+    {
+     "id": "c",
+     "text": "Em nome de outras pessoas da família"
+    },
+    {
+     "id": "d",
+     "text": "Debaixo da casa onde ninguém procura"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ajuntem para vocês tesouros no céu",
+   "feedbackCorrect": "O céu é o cofre que corrosão e roubo não alcançam, diz Jesus.",
+   "feedbackWrong": {
+    "a": "Qualquer cofre na terra continua ao alcance citado em 6:19.",
+    "c": "Trocar o nome não muda o lugar onde o tesouro fica.",
+    "d": "Esconder na terra não resolve traça, ferrugem e ladrões."
+   },
+   "hint": "Veja o lugar oposto à terra em 6:20.",
+   "learningObjective": "Observar o tesouro seguro em 6:20.",
+   "evidence": [
+    "Mateus 6:19–20"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 6:21 na ordem do texto.",
+   "verseRef": "Mateus 6:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pois onde estiver o seu tesouro"
+    },
+    {
+     "id": "b",
+     "text": "ali estará também"
+    },
+    {
+     "id": "c",
+     "text": "o seu coração"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ali estará também o seu coração",
+   "feedbackCorrect": "Primeiro o tesouro guardado, depois o coração que o acompanha sempre.",
+   "feedbackWrong": {
+    "default": "Comece pelo lugar do tesouro citado por Jesus."
+   },
+   "hint": "O coração aparece no fim da frase de Jesus.",
+   "learningObjective": "Reconhecer a sequência de Mateus 6:21.",
+   "evidence": [
+    "Mateus 6:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 6:21, o que estará onde estiver o tesouro da pessoa?",
+   "verseRef": "Mateus 6:20–21",
+   "options": [
+    {
+     "id": "a",
+     "text": "coração"
+    },
+    {
+     "id": "b",
+     "text": "olho"
+    },
+    {
+     "id": "c",
+     "text": "corpo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ali estará também o seu coração",
+   "feedbackCorrect": "Descobrir o tesouro de alguém é descobrir onde o coração dele mora.",
+   "feedbackWrong": {
+    "b": "Olho é a lâmpada tratada logo depois, em 6:22.",
+    "c": "Corpo aparece ligado ao olho, não ao tesouro aqui."
+   },
+   "hint": "É o centro da pessoa que segue o tesouro.",
+   "learningObjective": "Lembrar o que segue o tesouro em 6:21.",
+   "evidence": [
+    "Mateus 6:20–21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 6:21 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 6:20–21",
+   "passageA": {
+    "ref": "Mateus 6:21"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Dinheiro, olhar e preocupações mostram, no Sermão, quem é o senhor do coração."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Tesouro puxa o coração"
+    },
+    {
+     "id": "b",
+     "text": "Coração ignora o tesouro"
+    },
+    {
+     "id": "c",
+     "text": "Tesouro não revela nada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o seu tesouro, ali estará também o seu coração",
+   "feedbackCorrect": "Jesus lê o coração pelo cofre: o que se guarda manda na pessoa.",
+   "feedbackWrong": {
+    "b": "O texto liga os dois de forma direta e inseparável.",
+    "c": "O tesouro revela justamente quem governa por dentro."
+   },
+   "hint": "Veja a direção do puxão citado por Jesus.",
+   "learningObjective": "Ligar tesouro guardado e senhorio do coração.",
+   "evidence": [
+    "Mateus 6:20–21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 6:24, ninguém pode servir a dois senhores ao mesmo tempo sem se dividir",
+   "verseRef": "Mateus 6:24",
+   "correctOptionId": "true",
+   "evidenceSpan": "Ninguém pode servir a dois senhores",
+   "feedbackCorrect": "Deus e riquezas pedem o coração inteiro: um dos dois será desprezado.",
+   "feedbackWrong": {
+    "false": "A impossibilidade é a primeira frase de Jesus em 6:24."
+   },
+   "hint": "Olhe a primeira declaração do versículo.",
+   "learningObjective": "Compreender a exclusividade do senhorio.",
+   "evidence": [
+    "Mateus 6:24"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:26, toque quem Jesus manda observar contra a ansiedade.",
+   "verseRef": "Mateus 6:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "aves do céu"
+    },
+    {
+     "id": "b",
+     "text": "em celeiros"
+    },
+    {
+     "id": "c",
+     "text": "muito mais valor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Observem as aves do céu",
+   "feedbackCorrect": "Jesus educa o olhar ansioso mandando contemplar quem o Pai sustenta.",
+   "feedbackWrong": {
+    "b": "Isso é o que as aves não fazem, não quem observar.",
+    "c": "Isso é o valor dos discípulos, dito no fim do versículo."
+   },
+   "hint": "Procure os seres vivos citados no começo.",
+   "learningObjective": "Reconhecer o exemplo das aves em 6:26.",
+   "evidence": [
+    "Mateus 6:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 6:26 responde à ansiedade citada em Mateus 6:25?",
+   "verseRef": "Mateus 6:25–26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Promete acúmulo para quem parar de trabalhar"
+    },
+    {
+     "id": "b",
+     "text": "Aponta ao Pai que sustenta até as aves do céu"
+    },
+    {
+     "id": "c",
+     "text": "Manda ignorar comida e corpo para sempre viver"
+    },
+    {
+     "id": "d",
+     "text": "Garante riqueza igual à de todos os ricos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o seu Pai celestial as sustenta",
+   "feedbackCorrect": "Se o Pai cuida das aves, quanto mais dos filhos que valem muito mais.",
+   "feedbackWrong": {
+    "a": "Aves não acumulam, e nem por isso o Pai as abandona.",
+    "c": "Comida e corpo importam; o Pai sabe que precisamos deles (6:32).",
+    "d": "A promessa é cuidado do Pai, não fortuna garantida."
+   },
+   "hint": "Veja quem sustenta quem no versículo das aves.",
+   "learningObjective": "Relacionar ansiedade e cuidado do Pai.",
+   "evidence": [
+    "Mateus 6:25–26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia o argumento de Mateus 6:19 a 6:24?",
+   "verseRef": "Mateus 6:19–20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Tesouro escolhido guarda o coração"
+    },
+    {
+     "id": "b",
+     "text": "Olho bom enche o corpo de luz"
+    },
+    {
+     "id": "c",
+     "text": "Um só senhor governa a vida"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ajuntem para vocês tesouros no céu",
+   "feedbackCorrect": "Tesouro, olhar e senhor: Jesus sobe do cofre ao dono do coração inteiro.",
+   "feedbackWrong": {
+    "default": "Comece pelo tesouro de 6:19–21."
+   },
+   "hint": "O senhor único é a conclusão em 6:24.",
+   "learningObjective": "Compreender o encadeamento até o senhorio único.",
+   "evidence": [
+    "Mateus 6:19–20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 6:33, o que buscar em primeiro lugar antes das outras coisas?",
+   "verseRef": "Mateus 6:33",
+   "options": [
+    {
+     "id": "a",
+     "text": "reino"
+    },
+    {
+     "id": "b",
+     "text": "tesouro"
+    },
+    {
+     "id": "c",
+     "text": "descanso"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em primeiro lugar, o reino de Deus e a sua justiça",
+   "feedbackCorrect": "A ansiedade se ordena quando o Reino volta ao primeiro lugar do coração.",
+   "feedbackWrong": {
+    "b": "Tesouro na terra é o que puxa o coração para baixo.",
+    "c": "Descanso é fruto, não a busca ordenada por Jesus."
+   },
+   "hint": "É o governo de Deus citado no versículo.",
+   "learningObjective": "Lembrar a prioridade ensinada em 6:33.",
+   "evidence": [
+    "Mateus 6:33"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 6:24 a 1 Timóteo 6:10?",
+   "verseRef": "Mateus 6:24",
+   "passageA": {
+    "ref": "Mateus 6:24"
+   },
+   "passageB": {
+    "ref": "1 Timóteo 6:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Dinheiro não pode reinar"
+    },
+    {
+     "id": "b",
+     "text": "Dinheiro é sempre pecado"
+    },
+    {
+     "id": "c",
+     "text": "Servir a Deus enriquece"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não podem servir a Deus e às riquezas",
+   "feedbackCorrect": "Paulo chama o amor ao dinheiro de raiz de males; Jesus o chama de senhor rival.",
+   "feedbackWrong": {
+    "b": "O problema é o senhorio do dinheiro, não cada moeda.",
+    "c": "Os dois textos alertam, não prometem enriquecimento."
+   },
+   "hint": "Veja o que disputa o trono com Deus nos textos.",
+   "learningObjective": "Relacionar senhorio das riquezas em Jesus e Paulo.",
+   "evidence": [
+    "Mateus 6:24",
+    "1 Timóteo 6:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 6:33 é uma fórmula automática de prosperidade para quem recita o versículo",
+   "verseRef": "Mateus 6:33",
+   "correctOptionId": "false",
+   "evidenceSpan": "Busquem, pois, em primeiro lugar, o reino de Deus",
+   "feedbackCorrect": "É ordem de prioridade ao Pai que sabe, não máquina de pedidos dos homens.",
+   "feedbackWrong": {
+    "true": "Antes vem buscar o Reino; as coisas são acréscimo do Pai."
+   },
+   "hint": "Veja o que deve ser buscado antes de tudo.",
+   "learningObjective": "Rejeitar leitura de prosperidade automática em 6:33.",
+   "evidence": [
+    "Mateus 6:33"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:25, toque pelo que Jesus manda não ficar ansioso em primeiro lugar.",
+   "verseRef": "Mateus 6:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "pela vida"
+    },
+    {
+     "id": "b",
+     "text": "o alimento"
+    },
+    {
+     "id": "c",
+     "text": "as vestes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não fiquem ansiosos pela vida",
+   "feedbackCorrect": "Jesus começa pela vida inteira antes de falar de prato e de guarda-roupa.",
+   "feedbackWrong": {
+    "b": "Isso é detalhe do que comer, citado logo depois.",
+    "c": "Isso é detalhe do corpo, no fim do versículo."
+   },
+   "hint": "Procure o alvo maior citado antes dos detalhes.",
+   "learningObjective": "Sustentar no texto o alvo da ansiedade tratada.",
+   "evidence": [
+    "Mateus 6:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 6:19–33 sustenta sobre ansiedade e sustento diário?",
+   "verseRef": "Mateus 6:31–32",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Pai só sustenta quem acumulou muito antes"
+    },
+    {
+     "id": "b",
+     "text": "Buscar o Reino torna inútil comer e trabalhar"
+    },
+    {
+     "id": "c",
+     "text": "O Pai sabe do necessário e deve ser buscado primeiro"
+    },
+    {
+     "id": "d",
+     "text": "Preocupar-se acrescenta tempo real à nossa vida"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam",
+   "feedbackCorrect": "Pai que sabe, Reino em primeiro lugar e coração livre da ansiedade que não acrescenta nada.",
+   "feedbackWrong": {
+    "a": "Aves sem celeiro são sustentadas pelo Pai celestial.",
+    "b": "Pão de cada dia continua sendo pedido em 6:11.",
+    "d": "Jesus pergunta quem acrescenta um côvado se preocupando (6:27)."
+   },
+   "hint": "Junte o Pai que sabe com o Reino em primeiro lugar.",
+   "learningObjective": "Escolher a interpretação sustentada por 6:19–33.",
+   "evidence": [
+    "Mateus 6:31–32"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho contra a ansiedade?",
+   "verseRef": "Mateus 6:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Olhar as aves sustentadas pelo Pai"
+    },
+    {
+     "id": "b",
+     "text": "Olhar os lírios vestidos por Deus"
+    },
+    {
+     "id": "c",
+     "text": "Buscar primeiro o Reino do Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Observem as aves do céu",
+   "feedbackCorrect": "Aves, lírios e Reino primeiro: Jesus educa o olhar até ordenar o coração.",
+   "feedbackWrong": {
+    "default": "Comece pelo primeiro exemplo da natureza em 6:26."
+   },
+   "hint": "A busca do Reino é a conclusão em 6:33.",
+   "learningObjective": "Ver o caminho completo contra a ansiedade.",
+   "evidence": [
+    "Mateus 6:26",
+    "Mateus 6:28",
+    "Mateus 6:33"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 6:34, com o que não se preocupar desde já, segundo Jesus?",
+   "verseRef": "Mateus 6:34",
+   "options": [
+    {
+     "id": "a",
+     "text": "amanhã"
+    },
+    {
+     "id": "b",
+     "text": "hoje"
+    },
+    {
+     "id": "c",
+     "text": "ontem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não se preocupem com o amanhã",
+   "feedbackCorrect": "Basta a cada dia o seu mal: o amanhã pertence ao cuidado do Pai fiel.",
+   "feedbackWrong": {
+    "b": "Hoje é o dia de buscar o Reino e receber o pão.",
+    "c": "Ontem não é o foco dessa última palavra de Jesus."
+   },
+   "hint": "É o dia que ainda nem chegou para nós.",
+   "learningObjective": "Lembrar o limite diário ensinado em 6:34.",
+   "evidence": [
+    "Mateus 6:34"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 6:25 a Filipenses 4:6?",
+   "verseRef": "Mateus 6:25–26",
+   "passageA": {
+    "ref": "Mateus 6:25"
+   },
+   "passageB": {
+    "ref": "Filipenses 4:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ansiedade entregue em oração"
+    },
+    {
+     "id": "b",
+     "text": "Ansiedade guardada em silêncio"
+    },
+    {
+     "id": "c",
+     "text": "Oração aumenta a preocupação"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não fiquem ansiosos pela vida",
+   "feedbackCorrect": "Paulo leva a ansiedade para a oração; Jesus a leva para os braços do Pai que sabe.",
+   "feedbackWrong": {
+    "b": "Os dois textos tiram a ansiedade do esconderijo do coração.",
+    "c": "O efeito prometido é paz guardando o coração, não mais peso."
+   },
+   "hint": "Veja o destino que Paulo dá à ansiedade sentida.",
+   "learningObjective": "Ligar ansiedade, oração e Pai que cuida.",
+   "evidence": [
+    "Mateus 6:25–26",
+    "Filipenses 4:6"
+   ]
+  }
+ ]
+}

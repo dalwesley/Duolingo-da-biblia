@@ -1,0 +1,705 @@
+{
+ "study": {
+  "passageRef": "Sofonias 3:14–17",
+  "passages": [
+   {
+    "ref": "Sofonias 3:14–17"
+   },
+   {
+    "ref": "Sofonias 3:19–20"
+   }
+  ],
+  "context": "Depois do anúncio de juízo, Sofonias 3 termina com um convite ao canto. O Senhor afastou as sentenças, está no meio do povo e se alegra sobre ele com júbilo.",
+  "keyword": "no meio",
+  "keywordGloss": "Expressão repetida no texto para dizer que o Senhor está presente com o seu povo.",
+  "focusQuestion": "O que muda no seu coração saber que Deus está perto e se alegra por você?",
+  "reflectionPrompts": [
+   "Cantar de todo o coração",
+   "Não temas, ó Sião",
+   "Deus se alegra por ti"
+  ],
+  "facts": [
+   {
+    "text": "A filha de Sião é chamada a cantar e se alegrar de todo o coração.",
+    "evidenceRef": "Sofonias 3:14",
+    "evidenceSpan": "Alegra-te e exulta de todo o coração"
+   },
+   {
+    "text": "O Senhor afastou as sentenças que eram contra o povo.",
+    "evidenceRef": "Sofonias 3:15",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você"
+   },
+   {
+    "text": "O Senhor, o Rei de Israel, está no meio do povo.",
+    "evidenceRef": "Sofonias 3:15",
+    "evidenceSpan": "está no meio de você"
+   },
+   {
+    "text": "A Jerusalém se dirá para não temer nem afrouxar os braços.",
+    "evidenceRef": "Sofonias 3:16",
+    "evidenceSpan": "Não temas, ó Sião"
+   },
+   {
+    "text": "O Senhor está no meio do povo, poderoso para salvar.",
+    "evidenceRef": "Sofonias 3:17",
+    "evidenceSpan": "poderoso para salvar-te"
+   },
+   {
+    "text": "Deus se deleitará no povo com alegria e júbilo.",
+    "evidenceRef": "Sofonias 3:17",
+    "evidenceSpan": "Ele se deleitará em ti com alegria"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "no meio",
+    "gloss": "Expressão que mostra a presença do Senhor junto ao seu povo, e não longe dele."
+   },
+   {
+    "term": "deleitará",
+    "gloss": "Verbo que mostra o prazer de Deus no seu povo restaurado."
+   },
+   {
+    "term": "júbilo",
+    "gloss": "Alegria forte e celebrada, usada tanto para o povo quanto para Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O povo é chamado a cantar",
+    "evidenceRef": "Sofonias 3:14"
+   },
+   {
+    "label": "O Senhor afasta as sentenças",
+    "evidenceRef": "Sofonias 3:15"
+   },
+   {
+    "label": "O povo ouve para não temer",
+    "evidenceRef": "Sofonias 3:16"
+   },
+   {
+    "label": "O Senhor se alegra no meio do povo",
+    "evidenceRef": "Sofonias 3:17"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Porque o Senhor afastou as sentenças e está no meio, o povo pode cantar sem medo.",
+    "marker": null,
+    "evidenceRef": "Sofonias 3:15"
+   },
+   {
+    "kind": "resultado",
+    "text": "A presença do Senhor poderoso para salvar resulta em alegria dele e do povo.",
+    "marker": "para",
+    "evidenceRef": "Sofonias 3:17"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Isaías 12:6",
+    "bridge": "O Senhor está no meio"
+   },
+   {
+    "ref": "Isaías 62:5",
+    "bridge": "Deus se alegra pelo povo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A alegria final apaga o juízo anunciado antes no livro.",
+    "why": "O canto vem depois de Deus afastar as sentenças; o texto não finge que elas não existiram."
+   },
+   {
+    "text": "Deus salva o povo, mas permanece distante e sem alegria por ele.",
+    "why": "O texto diz que ele está no meio, se deleita com alegria e se regozija com júbilo."
+   },
+   {
+    "text": "O povo precisa primeiro ficar forte para então Deus se aproximar.",
+    "why": "Quem age é o Senhor, que afasta sentenças, está no meio e é poderoso para salvar."
+   }
+  ],
+  "centralInsight": "O Senhor está no meio do seu povo, poderoso para salvar e alegre por ele.",
+  "anchorQuestion": "Segundo Sofonias 3:17, onde está o Senhor e o que ele faz pelo povo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Sofonias 3:17, o Senhor está longe do povo e apenas observa sem agir.",
+   "verseRef": "Sofonias 3:17",
+   "correctOptionId": "false",
+   "evidenceSpan": "O Senhor, teu Deus, está no meio de ti",
+   "feedbackCorrect": "O texto coloca o Senhor no meio do povo, poderoso para salvar.",
+   "feedbackWrong": {
+    "true": "Releia o começo de Sofonias 3:17, que mostra onde o Senhor está."
+   },
+   "hint": "Veja onde o texto coloca o Senhor.",
+   "learningObjective": "Observar a presença do Senhor no meio do povo.",
+   "evidence": [
+    "Sofonias 3:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Sofonias 3:14, toque quem é chamada a cantar no começo do versículo.",
+   "verseRef": "Sofonias 3:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "filha de Sião"
+    },
+    {
+     "id": "b",
+     "text": "ó Israel"
+    },
+    {
+     "id": "c",
+     "text": "todo o coração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Canta, ó filha de Sião",
+   "feedbackCorrect": "O canto começa com o chamado à filha de Sião.",
+   "feedbackWrong": {
+    "b": "Israel é chamado a rejubilar, mas o canto abre com outro nome.",
+    "c": "Isso diz como alegrar-se, não quem é chamada a cantar."
+   },
+   "hint": "Leia as primeiras palavras do versículo.",
+   "learningObjective": "Identificar quem é chamada a cantar.",
+   "evidence": [
+    "Sofonias 3:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Sofonias 3:15, o que o Senhor fez com as sentenças contra o povo?",
+   "verseRef": "Sofonias 3:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Aumentou as sentenças contra o povo"
+    },
+    {
+     "id": "b",
+     "text": "Afastou as sentenças que eram contra o povo"
+    },
+    {
+     "id": "c",
+     "text": "Escondeu as sentenças sem resolvê-las"
+    },
+    {
+     "id": "d",
+     "text": "Entregou as sentenças ao inimigo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+   "feedbackCorrect": "Antes do canto, o Senhor remove o que condenava o povo.",
+   "feedbackWrong": {
+    "a": "O texto usa o verbo oposto sobre as sentenças.",
+    "c": "O texto diz que ele as afastou, e não que as escondeu.",
+    "d": "O texto diz que ele lançou fora o inimigo, não as sentenças a ele."
+   },
+   "hint": "Leia o primeiro verbo do versículo.",
+   "learningObjective": "Observar a ação do Senhor pelas sentenças.",
+   "evidence": [
+    "Sofonias 3:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Sofonias 3:17 na ordem do texto.",
+   "verseRef": "Sofonias 3:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor, teu Deus, está no meio de ti"
+    },
+    {
+     "id": "b",
+     "text": "poderoso para salvar-te"
+    },
+    {
+     "id": "c",
+     "text": "Ele se deleitará em ti com alegria"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O Senhor, teu Deus, está no meio de ti",
+   "feedbackCorrect": "Presença, poder para salvar e alegria aparecem nessa ordem no versículo.",
+   "feedbackWrong": {
+    "default": "Comece pela presença do Senhor no meio do povo."
+   },
+   "hint": "O versículo começa dizendo onde Deus está.",
+   "learningObjective": "Reconhecer a sequência de Sofonias 3:17.",
+   "evidence": [
+    "Sofonias 3:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Sofonias 3:14, como a filha de Jerusalém deve se alegrar e celebrar?",
+   "verseRef": "Sofonias 3:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "exulta"
+    },
+    {
+     "id": "b",
+     "text": "esconde"
+    },
+    {
+     "id": "c",
+     "text": "duvida"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Alegra-te e exulta de todo o coração",
+   "feedbackCorrect": "O convite é para uma alegria inteira, de todo o coração.",
+   "feedbackWrong": {
+    "b": "O texto chama para cantar abertamente, e não para se esconder.",
+    "c": "O texto chama para se alegrar, e não para duvidar."
+   },
+   "hint": "Veja o verbo ligado a de todo o coração.",
+   "learningObjective": "Lembrar o convite à alegria em Sofonias 3:14.",
+   "evidence": [
+    "Sofonias 3:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Sofonias 3:15 comunica que se liga a este contexto?",
+   "verseRef": "Sofonias 3:15",
+   "passageA": {
+    "ref": "Sofonias 3:15"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo pode cantar porque Deus removeu o que o condenava."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo continua condenado"
+    },
+    {
+     "id": "b",
+     "text": "Deus lançou fora o inimigo"
+    },
+    {
+     "id": "c",
+     "text": "O medo deve continuar"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "lançou fora o seu inimigo",
+   "feedbackCorrect": "Sem sentenças e sem inimigo, o povo tem motivo para cantar.",
+   "feedbackWrong": {
+    "a": "O texto diz que o Senhor afastou as sentenças contra o povo.",
+    "c": "No versículo seguinte, o povo ouve para não temer."
+   },
+   "hint": "Veja o que Deus fez com quem acusava.",
+   "learningObjective": "Ligar Sofonias 3:15 ao motivo do canto.",
+   "evidence": [
+    "Sofonias 3:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Sofonias 3:14-15, o povo canta porque primeiro conseguiu afastar sozinho as próprias sentenças.",
+   "verseRef": "Sofonias 3:14–15",
+   "correctOptionId": "false",
+   "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+   "feedbackCorrect": "Quem afasta as sentenças é o Senhor, e por isso o povo pode cantar.",
+   "feedbackWrong": {
+    "true": "Releia quem faz a ação em Sofonias 3:15, logo após o convite ao canto."
+   },
+   "hint": "Veja quem age no segundo versículo.",
+   "learningObjective": "Compreender a causa do canto do povo.",
+   "evidence": [
+    "Sofonias 3:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+   "verseRef": "Sofonias 3:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "contra você"
+    },
+    {
+     "id": "b",
+     "text": "seu inimigo"
+    },
+    {
+     "id": "c",
+     "text": "no meio"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "está no meio de você",
+   "feedbackCorrect": "O Rei não está longe, mas presente no meio do povo.",
+   "feedbackWrong": {
+    "a": "Isso fala das sentenças afastadas, não do lugar do Rei.",
+    "b": "Isso fala de quem foi lançado fora, não do lugar do Rei."
+   },
+   "hint": "Procure a expressão de lugar depois de Rei de Israel.",
+   "learningObjective": "Reconhecer a presença do Senhor no meio.",
+   "evidence": [
+    "Sofonias 3:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Sofonias 3:16 se relaciona com Sofonias 3:15?",
+   "verseRef": "Sofonias 3:15–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "Anula a promessa de Deus estar no meio"
+    },
+    {
+     "id": "b",
+     "text": "Mostra a resposta ao medo depois da ação de Deus"
+    },
+    {
+     "id": "c",
+     "text": "Manda o povo temer mais do que antes"
+    },
+    {
+     "id": "d",
+     "text": "Troca o Rei de Israel por outro rei"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Não temas, ó Sião",
+   "feedbackCorrect": "Depois que Deus age e está no meio, o povo ouve para não temer.",
+   "feedbackWrong": {
+    "a": "O não temas confirma a presença, e não a anula.",
+    "c": "O texto manda não temer, com os braços firmes.",
+    "d": "O Rei continua sendo o Senhor, presente no meio."
+   },
+   "hint": "Veja a ordem entre agir de Deus e não temer.",
+   "learningObjective": "Relacionar a ação de Deus com o fim do medo.",
+   "evidence": [
+    "Sofonias 3:15–16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Sofonias 3:14-15?",
+   "verseRef": "Sofonias 3:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo é chamado a cantar"
+    },
+    {
+     "id": "b",
+     "text": "O Senhor afasta as sentenças"
+    },
+    {
+     "id": "c",
+     "text": "O Senhor está no meio do povo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Canta, ó filha de Sião",
+   "feedbackCorrect": "O canto é anunciado, e então o texto mostra o Deus que age e está presente.",
+   "feedbackWrong": {
+    "default": "Comece pelo chamado ao canto, no início de 3:14."
+   },
+   "hint": "A presença do Senhor fecha o trecho.",
+   "learningObjective": "Compreender o movimento do canto à presença.",
+   "evidence": [
+    "Sofonias 3:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Sofonias 3:16, o que os braços de Sião não devem fazer?",
+   "verseRef": "Sofonias 3:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "cantar"
+    },
+    {
+     "id": "b",
+     "text": "afrouxem"
+    },
+    {
+     "id": "c",
+     "text": "trabalhar"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "não se afrouxem os teus braços",
+   "feedbackCorrect": "Braços firmes são a imagem de um povo que não desiste pelo medo.",
+   "feedbackWrong": {
+    "a": "Cantar é o convite de 3:14, não o proibido aqui.",
+    "c": "O texto não proíbe trabalhar, mas perder a firmeza."
+   },
+   "hint": "Leia a segunda parte da frase a Jerusalém.",
+   "learningObjective": "Compreender a imagem dos braços firmes.",
+   "evidence": [
+    "Sofonias 3:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Sofonias 3:17 a Isaías 12:6?",
+   "verseRef": "Sofonias 3:17",
+   "passageA": {
+    "ref": "Sofonias 3:17"
+   },
+   "passageB": {
+    "ref": "Isaías 12:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus está longe do povo"
+    },
+    {
+     "id": "b",
+     "text": "O povo canta sozinho"
+    },
+    {
+     "id": "c",
+     "text": "O Senhor está no meio"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "está no meio de ti",
+   "feedbackCorrect": "Os dois textos celebram o Senhor presente no meio do seu povo.",
+   "feedbackWrong": {
+    "a": "Os dois textos afirmam a presença de Deus, e não a distância.",
+    "b": "Nos dois, o canto nasce da presença de Deus."
+   },
+   "hint": "Compare a expressão sobre o lugar de Deus.",
+   "learningObjective": "Relacionar a presença de Deus em Sofonias e Isaías.",
+   "evidence": [
+    "Sofonias 3:17",
+    "Isaías 12:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Sofonias 3:17 apresenta Deus salvando o povo e também se alegrando sobre ele com júbilo.",
+   "verseRef": "Sofonias 3:17",
+   "correctOptionId": "true",
+   "evidenceSpan": "regozijando-se em ti com júbilo",
+   "feedbackCorrect": "O mesmo versículo junta poder para salvar e alegria sobre o povo.",
+   "feedbackWrong": {
+    "false": "Releia o versículo inteiro, do salvar até o júbilo final."
+   },
+   "hint": "Leia o versículo até o fim.",
+   "learningObjective": "Interpretar salvação e alegria juntas em Deus.",
+   "evidence": [
+    "Sofonias 3:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Sofonias 3:17, toque o trecho que mostra a alegria de Deus pelo povo.",
+   "verseRef": "Sofonias 3:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "teu Deus"
+    },
+    {
+     "id": "b",
+     "text": "com alegria"
+    },
+    {
+     "id": "c",
+     "text": "para salvar-te"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ele se deleitará em ti com alegria",
+   "feedbackCorrect": "A alegria aqui não é só do povo, mas do próprio Deus por ele.",
+   "feedbackWrong": {
+    "a": "Isso nomeia quem Deus é para o povo, não a sua alegria.",
+    "c": "Isso mostra o poder de Deus, não diretamente a sua alegria."
+   },
+   "hint": "Procure a parte ligada ao deleite de Deus.",
+   "learningObjective": "Sustentar com o texto a alegria de Deus.",
+   "evidence": [
+    "Sofonias 3:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Sofonias 3:14-17 sustenta sobre o fim do livro?",
+   "verseRef": "Sofonias 3:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus salva de longe, sem se alegrar pelo povo"
+    },
+    {
+     "id": "b",
+     "text": "O povo se salva sozinho e depois convida Deus"
+    },
+    {
+     "id": "c",
+     "text": "O juízo anterior torna impossível qualquer canto"
+    },
+    {
+     "id": "d",
+     "text": "Deus está presente, salva e se alegra pelo povo"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+   "feedbackCorrect": "Presença, salvação e alegria de Deus aparecem juntas no desfecho.",
+   "feedbackWrong": {
+    "a": "O texto o coloca no meio e se deleitando com alegria.",
+    "b": "Quem afasta sentenças e salva é o Senhor.",
+    "c": "O canto vem justamente depois que Deus afasta as sentenças."
+   },
+   "hint": "Junte presença, salvação e alegria.",
+   "learningObjective": "Escolher a interpretação do desfecho de Sofonias.",
+   "evidence": [
+    "Sofonias 3:14–15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Sofonias 3:15-17?",
+   "verseRef": "Sofonias 3:15–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor afasta as sentenças contra o povo"
+    },
+    {
+     "id": "b",
+     "text": "O povo deixa de temer o mal"
+    },
+    {
+     "id": "c",
+     "text": "Deus se alegra sobre o povo restaurado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+   "feedbackCorrect": "Deus age, o medo cai, e a alegria de Deus coroa a restauração.",
+   "feedbackWrong": {
+    "default": "Comece pela ação de Deus contra as sentenças, em 3:15."
+   },
+   "hint": "A alegria de Deus fecha a sequência.",
+   "learningObjective": "Compreender a lógica da restauração em Sofonias 3.",
+   "evidence": [
+    "Sofonias 3:15–16",
+    "Sofonias 3:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+   "verseRef": "Sofonias 3:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "deleitará"
+    },
+    {
+     "id": "b",
+     "text": "afastará"
+    },
+    {
+     "id": "c",
+     "text": "temerá"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele se deleitará em ti com alegria",
+   "feedbackCorrect": "Esse verbo mostra que a salvação vem com o prazer de Deus pelo povo.",
+   "feedbackWrong": {
+    "b": "Afastar fala das sentenças em 3:15, não do prazer em 3:17.",
+    "c": "Temer é o que o povo é chamado a não fazer em 3:16."
+   },
+   "hint": "Procure o verbo ligado à alegria de Deus.",
+   "learningObjective": "Lembrar o termo da alegria de Deus pelo povo.",
+   "evidence": [
+    "Sofonias 3:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Sofonias 3:17 a Isaías 62:5?",
+   "verseRef": "Sofonias 3:17",
+   "passageA": {
+    "ref": "Sofonias 3:17"
+   },
+   "passageB": {
+    "ref": "Isaías 62:5"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus se alegra sem salvar"
+    },
+    {
+     "id": "b",
+     "text": "A alegria é só do povo"
+    },
+    {
+     "id": "c",
+     "text": "Deus se alegra pelo povo"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Ele se deleitará em ti com alegria",
+   "feedbackCorrect": "Nos dois textos, Deus mesmo se alegra sobre o seu povo.",
+   "feedbackWrong": {
+    "a": "Em Sofonias, a alegria vem com o Deus poderoso para salvar.",
+    "b": "Em Sofonias, Deus se regozija, e não apenas o povo."
+   },
+   "hint": "Veja quem se alegra nos dois textos.",
+   "learningObjective": "Ligar a alegria de Deus em Sofonias e Isaías.",
+   "evidence": [
+    "Sofonias 3:17",
+    "Isaías 62:5"
+   ]
+  }
+ ]
+}

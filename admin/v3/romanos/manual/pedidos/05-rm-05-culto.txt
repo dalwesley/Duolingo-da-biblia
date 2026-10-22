@@ -1,0 +1,59 @@
+Escreva a cena "rm-05-culto" da trilha "romanos" (Romanos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "romanos",
+  "title": "Romanos",
+  "description": "O evangelho da justiça de Deus — pecado, graça e nova vida.",
+  "realm": "novo-testamento"
+ },
+ "block": "Romanos",
+ "mission": {
+  "slug": "rm-05-culto",
+  "title": "O culto da vida inteira",
+  "type": "lesson",
+  "intro": "A graça recebida se torna serviço, amor, santidade e vida comunitária.",
+  "hookRef": "O culto da vida inteira",
+  "hookNote": "A graça recebida se torna serviço, amor, santidade e vida comunitária.",
+  "centralInsight": "Paulo instrui a igreja em Romanos 12-16 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+  "objective": "Romanos 12-16"
+ },
+ "v2": {
+  "passageRef": "O culto da vida inteira",
+  "context": "A graça recebida se torna serviço, amor, santidade e vida comunitária.",
+  "keyword": "Culto",
+  "verseRefs": [
+   "Romanos 12:1–2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 12:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 12:1",
+   "text": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional."
+  },
+  {
+   "ref": "Romanos 12:2",
+   "text": "E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus."
+  },
+  {
+   "ref": "Romanos 12:3",
+   "text": "Porque, pela graça que me foi concedida, digo a cada um de vocês que não pense de si mesmo além do que é adequado; ao contrário, tenha um julgamento moderado, de acordo com a medida da fé que Deus distribuiu a cada um."
+  },
+  {
+   "ref": "Romanos 12:4",
+   "text": "Porque assim como em um corpo temos muitos membros, mas não todos os membros exercem a mesma função,"
+  },
+  {
+   "ref": "Romanos 12:5",
+   "text": "Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros."
+  }
+ ]
+}
+</cena>

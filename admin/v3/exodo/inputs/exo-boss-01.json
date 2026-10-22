@@ -1,0 +1,217 @@
+{
+  "trail": {
+    "slug": "exodo",
+    "title": "Êxodo",
+    "description": "Do Egito à entrega da Lei — libertação e aliança.",
+    "realm": "antigo-testamento"
+  },
+  "block": "A Libertação",
+  "mission": {
+    "slug": "exo-boss-01",
+    "title": "Desafio: A saída do Egito",
+    "type": "boss",
+    "intro": "Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho.",
+    "hookRef": "Êxodo 1–15",
+    "hookNote": "Este desafio une opressão, chamado, Páscoa e mar. O fio é a fidelidade libertadora de Deus.",
+    "centralInsight": "Deus ouve e age",
+    "objective": "Qual é o fio que liga sarça, Páscoa e Mar Vermelho?"
+  },
+  "v2": {
+    "passageRef": "Êxodo 1–15",
+    "context": "Este desafio une opressão, chamado, Páscoa e mar. O fio é a fidelidade libertadora de Deus.",
+    "keyword": "Libertação",
+    "verseRefs": [
+      "Êxodo 15:2"
+    ]
+  },
+  "earlierScenes": [
+    {
+      "slug": "exo-03-pragas",
+      "title": "As dez pragas",
+      "centralInsight": "Deus confronta ídolos",
+      "ref": "Êxodo 7:1–25"
+    },
+    {
+      "slug": "exo-04-pascoa",
+      "title": "A Páscoa",
+      "centralInsight": "A libertação tem custo",
+      "ref": "Êxodo 12:1–13"
+    },
+    {
+      "slug": "exo-05-mar",
+      "title": "O Mar Vermelho",
+      "centralInsight": "Deus abre caminhos",
+      "ref": "Êxodo 14:13–31"
+    }
+  ],
+  "ranges": [
+    "Êxodo 7:1–25",
+    "Êxodo 8:1–32",
+    "Êxodo 12:1–13",
+    "Êxodo 12:13",
+    "Êxodo 14:13–31",
+    "Êxodo 14:13–14"
+  ],
+  "verses": [
+    {
+      "ref": "Êxodo 7:1",
+      "text": "Então, o Senhor disse a Moisés: Vê que eu te constituí como Deus diante de Faraó, e Arão, teu irmão, será o seu profeta."
+    },
+    {
+      "ref": "Êxodo 7:2",
+      "text": "Falarás tudo o que eu te ordenar, e Arão, teu irmão, falará a Faraó, para que deixe ir os filhos de Israel da sua terra."
+    },
+    {
+      "ref": "Êxodo 7:3",
+      "text": "Eu, porém, endurecerei o coração de Faraó e multiplicarei na terra do Egito os meus sinais e maravilhas."
+    },
+    {
+      "ref": "Êxodo 7:4",
+      "text": "O Faraó não vos ouvirá; por isso, eu porei a minha mão sobre o Egito e farei sair os meus exércitos, o meu povo, os filhos de Israel, da terra do Egito, com grandes manifestações de julgamento."
+    },
+    {
+      "ref": "Êxodo 7:5",
+      "text": "Os egípcios saberão que eu sou o Senhor, quando eu estender a minha mão sobre o Egito e tirar do meio deles os filhos de Israel."
+    },
+    {
+      "ref": "Êxodo 7:6",
+      "text": "Então Moisés e Arão fizeram conforme o SENHOR lhes havia ordenado, assim o realizaram."
+    },
+    {
+      "ref": "Êxodo 7:7",
+      "text": "Moisés estava com oitenta anos, e Arão, com oitenta e três, quando falaram a Faraó."
+    },
+    {
+      "ref": "Êxodo 7:8",
+      "text": "O Senhor falou a Moisés e a Arão, dizendo:"
+    },
+    {
+      "ref": "Êxodo 7:9",
+      "text": "Quando Faraó lhe disser: \"Realizem um milagre\", você dirá a Arão: \"Tome seu bordão e lance-o diante de Faraó\"; e o bordão se tornará uma serpente."
+    },
+    {
+      "ref": "Êxodo 7:10",
+      "text": "Então, Moisés e Arão foram até Faraó e fizeram conforme o Senhor lhes ordenara; Arão lançou seu bordão diante de Faraó e diante de seus oficiais, e ele se transformou em serpente."
+    },
+    {
+      "ref": "Êxodo 7:11",
+      "text": "Então o Faraó chamou os sábios e encantadores, e eles, os sábios do Egito, fizeram o mesmo com suas ciências ocultas."
+    },
+    {
+      "ref": "Êxodo 7:12",
+      "text": "Porque cada um lançou seu bordão e estes se transformaram em serpentes, mas o bordão de Arão devorou os bordões deles."
+    },
+    {
+      "ref": "Êxodo 7:13",
+      "text": "Porém, o coração de Faraó se endureceu e não os ouviu, conforme o Senhor tinha dito."
+    },
+    {
+      "ref": "Êxodo 7:14",
+      "text": "Então o Senhor disse a Moisés: O coração de Faraó está obstinado; ele se recusa a deixar o povo ir."
+    },
+    {
+      "ref": "Êxodo 7:15",
+      "text": "Vá pela manhã ao Faraó; ele sairá para as águas. Estarás à espera dele à margem do rio, e levarás na mão a vara que se transformou em serpente."
+    },
+    {
+      "ref": "Êxodo 7:16",
+      "text": "E dirás a ele: O Senhor, o Deus dos hebreus, me enviou a você para dizer: Deixe ir o meu povo, para que me sirva no deserto; e, até agora, você não tem ouvido."
+    },
+    {
+      "ref": "Êxodo 7:17",
+      "text": "Assim diz o Senhor: Nisto saberás que eu sou o Senhor: Com esta vara que tenho em minha mão, ferirei as águas do rio, e elas se tornarão em sangue."
+    },
+    {
+      "ref": "Êxodo 7:18",
+      "text": "E os peixes que estão no rio morrerão, o rio cheirará mal, e os egípcios terão aversão a beber a água do rio."
+    },
+    {
+      "ref": "Êxodo 7:19",
+      "text": "Disse o Senhor a Moisés: Diga a Arão: Tome seu bordão e estenda sua mão sobre as águas do Egito, sobre os seus rios, sobre os seus canais, sobre suas lagoas e sobre todos os seus reservatórios, para que se tornem em sangue; haja sangue em toda a terra do Egito, tanto nos vasos de madeira quanto nos de pedra."
+    },
+    {
+      "ref": "Êxodo 7:20",
+      "text": "E Moisés e Arão fizeram conforme o SENHOR havia ordenado. Arão, levantando a vara, feriu as águas que estavam no rio, à vista de Faraó e de seus oficiais, e toda a água do rio se tornou em sangue."
+    },
+    {
+      "ref": "Êxodo 7:21",
+      "text": "E os peixes que estavam no rio morreram, e o rio cheirou mal, de modo que os egípcios não podiam beber a água dele, e houve sangue por toda a terra do Egito."
+    },
+    {
+      "ref": "Êxodo 7:22",
+      "text": "Porém, os magos do Egito também realizaram o mesmo por meio de suas artes mágicas, de forma que o coração de Faraó se endureceu, e não os escutou como o Senhor havia anunciado."
+    },
+    {
+      "ref": "Êxodo 7:23",
+      "text": "E o Faraó virou-se e foi para casa; nem mesmo isso considerou em seu coração."
+    },
+    {
+      "ref": "Êxodo 7:24",
+      "text": "E todos os egípcios cavaram poços junto ao rio para encontrarem água para beber, pois das águas do rio não podiam beber."
+    },
+    {
+      "ref": "Êxodo 7:25",
+      "text": "Assim se passaram sete dias, depois que o Senhor feriu o rio."
+    },
+    {
+      "ref": "Êxodo 8:1",
+      "text": "Disse o Senhor a Moisés: Aproxima-te de Faraó e dize-lhe: Assim diz o Senhor: Deixa ir o meu povo, para que me sirva."
+    },
+    {
+      "ref": "Êxodo 8:2",
+      "text": "Se você se recusar a deixá-lo ir, eis que castigarei todos os seus territórios com rãs."
+    },
+    {
+      "ref": "Êxodo 8:3",
+      "text": "E o rio produzirá rãs em abundância que subirão e entrarão na tua casa, no teu quarto de dormir, sobre o teu leito, nas casas dos teus oficiais, e sobre o teu povo, e nos teus fornos, e nas tuas amassadeiras."
+    },
+    {
+      "ref": "Êxodo 8:4",
+      "text": "As rãs virão sobre você, sobre o seu povo e sobre todos os seus oficiais."
+    },
+    {
+      "ref": "Êxodo 8:5",
+      "text": "Disse ainda o Senhor a Moisés: Diga a Arão: Estenda a mão com a sua vara sobre os rios, sobre os canais e sobre as lagoas, e faça surgir rãs sobre a terra do Egito."
+    },
+    {
+      "ref": "Êxodo 8:6",
+      "text": "Arão estendeu a mão sobre as águas do Egito, e subiram rãs que cobriram a terra do Egito."
+    },
+    {
+      "ref": "Êxodo 8:7",
+      "text": "Então, os magos também realizaram o mesmo com seus encantamentos e fizeram aparecer rãs sobre a terra do Egito."
+    },
+    {
+      "ref": "Êxodo 8:8",
+      "text": "Então o Faraó chamou Moisés e Arão e lhes disse: “Rogai ao Senhor que afaste as rãs de mim e do meu povo; então deixarei ir o povo para que ofereça sacrifícios ao Senhor.”"
+    },
+    {
+      "ref": "Êxodo 8:9",
+      "text": "E Moisés disse a Faraó: Você se dignará a me dizer quando hei de orar por você, pelos seus oficiais e por seu povo, para que as rãs sejam retiradas de você e de suas casas, ficando apenas no rio?"
+    },
+    {
+      "ref": "Êxodo 8:10",
+      "text": "Ele respondeu: Amanhã. E Moisés disse: Que seja conforme a tua palavra, para que saibas que não existe ninguém como o Senhor, nosso Deus."
+    },
+    {
+      "ref": "Êxodo 8:11",
+      "text": "As rãs se retirarão de você, das suas casas, dos seus oficiais e do seu povo; ficarão apenas no rio."
+    },
+    {
+      "ref": "Êxodo 8:12",
+      "text": "Então, Moisés e Arão saíram da presença de Faraó, e Moisés clamou ao Senhor por causa das rãs, conforme combinado com Faraó."
+    },
+    {
+      "ref": "Êxodo 8:13",
+      "text": "E o Senhor fez segundo a palavra de Moisés; as rãs morreram nas casas, nos pátios e nos campos."
+    },
+    {
+      "ref": "Êxodo 8:14",
+      "text": "E ajuntaram-nas em montes e a terra exalou um mau cheiro."
+    },
+    {
+      "ref": "Êxodo 8:15",
+      "text": "Vendo, porém, o Faraó que havia alívio, endureceu ainda mais seu coração e não os ouviu, conforme o Senhor tinha dito."
+    }
+  ]
+}

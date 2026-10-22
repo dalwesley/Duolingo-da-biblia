@@ -1,0 +1,3304 @@
+[
+  {
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-01",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Esdras 7:10, Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "prompt": "Em Esdras 7:10, Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "cue": "Em Esdras 7:10, Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "feedbackCorrect": "Buscar a Lei é o primeiro passo do coração disposto de Esdras.",
+    "feedbackWrong": {
+      "false": "Releia Esdras 7:10 e o primeiro passo de Esdras."
+    },
+    "hint": "Veja o primeiro passo citado no versículo.",
+    "learningObjective": "Observar a disposição de Esdras diante da Lei.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-02",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Esdras 7:10, toque onde Esdras deve ensinar os estatutos e juízos.",
+    "prompt": "Em Esdras 7:10, toque onde Esdras deve ensinar os estatutos e juízos.",
+    "cue": "Em Esdras 7:10, toque onde Esdras deve ensinar os estatutos e juízos.",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o coração"
+      },
+      {
+        "id": "b",
+        "text": "em Israel"
+      },
+      {
+        "id": "c",
+        "text": "seus estatutos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "O ensino de Esdras tem endereço certo; todo o povo de Israel.",
+    "feedbackWrong": {
+      "a": "O coração é onde nasce a disposição, não o lugar do ensino.",
+      "c": "Estatutos é o conteúdo ensinado, não onde ele ensina."
+    },
+    "hint": "Procure o povo que recebe o ensino.",
+    "learningObjective": "Identificar o destinatário do ensino de Esdras.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-03",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Esdras 7:6, o que Esdras era na Lei de Moisés?",
+    "prompt": "Segundo Esdras 7:6, o que Esdras era na Lei de Moisés?",
+    "cue": "Segundo Esdras 7:6, o que Esdras era na Lei de Moisés?",
+    "verseRef": "Esdras 7:6",
+    "passageText": "Este Esdras subiu da Babilônia; era um escriba versado na Lei de Moisés, que o SENHOR Deus de Israel lhe deu; e, pela boa mão do SENHOR, seu Deus, que estava sobre ele, o rei lhe concedeu tudo o que lhe pedira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um principiante sem estudo"
+      },
+      {
+        "id": "b",
+        "text": "Um tradutor para os persas"
+      },
+      {
+        "id": "c",
+        "text": "Um escriba versado nela"
+      },
+      {
+        "id": "d",
+        "text": "Um opositor declarado dela"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "era um escriba versado na Lei de Moisés",
+    "feedbackCorrect": "Esdras conhecia profundamente a Lei que depois ensinaria.",
+    "feedbackWrong": {
+      "a": "O texto o apresenta como alguém experiente na Lei.",
+      "b": "Sua tarefa é ensinar Israel, e não traduzir para a Pérsia.",
+      "d": "Ele é justamente o mestre da Lei enviado a Jerusalém."
+    },
+    "hint": "Leia como o narrador apresenta Esdras.",
+    "learningObjective": "Observar a qualificação de Esdras na Lei.",
+    "evidence": [
+      "Esdras 7:6"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-04",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Esdras 7:6 na ordem do texto.",
+    "prompt": "Monte Esdras 7:6 na ordem do texto.",
+    "cue": "Monte Esdras 7:6 na ordem do texto.",
+    "verseRef": "Esdras 7:6",
+    "passageText": "Este Esdras subiu da Babilônia; era um escriba versado na Lei de Moisés, que o SENHOR Deus de Israel lhe deu; e, pela boa mão do SENHOR, seu Deus, que estava sobre ele, o rei lhe concedeu tudo o que lhe pedira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este Esdras subiu da Babilônia"
+      },
+      {
+        "id": "b",
+        "text": "era um escriba versado na Lei de Moisés"
+      },
+      {
+        "id": "c",
+        "text": "o rei lhe concedeu tudo o que lhe pedira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Este Esdras subiu da Babilônia",
+    "feedbackCorrect": "Esdras sobe, é apresentado como escriba e recebe favor do rei.",
+    "feedbackWrong": {
+      "default": "Comece pela subida de Esdras; o favor do rei fecha."
+    },
+    "hint": "O versículo começa pela subida de Esdras.",
+    "learningObjective": "Reconhecer a sequência de Esdras 7:6.",
+    "evidence": [
+      "Esdras 7:6"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-05",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Esdras 7:10, qual é o primeiro passo de Esdras diante da Lei do Senhor?",
+    "prompt": "Em Esdras 7:10, qual é o primeiro passo de Esdras diante da Lei do Senhor?",
+    "cue": "Em Esdras 7:10, qual é o primeiro passo de Esdras diante da Lei do Senhor?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "template": "Esdras havia disposto o coração para ___ a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ignorar"
+      },
+      {
+        "id": "b",
+        "text": "buscar"
+      },
+      {
+        "id": "c",
+        "text": "esconder"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para buscar a Lei do Senhor",
+    "feedbackCorrect": "Antes de cumprir e ensinar, Esdras busca conhecer a Lei.",
+    "feedbackWrong": {
+      "a": "O coração disposto se aproxima da Lei, e não a ignora.",
+      "c": "Esdras recebe a Lei para ensinar, e não para escondê-la."
+    },
+    "hint": "É o primeiro dos três verbos do versículo.",
+    "learningObjective": "Lembrar o primeiro passo de Esdras diante da Lei.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-06",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Esdras 7:25 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 7:25 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 7:25 comunica que se liga a este contexto?",
+    "verseRef": "Esdras 7:25",
+    "passageText": "E tu, Esdras, de acordo com a sabedoria do teu Deus que possuis, nomeia magistrados e juízes que julguem todo o povo que está dalém do rio, a todos os que sabem as leis do teu Deus; e aos que não as sabem, que lhes sejam ensinadas.",
+    "passageA": {
+      "ref": "Esdras 7:25",
+      "text": "E tu, Esdras, de acordo com a sabedoria do teu Deus que possuis, nomeia magistrados e juízes que julguem todo o povo que está dalém do rio, a todos os que sabem as leis do teu Deus; e aos que não as sabem, que lhes sejam ensinadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois do retorno, Israel precisa reaprender a viver pela Lei de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer a Lei antiga"
+      },
+      {
+        "id": "b",
+        "text": "Conhecer, viver e ensinar"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar sem conhecer nada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas",
+    "feedbackCorrect": "Esdras encarna o caminho de quem reaprende a viver pela Lei.",
+    "feedbackWrong": {
+      "a": "A Lei antiga volta ao centro da vida do povo.",
+      "c": "O ensino vem depois de buscar e cumprir a Lei."
+    },
+    "hint": "Some os três passos do coração de Esdras.",
+    "learningObjective": "Ligar Esdras 7:10 ao reaprendizado do povo.",
+    "evidence": [
+      "Esdras 7:25"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-01",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Esdras 7:6, o rei atendeu Esdras embora a mão do Senhor estivesse longe dele",
+    "prompt": "Em Esdras 7:6, o rei atendeu Esdras embora a mão do Senhor estivesse longe dele",
+    "cue": "Em Esdras 7:6, o rei atendeu Esdras embora a mão do Senhor estivesse longe dele",
+    "verseRef": "Esdras 7:6",
+    "passageText": "Este Esdras subiu da Babilônia; era um escriba versado na Lei de Moisés, que o SENHOR Deus de Israel lhe deu; e, pela boa mão do SENHOR, seu Deus, que estava sobre ele, o rei lhe concedeu tudo o que lhe pedira.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "pela boa mão do SENHOR, seu Deus, que estava sobre ele",
+    "feedbackCorrect": "O favor do rei é ligado à boa mão do Senhor sobre Esdras.",
+    "feedbackWrong": {
+      "true": "Releia por que o rei concedeu tudo em Esdras 7:6."
+    },
+    "hint": "Veja a explicação dada para o favor do rei.",
+    "learningObjective": "Compreender a boa mão de Deus por trás do favor real.",
+    "evidence": [
+      "Esdras 7:6"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-02",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Esdras 7:9, toque a palavra que liga a chegada de Esdras à boa mão de Deus.",
+    "prompt": "Em Esdras 7:9, toque a palavra que liga a chegada de Esdras à boa mão de Deus.",
+    "cue": "Em Esdras 7:9, toque a palavra que liga a chegada de Esdras à boa mão de Deus.",
+    "verseRef": "Esdras 7:9",
+    "passageText": "Porque, no primeiro dia do primeiro mês, começou a sua jornada de Babilônia, e, no primeiro dia do quinto mês, chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "segundo"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "sobre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele",
+    "feedbackCorrect": "A chegada aconteceu em conformidade com o favor de Deus.",
+    "feedbackWrong": {
+      "b": "Essa palavra abre a explicação, sem ligar chegada e favor.",
+      "c": "Essa palavra indica sobre quem a mão está, não a ligação."
+    },
+    "hint": "Procure a palavrinha antes de a boa mão.",
+    "learningObjective": "Reconhecer o marcador que liga jornada e favor de Deus.",
+    "evidence": [
+      "Esdras 7:9"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-03",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Esdras 7:9 explica a chegada de Esdras a Jerusalém?",
+    "prompt": "Como Esdras 7:9 explica a chegada de Esdras a Jerusalém?",
+    "cue": "Como Esdras 7:9 explica a chegada de Esdras a Jerusalém?",
+    "verseRef": "Esdras 7:9",
+    "passageText": "Porque, no primeiro dia do primeiro mês, começou a sua jornada de Babilônia, e, no primeiro dia do quinto mês, chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele chegou perdido, sem saber o caminho"
+      },
+      {
+        "id": "b",
+        "text": "Ele chegou apenas pela própria experiência de viagem"
+      },
+      {
+        "id": "c",
+        "text": "Ele chegou favorecido pela ajuda do seu Deus"
+      },
+      {
+        "id": "d",
+        "text": "Ele chegou contra a vontade do seu Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "segundo a boa mão do seu Deus sobre ele",
+    "feedbackCorrect": "A jornada de quatro meses é atribuída ao favor de Deus.",
+    "feedbackWrong": {
+      "a": "Datas precisas mostram uma jornada acompanhada e concluída.",
+      "b": "O texto credita a chegada a Deus, e não só a Esdras.",
+      "d": "A mão de Deus está sobre ele a favor, e não contra."
+    },
+    "hint": "Veja a quem o texto atribui a boa chegada.",
+    "learningObjective": "Relacionar a jornada de Esdras ao cuidado de Deus.",
+    "evidence": [
+      "Esdras 7:9"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-04",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos do coração em Esdras 7:10?",
+    "prompt": "Como se encadeiam os passos do coração em Esdras 7:10?",
+    "cue": "Como se encadeiam os passos do coração em Esdras 7:10?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a Lei de Deus a fundo"
+      },
+      {
+        "id": "b",
+        "text": "Viver pessoalmente o que conheceu"
+      },
+      {
+        "id": "c",
+        "text": "Passar o ensino adiante em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel",
+    "feedbackCorrect": "Conhecimento, prática e ensino formam uma progressão, não atalhos.",
+    "feedbackWrong": {
+      "default": "O ensino é o desfecho; antes vêm conhecer e viver."
+    },
+    "hint": "A prática vem entre conhecer e ensinar.",
+    "learningObjective": "Compreender a progressão buscar, cumprir e ensinar.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-05",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Esdras 7:10, o que Esdras faz com a Lei depois de buscá-la e antes de ensiná-la?",
+    "prompt": "Em Esdras 7:10, o que Esdras faz com a Lei depois de buscá-la e antes de ensiná-la?",
+    "cue": "Em Esdras 7:10, o que Esdras faz com a Lei depois de buscá-la e antes de ensiná-la?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "template": "Esdras havia disposto o coração para buscar a Lei do Senhor, para ___ e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vendê-la"
+      },
+      {
+        "id": "b",
+        "text": "cumpri-la"
+      },
+      {
+        "id": "c",
+        "text": "resumi-la"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para cumpri-la e para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "Entre conhecer e ensinar está a obediência pessoal de Esdras.",
+    "feedbackWrong": {
+      "a": "A Lei não é mercadoria; é caminho de vida para Esdras.",
+      "c": "O passo do meio é viver a Lei, e não abreviá-la."
+    },
+    "hint": "É o passo entre conhecer e ensinar.",
+    "learningObjective": "Compreender a obediência entre estudo e ensino.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-06",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Esdras 7:10 a Josué 1:8?",
+    "prompt": "O que liga Esdras 7:10 a Josué 1:8?",
+    "cue": "O que liga Esdras 7:10 a Josué 1:8?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos."
+    },
+    "passageB": {
+      "ref": "Josué 1:8",
+      "text": "Não se afaste da tua boca o Livro desta Lei; antes, medita nele dia e noite, para que tenhas cuidado de fazer segundo tudo o que nele está escrito; pois assim farás prosperar o teu caminho e serás bem-sucedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A Lei ficou no passado distante"
+      },
+      {
+        "id": "b",
+        "text": "Conhecer sem precisar obedecer"
+      },
+      {
+        "id": "c",
+        "text": "Meditar para viver a Lei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para buscar a Lei do Senhor, para cumpri-la",
+    "feedbackCorrect": "Josué medita para fazer; Esdras busca para cumprir e ensinar.",
+    "feedbackWrong": {
+      "a": "Séculos depois, Esdras retoma a mesma Lei de Josué.",
+      "b": "Nos dois textos, conhecer a Lei mira a prática."
+    },
+    "hint": "Compare a finalidade do estudo nos dois textos.",
+    "learningObjective": "Relacionar Esdras e Josué no estudo que leva à prática.",
+    "evidence": [
+      "Esdras 7:10",
+      "Josué 1:8"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-01",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Esdras 7:27, Esdras reconhece que Deus moveu o coração do rei em favor da casa do Senhor",
+    "prompt": "Em Esdras 7:27, Esdras reconhece que Deus moveu o coração do rei em favor da casa do Senhor",
+    "cue": "Em Esdras 7:27, Esdras reconhece que Deus moveu o coração do rei em favor da casa do Senhor",
+    "verseRef": "Esdras 7:27",
+    "passageText": "Bendito seja o SENHOR, Deus de nossos pais, que assim moveu o coração do rei para embelezar a Casa do SENHOR, que se encontra em Jerusalém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+    "feedbackCorrect": "Como com Ciro, Deus move um rei persa, agora por meio de Esdras.",
+    "feedbackWrong": {
+      "false": "Releia a oração de gratidão de Esdras em 7:27."
+    },
+    "hint": "Veja a quem Esdras atribui a abertura do rei.",
+    "learningObjective": "Interpretar o favor real como ação de Deus na história.",
+    "evidence": [
+      "Esdras 7:27"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-02",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Esdras 7:10, toque o trecho que mostra a preparação interior de Esdras antes de ensinar.",
+    "prompt": "Em Esdras 7:10, toque o trecho que mostra a preparação interior de Esdras antes de ensinar.",
+    "cue": "Em Esdras 7:10, toque o trecho que mostra a preparação interior de Esdras antes de ensinar.",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disposto o coração"
+      },
+      {
+        "id": "b",
+        "text": "seus estatutos"
+      },
+      {
+        "id": "c",
+        "text": "em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "feedbackCorrect": "O ensino nasce de um coração preparado, e não de improviso.",
+    "feedbackWrong": {
+      "b": "Estatutos são o conteúdo do ensino, não a preparação.",
+      "c": "Israel é o destino do ensino, não a preparação interior."
+    },
+    "hint": "Procure o que aconteceu dentro de Esdras.",
+    "learningObjective": "Sustentar com o texto a preparação interior de Esdras.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-03",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Esdras 7:25 sustenta sobre quem ensina a Palavra?",
+    "prompt": "Que leitura Esdras 7:25 sustenta sobre quem ensina a Palavra?",
+    "cue": "Que leitura Esdras 7:25 sustenta sobre quem ensina a Palavra?",
+    "verseRef": "Esdras 7:25",
+    "passageText": "E tu, Esdras, de acordo com a sabedoria do teu Deus que possuis, nomeia magistrados e juízes que julguem todo o povo que está dalém do rio, a todos os que sabem as leis do teu Deus; e aos que não as sabem, que lhes sejam ensinadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensina bem quem primeiro busca e vive"
+      },
+      {
+        "id": "b",
+        "text": "Só sacerdotes antigos podiam conhecer a Lei"
+      },
+      {
+        "id": "c",
+        "text": "Basta eloquência para ensinar a Lei"
+      },
+      {
+        "id": "d",
+        "text": "Ensinar dispensa qualquer vida pessoal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas",
+    "feedbackCorrect": "A autoridade de Esdras vem do coração que busca e cumpre.",
+    "feedbackWrong": {
+      "b": "A missão inclui ensinar justamente a quem não sabe.",
+      "c": "O texto valoriza disposição e prática, e não discurso bonito.",
+      "d": "Cumprir vem antes de ensinar na ordem do versículo."
+    },
+    "hint": "Repare na ordem dos passos antes do ensino.",
+    "learningObjective": "Escolher a interpretação sustentada sobre ensinar a Palavra.",
+    "evidence": [
+      "Esdras 7:25"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-04",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da Lei guardada e ensinada na Bíblia?",
+    "prompt": "Qual sequência revela o fio da Lei guardada e ensinada na Bíblia?",
+    "cue": "Qual sequência revela o fio da Lei guardada e ensinada na Bíblia?",
+    "verseRef": "Esdras 7:6",
+    "passageText": "Este Esdras subiu da Babilônia; era um escriba versado na Lei de Moisés, que o SENHOR Deus de Israel lhe deu; e, pela boa mão do SENHOR, seu Deus, que estava sobre ele, o rei lhe concedeu tudo o que lhe pedira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Palavra é guardada no coração"
+      },
+      {
+        "id": "b",
+        "text": "Esdras busca, vive e ensina a Lei"
+      },
+      {
+        "id": "c",
+        "text": "O povo volta a ouvir a Lei reunido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "era um escriba versado na Lei de Moisés",
+    "feedbackCorrect": "Do coração guardado ao povo reunido ouvindo, a Lei forma gerações.",
+    "feedbackWrong": {
+      "default": "Comece pela Palavra no coração; o povo ouvindo vem depois."
+    },
+    "hint": "Siga do coração individual ao povo reunido.",
+    "learningObjective": "Ver Esdras 7:10 no fio maior do ensino da Lei.",
+    "evidence": [
+      "Esdras 7:6",
+      "Deuteronômio 6:6–7",
+      "Neemias 8:3"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-05",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Esdras 7:10, qual é o passo final de Esdras depois de buscar e cumprir a Lei?",
+    "prompt": "Em Esdras 7:10, qual é o passo final de Esdras depois de buscar e cumprir a Lei?",
+    "cue": "Em Esdras 7:10, qual é o passo final de Esdras depois de buscar e cumprir a Lei?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "template": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ___ em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensinar"
+      },
+      {
+        "id": "b",
+        "text": "aposentar"
+      },
+      {
+        "id": "c",
+        "text": "viajar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "Quem buscou e viveu a Lei agora a entrega ao povo de Israel.",
+    "feedbackWrong": {
+      "b": "O coração disposto não para em si; ele transborda em ensino.",
+      "c": "A viagem já aconteceu; o passo final aqui é outro."
+    },
+    "hint": "É o terceiro e último verbo do versículo.",
+    "learningObjective": "Lembrar o ensino como fruto de buscar e cumprir.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-06",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Esdras 7:10 a Neemias 8:3?",
+    "prompt": "O que liga Esdras 7:10 a Neemias 8:3?",
+    "cue": "O que liga Esdras 7:10 a Neemias 8:3?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos."
+    },
+    "passageB": {
+      "ref": "Neemias 8:3",
+      "text": "E leu no livro, diante da praça que está em frente à Porta das Águas, desde a alva até ao meio-dia, perante homens e mulheres e todos os que podiam entender; e os ouvidos de todo o povo estavam atentos ao Livro da Lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A Lei fica trancada no templo"
+      },
+      {
+        "id": "b",
+        "text": "O povo dispensa ouvir a Lei"
+      },
+      {
+        "id": "c",
+        "text": "Esdras lê a Lei ao povo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "Em Neemias, o Esdras que buscou e viveu lê a Lei ao povo atento.",
+    "feedbackWrong": {
+      "a": "A leitura acontece em praça pública, diante de todos.",
+      "b": "Os ouvidos de todo o povo estão atentos ao Livro."
+    },
+    "hint": "Veja o que Esdras faz diante da praça em Neemias.",
+    "learningObjective": "Ligar a disposição de Esdras à leitura pública da Lei.",
+    "evidence": [
+      "Esdras 7:10",
+      "Neemias 8:3"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-01",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Esdras 7:13, apenas os sacerdotes receberam permissão para ir com Esdras a Jerusalém",
+    "prompt": "Em Esdras 7:13, apenas os sacerdotes receberam permissão para ir com Esdras a Jerusalém",
+    "cue": "Em Esdras 7:13, apenas os sacerdotes receberam permissão para ir com Esdras a Jerusalém",
+    "verseRef": "Esdras 7:13",
+    "passageText": "Por minha ordem decreta-se que, em meu reino, todo aquele do povo de Israel, bem como seus sacerdotes e levitas, que desejar ir com você a Jerusalém, vá.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "todo aquele do povo de Israel",
+    "feedbackCorrect": "A permissão alcança todo o povo que desejar ir, e não só sacerdotes.",
+    "feedbackWrong": {
+      "true": "Releia quem o decreto autoriza a acompanhar Esdras."
+    },
+    "hint": "Veja o alcance da permissão no decreto.",
+    "learningObjective": "Observar quem pode acompanhar Esdras a Jerusalém.",
+    "evidence": [
+      "Esdras 7:13"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-02",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Esdras 7:10, toque onde Esdras deve ensinar estatutos e juízos.",
+    "prompt": "Em Esdras 7:10, toque onde Esdras deve ensinar estatutos e juízos.",
+    "cue": "Em Esdras 7:10, toque onde Esdras deve ensinar estatutos e juízos.",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em Israel"
+      },
+      {
+        "id": "b",
+        "text": "seus estatutos"
+      },
+      {
+        "id": "c",
+        "text": "o coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "Todo Israel é o campo do ensino de Esdras.",
+    "feedbackWrong": {
+      "b": "Estatutos é o conteúdo, não o povo ensinado.",
+      "c": "O coração é a sede da disposição, não o lugar do ensino."
+    },
+    "hint": "Procure o povo destinatário do ensino.",
+    "learningObjective": "Revisar o destino do ensino de Esdras.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-03",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Esdras 7:13, quem pode ir a Jerusalém com Esdras?",
+    "prompt": "Segundo Esdras 7:13, quem pode ir a Jerusalém com Esdras?",
+    "cue": "Segundo Esdras 7:13, quem pode ir a Jerusalém com Esdras?",
+    "verseRef": "Esdras 7:13",
+    "passageText": "Por minha ordem decreta-se que, em meu reino, todo aquele do povo de Israel, bem como seus sacerdotes e levitas, que desejar ir com você a Jerusalém, vá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente os sete conselheiros reais"
+      },
+      {
+        "id": "b",
+        "text": "Ninguém além do próprio Esdras"
+      },
+      {
+        "id": "c",
+        "text": "Quem do povo desejar ir com ele"
+      },
+      {
+        "id": "d",
+        "text": "Apenas soldados do rei persa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todo aquele do povo de Israel, bem como seus sacerdotes e levitas, que desejar ir com você a Jerusalém, vá",
+    "feedbackCorrect": "O decreto abre a viagem a todo israelita que quiser acompanhar Esdras.",
+    "feedbackWrong": {
+      "a": "Os conselheiros enviam Esdras; quem viaja é o povo disposto.",
+      "b": "Esdras reúne justamente outras pessoas para subir com ele.",
+      "d": "Não há escolta persa citada como viajante nesse decreto."
+    },
+    "hint": "Leia a condição posta para quem quiser ir.",
+    "learningObjective": "Observar o alcance do decreto de Artaxerxes.",
+    "evidence": [
+      "Esdras 7:13"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-04",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Esdras 7:10 na ordem do texto.",
+    "prompt": "Monte Esdras 7:10 na ordem do texto.",
+    "cue": "Monte Esdras 7:10 na ordem do texto.",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esdras havia disposto o coração para buscar a Lei do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "para cumpri-la"
+      },
+      {
+        "id": "c",
+        "text": "e para ensinar em Israel seus estatutos e juízos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "feedbackCorrect": "A ordem é buscar, cumprir e ensinar a Lei do Senhor.",
+    "feedbackWrong": {
+      "default": "Comece por buscar; o ensino fecha o versículo."
+    },
+    "hint": "O último passo é o ensino em Israel.",
+    "learningObjective": "Reconhecer a ordem dos passos de Esdras.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-05",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Esdras 7:10, qual é o primeiro passo do coração disposto de Esdras?",
+    "prompt": "Em Esdras 7:10, qual é o primeiro passo do coração disposto de Esdras?",
+    "cue": "Em Esdras 7:10, qual é o primeiro passo do coração disposto de Esdras?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "template": "Esdras havia disposto o coração para ___ a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ignorar"
+      },
+      {
+        "id": "b",
+        "text": "esconder"
+      },
+      {
+        "id": "c",
+        "text": "buscar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para buscar a Lei do Senhor",
+    "feedbackCorrect": "Tudo começa por buscar conhecer a Lei do Senhor.",
+    "feedbackWrong": {
+      "a": "O coração disposto se volta para a Lei, e não a ignora.",
+      "b": "Esdras busca a Lei para ensiná-la, e não para ocultá-la."
+    },
+    "hint": "É o primeiro verbo da tríade do versículo.",
+    "learningObjective": "Revisar o primeiro passo de Esdras diante da Lei.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-06",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Esdras 7:28 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 7:28 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 7:28 comunica que se liga a este contexto?",
+    "verseRef": "Esdras 7:28",
+    "passageText": "\"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\"",
+    "passageA": {
+      "ref": "Esdras 7:28",
+      "text": "\"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\""
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A restauração une retorno à terra, cuidado com a casa de Deus e ensino da Lei ao povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Voltar e reaprender com Deus"
+      },
+      {
+        "id": "b",
+        "text": "Voltar sem mudar nada dentro"
+      },
+      {
+        "id": "c",
+        "text": "Depender apenas da própria força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e reuni de Israel alguns chefes para subirem comigo",
+    "feedbackCorrect": "Esdras se anima em Deus e reúne outros para a subida restauradora.",
+    "feedbackWrong": {
+      "b": "O retorno vem com coração formado pela Lei de Deus.",
+      "c": "Esdras se anima segundo a boa mão do Senhor sobre ele."
+    },
+    "hint": "Veja o que Esdras faz depois de se animar.",
+    "learningObjective": "Ligar Esdras 7:28 à restauração completa do povo.",
+    "evidence": [
+      "Esdras 7:28"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-07",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Esdras 7:27, toque o que Deus moveu em favor da sua casa.",
+    "prompt": "Em Esdras 7:27, toque o que Deus moveu em favor da sua casa.",
+    "cue": "Em Esdras 7:27, toque o que Deus moveu em favor da sua casa.",
+    "verseRef": "Esdras 7:27",
+    "passageText": "Bendito seja o SENHOR, Deus de nossos pais, que assim moveu o coração do rei para embelezar a Casa do SENHOR, que se encontra em Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "coração do rei"
+      },
+      {
+        "id": "c",
+        "text": "nossos pais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+    "feedbackCorrect": "Deus inclina o interior do rei para favorecer sua casa.",
+    "feedbackWrong": {
+      "a": "Jerusalém é o lugar da casa, não o que Deus moveu.",
+      "c": "Os pais identificam o Deus bendito, não o que foi movido."
+    },
+    "hint": "Procure o interior da pessoa favorecedora.",
+    "learningObjective": "Observar como Deus age no coração do rei.",
+    "evidence": [
+      "Esdras 7:27"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-08",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Esdras 7:9 na ordem do texto.",
+    "prompt": "Monte Esdras 7:9 na ordem do texto.",
+    "cue": "Monte Esdras 7:9 na ordem do texto.",
+    "verseRef": "Esdras 7:9",
+    "passageText": "Porque, no primeiro dia do primeiro mês, começou a sua jornada de Babilônia, e, no primeiro dia do quinto mês, chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "começou a sua jornada de Babilônia"
+      },
+      {
+        "id": "b",
+        "text": "chegou a Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "segundo a boa mão do seu Deus sobre ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "começou a sua jornada de Babilônia",
+    "feedbackCorrect": "Saída da Babilônia, chegada a Jerusalém e o favor de Deus resumem a viagem.",
+    "feedbackWrong": {
+      "default": "Comece pela saída da Babilônia; a chegada vem depois."
+    },
+    "hint": "A viagem começa longe de Jerusalém.",
+    "learningObjective": "Reconhecer a sequência da jornada de Esdras.",
+    "evidence": [
+      "Esdras 7:9"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-01",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Esdras 7:25, quem ainda não conhece as leis de Deus deve ser ensinado nelas",
+    "prompt": "Em Esdras 7:25, quem ainda não conhece as leis de Deus deve ser ensinado nelas",
+    "cue": "Em Esdras 7:25, quem ainda não conhece as leis de Deus deve ser ensinado nelas",
+    "verseRef": "Esdras 7:25",
+    "passageText": "E tu, Esdras, de acordo com a sabedoria do teu Deus que possuis, nomeia magistrados e juízes que julguem todo o povo que está dalém do rio, a todos os que sabem as leis do teu Deus; e aos que não as sabem, que lhes sejam ensinadas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas",
+    "feedbackCorrect": "A missão de Esdras inclui ensinar justamente quem não sabe.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Esdras 7:25 sobre quem não sabe."
+    },
+    "hint": "Veja o destino dado a quem desconhece a Lei.",
+    "learningObjective": "Compreender o ensino como parte da restauração.",
+    "evidence": [
+      "Esdras 7:25"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-02",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Esdras 7:9, toque a palavra que liga a chegada à boa mão de Deus.",
+    "prompt": "Em Esdras 7:9, toque a palavra que liga a chegada à boa mão de Deus.",
+    "cue": "Em Esdras 7:9, toque a palavra que liga a chegada à boa mão de Deus.",
+    "verseRef": "Esdras 7:9",
+    "passageText": "Porque, no primeiro dia do primeiro mês, começou a sua jornada de Babilônia, e, no primeiro dia do quinto mês, chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque"
+      },
+      {
+        "id": "b",
+        "text": "sobre"
+      },
+      {
+        "id": "c",
+        "text": "segundo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele",
+    "feedbackCorrect": "A chegada se deu em conformidade com o favor divino.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre a frase, sem fazer essa ligação.",
+      "b": "Essa palavra diz sobre quem a mão repousa."
+    },
+    "hint": "Procure a palavrinha imediatamente antes do favor.",
+    "learningObjective": "Reconhecer a ligação entre jornada e favor de Deus.",
+    "evidence": [
+      "Esdras 7:9"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-03",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Esdras 7:25 combina justiça e ensino na restauração?",
+    "prompt": "Como Esdras 7:25 combina justiça e ensino na restauração?",
+    "cue": "Como Esdras 7:25 combina justiça e ensino na restauração?",
+    "verseRef": "Esdras 7:25",
+    "passageText": "E tu, Esdras, de acordo com a sabedoria do teu Deus que possuis, nomeia magistrados e juízes que julguem todo o povo que está dalém do rio, a todos os que sabem as leis do teu Deus; e aos que não as sabem, que lhes sejam ensinadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízes substituem o ensino da Lei"
+      },
+      {
+        "id": "b",
+        "text": "Só quem já sabe recebe atenção"
+      },
+      {
+        "id": "c",
+        "text": "O ensino fica restrito aos magistrados"
+      },
+      {
+        "id": "d",
+        "text": "Juízes julgam e ignorantes são ensinados"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "nomeia magistrados e juízes que julguem todo o povo",
+    "feedbackCorrect": "Julgar quem sabe e ensinar quem não sabe andam juntos.",
+    "feedbackWrong": {
+      "a": "O ensino acompanha o juízo, e não é substituído por ele.",
+      "b": "Quem não sabe é alvo explícito do ensino ordenado.",
+      "c": "Os magistrados julgam; o ensino mira todo o povo."
+    },
+    "hint": "Veja os dois destinos dados ao povo no versículo.",
+    "learningObjective": "Relacionar juízo e ensino na missão de Esdras.",
+    "evidence": [
+      "Esdras 7:25"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-04",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos do coração em Esdras 7:10?",
+    "prompt": "Como se encadeiam os passos do coração em Esdras 7:10?",
+    "cue": "Como se encadeiam os passos do coração em Esdras 7:10?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aprender a Lei a fundo"
+      },
+      {
+        "id": "b",
+        "text": "Obedecer ao que aprendeu"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar o povo em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel",
+    "feedbackCorrect": "Aprender, obedecer e ensinar formam o caminho inteiro.",
+    "feedbackWrong": {
+      "default": "A obediência fica entre aprender e ensinar."
+    },
+    "hint": "Ensinar é a etapa final do encadeamento.",
+    "learningObjective": "Compreender a progressão do coração de Esdras.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-05",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Esdras 7:6, o que o rei fez com tudo o que Esdras lhe pedira?",
+    "prompt": "Em Esdras 7:6, o que o rei fez com tudo o que Esdras lhe pedira?",
+    "cue": "Em Esdras 7:6, o que o rei fez com tudo o que Esdras lhe pedira?",
+    "verseRef": "Esdras 7:6",
+    "passageText": "Este Esdras subiu da Babilônia; era um escriba versado na Lei de Moisés, que o SENHOR Deus de Israel lhe deu; e, pela boa mão do SENHOR, seu Deus, que estava sobre ele, o rei lhe concedeu tudo o que lhe pedira.",
+    "template": "Este Esdras subiu da Babilônia; era um escriba versado na Lei de Moisés, que o SENHOR Deus de Israel lhe deu; e, pela boa mão do SENHOR, seu Deus, que estava sobre ele, o rei lhe ___ tudo o que lhe pedira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "concedeu"
+      },
+      {
+        "id": "b",
+        "text": "adiou"
+      },
+      {
+        "id": "c",
+        "text": "negou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o rei lhe concedeu tudo o que lhe pedira",
+    "feedbackCorrect": "O pedido de Esdras foi plenamente atendido pelo rei.",
+    "feedbackWrong": {
+      "b": "Não há espera imposta; tudo foi atendido.",
+      "c": "O texto registra atendimento total, e não recusa."
+    },
+    "hint": "Veja o desfecho dos pedidos de Esdras.",
+    "learningObjective": "Compreender o favor real como parte da restauração.",
+    "evidence": [
+      "Esdras 7:6"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-06",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Esdras 7:10 a Deuteronômio 6:6–7?",
+    "prompt": "O que liga Esdras 7:10 a Deuteronômio 6:6–7?",
+    "cue": "O que liga Esdras 7:10 a Deuteronômio 6:6–7?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 6:6–7",
+      "text": "E estas palavras, que hoje te ordeno, estarão no teu coração; E as inculcarás a teus filhos, e delas falarás assentado em tua casa, e andando pelo caminho, e ao deitar-te, e ao levantar-te."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensino sem vida no coração"
+      },
+      {
+        "id": "b",
+        "text": "Palavra no coração e ensino"
+      },
+      {
+        "id": "c",
+        "text": "Palavra guardada só para si"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "feedbackCorrect": "Moisés põe a Palavra no coração que ensina; Esdras vive isso.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, coração e ensino andam juntos.",
+      "c": "Deuteronômio manda inculcar a Palavra aos filhos."
+    },
+    "hint": "Compare onde a Palavra fica e o que ela gera.",
+    "learningObjective": "Relacionar o coração de Esdras ao ensino em Deuteronômio.",
+    "evidence": [
+      "Esdras 7:10",
+      "Deuteronômio 6:6–7"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-07",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Esdras 7:25, toque o trecho que identifica quem ainda precisa aprender as leis de Deus.",
+    "prompt": "Em Esdras 7:25, toque o trecho que identifica quem ainda precisa aprender as leis de Deus.",
+    "cue": "Em Esdras 7:25, toque o trecho que identifica quem ainda precisa aprender as leis de Deus.",
+    "verseRef": "Esdras 7:25",
+    "passageText": "E tu, Esdras, de acordo com a sabedoria do teu Deus que possuis, nomeia magistrados e juízes que julguem todo o povo que está dalém do rio, a todos os que sabem as leis do teu Deus; e aos que não as sabem, que lhes sejam ensinadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não as sabem"
+      },
+      {
+        "id": "b",
+        "text": "todo o povo"
+      },
+      {
+        "id": "c",
+        "text": "magistrados e juízes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas",
+    "feedbackCorrect": "Quem desconhece a Lei é justamente quem deve ser ensinado.",
+    "feedbackWrong": {
+      "b": "O povo todo é julgado; o recorte aponta quem ignora a Lei.",
+      "c": "Magistrados são nomeados para julgar, não os aprendizes aqui."
+    },
+    "hint": "Procure o grupo definido pela falta de saber.",
+    "learningObjective": "Identificar quem deve ser ensinado segundo a carta.",
+    "evidence": [
+      "Esdras 7:25"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-08",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o desfecho em Esdras 7:27–28?",
+    "prompt": "Como avança o desfecho em Esdras 7:27–28?",
+    "cue": "Como avança o desfecho em Esdras 7:27–28?",
+    "verseRef": "Esdras 7:27–28",
+    "passageText": "Bendito seja o SENHOR, Deus de nossos pais, que assim moveu o coração do rei para embelezar a Casa do SENHOR, que se encontra em Jerusalém. \"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esdras bendiz ao Senhor pelo favor"
+      },
+      {
+        "id": "b",
+        "text": "Ele reconhece a misericórdia recebida"
+      },
+      {
+        "id": "c",
+        "text": "Ele reúne chefes para a subida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bendito seja o SENHOR, Deus de nossos pais",
+    "feedbackCorrect": "Gratidão, reconhecimento e ação encerram a cena de Esdras.",
+    "feedbackWrong": {
+      "default": "Comece pela bênção de Esdras; reunir chefes é o fim."
+    },
+    "hint": "A reunião de chefes é a ação final.",
+    "learningObjective": "Compreender o movimento da gratidão à ação.",
+    "evidence": [
+      "Esdras 7:27–28"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-01",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Esdras 7:28, Esdras se anima apenas pela própria força, sem relação com a mão de Deus",
+    "prompt": "Em Esdras 7:28, Esdras se anima apenas pela própria força, sem relação com a mão de Deus",
+    "cue": "Em Esdras 7:28, Esdras se anima apenas pela própria força, sem relação com a mão de Deus",
+    "verseRef": "Esdras 7:28",
+    "passageText": "\"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "segundo a boa mão do SENHOR meu Deus sobre mim",
+    "feedbackCorrect": "O ânimo de Esdras nasce da boa mão do Senhor sobre ele.",
+    "feedbackWrong": {
+      "true": "Releia a quem Esdras atribui seu ânimo no fim do capítulo."
+    },
+    "hint": "Veja a fonte do ânimo declarada por Esdras.",
+    "learningObjective": "Interpretar o ânimo de Esdras como fruto do favor de Deus.",
+    "evidence": [
+      "Esdras 7:28"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-02",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Esdras 7:10, toque o trecho que mostra a preparação interior antes do ensino.",
+    "prompt": "Em Esdras 7:10, toque o trecho que mostra a preparação interior antes do ensino.",
+    "cue": "Em Esdras 7:10, toque o trecho que mostra a preparação interior antes do ensino.",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disposto o coração"
+      },
+      {
+        "id": "b",
+        "text": "em Israel"
+      },
+      {
+        "id": "c",
+        "text": "seus estatutos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+    "feedbackCorrect": "A restauração do povo passa pelo coração preparado do mestre.",
+    "feedbackWrong": {
+      "b": "Israel é onde o ensino chega, não a preparação.",
+      "c": "Estatutos são o conteúdo, não o interior de Esdras."
+    },
+    "hint": "Procure o que se passa dentro de Esdras.",
+    "learningObjective": "Sustentar a preparação interior como base do ensino.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-03",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Esdras 7:27–28 sustenta sobre a restauração do povo?",
+    "prompt": "Que leitura Esdras 7:27–28 sustenta sobre a restauração do povo?",
+    "cue": "Que leitura Esdras 7:27–28 sustenta sobre a restauração do povo?",
+    "verseRef": "Esdras 7:27–28",
+    "passageText": "Bendito seja o SENHOR, Deus de nossos pais, que assim moveu o coração do rei para embelezar a Casa do SENHOR, que se encontra em Jerusalém. \"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "O favor real torna a Lei desnecessária"
+      },
+      {
+        "id": "b",
+        "text": "Reis agem e Deus apenas observa distante"
+      },
+      {
+        "id": "c",
+        "text": "Deus age nos reis e anima seus servos"
+      },
+      {
+        "id": "d",
+        "text": "A restauração dispensa gratidão a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+    "feedbackCorrect": "Deus move o rei por fora e anima Esdras por dentro.",
+    "feedbackWrong": {
+      "a": "O favor do rei serve à casa e à Lei, e não as substitui.",
+      "b": "Esdras bendiz a Deus justamente por agir no rei.",
+      "d": "A primeira reação de Esdras é bendizer ao Senhor."
+    },
+    "hint": "Veja a quem Esdras atribui rei favorável e ânimo.",
+    "learningObjective": "Escolher a interpretação sustentada sobre Deus e a restauração.",
+    "evidence": [
+      "Esdras 7:27–28"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-04",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da Lei do coração ao povo reunido?",
+    "prompt": "Qual sequência revela o fio da Lei do coração ao povo reunido?",
+    "cue": "Qual sequência revela o fio da Lei do coração ao povo reunido?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Palavra habita primeiro no coração"
+      },
+      {
+        "id": "b",
+        "text": "O mestre vive e transmite a Lei"
+      },
+      {
+        "id": "c",
+        "text": "A comunidade ouve reunida e atenta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "Do coração ao ensino e ao povo ouvindo, a Lei refaz a comunidade.",
+    "feedbackWrong": {
+      "default": "Comece no coração; o povo ouvindo é o desfecho."
+    },
+    "hint": "Siga do interior de uma pessoa à comunidade.",
+    "learningObjective": "Ver Esdras no fio maior do ensino da Lei.",
+    "evidence": [
+      "Esdras 7:10",
+      "Deuteronômio 6:6–7",
+      "Neemias 8:3"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-05",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Esdras 7:10, qual é o fruto final de buscar e cumprir a Lei?",
+    "prompt": "Em Esdras 7:10, qual é o fruto final de buscar e cumprir a Lei?",
+    "cue": "Em Esdras 7:10, qual é o fruto final de buscar e cumprir a Lei?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "template": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ___ em Israel seus estatutos e juízos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aposentar"
+      },
+      {
+        "id": "b",
+        "text": "ensinar"
+      },
+      {
+        "id": "c",
+        "text": "partir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e para ensinar em Israel seus estatutos e juízos",
+    "feedbackCorrect": "O conhecimento vivido transborda em ensino para Israel.",
+    "feedbackWrong": {
+      "a": "O coração restaurado não se aposenta; ele ensina.",
+      "c": "Partir já foi a viagem; agora o fruto é outro."
+    },
+    "hint": "É o último verbo da tríade de Esdras.",
+    "learningObjective": "Lembrar o ensino como fruto da restauração interior.",
+    "evidence": [
+      "Esdras 7:10"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-06",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Esdras 7:10 a Salmos 1:2?",
+    "prompt": "O que liga Esdras 7:10 a Salmos 1:2?",
+    "cue": "O que liga Esdras 7:10 a Salmos 1:2?",
+    "verseRef": "Esdras 7:10",
+    "passageText": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos.",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "Esdras havia disposto o coração para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel seus estatutos e juízos."
+    },
+    "passageB": {
+      "ref": "Salmos 1:2",
+      "text": "Antes, o seu prazer está na lei do Senhor, e na sua lei medita de dia e de noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lei lembrada só em festas"
+      },
+      {
+        "id": "b",
+        "text": "Prazer na Lei dia e noite"
+      },
+      {
+        "id": "c",
+        "text": "Conhecer sem meditar nunca"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para buscar a Lei do Senhor, para cumpri-la",
+    "feedbackCorrect": "O salmo chama de feliz quem medita na Lei; Esdras a busca de coração.",
+    "feedbackWrong": {
+      "a": "O salmo fala de meditação diária, e não ocasional.",
+      "c": "Buscar a Lei, em Esdras, é dedicação contínua do coração."
+    },
+    "hint": "Compare a dedicação diária descrita no salmo.",
+    "learningObjective": "Ligar a busca de Esdras ao prazer na Lei do Salmos 1.",
+    "evidence": [
+      "Esdras 7:10",
+      "Salmos 1:2"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-07",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Esdras 7:28, toque a reação de Esdras ao favor de Deus diante do rei.",
+    "prompt": "Em Esdras 7:28, toque a reação de Esdras ao favor de Deus diante do rei.",
+    "cue": "Em Esdras 7:28, toque a reação de Esdras ao favor de Deus diante do rei.",
+    "verseRef": "Esdras 7:28",
+    "passageText": "\"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "alguns chefes"
+      },
+      {
+        "id": "b",
+        "text": "subirem comigo"
+      },
+      {
+        "id": "c",
+        "text": "me animei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim",
+    "feedbackCorrect": "O favor de Deus não gera orgulho; gera ânimo para reunir e subir.",
+    "feedbackWrong": {
+      "a": "Os chefes são reunidos depois do ânimo de Esdras.",
+      "b": "Subir é o destino do grupo, não a reação interior."
+    },
+    "hint": "Procure o verbo na primeira pessoa após o favor.",
+    "learningObjective": "Sustentar com o texto a resposta interior de Esdras.",
+    "evidence": [
+      "Esdras 7:28"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-08",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela como Deus restaura em Esdras 7:27–28?",
+    "prompt": "Qual sequência revela como Deus restaura em Esdras 7:27–28?",
+    "cue": "Qual sequência revela como Deus restaura em Esdras 7:27–28?",
+    "verseRef": "Esdras 7:27–28",
+    "passageText": "Bendito seja o SENHOR, Deus de nossos pais, que assim moveu o coração do rei para embelezar a Casa do SENHOR, que se encontra em Jerusalém. \"E estendeu para mim a sua misericórdia diante do rei, dos seus conselheiros e de todos os seus príncipes poderosos; assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim, e reuni de Israel alguns chefes para subirem comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus move o coração do rei persa"
+      },
+      {
+        "id": "b",
+        "text": "A casa do Senhor recebe favor e beleza"
+      },
+      {
+        "id": "c",
+        "text": "Chefes são reunidos para subir juntos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+    "feedbackCorrect": "Rei movido, casa favorecida e povo reunido mostram Deus restaurando.",
+    "feedbackWrong": {
+      "default": "Comece pelo coração do rei; a reunião do povo fecha."
+    },
+    "hint": "Siga do rei à casa e depois ao povo.",
+    "learningObjective": "Ver a restauração como ação completa de Deus.",
+    "evidence": [
+      "Esdras 7:27–28"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-01",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Esdras 1:5, chefes das famílias de Judá e de Benjamim se levantaram para edificar a casa do Senhor",
+    "prompt": "Em Esdras 1:5, chefes das famílias de Judá e de Benjamim se levantaram para edificar a casa do Senhor",
+    "cue": "Em Esdras 1:5, chefes das famílias de Judá e de Benjamim se levantaram para edificar a casa do Senhor",
+    "verseRef": "Esdras 1:5",
+    "passageText": "Então, levantaram-se os chefes das famílias de Judá e de Benjamim, os sacerdotes e os levitas, e todos aqueles cujo espírito Deus despertou, para subirem e edificar a casa do SENHOR, que está em Jerusalém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "levantaram-se os chefes das famílias de Judá e de Benjamim",
+    "feedbackCorrect": "Sacerdotes, levitas e chefes de Judá e Benjamim respondem e se levantam.",
+    "feedbackWrong": {
+      "false": "Releia Esdras 1:5 e veja quem se levanta após o decreto."
+    },
+    "hint": "Veja quem responde ao decreto em Esdras 1:5.",
+    "learningObjective": "Observar quem se levanta para voltar a Jerusalém.",
+    "evidence": [
+      "Esdras 1:5"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-02",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Esdras 1:2, toque quem encarregou Ciro de construir uma casa em Jerusalém.",
+    "prompt": "Em Esdras 1:2, toque quem encarregou Ciro de construir uma casa em Jerusalém.",
+    "cue": "Em Esdras 1:2, toque quem encarregou Ciro de construir uma casa em Jerusalém.",
+    "verseRef": "Esdras 1:2",
+    "passageText": "Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O SENHOR"
+      },
+      {
+        "id": "b",
+        "text": "uma casa"
+      },
+      {
+        "id": "c",
+        "text": "todos os reinos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "me encarregou de construir uma casa em Jerusalém",
+    "feedbackCorrect": "Ciro reconhece que foi o Senhor quem o encarregou dessa obra.",
+    "feedbackWrong": {
+      "b": "A casa é a obra encomendada, não quem encomenda.",
+      "c": "Os reinos são o que Ciro recebeu, não quem o encarregou."
+    },
+    "hint": "Procure quem Ciro cita no começo de sua fala.",
+    "learningObjective": "Identificar quem encarrega Ciro da reconstrução.",
+    "evidence": [
+      "Esdras 1:2"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-03",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Esdras 1:4, como os vizinhos devem apoiar quem voltar a Jerusalém?",
+    "prompt": "Segundo Esdras 1:4, como os vizinhos devem apoiar quem voltar a Jerusalém?",
+    "cue": "Segundo Esdras 1:4, como os vizinhos devem apoiar quem voltar a Jerusalém?",
+    "verseRef": "Esdras 1:4",
+    "passageText": "E todo aquele que restar em alguns lugares onde estiver peregrinando, os homens desse lugar o apoiarão com prata, ouro, bens e gado, além das dádivas voluntárias para a casa de Deus, que está em Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com prata, ouro, bens e gado"
+      },
+      {
+        "id": "b",
+        "text": "Apenas com orações à distância"
+      },
+      {
+        "id": "c",
+        "text": "Construindo casas na Babilônia"
+      },
+      {
+        "id": "d",
+        "text": "Enviando soldados para a viagem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o apoiarão com prata, ouro, bens e gado",
+    "feedbackCorrect": "Quem fica apoia quem sobe com recursos concretos para a casa de Deus.",
+    "feedbackWrong": {
+      "b": "O apoio pedido é material, com recursos para a obra.",
+      "c": "O destino de quem sobe é Jerusalém, e não novas casas no exílio.",
+      "d": "O texto fala de bens e dádivas, não de escolta militar."
+    },
+    "hint": "Leia o que os homens do lugar devem dar.",
+    "learningObjective": "Observar o apoio concreto dado a quem retorna.",
+    "evidence": [
+      "Esdras 1:4"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-04",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Esdras 1:2 na ordem do texto.",
+    "prompt": "Monte Esdras 1:2 na ordem do texto.",
+    "cue": "Monte Esdras 1:2 na ordem do texto.",
+    "verseRef": "Esdras 1:2",
+    "passageText": "Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim diz Ciro, rei da Pérsia"
+      },
+      {
+        "id": "b",
+        "text": "O SENHOR, Deus dos céus, me deu todos os reinos da terra"
+      },
+      {
+        "id": "c",
+        "text": "me encarregou de construir uma casa em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Assim diz Ciro, rei da Pérsia",
+    "feedbackCorrect": "Ciro se apresenta, reconhece o Senhor e anuncia a tarefa recebida.",
+    "feedbackWrong": {
+      "default": "Comece pela apresentação de Ciro; a tarefa vem no fim."
+    },
+    "hint": "O versículo começa com a apresentação de Ciro.",
+    "learningObjective": "Reconhecer a sequência da fala de Ciro.",
+    "evidence": [
+      "Esdras 1:2"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-05",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Esdras 1:3, o que o povo de Deus é convidado a fazer em relação a Jerusalém?",
+    "prompt": "Em Esdras 1:3, o que o povo de Deus é convidado a fazer em relação a Jerusalém?",
+    "cue": "Em Esdras 1:3, o que o povo de Deus é convidado a fazer em relação a Jerusalém?",
+    "verseRef": "Esdras 1:3",
+    "passageText": "Quem entre vocês, de todo o seu povo, que seu Deus esteja com ele, suba a Jerusalém, que está em Judá, e edifique a Casa do SENHOR, Deus de Israel; Ele é o Deus que habita em Jerusalém.",
+    "template": "Quem entre vocês, de todo o seu povo, que seu Deus esteja com ele, ___ a Jerusalém, que está em Judá, e edifique a Casa do SENHOR, Deus de Israel; Ele é o Deus que habita em Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fuja"
+      },
+      {
+        "id": "b",
+        "text": "suba"
+      },
+      {
+        "id": "c",
+        "text": "desça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "suba a Jerusalém, que está em Judá",
+    "feedbackCorrect": "O convite é subir a Jerusalém e edificar a casa do Senhor.",
+    "feedbackWrong": {
+      "a": "Não é fuga, mas retorno convocado pelo decreto.",
+      "c": "O movimento é de retorno para cima, rumo a Jerusalém."
+    },
+    "hint": "Pense no movimento de quem volta do exílio.",
+    "learningObjective": "Lembrar o convite para subir a Jerusalém.",
+    "evidence": [
+      "Esdras 1:3"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-06",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Esdras 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:3 comunica que se liga a este contexto?",
+    "verseRef": "Esdras 1:3",
+    "passageText": "Quem entre vocês, de todo o seu povo, que seu Deus esteja com ele, suba a Jerusalém, que está em Judá, e edifique a Casa do SENHOR, Deus de Israel; Ele é o Deus que habita em Jerusalém.",
+    "passageA": {
+      "ref": "Esdras 1:3",
+      "text": "Quem entre vocês, de todo o seu povo, que seu Deus esteja com ele, suba a Jerusalém, que está em Judá, e edifique a Casa do SENHOR, Deus de Israel; Ele é o Deus que habita em Jerusalém."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois do exílio, o povo pode voltar para reconstruir a casa de Deus em Jerusalém."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus abre caminho de volta"
+      },
+      {
+        "id": "b",
+        "text": "Jerusalém foi abandonada para sempre"
+      },
+      {
+        "id": "c",
+        "text": "O exílio nunca vai acabar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "suba a Jerusalém, que está em Judá",
+    "feedbackCorrect": "O decreto abre a porta do retorno para reconstruir a casa de Deus.",
+    "feedbackWrong": {
+      "b": "Jerusalém volta a ser destino do povo, e não lugar esquecido.",
+      "c": "O convite para subir mostra que o exílio está terminando."
+    },
+    "hint": "Veja o destino de quem atende ao convite.",
+    "learningObjective": "Ligar o convite de Esdras 1:3 ao fim do exílio.",
+    "evidence": [
+      "Esdras 1:3"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-01",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Esdras 1:1, o decreto de Ciro é apresentado como cumprimento da palavra do Senhor falada por Jeremias",
+    "prompt": "Em Esdras 1:1, o decreto de Ciro é apresentado como cumprimento da palavra do Senhor falada por Jeremias",
+    "cue": "Em Esdras 1:1, o decreto de Ciro é apresentado como cumprimento da palavra do Senhor falada por Jeremias",
+    "verseRef": "Esdras 1:1",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo:",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que se cumprisse a palavra do SENHOR, por boca de Jeremias",
+    "feedbackCorrect": "O narrador liga o decreto à promessa antiga feita por Jeremias.",
+    "feedbackWrong": {
+      "false": "Releia o início de Esdras 1:1 e o motivo do despertar de Ciro."
+    },
+    "hint": "Repare na primeira explicação que o texto dá.",
+    "learningObjective": "Compreender o decreto como cumprimento de promessa.",
+    "evidence": [
+      "Esdras 1:1"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-02",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Esdras 1:1, toque a palavra que mostra o propósito do despertar de Ciro.",
+    "prompt": "Em Esdras 1:1, toque a palavra que mostra o propósito do despertar de Ciro.",
+    "cue": "Em Esdras 1:1, toque a palavra que mostra o propósito do despertar de Ciro.",
+    "verseRef": "Esdras 1:1",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "primeiro"
+      },
+      {
+        "id": "b",
+        "text": "também"
+      },
+      {
+        "id": "c",
+        "text": "para"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que se cumprisse a palavra do SENHOR",
+    "feedbackCorrect": "A pequena palavra de propósito liga o decreto à promessa cumprida.",
+    "feedbackWrong": {
+      "a": "Essa palavra marca o tempo do reinado, não o propósito.",
+      "b": "Essa palavra acrescenta a forma escrita, não o propósito."
+    },
+    "hint": "Procure a palavrinha antes de se cumprisse.",
+    "learningObjective": "Reconhecer o marcador de propósito em Esdras 1:1.",
+    "evidence": [
+      "Esdras 1:1"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-03",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Esdras 1:5 se relaciona com o decreto de Esdras 1:1–3?",
+    "prompt": "Como Esdras 1:5 se relaciona com o decreto de Esdras 1:1–3?",
+    "cue": "Como Esdras 1:5 se relaciona com o decreto de Esdras 1:1–3?",
+    "verseRef": "Esdras 1:5",
+    "passageText": "Então, levantaram-se os chefes das famílias de Judá e de Benjamim, os sacerdotes e os levitas, e todos aqueles cujo espírito Deus despertou, para subirem e edificar a casa do SENHOR, que está em Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo responde porque Deus também o desperta"
+      },
+      {
+        "id": "b",
+        "text": "Apenas Ciro age, sem resposta do povo"
+      },
+      {
+        "id": "c",
+        "text": "O povo volta apenas por medo do rei persa"
+      },
+      {
+        "id": "d",
+        "text": "O decreto falha e ninguém decide retornar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos aqueles cujo espírito Deus despertou",
+    "feedbackCorrect": "O mesmo Deus que desperta Ciro desperta o povo que sobe.",
+    "feedbackWrong": {
+      "b": "A resposta do povo é parte central do capítulo.",
+      "c": "O texto destaca corações movidos por Deus, e não medo.",
+      "d": "Chefias e sacerdotes de fato se levantam para subir."
+    },
+    "hint": "Compare quem desperta Ciro com quem move o povo.",
+    "learningObjective": "Relacionar o decreto de Ciro à resposta do povo.",
+    "evidence": [
+      "Esdras 1:5"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-04",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena de Esdras 1:1–3?",
+    "prompt": "Como avança a cena de Esdras 1:1–3?",
+    "cue": "Como avança a cena de Esdras 1:1–3?",
+    "verseRef": "Esdras 1:1–2",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo: Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus desperta o espírito do rei persa"
+      },
+      {
+        "id": "b",
+        "text": "O rei reconhece a autoridade do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "O povo é chamado a reconstruir em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o SENHOR despertou o espírito de Ciro, rei da Pérsia",
+    "feedbackCorrect": "Primeiro Deus move o rei, depois vem o decreto e o chamado ao povo.",
+    "feedbackWrong": {
+      "default": "Comece pela ação de Deus no rei; o chamado ao povo vem depois."
+    },
+    "hint": "A cena começa pela ação de Deus, não do povo.",
+    "learningObjective": "Compreender o movimento do decreto ao retorno.",
+    "evidence": [
+      "Esdras 1:1–2"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-05",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Esdras 1:6, como os vizinhos ajudam além dos objetos preciosos entregues?",
+    "prompt": "Em Esdras 1:6, como os vizinhos ajudam além dos objetos preciosos entregues?",
+    "cue": "Em Esdras 1:6, como os vizinhos ajudam além dos objetos preciosos entregues?",
+    "verseRef": "Esdras 1:6",
+    "passageText": "E todos os que habitavam ao redor os ajudaram com objetos de prata, com ouro, bens, gado e coisas preciosas, além de tudo o que foi dado voluntariamente.",
+    "template": "E todos os que habitavam ao redor os ajudaram com objetos de prata, com ouro, bens, gado e coisas preciosas, além de tudo o que foi dado ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obrigatoriamente"
+      },
+      {
+        "id": "b",
+        "text": "parcialmente"
+      },
+      {
+        "id": "c",
+        "text": "voluntariamente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "além de tudo o que foi dado voluntariamente",
+    "feedbackCorrect": "Além da ajuda ao redor, houve dádivas livres para a casa de Deus.",
+    "feedbackWrong": {
+      "a": "O texto ressalta entrega livre, e não imposição.",
+      "b": "O texto não limita a ajuda; fala de tudo o que foi dado."
+    },
+    "hint": "Veja o modo das dádivas no fim do versículo.",
+    "learningObjective": "Compreender a generosidade voluntária em torno do retorno.",
+    "evidence": [
+      "Esdras 1:6"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-06",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Esdras 1:1 a Jeremias 29:10?",
+    "prompt": "O que liga Esdras 1:1 a Jeremias 29:10?",
+    "cue": "O que liga Esdras 1:1 a Jeremias 29:10?",
+    "verseRef": "Esdras 1:1",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo:",
+    "passageA": {
+      "ref": "Esdras 1:1",
+      "text": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo:"
+    },
+    "passageB": {
+      "ref": "Jeremias 29:10",
+      "text": "Assim diz o SENHOR: Quando se completarem setenta anos na Babilônia, eu atentarei para vocês e cumprirei a minha boa palavra, trazendo-os de volta a este lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O exílio duraria para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Deus cumpre a promessa de retorno"
+      },
+      {
+        "id": "c",
+        "text": "Jeremias anula o decreto real"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que se cumprisse a palavra do SENHOR, por boca de Jeremias",
+    "feedbackCorrect": "Jeremias prometeu a volta após setenta anos; Esdras mostra o cumprimento.",
+    "feedbackWrong": {
+      "a": "Jeremias anuncia fim do exílio e retorno, não permanência.",
+      "c": "A palavra de Jeremias se cumpre por meio do decreto."
+    },
+    "hint": "Compare o prazo do exílio com o decreto.",
+    "learningObjective": "Relacionar a promessa de Jeremias ao decreto de Ciro.",
+    "evidence": [
+      "Esdras 1:1",
+      "Jeremias 29:10"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-01",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Esdras 1:2, Ciro apresenta o Senhor como um deus apenas local, sem poder sobre outros reinos",
+    "prompt": "Em Esdras 1:2, Ciro apresenta o Senhor como um deus apenas local, sem poder sobre outros reinos",
+    "cue": "Em Esdras 1:2, Ciro apresenta o Senhor como um deus apenas local, sem poder sobre outros reinos",
+    "verseRef": "Esdras 1:2",
+    "passageText": "Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "me deu todos os reinos da terra",
+    "feedbackCorrect": "Ciro chama o Senhor de Deus dos céus e dele recebe todos os reinos.",
+    "feedbackWrong": {
+      "true": "Releia como Ciro descreve o Senhor e o alcance do seu poder."
+    },
+    "hint": "Veja o título dado a Deus e o que ele entregou.",
+    "learningObjective": "Interpretar o alcance universal do Senhor em Esdras 1:2.",
+    "evidence": [
+      "Esdras 1:2"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-02",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Esdras 1:7, toque o trecho que indica de onde Nabucodonosor havia trazido os utensílios.",
+    "prompt": "Em Esdras 1:7, toque o trecho que indica de onde Nabucodonosor havia trazido os utensílios.",
+    "cue": "Em Esdras 1:7, toque o trecho que indica de onde Nabucodonosor havia trazido os utensílios.",
+    "verseRef": "Esdras 1:7",
+    "passageText": "Também o rei Ciro retirou os utensílios da casa do SENHOR, que Nabucodonosor havia trazido de Jerusalém e os tinha colocado na casa de seus deuses.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "o rei Ciro"
+      },
+      {
+        "id": "c",
+        "text": "seus deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que Nabucodonosor havia trazido de Jerusalém",
+    "feedbackCorrect": "Os utensílios voltam ao lugar de onde o exílio os havia tirado.",
+    "feedbackWrong": {
+      "b": "Ciro é quem devolve os utensílios, não a origem deles.",
+      "c": "Os deuses indicam onde foram guardados, não de onde vieram."
+    },
+    "hint": "Procure a cidade de origem citada no versículo.",
+    "learningObjective": "Sustentar com o texto a origem dos utensílios devolvidos.",
+    "evidence": [
+      "Esdras 1:7"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-03",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Esdras 1:1–2 sustenta sobre o governo de Deus na história?",
+    "prompt": "Que leitura Esdras 1:1–2 sustenta sobre o governo de Deus na história?",
+    "cue": "Que leitura Esdras 1:1–2 sustenta sobre o governo de Deus na história?",
+    "verseRef": "Esdras 1:1–2",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo: Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus governa até por meio de reis estrangeiros"
+      },
+      {
+        "id": "b",
+        "text": "Deus só age quando Israel tem o próprio rei"
+      },
+      {
+        "id": "c",
+        "text": "A promessa antiga perdeu a validade no exílio"
+      },
+      {
+        "id": "d",
+        "text": "Os impérios decidem a história sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o SENHOR despertou o espírito de Ciro, rei da Pérsia",
+    "feedbackCorrect": "Sem ser rei de Israel, Ciro é movido por Deus para cumprir a promessa.",
+    "feedbackWrong": {
+      "b": "Justamente sem rei em Israel, Deus age por meio de Ciro.",
+      "c": "O decreto é apresentado como promessa antiga se cumprindo.",
+      "d": "O narrador põe o Senhor por trás da decisão do império."
+    },
+    "hint": "Veja quem está por trás da decisão do império.",
+    "learningObjective": "Escolher a interpretação sustentada sobre Deus e a história.",
+    "evidence": [
+      "Esdras 1:1–2"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-04",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da promessa até o retorno em Esdras 1:1?",
+    "prompt": "Qual sequência revela o fio da promessa até o retorno em Esdras 1:1?",
+    "cue": "Qual sequência revela o fio da promessa até o retorno em Esdras 1:1?",
+    "verseRef": "Esdras 1:1",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra do SENHOR, por boca de Jeremias, o SENHOR despertou o espírito de Ciro, rei da Pérsia, que fez passar pregão por todo o seu reino, também por escrito, dizendo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete a volta por Jeremias"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor move o coração de Ciro"
+      },
+      {
+        "id": "c",
+        "text": "Os exilados voltam para Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que se cumprisse a palavra do SENHOR, por boca de Jeremias",
+    "feedbackCorrect": "Promessa antiga, rei despertado e povo voltando formam um só fio.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa antiga; o retorno é o desfecho."
+    },
+    "hint": "Siga a ordem promessa, decreto e retorno.",
+    "learningObjective": "Ver o retorno como cumprimento de longa promessa.",
+    "evidence": [
+      "Esdras 1:1",
+      "Jeremias 29:10"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-05",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Esdras 1:5, o que Deus faz no espírito de quem decide subir a Jerusalém?",
+    "prompt": "Em Esdras 1:5, o que Deus faz no espírito de quem decide subir a Jerusalém?",
+    "cue": "Em Esdras 1:5, o que Deus faz no espírito de quem decide subir a Jerusalém?",
+    "verseRef": "Esdras 1:5",
+    "passageText": "Então, levantaram-se os chefes das famílias de Judá e de Benjamim, os sacerdotes e os levitas, e todos aqueles cujo espírito Deus despertou, para subirem e edificar a casa do SENHOR, que está em Jerusalém.",
+    "template": "Então, levantaram-se os chefes das famílias de Judá e de Benjamim, os sacerdotes e os levitas, e todos aqueles cujo espírito Deus ___, para subirem e edificar a casa do SENHOR, que está em Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esqueceu"
+      },
+      {
+        "id": "b",
+        "text": "despertou"
+      },
+      {
+        "id": "c",
+        "text": "adormeceu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos aqueles cujo espírito Deus despertou",
+    "feedbackCorrect": "O mesmo verbo usado para Ciro mostra Deus movendo também o povo.",
+    "feedbackWrong": {
+      "a": "Deus não abandona o povo; ele o move a voltar.",
+      "c": "O movimento é o contrário; corações são acordados."
+    },
+    "hint": "É o mesmo verbo usado para Ciro no início.",
+    "learningObjective": "Lembrar o termo que liga a ação de Deus em Ciro e no povo.",
+    "evidence": [
+      "Esdras 1:5"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-06",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Esdras 1:2 a Isaías 44:28?",
+    "prompt": "O que liga Esdras 1:2 a Isaías 44:28?",
+    "cue": "O que liga Esdras 1:2 a Isaías 44:28?",
+    "verseRef": "Esdras 1:2",
+    "passageText": "Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá.",
+    "passageA": {
+      "ref": "Esdras 1:2",
+      "text": "Assim diz Ciro, rei da Pérsia: O SENHOR, Deus dos céus, me deu todos os reinos da terra e me encarregou de construir uma casa em Jerusalém, que é em Judá."
+    },
+    "passageB": {
+      "ref": "Isaías 44:28",
+      "text": "Que digo de Ciro: Ele é meu pastor e cumprirá todo o que me agrada; que digo também de Jerusalém: Será edificada; e do templo: Será fundado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém nunca será reedificada"
+      },
+      {
+        "id": "b",
+        "text": "Ciro age longe de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ciro cumpre o plano de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "me encarregou de construir uma casa em Jerusalém",
+    "feedbackCorrect": "Isaías já chamava Ciro de pastor usado por Deus para reedificar Jerusalém.",
+    "feedbackWrong": {
+      "a": "Isaías anuncia justamente a reedificação de Jerusalém e do templo.",
+      "b": "Isaías apresenta Ciro como instrumento do agrado de Deus."
+    },
+    "hint": "Veja como Isaías descreve a missão de Ciro.",
+    "learningObjective": "Ligar o decreto de Ciro à profecia de Isaías.",
+    "evidence": [
+      "Esdras 1:2",
+      "Isaías 44:28"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-01",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Esdras 3:11, o povo permaneceu em silêncio quando os alicerces do templo foram lançados",
+    "prompt": "Em Esdras 3:11, o povo permaneceu em silêncio quando os alicerces do templo foram lançados",
+    "cue": "Em Esdras 3:11, o povo permaneceu em silêncio quando os alicerces do templo foram lançados",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E todo o povo se alegrava com grandes gritos de júbilo",
+    "feedbackCorrect": "Longe do silêncio, o povo se alegrava com grandes gritos de júbilo.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Esdras 3:11 e a reação de todo o povo."
+    },
+    "hint": "Veja a reação do povo no fim do versículo.",
+    "learningObjective": "Observar a reação do povo na fundação do templo.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-02",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Esdras 3:10, toque o que os construtores lançaram do templo do Senhor.",
+    "prompt": "Em Esdras 3:10, toque o que os construtores lançaram do templo do Senhor.",
+    "cue": "Em Esdras 3:10, toque o que os construtores lançaram do templo do Senhor.",
+    "verseRef": "Esdras 3:10",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "címbalos"
+      },
+      {
+        "id": "b",
+        "text": "trombetas"
+      },
+      {
+        "id": "c",
+        "text": "os alicerces"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quando os construtores lançaram os alicerces do templo do Senhor",
+    "feedbackCorrect": "A obra recomeça pela base; só depois virão as demais partes.",
+    "feedbackWrong": {
+      "a": "Címbalos são instrumentos dos levitas, não a obra lançada.",
+      "b": "Trombetas são tocadas pelos sacerdotes durante o louvor."
+    },
+    "hint": "Procure a obra feita no início do versículo.",
+    "learningObjective": "Identificar o que foi lançado na retomada do templo.",
+    "evidence": [
+      "Esdras 3:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-03",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Esdras 3:10, quem toca címbalos no louvor da fundação?",
+    "prompt": "Segundo Esdras 3:10, quem toca címbalos no louvor da fundação?",
+    "cue": "Segundo Esdras 3:10, quem toca címbalos no louvor da fundação?",
+    "verseRef": "Esdras 3:10",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os reis da Pérsia"
+      },
+      {
+        "id": "b",
+        "text": "Todo o povo ao mesmo tempo"
+      },
+      {
+        "id": "c",
+        "text": "Os construtores da obra"
+      },
+      {
+        "id": "d",
+        "text": "Os levitas, filhos de Asafe"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "e os levitas, filhos de Asafe, com címbalos",
+    "feedbackCorrect": "Os levitas filhos de Asafe conduzem a música com címbalos.",
+    "feedbackWrong": {
+      "a": "Nenhum rei persa participa dessa cena de louvor.",
+      "b": "O povo canta e grita; os címbalos são dos levitas.",
+      "c": "Os construtores lançam os alicerces; a música é dos levitas."
+    },
+    "hint": "Leia quem está com os instrumentos de percussão.",
+    "learningObjective": "Observar quem conduz a música na fundação.",
+    "evidence": [
+      "Esdras 3:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-04",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Esdras 3:10 na ordem do texto.",
+    "prompt": "Monte Esdras 3:10 na ordem do texto.",
+    "cue": "Monte Esdras 3:10 na ordem do texto.",
+    "verseRef": "Esdras 3:10",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando os construtores lançaram os alicerces do templo do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "os sacerdotes apresentaram-se paramentados e tocando trombetas"
+      },
+      {
+        "id": "c",
+        "text": "e os levitas, filhos de Asafe, com címbalos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando os construtores lançaram os alicerces do templo do Senhor",
+    "feedbackCorrect": "Base lançada, sacerdotes com trombetas e levitas com címbalos.",
+    "feedbackWrong": {
+      "default": "Comece pelos alicerces; os músicos aparecem depois."
+    },
+    "hint": "O versículo começa pela obra dos construtores.",
+    "learningObjective": "Reconhecer a sequência de Esdras 3:10.",
+    "evidence": [
+      "Esdras 3:10"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-05",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Esdras 3:11, pelo que o povo louva ao Senhor com júbilo?",
+    "prompt": "Em Esdras 3:11, pelo que o povo louva ao Senhor com júbilo?",
+    "cue": "Em Esdras 3:11, pelo que o povo louva ao Senhor com júbilo?",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "template": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela ___ do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "destruição"
+      },
+      {
+        "id": "b",
+        "text": "fundação"
+      },
+      {
+        "id": "c",
+        "text": "demolição"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ao louvarem ao Senhor pela fundação do seu templo",
+    "feedbackCorrect": "A alegria é pela base do templo finalmente lançada.",
+    "feedbackWrong": {
+      "a": "O momento celebra começo de obra, e não ruína.",
+      "c": "Nada é demolido aqui; uma base nova é lançada."
+    },
+    "hint": "Pense no que acabou de ser lançado.",
+    "learningObjective": "Lembrar o motivo do júbilo na fundação.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-06",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Esdras 3:11 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 3:11 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 3:11 comunica que se liga a este contexto?",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "passageA": {
+      "ref": "Esdras 3:11",
+      "text": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem volta do exílio recomeça a reconstrução adorando a Deus sobre os alicerces."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Adiar a adoração para depois"
+      },
+      {
+        "id": "b",
+        "text": "Começar adorando ao reconstruir"
+      },
+      {
+        "id": "c",
+        "text": "Reconstruir sem celebrar nada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E cantavam alternadamente, louvando e rendendo graças ao Senhor",
+    "feedbackCorrect": "A reconstrução começa com louvor sobre a base recém-lançada.",
+    "feedbackWrong": {
+      "a": "O louvor acontece já na fundação, e não no fim da obra.",
+      "c": "A cena é marcada por canto e gritos de alegria."
+    },
+    "hint": "Veja o que o povo faz sobre a base nova.",
+    "learningObjective": "Ligar Esdras 3:11 ao recomeço pela adoração.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-01",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Esdras 3:10, sacerdotes e levitas participam do louvor quando os alicerces são lançados",
+    "prompt": "Em Esdras 3:10, sacerdotes e levitas participam do louvor quando os alicerces são lançados",
+    "cue": "Em Esdras 3:10, sacerdotes e levitas participam do louvor quando os alicerces são lançados",
+    "verseRef": "Esdras 3:10",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os sacerdotes apresentaram-se paramentados e tocando trombetas",
+    "feedbackCorrect": "Sacerdotes com trombetas e levitas com címbalos conduzem o louvor.",
+    "feedbackWrong": {
+      "false": "Releia quem se apresenta com instrumentos em Esdras 3:10."
+    },
+    "hint": "Veja quem se apresenta quando a base é lançada.",
+    "learningObjective": "Compreender a participação de sacerdotes e levitas no louvor.",
+    "evidence": [
+      "Esdras 3:10"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-02",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Esdras 3:10, toque a palavra que mostra a finalidade dos levitas com címbalos.",
+    "prompt": "Em Esdras 3:10, toque a palavra que mostra a finalidade dos levitas com címbalos.",
+    "cue": "Em Esdras 3:10, toque a palavra que mostra a finalidade dos levitas com címbalos.",
+    "verseRef": "Esdras 3:10",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tocando"
+      },
+      {
+        "id": "b",
+        "text": "conforme"
+      },
+      {
+        "id": "c",
+        "text": "para"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com címbalos, para louvar ao Senhor",
+    "feedbackCorrect": "A palavrinha de finalidade mostra que a música serve ao louvor.",
+    "feedbackWrong": {
+      "a": "Essa palavra descreve os sacerdotes com as trombetas.",
+      "b": "Essa palavra liga o louvor às determinações de Davi."
+    },
+    "hint": "Procure a palavrinha antes do verbo de louvor.",
+    "learningObjective": "Reconhecer o marcador de propósito em Esdras 3:10.",
+    "evidence": [
+      "Esdras 3:10"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-03",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o canto de Esdras 3:11 responde ao lançamento dos alicerces?",
+    "prompt": "Como o canto de Esdras 3:11 responde ao lançamento dos alicerces?",
+    "cue": "Como o canto de Esdras 3:11 responde ao lançamento dos alicerces?",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo reclama do tamanho pequeno da obra"
+      },
+      {
+        "id": "b",
+        "text": "O canto lamenta o fim definitivo do templo"
+      },
+      {
+        "id": "c",
+        "text": "Cada família canta sozinha, sem unidade"
+      },
+      {
+        "id": "d",
+        "text": "O povo celebra em resposta, grato pela bondade divina"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E cantavam alternadamente, louvando e rendendo graças ao Senhor",
+    "feedbackCorrect": "Grupos se respondem cantando, agradecendo a bondade do Senhor.",
+    "feedbackWrong": {
+      "a": "A reação registrada é júbilo, e não reclamação.",
+      "b": "A fundação é celebrada como recomeço, não como fim.",
+      "c": "O canto é conjunto e responsivo, com todo o povo."
+    },
+    "hint": "Observe o clima e a forma do canto do povo.",
+    "learningObjective": "Compreender o canto responsivo como gratidão pela fundação.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-04",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Esdras 3:10–11?",
+    "prompt": "Como avança a cena em Esdras 3:10–11?",
+    "cue": "Como avança a cena em Esdras 3:10–11?",
+    "verseRef": "Esdras 3:10–11",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel. E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A base do templo é lançada"
+      },
+      {
+        "id": "b",
+        "text": "Ministros conduzem o louvor com instrumentos"
+      },
+      {
+        "id": "c",
+        "text": "O povo responde cantando com alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando os construtores lançaram os alicerces do templo do Senhor",
+    "feedbackCorrect": "Obra, ministério do louvor e resposta alegre do povo se encadeiam.",
+    "feedbackWrong": {
+      "default": "Comece pela base lançada; a alegria do povo fecha a cena."
+    },
+    "hint": "A resposta do povo é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da fundação ao louvor do povo.",
+    "evidence": [
+      "Esdras 3:10–11"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-05",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Esdras 3:10, o que os levitas fazem com címbalos diante do Senhor?",
+    "prompt": "Em Esdras 3:10, o que os levitas fazem com címbalos diante do Senhor?",
+    "cue": "Em Esdras 3:10, o que os levitas fazem com címbalos diante do Senhor?",
+    "verseRef": "Esdras 3:10",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "template": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para ___ ao Senhor, conforme as determinações de Davi, rei de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "medir"
+      },
+      {
+        "id": "b",
+        "text": "julgar"
+      },
+      {
+        "id": "c",
+        "text": "louvar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com címbalos, para louvar ao Senhor",
+    "feedbackCorrect": "Os instrumentos existem para o louvor, segundo a ordem de Davi.",
+    "feedbackWrong": {
+      "a": "Medir seria tarefa da obra, não dos músicos com címbalos.",
+      "b": "Não há julgamento aqui; a cena é de celebração."
+    },
+    "hint": "Veja a finalidade dos instrumentos no versículo.",
+    "learningObjective": "Compreender a finalidade do louvor na fundação.",
+    "evidence": [
+      "Esdras 3:10"
+    ]
+  },
+  {
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-06",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Esdras 3:11 a Salmos 136:1?",
+    "prompt": "O que liga Esdras 3:11 a Salmos 136:1?",
+    "cue": "O que liga Esdras 3:11 a Salmos 136:1?",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "passageA": {
+      "ref": "Esdras 3:11",
+      "text": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo."
+    },
+    "passageB": {
+      "ref": "Salmos 136:1",
+      "text": "Rendei graças ao Senhor, porque ele é bom, porque a sua misericórdia dura para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é bom para sempre"
+      },
+      {
+        "id": "b",
+        "text": "O louvor pertence só ao passado"
+      },
+      {
+        "id": "c",
+        "text": "A bondade depende das circunstâncias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel",
+    "feedbackCorrect": "Os dois textos celebram o Senhor bom cuja misericórdia não acaba.",
+    "feedbackWrong": {
+      "b": "O povo do retorno canta no presente a mesma verdade antiga.",
+      "c": "Ambos afirmam bondade e misericórdia que permanecem."
+    },
+    "hint": "Compare o refrão cantado nos dois textos.",
+    "learningObjective": "Relacionar o canto da fundação ao louvor dos Salmos.",
+    "evidence": [
+      "Esdras 3:11",
+      "Salmos 136:1"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-01",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Esdras 3:11, o louvor do povo acontece porque a construção do templo já estava totalmente concluída",
+    "prompt": "Em Esdras 3:11, o louvor do povo acontece porque a construção do templo já estava totalmente concluída",
+    "cue": "Em Esdras 3:11, o louvor do povo acontece porque a construção do templo já estava totalmente concluída",
+    "verseRef": "Esdras 3:10–11",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel. E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ao louvarem ao Senhor pela fundação do seu templo",
+    "feedbackCorrect": "O louvor é pela fundação apenas; a obra está só começando.",
+    "feedbackWrong": {
+      "true": "Releia o motivo do louvor no fim de Esdras 3:11."
+    },
+    "hint": "Veja em que etapa da obra o povo está.",
+    "learningObjective": "Interpretar o louvor na fundação, e não na conclusão.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-02",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Esdras 3:11, toque a palavra que mostra por quanto tempo dura a misericórdia celebrada.",
+    "prompt": "Em Esdras 3:11, toque a palavra que mostra por quanto tempo dura a misericórdia celebrada.",
+    "cue": "Em Esdras 3:11, toque a palavra que mostra por quanto tempo dura a misericórdia celebrada.",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "grandes"
+      },
+      {
+        "id": "b",
+        "text": "alternadamente"
+      },
+      {
+        "id": "c",
+        "text": "eterna"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois a sua misericórdia é eterna sobre Israel",
+    "feedbackCorrect": "A misericórdia cantada não tem prazo; ela é eterna sobre Israel.",
+    "feedbackWrong": {
+      "a": "Essa palavra descreve os gritos, não a misericórdia.",
+      "b": "Essa palavra descreve a forma do canto, não sua duração."
+    },
+    "hint": "Procure quanto dura aquilo que Deus é para Israel.",
+    "learningObjective": "Sustentar com o texto a duração da misericórdia de Deus.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-03",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Esdras 3:10–11 sustenta sobre recomeçar com Deus?",
+    "prompt": "Que leitura Esdras 3:10–11 sustenta sobre recomeçar com Deus?",
+    "cue": "Que leitura Esdras 3:10–11 sustenta sobre recomeçar com Deus?",
+    "verseRef": "Esdras 3:10–11",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel. E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só se deve louvar quando tudo estiver pronto"
+      },
+      {
+        "id": "b",
+        "text": "O passado de Israel não importa no recomeço"
+      },
+      {
+        "id": "c",
+        "text": "A base lançada torna o louvor desnecessário"
+      },
+      {
+        "id": "d",
+        "text": "A adoração vem junto com os primeiros passos"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "para louvar ao Senhor, conforme as determinações de Davi, rei de Israel",
+    "feedbackCorrect": "Já nos alicerces, o povo louva seguindo a herança recebida de Davi.",
+    "feedbackWrong": {
+      "a": "O louvor explode na fundação, muito antes do fim.",
+      "b": "O louvor segue determinações de Davi, ligando passado e recomeço.",
+      "c": "A base é justamente o motivo do canto agradecido."
+    },
+    "hint": "Veja quando o louvor acontece na linha da obra.",
+    "learningObjective": "Escolher a interpretação sustentada sobre louvor e recomeço.",
+    "evidence": [
+      "Esdras 3:10–11"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-04",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do fundamento na história bíblica?",
+    "prompt": "Qual sequência revela o fio do fundamento na história bíblica?",
+    "cue": "Qual sequência revela o fio do fundamento na história bíblica?",
+    "verseRef": "Esdras 3:10–11",
+    "passageText": "Quando os construtores lançaram os alicerces do templo do Senhor, os sacerdotes apresentaram-se paramentados e tocando trombetas, e os levitas, filhos de Asafe, com címbalos, para louvar ao Senhor, conforme as determinações de Davi, rei de Israel. E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A base do templo é lançada no retorno"
+      },
+      {
+        "id": "b",
+        "text": "O povo celebra a bondade que permanece"
+      },
+      {
+        "id": "c",
+        "text": "Cristo é apresentado como fundamento firme"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando os construtores lançaram os alicerces do templo do Senhor",
+    "feedbackCorrect": "Da base do templo ao fundamento que é Cristo, Deus sustenta seu povo.",
+    "feedbackWrong": {
+      "default": "Comece na fundação de Esdras e chegue ao fundamento final."
+    },
+    "hint": "Siga da fundação antiga ao fundamento anunciado depois.",
+    "learningObjective": "Ver a fundação do templo no fio maior da Bíblia.",
+    "evidence": [
+      "Esdras 3:10–11",
+      "1 Coríntios 3:11"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-05",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Esdras 3:11, que qualidade de Deus o povo reconhece ao cantar?",
+    "prompt": "Em Esdras 3:11, que qualidade de Deus o povo reconhece ao cantar?",
+    "cue": "Em Esdras 3:11, que qualidade de Deus o povo reconhece ao cantar?",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "template": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é ___, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "bom"
+      },
+      {
+        "id": "b",
+        "text": "distante"
+      },
+      {
+        "id": "c",
+        "text": "severo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reconhecendo que Ele é bom",
+    "feedbackCorrect": "O povo recomeça declarando quem Deus é; sua bondade sustenta a obra.",
+    "feedbackWrong": {
+      "b": "O canto aproxima; Deus é celebrado como presente e bom.",
+      "c": "A ênfase do canto é a misericórdia eterna, não severidade."
+    },
+    "hint": "É a primeira declaração do canto do povo.",
+    "learningObjective": "Lembrar o atributo de Deus celebrado na fundação.",
+    "evidence": [
+      "Esdras 3:11"
+    ]
+  },
+  {
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-06",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Esdras 3:11 a 1 Coríntios 3:11?",
+    "prompt": "O que liga Esdras 3:11 a 1 Coríntios 3:11?",
+    "cue": "O que liga Esdras 3:11 a 1 Coríntios 3:11?",
+    "verseRef": "Esdras 3:11",
+    "passageText": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo.",
+    "passageA": {
+      "ref": "Esdras 3:11",
+      "text": "E cantavam alternadamente, louvando e rendendo graças ao Senhor, reconhecendo que Ele é bom, pois a sua misericórdia é eterna sobre Israel. E todo o povo se alegrava com grandes gritos de júbilo ao louvarem ao Senhor pela fundação do seu templo."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 3:11",
+      "text": "Porque ninguém pode estabelecer outro fundamento além do que já foi estabelecido, que é Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fundamentos não importam para Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cristo, fundamento que permanece"
+      },
+      {
+        "id": "c",
+        "text": "Cada um escolhe o próprio fundamento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ao louvarem ao Senhor pela fundação do seu templo",
+    "feedbackCorrect": "Paulo retoma a imagem; o fundamento definitivo do povo de Deus é Cristo.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, a base certa é motivo de atenção e louvor.",
+      "c": "Paulo diz que nenhum outro fundamento pode ser lançado."
+    },
+    "hint": "Veja quem Paulo apresenta como base já estabelecida.",
+    "learningObjective": "Ligar a fundação do templo ao fundamento que é Cristo.",
+    "evidence": [
+      "Esdras 3:11",
+      "1 Coríntios 3:11"
+    ]
+  }
+]

@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "João 1:1–5",
+  "passages": [
+   {
+    "ref": "João 1:1–14"
+   }
+  ],
+  "context": "João abre seu evangelho no princípio, antes do nascimento de Jesus. Ele apresenta o Verbo que já estava com Deus e por meio de quem tudo foi feito, até se fazer carne.",
+  "keyword": "Verbo",
+  "keywordGloss": "O Verbo é Deus que se comunica e age; em João, ele se faz carne em Jesus.",
+  "focusQuestion": "O que muda no seu dia quando você lembra que Deus se aproximou de você?",
+  "reflectionPrompts": [
+   "Deus se aproximou",
+   "Luz nas trevas",
+   "Filhos de Deus"
+  ],
+  "facts": [
+   {
+    "text": "No princípio, o Verbo estava com Deus e era Deus.",
+    "evidenceRef": "João 1:1",
+    "evidenceSpan": "o Verbo estava com Deus, e o Verbo era Deus"
+   },
+   {
+    "text": "Todas as coisas foram feitas por meio do Verbo.",
+    "evidenceRef": "João 1:3",
+    "evidenceSpan": "Todas as coisas foram feitas por meio dele"
+   },
+   {
+    "text": "A luz resplandece nas trevas, e as trevas não a dominaram.",
+    "evidenceRef": "João 1:5",
+    "evidenceSpan": "a luz resplandece nas trevas, e as trevas não a dominaram"
+   },
+   {
+    "text": "O mundo não conheceu aquele por meio de quem foi feito.",
+    "evidenceRef": "João 1:10",
+    "evidenceSpan": "o mundo foi feito por meio dele; no entanto, o mundo não o conheceu"
+   },
+   {
+    "text": "O Verbo se fez carne e habitou entre os homens.",
+    "evidenceRef": "João 1:14",
+    "evidenceSpan": "E o Verbo se fez carne e habitou entre nós"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Verbo",
+    "gloss": "Deus que fala e age; em Jesus, ele se faz carne e habita entre os homens."
+   },
+   {
+    "term": "luz",
+    "gloss": "A vida do Verbo que ilumina os homens e não é vencida pelas trevas."
+   },
+   {
+    "term": "carne",
+    "gloss": "A natureza humana real que o Verbo assume ao vir ao mundo."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O Verbo no princípio com Deus",
+    "evidenceRef": "João 1:1"
+   },
+   {
+    "label": "Vida e luz para os homens",
+    "evidenceRef": "João 1:4–5"
+   },
+   {
+    "label": "Rejeitado pelos seus, recebido por fé",
+    "evidenceRef": "João 1:11–12"
+   },
+   {
+    "label": "O Verbo se faz carne",
+    "evidenceRef": "João 1:14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "O mundo foi feito por meio dele, mas não o conheceu quando ele veio.",
+    "marker": "no entanto",
+    "evidenceRef": "João 1:10"
+   },
+   {
+    "kind": "propósito",
+    "text": "João Batista veio como testemunha para que todos cressem por meio dele.",
+    "marker": "para que",
+    "evidenceRef": "João 1:7"
+   },
+   {
+    "kind": "contraste",
+    "text": "Muitos não o receberam, mas quem o recebeu se tornou filho de Deus.",
+    "marker": "Mas",
+    "evidenceRef": "João 1:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gênesis 1:1",
+    "bridge": "Deus presente no princípio"
+   },
+   {
+    "ref": "Colossenses 1:16",
+    "bridge": "Tudo criado por meio dele"
+   },
+   {
+    "ref": "Hebreus 1:2",
+    "bridge": "Deus falou pelo Filho"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jesus começou a existir quando nasceu em Belém.",
+    "why": "João diz que no princípio o Verbo já estava com Deus e era Deus (1:1)."
+   },
+   {
+    "text": "João Batista era a luz que veio ao mundo.",
+    "why": "O texto diz que ele não era a luz, mas veio dar testemunho dela (1:8)."
+   },
+   {
+    "text": "Todos se tornam filhos de Deus automaticamente.",
+    "why": "João liga isso a receber o Verbo e crer no seu nome (1:12)."
+   }
+  ],
+  "centralInsight": "Deus se aproximou",
+  "anchorQuestion": "Segundo João 1:14, o que o Verbo se tornou e onde habitou?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em João 1:14, o Verbo se fez carne e habitou entre nós.",
+   "verseRef": "João 1:14",
+   "correctOptionId": "true",
+   "evidenceSpan": "E o Verbo se fez carne e habitou entre nós",
+   "feedbackCorrect": "João afirma que o Verbo assumiu carne humana e viveu entre os homens.",
+   "feedbackWrong": {
+    "false": "Releia João 1:14, onde o Verbo se faz carne e habita entre nós."
+   },
+   "hint": "",
+   "learningObjective": "Observar a vinda do Verbo em carne humana.",
+   "evidence": [
+    "João 1:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em João 1:1, toque quem estava com Deus no princípio.",
+   "verseRef": "João 1:1",
+   "correctOptionId": "b",
+   "evidenceSpan": "o Verbo estava com Deus",
+   "feedbackCorrect": "Quem estava com Deus desde o princípio é o Verbo.",
+   "feedbackWrong": {
+    "a": "Isso marca o tempo, não quem estava com Deus.",
+    "c": "Isso diz a relação, não o nome de quem estava."
+   },
+   "hint": "Procure o sujeito da segunda parte do versículo.",
+   "learningObjective": "Identificar o Verbo presente no princípio.",
+   "evidence": [
+    "João 1:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "No princípio"
+    },
+    {
+     "id": "b",
+     "text": "Verbo"
+    },
+    {
+     "id": "c",
+     "text": "estava com Deus"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo João 1:5, o que acontece com a luz nas trevas?",
+   "verseRef": "João 1:5",
+   "correctOptionId": "b",
+   "evidenceSpan": "a luz resplandece nas trevas",
+   "feedbackCorrect": "A luz brilha nas trevas, e elas não conseguem dominá-la.",
+   "feedbackWrong": {
+    "a": "O texto diz o contrário, pois as trevas não a dominaram.",
+    "c": "A luz já resplandece nas trevas presentes.",
+    "d": "A luz vem do Verbo, não das trevas."
+   },
+   "hint": "Leia o versículo inteiro com atenção.",
+   "learningObjective": "Observar a ação da luz nas trevas.",
+   "evidence": [
+    "João 1:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ela é apagada pelas trevas"
+    },
+    {
+     "id": "b",
+     "text": "Ela resplandece e não é dominada"
+    },
+    {
+     "id": "c",
+     "text": "Ela surge só depois das trevas"
+    },
+    {
+     "id": "d",
+     "text": "Ela depende das trevas para brilhar"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte João 1:1 na ordem do texto.",
+   "verseRef": "João 1:1",
+   "correctOptionId": "a",
+   "evidenceSpan": "No princípio, era o Verbo",
+   "feedbackCorrect": "A ordem apresenta o Verbo, sua relação com Deus e quem ele é.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela existência do Verbo no princípio."
+    }
+   },
+   "hint": "Comece pelo tempo indicado no início.",
+   "learningObjective": "Reconhecer a sequência de João 1:1.",
+   "evidence": [
+    "João 1:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "No princípio, era o Verbo"
+    },
+    {
+     "id": "b",
+     "text": "e o Verbo estava com Deus"
+    },
+    {
+     "id": "c",
+     "text": "e o Verbo era Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em João 1:14, o que o Verbo se fez para habitar entre nós?",
+   "verseRef": "João 1:14",
+   "correctOptionId": "b",
+   "evidenceSpan": "E o Verbo se fez carne",
+   "feedbackCorrect": "O Verbo assumiu natureza humana real para viver entre os homens.",
+   "feedbackWrong": {
+    "a": "A palavra do texto é mais ampla e indica natureza humana.",
+    "c": "Servo descreve uma função, não o que ele se fez."
+   },
+   "hint": "Lembre a palavra que mostra humanidade real.",
+   "learningObjective": "Lembrar que o Verbo se fez carne.",
+   "evidence": [
+    "João 1:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "homem"
+    },
+    {
+     "id": "b",
+     "text": "carne"
+    },
+    {
+     "id": "c",
+     "text": "servo"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que João 1:14 comunica que se liga a este contexto?",
+   "verseRef": "João 1:14",
+   "correctOptionId": "b",
+   "evidenceSpan": "E o Verbo se fez carne e habitou entre nós",
+   "feedbackCorrect": "Ao se fazer carne, o Verbo torna Deus presente entre os homens.",
+   "feedbackWrong": {
+    "a": "Habitar entre nós mostra proximidade, não distância.",
+    "c": "O Verbo continua agindo, agora em carne humana."
+   },
+   "hint": "Veja onde o Verbo passa a habitar.",
+   "learningObjective": "Ligar a encarnação à proximidade de Deus.",
+   "evidence": [
+    "João 1:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ficou distante"
+    },
+    {
+     "id": "b",
+     "text": "Deus se fez presente"
+    },
+    {
+     "id": "c",
+     "text": "O Verbo deixou de existir"
+    }
+   ],
+   "passageA": {
+    "ref": "João 1:14"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus se aproximou e habitou entre os homens."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em João 1:10 e 11, o mundo reconheceu o Verbo e os seus o receberam de imediato.",
+   "verseRef": "João 1:10–11",
+   "correctOptionId": "false",
+   "evidenceSpan": "o mundo não o conheceu",
+   "feedbackCorrect": "O texto afirma o contrário, pois o mundo não o conheceu e os seus não o receberam.",
+   "feedbackWrong": {
+    "true": "Releia João 1:10 e 11 e note as duas negações do texto."
+   },
+   "hint": "",
+   "learningObjective": "Compreender a rejeição ao Verbo que veio ao mundo.",
+   "evidence": [
+    "João 1:10–11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em João 1:7, toque o trecho que mostra para que João veio como testemunha.",
+   "verseRef": "João 1:7",
+   "correctOptionId": "b",
+   "evidenceSpan": "para que testificasse a respeito da luz",
+   "feedbackCorrect": "A vinda de João tinha um alvo ligado ao testemunho da luz.",
+   "feedbackWrong": {
+    "a": "Isso diz o papel dele, não a finalidade indicada.",
+    "c": "A luz é o tema do testemunho, não a finalidade."
+   },
+   "hint": "Procure a expressão de finalidade no meio do versículo.",
+   "learningObjective": "Reconhecer a finalidade da testemunha.",
+   "evidence": [
+    "João 1:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "como testemunha"
+    },
+    {
+     "id": "b",
+     "text": "a fim"
+    },
+    {
+     "id": "c",
+     "text": "da luz"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como João 1:11 e 12 apresentam duas respostas ao Verbo?",
+   "verseRef": "João 1:11–12",
+   "correctOptionId": "a",
+   "evidenceSpan": "Mas a todos quantos o receberam",
+   "feedbackCorrect": "Há contraste entre não receber e receber com fé, tornando-se filho de Deus.",
+   "feedbackWrong": {
+    "b": "O versículo 12 mostra pessoas que o receberam.",
+    "c": "Receber está ligado a crer no nome dele.",
+    "d": "Criar é ação do Verbo, não resposta humana."
+   },
+   "hint": "Compare o fim do versículo 11 com o 12.",
+   "learningObjective": "Compreender o contraste entre rejeição e fé.",
+   "evidence": [
+    "João 1:11–12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Uns rejeitam, outros recebem e creem"
+    },
+    {
+     "id": "b",
+     "text": "Todos rejeitam sem exceção"
+    },
+    {
+     "id": "c",
+     "text": "Todos recebem sem precisar crer"
+    },
+    {
+     "id": "d",
+     "text": "Uns criam, outros apenas observam"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a apresentação do Verbo em João 1?",
+   "verseRef": "João 1:1–2",
+   "correctOptionId": "a",
+   "evidenceSpan": "No princípio, era o Verbo",
+   "feedbackCorrect": "João vai da existência eterna do Verbo à obra dele e à sua vinda em carne.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A vinda em carne é o ponto de chegada do capítulo."
+    }
+   },
+   "hint": "A carne aparece só no fim do trecho.",
+   "learningObjective": "Compreender o movimento de João 1.",
+   "evidence": [
+    "João 1:1–2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O Verbo existe no princípio"
+    },
+    {
+     "id": "b",
+     "text": "Tudo é feito por meio dele"
+    },
+    {
+     "id": "c",
+     "text": "O Verbo se faz carne"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em João 1:5, o que as trevas não conseguiram fazer com a luz?",
+   "verseRef": "João 1:5",
+   "correctOptionId": "b",
+   "evidenceSpan": "as trevas não a dominaram",
+   "feedbackCorrect": "A luz continua resplandecendo porque as trevas não prevalecem sobre ela.",
+   "feedbackWrong": {
+    "a": "Apagar seria outro verbo; o texto fala de domínio.",
+    "c": "Vencer é ideia próxima, mas a palavra do texto é outra."
+   },
+   "hint": "Veja o verbo no fim do versículo.",
+   "learningObjective": "Compreender a resistência da luz às trevas.",
+   "evidence": [
+    "João 1:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "apagaram"
+    },
+    {
+     "id": "b",
+     "text": "dominaram"
+    },
+    {
+     "id": "c",
+     "text": "venceram"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga João 1:1 a Gênesis 1:1?",
+   "verseRef": "João 1:1",
+   "correctOptionId": "b",
+   "evidenceSpan": "No princípio, era o Verbo",
+   "feedbackCorrect": "João retoma o princípio de Gênesis e mostra o Verbo já presente com Deus.",
+   "feedbackWrong": {
+    "a": "Nos dois textos Deus está presente no princípio.",
+    "c": "O Verbo já era no princípio, não foi criado nele."
+   },
+   "hint": "Compare a primeira palavra dos dois textos.",
+   "learningObjective": "Relacionar o princípio de João ao de Gênesis.",
+   "evidence": [
+    "João 1:1",
+    "Gênesis 1:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Um segundo começo sem Deus"
+    },
+    {
+     "id": "b",
+     "text": "Deus presente no princípio"
+    },
+    {
+     "id": "c",
+     "text": "O Verbo criado no princípio"
+    }
+   ],
+   "passageA": {
+    "ref": "João 1:1"
+   },
+   "passageB": {
+    "ref": "Gênesis 1:1"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em João 1:12 e 13, tornar-se filho de Deus nasce de Deus e não da vontade humana.",
+   "verseRef": "João 1:12–13",
+   "correctOptionId": "true",
+   "evidenceSpan": "mas de Deus",
+   "feedbackCorrect": "Quem recebe o Verbo e crê se torna filho de Deus por obra do próprio Deus.",
+   "feedbackWrong": {
+    "false": "João 1:13 nega a origem humana e afirma que esse nascimento vem de Deus."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar a origem divina da filiação.",
+   "evidence": [
+    "João 1:12–13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em João 1:14, toque o trecho que mostra Deus presente entre os homens.",
+   "verseRef": "João 1:14",
+   "correctOptionId": "b",
+   "evidenceSpan": "habitou entre nós",
+   "feedbackCorrect": "Habitar entre nós sustenta que Deus se aproximou em pessoa.",
+   "feedbackWrong": {
+    "a": "Isso descreve como ele veio, não onde ele viveu.",
+    "c": "A glória foi vista, mas a presença está no habitar."
+   },
+   "hint": "Procure o verbo de moradia no versículo.",
+   "learningObjective": "Sustentar a proximidade de Deus com o texto.",
+   "evidence": [
+    "João 1:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "cheio de graça"
+    },
+    {
+     "id": "b",
+     "text": "habitou entre nós"
+    },
+    {
+     "id": "c",
+     "text": "sua glória"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura João 1:1 e 14 sustenta sobre Jesus?",
+   "verseRef": "João 1:1–2",
+   "correctOptionId": "a",
+   "evidenceSpan": "o Verbo era Deus",
+   "feedbackCorrect": "O Verbo já era Deus no princípio e, sem deixar de sê-lo, se fez carne.",
+   "feedbackWrong": {
+    "b": "No princípio ele já era Deus, antes de nascer.",
+    "c": "João o chama de Deus, não só de mensageiro.",
+    "d": "Ele se fez carne sem abandonar quem ele era."
+   },
+   "hint": "Junte o primeiro e o último versículo do trecho.",
+   "learningObjective": "Escolher a leitura sustentada sobre o Verbo.",
+   "evidence": [
+    "João 1:1",
+    "João 1:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele é Deus que se fez carne"
+    },
+    {
+     "id": "b",
+     "text": "Ele é um homem que virou Deus"
+    },
+    {
+     "id": "c",
+     "text": "Ele é só um mensageiro humano"
+    },
+    {
+     "id": "d",
+     "text": "Ele deixou de ser Deus ao nascer"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do Verbo em João 1?",
+   "verseRef": "João 1:12",
+   "correctOptionId": "a",
+   "evidenceSpan": "poder de se tornarem filhos de Deus",
+   "feedbackCorrect": "Da presença eterna à vinda em carne e à filiação de quem crê.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A filiação vem depois da vinda do Verbo em carne."
+    }
+   },
+   "hint": "Termine em quem recebe o Verbo.",
+   "learningObjective": "Ver o fio eterno, encarnação e filiação.",
+   "evidence": [
+    "João 1:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O Verbo está com Deus no princípio"
+    },
+    {
+     "id": "b",
+     "text": "O Verbo se faz carne entre os homens"
+    },
+    {
+     "id": "c",
+     "text": "Quem o recebe se torna filho de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em João 1:1, quem o Verbo era desde o princípio?",
+   "verseRef": "João 1:1",
+   "correctOptionId": "b",
+   "evidenceSpan": "e o Verbo era Deus",
+   "feedbackCorrect": "Desde o princípio o Verbo é Deus, antes de se fazer carne.",
+   "feedbackWrong": {
+    "a": "Homem ele se torna depois, ao se fazer carne.",
+    "c": "O texto o coloca com Deus e o chama de Deus."
+   },
+   "hint": "Veja a última afirmação do primeiro versículo.",
+   "learningObjective": "Lembrar a identidade divina do Verbo.",
+   "evidence": [
+    "João 1:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "homem"
+    },
+    {
+     "id": "b",
+     "text": "Deus"
+    },
+    {
+     "id": "c",
+     "text": "anjo"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga João 1:3 a Colossenses 1:16?",
+   "verseRef": "João 1:3",
+   "correctOptionId": "b",
+   "evidenceSpan": "Todas as coisas foram feitas por meio dele",
+   "feedbackCorrect": "Os dois textos atribuem toda a criação à ação do Filho.",
+   "feedbackWrong": {
+    "a": "João nega que algo tenha sido feito sem ele.",
+    "c": "A criação é atribuída a Deus por meio dele."
+   },
+   "hint": "Veja por meio de quem tudo foi feito.",
+   "learningObjective": "Ligar a criação em João e em Paulo.",
+   "evidence": [
+    "João 1:3",
+    "Colossenses 1:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Tudo criado sem o Verbo"
+    },
+    {
+     "id": "b",
+     "text": "Tudo criado por meio dele"
+    },
+    {
+     "id": "c",
+     "text": "Anjos criaram todas as coisas"
+    }
+   ],
+   "passageA": {
+    "ref": "João 1:3"
+   },
+   "passageB": {
+    "ref": "Colossenses 1:16"
+   }
+  }
+ ]
+}

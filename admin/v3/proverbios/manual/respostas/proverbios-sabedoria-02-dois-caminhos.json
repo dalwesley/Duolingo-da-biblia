@@ -1,0 +1,714 @@
+{
+ "study": {
+  "passageRef": "Provérbios 4:18–19",
+  "passages": [
+   {
+    "ref": "Provérbios 4:18–19"
+   },
+   {
+    "ref": "Provérbios 1:7"
+   },
+   {
+    "ref": "Provérbios 1:8–10"
+   }
+  ],
+  "context": "Provérbios costuma mostrar a vida como caminho com direção e destino. Depois de apontar o temor do Senhor como começo, o texto compara a senda de quem é justo com o caminho de quem vive longe de Deus.",
+  "keyword": "caminho",
+  "keywordGloss": "Imagem da direção da vida: cada escolha põe os pés numa senda com destino.",
+  "focusQuestion": "Em que direção suas escolhas de hoje estão levando você, passo a passo?",
+  "reflectionPrompts": [
+   "Luz que cresce",
+   "Escuro que cega",
+   "Direção das escolhas"
+  ],
+  "facts": [
+   {
+    "text": "A senda dos justos é como a luz da aurora.",
+    "evidenceRef": "Provérbios 4:18",
+    "evidenceSpan": "a senda dos justos é como a luz da aurora"
+   },
+   {
+    "text": "A luz do caminho justo vai brilhando mais até o dia perfeito.",
+    "evidenceRef": "Provérbios 4:18",
+    "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito"
+   },
+   {
+    "text": "O caminho dos ímpios é como a escuridão.",
+    "evidenceRef": "Provérbios 4:19",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão"
+   },
+   {
+    "text": "Os ímpios não sabem em que vão tropeçar.",
+    "evidenceRef": "Provérbios 4:19",
+    "evidenceSpan": "não sabem eles em que vão tropeçar"
+   },
+   {
+    "text": "O temor do Senhor é o princípio do conhecimento.",
+    "evidenceRef": "Provérbios 1:7",
+    "evidenceSpan": "O temor do Senhor é o princípio do conhecimento"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "senda",
+    "gloss": "Caminho estreito da vida de quem anda com Deus, em luz crescente."
+   },
+   {
+    "term": "escuridão",
+    "gloss": "Imagem de andar sem enxergar o rumo nem os tropeços."
+   },
+   {
+    "term": "justos",
+    "gloss": "Quem vive retamente diante de Deus, não quem nunca erra."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O começo sábio no temor",
+    "evidenceRef": "Provérbios 1:7"
+   },
+   {
+    "label": "Conselho ouvido em casa",
+    "evidenceRef": "Provérbios 1:8"
+   },
+   {
+    "label": "A senda que clareia",
+    "evidenceRef": "Provérbios 4:18"
+   },
+   {
+    "label": "O caminho que escurece",
+    "evidenceRef": "Provérbios 4:19"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "A senda justa é apresentada em contraste com o fundo escuro dos caminhos sem Deus.",
+    "marker": "Mas",
+    "evidenceRef": "Provérbios 4:18"
+   },
+   {
+    "kind": "contraste",
+    "text": "Um caminho é luz que cresce; o outro é escuridão que não deixa enxergar.",
+    "marker": "como",
+    "evidenceRef": "Provérbios 4:19"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quem anda no escuro acaba tropeçando sem saber onde tropeçou.",
+    "marker": null,
+    "evidenceRef": "Provérbios 4:19"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 1:6",
+    "bridge": "Deus conhece os caminhos"
+   },
+   {
+    "ref": "Mateus 7:14",
+    "bridge": "Caminho estreito conduz à vida"
+   },
+   {
+    "ref": "João 8:12",
+    "bridge": "Jesus é a luz"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O caminho do justo é garantia de vida fácil, sem noite nem dificuldade.",
+    "why": "O texto compara a direção e a luz crescente; não promete ausência de luta no caminho."
+   },
+   {
+    "text": "O ímpio tropeça por azar, sem relação com suas escolhas.",
+    "why": "Tropeçar é fruto de andar na escuridão: o caminho escolhido cega os passos."
+   },
+   {
+    "text": "Luz crescente significa sucesso material cada vez maior.",
+    "why": "A imagem é de clareza para andar, não de riqueza garantida a quem é justo."
+   }
+  ],
+  "centralInsight": "Cada caminho clareia ou escurece o rumo da vida",
+  "anchorQuestion": "A que Provérbios 4:18 compara a senda dos justos?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 4:19, o caminho dos ímpios é como a luz da aurora.",
+   "verseRef": "Provérbios 4:19",
+   "correctOptionId": "false",
+   "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+   "feedbackCorrect": "A luz da aurora descreve os justos; o caminho ímpio é escuridão.",
+   "feedbackWrong": {
+    "true": "Troque os lados: luz da aurora é a senda dos justos, em 4:18."
+   },
+   "hint": "Compare os dois versículos lado a lado.",
+   "learningObjective": "Observar o contraste entre os dois caminhos.",
+   "evidence": [
+    "Provérbios 4:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 4:18, toque o trecho ao qual a senda dos justos é comparada.",
+   "verseRef": "Provérbios 4:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "dia perfeito"
+    },
+    {
+     "id": "b",
+     "text": "senda dos justos"
+    },
+    {
+     "id": "c",
+     "text": "luz da aurora"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "é como a luz da aurora",
+   "feedbackCorrect": "A comparação é com a claridade que nasce e cresce pela manhã.",
+   "feedbackWrong": {
+    "a": "Dia perfeito é onde essa luz chega, não o ponto da comparação.",
+    "b": "Isso é quem anda no caminho, não aquilo a que ele é comparado."
+   },
+   "hint": "Procure depois da expressão de comparação.",
+   "learningObjective": "Identificar a comparação de Provérbios 4:18.",
+   "evidence": [
+    "Provérbios 4:18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 4:18, o que acontece com a luz no caminho dos justos?",
+   "verseRef": "Provérbios 4:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "Vai apagando aos poucos"
+    },
+    {
+     "id": "b",
+     "text": "Brilha mais até o dia perfeito"
+    },
+    {
+     "id": "c",
+     "text": "Fica igual do começo ao fim"
+    },
+    {
+     "id": "d",
+     "text": "Brilha somente durante a noite"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+   "feedbackCorrect": "A luz não nasce pronta: cresce até virar dia perfeito.",
+   "feedbackWrong": {
+    "a": "O texto diz o contrário: ela vai brilhando mais.",
+    "c": "Há crescimento claro, da aurora ao dia perfeito.",
+    "d": "A imagem é da manhã que avança, não da noite."
+   },
+   "hint": "Siga a luz do começo ao fim do versículo.",
+   "learningObjective": "Observar o crescimento da luz no caminho justo.",
+   "evidence": [
+    "Provérbios 4:18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 4:19 na ordem do texto.",
+   "verseRef": "Provérbios 4:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "O caminho dos ímpios é como a escuridão"
+    },
+    {
+     "id": "b",
+     "text": "não sabem eles"
+    },
+    {
+     "id": "c",
+     "text": "em que vão tropeçar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+   "feedbackCorrect": "Primeiro o escuro do caminho; depois, o tropeço de quem não vê.",
+   "feedbackWrong": {
+    "default": "Comece pela escuridão; o tropeço fecha o versículo."
+   },
+   "hint": "O versículo começa pelo caminho escuro.",
+   "learningObjective": "Reconhecer a sequência de Provérbios 4:19.",
+   "evidence": [
+    "Provérbios 4:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 4:19, a que o caminho dos ímpios é comparado?",
+   "verseRef": "Provérbios 4:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "aurora"
+    },
+    {
+     "id": "b",
+     "text": "escuridão"
+    },
+    {
+     "id": "c",
+     "text": "senda"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+   "feedbackCorrect": "Sem luz para enxergar, esse caminho termina em tropeço.",
+   "feedbackWrong": {
+    "a": "Aurora descreve a senda dos justos, no versículo anterior.",
+    "c": "Senda é o caminho dos justos; aqui a comparação é com o escuro."
+   },
+   "hint": "Pense no contrário da luz de 4:18.",
+   "learningObjective": "Lembrar a comparação do caminho ímpio.",
+   "evidence": [
+    "Provérbios 4:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 4:18 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 4:18",
+   "passageA": {
+    "ref": "Provérbios 4:18"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Quem anda com Deus vive com clareza crescente, e não no escuro."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Andar justo ganha luz"
+    },
+    {
+     "id": "b",
+     "text": "Andar justo fica escuro"
+    },
+    {
+     "id": "c",
+     "text": "O justo tropeça sem ver"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a senda dos justos é como a luz da aurora",
+   "feedbackCorrect": "A senda justa é descrita como luz que só aumenta.",
+   "feedbackWrong": {
+    "b": "Escuro é a marca do outro caminho, em 4:19.",
+    "c": "Tropeçar sem ver acontece com quem anda na escuridão."
+   },
+   "hint": "Veja a imagem usada para a senda justa.",
+   "learningObjective": "Ligar Provérbios 4:18 à clareza de quem anda com Deus.",
+   "evidence": [
+    "Provérbios 4:18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 4:18–19, o caminho justo ganha luz aos poucos, enquanto o caminho ímpio fica na escuridão.",
+   "verseRef": "Provérbios 4:18–19",
+   "correctOptionId": "true",
+   "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+   "feedbackCorrect": "Um caminho clareia passo a passo; o outro não deixa enxergar.",
+   "feedbackWrong": {
+    "false": "Releia os dois: luz crescente de um lado, escuridão do outro."
+   },
+   "hint": "Ponha os dois versículos lado a lado.",
+   "learningObjective": "Compreender o contraste entre os dois caminhos.",
+   "evidence": [
+    "Provérbios 4:18–19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 4:19, toque o verbo que mostra a consequência de andar no escuro.",
+   "verseRef": "Provérbios 4:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "sabem"
+    },
+    {
+     "id": "b",
+     "text": "vão"
+    },
+    {
+     "id": "c",
+     "text": "tropeçar"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "não sabem eles em que vão tropeçar",
+   "feedbackCorrect": "Sem enxergar o caminho, a queda vem sem a pessoa perceber onde.",
+   "feedbackWrong": {
+    "a": "Saber é justamente o que falta a quem anda no escuro.",
+    "b": "Esse verbo só acompanha a consequência; não a nomeia."
+   },
+   "hint": "Olhe o fim do versículo, o que acontece no escuro.",
+   "learningObjective": "Reconhecer a consequência de andar na escuridão.",
+   "evidence": [
+    "Provérbios 4:19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Provérbios 4:19 se relaciona com Provérbios 4:18?",
+   "verseRef": "Provérbios 4:18–19",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra os dois caminhos como iguais"
+    },
+    {
+     "id": "b",
+     "text": "Contrasta luz crescente com andar sem rumo"
+    },
+    {
+     "id": "c",
+     "text": "Diz que o justo também termina no escuro"
+    },
+    {
+     "id": "d",
+     "text": "Troca a aurora pela escuridão no mesmo caminho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+   "feedbackCorrect": "Um versículo clareia; o outro escurece: são rumos opostos.",
+   "feedbackWrong": {
+    "a": "Luz e escuridão não são iguais: marcam destinos diferentes.",
+    "c": "O escuro é só do caminho ímpio; o justo chega ao dia perfeito.",
+    "d": "Não há troca: cada caminho tem sua própria imagem."
+   },
+   "hint": "Compare a imagem de cada versículo.",
+   "learningObjective": "Relacionar os dois caminhos de Provérbios 4.",
+   "evidence": [
+    "Provérbios 4:18–19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os dois caminhos em Provérbios 4:18–19?",
+   "verseRef": "Provérbios 4:18–19",
+   "options": [
+    {
+     "id": "a",
+     "text": "O justo anda em luz que cresce"
+    },
+    {
+     "id": "b",
+     "text": "O ímpio anda sem enxergar o rumo"
+    },
+    {
+     "id": "c",
+     "text": "Sem ver, o ímpio acaba tropeçando"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "não sabem eles em que vão tropeçar",
+   "feedbackCorrect": "Primeiro os dois rumos; no fim, a consequência de andar no escuro.",
+   "feedbackWrong": {
+    "default": "Comece pela senda justa, em 4:18; o tropeço fecha 4:19."
+   },
+   "hint": "O tropeço é o ponto de chegada.",
+   "learningObjective": "Compreender o encadeamento dos dois caminhos.",
+   "evidence": [
+    "Provérbios 4:18–19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 4:18, que palavra mostra a luz aumentando no caminho?",
+   "verseRef": "Provérbios 4:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "apagando"
+    },
+    {
+     "id": "b",
+     "text": "brilhando"
+    },
+    {
+     "id": "c",
+     "text": "parando"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+   "feedbackCorrect": "A luz do caminho justo não fica parada: aumenta até o dia pleno.",
+   "feedbackWrong": {
+    "a": "Apagar é o contrário do movimento descrito no texto.",
+    "c": "O texto mostra avanço contínuo, não uma luz parada."
+   },
+   "hint": "Veja o verbo ligado à luz no meio do versículo.",
+   "learningObjective": "Compreender o crescimento gradual da luz.",
+   "evidence": [
+    "Provérbios 4:18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 4:19 a Salmos 1:6?",
+   "verseRef": "Provérbios 4:19",
+   "passageA": {
+    "ref": "Provérbios 4:19"
+   },
+   "passageB": {
+    "ref": "Salmos 1:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Todo caminho leva a Deus"
+    },
+    {
+     "id": "b",
+     "text": "O ímpio nunca tropeça"
+    },
+    {
+     "id": "c",
+     "text": "Deus conhece os caminhos"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+   "feedbackCorrect": "Nos dois textos, Deus conhece o rumo do justo e o do ímpio.",
+   "feedbackWrong": {
+    "a": "Salmos 1:6 separa os caminhos; eles não levam ao mesmo lugar.",
+    "b": "Provérbios 4:19 diz justamente que o ímpio tropeça."
+   },
+   "hint": "Veja o que o Senhor faz com os caminhos.",
+   "learningObjective": "Relacionar os dois caminhos em Provérbios e Salmos.",
+   "evidence": [
+    "Provérbios 4:19",
+    "Salmos 1:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Provérbios 4:18–19 garante que o justo nunca enfrentará noite nem dificuldade no caminho.",
+   "verseRef": "Provérbios 4:18–19",
+   "correctOptionId": "false",
+   "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+   "feedbackCorrect": "O texto fala de direção e luz crescente, não de vida sem luta.",
+   "feedbackWrong": {
+    "true": "A promessa aqui é de rumo claro, não de caminho sem dificuldade."
+   },
+   "hint": "Separe a imagem do texto de uma garantia automática.",
+   "learningObjective": "Interpretar a imagem sem transformar conselho em garantia.",
+   "evidence": [
+    "Provérbios 4:18–19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 4:18, toque o trecho que mostra a luz crescendo aos poucos.",
+   "verseRef": "Provérbios 4:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "senda dos justos"
+    },
+    {
+     "id": "b",
+     "text": "vai brilhando mais"
+    },
+    {
+     "id": "c",
+     "text": "dia perfeito"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+   "feedbackCorrect": "O crescimento é gradual: a luz aumenta até o dia ficar perfeito.",
+   "feedbackWrong": {
+    "a": "Isso nomeia quem anda no caminho, não o crescimento da luz.",
+    "c": "Dia perfeito é a chegada, não o processo de clarear."
+   },
+   "hint": "Procure o movimento, não a chegada.",
+   "learningObjective": "Sustentar com o texto o crescimento gradual da luz.",
+   "evidence": [
+    "Provérbios 4:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 4:18–19 sustenta sobre os dois caminhos?",
+   "verseRef": "Provérbios 4:18–19",
+   "options": [
+    {
+     "id": "a",
+     "text": "A luz prova sucesso material do justo"
+    },
+    {
+     "id": "b",
+     "text": "O ímpio tropeça por azar, sem escolha"
+    },
+    {
+     "id": "c",
+     "text": "Andar com Deus clareia o rumo da vida"
+    },
+    {
+     "id": "d",
+     "text": "Os dois caminhos levam ao mesmo fim"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "a senda dos justos é como a luz da aurora",
+   "feedbackCorrect": "A diferença está no rumo: clareza crescente ou escuridão cega.",
+   "feedbackWrong": {
+    "a": "A luz fala de enxergar o caminho, não de riqueza garantida.",
+    "b": "Tropeçar vem de andar no escuro: é fruto do caminho escolhido.",
+    "d": "Luz e escuridão apontam fins opostos, não o mesmo destino."
+   },
+   "hint": "Compare a direção de cada caminho.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre os caminhos.",
+   "evidence": [
+    "Provérbios 4:18–19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Provérbios 4:18 na Bíblia?",
+   "verseRef": "Provérbios 4:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "O temor do Senhor abre o caminho sábio"
+    },
+    {
+     "id": "b",
+     "text": "A senda justa clareia mais e mais"
+    },
+    {
+     "id": "c",
+     "text": "Jesus se apresenta como luz do mundo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a senda dos justos é como a luz da aurora",
+   "feedbackCorrect": "Do temor que abre o caminho à luz plena, que é o próprio Jesus.",
+   "feedbackWrong": {
+    "default": "Comece pelo temor de Provérbios 1:7; Jesus como luz vem no fim."
+   },
+   "hint": "Siga a história: Provérbios, depois os Evangelhos.",
+   "learningObjective": "Ver a luz do caminho como fio que chega a Jesus.",
+   "evidence": [
+    "Provérbios 4:18",
+    "Provérbios 1:7",
+    "João 8:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 4:19, que palavra nomeia quem anda na escuridão?",
+   "verseRef": "Provérbios 4:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "ímpios"
+    },
+    {
+     "id": "b",
+     "text": "justos"
+    },
+    {
+     "id": "c",
+     "text": "sábios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+   "feedbackCorrect": "Quem anda longe de Deus é quem caminha sem enxergar o rumo.",
+   "feedbackWrong": {
+    "b": "Os justos são os da senda clara, no versículo anterior.",
+    "c": "O sábio ouve e cresce (1:5); não é quem anda no escuro."
+   },
+   "hint": "Veja de quem é o caminho logo no começo.",
+   "learningObjective": "Lembrar quem anda na escuridão em Provérbios 4:19.",
+   "evidence": [
+    "Provérbios 4:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 4:18 a João 8:12?",
+   "verseRef": "Provérbios 4:18",
+   "passageA": {
+    "ref": "Provérbios 4:18"
+   },
+   "passageB": {
+    "ref": "João 8:12"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A luz dispensa Jesus"
+    },
+    {
+     "id": "b",
+     "text": "A escuridão vence a luz"
+    },
+    {
+     "id": "c",
+     "text": "Jesus é a luz"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "a senda dos justos é como a luz da aurora",
+   "feedbackCorrect": "Jesus se diz a luz do mundo: quem o segue não anda na escuridão.",
+   "feedbackWrong": {
+    "a": "Para João, a luz tem nome: é o próprio Jesus.",
+    "b": "Quem segue Jesus, diz ele, não andará na escuridão."
+   },
+   "hint": "Veja como Jesus se apresenta nesse texto.",
+   "learningObjective": "Ligar a luz do caminho justo a Jesus, a luz do mundo.",
+   "evidence": [
+    "Provérbios 4:18",
+    "João 8:12"
+   ]
+  }
+ ]
+}

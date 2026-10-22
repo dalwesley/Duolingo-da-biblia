@@ -1,0 +1,148 @@
+Escreva a cena "pd-boss" da trilha "pedro" (1–2 Pedro).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "pedro",
+  "title": "1–2 Pedro",
+  "description": "Esperança no sofrimento — eleitos, santidade e dia do Senhor.",
+  "realm": "novo-testamento"
+ },
+ "block": "1 e 2 Pedro",
+ "mission": {
+  "slug": "pd-boss",
+  "title": "Revisao: Pedro",
+  "type": "boss",
+  "intro": "Revise a nova vida, o sofrimento fiel e a espera ativa pela volta de Jesus.",
+  "hookRef": "Revisao: Pedro",
+  "hookNote": "Revise a nova vida, o sofrimento fiel e a espera ativa pela volta de Jesus.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Esperanca firme, vida santa"
+ },
+ "v2": {
+  "passageRef": "Revisao: Pedro",
+  "context": "Revise a nova vida, o sofrimento fiel e a espera ativa pela volta de Jesus.",
+  "keyword": "Revisao",
+  "verseRefs": [
+   "1 Pedro 5:6–7"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "pd-01",
+   "title": "Esperanca viva",
+   "centralInsight": "A identidade cristã comeca na misericordia de Deus. A ressurreicao garante uma esperanca que o sofrimento presente nao pode destruir.",
+   "ref": "1 Pedro 1:1–7"
+  },
+  {
+   "slug": "pd-02",
+   "title": "Sofrer seguindo Cristo",
+   "centralInsight": "Os crentes dispersos enfrentavam hostilidade. Pedro aponta para Cristo, que sofreu injustamente sem revidar e entregou sua causa ao Pai jus…",
+   "ref": "1 Pedro 2:18–24"
+  },
+  {
+   "slug": "pd-03",
+   "title": "O Dia do Senhor",
+   "centralInsight": "Alguns zombavam da promessa da volta de Cristo. Pedro responde que Deus e fiel e paciente, e seu Dia vira.",
+   "ref": "2 Pedro 3:6–13"
+  }
+ ],
+ "ranges": [
+  "1 Pedro 1:1–7",
+  "1 Pedro 2:18–24",
+  "2 Pedro 3:6–13"
+ ],
+ "verses": [
+  {
+   "ref": "1 Pedro 1:1",
+   "text": "Pedro, apóstolo de Jesus Cristo, aos eleitos que são forasteiros da Dispersão no Ponto, Galácia, Capadócia, Ásia e Bitínia;"
+  },
+  {
+   "ref": "1 Pedro 1:2",
+   "text": "Eleitos, de acordo com a presciência de Deus Pai, em santificação do Espírito, para a obediência e a aspersão do sangue de Jesus Cristo, que a graça e a paz vos sejam multiplicadas."
+  },
+  {
+   "ref": "1 Pedro 1:3",
+   "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos."
+  },
+  {
+   "ref": "1 Pedro 1:4",
+   "text": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês."
+  },
+  {
+   "ref": "1 Pedro 1:5",
+   "text": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo."
+  },
+  {
+   "ref": "1 Pedro 1:6",
+   "text": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações."
+  },
+  {
+   "ref": "1 Pedro 1:7",
+   "text": "Para que a prova da vossa fé, muito mais preciosa do que o ouro que perece e é provado pelo fogo, redunde em louvor, glória e honra na revelação de Jesus Cristo."
+  },
+  {
+   "ref": "1 Pedro 2:18",
+   "text": "Vocês, servos, sujeitem-se com todo o temor a seus senhores, não somente aos bons e cordatos, mas também aos difíceis de lidar;"
+  },
+  {
+   "ref": "1 Pedro 2:19",
+   "text": "Porque é digno de reconhecimento se alguém, por causa da consciência diante de Deus, suporta tristezas, sofrendo injustamente."
+  },
+  {
+   "ref": "1 Pedro 2:20",
+   "text": "Pois que louvor há, se, pecando e sendo esbofeteados por isso, o suportais com paciência? Se, entretanto, quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus."
+  },
+  {
+   "ref": "1 Pedro 2:21",
+   "text": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos."
+  },
+  {
+   "ref": "1 Pedro 2:22",
+   "text": "Ele não cometeu pecado, nem dolo algum se encontrou em sua boca."
+  },
+  {
+   "ref": "1 Pedro 2:23",
+   "text": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça."
+  },
+  {
+   "ref": "1 Pedro 2:24",
+   "text": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados."
+  },
+  {
+   "ref": "2 Pedro 3:6",
+   "text": "Pelas quais coisas, o mundo daquela época pereceu submerso nas águas do dilúvio."
+  },
+  {
+   "ref": "2 Pedro 3:7",
+   "text": "Mas os céus e a terra que agora existem estão guardados pela mesma palavra, reservados para o fogo, até o Dia do Juízo e a destruição dos ímpios."
+  },
+  {
+   "ref": "2 Pedro 3:8",
+   "text": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia."
+  },
+  {
+   "ref": "2 Pedro 3:9",
+   "text": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento."
+  },
+  {
+   "ref": "2 Pedro 3:10",
+   "text": "Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas."
+  },
+  {
+   "ref": "2 Pedro 3:11",
+   "text": "Visto que todas essas coisas estão prestes a ser desfeitas, que tipo de pessoas vocês devem ser, vivendo em santo procedimento e piedade?"
+  },
+  {
+   "ref": "2 Pedro 3:12",
+   "text": "Aguardando e apressando a vinda do Dia de Deus, por causa do qual os céus incendiados serão desfeitos, e os elementos abrasados se derreterão."
+  },
+  {
+   "ref": "2 Pedro 3:13",
+   "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+  }
+ ]
+}
+</cena>

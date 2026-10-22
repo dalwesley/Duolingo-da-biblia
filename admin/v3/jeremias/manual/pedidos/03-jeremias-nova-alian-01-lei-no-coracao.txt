@@ -1,0 +1,67 @@
+Escreva a cena "jeremias-nova-alian-01-lei-no-coracao" da trilha "jeremias" (Jeremias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "jeremias",
+  "title": "Jeremias",
+  "description": "Lágrimas e aliança nova no meio do colapso.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Nova aliança",
+ "mission": {
+  "slug": "jeremias-nova-alian-01-lei-no-coracao",
+  "title": "Lei no coração",
+  "type": "lesson",
+  "intro": "A aliança escrita por dentro.",
+  "hookRef": "Jeremias 31:33",
+  "hookNote": "A aliança escrita por dentro.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre lei?"
+ },
+ "v2": {
+  "passageRef": "Jeremias 31:33",
+  "context": "A aliança escrita por dentro.",
+  "keyword": "Lei",
+  "verseRefs": [
+   "Jeremias 31:33"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Jeremias 31:30–36"
+ ],
+ "verses": [
+  {
+   "ref": "Jeremias 31:30",
+   "text": "Mas cada um morrerá por sua própria iniquidade; todo homem que comer uvas verdes terá os dentes embotados."
+  },
+  {
+   "ref": "Jeremias 31:31",
+   "text": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá."
+  },
+  {
+   "ref": "Jeremias 31:32",
+   "text": "Não como a aliança que fiz com seus pais, no dia em que os tomei pela mão, para os tirar da terra do Egito; porque eles anularam a minha aliança, embora eu os houvesse desposado, diz o Senhor."
+  },
+  {
+   "ref": "Jeremias 31:33",
+   "text": "Mas este é o pacto que firmarei com a casa de Israel depois daqueles dias, diz o Senhor: na mente, imprimirei as minhas leis e também as inscreverei no coração; serei o seu Deus, e eles serão o meu povo."
+  },
+  {
+   "ref": "Jeremias 31:34",
+   "text": "E ninguém ensinará mais ao seu próximo, nem alguém ao seu irmão, dizendo: \"Conheça o Senhor\", porque todos me conhecerão, desde o menor até o maior deles, diz o Senhor; pois perdoarei suas iniquidades e não me lembrarei mais dos seus pecados."
+  },
+  {
+   "ref": "Jeremias 31:35",
+   "text": "Assim diz o Senhor, que concede ao sol a luz do dia e estabelece as ordens da lua e das estrelas para a luz da noite, que agita o mar e faz rugir suas ondas; o Senhor dos Exércitos é o seu nome."
+  },
+  {
+   "ref": "Jeremias 31:36",
+   "text": "Se estas ordenanças se desviassem de diante de mim, diz o Senhor, a descendência de Israel também deixaria de ser uma nação diante de mim para sempre."
+  }
+ ]
+}
+</cena>

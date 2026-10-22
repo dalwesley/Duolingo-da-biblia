@@ -1,0 +1,711 @@
+{
+ "study": {
+  "passageRef": "2 Crônicas 6:24–26",
+  "passages": [
+   {
+    "ref": "2 Crônicas 6:24–26"
+   },
+   {
+    "ref": "2 Crônicas 5:11–13"
+   }
+  ],
+  "context": "Na oração da dedicação, Salomão já prevê quedas e retornos: pecado, disciplina, confissão e perdão. Crônicas relê os reis por esse caminho de abandonar e voltar.",
+  "keyword": "converter",
+  "keywordGloss": "Virar o coração de volta para Deus, confessando o pecado e buscando perdão.",
+  "focusQuestion": "Quando você percebe que se afastou, como quer voltar para Deus?",
+  "reflectionPrompts": [
+   "Confessar sem esconder",
+   "Voltar de coração",
+   "Deus ouve e perdoa"
+  ],
+  "facts": [
+   {
+    "text": "Todos os sacerdotes presentes se santificaram, sem respeitar turnos.",
+    "evidenceRef": "2 Crônicas 5:11",
+    "evidenceSpan": "todos os sacerdotes que estavam presentes se santificaram, sem respeitarem seus turnos"
+   },
+   {
+    "text": "Se o povo pecar e for ferido, mas se converter e confessar, Deus ouve.",
+    "evidenceRef": "2 Crônicas 6:24",
+    "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa"
+   },
+   {
+    "text": "Deus ouve dos céus, perdoa e faz o povo voltar à terra dada.",
+    "evidenceRef": "2 Crônicas 6:25",
+    "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra"
+   },
+   {
+    "text": "Sem chuva por pecado, o povo pode orar confessando e se converter.",
+    "evidenceRef": "2 Crônicas 6:26",
+    "evidenceSpan": "e se converterem de seus pecados, quando os afligires"
+   },
+   {
+    "text": "Deus guarda aliança com servos que andam diante dele com todo coração.",
+    "evidenceRef": "2 Crônicas 6:14",
+    "evidenceSpan": "que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "converter",
+    "gloss": "Mudar de direção, deixando o pecado e voltando para Deus."
+   },
+   {
+    "term": "confessar",
+    "gloss": "Reconhecer o pecado diante de Deus, chamando-o pelo nome."
+   },
+   {
+    "term": "perdoa",
+    "gloss": "Resposta de Deus a quem confessa, ouvir dos céus e perdoar."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O povo peca e é ferido",
+    "evidenceRef": "2 Crônicas 6:24"
+   },
+   {
+    "label": "O povo se converte e confessa",
+    "evidenceRef": "2 Crônicas 6:24"
+   },
+   {
+    "label": "Deus ouve dos céus",
+    "evidenceRef": "2 Crônicas 6:25"
+   },
+   {
+    "label": "Deus perdoa e faz voltar",
+    "evidenceRef": "2 Crônicas 6:25"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A falta de chuva vem por terem pecado contra Deus.",
+    "marker": "por",
+    "evidenceRef": "2 Crônicas 6:26"
+   },
+   {
+    "kind": "resultado",
+    "text": "Deus ouve, perdoa e faz o povo voltar à terra que deu aos pais.",
+    "marker": "Então",
+    "evidenceRef": "2 Crônicas 6:25"
+   },
+   {
+    "kind": "propósito",
+    "text": "A oração nesta casa busca que Deus ouça dos céus e perdoe.",
+    "marker": "para",
+    "evidenceRef": "2 Crônicas 6:20"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "2 Crônicas 7:14",
+    "bridge": "Humilhar orar buscar converter"
+   },
+   {
+    "ref": "Joel 2:13",
+    "bridge": "Voltar ao Senhor misericordioso"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Se o povo pecar, o templo garante perdão sem conversão.",
+    "why": "Salomão liga perdão a converter, confessar, orar e suplicar (6:24)."
+   },
+   {
+    "text": "A disciplina de Deus significa que ele abandonou o povo para sempre.",
+    "why": "A mesma oração prevê Deus ouvindo, perdoando e fazendo voltar (6:25)."
+   },
+   {
+    "text": "Reforma é só consertar o prédio e retomar festas bonitas.",
+    "why": "O caminho citado é de coração, confessar o nome e converter-se dos pecados (6:24-26)."
+   }
+  ],
+  "centralInsight": "Quem se converte e confessa encontra um Deus que ouve e perdoa",
+  "anchorQuestion": "Qual é o caminho de volta que Salomão descreve quando o povo peca?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em 2 Crônicas 5:11, os sacerdotes presentes respeitaram seus turnos antes de se santificar",
+   "verseRef": "2 Crônicas 5:11",
+   "options": [],
+   "correctOptionId": "false",
+   "evidenceSpan": "se santificaram, sem respeitarem seus turnos",
+   "feedbackCorrect": "Todos se santificam juntos, sem respeitar os turnos, para a dedicação.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 2 Crônicas 5:11 sobre os turnos."
+   },
+   "hint": "Veja o que o texto diz dos turnos.",
+   "learningObjective": "Observar a santificação conjunta dos sacerdotes.",
+   "evidence": [
+    "2 Crônicas 5:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 5:11, toque o que todos os sacerdotes presentes fizeram antes de sair do santuário",
+   "verseRef": "2 Crônicas 5:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "turnos"
+    },
+    {
+     "id": "b",
+     "text": "santificaram"
+    },
+    {
+     "id": "c",
+     "text": "santuário"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "todos os sacerdotes que estavam presentes se santificaram",
+   "feedbackCorrect": "Antes de tudo, os sacerdotes se santificam para aquele momento santo.",
+   "feedbackWrong": {
+    "a": "Turnos são justamente o que eles não respeitam aqui.",
+    "c": "Santuário é de onde saem, não o que fizeram."
+   },
+   "hint": "Procure o verbo ligado a todos os sacerdotes.",
+   "learningObjective": "Identificar a santificação dos sacerdotes.",
+   "evidence": [
+    "2 Crônicas 5:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo 2 Crônicas 6:24, o que acontece com o povo quando peca contra Deus?",
+   "verseRef": "2 Crônicas 6:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "É ferido diante do inimigo"
+    },
+    {
+     "id": "b",
+     "text": "É esquecido para sempre Deus"
+    },
+    {
+     "id": "c",
+     "text": "Fica livre de toda consequência"
+    },
+    {
+     "id": "d",
+     "text": "Perde a terra sem poder voltar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "tendo pecado contra ti, for ferido diante do inimigo",
+   "feedbackCorrect": "Pecar traz ferida diante do inimigo, mas a oração já prevê o retorno.",
+   "feedbackWrong": {
+    "b": "Salomão pede que Deus ouça e perdoe; não há esquecimento final.",
+    "c": "O texto mostra consequência real para o pecado do povo.",
+    "d": "Em 6:25, Deus faz o povo voltar à terra que deu."
+   },
+   "hint": "Leia a primeira parte da situação descrita.",
+   "learningObjective": "Observar a consequência do pecado na oração de Salomão.",
+   "evidence": [
+    "2 Crônicas 6:24"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte 2 Crônicas 6:26 na ordem do texto",
+   "verseRef": "2 Crônicas 6:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quando os céus se fecharem e não houver chuva"
+    },
+    {
+     "id": "b",
+     "text": "por terem pecado contra ti"
+    },
+    {
+     "id": "c",
+     "text": "e orarem neste lugar, confessando o teu nome"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quando os céus se fecharem e não houver chuva, por terem pecado contra ti",
+   "feedbackCorrect": "Céus fechados, pecado reconhecido e oração com confissão.",
+   "feedbackWrong": {
+    "default": "Comece pelos céus fechados; a confissão vem na oração."
+   },
+   "hint": "O versículo começa pela falta de chuva.",
+   "learningObjective": "Reconhecer a sequência de 2 Crônicas 6:26.",
+   "evidence": [
+    "2 Crônicas 6:26"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em 2 Crônicas 6:25, o que Deus faz com os pecados do povo quando ouve dos céus?",
+   "verseRef": "2 Crônicas 6:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "esconde"
+    },
+    {
+     "id": "b",
+     "text": "anota"
+    },
+    {
+     "id": "c",
+     "text": "perdoa"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel",
+   "feedbackCorrect": "Deus ouve dos céus e perdoa os pecados do seu povo.",
+   "feedbackWrong": {
+    "a": "Esconder seria encobrir; o pedido é por perdão real.",
+    "b": "Anotar guardaria a culpa; Salomão pede perdão dela."
+   },
+   "hint": "Veja a ação de Deus depois de ouvir.",
+   "learningObjective": "Lembrar o perdão como resposta de Deus.",
+   "evidence": [
+    "2 Crônicas 6:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que 2 Crônicas 6:25 comunica que se liga a este contexto?",
+   "verseRef": "2 Crônicas 6:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Perdão e retorno à terra"
+    },
+    {
+     "id": "b",
+     "text": "Exílio sem volta possível"
+    },
+    {
+     "id": "c",
+     "text": "Perdão sem ouvir oração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra",
+   "feedbackCorrect": "Quem confessa é ouvido, perdoado e trazido de volta à terra.",
+   "feedbackWrong": {
+    "b": "O pedido é justamente fazê-los voltar à terra dada.",
+    "c": "O perdão vem porque Deus ouve dos céus a oração."
+   },
+   "hint": "Junte ouvir, perdoar e fazer voltar.",
+   "learningObjective": "Ligar a confissão do povo ao perdão e ao retorno.",
+   "evidence": [
+    "2 Crônicas 6:25"
+   ],
+   "passageA": {
+    "ref": "2 Crônicas 6:25"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo que confessa volta à terra com o perdão de Deus."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em 2 Crônicas 6:26, a falta de chuva acontece por acaso da natureza, sem relação com o pecado do povo",
+   "verseRef": "2 Crônicas 6:26",
+   "options": [],
+   "correctOptionId": "false",
+   "evidenceSpan": "por terem pecado contra ti",
+   "feedbackCorrect": "A seca é ligada ao pecado, e a saída é confessar e converter-se.",
+   "feedbackWrong": {
+    "true": "Releia o motivo dado em 2 Crônicas 6:26."
+   },
+   "hint": "Veja o motivo citado para os céus fechados.",
+   "learningObjective": "Compreender a ligação entre pecado e disciplina.",
+   "evidence": [
+    "2 Crônicas 6:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 6:24, toque a palavra que abre a situação descrita por Salomão",
+   "verseRef": "2 Crônicas 6:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quando"
+    },
+    {
+     "id": "b",
+     "text": "inimigo"
+    },
+    {
+     "id": "c",
+     "text": "nome"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo",
+   "feedbackCorrect": "Essa palavra abre cada caso que Salomão apresenta a Deus.",
+   "feedbackWrong": {
+    "b": "Inimigo é quem fere, não a abertura do caso.",
+    "c": "Nome é o que será confessado, não a abertura."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer a abertura dos casos na oração de Salomão.",
+   "evidence": [
+    "2 Crônicas 6:24"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como 2 Crônicas 6:24 se relaciona com 2 Crônicas 6:25?",
+   "verseRef": "2 Crônicas 6:24–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo peca e Deus recusa ouvir para sempre"
+    },
+    {
+     "id": "b",
+     "text": "O povo se converte e Deus perdoa faz voltar"
+    },
+    {
+     "id": "c",
+     "text": "O inimigo vence e a oração é abandonada"
+    },
+    {
+     "id": "d",
+     "text": "A terra é devolvida sem nenhuma confissão"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa",
+   "feedbackCorrect": "Conversão e confissão encontram um Deus que ouve, perdoa e restaura.",
+   "feedbackWrong": {
+    "a": "O verso seguinte pede que Deus ouça dos céus e perdoe.",
+    "c": "A oração é justamente o caminho no meio da derrota.",
+    "d": "O retorno está ligado a converter e confessar o nome."
+   },
+   "hint": "Ligue a atitude do povo à resposta de Deus.",
+   "learningObjective": "Relacionar conversão do povo e perdão de Deus.",
+   "evidence": [
+    "2 Crônicas 6:24–25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o caminho de volta em 2 Crônicas 6:24?",
+   "verseRef": "2 Crônicas 6:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo peca e é ferido"
+    },
+    {
+     "id": "b",
+     "text": "O povo se converte e confessa"
+    },
+    {
+     "id": "c",
+     "text": "O povo ora e suplica nesta casa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "tendo pecado contra ti, for ferido diante do inimigo",
+   "feedbackCorrect": "Queda, conversão com confissão e oração nesta casa, nessa ordem.",
+   "feedbackWrong": {
+    "default": "Comece pela queda do povo; a oração fecha o caminho."
+   },
+   "hint": "A oração é o último passo citado.",
+   "learningObjective": "Compreender os passos do retorno a Deus.",
+   "evidence": [
+    "2 Crônicas 6:24"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em 2 Crônicas 6:24, o que o povo faz com o coração além de confessar o nome de Deus?",
+   "verseRef": "2 Crônicas 6:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "endurecer"
+    },
+    {
+     "id": "b",
+     "text": "converter"
+    },
+    {
+     "id": "c",
+     "text": "esconder"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e se converter, confessar o teu nome",
+   "feedbackCorrect": "Voltar para Deus é converter-se, e não só falar palavras bonitas.",
+   "feedbackWrong": {
+    "a": "Endurecer é o contrário de voltar para Deus.",
+    "c": "Confessar é trazer à luz, não esconder o pecado."
+   },
+   "hint": "Veja o verbo que vem antes de confessar.",
+   "learningObjective": "Compreender a conversão como virada do coração.",
+   "evidence": [
+    "2 Crônicas 6:24"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga 2 Crônicas 6:25 a Joel 2:13?",
+   "verseRef": "2 Crônicas 6:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus fecha ouvidos sempre"
+    },
+    {
+     "id": "b",
+     "text": "Voltar sem rasgar coração"
+    },
+    {
+     "id": "c",
+     "text": "Converter-se e ser perdoado"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel",
+   "feedbackCorrect": "Joel chama a voltar ao Senhor misericordioso; Salomão pede esse perdão.",
+   "feedbackWrong": {
+    "a": "Os dois textos mostram Deus pronto a ouvir e perdoar.",
+    "b": "Joel pede coração rasgado, não só roupa ou aparência."
+   },
+   "hint": "Compare o chamado a voltar nos dois textos.",
+   "learningObjective": "Relacionar a oração de Salomão ao chamado de Joel.",
+   "evidence": [
+    "2 Crônicas 6:25",
+    "Joel 2:13"
+   ],
+   "passageA": {
+    "ref": "2 Crônicas 6:25"
+   },
+   "passageB": {
+    "ref": "Joel 2:13"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em 2 Crônicas 6:14–15, Deus guarda a aliança e cumpre com sua mão o que falou pela boca a Davi",
+   "verseRef": "2 Crônicas 6:14–15",
+   "options": [],
+   "correctOptionId": "true",
+   "evidenceSpan": "pois pela Tua boca o disseste e pela Tua mão o realizaste",
+   "feedbackCorrect": "O Deus que falou a Davi cumpre com a própria mão o que prometeu.",
+   "feedbackWrong": {
+    "false": "Releia como Salomão descreve boca e mão de Deus."
+   },
+   "hint": "Veja o que Deus disse e o que realizou.",
+   "learningObjective": "Interpretar a fidelidade de Deus como base do retorno.",
+   "evidence": [
+    "2 Crônicas 6:14–15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 6:16, toque a palavra que mostra a condição para os filhos de Davi no trono",
+   "verseRef": "2 Crônicas 6:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "contanto"
+    },
+    {
+     "id": "b",
+     "text": "sucessor"
+    },
+    {
+     "id": "c",
+     "text": "trono"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "contanto que os teus filhos guardem o seu caminho",
+   "feedbackCorrect": "A permanência no trono está ligada a guardar o caminho do Senhor.",
+   "feedbackWrong": {
+    "b": "Sucessor é a promessa; a condição vem logo depois dela.",
+    "c": "Trono é o lugar; a condição é guardar o caminho."
+   },
+   "hint": "Procure a palavra logo depois da promessa.",
+   "learningObjective": "Sustentar com o texto a condição da promessa a Davi.",
+   "evidence": [
+    "2 Crônicas 6:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura 2 Crônicas 6:24–25 sustenta sobre reforma do povo de Deus?",
+   "verseRef": "2 Crônicas 6:24–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Basta retomar festas sem mudar coração"
+    },
+    {
+     "id": "b",
+     "text": "O templo perdoa sem confissão nenhuma"
+    },
+    {
+     "id": "c",
+     "text": "Reforma é converter confessar e orar"
+    },
+    {
+     "id": "d",
+     "text": "Depois da queda não existe mais volta"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa",
+   "feedbackCorrect": "Reforma, aqui, é virada de coração com confissão e oração.",
+   "feedbackWrong": {
+    "a": "O texto fala de converter e confessar, não só de cerimônia.",
+    "b": "O perdão é pedido a quem se converte e confessa o nome.",
+    "d": "Salomão prevê justamente perdão e retorno depois da queda."
+   },
+   "hint": "Junte os verbos do povo nos dois versículos.",
+   "learningObjective": "Escolher a interpretação que a oração sustenta sobre reforma.",
+   "evidence": [
+    "2 Crônicas 6:24–25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido do retorno em 2 Crônicas 6:25?",
+   "verseRef": "2 Crônicas 6:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ouve dos céus a oração"
+    },
+    {
+     "id": "b",
+     "text": "Deus perdoa pecados do povo"
+    },
+    {
+     "id": "c",
+     "text": "Deus faz povo voltar à terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra",
+   "feedbackCorrect": "Ouvir, perdoar e restaurar à terra, nessa ordem esperançosa.",
+   "feedbackWrong": {
+    "default": "Comece por Deus ouvindo; o retorno à terra fecha."
+   },
+   "hint": "A restauração à terra é o fim do pedido.",
+   "learningObjective": "Ver o retorno como ouvir, perdoar e restaurar.",
+   "evidence": [
+    "2 Crônicas 6:25"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em 2 Crônicas 6:14, com o que os servos devem andar diante de Deus para viver a aliança?",
+   "verseRef": "2 Crônicas 6:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "coração"
+    },
+    {
+     "id": "b",
+     "text": "orgulho"
+    },
+    {
+     "id": "c",
+     "text": "pressa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que andam diante de Ti com todo o coração",
+   "feedbackCorrect": "Deus guarda aliança com quem anda diante dele de coração inteiro.",
+   "feedbackWrong": {
+    "b": "Orgulho afasta de Deus; o texto fala de coração entregue.",
+    "c": "Pressa não é citada; o que importa é o coração inteiro."
+   },
+   "hint": "Veja com o que os servos andam diante dele.",
+   "learningObjective": "Lembrar o termo que marca entrega inteira a Deus.",
+   "evidence": [
+    "2 Crônicas 6:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga 2 Crônicas 6:24 a 2 Crônicas 7:14?",
+   "verseRef": "2 Crônicas 6:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedir sem se humilhar"
+    },
+    {
+     "id": "b",
+     "text": "Humilhar orar e converter"
+    },
+    {
+     "id": "c",
+     "text": "Buscar sem deixar pecados"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa",
+   "feedbackCorrect": "Deus responde a Salomão com o mesmo caminho, humilhar-se e converter-se.",
+   "feedbackWrong": {
+    "a": "A resposta de Deus inclui humilhar-se e buscar sua face.",
+    "c": "A promessa pede deixar os maus caminhos, não mantê-los."
+   },
+   "hint": "Compare o caminho do povo nos dois textos.",
+   "learningObjective": "Ligar a oração de Salomão à resposta de Deus em 7:14.",
+   "evidence": [
+    "2 Crônicas 6:24",
+    "2 Crônicas 7:14"
+   ],
+   "passageA": {
+    "ref": "2 Crônicas 6:24"
+   },
+   "passageB": {
+    "ref": "2 Crônicas 7:14"
+   }
+  }
+ ]
+}

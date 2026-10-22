@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Mateus 13:3–8",
+  "passages": [
+   {
+    "ref": "Mateus 13:1–23"
+   }
+  ],
+  "context": "Jesus ensina multidões à beira-mar, de um barco, por parábolas. A do semeador mostra a mesma semente em solos diferentes; depois ele mesmo explica a parábola aos discípulos.",
+  "keyword": "Semente",
+  "keywordGloss": "Na explicação de Jesus, a semente é a palavra do reino semeada nos corações.",
+  "focusQuestion": "Que tipo de solo descreve o seu coração para a palavra hoje?",
+  "reflectionPrompts": [
+   "Ouvir e entender",
+   "Raiz na provação",
+   "Boa terra que frutifica"
+  ],
+  "facts": [
+   {
+    "text": "Uma parte da semente caiu à beira do caminho e as aves a comeram.",
+    "evidenceRef": "Mateus 13:4",
+    "evidenceSpan": "uma parte da semente caiu à beira do caminho"
+   },
+   {
+    "text": "Outra parte caiu em solo rochoso e logo nasceu.",
+    "evidenceRef": "Mateus 13:5",
+    "evidenceSpan": "outra parte caiu em solo rochoso"
+   },
+   {
+    "text": "A semente entre espinhos foi sufocada por eles.",
+    "evidenceRef": "Mateus 13:7",
+    "evidenceSpan": "os espinhos brotaram e a sufocaram"
+   },
+   {
+    "text": "A semente em boa terra produziu cem, sessenta e trinta.",
+    "evidenceRef": "Mateus 13:8",
+    "evidenceSpan": "produziu fruto: um grão produziu cem, outro sessenta e outro trinta"
+   },
+   {
+    "text": "A boa terra é quem ouve a palavra e a compreende.",
+    "evidenceRef": "Mateus 13:23",
+    "evidenceSpan": "aquele que ouve a palavra e a compreende"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "semeador",
+    "gloss": "Quem sai a semear; na cena, Jesus ensina a palavra do reino."
+   },
+   {
+    "term": "palavra",
+    "gloss": "A mensagem do reino que é semeada nos corações."
+   },
+   {
+    "term": "boa terra",
+    "gloss": "Quem ouve, compreende e frutifica, segundo a explicação de Jesus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O semeador sai a semear",
+    "evidenceRef": "Mateus 13:3"
+   },
+   {
+    "label": "Semente perdida em três solos",
+    "evidenceRef": "Mateus 13:4–7"
+   },
+   {
+    "label": "Semente frutifica na boa terra",
+    "evidenceRef": "Mateus 13:8"
+   },
+   {
+    "label": "Jesus explica cada solo",
+    "evidenceRef": "Mateus 13:19–23"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A planta do solo rochoso secou porque não tinha raiz.",
+    "marker": "porque",
+    "evidenceRef": "Mateus 13:6"
+   },
+   {
+    "kind": "contraste",
+    "text": "A boa terra contrasta com os solos onde a semente se perde.",
+    "marker": "Mas",
+    "evidenceRef": "Mateus 13:23"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quem ouve e compreende frutifica a cem, sessenta e trinta.",
+    "marker": "esse",
+    "evidenceRef": "Mateus 13:23"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Isaías 6:9",
+    "bridge": "Ouvir sem compreender"
+   },
+   {
+    "ref": "Marcos 4:20",
+    "bridge": "Boa terra frutifica"
+   },
+   {
+    "ref": "Lucas 8:15",
+    "bridge": "Coração que retém a palavra"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Cada elemento da parábola precisa de um símbolo inventado pelo leitor.",
+    "why": "Jesus explica a parábola falando da palavra ouvida e dos tipos de ouvinte (13:19-23)."
+   },
+   {
+    "text": "A semente falha porque o semeador muda a mensagem para cada solo.",
+    "why": "A mesma semeadura cai em solos diferentes; o que muda é o solo (13:4-8)."
+   },
+   {
+    "text": "Receber com alegria garante fruto duradouro.",
+    "why": "O solo rochoso recebe com alegria, mas sem raiz cai na angústia (13:20-21)."
+   }
+  ],
+  "centralInsight": "Ouvir e entender",
+  "anchorQuestion": "Na explicação de Jesus, quem é a boa terra da parábola?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 13:4, a semente à beira do caminho caiu em boa terra e frutificou muito.",
+   "verseRef": "Mateus 13:4",
+   "correctOptionId": "false",
+   "evidenceSpan": "uma parte da semente caiu à beira do caminho",
+   "feedbackCorrect": "À beira do caminho, as aves comeram a semente antes de frutificar.",
+   "feedbackWrong": {
+    "true": "Releia Mateus 13:4 e veja o destino dessa semente."
+   },
+   "hint": "",
+   "learningObjective": "Observar o destino da primeira semente.",
+   "evidence": [
+    "Mateus 13:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 13:3, toque quem saiu a semear na parábola.",
+   "verseRef": "Mateus 13:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "Eis que o semeador saiu a semear",
+   "feedbackCorrect": "A parábola começa com a ação de quem espalha a semente.",
+   "feedbackWrong": {
+    "b": "Isso quantifica o ensino, não nomeia quem semeia.",
+    "c": "Isso é o modo de ensinar, não a pessoa da história."
+   },
+   "hint": "Procure o personagem que age na história.",
+   "learningObjective": "Identificar o personagem inicial da parábola.",
+   "evidence": [
+    "Mateus 13:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "o semeador"
+    },
+    {
+     "id": "b",
+     "text": "muitas coisas"
+    },
+    {
+     "id": "c",
+     "text": "por parábolas"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 13:8, onde a semente produziu fruto?",
+   "verseRef": "Mateus 13:8",
+   "correctOptionId": "c",
+   "evidenceSpan": "E outra caiu em boa terra e produziu fruto",
+   "feedbackCorrect": "Só na boa terra a semente produz fruto em abundância.",
+   "feedbackWrong": {
+    "a": "Ali as aves comeram a semente.",
+    "b": "Ali os espinhos sufocaram a planta.",
+    "d": "Ali a planta secou por falta de raiz."
+   },
+   "hint": "Veja o solo ligado ao fruto no texto.",
+   "learningObjective": "Observar onde a semente frutifica.",
+   "evidence": [
+    "Mateus 13:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "À beira do caminho"
+    },
+    {
+     "id": "b",
+     "text": "Entre os espinhos"
+    },
+    {
+     "id": "c",
+     "text": "Em boa terra"
+    },
+    {
+     "id": "d",
+     "text": "Em solo rochoso"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 13:7 na ordem do texto.",
+   "verseRef": "Mateus 13:7",
+   "correctOptionId": "a",
+   "evidenceSpan": "E outra caiu entre os espinhos",
+   "feedbackCorrect": "A semente cai entre espinhos, eles brotam e sufocam a planta.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela queda da semente entre espinhos."
+    }
+   },
+   "hint": "Comece pela queda dessa parte da semente.",
+   "learningObjective": "Reconhecer a sequência entre espinhos.",
+   "evidence": [
+    "Mateus 13:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "E outra caiu entre os espinhos"
+    },
+    {
+     "id": "b",
+     "text": "e os espinhos brotaram"
+    },
+    {
+     "id": "c",
+     "text": "e a sufocaram"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 13:6, por que a planta do solo rochoso secou e murchou?",
+   "verseRef": "Mateus 13:6",
+   "correctOptionId": "a",
+   "evidenceSpan": "porque não tinha raiz",
+   "feedbackCorrect": "Sem raiz, a planta não resistiu ao sol e secou.",
+   "feedbackWrong": {
+    "b": "Havia terra, mas pouca e sem profundidade.",
+    "c": "O problema citado é falta de raiz, não de chuva."
+   },
+   "hint": "Veja a causa no fim do versículo.",
+   "learningObjective": "Lembrar a causa da planta seca.",
+   "evidence": [
+    "Mateus 13:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "raiz"
+    },
+    {
+     "id": "b",
+     "text": "terra"
+    },
+    {
+     "id": "c",
+     "text": "chuva"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 13:8 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 13:8",
+   "correctOptionId": "a",
+   "evidenceSpan": "produziu fruto: um grão produziu cem",
+   "feedbackCorrect": "Na boa terra, a palavra acolhida produz fruto abundante.",
+   "feedbackWrong": {
+    "b": "Na boa terra a semente não se perde.",
+    "c": "A explicação liga fruto a ouvir e compreender."
+   },
+   "hint": "Veja o resultado na boa terra.",
+   "learningObjective": "Ligar a boa terra ao fruto da palavra.",
+   "evidence": [
+    "Mateus 13:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra acolhida frutifica"
+    },
+    {
+     "id": "b",
+     "text": "Semente sempre se perde"
+    },
+    {
+     "id": "c",
+     "text": "Ouvir dispensa entender"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 13:8"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O Reino cresce pela Palavra acolhida em boa terra."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 13:20 e 21, quem ouve com alegria mas não tem raiz cai quando vem a angústia.",
+   "verseRef": "Mateus 13:20–21",
+   "correctOptionId": "true",
+   "evidenceSpan": "Mas não tem raiz em si mesmo",
+   "feedbackCorrect": "A alegria inicial sem raiz não resiste à perseguição por causa da palavra.",
+   "feedbackWrong": {
+    "false": "Releia a explicação do solo rochoso em 13:20 e 21."
+   },
+   "hint": "",
+   "learningObjective": "Compreender a falta de raiz na explicação.",
+   "evidence": [
+    "Mateus 13:20–21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 13:6, toque a palavra que explica por que a planta secou.",
+   "verseRef": "Mateus 13:6",
+   "correctOptionId": "b",
+   "evidenceSpan": "porque não tinha raiz",
+   "feedbackCorrect": "A causa da seca é a ausência de raiz na planta.",
+   "feedbackWrong": {
+    "a": "Isso marca o momento, não a causa.",
+    "c": "O sol é o agente, mas a causa é outra."
+   },
+   "hint": "Procure a explicação no fim do versículo.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Mateus 13:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "ao sair"
+    },
+    {
+     "id": "b",
+     "text": "porque"
+    },
+    {
+     "id": "c",
+     "text": "o sol"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Segundo a explicação de Jesus, o que sufoca a palavra no solo de espinhos?",
+   "verseRef": "Mateus 13:22",
+   "correctOptionId": "b",
+   "evidenceSpan": "os cuidados deste mundo e a sedução das riquezas sufocam a palavra",
+   "feedbackCorrect": "Cuidados e riquezas disputam o coração e deixam a palavra sem fruto.",
+   "feedbackWrong": {
+    "a": "Esse ouvinte ouve, mas a palavra é sufocada.",
+    "c": "Perseguição é o problema do solo rochoso.",
+    "d": "Alegria imediata também descreve o solo rochoso."
+   },
+   "hint": "Veja os dois rivais citados por Jesus.",
+   "learningObjective": "Compreender o que sufoca a palavra.",
+   "evidence": [
+    "Mateus 13:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Falta total de audição da palavra"
+    },
+    {
+     "id": "b",
+     "text": "Cuidados e sedução das riquezas"
+    },
+    {
+     "id": "c",
+     "text": "Perseguição imediata dos inimigos"
+    },
+    {
+     "id": "d",
+     "text": "Alegria rápida sem nenhum interesse"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como Jesus explica os solos em Mateus 13?",
+   "verseRef": "Mateus 13:19–20",
+   "correctOptionId": "a",
+   "evidenceSpan": "este é o que foi semeado à beira do caminho",
+   "feedbackCorrect": "A explicação vai do coração que não compreende ao que frutifica.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A boa terra fecha a explicação de Jesus."
+    }
+   },
+   "hint": "Termine no solo que compreende e frutifica.",
+   "learningObjective": "Compreender a ordem da explicação.",
+   "evidence": [
+    "Mateus 13:19",
+    "Mateus 13:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra arrancada à beira do caminho"
+    },
+    {
+     "id": "b",
+     "text": "Palavra recebida sem raiz no rochoso"
+    },
+    {
+     "id": "c",
+     "text": "Palavra compreendida na boa terra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 13:22, o que acontece com a palavra sufocada pelos espinhos?",
+   "verseRef": "Mateus 13:22",
+   "correctOptionId": "a",
+   "evidenceSpan": "e ela fica infrutífera",
+   "feedbackCorrect": "Espinhos não arrancam a semente, mas impedem o fruto.",
+   "feedbackWrong": {
+    "b": "Arrancada é o que o maligno faz à beira do caminho.",
+    "c": "Queimada pelo sol é o caso do solo rochoso."
+   },
+   "hint": "Veja o resultado final dessa planta.",
+   "learningObjective": "Compreender o resultado dos espinhos.",
+   "evidence": [
+    "Mateus 13:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "infrutífera"
+    },
+    {
+     "id": "b",
+     "text": "arrancada"
+    },
+    {
+     "id": "c",
+     "text": "queimada"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 13:14 a Isaías 6:9?",
+   "verseRef": "Mateus 13:14",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ouvindo, ouvireis, mas não compreendereis",
+   "feedbackCorrect": "Jesus cita Isaías sobre ouvir sem compreender de coração duro.",
+   "feedbackWrong": {
+    "b": "A profecia citada fala justamente do contrário.",
+    "c": "Fechar os ouvidos é o problema, não a solução."
+   },
+   "hint": "Compare a frase citada nos dois textos.",
+   "learningObjective": "Relacionar a citação de Isaías em Jesus.",
+   "evidence": [
+    "Mateus 13:14",
+    "Isaías 6:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ouvir sem compreender"
+    },
+    {
+     "id": "b",
+     "text": "Ouvir e sempre entender"
+    },
+    {
+     "id": "c",
+     "text": "Fechar ouvidos salva"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 13:14"
+   },
+   "passageB": {
+    "ref": "Isaías 6:9"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 13:23, frutificar depende só de ouvir a palavra, mesmo sem compreendê-la.",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "false",
+   "evidenceSpan": "aquele que ouve a palavra e a compreende",
+   "feedbackCorrect": "A boa terra ouve e compreende; só ouvir não descreve esse solo.",
+   "feedbackWrong": {
+    "true": "Releia os dois verbos ligados à boa terra em 13:23."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar ouvir e compreender na boa terra.",
+   "evidence": [
+    "Mateus 13:23"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 13:23, toque o trecho que sustenta a boa terra frutífera.",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "b",
+   "evidenceSpan": "aquele que ouve a palavra e a compreende",
+   "feedbackCorrect": "Ouvir com compreensão é a marca da boa terra que frutifica.",
+   "feedbackWrong": {
+    "a": "Isso nomeia o solo, não a ação do ouvinte.",
+    "c": "Isso é a medida do fruto, não sua causa."
+   },
+   "hint": "Procure a ação dupla do ouvinte.",
+   "learningObjective": "Sustentar a boa terra com o texto.",
+   "evidence": [
+    "Mateus 13:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "em boa terra"
+    },
+    {
+     "id": "b",
+     "text": "e a compreende"
+    },
+    {
+     "id": "c",
+     "text": "trinta por um"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura a explicação de Mateus 13 sustenta sobre os solos?",
+   "verseRef": "Mateus 13:19–20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Quando alguém ouve a palavra do reino",
+   "feedbackCorrect": "A mesma palavra encontra corações que a perdem, sufocam ou frutificam.",
+   "feedbackWrong": {
+    "b": "A semente é a mesma; mudam os solos.",
+    "c": "Quem semeia não troca a semente por solo.",
+    "d": "O rochoso recebe com alegria e mesmo assim cai."
+   },
+   "hint": "Compare semente e solos na explicação.",
+   "learningObjective": "Escolher a leitura sustentada dos solos.",
+   "evidence": [
+    "Mateus 13:19",
+    "Mateus 13:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Solos mostram respostas à palavra"
+    },
+    {
+     "id": "b",
+     "text": "Solos são quatro mensagens diferentes"
+    },
+    {
+     "id": "c",
+     "text": "Fruto depende de mudar a semente"
+    },
+    {
+     "id": "d",
+     "text": "Alegria inicial prova boa terra"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da palavra em Mateus 13?",
+   "verseRef": "Mateus 13:8",
+   "correctOptionId": "a",
+   "evidenceSpan": "produziu fruto: um grão produziu cem",
+   "feedbackCorrect": "Semeadura, acolhida com compreensão e fruto formam o caminho completo.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O fruto é o fim do caminho da boa terra."
+    }
+   },
+   "hint": "Termine no fruto da boa terra.",
+   "learningObjective": "Ver semeadura, compreensão e fruto.",
+   "evidence": [
+    "Mateus 13:19",
+    "Mateus 13:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A palavra do reino é semeada"
+    },
+    {
+     "id": "b",
+     "text": "O coração ouve e compreende"
+    },
+    {
+     "id": "c",
+     "text": "O fruto aparece em abundância"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 13:19, quem vem e arranca o que foi semeado no coração endurecido?",
+   "verseRef": "Mateus 13:19",
+   "correctOptionId": "a",
+   "evidenceSpan": "o maligno vem e arranca o que foi semeado em seu coração",
+   "feedbackCorrect": "Quem não compreende perde a palavra pela ação do maligno.",
+   "feedbackWrong": {
+    "b": "O semeador planta, não arranca a semente.",
+    "c": "O sol seca a planta do solo rochoso."
+   },
+   "hint": "Procure o agente na explicação do caminho.",
+   "learningObjective": "Lembrar o agente que arranca a palavra.",
+   "evidence": [
+    "Mateus 13:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "maligno"
+    },
+    {
+     "id": "b",
+     "text": "semeador"
+    },
+    {
+     "id": "c",
+     "text": "sol"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 13:23 a Lucas 8:15?",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "a",
+   "evidenceSpan": "aquele que ouve a palavra e a compreende",
+   "feedbackCorrect": "Lucas também liga fruto ao coração que ouve e retém a palavra.",
+   "feedbackWrong": {
+    "b": "Os dois textos valorizam o coração que acolhe.",
+    "c": "Reter a palavra faz parte do fruto em Lucas."
+   },
+   "hint": "Compare o coração da boa terra.",
+   "learningObjective": "Ligar a boa terra em Mateus e Lucas.",
+   "evidence": [
+    "Mateus 13:23",
+    "Lucas 8:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Coração bom retém e frutifica"
+    },
+    {
+     "id": "b",
+     "text": "Palavra boa sem coração bom"
+    },
+    {
+     "id": "c",
+     "text": "Fruto sem reter a palavra"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 13:23"
+   },
+   "passageB": {
+    "ref": "Lucas 8:15"
+   }
+  }
+ ]
+}

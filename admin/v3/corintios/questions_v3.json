@@ -1,0 +1,4066 @@
+[
+  {
+    "id": "corintios-sem-co-01-cruz-01",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 1:18, a mensagem da cruz é o poder de Deus para os que são salvos.",
+    "prompt": "Em 1 Coríntios 1:18, a mensagem da cruz é o poder de Deus para os que são salvos.",
+    "cue": "Em 1 Coríntios 1:18, a mensagem da cruz é o poder de Deus para os que são salvos.",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Paulo diz que, para os salvos, essa mensagem é o próprio poder de Deus.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1 Coríntios 1:18 e veja o que ela é para os salvos."
+    },
+    "hint": "Olhe o fim do versículo 18.",
+    "learningObjective": "Observar o que a cruz é para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-01-cruz-02",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 1:17, toque o que não deve ser anulado pela fala de Paulo.",
+    "prompt": "Em 1 Coríntios 1:17, toque o que não deve ser anulado pela fala de Paulo.",
+    "cue": "Em 1 Coríntios 1:17, toque o que não deve ser anulado pela fala de Paulo.",
+    "verseRef": "1 Coríntios 1:17",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sabedoria de palavras"
+      },
+      {
+        "id": "b",
+        "text": "cruz de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "o evangelho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que a cruz de Cristo não se anule",
+    "feedbackCorrect": "É a cruz que Paulo protege ao pregar sem enfeitar a mensagem.",
+    "feedbackWrong": {
+      "a": "As palavras sábias são o meio que Paulo evita usar.",
+      "c": "O evangelho é o que ele prega; o que não pode se anular vem depois."
+    },
+    "hint": "Leia a parte final do versículo.",
+    "learningObjective": "Identificar o centro da pregação de Paulo.",
+    "evidence": [
+      "1 Coríntios 1:17"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-01-cruz-03",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 1:17, para que Cristo enviou Paulo?",
+    "prompt": "Segundo 1 Coríntios 1:17, para que Cristo enviou Paulo?",
+    "cue": "Segundo 1 Coríntios 1:17, para que Cristo enviou Paulo?",
+    "verseRef": "1 Coríntios 1:17",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para impressionar com eloquência"
+      },
+      {
+        "id": "b",
+        "text": "Para reunir discípulos em seu nome"
+      },
+      {
+        "id": "c",
+        "text": "Para batizar grandes multidões"
+      },
+      {
+        "id": "d",
+        "text": "Para pregar o evangelho"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não para batizar, mas para pregar o evangelho",
+    "feedbackCorrect": "Cristo enviou Paulo para anunciar o evangelho, não para criar um grupo seu.",
+    "feedbackWrong": {
+      "a": "Ele diz que não pregou com sabedoria de palavras.",
+      "b": "Ele recusa que digam que foram batizados em nome dele.",
+      "c": "Ele batizou poucos; sua missão principal era outra."
+    },
+    "hint": "Compare as duas partes da missão no versículo.",
+    "learningObjective": "Observar a missão recebida por Paulo.",
+    "evidence": [
+      "1 Coríntios 1:17"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-01-cruz-04",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 1:18 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 1:18 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 1:18 na ordem do texto.",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a mensagem da cruz é loucura para os que se perdem"
+      },
+      {
+        "id": "b",
+        "text": "mas para nós, que somos salvos"
+      },
+      {
+        "id": "c",
+        "text": "ela é o poder de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Primeiro a rejeição, depois os salvos, e por fim o poder de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos que se perdem; o poder de Deus fecha o versículo."
+    },
+    "hint": "O versículo começa pela reação de quem se perde.",
+    "learningObjective": "Reconhecer a sequência de 1 Coríntios 1:18.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-01-cruz-05",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 1:18, como Paulo chama os que recebem a mensagem da cruz?",
+    "prompt": "Em 1 Coríntios 1:18, como Paulo chama os que recebem a mensagem da cruz?",
+    "cue": "Em 1 Coríntios 1:18, como Paulo chama os que recebem a mensagem da cruz?",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "template": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos ___, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instruídos"
+      },
+      {
+        "id": "b",
+        "text": "perdidos"
+      },
+      {
+        "id": "c",
+        "text": "salvos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que somos salvos",
+    "feedbackCorrect": "Paulo fala de nós, que somos salvos, ao dizer o que a cruz é.",
+    "feedbackWrong": {
+      "a": "Os instruídos aparecem no versículo 19, não aqui.",
+      "b": "Para os que se perdem, a mensagem parece outra coisa."
+    },
+    "hint": "Veja de quem Paulo fala na segunda parte.",
+    "learningObjective": "Lembrar quem recebe a cruz como poder.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-01-cruz-06",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 1:17 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 1:17 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 1:17 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 1:17",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule.",
+    "passageA": {
+      "ref": "1 Coríntios 1:17",
+      "text": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo não quer discípulos em torno do nome dele, mas da cruz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um nome humano divide"
+      },
+      {
+        "id": "b",
+        "text": "A cruz une a igreja"
+      },
+      {
+        "id": "c",
+        "text": "O batismo apaga a cruz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a cruz de Cristo não se anule",
+    "feedbackCorrect": "Paulo prega de modo que ninguém se prenda a ele, e sim à cruz.",
+    "feedbackWrong": {
+      "a": "O contexto mostra Paulo fugindo de virar nome de grupo.",
+      "c": "O batismo continua; o problema é usá-lo para fazer nome."
+    },
+    "hint": "Veja o que Paulo quer proteger ao pregar.",
+    "learningObjective": "Ligar a pregação de Paulo à unidade em torno da cruz.",
+    "evidence": [
+      "1 Coríntios 1:17"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-01-cruz-01",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 1:21, o mundo conheceu a Deus por meio da sua própria sabedoria.",
+    "prompt": "Em 1 Coríntios 1:21, o mundo conheceu a Deus por meio da sua própria sabedoria.",
+    "cue": "Em 1 Coríntios 1:21, o mundo conheceu a Deus por meio da sua própria sabedoria.",
+    "verseRef": "1 Coríntios 1:21",
+    "passageText": "Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da pregação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o mundo não conheceu a Deus por meio de sua própria sabedoria",
+    "feedbackCorrect": "Paulo afirma o contrário, o mundo não conheceu a Deus por esse caminho.",
+    "feedbackWrong": {
+      "true": "Releia o começo de 1 Coríntios 1:21 e note a negação."
+    },
+    "hint": "Note a negação logo no início.",
+    "learningObjective": "Compreender o limite da sabedoria humana no texto.",
+    "evidence": [
+      "1 Coríntios 1:21"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-01-cruz-02",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 1:18, toque a palavra que vira a frase para os salvos.",
+    "prompt": "Em 1 Coríntios 1:18, toque a palavra que vira a frase para os salvos.",
+    "cue": "Em 1 Coríntios 1:18, toque a palavra que vira a frase para os salvos.",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "para"
+      },
+      {
+        "id": "c",
+        "text": "Certamente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas para nós, que somos salvos",
+    "feedbackCorrect": "Essa palavrinha separa quem se perde de quem é salvo.",
+    "feedbackWrong": {
+      "b": "Essa palavra indica destino, não a virada.",
+      "c": "Essa palavra abre o versículo, sem virar a frase."
+    },
+    "hint": "Procure uma conjunção curta no meio.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-01-cruz-03",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 1:21 explica o caminho escolhido por Deus?",
+    "prompt": "Como 1 Coríntios 1:21 explica o caminho escolhido por Deus?",
+    "cue": "Como 1 Coríntios 1:21 explica o caminho escolhido por Deus?",
+    "verseRef": "1 Coríntios 1:21",
+    "passageText": "Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da pregação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus espera o mundo ficar sábio sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Deus dispensa qualquer anúncio da fé"
+      },
+      {
+        "id": "c",
+        "text": "Deus salva quem crê ao ouvir a mensagem"
+      },
+      {
+        "id": "d",
+        "text": "Deus é achado pela inteligência humana"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "agradou a Deus salvar os que creem pela loucura da pregação",
+    "feedbackCorrect": "Quem crê na mensagem anunciada é salvo, diz Paulo.",
+    "feedbackWrong": {
+      "a": "O texto diz que o mundo não chegou a Deus sozinho.",
+      "b": "A salvação vem justamente pelo anúncio pregado.",
+      "d": "A inteligência humana não alcançou a Deus, afirma o verso."
+    },
+    "hint": "Veja o que agrada a Deus no fim do versículo.",
+    "learningObjective": "Relacionar pregação e fé em 1 Coríntios 1:21.",
+    "evidence": [
+      "1 Coríntios 1:21"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-01-cruz-04",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em 1 Coríntios 1:17–18?",
+    "prompt": "Como avança o argumento em 1 Coríntios 1:17–18?",
+    "cue": "Como avança o argumento em 1 Coríntios 1:17–18?",
+    "verseRef": "1 Coríntios 1:17–18",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule. Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo recusa fazer nome pelo batismo"
+      },
+      {
+        "id": "b",
+        "text": "A cruz aparece como poder de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus salva quem crê pela pregação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Paulo parte da sua missão, mostra a cruz e chega ao agir de Deus.",
+    "feedbackWrong": {
+      "default": "A missão de Paulo vem primeiro; salvar pela pregação fecha."
+    },
+    "hint": "Comece pela missão que Paulo recebeu.",
+    "learningObjective": "Compreender o encadeamento do argumento de Paulo.",
+    "evidence": [
+      "1 Coríntios 1:17–18"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-01-cruz-05",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 1:21, por que meio Deus salva os que creem?",
+    "prompt": "Em 1 Coríntios 1:21, por que meio Deus salva os que creem?",
+    "cue": "Em 1 Coríntios 1:21, por que meio Deus salva os que creem?",
+    "verseRef": "1 Coríntios 1:21",
+    "passageText": "Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da pregação.",
+    "template": "Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "inteligência"
+      },
+      {
+        "id": "c",
+        "text": "pregação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pela loucura da pregação",
+    "feedbackCorrect": "É pela mensagem anunciada que Deus salva os que creem.",
+    "feedbackWrong": {
+      "a": "Por esse meio o mundo não conheceu a Deus.",
+      "b": "A inteligência dos instruídos é aniquilada, diz 1:19."
+    },
+    "hint": "Leia o fim do versículo 21.",
+    "learningObjective": "Compreender o meio que Deus usa para salvar.",
+    "evidence": [
+      "1 Coríntios 1:21"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-01-cruz-06",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 1:18 a Romanos 1:16?",
+    "prompt": "O que liga 1 Coríntios 1:18 a Romanos 1:16?",
+    "cue": "O que liga 1 Coríntios 1:18 a Romanos 1:16?",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "passageA": {
+      "ref": "1 Coríntios 1:18",
+      "text": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus."
+    },
+    "passageB": {
+      "ref": "Romanos 1:16",
+      "text": "Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pregação sem qualquer poder"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho é poder salvador"
+      },
+      {
+        "id": "c",
+        "text": "Sabedoria humana salva sozinha"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Nos dois textos, a boa notícia de Deus age com poder para salvar.",
+    "feedbackWrong": {
+      "a": "Paulo chama essa mensagem justamente de poder de Deus.",
+      "c": "A sabedoria humana não conheceu a Deus, diz Coríntios."
+    },
+    "hint": "Compare o que Paulo diz da mensagem nos dois textos.",
+    "learningObjective": "Relacionar cruz e evangelho como poder de Deus.",
+    "evidence": [
+      "1 Coríntios 1:18",
+      "Romanos 1:16"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-01-cruz-01",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 1:17, Paulo evita palavras sábias para que a cruz de Cristo não se anule.",
+    "prompt": "Em 1 Coríntios 1:17, Paulo evita palavras sábias para que a cruz de Cristo não se anule.",
+    "cue": "Em 1 Coríntios 1:17, Paulo evita palavras sábias para que a cruz de Cristo não se anule.",
+    "verseRef": "1 Coríntios 1:17",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que a cruz de Cristo não se anule",
+    "feedbackCorrect": "Paulo troca o brilho da fala pela cruz, para que ela fique no centro.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1 Coríntios 1:17 e veja o motivo de Paulo."
+    },
+    "hint": "Olhe o motivo no fim do versículo.",
+    "learningObjective": "Interpretar por que Paulo prega sem eloquência.",
+    "evidence": [
+      "1 Coríntios 1:17"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-01-cruz-02",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 1:18, toque o que a cruz é para quem é salvo.",
+    "prompt": "Em 1 Coríntios 1:18, toque o que a cruz é para quem é salvo.",
+    "cue": "Em 1 Coríntios 1:18, toque o que a cruz é para quem é salvo.",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder de Deus"
+      },
+      {
+        "id": "b",
+        "text": "loucura"
+      },
+      {
+        "id": "c",
+        "text": "mensagem da cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Para o salvo, a cruz não é vergonha, é Deus agindo com força.",
+    "feedbackWrong": {
+      "b": "Isso é o que ela parece a quem se perde.",
+      "c": "Esse é o assunto; o que ela é para o salvo vem no fim."
+    },
+    "hint": "Leia até o fim do versículo.",
+    "learningObjective": "Sustentar com o texto o valor da cruz para o salvo.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-01-cruz-03",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 1:18 sustenta sobre a cruz?",
+    "prompt": "Que leitura 1 Coríntios 1:18 sustenta sobre a cruz?",
+    "cue": "Que leitura 1 Coríntios 1:18 sustenta sobre a cruz?",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz só importa a líderes religiosos"
+      },
+      {
+        "id": "b",
+        "text": "A cruz é um fracasso sem qualquer força"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê vê Deus agindo com poder nela"
+      },
+      {
+        "id": "d",
+        "text": "A cruz dispensa a fé de quem ouve"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Paulo sustenta que, para quem é salvo, Deus age ali com poder.",
+    "feedbackWrong": {
+      "a": "A frase fala de salvos em geral, não de um grupo de líderes.",
+      "b": "Paulo chama essa mensagem de poder, não de fracasso final.",
+      "d": "Deus salva os que creem, diz o versículo 21."
+    },
+    "hint": "Confronte cada frase com o fim do versículo 18.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-01-cruz-04",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da cruz na carta de Paulo?",
+    "prompt": "Qual sequência revela o fio da cruz na carta de Paulo?",
+    "cue": "Qual sequência revela o fio da cruz na carta de Paulo?",
+    "verseRef": "1 Coríntios 1:17",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz é pregada sem enfeite humano"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho se mostra poder que salva"
+      },
+      {
+        "id": "c",
+        "text": "O crente se gloria só na cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não com sabedoria de palavras",
+    "feedbackCorrect": "A cruz pregada é poder de Deus, e o crente só nela se gloria.",
+    "feedbackWrong": {
+      "default": "Comece pela cruz pregada; gloriar-se nela fecha o fio."
+    },
+    "hint": "Siga da pregação ao efeito dela na fé.",
+    "learningObjective": "Ver a cruz como fio que atravessa o ensino de Paulo.",
+    "evidence": [
+      "1 Coríntios 1:17",
+      "Romanos 1:16",
+      "Gálatas 6:14"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-01-cruz-05",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 1:20, o que Deus tornou louca, segundo Paulo?",
+    "prompt": "Em 1 Coríntios 1:20, o que Deus tornou louca, segundo Paulo?",
+    "cue": "Em 1 Coríntios 1:20, o que Deus tornou louca, segundo Paulo?",
+    "verseRef": "1 Coríntios 1:20",
+    "passageText": "Onde está o sábio? Onde está o escriba? Onde está o inquiridor deste século? Acaso Deus não tornou louca a sabedoria do mundo?",
+    "template": "Onde está o sábio? Onde está o escriba? Onde está o inquiridor deste século? Acaso Deus não tornou louca a ___ do mundo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "cruz"
+      },
+      {
+        "id": "b",
+        "text": "sabedoria"
+      },
+      {
+        "id": "c",
+        "text": "pregação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Acaso Deus não tornou louca a sabedoria do mundo",
+    "feedbackCorrect": "Paulo pergunta se Deus não tornou louca a sabedoria deste mundo.",
+    "feedbackWrong": {
+      "a": "A cruz é poder de Deus para os salvos, não loucura vencida.",
+      "c": "A pregação é o meio que Deus usa para salvar quem crê."
+    },
+    "hint": "Procure a pergunta retórica do versículo.",
+    "learningObjective": "Lembrar o termo que Paulo põe em xeque.",
+    "evidence": [
+      "1 Coríntios 1:20"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-01-cruz-06",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 1:17 a Gálatas 6:14?",
+    "prompt": "O que liga 1 Coríntios 1:17 a Gálatas 6:14?",
+    "cue": "O que liga 1 Coríntios 1:17 a Gálatas 6:14?",
+    "verseRef": "1 Coríntios 1:17",
+    "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule.",
+    "passageA": {
+      "ref": "1 Coríntios 1:17",
+      "text": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule."
+    },
+    "passageB": {
+      "ref": "Gálatas 6:14",
+      "text": "Mas, longe de mim gloriar-me, senão na cruz de nosso Senhor Jesus Cristo, pela qual o mundo está crucificado para mim, e eu, para o mundo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Evitar falar da cruz"
+      },
+      {
+        "id": "b",
+        "text": "Gloriar-se na própria eloquência"
+      },
+      {
+        "id": "c",
+        "text": "Gloriar-se somente na cruz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a cruz de Cristo não se anule",
+    "feedbackCorrect": "Paulo não se gloria em si, mas somente na cruz de Cristo.",
+    "feedbackWrong": {
+      "a": "Toda a pregação dele gira em torno da cruz.",
+      "b": "Ele recusa pregar com brilho de palavras sábias."
+    },
+    "hint": "Veja em que Paulo diz que se gloria.",
+    "learningObjective": "Ligar a cruz ao único motivo de glória do crente.",
+    "evidence": [
+      "1 Coríntios 1:17",
+      "Gálatas 6:14"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-02-amor-01",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 13:4, o amor arde em ciúmes e se vangloria.",
+    "prompt": "Em 1 Coríntios 13:4, o amor arde em ciúmes e se vangloria.",
+    "cue": "Em 1 Coríntios 13:4, o amor arde em ciúmes e se vangloria.",
+    "verseRef": "1 Coríntios 13:4–5",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece; Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o amor não arde em ciúmes, não se vangloria",
+    "feedbackCorrect": "Paulo diz justamente que o amor não faz essas coisas.",
+    "feedbackWrong": {
+      "true": "Releia 1 Coríntios 13:4 e note as negações sobre o amor."
+    },
+    "hint": "Repare nas negações do versículo.",
+    "learningObjective": "Observar o que o amor não faz.",
+    "evidence": [
+      "1 Coríntios 13:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-02-amor-02",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 13:4, toque o primeiro traço do amor.",
+    "prompt": "Em 1 Coríntios 13:4, toque o primeiro traço do amor.",
+    "cue": "Em 1 Coríntios 13:4, toque o primeiro traço do amor.",
+    "verseRef": "1 Coríntios 13:4",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;",
+    "options": [
+      {
+        "id": "a",
+        "text": "ciúmes"
+      },
+      {
+        "id": "b",
+        "text": "benigno"
+      },
+      {
+        "id": "c",
+        "text": "paciente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O amor é paciente, é benigno",
+    "feedbackCorrect": "O primeiro traço citado é a paciência com as pessoas.",
+    "feedbackWrong": {
+      "a": "Isso é o que o amor não faz, segundo o texto.",
+      "b": "Esse traço vem logo depois do primeiro."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Identificar o primeiro traço do amor.",
+    "evidence": [
+      "1 Coríntios 13:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-02-amor-03",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 13:5, o que o amor não faz?",
+    "prompt": "Segundo 1 Coríntios 13:5, o que o amor não faz?",
+    "cue": "Segundo 1 Coríntios 13:5, o que o amor não faz?",
+    "verseRef": "1 Coríntios 13:5",
+    "passageText": "Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não suporta as pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Não busca a verdade"
+      },
+      {
+        "id": "c",
+        "text": "Não guarda rancor"
+      },
+      {
+        "id": "d",
+        "text": "Não espera por nada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não guarda rancor",
+    "feedbackCorrect": "Entre os traços, Paulo diz que o amor não fica guardando mágoa.",
+    "feedbackWrong": {
+      "a": "O versículo 7 diz que o amor tudo suporta.",
+      "b": "O versículo 6 diz que ele se alegra com a verdade.",
+      "d": "O versículo 7 diz que o amor tudo espera."
+    },
+    "hint": "Procure a mágoa na lista do versículo.",
+    "learningObjective": "Observar as atitudes que o amor evita.",
+    "evidence": [
+      "1 Coríntios 13:5"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-02-amor-04",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 13:4 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 13:4 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 13:4 na ordem do texto.",
+    "verseRef": "1 Coríntios 13:4",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O amor é paciente, é benigno"
+      },
+      {
+        "id": "b",
+        "text": "o amor não arde em ciúmes"
+      },
+      {
+        "id": "c",
+        "text": "não se vangloria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O amor é paciente, é benigno",
+    "feedbackCorrect": "Paciência primeiro, depois o que o amor não faz.",
+    "feedbackWrong": {
+      "default": "Comece pelos dois traços positivos do amor."
+    },
+    "hint": "O versículo abre com dois traços bons.",
+    "learningObjective": "Reconhecer a sequência de 1 Coríntios 13:4.",
+    "evidence": [
+      "1 Coríntios 13:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-02-amor-05",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 13:7, o que o amor faz por último na lista?",
+    "prompt": "Em 1 Coríntios 13:7, o que o amor faz por último na lista?",
+    "cue": "Em 1 Coríntios 13:7, o que o amor faz por último na lista?",
+    "verseRef": "1 Coríntios 13:7",
+    "passageText": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta.",
+    "template": "Tudo suporta, tudo crê, tudo espera, tudo ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "crê"
+      },
+      {
+        "id": "b",
+        "text": "enfrenta"
+      },
+      {
+        "id": "c",
+        "text": "suporta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tudo enfrenta",
+    "feedbackCorrect": "A lista fecha com uma atitude de resistência firme.",
+    "feedbackWrong": {
+      "a": "Essa atitude vem em segundo lugar na lista.",
+      "c": "Essa atitude abre a lista do versículo."
+    },
+    "hint": "Veja o último item da lista curta.",
+    "learningObjective": "Lembrar o fecho da lista do amor.",
+    "evidence": [
+      "1 Coríntios 13:7"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-02-amor-06",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 13:4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 13:4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 13:4 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 13:4",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;",
+    "passageA": {
+      "ref": "1 Coríntios 13:4",
+      "text": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na igreja, os dons servem pessoas concretas no dia a dia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor paciente no convívio"
+      },
+      {
+        "id": "b",
+        "text": "Amor só em palavras"
+      },
+      {
+        "id": "c",
+        "text": "Dom exibido sem cuidado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O amor é paciente, é benigno",
+    "feedbackCorrect": "Servir pessoas reais pede paciência, que é o primeiro traço citado.",
+    "feedbackWrong": {
+      "b": "O texto mostra atitudes, não só palavras bonitas.",
+      "c": "Exibir dom sem cuidar de pessoas foge do contexto."
+    },
+    "hint": "Veja o primeiro traço citado no versículo.",
+    "learningObjective": "Ligar o amor à vida concreta da igreja.",
+    "evidence": [
+      "1 Coríntios 13:4"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-02-amor-01",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 13:6, o amor se alegra com a verdade e não com a injustiça.",
+    "prompt": "Em 1 Coríntios 13:6, o amor se alegra com a verdade e não com a injustiça.",
+    "cue": "Em 1 Coríntios 13:6, o amor se alegra com a verdade e não com a injustiça.",
+    "verseRef": "1 Coríntios 13:6",
+    "passageText": "Não se alegra com a injustiça, mas regozija-se com a verdade;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mas regozija-se com a verdade",
+    "feedbackCorrect": "Paulo contrapõe injustiça e verdade, e o amor fica com a verdade.",
+    "feedbackWrong": {
+      "false": "Releia 1 Coríntios 13:6 e veja com o que ele se alegra."
+    },
+    "hint": "Compare os dois lados do versículo.",
+    "learningObjective": "Compreender o contraste dentro do amor.",
+    "evidence": [
+      "1 Coríntios 13:6"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-02-amor-02",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 13:6, toque a palavra que contrapõe injustiça e verdade.",
+    "prompt": "Em 1 Coríntios 13:6, toque a palavra que contrapõe injustiça e verdade.",
+    "cue": "Em 1 Coríntios 13:6, toque a palavra que contrapõe injustiça e verdade.",
+    "verseRef": "1 Coríntios 13:6",
+    "passageText": "Não se alegra com a injustiça, mas regozija-se com a verdade;",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdade"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "Não"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas regozija-se com a verdade",
+    "feedbackCorrect": "Essa palavra troca a injustiça pela verdade na frase.",
+    "feedbackWrong": {
+      "a": "Esse é um dos lados; a ligação vem antes dela.",
+      "c": "Essa palavra nega a primeira parte, sem ligar os lados."
+    },
+    "hint": "Procure a conjunção entre as duas partes.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "1 Coríntios 13:6"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-02-amor-03",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 13:1–3 relaciona dons e amor?",
+    "prompt": "Como 1 Coríntios 13:1–3 relaciona dons e amor?",
+    "cue": "Como 1 Coríntios 13:1–3 relaciona dons e amor?",
+    "verseRef": "1 Coríntios 13:1–2",
+    "passageText": "Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o bronze que ressoa ou como o sino que retine. E ainda que eu tenha o dom de profetizar e conheça todos os mistérios e toda a ciência; e ainda que eu tenha tamanha fé, a ponto de transportar montes, se eu não tiver amor, nada serei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dons fortes provam que há amor"
+      },
+      {
+        "id": "b",
+        "text": "Dons valem mais quando impressionam"
+      },
+      {
+        "id": "c",
+        "text": "Amor dispensa qualquer dom na igreja"
+      },
+      {
+        "id": "d",
+        "text": "Sem amor, dons fortes perdem o valor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "se eu não tiver amor, nada serei",
+    "feedbackCorrect": "Mesmo com profecia e fé grande, sem isso a pessoa nada é.",
+    "feedbackWrong": {
+      "a": "Paulo separa as coisas: pode haver dom e faltar o essencial.",
+      "b": "Impressionar é justamente o que não basta, diz o texto.",
+      "c": "Paulo não cancela os dons; ele mostra o que lhes dá valor."
+    },
+    "hint": "Veja a condição repetida nos versículos 1 a 3.",
+    "learningObjective": "Relacionar dons e amor no argumento de Paulo.",
+    "evidence": [
+      "1 Coríntios 13:1–2"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-02-amor-04",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o capítulo em 1 Coríntios 13:1–8?",
+    "prompt": "Como avança o capítulo em 1 Coríntios 13:1–8?",
+    "cue": "Como avança o capítulo em 1 Coríntios 13:1–8?",
+    "verseRef": "1 Coríntios 13:8",
+    "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dons sem amor perdem o valor"
+      },
+      {
+        "id": "b",
+        "text": "O amor ganha forma nas atitudes"
+      },
+      {
+        "id": "c",
+        "text": "O amor permanece quando dons passam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O amor nunca acaba",
+    "feedbackCorrect": "Primeiro o valor, depois as atitudes, e por fim o que fica.",
+    "feedbackWrong": {
+      "default": "O que permanece fecha a sequência do capítulo."
+    },
+    "hint": "O fim está no versículo 8.",
+    "learningObjective": "Compreender o movimento do capítulo 13.",
+    "evidence": [
+      "1 Coríntios 13:8"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-02-amor-05",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 13:6, com o que o amor se alegra?",
+    "prompt": "Em 1 Coríntios 13:6, com o que o amor se alegra?",
+    "cue": "Em 1 Coríntios 13:6, com o que o amor se alegra?",
+    "verseRef": "1 Coríntios 13:6",
+    "passageText": "Não se alegra com a injustiça, mas regozija-se com a verdade;",
+    "template": "Não se alegra com a injustiça, mas regozija-se com a ___;",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdade"
+      },
+      {
+        "id": "b",
+        "text": "injustiça"
+      },
+      {
+        "id": "c",
+        "text": "rancor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "regozija-se com a verdade",
+    "feedbackCorrect": "Ele se alegra com aquilo que é verdadeiro e justo.",
+    "feedbackWrong": {
+      "b": "Com isso ele justamente não se alegra, diz a frase.",
+      "c": "Guardar isso é negado no versículo anterior."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Compreender com o que o amor se alegra.",
+    "evidence": [
+      "1 Coríntios 13:6"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-02-amor-06",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 13:4 a Colossenses 3:14?",
+    "prompt": "O que liga 1 Coríntios 13:4 a Colossenses 3:14?",
+    "cue": "O que liga 1 Coríntios 13:4 a Colossenses 3:14?",
+    "verseRef": "1 Coríntios 13:4",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;",
+    "passageA": {
+      "ref": "1 Coríntios 13:4",
+      "text": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;"
+    },
+    "passageB": {
+      "ref": "Colossenses 3:14",
+      "text": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor é só sentimento"
+      },
+      {
+        "id": "b",
+        "text": "Amor dispensa o convívio"
+      },
+      {
+        "id": "c",
+        "text": "Amor une a comunidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O amor é paciente, é benigno",
+    "feedbackCorrect": "Nos dois textos, é ele que mantém as pessoas unidas.",
+    "feedbackWrong": {
+      "a": "As atitudes listadas mostram prática, não só sentir.",
+      "b": "Os traços citados só existem no trato com pessoas."
+    },
+    "hint": "Veja o que esse traço faz entre as pessoas.",
+    "learningObjective": "Relacionar o amor como laço da comunidade.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-02-amor-01",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 13:8, profecias e línguas permanecem para sempre como o amor.",
+    "prompt": "Em 1 Coríntios 13:8, profecias e línguas permanecem para sempre como o amor.",
+    "cue": "Em 1 Coríntios 13:8, profecias e línguas permanecem para sempre como o amor.",
+    "verseRef": "1 Coríntios 13:8",
+    "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "as profecias, porém, serão eliminadas; as línguas, cessarão",
+    "feedbackCorrect": "Essas coisas passarão; quem nunca acaba é outra coisa.",
+    "feedbackWrong": {
+      "true": "Releia 1 Coríntios 13:8 e veja o que será eliminado."
+    },
+    "hint": "Separe o que passa do que fica.",
+    "learningObjective": "Interpretar o que permanece segundo o texto.",
+    "evidence": [
+      "1 Coríntios 13:8"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-02-amor-02",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 13:8, toque a palavra que diz que o amor não termina.",
+    "prompt": "Em 1 Coríntios 13:8, toque a palavra que diz que o amor não termina.",
+    "cue": "Em 1 Coríntios 13:8, toque a palavra que diz que o amor não termina.",
+    "verseRef": "1 Coríntios 13:8",
+    "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "serão"
+      },
+      {
+        "id": "b",
+        "text": "nunca"
+      },
+      {
+        "id": "c",
+        "text": "cessarão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O amor nunca acaba",
+    "feedbackCorrect": "Uma palavrinha curta sustenta que ele não tem fim.",
+    "feedbackWrong": {
+      "a": "Isso aponta para o fim das profecias, não para ele.",
+      "c": "Isso fala das línguas, que terão fim."
+    },
+    "hint": "Procure um advérbio de tempo na abertura.",
+    "learningObjective": "Sustentar com o texto a permanência do amor.",
+    "evidence": [
+      "1 Coríntios 13:8"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-02-amor-03",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 13:4–7 sustenta sobre o amor?",
+    "prompt": "Que leitura 1 Coríntios 13:4–7 sustenta sobre o amor?",
+    "cue": "Que leitura 1 Coríntios 13:4–7 sustenta sobre o amor?",
+    "verseRef": "1 Coríntios 13:4–5",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece; Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor guarda mágoa até a revanche"
+      },
+      {
+        "id": "b",
+        "text": "Amor é um texto só para casamentos"
+      },
+      {
+        "id": "c",
+        "text": "Amor aparece em atitudes com pessoas"
+      },
+      {
+        "id": "d",
+        "text": "Amor é sentir algo forte e pronto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O amor é paciente, é benigno",
+    "feedbackCorrect": "A lista mostra um jeito diário de tratar quem convive conosco.",
+    "feedbackWrong": {
+      "a": "O versículo 5 diz justamente que ele não guarda rancor.",
+      "b": "Paulo escreve à igreja sobre dons e convívio no capítulo.",
+      "d": "A lista é de ações praticadas, não de um sentir apenas."
+    },
+    "hint": "Olhe os verbos da lista dos versículos 4 e 5.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "1 Coríntios 13:4–5"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-02-amor-04",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica de 1 Coríntios 13:8–10?",
+    "prompt": "Qual sequência revela a lógica de 1 Coríntios 13:8–10?",
+    "cue": "Qual sequência revela a lógica de 1 Coríntios 13:8–10?",
+    "verseRef": "1 Coríntios 13:9–10",
+    "passageText": "Porque conhecemos apenas em parte e profetizamos também em parte; Quando, porém, vier o que é perfeito, então, o que é parcial será abolido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hoje conhecemos só em parte"
+      },
+      {
+        "id": "b",
+        "text": "O que é parcial será abolido"
+      },
+      {
+        "id": "c",
+        "text": "O amor permanece para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "conhecemos apenas em parte",
+    "feedbackCorrect": "O parcial passa quando o perfeito vem, e o que fica é citado antes.",
+    "feedbackWrong": {
+      "default": "Comece pelo conhecimento parcial de hoje."
+    },
+    "hint": "Comece pelo que o versículo 9 diz de hoje.",
+    "learningObjective": "Ver a lógica entre o parcial e o permanente.",
+    "evidence": [
+      "1 Coríntios 13:9–10",
+      "1 Coríntios 13:8"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-02-amor-05",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 13:10, o que será abolido quando vier o perfeito?",
+    "prompt": "Em 1 Coríntios 13:10, o que será abolido quando vier o perfeito?",
+    "cue": "Em 1 Coríntios 13:10, o que será abolido quando vier o perfeito?",
+    "verseRef": "1 Coríntios 13:10",
+    "passageText": "Quando, porém, vier o que é perfeito, então, o que é parcial será abolido.",
+    "template": "Quando, porém, vier o que é perfeito, então, o que é ___ será abolido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "abolido"
+      },
+      {
+        "id": "b",
+        "text": "perfeito"
+      },
+      {
+        "id": "c",
+        "text": "parcial"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o que é parcial será abolido",
+    "feedbackCorrect": "Quando o perfeito vier, o que hoje é só em parte acaba.",
+    "feedbackWrong": {
+      "a": "Isso é o que acontece; o sujeito vem antes na frase.",
+      "b": "Isso é o que vem, não o que será abolido."
+    },
+    "hint": "Leia o fim do versículo 10.",
+    "learningObjective": "Lembrar o termo que resume o hoje incompleto.",
+    "evidence": [
+      "1 Coríntios 13:10"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-02-amor-06",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 13:7 a 1 João 4:8?",
+    "prompt": "O que liga 1 Coríntios 13:7 a 1 João 4:8?",
+    "cue": "O que liga 1 Coríntios 13:7 a 1 João 4:8?",
+    "verseRef": "1 Coríntios 13:7",
+    "passageText": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta.",
+    "passageA": {
+      "ref": "1 Coríntios 13:7",
+      "text": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta."
+    },
+    "passageB": {
+      "ref": "1 João 4:8",
+      "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor reflete quem Deus é"
+      },
+      {
+        "id": "b",
+        "text": "Amor cobra cada erro"
+      },
+      {
+        "id": "c",
+        "text": "Amor humano sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta",
+    "feedbackCorrect": "Quem ama desse jeito reflete o próprio Deus, que é amor.",
+    "feedbackWrong": {
+      "b": "O versículo 5 diz que ele não guarda rancor.",
+      "c": "João liga esse jeito diretamente a quem Deus é."
+    },
+    "hint": "Veja como João define o próprio Deus.",
+    "learningObjective": "Ligar o amor praticado a quem Deus é.",
+    "evidence": [
+      "1 Coríntios 13:7",
+      "1 João 4:8"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-03-ressurreicao-01",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 15:4, Cristo foi sepultado e ressuscitou ao terceiro dia.",
+    "prompt": "Em 1 Coríntios 15:4, Cristo foi sepultado e ressuscitou ao terceiro dia.",
+    "cue": "Em 1 Coríntios 15:4, Cristo foi sepultado e ressuscitou ao terceiro dia.",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e que foi sepultado, e que ressuscitou ao terceiro dia",
+    "feedbackCorrect": "O versículo junta as duas coisas, sepultamento e ressurreição.",
+    "feedbackWrong": {
+      "false": "Releia 1 Coríntios 15:4 inteiro, sem pular a segunda parte."
+    },
+    "hint": "Leia o versículo inteiro.",
+    "learningObjective": "Observar morte e ressurreição no evangelho.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-03-ressurreicao-02",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 15:4, toque o verbo que diz o que houve ao terceiro dia.",
+    "prompt": "Em 1 Coríntios 15:4, toque o verbo que diz o que houve ao terceiro dia.",
+    "cue": "Em 1 Coríntios 15:4, toque o verbo que diz o que houve ao terceiro dia.",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "sepultado"
+      },
+      {
+        "id": "c",
+        "text": "Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "Ao terceiro dia, Cristo não ficou no túmulo.",
+    "feedbackWrong": {
+      "b": "Isso aconteceu antes, na morte de Cristo.",
+      "c": "Isso mostra a base antiga do fato, não o verbo."
+    },
+    "hint": "Procure o verbo ligado ao terceiro dia.",
+    "learningObjective": "Identificar o verbo central da ressurreição.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-03-ressurreicao-03",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 15:6, quantos viram Cristo de uma só vez?",
+    "prompt": "Segundo 1 Coríntios 15:6, quantos viram Cristo de uma só vez?",
+    "cue": "Segundo 1 Coríntios 15:6, quantos viram Cristo de uma só vez?",
+    "verseRef": "1 Coríntios 15:6",
+    "passageText": "Depois, foi visto por mais de quinhentos irmãos de uma só vez, dos quais a maioria sobrevive até agora; porém alguns já dormem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cem irmãos apenas"
+      },
+      {
+        "id": "b",
+        "text": "Mais de quinhentos irmãos"
+      },
+      {
+        "id": "c",
+        "text": "Somente Cefas e Tiago"
+      },
+      {
+        "id": "d",
+        "text": "Doze irmãos apenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "foi visto por mais de quinhentos irmãos de uma só vez",
+    "feedbackCorrect": "Paulo cita uma multidão que viu Cristo vivo ao mesmo tempo.",
+    "feedbackWrong": {
+      "a": "O número citado passa de quinhentos, diz o texto.",
+      "c": "Eles aparecem nos versículos 5 e 7, em outros momentos.",
+      "d": "Os doze aparecem no versículo 5, antes desta cena."
+    },
+    "hint": "Procure o número no versículo 6.",
+    "learningObjective": "Observar o alcance das testemunhas citadas.",
+    "evidence": [
+      "1 Coríntios 15:6"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-03-ressurreicao-04",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 15:3 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 15:3 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 15:3 na ordem do texto.",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entreguei a vocês, em primeiro lugar, o que também recebi"
+      },
+      {
+        "id": "b",
+        "text": "que Cristo morreu por nossos pecados"
+      },
+      {
+        "id": "c",
+        "text": "conforme as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "que Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "Paulo entrega o que recebeu, Cristo morreu, conforme as Escrituras.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Paulo entrega e recebeu."
+    },
+    "hint": "O versículo começa com o que Paulo faz.",
+    "learningObjective": "Reconhecer a sequência de 1 Coríntios 15:3.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-03-ressurreicao-05",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 15:3, Cristo morreu por nossos quê?",
+    "prompt": "Em 1 Coríntios 15:3, Cristo morreu por nossos quê?",
+    "cue": "Em 1 Coríntios 15:3, Cristo morreu por nossos quê?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "template": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos ___, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "apóstolos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Cristo morreu por nossos pecados",
+    "feedbackCorrect": "A morte de Cristo foi pelos nossos erros diante de Deus.",
+    "feedbackWrong": {
+      "a": "Os irmãos são os que veem Cristo vivo, no versículo 6.",
+      "c": "Os apóstolos veem Cristo depois, nos versículos seguintes."
+    },
+    "hint": "Leia a segunda parte do versículo 3.",
+    "learningObjective": "Lembrar por quem Cristo morreu.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-03-ressurreicao-06",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 15:4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 15:4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:4 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "passageA": {
+      "ref": "1 Coríntios 15:4",
+      "text": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo entrega aos coríntios o que ele mesmo recebeu sobre Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mensagem inventada por Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Morte e ressurreição anunciadas"
+      },
+      {
+        "id": "c",
+        "text": "Um Cristo que ficou no túmulo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e que ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "O que ele entrega é Cristo morto, sepultado e ressuscitado.",
+    "feedbackWrong": {
+      "a": "Ele diz que entregou o que também havia recebido.",
+      "c": "O versículo afirma que ele ressuscitou ao terceiro dia."
+    },
+    "hint": "Veja os dois fatos do versículo 4.",
+    "learningObjective": "Ligar o versículo ao evangelho transmitido.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-03-ressurreicao-01",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 15:5, Cristo foi visto primeiro por Cefas e depois pelos doze.",
+    "prompt": "Em 1 Coríntios 15:5, Cristo foi visto primeiro por Cefas e depois pelos doze.",
+    "cue": "Em 1 Coríntios 15:5, Cristo foi visto primeiro por Cefas e depois pelos doze.",
+    "verseRef": "1 Coríntios 15:5",
+    "passageText": "E foi visto por Cefas e, em seguida, pelos doze.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "E foi visto por Cefas e, em seguida, pelos doze",
+    "feedbackCorrect": "A ordem é clara, primeiro Cefas, depois o grupo dos doze.",
+    "feedbackWrong": {
+      "false": "Releia 1 Coríntios 15:5 e note quem aparece primeiro."
+    },
+    "hint": "Note a ordem entre os dois grupos.",
+    "learningObjective": "Compreender a sequência das aparições.",
+    "evidence": [
+      "1 Coríntios 15:5"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-03-ressurreicao-02",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 15:5, toque a expressão que marca o passo seguinte.",
+    "prompt": "Em 1 Coríntios 15:5, toque a expressão que marca o passo seguinte.",
+    "cue": "Em 1 Coríntios 15:5, toque a expressão que marca o passo seguinte.",
+    "verseRef": "1 Coríntios 15:5",
+    "passageText": "E foi visto por Cefas e, em seguida, pelos doze.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em seguida"
+      },
+      {
+        "id": "b",
+        "text": "por Cefas"
+      },
+      {
+        "id": "c",
+        "text": "pelos doze"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e, em seguida, pelos doze",
+    "feedbackCorrect": "Essa expressão costura a primeira aparição com a próxima.",
+    "feedbackWrong": {
+      "b": "Esse é quem viu primeiro, não a ligação.",
+      "c": "Esse grupo vem depois da expressão que você procura."
+    },
+    "hint": "Procure duas palavrinhas no meio da frase.",
+    "learningObjective": "Reconhecer o marcador de sequência no texto.",
+    "evidence": [
+      "1 Coríntios 15:5"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-03-ressurreicao-03",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 15:1–2 descreve os coríntios diante do evangelho?",
+    "prompt": "Como 1 Coríntios 15:1–2 descreve os coríntios diante do evangelho?",
+    "cue": "Como 1 Coríntios 15:1–2 descreve os coríntios diante do evangelho?",
+    "verseRef": "1 Coríntios 15:1–2",
+    "passageText": "Além disso, irmãos, venho lembrar-vos do evangelho que já vos anunciei, o qual também recebestes e no qual ainda perseverais. Pelo qual também sois salvos, se retiverdes a palavra como eu vo-la tenho pregado; caso contrário, a vossa crença é em vão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouviram, rejeitaram e esqueceram tudo"
+      },
+      {
+        "id": "b",
+        "text": "Receberam e ainda permanecem nele"
+      },
+      {
+        "id": "c",
+        "text": "Nunca tinham ouvido essa mensagem"
+      },
+      {
+        "id": "d",
+        "text": "Inventaram uma versão só deles"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o qual também recebestes e no qual ainda perseverais",
+    "feedbackCorrect": "Eles receberam a mensagem e continuam firmes nela.",
+    "feedbackWrong": {
+      "a": "O texto diz que eles receberam e perseveram nela.",
+      "c": "Paulo lembra justamente o que já tinha anunciado.",
+      "d": "Quem anunciou foi Paulo; eles receberam dele."
+    },
+    "hint": "Veja os dois verbos sobre eles nos versos 1 e 2.",
+    "learningObjective": "Relacionar anúncio, recepção e permanência.",
+    "evidence": [
+      "1 Coríntios 15:1–2"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-03-ressurreicao-04",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o resumo em 1 Coríntios 15:3–5?",
+    "prompt": "Como avança o resumo em 1 Coríntios 15:3–5?",
+    "cue": "Como avança o resumo em 1 Coríntios 15:3–5?",
+    "verseRef": "1 Coríntios 15:4–5",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras, E foi visto por Cefas e, em seguida, pelos doze.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O evangelho é lembrado aos irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morre e é sepultado"
+      },
+      {
+        "id": "c",
+        "text": "Cristo ressuscita e é visto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "Lembrança, morte e sepultamento, e então Cristo vivo e visto.",
+    "feedbackWrong": {
+      "default": "Comece pela lembrança do evangelho no verso 1."
+    },
+    "hint": "Comece pelo versículo 1 do capítulo.",
+    "learningObjective": "Compreender o encadeamento do resumo do evangelho.",
+    "evidence": [
+      "1 Coríntios 15:3–5"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-03-ressurreicao-05",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 15:1, o que os coríntios fizeram com o evangelho anunciado?",
+    "prompt": "Em 1 Coríntios 15:1, o que os coríntios fizeram com o evangelho anunciado?",
+    "cue": "Em 1 Coríntios 15:1, o que os coríntios fizeram com o evangelho anunciado?",
+    "verseRef": "1 Coríntios 15:1",
+    "passageText": "Além disso, irmãos, venho lembrar-vos do evangelho que já vos anunciei, o qual também recebestes e no qual ainda perseverais.",
+    "template": "Além disso, irmãos, venho lembrar-vos do evangelho que já vos anunciei, o qual também ___ e no qual ainda perseverais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perseverais"
+      },
+      {
+        "id": "b",
+        "text": "anunciei"
+      },
+      {
+        "id": "c",
+        "text": "recebestes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o qual também recebestes",
+    "feedbackCorrect": "Eles não só ouviram, eles acolheram a mensagem de Paulo.",
+    "feedbackWrong": {
+      "a": "Isso é o que eles fazem ainda hoje, não o ato inicial.",
+      "b": "Quem anuncia é Paulo, no começo do versículo."
+    },
+    "hint": "Procure o verbo ligado a eles no verso 1.",
+    "learningObjective": "Compreender a resposta inicial dos coríntios.",
+    "evidence": [
+      "1 Coríntios 15:1"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-03-ressurreicao-06",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 15:5 a Atos 2:32?",
+    "prompt": "O que liga 1 Coríntios 15:5 a Atos 2:32?",
+    "cue": "O que liga 1 Coríntios 15:5 a Atos 2:32?",
+    "verseRef": "1 Coríntios 15:5",
+    "passageText": "E foi visto por Cefas e, em seguida, pelos doze.",
+    "passageA": {
+      "ref": "1 Coríntios 15:5",
+      "text": "E foi visto por Cefas e, em seguida, pelos doze."
+    },
+    "passageB": {
+      "ref": "Atos 2:32",
+      "text": "Deus ressuscitou Jesus, e todos nós somos testemunhas disso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém viu Cristo vivo"
+      },
+      {
+        "id": "b",
+        "text": "Aparições sem qualquer testemunha"
+      },
+      {
+        "id": "c",
+        "text": "Testemunhas viram Cristo vivo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E foi visto por Cefas e, em seguida, pelos doze",
+    "feedbackCorrect": "Nos dois textos, gente real viu Jesus ressuscitado.",
+    "feedbackWrong": {
+      "a": "Coríntios lista pessoas que viram Cristo vivo.",
+      "b": "Paulo nomeia testemunhas, uma a uma, no capítulo."
+    },
+    "hint": "Veja quem viu Cristo nos dois textos.",
+    "learningObjective": "Relacionar as testemunhas da ressurreição.",
+    "evidence": [
+      "1 Coríntios 15:5",
+      "Atos 2:32"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-03-ressurreicao-01",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 15:3, Paulo inventou a morte de Cristo sem raiz nas Escrituras.",
+    "prompt": "Em 1 Coríntios 15:3, Paulo inventou a morte de Cristo sem raiz nas Escrituras.",
+    "cue": "Em 1 Coríntios 15:3, Paulo inventou a morte de Cristo sem raiz nas Escrituras.",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "Paulo ancora a morte de Cristo no que já estava escrito.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1 Coríntios 15:3 e veja a base citada."
+    },
+    "hint": "Olhe a expressão final do versículo.",
+    "learningObjective": "Interpretar a base bíblica do evangelho.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-03-ressurreicao-02",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 15:6, toque o número de irmãos que viram Cristo juntos.",
+    "prompt": "Em 1 Coríntios 15:6, toque o número de irmãos que viram Cristo juntos.",
+    "cue": "Em 1 Coríntios 15:6, toque o número de irmãos que viram Cristo juntos.",
+    "verseRef": "1 Coríntios 15:6",
+    "passageText": "Depois, foi visto por mais de quinhentos irmãos de uma só vez, dos quais a maioria sobrevive até agora; porém alguns já dormem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "quinhentos"
+      },
+      {
+        "id": "b",
+        "text": "maioria"
+      },
+      {
+        "id": "c",
+        "text": "alguns"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "foi visto por mais de quinhentos irmãos de uma só vez",
+    "feedbackCorrect": "Uma multidão viu Cristo vivo ao mesmo tempo.",
+    "feedbackWrong": {
+      "b": "\"Maioria\" fala de quantos ainda vivem, não do total que viu.",
+      "c": "\"Alguns\" fala dos que já dormem, não do total citado."
+    },
+    "hint": "Procure um número grande no versículo.",
+    "learningObjective": "Sustentar a ressurreição com as testemunhas.",
+    "evidence": [
+      "1 Coríntios 15:6"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-03-ressurreicao-03",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 15:3–4 sustenta sobre o evangelho?",
+    "prompt": "Que leitura 1 Coríntios 15:3–4 sustenta sobre o evangelho?",
+    "cue": "Que leitura 1 Coríntios 15:3–4 sustenta sobre o evangelho?",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "O sepultamento prova que tudo acabou"
+      },
+      {
+        "id": "b",
+        "text": "É invenção recente sem base anterior"
+      },
+      {
+        "id": "c",
+        "text": "A ressurreição foi só um sentimento interno"
+      },
+      {
+        "id": "d",
+        "text": "Cristo morreu e ressuscitou como escrito"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "Morte e ressurreição cumprem o que as Escrituras diziam.",
+    "feedbackWrong": {
+      "a": "Depois do sepultamento, o texto afirma a ressurreição.",
+      "b": "Paulo entregou o que recebeu, conforme as Escrituras.",
+      "c": "Houve sepultamento real e gente que viu Cristo vivo."
+    },
+    "hint": "Veja a expressão que fecha os versos 3 e 4.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "1 Coríntios 15:3–4"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-03-ressurreicao-04",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do evangelho em 1 Coríntios 15?",
+    "prompt": "Qual sequência revela o fio do evangelho em 1 Coríntios 15?",
+    "cue": "Qual sequência revela o fio do evangelho em 1 Coríntios 15?",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morre conforme as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Cristo ressuscita ao terceiro dia"
+      },
+      {
+        "id": "c",
+        "text": "Testemunhas veem Cristo vivo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e que foi sepultado, e que ressuscitou ao terceiro dia",
+    "feedbackCorrect": "Morte, ressurreição e testemunhas formam o fio do capítulo.",
+    "feedbackWrong": {
+      "default": "Comece pela morte de Cristo no versículo 3."
+    },
+    "hint": "Siga os versículos 3, 4 e 5 em ordem.",
+    "learningObjective": "Ver o evangelho como sequência completa.",
+    "evidence": [
+      "1 Coríntios 15:3–5"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-03-ressurreicao-05",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 15:2, pelo evangelho os coríntios também são o quê?",
+    "prompt": "Em 1 Coríntios 15:2, pelo evangelho os coríntios também são o quê?",
+    "cue": "Em 1 Coríntios 15:2, pelo evangelho os coríntios também são o quê?",
+    "verseRef": "1 Coríntios 15:2",
+    "passageText": "Pelo qual também sois salvos, se retiverdes a palavra como eu vo-la tenho pregado; caso contrário, a vossa crença é em vão.",
+    "template": "Pelo qual também sois ___, se retiverdes a palavra como eu vo-la tenho pregado; caso contrário, a vossa crença é em vão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvos"
+      },
+      {
+        "id": "b",
+        "text": "pregados"
+      },
+      {
+        "id": "c",
+        "text": "lembrados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Pelo qual também sois salvos",
+    "feedbackCorrect": "Pelo evangelho eles são alcançados, se o retiverem.",
+    "feedbackWrong": {
+      "b": "Quem prega é Paulo; eles são o alvo da salvação.",
+      "c": "Quem lembra o evangelho a eles é Paulo, no verso 1."
+    },
+    "hint": "Leia o começo do versículo 2.",
+    "learningObjective": "Lembrar o efeito do evangelho em quem crê.",
+    "evidence": [
+      "1 Coríntios 15:2"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-03-ressurreicao-06",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 15:3 a Romanos 4:25?",
+    "prompt": "O que liga 1 Coríntios 15:3 a Romanos 4:25?",
+    "cue": "O que liga 1 Coríntios 15:3 a Romanos 4:25?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "passageA": {
+      "ref": "1 Coríntios 15:3",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+    },
+    "passageB": {
+      "ref": "Romanos 4:25",
+      "text": "Foi entregue por nossas transgressões e ressuscitou para a nossa justificação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo ficou no sepulcro"
+      },
+      {
+        "id": "b",
+        "text": "Morte sem qualquer esperança"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição ligada à justificação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "O Cristo entregue pelos pecados foi ressuscitado por nós.",
+    "feedbackWrong": {
+      "a": "Coríntios afirma que ele ressuscitou ao terceiro dia.",
+      "b": "Romanos junta entrega e ressurreição com esperança."
+    },
+    "hint": "Veja o par morte e ressurreição nos dois.",
+    "learningObjective": "Ligar morte e ressurreição ao perdão.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "Romanos 4:25"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-04-consolacao-01",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Coríntios 12:8, Paulo pediu uma única vez que o espinho fosse afastado.",
+    "prompt": "Em 2 Coríntios 12:8, Paulo pediu uma única vez que o espinho fosse afastado.",
+    "cue": "Em 2 Coríntios 12:8, Paulo pediu uma única vez que o espinho fosse afastado.",
+    "verseRef": "2 Coríntios 12:8",
+    "passageText": "A esse respeito, três vezes pedi ao Senhor que o afastasse de mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "três vezes pedi ao Senhor que o afastasse de mim",
+    "feedbackCorrect": "Paulo conta que pediu mais de uma vez, foram três pedidos.",
+    "feedbackWrong": {
+      "true": "Releia 2 Coríntios 12:8 e conte os pedidos de Paulo."
+    },
+    "hint": "Conte os pedidos no versículo.",
+    "learningObjective": "Observar a insistência de Paulo em oração.",
+    "evidence": [
+      "2 Coríntios 12:8"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-04-consolacao-02",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Coríntios 12:9, toque o que o Senhor diz que basta para Paulo.",
+    "prompt": "Em 2 Coríntios 12:9, toque o que o Senhor diz que basta para Paulo.",
+    "cue": "Em 2 Coríntios 12:9, toque o que o Senhor diz que basta para Paulo.",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A minha graça te basta",
+    "feedbackCorrect": "A resposta do Senhor começa pelo que ele oferece a Paulo.",
+    "feedbackWrong": {
+      "a": "Isso se aperfeiçoa na fraqueza, na segunda parte.",
+      "b": "Esse é o cenário de Paulo, não o que basta."
+    },
+    "hint": "Leia a primeira frase da resposta do Senhor.",
+    "learningObjective": "Identificar a resposta de Deus a Paulo.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-04-consolacao-03",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Coríntios 12:7, por que foi dado um espinho a Paulo?",
+    "prompt": "Segundo 2 Coríntios 12:7, por que foi dado um espinho a Paulo?",
+    "cue": "Segundo 2 Coríntios 12:7, por que foi dado um espinho a Paulo?",
+    "verseRef": "2 Coríntios 12:7",
+    "passageText": "E, para que eu não me ensoberbecesse pela grandeza das revelações, foi-me dado um espinho na carne, um mensageiro de Satanás, para me esbofetear, a fim de que eu não me exaltasse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para ele se exaltar nas visões"
+      },
+      {
+        "id": "b",
+        "text": "Para ele parar de pregar"
+      },
+      {
+        "id": "c",
+        "text": "Para ele não se ensoberbecer"
+      },
+      {
+        "id": "d",
+        "text": "Para ele deixar Corinto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que eu não me ensoberbecesse pela grandeza das revelações",
+    "feedbackCorrect": "O espinho guardava Paulo do orgulho pelas revelações recebidas.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário, era para ele não se exaltar.",
+      "b": "Ele continua pregando; o espinho trata do orgulho dele.",
+      "d": "O motivo citado é o orgulho, não uma mudança de cidade."
+    },
+    "hint": "Veja o motivo logo após o espinho ser citado.",
+    "learningObjective": "Observar o propósito do espinho.",
+    "evidence": [
+      "2 Coríntios 12:7"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-04-consolacao-04",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Coríntios 12:9 na ordem do texto.",
+    "prompt": "Monte 2 Coríntios 12:9 na ordem do texto.",
+    "cue": "Monte 2 Coríntios 12:9 na ordem do texto.",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A minha graça te basta"
+      },
+      {
+        "id": "b",
+        "text": "pois o meu poder se aperfeiçoa na fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "de bom grado me gloriarei nas minhas fraquezas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A minha graça te basta",
+    "feedbackCorrect": "Primeiro a resposta do Senhor, depois o motivo, e a reação.",
+    "feedbackWrong": {
+      "default": "Comece pela fala do Senhor a Paulo."
+    },
+    "hint": "O versículo começa com a fala do Senhor.",
+    "learningObjective": "Reconhecer a sequência de 2 Coríntios 12:9.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-04-consolacao-05",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Coríntios 12:8, quantas vezes Paulo pediu que o espinho saísse?",
+    "prompt": "Em 2 Coríntios 12:8, quantas vezes Paulo pediu que o espinho saísse?",
+    "cue": "Em 2 Coríntios 12:8, quantas vezes Paulo pediu que o espinho saísse?",
+    "verseRef": "2 Coríntios 12:8",
+    "passageText": "A esse respeito, três vezes pedi ao Senhor que o afastasse de mim.",
+    "template": "A esse respeito, ___ vezes pedi ao Senhor que o afastasse de mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "uma"
+      },
+      {
+        "id": "b",
+        "text": "três"
+      },
+      {
+        "id": "c",
+        "text": "sete"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "três vezes pedi ao Senhor",
+    "feedbackCorrect": "Ele insistiu em oração mais de uma vez pelo mesmo pedido.",
+    "feedbackWrong": {
+      "a": "Ele pediu mais vezes, como o próprio número mostra.",
+      "c": "O número citado no texto é menor que esse."
+    },
+    "hint": "Procure um número no versículo.",
+    "learningObjective": "Lembrar a insistência de Paulo.",
+    "evidence": [
+      "2 Coríntios 12:8"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-04-consolacao-06",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "passageA": {
+      "ref": "2 Coríntios 12:9",
+      "text": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo pediu três vezes que o espinho fosse afastado dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fraqueza prova pouca fé"
+      },
+      {
+        "id": "b",
+        "text": "Espinho some na hora"
+      },
+      {
+        "id": "c",
+        "text": "Graça basta na fraqueza"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A minha graça te basta",
+    "feedbackCorrect": "A resposta ao pedido não foi tirar, foi sustentar com favor.",
+    "feedbackWrong": {
+      "a": "Nela o poder de Deus se aperfeiçoa, diz o Senhor.",
+      "b": "O Senhor não promete tirar; ele promete o que basta."
+    },
+    "hint": "Veja a primeira frase da resposta do Senhor.",
+    "learningObjective": "Ligar a resposta de Deus ao pedido de Paulo.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-04-consolacao-01",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 12:7, o espinho foi dado para que Paulo não se exaltasse.",
+    "prompt": "Em 2 Coríntios 12:7, o espinho foi dado para que Paulo não se exaltasse.",
+    "cue": "Em 2 Coríntios 12:7, o espinho foi dado para que Paulo não se exaltasse.",
+    "verseRef": "2 Coríntios 12:7",
+    "passageText": "E, para que eu não me ensoberbecesse pela grandeza das revelações, foi-me dado um espinho na carne, um mensageiro de Satanás, para me esbofetear, a fim de que eu não me exaltasse.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que eu não me ensoberbecesse pela grandeza das revelações",
+    "feedbackCorrect": "O próprio texto dá esse motivo para o espinho de Paulo.",
+    "feedbackWrong": {
+      "false": "Releia 2 Coríntios 12:7 e veja o motivo declarado."
+    },
+    "hint": "Veja o motivo logo depois do espinho.",
+    "learningObjective": "Compreender o propósito do espinho.",
+    "evidence": [
+      "2 Coríntios 12:7"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-04-consolacao-02",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 12:7, toque a expressão que mostra o propósito do espinho.",
+    "prompt": "Em 2 Coríntios 12:7, toque a expressão que mostra o propósito do espinho.",
+    "cue": "Em 2 Coríntios 12:7, toque a expressão que mostra o propósito do espinho.",
+    "verseRef": "2 Coríntios 12:7",
+    "passageText": "E, para que eu não me ensoberbecesse pela grandeza das revelações, foi-me dado um espinho na carne, um mensageiro de Satanás, para me esbofetear, a fim de que eu não me exaltasse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para que"
+      },
+      {
+        "id": "b",
+        "text": "um espinho"
+      },
+      {
+        "id": "c",
+        "text": "pela grandeza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que eu não me ensoberbecesse",
+    "feedbackCorrect": "Duas palavrinhas abrem a explicação do motivo.",
+    "feedbackWrong": {
+      "b": "Isso é o que foi dado, não o motivo dele.",
+      "c": "Isso cita as revelações, não o propósito em si."
+    },
+    "hint": "Procure duas palavrinhas antes do motivo.",
+    "learningObjective": "Reconhecer o marcador de propósito no texto.",
+    "evidence": [
+      "2 Coríntios 12:7"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-04-consolacao-03",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Coríntios 12:9 liga graça e fraqueza?",
+    "prompt": "Como 2 Coríntios 12:9 liga graça e fraqueza?",
+    "cue": "Como 2 Coríntios 12:9 liga graça e fraqueza?",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O favor divino some quando há limitação"
+      },
+      {
+        "id": "b",
+        "text": "O favor divino exige força própria antes"
+      },
+      {
+        "id": "c",
+        "text": "O poder divino se completa na limitação"
+      },
+      {
+        "id": "d",
+        "text": "A limitação prova abandono divino total"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o meu poder se aperfeiçoa na fraqueza",
+    "feedbackCorrect": "É justamente no limite humano que o poder se completa.",
+    "feedbackWrong": {
+      "a": "O Senhor diz que seu favor basta, mesmo com limite.",
+      "b": "Paulo não apresenta força; ele apresenta o seu limite.",
+      "d": "O Senhor responde e fica perto, não abandona Paulo."
+    },
+    "hint": "Veja a explicação depois da primeira frase do Senhor.",
+    "learningObjective": "Relacionar graça e fraqueza na resposta do Senhor.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-04-consolacao-04",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em 2 Coríntios 12:7–9?",
+    "prompt": "Como avança a cena em 2 Coríntios 12:7–9?",
+    "cue": "Como avança a cena em 2 Coríntios 12:7–9?",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo recebe um espinho"
+      },
+      {
+        "id": "b",
+        "text": "Paulo pede três vezes"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor responde com graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A minha graça te basta",
+    "feedbackCorrect": "Espinho, pedidos repetidos e, por fim, a resposta do Senhor.",
+    "feedbackWrong": {
+      "default": "A resposta do Senhor fecha a sequência da cena."
+    },
+    "hint": "A fala do Senhor vem por último.",
+    "learningObjective": "Compreender o encadeamento da cena do espinho.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-04-consolacao-05",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 12:9, onde o poder de Deus se aperfeiçoa?",
+    "prompt": "Em 2 Coríntios 12:9, onde o poder de Deus se aperfeiçoa?",
+    "cue": "Em 2 Coríntios 12:9, onde o poder de Deus se aperfeiçoa?",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "template": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na ___. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o meu poder se aperfeiçoa na fraqueza",
+    "feedbackCorrect": "O lugar citado é justamente onde Paulo se sente limitado.",
+    "feedbackWrong": {
+      "b": "É o contrário do lugar citado pelo Senhor aqui.",
+      "c": "Isso é o que basta; o lugar vem logo depois."
+    },
+    "hint": "Leia a explicação do Senhor no versículo.",
+    "learningObjective": "Compreender onde o poder se aperfeiçoa.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-04-consolacao-06",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Coríntios 12:9 a 2 Coríntios 1:3–4?",
+    "prompt": "O que liga 2 Coríntios 12:9 a 2 Coríntios 1:3–4?",
+    "cue": "O que liga 2 Coríntios 12:9 a 2 Coríntios 1:3–4?",
+    "verseRef": "2 Coríntios 12:9–10",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim. Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "passageA": {
+      "ref": "2 Coríntios 12:9",
+      "text": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 1:3–4",
+      "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, o Pai das misericórdias e Deus de toda consolação! Ele nos consola em toda a nossa tribulação, para que também possamos consolar os que estiverem passando por qualquer angústia, com a consolação com que nós mesmos somos consolados por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Consolo recebido vira consolo dado"
+      },
+      {
+        "id": "b",
+        "text": "Sofrer é sempre sinal de abandono"
+      },
+      {
+        "id": "c",
+        "text": "Deus nunca consola ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A minha graça te basta",
+    "feedbackCorrect": "O Deus que sustenta Paulo é o Pai que consola e envia a consolar.",
+    "feedbackWrong": {
+      "b": "Paulo é sustentado no sofrimento, não abandonado nele.",
+      "c": "A abertura da carta chama Deus de Pai de consolações."
+    },
+    "hint": "Veja como a carta chama a Deus no capítulo 1.",
+    "learningObjective": "Relacionar sustento e consolo na mesma carta.",
+    "evidence": [
+      "2 Coríntios 12:9",
+      "2 Coríntios 1:3–4"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-04-consolacao-01",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 12:9, o Senhor tira o espinho antes de falar da graça que basta.",
+    "prompt": "Em 2 Coríntios 12:9, o Senhor tira o espinho antes de falar da graça que basta.",
+    "cue": "Em 2 Coríntios 12:9, o Senhor tira o espinho antes de falar da graça que basta.",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E ele me disse: A minha graça te basta",
+    "feedbackCorrect": "A resposta é uma palavra de sustento, sem retirada citada.",
+    "feedbackWrong": {
+      "true": "Releia 2 Coríntios 12:9 e veja qual é a resposta dada."
+    },
+    "hint": "Veja qual é a resposta, e não o pedido.",
+    "learningObjective": "Interpretar a resposta de Deus ao sofrimento.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-04-consolacao-02",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 12:10, toque a palavra final do paradoxo de Paulo.",
+    "prompt": "Em 2 Coríntios 12:10, toque a palavra final do paradoxo de Paulo.",
+    "cue": "Em 2 Coríntios 12:10, toque a palavra final do paradoxo de Paulo.",
+    "verseRef": "2 Coríntios 12:10",
+    "passageText": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fraco"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "forte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é então que sou forte",
+    "feedbackCorrect": "A frase vira no fim: limitado, e justamente aí sustentado.",
+    "feedbackWrong": {
+      "a": "Esse é o começo do paradoxo, não o seu fecho.",
+      "b": "Esse nome dá o motivo, não o fecho da frase."
+    },
+    "hint": "Leia a última frase do versículo.",
+    "learningObjective": "Sustentar o paradoxo força na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:10"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-04-consolacao-03",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Coríntios 12:9–10 sustenta sobre a fraqueza?",
+    "prompt": "Que leitura 2 Coríntios 12:9–10 sustenta sobre a fraqueza?",
+    "cue": "Que leitura 2 Coríntios 12:9–10 sustenta sobre a fraqueza?",
+    "verseRef": "2 Coríntios 12:9–10",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim. Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela prova que Deus abandonou a pessoa"
+      },
+      {
+        "id": "b",
+        "text": "Ela é palco do poder de Cristo nela"
+      },
+      {
+        "id": "c",
+        "text": "Ela some sempre que há fé de verdade"
+      },
+      {
+        "id": "d",
+        "text": "Ela deve ser escondida a qualquer custo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que o poder de Cristo descanse sobre mim",
+    "feedbackCorrect": "Paulo se gloria nela porque Cristo mostra força ali.",
+    "feedbackWrong": {
+      "a": "O Senhor responde a Paulo e promete sustento perto dele.",
+      "c": "O espinho de Paulo ficou, mesmo com três pedidos feitos.",
+      "d": "Paulo fala abertamente dela e até se gloria nela."
+    },
+    "hint": "Veja o motivo de Paulo se gloriar nas suas limitações.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "2 Coríntios 12:9–10"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-04-consolacao-04",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica de 2 Coríntios 12:9–10?",
+    "prompt": "Qual sequência revela a lógica de 2 Coríntios 12:9–10?",
+    "cue": "Qual sequência revela a lógica de 2 Coríntios 12:9–10?",
+    "verseRef": "2 Coríntios 12:9–10",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim. Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A limitação é reconhecida sem disfarce"
+      },
+      {
+        "id": "b",
+        "text": "O favor de Cristo sustenta a pessoa"
+      },
+      {
+        "id": "c",
+        "text": "O poder de Cristo descansa nela"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pois, quando estou fraco, é então que sou forte",
+    "feedbackCorrect": "Limite assumido, favor recebido e poder de Cristo presente.",
+    "feedbackWrong": {
+      "default": "Comece pelo limite que Paulo assume sem disfarce."
+    },
+    "hint": "Comece pelo que Paulo assume sobre si.",
+    "learningObjective": "Ver a lógica entre fraqueza e poder.",
+    "evidence": [
+      "2 Coríntios 12:9–10"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-04-consolacao-05",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 12:10, Paulo diz que, quando está como, então é forte?",
+    "prompt": "Em 2 Coríntios 12:10, Paulo diz que, quando está como, então é forte?",
+    "cue": "Em 2 Coríntios 12:10, Paulo diz que, quando está como, então é forte?",
+    "verseRef": "2 Coríntios 12:10",
+    "passageText": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "template": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou ___, é então que sou forte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pronto"
+      },
+      {
+        "id": "b",
+        "text": "fraco"
+      },
+      {
+        "id": "c",
+        "text": "forte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quando estou fraco, é então que sou forte",
+    "feedbackCorrect": "A frase troca o esperado: é justamente aí que ele é sustentado.",
+    "feedbackWrong": {
+      "a": "Essa palavra não aparece nesta frase de Paulo.",
+      "c": "Essa é a segunda parte da frase, não a condição dela."
+    },
+    "hint": "Leia a última frase do versículo.",
+    "learningObjective": "Lembrar o termo do paradoxo de Paulo.",
+    "evidence": [
+      "2 Coríntios 12:10"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-04-consolacao-06",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Coríntios 12:10 a Filipenses 4:13?",
+    "prompt": "O que liga 2 Coríntios 12:10 a Filipenses 4:13?",
+    "cue": "O que liga 2 Coríntios 12:10 a Filipenses 4:13?",
+    "verseRef": "2 Coríntios 12:10",
+    "passageText": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "passageA": {
+      "ref": "2 Coríntios 12:10",
+      "text": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:13",
+      "text": "Posso todas as coisas por meio daquele que me dá força."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força de Cristo na fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "Força própria sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Fraqueza vence no fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é então que sou forte",
+    "feedbackCorrect": "Nos dois textos, quem sustenta Paulo é Cristo, não ele mesmo.",
+    "feedbackWrong": {
+      "b": "Paulo aponta para Cristo como fonte da sua firmeza.",
+      "c": "A frase termina com Paulo firme, não vencido."
+    },
+    "hint": "Veja de quem vem a firmeza nos dois textos.",
+    "learningObjective": "Ligar a força do crente à pessoa de Cristo.",
+    "evidence": [
+      "2 Coríntios 12:10",
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-01",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 15:4, Cristo foi sepultado e ressuscitou ao terceiro dia.",
+    "prompt": "Em 1 Coríntios 15:4, Cristo foi sepultado e ressuscitou ao terceiro dia.",
+    "cue": "Em 1 Coríntios 15:4, Cristo foi sepultado e ressuscitou ao terceiro dia.",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e que foi sepultado, e que ressuscitou ao terceiro dia",
+    "feedbackCorrect": "O versículo junta sepultamento e ressurreição de Cristo.",
+    "feedbackWrong": {
+      "false": "Releia 1 Coríntios 15:4 inteiro, sem pular a segunda parte."
+    },
+    "hint": "Leia o versículo inteiro.",
+    "learningObjective": "Revisar morte e ressurreição de Cristo.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-02",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 15:4, toque o verbo que diz o que houve ao terceiro dia.",
+    "prompt": "Em 1 Coríntios 15:4, toque o verbo que diz o que houve ao terceiro dia.",
+    "cue": "Em 1 Coríntios 15:4, toque o verbo que diz o que houve ao terceiro dia.",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultado"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "ressuscitou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "Ao terceiro dia, Cristo não ficou no túmulo.",
+    "feedbackWrong": {
+      "a": "Isso aconteceu antes, na morte de Cristo.",
+      "b": "Isso mostra a base antiga, não o verbo central."
+    },
+    "hint": "Procure o verbo ligado ao terceiro dia.",
+    "learningObjective": "Revisar o verbo da ressurreição.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-03",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 13:5, o que o amor não faz?",
+    "prompt": "Segundo 1 Coríntios 13:5, o que o amor não faz?",
+    "cue": "Segundo 1 Coríntios 13:5, o que o amor não faz?",
+    "verseRef": "1 Coríntios 13:5",
+    "passageText": "Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não guarda rancor"
+      },
+      {
+        "id": "b",
+        "text": "Não busca a verdade"
+      },
+      {
+        "id": "c",
+        "text": "Não suporta ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Não espera nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não guarda rancor",
+    "feedbackCorrect": "Paulo diz que o amor não fica guardando mágoa das pessoas.",
+    "feedbackWrong": {
+      "b": "O versículo 6 diz que ele se alegra com a verdade.",
+      "c": "O versículo 7 diz que ele tudo suporta.",
+      "d": "O versículo 7 diz que ele tudo espera."
+    },
+    "hint": "Procure a mágoa na lista do versículo.",
+    "learningObjective": "Revisar as atitudes do amor.",
+    "evidence": [
+      "1 Coríntios 13:5"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-04",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 13:7 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 13:7 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 13:7 na ordem do texto.",
+    "verseRef": "1 Coríntios 13:7",
+    "passageText": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo suporta"
+      },
+      {
+        "id": "b",
+        "text": "tudo crê"
+      },
+      {
+        "id": "c",
+        "text": "tudo espera"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta",
+    "feedbackCorrect": "A lista repete a mesma palavra antes de cada atitude.",
+    "feedbackWrong": {
+      "default": "Comece pela primeira atitude da lista curta."
+    },
+    "hint": "A lista começa com suportar.",
+    "learningObjective": "Reconhecer a lista de 1 Coríntios 13:7.",
+    "evidence": [
+      "1 Coríntios 13:7"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-05",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 15:3, Cristo morreu por nossos quê?",
+    "prompt": "Em 1 Coríntios 15:3, Cristo morreu por nossos quê?",
+    "cue": "Em 1 Coríntios 15:3, Cristo morreu por nossos quê?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "template": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos ___, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "apóstolos"
+      },
+      {
+        "id": "c",
+        "text": "pecados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cristo morreu por nossos pecados",
+    "feedbackCorrect": "A morte de Cristo foi pelos nossos erros diante de Deus.",
+    "feedbackWrong": {
+      "a": "Os irmãos veem Cristo vivo no versículo 6.",
+      "b": "Os apóstolos veem Cristo depois, nos versos seguintes."
+    },
+    "hint": "Leia a segunda parte do versículo 3.",
+    "learningObjective": "Revisar por quem Cristo morreu.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-06",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "passageA": {
+      "ref": "1 Coríntios 1:18",
+      "text": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A igreja de Corinto se dividia em grupos em torno de nomes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavras sábias unem tudo"
+      },
+      {
+        "id": "b",
+        "text": "Um líder une a igreja"
+      },
+      {
+        "id": "c",
+        "text": "A cruz une a igreja"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "O centro que reúne não é um nome humano, é a cruz.",
+    "feedbackWrong": {
+      "a": "A sabedoria humana não conheceu a Deus, diz 1:21.",
+      "b": "Paulo recusa discípulos em torno do nome dele."
+    },
+    "hint": "Veja o que a mensagem é para os salvos.",
+    "learningObjective": "Ligar a cruz à unidade da igreja.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-07",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 13:4, toque o primeiro traço do amor.",
+    "prompt": "Em 1 Coríntios 13:4, toque o primeiro traço do amor.",
+    "cue": "Em 1 Coríntios 13:4, toque o primeiro traço do amor.",
+    "verseRef": "1 Coríntios 13:4",
+    "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;",
+    "options": [
+      {
+        "id": "a",
+        "text": "paciente"
+      },
+      {
+        "id": "b",
+        "text": "benigno"
+      },
+      {
+        "id": "c",
+        "text": "ciúmes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O amor é paciente, é benigno",
+    "feedbackCorrect": "O primeiro traço citado é a paciência com as pessoas.",
+    "feedbackWrong": {
+      "b": "Esse traço vem logo depois do primeiro.",
+      "c": "Isso é o que o amor não faz, segundo o texto."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Revisar o primeiro traço do amor.",
+    "evidence": [
+      "1 Coríntios 13:4"
+    ]
+  },
+  {
+    "id": "corintios-sem-co-05-desafio-08",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 15:4 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 15:4 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 15:4 na ordem do texto.",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "e que foi sepultado"
+      },
+      {
+        "id": "b",
+        "text": "e que ressuscitou ao terceiro dia"
+      },
+      {
+        "id": "c",
+        "text": "conforme as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e que foi sepultado, e que ressuscitou ao terceiro dia",
+    "feedbackCorrect": "Sepultamento primeiro, ressurreição depois, conforme as Escrituras.",
+    "feedbackWrong": {
+      "default": "Comece pelo sepultamento de Cristo."
+    },
+    "hint": "A morte vem antes do terceiro dia.",
+    "learningObjective": "Reconhecer a sequência de 1 Coríntios 15:4.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-01",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 13:8, profecias e línguas permanecem para sempre como o amor.",
+    "prompt": "Em 1 Coríntios 13:8, profecias e línguas permanecem para sempre como o amor.",
+    "cue": "Em 1 Coríntios 13:8, profecias e línguas permanecem para sempre como o amor.",
+    "verseRef": "1 Coríntios 13:8",
+    "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "as profecias, porém, serão eliminadas; as línguas, cessarão",
+    "feedbackCorrect": "Essas coisas passarão; quem nunca acaba é outra coisa.",
+    "feedbackWrong": {
+      "true": "Releia 1 Coríntios 13:8 e veja o que será eliminado."
+    },
+    "hint": "Separe o que passa do que fica.",
+    "learningObjective": "Revisar o que permanece para sempre.",
+    "evidence": [
+      "1 Coríntios 13:8"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-02",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 1:18, toque a palavra que vira a frase para os salvos.",
+    "prompt": "Em 1 Coríntios 1:18, toque a palavra que vira a frase para os salvos.",
+    "cue": "Em 1 Coríntios 1:18, toque a palavra que vira a frase para os salvos.",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Certamente"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "para"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas para nós, que somos salvos",
+    "feedbackCorrect": "Essa palavrinha separa quem se perde de quem é salvo.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre o versículo, sem virar a frase.",
+      "c": "Essa palavra indica destino, não a virada."
+    },
+    "hint": "Procure uma conjunção curta no meio.",
+    "learningObjective": "Reconhecer o contraste no texto.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-03",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 13:1–2 relaciona dons e amor?",
+    "prompt": "Como 1 Coríntios 13:1–2 relaciona dons e amor?",
+    "cue": "Como 1 Coríntios 13:1–2 relaciona dons e amor?",
+    "verseRef": "1 Coríntios 13:1–2",
+    "passageText": "Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o bronze que ressoa ou como o sino que retine. E ainda que eu tenha o dom de profetizar e conheça todos os mistérios e toda a ciência; e ainda que eu tenha tamanha fé, a ponto de transportar montes, se eu não tiver amor, nada serei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dons fortes provam que há amor"
+      },
+      {
+        "id": "b",
+        "text": "Sem amor, dons fortes perdem o valor"
+      },
+      {
+        "id": "c",
+        "text": "Amor dispensa qualquer dom na igreja"
+      },
+      {
+        "id": "d",
+        "text": "Dons valem mais quando impressionam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se eu não tiver amor, nada serei",
+    "feedbackCorrect": "Mesmo com profecia e fé grande, sem isso a pessoa nada é.",
+    "feedbackWrong": {
+      "a": "Paulo separa dom de valor: pode haver dom sem o essencial.",
+      "c": "Paulo não cancela os dons; mostra o que lhes dá valor.",
+      "d": "Impressionar é justamente o que não basta no texto."
+    },
+    "hint": "Veja a condição repetida nos versos 1 a 3.",
+    "learningObjective": "Relacionar dons e amor.",
+    "evidence": [
+      "1 Coríntios 13:1–2"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-04",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a revisão das cartas neste desafio?",
+    "prompt": "Como avança a revisão das cartas neste desafio?",
+    "cue": "Como avança a revisão das cartas neste desafio?",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz reúne a igreja dividida"
+      },
+      {
+        "id": "b",
+        "text": "O amor dá forma aos dons"
+      },
+      {
+        "id": "c",
+        "text": "A graça sustenta na fraqueza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Cruz, amor e graça formam o caminho da revisão.",
+    "feedbackWrong": {
+      "default": "Comece pela cruz, que abre as cartas."
+    },
+    "hint": "Comece pela primeira carta e seu centro.",
+    "learningObjective": "Compreender o fio da revisão das cartas.",
+    "evidence": [
+      "1 Coríntios 1:18",
+      "1 Coríntios 13:4",
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-05",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 13:6, com o que o amor se alegra?",
+    "prompt": "Em 1 Coríntios 13:6, com o que o amor se alegra?",
+    "cue": "Em 1 Coríntios 13:6, com o que o amor se alegra?",
+    "verseRef": "1 Coríntios 13:6",
+    "passageText": "Não se alegra com a injustiça, mas regozija-se com a verdade;",
+    "template": "Não se alegra com a injustiça, mas regozija-se com a ___;",
+    "options": [
+      {
+        "id": "a",
+        "text": "injustiça"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "rancor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "regozija-se com a verdade",
+    "feedbackCorrect": "Ele se alegra com aquilo que é verdadeiro e justo.",
+    "feedbackWrong": {
+      "a": "Com isso ele justamente não se alegra na frase.",
+      "c": "Guardar isso é negado no versículo anterior."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Revisar com o que o amor se alegra.",
+    "evidence": [
+      "1 Coríntios 13:6"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-06",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 1:18 a Romanos 1:16?",
+    "prompt": "O que liga 1 Coríntios 1:18 a Romanos 1:16?",
+    "cue": "O que liga 1 Coríntios 1:18 a Romanos 1:16?",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "passageA": {
+      "ref": "1 Coríntios 1:18",
+      "text": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus."
+    },
+    "passageB": {
+      "ref": "Romanos 1:16",
+      "text": "Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pregação sem qualquer poder"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho é poder salvador"
+      },
+      {
+        "id": "c",
+        "text": "Sabedoria humana salva sozinha"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Nos dois textos, a boa notícia age com poder para salvar.",
+    "feedbackWrong": {
+      "a": "Paulo chama essa mensagem justamente de poder de Deus.",
+      "c": "A sabedoria humana não conheceu a Deus, diz Coríntios."
+    },
+    "hint": "Compare o que Paulo diz da mensagem nos dois.",
+    "learningObjective": "Relacionar cruz e evangelho como poder.",
+    "evidence": [
+      "1 Coríntios 1:18",
+      "Romanos 1:16"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-07",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 15:5, toque a expressão que marca o passo seguinte.",
+    "prompt": "Em 1 Coríntios 15:5, toque a expressão que marca o passo seguinte.",
+    "cue": "Em 1 Coríntios 15:5, toque a expressão que marca o passo seguinte.",
+    "verseRef": "1 Coríntios 15:5",
+    "passageText": "E foi visto por Cefas e, em seguida, pelos doze.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pelos doze"
+      },
+      {
+        "id": "b",
+        "text": "em seguida"
+      },
+      {
+        "id": "c",
+        "text": "por Cefas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e, em seguida, pelos doze",
+    "feedbackCorrect": "Essa expressão costura a primeira aparição com a próxima.",
+    "feedbackWrong": {
+      "a": "Esse grupo vem depois da expressão procurada.",
+      "c": "Esse é quem viu primeiro, não a ligação."
+    },
+    "hint": "Procure duas palavrinhas no meio da frase.",
+    "learningObjective": "Reconhecer a sequência das aparições.",
+    "evidence": [
+      "1 Coríntios 15:5"
+    ]
+  },
+  {
+    "id": "corintios-cam-co-05-desafio-08",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as aparições em 1 Coríntios 15:5–7?",
+    "prompt": "Como se encadeiam as aparições em 1 Coríntios 15:5–7?",
+    "cue": "Como se encadeiam as aparições em 1 Coríntios 15:5–7?",
+    "verseRef": "1 Coríntios 15:5",
+    "passageText": "E foi visto por Cefas e, em seguida, pelos doze.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo é visto por Cefas"
+      },
+      {
+        "id": "b",
+        "text": "Cristo é visto pelos doze"
+      },
+      {
+        "id": "c",
+        "text": "Cristo é visto por Tiago e os apóstolos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E foi visto por Cefas e, em seguida, pelos doze",
+    "feedbackCorrect": "Cefas, os doze, e depois Tiago com todos os apóstolos.",
+    "feedbackWrong": {
+      "default": "Comece por Cefas, citado primeiro no capítulo."
+    },
+    "hint": "Siga a ordem dos versículos 5 a 7.",
+    "learningObjective": "Compreender a sequência das testemunhas.",
+    "evidence": [
+      "1 Coríntios 15:5–7"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-01",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 12:9, a graça do Senhor basta para Paulo na fraqueza.",
+    "prompt": "Em 2 Coríntios 12:9, a graça do Senhor basta para Paulo na fraqueza.",
+    "cue": "Em 2 Coríntios 12:9, a graça do Senhor basta para Paulo na fraqueza.",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza",
+    "feedbackCorrect": "A resposta do Senhor junta favor que basta e poder na limitação.",
+    "feedbackWrong": {
+      "false": "Releia 2 Coríntios 12:9 e ouça a resposta do Senhor."
+    },
+    "hint": "Leia a resposta inteira do Senhor.",
+    "learningObjective": "Interpretar a graça que basta.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-02",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 1:18, toque o que a cruz é para quem é salvo.",
+    "prompt": "Em 1 Coríntios 1:18, toque o que a cruz é para quem é salvo.",
+    "cue": "Em 1 Coríntios 1:18, toque o que a cruz é para quem é salvo.",
+    "verseRef": "1 Coríntios 1:18",
+    "passageText": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mensagem da cruz"
+      },
+      {
+        "id": "b",
+        "text": "loucura"
+      },
+      {
+        "id": "c",
+        "text": "poder de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ela é o poder de Deus",
+    "feedbackCorrect": "Para o salvo, a cruz não é vergonha, é Deus agindo.",
+    "feedbackWrong": {
+      "a": "Esse é o assunto; o valor vem no fim.",
+      "b": "Isso é o que ela parece a quem se perde."
+    },
+    "hint": "Leia até o fim do versículo.",
+    "learningObjective": "Sustentar o valor da cruz para o salvo.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-03",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 15:3–4 sustenta sobre o evangelho?",
+    "prompt": "Que leitura 1 Coríntios 15:3–4 sustenta sobre o evangelho?",
+    "cue": "Que leitura 1 Coríntios 15:3–4 sustenta sobre o evangelho?",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "É invenção recente sem base anterior"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morreu e ressuscitou como escrito"
+      },
+      {
+        "id": "c",
+        "text": "O sepultamento prova que tudo acabou"
+      },
+      {
+        "id": "d",
+        "text": "A ressurreição foi só sentimento interno"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "Morte e ressurreição cumprem o que já estava escrito.",
+    "feedbackWrong": {
+      "a": "Paulo entregou o que recebeu, conforme as Escrituras.",
+      "c": "Depois do sepultamento, o texto afirma a ressurreição.",
+      "d": "Houve sepultamento real e gente que viu Cristo vivo."
+    },
+    "hint": "Veja a expressão que fecha os versos 3 e 4.",
+    "learningObjective": "Escolher a leitura sustentada pelo texto.",
+    "evidence": [
+      "1 Coríntios 15:3–4"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-04",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do evangelho neste desafio?",
+    "prompt": "Qual sequência revela o fio do evangelho neste desafio?",
+    "cue": "Qual sequência revela o fio do evangelho neste desafio?",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morre conforme as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Cristo ressuscita ao terceiro dia"
+      },
+      {
+        "id": "c",
+        "text": "Testemunhas veem Cristo vivo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e que foi sepultado, e que ressuscitou ao terceiro dia",
+    "feedbackCorrect": "Morte, ressurreição e testemunhas formam o fio do capítulo.",
+    "feedbackWrong": {
+      "default": "Comece pela morte de Cristo no versículo 3."
+    },
+    "hint": "Siga os versículos 3, 4 e 5.",
+    "learningObjective": "Ver o evangelho como sequência completa.",
+    "evidence": [
+      "1 Coríntios 15:3–5"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-05",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 12:9, onde o poder de Deus se aperfeiçoa?",
+    "prompt": "Em 2 Coríntios 12:9, onde o poder de Deus se aperfeiçoa?",
+    "cue": "Em 2 Coríntios 12:9, onde o poder de Deus se aperfeiçoa?",
+    "verseRef": "2 Coríntios 12:9",
+    "passageText": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "template": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na ___. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o meu poder se aperfeiçoa na fraqueza",
+    "feedbackCorrect": "O lugar citado é onde Paulo se sente limitado.",
+    "feedbackWrong": {
+      "b": "É o contrário do lugar citado pelo Senhor aqui.",
+      "c": "Paulo evita gloriar-se de si ao longo do capítulo."
+    },
+    "hint": "Leia a explicação do Senhor no versículo.",
+    "learningObjective": "Lembrar onde o poder se aperfeiçoa.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-06",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 13:7 a 1 João 4:8?",
+    "prompt": "O que liga 1 Coríntios 13:7 a 1 João 4:8?",
+    "cue": "O que liga 1 Coríntios 13:7 a 1 João 4:8?",
+    "verseRef": "1 Coríntios 13:7",
+    "passageText": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta.",
+    "passageA": {
+      "ref": "1 Coríntios 13:7",
+      "text": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta."
+    },
+    "passageB": {
+      "ref": "1 João 4:8",
+      "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor cobra cada erro"
+      },
+      {
+        "id": "b",
+        "text": "Amor reflete quem Deus é"
+      },
+      {
+        "id": "c",
+        "text": "Amor humano sem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta",
+    "feedbackCorrect": "Quem ama desse jeito reflete o próprio Deus, que é amor.",
+    "feedbackWrong": {
+      "a": "O versículo 5 diz que ele não guarda rancor.",
+      "c": "João liga esse jeito a quem o próprio Deus é."
+    },
+    "hint": "Veja como João define o próprio Deus.",
+    "learningObjective": "Ligar o amor praticado a quem Deus é.",
+    "evidence": [
+      "1 Coríntios 13:7",
+      "1 João 4:8"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-07",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 12:10, toque a palavra final do paradoxo de Paulo.",
+    "prompt": "Em 2 Coríntios 12:10, toque a palavra final do paradoxo de Paulo.",
+    "cue": "Em 2 Coríntios 12:10, toque a palavra final do paradoxo de Paulo.",
+    "verseRef": "2 Coríntios 12:10",
+    "passageText": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "fraco"
+      },
+      {
+        "id": "c",
+        "text": "forte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é então que sou forte",
+    "feedbackCorrect": "A frase vira no fim: limitado, e aí sustentado por Cristo.",
+    "feedbackWrong": {
+      "a": "Esse nome dá o motivo, não o fecho da frase.",
+      "b": "Esse é o começo do paradoxo, não o seu fecho."
+    },
+    "hint": "Leia a última frase do versículo.",
+    "learningObjective": "Sustentar o paradoxo força na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:10"
+    ]
+  },
+  {
+    "id": "corintios-pro-co-05-desafio-08",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da igreja edificada?",
+    "prompt": "Qual sequência revela o caminho da igreja edificada?",
+    "cue": "Qual sequência revela o caminho da igreja edificada?",
+    "verseRef": "2 Coríntios 12:10",
+    "passageText": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz é pregada e reúne a igreja"
+      },
+      {
+        "id": "b",
+        "text": "O amor edifica a comunidade"
+      },
+      {
+        "id": "c",
+        "text": "A graça sustenta os fracos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pois, quando estou fraco, é então que sou forte",
+    "feedbackCorrect": "Cruz que une, amor que edifica e graça que sustenta os fracos.",
+    "feedbackWrong": {
+      "default": "Comece pela cruz pregada no início das cartas."
+    },
+    "hint": "Comece pelo centro da primeira carta.",
+    "learningObjective": "Ver o caminho completo da igreja edificada.",
+    "evidence": [
+      "1 Coríntios 1:18",
+      "1 Coríntios 13:4",
+      "2 Coríntios 12:10"
+    ]
+  }
+]

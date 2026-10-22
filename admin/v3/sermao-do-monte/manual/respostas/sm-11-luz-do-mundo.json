@@ -1,0 +1,701 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:14–16",
+  "passages": [
+   {
+    "ref": "Mateus 5:14–16"
+   },
+   {
+    "ref": "Mateus 5:17–19"
+   }
+  ],
+  "context": "Jesus chama os discípulos de luz do mundo. Luz não foi feita para ficar escondida debaixo de um cesto: ela vai ao lugar alto, ilumina a casa e leva as pessoas a glorificar o Pai.",
+  "keyword": "Luz",
+  "keywordGloss": "Imagem do discípulo visível boas obras que apontam para o Pai, não para si mesmo.",
+  "focusQuestion": "Suas obras fazem as pessoas olharem para você ou para o Pai?",
+  "reflectionPrompts": [
+   "Luz no lugar alto",
+   "Obras que apontam ao Pai",
+   "Não esconder o Reino"
+  ],
+  "facts": [
+   {
+    "text": "Os discípulos são a luz do mundo.",
+    "evidenceRef": "Mateus 5:14",
+    "evidenceSpan": "Vocês são a luz do mundo"
+   },
+   {
+    "text": "Cidade sobre um monte não se pode ocultar.",
+    "evidenceRef": "Mateus 5:14",
+    "evidenceSpan": "Não se pode ocultar a cidade"
+   },
+   {
+    "text": "Candeia acesa vai ao velador, não sob o alqueire.",
+    "evidenceRef": "Mateus 5:15",
+    "evidenceSpan": "mas sim no velador"
+   },
+   {
+    "text": "A candeia no velador ilumina todos da casa.",
+    "evidenceRef": "Mateus 5:15",
+    "evidenceSpan": "ilumina todos os que estão na casa"
+   },
+   {
+    "text": "Boas obras vistas levam a glorificar o Pai nos céus.",
+    "evidenceRef": "Mateus 5:16",
+    "evidenceSpan": "glorifiquem a seu Pai que está nos céus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "luz",
+    "gloss": "Presença visível do Reino que clareia o caminho das pessoas."
+   },
+   {
+    "term": "velador",
+    "gloss": "Lugar alto onde a candeia cumpre seu papel de iluminar."
+   },
+   {
+    "term": "obras",
+    "gloss": "Práticas boas vistas pelas pessoas e atribuídas ao Pai."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Discípulos declarados luz do mundo",
+    "evidenceRef": "Mateus 5:14"
+   },
+   {
+    "label": "Cidade no monte que não se oculta",
+    "evidenceRef": "Mateus 5:14"
+   },
+   {
+    "label": "Candeia colocada no velador",
+    "evidenceRef": "Mateus 5:15"
+   },
+   {
+    "label": "Obras que glorificam o Pai",
+    "evidenceRef": "Mateus 5:16"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Candeia não vai debaixo do alqueire, mas sim no velador.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 5:15"
+   },
+   {
+    "kind": "propósito",
+    "text": "A luz resplandece para que vejam as obras e glorifiquem o Pai.",
+    "marker": "para",
+    "evidenceRef": "Mateus 5:16"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "João 8:12",
+    "bridge": "Jesus é a luz maior"
+   },
+   {
+    "ref": "2 Coríntios 4:6",
+    "bridge": "Luz de Deus no coração"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Ser luz é buscar fama para o próprio nome entre as pessoas.",
+    "why": "O destino das obras vistas é glorificar o Pai, não o discípulo (5:16)."
+   },
+   {
+    "text": "Discrição cristã significa esconder a fé por completo.",
+    "why": "Jesus critica a candeia escondida; luz existe para ser vista."
+   },
+   {
+    "text": "Boas obras são moeda para comprar o olhar de Deus.",
+    "why": "Elas são luz de quem já é discípulo; a glória vai ao Pai que vê."
+   }
+  ],
+  "centralInsight": "Luz existe para ser vista",
+  "anchorQuestion": "Para onde deve ir a candeia acesa, segundo Mateus 5:15?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:15, a candeia no velador ilumina todos os que estão na casa",
+   "verseRef": "Mateus 5:15",
+   "correctOptionId": "true",
+   "evidenceSpan": "ilumina todos os que estão na casa",
+   "feedbackCorrect": "No lugar alto, a candeia cumpre seu papel para todos da casa.",
+   "feedbackWrong": {
+    "false": "Releia o fim de 5:15: no velador, ela ilumina todos da casa."
+   },
+   "hint": "Veja o lugar aprovado por Jesus no versículo.",
+   "learningObjective": "Observar o lugar certo da candeia.",
+   "evidence": [
+    "Mateus 5:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:14, toque como Jesus chama os discípulos em relação ao mundo.",
+   "verseRef": "Mateus 5:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "luz do mundo"
+    },
+    {
+     "id": "b",
+     "text": "sobre um monte"
+    },
+    {
+     "id": "c",
+     "text": "a cidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Vocês são a luz do mundo",
+   "feedbackCorrect": "Como o sal preserva, a luz torna o Reino visível para as pessoas.",
+   "feedbackWrong": {
+    "b": "Isso descreve onde a cidade está, não o nome dado.",
+    "c": "A cidade ilustra a luz; o nome dado é outro."
+   },
+   "hint": "Procure o nome dado logo no começo da frase.",
+   "learningObjective": "Identificar a imagem da luz em 5:14.",
+   "evidence": [
+    "Mateus 5:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:16, a quem as pessoas devem glorificar ao ver as boas obras?",
+   "verseRef": "Mateus 5:15–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ao discípulo que praticou a obra"
+    },
+    {
+     "id": "b",
+     "text": "Ao Pai que está nos céus"
+    },
+    {
+     "id": "c",
+     "text": "À cidade situada no monte"
+    },
+    {
+     "id": "d",
+     "text": "A quem acendeu a candeia na casa"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "A luz do discípulo aponta para cima: a glória é do Pai, não dele.",
+   "feedbackWrong": {
+    "a": "Jesus desvia a glória do discípulo para o Pai nos céus.",
+    "c": "A cidade é ilustração da luz, não destino de glória.",
+    "d": "Quem acende ilustra o princípio, não recebe a glória final."
+   },
+   "hint": "Leia o destino final citado em 5:16.",
+   "learningObjective": "Observar o destino da glória em 5:16.",
+   "evidence": [
+    "Mateus 5:15–16"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:15 na ordem do texto.",
+   "verseRef": "Mateus 5:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nem se acende uma candeia para colocá-la debaixo do alqueire"
+    },
+    {
+     "id": "b",
+     "text": "mas sim no velador"
+    },
+    {
+     "id": "c",
+     "text": "ilumina todos os que estão na casa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "mas sim no velador",
+   "feedbackCorrect": "Nada de luz escondida: no velador, ela ilumina todos da casa.",
+   "feedbackWrong": {
+    "default": "Comece pela candeia acesa; a iluminação da casa fecha."
+   },
+   "hint": "O efeito sobre a casa vem no fim.",
+   "learningObjective": "Reconhecer a sequência de Mateus 5:15.",
+   "evidence": [
+    "Mateus 5:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:15, o que se acende e não deve ficar escondido?",
+   "verseRef": "Mateus 5:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "candeia"
+    },
+    {
+     "id": "b",
+     "text": "fogueira"
+    },
+    {
+     "id": "c",
+     "text": "tocha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Nem se acende uma candeia",
+   "feedbackCorrect": "A imagem doméstica de Jesus é simples: luz acesa se coloca à vista.",
+   "feedbackWrong": {
+    "b": "Fogueira não é a imagem usada por Jesus aqui.",
+    "c": "Tocha de guerra não aparece nessa ilustração da casa."
+   },
+   "hint": "Pense num objeto comum de iluminação da casa.",
+   "learningObjective": "Lembrar o objeto da ilustração da luz.",
+   "evidence": [
+    "Mateus 5:14–15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:14 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:14–15",
+   "passageA": {
+    "ref": "Mateus 5:14"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jesus declara que a presença dos discípulos no mundo foi feita para ser vista."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Luz existe para ser vista"
+    },
+    {
+     "id": "b",
+     "text": "Fé deve ficar escondida"
+    },
+    {
+     "id": "c",
+     "text": "Cidade foi feita invisível"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "luz do mundo",
+   "feedbackCorrect": "Cidade no monte e candeia no velador dizem a mesma coisa: visibilidade.",
+   "feedbackWrong": {
+    "b": "Esconder a candeia é justamente o que Jesus nega.",
+    "c": "A cidade no monte não se pode ocultar, diz o texto."
+   },
+   "hint": "Junte a cidade do monte com a candeia da casa.",
+   "learningObjective": "Ligar a luz à visibilidade do Reino.",
+   "evidence": [
+    "Mateus 5:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:16, as boas obras devem ser vistas para que o discípulo seja glorificado",
+   "verseRef": "Mateus 5:16",
+   "correctOptionId": "false",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "As obras são vistas, mas a glória é dirigida ao Pai que está nos céus.",
+   "feedbackWrong": {
+    "true": "Confira o destino da glória no fim de 5:16: não é o discípulo."
+   },
+   "hint": "Pergunte a quem a glória vai no versículo.",
+   "learningObjective": "Compreender a direção da glória das obras.",
+   "evidence": [
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:15, toque o lugar errado para a candeia acesa.",
+   "verseRef": "Mateus 5:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "debaixo do alqueire"
+    },
+    {
+     "id": "b",
+     "text": "no velador"
+    },
+    {
+     "id": "c",
+     "text": "na casa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para colocá-la debaixo do alqueire",
+   "feedbackCorrect": "Esconder a luz debaixo de um cesto anula o propósito de ela existir.",
+   "feedbackWrong": {
+    "b": "Esse é o lugar certo aprovado por Jesus.",
+    "c": "A casa é quem recebe a luz, não onde escondê-la."
+   },
+   "hint": "Procure o lugar que Jesus nega na frase.",
+   "learningObjective": "Reconhecer o contraste da candeia em 5:15.",
+   "evidence": [
+    "Mateus 5:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 5:15 explica Mateus 5:14 dentro do ensino de Jesus?",
+   "verseRef": "Mateus 5:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra que luz do mundo deve buscar aplauso"
+    },
+    {
+     "id": "b",
+     "text": "Ilustra que presença do Reino não se esconde"
+    },
+    {
+     "id": "c",
+     "text": "Troca a cidade do monte por vida isolada"
+    },
+    {
+     "id": "d",
+     "text": "Ensina a iluminar só dentro da própria casa"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas sim no velador",
+   "feedbackCorrect": "A candeia doméstica ilustra a cidade no monte: luz foi feita para aparecer.",
+   "feedbackWrong": {
+    "a": "O aplauso é desviado ao Pai em 5:16, não buscado.",
+    "c": "Cidade visível contradiz isolamento como ideal do Reino.",
+    "d": "A casa ilustra; o alcance declarado é o mundo (5:14)."
+   },
+   "hint": "Veja o que as duas imagens têm em comum.",
+   "learningObjective": "Relacionar as duas imagens da luz.",
+   "evidence": [
+    "Mateus 5:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o ensino da luz de Mateus 5:14 a 5:16?",
+   "verseRef": "Mateus 5:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Discípulos declarados luz do mundo"
+    },
+    {
+     "id": "b",
+     "text": "Candeia colocada no lugar alto"
+    },
+    {
+     "id": "c",
+     "text": "Pai glorificado pelas obras vistas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "mas sim no velador",
+   "feedbackCorrect": "Identidade, visibilidade e glória ao Pai: o ensino fecha apontando para cima.",
+   "feedbackWrong": {
+    "default": "A glória ao Pai é o fechamento, em 5:16."
+   },
+   "hint": "O último passo está fora da casa, nos céus.",
+   "learningObjective": "Compreender o movimento completo da luz.",
+   "evidence": [
+    "Mateus 5:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:15, onde a candeia deve ser colocada para iluminar?",
+   "verseRef": "Mateus 5:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "velador"
+    },
+    {
+     "id": "b",
+     "text": "alqueire"
+    },
+    {
+     "id": "c",
+     "text": "chão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas sim no velador",
+   "feedbackCorrect": "No lugar alto, a mesma chama pequena ilumina todos os que estão na casa.",
+   "feedbackWrong": {
+    "b": "Debaixo dele a luz é abafada, diz o contraste de Jesus.",
+    "c": "O chão não é o lugar nomeado por Jesus nessa imagem."
+   },
+   "hint": "Pense no lugar alto citado no versículo.",
+   "learningObjective": "Lembrar o lugar certo da candeia.",
+   "evidence": [
+    "Mateus 5:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:14 a João 8:12?",
+   "verseRef": "Mateus 5:14",
+   "passageA": {
+    "ref": "Mateus 5:14"
+   },
+   "passageB": {
+    "ref": "João 8:12"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus é a luz maior"
+    },
+    {
+     "id": "b",
+     "text": "Discípulos substituem Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Luz dispensa seguir Jesus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "luz do mundo",
+   "feedbackCorrect": "Os discípulos são luz porque refletem aquele que é a Luz do mundo.",
+   "feedbackWrong": {
+    "b": "Eles refletem Jesus; nunca tomam o lugar dele.",
+    "c": "Em João, quem segue Jesus não anda em trevas."
+   },
+   "hint": "Veja quem recebe o mesmo título em João.",
+   "learningObjective": "Relacionar a luz dos discípulos à luz de Jesus.",
+   "evidence": [
+    "Mateus 5:14",
+    "João 8:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 5:14–16 ensina que a luz dos discípulos deve ser vista e levar glória ao Pai",
+   "verseRef": "Mateus 5:15–16",
+   "correctOptionId": "true",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "Visível sim, vaidosa não: quem recebe a glória das obras é o Pai.",
+   "feedbackWrong": {
+    "false": "Confira 5:16: obras vistas, Pai glorificado nos céus."
+   },
+   "hint": "Separe ser visto de ser glorificado no texto.",
+   "learningObjective": "Distinguir visibilidade de vaidade em 5:14–16.",
+   "evidence": [
+    "Mateus 5:15–16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:16, toque o que as pessoas verão nos discípulos.",
+   "verseRef": "Mateus 5:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "boas obras"
+    },
+    {
+     "id": "b",
+     "text": "sua luz"
+    },
+    {
+     "id": "c",
+     "text": "nos céus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vejam as suas boas obras",
+   "feedbackCorrect": "O que o mundo vê não é discurso: são práticas concretas do Reino.",
+   "feedbackWrong": {
+    "b": "A luz deve resplandecer, mas o que se vê são as práticas.",
+    "c": "Isso é onde o Pai está, não o que as pessoas veem."
+   },
+   "hint": "Procure o objeto do verbo ver no versículo.",
+   "learningObjective": "Sustentar no texto a visibilidade das obras.",
+   "evidence": [
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 5:14–16 sustenta sobre as obras do discípulo?",
+   "verseRef": "Mateus 5:15–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elas devem esconder-se para provar humildade"
+    },
+    {
+     "id": "b",
+     "text": "Elas compram a entrada no reino dos céus"
+    },
+    {
+     "id": "c",
+     "text": "Elas servem de palco para a fama pessoal"
+    },
+    {
+     "id": "d",
+     "text": "Elas iluminam pessoas e glorificam o Pai"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "ilumina todos os que estão na casa",
+   "feedbackCorrect": "Luz visível, gente alcançada e Pai glorificado: esse é o desenho de Jesus.",
+   "feedbackWrong": {
+    "a": "Esconder a candeia é o erro que Jesus corrige em 5:15.",
+    "b": "Obras são luz de discípulos, não moeda de entrada.",
+    "c": "A glória é do Pai que está nos céus, não do praticante."
+   },
+   "hint": "Siga a luz até o seu destino final em 5:16.",
+   "learningObjective": "Escolher a interpretação sustentada por 5:14–16.",
+   "evidence": [
+    "Mateus 5:15–16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da luz na Bíblia?",
+   "verseRef": "Mateus 5:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus se declara luz do mundo"
+    },
+    {
+     "id": "b",
+     "text": "Discípulos são chamados luz do mundo"
+    },
+    {
+     "id": "c",
+     "text": "Deus faz sua luz brilhar no coração"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Vocês são a luz do mundo",
+   "feedbackCorrect": "Cristo a fonte, discípulos o reflexo, corações iluminados pelo caminho.",
+   "feedbackWrong": {
+    "default": "Comece por Jesus, a fonte de toda essa luz."
+   },
+   "hint": "A fonte vem antes de qualquer reflexo dela.",
+   "learningObjective": "Ver a luz dos discípulos a partir de Cristo.",
+   "evidence": [
+    "Mateus 5:14",
+    "João 8:12",
+    "2 Coríntios 4:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:16, o que as pessoas farão ao Pai ao verem as boas obras?",
+   "verseRef": "Mateus 5:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "glorifiquem"
+    },
+    {
+     "id": "b",
+     "text": "ignorem"
+    },
+    {
+     "id": "c",
+     "text": "esqueçam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "O fim da luz não é reputação do discípulo: é Deus sendo honrado.",
+   "feedbackWrong": {
+    "b": "Boas obras vistas levam a Deus, não à indiferença.",
+    "c": "O efeito citado por Jesus é honra dada ao Pai."
+   },
+   "hint": "Pense na honra dirigida a alguém maior.",
+   "learningObjective": "Lembrar o efeito final das boas obras.",
+   "evidence": [
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:16 a 2 Coríntios 4:6?",
+   "verseRef": "Mateus 5:15–16",
+   "passageA": {
+    "ref": "Mateus 5:16"
+   },
+   "passageB": {
+    "ref": "2 Coríntios 4:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Luz de Deus no coração"
+    },
+    {
+     "id": "b",
+     "text": "Trevas vencem a luz"
+    },
+    {
+     "id": "c",
+     "text": "Obras escondem o Pai"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "resplandeça a sua luz diante dos homens",
+   "feedbackCorrect": "Paulo fala do Deus que fez luz brilhar no coração; o Sermão a mostra em obras.",
+   "feedbackWrong": {
+    "b": "Nos dois textos a luz de Deus vence o escuro.",
+    "c": "As obras fazem o Pai ser glorificado, não escondido."
+   },
+   "hint": "Veja onde a luz de Deus brilha segundo Paulo.",
+   "learningObjective": "Ligar a luz visível à obra de Deus no coração.",
+   "evidence": [
+    "Mateus 5:15–16",
+    "2 Coríntios 4:6"
+   ]
+  }
+ ]
+}

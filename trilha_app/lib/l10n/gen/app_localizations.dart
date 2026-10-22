@@ -4360,6 +4360,12 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 para reforçar} other{{count} para reforçar}}'**
   String homeReviewCaption(int count);
 
+  /// No description provided for @homeReviewMistakesCaption.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erros para reforçar'**
+  String get homeReviewMistakesCaption;
+
   /// No description provided for @homeReviewTitle.
   ///
   /// In pt, this message translates to:
@@ -14073,11 +14079,23 @@ abstract class AppLocalizations {
   /// **'Hoje: {insight}'**
   String weeklyReviewTodayInsight(String insight);
 
+  /// No description provided for @widgetBackToTrail.
+  ///
+  /// In pt, this message translates to:
+  /// **'Volte para a trilha'**
+  String get widgetBackToTrail;
+
   /// No description provided for @widgetBehindCaravan.
   ///
   /// In pt, this message translates to:
   /// **'Ficando para trás na caravana — caminhe hoje'**
   String get widgetBehindCaravan;
+
+  /// No description provided for @widgetDaysInRow.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}'**
+  String widgetDaysInRow(int count);
 
   /// No description provided for @widgetGoalDone.
   ///
@@ -14085,17 +14103,41 @@ abstract class AppLocalizations {
   /// **'Meta concluída'**
   String get widgetGoalDone;
 
+  /// No description provided for @widgetKeepStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mantenha sua sequência'**
+  String get widgetKeepStreak;
+
   /// No description provided for @widgetProgressScenes.
   ///
   /// In pt, this message translates to:
   /// **'{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}'**
   String widgetProgressScenes(int done, int goal);
 
+  /// No description provided for @widgetScenesLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{falta 1 cena} other{faltam {count} cenas}}'**
+  String widgetScenesLeft(int count);
+
   /// No description provided for @widgetScenesLeftToday.
   ///
   /// In pt, this message translates to:
   /// **'{count, plural, =1{Falta 1 cena hoje} other{Faltam {count} cenas hoje}}'**
   String widgetScenesLeftToday(int count);
+
+  /// No description provided for @widgetStartStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'Comece sua sequência'**
+  String get widgetStartStreak;
+
+  /// No description provided for @widgetStreakSafe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sequência garantida hoje'**
+  String get widgetStreakSafe;
 
   /// No description provided for @widgetTodayTitle.
   ///

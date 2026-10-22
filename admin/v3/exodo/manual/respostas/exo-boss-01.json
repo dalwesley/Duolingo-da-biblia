@@ -1,0 +1,920 @@
+{
+ "study": {
+  "passageRef": "Êxodo 7:3–7",
+  "passages": [
+   {
+    "ref": "Êxodo 7:1–13"
+   },
+   {
+    "ref": "Êxodo 7:14–21"
+   },
+   {
+    "ref": "Êxodo 8:1–15"
+   }
+  ],
+  "context": "Este desafio revisa os sinais no Egito, de Êxodo 7 a 8. Deus anuncia que o Egito saberá quem ele é, enquanto o faraó resiste a cada sinal.",
+  "keyword": "Libertação",
+  "keywordGloss": "Deus tira Israel do Egito mostrando ao faraó quem é o Senhor.",
+  "focusQuestion": "O que Deus já te mostrou que você ainda custa a levar a sério?",
+  "reflectionPrompts": [
+   "Deus se faz conhecer",
+   "Resistir aos sinais",
+   "Deus ouve e age"
+  ],
+  "facts": [
+   {
+    "text": "Deus anuncia que os egípcios saberão que ele é o Senhor.",
+    "evidenceRef": "Êxodo 7:5",
+    "evidenceSpan": "Os egípcios saberão que eu sou o Senhor"
+   },
+   {
+    "text": "O bordão de Arão devorou os bordões dos magos do Egito.",
+    "evidenceRef": "Êxodo 7:12",
+    "evidenceSpan": "o bordão de Arão devorou os bordões deles"
+   },
+   {
+    "text": "Toda a água do rio se tornou em sangue diante do faraó.",
+    "evidenceRef": "Êxodo 7:20",
+    "evidenceSpan": "toda a água do rio se tornou em sangue"
+   },
+   {
+    "text": "Arão estende a mão e rãs cobriram a terra do Egito.",
+    "evidenceRef": "Êxodo 8:6",
+    "evidenceSpan": "subiram rãs que cobriram a terra do Egito"
+   },
+   {
+    "text": "Moisés diz que não existe ninguém como o Senhor, nosso Deus.",
+    "evidenceRef": "Êxodo 8:10",
+    "evidenceSpan": "não existe ninguém como o Senhor, nosso Deus"
+   },
+   {
+    "text": "Ao ver alívio, o faraó endureceu ainda mais o coração.",
+    "evidenceRef": "Êxodo 8:15",
+    "evidenceSpan": "endureceu ainda mais seu coração"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sinais",
+    "gloss": "Atos visíveis pelos quais Deus se faz conhecer no Egito."
+   },
+   {
+    "term": "bordão",
+    "gloss": "Vara de Arão que vira serpente e devora as dos magos."
+   },
+   {
+    "term": "sangue",
+    "gloss": "Primeiro sinal nas águas do rio, que os egípcios não podem beber."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus envia Moisés e Arão ao faraó",
+    "evidenceRef": "Êxodo 7:1–2"
+   },
+   {
+    "label": "Deus anuncia sinais e livramento",
+    "evidenceRef": "Êxodo 7:3–5"
+   },
+   {
+    "label": "Bordão prevalece e rio vira sangue",
+    "evidenceRef": "Êxodo 7:12–20"
+   },
+   {
+    "label": "Rãs vêm, faraó pede e volta a endurecer",
+    "evidenceRef": "Êxodo 8:6–15"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Arão falará ao faraó para que ele deixe ir os filhos de Israel da sua terra.",
+    "marker": "para",
+    "evidenceRef": "Êxodo 7:2"
+   },
+   {
+    "kind": "contraste",
+    "text": "Os magos imitam o sinal, mas o bordão de Arão devora os bordões deles.",
+    "marker": "mas",
+    "evidenceRef": "Êxodo 7:12"
+   },
+   {
+    "kind": "resultado",
+    "text": "Depois do alívio das rãs, o faraó endurece ainda mais o coração.",
+    "marker": "porém",
+    "evidenceRef": "Êxodo 8:15"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Êxodo 14:18",
+    "bridge": "Egípcios saberão quem é Deus"
+   },
+   {
+    "ref": "Atos 7:36",
+    "bridge": "Sinais de Deus no Egito"
+   },
+   {
+    "ref": "Deuteronômio 6:22",
+    "bridge": "Sinais vistos por Israel"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "As pragas servem só para castigar, sem revelar quem Deus é.",
+    "why": "Deus diz que, ao agir, os egípcios saberão que ele é o Senhor em Êxodo 7:5."
+   },
+   {
+    "text": "Os magos do Egito têm o mesmo poder que Deus mostra por Arão.",
+    "why": "Eles imitam o sinal, mas o bordão de Arão devora os bordões deles em Êxodo 7:12."
+   },
+   {
+    "text": "O faraó cede de coração assim que vê o primeiro sinal de Deus.",
+    "why": "O texto repete que o coração dele se endureceu e ele não ouviu Moisés e Arão."
+   }
+  ],
+  "centralInsight": "Deus ouve e age",
+  "anchorQuestion": "Segundo Êxodo 7:5, o que os egípcios saberão quando Deus agir no Egito?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Êxodo 8:6, as rãs subiram e cobriram apenas o palácio do faraó, sem tocar o resto do Egito.",
+   "verseRef": "Êxodo 8:6",
+   "correctOptionId": "false",
+   "evidenceSpan": "subiram rãs que cobriram a terra do Egito",
+   "feedbackCorrect": "As rãs cobriram a terra do Egito, não só o palácio do faraó.",
+   "feedbackWrong": {
+    "true": "Releia Êxodo 8:6 e veja até onde as rãs chegaram no Egito."
+   },
+   "hint": "Veja o alcance das rãs no versículo.",
+   "learningObjective": "Observar o alcance do sinal das rãs no Egito.",
+   "evidence": [
+    "Êxodo 8:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Êxodo 8:6, toque o que subiu e cobriu a terra do Egito.",
+   "verseRef": "Êxodo 8:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "rãs"
+    },
+    {
+     "id": "b",
+     "text": "águas"
+    },
+    {
+     "id": "c",
+     "text": "terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "subiram rãs que cobriram a terra do Egito",
+   "feedbackCorrect": "Rãs sobem das águas e tomam casas, quartos e fornos do Egito.",
+   "feedbackWrong": {
+    "b": "As águas são o lugar de onde o sinal surge sobre a terra.",
+    "c": "Isso é o que fica coberto pelo sinal, não o que sobe."
+   },
+   "hint": "Procure quem se move sobre a terra.",
+   "learningObjective": "Identificar o sinal que cobre a terra do Egito.",
+   "evidence": [
+    "Êxodo 8:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Êxodo 7:7, quantos anos Moisés tinha quando falou ao faraó com Arão?",
+   "verseRef": "Êxodo 7:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quarenta anos"
+    },
+    {
+     "id": "b",
+     "text": "Oitenta anos"
+    },
+    {
+     "id": "c",
+     "text": "Cento e vinte anos"
+    },
+    {
+     "id": "d",
+     "text": "Trinta anos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Moisés estava com oitenta anos, e Arão, com oitenta e três",
+   "feedbackCorrect": "Moisés tinha oitenta anos, e Arão oitenta e três, diante do faraó.",
+   "feedbackWrong": {
+    "a": "Quarenta lembra outra fase da vida dele, não a idade dita aqui.",
+    "c": "Essa idade aparece no fim da vida de Moisés, não neste encontro.",
+    "d": "O texto é claro ao dar oitenta para Moisés neste momento."
+   },
+   "hint": "Leia as duas idades citadas no versículo.",
+   "learningObjective": "Observar a idade de Moisés no confronto com o faraó.",
+   "evidence": [
+    "Êxodo 7:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Êxodo 8:5–6 na ordem do texto.",
+   "verseRef": "Êxodo 8:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Estenda a mão com a sua vara sobre os rios"
+    },
+    {
+     "id": "b",
+     "text": "faça surgir rãs sobre a terra do Egito"
+    },
+    {
+     "id": "c",
+     "text": "subiram rãs que cobriram a terra do Egito"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "subiram rãs que cobriram a terra do Egito",
+   "feedbackCorrect": "Ordem sobre os rios, rãs surgindo e terra do Egito coberta.",
+   "feedbackWrong": {
+    "default": "Comece pela ordem a Arão; a terra coberta fecha a sequência."
+   },
+   "hint": "O primeiro trecho é a ordem dada a Arão.",
+   "learningObjective": "Reconhecer a sequência do sinal das rãs.",
+   "evidence": [
+    "Êxodo 8:5–6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Êxodo 7:21, o que os egípcios não podiam fazer com a água do rio?",
+   "verseRef": "Êxodo 7:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "beber"
+    },
+    {
+     "id": "b",
+     "text": "ver"
+    },
+    {
+     "id": "c",
+     "text": "tocar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "os egípcios não podiam beber a água dele",
+   "feedbackCorrect": "O rio que dava vida ao Egito vira água impossível de beber.",
+   "feedbackWrong": {
+    "b": "Eles veem o sinal; o problema é usar aquela água para viver.",
+    "c": "O texto fala de beber a água, não de tocar no rio ferido."
+   },
+   "hint": "Leia o uso diário da água citado no versículo.",
+   "learningObjective": "Lembrar o efeito do sangue nas águas para o Egito.",
+   "evidence": [
+    "Êxodo 7:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Êxodo 7:5 comunica que se liga a este contexto?",
+   "verseRef": "Êxodo 7:5",
+   "passageA": {
+    "ref": "Êxodo 7:5"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus ouve o clamor de Israel e age para libertar o povo do Egito."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus age e se revela"
+    },
+    {
+     "id": "b",
+     "text": "O faraó liberta por bondade"
+    },
+    {
+     "id": "c",
+     "text": "Israel sai sem Deus agir"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os egípcios saberão que eu sou o Senhor",
+   "feedbackCorrect": "Deus ouve, age no Egito e se faz conhecer como Senhor ao libertar.",
+   "feedbackWrong": {
+    "b": "O faraó resiste aos sinais, não liberta o povo por bondade.",
+    "c": "Tirar Israel do meio dos egípcios é ação declarada de Deus."
+   },
+   "hint": "Veja quem age e se faz conhecer no versículo.",
+   "learningObjective": "Ligar os sinais à ação libertadora de Deus.",
+   "evidence": [
+    "Êxodo 7:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Êxodo 7:10, toque em que o bordão de Arão se transformou diante do faraó.",
+   "verseRef": "Êxodo 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "serpente"
+    },
+    {
+     "id": "b",
+     "text": "bordão"
+    },
+    {
+     "id": "c",
+     "text": "oficiais"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ele se transformou em serpente",
+   "feedbackCorrect": "Lançado diante do faraó, o bordão de Arão vira serpente viva.",
+   "feedbackWrong": {
+    "b": "Isso é o objeto antes de ser lançado diante do faraó.",
+    "c": "Essas pessoas assistem ao sinal, não são o resultado dele."
+   },
+   "hint": "Leia o resultado do bordão lançado ao chão.",
+   "learningObjective": "Observar o sinal do bordão diante do faraó.",
+   "evidence": [
+    "Êxodo 7:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Êxodo 7:11–12 na ordem do texto.",
+   "verseRef": "Êxodo 7:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "o Faraó chamou os sábios e encantadores"
+    },
+    {
+     "id": "b",
+     "text": "cada um lançou seu bordão"
+    },
+    {
+     "id": "c",
+     "text": "o bordão de Arão devorou os bordões deles"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o bordão de Arão devorou os bordões deles",
+   "feedbackCorrect": "Magos chamados, bordões lançados e o de Arão devorando os outros.",
+   "feedbackWrong": {
+    "default": "Comece pelos magos chamados; o bordão de Arão fecha vencendo."
+   },
+   "hint": "O primeiro trecho traz o faraó chamando ajuda.",
+   "learningObjective": "Reconhecer a sequência do confronto dos bordões.",
+   "evidence": [
+    "Êxodo 7:11–12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Êxodo 8:15, depois que as rãs morreram e houve alívio, o faraó endureceu ainda mais o coração.",
+   "verseRef": "Êxodo 8:15",
+   "correctOptionId": "true",
+   "evidenceSpan": "endureceu ainda mais seu coração e não os ouviu",
+   "feedbackCorrect": "O alívio não gera obediência; o faraó volta a resistir a Deus.",
+   "feedbackWrong": {
+    "false": "Releia Êxodo 8:15 e veja o que o faraó faz ao ter alívio."
+   },
+   "hint": "Veja a reação depois do alívio das rãs.",
+   "learningObjective": "Compreender o padrão de resistência do faraó.",
+   "evidence": [
+    "Êxodo 8:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Êxodo 7:13, toque a palavrinha que abre a reação do faraó ao sinal.",
+   "verseRef": "Êxodo 7:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porém"
+    },
+    {
+     "id": "b",
+     "text": "coração"
+    },
+    {
+     "id": "c",
+     "text": "ouviu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porém, o coração de Faraó se endureceu",
+   "feedbackCorrect": "Apesar do sinal, o faraó se endurece e não ouve Moisés e Arão.",
+   "feedbackWrong": {
+    "b": "Isso é o que se endurece, não a virada da frase no início.",
+    "c": "Isso é o que o faraó não fez, não a virada da frase no início."
+   },
+   "hint": "É a primeira palavrinha do versículo.",
+   "learningObjective": "Reconhecer o marcador de contraste na reação do faraó.",
+   "evidence": [
+    "Êxodo 7:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Êxodo 7:22–23 mostra a reação do faraó ao rio em sangue?",
+   "verseRef": "Êxodo 7:22–23",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele ignora o sinal e volta para casa sem refletir"
+    },
+    {
+     "id": "b",
+     "text": "Ele se arrepende e manda Israel embora na hora"
+    },
+    {
+     "id": "c",
+     "text": "Ele pede a Moisés que reverta o sinal no rio"
+    },
+    {
+     "id": "d",
+     "text": "Ele reconhece o Senhor e oferece sacrifícios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nem mesmo isso considerou em seu coração",
+   "feedbackCorrect": "Ele vira as costas ao sinal e nem o considera no coração.",
+   "feedbackWrong": {
+    "b": "A saída de Israel não acontece depois desse sinal no rio.",
+    "c": "Pedido de reversão aparece com as rãs, não aqui no rio.",
+    "d": "Reconhecimento e culto não são a reação narrada neste ponto."
+   },
+   "hint": "Veja o que ele faz ao sair da presença deles.",
+   "learningObjective": "Relacionar o sinal no rio com a indiferença do faraó.",
+   "evidence": [
+    "Êxodo 7:22–23"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o anúncio em Êxodo 7:16–17 neste desafio?",
+   "verseRef": "Êxodo 7:16–17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus manda pedir a saída do povo para servi-lo"
+    },
+    {
+     "id": "b",
+     "text": "Faraó segue sem ouvir a ordem recebida"
+    },
+    {
+     "id": "c",
+     "text": "Deus anuncia sangue nas águas do rio"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Deixe ir o meu povo, para que me sirva no deserto",
+   "feedbackCorrect": "Pedido de saída, recusa até aqui e sinal anunciado no rio.",
+   "feedbackWrong": {
+    "default": "Comece pelo pedido de Deus; o sangue no rio fecha o anúncio."
+   },
+   "hint": "O sinal no rio vem depois do pedido recusado.",
+   "learningObjective": "Compreender ordem, recusa e sinal no confronto.",
+   "evidence": [
+    "Êxodo 7:16–17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Êxodo 8:13, o que aconteceu com as rãs depois que Moisés clamou?",
+   "verseRef": "Êxodo 8:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "morreram"
+    },
+    {
+     "id": "b",
+     "text": "voltaram"
+    },
+    {
+     "id": "c",
+     "text": "fugiram"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "as rãs morreram nas casas, nos pátios e nos campos",
+   "feedbackCorrect": "Deus faz segundo a palavra de Moisés, e as rãs morrem no Egito.",
+   "feedbackWrong": {
+    "b": "Elas não voltam vivas ao rio neste relato da retirada do sinal.",
+    "c": "O texto diz que morreram nas casas, pátios e campos do Egito."
+   },
+   "hint": "Leia o resultado do clamor de Moisés no versículo.",
+   "learningObjective": "Compreender que Deus também retira o sinal enviado.",
+   "evidence": [
+    "Êxodo 8:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Êxodo 7:5 a Êxodo 14:18?",
+   "verseRef": "Êxodo 7:5",
+   "passageA": {
+    "ref": "Êxodo 7:5"
+   },
+   "passageB": {
+    "ref": "Êxodo 14:18"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Egito saberá quem é Deus"
+    },
+    {
+     "id": "b",
+     "text": "Faraó vencerá no fim"
+    },
+    {
+     "id": "c",
+     "text": "Sinais escondem Deus do Egito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os egípcios saberão que eu sou o Senhor",
+   "feedbackCorrect": "Do primeiro anúncio ao mar, Deus se faz conhecer diante do Egito.",
+   "feedbackWrong": {
+    "b": "No mar, o exército do faraó é vencido pelo Senhor glorificado.",
+    "c": "Os sinais têm justamente o alvo de revelar quem Deus é."
+   },
+   "hint": "Compare o que o Egito virá a saber nos trechos.",
+   "learningObjective": "Relacionar os sinais ao conhecimento de Deus.",
+   "evidence": [
+    "Êxodo 7:5",
+    "Êxodo 14:18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Êxodo 8:10, toque a resposta do faraó sobre quando Moisés deve orar.",
+   "verseRef": "Êxodo 8:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Amanhã"
+    },
+    {
+     "id": "b",
+     "text": "Senhor"
+    },
+    {
+     "id": "c",
+     "text": "palavra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele respondeu: Amanhã",
+   "feedbackCorrect": "Mesmo afligido pelas rãs, o faraó empurra a oração para amanhã.",
+   "feedbackWrong": {
+    "b": "Esse nome aparece na fala de Moisés sobre quem é incomparável.",
+    "c": "Isso aparece na resposta de Moisés sobre o combinado, não na dele."
+   },
+   "hint": "É a primeira palavra da resposta dele.",
+   "learningObjective": "Observar a demora do faraó mesmo sob o sinal.",
+   "evidence": [
+    "Êxodo 8:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os fatos em Êxodo 8:13–15?",
+   "verseRef": "Êxodo 8:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Rãs mortas são ajuntadas em montes"
+    },
+    {
+     "id": "b",
+     "text": "A terra exala mau cheiro dos montes"
+    },
+    {
+     "id": "c",
+     "text": "Faraó endurece o coração ao ver alívio"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "endureceu ainda mais seu coração",
+   "feedbackCorrect": "Rãs em montes, mau cheiro na terra e coração ainda mais duro.",
+   "feedbackWrong": {
+    "default": "Comece pelas rãs ajuntadas; o coração duro fecha a cena."
+   },
+   "hint": "O coração do faraó é o fechamento da sequência.",
+   "learningObjective": "Compreender o encadeamento entre alívio e resistência.",
+   "evidence": [
+    "Êxodo 8:14–15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Êxodo 7:11–12 ensina que imitar um sinal coloca os magos no mesmo nível do poder de Deus.",
+   "verseRef": "Êxodo 7:11–12",
+   "correctOptionId": "false",
+   "evidenceSpan": "o bordão de Arão devorou os bordões deles",
+   "feedbackCorrect": "A imitação é engolida pelo sinal de Deus diante do faraó.",
+   "feedbackWrong": {
+    "true": "Releia o desfecho do confronto entre os bordões em Êxodo 7:12."
+   },
+   "hint": "Julgue a imitação pelo desfecho do sinal.",
+   "learningObjective": "Interpretar o limite dos magos diante de Deus.",
+   "evidence": [
+    "Êxodo 7:11–12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Êxodo 7:5, toque quem os egípcios saberão que Deus é ao agir no Egito.",
+   "verseRef": "Êxodo 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Israel"
+    },
+    {
+     "id": "c",
+     "text": "Egito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os egípcios saberão que eu sou o Senhor",
+   "feedbackCorrect": "Os sinais revelam ao Egito que o Deus de Israel é o Senhor.",
+   "feedbackWrong": {
+    "b": "Israel é o povo tirado do meio dos egípcios por Deus.",
+    "c": "Egito é quem deve vir a conhecer quem Deus é de verdade."
+   },
+   "hint": "Procure o nome pelo qual Deus se revela.",
+   "learningObjective": "Sustentar com o texto o alvo revelador dos sinais.",
+   "evidence": [
+    "Êxodo 7:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Êxodo 8:15 sustenta sobre o faraó diante das rãs?",
+   "verseRef": "Êxodo 8:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele quer alívio sem se render à ordem de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Ele se converte ao Senhor ao pedir oração a Moisés"
+    },
+    {
+     "id": "c",
+     "text": "Ele liberta Israel assim que as rãs começam a morrer"
+    },
+    {
+     "id": "d",
+     "text": "Ele reconhece que seus magos são maiores que Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "endureceu ainda mais seu coração e não os ouviu",
+   "feedbackCorrect": "Ele pede a retirada das rãs, mas endurece de novo com o alívio.",
+   "feedbackWrong": {
+    "b": "Pedir oração não vira obediência quando o alívio chega ao Egito.",
+    "c": "Depois das rãs mortas, ele não ouve e não deixa o povo ir.",
+    "d": "Os magos já mostraram limite diante do bordão de Arão."
+   },
+   "hint": "Compare o pedido dele com o que faz no alívio.",
+   "learningObjective": "Escolher a interpretação sustentada sobre o faraó.",
+   "evidence": [
+    "Êxodo 8:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela Deus se fazendo conhecer do Egito à história?",
+   "verseRef": "Êxodo 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus anuncia que o Egito saberá quem ele é"
+    },
+    {
+     "id": "b",
+     "text": "Bordão de Arão devora os bordões dos magos"
+    },
+    {
+     "id": "c",
+     "text": "Estêvão resume sinais e prodígios no Egito"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Os egípcios saberão que eu sou o Senhor",
+   "feedbackCorrect": "Anúncio, prevalência do bordão e memória dos sinais em Atos 7.",
+   "feedbackWrong": {
+    "default": "Siga do anúncio em Êxodo 7 à memória de Estêvão em Atos 7."
+   },
+   "hint": "Estêvão é o ponto de chegada dessa sequência.",
+   "learningObjective": "Ver os sinais como fio contado na Bíblia.",
+   "evidence": [
+    "Êxodo 7:5",
+    "Atos 7:36"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Êxodo 7:3, o que Deus multiplicará na terra do Egito junto às maravilhas?",
+   "verseRef": "Êxodo 7:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "sinais"
+    },
+    {
+     "id": "b",
+     "text": "exércitos"
+    },
+    {
+     "id": "c",
+     "text": "templos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "multiplicarei na terra do Egito os meus sinais e maravilhas",
+   "feedbackCorrect": "Muitos atos de Deus mostrarão ao Egito quem é o Senhor.",
+   "feedbackWrong": {
+    "b": "Exércitos de Israel só saem depois, não são multiplicados aqui.",
+    "c": "Templos não fazem parte do anúncio de Deus sobre o Egito."
+   },
+   "hint": "Leia o que acompanha maravilhas na fala de Deus.",
+   "learningObjective": "Lembrar o termo que nomeia os atos de Deus no Egito.",
+   "evidence": [
+    "Êxodo 7:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Êxodo 8:10 a Atos 7:36?",
+   "verseRef": "Êxodo 8:10",
+   "passageA": {
+    "ref": "Êxodo 8:10"
+   },
+   "passageB": {
+    "ref": "Atos 7:36"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sinais revelam o único Deus"
+    },
+    {
+     "id": "b",
+     "text": "Moisés age sem Deus no Egito"
+    },
+    {
+     "id": "c",
+     "text": "Faraó conduz a saída de Israel"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não existe ninguém como o Senhor, nosso Deus",
+   "feedbackCorrect": "Estêvão resume Moisés fazendo prodígios e sinais de Deus no Egito.",
+   "feedbackWrong": {
+    "b": "Atos liga os sinais à ação de Deus por meio de Moisés.",
+    "c": "Quem conduz a saída é Deus, contra a resistência do faraó."
+   },
+   "hint": "Veja como Estêvão resume os sinais do Egito.",
+   "learningObjective": "Ligar os sinais do Egito à memória de Estêvão.",
+   "evidence": [
+    "Êxodo 8:10",
+    "Atos 7:36"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Êxodo 8:8, toque o que o faraó promete deixar o povo fazer se as rãs saírem.",
+   "verseRef": "Êxodo 8:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "sacrifícios"
+    },
+    {
+     "id": "b",
+     "text": "rãs"
+    },
+    {
+     "id": "c",
+     "text": "povo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que ofereça sacrifícios ao Senhor",
+   "feedbackCorrect": "Ele promete soltar o povo para sacrificar, mas não cumpre depois.",
+   "feedbackWrong": {
+    "b": "Isso é o que ele quer afastado de si e do seu povo.",
+    "c": "Isso é quem ele promete deixar ir, não o que farão."
+   },
+   "hint": "Procure a ação ligada ao culto ao Senhor.",
+   "learningObjective": "Sustentar com o texto a promessa não cumprida do faraó.",
+   "evidence": [
+    "Êxodo 8:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o ciclo do faraó diante dos sinais de Deus?",
+   "verseRef": "Êxodo 8:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Moisés clama e as rãs morrem no Egito"
+    },
+    {
+     "id": "b",
+     "text": "Faraó volta a endurecer o coração no alívio"
+    },
+    {
+     "id": "c",
+     "text": "Estêvão conta os sinais feitos no Egito"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "as rãs morreram nas casas, nos pátios e nos campos",
+   "feedbackCorrect": "Sinal retirado, coração de novo duro e memória dos sinais em Atos.",
+   "feedbackWrong": {
+    "default": "Siga da morte das rãs à dureza, e dela à memória em Atos."
+   },
+   "hint": "A memória de Estêvão fecha essa sequência maior.",
+   "learningObjective": "Ver o ciclo de resistência dentro da história maior.",
+   "evidence": [
+    "Êxodo 8:13",
+    "Atos 7:36"
+   ]
+  }
+ ]
+}

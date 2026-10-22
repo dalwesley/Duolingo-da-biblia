@@ -1,0 +1,132 @@
+Escreva a cena "ms-04-desafio" da trilha "missao" (Missão e Evangelismo).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "missao",
+  "title": "Missão e Evangelismo",
+  "description": "Anunciar Cristo — testemunho, discipulado e envio.",
+  "realm": "vida-crista"
+ },
+ "block": "Missão",
+ "mission": {
+  "slug": "ms-04-desafio",
+  "title": "Desafio: Enviados por Jesus",
+  "type": "boss",
+  "intro": "Revise a comissão, o poder do Espírito e a multiplicação de discípulos.",
+  "hookRef": "Mateus 28; Atos 1; 2Timóteo 2",
+  "hookNote": "Revise a comissão, o poder do Espírito e a multiplicação de discípulos.",
+  "centralInsight": "O que este treino pede na prática?",
+  "objective": "Mateus 28; Atos 1; 2Timóteo 2"
+ },
+ "v2": {
+  "passageRef": "Mateus 28; Atos 1; 2Timóteo 2",
+  "context": "Revise a comissão, o poder do Espírito e a multiplicação de discípulos.",
+  "keyword": "Enviados",
+  "verseRefs": [
+   "Mateus 28:19; Atos 1:8; 2 Timóteo 2:2"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "ms-01-comissao",
+   "title": "A grande comissão",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Mateus 28:15–20"
+  },
+  {
+   "slug": "ms-02-testemunho",
+   "title": "Testemunhas de Cristo",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Atos 1:5–11"
+  },
+  {
+   "slug": "ms-03-discipular",
+   "title": "Discipular as nações",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "2 Timóteo 2:1–5"
+  }
+ ],
+ "ranges": [
+  "Mateus 28:15–20",
+  "Atos 1:5–11",
+  "2 Timóteo 2:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 28:15",
+   "text": "E eles, recebendo o dinheiro, agiram conforme as instruções que receberam. E essa informação se propagou entre os judeus até os dias atuais."
+  },
+  {
+   "ref": "Mateus 28:16",
+   "text": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado."
+  },
+  {
+   "ref": "Mateus 28:17",
+   "text": "Quando o viram, adoraram-no; mas alguns hesitaram."
+  },
+  {
+   "ref": "Mateus 28:18",
+   "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra."
+  },
+  {
+   "ref": "Mateus 28:19",
+   "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+  },
+  {
+   "ref": "Mateus 28:20",
+   "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+  },
+  {
+   "ref": "Atos 1:5",
+   "text": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias."
+  },
+  {
+   "ref": "Atos 1:6",
+   "text": "Então, os que estavam reunidos lhe perguntaram: Senhor, é este o tempo em que restaurarás o reino a Israel?"
+  },
+  {
+   "ref": "Atos 1:7",
+   "text": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade;"
+  },
+  {
+   "ref": "Atos 1:8",
+   "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+  },
+  {
+   "ref": "Atos 1:9",
+   "text": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista."
+  },
+  {
+   "ref": "Atos 1:10",
+   "text": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco."
+  },
+  {
+   "ref": "Atos 1:11",
+   "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+  },
+  {
+   "ref": "2 Timóteo 2:1",
+   "text": "Fortifica-te, pois, meu filho, na graça que está em Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 2:2",
+   "text": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros."
+  },
+  {
+   "ref": "2 Timóteo 2:3",
+   "text": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 2:4",
+   "text": "Ninguém que milita se envolve em assuntos desta vida, pois o seu objetivo é agradar àquele que o recrutou para a batalha."
+  },
+  {
+   "ref": "2 Timóteo 2:5",
+   "text": "E, se alguém também compete, não é coroado se não o fizer de acordo com as normas."
+  }
+ ]
+}
+</cena>

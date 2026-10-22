@@ -1,0 +1,67 @@
+Escreva a cena "lc-02-misericordia" da trilha "lucas" (Lucas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "lucas",
+  "title": "Lucas",
+  "description": "O Salvador dos perdidos — misericórdia e o caminho ao pai.",
+  "realm": "novo-testamento"
+ },
+ "block": "Lucas",
+ "mission": {
+  "slug": "lc-02-misericordia",
+  "title": "A misericórdia que busca",
+  "type": "lesson",
+  "intro": "Lucas destaca a alegria de Deus em buscar pecadores e chama seus filhos a amar o próximo com misericórdia.",
+  "hookRef": "A misericórdia que busca",
+  "hookNote": "Lucas destaca a alegria de Deus em buscar pecadores e chama seus filhos a amar o próximo com misericórdia.",
+  "centralInsight": "As parábolas da ovelha, da moeda e do filho perdido revelam o coração de Deus. Jesus recebe pecadores e os chama ao arrependimento.",
+  "objective": "Parábolas e perdão"
+ },
+ "v2": {
+  "passageRef": "A misericórdia que busca",
+  "context": "Lucas destaca a alegria de Deus em buscar pecadores e chama seus filhos a amar o próximo com misericórdia.",
+  "keyword": "Misericórdia",
+  "verseRefs": [
+   "Lucas 15:7"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lucas 15:4–10"
+ ],
+ "verses": [
+  {
+   "ref": "Lucas 15:4",
+   "text": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la?"
+  },
+  {
+   "ref": "Lucas 15:5",
+   "text": "E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo."
+  },
+  {
+   "ref": "Lucas 15:6",
+   "text": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida."
+  },
+  {
+   "ref": "Lucas 15:7",
+   "text": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento."
+  },
+  {
+   "ref": "Lucas 15:8",
+   "text": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la?"
+  },
+  {
+   "ref": "Lucas 15:9",
+   "text": "E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a dracma que tinha perdido."
+  },
+  {
+   "ref": "Lucas 15:10",
+   "text": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende."
+  }
+ ]
+}
+</cena>

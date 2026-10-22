@@ -1,0 +1,67 @@
+Escreva a cena "ct-03-beijos" da trilha "cantares" (Cantares).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "cantares",
+  "title": "Cantares",
+  "description": "Amor fiel — poesia da aliança e do desejo santo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A busca",
+ "mission": {
+  "slug": "ct-03-beijos",
+  "title": "Melhor do que o vinho",
+  "type": "lesson",
+  "intro": "O cântico não começa com regra. Começa com desejo: a amada quer a boca, o nome e a casa do amado.",
+  "hookRef": "Cantares 1:2–4",
+  "hookNote": "Amor, aqui, não é ideia. É presença pedida: beijo, perfume, nome e aposentos.",
+  "centralInsight": "O amor deseja a presença",
+  "objective": "Sair sabendo que o cântico abre pelo desejo da presença do amado."
+ },
+ "v2": {
+  "passageRef": "Cantares 1:2–4",
+  "context": "A amada quer beijos, nome derramado e entrada nos aposentos do rei.",
+  "keyword": "Presença",
+  "verseRefs": [
+   "Cantares 1:2–4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Cantares 1:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Cantares 1:1",
+   "text": "Cântico dos Cânticos de Salomão."
+  },
+  {
+   "ref": "Cantares 1:2",
+   "text": "Beije-me com os beijos da tua boca, pois o teu amor é melhor do que o vinho."
+  },
+  {
+   "ref": "Cantares 1:3",
+   "text": "Os teus perfumes têm um aroma agradável; assim como o perfume derramado é o teu nome; por isso, as jovens te amam."
+  },
+  {
+   "ref": "Cantares 1:4",
+   "text": "Leva-me contigo; apressemo-nos. O rei me trouxe para suas recâmaras; em você nos alegraremos e nos regozijaremos; lembraremos do seu amor mais do que do vinho; não é sem razão que os justos te amam."
+  },
+  {
+   "ref": "Cantares 1:5",
+   "text": "Sou morena e formosa, ó filhas de Jerusalém, como as tendas de Quedar, como as cortinas de Salomão."
+  },
+  {
+   "ref": "Cantares 1:6",
+   "text": "Não olhem para mim por causa da minha cor morena, pois o sol me queimou. Os filhos da minha mãe se indignaram contra mim e me designaram para cuidar das vinhas; a minha própria vinha, eu não guardei."
+  },
+  {
+   "ref": "Cantares 1:7",
+   "text": "Diga-me, ó amado da minha alma: onde apascentas o teu rebanho? onde o fazes repousar ao meio-dia? Para que eu não ande vagando junto aos rebanhos dos teus companheiros?"
+  }
+ ]
+}
+</cena>

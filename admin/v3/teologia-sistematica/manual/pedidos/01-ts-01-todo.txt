@@ -1,0 +1,59 @@
+Escreva a cena "ts-01-todo" da trilha "teologia-sistematica" (Teologia Sistemática).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "teologia-sistematica",
+  "title": "Teologia Sistemática",
+  "description": "Doutrina organizada: Deus, salvação, igreja e últimas coisas.",
+  "realm": "teologia"
+ },
+ "block": "Teologia Sistemática",
+ "mission": {
+  "slug": "ts-01-todo",
+  "title": "A Bíblia como um todo",
+  "type": "lesson",
+  "intro": "A teologia sistemática reúne o que a Bíblia ensina sobre temas importantes.",
+  "hookRef": "2 Timóteo 3:16-17",
+  "hookNote": "A teologia sistemática reúne o que a Bíblia ensina sobre temas importantes.",
+  "centralInsight": "Esta missão apresenta a bíblia como um todo de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor…",
+  "objective": "2 Timóteo 3:16-17"
+ },
+ "v2": {
+  "passageRef": "2 Timóteo 3:16-17",
+  "context": "A teologia sistemática reúne o que a Bíblia ensina sobre temas importantes.",
+  "keyword": "Bíblia",
+  "verseRefs": [
+   "2 Timóteo 3:16–17"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "2 Timóteo 3:13–17"
+ ],
+ "verses": [
+  {
+   "ref": "2 Timóteo 3:13",
+   "text": "Contudo, os homens perversos e impostores irão de mal a pior, enganando e sendo enganados."
+  },
+  {
+   "ref": "2 Timóteo 3:14",
+   "text": "Tu, porém, permanece firme nas coisas que aprendeste e das quais te tornaste plenamente ciente, sabendo de quem as aprendeste."
+  },
+  {
+   "ref": "2 Timóteo 3:15",
+   "text": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 3:16",
+   "text": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;"
+  },
+  {
+   "ref": "2 Timóteo 3:17",
+   "text": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,64 @@
+Escreva a cena "fm-03-comunidade" da trilha "familia" (Família e Relacionamentos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "familia",
+  "title": "Família e Relacionamentos",
+  "description": "Casamento, filhos e comunidade — viver o evangelho em casa.",
+  "realm": "vida-crista"
+ },
+ "block": "Família",
+ "mission": {
+  "slug": "fm-03-comunidade",
+  "title": "Uma família em Cristo",
+  "type": "lesson",
+  "intro": "A igreja é uma comunidade que leva os fardos uns dos outros e faz o bem, especialmente aos da fé.",
+  "hookRef": "Gálatas 6:2,10",
+  "hookNote": "A igreja é uma comunidade que leva os fardos uns dos outros e faz o bem, especialmente aos da fé.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "Gálatas 6:2,10"
+ },
+ "v2": {
+  "passageRef": "Gálatas 6:2,10",
+  "context": "A igreja é uma comunidade que leva os fardos uns dos outros e faz o bem, especialmente aos da fé.",
+  "keyword": "Família",
+  "verseRefs": [
+   "Gálatas 6:2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Gálatas 6:1–5",
+  "Gálatas 6:10"
+ ],
+ "verses": [
+  {
+   "ref": "Gálatas 6:1",
+   "text": "Irmãos, se alguém for surpreendido em alguma falta, vós, que sois espirituais, deveis restaurá-lo com espírito de brandura, cuidando de vós mesmos, para que não sejais também tentados."
+  },
+  {
+   "ref": "Gálatas 6:2",
+   "text": "Levem as cargas uns dos outros e, assim, estarão cumprindo a lei de Cristo."
+  },
+  {
+   "ref": "Gálatas 6:3",
+   "text": "Pois, se alguém considera que é alguma coisa, não sendo nada, engana a si mesmo."
+  },
+  {
+   "ref": "Gálatas 6:4",
+   "text": "Cada um prove suas próprias obras e, assim, terá motivo de gloriar-se unicamente em si e não em outro."
+  },
+  {
+   "ref": "Gálatas 6:5",
+   "text": "Porque cada um carregará o seu próprio fardo."
+  },
+  {
+   "ref": "Gálatas 6:10",
+   "text": "Assim, enquanto tivermos a oportunidade, façamos o bem a todos, mas principalmente aos que pertencem à família da fé."
+  }
+ ]
+}
+</cena>

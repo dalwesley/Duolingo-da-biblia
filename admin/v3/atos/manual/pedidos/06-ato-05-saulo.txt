@@ -1,0 +1,71 @@
+Escreva a cena "ato-05-saulo" da trilha "atos" (Atos dos Apóstolos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Até os confins",
+ "mission": {
+  "slug": "ato-05-saulo",
+  "title": "Saulo encontrado",
+  "type": "lesson",
+  "intro": "O perseguidor encontra o Senhor. Graça interrompe violência e chama um vaso para as nações.",
+  "hookRef": "Atos 9:15–16",
+  "hookNote": "No caminho de Damasco, Jesus identifica-se com a igreja perseguida (“por que me persegues?”). A conversão de Saulo não é só experiência — é…",
+  "centralInsight": "Graça alcança inimigos",
+  "objective": "Há alguém que considero “impossível” demais para a graça de Deus?"
+ },
+ "v2": {
+  "passageRef": "Atos 9:15–16",
+  "context": "No caminho de Damasco, Jesus identifica-se com a igreja perseguida (“por que me persegues?”). A conversão de Saulo não é só experiência — é vocação: levar o Nome aos gentios, reis e Israel, com sofrimento no caminho. Ananias aprende a acolher o inimigo transformado. O evangelho cria testemunhas improváveis.",
+  "keyword": "Conversão",
+  "verseRefs": [
+   "Atos 9:15–16"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 9:12–19"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 9:12",
+   "text": "E viu em uma visão um homem chamado Ananias entrar e impor-lhe as mãos, para que recuperasse a vista."
+  },
+  {
+   "ref": "Atos 9:13",
+   "text": "E Ananias, porém, respondeu: Senhor, de muitas coisas ouvi a respeito deste homem, quantos males ele tem feito aos teus santos em Jerusalém;"
+  },
+  {
+   "ref": "Atos 9:14",
+   "text": "E aqui ele tem a autorização dos principais sacerdotes para prender todos os que invocam o teu nome."
+  },
+  {
+   "ref": "Atos 9:15",
+   "text": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel."
+  },
+  {
+   "ref": "Atos 9:16",
+   "text": "Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome."
+  },
+  {
+   "ref": "Atos 9:17",
+   "text": "E Ananias foi, entrou na casa e, impondo-lhe as mãos, disse: Irmão Saulo, o Senhor me enviou, isto é, o próprio Jesus que te apareceu no caminho por onde vinhas, para que recuperasses a visão e ficasses cheio do Espírito Santo."
+  },
+  {
+   "ref": "Atos 9:18",
+   "text": "E imediatamente, como que umas escamas caíram dos seus olhos, e ele passou a ver; a seguir, levantando-se foi batizado."
+  },
+  {
+   "ref": "Atos 9:19",
+   "text": "E, depois de ter se alimentado, sentiu-se fortalecido. Então, permaneceu em Damasco alguns dias com os discípulos."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,59 @@
+Escreva a cena "mq-03-monte" da trilha "miqueias" (Miqueias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "miqueias",
+  "title": "Miqueias",
+  "description": "Agir com justiça, amar a misericórdia, andar com Deus.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A promessa",
+ "mission": {
+  "slug": "mq-03-monte",
+  "title": "O monte da casa",
+  "type": "lesson",
+  "intro": "Miquéias vê povos subindo ao monte de Jeová para aprender os caminhos dele.",
+  "hookRef": "Miquéias 4:1–2",
+  "hookNote": "A paz que o livro espera não começa na força das nações. Começa na instrução que sai de Sião.",
+  "centralInsight": "A paz das nações começa na instrução",
+  "objective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová."
+ },
+ "v2": {
+  "passageRef": "Miquéias 4:1–2",
+  "context": "Povos sobem ao monte, aprendem os caminhos e andam nas veredas de Jeová.",
+  "keyword": "Monte",
+  "verseRefs": [
+   "Miquéias 4:1–2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Miqueias 4:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Miqueias 4:1",
+   "text": "Nos últimos dias, o monte da casa do Senhor será estabelecido no cimo dos montes e se exaltará acima das colinas, e os povos afluirão a ele."
+  },
+  {
+   "ref": "Miqueias 4:2",
+   "text": "E muitas nações irão e dirão: Venham, subamos ao monte do Senhor e à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos pelas suas veredas; porque de Sião procederá a lei, e a palavra do Senhor, de Jerusalém."
+  },
+  {
+   "ref": "Miqueias 4:3",
+   "text": "E julgará entre muitos povos e corrigirá nações poderosas e longínquas; converterão suas espadas em relhas de arados e suas lanças em podadeiras. Uma nação não levantará a espada contra outra nação, nem aprenderão mais a guerra."
+  },
+  {
+   "ref": "Miqueias 4:4",
+   "text": "Mas cada um se sentará debaixo da sua videira e debaixo da sua figueira, e não haverá quem os espante porque a boca do Senhor dos Exércitos o declarou."
+  },
+  {
+   "ref": "Miqueias 4:5",
+   "text": "Porque todos os povos andam, cada um segundo o nome de seu deus; mas, quanto a nós, andaremos em nome do Senhor, nosso Deus, para todo o sempre."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,120 @@
+Escreva a cena "or-04-desafio" da trilha "oracao" (Oração).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "oracao",
+  "title": "Oração",
+  "description": "Aprender a orar com Jesus, os Salmos e a igreja primitiva.",
+  "realm": "vida-crista"
+ },
+ "block": "Oração",
+ "mission": {
+  "slug": "or-04-desafio",
+  "title": "Desafio: Vida de oração",
+  "type": "boss",
+  "intro": "Revise a oração ensinada por Jesus, a perseverança e o auxílio do Espírito.",
+  "hookRef": "Mateus 6; Lucas 18; Romanos 8",
+  "hookNote": "Revise a oração ensinada por Jesus, a perseverança e o auxílio do Espírito.",
+  "centralInsight": "O que este treino pede na prática?",
+  "objective": "Mateus 6; Lucas 18; Romanos 8"
+ },
+ "v2": {
+  "passageRef": "Mateus 6; Lucas 18; Romanos 8",
+  "context": "Revise a oração ensinada por Jesus, a perseverança e o auxílio do Espírito.",
+  "keyword": "Vida",
+  "verseRefs": [
+   "Mateus 6:9; Lucas 18:1; Romanos 8:26"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "or-01-pai-nosso",
+   "title": "A prática do Pai Nosso",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Mateus 6:9-13"
+  },
+  {
+   "slug": "or-02-persistencia",
+   "title": "Persistir em oração",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Lucas 18:1-8"
+  },
+  {
+   "slug": "or-03-espirito",
+   "title": "O Espírito nos ajuda",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Romanos 8:26-27"
+  }
+ ],
+ "ranges": [
+  "Mateus 6:9–13",
+  "Lucas 18:1–8",
+  "Romanos 8:26–27"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 6:9",
+   "text": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+  },
+  {
+   "ref": "Mateus 6:10",
+   "text": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+  },
+  {
+   "ref": "Mateus 6:11",
+   "text": "Dá-nos hoje o nosso pão de cada dia;"
+  },
+  {
+   "ref": "Mateus 6:12",
+   "text": "E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;"
+  },
+  {
+   "ref": "Mateus 6:13",
+   "text": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!"
+  },
+  {
+   "ref": "Lucas 18:1",
+   "text": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+  },
+  {
+   "ref": "Lucas 18:2",
+   "text": "Havia em certa cidade um juiz que não temia a Deus, nem respeitava homem algum."
+  },
+  {
+   "ref": "Lucas 18:3",
+   "text": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+  },
+  {
+   "ref": "Lucas 18:4",
+   "text": "Por algum tempo, ele não quis atendê-la; mas, depois, disse para si mesmo: Embora eu não tema a Deus, nem tenha respeito por homem algum,"
+  },
+  {
+   "ref": "Lucas 18:5",
+   "text": "Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar"
+  },
+  {
+   "ref": "Lucas 18:6",
+   "text": "E disse o Senhor: Ouvi o que diz o juiz injusto. Considerai o que ele diz."
+  },
+  {
+   "ref": "Lucas 18:7",
+   "text": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+  },
+  {
+   "ref": "Lucas 18:8",
+   "text": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?"
+  },
+  {
+   "ref": "Romanos 8:26",
+   "text": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+  },
+  {
+   "ref": "Romanos 8:27",
+   "text": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+  }
+ ]
+}
+</cena>

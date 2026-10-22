@@ -1,0 +1,128 @@
+Escreva a cena "jo-prova-02-perda-e-adoracao" da trilha "jo" (Jó).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "jo",
+  "title": "Jó",
+  "description": "Sofrimento, fé e o mistério de Deus.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Prova",
+ "mission": {
+  "slug": "jo-prova-02-perda-e-adoracao",
+  "title": "Perda e adoração",
+  "type": "lesson",
+  "intro": "O Senhor o deu; o Senhor o tomou.",
+  "hookRef": "Jó 1",
+  "hookNote": "O Senhor o deu; o Senhor o tomou.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre perda?"
+ },
+ "v2": {
+  "passageRef": "Jó 1",
+  "context": "O Senhor o deu; o Senhor o tomou.",
+  "keyword": "Perda",
+  "verseRefs": [
+   "Jó 1:21"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Jó 1:1–22",
+  "Jó 1:21"
+ ],
+ "verses": [
+  {
+   "ref": "Jó 1:1",
+   "text": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal."
+  },
+  {
+   "ref": "Jó 1:2",
+   "text": "Nasceram-lhe sete filhos e três filhas."
+  },
+  {
+   "ref": "Jó 1:3",
+   "text": "Seu gado consistia em sete mil ovelhas, três mil camelos, quinhentas juntas de bois e quinhentas jumentas; havia também um grande número de servos, de maneira que esse homem era o maior de todos os do Oriente."
+  },
+  {
+   "ref": "Jó 1:4",
+   "text": "E os filhos de Jó realizavam banquetes em cada uma das casas, no dia de cada um deles; e enviavam convites às suas três irmãs para que comessem e bebessem com eles."
+  },
+  {
+   "ref": "Jó 1:5",
+   "text": "Sucedendo os dias de seus banquetes, Jó chamava seus filhos e os santificava; levantava-se de madrugada e oferecia holocaustos conforme o número de todos eles, pois pensava: \"Talvez meus filhos tenham pecado e blasfemado contra Deus em seu coração.\" Assim Jó fazia continuamente."
+  },
+  {
+   "ref": "Jó 1:6",
+   "text": "Num dia em que os filhos de Deus vieram apresentar-se diante do Senhor, Satanás também se apresentou entre eles."
+  },
+  {
+   "ref": "Jó 1:7",
+   "text": "Então, o Senhor perguntou a Satanás: De onde você vem? Satanás respondeu ao Senhor: De vagar pela terra e percorrê-la."
+  },
+  {
+   "ref": "Jó 1:8",
+   "text": "Então o Senhor perguntou a Satanás: Você notou o meu servo Jó? Pois não há ninguém na terra semelhante a ele, homem íntegro e reto, temente a Deus e que se desvia do mal."
+  },
+  {
+   "ref": "Jó 1:9",
+   "text": "Então, Satanás respondeu ao Senhor e disse: Será que Jó teme a Deus em vão?"
+  },
+  {
+   "ref": "Jó 1:10",
+   "text": "Acaso não o cercaste a ele, à sua casa e a tudo o que possui? A obra de suas mãos abençoaste, e os seus bens têm se multiplicado na terra."
+  },
+  {
+   "ref": "Jó 1:11",
+   "text": "Mas estende a mão e toca em tudo o que ele possui, e verás se não blasfema contra ti à tua face!"
+  },
+  {
+   "ref": "Jó 1:12",
+   "text": "E o Senhor disse a Satanás: Eis que tudo o que ele possui está em tuas mãos; somente contra ele não estendas a mão. E Satanás saiu da presença do Senhor."
+  },
+  {
+   "ref": "Jó 1:13",
+   "text": "E aconteceu um dia em que os filhos e filhas de Jó estavam comendo e bebendo vinho na casa do irmão mais velho."
+  },
+  {
+   "ref": "Jó 1:14",
+   "text": "Então, um mensageiro veio a Jó e disse: \"Os bois lavravam e as jumentas pasciam junto a eles.\""
+  },
+  {
+   "ref": "Jó 1:15",
+   "text": "E os sabeus atacaram, levaram os bois e mataram os servos à espada; somente eu escapei para trazer-te a nova."
+  },
+  {
+   "ref": "Jó 1:16",
+   "text": "Enquanto ele ainda falava, veio outro e disse: O fogo de Deus caiu do céu e queimou as ovelhas juntamente com os servos, consumindo-os; só eu escapei para trazer-te a notícia."
+  },
+  {
+   "ref": "Jó 1:17",
+   "text": "Enquanto ainda falava esse, veio outro e disse: Os caldeus se dividiram em três bandos, atacaram os camelos, levaram-nos e mataram os servos a fio de espada; eu sou o único que escapei para trazer a nova."
+  },
+  {
+   "ref": "Jó 1:18",
+   "text": "Enquanto ele ainda falava veio outro e disse: \"Teus filhos e tuas filhas estavam comendo e bebendo vinho na casa do irmão primogênito.\""
+  },
+  {
+   "ref": "Jó 1:19",
+   "text": "Eis que se levantou um grande vento do deserto e atingiu os quatro cantos da casa, a qual desabou sobre os jovens, e morreram; eu escapei apenas para trazer-te a nova."
+  },
+  {
+   "ref": "Jó 1:20",
+   "text": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou."
+  },
+  {
+   "ref": "Jó 1:21",
+   "text": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!"
+  },
+  {
+   "ref": "Jó 1:22",
+   "text": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta."
+  }
+ ]
+}
+</cena>

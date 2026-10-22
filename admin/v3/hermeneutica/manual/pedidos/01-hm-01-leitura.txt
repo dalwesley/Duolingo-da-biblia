@@ -1,0 +1,67 @@
+Escreva a cena "hm-01-leitura" da trilha "hermeneutica" (Hermenêutica).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "hermeneutica",
+  "title": "Hermenêutica",
+  "description": "Como ler e interpretar a Escritura com fidelidade e clareza.",
+  "realm": "teologia"
+ },
+ "block": "Hermenêutica",
+ "mission": {
+  "slug": "hm-01-leitura",
+  "title": "Ler com atenção",
+  "type": "lesson",
+  "intro": "Interpretar bem começa ouvindo o que o texto realmente diz.",
+  "hookRef": "Neemias 8:8",
+  "hookNote": "Interpretar bem começa ouvindo o que o texto realmente diz.",
+  "centralInsight": "Esta missão apresenta ler com atenção de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor a Deu…",
+  "objective": "Neemias 8:8"
+ },
+ "v2": {
+  "passageRef": "Neemias 8:8",
+  "context": "Interpretar bem começa ouvindo o que o texto realmente diz.",
+  "keyword": "Ler",
+  "verseRefs": [
+   "Neemias 8:8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Neemias 8:5–11"
+ ],
+ "verses": [
+  {
+   "ref": "Neemias 8:5",
+   "text": "E Esdras abriu o livro à vista de todo o povo, pois estava em um lugar elevado; ao abri-lo, todo o povo se levantou"
+  },
+  {
+   "ref": "Neemias 8:6",
+   "text": "E Esdras bendisse ao Senhor, o grande Deus. E todo o povo respondeu: Amém! Amém! levantando as mãos, inclinando-se, adoraram ao Senhor com o rosto em terra."
+  },
+  {
+   "ref": "Neemias 8:7",
+   "text": "E Jesua, Bani, Serebias, Jamim, Acube, Sabetai, Hodias, Maaséias, Quelita, Azarias, Jozabade, Hanã, Pelaías e os levitas ensinavam o povo na Lei; e o povo estava no seu lugar."
+  },
+  {
+   "ref": "Neemias 8:8",
+   "text": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido."
+  },
+  {
+   "ref": "Neemias 8:9",
+   "text": "E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que ensinavam todo o povo disseram: \"Este dia é consagrado ao Senhor, vosso Deus; pelo que não se entristeçam nem chorem, pois todo o povo chorava, ao ouvir as palavras da Lei.\""
+  },
+  {
+   "ref": "Neemias 8:10",
+   "text": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força."
+  },
+  {
+   "ref": "Neemias 8:11",
+   "text": "E os levitas silenciaram o povo, dizendo: Acalmem-se, porque este dia é santo; não se deixem entristecer."
+  }
+ ]
+}
+</cena>

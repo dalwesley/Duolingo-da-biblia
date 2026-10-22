@@ -1,0 +1,71 @@
+Escreva a cena "jd-02" da trilha "judas" (Judas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "judas",
+  "title": "Judas",
+  "description": "Contender pela fé — alerta contra impostores e contaminação.",
+  "realm": "novo-testamento"
+ },
+ "block": "Judas",
+ "mission": {
+  "slug": "jd-02",
+  "title": "Guardados no amor de Deus",
+  "type": "lesson",
+  "intro": "A defesa da fe e feita com dependencia de Deus: orar, permanecer em seu amor, ter misericordia e esperar a vida eterna.",
+  "hookRef": "Guardados no amor de Deus",
+  "hookNote": "A defesa da fe e feita com dependencia de Deus: orar, permanecer em seu amor, ter misericordia e esperar a vida eterna.",
+  "centralInsight": "Judas equilibra responsabilidade e seguranca. Os crentes permanecem no amor de Deus, ajudam os que duvidam e confiam no Deus que pode guard…",
+  "objective": "Misericordia e perseveranca"
+ },
+ "v2": {
+  "passageRef": "Guardados no amor de Deus",
+  "context": "A defesa da fe e feita com dependencia de Deus: orar, permanecer em seu amor, ter misericordia e esperar a vida eterna.",
+  "keyword": "Guardados",
+  "verseRefs": [
+   "Judas 1:20–21"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Judas 1:17–24"
+ ],
+ "verses": [
+  {
+   "ref": "Judas 1:17",
+   "text": "Mas vocês, amados, lembrem-se das palavras que foram proferidas anteriormente pelos apóstolos de nosso Senhor Jesus Cristo,"
+  },
+  {
+   "ref": "Judas 1:18",
+   "text": "Como já foi dito a vocês, nos últimos dias, haverá escarnecedores que seguirão suas ímpias paixões."
+  },
+  {
+   "ref": "Judas 1:19",
+   "text": "Estes são os que causam divisões, sensuais, desprovidos do Espírito."
+  },
+  {
+   "ref": "Judas 1:20",
+   "text": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo,"
+  },
+  {
+   "ref": "Judas 1:21",
+   "text": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna."
+  },
+  {
+   "ref": "Judas 1:22",
+   "text": "E tenham compaixão de alguns que estão na incerteza;"
+  },
+  {
+   "ref": "Judas 1:23",
+   "text": "Salvem os outros com temor, arrebatando-os do fogo; e sejam também compassivos, detestando até a roupa contaminada pela carne."
+  },
+  {
+   "ref": "Judas 1:24",
+   "text": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,"
+  }
+ ]
+}
+</cena>

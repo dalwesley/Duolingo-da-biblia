@@ -1,0 +1,68 @@
+Escreva a cena "exo-01-opressao" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Opressão no Egito",
+ "mission": {
+  "slug": "exo-01-opressao",
+  "title": "O povo no Egito",
+  "type": "lesson",
+  "intro": "Gênesis termina com Israel no Egito. Êxodo começa séculos depois: um novo faraó escraviza o povo. Deus ouve o clamor de Seu povo.",
+  "hookRef": "Êxodo 1:8–14",
+  "hookNote": "Israel cresceu sob bênção; o medo político do faraó virou opressão. O clamor do povo sobe a Deus.",
+  "centralInsight": "Deus ouve o oprimido",
+  "objective": "O que o medo do faraó revela sobre o poder humano?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 1:8–14",
+  "context": "Israel cresceu sob bênção; o medo político do faraó virou opressão. O clamor do povo sobe a Deus.",
+  "keyword": "Clamor",
+  "verseRefs": [
+   "Êxodo 1:13–14"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 1:8–14",
+  "Êxodo 1:13–14"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 1:8",
+   "text": "Então, levantou-se um novo rei sobre o Egito, que não havia conhecido a José."
+  },
+  {
+   "ref": "Êxodo 1:9",
+   "text": "E disse ao seu povo: Eis que o povo dos filhos de Israel é mais numeroso e mais forte do que nós."
+  },
+  {
+   "ref": "Êxodo 1:10",
+   "text": "Venham, usemos de astúcia para com ele, para que não se multiplique; pois, se houver guerra, ele se unirá aos nossos inimigos, lutará contra nós e sairá da terra."
+  },
+  {
+   "ref": "Êxodo 1:11",
+   "text": "Então, colocaram sobre eles supervisores de obras, para os afligirem com suas cargas. Edificaram para Faraó as cidades-celeiros, Pitom e Ramessés."
+  },
+  {
+   "ref": "Êxodo 1:12",
+   "text": "Mas, quanto mais os oprimiam, tanto mais se multiplicavam e tanto mais se espalhavam; de maneira que se inquietavam por causa dos filhos de Israel."
+  },
+  {
+   "ref": "Êxodo 1:13",
+   "text": "Os egípcios submetiam os filhos de Israel a trabalhos forçados."
+  },
+  {
+   "ref": "Êxodo 1:14",
+   "text": "E assim os fizeram sofrer com dura servidão, na argila e na fabricação de tijolos, e em todo o trabalho no campo; com todo o serviço que lhes impuseram sob tirania."
+  }
+ ]
+}
+</cena>

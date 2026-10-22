@@ -1860,6 +1860,7 @@
       }
     }
   },
+  "homeReviewMistakesCaption": "Erros para reforçar",
   "homeReviewTitle": "Revisão",
   "homeSeasonChipDoneSemantics": "{season}. Dia {day} feito: {dayTitle}",
   "@homeSeasonChipDoneSemantics": {
@@ -6281,8 +6282,18 @@
       }
     }
   },
+  "widgetBackToTrail": "Volte para a trilha",
   "widgetBehindCaravan": "Ficando para trás na caravana — caminhe hoje",
+  "widgetDaysInRow": "{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}",
+  "@widgetDaysInRow": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "widgetGoalDone": "Meta concluída",
+  "widgetKeepStreak": "Mantenha sua sequência",
   "widgetProgressScenes": "{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}",
   "@widgetProgressScenes": {
     "placeholders": {
@@ -6290,6 +6301,14 @@
         "type": "int"
       },
       "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "widgetScenesLeft": "{count, plural, =1{falta 1 cena} other{faltam {count} cenas}}",
+  "@widgetScenesLeft": {
+    "placeholders": {
+      "count": {
         "type": "int"
       }
     }
@@ -6302,6 +6321,8 @@
       }
     }
   },
+  "widgetStartStreak": "Comece sua sequência",
+  "widgetStreakSafe": "Sequência garantida hoje",
   "widgetTodayTitle": "Hoje: {title}",
   "@widgetTodayTitle": {
     "placeholders": {

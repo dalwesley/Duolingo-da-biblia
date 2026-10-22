@@ -1,0 +1,715 @@
+{
+ "study": {
+  "passageRef": "Êxodo 3:4–9",
+  "passages": [
+   {
+    "ref": "Êxodo 3:1–7"
+   },
+   {
+    "ref": "Êxodo 3:8–14"
+   }
+  ],
+  "context": "Moisés foge do Egito e apascenta rebanhos no deserto. Junto ao monte de Deus, uma sarça que arde sem se consumir chama sua atenção.",
+  "keyword": "Sarça",
+  "keywordGloss": "Arbusto em chamas onde Deus chama Moisés e revela sua presença santa.",
+  "focusQuestion": "O que você faz quando Deus chama justamente na sua hesitação?",
+  "reflectionPrompts": [
+   "Deus chama no deserto",
+   "Presença que é santa",
+   "Estarei contigo"
+  ],
+  "facts": [
+   {
+    "text": "A sarça ardia no fogo, mas não se consumia.",
+    "evidenceRef": "Êxodo 3:2",
+    "evidenceSpan": "a sarça ardia no fogo, mas não se consumia"
+   },
+   {
+    "text": "Deus chamou Moisés do meio da sarça pelo nome.",
+    "evidenceRef": "Êxodo 3:4",
+    "evidenceSpan": "Deus, do meio da sarça, o chamou"
+   },
+   {
+    "text": "Deus manda Moisés tirar as sandálias porque o lugar é terra santa.",
+    "evidenceRef": "Êxodo 3:5",
+    "evidenceSpan": "o lugar em que estás é terra santa"
+   },
+   {
+    "text": "Deus viu a aflição do seu povo e ouviu o seu clamor no Egito.",
+    "evidenceRef": "Êxodo 3:7",
+    "evidenceSpan": "tenho visto a aflição do meu povo"
+   },
+   {
+    "text": "Deus promete levar o povo a uma terra que mana leite e mel.",
+    "evidenceRef": "Êxodo 3:8",
+    "evidenceSpan": "uma terra que mana leite e mel"
+   },
+   {
+    "text": "Deus se apresenta a Moisés como EU SOU O QUE SOU.",
+    "evidenceRef": "Êxodo 3:14",
+    "evidenceSpan": "EU SOU O QUE SOU"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sarça",
+    "gloss": "Arbusto comum que vira lugar de encontro com o Deus santo."
+   },
+   {
+    "term": "clamor",
+    "gloss": "Grito do povo oprimido que Deus ouve e ao qual responde."
+   },
+   {
+    "term": "EU SOU",
+    "gloss": "Nome com que Deus se revela a Moisés antes de enviá-lo ao faraó."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Moisés encontra a sarça que não se consome",
+    "evidenceRef": "Êxodo 3:1–3"
+   },
+   {
+    "label": "Deus chama e pede reverência na terra santa",
+    "evidenceRef": "Êxodo 3:4–6"
+   },
+   {
+    "label": "Deus viu, ouviu e desce para livrar",
+    "evidenceRef": "Êxodo 3:7–9"
+   },
+   {
+    "label": "Moisés hesita e Deus promete estar com ele",
+    "evidenceRef": "Êxodo 3:10–14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Deus age porque viu a aflição e ouviu o clamor do seu povo no Egito.",
+    "marker": "pois",
+    "evidenceRef": "Êxodo 3:7"
+   },
+   {
+    "kind": "propósito",
+    "text": "Deus desce para livrar o povo e fazê-lo subir a uma terra boa e ampla.",
+    "marker": "para",
+    "evidenceRef": "Êxodo 3:8"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois de se revelar como Deus dos patriarcas, Deus apresenta a missão a Moisés.",
+    "marker": "Então",
+    "evidenceRef": "Êxodo 3:6"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "João 8:58",
+    "bridge": "Jesus assume o EU SOU"
+   },
+   {
+    "ref": "Atos 7:33",
+    "bridge": "Terra santa relembrada por Estêvão"
+   },
+   {
+    "ref": "Êxodo 6:3",
+    "bridge": "Deus se revela pelo nome"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus escolhe Moisés porque ele se sente capaz e confiante para liderar.",
+    "why": "Moisés pergunta quem ele é para ir ao faraó, e Deus responde prometendo estar com ele."
+   },
+   {
+    "text": "A sarça é só um fenômeno curioso, sem Deus falando com Moisés.",
+    "why": "Do meio da sarça Deus chama Moisés pelo nome e lhe confia a missão de tirar Israel do Egito."
+   },
+   {
+    "text": "O nome revelado mostra um Deus distante que não se envolve com o povo.",
+    "why": "Antes de revelar o nome, Deus diz que viu a aflição, ouviu o clamor e desceu para livrar."
+   }
+  ],
+  "centralInsight": "Deus chama os hesitantes",
+  "anchorQuestion": "Que nome Deus revela a Moisés em Êxodo 3:14 antes de enviá-lo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Êxodo 3:2, a sarça ardia no fogo e se consumia rapidamente diante de Moisés.",
+   "verseRef": "Êxodo 3:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "mas não se consumia",
+   "feedbackCorrect": "A sarça arde sem se consumir, e é isso que chama a atenção de Moisés.",
+   "feedbackWrong": {
+    "true": "Releia o fim de Êxodo 3:2 e veja o que não acontecia com a sarça."
+   },
+   "hint": "Olhe o que o fogo não fazia com a sarça.",
+   "learningObjective": "Observar o sinal que atrai Moisés junto ao monte.",
+   "evidence": [
+    "Êxodo 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Êxodo 3:6, toque o primeiro patriarca que Deus cita ao se apresentar.",
+   "verseRef": "Êxodo 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus de Abraão"
+    },
+    {
+     "id": "b",
+     "text": "Deus de Isaque"
+    },
+    {
+     "id": "c",
+     "text": "Deus de Jacó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Deus de Abraão, o Deus de Isaque e o Deus de Jacó",
+   "feedbackCorrect": "Deus se liga à história de Abraão, Isaque e Jacó ao chamar Moisés.",
+   "feedbackWrong": {
+    "b": "Isaque é citado depois de Abraão na apresentação de Deus.",
+    "c": "Jacó fecha a lista dos patriarcas citados por Deus aqui."
+   },
+   "hint": "Leia a ordem dos nomes na fala de Deus.",
+   "learningObjective": "Identificar Deus como Deus dos patriarcas.",
+   "evidence": [
+    "Êxodo 3:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Êxodo 3:5, por que Moisés deve tirar as sandálias dos pés?",
+   "verseRef": "Êxodo 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque o lugar onde está é terra santa"
+    },
+    {
+     "id": "b",
+     "text": "Porque o deserto estava muito quente"
+    },
+    {
+     "id": "c",
+     "text": "Porque ele entraria num palácio real"
+    },
+    {
+     "id": "d",
+     "text": "Porque o rebanho precisava descansar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o lugar em que estás é terra santa",
+   "feedbackCorrect": "A presença de Deus torna aquele lugar santo e pede reverência.",
+   "feedbackWrong": {
+    "b": "O motivo dado por Deus é a santidade do lugar, não o calor.",
+    "c": "Não há palácio aqui; Moisés está junto ao monte de Deus.",
+    "d": "O rebanho não é o motivo da ordem dada a Moisés."
+   },
+   "hint": "Leia o motivo que o próprio Deus apresenta.",
+   "learningObjective": "Observar a reverência diante da presença de Deus.",
+   "evidence": [
+    "Êxodo 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Êxodo 3:2 na ordem do texto.",
+   "verseRef": "Êxodo 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "o Anjo do Senhor apareceu-lhe numa chama de fogo"
+    },
+    {
+     "id": "b",
+     "text": "no meio de uma sarça"
+    },
+    {
+     "id": "c",
+     "text": "a sarça ardia no fogo, mas não se consumia"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a sarça ardia no fogo, mas não se consumia",
+   "feedbackCorrect": "Chama no meio da sarça, e a sarça ardendo sem se consumir.",
+   "feedbackWrong": {
+    "default": "Comece pela chama de fogo; o não se consumir fecha o versículo."
+   },
+   "hint": "O versículo começa com o aparecimento do Anjo.",
+   "learningObjective": "Reconhecer a sequência do encontro na sarça.",
+   "evidence": [
+    "Êxodo 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Êxodo 3:5, como Deus chama o lugar onde Moisés está?",
+   "verseRef": "Êxodo 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "santa"
+    },
+    {
+     "id": "b",
+     "text": "profana"
+    },
+    {
+     "id": "c",
+     "text": "comum"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o lugar em que estás é terra santa",
+   "feedbackCorrect": "Diante de Deus, aquele chão comum vira lugar de reverência.",
+   "feedbackWrong": {
+    "b": "O texto afirma o contrário ao chamar o lugar diante de Deus.",
+    "c": "A presença de Deus distingue aquele lugar de um chão qualquer."
+   },
+   "hint": "Leia a última parte da ordem de Deus.",
+   "learningObjective": "Lembrar que a presença de Deus torna o lugar santo.",
+   "evidence": [
+    "Êxodo 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Êxodo 3:7 comunica que se liga a este contexto?",
+   "verseRef": "Êxodo 3:7",
+   "passageA": {
+    "ref": "Êxodo 3:7"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus vê a aflição do seu povo no Egito e ouve seu clamor."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ignora o sofrimento"
+    },
+    {
+     "id": "b",
+     "text": "Deus vê e ouve o povo"
+    },
+    {
+     "id": "c",
+     "text": "O povo se livra sozinho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "tenho visto a aflição do meu povo",
+   "feedbackCorrect": "Deus não está longe; ele viu a aflição e ouviu o clamor do povo.",
+   "feedbackWrong": {
+    "a": "Deus afirma ter visto e ouvido, não ignorado o sofrimento.",
+    "c": "Quem desce para livrar é Deus, não o povo por sua força."
+   },
+   "hint": "Veja os dois verbos que Deus usa sobre si.",
+   "learningObjective": "Ligar o chamado à atenção de Deus pelo povo oprimido.",
+   "evidence": [
+    "Êxodo 3:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Êxodo 3:7–8, Deus desce para livrar o povo porque viu sua aflição e ouviu seu clamor.",
+   "verseRef": "Êxodo 3:7–8",
+   "correctOptionId": "true",
+   "evidenceSpan": "tenho visto a aflição do meu povo",
+   "feedbackCorrect": "Ver e ouvir o sofrimento do povo é o ponto de partida da libertação.",
+   "feedbackWrong": {
+    "false": "Releia Êxodo 3:7 e veja o que Deus diz que viu e ouviu."
+   },
+   "hint": "Procure o motivo da ação de Deus.",
+   "learningObjective": "Compreender que Deus age a partir do clamor do povo.",
+   "evidence": [
+    "Êxodo 3:7–8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Êxodo 3:8, toque a palavrinha que mostra o alvo de Deus ao descer.",
+   "verseRef": "Êxodo 3:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "para"
+    },
+    {
+     "id": "b",
+     "text": "terra"
+    },
+    {
+     "id": "c",
+     "text": "mãos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "desci para livrá-lo das mãos dos egípcios",
+   "feedbackCorrect": "Deus desce com um alvo claro, livrar o povo das mãos dos egípcios.",
+   "feedbackWrong": {
+    "b": "Esse termo nomeia o destino do povo, não o alvo da descida.",
+    "c": "Esse termo indica de quem o povo será livrado, não o alvo."
+   },
+   "hint": "Olhe o início da ação de Deus.",
+   "learningObjective": "Reconhecer o marcador de propósito em Êxodo 3:8.",
+   "evidence": [
+    "Êxodo 3:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Êxodo 3:12 responde à hesitação de Moisés em Êxodo 3:11?",
+   "verseRef": "Êxodo 3:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus promete estar com Moisés na missão"
+    },
+    {
+     "id": "b",
+     "text": "Deus diz que Moisés já tem prestígio suficiente"
+    },
+    {
+     "id": "c",
+     "text": "Deus troca Moisés por alguém mais confiante"
+    },
+    {
+     "id": "d",
+     "text": "Deus dispensa Moisés de ir até o faraó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Certamente estarei contigo",
+   "feedbackCorrect": "A resposta à fraqueza de Moisés é a presença prometida de Deus.",
+   "feedbackWrong": {
+    "b": "Deus não aponta prestígio de Moisés, e sim sua própria presença.",
+    "c": "Deus mantém o envio de Moisés, mesmo com a hesitação dele.",
+    "d": "O envio ao faraó continua; muda a garantia que Moisés recebe."
+   },
+   "hint": "Veja o que Deus promete, e não o que Moisés tem.",
+   "learningObjective": "Relacionar a hesitação de Moisés com a promessa de Deus.",
+   "evidence": [
+    "Êxodo 3:11–12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a conversa em Êxodo 3:11–12?",
+   "verseRef": "Êxodo 3:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Moisés pergunta quem ele é para essa missão"
+    },
+    {
+     "id": "b",
+     "text": "Deus promete estar com Moisés no caminho"
+    },
+    {
+     "id": "c",
+     "text": "O povo servirá a Deus neste monte"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Certamente estarei contigo",
+   "feedbackCorrect": "Envio, hesitação e promessa de presença formam o avanço da cena.",
+   "feedbackWrong": {
+    "default": "Comece pelo envio de Deus; a promessa fecha a resposta dele."
+   },
+   "hint": "A pergunta de Moisés fica entre envio e promessa.",
+   "learningObjective": "Compreender o movimento do chamado de Moisés.",
+   "evidence": [
+    "Êxodo 3:11–12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Êxodo 3:12, com quem Deus promete estar ao enviar Moisés?",
+   "verseRef": "Êxodo 3:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "contigo"
+    },
+    {
+     "id": "b",
+     "text": "sozinho"
+    },
+    {
+     "id": "c",
+     "text": "depressa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Certamente estarei contigo",
+   "feedbackCorrect": "A garantia de Moisés não é sua força, e sim Deus com ele.",
+   "feedbackWrong": {
+    "b": "Deus promete companhia, não deixar Moisés por conta própria.",
+    "c": "Isso fala de velocidade, e o texto fala de presença de Deus."
+   },
+   "hint": "Leia a primeira frase da resposta de Deus.",
+   "learningObjective": "Compreender a promessa que sustenta o chamado.",
+   "evidence": [
+    "Êxodo 3:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Êxodo 3:14 a João 8:58?",
+   "verseRef": "Êxodo 3:14",
+   "passageA": {
+    "ref": "Êxodo 3:14"
+   },
+   "passageB": {
+    "ref": "João 8:58"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus assume o nome divino"
+    },
+    {
+     "id": "b",
+     "text": "Moisés volta no tempo de Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Abraão cria o nome de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "EU SOU O QUE SOU",
+   "feedbackCorrect": "Jesus usa a mesma expressão e se coloca antes de Abraão existir.",
+   "feedbackWrong": {
+    "b": "João não fala de viagem de Moisés, e sim de quem Jesus é.",
+    "c": "O nome é revelado por Deus, não criado por Abraão ou Moisés."
+   },
+   "hint": "Compare a expressão usada nos dois trechos.",
+   "learningObjective": "Relacionar o nome revelado a Moisés com a fala de Jesus.",
+   "evidence": [
+    "Êxodo 3:14",
+    "João 8:58"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Êxodo 3:11–12 mostra que Deus escolhe Moisés porque ele se sente plenamente capaz para a missão.",
+   "verseRef": "Êxodo 3:11–12",
+   "correctOptionId": "false",
+   "evidenceSpan": "Quem sou eu para ir até Faraó",
+   "feedbackCorrect": "Moisés se acha incapaz, e Deus sustenta o chamado com sua presença.",
+   "feedbackWrong": {
+    "true": "Releia a pergunta de Moisés e a resposta que Deus lhe dá."
+   },
+   "hint": "Veja como Moisés se enxerga na missão.",
+   "learningObjective": "Interpretar o chamado a partir da hesitação de Moisés.",
+   "evidence": [
+    "Êxodo 3:11–12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Êxodo 3:12, toque o trecho que sustenta a confiança de Moisés.",
+   "verseRef": "Êxodo 3:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "estarei contigo"
+    },
+    {
+     "id": "b",
+     "text": "neste monte"
+    },
+    {
+     "id": "c",
+     "text": "este povo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Certamente estarei contigo",
+   "feedbackCorrect": "A confiança de Moisés se apoia na presença prometida pelo Senhor.",
+   "feedbackWrong": {
+    "b": "Isso indica o lugar do culto futuro, não a garantia pessoal.",
+    "c": "Isso nomeia quem será tirado do Egito, não a garantia dada."
+   },
+   "hint": "Procure a promessa feita diretamente a Moisés.",
+   "learningObjective": "Sustentar com o texto a base da confiança de Moisés.",
+   "evidence": [
+    "Êxodo 3:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Êxodo 3:13–14 sustenta sobre o nome revelado por Deus?",
+   "verseRef": "Êxodo 3:13–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus inventa um nome qualquer para impressionar o povo"
+    },
+    {
+     "id": "b",
+     "text": "Deus se revela como quem é e sustenta sua promessa"
+    },
+    {
+     "id": "c",
+     "text": "O nome prova que Deus depende da fé de Moisés para existir"
+    },
+    {
+     "id": "d",
+     "text": "O nome esconde Deus para que ninguém o conheça de verdade"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "EU SOU O QUE SOU",
+   "feedbackCorrect": "Deus se apresenta por si mesmo ao povo que ele vai libertar.",
+   "feedbackWrong": {
+    "a": "O nome responde à pergunta do povo, não é um truque de efeito.",
+    "c": "Deus já viu, ouviu e desceu antes de Moisés crer sem hesitar.",
+    "d": "Deus manda Moisés dizer o nome ao povo, não escondê-lo dele."
+   },
+   "hint": "Veja a pergunta de Moisés e a resposta que Deus manda dar.",
+   "learningObjective": "Escolher a interpretação sustentada sobre o nome de Deus.",
+   "evidence": [
+    "Êxodo 3:13–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do clamor até Jesus usar o mesmo nome?",
+   "verseRef": "Êxodo 3:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ouve o clamor do povo no Egito"
+    },
+    {
+     "id": "b",
+     "text": "Deus revela seu nome a Moisés na sarça"
+    },
+    {
+     "id": "c",
+     "text": "Jesus assume esse nome diante dos judeus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "EU SOU O QUE SOU",
+   "feedbackCorrect": "Do clamor ouvido ao nome revelado, e dele à fala de Jesus em João 8.",
+   "feedbackWrong": {
+    "default": "Siga a história do Egito à sarça, e depois ao Evangelho de João."
+   },
+   "hint": "Jesus é o ponto de chegada dessa sequência.",
+   "learningObjective": "Ver o nome de Deus como fio que chega ao Novo Testamento.",
+   "evidence": [
+    "Êxodo 3:14",
+    "João 8:58"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Êxodo 3:14, como Deus se apresenta a Moisés no nome revelado?",
+   "verseRef": "Êxodo 3:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "SOU"
+    },
+    {
+     "id": "b",
+     "text": "era"
+    },
+    {
+     "id": "c",
+     "text": "veio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "EU SOU O QUE SOU",
+   "feedbackCorrect": "Deus se apresenta no presente absoluto, dono de si e fiel ao povo.",
+   "feedbackWrong": {
+    "b": "Isso limitaria Deus ao passado, e o texto o apresenta agora.",
+    "c": "Isso fala de chegada, não do nome que Deus revela de si."
+   },
+   "hint": "Leia a fala de Deus citada no versículo.",
+   "learningObjective": "Lembrar o termo central do nome revelado por Deus.",
+   "evidence": [
+    "Êxodo 3:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Êxodo 3:5 a Atos 7:33?",
+   "verseRef": "Êxodo 3:5",
+   "passageA": {
+    "ref": "Êxodo 3:5"
+   },
+   "passageB": {
+    "ref": "Atos 7:33"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Terra santa na presença divina"
+    },
+    {
+     "id": "b",
+     "text": "Um templo feito por mãos humanas"
+    },
+    {
+     "id": "c",
+     "text": "Moisés recusa ouvir Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o lugar em que estás é terra santa",
+   "feedbackCorrect": "Estêvão relê a sarça e repete que o lugar diante de Deus é santo.",
+   "feedbackWrong": {
+    "b": "Na sarça não há templo; há presença de Deus no deserto.",
+    "c": "Moisés ouve e responde a Deus, não recusa sua voz aqui."
+   },
+   "hint": "Veja o que os dois trechos dizem do lugar.",
+   "learningObjective": "Ligar a sarça à releitura de Estêvão no Novo Testamento.",
+   "evidence": [
+    "Êxodo 3:5",
+    "Atos 7:33"
+   ]
+  }
+ ]
+}

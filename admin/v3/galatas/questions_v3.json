@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "galatas-sem-gl-01-outro-evangelho-01",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 1:6, Paulo se diz surpreso com a rapidez do afastamento dos gálatas.",
+    "prompt": "Em Gálatas 1:6, Paulo se diz surpreso com a rapidez do afastamento dos gálatas.",
+    "cue": "Em Gálatas 1:6, Paulo se diz surpreso com a rapidez do afastamento dos gálatas.",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Estou surpreso de que vocês tenham se afastado tão rapidamente",
+    "feedbackCorrect": "Paulo abre o assunto surpreso com a velocidade do afastamento.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Gálatas 1:6 e veja a surpresa de Paulo."
+    },
+    "hint": "Veja o sentimento de Paulo no começo.",
+    "learningObjective": "Observar a reação de Paulo ao afastamento dos gálatas.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-01-outro-evangelho-02",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 1:6, toque de quem os gálatas se afastaram rapidamente.",
+    "prompt": "Em Gálatas 1:6, toque de quem os gálatas se afastaram rapidamente.",
+    "cue": "Em Gálatas 1:6, toque de quem os gálatas se afastaram rapidamente.",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "daquele"
+      },
+      {
+        "id": "b",
+        "text": "outro evangelho"
+      },
+      {
+        "id": "c",
+        "text": "graça de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "daquele que os chamou na graça de Cristo",
+    "feedbackCorrect": "Eles se afastaram daquele que os chamou, o próprio Deus em Cristo.",
+    "feedbackWrong": {
+      "b": "O outro evangelho é para onde foram, não de quem saíram.",
+      "c": "A graça de Cristo é o meio do chamado, não quem eles deixaram."
+    },
+    "hint": "Procure quem chamou os gálatas.",
+    "learningObjective": "Identificar de quem os gálatas se afastaram.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-01-outro-evangelho-03",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 1:7, o que alguns estavam fazendo com os gálatas?",
+    "prompt": "Segundo Gálatas 1:7, o que alguns estavam fazendo com os gálatas?",
+    "cue": "Segundo Gálatas 1:7, o que alguns estavam fazendo com os gálatas?",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anunciando o mesmo evangelho de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Pedindo que voltassem a ouvir Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Perturbando a igreja e torcendo o evangelho"
+      },
+      {
+        "id": "d",
+        "text": "Confirmando o evangelho já recebido"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "há alguns que vos perturbam e querem perverter o evangelho de Cristo",
+    "feedbackCorrect": "Alguns perturbavam a igreja querendo torcer o evangelho de Cristo.",
+    "feedbackWrong": {
+      "a": "A mensagem deles era diferente, não a mesma de Cristo.",
+      "b": "O texto não fala de um pedido de retorno a Paulo.",
+      "d": "Eles não confirmavam o evangelho; queriam torcê-lo."
+    },
+    "hint": "Veja o que essas pessoas queriam com o evangelho.",
+    "learningObjective": "Observar a ação de quem perturbava os gálatas.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-01-outro-evangelho-04",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 1:8 na ordem do texto.",
+    "prompt": "Monte Gálatas 1:8 na ordem do texto.",
+    "cue": "Monte Gálatas 1:8 na ordem do texto.",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas, ainda que nós ou mesmo um anjo vindo do céu"
+      },
+      {
+        "id": "b",
+        "text": "vos pregue um evangelho que seja diferente"
+      },
+      {
+        "id": "c",
+        "text": "do que já vos temos anunciado, seja anátema"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mesmo um anjo vindo do céu",
+    "feedbackCorrect": "Nem um anjo muda o evangelho já anunciado por Paulo.",
+    "feedbackWrong": {
+      "default": "Comece pela hipótese do anjo; a rejeição fecha o versículo."
+    },
+    "hint": "O versículo começa com uma hipótese.",
+    "learningObjective": "Reconhecer a sequência de Gálatas 1:8.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-01-outro-evangelho-05",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 1:4, pelos nossos ___ Cristo se entregou a si mesmo.",
+    "prompt": "Em Gálatas 1:4, pelos nossos ___ Cristo se entregou a si mesmo.",
+    "cue": "Em Gálatas 1:4, pelos nossos ___ Cristo se entregou a si mesmo.",
+    "verseRef": "Gálatas 1:4",
+    "passageText": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai.",
+    "template": "O qual se entregou a si mesmo pelos nossos ___, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "pedidos"
+      },
+      {
+        "id": "c",
+        "text": "presentes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se entregou a si mesmo pelos nossos pecados",
+    "feedbackCorrect": "Cristo se entregou pelos nossos pecados, por vontade do Pai.",
+    "feedbackWrong": {
+      "b": "Cristo não se entregou por pedidos, mas por pecados.",
+      "c": "O texto fala de pecados, não de presentes oferecidos."
+    },
+    "hint": "Veja o motivo da entrega de Cristo.",
+    "learningObjective": "Lembrar por que Cristo se entregou.",
+    "evidence": [
+      "Gálatas 1:4"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-01-outro-evangelho-06",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:4 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 1:4",
+    "passageText": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai.",
+    "passageA": {
+      "ref": "Gálatas 1:4",
+      "text": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo se entregou para nos libertar deste mundo perverso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus abandona o mundo mau"
+      },
+      {
+        "id": "b",
+        "text": "Cristo se entrega por nós"
+      },
+      {
+        "id": "c",
+        "text": "Salvação depende do nosso esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se entregou a si mesmo pelos nossos pecados",
+    "feedbackCorrect": "Cristo se entregou por nós para nos tirar deste mundo perverso.",
+    "feedbackWrong": {
+      "a": "Deus não abandona; ele envia Cristo que se entrega.",
+      "c": "Quem age é Cristo, que se entrega; não o nosso esforço."
+    },
+    "hint": "Veja quem se entrega no versículo.",
+    "learningObjective": "Ligar Gálatas 1:4 à entrega de Cristo por nós.",
+    "evidence": [
+      "Gálatas 1:4"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-01-outro-evangelho-01",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 1:6–7, Paulo diz que há um segundo evangelho válido ao lado do de Cristo.",
+    "prompt": "Em Gálatas 1:6–7, Paulo diz que há um segundo evangelho válido ao lado do de Cristo.",
+    "cue": "Em Gálatas 1:6–7, Paulo diz que há um segundo evangelho válido ao lado do de Cristo.",
+    "verseRef": "Gálatas 1:6–7",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho. Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Que não é outro",
+    "feedbackCorrect": "Paulo corrige na hora: o suposto outro evangelho não é outro.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 1:7: Paulo diz que esse outro não é outro."
+    },
+    "hint": "Veja a correção que Paulo faz em 1:7.",
+    "learningObjective": "Compreender que não há segundo evangelho válido.",
+    "evidence": [
+      "Gálatas 1:6–7"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-01-outro-evangelho-02",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "prompt": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "cue": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alguns"
+      },
+      {
+        "id": "b",
+        "text": "outro"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que não é outro, mas há alguns",
+    "feedbackCorrect": "A palavrinha vira o argumento: não é outro, só há perturbação.",
+    "feedbackWrong": {
+      "a": "Alguns são as pessoas que perturbam, não a correção.",
+      "b": "Outro é o que o evangelho falso parece ser, não a correção."
+    },
+    "hint": "Procure a conjunção que corrige a frase anterior.",
+    "learningObjective": "Reconhecer a correção que Paulo faz em 1:7.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-01-outro-evangelho-03",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 1:10 explica a postura de Paulo ao pregar?",
+    "prompt": "Como Gálatas 1:10 explica a postura de Paulo ao pregar?",
+    "cue": "Como Gálatas 1:10 explica a postura de Paulo ao pregar?",
+    "verseRef": "Gálatas 1:10",
+    "passageText": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria servo de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele depende da aprovação dos líderes"
+      },
+      {
+        "id": "b",
+        "text": "Ele prega para agradar a Deus, não a pessoas"
+      },
+      {
+        "id": "c",
+        "text": "Ele ajusta a mensagem para ser aceito"
+      },
+      {
+        "id": "d",
+        "text": "Ele evita conflito para manter amigos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não seria servo de Cristo",
+    "feedbackCorrect": "Paulo busca a aprovação de Deus; agradar a homens o desqualificaria.",
+    "feedbackWrong": {
+      "a": "A aprovação que ele busca é a de Deus, não a de líderes.",
+      "c": "Ajustar a mensagem para agradar é o contrário do que ele diz.",
+      "d": "Paulo não foge do conflito ao defender o evangelho."
+    },
+    "hint": "Veja de quem Paulo busca aprovação.",
+    "learningObjective": "Compreender a motivação de Paulo ao pregar.",
+    "evidence": [
+      "Gálatas 1:10"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-01-outro-evangelho-04",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Gálatas 1:6–7?",
+    "prompt": "Como avança o argumento em Gálatas 1:6–7?",
+    "cue": "Como avança o argumento em Gálatas 1:6–7?",
+    "verseRef": "Gálatas 1:6–7",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho. Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo se surpreende com o afastamento rápido"
+      },
+      {
+        "id": "b",
+        "text": "Os gálatas seguem um suposto outro evangelho"
+      },
+      {
+        "id": "c",
+        "text": "Paulo esclarece que não há outro evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Que não é outro",
+    "feedbackCorrect": "Surpresa, desvio e correção: Paulo fecha a porta ao outro evangelho.",
+    "feedbackWrong": {
+      "default": "A correção de Paulo vem por último, depois do desvio."
+    },
+    "hint": "A correção de Paulo fecha a sequência.",
+    "learningObjective": "Compreender o movimento do argumento em 1:6–7.",
+    "evidence": [
+      "Gálatas 1:6–7"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-01-outro-evangelho-05",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 1:10, o que Paulo não seria se agradasse a homens?",
+    "prompt": "Em Gálatas 1:10, o que Paulo não seria se agradasse a homens?",
+    "cue": "Em Gálatas 1:10, o que Paulo não seria se agradasse a homens?",
+    "verseRef": "Gálatas 1:10",
+    "passageText": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria servo de Cristo.",
+    "template": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria ___ de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "amigo"
+      },
+      {
+        "id": "c",
+        "text": "líder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não seria servo de Cristo",
+    "feedbackCorrect": "Agradar a homens e servir a Cristo não cabem juntos para Paulo.",
+    "feedbackWrong": {
+      "b": "O contraste de Paulo é com servir a Cristo, não com amizade.",
+      "c": "Paulo não fala de cargo, mas de servir a Cristo."
+    },
+    "hint": "Veja o fim da segunda pergunta do versículo.",
+    "learningObjective": "Compreender o contraste entre agradar a homens e servir a Cristo.",
+    "evidence": [
+      "Gálatas 1:10"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-01-outro-evangelho-06",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 1:11 a 1 Coríntios 15:3?",
+    "prompt": "O que liga Gálatas 1:11 a 1 Coríntios 15:3?",
+    "cue": "O que liga Gálatas 1:11 a 1 Coríntios 15:3?",
+    "verseRef": "Gálatas 1:11",
+    "passageText": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana.",
+    "passageA": {
+      "ref": "Gálatas 1:11",
+      "text": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:3",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Anjos trouxeram um novo evangelho"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho não é invenção humana"
+      },
+      {
+        "id": "c",
+        "text": "Paulo criou a própria mensagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não é de origem humana",
+    "feedbackCorrect": "Paulo entregou o que recebeu: o evangelho não nasceu dele.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos fala de anjos trazendo evangelho novo.",
+      "c": "Paulo diz o contrário: o evangelho não é de origem humana."
+    },
+    "hint": "Compare a origem do evangelho nos dois textos.",
+    "learningObjective": "Relacionar a origem do evangelho em Paulo.",
+    "evidence": [
+      "Gálatas 1:11",
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-01-outro-evangelho-01",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gálatas 1:8 ensina que nem uma mensagem trazida por um anjo deve ser aceita se for diferente do evangelho já anunciado.",
+    "prompt": "Gálatas 1:8 ensina que nem uma mensagem trazida por um anjo deve ser aceita se for diferente do evangelho já anunciado.",
+    "cue": "Gálatas 1:8 ensina que nem uma mensagem trazida por um anjo deve ser aceita se for diferente do evangelho já anunciado.",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mesmo um anjo vindo do céu",
+    "feedbackCorrect": "Nem a origem impressionante valida uma mensagem diferente.",
+    "feedbackWrong": {
+      "false": "Releia Gálatas 1:8: até um anjo seria rejeitado nesse caso."
+    },
+    "hint": "Veja até onde vai a hipótese de Paulo.",
+    "learningObjective": "Interpretar o alcance da rejeição em Gálatas 1:8.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-01-outro-evangelho-02",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 1:11, toque o trecho que mostra de onde o evangelho não veio.",
+    "prompt": "Em Gálatas 1:11, toque o trecho que mostra de onde o evangelho não veio.",
+    "cue": "Em Gálatas 1:11, toque o trecho que mostra de onde o evangelho não veio.",
+    "verseRef": "Gálatas 1:11",
+    "passageText": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "evangelho"
+      },
+      {
+        "id": "c",
+        "text": "origem humana"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não é de origem humana",
+    "feedbackCorrect": "O evangelho de Paulo não nasceu de gente: ele o recebeu de Deus.",
+    "feedbackWrong": {
+      "a": "Irmãos são os leitores da carta, não a origem do evangelho.",
+      "b": "Evangelho é a mensagem; a origem dela vem no fim do verso."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar com o texto a origem do evangelho de Paulo.",
+    "evidence": [
+      "Gálatas 1:11"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-01-outro-evangelho-03",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 1:8 sustenta sobre uma mensagem diferente?",
+    "prompt": "Que leitura Gálatas 1:8 sustenta sobre uma mensagem diferente?",
+    "cue": "Que leitura Gálatas 1:8 sustenta sobre uma mensagem diferente?",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deve ser rejeitada mesmo vindo de um anjo"
+      },
+      {
+        "id": "b",
+        "text": "Só é errada se vier de pessoas comuns"
+      },
+      {
+        "id": "c",
+        "text": "Deve ser somada ao evangelho de Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Deve ser aceita se vier com sinais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "seja anátema",
+    "feedbackCorrect": "A medida é o evangelho já recebido, não quem traz a novidade.",
+    "feedbackWrong": {
+      "b": "Paulo inclui até a si mesmo e a um anjo na hipótese.",
+      "c": "Somar outra mensagem é justamente perverter o evangelho.",
+      "d": "Nem sinais nem origem impressionante validam a mensagem."
+    },
+    "hint": "Veja quem Paulo inclui na hipótese do versículo.",
+    "learningObjective": "Escolher a leitura que Gálatas 1:8 sustenta.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-01-outro-evangelho-04",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica do argumento de Gálatas 1:6–8?",
+    "prompt": "Qual sequência revela a lógica do argumento de Gálatas 1:6–8?",
+    "cue": "Qual sequência revela a lógica do argumento de Gálatas 1:6–8?",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus chama o povo na graça de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Uma mensagem diferente começa a circular"
+      },
+      {
+        "id": "c",
+        "text": "A mensagem diferente deve ser rejeitada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "daquele que os chamou na graça de Cristo",
+    "feedbackCorrect": "Chamado pela graça, desvio e rejeição do desvio: é a lógica de Paulo.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado de Deus; a rejeição é a resposta final."
+    },
+    "hint": "Comece pelo chamado de Deus na graça.",
+    "learningObjective": "Ver a lógica do argumento de Paulo na cena.",
+    "evidence": [
+      "Gálatas 1:6",
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-01-outro-evangelho-05",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 1:8, como deve ser tratado quem prega evangelho diferente?",
+    "prompt": "Em Gálatas 1:8, como deve ser tratado quem prega evangelho diferente?",
+    "cue": "Em Gálatas 1:8, como deve ser tratado quem prega evangelho diferente?",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "template": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "anátema"
+      },
+      {
+        "id": "b",
+        "text": "aprovado"
+      },
+      {
+        "id": "c",
+        "text": "abençoado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "seja anátema",
+    "feedbackCorrect": "A palavra é forte de propósito: a mensagem diferente é rejeitada.",
+    "feedbackWrong": {
+      "b": "Paulo não aprova; ele rejeita a mensagem diferente.",
+      "c": "Não há bênção para quem torce o evangelho de Cristo."
+    },
+    "hint": "Veja a palavra final do versículo.",
+    "learningObjective": "Lembrar o termo que mostra a rejeição da mensagem diferente.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-01-outro-evangelho-06",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 1:4 a Romanos 5:8?",
+    "prompt": "O que liga Gálatas 1:4 a Romanos 5:8?",
+    "cue": "O que liga Gálatas 1:4 a Romanos 5:8?",
+    "verseRef": "Gálatas 1:4",
+    "passageText": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai.",
+    "passageA": {
+      "ref": "Gálatas 1:4",
+      "text": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai."
+    },
+    "passageB": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus espera nosso esforço primeiro"
+      },
+      {
+        "id": "b",
+        "text": "O pecado não afasta de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Cristo morreu em nosso lugar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se entregou a si mesmo pelos nossos pecados",
+    "feedbackCorrect": "Nos dois textos, Cristo se entrega por pecadores, por amor.",
+    "feedbackWrong": {
+      "a": "Cristo age primeiro, enquanto ainda éramos pecadores.",
+      "b": "É justamente pelo pecado que Cristo se entrega por nós."
+    },
+    "hint": "Compare o que Cristo faz pelos pecadores.",
+    "learningObjective": "Ligar a entrega de Cristo em Gálatas e Romanos.",
+    "evidence": [
+      "Gálatas 1:4",
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-02-fe-01",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 3:9, Paulo diz que só os descendentes de Abraão por sangue são abençoados.",
+    "prompt": "Em Gálatas 3:9, Paulo diz que só os descendentes de Abraão por sangue são abençoados.",
+    "cue": "Em Gálatas 3:9, Paulo diz que só os descendentes de Abraão por sangue são abençoados.",
+    "verseRef": "Gálatas 3:9",
+    "passageText": "Assim, os que são da fé são abençoados com o crente Abraão.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "os que são da fé são abençoados com o crente Abraão",
+    "feedbackCorrect": "Quem é abençoado com Abraão é quem é da fé, não só quem é de sangue.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 3:9: são os que são da fé, com o crente Abraão."
+    },
+    "hint": "Veja quem é abençoado junto com Abraão.",
+    "learningObjective": "Observar quem recebe a bênção com Abraão.",
+    "evidence": [
+      "Gálatas 3:9"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-02-fe-02",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 3:8, toque a quem o evangelho foi proclamado primeiro.",
+    "prompt": "Em Gálatas 3:8, toque a quem o evangelho foi proclamado primeiro.",
+    "cue": "Em Gálatas 3:8, toque a quem o evangelho foi proclamado primeiro.",
+    "verseRef": "Gálatas 3:8",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gentios"
+      },
+      {
+        "id": "b",
+        "text": "Escritura"
+      },
+      {
+        "id": "c",
+        "text": "Abraão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "proclamou primeiro o evangelho a Abraão",
+    "feedbackCorrect": "Antes de tudo, o evangelho foi anunciado ao próprio Abraão.",
+    "feedbackWrong": {
+      "a": "Os gentios são os alcançados depois, pela promessa.",
+      "b": "A Escritura é quem proclama; o anúncio é feito a outra pessoa."
+    },
+    "hint": "Procure o nome próprio perto do fim.",
+    "learningObjective": "Identificar Abraão como primeiro ouvinte da promessa.",
+    "evidence": [
+      "Gálatas 3:8"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-02-fe-03",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 3:11, como o justo viverá?",
+    "prompt": "Segundo Gálatas 3:11, como o justo viverá?",
+    "cue": "Segundo Gálatas 3:11, como o justo viverá?",
+    "verseRef": "Gálatas 3:11",
+    "passageText": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por pertencer ao povo de Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Pela fé em Deus"
+      },
+      {
+        "id": "c",
+        "text": "Por seus próprios méritos"
+      },
+      {
+        "id": "d",
+        "text": "Pela observância completa da lei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o justo viverá pela fé",
+    "feedbackCorrect": "A frase resume a cena: o justo viverá pela fé.",
+    "feedbackWrong": {
+      "a": "O que conta é a fé, como a de Abraão, e não só o sangue.",
+      "c": "Mérito próprio é depender de obras, caminho que Paulo descarta.",
+      "d": "O próprio versículo diz que pela lei ninguém é justificado."
+    },
+    "hint": "Veja a frase citada no fim do versículo.",
+    "learningObjective": "Observar como o justo vive segundo Gálatas 3:11.",
+    "evidence": [
+      "Gálatas 3:11"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-02-fe-04",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 3:13 na ordem do texto.",
+    "prompt": "Monte Gálatas 3:13 na ordem do texto.",
+    "cue": "Monte Gálatas 3:13 na ordem do texto.",
+    "verseRef": "Gálatas 3:13",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo nos redimiu da maldição da lei"
+      },
+      {
+        "id": "b",
+        "text": "tornando-se ele mesmo maldição em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "Maldito todo aquele que for pendurado em madeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cristo nos redimiu da maldição da lei",
+    "feedbackCorrect": "Cristo redime tomando a maldição em nosso lugar, no madeiro.",
+    "feedbackWrong": {
+      "default": "Comece pela redenção; a citação do madeiro fecha o versículo."
+    },
+    "hint": "O versículo começa com o que Cristo fez.",
+    "learningObjective": "Reconhecer a sequência de Gálatas 3:13.",
+    "evidence": [
+      "Gálatas 3:13"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-02-fe-05",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 3:9, como Abraão é chamado junto dos que são da fé?",
+    "prompt": "Em Gálatas 3:9, como Abraão é chamado junto dos que são da fé?",
+    "cue": "Em Gálatas 3:9, como Abraão é chamado junto dos que são da fé?",
+    "verseRef": "Gálatas 3:9",
+    "passageText": "Assim, os que são da fé são abençoados com o crente Abraão.",
+    "template": "Assim, os que são da fé são abençoados com o ___ Abraão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "velho"
+      },
+      {
+        "id": "b",
+        "text": "crente"
+      },
+      {
+        "id": "c",
+        "text": "rico"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "são abençoados com o crente Abraão",
+    "feedbackCorrect": "Abraão é o crente: ele recebeu a promessa crendo em Deus.",
+    "feedbackWrong": {
+      "a": "O texto não destaca idade, mas que Abraão creu.",
+      "c": "O texto não destaca riqueza, mas a fé de Abraão."
+    },
+    "hint": "Veja o adjetivo antes do nome dele.",
+    "learningObjective": "Lembrar como o texto chama Abraão.",
+    "evidence": [
+      "Gálatas 3:9"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-02-fe-06",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 3:9 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:9 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:9 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 3:9",
+    "passageText": "Assim, os que são da fé são abençoados com o crente Abraão.",
+    "passageA": {
+      "ref": "Gálatas 3:9",
+      "text": "Assim, os que são da fé são abençoados com o crente Abraão."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem crê é abençoado junto com Abraão, que creu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A bênção vem pelas obras"
+      },
+      {
+        "id": "b",
+        "text": "A bênção vem pelo sangue"
+      },
+      {
+        "id": "c",
+        "text": "A bênção vem pela fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os que são da fé são abençoados",
+    "feedbackCorrect": "A ligação com Abraão é pela fé, como ele mesmo creu.",
+    "feedbackWrong": {
+      "a": "Depender das obras da lei é o caminho oposto ao da fé.",
+      "b": "Paulo não limita a bênção aos descendentes de sangue."
+    },
+    "hint": "Veja o que os abençoados têm em comum com Abraão.",
+    "learningObjective": "Ligar Gálatas 3:9 à bênção recebida pela fé.",
+    "evidence": [
+      "Gálatas 3:9"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-02-fe-01",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 3:14, Cristo redime para que a bênção de Abraão chegue também aos gentios.",
+    "prompt": "Em Gálatas 3:14, Cristo redime para que a bênção de Abraão chegue também aos gentios.",
+    "cue": "Em Gálatas 3:14, Cristo redime para que a bênção de Abraão chegue também aos gentios.",
+    "verseRef": "Gálatas 3:13–14",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro. Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Para que a bênção de Abraão chegasse aos gentios",
+    "feedbackCorrect": "A redenção tem destino certo: a bênção alcança os gentios.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Gálatas 3:14 e veja o para quê da redenção."
+    },
+    "hint": "Veja a finalidade dita em 3:14.",
+    "learningObjective": "Compreender a finalidade da redenção em 3:14.",
+    "evidence": [
+      "Gálatas 3:13–14"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-02-fe-02",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 3:12, toque a expressão que marca o contraste entre lei e fé.",
+    "prompt": "Em Gálatas 3:12, toque a expressão que marca o contraste entre lei e fé.",
+    "cue": "Em Gálatas 3:12, toque a expressão que marca o contraste entre lei e fé.",
+    "verseRef": "Gálatas 3:12",
+    "passageText": "A lei não se fundamenta na fé; ao contrário, aquele que cumprir seus preceitos, por eles viverá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "preceitos"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "ao contrário"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A lei não se fundamenta na fé; ao contrário",
+    "feedbackCorrect": "A expressão vira o argumento: lei e fé não têm o mesmo fundamento.",
+    "feedbackWrong": {
+      "a": "Preceitos descrevem a lei; a virada vem antes deles.",
+      "b": "Fé é um dos lados do contraste, não a marca da virada."
+    },
+    "hint": "Procure depois do ponto e vírgula.",
+    "learningObjective": "Reconhecer a marca de contraste em 3:12.",
+    "evidence": [
+      "Gálatas 3:12"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-02-fe-03",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 3:10–11 relaciona lei e justificação?",
+    "prompt": "Como Gálatas 3:10–11 relaciona lei e justificação?",
+    "cue": "Como Gálatas 3:10–11 relaciona lei e justificação?",
+    "verseRef": "Gálatas 3:10–11",
+    "passageText": "Todos aqueles que dependem das obras da lei estão sob maldição, pois está escrito: Maldito todo aquele que não permanece em todas as coisas escritas no livro da lei, para praticá-las. Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cumprir parte da lei já justifica a pessoa"
+      },
+      {
+        "id": "b",
+        "text": "Deus justifica por lei e fé somadas"
+      },
+      {
+        "id": "c",
+        "text": "A lei justifica quem tenta com sinceridade"
+      },
+      {
+        "id": "d",
+        "text": "Depender da lei não justifica diante de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "pela lei, ninguém é justificado diante de Deus",
+    "feedbackCorrect": "Paulo é direto: pela lei, ninguém é justificado diante de Deus.",
+    "feedbackWrong": {
+      "a": "A exigência é permanecer em tudo; parte não basta no argumento.",
+      "b": "Paulo não soma os caminhos; ele os contrapõe em 3:12.",
+      "c": "Sinceridade não muda o veredito do texto sobre a lei."
+    },
+    "hint": "Veja o veredito de Paulo em 3:11.",
+    "learningObjective": "Relacionar lei e justificação em 3:10–11.",
+    "evidence": [
+      "Gálatas 3:10–11"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-02-fe-04",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Gálatas 3:8–9?",
+    "prompt": "Como avança o argumento em Gálatas 3:8–9?",
+    "cue": "Como avança o argumento em Gálatas 3:8–9?",
+    "verseRef": "Gálatas 3:8–9",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos. Assim, os que são da fé são abençoados com o crente Abraão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Escritura prevê gentios justificados pela fé"
+      },
+      {
+        "id": "b",
+        "text": "A promessa é anunciada primeiro a Abraão"
+      },
+      {
+        "id": "c",
+        "text": "Quem é da fé é abençoado com Abraão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "proclamou primeiro o evangelho a Abraão",
+    "feedbackCorrect": "Previsão, anúncio a Abraão e bênção de quem crê: é o fio de Paulo.",
+    "feedbackWrong": {
+      "default": "A conclusão sobre quem é da fé fecha a sequência."
+    },
+    "hint": "A conclusão vem em 3:9.",
+    "learningObjective": "Compreender o avanço do argumento em 3:8–9.",
+    "evidence": [
+      "Gálatas 3:8–9"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-02-fe-05",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 3:14, o que faríamos com o Espírito prometido pela fé?",
+    "prompt": "Em Gálatas 3:14, o que faríamos com o Espírito prometido pela fé?",
+    "cue": "Em Gálatas 3:14, o que faríamos com o Espírito prometido pela fé?",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "template": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que ___, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "merecêssemos"
+      },
+      {
+        "id": "b",
+        "text": "recebêssemos"
+      },
+      {
+        "id": "c",
+        "text": "comprássemos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que recebêssemos, pela fé, o Espírito prometido",
+    "feedbackCorrect": "O Espírito prometido é recebido pela fé, não comprado nem merecido.",
+    "feedbackWrong": {
+      "a": "Merecer seria obra; o texto diz receber pela fé.",
+      "c": "Nada aqui é comprado; a promessa é recebida pela fé."
+    },
+    "hint": "Procure o verbo ligado ao Espírito no fim.",
+    "learningObjective": "Compreender que o Espírito prometido é recebido pela fé.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-02-fe-06",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 3:11 a Habacuque 2:4?",
+    "prompt": "O que liga Gálatas 3:11 a Habacuque 2:4?",
+    "cue": "O que liga Gálatas 3:11 a Habacuque 2:4?",
+    "verseRef": "Gálatas 3:11",
+    "passageText": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé.",
+    "passageA": {
+      "ref": "Gálatas 3:11",
+      "text": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé."
+    },
+    "passageB": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei traz vida plena"
+      },
+      {
+        "id": "b",
+        "text": "O justo vive pela fé"
+      },
+      {
+        "id": "c",
+        "text": "A fé dispensa Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o justo viverá pela fé",
+    "feedbackCorrect": "Paulo cita Habacuque: a vida do justo é pela fé em Deus.",
+    "feedbackWrong": {
+      "a": "A frase antiga fala de vida pela fé, não pela lei.",
+      "c": "Viver pela fé é confiar em Deus, não dispensá-lo."
+    },
+    "hint": "Compare a frase final dos dois textos.",
+    "learningObjective": "Relacionar Gálatas 3:11 à sua fonte em Habacuque.",
+    "evidence": [
+      "Gálatas 3:11",
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-02-fe-01",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gálatas 3:13 ensina que Cristo apenas mostrou o caminho para escaparmos sozinhos da maldição da lei.",
+    "prompt": "Gálatas 3:13 ensina que Cristo apenas mostrou o caminho para escaparmos sozinhos da maldição da lei.",
+    "cue": "Gálatas 3:13 ensina que Cristo apenas mostrou o caminho para escaparmos sozinhos da maldição da lei.",
+    "verseRef": "Gálatas 3:13",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "tornando-se ele mesmo maldição em nosso lugar",
+    "feedbackCorrect": "Cristo não só mostra: ele toma a maldição em nosso lugar.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 3:13: ele se fez maldição em nosso lugar."
+    },
+    "hint": "Veja o que Cristo se tornou por nós.",
+    "learningObjective": "Interpretar a obra de Cristo em nosso lugar.",
+    "evidence": [
+      "Gálatas 3:13"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-02-fe-02",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o nosso lugar.",
+    "prompt": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o nosso lugar.",
+    "cue": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o nosso lugar.",
+    "verseRef": "Gálatas 3:13",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em nosso lugar"
+      },
+      {
+        "id": "b",
+        "text": "maldição da lei"
+      },
+      {
+        "id": "c",
+        "text": "madeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tornando-se ele mesmo maldição em nosso lugar",
+    "feedbackCorrect": "Ele se fez maldição no lugar de quem estava sob a maldição.",
+    "feedbackWrong": {
+      "b": "Essa é a maldição da qual Cristo nos redimiu.",
+      "c": "O madeiro é o lugar da morte, não a troca por nós."
+    },
+    "hint": "Procure a expressão que indica substituição.",
+    "learningObjective": "Sustentar com o texto Cristo em nosso lugar.",
+    "evidence": [
+      "Gálatas 3:13"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-02-fe-03",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 3:14 sustenta sobre os gentios?",
+    "prompt": "Que leitura Gálatas 3:14 sustenta sobre os gentios?",
+    "cue": "Que leitura Gálatas 3:14 sustenta sobre os gentios?",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Precisam da lei antes de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ficam fora da promessa de Abraão"
+      },
+      {
+        "id": "c",
+        "text": "Recebem a bênção em Cristo pela fé"
+      },
+      {
+        "id": "d",
+        "text": "Recebem o Espírito por mérito próprio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "recebêssemos, pela fé, o Espírito prometido",
+    "feedbackCorrect": "A bênção chega aos gentios em Cristo e é recebida pela fé.",
+    "feedbackWrong": {
+      "a": "A bênção chega em Cristo, sem passar antes pela lei.",
+      "b": "Paulo diz o contrário: a bênção chega também aos gentios.",
+      "d": "O Espírito é prometido e recebido pela fé, não por mérito."
+    },
+    "hint": "Veja o destino da bênção no versículo.",
+    "learningObjective": "Escolher a leitura que 3:14 sustenta sobre os gentios.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-02-fe-04",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Gálatas 3:8–14?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 3:8–14?",
+    "cue": "Qual sequência revela o sentido de Gálatas 3:8–14?",
+    "verseRef": "Gálatas 3:8",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete abençoar os povos em Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Cristo toma a maldição em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "Gentios recebem o Espírito pela fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em ti, serão abençoados todos os povos",
+    "feedbackCorrect": "Promessa, redenção e Espírito recebido: o caminho inteiro de Paulo.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa a Abraão; o Espírito recebido é o fim."
+    },
+    "hint": "Siga de Abraão até o Espírito prometido.",
+    "learningObjective": "Ver o encadeamento promessa, redenção e fé.",
+    "evidence": [
+      "Gálatas 3:8",
+      "Gálatas 3:13",
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-02-fe-05",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 3:11, o que ninguém é pela lei diante de Deus?",
+    "prompt": "Em Gálatas 3:11, o que ninguém é pela lei diante de Deus?",
+    "cue": "Em Gálatas 3:11, o que ninguém é pela lei diante de Deus?",
+    "verseRef": "Gálatas 3:11",
+    "passageText": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé.",
+    "template": "Mas é evidente que, pela lei, ninguém é ___ diante de Deus, porque o justo viverá pela fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justificado"
+      },
+      {
+        "id": "b",
+        "text": "ignorado"
+      },
+      {
+        "id": "c",
+        "text": "condenado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pela lei, ninguém é justificado diante de Deus",
+    "feedbackCorrect": "O termo resume a cena: aceito por Deus, mas nunca pela lei.",
+    "feedbackWrong": {
+      "b": "Deus não ignora; ele declara quem é justo, e não é pela lei.",
+      "c": "O versículo fala de não ser aceito pela lei, com outro termo."
+    },
+    "hint": "Procure o termo central do versículo.",
+    "learningObjective": "Lembrar o termo central da justificação pela fé.",
+    "evidence": [
+      "Gálatas 3:11"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-02-fe-06",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 3:8 a Romanos 4:3?",
+    "prompt": "O que liga Gálatas 3:8 a Romanos 4:3?",
+    "cue": "O que liga Gálatas 3:8 a Romanos 4:3?",
+    "verseRef": "Gálatas 3:8",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos.",
+    "passageA": {
+      "ref": "Gálatas 3:8",
+      "text": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos."
+    },
+    "passageB": {
+      "ref": "Romanos 4:3",
+      "text": "Pois o que diz a Escritura? Abraão creu em Deus, e isso lhe foi imputado como justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abraão creu e foi abençoado"
+      },
+      {
+        "id": "b",
+        "text": "A promessa é só dos descendentes"
+      },
+      {
+        "id": "c",
+        "text": "Abraão foi aceito pelas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "proclamou primeiro o evangelho a Abraão",
+    "feedbackCorrect": "Nos dois textos, Abraão é o homem que creu e foi aceito.",
+    "feedbackWrong": {
+      "b": "A promessa em Abraão alcança todos os povos, diz Gálatas.",
+      "c": "Romanos diz que ele creu, e isso lhe foi contado como justiça."
+    },
+    "hint": "Veja o que Abraão fez diante de Deus.",
+    "learningObjective": "Ligar Abraão crente em Gálatas e Romanos.",
+    "evidence": [
+      "Gálatas 3:8",
+      "Romanos 4:3"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-03-espirito-01",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 5:24, os que pertencem a Cristo Jesus crucificaram a carne com suas paixões.",
+    "prompt": "Em Gálatas 5:24, os que pertencem a Cristo Jesus crucificaram a carne com suas paixões.",
+    "cue": "Em Gálatas 5:24, os que pertencem a Cristo Jesus crucificaram a carne com suas paixões.",
+    "verseRef": "Gálatas 5:24",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os que pertencem a Cristo Jesus crucificaram a carne",
+    "feedbackCorrect": "Pertencer a Cristo aparece numa vida que não obedece à carne.",
+    "feedbackWrong": {
+      "false": "Releia Gálatas 5:24: os de Cristo crucificaram a carne."
+    },
+    "hint": "Veja o que os de Cristo fizeram com a carne.",
+    "learningObjective": "Observar a marca de quem pertence a Cristo.",
+    "evidence": [
+      "Gálatas 5:24"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-03-espirito-02",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 5:22, toque o primeiro fruto citado na lista do Espírito.",
+    "prompt": "Em Gálatas 5:22, toque o primeiro fruto citado na lista do Espírito.",
+    "cue": "Em Gálatas 5:22, toque o primeiro fruto citado na lista do Espírito.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "A lista do fruto começa pelo amor, marca de quem serve.",
+    "feedbackWrong": {
+      "a": "Alegria vem logo depois, na mesma lista do fruto.",
+      "c": "Paz é o terceiro item citado por Paulo."
+    },
+    "hint": "Veja a primeira palavra da lista do fruto.",
+    "learningObjective": "Identificar o primeiro fruto citado.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-03-espirito-03",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 5:19, como Paulo chama adultério, impureza e lascívia?",
+    "prompt": "Segundo Gálatas 5:19, como Paulo chama adultério, impureza e lascívia?",
+    "cue": "Segundo Gálatas 5:19, como Paulo chama adultério, impureza e lascívia?",
+    "verseRef": "Gálatas 5:19",
+    "passageText": "Porque as obras da carne são manifestas: adultério, prostituição, impureza e lascívia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto da liberdade"
+      },
+      {
+        "id": "b",
+        "text": "Dons para a igreja"
+      },
+      {
+        "id": "c",
+        "text": "Fruto do Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Obras da carne"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "as obras da carne são manifestas",
+    "feedbackCorrect": "Paulo chama essa lista de obras da carne, não de fruto.",
+    "feedbackWrong": {
+      "a": "Liberdade em Cristo não produz obras da carne.",
+      "b": "O texto não chama essa lista de dons para a igreja.",
+      "c": "Fruto do Espírito é a outra lista, a de Gálatas 5:22."
+    },
+    "hint": "Veja o nome que Paulo dá à lista.",
+    "learningObjective": "Observar o nome da lista de Gálatas 5:19.",
+    "evidence": [
+      "Gálatas 5:19"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-03-espirito-04",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 5:22 na ordem do texto.",
+    "prompt": "Monte Gálatas 5:22 na ordem do texto.",
+    "cue": "Monte Gálatas 5:22 na ordem do texto.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o fruto do Espírito é amor, alegria, paz"
+      },
+      {
+        "id": "b",
+        "text": "longanimidade, benignidade, bondade, fidelidade"
+      },
+      {
+        "id": "c",
+        "text": "mansidão e autocontrole"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "A lista vai do amor ao domínio próprio: é um fruto só.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor; o domínio próprio fecha a lista."
+    },
+    "hint": "O domínio próprio é o último item.",
+    "learningObjective": "Reconhecer a ordem da lista do fruto.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-03-espirito-05",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 5:23, contra o fruto do Espírito não existe o quê?",
+    "prompt": "Em Gálatas 5:23, contra o fruto do Espírito não existe o quê?",
+    "cue": "Em Gálatas 5:23, contra o fruto do Espírito não existe o quê?",
+    "verseRef": "Gálatas 5:23",
+    "passageText": "Contra essas coisas não existe lei.",
+    "template": "Contra essas coisas não existe ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Contra essas coisas não existe lei",
+    "feedbackCorrect": "Nenhuma lei condena o amor e o domínio próprio do fruto.",
+    "feedbackWrong": {
+      "b": "A frase fala do que não existe contra o fruto, e não é fé.",
+      "c": "A carne é o oposto do fruto, não o que falta contra ele."
+    },
+    "hint": "Veja a frase curta inteira.",
+    "learningObjective": "Lembrar o que não existe contra o fruto.",
+    "evidence": [
+      "Gálatas 5:23"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-03-espirito-06",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 5:22 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "passageA": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Espírito produz uma vida marcada por amor e domínio próprio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei produz o fruto"
+      },
+      {
+        "id": "b",
+        "text": "A carne produz liberdade"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito gera novo caráter"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "O fruto mostra um caráter novo gerado pelo Espírito.",
+    "feedbackWrong": {
+      "a": "O fruto é do Espírito, não uma produção da lei.",
+      "b": "A carne produz obras contra Deus, não liberdade verdadeira."
+    },
+    "hint": "Veja de quem é o fruto no versículo.",
+    "learningObjective": "Ligar o fruto ao novo caráter gerado pelo Espírito.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-03-espirito-01",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 5:22, Paulo chama a lista do amor e da paz de obras da carne.",
+    "prompt": "Em Gálatas 5:22, Paulo chama a lista do amor e da paz de obras da carne.",
+    "cue": "Em Gálatas 5:22, Paulo chama a lista do amor e da paz de obras da carne.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "Amor e paz são fruto do Espírito, o oposto das obras da carne.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 5:22: é fruto do Espírito, não obra da carne."
+    },
+    "hint": "Veja o nome que Paulo dá a essa lista.",
+    "learningObjective": "Compreender o contraste entre carne e Espírito.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-03-espirito-02",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "prompt": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "cue": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fruto"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "Mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas o fruto do Espírito é",
+    "feedbackCorrect": "A palavrinha abre a lista oposta: agora é o Espírito quem age.",
+    "feedbackWrong": {
+      "a": "Fruto nomeia a nova lista, não a virada do texto.",
+      "b": "Amor é o primeiro item da lista, não a marca da virada."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a marca de contraste em 5:22.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-03-espirito-03",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 5:22 se relaciona com a lista anterior das obras da carne?",
+    "prompt": "Como Gálatas 5:22 se relaciona com a lista anterior das obras da carne?",
+    "cue": "Como Gálatas 5:22 se relaciona com a lista anterior das obras da carne?",
+    "verseRef": "Gálatas 5:21–22",
+    "passageText": "Invejas, homicídios, embriaguez, glutonarias e coisas semelhantes a estas, a respeito das quais eu vos declaro, como já vos preveni anteriormente, que os que praticam tais coisas não herdarão o reino de Deus. Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Troca o Espírito pelo esforço da carne"
+      },
+      {
+        "id": "b",
+        "text": "Mostra o contraste entre carne e Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Repete as obras da carne com outros nomes"
+      },
+      {
+        "id": "d",
+        "text": "Encerra o assunto sem mudar de tema"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "Depois da carne, o contraste: o que o Espírito produz é o oposto.",
+    "feedbackWrong": {
+      "a": "Quem produz o fruto é o Espírito, não o esforço da carne.",
+      "c": "A lista nova não repete a antiga; ela a contrasta.",
+      "d": "O tema muda da carne para o Espírito que frutifica."
+    },
+    "hint": "Compare o nome das duas listas de Paulo.",
+    "learningObjective": "Relacionar as duas listas de Gálatas 5.",
+    "evidence": [
+      "Gálatas 5:21–22"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-03-espirito-04",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Gálatas 5:22–23?",
+    "prompt": "Como avança Gálatas 5:22–23?",
+    "cue": "Como avança Gálatas 5:22–23?",
+    "verseRef": "Gálatas 5:22–23",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito produz amor e paz na vida"
+      },
+      {
+        "id": "b",
+        "text": "O fruto chega ao domínio próprio"
+      },
+      {
+        "id": "c",
+        "text": "Contra esse fruto não há condenação da lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Contra essas coisas não existe lei",
+    "feedbackCorrect": "Do amor ao domínio próprio, e nenhuma lei condena esse fruto.",
+    "feedbackWrong": {
+      "default": "A frase sobre a lei fecha os dois versículos."
+    },
+    "hint": "A frase final fala do que não existe contra o fruto.",
+    "learningObjective": "Compreender o avanço de Gálatas 5:22–23.",
+    "evidence": [
+      "Gálatas 5:22–23"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-03-espirito-05",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 5:25, o que devemos fazer se vivemos no Espírito?",
+    "prompt": "Em Gálatas 5:25, o que devemos fazer se vivemos no Espírito?",
+    "cue": "Em Gálatas 5:25, o que devemos fazer se vivemos no Espírito?",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "template": "Se vivemos no Espírito, ___ também pelo Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "paremos"
+      },
+      {
+        "id": "b",
+        "text": "andemos"
+      },
+      {
+        "id": "c",
+        "text": "corramos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Viver no Espírito pede uma caminhada diária guiada por ele.",
+    "feedbackWrong": {
+      "a": "Parar é o contrário da caminhada que Paulo pede.",
+      "c": "Paulo não fala de correr, mas de andar pelo Espírito."
+    },
+    "hint": "Veja o verbo depois de vivemos.",
+    "learningObjective": "Compreender que viver no Espírito muda a caminhada.",
+    "evidence": [
+      "Gálatas 5:25"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-03-espirito-06",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 5:24 a Romanos 8:13?",
+    "prompt": "O que liga Gálatas 5:24 a Romanos 8:13?",
+    "cue": "O que liga Gálatas 5:24 a Romanos 8:13?",
+    "verseRef": "Gálatas 5:24",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências.",
+    "passageA": {
+      "ref": "Gálatas 5:24",
+      "text": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências."
+    },
+    "passageB": {
+      "ref": "Romanos 8:13",
+      "text": "Porque, se viverdes segundo a carne, morrereis; mas, se, pelo Espírito, mortificardes as obras do corpo, certamente, vivereis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A carne deve ser vencida"
+      },
+      {
+        "id": "b",
+        "text": "A carne deve ser seguida"
+      },
+      {
+        "id": "c",
+        "text": "O corpo não importa para Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "crucificaram a carne",
+    "feedbackCorrect": "Nos dois textos, a vida no Espírito vence os feitos da carne.",
+    "feedbackWrong": {
+      "b": "Seguir a carne é o caminho que Paulo manda deixar.",
+      "c": "Paulo leva o corpo a sério: ele deve viver pelo Espírito."
+    },
+    "hint": "Compare o destino da carne nos dois textos.",
+    "learningObjective": "Relacionar a vitória sobre a carne em Paulo.",
+    "evidence": [
+      "Gálatas 5:24",
+      "Romanos 8:13"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-03-espirito-01",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gálatas 5:25 ensina que viver no Espírito deve aparecer numa caminhada diária guiada por ele.",
+    "prompt": "Gálatas 5:25 ensina que viver no Espírito deve aparecer numa caminhada diária guiada por ele.",
+    "cue": "Gálatas 5:25 ensina que viver no Espírito deve aparecer numa caminhada diária guiada por ele.",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Vida no Espírito não é só teoria: ela vira passos diários.",
+    "feedbackWrong": {
+      "false": "Releia Gálatas 5:25: viver no Espírito pede andar por ele."
+    },
+    "hint": "Veja o pedido que segue o viver no Espírito.",
+    "learningObjective": "Interpretar a ligação entre viver e andar pelo Espírito.",
+    "evidence": [
+      "Gálatas 5:25"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-03-espirito-02",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 5:26, toque o que não deve dominar quem anda pelo Espírito.",
+    "prompt": "Em Gálatas 5:26, toque o que não deve dominar quem anda pelo Espírito.",
+    "cue": "Em Gálatas 5:26, toque o que não deve dominar quem anda pelo Espírito.",
+    "verseRef": "Gálatas 5:26",
+    "passageText": "Não nos deixemos dominar pela vaidade, provocando uns aos outros e nutrindo inveja uns dos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "vaidade"
+      },
+      {
+        "id": "c",
+        "text": "inveja"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não nos deixemos dominar pela vaidade",
+    "feedbackCorrect": "A vaidade provoca e gera inveja; não combina com o Espírito.",
+    "feedbackWrong": {
+      "a": "Essa expressão mostra as pessoas afetadas, não o domínio.",
+      "c": "A inveja é fruto da vaidade, não o domínio citado primeiro."
+    },
+    "hint": "Veja o começo do último versículo.",
+    "learningObjective": "Sustentar com o texto a rejeição da vaidade.",
+    "evidence": [
+      "Gálatas 5:26"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-03-espirito-03",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 5:22–23 sustenta sobre a liberdade cristã?",
+    "prompt": "Que leitura Gálatas 5:22–23 sustenta sobre a liberdade cristã?",
+    "cue": "Que leitura Gálatas 5:22–23 sustenta sobre a liberdade cristã?",
+    "verseRef": "Gálatas 5:22–23",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela libera a carne para fazer o que quer"
+      },
+      {
+        "id": "b",
+        "text": "Ela depende de cumprir listas para ser aceito"
+      },
+      {
+        "id": "c",
+        "text": "Ela produz amor e domínio próprio pelo Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Ela torna desnecessário amar o próximo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "Liberdade de verdade frutifica em amor, não em licença da carne.",
+    "feedbackWrong": {
+      "a": "Essa é a leitura da carne, que Paulo opõe ao fruto.",
+      "b": "O fruto é obra do Espírito, não pagamento por listas.",
+      "d": "O fruto começa justamente pelo amor ao próximo."
+    },
+    "hint": "Veja o que a liberdade produz na lista do fruto.",
+    "learningObjective": "Escolher a leitura da liberdade que o texto sustenta.",
+    "evidence": [
+      "Gálatas 5:22–23"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-03-espirito-04",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Gálatas 5:24–26?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 5:24–26?",
+    "cue": "Qual sequência revela o sentido de Gálatas 5:24–26?",
+    "verseRef": "Gálatas 5:24–25",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências. Se vivemos no Espírito, andemos também pelo Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que são de Cristo crucificam a carne"
+      },
+      {
+        "id": "b",
+        "text": "Quem vive no Espírito anda por ele"
+      },
+      {
+        "id": "c",
+        "text": "A vaidade e a inveja ficam para trás"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "os que pertencem a Cristo Jesus crucificaram a carne",
+    "feedbackCorrect": "Carne crucificada, caminhada no Espírito e nada de vaidade.",
+    "feedbackWrong": {
+      "default": "Comece por pertencer a Cristo; a vaidade rejeitada fecha."
+    },
+    "hint": "Comece por quem pertence a Cristo.",
+    "learningObjective": "Ver a lógica da vida pelo Espírito em 5:24–26.",
+    "evidence": [
+      "Gálatas 5:24–25",
+      "Gálatas 5:26"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-03-espirito-05",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 5:22, qual é o último fruto citado na lista do Espírito?",
+    "prompt": "Em Gálatas 5:22, qual é o último fruto citado na lista do Espírito?",
+    "cue": "Em Gálatas 5:22, qual é o último fruto citado na lista do Espírito?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "template": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "autocontrole"
+      },
+      {
+        "id": "b",
+        "text": "orgulho"
+      },
+      {
+        "id": "c",
+        "text": "descontrole"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mansidão e autocontrole",
+    "feedbackCorrect": "A lista fecha com domínio próprio, marca da liberdade guiada.",
+    "feedbackWrong": {
+      "b": "Orgulho combina com vaidade, não com o fruto do Espírito.",
+      "c": "Descontrole é o oposto do fruto que fecha a lista."
+    },
+    "hint": "Veja a última palavra da lista.",
+    "learningObjective": "Lembrar o termo que fecha a lista do fruto.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-03-espirito-06",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 5:22 a João 15:5?",
+    "prompt": "O que liga Gálatas 5:22 a João 15:5?",
+    "cue": "O que liga Gálatas 5:22 a João 15:5?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "passageA": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "passageB": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Galhos vivem longe da videira"
+      },
+      {
+        "id": "b",
+        "text": "Fruto vem de vida em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Fruto nasce do esforço isolado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "Fruto não é esforço isolado: vem de permanecer em Cristo.",
+    "feedbackWrong": {
+      "a": "Longe da videira não há fruto, ensina João 15:5.",
+      "c": "Jesus diz que sem ele o galho nada pode fazer."
+    },
+    "hint": "Veja de onde vem o fruto em João 15:5.",
+    "learningObjective": "Ligar o fruto do Espírito à vida em Cristo.",
+    "evidence": [
+      "Gálatas 5:22",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-01",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 1:7, Paulo afirma que existe outro evangelho válido além do de Cristo.",
+    "prompt": "Em Gálatas 1:7, Paulo afirma que existe outro evangelho válido além do de Cristo.",
+    "cue": "Em Gálatas 1:7, Paulo afirma que existe outro evangelho válido além do de Cristo.",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Que não é outro",
+    "feedbackCorrect": "Paulo nega na hora: o suposto outro evangelho não é outro.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 1:7: Paulo diz que não é outro."
+    },
+    "hint": "Veja a correção logo no começo do versículo.",
+    "learningObjective": "Revisar que não há outro evangelho válido.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-02",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 3:9, toque com quem os que são da fé são abençoados.",
+    "prompt": "Em Gálatas 3:9, toque com quem os que são da fé são abençoados.",
+    "cue": "Em Gálatas 3:9, toque com quem os que são da fé são abençoados.",
+    "verseRef": "Gálatas 3:9",
+    "passageText": "Assim, os que são da fé são abençoados com o crente Abraão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "Abraão"
+      },
+      {
+        "id": "c",
+        "text": "os que são"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "são abençoados com o crente Abraão",
+    "feedbackCorrect": "Quem é da fé é abençoado junto com o crente Abraão.",
+    "feedbackWrong": {
+      "a": "Fé é o caminho da bênção, não a pessoa junto de quem somos abençoados.",
+      "c": "Essa expressão são os próprios abençoados, não a companhia deles."
+    },
+    "hint": "Procure o nome próprio no fim do versículo.",
+    "learningObjective": "Revisar a bênção com Abraão pela fé.",
+    "evidence": [
+      "Gálatas 3:9"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-03",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 5:22, qual fruto do Espírito é citado primeiro na lista?",
+    "prompt": "Segundo Gálatas 5:22, qual fruto do Espírito é citado primeiro na lista?",
+    "cue": "Segundo Gálatas 5:22, qual fruto do Espírito é citado primeiro na lista?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ira"
+      },
+      {
+        "id": "b",
+        "text": "Amor"
+      },
+      {
+        "id": "c",
+        "text": "Vaidade"
+      },
+      {
+        "id": "d",
+        "text": "Inveja"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "A lista do fruto começa pelo amor, e não pelas obras da carne.",
+    "feedbackWrong": {
+      "a": "Ira está na lista da carne, em Gálatas 5:20.",
+      "c": "Vaidade é o que Paulo manda deixar em Gálatas 5:26.",
+      "d": "Inveja aparece nas listas da carne e em 5:26."
+    },
+    "hint": "Veja o primeiro item da lista do Espírito.",
+    "learningObjective": "Revisar o primeiro fruto citado.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-04",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 1:4 na ordem do texto.",
+    "prompt": "Monte Gálatas 1:4 na ordem do texto.",
+    "cue": "Monte Gálatas 1:4 na ordem do texto.",
+    "verseRef": "Gálatas 1:4",
+    "passageText": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O qual se entregou a si mesmo pelos nossos pecados"
+      },
+      {
+        "id": "b",
+        "text": "para nos desarraigar deste mundo perverso"
+      },
+      {
+        "id": "c",
+        "text": "conforme a vontade de Deus, nosso Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se entregou a si mesmo pelos nossos pecados",
+    "feedbackCorrect": "Entrega pelos pecados, libertação e vontade do Pai: é a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega de Cristo; a vontade do Pai fecha."
+    },
+    "hint": "O versículo começa com a entrega de Cristo.",
+    "learningObjective": "Reconhecer a sequência de Gálatas 1:4.",
+    "evidence": [
+      "Gálatas 1:4"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-05",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 5:23, contra o fruto do Espírito não existe o quê?",
+    "prompt": "Em Gálatas 5:23, contra o fruto do Espírito não existe o quê?",
+    "cue": "Em Gálatas 5:23, contra o fruto do Espírito não existe o quê?",
+    "verseRef": "Gálatas 5:23",
+    "passageText": "Contra essas coisas não existe lei.",
+    "template": "Contra essas coisas não existe ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Contra essas coisas não existe lei",
+    "feedbackCorrect": "Nenhuma lei condena o fruto que o Espírito produz.",
+    "feedbackWrong": {
+      "b": "A frase fala do que não existe contra o fruto, e não é fé.",
+      "c": "A carne é o oposto do fruto, não a resposta da frase."
+    },
+    "hint": "Veja a frase curta inteira.",
+    "learningObjective": "Revisar o que não existe contra o fruto.",
+    "evidence": [
+      "Gálatas 5:23"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-06",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 3:14 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:14 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "passageA": {
+      "ref": "Gálatas 3:14",
+      "text": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A bênção prometida a Abraão alcança também os gentios."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei substitui a promessa"
+      },
+      {
+        "id": "b",
+        "text": "A promessa alcança os gentios"
+      },
+      {
+        "id": "c",
+        "text": "A promessa fica restrita"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a bênção de Abraão chegasse aos gentios",
+    "feedbackCorrect": "A promessa feita a Abraão chega, em Cristo, também aos gentios.",
+    "feedbackWrong": {
+      "a": "A lei não substitui a promessa; ela é recebida pela fé.",
+      "c": "Paulo diz que a bênção chega aos gentios, não que fica restrita."
+    },
+    "hint": "Veja o destino da bênção no versículo.",
+    "learningObjective": "Ligar a bênção de Abraão aos gentios.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-07",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 5:19, toque o primeiro item da lista das obras da carne.",
+    "prompt": "Em Gálatas 5:19, toque o primeiro item da lista das obras da carne.",
+    "cue": "Em Gálatas 5:19, toque o primeiro item da lista das obras da carne.",
+    "verseRef": "Gálatas 5:19",
+    "passageText": "Porque as obras da carne são manifestas: adultério, prostituição, impureza e lascívia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "adultério"
+      },
+      {
+        "id": "b",
+        "text": "impureza"
+      },
+      {
+        "id": "c",
+        "text": "lascívia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as obras da carne são manifestas: adultério",
+    "feedbackCorrect": "A lista da carne abre com adultério, antes de impureza e lascívia.",
+    "feedbackWrong": {
+      "b": "Impureza é o terceiro item citado na lista da carne.",
+      "c": "Lascívia fecha a lista deste versículo, não abre."
+    },
+    "hint": "Veja o item logo depois dos dois-pontos.",
+    "learningObjective": "Revisar o começo da lista da carne.",
+    "evidence": [
+      "Gálatas 5:19"
+    ]
+  },
+  {
+    "id": "galatas-sem-gl-04-desafio-08",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 3:8 na ordem do texto.",
+    "prompt": "Monte Gálatas 3:8 na ordem do texto.",
+    "cue": "Monte Gálatas 3:8 na ordem do texto.",
+    "verseRef": "Gálatas 3:8",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E a Escritura, prevendo que Deus justificaria os gentios"
+      },
+      {
+        "id": "b",
+        "text": "proclamou primeiro o evangelho a Abraão, dizendo"
+      },
+      {
+        "id": "c",
+        "text": "Em ti, serão abençoados todos os povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "proclamou primeiro o evangelho a Abraão",
+    "feedbackCorrect": "Previsão, anúncio a Abraão e bênção de todos os povos.",
+    "feedbackWrong": {
+      "default": "Comece pela Escritura prevendo; a promessa aos povos fecha."
+    },
+    "hint": "A promessa aos povos é a citação final.",
+    "learningObjective": "Reconhecer a sequência de Gálatas 3:8.",
+    "evidence": [
+      "Gálatas 3:8"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-01",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 3:14, a redenção de Cristo abre caminho para os gentios receberem a bênção de Abraão.",
+    "prompt": "Em Gálatas 3:14, a redenção de Cristo abre caminho para os gentios receberem a bênção de Abraão.",
+    "cue": "Em Gálatas 3:14, a redenção de Cristo abre caminho para os gentios receberem a bênção de Abraão.",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Para que a bênção de Abraão chegasse aos gentios",
+    "feedbackCorrect": "A redenção tem finalidade: a bênção de Abraão alcança os gentios.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Gálatas 3:14 e veja o destino da bênção."
+    },
+    "hint": "Veja a finalidade dita no começo de 3:14.",
+    "learningObjective": "Compreender a finalidade da redenção.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-02",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "prompt": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "cue": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alguns"
+      },
+      {
+        "id": "b",
+        "text": "outro"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que não é outro, mas há alguns",
+    "feedbackCorrect": "A palavrinha corrige tudo: não há outro, só há perturbação.",
+    "feedbackWrong": {
+      "a": "Alguns são as pessoas que perturbam a igreja.",
+      "b": "Outro é o que a mensagem falsa parece ser."
+    },
+    "hint": "Procure a conjunção que corrige a frase anterior.",
+    "learningObjective": "Reconhecer a correção de Paulo em 1:7.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-03",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 5:25 liga vida no Espírito e caminhada diária?",
+    "prompt": "Como Gálatas 5:25 liga vida no Espírito e caminhada diária?",
+    "cue": "Como Gálatas 5:25 liga vida no Espírito e caminhada diária?",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta viver, sem mudar a caminhada"
+      },
+      {
+        "id": "b",
+        "text": "A caminhada depende só da carne"
+      },
+      {
+        "id": "c",
+        "text": "Quem vive pelo Espírito deve andar por ele"
+      },
+      {
+        "id": "d",
+        "text": "Andar pelo Espírito é algo opcional"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Viver no Espírito e andar por ele andam juntos no texto.",
+    "feedbackWrong": {
+      "a": "Paulo não separa vida no Espírito de caminhada diária.",
+      "b": "A caminhada pedida é pelo Espírito, não pela carne.",
+      "d": "O pedido de Paulo é direto, não uma opção secundária."
+    },
+    "hint": "Veja o pedido que segue o viver no Espírito.",
+    "learningObjective": "Relacionar viver e andar pelo Espírito.",
+    "evidence": [
+      "Gálatas 5:25"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-04",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento de Gálatas nas três cenas da carta?",
+    "prompt": "Como avança o argumento de Gálatas nas três cenas da carta?",
+    "cue": "Como avança o argumento de Gálatas nas três cenas da carta?",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo defende um só evangelho de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "A promessa de Deus é recebida pela fé"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito produz fruto de amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "daquele que os chamou na graça de Cristo",
+    "feedbackCorrect": "Evangelho único, fé que recebe e fruto que aparece: é Gálatas inteiro.",
+    "feedbackWrong": {
+      "default": "Comece pela defesa do evangelho; o fruto é o ponto de chegada."
+    },
+    "hint": "O fruto do Espírito é o ponto de chegada.",
+    "learningObjective": "Compreender o avanço geral da carta.",
+    "evidence": [
+      "Gálatas 1:6",
+      "Gálatas 3:11",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-05",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 3:11, o que ninguém é pela lei diante de Deus?",
+    "prompt": "Em Gálatas 3:11, o que ninguém é pela lei diante de Deus?",
+    "cue": "Em Gálatas 3:11, o que ninguém é pela lei diante de Deus?",
+    "verseRef": "Gálatas 3:11",
+    "passageText": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé.",
+    "template": "Mas é evidente que, pela lei, ninguém é ___ diante de Deus, porque o justo viverá pela fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "condenado"
+      },
+      {
+        "id": "b",
+        "text": "justificado"
+      },
+      {
+        "id": "c",
+        "text": "ignorado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pela lei, ninguém é justificado diante de Deus",
+    "feedbackCorrect": "Aceito diante de Deus pela fé, nunca pela lei: é o centro da carta.",
+    "feedbackWrong": {
+      "a": "O versículo nega outro termo: ninguém é aceito pela lei assim.",
+      "c": "Deus não ignora ninguém; ele justifica, mas não é pela lei."
+    },
+    "hint": "Procure o termo central do versículo.",
+    "learningObjective": "Compreender o termo central de 3:11.",
+    "evidence": [
+      "Gálatas 3:11"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-06",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 1:11 a 1 Coríntios 15:3?",
+    "prompt": "O que liga Gálatas 1:11 a 1 Coríntios 15:3?",
+    "cue": "O que liga Gálatas 1:11 a 1 Coríntios 15:3?",
+    "verseRef": "Gálatas 1:11",
+    "passageText": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana.",
+    "passageA": {
+      "ref": "Gálatas 1:11",
+      "text": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:3",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo inventou a própria mensagem"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho não é invenção humana"
+      },
+      {
+        "id": "c",
+        "text": "Anjos trouxeram outro evangelho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não é de origem humana",
+    "feedbackCorrect": "Paulo entregou o que recebeu: o evangelho não nasceu dele.",
+    "feedbackWrong": {
+      "a": "Paulo afirma o contrário sobre a origem do evangelho.",
+      "c": "Nenhum dos textos fala de anjos com evangelho novo."
+    },
+    "hint": "Compare a origem do evangelho nos dois textos.",
+    "learningObjective": "Relacionar a origem do evangelho em Paulo.",
+    "evidence": [
+      "Gálatas 1:11",
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-07",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 3:12, toque a expressão que marca o contraste entre lei e fé.",
+    "prompt": "Em Gálatas 3:12, toque a expressão que marca o contraste entre lei e fé.",
+    "cue": "Em Gálatas 3:12, toque a expressão que marca o contraste entre lei e fé.",
+    "verseRef": "Gálatas 3:12",
+    "passageText": "A lei não se fundamenta na fé; ao contrário, aquele que cumprir seus preceitos, por eles viverá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ao contrário"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "preceitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A lei não se fundamenta na fé; ao contrário",
+    "feedbackCorrect": "A expressão marca a virada: lei e fé têm fundamentos diferentes.",
+    "feedbackWrong": {
+      "b": "Fé é um lado do contraste, não a marca da virada.",
+      "c": "Preceitos descrevem a lei; a virada vem antes."
+    },
+    "hint": "Procure depois do ponto e vírgula.",
+    "learningObjective": "Reconhecer a marca de contraste em 3:12.",
+    "evidence": [
+      "Gálatas 3:12"
+    ]
+  },
+  {
+    "id": "galatas-cam-gl-04-desafio-08",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Gálatas 5:22–23?",
+    "prompt": "Como avança Gálatas 5:22–23?",
+    "cue": "Como avança Gálatas 5:22–23?",
+    "verseRef": "Gálatas 5:22–23",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito produz amor e alegria na vida"
+      },
+      {
+        "id": "b",
+        "text": "O fruto chega ao domínio próprio"
+      },
+      {
+        "id": "c",
+        "text": "Contra esse fruto não há condenação da lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Contra essas coisas não existe lei",
+    "feedbackCorrect": "Do amor ao domínio próprio, sem lei contra esse fruto.",
+    "feedbackWrong": {
+      "default": "A frase sobre a lei fecha os dois versículos."
+    },
+    "hint": "A frase final fala do que não existe contra o fruto.",
+    "learningObjective": "Compreender o avanço de Gálatas 5:22–23.",
+    "evidence": [
+      "Gálatas 5:22–23"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-01",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gálatas 5:22–23 ensina que a liberdade cristã autoriza viver conforme os desejos da carne.",
+    "prompt": "Gálatas 5:22–23 ensina que a liberdade cristã autoriza viver conforme os desejos da carne.",
+    "cue": "Gálatas 5:22–23 ensina que a liberdade cristã autoriza viver conforme os desejos da carne.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "A liberdade frutifica pelo Espírito; ela não autoriza a carne.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 5:22: o que aparece é fruto do Espírito."
+    },
+    "hint": "Veja o que a liberdade produz segundo Paulo.",
+    "learningObjective": "Interpretar a liberdade sem licença para a carne.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-02",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o nosso lugar.",
+    "prompt": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o nosso lugar.",
+    "cue": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o nosso lugar.",
+    "verseRef": "Gálatas 3:13",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "maldição da lei"
+      },
+      {
+        "id": "b",
+        "text": "em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "madeiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tornando-se ele mesmo maldição em nosso lugar",
+    "feedbackCorrect": "Cristo se fez maldição no lugar de quem estava sob ela.",
+    "feedbackWrong": {
+      "a": "Essa é a maldição da qual Cristo nos redimiu.",
+      "c": "O madeiro é o lugar da morte, não a troca por nós."
+    },
+    "hint": "Procure a expressão que indica substituição.",
+    "learningObjective": "Sustentar Cristo em nosso lugar com o texto.",
+    "evidence": [
+      "Gálatas 3:13"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-03",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 3:8 sustenta sobre os gentios?",
+    "prompt": "Que leitura Gálatas 3:8 sustenta sobre os gentios?",
+    "cue": "Que leitura Gálatas 3:8 sustenta sobre os gentios?",
+    "verseRef": "Gálatas 3:8",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficam fora da promessa a Abraão"
+      },
+      {
+        "id": "b",
+        "text": "São justificados por Deus pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Só entram depois de abraçar a lei"
+      },
+      {
+        "id": "d",
+        "text": "São aceitos pelo próprio mérito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus justificaria os gentios pela fé",
+    "feedbackCorrect": "Antes da lei, a Escritura já previa gentios justificados pela fé.",
+    "feedbackWrong": {
+      "a": "A promessa a Abraão abençoa todos os povos, diz o texto.",
+      "c": "A previsão é de justificação pela fé, sem passar pela lei.",
+      "d": "Mérito próprio é depender de obras, caminho oposto ao da fé."
+    },
+    "hint": "Veja o que a Escritura previu sobre os gentios.",
+    "learningObjective": "Escolher a leitura de 3:8 sobre os gentios.",
+    "evidence": [
+      "Gálatas 3:8"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-04",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do caminho de Gálatas?",
+    "prompt": "Qual sequência revela o sentido do caminho de Gálatas?",
+    "cue": "Qual sequência revela o sentido do caminho de Gálatas?",
+    "verseRef": "Gálatas 3:8",
+    "passageText": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete abençoar os povos em Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Cristo toma a maldição em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito produz fruto em quem crê"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em ti, serão abençoados todos os povos",
+    "feedbackCorrect": "Promessa, redenção em nosso lugar e fruto do Espírito.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa a Abraão; o fruto é o fim do caminho."
+    },
+    "hint": "Siga de Abraão até o fruto do Espírito.",
+    "learningObjective": "Ver o encadeamento promessa, redenção e fruto.",
+    "evidence": [
+      "Gálatas 3:8",
+      "Gálatas 3:13",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-05",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 1:8, como deve ser tratado quem prega evangelho diferente?",
+    "prompt": "Em Gálatas 1:8, como deve ser tratado quem prega evangelho diferente?",
+    "cue": "Em Gálatas 1:8, como deve ser tratado quem prega evangelho diferente?",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "template": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "anátema"
+      },
+      {
+        "id": "b",
+        "text": "abençoado"
+      },
+      {
+        "id": "c",
+        "text": "aprovado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "seja anátema",
+    "feedbackCorrect": "A palavra forte mostra que a mensagem diferente é rejeitada.",
+    "feedbackWrong": {
+      "b": "Não há bênção para quem torce o evangelho de Cristo.",
+      "c": "Paulo não aprova a novidade; ele a rejeita com força."
+    },
+    "hint": "Veja a palavra final do versículo.",
+    "learningObjective": "Lembrar o termo da rejeição em 1:8.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-06",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 5:22 a João 15:5?",
+    "prompt": "O que liga Gálatas 5:22 a João 15:5?",
+    "cue": "O que liga Gálatas 5:22 a João 15:5?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "passageA": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "passageB": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto vem de vida em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Galhos vivem longe da videira"
+      },
+      {
+        "id": "c",
+        "text": "Fruto nasce do esforço isolado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "O fruto vem de permanecer em Cristo, não de esforço isolado.",
+    "feedbackWrong": {
+      "b": "Longe da videira o galho não vive nem frutifica.",
+      "c": "Sem Cristo, o galho nada pode fazer, diz João 15:5."
+    },
+    "hint": "Veja de onde vem o fruto em João 15:5.",
+    "learningObjective": "Ligar o fruto do Espírito à vida em Cristo.",
+    "evidence": [
+      "Gálatas 5:22",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-07",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 5:26, toque o que não deve dominar quem anda pelo Espírito.",
+    "prompt": "Em Gálatas 5:26, toque o que não deve dominar quem anda pelo Espírito.",
+    "cue": "Em Gálatas 5:26, toque o que não deve dominar quem anda pelo Espírito.",
+    "verseRef": "Gálatas 5:26",
+    "passageText": "Não nos deixemos dominar pela vaidade, provocando uns aos outros e nutrindo inveja uns dos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "vaidade"
+      },
+      {
+        "id": "c",
+        "text": "inveja"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não nos deixemos dominar pela vaidade",
+    "feedbackCorrect": "A vaidade provoca o outro e alimenta inveja; Paulo a rejeita.",
+    "feedbackWrong": {
+      "a": "Essa expressão mostra quem é afetado, não o domínio.",
+      "c": "A inveja nasce da vaidade; o domínio citado vem antes."
+    },
+    "hint": "Veja o começo do último versículo.",
+    "learningObjective": "Sustentar a rejeição da vaidade com o texto.",
+    "evidence": [
+      "Gálatas 5:26"
+    ]
+  },
+  {
+    "id": "galatas-pro-gl-04-desafio-08",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da liberdade em Gálatas?",
+    "prompt": "Qual sequência revela o caminho da liberdade em Gálatas?",
+    "cue": "Qual sequência revela o caminho da liberdade em Gálatas?",
+    "verseRef": "Gálatas 1:4",
+    "passageText": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo se entrega pelos nossos pecados"
+      },
+      {
+        "id": "b",
+        "text": "Quem crê recebe o Espírito prometido"
+      },
+      {
+        "id": "c",
+        "text": "Quem vive no Espírito anda por ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se entregou a si mesmo pelos nossos pecados",
+    "feedbackCorrect": "Entrega de Cristo, Espírito recebido e caminhada nova.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega de Cristo; andar pelo Espírito fecha."
+    },
+    "hint": "Comece pelo que Cristo fez por nós.",
+    "learningObjective": "Ver o caminho da liberdade em Gálatas inteiro.",
+    "evidence": [
+      "Gálatas 1:4",
+      "Gálatas 3:14",
+      "Gálatas 5:25"
+    ]
+  }
+]

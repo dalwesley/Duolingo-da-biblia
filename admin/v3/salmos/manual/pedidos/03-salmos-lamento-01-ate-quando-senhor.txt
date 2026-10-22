@@ -1,0 +1,59 @@
+Escreva a cena "salmos-lamento-01-ate-quando-senhor" da trilha "salmos" (Salmos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "salmos",
+  "title": "Salmos",
+  "description": "Oração, louvor e lamento do povo de Deus.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Lamento e confiança",
+ "mission": {
+  "slug": "salmos-lamento-01-ate-quando-senhor",
+  "title": "Até quando, Senhor?",
+  "type": "lesson",
+  "intro": "Clamar com honestidade.",
+  "hookRef": "Salmos",
+  "hookNote": "Clamar com honestidade.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre até?"
+ },
+ "v2": {
+  "passageRef": "Salmos",
+  "context": "Clamar com honestidade.",
+  "keyword": "Até",
+  "verseRefs": [
+   "Salmos 13:1-2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Salmos 13:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Salmos 13:1",
+   "text": "Até quando, Senhor? Esquecer-te-ás de mim para sempre? Até quando ocultarás de mim o Teu rosto?"
+  },
+  {
+   "ref": "Salmos 13:2",
+   "text": "Até quando estarei eu relutante na minha alma, com tristeza no coração dia após dia? Até quando se levantará contra mim o meu inimigo?"
+  },
+  {
+   "ref": "Salmos 13:3",
+   "text": "Atenta para mim, ó Senhor, meu Deus; ilumina os meus olhos, para que eu não caia no sono da morte."
+  },
+  {
+   "ref": "Salmos 13:4",
+   "text": "Para que o meu inimigo não declare \"Prevaleci contra ele\", e para que os meus adversários não se alegrem quando eu vacilar."
+  },
+  {
+   "ref": "Salmos 13:5",
+   "text": "Mas eu confio na tua graça; o meu coração se regozije na tua salvação."
+  }
+ ]
+}
+</cena>

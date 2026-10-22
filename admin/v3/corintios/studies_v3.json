@@ -1,0 +1,766 @@
+{
+  "studies": {
+    "co-01-cruz": {
+      "slug": "co-01-cruz",
+      "passageRef": "1 Coríntios 1:17–18",
+      "passageText": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule. Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus.",
+      "passages": [
+        {
+          "ref": "1 Coríntios 1:15–21",
+          "text": "Para que ninguém diga que vocês foram batizados em meu nome. Batizei também a família de Estéfanas; além destes, não me recordo se batizei mais alguém. Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule. Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus. Pois está escrito: Destruirei a sabedoria dos sábios e aniquilarei a inteligência dos instruídos. Onde está o sábio? Onde está o escriba? Onde está o inquiridor deste século? Acaso Deus não tornou louca a sabedoria do mundo? Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da pregação."
+        }
+      ],
+      "context": "Paulo escreve a uma igreja dividida em grupos em torno de nomes de líderes. Antes de tratar dos partidos, ele aponta para a cruz e para a missão que recebeu de Cristo.",
+      "keyword": "cruz",
+      "keywordGloss": "Na carta, a cruz resume a mensagem que Paulo prega e que define a igreja.",
+      "focusQuestion": "Em que nome você tem buscado apoio quando deveria voltar à cruz?",
+      "reflectionPrompts": [
+        "A cruz no centro",
+        "Nenhum nome humano",
+        "Poder para quem crê"
+      ],
+      "facts": [
+        {
+          "text": "Cristo enviou Paulo para pregar o evangelho, não para fazer nome pelo batismo.",
+          "evidenceRef": "1 Coríntios 1:17",
+          "evidenceSpan": "não para batizar, mas para pregar o evangelho"
+        },
+        {
+          "text": "A mensagem da cruz é loucura para os que se perdem.",
+          "evidenceRef": "1 Coríntios 1:18",
+          "evidenceSpan": "é loucura para os que se perdem"
+        },
+        {
+          "text": "Para os que são salvos, a mensagem da cruz é o poder de Deus.",
+          "evidenceRef": "1 Coríntios 1:18",
+          "evidenceSpan": "ela é o poder de Deus"
+        },
+        {
+          "text": "Deus anuncia que destruirá a sabedoria dos sábios.",
+          "evidenceRef": "1 Coríntios 1:19",
+          "evidenceSpan": "Destruirei a sabedoria dos sábios"
+        },
+        {
+          "text": "Deus salvou os que creem pela loucura da pregação.",
+          "evidenceRef": "1 Coríntios 1:21",
+          "evidenceSpan": "agradou a Deus salvar os que creem pela loucura da pregação"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "cruz",
+          "gloss": "O centro da mensagem de Paulo: Cristo crucificado, e não um líder humano."
+        },
+        {
+          "term": "loucura",
+          "gloss": "Como a mensagem da cruz parece a quem a rejeita, segundo Paulo."
+        },
+        {
+          "term": "poder de Deus",
+          "gloss": "O que a mensagem da cruz é para os que são salvos."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Paulo não busca nome próprio",
+          "evidenceRef": "1 Coríntios 1:15–17"
+        },
+        {
+          "label": "A cruz divide as percepções",
+          "evidenceRef": "1 Coríntios 1:18"
+        },
+        {
+          "label": "A sabedoria humana em xeque",
+          "evidenceRef": "1 Coríntios 1:19–20"
+        },
+        {
+          "label": "Deus salva pela pregação",
+          "evidenceRef": "1 Coríntios 1:21"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Cristo enviou Paulo para pregar, para que a cruz não se anulasse.",
+          "marker": "para que",
+          "evidenceRef": "1 Coríntios 1:17"
+        },
+        {
+          "kind": "contraste",
+          "text": "A mesma mensagem é loucura para uns e poder de Deus para outros.",
+          "marker": "mas",
+          "evidenceRef": "1 Coríntios 1:18"
+        },
+        {
+          "kind": "causa",
+          "text": "Como o mundo não conheceu a Deus pela sua sabedoria, Deus salvou pela pregação.",
+          "marker": "Pois",
+          "evidenceRef": "1 Coríntios 1:21"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Romanos 1:16",
+          "bridge": "O evangelho é poder de Deus",
+          "text": "Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego."
+        },
+        {
+          "ref": "Gálatas 6:14",
+          "bridge": "Gloriar-se somente na cruz",
+          "text": "Mas, longe de mim gloriar-me, senão na cruz de nosso Senhor Jesus Cristo, pela qual o mundo está crucificado para mim, e eu, para o mundo."
+        },
+        {
+          "ref": "1 Coríntios 2:2",
+          "bridge": "Cristo crucificado no centro",
+          "text": "Pois decidi não saber de nada entre vocês senão de Jesus Cristo, e este crucificado."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Paulo é contra o batismo.",
+          "why": "Ele mesmo batizou algumas pessoas; o ponto é que sua missão era pregar, sem fazer discípulos para si."
+        },
+        {
+          "text": "A cruz é só um fracasso sem força alguma.",
+          "why": "Para os que são salvos, Paulo chama a mensagem da cruz de poder de Deus."
+        },
+        {
+          "text": "A sabedoria humana basta para conhecer a Deus.",
+          "why": "Paulo diz que o mundo não conheceu a Deus por meio da sua própria sabedoria."
+        }
+      ],
+      "centralInsight": "A cruz, e não um nome humano, é o centro que une a igreja.",
+      "anchorQuestion": "Para quem a mensagem da cruz é o poder de Deus, segundo Paulo?",
+      "relatedVerses": [
+        {
+          "reference": "Romanos 1:16",
+          "reason": "O evangelho é poder de Deus"
+        },
+        {
+          "reference": "Gálatas 6:14",
+          "reason": "Gloriar-se somente na cruz"
+        },
+        {
+          "reference": "1 Coríntios 2:2",
+          "reason": "Cristo crucificado no centro"
+        }
+      ]
+    },
+    "co-02-amor": {
+      "slug": "co-02-amor",
+      "passageRef": "1 Coríntios 13:4–7",
+      "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece; Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor. Não se alegra com a injustiça, mas regozija-se com a verdade; Tudo suporta, tudo crê, tudo espera, tudo enfrenta.",
+      "passages": [
+        {
+          "ref": "1 Coríntios 13:1–10",
+          "text": "Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o bronze que ressoa ou como o sino que retine. E ainda que eu tenha o dom de profetizar e conheça todos os mistérios e toda a ciência; e ainda que eu tenha tamanha fé, a ponto de transportar montes, se eu não tiver amor, nada serei. E mesmo que eu distribua todos os meus bens para ajudar os pobres, e mesmo que eu entregue meu corpo para ser queimado, se eu não tiver amor, nada disso me será proveitoso. O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece; Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor. Não se alegra com a injustiça, mas regozija-se com a verdade; Tudo suporta, tudo crê, tudo espera, tudo enfrenta. O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará. Porque conhecemos apenas em parte e profetizamos também em parte; Quando, porém, vier o que é perfeito, então, o que é parcial será abolido."
+        }
+      ],
+      "context": "Paulo fala de dons a uma igreja que valorizava o que mais aparece. No meio da conversa, ele mostra o caminho do amor, que dá valor a tudo o que se faz.",
+      "keyword": "amor",
+      "keywordGloss": "No texto, amor é um jeito concreto de tratar as pessoas, e não só um sentimento.",
+      "focusQuestion": "Como o seu jeito de tratar as pessoas mostra amor nesta semana?",
+      "reflectionPrompts": [
+        "Amor paciente",
+        "Dons com amor",
+        "Amor que permanece"
+      ],
+      "facts": [
+        {
+          "text": "Sem amor, quem profetiza e tem fé não é nada.",
+          "evidenceRef": "1 Coríntios 13:2",
+          "evidenceSpan": "se eu não tiver amor, nada serei"
+        },
+        {
+          "text": "O amor é paciente e benigno.",
+          "evidenceRef": "1 Coríntios 13:4",
+          "evidenceSpan": "O amor é paciente, é benigno"
+        },
+        {
+          "text": "O amor não guarda rancor.",
+          "evidenceRef": "1 Coríntios 13:5",
+          "evidenceSpan": "não guarda rancor"
+        },
+        {
+          "text": "O amor se alegra com a verdade.",
+          "evidenceRef": "1 Coríntios 13:6",
+          "evidenceSpan": "mas regozija-se com a verdade"
+        },
+        {
+          "text": "O amor nunca acaba.",
+          "evidenceRef": "1 Coríntios 13:8",
+          "evidenceSpan": "O amor nunca acaba"
+        },
+        {
+          "text": "Hoje conhecemos apenas em parte.",
+          "evidenceRef": "1 Coríntios 13:9",
+          "evidenceSpan": "conhecemos apenas em parte"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "amor",
+          "gloss": "O caminho que dá valor aos dons e dura para sempre, segundo Paulo."
+        },
+        {
+          "term": "paciente",
+          "gloss": "Primeiro traço do amor no texto: saber esperar sem ferir o outro."
+        },
+        {
+          "term": "verdade",
+          "gloss": "Aquilo com que o amor se alegra, em vez da injustiça."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Dons sem amor nada valem",
+          "evidenceRef": "1 Coríntios 13:1–3"
+        },
+        {
+          "label": "O jeito do amor na prática",
+          "evidenceRef": "1 Coríntios 13:4–7"
+        },
+        {
+          "label": "O amor permanece sempre",
+          "evidenceRef": "1 Coríntios 13:8"
+        },
+        {
+          "label": "Conhecimento parcial hoje",
+          "evidenceRef": "1 Coríntios 13:9–10"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O amor não se alegra com a injustiça, mas se alegra com a verdade.",
+          "marker": "mas",
+          "evidenceRef": "1 Coríntios 13:6"
+        },
+        {
+          "kind": "causa",
+          "text": "Conhecemos só em parte, por isso também profetizamos em parte.",
+          "marker": "Porque",
+          "evidenceRef": "1 Coríntios 13:9"
+        },
+        {
+          "kind": "resultado",
+          "text": "Quando vier o que é perfeito, o que é parcial será abolido.",
+          "marker": "então",
+          "evidenceRef": "1 Coríntios 13:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Colossenses 3:14",
+          "bridge": "Amor é vínculo da perfeição",
+          "text": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição."
+        },
+        {
+          "ref": "1 João 4:8",
+          "bridge": "Deus é amor",
+          "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+        },
+        {
+          "ref": "Romanos 5:5",
+          "bridge": "Amor derramado pelo Espírito",
+          "text": "E a esperança não decepciona, pois o amor de Deus é derramado em nossos corações pelo Espírito Santo que nos foi concedido."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Este capítulo fala só de casamento e romance.",
+          "why": "Paulo escreve à igreja sobre dons e convívio; os traços do amor são atitudes na comunidade."
+        },
+        {
+          "text": "Quem tem dons fortes já provou que ama.",
+          "why": "Paulo diz que, sem amor, profecia, conhecimento e fé não tornam a pessoa nada."
+        },
+        {
+          "text": "Amar é só sentir algo forte por alguém.",
+          "why": "O texto descreve atos: ser paciente, não guardar rancor, alegrar-se com a verdade."
+        }
+      ],
+      "centralInsight": "Dons só edificam quando o amor marca o jeito de servir.",
+      "anchorQuestion": "Sem amor, o que Paulo diz que a pessoa é, mesmo com dons?",
+      "relatedVerses": [
+        {
+          "reference": "Colossenses 3:14",
+          "reason": "Amor é vínculo da perfeição"
+        },
+        {
+          "reference": "1 João 4:8",
+          "reason": "Deus é amor"
+        },
+        {
+          "reference": "Romanos 5:5",
+          "reason": "Amor derramado pelo Espírito"
+        }
+      ]
+    },
+    "co-03-ressurreicao": {
+      "slug": "co-03-ressurreicao",
+      "passageRef": "1 Coríntios 15:3–4",
+      "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+      "passages": [
+        {
+          "ref": "1 Coríntios 15:1–7",
+          "text": "Além disso, irmãos, venho lembrar-vos do evangelho que já vos anunciei, o qual também recebestes e no qual ainda perseverais. Pelo qual também sois salvos, se retiverdes a palavra como eu vo-la tenho pregado; caso contrário, a vossa crença é em vão. Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras, E foi visto por Cefas e, em seguida, pelos doze. Depois, foi visto por mais de quinhentos irmãos de uma só vez, dos quais a maioria sobrevive até agora; porém alguns já dormem. Depois, foi visto por Tiago, e em seguida, por todos os apóstolos."
+        }
+      ],
+      "context": "Alguns em Corinto duvidavam da ressurreição. Paulo começa lembrando o evangelho que eles já receberam e no qual ainda permanecem firmes.",
+      "keyword": "ressurreição",
+      "keywordGloss": "No texto, Cristo foi sepultado e Deus o levantou ao terceiro dia, conforme as Escrituras.",
+      "focusQuestion": "Como a certeza de Cristo vivo muda o seu jeito de enfrentar a semana?",
+      "reflectionPrompts": [
+        "Cristo morreu por nós",
+        "Cristo foi visto vivo",
+        "Conforme as Escrituras"
+      ],
+      "facts": [
+        {
+          "text": "Os coríntios receberam o evangelho que Paulo anunciou.",
+          "evidenceRef": "1 Coríntios 15:1",
+          "evidenceSpan": "o qual também recebestes"
+        },
+        {
+          "text": "Cristo morreu por nossos pecados, conforme as Escrituras.",
+          "evidenceRef": "1 Coríntios 15:3",
+          "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras"
+        },
+        {
+          "text": "Cristo foi sepultado.",
+          "evidenceRef": "1 Coríntios 15:4",
+          "evidenceSpan": "e que foi sepultado"
+        },
+        {
+          "text": "Cristo ressuscitou ao terceiro dia, conforme as Escrituras.",
+          "evidenceRef": "1 Coríntios 15:4",
+          "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras"
+        },
+        {
+          "text": "Cristo foi visto por Cefas e depois pelos doze.",
+          "evidenceRef": "1 Coríntios 15:5",
+          "evidenceSpan": "E foi visto por Cefas e, em seguida, pelos doze"
+        },
+        {
+          "text": "Cristo foi visto por mais de quinhentos irmãos de uma só vez.",
+          "evidenceRef": "1 Coríntios 15:6",
+          "evidenceSpan": "foi visto por mais de quinhentos irmãos de uma só vez"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "evangelho",
+          "gloss": "A boa notícia que Paulo anunciou, eles receberam e nela permanecem."
+        },
+        {
+          "term": "ressuscitou",
+          "gloss": "Cristo foi levantado ao terceiro dia, depois de sepultado."
+        },
+        {
+          "term": "Escrituras",
+          "gloss": "A morte e a ressurreição de Cristo cumprem o que já estava escrito."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Paulo lembra o evangelho recebido",
+          "evidenceRef": "1 Coríntios 15:1–2"
+        },
+        {
+          "label": "Cristo morreu e foi sepultado",
+          "evidenceRef": "1 Coríntios 15:3–4"
+        },
+        {
+          "label": "Cristo ressuscitou ao terceiro dia",
+          "evidenceRef": "1 Coríntios 15:4"
+        },
+        {
+          "label": "Testemunhas viram Cristo vivo",
+          "evidenceRef": "1 Coríntios 15:5–7"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Cristo foi visto por Cefas e, em seguida, pelos doze.",
+          "marker": "em seguida",
+          "evidenceRef": "1 Coríntios 15:5"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois dos doze, foi visto por mais de quinhentos irmãos.",
+          "marker": "Depois",
+          "evidenceRef": "1 Coríntios 15:6"
+        },
+        {
+          "kind": "contraste",
+          "text": "A maioria das testemunhas vive, porém alguns já dormem.",
+          "marker": "porém",
+          "evidenceRef": "1 Coríntios 15:6"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Atos 2:32",
+          "bridge": "Testemunhas da ressurreição de Jesus",
+          "text": "Deus ressuscitou Jesus, e todos nós somos testemunhas disso."
+        },
+        {
+          "ref": "Romanos 4:25",
+          "bridge": "Ressuscitado para nossa justificação",
+          "text": "Foi entregue por nossas transgressões e ressuscitou para a nossa justificação."
+        },
+        {
+          "ref": "Romanos 6:4",
+          "bridge": "Ressurreição traz vida nova",
+          "text": "Portanto, fomos sepultados com ele na morte pelo batismo, a fim de que, assim como Cristo foi ressuscitado dentre os mortos pela glória do Pai, também andemos nós em novidade de vida."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A ressurreição foi só uma ideia no coração dos discípulos.",
+          "why": "Paulo fala de sepultamento real e de Cristo visto vivo por pessoas nomeadas e por uma multidão."
+        },
+        {
+          "text": "Paulo inventou essa mensagem na hora, sem receber de ninguém.",
+          "why": "Ele diz que entregou o que também recebeu, em primeiro lugar."
+        },
+        {
+          "text": "As testemunhas são detalhe sem importância no argumento.",
+          "why": "Paulo lista quem viu Cristo, inclusive mais de quinhentos de uma só vez, muitos ainda vivos."
+        }
+      ],
+      "centralInsight": "Cristo morreu e ressuscitou conforme as Escrituras, e foi visto vivo.",
+      "anchorQuestion": "Por quem Cristo foi visto primeiro, depois de ressuscitar?",
+      "relatedVerses": [
+        {
+          "reference": "Atos 2:32",
+          "reason": "Testemunhas da ressurreição de Jesus"
+        },
+        {
+          "reference": "Romanos 4:25",
+          "reason": "Ressuscitado para nossa justificação"
+        },
+        {
+          "reference": "Romanos 6:4",
+          "reason": "Ressurreição traz vida nova"
+        }
+      ]
+    },
+    "co-04-consolacao": {
+      "slug": "co-04-consolacao",
+      "passageRef": "2 Coríntios 12:8–10",
+      "passageText": "A esse respeito, três vezes pedi ao Senhor que o afastasse de mim. E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim. Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte.",
+      "passages": [
+        {
+          "ref": "2 Coríntios 12:6–12",
+          "text": "Porque, se eu quisesse gloriar-me, não seria insensato, pois estaria proclamando a verdade; no entanto, abstenho-me, para que ninguém me considere além do que vê em mim ou ouve de mim. E, para que eu não me ensoberbecesse pela grandeza das revelações, foi-me dado um espinho na carne, um mensageiro de Satanás, para me esbofetear, a fim de que eu não me exaltasse. A esse respeito, três vezes pedi ao Senhor que o afastasse de mim. E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim. Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte. Tenho agido insensatamente ao me gloriar; vocês me pressionaram a isto pois eu deveria ter sido elogiado por vocês, uma vez que em nada fui inferior aos mais destacados apóstolos, ainda que eu não seja nada. Os sinais do meu apostolado foram manifestos entre vocês com toda a paciência, por meio de sinais, prodígios e maravilhas."
+        }
+      ],
+      "context": "Paulo defende seu ministério sem querer se exaltar por suas visões. Ele conta de um espinho que pediu três vezes para Deus tirar da sua vida.",
+      "keyword": "graça",
+      "keywordGloss": "No texto, é o favor de Deus que basta e sustenta Paulo sem tirar o espinho.",
+      "focusQuestion": "Onde você precisa ouvir que a graça de Deus basta para você hoje?",
+      "reflectionPrompts": [
+        "Graça que basta",
+        "Força na fraqueza",
+        "Sem se exaltar"
+      ],
+      "facts": [
+        {
+          "text": "Foi dado a Paulo um espinho na carne para que ele não se exaltasse.",
+          "evidenceRef": "2 Coríntios 12:7",
+          "evidenceSpan": "foi-me dado um espinho na carne"
+        },
+        {
+          "text": "Paulo pediu três vezes ao Senhor que afastasse o espinho.",
+          "evidenceRef": "2 Coríntios 12:8",
+          "evidenceSpan": "três vezes pedi ao Senhor que o afastasse de mim"
+        },
+        {
+          "text": "O Senhor disse a Paulo que a sua graça lhe bastava.",
+          "evidenceRef": "2 Coríntios 12:9",
+          "evidenceSpan": "A minha graça te basta"
+        },
+        {
+          "text": "O poder de Deus se aperfeiçoa na fraqueza.",
+          "evidenceRef": "2 Coríntios 12:9",
+          "evidenceSpan": "o meu poder se aperfeiçoa na fraqueza"
+        },
+        {
+          "text": "Quando Paulo está fraco, então é que ele é forte.",
+          "evidenceRef": "2 Coríntios 12:10",
+          "evidenceSpan": "Pois, quando estou fraco, é então que sou forte"
+        },
+        {
+          "text": "Os sinais do apostolado de Paulo apareceram com paciência entre os coríntios.",
+          "evidenceRef": "2 Coríntios 12:12",
+          "evidenceSpan": "foram manifestos entre vocês com toda a paciência"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "graça",
+          "gloss": "O favor de Deus que basta para Paulo, mesmo com o espinho."
+        },
+        {
+          "term": "fraqueza",
+          "gloss": "O lugar onde o poder de Cristo se mostra, segundo a resposta do Senhor."
+        },
+        {
+          "term": "espinho na carne",
+          "gloss": "O sofrimento que Paulo pediu três vezes para Deus afastar."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Paulo evita gloriar-se",
+          "evidenceRef": "2 Coríntios 12:6"
+        },
+        {
+          "label": "O espinho segura o orgulho",
+          "evidenceRef": "2 Coríntios 12:7"
+        },
+        {
+          "label": "Paulo pede três vezes",
+          "evidenceRef": "2 Coríntios 12:8"
+        },
+        {
+          "label": "A graça sustenta na fraqueza",
+          "evidenceRef": "2 Coríntios 12:9–10"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "O espinho foi dado para que Paulo não se exaltasse pelas revelações.",
+          "marker": "para que",
+          "evidenceRef": "2 Coríntios 12:7"
+        },
+        {
+          "kind": "causa",
+          "text": "A graça basta, pois o poder de Deus se aperfeiçoa na fraqueza.",
+          "marker": "pois",
+          "evidenceRef": "2 Coríntios 12:9"
+        },
+        {
+          "kind": "resultado",
+          "text": "Portanto Paulo se gloria nas fraquezas, para o poder de Cristo descansar nele.",
+          "marker": "Portanto",
+          "evidenceRef": "2 Coríntios 12:9"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "2 Coríntios 1:3–4",
+          "bridge": "Consolo que depois consola outros",
+          "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, o Pai das misericórdias e Deus de toda consolação! Ele nos consola em toda a nossa tribulação, para que também possamos consolar os que estiverem passando por qualquer angústia, com a consolação com que nós mesmos somos consolados por Deus."
+        },
+        {
+          "ref": "Isaías 40:29",
+          "bridge": "Força para quem não tem vigor",
+          "text": "Ele fortalece o cansado e renova as forças daquele que não tem nenhum vigor."
+        },
+        {
+          "ref": "Filipenses 4:13",
+          "bridge": "Força vem de Cristo",
+          "text": "Posso todas as coisas por meio daquele que me dá força."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A graça de Deus sempre tira o problema na hora.",
+          "why": "O espinho ficou, e a resposta foi que a graça bastava para sustentar Paulo."
+        },
+        {
+          "text": "Sentir-se fraco prova falta de fé.",
+          "why": "Paulo ouve que o poder de Deus se aperfeiçoa justamente na fraqueza."
+        },
+        {
+          "text": "Paulo se gloria da dor por gostar de sofrer.",
+          "why": "Ele se gloria nas fraquezas para que o poder de Cristo descanse sobre ele."
+        }
+      ],
+      "centralInsight": "A graça de Cristo basta e seu poder aparece na fraqueza.",
+      "anchorQuestion": "O que o Senhor respondeu às três orações de Paulo sobre o espinho?",
+      "relatedVerses": [
+        {
+          "reference": "2 Coríntios 1:3–4",
+          "reason": "Consolo que depois consola outros"
+        },
+        {
+          "reference": "Isaías 40:29",
+          "reason": "Força para quem não tem vigor"
+        },
+        {
+          "reference": "Filipenses 4:13",
+          "reason": "Força vem de Cristo"
+        }
+      ]
+    },
+    "co-05-desafio": {
+      "slug": "co-05-desafio",
+      "passageRef": "1 Coríntios 13:4–7",
+      "passageText": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece; Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor. Não se alegra com a injustiça, mas regozija-se com a verdade; Tudo suporta, tudo crê, tudo espera, tudo enfrenta.",
+      "passages": [
+        {
+          "ref": "1 Coríntios 1:15–21",
+          "text": "Para que ninguém diga que vocês foram batizados em meu nome. Batizei também a família de Estéfanas; além destes, não me recordo se batizei mais alguém. Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule. Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus. Pois está escrito: Destruirei a sabedoria dos sábios e aniquilarei a inteligência dos instruídos. Onde está o sábio? Onde está o escriba? Onde está o inquiridor deste século? Acaso Deus não tornou louca a sabedoria do mundo? Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da pregação."
+        },
+        {
+          "ref": "1 Coríntios 13:1–10",
+          "text": "Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o bronze que ressoa ou como o sino que retine. E ainda que eu tenha o dom de profetizar e conheça todos os mistérios e toda a ciência; e ainda que eu tenha tamanha fé, a ponto de transportar montes, se eu não tiver amor, nada serei. E mesmo que eu distribua todos os meus bens para ajudar os pobres, e mesmo que eu entregue meu corpo para ser queimado, se eu não tiver amor, nada disso me será proveitoso. O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece; Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor. Não se alegra com a injustiça, mas regozija-se com a verdade; Tudo suporta, tudo crê, tudo espera, tudo enfrenta. O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará. Porque conhecemos apenas em parte e profetizamos também em parte; Quando, porém, vier o que é perfeito, então, o que é parcial será abolido."
+        },
+        {
+          "ref": "1 Coríntios 15:1–7",
+          "text": "Além disso, irmãos, venho lembrar-vos do evangelho que já vos anunciei, o qual também recebestes e no qual ainda perseverais. Pelo qual também sois salvos, se retiverdes a palavra como eu vo-la tenho pregado; caso contrário, a vossa crença é em vão. Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras, E foi visto por Cefas e, em seguida, pelos doze. Depois, foi visto por mais de quinhentos irmãos de uma só vez, dos quais a maioria sobrevive até agora; porém alguns já dormem. Depois, foi visto por Tiago, e em seguida, por todos os apóstolos."
+        },
+        {
+          "ref": "2 Coríntios 12:6–12",
+          "text": "Porque, se eu quisesse gloriar-me, não seria insensato, pois estaria proclamando a verdade; no entanto, abstenho-me, para que ninguém me considere além do que vê em mim ou ouve de mim. E, para que eu não me ensoberbecesse pela grandeza das revelações, foi-me dado um espinho na carne, um mensageiro de Satanás, para me esbofetear, a fim de que eu não me exaltasse. A esse respeito, três vezes pedi ao Senhor que o afastasse de mim. E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim. Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte. Tenho agido insensatamente ao me gloriar; vocês me pressionaram a isto pois eu deveria ter sido elogiado por vocês, uma vez que em nada fui inferior aos mais destacados apóstolos, ainda que eu não seja nada. Os sinais do meu apostolado foram manifestos entre vocês com toda a paciência, por meio de sinais, prodígios e maravilhas."
+        }
+      ],
+      "context": "Este desafio revisa as cartas aos coríntios: a cruz que une, o amor que edifica, Cristo ressuscitado e a graça que sustenta na fraqueza.",
+      "keyword": "igreja",
+      "keywordGloss": "No desafio, a igreja é edificada pela cruz, pelo amor e pela esperança em Cristo.",
+      "focusQuestion": "Qual destas verdades sua igreja mais precisa viver nesta semana?",
+      "reflectionPrompts": [
+        "Cruz que une",
+        "Amor que edifica",
+        "Graça que sustenta"
+      ],
+      "facts": [
+        {
+          "text": "Para os salvos, a mensagem da cruz é o poder de Deus.",
+          "evidenceRef": "1 Coríntios 1:18",
+          "evidenceSpan": "ela é o poder de Deus"
+        },
+        {
+          "text": "O amor é paciente e benigno.",
+          "evidenceRef": "1 Coríntios 13:4",
+          "evidenceSpan": "O amor é paciente, é benigno"
+        },
+        {
+          "text": "Cristo ressuscitou ao terceiro dia, conforme as Escrituras.",
+          "evidenceRef": "1 Coríntios 15:4",
+          "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras"
+        },
+        {
+          "text": "Cristo foi visto por mais de quinhentos irmãos de uma só vez.",
+          "evidenceRef": "1 Coríntios 15:6",
+          "evidenceSpan": "foi visto por mais de quinhentos irmãos de uma só vez"
+        },
+        {
+          "text": "O Senhor disse a Paulo que a sua graça lhe bastava.",
+          "evidenceRef": "2 Coríntios 12:9",
+          "evidenceSpan": "A minha graça te basta"
+        },
+        {
+          "text": "Quando Paulo está fraco, então é que ele é forte.",
+          "evidenceRef": "2 Coríntios 12:10",
+          "evidenceSpan": "Pois, quando estou fraco, é então que sou forte"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "cruz",
+          "gloss": "O centro que une a igreja, e não um nome de líder humano."
+        },
+        {
+          "term": "amor",
+          "gloss": "O jeito concreto que dá valor aos dons na comunidade."
+        },
+        {
+          "term": "graça",
+          "gloss": "O favor de Deus que basta e sustenta na fraqueza."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A cruz reúne a igreja",
+          "evidenceRef": "1 Coríntios 1:18"
+        },
+        {
+          "label": "O amor dá forma aos dons",
+          "evidenceRef": "1 Coríntios 13:4"
+        },
+        {
+          "label": "Cristo ressuscitou e foi visto",
+          "evidenceRef": "1 Coríntios 15:4–5"
+        },
+        {
+          "label": "A graça sustenta na fraqueza",
+          "evidenceRef": "2 Coríntios 12:9"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "A cruz é loucura para uns, mas poder de Deus para os salvos.",
+          "marker": "mas",
+          "evidenceRef": "1 Coríntios 1:18"
+        },
+        {
+          "kind": "propósito",
+          "text": "O espinho foi dado para que Paulo não se exaltasse.",
+          "marker": "para que",
+          "evidenceRef": "2 Coríntios 12:7"
+        },
+        {
+          "kind": "sequência",
+          "text": "Cristo foi visto por Cefas e, em seguida, pelos doze.",
+          "marker": "em seguida",
+          "evidenceRef": "1 Coríntios 15:5"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Romanos 1:16",
+          "bridge": "O evangelho é poder de Deus",
+          "text": "Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego."
+        },
+        {
+          "ref": "1 João 4:8",
+          "bridge": "Deus é amor",
+          "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+        },
+        {
+          "ref": "Romanos 4:25",
+          "bridge": "Ressuscitado para nossa justificação",
+          "text": "Foi entregue por nossas transgressões e ressuscitou para a nossa justificação."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A igreja se une em torno do líder mais forte.",
+          "why": "Paulo recusa discípulos em seu nome e põe a cruz no centro da igreja."
+        },
+        {
+          "text": "Dons impressionantes provam amor na igreja.",
+          "why": "Sem amor, Paulo diz que a pessoa nada é, mesmo com grandes dons."
+        },
+        {
+          "text": "Fraqueza é sinal de que Deus abandonou alguém.",
+          "why": "A resposta do Senhor é que seu poder se aperfeiçoa na fraqueza."
+        }
+      ],
+      "centralInsight": "O que Jesus / a igreja revelam aqui?",
+      "anchorQuestion": "Quais quatro verdades de Coríntios edificam a igreja neste desafio?",
+      "relatedVerses": [
+        {
+          "reference": "Romanos 1:16",
+          "reason": "O evangelho é poder de Deus"
+        },
+        {
+          "reference": "1 João 4:8",
+          "reason": "Deus é amor"
+        },
+        {
+          "reference": "Romanos 4:25",
+          "reason": "Ressuscitado para nossa justificação"
+        }
+      ]
+    }
+  }
+}

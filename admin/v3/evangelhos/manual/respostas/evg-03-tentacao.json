@@ -1,0 +1,721 @@
+{
+ "study": {
+  "passageRef": "Mateus 4:1–4",
+  "passages": [
+   {
+    "ref": "Mateus 4:1–11"
+   }
+  ],
+  "context": "Logo após o batismo, Jesus é conduzido pelo Espírito ao deserto e jejua quarenta dias. O tentador questiona sua identidade de Filho e Jesus responde com a Escritura.",
+  "keyword": "Está escrito",
+  "keywordGloss": "A resposta repetida de Jesus: a Escritura guia sua obediência no deserto.",
+  "focusQuestion": "Que palavra de Deus você precisa lembrar na próxima tentação?",
+  "reflectionPrompts": [
+   "Fidelidade no deserto",
+   "Palavra que sustenta",
+   "Adoração só a Deus"
+  ],
+  "facts": [
+   {
+    "text": "Jesus foi conduzido pelo Espírito ao deserto para ser tentado pelo diabo.",
+    "evidenceRef": "Mateus 4:1",
+    "evidenceSpan": "Jesus foi conduzido pelo Espírito ao deserto"
+   },
+   {
+    "text": "Depois de jejuar quarenta dias e quarenta noites, Jesus teve fome.",
+    "evidenceRef": "Mateus 4:2",
+    "evidenceSpan": "depois de jejuar por quarenta dias e quarenta noites, teve fome"
+   },
+   {
+    "text": "O tentador sugeriu transformar pedras em pães.",
+    "evidenceRef": "Mateus 4:3",
+    "evidenceSpan": "mande que estas pedras se transformem em pães"
+   },
+   {
+    "text": "Jesus respondeu que o homem viverá de toda palavra de Deus.",
+    "evidenceRef": "Mateus 4:4",
+    "evidenceSpan": "mas de toda palavra que procede da boca de Deus"
+   },
+   {
+    "text": "Jesus ordenou que Satanás se retirasse e afirmou adorar só a Deus.",
+    "evidenceRef": "Mateus 4:10",
+    "evidenceSpan": "Ao Senhor, seu Deus, adorarás, e somente a Ele renderás culto"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "tentado",
+    "gloss": "Provado no deserto; Jesus enfrenta a prova sem ceder."
+   },
+   {
+    "term": "Está escrito",
+    "gloss": "Fórmula com que Jesus ancora cada resposta na Escritura."
+   },
+   {
+    "term": "palavra",
+    "gloss": "O que procede da boca de Deus e sustenta o homem além do pão."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Espírito conduz Jesus ao deserto",
+    "evidenceRef": "Mateus 4:1"
+   },
+   {
+    "label": "Fome e primeira tentação do pão",
+    "evidenceRef": "Mateus 4:2–3"
+   },
+   {
+    "label": "Jesus responde com a Escritura",
+    "evidenceRef": "Mateus 4:4"
+   },
+   {
+    "label": "Adoração só a Deus e partida do diabo",
+    "evidenceRef": "Mateus 4:10–11"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Jesus é conduzido ao deserto a fim de ser tentado pelo diabo.",
+    "marker": "a fim",
+    "evidenceRef": "Mateus 4:1"
+   },
+   {
+    "kind": "contraste",
+    "text": "O homem não vive só de pão, mas de toda palavra de Deus.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 4:4"
+   },
+   {
+    "kind": "resultado",
+    "text": "Após a ordem de Jesus, o diabo o abandona e anjos o servem.",
+    "marker": "Então",
+    "evidenceRef": "Mateus 4:11"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Deuteronômio 8:3",
+    "bridge": "Nem só de pão"
+   },
+   {
+    "ref": "Hebreus 4:15",
+    "bridge": "Tentado sem pecado"
+   },
+   {
+    "ref": "Salmos 91:11",
+    "bridge": "Anjos citados na tentação"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jesus provaria ser Filho usando poder para si mesmo.",
+    "why": "Ele recusa transformar pedras em pães e confia na palavra do Pai (4:3-4)."
+   },
+   {
+    "text": "Citar a Bíblia de qualquer jeito basta para obedecer.",
+    "why": "O diabo também cita um salmo, mas Jesus responde com outra Escritura e recusa pôr Deus à prova (4:6-7)."
+   },
+   {
+    "text": "Adorar outro além de Deus seria aceitável por um ganho grande.",
+    "why": "Jesus afirma adoração e culto somente ao Senhor (4:10)."
+   }
+  ],
+  "centralInsight": "Fidelidade no deserto",
+  "anchorQuestion": "Com o que Jesus respondeu a cada tentação no deserto?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 4:2, Jesus teve fome depois de jejuar quarenta dias e quarenta noites.",
+   "verseRef": "Mateus 4:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "depois de jejuar por quarenta dias e quarenta noites, teve fome",
+   "feedbackCorrect": "O jejum longo precede a fome e a primeira tentação.",
+   "feedbackWrong": {
+    "false": "Mateus 4:2 liga a fome ao jejum de quarenta dias e noites."
+   },
+   "hint": "",
+   "learningObjective": "Observar o contexto da primeira tentação.",
+   "evidence": [
+    "Mateus 4:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 4:3, toque o que o tentador manda Jesus transformar em pães.",
+   "verseRef": "Mateus 4:3",
+   "correctOptionId": "b",
+   "evidenceSpan": "mande que estas pedras se transformem em pães",
+   "feedbackCorrect": "A proposta usa a fome de Jesus e as pedras do deserto.",
+   "feedbackWrong": {
+    "a": "Isso é a identidade questionada, não o objeto transformado.",
+    "c": "Pães são o resultado pedido, não o que seria transformado."
+   },
+   "hint": "Procure o objeto antes do resultado pedido.",
+   "learningObjective": "Identificar a matéria da primeira tentação.",
+   "evidence": [
+    "Mateus 4:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Filho de Deus"
+    },
+    {
+     "id": "b",
+     "text": "estas pedras"
+    },
+    {
+     "id": "c",
+     "text": "em pães"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 4:1, quem conduziu Jesus ao deserto?",
+   "verseRef": "Mateus 4:1",
+   "correctOptionId": "b",
+   "evidenceSpan": "Jesus foi conduzido pelo Espírito ao deserto",
+   "feedbackCorrect": "Quem conduz Jesus ao deserto é o Espírito, não o tentador.",
+   "feedbackWrong": {
+    "a": "O diabo tenta, mas não conduz Jesus até lá.",
+    "c": "João aparece no batismo, não nesta condução.",
+    "d": "Não há multidão nesta cena do deserto."
+   },
+   "hint": "Veja o sujeito do primeiro verbo do capítulo.",
+   "learningObjective": "Observar quem conduz Jesus ao deserto.",
+   "evidence": [
+    "Mateus 4:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O diabo o arrastou sozinho"
+    },
+    {
+     "id": "b",
+     "text": "O Espírito o conduziu"
+    },
+    {
+     "id": "c",
+     "text": "João Batista o enviou"
+    },
+    {
+     "id": "d",
+     "text": "A multidão o seguiu"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 4:4 na ordem do texto.",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele, porém, respondeu: Está escrito",
+   "feedbackCorrect": "Jesus responde ao tentador citando a Escritura sobre o pão e a palavra.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela resposta de Jesus ao tentador."
+    }
+   },
+   "hint": "Comece por quem responde ao tentador.",
+   "learningObjective": "Reconhecer a sequência da resposta.",
+   "evidence": [
+    "Mateus 4:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele, porém, respondeu"
+    },
+    {
+     "id": "b",
+     "text": "Está escrito"
+    },
+    {
+     "id": "c",
+     "text": "Não só de pão viverá o homem"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 4:4, além do pão, de que o homem viverá segundo Jesus?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "mas de toda palavra que procede da boca de Deus",
+   "feedbackCorrect": "A vida humana é sustentada pela palavra que vem de Deus.",
+   "feedbackWrong": {
+    "b": "A fome é a necessidade, não o sustento afirmado.",
+    "c": "Pedra era a matéria da tentação anterior."
+   },
+   "hint": "Veja o contraste com o pão no versículo.",
+   "learningObjective": "Lembrar o sustento afirmado por Jesus.",
+   "evidence": [
+    "Mateus 4:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "palavra"
+    },
+    {
+     "id": "b",
+     "text": "fome"
+    },
+    {
+     "id": "c",
+     "text": "pedra"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 4:4 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "b",
+   "evidenceSpan": "mas de toda palavra que procede da boca de Deus",
+   "feedbackCorrect": "Jesus confia na palavra do Pai mesmo com fome.",
+   "feedbackWrong": {
+    "a": "O texto amplia o sustento para além do pão.",
+    "c": "Jesus responde ao tentador, não obedece à fome."
+   },
+   "hint": "Veja o contraste feito por Jesus.",
+   "learningObjective": "Ligar a resposta à fidelidade no deserto.",
+   "evidence": [
+    "Mateus 4:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Só o pão sustenta"
+    },
+    {
+     "id": "b",
+     "text": "A palavra também sustenta"
+    },
+    {
+     "id": "c",
+     "text": "A fome manda em Jesus"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 4:4"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "No deserto, Jesus permanece fiel confiando na palavra de Deus."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 4:6 e 7, Jesus aceita pular do templo porque um salmo promete ajuda dos anjos.",
+   "verseRef": "Mateus 4:6–7",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não colocarás à prova o Senhor, teu Deus",
+   "feedbackCorrect": "Jesus recusa usar a promessa como teste e responde com outra Escritura.",
+   "feedbackWrong": {
+    "true": "Jesus chama essa atitude de colocar Deus à prova (4:7)."
+   },
+   "hint": "",
+   "learningObjective": "Compreender o mau uso da Escritura.",
+   "evidence": [
+    "Mateus 4:6",
+    "Mateus 4:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 4:4, toque a palavra que marca o contraste com viver só de pão.",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "b",
+   "evidenceSpan": "mas de toda palavra",
+   "feedbackCorrect": "O contraste opõe pão apenas à palavra de Deus como sustento.",
+   "feedbackWrong": {
+    "a": "Isso introduz quem responde, não o contraste interno.",
+    "c": "Isso indica a origem, não a oposição."
+   },
+   "hint": "Procure a palavrinha que vira a frase.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Mateus 4:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "porém"
+    },
+    {
+     "id": "b",
+     "text": "mas"
+    },
+    {
+     "id": "c",
+     "text": "boca de Deus"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jesus responde nas três tentações de Mateus 4?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "b",
+   "evidenceSpan": "Ele, porém, respondeu: Está escrito",
+   "feedbackCorrect": "Em cada tentação, a resposta de Jesus começa pela Escritura.",
+   "feedbackWrong": {
+    "a": "Ele não usa milagre em proveito próprio nas respostas.",
+    "c": "Anjos só servem Jesus no fim, após a partida do diabo.",
+    "d": "Jesus permanece e responde, não foge do deserto."
+   },
+   "hint": "Repare na fórmula repetida das respostas.",
+   "learningObjective": "Compreender o padrão das respostas.",
+   "evidence": [
+    "Mateus 4:4",
+    "Mateus 4:7",
+    "Mateus 4:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Usando poder para calar o tentador"
+    },
+    {
+     "id": "b",
+     "text": "Citando a Escritura em cada resposta"
+    },
+    {
+     "id": "c",
+     "text": "Pedindo ajuda imediata aos anjos"
+    },
+    {
+     "id": "d",
+     "text": "Fugindo do deserto a cada vez"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a tentação em Mateus 4:1 a 4?",
+   "verseRef": "Mateus 4:1–2",
+   "correctOptionId": "a",
+   "evidenceSpan": "Jesus foi conduzido pelo Espírito ao deserto",
+   "feedbackCorrect": "Condução, jejum com fome e então a primeira proposta do tentador.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A proposta do pão vem depois do jejum e da fome."
+    }
+   },
+   "hint": "A fome prepara a primeira proposta.",
+   "learningObjective": "Compreender o encadeamento inicial.",
+   "evidence": [
+    "Mateus 4:1",
+    "Mateus 4:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O Espírito conduz Jesus ao deserto"
+    },
+    {
+     "id": "b",
+     "text": "Jesus jejua e depois tem fome"
+    },
+    {
+     "id": "c",
+     "text": "O tentador propõe pães das pedras"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 4:10, a quem Jesus diz que se deve render culto somente?",
+   "verseRef": "Mateus 4:10",
+   "correctOptionId": "b",
+   "evidenceSpan": "e somente a Ele renderás culto",
+   "feedbackCorrect": "O culto exclusivo pertence ao Senhor, recusando a oferta do tentador.",
+   "feedbackWrong": {
+    "a": "Satanás é quem pede adoração e é rejeitado.",
+    "c": "Anjos servem, mas não recebem culto aqui."
+   },
+   "hint": "Veja o pronome após a ordem de adorar.",
+   "learningObjective": "Compreender a exclusividade da adoração.",
+   "evidence": [
+    "Mateus 4:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Satanás"
+    },
+    {
+     "id": "b",
+     "text": "Ele"
+    },
+    {
+     "id": "c",
+     "text": "anjos"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 4:4 a Deuteronômio 8:3?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não só de pão viverá o homem",
+   "feedbackCorrect": "Jesus cita a lição do deserto de Israel sobre viver da palavra de Deus.",
+   "feedbackWrong": {
+    "b": "Os dois textos negam que só pão sustente.",
+    "c": "A frase é sobre sustento pela palavra, não milagre diário."
+   },
+   "hint": "Compare a frase citada por Jesus.",
+   "learningObjective": "Relacionar a citação ao deserto de Israel.",
+   "evidence": [
+    "Mateus 4:4",
+    "Deuteronômio 8:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Nem só de pão"
+    },
+    {
+     "id": "b",
+     "text": "Pão sem palavra basta"
+    },
+    {
+     "id": "c",
+     "text": "Pedras viram alimento sempre"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 4:4"
+   },
+   "passageB": {
+    "ref": "Deuteronômio 8:3"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 4:10, Jesus ensina que adoração e culto pertencem somente ao Senhor Deus.",
+   "verseRef": "Mateus 4:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "Ao Senhor, seu Deus, adorarás, e somente a Ele renderás culto",
+   "feedbackCorrect": "Diante de todos os reinos, Jesus mantém a adoração exclusiva a Deus.",
+   "feedbackWrong": {
+    "false": "A resposta final de Jesus reserva adoração e culto só ao Senhor."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar a exclusividade da adoração.",
+   "evidence": [
+    "Mateus 4:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 4:10, toque o trecho que sustenta adorar somente a Deus.",
+   "verseRef": "Mateus 4:10",
+   "correctOptionId": "b",
+   "evidenceSpan": "e somente a Ele renderás culto",
+   "feedbackCorrect": "A exclusividade do culto sustenta a recusa de Jesus.",
+   "feedbackWrong": {
+    "a": "Isso expulsa o tentador, não define o culto devido.",
+    "c": "Isso nomeia a quem adorar, não a exclusividade."
+   },
+   "hint": "Procure a palavra de exclusividade.",
+   "learningObjective": "Sustentar a adoração exclusiva.",
+   "evidence": [
+    "Mateus 4:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Retire-se, Satanás"
+    },
+    {
+     "id": "b",
+     "text": "somente a Ele"
+    },
+    {
+     "id": "c",
+     "text": "seu Deus"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 4:1 a 11 sustenta sobre Jesus no deserto?",
+   "verseRef": "Mateus 4:1–2",
+   "correctOptionId": "a",
+   "evidenceSpan": "Jesus foi conduzido pelo Espírito ao deserto",
+   "feedbackCorrect": "Jesus permanece fiel pela palavra, recusando atalhos e adoração falsa.",
+   "feedbackWrong": {
+    "b": "Ele recusa usar poder em proveito próprio.",
+    "c": "Quem o conduz ao deserto é o Espírito.",
+    "d": "O texto diz que ele teve fome após jejuar."
+   },
+   "hint": "Junte condução, fome e respostas do capítulo.",
+   "learningObjective": "Escolher a leitura sobre a fidelidade.",
+   "evidence": [
+    "Mateus 4:1",
+    "Mateus 4:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Fiel ao Pai sem atalhos de poder"
+    },
+    {
+     "id": "b",
+     "text": "Vencedor por usar poder para si"
+    },
+    {
+     "id": "c",
+     "text": "Guiado pelo diabo ao deserto"
+    },
+    {
+     "id": "d",
+     "text": "Livre de fome durante a prova"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a fidelidade de Jesus no deserto?",
+   "verseRef": "Mateus 4:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então o diabo o abandonou",
+   "feedbackCorrect": "Filho declarado, Jesus é provado e permanece fiel até o diabo partir.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Os anjos servem só no fim, após a prova."
+    }
+   },
+   "hint": "Termine com o serviço dos anjos.",
+   "learningObjective": "Ver o fio batismo, prova e fidelidade.",
+   "evidence": [
+    "Mateus 3:17",
+    "Mateus 4:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Declarado Filho no batismo"
+    },
+    {
+     "id": "b",
+     "text": "Provado pelo tentador no deserto"
+    },
+    {
+     "id": "c",
+     "text": "Servo atendido pelos anjos no fim"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 4:7, que verbo Jesus usa para recusar pular do templo?",
+   "verseRef": "Mateus 4:7",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não colocarás à prova o Senhor, teu Deus",
+   "feedbackCorrect": "Pular seria colocar Deus à prova, não confiar nele.",
+   "feedbackWrong": {
+    "b": "A ideia é próxima, mas a forma do texto é outra.",
+    "c": "Saltar descreveria o ato, não a palavra citada."
+   },
+   "hint": "Veja a citação que Jesus opõe ao tentador.",
+   "learningObjective": "Lembrar o termo contra pôr Deus à prova.",
+   "evidence": [
+    "Mateus 4:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "colocarás"
+    },
+    {
+     "id": "b",
+     "text": "provarás"
+    },
+    {
+     "id": "c",
+     "text": "saltarás"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 4:11 a Hebreus 4:15?",
+   "verseRef": "Mateus 4:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então o diabo o abandonou",
+   "feedbackCorrect": "Hebreus afirma que Jesus foi tentado como nós, mas sem pecado.",
+   "feedbackWrong": {
+    "b": "O diabo parte sem que Jesus ceda às propostas.",
+    "c": "Fome e propostas mostram prova real no texto."
+   },
+   "hint": "Veja o resultado da prova em Mateus.",
+   "learningObjective": "Ligar a tentação à vitória sem pecado.",
+   "evidence": [
+    "Mateus 4:11",
+    "Hebreus 4:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Tentado sem ceder ao pecado"
+    },
+    {
+     "id": "b",
+     "text": "Tentado e vencido pela fome"
+    },
+    {
+     "id": "c",
+     "text": "Sem prova real no deserto"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 4:11"
+   },
+   "passageB": {
+    "ref": "Hebreus 4:15"
+   }
+  }
+ ]
+}

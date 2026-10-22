@@ -1,0 +1,67 @@
+Escreva a cena "ms-02-testemunho" da trilha "missao" (Missão e Evangelismo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "missao",
+  "title": "Missão e Evangelismo",
+  "description": "Anunciar Cristo — testemunho, discipulado e envio.",
+  "realm": "vida-crista"
+ },
+ "block": "Missão",
+ "mission": {
+  "slug": "ms-02-testemunho",
+  "title": "Testemunhas de Cristo",
+  "type": "lesson",
+  "intro": "O Espírito Santo capacita o povo de Deus a testemunhar de Jesus onde está e até os confins da terra.",
+  "hookRef": "Atos 1:8",
+  "hookNote": "O Espírito Santo capacita o povo de Deus a testemunhar de Jesus onde está e até os confins da terra.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "Atos 1:8"
+ },
+ "v2": {
+  "passageRef": "Atos 1:8",
+  "context": "O Espírito Santo capacita o povo de Deus a testemunhar de Jesus onde está e até os confins da terra.",
+  "keyword": "Testemunhas",
+  "verseRefs": [
+   "Atos 1:8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 1:5–11"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 1:5",
+   "text": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias."
+  },
+  {
+   "ref": "Atos 1:6",
+   "text": "Então, os que estavam reunidos lhe perguntaram: Senhor, é este o tempo em que restaurarás o reino a Israel?"
+  },
+  {
+   "ref": "Atos 1:7",
+   "text": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade;"
+  },
+  {
+   "ref": "Atos 1:8",
+   "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+  },
+  {
+   "ref": "Atos 1:9",
+   "text": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista."
+  },
+  {
+   "ref": "Atos 1:10",
+   "text": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco."
+  },
+  {
+   "ref": "Atos 1:11",
+   "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+  }
+ ]
+}
+</cena>

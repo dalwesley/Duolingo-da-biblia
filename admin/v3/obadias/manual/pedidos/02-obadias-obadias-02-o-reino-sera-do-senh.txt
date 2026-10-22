@@ -1,0 +1,55 @@
+Escreva a cena "obadias-obadias-02-o-reino-sera-do-senh" da trilha "obadias" (Obadias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "obadias",
+  "title": "Obadias",
+  "description": "Orgulho de Edom e o reino do Senhor.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Edom",
+ "mission": {
+  "slug": "obadias-obadias-02-o-reino-sera-do-senh",
+  "title": "O reino será do Senhor",
+  "type": "lesson",
+  "intro": "Esperança final.",
+  "hookRef": "Obadias 21",
+  "hookNote": "Esperança final.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre reino?"
+ },
+ "v2": {
+  "passageRef": "Obadias 21",
+  "context": "Esperança final.",
+  "keyword": "Reino",
+  "verseRefs": [
+   "Obadias 1:21"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Obadias 1:18–21"
+ ],
+ "verses": [
+  {
+   "ref": "Obadias 1:18",
+   "text": "A casa de Jacó será fogo, e a casa de José, chama; a casa de Esaú será restolho; elas incendiarão esta e a consumirão; e ninguém mais restará da casa de Esaú, porque o SENHOR assim falou."
+  },
+  {
+   "ref": "Obadias 1:19",
+   "text": "E os que estão no sul estarão em posse da montanha de Esaú, e os que habitam nas planícies os filisteus; também possuirão os campos de Efraim e os campos de Samaria; e Benjamim tomará Gileade."
+  },
+  {
+   "ref": "Obadias 1:20",
+   "text": "E os que foram levados cativos do exército dos filhos de Israel, que eram cananeus até Sarepta, e os cativos de Jerusalém, que estão em Sefarad, possuirão as cidades do Sul."
+  },
+  {
+   "ref": "Obadias 1:21",
+   "text": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor."
+  }
+ ]
+}
+</cena>

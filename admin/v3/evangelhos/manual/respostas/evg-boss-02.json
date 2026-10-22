@@ -1,0 +1,938 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:1–6",
+  "passages": [
+   {
+    "ref": "Mateus 5:1–16"
+   },
+   {
+    "ref": "Mateus 13:1–23"
+   },
+   {
+    "ref": "Marcos 6:30–44"
+   }
+  ],
+  "context": "Este desafio revisa o ensino e os sinais: as bem-aventuranças mostram os valores do reino, a parábola do semeador mostra a palavra acolhida, e Jesus alimenta a multidão com compaixão.",
+  "keyword": "Frutifica",
+  "keywordGloss": "A palavra acolhida em boa terra produz fruto; o reino cresce assim.",
+  "focusQuestion": "Onde você precisa acolher melhor a palavra para frutificar?",
+  "reflectionPrompts": [
+   "Valores do reino",
+   "Palavra que frutifica",
+   "Compaixão em ação"
+  ],
+  "facts": [
+   {
+    "text": "Os mansos herdarão a terra.",
+    "evidenceRef": "Mateus 5:5",
+    "evidenceSpan": "os mansos, porque herdarão a terra"
+   },
+   {
+    "text": "A semente em boa terra produziu cem, sessenta e trinta.",
+    "evidenceRef": "Mateus 13:8",
+    "evidenceSpan": "produziu fruto: um grão produziu cem, outro sessenta e outro trinta"
+   },
+   {
+    "text": "A boa terra ouve a palavra e a compreende.",
+    "evidenceRef": "Mateus 13:23",
+    "evidenceSpan": "aquele que ouve a palavra e a compreende"
+   },
+   {
+    "text": "Jesus teve compaixão da multidão sem pastor.",
+    "evidenceRef": "Marcos 6:34",
+    "evidenceSpan": "teve compaixão dela, pois eram como ovelhas sem pastor"
+   },
+   {
+    "text": "Todos comeram e se saciaram na multiplicação.",
+    "evidenceRef": "Marcos 6:42",
+    "evidenceSpan": "Todos comeram e se saciaram"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "mansos",
+    "gloss": "Os que recebem a terra por promessa, não por violência."
+   },
+   {
+    "term": "boa terra",
+    "gloss": "Quem ouve, compreende e frutifica com a palavra."
+   },
+   {
+    "term": "compaixão",
+    "gloss": "O olhar de Jesus que o move a ensinar e alimentar."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Valores felizes do reino no monte",
+    "evidenceRef": "Mateus 5:3–10"
+   },
+   {
+    "label": "Semente e solos da palavra",
+    "evidenceRef": "Mateus 13:3–8"
+   },
+   {
+    "label": "Explicação dos corações que ouvem",
+    "evidenceRef": "Mateus 13:19–23"
+   },
+   {
+    "label": "Compaixão que alimenta a multidão",
+    "evidenceRef": "Marcos 6:34–42"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A planta sem raiz secou porque não tinha raiz.",
+    "marker": "porque",
+    "evidenceRef": "Mateus 13:6"
+   },
+   {
+    "kind": "causa",
+    "text": "Jesus teve compaixão pois eram ovelhas sem pastor.",
+    "marker": "pois",
+    "evidenceRef": "Marcos 6:34"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quem compreende a palavra frutifica em abundância.",
+    "marker": "esse",
+    "evidenceRef": "Mateus 13:23"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 37:11",
+    "bridge": "Mansos herdarão a terra"
+   },
+   {
+    "ref": "Lucas 8:15",
+    "bridge": "Coração retém e frutifica"
+   },
+   {
+    "ref": "Salmos 145:15",
+    "bridge": "Deus alimenta a todos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O reino valoriza os fortes que tomam tudo à força.",
+    "why": "Jesus promete a terra aos mansos e chama felizes os humildes (Mt 5:3-5)."
+   },
+   {
+    "text": "Ouvir a palavra uma vez com alegria basta para frutificar.",
+    "why": "O solo rochoso recebe com alegria, mas sem raiz cai na provação (Mt 13:20-21)."
+   },
+   {
+    "text": "Milagre é espetáculo sem ensino nem cuidado.",
+    "why": "Jesus ensina a multidão com compaixão antes de alimentá-la (Mc 6:34)."
+   }
+  ],
+  "centralInsight": "Palavra que frutifica",
+  "anchorQuestion": "Que três marcas unem bem-aventuranças, semeador e multiplicação?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:10, os perseguidos por causa da justiça perderão o reino dos céus.",
+   "verseRef": "Mateus 5:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "deles é o reino dos céus",
+   "feedbackCorrect": "A promessa aos perseguidos é justamente o reino dos céus.",
+   "feedbackWrong": {
+    "true": "Releia a promessa final de Mateus 5:10."
+   },
+   "hint": "",
+   "learningObjective": "Revisar a promessa aos perseguidos.",
+   "evidence": [
+    "Mateus 5:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 13:8, toque onde a semente produziu fruto abundante.",
+   "verseRef": "Mateus 13:8",
+   "correctOptionId": "a",
+   "evidenceSpan": "E outra caiu em boa terra e produziu fruto",
+   "feedbackCorrect": "Só a boa terra é ligada ao fruto na parábola.",
+   "feedbackWrong": {
+    "b": "Isso mede o fruto, não indica o solo.",
+    "c": "Isso também mede quantidade produzida."
+   },
+   "hint": "Procure o solo ligado ao fruto.",
+   "learningObjective": "Revisar a boa terra frutífera.",
+   "evidence": [
+    "Mateus 13:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "boa terra"
+    },
+    {
+     "id": "b",
+     "text": "sessenta"
+    },
+    {
+     "id": "c",
+     "text": "outro trinta"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Marcos 6:34, como Jesus descreve a multidão com sua comparação?",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "b",
+   "evidenceSpan": "pois eram como ovelhas sem pastor",
+   "feedbackCorrect": "A comparação mostra gente sem guia diante de Jesus.",
+   "feedbackWrong": {
+    "a": "Não há imagem militar nesta cena.",
+    "c": "Eles recebem ensino, não são descritos assim.",
+    "d": "A imagem usada é de rebanho sem guia."
+   },
+   "hint": "Veja a comparação após a compaixão.",
+   "learningObjective": "Revisar a condição da multidão.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Como exército preparado"
+    },
+    {
+     "id": "b",
+     "text": "Como ovelhas sem pastor"
+    },
+    {
+     "id": "c",
+     "text": "Como alunos sem perguntas"
+    },
+    {
+     "id": "d",
+     "text": "Como festa sem convidados"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Marcos 6:42 e 43 na ordem do texto.",
+   "verseRef": "Marcos 6:42–43",
+   "correctOptionId": "a",
+   "evidenceSpan": "Todos comeram e se saciaram",
+   "feedbackCorrect": "Todos saciados e ainda doze cestos recolhidos fecham o sinal.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece por todos comendo até saciar."
+    }
+   },
+   "hint": "Comece pelo resultado para todos.",
+   "learningObjective": "Reconhecer saciedade e sobra.",
+   "evidence": [
+    "Marcos 6:42–43"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Todos comeram e se saciaram"
+    },
+    {
+     "id": "b",
+     "text": "E recolheram doze cestos cheios"
+    },
+    {
+     "id": "c",
+     "text": "de pedaços de pão e de peixes"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:7, o que alcançarão os misericordiosos segundo Jesus?",
+   "verseRef": "Mateus 5:7",
+   "correctOptionId": "a",
+   "evidenceSpan": "porque alcançarão misericórdia",
+   "feedbackCorrect": "Quem pratica misericórdia alcança misericórdia de Deus.",
+   "feedbackWrong": {
+    "b": "Justiça é a fome do versículo anterior.",
+    "c": "Terra é a herança dos mansos."
+   },
+   "hint": "Veja a promessa própria deste grupo.",
+   "learningObjective": "Revisar a promessa aos misericordiosos.",
+   "evidence": [
+    "Mateus 5:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "misericórdia"
+    },
+    {
+     "id": "b",
+     "text": "justiça"
+    },
+    {
+     "id": "c",
+     "text": "terra"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 13:23 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "a",
+   "evidenceSpan": "aquele que ouve a palavra e a compreende",
+   "feedbackCorrect": "A boa terra frutifica porque ouve e compreende a palavra.",
+   "feedbackWrong": {
+    "b": "Perder a palavra é o solo do caminho.",
+    "c": "Coração endurecido não ouve nem entende."
+   },
+   "hint": "Veja a marca da boa terra.",
+   "learningObjective": "Ligar a palavra ao fruto.",
+   "evidence": [
+    "Mateus 13:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra compreendida frutifica"
+    },
+    {
+     "id": "b",
+     "text": "Palavra ouvida se perde"
+    },
+    {
+     "id": "c",
+     "text": "Coração duro frutifica"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 13:23"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A Palavra acolhida com compreensão produz fruto no Reino."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Marcos 6:38, toque a quantidade de peixes que os discípulos informam.",
+   "verseRef": "Marcos 6:38",
+   "correctOptionId": "b",
+   "evidenceSpan": "Cinco pães e dois peixes",
+   "feedbackCorrect": "Dois peixes acompanhavam os cinco pães disponíveis.",
+   "feedbackWrong": {
+    "a": "Isso é a outra parte da resposta numérica.",
+    "c": "Isso é a ordem de Jesus, não a quantidade."
+   },
+   "hint": "Procure o segundo número da resposta.",
+   "learningObjective": "Revisar os peixes disponíveis.",
+   "evidence": [
+    "Marcos 6:38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cinco pães"
+    },
+    {
+     "id": "b",
+     "text": "dois peixes"
+    },
+    {
+     "id": "c",
+     "text": "Vão olhar"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 13:5 e 6 na ordem do texto.",
+   "verseRef": "Mateus 13:5–6",
+   "correctOptionId": "a",
+   "evidenceSpan": "outra parte caiu em solo rochoso",
+   "feedbackCorrect": "Nascer rápido e secar sem raiz descreve o solo rochoso.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela queda no solo rochoso."
+    }
+   },
+   "hint": "Comece pelo solo raso.",
+   "learningObjective": "Reconhecer o solo rochoso.",
+   "evidence": [
+    "Mateus 13:5–6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "outra parte caiu em solo rochoso, onde a terra era pouca"
+    },
+    {
+     "id": "b",
+     "text": "e logo nasceu, pois a terra não era profunda"
+    },
+    {
+     "id": "c",
+     "text": "Mas, ao sair o sol, secou-se e murchou"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:16, a luz dos discípulos deve brilhar para que eles mesmos sejam glorificados pelos homens.",
+   "verseRef": "Mateus 5:16",
+   "correctOptionId": "false",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "A glória é dirigida ao Pai, não aos discípulos que brilham.",
+   "feedbackWrong": {
+    "true": "Veja quem é glorificado no fim do versículo."
+   },
+   "hint": "",
+   "learningObjective": "Compreender o destino da glória.",
+   "evidence": [
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 13:22, toque o que sufoca a palavra entre espinhos.",
+   "verseRef": "Mateus 13:22",
+   "correctOptionId": "a",
+   "evidenceSpan": "os cuidados deste mundo e a sedução das riquezas sufocam a palavra",
+   "feedbackCorrect": "Cuidados e riquezas disputam espaço com a palavra ouvida.",
+   "feedbackWrong": {
+    "b": "Ouvir acontece, mas não é o que sufoca.",
+    "c": "Isso é o resultado, não o agente sufocante."
+   },
+   "hint": "Procure os rivais citados por Jesus.",
+   "learningObjective": "Reconhecer o que sufoca a palavra.",
+   "evidence": [
+    "Mateus 13:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "cuidados deste mundo"
+    },
+    {
+     "id": "b",
+     "text": "ouve a palavra"
+    },
+    {
+     "id": "c",
+     "text": "fica infrutífera"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o Sermão e o semeador se ligam pelo ouvir de Jesus?",
+   "verseRef": "Mateus 13:9",
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem tem ouvidos para ouvir, que ouça",
+   "feedbackCorrect": "Nos dois ensinos, ouvir Jesus pede resposta de vida e fruto.",
+   "feedbackWrong": {
+    "b": "A boa terra responde compreendendo e frutificando.",
+    "c": "Discípulos perguntam e recebem explicação.",
+    "d": "Aos discípulos é dado conhecer os mistérios."
+   },
+   "hint": "Veja o chamado aos ouvidos na parábola.",
+   "learningObjective": "Compreender o ouvir que responde.",
+   "evidence": [
+    "Mateus 5:3",
+    "Mateus 13:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Bem-aventurados ouvem e praticam valores"
+    },
+    {
+     "id": "b",
+     "text": "Ouvir Jesus dispensa qualquer resposta"
+    },
+    {
+     "id": "c",
+     "text": "Só multidões, nunca discípulos, ouvem"
+    },
+    {
+     "id": "d",
+     "text": "Parábolas escondem tudo de todos"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Jesus do monte à beira-mar no bloco?",
+   "verseRef": "Mateus 5:1–2",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, vendo Jesus as multidões, subiu a um monte",
+   "feedbackCorrect": "Monte, parábola pública e explicação formam o ensino do bloco.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A explicação aos discípulos vem por último."
+    }
+   },
+   "hint": "Termine com a explicação da parábola.",
+   "learningObjective": "Compreender o ensino do bloco.",
+   "evidence": [
+    "Mateus 5:1",
+    "Mateus 13:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus ensina valores do reino no monte"
+    },
+    {
+     "id": "b",
+     "text": "Jesus conta a parábola do semeador"
+    },
+    {
+     "id": "c",
+     "text": "Jesus explica a palavra aos discípulos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Marcos 6:41, o que Jesus ergue ao céu antes de abençoar os pães?",
+   "verseRef": "Marcos 6:41",
+   "correctOptionId": "a",
+   "evidenceSpan": "erguendo os olhos ao céu, abençoou-os",
+   "feedbackCorrect": "Antes de partir, Jesus olha ao céu e abençoa o alimento.",
+   "feedbackWrong": {
+    "b": "Pães são tomados e partidos, não erguidos assim.",
+    "c": "Peixes são repartidos entre todos depois."
+   },
+   "hint": "Veja o gesto antes da bênção.",
+   "learningObjective": "Compreender o gesto de Jesus.",
+   "evidence": [
+    "Marcos 6:41"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "olhos"
+    },
+    {
+     "id": "b",
+     "text": "pães"
+    },
+    {
+     "id": "c",
+     "text": "peixes"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:5 a Salmos 37:11?",
+   "verseRef": "Mateus 5:5",
+   "correctOptionId": "a",
+   "evidenceSpan": "os mansos, porque herdarão a terra",
+   "feedbackCorrect": "Jesus retoma a promessa do salmo aos mansos.",
+   "feedbackWrong": {
+    "b": "A promessa é justamente aos mansos.",
+    "c": "Os dois textos prometem herança aos mansos."
+   },
+   "hint": "Compare os herdeiros nos dois textos.",
+   "learningObjective": "Relacionar Sermão e salmo.",
+   "evidence": [
+    "Mateus 5:5",
+    "Salmos 37:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Mansos recebem a terra"
+    },
+    {
+     "id": "b",
+     "text": "Violentos recebem a terra"
+    },
+    {
+     "id": "c",
+     "text": "Mansos ficam sem herança"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 5:5"
+   },
+   "passageB": {
+    "ref": "Salmos 37:11"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:13, toque o que os discípulos são para a terra.",
+   "verseRef": "Mateus 5:13",
+   "correctOptionId": "a",
+   "evidenceSpan": "Vocês são o sal da terra",
+   "feedbackCorrect": "Sal e luz descrevem a presença dos discípulos no mundo.",
+   "feedbackWrong": {
+    "b": "Isso é o sal que perdeu o sabor.",
+    "c": "Isso é o destino do sal inútil."
+   },
+   "hint": "Procure a primeira declaração sobre eles.",
+   "learningObjective": "Revisar a identidade dos discípulos.",
+   "evidence": [
+    "Mateus 5:13"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sal da terra"
+    },
+    {
+     "id": "b",
+     "text": "insípido"
+    },
+    {
+     "id": "c",
+     "text": "pisado"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia a multiplicação em Marcos 6?",
+   "verseRef": "Marcos 6:38–39",
+   "correctOptionId": "a",
+   "evidenceSpan": "Quantos pães vocês têm",
+   "feedbackCorrect": "Pouco informado, povo assentado e pão abençoado para distribuir.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A bênção vem depois de assentar a multidão."
+    }
+   },
+   "hint": "Comece pela pergunta sobre os pães.",
+   "learningObjective": "Compreender os passos do sinal.",
+   "evidence": [
+    "Marcos 6:38",
+    "Marcos 6:41"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Os discípulos informam o pouco que têm"
+    },
+    {
+     "id": "b",
+     "text": "Jesus manda a multidão se assentar"
+    },
+    {
+     "id": "c",
+     "text": "Jesus abençoa e parte os pães"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 13:23 e 5:3, o reino frutifica em quem ouve, compreende e depende de Deus.",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "true",
+   "evidenceSpan": "aquele que ouve a palavra e a compreende",
+   "feedbackCorrect": "Boa terra e humildes de espírito descrevem acolhida dependente.",
+   "feedbackWrong": {
+    "false": "Junte a boa terra de Mateus 13 com os humildes de Mateus 5."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar acolhida que frutifica.",
+   "evidence": [
+    "Mateus 13:23",
+    "Mateus 5:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:8, toque o trecho que sustenta ver a Deus pela pureza.",
+   "verseRef": "Mateus 5:8",
+   "correctOptionId": "b",
+   "evidenceSpan": "pois verão a Deus",
+   "feedbackCorrect": "A promessa aos puros aponta para a visão de Deus.",
+   "feedbackWrong": {
+    "a": "Isso é a condição, não a promessa final.",
+    "c": "Isso anuncia felicidade, não o que verão."
+   },
+   "hint": "Procure a promessa no fim da frase.",
+   "learningObjective": "Sustentar a promessa aos puros.",
+   "evidence": [
+    "Mateus 5:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "puros de coração"
+    },
+    {
+     "id": "b",
+     "text": "verão a Deus"
+    },
+    {
+     "id": "c",
+     "text": "Bem-aventurados"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura une bem-aventuranças, semeador e multiplicação?",
+   "verseRef": "Mateus 5:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "Bem-aventurados os humildes de espírito",
+   "feedbackCorrect": "Valores, palavra frutífera e compaixão descrevem o mesmo reino.",
+   "feedbackWrong": {
+    "b": "Ensino, fruto e alimento mostram prática real.",
+    "c": "A boa terra frutifica ouvindo e compreendendo.",
+    "d": "Jesus ensina antes de alimentar a multidão."
+   },
+   "hint": "Junte monte, parábola e multidão alimentada.",
+   "learningObjective": "Escolher a leitura do bloco.",
+   "evidence": [
+    "Mateus 5:3",
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Reino acolhido transforma e cuida"
+    },
+    {
+     "id": "b",
+     "text": "Reino é só discurso sem prática"
+    },
+    {
+     "id": "c",
+     "text": "Fruto vem sem ouvir a palavra"
+    },
+    {
+     "id": "d",
+     "text": "Compaixão dispensa ensino do reino"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o reino neste bloco dos evangelhos?",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "a",
+   "evidenceSpan": "esse frutifica e produz a cem",
+   "feedbackCorrect": "Valores anunciados, palavra frutífera e cuidado prático.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O alimento à multidão fecha o bloco revisado."
+    }
+   },
+   "hint": "Termine com a multidão alimentada.",
+   "learningObjective": "Ver o fio do bloco de ensino.",
+   "evidence": [
+    "Mateus 5:3",
+    "Marcos 6:42"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus anuncia felizes os dependentes"
+    },
+    {
+     "id": "b",
+     "text": "A palavra frutifica na boa terra"
+    },
+    {
+     "id": "c",
+     "text": "A compaixão alimenta a multidão faminta"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Marcos 6:34, o que Jesus começou a fazer após ter compaixão da multidão?",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "a",
+   "evidenceSpan": "e começou a ensinar-lhes muitas coisas",
+   "feedbackCorrect": "Compaixão leva primeiro ao ensino de ovelhas sem pastor.",
+   "feedbackWrong": {
+    "b": "Alimentar vem depois, com pães e peixes.",
+    "c": "Despedir era a sugestão dos discípulos."
+   },
+   "hint": "Veja a ação logo após a compaixão.",
+   "learningObjective": "Lembrar ensino antes do alimento.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "ensinar-lhes"
+    },
+    {
+     "id": "b",
+     "text": "alimentar-lhes"
+    },
+    {
+     "id": "c",
+     "text": "despedir-lhes"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 13:23 a Lucas 8:15?",
+   "verseRef": "Mateus 13:23",
+   "correctOptionId": "a",
+   "evidenceSpan": "aquele que ouve a palavra e a compreende",
+   "feedbackCorrect": "Lucas liga fruto ao coração bom que retém a palavra ouvida.",
+   "feedbackWrong": {
+    "b": "Solo duro perde ou sufoca a palavra.",
+    "c": "Nos dois, o coração acolhedor é decisivo."
+   },
+   "hint": "Compare o coração da boa terra.",
+   "learningObjective": "Ligar a boa terra entre evangelhos.",
+   "evidence": [
+    "Mateus 13:23",
+    "Lucas 8:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Coração bom frutifica ouvindo"
+    },
+    {
+     "id": "b",
+     "text": "Solo duro produz fruto"
+    },
+    {
+     "id": "c",
+     "text": "Palavra sem coração frutifica"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 13:23"
+   },
+   "passageB": {
+    "ref": "Lucas 8:15"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 13:20, toque a reação inicial de quem ouve no solo rochoso.",
+   "verseRef": "Mateus 13:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "e a recebe imediatamente, com alegria",
+   "feedbackCorrect": "A alegria inicial existe, mas não garante raiz nem permanência.",
+   "feedbackWrong": {
+    "b": "Isso nomeia o solo, não a reação do ouvinte.",
+    "c": "Isso é o que é ouvido, não como é recebido."
+   },
+   "hint": "Procure o sentimento da recepção inicial.",
+   "learningObjective": "Revisar a alegria sem raiz.",
+   "evidence": [
+    "Mateus 13:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "com alegria"
+    },
+    {
+     "id": "b",
+     "text": "solo rochoso"
+    },
+    {
+     "id": "c",
+     "text": "a palavra"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela por que nem toda semente frutifica?",
+   "verseRef": "Mateus 13:22",
+   "correctOptionId": "a",
+   "evidenceSpan": "e ela fica infrutífera",
+   "feedbackCorrect": "Três perdas diferentes mostram corações que não frutificam.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pelo solo à beira do caminho."
+    }
+   },
+   "hint": "Siga a ordem da explicação de Jesus.",
+   "learningObjective": "Ver as perdas da palavra.",
+   "evidence": [
+    "Mateus 13:19",
+    "Mateus 13:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra não compreendida é arrancada"
+    },
+    {
+     "id": "b",
+     "text": "Palavra sem raiz cai na angústia"
+    },
+    {
+     "id": "c",
+     "text": "Palavra sufocada fica sem fruto"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

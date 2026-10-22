@@ -1,0 +1,497 @@
+{
+ "study": {
+  "passageRef": "Lamentações 1:1",
+  "passages": [
+   { "ref": "Lamentações 1:1–4" }
+  ],
+  "context": "Jerusalém caiu e o povo foi levado. O livro abre olhando para a cidade antes cheia de gente e agora sentada só, como viúva, sem ninguém que a console.",
+  "keyword": "Solidão",
+  "keywordGloss": "A cidade populosa está só: sem consolo, a caminho do cativeiro e com as portas devastadas.",
+  "focusQuestion": "Diante de uma perda concreta, como você pode chorar com honestidade diante de Deus?",
+  "reflectionPrompts": [
+   "Cidade só e sem consolo",
+   "Amigos que viraram inimigos",
+   "Portas devastadas"
+  ],
+  "facts": [
+   {
+    "text": "A que foi grande entre as nações tornou-se como viúva.",
+    "evidenceRef": "Lamentações 1:1",
+    "evidenceSpan": "Tornou-se como viúva"
+   },
+   {
+    "text": "Não há quem console a cidade entre todos os que a amavam.",
+    "evidenceRef": "Lamentações 1:2",
+    "evidenceSpan": "não há quem a console"
+   },
+   {
+    "text": "Os amigos da cidade se converteram em seus inimigos.",
+    "evidenceRef": "Lamentações 1:2",
+    "evidenceSpan": "se converteram em seus inimigos"
+   },
+   {
+    "text": "Judá foi levado ao cativeiro por causa da aflição e da servidão.",
+    "evidenceRef": "Lamentações 1:3",
+    "evidenceSpan": "Judá foi levado ao cativeiro"
+   },
+   {
+    "text": "Todas as portas de Sião estão devastadas.",
+    "evidenceRef": "Lamentações 1:4",
+    "evidenceSpan": "todas as suas portas estão devastadas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "solitária",
+    "gloss": "A cidade antes cheia de gente agora está sentada só, sem povo ao redor."
+   },
+   {
+    "term": "viúva",
+    "gloss": "Imagem de quem perdeu proteção e honra e ficou sem quem a console."
+   },
+   {
+    "term": "cativeiro",
+    "gloss": "Judá foi levado para longe, sem descanso, entre as nações."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Cidade cheia, agora sentada só",
+    "evidenceRef": "Lamentações 1:1"
+   },
+   {
+    "label": "Choro à noite sem consolo",
+    "evidenceRef": "Lamentações 1:2"
+   },
+   {
+    "label": "Judá levado ao cativeiro",
+    "evidenceRef": "Lamentações 1:3"
+   },
+   {
+    "label": "Caminhos e portas em luto",
+    "evidenceRef": "Lamentações 1:4"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Judá foi levado ao cativeiro por causa da aflição e da grande servidão.",
+    "marker": "por causa",
+    "evidenceRef": "Lamentações 1:3"
+   },
+   {
+    "kind": "contraste",
+    "text": "A cidade que outrora foi populosa agora está solitária e sujeita a trabalhos.",
+    "marker": "outrora",
+    "evidenceRef": "Lamentações 1:1"
+   },
+   {
+    "kind": "resultado",
+    "text": "Os amigos da cidade se tornaram traiçoeiros e se converteram em seus inimigos.",
+    "marker": "converteram",
+    "evidenceRef": "Lamentações 1:2"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 137:1",
+    "bridge": "Choro lembrando de Sião"
+   },
+   {
+    "ref": "Lucas 19:41",
+    "bridge": "Jesus chora sobre Jerusalém"
+   },
+   {
+    "ref": "Jeremias 9:1",
+    "bridge": "Olhos em fonte de lágrimas"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A solidão da cidade é só um sentimento passageiro, sem perdas reais.",
+    "why": "O texto mostra perdas concretas: sem consolo, cativeiro, portas devastadas e festas vazias."
+   },
+   {
+    "text": "Os amigos da cidade continuam fiéis ao lado dela na queda.",
+    "why": "O texto diz que todos se tornaram traiçoeiros e se converteram em seus inimigos."
+   },
+   {
+    "text": "O luto acaba logo, quando a próxima festa chegar.",
+    "why": "Ninguém vem à reunião solene e as portas estão devastadas: a festa não acontece."
+   }
+  ],
+  "centralInsight": "O luto da cidade é concreto",
+  "anchorQuestion": "Como Lamentações 1:1 descreve a cidade que outrora foi populosa?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lamentações 1:2, não há quem console a cidade entre todos os que a amavam.",
+   "verseRef": "Lamentações 1:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "não há quem a console",
+   "feedbackCorrect": "A cidade chora à noite e não encontra consolo em quem a amava.",
+   "feedbackWrong": {
+    "false": "Releia 1:2: não há quem a console entre todos os que a amavam."
+   },
+   "hint": "Veja quem poderia consolar a cidade.",
+   "learningObjective": "Observar a falta de consolo da cidade.",
+   "evidence": ["Lamentações 1:2"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lamentações 1:1, toque como a cidade se tornou depois de ser grande.",
+   "verseRef": "Lamentações 1:1",
+   "options": [
+    { "id": "a", "text": "como viúva" },
+    { "id": "b", "text": "como princesa" },
+    { "id": "c", "text": "populosa" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tornou-se como viúva",
+   "feedbackCorrect": "A grande entre as nações tornou-se como viúva: perdeu honra e proteção.",
+   "feedbackWrong": {
+    "b": "Princesa era como ela era antes; agora ela se tornou como viúva.",
+    "c": "Populosa era o passado; o presente é solidão e viuvez."
+   },
+   "hint": "Veja o verbo tornou-se.",
+   "learningObjective": "Identificar a imagem da viuvez da cidade.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lamentações 1:3, para onde Judá foi levado?",
+   "verseRef": "Lamentações 1:3",
+   "options": [
+    { "id": "a", "text": "De volta à sua terra" },
+    { "id": "b", "text": "Ao cativeiro" },
+    { "id": "c", "text": "Ao descanso entre as nações" },
+    { "id": "d", "text": "À reunião solene" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Judá foi levado ao cativeiro",
+   "feedbackCorrect": "Judá foi levado ao cativeiro e habita entre as nações, sem descanso.",
+   "feedbackWrong": {
+    "a": "Ele foi tirado da terra, não devolvido a ela.",
+    "c": "O texto diz o contrário: sem encontrar descanso.",
+    "d": "À reunião solene ninguém vem, como mostra o versículo seguinte."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Observar o destino de Judá no exílio.",
+   "evidence": ["Lamentações 1:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lamentações 1:2 na ordem do texto.",
+   "verseRef": "Lamentações 1:2",
+   "options": [
+    { "id": "a", "text": "Chora incessantemente à noite" },
+    { "id": "b", "text": "não há quem a console" },
+    { "id": "c", "text": "se converteram em seus inimigos" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Chora incessantemente à noite",
+   "feedbackCorrect": "Choro à noite, nenhum consolo, e amigos que viram inimigos.",
+   "feedbackWrong": {
+    "default": "Comece pelo choro à noite; os inimigos fecham o versículo."
+   },
+   "hint": "O versículo começa pelo choro.",
+   "learningObjective": "Reconhecer a sequência de Lamentações 1:2.",
+   "evidence": ["Lamentações 1:2"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lamentações 1:4, como estão as portas de Sião?",
+   "verseRef": "Lamentações 1:4",
+   "options": [
+    { "id": "a", "text": "devastadas" },
+    { "id": "b", "text": "fechadas" },
+    { "id": "c", "text": "guardadas" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todas as suas portas estão devastadas",
+   "feedbackCorrect": "As portas estão devastadas: ninguém entra para a festa em Sião.",
+   "feedbackWrong": {
+    "b": "Não é só fechamento; o texto fala de devastação.",
+    "c": "Não há guardas citados; as portas estão devastadas."
+   },
+   "hint": "Veja como o texto descreve as portas.",
+   "learningObjective": "Lembrar o estado das portas de Sião.",
+   "evidence": ["Lamentações 1:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+   "verseRef": "Lamentações 1:1",
+   "passageA": { "ref": "Lamentações 1:1" },
+   "passageB": { "ref": "Contexto", "text": "Jerusalém perdeu povo, honra e liberdade depois da queda." },
+   "options": [
+    { "id": "a", "text": "Cidade só, viúva e serva" },
+    { "id": "b", "text": "Cidade cheia e celebrada" },
+    { "id": "c", "text": "Cidade livre e honrada" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Como está solitária a cidade",
+   "feedbackCorrect": "Só, como viúva e sob trabalhos: assim está a cidade que foi grande.",
+   "feedbackWrong": {
+    "b": "Cheia e celebrada era o passado; agora ela está solitária.",
+    "c": "Ela está sujeita a trabalhos forçados, não livre e honrada."
+   },
+   "hint": "Veja as três imagens do versículo.",
+   "learningObjective": "Ligar a solidão da cidade às suas perdas concretas.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lamentações 1:2, os amigos da cidade se tornaram traiçoeiros e se converteram em seus inimigos.",
+   "verseRef": "Lamentações 1:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "se converteram em seus inimigos",
+   "feedbackCorrect": "Quem amava a cidade se tornou traiçoeiro e se converteu em inimigo.",
+   "feedbackWrong": {
+    "false": "Releia o fim de 1:2: os amigos se converteram em inimigos."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Compreender a traição dos antigos aliados.",
+   "evidence": ["Lamentações 1:2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lamentações 1:3, toque a palavra que mostra a causa do cativeiro de Judá.",
+   "verseRef": "Lamentações 1:3",
+   "options": [
+    { "id": "a", "text": "por causa" },
+    { "id": "b", "text": "cativeiro" },
+    { "id": "c", "text": "descanso" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por causa da aflição",
+   "feedbackCorrect": "Judá foi levado por causa da aflição e da grande servidão.",
+   "feedbackWrong": {
+    "b": "Cativeiro é o destino; a causa vem logo depois dele.",
+    "c": "Descanso é o que Judá não encontra entre as nações."
+   },
+   "hint": "Procure a ligação de causa.",
+   "learningObjective": "Reconhecer o marcador de causa em 1:3.",
+   "evidence": ["Lamentações 1:3"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Lamentações 1:2 aprofunda o quadro de Lamentações 1:1?",
+   "verseRef": "Lamentações 1:1–2",
+   "options": [
+    { "id": "a", "text": "A solidão vira choro sem ninguém para consolar" },
+    { "id": "b", "text": "A cidade recupera logo a sua honra" },
+    { "id": "c", "text": "Os amigos voltam para consolar a cidade" },
+    { "id": "d", "text": "A viuvez é substituída por uma festa" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não há quem a console",
+   "feedbackCorrect": "A cidade solitária agora chora à noite, sem consolo e sem aliados fiéis.",
+   "feedbackWrong": {
+    "b": "Nenhuma honra volta; amigos viram inimigos e as lágrimas continuam.",
+    "c": "Os amigos se tornaram traiçoeiros, não consoladores.",
+    "d": "Não há festa: há choro incessante à noite."
+   },
+   "hint": "Pense no que falta à cidade em 1:2.",
+   "learningObjective": "Relacionar a solidão de 1:1 com o choro de 1:2.",
+   "evidence": ["Lamentações 1:1–2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Lamentações 1:3–4?",
+   "verseRef": "Lamentações 1:3–4",
+   "options": [
+    { "id": "a", "text": "Judá levado, sem descanso" },
+    { "id": "b", "text": "Caminhos de Sião sem ninguém" },
+    { "id": "c", "text": "Portas devastadas e sacerdotes suspirando" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Judá foi levado ao cativeiro",
+   "feedbackCorrect": "Primeiro o exílio de Judá, depois Sião vazia e em amargura.",
+   "feedbackWrong": {
+    "default": "Comece pelo cativeiro de Judá; a amargura de Sião fecha."
+   },
+   "hint": "O cativeiro vem antes dos caminhos vazios.",
+   "learningObjective": "Compreender o avanço do exílio ao luto de Sião.",
+   "evidence": ["Lamentações 1:3–4"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lamentações 1:2, o que ninguém faz pela cidade que chora?",
+   "verseRef": "Lamentações 1:2",
+   "options": [
+    { "id": "a", "text": "console" },
+    { "id": "b", "text": "escute" },
+    { "id": "c", "text": "visite" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não há quem a console",
+   "feedbackCorrect": "Não há quem console: a dor da cidade não encontra resposta ao redor.",
+   "feedbackWrong": {
+    "b": "O texto não fala de escuta; fala da falta de consolo.",
+    "c": "Visitar não é a palavra do texto para o que falta à cidade."
+   },
+   "hint": "Veja o que falta entre os que a amavam.",
+   "learningObjective": "Compreender a falta de consolo como parte do luto.",
+   "evidence": ["Lamentações 1:2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lamentações 1:2 a Salmos 137:1?",
+   "verseRef": "Lamentações 1:2",
+   "passageA": { "ref": "Lamentações 1:2" },
+   "passageB": { "ref": "Salmos 137:1" },
+   "options": [
+    { "id": "a", "text": "Exilados choram lembrando de Sião" },
+    { "id": "b", "text": "Exilados esquecem Sião depressa" },
+    { "id": "c", "text": "Sião celebra longe de casa" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas lágrimas lhe escorrem pelo rosto",
+   "feedbackCorrect": "Nos dois textos, o povo chora longe de casa, lembrando de Sião.",
+   "feedbackWrong": {
+    "b": "Eles choram justamente porque se lembram de Sião.",
+    "c": "Não há celebração; há lágrimas às margens dos rios."
+   },
+   "hint": "Compare o choro dos dois textos.",
+   "learningObjective": "Relacionar o choro de Jerusalém com o choro do exílio.",
+   "evidence": ["Lamentações 1:2", "Salmos 137:1"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Lamentações 1:3–4, o luto de Jerusalém é apenas um sentimento, sem perdas concretas.",
+   "verseRef": "Lamentações 1:3–4",
+   "correctOptionId": "false",
+   "evidenceSpan": "todas as suas portas estão devastadas",
+   "feedbackCorrect": "O luto é concreto: cativeiro, caminhos vazios e portas devastadas.",
+   "feedbackWrong": {
+    "true": "Há perdas reais: exílio, portas devastadas e sacerdotes suspirando."
+   },
+   "hint": "Veja as perdas nomeadas no trecho.",
+   "learningObjective": "Interpretar o luto como perda concreta, não só sentimento.",
+   "evidence": ["Lamentações 1:3–4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lamentações 1:4, toque o trecho que mostra que até os caminhos participam do luto.",
+   "verseRef": "Lamentações 1:4",
+   "options": [
+    { "id": "a", "text": "caminhos de Sião" },
+    { "id": "b", "text": "reunião solene" },
+    { "id": "c", "text": "suas portas" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os caminhos de Sião choram",
+   "feedbackCorrect": "Até os caminhos choram: ninguém vem, e Sião está em amargura.",
+   "feedbackWrong": {
+    "b": "A reunião solene é o que não acontece; quem chora são os caminhos.",
+    "c": "As portas estão devastadas; o choro é atribuído aos caminhos."
+   },
+   "hint": "Procure quem chora no versículo.",
+   "learningObjective": "Sustentar com o texto a dimensão do luto de Sião.",
+   "evidence": ["Lamentações 1:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lamentações 1:1 sustenta sobre a queda de Jerusalém?",
+   "verseRef": "Lamentações 1:1",
+   "options": [
+    { "id": "a", "text": "A queda é perda concreta de povo e honra" },
+    { "id": "b", "text": "A cidade só parece solitária por fora" },
+    { "id": "c", "text": "A viuvez mostra que Deus a esqueceu" },
+    { "id": "d", "text": "O trabalho forçado é sinal de liberdade" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tornou-se como viúva",
+   "feedbackCorrect": "Solitária, como viúva e sob trabalhos: a queda tirou povo, honra e liberdade.",
+   "feedbackWrong": {
+    "b": "A perda é real: povo, honra e liberdade foram tirados.",
+    "c": "O texto descreve a queda sem afirmar um esquecimento final de Deus.",
+    "d": "Trabalho forçado é servidão imposta, não liberdade."
+   },
+   "hint": "Compare cada opção com as três imagens de 1:1.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre a queda.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do choro que começa em Lamentações 1:2?",
+   "verseRef": "Lamentações 1:2",
+   "options": [
+    { "id": "a", "text": "Jerusalém chora sem quem a console" },
+    { "id": "b", "text": "Exilados choram junto aos rios" },
+    { "id": "c", "text": "Jesus chora ao ver a cidade" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "não há quem a console",
+   "feedbackCorrect": "O choro de Jerusalém atravessa o exílio e chega ao pranto de Jesus.",
+   "feedbackWrong": {
+    "default": "Siga a história: Lamentações, Salmos do exílio e Evangelhos."
+   },
+   "hint": "Siga a ordem: queda, exílio e Jesus.",
+   "learningObjective": "Ver o choro de Jerusalém como fio que atravessa a Bíblia.",
+   "evidence": ["Lamentações 1:2", "Salmos 137:1", "Lucas 19:41"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lamentações 1:1, como está a cidade que outrora foi populosa?",
+   "verseRef": "Lamentações 1:1",
+   "options": [
+    { "id": "a", "text": "solitária" },
+    { "id": "b", "text": "silenciosa" },
+    { "id": "c", "text": "abandonada" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Como está solitária a cidade",
+   "feedbackCorrect": "Solitária é a palavra que abre o livro e resume a queda da cidade.",
+   "feedbackWrong": {
+    "b": "A cidade chora e suspira; a palavra de abertura é outra.",
+    "c": "Abandonada resume bem, mas o texto abre com outra palavra."
+   },
+   "hint": "É a primeira descrição da cidade.",
+   "learningObjective": "Lembrar o termo que abre e resume o livro.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lamentações 1:1 a Lucas 19:41?",
+   "verseRef": "Lamentações 1:1",
+   "passageA": { "ref": "Lamentações 1:1" },
+   "passageB": { "ref": "Lucas 19:41" },
+   "options": [
+    { "id": "a", "text": "Jesus chora sobre Jerusalém" },
+    { "id": "b", "text": "Jesus ignora a cidade caída" },
+    { "id": "c", "text": "A cidade dispensa consolo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Como está solitária a cidade",
+   "feedbackCorrect": "Jesus chora ao ver Jerusalém: Deus não é indiferente ao luto da cidade.",
+   "feedbackWrong": {
+    "b": "Jesus não ignora: ao ver a cidade, ele chora por ela.",
+    "c": "A cidade de Lamentações chora justamente sem consolo."
+   },
+   "hint": "Veja o que Jesus faz ao ver a cidade.",
+   "learningObjective": "Ligar o luto de Jerusalém ao pranto de Jesus.",
+   "evidence": ["Lamentações 1:1", "Lucas 19:41"]
+  }
+ ]
+}

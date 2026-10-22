@@ -1,0 +1,72 @@
+Escreva a cena "habacuque-habacuque-01-a-queixa-do-profeta" da trilha "habacuque" (Habacuque).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "habacuque",
+  "title": "Habacuque",
+  "description": "Até quando? — o justo viverá pela fé.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Perguntas e fé",
+ "mission": {
+  "slug": "habacuque-habacuque-01-a-queixa-do-profeta",
+  "title": "A queixa do profeta",
+  "type": "lesson",
+  "intro": "Por que a injustiça prosperar?",
+  "hookRef": "Habacuque 2:4",
+  "hookNote": "Por que a injustiça prosperar?",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre queixa?"
+ },
+ "v2": {
+  "passageRef": "Habacuque 2:4",
+  "context": "Por que a injustiça prosperar?",
+  "keyword": "Queixa",
+  "verseRefs": [
+   "Habacuque 1:2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Habacuque 2:1–7",
+  "Habacuque 1:2"
+ ],
+ "verses": [
+  {
+   "ref": "Habacuque 2:1",
+   "text": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa."
+  },
+  {
+   "ref": "Habacuque 2:2",
+   "text": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em tábuas, para que até quem passa correndo possa lê-la."
+  },
+  {
+   "ref": "Habacuque 2:3",
+   "text": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará."
+  },
+  {
+   "ref": "Habacuque 2:4",
+   "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+  },
+  {
+   "ref": "Habacuque 2:5",
+   "text": "Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos."
+  },
+  {
+   "ref": "Habacuque 2:6",
+   "text": "Não levantarão, portanto, todos estes contra ele um provérbio e um dito zombador, dizendo: Ai daquele que acumula o que não é seu (até quando?) e daquele que a si mesmo se carrega de penhores!"
+  },
+  {
+   "ref": "Habacuque 2:7",
+   "text": "Não se levantarão de repente os teus credores? E não despertarão aqueles que te hão de abalar? Tu serás por eles despojo."
+  },
+  {
+   "ref": "Habacuque 1:2",
+   "text": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?"
+  }
+ ]
+}
+</cena>

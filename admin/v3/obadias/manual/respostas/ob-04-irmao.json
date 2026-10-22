@@ -1,0 +1,709 @@
+{
+ "study": {
+  "passageRef": "Obadias 1:10–11",
+  "passages": [
+   {
+    "ref": "Obadias 1:10–11"
+   }
+  ],
+  "context": "Jacó e Esaú eram irmãos, e Edom descende de Esaú. Quando Jerusalém foi atacada, Edom não defendeu o irmão: ficou do lado oposto e participou do saque.",
+  "keyword": "Irmão",
+  "keywordGloss": "Edom e Jacó são irmãos desde Gênesis; a violência contra o irmão agrava a culpa de Edom.",
+  "focusQuestion": "Como você reage quando alguém próximo cai: você se afasta, observa ou ajuda?",
+  "reflectionPrompts": [
+   "Violência contra o irmão",
+   "Vergonha anunciada",
+   "Como um dos invasores"
+  ],
+  "facts": [
+   {
+    "text": "A violência contra o irmão Jacó trará vergonha a Edom.",
+    "evidenceRef": "Obadias 1:10",
+    "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó, cobrir-te-ás de vergonha"
+   },
+   {
+    "text": "Edom será exterminado para sempre por essa violência.",
+    "evidenceRef": "Obadias 1:10",
+    "evidenceSpan": "serás exterminado para sempre"
+   },
+   {
+    "text": "Edom enfrentou o irmão no dia da invasão de Jerusalém.",
+    "evidenceRef": "Obadias 1:11",
+    "evidenceSpan": "No dia em que o enfrentaste"
+   },
+   {
+    "text": "Estranhos levaram os bens e estrangeiros entraram pelas portas.",
+    "evidenceRef": "Obadias 1:11",
+    "evidenceSpan": "quando os estranhos levaram os bens e os estrangeiros entraram pelas portas"
+   },
+   {
+    "text": "Edom era como um dos invasores que lançaram sortes sobre Jerusalém.",
+    "evidenceRef": "Obadias 1:11",
+    "evidenceSpan": "tu também eras um deles"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "violência",
+    "gloss": "A agressão de Edom contra Jacó, motivo da vergonha anunciada."
+   },
+   {
+    "term": "Jacó",
+    "gloss": "O irmão de Esaú; seu povo é quem sofre o ataque em Jerusalém."
+   },
+   {
+    "term": "vergonha",
+    "gloss": "O que cobrirá Edom por causa da violência contra o irmão."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Violência contra o irmão Jacó",
+    "evidenceRef": "Obadias 1:10"
+   },
+   {
+    "label": "Vergonha e fim anunciados a Edom",
+    "evidenceRef": "Obadias 1:10"
+   },
+   {
+    "label": "Edom do lado oposto na invasão",
+    "evidenceRef": "Obadias 1:11"
+   },
+   {
+    "label": "Edom contado como um dos invasores",
+    "evidenceRef": "Obadias 1:11"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A violência contra Jacó é a causa da vergonha de Edom.",
+    "marker": "violência",
+    "evidenceRef": "Obadias 1:10"
+   },
+   {
+    "kind": "sequência",
+    "text": "Quando os estranhos saquearam Jerusalém, Edom estava entre eles.",
+    "marker": "quando",
+    "evidenceRef": "Obadias 1:11"
+   },
+   {
+    "kind": "resultado",
+    "text": "Por ficar do lado oposto, Edom é contado como um dos invasores.",
+    "marker": null,
+    "evidenceRef": "Obadias 1:11"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 137:7",
+    "bridge": "Edom no dia de Jerusalém"
+   },
+   {
+    "ref": "Gênesis 27:41",
+    "bridge": "Ódio antigo entre irmãos"
+   },
+   {
+    "ref": "Ezequiel 25:12",
+    "bridge": "Edom agiu com vingança"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Edom foi neutro e apenas assistiu à queda de Jerusalém.",
+    "why": "O texto diz que ele enfrentou o irmão e era como um dos invasores."
+   },
+   {
+    "text": "A culpa de Edom foi travar uma guerra comum entre países.",
+    "why": "O texto destaca a violência contra o irmão Jacó, não uma guerra qualquer."
+   },
+   {
+    "text": "Participar do saque sem lutar não traz culpa.",
+    "why": "Quem lançou sortes e se fez como um deles também é responsabilizado."
+   }
+  ],
+  "centralInsight": "Festejar a queda do irmão é culpa",
+  "anchorQuestion": "Segundo Obadias 1:11, como Edom foi contado no dia da invasão?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Obadias 1:10, a vergonha de Edom vem da violência contra seu irmão Jacó.",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó, cobrir-te-ás de vergonha",
+   "feedbackCorrect": "A violência contra o irmão Jacó é a causa da vergonha de Edom.",
+   "feedbackWrong": {
+    "false": "Releia 1:10; a causa citada é a violência contra Jacó."
+   },
+   "hint": "Veja a causa no começo.",
+   "learningObjective": "Observar a causa da vergonha de Edom.",
+   "evidence": [
+    "Obadias 1:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:10, toque o irmão contra quem Edom cometeu violência.",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "b",
+   "evidenceSpan": "contra teu irmão Jacó",
+   "feedbackCorrect": "Jacó é o irmão contra quem Edom cometeu violência.",
+   "feedbackWrong": {
+    "a": "Violência é o ato; o irmão vem depois.",
+    "c": "Vergonha é a consequência, não o irmão."
+   },
+   "hint": "Procure o nome do irmão.",
+   "learningObjective": "Identificar Jacó como o irmão atingido.",
+   "evidence": [
+    "Obadias 1:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "violência"
+    },
+    {
+     "id": "b",
+     "text": "Jacó"
+    },
+    {
+     "id": "c",
+     "text": "vergonha"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Obadias 1:11, o que os estrangeiros fizeram ao entrar em Jerusalém?",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "lançando sortes sobre Jerusalém",
+   "feedbackCorrect": "Ao entrar pelas portas, eles lançaram sortes sobre Jerusalém.",
+   "feedbackWrong": {
+    "b": "Eles entraram como invasores, não como defensores.",
+    "c": "Os bens foram levados, não devolvidos.",
+    "d": "Os estranhos são aliados na invasão, não expulsos."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a partilha de Jerusalém pelos invasores.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Lançaram sortes sobre Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Defenderam as portas da cidade"
+    },
+    {
+     "id": "c",
+     "text": "Devolveram os bens levados"
+    },
+    {
+     "id": "d",
+     "text": "Expulsaram os estranhos da cidade"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Obadias 1:11 na ordem do texto.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "quando os estranhos levaram os bens e os estrangeiros entraram pelas portas",
+   "feedbackCorrect": "O dia do enfrentamento abre a cena da invasão de Jerusalém.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "O versículo começa pelo dia.",
+   "learningObjective": "Reconhecer a sequência da invasão.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "No dia em que o enfrentaste"
+    },
+    {
+     "id": "b",
+     "text": "quando os estranhos levaram os bens"
+    },
+    {
+     "id": "c",
+     "text": "e os estrangeiros entraram pelas portas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Obadias 1:10, o que cobrirá Edom por causa da violência?",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "cobrir-te-ás de vergonha",
+   "feedbackCorrect": "A violência contra o irmão cobre Edom de vergonha.",
+   "feedbackWrong": {
+    "b": "Glória é o contrário do que o texto anuncia.",
+    "c": "Força não é citada como consequência aqui."
+   },
+   "hint": "Veja a consequência em 1:10.",
+   "learningObjective": "Lembrar a consequência para Edom.",
+   "evidence": [
+    "Obadias 1:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "vergonha"
+    },
+    {
+     "id": "b",
+     "text": "glória"
+    },
+    {
+     "id": "c",
+     "text": "força"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Obadias 1:11 comunica que se liga a este contexto?",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "b",
+   "evidenceSpan": "tu também eras um deles",
+   "feedbackCorrect": "Edom não defendeu Jacó; foi contado como um dos invasores.",
+   "feedbackWrong": {
+    "a": "Edom enfrentou o irmão, não o defendeu.",
+    "c": "Edom estava presente e participando, não longe."
+   },
+   "hint": "Veja como Edom é contado.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Edom defendeu o irmão"
+    },
+    {
+     "id": "b",
+     "text": "Edom era como invasor"
+    },
+    {
+     "id": "c",
+     "text": "Edom ficou longe da cidade"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:11"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "No dia do ataque, Edom ficou do lado oposto ao do irmão."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Obadias 1:11, Edom é contado como defensor de Jerusalém no dia da invasão.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "false",
+   "evidenceSpan": "tu também eras um deles",
+   "feedbackCorrect": "Edom é contado como um dos invasores, não como defensor.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 1:11 sobre como Edom foi contado."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Compreender o papel de Edom na invasão.",
+   "evidence": [
+    "Obadias 1:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:11, toque a palavra que liga a invasão à presença de Edom.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "quando os estranhos levaram os bens",
+   "feedbackCorrect": "É quando os estranhos saqueiam que Edom aparece como um deles.",
+   "feedbackWrong": {
+    "b": "Portas é por onde entram; a ligação temporal vem antes.",
+    "c": "Sortes é a partilha; a ligação com Edom vem na sequência."
+   },
+   "hint": "Procure a ligação de tempo.",
+   "learningObjective": "Reconhecer o momento em que Edom se envolve.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "quando"
+    },
+    {
+     "id": "b",
+     "text": "portas"
+    },
+    {
+     "id": "c",
+     "text": "sortes"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Obadias 1:10 explica o que acontece com Edom em 1:11?",
+   "verseRef": "Obadias 1:10–11",
+   "correctOptionId": "b",
+   "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó",
+   "feedbackCorrect": "O versículo 10 dá a causa; o 11 mostra Edom agindo na invasão.",
+   "feedbackWrong": {
+    "a": "Não há arrependimento nem ajuda no texto.",
+    "c": "Edom não foge; ele é contado entre os invasores.",
+    "d": "Quem sofre o ataque é Jacó, não Edom."
+   },
+   "hint": "Ligue a causa de 1:10 à cena de 1:11.",
+   "learningObjective": "Relacionar causa e cena da invasão.",
+   "evidence": [
+    "Obadias 1:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra Edom arrependido ajudando"
+    },
+    {
+     "id": "b",
+     "text": "Mostra a causa da sua vergonha"
+    },
+    {
+     "id": "c",
+     "text": "Mostra Edom fugindo dos invasores"
+    },
+    {
+     "id": "d",
+     "text": "Mostra Jacó atacando Edom primeiro"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o texto em Obadias 1:10-11?",
+   "verseRef": "Obadias 1:10–11",
+   "correctOptionId": "a",
+   "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó, cobrir-te-ás de vergonha",
+   "feedbackCorrect": "A causa vem primeiro; depois a vergonha e a cena da invasão.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "Comece pela causa em 1:10.",
+   "learningObjective": "Compreender o encadeamento entre os versículos.",
+   "evidence": [
+    "Obadias 1:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Violência contra o irmão Jacó"
+    },
+    {
+     "id": "b",
+     "text": "Vergonha anunciada sobre Edom"
+    },
+    {
+     "id": "c",
+     "text": "Edom entre os invasores de Jerusalém"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Obadias 1:11, o que lançaram sobre Jerusalém?",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "lançando sortes sobre Jerusalém",
+   "feedbackCorrect": "Sortes foram lançadas sobre Jerusalém na partilha dos invasores.",
+   "feedbackWrong": {
+    "b": "Pedras não são citadas no versículo.",
+    "c": "Redes não aparecem; a partilha é por sorteio."
+   },
+   "hint": "Veja o que fazem ao entrar.",
+   "learningObjective": "Compreender a partilha de Jerusalém.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sortes"
+    },
+    {
+     "id": "b",
+     "text": "pedras"
+    },
+    {
+     "id": "c",
+     "text": "redes"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Obadias 1:11 a Salmos 137:7?",
+   "verseRef": "Obadias 1:10–11",
+   "correctOptionId": "a",
+   "evidenceSpan": "lançando sortes sobre Jerusalém",
+   "feedbackCorrect": "Os dois textos lembram Edom agindo contra Jerusalém no dia dela.",
+   "feedbackWrong": {
+    "b": "Nos dois textos Edom está contra Jerusalém, não a favor.",
+    "c": "Jerusalém tinha inimigos, e Edom entre eles."
+   },
+   "hint": "Veja o papel de Edom nos dois.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:11",
+    "Salmos 137:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Edom no dia de Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Edom defendendo Jerusalém"
+    },
+    {
+     "id": "c",
+     "text": "Jerusalém sem nenhum inimigo"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:11"
+   },
+   "passageB": {
+    "ref": "Salmos 137:7"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Obadias 1:10-11 isenta Edom de culpa por ele não ter lutado com as próprias mãos.",
+   "verseRef": "Obadias 1:10–11",
+   "correctOptionId": "false",
+   "evidenceSpan": "tu também eras um deles",
+   "feedbackCorrect": "Mesmo sem lutar, ser contado como um dos invasores traz culpa a Edom.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 1:11; Edom era como um deles."
+   },
+   "hint": "Veja como Edom é contado.",
+   "learningObjective": "Interpretar a culpa de quem se junta aos invasores.",
+   "evidence": [
+    "Obadias 1:10–11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:11, toque quem entrou pelas portas junto aos estranhos.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "os estrangeiros entraram pelas portas",
+   "feedbackCorrect": "Estrangeiros entraram pelas portas enquanto Edom era um deles.",
+   "feedbackWrong": {
+    "b": "Bens foram levados; quem entra são pessoas.",
+    "c": "Portas são por onde entram, não quem entra."
+   },
+   "hint": "Procure quem entra na cidade.",
+   "learningObjective": "Sustentar quem invadiu Jerusalém.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "estrangeiros"
+    },
+    {
+     "id": "b",
+     "text": "bens"
+    },
+    {
+     "id": "c",
+     "text": "portas"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Obadias 1:10-11 sustenta sobre Edom no dia de Jacó?",
+   "verseRef": "Obadias 1:10–11",
+   "correctOptionId": "b",
+   "evidenceSpan": "tu também eras um deles",
+   "feedbackCorrect": "Edom foi contado como um dos invasores contra o irmão.",
+   "feedbackWrong": {
+    "a": "Neutro não é; ele enfrentou e participou.",
+    "c": "A vítima é Jacó; Edom está do outro lado.",
+    "d": "Não há defesa do irmão no texto; há enfrentamento."
+   },
+   "hint": "Junte a causa de 1:10 com o fim de 1:11.",
+   "learningObjective": "Escolher a interpretação sobre a culpa de Edom.",
+   "evidence": [
+    "Obadias 1:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Foi neutro e sem culpa"
+    },
+    {
+     "id": "b",
+     "text": "Foi culpado como um invasor"
+    },
+    {
+     "id": "c",
+     "text": "Foi vítima dos invasores"
+    },
+    {
+     "id": "d",
+     "text": "Foi defensor tardio do irmão"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Obadias 1:10-11?",
+   "verseRef": "Obadias 1:10–11",
+   "correctOptionId": "a",
+   "evidenceSpan": "cobrir-te-ás de vergonha e serás exterminado para sempre",
+   "feedbackCorrect": "Violência contra o irmão termina em vergonha anunciada sobre Edom.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "Comece por quem sofre a violência.",
+   "learningObjective": "Ver a lógica da culpa de Edom.",
+   "evidence": [
+    "Obadias 1:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O irmão sofre violência"
+    },
+    {
+     "id": "b",
+     "text": "Edom se junta aos invasores"
+    },
+    {
+     "id": "c",
+     "text": "A vergonha cobre Edom"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Obadias 1:10, que palavra nomeia o ato de Edom contra Jacó?",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó",
+   "feedbackCorrect": "Violência nomeia o ato de Edom contra seu irmão Jacó.",
+   "feedbackWrong": {
+    "b": "Vergonha é a consequência, não o ato.",
+    "c": "Sempre fala da duração do fim de Edom."
+   },
+   "hint": "É a palavra central do versículo.",
+   "learningObjective": "Lembrar o termo central da cena.",
+   "evidence": [
+    "Obadias 1:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "violência"
+    },
+    {
+     "id": "b",
+     "text": "vergonha"
+    },
+    {
+     "id": "c",
+     "text": "sempre"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Obadias 1:10 a Ezequiel 25:12?",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "violência cometida contra teu irmão Jacó",
+   "feedbackCorrect": "Os dois textos apontam Edom agindo contra o povo de Jacó.",
+   "feedbackWrong": {
+    "b": "Nos dois textos Edom age contra, não a favor.",
+    "c": "Quem age contra o irmão aqui é Edom."
+   },
+   "hint": "Veja contra quem Edom age.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:10",
+    "Ezequiel 25:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Edom agiu contra Judá"
+    },
+    {
+     "id": "b",
+     "text": "Edom defendeu Judá"
+    },
+    {
+     "id": "c",
+     "text": "Judá atacou Edom primeiro"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:10"
+   },
+   "passageB": {
+    "ref": "Ezequiel 25:12"
+   }
+  }
+ ]
+}

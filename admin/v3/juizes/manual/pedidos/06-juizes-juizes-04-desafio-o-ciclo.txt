@@ -1,0 +1,121 @@
+Escreva a cena "juizes-juizes-04-desafio-o-ciclo" da trilha "juizes" (Juízes).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "juizes",
+  "title": "Juízes",
+  "description": "Ciclo de pecado, opressão, clamor e livramento.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Juízes",
+ "mission": {
+  "slug": "juizes-juizes-04-desafio-o-ciclo",
+  "title": "Desafio: O ciclo",
+  "type": "boss",
+  "intro": "Pecado, juízo e misericórdia.",
+  "hookRef": "Referência: Juízes",
+  "hookNote": "Pecado, juízo e misericórdia.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre ciclo?"
+ },
+ "v2": {
+  "passageRef": "Referência: Juízes",
+  "context": "Pecado, juízo e misericórdia.",
+  "keyword": "Ciclo",
+  "verseRefs": [
+   "Juízes 2:18–19"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "juizes-juizes-01-debora-e-baraque",
+   "title": "Débora e Baraque",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Juízes 4:5–11"
+  },
+  {
+   "slug": "juizes-juizes-02-gideao",
+   "title": "Gideão",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Juízes 16:25–31"
+  },
+  {
+   "slug": "juizes-juizes-03-sansao",
+   "title": "Sansão",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Juízes 16:25–31"
+  }
+ ],
+ "ranges": [
+  "Juízes 4:5–11",
+  "Juízes 4:8–9",
+  "Juízes 16:25–31",
+  "Juízes 7:2"
+ ],
+ "verses": [
+  {
+   "ref": "Juízes 4:5",
+   "text": "Ela habitava debaixo da palmeira de Débora, entre Ramá e Betel, na região montanhosa de Efraim; e os filhos de Israel subiam a ela a juízo."
+  },
+  {
+   "ref": "Juízes 4:6",
+   "text": "E enviou chamar a Baraque, filho de Abinoão, de Quedes, na tribo de Naftali, e disse-lhe: O Senhor, Deus de Israel, não deu ordem, dizendo: \"Vá e ajunte homens ao Monte Tabor, e leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom?"
+  },
+  {
+   "ref": "Juízes 4:7",
+   "text": "E atrairei você até o ribeiro Quisom, a Sísera, comandante do exército de Jabim, com seus carros e suas tropas; e o entregarei em suas mãos."
+  },
+  {
+   "ref": "Juízes 4:8",
+   "text": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei."
+  },
+  {
+   "ref": "Juízes 4:9",
+   "text": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes."
+  },
+  {
+   "ref": "Juízes 4:10",
+   "text": "Então, Baraque convocou Zebulom e Naftali em Quedes, e subiu com dez mil homens ao seu lado; e Débora também o acompanhou."
+  },
+  {
+   "ref": "Juízes 4:11",
+   "text": "E Héber, o queneu, afastou-se dos queneus, filhos de Hobabe, sogro de Moisés, e armou suas tendas até o carvalho de Zaananim, que se localiza próximo a Quedes."
+  },
+  {
+   "ref": "Juízes 16:25",
+   "text": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas."
+  },
+  {
+   "ref": "Juízes 16:26",
+   "text": "Então Sansão disse ao jovem que o conduzia: Deixa-me, para que eu possa apalpar as colunas sobre as quais a casa se sustenta a fim de que eu possa me encostar nelas."
+  },
+  {
+   "ref": "Juízes 16:27",
+   "text": "A casa estava cheia de homens e mulheres; ali estavam também todos os príncipes dos filisteus, e sobre o teto havia cerca de três mil homens e mulheres que assistiam enquanto Sansão os divertia."
+  },
+  {
+   "ref": "Juízes 16:28",
+   "text": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos."
+  },
+  {
+   "ref": "Juízes 16:29",
+   "text": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a esquerda na outra."
+  },
+  {
+   "ref": "Juízes 16:30",
+   "text": "E Sansão exclamou: \"Que eu morra com os filisteus!\" E inclinou-se com toda a sua força, e a casa caiu sobre os príncipes e sobre toda a multidão que estava nela; e foram mais os que ele matou em sua morte do que os que havia matado em sua vida."
+  },
+  {
+   "ref": "Juízes 16:31",
+   "text": "Então, seus irmãos desceram, e toda a casa de seu pai o tomou, subindo com ele. Sepultaram-no entre Zorá e Estaol, no sepulcro de Manoá, seu pai. E ele julgou Israel durante vinte anos."
+  },
+  {
+   "ref": "Juízes 7:2",
+   "text": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,627 @@
+{
+ "study": {
+  "passageRef": "Lamentações 1:1–4",
+  "passages": [
+   { "ref": "Lamentações 1:1–4" },
+   { "ref": "Lamentações 2:14–20" },
+   { "ref": "Lamentações 5:16–22" }
+  ],
+  "context": "Desafio da trilha: o livro abre com a cidade solitária, afirma que Deus cumpriu a sua palavra antiga e termina pedindo restauração diante do trono que permanece.",
+  "keyword": "Esperança",
+  "keywordGloss": "Esperança que chora, confessa o pecado e pede restauração a quem permanece no trono.",
+  "focusQuestion": "No seu luto, você consegue chorar, confessar e pedir restauração ao mesmo Deus?",
+  "reflectionPrompts": [
+   "Cidade solitária",
+   "Palavra cumprida",
+   "Trono que permanece"
+  ],
+  "facts": [
+   {
+    "text": "A que foi grande entre as nações tornou-se como viúva.",
+    "evidenceRef": "Lamentações 1:1",
+    "evidenceSpan": "Tornou-se como viúva"
+   },
+   {
+    "text": "Judá foi levado ao cativeiro e habita sem descanso entre as nações.",
+    "evidenceRef": "Lamentações 1:3",
+    "evidenceSpan": "Judá foi levado ao cativeiro"
+   },
+   {
+    "text": "O Senhor cumpriu a sua palavra proclamada desde os tempos antigos.",
+    "evidenceRef": "Lamentações 2:17",
+    "evidenceSpan": "cumpriu a Sua palavra"
+   },
+   {
+    "text": "Os filhinhos desfalecem de fome à entrada de todas as ruas.",
+    "evidenceRef": "Lamentações 2:19",
+    "evidenceSpan": "desfalecem de fome"
+   },
+   {
+    "text": "O trono do Senhor permanece de geração em geração.",
+    "evidenceRef": "Lamentações 5:19",
+    "evidenceSpan": "o teu trono permanece de geração em geração"
+   },
+   {
+    "text": "O povo pede que Deus renove os seus dias como eram antigamente.",
+    "evidenceRef": "Lamentações 5:21",
+    "evidenceSpan": "renova nossos dias como eram antigamente"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "solitária",
+    "gloss": "A cidade antes populosa agora está só, como viúva sem consolo."
+   },
+   {
+    "term": "palavra",
+    "gloss": "O que o Senhor proclamou desde os tempos antigos e cumpriu na queda."
+   },
+   {
+    "term": "trono",
+    "gloss": "O governo do Senhor, que permanece quando a coroa do povo cai."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Cidade solitária e sem consolo",
+    "evidenceRef": "Lamentações 1:2"
+   },
+   {
+    "label": "Palavra antiga cumprida no juízo",
+    "evidenceRef": "Lamentações 2:17"
+   },
+   {
+    "label": "Coroa caída e pecado confessado",
+    "evidenceRef": "Lamentações 5:16"
+   },
+   {
+    "label": "Trono que permanece e pedido final",
+    "evidenceRef": "Lamentações 5:19"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Judá foi levado ao cativeiro por causa da aflição e da grande servidão.",
+    "marker": "por causa",
+    "evidenceRef": "Lamentações 1:3"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao cumprir a sua palavra, o Senhor fez o inimigo se alegrar sobre a cidade.",
+    "marker": "fez",
+    "evidenceRef": "Lamentações 2:17"
+   },
+   {
+    "kind": "contraste",
+    "text": "A coroa do povo caiu, mas o trono do Senhor permanece para sempre.",
+    "marker": null,
+    "evidenceRef": "Lamentações 5:19"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 137:1",
+    "bridge": "Choro lembrando de Sião"
+   },
+   {
+    "ref": "Lucas 19:41",
+    "bridge": "Jesus chora sobre Jerusalém"
+   },
+   {
+    "ref": "Jeremias 31:18",
+    "bridge": "Converte-me e serei convertido"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O luto do livro é só sentimento, sem perdas concretas para chorar.",
+    "why": "Há cativeiro, portas devastadas, fome das crianças e coroa caída."
+   },
+   {
+    "text": "A queda foi só força dos inimigos, sem palavra de Deus antes.",
+    "why": "O Senhor cumpriu a palavra proclamada desde os tempos antigos."
+   },
+   {
+    "text": "O livro termina com a restauração já acontecendo diante do povo.",
+    "why": "O fim é pedido e pergunta: restaura-nos, sem resposta narrada ainda."
+   }
+  ],
+  "centralInsight": "No luto, Deus permanece e pode ser buscado",
+  "anchorQuestion": "O que permanece de geração em geração, segundo Lamentações 5:19?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lamentações 1:4, as portas de Sião estão cheias de gente para a reunião solene.",
+   "verseRef": "Lamentações 1:4",
+   "correctOptionId": "false",
+   "evidenceSpan": "ninguém vem à reunião solene",
+   "feedbackCorrect": "Ninguém vem à reunião: as portas estão devastadas e Sião chora.",
+   "feedbackWrong": {
+    "true": "O texto diz que ninguém vem e todas as portas estão devastadas."
+   },
+   "hint": "Veja quem vem à reunião solene.",
+   "learningObjective": "Observar o vazio das festas de Sião.",
+   "evidence": ["Lamentações 1:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lamentações 1:3, toque para onde Judá foi levado.",
+   "verseRef": "Lamentações 1:3",
+   "options": [
+    { "id": "a", "text": "cativeiro" },
+    { "id": "b", "text": "nações" },
+    { "id": "c", "text": "descanso" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Judá foi levado ao cativeiro",
+   "feedbackCorrect": "Judá foi levado ao cativeiro e vive entre as nações, sem descanso.",
+   "feedbackWrong": {
+    "b": "Entre as nações é onde ele habita depois de levado.",
+    "c": "Descanso é justamente o que ele não encontra lá."
+   },
+   "hint": "Veja o destino logo no começo.",
+   "learningObjective": "Identificar o destino de Judá.",
+   "evidence": ["Lamentações 1:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lamentações 2:15, o que quem passa pelo caminho faz diante da cidade?",
+   "verseRef": "Lamentações 2:15",
+   "options": [
+    { "id": "a", "text": "Consola a cidade em pranto" },
+    { "id": "b", "text": "Aplaude e assobia em zombaria" },
+    { "id": "c", "text": "Reconstrói as suas portas" },
+    { "id": "d", "text": "Chora junto com os sacerdotes" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "aplaudem, assobiam",
+   "feedbackCorrect": "Quem passa aplaude e assobia: a cidade formosa virou motivo de zombaria.",
+   "feedbackWrong": {
+    "a": "Não há consolo de quem passa; há aplauso e assobio de zombaria.",
+    "c": "Ninguém reconstrói nada no versículo; só há zombaria.",
+    "d": "Os sacerdotes suspiram em outro texto; aqui quem passa zomba."
+   },
+   "hint": "Leia os verbos de quem passa.",
+   "learningObjective": "Observar a zombaria contra a cidade.",
+   "evidence": ["Lamentações 2:15"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lamentações 5:19 na ordem do texto.",
+   "verseRef": "Lamentações 5:19",
+   "options": [
+    { "id": "a", "text": "Tu, Senhor, reinas eternamente" },
+    { "id": "b", "text": "e o teu trono permanece" },
+    { "id": "c", "text": "de geração em geração" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Tu, Senhor, reinas eternamente",
+   "feedbackCorrect": "O Senhor reina eternamente e o seu trono permanece sem fim.",
+   "feedbackWrong": {
+    "default": "Comece pelo reinado eterno; geração em geração fecha."
+   },
+   "hint": "O versículo começa pelo reinado.",
+   "learningObjective": "Reconhecer a sequência de Lamentações 5:19.",
+   "evidence": ["Lamentações 5:19"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lamentações 1:2, o que escorre pelo rosto da cidade?",
+   "verseRef": "Lamentações 1:2",
+   "options": [
+    { "id": "a", "text": "lágrimas" },
+    { "id": "b", "text": "palavras" },
+    { "id": "c", "text": "queixas" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas lágrimas lhe escorrem pelo rosto",
+   "feedbackCorrect": "Lágrimas escorrem pelo rosto: a cidade chora sem quem a console.",
+   "feedbackWrong": {
+    "b": "Palavras não escorrem; o texto fala do choro da cidade.",
+    "c": "Queixas não são citadas; são lágrimas no rosto dela."
+   },
+   "hint": "Veja o choro à noite.",
+   "learningObjective": "Lembrar o choro concreto da cidade.",
+   "evidence": ["Lamentações 1:2"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lamentações 5:16 comunica que se liga a este contexto?",
+   "verseRef": "Lamentações 5:16",
+   "passageA": { "ref": "Lamentações 5:16" },
+   "passageB": { "ref": "Contexto", "text": "O povo reconhece a própria culpa no fim do livro." },
+   "options": [
+    { "id": "a", "text": "Caiu a coroa, confessamos" },
+    { "id": "b", "text": "A coroa continua firme" },
+    { "id": "c", "text": "Ninguém pecou na queda" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque pecamos",
+   "feedbackCorrect": "Caiu a coroa, e o povo confessa: ai de nós, porque pecamos.",
+   "feedbackWrong": {
+    "b": "A coroa caiu da cabeça do povo, como ele mesmo diz.",
+    "c": "O povo confessa o pecado; ninguém é declarado inocente."
+   },
+   "hint": "Veja a confissão do versículo.",
+   "learningObjective": "Ligar a queda da coroa à confissão do povo.",
+   "evidence": ["Lamentações 5:16"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lamentações 2:19, toque o que deve ser derramado diante do Senhor.",
+   "verseRef": "Lamentações 2:19",
+   "options": [
+    { "id": "a", "text": "coração" },
+    { "id": "b", "text": "água" },
+    { "id": "c", "text": "mãos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "derrama, como água, teu coração",
+   "feedbackCorrect": "Derramar o coração diante do Senhor é o clamor pedido à cidade.",
+   "feedbackWrong": {
+    "b": "Água é a comparação; o que se derrama é o coração.",
+    "c": "As mãos são elevadas; derramado é o coração."
+   },
+   "hint": "Veja a comparação com água.",
+   "learningObjective": "Identificar o clamor do coração.",
+   "evidence": ["Lamentações 2:19"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lamentações 1:1 na ordem do texto.",
+   "verseRef": "Lamentações 1:1",
+   "options": [
+    { "id": "a", "text": "Como está solitária a cidade" },
+    { "id": "b", "text": "Tornou-se como viúva" },
+    { "id": "c", "text": "agora está sujeita a trabalhos forçados" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Como está solitária a cidade",
+   "feedbackCorrect": "Solidão, viuvez e trabalho forçado resumem a abertura do livro.",
+   "feedbackWrong": {
+    "default": "Comece pela cidade solitária; o trabalho forçado fecha."
+   },
+   "hint": "O livro começa pela solidão.",
+   "learningObjective": "Reconhecer a sequência de Lamentações 1:1.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lamentações 2:16, os inimigos reconhecem com tristeza o dia que esperavam.",
+   "verseRef": "Lamentações 2:16",
+   "correctOptionId": "false",
+   "evidenceSpan": "este é o dia que esperávamos",
+   "feedbackCorrect": "Eles falam com zombaria e alegria cruel, não com tristeza.",
+   "feedbackWrong": {
+    "true": "Eles assobiam e rangem os dentes: é zombaria, não tristeza."
+   },
+   "hint": "Veja o tom dos inimigos.",
+   "learningObjective": "Compreender o tom da fala dos inimigos.",
+   "evidence": ["Lamentações 2:16"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lamentações 2:18, toque o que a cidade não deve se dar.",
+   "verseRef": "Lamentações 2:18",
+   "options": [
+    { "id": "a", "text": "descanso" },
+    { "id": "b", "text": "lágrimas" },
+    { "id": "c", "text": "noite" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não te dês descanso",
+   "feedbackCorrect": "Sem descanso no clamor: lágrimas de dia e de noite diante de Deus.",
+   "feedbackWrong": {
+    "b": "Lágrimas devem correr sem parar; descanso é o que não se dá.",
+    "c": "A noite é tempo de clamar, não algo a recusar."
+   },
+   "hint": "Veja a ordem negativa do versículo.",
+   "learningObjective": "Reconhecer a persistência do clamor.",
+   "evidence": ["Lamentações 2:18"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Lamentações 5:18 se liga a Lamentações 5:17?",
+   "verseRef": "Lamentações 5:17–18",
+   "options": [
+    { "id": "a", "text": "O coração desfalecido olha Sião vazio e assolado" },
+    { "id": "b", "text": "Sião cheio consola o coração do povo" },
+    { "id": "c", "text": "Os olhos escurecidos veem festa no monte" },
+    { "id": "d", "text": "As raposas guardam o povo em Sião" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o monte Sião, que está assolado",
+   "feedbackCorrect": "O coração desfalece ao ver Sião assolado, percorrido por raposas.",
+   "feedbackWrong": {
+    "b": "Sião está vazio e assolado; não consola ninguém assim.",
+    "c": "Não há festa: há monte assolado e olhos escurecidos.",
+    "d": "Raposas mostram abandono, não cuidado com o povo."
+   },
+   "hint": "Pense no que os olhos veem.",
+   "learningObjective": "Relacionar o coração desfalecido com Sião assolado.",
+   "evidence": ["Lamentações 5:17–18"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Lamentações 2:18–19?",
+   "verseRef": "Lamentações 2:18–19",
+   "options": [
+    { "id": "a", "text": "Lágrimas correndo de dia e de noite" },
+    { "id": "b", "text": "Levantar e clamar nas vigílias" },
+    { "id": "c", "text": "Levantar as mãos pelas crianças" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "corram as tuas lágrimas como um ribeiro",
+   "feedbackCorrect": "Lágrimas contínuas, clamor à noite e mãos levantadas pelas crianças.",
+   "feedbackWrong": {
+    "default": "Comece pelas lágrimas; as mãos pelas crianças fecham."
+   },
+   "hint": "As crianças famintas fecham o trecho.",
+   "learningObjective": "Compreender o avanço do clamor em 2:18–19.",
+   "evidence": ["Lamentações 2:18–19"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lamentações 5:20, o que o povo teme que Deus faça por tanto tempo?",
+   "verseRef": "Lamentações 5:20",
+   "options": [
+    { "id": "a", "text": "abandonarias" },
+    { "id": "b", "text": "esquecerias" },
+    { "id": "c", "text": "restaurarias" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que nos abandonarias por tanto tempo",
+   "feedbackCorrect": "O temor é ser abandonado por tanto tempo; mesmo assim, o povo pede.",
+   "feedbackWrong": {
+    "b": "Esquecer aparece na pergunta anterior; aqui o temor é outro verbo.",
+    "c": "Restaurar é o pedido de 5:21, não o temor de 5:20."
+   },
+   "hint": "Veja a segunda pergunta do versículo.",
+   "learningObjective": "Compreender o temor por trás do pedido.",
+   "evidence": ["Lamentações 5:20"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lamentações 1:3 a Salmos 137:1?",
+   "verseRef": "Lamentações 1:3",
+   "passageA": { "ref": "Lamentações 1:3" },
+   "passageB": { "ref": "Salmos 137:1" },
+   "options": [
+    { "id": "a", "text": "Sem descanso longe de Sião" },
+    { "id": "b", "text": "Descanso pleno entre as nações" },
+    { "id": "c", "text": "Sião esquecida sem lágrimas" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sem encontrar descanso",
+   "feedbackCorrect": "Longe de Sião, sem descanso: o exílio chora lembrando de casa.",
+   "feedbackWrong": {
+    "b": "O texto diz sem encontrar descanso entre as nações.",
+    "c": "Eles choram justamente porque se lembram de Sião."
+   },
+   "hint": "Compare a vida longe de Sião.",
+   "learningObjective": "Relacionar o exílio sem descanso com o choro do Salmo 137.",
+   "evidence": ["Lamentações 1:3", "Salmos 137:1"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lamentações 5:17, toque a palavra que marca a consequência da queda no coração.",
+   "verseRef": "Lamentações 5:17",
+   "options": [
+    { "id": "a", "text": "Por isso" },
+    { "id": "b", "text": "desfaleceu" },
+    { "id": "c", "text": "escureceram" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por isso, o nosso coração desfaleceu",
+   "feedbackCorrect": "Por causa da queda, o coração desfalece e os olhos se escurecem.",
+   "feedbackWrong": {
+    "b": "Desfalecer é o efeito no coração; a marca de consequência vem antes.",
+    "c": "Escurecer é o efeito nos olhos; a ligação vem no começo."
+   },
+   "hint": "Procure a ligação de consequência.",
+   "learningObjective": "Reconhecer o marcador de consequência em 5:17.",
+   "evidence": ["Lamentações 5:17"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Lamentações 1:3–4?",
+   "verseRef": "Lamentações 1:3–4",
+   "options": [
+    { "id": "a", "text": "Judá habita entre as nações" },
+    { "id": "b", "text": "Ninguém vem à reunião solene" },
+    { "id": "c", "text": "Sacerdotes suspiram em amargura" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "habita entre as nações",
+   "feedbackCorrect": "Exílio entre as nações, caminhos vazios e Sião em amargura.",
+   "feedbackWrong": {
+    "default": "Comece pelo exílio de Judá; a amargura fecha a cena."
+   },
+   "hint": "O exílio vem antes dos caminhos.",
+   "learningObjective": "Compreender o avanço do exílio à amargura.",
+   "evidence": ["Lamentações 1:3–4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Lamentações 5:19–20, o povo pergunta pelo abandono justamente a quem permanece no trono.",
+   "verseRef": "Lamentações 5:19–20",
+   "correctOptionId": "true",
+   "evidenceSpan": "o teu trono permanece de geração em geração",
+   "feedbackCorrect": "A pergunta é feita a quem permanece: por isso, ainda há a quem pedir.",
+   "feedbackWrong": {
+    "false": "O trono permanece, e é a esse Senhor que o povo pergunta."
+   },
+   "hint": "Veja a quem a pergunta se dirige.",
+   "learningObjective": "Interpretar a pergunta apoiada no trono eterno.",
+   "evidence": ["Lamentações 5:19–20"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lamentações 2:20, toque a quem o poeta chama para ver a situação da cidade.",
+   "verseRef": "Lamentações 2:20",
+   "options": [
+    { "id": "a", "text": "Senhor" },
+    { "id": "b", "text": "sacerdote" },
+    { "id": "c", "text": "profeta" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Vê, ó Senhor, e considera",
+   "feedbackCorrect": "O poeta chama o próprio Senhor para ver o que aconteceu na cidade.",
+   "feedbackWrong": {
+    "b": "O sacerdote aparece na pergunta sobre quem morre no santuário.",
+    "c": "O profeta também é citado depois; quem é chamado a ver é o Senhor."
+   },
+   "hint": "Veja quem é chamado no começo.",
+   "learningObjective": "Sustentar com o texto o apelo ao olhar de Deus.",
+   "evidence": ["Lamentações 2:20"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lamentações 5:22 sustenta sobre o fim do livro?",
+   "verseRef": "Lamentações 5:22",
+   "options": [
+    { "id": "a", "text": "O livro termina sem nenhuma pergunta a Deus" },
+    { "id": "b", "text": "O luto termina em pergunta diante de Deus" },
+    { "id": "c", "text": "A rejeição total já é fato consumado" },
+    { "id": "d", "text": "Deus já respondeu renovando os dias" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Por que nos rejeitarias totalmente",
+   "feedbackCorrect": "O livro não fecha com resposta pronta: fecha perguntando a Deus.",
+   "feedbackWrong": {
+    "a": "O último verso é justamente uma pergunta dirigida a Deus.",
+    "c": "A rejeição total é temida e perguntada, não afirmada como fato.",
+    "d": "Nenhuma renovação é narrada; o pedido continua de pé."
+   },
+   "hint": "Veja como o último versículo termina.",
+   "learningObjective": "Escolher a interpretação que o fim do livro sustenta.",
+   "evidence": ["Lamentações 5:22"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do choro que começa em Lamentações 1:4?",
+   "verseRef": "Lamentações 1:4",
+   "options": [
+    { "id": "a", "text": "Sião chora com portas devastadas" },
+    { "id": "b", "text": "Exilados choram junto aos rios" },
+    { "id": "c", "text": "Jesus chora ao ver Jerusalém" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "todas as suas portas estão devastadas",
+   "feedbackCorrect": "O choro de Sião atravessa o exílio e chega ao pranto de Jesus.",
+   "feedbackWrong": {
+    "default": "Siga a história: queda, exílio e Jesus sobre Jerusalém."
+   },
+   "hint": "Siga a ordem: Sião, rios e Jesus.",
+   "learningObjective": "Ver o choro de Sião como fio que atravessa a Bíblia.",
+   "evidence": ["Lamentações 1:4", "Salmos 137:1", "Lucas 19:41"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lamentações 5:22, como o povo teme ser rejeitado por Deus?",
+   "verseRef": "Lamentações 5:22",
+   "options": [
+    { "id": "a", "text": "totalmente" },
+    { "id": "b", "text": "para sempre" },
+    { "id": "c", "text": "em silêncio" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nos rejeitarias totalmente",
+   "feedbackCorrect": "O temor é de rejeição total; mesmo assim, a pergunta é feita a Deus.",
+   "feedbackWrong": {
+    "b": "Para sempre aparece em outra pergunta; aqui o alcance é total.",
+    "c": "Silêncio não é citado no fim; o temor é de rejeição total."
+   },
+   "hint": "Veja o alcance temido da rejeição.",
+   "learningObjective": "Lembrar o temor que encerra o livro.",
+   "evidence": ["Lamentações 5:22"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lamentações 2:19 a Jeremias 14:17?",
+   "verseRef": "Lamentações 2:19",
+   "passageA": { "ref": "Lamentações 2:19" },
+   "passageB": { "ref": "Jeremias 14:17" },
+   "options": [
+    { "id": "a", "text": "Lágrimas de noite e de dia" },
+    { "id": "b", "text": "Lágrimas só no passado distante" },
+    { "id": "c", "text": "Deus proíbe qualquer lágrima" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "derrama, como água, teu coração",
+   "feedbackCorrect": "Nos dois textos, as lágrimas correm de noite e de dia pelo povo ferido.",
+   "feedbackWrong": {
+    "b": "As lágrimas são presentes e contínuas, não só passado.",
+    "c": "Deus recebe o coração derramado; não proíbe o choro."
+   },
+   "hint": "Compare o tempo das lágrimas.",
+   "learningObjective": "Ligar o clamor de Lamentações ao pranto de Jeremias.",
+   "evidence": ["Lamentações 2:19", "Jeremias 14:17"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lamentações 1:4, toque o trecho que mostra a tristeza das moças de Sião.",
+   "verseRef": "Lamentações 1:4",
+   "options": [
+    { "id": "a", "text": "estão tristes" },
+    { "id": "b", "text": "estão devastadas" },
+    { "id": "c", "text": "em amargura" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas moças estão tristes",
+   "feedbackCorrect": "As moças estão tristes e Sião em amargura: o luto alcança todos.",
+   "feedbackWrong": {
+    "b": "Devastadas estão as portas; as moças estão tristes.",
+    "c": "Amargura descreve a própria cidade no fim do versículo."
+   },
+   "hint": "Procure as moças no versículo.",
+   "learningObjective": "Sustentar com o texto o alcance do luto.",
+   "evidence": ["Lamentações 1:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
+   "verseRef": "Lamentações 5:21",
+   "options": [
+    { "id": "a", "text": "Jerusalém pede para ser restaurada" },
+    { "id": "b", "text": "Efraim pede para ser convertido" },
+    { "id": "c", "text": "Deus faz novas todas as coisas" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "O pedido de Jerusalém aponta para o Deus que converte e renova tudo.",
+   "feedbackWrong": {
+    "default": "Siga a história: Lamentações, Jeremias e nova criação."
+   },
+   "hint": "Siga a ordem: pedido, conversão e renovação.",
+   "learningObjective": "Ver o pedido de restauração como fio até a nova criação.",
+   "evidence": ["Lamentações 5:21", "Jeremias 31:18", "Apocalipse 21:5"]
+  }
+ ]
+}

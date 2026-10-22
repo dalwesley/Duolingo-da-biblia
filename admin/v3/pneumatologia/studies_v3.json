@@ -1,0 +1,614 @@
+{
+  "studies": {
+    "pn-01-pessoa": {
+      "slug": "pn-01-pessoa",
+      "passageRef": "Atos 5:1–4",
+      "passageText": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade. E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos. Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "passages": [
+        {
+          "ref": "Atos 5:1–4",
+          "text": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade. E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos. Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+        }
+      ],
+      "context": "Ananias e Safira vendem uma propriedade e trazem uma oferta aos apóstolos, como outros crentes faziam. Nem tudo, porém, é entregue, embora a entrega pareça ser completa.",
+      "keyword": "Espírito Santo",
+      "keywordGloss": "Nos textos, ele não é uma força vaga, mas Deus presente, que pode ser enganado e conhece o coração.",
+      "focusQuestion": "O que muda na sua vida saber que Deus conhece o que ninguém mais vê em você?",
+      "reflectionPrompts": [
+        "Deus conhece o coração",
+        "Mentira não engana Deus",
+        "O Espírito é Deus"
+      ],
+      "facts": [
+        {
+          "text": "Ananias e sua mulher Safira venderam uma propriedade.",
+          "evidenceRef": "Atos 5:1",
+          "evidenceSpan": "venderam uma propriedade"
+        },
+        {
+          "text": "Ananias reteve parte do preço, com o conhecimento de sua mulher.",
+          "evidenceRef": "Atos 5:2",
+          "evidenceSpan": "reteve parte do preço"
+        },
+        {
+          "text": "Pedro diz que Satanás encheu o coração de Ananias para mentir ao Espírito Santo.",
+          "evidenceRef": "Atos 5:3",
+          "evidenceSpan": "mentir ao Espírito Santo"
+        },
+        {
+          "text": "A propriedade estava em poder de Ananias antes e depois da venda.",
+          "evidenceRef": "Atos 5:4",
+          "evidenceSpan": "Não estava ela em seu poder após a venda"
+        },
+        {
+          "text": "Pedro afirma que Ananias não mentiu aos homens, mas a Deus.",
+          "evidenceRef": "Atos 5:4",
+          "evidenceSpan": "Você não mentiu aos homens, mas a Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Espírito Santo",
+          "gloss": "Deus presente e atuante, a quem Ananias mente segundo Pedro."
+        },
+        {
+          "term": "mentir",
+          "gloss": "Enganar com aparência de entrega total, guardando parte sem dizer."
+        },
+        {
+          "term": "coração",
+          "gloss": "O interior da pessoa, onde o desígnio é concebido antes de virar ato."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Um casal vende uma propriedade",
+          "evidenceRef": "Atos 5:1"
+        },
+        {
+          "label": "Parte do preço fica retida",
+          "evidenceRef": "Atos 5:2"
+        },
+        {
+          "label": "Pedro confronta a mentira",
+          "evidenceRef": "Atos 5:3"
+        },
+        {
+          "label": "A mentira é revelada como feita a Deus",
+          "evidenceRef": "Atos 5:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Ananias retém parte do preço, mas traz o restante como quem entrega tudo.",
+          "marker": null,
+          "evidenceRef": "Atos 5:2"
+        },
+        {
+          "kind": "causa",
+          "text": "Pedro pergunta por que Satanás encheu o coração de Ananias para mentir.",
+          "marker": "por que",
+          "evidenceRef": "Atos 5:3"
+        },
+        {
+          "kind": "resultado",
+          "text": "Ao ouvir as palavras de Pedro, Ananias cai e expira, e grande temor vem sobre todos.",
+          "marker": null,
+          "evidenceRef": "Atos 5:5"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Mateus 28:19",
+          "bridge": "Espírito junto ao Pai e Filho",
+          "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+        },
+        {
+          "ref": "João 14:26",
+          "bridge": "O Consolador ensina e lembra",
+          "text": "Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas e vos lembrará de tudo o que tenho dito a vocês."
+        },
+        {
+          "ref": "1 Coríntios 6:19",
+          "bridge": "O Espírito habita em vocês",
+          "text": "Ou não sabeis que o vosso corpo é o templo do Espírito Santo, que habita em vós, o qual recebestes da parte de Deus, e que não sois de vós mesmos?"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Espírito Santo é só uma força impessoal de Deus.",
+          "why": "Pedro diz que Ananias mentiu ao Espírito e que essa mentira foi feita a Deus, não a uma força."
+        },
+        {
+          "text": "Ananias foi obrigado a entregar todo o valor da venda.",
+          "why": "Pedro lembra que a propriedade estava em seu poder e o valor à sua disposição (5:4)."
+        },
+        {
+          "text": "O erro de Ananias foi apenas guardar dinheiro para si.",
+          "why": "Guardar parte era direito dele; o erro foi mentir, apresentando parte como se fosse tudo."
+        }
+      ],
+      "centralInsight": "O Espírito Santo é Deus, e mentir a ele é mentir ao próprio Deus.",
+      "anchorQuestion": "Segundo Pedro em Atos 5:4, a quem Ananias mentiu de fato?",
+      "relatedVerses": [
+        {
+          "reference": "Mateus 28:19",
+          "reason": "Espírito junto ao Pai e Filho"
+        },
+        {
+          "reference": "João 14:26",
+          "reason": "O Consolador ensina e lembra"
+        },
+        {
+          "reference": "1 Coríntios 6:19",
+          "reason": "O Espírito habita em vocês"
+        }
+      ]
+    },
+    "pn-02-vida": {
+      "slug": "pn-02-vida",
+      "passageRef": "Romanos 8:9–11",
+      "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele. E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da justiça. E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita.",
+      "passages": [
+        {
+          "ref": "Romanos 8:9–11",
+          "text": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele. E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da justiça. E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita."
+        },
+        {
+          "ref": "Romanos 8:6–8",
+          "text": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz. A inclinação da carne é inimizade contra Deus, pois não se sujeita à lei de Deus, nem mesmo pode fazê-lo. Portanto, os que estão na carne não podem agradar a Deus."
+        }
+      ],
+      "context": "Paulo escreve a cristãos em Roma e contrasta duas formas de viver, segundo a carne e segundo o Espírito. No meio do contraste, ele afirma onde o Espírito de Deus está.",
+      "keyword": "Habita",
+      "keywordGloss": "O Espírito não só visita, mas mora em quem é de Cristo, como quem vive numa casa.",
+      "focusQuestion": "Se o Espírito de Deus habita em você, o que isso muda no seu dia comum?",
+      "reflectionPrompts": [
+        "O Espírito habita em mim",
+        "Vida em vez de morte",
+        "Deus dará vida ao corpo"
+      ],
+      "facts": [
+        {
+          "text": "A inclinação da carne conduz à morte.",
+          "evidenceRef": "Romanos 8:6",
+          "evidenceSpan": "a inclinação da carne conduz à morte"
+        },
+        {
+          "text": "A inclinação do Espírito conduz à vida e à paz.",
+          "evidenceRef": "Romanos 8:6",
+          "evidenceSpan": "a inclinação do Espírito conduz à vida e à paz"
+        },
+        {
+          "text": "Quem não tem o Espírito de Cristo não é dele.",
+          "evidenceRef": "Romanos 8:9",
+          "evidenceSpan": "se alguém não tem o Espírito de Cristo, esse não é dele"
+        },
+        {
+          "text": "Se Cristo está na pessoa, o espírito é vida por causa da justiça.",
+          "evidenceRef": "Romanos 8:10",
+          "evidenceSpan": "o espírito é vida, por causa da justiça"
+        },
+        {
+          "text": "O Espírito é daquele que ressuscitou a Jesus dentre os mortos.",
+          "evidenceRef": "Romanos 8:11",
+          "evidenceSpan": "o Espírito daquele que ressuscitou a Jesus dentre os mortos"
+        },
+        {
+          "text": "Todos os conduzidos pelo Espírito de Deus são filhos de Deus.",
+          "evidenceRef": "Romanos 8:14",
+          "evidenceSpan": "são filhos de Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "habita",
+          "gloss": "Morar dentro: o Espírito vive em quem pertence a Cristo."
+        },
+        {
+          "term": "Espírito de Deus",
+          "gloss": "O próprio Deus presente na vida de quem crê, dando vida."
+        },
+        {
+          "term": "vida",
+          "gloss": "O destino de quem é conduzido pelo Espírito, em contraste com a morte."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Carne e Espírito levam a destinos opostos",
+          "evidenceRef": "Romanos 8:6–8"
+        },
+        {
+          "label": "O Espírito de Deus habita em vocês",
+          "evidenceRef": "Romanos 8:9"
+        },
+        {
+          "label": "Cristo em vocês, vida por causa da justiça",
+          "evidenceRef": "Romanos 8:10"
+        },
+        {
+          "label": "Deus vivificará também os corpos mortais",
+          "evidenceRef": "Romanos 8:11"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "A inclinação da carne conduz à morte, mas a do Espírito conduz à vida e à paz.",
+          "marker": "mas",
+          "evidenceRef": "Romanos 8:6"
+        },
+        {
+          "kind": "resultado",
+          "text": "A inclinação do Espírito tem como destino a vida e a paz.",
+          "marker": "conduz",
+          "evidenceRef": "Romanos 8:6"
+        },
+        {
+          "kind": "causa",
+          "text": "O espírito é vida por causa da justiça, mesmo com o corpo sujeito à morte.",
+          "marker": "por causa",
+          "evidenceRef": "Romanos 8:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "1 Coríntios 6:19",
+          "bridge": "O corpo é templo do Espírito",
+          "text": "Ou não sabeis que o vosso corpo é o templo do Espírito Santo, que habita em vós, o qual recebestes da parte de Deus, e que não sois de vós mesmos?"
+        },
+        {
+          "ref": "João 3:5",
+          "bridge": "Nascer do Espírito para entrar",
+          "text": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus."
+        },
+        {
+          "ref": "Atos 2:38",
+          "bridge": "O dom do Espírito prometido",
+          "text": "Pedro lhes respondeu: Arrependam-se e que cada um de vocês seja batizado em nome de Jesus Cristo, para a remissão dos pecados; e vocês receberão o dom do Espírito Santo."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Espírito só visita o cristão de vez em quando, em momentos especiais.",
+          "why": "Paulo usa o verbo habitar e liga pertencer a Cristo a ter o Espírito (8:9)."
+        },
+        {
+          "text": "Ter o Espírito é algo opcional para quem já é de Cristo.",
+          "why": "O texto diz que quem não tem o Espírito de Cristo não é dele (8:9)."
+        },
+        {
+          "text": "Deus salva só a parte interior e abandona o corpo para sempre.",
+          "why": "Paulo afirma que Deus vivificará também os corpos mortais (8:11)."
+        }
+      ],
+      "centralInsight": "O Espírito de Deus habita em quem é de Cristo e dará vida também ao corpo.",
+      "anchorQuestion": "Segundo Romanos 8:9, quem não é de Cristo?",
+      "relatedVerses": [
+        {
+          "reference": "1 Coríntios 6:19",
+          "reason": "O corpo é templo do Espírito"
+        },
+        {
+          "reference": "João 3:5",
+          "reason": "Nascer do Espírito para entrar"
+        },
+        {
+          "reference": "Atos 2:38",
+          "reason": "O dom do Espírito prometido"
+        }
+      ]
+    },
+    "pn-03-fruto": {
+      "slug": "pn-03-fruto",
+      "passageRef": "Gálatas 5:22–23",
+      "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei.",
+      "passages": [
+        {
+          "ref": "Gálatas 5:22–23",
+          "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei."
+        },
+        {
+          "ref": "Gálatas 5:24–25",
+          "text": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências. Se vivemos no Espírito, andemos também pelo Espírito."
+        }
+      ],
+      "context": "Paulo acaba de listar as obras da carne, que dividem e destroem. Em seguida, ele mostra o que o Espírito produz na vida de quem pertence a Cristo.",
+      "keyword": "Fruto",
+      "keywordGloss": "Como fruto numa árvore, o caráter novo cresce da vida do Espírito, não de esforço seco e isolado.",
+      "focusQuestion": "Qual qualidade do fruto do Espírito você mais precisa ver crescer em você hoje?",
+      "reflectionPrompts": [
+        "Fruto, não só esforço",
+        "Amor que vira caráter",
+        "Andar pelo Espírito"
+      ],
+      "facts": [
+        {
+          "text": "As obras da carne são manifestas e conhecidas.",
+          "evidenceRef": "Gálatas 5:19",
+          "evidenceSpan": "as obras da carne são manifestas"
+        },
+        {
+          "text": "O fruto do Espírito começa pelo amor, alegria e paz.",
+          "evidenceRef": "Gálatas 5:22",
+          "evidenceSpan": "o fruto do Espírito é amor, alegria, paz"
+        },
+        {
+          "text": "Contra as qualidades do fruto não existe lei.",
+          "evidenceRef": "Gálatas 5:23",
+          "evidenceSpan": "Contra essas coisas não existe lei"
+        },
+        {
+          "text": "Os que pertencem a Cristo crucificaram a carne.",
+          "evidenceRef": "Gálatas 5:24",
+          "evidenceSpan": "crucificaram a carne"
+        },
+        {
+          "text": "Quem vive no Espírito deve andar também pelo Espírito.",
+          "evidenceRef": "Gálatas 5:25",
+          "evidenceSpan": "Se vivemos no Espírito, andemos também pelo Espírito"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "fruto do Espírito",
+          "gloss": "O caráter que o Espírito produz em quem pertence a Cristo."
+        },
+        {
+          "term": "carne",
+          "gloss": "A vida guiada por si mesma, que Paulo contrasta com o Espírito."
+        },
+        {
+          "term": "amor",
+          "gloss": "A primeira qualidade citada do fruto, que abre a lista de Paulo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "As obras da carne são expostas",
+          "evidenceRef": "Gálatas 5:19–21"
+        },
+        {
+          "label": "O fruto do Espírito é apresentado",
+          "evidenceRef": "Gálatas 5:22–23"
+        },
+        {
+          "label": "A carne é crucificada por quem é de Cristo",
+          "evidenceRef": "Gálatas 5:24"
+        },
+        {
+          "label": "O chamado é andar pelo Espírito",
+          "evidenceRef": "Gálatas 5:25"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Depois das obras da carne, Paulo muda a fonte e apresenta o fruto do Espírito.",
+          "marker": "Mas",
+          "evidenceRef": "Gálatas 5:22"
+        },
+        {
+          "kind": "sequência",
+          "text": "Quem vive no Espírito é chamado a andar também pelo Espírito, passo a passo.",
+          "marker": "também",
+          "evidenceRef": "Gálatas 5:25"
+        },
+        {
+          "kind": "propósito",
+          "text": "Viver e andar pelo Espírito guarda de vaidade, provocação e inveja entre irmãos.",
+          "marker": null,
+          "evidenceRef": "Gálatas 5:25–26"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 15:5",
+          "bridge": "Permanecer em Cristo produz fruto",
+          "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+        },
+        {
+          "ref": "Romanos 8:14",
+          "bridge": "Conduzidos pelo Espírito são filhos",
+          "text": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus."
+        },
+        {
+          "ref": "Mateus 12:33",
+          "bridge": "Fruto revela a árvore",
+          "text": "Ou fazei a árvore boa e o seu fruto bom, ou fazei a árvore má e o seu fruto mau, pois é pelo fruto que se conhece a árvore."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O fruto é só esforço humano de se comportar melhor, sem o Espírito.",
+          "why": "Paulo chama as qualidades de fruto do Espírito, não de obras da carne (5:22)."
+        },
+        {
+          "text": "Quem crê pode escolher só uma qualidade da lista e ignorar as outras.",
+          "why": "Paulo fala de um só fruto com várias qualidades juntas, de amor a autocontrole."
+        },
+        {
+          "text": "Ter fruto é motivo para se achar melhor que os outros irmãos.",
+          "why": "Logo depois, Paulo manda não se deixar dominar pela vaidade nem provocar uns aos outros (5:26)."
+        }
+      ],
+      "centralInsight": "O Espírito produz em quem crê um fruto de amor, paz e domínio próprio.",
+      "anchorQuestion": "Qual é a primeira qualidade do fruto do Espírito em Gálatas 5:22?",
+      "relatedVerses": [
+        {
+          "reference": "João 15:5",
+          "reason": "Permanecer em Cristo produz fruto"
+        },
+        {
+          "reference": "Romanos 8:14",
+          "reason": "Conduzidos pelo Espírito são filhos"
+        },
+        {
+          "reference": "Mateus 12:33",
+          "reason": "Fruto revela a árvore"
+        }
+      ]
+    },
+    "pn-boss": {
+      "slug": "pn-boss",
+      "passageRef": "Atos 5:3–4",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "passages": [
+        {
+          "ref": "Atos 5:3–4",
+          "text": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+        },
+        {
+          "ref": "Romanos 8:9–10",
+          "text": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele. E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da justiça."
+        },
+        {
+          "ref": "Gálatas 5:22",
+          "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+        }
+      ],
+      "context": "Este desafio revisa a trilha, de Atos 5 a Gálatas 5. O mesmo Espírito é Deus, habita em quem é de Cristo e produz um fruto visível no caráter.",
+      "keyword": "Vida no Espírito",
+      "keywordGloss": "Viver habitado e conduzido pelo Espírito, que é Deus e forma o caráter de Cristo.",
+      "focusQuestion": "Onde você mais precisa hoje da condução do Espírito, na mente, no corpo ou nas relações?",
+      "reflectionPrompts": [
+        "O Espírito é Deus",
+        "Habitado e conduzido",
+        "Fruto que aparece"
+      ],
+      "facts": [
+        {
+          "text": "Pedro diz que Ananias não mentiu aos homens, mas a Deus.",
+          "evidenceRef": "Atos 5:4",
+          "evidenceSpan": "Você não mentiu aos homens, mas a Deus"
+        },
+        {
+          "text": "Quem não tem o Espírito de Cristo não é dele.",
+          "evidenceRef": "Romanos 8:9",
+          "evidenceSpan": "se alguém não tem o Espírito de Cristo, esse não é dele"
+        },
+        {
+          "text": "Deus vivificará os corpos mortais pelo seu Espírito que habita nos crentes.",
+          "evidenceRef": "Romanos 8:11",
+          "evidenceSpan": "também vivificará os vossos corpos mortais"
+        },
+        {
+          "text": "Todos os conduzidos pelo Espírito de Deus são filhos de Deus.",
+          "evidenceRef": "Romanos 8:14",
+          "evidenceSpan": "são filhos de Deus"
+        },
+        {
+          "text": "O fruto do Espírito começa pelo amor, alegria e paz.",
+          "evidenceRef": "Gálatas 5:22",
+          "evidenceSpan": "o fruto do Espírito é amor, alegria, paz"
+        },
+        {
+          "text": "Quem vive no Espírito deve andar também pelo Espírito.",
+          "evidenceRef": "Gálatas 5:25",
+          "evidenceSpan": "Se vivemos no Espírito, andemos também pelo Espírito"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Espírito Santo",
+          "gloss": "Deus presente, a quem se pode mentir e que habita nos crentes."
+        },
+        {
+          "term": "habita",
+          "gloss": "Morar dentro: o Espírito vive em quem pertence a Cristo."
+        },
+        {
+          "term": "fruto do Espírito",
+          "gloss": "O caráter que o Espírito produz em quem pertence a Cristo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Espírito é Deus diante da mentira",
+          "evidenceRef": "Atos 5:3–4"
+        },
+        {
+          "label": "O Espírito habita em quem é de Cristo",
+          "evidenceRef": "Romanos 8:9"
+        },
+        {
+          "label": "O Espírito dará vida aos corpos",
+          "evidenceRef": "Romanos 8:11"
+        },
+        {
+          "label": "O Espírito produz fruto no caráter",
+          "evidenceRef": "Gálatas 5:22"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Paulo vira do estar na carne para o estar no Espírito, se ele habita na pessoa.",
+          "marker": "Porém",
+          "evidenceRef": "Romanos 8:9"
+        },
+        {
+          "kind": "resultado",
+          "text": "A inclinação do Espírito conduz à vida e à paz.",
+          "marker": "conduz",
+          "evidenceRef": "Romanos 8:6"
+        },
+        {
+          "kind": "contraste",
+          "text": "Depois das obras da carne, Paulo apresenta o fruto do Espírito.",
+          "marker": "Mas",
+          "evidenceRef": "Gálatas 5:22"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 14:26",
+          "bridge": "O Consolador ensina e lembra",
+          "text": "Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas e vos lembrará de tudo o que tenho dito a vocês."
+        },
+        {
+          "ref": "1 Coríntios 6:19",
+          "bridge": "O corpo é templo do Espírito",
+          "text": "Ou não sabeis que o vosso corpo é o templo do Espírito Santo, que habita em vós, o qual recebestes da parte de Deus, e que não sois de vós mesmos?"
+        },
+        {
+          "ref": "João 15:5",
+          "bridge": "Permanecer em Cristo produz fruto",
+          "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Espírito é só uma força impessoal de Deus.",
+          "why": "Pedro trata mentir ao Espírito como mentir a Deus, e Paulo fala dele habitando e conduzindo."
+        },
+        {
+          "text": "Ter o Espírito é opcional para quem já é de Cristo.",
+          "why": "Paulo diz que quem não tem o Espírito de Cristo não é dele (Rm 8:9)."
+        },
+        {
+          "text": "O fruto depende só do esforço humano de melhorar.",
+          "why": "Paulo chama o caráter de fruto do Espírito e liga o andar diário a ele (Gl 5:22–25)."
+        }
+      ],
+      "centralInsight": "O que este conceito revela sobre Deus?",
+      "anchorQuestion": "Quais três obras do Espírito esta trilha revisou, em Atos 5, Romanos 8 e Gálatas 5?",
+      "relatedVerses": [
+        {
+          "reference": "João 14:26",
+          "reason": "O Consolador ensina e lembra"
+        },
+        {
+          "reference": "1 Coríntios 6:19",
+          "reason": "O corpo é templo do Espírito"
+        },
+        {
+          "reference": "João 15:5",
+          "reason": "Permanecer em Cristo produz fruto"
+        }
+      ]
+    }
+  }
+}

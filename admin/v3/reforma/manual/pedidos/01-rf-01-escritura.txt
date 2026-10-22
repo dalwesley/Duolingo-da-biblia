@@ -1,0 +1,59 @@
+Escreva a cena "rf-01-escritura" da trilha "reforma" (Reforma).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "reforma",
+  "title": "Reforma",
+  "description": "Sola Scriptura e o reavivamento do evangelho no século XVI.",
+  "realm": "vida-crista"
+ },
+ "block": "Reforma",
+ "mission": {
+  "slug": "rf-01-escritura",
+  "title": "Sola Scriptura",
+  "type": "lesson",
+  "intro": "A Reforma reafirmou que a Escritura é inspirada por Deus e suficiente para ensinar, corrigir e equipar o servo de Deus.",
+  "hookRef": "2 Timóteo 3:16-17",
+  "hookNote": "A Reforma reafirmou que a Escritura é inspirada por Deus e suficiente para ensinar, corrigir e equipar o servo de Deus.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "2 Timóteo 3:16-17"
+ },
+ "v2": {
+  "passageRef": "2 Timóteo 3:16-17",
+  "context": "A Reforma reafirmou que a Escritura é inspirada por Deus e suficiente para ensinar, corrigir e equipar o servo de Deus.",
+  "keyword": "Sola",
+  "verseRefs": [
+   "2 Timóteo 3:16–17"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "2 Timóteo 3:13–17"
+ ],
+ "verses": [
+  {
+   "ref": "2 Timóteo 3:13",
+   "text": "Contudo, os homens perversos e impostores irão de mal a pior, enganando e sendo enganados."
+  },
+  {
+   "ref": "2 Timóteo 3:14",
+   "text": "Tu, porém, permanece firme nas coisas que aprendeste e das quais te tornaste plenamente ciente, sabendo de quem as aprendeste."
+  },
+  {
+   "ref": "2 Timóteo 3:15",
+   "text": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 3:16",
+   "text": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;"
+  },
+  {
+   "ref": "2 Timóteo 3:17",
+   "text": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra."
+  }
+ ]
+}
+</cena>

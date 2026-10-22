@@ -1,0 +1,322 @@
+{
+ "study": {
+  "passageRef": "Tiago 3:8–10",
+  "passages": [{ "ref": "Tiago 3:8–10" }],
+  "context": "Tiago fala a crentes cujas palavras feriam a comunidade. Ele compara a língua a fogo e a uma fonte para mostrar o peso do que sai da boca de cada um.",
+  "keyword": "língua",
+  "keywordGloss": "Pequena no corpo, a língua pode bendizer a Deus ou ferir pessoas com grande dano.",
+  "focusQuestion": "Que palavras suas precisam mudar para abençoar, e não ferir, nesta semana?",
+  "reflectionPrompts": ["Palavras que ferem", "Boca e coração", "Sabedoria mansa"],
+  "facts": [
+   { "text": "A língua é um pequeno membro, mas se vangloria de coisas grandiosas.", "evidenceRef": "Tiago 3:5", "evidenceSpan": "a língua é um pequeno membro, mas se vangloria de coisas grandiosas" },
+   { "text": "Uma fagulha pode incitar um imenso incêndio.", "evidenceRef": "Tiago 3:5", "evidenceSpan": "uma fagulha pode incitar um imenso incêndio" },
+   { "text": "Ninguém consegue domar a língua, cheia de veneno mortal.", "evidenceRef": "Tiago 3:8", "evidenceSpan": "ninguém consegue domar a língua" },
+   { "text": "Com a língua, bendizemos ao Senhor e Pai e amaldiçoamos os homens.", "evidenceRef": "Tiago 3:9", "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai" },
+   { "text": "Da mesma boca procedem bênção e maldição.", "evidenceRef": "Tiago 3:10", "evidenceSpan": "Da mesma boca procedem bênção e maldição" },
+   { "text": "Quem é sábio mostra boas ações com a mansidão fruto da sabedoria.", "evidenceRef": "Tiago 3:13", "evidenceSpan": "Mostre por meio de suas boas ações" }
+  ],
+  "keyTerms": [
+   { "term": "língua", "gloss": "O pequeno membro que Tiago usa para falar do poder das palavras de uma pessoa." },
+   { "term": "veneno mortal", "gloss": "Imagem do dano que palavras sem domínio espalham em quem ouve." },
+   { "term": "bênção", "gloss": "Falar bem de Deus e bem a outros; o oposto da maldição na mesma boca." }
+  ],
+  "structure": [
+   { "label": "A língua pequena, mas perigosa", "evidenceRef": "Tiago 3:5" },
+   { "label": "Ninguém consegue domá-la sozinho", "evidenceRef": "Tiago 3:8" },
+   { "label": "Bênção e maldição da mesma boca", "evidenceRef": "Tiago 3:10" },
+   { "label": "O sábio mostra mansidão nas ações", "evidenceRef": "Tiago 3:13" }
+  ],
+  "relations": [
+   { "kind": "contraste", "text": "O ser humano doma animais de todo tipo, mas ninguém consegue domar a língua.", "marker": "Mas", "evidenceRef": "Tiago 3:8" },
+   { "kind": "resultado", "text": "Da mesma boca saem bênção e maldição, resultado que Tiago diz não ser apropriado.", "marker": "procedem", "evidenceRef": "Tiago 3:10" },
+   { "kind": "contraste", "text": "Uma fonte não pode jorrar água doce e água amarga do mesmo manancial.", "marker": "pode", "evidenceRef": "Tiago 3:11" }
+  ],
+  "crossRefs": [
+   { "ref": "Salmos 141:3", "bridge": "Guarda sobre a boca" },
+   { "ref": "Provérbios 18:21", "bridge": "Vida e morte na língua" },
+   { "ref": "Efésios 4:29", "bridge": "Palavra que edifica outros" }
+  ],
+  "misreadings": [
+   { "text": "Palavras não importam; só valem as intenções de quem fala.", "why": "Tiago compara a língua a fogo e veneno pelo dano real que ela causa (3:6–8)." },
+   { "text": "Dominar a língua é uma conquista humana garantida com esforço.", "why": "O texto afirma que ninguém consegue domá-la (3:8); é preciso depender de Deus." },
+   { "text": "Bendizer a Deus compensa amaldiçoar pessoas no dia a dia.", "why": "Tiago diz que bênção e maldição da mesma boca não são apropriadas (3:10)." }
+  ],
+  "centralInsight": "A sabedoria de Deus aparece em palavras que geram paz, e não em dano e ambição.",
+  "anchorQuestion": "Segundo Tiago 3:8, quem consegue domar a língua?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Tiago 3:8, qualquer pessoa consegue domar a língua com facilidade.",
+   "verseRef": "Tiago 3:8", "correctOptionId": "false",
+   "evidenceSpan": "ninguém consegue domar a língua",
+   "feedbackCorrect": "Tiago afirma o contrário: ninguém consegue domar esse mal indomável.",
+   "feedbackWrong": { "true": "Releia o começo de Tiago 3:8 e veja quem consegue esse domínio." },
+   "hint": "Olhe o começo do versículo.",
+   "learningObjective": "Observar o que Tiago afirma sobre domar a língua.",
+   "evidence": ["Tiago 3:8"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Tiago 3:9, toque o verbo que diz o que fazemos ao Senhor e Pai com a língua.",
+   "verseRef": "Tiago 3:9",
+   "options": [{ "id": "a", "text": "amaldiçoamos" }, { "id": "b", "text": "bendizemos" }, { "id": "c", "text": "feitos" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+   "feedbackCorrect": "Com a mesma língua, bendizemos a Deus e, ao mesmo tempo, ferimos pessoas.",
+   "feedbackWrong": { "a": "Amaldiçoar é o que se faz aos homens; ao Senhor é o outro verbo.", "c": "Os homens foram feitos à semelhança de Deus; não é o verbo pedido." },
+   "hint": "Procure o verbo ligado ao Senhor e Pai.",
+   "learningObjective": "Identificar o uso da língua para bendizer a Deus.",
+   "evidence": ["Tiago 3:9"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Tiago 3:5, a que a língua é comparada no seu efeito?",
+   "verseRef": "Tiago 3:5",
+   "options": [
+    { "id": "a", "text": "A uma fagulha que incendeia muito" },
+    { "id": "b", "text": "A um leme pequeno e seguro" },
+    { "id": "c", "text": "A uma fonte de água doce" },
+    { "id": "d", "text": "A uma árvore frutífera" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "uma fagulha pode incitar um imenso incêndio",
+   "feedbackCorrect": "Pequena como ela, uma faísca verbal pode incendiar uma vida inteira.",
+   "feedbackWrong": { "b": "O texto não usa essa imagem aqui; usa fogo que se espalha.", "c": "A fonte aparece só em 3:11, para falar de água doce e amarga.", "d": "A árvore frutífera não é a comparação deste versículo." },
+   "hint": "Veja a segunda metade do versículo.",
+   "learningObjective": "Observar a comparação que mostra o efeito da língua.",
+   "evidence": ["Tiago 3:5"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Tiago 3:9 na ordem do texto.",
+   "verseRef": "Tiago 3:9",
+   "options": [
+    { "id": "a", "text": "Com ela, bendizemos ao Senhor e Pai" },
+    { "id": "b", "text": "e com ela, amaldiçoamos os homens" },
+    { "id": "c", "text": "que foram feitos à semelhança de Deus" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+   "feedbackCorrect": "Primeiro o louvor a Deus; depois, a ofensa a quem ele fez à sua semelhança.",
+   "feedbackWrong": { "default": "Comece pelo louvor a Deus; a ofensa às pessoas vem em seguida." },
+   "hint": "O versículo começa com o louvor a Deus.",
+   "learningObjective": "Reconhecer a sequência de Tiago 3:9.",
+   "evidence": ["Tiago 3:9"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Tiago 3:5, o que pode incitar um imenso incêndio?",
+   "verseRef": "Tiago 3:5",
+   "options": [{ "id": "a", "text": "vento" }, { "id": "b", "text": "fagulha" }, { "id": "c", "text": "rio" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "uma fagulha pode incitar um imenso incêndio",
+   "feedbackCorrect": "Algo bem pequeno pode espalhar um dano enorme, como as palavras.",
+   "feedbackWrong": { "a": "O vento pode espalhar fogo, mas não é a palavra do versículo.", "c": "O rio apaga fogo; Tiago fala do que o começa." },
+   "hint": "Pense em algo bem pequeno que começa o fogo.",
+   "learningObjective": "Lembrar a imagem do fogo que começa pequeno.",
+   "evidence": ["Tiago 3:5"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Tiago 3:10 comunica que se liga a este contexto?",
+   "verseRef": "Tiago 3:10",
+   "passageA": { "ref": "Tiago 3:10" },
+   "passageB": { "ref": "Contexto", "text": "Da boca do crente não devem sair louvor a Deus e ofensa às pessoas ao mesmo tempo." },
+   "options": [
+    { "id": "a", "text": "Uma só boca, um só coração" },
+    { "id": "b", "text": "Palavras não têm peso" },
+    { "id": "c", "text": "Amaldiçoar também é louvor" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+   "feedbackCorrect": "Tiago reprova essa mistura: a mesma boca deve ter um só rumo.",
+   "feedbackWrong": { "b": "Todo o trecho mostra o peso enorme das palavras.", "c": "Tiago chama essa mistura de não apropriada, não de louvor." },
+   "hint": "Veja os dois usos da mesma boca.",
+   "learningObjective": "Ligar Tiago 3:10 à coerência entre louvor e trato com pessoas.",
+   "evidence": ["Tiago 3:10"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Tiago 3:9–10, a mesma boca que bendiz a Deus também amaldiçoa pessoas feitas à semelhança dele.",
+   "verseRef": "Tiago 3:9–10", "correctOptionId": "true",
+   "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+   "feedbackCorrect": "É essa mistura que Tiago apresenta e, logo depois, reprova com clareza.",
+   "feedbackWrong": { "false": "Releia os dois versículos e veja os dois usos da mesma boca." },
+   "hint": "Junte o que os dois versículos dizem da boca.",
+   "learningObjective": "Compreender a mistura de bênção e maldição na mesma boca.",
+   "evidence": ["Tiago 3:9–10"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Tiago 3:8, toque a palavra inicial que contrasta domar animais e domar a língua.",
+   "verseRef": "Tiago 3:8",
+   "options": [{ "id": "a", "text": "Mas" }, { "id": "b", "text": "língua" }, { "id": "c", "text": "mortal" }],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mas ninguém consegue domar a língua",
+   "feedbackCorrect": "Depois de animais domados, essa palavra vira para a língua indomável.",
+   "feedbackWrong": { "b": "A língua é o assunto do versículo, não a palavra de contraste.", "c": "Mortal descreve o veneno; o contraste está na primeira palavra." },
+   "hint": "É a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o contraste entre domar animais e a língua.",
+   "evidence": ["Tiago 3:8"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Tiago 3:11 ajuda a entender Tiago 3:10?",
+   "verseRef": "Tiago 3:10–11",
+   "options": [
+    { "id": "a", "text": "Uma fonte não mistura água boa e ruim sem revelar problema" },
+    { "id": "b", "text": "A fonte prova que palavras nunca revelam o coração" },
+    { "id": "c", "text": "Água amarga e doce são sempre iguais" },
+    { "id": "d", "text": "A boca pode amaldiçoar sem problema algum" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pode jorrar do mesmo manancial água doce e água amarga",
+   "feedbackCorrect": "Como a fonte, a boca revela uma mistura que não deveria existir.",
+   "feedbackWrong": { "b": "A comparação mostra justamente que o que sai revela a fonte.", "c": "Doce e amarga são opostas; a fonte não jorra as duas juntas.", "d": "Tiago diz que essa mistura não é apropriada para o crente." },
+   "hint": "Pense no que a fonte revela sobre si mesma.",
+   "learningObjective": "Relacionar a imagem da fonte ao problema da boca dividida.",
+   "evidence": ["Tiago 3:10–11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como Tiago encadeia os exemplos em Tiago 3:11–12?",
+   "verseRef": "Tiago 3:11–12",
+   "options": [
+    { "id": "a", "text": "Uma fonte não jorra água doce e amarga juntas" },
+    { "id": "b", "text": "A figueira não produz azeitonas" },
+    { "id": "c", "text": "A videira não produz figos" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "uma fonte de água salgada não pode produzir água doce",
+   "feedbackCorrect": "Fonte, figueira e videira: cada uma produz conforme a sua natureza.",
+   "feedbackWrong": { "default": "Comece pela fonte; as plantas vêm no versículo seguinte." },
+   "hint": "A fonte abre a sequência de exemplos.",
+   "learningObjective": "Compreender a sequência de exemplos da natureza em Tiago 3.",
+   "evidence": ["Tiago 3:11–12"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Tiago 3:11, que tipo de água Tiago contrasta com a água doce da fonte?",
+   "verseRef": "Tiago 3:11",
+   "options": [{ "id": "a", "text": "salgada" }, { "id": "b", "text": "amarga" }, { "id": "c", "text": "suja" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "água doce e água amarga",
+   "feedbackCorrect": "Doce e amarga não saem juntas da mesma fonte, diz Tiago.",
+   "feedbackWrong": { "a": "A água salgada aparece no versículo seguinte, não neste contraste.", "c": "O contraste do versículo é de sabor, não de sujeira." },
+   "hint": "Releia a pergunta sobre a fonte.",
+   "learningObjective": "Compreender o contraste da fonte em Tiago 3:11.",
+   "evidence": ["Tiago 3:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Tiago 3:9 a Provérbios 18:21?",
+   "verseRef": "Tiago 3:9",
+   "passageA": { "ref": "Tiago 3:9" },
+   "passageB": { "ref": "Provérbios 18:21" },
+   "options": [
+    { "id": "a", "text": "A língua carrega vida e morte" },
+    { "id": "b", "text": "Palavras nunca trazem dano" },
+    { "id": "c", "text": "Falar muito é sempre sabedoria" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+   "feedbackCorrect": "Nos dois textos, o que a boca produz tem peso de vida ou de morte.",
+   "feedbackWrong": { "b": "Provérbios e Tiago mostram dano real vindo das palavras.", "c": "Falar muito não é o tema; o tema é o poder do que se fala." },
+   "hint": "Veja o poder que Provérbios atribui às palavras.",
+   "learningObjective": "Relacionar o poder da língua em Tiago e em Provérbios.",
+   "evidence": ["Tiago 3:9", "Provérbios 18:21"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Em Tiago 3:13, a sabedoria verdadeira se mostra principalmente em vencer discussões.",
+   "verseRef": "Tiago 3:13", "correctOptionId": "false",
+   "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+   "feedbackCorrect": "O sábio, para Tiago, se mostra em boas ações feitas com mansidão.",
+   "feedbackWrong": { "true": "Releia Tiago 3:13 e veja como o sábio deve se mostrar." },
+   "hint": "Olhe como o sábio deve se mostrar.",
+   "learningObjective": "Interpretar a marca da sabedoria verdadeira em Tiago 3:13.",
+   "evidence": ["Tiago 3:13"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Tiago 3:10, toque a palavra que Tiago diz não dever sair da boca junto com a bênção.",
+   "verseRef": "Tiago 3:10",
+   "options": [{ "id": "a", "text": "bênção" }, { "id": "b", "text": "boca" }, { "id": "c", "text": "maldição" }],
+   "correctOptionId": "c",
+   "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+   "feedbackCorrect": "É essa segunda saída da boca que Tiago chama de não apropriada.",
+   "feedbackWrong": { "a": "A bênção a Deus é boa; o problema é o que sai junto dela.", "b": "A boca é o canal; o problema é um dos conteúdos que saem dela." },
+   "hint": "Procure o oposto do louvor a Deus.",
+   "learningObjective": "Sustentar com o texto a reprovação da boca dividida.",
+   "evidence": ["Tiago 3:10"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Tiago 3:12–13 sustenta sobre quem é sábio?",
+   "verseRef": "Tiago 3:12–13",
+   "options": [
+    { "id": "a", "text": "Mostra sabedoria em ações boas e mansas" },
+    { "id": "b", "text": "Prova sabedoria falando mais alto que todos" },
+    { "id": "c", "text": "É sábio quem nunca precisa agir" },
+    { "id": "d", "text": "Sabedoria é só conhecer muitos assuntos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+   "feedbackCorrect": "Como a planta dá o seu fruto, o sábio se conhece pelas ações mansas.",
+   "feedbackWrong": { "b": "Falar mais alto é o oposto da mansidão citada por Tiago.", "c": "Tiago pede justamente que o sábio se mostre agindo.", "d": "Conhecer sem agir não é a sabedoria que o texto descreve." },
+   "hint": "Veja o fruto que acompanha o sábio.",
+   "learningObjective": "Escolher a interpretação de sabedoria que o texto sustenta.",
+   "evidence": ["Tiago 3:12–13"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho das palavras a partir de Tiago 3:8?",
+   "verseRef": "Tiago 3:8",
+   "options": [
+    { "id": "a", "text": "A língua sem domínio espalha dano" },
+    { "id": "b", "text": "O sábio pede a Deus guarda na boca" },
+    { "id": "c", "text": "Suas palavras passam a edificar quem ouve" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "é um mal indomável, repleta de veneno mortal",
+   "feedbackCorrect": "Do dano sem domínio à guarda pedida a Deus, até palavras que edificam.",
+   "feedbackWrong": { "default": "Comece pelo problema da língua; a edificação é o ponto de chegada." },
+   "hint": "Comece pelo problema descrito por Tiago.",
+   "learningObjective": "Ver o caminho da língua indomável até palavras que edificam.",
+   "evidence": ["Tiago 3:8", "Salmos 141:3", "Efésios 4:29"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Tiago 3:13, o que as boas ações devem mostrar como fruto da sabedoria?",
+   "verseRef": "Tiago 3:13",
+   "options": [{ "id": "a", "text": "orgulho" }, { "id": "b", "text": "mansidão" }, { "id": "c", "text": "pressa" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "a mansidão que é fruto da sabedoria",
+   "feedbackCorrect": "É esse fruto calmo que distingue a sabedoria que vem de Deus.",
+   "feedbackWrong": { "a": "Orgulho combina com discussão, não com o fruto citado.", "c": "A pressa não aparece; o fruto citado é um jeito de agir." },
+   "hint": "Procure o fruto ligado à sabedoria.",
+   "learningObjective": "Lembrar o fruto que marca a sabedoria verdadeira.",
+   "evidence": ["Tiago 3:13"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Tiago 3:13 a Efésios 4:29?",
+   "verseRef": "Tiago 3:13",
+   "passageA": { "ref": "Tiago 3:13" },
+   "passageB": { "ref": "Efésios 4:29" },
+   "options": [
+    { "id": "a", "text": "Palavra e ação que edificam" },
+    { "id": "b", "text": "Falar sem pensar nos outros" },
+    { "id": "c", "text": "Sabedoria que só discute" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mostre por meio de suas boas ações",
+   "feedbackCorrect": "Nos dois textos, quem é de Deus se conhece por edificar os outros.",
+   "feedbackWrong": { "b": "Efésios pede palavra útil a quem ouve, não fala descuidada.", "c": "A sabedoria de Tiago se mostra agindo, não só discutindo." },
+   "hint": "Veja o efeito das palavras em Efésios.",
+   "learningObjective": "Ligar sabedoria prática e palavras que edificam.",
+   "evidence": ["Tiago 3:13", "Efésios 4:29"]
+  }
+ ]
+}

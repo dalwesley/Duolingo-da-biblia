@@ -1,0 +1,92 @@
+Escreva a cena "sm-25-frutos-e-casa" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "Decisões do discípulo",
+ "mission": {
+  "slug": "sm-25-frutos-e-casa",
+  "title": "Frutos e casa na rocha",
+  "type": "lesson",
+  "intro": "Nem toda voz religiosa vem de Deus, e nem toda confissão é obediência. Jesus manda discernir pelos frutos e termina com duas casas: ouvir suas palavras e praticá-las é construir sobre a rocha.",
+  "hookRef": "Mateus 7:15–27",
+  "hookNote": "Jesus oferece dois testes de autenticidade: frutos e obediência. Falsos profetas podem parecer ovelhas, mas sua mensagem e sua vida revelam…",
+  "centralInsight": "Fruto revela o que aparência pode esconder",
+  "objective": "Minha fé é só linguagem religiosa ou permanece quando a tempestade prova o fundamento?"
+ },
+ "v2": {
+  "passageRef": "Mateus 7:15–27",
+  "context": "Jesus oferece dois testes de autenticidade: frutos e obediência. Falsos profetas podem parecer ovelhas, mas sua mensagem e sua vida revelam o que são. Uma confissão verbal, até acompanhada de feitos impressionantes, não substitui fazer a vontade do Pai. A rocha não é mera informação sobre Jesus: é ouvir suas palavras e praticá-las. As tempestades revelam o fundamento.",
+  "keyword": "Rocha",
+  "verseRefs": [
+   "Mateus 7:24–25"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 7:15–27",
+  "Mateus 7:24–25"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 7:15",
+   "text": "Cuidado com os falsos profetas, que se apresentam a vocês disfarçados de ovelhas, mas, interiormente, são lobos devoradores."
+  },
+  {
+   "ref": "Mateus 7:16",
+   "text": "Pelos seus frutos vocês os conhecerão. Por acaso se colhem uvas dos espinheiros ou figos dos abrolhos?"
+  },
+  {
+   "ref": "Mateus 7:17",
+   "text": "Assim, toda árvore boa produz bons frutos, porém uma árvore má produz frutos maus."
+  },
+  {
+   "ref": "Mateus 7:18",
+   "text": "Uma árvore boa não pode produzir frutos ruins, nem uma árvore má produzir frutos bons."
+  },
+  {
+   "ref": "Mateus 7:19",
+   "text": "Toda árvore que não produz bons frutos é cortada e lançada ao fogo."
+  },
+  {
+   "ref": "Mateus 7:20",
+   "text": "Assim, portanto, pelos seus frutos os conhecereis."
+  },
+  {
+   "ref": "Mateus 7:21",
+   "text": "Nem todo aquele que me chama: Senhor, Senhor! entrará no reino dos céus, mas sim aquele que pratica a vontade de meu Pai, que está nos céus."
+  },
+  {
+   "ref": "Mateus 7:22",
+   "text": "Muitos me dirão, naquele dia: Senhor, Senhor! Não profetizamos em Teu nome? E em Teu nome não expulsamos demônios? E em Teu nome não fizemos muitas maravilhas?"
+  },
+  {
+   "ref": "Mateus 7:23",
+   "text": "Então, eu lhes direi de forma clara: Nunca os conheci; afastem-se de mim, vocês que praticam a iniquidade."
+  },
+  {
+   "ref": "Mateus 7:24",
+   "text": "Todo aquele, portanto, que ouve estas minhas palavras e as coloca em prática será comparado a um homem prudente que edificou sua casa sobre a rocha;"
+  },
+  {
+   "ref": "Mateus 7:25",
+   "text": "E desceu a chuva, transbordaram os rios, sopraram os ventos e investiram com ímpeto contra aquela casa, mas ela não caiu, porque estava edificada sobre a rocha."
+  },
+  {
+   "ref": "Mateus 7:26",
+   "text": "Aquele que ouve estas minhas palavras e não as pratica será comparado a um homem insensato que edificou sua casa sobre a areia."
+  },
+  {
+   "ref": "Mateus 7:27",
+   "text": "E desceu a chuva, transbordaram os rios, sopraram os ventos e atacaram com ímpeto aquela casa; ela desabou, sendo grande a sua ruína."
+  }
+ ]
+}
+</cena>

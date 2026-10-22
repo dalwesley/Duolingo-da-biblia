@@ -1,0 +1,72 @@
+Escreva a cena "miqueias-miqueias-02-belem-efrata" da trilha "miqueias" (Miqueias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "miqueias",
+  "title": "Miqueias",
+  "description": "Agir com justiça, amar a misericórdia, andar com Deus.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Justiça e esperança",
+ "mission": {
+  "slug": "miqueias-miqueias-02-belem-efrata",
+  "title": "Belém Efrata",
+  "type": "lesson",
+  "intro": "De ti me sairá o Dominador.",
+  "hookRef": "Miqueias 6:8",
+  "hookNote": "De ti me sairá o Dominador.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre belém?"
+ },
+ "v2": {
+  "passageRef": "Miqueias 6:8",
+  "context": "De ti me sairá o Dominador.",
+  "keyword": "Belém",
+  "verseRefs": [
+   "Miqueias 5:2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Miqueias 6:5–11",
+  "Miqueias 5:2"
+ ],
+ "verses": [
+  {
+   "ref": "Miqueias 6:5",
+   "text": "Meu povo, lembra-te do que Balaque, rei de Moabe, planejou e do que Balaão, filho de Beor, lhe respondeu, desde Sittim até Gilgal, para que conheças os atos de justiça do Senhor."
+  },
+  {
+   "ref": "Miqueias 6:6",
+   "text": "Com que me apresentarei ao Senhor e me inclinarei diante do Deus Altíssimo? Irei até Ele com holocaustos? Com bezerros de um ano?"
+  },
+  {
+   "ref": "Miqueias 6:7",
+   "text": "Agradar-se-á o Senhor de milhares de carneiros, de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu corpo pelo pecado da minha alma?"
+  },
+  {
+   "ref": "Miqueias 6:8",
+   "text": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+  },
+  {
+   "ref": "Miqueias 6:9",
+   "text": "A voz do SENHOR clama à cidade, pois é verdadeira sabedoria temer o Seu nome: Ouçam, ó tribos, aquele que a designou."
+  },
+  {
+   "ref": "Miqueias 6:10",
+   "text": "Ainda existem, na casa do ímpio, tesouros da impiedade e um efa minguado, que é detestável"
+  },
+  {
+   "ref": "Miqueias 6:11",
+   "text": "Acaso poderei eu ser considerado justo com balanças falsas e bolsas de pesos enganadores?"
+  },
+  {
+   "ref": "Miqueias 5:2",
+   "text": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+  }
+ ]
+}
+</cena>

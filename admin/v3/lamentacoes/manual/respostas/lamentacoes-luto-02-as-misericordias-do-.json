@@ -1,0 +1,497 @@
+{
+ "study": {
+  "passageRef": "Lamentações 3:22–23",
+  "passages": [
+   { "ref": "Lamentações 3:19–26" }
+  ],
+  "context": "No centro do livro do luto, o poeta está abatido, mas se volta para o que Deus é: misericórdias sem fim, fidelidade grande e um Senhor que é a sua porção.",
+  "keyword": "Misericórdias",
+  "keywordGloss": "Bondade de Deus que não tem fim e se renova a cada manhã sobre quem espera nele.",
+  "focusQuestion": "O que significa, para você hoje, dizer que o Senhor é a sua porção?",
+  "reflectionPrompts": [
+   "Misericórdias sem fim",
+   "O Senhor é minha porção",
+   "Aguardar em silêncio"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor é a porção do poeta, e por isso ele espera nele.",
+    "evidenceRef": "Lamentações 3:24",
+    "evidenceSpan": "O Senhor é a minha porção"
+   },
+   {
+    "text": "O Senhor é bom para os que nele esperam e para a alma que o busca.",
+    "evidenceRef": "Lamentações 3:25",
+    "evidenceSpan": "Bom é o Senhor para os que nele esperam"
+   },
+   {
+    "text": "É bom aguardar em silêncio a salvação do Senhor.",
+    "evidenceRef": "Lamentações 3:26",
+    "evidenceSpan": "aguardar em silêncio a salvação do Senhor"
+   },
+   {
+    "text": "As misericórdias do Senhor não têm fim.",
+    "evidenceRef": "Lamentações 3:22",
+    "evidenceSpan": "as suas misericórdias não têm fim"
+   },
+   {
+    "text": "A fidelidade de Deus é grande.",
+    "evidenceRef": "Lamentações 3:23",
+    "evidenceSpan": "grande é a tua fidelidade"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "misericórdias",
+    "gloss": "Bondade fiel de Deus que não se esgota nem no tempo do luto."
+   },
+   {
+    "term": "porção",
+    "gloss": "O que cabe a alguém como sua parte; para o poeta, a sua parte é o próprio Senhor."
+   },
+   {
+    "term": "silêncio",
+    "gloss": "Aguardar sem desespero, confiando que a salvação vem do Senhor."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pedido para Deus se lembrar da aflição",
+    "evidenceRef": "Lamentações 3:19"
+   },
+   {
+    "label": "Esperança trazida à memória",
+    "evidenceRef": "Lamentações 3:21"
+   },
+   {
+    "label": "Misericórdias que se renovam de manhã",
+    "evidenceRef": "Lamentações 3:23"
+   },
+   {
+    "label": "Aguardar em silêncio a salvação",
+    "evidenceRef": "Lamentações 3:26"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Porque o Senhor é a sua porção, o poeta decide esperar nele.",
+    "marker": "por isso",
+    "evidenceRef": "Lamentações 3:24"
+   },
+   {
+    "kind": "sequência",
+    "text": "A cada manhã, as misericórdias se renovam sobre o povo.",
+    "marker": "manhã",
+    "evidenceRef": "Lamentações 3:23"
+   },
+   {
+    "kind": "contraste",
+    "text": "A alma abatida pela lembrança da dor ainda encontra esperança ao lembrar de Deus.",
+    "marker": null,
+    "evidenceRef": "Lamentações 3:21"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 90:14",
+    "bridge": "Benignidade pela manhã"
+   },
+   {
+    "ref": "Salmos 143:8",
+    "bridge": "Ouvir a graça pela manhã"
+   },
+   {
+    "ref": "Isaías 54:7–8",
+    "bridge": "Misericórdia depois do abandono breve"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Aguardar em silêncio é desistir de falar com Deus.",
+    "why": "O poeta continua falando e esperando; o silêncio é confiança, não desistência."
+   },
+   {
+    "text": "Deus só é bom para quem não está sofrendo.",
+    "why": "No meio do luto, o texto diz que o Senhor é bom para os que nele esperam e o buscam."
+   },
+   {
+    "text": "A porção do poeta é uma terra ou um bem que ele perdeu.",
+    "why": "O texto diz que o próprio Senhor é a sua porção, e por isso ele espera nele."
+   }
+  ],
+  "centralInsight": "As misericórdias do Senhor se renovam no luto",
+  "anchorQuestion": "Segundo Lamentações 3:24, o que o Senhor é para o poeta?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lamentações 3:25, o Senhor é bom apenas para quem não espera nele.",
+   "verseRef": "Lamentações 3:25",
+   "correctOptionId": "false",
+   "evidenceSpan": "Bom é o Senhor para os que nele esperam",
+   "feedbackCorrect": "O texto diz o contrário: o Senhor é bom para os que nele esperam.",
+   "feedbackWrong": {
+    "true": "Releia 3:25: o Senhor é bom para os que nele esperam e o buscam."
+   },
+   "hint": "Veja para quem o Senhor é bom.",
+   "learningObjective": "Observar para quem o Senhor é bom.",
+   "evidence": ["Lamentações 3:25"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lamentações 3:25, toque para quem o Senhor é bom, junto de quem o busca.",
+   "verseRef": "Lamentações 3:25",
+   "options": [
+    { "id": "a", "text": "nele esperam" },
+    { "id": "b", "text": "o busca" },
+    { "id": "c", "text": "Bom é" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para os que nele esperam",
+   "feedbackCorrect": "O Senhor é bom para os que nele esperam: esperar é confiar nele no luto.",
+   "feedbackWrong": {
+    "b": "Quem busca aparece depois; a pergunta pede quem espera nele.",
+    "c": "Isso abre o versículo; quem recebe a bondade vem em seguida."
+   },
+   "hint": "Veja para quem o Senhor é bom.",
+   "learningObjective": "Identificar quem espera no Senhor.",
+   "evidence": ["Lamentações 3:25"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lamentações 3:26, o que é bom fazer diante do Senhor?",
+   "verseRef": "Lamentações 3:26",
+   "options": [
+    { "id": "a", "text": "Reclamar sem parar" },
+    { "id": "b", "text": "Exigir resposta imediata" },
+    { "id": "c", "text": "Aguardar em silêncio a salvação" },
+    { "id": "d", "text": "Desistir de esperar" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "aguardar em silêncio a salvação do Senhor",
+   "feedbackCorrect": "É bom aguardar em silêncio: a salvação vem do Senhor, no tempo dele.",
+   "feedbackWrong": {
+    "a": "O texto não chama a reclamação sem fim de boa; chama bom o aguardar.",
+    "b": "Nada é exigido; o poeta aguarda a salvação que vem do Senhor.",
+    "d": "Desistir é o contrário de aguardar em silêncio com esperança."
+   },
+   "hint": "Leia o versículo inteiro com calma.",
+   "learningObjective": "Observar o valor de aguardar em silêncio.",
+   "evidence": ["Lamentações 3:26"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lamentações 3:24 na ordem do texto.",
+   "verseRef": "Lamentações 3:24",
+   "options": [
+    { "id": "a", "text": "O Senhor é a minha porção" },
+    { "id": "b", "text": "declara a minha alma" },
+    { "id": "c", "text": "por isso, esperarei nele" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "O Senhor é a minha porção",
+   "feedbackCorrect": "O Senhor é a porção, a alma declara, e por isso o poeta espera nele.",
+   "feedbackWrong": {
+    "default": "Comece pelo que o Senhor é; esperar nele fecha o versículo."
+   },
+   "hint": "O versículo começa pelo que o Senhor é.",
+   "learningObjective": "Reconhecer a sequência de Lamentações 3:24.",
+   "evidence": ["Lamentações 3:24"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lamentações 3:25, o que a alma faz em relação ao Senhor?",
+   "verseRef": "Lamentações 3:25",
+   "options": [
+    { "id": "a", "text": "busca" },
+    { "id": "b", "text": "chora" },
+    { "id": "c", "text": "espera" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a alma que o busca",
+   "feedbackCorrect": "A alma que busca o Senhor encontra um Deus bom para quem espera nele.",
+   "feedbackWrong": {
+    "b": "Chorar aparece no luto, mas aqui a alma é descrita buscando o Senhor.",
+    "c": "Esperar é dos que esperam no começo; a alma, no fim, busca."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar a atitude da alma que busca o Senhor.",
+   "evidence": ["Lamentações 3:25"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lamentações 3:24 comunica que se liga a este contexto?",
+   "verseRef": "Lamentações 3:24",
+   "passageA": { "ref": "Lamentações 3:24" },
+   "passageB": { "ref": "Contexto", "text": "O poeta não tem terra nem segurança, mas tem o Senhor." },
+   "options": [
+    { "id": "a", "text": "O Senhor é a minha parte" },
+    { "id": "b", "text": "A herança é só terra" },
+    { "id": "c", "text": "Esperar não vale a pena" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Senhor é a minha porção",
+   "feedbackCorrect": "A parte do poeta é o próprio Senhor: por isso, ele pode esperar.",
+   "feedbackWrong": {
+    "b": "A porção aqui não é terra; é o próprio Senhor.",
+    "c": "Porque o Senhor é sua porção, esperar nele vale a pena."
+   },
+   "hint": "Veja o que o Senhor é para o poeta.",
+   "learningObjective": "Ligar o Senhor como porção à esperança do poeta.",
+   "evidence": ["Lamentações 3:24"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lamentações 3:24, porque o Senhor é a porção do poeta, ele decide esperar nele.",
+   "verseRef": "Lamentações 3:24",
+   "correctOptionId": "true",
+   "evidenceSpan": "por isso, esperarei nele",
+   "feedbackCorrect": "O Senhor é a porção do poeta; por isso, a sua alma espera nele.",
+   "feedbackWrong": {
+    "false": "Releia 3:24: ele declara o Senhor sua porção e, por isso, espera nele."
+   },
+   "hint": "Veja a ligação entre porção e espera.",
+   "learningObjective": "Compreender a ligação entre porção e espera.",
+   "evidence": ["Lamentações 3:24"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lamentações 3:26, toque a palavra que mostra como aguardar a salvação.",
+   "verseRef": "Lamentações 3:26",
+   "options": [
+    { "id": "a", "text": "silêncio" },
+    { "id": "b", "text": "salvação" },
+    { "id": "c", "text": "bom" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "aguardar em silêncio",
+   "feedbackCorrect": "Aguardar em silêncio é esperar sem desespero pela salvação do Senhor.",
+   "feedbackWrong": {
+    "b": "A salvação é o que se aguarda; o modo de aguardar vem antes.",
+    "c": "\"Bom\" avalia o aguardar; o modo de aguardar é outra palavra."
+   },
+   "hint": "Procure o modo de aguardar.",
+   "learningObjective": "Reconhecer o modo de aguardar a salvação.",
+   "evidence": ["Lamentações 3:26"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Lamentações 3:26 se liga a Lamentações 3:25?",
+   "verseRef": "Lamentações 3:25–26",
+   "options": [
+    { "id": "a", "text": "Esperar em Deus leva a aguardar sem desespero" },
+    { "id": "b", "text": "A salvação dispensa buscar o Senhor" },
+    { "id": "c", "text": "O silêncio prova abandono de Deus" },
+    { "id": "d", "text": "Buscar o Senhor exclui esperar nele" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "É bom aguardar em silêncio",
+   "feedbackCorrect": "Quem espera e busca o Senhor pode aguardar sem desespero a sua salvação.",
+   "feedbackWrong": {
+    "b": "Buscar o Senhor faz parte do esperar; nada dispensa essa busca.",
+    "c": "O silêncio é confiança de quem espera, não sinal de abandono.",
+    "d": "Nos dois versículos, buscar e esperar andam juntos."
+   },
+   "hint": "Pense em quem espera em 3:25.",
+   "learningObjective": "Relacionar a espera de 3:25 com o silêncio de 3:26.",
+   "evidence": ["Lamentações 3:25–26"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Lamentações 3:24–25?",
+   "verseRef": "Lamentações 3:24–25",
+   "options": [
+    { "id": "a", "text": "Deus é tudo o que o poeta tem" },
+    { "id": "b", "text": "Ele decide esperar no Senhor" },
+    { "id": "c", "text": "O Senhor é bom para quem o busca" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "O Senhor é a minha porção",
+   "feedbackCorrect": "O Senhor é a porção, o poeta espera, e Deus é bom para quem o busca.",
+   "feedbackWrong": {
+    "default": "Comece pela porção; a bondade para quem busca fecha o trecho."
+   },
+   "hint": "A bondade de Deus fecha o trecho.",
+   "learningObjective": "Compreender o movimento da porção à busca.",
+   "evidence": ["Lamentações 3:24–25"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lamentações 3:21, o que o poeta encontra ao trazer à memória?",
+   "verseRef": "Lamentações 3:21",
+   "options": [
+    { "id": "a", "text": "esperança" },
+    { "id": "b", "text": "consolo" },
+    { "id": "c", "text": "resposta" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "encontro esperança",
+   "feedbackCorrect": "Trazer à memória o que Deus é faz o poeta encontrar esperança.",
+   "feedbackWrong": {
+    "b": "Consolo é próximo, mas a palavra do texto nomeia o que ele encontra.",
+    "c": "Não é uma resposta imediata; é esperança para continuar esperando."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Compreender o fruto de trazer à memória.",
+   "evidence": ["Lamentações 3:21"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lamentações 3:23 a Salmos 90:14?",
+   "verseRef": "Lamentações 3:23",
+   "passageA": { "ref": "Lamentações 3:23" },
+   "passageB": { "ref": "Salmos 90:14" },
+   "options": [
+    { "id": "a", "text": "Bem de Deus a cada manhã" },
+    { "id": "b", "text": "A noite apaga a bondade" },
+    { "id": "c", "text": "Deus atrasa sua bondade" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Renovam-se a cada manhã",
+   "feedbackCorrect": "Nos dois textos, a manhã é tempo de receber de novo o bem de Deus.",
+   "feedbackWrong": {
+    "b": "A bondade não é apagada; ela se renova a cada manhã.",
+    "c": "Deus não atrasa: suas misericórdias se renovam de manhã."
+   },
+   "hint": "Compare o que acontece pela manhã.",
+   "learningObjective": "Relacionar a manhã renovada em Lamentações e nos Salmos.",
+   "evidence": ["Lamentações 3:23", "Salmos 90:14"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Lamentações 3:26, aguardar em silêncio significa que o poeta desistiu de Deus.",
+   "verseRef": "Lamentações 3:26",
+   "correctOptionId": "false",
+   "evidenceSpan": "aguardar em silêncio a salvação do Senhor",
+   "feedbackCorrect": "Aguardar em silêncio é confiança: o poeta espera a salvação do Senhor.",
+   "feedbackWrong": {
+    "true": "Ele aguarda a salvação do Senhor; isso é esperar, não desistir."
+   },
+   "hint": "Veja o que o poeta aguarda.",
+   "learningObjective": "Interpretar o silêncio como confiança, não desistência.",
+   "evidence": ["Lamentações 3:26"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lamentações 3:24, toque o trecho que mostra o que o Senhor é para o poeta.",
+   "verseRef": "Lamentações 3:24",
+   "options": [
+    { "id": "a", "text": "minha porção" },
+    { "id": "b", "text": "minha alma" },
+    { "id": "c", "text": "esperarei nele" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Senhor é a minha porção",
+   "feedbackCorrect": "O Senhor é a porção do poeta: ele não espera um bem, espera uma Pessoa.",
+   "feedbackWrong": {
+    "b": "A alma é quem declara; o que o Senhor é vem antes.",
+    "c": "Esperar é a decisão; o que o Senhor é para ele vem no começo."
+   },
+   "hint": "Procure o que o Senhor é, não o que o poeta faz.",
+   "learningObjective": "Sustentar com o texto o Senhor como porção.",
+   "evidence": ["Lamentações 3:24"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lamentações 3:24 sustenta sobre ter o Senhor como porção?",
+   "verseRef": "Lamentações 3:24",
+   "options": [
+    { "id": "a", "text": "Quem tem o Senhor nada mais espera" },
+    { "id": "b", "text": "O Senhor basta, por isso se espera nele" },
+    { "id": "c", "text": "A porção é a terra prometida apenas" },
+    { "id": "d", "text": "Esperar é sinal de pouca fé" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "O Senhor é a minha porção",
+   "feedbackCorrect": "Se o Senhor é a porção, ele basta; por isso o poeta espera nele.",
+   "feedbackWrong": {
+    "a": "O poeta espera justamente porque o Senhor é a sua porção.",
+    "c": "A porção aqui é o próprio Senhor, não só uma terra.",
+    "d": "Esperar nele é o modo de confiar, não falta de fé."
+   },
+   "hint": "Veja a decisão que nasce de ter o Senhor.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre a porção.",
+   "evidence": ["Lamentações 3:24"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da espera que começa em Lamentações 3:23?",
+   "verseRef": "Lamentações 3:23",
+   "options": [
+    { "id": "a", "text": "Deus renova suas misericórdias de manhã" },
+    { "id": "b", "text": "O salmista pede benignidade ao amanhecer" },
+    { "id": "c", "text": "Quem semeia chorando colhe com alegria" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Renovam-se a cada manhã",
+   "feedbackCorrect": "A manhã renovada sustenta a espera de quem semeia chorando e colherá.",
+   "feedbackWrong": {
+    "default": "Siga a Bíblia: Lamentações, Salmos 90 e, depois, Salmos 126."
+   },
+   "hint": "Siga a ordem: luto, pedido e colheita.",
+   "learningObjective": "Ver a espera de Lamentações como fio que chega à colheita.",
+   "evidence": ["Lamentações 3:23", "Salmos 90:14", "Salmos 126:5"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lamentações 3:22, o que as misericórdias de Deus não têm?",
+   "verseRef": "Lamentações 3:22",
+   "options": [
+    { "id": "a", "text": "fim" },
+    { "id": "b", "text": "começo" },
+    { "id": "c", "text": "pausa" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não têm fim",
+   "feedbackCorrect": "As misericórdias não têm fim: Deus não se esgota no tempo do luto.",
+   "feedbackWrong": {
+    "b": "Elas têm começo em Deus; o que não têm é fim.",
+    "c": "Não há pausa: elas se renovam a cada manhã."
+   },
+   "hint": "Leia a última parte com atenção.",
+   "learningObjective": "Lembrar o termo que mostra misericórdias sem fim.",
+   "evidence": ["Lamentações 3:22"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lamentações 3:25 a Isaías 54:7–8?",
+   "verseRef": "Lamentações 3:25",
+   "passageA": { "ref": "Lamentações 3:25" },
+   "passageB": { "ref": "Isaías 54:7–8" },
+   "options": [
+    { "id": "a", "text": "Abandono breve, misericórdia eterna" },
+    { "id": "b", "text": "Deus abandona para sempre" },
+    { "id": "c", "text": "A misericórdia já terminou" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Bom é o Senhor para os que nele esperam",
+   "feedbackCorrect": "Isaías confirma: o abandono é breve, mas a misericórdia de Deus é eterna.",
+   "feedbackWrong": {
+    "b": "Isaías fala de um breve momento, não de abandono para sempre.",
+    "c": "A misericórdia é eterna; não terminou para quem espera."
+   },
+   "hint": "Compare a duração do abandono e da misericórdia.",
+   "learningObjective": "Ligar a bondade para quem espera à misericórdia eterna.",
+   "evidence": ["Lamentações 3:25", "Isaías 54:7–8"]
+  }
+ ]
+}

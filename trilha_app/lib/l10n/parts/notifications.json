@@ -212,5 +212,41 @@
     "placeholders": {
       "count": "int"
     }
+  },
+  "widgetKeepStreak": {
+    "pt": "Mantenha sua sequência",
+    "en": "Keep your streak",
+    "es": "Mantén tu racha"
+  },
+  "widgetStartStreak": {
+    "pt": "Comece sua sequência",
+    "en": "Start your streak",
+    "es": "Empieza tu racha"
+  },
+  "widgetStreakSafe": {
+    "pt": "Sequência garantida hoje",
+    "en": "Streak safe today",
+    "es": "Racha asegurada hoy"
+  },
+  "widgetBackToTrail": {
+    "pt": "Volte para a trilha",
+    "en": "Back to the trail",
+    "es": "Vuelve a la ruta"
+  },
+  "widgetDaysInRow": {
+    "pt": "{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}",
+    "en": "{count, plural, =1{1 day in a row} other{{count} days in a row}}",
+    "es": "{count, plural, =1{1 día seguido} other{{count} días seguidos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "widgetScenesLeft": {
+    "pt": "{count, plural, =1{falta 1 cena} other{faltam {count} cenas}}",
+    "en": "{count, plural, =1{1 scene left} other{{count} scenes left}}",
+    "es": "{count, plural, =1{falta 1 escena} other{faltan {count} escenas}}",
+    "placeholders": {
+      "count": "int"
+    }
   }
 }

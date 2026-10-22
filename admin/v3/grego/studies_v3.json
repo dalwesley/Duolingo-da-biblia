@@ -1,0 +1,454 @@
+{
+  "studies": {
+    "gr-01-novo": {
+      "slug": "gr-01-novo",
+      "passageRef": "João 1:14–17",
+      "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai. João testemunhou a respeito d'Ele e exclamou: \"Este é aquele de quem eu falei: o que vem depois de mim tem, contudo, a primazia, porquanto já existia antes de mim. E todos nós temos recebido da sua plenitude, graça sobre graça. Porque a lei foi dada por intermédio de Moisés; a graça e a verdade chegaram por meio de Jesus Cristo.",
+      "passages": [
+        {
+          "ref": "João 1:11–14",
+          "text": "Veio para o que era seu, mas os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome; Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+        },
+        {
+          "ref": "João 1:16–17",
+          "text": "E todos nós temos recebido da sua plenitude, graça sobre graça. Porque a lei foi dada por intermédio de Moisés; a graça e a verdade chegaram por meio de Jesus Cristo."
+        }
+      ],
+      "context": "O Novo Testamento foi escrito em grego comum, a língua partilhada no Mediterrâneo. Isso ajudava a mensagem a circular entre povos diferentes. Aqui João apresenta o Verbo feito carne.",
+      "keyword": "Verbo",
+      "keywordGloss": "No texto de João, o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade.",
+      "focusQuestion": "O que muda para você saber que o Verbo veio habitar entre nós?",
+      "reflectionPrompts": [
+        "O Verbo entre nós",
+        "Filhos de Deus pela fé",
+        "Graça sobre graça"
+      ],
+      "facts": [
+        {
+          "text": "Os seus não receberam o Verbo que veio para eles.",
+          "evidenceRef": "João 1:11",
+          "evidenceSpan": "os seus não o receberam"
+        },
+        {
+          "text": "Quem recebe o Verbo recebe o poder de se tornar filho de Deus.",
+          "evidenceRef": "João 1:12",
+          "evidenceSpan": "deu-lhes o poder de se tornarem filhos de Deus"
+        },
+        {
+          "text": "Ser filho de Deus não nasce da vontade do homem, mas de Deus.",
+          "evidenceRef": "João 1:13",
+          "evidenceSpan": "nem da vontade do homem, mas de Deus"
+        },
+        {
+          "text": "O Verbo se fez carne e habitou entre nós.",
+          "evidenceRef": "João 1:14",
+          "evidenceSpan": "E o Verbo se fez carne e habitou entre nós"
+        },
+        {
+          "text": "Todos recebemos da plenitude do Verbo, graça sobre graça.",
+          "evidenceRef": "João 1:16",
+          "evidenceSpan": "graça sobre graça"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Verbo",
+          "gloss": "Aquele que se fez carne e habitou entre nós, cheio de graça e de verdade."
+        },
+        {
+          "term": "graça",
+          "gloss": "Dom recebido da plenitude do Verbo, graça sobre graça."
+        },
+        {
+          "term": "filhos de Deus",
+          "gloss": "Aqueles que recebem o Verbo e creem no seu nome."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Verbo é rejeitado pelos seus",
+          "evidenceRef": "João 1:11"
+        },
+        {
+          "label": "Quem o recebe torna-se filho",
+          "evidenceRef": "João 1:12"
+        },
+        {
+          "label": "O Verbo habita entre nós",
+          "evidenceRef": "João 1:14"
+        },
+        {
+          "label": "Graça e verdade em Jesus Cristo",
+          "evidenceRef": "João 1:17"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "À rejeição dos seus segue a acolhida de quem recebe o Verbo e crê.",
+          "marker": "Mas",
+          "evidenceRef": "João 1:12"
+        },
+        {
+          "kind": "resultado",
+          "text": "Receber o Verbo resulta em tornar-se filho de Deus.",
+          "marker": null,
+          "evidenceRef": "João 1:12"
+        },
+        {
+          "kind": "sequência",
+          "text": "Da plenitude do Verbo, todos recebem graça sobre graça.",
+          "marker": null,
+          "evidenceRef": "João 1:16"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 1:1",
+          "bridge": "O Verbo no princípio",
+          "text": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+        },
+        {
+          "ref": "Efésios 2:8",
+          "bridge": "Salvação pela graça mediante fé",
+          "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+        },
+        {
+          "ref": "Romanos 8:15",
+          "bridge": "Filhos adotados por Deus",
+          "text": "Pois vocês não receberam um espírito de escravidão, para voltarem a viver com medo, mas receberam o espírito de adoção, pelo qual clamamos: Aba, Pai."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Ser filho de Deus depende do sangue ou da família de nascimento.",
+          "why": "O texto nega essa origem e afirma que esse nascimento vem de Deus (1:13)."
+        },
+        {
+          "text": "O Verbo apenas pareceu humano, sem se fazer carne de verdade.",
+          "why": "O texto afirma que o Verbo se fez carne e habitou entre nós (1:14)."
+        },
+        {
+          "text": "A graça dispensa crer no nome do Verbo.",
+          "why": "O texto liga o tornar-se filho de Deus aos que creem no seu nome (1:12)."
+        }
+      ],
+      "centralInsight": "O Novo Testamento em grego comum anuncia o Verbo feito carne para todos",
+      "anchorQuestion": "Segundo João 1:14, o que o Verbo se fez e onde habitou?",
+      "relatedVerses": [
+        {
+          "reference": "João 1:1",
+          "reason": "O Verbo no princípio"
+        },
+        {
+          "reference": "Efésios 2:8",
+          "reason": "Salvação pela graça mediante fé"
+        },
+        {
+          "reference": "Romanos 8:15",
+          "reason": "Filhos adotados por Deus"
+        }
+      ]
+    },
+    "gr-02-evangelho": {
+      "slug": "gr-02-evangelho",
+      "passageRef": "Romanos 1:14–17",
+      "passageText": "Eu sou devedor tanto a gregos como a bárbaros, tanto a sábios como a ignorantes. Por isso, estou preparado para anunciar o evangelho também a vocês que estão em Roma. Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego. Porque nele é revelada a justiça de Deus, de fé em fé, como está escrito: \"O justo viverá pela fé.\"",
+      "passages": [
+        {
+          "ref": "Romanos 1:14–16",
+          "text": "Eu sou devedor tanto a gregos como a bárbaros, tanto a sábios como a ignorantes. Por isso, estou preparado para anunciar o evangelho também a vocês que estão em Roma. Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego."
+        },
+        {
+          "ref": "Romanos 1:17–18",
+          "text": "Porque nele é revelada a justiça de Deus, de fé em fé, como está escrito: \"O justo viverá pela fé.\" Porque a ira de Deus se revela do céu contra toda impiedade e injustiça dos homens que detêm a verdade pela injustiça."
+        }
+      ],
+      "context": "Paulo escreve a crentes em Roma que ainda não visitou. Antes de explicar o evangelho, ele diz que não se envergonha dele. O grego comum ajudava essa carta a circular no império.",
+      "keyword": "evangelho",
+      "keywordGloss": "Boas-novas de Deus, poder dele para a salvação de todo aquele que crê.",
+      "focusQuestion": "De que forma o evangelho para todos muda o seu olhar para outras pessoas?",
+      "reflectionPrompts": [
+        "Evangelho sem vergonha",
+        "Poder para todo crente",
+        "O justo vive pela fé"
+      ],
+      "facts": [
+        {
+          "text": "Paulo se diz devedor tanto a gregos como a bárbaros.",
+          "evidenceRef": "Romanos 1:14",
+          "evidenceSpan": "tanto a gregos como a bárbaros"
+        },
+        {
+          "text": "Paulo está preparado para anunciar o evangelho em Roma.",
+          "evidenceRef": "Romanos 1:15",
+          "evidenceSpan": "estou preparado para anunciar o evangelho"
+        },
+        {
+          "text": "Paulo não se envergonha do evangelho.",
+          "evidenceRef": "Romanos 1:16",
+          "evidenceSpan": "não me envergonho do evangelho"
+        },
+        {
+          "text": "O evangelho é poder de Deus para a salvação de todo o que crê.",
+          "evidenceRef": "Romanos 1:16",
+          "evidenceSpan": "poder de Deus para a salvação de todo aquele que crê"
+        },
+        {
+          "text": "O justo viverá pela fé.",
+          "evidenceRef": "Romanos 1:17",
+          "evidenceSpan": "O justo viverá pela fé"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "evangelho",
+          "gloss": "Mensagem que Paulo anuncia sem vergonha, poder de Deus para salvar."
+        },
+        {
+          "term": "salvação",
+          "gloss": "Aquilo para que o evangelho é poder de Deus em favor de quem crê."
+        },
+        {
+          "term": "fé",
+          "gloss": "Modo de viver do justo diante da justiça de Deus revelada."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Paulo devedor a todos os povos",
+          "evidenceRef": "Romanos 1:14"
+        },
+        {
+          "label": "Paulo pronto para anunciar em Roma",
+          "evidenceRef": "Romanos 1:15"
+        },
+        {
+          "label": "Evangelho poder para quem crê",
+          "evidenceRef": "Romanos 1:16"
+        },
+        {
+          "label": "Justiça revelada de fé em fé",
+          "evidenceRef": "Romanos 1:17"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Paulo está preparado com o propósito de anunciar o evangelho também em Roma.",
+          "marker": "para",
+          "evidenceRef": "Romanos 1:15"
+        },
+        {
+          "kind": "causa",
+          "text": "Paulo não se envergonha porque o evangelho é poder de Deus para salvar.",
+          "marker": "Porque",
+          "evidenceRef": "Romanos 1:16"
+        },
+        {
+          "kind": "resultado",
+          "text": "A justiça revelada no evangelho conduz o justo a viver pela fé.",
+          "marker": null,
+          "evidenceRef": "Romanos 1:17"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Marcos 1:15",
+          "bridge": "Jesus anuncia as boas-novas",
+          "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+        },
+        {
+          "ref": "Isaías 52:7",
+          "bridge": "Boas-novas anunciadas ao povo",
+          "text": "Quão formosos são sobre os montes os pés daquele que traz as boas-novas, que faz ecoar a paz; que anuncia o que é bom, que faz ouvir a salvação; quem diz a Sião: \"O teu Deus reina!\""
+        },
+        {
+          "ref": "Habacuque 2:4",
+          "bridge": "O justo vive pela fé",
+          "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O evangelho é só para um povo ou para pessoas cultas.",
+          "why": "Paulo cita gregos e bárbaros, sábios e ignorantes, judeu e grego (1:14–16)."
+        },
+        {
+          "text": "O poder do evangelho vem da eloquência de quem anuncia.",
+          "why": "O texto chama o evangelho de poder de Deus, não de poder humano (1:16)."
+        },
+        {
+          "text": "Viver pela fé dispensa a justiça de Deus revelada.",
+          "why": "A fé aparece ligada à justiça de Deus revelada no evangelho (1:17)."
+        }
+      ],
+      "centralInsight": "O evangelho em língua comum é poder de Deus para todo o que crê",
+      "anchorQuestion": "Segundo Romanos 1:16, para quem o evangelho é poder de Deus?",
+      "relatedVerses": [
+        {
+          "reference": "Marcos 1:15",
+          "reason": "Jesus anuncia as boas-novas"
+        },
+        {
+          "reference": "Isaías 52:7",
+          "reason": "Boas-novas anunciadas ao povo"
+        },
+        {
+          "reference": "Habacuque 2:4",
+          "reason": "O justo vive pela fé"
+        }
+      ]
+    },
+    "gr-boss": {
+      "slug": "gr-boss",
+      "passageRef": "João 1:14",
+      "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+      "passages": [
+        {
+          "ref": "João 1:12–14",
+          "text": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome; Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+        },
+        {
+          "ref": "Romanos 1:15–17",
+          "text": "Por isso, estou preparado para anunciar o evangelho também a vocês que estão em Roma. Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego. Porque nele é revelada a justiça de Deus, de fé em fé, como está escrito: \"O justo viverá pela fé.\""
+        }
+      ],
+      "context": "Este desafio revisa João 1 e Romanos 1. O Verbo feito carne e o evangelho anunciado a todos mostram boas-novas que alcançam povos e línguas diferentes, sem vergonha.",
+      "keyword": "evangelho",
+      "keywordGloss": "Boas-novas anunciadas por Paulo sem vergonha, poder de Deus para todo o que crê.",
+      "focusQuestion": "Como o Verbo entre nós e o evangelho para todos mudam a sua semana?",
+      "reflectionPrompts": [
+        "Verbo feito carne",
+        "Evangelho para todos",
+        "Justo vive pela fé"
+      ],
+      "facts": [
+        {
+          "text": "O Verbo se fez carne e habitou entre nós.",
+          "evidenceRef": "João 1:14",
+          "evidenceSpan": "E o Verbo se fez carne e habitou entre nós"
+        },
+        {
+          "text": "Quem recebe o Verbo torna-se filho de Deus.",
+          "evidenceRef": "João 1:12",
+          "evidenceSpan": "deu-lhes o poder de se tornarem filhos de Deus"
+        },
+        {
+          "text": "Paulo não se envergonha do evangelho.",
+          "evidenceRef": "Romanos 1:16",
+          "evidenceSpan": "não me envergonho do evangelho"
+        },
+        {
+          "text": "O evangelho é poder de Deus para a salvação de quem crê.",
+          "evidenceRef": "Romanos 1:16",
+          "evidenceSpan": "poder de Deus para a salvação de todo aquele que crê"
+        },
+        {
+          "text": "O justo viverá pela fé.",
+          "evidenceRef": "Romanos 1:17",
+          "evidenceSpan": "O justo viverá pela fé"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Verbo",
+          "gloss": "Aquele que se fez carne e habitou entre nós, cheio de graça."
+        },
+        {
+          "term": "evangelho",
+          "gloss": "Mensagem que Paulo anuncia, poder de Deus para a salvação."
+        },
+        {
+          "term": "fé",
+          "gloss": "Modo de viver do justo diante da justiça revelada."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Quem recebe torna-se filho de Deus",
+          "evidenceRef": "João 1:12"
+        },
+        {
+          "label": "O Verbo habita entre nós",
+          "evidenceRef": "João 1:14"
+        },
+        {
+          "label": "Paulo pronto para anunciar em Roma",
+          "evidenceRef": "Romanos 1:15"
+        },
+        {
+          "label": "Justiça revelada de fé em fé",
+          "evidenceRef": "Romanos 1:17"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "À rejeição dos seus segue a acolhida de quem recebe o Verbo.",
+          "marker": "mas",
+          "evidenceRef": "João 1:11"
+        },
+        {
+          "kind": "causa",
+          "text": "Paulo não se envergonha porque o evangelho é poder de Deus.",
+          "marker": "Porque",
+          "evidenceRef": "Romanos 1:16"
+        },
+        {
+          "kind": "propósito",
+          "text": "Paulo está preparado para anunciar o evangelho também em Roma.",
+          "marker": "para",
+          "evidenceRef": "Romanos 1:15"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 1:1",
+          "bridge": "O Verbo no princípio",
+          "text": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+        },
+        {
+          "ref": "Marcos 1:15",
+          "bridge": "Jesus anuncia as boas-novas",
+          "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+        },
+        {
+          "ref": "Habacuque 2:4",
+          "bridge": "O justo vive pela fé",
+          "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Verbo não se fez carne de verdade, apenas pareceu humano.",
+          "why": "João afirma que o Verbo se fez carne e habitou entre nós (Jo 1:14)."
+        },
+        {
+          "text": "O evangelho é só para um povo ou para pessoas cultas.",
+          "why": "Paulo inclui judeu e grego, sábios e ignorantes (Rm 1:14–16)."
+        },
+        {
+          "text": "Tornar-se filho de Deus nasce do sangue ou da vontade humana.",
+          "why": "João nega essa origem e afirma que esse nascimento vem de Deus (Jo 1:13)."
+        }
+      ],
+      "centralInsight": "O que este conceito revela sobre Deus?",
+      "anchorQuestion": "O que João 1:14 e Romanos 1:16 afirmam juntos sobre as boas-novas?",
+      "relatedVerses": [
+        {
+          "reference": "João 1:1",
+          "reason": "O Verbo no princípio"
+        },
+        {
+          "reference": "Marcos 1:15",
+          "reason": "Jesus anuncia as boas-novas"
+        },
+        {
+          "reference": "Habacuque 2:4",
+          "reason": "O justo vive pela fé"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,707 @@
+{
+ "study": {
+  "passageRef": "Amós 3:1–5",
+  "passages": [
+   {
+    "ref": "Amós 3:1–5"
+   }
+  ],
+  "context": "Deus lembra que tirou Israel do Egito e o conheceu de modo único entre os povos. Essa proximidade não vira passe livre: ela aumenta a cobrança.",
+  "keyword": "Conhecer",
+  "keywordGloss": "Conhecer, aqui, é relação próxima de aliança, não só saber informações.",
+  "focusQuestion": "Como ser conhecido por Deus muda o peso das suas escolhas?",
+  "reflectionPrompts": [
+   "Eleição que cobra",
+   "Conhecido por Deus",
+   "Responsabilidade maior"
+  ],
+  "facts": [
+   {
+    "text": "Deus chama os filhos de Israel a ouvir a sua palavra.",
+    "evidenceRef": "Amós 3:1",
+    "evidenceSpan": "Ouvi a palavra que o Senhor fala contra vós"
+   },
+   {
+    "text": "De todas as gerações da terra, Deus conheceu somente Israel.",
+    "evidenceRef": "Amós 3:2",
+    "evidenceSpan": "somente a vós eu conheci"
+   },
+   {
+    "text": "Deus punirá todas as iniquidades de Israel sobre ele.",
+    "evidenceRef": "Amós 3:2",
+    "evidenceSpan": "punirei todas as vossas iniquidades sobre vós"
+   },
+   {
+    "text": "Dois só andam juntos se estiverem de acordo.",
+    "evidenceRef": "Amós 3:3",
+    "evidenceSpan": "Andarão dois juntos, se não estiverem de acordo"
+   },
+   {
+    "text": "O leão só ruge na floresta quando tem presa.",
+    "evidenceRef": "Amós 3:4",
+    "evidenceSpan": "O leão rugirá na floresta sem que tenha presa"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "conheci",
+    "gloss": "Relação de aliança: Deus escolheu estar perto deste povo."
+   },
+   {
+    "term": "iniquidades",
+    "gloss": "Pecados e injustiças concretas que Deus não ignora."
+   },
+   {
+    "term": "acordo",
+    "gloss": "Caminhar junto exige estar alinhado, ensina a imagem de 3:3."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus chama Israel a ouvir",
+    "evidenceRef": "Amós 3:1"
+   },
+   {
+    "label": "Deus lembra a eleição única",
+    "evidenceRef": "Amós 3:2"
+   },
+   {
+    "label": "Deus anuncia punição das iniquidades",
+    "evidenceRef": "Amós 3:2"
+   },
+   {
+    "label": "Deus ilustra com perguntas do dia a dia",
+    "evidenceRef": "Amós 3:3–5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Porque Deus conheceu só Israel, ele punirá as iniquidades deste povo.",
+    "marker": "portanto",
+    "evidenceRef": "Amós 3:2"
+   },
+   {
+    "kind": "causa",
+    "text": "Deus fez Israel subir do Egito, e por isso fala a este povo de modo direto.",
+    "marker": null,
+    "evidenceRef": "Amós 3:1"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois do anúncio, perguntas sobre andar junto e leão ilustram a lógica.",
+    "marker": null,
+    "evidenceRef": "Amós 3:3"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Deuteronômio 7:6",
+    "bridge": "Povo escolhido do Senhor"
+   },
+   {
+    "ref": "Lucas 12:48",
+    "bridge": "Muito dado, muito cobrado"
+   },
+   {
+    "ref": "Êxodo 19:5",
+    "bridge": "Povo particular do Senhor"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Ser escolhido por Deus é privilégio sem nenhuma cobrança.",
+    "why": "O próprio versículo liga o conhecer à punição das iniquidades."
+   },
+   {
+    "text": "Conhecer é só Deus saber informações sobre Israel.",
+    "why": "Entre todas as gerações, só este povo foi conhecido assim: relação, não dado."
+   },
+   {
+    "text": "A punição prova que Deus nunca escolheu Israel.",
+    "why": "A punição vem justamente porque ele conheceu este povo de perto."
+   }
+  ],
+  "centralInsight": "Eleição aumenta a responsabilidade",
+  "anchorQuestion": "Por que Deus diz que punirá as iniquidades justamente do povo que conheceu?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+   "verseRef": "Amós 3:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "somente a vós eu conheci",
+   "feedbackCorrect": "Só Israel foi conhecido assim entre as gerações da terra.",
+   "feedbackWrong": {
+    "false": "O texto é claro: somente a vós eu conheci."
+   },
+   "hint": "Leia quem Deus conheceu em 3:2.",
+   "learningObjective": "Observar a eleição única de Israel.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Amós 3:2, toque quem Deus conheceu de modo único.",
+   "verseRef": "Amós 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "da terra"
+    },
+    {
+     "id": "b",
+     "text": "a vós"
+    },
+    {
+     "id": "c",
+     "text": "todas as gerações"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "somente a vós eu conheci",
+   "feedbackCorrect": "É Israel, o povo que ouve a palavra: somente a vós.",
+   "feedbackWrong": {
+    "a": "Da terra são todas as gerações comparadas, não o conhecido.",
+    "c": "Todas as gerações são o contraste; uma só foi conhecida."
+   },
+   "hint": "Procure o pronome depois de somente.",
+   "learningObjective": "Identificar Israel como o povo conhecido.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Amós 3:1, contra quem o Senhor fala a palavra ouvida?",
+   "verseRef": "Amós 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Contra os filhos de Israel"
+    },
+    {
+     "id": "b",
+     "text": "Contra os povos vizinhos"
+    },
+    {
+     "id": "c",
+     "text": "Contra os reis do Egito"
+    },
+    {
+     "id": "d",
+     "text": "Contra os pastores de Judá"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fala contra vós, filhos de Israel",
+   "feedbackCorrect": "A palavra é contra os filhos de Israel, o povo tirado do Egito.",
+   "feedbackWrong": {
+    "b": "Os vizinhos não são o alvo nomeado neste versículo.",
+    "c": "O Egito é o passado de onde Deus tirou o povo.",
+    "d": "Pastores não são citados como alvo aqui."
+   },
+   "hint": "Veja o nome dado ao povo no versículo.",
+   "learningObjective": "Observar o destinatário da palavra em 3:1.",
+   "evidence": [
+    "Amós 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Amós 3:2 na ordem do texto.",
+   "verseRef": "Amós 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "De todas as gerações da terra"
+    },
+    {
+     "id": "b",
+     "text": "somente a vós eu conheci"
+    },
+    {
+     "id": "c",
+     "text": "punirei todas as vossas iniquidades sobre vós"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "somente a vós eu conheci",
+   "feedbackCorrect": "Eleição única primeiro; punição anunciada depois.",
+   "feedbackWrong": {
+    "default": "Comece pelas gerações da terra; a punição fecha."
+   },
+   "hint": "O versículo começa comparando gerações.",
+   "learningObjective": "Reconhecer a sequência de Amós 3:2.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Amós 3:3, dois só andam juntos se estiverem de quê?",
+   "verseRef": "Amós 3:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "laço"
+    },
+    {
+     "id": "b",
+     "text": "acordo"
+    },
+    {
+     "id": "c",
+     "text": "covil"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "se não estiverem de acordo",
+   "feedbackCorrect": "Andar junto pede estarem alinhados um com o outro.",
+   "feedbackWrong": {
+    "a": "Laço é a armadilha da ave em 3:5, não o andar junto.",
+    "c": "Covil é o lugar do leão em 3:4, não a condição aqui."
+   },
+   "hint": "É a condição para caminhar lado a lado.",
+   "learningObjective": "Lembrar a imagem do andar juntos.",
+   "evidence": [
+    "Amós 3:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Amós 3:1 comunica que se liga a este contexto?",
+   "verseRef": "Amós 3:1",
+   "passageA": {
+    "ref": "Amós 3:1"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus fez Israel subir da terra do Egito e agora lhe fala."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Povo tirado do Egito"
+    },
+    {
+     "id": "b",
+     "text": "Povo esquecido por Deus"
+    },
+    {
+     "id": "c",
+     "text": "Povo igual ao Egito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que Ele fez subir da terra do Egito",
+   "feedbackCorrect": "A palavra chega ao povo que Deus tirou do Egito.",
+   "feedbackWrong": {
+    "b": "Deus fala a ele justamente por conhecê-lo de perto.",
+    "c": "Israel foi tirado do Egito, não se tornou igual a ele."
+   },
+   "hint": "Veja de onde Deus fez o povo subir.",
+   "learningObjective": "Ligar 3:1 ao povo tirado do Egito.",
+   "evidence": [
+    "Amós 3:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Amós 3:2, o fato de Deus conhecer Israel é apresentado como razão para punir suas iniquidades.",
+   "verseRef": "Amós 3:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+   "feedbackCorrect": "A ligação é direta: conheci, portanto punirei as iniquidades.",
+   "feedbackWrong": {
+    "false": "A palavra portanto liga o conhecer à punição."
+   },
+   "hint": "Repare na palavra que liga as duas partes.",
+   "learningObjective": "Compreender a ligação entre eleição e punição.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+   "verseRef": "Amós 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "somente"
+    },
+    {
+     "id": "b",
+     "text": "portanto"
+    },
+    {
+     "id": "c",
+     "text": "sobre"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+   "feedbackCorrect": "Essa palavra mostra o resultado de ser conhecido por Deus.",
+   "feedbackWrong": {
+    "a": "Somente destaca a eleição; a consequência vem depois.",
+    "c": "Sobre indica sobre quem cai a punição, não a ligação."
+   },
+   "hint": "Procure a palavra logo antes da punição.",
+   "learningObjective": "Reconhecer o marcador de resultado em 3:2.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Amós 3:2 se relaciona com a saída do Egito citada em 3:1?",
+   "verseRef": "Amós 3:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "A eleição aumenta a cobrança sobre Israel"
+    },
+    {
+     "id": "b",
+     "text": "A eleição dispensa Israel de responder"
+    },
+    {
+     "id": "c",
+     "text": "O Egito torna Israel igual aos vizinhos"
+    },
+    {
+     "id": "d",
+     "text": "O passado apaga as iniquidades atuais"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente a vós eu conheci",
+   "feedbackCorrect": "Tirado do Egito e conhecido, Israel é cobrado por isso.",
+   "feedbackWrong": {
+    "b": "A resposta cobrada é justamente punir as iniquidades.",
+    "c": "O texto destaca Israel como único conhecido, não igual.",
+    "d": "As iniquidades atuais serão punidas, não apagadas."
+   },
+   "hint": "Veja o efeito do portanto em 3:2.",
+   "learningObjective": "Relacionar êxodo, eleição e cobrança.",
+   "evidence": [
+    "Amós 3:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a palavra em Amós 3:1 a 2?",
+   "verseRef": "Amós 3:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus chama Israel a ouvir a palavra"
+    },
+    {
+     "id": "b",
+     "text": "Deus lembra que só o conheceu"
+    },
+    {
+     "id": "c",
+     "text": "Deus anuncia punição das iniquidades"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Ouvi a palavra que o Senhor fala contra vós",
+   "feedbackCorrect": "Chamado a ouvir, lembrança da eleição e anúncio de punição.",
+   "feedbackWrong": {
+    "default": "Comece pelo chamado a ouvir; a punição fecha."
+   },
+   "hint": "O chamado a ouvir abre o trecho.",
+   "learningObjective": "Compreender os movimentos de 3:1 a 2.",
+   "evidence": [
+    "Amós 3:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Amós 3:4, o leão só ruge na floresta quando tem o quê?",
+   "verseRef": "Amós 3:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "armadilha"
+    },
+    {
+     "id": "b",
+     "text": "presa"
+    },
+    {
+     "id": "c",
+     "text": "ave"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "sem que tenha presa",
+   "feedbackCorrect": "A imagem diz que todo rugido tem uma causa real.",
+   "feedbackWrong": {
+    "a": "Armadilha é da ave em 3:5, não do leão aqui.",
+    "c": "Ave é a imagem do versículo seguinte, não desta."
+   },
+   "hint": "Pense no motivo do rugido do leão.",
+   "learningObjective": "Compreender a lógica das imagens de 3:4.",
+   "evidence": [
+    "Amós 3:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Amós 3:2 a Deuteronômio 7:6?",
+   "verseRef": "Amós 3:2",
+   "passageA": {
+    "ref": "Amós 3:2"
+   },
+   "passageB": {
+    "ref": "Deuteronômio 7:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Povo escolhido do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Povo maior que os outros"
+    },
+    {
+     "id": "c",
+     "text": "Povo sem lei nem cobrança"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente a vós eu conheci",
+   "feedbackCorrect": "Os dois textos chamam Israel de povo separado para Deus.",
+   "feedbackWrong": {
+    "b": "A escolha não vem de Israel ser maior que os outros.",
+    "c": "Escolhido, o povo recebe lei e cobrança, não dispensa."
+   },
+   "hint": "Veja como Deuteronômio nomeia Israel para Deus.",
+   "learningObjective": "Relacionar a eleição em Amós e Deuteronômio.",
+   "evidence": [
+    "Amós 3:2",
+    "Deuteronômio 7:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Amós 3:2 ensina que ser conhecido por Deus livra Israel de qualquer punição.",
+   "verseRef": "Amós 3:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "punirei todas as vossas iniquidades sobre vós",
+   "feedbackCorrect": "Ser conhecido aumenta a cobrança, não livra da punição.",
+   "feedbackWrong": {
+    "true": "O versículo anuncia punição justamente aos conhecidos."
+   },
+   "hint": "Leia a segunda metade do versículo.",
+   "learningObjective": "Interpretar eleição como responsabilidade.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Amós 3:5, toque o trecho que mostra que todo efeito tem uma causa.",
+   "verseRef": "Amós 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "no laço"
+    },
+    {
+     "id": "b",
+     "text": "alguma coisa"
+    },
+    {
+     "id": "c",
+     "text": "da terra"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "sem que tenha apanhado alguma coisa",
+   "feedbackCorrect": "Nada é apanhado por acaso: a imagem liga causa e efeito.",
+   "feedbackWrong": {
+    "a": "Isso indica lugar; a causa apanhada vem no fim.",
+    "c": "Isso indica lugar; o que foi apanhado vem depois."
+   },
+   "hint": "Procure o fim da segunda pergunta do versículo.",
+   "learningObjective": "Sustentar no texto a lógica de causa e efeito.",
+   "evidence": [
+    "Amós 3:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Amós 3:2 sustenta sobre ser conhecido por Deus?",
+   "verseRef": "Amós 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eleição traz maior responsabilidade diante de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Eleição é privilégio sem nenhuma prestação"
+    },
+    {
+     "id": "c",
+     "text": "Conhecer é só Deus ter informações"
+    },
+    {
+     "id": "d",
+     "text": "Punição prova que não houve eleição"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente a vós eu conheci",
+   "feedbackCorrect": "Conhecido de perto, o povo responde mais, não menos.",
+   "feedbackWrong": {
+    "b": "Sem prestação contraria o portanto do versículo.",
+    "c": "Conhecer aqui é relação única, não simples informação.",
+    "d": "A punição nasce da eleição, não a nega."
+   },
+   "hint": "Junte as duas metades ligadas pelo portanto.",
+   "learningObjective": "Escolher a leitura sustentada sobre eleição.",
+   "evidence": [
+    "Amós 3:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a lógica da cobrança em Amós 3?",
+   "verseRef": "Amós 3:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus escolhe e conhece Israel"
+    },
+    {
+     "id": "b",
+     "text": "Israel responde com iniquidade"
+    },
+    {
+     "id": "c",
+     "text": "Deus cobra de quem ele conheceu"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Andarão dois juntos, se não estiverem de acordo",
+   "feedbackCorrect": "Eleição, pecado do povo e cobrança de Deus, nesta ordem.",
+   "feedbackWrong": {
+    "default": "Comece pela eleição; a cobrança é a conclusão."
+   },
+   "hint": "A cobrança fecha a lógica do versículo.",
+   "learningObjective": "Ver a lógica eleição, pecado e cobrança.",
+   "evidence": [
+    "Amós 3:2",
+    "Amós 3:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Amós 3:5, a ave só cai se houver o quê para ela na terra?",
+   "verseRef": "Amós 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "armadilha"
+    },
+    {
+     "id": "b",
+     "text": "presa"
+    },
+    {
+     "id": "c",
+     "text": "acordo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se não houver armadilha para ela",
+   "feedbackCorrect": "Sem causa preparada, não há queda: a imagem é lógica.",
+   "feedbackWrong": {
+    "b": "Isso é do leão em 3:4, não da ave aqui.",
+    "c": "Isso é da caminhada em 3:3, não desta imagem."
+   },
+   "hint": "É o instrumento escondido para a ave.",
+   "learningObjective": "Lembrar a imagem que fecha a lógica de Amós 3.",
+   "evidence": [
+    "Amós 3:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Amós 3:2 a Lucas 12:48?",
+   "verseRef": "Amós 3:2",
+   "passageA": {
+    "ref": "Amós 3:2"
+   },
+   "passageB": {
+    "ref": "Lucas 12:48"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Muito dado, muito cobrado"
+    },
+    {
+     "id": "b",
+     "text": "Pouco dado, nada cobrado"
+    },
+    {
+     "id": "c",
+     "text": "Eleição sem responsabilidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+   "feedbackCorrect": "Jesus ensina o mesmo princípio: quem recebeu mais, responde mais.",
+   "feedbackWrong": {
+    "b": "Israel recebeu muito; a cobrança acompanha o recebido.",
+    "c": "Os dois textos ligam receber e responder, não separam."
+   },
+   "hint": "Veja a regra de Jesus sobre quem recebeu muito.",
+   "learningObjective": "Ligar eleição em Amós ao princípio de Jesus.",
+   "evidence": [
+    "Amós 3:2",
+    "Lucas 12:48"
+   ]
+  }
+ ]
+}

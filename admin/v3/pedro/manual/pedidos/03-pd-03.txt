@@ -1,0 +1,71 @@
+Escreva a cena "pd-03" da trilha "pedro" (1–2 Pedro).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "pedro",
+  "title": "1–2 Pedro",
+  "description": "Esperança no sofrimento — eleitos, santidade e dia do Senhor.",
+  "realm": "novo-testamento"
+ },
+ "block": "1 e 2 Pedro",
+ "mission": {
+  "slug": "pd-03",
+  "title": "O Dia do Senhor",
+  "type": "lesson",
+  "intro": "Em 2 Pedro, a certeza da volta de Cristo chama a igreja a rejeitar falsos ensinos e viver em santidade.",
+  "hookRef": "O Dia do Senhor",
+  "hookNote": "Em 2 Pedro, a certeza da volta de Cristo chama a igreja a rejeitar falsos ensinos e viver em santidade.",
+  "centralInsight": "Alguns zombavam da promessa da volta de Cristo. Pedro responde que Deus e fiel e paciente, e seu Dia vira.",
+  "objective": "A promessa nao falha"
+ },
+ "v2": {
+  "passageRef": "O Dia do Senhor",
+  "context": "Em 2 Pedro, a certeza da volta de Cristo chama a igreja a rejeitar falsos ensinos e viver em santidade.",
+  "keyword": "Dia",
+  "verseRefs": [
+   "2 Pedro 3:9–10"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "2 Pedro 3:6–13"
+ ],
+ "verses": [
+  {
+   "ref": "2 Pedro 3:6",
+   "text": "Pelas quais coisas, o mundo daquela época pereceu submerso nas águas do dilúvio."
+  },
+  {
+   "ref": "2 Pedro 3:7",
+   "text": "Mas os céus e a terra que agora existem estão guardados pela mesma palavra, reservados para o fogo, até o Dia do Juízo e a destruição dos ímpios."
+  },
+  {
+   "ref": "2 Pedro 3:8",
+   "text": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia."
+  },
+  {
+   "ref": "2 Pedro 3:9",
+   "text": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento."
+  },
+  {
+   "ref": "2 Pedro 3:10",
+   "text": "Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas."
+  },
+  {
+   "ref": "2 Pedro 3:11",
+   "text": "Visto que todas essas coisas estão prestes a ser desfeitas, que tipo de pessoas vocês devem ser, vivendo em santo procedimento e piedade?"
+  },
+  {
+   "ref": "2 Pedro 3:12",
+   "text": "Aguardando e apressando a vinda do Dia de Deus, por causa do qual os céus incendiados serão desfeitos, e os elementos abrasados se derreterão."
+  },
+  {
+   "ref": "2 Pedro 3:13",
+   "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+  }
+ ]
+}
+</cena>

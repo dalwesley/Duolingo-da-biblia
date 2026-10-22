@@ -1,0 +1,321 @@
+{
+  "study": {
+    "passageRef": "Romanos 8:26–27",
+    "passages": [{ "ref": "Romanos 8:26–27" }],
+    "context": "Paulo fala de um mundo que geme e de crentes que sofrem sem saber nem como pedir. É nesse ponto de fraqueza, e não de força, que entra a ajuda do Espírito Santo na oração.",
+    "keyword": "Espírito intercessor",
+    "keywordGloss": "Quando não sabemos orar como convém, o próprio Espírito intercede por nós, segundo a vontade de Deus.",
+    "focusQuestion": "O que você faria na oração se soubesse que não precisa acertar as palavras?",
+    "reflectionPrompts": ["Orar sem saber", "Gemidos que Deus entende", "Segundo a vontade dele"],
+    "facts": [
+      { "text": "O Espírito nos auxilia em nossas fraquezas.", "evidenceRef": "Romanos 8:26", "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas" },
+      { "text": "Nós não sabemos orar como convém.", "evidenceRef": "Romanos 8:26", "evidenceSpan": "não sabemos orar como convém" },
+      { "text": "O próprio Espírito intercede por nós com gemidos inexprimíveis.", "evidenceRef": "Romanos 8:26", "evidenceSpan": "o próprio Espírito intercede por nós com gemidos inexprimíveis" },
+      { "text": "Aquele que examina os corações conhece o propósito do Espírito.", "evidenceRef": "Romanos 8:27", "evidenceSpan": "aquele que examina os corações conhece o propósito do Espírito" },
+      { "text": "Ele intercede pelos santos de acordo com a vontade de Deus.", "evidenceRef": "Romanos 8:27", "evidenceSpan": "intercede pelos santos de acordo com a vontade de Deus" }
+    ],
+    "keyTerms": [
+      { "term": "Espírito", "gloss": "Quem auxilia, intercede e traduz nossa fraqueza diante de Deus." },
+      { "term": "gemidos", "gloss": "A intercessão profunda do Espírito, além do que palavras alcançam." },
+      { "term": "santos", "gloss": "O povo de Deus, por quem o Espírito intercede sem parar." }
+    ],
+    "structure": [
+      { "label": "Nossa fraqueza na hora de orar", "evidenceRef": "Romanos 8:26" },
+      { "label": "O Espírito intercede com gemidos", "evidenceRef": "Romanos 8:26" },
+      { "label": "Deus conhece o propósito do Espírito", "evidenceRef": "Romanos 8:27" },
+      { "label": "Intercessão conforme a vontade de Deus", "evidenceRef": "Romanos 8:27" }
+    ],
+    "relations": [
+      { "kind": "causa", "text": "O auxílio vem porque não sabemos orar como convém: a fraqueza é o motivo da ajuda.", "marker": "pois", "evidenceRef": "Romanos 8:26" },
+      { "kind": "contraste", "text": "Nós não sabemos; mas o próprio Espírito intercede por nós.", "marker": "mas", "evidenceRef": "Romanos 8:26" },
+      { "kind": "propósito", "text": "A intercessão não é aleatória: ela acontece de acordo com a vontade de Deus.", "marker": "acordo", "evidenceRef": "Romanos 8:27" }
+    ],
+    "crossRefs": [
+      { "ref": "João 14:16", "bridge": "Outro Auxiliador dado aos discípulos" },
+      { "ref": "Romanos 8:34", "bridge": "Cristo também intercede por nós" },
+      { "ref": "Efésios 6:18", "bridge": "Orar no Espírito em todo tempo" }
+    ],
+    "misreadings": [
+      { "text": "Gemidos inexprimíveis são uma técnica que o crente deve produzir para orar certo.", "why": "Quem geme aqui é o Espírito intercedendo, não um desempenho exigido de nós." },
+      { "text": "Se o Espírito intercede, não precisamos orar nunca mais.", "why": "Ele nos auxilia em nossas fraquezas ao orar; a ajuda supõe fraqueza, não dispensa da oração." },
+      { "text": "A intercessão do Espírito garante qualquer pedido nosso, do nosso jeito.", "why": "O texto amarra a intercessão à vontade de Deus, não aos nossos desejos." }
+    ],
+    "centralInsight": "Na fraqueza, o Espírito intercede por nós segundo a vontade de Deus",
+    "anchorQuestion": "O que o Espírito faz quando não sabemos orar como convém?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente", "type": "true_false",
+      "question": "Em Romanos 8:26, o Espírito nos auxilia em nossas fraquezas na hora de orar.",
+      "verseRef": "Romanos 8:26", "correctOptionId": "true",
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "A ajuda dele chega justamente onde somos fracos.",
+      "feedbackWrong": { "false": "Releia o começo de Romanos 8:26: o auxílio é declarado." },
+      "hint": "Veja o começo do versículo.",
+      "learningObjective": "Observar o auxílio do Espírito em Romanos 8:26.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "semente", "type": "find_in_text",
+      "question": "Em Romanos 8:26, toque quem intercede por nós com gemidos inexprimíveis.",
+      "verseRef": "Romanos 8:26",
+      "options": [{ "id": "a", "text": "fraquezas" }, { "id": "b", "text": "Espírito" }, { "id": "c", "text": "gemidos" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "o próprio Espírito intercede por nós",
+      "feedbackCorrect": "É o próprio dele quem assume nossa causa em oração.",
+      "feedbackWrong": { "a": "Isso é onde precisamos de ajuda, não quem ajuda.", "c": "Isso é o modo da intercessão, não quem intercede." },
+      "hint": "Procure o sujeito da segunda metade do versículo.",
+      "learningObjective": "Identificar quem intercede em Romanos 8:26.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "semente", "type": "choice",
+      "question": "Segundo Romanos 8:27, quem conhece o propósito do Espírito ao interceder?",
+      "verseRef": "Romanos 8:27",
+      "options": [
+        { "id": "a", "text": "Aquele que examina os corações dos homens" },
+        { "id": "b", "text": "Somente quem ouve gemidos em voz alta" },
+        { "id": "c", "text": "Ninguém, nem mesmo o próprio Deus Pai" },
+        { "id": "d", "text": "Apenas os líderes da igreja de Roma" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aquele que examina os corações conhece o propósito do Espírito",
+      "feedbackCorrect": "Deus, que examina corações, entende a intercessão dele.",
+      "feedbackWrong": { "b": "Os gemidos são inexprimíveis: não dependem de audição.", "c": "O texto afirma que Deus conhece esse propósito.", "d": "Nenhum grupo humano é citado como intérprete aqui." },
+      "hint": "Veja quem examina os corações.",
+      "learningObjective": "Observar quem conhece a intercessão do Espírito.",
+      "evidence": ["Romanos 8:27"]
+    },
+    {
+      "difficulty": "semente", "type": "order",
+      "question": "Monte Romanos 8:26–27 na ordem do texto.",
+      "verseRef": "Romanos 8:26–27",
+      "options": [
+        { "id": "a", "text": "o Espírito nos auxilia em nossas fraquezas" },
+        { "id": "b", "text": "intercede por nós com gemidos inexprimíveis" },
+        { "id": "c", "text": "intercede pelos santos de acordo com a vontade de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "Auxílio na fraqueza, gemidos e intercessão segundo Deus.",
+      "feedbackWrong": { "default": "Comece pelo auxílio em nossas fraquezas." },
+      "hint": "A vontade de Deus fecha os dois versículos.",
+      "learningObjective": "Reconhecer a sequência de Romanos 8:26–27.",
+      "evidence": ["Romanos 8:26–27"]
+    },
+    {
+      "difficulty": "semente", "type": "complete",
+      "question": "Em Romanos 8:27, o que aquele que examina conhece sobre os nossos interiores?",
+      "verseRef": "Romanos 8:27",
+      "options": [{ "id": "a", "text": "corações" }, { "id": "b", "text": "santos" }, { "id": "c", "text": "propósito" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "aquele que examina os corações",
+      "feedbackCorrect": "Nada em nós é segredo para quem examina por dentro.",
+      "feedbackWrong": { "b": "Isso é por quem ele intercede, não o que Deus examina.", "c": "Isso é o que Deus conhece do Espírito, não de nós." },
+      "hint": "É o nosso interior, no começo do versículo.",
+      "learningObjective": "Lembrar o que Deus examina em Romanos 8:27.",
+      "evidence": ["Romanos 8:27"]
+    },
+    {
+      "difficulty": "semente", "type": "connect",
+      "question": "O que Romanos 8:27 comunica que se liga a este contexto?",
+      "verseRef": "Romanos 8:27",
+      "passageA": { "ref": "Romanos 8:27" },
+      "passageB": { "ref": "Contexto", "text": "Crentes fracos e sem palavras certas continuam sendo ouvidos por Deus em oração." },
+      "options": [
+        { "id": "a", "text": "Intercessão segundo a vontade dele" },
+        { "id": "b", "text": "Oração só de quem sabe falar" },
+        { "id": "c", "text": "Deus sem conhecer nosso interior" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "intercede pelos santos de acordo com a vontade de Deus",
+      "feedbackCorrect": "Ele intercede pelos santos do jeito de Deus, não do nosso.",
+      "feedbackWrong": { "b": "Justamente quem não sabe orar é auxiliado aqui.", "c": "Ele examina corações: conhece tudo em nós." },
+      "hint": "Veja a medida da intercessão no fim.",
+      "learningObjective": "Ligar Romanos 8:27 à intercessão segundo Deus.",
+      "evidence": ["Romanos 8:27"]
+    },
+    {
+      "difficulty": "caminhada", "type": "true_false",
+      "question": "Em Romanos 8:26–27, o Espírito só auxilia quem já sabe orar muito bem e sem fraqueza.",
+      "verseRef": "Romanos 8:26–27", "correctOptionId": "false",
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "É o contrário: o auxílio é para fracos que não sabem orar.",
+      "feedbackWrong": { "true": "Não saber orar como convém é o ponto de partida do texto." },
+      "hint": "Veja para quem o auxílio é prometido.",
+      "learningObjective": "Compreender que o auxílio é para a fraqueza.",
+      "evidence": ["Romanos 8:26–27"]
+    },
+    {
+      "difficulty": "caminhada", "type": "find_in_text",
+      "question": "Em Romanos 8:26, toque o que nós não sabemos fazer como convém.",
+      "verseRef": "Romanos 8:26",
+      "options": [{ "id": "a", "text": "orar" }, { "id": "b", "text": "fraquezas" }, { "id": "c", "text": "gemidos" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "não sabemos orar como convém",
+      "feedbackCorrect": "A confissão é honesta: nem orar sabemos direito.",
+      "feedbackWrong": { "b": "Isso é onde somos ajudados, não o que não sabemos fazer.", "c": "Isso é como ele intercede, não nossa incapacidade." },
+      "hint": "Procure o verbo depois de não sabemos.",
+      "learningObjective": "Reconhecer nossa limitação declarada na oração.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "caminhada", "type": "choice",
+      "question": "Como Romanos 8:27 completa o que 8:26 diz sobre os gemidos do Espírito?",
+      "verseRef": "Romanos 8:27",
+      "options": [
+        { "id": "a", "text": "Deus conhece o propósito dele, mesmo sem palavras" },
+        { "id": "b", "text": "Os gemidos precisam de um tradutor humano presente" },
+        { "id": "c", "text": "Deus só entende orações bem formuladas e longas" },
+        { "id": "d", "text": "O propósito dele é contrário à vontade de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conhece o propósito do Espírito",
+      "feedbackCorrect": "Inexprimível para nós, perfeitamente claro para Deus.",
+      "feedbackWrong": { "b": "Quem conhece é Deus examinando corações, não um tradutor.", "c": "Gemidos sem palavras são justamente o que ele entende.", "d": "É de acordo com a vontade de Deus, diz o texto." },
+      "hint": "Veja quem entende o que não tem palavras.",
+      "learningObjective": "Relacionar gemidos inexprimíveis e o conhecer de Deus.",
+      "evidence": ["Romanos 8:27"]
+    },
+    {
+      "difficulty": "caminhada", "type": "order",
+      "question": "Como se encadeia o argumento de Romanos 8:27?",
+      "verseRef": "Romanos 8:27",
+      "options": [
+        { "id": "a", "text": "Deus examina os corações dos seus" },
+        { "id": "b", "text": "Ele conhece o propósito do Espírito" },
+        { "id": "c", "text": "O Espírito intercede conforme a vontade dele" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "aquele que examina os corações",
+      "feedbackCorrect": "Examinar, conhecer e interceder segundo a vontade dele.",
+      "feedbackWrong": { "default": "Comece por quem examina os corações." },
+      "hint": "A vontade de Deus é o fecho do versículo.",
+      "learningObjective": "Compreender o encadeamento de Romanos 8:27.",
+      "evidence": ["Romanos 8:27"]
+    },
+    {
+      "difficulty": "caminhada", "type": "complete",
+      "question": "Em Romanos 8:26, em que área o Espírito nos auxilia quando vamos orar?",
+      "verseRef": "Romanos 8:26",
+      "options": [{ "id": "a", "text": "fraquezas" }, { "id": "b", "text": "vitórias" }, { "id": "c", "text": "discursos" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "A ajuda dele mira exatamente o nosso ponto fraco.",
+      "feedbackWrong": { "b": "O texto fala de auxílio na fraqueza, não em vitórias.", "c": "Não é eloquência que ele supre: é a fraqueza." },
+      "hint": "É o nosso ponto fraco, logo no começo.",
+      "learningObjective": "Compreender onde atua o auxílio do Espírito.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "caminhada", "type": "connect",
+      "question": "O que liga Romanos 8:26 a João 14:16?",
+      "verseRef": "Romanos 8:26",
+      "passageA": { "ref": "Romanos 8:26" },
+      "passageB": { "ref": "João 14:16" },
+      "options": [
+        { "id": "a", "text": "Auxiliador que fica com os discípulos" },
+        { "id": "b", "text": "Ajuda que abandona na fraqueza" },
+        { "id": "c", "text": "Oração sem presença do Espírito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "Jesus prometeu outro Auxiliador para estar sempre conosco.",
+      "feedbackWrong": { "b": "Ele fica para sempre, não abandona ninguém.", "c": "Os dois textos põem ele bem no centro da ajuda." },
+      "hint": "Veja por quanto tempo o Auxiliador fica.",
+      "learningObjective": "Relacionar o auxílio do Espírito à promessa de Jesus.",
+      "evidence": ["Romanos 8:26", "João 14:16"]
+    },
+    {
+      "difficulty": "profundezas", "type": "true_false",
+      "question": "Romanos 8:26–27 ensina que nossa fraqueza ao orar não nos afasta de Deus, pois o Espírito intercede por nós.",
+      "verseRef": "Romanos 8:26", "correctOptionId": "true",
+      "evidenceSpan": "o próprio Espírito intercede por nós",
+      "feedbackCorrect": "Sem palavras certas, temos um intercessor perfeito.",
+      "feedbackWrong": { "false": "A fraqueza é justamente onde a intercessão acontece." },
+      "hint": "Veja o que acontece quando não sabemos orar.",
+      "learningObjective": "Interpretar a fraqueza como lugar de intercessão.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "profundezas", "type": "find_in_text",
+      "question": "Em Romanos 8:27, toque segundo o que o Espírito intercede pelos santos.",
+      "verseRef": "Romanos 8:27",
+      "options": [{ "id": "a", "text": "propósito" }, { "id": "b", "text": "santos" }, { "id": "c", "text": "vontade de Deus" }],
+      "correctOptionId": "c",
+      "evidenceSpan": "de acordo com a vontade de Deus",
+      "feedbackCorrect": "A intercessão dele é perfeita porque segue a vontade do Pai.",
+      "feedbackWrong": { "a": "Isso é o que Deus conhece dele, não a medida final.", "b": "Isso é por quem ele intercede, não segundo o quê." },
+      "hint": "Procure a medida no fim do versículo.",
+      "learningObjective": "Sustentar no texto a medida da intercessão.",
+      "evidence": ["Romanos 8:27"]
+    },
+    {
+      "difficulty": "profundezas", "type": "choice",
+      "question": "Que leitura Romanos 8:26–27 sustenta sobre orar em fraqueza?",
+      "verseRef": "Romanos 8:26–27",
+      "options": [
+        { "id": "a", "text": "Devemos produzir gemidos audíveis como técnica certa" },
+        { "id": "b", "text": "Podemos parar de orar, pois ele faz tudo sozinho" },
+        { "id": "c", "text": "Mesmo sem palavras, somos ouvidos e auxiliados nele" },
+        { "id": "d", "text": "Deus só ouve quem formula orações perfeitas sempre" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não sabemos orar como convém; mas o próprio Espírito intercede por nós",
+      "feedbackCorrect": "Nossa falta de palavras encontra a intercessão dele.",
+      "feedbackWrong": { "a": "Quem geme é o Espírito em nós, não uma técnica nossa.", "b": "Auxiliar na fraqueza supõe que continuamos orando fracos.", "d": "O texto consola justamente quem não sabe formular." },
+      "hint": "Junte nossa incapacidade com a ação dele.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Romanos 8:26–27"]
+    },
+    {
+      "difficulty": "profundezas", "type": "order",
+      "question": "Qual sequência revela o sentido de Romanos 8:26?",
+      "verseRef": "Romanos 8:26",
+      "options": [
+        { "id": "a", "text": "Não sabemos orar como deveríamos orar" },
+        { "id": "b", "text": "O próprio Espírito assume nossa intercessão" },
+        { "id": "c", "text": "Gemidos sem palavras chegam ao coração de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não sabemos orar como convém",
+      "feedbackCorrect": "Da nossa falta de palavras à intercessão que Deus entende.",
+      "feedbackWrong": { "default": "Comece pela nossa incapacidade de orar." },
+      "hint": "Os gemidos entendidos por Deus fecham o caminho.",
+      "learningObjective": "Ver o caminho da fraqueza à intercessão perfeita.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "profundezas", "type": "complete",
+      "question": "Em Romanos 8:26, com que o Espírito intercede quando faltam palavras expressas?",
+      "verseRef": "Romanos 8:26",
+      "options": [{ "id": "a", "text": "gemidos" }, { "id": "b", "text": "discursos" }, { "id": "c", "text": "gritos" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "intercede por nós com gemidos inexprimíveis",
+      "feedbackCorrect": "Além das palavras, a intercessão dele continua perfeita.",
+      "feedbackWrong": { "b": "Discurso bem montado é justamente o que nos falta.", "c": "O texto não fala de volume, mas de profundidade." },
+      "hint": "É profundo demais para virar palavras.",
+      "learningObjective": "Lembrar o modo da intercessão do Espírito.",
+      "evidence": ["Romanos 8:26"]
+    },
+    {
+      "difficulty": "profundezas", "type": "connect",
+      "question": "O que liga Romanos 8:27 a Romanos 8:34?",
+      "verseRef": "Romanos 8:27",
+      "passageA": { "ref": "Romanos 8:27" },
+      "passageB": { "ref": "Romanos 8:34" },
+      "options": [
+        { "id": "a", "text": "Cristo também intercede por nós" },
+        { "id": "b", "text": "Ninguém intercede pelos santos" },
+        { "id": "c", "text": "Intercessão contra a vontade de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele intercede pelos santos",
+      "feedbackCorrect": "Espírito em nós e Cristo à direita de Deus: dupla intercessão.",
+      "feedbackWrong": { "b": "Os dois textos afirmam intercessão a nosso favor.", "c": "Toda intercessão aqui é segundo a vontade de Deus." },
+      "hint": "Veja quem mais intercede no mesmo capítulo.",
+      "learningObjective": "Ligar as duas intercessões de Romanos 8.",
+      "evidence": ["Romanos 8:27", "Romanos 8:34"]
+    }
+  ]
+}

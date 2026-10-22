@@ -1,0 +1,3307 @@
+[
+  {
+    "id": "antropologia-sem-an-01-imagem-01",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gênesis 1:27, Deus criou o homem à sua imagem.",
+    "prompt": "Em Gênesis 1:27, Deus criou o homem à sua imagem.",
+    "cue": "Em Gênesis 1:27, Deus criou o homem à sua imagem.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deus criou o homem à sua imagem",
+    "feedbackCorrect": "O versículo repete que Deus criou o homem à sua imagem.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 1:27, onde Deus cria o homem à sua imagem."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar que Deus criou o ser humano à sua imagem.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-01-imagem-02",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+    "prompt": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+    "cue": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o homem"
+      },
+      {
+        "id": "b",
+        "text": "homem e mulher"
+      },
+      {
+        "id": "c",
+        "text": "sua imagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "homem e mulher os criou",
+    "feedbackCorrect": "Deus criou homem e mulher, e os dois estão no relato da sua imagem.",
+    "feedbackWrong": {
+      "a": "Isso aparece antes; o fim do versículo amplia quem Deus criou.",
+      "c": "Isso mostra à semelhança de quem, não quem foi criado no fim."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Identificar homem e mulher como criados por Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-01-imagem-03",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gênesis 1:26, sobre o que o ser humano teria domínio?",
+    "prompt": "Segundo Gênesis 1:26, sobre o que o ser humano teria domínio?",
+    "cue": "Segundo Gênesis 1:26, sobre o que o ser humano teria domínio?",
+    "verseRef": "Gênesis 1:26",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sobre o céu e as estrelas do alto"
+      },
+      {
+        "id": "b",
+        "text": "Sobre Deus e sobre os seus planos"
+      },
+      {
+        "id": "c",
+        "text": "Sobre o futuro de todas as pessoas"
+      },
+      {
+        "id": "d",
+        "text": "Sobre peixes, aves e animais da terra"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "que ele tenha domínio sobre os peixes do mar",
+    "feedbackCorrect": "Deus dá ao ser humano domínio sobre peixes, aves e animais da terra.",
+    "feedbackWrong": {
+      "a": "O texto fala de seres da terra e do mar, não de governar o céu.",
+      "b": "Deus é quem cria e dá a tarefa; o ser humano não domina Deus.",
+      "c": "O domínio citado é sobre os seres vivos, não sobre o futuro."
+    },
+    "hint": "Leia a lista depois da palavra domínio.",
+    "learningObjective": "Observar a tarefa de domínio dada ao ser humano.",
+    "evidence": [
+      "Gênesis 1:26"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-01-imagem-04",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gênesis 1:27 na ordem do texto.",
+    "prompt": "Monte Gênesis 1:27 na ordem do texto.",
+    "cue": "Monte Gênesis 1:27 na ordem do texto.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Deus criou o homem à sua imagem"
+      },
+      {
+        "id": "b",
+        "text": "à imagem de Deus o criou"
+      },
+      {
+        "id": "c",
+        "text": "homem e mulher os criou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E Deus criou o homem à sua imagem",
+    "feedbackCorrect": "O versículo cria, repete a imagem de Deus e nomeia homem e mulher.",
+    "feedbackWrong": {
+      "default": "Comece por Deus criando o homem; homem e mulher fecham o versículo."
+    },
+    "hint": "O versículo começa com Deus criando.",
+    "learningObjective": "Reconhecer a sequência de Gênesis 1:27.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-01-imagem-05",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gênesis 1:26, que tarefa Deus dá ao ser humano sobre os outros seres?",
+    "prompt": "Em Gênesis 1:26, que tarefa Deus dá ao ser humano sobre os outros seres?",
+    "cue": "Em Gênesis 1:26, que tarefa Deus dá ao ser humano sobre os outros seres?",
+    "verseRef": "Gênesis 1:26",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "template": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha ___ sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "domínio"
+      },
+      {
+        "id": "b",
+        "text": "descanso"
+      },
+      {
+        "id": "c",
+        "text": "temor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que ele tenha domínio sobre os peixes do mar",
+    "feedbackCorrect": "Deus dá ao ser humano a tarefa de domínio sobre os outros seres.",
+    "feedbackWrong": {
+      "b": "O texto não fala de descanso aqui; fala da tarefa sobre os seres.",
+      "c": "O texto não manda temer os seres; dá uma tarefa sobre eles."
+    },
+    "hint": "Procure a tarefa ligada aos peixes e às aves.",
+    "learningObjective": "Lembrar a tarefa dada ao ser humano na criação.",
+    "evidence": [
+      "Gênesis 1:26"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-01-imagem-06",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gênesis 1:28 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:28 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:28 comunica que se liga a este contexto?",
+    "verseRef": "Gênesis 1:28",
+    "passageText": "E Deus os abençoou e lhes disse: \"Sejam fecundos, multipliquem-se, encham a terra e a sujeitem; dominem sobre os peixes do mar, sobre as aves do céu e sobre todos os seres que rastejam pela terra.\"",
+    "passageA": {
+      "ref": "Gênesis 1:28",
+      "text": "E Deus os abençoou e lhes disse: \"Sejam fecundos, multipliquem-se, encham a terra e a sujeitem; dominem sobre os peixes do mar, sobre as aves do céu e sobre todos os seres que rastejam pela terra.\""
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus abençoa o homem e a mulher que ele criou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só um deles recebe bênção"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona quem ele criou"
+      },
+      {
+        "id": "c",
+        "text": "Deus abençoa quem ele criou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus os abençoou",
+    "feedbackCorrect": "Logo depois de criar, Deus abençoa o homem e a mulher.",
+    "feedbackWrong": {
+      "a": "O texto diz que Deus os abençoou, falando aos dois.",
+      "b": "Deus não abandona; ele abençoa e fala com os dois."
+    },
+    "hint": "Veja a primeira ação de Deus no versículo.",
+    "learningObjective": "Ligar a criação à bênção de Deus sobre homem e mulher.",
+    "evidence": [
+      "Gênesis 1:28"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-01-imagem-01",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gênesis 1:27, apenas o homem foi criado à imagem de Deus e a mulher ficou fora dessa afirmação.",
+    "prompt": "Em Gênesis 1:27, apenas o homem foi criado à imagem de Deus e a mulher ficou fora dessa afirmação.",
+    "cue": "Em Gênesis 1:27, apenas o homem foi criado à imagem de Deus e a mulher ficou fora dessa afirmação.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "homem e mulher os criou",
+    "feedbackCorrect": "O texto inclui os dois ao dizer que Deus criou homem e mulher.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1:27, onde homem e mulher são criados por Deus."
+    },
+    "hint": "Repare em quem aparece no fim do versículo.",
+    "learningObjective": "Compreender que homem e mulher são criados por Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-01-imagem-02",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gênesis 1:26, toque a palavra que abre esta nova etapa da criação.",
+    "prompt": "Em Gênesis 1:26, toque a palavra que abre esta nova etapa da criação.",
+    "cue": "Em Gênesis 1:26, toque a palavra que abre esta nova etapa da criação.",
+    "verseRef": "Gênesis 1:26",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Façamos"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "homem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então Deus disse",
+    "feedbackCorrect": "Essa palavra abre a etapa em que Deus fala do ser humano.",
+    "feedbackWrong": {
+      "a": "Isso já é a fala de Deus, não a abertura da etapa.",
+      "c": "Isso é quem será criado, não a abertura da etapa."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que abre a criação do ser humano.",
+    "evidence": [
+      "Gênesis 1:26"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-01-imagem-03",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gênesis 1:27 se relaciona com o anúncio de Gênesis 1:26?",
+    "prompt": "Como Gênesis 1:27 se relaciona com o anúncio de Gênesis 1:26?",
+    "cue": "Como Gênesis 1:27 se relaciona com o anúncio de Gênesis 1:26?",
+    "verseRef": "Gênesis 1:26–27",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra. E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outra voz corrige o plano apresentado antes"
+      },
+      {
+        "id": "b",
+        "text": "O anúncio fica sem cumprimento no relato"
+      },
+      {
+        "id": "c",
+        "text": "A criação humana acontece sem ligação com Deus"
+      },
+      {
+        "id": "d",
+        "text": "O que Deus anuncia, ele mesmo realiza ao criar"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E Deus criou o homem à sua imagem",
+    "feedbackCorrect": "Deus anuncia em 1:26 e realiza em 1:27, criando à sua imagem.",
+    "feedbackWrong": {
+      "a": "Não há outra voz; o mesmo Deus anuncia e cria.",
+      "b": "O versículo seguinte mostra o anúncio se cumprindo.",
+      "c": "É Deus quem anuncia e quem cria o ser humano."
+    },
+    "hint": "Compare quem fala em um versículo e quem age no outro.",
+    "learningObjective": "Relacionar o anúncio de Deus com a criação realizada.",
+    "evidence": [
+      "Gênesis 1:26–27"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-01-imagem-04",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Gênesis 1:26–27?",
+    "prompt": "Como avança a cena em Gênesis 1:26–27?",
+    "cue": "Como avança a cena em Gênesis 1:26–27?",
+    "verseRef": "Gênesis 1:26–27",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra. E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus anuncia fazer o ser humano"
+      },
+      {
+        "id": "b",
+        "text": "Deus afirma sua marca no ser humano"
+      },
+      {
+        "id": "c",
+        "text": "Deus cria homem e mulher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "homem e mulher os criou",
+    "feedbackCorrect": "Primeiro o anúncio, depois a afirmação da imagem e a criação dos dois.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio de Deus; homem e mulher fecham a cena."
+    },
+    "hint": "O anúncio vem antes da criação realizada.",
+    "learningObjective": "Compreender o movimento do anúncio à criação.",
+    "evidence": [
+      "Gênesis 1:26–27"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-01-imagem-05",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gênesis 1:28, o que Deus faz antes de falar ao homem e à mulher?",
+    "prompt": "Em Gênesis 1:28, o que Deus faz antes de falar ao homem e à mulher?",
+    "cue": "Em Gênesis 1:28, o que Deus faz antes de falar ao homem e à mulher?",
+    "verseRef": "Gênesis 1:28",
+    "passageText": "E Deus os abençoou e lhes disse: \"Sejam fecundos, multipliquem-se, encham a terra e a sujeitem; dominem sobre os peixes do mar, sobre as aves do céu e sobre todos os seres que rastejam pela terra.\"",
+    "template": "E Deus os ___ e lhes disse: \"Sejam fecundos, multipliquem-se, encham a terra e a sujeitem; dominem sobre os peixes do mar, sobre as aves do céu e sobre todos os seres que rastejam pela terra.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "abandonou"
+      },
+      {
+        "id": "b",
+        "text": "abençoou"
+      },
+      {
+        "id": "c",
+        "text": "escondeu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E Deus os abençoou",
+    "feedbackCorrect": "Antes de falar a tarefa, Deus abençoa o homem e a mulher.",
+    "feedbackWrong": {
+      "a": "Deus não abandona; ele abençoa quem acabou de criar.",
+      "c": "Deus não se esconde; ele abençoa e fala com os dois."
+    },
+    "hint": "Veja a primeira ação de Deus no versículo.",
+    "learningObjective": "Compreender que a bênção precede a tarefa dada.",
+    "evidence": [
+      "Gênesis 1:28"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-01-imagem-06",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gênesis 1:27 a Gênesis 9:6?",
+    "prompt": "O que liga Gênesis 1:27 a Gênesis 9:6?",
+    "cue": "O que liga Gênesis 1:27 a Gênesis 9:6?",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "passageA": {
+      "ref": "Gênesis 1:27",
+      "text": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou."
+    },
+    "passageB": {
+      "ref": "Gênesis 9:6",
+      "text": "Quem derramar o sangue do homem, pelo homem o seu sangue será derramado; porque Deus fez o homem à sua imagem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A imagem foi totalmente apagada"
+      },
+      {
+        "id": "b",
+        "text": "A imagem permanece depois da queda"
+      },
+      {
+        "id": "c",
+        "text": "Só reis conservam algum valor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "à imagem de Deus o criou",
+    "feedbackCorrect": "Mesmo depois da queda, Deus ainda fala do homem feito à sua imagem.",
+    "feedbackWrong": {
+      "a": "Gênesis 9 ainda chama o ser humano de feito à imagem de Deus.",
+      "c": "Gênesis 9 fala do homem em geral, não só de reis."
+    },
+    "hint": "Veja o motivo dado no segundo texto.",
+    "learningObjective": "Relacionar a imagem de Deus antes e depois da queda.",
+    "evidence": [
+      "Gênesis 1:27",
+      "Gênesis 9:6"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-01-imagem-01",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gênesis 1:27 sustenta que homem e mulher compartilham a mesma origem na criação feita por Deus.",
+    "prompt": "Gênesis 1:27 sustenta que homem e mulher compartilham a mesma origem na criação feita por Deus.",
+    "cue": "Gênesis 1:27 sustenta que homem e mulher compartilham a mesma origem na criação feita por Deus.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "homem e mulher os criou",
+    "feedbackCorrect": "Os dois são criados por Deus no mesmo relato da sua imagem.",
+    "feedbackWrong": {
+      "false": "O texto coloca homem e mulher juntos na criação de Deus."
+    },
+    "hint": "Veja quem Deus cria no fim do versículo.",
+    "learningObjective": "Interpretar a igual origem de homem e mulher em Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-01-imagem-02",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gênesis 1:27, toque o trecho que liga o ser humano diretamente a Deus.",
+    "prompt": "Em Gênesis 1:27, toque o trecho que liga o ser humano diretamente a Deus.",
+    "cue": "Em Gênesis 1:27, toque o trecho que liga o ser humano diretamente a Deus.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os criou"
+      },
+      {
+        "id": "b",
+        "text": "o homem"
+      },
+      {
+        "id": "c",
+        "text": "sua imagem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "criou o homem à sua imagem",
+    "feedbackCorrect": "A ligação está em ser criado à imagem do próprio Deus.",
+    "feedbackWrong": {
+      "a": "Isso mostra a ação de criar, não à semelhança de quem.",
+      "b": "Isso nomeia quem foi criado, não a ligação com Deus."
+    },
+    "hint": "Procure à semelhança de quem ele foi criado.",
+    "learningObjective": "Sustentar com o texto a ligação do ser humano com Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-01-imagem-03",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura de Gênesis 1:26–27 o texto sustenta sobre o valor humano?",
+    "prompt": "Que leitura de Gênesis 1:26–27 o texto sustenta sobre o valor humano?",
+    "cue": "Que leitura de Gênesis 1:26–27 o texto sustenta sobre o valor humano?",
+    "verseRef": "Gênesis 1:26–27",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra. E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O valor humano depende da força física"
+      },
+      {
+        "id": "b",
+        "text": "O valor humano vem de Deus que o criou"
+      },
+      {
+        "id": "c",
+        "text": "O valor humano nasce das conquistas pessoais"
+      },
+      {
+        "id": "d",
+        "text": "Só quem governa outros tem valor real"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "à imagem de Deus o criou",
+    "feedbackCorrect": "O valor do ser humano vem de Deus, que o criou à sua imagem.",
+    "feedbackWrong": {
+      "a": "O texto não mede valor por força; liga o ser humano a Deus.",
+      "c": "Antes de qualquer conquista, Deus já cria e abençoa.",
+      "d": "O domínio é tarefa recebida, não a fonte do valor humano."
+    },
+    "hint": "Veja de quem o ser humano recebe sua marca.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre dignidade.",
+    "evidence": [
+      "Gênesis 1:26–27"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-01-imagem-04",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da imagem de Deus na Bíblia?",
+    "prompt": "Qual sequência revela o caminho da imagem de Deus na Bíblia?",
+    "cue": "Qual sequência revela o caminho da imagem de Deus na Bíblia?",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria o ser humano à sua imagem"
+      },
+      {
+        "id": "b",
+        "text": "A imagem continua citada depois da queda"
+      },
+      {
+        "id": "c",
+        "text": "A fala deve respeitar quem Deus fez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "à imagem de Deus o criou",
+    "feedbackCorrect": "Criado à imagem, o ser humano continua assim citado e deve ser respeitado.",
+    "feedbackWrong": {
+      "default": "Siga a ordem da Bíblia, da criação ao ensino sobre a fala."
+    },
+    "hint": "Comece pela criação e termine na prática da fala.",
+    "learningObjective": "Ver a imagem de Deus como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Gênesis 1:27",
+      "Gênesis 9:6",
+      "Tiago 3:9"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-01-imagem-05",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+    "prompt": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+    "cue": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+    "verseRef": "Gênesis 1:26",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "template": "Então Deus disse: Façamos o homem à nossa ___, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vontade"
+      },
+      {
+        "id": "b",
+        "text": "história"
+      },
+      {
+        "id": "c",
+        "text": "imagem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Façamos o homem à nossa imagem",
+    "feedbackCorrect": "Deus faz o ser humano à sua própria imagem, ligado a ele.",
+    "feedbackWrong": {
+      "a": "O texto não usa essa palavra aqui; usa a que liga a Deus.",
+      "b": "O texto não fala disso aqui; fala da ligação com Deus."
+    },
+    "hint": "Releia a fala de Deus antes da criação.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+    "evidence": [
+      "Gênesis 1:26"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-01-imagem-06",
+    "trail": "antropologia",
+    "section": "an-01-imagem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gênesis 1:26 a Tiago 3:9?",
+    "prompt": "O que liga Gênesis 1:26 a Tiago 3:9?",
+    "cue": "O que liga Gênesis 1:26 a Tiago 3:9?",
+    "verseRef": "Gênesis 1:26",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:26",
+      "text": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra."
+    },
+    "passageB": {
+      "ref": "Tiago 3:9",
+      "text": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Falar apenas de coisas religiosas"
+      },
+      {
+        "id": "b",
+        "text": "Respeitar as pessoas na fala"
+      },
+      {
+        "id": "c",
+        "text": "Evitar falar com qualquer pessoa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Façamos o homem à nossa imagem",
+    "feedbackCorrect": "Tiago liga a semelhança de Deus ao cuidado com a fala sobre pessoas.",
+    "feedbackWrong": {
+      "a": "O ponto é respeitar pessoas feitas por Deus, não mudar de assunto.",
+      "c": "Tiago não manda evitar pessoas; manda cuidar do que se diz delas."
+    },
+    "hint": "Veja o que Tiago diz sobre amaldiçoar pessoas.",
+    "learningObjective": "Ligar a criação à imagem ao respeito pelas pessoas.",
+    "evidence": [
+      "Gênesis 1:26",
+      "Tiago 3:9"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-02-queda-01",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, só alguns pecaram e os demais alcançaram a glória de Deus por si mesmos.",
+    "prompt": "Em Romanos 3:23, só alguns pecaram e os demais alcançaram a glória de Deus por si mesmos.",
+    "cue": "Em Romanos 3:23, só alguns pecaram e os demais alcançaram a glória de Deus por si mesmos.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Paulo inclui todos ao dizer que todos pecaram e carecem da glória.",
+    "feedbackWrong": {
+      "true": "Releia o alcance da frase, que começa abrangendo todas as pessoas."
+    },
+    "hint": "Repare em quem a afirmação alcança.",
+    "learningObjective": "Observar que o pecado alcança todas as pessoas.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-02-queda-02",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, toque a palavra que mostra o alcance do pecado.",
+    "prompt": "Em Romanos 3:23, toque a palavra que mostra o alcance do pecado.",
+    "cue": "Em Romanos 3:23, toque a palavra que mostra o alcance do pecado.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "todos"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Ninguém fica de fora da afirmação de Paulo sobre o pecado.",
+    "feedbackWrong": {
+      "a": "Isso é aquilo de que todos carecem, não quem pecou.",
+      "c": "Deus é aquele diante de quem todos carecem da glória."
+    },
+    "hint": "Procure quem está incluído na afirmação.",
+    "learningObjective": "Identificar o alcance universal do pecado.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-02-queda-03",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 3:24, como são justificados os que creem?",
+    "prompt": "Segundo Romanos 3:24, como são justificados os que creem?",
+    "cue": "Segundo Romanos 3:24, como são justificados os que creem?",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por nascerem em família religiosa"
+      },
+      {
+        "id": "b",
+        "text": "Por meio das obras da lei"
+      },
+      {
+        "id": "c",
+        "text": "Por um pagamento próprio alto"
+      },
+      {
+        "id": "d",
+        "text": "Gratuitamente, por sua graça"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "A justificação é gratuita e vem da graça de Deus, em Cristo.",
+    "feedbackWrong": {
+      "a": "O texto não liga a justificação ao nascimento, mas a Cristo.",
+      "b": "Romanos 3:20 fecha esse caminho; aqui a base é a graça.",
+      "c": "O texto diz gratuitamente; ninguém compra a justificação."
+    },
+    "hint": "Leia como o versículo descreve a justificação.",
+    "learningObjective": "Observar que a justificação é gratuita, pela graça.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-02-queda-04",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 3:23–24 na ordem do texto.",
+    "prompt": "Monte Romanos 3:23–24 na ordem do texto.",
+    "cue": "Monte Romanos 3:23–24 na ordem do texto.",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque todos pecaram"
+      },
+      {
+        "id": "b",
+        "text": "e carecem da glória de Deus"
+      },
+      {
+        "id": "c",
+        "text": "sendo justificados gratuitamente, por sua graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Todos pecaram, carecem da glória e são justificados pela graça.",
+    "feedbackWrong": {
+      "default": "Comece pelo pecado de todos; a graça fecha o trecho."
+    },
+    "hint": "A graça aparece depois da falta da glória.",
+    "learningObjective": "Reconhecer a sequência de Romanos 3:23–24.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-02-queda-05",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, o que todos fizeram segundo Paulo?",
+    "prompt": "Em Romanos 3:23, o que todos fizeram segundo Paulo?",
+    "cue": "Em Romanos 3:23, o que todos fizeram segundo Paulo?",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "template": "Porque todos ___ e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "chegaram"
+      },
+      {
+        "id": "b",
+        "text": "pecaram"
+      },
+      {
+        "id": "c",
+        "text": "venceram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Paulo afirma de todos a mesma realidade diante de Deus.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário de ter chegado à glória de Deus.",
+      "c": "O texto não fala de vitória humana aqui; fala de falta."
+    },
+    "hint": "Olhe a primeira parte do versículo.",
+    "learningObjective": "Lembrar a afirmação de Paulo sobre todos.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-02-queda-06",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 3:24 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 3:24 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 3:24 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "passageA": {
+      "ref": "Romanos 3:24",
+      "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem crê não compra o perdão de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A justificação é presente gratuito"
+      },
+      {
+        "id": "b",
+        "text": "Deus recebe pagamento humano"
+      },
+      {
+        "id": "c",
+        "text": "O perdão é comprado com obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "A justificação não se compra; Deus a dá por sua graça.",
+    "feedbackWrong": {
+      "b": "Ninguém paga a Deus; a redenção está em Cristo Jesus.",
+      "c": "O texto diz gratuitamente, não mediante compra com obras."
+    },
+    "hint": "Veja como a justificação é descrita no versículo.",
+    "learningObjective": "Ligar a justificação gratuita à graça de Deus.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-02-queda-01",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 3:23–24, todos carecem da glória de Deus e são justificados gratuitamente por sua graça.",
+    "prompt": "Em Romanos 3:23–24, todos carecem da glória de Deus e são justificados gratuitamente por sua graça.",
+    "cue": "Em Romanos 3:23–24, todos carecem da glória de Deus e são justificados gratuitamente por sua graça.",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "O trecho junta a falta de todos com a graça que justifica em Cristo.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos juntos, da falta de todos à graça."
+    },
+    "hint": "Leia os dois versículos como uma frase só.",
+    "learningObjective": "Compreender juntos o pecado de todos e a graça de Deus.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-02-queda-02",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 3:21, toque a palavra que marca a virada do argumento de Paulo.",
+    "prompt": "Em Romanos 3:21, toque a palavra que marca a virada do argumento de Paulo.",
+    "cue": "Em Romanos 3:21, toque a palavra que marca a virada do argumento de Paulo.",
+    "verseRef": "Romanos 3:21",
+    "passageText": "Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "agora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas agora a justiça de Deus",
+    "feedbackCorrect": "Essa palavra vira o argumento para a justiça manifestada por Deus.",
+    "feedbackWrong": {
+      "b": "Isso é o que se manifesta, não a palavra da virada.",
+      "c": "Isso marca o tempo da virada, não a virada em si."
+    },
+    "hint": "É a palavra inicial do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste no argumento.",
+    "evidence": [
+      "Romanos 3:21"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-02-queda-03",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 3:21 se relaciona com Romanos 3:20?",
+    "prompt": "Como Romanos 3:21 se relaciona com Romanos 3:20?",
+    "cue": "Como Romanos 3:21 se relaciona com Romanos 3:20?",
+    "verseRef": "Romanos 3:20–21",
+    "passageText": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado. Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lei e profetas são descartados como testemunhas inúteis"
+      },
+      {
+        "id": "b",
+        "text": "A justiça anunciada depende do esforço humano acumulado"
+      },
+      {
+        "id": "c",
+        "text": "Paulo volta atrás e passa a exaltar as obras da lei"
+      },
+      {
+        "id": "d",
+        "text": "Depois de fechar a porta das obras, Paulo anuncia outro caminho de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Mas agora a justiça de Deus",
+    "feedbackCorrect": "Fechado o caminho das obras, Paulo anuncia a justiça manifestada por Deus.",
+    "feedbackWrong": {
+      "a": "Lei e profetas testemunham essa justiça, não são inúteis.",
+      "b": "A justiça se manifestou de forma independente da lei.",
+      "c": "Paulo não volta atrás; ele anuncia algo novo da parte de Deus."
+    },
+    "hint": "Repare na virada que abre o segundo versículo.",
+    "learningObjective": "Relacionar o fim do caminho das obras com o anúncio da justiça.",
+    "evidence": [
+      "Romanos 3:20–21"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-02-queda-04",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Romanos 3:20–21?",
+    "prompt": "Como avança o argumento em Romanos 3:20–21?",
+    "cue": "Como avança o argumento em Romanos 3:20–21?",
+    "verseRef": "Romanos 3:20–21",
+    "passageText": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado. Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei revela o conhecimento do pecado"
+      },
+      {
+        "id": "b",
+        "text": "A justiça de Deus se manifesta"
+      },
+      {
+        "id": "c",
+        "text": "Essa justiça independe das obras da lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se manifestou de forma independente da lei",
+    "feedbackCorrect": "A lei mostra o pecado, e então Deus manifesta sua justiça sem a lei.",
+    "feedbackWrong": {
+      "default": "Comece pela lei que mostra o pecado; a manifestação vem depois."
+    },
+    "hint": "A manifestação da justiça é o passo do meio.",
+    "learningObjective": "Compreender o movimento do argumento de Paulo.",
+    "evidence": [
+      "Romanos 3:20–21"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-02-queda-05",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 3:22, por meio de que a justiça de Deus alcança quem crê?",
+    "prompt": "Em Romanos 3:22, por meio de que a justiça de Deus alcança quem crê?",
+    "cue": "Em Romanos 3:22, por meio de que a justiça de Deus alcança quem crê?",
+    "verseRef": "Romanos 3:22",
+    "passageText": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "template": "Isto é, a justiça de Deus por meio da ___ em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "justiça de Deus por meio da fé em Jesus Cristo",
+    "feedbackCorrect": "A justiça de Deus alcança quem crê por meio da confiança em Cristo.",
+    "feedbackWrong": {
+      "a": "Uma obra humana não é o meio citado ligado a Jesus Cristo.",
+      "b": "Paulo acabou de dizer que essa justiça independe da lei."
+    },
+    "hint": "Procure o meio ligado a Jesus Cristo.",
+    "learningObjective": "Compreender o meio pelo qual a justiça alcança quem crê.",
+    "evidence": [
+      "Romanos 3:22"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-02-queda-06",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 3:23 a Romanos 5:12?",
+    "prompt": "O que liga Romanos 3:23 a Romanos 5:12?",
+    "cue": "O que liga Romanos 3:23 a Romanos 5:12?",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "passageA": {
+      "ref": "Romanos 3:23",
+      "text": "Porque todos pecaram e carecem da glória de Deus,"
+    },
+    "passageB": {
+      "ref": "Romanos 5:12",
+      "text": "Assim como por um só homem o pecado entrou no mundo, e pelo pecado a morte, assim também a morte passou a todos os homens, visto que todos pecaram."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A morte ficou longe das pessoas"
+      },
+      {
+        "id": "b",
+        "text": "O pecado alcançou toda a humanidade"
+      },
+      {
+        "id": "c",
+        "text": "Só Adão sofreu pelo pecado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Nos dois textos, o pecado não é caso isolado; alcança todas as pessoas.",
+    "feedbackWrong": {
+      "a": "Romanos 5 diz que a morte passou a todos os homens.",
+      "c": "O pecado de um alcançou todos; não ficou só com Adão."
+    },
+    "hint": "Veja quem o pecado alcança nos dois textos.",
+    "learningObjective": "Relacionar o pecado de todos em Romanos 3 e 5.",
+    "evidence": [
+      "Romanos 3:23",
+      "Romanos 5:12"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-02-queda-01",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 3:23–24 ensina que cada pessoa pode justificar a si mesma pelas próprias obras.",
+    "prompt": "Romanos 3:23–24 ensina que cada pessoa pode justificar a si mesma pelas próprias obras.",
+    "cue": "Romanos 3:23–24 ensina que cada pessoa pode justificar a si mesma pelas próprias obras.",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "Ninguém se justifica a si mesmo; Deus justifica pela graça, em Cristo.",
+    "feedbackWrong": {
+      "true": "Releia como a justificação acontece e de quem ela vem."
+    },
+    "hint": "Veja quem age na justificação descrita.",
+    "learningObjective": "Interpretar a justificação como obra da graça, não do esforço.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-02-queda-02",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 3:24, toque a palavra que mostra que a justificação não é comprada.",
+    "prompt": "Em Romanos 3:24, toque a palavra que mostra que a justificação não é comprada.",
+    "cue": "Em Romanos 3:24, toque a palavra que mostra que a justificação não é comprada.",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "redenção"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "gratuitamente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "justificados gratuitamente",
+    "feedbackCorrect": "A justificação é recebida de graça, não comprada por ninguém.",
+    "feedbackWrong": {
+      "a": "Isso diz onde a justificação está, não que ela é de graça.",
+      "b": "Isso nomeia em quem há redenção, não o caráter gratuito."
+    },
+    "hint": "Procure como são justificados, não em quem.",
+    "learningObjective": "Sustentar com o texto o caráter gratuito da justificação.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-02-queda-03",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 3:23–24 sustenta sobre a situação humana?",
+    "prompt": "Que leitura Romanos 3:23–24 sustenta sobre a situação humana?",
+    "cue": "Que leitura Romanos 3:23–24 sustenta sobre a situação humana?",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos pecaram, mas Deus oferece graça em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Algumas pessoas não precisam da graça de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus justifica apenas quem nunca errou na vida"
+      },
+      {
+        "id": "d",
+        "text": "As boas obras apagam sozinhas o pecado humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Todos pecaram, e o mesmo trecho anuncia graça em Cristo Jesus.",
+    "feedbackWrong": {
+      "b": "O texto abrange todos no pecado e oferece graça em Cristo.",
+      "c": "Quem é justificado é pecador alcançado pela graça de Deus.",
+      "d": "A justificação é gratuita pela graça, não efeito das obras."
+    },
+    "hint": "Junte a primeira metade do trecho com a segunda.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre todos.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-02-queda-04",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 3:23–24?",
+    "prompt": "Qual sequência revela o sentido de Romanos 3:23–24?",
+    "cue": "Qual sequência revela o sentido de Romanos 3:23–24?",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos pecaram e carecem da glória de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus justifica gratuitamente pela sua graça"
+      },
+      {
+        "id": "c",
+        "text": "A redenção acontece em Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "através da redenção que há em Cristo Jesus",
+    "feedbackCorrect": "Da falta de todos, o texto chega à graça que redime em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pela falta de todos; Cristo fecha a sequência."
+    },
+    "hint": "Cristo Jesus é o ponto de chegada do trecho.",
+    "learningObjective": "Ver o encadeamento entre pecado, graça e Cristo.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-02-queda-05",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 3:24, que palavra mostra de onde vem a justificação gratuita?",
+    "prompt": "Em Romanos 3:24, que palavra mostra de onde vem a justificação gratuita?",
+    "cue": "Em Romanos 3:24, que palavra mostra de onde vem a justificação gratuita?",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "template": "sendo justificados gratuitamente, por sua ___, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "força"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "sorte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por sua graça",
+    "feedbackCorrect": "A justificação gratuita vem da graça de Deus, em Cristo Jesus.",
+    "feedbackWrong": {
+      "a": "Não é a força humana; o texto aponta para Deus.",
+      "c": "Não é acaso; o texto nomeia a fonte em Deus."
+    },
+    "hint": "Veja a fonte citada antes da redenção.",
+    "learningObjective": "Lembrar o termo que carrega o sentido do trecho.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-02-queda-06",
+    "trail": "antropologia",
+    "section": "an-02-queda",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 3:24 a Romanos 5:8?",
+    "prompt": "O que liga Romanos 3:24 a Romanos 5:8?",
+    "cue": "O que liga Romanos 3:24 a Romanos 5:8?",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "passageA": {
+      "ref": "Romanos 3:24",
+      "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+    },
+    "passageB": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morreu por pecadores"
+      },
+      {
+        "id": "b",
+        "text": "Deus espera pessoas perfeitas"
+      },
+      {
+        "id": "c",
+        "text": "O amor dispensa a cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "redenção que há em Cristo Jesus",
+    "feedbackCorrect": "A redenção em Cristo é a morte dele por nós, ainda pecadores.",
+    "feedbackWrong": {
+      "b": "Cristo morreu por nós sendo nós ainda pecadores, diz o texto.",
+      "c": "O amor de Deus se mostra justamente na morte de Cristo."
+    },
+    "hint": "Veja por quem Cristo morreu no segundo texto.",
+    "learningObjective": "Ligar a redenção em Cristo ao amor de Deus por pecadores.",
+    "evidence": [
+      "Romanos 3:24",
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-03-nova-01",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Efésios 2:8, os crentes são salvos pela graça por meio da fé.",
+    "prompt": "Em Efésios 2:8, os crentes são salvos pela graça por meio da fé.",
+    "cue": "Em Efésios 2:8, os crentes são salvos pela graça por meio da fé.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pela graça vocês são salvos, por meio da fé",
+    "feedbackCorrect": "Paulo junta as duas coisas ao falar de como Deus salva.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 2:8, sobre como vocês são salvos."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar que a salvação é pela graça, mediante a fé.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-03-nova-02",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Efésios 2:10, toque a expressão que mostra o propósito da nova criação.",
+    "prompt": "Em Efésios 2:10, toque a expressão que mostra o propósito da nova criação.",
+    "cue": "Em Efésios 2:10, toque a expressão que mostra o propósito da nova criação.",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "boas obras"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "obra de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Deus recria seu povo em Cristo com esse propósito prático.",
+    "feedbackWrong": {
+      "b": "Isso diz em quem somos criados, não para quê.",
+      "c": "Isso diz quem somos, não o propósito citado depois."
+    },
+    "hint": "Procure o para quê no meio do versículo.",
+    "learningObjective": "Identificar o propósito de ser criado em Cristo.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-03-nova-03",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+    "prompt": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+    "cue": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do dom de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Da fé em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Da graça de Deus"
+      },
+      {
+        "id": "d",
+        "text": "De obras humanas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "Paulo exclui as obras como base para ninguém se gloriar.",
+    "feedbackWrong": {
+      "a": "O dom de Deus é afirmado em 2:8, não excluído aqui.",
+      "b": "A fé é o meio citado em 2:8, não o que é excluído aqui.",
+      "c": "A graça é justamente a base afirmada no versículo anterior."
+    },
+    "hint": "Leia o motivo dado no fim do versículo.",
+    "learningObjective": "Observar que a salvação não resulta de obras.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-03-nova-04",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Efésios 2:8 na ordem do texto.",
+    "prompt": "Monte Efésios 2:8 na ordem do texto.",
+    "cue": "Monte Efésios 2:8 na ordem do texto.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque pela graça vocês são salvos"
+      },
+      {
+        "id": "b",
+        "text": "por meio da fé"
+      },
+      {
+        "id": "c",
+        "text": "é um dom de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque pela graça vocês são salvos",
+    "feedbackCorrect": "Pela graça, por meio da fé, e tudo isso é dom de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela graça; o dom de Deus fecha o versículo."
+    },
+    "hint": "O versículo começa explicando como são salvos.",
+    "learningObjective": "Reconhecer a sequência de Efésios 2:8.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-03-nova-05",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Efésios 2:8, complete a base da salvação citada por Paulo.",
+    "prompt": "Em Efésios 2:8, complete a base da salvação citada por Paulo.",
+    "cue": "Em Efésios 2:8, complete a base da salvação citada por Paulo.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "template": "Porque pela ___ vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sorte"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "força"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "A base citada é favor de Deus, não força nem acaso humano.",
+    "feedbackWrong": {
+      "a": "Não é acaso; o texto nomeia a fonte da salvação.",
+      "c": "Não é a força de quem crê; o texto aponta para Deus."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Lembrar a base da salvação em Efésios 2:8.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-03-nova-06",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Efésios 2:10 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:10 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:10 comunica que se liga a este contexto?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "passageA": {
+      "ref": "Efésios 2:10",
+      "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus preparou boas obras para o seu povo viver nelas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Criados para boas obras"
+      },
+      {
+        "id": "b",
+        "text": "Salvos pelas próprias obras"
+      },
+      {
+        "id": "c",
+        "text": "Livres de qualquer prática"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Somos obra de Deus, criados em Cristo com esse propósito.",
+    "feedbackWrong": {
+      "b": "As obras são o propósito, não o preço da salvação.",
+      "c": "O propósito inclui prática preparada por Deus."
+    },
+    "hint": "Veja para que somos criados em Cristo.",
+    "learningObjective": "Ligar a nova criação ao propósito das boas obras.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-03-nova-01",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Efésios 2:8–9, a salvação vem pela graça e não como resultado de obras humanas.",
+    "prompt": "Em Efésios 2:8–9, a salvação vem pela graça e não como resultado de obras humanas.",
+    "cue": "Em Efésios 2:8–9, a salvação vem pela graça e não como resultado de obras humanas.",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "A graça salva como dom, e por isso ninguém pode se gloriar.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos, do dom de Deus à exclusão das obras."
+    },
+    "hint": "Junte o dom do primeiro versículo com o segundo.",
+    "learningObjective": "Compreender graça e obras em contraste no trecho.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-03-nova-02",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Efésios 2:13, toque a palavra que marca a virada de longe para perto.",
+    "prompt": "Em Efésios 2:13, toque a palavra que marca a virada de longe para perto.",
+    "cue": "Em Efésios 2:13, toque a palavra que marca a virada de longe para perto.",
+    "verseRef": "Efésios 2:13",
+    "passageText": "Mas agora, em Cristo Jesus, vocês que antes estavam distantes, foram aproximados pelo sangue de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "agora"
+      },
+      {
+        "id": "c",
+        "text": "distantes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas agora, em Cristo Jesus",
+    "feedbackCorrect": "Essa palavra abre a virada de distantes para aproximados.",
+    "feedbackWrong": {
+      "b": "Isso marca o tempo da virada, não a virada em si.",
+      "c": "Isso descreve como estavam antes, não a virada."
+    },
+    "hint": "É a palavra inicial do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Efésios 2:13.",
+    "evidence": [
+      "Efésios 2:13"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-03-nova-03",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Efésios 2:10 se relaciona com Efésios 2:9?",
+    "prompt": "Como Efésios 2:10 se relaciona com Efésios 2:9?",
+    "cue": "Como Efésios 2:10 se relaciona com Efésios 2:9?",
+    "verseRef": "Efésios 2:9–10",
+    "passageText": "não é resultado de obras, para que ninguém se glorie. Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem é salvo deve evitar qualquer boa ação na vida"
+      },
+      {
+        "id": "b",
+        "text": "Deus salva quem consegue se gloriar mais dos feitos"
+      },
+      {
+        "id": "c",
+        "text": "As boas obras compram a salvação de quem crê em Cristo"
+      },
+      {
+        "id": "d",
+        "text": "As boas obras são o caminho preparado, não o preço da salvação"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "As obras não compram a salvação; são o caminho que Deus preparou.",
+    "feedbackWrong": {
+      "a": "O propósito de Deus inclui boas obras preparadas para andar nelas.",
+      "b": "O texto exclui justamente qualquer motivo para se gloriar.",
+      "c": "O versículo anterior diz que a salvação não é resultado de obras."
+    },
+    "hint": "Compare preço pago com caminho preparado para andar.",
+    "learningObjective": "Relacionar salvação gratuita e boas obras preparadas.",
+    "evidence": [
+      "Efésios 2:9–10"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-03-nova-04",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em Efésios 2:8–9?",
+    "prompt": "Como avança o ensino em Efésios 2:8–9?",
+    "cue": "Como avança o ensino em Efésios 2:8–9?",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvos pela graça mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "Isso não vem do esforço humano"
+      },
+      {
+        "id": "c",
+        "text": "Ninguém tem motivo para se gloriar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que ninguém se glorie",
+    "feedbackCorrect": "Da graça que salva, Paulo chega à exclusão de todo orgulho humano.",
+    "feedbackWrong": {
+      "default": "Comece pela graça que salva; o orgulho excluído fecha o trecho."
+    },
+    "hint": "O fim do trecho fala de ninguém se gloriar.",
+    "learningObjective": "Compreender o movimento da graça à humildade.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-03-nova-05",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Efésios 2:9, a salvação não resulta de que esforço humano?",
+    "prompt": "Em Efésios 2:9, a salvação não resulta de que esforço humano?",
+    "cue": "Em Efésios 2:9, a salvação não resulta de que esforço humano?",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "template": "não é resultado de ___, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "oração"
+      },
+      {
+        "id": "c",
+        "text": "leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "Paulo exclui esse esforço como base, para ninguém se gloriar.",
+    "feedbackWrong": {
+      "b": "O texto não cita essa prática aqui; exclui a base humana em geral.",
+      "c": "O texto não cita essa prática aqui; fala da base da salvação."
+    },
+    "hint": "Veja o que Paulo exclui como base.",
+    "learningObjective": "Compreender o que não serve de base para a salvação.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-03-nova-06",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Efésios 2:10 a Tito 3:5?",
+    "prompt": "O que liga Efésios 2:10 a Tito 3:5?",
+    "cue": "O que liga Efésios 2:10 a Tito 3:5?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "passageA": {
+      "ref": "Efésios 2:10",
+      "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+    },
+    "passageB": {
+      "ref": "Tito 3:5",
+      "text": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação pela misericórdia de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Salvação comprada por obras humanas"
+      },
+      {
+        "id": "c",
+        "text": "Deus salva sem renovar ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "somos obra de Deus, criados em Cristo Jesus",
+    "feedbackCorrect": "Nos dois textos, Deus salva e renova por misericórdia, não por obras.",
+    "feedbackWrong": {
+      "b": "Tito nega obras de justiça como base; a base é a misericórdia.",
+      "c": "Tito fala de lavar renovador; Deus salva renovando a pessoa."
+    },
+    "hint": "Veja a base da salvação no segundo texto.",
+    "learningObjective": "Relacionar nova criação e misericórdia que salva.",
+    "evidence": [
+      "Efésios 2:10",
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-03-nova-01",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Efésios 2:10 ensina que as boas obras são o pagamento que compra a salvação.",
+    "prompt": "Efésios 2:10 ensina que as boas obras são o pagamento que compra a salvação.",
+    "cue": "Efésios 2:10 ensina que as boas obras são o pagamento que compra a salvação.",
+    "verseRef": "Efésios 2:9–10",
+    "passageText": "não é resultado de obras, para que ninguém se glorie. Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "As obras são o propósito de quem Deus recriou, não pagamento a Deus.",
+    "feedbackWrong": {
+      "true": "Releia a ordem do trecho, da graça recebida às obras preparadas."
+    },
+    "hint": "Veja se as obras vêm antes ou depois de ser salvo.",
+    "learningObjective": "Interpretar as boas obras como propósito, não pagamento.",
+    "evidence": [
+      "Efésios 2:9–10"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-03-nova-02",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Efésios 2:8, toque o trecho que mostra que a salvação é presente de Deus.",
+    "prompt": "Em Efésios 2:8, toque o trecho que mostra que a salvação é presente de Deus.",
+    "cue": "Em Efésios 2:8, toque o trecho que mostra que a salvação é presente de Deus.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meio da fé"
+      },
+      {
+        "id": "b",
+        "text": "vocês são salvos"
+      },
+      {
+        "id": "c",
+        "text": "dom de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "A salvação é presente de Deus, não conquista de quem crê.",
+    "feedbackWrong": {
+      "a": "Isso mostra o meio, não o caráter de presente dado por Deus.",
+      "b": "Isso afirma o fato de serem salvos, não que é presente."
+    },
+    "hint": "Procure como o versículo chama isso no fim.",
+    "learningObjective": "Sustentar com o texto que a salvação é dom de Deus.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-03-nova-03",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Efésios 2:8–9 sustenta sobre quem é salvo?",
+    "prompt": "Que leitura Efésios 2:8–9 sustenta sobre quem é salvo?",
+    "cue": "Que leitura Efésios 2:8–9 sustenta sobre quem é salvo?",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pode se gloriar de ter alcançado a salvação"
+      },
+      {
+        "id": "b",
+        "text": "Recebe de Deus um presente que não comprou"
+      },
+      {
+        "id": "c",
+        "text": "Dispensa a fé por já ter boas intenções"
+      },
+      {
+        "id": "d",
+        "text": "Conquista de Deus um salário pelos seus feitos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "Quem é salvo recebe um dom gratuito, sem motivo de orgulho.",
+    "feedbackWrong": {
+      "a": "O texto fecha essa porta para ninguém se gloriar de si.",
+      "c": "O meio citado no texto é a confiança em Deus, não intenções.",
+      "d": "Dom não é salário; o texto exclui resultado de obras."
+    },
+    "hint": "Compare presente recebido com salário conquistado.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o dom.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-03-nova-04",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Efésios 2:10?",
+    "prompt": "Qual sequência revela o sentido de Efésios 2:10?",
+    "cue": "Qual sequência revela o sentido de Efésios 2:10?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvos pela graça como dom de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Recriados em Cristo Jesus por Deus"
+      },
+      {
+        "id": "c",
+        "text": "Andando nas boas obras preparadas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Primeiro o dom recebido, depois a nova criação e a prática preparada.",
+    "feedbackWrong": {
+      "default": "Comece pelo dom de Deus; a prática preparada fecha a sequência."
+    },
+    "hint": "A prática vem depois de ser recriado em Cristo.",
+    "learningObjective": "Ver o encadeamento entre graça, nova criação e prática.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-03-nova-05",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Efésios 2:10, que verbo mostra que Deus planejou antes as boas obras?",
+    "prompt": "Em Efésios 2:10, que verbo mostra que Deus planejou antes as boas obras?",
+    "cue": "Em Efésios 2:10, que verbo mostra que Deus planejou antes as boas obras?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "template": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão ___ para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vendeu"
+      },
+      {
+        "id": "b",
+        "text": "escondeu"
+      },
+      {
+        "id": "c",
+        "text": "preparou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus de antemão preparou para que andássemos nelas",
+    "feedbackCorrect": "As boas obras foram planejadas por Deus antes de andarmos nelas.",
+    "feedbackWrong": {
+      "a": "Nada é vendido aqui; Deus prepara o caminho do seu povo.",
+      "b": "Deus não as ocultou do seu povo; ele as dispôs para andar nelas."
+    },
+    "hint": "Veja a palavra que indica antecedência junto ao verbo.",
+    "learningObjective": "Lembrar o termo que carrega o propósito de Deus.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-03-nova-06",
+    "trail": "antropologia",
+    "section": "an-03-nova",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Efésios 2:10 a 2 Coríntios 5:17?",
+    "prompt": "O que liga Efésios 2:10 a 2 Coríntios 5:17?",
+    "cue": "O que liga Efésios 2:10 a 2 Coríntios 5:17?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "passageA": {
+      "ref": "Efésios 2:10",
+      "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 5:17",
+      "text": "Portanto, se alguém está em Cristo, é uma nova criação; as coisas antigas já passaram; eis que tudo se tornou novo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova criação em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Criação sem mudança prática"
+      },
+      {
+        "id": "c",
+        "text": "Volta à vida antiga"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "criados em Cristo Jesus",
+    "feedbackCorrect": "Nos dois textos, estar em Cristo é ser feito novo por Deus.",
+    "feedbackWrong": {
+      "b": "A nova criação inclui andar nas obras que Deus preparou.",
+      "c": "Paulo diz que as coisas antigas já passaram em Cristo."
+    },
+    "hint": "Veja o que acontece com quem está em Cristo.",
+    "learningObjective": "Ligar a obra de Deus em Cristo à nova criação.",
+    "evidence": [
+      "Efésios 2:10",
+      "2 Coríntios 5:17"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-01",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gênesis 1:27, Deus criou apenas o homem à sua imagem e a mulher teve outra origem diferente.",
+    "prompt": "Em Gênesis 1:27, Deus criou apenas o homem à sua imagem e a mulher teve outra origem diferente.",
+    "cue": "Em Gênesis 1:27, Deus criou apenas o homem à sua imagem e a mulher teve outra origem diferente.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "homem e mulher os criou",
+    "feedbackCorrect": "Deus criou homem e mulher no mesmo relato da sua imagem.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1:27, onde os dois são criados por Deus."
+    },
+    "hint": "Repare em quem aparece no fim do versículo.",
+    "learningObjective": "Revisar que homem e mulher foram criados por Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-02",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+    "prompt": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+    "cue": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o homem"
+      },
+      {
+        "id": "b",
+        "text": "sua imagem"
+      },
+      {
+        "id": "c",
+        "text": "homem e mulher"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "homem e mulher os criou",
+    "feedbackCorrect": "Deus criou homem e mulher, e os dois estão no relato da sua imagem.",
+    "feedbackWrong": {
+      "a": "Isso aparece antes; o fim do versículo amplia quem Deus criou.",
+      "b": "Isso mostra à semelhança de quem, não quem foi criado no fim."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Revisar homem e mulher como criados por Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-03",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 3:23, qual é a situação de todos diante de Deus?",
+    "prompt": "Segundo Romanos 3:23, qual é a situação de todos diante de Deus?",
+    "cue": "Segundo Romanos 3:23, qual é a situação de todos diante de Deus?",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém pecou de verdade diante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Só alguns poucos carecem da glória de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Todos pecaram e carecem da glória de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Todos foram aprovados pelas próprias obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todos pecaram e carecem da glória de Deus",
+    "feedbackCorrect": "Paulo inclui todas as pessoas na mesma falta diante de Deus.",
+    "feedbackWrong": {
+      "a": "O texto afirma justamente que todos pecaram.",
+      "b": "O texto abrange todos, sem deixar alguns de fora.",
+      "d": "As obras não aprovam ninguém; a justificação é pela graça."
+    },
+    "hint": "Leia a afirmação inteira do versículo.",
+    "learningObjective": "Revisar que todos pecaram diante de Deus.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-04",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Efésios 2:8 na ordem do texto.",
+    "prompt": "Monte Efésios 2:8 na ordem do texto.",
+    "cue": "Monte Efésios 2:8 na ordem do texto.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque pela graça vocês são salvos"
+      },
+      {
+        "id": "b",
+        "text": "por meio da fé"
+      },
+      {
+        "id": "c",
+        "text": "é um dom de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque pela graça vocês são salvos",
+    "feedbackCorrect": "Pela graça, por meio da fé, e tudo isso é dom de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela graça; o dom de Deus fecha o versículo."
+    },
+    "hint": "O versículo começa explicando como são salvos.",
+    "learningObjective": "Revisar a sequência de Efésios 2:8.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-05",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Efésios 2:8, complete a base da salvação citada por Paulo.",
+    "prompt": "Em Efésios 2:8, complete a base da salvação citada por Paulo.",
+    "cue": "Em Efésios 2:8, complete a base da salvação citada por Paulo.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "template": "Porque pela ___ vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "força"
+      },
+      {
+        "id": "b",
+        "text": "sorte"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "A base citada é favor de Deus, não força nem acaso humano.",
+    "feedbackWrong": {
+      "a": "Não é a força de quem crê; o texto aponta para Deus.",
+      "b": "Não é acaso; o texto nomeia a fonte da salvação."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Revisar a base da salvação em Efésios 2:8.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-06",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gênesis 1:27 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:27 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:27 comunica que se liga a este contexto?",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "passageA": {
+      "ref": "Gênesis 1:27",
+      "text": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Todo ser humano possui dignidade porque foi criado por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só alguns têm valor"
+      },
+      {
+        "id": "b",
+        "text": "A dignidade vem de Deus"
+      },
+      {
+        "id": "c",
+        "text": "O valor depende da força"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "à imagem de Deus o criou",
+    "feedbackCorrect": "Criado à imagem de Deus, cada ser humano recebe dele sua dignidade.",
+    "feedbackWrong": {
+      "a": "O texto abrange homem e mulher criados por Deus.",
+      "c": "O valor vem de Deus criar, não da força da pessoa."
+    },
+    "hint": "Veja à semelhança de quem Deus criou.",
+    "learningObjective": "Revisar a dignidade de quem foi criado por Deus.",
+    "evidence": [
+      "Gênesis 1:27"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-07",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, toque a palavra que mostra quem o pecado alcançou.",
+    "prompt": "Em Romanos 3:23, toque a palavra que mostra quem o pecado alcançou.",
+    "cue": "Em Romanos 3:23, toque a palavra que mostra quem o pecado alcançou.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Ninguém fica de fora da afirmação de Paulo sobre o pecado.",
+    "feedbackWrong": {
+      "b": "Isso é aquilo de que carecem, não quem pecou.",
+      "c": "Deus é aquele diante de quem carecem da glória."
+    },
+    "hint": "Procure quem está incluído na afirmação.",
+    "learningObjective": "Revisar o alcance do pecado sobre as pessoas.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-sem-an-boss-08",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 3:23–24 na ordem do texto.",
+    "prompt": "Monte Romanos 3:23–24 na ordem do texto.",
+    "cue": "Monte Romanos 3:23–24 na ordem do texto.",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque todos pecaram"
+      },
+      {
+        "id": "b",
+        "text": "e carecem da glória de Deus"
+      },
+      {
+        "id": "c",
+        "text": "sendo justificados gratuitamente, por sua graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Todos pecaram, carecem da glória e são justificados pela graça.",
+    "feedbackWrong": {
+      "default": "Comece pelo pecado de todos; a graça fecha o trecho."
+    },
+    "hint": "A graça aparece depois da falta da glória.",
+    "learningObjective": "Revisar a sequência de Romanos 3:23–24.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-01",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 3:23–24, todos carecem da glória de Deus e são justificados gratuitamente por sua graça.",
+    "prompt": "Em Romanos 3:23–24, todos carecem da glória de Deus e são justificados gratuitamente por sua graça.",
+    "cue": "Em Romanos 3:23–24, todos carecem da glória de Deus e são justificados gratuitamente por sua graça.",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "O trecho junta a falta de todos com a graça que justifica em Cristo.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos juntos, da falta de todos à graça."
+    },
+    "hint": "Leia os dois versículos como uma frase só.",
+    "learningObjective": "Relacionar o pecado de todos com a graça de Deus.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-02",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 3:23, toque a palavra que abre a explicação de Paulo.",
+    "prompt": "Em Romanos 3:23, toque a palavra que abre a explicação de Paulo.",
+    "cue": "Em Romanos 3:23, toque a palavra que abre a explicação de Paulo.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque"
+      },
+      {
+        "id": "b",
+        "text": "pecaram"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Porque todos pecaram",
+    "feedbackCorrect": "Essa palavra abre a explicação da falta da glória de Deus.",
+    "feedbackWrong": {
+      "b": "Isso diz o que fizeram, não a abertura da explicação.",
+      "c": "Isso diz quem pecou, não a palavra que abre a explicação."
+    },
+    "hint": "É a palavra inicial do versículo.",
+    "learningObjective": "Reconhecer o marcador que explica a falta da glória.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-03",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Efésios 2:10 se relaciona com Efésios 2:9?",
+    "prompt": "Como Efésios 2:10 se relaciona com Efésios 2:9?",
+    "cue": "Como Efésios 2:10 se relaciona com Efésios 2:9?",
+    "verseRef": "Efésios 2:9–10",
+    "passageText": "não é resultado de obras, para que ninguém se glorie. Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As boas obras compram o direito de ser salvo por Deus"
+      },
+      {
+        "id": "b",
+        "text": "As boas obras são caminho preparado, não preço pago a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê deve abandonar toda boa prática na vida"
+      },
+      {
+        "id": "d",
+        "text": "A salvação serve para exaltar quem a recebe de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "As obras não compram a salvação; são o caminho que Deus preparou.",
+    "feedbackWrong": {
+      "a": "O versículo anterior diz que a salvação não é resultado de obras.",
+      "c": "O propósito de Deus inclui boas obras preparadas para andar nelas.",
+      "d": "O texto exclui justamente qualquer motivo para se gloriar."
+    },
+    "hint": "Compare preço pago com caminho preparado para andar.",
+    "learningObjective": "Relacionar salvação gratuita e boas obras preparadas.",
+    "evidence": [
+      "Efésios 2:9–10"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-04",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a história revisada neste desafio?",
+    "prompt": "Como se encadeia a história revisada neste desafio?",
+    "cue": "Como se encadeia a história revisada neste desafio?",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ser humano é criado por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Todos pecaram e carecem da glória"
+      },
+      {
+        "id": "c",
+        "text": "Deus justifica gratuitamente pela graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Criado por Deus, o ser humano pecou e é alcançado pela graça.",
+    "feedbackWrong": {
+      "default": "Comece pela criação; a graça de Deus fecha a história."
+    },
+    "hint": "A graça é o ponto de chegada da história.",
+    "learningObjective": "Compreender o encadeamento de criação, pecado e graça.",
+    "evidence": [
+      "Gênesis 1:27",
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-05",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 3:22, por meio de que a justiça de Deus alcança quem crê?",
+    "prompt": "Em Romanos 3:22, por meio de que a justiça de Deus alcança quem crê?",
+    "cue": "Em Romanos 3:22, por meio de que a justiça de Deus alcança quem crê?",
+    "verseRef": "Romanos 3:22",
+    "passageText": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "template": "Isto é, a justiça de Deus por meio da ___ em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "justiça de Deus por meio da fé em Jesus Cristo",
+    "feedbackCorrect": "A justiça de Deus alcança quem crê por meio da confiança em Cristo.",
+    "feedbackWrong": {
+      "a": "Paulo acabou de dizer que essa justiça independe da lei.",
+      "b": "Uma obra humana não é o meio citado ligado a Jesus Cristo."
+    },
+    "hint": "Procure o meio ligado a Jesus Cristo.",
+    "learningObjective": "Compreender o meio pelo qual a justiça alcança quem crê.",
+    "evidence": [
+      "Romanos 3:22"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-06",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 3:23 a Romanos 5:12?",
+    "prompt": "O que liga Romanos 3:23 a Romanos 5:12?",
+    "cue": "O que liga Romanos 3:23 a Romanos 5:12?",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "passageA": {
+      "ref": "Romanos 3:23",
+      "text": "Porque todos pecaram e carecem da glória de Deus,"
+    },
+    "passageB": {
+      "ref": "Romanos 5:12",
+      "text": "Assim como por um só homem o pecado entrou no mundo, e pelo pecado a morte, assim também a morte passou a todos os homens, visto que todos pecaram."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A morte ficou longe das pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Só Adão sofreu pelo pecado"
+      },
+      {
+        "id": "c",
+        "text": "O pecado alcançou toda a humanidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Nos dois textos, o pecado não é caso isolado; alcança todas as pessoas.",
+    "feedbackWrong": {
+      "a": "Romanos 5 diz que a morte passou a todos os homens.",
+      "b": "O pecado de um alcançou todos; não ficou só com Adão."
+    },
+    "hint": "Veja quem o pecado alcança nos dois textos.",
+    "learningObjective": "Relacionar o pecado de todos em Romanos 3 e 5.",
+    "evidence": [
+      "Romanos 3:23",
+      "Romanos 5:12"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-07",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Efésios 2:13, toque a palavra que marca a virada de longe para perto.",
+    "prompt": "Em Efésios 2:13, toque a palavra que marca a virada de longe para perto.",
+    "cue": "Em Efésios 2:13, toque a palavra que marca a virada de longe para perto.",
+    "verseRef": "Efésios 2:13",
+    "passageText": "Mas agora, em Cristo Jesus, vocês que antes estavam distantes, foram aproximados pelo sangue de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "agora"
+      },
+      {
+        "id": "b",
+        "text": "distantes"
+      },
+      {
+        "id": "c",
+        "text": "Mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas agora, em Cristo Jesus",
+    "feedbackCorrect": "Essa palavra abre a virada de distantes para aproximados.",
+    "feedbackWrong": {
+      "a": "Isso marca o tempo da virada, não a virada em si.",
+      "b": "Isso descreve como estavam antes, não a virada."
+    },
+    "hint": "É a palavra inicial do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Efésios 2:13.",
+    "evidence": [
+      "Efésios 2:13"
+    ]
+  },
+  {
+    "id": "antropologia-cam-an-boss-08",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a mudança contada em Efésios 2:12–13?",
+    "prompt": "Como avança a mudança contada em Efésios 2:12–13?",
+    "cue": "Como avança a mudança contada em Efésios 2:12–13?",
+    "verseRef": "Efésios 2:12–13",
+    "passageText": "Naquele tempo, vocês estavam sem Cristo, afastados da comunidade de Israel e estranhos às alianças da promessa, sem esperança e sem Deus no mundo. Mas agora, em Cristo Jesus, vocês que antes estavam distantes, foram aproximados pelo sangue de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem Cristo e afastados da comunidade"
+      },
+      {
+        "id": "b",
+        "text": "Sem esperança e sem Deus no mundo"
+      },
+      {
+        "id": "c",
+        "text": "Aproximados pelo sangue de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "foram aproximados pelo sangue de Cristo",
+    "feedbackCorrect": "Longe e sem esperança, eles foram aproximados em Cristo Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pela distância descrita; a aproximação fecha o trecho."
+    },
+    "hint": "A aproximação em Cristo é o ponto de chegada.",
+    "learningObjective": "Compreender a virada de distantes para aproximados.",
+    "evidence": [
+      "Efésios 2:12–13"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-01",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Efésios 2:10 ensina que as boas obras compram a salvação de quem crê em Cristo.",
+    "prompt": "Efésios 2:10 ensina que as boas obras compram a salvação de quem crê em Cristo.",
+    "cue": "Efésios 2:10 ensina que as boas obras compram a salvação de quem crê em Cristo.",
+    "verseRef": "Efésios 2:9–10",
+    "passageText": "não é resultado de obras, para que ninguém se glorie. Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "As obras são o propósito de quem Deus recriou, não pagamento a Deus.",
+    "feedbackWrong": {
+      "true": "Releia a ordem do trecho, da graça recebida às obras preparadas."
+    },
+    "hint": "Veja se as obras vêm antes ou depois de ser salvo.",
+    "learningObjective": "Interpretar as boas obras como propósito, não pagamento.",
+    "evidence": [
+      "Efésios 2:9–10"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-02",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 3:24, toque a palavra que mostra que a justificação não é comprada.",
+    "prompt": "Em Romanos 3:24, toque a palavra que mostra que a justificação não é comprada.",
+    "cue": "Em Romanos 3:24, toque a palavra que mostra que a justificação não é comprada.",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "b",
+        "text": "redenção"
+      },
+      {
+        "id": "c",
+        "text": "gratuitamente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "justificados gratuitamente",
+    "feedbackCorrect": "A justificação é recebida de graça, não comprada por ninguém.",
+    "feedbackWrong": {
+      "a": "Isso nomeia em quem há redenção, não o caráter gratuito.",
+      "b": "Isso diz onde a justificação está, não que ela é de graça."
+    },
+    "hint": "Procure como são justificados, não em quem.",
+    "learningObjective": "Sustentar o caráter gratuito da justificação dada por Deus.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-03",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o conjunto deste desafio sustenta sobre o ser humano?",
+    "prompt": "Que leitura o conjunto deste desafio sustenta sobre o ser humano?",
+    "cue": "Que leitura o conjunto deste desafio sustenta sobre o ser humano?",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem foi criado por Deus nunca precisa de graça"
+      },
+      {
+        "id": "b",
+        "text": "Criado bom, ele tornou o pecado impossível"
+      },
+      {
+        "id": "c",
+        "text": "O pecado apagou todo valor de quem Deus fez"
+      },
+      {
+        "id": "d",
+        "text": "Criado por Deus, ele pecou e precisa da graça"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Criado por Deus, o ser humano pecou e é alcançado pela graça.",
+    "feedbackWrong": {
+      "a": "Todos carecem da glória e precisam ser justificados pela graça.",
+      "b": "Paulo afirma que todos pecaram, mesmo criados por Deus.",
+      "c": "A imagem continua citada depois da queda, em Gênesis 9:6."
+    },
+    "hint": "Junte criação, pecado e graça na mesma história.",
+    "learningObjective": "Escolher a leitura que junta criação, pecado e graça.",
+    "evidence": [
+      "Gênesis 1:27",
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-04",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do ser humano neste desafio?",
+    "prompt": "Qual sequência revela o caminho do ser humano neste desafio?",
+    "cue": "Qual sequência revela o caminho do ser humano neste desafio?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Criado à imagem de Deus com dignidade"
+      },
+      {
+        "id": "b",
+        "text": "Alcançado pelo pecado como todos"
+      },
+      {
+        "id": "c",
+        "text": "Recriado em Cristo para boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Criado com dignidade, alcançado pelo pecado e recriado em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pela criação com dignidade; a nova vida fecha o caminho."
+    },
+    "hint": "A nova vida em Cristo é o ponto de chegada.",
+    "learningObjective": "Ver criação, queda e nova vida como um só caminho.",
+    "evidence": [
+      "Gênesis 1:27",
+      "Romanos 3:23",
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-05",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+    "prompt": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+    "cue": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+    "verseRef": "Gênesis 1:26",
+    "passageText": "Então Deus disse: Façamos o homem à nossa imagem, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "template": "Então Deus disse: Façamos o homem à nossa ___, conforme a nossa semelhança; e que ele tenha domínio sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam sobre a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "história"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "imagem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Façamos o homem à nossa imagem",
+    "feedbackCorrect": "Deus faz o ser humano à sua própria imagem, ligado a ele.",
+    "feedbackWrong": {
+      "a": "O texto não fala disso aqui; fala da ligação com Deus.",
+      "b": "O texto não usa essa palavra aqui; usa a que liga a Deus."
+    },
+    "hint": "Releia a fala de Deus antes da criação.",
+    "learningObjective": "Lembrar o termo que liga o ser humano a Deus.",
+    "evidence": [
+      "Gênesis 1:26"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-06",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Efésios 2:10 a 2 Coríntios 5:17?",
+    "prompt": "O que liga Efésios 2:10 a 2 Coríntios 5:17?",
+    "cue": "O que liga Efésios 2:10 a 2 Coríntios 5:17?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "passageA": {
+      "ref": "Efésios 2:10",
+      "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 5:17",
+      "text": "Portanto, se alguém está em Cristo, é uma nova criação; as coisas antigas já passaram; eis que tudo se tornou novo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Volta à vida antiga"
+      },
+      {
+        "id": "b",
+        "text": "Criação sem mudança prática"
+      },
+      {
+        "id": "c",
+        "text": "Nova criação em Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "criados em Cristo Jesus",
+    "feedbackCorrect": "Nos dois textos, estar em Cristo é ser feito novo por Deus.",
+    "feedbackWrong": {
+      "a": "Paulo diz que as coisas antigas já passaram em Cristo.",
+      "b": "A nova criação inclui andar nas obras que Deus preparou."
+    },
+    "hint": "Veja o que acontece com quem está em Cristo.",
+    "learningObjective": "Ligar a obra de Deus em Cristo à nova criação.",
+    "evidence": [
+      "Efésios 2:10",
+      "2 Coríntios 5:17"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-07",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Efésios 2:8, toque o trecho que mostra que a salvação é presente de Deus.",
+    "prompt": "Em Efésios 2:8, toque o trecho que mostra que a salvação é presente de Deus.",
+    "cue": "Em Efésios 2:8, toque o trecho que mostra que a salvação é presente de Deus.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocês são salvos"
+      },
+      {
+        "id": "b",
+        "text": "dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "meio da fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "A salvação é presente de Deus, não conquista de quem crê.",
+    "feedbackWrong": {
+      "a": "Isso afirma o fato de serem salvos, não que é presente.",
+      "c": "Isso mostra o meio, não o caráter de presente dado por Deus."
+    },
+    "hint": "Procure como o versículo chama isso no fim.",
+    "learningObjective": "Sustentar que a salvação é presente dado por Deus.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "antropologia-pro-an-boss-08",
+    "trail": "antropologia",
+    "section": "an-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus neste desafio?",
+    "prompt": "Qual sequência revela o cuidado de Deus neste desafio?",
+    "cue": "Qual sequência revela o cuidado de Deus neste desafio?",
+    "verseRef": "Gênesis 1:27",
+    "passageText": "E Deus criou o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus reafirma sua marca depois da queda"
+      },
+      {
+        "id": "b",
+        "text": "Paulo diz que todos pecaram"
+      },
+      {
+        "id": "c",
+        "text": "Cristo aproxima quem estava distante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "à imagem de Deus o criou",
+    "feedbackCorrect": "A marca de Deus permanece, o pecado é dito e Cristo aproxima os distantes.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia, de Gênesis a Paulo e à nova vida em Cristo."
+    },
+    "hint": "Comece por Gênesis e termine na aproximação em Cristo.",
+    "learningObjective": "Ver dignidade, pecado e aproximação como fio bíblico.",
+    "evidence": [
+      "Gênesis 1:27",
+      "Gênesis 9:6",
+      "Efésios 2:13"
+    ]
+  }
+]

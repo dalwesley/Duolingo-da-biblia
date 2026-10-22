@@ -1,0 +1,67 @@
+Escreva a cena "rute-lealdade-01-rute-e-noemi" da trilha "rute" (Rute).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "rute",
+  "title": "Rute",
+  "description": "Lealdade, redenção e a linhagem de Davi.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Lealdade",
+ "mission": {
+  "slug": "rute-lealdade-01-rute-e-noemi",
+  "title": "Rute e Noemi",
+  "type": "lesson",
+  "intro": "Teu Deus será o meu Deus.",
+  "hookRef": "Rute 1:16",
+  "hookNote": "Teu Deus será o meu Deus.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre rute?"
+ },
+ "v2": {
+  "passageRef": "Rute 1:16",
+  "context": "Teu Deus será o meu Deus.",
+  "keyword": "Rute",
+  "verseRefs": [
+   "Rute 1:16"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Rute 1:13–19"
+ ],
+ "verses": [
+  {
+   "ref": "Rute 1:13",
+   "text": "Vocês esperariam que eu tivesse filhos para que eles se tornassem grandes? Não, minhas filhas! Afinal, isso seria ainda mais amargo para mim do que para vocês, pois a mão do Senhor se voltou contra mim."
+  },
+  {
+   "ref": "Rute 1:14",
+   "text": "Então, levantaram a voz e tornaram a chorar; Órfa se despediu de sua sogra com um beijo, mas Rute se apegou a ela."
+  },
+  {
+   "ref": "Rute 1:15",
+   "text": "Disse Noemi: Eis que tua cunhada voltou ao seu povo e aos seus deuses; também você, volta após a sua cunhada."
+  },
+  {
+   "ref": "Rute 1:16",
+   "text": "Disse, porém, Rute: Não me instes para que te deixe e me obrigue a não seguir-te; porque, aonde quer que tu fores, eu irei, e onde quer que pousares à noite, ali pousarei eu; o teu povo é o meu povo, e o teu Deus é o meu Deus."
+  },
+  {
+   "ref": "Rute 1:17",
+   "text": "Onde quer que morreres, morrerei eu; ali serei sepultada. Que o SENHOR me trate com o que lhe aprouver, se algo além da morte me separar de ti."
+  },
+  {
+   "ref": "Rute 1:18",
+   "text": "Vendo, pois, Noemi que de todo estava decidida a acompanhá-la, deixou de insistir com ela."
+  },
+  {
+   "ref": "Rute 1:19",
+   "text": "Assim, partiram ambas até que chegaram a Belém. Ao chegarem ali, toda a cidade se comoveu por causa delas, e as mulheres perguntavam: \"Não é esta Noemi?\""
+  }
+ ]
+}
+</cena>

@@ -909,8 +909,9 @@ class _ExercisePanelState extends State<ExercisePanel>
             label: context.l10n.exerciseCheck,
             onTap: canConfirm && !waiting ? _confirmChoice : null,
             trailing: null,
-            // Ouro sempre: antes da escolha só não responde ao toque.
-            decorative: !canConfirm || waiting,
+            // Sem escolha: desligado à vista (vidro fosco). Conferindo: segue
+            // ouro, só não responde ao toque.
+            decorative: waiting,
           ),
         ),
       ],

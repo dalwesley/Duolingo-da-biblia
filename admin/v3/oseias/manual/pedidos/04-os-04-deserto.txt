@@ -1,0 +1,71 @@
+Escreva a cena "os-04-deserto" da trilha "oseias" (Oséias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "oseias",
+  "title": "Oséias",
+  "description": "Amor fiel de Deus a um povo adúltero.",
+  "realm": "antigo-testamento"
+ },
+ "block": "O pai",
+ "mission": {
+  "slug": "os-04-deserto",
+  "title": "Falarei ao coração",
+  "type": "lesson",
+  "intro": "Depois da acusação, Jeová diz que vai atrair, levar ao deserto e abrir uma porta de esperança.",
+  "hookRef": "Oséias 2:14–15",
+  "hookNote": "O deserto, aqui, não é abandono. É o lugar onde ele volta a falar ao coração.",
+  "centralInsight": "Deus corteja o infiel de volta",
+  "objective": "Sair sabendo que Jeová atrai a infiel e promete esperança."
+ },
+ "v2": {
+  "passageRef": "Oséias 2:14–15",
+  "context": "Jeová atrai, leva ao deserto, fala ao coração e dá o vale de Acor como porta de esperança.",
+  "keyword": "Esperança",
+  "verseRefs": [
+   "Oséias 2:14–15"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Oseias 2:11–18"
+ ],
+ "verses": [
+  {
+   "ref": "Oseias 2:11",
+   "text": "E farei cessar toda a sua alegria, as suas festas de Lua Nova, os seus sábados e todas as suas solenidades."
+  },
+  {
+   "ref": "Oseias 2:12",
+   "text": "E devastarei a sua vide e a sua figueira, das quais ela diz: Esta é a paga que me deram os meus amantes; assim, farei delas um bosque, e as bestas-feras do campo as devorarão."
+  },
+  {
+   "ref": "Oseias 2:13",
+   "text": "Visitarei os dias em que ela queimou incenso a Baal, se adornou com seus pendentes e suas joias, e seguiu seus amantes; mas de mim se esqueceu, diz o SENHOR."
+  },
+  {
+   "ref": "Oseias 2:14",
+   "text": "Portanto, eis que a atrairei e a levarei ao deserto, e ali lhe falarei ao coração."
+  },
+  {
+   "ref": "Oseias 2:15",
+   "text": "E lhe darei as suas vinhas de lá, e o vale de Acor como porta de esperança; ali ela cantará como nos dias da sua mocidade, e como no dia em que subiu da terra do Egito."
+  },
+  {
+   "ref": "Oseias 2:16",
+   "text": "E acontecerá que, nesse dia, diz o SENHOR, você me chamará: Meu marido; e não me chamará mais: Meu Baal."
+  },
+  {
+   "ref": "Oseias 2:17",
+   "text": "E eu removerei da boca deles os nomes dos Baalins, e não serão mais recordados."
+  },
+  {
+   "ref": "Oseias 2:18",
+   "text": "Naquele dia, farei uma aliança com as feras do campo, com as aves do céu e com os répteis da terra; eliminarei o arco, a espada e a guerra, e farei o meu povo repousar em segurança."
+  }
+ ]
+}
+</cena>

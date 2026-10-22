@@ -1,0 +1,75 @@
+Escreva a cena "mt-02-reino-ensino" da trilha "mateus" (Mateus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "mateus",
+  "title": "Mateus",
+  "description": "O Rei prometido — cumprimento e o Sermão do Monte.",
+  "realm": "novo-testamento"
+ },
+ "block": "Mateus",
+ "mission": {
+  "slug": "mt-02-reino-ensino",
+  "title": "O Reino e seu ensino",
+  "type": "lesson",
+  "intro": "Jesus ensina a vida do Reino: os discípulos dependem do Pai, praticam justiça e ouvem suas palavras.",
+  "hookRef": "O Reino e seu ensino",
+  "hookNote": "Jesus ensina a vida do Reino: os discípulos dependem do Pai, praticam justiça e ouvem suas palavras.",
+  "centralInsight": "No Sermão do Monte, Jesus não oferece um caminho para merecer Deus; ele descreve a vida daqueles que pertencem ao Reino e dependem dele.",
+  "objective": "O Sermão do Monte"
+ },
+ "v2": {
+  "passageRef": "O Reino e seu ensino",
+  "context": "Jesus ensina a vida do Reino: os discípulos dependem do Pai, praticam justiça e ouvem suas palavras.",
+  "keyword": "Reino",
+  "verseRefs": [
+   "Mateus 5:3–6"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:1–9"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:1",
+   "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+  },
+  {
+   "ref": "Mateus 5:2",
+   "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+  },
+  {
+   "ref": "Mateus 5:3",
+   "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:4",
+   "text": "Bem-aventurados os que choram, porque serão consolados."
+  },
+  {
+   "ref": "Mateus 5:5",
+   "text": "Bem-aventurados os mansos, porque herdarão a terra."
+  },
+  {
+   "ref": "Mateus 5:6",
+   "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+  },
+  {
+   "ref": "Mateus 5:7",
+   "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+  },
+  {
+   "ref": "Mateus 5:8",
+   "text": "Bem-aventurados os puros de coração, pois verão a Deus."
+  },
+  {
+   "ref": "Mateus 5:9",
+   "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+  }
+ ]
+}
+</cena>

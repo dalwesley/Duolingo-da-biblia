@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Joel 2:25–28",
+  "passages": [
+   {
+    "ref": "Joel 2:25–28"
+   },
+   {
+    "ref": "Joel 1:6"
+   },
+   {
+    "ref": "Joel 2:30–31"
+   }
+  ],
+  "context": "Joel fala a um povo que viu a terra devastada por gafanhotos. No trecho, Deus promete restituir os anos perdidos, estar no meio do povo e derramar o seu Espírito.",
+  "keyword": "gafanhoto",
+  "keywordGloss": "Inseto que devora a colheita; no texto, a praga é chamada de grande exército enviado por Deus.",
+  "focusQuestion": "Diante de uma perda que você não consegue reparar, o que muda ao lembrar que Deus promete estar presente?",
+  "reflectionPrompts": [
+   "Anos que a praga comeu",
+   "Deus no meio do povo",
+   "O Espírito sobre todos"
+  ],
+  "facts": [
+   {
+    "text": "Deus promete restituir os anos consumidos pelos devoradores.",
+    "evidenceRef": "Joel 2:25",
+    "evidenceSpan": "restituirei a vocês os anos"
+   },
+   {
+    "text": "O povo comerá em abundância e louvará o nome do Senhor.",
+    "evidenceRef": "Joel 2:26",
+    "evidenceSpan": "comerão em abundância"
+   },
+   {
+    "text": "Deus afirma estar no meio de Israel.",
+    "evidenceRef": "Joel 2:27",
+    "evidenceSpan": "estou no meio de Israel"
+   },
+   {
+    "text": "Deus derramará o seu Espírito sobre toda a carne.",
+    "evidenceRef": "Joel 2:28",
+    "evidenceSpan": "derramarei o meu Espírito sobre toda a carne"
+   },
+   {
+    "text": "Sinais no sol e na lua vêm antes do grande Dia do Senhor.",
+    "evidenceRef": "Joel 2:31",
+    "evidenceSpan": "antes que venha o grande e temível Dia do Senhor"
+   },
+   {
+    "text": "Uma nação poderosa e inumerável veio contra a terra.",
+    "evidenceRef": "Joel 1:6",
+    "evidenceSpan": "uma nação veio contra a minha terra"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "gafanhoto",
+    "gloss": "Devorador da colheita que, no texto, Deus chama de seu grande exército."
+   },
+   {
+    "term": "Espírito",
+    "gloss": "Presença ativa de Deus, prometida sobre toda a carne, sem exceção de grupo."
+   },
+   {
+    "term": "Dia do Senhor",
+    "gloss": "Dia em que Deus age com juízo e salvação, anunciado pelos sinais do texto."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Anos consumidos pela praga",
+    "evidenceRef": "Joel 2:25"
+   },
+   {
+    "label": "Fartura que vira louvor",
+    "evidenceRef": "Joel 2:26"
+   },
+   {
+    "label": "Deus presente no meio do povo",
+    "evidenceRef": "Joel 2:27"
+   },
+   {
+    "label": "Sinais antes do grande Dia",
+    "evidenceRef": "Joel 2:31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A invasão é explicada como uma nação que veio contra a terra de Deus.",
+    "marker": "Porque",
+    "evidenceRef": "Joel 1:6"
+   },
+   {
+    "kind": "sequência",
+    "text": "Só depois da restauração anunciada vem a promessa do Espírito sobre todos.",
+    "marker": "depois",
+    "evidenceRef": "Joel 2:28"
+   },
+   {
+    "kind": "resultado",
+    "text": "A fartura prometida leva o povo a louvar o nome do Senhor.",
+    "marker": null,
+    "evidenceRef": "Joel 2:26"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Atos 2:17",
+    "bridge": "Pedro cita Joel no Pentecostes"
+   },
+   {
+    "ref": "Isaías 44:3",
+    "bridge": "Deus derrama o seu Espírito"
+   },
+   {
+    "ref": "Romanos 10:13",
+    "bridge": "Invocar o nome do Senhor"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Os gafanhotos podem ser identificados, com certeza, a um exército ou país de hoje.",
+    "why": "O texto chama a praga de grande exército de Deus, sem nomear nenhum povo atual."
+   },
+   {
+    "text": "A promessa garante fartura material automática a qualquer leitor, em qualquer tempo.",
+    "why": "A promessa fala ao povo após o juízo e termina em louvor, não em garantia de riqueza."
+   },
+   {
+    "text": "O Dia do Senhor já se esgotou por completo na praga de gafanhotos.",
+    "why": "O texto distingue a praga dos sinais que vêm antes do grande e temível Dia."
+   }
+  ],
+  "centralInsight": "Deus restitui os anos da praga e derrama o Espírito sobre todos",
+  "anchorQuestion": "O que Deus promete restituir em Joel 2:25, e sobre quem ele derrama o Espírito em 2:28?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Joel 2:26, o povo comerá em abundância e louvará o nome do Senhor.",
+   "verseRef": "Joel 2:26",
+   "correctOptionId": "true",
+   "evidenceSpan": "comerão em abundância",
+   "feedbackCorrect": "O texto liga a fartura ao louvor pelo nome do Senhor, seu Deus.",
+   "feedbackWrong": {
+    "false": "Releia Joel 2:26 e veja a fartura seguida de louvor ao Senhor."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Observar a promessa de fartura e louvor em Joel 2:26.",
+   "evidence": [
+    "Joel 2:26"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Joel 1:6, toque quem veio contra a terra de Deus.",
+   "verseRef": "Joel 1:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "uma nação"
+    },
+    {
+     "id": "b",
+     "text": "leão"
+    },
+    {
+     "id": "c",
+     "text": "minha terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "uma nação veio contra a minha terra",
+   "feedbackCorrect": "Uma nação poderosa e inumerável é quem sobe contra a terra.",
+   "feedbackWrong": {
+    "b": "Leão compara os dentes do invasor, não nomeia quem veio.",
+    "c": "A terra é o alvo atingido, não quem veio contra ela."
+   },
+   "hint": "Procure quem subiu contra a terra.",
+   "learningObjective": "Identificar quem invade a terra em Joel 1:6.",
+   "evidence": [
+    "Joel 1:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Joel 2:31, o que acontece antes do grande Dia do Senhor?",
+   "verseRef": "Joel 2:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo volta a plantar a terra"
+    },
+    {
+     "id": "b",
+     "text": "Os gafanhotos deixam a terra"
+    },
+    {
+     "id": "c",
+     "text": "O Espírito é derramado sobre os servos"
+    },
+    {
+     "id": "d",
+     "text": "O sol vira trevas e a lua, sangue"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "O sol se tornará em trevas e a lua em sangue",
+   "feedbackCorrect": "Sol e lua mudam antes que venha o grande e temível Dia.",
+   "feedbackWrong": {
+    "a": "Plantar de novo não é o sinal citado neste versículo.",
+    "b": "A saída da praga não é o sinal que o versículo anuncia.",
+    "c": "Os servos recebem o Espírito em 2:29, não neste sinal."
+   },
+   "hint": "Olhe os dois astros citados no versículo.",
+   "learningObjective": "Observar os sinais que antecedem o Dia do Senhor.",
+   "evidence": [
+    "Joel 2:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Joel 2:28 na ordem do texto.",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "derramarei o meu Espírito sobre toda a carne"
+    },
+    {
+     "id": "b",
+     "text": "os vossos filhos e filhas profetizarão"
+    },
+    {
+     "id": "c",
+     "text": "os vossos velhos sonharão"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+   "feedbackCorrect": "Primeiro o derramamento, depois filhos profetizando e velhos sonhando.",
+   "feedbackWrong": {
+    "default": "Comece pelo derramamento sobre toda a carne, no início do verso."
+   },
+   "hint": "O versículo começa com a ação de Deus.",
+   "learningObjective": "Reconhecer a sequência de Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Joel 2:30, o que Deus mostrará no céu e na terra?",
+   "verseRef": "Joel 2:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "castigos"
+    },
+    {
+     "id": "b",
+     "text": "exércitos"
+    },
+    {
+     "id": "c",
+     "text": "prodígios"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Mostrarei prodígios no céu e na terra",
+   "feedbackCorrect": "Deus anuncia sinais extraordinários no céu e também na terra.",
+   "feedbackWrong": {
+    "a": "O texto fala do que Deus mostrará, não de castigos nomeados assim.",
+    "b": "Exército nomeia a praga em 2:25, não o que Deus mostra aqui."
+   },
+   "hint": "Leia o primeiro verbo e o que vem logo depois dele.",
+   "learningObjective": "Lembrar o que Deus mostrará em Joel 2:30.",
+   "evidence": [
+    "Joel 2:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Joel 1:6 comunica que se liga a este contexto?",
+   "verseRef": "Joel 1:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Colheita guardada com fartura"
+    },
+    {
+     "id": "b",
+     "text": "Invasão que devora a terra"
+    },
+    {
+     "id": "c",
+     "text": "Exército que protege a terra"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "uma nação veio contra a minha terra",
+   "feedbackCorrect": "A força invasora devora a terra como a praga devora a colheita.",
+   "feedbackWrong": {
+    "a": "O versículo fala de invasão, não de colheita guardada.",
+    "c": "Quem vem contra a terra a devora, não a protege."
+   },
+   "hint": "Veja o efeito de quem veio contra a terra.",
+   "learningObjective": "Ligar Joel 1:6 à perda que atinge a terra.",
+   "evidence": [
+    "Joel 1:6"
+   ],
+   "passageA": {
+    "ref": "Joel 1:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Uma praga devoradora atingiu a terra como força invasora."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Joel 2:25–26, a restauração prometida termina no comer, sem louvor a Deus.",
+   "verseRef": "Joel 2:26",
+   "correctOptionId": "false",
+   "evidenceSpan": "louvarão o nome do Senhor",
+   "feedbackCorrect": "A fartura não termina em si mesma, pois o povo louva o Senhor.",
+   "feedbackWrong": {
+    "true": "Releia o meio de 2:26, onde comer vem junto com louvar."
+   },
+   "hint": "Não pare na primeira parte do versículo.",
+   "learningObjective": "Compreender que a restauração leva ao louvor.",
+   "evidence": [
+    "Joel 2:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Joel 2:28, toque a palavra que marca o tempo da promessa do Espírito.",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre"
+    },
+    {
+     "id": "b",
+     "text": "depois"
+    },
+    {
+     "id": "c",
+     "text": "toda"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "depois, derramarei",
+   "feedbackCorrect": "A promessa é situada num tempo posterior ao que veio antes.",
+   "feedbackWrong": {
+    "a": "Sobre indica sobre quem, não o momento da promessa.",
+    "c": "Toda indica o alcance, não o momento da promessa."
+   },
+   "hint": "Procure a palavra de tempo logo no começo.",
+   "learningObjective": "Reconhecer o marcador de tempo em Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Joel 2:27 se relaciona com a promessa de Joel 2:26?",
+   "verseRef": "Joel 2:26–27",
+   "options": [
+    {
+     "id": "a",
+     "text": "Depois da fartura, o povo saberá que Deus está com ele"
+    },
+    {
+     "id": "b",
+     "text": "Depois da fartura, o povo já não precisa de Deus"
+    },
+    {
+     "id": "c",
+     "text": "A fartura prova que Deus se afastou de Israel"
+    },
+    {
+     "id": "d",
+     "text": "O louvor é trocado pela vergonha do povo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "E vocês saberão que estou no meio de Israel",
+   "feedbackCorrect": "À fartura segue o reconhecimento de que Deus está no meio do povo.",
+   "feedbackWrong": {
+    "b": "O texto aproxima o povo de Deus, não o afasta dele.",
+    "c": "Deus se mostra presente no meio de Israel, não ausente.",
+    "d": "O texto diz que o povo jamais será envergonhado."
+   },
+   "hint": "Leia o começo do versículo seguinte ao da fartura.",
+   "learningObjective": "Relacionar fartura, louvor e presença de Deus.",
+   "evidence": [
+    "Joel 2:26–27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a promessa em Joel 2:25–27?",
+   "verseRef": "Joel 2:25–26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Anos consumidos pela praga"
+    },
+    {
+     "id": "b",
+     "text": "Comer com fartura e louvar"
+    },
+    {
+     "id": "c",
+     "text": "Saber que Deus está no meio"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "restituirei a vocês os anos",
+   "feedbackCorrect": "Da perda dos anos, o texto passa à fartura e à presença de Deus.",
+   "feedbackWrong": {
+    "default": "Comece pelos anos consumidos, citados no primeiro versículo."
+   },
+   "hint": "Siga a ordem dos três versículos seguidos.",
+   "learningObjective": "Compreender o avanço da promessa de restauração.",
+   "evidence": [
+    "Joel 2:25–27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Joel 2:27, como o povo de Deus nunca será, segundo a promessa?",
+   "verseRef": "Joel 2:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "envergonhado"
+    },
+    {
+     "id": "b",
+     "text": "abandonado"
+    },
+    {
+     "id": "c",
+     "text": "esquecido"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu povo nunca será envergonhado",
+   "feedbackCorrect": "A presença de Deus no meio do povo afasta a vergonha prometida.",
+   "feedbackWrong": {
+    "b": "Deus afirma estar no meio de Israel, não ter abandonado o povo.",
+    "c": "O povo saberá quem Deus é, não será deixado sem memória dele."
+   },
+   "hint": "Leia a última afirmação do versículo.",
+   "learningObjective": "Lembrar o fim da vergonha prometido em Joel 2:27.",
+   "evidence": [
+    "Joel 2:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Joel 2:28 a Atos 2:17?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Espírito só para sacerdotes"
+    },
+    {
+     "id": "b",
+     "text": "Sinais sem o Espírito"
+    },
+    {
+     "id": "c",
+     "text": "Espírito derramado sobre todos"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+   "feedbackCorrect": "Pedro cita Joel para falar do Espírito derramado no Pentecostes.",
+   "feedbackWrong": {
+    "a": "Joel fala de toda a carne, não de um grupo restrito.",
+    "b": "Nos dois textos o centro é o Espírito derramado por Deus."
+   },
+   "hint": "Compare quem recebe, nos dois trechos.",
+   "learningObjective": "Relacionar a promessa de Joel ao Pentecostes em Atos.",
+   "evidence": [
+    "Joel 2:28",
+    "Atos 2:17"
+   ],
+   "passageA": {
+    "ref": "Joel 2:28"
+   },
+   "passageB": {
+    "ref": "Atos 2:17"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Joel 2:30–31 apresenta sinais no céu antes do grande e temível Dia do Senhor.",
+   "verseRef": "Joel 2:31",
+   "correctOptionId": "true",
+   "evidenceSpan": "antes que venha o grande e temível Dia do Senhor",
+   "feedbackCorrect": "Os sinais são colocados antes da vinda do grande Dia.",
+   "feedbackWrong": {
+    "false": "Releia o fim de 2:31 e a ordem entre sinais e o Dia."
+   },
+   "hint": "Repare na palavra que marca o que vem primeiro.",
+   "learningObjective": "Interpretar os sinais como anteriores ao Dia do Senhor.",
+   "evidence": [
+    "Joel 2:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Joel 2:29, toque um grupo que também recebe o Espírito.",
+   "verseRef": "Joel 2:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "meu Espírito"
+    },
+    {
+     "id": "b",
+     "text": "os servos"
+    },
+    {
+     "id": "c",
+     "text": "naqueles dias"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "sobre os servos e sobre as servas",
+   "feedbackCorrect": "Até quem servia recebe o Espírito prometido por Deus.",
+   "feedbackWrong": {
+    "a": "O Espírito é o que é derramado, não um grupo de pessoas.",
+    "c": "Isso marca o tempo, não um grupo que recebe o Espírito."
+   },
+   "hint": "Procure pessoas, não o dom nem o tempo.",
+   "learningObjective": "Sustentar que servos também recebem o Espírito.",
+   "evidence": [
+    "Joel 2:29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Joel 2:28 sustenta sobre quem recebe o Espírito?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Filhos, filhas, velhos e jovens são alcançados"
+    },
+    {
+     "id": "b",
+     "text": "Só profetas de profissão recebem o Espírito"
+    },
+    {
+     "id": "c",
+     "text": "Só homens adultos recebem o Espírito"
+    },
+    {
+     "id": "d",
+     "text": "Só os líderes do povo recebem o Espírito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sobre toda a carne",
+   "feedbackCorrect": "A lista mistura idade e sexo para mostrar alcance amplo.",
+   "feedbackWrong": {
+    "b": "Filhos, filhas, velhos e jovens entram, não só profetas.",
+    "c": "Filhas são nomeadas junto com filhos no versículo.",
+    "d": "O texto abre a promessa para muito além dos líderes."
+   },
+   "hint": "Veja a variedade de pessoas nomeadas no versículo.",
+   "learningObjective": "Escolher a leitura que o alcance de Joel 2:28 sustenta.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da restauração em Joel?",
+   "verseRef": "Joel 2:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Praga consome os anos da terra"
+    },
+    {
+     "id": "b",
+     "text": "Deus promete restituir os anos"
+    },
+    {
+     "id": "c",
+     "text": "Deus derrama o Espírito sobre todos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "restituirei a vocês os anos",
+   "feedbackCorrect": "A perda não fecha a história, pois Deus restitui e derrama o Espírito.",
+   "feedbackWrong": {
+    "default": "Comece pela perda dos anos, antes de qualquer promessa."
+   },
+   "hint": "Siga o movimento de Joel 2:25 até 2:28.",
+   "learningObjective": "Ver a restauração como caminho que culmina no Espírito.",
+   "evidence": [
+    "Joel 2:25",
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Joel 2:31, como é chamado o Dia do Senhor que vem?",
+   "verseRef": "Joel 2:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "próximo"
+    },
+    {
+     "id": "b",
+     "text": "temível"
+    },
+    {
+     "id": "c",
+     "text": "esperado"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o grande e temível Dia do Senhor",
+   "feedbackCorrect": "O Dia é grande e inspira temor, segundo o próprio texto.",
+   "feedbackWrong": {
+    "a": "O texto qualifica o Dia pelo seu peso, não pela distância.",
+    "c": "Esperado não é a palavra que o versículo usa para o Dia."
+   },
+   "hint": "Leia os dois adjetivos dados ao Dia.",
+   "learningObjective": "Lembrar como Joel qualifica o Dia do Senhor.",
+   "evidence": [
+    "Joel 2:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Joel 2:28 a Isaías 44:3?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus derrama o seu Espírito"
+    },
+    {
+     "id": "b",
+     "text": "Deus retém o seu Espírito"
+    },
+    {
+     "id": "c",
+     "text": "O povo produz o Espírito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "derramarei o meu Espírito",
+   "feedbackCorrect": "Nos dois textos é Deus quem toma a iniciativa de derramar.",
+   "feedbackWrong": {
+    "b": "Os dois textos falam de derramar, não de reter o dom.",
+    "c": "O Espírito é dom de Deus, não produção do povo."
+   },
+   "hint": "Veja quem age do mesmo modo nos dois trechos.",
+   "learningObjective": "Ligar a promessa do Espírito em Joel e em Isaías.",
+   "evidence": [
+    "Joel 2:28",
+    "Isaías 44:3"
+   ],
+   "passageA": {
+    "ref": "Joel 2:28"
+   },
+   "passageB": {
+    "ref": "Isaías 44:3"
+   }
+  }
+ ]
+}

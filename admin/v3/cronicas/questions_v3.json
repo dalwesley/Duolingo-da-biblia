@@ -1,0 +1,4060 @@
+[
+  {
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-01",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Crônicas 15:15, os levitas trouxeram a arca sobre os ombros com as varas que nela estavam",
+    "prompt": "Em 1 Crônicas 15:15, os levitas trouxeram a arca sobre os ombros com as varas que nela estavam",
+    "cue": "Em 1 Crônicas 15:15, os levitas trouxeram a arca sobre os ombros com as varas que nela estavam",
+    "verseRef": "1 Crônicas 15:15",
+    "passageText": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "trouxeram a arca de Deus sobre os ombros",
+    "feedbackCorrect": "O texto mostra a arca levada sobre os ombros, do modo ordenado.",
+    "feedbackWrong": {
+      "false": "Releia 1 Crônicas 15:15 e veja sobre o que a arca foi trazida."
+    },
+    "hint": "Leia como a arca foi transportada.",
+    "learningObjective": "Observar como a arca foi levada pelos levitas.",
+    "evidence": [
+      "1 Crônicas 15:15"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-02",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Crônicas 15:15, toque quem trouxe a arca de Deus",
+    "prompt": "Em 1 Crônicas 15:15, toque quem trouxe a arca de Deus",
+    "cue": "Em 1 Crônicas 15:15, toque quem trouxe a arca de Deus",
+    "verseRef": "1 Crônicas 15:15",
+    "passageText": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ombros"
+      },
+      {
+        "id": "b",
+        "text": "filhos dos levitas"
+      },
+      {
+        "id": "c",
+        "text": "varas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os filhos dos levitas trouxeram a arca de Deus",
+    "feedbackCorrect": "São os filhos dos levitas que trazem a arca, como Deus ordenou.",
+    "feedbackWrong": {
+      "a": "Isso diz onde a arca foi apoiada, não quem a levou.",
+      "c": "Isso é parte do modo de levar, não quem leva."
+    },
+    "hint": "Procure quem faz a ação no começo do versículo.",
+    "learningObjective": "Identificar quem transportou a arca.",
+    "evidence": [
+      "1 Crônicas 15:15"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-03",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Crônicas 15:16, com o que os cantores deviam se fazer ouvir?",
+    "prompt": "Segundo 1 Crônicas 15:16, com o que os cantores deviam se fazer ouvir?",
+    "cue": "Segundo 1 Crônicas 15:16, com o que os cantores deviam se fazer ouvir?",
+    "verseRef": "1 Crônicas 15:16",
+    "passageText": "E Davi disse aos príncipes dos levitas que estabelecessem seus irmãos, os cantores, com instrumentos musicais, como alaúdes, harpas e címbalos, para que se fizessem ouvir e levantassem a voz com alegria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alaúdes, harpas e címbalos"
+      },
+      {
+        "id": "b",
+        "text": "Vozes sem nenhum instrumento"
+      },
+      {
+        "id": "c",
+        "text": "Flautas e tambores de festa"
+      },
+      {
+        "id": "d",
+        "text": "Trombetas de guerra apenas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os cantores, com instrumentos musicais, como alaúdes, harpas e címbalos",
+    "feedbackCorrect": "Davi estabelece cantores com alaúdes, harpas e címbalos para louvar.",
+    "feedbackWrong": {
+      "b": "O texto fala de instrumentos musicais junto com a voz.",
+      "c": "O versículo nomeia alaúdes, harpas e címbalos.",
+      "d": "Trombetas aparecem com sacerdotes, mas o versículo cita outros instrumentos."
+    },
+    "hint": "Leia a lista no meio do versículo.",
+    "learningObjective": "Observar os instrumentos do louvor organizado por Davi.",
+    "evidence": [
+      "1 Crônicas 15:16"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-04",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Crônicas 15:28 na ordem do texto",
+    "prompt": "Monte 1 Crônicas 15:28 na ordem do texto",
+    "cue": "Monte 1 Crônicas 15:28 na ordem do texto",
+    "verseRef": "1 Crônicas 15:28",
+    "passageText": "E assim, todo o Israel fez subir com júbilo a arca da Aliança do Senhor, ao som de clarins, de trombetas e címbalos, ressoando com alaúdes e harpas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todo o Israel fez subir com júbilo a arca da Aliança do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "ao som de clarins, de trombetas e címbalos"
+      },
+      {
+        "id": "c",
+        "text": "ressoando com alaúdes e harpas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todo o Israel fez subir com júbilo a arca da Aliança do Senhor",
+    "feedbackCorrect": "Israel sobe com a arca em júbilo, ao som de muitos instrumentos.",
+    "feedbackWrong": {
+      "default": "Comece por todo o Israel subindo com a arca; os sons vêm depois."
+    },
+    "hint": "O versículo começa por quem sobe com a arca.",
+    "learningObjective": "Reconhecer a sequência de 1 Crônicas 15:28.",
+    "evidence": [
+      "1 Crônicas 15:28"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-05",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Crônicas 16:1, onde a arca foi colocada no centro do que Davi preparou?",
+    "prompt": "Em 1 Crônicas 16:1, onde a arca foi colocada no centro do que Davi preparou?",
+    "cue": "Em 1 Crônicas 16:1, onde a arca foi colocada no centro do que Davi preparou?",
+    "verseRef": "1 Crônicas 16:1",
+    "passageText": "Então, introduziram a arca de Deus e a colocaram no centro da tenda que Davi havia preparado. E trouxeram holocaustos e sacrifícios pacíficos diante de Deus.",
+    "template": "Então, introduziram a arca de Deus e a colocaram no centro da ___ que Davi havia preparado. E trouxeram holocaustos e sacrifícios pacíficos diante de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "tenda"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a colocaram no centro da tenda que Davi havia preparado",
+    "feedbackCorrect": "A arca fica no centro da tenda que Davi havia preparado para ela.",
+    "feedbackWrong": {
+      "a": "A cidade é o lugar maior; o versículo nomeia a construção preparada.",
+      "c": "O templo ainda não existe; Davi preparou uma tenda."
+    },
+    "hint": "Pense no que Davi montou antes do templo.",
+    "learningObjective": "Lembrar onde a arca foi colocada em Jerusalém.",
+    "evidence": [
+      "1 Crônicas 16:1"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-06",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Crônicas 15:25 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 15:25 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 15:25 comunica que se liga a este contexto?",
+    "verseRef": "1 Crônicas 15:25",
+    "passageText": "E assim, Davi e os anciãos de Israel, juntamente com os capitães de mil, foram fazer subir a arca da aliança do Senhor, da casa de Obede-Edom, com alegria.",
+    "passageA": {
+      "ref": "1 Crônicas 15:25",
+      "text": "E assim, Davi e os anciãos de Israel, juntamente com os capitães de mil, foram fazer subir a arca da aliança do Senhor, da casa de Obede-Edom, com alegria."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi e todo o Israel trazem a arca para Jerusalém."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A arca sobe com alegria"
+      },
+      {
+        "id": "b",
+        "text": "A arca fica escondida"
+      },
+      {
+        "id": "c",
+        "text": "O povo abandona Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "foram fazer subir a arca da aliança do Senhor",
+    "feedbackCorrect": "Davi e Israel vão buscar a arca com alegria, não com medo ou desânimo.",
+    "feedbackWrong": {
+      "b": "A arca é trazida à vista de todo o Israel.",
+      "c": "O povo se reúne justamente para trazer a arca."
+    },
+    "hint": "Veja o sentimento que fecha o versículo.",
+    "learningObjective": "Ligar a subida da arca à alegria do povo.",
+    "evidence": [
+      "1 Crônicas 15:25"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-01",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Crônicas 15:13, Davi diz que a primeira tentativa falhou por falta de cantores e instrumentos",
+    "prompt": "Em 1 Crônicas 15:13, Davi diz que a primeira tentativa falhou por falta de cantores e instrumentos",
+    "cue": "Em 1 Crônicas 15:13, Davi diz que a primeira tentativa falhou por falta de cantores e instrumentos",
+    "verseRef": "1 Crônicas 15:13",
+    "passageText": "Pois, como vocês não a levaram na primeira vez, o SENHOR, nosso Deus, irrompeu contra nós, porque não o buscamos conforme nos foi ordenado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "porque não o buscamos conforme nos foi ordenado",
+    "feedbackCorrect": "A falha foi não buscar a Deus conforme ordenado, não falta de música.",
+    "feedbackWrong": {
+      "true": "Releia o motivo dado no fim de 1 Crônicas 15:13."
+    },
+    "hint": "Repare na explicação que Davi dá no fim.",
+    "learningObjective": "Compreender a causa da falha da primeira tentativa.",
+    "evidence": [
+      "1 Crônicas 15:13"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-02",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Crônicas 15:13, toque a palavra que introduz o motivo da falha",
+    "prompt": "Em 1 Crônicas 15:13, toque a palavra que introduz o motivo da falha",
+    "cue": "Em 1 Crônicas 15:13, toque a palavra que introduz o motivo da falha",
+    "verseRef": "1 Crônicas 15:13",
+    "passageText": "Pois, como vocês não a levaram na primeira vez, o SENHOR, nosso Deus, irrompeu contra nós, porque não o buscamos conforme nos foi ordenado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "primeira"
+      },
+      {
+        "id": "b",
+        "text": "porque"
+      },
+      {
+        "id": "c",
+        "text": "contra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque não o buscamos conforme nos foi ordenado",
+    "feedbackCorrect": "Essa palavra abre a explicação de Davi sobre o que deu errado.",
+    "feedbackWrong": {
+      "a": "Isso marca qual tentativa foi, não o motivo dela.",
+      "c": "Isso mostra contra quem Deus irrompeu, não o motivo."
+    },
+    "hint": "Procure a palavra que vem antes da explicação.",
+    "learningObjective": "Reconhecer o marcador de causa no texto.",
+    "evidence": [
+      "1 Crônicas 15:13"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-03",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Crônicas 15:14 se relaciona com a fala de Davi em 15:13?",
+    "prompt": "Como 1 Crônicas 15:14 se relaciona com a fala de Davi em 15:13?",
+    "cue": "Como 1 Crônicas 15:14 se relaciona com a fala de Davi em 15:13?",
+    "verseRef": "1 Crônicas 15:13–14",
+    "passageText": "Pois, como vocês não a levaram na primeira vez, o SENHOR, nosso Deus, irrompeu contra nós, porque não o buscamos conforme nos foi ordenado. Os sacerdotes e levitas, portanto, se santificaram para levar a arca do Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi troca os levitas por soldados do exército"
+      },
+      {
+        "id": "b",
+        "text": "A arca passa a ser levada de qualquer maneira"
+      },
+      {
+        "id": "c",
+        "text": "O povo desiste de trazer a arca para Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "O povo corrige o erro e se prepara como ordenado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Os sacerdotes e levitas, portanto, se santificaram",
+    "feedbackCorrect": "Depois de reconhecer o erro, sacerdotes e levitas se santificam para levar a arca.",
+    "feedbackWrong": {
+      "a": "São sacerdotes e levitas que se santificam, não soldados.",
+      "b": "A correção é buscar a Deus conforme foi ordenado.",
+      "c": "Eles se preparam justamente para levar a arca."
+    },
+    "hint": "Ligue a explicação de Davi à atitude seguinte.",
+    "learningObjective": "Relacionar o reconhecimento do erro à preparação dos levitas.",
+    "evidence": [
+      "1 Crônicas 15:13–14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-04",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em 1 Crônicas 15:15–16?",
+    "prompt": "Como avança a cena em 1 Crônicas 15:15–16?",
+    "cue": "Como avança a cena em 1 Crônicas 15:15–16?",
+    "verseRef": "1 Crônicas 15:15–16",
+    "passageText": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor. E Davi disse aos príncipes dos levitas que estabelecessem seus irmãos, os cantores, com instrumentos musicais, como alaúdes, harpas e címbalos, para que se fizessem ouvir e levantassem a voz com alegria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levitas trazem a arca sobre os ombros"
+      },
+      {
+        "id": "b",
+        "text": "Davi estabelece cantores entre os levitas"
+      },
+      {
+        "id": "c",
+        "text": "A voz se levanta com alegria no louvor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "trouxeram a arca de Deus sobre os ombros",
+    "feedbackCorrect": "Primeiro a arca é levada como ordenado, depois o louvor é organizado.",
+    "feedbackWrong": {
+      "default": "Comece pela arca nos ombros; a alegria do canto fecha o trecho."
+    },
+    "hint": "A arca vem antes da organização do canto.",
+    "learningObjective": "Compreender o avanço da subida da arca ao louvor.",
+    "evidence": [
+      "1 Crônicas 15:15–16"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-05",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Crônicas 15:15, como os levitas levaram a arca segundo a palavra do Senhor?",
+    "prompt": "Em 1 Crônicas 15:15, como os levitas levaram a arca segundo a palavra do Senhor?",
+    "cue": "Em 1 Crônicas 15:15, como os levitas levaram a arca segundo a palavra do Senhor?",
+    "verseRef": "1 Crônicas 15:15",
+    "passageText": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor.",
+    "template": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, ___ a ordem de Moisés, segundo a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conforme"
+      },
+      {
+        "id": "b",
+        "text": "contrariando"
+      },
+      {
+        "id": "c",
+        "text": "ignorando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conforme a ordem de Moisés, segundo a palavra do Senhor",
+    "feedbackCorrect": "Eles levam a arca conforme a ordem dada, corrigindo a primeira vez.",
+    "feedbackWrong": {
+      "b": "O texto mostra obediência à ordem, não oposição a ela.",
+      "c": "Eles seguem a palavra do Senhor, não a deixam de lado."
+    },
+    "hint": "Veja a palavra que liga o ato à ordem de Moisés.",
+    "learningObjective": "Compreender que a arca foi levada como Deus ordenou.",
+    "evidence": [
+      "1 Crônicas 15:15"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-06",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Crônicas 15:15 a Deuteronômio 10:8?",
+    "prompt": "O que liga 1 Crônicas 15:15 a Deuteronômio 10:8?",
+    "cue": "O que liga 1 Crônicas 15:15 a Deuteronômio 10:8?",
+    "verseRef": "1 Crônicas 15:15",
+    "passageText": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor.",
+    "passageA": {
+      "ref": "1 Crônicas 15:15",
+      "text": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 10:8",
+      "text": "Naquele tempo, o SENHOR separou a tribo de Levi para transportar a arca da Aliança do SENHOR, para estar diante do SENHOR, para servi-Lo e para abençoar em Seu nome até o dia de hoje."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Levitas separados para levar arca"
+      },
+      {
+        "id": "b",
+        "text": "Reis levam objetos sagrados"
+      },
+      {
+        "id": "c",
+        "text": "Arca guardada longe do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os filhos dos levitas trouxeram a arca de Deus",
+    "feedbackCorrect": "Nos dois textos, os levitas são os separados para carregar a arca.",
+    "feedbackWrong": {
+      "b": "Quem carrega a arca nos dois textos são levitas, não reis.",
+      "c": "A arca vai no meio do povo de Deus, não longe dele."
+    },
+    "hint": "Compare quem carrega a arca nos dois textos.",
+    "learningObjective": "Relacionar o serviço dos levitas em Crônicas e Deuteronômio.",
+    "evidence": [
+      "1 Crônicas 15:15",
+      "Deuteronômio 10:8"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-01",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Crônicas 15:2, Davi reconhece que só os levitas deviam transportar a arca porque o Senhor os elegeu para isso",
+    "prompt": "Em 1 Crônicas 15:2, Davi reconhece que só os levitas deviam transportar a arca porque o Senhor os elegeu para isso",
+    "cue": "Em 1 Crônicas 15:2, Davi reconhece que só os levitas deviam transportar a arca porque o Senhor os elegeu para isso",
+    "verseRef": "1 Crônicas 15:2",
+    "passageText": "Então, Davi disse: Ninguém pode transportar a arca de Deus, exceto os levitas; pois o Senhor os elegeu para levar a arca de Deus e para servi-Lo eternamente.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor os elegeu para levar a arca de Deus",
+    "feedbackCorrect": "Davi aprende que o serviço da arca pertence a quem o Senhor elegeu.",
+    "feedbackWrong": {
+      "false": "Releia quem o Senhor elegeu para levar a arca em 15:2."
+    },
+    "hint": "Veja quem o Senhor elegeu no versículo.",
+    "learningObjective": "Interpretar a eleição dos levitas para o serviço da arca.",
+    "evidence": [
+      "1 Crônicas 15:2"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-02",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Crônicas 16:4, toque a palavra que nomeia a função dos levitas diante da arca",
+    "prompt": "Em 1 Crônicas 16:4, toque a palavra que nomeia a função dos levitas diante da arca",
+    "cue": "Em 1 Crônicas 16:4, toque a palavra que nomeia a função dos levitas diante da arca",
+    "verseRef": "1 Crônicas 16:4",
+    "passageText": "E designou diante da arca do Senhor alguns dos levitas como ministros para que recordassem, louvassem e exaltassem o Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "arca"
+      },
+      {
+        "id": "b",
+        "text": "levitas"
+      },
+      {
+        "id": "c",
+        "text": "ministros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "alguns dos levitas como ministros",
+    "feedbackCorrect": "Os levitas são postos como ministros para recordar e louvar ao Senhor.",
+    "feedbackWrong": {
+      "a": "Isso é diante de quem servem, não a função deles.",
+      "b": "Isso diz quem eles são; a função nomeada vem depois de como."
+    },
+    "hint": "Procure como o texto chama os levitas designados.",
+    "learningObjective": "Sustentar com o texto o ministério contínuo diante da arca.",
+    "evidence": [
+      "1 Crônicas 16:4"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-03",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Crônicas 16:7–8 sustenta sobre o louvor diante da arca?",
+    "prompt": "Que leitura 1 Crônicas 16:7–8 sustenta sobre o louvor diante da arca?",
+    "cue": "Que leitura 1 Crônicas 16:7–8 sustenta sobre o louvor diante da arca?",
+    "verseRef": "1 Crônicas 16:7–8",
+    "passageText": "Naquele dia, Davi encarregou, pela primeira vez, Asafe e seus irmãos de louvar ao Senhor com hinos. Rendei graças ao Senhor, invocai o Seu nome, fazei conhecidos entre os povos os Seus feitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O louvor substitui a busca pela presença Deus"
+      },
+      {
+        "id": "b",
+        "text": "O louvor anuncia os feitos de Deus aos povos"
+      },
+      {
+        "id": "c",
+        "text": "O louvor esconde os feitos de Deus do povo"
+      },
+      {
+        "id": "d",
+        "text": "O louvor serve só para animar o rei Davi"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fazei conhecidos entre os povos os Seus feitos",
+    "feedbackCorrect": "O hino manda dar graças e fazer conhecidos entre os povos os feitos do Senhor.",
+    "feedbackWrong": {
+      "a": "O mesmo hino manda buscar continuamente a presença do Senhor.",
+      "c": "O mandato é o contrário, tornar os feitos conhecidos.",
+      "d": "O louvor é ao Senhor e anuncia os feitos dele, não anima um rei."
+    },
+    "hint": "Veja o que o hino manda fazer entre os povos.",
+    "learningObjective": "Escolher a interpretação que o hino de Davi sustenta.",
+    "evidence": [
+      "1 Crônicas 16:7–8"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-04",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da arca até o louvor contínuo?",
+    "prompt": "Qual sequência revela o caminho da arca até o louvor contínuo?",
+    "cue": "Qual sequência revela o caminho da arca até o louvor contínuo?",
+    "verseRef": "1 Crônicas 16:1",
+    "passageText": "Então, introduziram a arca de Deus e a colocaram no centro da tenda que Davi havia preparado. E trouxeram holocaustos e sacrifícios pacíficos diante de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A arca é levada sobre os ombros"
+      },
+      {
+        "id": "b",
+        "text": "A arca é posta no centro da tenda"
+      },
+      {
+        "id": "c",
+        "text": "Levitas louvam sem parar diante dela"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a colocaram no centro da tenda que Davi havia preparado",
+    "feedbackCorrect": "A arca chega como ordenado, ganha lugar no centro e recebe louvor contínuo.",
+    "feedbackWrong": {
+      "default": "Siga a chegada da arca até ela ficar no centro com louvor."
+    },
+    "hint": "Comece pelo transporte ordenado da arca.",
+    "learningObjective": "Ver a presença de Deus no centro como fruto da obediência.",
+    "evidence": [
+      "1 Crônicas 16:1"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-05",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Crônicas 16:11, com que frequência o povo deve buscar a presença do Senhor?",
+    "prompt": "Em 1 Crônicas 16:11, com que frequência o povo deve buscar a presença do Senhor?",
+    "cue": "Em 1 Crônicas 16:11, com que frequência o povo deve buscar a presença do Senhor?",
+    "verseRef": "1 Crônicas 16:11",
+    "passageText": "Busquem ao Senhor e a sua força; busquem continuamente a sua presença.",
+    "template": "Busquem ao Senhor e a sua força; busquem ___ a sua presença.",
+    "options": [
+      {
+        "id": "a",
+        "text": "continuamente"
+      },
+      {
+        "id": "b",
+        "text": "raramente"
+      },
+      {
+        "id": "c",
+        "text": "nunca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "busquem continuamente a sua presença",
+    "feedbackCorrect": "O hino chama a uma busca que não para, e não a um momento só.",
+    "feedbackWrong": {
+      "b": "O chamado é a uma busca sem interrupção.",
+      "c": "O texto manda buscar, e não deixar de buscar."
+    },
+    "hint": "Veja o advérbio que acompanha o chamado a buscar.",
+    "learningObjective": "Lembrar o termo que marca a busca contínua por Deus.",
+    "evidence": [
+      "1 Crônicas 16:11"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-06",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Crônicas 16:8 a Salmos 105:1?",
+    "prompt": "O que liga 1 Crônicas 16:8 a Salmos 105:1?",
+    "cue": "O que liga 1 Crônicas 16:8 a Salmos 105:1?",
+    "verseRef": "1 Crônicas 16:8",
+    "passageText": "Rendei graças ao Senhor, invocai o Seu nome, fazei conhecidos entre os povos os Seus feitos.",
+    "passageA": {
+      "ref": "1 Crônicas 16:8",
+      "text": "Rendei graças ao Senhor, invocai o Seu nome, fazei conhecidos entre os povos os Seus feitos."
+    },
+    "passageB": {
+      "ref": "Salmos 105:1",
+      "text": "Louvem ao SENHOR e invoquem o seu nome; façam conhecidas entre os povos as suas obras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mesmo convite a dar graças"
+      },
+      {
+        "id": "b",
+        "text": "Feitos de Deus escondidos"
+      },
+      {
+        "id": "c",
+        "text": "Louvor proibido aos povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Rendei graças ao Senhor, invocai o Seu nome",
+    "feedbackCorrect": "O salmo abre com o mesmo convite a dar graças e anunciar os feitos do Senhor.",
+    "feedbackWrong": {
+      "b": "Os dois mandam fazer conhecidos os feitos de Deus.",
+      "c": "Os dois textos mandam anunciar, e não proibir."
+    },
+    "hint": "Compare a abertura dos dois textos.",
+    "learningObjective": "Ligar o hino de Crônicas ao salmo que o repete.",
+    "evidence": [
+      "1 Crônicas 16:8",
+      "Salmos 105:1"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-01",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Crônicas 15:1, Davi preparou um lugar para a arca montando um templo de pedra",
+    "prompt": "Em 1 Crônicas 15:1, Davi preparou um lugar para a arca montando um templo de pedra",
+    "cue": "Em 1 Crônicas 15:1, Davi preparou um lugar para a arca montando um templo de pedra",
+    "verseRef": "1 Crônicas 15:1",
+    "passageText": "Ele também construiu casas para si na Cidade de Davi e preparou um lugar para a arca de Deus, montando uma tenda.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "preparou um lugar para a arca de Deus, montando uma tenda",
+    "feedbackCorrect": "Davi prepara lugar e monta uma tenda; o templo virá depois, com Salomão.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1 Crônicas 15:1 e veja o que Davi montou."
+    },
+    "hint": "Veja o que Davi montou para a arca.",
+    "learningObjective": "Observar a preparação inicial de Davi para a arca.",
+    "evidence": [
+      "1 Crônicas 15:1"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-02",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Crônicas 15:1, toque o que Davi montou para a arca de Deus",
+    "prompt": "Em 1 Crônicas 15:1, toque o que Davi montou para a arca de Deus",
+    "cue": "Em 1 Crônicas 15:1, toque o que Davi montou para a arca de Deus",
+    "verseRef": "1 Crônicas 15:1",
+    "passageText": "Ele também construiu casas para si na Cidade de Davi e preparou um lugar para a arca de Deus, montando uma tenda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tenda"
+      },
+      {
+        "id": "b",
+        "text": "lugar"
+      },
+      {
+        "id": "c",
+        "text": "casas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "montando uma tenda",
+    "feedbackCorrect": "Antes do templo, Davi monta uma tenda para receber a arca.",
+    "feedbackWrong": {
+      "b": "Lugar é onde a arca ficará; o que ele monta vem depois.",
+      "c": "Casas Davi construiu para si, não para a arca."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Identificar a tenda preparada para a arca.",
+    "evidence": [
+      "1 Crônicas 15:1"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-03",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Crônicas 15:12, o que os cabeças dos levitas deviam fazer com seus irmãos?",
+    "prompt": "Segundo 1 Crônicas 15:12, o que os cabeças dos levitas deviam fazer com seus irmãos?",
+    "cue": "Segundo 1 Crônicas 15:12, o que os cabeças dos levitas deviam fazer com seus irmãos?",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escolher um novo rei para Israel"
+      },
+      {
+        "id": "b",
+        "text": "Construir o templo em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Tocar trombetas diante do povo"
+      },
+      {
+        "id": "d",
+        "text": "Santificar-se para levar a arca"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor",
+    "feedbackCorrect": "A preparação das pessoas é santificar-se para levar a arca ao lugar preparado.",
+    "feedbackWrong": {
+      "a": "O rei já é Davi; o assunto é o serviço da arca.",
+      "b": "O templo será de Salomão; aqui a tarefa é levar a arca.",
+      "c": "Instrumentos vêm depois; aqui o chamado é à santificação."
+    },
+    "hint": "Leia a ordem que Davi dá aos levitas.",
+    "learningObjective": "Observar a santificação como parte da preparação.",
+    "evidence": [
+      "1 Crônicas 15:12"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-04",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Crônicas 15:1 na ordem do texto",
+    "prompt": "Monte 1 Crônicas 15:1 na ordem do texto",
+    "cue": "Monte 1 Crônicas 15:1 na ordem do texto",
+    "verseRef": "1 Crônicas 15:1",
+    "passageText": "Ele também construiu casas para si na Cidade de Davi e preparou um lugar para a arca de Deus, montando uma tenda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele também construiu casas para si na Cidade de Davi"
+      },
+      {
+        "id": "b",
+        "text": "e preparou um lugar para a arca de Deus"
+      },
+      {
+        "id": "c",
+        "text": "montando uma tenda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "preparou um lugar para a arca de Deus, montando uma tenda",
+    "feedbackCorrect": "Davi constrói para si, mas também prepara lugar e tenda para a arca.",
+    "feedbackWrong": {
+      "default": "Comece pelas casas de Davi; a tenda fecha o versículo."
+    },
+    "hint": "O versículo começa pelo que Davi construiu.",
+    "learningObjective": "Reconhecer a sequência de 1 Crônicas 15:1.",
+    "evidence": [
+      "1 Crônicas 15:1"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-05",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Crônicas 15:12, para onde os levitas levariam a arca que Davi preparou?",
+    "prompt": "Em 1 Crônicas 15:12, para onde os levitas levariam a arca que Davi preparou?",
+    "cue": "Em 1 Crônicas 15:12, para onde os levitas levariam a arca que Davi preparou?",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "template": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao ___ que preparei para ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserto"
+      },
+      {
+        "id": "b",
+        "text": "palácio"
+      },
+      {
+        "id": "c",
+        "text": "lugar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ao lugar que preparei para ela",
+    "feedbackCorrect": "A arca vai para o lugar que Davi preparou, não para qualquer lugar.",
+    "feedbackWrong": {
+      "a": "A arca já saiu do deserto há muito tempo; o destino é Jerusalém.",
+      "b": "O palácio é de Davi; a arca vai para o lugar preparado para ela."
+    },
+    "hint": "Veja o destino citado no fim da fala de Davi.",
+    "learningObjective": "Lembrar o lugar preparado para a arca.",
+    "evidence": [
+      "1 Crônicas 15:12"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-06",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Crônicas 15:12 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 15:12 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 15:12 comunica que se liga a este contexto?",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "passageA": {
+      "ref": "1 Crônicas 15:12",
+      "text": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi prepara lugar, tenda e também as pessoas do serviço."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparar pessoas com santificação"
+      },
+      {
+        "id": "b",
+        "text": "Levar arca sem consagração"
+      },
+      {
+        "id": "c",
+        "text": "Adiar o serviço para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor",
+    "feedbackCorrect": "A preparação inclui pessoas santificadas, e não só lugar arrumado.",
+    "feedbackWrong": {
+      "b": "Davi manda justamente santificar-se antes de levar.",
+      "c": "A santificação é para levar a arca, não para adiar."
+    },
+    "hint": "Veja a ordem dada aos levitas.",
+    "learningObjective": "Ligar a preparação do lugar à preparação das pessoas.",
+    "evidence": [
+      "1 Crônicas 15:12"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-01",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Crônicas 15:14, sacerdotes e levitas só se santificaram depois de já terem levado a arca",
+    "prompt": "Em 1 Crônicas 15:14, sacerdotes e levitas só se santificaram depois de já terem levado a arca",
+    "cue": "Em 1 Crônicas 15:14, sacerdotes e levitas só se santificaram depois de já terem levado a arca",
+    "verseRef": "1 Crônicas 15:14",
+    "passageText": "Os sacerdotes e levitas, portanto, se santificaram para levar a arca do Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se santificaram para levar a arca do Senhor",
+    "feedbackCorrect": "A santificação acontece para levar a arca, antes do transporte.",
+    "feedbackWrong": {
+      "true": "Releia a ordem em 15:14: santificar-se vem para levar."
+    },
+    "hint": "Veja a finalidade ligada ao verbo santificar.",
+    "learningObjective": "Compreender a ordem entre santificação e serviço.",
+    "evidence": [
+      "1 Crônicas 15:14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-02",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Crônicas 15:14, toque a palavra que liga a santificação ao chamado anterior de Davi",
+    "prompt": "Em 1 Crônicas 15:14, toque a palavra que liga a santificação ao chamado anterior de Davi",
+    "cue": "Em 1 Crônicas 15:14, toque a palavra que liga a santificação ao chamado anterior de Davi",
+    "verseRef": "1 Crônicas 15:14",
+    "passageText": "Os sacerdotes e levitas, portanto, se santificaram para levar a arca do Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "portanto"
+      },
+      {
+        "id": "b",
+        "text": "arca"
+      },
+      {
+        "id": "c",
+        "text": "sacerdotes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Os sacerdotes e levitas, portanto, se santificaram",
+    "feedbackCorrect": "Essa palavra mostra o resultado do chamado de Davi em 15:12.",
+    "feedbackWrong": {
+      "b": "Isso é o que será levado, não a ligação da frase.",
+      "c": "Isso diz quem se santificou, não a ligação com o chamado."
+    },
+    "hint": "Procure a palavra curta logo depois de levitas.",
+    "learningObjective": "Reconhecer o marcador de consequência no texto.",
+    "evidence": [
+      "1 Crônicas 15:14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-03",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Crônicas 15:12 se relaciona com 1 Crônicas 15:14?",
+    "prompt": "Como 1 Crônicas 15:12 se relaciona com 1 Crônicas 15:14?",
+    "cue": "Como 1 Crônicas 15:12 se relaciona com 1 Crônicas 15:14?",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os levitas pedem para outra tribo levar arca"
+      },
+      {
+        "id": "b",
+        "text": "Davi chama à santificação e eles se santificam"
+      },
+      {
+        "id": "c",
+        "text": "Davi ordena, mas ninguém obedece ao chamado"
+      },
+      {
+        "id": "d",
+        "text": "A santificação é trocada por ofertas de animais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor",
+    "feedbackCorrect": "O chamado de Davi é atendido: sacerdotes e levitas se santificam para levar.",
+    "feedbackWrong": {
+      "a": "São os próprios levitas que se preparam para levar.",
+      "c": "O texto diz que eles se santificaram, obedecendo.",
+      "d": "Nenhuma troca é citada; eles se santificam como ordenado."
+    },
+    "hint": "Compare a ordem de Davi com a atitude seguinte.",
+    "learningObjective": "Relacionar o chamado à santificação com a obediência dos levitas.",
+    "evidence": [
+      "1 Crônicas 15:12",
+      "1 Crônicas 15:14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-04",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a preparação em 1 Crônicas 15:1–2?",
+    "prompt": "Como avança a preparação em 1 Crônicas 15:1–2?",
+    "cue": "Como avança a preparação em 1 Crônicas 15:1–2?",
+    "verseRef": "1 Crônicas 15:1–2",
+    "passageText": "Ele também construiu casas para si na Cidade de Davi e preparou um lugar para a arca de Deus, montando uma tenda. Então, Davi disse: Ninguém pode transportar a arca de Deus, exceto os levitas; pois o Senhor os elegeu para levar a arca de Deus e para servi-Lo eternamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi prepara lugar e monta tenda"
+      },
+      {
+        "id": "b",
+        "text": "Davi define quem pode levar arca"
+      },
+      {
+        "id": "c",
+        "text": "Levitas são eleitos para servir sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "preparou um lugar para a arca de Deus, montando uma tenda",
+    "feedbackCorrect": "Primeiro o lugar fica pronto, depois fica claro quem servirá nele.",
+    "feedbackWrong": {
+      "default": "Comece pelo lugar preparado; a eleição dos levitas vem em seguida."
+    },
+    "hint": "O lugar vem no primeiro versículo.",
+    "learningObjective": "Compreender os passos da preparação da arca.",
+    "evidence": [
+      "1 Crônicas 15:1–2"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-05",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Crônicas 15:14, o que sacerdotes e levitas fizeram para levar a arca?",
+    "prompt": "Em 1 Crônicas 15:14, o que sacerdotes e levitas fizeram para levar a arca?",
+    "cue": "Em 1 Crônicas 15:14, o que sacerdotes e levitas fizeram para levar a arca?",
+    "verseRef": "1 Crônicas 15:14",
+    "passageText": "Os sacerdotes e levitas, portanto, se santificaram para levar a arca do Senhor, Deus de Israel.",
+    "template": "Os sacerdotes e levitas, portanto, se ___ para levar a arca do Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensaiaram"
+      },
+      {
+        "id": "b",
+        "text": "organizaram"
+      },
+      {
+        "id": "c",
+        "text": "santificaram"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se santificaram para levar a arca do Senhor",
+    "feedbackCorrect": "Eles se santificam antes de tocar no serviço santo da arca.",
+    "feedbackWrong": {
+      "a": "Ensaio é do canto, em outro momento; aqui é santificação.",
+      "b": "Organizar é vago; o texto usa um verbo de consagração."
+    },
+    "hint": "Veja o verbo ligado a levar a arca.",
+    "learningObjective": "Compreender a santificação como preparo para o serviço.",
+    "evidence": [
+      "1 Crônicas 15:14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-06",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Crônicas 15:12 a Êxodo 19:10?",
+    "prompt": "O que liga 1 Crônicas 15:12 a Êxodo 19:10?",
+    "cue": "O que liga 1 Crônicas 15:12 a Êxodo 19:10?",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "passageA": {
+      "ref": "1 Crônicas 15:12",
+      "text": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela."
+    },
+    "passageB": {
+      "ref": "Êxodo 19:10",
+      "text": "Disse também o Senhor a Moisés: Vá ao povo e purifique-os hoje e amanhã, e que lavem as suas vestes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Construir antes de consagrar"
+      },
+      {
+        "id": "b",
+        "text": "Santificar-se antes de aproximar"
+      },
+      {
+        "id": "c",
+        "text": "Servir sem nenhuma preparação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "santifiquem-se, vocês e seus irmãos",
+    "feedbackCorrect": "Nos dois textos, o povo de Deus se santifica antes de um encontro santo.",
+    "feedbackWrong": {
+      "a": "A ordem aqui é consagrar-se para um serviço santo.",
+      "c": "Os dois textos exigem preparação, e não improviso."
+    },
+    "hint": "Compare o verbo usado para o povo nos dois textos.",
+    "learningObjective": "Relacionar a santificação dos levitas à do povo no Sinai.",
+    "evidence": [
+      "1 Crônicas 15:12",
+      "Êxodo 19:10"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-01",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Crônicas 15:12, a preparação para levar a arca começa com a santificação dos levitas e de seus irmãos",
+    "prompt": "Em 1 Crônicas 15:12, a preparação para levar a arca começa com a santificação dos levitas e de seus irmãos",
+    "cue": "Em 1 Crônicas 15:12, a preparação para levar a arca começa com a santificação dos levitas e de seus irmãos",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor",
+    "feedbackCorrect": "Antes de carregar a arca, as pessoas se consagram a Deus.",
+    "feedbackWrong": {
+      "false": "Releia a primeira ordem de Davi aos levitas em 15:12."
+    },
+    "hint": "Veja a primeira coisa que Davi manda fazer.",
+    "learningObjective": "Interpretar a santificação como coração da preparação.",
+    "evidence": [
+      "1 Crônicas 15:12"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-02",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Crônicas 15:1, toque o verbo que mostra Davi deixando tudo pronto para a arca",
+    "prompt": "Em 1 Crônicas 15:1, toque o verbo que mostra Davi deixando tudo pronto para a arca",
+    "cue": "Em 1 Crônicas 15:1, toque o verbo que mostra Davi deixando tudo pronto para a arca",
+    "verseRef": "1 Crônicas 15:1",
+    "passageText": "Ele também construiu casas para si na Cidade de Davi e preparou um lugar para a arca de Deus, montando uma tenda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "montando"
+      },
+      {
+        "id": "b",
+        "text": "preparou"
+      },
+      {
+        "id": "c",
+        "text": "construiu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "preparou um lugar para a arca de Deus",
+    "feedbackCorrect": "Davi preparou o lugar antes de trazer a arca para Jerusalém.",
+    "feedbackWrong": {
+      "a": "Montar descreve a tenda; o preparo do lugar vem antes.",
+      "c": "Construir foi para as casas dele; o verbo da arca é outro."
+    },
+    "hint": "Procure o verbo ligado ao lugar da arca.",
+    "learningObjective": "Sustentar com o texto que a preparação vem antes da vinda.",
+    "evidence": [
+      "1 Crônicas 15:1"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-03",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Crônicas 15:1–2 sustenta sobre preparar a casa de Deus?",
+    "prompt": "Que leitura 1 Crônicas 15:1–2 sustenta sobre preparar a casa de Deus?",
+    "cue": "Que leitura 1 Crônicas 15:1–2 sustenta sobre preparar a casa de Deus?",
+    "verseRef": "1 Crônicas 15:1–2",
+    "passageText": "Ele também construiu casas para si na Cidade de Davi e preparou um lugar para a arca de Deus, montando uma tenda. Então, Davi disse: Ninguém pode transportar a arca de Deus, exceto os levitas; pois o Senhor os elegeu para levar a arca de Deus e para servi-Lo eternamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparar inclui lugar e pessoas consagradas"
+      },
+      {
+        "id": "b",
+        "text": "Basta um lugar bonito, sem consagração"
+      },
+      {
+        "id": "c",
+        "text": "Qualquer pessoa serve, sem chamado de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Preparação atrapalha a alegria do culto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "preparou um lugar para a arca de Deus, montando uma tenda",
+    "feedbackCorrect": "Há lugar preparado e levitas eleitos: Deus prepara espaço e servos.",
+    "feedbackWrong": {
+      "b": "O texto também trata de quem leva a arca e como se prepara.",
+      "c": "Só os levitas levam, pois o Senhor os elegeu para isso.",
+      "d": "A preparação ordenada leva justamente ao culto com alegria."
+    },
+    "hint": "Junte o lugar do verso 1 com as pessoas do verso 2.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre preparação.",
+    "evidence": [
+      "1 Crônicas 15:1–2"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-04",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da preparação em 1 Crônicas 15:12?",
+    "prompt": "Qual sequência revela o sentido da preparação em 1 Crônicas 15:12?",
+    "cue": "Qual sequência revela o sentido da preparação em 1 Crônicas 15:12?",
+    "verseRef": "1 Crônicas 15:12",
+    "passageText": "E lhes disse: Vocês são os cabeças das famílias dos levitas; santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor, Deus de Israel, ao lugar que preparei para ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levitas ouvem o chamado de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Levitas e irmãos se santificam"
+      },
+      {
+        "id": "c",
+        "text": "Levitas levam arca ao lugar preparado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "santifiquem-se, vocês e seus irmãos, para que levem a arca do Senhor",
+    "feedbackCorrect": "Chamado, consagração e só então o serviço de levar a arca.",
+    "feedbackWrong": {
+      "default": "O serviço vem por último, depois de ouvir e se santificar."
+    },
+    "hint": "A última parte mostra a finalidade de tudo.",
+    "learningObjective": "Ver a preparação como caminho até o serviço santo.",
+    "evidence": [
+      "1 Crônicas 15:12"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-05",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Crônicas 15:15, segundo o que os levitas levaram a arca sobre os ombros?",
+    "prompt": "Em 1 Crônicas 15:15, segundo o que os levitas levaram a arca sobre os ombros?",
+    "cue": "Em 1 Crônicas 15:15, segundo o que os levitas levaram a arca sobre os ombros?",
+    "verseRef": "1 Crônicas 15:15",
+    "passageText": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a palavra do Senhor.",
+    "template": "E os filhos dos levitas trouxeram a arca de Deus sobre os ombros, com as varas que nela estavam, conforme a ordem de Moisés, segundo a ___ do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "tradição"
+      },
+      {
+        "id": "c",
+        "text": "vontade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "segundo a palavra do Senhor",
+    "feedbackCorrect": "O preparo se completa quando o serviço segue a palavra do Senhor.",
+    "feedbackWrong": {
+      "b": "O texto não fala de costume humano, mas da palavra do Senhor.",
+      "c": "Não é gosto dos levitas; é conforme a palavra de Deus."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Lembrar o termo que guia a preparação e o serviço.",
+    "evidence": [
+      "1 Crônicas 15:15"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-06",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Crônicas 15:14 a Josué 3:5?",
+    "prompt": "O que liga 1 Crônicas 15:14 a Josué 3:5?",
+    "cue": "O que liga 1 Crônicas 15:14 a Josué 3:5?",
+    "verseRef": "1 Crônicas 15:14",
+    "passageText": "Os sacerdotes e levitas, portanto, se santificaram para levar a arca do Senhor, Deus de Israel.",
+    "passageA": {
+      "ref": "1 Crônicas 15:14",
+      "text": "Os sacerdotes e levitas, portanto, se santificaram para levar a arca do Senhor, Deus de Israel."
+    },
+    "passageB": {
+      "ref": "Josué 3:5",
+      "text": "Disse Josué ao povo: Santifiquem-se porque amanhã o Senhor fará grandes maravilhas entre vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santificar-se antes das maravilhas"
+      },
+      {
+        "id": "b",
+        "text": "Arca levada sem consagração"
+      },
+      {
+        "id": "c",
+        "text": "Povo longe da presença Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se santificaram para levar a arca do Senhor, Deus de Israel",
+    "feedbackCorrect": "Nos dois textos, consagrar-se vem antes de Deus agir com a arca.",
+    "feedbackWrong": {
+      "b": "Os dois textos pedem santificação antes do avanço da arca.",
+      "c": "A arca no meio do povo mostra Deus presente, não distante."
+    },
+    "hint": "Compare o que o povo faz antes da arca avançar.",
+    "learningObjective": "Ligar a consagração dos levitas à do povo diante da arca.",
+    "evidence": [
+      "1 Crônicas 15:14",
+      "Josué 3:5"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:14, a glória do Senhor encheu a casa de Deus",
+    "prompt": "Em 2 Crônicas 5:14, a glória do Senhor encheu a casa de Deus",
+    "cue": "Em 2 Crônicas 5:14, a glória do Senhor encheu a casa de Deus",
+    "verseRef": "2 Crônicas 5:14",
+    "passageText": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+    "feedbackCorrect": "A glória do Senhor enche a casa, e os sacerdotes não conseguem ficar.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 2 Crônicas 5:14."
+    },
+    "hint": "Veja o que encheu a casa no fim.",
+    "learningObjective": "Observar a glória do Senhor enchendo a casa.",
+    "evidence": [
+      "2 Crônicas 5:14"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:13, toque o que encheu a Casa do Senhor durante o louvor",
+    "prompt": "Em 2 Crônicas 5:13, toque o que encheu a Casa do Senhor durante o louvor",
+    "cue": "Em 2 Crônicas 5:13, toque o que encheu a Casa do Senhor durante o louvor",
+    "verseRef": "2 Crônicas 5:13",
+    "passageText": "E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para sempre, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nuvem"
+      },
+      {
+        "id": "b",
+        "text": "voz"
+      },
+      {
+        "id": "c",
+        "text": "trombetas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a Casa do Senhor, se encheu de uma nuvem",
+    "feedbackCorrect": "Uma nuvem enche a casa enquanto o povo louva com uma só voz.",
+    "feedbackWrong": {
+      "b": "A voz é do louvor; o que enche a casa é outra coisa.",
+      "c": "Trombetas são tocadas; o que enche a casa vem depois."
+    },
+    "hint": "Leia a parte final do versículo.",
+    "learningObjective": "Identificar a nuvem da presença na dedicação.",
+    "evidence": [
+      "2 Crônicas 5:13"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Crônicas 5:7, onde os sacerdotes colocaram a arca da Aliança?",
+    "prompt": "Segundo 2 Crônicas 5:7, onde os sacerdotes colocaram a arca da Aliança?",
+    "cue": "Segundo 2 Crônicas 5:7, onde os sacerdotes colocaram a arca da Aliança?",
+    "verseRef": "2 Crônicas 5:7",
+    "passageText": "Então os sacerdotes colocaram a arca da Aliança do Senhor em seu lugar, no santuário mais interior do templo, no Santo dos Santos, debaixo das asas dos querubins.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Na tenda antiga de Davi"
+      },
+      {
+        "id": "b",
+        "text": "No alto da tribuna de bronze"
+      },
+      {
+        "id": "c",
+        "text": "No pátio, diante de todo o povo"
+      },
+      {
+        "id": "d",
+        "text": "No Santo dos Santos, sob querubins"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "no santuário mais interior do templo, no Santo dos Santos, debaixo das asas dos querubins",
+    "feedbackCorrect": "A arca vai para o lugar mais interior, debaixo das asas dos querubins.",
+    "feedbackWrong": {
+      "a": "A arca sai da tenda para o templo construído.",
+      "b": "A tribuna é de onde Salomão ora, não onde fica a arca.",
+      "c": "O pátio é onde o povo fica; a arca entra no lugar interior."
+    },
+    "hint": "Leia onde termina o caminho da arca.",
+    "learningObjective": "Observar o lugar da arca no templo.",
+    "evidence": [
+      "2 Crônicas 5:7"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Crônicas 5:13 na ordem do texto",
+    "prompt": "Monte 2 Crônicas 5:13 na ordem do texto",
+    "cue": "Monte 2 Crônicas 5:13 na ordem do texto",
+    "verseRef": "2 Crônicas 5:13",
+    "passageText": "E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para sempre, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E, quando tocaram as trombetas e cantaram todos juntos"
+      },
+      {
+        "id": "b",
+        "text": "faziam ouvir uma só voz, louvando e exaltando ao Senhor"
+      },
+      {
+        "id": "c",
+        "text": "então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "faziam ouvir uma só voz, louvando e exaltando ao Senhor",
+    "feedbackCorrect": "Trombetas e canto juntos, uma só voz, e a casa se enche da nuvem.",
+    "feedbackWrong": {
+      "default": "Comece pelas trombetas e pelo canto juntos; a nuvem vem no fim."
+    },
+    "hint": "O enchimento da casa é o fim do versículo.",
+    "learningObjective": "Reconhecer a sequência de 2 Crônicas 5:13.",
+    "evidence": [
+      "2 Crônicas 5:13"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:14, o que encheu a casa de Deus e impediu os sacerdotes de ficar?",
+    "prompt": "Em 2 Crônicas 5:14, o que encheu a casa de Deus e impediu os sacerdotes de ficar?",
+    "cue": "Em 2 Crônicas 5:14, o que encheu a casa de Deus e impediu os sacerdotes de ficar?",
+    "verseRef": "2 Crônicas 5:14",
+    "passageText": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus.",
+    "template": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a ___ do SENHOR encheu a casa de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fumaça"
+      },
+      {
+        "id": "b",
+        "text": "multidão"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+    "feedbackCorrect": "É a glória do Senhor que enche a casa na dedicação.",
+    "feedbackWrong": {
+      "a": "O texto não fala de fumaça de ofertas, mas da presença do Senhor.",
+      "b": "O povo está presente, mas quem enche a casa é o Senhor."
+    },
+    "hint": "Veja de quem é o que encheu a casa.",
+    "learningObjective": "Lembrar a glória como marca da dedicação.",
+    "evidence": [
+      "2 Crônicas 5:14"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Crônicas 5:14 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 5:14 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 5:14 comunica que se liga a este contexto?",
+    "verseRef": "2 Crônicas 5:14",
+    "passageText": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus.",
+    "passageA": {
+      "ref": "2 Crônicas 5:14",
+      "text": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na dedicação, a glória do Senhor enche a casa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus longe da casa"
+      },
+      {
+        "id": "b",
+        "text": "Glória enche a casa"
+      },
+      {
+        "id": "c",
+        "text": "Sacerdotes donos da casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+    "feedbackCorrect": "A casa dedicada é enchida pela glória do próprio Senhor.",
+    "feedbackWrong": {
+      "a": "A glória enchendo a casa mostra Deus presente ali.",
+      "c": "Até os sacerdotes precisam sair; a casa é do Senhor."
+    },
+    "hint": "Veja quem enche a casa no versículo.",
+    "learningObjective": "Ligar a dedicação à presença gloriosa de Deus.",
+    "evidence": [
+      "2 Crônicas 5:14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:14, Salomão declara que Deus guarda a aliança e a misericórdia para quem anda diante dele com todo o coração",
+    "prompt": "Em 2 Crônicas 6:14, Salomão declara que Deus guarda a aliança e a misericórdia para quem anda diante dele com todo o coração",
+    "cue": "Em 2 Crônicas 6:14, Salomão declara que Deus guarda a aliança e a misericórdia para quem anda diante dele com todo o coração",
+    "verseRef": "2 Crônicas 6:14",
+    "passageText": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração",
+    "feedbackCorrect": "Salomão louva o Deus que guarda aliança com quem anda diante dele.",
+    "feedbackWrong": {
+      "false": "Releia o louvor de Salomão em 2 Crônicas 6:14."
+    },
+    "hint": "Veja o que Deus guarda, segundo Salomão.",
+    "learningObjective": "Compreender o louvor de Salomão ao Deus da aliança.",
+    "evidence": [
+      "2 Crônicas 6:14"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:9, toque a palavra que marca a virada entre o desejo de Davi e a decisão de Deus",
+    "prompt": "Em 2 Crônicas 6:9, toque a palavra que marca a virada entre o desejo de Davi e a decisão de Deus",
+    "cue": "Em 2 Crônicas 6:9, toque a palavra que marca a virada entre o desejo de Davi e a decisão de Deus",
+    "verseRef": "2 Crônicas 6:9",
+    "passageText": "Contudo, você não edificará a casa; mas seu filho, que sairá de você, é quem a edificará em meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "casa"
+      },
+      {
+        "id": "b",
+        "text": "Contudo"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Contudo, você não edificará a casa",
+    "feedbackCorrect": "Essa palavra vira a frase, Davi não edificará, seu filho sim.",
+    "feedbackWrong": {
+      "a": "Casa é o assunto, não a palavra que vira a frase.",
+      "c": "Filho é quem edificará, não a marca da virada."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste na fala de Deus.",
+    "evidence": [
+      "2 Crônicas 6:9"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Crônicas 6:7–9 explica por que Salomão, e não Davi, edificou a casa?",
+    "prompt": "Como 2 Crônicas 6:7–9 explica por que Salomão, e não Davi, edificou a casa?",
+    "cue": "Como 2 Crônicas 6:7–9 explica por que Salomão, e não Davi, edificou a casa?",
+    "verseRef": "2 Crônicas 6:7–8",
+    "passageText": "Também Davi, meu pai, tinha em seu coração a intenção de edificar uma casa para o nome do SENHOR, o Deus de Israel. Porém o Senhor disse a Davi, meu pai: Já que você desejou edificar uma casa para o meu nome, fez bem em ter esse propósito no coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi foi proibido por falta de materiais"
+      },
+      {
+        "id": "b",
+        "text": "Davi desistiu do desejo de edificar a casa"
+      },
+      {
+        "id": "c",
+        "text": "O povo escolheu Salomão em votação pública"
+      },
+      {
+        "id": "d",
+        "text": "Deus aprovou o desejo, mas chamou o filho"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Já que você desejou edificar uma casa para o meu nome, fez bem em ter esse propósito no coração",
+    "feedbackCorrect": "Deus aprova o propósito de Davi, mas entrega a obra ao filho dele.",
+    "feedbackWrong": {
+      "a": "O texto não fala de falta de materiais, mas de escolha de Deus.",
+      "b": "O desejo de Davi é elogiado por Deus, não abandonado.",
+      "c": "Quem decide quem edifica é o Senhor, não uma votação."
+    },
+    "hint": "Veja o que Deus diz do desejo de Davi.",
+    "learningObjective": "Relacionar o desejo de Davi à escolha de Salomão.",
+    "evidence": [
+      "2 Crônicas 6:7–9"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a dedicação em 2 Crônicas 5:12–13?",
+    "prompt": "Como avança a dedicação em 2 Crônicas 5:12–13?",
+    "cue": "Como avança a dedicação em 2 Crônicas 5:12–13?",
+    "verseRef": "2 Crônicas 5:12–13",
+    "passageText": "E os levitas, que eram cantores, isto é, Asafe, Hemã, Jedutum e seus filhos e irmãos, vestidos de linho fino, estavam de pé ao leste do altar, com címbalos, alaúdes e harpas; e com eles estavam até cento e vinte sacerdotes que tocavam as trombetas. E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para sempre, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cantores de linho fino junto ao altar"
+      },
+      {
+        "id": "b",
+        "text": "Sacerdotes tocam trombetas com cantores"
+      },
+      {
+        "id": "c",
+        "text": "Todos fazem ouvir uma só voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "estavam de pé ao leste do altar, com címbalos, alaúdes e harpas",
+    "feedbackCorrect": "Cantores postos, trombetas juntas e um louvor com uma só voz.",
+    "feedbackWrong": {
+      "default": "Comece pelos cantores junto ao altar; a uma só voz fecha."
+    },
+    "hint": "A uma só voz é o ponto alto do trecho.",
+    "learningObjective": "Compreender o avanço do louvor na dedicação.",
+    "evidence": [
+      "2 Crônicas 5:12–13"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 5:13, por quanto tempo dura a misericórdia do Senhor cantada pelo povo?",
+    "prompt": "Em 2 Crônicas 5:13, por quanto tempo dura a misericórdia do Senhor cantada pelo povo?",
+    "cue": "Em 2 Crônicas 5:13, por quanto tempo dura a misericórdia do Senhor cantada pelo povo?",
+    "verseRef": "2 Crônicas 5:13",
+    "passageText": "E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para sempre, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem.",
+    "template": "E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para ___, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sempre"
+      },
+      {
+        "id": "b",
+        "text": "instante"
+      },
+      {
+        "id": "c",
+        "text": "momento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque a Sua misericórdia dura para sempre",
+    "feedbackCorrect": "O louvor repete que a misericórdia do Senhor não tem fim.",
+    "feedbackWrong": {
+      "b": "A misericórdia não dura só um instante, segundo o canto.",
+      "c": "O canto afirma uma duração sem fim, não passageira."
+    },
+    "hint": "Leia o refrão repetido no louvor.",
+    "learningObjective": "Compreender a misericórdia sem fim celebrada no louvor.",
+    "evidence": [
+      "2 Crônicas 5:13"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Crônicas 5:13 a Salmos 136:1?",
+    "prompt": "O que liga 2 Crônicas 5:13 a Salmos 136:1?",
+    "cue": "O que liga 2 Crônicas 5:13 a Salmos 136:1?",
+    "verseRef": "2 Crônicas 5:13",
+    "passageText": "E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para sempre, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem.",
+    "passageA": {
+      "ref": "2 Crônicas 5:13",
+      "text": "E, quando tocaram as trombetas e cantaram todos juntos, faziam ouvir uma só voz, louvando e exaltando ao Senhor. Ao levantarem a voz com trombetas, címbalos e outros instrumentos musicais para louvarem ao Senhor, porque Ele é bom, porque a Sua misericórdia dura para sempre, então, a casa, a saber: a Casa do Senhor, se encheu de uma nuvem."
+    },
+    "passageB": {
+      "ref": "Salmos 136:1",
+      "text": "Rendei graças ao Senhor, porque ele é bom, porque a sua misericórdia dura para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia dura para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Louvor só com trombetas"
+      },
+      {
+        "id": "c",
+        "text": "Misericórdia acaba na festa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque a Sua misericórdia dura para sempre",
+    "feedbackCorrect": "Os dois textos repetem o mesmo refrão sobre a misericórdia do Senhor.",
+    "feedbackWrong": {
+      "b": "O salmo é um chamado a dar graças, não só a tocar.",
+      "c": "Os dois afirmam o contrário, que ela dura para sempre."
+    },
+    "hint": "Compare o refrão dos dois textos.",
+    "learningObjective": "Relacionar o louvor da dedicação ao refrão dos Salmos.",
+    "evidence": [
+      "2 Crônicas 5:13",
+      "Salmos 136:1"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:18, Salomão afirma que a casa que ele edificou pode conter a Deus por completo",
+    "prompt": "Em 2 Crônicas 6:18, Salomão afirma que a casa que ele edificou pode conter a Deus por completo",
+    "cue": "Em 2 Crônicas 6:18, Salomão afirma que a casa que ele edificou pode conter a Deus por completo",
+    "verseRef": "2 Crônicas 6:18",
+    "passageText": "Mas, de fato, Deus habitará com os homens na terra? Eis que os céus e até o céu dos céus não podem conter-te quanto menos esta casa que edifiquei?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "os céus e até o céu dos céus não podem conter-te quanto menos esta casa que edifiquei",
+    "feedbackCorrect": "Nem os céus contêm a Deus; a casa é lugar de oração, não caixa.",
+    "feedbackWrong": {
+      "true": "Releia a pergunta de Salomão em 2 Crônicas 6:18."
+    },
+    "hint": "Veja a comparação entre céus e casa.",
+    "learningObjective": "Interpretar o templo sem reduzir Deus a um lugar.",
+    "evidence": [
+      "2 Crônicas 6:18"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:18, toque o trecho que mostra que nem o maior céu contém a Deus",
+    "prompt": "Em 2 Crônicas 6:18, toque o trecho que mostra que nem o maior céu contém a Deus",
+    "cue": "Em 2 Crônicas 6:18, toque o trecho que mostra que nem o maior céu contém a Deus",
+    "verseRef": "2 Crônicas 6:18",
+    "passageText": "Mas, de fato, Deus habitará com os homens na terra? Eis que os céus e até o céu dos céus não podem conter-te quanto menos esta casa que edifiquei?",
+    "options": [
+      {
+        "id": "a",
+        "text": "na terra"
+      },
+      {
+        "id": "b",
+        "text": "esta casa"
+      },
+      {
+        "id": "c",
+        "text": "céu dos céus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os céus e até o céu dos céus não podem conter-te",
+    "feedbackCorrect": "Salomão amplia ao máximo, nem o céu dos céus contém a Deus.",
+    "feedbackWrong": {
+      "a": "Terra é onde estão os homens, não a medida maior citada.",
+      "b": "A casa é justamente a menor na comparação de Salomão."
+    },
+    "hint": "Procure a expressão que amplia os céus.",
+    "learningObjective": "Sustentar com o texto que Deus não cabe no templo.",
+    "evidence": [
+      "2 Crônicas 6:18"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Crônicas 6:18–20 sustenta sobre o templo de Salomão?",
+    "prompt": "Que leitura 2 Crônicas 6:18–20 sustenta sobre o templo de Salomão?",
+    "cue": "Que leitura 2 Crônicas 6:18–20 sustenta sobre o templo de Salomão?",
+    "verseRef": "2 Crônicas 6:19–20",
+    "passageText": "Atenta, pois, para a oração do teu servo e para a sua súplica, ó SENHOR, meu Deus, para que ouças o clamor e a oração que o teu servo faz diante de ti. Que os teus olhos estejam abertos dia e noite sobre este lugar, do qual disseste que ali colocarias o teu nome; para que ouças a oração que o teu servo fizer neste lugar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lugar de oração ouvido por Deus céu"
+      },
+      {
+        "id": "b",
+        "text": "Lugar que prende Deus dentro paredes"
+      },
+      {
+        "id": "c",
+        "text": "Lugar só para festas do rei Salomão"
+      },
+      {
+        "id": "d",
+        "text": "Lugar onde orar não faz diferença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Que os teus olhos estejam abertos dia e noite sobre este lugar",
+    "feedbackCorrect": "Deus não cabe na casa, mas abre olhos e ouvidos à oração dali.",
+    "feedbackWrong": {
+      "b": "Salomão nega que a casa contenha a Deus por completo.",
+      "c": "A oração é do servo e de todo o povo de Israel.",
+      "d": "Ele pede justamente que Deus ouça a oração daquele lugar."
+    },
+    "hint": "Junte a grandeza de Deus com o pedido de Salomão.",
+    "learningObjective": "Escolher a interpretação que a oração de Salomão sustenta.",
+    "evidence": [
+      "2 Crônicas 6:18–20"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da dedicação em 2 Crônicas 6:5–6?",
+    "prompt": "Qual sequência revela o sentido da dedicação em 2 Crônicas 6:5–6?",
+    "cue": "Qual sequência revela o sentido da dedicação em 2 Crônicas 6:5–6?",
+    "verseRef": "2 Crônicas 6:5–6",
+    "passageText": "Desde o dia em que tirei o meu povo da terra do Egito, não escolhi cidade alguma de todas as tribos de Israel, para edificar nela uma casa a fim de ali estabelecer o meu nome; nem escolhi homem algum para ser o líder do meu povo, Israel. Escolhi Jerusalém para que ali se estabelecesse o meu nome, e escolhi Davi para que fosse o chefe do meu povo, Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus tira o povo do Egito"
+      },
+      {
+        "id": "b",
+        "text": "Deus escolhe Jerusalém para nome"
+      },
+      {
+        "id": "c",
+        "text": "Deus escolhe Davi como chefe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Escolhi Jerusalém para que ali se estabelecesse o meu nome",
+    "feedbackCorrect": "Do Egito à escolha de Jerusalém e de Davi, Deus conduz a história.",
+    "feedbackWrong": {
+      "default": "Comece pela saída do Egito; a escolha de Davi fecha."
+    },
+    "hint": "Siga a história contada por Salomão.",
+    "learningObjective": "Ver a dedicação como fruto das escolhas de Deus.",
+    "evidence": [
+      "2 Crônicas 6:5–6"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:14, o que Deus guarda junto com a misericórdia para seus servos?",
+    "prompt": "Em 2 Crônicas 6:14, o que Deus guarda junto com a misericórdia para seus servos?",
+    "cue": "Em 2 Crônicas 6:14, o que Deus guarda junto com a misericórdia para seus servos?",
+    "verseRef": "2 Crônicas 6:14",
+    "passageText": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração.",
+    "template": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a ___ e a misericórdia para com Teus servos que andam diante de Ti com todo o coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que guardas a aliança e a misericórdia para com Teus servos",
+    "feedbackCorrect": "Deus guarda a aliança, o compromisso fiel com seu povo.",
+    "feedbackWrong": {
+      "a": "O louvor é à fidelidade de Deus, não à reputação humana.",
+      "c": "O texto fala do compromisso de Deus, não de bens."
+    },
+    "hint": "Veja o par citado logo depois de guardas.",
+    "learningObjective": "Lembrar o termo central da oração de Salomão.",
+    "evidence": [
+      "2 Crônicas 6:14"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Crônicas 6:21 a Salmos 130:4?",
+    "prompt": "O que liga 2 Crônicas 6:21 a Salmos 130:4?",
+    "cue": "O que liga 2 Crônicas 6:21 a Salmos 130:4?",
+    "verseRef": "2 Crônicas 6:21",
+    "passageText": "Ouça, pois, as súplicas do seu servo e do seu povo de Israel, quando orarem neste lugar; ouça do lugar da sua habitação, nos céus; ouça e perdoe",
+    "passageA": {
+      "ref": "2 Crônicas 6:21",
+      "text": "Ouça, pois, as súplicas do seu servo e do seu povo de Israel, quando orarem neste lugar; ouça do lugar da sua habitação, nos céus; ouça e perdoe"
+    },
+    "passageB": {
+      "ref": "Salmos 130:4",
+      "text": "Contigo, porém, está o perdão, para que te respeitem"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ouve e perdoa"
+      },
+      {
+        "id": "b",
+        "text": "Deus recusa todo perdão"
+      },
+      {
+        "id": "c",
+        "text": "Perdão só para sacerdotes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ouça e perdoe",
+    "feedbackCorrect": "Salomão pede um Deus que ouve do céu e perdoa; o salmo o confessa.",
+    "feedbackWrong": {
+      "b": "Os dois textos afirmam um Deus que perdoa.",
+      "c": "A oração é do servo e de todo o povo de Israel."
+    },
+    "hint": "Compare o pedido de Salomão com a confissão do salmo.",
+    "learningObjective": "Ligar a oração do templo ao Deus que perdoa.",
+    "evidence": [
+      "2 Crônicas 6:21",
+      "Salmos 130:4"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:11, os sacerdotes presentes respeitaram seus turnos antes de se santificar",
+    "prompt": "Em 2 Crônicas 5:11, os sacerdotes presentes respeitaram seus turnos antes de se santificar",
+    "cue": "Em 2 Crônicas 5:11, os sacerdotes presentes respeitaram seus turnos antes de se santificar",
+    "verseRef": "2 Crônicas 5:11",
+    "passageText": "E aconteceu que, ao saírem os sacerdotes do santuário (pois todos os sacerdotes que estavam presentes se santificaram, sem respeitarem seus turnos),",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se santificaram, sem respeitarem seus turnos",
+    "feedbackCorrect": "Todos se santificam juntos, sem respeitar os turnos, para a dedicação.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 2 Crônicas 5:11 sobre os turnos."
+    },
+    "hint": "Veja o que o texto diz dos turnos.",
+    "learningObjective": "Observar a santificação conjunta dos sacerdotes.",
+    "evidence": [
+      "2 Crônicas 5:11"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:11, toque o que todos os sacerdotes presentes fizeram antes de sair do santuário",
+    "prompt": "Em 2 Crônicas 5:11, toque o que todos os sacerdotes presentes fizeram antes de sair do santuário",
+    "cue": "Em 2 Crônicas 5:11, toque o que todos os sacerdotes presentes fizeram antes de sair do santuário",
+    "verseRef": "2 Crônicas 5:11",
+    "passageText": "E aconteceu que, ao saírem os sacerdotes do santuário (pois todos os sacerdotes que estavam presentes se santificaram, sem respeitarem seus turnos),",
+    "options": [
+      {
+        "id": "a",
+        "text": "santificaram"
+      },
+      {
+        "id": "b",
+        "text": "turnos"
+      },
+      {
+        "id": "c",
+        "text": "santuário"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos os sacerdotes que estavam presentes se santificaram",
+    "feedbackCorrect": "Antes de tudo, os sacerdotes se santificam para aquele momento santo.",
+    "feedbackWrong": {
+      "b": "Turnos são justamente o que eles não respeitam aqui.",
+      "c": "Santuário é de onde saem, não o que fizeram."
+    },
+    "hint": "Procure o verbo ligado a todos os sacerdotes.",
+    "learningObjective": "Identificar a santificação dos sacerdotes.",
+    "evidence": [
+      "2 Crônicas 5:11"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Crônicas 6:24, o que acontece com o povo quando peca contra Deus?",
+    "prompt": "Segundo 2 Crônicas 6:24, o que acontece com o povo quando peca contra Deus?",
+    "cue": "Segundo 2 Crônicas 6:24, o que acontece com o povo quando peca contra Deus?",
+    "verseRef": "2 Crônicas 6:24",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É esquecido para sempre Deus"
+      },
+      {
+        "id": "b",
+        "text": "Perde a terra sem poder voltar"
+      },
+      {
+        "id": "c",
+        "text": "É ferido diante do inimigo"
+      },
+      {
+        "id": "d",
+        "text": "Fica livre de toda consequência"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tendo pecado contra ti, for ferido diante do inimigo",
+    "feedbackCorrect": "Pecar traz ferida diante do inimigo, mas a oração já prevê o retorno.",
+    "feedbackWrong": {
+      "a": "Salomão pede que Deus ouça e perdoe; não há esquecimento final.",
+      "b": "Em 6:25, Deus faz o povo voltar à terra que deu.",
+      "d": "O texto mostra consequência real para o pecado do povo."
+    },
+    "hint": "Leia a primeira parte da situação descrita.",
+    "learningObjective": "Observar a consequência do pecado na oração de Salomão.",
+    "evidence": [
+      "2 Crônicas 6:24"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Crônicas 6:26 na ordem do texto",
+    "prompt": "Monte 2 Crônicas 6:26 na ordem do texto",
+    "cue": "Monte 2 Crônicas 6:26 na ordem do texto",
+    "verseRef": "2 Crônicas 6:26",
+    "passageText": "Quando os céus se fecharem e não houver chuva, por terem pecado contra ti, e orarem neste lugar, confessando o teu nome, e se converterem de seus pecados, quando os afligires",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando os céus se fecharem e não houver chuva"
+      },
+      {
+        "id": "b",
+        "text": "por terem pecado contra ti"
+      },
+      {
+        "id": "c",
+        "text": "e orarem neste lugar, confessando o teu nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando os céus se fecharem e não houver chuva, por terem pecado contra ti",
+    "feedbackCorrect": "Céus fechados, pecado reconhecido e oração com confissão.",
+    "feedbackWrong": {
+      "default": "Comece pelos céus fechados; a confissão vem na oração."
+    },
+    "hint": "O versículo começa pela falta de chuva.",
+    "learningObjective": "Reconhecer a sequência de 2 Crônicas 6:26.",
+    "evidence": [
+      "2 Crônicas 6:26"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 6:25, o que Deus faz com os pecados do povo quando ouve dos céus?",
+    "prompt": "Em 2 Crônicas 6:25, o que Deus faz com os pecados do povo quando ouve dos céus?",
+    "cue": "Em 2 Crônicas 6:25, o que Deus faz com os pecados do povo quando ouve dos céus?",
+    "verseRef": "2 Crônicas 6:25",
+    "passageText": "Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "template": "Então, ouve dos céus e ___ os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perdoa"
+      },
+      {
+        "id": "b",
+        "text": "esconde"
+      },
+      {
+        "id": "c",
+        "text": "anota"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel",
+    "feedbackCorrect": "Deus ouve dos céus e perdoa os pecados do seu povo.",
+    "feedbackWrong": {
+      "b": "Esconder seria encobrir; o pedido é por perdão real.",
+      "c": "Anotar guardaria a culpa; Salomão pede perdão dela."
+    },
+    "hint": "Veja a ação de Deus depois de ouvir.",
+    "learningObjective": "Lembrar o perdão como resposta de Deus.",
+    "evidence": [
+      "2 Crônicas 6:25"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Crônicas 6:25 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 6:25 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 6:25 comunica que se liga a este contexto?",
+    "verseRef": "2 Crônicas 6:25",
+    "passageText": "Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "passageA": {
+      "ref": "2 Crônicas 6:25",
+      "text": "Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O povo que confessa volta à terra com o perdão de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perdão sem ouvir oração"
+      },
+      {
+        "id": "b",
+        "text": "Exílio sem volta possível"
+      },
+      {
+        "id": "c",
+        "text": "Perdão e retorno à terra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra",
+    "feedbackCorrect": "Quem confessa é ouvido, perdoado e trazido de volta à terra.",
+    "feedbackWrong": {
+      "a": "O perdão vem porque Deus ouve dos céus a oração.",
+      "b": "O pedido é justamente fazê-los voltar à terra dada."
+    },
+    "hint": "Junte ouvir, perdoar e fazer voltar.",
+    "learningObjective": "Ligar a confissão do povo ao perdão e ao retorno.",
+    "evidence": [
+      "2 Crônicas 6:25"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:26, a falta de chuva acontece por acaso da natureza, sem relação com o pecado do povo",
+    "prompt": "Em 2 Crônicas 6:26, a falta de chuva acontece por acaso da natureza, sem relação com o pecado do povo",
+    "cue": "Em 2 Crônicas 6:26, a falta de chuva acontece por acaso da natureza, sem relação com o pecado do povo",
+    "verseRef": "2 Crônicas 6:26",
+    "passageText": "Quando os céus se fecharem e não houver chuva, por terem pecado contra ti, e orarem neste lugar, confessando o teu nome, e se converterem de seus pecados, quando os afligires",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "por terem pecado contra ti",
+    "feedbackCorrect": "A seca é ligada ao pecado, e a saída é confessar e converter-se.",
+    "feedbackWrong": {
+      "true": "Releia o motivo dado em 2 Crônicas 6:26."
+    },
+    "hint": "Veja o motivo citado para os céus fechados.",
+    "learningObjective": "Compreender a ligação entre pecado e disciplina.",
+    "evidence": [
+      "2 Crônicas 6:26"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:24, toque a palavra que abre a situação descrita por Salomão",
+    "prompt": "Em 2 Crônicas 6:24, toque a palavra que abre a situação descrita por Salomão",
+    "cue": "Em 2 Crônicas 6:24, toque a palavra que abre a situação descrita por Salomão",
+    "verseRef": "2 Crônicas 6:24",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando"
+      },
+      {
+        "id": "b",
+        "text": "inimigo"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo",
+    "feedbackCorrect": "Essa palavra abre cada caso que Salomão apresenta a Deus.",
+    "feedbackWrong": {
+      "b": "Inimigo é quem fere, não a abertura do caso.",
+      "c": "Nome é o que será confessado, não a abertura."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a abertura dos casos na oração de Salomão.",
+    "evidence": [
+      "2 Crônicas 6:24"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Crônicas 6:24 se relaciona com 2 Crônicas 6:25?",
+    "prompt": "Como 2 Crônicas 6:24 se relaciona com 2 Crônicas 6:25?",
+    "cue": "Como 2 Crônicas 6:24 se relaciona com 2 Crônicas 6:25?",
+    "verseRef": "2 Crônicas 6:24–25",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa. Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo peca e Deus recusa ouvir para sempre"
+      },
+      {
+        "id": "b",
+        "text": "A terra é devolvida sem nenhuma confissão"
+      },
+      {
+        "id": "c",
+        "text": "O inimigo vence e a oração é abandonada"
+      },
+      {
+        "id": "d",
+        "text": "O povo se converte e Deus perdoa faz voltar"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa",
+    "feedbackCorrect": "Conversão e confissão encontram um Deus que ouve, perdoa e restaura.",
+    "feedbackWrong": {
+      "a": "O verso seguinte pede que Deus ouça dos céus e perdoe.",
+      "b": "O retorno está ligado a converter e confessar o nome.",
+      "c": "A oração é justamente o caminho no meio da derrota."
+    },
+    "hint": "Ligue a atitude do povo à resposta de Deus.",
+    "learningObjective": "Relacionar conversão do povo e perdão de Deus.",
+    "evidence": [
+      "2 Crônicas 6:24–25"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o caminho de volta em 2 Crônicas 6:24?",
+    "prompt": "Como avança o caminho de volta em 2 Crônicas 6:24?",
+    "cue": "Como avança o caminho de volta em 2 Crônicas 6:24?",
+    "verseRef": "2 Crônicas 6:24",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo peca e é ferido"
+      },
+      {
+        "id": "b",
+        "text": "O povo se converte e confessa"
+      },
+      {
+        "id": "c",
+        "text": "O povo ora e suplica nesta casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tendo pecado contra ti, for ferido diante do inimigo",
+    "feedbackCorrect": "Queda, conversão com confissão e oração nesta casa, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela queda do povo; a oração fecha o caminho."
+    },
+    "hint": "A oração é o último passo citado.",
+    "learningObjective": "Compreender os passos do retorno a Deus.",
+    "evidence": [
+      "2 Crônicas 6:24"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:24, o que o povo faz com o coração além de confessar o nome de Deus?",
+    "prompt": "Em 2 Crônicas 6:24, o que o povo faz com o coração além de confessar o nome de Deus?",
+    "cue": "Em 2 Crônicas 6:24, o que o povo faz com o coração além de confessar o nome de Deus?",
+    "verseRef": "2 Crônicas 6:24",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa.",
+    "template": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se ___, confessar o teu nome, orar e suplicar diante de ti nesta casa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "converter"
+      },
+      {
+        "id": "b",
+        "text": "esconder"
+      },
+      {
+        "id": "c",
+        "text": "endurecer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e se converter, confessar o teu nome",
+    "feedbackCorrect": "Voltar para Deus é converter-se, e não só falar palavras bonitas.",
+    "feedbackWrong": {
+      "b": "Confessar é trazer à luz, não esconder o pecado.",
+      "c": "Endurecer é o contrário de voltar para Deus."
+    },
+    "hint": "Veja o verbo que vem antes de confessar.",
+    "learningObjective": "Compreender a conversão como virada do coração.",
+    "evidence": [
+      "2 Crônicas 6:24"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Crônicas 6:25 a Joel 2:13?",
+    "prompt": "O que liga 2 Crônicas 6:25 a Joel 2:13?",
+    "cue": "O que liga 2 Crônicas 6:25 a Joel 2:13?",
+    "verseRef": "2 Crônicas 6:25",
+    "passageText": "Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "passageA": {
+      "ref": "2 Crônicas 6:25",
+      "text": "Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais."
+    },
+    "passageB": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Voltar sem rasgar coração"
+      },
+      {
+        "id": "b",
+        "text": "Deus fecha ouvidos sempre"
+      },
+      {
+        "id": "c",
+        "text": "Converter-se e ser perdoado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel",
+    "feedbackCorrect": "Joel chama a voltar ao Senhor misericordioso; Salomão pede esse perdão.",
+    "feedbackWrong": {
+      "a": "Joel pede coração rasgado, não só roupa ou aparência.",
+      "b": "Os dois textos mostram Deus pronto a ouvir e perdoar."
+    },
+    "hint": "Compare o chamado a voltar nos dois textos.",
+    "learningObjective": "Relacionar a oração de Salomão ao chamado de Joel.",
+    "evidence": [
+      "2 Crônicas 6:25",
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:14–15, Deus guarda a aliança e cumpre com sua mão o que falou pela boca a Davi",
+    "prompt": "Em 2 Crônicas 6:14–15, Deus guarda a aliança e cumpre com sua mão o que falou pela boca a Davi",
+    "cue": "Em 2 Crônicas 6:14–15, Deus guarda a aliança e cumpre com sua mão o que falou pela boca a Davi",
+    "verseRef": "2 Crônicas 6:14–15",
+    "passageText": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração. Que cumpriste para com Teu servo Davi, meu pai, o que lhe falaste; pois pela Tua boca o disseste e pela Tua mão o realizaste; como se pode ver neste dia.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pois pela Tua boca o disseste e pela Tua mão o realizaste",
+    "feedbackCorrect": "O Deus que falou a Davi cumpre com a própria mão o que prometeu.",
+    "feedbackWrong": {
+      "false": "Releia como Salomão descreve boca e mão de Deus."
+    },
+    "hint": "Veja o que Deus disse e o que realizou.",
+    "learningObjective": "Interpretar a fidelidade de Deus como base do retorno.",
+    "evidence": [
+      "2 Crônicas 6:14–15"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:16, toque a palavra que mostra a condição para os filhos de Davi no trono",
+    "prompt": "Em 2 Crônicas 6:16, toque a palavra que mostra a condição para os filhos de Davi no trono",
+    "cue": "Em 2 Crônicas 6:16, toque a palavra que mostra a condição para os filhos de Davi no trono",
+    "verseRef": "2 Crônicas 6:16",
+    "passageText": "Agora, Senhor Deus de Israel, cumpre ao teu servo Davi, meu pai, o que lhe prometeste, dizendo: Não te faltará um sucessor diante de mim que se assente no trono de Israel, contanto que os teus filhos guardem o seu caminho, andando na minha lei como tu andaste diante de mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "contanto"
+      },
+      {
+        "id": "b",
+        "text": "sucessor"
+      },
+      {
+        "id": "c",
+        "text": "trono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "contanto que os teus filhos guardem o seu caminho",
+    "feedbackCorrect": "A permanência no trono está ligada a guardar o caminho do Senhor.",
+    "feedbackWrong": {
+      "b": "Sucessor é a promessa; a condição vem logo depois dela.",
+      "c": "Trono é o lugar; a condição é guardar o caminho."
+    },
+    "hint": "Procure a palavra logo depois da promessa.",
+    "learningObjective": "Sustentar com o texto a condição da promessa a Davi.",
+    "evidence": [
+      "2 Crônicas 6:16"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Crônicas 6:24–25 sustenta sobre reforma do povo de Deus?",
+    "prompt": "Que leitura 2 Crônicas 6:24–25 sustenta sobre reforma do povo de Deus?",
+    "cue": "Que leitura 2 Crônicas 6:24–25 sustenta sobre reforma do povo de Deus?",
+    "verseRef": "2 Crônicas 6:24–25",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa. Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O templo perdoa sem confissão nenhuma"
+      },
+      {
+        "id": "b",
+        "text": "Depois da queda não existe mais volta"
+      },
+      {
+        "id": "c",
+        "text": "Basta retomar festas sem mudar coração"
+      },
+      {
+        "id": "d",
+        "text": "Reforma é converter confessar e orar"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa",
+    "feedbackCorrect": "Reforma, aqui, é virada de coração com confissão e oração.",
+    "feedbackWrong": {
+      "a": "O perdão é pedido a quem se converte e confessa o nome.",
+      "b": "Salomão prevê justamente perdão e retorno depois da queda.",
+      "c": "O texto fala de converter e confessar, não só de cerimônia."
+    },
+    "hint": "Junte os verbos do povo nos dois versículos.",
+    "learningObjective": "Escolher a interpretação que a oração sustenta sobre reforma.",
+    "evidence": [
+      "2 Crônicas 6:24–25"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do retorno em 2 Crônicas 6:25?",
+    "prompt": "Qual sequência revela o sentido do retorno em 2 Crônicas 6:25?",
+    "cue": "Qual sequência revela o sentido do retorno em 2 Crônicas 6:25?",
+    "verseRef": "2 Crônicas 6:25",
+    "passageText": "Então, ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra que lhes deste a eles e a seus pais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ouve dos céus a oração"
+      },
+      {
+        "id": "b",
+        "text": "Deus perdoa pecados do povo"
+      },
+      {
+        "id": "c",
+        "text": "Deus faz povo voltar à terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ouve dos céus e perdoa os pecados do teu povo de Israel; e faze-os voltar à terra",
+    "feedbackCorrect": "Ouvir, perdoar e restaurar à terra, nessa ordem esperançosa.",
+    "feedbackWrong": {
+      "default": "Comece por Deus ouvindo; o retorno à terra fecha."
+    },
+    "hint": "A restauração à terra é o fim do pedido.",
+    "learningObjective": "Ver o retorno como ouvir, perdoar e restaurar.",
+    "evidence": [
+      "2 Crônicas 6:25"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:14, com o que os servos devem andar diante de Deus para viver a aliança?",
+    "prompt": "Em 2 Crônicas 6:14, com o que os servos devem andar diante de Deus para viver a aliança?",
+    "cue": "Em 2 Crônicas 6:14, com o que os servos devem andar diante de Deus para viver a aliança?",
+    "verseRef": "2 Crônicas 6:14",
+    "passageText": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração.",
+    "template": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pressa"
+      },
+      {
+        "id": "b",
+        "text": "orgulho"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que andam diante de Ti com todo o coração",
+    "feedbackCorrect": "Deus guarda aliança com quem anda diante dele de coração inteiro.",
+    "feedbackWrong": {
+      "a": "Pressa não é citada; o que importa é o coração inteiro.",
+      "b": "Orgulho afasta de Deus; o texto fala de coração entregue."
+    },
+    "hint": "Veja com o que os servos andam diante dele.",
+    "learningObjective": "Lembrar o termo que marca entrega inteira a Deus.",
+    "evidence": [
+      "2 Crônicas 6:14"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Crônicas 6:24 a 2 Crônicas 7:14?",
+    "prompt": "O que liga 2 Crônicas 6:24 a 2 Crônicas 7:14?",
+    "cue": "O que liga 2 Crônicas 6:24 a 2 Crônicas 7:14?",
+    "verseRef": "2 Crônicas 6:24",
+    "passageText": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa.",
+    "passageA": {
+      "ref": "2 Crônicas 6:24",
+      "text": "Quando o teu povo Israel, tendo pecado contra ti, for ferido diante do inimigo, e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa."
+    },
+    "passageB": {
+      "ref": "2 Crônicas 7:14",
+      "text": "E se o meu povo, que se chama pelo meu nome, se humilhar, orar, e me buscar, e se converter dos seus maus caminhos, então, eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Humilhar orar e converter"
+      },
+      {
+        "id": "b",
+        "text": "Buscar sem deixar pecados"
+      },
+      {
+        "id": "c",
+        "text": "Pedir sem se humilhar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e se converter, confessar o teu nome, orar e suplicar diante de ti nesta casa",
+    "feedbackCorrect": "Deus responde a Salomão com o mesmo caminho, humilhar-se e converter-se.",
+    "feedbackWrong": {
+      "b": "A promessa pede deixar os maus caminhos, não mantê-los.",
+      "c": "A resposta de Deus inclui humilhar-se e buscar sua face."
+    },
+    "hint": "Compare o caminho do povo nos dois textos.",
+    "learningObjective": "Ligar a oração de Salomão à resposta de Deus em 7:14.",
+    "evidence": [
+      "2 Crônicas 6:24",
+      "2 Crônicas 7:14"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:10, na arca havia apenas as duas tábuas colocadas por Moisés junto a Horebe",
+    "prompt": "Em 2 Crônicas 5:10, na arca havia apenas as duas tábuas colocadas por Moisés junto a Horebe",
+    "cue": "Em 2 Crônicas 5:10, na arca havia apenas as duas tábuas colocadas por Moisés junto a Horebe",
+    "verseRef": "2 Crônicas 5:10",
+    "passageText": "Na arca não havia nada além das duas tábuas que Moisés havia colocadas junto a Horebe, quando o Senhor fez aliança com os filhos de Israel, ao saírem do Egito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Na arca não havia nada além das duas tábuas que Moisés havia colocadas junto a Horebe",
+    "feedbackCorrect": "Dentro da arca, só as tábuas da aliança feita na saída do Egito.",
+    "feedbackWrong": {
+      "false": "Releia o que havia dentro da arca em 5:10."
+    },
+    "hint": "Veja o conteúdo citado da arca.",
+    "learningObjective": "Observar o conteúdo da arca no templo.",
+    "evidence": [
+      "2 Crônicas 5:10"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:6, toque o primeiro animal citado entre os sacrificados diante da arca",
+    "prompt": "Em 2 Crônicas 5:6, toque o primeiro animal citado entre os sacrificados diante da arca",
+    "cue": "Em 2 Crônicas 5:6, toque o primeiro animal citado entre os sacrificados diante da arca",
+    "verseRef": "2 Crônicas 5:6",
+    "passageText": "Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ovelhas"
+      },
+      {
+        "id": "b",
+        "text": "assembleia"
+      },
+      {
+        "id": "c",
+        "text": "bois"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sacrificaram ovelhas e bois que eram tantos que não podiam ser contados",
+    "feedbackCorrect": "Ovelhas e bois são tantos que nem podem ser contados.",
+    "feedbackWrong": {
+      "b": "Assembleia é quem se reúne, não animal sacrificado.",
+      "c": "Bois vêm logo depois; o primeiro citado é outro."
+    },
+    "hint": "Leia a lista de sacrifícios do versículo.",
+    "learningObjective": "Identificar os sacrifícios diante da arca.",
+    "evidence": [
+      "2 Crônicas 5:6"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Crônicas 5:2, quem Salomão convocou em Jerusalém para levar a arca?",
+    "prompt": "Segundo 2 Crônicas 5:2, quem Salomão convocou em Jerusalém para levar a arca?",
+    "cue": "Segundo 2 Crônicas 5:2, quem Salomão convocou em Jerusalém para levar a arca?",
+    "verseRef": "2 Crônicas 5:2",
+    "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente os filhos de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Apenas os cantores levitas"
+      },
+      {
+        "id": "c",
+        "text": "Anciãos e cabeças das tribos"
+      },
+      {
+        "id": "d",
+        "text": "Reis de nações vizinhas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos",
+    "feedbackCorrect": "Salomão reúne anciãos e cabeças das tribos para levar a arca.",
+    "feedbackWrong": {
+      "a": "A convocação inclui anciãos e cabeças, não só família real.",
+      "b": "Cantores têm papel no louvor, mas a convocação é mais ampla.",
+      "d": "Quem é convocado é liderança de Israel, não reis vizinhos."
+    },
+    "hint": "Leia quem é chamado no começo do capítulo.",
+    "learningObjective": "Observar a liderança reunida para a arca.",
+    "evidence": [
+      "2 Crônicas 5:2"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Crônicas 5:7 na ordem do texto",
+    "prompt": "Monte 2 Crônicas 5:7 na ordem do texto",
+    "cue": "Monte 2 Crônicas 5:7 na ordem do texto",
+    "verseRef": "2 Crônicas 5:7",
+    "passageText": "Então os sacerdotes colocaram a arca da Aliança do Senhor em seu lugar, no santuário mais interior do templo, no Santo dos Santos, debaixo das asas dos querubins.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então os sacerdotes colocaram a arca da Aliança do Senhor em seu lugar"
+      },
+      {
+        "id": "b",
+        "text": "no santuário mais interior do templo, no Santo dos Santos"
+      },
+      {
+        "id": "c",
+        "text": "debaixo das asas dos querubins"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "colocaram a arca da Aliança do Senhor em seu lugar",
+    "feedbackCorrect": "A arca chega ao seu lugar, o lugar mais interior, sob querubins.",
+    "feedbackWrong": {
+      "default": "Comece pelos sacerdotes colocando a arca; os querubins fecham."
+    },
+    "hint": "O destino final fica sob os querubins.",
+    "learningObjective": "Reconhecer a sequência de 2 Crônicas 5:7.",
+    "evidence": [
+      "2 Crônicas 5:7"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:8, o que os querubins estendiam sobre o lugar da arca?",
+    "prompt": "Em 2 Crônicas 5:8, o que os querubins estendiam sobre o lugar da arca?",
+    "cue": "Em 2 Crônicas 5:8, o que os querubins estendiam sobre o lugar da arca?",
+    "verseRef": "2 Crônicas 5:8",
+    "passageText": "Os querubins estendiam suas asas sobre o lugar da arca, cobrindo a arca e seus varais por cima.",
+    "template": "Os querubins estendiam suas ___ sobre o lugar da arca, cobrindo a arca e seus varais por cima.",
+    "options": [
+      {
+        "id": "a",
+        "text": "asas"
+      },
+      {
+        "id": "b",
+        "text": "varais"
+      },
+      {
+        "id": "c",
+        "text": "mãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Os querubins estendiam suas asas sobre o lugar da arca",
+    "feedbackCorrect": "As asas dos querubins cobrem a arca e seus varais por cima.",
+    "feedbackWrong": {
+      "b": "Varais são cobertos pelas asas, não estendidos sobre arca.",
+      "c": "Quem estende são os querubins, e o texto cita suas asas."
+    },
+    "hint": "Veja o que cobre a arca por cima.",
+    "learningObjective": "Lembrar as asas sobre a arca.",
+    "evidence": [
+      "2 Crônicas 5:8"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Crônicas 5:3 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 5:3 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 5:3 comunica que se liga a este contexto?",
+    "verseRef": "2 Crônicas 5:3",
+    "passageText": "E todos os homens de Israel se reuniram diante do rei, na ocasião da festa que acontecia no sétimo mês.",
+    "passageA": {
+      "ref": "2 Crônicas 5:3",
+      "text": "E todos os homens de Israel se reuniram diante do rei, na ocasião da festa que acontecia no sétimo mês."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Todo o Israel se reúne na festa para a dedicação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa cancelada no templo"
+      },
+      {
+        "id": "b",
+        "text": "Povo disperso sem rei"
+      },
+      {
+        "id": "c",
+        "text": "Povo reunido na festa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se reuniram diante do rei, na ocasião da festa que acontecia no sétimo mês",
+    "feedbackCorrect": "Todo o Israel se reúne diante do rei na festa do sétimo mês.",
+    "feedbackWrong": {
+      "a": "A festa acontece; é nela que o povo se reúne.",
+      "b": "O texto mostra reunião ampla, não dispersão do povo."
+    },
+    "hint": "Veja quando os homens de Israel se reuniram.",
+    "learningObjective": "Ligar a dedicação à reunião festiva do povo.",
+    "evidence": [
+      "2 Crônicas 5:3"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-07",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Crônicas 5:12, toque o tecido das vestes dos cantores levitas",
+    "prompt": "Em 2 Crônicas 5:12, toque o tecido das vestes dos cantores levitas",
+    "cue": "Em 2 Crônicas 5:12, toque o tecido das vestes dos cantores levitas",
+    "verseRef": "2 Crônicas 5:12",
+    "passageText": "E os levitas, que eram cantores, isto é, Asafe, Hemã, Jedutum e seus filhos e irmãos, vestidos de linho fino, estavam de pé ao leste do altar, com címbalos, alaúdes e harpas; e com eles estavam até cento e vinte sacerdotes que tocavam as trombetas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "linho fino"
+      },
+      {
+        "id": "b",
+        "text": "trombetas"
+      },
+      {
+        "id": "c",
+        "text": "címbalos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vestidos de linho fino, estavam de pé ao leste do altar",
+    "feedbackCorrect": "Os cantores vestem linho fino junto ao altar, com instrumentos.",
+    "feedbackWrong": {
+      "b": "Trombetas são dos sacerdotes, não a roupa dos cantores.",
+      "c": "Címbalos são instrumentos nas mãos, não vestes deles."
+    },
+    "hint": "Procure como os cantores estavam vestidos.",
+    "learningObjective": "Observar as vestes dos cantores na dedicação.",
+    "evidence": [
+      "2 Crônicas 5:12"
+    ]
+  },
+  {
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-08",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Crônicas 6:3 na ordem do texto",
+    "prompt": "Monte 2 Crônicas 6:3 na ordem do texto",
+    "cue": "Monte 2 Crônicas 6:3 na ordem do texto",
+    "verseRef": "2 Crônicas 6:3",
+    "passageText": "Então o rei virou o rosto, abençoou toda a congregação de Israel, que se mantinha em pé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então o rei virou o rosto"
+      },
+      {
+        "id": "b",
+        "text": "abençoou toda a congregação de Israel"
+      },
+      {
+        "id": "c",
+        "text": "que se mantinha em pé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então o rei virou o rosto, abençoou toda a congregação de Israel",
+    "feedbackCorrect": "O rei se volta, abençoa a congregação que está em pé.",
+    "feedbackWrong": {
+      "default": "Comece pelo rei virando o rosto; o povo em pé fecha."
+    },
+    "hint": "O versículo começa pela ação do rei.",
+    "learningObjective": "Reconhecer a sequência de 2 Crônicas 6:3.",
+    "evidence": [
+      "2 Crônicas 6:3"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:5, Deus diz que escolheu uma cidade do Egito para ali pôr o seu nome",
+    "prompt": "Em 2 Crônicas 6:5, Deus diz que escolheu uma cidade do Egito para ali pôr o seu nome",
+    "cue": "Em 2 Crônicas 6:5, Deus diz que escolheu uma cidade do Egito para ali pôr o seu nome",
+    "verseRef": "2 Crônicas 6:5",
+    "passageText": "Desde o dia em que tirei o meu povo da terra do Egito, não escolhi cidade alguma de todas as tribos de Israel, para edificar nela uma casa a fim de ali estabelecer o meu nome; nem escolhi homem algum para ser o líder do meu povo, Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não escolhi cidade alguma de todas as tribos de Israel, para edificar nela uma casa a fim de ali estabelecer o meu nome",
+    "feedbackCorrect": "Deus não escolheu cidade alguma até escolher Jerusalém e Davi.",
+    "feedbackWrong": {
+      "true": "Releia o que Deus não escolheu em 6:5."
+    },
+    "hint": "Veja a negação no começo da fala.",
+    "learningObjective": "Compreender a escolha de Jerusalém na fala de Deus.",
+    "evidence": [
+      "2 Crônicas 6:5"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
+    "prompt": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
+    "cue": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
+    "verseRef": "2 Crônicas 6:8",
+    "passageText": "Porém o Senhor disse a Davi, meu pai: Já que você desejou edificar uma casa para o meu nome, fez bem em ter esse propósito no coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porém"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Porém o Senhor disse a Davi, meu pai",
+    "feedbackCorrect": "Essa palavra vira do elogio ao desejo para o limite seguinte.",
+    "feedbackWrong": {
+      "b": "Nome é para quem seria a casa, não a virada.",
+      "c": "Coração é onde estava o propósito, não a virada."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de virada na fala do Senhor.",
+    "evidence": [
+      "2 Crônicas 6:8"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Crônicas 6:10 mostra o cumprimento da palavra de Deus a Davi?",
+    "prompt": "Como 2 Crônicas 6:10 mostra o cumprimento da palavra de Deus a Davi?",
+    "cue": "Como 2 Crônicas 6:10 mostra o cumprimento da palavra de Deus a Davi?",
+    "verseRef": "2 Crônicas 6:10",
+    "passageText": "Assim, o Senhor cumpriu a Sua palavra que havia dito, pois me levantei no lugar de Davi, meu pai, e me assentei no trono de Israel, conforme o Senhor prometera; e edifiquei uma casa ao nome do Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salomão reina e edifica como prometido"
+      },
+      {
+        "id": "b",
+        "text": "A promessa é adiada para outro povo"
+      },
+      {
+        "id": "c",
+        "text": "Davi volta viver e edifica casa"
+      },
+      {
+        "id": "d",
+        "text": "O povo edifica sem rei no trono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "me levantei no lugar de Davi, meu pai, e me assentei no trono de Israel, conforme o Senhor prometera",
+    "feedbackCorrect": "Salomão está no trono e a casa está edificada, como prometido.",
+    "feedbackWrong": {
+      "b": "A promessa se cumpre em Israel, na casa edificada.",
+      "c": "Quem se levanta no lugar de Davi é o filho dele.",
+      "d": "Há um rei assentado no trono, Salomão, filho de Davi."
+    },
+    "hint": "Veja as palavras conforme e prometera.",
+    "learningObjective": "Relacionar promessa a Davi e reinado de Salomão.",
+    "evidence": [
+      "2 Crônicas 6:10"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a fala em 2 Crônicas 6:5–6?",
+    "prompt": "Como avança a fala em 2 Crônicas 6:5–6?",
+    "cue": "Como avança a fala em 2 Crônicas 6:5–6?",
+    "verseRef": "2 Crônicas 6:5–6",
+    "passageText": "Desde o dia em que tirei o meu povo da terra do Egito, não escolhi cidade alguma de todas as tribos de Israel, para edificar nela uma casa a fim de ali estabelecer o meu nome; nem escolhi homem algum para ser o líder do meu povo, Israel. Escolhi Jerusalém para que ali se estabelecesse o meu nome, e escolhi Davi para que fosse o chefe do meu povo, Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus não escolheu cidade nem líder"
+      },
+      {
+        "id": "b",
+        "text": "Deus escolhe Jerusalém para nome"
+      },
+      {
+        "id": "c",
+        "text": "Deus escolhe Davi como chefe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Escolhi Jerusalém para que ali se estabelecesse o meu nome",
+    "feedbackCorrect": "Da não escolha à escolha de cidade e de chefe do povo.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Deus não escolheu; Davi fecha a fala."
+    },
+    "hint": "A escolha de Davi é o fim da fala.",
+    "learningObjective": "Compreender as escolhas de Deus contadas por Salomão.",
+    "evidence": [
+      "2 Crônicas 6:5–6"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:6, que cidade Deus escolheu para ali estabelecer o seu nome?",
+    "prompt": "Em 2 Crônicas 6:6, que cidade Deus escolheu para ali estabelecer o seu nome?",
+    "cue": "Em 2 Crônicas 6:6, que cidade Deus escolheu para ali estabelecer o seu nome?",
+    "verseRef": "2 Crônicas 6:6",
+    "passageText": "Escolhi Jerusalém para que ali se estabelecesse o meu nome, e escolhi Davi para que fosse o chefe do meu povo, Israel.",
+    "template": "Escolhi ___ para que ali se estabelecesse o meu nome, e escolhi Davi para que fosse o chefe do meu povo, Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Belém"
+      },
+      {
+        "id": "b",
+        "text": "Hebrom"
+      },
+      {
+        "id": "c",
+        "text": "Jerusalém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Escolhi Jerusalém para que ali se estabelecesse o meu nome",
+    "feedbackCorrect": "Jerusalém é a cidade escolhida para o nome do Senhor.",
+    "feedbackWrong": {
+      "a": "Belém é cidade de Davi, mas a escolhida aqui é outra.",
+      "b": "Hebrom foi início do reino, não a cidade citada aqui."
+    },
+    "hint": "Leia a primeira escolha citada no versículo.",
+    "learningObjective": "Compreender Jerusalém como cidade escolhida por Deus.",
+    "evidence": [
+      "2 Crônicas 6:6"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Crônicas 5:14 a Êxodo 40:35?",
+    "prompt": "O que liga 2 Crônicas 5:14 a Êxodo 40:35?",
+    "cue": "O que liga 2 Crônicas 5:14 a Êxodo 40:35?",
+    "verseRef": "2 Crônicas 5:14",
+    "passageText": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus.",
+    "passageA": {
+      "ref": "2 Crônicas 5:14",
+      "text": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus."
+    },
+    "passageB": {
+      "ref": "Êxodo 40:35",
+      "text": "Moisés não podia entrar na tenda da congregação, pois a nuvem permanecia sobre ela, e a glória do SENHOR enchia o tabernáculo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdotes entram sem nuvem"
+      },
+      {
+        "id": "b",
+        "text": "Glória some da morada"
+      },
+      {
+        "id": "c",
+        "text": "Glória enche e impede ficar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+    "feedbackCorrect": "Como no tabernáculo, a glória enche e nem sacerdotes ficam.",
+    "feedbackWrong": {
+      "a": "Nos dois, a nuvem da glória impede permanecer ministrando.",
+      "b": "Nos dois textos a glória enche a morada de Deus."
+    },
+    "hint": "Compare o efeito da nuvem nos sacerdotes.",
+    "learningObjective": "Relacionar glória no templo e no tabernáculo.",
+    "evidence": [
+      "2 Crônicas 5:14",
+      "Êxodo 40:35"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-07",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Crônicas 6:13, toque o gesto de Salomão antes de estender as mãos para o céu",
+    "prompt": "Em 2 Crônicas 6:13, toque o gesto de Salomão antes de estender as mãos para o céu",
+    "cue": "Em 2 Crônicas 6:13, toque o gesto de Salomão antes de estender as mãos para o céu",
+    "verseRef": "2 Crônicas 6:13",
+    "passageText": "Porque Salomão havia feito uma tribuna de bronze, de cinco côvados de comprimento, cinco côvados de largura e três côvados de altura, e a colocou no meio do pátio; então se pôs em pé, ajoelhou-se diante de toda a congregação de Israel e estendeu as mãos para o céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "bronze"
+      },
+      {
+        "id": "b",
+        "text": "ajoelhou-se"
+      },
+      {
+        "id": "c",
+        "text": "tribuna"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ajoelhou-se diante de toda a congregação de Israel e estendeu as mãos para o céu",
+    "feedbackCorrect": "Salomão se ajoelha diante de todos e levanta as mãos ao céu.",
+    "feedbackWrong": {
+      "a": "Bronze é material da tribuna, não gesto do rei.",
+      "c": "Tribuna é onde ele fica, não gesto de oração."
+    },
+    "hint": "Procure o que o rei faz com o corpo.",
+    "learningObjective": "Reconhecer a postura humilde de Salomão ao orar.",
+    "evidence": [
+      "2 Crônicas 6:13"
+    ]
+  },
+  {
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-08",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os gestos em 2 Crônicas 6:12?",
+    "prompt": "Como se encadeiam os gestos em 2 Crônicas 6:12?",
+    "cue": "Como se encadeiam os gestos em 2 Crônicas 6:12?",
+    "verseRef": "2 Crônicas 6:12",
+    "passageText": "E pôs-se diante do altar do Senhor, na presença de toda a congregação de Israel, e estendeu as mãos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salomão fica diante do altar Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Ele está na presença da congregação"
+      },
+      {
+        "id": "c",
+        "text": "Ele estende as mãos em oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E pôs-se diante do altar do Senhor, na presença de toda a congregação de Israel, e estendeu as mãos",
+    "feedbackCorrect": "Diante do altar, diante do povo, Salomão estende as mãos.",
+    "feedbackWrong": {
+      "default": "Comece por Salomão diante do altar; as mãos fecham."
+    },
+    "hint": "As mãos estendidas fecham o versículo.",
+    "learningObjective": "Compreender a cena da oração pública de Salomão.",
+    "evidence": [
+      "2 Crônicas 6:12"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-01",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:14, Salomão afirma que não há Deus como o Senhor nos céus nem na terra",
+    "prompt": "Em 2 Crônicas 6:14, Salomão afirma que não há Deus como o Senhor nos céus nem na terra",
+    "cue": "Em 2 Crônicas 6:14, Salomão afirma que não há Deus como o Senhor nos céus nem na terra",
+    "verseRef": "2 Crônicas 6:14",
+    "passageText": "E disse: Ó Senhor, Deus de Israel, não há Deus como Tu, nem nos céus nem na terra; que guardas a aliança e a misericórdia para com Teus servos que andam diante de Ti com todo o coração.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não há Deus como Tu, nem nos céus nem na terra",
+    "feedbackCorrect": "Salomão começa a oração confessando que Deus é incomparável.",
+    "feedbackWrong": {
+      "false": "Releia a confissão que abre a oração em 6:14."
+    },
+    "hint": "Veja como Salomão descreve Deus.",
+    "learningObjective": "Interpretar a incomparabilidade de Deus na oração.",
+    "evidence": [
+      "2 Crônicas 6:14"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-02",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:20, toque o que Salomão pede que fique aberto dia e noite sobre o templo",
+    "prompt": "Em 2 Crônicas 6:20, toque o que Salomão pede que fique aberto dia e noite sobre o templo",
+    "cue": "Em 2 Crônicas 6:20, toque o que Salomão pede que fique aberto dia e noite sobre o templo",
+    "verseRef": "2 Crônicas 6:20",
+    "passageText": "Que os teus olhos estejam abertos dia e noite sobre este lugar, do qual disseste que ali colocarias o teu nome; para que ouças a oração que o teu servo fizer neste lugar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "noite"
+      },
+      {
+        "id": "b",
+        "text": "olhos"
+      },
+      {
+        "id": "c",
+        "text": "lugar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Que os teus olhos estejam abertos dia e noite sobre este lugar",
+    "feedbackCorrect": "Salomão pede olhos de Deus abertos sobre aquele lugar de oração.",
+    "feedbackWrong": {
+      "a": "Noite é quando, junto do dia; o pedido é pelos olhos.",
+      "c": "Lugar é sobre onde o olhar fica, não o que abre."
+    },
+    "hint": "Procure o sujeito do pedido de Salomão.",
+    "learningObjective": "Sustentar com o texto o olhar atento de Deus.",
+    "evidence": [
+      "2 Crônicas 6:20"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-03",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Crônicas 6:19–20 sustenta sobre orar naquele templo?",
+    "prompt": "Que leitura 2 Crônicas 6:19–20 sustenta sobre orar naquele templo?",
+    "cue": "Que leitura 2 Crônicas 6:19–20 sustenta sobre orar naquele templo?",
+    "verseRef": "2 Crônicas 6:19–20",
+    "passageText": "Atenta, pois, para a oração do teu servo e para a sua súplica, ó SENHOR, meu Deus, para que ouças o clamor e a oração que o teu servo faz diante de ti. Que os teus olhos estejam abertos dia e noite sobre este lugar, do qual disseste que ali colocarias o teu nome; para que ouças a oração que o teu servo fizer neste lugar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar ali dispensa coração inteiro"
+      },
+      {
+        "id": "b",
+        "text": "O lugar sagrado substitui Deus céu"
+      },
+      {
+        "id": "c",
+        "text": "Deus ouve só orações de reis"
+      },
+      {
+        "id": "d",
+        "text": "Deus atenta para oração servo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Atenta, pois, para a oração do teu servo e para a sua súplica, ó SENHOR, meu Deus",
+    "feedbackCorrect": "Salomão pede que Deus atente e ouça o clamor feito ali.",
+    "feedbackWrong": {
+      "a": "A aliança pede andar diante de Deus com todo coração.",
+      "b": "Deus ouve do céu; o lugar aponta para ele, não o troca.",
+      "c": "O pedido inclui servo e povo de Israel orando ali."
+    },
+    "hint": "Veja o pedido que Salomão faz a Deus.",
+    "learningObjective": "Escolher a interpretação que a oração sustenta.",
+    "evidence": [
+      "2 Crônicas 6:19–20"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-04",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da dedicação em 2 Crônicas 5:14?",
+    "prompt": "Qual sequência revela o sentido da dedicação em 2 Crônicas 5:14?",
+    "cue": "Qual sequência revela o sentido da dedicação em 2 Crônicas 5:14?",
+    "verseRef": "2 Crônicas 5:14",
+    "passageText": "E os sacerdotes não podiam permanecer ali para ministrar, por causa da nuvem, pois a glória do SENHOR encheu a casa de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdotes saem do santuário santificados"
+      },
+      {
+        "id": "b",
+        "text": "Louvor sobe com uma só voz"
+      },
+      {
+        "id": "c",
+        "text": "Glória enche casa por completo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+    "feedbackCorrect": "Santificação e louvor encontram a glória que enche tudo.",
+    "feedbackWrong": {
+      "default": "Comece pela saída santificada; a glória fecha a cena."
+    },
+    "hint": "A glória enchendo a casa é o desfecho.",
+    "learningObjective": "Ver a glória como desfecho santo da dedicação.",
+    "evidence": [
+      "2 Crônicas 5:14"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-05",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:15, por onde Deus disse a promessa que depois realizou com a mão?",
+    "prompt": "Em 2 Crônicas 6:15, por onde Deus disse a promessa que depois realizou com a mão?",
+    "cue": "Em 2 Crônicas 6:15, por onde Deus disse a promessa que depois realizou com a mão?",
+    "verseRef": "2 Crônicas 6:15",
+    "passageText": "Que cumpriste para com Teu servo Davi, meu pai, o que lhe falaste; pois pela Tua boca o disseste e pela Tua mão o realizaste; como se pode ver neste dia.",
+    "template": "Que cumpriste para com Teu servo Davi, meu pai, o que lhe falaste; pois pela Tua ___ o disseste e pela Tua mão o realizaste; como se pode ver neste dia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "boca"
+      },
+      {
+        "id": "b",
+        "text": "carta"
+      },
+      {
+        "id": "c",
+        "text": "sonho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois pela Tua boca o disseste e pela Tua mão o realizaste",
+    "feedbackCorrect": "Deus falou pela boca e realizou pela mão, fiel à promessa.",
+    "feedbackWrong": {
+      "b": "Nenhuma carta é citada; Deus falou e realizou.",
+      "c": "O texto fala de boca e mão de Deus, não de sonho."
+    },
+    "hint": "Veja como Deus falou e realizou.",
+    "learningObjective": "Lembrar o termo que marca a palavra fiel de Deus.",
+    "evidence": [
+      "2 Crônicas 6:15"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-06",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Crônicas 6:21 a 1 João 1:9?",
+    "prompt": "O que liga 2 Crônicas 6:21 a 1 João 1:9?",
+    "cue": "O que liga 2 Crônicas 6:21 a 1 João 1:9?",
+    "verseRef": "2 Crônicas 6:21",
+    "passageText": "Ouça, pois, as súplicas do seu servo e do seu povo de Israel, quando orarem neste lugar; ouça do lugar da sua habitação, nos céus; ouça e perdoe",
+    "passageA": {
+      "ref": "2 Crônicas 6:21",
+      "text": "Ouça, pois, as súplicas do seu servo e do seu povo de Israel, quando orarem neste lugar; ouça do lugar da sua habitação, nos céus; ouça e perdoe"
+    },
+    "passageB": {
+      "ref": "1 João 1:9",
+      "text": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar e ser perdoado fiel"
+      },
+      {
+        "id": "b",
+        "text": "Perdão sem confessar nada"
+      },
+      {
+        "id": "c",
+        "text": "Esconder pecado e ser ouvido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ouça e perdoe",
+    "feedbackCorrect": "Salomão pede perdão a quem ora; João promete perdão a quem confessa.",
+    "feedbackWrong": {
+      "b": "Nos dois, perdão está ligado a reconhecer diante Deus.",
+      "c": "Confessar é o contrário de esconder o pecado."
+    },
+    "hint": "Compare confissão e perdão nos dois textos.",
+    "learningObjective": "Ligar oração do templo à promessa de perdão.",
+    "evidence": [
+      "2 Crônicas 6:21",
+      "1 João 1:9"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-07",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Crônicas 6:21, toque a última ação que Salomão pede a Deus pelo povo que ora",
+    "prompt": "Em 2 Crônicas 6:21, toque a última ação que Salomão pede a Deus pelo povo que ora",
+    "cue": "Em 2 Crônicas 6:21, toque a última ação que Salomão pede a Deus pelo povo que ora",
+    "verseRef": "2 Crônicas 6:21",
+    "passageText": "Ouça, pois, as súplicas do seu servo e do seu povo de Israel, quando orarem neste lugar; ouça do lugar da sua habitação, nos céus; ouça e perdoe",
+    "options": [
+      {
+        "id": "a",
+        "text": "perdoe"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "súplicas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ouça e perdoe",
+    "feedbackCorrect": "O pedido termina em perdão, ouça dos céus e perdoe.",
+    "feedbackWrong": {
+      "b": "Povo é quem ora; a ação pedida a Deus vem depois.",
+      "c": "Súplicas são o que o povo faz, não ação final Deus."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Sustentar com o texto o perdão pedido a Deus.",
+    "evidence": [
+      "2 Crônicas 6:21"
+    ]
+  },
+  {
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-08",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado fiel de Deus em 2 Crônicas 6:10?",
+    "prompt": "Qual sequência revela o cuidado fiel de Deus em 2 Crônicas 6:10?",
+    "cue": "Qual sequência revela o cuidado fiel de Deus em 2 Crônicas 6:10?",
+    "verseRef": "2 Crônicas 6:10",
+    "passageText": "Assim, o Senhor cumpriu a Sua palavra que havia dito, pois me levantei no lugar de Davi, meu pai, e me assentei no trono de Israel, conforme o Senhor prometera; e edifiquei uma casa ao nome do Senhor, Deus de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cumpre palavra que falou"
+      },
+      {
+        "id": "b",
+        "text": "Salomão assenta no trono Israel"
+      },
+      {
+        "id": "c",
+        "text": "Salomão edifica casa ao nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Assim, o Senhor cumpriu a Sua palavra que havia dito",
+    "feedbackCorrect": "Palavra cumprida, filho no trono e casa edificada ao nome.",
+    "feedbackWrong": {
+      "default": "Comece pela palavra cumprida; a casa fecha o verso."
+    },
+    "hint": "A casa edificada é o fim do versículo.",
+    "learningObjective": "Ver promessa, trono e templo como fio fiel.",
+    "evidence": [
+      "2 Crônicas 6:10"
+    ]
+  }
+]

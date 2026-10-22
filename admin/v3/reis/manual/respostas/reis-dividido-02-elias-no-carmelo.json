@@ -1,0 +1,320 @@
+{
+ "study": {
+  "passageRef": "1 Reis 18:21",
+  "passages": [{"ref": "1 Reis 18:21"}, {"ref": "1 Reis 12:28–30"}, {"ref": "1 Reis 12:16"}],
+  "context": "Desde Jeroboão, o reino do norte vive entre o Senhor e os bezerros, altos e deuses vizinhos. No Carmelo, Elias reúne todo o povo e coloca a pergunta sem rodeios, até quando ficar entre dois pensamentos.",
+  "keyword": "Coxeareis",
+  "keywordGloss": "Mancar entre dois lados, imagem de um povo que não escolhe entre o Senhor e Baal.",
+  "focusQuestion": "Entre quais dois pensamentos você tem coxeado, sem escolher de verdade a quem seguir?",
+  "reflectionPrompts": ["Escolher a quem seguir", "Silêncio não é decisão", "O Senhor é Deus"],
+  "facts": [
+   {"text": "Elias pergunta ao povo até quando coxeará entre dois pensamentos.", "evidenceRef": "1 Reis 18:21", "evidenceSpan": "Até quando coxeareis entre dois pensamentos"},
+   {"text": "Se o Senhor é Deus, Elias manda o povo segui-lo.", "evidenceRef": "1 Reis 18:21", "evidenceSpan": "Se o Senhor é Deus, segui-o"},
+   {"text": "Diante da pergunta de Elias, o povo nada lhe respondeu.", "evidenceRef": "1 Reis 18:21", "evidenceSpan": "o povo nada lhe respondeu"},
+   {"text": "Jeroboão fez dois bezerros de ouro e os apresentou como deuses.", "evidenceRef": "1 Reis 12:28", "evidenceSpan": "fez dois bezerros de ouro"},
+   {"text": "O ato de Jeroboão se tornou um pecado para o povo de Israel.", "evidenceRef": "1 Reis 12:30", "evidenceSpan": "esse ato se tornou um pecado"}
+  ],
+  "keyTerms": [
+   {"term": "Baal", "gloss": "Deus vizinho cultuado em Israel, posto por Elias diante da escolha do povo."},
+   {"term": "coxeareis", "gloss": "Mancar entre dois lados, não se firmar em uma escolha diante de Deus."},
+   {"term": "deuses", "gloss": "Nome dado por Jeroboão aos bezerros, como se eles tivessem libertado Israel."}
+  ],
+  "structure": [
+   {"label": "Israel rompe com a casa de Davi", "evidenceRef": "1 Reis 12:16"},
+   {"label": "Jeroboão levanta os bezerros", "evidenceRef": "1 Reis 12:28"},
+   {"label": "O povo adora longe de Jerusalém", "evidenceRef": "1 Reis 12:30"},
+   {"label": "Elias chama o povo a escolher", "evidenceRef": "1 Reis 18:21"}
+  ],
+  "relations": [
+   {"kind": "causa", "text": "Por medo de perder o reino, Jeroboão faz os bezerros que dividem o coração do povo.", "marker": "Pelo que", "evidenceRef": "1 Reis 12:28"},
+   {"kind": "resultado", "text": "Diante de Elias, o resultado da divisão aparece no silêncio, o povo nada responde.", "marker": "Porém", "evidenceRef": "1 Reis 18:21"},
+   {"kind": "contraste", "text": "Elias contrapõe dois caminhos, seguir ao Senhor ou seguir a Baal, sem meio-termo.", "marker": "se", "evidenceRef": "1 Reis 18:21"}
+  ],
+  "crossRefs": [
+   {"ref": "Deuteronômio 6:4", "bridge": "O Senhor é o único Deus"},
+   {"ref": "Tiago 5:17", "bridge": "Elias ora e Deus responde"}
+  ],
+  "misreadings": [
+   {"text": "Elias pede que o povo aceite servir ao Senhor e a Baal ao mesmo tempo.", "why": "Ele faz o contrário, manda seguir a quem for Deus e denuncia ficar entre dois pensamentos."},
+   {"text": "O silêncio do povo mostra uma fé firme e decidida pelo Senhor.", "why": "O povo nada responde justamente porque ainda não escolheu a quem seguir."},
+   {"text": "Os bezerros de Jeroboão eram um culto fiel ao Senhor em outro lugar.", "why": "O texto chama aquele ato de pecado e Elias depois chama o povo a escolher Deus."}
+  ],
+  "centralInsight": "Fé dividida é indecisão, o Senhor chama a escolher",
+  "anchorQuestion": "O que Elias perguntou ao povo reunido no Carmelo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em 1 Reis 18:21, o povo responde a Elias escolhendo na hora seguir somente ao Senhor.",
+   "verseRef": "1 Reis 18:21", "correctOptionId": "false",
+   "evidenceSpan": "o povo nada lhe respondeu",
+   "feedbackCorrect": "O povo fica em silêncio, ainda sem escolher entre o Senhor e Baal.",
+   "feedbackWrong": {"true": "Releia o fim de 18:21, o povo nada respondeu a Elias."},
+   "hint": "Veja a reação do povo no fim do versículo.",
+   "learningObjective": "Observar o silêncio do povo diante de Elias.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em 1 Reis 18:21, toque quem o povo deve seguir se ele é Deus, segundo Elias.",
+   "verseRef": "1 Reis 18:21",
+   "options": [{"id": "a", "text": "o Senhor"}, {"id": "b", "text": "Baal"}, {"id": "c", "text": "povo"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se o Senhor é Deus, segui-o",
+   "feedbackCorrect": "A lógica de Elias é direta, se o Senhor é Deus, é a ele que se deve seguir.",
+   "feedbackWrong": {"b": "Baal só deve ser seguido se ele for Deus, a primeira hipótese é o Senhor.", "c": "O povo é quem deve escolher, não aquele que deve ser seguido como Deus."},
+   "hint": "Leia a primeira hipótese de Elias.",
+   "learningObjective": "Identificar a escolha proposta por Elias ao povo.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo 1 Reis 18:21, o que Elias pergunta a todo o povo?",
+   "verseRef": "1 Reis 18:21",
+   "options": [
+    {"id": "a", "text": "Até quando ficará entre dois pensamentos"},
+    {"id": "b", "text": "Quando subirá a Jerusalém para sacrificar"},
+    {"id": "c", "text": "Quem quer reinar sobre Israel no norte"},
+    {"id": "d", "text": "Onde ficarão os bezerros de Betel e Dã"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Até quando coxeareis entre dois pensamentos",
+   "feedbackCorrect": "Elias denuncia a indecisão, um povo mancando entre dois pensamentos sobre Deus.",
+   "feedbackWrong": {"b": "Subir a Jerusalém era o medo de Jeroboão, não a pergunta de Elias aqui.", "c": "Elias não trata de trono, trata de a quem o povo vai seguir.", "d": "Os bezerros são de Jeroboão, Elias pergunta sobre a escolha do povo."},
+   "hint": "Leia a primeira frase de Elias.",
+   "learningObjective": "Observar a pergunta central de Elias no Carmelo.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte 1 Reis 18:21 na ordem do texto.",
+   "verseRef": "1 Reis 18:21",
+   "options": [
+    {"id": "a", "text": "Até quando coxeareis entre dois pensamentos"},
+    {"id": "b", "text": "Se o Senhor é Deus, segui-o"},
+    {"id": "c", "text": "se Baal é Deus, segui-o"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Até quando coxeareis entre dois pensamentos",
+   "feedbackCorrect": "Primeiro a denúncia da indecisão, depois as duas escolhas postas diante do povo.",
+   "feedbackWrong": {"default": "Comece pela pergunta sobre os dois pensamentos, as escolhas vêm depois."},
+   "hint": "A pergunta de Elias abre o versículo.",
+   "learningObjective": "Reconhecer a sequência da fala de Elias.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em 1 Reis 18:21, entre quantos pensamentos Elias diz que o povo está coxeando?",
+   "verseRef": "1 Reis 18:21",
+   "options": [{"id": "a", "text": "pensamentos"}, {"id": "b", "text": "deuses"}, {"id": "c", "text": "tendas"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "coxeareis entre dois pensamentos",
+   "feedbackCorrect": "São dois pensamentos disputando o povo, o Senhor ou Baal como Deus.",
+   "feedbackWrong": {"b": "A palavra que completa a imagem de mancar é outra neste versículo.", "c": "Tendas lembram a ruptura em Siquém, não a fala de Elias aqui."},
+   "hint": "Veja a imagem que Elias usa para a indecisão.",
+   "learningObjective": "Lembrar a imagem usada por Elias para a indecisão.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+   "verseRef": "1 Reis 18:21",
+   "passageA": {"ref": "1 Reis 18:21"},
+   "passageB": {"ref": "Contexto", "text": "Desde Jeroboão, Israel adora bezerros e divide o coração entre deuses."},
+   "options": [
+    {"id": "a", "text": "Escolher quem é Deus de verdade"},
+    {"id": "b", "text": "Servir aos dois sem escolher"},
+    {"id": "c", "text": "Ficar calado diante de Deus"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se o Senhor é Deus, segui-o",
+   "feedbackCorrect": "Depois de gerações divididas, Elias chama o povo a escolher quem é Deus de verdade.",
+   "feedbackWrong": {"b": "Servir aos dois é justamente o coxear que Elias denuncia.", "c": "O silêncio é o problema exposto, não a resposta que Elias espera."},
+   "hint": "Veja o verbo que Elias repete para os dois lados.",
+   "learningObjective": "Ligar a pergunta de Elias à divisão antiga de Israel.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em 1 Reis 18:21, Elias aceita que o povo sirva ao Senhor e a Baal ao mesmo tempo sem nenhum confronto.",
+   "verseRef": "1 Reis 18:21", "correctOptionId": "false",
+   "evidenceSpan": "Até quando coxeareis entre dois pensamentos",
+   "feedbackCorrect": "Elias confronta a mistura, ficar entre dois pensamentos é o que ele manda deixar.",
+   "feedbackWrong": {"true": "Releia 18:21, Elias manda seguir a quem for Deus, sem ficar no meio."},
+   "hint": "Veja se Elias aprova ficar no meio.",
+   "learningObjective": "Compreender o confronto de Elias à fé dividida.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em 1 Reis 18:21, toque a palavra que marca o contraste entre a pergunta e o silêncio do povo.",
+   "verseRef": "1 Reis 18:21",
+   "options": [{"id": "a", "text": "Porém"}, {"id": "b", "text": "Então"}, {"id": "c", "text": "Até"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porém, o povo nada lhe respondeu",
+   "feedbackCorrect": "Depois da pergunta direta, o contraste é o silêncio, o povo nada responde.",
+   "feedbackWrong": {"b": "Essa palavra abre a cena com Elias se aproximando do povo.", "c": "Essa palavra abre a pergunta sobre até quando coxear."},
+   "hint": "Procure a palavra antes do silêncio do povo.",
+   "learningObjective": "Reconhecer o contraste entre pergunta e silêncio.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como o silêncio do povo se relaciona com a pergunta de Elias?",
+   "verseRef": "1 Reis 18:21",
+   "options": [
+    {"id": "a", "text": "O silêncio mostra um povo ainda indeciso"},
+    {"id": "b", "text": "O silêncio prova escolha firme pelo Senhor"},
+    {"id": "c", "text": "Elias dispensa qualquer resposta do povo"},
+    {"id": "d", "text": "O povo já havia abandonado Baal antes"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o povo nada lhe respondeu",
+   "feedbackCorrect": "Nada responder é a indecisão em cena, o povo ainda manca entre dois pensamentos.",
+   "feedbackWrong": {"b": "Escolha firme pediria seguir ao Senhor, o texto registra silêncio.", "c": "Elias reúne o povo justamente para colocar a escolha diante dele.", "d": "Se Baal já estivesse abandonado, não haveria dois pensamentos em disputa."},
+   "hint": "Relacione o silêncio com mancar entre dois lados.",
+   "learningObjective": "Relacionar o silêncio do povo à indecisão denunciada.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o culto do norte em 1 Reis 12:29–30?",
+   "verseRef": "1 Reis 12:29–30",
+   "options": [
+    {"id": "a", "text": "Bezerros postos em Betel e em Dã"},
+    {"id": "b", "text": "O ato é chamado de pecado"},
+    {"id": "c", "text": "O povo vai adorar em Dã"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "esse ato se tornou um pecado",
+   "feedbackCorrect": "Os bezerros são colocados, o texto julga o ato e o povo passa a adorar em Dã.",
+   "feedbackWrong": {"default": "Comece pela colocação dos bezerros, a ida do povo vem no fim."},
+   "hint": "A colocação dos bezerros vem primeiro.",
+   "learningObjective": "Compreender como o culto de Jeroboão se espalha.",
+   "evidence": ["1 Reis 12:29–30"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em 1 Reis 18:21, o que o povo fez diante da pergunta de Elias?",
+   "verseRef": "1 Reis 18:21",
+   "options": [{"id": "a", "text": "respondeu"}, {"id": "b", "text": "seguiu"}, {"id": "c", "text": "clamou"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "o povo nada lhe respondeu",
+   "feedbackCorrect": "O povo nada respondeu, o silêncio confirma a indecisão que Elias denuncia.",
+   "feedbackWrong": {"b": "Seguir é o que Elias manda fazer, o povo ainda não faz nem isso nem responde.", "c": "Não há clamor do povo aqui, há silêncio diante da pergunta."},
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Compreender o silêncio como sinal de indecisão.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga 1 Reis 18:21 a Deuteronômio 6:4?",
+   "verseRef": "1 Reis 18:21",
+   "passageA": {"ref": "1 Reis 18:21"},
+   "passageB": {"ref": "Deuteronômio 6:4"},
+   "options": [
+    {"id": "a", "text": "O Senhor é o único Deus"},
+    {"id": "b", "text": "Dois deuses dividem Israel"},
+    {"id": "c", "text": "Cada tribo escolhe seu deus"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se o Senhor é Deus, segui-o",
+   "feedbackCorrect": "A confissão antiga de Israel sustenta Elias, o Senhor é o único Deus a seguir.",
+   "feedbackWrong": {"b": "A fé de Israel confessa um só Deus, não dois dividindo o povo.", "c": "A escolha pedida é por um Deus só, não um deus por tribo."},
+   "hint": "Veja o que Israel confessa sobre o Senhor.",
+   "learningObjective": "Relacionar a escolha no Carmelo à confissão de Israel.",
+   "evidence": ["1 Reis 18:21", "Deuteronômio 6:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "1 Reis 18:21 apresenta a fidelidade a Deus como escolha clara, sem ficar para sempre entre dois senhores.",
+   "verseRef": "1 Reis 18:21", "correctOptionId": "true",
+   "evidenceSpan": "Se o Senhor é Deus, segui-o",
+   "feedbackCorrect": "Elias não pede opinião, pede seguimento, quem é Deus deve ser seguido de verdade.",
+   "feedbackWrong": {"false": "Releia 18:21, seguir a quem for Deus exclui ficar entre os dois."},
+   "hint": "Veja o verbo que Elias liga a ser Deus.",
+   "learningObjective": "Interpretar a fidelidade como escolha e seguimento.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em 1 Reis 18:21, toque o trecho que sustenta que o povo ainda não decidiu a quem seguir.",
+   "verseRef": "1 Reis 18:21",
+   "options": [{"id": "a", "text": "nada lhe respondeu"}, {"id": "b", "text": "todo o povo"}, {"id": "c", "text": "dois pensamentos"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "o povo nada lhe respondeu",
+   "feedbackCorrect": "O nada responder sustenta a leitura, diante da escolha o povo segue indeciso.",
+   "feedbackWrong": {"b": "Todo o povo diz quem estava reunido, não a atitude de indecisão.", "c": "Dois pensamentos é a denúncia de Elias, a prova vem no silêncio final."},
+   "hint": "Procure a reação final do povo reunido.",
+   "learningObjective": "Sustentar com o texto a indecisão do povo.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura 1 Reis 18:21 sustenta sobre seguir a Deus?",
+   "verseRef": "1 Reis 18:21",
+   "options": [
+    {"id": "a", "text": "Fidelidade a Deus exige escolha clara"},
+    {"id": "b", "text": "É possível coxear para sempre sem decidir"},
+    {"id": "c", "text": "Baal e o Senhor pedem o mesmo culto"},
+    {"id": "d", "text": "O silêncio do povo equivale a fé firme"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Até quando coxeareis entre dois pensamentos",
+   "feedbackCorrect": "Coxear tem prazo na pergunta de Elias, seguir a Deus pede uma escolha clara.",
+   "feedbackWrong": {"b": "O até quando mostra que a indecisão não pode ser o estado final.", "c": "Elias contrapõe os dois, seguir a um exclui seguir ao outro.", "d": "O silêncio é falta de resposta, não sinal de uma fé já firme."},
+   "hint": "Veja o prazo que Elias põe na indecisão.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre fidelidade.",
+   "evidence": ["1 Reis 18:21"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho da divisão até o chamado de Elias?",
+   "verseRef": "1 Reis 18:21",
+   "options": [
+    {"id": "a", "text": "Jeroboão levanta bezerros no norte"},
+    {"id": "b", "text": "Elias chama o povo a escolher"},
+    {"id": "c", "text": "Elias ora e o Senhor responde"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Até quando coxeareis entre dois pensamentos",
+   "feedbackCorrect": "Os bezerros dividem o povo, Elias chama à escolha e sua oração é ouvida por Deus.",
+   "feedbackWrong": {"default": "Comece pelos bezerros do norte, o chamado de Elias vem depois deles."},
+   "hint": "Siga a história, culto dividido, chamado e oração.",
+   "learningObjective": "Ver Elias como resposta de Deus à divisão antiga.",
+   "evidence": ["1 Reis 12:28", "1 Reis 18:21", "Tiago 5:17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em 1 Reis 12:28, de que terra Jeroboão diz que os bezerros tiraram Israel?",
+   "verseRef": "1 Reis 12:28",
+   "options": [{"id": "a", "text": "Egito"}, {"id": "b", "text": "Dã"}, {"id": "c", "text": "Betel"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "que os tiraram da terra do Egito",
+   "feedbackCorrect": "Jeroboão rouba a história do êxodo e a atribui aos bezerros que ele mesmo fez.",
+   "feedbackWrong": {"b": "Dã é onde um bezerro foi colocado, não a terra da libertação citada.", "c": "Betel recebe um bezerro, a libertação lembrada vem de outra terra."},
+   "hint": "Veja a história que Jeroboão atribui aos bezerros.",
+   "learningObjective": "Lembrar como Jeroboão falsifica a memória do êxodo.",
+   "evidence": ["1 Reis 12:28"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga 1 Reis 18:21 a Tiago 5:17?",
+   "verseRef": "1 Reis 18:21",
+   "passageA": {"ref": "1 Reis 18:21"},
+   "passageB": {"ref": "Tiago 5:17"},
+   "options": [
+    {"id": "a", "text": "Elias ora e Deus responde"},
+    {"id": "b", "text": "Elias age sem precisar orar"},
+    {"id": "c", "text": "Oração não alcança o povo"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, Elias se aproximou de todo o povo",
+   "feedbackCorrect": "Tiago lembra Elias como homem de oração, o mesmo profeta que chama o povo a escolher.",
+   "feedbackWrong": {"b": "Tiago destaca justamente a oração fervorosa de Elias.", "c": "A oração de Elias alcança céu e povo, com seca e chuva sobre a terra."},
+   "hint": "Veja o que Tiago lembra sobre Elias.",
+   "learningObjective": "Ligar o profeta do Carmelo ao ensino sobre oração.",
+   "evidence": ["1 Reis 18:21", "Tiago 5:17"]
+  }
+ ]
+}

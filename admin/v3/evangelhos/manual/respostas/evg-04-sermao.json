@@ -1,0 +1,720 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:1–6",
+  "passages": [
+   {
+    "ref": "Mateus 5:1–16"
+   }
+  ],
+  "context": "Jesus sobe a um monte, senta-se e ensina os discípulos diante das multidões. As bem-aventuranças anunciam quem é feliz no reino, de um jeito que inverte expectativas humanas.",
+  "keyword": "Bem-aventurados",
+  "keywordGloss": "Felizes aos olhos de Deus: pessoas que o mundo talvez não chame de bem-sucedidas.",
+  "focusQuestion": "Qual bem-aventurança mais desafia o seu jeito de medir a vida hoje?",
+  "reflectionPrompts": [
+   "Humildes de espírito",
+   "Fome de justiça",
+   "Luz diante dos homens"
+  ],
+  "facts": [
+   {
+    "text": "Jesus subiu a um monte e se assentou para ensinar.",
+    "evidenceRef": "Mateus 5:1",
+    "evidenceSpan": "subiu a um monte, e, ao se assentar"
+   },
+   {
+    "text": "Os humildes de espírito possuem o reino dos céus.",
+    "evidenceRef": "Mateus 5:3",
+    "evidenceSpan": "deles é o reino dos céus"
+   },
+   {
+    "text": "Os mansos herdarão a terra.",
+    "evidenceRef": "Mateus 5:5",
+    "evidenceSpan": "os mansos, porque herdarão a terra"
+   },
+   {
+    "text": "Os que têm fome e sede de justiça serão fartos.",
+    "evidenceRef": "Mateus 5:6",
+    "evidenceSpan": "os que têm fome e sede de justiça, pois serão fartos"
+   },
+   {
+    "text": "Os discípulos são chamados de luz do mundo.",
+    "evidenceRef": "Mateus 5:14",
+    "evidenceSpan": "Vocês são a luz do mundo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Bem-aventurados",
+    "gloss": "Felizes segundo Deus, mesmo em choro, mansidão ou perseguição."
+   },
+   {
+    "term": "mansos",
+    "gloss": "Quem não vive pela força bruta; Jesus promete a terra aos mansos."
+   },
+   {
+    "term": "justiça",
+    "gloss": "O direito de Deus pelo qual os famintos anseiam e serão fartos."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jesus ensina no monte",
+    "evidenceRef": "Mateus 5:1–2"
+   },
+   {
+    "label": "Felizes os que dependem de Deus",
+    "evidenceRef": "Mateus 5:3–6"
+   },
+   {
+    "label": "Felizes os que refletem o Pai",
+    "evidenceRef": "Mateus 5:7–9"
+   },
+   {
+    "label": "Sal e luz diante dos homens",
+    "evidenceRef": "Mateus 5:13–16"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Os humildes são felizes porque deles é o reino dos céus.",
+    "marker": "porque",
+    "evidenceRef": "Mateus 5:3"
+   },
+   {
+    "kind": "resultado",
+    "text": "A luz deve brilhar para que os homens glorifiquem o Pai.",
+    "marker": "para que",
+    "evidenceRef": "Mateus 5:16"
+   },
+   {
+    "kind": "contraste",
+    "text": "A candeia não fica debaixo do alqueire, mas no velador.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 5:15"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 37:11",
+    "bridge": "Mansos herdarão a terra"
+   },
+   {
+    "ref": "Lucas 6:20",
+    "bridge": "Felizes os pobres"
+   },
+   {
+    "ref": "Isaías 61:1",
+    "bridge": "Boas novas aos humildes"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Bem-aventurados são os ricos e poderosos aos olhos do mundo.",
+    "why": "Jesus chama felizes os humildes, os que choram e os mansos (5:3-5)."
+   },
+   {
+    "text": "Ter fome de justiça é só um sentimento sem promessa.",
+    "why": "Jesus promete que esses serão fartos (5:6)."
+   },
+   {
+    "text": "Ser luz é chamar atenção para si mesmo.",
+    "why": "A luz brilha para que o Pai seja glorificado, não o discípulo (5:16)."
+   }
+  ],
+  "centralInsight": "Pobreza de espírito",
+  "anchorQuestion": "Segundo Mateus 5:3, de quem é o reino dos céus?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:5, os mansos herdarão a terra.",
+   "verseRef": "Mateus 5:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "os mansos, porque herdarão a terra",
+   "feedbackCorrect": "Jesus promete a terra não aos violentos, mas aos mansos.",
+   "feedbackWrong": {
+    "false": "Releia Mateus 5:5 e veja quem herdará a terra."
+   },
+   "hint": "",
+   "learningObjective": "Observar a promessa feita aos mansos.",
+   "evidence": [
+    "Mateus 5:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:3, toque quem Jesus chama de bem-aventurados primeiro.",
+   "verseRef": "Mateus 5:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "Bem-aventurados os humildes de espírito",
+   "feedbackCorrect": "A primeira bem-aventurança começa por quem reconhece sua pobreza diante de Deus.",
+   "feedbackWrong": {
+    "b": "Isso é a promessa, não quem é chamado feliz.",
+    "c": "Isso completa o lugar da promessa."
+   },
+   "hint": "Procure as pessoas nomeadas após o anúncio de felicidade.",
+   "learningObjective": "Identificar os primeiros bem-aventurados.",
+   "evidence": [
+    "Mateus 5:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "os humildes"
+    },
+    {
+     "id": "b",
+     "text": "o reino"
+    },
+    {
+     "id": "c",
+     "text": "dos céus"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:6, o que acontecerá com quem tem fome e sede de justiça?",
+   "verseRef": "Mateus 5:6",
+   "correctOptionId": "c",
+   "evidenceSpan": "pois serão fartos",
+   "feedbackCorrect": "A fome pela justiça de Deus não fica sem resposta, pois eles serão fartos.",
+   "feedbackWrong": {
+    "a": "A promessa é de fartura, não de esquecimento.",
+    "b": "Perseguição aparece em outro versículo, sem esta promessa.",
+    "d": "Mansos são o grupo do versículo anterior."
+   },
+   "hint": "Leia a promessa no fim do versículo.",
+   "learningObjective": "Observar a promessa aos famintos de justiça.",
+   "evidence": [
+    "Mateus 5:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Será esquecido por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Será perseguido sem consolo"
+    },
+    {
+     "id": "c",
+     "text": "Será farto"
+    },
+    {
+     "id": "d",
+     "text": "Será chamado de manso"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:14 na ordem do texto.",
+   "verseRef": "Mateus 5:14",
+   "correctOptionId": "a",
+   "evidenceSpan": "Vocês são a luz do mundo",
+   "feedbackCorrect": "A luz do mundo é comparada a uma cidade visível sobre o monte.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela declaração sobre os discípulos."
+    }
+   },
+   "hint": "Comece pela declaração de Jesus.",
+   "learningObjective": "Reconhecer a sequência de Mateus 5:14.",
+   "evidence": [
+    "Mateus 5:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Vocês são a luz do mundo"
+    },
+    {
+     "id": "b",
+     "text": "Não se pode ocultar a cidade"
+    },
+    {
+     "id": "c",
+     "text": "que está situada sobre um monte"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:9, como serão chamados os pacificadores?",
+   "verseRef": "Mateus 5:9",
+   "correctOptionId": "a",
+   "evidenceSpan": "serão chamados filhos de Deus",
+   "feedbackCorrect": "Quem promove a paz é chamado filho de Deus.",
+   "feedbackWrong": {
+    "b": "Mansos são outro grupo, do versículo 5.",
+    "c": "Puros de coração são o grupo do versículo 8."
+   },
+   "hint": "Veja o nome dado no fim do versículo.",
+   "learningObjective": "Lembrar o nome dos pacificadores.",
+   "evidence": [
+    "Mateus 5:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "filhos"
+    },
+    {
+     "id": "b",
+     "text": "mansos"
+    },
+    {
+     "id": "c",
+     "text": "puros"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:3 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:3",
+   "correctOptionId": "b",
+   "evidenceSpan": "deles é o reino dos céus",
+   "feedbackCorrect": "O reino pertence a quem chega humilde de espírito diante de Deus.",
+   "feedbackWrong": {
+    "a": "O texto valoriza humildade, não orgulho.",
+    "c": "A condição citada é pobreza de espírito."
+   },
+   "hint": "Veja a atitude nomeada no versículo.",
+   "learningObjective": "Ligar a bem-aventurança à dependência.",
+   "evidence": [
+    "Mateus 5:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Orgulho abre o reino"
+    },
+    {
+     "id": "b",
+     "text": "Dependência abre o reino"
+    },
+    {
+     "id": "c",
+     "text": "Riqueza abre o reino"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 5:3"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O Reino começa na dependência humilde de Deus."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:3 a 6, cada bem-aventurança traz uma promessa ligada à condição anunciada.",
+   "verseRef": "Mateus 5:3–4",
+   "correctOptionId": "true",
+   "evidenceSpan": "porque serão consolados",
+   "feedbackCorrect": "Humildes recebem o reino e quem chora recebe consolo de Deus.",
+   "feedbackWrong": {
+    "false": "Note o porque de cada frase, que liga condição e promessa."
+   },
+   "hint": "",
+   "learningObjective": "Compreender condição e promessa nas bem-aventuranças.",
+   "evidence": [
+    "Mateus 5:3",
+    "Mateus 5:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:3, toque a palavra que liga a condição dos humildes à promessa do reino.",
+   "verseRef": "Mateus 5:3",
+   "correctOptionId": "b",
+   "evidenceSpan": "porque deles é o reino dos céus",
+   "feedbackCorrect": "Essa palavrinha explica por que os humildes são felizes.",
+   "feedbackWrong": {
+    "a": "Isso anuncia felicidade, não explica o motivo.",
+    "c": "Isso é parte da promessa, não a ligação."
+   },
+   "hint": "Procure a explicação após a vírgula.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Mateus 5:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Bem-aventurados"
+    },
+    {
+     "id": "b",
+     "text": "porque"
+    },
+    {
+     "id": "c",
+     "text": "reino"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 5:16 liga a luz dos discípulos ao Pai?",
+   "verseRef": "Mateus 5:16",
+   "correctOptionId": "b",
+   "evidenceSpan": "para que vejam as suas boas obras e glorifiquem a seu Pai",
+   "feedbackCorrect": "O brilho do discípulo aponta para Deus, não para si mesmo.",
+   "feedbackWrong": {
+    "a": "Quem é glorificado é o Pai que está nos céus.",
+    "c": "Esconder é o contrário do velador citado.",
+    "d": "A cidade sobre o monte não pode ser ocultada."
+   },
+   "hint": "Veja o destino da glória no capítulo.",
+   "learningObjective": "Compreender a finalidade da luz.",
+   "evidence": [
+    "Mateus 5:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A luz atrai glória para os discípulos"
+    },
+    {
+     "id": "b",
+     "text": "Boas obras levam homens a glorificar o Pai"
+    },
+    {
+     "id": "c",
+     "text": "Esconder a luz glorifica mais o Pai"
+    },
+    {
+     "id": "d",
+     "text": "A cidade no monte deve ser escondida"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o ensino em Mateus 5:1 a 3?",
+   "verseRef": "Mateus 5:1–2",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, vendo Jesus as multidões, subiu a um monte",
+   "feedbackCorrect": "Multidões, aproximação dos discípulos e então o ensino começa.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O ensino só começa depois que os discípulos se aproximam."
+    }
+   },
+   "hint": "Termine com Jesus abrindo a boca para ensinar.",
+   "learningObjective": "Compreender o movimento da cena.",
+   "evidence": [
+    "Mateus 5:1",
+    "Mateus 5:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus vê as multidões e sobe ao monte"
+    },
+    {
+     "id": "b",
+     "text": "Os discípulos se aproximam dele"
+    },
+    {
+     "id": "c",
+     "text": "Jesus começa a ensinar os discípulos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:16, quem os homens devem glorificar ao ver as boas obras?",
+   "verseRef": "Mateus 5:16",
+   "correctOptionId": "a",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "A glória sobe ao Pai, mesmo quando a obra é vista nos discípulos.",
+   "feedbackWrong": {
+    "b": "Eles veem as obras, mas glorificam outra pessoa.",
+    "c": "Os homens são quem observa e glorifica."
+   },
+   "hint": "Veja quem recebe a glória no fim.",
+   "learningObjective": "Compreender para quem a luz aponta.",
+   "evidence": [
+    "Mateus 5:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Pai"
+    },
+    {
+     "id": "b",
+     "text": "discípulos"
+    },
+    {
+     "id": "c",
+     "text": "homens"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:5 a Salmos 37:11?",
+   "verseRef": "Mateus 5:5",
+   "correctOptionId": "a",
+   "evidenceSpan": "os mansos, porque herdarão a terra",
+   "feedbackCorrect": "Jesus ecoa o salmo que promete a terra aos mansos.",
+   "feedbackWrong": {
+    "b": "A promessa é aos mansos, não aos que tomam à força.",
+    "c": "Os dois textos prometem herança aos mansos."
+   },
+   "hint": "Compare quem recebe a terra nos dois.",
+   "learningObjective": "Relacionar Jesus ao salmo dos mansos.",
+   "evidence": [
+    "Mateus 5:5",
+    "Salmos 37:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Mansos herdarão a terra"
+    },
+    {
+     "id": "b",
+     "text": "Fortes tomarão a terra"
+    },
+    {
+     "id": "c",
+     "text": "Mansos perderão a terra"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 5:5"
+   },
+   "passageB": {
+    "ref": "Salmos 37:11"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 5:13 a 16, ser sal e luz significa viver escondido para não influenciar ninguém.",
+   "verseRef": "Mateus 5:13–14",
+   "correctOptionId": "false",
+   "evidenceSpan": "Vocês são a luz do mundo",
+   "feedbackCorrect": "Sal e luz descrevem presença que influencia e se deixa ver diante dos homens.",
+   "feedbackWrong": {
+    "true": "A cidade sobre o monte não se pode ocultar, diz o texto."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar sal e luz como influência visível.",
+   "evidence": [
+    "Mateus 5:13",
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:16, toque o trecho que mostra o alvo da luz dos discípulos.",
+   "verseRef": "Mateus 5:16",
+   "correctOptionId": "c",
+   "evidenceSpan": "glorifiquem a seu Pai que está nos céus",
+   "feedbackCorrect": "A luz existe para que o Pai seja glorificado.",
+   "feedbackWrong": {
+    "a": "Isso é o que os homens veem, não quem é glorificado.",
+    "b": "Isso indica diante de quem, não o alvo final."
+   },
+   "hint": "Procure quem é glorificado no fim.",
+   "learningObjective": "Sustentar o alvo da luz com o texto.",
+   "evidence": [
+    "Mateus 5:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "boas obras"
+    },
+    {
+     "id": "b",
+     "text": "diante dos homens"
+    },
+    {
+     "id": "c",
+     "text": "seu Pai"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 5:3 a 10 sustenta sobre felicidade no reino?",
+   "verseRef": "Mateus 5:3–4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Bem-aventurados os humildes de espírito",
+   "feedbackCorrect": "Choro, mansidão e até perseguição aparecem dentro da felicidade anunciada.",
+   "feedbackWrong": {
+    "b": "Quem chora é chamado bem-aventurado no texto.",
+    "c": "Aos mansos, não aos dominadores, é prometida a terra.",
+    "d": "Perseguidos por causa da justiça também são felizes."
+   },
+   "hint": "Junte os grupos chamados felizes no trecho.",
+   "learningObjective": "Escolher a leitura sobre felicidade no reino.",
+   "evidence": [
+    "Mateus 5:3",
+    "Mateus 5:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Feliz é quem Deus acolhe na fraqueza"
+    },
+    {
+     "id": "b",
+     "text": "Feliz é quem nunca chora nem sofre"
+    },
+    {
+     "id": "c",
+     "text": "Feliz é quem domina os outros"
+    },
+    {
+     "id": "d",
+     "text": "Feliz é quem evita toda perseguição"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela os valores do reino em Mateus 5?",
+   "verseRef": "Mateus 5:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "deles é o reino dos céus",
+   "feedbackCorrect": "Dependência, mansidão e paz marcam o povo do reino.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pelos humildes de espírito, a porta do sermão."
+    }
+   },
+   "hint": "Siga a ordem das bem-aventuranças.",
+   "learningObjective": "Ver os valores do reino em sequência.",
+   "evidence": [
+    "Mateus 5:3",
+    "Mateus 5:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Humildes recebem o reino dos céus"
+    },
+    {
+     "id": "b",
+     "text": "Mansos herdam a terra dada por Deus"
+    },
+    {
+     "id": "c",
+     "text": "Pacificadores são chamados filhos de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:8, o que os puros de coração verão segundo Jesus?",
+   "verseRef": "Mateus 5:8",
+   "correctOptionId": "a",
+   "evidenceSpan": "pois verão a Deus",
+   "feedbackCorrect": "A pureza de coração é ligada à promessa de ver a Deus.",
+   "feedbackWrong": {
+    "b": "Terra é a herança prometida aos mansos.",
+    "c": "Reino é a promessa aos humildes e perseguidos."
+   },
+   "hint": "Veja a promessa própria deste grupo.",
+   "learningObjective": "Lembrar a promessa aos puros de coração.",
+   "evidence": [
+    "Mateus 5:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "terra"
+    },
+    {
+     "id": "c",
+     "text": "reino"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:3 a Lucas 6:20?",
+   "verseRef": "Mateus 5:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "deles é o reino dos céus",
+   "feedbackCorrect": "Lucas também anuncia o reino aos pobres que dependem de Deus.",
+   "feedbackWrong": {
+    "b": "Os dois textos vão na direção contrária.",
+    "c": "Ambos colocam os pobres dentro do reino."
+   },
+   "hint": "Compare quem recebe o reino nos dois.",
+   "learningObjective": "Ligar as bem-aventuranças em Mateus e Lucas.",
+   "evidence": [
+    "Mateus 5:3",
+    "Lucas 6:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Reino para quem depende"
+    },
+    {
+     "id": "b",
+     "text": "Reino só para os ricos"
+    },
+    {
+     "id": "c",
+     "text": "Pobres fora do reino"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 5:3"
+   },
+   "passageB": {
+    "ref": "Lucas 6:20"
+   }
+  }
+ ]
+}

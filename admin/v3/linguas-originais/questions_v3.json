@@ -1,0 +1,2544 @@
+[
+  {
+    "id": "linguas-originais-sem-lo-01-biblia-01",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 23:38, havia uma inscrição acima de Jesus escrita em três línguas.",
+    "prompt": "Em Lucas 23:38, havia uma inscrição acima de Jesus escrita em três línguas.",
+    "cue": "Em Lucas 23:38, havia uma inscrição acima de Jesus escrita em três línguas.",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Lucas lista três línguas na inscrição colocada acima de Jesus.",
+    "feedbackWrong": {
+      "false": "Releia Lucas 23:38 e conte as línguas citadas na inscrição."
+    },
+    "hint": "Conte as línguas citadas no versículo.",
+    "learningObjective": "Observar as três línguas da inscrição da cruz.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-01-biblia-02",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 23:38, toque o que havia acima de Jesus.",
+    "prompt": "Em Lucas 23:38, toque o que havia acima de Jesus.",
+    "cue": "Em Lucas 23:38, toque o que havia acima de Jesus.",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "acima dele"
+      },
+      {
+        "id": "b",
+        "text": "letras gregas"
+      },
+      {
+        "id": "c",
+        "text": "inscrição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "acima dele havia uma inscrição",
+    "feedbackCorrect": "Acima dele havia um texto exposto, escrito em três línguas.",
+    "feedbackWrong": {
+      "a": "Isso diz o lugar, não o que havia ali.",
+      "b": "Isso descreve como o texto estava escrito."
+    },
+    "hint": "Procure o objeto colocado sobre Jesus.",
+    "learningObjective": "Identificar o que foi colocado acima de Jesus.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-01-biblia-03",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 19:20, por que muitos judeus conseguiram ler o título?",
+    "prompt": "Segundo João 19:20, por que muitos judeus conseguiram ler o título?",
+    "cue": "Segundo João 19:20, por que muitos judeus conseguiram ler o título?",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Pilatos leu em voz alta"
+      },
+      {
+        "id": "b",
+        "text": "Porque o lugar ficava longe de todos"
+      },
+      {
+        "id": "c",
+        "text": "Porque o título foi lido no templo"
+      },
+      {
+        "id": "d",
+        "text": "Porque o lugar ficava perto da cidade"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "o lugar onde Jesus foi crucificado era próximo da cidade",
+    "feedbackCorrect": "João explica que o lugar ficava perto da cidade, por isso muitos leram.",
+    "feedbackWrong": {
+      "a": "Quem lê no texto são muitos judeus, não Pilatos.",
+      "b": "João diz o contrário, que o lugar era próximo da cidade.",
+      "c": "O texto não fala de leitura no templo."
+    },
+    "hint": "Leia a explicação que vem depois da vírgula.",
+    "learningObjective": "Observar por que muitos leram o título.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-01-biblia-04",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 23:38 na ordem do texto.",
+    "prompt": "Monte Lucas 23:38 na ordem do texto.",
+    "cue": "Monte Lucas 23:38 na ordem do texto.",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E também acima dele havia uma inscrição"
+      },
+      {
+        "id": "b",
+        "text": "escrita em letras gregas, romanas e hebraicas"
+      },
+      {
+        "id": "c",
+        "text": "ESTE É O REI DOS JUDEUS"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E também acima dele havia uma inscrição",
+    "feedbackCorrect": "Primeiro o texto exposto, depois as línguas, por fim o que ele dizia.",
+    "feedbackWrong": {
+      "default": "Comece pelo que havia acima dele; o conteúdo vem no fim."
+    },
+    "hint": "O versículo começa pelo lugar do texto.",
+    "learningObjective": "Reconhecer a sequência de Lucas 23:38.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-01-biblia-05",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 19:19, o que Pilatos escreveu e colocou no alto da cruz?",
+    "prompt": "Em João 19:19, o que Pilatos escreveu e colocou no alto da cruz?",
+    "cue": "Em João 19:19, o que Pilatos escreveu e colocou no alto da cruz?",
+    "verseRef": "João 19:19",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS.",
+    "template": "E Pilatos também escreveu um ___ e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "título"
+      },
+      {
+        "id": "b",
+        "text": "aviso"
+      },
+      {
+        "id": "c",
+        "text": "carta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Pilatos também escreveu um título",
+    "feedbackCorrect": "João chama de título o texto que Pilatos colocou no alto da cruz.",
+    "feedbackWrong": {
+      "b": "João usa outra palavra para o texto de Pilatos.",
+      "c": "Não é uma carta enviada, mas um texto exposto na cruz."
+    },
+    "hint": "Veja o nome que João dá ao texto exposto.",
+    "learningObjective": "Lembrar o nome do texto colocado na cruz.",
+    "evidence": [
+      "João 19:19"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-01-biblia-06",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 19:20 comunica que se liga a este contexto?",
+    "prompt": "O que João 19:20 comunica que se liga a este contexto?",
+    "cue": "O que João 19:20 comunica que se liga a este contexto?",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "passageA": {
+      "ref": "João 19:20",
+      "text": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na cruz, gente de culturas diferentes podia ler sobre Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrita só para romanos"
+      },
+      {
+        "id": "b",
+        "text": "Escrita para muitos lerem"
+      },
+      {
+        "id": "c",
+        "text": "Escrita para ninguém ler"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "muitos judeus leram este título",
+    "feedbackCorrect": "João destaca que muitos leram o título exposto perto da cidade.",
+    "feedbackWrong": {
+      "a": "O título estava em três línguas, não só na dos romanos.",
+      "c": "João diz que muitos leram, não que ninguém leu."
+    },
+    "hint": "Veja quem lê no começo do versículo.",
+    "learningObjective": "Ligar João 19:20 à leitura por muitas pessoas.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-01-biblia-01",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 19:19–20, poucos leram o título porque o lugar da cruz ficava longe da cidade.",
+    "prompt": "Em João 19:19–20, poucos leram o título porque o lugar da cruz ficava longe da cidade.",
+    "cue": "Em João 19:19–20, poucos leram o título porque o lugar da cruz ficava longe da cidade.",
+    "verseRef": "João 19:19–20",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o lugar onde Jesus foi crucificado era próximo da cidade",
+    "feedbackCorrect": "João diz que muitos leram, pois o lugar ficava próximo da cidade.",
+    "feedbackWrong": {
+      "true": "Releia João 19:20, muitos leram e o lugar era próximo da cidade."
+    },
+    "hint": "Compare o número de leitores com a distância citada.",
+    "learningObjective": "Compreender a relação entre lugar próximo e muitos leitores.",
+    "evidence": [
+      "João 19:19–20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-01-biblia-02",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 19:20, toque a palavra que explica por que muitos leram o título.",
+    "prompt": "Em João 19:20, toque a palavra que explica por que muitos leram o título.",
+    "cue": "Em João 19:20, toque a palavra que explica por que muitos leram o título.",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois o lugar onde Jesus foi crucificado era próximo da cidade",
+    "feedbackCorrect": "Essa palavrinha introduz a explicação da leitura por muitos.",
+    "feedbackWrong": {
+      "a": "Isso diz quantos leram, não o motivo.",
+      "c": "Isso é parte do motivo, não a palavra que o introduz."
+    },
+    "hint": "Procure a palavra curta que vem antes da explicação.",
+    "learningObjective": "Reconhecer a palavra que marca a explicação no texto.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-01-biblia-03",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 19:20 se relaciona com João 19:19?",
+    "prompt": "Como João 19:20 se relaciona com João 19:19?",
+    "cue": "Como João 19:20 se relaciona com João 19:19?",
+    "verseRef": "João 19:19–20",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra outro texto, escrito anos depois"
+      },
+      {
+        "id": "b",
+        "text": "Mostra os judeus apagando o texto da cruz"
+      },
+      {
+        "id": "c",
+        "text": "Mostra o alcance do texto que Pilatos escreveu"
+      },
+      {
+        "id": "d",
+        "text": "Mostra Pilatos retirando o texto da cruz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "muitos judeus leram este título",
+    "feedbackCorrect": "Depois de Pilatos escrever, João mostra quanta gente leu o que foi escrito.",
+    "feedbackWrong": {
+      "a": "É o mesmo texto do versículo anterior, agora sendo lido.",
+      "b": "Ninguém apaga o texto; muitos o leem.",
+      "d": "Nada é retirado; o texto é lido por muitos."
+    },
+    "hint": "Pense em escrever primeiro e ler depois.",
+    "learningObjective": "Relacionar a escrita de Pilatos com a leitura de muitos.",
+    "evidence": [
+      "João 19:19–20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-01-biblia-04",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em João 19:19–20?",
+    "prompt": "Como avança a cena em João 19:19–20?",
+    "cue": "Como avança a cena em João 19:19–20?",
+    "verseRef": "João 19:19–20",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pilatos escreve um texto para a cruz"
+      },
+      {
+        "id": "b",
+        "text": "O texto é colocado no alto da cruz"
+      },
+      {
+        "id": "c",
+        "text": "Muitos judeus leem o texto exposto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pilatos também escreveu um título",
+    "feedbackCorrect": "Escrever, colocar no alto e ser lido por muitos, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece por quem escreve; a leitura por muitos vem por último."
+    },
+    "hint": "A leitura é o ponto de chegada da cena.",
+    "learningObjective": "Compreender o movimento da escrita à leitura do título.",
+    "evidence": [
+      "João 19:19–20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-01-biblia-05",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 23:38, em uma das línguas, a inscrição estava escrita em letras de que povo do texto?",
+    "prompt": "Em Lucas 23:38, em uma das línguas, a inscrição estava escrita em letras de que povo do texto?",
+    "cue": "Em Lucas 23:38, em uma das línguas, a inscrição estava escrita em letras de que povo do texto?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "template": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e ___: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "hebraicas"
+      },
+      {
+        "id": "b",
+        "text": "egípcias"
+      },
+      {
+        "id": "c",
+        "text": "persas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Lucas cita letras gregas, romanas e também as do povo judeu.",
+    "feedbackWrong": {
+      "b": "O Egito não aparece entre as línguas citadas por Lucas.",
+      "c": "Os persas não aparecem entre as línguas citadas por Lucas."
+    },
+    "hint": "Veja a última língua citada por Lucas.",
+    "learningObjective": "Lembrar uma das línguas da inscrição.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-01-biblia-06",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 23:38 a Neemias 8:8?",
+    "prompt": "O que liga Lucas 23:38 a Neemias 8:8?",
+    "cue": "O que liga Lucas 23:38 a Neemias 8:8?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "passageA": {
+      "ref": "Lucas 23:38",
+      "text": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS."
+    },
+    "passageB": {
+      "ref": "Neemias 8:8",
+      "text": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra guardada de poucos"
+      },
+      {
+        "id": "b",
+        "text": "Palavra tornada compreensível ao povo"
+      },
+      {
+        "id": "c",
+        "text": "Palavra sem ser lida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Nos dois textos, a palavra é apresentada para o povo entender.",
+    "feedbackWrong": {
+      "a": "Em Neemias o povo ouve e entende; nada fica guardado.",
+      "c": "Neemias lê ao povo, e na cruz muitos leem o título."
+    },
+    "hint": "Compare para quem cada texto foi apresentado.",
+    "learningObjective": "Relacionar a inscrição da cruz com a leitura compreensível em Neemias.",
+    "evidence": [
+      "Lucas 23:38",
+      "Neemias 8:8"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-01-biblia-01",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "João 19:20 mostra a palavra sobre Jesus exposta para ser lida por muitos, e não escondida.",
+    "prompt": "João 19:20 mostra a palavra sobre Jesus exposta para ser lida por muitos, e não escondida.",
+    "cue": "João 19:20 mostra a palavra sobre Jesus exposta para ser lida por muitos, e não escondida.",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "muitos judeus leram este título",
+    "feedbackCorrect": "O título ficou exposto perto da cidade e foi lido por muitos.",
+    "feedbackWrong": {
+      "false": "João afirma que muitos judeus leram este título."
+    },
+    "hint": "Veja o alcance da leitura no versículo.",
+    "learningObjective": "Interpretar o título como palavra exposta a muitos.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-01-biblia-02",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 19:19, toque quem escreveu o título da cruz.",
+    "prompt": "Em João 19:19, toque quem escreveu o título da cruz.",
+    "cue": "Em João 19:19, toque quem escreveu o título da cruz.",
+    "verseRef": "João 19:19",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cruz"
+      },
+      {
+        "id": "b",
+        "text": "Pilatos"
+      },
+      {
+        "id": "c",
+        "text": "título"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pilatos também escreveu um título",
+    "feedbackCorrect": "Foi a autoridade romana quem mandou escrever sobre Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é onde o texto foi colocado, não quem escreveu.",
+      "c": "Isso é o que foi escrito, não quem escreveu."
+    },
+    "hint": "Procure o nome próprio no começo do versículo.",
+    "learningObjective": "Identificar quem fez escrever o título da cruz.",
+    "evidence": [
+      "João 19:19"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-01-biblia-03",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 19:20 sustenta sobre a mensagem na cruz?",
+    "prompt": "Que leitura João 19:20 sustenta sobre a mensagem na cruz?",
+    "cue": "Que leitura João 19:20 sustenta sobre a mensagem na cruz?",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela perdeu o sentido ao mudar de língua"
+      },
+      {
+        "id": "b",
+        "text": "Ela foi exposta para leitores de várias línguas"
+      },
+      {
+        "id": "c",
+        "text": "Ela só vale para quem lê a língua original"
+      },
+      {
+        "id": "d",
+        "text": "Ela ficou restrita a um único povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "estava escrito em hebraico, latim e grego",
+    "feedbackCorrect": "Três línguas mostram a mensagem exposta além de um só povo.",
+    "feedbackWrong": {
+      "a": "A mesma mensagem permanece nas três línguas citadas.",
+      "c": "O texto valoriza a leitura em cada língua, não só na original.",
+      "d": "Três línguas ampliam os leitores, não restringem."
+    },
+    "hint": "Pense no efeito de escrever em três línguas.",
+    "learningObjective": "Interpretar as três línguas como abertura a muitos leitores.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-01-biblia-04",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra sobre Jesus que começa em Lucas 23:38?",
+    "prompt": "Qual sequência revela o caminho da palavra sobre Jesus que começa em Lucas 23:38?",
+    "cue": "Qual sequência revela o caminho da palavra sobre Jesus que começa em Lucas 23:38?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra sobre Jesus é exposta na cruz"
+      },
+      {
+        "id": "b",
+        "text": "Povos ouvem a mensagem em sua língua"
+      },
+      {
+        "id": "c",
+        "text": "Uma multidão de povos está diante de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Da cruz exposta a muitos, à multidão de povos diante de Deus.",
+    "feedbackWrong": {
+      "default": "Siga a história, da cruz ao Pentecostes e à multidão final."
+    },
+    "hint": "Siga a ordem, cruz, Pentecostes, eternidade.",
+    "learningObjective": "Ver a palavra a muitos povos como fio da história bíblica.",
+    "evidence": [
+      "Lucas 23:38",
+      "Atos 2:8",
+      "Apocalipse 7:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-01-biblia-05",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 19:20, o título estava escrito em hebraico, latim e em que outra língua?",
+    "prompt": "Em João 19:20, o título estava escrito em hebraico, latim e em que outra língua?",
+    "cue": "Em João 19:20, o título estava escrito em hebraico, latim e em que outra língua?",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "grego"
+      },
+      {
+        "id": "b",
+        "text": "egípcio"
+      },
+      {
+        "id": "c",
+        "text": "aramaico"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estava escrito em hebraico, latim e grego",
+    "feedbackCorrect": "A terceira língua citada por João era a mais falada da época.",
+    "feedbackWrong": {
+      "b": "O Egito não entra na lista de João 19:20.",
+      "c": "João fecha a lista com outra língua bem conhecida."
+    },
+    "hint": "É a língua que fecha a lista de João.",
+    "learningObjective": "Lembrar a terceira língua do título da cruz.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-01-biblia-06",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 23:38 a Atos 2:8?",
+    "prompt": "O que liga Lucas 23:38 a Atos 2:8?",
+    "cue": "O que liga Lucas 23:38 a Atos 2:8?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "passageA": {
+      "ref": "Lucas 23:38",
+      "text": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS."
+    },
+    "passageB": {
+      "ref": "Atos 2:8",
+      "text": "Como então, os ouvimos falar, cada um em nossa própria língua materna?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma língua para todos sempre"
+      },
+      {
+        "id": "b",
+        "text": "Deus fala a cada povo"
+      },
+      {
+        "id": "c",
+        "text": "Palavra longe das pessoas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Na cruz e no Pentecostes, a mensagem alcança pessoas em sua língua.",
+    "feedbackWrong": {
+      "a": "Nos dois textos há várias línguas, não uma só para todos.",
+      "c": "Nos dois textos a mensagem se aproxima das pessoas."
+    },
+    "hint": "Compare como cada povo recebe a mensagem.",
+    "learningObjective": "Ligar a inscrição da cruz com o Pentecostes.",
+    "evidence": [
+      "Lucas 23:38",
+      "Atos 2:8"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-02-traducao-01",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 14:9, Paulo diz que palavras não compreendidas serão entendidas por todos.",
+    "prompt": "Em 1 Coríntios 14:9, Paulo diz que palavras não compreendidas serão entendidas por todos.",
+    "cue": "Em 1 Coríntios 14:9, Paulo diz que palavras não compreendidas serão entendidas por todos.",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "como será entendido o que dizeis",
+    "feedbackCorrect": "Sem palavras compreensíveis, ninguém entende o que foi dito.",
+    "feedbackWrong": {
+      "true": "Releia a pergunta de Paulo no meio de 1 Coríntios 14:9."
+    },
+    "hint": "Veja a pergunta que Paulo faz no versículo.",
+    "learningObjective": "Observar que falar sem clareza não gera entendimento.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-02-traducao-02",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 14:9, toque a qualidade que as palavras precisam ter.",
+    "prompt": "Em 1 Coríntios 14:9, toque a qualidade que as palavras precisam ter.",
+    "cue": "Em 1 Coríntios 14:9, toque a qualidade que as palavras precisam ter.",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "língua"
+      },
+      {
+        "id": "c",
+        "text": "compreensíveis"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não disserdes palavras compreensíveis",
+    "feedbackCorrect": "Paulo pede palavras que o ouvinte consiga de fato entender.",
+    "feedbackWrong": {
+      "a": "Isso é o que se diz; falta a qualidade exigida.",
+      "b": "Isso é o meio de falar, não a qualidade pedida."
+    },
+    "hint": "Procure como as palavras devem ser.",
+    "learningObjective": "Identificar a qualidade das palavras em 1 Coríntios 14:9.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-02-traducao-03",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 14:11, o que acontece com quem não entende a voz?",
+    "prompt": "Segundo 1 Coríntios 14:11, o que acontece com quem não entende a voz?",
+    "cue": "Segundo 1 Coríntios 14:11, o que acontece com quem não entende a voz?",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entende tudo sem esforço"
+      },
+      {
+        "id": "b",
+        "text": "Passa a ensinar quem fala"
+      },
+      {
+        "id": "c",
+        "text": "Fica como estrangeiro para quem fala"
+      },
+      {
+        "id": "d",
+        "text": "Deixa de ouvir qualquer som"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "serei estrangeiro para quem fala",
+    "feedbackCorrect": "Sem entender o significado, quem ouve fica de fora, como estrangeiro.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário, que ele fica como estrangeiro.",
+      "b": "Quem não entende não vira professor de quem fala.",
+      "d": "Ele ouve o som, mas não entende o significado."
+    },
+    "hint": "Leia a comparação que Paulo faz no versículo.",
+    "learningObjective": "Observar o efeito de não entender a voz.",
+    "evidence": [
+      "1 Coríntios 14:11"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-02-traducao-04",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 14:11 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 14:11 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 14:11 na ordem do texto.",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas, se eu não entender o significado da voz"
+      },
+      {
+        "id": "b",
+        "text": "serei estrangeiro para quem fala"
+      },
+      {
+        "id": "c",
+        "text": "e quem fala será estrangeiro para mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas, se eu não entender o significado da voz",
+    "feedbackCorrect": "Primeiro a falta de entendimento, depois a distância dos dois lados.",
+    "feedbackWrong": {
+      "default": "Comece pela falta de entendimento; a distância vem depois."
+    },
+    "hint": "O versículo começa pela condição de não entender.",
+    "learningObjective": "Reconhecer a sequência de 1 Coríntios 14:11.",
+    "evidence": [
+      "1 Coríntios 14:11"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-02-traducao-05",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 14:11, como fica quem ouve sem entender quem fala?",
+    "prompt": "Em 1 Coríntios 14:11, como fica quem ouve sem entender quem fala?",
+    "cue": "Em 1 Coríntios 14:11, como fica quem ouve sem entender quem fala?",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "template": "Mas, se eu não entender o significado da voz, serei ___ para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "vizinho"
+      },
+      {
+        "id": "c",
+        "text": "estrangeiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "serei estrangeiro para quem fala",
+    "feedbackCorrect": "Sem entendimento, quem ouve fica de fora, como quem é de outra terra.",
+    "feedbackWrong": {
+      "a": "A imagem de Paulo é de distância, não de proximidade.",
+      "b": "Paulo usa uma imagem de distância maior que a de vizinho."
+    },
+    "hint": "Pense em quem está fora da língua do outro.",
+    "learningObjective": "Lembrar a imagem de quem não entende a voz.",
+    "evidence": [
+      "1 Coríntios 14:11"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-02-traducao-06",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "passageA": {
+      "ref": "1 Coríntios 14:9",
+      "text": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Falar bem é fazer o outro entender, e não só emitir sons."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Entender é o alvo da fala"
+      },
+      {
+        "id": "b",
+        "text": "Falar sem sentido edifica"
+      },
+      {
+        "id": "c",
+        "text": "Som bonito basta sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como será entendido o que dizeis",
+    "feedbackCorrect": "Para Paulo, a fala só cumpre seu papel quando é entendida.",
+    "feedbackWrong": {
+      "b": "Sem entendimento, Paulo compara a fala a falar ao ar.",
+      "c": "Paulo pergunta como será entendido, não elogia só o som."
+    },
+    "hint": "Veja a pergunta central do versículo.",
+    "learningObjective": "Ligar 1 Coríntios 14:9 ao alvo de ser entendido.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-02-traducao-01",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 14:10–11, quem não entende a voz fica como estrangeiro para quem fala.",
+    "prompt": "Em 1 Coríntios 14:10–11, quem não entende a voz fica como estrangeiro para quem fala.",
+    "cue": "Em 1 Coríntios 14:10–11, quem não entende a voz fica como estrangeiro para quem fala.",
+    "verseRef": "1 Coríntios 14:10–11",
+    "passageText": "Existem, sem dúvida, muitos tipos de vozes no mundo; nenhuma delas, contudo, é sem sentido. Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "serei estrangeiro para quem fala",
+    "feedbackCorrect": "A falta de entendimento cria distância dos dois lados da conversa.",
+    "feedbackWrong": {
+      "false": "Releia 1 Coríntios 14:11 e veja a comparação de Paulo."
+    },
+    "hint": "Leia a comparação do segundo versículo.",
+    "learningObjective": "Compreender o efeito da falta de entendimento.",
+    "evidence": [
+      "1 Coríntios 14:10–11"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-02-traducao-02",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 14:10, toque a palavra que marca o contraste de Paulo.",
+    "prompt": "Em 1 Coríntios 14:10, toque a palavra que marca o contraste de Paulo.",
+    "cue": "Em 1 Coríntios 14:10, toque a palavra que marca o contraste de Paulo.",
+    "verseRef": "1 Coríntios 14:10",
+    "passageText": "Existem, sem dúvida, muitos tipos de vozes no mundo; nenhuma delas, contudo, é sem sentido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "contudo"
+      },
+      {
+        "id": "b",
+        "text": "sentido"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nenhuma delas, contudo, é sem sentido",
+    "feedbackCorrect": "Mesmo havendo muitas vozes, nenhuma delas é sem sentido.",
+    "feedbackWrong": {
+      "b": "Isso é o assunto do contraste, não a palavra que o marca.",
+      "c": "Isso diz onde há muitas vozes, não marca o contraste."
+    },
+    "hint": "Procure uma palavra curta entre vírgulas.",
+    "learningObjective": "Reconhecer a palavra que marca o contraste.",
+    "evidence": [
+      "1 Coríntios 14:10"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-02-traducao-03",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 14:11 se relaciona com 1 Coríntios 14:9?",
+    "prompt": "Como 1 Coríntios 14:11 se relaciona com 1 Coríntios 14:9?",
+    "cue": "Como 1 Coríntios 14:11 se relaciona com 1 Coríntios 14:9?",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra a distância criada quando falta entendimento"
+      },
+      {
+        "id": "b",
+        "text": "Troca o tema da fala pelo da música"
+      },
+      {
+        "id": "c",
+        "text": "Afirma que entender é desnecessário na igreja"
+      },
+      {
+        "id": "d",
+        "text": "Mostra que todo som ouvido já edifica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "serei estrangeiro para quem fala",
+    "feedbackCorrect": "O versículo 11 mostra na prática a distância de quem não entende.",
+    "feedbackWrong": {
+      "b": "O tema continua sendo falar e ser entendido.",
+      "c": "Paulo insiste justamente na necessidade de entender.",
+      "d": "Ouvir som sem entender não edifica, segundo Paulo."
+    },
+    "hint": "Pense na distância entre quem fala e quem ouve.",
+    "learningObjective": "Relacionar a falta de clareza com a distância entre as pessoas.",
+    "evidence": [
+      "1 Coríntios 14:9–11"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-02-traducao-04",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em 1 Coríntios 14:10–11?",
+    "prompt": "Como avança o argumento em 1 Coríntios 14:10–11?",
+    "cue": "Como avança o argumento em 1 Coríntios 14:10–11?",
+    "verseRef": "1 Coríntios 14:10–11",
+    "passageText": "Existem, sem dúvida, muitos tipos de vozes no mundo; nenhuma delas, contudo, é sem sentido. Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há muitas vozes no mundo com sentido"
+      },
+      {
+        "id": "b",
+        "text": "Sem entender, o ouvinte vira estrangeiro"
+      },
+      {
+        "id": "c",
+        "text": "Quem fala também vira estrangeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "muitos tipos de vozes no mundo",
+    "feedbackCorrect": "Das vozes com sentido, Paulo chega à distância de quem não entende.",
+    "feedbackWrong": {
+      "default": "Comece pelas muitas vozes; a distância vem depois."
+    },
+    "hint": "A distância entre as pessoas é o fim do argumento.",
+    "learningObjective": "Compreender o avanço do argumento de Paulo.",
+    "evidence": [
+      "1 Coríntios 14:10–11"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-02-traducao-05",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 14:12, para que os dons devem ser buscados na igreja?",
+    "prompt": "Em 1 Coríntios 14:12, para que os dons devem ser buscados na igreja?",
+    "cue": "Em 1 Coríntios 14:12, para que os dons devem ser buscados na igreja?",
+    "verseRef": "1 Coríntios 14:12",
+    "passageText": "Assim também vocês, uma vez que aspiram aos dons espirituais, busquem progredir para a edificação da igreja.",
+    "template": "Assim também vocês, uma vez que aspiram aos dons espirituais, busquem progredir para a ___ da igreja.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disputa"
+      },
+      {
+        "id": "b",
+        "text": "exibição"
+      },
+      {
+        "id": "c",
+        "text": "edificação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "busquem progredir para a edificação da igreja",
+    "feedbackCorrect": "O alvo dos dons é fazer a igreja crescer, e não exibir pessoas.",
+    "feedbackWrong": {
+      "a": "Paulo aponta crescimento da igreja, não competição.",
+      "b": "O alvo é a igreja edificada, não a pessoa exibida."
+    },
+    "hint": "Veja o alvo citado no fim do versículo.",
+    "learningObjective": "Lembrar o alvo dos dons na igreja.",
+    "evidence": [
+      "1 Coríntios 14:12"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-02-traducao-06",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 14:11 a Neemias 8:8?",
+    "prompt": "O que liga 1 Coríntios 14:11 a Neemias 8:8?",
+    "cue": "O que liga 1 Coríntios 14:11 a Neemias 8:8?",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "passageA": {
+      "ref": "1 Coríntios 14:11",
+      "text": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim."
+    },
+    "passageB": {
+      "ref": "Neemias 8:8",
+      "text": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Distância é sempre boa"
+      },
+      {
+        "id": "b",
+        "text": "Entender aproxima quem ouve"
+      },
+      {
+        "id": "c",
+        "text": "Palavra ouvida sem qualquer sentido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se eu não entender o significado da voz",
+    "feedbackCorrect": "Neemias dá o sentido ao povo, e Paulo mostra o valor de entender.",
+    "feedbackWrong": {
+      "a": "Paulo trata a distância como problema a superar.",
+      "c": "Em Neemias o povo entende o que ouve, com sentido dado."
+    },
+    "hint": "Compare o povo que entende com quem fica de fora.",
+    "learningObjective": "Relacionar entendimento em Paulo e em Neemias.",
+    "evidence": [
+      "1 Coríntios 14:11",
+      "Neemias 8:8"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-02-traducao-01",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 14:12, Paulo manda buscar dons para destaque pessoal acima da igreja.",
+    "prompt": "Em 1 Coríntios 14:12, Paulo manda buscar dons para destaque pessoal acima da igreja.",
+    "cue": "Em 1 Coríntios 14:12, Paulo manda buscar dons para destaque pessoal acima da igreja.",
+    "verseRef": "1 Coríntios 14:12",
+    "passageText": "Assim também vocês, uma vez que aspiram aos dons espirituais, busquem progredir para a edificação da igreja.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "busquem progredir para a edificação da igreja",
+    "feedbackCorrect": "O alvo que Paulo dá aos dons é a igreja ser edificada.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1 Coríntios 14:12 e veja o alvo dos dons."
+    },
+    "hint": "Veja para que os dons devem ser buscados.",
+    "learningObjective": "Interpretar os dons a serviço da igreja.",
+    "evidence": [
+      "1 Coríntios 14:12"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-02-traducao-02",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 14:11, toque o que, se faltar, torna o ouvinte estrangeiro.",
+    "prompt": "Em 1 Coríntios 14:11, toque o que, se faltar, torna o ouvinte estrangeiro.",
+    "cue": "Em 1 Coríntios 14:11, toque o que, se faltar, torna o ouvinte estrangeiro.",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estrangeiro"
+      },
+      {
+        "id": "b",
+        "text": "voz"
+      },
+      {
+        "id": "c",
+        "text": "significado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se eu não entender o significado da voz",
+    "feedbackCorrect": "Sem captar o sentido do que se ouve, a pessoa fica de fora.",
+    "feedbackWrong": {
+      "a": "Isso é o resultado da falta, não a falta em si.",
+      "b": "A voz é ouvida; o que falta é captar o seu sentido."
+    },
+    "hint": "Procure o que precisa ser entendido na voz.",
+    "learningObjective": "Sustentar que entender o sentido aproxima o ouvinte.",
+    "evidence": [
+      "1 Coríntios 14:11"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-02-traducao-03",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 14:9 sustenta sobre falar e traduzir a Palavra?",
+    "prompt": "Que leitura 1 Coríntios 14:9 sustenta sobre falar e traduzir a Palavra?",
+    "cue": "Que leitura 1 Coríntios 14:9 sustenta sobre falar e traduzir a Palavra?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra deve chegar de modo compreensível"
+      },
+      {
+        "id": "b",
+        "text": "O som bonito basta, mesmo sem entendimento"
+      },
+      {
+        "id": "c",
+        "text": "Entender é opcional para quem ouve"
+      },
+      {
+        "id": "d",
+        "text": "Só a língua original pode ser lida com fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não disserdes palavras compreensíveis",
+    "feedbackCorrect": "Paulo sustenta que a palavra precisa ser entendida por quem ouve.",
+    "feedbackWrong": {
+      "b": "Sem entendimento, Paulo compara a fala a falar ao ar.",
+      "c": "Toda a pergunta de Paulo mostra que entender é essencial.",
+      "d": "Paulo valoriza ser entendido, o que uma boa tradução serve."
+    },
+    "hint": "Veja o que Paulo exige das palavras ditas.",
+    "learningObjective": "Interpretar a tradução como serviço ao entendimento.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-02-traducao-04",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra clara que começa em 1 Coríntios 14:9?",
+    "prompt": "Qual sequência revela o caminho da palavra clara que começa em 1 Coríntios 14:9?",
+    "cue": "Qual sequência revela o caminho da palavra clara que começa em 1 Coríntios 14:9?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra é dita de modo claro"
+      },
+      {
+        "id": "b",
+        "text": "Quem ouve entende o que foi dito"
+      },
+      {
+        "id": "c",
+        "text": "A igreja cresce sendo edificada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "como será entendido o que dizeis",
+    "feedbackCorrect": "Clareza gera entendimento, e entendimento edifica a igreja.",
+    "feedbackWrong": {
+      "default": "Comece pela palavra clara; a igreja edificada é o fim."
+    },
+    "hint": "A edificação da igreja é o ponto de chegada.",
+    "learningObjective": "Ver a palavra clara como caminho de edificação.",
+    "evidence": [
+      "1 Coríntios 14:9",
+      "1 Coríntios 14:12"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-02-traducao-05",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 14:10, o que existe em muitos tipos no mundo, segundo Paulo?",
+    "prompt": "Em 1 Coríntios 14:10, o que existe em muitos tipos no mundo, segundo Paulo?",
+    "cue": "Em 1 Coríntios 14:10, o que existe em muitos tipos no mundo, segundo Paulo?",
+    "verseRef": "1 Coríntios 14:10",
+    "passageText": "Existem, sem dúvida, muitos tipos de vozes no mundo; nenhuma delas, contudo, é sem sentido.",
+    "template": "Existem, sem dúvida, muitos tipos de ___ no mundo; nenhuma delas, contudo, é sem sentido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reis"
+      },
+      {
+        "id": "b",
+        "text": "vozes"
+      },
+      {
+        "id": "c",
+        "text": "templos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "muitos tipos de vozes no mundo",
+    "feedbackCorrect": "Paulo parte das muitas formas de falar que existem no mundo.",
+    "feedbackWrong": {
+      "a": "Reis não entram na comparação de Paulo aqui.",
+      "c": "Paulo fala de formas de comunicação, não de templos."
+    },
+    "hint": "Pense no que carrega sentido quando se fala.",
+    "learningObjective": "Lembrar o ponto de partida do argumento de Paulo.",
+    "evidence": [
+      "1 Coríntios 14:10"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-02-traducao-06",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 14:9 a Atos 2:8?",
+    "prompt": "O que liga 1 Coríntios 14:9 a Atos 2:8?",
+    "cue": "O que liga 1 Coríntios 14:9 a Atos 2:8?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "passageA": {
+      "ref": "1 Coríntios 14:9",
+      "text": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar."
+    },
+    "passageB": {
+      "ref": "Atos 2:8",
+      "text": "Como então, os ouvimos falar, cada um em nossa própria língua materna?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada povo ouve com entendimento"
+      },
+      {
+        "id": "b",
+        "text": "Ninguém precisa entender nada"
+      },
+      {
+        "id": "c",
+        "text": "Uma só língua para todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como será entendido o que dizeis",
+    "feedbackCorrect": "No Pentecostes cada um ouve em sua língua, como Paulo deseja.",
+    "feedbackWrong": {
+      "b": "Paulo exige entendimento, e Atos mostra povos entendendo.",
+      "c": "Atos mostra muitas línguas entendidas, não uma só."
+    },
+    "hint": "Compare como cada povo ouve a mensagem.",
+    "learningObjective": "Ligar a palavra compreensível ao Pentecostes.",
+    "evidence": [
+      "1 Coríntios 14:9",
+      "Atos 2:8"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-01",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 19:20, muitos judeus leram o título porque o lugar da cruz era próximo da cidade.",
+    "prompt": "Em João 19:20, muitos judeus leram o título porque o lugar da cruz era próximo da cidade.",
+    "cue": "Em João 19:20, muitos judeus leram o título porque o lugar da cruz era próximo da cidade.",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o lugar onde Jesus foi crucificado era próximo da cidade",
+    "feedbackCorrect": "João liga a leitura de muitos à proximidade do lugar com a cidade.",
+    "feedbackWrong": {
+      "false": "Releia João 19:20 e veja quantos leram e onde era o lugar."
+    },
+    "hint": "Veja quantos leram e onde ficava o lugar.",
+    "learningObjective": "Revisar a leitura do título por muitos judeus.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-02",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 23:38, toque uma das línguas da inscrição que era de Roma.",
+    "prompt": "Em Lucas 23:38, toque uma das línguas da inscrição que era de Roma.",
+    "cue": "Em Lucas 23:38, toque uma das línguas da inscrição que era de Roma.",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "romanas"
+      },
+      {
+        "id": "b",
+        "text": "gregas"
+      },
+      {
+        "id": "c",
+        "text": "hebraicas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Lucas cita as letras ligadas a Roma entre as três da inscrição.",
+    "feedbackWrong": {
+      "b": "Essas letras são de outro povo citado por Lucas.",
+      "c": "Essas letras são do povo judeu, não de Roma."
+    },
+    "hint": "Procure o adjetivo ligado a Roma.",
+    "learningObjective": "Revisar as línguas da inscrição da cruz.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-03",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 14:9, a que Paulo compara falar sem ser entendido?",
+    "prompt": "Segundo 1 Coríntios 14:9, a que Paulo compara falar sem ser entendido?",
+    "cue": "Segundo 1 Coríntios 14:9, a que Paulo compara falar sem ser entendido?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cantar na igreja"
+      },
+      {
+        "id": "b",
+        "text": "A ensinar uma multidão"
+      },
+      {
+        "id": "c",
+        "text": "A ler em voz alta"
+      },
+      {
+        "id": "d",
+        "text": "A falar ao ar"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Estareis como que falando ao ar",
+    "feedbackCorrect": "Sem entendimento, Paulo diz que a fala se perde como ao vento.",
+    "feedbackWrong": {
+      "a": "Paulo não fala de canto neste versículo.",
+      "b": "Sem ser entendido, ninguém é ensinado de fato.",
+      "c": "Ler alto sem clareza também não gera entendimento."
+    },
+    "hint": "Leia a comparação no fim do versículo.",
+    "learningObjective": "Revisar a comparação de Paulo para a fala sem clareza.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-04",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 23:38 na ordem do texto.",
+    "prompt": "Monte Lucas 23:38 na ordem do texto.",
+    "cue": "Monte Lucas 23:38 na ordem do texto.",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E também acima dele havia uma inscrição"
+      },
+      {
+        "id": "b",
+        "text": "escrita em letras gregas, romanas e hebraicas"
+      },
+      {
+        "id": "c",
+        "text": "ESTE É O REI DOS JUDEUS"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E também acima dele havia uma inscrição",
+    "feedbackCorrect": "Texto exposto, línguas em que foi escrito e conteúdo, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo que havia acima dele; o conteúdo vem no fim."
+    },
+    "hint": "O versículo começa pelo lugar do texto.",
+    "learningObjective": "Reconhecer a ordem de Lucas 23:38.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-05",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 19:19, como o título chama Jesus além de Rei dos Judeus?",
+    "prompt": "Em João 19:19, como o título chama Jesus além de Rei dos Judeus?",
+    "cue": "Em João 19:19, como o título chama Jesus além de Rei dos Judeus?",
+    "verseRef": "João 19:19",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS.",
+    "template": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS ___, O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ROMANO"
+      },
+      {
+        "id": "b",
+        "text": "GALILEU"
+      },
+      {
+        "id": "c",
+        "text": "NAZARENO"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "JESUS NAZARENO, O REI DOS JUDEUS",
+    "feedbackCorrect": "O título apresenta Jesus ligado à sua cidade de origem.",
+    "feedbackWrong": {
+      "a": "Jesus não é chamado pela nacionalidade de Pilatos.",
+      "b": "O título usa o nome da cidade onde Jesus cresceu."
+    },
+    "hint": "Veja a palavra entre Jesus e Rei no texto.",
+    "learningObjective": "Lembrar o conteúdo do título da cruz.",
+    "evidence": [
+      "João 19:19"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-06",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 19:20 comunica que se liga a este contexto?",
+    "prompt": "O que João 19:20 comunica que se liga a este contexto?",
+    "cue": "O que João 19:20 comunica que se liga a este contexto?",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "passageA": {
+      "ref": "João 19:20",
+      "text": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na cruz, gente de culturas diferentes podia ler sobre Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrita para ninguém ler"
+      },
+      {
+        "id": "b",
+        "text": "Escrita para muitos lerem"
+      },
+      {
+        "id": "c",
+        "text": "Escrita só para Pilatos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "muitos judeus leram este título",
+    "feedbackCorrect": "João destaca que muitos leram o título exposto perto da cidade.",
+    "feedbackWrong": {
+      "a": "João diz que muitos leram, não que ninguém leu.",
+      "c": "Pilatos escreveu, mas quem lê são muitos judeus."
+    },
+    "hint": "Veja quem lê no começo do versículo.",
+    "learningObjective": "Ligar o título da cruz à leitura por muitos.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-07",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 14:9, toque o meio pelo qual se dizem as palavras.",
+    "prompt": "Em 1 Coríntios 14:9, toque o meio pelo qual se dizem as palavras.",
+    "cue": "Em 1 Coríntios 14:9, toque o meio pelo qual se dizem as palavras.",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "língua"
+      },
+      {
+        "id": "c",
+        "text": "ar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se, com a língua, não disserdes palavras compreensíveis",
+    "feedbackCorrect": "Paulo fala do instrumento da fala que deve produzir entendimento.",
+    "feedbackWrong": {
+      "a": "Isso é o que se diz, não o meio de dizer.",
+      "c": "Isso é a comparação final, não o meio da fala."
+    },
+    "hint": "Procure o meio usado para falar no versículo.",
+    "learningObjective": "Observar o meio da fala em 1 Coríntios 14:9.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-sem-lo-boss-08",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 19:19 na ordem do texto.",
+    "prompt": "Monte João 19:19 na ordem do texto.",
+    "cue": "Monte João 19:19 na ordem do texto.",
+    "verseRef": "João 19:19",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Pilatos também escreveu um título"
+      },
+      {
+        "id": "b",
+        "text": "e o colocou no cimo da cruz"
+      },
+      {
+        "id": "c",
+        "text": "nele estava escrito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E Pilatos também escreveu um título",
+    "feedbackCorrect": "Pilatos escreve, coloca no alto e então vem o conteúdo.",
+    "feedbackWrong": {
+      "default": "Comece por quem escreve; o conteúdo vem depois."
+    },
+    "hint": "O versículo começa por quem escreve.",
+    "learningObjective": "Reconhecer a ordem de João 19:19.",
+    "evidence": [
+      "João 19:19"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-01",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 14:11, quem entende o significado da voz ainda fica como estrangeiro para quem fala.",
+    "prompt": "Em 1 Coríntios 14:11, quem entende o significado da voz ainda fica como estrangeiro para quem fala.",
+    "cue": "Em 1 Coríntios 14:11, quem entende o significado da voz ainda fica como estrangeiro para quem fala.",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se eu não entender o significado da voz",
+    "feedbackCorrect": "A distância aparece quando a pessoa não entende o significado.",
+    "feedbackWrong": {
+      "true": "Releia a condição no começo de 1 Coríntios 14:11."
+    },
+    "hint": "Leia a condição que abre o versículo.",
+    "learningObjective": "Compreender a condição para a distância na conversa.",
+    "evidence": [
+      "1 Coríntios 14:11"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-02",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 14:11, toque a ação que evita a distância entre quem fala e quem ouve.",
+    "prompt": "Em 1 Coríntios 14:11, toque a ação que evita a distância entre quem fala e quem ouve.",
+    "cue": "Em 1 Coríntios 14:11, toque a ação que evita a distância entre quem fala e quem ouve.",
+    "verseRef": "1 Coríntios 14:11",
+    "passageText": "Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "significado"
+      },
+      {
+        "id": "b",
+        "text": "entender"
+      },
+      {
+        "id": "c",
+        "text": "estrangeiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se eu não entender o significado da voz",
+    "feedbackCorrect": "Quando o ouvinte compreende, a distância de estrangeiro não aparece.",
+    "feedbackWrong": {
+      "a": "Isso é o objeto a ser captado, não a ação em si.",
+      "c": "Isso é o resultado da falta, não a ação que a evita."
+    },
+    "hint": "Procure o verbo ligado a captar o sentido.",
+    "learningObjective": "Reconhecer a ação que aproxima quem ouve.",
+    "evidence": [
+      "1 Coríntios 14:11"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-03",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 23:38 se relaciona com João 19:20?",
+    "prompt": "Como Lucas 23:38 se relaciona com João 19:20?",
+    "cue": "Como Lucas 23:38 se relaciona com João 19:20?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "João diz que ninguém conseguiu ler o texto"
+      },
+      {
+        "id": "b",
+        "text": "João apresenta um texto diferente do de Lucas"
+      },
+      {
+        "id": "c",
+        "text": "João reduz o texto a uma só língua"
+      },
+      {
+        "id": "d",
+        "text": "João mostra leitores do texto citado por Lucas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Lucas cita as línguas e João mostra muita gente lendo o título.",
+    "feedbackWrong": {
+      "a": "João afirma que muitos judeus leram o título.",
+      "b": "É o mesmo título da cruz nos dois relatos.",
+      "c": "João também cita três línguas no título."
+    },
+    "hint": "Pense em texto escrito e depois lido.",
+    "learningObjective": "Relacionar a inscrição em Lucas com os leitores em João.",
+    "evidence": [
+      "Lucas 23:38",
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-04",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em 1 Coríntios 14:10–11?",
+    "prompt": "Como avança o argumento em 1 Coríntios 14:10–11?",
+    "cue": "Como avança o argumento em 1 Coríntios 14:10–11?",
+    "verseRef": "1 Coríntios 14:10–11",
+    "passageText": "Existem, sem dúvida, muitos tipos de vozes no mundo; nenhuma delas, contudo, é sem sentido. Mas, se eu não entender o significado da voz, serei estrangeiro para quem fala; e quem fala será estrangeiro para mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há muitas vozes no mundo com sentido"
+      },
+      {
+        "id": "b",
+        "text": "Sem entender, o ouvinte vira estrangeiro"
+      },
+      {
+        "id": "c",
+        "text": "Quem fala também vira estrangeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "muitos tipos de vozes no mundo",
+    "feedbackCorrect": "Das vozes com sentido, Paulo chega à distância de quem não entende.",
+    "feedbackWrong": {
+      "default": "Comece pelas muitas vozes; a distância vem depois."
+    },
+    "hint": "A distância entre as pessoas fecha o argumento.",
+    "learningObjective": "Compreender o avanço do argumento de Paulo.",
+    "evidence": [
+      "1 Coríntios 14:10–11"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-05",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 23:38, o que havia acima de Jesus para ser lido?",
+    "prompt": "Em Lucas 23:38, o que havia acima de Jesus para ser lido?",
+    "cue": "Em Lucas 23:38, o que havia acima de Jesus para ser lido?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "template": "E também acima dele havia uma ___, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coroa"
+      },
+      {
+        "id": "b",
+        "text": "inscrição"
+      },
+      {
+        "id": "c",
+        "text": "manto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "acima dele havia uma inscrição",
+    "feedbackCorrect": "Acima dele havia um texto exposto, escrito em três línguas.",
+    "feedbackWrong": {
+      "a": "A coroa não é o texto que Lucas descreve aqui.",
+      "c": "O manto não é o texto exposto para leitura."
+    },
+    "hint": "Veja o objeto exposto para leitura.",
+    "learningObjective": "Lembrar o texto exposto acima de Jesus.",
+    "evidence": [
+      "Lucas 23:38"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-06",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 14:9 a Neemias 8:8?",
+    "prompt": "O que liga 1 Coríntios 14:9 a Neemias 8:8?",
+    "cue": "O que liga 1 Coríntios 14:9 a Neemias 8:8?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "passageA": {
+      "ref": "1 Coríntios 14:9",
+      "text": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar."
+    },
+    "passageB": {
+      "ref": "Neemias 8:8",
+      "text": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra guardada de poucos"
+      },
+      {
+        "id": "b",
+        "text": "Palavra ouvida sem sentido"
+      },
+      {
+        "id": "c",
+        "text": "Palavra tornada compreensível ao povo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não disserdes palavras compreensíveis",
+    "feedbackCorrect": "Em Neemias o sentido é dado ao povo, como Paulo deseja em Corinto.",
+    "feedbackWrong": {
+      "a": "Em Neemias o povo ouve e entende; nada fica guardado.",
+      "b": "Neemias dá o sentido, e Paulo pede palavras que se entendam."
+    },
+    "hint": "Compare para quem cada texto foi apresentado.",
+    "learningObjective": "Relacionar a palavra compreensível em Paulo e Neemias.",
+    "evidence": [
+      "1 Coríntios 14:9",
+      "Neemias 8:8"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-07",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 19:20, toque a língua do povo judeu citada no título.",
+    "prompt": "Em João 19:20, toque a língua do povo judeu citada no título.",
+    "cue": "Em João 19:20, toque a língua do povo judeu citada no título.",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "latim"
+      },
+      {
+        "id": "b",
+        "text": "hebraico"
+      },
+      {
+        "id": "c",
+        "text": "grego"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "estava escrito em hebraico, latim e grego",
+    "feedbackCorrect": "A primeira língua citada é a do povo judeu da época.",
+    "feedbackWrong": {
+      "a": "Essa era a língua de Roma, não a do povo judeu.",
+      "c": "Essa era muito falada, mas não é a do povo judeu."
+    },
+    "hint": "É a primeira língua da lista de João.",
+    "learningObjective": "Identificar a língua do povo judeu no título.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-cam-lo-boss-08",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em João 19:19–20?",
+    "prompt": "Como avança a cena em João 19:19–20?",
+    "cue": "Como avança a cena em João 19:19–20?",
+    "verseRef": "João 19:19–20",
+    "passageText": "E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pilatos escreve um texto para a cruz"
+      },
+      {
+        "id": "b",
+        "text": "O texto é colocado no alto da cruz"
+      },
+      {
+        "id": "c",
+        "text": "Muitos judeus leem o texto exposto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pilatos também escreveu um título",
+    "feedbackCorrect": "Escrever, colocar no alto e ser lido por muitos, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece por quem escreve; a leitura vem por último."
+    },
+    "hint": "A leitura por muitos fecha a cena.",
+    "learningObjective": "Compreender o movimento da escrita à leitura.",
+    "evidence": [
+      "João 19:19–20"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-01",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "João 19:20 mostra a palavra sobre Jesus exposta em três línguas para ser lida por muitos.",
+    "prompt": "João 19:20 mostra a palavra sobre Jesus exposta em três línguas para ser lida por muitos.",
+    "cue": "João 19:20 mostra a palavra sobre Jesus exposta em três línguas para ser lida por muitos.",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "estava escrito em hebraico, latim e grego",
+    "feedbackCorrect": "Três línguas e muitos leitores mostram uma palavra exposta, não escondida.",
+    "feedbackWrong": {
+      "false": "João cita três línguas e diz que muitos leram o título."
+    },
+    "hint": "Conte as línguas e veja quantos leram.",
+    "learningObjective": "Interpretar o título como palavra exposta a muitos.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-02",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 14:10, toque o que nenhuma voz do mundo fica sem ter.",
+    "prompt": "Em 1 Coríntios 14:10, toque o que nenhuma voz do mundo fica sem ter.",
+    "cue": "Em 1 Coríntios 14:10, toque o que nenhuma voz do mundo fica sem ter.",
+    "verseRef": "1 Coríntios 14:10",
+    "passageText": "Existem, sem dúvida, muitos tipos de vozes no mundo; nenhuma delas, contudo, é sem sentido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "vozes"
+      },
+      {
+        "id": "c",
+        "text": "sentido"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nenhuma delas, contudo, é sem sentido",
+    "feedbackCorrect": "Para Paulo, toda forma de falar carrega algo a ser compreendido.",
+    "feedbackWrong": {
+      "a": "Isso é onde as vozes estão, não o que elas têm.",
+      "b": "Isso é o que existe em muitos tipos, não o que lhe falta."
+    },
+    "hint": "Leia o fim do versículo com atenção.",
+    "learningObjective": "Sustentar que toda voz carrega sentido a entender.",
+    "evidence": [
+      "1 Coríntios 14:10"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-03",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 14:9 sustenta sobre traduzir a Palavra?",
+    "prompt": "Que leitura 1 Coríntios 14:9 sustenta sobre traduzir a Palavra?",
+    "cue": "Que leitura 1 Coríntios 14:9 sustenta sobre traduzir a Palavra?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Traduzir só vale na língua original"
+      },
+      {
+        "id": "b",
+        "text": "A palavra deve chegar de modo compreensível"
+      },
+      {
+        "id": "c",
+        "text": "Entender é opcional para quem ouve"
+      },
+      {
+        "id": "d",
+        "text": "O som bonito basta sem entendimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não disserdes palavras compreensíveis",
+    "feedbackCorrect": "Paulo sustenta que a palavra precisa ser entendida por quem ouve.",
+    "feedbackWrong": {
+      "a": "Paulo valoriza ser entendido, fruto de boa tradução.",
+      "c": "A pergunta de Paulo mostra que entender é essencial.",
+      "d": "Sem entendimento, Paulo compara a fala a falar ao ar."
+    },
+    "hint": "Veja o que Paulo exige das palavras ditas.",
+    "learningObjective": "Interpretar a tradução como serviço ao entendimento.",
+    "evidence": [
+      "1 Coríntios 14:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-04",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra a muitos que começa em Lucas 23:38?",
+    "prompt": "Qual sequência revela o caminho da palavra a muitos que começa em Lucas 23:38?",
+    "cue": "Qual sequência revela o caminho da palavra a muitos que começa em Lucas 23:38?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra sobre Jesus é exposta na cruz"
+      },
+      {
+        "id": "b",
+        "text": "Povos ouvem a mensagem em sua língua"
+      },
+      {
+        "id": "c",
+        "text": "Uma multidão de povos está diante de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Da cruz exposta a muitos, à multidão de povos diante de Deus.",
+    "feedbackWrong": {
+      "default": "Siga a história, da cruz ao Pentecostes e à multidão final."
+    },
+    "hint": "Siga a ordem, cruz, Pentecostes, eternidade.",
+    "learningObjective": "Ver a palavra a muitos povos como fio bíblico.",
+    "evidence": [
+      "Lucas 23:38",
+      "Atos 2:8",
+      "Apocalipse 7:9"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-05",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 19:20, perto de que lugar ficava onde Jesus foi crucificado?",
+    "prompt": "Em João 19:20, perto de que lugar ficava onde Jesus foi crucificado?",
+    "cue": "Em João 19:20, perto de que lugar ficava onde Jesus foi crucificado?",
+    "verseRef": "João 19:20",
+    "passageText": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da ___; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o lugar onde Jesus foi crucificado era próximo da cidade",
+    "feedbackCorrect": "A proximidade explica por que tantos puderam ler o título.",
+    "feedbackWrong": {
+      "b": "João cita outro lugar de passagem de muita gente.",
+      "c": "O mar não é citado como referência neste versículo."
+    },
+    "hint": "Veja o lugar citado no fim do versículo.",
+    "learningObjective": "Lembrar o lugar próximo à crucificação.",
+    "evidence": [
+      "João 19:20"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-06",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 23:38 a Atos 2:8?",
+    "prompt": "O que liga Lucas 23:38 a Atos 2:8?",
+    "cue": "O que liga Lucas 23:38 a Atos 2:8?",
+    "verseRef": "Lucas 23:38",
+    "passageText": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS.",
+    "passageA": {
+      "ref": "Lucas 23:38",
+      "text": "E também acima dele havia uma inscrição, escrita em letras gregas, romanas e hebraicas: ESTE É O REI DOS JUDEUS."
+    },
+    "passageB": {
+      "ref": "Atos 2:8",
+      "text": "Como então, os ouvimos falar, cada um em nossa própria língua materna?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma língua para todos sempre"
+      },
+      {
+        "id": "b",
+        "text": "Deus fala a cada povo"
+      },
+      {
+        "id": "c",
+        "text": "Palavra longe das pessoas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "escrita em letras gregas, romanas e hebraicas",
+    "feedbackCorrect": "Na cruz e no Pentecostes, a mensagem alcança pessoas em sua língua.",
+    "feedbackWrong": {
+      "a": "Nos dois textos há várias línguas, não uma só.",
+      "c": "Nos dois textos a mensagem se aproxima das pessoas."
+    },
+    "hint": "Compare como cada povo recebe a mensagem.",
+    "learningObjective": "Ligar a inscrição da cruz com o Pentecostes.",
+    "evidence": [
+      "Lucas 23:38",
+      "Atos 2:8"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-07",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 14:12, toque o que as pessoas aspiram segundo Paulo.",
+    "prompt": "Em 1 Coríntios 14:12, toque o que as pessoas aspiram segundo Paulo.",
+    "cue": "Em 1 Coríntios 14:12, toque o que as pessoas aspiram segundo Paulo.",
+    "verseRef": "1 Coríntios 14:12",
+    "passageText": "Assim também vocês, uma vez que aspiram aos dons espirituais, busquem progredir para a edificação da igreja.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dons"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "espirituais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "uma vez que aspiram aos dons espirituais",
+    "feedbackCorrect": "Paulo parte do desejo por dons e o dirige à edificação da igreja.",
+    "feedbackWrong": {
+      "b": "Isso é quem deve ser edificada, não o que se aspira.",
+      "c": "Isso qualifica o que se aspira, não é o objeto em si."
+    },
+    "hint": "Procure o objeto do desejo citado por Paulo.",
+    "learningObjective": "Identificar o que é aspirado em 1 Coríntios 14:12.",
+    "evidence": [
+      "1 Coríntios 14:12"
+    ]
+  },
+  {
+    "id": "linguas-originais-pro-lo-boss-08",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra clara que começa em 1 Coríntios 14:9?",
+    "prompt": "Qual sequência revela o caminho da palavra clara que começa em 1 Coríntios 14:9?",
+    "cue": "Qual sequência revela o caminho da palavra clara que começa em 1 Coríntios 14:9?",
+    "verseRef": "1 Coríntios 14:9",
+    "passageText": "Assim também vós, se, com a língua, não disserdes palavras compreensíveis, como será entendido o que dizeis? Estareis como que falando ao ar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra é dita de modo claro"
+      },
+      {
+        "id": "b",
+        "text": "Quem ouve entende o que foi dito"
+      },
+      {
+        "id": "c",
+        "text": "A igreja cresce sendo edificada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "como será entendido o que dizeis",
+    "feedbackCorrect": "Clareza gera entendimento, e entendimento edifica a igreja.",
+    "feedbackWrong": {
+      "default": "Comece pela palavra clara; a igreja edificada é o fim."
+    },
+    "hint": "A edificação da igreja é o ponto de chegada.",
+    "learningObjective": "Ver a palavra clara como caminho de edificação.",
+    "evidence": [
+      "1 Coríntios 14:9",
+      "1 Coríntios 14:12"
+    ]
+  }
+]

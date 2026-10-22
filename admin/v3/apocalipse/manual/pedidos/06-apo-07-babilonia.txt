@@ -1,0 +1,67 @@
+Escreva a cena "apo-07-babilonia" da trilha "apocalipse" (Apocalipse).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "apocalipse",
+  "title": "Apocalipse",
+  "description": "Revelação de Jesus: cartas, trono, conflito e nova criação.",
+  "realm": "novo-testamento"
+ },
+ "block": "Juízo e esperança",
+ "mission": {
+  "slug": "apo-07-babilonia",
+  "title": "Queda de Babilônia",
+  "type": "lesson",
+  "intro": "O sistema que seduz e oprime cai. Sai dela, povo meu — fidelidade tem endereço.",
+  "hookRef": "Apocalipse 18:4",
+  "hookNote": "Babilônia simboliza a cidade/império idólatra que embriaga nações com luxo e violência. Sua queda é celebrada no céu e lamentada pelos merc…",
+  "centralInsight": "Sair da cumplicidade",
+  "objective": "Onde estou cúmplice de um sistema que Cristo já julgou?"
+ },
+ "v2": {
+  "passageRef": "Apocalipse 18:4",
+  "context": "Babilônia simboliza a cidade/império idólatra que embriaga nações com luxo e violência. Sua queda é celebrada no céu e lamentada pelos mercadores. O chamado à igreja é separação fiel — não isolamento covarde, mas recusa de cumplicidade. Apocalipse desmascara sedução: o que parece glamour é juízo anunciado.",
+  "keyword": "Babilônia",
+  "verseRefs": [
+   "Apocalipse 18:4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Apocalipse 18:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Apocalipse 18:1",
+   "text": "E, depois dessas coisas, eu vi descer do céu outro anjo, que possuía grande autoridade, e a terra se iluminou com a sua glória."
+  },
+  {
+   "ref": "Apocalipse 18:2",
+   "text": "E exclamou em alta voz, dizendo: Caiu! Caiu a grande Babilônia, e se tornou morada de demônios, covil de toda espécie de espírito imundo e esconderijo de todo gênero de ave imunda e detestável."
+  },
+  {
+   "ref": "Apocalipse 18:3",
+   "text": "Porque todas as nações beberam do vinho do furor de sua prostituição, e os reis da terra se prostituíram com ela e os mercadores da terra se enriqueceram à custa de sua luxúria."
+  },
+  {
+   "ref": "Apocalipse 18:4",
+   "text": "Ouvi outra voz do céu, dizendo: \"Retirai-vos dela, povo meu, para que não sejais cúmplices de seus pecados e para que não participeis de suas pragas.\""
+  },
+  {
+   "ref": "Apocalipse 18:5",
+   "text": "Porque os seus pecados se acumularam até ao céu, e Deus se lembrou dos atos iníquos que ela cometeu."
+  },
+  {
+   "ref": "Apocalipse 18:6",
+   "text": "Deem a ela o que ela também deu a vocês, e retribuam-lhe em dobro conforme as suas obras; no cálice em que ela misturou bebidas, misturem para ela o dobro."
+  },
+  {
+   "ref": "Apocalipse 18:7",
+   "text": "Quanto mais ela se glorificou e se entregou às luxúrias tanto mais receberá de tormento e pranto; pois diz em seu coração: Estou assentada como rainha, não sou viúva e nunca verei o pranto."
+  }
+ ]
+}
+</cena>

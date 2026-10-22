@@ -1,0 +1,59 @@
+Escreva a cena "rm-03-vida-espirito" da trilha "romanos" (Romanos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "romanos",
+  "title": "Romanos",
+  "description": "O evangelho da justiça de Deus — pecado, graça e nova vida.",
+  "realm": "novo-testamento"
+ },
+ "block": "Romanos",
+ "mission": {
+  "slug": "rm-03-vida-espirito",
+  "title": "Nova vida no Espírito",
+  "type": "lesson",
+  "intro": "Unidos a Cristo, os cristãos morrem para o domínio do pecado e vivem pelo Espírito.",
+  "hookRef": "Nova vida no Espírito",
+  "hookNote": "Unidos a Cristo, os cristãos morrem para o domínio do pecado e vivem pelo Espírito.",
+  "centralInsight": "Paulo instrui a igreja em Romanos 6-8 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+  "objective": "Romanos 6-8"
+ },
+ "v2": {
+  "passageRef": "Nova vida no Espírito",
+  "context": "Unidos a Cristo, os cristãos morrem para o domínio do pecado e vivem pelo Espírito.",
+  "keyword": "Nova",
+  "verseRefs": [
+   "Romanos 8:1–2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 8:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 8:1",
+   "text": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito."
+  },
+  {
+   "ref": "Romanos 8:2",
+   "text": "Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte."
+  },
+  {
+   "ref": "Romanos 8:3",
+   "text": "Porque o que era impossível à lei, por estar debilitada pela carne, isso Deus o fez, enviando seu próprio Filho na semelhança da carne pecaminosa e, para que pudesse condenar o pecado na carne, o realizou."
+  },
+  {
+   "ref": "Romanos 8:4",
+   "text": "Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o Espírito."
+  },
+  {
+   "ref": "Romanos 8:5",
+   "text": "Pois aqueles que se inclinam para a carne cogitam das coisas da carne; mas aqueles que se inclinam para o Espírito, das coisas do Espírito."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,67 @@
+Escreva a cena "apo-04-visao" da trilha "apocalipse" (Apocalipse).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "apocalipse",
+  "title": "Apocalipse",
+  "description": "Revelação de Jesus: cartas, trono, conflito e nova criação.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cartas e trono",
+ "mission": {
+  "slug": "apo-04-visao",
+  "title": "O Filho do Homem",
+  "type": "lesson",
+  "intro": "João vê Jesus glorioso no meio dos candeeiros: o Senhor da igreja.",
+  "hookRef": "Apocalipse 1:17–18",
+  "hookNote": "Antes das cartas, a visão do Filho do Homem estabelece quem fala. Jesus caminha entre os candeeiros (igrejas). A glória assusta; a palavra…",
+  "centralInsight": "Cristo no meio da igreja",
+  "objective": "Quando penso no futuro, vejo primeiro o medo — ou o Cristo vivo?"
+ },
+ "v2": {
+  "passageRef": "Apocalipse 1:17–18",
+  "context": "Antes das cartas, a visão do Filho do Homem estabelece quem fala. Jesus caminha entre os candeeiros (igrejas). A glória assusta; a palavra “não temas” e a cruz/ressurreição consolam. Apocalipse não começa com o anticristo — começa com Cristo vivo e soberano sobre a igreja e sobre a morte.",
+  "keyword": "Filho do Homem",
+  "verseRefs": [
+   "Apocalipse 1:17–18"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Apocalipse 1:14–20"
+ ],
+ "verses": [
+  {
+   "ref": "Apocalipse 1:14",
+   "text": "E a sua cabeça e cabelos eram brancos como lã alva, como a neve; e os seus olhos eram como chamas de fogo."
+  },
+  {
+   "ref": "Apocalipse 1:15",
+   "text": "E seus pés eram semelhantes a bronze polido, como se tivessem sido refinados numa fornalha; e sua voz era como a de muitas águas."
+  },
+  {
+   "ref": "Apocalipse 1:16",
+   "text": "E tinha na mão direita sete estrelas; e da boca saía-lhe uma afiada espada de dois gumes; e o seu rosto brilhava como o sol na sua força."
+  },
+  {
+   "ref": "Apocalipse 1:17",
+   "text": "E eu, quando o vi, caí aos seus pés como morto; porém ele pôs sobre mim a mão direita, dizendo-me: Não temas; eu sou o primeiro e o último;"
+  },
+  {
+   "ref": "Apocalipse 1:18",
+   "text": "E eu sou aquele que vive; estive morto, mas eis que estou vivo para todos os séculos. Amém! E tenho as chaves da morte e do inferno."
+  },
+  {
+   "ref": "Apocalipse 1:19",
+   "text": "Escreva, pois, as coisas que você viu, e as que são, e as que hão de ocorrer depois destas."
+  },
+  {
+   "ref": "Apocalipse 1:20",
+   "text": "O mistério das sete estrelas que você viu na minha mão direita e dos sete candeeiros de ouro: as sete estrelas são os anjos das sete igrejas, e os sete candeeiros que você viu representam as sete igrejas."
+  }
+ ]
+}
+</cena>

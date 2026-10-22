@@ -1,0 +1,902 @@
+{
+  "study": {
+    "slug": "sm-06-misericordiosos",
+    "passageRef": "Mateus 5:6–7",
+    "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+    "passages": [
+      {
+        "ref": "Mateus 5:6–7",
+        "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+      },
+      {
+        "ref": "Mateus 5:8–10",
+        "text": "Bem-aventurados os puros de coração, pois verão a Deus. Bem-aventurados os pacificadores, porque serão chamados filhos de Deus. Bem-aventurados os que são perseguidos por causa da justiça, porque deles é o reino dos céus."
+      }
+    ],
+    "context": "Jesus abençoa os misericordiosos depois dos famintos de justiça. Quem foi alcançado pela graça de Deus aprende a oferecer graça a quem erra e a quem sofre.",
+    "keyword": "Misericórdia",
+    "keywordGloss": "Compaixão que age em favor de quem sofre ou errou, em vez de apenas condenar.",
+    "focusQuestion": "Existe alguém que Deus está chamando você a perdoar ou ajudar hoje?",
+    "reflectionPrompts": [
+      "Oferecer graça recebida",
+      "Perdoar quem errou",
+      "Ajudar quem sofre"
+    ],
+    "facts": [
+      {
+        "text": "Os famintos de justiça serão fartos.",
+        "evidenceRef": "Mateus 5:6",
+        "evidenceSpan": "pois serão fartos"
+      },
+      {
+        "text": "Os misericordiosos são bem-aventurados.",
+        "evidenceRef": "Mateus 5:7",
+        "evidenceSpan": "Bem-aventurados os misericordiosos"
+      },
+      {
+        "text": "Os misericordiosos alcançarão misericórdia.",
+        "evidenceRef": "Mateus 5:7",
+        "evidenceSpan": "alcançarão misericórdia"
+      },
+      {
+        "text": "Os puros de coração verão a Deus.",
+        "evidenceRef": "Mateus 5:8",
+        "evidenceSpan": "pois verão a Deus"
+      },
+      {
+        "text": "Dos perseguidos por justiça é o reino dos céus.",
+        "evidenceRef": "Mateus 5:10",
+        "evidenceSpan": "deles é o reino dos céus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "misericordiosos",
+        "gloss": "Quem trata o outro com a compaixão que recebeu de Deus."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "Favor de Deus a quem não merece, que alcança quem também o oferece."
+      },
+      {
+        "term": "coração",
+        "gloss": "O interior da pessoa, onde Deus olha e transforma primeiro."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fome de justiça saciada por Deus",
+        "evidenceRef": "Mateus 5:6"
+      },
+      {
+        "label": "Bênção aos misericordiosos",
+        "evidenceRef": "Mateus 5:7"
+      },
+      {
+        "label": "Promessa de misericórdia recebida",
+        "evidenceRef": "Mateus 5:7"
+      },
+      {
+        "label": "Pureza de coração que vê Deus",
+        "evidenceRef": "Mateus 5:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Quem oferece misericórdia alcançará misericórdia de Deus.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 5:7"
+      },
+      {
+        "kind": "sequência",
+        "text": "Fome de justiça e misericórdia se sucedem no caráter do discípulo.",
+        "marker": null,
+        "evidenceRef": "Mateus 5:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 6:14",
+        "bridge": "Perdão dado e recebido",
+        "text": "Porque, se vocês perdoarem as ofensas dos homens, também o Pai celestial perdoará vocês."
+      },
+      {
+        "ref": "Lucas 6:36",
+        "bridge": "Misericórdia como a do Pai",
+        "text": "Sejam, pois, misericordiosos, assim como o Pai de vocês também é misericordioso."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Misericórdia é fraqueza que deixa o mal sem resposta.",
+        "why": "Jesus a coloca no coração do Reino; ela age pelo outro, não ignora o mal."
+      },
+      {
+        "text": "Alcançar misericórdia é pagamento por boas ações feitas.",
+        "why": "No Sermão, quem oferece graça é quem já vive sob a graça do Pai (6:14)."
+      },
+      {
+        "text": "Só merece misericórdia quem primeiro se conserta sozinho.",
+        "why": "A lógica de Jesus alcança quem errou; o Pai perdoa quem pede (6:12)."
+      }
+    ],
+    "centralInsight": "Quem foi alcançado pela graça aprende a oferecer graça",
+    "anchorQuestion": "O que Jesus promete aos misericordiosos em Mateus 5:7?",
+    "relatedVerses": [
+      {
+        "reference": "Mateus 6:14",
+        "reason": "Perdão dado e recebido"
+      },
+      {
+        "reference": "Lucas 6:36",
+        "reason": "Misericórdia como a do Pai"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "sermao-do-monte-sem-sm-06-misericordiosos-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Mateus 5:7, Jesus promete misericórdia aos misericordiosos",
+      "prompt": "Em Mateus 5:7, Jesus promete misericórdia aos misericordiosos",
+      "cue": "Em Mateus 5:7, Jesus promete misericórdia aos misericordiosos",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "Quem vive oferecendo graça também será alcançado pela graça de Deus.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 5:7: a promessa é alcançar misericórdia."
+      },
+      "hint": "Olhe a promessa no fim do versículo.",
+      "learningObjective": "Observar a promessa de Mateus 5:7.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-06-misericordiosos-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Mateus 5:7, toque quem Jesus chama de bem-aventurados.",
+      "prompt": "Em Mateus 5:7, toque quem Jesus chama de bem-aventurados.",
+      "cue": "Em Mateus 5:7, toque quem Jesus chama de bem-aventurados.",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "os misericordiosos"
+        },
+        {
+          "id": "c",
+          "text": "Bem-aventurados"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Bem-aventurados os misericordiosos",
+      "feedbackCorrect": "Jesus abençoa quem trata as pessoas com compaixão ativa.",
+      "feedbackWrong": {
+        "a": "Isso é o que eles alcançarão, não quem eles são.",
+        "c": "Isso é a declaração, não o grupo abençoado."
+      },
+      "hint": "Procure o grupo logo após a declaração inicial.",
+      "learningObjective": "Identificar os abençoados de Mateus 5:7.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-06-misericordiosos-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Mateus 5:7, o que os misericordiosos alcançarão?",
+      "prompt": "Segundo Mateus 5:7, o que os misericordiosos alcançarão?",
+      "cue": "Segundo Mateus 5:7, o que os misericordiosos alcançarão?",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Herdarão a terra"
+        },
+        {
+          "id": "c",
+          "text": "Serão fartos de justiça"
+        },
+        {
+          "id": "d",
+          "text": "Serão chamados filhos de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "A promessa combina com o traço: misericórdia para os misericordiosos.",
+      "feedbackWrong": {
+        "b": "Herdar a terra é promessa aos mansos (5:5).",
+        "c": "Ser farto é promessa aos famintos de justiça (5:6).",
+        "d": "Filhos de Deus é promessa aos pacificadores (5:9)."
+      },
+      "hint": "Cada bem-aventurança tem promessa própria.",
+      "learningObjective": "Observar a promessa de Mateus 5:7.",
+      "evidence": [
+        "Mateus 5:6–7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-06-misericordiosos-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Mateus 5:7 na ordem do texto.",
+      "prompt": "Monte Mateus 5:7 na ordem do texto.",
+      "cue": "Monte Mateus 5:7 na ordem do texto.",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os misericordiosos"
+        },
+        {
+          "id": "b",
+          "text": "porque alcançarão"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "porque alcançarão misericórdia",
+      "feedbackCorrect": "Traço abençoado e promessa correspondente, na ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Comece pelo grupo abençoado; a promessa fecha."
+      },
+      "hint": "A promessa vem depois da palavra porque.",
+      "learningObjective": "Reconhecer a sequência de Mateus 5:7.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-06-misericordiosos-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Mateus 5:7, o que os misericordiosos alcançarão de Deus?",
+      "prompt": "Em Mateus 5:7, o que os misericordiosos alcançarão de Deus?",
+      "cue": "Em Mateus 5:7, o que os misericordiosos alcançarão de Deus?",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "template": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vingança"
+        },
+        {
+          "id": "b",
+          "text": "misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "riqueza"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "Deus alcança com graça quem aprendeu a viver com graça para os outros.",
+      "feedbackWrong": {
+        "a": "A resposta de Deus aqui é graça, não vingança.",
+        "c": "A promessa é relacional, não acúmulo de bens."
+      },
+      "hint": "É o mesmo nome da qualidade abençoada.",
+      "learningObjective": "Lembrar a promessa aos misericordiosos.",
+      "evidence": [
+        "Mateus 5:6–7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-06-misericordiosos-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Mateus 5:7 comunica que se liga a este contexto?",
+      "prompt": "O que Mateus 5:7 comunica que se liga a este contexto?",
+      "cue": "O que Mateus 5:7 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "passageA": {
+        "ref": "Mateus 5:7",
+        "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem foi alcançado pela graça de Deus aprende a oferecer graça às pessoas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Perdão é sinal de fraqueza"
+        },
+        {
+          "id": "b",
+          "text": "Graça só para receber"
+        },
+        {
+          "id": "c",
+          "text": "Graça recebida vira graça dada"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os misericordiosos",
+      "feedbackCorrect": "No Reino, a misericórdia recebida se transforma em misericórdia praticada.",
+      "feedbackWrong": {
+        "a": "Jesus coloca essa prática entre as bem-aventuranças.",
+        "b": "Jesus abençoa quem oferece, não só quem recebe."
+      },
+      "hint": "Pense no movimento de receber e depois oferecer.",
+      "learningObjective": "Ligar misericórdia recebida e misericórdia praticada.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-06-misericordiosos-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Mateus 5:7, alcançar misericórdia é pagamento que Deus deve a quem fez o bem",
+      "prompt": "Em Mateus 5:7, alcançar misericórdia é pagamento que Deus deve a quem fez o bem",
+      "cue": "Em Mateus 5:7, alcançar misericórdia é pagamento que Deus deve a quem fez o bem",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "É promessa do Pai a quem vive a graça, não salário que Deus deva pagar.",
+      "feedbackWrong": {
+        "true": "O tom do Sermão é de dom do Pai, não de dívida comercial."
+      },
+      "hint": "Pense em presente do Pai, não em fatura.",
+      "learningObjective": "Compreender a misericórdia como dom prometido.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-06-misericordiosos-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Mateus 5:7, toque a palavra que liga o traço abençoado à promessa.",
+      "prompt": "Em Mateus 5:7, toque a palavra que liga o traço abençoado à promessa.",
+      "cue": "Em Mateus 5:7, toque a palavra que liga o traço abençoado à promessa.",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "alcançarão"
+        },
+        {
+          "id": "b",
+          "text": "os"
+        },
+        {
+          "id": "c",
+          "text": "porque"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "porque alcançarão misericórdia",
+      "feedbackCorrect": "Essa ligação mostra que Deus responde ao coração misericordioso.",
+      "feedbackWrong": {
+        "a": "Isso é o verbo da promessa, não a ligação lógica.",
+        "b": "Isso só introduz o grupo abençoado na frase."
+      },
+      "hint": "Procure a palavra curta depois da vírgula.",
+      "learningObjective": "Reconhecer o marcador de motivo em 5:7.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-06-misericordiosos-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Mateus 5:7 se relaciona com Mateus 5:6 no caráter do discípulo?",
+      "prompt": "Como Mateus 5:7 se relaciona com Mateus 5:6 no caráter do discípulo?",
+      "cue": "Como Mateus 5:7 se relaciona com Mateus 5:6 no caráter do discípulo?",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promete graça só a quem nunca ofendeu ninguém"
+        },
+        {
+          "id": "b",
+          "text": "Encerra o ensino sobre o coração do Reino"
+        },
+        {
+          "id": "c",
+          "text": "Mostra que faminto de justiça também oferece graça"
+        },
+        {
+          "id": "d",
+          "text": "Troca a justiça pela indiferença com o mal"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os misericordiosos",
+      "feedbackCorrect": "Quem deseja a justiça de Deus não endurece: aprende a tratar pessoas com graça.",
+      "feedbackWrong": {
+        "a": "A graça de Deus alcança justamente quem errou e pede.",
+        "b": "O retrato continua em 5:8 e 5:9.",
+        "d": "Misericórdia age pelo outro; não é indiferença com o mal."
+      },
+      "hint": "Veja justiça e graça como traços do mesmo coração.",
+      "learningObjective": "Relacionar fome de justiça e misericórdia.",
+      "evidence": [
+        "Mateus 5:6–7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-06-misericordiosos-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o retrato de Mateus 5:6 a 5:8?",
+      "prompt": "Como avança o retrato de Mateus 5:6 a 5:8?",
+      "cue": "Como avança o retrato de Mateus 5:6 a 5:8?",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fome de justiça será farta"
+        },
+        {
+          "id": "b",
+          "text": "Misericórdia será alcançada"
+        },
+        {
+          "id": "c",
+          "text": "Pureza de coração verá Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "Desejo, compaixão e pureza: o Reino forma o coração por inteiro.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos versículos 6, 7 e 8."
+      },
+      "hint": "Acompanhe a sequência das promessas.",
+      "learningObjective": "Compreender a progressão do caráter do Reino.",
+      "evidence": [
+        "Mateus 5:6–7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-06-misericordiosos-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Mateus 5:8, o que os puros de coração farão diante de Deus?",
+      "prompt": "Em Mateus 5:8, o que os puros de coração farão diante de Deus?",
+      "cue": "Em Mateus 5:8, o que os puros de coração farão diante de Deus?",
+      "verseRef": "Mateus 5:8",
+      "passageText": "Bem-aventurados os puros de coração, pois verão a Deus.",
+      "template": "Bem-aventurados os puros de coração, pois ___ a Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouvirão"
+        },
+        {
+          "id": "b",
+          "text": "verão"
+        },
+        {
+          "id": "c",
+          "text": "tocarão"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "pois verão a Deus",
+      "feedbackCorrect": "Depois da misericórdia, Jesus promete que corações puros verão a Deus.",
+      "feedbackWrong": {
+        "a": "O verbo da promessa fala de contemplar, não só ouvir.",
+        "c": "A promessa usa a imagem de ver a Deus face a face."
+      },
+      "hint": "Pense no sentido ligado a contemplar alguém.",
+      "learningObjective": "Relacionar misericórdia e pureza de coração.",
+      "evidence": [
+        "Mateus 5:8"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-06-misericordiosos-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Mateus 5:7 a Mateus 6:14?",
+      "prompt": "O que liga Mateus 5:7 a Mateus 6:14?",
+      "cue": "O que liga Mateus 5:7 a Mateus 6:14?",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "passageA": {
+        "ref": "Mateus 5:7",
+        "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+      },
+      "passageB": {
+        "ref": "Mateus 6:14",
+        "text": "Porque, se vocês perdoarem as ofensas dos homens, também o Pai celestial perdoará vocês."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Perdão guarda a ofensa"
+        },
+        {
+          "id": "b",
+          "text": "Graça só para os perfeitos"
+        },
+        {
+          "id": "c",
+          "text": "Perdão dado e recebido"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os misericordiosos",
+      "feedbackCorrect": "No Pai Nosso, Jesus retoma o fio: quem perdoa é perdoado pelo Pai.",
+      "feedbackWrong": {
+        "a": "Guardar ofensa é o caminho contrário ao de 6:14.",
+        "b": "O Pai perdoa quem reconhece a dívida e perdoa (6:12)."
+      },
+      "hint": "Veja o que acontece com quem perdoa em 6:14.",
+      "learningObjective": "Relacionar misericórdia abençoada e perdão no Sermão.",
+      "evidence": [
+        "Mateus 5:7",
+        "Mateus 6:14"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-06-misericordiosos-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Mateus 5:7 coloca a misericórdia no coração do Reino, e não como fraqueza opcional",
+      "prompt": "Mateus 5:7 coloca a misericórdia no coração do Reino, e não como fraqueza opcional",
+      "cue": "Mateus 5:7 coloca a misericórdia no coração do Reino, e não como fraqueza opcional",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Bem-aventurados os misericordiosos",
+      "feedbackCorrect": "Jesus declara felizes os misericordiosos: isso é identidade do Reino.",
+      "feedbackWrong": {
+        "false": "Se fosse opcional, não estaria entre as bem-aventuranças."
+      },
+      "hint": "Veja a lista onde Jesus coloca essa prática.",
+      "learningObjective": "Interpretar misericórdia como marca do Reino.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-06-misericordiosos-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Mateus 5:7, toque o trecho que mostra a resposta futura de Deus.",
+      "prompt": "Em Mateus 5:7, toque o trecho que mostra a resposta futura de Deus.",
+      "cue": "Em Mateus 5:7, toque o trecho que mostra a resposta futura de Deus.",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "alcançarão misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Bem-aventurados"
+        },
+        {
+          "id": "c",
+          "text": "os misericordiosos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "A esperança de quem oferece graça está no que Deus fará por ele.",
+      "feedbackWrong": {
+        "b": "Isso declara a bênção, não a promessa futura.",
+        "c": "Isso nomeia quem pratica, não a resposta de Deus."
+      },
+      "hint": "Procure o verbo no futuro no fim da frase.",
+      "learningObjective": "Sustentar no texto a promessa aos misericordiosos.",
+      "evidence": [
+        "Mateus 5:6–7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-06-misericordiosos-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Mateus 5:7 sustenta sobre quem oferece misericórdia?",
+      "prompt": "Que leitura Mateus 5:7 sustenta sobre quem oferece misericórdia?",
+      "cue": "Que leitura Mateus 5:7 sustenta sobre quem oferece misericórdia?",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele nunca mais precisará da graça de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ele deve perdoar só quem já se consertou"
+        },
+        {
+          "id": "c",
+          "text": "Ele compra o perdão de Deus com boas ações"
+        },
+        {
+          "id": "d",
+          "text": "Ele vive da graça e por isso oferece graça"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "os misericordiosos",
+      "feedbackCorrect": "No Sermão, oferecer graça é fruto de quem vive sob o Pai gracioso.",
+      "feedbackWrong": {
+        "a": "Quem oferece continua alcançado pela misericórdia dele.",
+        "b": "A graça alcança quem errou, antes do conserto completo.",
+        "c": "Perdão é dom do Pai (6:12), não compra com méritos."
+      },
+      "hint": "Pense em fruto de uma vida, não em pagamento.",
+      "learningObjective": "Escolher a interpretação sustentada por 5:7.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-06-misericordiosos-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o fio da misericórdia no Sermão?",
+      "prompt": "Qual sequência revela o fio da misericórdia no Sermão?",
+      "cue": "Qual sequência revela o fio da misericórdia no Sermão?",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericordiosos são abençoados no monte"
+        },
+        {
+          "id": "b",
+          "text": "Discípulo pede perdão ao Pai no Pai Nosso"
+        },
+        {
+          "id": "c",
+          "text": "Quem perdoa também é perdoado pelo Pai"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "Da bênção do monte à oração ensinada: graça recebida e graça oferecida.",
+      "feedbackWrong": {
+        "default": "Siga Mateus 5:7, depois 6:12 e então 6:14."
+      },
+      "hint": "O último passo explica o pedido do Pai Nosso.",
+      "learningObjective": "Ver a misericórdia como fio dentro do Sermão.",
+      "evidence": [
+        "Mateus 5:7",
+        "Mateus 6:12",
+        "Mateus 6:14"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-06-misericordiosos-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Mateus 5:9, como Deus chamará os pacificadores?",
+      "prompt": "Em Mateus 5:9, como Deus chamará os pacificadores?",
+      "cue": "Em Mateus 5:9, como Deus chamará os pacificadores?",
+      "verseRef": "Mateus 5:9",
+      "passageText": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus.",
+      "template": "Bem-aventurados os pacificadores, porque serão chamados ___ de Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "filhos"
+        },
+        {
+          "id": "b",
+          "text": "reis"
+        },
+        {
+          "id": "c",
+          "text": "juízes"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "serão chamados filhos de Deus",
+      "feedbackCorrect": "Quem semeia misericórdia e paz recebe de Deus o nome de filho.",
+      "feedbackWrong": {
+        "b": "O nome prometido é de família, não de trono político.",
+        "c": "Pacificadores reconciliam; não são exaltados como juízes."
+      },
+      "hint": "Pense no nome de família dado por Deus.",
+      "learningObjective": "Lembrar o nome dado aos pacificadores.",
+      "evidence": [
+        "Mateus 5:9"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-06-misericordiosos-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-06-misericordiosos",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Mateus 5:7 a Lucas 6:36?",
+      "prompt": "O que liga Mateus 5:7 a Lucas 6:36?",
+      "cue": "O que liga Mateus 5:7 a Lucas 6:36?",
+      "verseRef": "Mateus 5:6–7",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "passageA": {
+        "ref": "Mateus 5:7",
+        "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+      },
+      "passageB": {
+        "ref": "Lucas 6:36",
+        "text": "Sejam, pois, misericordiosos, assim como o Pai de vocês também é misericordioso."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Graça só para a família"
+        },
+        {
+          "id": "b",
+          "text": "Misericórdia como a do Pai"
+        },
+        {
+          "id": "c",
+          "text": "Dureza como a dos juízes"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "os misericordiosos",
+      "feedbackCorrect": "Lucas resume Jesus: sejam misericordiosos como o Pai é misericordioso.",
+      "feedbackWrong": {
+        "a": "A misericórdia do Pai alcança também inimigos (5:44–45).",
+        "c": "O padrão apresentado é o Pai gracioso, não a dureza."
+      },
+      "hint": "Veja o padrão de misericórdia citado por Lucas.",
+      "learningObjective": "Ligar a misericórdia do discípulo à do Pai.",
+      "evidence": [
+        "Mateus 5:6–7",
+        "Lucas 6:36"
+      ]
+    }
+  ]
+}

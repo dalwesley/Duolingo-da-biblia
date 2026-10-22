@@ -1,0 +1,80 @@
+Escreva a cena "jonas-ninive-01-a-cidade-se-arrepend" da trilha "jonas" (Jonas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "jonas",
+  "title": "Jonas",
+  "description": "Profeta em fuga — misericórdia até para Nínive.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Nínive",
+ "mission": {
+  "slug": "jonas-ninive-01-a-cidade-se-arrepend",
+  "title": "A cidade se arrepende",
+  "type": "lesson",
+  "intro": "Misericórdia que incomoda.",
+  "hookRef": "Jonas 3",
+  "hookNote": "Misericórdia que incomoda.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre cidade?"
+ },
+ "v2": {
+  "passageRef": "Jonas 3",
+  "context": "Misericórdia que incomoda.",
+  "keyword": "Cidade",
+  "verseRefs": [
+   "Jonas 3:5"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Jonas 3:1–10",
+  "Jonas 3:5"
+ ],
+ "verses": [
+  {
+   "ref": "Jonas 3:1",
+   "text": "E a palavra do Senhor veio a Jonas pela segunda vez, dizendo:"
+  },
+  {
+   "ref": "Jonas 3:2",
+   "text": "Levante-se, vá à grande cidade de Nínive e anuncie contra ela a mensagem que eu te ordeno."
+  },
+  {
+   "ref": "Jonas 3:3",
+   "text": "Jonas se levantou e foi a Nínive, conforme a palavra do Senhor. Nínive era uma cidade muito importante diante de Deus e levava três dias para percorrê-la."
+  },
+  {
+   "ref": "Jonas 3:4",
+   "text": "Jonas começou a entrar na cidade, percorrendo um dia de caminho, e pregava: \"Ainda quarenta dias, e Nínive será subvertida.\""
+  },
+  {
+   "ref": "Jonas 3:5",
+   "text": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor."
+  },
+  {
+   "ref": "Jonas 3:6",
+   "text": "A notícia chegou ao rei de Nínive, e ele se levantou do seu trono, retirou as vestes reais, cobriu-se com pano de saco e sentou-se sobre cinzas."
+  },
+  {
+   "ref": "Jonas 3:7",
+   "text": "E fez-se proclamar em Nínive, por mandado do rei e de seus grandes, que nem homens, nem animais, nem bois, nem ovelhas provem coisa alguma; nem a eles se dê pasto, nem bebam água."
+  },
+  {
+   "ref": "Jonas 3:8",
+   "text": "Mas os homens e os animais se cobrirão de pano de saco e clamarão fortemente a Deus; e cada um se converterá de seu mau caminho e da violência que está em suas mãos."
+  },
+  {
+   "ref": "Jonas 3:9",
+   "text": "Quem sabe se Deus voltará para nós, se se arrependerá e afastará seu grande furor de forma que não sejamos destruídos?"
+  },
+  {
+   "ref": "Jonas 3:10",
+   "text": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez."
+  }
+ ]
+}
+</cena>

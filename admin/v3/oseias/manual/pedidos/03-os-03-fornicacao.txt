@@ -1,0 +1,59 @@
+Escreva a cena "os-03-fornicacao" da trilha "oseias" (Oséias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "oseias",
+  "title": "Oséias",
+  "description": "Amor fiel de Deus a um povo adúltero.",
+  "realm": "antigo-testamento"
+ },
+ "block": "O pai",
+ "mission": {
+  "slug": "os-03-fornicacao",
+  "title": "Uma mulher de fornicação",
+  "type": "lesson",
+  "intro": "Jeová manda Oseias tomar uma mulher infiel. O casamento vira espelho da terra que se aparta.",
+  "hookRef": "Oséias 1:2",
+  "hookNote": "O profeta não observa de fora. A dor do adultério entra na casa dele.",
+  "centralInsight": "Infidelidade a Deus é adultério",
+  "objective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová."
+ },
+ "v2": {
+  "passageRef": "Oséias 1:2",
+  "context": "Jeová manda Oseias tomar mulher de fornicação porque a terra se aparta dele.",
+  "keyword": "Adultério",
+  "verseRefs": [
+   "Oséias 1:2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Oseias 1:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Oseias 1:1",
+   "text": "A palavra do Senhor que foi dirigida a Oséias, filho de Beeri, nos dias de Uzias, Jotão, Acaz e Ezequias, reis de Judá, e nos dias de Jeroboão, filho de Joás, rei de Israel."
+  },
+  {
+   "ref": "Oseias 1:2",
+   "text": "No início da palavra do Senhor por meio do profeta Oséias, o Senhor lhe disse: \"Vai, toma uma mulher de prostituições, e terás filhos de prostituição; pois a terra se prostituiu, desviando-se do Senhor.\""
+  },
+  {
+   "ref": "Oseias 1:3",
+   "text": "E partiu, e tomou Gômer, filha de Diblaim, e ela concebeu e deu à luz um filho."
+  },
+  {
+   "ref": "Oseias 1:4",
+   "text": "E disse o Senhor: Põe-lhe o nome de Jezreel, pois em breve visitarei o sangue de Jezreel sobre a casa de Jeú e farei cessar o reino da casa de Israel."
+  },
+  {
+   "ref": "Oseias 1:5",
+   "text": "Naquele dia, quebrarei o arco de Israel no vale de Jezreel."
+  }
+ ]
+}
+</cena>

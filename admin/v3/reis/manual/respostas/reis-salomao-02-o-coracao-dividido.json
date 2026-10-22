@@ -1,0 +1,321 @@
+{
+ "study": {
+  "passageRef": "1 Reis 12:28–30",
+  "passages": [{"ref": "1 Reis 12:28–30"}, {"ref": "1 Reis 11:4"}, {"ref": "1 Reis 12:31–33"}],
+  "context": "Salomão envelhece com o coração desviado por suas mulheres para outros deuses. Depois dele, Jeroboão teme perder o reino do norte e cria um culto próprio, com bezerros, sacerdotes e festa inventados por ele.",
+  "keyword": "Coração",
+  "keywordGloss": "No texto, o coração é o centro da fidelidade, quando se desvia do Senhor, todo o culto se corrompe.",
+  "focusQuestion": "O que hoje disputa o seu coração e tenta dividi-lo entre Deus e outro senhor?",
+  "reflectionPrompts": ["Coração não dividido", "Medo que gera idolatria", "Culto inventado pelo homem"],
+  "facts": [
+   {"text": "Na velhice de Salomão, suas mulheres desviaram o coração dele para outros deuses.", "evidenceRef": "1 Reis 11:4", "evidenceSpan": "suas mulheres lhe desviaram o coração para seguir outros deuses"},
+   {"text": "O coração de Salomão não era completamente fiel ao Senhor, como o de Davi.", "evidenceRef": "1 Reis 11:4", "evidenceSpan": "o seu coração não era completamente fiel ao Senhor"},
+   {"text": "Jeroboão fez dois bezerros de ouro e os apresentou como deuses de Israel.", "evidenceRef": "1 Reis 12:28", "evidenceSpan": "fez dois bezerros de ouro"},
+   {"text": "Um bezerro foi colocado em Betel e o outro em Dã.", "evidenceRef": "1 Reis 12:29", "evidenceSpan": "Colocou um em Betel e o outro em Dã"},
+   {"text": "O ato de Jeroboão se tornou um pecado para o povo.", "evidenceRef": "1 Reis 12:30", "evidenceSpan": "esse ato se tornou um pecado"},
+   {"text": "Jeroboão constituiu sacerdotes que não eram dos filhos de Levi.", "evidenceRef": "1 Reis 12:31", "evidenceSpan": "sacerdotes que não eram dos filhos de Levi"}
+  ],
+  "keyTerms": [
+   {"term": "coração", "gloss": "Centro da fidelidade a Deus, que pode ser desviado para outros deuses."},
+   {"term": "bezerros", "gloss": "Imagens de ouro apresentadas por Jeroboão como deuses de Israel."},
+   {"term": "pecado", "gloss": "Nome que o texto dá ao culto criado por Jeroboão em Betel e Dã."}
+  ],
+  "structure": [
+   {"label": "O rei teme perder o reino", "evidenceRef": "1 Reis 12:26"},
+   {"label": "Bezerros erguidos em Betel e Dã", "evidenceRef": "1 Reis 12:29"},
+   {"label": "Sacerdotes e festa criados pelo rei", "evidenceRef": "1 Reis 12:32"},
+   {"label": "O coração de Salomão já desviado", "evidenceRef": "1 Reis 11:4"}
+  ],
+  "relations": [
+   {"kind": "causa", "text": "Por temer perder o reino, Jeroboão toma conselho e faz os dois bezerros de ouro.", "marker": "Pelo que", "evidenceRef": "1 Reis 12:28"},
+   {"kind": "resultado", "text": "O culto inventado por Jeroboão resulta em pecado para todo o povo que vai adorar.", "marker": "se tornou", "evidenceRef": "1 Reis 12:30"},
+   {"kind": "contraste", "text": "Os sacerdotes de Jeroboão contrastam com a ordem de Deus, pois não eram dos filhos de Levi.", "marker": "não", "evidenceRef": "1 Reis 12:31"}
+  ],
+  "crossRefs": [
+   {"ref": "Êxodo 32:4", "bridge": "Bezerro chamado de deus libertador"},
+   {"ref": "Mateus 6:24", "bridge": "Coração não serve dois senhores"}
+  ],
+  "misreadings": [
+   {"text": "Jeroboão só queria facilitar a vida religiosa do povo do norte.", "why": "O texto mostra o motivo dele antes, o medo de o reino voltar à casa de Davi e de o povo o matar."},
+   {"text": "Os bezerros eram uma forma legítima de adorar ao Senhor.", "why": "O texto chama o ato de pecado e mostra sacerdotes e festa fora do que Deus ordenou."},
+   {"text": "A divisão de Israel começou apenas com a política de Jeroboão.", "why": "Antes, o coração de Salomão já não era completamente fiel ao Senhor, como o de Davi."}
+  ],
+  "centralInsight": "Um coração dividido inventa um culto para não voltar a Deus",
+  "anchorQuestion": "Por que Jeroboão fez os dois bezerros de ouro em Betel e Dã?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em 1 Reis 12:29, Jeroboão colocou os dois bezerros de ouro juntos na cidade de Betel.",
+   "verseRef": "1 Reis 12:29", "correctOptionId": "false",
+   "evidenceSpan": "Colocou um em Betel e o outro em Dã",
+   "feedbackCorrect": "Os bezerros foram separados, um ficou em Betel e o outro foi para Dã.",
+   "feedbackWrong": {"true": "Releia 12:29, um bezerro ficou em Betel e o outro foi colocado em Dã."},
+   "hint": "Veja os dois lugares citados no versículo.",
+   "learningObjective": "Observar onde Jeroboão colocou os bezerros.",
+   "evidence": ["1 Reis 12:29"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em 1 Reis 12:29, toque a primeira cidade citada onde foi colocado um bezerro.",
+   "verseRef": "1 Reis 12:29",
+   "options": [{"id": "a", "text": "Betel"}, {"id": "b", "text": "Dã"}, {"id": "c", "text": "um"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Colocou um em Betel e o outro em Dã",
+   "feedbackCorrect": "Betel é a primeira cidade citada, o outro bezerro foi colocado em Dã.",
+   "feedbackWrong": {"b": "Dã é a segunda cidade citada, a primeira vem antes dela.", "c": "Essa palavra conta os bezerros, não nomeia a cidade pedida."},
+   "hint": "Leia a ordem das cidades no versículo.",
+   "learningObjective": "Identificar os lugares do novo culto de Jeroboão.",
+   "evidence": ["1 Reis 12:29"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo 1 Reis 12:28, o que Jeroboão fez depois de tomar conselho?",
+   "verseRef": "1 Reis 12:28",
+   "options": [
+    {"id": "a", "text": "Dois bezerros de ouro"},
+    {"id": "b", "text": "Um bezerro de prata"},
+    {"id": "c", "text": "Dois bezerros de bronze"},
+    {"id": "d", "text": "Um altar de pedra"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fez dois bezerros de ouro",
+   "feedbackCorrect": "Jeroboão fez dois bezerros de ouro e os apresentou como deuses de Israel.",
+   "feedbackWrong": {"b": "O material citado é ouro, e são dois bezerros, não um.", "c": "O texto fala de ouro, não de bronze, para os dois bezerros.", "d": "Altares aparecem depois, aqui o rei faz os dois bezerros."},
+   "hint": "Veja o número e o material citados.",
+   "learningObjective": "Observar o objeto criado por Jeroboão.",
+   "evidence": ["1 Reis 12:28"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte 1 Reis 12:28 na ordem do texto.",
+   "verseRef": "1 Reis 12:28",
+   "options": [
+    {"id": "a", "text": "fez dois bezerros de ouro"},
+    {"id": "b", "text": "Já é difícil para vocês subirem a Jerusalém"},
+    {"id": "c", "text": "aqui estão os seus deuses, ó Israel"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "fez dois bezerros de ouro",
+   "feedbackCorrect": "Primeiro o rei faz os bezerros, depois fala da subida e apresenta os bezerros como deuses.",
+   "feedbackWrong": {"default": "Comece pela fabricação dos bezerros, a fala do rei vem depois."},
+   "hint": "A ação do rei vem antes da fala dele.",
+   "learningObjective": "Reconhecer a sequência de 1 Reis 12:28.",
+   "evidence": ["1 Reis 12:28"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em 1 Reis 12:28, de que material Jeroboão fez os dois bezerros?",
+   "verseRef": "1 Reis 12:28",
+   "options": [{"id": "a", "text": "ouro"}, {"id": "b", "text": "prata"}, {"id": "c", "text": "bronze"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "fez dois bezerros de ouro",
+   "feedbackCorrect": "Os bezerros eram de ouro, apresentados ao povo como seus deuses.",
+   "feedbackWrong": {"b": "O texto não fala de prata, os bezerros foram feitos de outro metal.", "c": "Bronze não é o material citado neste versículo."},
+   "hint": "Veja a palavra logo depois de bezerros.",
+   "learningObjective": "Lembrar o material dos bezerros de Jeroboão.",
+   "evidence": ["1 Reis 12:28"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que 1 Reis 12:29 comunica que se liga a este contexto?",
+   "verseRef": "1 Reis 12:29",
+   "passageA": {"ref": "1 Reis 12:29"},
+   "passageB": {"ref": "Contexto", "text": "Jeroboão temia que o povo voltasse a Jerusalém e ao rei de Judá."},
+   "options": [
+    {"id": "a", "text": "Dois altares longe de Jerusalém"},
+    {"id": "b", "text": "Um só templo para todos"},
+    {"id": "c", "text": "Festa na cidade de Jerusalém"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Colocou um em Betel e o outro em Dã",
+   "feedbackCorrect": "Betel e Dã viram centros de culto no norte, longe de Jerusalém.",
+   "feedbackWrong": {"b": "Há dois lugares de culto, não um só templo reunindo o povo.", "c": "A festa nova é em Betel, justamente para não subir a Jerusalém."},
+   "hint": "Veja onde os bezerros foram colocados.",
+   "learningObjective": "Ligar os bezerros ao medo de Jeroboão de perder o povo.",
+   "evidence": ["1 Reis 12:29"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em 1 Reis 12:31, Jeroboão manteve sacerdotes apenas entre os filhos de Levi, como Deus havia ordenado.",
+   "verseRef": "1 Reis 12:31", "correctOptionId": "false",
+   "evidenceSpan": "sacerdotes que não eram dos filhos de Levi",
+   "feedbackCorrect": "Jeroboão tirou sacerdotes dentre todo o povo, sem respeitar os filhos de Levi.",
+   "feedbackWrong": {"true": "Releia 12:31, os sacerdotes escolhidos não eram dos filhos de Levi."},
+   "hint": "Veja de onde vieram os novos sacerdotes.",
+   "learningObjective": "Compreender a ruptura do culto criado por Jeroboão.",
+   "evidence": ["1 Reis 12:31"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em 1 Reis 12:28, toque a expressão que liga o medo do rei à fabricação dos bezerros.",
+   "verseRef": "1 Reis 12:28",
+   "options": [{"id": "a", "text": "Pelo que"}, {"id": "b", "text": "conselho"}, {"id": "c", "text": "dois"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pelo que o rei, tendo tomado conselho, fez dois bezerros de ouro",
+   "feedbackCorrect": "A expressão mostra consequência, por causa do medo o rei faz os bezerros.",
+   "feedbackWrong": {"b": "Conselho é o meio usado pelo rei, não a ligação com o medo anterior.", "c": "Essa palavra conta os bezerros, não liga causa e efeito."},
+   "hint": "Procure o começo do versículo.",
+   "learningObjective": "Reconhecer a ligação de causa em 1 Reis 12:28.",
+   "evidence": ["1 Reis 12:28"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como 1 Reis 12:26–27 explica a criação dos bezerros?",
+   "verseRef": "1 Reis 12:26–27",
+   "options": [
+    {"id": "a", "text": "O medo de perder o reino gerou um culto novo"},
+    {"id": "b", "text": "Deus ordenou um culto mais perto do povo"},
+    {"id": "c", "text": "O povo exigiu bezerros antes de Jerusalém"},
+    {"id": "d", "text": "Roboão autorizou altares no norte do reino"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Agora, o reino retornará à casa de Davi",
+   "feedbackCorrect": "Jeroboão teme que o reino volte a Davi e que o povo o mate, por isso cria outro culto.",
+   "feedbackWrong": {"b": "Nenhuma ordem de Deus aparece, a iniciativa é do medo do rei.", "c": "Quem fala consigo mesmo e decide é Jeroboão, não o povo.", "d": "Roboão é justamente o rei de quem Jeroboão quer se afastar."},
+   "hint": "Leia o que Jeroboão diz a si mesmo.",
+   "learningObjective": "Relacionar o medo de Jeroboão ao culto dos bezerros.",
+   "evidence": ["1 Reis 12:26–27"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o medo de Jeroboão em 1 Reis 12:26–27?",
+   "verseRef": "1 Reis 12:26–27",
+   "options": [
+    {"id": "a", "text": "O rei teme o reino voltar a Davi"},
+    {"id": "b", "text": "O povo subiria a Jerusalém para sacrificar"},
+    {"id": "c", "text": "O coração do povo voltaria a Roboão"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "o coração deles se voltará para Roboão",
+   "feedbackCorrect": "O medo cresce em etapas, perder o reino, o povo subir e o coração voltar a Roboão.",
+   "feedbackWrong": {"default": "Comece pelo medo geral do rei, o coração do povo é o ponto final."},
+   "hint": "O coração do povo é o fim da preocupação.",
+   "learningObjective": "Compreender o encadeamento do medo de Jeroboão.",
+   "evidence": ["1 Reis 12:26–27"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em 1 Reis 12:30, em que se tornou o ato de Jeroboão para o povo?",
+   "verseRef": "1 Reis 12:30",
+   "options": [{"id": "a", "text": "pecado"}, {"id": "b", "text": "festa"}, {"id": "c", "text": "altar"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "esse ato se tornou um pecado",
+   "feedbackCorrect": "O texto julga o ato sem rodeios, aquilo se tornou um pecado para o povo.",
+   "feedbackWrong": {"b": "Festa é o que Jeroboão inventa depois, não o juízo sobre o ato.", "c": "Altar é objeto do culto, o texto dá outro nome ao ato do rei."},
+   "hint": "Veja o juízo que o texto faz do ato.",
+   "learningObjective": "Compreender o juízo do texto sobre o culto de Jeroboão.",
+   "evidence": ["1 Reis 12:30"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga 1 Reis 12:28 a Êxodo 32:4?",
+   "verseRef": "1 Reis 12:28",
+   "passageA": {"ref": "1 Reis 12:28"},
+   "passageB": {"ref": "Êxodo 32:4"},
+   "options": [
+    {"id": "a", "text": "Bezerro chamado de deus libertador"},
+    {"id": "b", "text": "Bezerro aprovado pelo Senhor Deus"},
+    {"id": "c", "text": "Culto fiel sem nenhum ídolo"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "aqui estão os seus deuses, ó Israel",
+   "feedbackCorrect": "Jeroboão repete a cena do deserto, um bezerro apresentado como o deus que tirou Israel do Egito.",
+   "feedbackWrong": {"b": "Nos dois casos o bezerro desvia o povo, não tem aprovação de Deus.", "c": "Há um ídolo no centro dos dois textos, feito para ser adorado."},
+   "hint": "Compare a frase dita diante do bezerro.",
+   "learningObjective": "Relacionar os bezerros de Jeroboão ao bezerro do deserto.",
+   "evidence": ["1 Reis 12:28", "Êxodo 32:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "1 Reis 11:4 mostra que a idolatria nasce de um coração que se desvia do Senhor para seguir outros deuses.",
+   "verseRef": "1 Reis 11:4", "correctOptionId": "true",
+   "evidenceSpan": "suas mulheres lhe desviaram o coração para seguir outros deuses",
+   "feedbackCorrect": "Antes do ato externo, o texto aponta o coração desviado de Salomão para outros deuses.",
+   "feedbackWrong": {"false": "Releia 11:4, o desvio do coração vem antes de seguir outros deuses."},
+   "hint": "Veja a ordem entre coração e deuses no versículo.",
+   "learningObjective": "Interpretar a idolatria como desvio do coração.",
+   "evidence": ["1 Reis 11:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em 1 Reis 11:4, toque o que as mulheres fizeram com o coração de Salomão.",
+   "verseRef": "1 Reis 11:4",
+   "options": [{"id": "a", "text": "desviaram o coração"}, {"id": "b", "text": "outros deuses"}, {"id": "c", "text": "seu pai"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas mulheres lhe desviaram o coração",
+   "feedbackCorrect": "O verbo mostra a ação no coração, ele foi desviado para seguir outros deuses.",
+   "feedbackWrong": {"b": "Outros deuses são o destino do desvio, não a ação sobre o coração.", "c": "O pai, Davi, é o contraste de fidelidade, não quem desvia Salomão."},
+   "hint": "Procure o verbo ligado diretamente ao coração.",
+   "learningObjective": "Sustentar com o texto o desvio do coração de Salomão.",
+   "evidence": ["1 Reis 11:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura 1 Reis 11:4 sustenta sobre a fidelidade a Deus?",
+   "verseRef": "1 Reis 11:4",
+   "options": [
+    {"id": "a", "text": "Um coração dividido deixa de ser fiel"},
+    {"id": "b", "text": "Seguir outros deuses mantém a fidelidade"},
+    {"id": "c", "text": "Davi teve o mesmo coração dividido"},
+    {"id": "d", "text": "Deus não pede fidelidade completa do rei"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o seu coração não era completamente fiel ao Senhor",
+   "feedbackCorrect": "O texto mede Salomão pela fidelidade completa e o contrapõe ao coração de Davi.",
+   "feedbackWrong": {"b": "Seguir outros deuses é justamente o sinal da fidelidade perdida.", "c": "Davi aparece como contraste fiel, não como coração dividido igual.", "d": "A comparação com Davi mostra que fidelidade completa era o esperado."},
+   "hint": "Compare Salomão com Davi no fim do versículo.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre fidelidade.",
+   "evidence": ["1 Reis 11:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho do coração dividido até o culto dividido?",
+   "verseRef": "1 Reis 11:4",
+   "options": [
+    {"id": "a", "text": "Salomão tem o coração desviado"},
+    {"id": "b", "text": "Jeroboão cria um culto alternativo"},
+    {"id": "c", "text": "O povo adora longe de Jerusalém"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "suas mulheres lhe desviaram o coração",
+   "feedbackCorrect": "O coração desviado de Salomão abre caminho para um culto alternativo que afasta o povo.",
+   "feedbackWrong": {"default": "Comece pelo coração de Salomão, o culto de Jeroboão vem depois na história."},
+   "hint": "Siga a história, coração, culto e povo.",
+   "learningObjective": "Ver o coração dividido como raiz do culto dividido.",
+   "evidence": ["1 Reis 11:4", "1 Reis 12:28", "1 Reis 12:30"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em 1 Reis 12:33, conforme o que Jeroboão havia escolhido em seu coração, o que ele ordenou?",
+   "verseRef": "1 Reis 12:33",
+   "options": [{"id": "a", "text": "coração"}, {"id": "b", "text": "altar"}, {"id": "c", "text": "incenso"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "conforme o que havia escolhido em seu coração",
+   "feedbackCorrect": "A festa nasce da escolha do próprio coração do rei, não de uma ordem de Deus.",
+   "feedbackWrong": {"b": "O altar é o lugar do sacrifício, a escolha nasce em outro lugar segundo o texto.", "c": "Incenso é queimado no fim, a decisão vem antes e de dentro do rei."},
+   "hint": "Veja de onde nasce a invenção da festa.",
+   "learningObjective": "Lembrar o termo que revela a origem do culto inventado.",
+   "evidence": ["1 Reis 12:33"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga 1 Reis 11:4 a Mateus 6:24?",
+   "verseRef": "1 Reis 11:4",
+   "passageA": {"ref": "1 Reis 11:4"},
+   "passageB": {"ref": "Mateus 6:24"},
+   "options": [
+    {"id": "a", "text": "Coração não serve dois senhores"},
+    {"id": "b", "text": "Riqueza garante coração fiel"},
+    {"id": "c", "text": "Dois senhores fortalecem a fé"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não era completamente fiel ao Senhor",
+   "feedbackCorrect": "Salomão dividido e o ensino de Jesus dizem o mesmo, não há coração fiel a dois senhores.",
+   "feedbackWrong": {"b": "Jesus contrapõe Deus e riquezas, riqueza não garante fidelidade alguma.", "c": "Servir a dois senhores é justamente a divisão que destrói a fidelidade."},
+   "hint": "Veja o que Jesus diz sobre servir a dois senhores.",
+   "learningObjective": "Ligar o coração dividido de Salomão ao ensino de Jesus.",
+   "evidence": ["1 Reis 11:4", "Mateus 6:24"]
+  }
+ ]
+}

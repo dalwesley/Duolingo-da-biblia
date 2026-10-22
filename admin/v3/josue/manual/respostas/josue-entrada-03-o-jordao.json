@@ -1,0 +1,308 @@
+{
+ "study": {
+  "passageRef": "Josué 3:13–17",
+  "passages": [{"ref": "Josué 3:12–17"}],
+  "context": "Israel está diante do Jordão cheio, em tempo de colheita. A arca vai à frente com os sacerdotes, e o povo só atravessa quando Deus abre o caminho em terra seca, como fez no mar.",
+  "keyword": "Terra seca",
+  "keywordGloss": "Deus faz Israel passar pelo Jordão em terra seca, como na saída do Egito.",
+  "focusQuestion": "Em que área da sua vida você precisa confiar que Deus abre o caminho?",
+  "reflectionPrompts": ["Deus à frente", "Passos de confiança", "Novo começo em terra seca"],
+  "facts": [
+   {"text": "Quando os pés dos sacerdotes tocarem as águas, elas se separarão e se acumularão.", "evidenceRef": "Josué 3:13", "evidenceSpan": "estas se separarão"},
+   {"text": "O Jordão transbordava sobre todas as suas ribanceiras nos dias da colheita.", "evidenceRef": "Josué 3:15", "evidenceSpan": "o Jordão transbordava sobre todas as suas ribanceiras"},
+   {"text": "As águas de cima pararam e se acumularam como um montão.", "evidenceRef": "Josué 3:16", "evidenceSpan": "As águas que vinham de cima pararam"},
+   {"text": "Todo o Israel atravessou em terra seca até completar a travessia.", "evidenceRef": "Josué 3:17", "evidenceSpan": "todo o Israel atravessou em terra seca"}
+  ],
+  "keyTerms": [
+   {"term": "arca", "gloss": "A arca da aliança vai à frente: Deus mesmo conduz o povo na travessia."},
+   {"term": "montão", "gloss": "As águas paradas como uma parede mostram a mão de Deus no rio cheio."},
+   {"term": "terra seca", "gloss": "O chão enxuto no meio do rio repete o milagre da saída do Egito."}
+  ],
+  "structure": [
+   {"label": "Deus anuncia o sinal das águas", "evidenceRef": "Josué 3:13"},
+   {"label": "Os sacerdotes entram no rio cheio", "evidenceRef": "Josué 3:15"},
+   {"label": "As águas param e o povo passa", "evidenceRef": "Josué 3:16"},
+   {"label": "Os sacerdotes firmes até todos passarem", "evidenceRef": "Josué 3:17"}
+  ],
+  "relations": [
+   {"kind": "sequência", "text": "Primeiro os pés dos sacerdotes repousam nas águas; então elas se separam.", "marker": "Quando", "evidenceRef": "Josué 3:13"},
+   {"kind": "resultado", "text": "Com as águas cortadas, o povo passa defronte de Jericó em terra seca.", "marker": "assim", "evidenceRef": "Josué 3:16"},
+   {"kind": "propósito", "text": "Os sacerdotes ficam parados no meio do rio até que toda a nação complete a travessia.", "marker": "até que", "evidenceRef": "Josué 3:17"}
+  ],
+  "crossRefs": [
+   {"ref": "Êxodo 14:22", "bridge": "Travessia em terra seca"},
+   {"ref": "Salmos 114:3", "bridge": "O Jordão voltou atrás"},
+   {"ref": "Josué 4:23", "bridge": "Memória da travessia seca"}
+  ],
+  "misreadings": [
+   {"text": "O Jordão estava baixo e raso, por isso Israel conseguiu passar.", "why": "O texto destaca que o rio transbordava sobre todas as ribanceiras na colheita."},
+   {"text": "A arca funcionava como um amuleto mágico que abria o rio.", "why": "Quem separa as águas é o Senhor, Senhor de toda a terra; a arca marca a presença dele."},
+   {"text": "A travessia foi obra da coragem dos sacerdotes sozinhos.", "why": "A promessa parte de Deus antes do passo: as águas se separariam ao toque dos pés."}
+  ],
+  "centralInsight": "Deus vai à frente e abre caminho em terra seca para o seu povo",
+  "anchorQuestion": "O que aconteceu com as águas do Jordão quando os sacerdotes entraram nelas?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Josué 3:17, os sacerdotes pararam firmes no meio do Jordão enquanto o povo atravessava",
+   "verseRef": "Josué 3:17", "correctOptionId": "true",
+   "evidenceSpan": "pararam firmes no meio do Jordão",
+   "feedbackCorrect": "Os sacerdotes ficam no meio do rio até toda a nação completar a travessia.",
+   "feedbackWrong": {"false": "Releia Josué 3:17: eles pararam firmes no meio do Jordão."},
+   "hint": "Veja onde os sacerdotes ficam durante a travessia.",
+   "learningObjective": "Observar a posição dos sacerdotes na travessia do Jordão.",
+   "evidence": ["Josué 3:17"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Josué 3:17, toque onde os sacerdotes pararam com a arca",
+   "verseRef": "Josué 3:17",
+   "options": [{"id": "a", "text": "terra seca"}, {"id": "b", "text": "toda a nação"}, {"id": "c", "text": "meio do Jordão"}],
+   "correctOptionId": "c",
+   "evidenceSpan": "pararam firmes no meio do Jordão",
+   "feedbackCorrect": "Com a arca no meio do rio, Deus sustenta o caminho aberto para o povo.",
+   "feedbackWrong": {"a": "Esse é o chão por onde o povo passa; o lugar dos sacerdotes vem antes.", "b": "A nação é quem atravessa; quem para no rio são os sacerdotes."},
+   "hint": "Procure o lugar ligado aos sacerdotes com a arca.",
+   "learningObjective": "Identificar o lugar dos sacerdotes durante a travessia.",
+   "evidence": ["Josué 3:17"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Josué 3:15, como estava o Jordão quando Israel chegou para atravessar",
+   "verseRef": "Josué 3:15",
+   "options": [
+    {"id": "a", "text": "Quase seco pela falta de chuva"},
+    {"id": "b", "text": "Transbordando sobre as ribanceiras"},
+    {"id": "c", "text": "Parado como um lago sem corrente"},
+    {"id": "d", "text": "Dividido em pequenos riachos rasos"}
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o Jordão transbordava sobre todas as suas ribanceiras",
+   "feedbackCorrect": "Era tempo de colheita e o rio estava cheio: a travessia é obra de Deus.",
+   "feedbackWrong": {"a": "O texto diz o contrário: o rio transbordava nas ribanceiras.", "c": "As águas corriam de cima para baixo; elas param por ação de Deus.", "d": "Não há riachos rasos: há um rio cheio que Deus corta."},
+   "hint": "Leia a explicação entre parênteses no versículo.",
+   "learningObjective": "Observar o estado do Jordão no dia da travessia.",
+   "evidence": ["Josué 3:15"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Josué 3:16 na ordem do texto",
+   "verseRef": "Josué 3:16",
+   "options": [
+    {"id": "a", "text": "As águas que vinham de cima pararam"},
+    {"id": "b", "text": "e se acumulavam como um montão"},
+    {"id": "c", "text": "assim, o povo passou defronte de Jericó"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "As águas que vinham de cima pararam",
+   "feedbackCorrect": "As águas param, se acumulam, e só então o povo passa diante de Jericó.",
+   "feedbackWrong": {"default": "Comece pelas águas que param; a passagem do povo fecha o versículo."},
+   "hint": "O versículo começa pelo que acontece com as águas.",
+   "learningObjective": "Reconhecer a sequência da travessia do Jordão.",
+   "evidence": ["Josué 3:16"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Josué 3:16, como as águas que vinham de cima se acumularam",
+   "verseRef": "Josué 3:16",
+   "options": [{"id": "a", "text": "rio"}, {"id": "b", "text": "montão"}, {"id": "c", "text": "mar"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "se acumulavam como um montão",
+   "feedbackCorrect": "As águas paradas formam uma parede: Deus segura o rio cheio.",
+   "feedbackWrong": {"a": "O rio é o que está sendo parado; a imagem é de um acúmulo.", "c": "O mar citado é o Salgado, para onde as águas desciam e foram cortadas."},
+   "hint": "Veja a imagem usada para as águas paradas.",
+   "learningObjective": "Lembrar como Deus deteve as águas do Jordão.",
+   "evidence": ["Josué 3:16"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Josué 3:17 comunica que se liga a este contexto",
+   "verseRef": "Josué 3:17",
+   "passageA": {"ref": "Josué 3:17"},
+   "passageB": {"ref": "Contexto", "text": "Israel entra na terra prometida atravessando o Jordão a pé enxuto."},
+   "options": [{"id": "a", "text": "Deus abre o caminho"}, {"id": "b", "text": "O rio impede a promessa"}, {"id": "c", "text": "O povo entra escondido"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo o Israel atravessou em terra seca",
+   "feedbackCorrect": "O rio cheio não barra a promessa: Deus abre caminho para todo o povo.",
+   "feedbackWrong": {"b": "A promessa se cumpre justamente com o rio aberto por Deus.", "c": "Toda a nação passa à vista, defronte de Jericó; não há segredo."},
+   "hint": "Veja o que Deus faz com o rio cheio.",
+   "learningObjective": "Ligar a travessia ao Deus que cumpre a promessa.",
+   "evidence": ["Josué 3:17"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Josué 3:13–15, as águas do Jordão pararam antes que os sacerdotes chegassem ao rio",
+   "verseRef": "Josué 3:13–14", "correctOptionId": "false",
+   "evidenceSpan": "Quando as solas dos pés dos sacerdotes",
+   "feedbackCorrect": "O sinal acontece quando os pés dos sacerdotes repousam nas águas.",
+   "feedbackWrong": {"true": "Releia Josué 3:13: as águas se separam quando os pés tocam o rio."},
+   "hint": "Repare no momento exato em que o sinal acontece.",
+   "learningObjective": "Compreender a sequência entre obediência e sinal no Jordão.",
+   "evidence": ["Josué 3:13–14"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Josué 3:13, toque a palavra que marca o momento em que as águas se separarão",
+   "verseRef": "Josué 3:13",
+   "options": [{"id": "a", "text": "estas"}, {"id": "b", "text": "Quando"}, {"id": "c", "text": "cima"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "Quando as solas dos pés dos sacerdotes",
+   "feedbackCorrect": "O sinal está ligado ao passo dos sacerdotes: primeiro o toque, depois a separação.",
+   "feedbackWrong": {"a": "Esse termo aponta as águas; o momento vem na palavra inicial.", "c": "Esse termo indica a direção das águas, não o momento do sinal."},
+   "hint": "Procure a palavra inicial que marca o tempo do sinal.",
+   "learningObjective": "Reconhecer o marcador de sequência em Josué 3:13.",
+   "evidence": ["Josué 3:13"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Josué 3:16 mostra o sinal anunciado por Deus se cumprindo",
+   "verseRef": "Josué 3:16",
+   "options": [
+    {"id": "a", "text": "Deus anuncia o sinal e depois o realiza"},
+    {"id": "b", "text": "Deus muda de ideia sobre a travessia"},
+    {"id": "c", "text": "O povo realiza sozinho o que Deus previu"},
+    {"id": "d", "text": "O rio decide cooperar com os sacerdotes"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "As águas que vinham de cima pararam",
+   "feedbackCorrect": "O que Deus promete em 3:13 acontece em 3:16, palavra por palavra.",
+   "feedbackWrong": {"b": "Não há mudança: a promessa se cumpre exatamente como anunciada.", "c": "Quem para as águas é Deus; o povo apenas atravessa.", "d": "O rio não decide nada; as águas são cortadas pela ação de Deus."},
+   "hint": "Compare a promessa com o relato do cumprimento.",
+   "learningObjective": "Relacionar promessa e cumprimento na travessia do Jordão.",
+   "evidence": ["Josué 3:13", "Josué 3:16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança a travessia em Josué 3:13–17",
+   "verseRef": "Josué 3:16–17",
+   "options": [
+    {"id": "a", "text": "As águas de cima param e se acumulam"},
+    {"id": "b", "text": "O povo passa defronte de Jericó"},
+    {"id": "c", "text": "Toda a nação completa a travessia"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "todo o Israel atravessou em terra seca",
+   "feedbackCorrect": "Primeiro Deus detém o rio, depois o povo passa, até o último atravessar.",
+   "feedbackWrong": {"default": "Comece pelas águas paradas; a travessia completa fecha a cena."},
+   "hint": "A cena termina quando ninguém fica para trás.",
+   "learningObjective": "Compreender o movimento completo da travessia.",
+   "evidence": ["Josué 3:16–17"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Josué 3:13, o que as águas do Jordão farão quando os pés tocarem nelas",
+   "verseRef": "Josué 3:13",
+   "options": [{"id": "a", "text": "subirão"}, {"id": "b", "text": "voltarão"}, {"id": "c", "text": "separarão"}],
+   "correctOptionId": "c",
+   "evidenceSpan": "estas se separarão",
+   "feedbackCorrect": "Ao toque dos pés, as águas se separam e se acumulam: o sinal se cumpre.",
+   "feedbackWrong": {"a": "As águas não sobem sobre o povo; elas param rio acima.", "b": "Voltar atrás é imagem do Salmo; aqui elas se separam e param."},
+   "hint": "Veja o verbo prometido para as águas no sinal.",
+   "learningObjective": "Compreender o sinal prometido por Deus no Jordão.",
+   "evidence": ["Josué 3:13"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Josué 3:17 a Êxodo 14:22",
+   "verseRef": "Josué 3:17",
+   "passageA": {"ref": "Josué 3:17"},
+   "passageB": {"ref": "Êxodo 14:22"},
+   "options": [{"id": "a", "text": "Travessia em terra seca"}, {"id": "b", "text": "Fuga apressada de noite"}, {"id": "c", "text": "Travessia feita de barco"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo o Israel atravessou em terra seca",
+   "feedbackCorrect": "No mar e no rio, Deus faz o seu povo passar a pé enxuto.",
+   "feedbackWrong": {"b": "A pressa do êxodo não é o ponto comum; é o chão seco aberto por Deus.", "c": "Nenhum dos textos fala de barco: o povo passa a pé, em terra seca."},
+   "hint": "Compare o chão por onde o povo passa nos dois textos.",
+   "learningObjective": "Relacionar a travessia do Jordão à do Mar Vermelho.",
+   "evidence": ["Josué 3:17", "Êxodo 14:22"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Josué 3 apresenta a travessia como obra do Senhor de toda a terra, que vai à frente do povo",
+   "verseRef": "Josué 3:13", "correctOptionId": "true",
+   "evidenceSpan": "a arca do Senhor, Senhor de toda a terra",
+   "feedbackCorrect": "A arca vai à frente porque o próprio Senhor conduz e abre o caminho.",
+   "feedbackWrong": {"false": "O texto chama Deus de Senhor de toda a terra e põe a arca à frente."},
+   "hint": "Veja o título dado a Deus no anúncio do sinal.",
+   "learningObjective": "Interpretar a travessia como ação do Senhor universal.",
+   "evidence": ["Josué 3:13"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Josué 3:17, toque o trecho que sustenta a ligação com a saída do Egito",
+   "verseRef": "Josué 3:17",
+   "options": [{"id": "a", "text": "terra seca"}, {"id": "b", "text": "arca da aliança"}, {"id": "c", "text": "todo o Israel"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo o Israel atravessou em terra seca",
+   "feedbackCorrect": "Passar em terra seca repete o sinal do mar: o mesmo Deus liberta e conduz.",
+   "feedbackWrong": {"b": "A arca marca a presença de Deus; o elo com o êxodo é o chão seco.", "c": "O povo inteiro passar mostra o alcance; o sinal do êxodo é o chão."},
+   "hint": "Procure a expressão repetida na travessia do mar.",
+   "learningObjective": "Sustentar com o texto a ligação entre Jordão e êxodo.",
+   "evidence": ["Josué 3:17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Josué 3:15–17 sustenta sobre a entrada na terra prometida",
+   "verseRef": "Josué 3:16–17",
+   "options": [
+    {"id": "a", "text": "Deus conduz o povo e abre o caminho"},
+    {"id": "b", "text": "Israel entra na terra pela própria força"},
+    {"id": "c", "text": "A arca abre o rio como objeto mágico"},
+    {"id": "d", "text": "O rio cheio prova que Deus abandonou Israel"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo o Israel atravessou em terra seca",
+   "feedbackCorrect": "O rio cheio não impede a promessa: Deus vai à frente e conduz todos.",
+   "feedbackWrong": {"b": "Quem para as águas é Deus; o povo apenas atravessa o caminho aberto.", "c": "A arca marca a presença do Senhor; o poder é dele, não do objeto.", "d": "O rio cheio vira palco da presença de Deus, não do abandono."},
+   "hint": "Veja quem age sobre as águas e quem apenas atravessa.",
+   "learningObjective": "Escolher a interpretação que a travessia sustenta.",
+   "evidence": ["Josué 3:16–17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o fio das travessias que começa no Mar Vermelho",
+   "verseRef": "Josué 3:17",
+   "options": [
+    {"id": "a", "text": "Israel passa pelo mar em terra seca"},
+    {"id": "b", "text": "Israel passa pelo Jordão em terra seca"},
+    {"id": "c", "text": "O salmista canta o mar e o Jordão"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "todo o Israel atravessou em terra seca",
+   "feedbackCorrect": "Do mar ao rio, e do rio ao cântico: o mesmo Deus abre caminho ao povo.",
+   "feedbackWrong": {"default": "Siga a história: êxodo, entrada na terra e depois o Salmo."},
+   "hint": "Siga a ordem da história de Israel.",
+   "learningObjective": "Ver as travessias como fio da fidelidade de Deus.",
+   "evidence": ["Josué 3:17", "Êxodo 14:22", "Salmos 114:3"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Josué 3:17, como os sacerdotes ficaram no meio do Jordão",
+   "verseRef": "Josué 3:17",
+   "options": [{"id": "a", "text": "cansados"}, {"id": "b", "text": "firmes"}, {"id": "c", "text": "sozinhos"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "pararam firmes no meio do Jordão",
+   "feedbackCorrect": "Firmes com a arca, os sacerdotes sustentam o caminho aberto até o fim.",
+   "feedbackWrong": {"a": "O texto não fala de cansaço, e sim de firmeza na presença de Deus.", "c": "Eles não estão sós: carregam a arca do Senhor diante do povo."},
+   "hint": "Veja a postura dos sacerdotes durante toda a travessia.",
+   "learningObjective": "Lembrar o termo que resume a firmeza na travessia.",
+   "evidence": ["Josué 3:17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Josué 3:16 a Salmos 114:3",
+   "verseRef": "Josué 3:16",
+   "passageA": {"ref": "Josué 3:16"},
+   "passageB": {"ref": "Salmos 114:3"},
+   "options": [{"id": "a", "text": "O Jordão testemunha o poder"}, {"id": "b", "text": "O rio esconde o povo"}, {"id": "c", "text": "A natureza age sozinha"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "As águas que vinham de cima pararam",
+   "feedbackCorrect": "O Salmo canta o mesmo rio parando diante do Deus que conduz Israel.",
+   "feedbackWrong": {"b": "O povo passa à vista de Jericó; o rio revela Deus, não esconde.", "c": "Nos dois textos, quem age sobre as águas é o Senhor."},
+   "hint": "Veja como o Salmo fala do mesmo rio.",
+   "learningObjective": "Ligar a travessia do Jordão ao louvor do Salmo 114.",
+   "evidence": ["Josué 3:16", "Salmos 114:3"]
+  }
+ ]
+}

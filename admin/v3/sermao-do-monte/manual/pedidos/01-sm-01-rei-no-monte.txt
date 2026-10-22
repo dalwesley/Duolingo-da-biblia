@@ -1,0 +1,59 @@
+Escreva a cena "sm-01-rei-no-monte" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "As Bem-aventuranças",
+ "mission": {
+  "slug": "sm-01-rei-no-monte",
+  "title": "O Rei sobe ao monte",
+  "type": "lesson",
+  "intro": "Grandes discursos mudaram a história, mas nenhum foi tão transformador quanto este. Antes de ensinar, Jesus sobe a um monte, senta-se como mestre e chama os discípulos para perto. O Reino começa com quem está disposto a ouvir.",
+  "hookRef": "Mateus 5:1–2",
+  "hookNote": "Mateus apresenta Jesus como o novo Moisés — mas maior. O Sermão do Monte não é um código civil isolado; é a constituição do Reino anunciado…",
+  "centralInsight": "O Reino começa com ouvir",
+  "objective": "Estou me aproximando de Jesus como discípulo, ou só ouvindo de longe como multidão?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:1–2",
+  "context": "Mateus apresenta Jesus como o novo Moisés — mas maior. O Sermão do Monte não é um código civil isolado; é a constituição do Reino anunciado em Mateus 4:17. Subir ao monte e sentar-se é postura de Rabino autoritativo. A multidão ouve; os discípulos se aproximam: o ensino do Reino forma primeiro quem já decidiu seguir. Antes das bem-aventuranças, Mateus destaca disposição: quem sobe, quem se chega, quem escuta.",
+  "keyword": "Discipulado",
+  "verseRefs": [
+   "Mateus 5:1–2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:1",
+   "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+  },
+  {
+   "ref": "Mateus 5:2",
+   "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+  },
+  {
+   "ref": "Mateus 5:3",
+   "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:4",
+   "text": "Bem-aventurados os que choram, porque serão consolados."
+  },
+  {
+   "ref": "Mateus 5:5",
+   "text": "Bem-aventurados os mansos, porque herdarão a terra."
+  }
+ ]
+}
+</cena>

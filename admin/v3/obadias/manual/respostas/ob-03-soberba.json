@@ -1,0 +1,705 @@
+{
+ "study": {
+  "passageRef": "Obadias 1:3–4",
+  "passages": [
+   {
+    "ref": "Obadias 1:3–4"
+   }
+  ],
+  "context": "Edom morava nas fendas das rochas e se julgava intocável. Obadias mostra Deus respondendo a essa confiança de dentro do próprio alto onde Edom se escondia.",
+  "keyword": "Soberba",
+  "keywordGloss": "Orgulho do coração que engana Edom e o faz perguntar quem poderia derrubá-lo.",
+  "focusQuestion": "Em que área da vida você mais se sente seguro sem precisar ouvir a Deus?",
+  "reflectionPrompts": [
+   "Coração enganado",
+   "Ninho entre estrelas",
+   "Deus responde do alto"
+  ],
+  "facts": [
+   {
+    "text": "A soberba do coração enganou Edom.",
+    "evidenceRef": "Obadias 1:3",
+    "evidenceSpan": "A soberba do teu coração te enganou"
+   },
+   {
+    "text": "Edom habita nas fendas das rochas, em alta morada.",
+    "evidenceRef": "Obadias 1:3",
+    "evidenceSpan": "habitas nas fendas das rochas, na tua alta morada"
+   },
+   {
+    "text": "Edom diz no coração que ninguém o derrubará.",
+    "evidenceRef": "Obadias 1:3",
+    "evidenceSpan": "Quem me derrubará por terra?"
+   },
+   {
+    "text": "Mesmo com ninho entre as estrelas, Deus derrubaria Edom.",
+    "evidenceRef": "Obadias 1:4",
+    "evidenceSpan": "puseres o teu ninho entre as estrelas, de lá eu te derribarei"
+   },
+   {
+    "text": "Quem anuncia a queda de Edom é o Senhor.",
+    "evidenceRef": "Obadias 1:4",
+    "evidenceSpan": "de lá eu te derribarei, diz o Senhor"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "soberba",
+    "gloss": "Orgulho que engana o coração e cria falsa sensação de segurança."
+   },
+   {
+    "term": "águia",
+    "gloss": "Ave das alturas; nem essa altura livraria Edom de Deus."
+   },
+   {
+    "term": "fendas",
+    "gloss": "Aberturas nas rochas onde Edom morava e se sentia protegido."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A soberba engana o coração",
+    "evidenceRef": "Obadias 1:3"
+   },
+   {
+    "label": "Edom se julga intocável no alto",
+    "evidenceRef": "Obadias 1:3"
+   },
+   {
+    "label": "Deus promete derrubar do alto",
+    "evidenceRef": "Obadias 1:4"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A soberba causa o engano de Edom sobre a própria segurança.",
+    "marker": "enganou",
+    "evidenceRef": "Obadias 1:3"
+   },
+   {
+    "kind": "contraste",
+    "text": "Edom pergunta quem o derrubará; Deus responde que ele o fará.",
+    "marker": null,
+    "evidenceRef": "Obadias 1:4"
+   },
+   {
+    "kind": "resultado",
+    "text": "A altura imaginada termina no anúncio de que Deus derrubará Edom.",
+    "marker": "derribarei",
+    "evidenceRef": "Obadias 1:4"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Jeremias 49:16",
+    "bridge": "Soberba nas alturas derrubada"
+   },
+   {
+    "ref": "Provérbios 16:18",
+    "bridge": "Soberba precede a queda"
+   },
+   {
+    "ref": "Provérbios 29:23",
+    "bridge": "Soberba abate o homem"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Quem mora num lugar forte está fora do alcance de Deus.",
+    "why": "Deus diz que derrubaria Edom mesmo com ninho entre as estrelas."
+   },
+   {
+    "text": "A pergunta de Edom mostra confiança saudável em Deus.",
+    "why": "Quem fala é o coração enganado pela soberba, não um coração que confia em Deus."
+   },
+   {
+    "text": "Deus só alcança quem está em lugares baixos.",
+    "why": "A resposta de Deus vale justamente para o ponto mais alto imaginado."
+   }
+  ],
+  "centralInsight": "Altura não protege do juízo",
+  "anchorQuestion": "Segundo Obadias 1:4, de onde Deus derrubaria Edom?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Obadias 1:3, Edom habita nas fendas das rochas, na sua alta morada.",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "true",
+   "evidenceSpan": "habitas nas fendas das rochas, na tua alta morada",
+   "feedbackCorrect": "O texto descreve Edom morando alto, nas fendas das rochas.",
+   "feedbackWrong": {
+    "false": "Releia 1:3; é assim que o texto descreve a morada de Edom."
+   },
+   "hint": "Veja onde Edom habita.",
+   "learningObjective": "Observar a morada alta de Edom.",
+   "evidence": [
+    "Obadias 1:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:3, toque onde Edom habita nas rochas.",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "habitas nas fendas das rochas",
+   "feedbackCorrect": "Edom habita nas fendas das rochas, sua morada alta.",
+   "feedbackWrong": {
+    "b": "Alta morada descreve a morada; o lugar nas rochas vem antes.",
+    "c": "O coração é onde Edom fala consigo, não onde mora."
+   },
+   "hint": "Procure o lugar nas rochas.",
+   "learningObjective": "Identificar a morada de Edom nas rochas.",
+   "evidence": [
+    "Obadias 1:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "fendas das rochas"
+    },
+    {
+     "id": "b",
+     "text": "alta morada"
+    },
+    {
+     "id": "c",
+     "text": "teu coração"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Obadias 1:3, o que Edom diz em seu coração?",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "b",
+   "evidenceSpan": "Quem me derrubará por terra?",
+   "feedbackCorrect": "No coração, Edom pergunta quem poderia derrubá-lo por terra.",
+   "feedbackWrong": {
+    "a": "Edom não fala de Deus aqui; fala de si mesmo.",
+    "c": "Não há humildade na fala; há soberba enganando o coração.",
+    "d": "Edom não planeja descer; julga-se intocável no alto."
+   },
+   "hint": "Leia a fala do coração de Edom.",
+   "learningObjective": "Observar a fala soberba de Edom.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Que Deus o protegerá"
+    },
+    {
+     "id": "b",
+     "text": "Que ninguém o derrubará"
+    },
+    {
+     "id": "c",
+     "text": "Que precisa se humilhar"
+    },
+    {
+     "id": "d",
+     "text": "Que descerá das rochas"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Obadias 1:3 na ordem do texto.",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem me derrubará por terra?",
+   "feedbackCorrect": "Primeiro o engano da soberba, depois a morada, por fim a pergunta soberba.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "A soberba abre o versículo.",
+   "learningObjective": "Reconhecer a sequência de Obadias 1:3.",
+   "evidence": [
+    "Obadias 1:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A soberba do teu coração te enganou"
+    },
+    {
+     "id": "b",
+     "text": "ó tu que habitas nas fendas das rochas"
+    },
+    {
+     "id": "c",
+     "text": "Quem me derrubará por terra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Obadias 1:4, como que animal Edom se remontaria ao alto?",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Se te remontares como águia",
+   "feedbackCorrect": "A comparação é com a águia, ave que voa às alturas.",
+   "feedbackWrong": {
+    "b": "Cordeiro não aparece no versículo.",
+    "c": "Leão não aparece; a ave das alturas é outra."
+   },
+   "hint": "Veja a comparação do versículo.",
+   "learningObjective": "Lembrar a imagem da águia.",
+   "evidence": [
+    "Obadias 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "águia"
+    },
+    {
+     "id": "b",
+     "text": "cordeiro"
+    },
+    {
+     "id": "c",
+     "text": "leão"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Obadias 1:4 comunica que se liga a este contexto?",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "b",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "Mesmo entre as estrelas, Deus derrubaria Edom de lá.",
+   "feedbackWrong": {
+    "a": "A altura não impede Deus; ele alcança Edom lá.",
+    "c": "O ninho alto está justamente ao alcance de Deus."
+   },
+   "hint": "Veja de onde Deus derruba.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Altura que impede Deus"
+    },
+    {
+     "id": "b",
+     "text": "Deus derruba do alto"
+    },
+    {
+     "id": "c",
+     "text": "Ninho fora do alcance"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:4"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Edom se esconde no alto achando que ninguém o alcança."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Obadias 1:3-4, Deus responde à pergunta de Edom prometendo derrubá-lo do alto.",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "true",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "À pergunta soberba, Deus responde que derrubará Edom de lá.",
+   "feedbackWrong": {
+    "false": "Releia Obadias 1:4 e veja a resposta de Deus."
+   },
+   "hint": "Compare pergunta e resposta.",
+   "learningObjective": "Compreender o contraste entre pergunta e resposta.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:3, toque o verbo que mostra o que a soberba fez com Edom.",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "c",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "A soberba enganou Edom; por isso ele se julgava intocável.",
+   "feedbackWrong": {
+    "a": "Habitar é onde Edom mora, não o efeito da soberba.",
+    "b": "Dizer é a fala soberba; o engano vem antes."
+   },
+   "hint": "Procure o efeito da soberba.",
+   "learningObjective": "Reconhecer o engano causado pela soberba.",
+   "evidence": [
+    "Obadias 1:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "habitas"
+    },
+    {
+     "id": "b",
+     "text": "dizes"
+    },
+    {
+     "id": "c",
+     "text": "enganou"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Obadias 1:4 se liga à fala do coração em 1:3?",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "a",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "A fala soberba recebe resposta direta, Deus derrubará Edom.",
+   "feedbackWrong": {
+    "b": "Deus não aprova; ele anuncia a queda do soberbo.",
+    "c": "Voar mais alto não livra Edom, segundo o próprio texto.",
+    "d": "Não há troca de morada; há anúncio de queda."
+   },
+   "hint": "Junte a pergunta de 1:3 à fala de 1:4.",
+   "learningObjective": "Relacionar a pergunta soberba à resposta de Deus.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus responde derrubando Edom"
+    },
+    {
+     "id": "b",
+     "text": "Deus aprova a confiança de Edom"
+    },
+    {
+     "id": "c",
+     "text": "Deus manda Edom voar mais alto"
+    },
+    {
+     "id": "d",
+     "text": "Deus troca Edom de morada"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Obadias 1:3-4?",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "a",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "Engano, falsa segurança e, por fim, a palavra de Deus que derruba.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "A palavra de Deus fecha a cena.",
+   "learningObjective": "Compreender o movimento da cena.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A soberba engana o coração"
+    },
+    {
+     "id": "b",
+     "text": "Edom se julga intocável no alto"
+    },
+    {
+     "id": "c",
+     "text": "Deus anuncia a sua queda"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Obadias 1:4, onde Edom poria o ninho na comparação?",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "puseres o teu ninho entre as estrelas",
+   "feedbackCorrect": "O ninho entre as estrelas é o ponto mais alto da comparação.",
+   "feedbackWrong": {
+    "b": "Rochas aparecem em 1:3; aqui o ponto é mais alto.",
+    "c": "Nuvens não são citadas no versículo."
+   },
+   "hint": "Suba ao ponto mais alto citado.",
+   "learningObjective": "Compreender a altura máxima da comparação.",
+   "evidence": [
+    "Obadias 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "estrelas"
+    },
+    {
+     "id": "b",
+     "text": "rochas"
+    },
+    {
+     "id": "c",
+     "text": "nuvens"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Obadias 1:4 a Jeremias 49:16?",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "Nos dois textos, Deus derruba o ninho posto nas alturas.",
+   "feedbackWrong": {
+    "b": "A altura não salva; Deus derruba de lá nos dois textos.",
+    "c": "A águia é só comparação; quem derruba é Deus."
+   },
+   "hint": "Compare o ninho nos dois textos.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:4",
+    "Jeremias 49:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ninho alto derrubado por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Altura que salva Edom"
+    },
+    {
+     "id": "c",
+     "text": "Águia acima de Deus"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:4"
+   },
+   "passageB": {
+    "ref": "Jeremias 49:16"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Obadias 1:3-4 mostra que a soberba é só um exagero sem efeito real sobre Edom.",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "false",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "A soberba tem efeito real; ela engana o coração de Edom.",
+   "feedbackWrong": {
+    "true": "Releia 1:3; a soberba enganou o coração de Edom."
+   },
+   "hint": "Veja o efeito citado em 1:3.",
+   "learningObjective": "Interpretar o efeito real da soberba.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:4, toque o verbo com que Deus responde à altura de Edom.",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "c",
+   "evidenceSpan": "de lá eu te derribarei",
+   "feedbackCorrect": "Deus responde à subida de Edom prometendo derrubá-lo.",
+   "feedbackWrong": {
+    "a": "Remontar é a subida imaginada de Edom.",
+    "b": "Pôr o ninho é a ação de Edom, não a resposta de Deus."
+   },
+   "hint": "Procure a ação de Deus.",
+   "learningObjective": "Sustentar a resposta de Deus com o texto.",
+   "evidence": [
+    "Obadias 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "remontares"
+    },
+    {
+     "id": "b",
+     "text": "puseres"
+    },
+    {
+     "id": "c",
+     "text": "derribarei"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Obadias 1:3-4 sustenta sobre sentir-se intocável?",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "b",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "Sentir-se intocável é o engano da soberba, que Deus derruba.",
+   "feedbackWrong": {
+    "a": "A fé não aparece aqui; aparece um coração enganado.",
+    "c": "Morar alto não dá direito nem proteção contra Deus.",
+    "d": "Deus não protege essa confiança; ele a derruba."
+   },
+   "hint": "Junte o engano de 1:3 à queda de 1:4.",
+   "learningObjective": "Escolher a interpretação sobre a falsa segurança.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "É sinal de fé verdadeira"
+    },
+    {
+     "id": "b",
+     "text": "É engano que Deus derruba"
+    },
+    {
+     "id": "c",
+     "text": "É direito de quem mora alto"
+    },
+    {
+     "id": "d",
+     "text": "É proteção dada por Deus"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Obadias 1:3-4?",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem me derrubará por terra?",
+   "feedbackCorrect": "A pergunta soberba é respondida pela queda anunciada por Deus.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "Comece pela pergunta do coração.",
+   "learningObjective": "Ver a lógica entre soberba e queda.",
+   "evidence": [
+    "Obadias 1:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O coração se julga intocável"
+    },
+    {
+     "id": "b",
+     "text": "Deus alcança o ponto mais alto"
+    },
+    {
+     "id": "c",
+     "text": "A falsa segurança cai por terra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Obadias 1:3, que palavra nomeia o engano do coração?",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "Soberba é a palavra que nomeia o que enganou Edom.",
+   "feedbackWrong": {
+    "b": "Morada é o lugar alto onde Edom vive.",
+    "c": "Terra é para onde Edom teme ser derrubado."
+   },
+   "hint": "É a primeira palavra do texto.",
+   "learningObjective": "Lembrar o termo central da cena.",
+   "evidence": [
+    "Obadias 1:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "soberba"
+    },
+    {
+     "id": "b",
+     "text": "morada"
+    },
+    {
+     "id": "c",
+     "text": "terra"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Obadias 1:3 a Provérbios 16:18?",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "Provérbios diz em frase o que Obadias mostra acontecendo com Edom.",
+   "feedbackWrong": {
+    "b": "Obadias mostra a altura sem proteger o soberbo.",
+    "c": "Nos dois textos a soberba vem antes da queda."
+   },
+   "hint": "Veja o que antecede a ruína.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:3",
+    "Provérbios 16:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Orgulho termina em queda"
+    },
+    {
+     "id": "b",
+     "text": "Altura protege o soberbo"
+    },
+    {
+     "id": "c",
+     "text": "Queda sem soberba antes"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:3"
+   },
+   "passageB": {
+    "ref": "Provérbios 16:18"
+   }
+  }
+ ]
+}

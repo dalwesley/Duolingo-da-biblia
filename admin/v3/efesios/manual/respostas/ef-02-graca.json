@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Efésios 2:5–10",
+  "passages": [
+   {
+    "ref": "Efésios 2:5–10"
+   },
+   {
+    "ref": "Efésios 2:11–12"
+   }
+  ],
+  "context": "Paulo lembra aos leitores de onde Deus os tirou. Eles estavam mortos em transgressões, e a carta mostra o que Deus fez por eles em Cristo Jesus.",
+  "keyword": "graça",
+  "keywordGloss": "Favor de Deus que salva quem não podia salvar a si mesmo, dado como dom.",
+  "focusQuestion": "O que muda quando você lembra que a salvação é dom, e não pagamento?",
+  "reflectionPrompts": [
+   "Mortos, mas vivificados",
+   "Salvos como dom",
+   "Criados para boas obras"
+  ],
+  "facts": [
+   {
+    "text": "Estando mortos, Deus nos deu vida juntamente com Cristo.",
+    "evidenceRef": "Efésios 2:5",
+    "evidenceSpan": "nos deu vida juntamente com Cristo"
+   },
+   {
+    "text": "Deus nos ressuscitou e nos fez assentar nos lugares celestiais em Cristo.",
+    "evidenceRef": "Efésios 2:6",
+    "evidenceSpan": "nos ressuscitou juntamente com Ele"
+   },
+   {
+    "text": "Pela graça somos salvos por meio da fé, e isto é dom de Deus.",
+    "evidenceRef": "Efésios 2:8",
+    "evidenceSpan": "pela graça vocês são salvos, por meio da fé"
+   },
+   {
+    "text": "A salvação não é resultado de obras, para que ninguém se glorie.",
+    "evidenceRef": "Efésios 2:9",
+    "evidenceSpan": "não é resultado de obras"
+   },
+   {
+    "text": "Somos obra de Deus, criados em Cristo Jesus para boas obras.",
+    "evidenceRef": "Efésios 2:10",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras"
+   },
+   {
+    "text": "Antes, estávamos sem Cristo, sem esperança e sem Deus no mundo.",
+    "evidenceRef": "Efésios 2:12",
+    "evidenceSpan": "sem esperança e sem Deus no mundo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "graça",
+    "gloss": "O favor de Deus que salva, apresentado no texto como dom recebido."
+   },
+   {
+    "term": "fé",
+    "gloss": "O meio pelo qual recebemos a salvação que Deus dá pela graça."
+   },
+   {
+    "term": "dom de Deus",
+    "gloss": "A salvação como presente de Deus, e não como salário pelas obras."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Mortos, mas vivificados com Cristo",
+    "evidenceRef": "Efésios 2:5"
+   },
+   {
+    "label": "Ressuscitados e assentados com Cristo",
+    "evidenceRef": "Efésios 2:6"
+   },
+   {
+    "label": "Salvos pela graça, por meio da fé",
+    "evidenceRef": "Efésios 2:8"
+   },
+   {
+    "label": "Criados para boas obras preparadas",
+    "evidenceRef": "Efésios 2:10"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Estávamos mortos em transgressões, mas Deus nos deu vida juntamente com Cristo.",
+    "marker": null,
+    "evidenceRef": "Efésios 2:5"
+   },
+   {
+    "kind": "causa",
+    "text": "A explicação da nova vida é a graça de Deus, recebida por meio da fé.",
+    "marker": "Porque",
+    "evidenceRef": "Efésios 2:8"
+   },
+   {
+    "kind": "propósito",
+    "text": "Deus nos recriou em Cristo para andarmos nas boas obras que ele preparou.",
+    "marker": "para",
+    "evidenceRef": "Efésios 2:10"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 6:23",
+    "bridge": "O dom gratuito de Deus"
+   },
+   {
+    "ref": "Tito 3:5",
+    "bridge": "Salvos não pelas obras"
+   },
+   {
+    "ref": "2 Timóteo 1:9",
+    "bridge": "Graça dada em Cristo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Boas obras são o preço que pagamos pela salvação.",
+    "why": "Efésios 2:8–9 chama a salvação de dom, não resultado de obras; as boas obras vêm em 2:10."
+   },
+   {
+    "text": "A fé é uma obra nossa que obriga Deus a nos salvar.",
+    "why": "O texto diz que isto não vem de nós; é dom de Deus (2:8)."
+   },
+   {
+    "text": "Quem é salvo não precisa mais fazer o bem.",
+    "why": "Efésios 2:10 diz que fomos criados em Cristo justamente para boas obras."
+   }
+  ],
+  "centralInsight": "Mortos em pecados, fomos vivificados com Cristo; pela graça somos salvos, por meio da fé",
+  "anchorQuestion": "Segundo Efésios 2:8, como somos salvos e de onde isso vem?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+   "verseRef": "Efésios 2:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "pela graça vocês são salvos, por meio da fé",
+   "feedbackCorrect": "A salvação é pela graça, recebida por meio da fé.",
+   "feedbackWrong": {
+    "false": "Releia Efésios 2:8, pela graça vocês são salvos, por meio da fé."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Observar que a salvação é pela graça, por meio da fé.",
+   "evidence": [
+    "Efésios 2:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Efésios 2:5, toque como estávamos antes de Deus nos dar vida.",
+   "verseRef": "Efésios 2:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "mortos"
+    },
+    {
+     "id": "b",
+     "text": "juntamente"
+    },
+    {
+     "id": "c",
+     "text": "salvos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Estando nós mortos em nossas transgressões",
+   "feedbackCorrect": "Nosso estado era de morte em transgressões, até Deus agir.",
+   "feedbackWrong": {
+    "b": "Isso diz com quem Deus nos deu vida, não nosso estado antes.",
+    "c": "Isso é o resultado da graça, não nosso estado anterior."
+   },
+   "hint": "Veja nosso estado antes da ação de Deus.",
+   "learningObjective": "Identificar o estado anterior descrito em Efésios 2:5.",
+   "evidence": [
+    "Efésios 2:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+   "verseRef": "Efésios 2:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Obras"
+    },
+    {
+     "id": "b",
+     "text": "Fé"
+    },
+    {
+     "id": "c",
+     "text": "Graça"
+    },
+    {
+     "id": "d",
+     "text": "Oração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não é resultado de obras",
+   "feedbackCorrect": "Não é por obras, para que ninguém se glorie de si mesmo.",
+   "feedbackWrong": {
+    "b": "A fé é o meio de receber, não o que o texto nega aqui.",
+    "c": "A graça é justamente a fonte da salvação em 2:8.",
+    "d": "O versículo nega obras como base, não fala de oração."
+   },
+   "hint": "Leia a palavra logo depois de resultado.",
+   "learningObjective": "Observar que a salvação não resulta de obras.",
+   "evidence": [
+    "Efésios 2:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Efésios 2:8 na ordem do texto.",
+   "verseRef": "Efésios 2:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque pela graça vocês são salvos"
+    },
+    {
+     "id": "b",
+     "text": "por meio da fé; e isto não vem de vocês"
+    },
+    {
+     "id": "c",
+     "text": "é um dom de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Porque pela graça vocês são salvos",
+   "feedbackCorrect": "Graça, fé e dom aparecem nessa ordem no versículo.",
+   "feedbackWrong": {
+    "default": "Comece pela graça e termine no dom de Deus."
+   },
+   "hint": "O versículo termina dizendo o que a salvação é.",
+   "learningObjective": "Reconhecer a sequência de Efésios 2:8.",
+   "evidence": [
+    "Efésios 2:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Efésios 2:10, o que Paulo diz que somos de Deus?",
+   "verseRef": "Efésios 2:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "obra"
+    },
+    {
+     "id": "b",
+     "text": "donos"
+    },
+    {
+     "id": "c",
+     "text": "juízes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque somos obra de Deus",
+   "feedbackCorrect": "Somos obra de Deus, criados em Cristo para boas obras.",
+   "feedbackWrong": {
+    "b": "Deus é quem faz; nós somos o que ele fez, não seus donos.",
+    "c": "O texto nos coloca como obra dele, não como juízes dele."
+   },
+   "hint": "Veja como Deus nos fez em Cristo.",
+   "learningObjective": "Lembrar que somos obra de Deus em Cristo.",
+   "evidence": [
+    "Efésios 2:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Efésios 2:8 comunica que se liga a este contexto?",
+   "verseRef": "Efésios 2:8",
+   "passageA": {
+    "ref": "Efésios 2:8"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A salvação chega como presente de Deus, não como salário pelo que fizemos."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Salvação como dom recebido"
+    },
+    {
+     "id": "b",
+     "text": "Salvação comprada com obras"
+    },
+    {
+     "id": "c",
+     "text": "Salvação merecida pelos bons"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "é um dom de Deus",
+   "feedbackCorrect": "A salvação é dom de Deus, recebido, e não salário pago.",
+   "feedbackWrong": {
+    "b": "Efésios 2:9 nega que ela seja resultado de obras.",
+    "c": "O texto chama a salvação de dom, não de merecimento."
+   },
+   "hint": "Veja de onde vem a salvação no texto.",
+   "learningObjective": "Ligar Efésios 2:8 à salvação como dom de Deus.",
+   "evidence": [
+    "Efésios 2:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Efésios 2:10, as boas obras vêm antes da graça e servem para comprar a salvação.",
+   "verseRef": "Efésios 2:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "criados em Cristo Jesus para boas obras",
+   "feedbackCorrect": "As boas obras são o alvo de quem Deus já recriou em Cristo.",
+   "feedbackWrong": {
+    "true": "Releia a ordem, primeiro Deus nos cria em Cristo, depois vêm as obras."
+   },
+   "hint": "Repare na ordem entre ser criado e fazer obras.",
+   "learningObjective": "Compreender a ordem entre graça recebida e boas obras.",
+   "evidence": [
+    "Efésios 2:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Efésios 2:8, toque a palavra que abre a explicação do que foi dito.",
+   "verseRef": "Efésios 2:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "vocês"
+    },
+    {
+     "id": "c",
+     "text": "meio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque pela graça vocês são salvos",
+   "feedbackCorrect": "A palavra inicial explica por que os leitores estão vivos em Cristo.",
+   "feedbackWrong": {
+    "b": "Isso nomeia quem é salvo, não abre a explicação.",
+    "c": "Isso mostra o meio, mas aparece depois da abertura."
+   },
+   "hint": "Olhe a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de explicação em Efésios 2:8.",
+   "evidence": [
+    "Efésios 2:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Efésios 2:9 se relaciona com Efésios 2:8?",
+   "verseRef": "Efésios 2:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele reforça que ninguém pode se exaltar pelo próprio esforço"
+    },
+    {
+     "id": "b",
+     "text": "Ele diz que esforço humano é o meio da salvação"
+    },
+    {
+     "id": "c",
+     "text": "Ele troca a fé por obras como base da salvação"
+    },
+    {
+     "id": "d",
+     "text": "Ele limita a graça a quem já fez o bem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não é resultado de obras",
+   "feedbackCorrect": "Depois do dom, Paulo fecha a porta ao orgulho pelas obras.",
+   "feedbackWrong": {
+    "b": "O texto nega obras como resultado que produz salvação.",
+    "c": "A base continua sendo a graça recebida pela fé.",
+    "d": "A graça alcança quem estava morto, não só quem fez o bem."
+   },
+   "hint": "Veja o que o segundo versículo nega.",
+   "learningObjective": "Relacionar o dom de Efésios 2:8 com a negação de 2:9.",
+   "evidence": [
+    "Efésios 2:8–9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a ação de Deus em Efésios 2:5–6?",
+   "verseRef": "Efésios 2:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mortos em transgressões"
+    },
+    {
+     "id": "b",
+     "text": "Vivificados juntamente com Cristo"
+    },
+    {
+     "id": "c",
+     "text": "Assentados nos lugares celestiais"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "nos deu vida juntamente com Cristo",
+   "feedbackCorrect": "De mortos, somos vivificados e assentados com Cristo.",
+   "feedbackWrong": {
+    "default": "Comece pelo estado de morte e termine com Cristo nos céus."
+   },
+   "hint": "O fim está com Cristo, nos lugares celestiais.",
+   "learningObjective": "Compreender o movimento de Efésios 2:5–6.",
+   "evidence": [
+    "Efésios 2:5–6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Efésios 2:9, quem pode se gloriar pelas obras?",
+   "verseRef": "Efésios 2:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "ninguém"
+    },
+    {
+     "id": "b",
+     "text": "todos"
+    },
+    {
+     "id": "c",
+     "text": "sempre"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que ninguém se glorie",
+   "feedbackCorrect": "Se a salvação é dom, sobra gratidão, e não glória própria.",
+   "feedbackWrong": {
+    "b": "O texto fecha a porta ao orgulho de qualquer pessoa.",
+    "c": "Isso é palavra de tempo, não responde quem se gloria."
+   },
+   "hint": "Veja quem fica sem motivo de orgulho.",
+   "learningObjective": "Compreender que a graça exclui a glória própria.",
+   "evidence": [
+    "Efésios 2:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Efésios 2:8 a Romanos 6:23?",
+   "verseRef": "Efésios 2:8",
+   "passageA": {
+    "ref": "Efésios 2:8"
+   },
+   "passageB": {
+    "ref": "Romanos 6:23"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Vida como dom gratuito"
+    },
+    {
+     "id": "b",
+     "text": "Vida como salário merecido"
+    },
+    {
+     "id": "c",
+     "text": "Salvação pelas próprias obras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "é um dom de Deus",
+   "feedbackCorrect": "Nos dois textos, o que Deus dá é presente, não salário.",
+   "feedbackWrong": {
+    "b": "Romanos chama salário ao pecado; a vida é dom gratuito.",
+    "c": "Efésios afirma que a salvação não vem de nós."
+   },
+   "hint": "Compare o que Deus dá nos dois textos.",
+   "learningObjective": "Relacionar o dom em Efésios e em Romanos.",
+   "evidence": [
+    "Efésios 2:8",
+    "Romanos 6:23"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Efésios 2:12, mesmo sem Cristo os gentios tinham esperança e Deus no mundo.",
+   "verseRef": "Efésios 2:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "sem esperança e sem Deus no mundo",
+   "feedbackCorrect": "O texto descreve aquele tempo como sem Cristo e sem esperança.",
+   "feedbackWrong": {
+    "true": "Releia o fim do versículo, sem esperança e sem Deus no mundo."
+   },
+   "hint": "Leia a descrição daquele tempo até o fim.",
+   "learningObjective": "Interpretar a condição sem Cristo descrita em Efésios 2:12.",
+   "evidence": [
+    "Efésios 2:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Efésios 2:10, toque o trecho que sustenta para que fomos criados em Cristo.",
+   "verseRef": "Efésios 2:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "para boas obras"
+    },
+    {
+     "id": "b",
+     "text": "obra de Deus"
+    },
+    {
+     "id": "c",
+     "text": "de antemão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "criados em Cristo Jesus para boas obras",
+   "feedbackCorrect": "Recriados em Cristo, nosso alvo são as boas obras preparadas.",
+   "feedbackWrong": {
+    "b": "Isso diz o que somos de Deus, não para que fomos criados.",
+    "c": "Isso diz quando Deus preparou, não o alvo da criação."
+   },
+   "hint": "Procure o alvo da nova criação em Cristo.",
+   "learningObjective": "Sustentar com o texto o alvo das boas obras.",
+   "evidence": [
+    "Efésios 2:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Efésios 2:8–10 sustenta sobre as boas obras?",
+   "verseRef": "Efésios 2:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elas são fruto de quem Deus já recriou em Cristo"
+    },
+    {
+     "id": "b",
+     "text": "Elas são o pagamento que compra a salvação"
+    },
+    {
+     "id": "c",
+     "text": "Elas tornam a graça desnecessária para viver"
+    },
+    {
+     "id": "d",
+     "text": "Elas servem para mostrar superioridade aos outros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "criados em Cristo Jesus para boas obras",
+   "feedbackCorrect": "As obras vêm depois da nova criação, como fruto dela.",
+   "feedbackWrong": {
+    "b": "A salvação é dom antes das obras, não pagamento por elas.",
+    "c": "É a graça que nos recria justamente para essas obras.",
+    "d": "O texto liga as obras ao plano de Deus, não à vaidade."
+   },
+   "hint": "Repare na ordem dos três versículos.",
+   "learningObjective": "Escolher a interpretação que Efésios 2:8–10 sustenta.",
+   "evidence": [
+    "Efésios 2:9–10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Efésios 2:5?",
+   "verseRef": "Efésios 2:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus dá vida a quem estava morto"
+    },
+    {
+     "id": "b",
+     "text": "A salvação é recebida como dom pela fé"
+    },
+    {
+     "id": "c",
+     "text": "Salvos vivem nas boas obras preparadas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "nos deu vida juntamente com Cristo",
+   "feedbackCorrect": "Vida dada, salvação recebida como dom e uma nova vida em obras.",
+   "feedbackWrong": {
+    "default": "Comece pela vida dada aos mortos e termine nas obras."
+   },
+   "hint": "Siga a ordem de Efésios 2, do verso 5 ao 10.",
+   "learningObjective": "Ver a lógica completa de Efésios 2:5–10.",
+   "evidence": [
+    "Efésios 2:5",
+    "Efésios 2:8",
+    "Efésios 2:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Efésios 2:8, por meio do que somos salvos pela graça?",
+   "verseRef": "Efésios 2:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "fé"
+    },
+    {
+     "id": "b",
+     "text": "obra"
+    },
+    {
+     "id": "c",
+     "text": "lei"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por meio da fé",
+   "feedbackCorrect": "A graça é recebida por meio da confiança em Deus.",
+   "feedbackWrong": {
+    "b": "Obras são negadas como base no versículo seguinte.",
+    "c": "O meio citado no texto não é a lei, e sim a confiança."
+   },
+   "hint": "Veja o meio que o texto aponta.",
+   "learningObjective": "Lembrar o termo central de Efésios 2:8.",
+   "evidence": [
+    "Efésios 2:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Efésios 2:9 a Tito 3:5?",
+   "verseRef": "Efésios 2:9",
+   "passageA": {
+    "ref": "Efésios 2:9"
+   },
+   "passageB": {
+    "ref": "Tito 3:5"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Salvos segundo a misericórdia"
+    },
+    {
+     "id": "b",
+     "text": "Salvos pelas nossas obras"
+    },
+    {
+     "id": "c",
+     "text": "Salvos por merecer mais"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não é resultado de obras",
+   "feedbackCorrect": "Nos dois textos, Deus salva por misericórdia, não por obras.",
+   "feedbackWrong": {
+    "b": "Os dois textos negam as obras como base da salvação.",
+    "c": "Nenhum dos textos fala de merecer mais que os outros."
+   },
+   "hint": "Compare a base da salvação nos dois textos.",
+   "learningObjective": "Ligar Efésios 2:9 ao ensino de Tito sobre a misericórdia.",
+   "evidence": [
+    "Efésios 2:9",
+    "Tito 3:5"
+   ]
+  }
+ ]
+}

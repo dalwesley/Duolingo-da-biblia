@@ -1,0 +1,3311 @@
+[
+  {
+    "id": "doutrina-de-deus-sem-dd-01-criador-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gênesis 1:2, o Espírito de Deus pairava sobre as águas.",
+    "prompt": "Em Gênesis 1:2, o Espírito de Deus pairava sobre as águas.",
+    "cue": "Em Gênesis 1:2, o Espírito de Deus pairava sobre as águas.",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+    "feedbackCorrect": "Antes da luz, o Espírito de Deus já pairava sobre as águas.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Gênesis 1:2 para ver quem pairava sobre as águas."
+    },
+    "hint": "Olhe o fim do segundo versículo.",
+    "learningObjective": "Observar que o Espírito de Deus já está presente antes da ordem.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-01-criador-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+    "prompt": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+    "cue": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+    "verseRef": "Gênesis 1:1",
+    "passageText": "No princípio, Deus criou os céus e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a terra"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "No princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus criou",
+    "feedbackCorrect": "Ele é o sujeito da primeira frase da Bíblia: é ele quem cria.",
+    "feedbackWrong": {
+      "a": "A terra é o que foi criado, não quem criou.",
+      "c": "\"No princípio\" diz quando, não quem."
+    },
+    "hint": "Procure quem faz a ação de criar.",
+    "learningObjective": "Identificar Deus como autor da criação.",
+    "evidence": [
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-01-criador-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gênesis 1:2, como estava a terra no começo?",
+    "prompt": "Segundo Gênesis 1:2, como estava a terra no começo?",
+    "cue": "Segundo Gênesis 1:2, como estava a terra no começo?",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem forma e vazia"
+      },
+      {
+        "id": "b",
+        "text": "Cheia de plantas e animais"
+      },
+      {
+        "id": "c",
+        "text": "Iluminada pelo sol"
+      },
+      {
+        "id": "d",
+        "text": "Já habitada pelo ser humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estava sem forma e vazia",
+    "feedbackCorrect": "O texto descreve a terra ainda sem forma e vazia, à espera da ação de Deus.",
+    "feedbackWrong": {
+      "b": "Plantas e animais não aparecem nestes versos iniciais.",
+      "c": "Havia trevas; a luz só vem no versículo seguinte.",
+      "d": "Nenhum ser humano aparece neste começo do relato."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar o estado inicial da terra.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-01-criador-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gênesis 1:2 na ordem do texto.",
+    "prompt": "Monte Gênesis 1:2 na ordem do texto.",
+    "cue": "Monte Gênesis 1:2 na ordem do texto.",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra, porém, estava sem forma e vazia"
+      },
+      {
+        "id": "b",
+        "text": "havia trevas sobre a face do abismo"
+      },
+      {
+        "id": "c",
+        "text": "o Espírito de Deus pairava sobre as águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+    "feedbackCorrect": "É a sequência do versículo: terra vazia, trevas, e o Espírito pairando.",
+    "feedbackWrong": {
+      "default": "Comece pela terra sem forma; o Espírito aparece no fim do versículo."
+    },
+    "hint": "O versículo começa pela terra.",
+    "learningObjective": "Reconhecer a sequência de Gênesis 1:2.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-01-criador-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gênesis 1:2, o que havia sobre a face do abismo?",
+    "prompt": "Em Gênesis 1:2, o que havia sobre a face do abismo?",
+    "cue": "Em Gênesis 1:2, o que havia sobre a face do abismo?",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "template": "A terra, porém, estava sem forma e vazia; havia ___ sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "havia trevas sobre a face do abismo",
+    "feedbackCorrect": "Antes da luz havia trevas sobre o abismo, o ponto de partida da obra de Deus.",
+    "feedbackWrong": {
+      "b": "As águas aparecem no fim do versículo; sobre o abismo havia outra coisa.",
+      "c": "A luz só surge quando Deus fala, no versículo seguinte."
+    },
+    "hint": "O que existia antes de Deus fazer a luz?",
+    "learningObjective": "Lembrar o cenário inicial da criação.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-01-criador-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "verseRef": "Gênesis 1:1",
+    "passageText": "No princípio, Deus criou os céus e a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes de qualquer coisa existir, já havia Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus existe antes de tudo"
+      },
+      {
+        "id": "b",
+        "text": "O mundo começa por acaso"
+      },
+      {
+        "id": "c",
+        "text": "A terra sempre existiu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "No princípio, Deus criou",
+    "feedbackCorrect": "\"No princípio, Deus\": ele já está lá quando tudo começa.",
+    "feedbackWrong": {
+      "b": "O texto dá um autor ao começo: Deus criou.",
+      "c": "A terra tem começo; só Deus está antes dele."
+    },
+    "hint": "Veja quem já está presente no princípio.",
+    "learningObjective": "Ligar Gênesis 1:1 à ideia de que Deus precede tudo.",
+    "evidence": [
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-01-criador-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gênesis 1:1–2, a terra aparece pronta e ordenada logo depois da criação dos céus e da terra.",
+    "prompt": "Em Gênesis 1:1–2, a terra aparece pronta e ordenada logo depois da criação dos céus e da terra.",
+    "cue": "Em Gênesis 1:1–2, a terra aparece pronta e ordenada logo depois da criação dos céus e da terra.",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+    "feedbackCorrect": "O \"porém\" marca o contraste: criada, a terra ainda estava sem forma e vazia.",
+    "feedbackWrong": {
+      "true": "Releia o começo de Gênesis 1:2 e veja como a terra é descrita ali."
+    },
+    "hint": "Repare na palavra que liga os dois versículos.",
+    "learningObjective": "Compreender o contraste entre Gênesis 1:1 e 1:2.",
+    "evidence": [
+      "Gênesis 1:1–2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-01-criador-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gênesis 1:2, toque a palavra que marca o contraste com o versículo anterior.",
+    "prompt": "Em Gênesis 1:2, toque a palavra que marca o contraste com o versículo anterior.",
+    "cue": "Em Gênesis 1:2, toque a palavra que marca o contraste com o versículo anterior.",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobre"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "havia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A terra, porém,",
+    "feedbackCorrect": "Essa palavra vira a página: Deus criou tudo, mas a terra ainda estava vazia.",
+    "feedbackWrong": {
+      "a": "\"Sobre\" indica lugar, não contraste.",
+      "c": "\"Havia\" só descreve o que existia; o contraste vem antes."
+    },
+    "hint": "Procure uma palavra curta entre vírgulas.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-01-criador-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gênesis 1:2 se relaciona com Gênesis 1:1?",
+    "prompt": "Como Gênesis 1:2 se relaciona com Gênesis 1:1?",
+    "cue": "Como Gênesis 1:2 se relaciona com Gênesis 1:1?",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conta uma segunda criação, feita depois da primeira"
+      },
+      {
+        "id": "b",
+        "text": "Mostra a terra surgindo sem a ação de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Explica de que material Deus fez os céus"
+      },
+      {
+        "id": "d",
+        "text": "Mostra a terra ainda sem forma, à espera de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+    "feedbackCorrect": "Depois de dizer que Deus criou tudo, o texto mostra a terra ainda sem forma.",
+    "feedbackWrong": {
+      "a": "O texto não conta duas criações; continua a mesma cena.",
+      "b": "A terra está dentro do que Deus criou no primeiro versículo.",
+      "c": "O texto não fala de material; fala de como a terra estava."
+    },
+    "hint": "Pense no que a palavra de contraste faz entre os versículos.",
+    "learningObjective": "Relacionar a afirmação de 1:1 com a descrição de 1:2.",
+    "evidence": [
+      "Gênesis 1:1–2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-01-criador-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Gênesis 1:2–3?",
+    "prompt": "Como avança a cena em Gênesis 1:2–3?",
+    "cue": "Como avança a cena em Gênesis 1:2–3?",
+    "verseRef": "Gênesis 1:2–3",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra ainda está vazia e escura"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito de Deus está sobre as águas"
+      },
+      {
+        "id": "c",
+        "text": "A palavra de Deus traz a luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e houve luz",
+    "feedbackCorrect": "Primeiro o vazio, depois a presença de Deus, e então a palavra que traz luz.",
+    "feedbackWrong": {
+      "default": "A palavra de Deus vem por último: antes, o vazio e o Espírito presente."
+    },
+    "hint": "A luz é o ponto de chegada da cena.",
+    "learningObjective": "Compreender o movimento do vazio à luz.",
+    "evidence": [
+      "Gênesis 1:2–3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-01-criador-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+    "prompt": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+    "cue": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+    "verseRef": "Gênesis 1:3",
+    "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+    "template": "Disse Deus: \"Que haja luz\"; e ___ luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "faltou"
+      },
+      {
+        "id": "b",
+        "text": "houve"
+      },
+      {
+        "id": "c",
+        "text": "pediu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e houve luz",
+    "feedbackCorrect": "A palavra de Deus se cumpre na hora, sem esforço nem demora.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário: a luz passa a existir.",
+      "c": "Quem fala é Deus, e o que ele diz acontece; não há pedido."
+    },
+    "hint": "A frase mostra o resultado da palavra de Deus.",
+    "learningObjective": "Compreender que a palavra de Deus produz o que diz.",
+    "evidence": [
+      "Gênesis 1:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-01-criador-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gênesis 1:3 a Salmos 33:9?",
+    "prompt": "O que liga Gênesis 1:3 a Salmos 33:9?",
+    "cue": "O que liga Gênesis 1:3 a Salmos 33:9?",
+    "verseRef": "Gênesis 1:3",
+    "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+    "passageA": {
+      "ref": "Gênesis 1:3",
+      "text": "Disse Deus: \"Que haja luz\"; e houve luz."
+    },
+    "passageB": {
+      "ref": "Salmos 33:9",
+      "text": "Porque ele falou, e tudo se fez; ordenou, e tudo passou a existir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria com esforço"
+      },
+      {
+        "id": "b",
+        "text": "O mundo nasce do caos"
+      },
+      {
+        "id": "c",
+        "text": "Deus cria pela palavra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Disse Deus",
+    "feedbackCorrect": "Nos dois textos, basta Deus falar para que aconteça.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos fala de esforço: ele falou, e tudo se fez.",
+      "b": "Quem faz existir é a palavra de Deus, não o caos."
+    },
+    "hint": "Compare o verbo que abre os dois trechos.",
+    "learningObjective": "Relacionar a criação pela palavra em Gênesis e nos Salmos.",
+    "evidence": [
+      "Gênesis 1:3",
+      "Salmos 33:9"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-01-criador-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gênesis 1:1–2 apresenta o vazio e as trevas como ponto de partida da obra de Deus, não como rivais dele.",
+    "prompt": "Gênesis 1:1–2 apresenta o vazio e as trevas como ponto de partida da obra de Deus, não como rivais dele.",
+    "cue": "Gênesis 1:1–2 apresenta o vazio e as trevas como ponto de partida da obra de Deus, não como rivais dele.",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+    "feedbackCorrect": "Não há combate: Deus cria, e seu Espírito paira sobre o vazio para dar forma a ele.",
+    "feedbackWrong": {
+      "false": "O texto não mostra luta; mostra Deus presente sobre o vazio, prestes a agir."
+    },
+    "hint": "Veja o que o Espírito de Deus está fazendo.",
+    "learningObjective": "Interpretar o vazio inicial como matéria da obra de Deus, não como rival.",
+    "evidence": [
+      "Gênesis 1:1–2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-01-criador-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+    "prompt": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+    "cue": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "face do abismo"
+      },
+      {
+        "id": "c",
+        "text": "Espírito de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+    "feedbackCorrect": "Ele já está ali, sobre as águas, antes da primeira palavra criadora.",
+    "feedbackWrong": {
+      "a": "As trevas descrevem a terra antes da luz; a presença vem no fim do verso.",
+      "b": "O abismo descreve o cenário, não a presença de Deus."
+    },
+    "hint": "Procure alguém presente, não um lugar.",
+    "learningObjective": "Sustentar com o texto que Deus está presente desde o início.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-01-criador-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gênesis 1:1–2 sustenta sobre o começo do mundo?",
+    "prompt": "Que leitura Gênesis 1:1–2 sustenta sobre o começo do mundo?",
+    "cue": "Que leitura Gênesis 1:1–2 sustenta sobre o começo do mundo?",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O vazio é uma força rival que Deus precisa vencer"
+      },
+      {
+        "id": "b",
+        "text": "Deus fez o mundo e depois se afastou dele"
+      },
+      {
+        "id": "c",
+        "text": "O caos existia antes de Deus, como matéria sem dono"
+      },
+      {
+        "id": "d",
+        "text": "Deus está antes de tudo e presente desde o início"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+    "feedbackCorrect": "O texto começa com Deus criando, e seu Espírito já paira sobre a terra vazia.",
+    "feedbackWrong": {
+      "a": "Não há batalha: o Espírito paira em paz sobre as águas.",
+      "b": "A presença sobre as águas desmente um Deus distante após criar.",
+      "c": "Nada aparece antes de Deus no relato do princípio."
+    },
+    "hint": "Compare cada opção com o começo e o fim do trecho.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a origem do mundo.",
+    "evidence": [
+      "Gênesis 1:1–2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-01-criador-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+    "prompt": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+    "cue": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+    "verseRef": "Gênesis 1:3",
+    "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria a luz pela sua palavra"
+      },
+      {
+        "id": "b",
+        "text": "Deus faz sua luz brilhar no coração"
+      },
+      {
+        "id": "c",
+        "text": "Na cidade eterna, Deus será a luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e houve luz",
+    "feedbackCorrect": "A luz da criação aponta para a luz de Deus no coração e para a luz eterna.",
+    "feedbackWrong": {
+      "default": "Siga a história: criação, fé e eternidade, nessa ordem bíblica."
+    },
+    "hint": "Siga a ordem da história bíblica: criação, igreja, eternidade.",
+    "learningObjective": "Ver Gênesis 1:3 como começo de um fio que atravessa a Bíblia.",
+    "evidence": [
+      "Gênesis 1:3",
+      "2 Coríntios 4:6",
+      "Apocalipse 22:5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-01-criador-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gênesis 1:1, que verbo mostra o que Deus faz no princípio?",
+    "prompt": "Em Gênesis 1:1, que verbo mostra o que Deus faz no princípio?",
+    "cue": "Em Gênesis 1:1, que verbo mostra o que Deus faz no princípio?",
+    "verseRef": "Gênesis 1:1",
+    "passageText": "No princípio, Deus criou os céus e a terra.",
+    "template": "No princípio, Deus ___ os céus e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "encontrou"
+      },
+      {
+        "id": "b",
+        "text": "criou"
+      },
+      {
+        "id": "c",
+        "text": "organizou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus criou os céus e a terra",
+    "feedbackCorrect": "No texto, só Deus é sujeito desse verbo: ele faz existir, não só arruma.",
+    "feedbackWrong": {
+      "a": "Deus não acha o mundo pronto; ele o faz existir.",
+      "c": "Organizar supõe algo antes; o texto diz que Deus fez os céus e a terra."
+    },
+    "hint": "É o verbo que dá nome a esta cena.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+    "evidence": [
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-01-criador-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gênesis 1:1 a João 1:3?",
+    "prompt": "O que liga Gênesis 1:1 a João 1:3?",
+    "cue": "O que liga Gênesis 1:1 a João 1:3?",
+    "verseRef": "Gênesis 1:1",
+    "passageText": "No princípio, Deus criou os céus e a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "João 1:3",
+      "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma segunda criação do mundo"
+      },
+      {
+        "id": "b",
+        "text": "Anjos ajudando Deus a criar"
+      },
+      {
+        "id": "c",
+        "text": "Cristo presente na criação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "No princípio, Deus criou",
+    "feedbackCorrect": "João relê Gênesis: o Verbo, Jesus, estava no princípio e tudo foi feito por ele.",
+    "feedbackWrong": {
+      "a": "João fala da mesma criação de Gênesis, não de outra.",
+      "b": "Nenhum dos textos fala de anjos ajudando a criar."
+    },
+    "hint": "Veja o que João diz sobre por meio de quem tudo foi feito.",
+    "learningObjective": "Ligar a criação de Gênesis à pessoa de Cristo, como o NT faz.",
+    "evidence": [
+      "Gênesis 1:1",
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-02-santo-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+    "prompt": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+    "cue": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+    "verseRef": "Isaías 6:2",
+    "passageText": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cada um tinha seis asas",
+    "feedbackCorrect": "O texto diz que cada serafim tinha seis asas, não quatro.",
+    "feedbackWrong": {
+      "true": "Releia Isaías 6:2 e conte as asas de cada serafim."
+    },
+    "hint": "Conte as asas descritas no versículo.",
+    "learningObjective": "Observar como o texto descreve os serafins.",
+    "evidence": [
+      "Isaías 6:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-02-santo-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+    "prompt": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+    "cue": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda a terra"
+      },
+      {
+        "id": "b",
+        "text": "uns aos outros"
+      },
+      {
+        "id": "c",
+        "text": "Santo, santo, santo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "Três vezes seguidas, os serafins declaram quem o Senhor é.",
+    "feedbackWrong": {
+      "a": "Isso fala do alcance da glória, depois da proclamação.",
+      "b": "Isso diz a quem eles falam, não o que proclamam sobre o Senhor."
+    },
+    "hint": "Ouça a proclamação repetida três vezes.",
+    "learningObjective": "Identificar a proclamação dos serafins sobre Deus.",
+    "evidence": [
+      "Isaías 6:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-02-santo-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Isaías 6:1, como Isaías vê o Senhor?",
+    "prompt": "Segundo Isaías 6:1, como Isaías vê o Senhor?",
+    "cue": "Segundo Isaías 6:1, como Isaías vê o Senhor?",
+    "verseRef": "Isaías 6:1",
+    "passageText": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assentado sobre um alto e sublime trono"
+      },
+      {
+        "id": "b",
+        "text": "Caminhando entre o povo na rua"
+      },
+      {
+        "id": "c",
+        "text": "Dormindo dentro do templo"
+      },
+      {
+        "id": "d",
+        "text": "Escondido atrás do altar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+    "feedbackCorrect": "Isaías vê o Senhor como Rei, assentado em um trono alto e sublime.",
+    "feedbackWrong": {
+      "b": "A cena acontece no templo, com o Senhor no trono.",
+      "c": "O Senhor está assentado no trono, enchendo o templo com suas vestes.",
+      "d": "Nada esconde o Senhor; Isaías o vê no trono."
+    },
+    "hint": "Leia onde o Senhor está na visão.",
+    "learningObjective": "Observar o Senhor como Rei na visão de Isaías.",
+    "evidence": [
+      "Isaías 6:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-02-santo-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Isaías 6:2 na ordem do texto.",
+    "prompt": "Monte Isaías 6:2 na ordem do texto.",
+    "cue": "Monte Isaías 6:2 na ordem do texto.",
+    "verseRef": "Isaías 6:2",
+    "passageText": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os serafins estavam acima dele"
+      },
+      {
+        "id": "b",
+        "text": "cada um tinha seis asas"
+      },
+      {
+        "id": "c",
+        "text": "com duas cobria o rosto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Os serafins estavam acima dele",
+    "feedbackCorrect": "Primeiro onde eles estavam, depois quantas asas tinham e como as usavam.",
+    "feedbackWrong": {
+      "default": "Comece pela posição dos serafins; o rosto coberto vem depois."
+    },
+    "hint": "O versículo começa dizendo onde os serafins estavam.",
+    "learningObjective": "Reconhecer a sequência de Isaías 6:2.",
+    "evidence": [
+      "Isaías 6:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-02-santo-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Isaías 6:1, sobre o que o Senhor está assentado?",
+    "prompt": "Em Isaías 6:1, sobre o que o Senhor está assentado?",
+    "cue": "Em Isaías 6:1, sobre o que o Senhor está assentado?",
+    "verseRef": "Isaías 6:1",
+    "passageText": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo.",
+    "template": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime ___; e as abas de suas vestes enchiam o templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "templo"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "altar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assentado sobre um alto e sublime trono",
+    "feedbackCorrect": "O Senhor é visto como Rei, assentado em um trono alto e sublime.",
+    "feedbackWrong": {
+      "a": "O templo é o lugar da visão; o Senhor está assentado sobre outra coisa.",
+      "c": "O altar aparece só no fim do trecho, com a brasa viva."
+    },
+    "hint": "Procure o assento do Rei na visão.",
+    "learningObjective": "Lembrar como o Senhor aparece na visão.",
+    "evidence": [
+      "Isaías 6:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-02-santo-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No templo, seres celestiais proclamam quem Deus é."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O templo está vazio e silencioso"
+      },
+      {
+        "id": "b",
+        "text": "Deus é santo e glorioso"
+      },
+      {
+        "id": "c",
+        "text": "Deus é comum e sem glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "O clamor dos serafins apresenta um Deus santo, cuja glória enche a terra.",
+    "feedbackWrong": {
+      "a": "O templo está cheio de vozes, fumaça e presença.",
+      "c": "A proclamação repetida mostra o contrário: ele é três vezes santo."
+    },
+    "hint": "Veja o que os serafins repetem sobre o Senhor.",
+    "learningObjective": "Ligar Isaías 6:3 à santidade e glória de Deus.",
+    "evidence": [
+      "Isaías 6:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-02-santo-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Isaías 6:5–6, um serafim voa até Isaías antes de ele confessar os lábios impuros.",
+    "prompt": "Em Isaías 6:5–6, um serafim voa até Isaías antes de ele confessar os lábios impuros.",
+    "cue": "Em Isaías 6:5–6, um serafim voa até Isaías antes de ele confessar os lábios impuros.",
+    "verseRef": "Isaías 6:5–6",
+    "passageText": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos! Então, um dos serafins voou até mim, trazendo na mão uma brasa viva que havia removido do altar com uma tenaz;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Então, um dos serafins voou até mim",
+    "feedbackCorrect": "Isaías confessa no verso 5; só depois o serafim voa até ele.",
+    "feedbackWrong": {
+      "true": "Releia a ordem dos versos 5 e 6: confissão primeiro, voo depois."
+    },
+    "hint": "Compare a ordem dos dois versículos.",
+    "learningObjective": "Compreender a ordem entre confissão e a vinda do serafim.",
+    "evidence": [
+      "Isaías 6:5–6"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-02-santo-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+    "prompt": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+    "cue": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+    "verseRef": "Isaías 6:5",
+    "passageText": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "impuros"
+      },
+      {
+        "id": "b",
+        "text": "perdido"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Então eu disse",
+    "feedbackCorrect": "Depois da visão e do clamor, Isaías reage confessando sua situação.",
+    "feedbackWrong": {
+      "a": "\"Impuros\" descreve os lábios; a reação começa no início do verso.",
+      "b": "\"Perdido\" é o que ele sente; a reação começa antes dessa palavra."
+    },
+    "hint": "Procure a primeira palavra da fala de Isaías.",
+    "learningObjective": "Reconhecer o marcador que liga a visão à reação de Isaías.",
+    "evidence": [
+      "Isaías 6:5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-02-santo-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a proclamação dos serafins se relaciona com a reação de Isaías?",
+    "prompt": "Como a proclamação dos serafins se relaciona com a reação de Isaías?",
+    "cue": "Como a proclamação dos serafins se relaciona com a reação de Isaías?",
+    "verseRef": "Isaías 6:5",
+    "passageText": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ao ouvir quem Deus é, ele pede para sair do templo"
+      },
+      {
+        "id": "b",
+        "text": "Ao ouvir quem Deus é, ele corrige os serafins"
+      },
+      {
+        "id": "c",
+        "text": "Ao ouvir quem Deus é, ele se sente pronto e sem falta"
+      },
+      {
+        "id": "d",
+        "text": "Ao ouvir quem Deus é, ele reconhece a própria impureza"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "sou homem de lábios impuros",
+    "feedbackCorrect": "Diante do Deus três vezes santo, Isaías percebe os próprios lábios impuros.",
+    "feedbackWrong": {
+      "a": "Ele não pede para sair; confessa sua condição diante do Rei.",
+      "b": "Ele não corrige ninguém; reconhece a si mesmo no povo impuro.",
+      "c": "Ele diz estar perdido, não pronto nem sem falta."
+    },
+    "hint": "Veja o que Isaías diz de si logo depois do clamor.",
+    "learningObjective": "Relacionar a santidade proclamada com a confissão de Isaías.",
+    "evidence": [
+      "Isaías 6:3–5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-02-santo-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Isaías 6:1–5?",
+    "prompt": "Como avança a cena em Isaías 6:1–5?",
+    "cue": "Como avança a cena em Isaías 6:1–5?",
+    "verseRef": "Isaías 6:1–2",
+    "passageText": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo. Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é visto no trono"
+      },
+      {
+        "id": "b",
+        "text": "Os serafins proclamam sua santidade"
+      },
+      {
+        "id": "c",
+        "text": "Isaías reconhece os lábios impuros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+    "feedbackCorrect": "A cena vai do trono ao clamor, e do clamor à confissão de Isaías.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Isaías vê; a confissão dele fecha esse movimento."
+    },
+    "hint": "A confissão de Isaías é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da visão até a confissão.",
+    "evidence": [
+      "Isaías 6:1–5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-02-santo-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Isaías 6:4, de que a casa se encheu quando o serafim clamava?",
+    "prompt": "Em Isaías 6:4, de que a casa se encheu quando o serafim clamava?",
+    "cue": "Em Isaías 6:4, de que a casa se encheu quando o serafim clamava?",
+    "verseRef": "Isaías 6:4",
+    "passageText": "E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça.",
+    "template": "E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "água"
+      },
+      {
+        "id": "b",
+        "text": "poeira"
+      },
+      {
+        "id": "c",
+        "text": "fumaça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a casa se encheu de fumaça",
+    "feedbackCorrect": "A voz que clama sacode os umbrais, e a casa se enche disso: a presença é real.",
+    "feedbackWrong": {
+      "a": "Não há água nesta cena do templo; veja o fim do versículo.",
+      "b": "O que enche a casa vem da presença de Deus, não do chão."
+    },
+    "hint": "Leia o que acontece depois que os umbrais se agitam.",
+    "learningObjective": "Compreender os sinais da presença de Deus no templo.",
+    "evidence": [
+      "Isaías 6:4"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-02-santo-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+    "prompt": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+    "cue": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+    },
+    "passageB": {
+      "ref": "Apocalipse 4:8",
+      "text": "Os quatro seres viventes tinham cada um deles seis asas, cheias de olhos ao redor e por dentro; não descansavam nem de dia nem de noite, proclamando: Santo, Santo, Santo é o Senhor Deus, o Todo-Poderoso, que era, que é e que há de vir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seres que escondem Deus"
+      },
+      {
+        "id": "b",
+        "text": "O mesmo clamor de santidade"
+      },
+      {
+        "id": "c",
+        "text": "Um silêncio total no céu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "Nos dois textos, seres celestiais repetem sem parar que Deus é santo.",
+    "feedbackWrong": {
+      "a": "Eles não escondem Deus; anunciam quem ele é.",
+      "c": "Nos dois textos há proclamação contínua, não silêncio."
+    },
+    "hint": "Compare o que os seres celestiais dizem nos dois textos.",
+    "learningObjective": "Relacionar o clamor de Isaías com o louvor celestial do Apocalipse.",
+    "evidence": [
+      "Isaías 6:3",
+      "Apocalipse 4:8"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-02-santo-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Isaías 6:5 mostra que, diante do Rei santo, Isaías reconhece os próprios lábios impuros.",
+    "prompt": "Isaías 6:5 mostra que, diante do Rei santo, Isaías reconhece os próprios lábios impuros.",
+    "cue": "Isaías 6:5 mostra que, diante do Rei santo, Isaías reconhece os próprios lábios impuros.",
+    "verseRef": "Isaías 6:5",
+    "passageText": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "sou homem de lábios impuros",
+    "feedbackCorrect": "Diante do três vezes santo, Isaías confessa sua impureza e a do povo.",
+    "feedbackWrong": {
+      "false": "Releia a reação de Isaías logo depois do clamor dos serafins."
+    },
+    "hint": "Veja o que Isaías diz de si depois do clamor.",
+    "learningObjective": "Interpretar a confissão de Isaías como efeito de ver o Deus santo.",
+    "evidence": [
+      "Isaías 6:3–5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-02-santo-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Isaías 6:5, toque o trecho em que Isaías descreve a si mesmo diante do Rei.",
+    "prompt": "Em Isaías 6:5, toque o trecho em que Isaías descreve a si mesmo diante do Rei.",
+    "cue": "Em Isaías 6:5, toque o trecho em que Isaías descreve a si mesmo diante do Rei.",
+    "verseRef": "Isaías 6:5",
+    "passageText": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "lábios impuros"
+      },
+      {
+        "id": "b",
+        "text": "meus olhos"
+      },
+      {
+        "id": "c",
+        "text": "o Rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sou homem de lábios impuros",
+    "feedbackCorrect": "Ele não se compara ao povo; inclui a si mesmo entre os impuros.",
+    "feedbackWrong": {
+      "b": "Os olhos viram o Rei; a descrição dele mesmo fala dos lábios.",
+      "c": "O Rei é quem Isaías viu, não como ele se descreve."
+    },
+    "hint": "Procure como Isaías chama a si mesmo.",
+    "learningObjective": "Sustentar com o texto a confissão pessoal de Isaías.",
+    "evidence": [
+      "Isaías 6:5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-02-santo-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Isaías 6:1–6 sustenta sobre o Deus santo?",
+    "prompt": "Que leitura Isaías 6:1–6 sustenta sobre o Deus santo?",
+    "cue": "Que leitura Isaías 6:1–6 sustenta sobre o Deus santo?",
+    "verseRef": "Isaías 6:1–2",
+    "passageText": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo. Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele aceita a impureza sem que ela seja notada"
+      },
+      {
+        "id": "b",
+        "text": "Ele é glorioso e vem ao encontro de quem confessa"
+      },
+      {
+        "id": "c",
+        "text": "Ele fica distante e não se aproxima de ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Ele impressiona, mas não muda quem o vê"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+    "feedbackCorrect": "O Rei glorioso é visto, Isaías confessa, e um serafim voa até ele.",
+    "feedbackWrong": {
+      "a": "A impureza é notada e nomeada por Isaías diante do Rei.",
+      "c": "Um serafim voa até Isaías: há aproximação, não distância fria.",
+      "d": "Isaías muda na hora: declara-se perdido e confessa seus lábios."
+    },
+    "hint": "Siga a cena até o serafim que voa até Isaías.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o Deus santo.",
+    "evidence": [
+      "Isaías 6:1–6"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-02-santo-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+    "prompt": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+    "cue": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Serafins proclamam o Deus três vezes santo"
+      },
+      {
+        "id": "b",
+        "text": "Seres no céu repetem o mesmo clamor"
+      },
+      {
+        "id": "c",
+        "text": "O povo de Deus é chamado a ser santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "O clamor do templo ecoa no céu e vira chamado para a vida do povo.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Isaías, Apocalipse e o chamado de Pedro, nessa ordem."
+    },
+    "hint": "Siga a ordem da Bíblia: profeta, Apocalipse, carta.",
+    "learningObjective": "Ver a santidade de Deus como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Isaías 6:3",
+      "Apocalipse 4:8",
+      "1 Pedro 1:16"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-02-santo-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+    "prompt": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+    "cue": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "template": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "honra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "toda a terra está repleta da sua glória",
+    "feedbackCorrect": "Não é só o templo: toda a terra está repleta dessa presença gloriosa.",
+    "feedbackWrong": {
+      "a": "Não é reputação entre pessoas; é a presença que enche a terra.",
+      "c": "A palavra do texto fala da grandeza que enche a terra inteira."
+    },
+    "hint": "É a palavra final da proclamação dos serafins.",
+    "learningObjective": "Lembrar o termo que carrega o alcance da presença de Deus.",
+    "evidence": [
+      "Isaías 6:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-02-santo-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Isaías 6:3 a 1 Pedro 1:16?",
+    "prompt": "O que liga Isaías 6:3 a 1 Pedro 1:16?",
+    "cue": "O que liga Isaías 6:3 a 1 Pedro 1:16?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+    },
+    "passageB": {
+      "ref": "1 Pedro 1:16",
+      "text": "Sede santos, pois eu sou santo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santidade sem obediência"
+      },
+      {
+        "id": "b",
+        "text": "Chamados a ser santos"
+      },
+      {
+        "id": "c",
+        "text": "Santos só no templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "Pedro liga quem Deus é ao modo de viver de quem pertence a ele.",
+    "feedbackWrong": {
+      "a": "Pedro escreve a quem deve viver de modo santo em tudo.",
+      "c": "O chamado de Pedro vale para a vida toda, não só para o templo."
+    },
+    "hint": "Veja o chamado que Pedro faz a partir de quem Deus é.",
+    "learningObjective": "Ligar a santidade de Deus ao chamado para uma vida santa.",
+    "evidence": [
+      "Isaías 6:3",
+      "1 Pedro 1:16"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-03-trino-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 28:17, os discípulos adoraram Jesus quando o viram.",
+    "prompt": "Em Mateus 28:17, os discípulos adoraram Jesus quando o viram.",
+    "cue": "Em Mateus 28:17, os discípulos adoraram Jesus quando o viram.",
+    "verseRef": "Mateus 28:17",
+    "passageText": "Quando o viram, adoraram-no; mas alguns hesitaram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Quando o viram, adoraram-no",
+    "feedbackCorrect": "Ao ver Jesus ressuscitado, os discípulos o adoraram.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 28:17 e veja o que eles fizeram ao ver Jesus."
+    },
+    "hint": "Veja a primeira reação ao ver Jesus.",
+    "learningObjective": "Observar a adoração dos discípulos ao Jesus ressuscitado.",
+    "evidence": [
+      "Mateus 28:17"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-03-trino-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 28:19, toque quem é nomeado junto com o Pai e o Filho no batismo.",
+    "prompt": "Em Mateus 28:19, toque quem é nomeado junto com o Pai e o Filho no batismo.",
+    "cue": "Em Mateus 28:19, toque quem é nomeado junto com o Pai e o Filho no batismo.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "todas as nações"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "Pai, Filho e ele são nomeados juntos, em um só nome, no batismo.",
+    "feedbackWrong": {
+      "a": "O Pai é um dos nomeados; falta quem vem depois do Filho.",
+      "c": "As nações são quem recebe os discípulos, não quem é nomeado no batismo."
+    },
+    "hint": "Leia os três nomeados no fim do versículo.",
+    "learningObjective": "Identificar quem é nomeado junto no batismo.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-03-trino-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+    "prompt": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+    "cue": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fazer discípulos de todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "Construir templos em cada cidade"
+      },
+      {
+        "id": "c",
+        "text": "Escolher reis para cada povo"
+      },
+      {
+        "id": "d",
+        "text": "Voltar logo para Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio é para fazer discípulos em todas as nações, batizando e ensinando.",
+    "feedbackWrong": {
+      "b": "O texto fala de pessoas formadas, não de construções.",
+      "c": "Nenhum rei é escolhido; o alvo são discípulos em cada nação.",
+      "d": "A ordem é ir às nações, não voltar para Jerusalém."
+    },
+    "hint": "Leia o começo da ordem de Jesus.",
+    "learningObjective": "Observar o alvo do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-03-trino-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:20 na ordem do texto.",
+    "prompt": "Monte Mateus 28:20 na ordem do texto.",
+    "cue": "Monte Mateus 28:20 na ordem do texto.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinando-os a observar tudo o que vos ordenei"
+      },
+      {
+        "id": "b",
+        "text": "e eis que estou convosco todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "até a consumação do século"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "Ensinar, a promessa da presença diária e o alcance até o fim: nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino; a promessa de presença fecha o trecho."
+    },
+    "hint": "O trecho começa com o que os discípulos devem ensinar.",
+    "learningObjective": "Reconhecer a sequência de Mateus 28:20.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-03-trino-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+    "prompt": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+    "cue": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+    "verseRef": "Mateus 28:16",
+    "passageText": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado.",
+    "template": "Os onze discípulos seguiram para a ___, rumo ao monte que Jesus lhes havia designado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Galileia"
+      },
+      {
+        "id": "c",
+        "text": "Nazaré"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os onze discípulos seguiram para a Galileia",
+    "feedbackCorrect": "Eles foram ao monte designado por Jesus, na região indicada por ele.",
+    "feedbackWrong": {
+      "a": "A cidade santa não é o destino aqui; veja o rumo do monte designado.",
+      "c": "A cidade da infância de Jesus não é citada neste encontro final."
+    },
+    "hint": "Veja o rumo que eles tomam para o monte.",
+    "learningObjective": "Lembrar o lugar do encontro com Jesus ressuscitado.",
+    "evidence": [
+      "Mateus 28:16"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-03-trino-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus ressuscitado envia os onze a todas as nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um envio a todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "Um envio só para um povo"
+      },
+      {
+        "id": "c",
+        "text": "Um fim para a missão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio de Jesus alcança todas as nações, sem ficar em um só povo.",
+    "feedbackWrong": {
+      "b": "O alcance é de todas as nações, não de um povo só.",
+      "c": "É um começo de missão, não o fim dela."
+    },
+    "hint": "Veja até onde vai o envio de Jesus.",
+    "learningObjective": "Ligar Mateus 28:19 ao alcance universal do envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-03-trino-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:18–19, o envio dos discípulos vem depois de Jesus afirmar que recebeu toda a autoridade.",
+    "prompt": "Em Mateus 28:18–19, o envio dos discípulos vem depois de Jesus afirmar que recebeu toda a autoridade.",
+    "cue": "Em Mateus 28:18–19, o envio dos discípulos vem depois de Jesus afirmar que recebeu toda a autoridade.",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Primeiro a autoridade de Jesus; depois, o envio fundado nela.",
+    "feedbackWrong": {
+      "false": "Releia a ordem: a declaração sobre autoridade vem antes do envio."
+    },
+    "hint": "Compare a ordem dos dois versículos.",
+    "learningObjective": "Compreender que o envio se apoia na autoridade de Jesus.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-03-trino-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "Portanto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Portanto, vão e façam discípulos",
+    "feedbackCorrect": "Essa palavra mostra que o envio nasce do que Jesus acabou de afirmar.",
+    "feedbackWrong": {
+      "a": "Isso é o que eles devem fazer, não a ligação com a autoridade.",
+      "b": "Isso é até onde eles vão, não a ligação com a autoridade."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que liga autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-03-trino-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+    "prompt": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+    "cue": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A autoridade de Jesus dispensa o envio"
+      },
+      {
+        "id": "b",
+        "text": "O envio vale só enquanto Jesus está longe"
+      },
+      {
+        "id": "c",
+        "text": "A autoridade de Jesus é a base do envio"
+      },
+      {
+        "id": "d",
+        "text": "O envio dá autoridade a Jesus pela primeira vez"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Jesus envia porque toda a autoridade no céu e na terra lhe foi dada.",
+    "feedbackWrong": {
+      "a": "Logo depois de afirmar sua autoridade, ele envia: não dispensa.",
+      "b": "Ele promete estar presente todos os dias, não longe dos enviados.",
+      "d": "A autoridade já foi dada antes do envio; o envio nasce dela."
+    },
+    "hint": "Veja a palavra que abre o versículo do envio.",
+    "learningObjective": "Relacionar a autoridade de Jesus com o envio dos discípulos.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-03-trino-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 28:18–20?",
+    "prompt": "Como avança a cena em Mateus 28:18–20?",
+    "cue": "Como avança a cena em Mateus 28:18–20?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus afirma ter toda a autoridade"
+      },
+      {
+        "id": "b",
+        "text": "Jesus envia a fazer discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Jesus promete estar com eles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade declarada, envio dado e presença prometida: nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Jesus afirma sobre si; a promessa fecha a cena."
+    },
+    "hint": "A promessa de presença é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Mateus 28:18–20.",
+    "evidence": [
+      "Mateus 28:18–20"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-03-trino-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 28:20, que palavra mostra que Jesus fica junto dos discípulos?",
+    "prompt": "Em Mateus 28:20, que palavra mostra que Jesus fica junto dos discípulos?",
+    "cue": "Em Mateus 28:20, que palavra mostra que Jesus fica junto dos discípulos?",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "template": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou ___ todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "longe"
+      },
+      {
+        "id": "c",
+        "text": "ausente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "Jesus não envia e some: ele fica junto dos seus todos os dias.",
+    "feedbackWrong": {
+      "b": "A promessa é de presença junto, não de distância.",
+      "c": "O texto afirma o contrário: ele está com eles todos os dias."
+    },
+    "hint": "Leia a promessa que fecha o Evangelho.",
+    "learningObjective": "Compreender a promessa da presença diária de Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-03-trino-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+    "prompt": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+    "cue": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Mateus 3:16–17",
+      "text": "E, ao ser batizado, Jesus saiu logo da água. Então, os céus se lhe abriram, e ele viu o Espírito de Deus descendo como uma pomba e vindo sobre ele. Eis que uma voz dos céus dizia: Este é o meu Filho amado, em quem me agrado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um batismo sem nome algum"
+      },
+      {
+        "id": "b",
+        "text": "Pai, Filho e Espírito juntos"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos agindo sozinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "No batismo de Jesus e no envio, Pai, Filho e Espírito aparecem juntos.",
+    "feedbackWrong": {
+      "a": "Nos dois textos há nomes e presença, não um rito vazio.",
+      "c": "Jesus promete estar com eles; não agem sozinhos nem por conta própria."
+    },
+    "hint": "Compare quem aparece junto nos dois batismos.",
+    "learningObjective": "Relacionar o batismo de Jesus com o batismo do envio.",
+    "evidence": [
+      "Mateus 28:19",
+      "Mateus 3:16–17"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-03-trino-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 28:20 apresenta Jesus presente com os discípulos só em alguns dias especiais.",
+    "prompt": "Mateus 28:20 apresenta Jesus presente com os discípulos só em alguns dias especiais.",
+    "cue": "Mateus 28:20 apresenta Jesus presente com os discípulos só em alguns dias especiais.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "A promessa é para todos os dias, até a consumação do século.",
+    "feedbackWrong": {
+      "true": "Releia o fim do versículo e veja com que frequência Jesus promete estar."
+    },
+    "hint": "Veja com que frequência Jesus promete estar com eles.",
+    "learningObjective": "Interpretar a promessa de Jesus como presença diária, não ocasional.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-03-trino-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+    "prompt": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+    "cue": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda a autoridade"
+      },
+      {
+        "id": "b",
+        "text": "na terra"
+      },
+      {
+        "id": "c",
+        "text": "no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Nada fica fora do alcance de Jesus: céu e terra estão sob sua autoridade.",
+    "feedbackWrong": {
+      "b": "Isso diz um dos lugares; falta a palavra que mostra o tamanho do poder.",
+      "c": "Isso diz um dos lugares; o alcance total vem da frase inteira sobre poder."
+    },
+    "hint": "Procure a frase sobre o poder que foi dado a Jesus.",
+    "learningObjective": "Sustentar com o texto a autoridade total de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-03-trino-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 28:19 sustenta sobre o nome do batismo?",
+    "prompt": "Que leitura Mateus 28:19 sustenta sobre o nome do batismo?",
+    "cue": "Que leitura Mateus 28:19 sustenta sobre o nome do batismo?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "São três deuses que agem sempre separados"
+      },
+      {
+        "id": "b",
+        "text": "O Filho e o Espírito são ajudantes menores do Pai"
+      },
+      {
+        "id": "c",
+        "text": "Só o Pai deve ser nomeado no batismo"
+      },
+      {
+        "id": "d",
+        "text": "O Pai, o Filho e o Espírito são nomeados juntos, em um só nome"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "Um só nome reúne Pai, Filho e Espírito no batismo dos discípulos.",
+    "feedbackWrong": {
+      "a": "Um só nome não combina com três deuses separados.",
+      "b": "Os três estão no mesmo nome, sem uns abaixo dos outros no texto.",
+      "c": "O texto nomeia os três juntos, não só o Pai."
+    },
+    "hint": "Conte quantos nomes o versículo usa para os três.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o nome do batismo.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-03-trino-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do batismo que atravessa Mateus?",
+    "prompt": "Qual sequência revela o fio do batismo que atravessa Mateus?",
+    "cue": "Qual sequência revela o fio do batismo que atravessa Mateus?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se revela no batismo de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus inclui Pai, Filho e Espírito no batismo"
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos levam esse batismo às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Do batismo de Jesus ao envio, o mesmo nome alcança todas as nações.",
+    "feedbackWrong": {
+      "default": "Comece pelo batismo de Jesus; o alcance às nações fecha o fio."
+    },
+    "hint": "Siga Mateus do começo ao fim do Evangelho.",
+    "learningObjective": "Ver o batismo em Mateus como um fio do começo ao envio final.",
+    "evidence": [
+      "Mateus 28:19",
+      "Mateus 3:16–17"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-03-trino-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 28:19, qual palavra vem antes de do Pai, do Filho e do Espírito Santo?",
+    "prompt": "Em Mateus 28:19, qual palavra vem antes de do Pai, do Filho e do Espírito Santo?",
+    "cue": "Em Mateus 28:19, qual palavra vem antes de do Pai, do Filho e do Espírito Santo?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "template": "Portanto, vão e façam discípulos de todas as nações, batizando-os em ___ do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "nomes"
+      },
+      {
+        "id": "c",
+        "text": "título"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "É um só, no singular, para Pai, Filho e Espírito juntos no batismo.",
+    "feedbackWrong": {
+      "b": "O texto usa o singular: um só para os três nomeados juntos.",
+      "c": "A palavra do texto é simples e está no singular, antes dos três."
+    },
+    "hint": "Veja a palavra simples antes de Pai, Filho e Espírito.",
+    "learningObjective": "Lembrar o termo singular que une os três no batismo.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-03-trino-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 28:19 a Efésios 4:5–6?",
+    "prompt": "O que liga Mateus 28:19 a Efésios 4:5–6?",
+    "cue": "O que liga Mateus 28:19 a Efésios 4:5–6?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Efésios 4:5–6",
+      "text": "Um só Senhor, uma única fé, um único batismo; Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só Deus e Pai"
+      },
+      {
+        "id": "b",
+        "text": "Cada nação com seu deus"
+      },
+      {
+        "id": "c",
+        "text": "Muitos deuses para muitos povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "Paulo confessa um só Deus e Pai, o mesmo Deus do batismo em um só nome.",
+    "feedbackWrong": {
+      "b": "O envio é a todas as nações, mas com um só Deus e Pai.",
+      "c": "Paulo fala de um só Senhor e um só Deus, não de muitos."
+    },
+    "hint": "Veja o que Paulo repete com as palavras um só.",
+    "learningObjective": "Ligar o batismo em um só nome à confissão de um só Deus.",
+    "evidence": [
+      "Mateus 28:19",
+      "Efésios 4:5–6"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+    "prompt": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+    "cue": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+    "verseRef": "Isaías 6:2",
+    "passageText": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cada um tinha seis asas",
+    "feedbackCorrect": "O texto diz que cada serafim tinha seis asas, não quatro.",
+    "feedbackWrong": {
+      "true": "Releia Isaías 6:2 e conte as asas de cada serafim."
+    },
+    "hint": "Conte as asas descritas no versículo.",
+    "learningObjective": "Observar como o texto descreve os serafins.",
+    "evidence": [
+      "Isaías 6:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+    "prompt": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+    "cue": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+    "verseRef": "Gênesis 1:1",
+    "passageText": "No princípio, Deus criou os céus e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a terra"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "No princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus criou",
+    "feedbackCorrect": "Ele é o sujeito da primeira frase da Bíblia: é ele quem cria.",
+    "feedbackWrong": {
+      "a": "A terra é o que foi criado, não quem criou.",
+      "c": "\"No princípio\" diz quando, não quem."
+    },
+    "hint": "Procure quem faz a ação de criar.",
+    "learningObjective": "Identificar Deus como autor da criação.",
+    "evidence": [
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+    "prompt": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+    "cue": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escolher reis para cada povo"
+      },
+      {
+        "id": "b",
+        "text": "Fazer discípulos de todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "Voltar logo para Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "Construir templos em cada cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio é para fazer discípulos em todas as nações, batizando e ensinando.",
+    "feedbackWrong": {
+      "a": "Nenhum rei é escolhido; o alvo são discípulos em cada nação.",
+      "c": "A ordem é ir às nações, não voltar para Jerusalém.",
+      "d": "O texto fala de pessoas formadas, não de construções."
+    },
+    "hint": "Leia o começo da ordem de Jesus.",
+    "learningObjective": "Observar o alvo do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gênesis 1:2 na ordem do texto.",
+    "prompt": "Monte Gênesis 1:2 na ordem do texto.",
+    "cue": "Monte Gênesis 1:2 na ordem do texto.",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra, porém, estava sem forma e vazia"
+      },
+      {
+        "id": "b",
+        "text": "havia trevas sobre a face do abismo"
+      },
+      {
+        "id": "c",
+        "text": "o Espírito de Deus pairava sobre as águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+    "feedbackCorrect": "É a sequência do versículo: terra vazia, trevas, e o Espírito pairando.",
+    "feedbackWrong": {
+      "default": "Comece pela terra sem forma; o Espírito aparece no fim do versículo."
+    },
+    "hint": "O versículo começa pela terra.",
+    "learningObjective": "Reconhecer a sequência de Gênesis 1:2.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+    "prompt": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+    "cue": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+    "verseRef": "Mateus 28:16",
+    "passageText": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado.",
+    "template": "Os onze discípulos seguiram para a ___, rumo ao monte que Jesus lhes havia designado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Nazaré"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Os onze discípulos seguiram para a Galileia",
+    "feedbackCorrect": "Eles foram ao monte designado por Jesus, na região indicada por ele.",
+    "feedbackWrong": {
+      "a": "A cidade santa não é o destino aqui; veja o rumo do monte designado.",
+      "b": "A cidade da infância de Jesus não é citada neste encontro final."
+    },
+    "hint": "Veja o rumo que eles tomam para o monte.",
+    "learningObjective": "Lembrar o lugar do encontro com Jesus ressuscitado.",
+    "evidence": [
+      "Mateus 28:16"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "verseRef": "Gênesis 1:1",
+    "passageText": "No princípio, Deus criou os céus e a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes de qualquer coisa existir, já havia Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra sempre existiu"
+      },
+      {
+        "id": "b",
+        "text": "Deus existe antes de tudo"
+      },
+      {
+        "id": "c",
+        "text": "O mundo começa por acaso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "No princípio, Deus criou",
+    "feedbackCorrect": "\"No princípio, Deus\": ele já está lá quando tudo começa.",
+    "feedbackWrong": {
+      "a": "A terra tem começo; só Deus está antes dele.",
+      "c": "O texto dá um autor ao começo: Deus criou."
+    },
+    "hint": "Veja quem já está presente no princípio.",
+    "learningObjective": "Ligar Gênesis 1:1 à ideia de que Deus precede tudo.",
+    "evidence": [
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-07",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+    "prompt": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+    "cue": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda a terra"
+      },
+      {
+        "id": "b",
+        "text": "uns aos outros"
+      },
+      {
+        "id": "c",
+        "text": "Santo, santo, santo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "Três vezes seguidas, os serafins declaram quem o Senhor é.",
+    "feedbackWrong": {
+      "a": "Isso fala do alcance da glória, depois da proclamação.",
+      "b": "Isso diz a quem eles falam, não o que proclamam sobre o Senhor."
+    },
+    "hint": "Ouça a proclamação repetida três vezes.",
+    "learningObjective": "Identificar a proclamação dos serafins sobre Deus.",
+    "evidence": [
+      "Isaías 6:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-sem-dd-boss-08",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Isaías 6:2 na ordem do texto.",
+    "prompt": "Monte Isaías 6:2 na ordem do texto.",
+    "cue": "Monte Isaías 6:2 na ordem do texto.",
+    "verseRef": "Isaías 6:2",
+    "passageText": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os serafins estavam acima dele"
+      },
+      {
+        "id": "b",
+        "text": "cada um tinha seis asas"
+      },
+      {
+        "id": "c",
+        "text": "com duas cobria o rosto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Os serafins estavam acima dele",
+    "feedbackCorrect": "Primeiro onde eles estavam, depois quantas asas tinham e como as usavam.",
+    "feedbackWrong": {
+      "default": "Comece pela posição dos serafins; o rosto coberto vem depois."
+    },
+    "hint": "O versículo começa dizendo onde os serafins estavam.",
+    "learningObjective": "Reconhecer a sequência de Isaías 6:2.",
+    "evidence": [
+      "Isaías 6:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:20, Jesus promete estar com os discípulos só até eles chegarem à Galileia.",
+    "prompt": "Em Mateus 28:20, Jesus promete estar com os discípulos só até eles chegarem à Galileia.",
+    "cue": "Em Mateus 28:20, Jesus promete estar com os discípulos só até eles chegarem à Galileia.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "A promessa vai até a consumação do século, todos os dias, não só na viagem.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Mateus 28:20 e veja até quando vai a promessa."
+    },
+    "hint": "Veja até quando Jesus promete estar com eles.",
+    "learningObjective": "Compreender o alcance da promessa de presença de Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+    "prompt": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+    "cue": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+    "verseRef": "Isaías 6:5",
+    "passageText": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "perdido"
+      },
+      {
+        "id": "c",
+        "text": "impuros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então eu disse",
+    "feedbackCorrect": "Depois da visão e do clamor, Isaías reage confessando sua situação.",
+    "feedbackWrong": {
+      "b": "\"Perdido\" é o que ele sente; a reação começa antes dessa palavra.",
+      "c": "\"Impuros\" descreve os lábios; a reação começa no início do verso."
+    },
+    "hint": "Procure a primeira palavra da fala de Isaías.",
+    "learningObjective": "Reconhecer o marcador que liga a visão à reação de Isaías.",
+    "evidence": [
+      "Isaías 6:5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+    "prompt": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+    "cue": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A autoridade de Jesus dispensa o envio"
+      },
+      {
+        "id": "b",
+        "text": "O envio dá autoridade a Jesus pela primeira vez"
+      },
+      {
+        "id": "c",
+        "text": "A autoridade de Jesus é a base do envio"
+      },
+      {
+        "id": "d",
+        "text": "O envio vale só enquanto Jesus está longe"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Jesus envia porque toda a autoridade no céu e na terra lhe foi dada.",
+    "feedbackWrong": {
+      "a": "Logo depois de afirmar sua autoridade, ele envia: não dispensa.",
+      "b": "A autoridade já foi dada antes do envio; o envio nasce dela.",
+      "d": "Ele promete estar presente todos os dias, não longe dos enviados."
+    },
+    "hint": "Veja a palavra que abre o versículo do envio.",
+    "learningObjective": "Relacionar a autoridade de Jesus com o envio dos discípulos.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Gênesis 1:2–3?",
+    "prompt": "Como avança a cena em Gênesis 1:2–3?",
+    "cue": "Como avança a cena em Gênesis 1:2–3?",
+    "verseRef": "Gênesis 1:2–3",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra ainda está vazia e escura"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito de Deus está sobre as águas"
+      },
+      {
+        "id": "c",
+        "text": "A palavra de Deus traz a luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e houve luz",
+    "feedbackCorrect": "Primeiro o vazio, depois a presença de Deus, e então a palavra que traz luz.",
+    "feedbackWrong": {
+      "default": "A palavra de Deus vem por último: antes, o vazio e o Espírito presente."
+    },
+    "hint": "A luz é o ponto de chegada da cena.",
+    "learningObjective": "Compreender o movimento do vazio à luz.",
+    "evidence": [
+      "Gênesis 1:2–3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+    "prompt": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+    "cue": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+    "verseRef": "Gênesis 1:3",
+    "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+    "template": "Disse Deus: \"Que haja luz\"; e ___ luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "faltou"
+      },
+      {
+        "id": "b",
+        "text": "houve"
+      },
+      {
+        "id": "c",
+        "text": "pediu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e houve luz",
+    "feedbackCorrect": "A palavra de Deus se cumpre na hora, sem esforço nem demora.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário: a luz passa a existir.",
+      "c": "Quem fala é Deus, e o que ele diz acontece; não há pedido."
+    },
+    "hint": "A frase mostra o resultado da palavra de Deus.",
+    "learningObjective": "Compreender que a palavra de Deus produz o que diz.",
+    "evidence": [
+      "Gênesis 1:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+    "prompt": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+    "cue": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+    },
+    "passageB": {
+      "ref": "Apocalipse 4:8",
+      "text": "Os quatro seres viventes tinham cada um deles seis asas, cheias de olhos ao redor e por dentro; não descansavam nem de dia nem de noite, proclamando: Santo, Santo, Santo é o Senhor Deus, o Todo-Poderoso, que era, que é e que há de vir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seres que escondem Deus"
+      },
+      {
+        "id": "b",
+        "text": "Um silêncio total no céu"
+      },
+      {
+        "id": "c",
+        "text": "O mesmo clamor de santidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "Nos dois textos, seres celestiais repetem sem parar que Deus é santo.",
+    "feedbackWrong": {
+      "a": "Eles não escondem Deus; anunciam quem ele é.",
+      "b": "Nos dois textos há proclamação contínua, não silêncio."
+    },
+    "hint": "Compare o que os seres celestiais dizem nos dois textos.",
+    "learningObjective": "Relacionar o clamor de Isaías com o louvor celestial do Apocalipse.",
+    "evidence": [
+      "Isaías 6:3",
+      "Apocalipse 4:8"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-07",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Portanto"
+      },
+      {
+        "id": "b",
+        "text": "discípulos"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Portanto, vão e façam discípulos",
+    "feedbackCorrect": "Essa palavra mostra que o envio nasce do que Jesus acabou de afirmar.",
+    "feedbackWrong": {
+      "b": "Isso é o que eles devem fazer, não a ligação com a autoridade.",
+      "c": "Isso é até onde eles vão, não a ligação com a autoridade."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que liga autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-cam-dd-boss-08",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 28:18–20?",
+    "prompt": "Como avança a cena em Mateus 28:18–20?",
+    "cue": "Como avança a cena em Mateus 28:18–20?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus afirma ter toda a autoridade"
+      },
+      {
+        "id": "b",
+        "text": "Jesus envia a fazer discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Jesus promete estar com eles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade declarada, envio dado e presença prometida: nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Jesus afirma sobre si; a promessa fecha a cena."
+    },
+    "hint": "A promessa de presença é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Mateus 28:18–20.",
+    "evidence": [
+      "Mateus 28:18–20"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-01",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Os três textos mostram o mesmo Deus como Criador, santo e presente junto aos seus discípulos.",
+    "prompt": "Os três textos mostram o mesmo Deus como Criador, santo e presente junto aos seus discípulos.",
+    "cue": "Os três textos mostram o mesmo Deus como Criador, santo e presente junto aos seus discípulos.",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+    "feedbackCorrect": "Criador no princípio, santo no templo e presente no envio: é o mesmo Deus.",
+    "feedbackWrong": {
+      "false": "Compare os três textos: criar, ser santo e estar presente são do mesmo Deus."
+    },
+    "hint": "Junte o que cada um dos três textos mostra.",
+    "learningObjective": "Interpretar os três textos como retrato do mesmo Deus.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-02",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+    "prompt": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+    "cue": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "no céu"
+      },
+      {
+        "id": "b",
+        "text": "Toda a autoridade"
+      },
+      {
+        "id": "c",
+        "text": "na terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Nada fica fora do alcance de Jesus: céu e terra estão sob sua autoridade.",
+    "feedbackWrong": {
+      "a": "Isso diz um dos lugares; o alcance total vem da frase inteira sobre poder.",
+      "c": "Isso diz um dos lugares; falta a palavra que mostra o tamanho do poder."
+    },
+    "hint": "Procure a frase sobre o poder que foi dado a Jesus.",
+    "learningObjective": "Sustentar com o texto a autoridade total de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-03",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura os três textos juntos sustentam sobre Deus?",
+    "prompt": "Que leitura os três textos juntos sustentam sobre Deus?",
+    "cue": "Que leitura os três textos juntos sustentam sobre Deus?",
+    "verseRef": "Gênesis 1:1–2",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é santo, mas não se aproxima de ninguém"
+      },
+      {
+        "id": "b",
+        "text": "Ele cria e depois se afasta para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Ele se divide em três deuses diferentes"
+      },
+      {
+        "id": "d",
+        "text": "Ele cria, é santo e está presente com os seus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+    "feedbackCorrect": "Criador, santo e presente: os três textos desenham o mesmo Deus.",
+    "feedbackWrong": {
+      "a": "Um serafim voa até Isaías e Jesus fica com os discípulos: há aproximação.",
+      "b": "O Espírito paira presente e Jesus promete estar todos os dias com os seus.",
+      "c": "O batismo é em um só nome, não em nomes de três deuses."
+    },
+    "hint": "Junte criação, templo e envio em um só retrato.",
+    "learningObjective": "Escolher a interpretação conjunta que os três textos sustentam.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-04",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+    "prompt": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+    "cue": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+    "verseRef": "Gênesis 1:3",
+    "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria a luz pela sua palavra"
+      },
+      {
+        "id": "b",
+        "text": "Deus faz sua luz brilhar no coração"
+      },
+      {
+        "id": "c",
+        "text": "Na cidade eterna, Deus será a luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e houve luz",
+    "feedbackCorrect": "A luz da criação aponta para a luz de Deus no coração e para a luz eterna.",
+    "feedbackWrong": {
+      "default": "Siga a história: criação, fé e eternidade, nessa ordem bíblica."
+    },
+    "hint": "Siga a ordem da história bíblica: criação, igreja, eternidade.",
+    "learningObjective": "Ver Gênesis 1:3 como começo de um fio que atravessa a Bíblia.",
+    "evidence": [
+      "Gênesis 1:3",
+      "2 Coríntios 4:6",
+      "Apocalipse 22:5"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-05",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+    "prompt": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+    "cue": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "template": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "honra"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "toda a terra está repleta da sua glória",
+    "feedbackCorrect": "Não é só o templo: toda a terra está repleta dessa presença gloriosa.",
+    "feedbackWrong": {
+      "a": "Não é reputação entre pessoas; é a presença que enche a terra.",
+      "b": "A palavra do texto fala da grandeza que enche a terra inteira."
+    },
+    "hint": "É a palavra final da proclamação dos serafins.",
+    "learningObjective": "Lembrar o termo que carrega o alcance da presença de Deus.",
+    "evidence": [
+      "Isaías 6:3"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-06",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+    "prompt": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+    "cue": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Mateus 3:16–17",
+      "text": "E, ao ser batizado, Jesus saiu logo da água. Então, os céus se lhe abriram, e ele viu o Espírito de Deus descendo como uma pomba e vindo sobre ele. Eis que uma voz dos céus dizia: Este é o meu Filho amado, em quem me agrado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Discípulos agindo sozinhos"
+      },
+      {
+        "id": "b",
+        "text": "Pai, Filho e Espírito juntos"
+      },
+      {
+        "id": "c",
+        "text": "Um batismo sem nome algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "No batismo de Jesus e no envio, Pai, Filho e Espírito aparecem juntos.",
+    "feedbackWrong": {
+      "a": "Jesus promete estar com eles; não agem sozinhos nem por conta própria.",
+      "c": "Nos dois textos há nomes e presença, não um rito vazio."
+    },
+    "hint": "Compare quem aparece junto nos dois batismos.",
+    "learningObjective": "Relacionar o batismo de Jesus com o batismo do envio.",
+    "evidence": [
+      "Mateus 28:19",
+      "Mateus 3:16–17"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-07",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+    "prompt": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+    "cue": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+    "verseRef": "Gênesis 1:2",
+    "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito de Deus"
+      },
+      {
+        "id": "b",
+        "text": "face do abismo"
+      },
+      {
+        "id": "c",
+        "text": "trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+    "feedbackCorrect": "Ele já está ali, sobre as águas, antes da primeira palavra criadora.",
+    "feedbackWrong": {
+      "b": "O abismo descreve o cenário, não a presença de Deus.",
+      "c": "As trevas descrevem a terra antes da luz; a presença vem no fim do verso."
+    },
+    "hint": "Procure alguém presente, não um lugar.",
+    "learningObjective": "Sustentar com o texto que Deus está presente desde o início.",
+    "evidence": [
+      "Gênesis 1:2"
+    ]
+  },
+  {
+    "id": "doutrina-de-deus-pro-dd-boss-08",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+    "prompt": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+    "cue": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+    "verseRef": "Isaías 6:3",
+    "passageText": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Serafins proclamam o Deus três vezes santo"
+      },
+      {
+        "id": "b",
+        "text": "Seres no céu repetem o mesmo clamor"
+      },
+      {
+        "id": "c",
+        "text": "O povo de Deus é chamado a ser santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+    "feedbackCorrect": "O clamor do templo ecoa no céu e vira chamado para a vida do povo.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Isaías, Apocalipse e o chamado de Pedro, nessa ordem."
+    },
+    "hint": "Siga a ordem da Bíblia: profeta, Apocalipse, carta.",
+    "learningObjective": "Ver a santidade de Deus como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Isaías 6:3",
+      "Apocalipse 4:8",
+      "1 Pedro 1:16"
+    ]
+  }
+]

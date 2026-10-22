@@ -1,0 +1,67 @@
+Escreva a cena "exo-06-mana" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "No deserto",
+ "mission": {
+  "slug": "exo-06-mana",
+  "title": "O maná no deserto",
+  "type": "lesson",
+  "intro": "Livres do Egito, o povo enfrenta fome. Deus sustenta — e ensina confiança dia a dia.",
+  "hookRef": "Êxodo 16:4",
+  "hookNote": "A fome no deserto vira sala de aula. Deus sustenta — e forma confiança diária.",
+  "centralInsight": "Deus sustenta no caminho",
+  "objective": "Em que área você precisa confiar na provisão de um dia de cada vez?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 16:4",
+  "context": "A fome no deserto vira sala de aula. Deus sustenta — e forma confiança diária.",
+  "keyword": "Maná",
+  "verseRefs": [
+   "Êxodo 16:4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 16:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 16:1",
+   "text": "E, partindo de Elim, toda a congregação dos filhos de Israel chegou ao deserto de Sim, que se localiza entre Elim e Sinai, no décimo quinto dia do segundo mês, após terem saído da terra do Egito."
+  },
+  {
+   "ref": "Êxodo 16:2",
+   "text": "E toda a congregação dos filhos de Israel se queixou contra Moisés e Arão no deserto."
+  },
+  {
+   "ref": "Êxodo 16:3",
+   "text": "E os filhos de Israel disseram: Quem nos dera que tivéssemos morrido pela mão do Senhor, na terra do Egito, quando estávamos sentados junto às panelas de carne e comíamos pão a fartar! Por que nos trouxeram a este deserto, para matar de fome toda esta multidão?"
+  },
+  {
+   "ref": "Êxodo 16:4",
+   "text": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não."
+  },
+  {
+   "ref": "Êxodo 16:5",
+   "text": "E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o dobro do que colhem nos outros dias."
+  },
+  {
+   "ref": "Êxodo 16:6",
+   "text": "Então, Moisés e Arão disseram a todos os filhos de Israel: à tarde, vocês saberão que foi o Senhor quem vos tirou da terra do Egito."
+  },
+  {
+   "ref": "Êxodo 16:7",
+   "text": "E pela manhã vereis a glória do Senhor, pois Ele ouviu as vossas murmurações; afinal, quem somos nós para que murmureis contra nós?"
+  }
+ ]
+}
+</cena>

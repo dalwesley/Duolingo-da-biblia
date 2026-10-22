@@ -1,0 +1,721 @@
+{
+ "study": {
+  "passageRef": "Gênesis 25:23",
+  "passages": [
+   {
+    "ref": "Gênesis 25:23"
+   },
+   {
+    "ref": "Gênesis 25:29–34"
+   },
+   {
+    "ref": "Gênesis 25:21–26"
+   },
+   {
+    "ref": "Gênesis 26:3–4"
+   }
+  ],
+  "context": "Isaque ora por Rebeca e nascem gêmeos que lutam desde o ventre. Anos depois, Esaú chega exausto do campo e vende a primogenitura a Jacó por um prato de lentilhas.",
+  "keyword": "Primogenitura",
+  "keywordGloss": "O direito do filho mais velho, que Esaú trata como se valesse menos que uma refeição.",
+  "focusQuestion": "O que você tem trocado por alívio imediato?",
+  "reflectionPrompts": [
+   "Não trocar o duradouro pelo imediato",
+   "Deus ouve a oração",
+   "Valorizar o que Deus dá"
+  ],
+  "facts": [
+   {
+    "text": "Isaque implora ao Senhor por sua esposa e ele ouve suas orações.",
+    "evidenceRef": "Gênesis 25:21",
+    "evidenceSpan": "o SENHOR ouviu suas orações, e Rebeca, sua esposa, concebeu"
+   },
+   {
+    "text": "Deus diz que há duas nações no ventre de Rebeca.",
+    "evidenceRef": "Gênesis 25:23",
+    "evidenceSpan": "Há duas nações no seu ventre"
+   },
+   {
+    "text": "Deus diz que o mais velho servirá ao mais jovem.",
+    "evidenceRef": "Gênesis 25:23",
+    "evidenceSpan": "o mais velho servirá ao mais jovem"
+   },
+   {
+    "text": "Esaú pede a Jacó que o deixe provar do guisado vermelho.",
+    "evidenceRef": "Gênesis 25:30",
+    "evidenceSpan": "deixa-me provar desse guisado vermelho, pois estou esgotado"
+   },
+   {
+    "text": "Jacó pede a primogenitura em troca do alimento.",
+    "evidenceRef": "Gênesis 25:31",
+    "evidenceSpan": "Vende-me primeiro a tua primogenitura"
+   },
+   {
+    "text": "Esaú despreza seu direito de primogenitura.",
+    "evidenceRef": "Gênesis 25:34",
+    "evidenceSpan": "Assim, Esaú desprezou seu direito de primogenitura"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "primogenitura",
+    "gloss": "O direito do primogênito, vendido por Esaú em troca de comida."
+   },
+   {
+    "term": "gêmeos",
+    "gloss": "Os dois filhos de Isaque e Rebeca que lutavam já no ventre."
+   },
+   {
+    "term": "guisado vermelho",
+    "gloss": "O prato de lentilhas pelo qual Esaú troca seu direito de mais velho."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Isaque ora e Rebeca concebe gêmeos",
+    "evidenceRef": "Gênesis 25:21–22"
+   },
+   {
+    "label": "Deus anuncia dois povos desde o ventre",
+    "evidenceRef": "Gênesis 25:23"
+   },
+   {
+    "label": "Esaú volta exausto e pede comida",
+    "evidenceRef": "Gênesis 25:29–30"
+   },
+   {
+    "label": "Esaú vende e despreza a primogenitura",
+    "evidenceRef": "Gênesis 25:31–34"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Porque Isaque implora ao Senhor, Rebeca concebe os gêmeos que lutavam no ventre.",
+    "marker": "ouviu",
+    "evidenceRef": "Gênesis 25:21"
+   },
+   {
+    "kind": "causa",
+    "text": "Por estar esgotado, Esaú aceita vender a primogenitura por comida imediata.",
+    "marker": "estou esgotado",
+    "evidenceRef": "Gênesis 25:30"
+   },
+   {
+    "kind": "contraste",
+    "text": "Deus promete a terra a Isaque como fez a Abraão, apesar dos conflitos da família.",
+    "marker": "confirmarei",
+    "evidenceRef": "Gênesis 26:3"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 9:12",
+    "bridge": "O maior servirá ao menor"
+   },
+   {
+    "ref": "Hebreus 12:16",
+    "bridge": "Não vender a primogenitura como Esaú"
+   },
+   {
+    "ref": "Hebreus 12:17",
+    "bridge": "Sem lugar para arrependimento depois"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Esaú vendeu a primogenitura porque ela não valia nada de fato.",
+    "why": "O texto diz que ele a desprezou; o problema está no valor que ele lhe dá."
+   },
+   {
+    "text": "Jacó roubou à força o direito do irmão faminto.",
+    "why": "Esaú jura e vende por decisão própria, ainda que pressionado pela fome."
+   },
+   {
+    "text": "Deus anunciou que o mais velho seria sempre o maior dos dois.",
+    "why": "A palavra a Rebeca diz justamente que o mais velho servirá ao mais jovem."
+   }
+  ],
+  "centralInsight": "Esaú despreza a primogenitura por alívio imediato e Jacó a valoriza",
+  "anchorQuestion": "O que a troca entre Esaú e Jacó revela sobre o que cada um valoriza?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Gênesis 25 Jacó compra a primogenitura de Esaú pagando com ouro e prata",
+   "verseRef": "Gênesis 25:34",
+   "evidenceSpan": "Jacó deu a Esaú pão e o cozinhado de lentilhas",
+   "feedbackCorrect": "A troca não envolve ouro nem prata, mas pão e um cozinhado de lentilhas.",
+   "feedbackWrong": {
+    "true": "Releia o que Jacó entrega a Esaú na troca."
+   },
+   "hint": "Veja o pagamento citado no versículo.",
+   "learningObjective": "Observar o que Esaú recebe na troca.",
+   "evidence": [
+    "Gênesis 25:34"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Gênesis 25:31, toque o que Jacó pede que Esaú lhe venda primeiro.",
+   "verseRef": "Gênesis 25:31",
+   "evidenceSpan": "Vende-me primeiro a tua primogenitura",
+   "feedbackCorrect": "Jacó pede primeiro a primogenitura de Esaú em troca do alimento.",
+   "feedbackWrong": {
+    "b": "Isso marca a ordem do pedido, não o que Jacó quer comprar.",
+    "c": "Isso é o verbo da venda, não o direito que Jacó pede."
+   },
+   "hint": "Procure o direito citado por Jacó.",
+   "learningObjective": "Identificar o que Jacó busca na troca.",
+   "evidence": [
+    "Gênesis 25:31"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "primogenitura"
+    },
+    {
+     "id": "b",
+     "text": "primeiro"
+    },
+    {
+     "id": "c",
+     "text": "Vende-me"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Gênesis 25:23, o que Deus diz que há no ventre de Rebeca?",
+   "verseRef": "Gênesis 25:23",
+   "evidenceSpan": "Há duas nações no seu ventre",
+   "feedbackCorrect": "Deus anuncia duas nações e dois povos que se dividirão desde o ventre.",
+   "feedbackWrong": {
+    "a": "A fala fala de nações e povos, não de força dos bebês.",
+    "c": "O texto diz que os dois povos justamente se dividirão.",
+    "d": "A divisão é entre povos, não entre cargos citados assim."
+   },
+   "hint": "Leia a resposta de Deus a Rebeca.",
+   "learningObjective": "Observar o anúncio sobre os gêmeos.",
+   "evidence": [
+    "Gênesis 25:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Um filho forte e um fraco"
+    },
+    {
+     "id": "b",
+     "text": "Duas nações e dois povos"
+    },
+    {
+     "id": "c",
+     "text": "Gêmeos que nunca se separarão"
+    },
+    {
+     "id": "d",
+     "text": "Um rei e um sacerdote apenas"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Gênesis 25:34 na ordem do texto.",
+   "verseRef": "Gênesis 25:34",
+   "evidenceSpan": "E Jacó deu a Esaú pão e o cozinhado de lentilhas",
+   "feedbackCorrect": "Jacó entrega o alimento, Esaú come e sai, e o texto conclui que ele desprezou o direito.",
+   "feedbackWrong": {
+    "default": "Comece pelo que Jacó entrega a Esaú."
+   },
+   "hint": "A entrega do alimento abre o versículo.",
+   "learningObjective": "Reconhecer a sequência de Gênesis 25:34.",
+   "evidence": [
+    "Gênesis 25:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "E Jacó deu a Esaú pão e o cozinhado de lentilhas"
+    },
+    {
+     "id": "b",
+     "text": "ele comeu, bebeu, levantou-se e saiu"
+    },
+    {
+     "id": "c",
+     "text": "Assim, Esaú desprezou seu direito de primogenitura"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Gênesis 25:30, de que cor Esaú pede o guisado de Jacó?",
+   "verseRef": "Gênesis 25:30",
+   "evidenceSpan": "deixa-me provar desse guisado vermelho",
+   "feedbackCorrect": "Esaú pede o guisado vermelho, nome que depois lhe rende o nome Edom.",
+   "feedbackWrong": {
+    "b": "O prato de lentilhas é descrito por outra cor no pedido.",
+    "c": "A cor citada liga-se ao nome Edom dado a Esaú."
+   },
+   "hint": "Veja a cor citada no pedido faminto.",
+   "learningObjective": "Lembrar o prato pedido por Esaú.",
+   "evidence": [
+    "Gênesis 25:30"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "vermelho"
+    },
+    {
+     "id": "b",
+     "text": "verde"
+    },
+    {
+     "id": "c",
+     "text": "dourado"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Gênesis 25:23 comunica que se liga a este contexto?",
+   "verseRef": "Gênesis 25:23",
+   "evidenceSpan": "Há duas nações no seu ventre",
+   "feedbackCorrect": "Deus explica a luta no ventre como dois povos que se dividirão.",
+   "feedbackWrong": {
+    "b": "O texto fala de gêmeos que formam dois povos distintos.",
+    "c": "A promessa segue justamente por essa família dividida."
+   },
+   "hint": "Veja a explicação que Deus dá à luta.",
+   "learningObjective": "Ligar a luta no ventre ao anúncio de Deus.",
+   "evidence": [
+    "Gênesis 25:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Dois povos desde o ventre"
+    },
+    {
+     "id": "b",
+     "text": "Um só filho sem irmão"
+    },
+    {
+     "id": "c",
+     "text": "Fim da promessa a Isaque"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 25:23"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Rebeca sente os filhos lutando dentro dela e vai consultar o Senhor."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Gênesis 25 Esaú julga que a primogenitura nada lhe adianta diante da fome",
+   "verseRef": "Gênesis 25:32",
+   "evidenceSpan": "Estou a ponto de morrer; de que me adianta a primogenitura",
+   "feedbackCorrect": "Esaú julga a primogenitura inútil diante da fome e a vende por comida.",
+   "feedbackWrong": {
+    "false": "Releia a justificativa que Esaú dá para vender."
+   },
+   "hint": "Veja o que Esaú compara na hora da fome.",
+   "learningObjective": "Compreender o cálculo de Esaú na troca.",
+   "evidence": [
+    "Gênesis 25:32"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Gênesis 25:34, toque o verbo com que o texto avalia a atitude de Esaú.",
+   "verseRef": "Gênesis 25:34",
+   "evidenceSpan": "Assim, Esaú desprezou seu direito de primogenitura",
+   "feedbackCorrect": "O texto conclui que Esaú desprezou seu direito ao trocá-lo por uma refeição.",
+   "feedbackWrong": {
+    "a": "Comer é a ação imediata, não a avaliação final do texto.",
+    "c": "Levantar-se é a saída dele, não a avaliação do narrador."
+   },
+   "hint": "Procure a conclusão do narrador no fim.",
+   "learningObjective": "Reconhecer a avaliação do texto sobre Esaú.",
+   "evidence": [
+    "Gênesis 25:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "comeu"
+    },
+    {
+     "id": "b",
+     "text": "desprezou"
+    },
+    {
+     "id": "c",
+     "text": "levantou-se"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como a fome de Esaú se relaciona com a proposta de Jacó?",
+   "verseRef": "Gênesis 25:30",
+   "evidenceSpan": "pois estou esgotado",
+   "feedbackCorrect": "Exausto do campo, Esaú aceita vender a primogenitura pelo prato de Jacó.",
+   "feedbackWrong": {
+    "b": "Ele pede a comida com urgência, em vez de recusá-la.",
+    "c": "O juramento acontece na mesma conversa, sem dias de espera.",
+    "d": "Ele ouve, responde e jura vender o direito ao irmão."
+   },
+   "hint": "Veja o estado de Esaú ao chegar do campo.",
+   "learningObjective": "Compreender a ligação entre fome e troca.",
+   "evidence": [
+    "Gênesis 25:30"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A fome o leva a aceitar trocar o direito"
+    },
+    {
+     "id": "b",
+     "text": "A fome o faz recusar qualquer comida"
+    },
+    {
+     "id": "c",
+     "text": "Jacó esconde a comida até ele jurar por dias"
+    },
+    {
+     "id": "d",
+     "text": "Esaú nem percebe a proposta de Jacó"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Gênesis 25:29–34?",
+   "verseRef": "Gênesis 25:29",
+   "evidenceSpan": "E Jacó preparou um ensopado; e Esaú veio do campo, exausto",
+   "feedbackCorrect": "A fome de Esaú abre espaço para a proposta de Jacó e a venda do direito.",
+   "feedbackWrong": {
+    "default": "Comece pela chegada de Esaú do campo."
+   },
+   "hint": "A exaustão dele abre a cena.",
+   "learningObjective": "Compreender o encadeamento da troca.",
+   "evidence": [
+    "Gênesis 25:29"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Esaú chega exausto do campo faminto"
+    },
+    {
+     "id": "b",
+     "text": "Jacó propõe a venda da primogenitura"
+    },
+    {
+     "id": "c",
+     "text": "Esaú jura, come e despreza o direito"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Gênesis 25:27, Esaú tornou-se perito em que atividade do campo?",
+   "verseRef": "Gênesis 25:27",
+   "evidenceSpan": "Esaú tornou-se um perito caçador e homem do campo",
+   "feedbackCorrect": "Esaú cresce como perito caçador e homem do campo, diferente de Jacó.",
+   "feedbackWrong": {
+    "b": "Pastor descreve melhor o ambiente de Jacó nas tendas.",
+    "c": "Lavrador não é o termo que o texto usa para Esaú."
+   },
+   "hint": "Veja o ofício ligado ao campo aberto.",
+   "learningObjective": "Compreender o perfil de Esaú no relato.",
+   "evidence": [
+    "Gênesis 25:27"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "caçador"
+    },
+    {
+     "id": "b",
+     "text": "pastor"
+    },
+    {
+     "id": "c",
+     "text": "lavrador"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Gênesis 25:23 a Romanos 9:12?",
+   "verseRef": "Gênesis 25:23",
+   "evidenceSpan": "o mais velho servirá ao mais jovem",
+   "feedbackCorrect": "Paulo cita a palavra a Rebeca de que o maior servirá ao mais jovem.",
+   "feedbackWrong": {
+    "b": "A palavra fala de servir, não de expulsão da família.",
+    "c": "Deus anuncia justamente que os dois povos se dividirão."
+   },
+   "hint": "Compare a frase nos dois textos.",
+   "learningObjective": "Relacionar o anúncio a Rebeca à citação de Paulo.",
+   "evidence": [
+    "Gênesis 25:23",
+    "Romanos 9:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O maior servirá ao menor"
+    },
+    {
+     "id": "b",
+     "text": "O menor será expulso da família"
+    },
+    {
+     "id": "c",
+     "text": "Os gêmeos nunca se dividirão"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 25:23"
+   },
+   "passageB": {
+    "ref": "Romanos 9:12"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Gênesis 25 apresenta a venda da primogenitura como uma troca sábia e bem calculada de Esaú",
+   "verseRef": "Gênesis 25:34",
+   "evidenceSpan": "Assim, Esaú desprezou seu direito de primogenitura",
+   "feedbackCorrect": "O narrador chama a troca de desprezo pelo direito, não de sabedoria de Esaú.",
+   "feedbackWrong": {
+    "true": "Releia a conclusão que o texto dá à troca."
+   },
+   "hint": "Veja o verbo final do narrador.",
+   "learningObjective": "Interpretar a avaliação bíblica da troca.",
+   "evidence": [
+    "Gênesis 25:34"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Gênesis 25:23, toque quem Deus diz que servirá ao mais jovem.",
+   "verseRef": "Gênesis 25:23",
+   "evidenceSpan": "o mais velho servirá ao mais jovem",
+   "feedbackCorrect": "Deus anuncia a Rebeca que o mais velho servirá ao mais jovem dos gêmeos.",
+   "feedbackWrong": {
+    "b": "Dois povos é o quadro geral, não quem servirá a quem.",
+    "c": "Entranhas é de onde os povos se dividirão, não quem serve."
+   },
+   "hint": "Procure a relação entre os dois irmãos.",
+   "learningObjective": "Sustentar o anúncio sobre os gêmeos.",
+   "evidence": [
+    "Gênesis 25:23"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "o mais velho"
+    },
+    {
+     "id": "b",
+     "text": "dois povos"
+    },
+    {
+     "id": "c",
+     "text": "suas entranhas"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Gênesis 25 sustenta sobre a decisão de Esaú no campo?",
+   "verseRef": "Gênesis 25:32",
+   "evidenceSpan": "de que me adianta a primogenitura",
+   "feedbackCorrect": "Esaú trata o direito de longo prazo como inútil diante da fome do momento.",
+   "feedbackWrong": {
+    "b": "Ele vende o direito justamente em vez de protegê-lo.",
+    "c": "Ele nomeia a primogenitura e sabe o que está vendendo.",
+    "d": "Nenhuma ordem de Isaque aparece na cena da troca."
+   },
+   "hint": "Veja o que Esaú coloca na balança.",
+   "learningObjective": "Escolher a interpretação sustentada sobre Esaú.",
+   "evidence": [
+    "Gênesis 25:32"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele troca o duradouro pelo alívio imediato"
+    },
+    {
+     "id": "b",
+     "text": "Ele protege a primogenitura a todo custo"
+    },
+    {
+     "id": "c",
+     "text": "Ele nem sabia o valor do que vendia"
+    },
+    {
+     "id": "d",
+     "text": "Ele vende por causa de uma ordem de Isaque"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido do anúncio sobre os gêmeos?",
+   "verseRef": "Gênesis 25:23",
+   "evidenceSpan": "o mais velho servirá ao mais jovem",
+   "feedbackCorrect": "O anúncio a Rebeca antecipa a inversão que a troca da primogenitura concretiza.",
+   "feedbackWrong": {
+    "default": "Comece pelo que Deus diz ainda no ventre."
+   },
+   "hint": "O anúncio de Deus vem primeiro.",
+   "learningObjective": "Ver a troca à luz do anúncio anterior.",
+   "evidence": [
+    "Gênesis 25:23",
+    "Hebreus 12:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus anuncia dois povos no ventre"
+    },
+    {
+     "id": "b",
+     "text": "O mais velho servirá ao mais jovem"
+    },
+    {
+     "id": "c",
+     "text": "A primogenitura muda de mãos na troca"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Gênesis 25:26, o segundo gêmeo nasce segurando o que de Esaú?",
+   "verseRef": "Gênesis 25:26",
+   "evidenceSpan": "segurando o calcanhar de Esaú; por isso, lhe deram o nome de Jacó",
+   "feedbackCorrect": "O segundo filho nasce segurando o calcanhar de Esaú e recebe o nome Jacó.",
+   "feedbackWrong": {
+    "b": "O detalhe citado é uma parte do pé, não o cabelo do irmão.",
+    "c": "Nenhum manto aparece no nascimento dos gêmeos."
+   },
+   "hint": "Veja o detalhe ligado ao nome Jacó.",
+   "learningObjective": "Lembrar o sinal no nascimento de Jacó.",
+   "evidence": [
+    "Gênesis 25:26"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "calcanhar"
+    },
+    {
+     "id": "b",
+     "text": "cabelo"
+    },
+    {
+     "id": "c",
+     "text": "manto"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Gênesis 25:34 a Hebreus 12:16?",
+   "verseRef": "Gênesis 25:34",
+   "evidenceSpan": "Esaú desprezou seu direito de primogenitura",
+   "feedbackCorrect": "Hebreus usa Esaú como alerta contra tratar como comum o que Deus valoriza.",
+   "feedbackWrong": {
+    "b": "Hebreus chama a atitude de profana, não de sábia.",
+    "c": "O alerta só faz sentido porque o direito tinha valor."
+   },
+   "hint": "Veja como Hebreus avalia o ato de Esaú.",
+   "learningObjective": "Ligar a troca de Esaú ao alerta de Hebreus.",
+   "evidence": [
+    "Gênesis 25:34",
+    "Hebreus 12:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Não desprezar o que Deus valoriza"
+    },
+    {
+     "id": "b",
+     "text": "Trocar direitos por comida é sábio"
+    },
+    {
+     "id": "c",
+     "text": "A primogenitura nada significava"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 25:34"
+   },
+   "passageB": {
+    "ref": "Hebreus 12:16"
+   }
+  }
+ ]
+}

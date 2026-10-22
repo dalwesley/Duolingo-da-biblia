@@ -1,0 +1,902 @@
+{
+  "study": {
+    "slug": "sm-04-os-mansos",
+    "passageRef": "Mateus 5:4–5",
+    "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+    "passages": [
+      {
+        "ref": "Mateus 5:4–5",
+        "text": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra."
+      },
+      {
+        "ref": "Mateus 5:6–8",
+        "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia. Bem-aventurados os puros de coração, pois verão a Deus."
+      }
+    ],
+    "context": "Jesus abençoa os mansos logo depois dos que choram. Mansidão, no Sermão, não é fraqueza: é força entregue a Deus, que promete herança a quem não vive pela violência.",
+    "keyword": "Mansidão",
+    "keywordGloss": "Força sob o senhorio de Deus, sem reagir ao mal com violência ou vingança.",
+    "focusQuestion": "Onde sua reação costuma ser força bruta de ego em vez de mansidão?",
+    "reflectionPrompts": [
+      "Força entregue a Deus",
+      "Não reagir com vingança",
+      "Esperar a herança"
+    ],
+    "facts": [
+      {
+        "text": "Os que choram serão consolados.",
+        "evidenceRef": "Mateus 5:4",
+        "evidenceSpan": "serão consolados"
+      },
+      {
+        "text": "Os mansos são bem-aventurados.",
+        "evidenceRef": "Mateus 5:5",
+        "evidenceSpan": "Bem-aventurados os mansos"
+      },
+      {
+        "text": "Os mansos herdarão a terra.",
+        "evidenceRef": "Mateus 5:5",
+        "evidenceSpan": "herdarão a terra"
+      },
+      {
+        "text": "Os que têm fome de justiça serão fartos.",
+        "evidenceRef": "Mateus 5:6",
+        "evidenceSpan": "pois serão fartos"
+      },
+      {
+        "text": "Os puros de coração verão a Deus.",
+        "evidenceRef": "Mateus 5:8",
+        "evidenceSpan": "pois verão a Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "mansos",
+        "gloss": "Quem entrega a força a Deus em vez de usá-la para se impor."
+      },
+      {
+        "term": "terra",
+        "gloss": "A herança prometida por Deus aos mansos, recebida como dom."
+      },
+      {
+        "term": "justiça",
+        "gloss": "A vida reta que Deus deseja, buscada com fome e sede."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Consolo para quem chora",
+        "evidenceRef": "Mateus 5:4"
+      },
+      {
+        "label": "Bênção aos mansos",
+        "evidenceRef": "Mateus 5:5"
+      },
+      {
+        "label": "Promessa de herança da terra",
+        "evidenceRef": "Mateus 5:5"
+      },
+      {
+        "label": "Fome de justiça abençoada",
+        "evidenceRef": "Mateus 5:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A terra é prometida aos mansos, não a quem a toma pela força.",
+        "marker": null,
+        "evidenceRef": "Mateus 5:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "À mansidão corresponde a herança prometida por Deus.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 5:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 37:11",
+        "bridge": "Mansos herdam a terra",
+        "text": "Mas os humildes herdarão a terra e se deleitarão na abundância de paz."
+      },
+      {
+        "ref": "Mateus 11:29",
+        "bridge": "Jesus manso de coração",
+        "text": "Tomem sobre vocês o meu jugo e aprendam de mim, porque sou manso e humilde de coração; e encontrarão descanso para a alma de vocês."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Manso é quem não tem força nem opinião sobre nada.",
+        "why": "O texto promete herança aos mansos; mansidão é força entregue a Deus, não ausência dela."
+      },
+      {
+        "text": "A terra será de quem vencer os outros pela violência.",
+        "why": "Jesus promete a herança justamente aos mansos, no caminho contrário."
+      },
+      {
+        "text": "Herdar a terra é promessa só material e imediata.",
+        "why": "No Sermão, a herança é dom futuro de Deus dentro do Reino que ele anuncia."
+      }
+    ],
+    "centralInsight": "Mansidão é força sob senhorio",
+    "anchorQuestion": "O que Jesus promete aos mansos em Mateus 5:5?",
+    "relatedVerses": [
+      {
+        "reference": "Salmos 37:11",
+        "reason": "Mansos herdam a terra"
+      },
+      {
+        "reference": "Mateus 11:29",
+        "reason": "Jesus manso de coração"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "sermao-do-monte-sem-sm-04-os-mansos-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Mateus 5:5, Jesus diz que os violentos herdarão a terra",
+      "prompt": "Em Mateus 5:5, Jesus diz que os violentos herdarão a terra",
+      "cue": "Em Mateus 5:5, Jesus diz que os violentos herdarão a terra",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Bem-aventurados os mansos",
+      "feedbackCorrect": "A herança é prometida aos mansos, não a quem vive pela violência.",
+      "feedbackWrong": {
+        "true": "Releia 5:5: o grupo abençoado é o dos mansos."
+      },
+      "hint": "Olhe quem recebe a promessa da terra.",
+      "learningObjective": "Observar quem herda a terra em 5:5.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-04-os-mansos-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Mateus 5:5, toque quem Jesus chama de bem-aventurados.",
+      "prompt": "Em Mateus 5:5, toque quem Jesus chama de bem-aventurados.",
+      "cue": "Em Mateus 5:5, toque quem Jesus chama de bem-aventurados.",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a terra"
+        },
+        {
+          "id": "b",
+          "text": "Bem-aventurados"
+        },
+        {
+          "id": "c",
+          "text": "os mansos"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Bem-aventurados os mansos",
+      "feedbackCorrect": "Jesus abençoa quem entrega a força a Deus em vez de se impor.",
+      "feedbackWrong": {
+        "a": "Isso é a herança prometida, não o grupo abençoado.",
+        "b": "Isso é a declaração de Jesus, não quem a recebe."
+      },
+      "hint": "Procure o grupo logo após a declaração inicial.",
+      "learningObjective": "Identificar os abençoados de Mateus 5:5.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-04-os-mansos-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Mateus 5:5, o que os mansos receberão?",
+      "prompt": "Segundo Mateus 5:5, o que os mansos receberão?",
+      "cue": "Segundo Mateus 5:5, o que os mansos receberão?",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alcançarão misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Herdarão a terra"
+        },
+        {
+          "id": "c",
+          "text": "Serão consolados no choro"
+        },
+        {
+          "id": "d",
+          "text": "Verão a Deus face a face"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "A promessa específica aos mansos é herdar a terra como dom de Deus.",
+      "feedbackWrong": {
+        "a": "Misericórdia é promessa aos misericordiosos (5:7).",
+        "c": "Consolo é promessa aos que choram (5:4).",
+        "d": "Ver a Deus é promessa aos puros de coração (5:8)."
+      },
+      "hint": "Cada bem-aventurança tem promessa própria.",
+      "learningObjective": "Observar a promessa de Mateus 5:5.",
+      "evidence": [
+        "Mateus 5:4–5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-04-os-mansos-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Mateus 5:5 na ordem do texto.",
+      "prompt": "Monte Mateus 5:5 na ordem do texto.",
+      "cue": "Monte Mateus 5:5 na ordem do texto.",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os mansos"
+        },
+        {
+          "id": "b",
+          "text": "porque herdarão"
+        },
+        {
+          "id": "c",
+          "text": "a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "porque herdarão a terra",
+      "feedbackCorrect": "Mansos abençoados porque Deus lhes promete a terra como herança.",
+      "feedbackWrong": {
+        "default": "Comece pelo grupo abençoado; a herança fecha o versículo."
+      },
+      "hint": "A promessa vem depois da palavra porque.",
+      "learningObjective": "Reconhecer a sequência de Mateus 5:5.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-04-os-mansos-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Mateus 5:5, o que os mansos herdarão?",
+      "prompt": "Em Mateus 5:5, o que os mansos herdarão?",
+      "cue": "Em Mateus 5:5, o que os mansos herdarão?",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "template": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "céus"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "fama"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Deus promete a terra como herança a quem não vive pela força bruta.",
+      "feedbackWrong": {
+        "a": "Céus aparece em reino dos céus (5:3), não aqui.",
+        "c": "Fama humana não é promessa do Sermão aos mansos."
+      },
+      "hint": "Veja o bem nomeado no fim do versículo.",
+      "learningObjective": "Lembrar a herança prometida aos mansos.",
+      "evidence": [
+        "Mateus 5:4–5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-04-os-mansos-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Mateus 5:5 comunica que se liga a este contexto?",
+      "prompt": "O que Mateus 5:5 comunica que se liga a este contexto?",
+      "cue": "O que Mateus 5:5 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "passageA": {
+        "ref": "Mateus 5:5",
+        "text": "Bem-aventurados os mansos, porque herdarão a terra."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No Reino, a herança não é de quem se impõe pela força, mas de quem entrega a força a Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Força vence e herda tudo"
+        },
+        {
+          "id": "b",
+          "text": "Fraqueza é a maior virtude"
+        },
+        {
+          "id": "c",
+          "text": "Mansidão recebe a herança"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os mansos",
+      "feedbackCorrect": "Jesus inverte a lógica da força: quem é manso recebe de Deus.",
+      "feedbackWrong": {
+        "a": "A promessa não é de quem vence os outros.",
+        "b": "Mansidão não é fraqueza, é força sob o senhorio de Deus."
+      },
+      "hint": "Pense em quem Deus escolhe para herdar.",
+      "learningObjective": "Ligar mansidão à herança prometida por Deus.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-04-os-mansos-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Mateus 5:5, a herança da terra depende de os mansos tomarem o que é seu pela força",
+      "prompt": "Em Mateus 5:5, a herança da terra depende de os mansos tomarem o que é seu pela força",
+      "cue": "Em Mateus 5:5, a herança da terra depende de os mansos tomarem o que é seu pela força",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Herdar é receber: a terra vem como dom de Deus aos mansos.",
+      "feedbackWrong": {
+        "true": "O verbo é herdar, receber de Deus, não tomar à força."
+      },
+      "hint": "Repare no verbo usado para a terra.",
+      "learningObjective": "Compreender a herança como dom, não conquista violenta.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-04-os-mansos-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Mateus 5:5, toque a palavra que mostra que a terra é recebida, não tomada.",
+      "prompt": "Em Mateus 5:5, toque a palavra que mostra que a terra é recebida, não tomada.",
+      "cue": "Em Mateus 5:5, toque a palavra que mostra que a terra é recebida, não tomada.",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mansos"
+        },
+        {
+          "id": "b",
+          "text": "porque"
+        },
+        {
+          "id": "c",
+          "text": "herdarão"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Quem herda recebe de outro: aqui, a terra é presente de Deus.",
+      "feedbackWrong": {
+        "a": "Isso nomeia quem recebe, não o modo de receber.",
+        "b": "Isso liga motivo e promessa, mas não mostra o receber."
+      },
+      "hint": "Procure o verbo da promessa no futuro.",
+      "learningObjective": "Reconhecer a herança como dom em 5:5.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-04-os-mansos-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Mateus 5:5 se relaciona com Mateus 5:4 no retrato do Reino?",
+      "prompt": "Como Mateus 5:5 se relaciona com Mateus 5:4 no retrato do Reino?",
+      "cue": "Como Mateus 5:5 se relaciona com Mateus 5:4 no retrato do Reino?",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Substitui o consolo pela conquista da terra"
+        },
+        {
+          "id": "b",
+          "text": "Encerra a lista de quem Deus abençoa"
+        },
+        {
+          "id": "c",
+          "text": "Acrescenta a mansidão ao coração que depende de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Promete a terra a quem chora mais alto"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os mansos",
+      "feedbackCorrect": "Choro e mansidão desenham o mesmo coração entregue a Deus.",
+      "feedbackWrong": {
+        "a": "Não há conquista; há herança recebida de Deus.",
+        "b": "A lista continua depois de 5:5, até 5:9 e além.",
+        "d": "O consolo de 5:4 não é prêmio de intensidade do choro."
+      },
+      "hint": "Veja os versículos como retrato de um mesmo povo.",
+      "learningObjective": "Relacionar choro consolado e mansidão abençoada.",
+      "evidence": [
+        "Mateus 5:4–5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-04-os-mansos-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o retrato em Mateus 5:4–6?",
+      "prompt": "Como avança o retrato em Mateus 5:4–6?",
+      "cue": "Como avança o retrato em Mateus 5:4–6?",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem chora será consolado"
+        },
+        {
+          "id": "b",
+          "text": "Quem é manso herdará a terra"
+        },
+        {
+          "id": "c",
+          "text": "Quem tem fome de justiça será farto"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Consolo, herança e satisfação: Deus responde a cada traço do seu povo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos versículos 4, 5 e 6."
+      },
+      "hint": "Acompanhe a sequência das promessas.",
+      "learningObjective": "Compreender a progressão das bem-aventuranças.",
+      "evidence": [
+        "Mateus 5:4–5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-04-os-mansos-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Mateus 5:6, do que os abençoados têm fome e sede?",
+      "prompt": "Em Mateus 5:6, do que os abençoados têm fome e sede?",
+      "cue": "Em Mateus 5:6, do que os abençoados têm fome e sede?",
+      "verseRef": "Mateus 5:6",
+      "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+      "template": "Bem-aventurados os que têm fome e sede de ___, pois serão fartos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "justiça"
+        },
+        {
+          "id": "b",
+          "text": "fama"
+        },
+        {
+          "id": "c",
+          "text": "poder"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "fome e sede de justiça",
+      "feedbackCorrect": "Depois da mansidão, Jesus abençoa quem deseja a justiça de Deus com apetite.",
+      "feedbackWrong": {
+        "b": "A fome abençoada não é de reconhecimento humano.",
+        "c": "Poder sobre os outros não é o desejo abençoado aqui."
+      },
+      "hint": "Pense no que Deus deseja ver na terra.",
+      "learningObjective": "Relacionar mansidão e fome de justiça.",
+      "evidence": [
+        "Mateus 5:6"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-04-os-mansos-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Mateus 5:5 a Salmos 37:11?",
+      "prompt": "O que liga Mateus 5:5 a Salmos 37:11?",
+      "cue": "O que liga Mateus 5:5 a Salmos 37:11?",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "passageA": {
+        "ref": "Mateus 5:5",
+        "text": "Bem-aventurados os mansos, porque herdarão a terra."
+      },
+      "passageB": {
+        "ref": "Salmos 37:11",
+        "text": "Mas os humildes herdarão a terra e se deleitarão na abundância de paz."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mansos herdam a terra"
+        },
+        {
+          "id": "b",
+          "text": "Terra é de quem chega primeiro"
+        },
+        {
+          "id": "c",
+          "text": "Violentos herdam a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Jesus retoma o Salmo: a herança pertence aos mansos que esperam em Deus.",
+      "feedbackWrong": {
+        "b": "Herança é dom de Deus, não corrida de ocupação.",
+        "c": "O Salmo entrega a terra aos mansos, não aos violentos."
+      },
+      "hint": "Compare quem recebe a terra nos dois textos.",
+      "learningObjective": "Relacionar a promessa de Jesus ao Salmo.",
+      "evidence": [
+        "Mateus 5:5",
+        "Salmos 37:11"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-04-os-mansos-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Mateus 5:5 apresenta a mansidão como força entregue a Deus, e não como ausência de força",
+      "prompt": "Mateus 5:5 apresenta a mansidão como força entregue a Deus, e não como ausência de força",
+      "cue": "Mateus 5:5 apresenta a mansidão como força entregue a Deus, e não como ausência de força",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Bem-aventurados os mansos",
+      "feedbackCorrect": "Quem herda a terra de Deus não é fraco: é forte sob o senhorio dele.",
+      "feedbackWrong": {
+        "false": "A promessa de herança mostra valor, não insignificância dos mansos."
+      },
+      "hint": "Veja o tamanho da promessa feita aos mansos.",
+      "learningObjective": "Interpretar mansidão como força sob Deus.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-04-os-mansos-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Mateus 5:5, toque o trecho que mostra o tamanho do dom aos mansos.",
+      "prompt": "Em Mateus 5:5, toque o trecho que mostra o tamanho do dom aos mansos.",
+      "cue": "Em Mateus 5:5, toque o trecho que mostra o tamanho do dom aos mansos.",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "os mansos"
+        },
+        {
+          "id": "b",
+          "text": "Bem-aventurados"
+        },
+        {
+          "id": "c",
+          "text": "herdarão a terra"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "A terra inteira como herança mostra que Deus honra quem é manso.",
+      "feedbackWrong": {
+        "a": "Isso nomeia quem recebe, não o tamanho do dom.",
+        "b": "Isso declara a bênção, não o que é dado."
+      },
+      "hint": "Procure a promessa completa no fim do versículo.",
+      "learningObjective": "Sustentar no texto a honra dada aos mansos.",
+      "evidence": [
+        "Mateus 5:4–5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-04-os-mansos-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Mateus 5:5 sustenta sobre como se recebe o futuro de Deus?",
+      "prompt": "Que leitura Mateus 5:5 sustenta sobre como se recebe o futuro de Deus?",
+      "cue": "Que leitura Mateus 5:5 sustenta sobre como se recebe o futuro de Deus?",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pela indiferença de quem nada espera da vida"
+        },
+        {
+          "id": "b",
+          "text": "Pelo acúmulo de bens ainda nesta terra"
+        },
+        {
+          "id": "c",
+          "text": "Pela mansidão de quem confia a força a Deus"
+        },
+        {
+          "id": "d",
+          "text": "Pela violência de quem se impõe aos outros"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os mansos",
+      "feedbackCorrect": "O futuro de Deus é herança de quem entrega a força a ele, não de quem atropela.",
+      "feedbackWrong": {
+        "a": "Manso espera em Deus; não é indiferente ao futuro.",
+        "b": "A terra é herança prometida, não acúmulo conquistado agora.",
+        "d": "A herança é dos mansos, o caminho contrário da violência."
+      },
+      "hint": "Compare mansidão com os caminhos rivais das opções.",
+      "learningObjective": "Escolher a interpretação sustentada por 5:5.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-04-os-mansos-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho da mansidão na Bíblia?",
+      "prompt": "Qual sequência revela o caminho da mansidão na Bíblia?",
+      "cue": "Qual sequência revela o caminho da mansidão na Bíblia?",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salmo promete a terra aos mansos"
+        },
+        {
+          "id": "b",
+          "text": "Jesus abençoa os mansos no monte"
+        },
+        {
+          "id": "c",
+          "text": "Jesus se diz manso de coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Do Salmo ao Sermão e ao próprio Jesus: mansidão é caminho do Reino.",
+      "feedbackWrong": {
+        "default": "Siga: Salmo, depois o Sermão, depois Jesus em Mateus 11."
+      },
+      "hint": "O último passo é o convite do próprio Jesus.",
+      "learningObjective": "Ver a mansidão como fio bíblico até Jesus.",
+      "evidence": [
+        "Mateus 5:5",
+        "Salmos 37:11",
+        "Mateus 11:29"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-04-os-mansos-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Mateus 5:8, quem verá a Deus segundo Jesus?",
+      "prompt": "Em Mateus 5:8, quem verá a Deus segundo Jesus?",
+      "cue": "Em Mateus 5:8, quem verá a Deus segundo Jesus?",
+      "verseRef": "Mateus 5:8",
+      "passageText": "Bem-aventurados os puros de coração, pois verão a Deus.",
+      "template": "Bem-aventurados os ___ de coração, pois verão a Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ricos"
+        },
+        {
+          "id": "b",
+          "text": "fortes"
+        },
+        {
+          "id": "c",
+          "text": "puros"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Bem-aventurados os puros de coração",
+      "feedbackCorrect": "A mansidão floresce num coração puro, que um dia verá a Deus.",
+      "feedbackWrong": {
+        "a": "Riqueza não é a condição para ver a Deus em 5:8.",
+        "b": "Força própria não é o traço abençoado nesse versículo."
+      },
+      "hint": "Pense na condição do coração, não do bolso.",
+      "learningObjective": "Lembrar o termo ligado a ver a Deus.",
+      "evidence": [
+        "Mateus 5:8"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-04-os-mansos-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-04-os-mansos",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Mateus 5:5 a Mateus 11:29?",
+      "prompt": "O que liga Mateus 5:5 a Mateus 11:29?",
+      "cue": "O que liga Mateus 5:5 a Mateus 11:29?",
+      "verseRef": "Mateus 5:4–5",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra.",
+      "passageA": {
+        "ref": "Mateus 5:5",
+        "text": "Bem-aventurados os mansos, porque herdarão a terra."
+      },
+      "passageB": {
+        "ref": "Mateus 11:29",
+        "text": "Tomem sobre vocês o meu jugo e aprendam de mim, porque sou manso e humilde de coração; e encontrarão descanso para a alma de vocês."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus exige carga maior"
+        },
+        {
+          "id": "b",
+          "text": "Mansidão só para os outros"
+        },
+        {
+          "id": "c",
+          "text": "Jesus manso de coração"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os mansos",
+      "feedbackCorrect": "O Jesus que abençoa os mansos é ele mesmo manso e humilde de coração.",
+      "feedbackWrong": {
+        "a": "Ele promete descanso, não peso maior aos cansados.",
+        "b": "Jesus vive primeiro a mansidão que ensina no monte."
+      },
+      "hint": "Veja como o próprio Jesus se descreve em Mateus 11.",
+      "learningObjective": "Ligar a mansidão ensinada à pessoa de Jesus.",
+      "evidence": [
+        "Mateus 5:4–5",
+        "Mateus 11:29"
+      ]
+    }
+  ]
+}

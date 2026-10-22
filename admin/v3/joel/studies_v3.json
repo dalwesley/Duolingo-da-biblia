@@ -1,0 +1,941 @@
+{
+  "studies": {
+    "jl-03-gafanhoto": {
+      "slug": "jl-03-gafanhoto",
+      "passageRef": "Joel 1:1–4",
+      "passageText": "A palavra do Senhor que foi dirigida a Joel, filho de Petuel. Ouçam isto, anciãos, e escutem, todos os habitantes da terra: Aconteceu isso em seus dias? Ou também nos dias de seus pais? Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração. O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+      "passages": [
+        {
+          "ref": "Joel 1:1–4",
+          "text": "A palavra do Senhor que foi dirigida a Joel, filho de Petuel. Ouçam isto, anciãos, e escutem, todos os habitantes da terra: Aconteceu isso em seus dias? Ou também nos dias de seus pais? Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração. O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor."
+        },
+        {
+          "ref": "Joel 1:5–7",
+          "text": "Despertai, bêbados, e chorai; uivai, todos vós que bebeis vinho novo, pois foi retirado da vossa boca. Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa. Destruiu minha videira e secou minha figueira; dela arrancou a casca e a lançou ao chão; seus ramos estão se tornando brancos."
+        }
+      ],
+      "context": "Joel abre o livro com uma praga que devora a terra em cadeia. Antes de qualquer explicação, o povo é chamado a ouvir o que aconteceu e a contar às próximas gerações.",
+      "keyword": "gafanhoto",
+      "keywordGloss": "Um dos devoradores em cadeia de Joel 1:4; cada um come o que o anterior deixou.",
+      "focusQuestion": "Quando uma perda se acumula na sua vida, você costuma parar para ouvir o que Deus quer mostrar nela?",
+      "reflectionPrompts": [
+        "Perda que se completa",
+        "Ouvir antes de esquecer",
+        "Contar à próxima geração"
+      ],
+      "facts": [
+        {
+          "text": "A palavra do Senhor foi dirigida a Joel, filho de Petuel.",
+          "evidenceRef": "Joel 1:1",
+          "evidenceSpan": "dirigida a Joel, filho de Petuel"
+        },
+        {
+          "text": "O povo deve contar o ocorrido de geração em geração.",
+          "evidenceRef": "Joel 1:3",
+          "evidenceSpan": "que estes também o transmitam à próxima geração"
+        },
+        {
+          "text": "O que a lagarta deixou, comeu o gafanhoto.",
+          "evidenceRef": "Joel 1:4",
+          "evidenceSpan": "O que a lagarta deixou, comeu o gafanhoto"
+        },
+        {
+          "text": "Uma nação poderosa e inumerável veio contra a terra.",
+          "evidenceRef": "Joel 1:6",
+          "evidenceSpan": "poderosa e inumerável"
+        },
+        {
+          "text": "A videira foi destruída e a figueira secou.",
+          "evidenceRef": "Joel 1:7",
+          "evidenceSpan": "Destruiu minha videira e secou minha figueira"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "lagarta",
+          "gloss": "Primeiro devorador da cadeia; o que ela deixa, o próximo come."
+        },
+        {
+          "term": "gafanhoto",
+          "gloss": "Nome que se repete na cadeia de perda que esvazia a terra."
+        },
+        {
+          "term": "videira",
+          "gloss": "Planta destruída pela invasão, sinal da colheita perdida."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A palavra chega a Joel",
+          "evidenceRef": "Joel 1:1"
+        },
+        {
+          "label": "Ouvir e contar adiante",
+          "evidenceRef": "Joel 1:3"
+        },
+        {
+          "label": "Perda devora em cadeia",
+          "evidenceRef": "Joel 1:4"
+        },
+        {
+          "label": "Terra e plantas atingidas",
+          "evidenceRef": "Joel 1:7"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Cada devorador come o que o anterior deixou, até a perda se completar.",
+          "marker": "deixou",
+          "evidenceRef": "Joel 1:4"
+        },
+        {
+          "kind": "causa",
+          "text": "A invasão é apresentada como causa da devastação da terra.",
+          "marker": "Porque",
+          "evidenceRef": "Joel 1:6"
+        },
+        {
+          "kind": "resultado",
+          "text": "Da invasão resulta videira destruída e figueira seca.",
+          "marker": null,
+          "evidenceRef": "Joel 1:7"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Êxodo 10:15",
+          "bridge": "Gafanhotos devoram toda a terra",
+          "text": "Porque cobriram a superfície de toda a terra, de modo que a terra se escureceu; devoraram toda a erva da terra e todo o fruto das árvores que deixara a chuva de pedras; e não restou nada verde nas árvores, nem na erva do campo, em toda a terra do Egito."
+        },
+        {
+          "ref": "Salmos 78:4",
+          "bridge": "Contar maravilhas à próxima geração",
+          "text": "Não os ocultaremos de nossos filhos; antes, anunciaremos à geração vindoura os louvores do Senhor, sua força e as maravilhas que fez."
+        },
+        {
+          "ref": "Deuteronômio 28:38",
+          "bridge": "Gafanhoto consome a colheita",
+          "text": "Lançarás muitas sementes ao campo, mas colherás pouco, porque o gafanhoto as consumirá."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Os gafanhotos de Joel podem ser nomeados como um país atual específico.",
+          "why": "O texto descreve a devastação e chama a ouvir, sem nomear nenhum povo de hoje."
+        },
+        {
+          "text": "Toda perda citada no livro prova um pecado de uma pessoa específica.",
+          "why": "Joel chama o povo inteiro a ouvir e contar, sem apontar um culpado individual."
+        },
+        {
+          "text": "A praga é um assunto solto, sem relação com a palavra do Senhor.",
+          "why": "O livro abre afirmando que a palavra do Senhor foi dirigida a Joel."
+        }
+      ],
+      "centralInsight": "O juízo pode chegar como perda",
+      "anchorQuestion": "Em Joel 1:4, como a perda da colheita avança de um devorador para outro?",
+      "relatedVerses": [
+        {
+          "reference": "Êxodo 10:15",
+          "reason": "Gafanhotos devoram toda a terra"
+        },
+        {
+          "reference": "Salmos 78:4",
+          "reason": "Contar maravilhas à próxima geração"
+        },
+        {
+          "reference": "Deuteronômio 28:38",
+          "reason": "Gafanhoto consome a colheita"
+        }
+      ]
+    },
+    "jl-04-coracao": {
+      "slug": "jl-04-coracao",
+      "passageRef": "Joel 2:12–13",
+      "passageText": "Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento. Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+      "passages": [
+        {
+          "ref": "Joel 2:10–13",
+          "text": "Diante dele, a terra treme, os céus se abalam, o sol e a lua se escurecem, e as estrelas deixarão de brilhar. E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui terrível! Quem o poderá suportar? Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento. Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+        },
+        {
+          "ref": "Joel 2:14–16",
+          "text": "Quem sabe se não se voltará, se se arrependerá e deixará após si uma bênção, uma oferta de manjares e libação para o SENHOR, o vosso Deus? Toquem a trombeta em Sião, proclamem um santo jejum, convoquem uma assembleia solene. Convoquem o povo, santifiquem a congregação, ajuntem os anciãos, reúnam as crianças e os que ainda mamam; saia o noivo de sua câmara, e a noiva de seu aposento."
+        }
+      ],
+      "context": "Diante do Dia do Senhor, Joel não pede um gesto para impressionar. O convite é voltar a Deus de todo o coração, porque ele é misericordioso e tardio em irar-se.",
+      "keyword": "coração",
+      "keywordGloss": "Centro da pessoa; é o coração, e não a roupa, que Joel manda rasgar diante de Deus.",
+      "focusQuestion": "Que gesto externo você já usou no lugar de uma volta sincera do coração a Deus?",
+      "reflectionPrompts": [
+        "Coração, não só a veste",
+        "Deus tardio em irar-se",
+        "Voltar de todo o coração"
+      ],
+      "facts": [
+        {
+          "text": "Diante dele, a terra treme e o sol e a lua se escurecem.",
+          "evidenceRef": "Joel 2:10",
+          "evidenceSpan": "o sol e a lua se escurecem"
+        },
+        {
+          "text": "O Dia do Senhor é grande e mui terrível.",
+          "evidenceRef": "Joel 2:11",
+          "evidenceSpan": "Grande é o Dia do Senhor e mui terrível"
+        },
+        {
+          "text": "Deus chama a converter-se a ele de todo o coração.",
+          "evidenceRef": "Joel 2:12",
+          "evidenceSpan": "Convertei-vos a Mim de todo o vosso coração"
+        },
+        {
+          "text": "Joel manda rasgar o coração, e não as vestes.",
+          "evidenceRef": "Joel 2:13",
+          "evidenceSpan": "Rasgai o coração e não as vestes"
+        },
+        {
+          "text": "Deus é tardio em se irar e grande em bondade.",
+          "evidenceRef": "Joel 2:13",
+          "evidenceSpan": "tardio em se irar e grande em bondade"
+        },
+        {
+          "text": "Em Sião deve soar trombeta e proclamar-se jejum solene.",
+          "evidenceRef": "Joel 2:15",
+          "evidenceSpan": "Toquem a trombeta em Sião"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "coração",
+          "gloss": "Interior da pessoa, que Deus quer ver voltado para ele de verdade."
+        },
+        {
+          "term": "vestes",
+          "gloss": "Roupa que se rasgava por luto; gesto externo que não substitui a volta."
+        },
+        {
+          "term": "trombeta",
+          "gloss": "Sinal sonoro que convoca o povo em Sião para jejum e assembleia."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Sinais cósmicos diante dele",
+          "evidenceRef": "Joel 2:10"
+        },
+        {
+          "label": "Dia grande e terrível anunciado",
+          "evidenceRef": "Joel 2:11"
+        },
+        {
+          "label": "Chamado a voltar de coração",
+          "evidenceRef": "Joel 2:12"
+        },
+        {
+          "label": "Coração rasgado, não vestes",
+          "evidenceRef": "Joel 2:13"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Rasgar o coração é posto contra rasgar apenas as vestes.",
+          "marker": "não",
+          "evidenceRef": "Joel 2:13"
+        },
+        {
+          "kind": "causa",
+          "text": "O caráter misericordioso de Deus é o motivo para voltar a ele.",
+          "marker": "pois",
+          "evidenceRef": "Joel 2:13"
+        },
+        {
+          "kind": "sequência",
+          "text": "Mesmo diante do juízo anunciado, Deus ainda chama agora à conversão.",
+          "marker": "Agora",
+          "evidenceRef": "Joel 2:12"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 51:17",
+          "bridge": "Coração quebrantado Deus não despreza",
+          "text": "Os sacrifícios a Deus consistem em um espírito quebrantado; a um coração compungido e contrito, não o desprezarás, ó Deus."
+        },
+        {
+          "ref": "Salmos 34:18",
+          "bridge": "Senhor perto do coração quebrantado",
+          "text": "Perto está o Senhor dos que têm o coração quebrantado e salva os que são de espírito oprimido."
+        },
+        {
+          "ref": "Lamentações 3:40",
+          "bridge": "Examinar caminhos e voltar",
+          "text": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Rasgar as vestes e jejuar, por si só, já é a conversão que Deus pede.",
+          "why": "Joel manda rasgar o coração e não as vestes, de todo o coração."
+        },
+        {
+          "text": "Um jejum bem feito obriga Deus a mudar a situação do povo.",
+          "why": "O texto diz quem sabe, em 2:14, ligando a esperança ao caráter de Deus."
+        },
+        {
+          "text": "Se Deus é tardio em irar-se, o Dia anunciado nunca será terrível.",
+          "why": "O mesmo trecho chama o Dia de grande e mui terrível, em 2:11."
+        }
+      ],
+      "centralInsight": "Deus quer o coração, não só a veste",
+      "anchorQuestion": "O que Joel 2:13 manda rasgar, e como o versículo descreve o caráter de Deus?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 51:17",
+          "reason": "Coração quebrantado Deus não despreza"
+        },
+        {
+          "reference": "Salmos 34:18",
+          "reason": "Senhor perto do coração quebrantado"
+        },
+        {
+          "reference": "Lamentações 3:40",
+          "reason": "Examinar caminhos e voltar"
+        }
+      ]
+    },
+    "jl-05-anos": {
+      "slug": "jl-05-anos",
+      "passageRef": "Joel 2:25–27",
+      "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+      "passages": [
+        {
+          "ref": "Joel 2:22–25",
+          "text": "Não temam, animais do campo, pois os pastos do deserto reverdecerão, as árvores darão seus frutos, a figueira e a videira produzirão com abundância. Alegrai-vos, pois, filhos de Sião; regozijai-vos no Senhor, vosso Deus, porque Ele vos dará, em justa medida, a chuva; fará descer sobre vós, como outrora, a chuva temporã e a serôdia no primeiro mês. As eiras se encherão de trigo, e os lagares transbordarão de vinho e de óleo. E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês."
+        },
+        {
+          "ref": "Joel 2:26–28",
+          "text": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado. E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+        }
+      ],
+      "context": "Após a devastação, Deus promete vida de volta ao campo, chuva na medida certa e anos restituídos. A restauração termina em louvor e na presença de Deus no meio do povo.",
+      "keyword": "restituirei",
+      "keywordGloss": "Promessa de Deus de devolver ao povo os anos que a praga consumiu, com fartura e louvor.",
+      "focusQuestion": "Que ano perdido você entregaria a Deus hoje, confiando que ele pode restaurar o que foi consumido?",
+      "reflectionPrompts": [
+        "Anos devolvidos por Deus",
+        "Campo que volta a verdejar",
+        "Louvor depois da perda"
+      ],
+      "facts": [
+        {
+          "text": "Os pastos do deserto reverdecerão e as árvores darão frutos.",
+          "evidenceRef": "Joel 2:22",
+          "evidenceSpan": "os pastos do deserto reverdecerão"
+        },
+        {
+          "text": "Deus dará a chuva temporã e a serôdia em justa medida.",
+          "evidenceRef": "Joel 2:23",
+          "evidenceSpan": "chuva temporã e a serôdia"
+        },
+        {
+          "text": "As eiras se encherão de trigo e os lagares transbordarão.",
+          "evidenceRef": "Joel 2:24",
+          "evidenceSpan": "As eiras se encherão de trigo"
+        },
+        {
+          "text": "Deus restituirá os anos consumidos pelos devoradores.",
+          "evidenceRef": "Joel 2:25",
+          "evidenceSpan": "restituirei a vocês os anos"
+        },
+        {
+          "text": "O povo comerá em abundância e louvará o Senhor.",
+          "evidenceRef": "Joel 2:26",
+          "evidenceSpan": "comerão em abundância"
+        },
+        {
+          "text": "Deus está no meio de Israel e o povo não será envergonhado.",
+          "evidenceRef": "Joel 2:27",
+          "evidenceSpan": "estou no meio de Israel"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "restituirei",
+          "gloss": "Deus devolve, com fartura, aquilo que os anos de praga consumiram do povo."
+        },
+        {
+          "term": "lagares",
+          "gloss": "Lugares de pisar uvas e azeitonas, que voltarão a transbordar de vinho e óleo."
+        },
+        {
+          "term": "abundância",
+          "gloss": "Fartura prometida ao campo e à mesa, depois do tempo de escassez."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Campo volta a verdejar",
+          "evidenceRef": "Joel 2:22"
+        },
+        {
+          "label": "Chuva dada na medida certa",
+          "evidenceRef": "Joel 2:23"
+        },
+        {
+          "label": "Eiras e lagares se enchem",
+          "evidenceRef": "Joel 2:24"
+        },
+        {
+          "label": "Anos perdidos são restituídos",
+          "evidenceRef": "Joel 2:25"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Os animais não devem temer porque os pastos voltarão a verdejar.",
+          "marker": "pois",
+          "evidenceRef": "Joel 2:22"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois da restauração, Deus derramará o Espírito sobre toda a carne.",
+          "marker": "depois",
+          "evidenceRef": "Joel 2:28"
+        },
+        {
+          "kind": "resultado",
+          "text": "Da fartura restituída nasce o louvor ao nome do Senhor.",
+          "marker": null,
+          "evidenceRef": "Joel 2:26"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 126:5",
+          "bridge": "Quem semeia chorando colhe cantando",
+          "text": "Os que semeiam com lágrimas, com júbilo colherão."
+        },
+        {
+          "ref": "Salmos 145:15",
+          "bridge": "Deus dá alimento a seu tempo",
+          "text": "Os olhos de todos te esperam, e tu, a seu tempo, lhes dás o alimento."
+        },
+        {
+          "ref": "Amós 9:13",
+          "bridge": "Colheita abundante prometida por Deus",
+          "text": "Dias virão, diz o SENHOR, em que o que labuta na terra estará logo ao lado do que colhe, e o que pisa as uvas se encontrará junto ao que semeia; os montes transbordarão de mosto, e todas as colinas se derreterão."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A promessa garante riqueza material automática a qualquer leitor hoje.",
+          "why": "A promessa fala ao povo após o juízo e conduz ao louvor, não a uma garantia."
+        },
+        {
+          "text": "Restituir os anos significa voltar no tempo e apagar o passado vivido.",
+          "why": "O texto segue com colheitas, fartura e louvor adiante, não com tempo revertido."
+        },
+        {
+          "text": "A praga que comeu os anos foi um acaso fora do governo de Deus.",
+          "why": "Deus chama a praga de meu grande exército que enviei, em 2:25."
+        }
+      ],
+      "centralInsight": "Deus restitui o que o juízo comeu",
+      "anchorQuestion": "O que Deus promete restituir em Joel 2:25, e o que o povo fará em 2:26?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 126:5",
+          "reason": "Quem semeia chorando colhe cantando"
+        },
+        {
+          "reference": "Salmos 145:15",
+          "reason": "Deus dá alimento a seu tempo"
+        },
+        {
+          "reference": "Amós 9:13",
+          "reason": "Colheita abundante prometida por Deus"
+        }
+      ]
+    },
+    "joel-joel-01-gafanhotos-e-juizo": {
+      "slug": "joel-joel-01-gafanhotos-e-juizo",
+      "passageRef": "Joel 2:25–28",
+      "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado. E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+      "passages": [
+        {
+          "ref": "Joel 2:25–28",
+          "text": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado. E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+        },
+        {
+          "ref": "Joel 1:6",
+          "text": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa."
+        },
+        {
+          "ref": "Joel 2:30–31",
+          "text": "Mostrarei prodígios no céu e na terra: sangue, fogo e colunas de fumaça. O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor."
+        }
+      ],
+      "context": "Joel fala a um povo que viu a terra devastada por gafanhotos. No trecho, Deus promete restituir os anos perdidos, estar no meio do povo e derramar o seu Espírito.",
+      "keyword": "gafanhoto",
+      "keywordGloss": "Inseto que devora a colheita; no texto, a praga é chamada de grande exército enviado por Deus.",
+      "focusQuestion": "Diante de uma perda que você não consegue reparar, o que muda ao lembrar que Deus promete estar presente?",
+      "reflectionPrompts": [
+        "Anos que a praga comeu",
+        "Deus no meio do povo",
+        "O Espírito sobre todos"
+      ],
+      "facts": [
+        {
+          "text": "Deus promete restituir os anos consumidos pelos devoradores.",
+          "evidenceRef": "Joel 2:25",
+          "evidenceSpan": "restituirei a vocês os anos"
+        },
+        {
+          "text": "O povo comerá em abundância e louvará o nome do Senhor.",
+          "evidenceRef": "Joel 2:26",
+          "evidenceSpan": "comerão em abundância"
+        },
+        {
+          "text": "Deus afirma estar no meio de Israel.",
+          "evidenceRef": "Joel 2:27",
+          "evidenceSpan": "estou no meio de Israel"
+        },
+        {
+          "text": "Deus derramará o seu Espírito sobre toda a carne.",
+          "evidenceRef": "Joel 2:28",
+          "evidenceSpan": "derramarei o meu Espírito sobre toda a carne"
+        },
+        {
+          "text": "Sinais no sol e na lua vêm antes do grande Dia do Senhor.",
+          "evidenceRef": "Joel 2:31",
+          "evidenceSpan": "antes que venha o grande e temível Dia do Senhor"
+        },
+        {
+          "text": "Uma nação poderosa e inumerável veio contra a terra.",
+          "evidenceRef": "Joel 1:6",
+          "evidenceSpan": "uma nação veio contra a minha terra"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "gafanhoto",
+          "gloss": "Devorador da colheita que, no texto, Deus chama de seu grande exército."
+        },
+        {
+          "term": "Espírito",
+          "gloss": "Presença ativa de Deus, prometida sobre toda a carne, sem exceção de grupo."
+        },
+        {
+          "term": "Dia do Senhor",
+          "gloss": "Dia em que Deus age com juízo e salvação, anunciado pelos sinais do texto."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Anos consumidos pela praga",
+          "evidenceRef": "Joel 2:25"
+        },
+        {
+          "label": "Fartura que vira louvor",
+          "evidenceRef": "Joel 2:26"
+        },
+        {
+          "label": "Deus presente no meio do povo",
+          "evidenceRef": "Joel 2:27"
+        },
+        {
+          "label": "Sinais antes do grande Dia",
+          "evidenceRef": "Joel 2:31"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "A invasão é explicada como uma nação que veio contra a terra de Deus.",
+          "marker": "Porque",
+          "evidenceRef": "Joel 1:6"
+        },
+        {
+          "kind": "sequência",
+          "text": "Só depois da restauração anunciada vem a promessa do Espírito sobre todos.",
+          "marker": "depois",
+          "evidenceRef": "Joel 2:28"
+        },
+        {
+          "kind": "resultado",
+          "text": "A fartura prometida leva o povo a louvar o nome do Senhor.",
+          "marker": null,
+          "evidenceRef": "Joel 2:26"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Atos 2:17",
+          "bridge": "Pedro cita Joel no Pentecostes",
+          "text": "E nos últimos dias, diz o Senhor, derramarei do meu Espírito sobre toda a carne, vossos filhos e vossas filhas profetizarão, vossos jovens terão visões, e sonharão sonhos vossos idosos."
+        },
+        {
+          "ref": "Isaías 44:3",
+          "bridge": "Deus derrama o seu Espírito",
+          "text": "Pois derramarei água sobre o sedento e torrentes sobre a terra seca; derramarei o meu Espírito sobre a tua posteridade e a minha bênção sobre os teus descendentes."
+        },
+        {
+          "ref": "Romanos 10:13",
+          "bridge": "Invocar o nome do Senhor",
+          "text": "Porque todo aquele que invocar o nome do Senhor será salvo."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Os gafanhotos podem ser identificados, com certeza, a um exército ou país de hoje.",
+          "why": "O texto chama a praga de grande exército de Deus, sem nomear nenhum povo atual."
+        },
+        {
+          "text": "A promessa garante fartura material automática a qualquer leitor, em qualquer tempo.",
+          "why": "A promessa fala ao povo após o juízo e termina em louvor, não em garantia de riqueza."
+        },
+        {
+          "text": "O Dia do Senhor já se esgotou por completo na praga de gafanhotos.",
+          "why": "O texto distingue a praga dos sinais que vêm antes do grande e temível Dia."
+        }
+      ],
+      "centralInsight": "O que isso revela sobre a aliança de Deus?",
+      "anchorQuestion": "O que Deus promete restituir em Joel 2:25, e sobre quem ele derrama o Espírito em 2:28?",
+      "relatedVerses": [
+        {
+          "reference": "Atos 2:17",
+          "reason": "Pedro cita Joel no Pentecostes"
+        },
+        {
+          "reference": "Isaías 44:3",
+          "reason": "Deus derrama o seu Espírito"
+        },
+        {
+          "reference": "Romanos 10:13",
+          "reason": "Invocar o nome do Senhor"
+        }
+      ]
+    },
+    "joel-joel-02-derramarei-o-meu-esp": {
+      "slug": "joel-joel-02-derramarei-o-meu-esp",
+      "passageRef": "Joel 2:28–29",
+      "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões; E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+      "passages": [
+        {
+          "ref": "Joel 2:28–29",
+          "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões; E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias."
+        },
+        {
+          "ref": "Joel 2:25–27",
+          "text": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado."
+        },
+        {
+          "ref": "Joel 2:30–31",
+          "text": "Mostrarei prodígios no céu e na terra: sangue, fogo e colunas de fumaça. O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor."
+        }
+      ],
+      "context": "Depois de anunciar restauração ao povo, Joel traz a promessa maior do livro: Deus derramará o seu Espírito sobre toda a carne, sem deixar servos e servas de fora.",
+      "keyword": "derramarei",
+      "keywordGloss": "Verbo de Deus na promessa: é ele quem derrama o Espírito, em abundância e por iniciativa própria.",
+      "focusQuestion": "Quem você costuma deixar de fora quando pensa em quem Deus alcança, e o que Joel 2 muda nisso?",
+      "reflectionPrompts": [
+        "Toda a carne alcançada",
+        "Filhos, velhos e servos",
+        "Espírito dado por Deus"
+      ],
+      "facts": [
+        {
+          "text": "Deus derramará o Espírito sobre toda a carne.",
+          "evidenceRef": "Joel 2:28",
+          "evidenceSpan": "derramarei o meu Espírito sobre toda a carne"
+        },
+        {
+          "text": "Filhos e filhas profetizarão.",
+          "evidenceRef": "Joel 2:28",
+          "evidenceSpan": "os vossos filhos e filhas profetizarão"
+        },
+        {
+          "text": "Velhos sonharão e jovens terão visões.",
+          "evidenceRef": "Joel 2:28",
+          "evidenceSpan": "os vossos velhos sonharão e os jovens terão visões"
+        },
+        {
+          "text": "Servos e servas também receberão o Espírito.",
+          "evidenceRef": "Joel 2:29",
+          "evidenceSpan": "também derramarei o meu Espírito sobre os servos"
+        },
+        {
+          "text": "Deus mostrará prodígios no céu e na terra.",
+          "evidenceRef": "Joel 2:30",
+          "evidenceSpan": "Mostrarei prodígios no céu e na terra"
+        },
+        {
+          "text": "O sol se tornará em trevas antes do Dia do Senhor.",
+          "evidenceRef": "Joel 2:31",
+          "evidenceSpan": "O sol se tornará em trevas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "derramarei",
+          "gloss": "Ação futura de Deus: ele mesmo derrama o Espírito, sem intermediário humano."
+        },
+        {
+          "term": "toda a carne",
+          "gloss": "Expressão de alcance total: a promessa não fica restrita a um grupo."
+        },
+        {
+          "term": "profetizarão",
+          "gloss": "Filhos e filhas falarão movidos pelo Espírito que Deus derrama."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Deus anuncia um depois",
+          "evidenceRef": "Joel 2:28"
+        },
+        {
+          "label": "Espírito sobre toda a carne",
+          "evidenceRef": "Joel 2:28"
+        },
+        {
+          "label": "Servos e servas incluídos",
+          "evidenceRef": "Joel 2:29"
+        },
+        {
+          "label": "Sinais antes do grande Dia",
+          "evidenceRef": "Joel 2:31"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "A promessa do Espírito é situada depois da restauração anunciada.",
+          "marker": "depois",
+          "evidenceRef": "Joel 2:28"
+        },
+        {
+          "kind": "sequência",
+          "text": "Os sinais no sol e na lua vêm antes da vinda do Dia do Senhor.",
+          "marker": "antes",
+          "evidenceRef": "Joel 2:31"
+        },
+        {
+          "kind": "resultado",
+          "text": "Com o Espírito derramado, filhos e filhas profetizam e jovens veem.",
+          "marker": null,
+          "evidenceRef": "Joel 2:28"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Atos 2:17",
+          "bridge": "Pedro cita Joel no Pentecostes",
+          "text": "E nos últimos dias, diz o Senhor, derramarei do meu Espírito sobre toda a carne, vossos filhos e vossas filhas profetizarão, vossos jovens terão visões, e sonharão sonhos vossos idosos."
+        },
+        {
+          "ref": "Ezequiel 36:27",
+          "bridge": "Espírito dentro do povo",
+          "text": "E colocarei dentro de vós o meu Espírito e farei com que andeis nos meus estatutos, guardeis os meus juízos e os observeis."
+        },
+        {
+          "ref": "Números 11:29",
+          "bridge": "Moisés deseja todos profetizando",
+          "text": "Porém Moisés lhe disse: Você tem ciúmes por mim? Tomara que todo o povo do Senhor fosse profeta e que o Senhor lhes desse o seu Espírito sobre eles!"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Espírito prometido é só para líderes e profetas de profissão.",
+          "why": "O texto nomeia filhos, filhas, velhos, jovens, servos e servas."
+        },
+        {
+          "text": "A promessa alcança só homens adultos.",
+          "why": "Filhas e servas são nomeadas ao lado de filhos e servos."
+        },
+        {
+          "text": "Os sinais de Joel 2 permitem marcar a data do Dia do Senhor.",
+          "why": "O texto anuncia sinais antes do Dia, sem dar data alguma ao leitor."
+        }
+      ],
+      "centralInsight": "O que isso revela sobre a aliança de Deus?",
+      "anchorQuestion": "Quem Joel 2:28–29 diz que receberá o Espírito que Deus derrama?",
+      "relatedVerses": [
+        {
+          "reference": "Atos 2:17",
+          "reason": "Pedro cita Joel no Pentecostes"
+        },
+        {
+          "reference": "Ezequiel 36:27",
+          "reason": "Espírito dentro do povo"
+        },
+        {
+          "reference": "Números 11:29",
+          "reason": "Moisés deseja todos profetizando"
+        }
+      ]
+    },
+    "joel-joel-03-desafio-joel": {
+      "slug": "joel-joel-03-desafio-joel",
+      "passageRef": "Joel 2:25–28",
+      "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado. E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+      "passages": [
+        {
+          "ref": "Joel 1:4",
+          "text": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor."
+        },
+        {
+          "ref": "Joel 2:12–13",
+          "text": "Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento. Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+        },
+        {
+          "ref": "Joel 2:25–28",
+          "text": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado. E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+        }
+      ],
+      "context": "Este desafio revisa Joel: a perda pela praga, o chamado a rasgar o coração e a promessa de anos restituídos e do Espírito derramado sobre toda a carne.",
+      "keyword": "Dia do Senhor",
+      "keywordGloss": "Dia grande e terrível em que Deus julga, chama o povo de volta e age para salvar.",
+      "focusQuestion": "Diante do juízo, do chamado e da promessa de Joel, qual é o seu próximo passo sincero diante de Deus?",
+      "reflectionPrompts": [
+        "Perda que chama a ouvir",
+        "Coração rasgado de verdade",
+        "Espírito sobre toda a carne"
+      ],
+      "facts": [
+        {
+          "text": "O que a lagarta deixou, comeu o gafanhoto, em cadeia.",
+          "evidenceRef": "Joel 1:4",
+          "evidenceSpan": "O que a lagarta deixou, comeu o gafanhoto"
+        },
+        {
+          "text": "O Dia do Senhor é grande e mui terrível.",
+          "evidenceRef": "Joel 2:11",
+          "evidenceSpan": "Grande é o Dia do Senhor e mui terrível"
+        },
+        {
+          "text": "Joel manda rasgar o coração, e não as vestes.",
+          "evidenceRef": "Joel 2:13",
+          "evidenceSpan": "Rasgai o coração e não as vestes"
+        },
+        {
+          "text": "Deus restituirá os anos consumidos pelos devoradores.",
+          "evidenceRef": "Joel 2:25",
+          "evidenceSpan": "restituirei a vocês os anos"
+        },
+        {
+          "text": "O povo comerá em abundância e louvará o Senhor.",
+          "evidenceRef": "Joel 2:26",
+          "evidenceSpan": "comerão em abundância"
+        },
+        {
+          "text": "Deus derramará o Espírito sobre toda a carne.",
+          "evidenceRef": "Joel 2:28",
+          "evidenceSpan": "derramarei o meu Espírito sobre toda a carne"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "gafanhoto",
+          "gloss": "Devorador da cadeia de perda que abre o livro de Joel."
+        },
+        {
+          "term": "coração",
+          "gloss": "Interior que Deus quer ver rasgado e voltado para ele."
+        },
+        {
+          "term": "Espírito",
+          "gloss": "Presença de Deus prometida sobre toda a carne, sem exceção."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Perda devora em cadeia",
+          "evidenceRef": "Joel 1:4"
+        },
+        {
+          "label": "Coração chamado a voltar",
+          "evidenceRef": "Joel 2:13"
+        },
+        {
+          "label": "Anos perdidos são restituídos",
+          "evidenceRef": "Joel 2:25"
+        },
+        {
+          "label": "Espírito sobre toda a carne",
+          "evidenceRef": "Joel 2:28"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Rasgar o coração é posto contra rasgar apenas as vestes.",
+          "marker": "não",
+          "evidenceRef": "Joel 2:13"
+        },
+        {
+          "kind": "causa",
+          "text": "O caráter misericordioso de Deus motiva a volta do povo.",
+          "marker": "pois",
+          "evidenceRef": "Joel 2:13"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois da restauração, Deus derramará o Espírito sobre todos.",
+          "marker": "depois",
+          "evidenceRef": "Joel 2:28"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Atos 2:17",
+          "bridge": "Pedro cita Joel no Pentecostes",
+          "text": "E nos últimos dias, diz o Senhor, derramarei do meu Espírito sobre toda a carne, vossos filhos e vossas filhas profetizarão, vossos jovens terão visões, e sonharão sonhos vossos idosos."
+        },
+        {
+          "ref": "Salmos 51:17",
+          "bridge": "Coração quebrantado Deus não despreza",
+          "text": "Os sacrifícios a Deus consistem em um espírito quebrantado; a um coração compungido e contrito, não o desprezarás, ó Deus."
+        },
+        {
+          "ref": "Romanos 10:13",
+          "bridge": "Invocar o nome do Senhor",
+          "text": "Porque todo aquele que invocar o nome do Senhor será salvo."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Rasgar as vestes e jejuar, por si só, já é a conversão pedida.",
+          "why": "Joel manda rasgar o coração e não as vestes, de todo o coração."
+        },
+        {
+          "text": "O Espírito prometido alcança só líderes e profetas de profissão.",
+          "why": "O texto nomeia filhos, filhas, velhos, jovens, servos e servas."
+        },
+        {
+          "text": "A restituição dos anos garante riqueza automática a qualquer leitor.",
+          "why": "A promessa ao povo termina em louvor e em Deus no meio dele."
+        }
+      ],
+      "centralInsight": "O que isso revela sobre a aliança de Deus?",
+      "anchorQuestion": "Como Joel liga a perda da praga, o coração rasgado e o Espírito derramado?",
+      "relatedVerses": [
+        {
+          "reference": "Atos 2:17",
+          "reason": "Pedro cita Joel no Pentecostes"
+        },
+        {
+          "reference": "Salmos 51:17",
+          "reason": "Coração quebrantado Deus não despreza"
+        },
+        {
+          "reference": "Romanos 10:13",
+          "reason": "Invocar o nome do Senhor"
+        }
+      ]
+    }
+  }
+}

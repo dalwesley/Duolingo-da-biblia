@@ -1,0 +1,700 @@
+{
+ "study": {
+  "passageRef": "Mateus 7:1–5",
+  "passages": [
+   {
+    "ref": "Mateus 7:1–5"
+   },
+   {
+    "ref": "Mateus 7:6"
+   }
+  ],
+  "context": "Jesus abre o capítulo final do Sermão tratando do olhar para o outro: a mesma medida usada volta para nós. A trave no próprio olho precisa sair primeiro, para então enxergar o argueiro do irmão.",
+  "keyword": "Discernimento",
+  "keywordGloss": "Olhar justo que começa tratando o próprio pecado antes de corrigir o irmão com hipocrisia.",
+  "focusQuestion": "Antes de corrigir alguém, você tem tratado o seu próprio pecado diante de Deus?",
+  "reflectionPrompts": [
+   "Medida que volta para mim",
+   "Trave tratada primeiro",
+   "Corrigir sem hipocrisia"
+  ],
+  "facts": [
+   {
+    "text": "Quem julga será julgado com o mesmo critério que usa.",
+    "evidenceRef": "Mateus 7:2",
+    "evidenceSpan": "com o critério com que julgarem, também serão julgados"
+   },
+   {
+    "text": "A pessoa repara no argueiro do irmão e ignora a própria trave.",
+    "evidenceRef": "Mateus 7:3",
+    "evidenceSpan": "observam o argueiro no olho do seu irmão"
+   },
+   {
+    "text": "Jesus chama de hipócrita quem quer corrigir sem se tratar.",
+    "evidenceRef": "Mateus 7:5",
+    "evidenceSpan": "Hipócrita! Removam primeiro a viga do seu olho"
+   },
+   {
+    "text": "Depois da viga removida, vê-se claro para ajudar o irmão.",
+    "evidenceRef": "Mateus 7:5",
+    "evidenceSpan": "vocês poderão ver claramente para tirar o argueiro"
+   },
+   {
+    "text": "Coisas santas não devem ser lançadas a cães nem pérolas a porcos.",
+    "evidenceRef": "Mateus 7:6",
+    "evidenceSpan": "nem lancem suas pérolas aos porcos"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "argueiro",
+    "gloss": "Cisco pequeno no olho do irmão, ampliado por quem tem uma trave no próprio."
+   },
+   {
+    "term": "viga",
+    "gloss": "A trave grande no próprio olho, que Jesus manda remover primeiro."
+   },
+   {
+    "term": "medida",
+    "gloss": "Critério usado com os outros, que será usado também conosco."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Não julgar para não ser julgado",
+    "evidenceRef": "Mateus 7:1"
+   },
+   {
+    "label": "A medida que volta para quem julga",
+    "evidenceRef": "Mateus 7:2"
+   },
+   {
+    "label": "Arqueiro do irmão e trave própria",
+    "evidenceRef": "Mateus 7:3"
+   },
+   {
+    "label": "Remover primeiro a própria viga",
+    "evidenceRef": "Mateus 7:5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Com a medida usada nos outros, seremos medidos por Deus também.",
+    "marker": "também",
+    "evidenceRef": "Mateus 7:2"
+   },
+   {
+    "kind": "sequência",
+    "text": "Primeiro a viga própria removida; então, visão clara para ajudar o irmão.",
+    "marker": "primeiro",
+    "evidenceRef": "Mateus 7:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Lucas 6:41",
+    "bridge": "Trave antes do argueiro"
+   },
+   {
+    "ref": "Romanos 2:1",
+    "bridge": "Julgar condena a si mesmo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Não julgueis proíbe qualquer discernimento sobre certo e errado.",
+    "why": "O próprio texto manda tirar o argueiro do irmão depois de tratar a viga (7:5)."
+   },
+   {
+    "text": "Corrigir os outros é sempre errado para o discípulo de Jesus.",
+    "why": "Jesus corrige a hipocrisia da ordem: primeiro eu, depois ajudar o irmão."
+   },
+   {
+    "text": "A medida que uso com os outros não se aplica a mim diante de Deus.",
+    "why": "Jesus diz exatamente o contrário em 7:2, com critério e medida."
+   }
+  ],
+  "centralInsight": "Hipocrisia amplia o pecado do outro e esconde o próprio",
+  "anchorQuestion": "O que Jesus manda remover primeiro em Mateus 7:5?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 7:2, seremos julgados com o mesmo critério que usamos com os outros",
+   "verseRef": "Mateus 7:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "com o critério com que julgarem, também serão julgados",
+   "feedbackCorrect": "A medida que aplico no outro volta para mim diante de Deus.",
+   "feedbackWrong": {
+    "false": "Critério e medida voltam para quem julga, diz Jesus."
+   },
+   "hint": "Veja a troca de medida no versículo.",
+   "learningObjective": "Observar a medida recíproca em 7:2.",
+   "evidence": [
+    "Mateus 7:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 7:3, toque o cisco que a pessoa enxerga no olho do irmão.",
+   "verseRef": "Mateus 7:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "argueiro"
+    },
+    {
+     "id": "b",
+     "text": "trave"
+    },
+    {
+     "id": "c",
+     "text": "irmão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "observam o argueiro no olho do seu irmão",
+   "feedbackCorrect": "O problema pequeno do outro parece enorme para quem não se enxerga.",
+   "feedbackWrong": {
+    "b": "Isso é o problema grande ignorado no próprio olho.",
+    "c": "Ele é a pessoa observada, não o cisco no olho dela."
+   },
+   "hint": "Procure a palavra menor das duas citadas.",
+   "learningObjective": "Identificar o argueiro de Mateus 7:3.",
+   "evidence": [
+    "Mateus 7:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 7:5, o que fazer primeiro antes de tirar o argueiro do irmão?",
+   "verseRef": "Mateus 7:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Remover a viga do próprio olho"
+    },
+    {
+     "id": "b",
+     "text": "Apontar o argueiro em público"
+    },
+    {
+     "id": "c",
+     "text": "Esperar o irmão remover sozinho"
+    },
+    {
+     "id": "d",
+     "text": "Ignorar qualquer pecado próprio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Removam primeiro a viga do seu olho",
+   "feedbackCorrect": "Primeiro eu diante de Deus; só então enxergo para ajudar meu irmão.",
+   "feedbackWrong": {
+    "b": "Apontar sem se tratar é a hipocrisia condenada aqui.",
+    "c": "A ajuda ao irmão continua, mas depois do tratamento.",
+    "d": "Ignorar a viga é justamente a cegueira de 7:3."
+   },
+   "hint": "Veja a palavra primeiro na ordem de Jesus.",
+   "learningObjective": "Observar a ordem de Jesus em 7:5.",
+   "evidence": [
+    "Mateus 7:4–5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 7:5 na ordem do texto.",
+   "verseRef": "Mateus 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Removam primeiro a viga do seu olho"
+    },
+    {
+     "id": "b",
+     "text": "vocês poderão ver claramente"
+    },
+    {
+     "id": "c",
+     "text": "tirar o argueiro do olho do seu irmão"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Removam primeiro a viga do seu olho",
+   "feedbackCorrect": "Cura própria, visão clara e ajuda ao irmão: a ordem protege dos dois exageros.",
+   "feedbackWrong": {
+    "default": "Comece removendo a própria viga do olho."
+   },
+   "hint": "Ajudar o irmão é o último passo da frase.",
+   "learningObjective": "Reconhecer a sequência de Mateus 7:5.",
+   "evidence": [
+    "Mateus 7:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 7:2, com que seremos medidos do mesmo jeito que medimos?",
+   "verseRef": "Mateus 7:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "medida"
+    },
+    {
+     "id": "b",
+     "text": "balança"
+    },
+    {
+     "id": "c",
+     "text": "régua"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com a medida que utilizarem, também será medida para vocês",
+   "feedbackCorrect": "A régua que uso nos outros vira a régua de Deus sobre a minha vida.",
+   "feedbackWrong": {
+    "b": "O instrumento citado por Jesus é outro, mais abstrato.",
+    "c": "Régua não é a palavra usada por Jesus nessa frase."
+   },
+   "hint": "É a palavra repetida no fim do versículo.",
+   "learningObjective": "Lembrar a medida recíproca de 7:2.",
+   "evidence": [
+    "Mateus 7:1–2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 7:3 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 7:3–4",
+   "passageA": {
+    "ref": "Mateus 7:3"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A hipocrisia enxerga grande o pecado do outro e esconde o pecado de quem olha."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Hipocrisia amplia o alheio"
+    },
+    {
+     "id": "b",
+     "text": "Pecado próprio sempre some"
+    },
+    {
+     "id": "c",
+     "text": "Corrigir é sempre proibido"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "argueiro no olho do seu irmão",
+   "feedbackCorrect": "Cisco no outro vira manchete; trave em mim nem é percebida por mim.",
+   "feedbackWrong": {
+    "b": "A trave continua lá, só não é percebida (7:3).",
+    "c": "Em 7:5, ajudar o irmão continua no plano de Jesus."
+   },
+   "hint": "Compare o tamanho dos dois problemas citados.",
+   "learningObjective": "Ligar argueiro e trave à hipocrisia.",
+   "evidence": [
+    "Mateus 7:3–4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 7:5, Jesus manda remover primeiro a viga do próprio olho antes de ajudar o irmão",
+   "verseRef": "Mateus 7:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "Removam primeiro a viga do seu olho",
+   "feedbackCorrect": "Essa ordem protege a ajuda de virar hipocrisia contra o irmão.",
+   "feedbackWrong": {
+    "false": "O primeiro objeto removido é a viga do próprio olho, em 7:5."
+   },
+   "hint": "Veja qual olho é tratado em primeiro lugar.",
+   "learningObjective": "Compreender a ordem contra a hipocrisia.",
+   "evidence": [
+    "Mateus 7:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 7:5, toque a palavra que marca a prioridade ensinada por Jesus.",
+   "verseRef": "Mateus 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "primeiro"
+    },
+    {
+     "id": "b",
+     "text": "claramente"
+    },
+    {
+     "id": "c",
+     "text": "Hipócrita"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Removam primeiro a viga do seu olho",
+   "feedbackCorrect": "Essa palavrinha ordena o coração antes de ordenar a vida do irmão.",
+   "feedbackWrong": {
+    "b": "Isso é o resultado de enxergar depois do tratamento.",
+    "c": "Isso é o diagnóstico de Jesus, não a ordem de prioridade."
+   },
+   "hint": "Procure a palavra de ordem logo após o verbo.",
+   "learningObjective": "Reconhecer o marcador de sequência em 7:5.",
+   "evidence": [
+    "Mateus 7:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 7:5 completa Mateus 7:1 sem contradizê-lo de modo algum?",
+   "verseRef": "Mateus 7:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cancela ajudar o irmão em qualquer situação"
+    },
+    {
+     "id": "b",
+     "text": "Ordena tratar-se antes de ajudar o irmão"
+    },
+    {
+     "id": "c",
+     "text": "Permite julgar depois de uma oração rápida"
+    },
+    {
+     "id": "d",
+     "text": "Troca a viga própria por argueiro maior ainda"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "vocês poderão ver claramente",
+   "feedbackCorrect": "Não julgar condena a hipocrisia, não a ajuda humilde a quem errou.",
+   "feedbackWrong": {
+    "a": "Tirar o argueiro do irmão continua no texto de 7:5.",
+    "c": "Não é ritual rápido; é remover de verdade a própria viga.",
+    "d": "A troca proposta é de cegueira por visão clara para ajudar."
+   },
+   "hint": "Veja o destino final de quem removeu a viga.",
+   "learningObjective": "Relacionar não julgar e ajuda sem hipocrisia.",
+   "evidence": [
+    "Mateus 7:4–5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia o argumento de Mateus 7:1 a 7:5?",
+   "verseRef": "Mateus 7:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem julga será julgado também"
+    },
+    {
+     "id": "b",
+     "text": "Trave própria precisa sair primeiro"
+    },
+    {
+     "id": "c",
+     "text": "Irmão é ajudado com visão clara"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "também serão julgados",
+   "feedbackCorrect": "Aviso, tratamento próprio e ajuda limpa ao irmão fecham o argumento.",
+   "feedbackWrong": {
+    "default": "Comece pelo aviso de não julgar, em 7:1–2."
+   },
+   "hint": "Ajudar o irmão só vem depois do tratamento.",
+   "learningObjective": "Compreender o encadeamento contra a hipocrisia.",
+   "evidence": [
+    "Mateus 7:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 7:5, o que remover primeiro do próprio olho para enxergar bem?",
+   "verseRef": "Mateus 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "viga"
+    },
+    {
+     "id": "b",
+     "text": "argueiro"
+    },
+    {
+     "id": "c",
+     "text": "lágrima"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Removam primeiro a viga do seu olho",
+   "feedbackCorrect": "O maior objeto está, ironicamente, no olho de quem mais critica o irmão.",
+   "feedbackWrong": {
+    "b": "Isso é o cisco pequeno no olho da outra pessoa.",
+    "c": "Choro não é o objeto comparado por Jesus aqui."
+   },
+   "hint": "É o objeto maior dos dois comparados.",
+   "learningObjective": "Lembrar a viga do próprio olho.",
+   "evidence": [
+    "Mateus 7:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 7:5 a Lucas 6:41?",
+   "verseRef": "Mateus 7:4–5",
+   "passageA": {
+    "ref": "Mateus 7:5"
+   },
+   "passageB": {
+    "ref": "Lucas 6:41"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Trave antes do argueiro"
+    },
+    {
+     "id": "b",
+     "text": "Arqueiro maior que trave"
+    },
+    {
+     "id": "c",
+     "text": "Olho nunca precisa tratar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "primeiro a viga do seu olho",
+   "feedbackCorrect": "Lucas registra o mesmo ensino com a pergunta direta sobre a trave própria.",
+   "feedbackWrong": {
+    "b": "Nos dois textos, a trave própria é o problema maior.",
+    "c": "Tratar o próprio olho é justamente o centro do ensino."
+   },
+   "hint": "Compare os dois objetos nos olhos citados.",
+   "learningObjective": "Relacionar o ensino do argueiro nos Evangelhos.",
+   "evidence": [
+    "Mateus 7:5",
+    "Lucas 6:41"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 7:1–5 proíbe todo discernimento e qualquer ajuda a um irmão que errou",
+   "verseRef": "Mateus 7:4–5",
+   "correctOptionId": "false",
+   "evidenceSpan": "tirar o argueiro do olho do seu irmão",
+   "feedbackCorrect": "Jesus proíbe a condenação hipócrita, não a ajuda de quem se tratou primeiro.",
+   "feedbackWrong": {
+    "true": "Em 7:5, tirar o argueiro do irmão permanece como destino."
+   },
+   "hint": "Leia o ensino até o fim, não só o primeiro versículo.",
+   "learningObjective": "Delimitar o não julgueis pelo próprio texto.",
+   "evidence": [
+    "Mateus 7:4–5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 7:5, toque como Jesus chama quem corrige sem se tratar antes.",
+   "verseRef": "Mateus 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Hipócrita"
+    },
+    {
+     "id": "b",
+     "text": "primeiro"
+    },
+    {
+     "id": "c",
+     "text": "claramente"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Hipócrita! Removam primeiro a viga do seu olho",
+   "feedbackCorrect": "Uma palavra forte abre o versículo e desmascara a correção sem arrependimento.",
+   "feedbackWrong": {
+    "b": "Isso marca a ordem do tratamento, não o diagnóstico dado.",
+    "c": "Isso é a visão depois do tratamento, não o nome do problema."
+   },
+   "hint": "É a primeira palavra de Jesus no versículo.",
+   "learningObjective": "Sustentar no texto o diagnóstico de hipocrisia.",
+   "evidence": [
+    "Mateus 7:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 7:1–5 sustenta sobre corrigir quem errou?",
+   "verseRef": "Mateus 7:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nunca se deve perceber erro em outra pessoa"
+    },
+    {
+     "id": "b",
+     "text": "A medida usada volta, então corrija sem hipocrisia"
+    },
+    {
+     "id": "c",
+     "text": "Quem trata a si pode condenar sem misericórdia"
+    },
+    {
+     "id": "d",
+     "text": "Pecado do outro é sempre maior que o meu pecado"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "com o critério com que julgarem, também serão julgados",
+   "feedbackCorrect": "Mesma medida, viga tratada e ajuda clara: esse é o discernimento do Reino.",
+   "feedbackWrong": {
+    "a": "Perceber o argueiro não é o erro; a hipocrisia é.",
+    "c": "Visão clara serve para ajudar, não para condenar com frieza.",
+    "d": "A comparação de Jesus inverte esse orgulho (7:3)."
+   },
+   "hint": "Junte a medida de 7:2 com a ordem de 7:5.",
+   "learningObjective": "Escolher a interpretação sustentada por 7:1–5.",
+   "evidence": [
+    "Mateus 7:1–2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do discernimento justo?",
+   "verseRef": "Mateus 7:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pessoa trata a própria viga diante de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Ela enxerga claramente o irmão caído"
+    },
+    {
+     "id": "c",
+     "text": "Ela ajuda a tirar o argueiro dele"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "vocês poderão ver claramente",
+   "feedbackCorrect": "Tratamento, visão e ajuda: corrigir no Reino começa sempre em casa.",
+   "feedbackWrong": {
+    "default": "Comece pelo olho de quem quer corrigir."
+   },
+   "hint": "A ajuda ao irmão é o fruto final da sequência.",
+   "learningObjective": "Ver o discernimento como caminho de humildade.",
+   "evidence": [
+    "Mateus 7:5",
+    "Romanos 2:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 7:6, o que não lançar aos porcos junto às coisas santas aos cães?",
+   "verseRef": "Mateus 7:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "pérolas"
+    },
+    {
+     "id": "b",
+     "text": "tesouros"
+    },
+    {
+     "id": "c",
+     "text": "sementes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nem lancem suas pérolas aos porcos",
+   "feedbackCorrect": "Nem tudo se oferece a quem só pisa e se volta contra quem oferece.",
+   "feedbackWrong": {
+    "b": "Tesouro foi o tema do capítulo anterior, não desta imagem.",
+    "c": "Semente não é o objeto valioso citado por Jesus aqui."
+   },
+   "hint": "Pense na joia citada na segunda metade.",
+   "learningObjective": "Lembrar o discernimento de 7:6.",
+   "evidence": [
+    "Mateus 7:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 7:2 a Romanos 2:1?",
+   "verseRef": "Mateus 7:1–2",
+   "passageA": {
+    "ref": "Mateus 7:2"
+   },
+   "passageB": {
+    "ref": "Romanos 2:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Julgar condena a si mesmo"
+    },
+    {
+     "id": "b",
+     "text": "Julgar absolve a si mesmo"
+    },
+    {
+     "id": "c",
+     "text": "Medida só vale para outros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "também serão julgados",
+   "feedbackCorrect": "Paulo desdobra Jesus: quem julga e faz o mesmo condena a si próprio.",
+   "feedbackWrong": {
+    "b": "Os dois textos tiram qualquer autoabsolvição do juiz.",
+    "c": "A medida volta justamente para quem a aplicou antes."
+   },
+   "hint": "Veja o que acontece com quem julga em Romanos.",
+   "learningObjective": "Ligar medida recíproca e juízo sobre si.",
+   "evidence": [
+    "Mateus 7:1–2",
+    "Romanos 2:1"
+   ]
+  }
+ ]
+}

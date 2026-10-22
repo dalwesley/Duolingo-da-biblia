@@ -1,0 +1,705 @@
+{
+ "study": {
+  "passageRef": "Malaquias 1:2–3",
+  "passages": [
+   {
+    "ref": "Malaquias 1:2–3"
+   },
+   {
+    "ref": "Malaquias 3:1–4"
+   }
+  ],
+  "context": "Malaquias fala a um povo que duvida do amor de Deus. Logo na abertura, o Senhor afirma esse amor, o povo pergunta onde ele se mostrou, e Deus responde lembrando Jacó e Esaú.",
+  "keyword": "amei",
+  "keywordGloss": "O Senhor afirma que amou o seu povo antes de o povo conseguir perceber esse amor.",
+  "focusQuestion": "Quando você duvida do amor de Deus, o que ele já fez que você pode lembrar?",
+  "reflectionPrompts": [
+   "Deus afirma seu amor",
+   "O povo pergunta",
+   "Deus responde com a história"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor afirma que amou o seu povo.",
+    "evidenceRef": "Malaquias 1:2",
+    "evidenceSpan": "Eu os amei, diz o Senhor"
+   },
+   {
+    "text": "O povo pergunta em que Deus os amou.",
+    "evidenceRef": "Malaquias 1:2",
+    "evidenceSpan": "Em que nos amaste?"
+   },
+   {
+    "text": "Esaú era irmão de Jacó.",
+    "evidenceRef": "Malaquias 1:2",
+    "evidenceSpan": "Não foi Esaú irmão de Jacó?"
+   },
+   {
+    "text": "O Senhor diz que amou a Jacó.",
+    "evidenceRef": "Malaquias 1:2",
+    "evidenceSpan": "amei a Jacó"
+   },
+   {
+    "text": "Deus fez dos montes de Esaú uma desolação.",
+    "evidenceRef": "Malaquias 1:3",
+    "evidenceSpan": "fiz dos seus montes uma desolação"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "amei",
+    "gloss": "A afirmação que abre o livro: o amor de Deus é declarado por ele mesmo."
+   },
+   {
+    "term": "Jacó",
+    "gloss": "O irmão escolhido na história que Deus lembra para responder ao povo."
+   },
+   {
+    "term": "desolação",
+    "gloss": "O destino dos montes de Esaú, em contraste com a escolha de Jacó."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus afirma seu amor",
+    "evidenceRef": "Malaquias 1:2"
+   },
+   {
+    "label": "O povo questiona a afirmação",
+    "evidenceRef": "Malaquias 1:2"
+   },
+   {
+    "label": "Deus lembra Jacó e Esaú",
+    "evidenceRef": "Malaquias 1:2–3"
+   },
+   {
+    "label": "O destino de Esaú é descrito",
+    "evidenceRef": "Malaquias 1:3"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "O povo pergunta, entretanto o Senhor reafirma que amou a Jacó.",
+    "marker": "entretanto",
+    "evidenceRef": "Malaquias 1:2"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois da pergunta do povo, Deus responde apontando para a história de Jacó e Esaú.",
+    "marker": null,
+    "evidenceRef": "Malaquias 1:2"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 9:13",
+    "bridge": "Paulo retoma Jacó e Esaú"
+   },
+   {
+    "ref": "Gênesis 25:23",
+    "bridge": "A escolha começa em Gênesis"
+   },
+   {
+    "ref": "Deuteronômio 7:8",
+    "bridge": "Deus ama e escolhe Israel"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus só ama quem nunca duvida dele.",
+    "why": "O povo pergunta e Deus responde; a dúvida não encerra a conversa."
+   },
+   {
+    "text": "O amor de Deus exige tratar Jacó e Esaú do mesmo jeito.",
+    "why": "O texto distingue os dois irmãos para mostrar uma escolha concreta na história."
+   },
+   {
+    "text": "Perguntar a Deus é sempre sinal de rebeldia sem volta.",
+    "why": "Neste texto, a pergunta do povo recebe uma resposta do próprio Senhor."
+   }
+  ],
+  "centralInsight": "Deus afirma seu amor mesmo quando o povo o questiona",
+  "anchorQuestion": "O que o Senhor afirma logo no início de Malaquias 1:2?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Malaquias 1:2, o Senhor afirma que amou o seu povo.",
+   "verseRef": "Malaquias 1:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "Eu os amei, diz o Senhor",
+   "feedbackCorrect": "O livro abre com essa afirmação do Senhor ao seu povo.",
+   "feedbackWrong": {
+    "false": "Releia o começo do versículo, onde o Senhor faz essa afirmação."
+   },
+   "hint": "Olhe a primeira fala do versículo.",
+   "learningObjective": "Observar a afirmação de amor que abre Malaquias.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Malaquias 1:2, toque o nome do irmão de Jacó.",
+   "verseRef": "Malaquias 1:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esaú"
+    },
+    {
+     "id": "b",
+     "text": "Jacó"
+    },
+    {
+     "id": "c",
+     "text": "Senhor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não foi Esaú irmão de Jacó?",
+   "feedbackCorrect": "O texto apresenta os dois irmãos ao responder à pergunta do povo.",
+   "feedbackWrong": {
+    "b": "Esse é o outro irmão, não o nome pedido aqui.",
+    "c": "Esse nome indica quem fala, não o irmão."
+   },
+   "hint": "Procure a pergunta feita dentro do versículo.",
+   "learningObjective": "Identificar os irmãos citados na resposta de Deus.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Malaquias 1:2, o que o povo faz diante da afirmação de Deus?",
+   "verseRef": "Malaquias 1:2–3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Agradece sem fazer perguntas"
+    },
+    {
+     "id": "b",
+     "text": "Pergunta em que Deus o amou"
+    },
+    {
+     "id": "c",
+     "text": "Pede um novo profeta"
+    },
+    {
+     "id": "d",
+     "text": "Sai de Jerusalém em silêncio"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Em que nos amaste?",
+   "feedbackCorrect": "O povo responde à afirmação de Deus com uma pergunta direta.",
+   "feedbackWrong": {
+    "a": "O texto mostra uma pergunta, não um agradecimento.",
+    "c": "Nenhum pedido de profeta aparece neste versículo.",
+    "d": "O povo fala com Deus, em vez de sair em silêncio."
+   },
+   "hint": "Leia a reação do povo no meio do versículo.",
+   "learningObjective": "Observar a reação do povo à afirmação de Deus.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Malaquias 1:2 na ordem do texto.",
+   "verseRef": "Malaquias 1:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eu os amei, diz o Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Não foi Esaú irmão de Jacó?"
+    },
+    {
+     "id": "c",
+     "text": "entretanto, amei a Jacó"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Eu os amei, diz o Senhor",
+   "feedbackCorrect": "Primeiro a afirmação de Deus, depois a lembrança dos dois irmãos.",
+   "feedbackWrong": {
+    "default": "Comece pela afirmação de Deus; o nome amado fecha o versículo."
+   },
+   "hint": "O versículo começa com a fala de Deus.",
+   "learningObjective": "Reconhecer a sequência de Malaquias 1:2.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Malaquias 1:3, o que Deus fez dos montes de Esaú?",
+   "verseRef": "Malaquias 1:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "herança"
+    },
+    {
+     "id": "b",
+     "text": "deserto"
+    },
+    {
+     "id": "c",
+     "text": "desolação"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "fiz dos seus montes uma desolação",
+   "feedbackCorrect": "Os montes de Esaú viraram um lugar vazio, entregue aos animais do deserto.",
+   "feedbackWrong": {
+    "a": "A herança é entregue, mas não é o que os montes viraram.",
+    "b": "O deserto é o cenário citado no fim, não o destino dos montes."
+   },
+   "hint": "Leia o que acontece logo depois dos montes.",
+   "learningObjective": "Lembrar o destino descrito para os montes de Esaú.",
+   "evidence": [
+    "Malaquias 1:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Malaquias 1:2 comunica que se liga a este contexto?",
+   "verseRef": "Malaquias 1:2–3",
+   "passageA": {
+    "ref": "Malaquias 1:2"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo duvida do amor que Deus declarou por ele."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo encerra a conversa"
+    },
+    {
+     "id": "b",
+     "text": "Deus afirma seu amor"
+    },
+    {
+     "id": "c",
+     "text": "O amor depende do povo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Eu os amei, diz o Senhor",
+   "feedbackCorrect": "Antes da dúvida do povo, o Senhor já declarou o seu amor.",
+   "feedbackWrong": {
+    "a": "O povo pergunta, e Deus continua falando com ele.",
+    "c": "Quem afirma o amor é Deus, não o povo."
+   },
+   "hint": "Veja quem fala primeiro no versículo.",
+   "learningObjective": "Ligar Malaquias 1:2 à afirmação do amor de Deus.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Malaquias 1:2, o povo aceita sem perguntar a afirmação de amor do Senhor.",
+   "verseRef": "Malaquias 1:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "mas vocês perguntam",
+   "feedbackCorrect": "O texto mostra o povo perguntando, e não aceitando em silêncio.",
+   "feedbackWrong": {
+    "true": "Releia o meio do versículo e veja a reação do povo."
+   },
+   "hint": "Repare no verbo usado para a reação do povo.",
+   "learningObjective": "Compreender a tensão entre a afirmação de Deus e a pergunta do povo.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Malaquias 1:2, toque a palavra que retoma a fala de Deus após a pergunta do povo.",
+   "verseRef": "Malaquias 1:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "vocês"
+    },
+    {
+     "id": "b",
+     "text": "entretanto"
+    },
+    {
+     "id": "c",
+     "text": "irmão"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "entretanto, amei a Jacó",
+   "feedbackCorrect": "Depois da pergunta, Deus retoma a palavra e reafirma sua escolha.",
+   "feedbackWrong": {
+    "a": "Esse pronome aponta o povo que pergunta.",
+    "c": "Esse termo liga os dois homens citados, não retoma a fala."
+   },
+   "hint": "Procure a palavra curta logo antes da reafirmação.",
+   "learningObjective": "Reconhecer a virada na conversa de Malaquias 1:2.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Deus responde à pergunta do povo em Malaquias 1:2–3?",
+   "verseRef": "Malaquias 1:2–3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Muda de assunto e fala do templo"
+    },
+    {
+     "id": "b",
+     "text": "Promete riquezas imediatas ao povo"
+    },
+    {
+     "id": "c",
+     "text": "Aponta uma escolha concreta na história"
+    },
+    {
+     "id": "d",
+     "text": "Recusa responder e encerra o livro"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "entretanto, amei a Jacó",
+   "feedbackCorrect": "Deus responde lembrando o que fez na história de dois irmãos.",
+   "feedbackWrong": {
+    "a": "O templo só aparece depois; aqui a resposta olha para trás.",
+    "b": "Nenhuma promessa de riqueza aparece nesta resposta.",
+    "d": "Deus responde com a história, em vez de encerrar a conversa."
+   },
+   "hint": "Veja para onde Deus aponta ao responder.",
+   "learningObjective": "Compreender como Deus responde à dúvida do povo.",
+   "evidence": [
+    "Malaquias 1:2–3"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a conversa em Malaquias 1:2?",
+   "verseRef": "Malaquias 1:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor declara seu amor"
+    },
+    {
+     "id": "b",
+     "text": "O povo pede sinal desse amor"
+    },
+    {
+     "id": "c",
+     "text": "Deus lembra dois irmãos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Eu os amei, diz o Senhor",
+   "feedbackCorrect": "A conversa vai da declaração de Deus à pergunta e à resposta com a história.",
+   "feedbackWrong": {
+    "default": "Comece pela declaração de Deus; a lembrança dos irmãos vem na resposta."
+   },
+   "hint": "A declaração de Deus abre a conversa.",
+   "learningObjective": "Compreender o movimento da conversa em Malaquias 1:2.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Malaquias 1:2, o que o povo faz diante da afirmação de Deus?",
+   "verseRef": "Malaquias 1:2–3",
+   "options": [
+    {
+     "id": "a",
+     "text": "perguntam"
+    },
+    {
+     "id": "b",
+     "text": "aceitam"
+    },
+    {
+     "id": "c",
+     "text": "calam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas vocês perguntam",
+   "feedbackCorrect": "A reação registrada é uma pergunta feita diretamente a Deus.",
+   "feedbackWrong": {
+    "b": "O texto não mostra aceitação imediata, mas uma pergunta.",
+    "c": "O povo fala, em vez de ficar em silêncio."
+   },
+   "hint": "Leia o verbo ligado ao povo no versículo.",
+   "learningObjective": "Compreender a reação do povo como pergunta a Deus.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Malaquias 1:2 a Romanos 9:13?",
+   "verseRef": "Malaquias 1:2–3",
+   "passageA": {
+    "ref": "Malaquias 1:2"
+   },
+   "passageB": {
+    "ref": "Romanos 9:13"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Paulo descarta Malaquias"
+    },
+    {
+     "id": "b",
+     "text": "Dois irmãos são esquecidos"
+    },
+    {
+     "id": "c",
+     "text": "Paulo retoma Jacó e Esaú"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "amei a Jacó",
+   "feedbackCorrect": "Paulo cita este trecho ao falar da escolha de Deus na história.",
+   "feedbackWrong": {
+    "a": "Paulo cita Malaquias, em vez de descartar o profeta.",
+    "b": "Os dois irmãos são justamente o centro dos dois textos."
+   },
+   "hint": "Compare os nomes citados nos dois trechos.",
+   "learningObjective": "Relacionar Malaquias 1:2 com a citação feita por Paulo.",
+   "evidence": [
+    "Malaquias 1:2",
+    "Romanos 9:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Malaquias 1:2 mostra Deus respondendo à dúvida do povo em vez de ignorar a pergunta dele.",
+   "verseRef": "Malaquias 1:2–3",
+   "correctOptionId": "true",
+   "evidenceSpan": "mas vocês perguntam",
+   "feedbackCorrect": "A pergunta é registrada e Deus responde lembrando a história.",
+   "feedbackWrong": {
+    "false": "O texto guarda a pergunta e traz a resposta de Deus logo depois."
+   },
+   "hint": "Veja o que Deus faz depois da pergunta.",
+   "learningObjective": "Interpretar a resposta de Deus como cuidado com um povo que duvida.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Malaquias 1:2, toque o nome de quem o Senhor diz ter amado.",
+   "verseRef": "Malaquias 1:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esaú"
+    },
+    {
+     "id": "b",
+     "text": "Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Jacó"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "amei a Jacó",
+   "feedbackCorrect": "É esse nome que sustenta a resposta de Deus à dúvida do povo.",
+   "feedbackWrong": {
+    "a": "Esse irmão aparece em contraste com o nome pedido.",
+    "b": "Esse nome indica quem fala a frase toda."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Sustentar com o texto a escolha lembrada por Deus.",
+   "evidence": [
+    "Malaquias 1:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Malaquias 1:2–3 sustenta sobre o amor de Deus?",
+   "verseRef": "Malaquias 1:2–3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ama apenas quem nunca duvida"
+    },
+    {
+     "id": "b",
+     "text": "Deus afirma seu amor antes de ser compreendido"
+    },
+    {
+     "id": "c",
+     "text": "Deus prova amor tratando todos igual"
+    },
+    {
+     "id": "d",
+     "text": "Perguntar a Deus encerra a conversa"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Eu os amei, diz o Senhor",
+   "feedbackCorrect": "A declaração de Deus vem primeiro; a compreensão do povo vem depois.",
+   "feedbackWrong": {
+    "a": "O povo duvida e, mesmo assim, Deus lhe fala.",
+    "c": "O texto distingue os dois irmãos, em vez de igualá-los.",
+    "d": "A pergunta recebe resposta, e não um ponto final."
+   },
+   "hint": "Compare quem fala primeiro e quem pergunta depois.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre o amor de Deus.",
+   "evidence": [
+    "Malaquias 1:2–3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio da escolha de Deus na Bíblia?",
+   "verseRef": "Malaquias 1:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus fala de dois irmãos em Gênesis"
+    },
+    {
+     "id": "b",
+     "text": "Malaquias lembra essa escolha ao povo"
+    },
+    {
+     "id": "c",
+     "text": "Paulo retoma essa lembrança em Romanos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "amei a Jacó",
+   "feedbackCorrect": "A história começa em Gênesis, é lembrada por Malaquias e retomada por Paulo.",
+   "feedbackWrong": {
+    "default": "Siga a ordem da Bíblia, de Gênesis até Romanos."
+   },
+   "hint": "Siga a ordem dos livros citados nas peças.",
+   "learningObjective": "Ver Malaquias 1:2 como parte de um fio que atravessa a Bíblia.",
+   "evidence": [
+    "Malaquias 1:2",
+    "Gênesis 25:23",
+    "Romanos 9:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Malaquias 1:3, que palavra mostra a rejeição ligada a Esaú no texto?",
+   "verseRef": "Malaquias 1:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "amei"
+    },
+    {
+     "id": "b",
+     "text": "aborreci"
+    },
+    {
+     "id": "c",
+     "text": "entreguei"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "E aborreci Esaú",
+   "feedbackCorrect": "O contraste do texto é forte e mostra uma escolha com lados distintos.",
+   "feedbackWrong": {
+    "a": "Esse verbo foi usado para o outro irmão, no versículo anterior.",
+    "c": "Esse verbo fala da herança, não abre a frase sobre Esaú."
+   },
+   "hint": "Leia o verbo que abre o versículo.",
+   "learningObjective": "Lembrar o termo que marca o contraste entre os irmãos.",
+   "evidence": [
+    "Malaquias 1:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Malaquias 1:2 a Gênesis 25:23?",
+   "verseRef": "Malaquias 1:2",
+   "passageA": {
+    "ref": "Malaquias 1:2"
+   },
+   "passageB": {
+    "ref": "Gênesis 25:23"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A escolha começa em Gênesis"
+    },
+    {
+     "id": "b",
+     "text": "Os irmãos nunca se separam"
+    },
+    {
+     "id": "c",
+     "text": "Gênesis corrige Malaquias"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não foi Esaú irmão de Jacó?",
+   "feedbackCorrect": "Antes de Malaquias, Gênesis já falava dos dois irmãos e de seus caminhos.",
+   "feedbackWrong": {
+    "b": "Os textos mostram caminhos distintos para os dois irmãos.",
+    "c": "Malaquias lembra Gênesis, em vez de ser corrigido por ele."
+   },
+   "hint": "Veja há quanto tempo essa história é contada.",
+   "learningObjective": "Ligar a lembrança de Malaquias ao começo da história em Gênesis.",
+   "evidence": [
+    "Malaquias 1:2",
+    "Gênesis 25:23"
+   ]
+  }
+ ]
+}

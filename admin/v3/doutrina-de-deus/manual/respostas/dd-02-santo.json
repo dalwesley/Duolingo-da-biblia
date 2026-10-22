@@ -1,0 +1,268 @@
+{
+ "study": {
+  "passageRef": "Isaías 6:1–6",
+  "passages": [{"ref": "Isaías 6:1–6"}],
+  "context": "Isaías vê o Senhor no templo em um ano de luto pelo rei Uzias. Diante do Deus santo, ele percebe a própria impureza e a do povo.",
+  "keyword": "Santo",
+  "keywordGloss": "Os serafins repetem três vezes quem Deus é: separado de todo mal, puro e cheio de glória.",
+  "focusQuestion": "O que muda em você quando percebe que Deus é santo e, mesmo assim, vem ao seu encontro?",
+  "reflectionPrompts": ["O Senhor no trono", "Lábios impuros", "Deus vem ao encontro"],
+  "facts": [
+   {"text": "Isaías vê o Senhor assentado sobre um alto e sublime trono.", "evidenceRef": "Isaías 6:1", "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono"},
+   {"text": "As abas das vestes do Senhor enchiam o templo.", "evidenceRef": "Isaías 6:1", "evidenceSpan": "as abas de suas vestes enchiam o templo"},
+   {"text": "Cada serafim tinha seis asas.", "evidenceRef": "Isaías 6:2", "evidenceSpan": "cada um tinha seis asas"},
+   {"text": "Os serafins proclamam que o Senhor dos Exércitos é santo.", "evidenceRef": "Isaías 6:3", "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos"},
+   {"text": "Toda a terra está repleta da glória do Senhor.", "evidenceRef": "Isaías 6:3", "evidenceSpan": "toda a terra está repleta da sua glória"},
+   {"text": "Um serafim voa até Isaías trazendo uma brasa viva do altar.", "evidenceRef": "Isaías 6:6", "evidenceSpan": "trazendo na mão uma brasa viva"}
+  ],
+  "keyTerms": [
+   {"term": "Santo", "gloss": "Repetido três vezes pelos serafins: Deus é puro, separado de todo mal e glorioso."},
+   {"term": "serafins", "gloss": "Seres celestiais ao redor do trono, que cobrem rosto e pés diante do Senhor."},
+   {"term": "glória", "gloss": "A grandeza visível de Deus, que enche o templo e toda a terra."}
+  ],
+  "structure": [
+   {"label": "O Senhor é visto no trono", "evidenceRef": "Isaías 6:1"},
+   {"label": "Os serafins proclamam sua santidade", "evidenceRef": "Isaías 6:3"},
+   {"label": "Isaías reconhece os lábios impuros", "evidenceRef": "Isaías 6:5"},
+   {"label": "Um serafim vem até Isaías", "evidenceRef": "Isaías 6:6"}
+  ],
+  "relations": [
+   {"kind": "causa", "text": "Isaías se declara perdido porque viu o Rei e reconhece os próprios lábios impuros.", "marker": "Pois", "evidenceRef": "Isaías 6:5"},
+   {"kind": "resultado", "text": "Após a proclamação dos serafins, Isaías responde reconhecendo sua impureza.", "marker": "Então", "evidenceRef": "Isaías 6:5"},
+   {"kind": "contraste", "text": "Os serafins proclamam o Deus santo, enquanto Isaías confessa habitar entre um povo impuro.", "marker": null, "evidenceRef": "Isaías 6:5"}
+  ],
+  "crossRefs": [
+   {"ref": "Apocalipse 4:8", "bridge": "Santo proclamado sem cessar"},
+   {"ref": "1 Pedro 1:16", "bridge": "Chamados a viver em santidade"},
+   {"ref": "Êxodo 15:11", "bridge": "Ninguém é santo como Senhor"}
+  ],
+  "misreadings": [
+   {"text": "Ser santo é só estar distante, sem se importar com as pessoas.", "why": "O Deus santo do texto não fica longe: um serafim voa até Isaías com a brasa do altar."},
+   {"text": "A visão do templo é só um espetáculo bonito, sem efeito em quem vê.", "why": "Diante do Senhor, Isaías diz que está perdido e confessa os lábios impuros."},
+   {"text": "Só Isaías era impuro, e o povo ao redor era puro.", "why": "Ele diz habitar no meio de um povo de impuros lábios, não apenas falar de si."}
+  ],
+  "centralInsight": "Deus é santo, puro e glorioso, e sua presença revela nossa impureza",
+  "anchorQuestion": "O que os serafins proclamam três vezes sobre o Senhor em Isaías 6:3?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Isaías 6:2, cada serafim tinha quatro asas.",
+   "verseRef": "Isaías 6:2", "correctOptionId": "false",
+   "evidenceSpan": "cada um tinha seis asas",
+   "feedbackCorrect": "O texto diz que cada serafim tinha seis asas, não quatro.",
+   "feedbackWrong": {"true": "Releia Isaías 6:2 e conte as asas de cada serafim."},
+   "hint": "Conte as asas descritas no versículo.",
+   "learningObjective": "Observar como o texto descreve os serafins.",
+   "evidence": ["Isaías 6:2"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Isaías 6:3, toque o que os serafins proclamam sobre o Senhor.",
+   "verseRef": "Isaías 6:3",
+   "options": [{"id": "a", "text": "uns aos outros"}, {"id": "b", "text": "Santo, santo, santo"}, {"id": "c", "text": "toda a terra"}],
+   "correctOptionId": "b", "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+   "feedbackCorrect": "Três vezes seguidas, os serafins declaram quem o Senhor é.",
+   "feedbackWrong": {"a": "Isso diz a quem eles falam, não o que proclamam sobre o Senhor.", "c": "Isso fala do alcance da glória, depois da proclamação."},
+   "hint": "Ouça a proclamação repetida três vezes.",
+   "learningObjective": "Identificar a proclamação dos serafins sobre Deus.",
+   "evidence": ["Isaías 6:3"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Isaías 6:1, como Isaías vê o Senhor?",
+   "verseRef": "Isaías 6:1",
+   "options": [{"id": "a", "text": "Caminhando entre o povo na rua"}, {"id": "b", "text": "Assentado sobre um alto e sublime trono"}, {"id": "c", "text": "Dormindo dentro do templo"}, {"id": "d", "text": "Escondido atrás do altar"}],
+   "correctOptionId": "b", "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+   "feedbackCorrect": "Isaías vê o Senhor como Rei, assentado em um trono alto e sublime.",
+   "feedbackWrong": {"a": "A cena acontece no templo, com o Senhor no trono.", "c": "O Senhor está assentado no trono, enchendo o templo com suas vestes.", "d": "Nada esconde o Senhor; Isaías o vê no trono."},
+   "hint": "Leia onde o Senhor está na visão.",
+   "learningObjective": "Observar o Senhor como Rei na visão de Isaías.",
+   "evidence": ["Isaías 6:1"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Isaías 6:2 na ordem do texto.",
+   "verseRef": "Isaías 6:2",
+   "options": [{"id": "a", "text": "Os serafins estavam acima dele"}, {"id": "b", "text": "cada um tinha seis asas"}, {"id": "c", "text": "com duas cobria o rosto"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Os serafins estavam acima dele",
+   "feedbackCorrect": "Primeiro onde eles estavam, depois quantas asas tinham e como as usavam.",
+   "feedbackWrong": {"default": "Comece pela posição dos serafins; o rosto coberto vem depois."},
+   "hint": "O versículo começa dizendo onde os serafins estavam.",
+   "learningObjective": "Reconhecer a sequência de Isaías 6:2.",
+   "evidence": ["Isaías 6:2"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Isaías 6:1, sobre o que o Senhor está assentado?",
+   "verseRef": "Isaías 6:1",
+   "options": [{"id": "a", "text": "templo"}, {"id": "b", "text": "trono"}, {"id": "c", "text": "altar"}],
+   "correctOptionId": "b", "evidenceSpan": "assentado sobre um alto e sublime trono",
+   "feedbackCorrect": "O Senhor é visto como Rei, assentado em um trono alto e sublime.",
+   "feedbackWrong": {"a": "O templo é o lugar da visão; o Senhor está assentado sobre outra coisa.", "c": "O altar aparece só no fim do trecho, com a brasa viva."},
+   "hint": "Procure o assento do Rei na visão.",
+   "learningObjective": "Lembrar como o Senhor aparece na visão.",
+   "evidence": ["Isaías 6:1"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+   "verseRef": "Isaías 6:3",
+   "passageA": {"ref": "Isaías 6:3"},
+   "passageB": {"ref": "Contexto", "text": "No templo, seres celestiais proclamam quem Deus é."},
+   "options": [{"id": "a", "text": "Deus é comum e sem glória"}, {"id": "b", "text": "Deus é santo e glorioso"}, {"id": "c", "text": "O templo está vazio e silencioso"}],
+   "correctOptionId": "b", "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+   "feedbackCorrect": "O clamor dos serafins apresenta um Deus santo, cuja glória enche a terra.",
+   "feedbackWrong": {"a": "A proclamação repetida mostra o contrário: ele é três vezes santo.", "c": "O templo está cheio de vozes, fumaça e presença."},
+   "hint": "Veja o que os serafins repetem sobre o Senhor.",
+   "learningObjective": "Ligar Isaías 6:3 à santidade e glória de Deus.",
+   "evidence": ["Isaías 6:3"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Isaías 6:5–6, um serafim voa até Isaías antes de ele confessar os lábios impuros.",
+   "verseRef": "Isaías 6:5–6", "correctOptionId": "false",
+   "evidenceSpan": "Então, um dos serafins voou até mim",
+   "feedbackCorrect": "Isaías confessa no verso 5; só depois o serafim voa até ele.",
+   "feedbackWrong": {"true": "Releia a ordem dos versos 5 e 6: confissão primeiro, voo depois."},
+   "hint": "Compare a ordem dos dois versículos.",
+   "learningObjective": "Compreender a ordem entre confissão e a vinda do serafim.",
+   "evidence": ["Isaías 6:5–6"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Isaías 6:5, toque a palavra que abre a reação de Isaías ao que viu e ouviu.",
+   "verseRef": "Isaías 6:5",
+   "options": [{"id": "a", "text": "Então"}, {"id": "b", "text": "perdido"}, {"id": "c", "text": "impuros"}],
+   "correctOptionId": "a", "evidenceSpan": "Então eu disse",
+   "feedbackCorrect": "Depois da visão e do clamor, Isaías reage confessando sua situação.",
+   "feedbackWrong": {"b": "\"Perdido\" é o que ele sente; a reação começa antes dessa palavra.", "c": "\"Impuros\" descreve os lábios; a reação começa no início do verso."},
+   "hint": "Procure a primeira palavra da fala de Isaías.",
+   "learningObjective": "Reconhecer o marcador que liga a visão à reação de Isaías.",
+   "evidence": ["Isaías 6:5"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como a proclamação dos serafins se relaciona com a reação de Isaías?",
+   "verseRef": "Isaías 6:5",
+   "options": [{"id": "a", "text": "Ao ouvir quem Deus é, ele reconhece a própria impureza"}, {"id": "b", "text": "Ao ouvir quem Deus é, ele se sente pronto e sem falta"}, {"id": "c", "text": "Ao ouvir quem Deus é, ele pede para sair do templo"}, {"id": "d", "text": "Ao ouvir quem Deus é, ele corrige os serafins"}],
+   "correctOptionId": "a", "evidenceSpan": "sou homem de lábios impuros",
+   "feedbackCorrect": "Diante do Deus três vezes santo, Isaías percebe os próprios lábios impuros.",
+   "feedbackWrong": {"b": "Ele diz estar perdido, não pronto nem sem falta.", "c": "Ele não pede para sair; confessa sua condição diante do Rei.", "d": "Ele não corrige ninguém; reconhece a si mesmo no povo impuro."},
+   "hint": "Veja o que Isaías diz de si logo depois do clamor.",
+   "learningObjective": "Relacionar a santidade proclamada com a confissão de Isaías.",
+   "evidence": ["Isaías 6:3–5"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança a cena em Isaías 6:1–5?",
+   "verseRef": "Isaías 6:1–2",
+   "options": [{"id": "a", "text": "O Senhor é visto no trono"}, {"id": "b", "text": "Os serafins proclamam sua santidade"}, {"id": "c", "text": "Isaías reconhece os lábios impuros"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+   "feedbackCorrect": "A cena vai do trono ao clamor, e do clamor à confissão de Isaías.",
+   "feedbackWrong": {"default": "Comece pelo que Isaías vê; a confissão dele fecha esse movimento."},
+   "hint": "A confissão de Isaías é o ponto de chegada.",
+   "learningObjective": "Compreender o movimento da visão até a confissão.",
+   "evidence": ["Isaías 6:1–5"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Isaías 6:4, de que a casa se encheu quando o serafim clamava?",
+   "verseRef": "Isaías 6:4",
+   "options": [{"id": "a", "text": "água"}, {"id": "b", "text": "fumaça"}, {"id": "c", "text": "poeira"}],
+   "correctOptionId": "b", "evidenceSpan": "a casa se encheu de fumaça",
+   "feedbackCorrect": "A voz que clama sacode os umbrais, e a casa se enche disso: a presença é real.",
+   "feedbackWrong": {"a": "Não há água nesta cena do templo; veja o fim do versículo.", "c": "O que enche a casa vem da presença de Deus, não do chão."},
+   "hint": "Leia o que acontece depois que os umbrais se agitam.",
+   "learningObjective": "Compreender os sinais da presença de Deus no templo.",
+   "evidence": ["Isaías 6:4"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+   "verseRef": "Isaías 6:3",
+   "passageA": {"ref": "Isaías 6:3"},
+   "passageB": {"ref": "Apocalipse 4:8"},
+   "options": [{"id": "a", "text": "O mesmo clamor de santidade"}, {"id": "b", "text": "Um silêncio total no céu"}, {"id": "c", "text": "Seres que escondem Deus"}],
+   "correctOptionId": "a", "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+   "feedbackCorrect": "Nos dois textos, seres celestiais repetem sem parar que Deus é santo.",
+   "feedbackWrong": {"b": "Nos dois textos há proclamação contínua, não silêncio.", "c": "Eles não escondem Deus; anunciam quem ele é."},
+   "hint": "Compare o que os seres celestiais dizem nos dois textos.",
+   "learningObjective": "Relacionar o clamor de Isaías com o louvor celestial do Apocalipse.",
+   "evidence": ["Isaías 6:3", "Apocalipse 4:8"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Isaías 6:5 mostra que, diante do Rei santo, Isaías reconhece os próprios lábios impuros.",
+   "verseRef": "Isaías 6:5", "correctOptionId": "true",
+   "evidenceSpan": "sou homem de lábios impuros",
+   "feedbackCorrect": "Diante do três vezes santo, Isaías confessa sua impureza e a do povo.",
+   "feedbackWrong": {"false": "Releia a reação de Isaías logo depois do clamor dos serafins."},
+   "hint": "Veja o que Isaías diz de si depois do clamor.",
+   "learningObjective": "Interpretar a confissão de Isaías como efeito de ver o Deus santo.",
+   "evidence": ["Isaías 6:3–5"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Isaías 6:5, toque o trecho em que Isaías descreve a si mesmo diante do Rei.",
+   "verseRef": "Isaías 6:5",
+   "options": [{"id": "a", "text": "meus olhos"}, {"id": "b", "text": "lábios impuros"}, {"id": "c", "text": "o Rei"}],
+   "correctOptionId": "b", "evidenceSpan": "sou homem de lábios impuros",
+   "feedbackCorrect": "Ele não se compara ao povo; inclui a si mesmo entre os impuros.",
+   "feedbackWrong": {"a": "Os olhos viram o Rei; a descrição dele mesmo fala dos lábios.", "c": "O Rei é quem Isaías viu, não como ele se descreve."},
+   "hint": "Procure como Isaías chama a si mesmo.",
+   "learningObjective": "Sustentar com o texto a confissão pessoal de Isaías.",
+   "evidence": ["Isaías 6:5"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Isaías 6:1–6 sustenta sobre o Deus santo?",
+   "verseRef": "Isaías 6:1–2",
+   "options": [{"id": "a", "text": "Ele é glorioso e vem ao encontro de quem confessa"}, {"id": "b", "text": "Ele fica distante e não se aproxima de ninguém"}, {"id": "c", "text": "Ele impressiona, mas não muda quem o vê"}, {"id": "d", "text": "Ele aceita a impureza sem que ela seja notada"}],
+   "correctOptionId": "a", "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+   "feedbackCorrect": "O Rei glorioso é visto, Isaías confessa, e um serafim voa até ele.",
+   "feedbackWrong": {"b": "Um serafim voa até Isaías: há aproximação, não distância fria.", "c": "Isaías muda na hora: declara-se perdido e confessa seus lábios.", "d": "A impureza é notada e nomeada por Isaías diante do Rei."},
+   "hint": "Siga a cena até o serafim que voa até Isaías.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre o Deus santo.",
+   "evidence": ["Isaías 6:1–6"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho da santidade que começa em Isaías 6:3?",
+   "verseRef": "Isaías 6:3",
+   "options": [{"id": "a", "text": "Serafins proclamam o Deus três vezes santo"}, {"id": "b", "text": "Seres no céu repetem o mesmo clamor"}, {"id": "c", "text": "O povo de Deus é chamado a ser santo"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+   "feedbackCorrect": "O clamor do templo ecoa no céu e vira chamado para a vida do povo.",
+   "feedbackWrong": {"default": "Siga a Bíblia: Isaías, Apocalipse e o chamado de Pedro, nessa ordem."},
+   "hint": "Siga a ordem da Bíblia: profeta, Apocalipse, carta.",
+   "learningObjective": "Ver a santidade de Deus como fio que atravessa a Bíblia.",
+   "evidence": ["Isaías 6:3", "Apocalipse 4:8", "1 Pedro 1:16"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Isaías 6:3, que palavra mostra até onde vai a presença gloriosa de Deus?",
+   "verseRef": "Isaías 6:3",
+   "options": [{"id": "a", "text": "honra"}, {"id": "b", "text": "glória"}, {"id": "c", "text": "fama"}],
+   "correctOptionId": "b", "evidenceSpan": "toda a terra está repleta da sua glória",
+   "feedbackCorrect": "Não é só o templo: toda a terra está repleta dessa presença gloriosa.",
+   "feedbackWrong": {"a": "A palavra do texto fala da grandeza que enche a terra inteira.", "c": "Não é reputação entre pessoas; é a presença que enche a terra."},
+   "hint": "É a palavra final da proclamação dos serafins.",
+   "learningObjective": "Lembrar o termo que carrega o alcance da presença de Deus.",
+   "evidence": ["Isaías 6:3"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Isaías 6:3 a 1 Pedro 1:16?",
+   "verseRef": "Isaías 6:3",
+   "passageA": {"ref": "Isaías 6:3"},
+   "passageB": {"ref": "1 Pedro 1:16"},
+   "options": [{"id": "a", "text": "Chamados a ser santos"}, {"id": "b", "text": "Santos só no templo"}, {"id": "c", "text": "Santidade sem obediência"}],
+   "correctOptionId": "a", "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+   "feedbackCorrect": "Pedro liga quem Deus é ao modo de viver de quem pertence a ele.",
+   "feedbackWrong": {"b": "O chamado de Pedro vale para a vida toda, não só para o templo.", "c": "Pedro escreve a quem deve viver de modo santo em tudo."},
+   "hint": "Veja o chamado que Pedro faz a partir de quem Deus é.",
+   "learningObjective": "Ligar a santidade de Deus ao chamado para uma vida santa.",
+   "evidence": ["Isaías 6:3", "1 Pedro 1:16"]
+  }
+ ]
+}

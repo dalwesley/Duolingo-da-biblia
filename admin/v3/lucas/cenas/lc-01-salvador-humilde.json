@@ -1,0 +1,915 @@
+{
+  "study": {
+    "slug": "lc-01-salvador-humilde",
+    "passageRef": "Lucas 2:7–12",
+    "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria. Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor. E isto servirá de sinal para vocês: encontrarão o menino envolto em faixas e deitado em uma manjedoura.",
+    "passages": [
+      {
+        "ref": "Lucas 2:7–12",
+        "text": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria. Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor. E isto servirá de sinal para vocês: encontrarão o menino envolto em faixas e deitado em uma manjedoura."
+      },
+      {
+        "ref": "Lucas 2:13–14",
+        "text": "E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo: Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem."
+      }
+    ],
+    "context": "Maria e José estão em Belém e não encontram lugar na hospedaria. Nos campos perto dali, pastores comuns passam a noite cuidando dos rebanhos quando recebem a grande notícia.",
+    "keyword": "Salvador",
+    "keywordGloss": "Nome dado ao menino nascido em Belém, que traz a salvação de Deus ao povo.",
+    "focusQuestion": "Como você recebe a notícia de que o Salvador também nasceu para você?",
+    "reflectionPrompts": [
+      "Boas novas aos simples",
+      "Alegria para todo o povo",
+      "Deus chega sem grandeza humana"
+    ],
+    "facts": [
+      {
+        "text": "O menino foi deitado em uma manjedoura porque não havia lugar na hospedaria.",
+        "evidenceRef": "Lucas 2:7",
+        "evidenceSpan": "o deitou em uma manjedoura"
+      },
+      {
+        "text": "Havia pastores nos campos cuidando dos rebanhos de noite.",
+        "evidenceRef": "Lucas 2:8",
+        "evidenceSpan": "havia pastores que estavam nos campos"
+      },
+      {
+        "text": "A glória do Senhor envolveu os pastores em luz e eles tiveram grande temor.",
+        "evidenceRef": "Lucas 2:9",
+        "evidenceSpan": "a glória do Senhor os envolveu em luz"
+      },
+      {
+        "text": "O anjo anuncia boas novas de grande alegria para todo o povo.",
+        "evidenceRef": "Lucas 2:10",
+        "evidenceSpan": "boas novas de grande alegria"
+      },
+      {
+        "text": "Na cidade de Davi nasceu o Salvador, que é Cristo, o Senhor.",
+        "evidenceRef": "Lucas 2:11",
+        "evidenceSpan": "nasceu para vocês o Salvador"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Salvador",
+        "gloss": "Aquele que Deus envia para salvar o seu povo, anunciado no nascimento de Jesus."
+      },
+      {
+        "term": "manjedoura",
+        "gloss": "Lugar simples onde o menino foi deitado, sinal para os pastores o reconhecerem."
+      },
+      {
+        "term": "pastores",
+        "gloss": "Trabalhadores simples do campo que recebem primeiro o anúncio do nascimento."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Nascimento em lugar simples",
+        "evidenceRef": "Lucas 2:7"
+      },
+      {
+        "label": "Pastores trabalhando à noite",
+        "evidenceRef": "Lucas 2:8"
+      },
+      {
+        "label": "Anjo anuncia boas novas",
+        "evidenceRef": "Lucas 2:10"
+      },
+      {
+        "label": "Louvor e paz anunciada",
+        "evidenceRef": "Lucas 2:14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O menino fica na manjedoura porque não havia lugar para eles na hospedaria.",
+        "marker": "porque",
+        "evidenceRef": "Lucas 2:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Os pastores não precisam temer pois o anjo traz boas novas de alegria.",
+        "marker": "pois",
+        "evidenceRef": "Lucas 2:10"
+      },
+      {
+        "kind": "sequência",
+        "text": "Naquele momento, à voz do anjo se junta a multidão celestial em louvor.",
+        "marker": "naquele momento",
+        "evidenceRef": "Lucas 2:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 1:21",
+        "bridge": "Jesus salvará seu povo",
+        "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+      },
+      {
+        "ref": "Miquéias 5:2",
+        "bridge": "De Belém sai o governante",
+        "text": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+      },
+      {
+        "ref": "Isaías 9:6",
+        "bridge": "Um menino nos nasceu",
+        "text": "Porque um menino nos nasceu, um filho se nos deu; e o governo está sobre os seus ombros; e seu nome será: Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz;"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Salvador foi anunciado primeiro às pessoas mais importantes e religiosas.",
+        "why": "O anúncio chega a pastores no campo, e a alegria é para todo o povo (2:8-10)."
+      },
+      {
+        "text": "A manjedoura mostra que Deus estava ausente daquele nascimento humilde.",
+        "why": "A manjedoura é dada como sinal para encontrar o menino, e os céus louvam a Deus (2:12-14)."
+      },
+      {
+        "text": "O anjo veio principalmente assustar os pastores.",
+        "why": "Ele começa dizendo para não terem medo e traz boas novas de grande alegria (2:10)."
+      }
+    ],
+    "centralInsight": "O nascimento de Jesus é anunciado a pastores. Lucas destaca a alegria da salvação e a graça de Deus que alcança os humildes.",
+    "anchorQuestion": "A quem o anjo anunciou o nascimento do Salvador e o que ele disse?",
+    "relatedVerses": [
+      {
+        "reference": "Mateus 1:21",
+        "reason": "Jesus salvará seu povo"
+      },
+      {
+        "reference": "Miquéias 5:2",
+        "reason": "De Belém sai o governante"
+      },
+      {
+        "reference": "Isaías 9:6",
+        "reason": "Um menino nos nasceu"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "lucas-sem-lc-01-salvador-humilde-01",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Lucas 2:11, o anjo anuncia que nasceu o Salvador na cidade de Davi.",
+      "prompt": "Em Lucas 2:11, o anjo anuncia que nasceu o Salvador na cidade de Davi.",
+      "cue": "Em Lucas 2:11, o anjo anuncia que nasceu o Salvador na cidade de Davi.",
+      "verseRef": "Lucas 2:11",
+      "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "na cidade de Davi, nasceu para vocês o Salvador",
+      "feedbackCorrect": "O anjo liga o nascimento à cidade de Davi e ao nome Salvador.",
+      "feedbackWrong": {
+        "false": "Veja o fim de Lucas 2:9, quando os pastores ficaram com grande temor."
+      },
+      "hint": "Olhe quem nasceu e onde, segundo o anjo.",
+      "learningObjective": "Observar o anúncio do nascimento do Salvador.",
+      "evidence": [
+        "Lucas 2:11"
+      ]
+    },
+    {
+      "id": "lucas-sem-lc-01-salvador-humilde-02",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Lucas 2:10, toque o que o anjo traz aos pastores.",
+      "prompt": "Em Lucas 2:10, toque o que o anjo traz aos pastores.",
+      "cue": "Em Lucas 2:10, toque o que o anjo traz aos pastores.",
+      "verseRef": "Lucas 2:10",
+      "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "grande alegria"
+        },
+        {
+          "id": "b",
+          "text": "todo o povo"
+        },
+        {
+          "id": "c",
+          "text": "boas novas"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "aqui trago boas novas de grande alegria",
+      "feedbackCorrect": "O anjo não traz ameaça, mas boas novas de grande alegria.",
+      "feedbackWrong": {
+        "a": "Isso descreve o tamanho da alegria, não o que ele traz.",
+        "b": "Isso diz para quem é a notícia, não o que ele traz."
+      },
+      "hint": "Veja o que o anjo diz que traz.",
+      "learningObjective": "Observar o conteúdo do anúncio aos pastores.",
+      "evidence": [
+        "Lucas 2:10"
+      ]
+    },
+    {
+      "id": "lucas-sem-lc-01-salvador-humilde-03",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Lucas 2:7, onde o menino foi deitado após nascer?",
+      "prompt": "Segundo Lucas 2:7, onde o menino foi deitado após nascer?",
+      "cue": "Segundo Lucas 2:7, onde o menino foi deitado após nascer?",
+      "verseRef": "Lucas 2:7",
+      "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em uma manjedoura"
+        },
+        {
+          "id": "b",
+          "text": "Nos campos com os pastores"
+        },
+        {
+          "id": "c",
+          "text": "Em um berço na hospedaria"
+        },
+        {
+          "id": "d",
+          "text": "Em uma casa na cidade de Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o deitou em uma manjedoura",
+      "feedbackCorrect": "Sem lugar na hospedaria, o menino é deitado em uma manjedoura.",
+      "feedbackWrong": {
+        "b": "Os pastores estavam nos campos, mas o menino não foi levado para lá.",
+        "c": "Não havia lugar para eles na hospedaria.",
+        "d": "O texto fala da manjedoura, não de uma casa."
+      },
+      "hint": "Leia o motivo dado no fim do versículo.",
+      "learningObjective": "Observar o lugar simples do nascimento.",
+      "evidence": [
+        "Lucas 2:7"
+      ]
+    },
+    {
+      "id": "lucas-sem-lc-01-salvador-humilde-04",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Lucas 2:9 na ordem do texto.",
+      "prompt": "Monte Lucas 2:9 na ordem do texto.",
+      "cue": "Monte Lucas 2:9 na ordem do texto.",
+      "verseRef": "Lucas 2:9",
+      "passageText": "E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "E um anjo do Senhor desceu aonde eles estavam"
+        },
+        {
+          "id": "b",
+          "text": "a glória do Senhor os envolveu em luz"
+        },
+        {
+          "id": "c",
+          "text": "ficaram tomados de grande temor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "E um anjo do Senhor desceu aonde eles estavam",
+      "feedbackCorrect": "Primeiro o anjo chega, depois a luz envolve e o temor aparece.",
+      "feedbackWrong": {
+        "default": "Comece por quem desceu até os pastores."
+      },
+      "hint": "Comece por quem desceu até os pastores.",
+      "learningObjective": "Reconhecer a sequência do aparecimento do anjo.",
+      "evidence": [
+        "Lucas 2:9"
+      ]
+    },
+    {
+      "id": "lucas-sem-lc-01-salvador-humilde-05",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Lucas 2:8, quem estava nos campos cuidando dos rebanhos?",
+      "prompt": "Em Lucas 2:8, quem estava nos campos cuidando dos rebanhos?",
+      "cue": "Em Lucas 2:8, quem estava nos campos cuidando dos rebanhos?",
+      "verseRef": "Lucas 2:8",
+      "passageText": "Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite.",
+      "template": "Naquela região, havia ___ que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite.",
+      "options": [
+        {
+          "id": "a",
+          "text": "pastores"
+        },
+        {
+          "id": "b",
+          "text": "viajantes"
+        },
+        {
+          "id": "c",
+          "text": "soldados"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "havia pastores que estavam nos campos",
+      "feedbackCorrect": "Eram trabalhadores do campo, em vigília durante a noite.",
+      "feedbackWrong": {
+        "b": "O texto nomeia quem cuidava dos rebanhos naquela região.",
+        "c": "Não são guardas, mas quem cuidava dos rebanhos."
+      },
+      "hint": "Quem trabalhava à noite naquela região?",
+      "learningObjective": "Lembrar quem recebeu primeiro a notícia.",
+      "evidence": [
+        "Lucas 2:8"
+      ]
+    },
+    {
+      "id": "lucas-sem-lc-01-salvador-humilde-06",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Lucas 2:11 comunica que se liga a este contexto?",
+      "prompt": "O que Lucas 2:11 comunica que se liga a este contexto?",
+      "cue": "O que Lucas 2:11 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 2:11",
+      "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "passageA": {
+        "ref": "Lucas 2:11",
+        "text": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus manda a maior notícia primeiro a trabalhadores simples do campo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Notícia guardada em segredo"
+        },
+        {
+          "id": "b",
+          "text": "Boas novas para todo povo"
+        },
+        {
+          "id": "c",
+          "text": "Salvação só para importantes"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "nasceu para vocês o Salvador",
+      "feedbackCorrect": "A alegria anunciada não é de poucos, mas para todo o povo.",
+      "feedbackWrong": {
+        "a": "Os pastores ouvem abertamente e o sinal é dado a eles.",
+        "c": "O anjo fala de alegria para todo o povo."
+      },
+      "hint": "Veja para quem o anjo diz que a alegria será.",
+      "learningObjective": "Ligar o nascimento à alegria para todo o povo.",
+      "evidence": [
+        "Lucas 2:11"
+      ]
+    },
+    {
+      "id": "lucas-cam-lc-01-salvador-humilde-01",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Lucas 2:8-9, os pastores recebem o anjo sem medo porque já esperavam a notícia.",
+      "prompt": "Em Lucas 2:8-9, os pastores recebem o anjo sem medo porque já esperavam a notícia.",
+      "cue": "Em Lucas 2:8-9, os pastores recebem o anjo sem medo porque já esperavam a notícia.",
+      "verseRef": "Lucas 2:8–9",
+      "passageText": "Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "ficaram tomados de grande temor",
+      "feedbackCorrect": "Ao ver o anjo e a glória, eles ficam tomados de grande temor.",
+      "feedbackWrong": {
+        "true": "Releia a reação deles em Lucas 2:9, diante da luz e do anjo."
+      },
+      "hint": "Veja a reação dos pastores à aparição.",
+      "learningObjective": "Compreender a reação inicial dos pastores.",
+      "evidence": [
+        "Lucas 2:8–9"
+      ]
+    },
+    {
+      "id": "lucas-cam-lc-01-salvador-humilde-02",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+      "prompt": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+      "cue": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+      "verseRef": "Lucas 2:7",
+      "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria.",
+      "options": [
+        {
+          "id": "a",
+          "text": "manjedoura"
+        },
+        {
+          "id": "b",
+          "text": "porque"
+        },
+        {
+          "id": "c",
+          "text": "hospedaria"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "porque não havia lugar para eles na hospedaria",
+      "feedbackCorrect": "Essa palavra abre o motivo de não haver lugar na hospedaria.",
+      "feedbackWrong": {
+        "a": "Isso é o lugar onde ele foi deitado, não o motivo.",
+        "c": "Isso é o lugar que estava sem vaga, não a palavra do motivo."
+      },
+      "hint": "Procure a palavra que dá o motivo no fim.",
+      "learningObjective": "Reconhecer a palavra que marca a causa no texto.",
+      "evidence": [
+        "Lucas 2:7"
+      ]
+    },
+    {
+      "id": "lucas-cam-lc-01-salvador-humilde-03",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Lucas 2:10 se relaciona com o temor de Lucas 2:9?",
+      "prompt": "Como Lucas 2:10 se relaciona com o temor de Lucas 2:9?",
+      "cue": "Como Lucas 2:10 se relaciona com o temor de Lucas 2:9?",
+      "verseRef": "Lucas 2:9–10",
+      "passageText": "E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "O temor prova que a notícia era só para eles"
+        },
+        {
+          "id": "b",
+          "text": "A luz afasta os pastores antes da mensagem"
+        },
+        {
+          "id": "c",
+          "text": "A alegria apaga a glória que eles viram"
+        },
+        {
+          "id": "d",
+          "text": "Ao grande temor, o anjo responde com alegria"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "ficaram tomados de grande temor",
+      "feedbackCorrect": "O anjo responde ao medo com o convite a não temer e com alegria.",
+      "feedbackWrong": {
+        "a": "A notícia é para todo o povo, não só para eles.",
+        "b": "Os pastores permanecem e ouvem o anúncio até o fim.",
+        "c": "A glória continua e leva ao louvor dos céus."
+      },
+      "hint": "Compare o sentimento de 2:9 com a primeira fala de 2:10.",
+      "learningObjective": "Relacionar o temor dos pastores à resposta do anjo.",
+      "evidence": [
+        "Lucas 2:9–10"
+      ]
+    },
+    {
+      "id": "lucas-cam-lc-01-salvador-humilde-04",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o anúncio em Lucas 2:10-11?",
+      "prompt": "Como avança o anúncio em Lucas 2:10-11?",
+      "cue": "Como avança o anúncio em Lucas 2:10-11?",
+      "verseRef": "Lucas 2:10–11",
+      "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O anjo pede que não tenham medo"
+        },
+        {
+          "id": "b",
+          "text": "Ele anuncia boas novas de alegria"
+        },
+        {
+          "id": "c",
+          "text": "O Salvador nasceu na cidade de Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Não tenham medo",
+      "feedbackCorrect": "Primeiro o medo é tratado, depois a notícia e o nascimento são anunciados.",
+      "feedbackWrong": {
+        "default": "Comece pela primeira fala do anjo."
+      },
+      "hint": "Comece pela primeira fala do anjo.",
+      "learningObjective": "Compreender o movimento do anúncio do anjo.",
+      "evidence": [
+        "Lucas 2:10–11"
+      ]
+    },
+    {
+      "id": "lucas-cam-lc-01-salvador-humilde-05",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+      "prompt": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+      "cue": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+      "verseRef": "Lucas 2:13",
+      "passageText": "E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:",
+      "template": "E, naquele momento, ___ com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "dizendo"
+        },
+        {
+          "id": "b",
+          "text": "apareceu"
+        },
+        {
+          "id": "c",
+          "text": "louvando"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "apareceu com o anjo uma multidão da milícia celestial",
+      "feedbackCorrect": "De repente, uma multidão aparece com o anjo louvando a Deus.",
+      "feedbackWrong": {
+        "a": "Isso introduz as palavras do louvor, não a chegada dela.",
+        "c": "Isso descreve o que a multidão faz depois de aparecer."
+      },
+      "hint": "Veja o verbo que abre a cena do louvor.",
+      "learningObjective": "Compreender a entrada da multidão celestial.",
+      "evidence": [
+        "Lucas 2:13"
+      ]
+    },
+    {
+      "id": "lucas-cam-lc-01-salvador-humilde-06",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Lucas 2:11 a Mateus 1:21?",
+      "prompt": "O que liga Lucas 2:11 a Mateus 1:21?",
+      "cue": "O que liga Lucas 2:11 a Mateus 1:21?",
+      "verseRef": "Lucas 2:11",
+      "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "passageA": {
+        "ref": "Lucas 2:11",
+        "text": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor."
+      },
+      "passageB": {
+        "ref": "Mateus 1:21",
+        "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus vem para salvar"
+        },
+        {
+          "id": "b",
+          "text": "Um menino comum em Belém"
+        },
+        {
+          "id": "c",
+          "text": "Pastores viram um sinal"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "nasceu para vocês o Salvador",
+      "feedbackCorrect": "Nos dois textos, o menino que nasce vem para salvar o povo.",
+      "feedbackWrong": {
+        "b": "Mateus dá ao nome Jesus o sentido de salvar dos pecados.",
+        "c": "O sinal aos pastores confirma, mas a ponte é a salvação."
+      },
+      "hint": "Veja o sentido do nome dado em Mateus.",
+      "learningObjective": "Relacionar o Salvador de Lucas à missão de Jesus.",
+      "evidence": [
+        "Lucas 2:11",
+        "Mateus 1:21"
+      ]
+    },
+    {
+      "id": "lucas-pro-lc-01-salvador-humilde-01",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Lucas 2:10 apresenta a salvação como alegria para todo o povo.",
+      "prompt": "Lucas 2:10 apresenta a salvação como alegria para todo o povo.",
+      "cue": "Lucas 2:10 apresenta a salvação como alegria para todo o povo.",
+      "verseRef": "Lucas 2:10",
+      "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "que serão para todo o povo",
+      "feedbackCorrect": "O anjo diz que as boas novas serão para todo o povo.",
+      "feedbackWrong": {
+        "false": "Releia para quem as boas novas de grande alegria serão."
+      },
+      "hint": "Veja o alcance das boas novas no versículo.",
+      "learningObjective": "Interpretar o alcance universal do anúncio.",
+      "evidence": [
+        "Lucas 2:10"
+      ]
+    },
+    {
+      "id": "lucas-pro-lc-01-salvador-humilde-02",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Lucas 2:14, toque o que o louvor atribui a Deus nas alturas.",
+      "prompt": "Em Lucas 2:14, toque o que o louvor atribui a Deus nas alturas.",
+      "cue": "Em Lucas 2:14, toque o que o louvor atribui a Deus nas alturas.",
+      "verseRef": "Lucas 2:14",
+      "passageText": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glória"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Glória a Deus nas maiores alturas",
+      "feedbackCorrect": "O louvor começa atribuindo glória a Deus nas maiores alturas.",
+      "feedbackWrong": {
+        "b": "A paz é anunciada para a terra, não atribuída nas alturas.",
+        "c": "A terra recebe a paz, não é o que se atribui a Deus."
+      },
+      "hint": "Veja a primeira palavra do louvor.",
+      "learningObjective": "Sustentar com o texto o louvor a Deus.",
+      "evidence": [
+        "Lucas 2:14"
+      ]
+    },
+    {
+      "id": "lucas-pro-lc-01-salvador-humilde-03",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Lucas 2:10-11 sustenta sobre a chegada do Salvador?",
+      "prompt": "Que leitura Lucas 2:10-11 sustenta sobre a chegada do Salvador?",
+      "cue": "Que leitura Lucas 2:10-11 sustenta sobre a chegada do Salvador?",
+      "verseRef": "Lucas 2:10–11",
+      "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus traz salvação alcançando gente simples"
+        },
+        {
+          "id": "b",
+          "text": "O anúncio aos pastores foi mero acaso"
+        },
+        {
+          "id": "c",
+          "text": "A humildade indica ausência de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Salvação é só para quem tem prestígio"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "nasceu para vocês o Salvador",
+      "feedbackCorrect": "Anunciado a pastores e para todo o povo, o Salvador alcança gente simples.",
+      "feedbackWrong": {
+        "b": "O texto dá propósito ao anúncio e ao sinal aos pastores.",
+        "c": "Os céus louvam nesse nascimento, sinal da presença de Deus.",
+        "d": "O anúncio a pastores mostra o contrário do prestígio como porta."
+      },
+      "hint": "Compare quem ouve com o alcance dito pelo anjo.",
+      "learningObjective": "Escolher a interpretação sustentada pelo anúncio.",
+      "evidence": [
+        "Lucas 2:10–11"
+      ]
+    },
+    {
+      "id": "lucas-pro-lc-01-salvador-humilde-04",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o sentido do anúncio em Lucas 2?",
+      "prompt": "Qual sequência revela o sentido do anúncio em Lucas 2?",
+      "cue": "Qual sequência revela o sentido do anúncio em Lucas 2?",
+      "verseRef": "Lucas 2:14",
+      "passageText": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus anuncia boas novas aos humildes"
+        },
+        {
+          "id": "b",
+          "text": "O Salvador nasce para todo o povo"
+        },
+        {
+          "id": "c",
+          "text": "Céus louvam e falam de paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Glória a Deus nas maiores alturas",
+      "feedbackCorrect": "A notícia aos simples revela o Salvador e termina em louvor e paz.",
+      "feedbackWrong": {
+        "default": "Comece por quem recebe a notícia no campo."
+      },
+      "hint": "Comece por quem recebe a notícia no campo.",
+      "learningObjective": "Ver o caminho do anúncio até o louvor.",
+      "evidence": [
+        "Lucas 2:14"
+      ]
+    },
+    {
+      "id": "lucas-pro-lc-01-salvador-humilde-05",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Lucas 2:11, que nome mostra o que o menino veio fazer pelo povo?",
+      "prompt": "Em Lucas 2:11, que nome mostra o que o menino veio fazer pelo povo?",
+      "cue": "Em Lucas 2:11, que nome mostra o que o menino veio fazer pelo povo?",
+      "verseRef": "Lucas 2:11",
+      "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "template": "Hoje, na cidade de Davi, nasceu para vocês o ___, que é Cristo, o Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Salvador"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "nasceu para vocês o Salvador",
+      "feedbackCorrect": "O nome Salvador resume a missão do menino que nasceu.",
+      "feedbackWrong": {
+        "a": "Cristo é título do enviado, mas a ação de salvar está no outro nome.",
+        "b": "Senhor mostra autoridade, mas o nome da missão vem antes."
+      },
+      "hint": "É o nome ligado ao que ele veio fazer pelo povo.",
+      "learningObjective": "Lembrar o termo central do anúncio.",
+      "evidence": [
+        "Lucas 2:11"
+      ]
+    },
+    {
+      "id": "lucas-pro-lc-01-salvador-humilde-06",
+      "trail": "lucas",
+      "section": "lc-01-salvador-humilde",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Lucas 2:14 a Isaías 9:6?",
+      "prompt": "O que liga Lucas 2:14 a Isaías 9:6?",
+      "cue": "O que liga Lucas 2:14 a Isaías 9:6?",
+      "verseRef": "Lucas 2:14",
+      "passageText": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem.",
+      "passageA": {
+        "ref": "Lucas 2:14",
+        "text": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem."
+      },
+      "passageB": {
+        "ref": "Isaías 9:6",
+        "text": "Porque um menino nos nasceu, um filho se nos deu; e o governo está sobre os seus ombros; e seu nome será: Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz;"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz sem um governante"
+        },
+        {
+          "id": "b",
+          "text": "Paz trazida pelo menino"
+        },
+        {
+          "id": "c",
+          "text": "Glória só dos anjos"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "paz na terra",
+      "feedbackCorrect": "Isaías anuncia um menino governante, e Lucas fala de paz na terra.",
+      "feedbackWrong": {
+        "a": "Isaías liga a paz ao governo do menino que nasce.",
+        "c": "O louvor é a Deus, e a paz chega à terra pelo menino."
+      },
+      "hint": "Veja quem Isaías diz que nasce e governa.",
+      "learningObjective": "Ligar a paz de Lucas à promessa de Isaías.",
+      "evidence": [
+        "Lucas 2:14",
+        "Isaías 9:6"
+      ]
+    }
+  ]
+}

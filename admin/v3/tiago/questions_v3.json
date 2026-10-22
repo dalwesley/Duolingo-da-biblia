@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "tiago-sem-tg-01-01",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 2:17, a fé sem obras está morta por si só.",
+    "prompt": "Em Tiago 2:17, a fé sem obras está morta por si só.",
+    "cue": "Em Tiago 2:17, a fé sem obras está morta por si só.",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+    "feedbackCorrect": "Tiago conclui o caso do necessitado com esta frase sobre a fé sem obras.",
+    "feedbackWrong": {
+      "false": "Releia Tiago 2:17 e veja como ele chama a fé sem obras."
+    },
+    "hint": "Olhe a conclusão do versículo.",
+    "learningObjective": "Observar a conclusão de Tiago sobre a fé sem obras.",
+    "evidence": [
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-01-02",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 2:15, toque a peça de vestir de que um irmão pode estar necessitando.",
+    "prompt": "Em Tiago 2:15, toque a peça de vestir de que um irmão pode estar necessitando.",
+    "cue": "Em Tiago 2:15, toque a peça de vestir de que um irmão pode estar necessitando.",
+    "verseRef": "Tiago 2:15",
+    "passageText": "Se um irmão ou uma irmã estiverem necessitando de roupa e carecendo do alimento diário",
+    "options": [
+      {
+        "id": "a",
+        "text": "alimento diário"
+      },
+      {
+        "id": "b",
+        "text": "roupa"
+      },
+      {
+        "id": "c",
+        "text": "irmã"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "necessitando de roupa",
+    "feedbackCorrect": "O irmão ou irmã pode estar necessitando de roupa e do alimento diário.",
+    "feedbackWrong": {
+      "a": "O alimento diário é a outra necessidade; a peça de vestir vem antes.",
+      "c": "A irmã é quem passa necessidade, não a peça de vestir."
+    },
+    "hint": "Procure o item de vestir citado no versículo.",
+    "learningObjective": "Identificar a necessidade concreta citada por Tiago.",
+    "evidence": [
+      "Tiago 2:15"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-01-03",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 2:15–16, o que o necessitado recebe de quem só fala palavras de paz?",
+    "prompt": "Segundo Tiago 2:15–16, o que o necessitado recebe de quem só fala palavras de paz?",
+    "cue": "Segundo Tiago 2:15–16, o que o necessitado recebe de quem só fala palavras de paz?",
+    "verseRef": "Tiago 2:15–16",
+    "passageText": "Se um irmão ou uma irmã estiverem necessitando de roupa e carecendo do alimento diário E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dinheiro para comprar comida"
+      },
+      {
+        "id": "b",
+        "text": "Roupa e alimento na hora"
+      },
+      {
+        "id": "c",
+        "text": "Palavras de paz, sem o necessário"
+      },
+      {
+        "id": "d",
+        "text": "Uma promessa para o mês seguinte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Vão em paz, aqueçam-se e saciem-se",
+    "feedbackCorrect": "Ele ouve palavras boas, mas não recebe o necessário para o corpo.",
+    "feedbackWrong": {
+      "a": "Nenhum dinheiro é dado; só palavras são ditas ao necessitado.",
+      "b": "Roupa e alimento são a necessidade; quem só fala não os entrega.",
+      "d": "O texto não fala de promessa futura, e sim de palavras sem entrega."
+    },
+    "hint": "Veja o que é dado e o que é apenas dito.",
+    "learningObjective": "Observar a diferença entre falar e dar o necessário.",
+    "evidence": [
+      "Tiago 2:15–16"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-01-04",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 2:16 na ordem do texto.",
+    "prompt": "Monte Tiago 2:16 na ordem do texto.",
+    "cue": "Monte Tiago 2:16 na ordem do texto.",
+    "verseRef": "Tiago 2:16",
+    "passageText": "E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "E se algum de vocês lhes disser"
+      },
+      {
+        "id": "b",
+        "text": "Vão em paz, aqueçam-se e saciem-se"
+      },
+      {
+        "id": "c",
+        "text": "mas não lhes der o necessário para o corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas não lhes der o necessário para o corpo",
+    "feedbackCorrect": "Primeiro as palavras de paz; depois, a falta do necessário para o corpo.",
+    "feedbackWrong": {
+      "default": "Comece pela fala ao necessitado; a falta da entrega vem depois."
+    },
+    "hint": "O versículo começa com alguém falando.",
+    "learningObjective": "Reconhecer a sequência de Tiago 2:16.",
+    "evidence": [
+      "Tiago 2:16"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-01-05",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 2:14, o que falta a quem afirma ter fé, na pergunta de Tiago?",
+    "prompt": "Em Tiago 2:14, o que falta a quem afirma ter fé, na pergunta de Tiago?",
+    "cue": "Em Tiago 2:14, o que falta a quem afirma ter fé, na pergunta de Tiago?",
+    "verseRef": "Tiago 2:14",
+    "passageText": "Meus irmãos, de que adianta alguém afirmar que tem fé, se não tiver obras? Pode, por acaso, essa fé salvá-lo?",
+    "template": "Meus irmãos, de que adianta alguém afirmar que tem fé, se não tiver ___? Pode, por acaso, essa fé salvá-lo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "tempo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se não tiver obras",
+    "feedbackCorrect": "A pergunta de Tiago junta afirmar fé e ter esse fruto visível.",
+    "feedbackWrong": {
+      "a": "Quem só fala já tem palavras; falta-lhe o fruto em ações.",
+      "c": "O texto não fala de tempo, e sim do que acompanha a fé."
+    },
+    "hint": "Releia a pergunta que abre o trecho.",
+    "learningObjective": "Lembrar o que Tiago espera junto da fé afirmada.",
+    "evidence": [
+      "Tiago 2:14"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-01-06",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "passageA": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, está morta por si só."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma fé verdadeira aparece em ajuda concreta a quem precisa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé viva gera obras"
+      },
+      {
+        "id": "b",
+        "text": "Obras substituem a fé"
+      },
+      {
+        "id": "c",
+        "text": "Palavras bastam sem agir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "está morta por si só",
+    "feedbackCorrect": "Sem esse fruto, Tiago chama a fé de morta; com ele, ela se mostra viva.",
+    "feedbackWrong": {
+      "b": "As ações mostram a fé; não ocupam o lugar dela.",
+      "c": "O caso do necessitado mostra que só palavras não beneficiam."
+    },
+    "hint": "Pense no fruto que essa fé produz.",
+    "learningObjective": "Ligar Tiago 2:17 à fé que aparece em ajuda concreta.",
+    "evidence": [
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-01-01",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 2:16, dar palavras de paz sem o necessário já é ajuda completa ao necessitado.",
+    "prompt": "Em Tiago 2:16, dar palavras de paz sem o necessário já é ajuda completa ao necessitado.",
+    "cue": "Em Tiago 2:16, dar palavras de paz sem o necessário já é ajuda completa ao necessitado.",
+    "verseRef": "Tiago 2:16",
+    "passageText": "E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas não lhes der o necessário para o corpo",
+    "feedbackCorrect": "Tiago pergunta qual é o benefício disso; palavras sem entrega não ajudam o corpo.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Tiago 2:16 e veja a pergunta sobre o benefício."
+    },
+    "hint": "Olhe a pergunta no fim do versículo.",
+    "learningObjective": "Compreender que palavras sem entrega não beneficiam quem precisa.",
+    "evidence": [
+      "Tiago 2:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-01-02",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 2:16, toque a palavra que marca o contraste entre dizer e não dar.",
+    "prompt": "Em Tiago 2:16, toque a palavra que marca o contraste entre dizer e não dar.",
+    "cue": "Em Tiago 2:16, toque a palavra que marca o contraste entre dizer e não dar.",
+    "verseRef": "Tiago 2:16",
+    "passageText": "E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas não lhes der",
+    "feedbackCorrect": "Essa palavra vira a frase: fala-se de paz, porém nada se entrega.",
+    "feedbackWrong": {
+      "a": "A paz faz parte das palavras ditas, não do contraste.",
+      "b": "O corpo é quem sofre a falta; o contraste vem antes dele."
+    },
+    "hint": "Procure a conjunção que vira a frase.",
+    "learningObjective": "Reconhecer o marcador de contraste em Tiago 2:16.",
+    "evidence": [
+      "Tiago 2:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-01-03",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tiago 2:18 responde a quem separa fé de obras?",
+    "prompt": "Como Tiago 2:18 responde a quem separa fé de obras?",
+    "cue": "Como Tiago 2:18 responde a quem separa fé de obras?",
+    "verseRef": "Tiago 2:18",
+    "passageText": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As obras tornam a fé desnecessária"
+      },
+      {
+        "id": "b",
+        "text": "A fé pode ficar escondida para sempre"
+      },
+      {
+        "id": "c",
+        "text": "As obras mostram a fé que a pessoa diz ter"
+      },
+      {
+        "id": "d",
+        "text": "Cada um escolhe entre fé ou obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu, com as minhas obras, lhe mostrarei a minha fé",
+    "feedbackCorrect": "Tiago não separa as duas; ele mostra a fé por meio do que faz.",
+    "feedbackWrong": {
+      "a": "As ações evidenciam a fé, em vez de torná-la desnecessária.",
+      "b": "Ele afirma que mostrará a fé; fé viva não fica escondida.",
+      "d": "Não é uma escolha entre uma ou outra; as duas andam juntas."
+    },
+    "hint": "Veja o que o autor diz que fará com as suas ações.",
+    "learningObjective": "Compreender que, para Tiago, as obras mostram a fé.",
+    "evidence": [
+      "Tiago 2:18"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-01-04",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o caso em Tiago 2:15–16?",
+    "prompt": "Como avança o caso em Tiago 2:15–16?",
+    "cue": "Como avança o caso em Tiago 2:15–16?",
+    "verseRef": "Tiago 2:15–16",
+    "passageText": "Se um irmão ou uma irmã estiverem necessitando de roupa e carecendo do alimento diário E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um irmão ou irmã passa necessidade"
+      },
+      {
+        "id": "b",
+        "text": "Alguém lhe deseja paz e saciedade"
+      },
+      {
+        "id": "c",
+        "text": "Mas nada lhe dá para o corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "necessitando de roupa e carecendo do alimento diário",
+    "feedbackCorrect": "Necessidade, palavras boas e, por fim, a falta da entrega concreta.",
+    "feedbackWrong": {
+      "default": "Comece pela necessidade; as palavras vêm antes da falta de entrega."
+    },
+    "hint": "A necessidade aparece primeiro no caso.",
+    "learningObjective": "Compreender o avanço do caso do necessitado.",
+    "evidence": [
+      "Tiago 2:15–16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-01-05",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 2:18, o que o autor afirma que fará por meio das suas obras?",
+    "prompt": "Em Tiago 2:18, o que o autor afirma que fará por meio das suas obras?",
+    "cue": "Em Tiago 2:18, o que o autor afirma que fará por meio das suas obras?",
+    "verseRef": "Tiago 2:18",
+    "passageText": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé.",
+    "template": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe ___ a minha fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconderei"
+      },
+      {
+        "id": "b",
+        "text": "negarei"
+      },
+      {
+        "id": "c",
+        "text": "mostrarei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lhe mostrarei a minha fé",
+    "feedbackCorrect": "Ele não pede fé invisível; afirma que a mostrará pelo que faz.",
+    "feedbackWrong": {
+      "a": "O autor quer evidenciar a fé, não escondê-la de ninguém.",
+      "b": "Ele não nega a fé; ele a demonstra com suas ações."
+    },
+    "hint": "Procure o verbo ligado às ações do autor.",
+    "learningObjective": "Compreender que as obras tornam a fé visível.",
+    "evidence": [
+      "Tiago 2:18"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-01-06",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 2:17 a Mateus 7:21?",
+    "prompt": "O que liga Tiago 2:17 a Mateus 7:21?",
+    "cue": "O que liga Tiago 2:17 a Mateus 7:21?",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "passageA": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, está morta por si só."
+    },
+    "passageB": {
+      "ref": "Mateus 7:21",
+      "text": "Nem todo aquele que me chama: Senhor, Senhor! entrará no reino dos céus, mas sim aquele que pratica a vontade de meu Pai, que está nos céus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé que se pratica"
+      },
+      {
+        "id": "b",
+        "text": "Fé só de palavras"
+      },
+      {
+        "id": "c",
+        "text": "Obras sem nenhuma fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "está morta por si só",
+    "feedbackCorrect": "Jesus e Tiago pedem mais que palavras: uma fé que se pratica.",
+    "feedbackWrong": {
+      "b": "Chamar Jesus de Senhor sem praticar é justamente o alvo dos dois textos.",
+      "c": "Nos dois textos, praticar nasce da fé, não anda sem ela."
+    },
+    "hint": "Veja o que Jesus pede além de palavras.",
+    "learningObjective": "Relacionar fé e prática em Tiago e nas palavras de Jesus.",
+    "evidence": [
+      "Tiago 2:17",
+      "Mateus 7:21"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-01-01",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 2:19, crer que há um só Deus sem obedecer não eleva a pessoa acima dos demônios que creem e tremem.",
+    "prompt": "Em Tiago 2:19, crer que há um só Deus sem obedecer não eleva a pessoa acima dos demônios que creem e tremem.",
+    "cue": "Em Tiago 2:19, crer que há um só Deus sem obedecer não eleva a pessoa acima dos demônios que creem e tremem.",
+    "verseRef": "Tiago 2:19",
+    "passageText": "Você crê que há um só Deus? Isso é bom; até mesmo os demônios creem e tremem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "até mesmo os demônios creem e tremem",
+    "feedbackCorrect": "Crer sem obedecer fica no nível citado por Tiago: até os demônios creem e tremem.",
+    "feedbackWrong": {
+      "false": "Releia Tiago 2:19 e compare esse crer com o dos demônios."
+    },
+    "hint": "Compare esse crer com quem mais crê no versículo.",
+    "learningObjective": "Interpretar por que crer sem obedecer não basta, segundo Tiago.",
+    "evidence": [
+      "Tiago 2:19"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-01-02",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 2:17, toque a palavra que revela o estado da fé sem obras.",
+    "prompt": "Em Tiago 2:17, toque a palavra que revela o estado da fé sem obras.",
+    "cue": "Em Tiago 2:17, toque a palavra que revela o estado da fé sem obras.",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "morta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "está morta por si só",
+    "feedbackCorrect": "É o veredito de Tiago sobre a fé que não produz nenhuma ação.",
+    "feedbackWrong": {
+      "a": "A fé é o assunto da frase; o estado dela vem depois.",
+      "b": "As ações são o que falta; o estado da fé vem no fim."
+    },
+    "hint": "Procure o adjetivo no fim da frase.",
+    "learningObjective": "Sustentar com o texto o veredito sobre a fé sem obras.",
+    "evidence": [
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-01-03",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 2:16–17 sustenta sobre fé e obras?",
+    "prompt": "Que leitura Tiago 2:16–17 sustenta sobre fé e obras?",
+    "cue": "Que leitura Tiago 2:16–17 sustenta sobre fé e obras?",
+    "verseRef": "Tiago 2:16–17",
+    "passageText": "E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso? Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé viva se mostra em obras de ajuda"
+      },
+      {
+        "id": "b",
+        "text": "As obras tornam a fé inútil"
+      },
+      {
+        "id": "c",
+        "text": "As obras pagam o preço da salvação"
+      },
+      {
+        "id": "d",
+        "text": "Dizer que crê basta, mesmo sem fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+    "feedbackCorrect": "Tiago não vende salvação; ele mostra que a fé viva aparece ajudando.",
+    "feedbackWrong": {
+      "b": "Sem fé, as ações perdem a raiz que o texto apresenta.",
+      "c": "O texto não trata ações como pagamento; elas mostram uma fé viva.",
+      "d": "Palavras sem o necessário são justamente o que Tiago reprova."
+    },
+    "hint": "Compare cada opção com o caso do necessitado.",
+    "learningObjective": "Escolher a interpretação de fé e obras que o texto sustenta.",
+    "evidence": [
+      "Tiago 2:16–17"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-01-04",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Tiago 2:17–18?",
+    "prompt": "Qual sequência revela o sentido de Tiago 2:17–18?",
+    "cue": "Qual sequência revela o sentido de Tiago 2:17–18?",
+    "verseRef": "Tiago 2:17–18",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só. Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé verdadeira recebe a Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Essa fé se expressa em amor e ajuda"
+      },
+      {
+        "id": "c",
+        "text": "As obras mostram ao mundo essa fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "lhe mostrarei a minha fé",
+    "feedbackCorrect": "A fé recebida se expressa em amor, e as ações a tornam visível.",
+    "feedbackWrong": {
+      "default": "Comece pela fé recebida; a ajuda visível é o fruto dela."
+    },
+    "hint": "Comece pelo que se recebe, não pelo fruto.",
+    "learningObjective": "Ver a ordem entre fé recebida, amor e obras visíveis.",
+    "evidence": [
+      "Tiago 2:17–18",
+      "Gálatas 5:6",
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-01-05",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 2:19, o que os demônios fazem ao crer que há um só Deus?",
+    "prompt": "Em Tiago 2:19, o que os demônios fazem ao crer que há um só Deus?",
+    "cue": "Em Tiago 2:19, o que os demônios fazem ao crer que há um só Deus?",
+    "verseRef": "Tiago 2:19",
+    "passageText": "Você crê que há um só Deus? Isso é bom; até mesmo os demônios creem e tremem.",
+    "template": "Você crê que há um só Deus? Isso é bom; até mesmo os demônios creem e ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fogem"
+      },
+      {
+        "id": "b",
+        "text": "riem"
+      },
+      {
+        "id": "c",
+        "text": "tremem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "demônios creem e tremem",
+    "feedbackCorrect": "Eles creem e têm essa reação, sem que isso seja obediência a Deus.",
+    "feedbackWrong": {
+      "a": "O texto não fala de fuga; fala da reação deles ao crer.",
+      "b": "A reação citada por Tiago é séria, não de deboche."
+    },
+    "hint": "Procure a reação deles no fim do versículo.",
+    "learningObjective": "Lembrar a reação que mostra um crer sem obediência.",
+    "evidence": [
+      "Tiago 2:19"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-01-06",
+    "trail": "tiago",
+    "section": "tg-01",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 2:18 a Efésios 2:10?",
+    "prompt": "O que liga Tiago 2:18 a Efésios 2:10?",
+    "cue": "O que liga Tiago 2:18 a Efésios 2:10?",
+    "verseRef": "Tiago 2:18",
+    "passageText": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé.",
+    "passageA": {
+      "ref": "Tiago 2:18",
+      "text": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé."
+    },
+    "passageB": {
+      "ref": "Efésios 2:10",
+      "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé sem nenhum fruto"
+      },
+      {
+        "id": "b",
+        "text": "Criados para boas obras"
+      },
+      {
+        "id": "c",
+        "text": "Salvos por merecimento próprio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "com as minhas obras, lhe mostrarei a minha fé",
+    "feedbackCorrect": "Paulo diz para que fomos criados em Cristo; Tiago mostra essa fé em ação.",
+    "feedbackWrong": {
+      "a": "Os dois textos esperam fruto visível de quem crê.",
+      "c": "Efésios fala de obra de Deus em nós, não de merecimento nosso."
+    },
+    "hint": "Veja para que Deus criou o seu povo.",
+    "learningObjective": "Ligar a fé que se mostra ao propósito de Deus em Efésios.",
+    "evidence": [
+      "Tiago 2:18",
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-02-01",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 3:8, qualquer pessoa consegue domar a língua com facilidade.",
+    "prompt": "Em Tiago 3:8, qualquer pessoa consegue domar a língua com facilidade.",
+    "cue": "Em Tiago 3:8, qualquer pessoa consegue domar a língua com facilidade.",
+    "verseRef": "Tiago 3:8",
+    "passageText": "Mas ninguém consegue domar a língua; é um mal indomável, repleta de veneno mortal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ninguém consegue domar a língua",
+    "feedbackCorrect": "Tiago afirma o contrário: ninguém consegue domar esse mal indomável.",
+    "feedbackWrong": {
+      "true": "Releia o começo de Tiago 3:8 e veja quem consegue esse domínio."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar o que Tiago afirma sobre domar a língua.",
+    "evidence": [
+      "Tiago 3:8"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-02-02",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 3:9, toque o verbo que diz o que fazemos ao Senhor e Pai com a língua.",
+    "prompt": "Em Tiago 3:9, toque o verbo que diz o que fazemos ao Senhor e Pai com a língua.",
+    "cue": "Em Tiago 3:9, toque o verbo que diz o que fazemos ao Senhor e Pai com a língua.",
+    "verseRef": "Tiago 3:9",
+    "passageText": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "bendizemos"
+      },
+      {
+        "id": "b",
+        "text": "amaldiçoamos"
+      },
+      {
+        "id": "c",
+        "text": "feitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+    "feedbackCorrect": "Com a mesma língua, bendizemos a Deus e, ao mesmo tempo, ferimos pessoas.",
+    "feedbackWrong": {
+      "b": "Amaldiçoar é o que se faz aos homens; ao Senhor é o outro verbo.",
+      "c": "Os homens foram feitos à semelhança de Deus; não é o verbo pedido."
+    },
+    "hint": "Procure o verbo ligado ao Senhor e Pai.",
+    "learningObjective": "Identificar o uso da língua para bendizer a Deus.",
+    "evidence": [
+      "Tiago 3:9"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-02-03",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 3:5, a que a língua é comparada no seu efeito?",
+    "prompt": "Segundo Tiago 3:5, a que a língua é comparada no seu efeito?",
+    "cue": "Segundo Tiago 3:5, a que a língua é comparada no seu efeito?",
+    "verseRef": "Tiago 3:5",
+    "passageText": "Assim também a língua é um pequeno membro, mas se vangloria de coisas grandiosas. Vede como uma fagulha pode incitar um imenso incêndio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A uma fagulha que incendeia muito"
+      },
+      {
+        "id": "b",
+        "text": "A um leme pequeno e seguro"
+      },
+      {
+        "id": "c",
+        "text": "A uma árvore frutífera"
+      },
+      {
+        "id": "d",
+        "text": "A uma fonte de água doce"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "uma fagulha pode incitar um imenso incêndio",
+    "feedbackCorrect": "Pequena como ela, uma faísca verbal pode incendiar uma vida inteira.",
+    "feedbackWrong": {
+      "b": "O texto não usa essa imagem aqui; usa fogo que se espalha.",
+      "c": "A árvore frutífera não é a comparação deste versículo.",
+      "d": "A fonte aparece só em 3:11, para falar de água doce e amarga."
+    },
+    "hint": "Veja a segunda metade do versículo.",
+    "learningObjective": "Observar a comparação que mostra o efeito da língua.",
+    "evidence": [
+      "Tiago 3:5"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-02-04",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 3:9 na ordem do texto.",
+    "prompt": "Monte Tiago 3:9 na ordem do texto.",
+    "cue": "Monte Tiago 3:9 na ordem do texto.",
+    "verseRef": "Tiago 3:9",
+    "passageText": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com ela, bendizemos ao Senhor e Pai"
+      },
+      {
+        "id": "b",
+        "text": "e com ela, amaldiçoamos os homens"
+      },
+      {
+        "id": "c",
+        "text": "que foram feitos à semelhança de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+    "feedbackCorrect": "Primeiro o louvor a Deus; depois, a ofensa a quem ele fez à sua semelhança.",
+    "feedbackWrong": {
+      "default": "Comece pelo louvor a Deus; a ofensa às pessoas vem em seguida."
+    },
+    "hint": "O versículo começa com o louvor a Deus.",
+    "learningObjective": "Reconhecer a sequência de Tiago 3:9.",
+    "evidence": [
+      "Tiago 3:9"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-02-05",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 3:5, o que pode incitar um imenso incêndio?",
+    "prompt": "Em Tiago 3:5, o que pode incitar um imenso incêndio?",
+    "cue": "Em Tiago 3:5, o que pode incitar um imenso incêndio?",
+    "verseRef": "Tiago 3:5",
+    "passageText": "Assim também a língua é um pequeno membro, mas se vangloria de coisas grandiosas. Vede como uma fagulha pode incitar um imenso incêndio.",
+    "template": "Assim também a língua é um pequeno membro, mas se vangloria de coisas grandiosas. Vede como uma ___ pode incitar um imenso incêndio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fagulha"
+      },
+      {
+        "id": "b",
+        "text": "vento"
+      },
+      {
+        "id": "c",
+        "text": "rio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "uma fagulha pode incitar um imenso incêndio",
+    "feedbackCorrect": "Algo bem pequeno pode espalhar um dano enorme, como as palavras.",
+    "feedbackWrong": {
+      "b": "O vento pode espalhar fogo, mas não é a palavra do versículo.",
+      "c": "O rio apaga fogo; Tiago fala do que o começa."
+    },
+    "hint": "Pense em algo bem pequeno que começa o fogo.",
+    "learningObjective": "Lembrar a imagem do fogo que começa pequeno.",
+    "evidence": [
+      "Tiago 3:5"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-02-06",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 3:10 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 3:10 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 3:10 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 3:10",
+    "passageText": "Da mesma boca procedem bênção e maldição. Meus irmãos, não é apropriado que estas coisas sejam assim.",
+    "passageA": {
+      "ref": "Tiago 3:10",
+      "text": "Da mesma boca procedem bênção e maldição. Meus irmãos, não é apropriado que estas coisas sejam assim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Da boca do crente não devem sair louvor a Deus e ofensa às pessoas ao mesmo tempo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma só boca, um só coração"
+      },
+      {
+        "id": "b",
+        "text": "Amaldiçoar também é louvor"
+      },
+      {
+        "id": "c",
+        "text": "Palavras não têm peso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+    "feedbackCorrect": "Tiago reprova essa mistura: a mesma boca deve ter um só rumo.",
+    "feedbackWrong": {
+      "b": "Tiago chama essa mistura de não apropriada, não de louvor.",
+      "c": "Todo o trecho mostra o peso enorme das palavras."
+    },
+    "hint": "Veja os dois usos da mesma boca.",
+    "learningObjective": "Ligar Tiago 3:10 à coerência entre louvor e trato com pessoas.",
+    "evidence": [
+      "Tiago 3:10"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-02-01",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 3:9–10, a mesma boca que bendiz a Deus também amaldiçoa pessoas feitas à semelhança dele.",
+    "prompt": "Em Tiago 3:9–10, a mesma boca que bendiz a Deus também amaldiçoa pessoas feitas à semelhança dele.",
+    "cue": "Em Tiago 3:9–10, a mesma boca que bendiz a Deus também amaldiçoa pessoas feitas à semelhança dele.",
+    "verseRef": "Tiago 3:9–10",
+    "passageText": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus. Da mesma boca procedem bênção e maldição. Meus irmãos, não é apropriado que estas coisas sejam assim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+    "feedbackCorrect": "É essa mistura que Tiago apresenta e, logo depois, reprova com clareza.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos e veja os dois usos da mesma boca."
+    },
+    "hint": "Junte o que os dois versículos dizem da boca.",
+    "learningObjective": "Compreender a mistura de bênção e maldição na mesma boca.",
+    "evidence": [
+      "Tiago 3:9–10"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-02-02",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 3:8, toque a palavra inicial que contrasta domar animais e domar a língua.",
+    "prompt": "Em Tiago 3:8, toque a palavra inicial que contrasta domar animais e domar a língua.",
+    "cue": "Em Tiago 3:8, toque a palavra inicial que contrasta domar animais e domar a língua.",
+    "verseRef": "Tiago 3:8",
+    "passageText": "Mas ninguém consegue domar a língua; é um mal indomável, repleta de veneno mortal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mortal"
+      },
+      {
+        "id": "b",
+        "text": "língua"
+      },
+      {
+        "id": "c",
+        "text": "Mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas ninguém consegue domar a língua",
+    "feedbackCorrect": "Depois de animais domados, essa palavra vira para a língua indomável.",
+    "feedbackWrong": {
+      "a": "Mortal descreve o veneno; o contraste está na primeira palavra.",
+      "b": "A língua é o assunto do versículo, não a palavra de contraste."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o contraste entre domar animais e a língua.",
+    "evidence": [
+      "Tiago 3:8"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-02-03",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tiago 3:11 ajuda a entender Tiago 3:10?",
+    "prompt": "Como Tiago 3:11 ajuda a entender Tiago 3:10?",
+    "cue": "Como Tiago 3:11 ajuda a entender Tiago 3:10?",
+    "verseRef": "Tiago 3:10–11",
+    "passageText": "Da mesma boca procedem bênção e maldição. Meus irmãos, não é apropriado que estas coisas sejam assim. Por acaso uma fonte pode jorrar do mesmo manancial água doce e água amarga?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Água amarga e doce são sempre iguais"
+      },
+      {
+        "id": "b",
+        "text": "Uma fonte não mistura água boa e ruim sem revelar problema"
+      },
+      {
+        "id": "c",
+        "text": "A fonte prova que palavras nunca revelam o coração"
+      },
+      {
+        "id": "d",
+        "text": "A boca pode amaldiçoar sem problema algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pode jorrar do mesmo manancial água doce e água amarga",
+    "feedbackCorrect": "Como a fonte, a boca revela uma mistura que não deveria existir.",
+    "feedbackWrong": {
+      "a": "Doce e amarga são opostas; a fonte não jorra as duas juntas.",
+      "c": "A comparação mostra justamente que o que sai revela a fonte.",
+      "d": "Tiago diz que essa mistura não é apropriada para o crente."
+    },
+    "hint": "Pense no que a fonte revela sobre si mesma.",
+    "learningObjective": "Relacionar a imagem da fonte ao problema da boca dividida.",
+    "evidence": [
+      "Tiago 3:10–11"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-02-04",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como Tiago encadeia os exemplos em Tiago 3:11–12?",
+    "prompt": "Como Tiago encadeia os exemplos em Tiago 3:11–12?",
+    "cue": "Como Tiago encadeia os exemplos em Tiago 3:11–12?",
+    "verseRef": "Tiago 3:11–12",
+    "passageText": "Por acaso uma fonte pode jorrar do mesmo manancial água doce e água amarga? Meus irmãos, pode a figueira dar azeitonas ou a videira dar figos? De igual modo, uma fonte de água salgada não pode produzir água doce.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma fonte não jorra água doce e amarga juntas"
+      },
+      {
+        "id": "b",
+        "text": "A figueira não produz azeitonas"
+      },
+      {
+        "id": "c",
+        "text": "A videira não produz figos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "uma fonte de água salgada não pode produzir água doce",
+    "feedbackCorrect": "Fonte, figueira e videira: cada uma produz conforme a sua natureza.",
+    "feedbackWrong": {
+      "default": "Comece pela fonte; as plantas vêm no versículo seguinte."
+    },
+    "hint": "A fonte abre a sequência de exemplos.",
+    "learningObjective": "Compreender a sequência de exemplos da natureza em Tiago 3.",
+    "evidence": [
+      "Tiago 3:11–12"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-02-05",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 3:11, que tipo de água Tiago contrasta com a água doce da fonte?",
+    "prompt": "Em Tiago 3:11, que tipo de água Tiago contrasta com a água doce da fonte?",
+    "cue": "Em Tiago 3:11, que tipo de água Tiago contrasta com a água doce da fonte?",
+    "verseRef": "Tiago 3:11",
+    "passageText": "Por acaso uma fonte pode jorrar do mesmo manancial água doce e água amarga?",
+    "template": "Por acaso uma fonte pode jorrar do mesmo manancial água doce e água ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "salgada"
+      },
+      {
+        "id": "b",
+        "text": "suja"
+      },
+      {
+        "id": "c",
+        "text": "amarga"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "água doce e água amarga",
+    "feedbackCorrect": "Doce e amarga não saem juntas da mesma fonte, diz Tiago.",
+    "feedbackWrong": {
+      "a": "A água salgada aparece no versículo seguinte, não neste contraste.",
+      "b": "O contraste do versículo é de sabor, não de sujeira."
+    },
+    "hint": "Releia a pergunta sobre a fonte.",
+    "learningObjective": "Compreender o contraste da fonte em Tiago 3:11.",
+    "evidence": [
+      "Tiago 3:11"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-02-06",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 3:9 a Provérbios 18:21?",
+    "prompt": "O que liga Tiago 3:9 a Provérbios 18:21?",
+    "cue": "O que liga Tiago 3:9 a Provérbios 18:21?",
+    "verseRef": "Tiago 3:9",
+    "passageText": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus.",
+    "passageA": {
+      "ref": "Tiago 3:9",
+      "text": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus."
+    },
+    "passageB": {
+      "ref": "Provérbios 18:21",
+      "text": "A morte e a vida estão no poder da língua; e quem a ama comerá de seu fruto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A língua carrega vida e morte"
+      },
+      {
+        "id": "b",
+        "text": "Palavras nunca trazem dano"
+      },
+      {
+        "id": "c",
+        "text": "Falar muito é sempre sabedoria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+    "feedbackCorrect": "Nos dois textos, o que a boca produz tem peso de vida ou de morte.",
+    "feedbackWrong": {
+      "b": "Provérbios e Tiago mostram dano real vindo das palavras.",
+      "c": "Falar muito não é o tema; o tema é o poder do que se fala."
+    },
+    "hint": "Veja o poder que Provérbios atribui às palavras.",
+    "learningObjective": "Relacionar o poder da língua em Tiago e em Provérbios.",
+    "evidence": [
+      "Tiago 3:9",
+      "Provérbios 18:21"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-02-01",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 3:13, a sabedoria verdadeira se mostra principalmente em vencer discussões.",
+    "prompt": "Em Tiago 3:13, a sabedoria verdadeira se mostra principalmente em vencer discussões.",
+    "cue": "Em Tiago 3:13, a sabedoria verdadeira se mostra principalmente em vencer discussões.",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "O sábio, para Tiago, se mostra em boas ações feitas com mansidão.",
+    "feedbackWrong": {
+      "true": "Releia Tiago 3:13 e veja como o sábio deve se mostrar."
+    },
+    "hint": "Olhe como o sábio deve se mostrar.",
+    "learningObjective": "Interpretar a marca da sabedoria verdadeira em Tiago 3:13.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-02-02",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 3:10, toque a palavra que Tiago diz não dever sair da boca junto com a bênção.",
+    "prompt": "Em Tiago 3:10, toque a palavra que Tiago diz não dever sair da boca junto com a bênção.",
+    "cue": "Em Tiago 3:10, toque a palavra que Tiago diz não dever sair da boca junto com a bênção.",
+    "verseRef": "Tiago 3:10",
+    "passageText": "Da mesma boca procedem bênção e maldição. Meus irmãos, não é apropriado que estas coisas sejam assim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "boca"
+      },
+      {
+        "id": "b",
+        "text": "bênção"
+      },
+      {
+        "id": "c",
+        "text": "maldição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+    "feedbackCorrect": "É essa segunda saída da boca que Tiago chama de não apropriada.",
+    "feedbackWrong": {
+      "a": "A boca é o canal; o problema é um dos conteúdos que saem dela.",
+      "b": "A bênção a Deus é boa; o problema é o que sai junto dela."
+    },
+    "hint": "Procure o oposto do louvor a Deus.",
+    "learningObjective": "Sustentar com o texto a reprovação da boca dividida.",
+    "evidence": [
+      "Tiago 3:10"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-02-03",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 3:12–13 sustenta sobre quem é sábio?",
+    "prompt": "Que leitura Tiago 3:12–13 sustenta sobre quem é sábio?",
+    "cue": "Que leitura Tiago 3:12–13 sustenta sobre quem é sábio?",
+    "verseRef": "Tiago 3:12–13",
+    "passageText": "Meus irmãos, pode a figueira dar azeitonas ou a videira dar figos? De igual modo, uma fonte de água salgada não pode produzir água doce. Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabedoria é só conhecer muitos assuntos"
+      },
+      {
+        "id": "b",
+        "text": "Prova sabedoria falando mais alto que todos"
+      },
+      {
+        "id": "c",
+        "text": "Mostra sabedoria em ações boas e mansas"
+      },
+      {
+        "id": "d",
+        "text": "É sábio quem nunca precisa agir"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "Como a planta dá o seu fruto, o sábio se conhece pelas ações mansas.",
+    "feedbackWrong": {
+      "a": "Conhecer sem agir não é a sabedoria que o texto descreve.",
+      "b": "Falar mais alto é o oposto da mansidão citada por Tiago.",
+      "d": "Tiago pede justamente que o sábio se mostre agindo."
+    },
+    "hint": "Veja o fruto que acompanha o sábio.",
+    "learningObjective": "Escolher a interpretação de sabedoria que o texto sustenta.",
+    "evidence": [
+      "Tiago 3:12–13"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-02-04",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho das palavras a partir de Tiago 3:8?",
+    "prompt": "Qual sequência revela o caminho das palavras a partir de Tiago 3:8?",
+    "cue": "Qual sequência revela o caminho das palavras a partir de Tiago 3:8?",
+    "verseRef": "Tiago 3:8",
+    "passageText": "Mas ninguém consegue domar a língua; é um mal indomável, repleta de veneno mortal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A língua sem domínio espalha dano"
+      },
+      {
+        "id": "b",
+        "text": "O sábio pede a Deus guarda na boca"
+      },
+      {
+        "id": "c",
+        "text": "Suas palavras passam a edificar quem ouve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "é um mal indomável, repleta de veneno mortal",
+    "feedbackCorrect": "Do dano sem domínio à guarda pedida a Deus, até palavras que edificam.",
+    "feedbackWrong": {
+      "default": "Comece pelo problema da língua; a edificação é o ponto de chegada."
+    },
+    "hint": "Comece pelo problema descrito por Tiago.",
+    "learningObjective": "Ver o caminho da língua indomável até palavras que edificam.",
+    "evidence": [
+      "Tiago 3:8",
+      "Salmos 141:3",
+      "Efésios 4:29"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-02-05",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 3:13, o que as boas ações devem mostrar como fruto da sabedoria?",
+    "prompt": "Em Tiago 3:13, o que as boas ações devem mostrar como fruto da sabedoria?",
+    "cue": "Em Tiago 3:13, o que as boas ações devem mostrar como fruto da sabedoria?",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "template": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a ___ que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pressa"
+      },
+      {
+        "id": "b",
+        "text": "orgulho"
+      },
+      {
+        "id": "c",
+        "text": "mansidão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "É esse fruto calmo que distingue a sabedoria que vem de Deus.",
+    "feedbackWrong": {
+      "a": "A pressa não aparece; o fruto citado é um jeito de agir.",
+      "b": "Orgulho combina com discussão, não com o fruto citado."
+    },
+    "hint": "Procure o fruto ligado à sabedoria.",
+    "learningObjective": "Lembrar o fruto que marca a sabedoria verdadeira.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-02-06",
+    "trail": "tiago",
+    "section": "tg-02",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 3:13 a Efésios 4:29?",
+    "prompt": "O que liga Tiago 3:13 a Efésios 4:29?",
+    "cue": "O que liga Tiago 3:13 a Efésios 4:29?",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "passageA": {
+      "ref": "Tiago 3:13",
+      "text": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria."
+    },
+    "passageB": {
+      "ref": "Efésios 4:29",
+      "text": "Não saia da sua boca nenhuma palavra torpe, mas apenas a que seja útil para edificação, conforme a necessidade, e que transmita graça aos que ouvem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabedoria que só discute"
+      },
+      {
+        "id": "b",
+        "text": "Palavra e ação que edificam"
+      },
+      {
+        "id": "c",
+        "text": "Falar sem pensar nos outros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mostre por meio de suas boas ações",
+    "feedbackCorrect": "Nos dois textos, quem é de Deus se conhece por edificar os outros.",
+    "feedbackWrong": {
+      "a": "A sabedoria de Tiago se mostra agindo, não só discutindo.",
+      "c": "Efésios pede palavra útil a quem ouve, não fala descuidada."
+    },
+    "hint": "Veja o efeito das palavras em Efésios.",
+    "learningObjective": "Ligar sabedoria prática e palavras que edificam.",
+    "evidence": [
+      "Tiago 3:13",
+      "Efésios 4:29"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-03-01",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 5:13, quem está sofrendo deve fazer oração e quem está alegre deve cantar hinos de louvor.",
+    "prompt": "Em Tiago 5:13, quem está sofrendo deve fazer oração e quem está alegre deve cantar hinos de louvor.",
+    "cue": "Em Tiago 5:13, quem está sofrendo deve fazer oração e quem está alegre deve cantar hinos de louvor.",
+    "verseRef": "Tiago 5:13",
+    "passageText": "Está alguém entre vocês sofrendo? Que faça oração. Está alguém alegre? Que cante hinos de louvor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Está alguém entre vocês sofrendo? Que faça oração",
+    "feedbackCorrect": "Sofrimento e alegria têm resposta em Deus: oração e louvor, diz Tiago.",
+    "feedbackWrong": {
+      "false": "Releia as duas metades de Tiago 5:13 e veja cada resposta."
+    },
+    "hint": "Veja as duas situações do versículo.",
+    "learningObjective": "Observar a resposta ao sofrimento e à alegria em Tiago 5:13.",
+    "evidence": [
+      "Tiago 5:13"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-03-02",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 5:13, toque a resposta de quem está sofrendo entre vocês.",
+    "prompt": "Em Tiago 5:13, toque a resposta de quem está sofrendo entre vocês.",
+    "cue": "Em Tiago 5:13, toque a resposta de quem está sofrendo entre vocês.",
+    "verseRef": "Tiago 5:13",
+    "passageText": "Está alguém entre vocês sofrendo? Que faça oração. Está alguém alegre? Que cante hinos de louvor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "louvor"
+      },
+      {
+        "id": "b",
+        "text": "oração"
+      },
+      {
+        "id": "c",
+        "text": "alegre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Que faça oração",
+    "feedbackCorrect": "Para o sofrimento, a primeira resposta ensinada é buscar a Deus.",
+    "feedbackWrong": {
+      "a": "O louvor cantado é a resposta de quem está alegre.",
+      "c": "Alegre descreve a segunda situação, não a de quem sofre."
+    },
+    "hint": "Procure a resposta para quem sofre.",
+    "learningObjective": "Identificar a resposta ao sofrimento em Tiago 5:13.",
+    "evidence": [
+      "Tiago 5:13"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-03-03",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 5:14, o que o enfermo deve fazer?",
+    "prompt": "Segundo Tiago 5:14, o que o enfermo deve fazer?",
+    "cue": "Segundo Tiago 5:14, o que o enfermo deve fazer?",
+    "verseRef": "Tiago 5:14",
+    "passageText": "Está alguém entre vocês enfermo? Chame os presbíteros da igreja, e que eles orem por ele, ungindo-o com óleo em nome do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isolar-se até melhorar sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Chamar os presbíteros da igreja"
+      },
+      {
+        "id": "c",
+        "text": "Esperar sem falar com ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Pedir oração só aos familiares"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Chame os presbíteros da igreja, e que eles orem por ele",
+    "feedbackCorrect": "O cuidado começa chamando quem lidera a igreja para orar por ele.",
+    "feedbackWrong": {
+      "a": "O texto chama a comunidade para perto, não ao isolamento.",
+      "c": "Esperar calado é o oposto de chamar quem pode orar por ele.",
+      "d": "Tiago nomeia os presbíteros da igreja, não só familiares."
+    },
+    "hint": "Veja quem o enfermo deve chamar.",
+    "learningObjective": "Observar o cuidado comunitário com o enfermo.",
+    "evidence": [
+      "Tiago 5:14"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-03-04",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 5:14 na ordem do texto.",
+    "prompt": "Monte Tiago 5:14 na ordem do texto.",
+    "cue": "Monte Tiago 5:14 na ordem do texto.",
+    "verseRef": "Tiago 5:14",
+    "passageText": "Está alguém entre vocês enfermo? Chame os presbíteros da igreja, e que eles orem por ele, ungindo-o com óleo em nome do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chame os presbíteros da igreja"
+      },
+      {
+        "id": "b",
+        "text": "e que eles orem por ele"
+      },
+      {
+        "id": "c",
+        "text": "ungindo-o com óleo em nome do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Chame os presbíteros da igreja",
+    "feedbackCorrect": "Chamar, orar pelo enfermo e ungi-lo em nome do Senhor: é a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Comece por chamar os presbíteros; a oração por ele vem depois."
+    },
+    "hint": "O versículo começa com um chamado.",
+    "learningObjective": "Reconhecer a sequência de Tiago 5:14.",
+    "evidence": [
+      "Tiago 5:14"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-03-05",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 5:14, quem o enfermo deve chamar da igreja?",
+    "prompt": "Em Tiago 5:14, quem o enfermo deve chamar da igreja?",
+    "cue": "Em Tiago 5:14, quem o enfermo deve chamar da igreja?",
+    "verseRef": "Tiago 5:14",
+    "passageText": "Está alguém entre vocês enfermo? Chame os presbíteros da igreja, e que eles orem por ele, ungindo-o com óleo em nome do Senhor.",
+    "template": "Está alguém entre vocês enfermo? Chame os ___ da igreja, e que eles orem por ele, ungindo-o com óleo em nome do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vizinhos"
+      },
+      {
+        "id": "b",
+        "text": "presbíteros"
+      },
+      {
+        "id": "c",
+        "text": "parentes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Chame os presbíteros da igreja",
+    "feedbackCorrect": "São os responsáveis da igreja, chamados a orar pelo enfermo.",
+    "feedbackWrong": {
+      "a": "Vizinhos podem ajudar, mas não são os nomeados no versículo.",
+      "c": "Parentes são próximos, mas o texto nomeia líderes da igreja."
+    },
+    "hint": "Procure os líderes da igreja citados.",
+    "learningObjective": "Lembrar quem deve ser chamado pelo enfermo.",
+    "evidence": [
+      "Tiago 5:14"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-03-06",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "passageA": {
+      "ref": "Tiago 5:16",
+      "text": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A comunidade cristã confessa falhas e ora uns pelos outros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidar uns dos outros orando"
+      },
+      {
+        "id": "b",
+        "text": "Esconder sempre as falhas"
+      },
+      {
+        "id": "c",
+        "text": "Orar só por si mesmo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "orem uns pelos outros, para que sejam curados",
+    "feedbackCorrect": "Confessar e interceder é o cuidado mútuo que Tiago ensina aqui.",
+    "feedbackWrong": {
+      "b": "O texto manda confessar uns aos outros, não esconder tudo.",
+      "c": "A oração ensinada é uns pelos outros, não só por si."
+    },
+    "hint": "Veja o que os crentes fazem entre si.",
+    "learningObjective": "Ligar Tiago 5:16 ao cuidado mútuo da comunidade.",
+    "evidence": [
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-03-01",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 5:16, confessar as transgressões e orar uns pelos outros é prática individual e solitária.",
+    "prompt": "Em Tiago 5:16, confessar as transgressões e orar uns pelos outros é prática individual e solitária.",
+    "cue": "Em Tiago 5:16, confessar as transgressões e orar uns pelos outros é prática individual e solitária.",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Confessem as suas transgressões uns aos outros e orem uns pelos outros",
+    "feedbackCorrect": "A prática é mútua do começo ao fim: uns aos outros, uns pelos outros.",
+    "feedbackWrong": {
+      "true": "Releia as expressões repetidas sobre uns e outros no versículo."
+    },
+    "hint": "Repare nas expressões que se repetem.",
+    "learningObjective": "Compreender o caráter mútuo da confissão e da oração.",
+    "evidence": [
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-03-02",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 5:16, toque o trecho que mostra a confissão e a oração mútuas.",
+    "prompt": "Em Tiago 5:16, toque o trecho que mostra a confissão e a oração mútuas.",
+    "cue": "Em Tiago 5:16, toque o trecho que mostra a confissão e a oração mútuas.",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "transgressões"
+      },
+      {
+        "id": "b",
+        "text": "curados"
+      },
+      {
+        "id": "c",
+        "text": "uns aos outros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "orem uns pelos outros",
+    "feedbackCorrect": "Essa expressão aparece duas vezes: confessar e orar são mútuos.",
+    "feedbackWrong": {
+      "a": "As transgressões são o que se confessa; a mutualidade vem na expressão ao lado.",
+      "b": "Curados é o propósito; a mutualidade está na expressão repetida."
+    },
+    "hint": "Procure a expressão que se repete.",
+    "learningObjective": "Reconhecer o marcador de mutualidade em Tiago 5:16.",
+    "evidence": [
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-03-03",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tiago 5:17 se relaciona com Tiago 5:16?",
+    "prompt": "Como Tiago 5:17 se relaciona com Tiago 5:16?",
+    "cue": "Como Tiago 5:17 se relaciona com Tiago 5:16?",
+    "verseRef": "Tiago 5:16–17",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia. Elias era um homem com as mesmas emoções que nós, e, orando com instância, pediu que não chovesse sobre a terra; e por três anos e seis meses, não choveu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias exemplifica a oração eficaz citada antes"
+      },
+      {
+        "id": "b",
+        "text": "Elias prova que só profetas são ouvidos"
+      },
+      {
+        "id": "c",
+        "text": "A história muda o assunto para o clima"
+      },
+      {
+        "id": "d",
+        "text": "O exemplo cancela o convite a orar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Elias era um homem com as mesmas emoções que nós",
+    "feedbackCorrect": "Depois de falar da súplica poderosa, Tiago mostra Elias como exemplo dela.",
+    "feedbackWrong": {
+      "b": "Elias é apresentado como homem como nós, não como exceção inalcançável.",
+      "c": "A chuva ilustra a oração; o assunto continua sendo orar.",
+      "d": "O exemplo reforça o convite; não o cancela de modo algum."
+    },
+    "hint": "Veja quem aparece logo depois da súplica poderosa.",
+    "learningObjective": "Relacionar a súplica do justo ao exemplo de Elias.",
+    "evidence": [
+      "Tiago 5:16–17"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-03-04",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos em Tiago 5:17–18?",
+    "prompt": "Como se encadeiam os eventos em Tiago 5:17–18?",
+    "cue": "Como se encadeiam os eventos em Tiago 5:17–18?",
+    "verseRef": "Tiago 5:17–18",
+    "passageText": "Elias era um homem com as mesmas emoções que nós, e, orando com instância, pediu que não chovesse sobre a terra; e por três anos e seis meses, não choveu. E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias ora pedindo que não chova"
+      },
+      {
+        "id": "b",
+        "text": "A terra fica sem chuva por anos"
+      },
+      {
+        "id": "c",
+        "text": "Elias ora de novo e chove"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pediu que não chovesse sobre a terra",
+    "feedbackCorrect": "Pedido, anos sem chuva e nova oração com chuva: é o encadeamento do texto.",
+    "feedbackWrong": {
+      "default": "Comece pelo primeiro pedido de Elias; a chuva volta só no fim."
+    },
+    "hint": "A chuva volta apenas no último passo.",
+    "learningObjective": "Compreender o encadeamento da oração de Elias.",
+    "evidence": [
+      "Tiago 5:17–18"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-03-05",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 5:18, o que o céu deu depois que Elias orou de novo?",
+    "prompt": "Em Tiago 5:18, o que o céu deu depois que Elias orou de novo?",
+    "cue": "Em Tiago 5:18, o que o céu deu depois que Elias orou de novo?",
+    "verseRef": "Tiago 5:18",
+    "passageText": "E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos.",
+    "template": "E orou de novo, e o céu deu ___, e a terra fez brotar seus frutos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "neve"
+      },
+      {
+        "id": "b",
+        "text": "vento"
+      },
+      {
+        "id": "c",
+        "text": "chuva"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o céu deu chuva",
+    "feedbackCorrect": "A segunda oração marca o fim da seca sobre a terra.",
+    "feedbackWrong": {
+      "a": "O texto fala do que faz a terra brotar frutos, não de neve.",
+      "b": "Vento não é o que encerra a seca neste versículo."
+    },
+    "hint": "Veja o que encerra o período de seca.",
+    "learningObjective": "Compreender o resultado da segunda oração de Elias.",
+    "evidence": [
+      "Tiago 5:18"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-03-06",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 5:18 a 1 Reis 18:45?",
+    "prompt": "O que liga Tiago 5:18 a 1 Reis 18:45?",
+    "cue": "O que liga Tiago 5:18 a 1 Reis 18:45?",
+    "verseRef": "Tiago 5:18",
+    "passageText": "E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos.",
+    "passageA": {
+      "ref": "Tiago 5:18",
+      "text": "E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos."
+    },
+    "passageB": {
+      "ref": "1 Reis 18:45",
+      "text": "E aconteceu que, dentro em pouco, os céus se enegreceram com nuvens e vento, e surgiu uma grande chuva. Acabe subiu ao carro e foi para Jezreel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias controla o céu sozinho"
+      },
+      {
+        "id": "b",
+        "text": "A chuva vem sem oração"
+      },
+      {
+        "id": "c",
+        "text": "Deus envia a chuva"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o céu deu chuva",
+    "feedbackCorrect": "Tiago resume a história de Reis: após a oração, Deus manda a chuva.",
+    "feedbackWrong": {
+      "a": "Quem envia a chuva é Deus; Elias é quem ora a ele.",
+      "b": "Nos dois textos, a chuva vem depois da oração de Elias."
+    },
+    "hint": "Compare o fim da seca nos dois textos.",
+    "learningObjective": "Relacionar o resumo de Tiago à história de Elias em Reis.",
+    "evidence": [
+      "Tiago 5:18",
+      "1 Reis 18:45"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-03-01",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 5:17, Elias é apresentado como homem com as mesmas emoções que nós, e não como alguém sobre-humano.",
+    "prompt": "Em Tiago 5:17, Elias é apresentado como homem com as mesmas emoções que nós, e não como alguém sobre-humano.",
+    "cue": "Em Tiago 5:17, Elias é apresentado como homem com as mesmas emoções que nós, e não como alguém sobre-humano.",
+    "verseRef": "Tiago 5:17",
+    "passageText": "Elias era um homem com as mesmas emoções que nós, e, orando com instância, pediu que não chovesse sobre a terra; e por três anos e seis meses, não choveu.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Elias era um homem com as mesmas emoções que nós",
+    "feedbackCorrect": "Tiago aproxima Elias de nós para encorajar gente comum a orar.",
+    "feedbackWrong": {
+      "false": "Releia como Tiago descreve Elias logo no começo do versículo."
+    },
+    "hint": "Veja como Elias é descrito no versículo.",
+    "learningObjective": "Interpretar Elias como exemplo acessível de oração.",
+    "evidence": [
+      "Tiago 5:17"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-03-02",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 5:17, toque o trecho que mostra Elias como alguém parecido conosco.",
+    "prompt": "Em Tiago 5:17, toque o trecho que mostra Elias como alguém parecido conosco.",
+    "cue": "Em Tiago 5:17, toque o trecho que mostra Elias como alguém parecido conosco.",
+    "verseRef": "Tiago 5:17",
+    "passageText": "Elias era um homem com as mesmas emoções que nós, e, orando com instância, pediu que não chovesse sobre a terra; e por três anos e seis meses, não choveu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mesmas emoções"
+      },
+      {
+        "id": "b",
+        "text": "três anos"
+      },
+      {
+        "id": "c",
+        "text": "Elias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "homem com as mesmas emoções que nós",
+    "feedbackCorrect": "É essa semelhança que torna Elias um exemplo ao nosso alcance.",
+    "feedbackWrong": {
+      "b": "Os três anos medem a seca, não a semelhança de Elias conosco.",
+      "c": "Elias é a pessoa citada; a semelhança conosco vem na descrição dele."
+    },
+    "hint": "Procure como Elias é descrito.",
+    "learningObjective": "Sustentar com o texto que Elias era como nós.",
+    "evidence": [
+      "Tiago 5:17"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-03-03",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 5:14–15 sustenta sobre a oração pelo enfermo?",
+    "prompt": "Que leitura Tiago 5:14–15 sustenta sobre a oração pelo enfermo?",
+    "cue": "Que leitura Tiago 5:14–15 sustenta sobre a oração pelo enfermo?",
+    "verseRef": "Tiago 5:14–15",
+    "passageText": "Está alguém entre vocês enfermo? Chame os presbíteros da igreja, e que eles orem por ele, ungindo-o com óleo em nome do Senhor. E a oração da fé salvará o enfermo, e o Senhor o levantará; e, se houver cometido pecados, serão perdoados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o enfermo deve orar, sem a igreja"
+      },
+      {
+        "id": "b",
+        "text": "A comunidade ora com fé, e Deus age"
+      },
+      {
+        "id": "c",
+        "text": "A oração garante cura em todo caso"
+      },
+      {
+        "id": "d",
+        "text": "Orar dispensa qualquer cuidado com o enfermo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a oração da fé salvará o enfermo, e o Senhor o levantará",
+    "feedbackCorrect": "Tiago chama a igreja a orar com fé e aponta para o Senhor que levanta.",
+    "feedbackWrong": {
+      "a": "Os presbíteros são chamados justamente para orar por ele.",
+      "c": "O texto não vira promessa automática; quem levanta é o Senhor.",
+      "d": "Chamar, orar e ungir são cuidados concretos com o enfermo."
+    },
+    "hint": "Veja quem age e quem é chamado a orar.",
+    "learningObjective": "Interpretar a oração pelo enfermo sem promessa automática.",
+    "evidence": [
+      "Tiago 5:14–15"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-03-04",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o ensino de Tiago 5:13–14?",
+    "prompt": "Qual sequência revela o ensino de Tiago 5:13–14?",
+    "cue": "Qual sequência revela o ensino de Tiago 5:13–14?",
+    "verseRef": "Tiago 5:13–14",
+    "passageText": "Está alguém entre vocês sofrendo? Que faça oração. Está alguém alegre? Que cante hinos de louvor. Está alguém entre vocês enfermo? Chame os presbíteros da igreja, e que eles orem por ele, ungindo-o com óleo em nome do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No sofrimento, o crente faz oração"
+      },
+      {
+        "id": "b",
+        "text": "Na alegria, ele canta louvor a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Na doença, a igreja ora por ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Está alguém alegre? Que cante hinos de louvor",
+    "feedbackCorrect": "Sofrimento, alegria e doença: cada situação vira busca de Deus.",
+    "feedbackWrong": {
+      "default": "Siga a ordem do texto: sofrimento, alegria e, depois, doença."
+    },
+    "hint": "Siga a ordem das situações no texto.",
+    "learningObjective": "Ver que toda situação vira oração ou louvor em Tiago 5.",
+    "evidence": [
+      "Tiago 5:13–14"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-03-05",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 5:16, como Tiago descreve a súplica do justo em sua eficácia?",
+    "prompt": "Em Tiago 5:16, como Tiago descreve a súplica do justo em sua eficácia?",
+    "cue": "Em Tiago 5:16, como Tiago descreve a súplica do justo em sua eficácia?",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "template": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito ___ em sua eficácia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "silenciosa"
+      },
+      {
+        "id": "b",
+        "text": "poderosa"
+      },
+      {
+        "id": "c",
+        "text": "demorada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A súplica do justo é muito poderosa em sua eficácia",
+    "feedbackCorrect": "É assim que Tiago anima a comunidade a orar uns pelos outros.",
+    "feedbackWrong": {
+      "a": "Silêncio não é a marca citada; a súplica é feita a Deus.",
+      "c": "O texto não mede demora; descreve a força dessa súplica."
+    },
+    "hint": "Procure o adjetivo ligado à súplica.",
+    "learningObjective": "Lembrar como Tiago descreve a súplica do justo.",
+    "evidence": [
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-03-06",
+    "trail": "tiago",
+    "section": "tg-03",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 5:16 a Mateus 21:22?",
+    "prompt": "O que liga Tiago 5:16 a Mateus 21:22?",
+    "cue": "O que liga Tiago 5:16 a Mateus 21:22?",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "passageA": {
+      "ref": "Tiago 5:16",
+      "text": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia."
+    },
+    "passageB": {
+      "ref": "Mateus 21:22",
+      "text": "E tudo o que pedirdes em oração, crendo, recebereis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar crendo no Deus que ouve"
+      },
+      {
+        "id": "b",
+        "text": "Oração como fórmula mágica"
+      },
+      {
+        "id": "c",
+        "text": "Pedir sem crer em nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A súplica do justo é muito poderosa em sua eficácia",
+    "feedbackCorrect": "Jesus e Tiago unem oração e confiança em Deus, sem fórmula mágica.",
+    "feedbackWrong": {
+      "b": "Confiar em Deus é o oposto de usar palavras como fórmula.",
+      "c": "Nos dois textos, quem pede crê no Deus a quem pede."
+    },
+    "hint": "Veja a atitude de quem pede nos dois textos.",
+    "learningObjective": "Ligar súplica eficaz e oração com fé em Deus.",
+    "evidence": [
+      "Tiago 5:16",
+      "Mateus 21:22"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-01",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 3:8, a língua é apresentada como fácil de domar por qualquer pessoa.",
+    "prompt": "Em Tiago 3:8, a língua é apresentada como fácil de domar por qualquer pessoa.",
+    "cue": "Em Tiago 3:8, a língua é apresentada como fácil de domar por qualquer pessoa.",
+    "verseRef": "Tiago 3:8",
+    "passageText": "Mas ninguém consegue domar a língua; é um mal indomável, repleta de veneno mortal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ninguém consegue domar a língua",
+    "feedbackCorrect": "Tiago afirma o contrário: ninguém consegue domar esse mal.",
+    "feedbackWrong": {
+      "true": "Releia o começo de Tiago 3:8 e veja quem consegue esse domínio."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Revisar o que Tiago afirma sobre domar a língua.",
+    "evidence": [
+      "Tiago 3:8"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-02",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 2:19, toque quem crê que há um só Deus e treme.",
+    "prompt": "Em Tiago 2:19, toque quem crê que há um só Deus e treme.",
+    "cue": "Em Tiago 2:19, toque quem crê que há um só Deus e treme.",
+    "verseRef": "Tiago 2:19",
+    "passageText": "Você crê que há um só Deus? Isso é bom; até mesmo os demônios creem e tremem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "demônios"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "um só Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "até mesmo os demônios creem e tremem",
+    "feedbackCorrect": "Até eles creem e tremem, sem que isso seja fé obediente.",
+    "feedbackWrong": {
+      "b": "Deus é aquele em quem se crê; quem treme é outro sujeito.",
+      "c": "Um só Deus é o conteúdo do crer, não quem treme."
+    },
+    "hint": "Procure o sujeito do verbo tremer.",
+    "learningObjective": "Revisar quem crê e treme em Tiago 2:19.",
+    "evidence": [
+      "Tiago 2:19"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-03",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 5:15, quem levantará o enfermo após a oração da fé?",
+    "prompt": "Segundo Tiago 5:15, quem levantará o enfermo após a oração da fé?",
+    "cue": "Segundo Tiago 5:15, quem levantará o enfermo após a oração da fé?",
+    "verseRef": "Tiago 5:15",
+    "passageText": "E a oração da fé salvará o enfermo, e o Senhor o levantará; e, se houver cometido pecados, serão perdoados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O óleo, por si só"
+      },
+      {
+        "id": "b",
+        "text": "A comunidade, sem Deus"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor"
+      },
+      {
+        "id": "d",
+        "text": "Os presbíteros, por sua própria força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Senhor o levantará",
+    "feedbackCorrect": "A oração é feita com fé, mas quem levanta o enfermo é o Senhor.",
+    "feedbackWrong": {
+      "a": "O óleo acompanha a oração; não age por si só no texto.",
+      "b": "A comunidade ora justamente ao Senhor, que age.",
+      "d": "Os presbíteros oram; a força de levantar não é deles."
+    },
+    "hint": "Veja o sujeito da ação de levantar.",
+    "learningObjective": "Revisar quem levanta o enfermo em Tiago 5:15.",
+    "evidence": [
+      "Tiago 5:15"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-04",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 5:13 na ordem do texto.",
+    "prompt": "Monte Tiago 5:13 na ordem do texto.",
+    "cue": "Monte Tiago 5:13 na ordem do texto.",
+    "verseRef": "Tiago 5:13",
+    "passageText": "Está alguém entre vocês sofrendo? Que faça oração. Está alguém alegre? Que cante hinos de louvor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Está alguém entre vocês sofrendo"
+      },
+      {
+        "id": "b",
+        "text": "Que faça oração"
+      },
+      {
+        "id": "c",
+        "text": "Está alguém alegre? Que cante hinos de louvor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Está alguém entre vocês sofrendo? Que faça oração",
+    "feedbackCorrect": "Sofrimento e oração vêm primeiro; alegria e louvor fecham o versículo.",
+    "feedbackWrong": {
+      "default": "Comece por quem sofre; quem está alegre aparece depois."
+    },
+    "hint": "O versículo começa por quem sofre.",
+    "learningObjective": "Reconhecer a sequência de Tiago 5:13.",
+    "evidence": [
+      "Tiago 5:13"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-05",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 3:8, de que a língua está repleta, segundo Tiago?",
+    "prompt": "Em Tiago 3:8, de que a língua está repleta, segundo Tiago?",
+    "cue": "Em Tiago 3:8, de que a língua está repleta, segundo Tiago?",
+    "verseRef": "Tiago 3:8",
+    "passageText": "Mas ninguém consegue domar a língua; é um mal indomável, repleta de veneno mortal.",
+    "template": "Mas ninguém consegue domar a língua; é um mal indomável, repleta de ___ mortal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "veneno"
+      },
+      {
+        "id": "b",
+        "text": "remédio"
+      },
+      {
+        "id": "c",
+        "text": "perfume"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "repleta de veneno mortal",
+    "feedbackCorrect": "É a imagem do dano mortal que palavras sem domínio espalham.",
+    "feedbackWrong": {
+      "b": "A imagem é de dano, não de cura para quem ouve.",
+      "c": "Perfume agrada; a imagem de Tiago é de perigo mortal."
+    },
+    "hint": "Pense na imagem de perigo do versículo.",
+    "learningObjective": "Lembrar a imagem do dano da língua indomável.",
+    "evidence": [
+      "Tiago 3:8"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-06",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "passageA": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, está morta por si só."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem crê de verdade ajuda quem passa necessidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé verdadeira vira ajuda"
+      },
+      {
+        "id": "b",
+        "text": "Palavras substituem a ajuda"
+      },
+      {
+        "id": "c",
+        "text": "Ajudar torna fé inútil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "está morta por si só",
+    "feedbackCorrect": "Sem virar ajuda, Tiago chama essa fé de morta por si só.",
+    "feedbackWrong": {
+      "b": "Palavras sem o necessário são o que Tiago reprova no caso.",
+      "c": "Ajudar mostra a fé; não a torna inútil de modo algum."
+    },
+    "hint": "Pense no fruto visível dessa fé.",
+    "learningObjective": "Ligar fé viva e ajuda concreta na revisão.",
+    "evidence": [
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-07",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 3:5, toque o pequeno membro que se vangloria de coisas grandiosas.",
+    "prompt": "Em Tiago 3:5, toque o pequeno membro que se vangloria de coisas grandiosas.",
+    "cue": "Em Tiago 3:5, toque o pequeno membro que se vangloria de coisas grandiosas.",
+    "verseRef": "Tiago 3:5",
+    "passageText": "Assim também a língua é um pequeno membro, mas se vangloria de coisas grandiosas. Vede como uma fagulha pode incitar um imenso incêndio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "língua"
+      },
+      {
+        "id": "b",
+        "text": "incêndio"
+      },
+      {
+        "id": "c",
+        "text": "fagulha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a língua é um pequeno membro",
+    "feedbackCorrect": "Pequena no corpo, ela se vangloria de coisas grandiosas.",
+    "feedbackWrong": {
+      "b": "O incêndio é o resultado; o membro citado vem antes dele.",
+      "c": "A fagulha é a comparação do efeito, não o membro do corpo."
+    },
+    "hint": "Procure o membro do corpo citado.",
+    "learningObjective": "Identificar o pequeno membro de Tiago 3:5.",
+    "evidence": [
+      "Tiago 3:5"
+    ]
+  },
+  {
+    "id": "tiago-sem-tg-boss-08",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 5:16 na ordem do texto.",
+    "prompt": "Monte Tiago 5:16 na ordem do texto.",
+    "cue": "Monte Tiago 5:16 na ordem do texto.",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessem as suas transgressões uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "e orem uns pelos outros, para que sejam curados"
+      },
+      {
+        "id": "c",
+        "text": "A súplica do justo é muito poderosa em sua eficácia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Confessem as suas transgressões uns aos outros",
+    "feedbackCorrect": "Confessar, orar uns pelos outros e, então, a força da súplica do justo.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão mútua; a súplica do justo fecha o versículo."
+    },
+    "hint": "O versículo começa pela confissão.",
+    "learningObjective": "Reconhecer a sequência de Tiago 5:16.",
+    "evidence": [
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-01",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 2:16, palavras de paz sem dar o necessário contrastam com a ajuda de que o necessitado precisa.",
+    "prompt": "Em Tiago 2:16, palavras de paz sem dar o necessário contrastam com a ajuda de que o necessitado precisa.",
+    "cue": "Em Tiago 2:16, palavras de paz sem dar o necessário contrastam com a ajuda de que o necessitado precisa.",
+    "verseRef": "Tiago 2:16",
+    "passageText": "E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mas não lhes der o necessário para o corpo",
+    "feedbackCorrect": "É esse contraste entre falar e não dar que Tiago expõe no caso.",
+    "feedbackWrong": {
+      "false": "Releia o caso e compare as palavras ditas com o que é entregue."
+    },
+    "hint": "Compare o que é dito com o que é dado.",
+    "learningObjective": "Compreender o contraste entre palavras e ajuda em Tiago 2.",
+    "evidence": [
+      "Tiago 2:16"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-02",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 5:18, toque a expressão que mostra Elias orando outra vez.",
+    "prompt": "Em Tiago 5:18, toque a expressão que mostra Elias orando outra vez.",
+    "cue": "Em Tiago 5:18, toque a expressão que mostra Elias orando outra vez.",
+    "verseRef": "Tiago 5:18",
+    "passageText": "E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de novo"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E orou de novo",
+    "feedbackCorrect": "Essa expressão marca a segunda oração, depois dos anos de seca.",
+    "feedbackWrong": {
+      "b": "A terra brota frutos no fim; a repetição marca a oração.",
+      "c": "O céu é quem dá a chuva; a repetição vem antes dele."
+    },
+    "hint": "Procure como a segunda oração é introduzida.",
+    "learningObjective": "Reconhecer a sequência das orações de Elias.",
+    "evidence": [
+      "Tiago 5:18"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-03",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tiago 3:9–10 apresenta o problema das palavras do crente?",
+    "prompt": "Como Tiago 3:9–10 apresenta o problema das palavras do crente?",
+    "cue": "Como Tiago 3:9–10 apresenta o problema das palavras do crente?",
+    "verseRef": "Tiago 3:9–10",
+    "passageText": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus. Da mesma boca procedem bênção e maldição. Meus irmãos, não é apropriado que estas coisas sejam assim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Falar bem de Deus autoriza ofender pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Amaldiçoar pessoas é forma de louvor"
+      },
+      {
+        "id": "c",
+        "text": "Palavras religiosas nunca afetam o próximo"
+      },
+      {
+        "id": "d",
+        "text": "Louvar a Deus e ferir pessoas não combinam"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Da mesma boca procedem bênção e maldição",
+    "feedbackCorrect": "A mesma boca louva e fere; Tiago diz que isso não é apropriado.",
+    "feedbackWrong": {
+      "a": "Louvar a Deus não autoriza ferir quem ele fez à sua semelhança.",
+      "b": "Tiago reprova essa mistura; não a chama de louvor.",
+      "c": "Todo o trecho mostra que palavras afetam pessoas de verdade."
+    },
+    "hint": "Veja os dois usos da mesma boca.",
+    "learningObjective": "Compreender o problema da boca dividida em Tiago 3.",
+    "evidence": [
+      "Tiago 3:9–10"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-04",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como o argumento avança em Tiago 2:16–17?",
+    "prompt": "Como o argumento avança em Tiago 2:16–17?",
+    "cue": "Como o argumento avança em Tiago 2:16–17?",
+    "verseRef": "Tiago 2:16–17",
+    "passageText": "E se algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se; mas não lhes der o necessário para o corpo, qual é o benefício disso? Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé afirmada é provada no necessitado"
+      },
+      {
+        "id": "b",
+        "text": "Palavras sem o necessário não beneficiam"
+      },
+      {
+        "id": "c",
+        "text": "A fé sem obras conclui-se morta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "qual é o benefício disso",
+    "feedbackCorrect": "Do caso concreto à conclusão: fé sem fruto está morta.",
+    "feedbackWrong": {
+      "default": "Comece pelo caso do necessitado; a conclusão vem no versículo 17."
+    },
+    "hint": "A conclusão está no segundo versículo.",
+    "learningObjective": "Compreender o avanço do argumento de Tiago 2.",
+    "evidence": [
+      "Tiago 2:16–17"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-05",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 2:17, como fica a fé quando não tem obras?",
+    "prompt": "Em Tiago 2:17, como fica a fé quando não tem obras?",
+    "cue": "Em Tiago 2:17, como fica a fé quando não tem obras?",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "template": "Assim também a fé, se não tiver obras, está ___ por si só.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morta"
+      },
+      {
+        "id": "b",
+        "text": "viva"
+      },
+      {
+        "id": "c",
+        "text": "forte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "está morta por si só",
+    "feedbackCorrect": "É o veredito que fecha o caso do necessitado sem ajuda.",
+    "feedbackWrong": {
+      "b": "Viva é o oposto do veredito dado por Tiago aqui.",
+      "c": "O texto não chama essa fé de forte; chama-a sem vida."
+    },
+    "hint": "Releia a conclusão do versículo.",
+    "learningObjective": "Compreender a conclusão sobre a fé sem obras.",
+    "evidence": [
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-06",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 3:9 a Provérbios 18:21?",
+    "prompt": "O que liga Tiago 3:9 a Provérbios 18:21?",
+    "cue": "O que liga Tiago 3:9 a Provérbios 18:21?",
+    "verseRef": "Tiago 3:9",
+    "passageText": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus.",
+    "passageA": {
+      "ref": "Tiago 3:9",
+      "text": "Com ela, bendizemos ao Senhor e Pai; e com ela, amaldiçoamos os homens, que foram feitos à semelhança de Deus."
+    },
+    "passageB": {
+      "ref": "Provérbios 18:21",
+      "text": "A morte e a vida estão no poder da língua; e quem a ama comerá de seu fruto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Falar muito é sempre sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "Palavras nunca trazem dano"
+      },
+      {
+        "id": "c",
+        "text": "A língua carrega vida e morte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Com ela, bendizemos ao Senhor e Pai",
+    "feedbackCorrect": "Nos dois textos, o que a boca produz tem peso de vida ou de morte.",
+    "feedbackWrong": {
+      "a": "O tema é o poder do que se fala, não falar muito.",
+      "b": "Os dois textos mostram dano real vindo das palavras."
+    },
+    "hint": "Veja o poder que Provérbios atribui às palavras.",
+    "learningObjective": "Relacionar o poder da língua na revisão de Tiago.",
+    "evidence": [
+      "Tiago 3:9",
+      "Provérbios 18:21"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-07",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 2:18, toque por meio de que o autor diz que mostrará sua fé.",
+    "prompt": "Em Tiago 2:18, toque por meio de que o autor diz que mostrará sua fé.",
+    "cue": "Em Tiago 2:18, toque por meio de que o autor diz que mostrará sua fé.",
+    "verseRef": "Tiago 2:18",
+    "passageText": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "alguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "com as minhas obras, lhe mostrarei a minha fé",
+    "feedbackCorrect": "É por esse meio que ele afirma tornar a fé visível aos outros.",
+    "feedbackWrong": {
+      "b": "A fé é o que será mostrado; o meio vem antes dela na frase.",
+      "c": "Alguém é quem levanta a conversa; o meio está na resposta do autor."
+    },
+    "hint": "Procure o meio citado pelo autor.",
+    "learningObjective": "Reconhecer o meio pelo qual a fé se mostra.",
+    "evidence": [
+      "Tiago 2:18"
+    ]
+  },
+  {
+    "id": "tiago-cam-tg-boss-08",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos em Tiago 5:17–18?",
+    "prompt": "Como se encadeiam os eventos em Tiago 5:17–18?",
+    "cue": "Como se encadeiam os eventos em Tiago 5:17–18?",
+    "verseRef": "Tiago 5:17–18",
+    "passageText": "Elias era um homem com as mesmas emoções que nós, e, orando com instância, pediu que não chovesse sobre a terra; e por três anos e seis meses, não choveu. E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias pede que não chova sobre a terra"
+      },
+      {
+        "id": "b",
+        "text": "Três anos e seis meses sem chuva"
+      },
+      {
+        "id": "c",
+        "text": "Elias ora outra vez e chove"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pediu que não chovesse sobre a terra",
+    "feedbackCorrect": "Primeiro pedido, anos de seca e nova oração com chuva no fim.",
+    "feedbackWrong": {
+      "default": "Comece pelo primeiro pedido; a chuva volta só no último passo."
+    },
+    "hint": "A chuva volta apenas no fim da sequência.",
+    "learningObjective": "Compreender o encadeamento da história de Elias.",
+    "evidence": [
+      "Tiago 5:17–18"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-01",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 2:17, boas obras são apresentadas como pagamento que compra a salvação de Deus.",
+    "prompt": "Em Tiago 2:17, boas obras são apresentadas como pagamento que compra a salvação de Deus.",
+    "cue": "Em Tiago 2:17, boas obras são apresentadas como pagamento que compra a salvação de Deus.",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+    "feedbackCorrect": "Tiago mostra uma fé viva pelo fruto; não trata obras como pagamento.",
+    "feedbackWrong": {
+      "true": "Releia o veredito do versículo e veja o papel das ações nele."
+    },
+    "hint": "Veja o papel das ações no veredito.",
+    "learningObjective": "Interpretar obras como fruto da fé, não como pagamento.",
+    "evidence": [
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-02",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 5:16, toque de quem é a súplica descrita como muito poderosa.",
+    "prompt": "Em Tiago 5:16, toque de quem é a súplica descrita como muito poderosa.",
+    "cue": "Em Tiago 5:16, toque de quem é a súplica descrita como muito poderosa.",
+    "verseRef": "Tiago 5:16",
+    "passageText": "Confessem as suas transgressões uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo é muito poderosa em sua eficácia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "transgressões"
+      },
+      {
+        "id": "b",
+        "text": "outros"
+      },
+      {
+        "id": "c",
+        "text": "justo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A súplica do justo é muito poderosa em sua eficácia",
+    "feedbackCorrect": "É essa súplica que Tiago usa para animar a oração mútua.",
+    "feedbackWrong": {
+      "a": "As transgressões são confessadas; a súplica poderosa é de outra pessoa.",
+      "b": "Os outros recebem a oração; quem suplica é nomeado no fim."
+    },
+    "hint": "Procure a pessoa citada no fim do versículo.",
+    "learningObjective": "Sustentar com o texto a força da súplica citada.",
+    "evidence": [
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-03",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura reúne Tiago 2:17 e Tiago 3:13 sem distorcer os textos?",
+    "prompt": "Que leitura reúne Tiago 2:17 e Tiago 3:13 sem distorcer os textos?",
+    "cue": "Que leitura reúne Tiago 2:17 e Tiago 3:13 sem distorcer os textos?",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agir bem dispensa confiar em Deus"
+      },
+      {
+        "id": "b",
+        "text": "Fé viva aparece em obras e mansidão"
+      },
+      {
+        "id": "c",
+        "text": "Obras compram um lugar no céu"
+      },
+      {
+        "id": "d",
+        "text": "Basta falar de fé com mansidão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+    "feedbackCorrect": "Fé viva ajuda quem precisa e se mostra com mansidão sábia.",
+    "feedbackWrong": {
+      "a": "Agir bem nasce da confiança; não a substitui nos textos.",
+      "c": "Nenhum dos textos trata ações como compra de salvação.",
+      "d": "Falar, mesmo com calma, sem agir é o alvo de Tiago 2."
+    },
+    "hint": "Junte o fruto de Tiago 2 com o de Tiago 3.",
+    "learningObjective": "Reunir fé, obras e mansidão na interpretação da revisão.",
+    "evidence": [
+      "Tiago 2:17",
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-04",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela uma fé inteira nos três ensinos de Tiago?",
+    "prompt": "Qual sequência revela uma fé inteira nos três ensinos de Tiago?",
+    "cue": "Qual sequência revela uma fé inteira nos três ensinos de Tiago?",
+    "verseRef": "Tiago 2:17",
+    "passageText": "Assim também a fé, se não tiver obras, está morta por si só.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé viva se mostra em obras de amor"
+      },
+      {
+        "id": "b",
+        "text": "As palavras passam a edificar, não ferir"
+      },
+      {
+        "id": "c",
+        "text": "A comunidade sustenta todos em oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+    "feedbackCorrect": "Na ordem da carta: fé que age, palavras cuidadas e comunidade que ora.",
+    "feedbackWrong": {
+      "default": "Siga a ordem da carta: capítulo 2, capítulo 3 e capítulo 5."
+    },
+    "hint": "Siga a ordem dos capítulos da carta.",
+    "learningObjective": "Ver a fé inteira em obras, palavras e oração.",
+    "evidence": [
+      "Tiago 2:17",
+      "Tiago 3:13",
+      "Tiago 5:16"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-05",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 5:13, o que quem está alegre deve cantar em hinos?",
+    "prompt": "Em Tiago 5:13, o que quem está alegre deve cantar em hinos?",
+    "cue": "Em Tiago 5:13, o que quem está alegre deve cantar em hinos?",
+    "verseRef": "Tiago 5:13",
+    "passageText": "Está alguém entre vocês sofrendo? Que faça oração. Está alguém alegre? Que cante hinos de louvor.",
+    "template": "Está alguém entre vocês sofrendo? Que faça oração. Está alguém alegre? Que cante hinos de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guerra"
+      },
+      {
+        "id": "b",
+        "text": "louvor"
+      },
+      {
+        "id": "c",
+        "text": "luto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Que cante hinos de louvor",
+    "feedbackCorrect": "A alegria também vira busca de Deus, cantada pela comunidade.",
+    "feedbackWrong": {
+      "a": "O canto citado celebra a Deus, não uma batalha humana.",
+      "c": "Luto combina com dor; quem está alegre canta outra coisa."
+    },
+    "hint": "Veja a resposta de quem está alegre.",
+    "learningObjective": "Lembrar a resposta de louvor à alegria em Tiago 5.",
+    "evidence": [
+      "Tiago 5:13"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-06",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 5:18 a 1 Reis 18:45?",
+    "prompt": "O que liga Tiago 5:18 a 1 Reis 18:45?",
+    "cue": "O que liga Tiago 5:18 a 1 Reis 18:45?",
+    "verseRef": "Tiago 5:18",
+    "passageText": "E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos.",
+    "passageA": {
+      "ref": "Tiago 5:18",
+      "text": "E orou de novo, e o céu deu chuva, e a terra fez brotar seus frutos."
+    },
+    "passageB": {
+      "ref": "1 Reis 18:45",
+      "text": "E aconteceu que, dentro em pouco, os céus se enegreceram com nuvens e vento, e surgiu uma grande chuva. Acabe subiu ao carro e foi para Jezreel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias controla o céu sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Deus envia a chuva"
+      },
+      {
+        "id": "c",
+        "text": "A chuva vem sem oração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o céu deu chuva",
+    "feedbackCorrect": "Tiago resume Reis: após a oração de Elias, Deus manda a chuva.",
+    "feedbackWrong": {
+      "a": "Quem envia a chuva é Deus; Elias é quem ora a ele.",
+      "c": "Nos dois textos, a chuva vem depois da oração de Elias."
+    },
+    "hint": "Compare o fim da seca nos dois textos.",
+    "learningObjective": "Ligar a oração de Elias ao Deus que responde.",
+    "evidence": [
+      "Tiago 5:18",
+      "1 Reis 18:45"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-07",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 3:13, toque o fruto da sabedoria mostrado nas boas ações.",
+    "prompt": "Em Tiago 3:13, toque o fruto da sabedoria mostrado nas boas ações.",
+    "cue": "Em Tiago 3:13, toque o fruto da sabedoria mostrado nas boas ações.",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mansidão"
+      },
+      {
+        "id": "b",
+        "text": "ações"
+      },
+      {
+        "id": "c",
+        "text": "sabedoria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "É esse fruto que distingue o sábio de quem só discute.",
+    "feedbackWrong": {
+      "b": "As ações são o meio de mostrar; o fruto é o jeito de agir.",
+      "c": "A sabedoria é a raiz; o fruto dela vem nomeado ao lado."
+    },
+    "hint": "Procure o fruto nomeado no fim.",
+    "learningObjective": "Sustentar com o texto o fruto da sabedoria verdadeira.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-pro-tg-boss-08",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da fé que se expressa em amor?",
+    "prompt": "Qual sequência revela o fio da fé que se expressa em amor?",
+    "cue": "Qual sequência revela o fio da fé que se expressa em amor?",
+    "verseRef": "Tiago 2:18",
+    "passageText": "Entretanto, alguém poderá dizer: \"Você tem fé, e eu tenho obras; mostra-me a sua fé sem as obras, e eu, com as minhas obras, lhe mostrarei a minha fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé se expressa por meio do amor"
+      },
+      {
+        "id": "b",
+        "text": "O amor se vê em ações e verdade"
+      },
+      {
+        "id": "c",
+        "text": "As boas obras glorificam o Pai no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "lhe mostrarei a minha fé",
+    "feedbackCorrect": "Fé que ama, amor que age e obras que apontam para o Pai.",
+    "feedbackWrong": {
+      "default": "Comece pela fé que ama; a glória ao Pai é o ponto de chegada."
+    },
+    "hint": "Comece pela fé; termine na glória ao Pai.",
+    "learningObjective": "Ver o fio entre fé, amor em ação e glória a Deus.",
+    "evidence": [
+      "Tiago 2:18",
+      "Gálatas 5:6",
+      "1 João 3:18",
+      "Mateus 5:16"
+    ]
+  }
+]

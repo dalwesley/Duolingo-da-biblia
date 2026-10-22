@@ -1,0 +1,63 @@
+Escreva a cena "dd-02-santo" da trilha "doutrina-de-deus" (Doutrina de Deus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "doutrina-de-deus",
+  "title": "Doutrina de Deus",
+  "description": "Quem é Deus — atributos, Trindade e soberania.",
+  "realm": "teologia"
+ },
+ "block": "Doutrina de Deus",
+ "mission": {
+  "slug": "dd-02-santo",
+  "title": "Deus é santo",
+  "type": "lesson",
+  "intro": "A santidade de Deus mostra sua pureza perfeita e sua grandeza.",
+  "hookRef": "Isaías 6:3",
+  "hookNote": "A santidade de Deus mostra sua pureza perfeita e sua grandeza.",
+  "centralInsight": "Esta missão apresenta deus é santo de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor a Deus e…",
+  "objective": "Isaías 6:3"
+ },
+ "v2": {
+  "passageRef": "Isaías 6:3",
+  "context": "A santidade de Deus mostra sua pureza perfeita e sua grandeza.",
+  "keyword": "Deus",
+  "verseRefs": [
+   "Isaías 6:3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Isaías 6:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Isaías 6:1",
+   "text": "No ano da morte do rei Uzias, eu vi o Senhor assentado sobre um alto e sublime trono; e as abas de suas vestes enchiam o templo."
+  },
+  {
+   "ref": "Isaías 6:2",
+   "text": "Os serafins estavam acima dele; cada um tinha seis asas: com duas cobria o rosto, com duas cobria os pés e com duas voava."
+  },
+  {
+   "ref": "Isaías 6:3",
+   "text": "E proclamavam uns aos outros, dizendo: Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória."
+  },
+  {
+   "ref": "Isaías 6:4",
+   "text": "E os umbrais das portas se agitaram à voz daquele que clamava, e a casa se encheu de fumaça."
+  },
+  {
+   "ref": "Isaías 6:5",
+   "text": "Então eu disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros e habito no meio de um povo de impuros lábios e meus olhos viram o Rei, o Senhor dos Exércitos!"
+  },
+  {
+   "ref": "Isaías 6:6",
+   "text": "Então, um dos serafins voou até mim, trazendo na mão uma brasa viva que havia removido do altar com uma tenaz;"
+  }
+ ]
+}
+</cena>

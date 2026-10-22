@@ -1,0 +1,2539 @@
+[
+  {
+    "id": "judas-sem-jd-01-01",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Judas 1:3, Judas exorta os leitores a batalhar pela fé entregue aos santos.",
+    "prompt": "Em Judas 1:3, Judas exorta os leitores a batalhar pela fé entregue aos santos.",
+    "cue": "Em Judas 1:3, Judas exorta os leitores a batalhar pela fé entregue aos santos.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "Judas sente-se obrigado a exortar os amados a guardar a fé recebida.",
+    "feedbackWrong": {
+      "false": "Releia Judas 1:3 e veja o chamado a batalhar pela fé entregue."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar o chamado a guardar a fé entregue.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-01-02",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Judas 1:3, toque o que foi entregue uma vez por todas aos santos.",
+    "prompt": "Em Judas 1:3, toque o que foi entregue uma vez por todas aos santos.",
+    "cue": "Em Judas 1:3, toque o que foi entregue uma vez por todas aos santos.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amados"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "salvação comum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "O que foi entregue uma vez por todas aos santos é a fé recebida.",
+    "feedbackWrong": {
+      "a": "Amados é como Judas chama os leitores no começo.",
+      "c": "A salvação comum era o assunto planejado da carta."
+    },
+    "hint": "Procure o que os santos receberam.",
+    "learningObjective": "Identificar a fé como o que foi entregue aos santos.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-01-03",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Judas 1:4, o que os homens ímpios fazem com a graça de Deus?",
+    "prompt": "Segundo Judas 1:4, o que os homens ímpios fazem com a graça de Deus?",
+    "cue": "Segundo Judas 1:4, o que os homens ímpios fazem com a graça de Deus?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardam com gratidão"
+      },
+      {
+        "id": "b",
+        "text": "Escondem dos santos"
+      },
+      {
+        "id": "c",
+        "text": "Anunciam aos vizinhos"
+      },
+      {
+        "id": "d",
+        "text": "Transformam em libertinagem"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "transformam a graça de nosso Deus em libertinagem",
+    "feedbackCorrect": "Eles usam a graça como desculpa para viver sem freio.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário, que eles a transformam em libertinagem.",
+      "b": "Nada é escondido dos santos no versículo citado.",
+      "c": "O texto não fala de anúncio, e sim de distorção da graça."
+    },
+    "hint": "Leia o meio do versículo.",
+    "learningObjective": "Observar como os ímpios distorcem a graça.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-01-04",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Judas 1:5 na ordem do texto.",
+    "prompt": "Monte Judas 1:5 na ordem do texto.",
+    "cue": "Monte Judas 1:5 na ordem do texto.",
+    "verseRef": "Judas 1:5",
+    "passageText": "Quero lembrar a vocês que, embora já estejam cientes de tudo, de uma vez por todas, o Senhor, tendo libertado um povo da terra do Egito, destruiu aqueles que não creram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor, tendo libertado um povo"
+      },
+      {
+        "id": "b",
+        "text": "da terra do Egito"
+      },
+      {
+        "id": "c",
+        "text": "destruiu aqueles que não creram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor, tendo libertado um povo da terra do Egito",
+    "feedbackCorrect": "O Senhor liberta o povo do Egito, e os que não creram são destruídos.",
+    "feedbackWrong": {
+      "default": "Comece pela libertação do Egito e termine nos que não creram."
+    },
+    "hint": "Siga a ordem dos fatos no versículo.",
+    "learningObjective": "Reconhecer a sequência de Judas 1:5.",
+    "evidence": [
+      "Judas 1:5"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-01-05",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Judas 1:1, como Judas chama os leitores além de amados e guardados?",
+    "prompt": "Em Judas 1:1, como Judas chama os leitores além de amados e guardados?",
+    "cue": "Em Judas 1:1, como Judas chama os leitores além de amados e guardados?",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "template": "Judas, servo de Jesus Cristo e irmão de Tiago, aos ___, amados em Deus Pai e guardados em Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convidados"
+      },
+      {
+        "id": "b",
+        "text": "enviados"
+      },
+      {
+        "id": "c",
+        "text": "chamados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aos chamados, amados em Deus Pai e guardados em Jesus Cristo",
+    "feedbackCorrect": "Os leitores são chamados, amados e guardados por Deus.",
+    "feedbackWrong": {
+      "a": "Convidados não é a palavra que Judas usa aqui.",
+      "b": "O texto usa outra palavra antes de amados e guardados."
+    },
+    "hint": "Veja a sequência de três descrições no versículo.",
+    "learningObjective": "Lembrar como Judas descreve os leitores.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-01-06",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé cristã foi entregue pelos apóstolos e não é reinventada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé recebida, não inventada"
+      },
+      {
+        "id": "b",
+        "text": "Graça como desculpa"
+      },
+      {
+        "id": "c",
+        "text": "Fé criada por cada geração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé foi entregue uma vez por todas, e não criada de novo.",
+    "feedbackWrong": {
+      "b": "Essa é a distorção denunciada em Judas 1:4.",
+      "c": "O texto diz que ela foi entregue uma vez por todas."
+    },
+    "hint": "Veja quantas vezes a entrega aconteceu.",
+    "learningObjective": "Ligar Judas 1:3 à fé recebida e não inventada.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-01-01",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Judas 1:3–4, os impostores entraram na comunidade de forma aberta e anunciada.",
+    "prompt": "Em Judas 1:3–4, os impostores entraram na comunidade de forma aberta e anunciada.",
+    "cue": "Em Judas 1:3–4, os impostores entraram na comunidade de forma aberta e anunciada.",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se introduziram dissimuladamente",
+    "feedbackCorrect": "Eles se introduziram dissimuladamente, sem alarde na comunidade.",
+    "feedbackWrong": {
+      "true": "Releia Judas 1:4 e repare como eles entraram."
+    },
+    "hint": "Repare no modo como eles entraram.",
+    "learningObjective": "Compreender que o perigo entrou sem alarde.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-01-02",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Judas 1:4, toque a palavra que mostra como os impostores entraram.",
+    "prompt": "Em Judas 1:4, toque a palavra que mostra como os impostores entraram.",
+    "cue": "Em Judas 1:4, toque a palavra que mostra como os impostores entraram.",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dissimuladamente"
+      },
+      {
+        "id": "b",
+        "text": "juízo"
+      },
+      {
+        "id": "c",
+        "text": "libertinagem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se introduziram dissimuladamente",
+    "feedbackCorrect": "Eles entraram dissimuladamente, escondendo quem eram.",
+    "feedbackWrong": {
+      "b": "Juízo é o destino anunciado, não o modo de entrar.",
+      "c": "Libertinagem descreve o uso errado da graça, não a entrada."
+    },
+    "hint": "Procure a palavra ligada a introduzir-se.",
+    "learningObjective": "Reconhecer como os impostores entraram na comunidade.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-01-03",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que Judas muda o assunto da carta em Judas 1:3–4?",
+    "prompt": "Por que Judas muda o assunto da carta em Judas 1:3–4?",
+    "cue": "Por que Judas muda o assunto da carta em Judas 1:3–4?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os leitores dispensam qualquer aviso"
+      },
+      {
+        "id": "b",
+        "text": "Um perigo entrou e ameaça a fé recebida"
+      },
+      {
+        "id": "c",
+        "text": "A salvação comum deixou de importar"
+      },
+      {
+        "id": "d",
+        "text": "Ele prefere falar de si mesmo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "senti-me obrigado a exortá-los a batalhar diligentemente",
+    "feedbackCorrect": "Impostores entraram, e Judas se vê obrigado a exortar os amados.",
+    "feedbackWrong": {
+      "a": "Ele escreve justamente para lembrar e exortar os leitores.",
+      "c": "Ele planejava escrever sobre a salvação comum com esforço.",
+      "d": "O foco dele é guardar os leitores, e não falar de si."
+    },
+    "hint": "Ligue o versículo 3 ao motivo dado no versículo 4.",
+    "learningObjective": "Relacionar a mudança da carta ao perigo na comunidade.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-01-04",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o começo da carta em Judas 1:3?",
+    "prompt": "Como avança o começo da carta em Judas 1:3?",
+    "cue": "Como avança o começo da carta em Judas 1:3?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Judas planeja falar da salvação comum"
+      },
+      {
+        "id": "b",
+        "text": "Ele se sente obrigado a mudar o foco"
+      },
+      {
+        "id": "c",
+        "text": "Ele exorta a guardar a fé entregue"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "senti-me obrigado a exortá-los a batalhar diligentemente",
+    "feedbackCorrect": "Do plano inicial, Judas passa à obrigação de exortar os leitores.",
+    "feedbackWrong": {
+      "default": "Comece pelo plano da carta e termine na exortação."
+    },
+    "hint": "A exortação é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Judas 1:3.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-01-05",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Judas 1:4, que título de Jesus os ímpios negam?",
+    "prompt": "Em Judas 1:4, que título de Jesus os ímpios negam?",
+    "cue": "Em Judas 1:4, que título de Jesus os ímpios negam?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "template": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único ___ e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "Soberano"
+      },
+      {
+        "id": "c",
+        "text": "vizinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "negam o nosso único Soberano e Senhor, Jesus Cristo",
+    "feedbackCorrect": "Ao viver sem freio, eles negam Jesus como único Soberano e Senhor.",
+    "feedbackWrong": {
+      "a": "Irmão descreve Judas em relação a Tiago, não Jesus aqui.",
+      "c": "O título negado vem junto de Senhor no fim do versículo."
+    },
+    "hint": "Veja os dois títulos dados a Jesus no fim.",
+    "learningObjective": "Compreender que distorcer a graça nega o Senhor.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-01-06",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Judas 1:4 a Tito 2:11–12?",
+    "prompt": "O que liga Judas 1:4 a Tito 2:11–12?",
+    "cue": "O que liga Judas 1:4 a Tito 2:11–12?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "passageA": {
+      "ref": "Judas 1:4",
+      "text": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Tito 2:11–12",
+      "text": "Pois a graça de Deus se manifestou salvadora a todos os homens. ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça dispensa obediência"
+      },
+      {
+        "id": "b",
+        "text": "A graça ensina vida piedosa"
+      },
+      {
+        "id": "c",
+        "text": "A graça serve ao pecado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "transformam a graça de nosso Deus em libertinagem",
+    "feedbackCorrect": "Para Paulo, a graça ensina a renunciar à impiedade e viver bem.",
+    "feedbackWrong": {
+      "a": "Tito diz que a graça ensina a renunciar à impiedade.",
+      "c": "Usar a graça para pecar é a distorção que Judas denuncia."
+    },
+    "hint": "Compare o que a graça faz nos dois textos.",
+    "learningObjective": "Relacionar a graça em Judas e em Tito.",
+    "evidence": [
+      "Judas 1:4",
+      "Tito 2:11–12"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-01-01",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Judas 1:5 mostra que ser liberto no passado não dispensa crer e permanecer.",
+    "prompt": "Judas 1:5 mostra que ser liberto no passado não dispensa crer e permanecer.",
+    "cue": "Judas 1:5 mostra que ser liberto no passado não dispensa crer e permanecer.",
+    "verseRef": "Judas 1:5",
+    "passageText": "Quero lembrar a vocês que, embora já estejam cientes de tudo, de uma vez por todas, o Senhor, tendo libertado um povo da terra do Egito, destruiu aqueles que não creram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "tendo libertado um povo da terra do Egito, destruiu aqueles que não creram",
+    "feedbackCorrect": "Libertados do Egito, os que não creram foram destruídos.",
+    "feedbackWrong": {
+      "false": "Releia o exemplo do Egito e o destino de quem não creu."
+    },
+    "hint": "Compare libertação e incredulidade no versículo.",
+    "learningObjective": "Interpretar o exemplo do Egito como aviso a permanecer.",
+    "evidence": [
+      "Judas 1:5"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-01-02",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Judas 1:6, toque o que os anjos não guardaram.",
+    "prompt": "Em Judas 1:6, toque o que os anjos não guardaram.",
+    "cue": "Em Judas 1:6, toque o que os anjos não guardaram.",
+    "verseRef": "Judas 1:6",
+    "passageText": "E aos anjos que não guardaram seu estado original, mas abandonaram seu próprio lar, Deus os tem guardado sob trevas e em algemas eternas para o juízo do grande Dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande Dia"
+      },
+      {
+        "id": "b",
+        "text": "estado original"
+      },
+      {
+        "id": "c",
+        "text": "próprio lar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não guardaram seu estado original",
+    "feedbackCorrect": "Os anjos não guardaram o estado que Deus lhes havia dado.",
+    "feedbackWrong": {
+      "a": "O grande Dia é o tempo do juízo, não o que guardariam.",
+      "c": "O próprio lar é o que eles abandonaram depois."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Sustentar com o texto a queda dos anjos citados.",
+    "evidence": [
+      "Judas 1:6"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-01-03",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Judas 1:4 sustenta sobre usar a graça para pecar?",
+    "prompt": "Que leitura Judas 1:4 sustenta sobre usar a graça para pecar?",
+    "cue": "Que leitura Judas 1:4 sustenta sobre usar a graça para pecar?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isso é liberdade ensinada por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Isso mostra maturidade espiritual"
+      },
+      {
+        "id": "c",
+        "text": "Isso prova amor por Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Isso nega Jesus como Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "negam o nosso único Soberano e Senhor, Jesus Cristo",
+    "feedbackCorrect": "Usar a graça para pecar é, no fundo, negar Jesus como Senhor.",
+    "feedbackWrong": {
+      "a": "Deus não ensina liberdade para viver em libertinagem.",
+      "b": "Judas chama essas pessoas de ímpias, não de maduras.",
+      "c": "O texto liga essa prática a negar o Senhor, não a amá-lo."
+    },
+    "hint": "Veja o que essa prática faz com Jesus no fim do versículo.",
+    "learningObjective": "Escolher a interpretação que Judas 1:4 sustenta.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-01-04",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Judas 1:5–6?",
+    "prompt": "Qual sequência revela o sentido de Judas 1:5–6?",
+    "cue": "Qual sequência revela o sentido de Judas 1:5–6?",
+    "verseRef": "Judas 1:5–6",
+    "passageText": "Quero lembrar a vocês que, embora já estejam cientes de tudo, de uma vez por todas, o Senhor, tendo libertado um povo da terra do Egito, destruiu aqueles que não creram. E aos anjos que não guardaram seu estado original, mas abandonaram seu próprio lar, Deus os tem guardado sob trevas e em algemas eternas para o juízo do grande Dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus liberta um povo do Egito"
+      },
+      {
+        "id": "b",
+        "text": "Quem não crê enfrenta juízo"
+      },
+      {
+        "id": "c",
+        "text": "Anjos que abandonam seu lugar aguardam juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "destruiu aqueles que não creram",
+    "feedbackCorrect": "Do Egito aos anjos, o texto mostra juízo sobre quem abandona Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo povo liberto e termine nos anjos guardados para o juízo."
+    },
+    "hint": "Siga a ordem dos exemplos na carta.",
+    "learningObjective": "Ver os exemplos de Judas como aviso contra abandonar Deus.",
+    "evidence": [
+      "Judas 1:5–6"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-01-05",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Judas 1:6, para o que os anjos rebeldes estão guardados?",
+    "prompt": "Em Judas 1:6, para o que os anjos rebeldes estão guardados?",
+    "cue": "Em Judas 1:6, para o que os anjos rebeldes estão guardados?",
+    "verseRef": "Judas 1:6",
+    "passageText": "E aos anjos que não guardaram seu estado original, mas abandonaram seu próprio lar, Deus os tem guardado sob trevas e em algemas eternas para o juízo do grande Dia;",
+    "template": "E aos anjos que não guardaram seu estado original, mas abandonaram seu próprio lar, Deus os tem guardado sob trevas e em algemas eternas para o ___ do grande Dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "descanso"
+      },
+      {
+        "id": "b",
+        "text": "juízo"
+      },
+      {
+        "id": "c",
+        "text": "retorno"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para o juízo do grande Dia",
+    "feedbackCorrect": "Eles estão guardados sob trevas para o juízo do grande Dia.",
+    "feedbackWrong": {
+      "a": "O texto fala de trevas e algemas, não de descanso.",
+      "c": "Não há retorno prometido; há juízo marcado."
+    },
+    "hint": "Veja o destino marcado no fim do trecho.",
+    "learningObjective": "Lembrar o destino dos anjos que abandonaram seu lugar.",
+    "evidence": [
+      "Judas 1:6"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-01-06",
+    "trail": "judas",
+    "section": "jd-01",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Judas 1:3 a 2 Timóteo 4:7?",
+    "prompt": "O que liga Judas 1:3 a 2 Timóteo 4:7?",
+    "cue": "O que liga Judas 1:3 a 2 Timóteo 4:7?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos."
+    },
+    "passageB": {
+      "ref": "2 Timóteo 4:7",
+      "text": "Combati o bom combate, completei a corrida, guardei a fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a fé até o fim"
+      },
+      {
+        "id": "b",
+        "text": "Brigar com as pessoas"
+      },
+      {
+        "id": "c",
+        "text": "Inventar uma fé nova"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "batalhar diligentemente pela fé",
+    "feedbackCorrect": "Paulo termina a vida dizendo que guardou a fé recebida.",
+    "feedbackWrong": {
+      "b": "Guardar a fé é firmeza no ensino, não briga com pessoas.",
+      "c": "A fé é entregue e guardada, não inventada de novo."
+    },
+    "hint": "Veja o verbo que Paulo usa no fim da vida.",
+    "learningObjective": "Ligar o chamado de Judas ao testemunho de Paulo.",
+    "evidence": [
+      "Judas 1:3",
+      "2 Timóteo 4:7"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-02-01",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Judas 1:21, os crentes devem manter-se longe do amor de Deus enquanto aguardam a vida eterna.",
+    "prompt": "Em Judas 1:21, os crentes devem manter-se longe do amor de Deus enquanto aguardam a vida eterna.",
+    "cue": "Em Judas 1:21, os crentes devem manter-se longe do amor de Deus enquanto aguardam a vida eterna.",
+    "verseRef": "Judas 1:21",
+    "passageText": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mantenham-se no amor de Deus",
+    "feedbackCorrect": "O chamado é manter-se no amor de Deus, aguardando a misericórdia.",
+    "feedbackWrong": {
+      "true": "Releia o começo de Judas 1:21 e veja onde manter-se."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar o chamado a permanecer no amor de Deus.",
+    "evidence": [
+      "Judas 1:21"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-02-02",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Judas 1:21, toque onde os crentes devem manter-se.",
+    "prompt": "Em Judas 1:21, toque onde os crentes devem manter-se.",
+    "cue": "Em Judas 1:21, toque onde os crentes devem manter-se.",
+    "verseRef": "Judas 1:21",
+    "passageText": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor de Deus"
+      },
+      {
+        "id": "b",
+        "text": "vida eterna"
+      },
+      {
+        "id": "c",
+        "text": "nosso Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mantenham-se no amor de Deus",
+    "feedbackCorrect": "Os crentes devem manter-se no amor de Deus enquanto aguardam.",
+    "feedbackWrong": {
+      "b": "Vida eterna é o destino da espera, não o lugar de permanecer.",
+      "c": "Nosso Senhor é quem trará a misericórdia aguardada."
+    },
+    "hint": "Procure o lugar ligado ao verbo manter-se.",
+    "learningObjective": "Identificar o amor de Deus como lugar de permanência.",
+    "evidence": [
+      "Judas 1:21"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-02-03",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Judas 1:22, como tratar alguns que estão na incerteza?",
+    "prompt": "Segundo Judas 1:22, como tratar alguns que estão na incerteza?",
+    "cue": "Segundo Judas 1:22, como tratar alguns que estão na incerteza?",
+    "verseRef": "Judas 1:22",
+    "passageText": "E tenham compaixão de alguns que estão na incerteza;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com zombaria"
+      },
+      {
+        "id": "b",
+        "text": "Com compaixão"
+      },
+      {
+        "id": "c",
+        "text": "Com indiferença"
+      },
+      {
+        "id": "d",
+        "text": "Com desprezo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tenham compaixão de alguns que estão na incerteza",
+    "feedbackCorrect": "Quem está na incerteza deve receber compaixão, e não desprezo.",
+    "feedbackWrong": {
+      "a": "Zombar é o caminho dos escarnecedores, não dos amados.",
+      "c": "Indiferença abandona quem o texto manda acolher.",
+      "d": "O texto manda compaixão, e não desprezo por quem duvida."
+    },
+    "hint": "Leia a ordem dada no versículo.",
+    "learningObjective": "Observar a compaixão com quem duvida.",
+    "evidence": [
+      "Judas 1:22"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-02-04",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Judas 1:20–21 na ordem do texto.",
+    "prompt": "Monte Judas 1:20–21 na ordem do texto.",
+    "cue": "Monte Judas 1:20–21 na ordem do texto.",
+    "verseRef": "Judas 1:20–21",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo, Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificando-se na sua fé santíssima"
+      },
+      {
+        "id": "b",
+        "text": "orando no Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Mantenham-se no amor de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "edificando-se na sua fé santíssima, orando no Espírito Santo",
+    "feedbackCorrect": "Edificar-se orando vem antes do chamado a manter-se no amor.",
+    "feedbackWrong": {
+      "default": "Comece por edificar-se na fé e termine no amor de Deus."
+    },
+    "hint": "O versículo 20 vem antes do 21.",
+    "learningObjective": "Reconhecer a sequência de Judas 1:20–21.",
+    "evidence": [
+      "Judas 1:20–21"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-02-05",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Judas 1:22, o que ter de alguns que estão na incerteza?",
+    "prompt": "Em Judas 1:22, o que ter de alguns que estão na incerteza?",
+    "cue": "Em Judas 1:22, o que ter de alguns que estão na incerteza?",
+    "verseRef": "Judas 1:22",
+    "passageText": "E tenham compaixão de alguns que estão na incerteza;",
+    "template": "E tenham ___ de alguns que estão na incerteza;",
+    "options": [
+      {
+        "id": "a",
+        "text": "medo"
+      },
+      {
+        "id": "b",
+        "text": "compaixão"
+      },
+      {
+        "id": "c",
+        "text": "desprezo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tenham compaixão de alguns que estão na incerteza",
+    "feedbackCorrect": "A resposta a quem duvida começa com compaixão.",
+    "feedbackWrong": {
+      "a": "O temor aparece no versículo seguinte, ligado a salvar.",
+      "c": "Desprezo fecha a porta que o texto manda abrir."
+    },
+    "hint": "É a atitude pedida logo no começo do versículo.",
+    "learningObjective": "Lembrar a compaixão com quem está na incerteza.",
+    "evidence": [
+      "Judas 1:22"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-02-06",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Judas 1:20 comunica que se liga a este contexto?",
+    "prompt": "O que Judas 1:20 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:20 comunica que se liga a este contexto?",
+    "verseRef": "Judas 1:20",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo,",
+    "passageA": {
+      "ref": "Judas 1:20",
+      "text": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os amados se fortalecem orando no Espírito Santo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fortalecer-se orando no Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Isolar-se de quem duvida"
+      },
+      {
+        "id": "c",
+        "text": "Desistir da fé recebida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "edificando-se na sua fé santíssima, orando no Espírito Santo",
+    "feedbackCorrect": "Edificar-se na fé acontece orando no Espírito Santo.",
+    "feedbackWrong": {
+      "b": "O texto seguinte manda ter compaixão de quem duvida.",
+      "c": "O chamado é edificar-se na fé, e não desistir dela."
+    },
+    "hint": "Veja o que acompanha edificar-se na fé.",
+    "learningObjective": "Ligar Judas 1:20 ao fortalecimento pela oração.",
+    "evidence": [
+      "Judas 1:20"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-02-01",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Os apóstolos já haviam anunciado escarnecedores nos últimos dias segundo Judas 1:17–18.",
+    "prompt": "Os apóstolos já haviam anunciado escarnecedores nos últimos dias segundo Judas 1:17–18.",
+    "cue": "Os apóstolos já haviam anunciado escarnecedores nos últimos dias segundo Judas 1:17–18.",
+    "verseRef": "Judas 1:17–18",
+    "passageText": "Mas vocês, amados, lembrem-se das palavras que foram proferidas anteriormente pelos apóstolos de nosso Senhor Jesus Cristo, Como já foi dito a vocês, nos últimos dias, haverá escarnecedores que seguirão suas ímpias paixões.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "lembrem-se das palavras que foram proferidas anteriormente pelos apóstolos",
+    "feedbackCorrect": "Judas pede que lembrem o que os apóstolos já haviam dito.",
+    "feedbackWrong": {
+      "false": "Releia Judas 1:17 e veja de quem eram as palavras lembradas."
+    },
+    "hint": "Veja quem falou antes sobre isso.",
+    "learningObjective": "Compreender que o aviso já vinha dos apóstolos.",
+    "evidence": [
+      "Judas 1:17–18"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-02-02",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Judas 1:20, toque a palavra que vira o olhar dos escarnecedores para os amados.",
+    "prompt": "Em Judas 1:20, toque a palavra que vira o olhar dos escarnecedores para os amados.",
+    "cue": "Em Judas 1:20, toque a palavra que vira o olhar dos escarnecedores para os amados.",
+    "verseRef": "Judas 1:20",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "orando"
+      },
+      {
+        "id": "c",
+        "text": "amados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas vocês, amados",
+    "feedbackCorrect": "O Mas separa os escarnecedores do caminho dos amados.",
+    "feedbackWrong": {
+      "b": "Orando descreve a prática, não a virada do texto.",
+      "c": "Amados nomeia os leitores, mas não marca a virada."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o contraste entre escarnecedores e amados.",
+    "evidence": [
+      "Judas 1:20"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-02-03",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Judas 1:20–21 liga oração e permanência no amor de Deus?",
+    "prompt": "Como Judas 1:20–21 liga oração e permanência no amor de Deus?",
+    "cue": "Como Judas 1:20–21 liga oração e permanência no amor de Deus?",
+    "verseRef": "Judas 1:20–21",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo, Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanecer dispensa orar com dependência"
+      },
+      {
+        "id": "b",
+        "text": "Orar fortalece a fé de quem permanece em Deus"
+      },
+      {
+        "id": "c",
+        "text": "Orar substitui a necessidade de permanecer"
+      },
+      {
+        "id": "d",
+        "text": "O amor de Deus depende só do esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "edificando-se na sua fé santíssima, orando no Espírito Santo",
+    "feedbackCorrect": "Orando no Espírito, os amados se edificam e se mantêm no amor.",
+    "feedbackWrong": {
+      "a": "O texto junta oração e permanência no mesmo caminho.",
+      "c": "A oração acompanha a permanência, e não a substitui.",
+      "d": "A carta termina no Deus poderoso para guardar, não no esforço só."
+    },
+    "hint": "Junte os verbos dos dois versículos.",
+    "learningObjective": "Relacionar oração e permanência no amor de Deus.",
+    "evidence": [
+      "Judas 1:20–21"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-02-04",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o aviso em Judas 1:17–18?",
+    "prompt": "Como avança o aviso em Judas 1:17–18?",
+    "cue": "Como avança o aviso em Judas 1:17–18?",
+    "verseRef": "Judas 1:17–18",
+    "passageText": "Mas vocês, amados, lembrem-se das palavras que foram proferidas anteriormente pelos apóstolos de nosso Senhor Jesus Cristo, Como já foi dito a vocês, nos últimos dias, haverá escarnecedores que seguirão suas ímpias paixões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lembrar o aviso dado antes"
+      },
+      {
+        "id": "b",
+        "text": "Escarnecedores surgem nos últimos dias"
+      },
+      {
+        "id": "c",
+        "text": "Eles seguem as próprias paixões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "haverá escarnecedores que seguirão suas ímpias paixões",
+    "feedbackCorrect": "Primeiro a lembrança, depois quem surge e como essas pessoas vivem.",
+    "feedbackWrong": {
+      "default": "Comece pela lembrança das palavras dos apóstolos."
+    },
+    "hint": "A lembrança abre o trecho.",
+    "learningObjective": "Compreender o avanço do aviso em Judas 1:17–18.",
+    "evidence": [
+      "Judas 1:17–18"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-02-05",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Judas 1:21, o que os crentes aguardam de Jesus Cristo?",
+    "prompt": "Em Judas 1:21, o que os crentes aguardam de Jesus Cristo?",
+    "cue": "Em Judas 1:21, o que os crentes aguardam de Jesus Cristo?",
+    "verseRef": "Judas 1:21",
+    "passageText": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mantenham-se no amor de Deus, aguardando a ___ de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sentença"
+      },
+      {
+        "id": "b",
+        "text": "distância"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aguardando a misericórdia de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Eles aguardam a misericórdia de Jesus para a vida eterna.",
+    "feedbackWrong": {
+      "a": "O que se aguarda é misericórdia, e não sentença.",
+      "b": "A espera é por misericórdia que aproxima, não distância."
+    },
+    "hint": "Veja o que a espera recebe de Jesus.",
+    "learningObjective": "Compreender a espera pela misericórdia de Jesus.",
+    "evidence": [
+      "Judas 1:21"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-02-06",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Judas 1:21 a João 15:9?",
+    "prompt": "O que liga Judas 1:21 a João 15:9?",
+    "cue": "O que liga Judas 1:21 a João 15:9?",
+    "verseRef": "Judas 1:21",
+    "passageText": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "passageA": {
+      "ref": "Judas 1:21",
+      "text": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna."
+    },
+    "passageB": {
+      "ref": "João 15:9",
+      "text": "Assim como o Pai me amou, assim também eu os amei; permaneçam no meu amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Afastar-se do amor"
+      },
+      {
+        "id": "b",
+        "text": "Amor sem permanecer nele"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer no amor de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mantenham-se no amor de Deus",
+    "feedbackCorrect": "Jesus e Judas chamam a permanecer no amor, e não sair dele.",
+    "feedbackWrong": {
+      "a": "Os dois textos chamam a ficar no amor, não a afastar-se.",
+      "b": "Permanecer é justamente o verbo dos dois textos."
+    },
+    "hint": "Compare o verbo usado nos dois textos.",
+    "learningObjective": "Relacionar permanência no amor em Judas e em João.",
+    "evidence": [
+      "Judas 1:21",
+      "João 15:9"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-02-01",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Judas 1:23, ajudar os outros dispensa temor e cuidado com o pecado.",
+    "prompt": "Em Judas 1:23, ajudar os outros dispensa temor e cuidado com o pecado.",
+    "cue": "Em Judas 1:23, ajudar os outros dispensa temor e cuidado com o pecado.",
+    "verseRef": "Judas 1:23",
+    "passageText": "Salvem os outros com temor, arrebatando-os do fogo; e sejam também compassivos, detestando até a roupa contaminada pela carne.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Salvem os outros com temor",
+    "feedbackCorrect": "Salvar os outros é com temor e cuidado, e não de qualquer jeito.",
+    "feedbackWrong": {
+      "true": "Releia Judas 1:23 e veja como os outros devem ser salvos."
+    },
+    "hint": "Veja o modo de salvar no versículo.",
+    "learningObjective": "Interpretar a ajuda com compaixão e cuidado.",
+    "evidence": [
+      "Judas 1:23"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-02-02",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Judas 1:24, toque quem pode guardar os crentes de tropeços.",
+    "prompt": "Em Judas 1:24, toque quem pode guardar os crentes de tropeços.",
+    "cue": "Em Judas 1:24, toque quem pode guardar os crentes de tropeços.",
+    "verseRef": "Judas 1:24",
+    "passageText": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Àquele"
+      },
+      {
+        "id": "b",
+        "text": "tropeços"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Àquele que é poderoso para vos guardar de tropeços",
+    "feedbackCorrect": "É Deus, o poderoso, quem guarda os crentes de tropeços.",
+    "feedbackWrong": {
+      "b": "Tropeços são o perigo, não quem guarda os crentes.",
+      "c": "Glória é o lugar da apresentação final, não quem guarda."
+    },
+    "hint": "Procure quem é poderoso no começo do versículo.",
+    "learningObjective": "Sustentar com o texto que Deus guarda os crentes.",
+    "evidence": [
+      "Judas 1:24"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-02-03",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Judas 1:23 sustenta sobre ajudar pessoas em risco?",
+    "prompt": "Que leitura Judas 1:23 sustenta sobre ajudar pessoas em risco?",
+    "cue": "Que leitura Judas 1:23 sustenta sobre ajudar pessoas em risco?",
+    "verseRef": "Judas 1:23",
+    "passageText": "Salvem os outros com temor, arrebatando-os do fogo; e sejam também compassivos, detestando até a roupa contaminada pela carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvar sem temor nem limites"
+      },
+      {
+        "id": "b",
+        "text": "Evitar qualquer pessoa em dúvida"
+      },
+      {
+        "id": "c",
+        "text": "Ajudar aprovando o pecado"
+      },
+      {
+        "id": "d",
+        "text": "Ajudar com compaixão e cuidado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Salvem os outros com temor, arrebatando-os do fogo",
+    "feedbackCorrect": "O texto junta compaixão por pessoas e cuidado com o pecado.",
+    "feedbackWrong": {
+      "a": "O próprio texto pede temor ao salvar os outros.",
+      "b": "O texto manda arrebatar do fogo, e não evitar pessoas.",
+      "c": "Ajudar não aprova o pecado, que o texto manda detestar."
+    },
+    "hint": "Junte compaixão e temor do mesmo versículo.",
+    "learningObjective": "Escolher a interpretação de Judas 1:23 sobre ajudar.",
+    "evidence": [
+      "Judas 1:23"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-02-04",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Judas 1:22–23?",
+    "prompt": "Qual sequência revela o sentido de Judas 1:22–23?",
+    "cue": "Qual sequência revela o sentido de Judas 1:22–23?",
+    "verseRef": "Judas 1:22–23",
+    "passageText": "E tenham compaixão de alguns que estão na incerteza; Salvem os outros com temor, arrebatando-os do fogo; e sejam também compassivos, detestando até a roupa contaminada pela carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ter compaixão de quem duvida"
+      },
+      {
+        "id": "b",
+        "text": "Arrebatar outros do fogo com temor"
+      },
+      {
+        "id": "c",
+        "text": "Odiar a contaminação, não a pessoa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tenham compaixão de alguns que estão na incerteza",
+    "feedbackCorrect": "Compaixão por quem duvida, urgência com temor e cuidado com o pecado.",
+    "feedbackWrong": {
+      "default": "Comece pela compaixão com quem está na incerteza."
+    },
+    "hint": "A compaixão abre o trecho.",
+    "learningObjective": "Ver compaixão e cuidado juntos em Judas 1:22–23.",
+    "evidence": [
+      "Judas 1:22–23"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-02-05",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Judas 1:24, Deus é poderoso para guardar os crentes de quê?",
+    "prompt": "Em Judas 1:24, Deus é poderoso para guardar os crentes de quê?",
+    "cue": "Em Judas 1:24, Deus é poderoso para guardar os crentes de quê?",
+    "verseRef": "Judas 1:24",
+    "passageText": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "template": "Àquele que é poderoso para vos guardar de ___ e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "options": [
+      {
+        "id": "a",
+        "text": "perguntas"
+      },
+      {
+        "id": "b",
+        "text": "tropeços"
+      },
+      {
+        "id": "c",
+        "text": "passeios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "poderoso para vos guardar de tropeços",
+    "feedbackCorrect": "Deus pode guardar de tropeços e apresentar os crentes com alegria.",
+    "feedbackWrong": {
+      "a": "Perguntas e dúvidas recebem compaixão, não esse nome aqui.",
+      "c": "O perigo nomeado no texto não é esse."
+    },
+    "hint": "Veja o perigo do qual Deus guarda.",
+    "learningObjective": "Lembrar que Deus guarda os crentes de tropeçar.",
+    "evidence": [
+      "Judas 1:24"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-02-06",
+    "trail": "judas",
+    "section": "jd-02",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Judas 1:24 a 1 Pedro 1:5?",
+    "prompt": "O que liga Judas 1:24 a 1 Pedro 1:5?",
+    "cue": "O que liga Judas 1:24 a 1 Pedro 1:5?",
+    "verseRef": "Judas 1:24",
+    "passageText": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "passageA": {
+      "ref": "Judas 1:24",
+      "text": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,"
+    },
+    "passageB": {
+      "ref": "1 Pedro 1:5",
+      "text": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardados pelo poder de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Sem Deus para guardar"
+      },
+      {
+        "id": "c",
+        "text": "Guardados pelo próprio esforço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "poderoso para vos guardar de tropeços",
+    "feedbackCorrect": "Nos dois textos, quem guarda os crentes é o poder de Deus.",
+    "feedbackWrong": {
+      "b": "Os dois textos afirmam justamente essa guarda de Deus.",
+      "c": "Pedro liga a guarda ao poder de Deus, não ao esforço só."
+    },
+    "hint": "Veja quem guarda nos dois textos.",
+    "learningObjective": "Ligar a guarda de Deus em Judas e em Pedro.",
+    "evidence": [
+      "Judas 1:24",
+      "1 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-01",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Judas 1:3, a fé foi entregue uma vez por todas aos santos.",
+    "prompt": "Em Judas 1:3, a fé foi entregue uma vez por todas aos santos.",
+    "cue": "Em Judas 1:3, a fé foi entregue uma vez por todas aos santos.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé foi entregue uma vez por todas, e deve ser guardada.",
+    "feedbackWrong": {
+      "false": "Releia Judas 1:3 e veja quantas vezes ela foi entregue."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Relembrar que a fé foi entregue uma vez por todas.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-02",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Judas 1:1, toque quem escreve a carta aos chamados.",
+    "prompt": "Em Judas 1:1, toque quem escreve a carta aos chamados.",
+    "cue": "Em Judas 1:1, toque quem escreve a carta aos chamados.",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Judas"
+      },
+      {
+        "id": "b",
+        "text": "chamados"
+      },
+      {
+        "id": "c",
+        "text": "Tiago"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Judas, servo de Jesus Cristo e irmão de Tiago",
+    "feedbackCorrect": "Quem escreve é Judas, servo de Jesus Cristo e irmão de Tiago.",
+    "feedbackWrong": {
+      "b": "Chamados são os leitores, não quem escreve.",
+      "c": "Tiago é o irmão de quem escreve, não o autor da carta."
+    },
+    "hint": "É o primeiro nome do versículo.",
+    "learningObjective": "Identificar o autor da carta de Judas.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-03",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Judas 1:4, como os impostores entraram na comunidade?",
+    "prompt": "Segundo Judas 1:4, como os impostores entraram na comunidade?",
+    "cue": "Segundo Judas 1:4, como os impostores entraram na comunidade?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pela porta principal"
+      },
+      {
+        "id": "b",
+        "text": "Com carta dos apóstolos"
+      },
+      {
+        "id": "c",
+        "text": "Dissimuladamente, sem alarde"
+      },
+      {
+        "id": "d",
+        "text": "A convite dos amados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se introduziram dissimuladamente",
+    "feedbackCorrect": "Eles se introduziram dissimuladamente na comunidade.",
+    "feedbackWrong": {
+      "a": "O texto destaca justamente a entrada escondida.",
+      "b": "Nenhuma carta dos apóstolos apresenta essas pessoas.",
+      "d": "Os amados não convidaram; eles se introduziram."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Relembrar como os impostores entraram.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-04",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Judas 1:20–21 na ordem do texto.",
+    "prompt": "Monte Judas 1:20–21 na ordem do texto.",
+    "cue": "Monte Judas 1:20–21 na ordem do texto.",
+    "verseRef": "Judas 1:20–21",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo, Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas vocês, amados, edificando-se na sua fé santíssima"
+      },
+      {
+        "id": "b",
+        "text": "orando no Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Mantenham-se no amor de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "edificando-se na sua fé santíssima, orando no Espírito Santo",
+    "feedbackCorrect": "Edificar-se orando vem antes de manter-se no amor de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos amados que se edificam na fé."
+    },
+    "hint": "O versículo 20 vem antes do 21.",
+    "learningObjective": "Reconhecer a sequência de Judas 1:20–21.",
+    "evidence": [
+      "Judas 1:20–21"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-05",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Judas 1:2, o que deve ser multiplicado junto com a paz e o amor?",
+    "prompt": "Em Judas 1:2, o que deve ser multiplicado junto com a paz e o amor?",
+    "cue": "Em Judas 1:2, o que deve ser multiplicado junto com a paz e o amor?",
+    "verseRef": "Judas 1:2",
+    "passageText": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados em vocês.",
+    "template": "Que a ___, a paz e o amor de Deus sejam multiplicados em vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados em vocês",
+    "feedbackCorrect": "Judas deseja misericórdia, paz e amor multiplicados nos leitores.",
+    "feedbackWrong": {
+      "a": "A primeira palavra da saudação não é essa.",
+      "b": "Força não aparece nesta saudação de Judas."
+    },
+    "hint": "É a primeira bênção da lista.",
+    "learningObjective": "Lembrar a saudação de Judas aos leitores.",
+    "evidence": [
+      "Judas 1:2"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-06",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Judas 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Judas 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:1 comunica que se liga a este contexto?",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "passageA": {
+      "ref": "Judas 1:1",
+      "text": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os leitores são chamados, amados e guardados por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamados, amados e guardados"
+      },
+      {
+        "id": "b",
+        "text": "Perdidos e sem amor"
+      },
+      {
+        "id": "c",
+        "text": "Sozinhos e sem cuidado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "chamados, amados em Deus Pai e guardados em Jesus Cristo",
+    "feedbackCorrect": "Os leitores são chamados, amados e guardados por Deus.",
+    "feedbackWrong": {
+      "b": "Eles são amados em Deus Pai, e não perdidos sem amor.",
+      "c": "O texto afirma justamente o cuidado de Deus por eles."
+    },
+    "hint": "Veja as três descrições dos leitores.",
+    "learningObjective": "Ligar Judas 1:1 ao cuidado de Deus pelos leitores.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-07",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Judas 1:23, toque de onde alguns devem ser arrebatados.",
+    "prompt": "Em Judas 1:23, toque de onde alguns devem ser arrebatados.",
+    "cue": "Em Judas 1:23, toque de onde alguns devem ser arrebatados.",
+    "verseRef": "Judas 1:23",
+    "passageText": "Salvem os outros com temor, arrebatando-os do fogo; e sejam também compassivos, detestando até a roupa contaminada pela carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fogo"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "roupa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "arrebatando-os do fogo",
+    "feedbackCorrect": "Alguns devem ser arrebatados do fogo, com temor.",
+    "feedbackWrong": {
+      "b": "A carne contamina a roupa citada no fim do versículo.",
+      "c": "A roupa contaminada deve ser detestada, não é o lugar."
+    },
+    "hint": "Procure o lugar de perigo no versículo.",
+    "learningObjective": "Observar a urgência de socorrer quem está em risco.",
+    "evidence": [
+      "Judas 1:23"
+    ]
+  },
+  {
+    "id": "judas-sem-jd-boss-08",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Judas 1:5 na ordem do texto.",
+    "prompt": "Monte Judas 1:5 na ordem do texto.",
+    "cue": "Monte Judas 1:5 na ordem do texto.",
+    "verseRef": "Judas 1:5",
+    "passageText": "Quero lembrar a vocês que, embora já estejam cientes de tudo, de uma vez por todas, o Senhor, tendo libertado um povo da terra do Egito, destruiu aqueles que não creram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor, tendo libertado um povo da terra do Egito"
+      },
+      {
+        "id": "b",
+        "text": "destruiu aqueles"
+      },
+      {
+        "id": "c",
+        "text": "que não creram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tendo libertado um povo da terra do Egito, destruiu aqueles que não creram",
+    "feedbackCorrect": "Depois da libertação do Egito, os que não creram são destruídos.",
+    "feedbackWrong": {
+      "default": "Comece pela libertação do povo do Egito."
+    },
+    "hint": "A libertação vem antes do juízo.",
+    "learningObjective": "Reconhecer a sequência de Judas 1:5.",
+    "evidence": [
+      "Judas 1:5"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-01",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Judas 1:20–21, permanecer no amor de Deus dispensa orar no Espírito Santo.",
+    "prompt": "Em Judas 1:20–21, permanecer no amor de Deus dispensa orar no Espírito Santo.",
+    "cue": "Em Judas 1:20–21, permanecer no amor de Deus dispensa orar no Espírito Santo.",
+    "verseRef": "Judas 1:20–21",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo, Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "orando no Espírito Santo",
+    "feedbackCorrect": "Permanecer no amor anda junto com orar no Espírito Santo.",
+    "feedbackWrong": {
+      "true": "Releia Judas 1:20 e veja o que acompanha a permanência."
+    },
+    "hint": "Junte os dois versículos antes de responder.",
+    "learningObjective": "Compreender que oração e permanência andam juntas.",
+    "evidence": [
+      "Judas 1:20–21"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-02",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Judas 1:19, toque a palavra que descreve a falta do Espírito.",
+    "prompt": "Em Judas 1:19, toque a palavra que descreve a falta do Espírito.",
+    "cue": "Em Judas 1:19, toque a palavra que descreve a falta do Espírito.",
+    "verseRef": "Judas 1:19",
+    "passageText": "Estes são os que causam divisões, sensuais, desprovidos do Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sensuais"
+      },
+      {
+        "id": "b",
+        "text": "desprovidos"
+      },
+      {
+        "id": "c",
+        "text": "divisões"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "desprovidos do Espírito",
+    "feedbackCorrect": "Quem divide é descrito como desprovido do Espírito.",
+    "feedbackWrong": {
+      "a": "Sensuais descreve o modo de viver, não a falta citada.",
+      "c": "Divisões são o efeito causado, não a falta do Espírito."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Reconhecer a marca de quem causa divisões.",
+    "evidence": [
+      "Judas 1:19"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-03",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Judas 1:4 explica a urgência de Judas 1:3?",
+    "prompt": "Como Judas 1:4 explica a urgência de Judas 1:3?",
+    "cue": "Como Judas 1:4 explica a urgência de Judas 1:3?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impostores distorcem a graça na comunidade"
+      },
+      {
+        "id": "b",
+        "text": "Os santos inventaram uma fé nova"
+      },
+      {
+        "id": "c",
+        "text": "Os apóstolos mudaram o ensino"
+      },
+      {
+        "id": "d",
+        "text": "A graça autoriza viver sem freio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se introduziram dissimuladamente",
+    "feedbackCorrect": "A urgência nasce dos impostores que distorcem a graça por dentro.",
+    "feedbackWrong": {
+      "b": "A fé foi entregue, e não inventada pelos santos.",
+      "c": "A fé guardada é justamente a entregue pelos apóstolos.",
+      "d": "Isso é a distorção denunciada, não o ensino da graça."
+    },
+    "hint": "Ligue o motivo do versículo 4 ao chamado do 3.",
+    "learningObjective": "Relacionar a urgência da carta aos impostores.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-04",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Judas 1:20–21 para os amados?",
+    "prompt": "Como avança Judas 1:20–21 para os amados?",
+    "cue": "Como avança Judas 1:20–21 para os amados?",
+    "verseRef": "Judas 1:20–21",
+    "passageText": "Mas vocês, amados, edificando-se na sua fé santíssima, orando no Espírito Santo, Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fortalecer-se na fé orando"
+      },
+      {
+        "id": "b",
+        "text": "Manter-se no amor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Aguardar a misericórdia de Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mantenham-se no amor de Deus, aguardando a misericórdia",
+    "feedbackCorrect": "Fortalecer-se, permanecer no amor e aguardar a misericórdia.",
+    "feedbackWrong": {
+      "default": "Comece por fortalecer-se na fé orando no Espírito."
+    },
+    "hint": "A espera pela misericórdia fecha o trecho.",
+    "learningObjective": "Compreender o caminho dos amados em Judas 1:20–21.",
+    "evidence": [
+      "Judas 1:20–21"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-05",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Judas 1:18, quem os apóstolos anunciaram para os últimos dias?",
+    "prompt": "Em Judas 1:18, quem os apóstolos anunciaram para os últimos dias?",
+    "cue": "Em Judas 1:18, quem os apóstolos anunciaram para os últimos dias?",
+    "verseRef": "Judas 1:18",
+    "passageText": "Como já foi dito a vocês, nos últimos dias, haverá escarnecedores que seguirão suas ímpias paixões.",
+    "template": "Como já foi dito a vocês, nos últimos dias, haverá ___ que seguirão suas ímpias paixões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "missionários"
+      },
+      {
+        "id": "b",
+        "text": "escarnecedores"
+      },
+      {
+        "id": "c",
+        "text": "guardiões"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "haverá escarnecedores que seguirão suas ímpias paixões",
+    "feedbackCorrect": "Os apóstolos anunciaram escarnecedores guiados por paixões ímpias.",
+    "feedbackWrong": {
+      "a": "O aviso não é sobre enviados, e sim sobre zombadores.",
+      "c": "Guardiões não é a palavra do aviso dos apóstolos."
+    },
+    "hint": "Veja quem surgiria nos últimos dias.",
+    "learningObjective": "Compreender o aviso sobre os escarnecedores.",
+    "evidence": [
+      "Judas 1:18"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-06",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Judas 1:4 a Tito 2:11–12?",
+    "prompt": "O que liga Judas 1:4 a Tito 2:11–12?",
+    "cue": "O que liga Judas 1:4 a Tito 2:11–12?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "passageA": {
+      "ref": "Judas 1:4",
+      "text": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Tito 2:11–12",
+      "text": "Pois a graça de Deus se manifestou salvadora a todos os homens. ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça dispensa Jesus"
+      },
+      {
+        "id": "b",
+        "text": "A graça ensina vida piedosa"
+      },
+      {
+        "id": "c",
+        "text": "A graça serve ao pecado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "transformam a graça de nosso Deus em libertinagem",
+    "feedbackCorrect": "Para Paulo, a graça ensina a renunciar à impiedade e viver bem.",
+    "feedbackWrong": {
+      "a": "Negar Jesus é justamente a marca dos impostores.",
+      "c": "Usar a graça para pecar é a distorção que Judas denuncia."
+    },
+    "hint": "Compare o que a graça faz nos dois textos.",
+    "learningObjective": "Relacionar a graça em Judas e em Tito.",
+    "evidence": [
+      "Judas 1:4",
+      "Tito 2:11–12"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-07",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Judas 1:21, toque o alvo da espera dos crentes.",
+    "prompt": "Em Judas 1:21, toque o alvo da espera dos crentes.",
+    "cue": "Em Judas 1:21, toque o alvo da espera dos crentes.",
+    "verseRef": "Judas 1:21",
+    "passageText": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "nosso Senhor"
+      },
+      {
+        "id": "c",
+        "text": "amor de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para a vida eterna",
+    "feedbackCorrect": "A espera pela misericórdia de Jesus mira a vida eterna.",
+    "feedbackWrong": {
+      "b": "Nosso Senhor é quem trará a misericórdia aguardada.",
+      "c": "Amor de Deus é onde permanecer, não o alvo final citado."
+    },
+    "hint": "Leia as últimas palavras do versículo.",
+    "learningObjective": "Reconhecer a vida eterna como alvo da espera.",
+    "evidence": [
+      "Judas 1:21"
+    ]
+  },
+  {
+    "id": "judas-cam-jd-boss-08",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os cuidados de Judas 1:22–23?",
+    "prompt": "Como se encadeiam os cuidados de Judas 1:22–23?",
+    "cue": "Como se encadeiam os cuidados de Judas 1:22–23?",
+    "verseRef": "Judas 1:22–23",
+    "passageText": "E tenham compaixão de alguns que estão na incerteza; Salvem os outros com temor, arrebatando-os do fogo; e sejam também compassivos, detestando até a roupa contaminada pela carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ter compaixão de quem duvida"
+      },
+      {
+        "id": "b",
+        "text": "Arrebatar outros do fogo com temor"
+      },
+      {
+        "id": "c",
+        "text": "Rejeitar a roupa contaminada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tenham compaixão de alguns que estão na incerteza",
+    "feedbackCorrect": "Compaixão com quem duvida, socorro urgente e cuidado com o pecado.",
+    "feedbackWrong": {
+      "default": "Comece pela compaixão com quem está na incerteza."
+    },
+    "hint": "A compaixão abre o trecho.",
+    "learningObjective": "Compreender compaixão e cuidado em Judas 1:22–23.",
+    "evidence": [
+      "Judas 1:22–23"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-01",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Judas 1:24 afirma que Deus pode guardar os crentes de tropeços e apresentá-los diante da glória.",
+    "prompt": "Judas 1:24 afirma que Deus pode guardar os crentes de tropeços e apresentá-los diante da glória.",
+    "cue": "Judas 1:24 afirma que Deus pode guardar os crentes de tropeços e apresentá-los diante da glória.",
+    "verseRef": "Judas 1:24",
+    "passageText": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "poderoso para vos guardar de tropeços",
+    "feedbackCorrect": "Deus é poderoso para guardar e apresentar os crentes com exultação.",
+    "feedbackWrong": {
+      "false": "Releia Judas 1:24 e veja o poder atribuído a Deus."
+    },
+    "hint": "Veja o que Deus é poderoso para fazer.",
+    "learningObjective": "Interpretar a confiança final no Deus que guarda.",
+    "evidence": [
+      "Judas 1:24"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-02",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Judas 1:6, toque o destino dos anjos que abandonaram seu lar.",
+    "prompt": "Em Judas 1:6, toque o destino dos anjos que abandonaram seu lar.",
+    "cue": "Em Judas 1:6, toque o destino dos anjos que abandonaram seu lar.",
+    "verseRef": "Judas 1:6",
+    "passageText": "E aos anjos que não guardaram seu estado original, mas abandonaram seu próprio lar, Deus os tem guardado sob trevas e em algemas eternas para o juízo do grande Dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "próprio lar"
+      },
+      {
+        "id": "b",
+        "text": "estado original"
+      },
+      {
+        "id": "c",
+        "text": "algemas eternas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "em algemas eternas para o juízo do grande Dia",
+    "feedbackCorrect": "Eles estão guardados sob trevas e em algemas eternas para o juízo.",
+    "feedbackWrong": {
+      "a": "Próprio lar é o que eles abandonaram, não o destino.",
+      "b": "Estado original é o que eles não guardaram no começo."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Sustentar com o texto o destino dos anjos citados.",
+    "evidence": [
+      "Judas 1:6"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-03",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Judas 1:21–22 sustenta sobre firmeza e misericórdia?",
+    "prompt": "Que leitura Judas 1:21–22 sustenta sobre firmeza e misericórdia?",
+    "cue": "Que leitura Judas 1:21–22 sustenta sobre firmeza e misericórdia?",
+    "verseRef": "Judas 1:21–22",
+    "passageText": "Mantenham-se no amor de Deus, aguardando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna. E tenham compaixão de alguns que estão na incerteza;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ter compaixão aprovando tudo"
+      },
+      {
+        "id": "b",
+        "text": "Aguardar sem ajudar ninguém"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer em Deus e ter compaixão"
+      },
+      {
+        "id": "d",
+        "text": "Ser firme dispensando compaixão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mantenham-se no amor de Deus",
+    "feedbackCorrect": "Firmeza em Deus e compaixão por quem duvida andam juntas.",
+    "feedbackWrong": {
+      "a": "Compaixão não aprova o pecado, tratado com temor no texto.",
+      "b": "Quem aguarda também é chamado a socorrer os outros.",
+      "d": "O texto seguinte manda ter compaixão de quem duvida."
+    },
+    "hint": "Junte os versículos 21 e 22 antes de escolher.",
+    "learningObjective": "Escolher a leitura que junta firmeza e misericórdia.",
+    "evidence": [
+      "Judas 1:21–22"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-04",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da carta de Judas?",
+    "prompt": "Qual sequência revela o fio da carta de Judas?",
+    "cue": "Qual sequência revela o fio da carta de Judas?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé é entregue aos santos"
+      },
+      {
+        "id": "b",
+        "text": "Crentes permanecem no amor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus os apresenta imaculados na glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "Da fé entregue à permanência no amor e à apresentação na glória.",
+    "feedbackWrong": {
+      "default": "Comece pela fé entregue em Judas 1:3."
+    },
+    "hint": "Siga do começo ao fim da carta.",
+    "learningObjective": "Ver o fio da carta, da fé entregue à glória final.",
+    "evidence": [
+      "Judas 1:3",
+      "Judas 1:21",
+      "Judas 1:24"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-05",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Judas 1:24, como Deus apresentará os crentes diante da glória?",
+    "prompt": "Em Judas 1:24, como Deus apresentará os crentes diante da glória?",
+    "cue": "Em Judas 1:24, como Deus apresentará os crentes diante da glória?",
+    "verseRef": "Judas 1:24",
+    "passageText": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "template": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, ___ diante da sua glória,",
+    "options": [
+      {
+        "id": "a",
+        "text": "divididos"
+      },
+      {
+        "id": "b",
+        "text": "temerosos"
+      },
+      {
+        "id": "c",
+        "text": "imaculados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para vos apresentar com exultação, imaculados diante da sua glória",
+    "feedbackCorrect": "Deus apresentará os crentes imaculados, com exultação, diante da glória.",
+    "feedbackWrong": {
+      "a": "Divididos descreve os escarnecedores, não os guardados.",
+      "b": "A apresentação é com exultação, e não com medo."
+    },
+    "hint": "Veja a palavra junto de exultação no versículo.",
+    "learningObjective": "Lembrar a apresentação final dos crentes por Deus.",
+    "evidence": [
+      "Judas 1:24"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-06",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Judas 1:24 a 1 Pedro 1:5?",
+    "prompt": "O que liga Judas 1:24 a 1 Pedro 1:5?",
+    "cue": "O que liga Judas 1:24 a 1 Pedro 1:5?",
+    "verseRef": "Judas 1:24",
+    "passageText": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,",
+    "passageA": {
+      "ref": "Judas 1:24",
+      "text": "Àquele que é poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória,"
+    },
+    "passageB": {
+      "ref": "1 Pedro 1:5",
+      "text": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardados pelo próprio esforço"
+      },
+      {
+        "id": "b",
+        "text": "Guardados pelo poder de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Sem Deus para guardar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "poderoso para vos guardar de tropeços",
+    "feedbackCorrect": "Nos dois textos, quem guarda os crentes é o poder de Deus.",
+    "feedbackWrong": {
+      "a": "Pedro liga a guarda ao poder de Deus, não ao esforço só.",
+      "c": "Os dois textos afirmam justamente essa guarda de Deus."
+    },
+    "hint": "Veja quem guarda nos dois textos.",
+    "learningObjective": "Ligar a guarda de Deus em Judas e em Pedro.",
+    "evidence": [
+      "Judas 1:24",
+      "1 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-07",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Judas 1:4, toque o título que os ímpios negam sobre Jesus.",
+    "prompt": "Em Judas 1:4, toque o título que os ímpios negam sobre Jesus.",
+    "cue": "Em Judas 1:4, toque o título que os ímpios negam sobre Jesus.",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "Soberano"
+      },
+      {
+        "id": "c",
+        "text": "libertinagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "negam o nosso único Soberano e Senhor, Jesus Cristo",
+    "feedbackCorrect": "Eles negam Jesus, o único Soberano e Senhor.",
+    "feedbackWrong": {
+      "a": "Juízo é o destino anunciado, não o título de Jesus.",
+      "c": "Libertinagem é o uso errado da graça, não um título."
+    },
+    "hint": "Leia os títulos no fim do versículo.",
+    "learningObjective": "Sustentar que distorcer a graça nega o Senhor.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "judas-pro-jd-boss-08",
+    "trail": "judas",
+    "section": "jd-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Judas 1:5–6?",
+    "prompt": "Qual sequência revela o sentido de Judas 1:5–6?",
+    "cue": "Qual sequência revela o sentido de Judas 1:5–6?",
+    "verseRef": "Judas 1:5–6",
+    "passageText": "Quero lembrar a vocês que, embora já estejam cientes de tudo, de uma vez por todas, o Senhor, tendo libertado um povo da terra do Egito, destruiu aqueles que não creram. E aos anjos que não guardaram seu estado original, mas abandonaram seu próprio lar, Deus os tem guardado sob trevas e em algemas eternas para o juízo do grande Dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um povo liberto não crê e cai"
+      },
+      {
+        "id": "b",
+        "text": "Anjos abandonam seu lugar dado"
+      },
+      {
+        "id": "c",
+        "text": "Ambos aguardam o juízo de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "destruiu aqueles que não creram",
+    "feedbackCorrect": "Povo e anjos mostram juízo sobre quem abandona o lugar dado por Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo povo liberto do Egito que não creu."
+    },
+    "hint": "Siga a ordem dos exemplos na carta.",
+    "learningObjective": "Ver os exemplos de Judas como aviso unificado.",
+    "evidence": [
+      "Judas 1:5–6"
+    ]
+  }
+]

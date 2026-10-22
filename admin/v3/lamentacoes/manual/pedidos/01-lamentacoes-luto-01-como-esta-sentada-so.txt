@@ -1,0 +1,76 @@
+Escreva a cena "lamentacoes-luto-01-como-esta-sentada-so" da trilha "lamentacoes" (Lamentações).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "lamentacoes",
+  "title": "Lamentações",
+  "description": "Luto de Jerusalém — e misericórdias que se renovam.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Luto",
+ "mission": {
+  "slug": "lamentacoes-luto-01-como-esta-sentada-so",
+  "title": "Como está sentada solitária",
+  "type": "lesson",
+  "intro": "A cidade que caiu.",
+  "hookRef": "Lamentações 3:22–23",
+  "hookNote": "A cidade que caiu.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre como?"
+ },
+ "v2": {
+  "passageRef": "Lamentações 3:22–23",
+  "context": "A cidade que caiu.",
+  "keyword": "Como",
+  "verseRefs": [
+   "Lamentações 1:1"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lamentações 3:19–26",
+  "Lamentações 1:1"
+ ],
+ "verses": [
+  {
+   "ref": "Lamentações 3:19",
+   "text": "Lembra-te da minha aflição e do meu pranto, do absinto e do veneno."
+  },
+  {
+   "ref": "Lamentações 3:20",
+   "text": "Minha alma, continuamente, se lembra disso e se abate dentro de mim."
+  },
+  {
+   "ref": "Lamentações 3:21",
+   "text": "Isso trarei à memória; é por isso que encontro esperança."
+  },
+  {
+   "ref": "Lamentações 3:22",
+   "text": "As misericórdias do Senhor são a causa pela qual não somos consumidos, pois as suas misericórdias não têm fim."
+  },
+  {
+   "ref": "Lamentações 3:23",
+   "text": "Renovam-se a cada manhã; grande é a tua fidelidade."
+  },
+  {
+   "ref": "Lamentações 3:24",
+   "text": "O Senhor é a minha porção, declara a minha alma; por isso, esperarei nele."
+  },
+  {
+   "ref": "Lamentações 3:25",
+   "text": "Bom é o Senhor para os que nele esperam, para a alma que o busca."
+  },
+  {
+   "ref": "Lamentações 3:26",
+   "text": "É bom aguardar em silêncio a salvação do Senhor."
+  },
+  {
+   "ref": "Lamentações 1:1",
+   "text": "Como está solitária a cidade que outrora foi populosa! Tornou-se como viúva a que foi grande entre as nações; como princesa entre as províncias, agora está sujeita a trabalhos forçados!"
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,2546 @@
+[
+  {
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 1:2, Habacuque clama ao Senhor e diz que não é ouvido.",
+    "prompt": "Em Habacuque 1:2, Habacuque clama ao Senhor e diz que não é ouvido.",
+    "cue": "Em Habacuque 1:2, Habacuque clama ao Senhor e diz que não é ouvido.",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "clamarei eu, e tu não me ouvirás",
+    "feedbackCorrect": "O profeta abre o livro clamando e dizendo que ainda não foi ouvido.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Habacuque 1:2 e veja o clamor do profeta."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar o clamor inicial de Habacuque a Deus.",
+    "evidence": [
+      "Habacuque 1:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 2:1, toque o lugar onde Habacuque se coloca para vigiar.",
+    "prompt": "Em Habacuque 2:1, toque o lugar onde Habacuque se coloca para vigiar.",
+    "cue": "Em Habacuque 2:1, toque o lugar onde Habacuque se coloca para vigiar.",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "minha queixa"
+      },
+      {
+        "id": "b",
+        "text": "torre de vigia"
+      },
+      {
+        "id": "c",
+        "text": "fortaleza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Estarei na minha torre de vigia",
+    "feedbackCorrect": "Ele se coloca na torre de vigia, como sentinela à espera da resposta.",
+    "feedbackWrong": {
+      "a": "A queixa é o motivo da espera, não o lugar onde ele se coloca.",
+      "c": "A fortaleza é citada junto, mas o posto de vigia vem antes dela."
+    },
+    "hint": "Procure o posto de observação no começo.",
+    "learningObjective": "Identificar onde Habacuque se coloca para esperar em Deus.",
+    "evidence": [
+      "Habacuque 2:1"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 2:2, o que o Senhor manda fazer com a visão?",
+    "prompt": "Segundo Habacuque 2:2, o que o Senhor manda fazer com a visão?",
+    "cue": "Segundo Habacuque 2:2, o que o Senhor manda fazer com a visão?",
+    "verseRef": "Habacuque 2:2",
+    "passageText": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em tábuas, para que até quem passa correndo possa lê-la.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardá-la só para o profeta"
+      },
+      {
+        "id": "b",
+        "text": "Contá-la apenas aos reis"
+      },
+      {
+        "id": "c",
+        "text": "Escrevê-la clara em tábuas"
+      },
+      {
+        "id": "d",
+        "text": "Escondê-la até o fim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Escreva a visão e a torne clara em tábuas",
+    "feedbackCorrect": "A visão deve ser escrita de forma clara, para quem passa correndo ler.",
+    "feedbackWrong": {
+      "a": "A ordem é tornar a visão clara para ser lida, não guardá-la.",
+      "b": "O texto fala de quem passa correndo, não de um recado só a reis.",
+      "d": "Nada deve ser escondido; a visão vai para tábuas bem claras."
+    },
+    "hint": "Veja a ordem que o Senhor dá ao profeta.",
+    "learningObjective": "Observar a ordem de Deus para registrar a visão.",
+    "evidence": [
+      "Habacuque 2:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 2:3 na ordem do texto.",
+    "prompt": "Monte Habacuque 2:3 na ordem do texto.",
+    "cue": "Monte Habacuque 2:3 na ordem do texto.",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque a visão ainda está para cumprir-se"
+      },
+      {
+        "id": "b",
+        "text": "ela se apressa para o fim e não falhará"
+      },
+      {
+        "id": "c",
+        "text": "pois certamente virá, não tardará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque a visão ainda está para cumprir-se no tempo determinado",
+    "feedbackCorrect": "A visão se cumprirá no tempo determinado e, mesmo tardando, virá.",
+    "feedbackWrong": {
+      "default": "Comece pela visão que ainda vai se cumprir; o virá fecha o versículo."
+    },
+    "hint": "O versículo começa falando da visão.",
+    "learningObjective": "Reconhecer a sequência da promessa em Habacuque 2:3.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 2:2, em que a visão deve ser escrita de forma clara?",
+    "prompt": "Em Habacuque 2:2, em que a visão deve ser escrita de forma clara?",
+    "cue": "Em Habacuque 2:2, em que a visão deve ser escrita de forma clara?",
+    "verseRef": "Habacuque 2:2",
+    "passageText": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em tábuas, para que até quem passa correndo possa lê-la.",
+    "template": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em ___, para que até quem passa correndo possa lê-la.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pedras"
+      },
+      {
+        "id": "b",
+        "text": "tábuas"
+      },
+      {
+        "id": "c",
+        "text": "folhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a torne clara em tábuas",
+    "feedbackCorrect": "Escrita em tábuas, a visão fica clara para quem passa correndo.",
+    "feedbackWrong": {
+      "a": "O suporte citado no versículo é outro; releia a ordem do Senhor.",
+      "c": "O texto não fala desse material; veja onde a visão é escrita."
+    },
+    "hint": "Veja o suporte da escrita no versículo.",
+    "learningObjective": "Lembrar onde a visão deveria ser registrada.",
+    "evidence": [
+      "Habacuque 2:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "passageA": {
+      "ref": "Habacuque 1:2",
+      "text": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Habacuque vê violência ao redor e leva a dor a Deus em oração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele desiste de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ele esconde a sua dor"
+      },
+      {
+        "id": "c",
+        "text": "Ele clama a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Até quando, Senhor, clamarei eu",
+    "feedbackCorrect": "Diante da violência, Habacuque não se cala; ele clama ao Senhor.",
+    "feedbackWrong": {
+      "a": "Quem desiste não continua clamando nem vigiando pela resposta.",
+      "b": "Ele não esconde nada; abre o livro gritando a Deus."
+    },
+    "hint": "Veja o que o profeta faz com a dor.",
+    "learningObjective": "Ligar o clamor de Habacuque à oração diante da injustiça.",
+    "evidence": [
+      "Habacuque 1:2"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 2:1, Habacuque desiste de esperar e abandona o seu posto de vigia.",
+    "prompt": "Em Habacuque 2:1, Habacuque desiste de esperar e abandona o seu posto de vigia.",
+    "cue": "Em Habacuque 2:1, Habacuque desiste de esperar e abandona o seu posto de vigia.",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Estarei na minha torre de vigia",
+    "feedbackCorrect": "Ele faz o contrário; fica no posto, vigiando pela resposta de Deus.",
+    "feedbackWrong": {
+      "true": "Releia Habacuque 2:1; ele se coloca na torre para vigiar."
+    },
+    "hint": "Veja a decisão do profeta no versículo.",
+    "learningObjective": "Compreender que a queixa de Habacuque vira espera atenta.",
+    "evidence": [
+      "Habacuque 2:1"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 2:3, toque a palavra que garante que a visão virá.",
+    "prompt": "Em Habacuque 2:3, toque a palavra que garante que a visão virá.",
+    "cue": "Em Habacuque 2:3, toque a palavra que garante que a visão virá.",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "certamente"
+      },
+      {
+        "id": "b",
+        "text": "tardar"
+      },
+      {
+        "id": "c",
+        "text": "falhará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois certamente virá, não tardará",
+    "feedbackCorrect": "Mesmo se tardar, a visão virá; Deus garante o seu cumprimento.",
+    "feedbackWrong": {
+      "b": "Essa palavra fala da demora possível, não da garantia de Deus.",
+      "c": "O texto diz que a visão não fará isso; a garantia vem depois."
+    },
+    "hint": "Procure a garantia no fim do versículo.",
+    "learningObjective": "Reconhecer a certeza do cumprimento da visão.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Habacuque 2:1 se liga a Habacuque 1:2?",
+    "prompt": "Como Habacuque 2:1 se liga a Habacuque 1:2?",
+    "cue": "Como Habacuque 2:1 se liga a Habacuque 1:2?",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depois de clamar, ele abandona a oração"
+      },
+      {
+        "id": "b",
+        "text": "Ele já sabe tudo o que Deus dirá"
+      },
+      {
+        "id": "c",
+        "text": "Depois de clamar, ele vigia pela resposta"
+      },
+      {
+        "id": "d",
+        "text": "A queixa dele encerra o diálogo com Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vigiarei para ver o que Deus me dirá",
+    "feedbackCorrect": "O clamor não é o fim; Habacuque vigia para ouvir o que Deus dirá.",
+    "feedbackWrong": {
+      "a": "Ele permanece no posto de vigia, à espera da resposta.",
+      "b": "Ele vigia justamente porque ainda vai ouvir Deus.",
+      "d": "O diálogo continua; Deus responde em Habacuque 2:2."
+    },
+    "hint": "Pense no passo seguinte ao clamor.",
+    "learningObjective": "Relacionar o clamor do profeta com a espera pela resposta.",
+    "evidence": [
+      "Habacuque 2:1",
+      "Habacuque 1:2"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena de Habacuque 1:2 a 2:2?",
+    "prompt": "Como avança a cena de Habacuque 1:2 a 2:2?",
+    "cue": "Como avança a cena de Habacuque 1:2 a 2:2?",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque clama diante da violência"
+      },
+      {
+        "id": "b",
+        "text": "O profeta vigia à espera da resposta"
+      },
+      {
+        "id": "c",
+        "text": "Deus manda escrever a visão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vigiarei para ver o que Deus me dirá",
+    "feedbackCorrect": "Primeiro o clamor, depois a vigia, e então Deus manda escrever.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor de 1:2; a escrita da visão vem na resposta."
+    },
+    "hint": "A resposta de Deus é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento do clamor à resposta de Deus.",
+    "evidence": [
+      "Habacuque 1:2",
+      "Habacuque 2:1–2"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 2:3, o que Deus manda fazer se a visão tardar?",
+    "prompt": "Em Habacuque 2:3, o que Deus manda fazer se a visão tardar?",
+    "cue": "Em Habacuque 2:3, o que Deus manda fazer se a visão tardar?",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "template": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, ___, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esqueça-o"
+      },
+      {
+        "id": "b",
+        "text": "ignore-o"
+      },
+      {
+        "id": "c",
+        "text": "espera-o"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Se tardar, espera-o, pois certamente virá",
+    "feedbackCorrect": "A ordem para o tempo de demora é aguardar, pois a visão virá.",
+    "feedbackWrong": {
+      "a": "Esquecer seria abandonar a promessa que Deus garantiu.",
+      "b": "Deus não manda ignorar a visão; ela certamente se cumprirá."
+    },
+    "hint": "Veja a ordem dada para o tempo de demora.",
+    "learningObjective": "Compreender a espera confiante diante da demora.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 1:2 a Salmos 13:1?",
+    "prompt": "O que liga Habacuque 1:2 a Salmos 13:1?",
+    "cue": "O que liga Habacuque 1:2 a Salmos 13:1?",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "passageA": {
+      "ref": "Habacuque 1:2",
+      "text": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?"
+    },
+    "passageB": {
+      "ref": "Salmos 13:1",
+      "text": "Até quando, Senhor? Esquecer-te-ás de mim para sempre? Até quando ocultarás de mim o Teu rosto?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Louvor sem nenhuma dor"
+      },
+      {
+        "id": "b",
+        "text": "O mesmo clamor até quando"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio diante da injustiça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Até quando, Senhor, clamarei eu",
+    "feedbackCorrect": "Nos dois textos, quem sofre pergunta a Deus até quando, sem soltar a fé.",
+    "feedbackWrong": {
+      "a": "Os dois textos nascem da dor, não de um louvor sem luta.",
+      "c": "Nenhum dos dois se cala; ambos levam a pergunta a Deus."
+    },
+    "hint": "Compare a primeira pergunta dos dois textos.",
+    "learningObjective": "Relacionar o clamor de Habacuque ao clamor dos Salmos.",
+    "evidence": [
+      "Habacuque 1:2",
+      "Salmos 13:1"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Habacuque 2:3 ensina que esperar pela visão é confiar que ela virá mesmo se tardar.",
+    "prompt": "Habacuque 2:3 ensina que esperar pela visão é confiar que ela virá mesmo se tardar.",
+    "cue": "Habacuque 2:3 ensina que esperar pela visão é confiar que ela virá mesmo se tardar.",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Se tardar, espera-o, pois certamente virá",
+    "feedbackCorrect": "A espera não é vazia; ela se apoia na certeza de que a visão virá.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Habacuque 2:3; a visão certamente virá."
+    },
+    "hint": "Veja o motivo dado para esperar.",
+    "learningObjective": "Interpretar a espera como confiança na palavra de Deus.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:1, toque o verbo que mostra uma espera atenta e ativa.",
+    "prompt": "Em Habacuque 2:1, toque o verbo que mostra uma espera atenta e ativa.",
+    "cue": "Em Habacuque 2:1, toque o verbo que mostra uma espera atenta e ativa.",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vigiarei"
+      },
+      {
+        "id": "b",
+        "text": "Estarei"
+      },
+      {
+        "id": "c",
+        "text": "colocarei-me"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e vigiarei para ver o que Deus me dirá",
+    "feedbackCorrect": "Esperar, aqui, é vigiar atento, como quem guarda um posto.",
+    "feedbackWrong": {
+      "b": "Esse verbo fala de estar no lugar; a vigilância vem no verbo seguinte.",
+      "c": "Esse verbo fala de se colocar no posto, não de guardar atento."
+    },
+    "hint": "Procure a ação de quem guarda um posto.",
+    "learningObjective": "Sustentar com o texto que esperar em Deus é ativo.",
+    "evidence": [
+      "Habacuque 2:1"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Habacuque 1:2 e 2:1 sustentam sobre perguntar a Deus?",
+    "prompt": "Que leitura Habacuque 1:2 e 2:1 sustentam sobre perguntar a Deus?",
+    "cue": "Que leitura Habacuque 1:2 e 2:1 sustentam sobre perguntar a Deus?",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus só ouve quem nunca duvida"
+      },
+      {
+        "id": "b",
+        "text": "Quem questiona deve afastar-se de Deus"
+      },
+      {
+        "id": "c",
+        "text": "A queixa honesta pode virar espera confiante"
+      },
+      {
+        "id": "d",
+        "text": "Perguntar a Deus é sempre falta de fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "qual será a resposta que terei à minha queixa",
+    "feedbackCorrect": "Habacuque pergunta, vigia e ouve Deus; a queixa vira espera confiante.",
+    "feedbackWrong": {
+      "a": "O próprio Habacuque duvida, clama e é ouvido por Deus.",
+      "b": "O profeta se aproxima de Deus com a queixa, não se afasta dele.",
+      "d": "Deus responde ao profeta que pergunta; não o trata como sem fé."
+    },
+    "hint": "Siga o caminho do profeta do clamor à vigia.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre a queixa a Deus.",
+    "evidence": [
+      "Habacuque 1:2",
+      "Habacuque 2:1"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do profeta em Habacuque?",
+    "prompt": "Qual sequência revela o caminho do profeta em Habacuque?",
+    "cue": "Qual sequência revela o caminho do profeta em Habacuque?",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque leva a violência a Deus em clamor"
+      },
+      {
+        "id": "b",
+        "text": "Deus responde e manda registrar a visão"
+      },
+      {
+        "id": "c",
+        "text": "Quem espera confia que a visão virá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pois certamente virá, não tardará",
+    "feedbackCorrect": "Clamor, resposta registrada e espera confiante; esse é o caminho do livro.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor de 1:2; a confiança na visão fecha o caminho."
+    },
+    "hint": "Siga do clamor à promessa que se cumprirá.",
+    "learningObjective": "Ver o fio que liga clamor, resposta e confiança.",
+    "evidence": [
+      "Habacuque 1:2",
+      "Habacuque 2:2–3"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 1:2, que palavra resume a injustiça que Habacuque grita a Deus?",
+    "prompt": "Em Habacuque 1:2, que palavra resume a injustiça que Habacuque grita a Deus?",
+    "cue": "Em Habacuque 1:2, que palavra resume a injustiça que Habacuque grita a Deus?",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "template": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"___!\" e não me salvarás?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio"
+      },
+      {
+        "id": "c",
+        "text": "Violência"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Até quando gritarei a Ti",
+    "feedbackCorrect": "O grito do profeta nomeia o mal que ele vê ao redor e leva a Deus.",
+    "feedbackWrong": {
+      "a": "O cenário é de dor e injustiça, não de celebração.",
+      "b": "O problema não é esse; releia o grito entre aspas no versículo."
+    },
+    "hint": "Releia o grito do profeta no versículo.",
+    "learningObjective": "Lembrar a palavra que resume a queixa de Habacuque.",
+    "evidence": [
+      "Habacuque 1:2"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 2:1 a Salmos 130:5?",
+    "prompt": "O que liga Habacuque 2:1 a Salmos 130:5?",
+    "cue": "O que liga Habacuque 2:1 a Salmos 130:5?",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "passageA": {
+      "ref": "Habacuque 2:1",
+      "text": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa."
+    },
+    "passageB": {
+      "ref": "Salmos 130:5",
+      "text": "Espero no Senhor; a minha alma O aguarda e confio na Sua palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Responder no lugar de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Esperar confiante no Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Desistir de aguardar resposta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "vigiarei para ver o que Deus me dirá",
+    "feedbackCorrect": "O vigia de Habacuque e o salmista aguardam o Senhor com confiança.",
+    "feedbackWrong": {
+      "a": "Nos dois, quem espera olha para Deus, e não responde por ele.",
+      "c": "Os dois textos falam de aguardar, não de abandonar a espera."
+    },
+    "hint": "Veja a atitude de quem aguarda nos dois textos.",
+    "learningObjective": "Ligar a vigia de Habacuque à espera confiante nos Salmos.",
+    "evidence": [
+      "Habacuque 2:1",
+      "Salmos 130:5"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 2:4, o soberbo é apresentado como o exemplo de quem viverá pela sua fé.",
+    "prompt": "Em Habacuque 2:4, o soberbo é apresentado como o exemplo de quem viverá pela sua fé.",
+    "cue": "Em Habacuque 2:4, o soberbo é apresentado como o exemplo de quem viverá pela sua fé.",
+    "verseRef": "Habacuque 2:3–4",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará. Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "Quem viverá pela fé é o justo, em contraste com o soberbo.",
+    "feedbackWrong": {
+      "true": "Releia Habacuque 2:4; viver pela fé é dito do justo, não do soberbo."
+    },
+    "hint": "Veja de quem o texto fala no fim.",
+    "learningObjective": "Observar o contraste entre o soberbo e o justo.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 2:4, toque quem viverá pela sua fé.",
+    "prompt": "Em Habacuque 2:4, toque quem viverá pela sua fé.",
+    "cue": "Em Habacuque 2:4, toque quem viverá pela sua fé.",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "soberbo"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "É o justo, e não o soberbo, quem viverá confiando em Deus.",
+    "feedbackWrong": {
+      "a": "O soberbo se afasta; sua alma não é reta nele.",
+      "c": "A alma citada é a do soberbo, que não é reta nele."
+    },
+    "hint": "Procure o sujeito do verbo viver no fim.",
+    "learningObjective": "Identificar quem viverá pela fé em Habacuque 2:4.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 2:4, como é a alma do soberbo?",
+    "prompt": "Segundo Habacuque 2:4, como é a alma do soberbo?",
+    "cue": "Segundo Habacuque 2:4, como é a alma do soberbo?",
+    "verseRef": "Habacuque 2:3–4",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará. Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reta e humilde diante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Igual à alma do justo"
+      },
+      {
+        "id": "c",
+        "text": "Cheia de fé confiante"
+      },
+      {
+        "id": "d",
+        "text": "Não é reta nele"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "sua alma não é reta nele",
+    "feedbackCorrect": "Por dentro, o soberbo não é reto; por isso ele se afastará.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário sobre a alma do soberbo.",
+      "b": "O versículo contrasta os dois; não os apresenta como iguais.",
+      "c": "A fé que vive é a do justo, no fim do versículo."
+    },
+    "hint": "Leia a frase sobre o soberbo no começo.",
+    "learningObjective": "Observar como o texto descreve o soberbo por dentro.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 2:4 na ordem do texto.",
+    "prompt": "Monte Habacuque 2:4 na ordem do texto.",
+    "cue": "Monte Habacuque 2:4 na ordem do texto.",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que o soberbo se afastará"
+      },
+      {
+        "id": "b",
+        "text": "sua alma não é reta nele"
+      },
+      {
+        "id": "c",
+        "text": "mas o justo viverá pela sua fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "Primeiro o soberbo que se afasta, depois o justo que vive pela fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo soberbo; o justo que vive pela fé fecha o versículo."
+    },
+    "hint": "O versículo começa pelo soberbo.",
+    "learningObjective": "Reconhecer a sequência do contraste em Habacuque 2:4.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 2:4, o que o justo fará pela sua fé?",
+    "prompt": "Em Habacuque 2:4, o que o justo fará pela sua fé?",
+    "cue": "Em Habacuque 2:4, o que o justo fará pela sua fé?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo ___ pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cairá"
+      },
+      {
+        "id": "b",
+        "text": "viverá"
+      },
+      {
+        "id": "c",
+        "text": "fugirá"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "Confiando em Deus, o justo viverá mesmo enquanto o juízo vem.",
+    "feedbackWrong": {
+      "a": "Quem se afasta é o soberbo; do justo o texto diz outra coisa.",
+      "c": "O justo não foge; ele permanece confiando em Deus."
+    },
+    "hint": "Veja o verbo ligado ao justo no fim.",
+    "learningObjective": "Lembrar a promessa feita ao justo em Habacuque 2:4.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 2:3–4",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará. Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus contrasta o soberbo com quem confia nele e permanece firme."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O justo confia em Deus"
+      },
+      {
+        "id": "b",
+        "text": "A fé não sustenta ninguém"
+      },
+      {
+        "id": "c",
+        "text": "O soberbo viverá para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "O centro da cena é o justo que vive apoiado na confiança em Deus.",
+    "feedbackWrong": {
+      "b": "O texto afirma justamente que o justo viverá pela sua fé.",
+      "c": "O soberbo se afastará; a vida prometida é a do justo."
+    },
+    "hint": "Veja quem permanece firme na cena.",
+    "learningObjective": "Ligar Habacuque 2:4 à confiança que sustenta o justo.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 2:3, a visão falhará se demorar além do tempo que o profeta espera.",
+    "prompt": "Em Habacuque 2:3, a visão falhará se demorar além do tempo que o profeta espera.",
+    "cue": "Em Habacuque 2:3, a visão falhará se demorar além do tempo que o profeta espera.",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Se tardar, espera-o, pois certamente virá",
+    "feedbackCorrect": "Mesmo se tardar, a visão certamente virá; ela não falhará.",
+    "feedbackWrong": {
+      "true": "Releia Habacuque 2:3; a demora não cancela a promessa de Deus."
+    },
+    "hint": "Veja o que Deus garante sobre a visão.",
+    "learningObjective": "Compreender que a demora não anula o cumprimento da visão.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 2:4, toque a palavra que marca o contraste entre o soberbo e o justo.",
+    "prompt": "Em Habacuque 2:4, toque a palavra que marca o contraste entre o soberbo e o justo.",
+    "cue": "Em Habacuque 2:4, toque a palavra que marca o contraste entre o soberbo e o justo.",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nele"
+      },
+      {
+        "id": "b",
+        "text": "Eis"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "Depois do soberbo, essa palavra vira a frase para o justo que vive.",
+    "feedbackWrong": {
+      "a": "Essa palavra indica onde a alma não é reta, não o contraste.",
+      "b": "Essa palavra só abre a frase sobre o soberbo, sem contrastar nada."
+    },
+    "hint": "Procure a palavrinha antes de falar do justo.",
+    "learningObjective": "Reconhecer o marcador do contraste em Habacuque 2:4.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que o contraste de Habacuque 2:4 mostra sobre o soberbo e o justo?",
+    "prompt": "O que o contraste de Habacuque 2:4 mostra sobre o soberbo e o justo?",
+    "cue": "O que o contraste de Habacuque 2:4 mostra sobre o soberbo e o justo?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O soberbo é reto e o justo se afasta de Deus"
+      },
+      {
+        "id": "b",
+        "text": "A vida do justo não depende de confiar em Deus"
+      },
+      {
+        "id": "c",
+        "text": "Os dois vivem do mesmo jeito diante de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Um confia em si e cai, outro confia em Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "O soberbo se apoia em si e se afasta; o justo vive confiando em Deus.",
+    "feedbackWrong": {
+      "a": "É o inverso; a alma do soberbo não é reta, e o justo vive.",
+      "b": "O versículo liga a vida do justo justamente à sua confiança.",
+      "c": "O texto os coloca em lados opostos, não no mesmo caminho."
+    },
+    "hint": "Compare o fim de cada um no versículo.",
+    "learningObjective": "Relacionar o soberbo e o justo no contraste de Habacuque 2:4.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a resposta de Deus em Habacuque 2:3–4?",
+    "prompt": "Como avança a resposta de Deus em Habacuque 2:3–4?",
+    "cue": "Como avança a resposta de Deus em Habacuque 2:3–4?",
+    "verseRef": "Habacuque 2:3–4",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará. Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A visão virá no tempo determinado"
+      },
+      {
+        "id": "b",
+        "text": "O soberbo é contrastado com o justo"
+      },
+      {
+        "id": "c",
+        "text": "O justo viverá confiando em Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "A promessa que virá sustenta o contraste entre o soberbo e o justo.",
+    "feedbackWrong": {
+      "default": "Comece pela visão que virá; a vida do justo fecha o trecho."
+    },
+    "hint": "A promessa sobre a visão vem primeiro.",
+    "learningObjective": "Compreender o encadeamento da resposta de Deus ao profeta.",
+    "evidence": [
+      "Habacuque 2:3–4"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 2:3, o que a visão nunca fará mesmo se tardar?",
+    "prompt": "Em Habacuque 2:3, o que a visão nunca fará mesmo se tardar?",
+    "cue": "Em Habacuque 2:3, o que a visão nunca fará mesmo se tardar?",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "template": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não ___. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mentirá"
+      },
+      {
+        "id": "b",
+        "text": "calará"
+      },
+      {
+        "id": "c",
+        "text": "falhará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ela se apressa para o fim e não falhará",
+    "feedbackCorrect": "A visão tem tempo certo e Deus garante que ela se cumprirá.",
+    "feedbackWrong": {
+      "a": "Releia o verbo usado sobre a visão no meio do versículo.",
+      "b": "A visão foi mandada escrever para ser lida, não silenciada."
+    },
+    "hint": "Veja a garantia dada no meio do versículo.",
+    "learningObjective": "Compreender a certeza do cumprimento da visão.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 2:4 a Romanos 1:17?",
+    "prompt": "O que liga Habacuque 2:4 a Romanos 1:17?",
+    "cue": "O que liga Habacuque 2:4 a Romanos 1:17?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Romanos 1:17",
+      "text": "Porque nele é revelada a justiça de Deus, de fé em fé, como está escrito: \"O justo viverá pela fé.\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé dispensa permanecer fiel"
+      },
+      {
+        "id": "b",
+        "text": "O soberbo viverá pela força"
+      },
+      {
+        "id": "c",
+        "text": "O justo viverá pela fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "Paulo cita Habacuque; a mesma frase sustenta o justo nos dois textos.",
+    "feedbackWrong": {
+      "a": "Em Habacuque, viver pela fé é permanecer fiel enquanto se espera.",
+      "b": "Nos dois textos, quem vive é o justo que confia, não o soberbo."
+    },
+    "hint": "Veja a frase que Paulo cita de Habacuque.",
+    "learningObjective": "Relacionar Habacuque 2:4 com a citação de Paulo em Romanos.",
+    "evidence": [
+      "Habacuque 2:4",
+      "Romanos 1:17"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Habacuque 2:4–5 ensina que o arrogante insaciável não permanecerá para sempre.",
+    "prompt": "Habacuque 2:4–5 ensina que o arrogante insaciável não permanecerá para sempre.",
+    "cue": "Habacuque 2:4–5 ensina que o arrogante insaciável não permanecerá para sempre.",
+    "verseRef": "Habacuque 2:4–5",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé. Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá",
+    "feedbackCorrect": "Quem ajunta tudo para si, como a morte que nunca se farta, não ficará.",
+    "feedbackWrong": {
+      "false": "Releia Habacuque 2:5; do homem arrogante se diz que não permanecerá."
+    },
+    "hint": "Veja o fim anunciado para o arrogante.",
+    "learningObjective": "Interpretar o fim do arrogante à luz de Habacuque 2:5.",
+    "evidence": [
+      "Habacuque 2:4–5"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:4, toque a palavra que sustenta a vida do justo.",
+    "prompt": "Em Habacuque 2:4, toque a palavra que sustenta a vida do justo.",
+    "cue": "Em Habacuque 2:4, toque a palavra que sustenta a vida do justo.",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "soberbo"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "O justo vive apoiado na confiança em Deus, não em si mesmo.",
+    "feedbackWrong": {
+      "b": "O soberbo é o contraste; quem vive é o justo que confia.",
+      "c": "A alma citada no versículo é a do soberbo, que não é reta."
+    },
+    "hint": "Procure aquilo pelo qual o justo vive.",
+    "learningObjective": "Sustentar com o texto o que mantém o justo vivo.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Habacuque 2:4 sustenta sobre viver pela fé?",
+    "prompt": "Que leitura Habacuque 2:4 sustenta sobre viver pela fé?",
+    "cue": "Que leitura Habacuque 2:4 sustenta sobre viver pela fé?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanecer fiel confiando em Deus no juízo"
+      },
+      {
+        "id": "b",
+        "text": "Acreditar que as circunstâncias vão sumir já"
+      },
+      {
+        "id": "c",
+        "text": "Confiar na própria força e no próprio orgulho"
+      },
+      {
+        "id": "d",
+        "text": "Sentir uma emoção forte por um momento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "No contexto, o justo permanece vivo e fiel confiando em Deus no juízo.",
+    "feedbackWrong": {
+      "b": "O juízo vem mesmo; a promessa é viver confiando, não fugir dele.",
+      "c": "Confiar em si é o caminho do soberbo, que o texto reprova.",
+      "d": "A fé do texto sustenta a vida inteira, não um momento de emoção."
+    },
+    "hint": "Pense no que sustenta o justo enquanto espera.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho dessa palavra na Bíblia?",
+    "prompt": "Qual sequência revela o caminho dessa palavra na Bíblia?",
+    "cue": "Qual sequência revela o caminho dessa palavra na Bíblia?",
+    "verseRef": "Habacuque 2:3–4",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará. Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque anuncia o justo que vive pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Paulo cita essa palavra ao falar do evangelho"
+      },
+      {
+        "id": "c",
+        "text": "Hebreus chama o justo a não recuar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "De Habacuque a Paulo e a Hebreus, o justo vive confiando e sem recuar.",
+    "feedbackWrong": {
+      "default": "Comece por Habacuque; Hebreus, no fim da Bíblia, fecha o caminho."
+    },
+    "hint": "Siga a ordem dos livros na Bíblia.",
+    "learningObjective": "Ver Habacuque 2:4 como fio retomado pelo Novo Testamento.",
+    "evidence": [
+      "Habacuque 2:4",
+      "Romanos 1:17",
+      "Hebreus 10:38"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:5, a boca do arrogante se abre como o quê?",
+    "prompt": "Em Habacuque 2:5, a boca do arrogante se abre como o quê?",
+    "cue": "Em Habacuque 2:5, a boca do arrogante se abre como o quê?",
+    "verseRef": "Habacuque 2:5",
+    "passageText": "Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos.",
+    "template": "Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o ___, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepulcro"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "campo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cuja boca se abre como o sepulcro",
+    "feedbackCorrect": "Como a morte que nunca se farta, o arrogante quer engolir tudo.",
+    "feedbackWrong": {
+      "b": "A imagem do texto é de morte insaciável, não de um lugar de governo.",
+      "c": "Releia a comparação feita com a boca do homem arrogante."
+    },
+    "hint": "Veja a comparação com a morte no versículo.",
+    "learningObjective": "Lembrar a imagem que revela a ganância do arrogante.",
+    "evidence": [
+      "Habacuque 2:5"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 2:4 a Hebreus 10:38?",
+    "prompt": "O que liga Habacuque 2:4 a Hebreus 10:38?",
+    "cue": "O que liga Habacuque 2:4 a Hebreus 10:38?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Hebreus 10:38",
+      "text": "Mas o justo viverá pela fé; e, se alguém retroceder, a minha alma não se compraz nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Recuar diante do juízo"
+      },
+      {
+        "id": "b",
+        "text": "Viver pelo próprio orgulho"
+      },
+      {
+        "id": "c",
+        "text": "Não recuar, mas permanecer fiel"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "Hebreus cita Habacuque e chama o justo a viver sem voltar atrás.",
+    "feedbackWrong": {
+      "a": "Hebreus diz que Deus não se agrada de quem volta atrás.",
+      "b": "Viver do orgulho é o caminho do soberbo, reprovado nos dois textos."
+    },
+    "hint": "Veja o chamado feito a quem vive pela fé.",
+    "learningObjective": "Ligar Habacuque 2:4 ao chamado de Hebreus para não recuar.",
+    "evidence": [
+      "Habacuque 2:4",
+      "Hebreus 10:38"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 2:2, o Senhor responde a Habacuque e manda escrever a visão.",
+    "prompt": "Em Habacuque 2:2, o Senhor responde a Habacuque e manda escrever a visão.",
+    "cue": "Em Habacuque 2:2, o Senhor responde a Habacuque e manda escrever a visão.",
+    "verseRef": "Habacuque 2:2",
+    "passageText": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em tábuas, para que até quem passa correndo possa lê-la.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O SENHOR me respondeu e disse",
+    "feedbackCorrect": "Deus não deixa o profeta sem resposta; ele manda registrar a visão.",
+    "feedbackWrong": {
+      "false": "Releia Habacuque 2:2; o Senhor responde e dá a ordem de escrever."
+    },
+    "hint": "Veja quem fala no versículo.",
+    "learningObjective": "Observar que Deus responde ao clamor do profeta.",
+    "evidence": [
+      "Habacuque 2:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 1:2, toque a quem Habacuque dirige o seu clamor.",
+    "prompt": "Em Habacuque 1:2, toque a quem Habacuque dirige o seu clamor.",
+    "cue": "Em Habacuque 1:2, toque a quem Habacuque dirige o seu clamor.",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Violência"
+      },
+      {
+        "id": "b",
+        "text": "Até"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Até quando, Senhor, clamarei eu",
+    "feedbackCorrect": "É ao Senhor que o profeta clama, mesmo sem entender a demora.",
+    "feedbackWrong": {
+      "a": "Isso é o mal que ele vê, não aquele a quem ele clama.",
+      "b": "Essa palavra abre a pergunta sobre o tempo, não nomeia quem ouve."
+    },
+    "hint": "Procure o nome de quem é chamado.",
+    "learningObjective": "Identificar a quem Habacuque dirige a sua queixa.",
+    "evidence": [
+      "Habacuque 1:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 2:3, o que acontecerá com a visão no tempo determinado?",
+    "prompt": "Segundo Habacuque 2:3, o que acontecerá com a visão no tempo determinado?",
+    "cue": "Segundo Habacuque 2:3, o que acontecerá com a visão no tempo determinado?",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela se cumprirá e não falhará"
+      },
+      {
+        "id": "b",
+        "text": "Ela ficará escondida em tábuas"
+      },
+      {
+        "id": "c",
+        "text": "Ela falhará e será abandonada"
+      },
+      {
+        "id": "d",
+        "text": "Ela será esquecida pelo profeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ela se apressa para o fim e não falhará",
+    "feedbackCorrect": "A visão tem tempo certo; Deus garante que ela se cumprirá.",
+    "feedbackWrong": {
+      "b": "A visão é escrita clara em tábuas, para ser lida por todos.",
+      "c": "O texto garante o contrário; a visão não falhará.",
+      "d": "O profeta deve escrevê-la e esperá-la, não esquecê-la."
+    },
+    "hint": "Leia a garantia dada sobre a visão.",
+    "learningObjective": "Observar a certeza do cumprimento da visão.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 2:2 na ordem do texto.",
+    "prompt": "Monte Habacuque 2:2 na ordem do texto.",
+    "cue": "Monte Habacuque 2:2 na ordem do texto.",
+    "verseRef": "Habacuque 2:2",
+    "passageText": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em tábuas, para que até quem passa correndo possa lê-la.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O SENHOR me respondeu e disse"
+      },
+      {
+        "id": "b",
+        "text": "Escreva a visão"
+      },
+      {
+        "id": "c",
+        "text": "e a torne clara em tábuas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Escreva a visão e a torne clara em tábuas",
+    "feedbackCorrect": "Deus responde, manda escrever a visão e torná-la clara em tábuas.",
+    "feedbackWrong": {
+      "default": "Comece pela resposta do Senhor; as tábuas fecham o versículo."
+    },
+    "hint": "O versículo começa com a resposta de Deus.",
+    "learningObjective": "Reconhecer a sequência da resposta em Habacuque 2:2.",
+    "evidence": [
+      "Habacuque 2:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 2:2, o que deve ser escrito em tábuas?",
+    "prompt": "Em Habacuque 2:2, o que deve ser escrito em tábuas?",
+    "cue": "Em Habacuque 2:2, o que deve ser escrito em tábuas?",
+    "verseRef": "Habacuque 2:2",
+    "passageText": "O SENHOR me respondeu e disse: Escreva a visão e a torne clara em tábuas, para que até quem passa correndo possa lê-la.",
+    "template": "O SENHOR me respondeu e disse: Escreva a ___ e a torne clara em tábuas, para que até quem passa correndo possa lê-la.",
+    "options": [
+      {
+        "id": "a",
+        "text": "visão"
+      },
+      {
+        "id": "b",
+        "text": "torre"
+      },
+      {
+        "id": "c",
+        "text": "queixa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Escreva a visão e a torne clara em tábuas",
+    "feedbackCorrect": "A resposta de Deus ao profeta deve ficar registrada e clara.",
+    "feedbackWrong": {
+      "b": "Esse é o posto do profeta, não o conteúdo a ser registrado.",
+      "c": "A queixa é do profeta; o que Deus manda escrever é a resposta dele."
+    },
+    "hint": "Veja o conteúdo da ordem de Deus.",
+    "learningObjective": "Lembrar o que Deus manda registrar em Habacuque 2:2.",
+    "evidence": [
+      "Habacuque 2:2"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 2:1 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 2:1 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 2:1 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "passageA": {
+      "ref": "Habacuque 2:1",
+      "text": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de clamar, Habacuque não desiste; ele fica de vigia pela resposta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele vigia esperando Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ele responde a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "Ele abandona o seu posto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Estarei na minha torre de vigia",
+    "feedbackCorrect": "Clamar não é o fim; o profeta permanece de vigia esperando Deus.",
+    "feedbackWrong": {
+      "b": "Quem vigia espera a palavra de Deus, não a própria resposta.",
+      "c": "Ele decide ficar no posto, não abandoná-lo."
+    },
+    "hint": "Veja a atitude do profeta depois do clamor.",
+    "learningObjective": "Ligar a vigia de Habacuque à espera que não desiste.",
+    "evidence": [
+      "Habacuque 2:1"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-07",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 2:1, toque o outro lugar de guarda citado junto à torre.",
+    "prompt": "Em Habacuque 2:1, toque o outro lugar de guarda citado junto à torre.",
+    "cue": "Em Habacuque 2:1, toque o outro lugar de guarda citado junto à torre.",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "resposta"
+      },
+      {
+        "id": "b",
+        "text": "fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "torre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "colocarei-me sobre a fortaleza",
+    "feedbackCorrect": "Ele se coloca sobre a fortaleza, em posto alto de quem vigia.",
+    "feedbackWrong": {
+      "a": "Isso é o que ele espera de Deus, não um lugar de guarda.",
+      "c": "Esse é o primeiro lugar citado; o outro vem logo depois dele."
+    },
+    "hint": "Leia o segundo lugar citado no versículo.",
+    "learningObjective": "Observar os lugares de vigia citados em Habacuque 2:1.",
+    "evidence": [
+      "Habacuque 2:1"
+    ]
+  },
+  {
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-08",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 1:2 na ordem do texto.",
+    "prompt": "Monte Habacuque 1:2 na ordem do texto.",
+    "cue": "Monte Habacuque 1:2 na ordem do texto.",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Senhor, clamarei eu"
+      },
+      {
+        "id": "b",
+        "text": "e tu não me ouvirás"
+      },
+      {
+        "id": "c",
+        "text": "e não me salvarás"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Até quando, Senhor, clamarei eu, e tu não me ouvirás",
+    "feedbackCorrect": "O clamor insiste; ele clama, sente que não é ouvido e pede salvação.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor ao Senhor; o pedido de salvação fecha o versículo."
+    },
+    "hint": "O versículo começa com a pergunta sobre o tempo.",
+    "learningObjective": "Reconhecer a sequência do clamor em Habacuque 1:2.",
+    "evidence": [
+      "Habacuque 1:2"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 2:3, mesmo se a visão tardar, ela certamente virá.",
+    "prompt": "Em Habacuque 2:3, mesmo se a visão tardar, ela certamente virá.",
+    "cue": "Em Habacuque 2:3, mesmo se a visão tardar, ela certamente virá.",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Se tardar, espera-o, pois certamente virá",
+    "feedbackCorrect": "A demora possível não cancela a certeza de que a visão virá.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Habacuque 2:3; a visão certamente virá."
+    },
+    "hint": "Veja a garantia no fim do versículo.",
+    "learningObjective": "Compreender que tardar não significa falhar.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 2:3, toque a palavra que expressa a certeza de que a visão virá.",
+    "prompt": "Em Habacuque 2:3, toque a palavra que expressa a certeza de que a visão virá.",
+    "cue": "Em Habacuque 2:3, toque a palavra que expressa a certeza de que a visão virá.",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "certamente"
+      },
+      {
+        "id": "b",
+        "text": "tardar"
+      },
+      {
+        "id": "c",
+        "text": "falhará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois certamente virá, não tardará",
+    "feedbackCorrect": "A certeza está na palavra de Deus; por isso a espera faz sentido.",
+    "feedbackWrong": {
+      "b": "Essa palavra fala da demora possível, não da certeza prometida.",
+      "c": "O texto diz que a visão não fará isso; a certeza vem depois."
+    },
+    "hint": "Procure a garantia perto do fim do versículo.",
+    "learningObjective": "Reconhecer onde o texto apoia a certeza da espera.",
+    "evidence": [
+      "Habacuque 2:3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Habacuque 2:4 contrasta o soberbo e o justo?",
+    "prompt": "Como Habacuque 2:4 contrasta o soberbo e o justo?",
+    "cue": "Como Habacuque 2:4 contrasta o soberbo e o justo?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhum dos dois é citado como exemplo de vida"
+      },
+      {
+        "id": "b",
+        "text": "O justo se afasta e o soberbo confia em Deus"
+      },
+      {
+        "id": "c",
+        "text": "Um não é reto por dentro, o outro vive pela fé"
+      },
+      {
+        "id": "d",
+        "text": "Os dois são retos e vivem do mesmo modo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "O soberbo não é reto por dentro; o justo vive confiando em Deus.",
+    "feedbackWrong": {
+      "a": "O justo é citado justamente como quem viverá pela fé.",
+      "b": "É o contrário; quem se afasta é o soberbo que se apoia em si.",
+      "d": "O texto coloca os dois em caminhos opostos, não iguais."
+    },
+    "hint": "Compare o interior de um com a vida do outro.",
+    "learningObjective": "Relacionar o contraste central de Habacuque 2:4.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena de Habacuque 2:1 a 2:3?",
+    "prompt": "Como avança a cena de Habacuque 2:1 a 2:3?",
+    "cue": "Como avança a cena de Habacuque 2:1 a 2:3?",
+    "verseRef": "Habacuque 2:1",
+    "passageText": "Estarei na minha torre de vigia, colocarei-me sobre a fortaleza e vigiarei para ver o que Deus me dirá e qual será a resposta que terei à minha queixa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque vigia à espera da resposta"
+      },
+      {
+        "id": "b",
+        "text": "Deus manda escrever a visão com clareza"
+      },
+      {
+        "id": "c",
+        "text": "A visão virá no tempo determinado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vigiarei para ver o que Deus me dirá",
+    "feedbackCorrect": "Da vigia à escrita da visão, até a certeza de que ela virá.",
+    "feedbackWrong": {
+      "default": "Comece pela vigia do profeta; a visão que virá fecha o trecho."
+    },
+    "hint": "A certeza sobre a visão é o ponto final.",
+    "learningObjective": "Compreender o movimento da vigia à promessa da visão.",
+    "evidence": [
+      "Habacuque 2:1–3"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 2:4, quem viverá pela sua fé?",
+    "prompt": "Em Habacuque 2:4, quem viverá pela sua fé?",
+    "cue": "Em Habacuque 2:4, quem viverá pela sua fé?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o ___ viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "arrogante"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "soberbo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "Quem vive confiando em Deus é o justo, não quem se apoia em si.",
+    "feedbackWrong": {
+      "a": "O arrogante de 2:5 não permanecerá, segundo o texto.",
+      "c": "O soberbo se afasta; sua alma não é reta nele."
+    },
+    "hint": "Veja o sujeito no fim do versículo.",
+    "learningObjective": "Compreender quem é sustentado pela confiança em Deus.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 1:2 a Salmos 13:1?",
+    "prompt": "O que liga Habacuque 1:2 a Salmos 13:1?",
+    "cue": "O que liga Habacuque 1:2 a Salmos 13:1?",
+    "verseRef": "Habacuque 1:2",
+    "passageText": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?",
+    "passageA": {
+      "ref": "Habacuque 1:2",
+      "text": "Até quando, Senhor, clamarei eu, e tu não me ouvirás? Até quando gritarei a Ti: \"Violência!\" e não me salvarás?"
+    },
+    "passageB": {
+      "ref": "Salmos 13:1",
+      "text": "Até quando, Senhor? Esquecer-te-ás de mim para sempre? Até quando ocultarás de mim o Teu rosto?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio que aceita a violência"
+      },
+      {
+        "id": "b",
+        "text": "Alegria sem nenhum clamor"
+      },
+      {
+        "id": "c",
+        "text": "O mesmo clamor até quando"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Até quando, Senhor, clamarei eu",
+    "feedbackCorrect": "Profeta e salmista perguntam até quando, levando a dor a Deus.",
+    "feedbackWrong": {
+      "a": "Nenhum deles se cala; ambos clamam ao Senhor.",
+      "b": "Os dois textos nascem do sofrimento, não de alegria sem luta."
+    },
+    "hint": "Compare a pergunta que abre os dois textos.",
+    "learningObjective": "Relacionar o clamor de Habacuque ao dos Salmos.",
+    "evidence": [
+      "Habacuque 1:2",
+      "Salmos 13:1"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-07",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 2:5, toque aquilo a que o homem arrogante é semelhante.",
+    "prompt": "Em Habacuque 2:5, toque aquilo a que o homem arrogante é semelhante.",
+    "cue": "Em Habacuque 2:5, toque aquilo a que o homem arrogante é semelhante.",
+    "verseRef": "Habacuque 2:5",
+    "passageText": "Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vinho"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele é semelhante à morte que nunca se farta",
+    "feedbackCorrect": "Como a morte que nunca se farta, ele quer ajuntar todos para si.",
+    "feedbackWrong": {
+      "a": "Isso torna o homem enganoso; a comparação direta vem depois.",
+      "b": "Isso é o que ele quer ajuntar, não aquilo a que ele se parece."
+    },
+    "hint": "Procure a comparação no meio do versículo.",
+    "learningObjective": "Reconhecer a imagem da ganância insaciável em Habacuque 2:5.",
+    "evidence": [
+      "Habacuque 2:5"
+    ]
+  },
+  {
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-08",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os destinos em Habacuque 2:4–5?",
+    "prompt": "Como se encadeiam os destinos em Habacuque 2:4–5?",
+    "cue": "Como se encadeiam os destinos em Habacuque 2:4–5?",
+    "verseRef": "Habacuque 2:4–5",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé. Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O soberbo se afasta por dentro"
+      },
+      {
+        "id": "b",
+        "text": "O justo viverá confiando em Deus"
+      },
+      {
+        "id": "c",
+        "text": "O arrogante insaciável não permanecerá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas o justo viverá pela sua fé",
+    "feedbackCorrect": "Soberbo que cai, justo que vive pela fé e arrogante que não fica.",
+    "feedbackWrong": {
+      "default": "Comece pelo soberbo de 2:4; o não permanecerá fecha em 2:5."
+    },
+    "hint": "Siga a ordem dos versículos 4 e 5.",
+    "learningObjective": "Compreender os destinos contrastados em Habacuque 2:4–5.",
+    "evidence": [
+      "Habacuque 2:4–5"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-01",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Habacuque 2:5–6 ensina que quem acumula o que não é seu nunca responderá por isso.",
+    "prompt": "Habacuque 2:5–6 ensina que quem acumula o que não é seu nunca responderá por isso.",
+    "cue": "Habacuque 2:5–6 ensina que quem acumula o que não é seu nunca responderá por isso.",
+    "verseRef": "Habacuque 2:5–6",
+    "passageText": "Quanto mais se entrega ao vinho, mais enganoso se torna; esse homem arrogante, cuja boca se abre como o sepulcro, não permanecerá. Ele é semelhante à morte que nunca se farta e ajunta para si todas as nações congregando todos os povos. Não levantarão, portanto, todos estes contra ele um provérbio e um dito zombador, dizendo: Ai daquele que acumula o que não é seu (até quando?) e daquele que a si mesmo se carrega de penhores!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ai daquele que acumula o que não é seu",
+    "feedbackCorrect": "O texto anuncia juízo sobre o ganancioso, com um ai contra ele.",
+    "feedbackWrong": {
+      "true": "Releia Habacuque 2:6; há um ai sobre quem acumula o que não é seu."
+    },
+    "hint": "Veja o anúncio feito sobre o ganancioso.",
+    "learningObjective": "Interpretar o juízo anunciado sobre quem acumula injustamente.",
+    "evidence": [
+      "Habacuque 2:5–6"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-02",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:4, toque aquilo pelo qual o justo viverá.",
+    "prompt": "Em Habacuque 2:4, toque aquilo pelo qual o justo viverá.",
+    "cue": "Em Habacuque 2:4, toque aquilo pelo qual o justo viverá.",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alma"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "soberbo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "O justo vive apoiado em Deus, permanecendo fiel enquanto espera.",
+    "feedbackWrong": {
+      "a": "A alma citada é a do soberbo, que não é reta nele.",
+      "c": "O soberbo é o contraste de quem vive confiando em Deus."
+    },
+    "hint": "Procure o sustento da vida do justo.",
+    "learningObjective": "Sustentar com o texto o que mantém o justo vivo.",
+    "evidence": [
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-03",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Habacuque 2:3–4 sustenta para quem espera por Deus?",
+    "prompt": "Que leitura Habacuque 2:3–4 sustenta para quem espera por Deus?",
+    "cue": "Que leitura Habacuque 2:3–4 sustenta para quem espera por Deus?",
+    "verseRef": "Habacuque 2:3–4",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará. Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desistir se a resposta demorar a chegar"
+      },
+      {
+        "id": "b",
+        "text": "Exigir que Deus responda no nosso prazo"
+      },
+      {
+        "id": "c",
+        "text": "Confiar no orgulho enquanto Deus demora"
+      },
+      {
+        "id": "d",
+        "text": "Esperar confiando até a visão se cumprir"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Se tardar, espera-o, pois certamente virá",
+    "feedbackCorrect": "Esperar é confiar que a visão virá, vivendo pela fé até lá.",
+    "feedbackWrong": {
+      "a": "A ordem de Deus para a demora é esperar, não abandonar a visão.",
+      "b": "A visão vem no tempo determinado por Deus, não no prazo humano.",
+      "c": "O orgulho é o caminho do soberbo, que o texto coloca em queda."
+    },
+    "hint": "Junte a ordem sobre tardar com a vida do justo.",
+    "learningObjective": "Escolher a interpretação que Habacuque sustenta sobre esperar.",
+    "evidence": [
+      "Habacuque 2:3–4"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-04",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho dessa palavra na Bíblia?",
+    "prompt": "Qual sequência revela o caminho dessa palavra na Bíblia?",
+    "cue": "Qual sequência revela o caminho dessa palavra na Bíblia?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque anuncia o justo pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Paulo retoma essa palavra no evangelho"
+      },
+      {
+        "id": "c",
+        "text": "Hebreus exorta o justo a não recuar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "A palavra de Habacuque atravessa Paulo e chega a Hebreus sem recuar.",
+    "feedbackWrong": {
+      "default": "Comece por Habacuque; Hebreus fecha o caminho na Bíblia."
+    },
+    "hint": "Siga a ordem dos livros na Bíblia.",
+    "learningObjective": "Ver Habacuque 2:4 como fio retomado pelo Novo Testamento.",
+    "evidence": [
+      "Habacuque 2:4",
+      "Romanos 1:17",
+      "Hebreus 10:38"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-05",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:6, de que o ganancioso se carrega a si mesmo?",
+    "prompt": "Em Habacuque 2:6, de que o ganancioso se carrega a si mesmo?",
+    "cue": "Em Habacuque 2:6, de que o ganancioso se carrega a si mesmo?",
+    "verseRef": "Habacuque 2:6",
+    "passageText": "Não levantarão, portanto, todos estes contra ele um provérbio e um dito zombador, dizendo: Ai daquele que acumula o que não é seu (até quando?) e daquele que a si mesmo se carrega de penhores!",
+    "template": "Não levantarão, portanto, todos estes contra ele um provérbio e um dito zombador, dizendo: Ai daquele que acumula o que não é seu (até quando?) e daquele que a si mesmo se carrega de ___!",
+    "options": [
+      {
+        "id": "a",
+        "text": "frutos"
+      },
+      {
+        "id": "b",
+        "text": "penhores"
+      },
+      {
+        "id": "c",
+        "text": "bens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "daquele que a si mesmo se carrega de penhores",
+    "feedbackCorrect": "Quem acumula o que não é seu carrega um peso que voltará contra ele.",
+    "feedbackWrong": {
+      "a": "A imagem é de dívida pesada, não de colheita do campo.",
+      "c": "Releia a palavra exata usada no fim de Habacuque 2:6."
+    },
+    "hint": "Veja o peso citado no fim do versículo.",
+    "learningObjective": "Lembrar a imagem do peso que o ganancioso carrega.",
+    "evidence": [
+      "Habacuque 2:6"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-06",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 2:4 a Romanos 1:17?",
+    "prompt": "O que liga Habacuque 2:4 a Romanos 1:17?",
+    "cue": "O que liga Habacuque 2:4 a Romanos 1:17?",
+    "verseRef": "Habacuque 2:4",
+    "passageText": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Romanos 1:17",
+      "text": "Porque nele é revelada a justiça de Deus, de fé em fé, como está escrito: \"O justo viverá pela fé.\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé é só um sentimento"
+      },
+      {
+        "id": "b",
+        "text": "O justo viverá pela fé"
+      },
+      {
+        "id": "c",
+        "text": "O soberbo viverá pelo orgulho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o justo viverá pela sua fé",
+    "feedbackCorrect": "Paulo cita a frase de Habacuque como centro da vida diante de Deus.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, essa confiança sustenta a vida, não é só emoção.",
+      "c": "Quem vive, nos dois textos, é o justo que confia, não o orgulhoso."
+    },
+    "hint": "Veja a frase citada nos dois textos.",
+    "learningObjective": "Ligar Habacuque 2:4 à citação de Paulo em Romanos.",
+    "evidence": [
+      "Habacuque 2:4",
+      "Romanos 1:17"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-07",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:7, toque quem se levantará de repente contra o opressor.",
+    "prompt": "Em Habacuque 2:7, toque quem se levantará de repente contra o opressor.",
+    "cue": "Em Habacuque 2:7, toque quem se levantará de repente contra o opressor.",
+    "verseRef": "Habacuque 2:7",
+    "passageText": "Não se levantarão de repente os teus credores? E não despertarão aqueles que te hão de abalar? Tu serás por eles despojo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "repente"
+      },
+      {
+        "id": "b",
+        "text": "despojo"
+      },
+      {
+        "id": "c",
+        "text": "credores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Não se levantarão de repente os teus credores",
+    "feedbackCorrect": "Quem explorou será despojado por aqueles que se levantam contra ele.",
+    "feedbackWrong": {
+      "a": "Essa palavra diz como eles se levantam, não quem se levanta.",
+      "b": "Isso é o que o opressor se tornará, não quem se levanta."
+    },
+    "hint": "Procure quem age contra o opressor.",
+    "learningObjective": "Sustentar com o texto a virada contra o opressor.",
+    "evidence": [
+      "Habacuque 2:7"
+    ]
+  },
+  {
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-08",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho completo do profeta no livro?",
+    "prompt": "Qual sequência revela o caminho completo do profeta no livro?",
+    "cue": "Qual sequência revela o caminho completo do profeta no livro?",
+    "verseRef": "Habacuque 2:3",
+    "passageText": "Porque a visão ainda está para cumprir-se no tempo determinado; ela se apressa para o fim e não falhará. Se tardar, espera-o, pois certamente virá, não tardará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta clama diante da violência"
+      },
+      {
+        "id": "b",
+        "text": "Deus responde à queixa do vigia"
+      },
+      {
+        "id": "c",
+        "text": "Quem confia espera a visão cumprir-se"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se tardar, espera-o, pois certamente virá",
+    "feedbackCorrect": "Clamor ouvido, resposta de Deus e espera confiante até o cumprimento.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor de 1:2; a visão que se cumpre fecha o caminho."
+    },
+    "hint": "Siga do primeiro clamor à promessa final.",
+    "learningObjective": "Ver o arco inteiro de Habacuque, do clamor à confiança.",
+    "evidence": [
+      "Habacuque 1:2",
+      "Habacuque 2:2–3"
+    ]
+  }
+]

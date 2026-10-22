@@ -1,0 +1,705 @@
+{
+ "study": {
+  "passageRef": "Gênesis 1:26–27",
+  "passages": [
+   {
+    "ref": "Gênesis 1:26–27"
+   },
+   {
+    "ref": "Gênesis 1:28"
+   }
+  ],
+  "context": "Depois de fazer os seres vivos, Deus fala de um modo novo antes de criar o ser humano. O texto liga essa criação à imagem de Deus e a uma tarefa sobre a terra dada ao homem e à mulher.",
+  "keyword": "imagem",
+  "keywordGloss": "O ser humano foi criado à imagem de Deus, e isso marca sua dignidade e sua tarefa.",
+  "focusQuestion": "Como você trata as pessoas quando lembra que cada uma foi criada por Deus?",
+  "reflectionPrompts": [
+   "Criado por Deus",
+   "Homem e mulher",
+   "Cuidar da terra"
+  ],
+  "facts": [
+   {
+    "text": "Deus anuncia fazer o homem à sua imagem.",
+    "evidenceRef": "Gênesis 1:26",
+    "evidenceSpan": "Façamos o homem à nossa imagem"
+   },
+   {
+    "text": "O ser humano teria domínio sobre os peixes do mar.",
+    "evidenceRef": "Gênesis 1:26",
+    "evidenceSpan": "que ele tenha domínio sobre os peixes do mar"
+   },
+   {
+    "text": "Deus criou o homem à sua imagem.",
+    "evidenceRef": "Gênesis 1:27",
+    "evidenceSpan": "Deus criou o homem à sua imagem"
+   },
+   {
+    "text": "Deus criou homem e mulher.",
+    "evidenceRef": "Gênesis 1:27",
+    "evidenceSpan": "homem e mulher os criou"
+   },
+   {
+    "text": "Deus abençoou o homem e a mulher.",
+    "evidenceRef": "Gênesis 1:28",
+    "evidenceSpan": "Deus os abençoou"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "imagem",
+    "gloss": "Deus criou o ser humano à sua imagem, ligado a ele de um modo único na criação."
+   },
+   {
+    "term": "domínio",
+    "gloss": "Tarefa dada por Deus de cuidar e governar sobre os outros seres da terra."
+   },
+   {
+    "term": "semelhança",
+    "gloss": "Palavra que acompanha imagem e reforça a ligação do ser humano com Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus anuncia a criação do ser humano",
+    "evidenceRef": "Gênesis 1:26"
+   },
+   {
+    "label": "Deus afirma sua imagem no ser humano",
+    "evidenceRef": "Gênesis 1:27"
+   },
+   {
+    "label": "Deus cria homem e mulher",
+    "evidenceRef": "Gênesis 1:27"
+   },
+   {
+    "label": "Deus abençoa e dá uma tarefa",
+    "evidenceRef": "Gênesis 1:28"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "O ser humano recebe domínio sobre os outros seres como tarefa dada por Deus.",
+    "marker": "domínio",
+    "evidenceRef": "Gênesis 1:26"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois do anúncio de Deus, o texto mostra Deus criando o homem à sua imagem.",
+    "marker": "Então",
+    "evidenceRef": "Gênesis 1:26"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gênesis 9:6",
+    "bridge": "A imagem permanece após a queda"
+   },
+   {
+    "ref": "Tiago 3:9",
+    "bridge": "Respeitar quem Deus fez"
+   },
+   {
+    "ref": "Salmos 8:5–6",
+    "bridge": "Domínio recebido de Deus"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Só o homem foi feito à imagem de Deus, e a mulher ficou de fora.",
+    "why": "O texto diz que Deus criou homem e mulher, no mesmo relato da sua imagem (1:27)."
+   },
+   {
+    "text": "Ser criado à imagem autoriza tratar a criação com desprezo.",
+    "why": "O domínio é tarefa dada e abençoada por Deus, não licença para destruir."
+   },
+   {
+    "text": "A imagem de Deus depende da força ou da capacidade de cada pessoa.",
+    "why": "O texto a afirma do homem e da mulher criados por Deus, não de um desempenho."
+   }
+  ],
+  "centralInsight": "Todo ser humano tem dignidade porque Deus o criou à sua imagem",
+  "anchorQuestion": "Segundo Gênesis 1:27, como Deus criou o homem e a mulher?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Gênesis 1:27, Deus criou o homem à sua imagem.",
+   "verseRef": "Gênesis 1:27",
+   "correctOptionId": "true",
+   "evidenceSpan": "Deus criou o homem à sua imagem",
+   "feedbackCorrect": "O versículo repete que Deus criou o homem à sua imagem.",
+   "feedbackWrong": {
+    "false": "Releia o começo de 1:27, onde Deus cria o homem à sua imagem."
+   },
+   "hint": "Olhe o começo do versículo.",
+   "learningObjective": "Observar que Deus criou o ser humano à sua imagem.",
+   "evidence": [
+    "Gênesis 1:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:27, toque quem Deus criou no fim do versículo.",
+   "verseRef": "Gênesis 1:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "sua imagem"
+    },
+    {
+     "id": "b",
+     "text": "homem e mulher"
+    },
+    {
+     "id": "c",
+     "text": "o homem"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "homem e mulher os criou",
+   "feedbackCorrect": "Deus criou homem e mulher, e os dois estão no relato da sua imagem.",
+   "feedbackWrong": {
+    "a": "Isso mostra à semelhança de quem, não quem foi criado no fim.",
+    "c": "Isso aparece antes; o fim do versículo amplia quem Deus criou."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Identificar homem e mulher como criados por Deus.",
+   "evidence": [
+    "Gênesis 1:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Gênesis 1:26, sobre o que o ser humano teria domínio?",
+   "verseRef": "Gênesis 1:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sobre peixes, aves e animais da terra"
+    },
+    {
+     "id": "b",
+     "text": "Sobre o céu e as estrelas do alto"
+    },
+    {
+     "id": "c",
+     "text": "Sobre Deus e sobre os seus planos"
+    },
+    {
+     "id": "d",
+     "text": "Sobre o futuro de todas as pessoas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que ele tenha domínio sobre os peixes do mar",
+   "feedbackCorrect": "Deus dá ao ser humano domínio sobre peixes, aves e animais da terra.",
+   "feedbackWrong": {
+    "b": "O texto fala de seres da terra e do mar, não de governar o céu.",
+    "c": "Deus é quem cria e dá a tarefa; o ser humano não domina Deus.",
+    "d": "O domínio citado é sobre os seres vivos, não sobre o futuro."
+   },
+   "hint": "Leia a lista depois da palavra domínio.",
+   "learningObjective": "Observar a tarefa de domínio dada ao ser humano.",
+   "evidence": [
+    "Gênesis 1:26"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Gênesis 1:27 na ordem do texto.",
+   "verseRef": "Gênesis 1:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "E Deus criou o homem à sua imagem"
+    },
+    {
+     "id": "b",
+     "text": "à imagem de Deus o criou"
+    },
+    {
+     "id": "c",
+     "text": "homem e mulher os criou"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E Deus criou o homem à sua imagem",
+   "feedbackCorrect": "O versículo cria, repete a imagem de Deus e nomeia homem e mulher.",
+   "feedbackWrong": {
+    "default": "Comece por Deus criando o homem; homem e mulher fecham o versículo."
+   },
+   "hint": "O versículo começa com Deus criando.",
+   "learningObjective": "Reconhecer a sequência de Gênesis 1:27.",
+   "evidence": [
+    "Gênesis 1:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Gênesis 1:26, que tarefa Deus dá ao ser humano sobre os outros seres?",
+   "verseRef": "Gênesis 1:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "descanso"
+    },
+    {
+     "id": "b",
+     "text": "domínio"
+    },
+    {
+     "id": "c",
+     "text": "temor"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "que ele tenha domínio sobre os peixes do mar",
+   "feedbackCorrect": "Deus dá ao ser humano a tarefa de domínio sobre os outros seres.",
+   "feedbackWrong": {
+    "a": "O texto não fala de descanso aqui; fala da tarefa sobre os seres.",
+    "c": "O texto não manda temer os seres; dá uma tarefa sobre eles."
+   },
+   "hint": "Procure a tarefa ligada aos peixes e às aves.",
+   "learningObjective": "Lembrar a tarefa dada ao ser humano na criação.",
+   "evidence": [
+    "Gênesis 1:26"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Gênesis 1:28 comunica que se liga a este contexto?",
+   "verseRef": "Gênesis 1:28",
+   "passageA": {
+    "ref": "Gênesis 1:28"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus abençoa o homem e a mulher que ele criou."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus abandona quem ele criou"
+    },
+    {
+     "id": "b",
+     "text": "Deus abençoa quem ele criou"
+    },
+    {
+     "id": "c",
+     "text": "Só um deles recebe bênção"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Deus os abençoou",
+   "feedbackCorrect": "Logo depois de criar, Deus abençoa o homem e a mulher.",
+   "feedbackWrong": {
+    "a": "Deus não abandona; ele abençoa e fala com os dois.",
+    "c": "O texto diz que Deus os abençoou, falando aos dois."
+   },
+   "hint": "Veja a primeira ação de Deus no versículo.",
+   "learningObjective": "Ligar a criação à bênção de Deus sobre homem e mulher.",
+   "evidence": [
+    "Gênesis 1:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Gênesis 1:27, apenas o homem foi criado à imagem de Deus e a mulher ficou fora dessa afirmação.",
+   "verseRef": "Gênesis 1:27",
+   "correctOptionId": "false",
+   "evidenceSpan": "homem e mulher os criou",
+   "feedbackCorrect": "O texto inclui os dois ao dizer que Deus criou homem e mulher.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 1:27, onde homem e mulher são criados por Deus."
+   },
+   "hint": "Repare em quem aparece no fim do versículo.",
+   "learningObjective": "Compreender que homem e mulher são criados por Deus.",
+   "evidence": [
+    "Gênesis 1:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:26, toque a palavra que abre esta nova etapa da criação.",
+   "verseRef": "Gênesis 1:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Façamos"
+    },
+    {
+     "id": "b",
+     "text": "homem"
+    },
+    {
+     "id": "c",
+     "text": "Então"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Então Deus disse",
+   "feedbackCorrect": "Essa palavra abre a etapa em que Deus fala do ser humano.",
+   "feedbackWrong": {
+    "a": "Isso já é a fala de Deus, não a abertura da etapa.",
+    "b": "Isso é quem será criado, não a abertura da etapa."
+   },
+   "hint": "É a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador que abre a criação do ser humano.",
+   "evidence": [
+    "Gênesis 1:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Gênesis 1:27 se relaciona com o anúncio de Gênesis 1:26?",
+   "verseRef": "Gênesis 1:26–27",
+   "options": [
+    {
+     "id": "a",
+     "text": "O que Deus anuncia, ele mesmo realiza ao criar"
+    },
+    {
+     "id": "b",
+     "text": "Outra voz corrige o plano apresentado antes"
+    },
+    {
+     "id": "c",
+     "text": "A criação humana acontece sem ligação com Deus"
+    },
+    {
+     "id": "d",
+     "text": "O anúncio fica sem cumprimento no relato"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "E Deus criou o homem à sua imagem",
+   "feedbackCorrect": "Deus anuncia em 1:26 e realiza em 1:27, criando à sua imagem.",
+   "feedbackWrong": {
+    "b": "Não há outra voz; o mesmo Deus anuncia e cria.",
+    "c": "É Deus quem anuncia e quem cria o ser humano.",
+    "d": "O versículo seguinte mostra o anúncio se cumprindo."
+   },
+   "hint": "Compare quem fala em um versículo e quem age no outro.",
+   "learningObjective": "Relacionar o anúncio de Deus com a criação realizada.",
+   "evidence": [
+    "Gênesis 1:26–27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Gênesis 1:26–27?",
+   "verseRef": "Gênesis 1:26–27",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus anuncia fazer o ser humano"
+    },
+    {
+     "id": "b",
+     "text": "Deus afirma sua marca no ser humano"
+    },
+    {
+     "id": "c",
+     "text": "Deus cria homem e mulher"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "homem e mulher os criou",
+   "feedbackCorrect": "Primeiro o anúncio, depois a afirmação da imagem e a criação dos dois.",
+   "feedbackWrong": {
+    "default": "Comece pelo anúncio de Deus; homem e mulher fecham a cena."
+   },
+   "hint": "O anúncio vem antes da criação realizada.",
+   "learningObjective": "Compreender o movimento do anúncio à criação.",
+   "evidence": [
+    "Gênesis 1:26–27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Gênesis 1:28, o que Deus faz antes de falar ao homem e à mulher?",
+   "verseRef": "Gênesis 1:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "escondeu"
+    },
+    {
+     "id": "b",
+     "text": "abandonou"
+    },
+    {
+     "id": "c",
+     "text": "abençoou"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "E Deus os abençoou",
+   "feedbackCorrect": "Antes de falar a tarefa, Deus abençoa o homem e a mulher.",
+   "feedbackWrong": {
+    "a": "Deus não se esconde; ele abençoa e fala com os dois.",
+    "b": "Deus não abandona; ele abençoa quem acabou de criar."
+   },
+   "hint": "Veja a primeira ação de Deus no versículo.",
+   "learningObjective": "Compreender que a bênção precede a tarefa dada.",
+   "evidence": [
+    "Gênesis 1:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Gênesis 1:27 a Gênesis 9:6?",
+   "verseRef": "Gênesis 1:27",
+   "passageA": {
+    "ref": "Gênesis 1:27"
+   },
+   "passageB": {
+    "ref": "Gênesis 9:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A imagem permanece depois da queda"
+    },
+    {
+     "id": "b",
+     "text": "A imagem foi totalmente apagada"
+    },
+    {
+     "id": "c",
+     "text": "Só reis conservam algum valor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "à imagem de Deus o criou",
+   "feedbackCorrect": "Mesmo depois da queda, Deus ainda fala do homem feito à sua imagem.",
+   "feedbackWrong": {
+    "b": "Gênesis 9 ainda chama o ser humano de feito à imagem de Deus.",
+    "c": "Gênesis 9 fala do homem em geral, não só de reis."
+   },
+   "hint": "Veja o motivo dado no segundo texto.",
+   "learningObjective": "Relacionar a imagem de Deus antes e depois da queda.",
+   "evidence": [
+    "Gênesis 1:27",
+    "Gênesis 9:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Gênesis 1:27 sustenta que homem e mulher compartilham a mesma origem na criação feita por Deus.",
+   "verseRef": "Gênesis 1:27",
+   "correctOptionId": "true",
+   "evidenceSpan": "homem e mulher os criou",
+   "feedbackCorrect": "Os dois são criados por Deus no mesmo relato da sua imagem.",
+   "feedbackWrong": {
+    "false": "O texto coloca homem e mulher juntos na criação de Deus."
+   },
+   "hint": "Veja quem Deus cria no fim do versículo.",
+   "learningObjective": "Interpretar a igual origem de homem e mulher em Deus.",
+   "evidence": [
+    "Gênesis 1:27"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Gênesis 1:27, toque o trecho que liga o ser humano diretamente a Deus.",
+   "verseRef": "Gênesis 1:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "sua imagem"
+    },
+    {
+     "id": "b",
+     "text": "o homem"
+    },
+    {
+     "id": "c",
+     "text": "os criou"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "criou o homem à sua imagem",
+   "feedbackCorrect": "A ligação está em ser criado à imagem do próprio Deus.",
+   "feedbackWrong": {
+    "b": "Isso nomeia quem foi criado, não a ligação com Deus.",
+    "c": "Isso mostra a ação de criar, não à semelhança de quem."
+   },
+   "hint": "Procure à semelhança de quem ele foi criado.",
+   "learningObjective": "Sustentar com o texto a ligação do ser humano com Deus.",
+   "evidence": [
+    "Gênesis 1:27"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura de Gênesis 1:26–27 o texto sustenta sobre o valor humano?",
+   "verseRef": "Gênesis 1:26–27",
+   "options": [
+    {
+     "id": "a",
+     "text": "O valor humano vem de Deus que o criou"
+    },
+    {
+     "id": "b",
+     "text": "O valor humano depende da força física"
+    },
+    {
+     "id": "c",
+     "text": "Só quem governa outros tem valor real"
+    },
+    {
+     "id": "d",
+     "text": "O valor humano nasce das conquistas pessoais"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "à imagem de Deus o criou",
+   "feedbackCorrect": "O valor do ser humano vem de Deus, que o criou à sua imagem.",
+   "feedbackWrong": {
+    "b": "O texto não mede valor por força; liga o ser humano a Deus.",
+    "c": "O domínio é tarefa recebida, não a fonte do valor humano.",
+    "d": "Antes de qualquer conquista, Deus já cria e abençoa."
+   },
+   "hint": "Veja de quem o ser humano recebe sua marca.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre dignidade.",
+   "evidence": [
+    "Gênesis 1:26–27"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da imagem de Deus na Bíblia?",
+   "verseRef": "Gênesis 1:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus cria o ser humano à sua imagem"
+    },
+    {
+     "id": "b",
+     "text": "A imagem continua citada depois da queda"
+    },
+    {
+     "id": "c",
+     "text": "A fala deve respeitar quem Deus fez"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "à imagem de Deus o criou",
+   "feedbackCorrect": "Criado à imagem, o ser humano continua assim citado e deve ser respeitado.",
+   "feedbackWrong": {
+    "default": "Siga a ordem da Bíblia, da criação ao ensino sobre a fala."
+   },
+   "hint": "Comece pela criação e termine na prática da fala.",
+   "learningObjective": "Ver a imagem de Deus como fio que atravessa a Bíblia.",
+   "evidence": [
+    "Gênesis 1:27",
+    "Gênesis 9:6",
+    "Tiago 3:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Gênesis 1:26, que palavra liga o ser humano a Deus de modo único?",
+   "verseRef": "Gênesis 1:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "vontade"
+    },
+    {
+     "id": "b",
+     "text": "imagem"
+    },
+    {
+     "id": "c",
+     "text": "história"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Façamos o homem à nossa imagem",
+   "feedbackCorrect": "Deus faz o ser humano à sua própria imagem, ligado a ele.",
+   "feedbackWrong": {
+    "a": "O texto não usa essa palavra aqui; usa a que liga a Deus.",
+    "c": "O texto não fala disso aqui; fala da ligação com Deus."
+   },
+   "hint": "Releia a fala de Deus antes da criação.",
+   "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+   "evidence": [
+    "Gênesis 1:26"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Gênesis 1:26 a Tiago 3:9?",
+   "verseRef": "Gênesis 1:26",
+   "passageA": {
+    "ref": "Gênesis 1:26"
+   },
+   "passageB": {
+    "ref": "Tiago 3:9"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Evitar falar com qualquer pessoa"
+    },
+    {
+     "id": "b",
+     "text": "Falar apenas de coisas religiosas"
+    },
+    {
+     "id": "c",
+     "text": "Respeitar as pessoas na fala"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Façamos o homem à nossa imagem",
+   "feedbackCorrect": "Tiago liga a semelhança de Deus ao cuidado com a fala sobre pessoas.",
+   "feedbackWrong": {
+    "a": "Tiago não manda evitar pessoas; manda cuidar do que se diz delas.",
+    "b": "O ponto é respeitar pessoas feitas por Deus, não mudar de assunto."
+   },
+   "hint": "Veja o que Tiago diz sobre amaldiçoar pessoas.",
+   "learningObjective": "Ligar a criação à imagem ao respeito pelas pessoas.",
+   "evidence": [
+    "Gênesis 1:26",
+    "Tiago 3:9"
+   ]
+  }
+ ]
+}

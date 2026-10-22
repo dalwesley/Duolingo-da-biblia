@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Marcos 6:37–42",
+  "passages": [
+   {
+    "ref": "Marcos 6:30–44"
+   }
+  ],
+  "context": "Os apóstolos voltam cansados e Jesus busca descanso com eles, mas a multidão chega antes. Jesus tem compaixão, ensina e depois alimenta milhares com cinco pães e dois peixes.",
+  "keyword": "Compaixão",
+  "keywordGloss": "Jesus vê a multidão como ovelhas sem pastor e age com ensino e alimento.",
+  "focusQuestion": "Como a compaixão de Jesus pode mudar o seu jeito de ver quem precisa?",
+  "reflectionPrompts": [
+   "Ovelhas sem pastor",
+   "Pouco nas mãos de Jesus",
+   "Todos se saciaram"
+  ],
+  "facts": [
+   {
+    "text": "Jesus teve compaixão da multidão, como ovelhas sem pastor.",
+    "evidenceRef": "Marcos 6:34",
+    "evidenceSpan": "teve compaixão dela, pois eram como ovelhas sem pastor"
+   },
+   {
+    "text": "Os discípulos queriam despedir a multidão para comprar pão.",
+    "evidenceRef": "Marcos 6:36",
+    "evidenceSpan": "Despede-os, para que possam ir aos campos"
+   },
+   {
+    "text": "Havia cinco pães e dois peixes disponíveis.",
+    "evidenceRef": "Marcos 6:38",
+    "evidenceSpan": "Cinco pães e dois peixes"
+   },
+   {
+    "text": "Jesus abençoou os pães e os partiu para distribuição.",
+    "evidenceRef": "Marcos 6:41",
+    "evidenceSpan": "abençoou-os e, partindo-os, os entregou aos discípulos"
+   },
+   {
+    "text": "Todos comeram e se saciaram.",
+    "evidenceRef": "Marcos 6:42",
+    "evidenceSpan": "Todos comeram e se saciaram"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "compaixão",
+    "gloss": "O sentimento de Jesus diante da multidão que o move a ensinar e alimentar."
+   },
+   {
+    "term": "pães",
+    "gloss": "O pouco apresentado a Jesus que, abençoado e partido, alimenta a multidão."
+   },
+   {
+    "term": "saciaram",
+    "gloss": "Todos comeram até ficar satisfeitos, não apenas um pouco."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jesus busca descanso com os apóstolos",
+    "evidenceRef": "Marcos 6:31–32"
+   },
+   {
+    "label": "Compaixão e ensino à multidão",
+    "evidenceRef": "Marcos 6:34"
+   },
+   {
+    "label": "Cinco pães e dois peixes apresentados",
+    "evidenceRef": "Marcos 6:38"
+   },
+   {
+    "label": "Todos comem e sobram doze cestos",
+    "evidenceRef": "Marcos 6:42–43"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Jesus teve compaixão pois a multidão era como ovelhas sem pastor.",
+    "marker": "pois",
+    "evidenceRef": "Marcos 6:34"
+   },
+   {
+    "kind": "contraste",
+    "text": "Os discípulos propõem despedir, porém Jesus manda dar de comer.",
+    "marker": "porém",
+    "evidenceRef": "Marcos 6:37"
+   },
+   {
+    "kind": "resultado",
+    "text": "Do pouco abençoado e partido, todos comeram e se saciaram.",
+    "marker": "Todos",
+    "evidenceRef": "Marcos 6:42"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 145:15",
+    "bridge": "Deus alimenta a todos"
+   },
+   {
+    "ref": "2 Reis 4:43",
+    "bridge": "Pouco alimenta muitos"
+   },
+   {
+    "ref": "João 6:11",
+    "bridge": "Pães dados com graças"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Os milagres de Jesus eram espetáculo para impressionar sem cuidar das pessoas.",
+    "why": "A cena começa com compaixão por ovelhas sem pastor e termina com todos saciados (6:34,42)."
+   },
+   {
+    "text": "Jesus promete multiplicar bens de quem quer enriquecer sem servir.",
+    "why": "O texto fala de fome real de uma multidão ensinada por Jesus, não de enriquecimento pessoal (6:35-42)."
+   },
+   {
+    "text": "Os discípulos resolveram o problema sozinhos com organização apenas.",
+    "why": "Jesus abençoa e parte os pães; os discípulos distribuem o que recebem dele (6:41)."
+   }
+  ],
+  "centralInsight": "Reino que cura",
+  "anchorQuestion": "O que Jesus fez com os cinco pães e dois peixes antes de distribuir?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Marcos 6:42, todos comeram e se saciaram.",
+   "verseRef": "Marcos 6:42",
+   "correctOptionId": "true",
+   "evidenceSpan": "Todos comeram e se saciaram",
+   "feedbackCorrect": "A multiplicação termina com a multidão inteira satisfeita.",
+   "feedbackWrong": {
+    "false": "Marcos 6:42 resume o resultado para todos."
+   },
+   "hint": "",
+   "learningObjective": "Observar o resultado da alimentação.",
+   "evidence": [
+    "Marcos 6:42"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Marcos 6:34, toque como Jesus viu a multidão ao desembarcar.",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "b",
+   "evidenceSpan": "teve compaixão dela, pois eram como ovelhas sem pastor",
+   "feedbackCorrect": "Antes de ensinar ou alimentar, Jesus vê a multidão com compaixão.",
+   "feedbackWrong": {
+    "a": "Isso é o tamanho dela, não o olhar de Jesus.",
+    "c": "Ensinar vem depois da compaixão."
+   },
+   "hint": "Procure o sentimento de Jesus na cena.",
+   "learningObjective": "Identificar a compaixão de Jesus.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "grande multidão"
+    },
+    {
+     "id": "b",
+     "text": "compaixão dela"
+    },
+    {
+     "id": "c",
+     "text": "a ensinar-lhes"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Marcos 6:38, quantos pães e peixes havia?",
+   "verseRef": "Marcos 6:38",
+   "correctOptionId": "b",
+   "evidenceSpan": "Cinco pães e dois peixes",
+   "feedbackCorrect": "O pouco disponível era cinco pães e dois peixes.",
+   "feedbackWrong": {
+    "a": "Doze será o número dos cestos recolhidos depois.",
+    "c": "Sete pães aparece em outra alimentação, não aqui.",
+    "d": "Os números estão invertidos nesta opção."
+   },
+   "hint": "Confira a resposta dos discípulos a Jesus.",
+   "learningObjective": "Observar a quantidade inicial de alimento.",
+   "evidence": [
+    "Marcos 6:38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Doze pães e cinco peixes"
+    },
+    {
+     "id": "b",
+     "text": "Cinco pães e dois peixes"
+    },
+    {
+     "id": "c",
+     "text": "Sete pães e alguns peixes"
+    },
+    {
+     "id": "d",
+     "text": "Dois pães e cinco peixes"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Marcos 6:41 na ordem do texto.",
+   "verseRef": "Marcos 6:41",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, ao tomar os cinco pães e os dois peixes",
+   "feedbackCorrect": "Jesus toma, abençoa, parte e entrega os pães aos discípulos.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece por Jesus tomando os pães e peixes."
+    }
+   },
+   "hint": "Comece pelo que Jesus toma nas mãos.",
+   "learningObjective": "Reconhecer a sequência do milagre.",
+   "evidence": [
+    "Marcos 6:41"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "ao tomar os cinco pães e os dois peixes"
+    },
+    {
+     "id": "b",
+     "text": "erguendo os olhos ao céu, abençoou-os"
+    },
+    {
+     "id": "c",
+     "text": "partindo-os, os entregou aos discípulos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Marcos 6:43, quantos cestos cheios foram recolhidos depois da refeição?",
+   "verseRef": "Marcos 6:43",
+   "correctOptionId": "a",
+   "evidenceSpan": "E recolheram doze cestos cheios",
+   "feedbackCorrect": "Sobraram doze cestos do pouco que foi abençoado e partilhado.",
+   "feedbackWrong": {
+    "b": "Cinco era o número dos pães iniciais.",
+    "c": "Dois era o número dos peixes iniciais."
+   },
+   "hint": "Veja o número ligado aos cestos.",
+   "learningObjective": "Lembrar a sobra recolhida.",
+   "evidence": [
+    "Marcos 6:43"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "doze"
+    },
+    {
+     "id": "b",
+     "text": "cinco"
+    },
+    {
+     "id": "c",
+     "text": "dois"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Marcos 6:34 comunica que se liga a este contexto?",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "b",
+   "evidenceSpan": "teve compaixão dela",
+   "feedbackCorrect": "O poder de Jesus aparece unido ao cuidado com a multidão.",
+   "feedbackWrong": {
+    "a": "A compaixão vem antes do ensino e do alimento.",
+    "c": "Eram como ovelhas sem pastor, necessitadas."
+   },
+   "hint": "Veja o sentimento que move Jesus.",
+   "learningObjective": "Ligar o sinal à compaixão de Jesus.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Poder sem cuidado algum"
+    },
+    {
+     "id": "b",
+     "text": "Compaixão que ensina e cuida"
+    },
+    {
+     "id": "c",
+     "text": "Multidão sem nenhuma necessidade"
+    }
+   ],
+   "passageA": {
+    "ref": "Marcos 6:34"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Sinais revelam o Rei compassivo que cuida da multidão."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Marcos 6:36 e 37, Jesus concorda em despedir a multidão para que cada um compre seu pão.",
+   "verseRef": "Marcos 6:36–37",
+   "correctOptionId": "false",
+   "evidenceSpan": "Dai-lhes vocês mesmos de comer",
+   "feedbackCorrect": "A proposta de despedir é dos discípulos; Jesus ordena o contrário.",
+   "feedbackWrong": {
+    "true": "Quem fala em despedir são os discípulos, não Jesus (6:36)."
+   },
+   "hint": "",
+   "learningObjective": "Compreender o contraste entre discípulos e Jesus.",
+   "evidence": [
+    "Marcos 6:36–37"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Marcos 6:37, toque a palavra que marca a resposta de Jesus em contraste com os discípulos.",
+   "verseRef": "Marcos 6:37",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele, porém, respondendo, lhes disse",
+   "feedbackCorrect": "A resposta de Jesus vai na direção oposta à proposta de despedir.",
+   "feedbackWrong": {
+    "b": "Isso indica quem deve agir, não o contraste.",
+    "c": "Isso é a dúvida dos discípulos sobre custo."
+   },
+   "hint": "Procure a virada logo após a proposta deles.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Marcos 6:37"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "porém"
+    },
+    {
+     "id": "b",
+     "text": "vocês mesmos"
+    },
+    {
+     "id": "c",
+     "text": "duzentos denários"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Marcos 6:34 liga o ensino de Jesus à compaixão?",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "b",
+   "evidenceSpan": "e começou a ensinar-lhes muitas coisas",
+   "feedbackCorrect": "Vendo ovelhas sem pastor, Jesus primeiro as ensina com compaixão.",
+   "feedbackWrong": {
+    "a": "Depois ele também cuidará da fome da multidão.",
+    "c": "O ensino começa antes da alimentação no texto.",
+    "d": "A ordem do texto é ensinar e depois alimentar."
+   },
+   "hint": "Veja o que Jesus faz logo após ter compaixão.",
+   "learningObjective": "Compreender compaixão e ensino ligados.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ensinar substitui qualquer cuidado prático"
+    },
+    {
+     "id": "b",
+     "text": "Compaixão move Jesus a ensinar a multidão"
+    },
+    {
+     "id": "c",
+     "text": "A multidão dispensa ensino por ter fome"
+    },
+    {
+     "id": "d",
+     "text": "Jesus ensina só após todos comerem"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Marcos 6:34 a 38?",
+   "verseRef": "Marcos 6:34–35",
+   "correctOptionId": "a",
+   "evidenceSpan": "teve compaixão dela, pois eram como ovelhas sem pastor",
+   "feedbackCorrect": "Compaixão, preocupação dos discípulos e a pergunta sobre os pães.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A pergunta sobre os pães vem depois da sugestão de despedir."
+    }
+   },
+   "hint": "Comece pelo olhar de Jesus à multidão.",
+   "learningObjective": "Compreender o encadeamento da cena.",
+   "evidence": [
+    "Marcos 6:34",
+    "Marcos 6:38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus tem compaixão e ensina a multidão"
+    },
+    {
+     "id": "b",
+     "text": "Os discípulos sugerem despedir a multidão"
+    },
+    {
+     "id": "c",
+     "text": "Jesus pergunta quantos pães eles têm"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Marcos 6:41, o que Jesus fez com os pães depois de abençoar?",
+   "verseRef": "Marcos 6:41",
+   "correctOptionId": "a",
+   "evidenceSpan": "abençoou-os e, partindo-os, os entregou aos discípulos",
+   "feedbackCorrect": "Abençoados e partidos, os pães são entregues para distribuição.",
+   "feedbackWrong": {
+    "b": "Guardar seria reter o que foi dado à multidão.",
+    "c": "Não há venda; há distribuição à multidão."
+   },
+   "hint": "Veja o verbo entre abençoar e entregar.",
+   "learningObjective": "Compreender abençoar, partir e entregar.",
+   "evidence": [
+    "Marcos 6:41"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "partindo-os"
+    },
+    {
+     "id": "b",
+     "text": "guardou-os"
+    },
+    {
+     "id": "c",
+     "text": "vendeu-os"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Marcos 6:42 a Salmos 145:15?",
+   "verseRef": "Marcos 6:42",
+   "correctOptionId": "a",
+   "evidenceSpan": "Todos comeram e se saciaram",
+   "feedbackCorrect": "O salmo diz que os olhos esperam em Deus, que dá alimento a seu tempo.",
+   "feedbackWrong": {
+    "b": "Na cena, o sustento vem por meio de Jesus.",
+    "c": "Todos comeram, não apenas alguns escolhidos."
+   },
+   "hint": "Compare quem dá o alimento nos dois.",
+   "learningObjective": "Relacionar o sustento em Marcos e no salmo.",
+   "evidence": [
+    "Marcos 6:42",
+    "Salmos 145:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus sustenta quem espera"
+    },
+    {
+     "id": "b",
+     "text": "Cada um se sustenta sozinho"
+    },
+    {
+     "id": "c",
+     "text": "Alimento só para poucos"
+    }
+   ],
+   "passageA": {
+    "ref": "Marcos 6:42"
+   },
+   "passageB": {
+    "ref": "Salmos 145:15"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Marcos 6:34 a 42, o poder de Jesus aparece a serviço da compaixão pela multidão.",
+   "verseRef": "Marcos 6:34–35",
+   "correctOptionId": "true",
+   "evidenceSpan": "teve compaixão dela, pois eram como ovelhas sem pastor",
+   "feedbackCorrect": "Compaixão, ensino e alimento mostram poder usado para cuidar.",
+   "feedbackWrong": {
+    "false": "A cena une compaixão, ensino e saciedade da multidão."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar poder unido à compaixão.",
+   "evidence": [
+    "Marcos 6:34",
+    "Marcos 6:42"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Marcos 6:34, toque o trecho que sustenta Jesus como pastor da multidão.",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "a",
+   "evidenceSpan": "pois eram como ovelhas sem pastor",
+   "feedbackCorrect": "A comparação mostra gente sem guia, diante do pastor compassivo.",
+   "feedbackWrong": {
+    "b": "Isso mede a quantidade, não a condição espiritual.",
+    "c": "Isso é o conteúdo do ensino, não a comparação."
+   },
+   "hint": "Procure a comparação com animais sem guia.",
+   "learningObjective": "Sustentar o cuidado pastoral de Jesus.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "ovelhas sem pastor"
+    },
+    {
+     "id": "b",
+     "text": "grande multidão"
+    },
+    {
+     "id": "c",
+     "text": "muitas coisas"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Marcos 6 sustenta sobre os sinais de Jesus?",
+   "verseRef": "Marcos 6:41–42",
+   "correctOptionId": "a",
+   "evidenceSpan": "Todos comeram e se saciaram",
+   "feedbackCorrect": "Compaixão, ensino e saciedade mostram um Rei que cuida de pessoas reais.",
+   "feedbackWrong": {
+    "b": "Os discípulos distribuem o que Jesus abençoa e parte.",
+    "c": "A cena trata de fome de uma multidão, não de riqueza pessoal.",
+    "d": "Antes do alimento, Jesus ensina muitas coisas."
+   },
+   "hint": "Junte compaixão, ensino e alimento da cena.",
+   "learningObjective": "Escolher a leitura sustentada dos sinais.",
+   "evidence": [
+    "Marcos 6:34",
+    "Marcos 6:42"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sinais são cuidado, não espetáculo vazio"
+    },
+    {
+     "id": "b",
+     "text": "Sinais provam que discípulos bastam sozinhos"
+    },
+    {
+     "id": "c",
+     "text": "Sinais garantem riqueza a cada crente"
+    },
+    {
+     "id": "d",
+     "text": "Sinais dispensam ensino da palavra"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o cuidado de Jesus em Marcos 6?",
+   "verseRef": "Marcos 6:42",
+   "correctOptionId": "a",
+   "evidenceSpan": "Todos comeram e se saciaram",
+   "feedbackCorrect": "Ver com compaixão, agir sobre o pouco e saciar a todos.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A saciedade de todos é o fim da sequência."
+    }
+   },
+   "hint": "Termine com todos saciados.",
+   "learningObjective": "Ver compaixão, ação e saciedade.",
+   "evidence": [
+    "Marcos 6:34",
+    "Marcos 6:42"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus vê ovelhas sem pastor"
+    },
+    {
+     "id": "b",
+     "text": "Jesus ensina e abençoa o pouco"
+    },
+    {
+     "id": "c",
+     "text": "Todos comem e se saciam"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Marcos 6:34, que sentimento de Jesus move o ensino à multidão?",
+   "verseRef": "Marcos 6:34",
+   "correctOptionId": "a",
+   "evidenceSpan": "teve compaixão dela",
+   "feedbackCorrect": "É a compaixão que liga o olhar de Jesus ao ensino e ao alimento.",
+   "feedbackWrong": {
+    "b": "Pressa é dos discípulos diante da hora, não de Jesus.",
+    "c": "Medo não descreve Jesus nesta cena."
+   },
+   "hint": "Veja o sentimento nomeado no versículo.",
+   "learningObjective": "Lembrar o motor da ação de Jesus.",
+   "evidence": [
+    "Marcos 6:34"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "compaixão"
+    },
+    {
+     "id": "b",
+     "text": "pressa"
+    },
+    {
+     "id": "c",
+     "text": "medo"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Marcos 6:41 a 2 Reis 4:42?",
+   "verseRef": "Marcos 6:41",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, ao tomar os cinco pães e os dois peixes",
+   "feedbackCorrect": "Nos dois relatos, pouco pão posto diante de Deus alimenta muitos.",
+   "feedbackWrong": {
+    "b": "Nos dois, o pouco é partilhado com muitos.",
+    "c": "Nos dois, Deus responde à fome do povo."
+   },
+   "hint": "Compare a quantidade e o resultado.",
+   "learningObjective": "Ligar a alimentação a Eliseu.",
+   "evidence": [
+    "Marcos 6:41",
+    "2 Reis 4:43"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Pouco alimento para muitos"
+    },
+    {
+     "id": "b",
+     "text": "Muito alimento sem partilha"
+    },
+    {
+     "id": "c",
+     "text": "Fome sem resposta de Deus"
+    }
+   ],
+   "passageA": {
+    "ref": "Marcos 6:41"
+   },
+   "passageB": {
+    "ref": "2 Reis 4:42"
+   }
+  }
+ ]
+}

@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Levítico 18:1–5",
+  "passages": [
+   {
+    "ref": "Levítico 17:10–14"
+   },
+   {
+    "ref": "Levítico 18:1–5"
+   },
+   {
+    "ref": "Levítico 18:24"
+   }
+  ],
+  "context": "O Senhor manda Israel não copiar as práticas do Egito nem de Canaã. Guardar seus estatutos era caminho de vida para um povo que também devia respeitar o sangue no altar.",
+  "keyword": "estatutos",
+  "keywordGloss": "No texto, são as ordens do Senhor que o povo devia guardar e por elas andar.",
+  "focusQuestion": "Quais práticas ao seu redor Deus não quer que você copie?",
+  "reflectionPrompts": [
+   "Não copiar Egito nem Canaã",
+   "Vida ao guardar estatutos",
+   "Sangue respeitado no altar"
+  ],
+  "facts": [
+   {
+    "text": "O sacerdote aspergiria o sangue sobre o altar e queimaria a gordura ao Senhor.",
+    "evidenceRef": "Levítico 17:6",
+    "evidenceSpan": "o sacerdote aspergirá o sangue sobre o altar do SENHOR"
+   },
+   {
+    "text": "O povo nunca mais devia oferecer sacrifícios aos demônios.",
+    "evidenceRef": "Levítico 17:7",
+    "evidenceSpan": "nunca mais oferecerão seus sacrifícios aos demônios"
+   },
+   {
+    "text": "A vida da carne está no sangue, dado por Deus sobre o altar.",
+    "evidenceRef": "Levítico 17:11",
+    "evidenceSpan": "a vida da carne está no sangue"
+   },
+   {
+    "text": "Israel não devia fazer segundo as práticas do Egito nem de Canaã.",
+    "evidenceRef": "Levítico 18:3",
+    "evidenceSpan": "Não fareis segundo as práticas da terra do Egito"
+   },
+   {
+    "text": "Ao cumprir os estatutos e juízos, o homem viveria por meio deles.",
+    "evidenceRef": "Levítico 18:5",
+    "evidenceSpan": "ao cumpri-los, o homem viverá por meio deles"
+   },
+   {
+    "text": "O povo não devia contaminar-se com as práticas das nações expulsas.",
+    "evidenceRef": "Levítico 18:24",
+    "evidenceSpan": "Não vos contamineis com nenhuma dessas práticas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sangue",
+    "gloss": "Carrega a vida e foi dado por Deus sobre o altar, não como comida."
+   },
+   {
+    "term": "estatutos",
+    "gloss": "Ordens do Senhor para guardar, andar nelas e viver por elas."
+   },
+   {
+    "term": "práticas",
+    "gloss": "Costumes do Egito, de Canaã e das nações que Israel não devia copiar."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Sacrifícios trazidos ao sacerdote",
+    "evidenceRef": "Levítico 17:6"
+   },
+   {
+    "label": "Nada de sacrifícios aos demônios",
+    "evidenceRef": "Levítico 17:7"
+   },
+   {
+    "label": "O sangue respeitado no altar",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "label": "Vida distinta guardando os estatutos",
+    "evidenceRef": "Levítico 18:5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Os sacrifícios do campo deviam ser trazidos para serem oferecidos ao Senhor.",
+    "marker": "Para",
+    "evidenceRef": "Levítico 17:5"
+   },
+   {
+    "kind": "causa",
+    "text": "Porque a vida está no sangue, ele foi dado no altar e não comido.",
+    "marker": "Pois",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao cumprir estatutos e juízos, o homem viveria por meio deles.",
+    "marker": null,
+    "evidenceRef": "Levítico 18:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 9:22",
+    "bridge": "Sangue e perdão dos pecados"
+   },
+   {
+    "ref": "1 Pedro 1:16",
+    "bridge": "Sede santos porque sou santo"
+   },
+   {
+    "ref": "Romanos 10:5",
+    "bridge": "Viver pelos preceitos citados"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O povo podia sacrificar aos demônios se também sacrificasse ao Senhor.",
+    "why": "O texto diz nunca mais oferecer sacrifícios aos demônios."
+   },
+   {
+    "text": "As práticas do Egito e de Canaã eram neutras para Israel.",
+    "why": "O Senhor manda não fazer segundo essas práticas nem seguir seus estatutos."
+   },
+   {
+    "text": "Guardar os estatutos era só saber regras, sem relação com a vida.",
+    "why": "O texto diz que, ao cumpri-los, o homem viverá por meio deles."
+   }
+  ],
+  "centralInsight": "O povo de Deus vive de modo distinto, guardando o que ele ordenou",
+  "anchorQuestion": "Segundo Levítico 18:5, o que acontece a quem cumpre os estatutos?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Levítico 17:6, o sacerdote aspergiria o sangue sobre o altar do Senhor e queimaria a gordura.",
+   "verseRef": "Levítico 17:6",
+   "evidenceSpan": "o sacerdote aspergirá o sangue sobre o altar do SENHOR",
+   "feedbackCorrect": "Sangue e gordura tinham destino no altar, pelas mãos do sacerdote.",
+   "feedbackWrong": {
+    "false": "Releia o que o sacerdote faria no altar."
+   },
+   "hint": "Veja as duas ações do sacerdote.",
+   "learningObjective": "Observar o trabalho do sacerdote no altar.",
+   "evidence": [
+    "Levítico 17:6"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:7, toque a quem o povo nunca mais devia oferecer sacrifícios.",
+   "verseRef": "Levítico 17:7",
+   "evidenceSpan": "nunca mais oferecerão seus sacrifícios aos demônios",
+   "feedbackCorrect": "O povo devia encerrar de vez essa oferta proibida.",
+   "feedbackWrong": {
+    "b": "Gerações recebem o estatuto, não os sacrifícios proibidos.",
+    "c": "Isso é o que era oferecido, não a quem era proibido oferecer."
+   },
+   "hint": "Procure o destino proibido dos sacrifícios.",
+   "learningObjective": "Identificar a quem não oferecer mais.",
+   "evidence": [
+    "Levítico 17:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "demônios"
+    },
+    {
+     "id": "b",
+     "text": "gerações"
+    },
+    {
+     "id": "c",
+     "text": "sacrifícios"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Levítico 18:3, as práticas de quais terras Israel não devia seguir?",
+   "verseRef": "Levítico 18:3",
+   "evidenceSpan": "Não fareis segundo as práticas da terra do Egito",
+   "feedbackCorrect": "Uma terra ficou para trás e a outra estava à frente do povo.",
+   "feedbackWrong": {
+    "a": "Essas terras não são as duas citadas aqui.",
+    "c": "O texto compara passado no Egito e futuro em Canaã.",
+    "d": "Esses nomes não aparecem neste versículo."
+   },
+   "hint": "Veja as duas terras citadas.",
+   "learningObjective": "Observar as práticas que Israel devia recusar.",
+   "evidence": [
+    "Levítico 18:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "De Moabe e de Amom"
+    },
+    {
+     "id": "b",
+     "text": "Do Egito e de Canaã"
+    },
+    {
+     "id": "c",
+     "text": "Dos filisteus e de Tiro"
+    },
+    {
+     "id": "d",
+     "text": "Da Babilônia e da Pérsia"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 18:4 na ordem do texto.",
+   "verseRef": "Levítico 18:4",
+   "evidenceSpan": "Cumprireis os meus juízos e guardareis os meus estatutos",
+   "feedbackCorrect": "Cumprir juízos, guardar estatutos e andar neles.",
+   "feedbackWrong": {
+    "default": "Comece por cumprir os juízos do Senhor."
+   },
+   "hint": "O versículo começa com cumprir.",
+   "learningObjective": "Reconhecer a sequência de Levítico 18:4.",
+   "evidence": [
+    "Levítico 18:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cumprireis os meus juízos"
+    },
+    {
+     "id": "b",
+     "text": "e guardareis os meus estatutos"
+    },
+    {
+     "id": "c",
+     "text": "para que andeis neles"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Levítico 18:5, o que o homem fará ao cumprir os estatutos e juízos?",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "o homem viverá por meio deles",
+   "feedbackCorrect": "Guardar o que Deus ordenou é apresentado como caminho de vida.",
+   "feedbackWrong": {
+    "a": "O texto promete vida a quem cumpre, não fuga.",
+    "b": "Calar não é o resultado citado para quem cumpre."
+   },
+   "hint": "Veja o resultado depois de cumpri-los.",
+   "learningObjective": "Lembrar a promessa ligada à obediência.",
+   "evidence": [
+    "Levítico 18:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "fugirá"
+    },
+    {
+     "id": "b",
+     "text": "calará"
+    },
+    {
+     "id": "c",
+     "text": "viverá"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Levítico 18:5 comunica que se liga a este contexto?",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "ao cumpri-los, o homem viverá por meio deles",
+   "feedbackCorrect": "Deus liga o guardar dos seus estatutos à vida do homem.",
+   "feedbackWrong": {
+    "b": "O texto liga cumprir os estatutos a viver por eles.",
+    "c": "Guardar os estatutos distingue o povo das nações."
+   },
+   "hint": "Veja o resultado de cumprir os estatutos.",
+   "learningObjective": "Ligar obediência e vida em Levítico 18.",
+   "evidence": [
+    "Levítico 18:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Vida ao guardar estatutos"
+    },
+    {
+     "id": "b",
+     "text": "Regras sem relação com vida"
+    },
+    {
+     "id": "c",
+     "text": "Cópia das nações vizinhas"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 18:5"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus liga obediência aos seus estatutos com vida."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Levítico 17:7, a proibição de sacrificar aos demônios valia apenas para aquela geração de Israel.",
+   "verseRef": "Levítico 17:7",
+   "evidenceSpan": "isso será um estatuto perpétuo para as suas gerações",
+   "feedbackCorrect": "O texto chama essa proibição de estatuto para as gerações.",
+   "feedbackWrong": {
+    "true": "Releia a duração citada no fim do versículo."
+   },
+   "hint": "Veja quanto tempo dura o estatuto.",
+   "learningObjective": "Compreender a duração da proibição.",
+   "evidence": [
+    "Levítico 17:7"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 18:3, toque a primeira terra cujas práticas Israel não devia seguir.",
+   "verseRef": "Levítico 18:3",
+   "evidenceSpan": "práticas da terra do Egito, onde habitastes",
+   "feedbackCorrect": "A primeira terra citada é aquela onde o povo tinha habitado.",
+   "feedbackWrong": {
+    "a": "Canaã é a segunda terra citada, não a primeira.",
+    "c": "Isso diz onde o povo morou, não o nome da terra."
+   },
+   "hint": "Procure a terra ligada ao passado do povo.",
+   "learningObjective": "Reconhecer a ordem das terras citadas.",
+   "evidence": [
+    "Levítico 18:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Canaã"
+    },
+    {
+     "id": "b",
+     "text": "Egito"
+    },
+    {
+     "id": "c",
+     "text": "habitastes"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Levítico 17:5 explica trazer os sacrifícios do campo aberto?",
+   "verseRef": "Levítico 17:5",
+   "evidenceSpan": "Para que os filhos de Israel tragam seus sacrifícios",
+   "feedbackCorrect": "O campo aberto devia ceder ao lugar e ao Senhor da oferta.",
+   "feedbackWrong": {
+    "a": "O destino era o Senhor à porta da tenda, não esconder.",
+    "b": "A oferta era ao Senhor, não renda do sacerdote.",
+    "d": "Sangue e gordura iam justamente sobre o altar."
+   },
+   "hint": "Veja o destino final dos sacrifícios.",
+   "learningObjective": "Compreender o propósito de trazer os sacrifícios.",
+   "evidence": [
+    "Levítico 17:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Para escondê-los do restante do povo"
+    },
+    {
+     "id": "b",
+     "text": "Para alimentar somente o sacerdote"
+    },
+    {
+     "id": "c",
+     "text": "Para oferecê-los ao Senhor no lugar dele"
+    },
+    {
+     "id": "d",
+     "text": "Para evitar qualquer uso do altar"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos em Levítico 17:5–6?",
+   "verseRef": "Levítico 17:5–6",
+   "evidenceSpan": "ao SENHOR, à porta da tenda da congregação, ao sacerdote",
+   "feedbackCorrect": "Do campo ao Senhor, ao sacerdote e ao altar.",
+   "feedbackWrong": {
+    "default": "Comece pelos sacrifícios trazidos do campo."
+   },
+   "hint": "O altar é o ponto de chegada.",
+   "learningObjective": "Compreender o caminho do sacrifício ao altar.",
+   "evidence": [
+    "Levítico 17:5–6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sacrifícios do campo são trazidos ao Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Eles chegam ao sacerdote à porta da tenda"
+    },
+    {
+     "id": "c",
+     "text": "Sangue e gordura vão sobre o altar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Levítico 17:11, para que Deus deu o sangue sobre o altar?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "para expiar por vocês",
+   "feedbackCorrect": "O sangue no altar tinha um fim em favor do povo.",
+   "feedbackWrong": {
+    "b": "No altar, o sangue não alimenta o povo.",
+    "c": "O texto não fala de enfeite para o altar aqui."
+   },
+   "hint": "Procure a finalidade depois de altar.",
+   "learningObjective": "Compreender a finalidade do sangue no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "expiar"
+    },
+    {
+     "id": "b",
+     "text": "alimentar"
+    },
+    {
+     "id": "c",
+     "text": "enfeitar"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Levítico 17:11 a Hebreus 9:22?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "é o sangue que fará expiação em virtude da vida",
+   "feedbackCorrect": "Nos dois textos, o sangue está ligado ao perdão de Deus.",
+   "feedbackWrong": {
+    "a": "Hebreus liga sangue a perdão, não a refeição.",
+    "c": "Hebreus afirma quase tudo purificado com sangue."
+   },
+   "hint": "Compare o papel do sangue nos dois trechos.",
+   "learningObjective": "Relacionar sangue no altar e perdão em Hebreus.",
+   "evidence": [
+    "Levítico 17:11",
+    "Hebreus 9:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sangue como comida sagrada"
+    },
+    {
+     "id": "b",
+     "text": "Sangue e perdão dos pecados"
+    },
+    {
+     "id": "c",
+     "text": "Altar que dispensa sangue"
+    }
+   ],
+   "correctOptionId": "b",
+   "passageA": {
+    "ref": "Levítico 17:11"
+   },
+   "passageB": {
+    "ref": "Hebreus 9:22"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Levítico 18:5 sustenta que guardar os estatutos de Deus está ligado à vida de quem os cumpre.",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "ao cumpri-los, o homem viverá por meio deles",
+   "feedbackCorrect": "O próprio texto une cumprir os estatutos e viver por eles.",
+   "feedbackWrong": {
+    "false": "Releia o resultado citado para quem cumpre."
+   },
+   "hint": "Veja o que acontece ao cumprir.",
+   "learningObjective": "Interpretar a ligação entre obediência e vida.",
+   "evidence": [
+    "Levítico 18:5"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 18:24, toque a ordem inicial dada ao povo sobre as práticas das nações.",
+   "verseRef": "Levítico 18:24",
+   "evidenceSpan": "Não vos contamineis com nenhuma dessas práticas",
+   "feedbackCorrect": "A ordem é não se contaminar com aquelas práticas.",
+   "feedbackWrong": {
+    "a": "Isso indica diante de quem as nações saem, não a ordem.",
+    "b": "Isso completa a ordem, mas o toque pedido é a ordem inicial."
+   },
+   "hint": "Procure o começo do versículo.",
+   "learningObjective": "Sustentar a separação das práticas das nações.",
+   "evidence": [
+    "Levítico 18:24"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "diante de vós"
+    },
+    {
+     "id": "b",
+     "text": "dessas práticas"
+    },
+    {
+     "id": "c",
+     "text": "Não vos contamineis"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Levítico 18:3 sustenta sobre a vida de Israel entre as nações?",
+   "verseRef": "Levítico 18:3",
+   "evidenceSpan": "Não fareis segundo as práticas da terra do Egito",
+   "feedbackCorrect": "Israel devia viver distinto do passado e do futuro ao redor.",
+   "feedbackWrong": {
+    "b": "O texto proíbe seguir tanto Egito quanto Canaã.",
+    "c": "As práticas de Canaã também são recusadas.",
+    "d": "Elas se contaminaram e foram expulsas, não servem de modelo."
+   },
+   "hint": "Veja as duas terras que cercam a história do povo.",
+   "learningObjective": "Escolher a interpretação sobre vida distinta.",
+   "evidence": [
+    "Levítico 18:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A vida do povo não devia copiar Egito nem Canaã"
+    },
+    {
+     "id": "b",
+     "text": "Bastava sair do Egito sem mudar as práticas"
+    },
+    {
+     "id": "c",
+     "text": "Canaã podia ser copiada depois da conquista"
+    },
+    {
+     "id": "d",
+     "text": "As nações expulsas eram modelo para Israel"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o chamado a viver distinto na Bíblia?",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "vocês guardarão os meus estatutos e os meus juízos",
+   "feedbackCorrect": "Guardar e viver em Levítico é citado por Paulo e ligado à santidade.",
+   "feedbackWrong": {
+    "default": "Comece por Levítico; Paulo e Pedro vêm depois."
+   },
+   "hint": "Siga Levítico, Romanos e depois Pedro.",
+   "learningObjective": "Ver obediência e santidade como fio bíblico.",
+   "evidence": [
+    "Levítico 18:5",
+    "Romanos 10:5",
+    "1 Pedro 1:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus chama o povo a viver por seus estatutos"
+    },
+    {
+     "id": "b",
+     "text": "Paulo cita viver por eles na lei"
+    },
+    {
+     "id": "c",
+     "text": "Pedro chama o povo a ser santo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Levítico 18:4, o que o povo devia fazer nos estatutos e juízos guardados?",
+   "verseRef": "Levítico 18:4",
+   "evidenceSpan": "para que andeis neles. Eu sou o Senhor, vosso Deus",
+   "feedbackCorrect": "Os estatutos guardados deviam virar caminho de vida diária.",
+   "feedbackWrong": {
+    "a": "O texto não manda parar neles e sim andar.",
+    "c": "Fugir é o contrário de andar nos estatutos."
+   },
+   "hint": "Veja o verbo depois de para que.",
+   "learningObjective": "Lembrar que guardar vira andar.",
+   "evidence": [
+    "Levítico 18:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "pareis"
+    },
+    {
+     "id": "b",
+     "text": "andeis"
+    },
+    {
+     "id": "c",
+     "text": "fujais"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Levítico 18:3 a 1 Pedro 1:16?",
+   "verseRef": "Levítico 18:3",
+   "evidenceSpan": "Não fareis segundo as práticas da terra do Egito",
+   "feedbackCorrect": "Pedro mostra o outro lado e chama o povo a ser santo.",
+   "feedbackWrong": {
+    "a": "Pedro chama à santidade, não a copiar as nações.",
+    "b": "Pedro retoma a santidade como marca do povo."
+   },
+   "hint": "Compare recusar práticas e ser santo.",
+   "learningObjective": "Ligar vida distinta em Levítico e santidade em Pedro.",
+   "evidence": [
+    "Levítico 18:3",
+    "1 Pedro 1:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cópia fiel das nações vizinhas"
+    },
+    {
+     "id": "b",
+     "text": "Regras antigas sem vida nova"
+    },
+    {
+     "id": "c",
+     "text": "Um povo distinto e santo"
+    }
+   ],
+   "correctOptionId": "c",
+   "passageA": {
+    "ref": "Levítico 18:3"
+   },
+   "passageB": {
+    "ref": "1 Pedro 1:16"
+   }
+  }
+ ]
+}

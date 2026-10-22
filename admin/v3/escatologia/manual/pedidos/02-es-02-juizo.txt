@@ -1,0 +1,67 @@
+Escreva a cena "es-02-juizo" da trilha "escatologia" (Escatologia).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "escatologia",
+  "title": "Escatologia",
+  "description": "As últimas coisas — vinda de Cristo, julgamento e nova criação.",
+  "realm": "teologia"
+ },
+ "block": "Esperança Futura",
+ "mission": {
+  "slug": "es-02-juizo",
+  "title": "Justiça diante de Deus",
+  "type": "lesson",
+  "intro": "Deus julgará com justiça; essa verdade chama à responsabilidade e esperança.",
+  "hookRef": "2 Coríntios 5:10",
+  "hookNote": "Deus julgará com justiça; essa verdade chama à responsabilidade e esperança.",
+  "centralInsight": "Esta missão apresenta justiça diante de deus de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melho…",
+  "objective": "2 Coríntios 5:10"
+ },
+ "v2": {
+  "passageRef": "2 Coríntios 5:10",
+  "context": "Deus julgará com justiça; essa verdade chama à responsabilidade e esperança.",
+  "keyword": "Justiça",
+  "verseRefs": [
+   "2 Coríntios 5:10"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "2 Coríntios 5:7–13"
+ ],
+ "verses": [
+  {
+   "ref": "2 Coríntios 5:7",
+   "text": "Porque andamos por fé e não pelo que vemos."
+  },
+  {
+   "ref": "2 Coríntios 5:8",
+   "text": "Temos plena confiança e desejamos deixar este corpo para habitar com o Senhor."
+  },
+  {
+   "ref": "2 Coríntios 5:9",
+   "text": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência."
+  },
+  {
+   "ref": "2 Coríntios 5:10",
+   "text": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo."
+  },
+  {
+   "ref": "2 Coríntios 5:11",
+   "text": "Tendo em vista o temor que devemos ao Senhor, procuramos persuadir os homens; somos plenamente conhecidos por Deus, e espero que também a vossa consciência nos reconheça."
+  },
+  {
+   "ref": "2 Coríntios 5:12",
+   "text": "Porque não estamos nos recomendando de novo a vocês; pelo contrário, estamos dando a vocês uma razão para se gloriarem a nosso respeito, para que tenham o que responder àqueles que se gloriam na aparência e não no coração."
+  },
+  {
+   "ref": "2 Coríntios 5:13",
+   "text": "Se estamos fora de nós é para Deus; e, se retemos o juízo, é para vocês."
+  }
+ ]
+}
+</cena>

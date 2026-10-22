@@ -1,0 +1,310 @@
+{
+ "study": {
+  "passageRef": "Josué 6:2–5",
+  "passages": [{"ref": "Josué 6:2–5"}, {"ref": "Josué 6:16–20"}],
+  "context": "Jericó está fechada e ninguém entra ou sai. O plano de Deus não é arrombar muralhas, mas rodear a cidade com a arca, trombetas e silêncio, até o dia do grande grito.",
+  "keyword": "Consagrada",
+  "keywordGloss": "Jericó e seus bens são separados para o Senhor: a vitória e o despojo são dele.",
+  "focusQuestion": "O que você precisa entregar a Deus em vez de guardar para si?",
+  "reflectionPrompts": ["Obedecer sem entender tudo", "A vitória é do Senhor", "Guardar-se do proibido"],
+  "facts": [
+   {"text": "O Senhor diz que já entregou Jericó, seu rei e seus valentes nas mãos de Josué.", "evidenceRef": "Josué 6:2", "evidenceSpan": "Eis que entreguei nas suas mãos Jericó"},
+   {"text": "Os homens de guerra cercarão a cidade uma vez por dia, por seis dias.", "evidenceRef": "Josué 6:3", "evidenceSpan": "assim farão por seis dias"},
+   {"text": "No sétimo dia, cercarão a cidade sete vezes ao som das trombetas.", "evidenceRef": "Josué 6:4", "evidenceSpan": "vocês cercarão a cidade sete vezes"},
+   {"text": "Somente Raabe e os que estiverem em sua casa viverão.", "evidenceRef": "Josué 6:17", "evidenceSpan": "somente Raabe, a prostituta, viverá"},
+   {"text": "A prata, o ouro, o bronze e o ferro irão para o tesouro do Senhor.", "evidenceRef": "Josué 6:19", "evidenceSpan": "irão para o tesouro do Senhor"},
+   {"text": "Ao grito do povo e ao som das trombetas, as muralhas ruíram.", "evidenceRef": "Josué 6:20", "evidenceSpan": "as muralhas ruíram"}
+  ],
+  "keyTerms": [
+   {"term": "trombetas", "gloss": "O som que marca o tempo de Deus na batalha: não é barulho de guerra comum."},
+   {"term": "consagrada", "gloss": "A cidade é separada para o Senhor; nada dela pode ser guardado pelo povo."},
+   {"term": "muralhas", "gloss": "A defesa de Jericó, que cai sem ataque humano: quem derruba é o Senhor."}
+  ],
+  "structure": [
+   {"label": "Deus promete entregar Jericó", "evidenceRef": "Josué 6:2"},
+   {"label": "Israel rodeia a cidade em obediência", "evidenceRef": "Josué 6:3"},
+   {"label": "Josué anuncia o dia do grito", "evidenceRef": "Josué 6:16"},
+   {"label": "As muralhas caem e Raabe é salva", "evidenceRef": "Josué 6:20"}
+  ],
+  "relations": [
+   {"kind": "causa", "text": "O povo deve gritar porque o Senhor já lhe deu a cidade.", "marker": "porque", "evidenceRef": "Josué 6:16"},
+   {"kind": "propósito", "text": "Os metais preciosos não viram despojo do povo: vão para o tesouro do Senhor.", "marker": "para", "evidenceRef": "Josué 6:19"},
+   {"kind": "sequência", "text": "Primeiro o grito e as trombetas; então as muralhas ruem e o povo sobe.", "marker": "Então", "evidenceRef": "Josué 6:20"}
+  ],
+  "crossRefs": [
+   {"ref": "Hebreus 11:30", "bridge": "Muros caem pela fé"},
+   {"ref": "Hebreus 11:31", "bridge": "Raabe salva pela fé"},
+   {"ref": "1 Reis 16:34", "bridge": "Maldição de Jericó cumprida"}
+  ],
+  "misreadings": [
+   {"text": "As muralhas caíram pela força do grito e da estratégia militar de Israel.", "why": "Antes de qualquer volta, Deus diz que já entregou a cidade; o povo só obedece."},
+   {"text": "Raabe foi salva por sorte, porque sua casa ficava no lugar certo.", "why": "Ela é poupada porque escondeu os mensageiros e creu no Deus de Israel."},
+   {"text": "O povo podia ficar com o ouro e a prata de Jericó como paga da vitória.", "why": "Tudo é consagrado ao Senhor e vai para o tesouro dele; guardar era maldição."}
+  ],
+  "centralInsight": "A vitória é do Senhor: o povo obedece, e Deus derruba as muralhas",
+  "anchorQuestion": "Segundo Josué 6:2, quem entrega Jericó nas mãos de Josué?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Josué 6:1, Jericó estava aberta e o povo entrava e saía livremente",
+   "verseRef": "Josué 6:1", "correctOptionId": "false",
+   "evidenceSpan": "Jericó estava totalmente fechada",
+   "feedbackCorrect": "Jericó estava totalmente fechada: ninguém saía, nem entrava.",
+   "feedbackWrong": {"true": "Releia Josué 6:1: a cidade estava fechada por causa de Israel."},
+   "hint": "Veja como a cidade reage à chegada de Israel.",
+   "learningObjective": "Observar a situação de Jericó antes da conquista.",
+   "evidence": ["Josué 6:1"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Josué 6:20, toque o que ruiu quando o povo gritou e as trombetas soaram",
+   "verseRef": "Josué 6:20",
+   "options": [{"id": "a", "text": "à cidade"}, {"id": "b", "text": "as muralhas"}, {"id": "c", "text": "o povo"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "as muralhas ruíram",
+   "feedbackCorrect": "Ao grito e às trombetas, a defesa de Jericó cai por terra.",
+   "feedbackWrong": {"a": "A cidade é tomada depois; o que cai primeiro é a sua defesa.", "c": "O povo é quem grita e sobe; quem cai é a obra de pedra da cidade."},
+   "hint": "Procure o que cai antes de o povo subir.",
+   "learningObjective": "Identificar o que Deus derruba em Jericó.",
+   "evidence": ["Josué 6:20"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Josué 6:17, quem viverá quando a cidade for tomada",
+   "verseRef": "Josué 6:17",
+   "options": [
+    {"id": "a", "text": "Somente Raabe e os de sua casa"},
+    {"id": "b", "text": "O rei de Jericó e seus valentes"},
+    {"id": "c", "text": "Todos os moradores da cidade"},
+    {"id": "d", "text": "Somente os sacerdotes de Jericó"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente Raabe, a prostituta, viverá",
+   "feedbackCorrect": "Raabe e sua casa são poupados porque ela escondeu os mensageiros.",
+   "feedbackWrong": {"b": "O rei e os valentes são entregues a Josué, não poupados.", "c": "A cidade é consagrada à destruição; só a casa de Raabe vive.", "d": "Quem toca trombeta são os sacerdotes de Israel; os de Jericó não são citados."},
+   "hint": "Veja a exceção que Josué anuncia antes da tomada.",
+   "learningObjective": "Observar a salvação anunciada para Raabe e sua casa.",
+   "evidence": ["Josué 6:17"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Josué 6:20 na ordem do texto",
+   "verseRef": "Josué 6:20",
+   "options": [
+    {"id": "a", "text": "Então o povo gritou"},
+    {"id": "b", "text": "os sacerdotes tocaram as trombetas"},
+    {"id": "c", "text": "as muralhas ruíram"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Então o povo gritou",
+   "feedbackCorrect": "Grito, trombetas e então a queda: a sequência que Deus ordenou.",
+   "feedbackWrong": {"default": "Comece pelo grito do povo; a queda das muralhas vem por último."},
+   "hint": "O versículo começa com a reação do povo.",
+   "learningObjective": "Reconhecer a sequência da queda de Jericó.",
+   "evidence": ["Josué 6:20"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Josué 6:5, com que o povo gritará quando a trombeta soar prolongadamente",
+   "verseRef": "Josué 6:5",
+   "options": [{"id": "a", "text": "clamor"}, {"id": "b", "text": "silêncio"}, {"id": "c", "text": "medo"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo o povo gritará com grande clamor",
+   "feedbackCorrect": "O grito marcado por Deus é grande e coletivo, no som da trombeta.",
+   "feedbackWrong": {"b": "O silêncio vale para os dias de volta; no sétimo dia, Deus manda gritar.", "c": "Quem teme é Jericó; o povo de Deus grita na hora marcada."},
+   "hint": "Veja como Deus descreve o grito do povo.",
+   "learningObjective": "Lembrar o grito ordenado para o dia da queda.",
+   "evidence": ["Josué 6:5"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Josué 6:2 comunica que se liga a este contexto",
+   "verseRef": "Josué 6:2",
+   "passageA": {"ref": "Josué 6:2"},
+   "passageB": {"ref": "Contexto", "text": "Jericó está fechada, com rei e guerreiros prontos para resistir."},
+   "options": [{"id": "a", "text": "Deus já entregou Jericó"}, {"id": "b", "text": "Israel deve negociar a paz"}, {"id": "c", "text": "Jericó vence sem lutar"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
+   "feedbackCorrect": "Antes das voltas, Deus garante: a cidade já está entregue.",
+   "feedbackWrong": {"b": "Deus não manda negociar; ele promete entregar a cidade.", "c": "Quem recebe a cidade é Josué, pela palavra do Senhor."},
+   "hint": "Veja a garantia que Deus dá antes do plano.",
+   "learningObjective": "Ligar a promessa de Deus à conquista de Jericó.",
+   "evidence": ["Josué 6:2"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Josué 6:15–16, o povo rodeia a cidade sete vezes no sétimo dia antes de Josué mandar gritar",
+   "verseRef": "Josué 6:15–16", "correctOptionId": "true",
+   "evidenceSpan": "rodearam a cidade sete vezes",
+   "feedbackCorrect": "As sete voltas vêm antes: só depois delas Josué manda o povo gritar.",
+   "feedbackWrong": {"false": "Releia Josué 6:15–16: primeiro as sete voltas, então o grito."},
+   "hint": "Repare na ordem entre as voltas e o grito.",
+   "learningObjective": "Compreender a ordem do plano no sétimo dia.",
+   "evidence": ["Josué 6:15–16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Josué 6:16, toque a palavra que apresenta o motivo para o povo gritar",
+   "verseRef": "Josué 6:16",
+   "options": [{"id": "a", "text": "quando"}, {"id": "b", "text": "povo"}, {"id": "c", "text": "porque"}],
+   "correctOptionId": "c",
+   "evidenceSpan": "porque o Senhor vos deu a cidade",
+   "feedbackCorrect": "O grito não cria a vitória: ele responde ao presente de Deus.",
+   "feedbackWrong": {"a": "Esse termo marca o tempo do toque das trombetas, não o motivo.", "b": "O povo é quem deve gritar; o motivo vem depois dessa palavra."},
+   "hint": "Busque o termo que apresenta o motivo do grito.",
+   "learningObjective": "Reconhecer o marcador de causa em Josué 6:16.",
+   "evidence": ["Josué 6:16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Josué 6:16 se relaciona com Josué 6:2",
+   "verseRef": "Josué 6:2",
+   "options": [
+    {"id": "a", "text": "O grito responde à entrega já prometida"},
+    {"id": "b", "text": "O grito obriga Deus a entregar a cidade"},
+    {"id": "c", "text": "Josué anuncia um plano diferente do de Deus"},
+    {"id": "d", "text": "A promessa só vale depois da queda do muro"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
+   "feedbackCorrect": "Deus promete no início, e o povo grita no fim confiando na promessa.",
+   "feedbackWrong": {"b": "Deus entrega por sua vontade, antes do grito; não é obrigado.", "c": "Josué repete o que Deus ordenou; não há plano diferente.", "d": "A entrega é anunciada antes das voltas, não depois da queda."},
+   "hint": "Compare o tempo da promessa com o tempo do grito.",
+   "learningObjective": "Relacionar promessa de Deus e obediência do povo em Jericó.",
+   "evidence": ["Josué 6:2"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o plano em Josué 6:2–4",
+   "verseRef": "Josué 6:2–3",
+   "options": [
+    {"id": "a", "text": "Deus entrega Jericó nas mãos de Josué"},
+    {"id": "b", "text": "O povo rodeia a cidade uma vez ao dia"},
+    {"id": "c", "text": "No sétimo dia, as voltas se multiplicam"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
+   "feedbackCorrect": "Promessa primeiro, obediência diária depois, e o sétimo dia intensifica.",
+   "feedbackWrong": {"default": "Comece pela promessa de Deus; o sétimo dia vem por último."},
+   "hint": "O sétimo dia fecha o plano anunciado.",
+   "learningObjective": "Compreender os movimentos do plano de Jericó.",
+   "evidence": ["Josué 6:2–3"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Josué 6:16, qual é a ordem de Josué ao povo na sétima volta",
+   "verseRef": "Josué 6:16",
+   "options": [{"id": "a", "text": "Calem"}, {"id": "b", "text": "Gritem"}, {"id": "c", "text": "Corram"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "Josué disse ao povo: Gritem",
+   "feedbackCorrect": "Depois de dias de silêncio, a palavra de ordem finalmente chega.",
+   "feedbackWrong": {"a": "Calem era a ordem dos dias anteriores; no sétimo, a ordem muda.", "c": "O povo sobe depois da queda; a ordem imediata é outra."},
+   "hint": "Veja a ordem que encerra os dias de silêncio.",
+   "learningObjective": "Compreender o momento do grito no plano de Deus.",
+   "evidence": ["Josué 6:16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Josué 6:20 a Hebreus 11:30",
+   "verseRef": "Josué 6:20",
+   "passageA": {"ref": "Josué 6:20"},
+   "passageB": {"ref": "Hebreus 11:30"},
+   "options": [{"id": "a", "text": "Muros caem pela fé"}, {"id": "b", "text": "Muros caem pela força"}, {"id": "c", "text": "Grito derruba qualquer muro"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "as muralhas ruíram",
+   "feedbackCorrect": "Hebreus lê Jericó como fé que obedece até o muro cair.",
+   "feedbackWrong": {"b": "Hebreus não cita força militar; cita a fé do povo que rodeou.", "c": "O grito sozinho não é a lição; é a fé que obedece à palavra."},
+   "hint": "Veja a palavra que Hebreus usa para resumir Jericó.",
+   "learningObjective": "Relacionar a queda de Jericó à fé em Hebreus 11.",
+   "evidence": ["Josué 6:20", "Hebreus 11:30"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "A queda de Jericó prova que a vitória veio da força militar e da estratégia de Israel",
+   "verseRef": "Josué 6:2", "correctOptionId": "false",
+   "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
+   "feedbackCorrect": "Antes da estratégia, Deus declara que ele mesmo entrega a cidade.",
+   "feedbackWrong": {"true": "Releia Josué 6:2: a entrega é de Deus, anunciada antes das voltas."},
+   "hint": "Veja quem é o sujeito da entrega da cidade.",
+   "learningObjective": "Interpretar a vitória de Jericó como presente de Deus.",
+   "evidence": ["Josué 6:2"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Josué 6:2, toque a palavra que mostra que a vitória já é presente de Deus",
+   "verseRef": "Josué 6:2",
+   "options": [{"id": "a", "text": "entreguei"}, {"id": "b", "text": "seu rei"}, {"id": "c", "text": "os valentes"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
+   "feedbackCorrect": "No passado de Deus, a cidade já está entregue antes da primeira volta.",
+   "feedbackWrong": {"b": "O rei faz parte do que é entregue; o presente está no verbo de Deus.", "c": "Os valentes são os guerreiros entregues; a ação é de Deus."},
+   "hint": "Procure o verbo que Deus usa falando de si mesmo.",
+   "learningObjective": "Sustentar com o texto que a vitória é dom de Deus.",
+   "evidence": ["Josué 6:2"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Josué 6:19 sustenta sobre o despojo de Jericó",
+   "verseRef": "Josué 6:19",
+   "options": [
+    {"id": "a", "text": "A vitória rende uma paga livre ao povo"},
+    {"id": "b", "text": "O melhor da vitória pertence ao Senhor"},
+    {"id": "c", "text": "Metais preciosos não têm valor para Deus"},
+    {"id": "d", "text": "Cada soldado pode guardar o que achar"}
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "são consagrados ao Senhor",
+   "feedbackCorrect": "Prata, ouro, bronze e ferro são separados para o tesouro do Senhor.",
+   "feedbackWrong": {"a": "Não há paga livre: tudo é consagrado e vai para o Senhor.", "c": "Os metais vão para o tesouro de Deus; têm destino santo.", "d": "Guardar o consagrado é justamente o que traz maldição (6:18)."},
+   "hint": "Veja para onde vão a prata e o ouro da cidade.",
+   "learningObjective": "Escolher a interpretação que Josué 6 sustenta sobre o despojo.",
+   "evidence": ["Josué 6:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho de Jericó na história da Bíblia",
+   "verseRef": "Josué 6:2",
+   "options": [
+    {"id": "a", "text": "Deus entrega Jericó a Josué"},
+    {"id": "b", "text": "Os muros caem pela fé do povo"},
+    {"id": "c", "text": "A maldição se cumpre gerações depois"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Eis que entreguei nas suas mãos Jericó",
+   "feedbackCorrect": "Da promessa à fé em Hebreus, até o cumprimento tardio da maldição.",
+   "feedbackWrong": {"default": "Siga a ordem: Josué, Hebreus e depois o livro de Reis."},
+   "hint": "Siga a ordem dos livros na Bíblia.",
+   "learningObjective": "Ver Jericó como começo de um fio que atravessa a Bíblia.",
+   "evidence": ["Josué 6:2", "Hebreus 11:30", "1 Reis 16:34"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Josué 6:19, para onde irão a prata, o ouro, o bronze e o ferro",
+   "verseRef": "Josué 6:19",
+   "options": [{"id": "a", "text": "altar"}, {"id": "b", "text": "acampamento"}, {"id": "c", "text": "tesouro"}],
+   "correctOptionId": "c",
+   "evidenceSpan": "irão para o tesouro do Senhor",
+   "feedbackCorrect": "O que há de valioso na vitória não é do povo: é separado para Deus.",
+   "feedbackWrong": {"a": "O texto não fala de altar aqui, e sim do destino dos bens consagrados.", "b": "Levar para si no acampamento é o perigo condenado em 6:18."},
+   "hint": "Veja o destino que Deus marca para os metais.",
+   "learningObjective": "Lembrar o termo que mostra a quem pertence a vitória.",
+   "evidence": ["Josué 6:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Josué 6:26 a 1 Reis 16:34",
+   "verseRef": "Josué 6:26",
+   "passageA": {"ref": "Josué 6:26"},
+   "passageB": {"ref": "1 Reis 16:34"},
+   "options": [{"id": "a", "text": "Jericó reconstruída sem custo"}, {"id": "b", "text": "Maldição de Jericó cumprida"}, {"id": "c", "text": "Reis esquecem a palavra antiga"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "reedificar esta cidade de Jericó",
+   "feedbackCorrect": "Séculos depois, reedificar Jericó custa exatamente o que Josué anunciou.",
+   "feedbackWrong": {"a": "A reconstrução custa os filhos de quem a faz, como Josué disse.", "c": "O livro de Reis mostra a palavra lembrada no seu cumprimento."},
+   "hint": "Compare o preço anunciado com o preço pago depois.",
+   "learningObjective": "Ligar a palavra de Josué ao seu cumprimento em Reis.",
+   "evidence": ["Josué 6:26", "1 Reis 16:34"]
+  }
+ ]
+}

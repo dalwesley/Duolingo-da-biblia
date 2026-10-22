@@ -1,0 +1,4844 @@
+[
+  {
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--01",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Juízes 17:6, não havia rei em Israel naqueles dias",
+    "prompt": "Em Juízes 17:6, não havia rei em Israel naqueles dias",
+    "cue": "Em Juízes 17:6, não havia rei em Israel naqueles dias",
+    "verseRef": "Juízes 17:6",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "O narrador diz que não havia rei em Israel naqueles dias.",
+    "feedbackWrong": {
+      "false": "Releia o começo do versículo; a ausência de rei é afirmada."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar a situação de Israel descrita pelo narrador.",
+    "evidence": [
+      "Juízes 17:6"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--02",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 17:6, toque o que não havia em Israel.",
+    "prompt": "Em Juízes 17:6, toque o que não havia em Israel.",
+    "cue": "Em Juízes 17:6, toque o que não havia em Israel.",
+    "verseRef": "Juízes 17:6",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "cada um"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "A frase diz que não havia rei; cada um seguia o próprio critério.",
+    "feedbackWrong": {
+      "a": "Israel é o povo, não o que faltava nele.",
+      "c": "Cada um é quem agia sem direção, não o que faltava."
+    },
+    "hint": "Olhe a primeira parte do versículo.",
+    "learningObjective": "Identificar o que faltava em Israel.",
+    "evidence": [
+      "Juízes 17:6"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--03",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Juízes 17:4, o que o ourives fez com as moedas de prata?",
+    "prompt": "Segundo Juízes 17:4, o que o ourives fez com as moedas de prata?",
+    "cue": "Segundo Juízes 17:4, o que o ourives fez com as moedas de prata?",
+    "verseRef": "Juízes 17:4",
+    "passageText": "Porém ele restituiu aquele dinheiro à sua mãe, que tomou duzentas moedas de prata e as deu ao ourives, o qual fez delas uma imagem esculpida e fundida; e a imagem ficou na casa de Mica.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma imagem esculpida e fundida"
+      },
+      {
+        "id": "b",
+        "text": "Uma casa de deuses"
+      },
+      {
+        "id": "c",
+        "text": "Ídolos para o lar"
+      },
+      {
+        "id": "d",
+        "text": "Uma estola sacerdotal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "fez delas uma imagem esculpida e fundida",
+    "feedbackCorrect": "Com a prata, o ourives fez uma imagem que ficou na casa de Mica.",
+    "feedbackWrong": {
+      "b": "A casa de deuses é de Mica em 17:5, não obra do ourives.",
+      "c": "Os ídolos do lar também aparecem em 17:5, nas mãos de Mica.",
+      "d": "A estola aparece em 17:5, feita por Mica, não pelo ourives."
+    },
+    "hint": "Veja o que foi feito com as duzentas moedas.",
+    "learningObjective": "Observar o destino da prata entregue ao ourives.",
+    "evidence": [
+      "Juízes 17:4"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--04",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 17:5 na ordem do texto.",
+    "prompt": "Monte Juízes 17:5 na ordem do texto.",
+    "cue": "Monte Juízes 17:5 na ordem do texto.",
+    "verseRef": "Juízes 17:5",
+    "passageText": "E aquele homem, Mica, tinha uma casa de deuses; fez uma estola sacerdotal e ídolos do lar, e consagrou um de seus filhos para que lhe fosse por sacerdote.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E aquele homem, Mica, tinha uma casa de deuses"
+      },
+      {
+        "id": "b",
+        "text": "fez uma estola sacerdotal e ídolos do lar"
+      },
+      {
+        "id": "c",
+        "text": "e consagrou um de seus filhos para que lhe fosse por sacerdote"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tinha uma casa de deuses",
+    "feedbackCorrect": "Casa de deuses, estola e ídolos, e o filho consagrado: é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Comece pela casa de deuses; o filho consagrado fecha o versículo."
+    },
+    "hint": "O versículo começa pela casa de Mica.",
+    "learningObjective": "Reconhecer a sequência de Juízes 17:5.",
+    "evidence": [
+      "Juízes 17:5"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--05",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Juízes 17:4, a quem a mãe entregou as moedas de prata?",
+    "prompt": "Em Juízes 17:4, a quem a mãe entregou as moedas de prata?",
+    "cue": "Em Juízes 17:4, a quem a mãe entregou as moedas de prata?",
+    "verseRef": "Juízes 17:4",
+    "passageText": "Porém ele restituiu aquele dinheiro à sua mãe, que tomou duzentas moedas de prata e as deu ao ourives, o qual fez delas uma imagem esculpida e fundida; e a imagem ficou na casa de Mica.",
+    "template": "Porém ele restituiu aquele dinheiro à sua mãe, que tomou duzentas moedas de prata e as deu ao ___, o qual fez delas uma imagem esculpida e fundida; e a imagem ficou na casa de Mica.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ourives"
+      },
+      {
+        "id": "b",
+        "text": "sacerdote"
+      },
+      {
+        "id": "c",
+        "text": "levita"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as deu ao ourives",
+    "feedbackCorrect": "As moedas foram ao profissional que fez a imagem com a prata.",
+    "feedbackWrong": {
+      "b": "A função sacerdotal aparece em 17:5, ligada ao filho de Mica.",
+      "c": "O levita só aparece depois, a partir de 17:7."
+    },
+    "hint": "Veja quem trabalhou a prata depois.",
+    "learningObjective": "Lembrar quem recebeu a prata da mãe de Mica.",
+    "evidence": [
+      "Juízes 17:4"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--06",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Juízes 17:6 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 17:6 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 17:6 comunica que se liga a este contexto?",
+    "verseRef": "Juízes 17:6",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "passageA": {
+      "ref": "Juízes 17:6",
+      "text": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Israel estava sem rei e cada pessoa seguia o próprio critério."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um sacerdote aprovado pelo Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Um culto organizado pelo rei"
+      },
+      {
+        "id": "c",
+        "text": "Cada um pelo próprio critério"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cada um fazia o que julgava ser certo",
+    "feedbackCorrect": "Sem rei, cada um fazia o que julgava ser certo.",
+    "feedbackWrong": {
+      "a": "O sacerdote de Mica foi consagrado por ele, não aprovado no texto.",
+      "b": "O versículo diz justamente que não havia rei em Israel."
+    },
+    "hint": "Veja a segunda parte do versículo.",
+    "learningObjective": "Ligar Juízes 17:6 ao critério próprio de cada um.",
+    "evidence": [
+      "Juízes 17:6"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--01",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Juízes 17:3–4, o dinheiro dedicado ao Senhor foi usado sem envolver nenhuma imagem",
+    "prompt": "Em Juízes 17:3–4, o dinheiro dedicado ao Senhor foi usado sem envolver nenhuma imagem",
+    "cue": "Em Juízes 17:3–4, o dinheiro dedicado ao Senhor foi usado sem envolver nenhuma imagem",
+    "verseRef": "Juízes 17:3–4",
+    "passageText": "Restituiu, então, as mil e cem moedas de prata à sua mãe, que disse: \"Dediquei este dinheiro ao SENHOR para meu filho, a fim de fazer uma imagem esculpida e uma de fundição; por isso, agora to devolvo.\" Porém ele restituiu aquele dinheiro à sua mãe, que tomou duzentas moedas de prata e as deu ao ourives, o qual fez delas uma imagem esculpida e fundida; e a imagem ficou na casa de Mica.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a fim de fazer uma imagem esculpida",
+    "feedbackCorrect": "A dedicação tinha como fim fazer uma imagem; o plano aparece já em 17:3.",
+    "feedbackWrong": {
+      "true": "Releia a finalidade dita em 17:3; a imagem estava no plano desde o início."
+    },
+    "hint": "Repare na finalidade do dinheiro dedicado.",
+    "learningObjective": "Compreender a ligação entre a dedicação e a imagem.",
+    "evidence": [
+      "Juízes 17:3–4"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--02",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 17:4, toque a palavra que abre a virada da cena.",
+    "prompt": "Em Juízes 17:4, toque a palavra que abre a virada da cena.",
+    "cue": "Em Juízes 17:4, toque a palavra que abre a virada da cena.",
+    "verseRef": "Juízes 17:4",
+    "passageText": "Porém ele restituiu aquele dinheiro à sua mãe, que tomou duzentas moedas de prata e as deu ao ourives, o qual fez delas uma imagem esculpida e fundida; e a imagem ficou na casa de Mica.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porém"
+      },
+      {
+        "id": "b",
+        "text": "restituiu"
+      },
+      {
+        "id": "c",
+        "text": "duzentas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Porém ele restituiu",
+    "feedbackCorrect": "A palavra inicial vira a cena: o dinheiro volta e segue para a imagem.",
+    "feedbackWrong": {
+      "b": "Esse verbo diz a ação, não a palavra que abre a virada.",
+      "c": "Esse número diz a quantia, não a virada da cena."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a palavra que marca a virada em 17:4.",
+    "evidence": [
+      "Juízes 17:4"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--03",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Juízes 17:5 se relaciona com Juízes 17:3–4?",
+    "prompt": "Como Juízes 17:5 se relaciona com Juízes 17:3–4?",
+    "cue": "Como Juízes 17:5 se relaciona com Juízes 17:3–4?",
+    "verseRef": "Juízes 17:5",
+    "passageText": "E aquele homem, Mica, tinha uma casa de deuses; fez uma estola sacerdotal e ídolos do lar, e consagrou um de seus filhos para que lhe fosse por sacerdote.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mica transforma a imagem em culto doméstico próprio"
+      },
+      {
+        "id": "b",
+        "text": "O filho de Mica recusa participar do culto da casa"
+      },
+      {
+        "id": "c",
+        "text": "Mica leva a imagem para aprovação dos levitas"
+      },
+      {
+        "id": "d",
+        "text": "A mãe de Mica destrói a imagem recebida de volta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tinha uma casa de deuses",
+    "feedbackCorrect": "A imagem ganha casa, objetos e um filho consagrado: um culto montado por Mica.",
+    "feedbackWrong": {
+      "b": "O filho é consagrado por Mica; o texto não fala de recusa.",
+      "c": "Nenhum levita aprova a imagem; o levita só chega depois.",
+      "d": "A mãe entrega a prata para a imagem ser feita, não a destrói."
+    },
+    "hint": "Veja o que Mica acrescenta ao redor da imagem.",
+    "learningObjective": "Relacionar a imagem ao culto doméstico de Mica.",
+    "evidence": [
+      "Juízes 17:4",
+      "Juízes 17:5"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--04",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Juízes 17:3–4?",
+    "prompt": "Como avança a cena em Juízes 17:3–4?",
+    "cue": "Como avança a cena em Juízes 17:3–4?",
+    "verseRef": "Juízes 17:3–4",
+    "passageText": "Restituiu, então, as mil e cem moedas de prata à sua mãe, que disse: \"Dediquei este dinheiro ao SENHOR para meu filho, a fim de fazer uma imagem esculpida e uma de fundição; por isso, agora to devolvo.\" Porém ele restituiu aquele dinheiro à sua mãe, que tomou duzentas moedas de prata e as deu ao ourives, o qual fez delas uma imagem esculpida e fundida; e a imagem ficou na casa de Mica.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O filho devolve o dinheiro à mãe"
+      },
+      {
+        "id": "b",
+        "text": "A mãe entrega prata para fazer a imagem"
+      },
+      {
+        "id": "c",
+        "text": "A imagem fica na casa de Mica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e a imagem ficou na casa de Mica",
+    "feedbackCorrect": "Devolução, entrega da prata e imagem pronta na casa: esse é o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pela devolução do dinheiro; a imagem pronta fecha o trecho."
+    },
+    "hint": "A imagem pronta é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento de Juízes 17:3–4.",
+    "evidence": [
+      "Juízes 17:3–4"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--05",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Juízes 17:5, para que função Mica consagrou um de seus filhos?",
+    "prompt": "Em Juízes 17:5, para que função Mica consagrou um de seus filhos?",
+    "cue": "Em Juízes 17:5, para que função Mica consagrou um de seus filhos?",
+    "verseRef": "Juízes 17:5",
+    "passageText": "E aquele homem, Mica, tinha uma casa de deuses; fez uma estola sacerdotal e ídolos do lar, e consagrou um de seus filhos para que lhe fosse por sacerdote.",
+    "template": "E aquele homem, Mica, tinha uma casa de deuses; fez uma estola sacerdotal e ídolos do lar, e consagrou um de seus filhos para que lhe fosse por ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "levita"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "sacerdote"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "consagrou um de seus filhos para que lhe fosse por sacerdote",
+    "feedbackCorrect": "Mica consagrou o próprio filho para atuar no culto de sua casa.",
+    "feedbackWrong": {
+      "a": "O levita aparece em 17:7; aqui o filho recebe outra função.",
+      "b": "Rei é o que faltava em Israel, não a função dada ao filho."
+    },
+    "hint": "Olhe o fim do versículo, depois de consagrou.",
+    "learningObjective": "Compreender a função criada por Mica em casa.",
+    "evidence": [
+      "Juízes 17:5"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--06",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Juízes 17:6 a Deuteronômio 12:8?",
+    "prompt": "O que liga Juízes 17:6 a Deuteronômio 12:8?",
+    "cue": "O que liga Juízes 17:6 a Deuteronômio 12:8?",
+    "verseRef": "Juízes 17:6",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "passageA": {
+      "ref": "Juízes 17:6",
+      "text": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 12:8",
+      "text": "Não farão em nada conforme o que estamos fazendo aqui hoje, cada um fazendo o que lhe parece bem aos seus olhos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seguir um rei nomeado"
+      },
+      {
+        "id": "b",
+        "text": "Obedecer à palavra do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Agir pelo próprio critério"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cada um fazia o que julgava ser certo",
+    "feedbackCorrect": "Os dois textos falam de cada um fazendo o que bem lhe parece.",
+    "feedbackWrong": {
+      "a": "Em Juízes não havia rei; Deuteronômio trata do critério de cada um.",
+      "b": "Nos dois trechos, o problema é agir pelo próprio parecer, não obedecer."
+    },
+    "hint": "Compare o critério das ações nos dois trechos.",
+    "learningObjective": "Relacionar o critério próprio em Juízes e Deuteronômio.",
+    "evidence": [
+      "Juízes 17:6",
+      "Deuteronômio 12:8"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--01",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Juízes 17:6 apresenta cada um fazendo o que julgava certo como sinal de desordem no povo",
+    "prompt": "Juízes 17:6 apresenta cada um fazendo o que julgava certo como sinal de desordem no povo",
+    "cue": "Juízes 17:6 apresenta cada um fazendo o que julgava certo como sinal de desordem no povo",
+    "verseRef": "Juízes 17:6",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "cada um fazia o que julgava ser certo",
+    "feedbackCorrect": "O refrão liga a falta de rei ao critério de cada um e volta no fim do livro.",
+    "feedbackWrong": {
+      "false": "A frase não é elogio: ela explica um tempo sem rei e sem direção comum."
+    },
+    "hint": "Veja a ligação entre a falta de rei e a ação de cada um.",
+    "learningObjective": "Interpretar o refrão como diagnóstico do povo.",
+    "evidence": [
+      "Juízes 17:6",
+      "Juízes 21:25"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--02",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 21:25, toque o trecho que mostra quem seguia o próprio critério.",
+    "prompt": "Em Juízes 21:25, toque o trecho que mostra quem seguia o próprio critério.",
+    "cue": "Em Juízes 21:25, toque o trecho que mostra quem seguia o próprio critério.",
+    "verseRef": "Juízes 21:25",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Naqueles dias"
+      },
+      {
+        "id": "b",
+        "text": "não havia rei"
+      },
+      {
+        "id": "c",
+        "text": "cada um"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cada um fazia o que lhe parecia mais reto",
+    "feedbackCorrect": "No fim do livro, cada um fazia o que lhe parecia mais reto.",
+    "feedbackWrong": {
+      "a": "Isso marca o tempo da cena, não quem seguia o critério.",
+      "b": "Isso diz o que faltava, não quem agia por conta própria."
+    },
+    "hint": "Procure quem fazia o que parecia reto.",
+    "learningObjective": "Sustentar com o texto o critério de cada um.",
+    "evidence": [
+      "Juízes 21:25"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--03",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Juízes 17:5–6 sustenta sobre o culto de Mica?",
+    "prompt": "Que leitura Juízes 17:5–6 sustenta sobre o culto de Mica?",
+    "cue": "Que leitura Juízes 17:5–6 sustenta sobre o culto de Mica?",
+    "verseRef": "Juízes 17:5–6",
+    "passageText": "E aquele homem, Mica, tinha uma casa de deuses; fez uma estola sacerdotal e ídolos do lar, e consagrou um de seus filhos para que lhe fosse por sacerdote. Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mica monta um culto segundo o próprio critério"
+      },
+      {
+        "id": "b",
+        "text": "Consagrar o filho prova aprovação do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "A falta de rei torna qualquer culto aceitável"
+      },
+      {
+        "id": "d",
+        "text": "Mica restaura o culto ordenado pelo Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tinha uma casa de deuses",
+    "feedbackCorrect": "Casa, objetos e sacerdote são arranjos de Mica, num tempo sem direção comum.",
+    "feedbackWrong": {
+      "b": "O texto descreve o ato de Mica, sem declarar aprovação do Senhor.",
+      "c": "A falta de rei é o problema apontado, não uma permissão.",
+      "d": "O texto não mostra ordem do Senhor; mostra invenções de Mica."
+    },
+    "hint": "Compare quem decide cada parte desse culto.",
+    "learningObjective": "Escolher a interpretação sustentada pelo texto sobre Mica.",
+    "evidence": [
+      "Juízes 17:5–6"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--04",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do refrão em Juízes 17:6?",
+    "prompt": "Qual sequência revela o sentido do refrão em Juízes 17:6?",
+    "cue": "Qual sequência revela o sentido do refrão em Juízes 17:6?",
+    "verseRef": "Juízes 17:6",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que julgava ser certo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel fica sem rei e sem direção comum"
+      },
+      {
+        "id": "b",
+        "text": "Cada pessoa segue o que acha certo"
+      },
+      {
+        "id": "c",
+        "text": "O livro fecha repetindo o mesmo refrão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "Sem rei, cada um pelo próprio critério; o livro termina repetindo o refrão.",
+    "feedbackWrong": {
+      "default": "Comece pela falta de rei; o fecho do livro repete a mesma frase."
+    },
+    "hint": "Siga da causa ao retrato final do livro.",
+    "learningObjective": "Ver o refrão como fio que fecha o livro.",
+    "evidence": [
+      "Juízes 17:6",
+      "Juízes 21:25"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--05",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Juízes 17:3, o que a mãe queria fazer com o dinheiro dedicado?",
+    "prompt": "Em Juízes 17:3, o que a mãe queria fazer com o dinheiro dedicado?",
+    "cue": "Em Juízes 17:3, o que a mãe queria fazer com o dinheiro dedicado?",
+    "verseRef": "Juízes 17:3",
+    "passageText": "Restituiu, então, as mil e cem moedas de prata à sua mãe, que disse: \"Dediquei este dinheiro ao SENHOR para meu filho, a fim de fazer uma imagem esculpida e uma de fundição; por isso, agora to devolvo.\"",
+    "template": "Restituiu, então, as mil e cem moedas de prata à sua mãe, que disse: \"Dediquei este dinheiro ao SENHOR para meu filho, a fim de fazer uma ___ esculpida e uma de fundição; por isso, agora to devolvo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "imagem"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "estola"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a fim de fazer uma imagem esculpida",
+    "feedbackCorrect": "A finalidade declarada era fazer um objeto de culto com a prata.",
+    "feedbackWrong": {
+      "b": "A casa de deuses aparece em 17:5; aqui a finalidade é outra.",
+      "c": "A estola aparece em 17:5, feita por Mica, não neste plano."
+    },
+    "hint": "Veja a finalidade dita pela mãe.",
+    "learningObjective": "Lembrar o termo que revela o desvio do culto.",
+    "evidence": [
+      "Juízes 17:3"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--06",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Juízes 21:25 a Provérbios 21:2?",
+    "prompt": "O que liga Juízes 21:25 a Provérbios 21:2?",
+    "cue": "O que liga Juízes 21:25 a Provérbios 21:2?",
+    "verseRef": "Juízes 21:25",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "passageA": {
+      "ref": "Juízes 21:25",
+      "text": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto."
+    },
+    "passageB": {
+      "ref": "Provérbios 21:2",
+      "text": "Todo caminho do homem parece reto aos seus próprios olhos, mas o Senhor sonda os corações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus sonda o coração"
+      },
+      {
+        "id": "b",
+        "text": "Cada caminho é aprovado"
+      },
+      {
+        "id": "c",
+        "text": "O homem é sempre justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cada um fazia o que lhe parecia mais reto",
+    "feedbackCorrect": "O que parece reto ao homem ainda passa pelo Senhor, que sonda corações.",
+    "feedbackWrong": {
+      "b": "Parecer reto aos próprios olhos não é o mesmo que ser aprovado.",
+      "c": "Provérbios não declara o homem justo; quem julga é o Senhor."
+    },
+    "hint": "Veja quem avalia o caminho no segundo trecho.",
+    "learningObjective": "Ligar o parecer humano ao juízo do Senhor.",
+    "evidence": [
+      "Juízes 21:25",
+      "Provérbios 21:2"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-01",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Juízes 21:25, havia um rei governando Israel naqueles dias",
+    "prompt": "Em Juízes 21:25, havia um rei governando Israel naqueles dias",
+    "cue": "Em Juízes 21:25, havia um rei governando Israel naqueles dias",
+    "verseRef": "Juízes 21:25",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "O refrão diz que não havia rei em Israel naqueles dias.",
+    "feedbackWrong": {
+      "true": "Releia o refrão; a ausência de rei é justamente o ponto."
+    },
+    "hint": "Olhe o começo do refrão final.",
+    "learningObjective": "Observar a ausência de rei no fim do livro.",
+    "evidence": [
+      "Juízes 21:25"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-02",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 2:16, toque quem levantou juízes.",
+    "prompt": "Em Juízes 2:16, toque quem levantou juízes.",
+    "cue": "Em Juízes 2:16, toque quem levantou juízes.",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "juízes"
+      },
+      {
+        "id": "c",
+        "text": "das mãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor levantou juízes",
+    "feedbackCorrect": "É o Senhor quem levanta juízes para libertar o povo.",
+    "feedbackWrong": {
+      "b": "Juízes são os levantados, não quem levanta.",
+      "c": "Isso indica de onde o povo é tirado, não quem age."
+    },
+    "hint": "Procure quem faz a ação de levantar.",
+    "learningObjective": "Identificar o Senhor como quem levanta juízes.",
+    "evidence": [
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-03",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Juízes 21:23, o que Benjamim fez ao voltar?",
+    "prompt": "Segundo Juízes 21:23, o que Benjamim fez ao voltar?",
+    "cue": "Segundo Juízes 21:23, o que Benjamim fez ao voltar?",
+    "verseRef": "Juízes 21:23",
+    "passageText": "E os filhos de Benjamim fizeram assim, levaram as mulheres necessárias entre aquelas que haviam sido raptadas nas danças, partiram, retornaram para suas propriedades, reconstruíram as cidades e habitaram nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamou um rei para governar o povo"
+      },
+      {
+        "id": "b",
+        "text": "Levantou juízes para todo o Israel"
+      },
+      {
+        "id": "c",
+        "text": "Reconstruiu as cidades e habitou nelas"
+      },
+      {
+        "id": "d",
+        "text": "Partiu cada um para a sua tribo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "reconstruíram as cidades e habitaram nelas",
+    "feedbackCorrect": "Ao voltar às suas propriedades, Benjamim reconstruiu as cidades.",
+    "feedbackWrong": {
+      "a": "O refrão de 21:25 diz que não havia rei em Israel.",
+      "b": "Quem levanta juízes é o Senhor, como mostra 2:16.",
+      "d": "A partida para as tribos é descrita em 21:24, com Israel."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar o retorno de Benjamim às cidades.",
+    "evidence": [
+      "Juízes 21:23"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-04",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 21:24 na ordem do texto.",
+    "prompt": "Monte Juízes 21:24 na ordem do texto.",
+    "cue": "Monte Juízes 21:24 na ordem do texto.",
+    "verseRef": "Juízes 21:24",
+    "passageText": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua herança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, os filhos de Israel partiram dali"
+      },
+      {
+        "id": "b",
+        "text": "cada um para a sua tribo"
+      },
+      {
+        "id": "c",
+        "text": "para a sua família e para a sua herança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então, os filhos de Israel partiram dali",
+    "feedbackCorrect": "Partida, tribo, família e herança: essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Comece pela partida dos filhos de Israel; a herança fecha o versículo."
+    },
+    "hint": "O versículo começa com a partida.",
+    "learningObjective": "Reconhecer a sequência de Juízes 21:24.",
+    "evidence": [
+      "Juízes 21:24"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-05",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Juízes 2:16, o que os juízes fizeram pelo povo?",
+    "prompt": "Em Juízes 2:16, o que os juízes fizeram pelo povo?",
+    "cue": "Em Juízes 2:16, o que os juízes fizeram pelo povo?",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "template": "Então o Senhor levantou juízes que os ___ das mãos dos que os saqueavam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "levantou"
+      },
+      {
+        "id": "b",
+        "text": "libertaram"
+      },
+      {
+        "id": "c",
+        "text": "saqueavam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que os libertaram das mãos dos que os saqueavam",
+    "feedbackCorrect": "Os juízes libertaram o povo das mãos dos saqueadores.",
+    "feedbackWrong": {
+      "a": "Levantar foi a ação do Senhor em favor do povo.",
+      "c": "Saquear era a ação dos opressores, não dos juízes."
+    },
+    "hint": "Veja a ação dos juízes no meio do versículo.",
+    "learningObjective": "Lembrar a ação dos juízes pelo povo.",
+    "evidence": [
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-06",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "passageA": {
+      "ref": "Juízes 2:16",
+      "text": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O povo era saqueado e precisava de libertação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reis governam Israel sempre"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor levanta libertadores"
+      },
+      {
+        "id": "c",
+        "text": "O povo se salva sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor levantou juízes",
+    "feedbackCorrect": "Diante do saque, o Senhor levanta juízes que libertam o povo.",
+    "feedbackWrong": {
+      "a": "O fim do livro diz que não havia rei em Israel.",
+      "c": "O texto credita a iniciativa ao Senhor, não ao povo."
+    },
+    "hint": "Veja quem toma a iniciativa no versículo.",
+    "learningObjective": "Ligar Juízes 2:16 à iniciativa do Senhor.",
+    "evidence": [
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-01",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Juízes 21:24–25, a partida de cada um para sua tribo encerra um tempo de direção comum em Israel",
+    "prompt": "Em Juízes 21:24–25, a partida de cada um para sua tribo encerra um tempo de direção comum em Israel",
+    "cue": "Em Juízes 21:24–25, a partida de cada um para sua tribo encerra um tempo de direção comum em Israel",
+    "verseRef": "Juízes 21:24–25",
+    "passageText": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua herança. Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "Cada um parte para sua tribo num tempo em que não havia rei em Israel.",
+    "feedbackWrong": {
+      "true": "Releia 21:25: não havia rei, e cada um fazia o que parecia reto."
+    },
+    "hint": "Repare no refrão logo depois da partida.",
+    "learningObjective": "Compreender a dispersão à luz da falta de rei.",
+    "evidence": [
+      "Juízes 21:24–25"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-02",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 21:24, toque a palavra que marca o passo seguinte da narrativa.",
+    "prompt": "Em Juízes 21:24, toque a palavra que marca o passo seguinte da narrativa.",
+    "cue": "Em Juízes 21:24, toque a palavra que marca o passo seguinte da narrativa.",
+    "verseRef": "Juízes 21:24",
+    "passageText": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua herança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "sua tribo"
+      },
+      {
+        "id": "c",
+        "text": "cada um"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então, os filhos de Israel partiram dali",
+    "feedbackCorrect": "A palavra inicial marca a passagem para a dispersão das tribos.",
+    "feedbackWrong": {
+      "b": "Isso diz um dos destinos, não a ligação da narrativa.",
+      "c": "Isso mostra como o povo se divide, não o marcador inicial."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de sequência em 21:24.",
+    "evidence": [
+      "Juízes 21:24"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-03",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Juízes 2:16 se relaciona com Juízes 21:25?",
+    "prompt": "Como Juízes 2:16 se relaciona com Juízes 21:25?",
+    "cue": "Como Juízes 2:16 se relaciona com Juízes 21:25?",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem rei, o povo recebe juízes levantados por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Sem juízes, o povo se liberta por si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "Com saqueadores, o Senhor abandona o povo"
+      },
+      {
+        "id": "d",
+        "text": "Com um rei, o povo dispensa qualquer juiz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor levantou juízes",
+    "feedbackCorrect": "Num povo sem rei, o Senhor levanta juízes que libertam dos saqueadores.",
+    "feedbackWrong": {
+      "b": "O livramento vem por juízes levantados pelo Senhor, não por si.",
+      "c": "O Senhor age em favor do povo, mesmo no meio do saque.",
+      "d": "O refrão diz que não havia rei; juízes são levantados nesse cenário."
+    },
+    "hint": "Junte a falta de rei com a iniciativa do Senhor.",
+    "learningObjective": "Relacionar o refrão final ao padrão dos juízes.",
+    "evidence": [
+      "Juízes 2:16",
+      "Juízes 21:25"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-04",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o fim do livro em Juízes 21:23–25?",
+    "prompt": "Como avança o fim do livro em Juízes 21:23–25?",
+    "cue": "Como avança o fim do livro em Juízes 21:23–25?",
+    "verseRef": "Juízes 21:24–25",
+    "passageText": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua herança. Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Benjamim volta e reconstrói suas cidades"
+      },
+      {
+        "id": "b",
+        "text": "Israel parte para tribos e heranças"
+      },
+      {
+        "id": "c",
+        "text": "O refrão diz que não havia rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cada um para a sua tribo",
+    "feedbackCorrect": "Retorno de Benjamim, dispersão de Israel e refrão sem rei: esse é o fecho.",
+    "feedbackWrong": {
+      "default": "Comece pelo retorno de Benjamim; o refrão sem rei fecha o livro."
+    },
+    "hint": "O refrão é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento do fim do livro.",
+    "evidence": [
+      "Juízes 21:23–25"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-05",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Juízes 21:25, o que não havia em Israel naqueles dias?",
+    "prompt": "Em Juízes 21:25, o que não havia em Israel naqueles dias?",
+    "cue": "Em Juízes 21:25, o que não havia em Israel naqueles dias?",
+    "verseRef": "Juízes 21:25",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "template": "Naqueles dias, não havia ___ em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "juiz"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "O refrão afirma a ausência de rei em Israel naqueles dias.",
+    "feedbackWrong": {
+      "a": "Juízes eram levantados pelo Senhor, como mostra 2:16.",
+      "c": "O povo está presente; o que falta é rei, diz o refrão."
+    },
+    "hint": "Olhe a primeira parte do refrão.",
+    "learningObjective": "Compreender a ausência apontada pelo refrão.",
+    "evidence": [
+      "Juízes 21:25"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-06",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Juízes 2:16 a Hebreus 11:32?",
+    "prompt": "O que liga Juízes 2:16 a Hebreus 11:32?",
+    "cue": "O que liga Juízes 2:16 a Hebreus 11:32?",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "passageA": {
+      "ref": "Juízes 2:16",
+      "text": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam."
+    },
+    "passageB": {
+      "ref": "Hebreus 11:32",
+      "text": "E que mais posso dizer? Certamente, não teria tempo suficiente para relatar o que há a respeito de Gideão, Baraque, Sansão, Jefté, Davi, Samuel e os profetas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel dispensa libertadores"
+      },
+      {
+        "id": "b",
+        "text": "Juízes lembrados pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Juízes viram reis perpétuos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor levantou juízes",
+    "feedbackCorrect": "Hebreus cita nomes de juízes entre os que agiram pela fé.",
+    "feedbackWrong": {
+      "a": "Hebreus os lembra com honra, não como dispensáveis.",
+      "c": "Os juízes não viram reis; o livro insiste que não havia rei."
+    },
+    "hint": "Veja como Hebreus cita os nomes desse tempo.",
+    "learningObjective": "Relacionar os juízes à lembrança de Hebreus 11.",
+    "evidence": [
+      "Juízes 2:16",
+      "Hebreus 11:32"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-01",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Juízes 2:16 sustenta que o livramento do povo saqueado começa na ação do Senhor que levanta juízes",
+    "prompt": "Juízes 2:16 sustenta que o livramento do povo saqueado começa na ação do Senhor que levanta juízes",
+    "cue": "Juízes 2:16 sustenta que o livramento do povo saqueado começa na ação do Senhor que levanta juízes",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor levantou juízes que os libertaram",
+    "feedbackCorrect": "O livramento começa no Senhor, que levanta juízes para o povo.",
+    "feedbackWrong": {
+      "false": "O versículo põe o Senhor como sujeito: ele levantou juízes."
+    },
+    "hint": "Veja quem é o sujeito do versículo.",
+    "learningObjective": "Interpretar a origem do livramento em Juízes.",
+    "evidence": [
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-02",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 2:16, toque a ação do Senhor em favor do povo.",
+    "prompt": "Em Juízes 2:16, toque a ação do Senhor em favor do povo.",
+    "cue": "Em Juízes 2:16, toque a ação do Senhor em favor do povo.",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "que os libertaram"
+      },
+      {
+        "id": "b",
+        "text": "levantou juízes"
+      },
+      {
+        "id": "c",
+        "text": "das mãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor levantou juízes",
+    "feedbackCorrect": "A ação do Senhor é levantar juízes que libertam o povo.",
+    "feedbackWrong": {
+      "a": "Isso descreve o efeito por meio dos juízes levantados.",
+      "c": "Isso indica de onde o povo sai, não a ação do Senhor."
+    },
+    "hint": "Procure o verbo ligado ao Senhor.",
+    "learningObjective": "Sustentar com o texto a ação do Senhor.",
+    "evidence": [
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-03",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Juízes 21:25 sustenta sobre um povo sem direção comum?",
+    "prompt": "Que leitura Juízes 21:25 sustenta sobre um povo sem direção comum?",
+    "cue": "Que leitura Juízes 21:25 sustenta sobre um povo sem direção comum?",
+    "verseRef": "Juízes 21:25",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus levanta ajuda para um povo sem saída"
+      },
+      {
+        "id": "b",
+        "text": "A crise prova que Deus deixou o povo"
+      },
+      {
+        "id": "c",
+        "text": "Deus só age quando o povo merece ajuda"
+      },
+      {
+        "id": "d",
+        "text": "A força do povo torna Deus desnecessário"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "Mesmo saqueado, o povo recebe juízes porque o Senhor os levanta.",
+    "feedbackWrong": {
+      "b": "Levantar juízes é agir pelo povo, não abandoná-lo.",
+      "c": "O texto não põe merecimento como condição; põe a ação do Senhor.",
+      "d": "Quem levanta os libertadores é o Senhor, não a força do povo."
+    },
+    "hint": "Veja de quem parte a ajuda na crise.",
+    "learningObjective": "Escolher a interpretação sustentada sobre a crise.",
+    "evidence": [
+      "Juízes 21:25",
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-04",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela como a Bíblia lembra esse tempo sem rei?",
+    "prompt": "Qual sequência revela como a Bíblia lembra esse tempo sem rei?",
+    "cue": "Qual sequência revela como a Bíblia lembra esse tempo sem rei?",
+    "verseRef": "Juízes 21:25",
+    "passageText": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O livro fecha sem rei em Israel"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor levanta juízes mesmo assim"
+      },
+      {
+        "id": "c",
+        "text": "Hebreus lembra juízes entre os da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não havia rei em Israel",
+    "feedbackCorrect": "Sem rei, o Senhor levanta juízes; Hebreus lembra nomes desse tempo pela fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo refrão sem rei; Hebreus fecha a lembrança."
+    },
+    "hint": "Siga: refrão, livramento, lembrança em Hebreus.",
+    "learningObjective": "Ver o tempo sem rei à luz do livramento e da fé.",
+    "evidence": [
+      "Juízes 21:25",
+      "Juízes 2:16",
+      "Hebreus 11:32"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-05",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Juízes 21:24, para onde cada filho de Israel partiu por último na lista?",
+    "prompt": "Em Juízes 21:24, para onde cada filho de Israel partiu por último na lista?",
+    "cue": "Em Juízes 21:24, para onde cada filho de Israel partiu por último na lista?",
+    "verseRef": "Juízes 21:24",
+    "passageText": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua herança.",
+    "template": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tenda"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para a sua família e para a sua herança",
+    "feedbackCorrect": "Tribo, família e herança: cada um volta ao seu lugar sem direção comum.",
+    "feedbackWrong": {
+      "a": "Tendas não fecham a lista de 21:24; a herança fecha.",
+      "c": "Cidades reconstruídas aparecem em 21:23, com Benjamim."
+    },
+    "hint": "Veja o último destino citado no versículo.",
+    "learningObjective": "Lembrar o termo que fecha a dispersão.",
+    "evidence": [
+      "Juízes 21:24"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-06",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Juízes 2:16 a Atos 13:20?",
+    "prompt": "O que liga Juízes 2:16 a Atos 13:20?",
+    "cue": "O que liga Juízes 2:16 a Atos 13:20?",
+    "verseRef": "Juízes 2:16",
+    "passageText": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam.",
+    "passageA": {
+      "ref": "Juízes 2:16",
+      "text": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam."
+    },
+    "passageB": {
+      "ref": "Atos 13:20",
+      "text": "E, depois disso, por cerca de quatrocentos e cinquenta anos, deu-lhes juízes, até o profeta Samuel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus deu juízes a Israel"
+      },
+      {
+        "id": "b",
+        "text": "Samuel encerra sem juízes antes"
+      },
+      {
+        "id": "c",
+        "text": "Israel sempre teve um rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor levantou juízes",
+    "feedbackCorrect": "Paulo resume: Deus deu juízes a Israel até o tempo de Samuel.",
+    "feedbackWrong": {
+      "b": "Paulo diz que houve juízes até Samuel, não que faltaram antes.",
+      "c": "O refrão de Juízes diz que não havia rei naquele tempo."
+    },
+    "hint": "Veja o resumo que Paulo faz desse período.",
+    "learningObjective": "Ligar o padrão de Juízes ao resumo de Paulo.",
+    "evidence": [
+      "Juízes 2:16",
+      "Atos 13:20"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Juízes 4:5, os filhos de Israel subiam a Débora a juízo",
+    "prompt": "Em Juízes 4:5, os filhos de Israel subiam a Débora a juízo",
+    "cue": "Em Juízes 4:5, os filhos de Israel subiam a Débora a juízo",
+    "verseRef": "Juízes 4:5",
+    "passageText": "Ela habitava debaixo da palmeira de Débora, entre Ramá e Betel, na região montanhosa de Efraim; e os filhos de Israel subiam a ela a juízo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os filhos de Israel subiam a ela a juízo",
+    "feedbackCorrect": "Israel procurava Débora debaixo da palmeira para juízo.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 4:5: os filhos de Israel subiam a ela a juízo."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar o papel de Débora junto ao povo.",
+    "evidence": [
+      "Juízes 4:5"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 4:5, toque onde Débora habitava.",
+    "prompt": "Em Juízes 4:5, toque onde Débora habitava.",
+    "cue": "Em Juízes 4:5, toque onde Débora habitava.",
+    "verseRef": "Juízes 4:5",
+    "passageText": "Ela habitava debaixo da palmeira de Débora, entre Ramá e Betel, na região montanhosa de Efraim; e os filhos de Israel subiam a ela a juízo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhos de Israel"
+      },
+      {
+        "id": "b",
+        "text": "região montanhosa"
+      },
+      {
+        "id": "c",
+        "text": "palmeira de Débora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "habitava debaixo da palmeira de Débora",
+    "feedbackCorrect": "Débora habitava debaixo da palmeira que levava seu nome.",
+    "feedbackWrong": {
+      "a": "Eles são quem subia a ela, não o lugar onde ela estava.",
+      "b": "A região montanhosa situa o lugar, não onde ela habitava."
+    },
+    "hint": "Procure a árvore citada no versículo.",
+    "learningObjective": "Identificar o lugar de Débora.",
+    "evidence": [
+      "Juízes 4:5"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Juízes 4:6, quantos homens Baraque deveria levar?",
+    "prompt": "Segundo Juízes 4:6, quantos homens Baraque deveria levar?",
+    "cue": "Segundo Juízes 4:6, quantos homens Baraque deveria levar?",
+    "verseRef": "Juízes 4:6",
+    "passageText": "E enviou chamar a Baraque, filho de Abinoão, de Quedes, na tribo de Naftali, e disse-lhe: O Senhor, Deus de Israel, não deu ordem, dizendo: \"Vá e ajunte homens ao Monte Tabor, e leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Três mil de todas as tribos"
+      },
+      {
+        "id": "b",
+        "text": "Dez mil somente de Judá"
+      },
+      {
+        "id": "c",
+        "text": "Mil de Efraim e Benjamim"
+      },
+      {
+        "id": "d",
+        "text": "Dez mil de Naftali e Zebulom"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom",
+    "feedbackCorrect": "A ordem fala de dez mil homens de Naftali e de Zebulom.",
+    "feedbackWrong": {
+      "a": "O texto nomeia duas tribos, não todas, e fala dez mil.",
+      "b": "Judá não é citada; as tribos são Naftali e Zebulom.",
+      "c": "O número é dez mil, e as tribos são outras."
+    },
+    "hint": "Conte os homens e veja as tribos citadas.",
+    "learningObjective": "Observar a ordem dada a Baraque.",
+    "evidence": [
+      "Juízes 4:6"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 4:9 na ordem do texto.",
+    "prompt": "Monte Juízes 4:9 na ordem do texto.",
+    "cue": "Monte Juízes 4:9 na ordem do texto.",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela respondeu: Certamente irei com você"
+      },
+      {
+        "id": "b",
+        "text": "mas a honra não será sua na missão que você está empreendendo"
+      },
+      {
+        "id": "c",
+        "text": "pois o Senhor entregará Sísera nas mãos de uma mulher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Certamente irei com você",
+    "feedbackCorrect": "Débora aceita ir, avisa sobre a honra e anuncia a entrega de Sísera.",
+    "feedbackWrong": {
+      "default": "Comece pela resposta de Débora; a entrega de Sísera fecha a fala."
+    },
+    "hint": "A fala começa com a resposta de Débora.",
+    "learningObjective": "Reconhecer a sequência de Juízes 4:9.",
+    "evidence": [
+      "Juízes 4:9"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Juízes 4:6, para que monte Baraque deveria ajuntar os homens?",
+    "prompt": "Em Juízes 4:6, para que monte Baraque deveria ajuntar os homens?",
+    "cue": "Em Juízes 4:6, para que monte Baraque deveria ajuntar os homens?",
+    "verseRef": "Juízes 4:6",
+    "passageText": "E enviou chamar a Baraque, filho de Abinoão, de Quedes, na tribo de Naftali, e disse-lhe: O Senhor, Deus de Israel, não deu ordem, dizendo: \"Vá e ajunte homens ao Monte Tabor, e leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom?",
+    "template": "E enviou chamar a Baraque, filho de Abinoão, de Quedes, na tribo de Naftali, e disse-lhe: O Senhor, Deus de Israel, não deu ordem, dizendo: \"Vá e ajunte homens ao Monte ___, e leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quisom"
+      },
+      {
+        "id": "b",
+        "text": "Efraim"
+      },
+      {
+        "id": "c",
+        "text": "Tabor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ajunte homens ao Monte Tabor",
+    "feedbackCorrect": "O Monte Tabor é o lugar de ajuntamento indicado na ordem.",
+    "feedbackWrong": {
+      "a": "Quisom é o ribeiro para onde Sísera será atraído.",
+      "b": "Efraim é a região da palmeira de Débora, em 4:5."
+    },
+    "hint": "Veja o destino dos homens reunidos.",
+    "learningObjective": "Lembrar o lugar do ajuntamento.",
+    "evidence": [
+      "Juízes 4:6"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Juízes 4:5 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 4:5 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 4:5 comunica que se liga a este contexto?",
+    "verseRef": "Juízes 4:5",
+    "passageText": "Ela habitava debaixo da palmeira de Débora, entre Ramá e Betel, na região montanhosa de Efraim; e os filhos de Israel subiam a ela a juízo.",
+    "passageA": {
+      "ref": "Juízes 4:5",
+      "text": "Ela habitava debaixo da palmeira de Débora, entre Ramá e Betel, na região montanhosa de Efraim; e os filhos de Israel subiam a ela a juízo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Israel buscava Débora para juízo debaixo da palmeira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel subia a Débora a juízo"
+      },
+      {
+        "id": "b",
+        "text": "Baraque liderava sem Débora"
+      },
+      {
+        "id": "c",
+        "text": "Sísera julgava Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os filhos de Israel subiam a ela a juízo",
+    "feedbackCorrect": "O povo procurava Débora para juízo antes da batalha ser anunciada.",
+    "feedbackWrong": {
+      "b": "Baraque só entra em cena quando Débora o chama.",
+      "c": "Sísera é o comandante inimigo, não quem julga Israel."
+    },
+    "hint": "Veja o que o povo fazia junto a Débora.",
+    "learningObjective": "Ligar Juízes 4:5 ao papel de Débora.",
+    "evidence": [
+      "Juízes 4:5"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Juízes 4:8–9, Baraque aceita ir sozinho e Débora promete que a honra será dele",
+    "prompt": "Em Juízes 4:8–9, Baraque aceita ir sozinho e Débora promete que a honra será dele",
+    "cue": "Em Juízes 4:8–9, Baraque aceita ir sozinho e Débora promete que a honra será dele",
+    "verseRef": "Juízes 4:8–9",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei. Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas a honra não será sua",
+    "feedbackCorrect": "Baraque pede a presença de Débora, e ela avisa que a honra não será dele.",
+    "feedbackWrong": {
+      "true": "Releia a condição de Baraque e o aviso sobre a honra em 4:9."
+    },
+    "hint": "Compare o pedido de Baraque com a resposta de Débora.",
+    "learningObjective": "Compreender a resposta de Débora ao pedido de Baraque.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 4:8, toque a palavra que marca a condição oposta de Baraque.",
+    "prompt": "Em Juízes 4:8, toque a palavra que marca a condição oposta de Baraque.",
+    "cue": "Em Juízes 4:8, toque a palavra que marca a condição oposta de Baraque.",
+    "verseRef": "Juízes 4:8",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irei"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "Se"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas se não for comigo, não irei",
+    "feedbackCorrect": "A palavra separa as duas condições: ir com ela ou não ir.",
+    "feedbackWrong": {
+      "a": "Esse verbo diz a ação, não a virada entre condições.",
+      "c": "Essa palavra abre a primeira condição, não marca a oposição."
+    },
+    "hint": "Procure a palavra curta entre as duas condições.",
+    "learningObjective": "Reconhecer o marcador de contraste em 4:8.",
+    "evidence": [
+      "Juízes 4:8"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Juízes 4:9 responde ao pedido feito em Juízes 4:8?",
+    "prompt": "Como Juízes 4:9 responde ao pedido feito em Juízes 4:8?",
+    "cue": "Como Juízes 4:9 responde ao pedido feito em Juízes 4:8?",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora recusa ir e manda outro em seu lugar"
+      },
+      {
+        "id": "b",
+        "text": "Débora vai com ele, mas a honra muda de mãos"
+      },
+      {
+        "id": "c",
+        "text": "Sísera é entregue antes de qualquer ajuntamento"
+      },
+      {
+        "id": "d",
+        "text": "Baraque desiste e volta sozinho para Quedes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Certamente irei com você, mas a honra não será sua",
+    "feedbackCorrect": "Ela acompanha Baraque, mas anuncia que a honra não ficará com ele.",
+    "feedbackWrong": {
+      "a": "Ela afirma que irá com ele e de fato o acompanha.",
+      "c": "A entrega de Sísera ainda é promessa, não fato consumado aqui.",
+      "d": "Baraque convoca as tribos e sobe; não há desistência."
+    },
+    "hint": "Separe o que ela concede do que ela anuncia.",
+    "learningObjective": "Relacionar o pedido de Baraque à resposta de Débora.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Juízes 4:6–9?",
+    "prompt": "Como avança a cena em Juízes 4:6–9?",
+    "cue": "Como avança a cena em Juízes 4:6–9?",
+    "verseRef": "Juízes 4:8–9",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei. Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora chama Baraque com a ordem do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Baraque pede a presença de Débora"
+      },
+      {
+        "id": "c",
+        "text": "Débora vai, mas anuncia outra honra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se você for comigo, irei",
+    "feedbackCorrect": "Ordem transmitida, pedido de Baraque e resposta com aviso: esse é o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pela ordem transmitida; o aviso sobre a honra vem por último."
+    },
+    "hint": "O aviso sobre a honra é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento de Juízes 4:6–9.",
+    "evidence": [
+      "Juízes 4:6–9"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Juízes 4:9, nas mãos de quem o Senhor entregaria Sísera?",
+    "prompt": "Em Juízes 4:9, nas mãos de quem o Senhor entregaria Sísera?",
+    "cue": "Em Juízes 4:9, nas mãos de quem o Senhor entregaria Sísera?",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "template": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma ___. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "tribo"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor entregará Sísera nas mãos de uma mulher",
+    "feedbackCorrect": "A honra muda porque Sísera será entregue nas mãos de uma mulher.",
+    "feedbackWrong": {
+      "b": "Tribos reúnem os homens; a entrega anunciada é a uma mulher.",
+      "c": "Quedes é lugar da convocação, não quem recebe Sísera."
+    },
+    "hint": "Olhe o fim da fala de Débora.",
+    "learningObjective": "Compreender para onde vai a honra anunciada.",
+    "evidence": [
+      "Juízes 4:9"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Juízes 4:8 a Hebreus 11:32?",
+    "prompt": "O que liga Juízes 4:8 a Hebreus 11:32?",
+    "cue": "O que liga Juízes 4:8 a Hebreus 11:32?",
+    "verseRef": "Juízes 4:8",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei.",
+    "passageA": {
+      "ref": "Juízes 4:8",
+      "text": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei."
+    },
+    "passageB": {
+      "ref": "Hebreus 11:32",
+      "text": "E que mais posso dizer? Certamente, não teria tempo suficiente para relatar o que há a respeito de Gideão, Baraque, Sansão, Jefté, Davi, Samuel e os profetas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Baraque lembrado pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Sísera agiu pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Baraque dispensou Débora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Se você for comigo, irei",
+    "feedbackCorrect": "Mesmo hesitante, Baraque é citado em Hebreus entre os da fé.",
+    "feedbackWrong": {
+      "b": "Hebreus cita Baraque, não o comandante inimigo Sísera.",
+      "c": "Baraque pede justamente que Débora vá com ele."
+    },
+    "hint": "Veja qual nome de Juízes aparece em Hebreus.",
+    "learningObjective": "Relacionar Baraque à lembrança de Hebreus 11.",
+    "evidence": [
+      "Juízes 4:8",
+      "Hebreus 11:32"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Juízes 4:9, a honra da vitória sobre Sísera não seria de Baraque",
+    "prompt": "Em Juízes 4:9, a honra da vitória sobre Sísera não seria de Baraque",
+    "cue": "Em Juízes 4:9, a honra da vitória sobre Sísera não seria de Baraque",
+    "verseRef": "Juízes 4:8–9",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei. Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mas a honra não será sua",
+    "feedbackCorrect": "Débora anuncia que a honra não será de Baraque naquela missão.",
+    "feedbackWrong": {
+      "false": "Releia o aviso de Débora: a honra não será sua."
+    },
+    "hint": "Veja o aviso logo depois do aceite de Débora.",
+    "learningObjective": "Interpretar o deslocamento da honra em 4:9.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+    "prompt": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+    "cue": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a honra"
+      },
+      {
+        "id": "b",
+        "text": "nas mãos"
+      },
+      {
+        "id": "c",
+        "text": "uma mulher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas a honra não será sua",
+    "feedbackCorrect": "O que muda de mãos é a honra da vitória sobre Sísera.",
+    "feedbackWrong": {
+      "b": "Mãos aparecem na entrega de Sísera, não no que falta a Baraque.",
+      "c": "A mulher é quem recebe a entrega, não o que Baraque perde."
+    },
+    "hint": "Procure o substantivo ligado a não será sua.",
+    "learningObjective": "Sustentar com o texto o tema da honra.",
+    "evidence": [
+      "Juízes 4:9"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Juízes 4:6–9 sustenta sobre a vitória anunciada?",
+    "prompt": "Que leitura Juízes 4:6–9 sustenta sobre a vitória anunciada?",
+    "cue": "Que leitura Juízes 4:6–9 sustenta sobre a vitória anunciada?",
+    "verseRef": "Juízes 4:6–7",
+    "passageText": "E enviou chamar a Baraque, filho de Abinoão, de Quedes, na tribo de Naftali, e disse-lhe: O Senhor, Deus de Israel, não deu ordem, dizendo: \"Vá e ajunte homens ao Monte Tabor, e leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom? E atrairei você até o ribeiro Quisom, a Sísera, comandante do exército de Jabim, com seus carros e suas tropas; e o entregarei em suas mãos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela dispensa ouvir qualquer ordem do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Ela depende só da estratégia inventada por Baraque"
+      },
+      {
+        "id": "c",
+        "text": "Ela serve para dar prestígio pessoal a Débora"
+      },
+      {
+        "id": "d",
+        "text": "Ela vem pela palavra do Senhor, não pelo prestígio do líder"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O Senhor, Deus de Israel, não deu ordem",
+    "feedbackCorrect": "A ordem e a promessa vêm do Senhor; a honra nem fica com o líder esperado.",
+    "feedbackWrong": {
+      "a": "Toda a cena nasce de uma ordem do Senhor transmitida a Baraque.",
+      "b": "Baraque recebe uma ordem; não cria a estratégia sozinho.",
+      "c": "Débora aponta para a ação do Senhor, não para seu prestígio."
+    },
+    "hint": "Veja de quem vêm a ordem e a promessa.",
+    "learningObjective": "Escolher a interpretação sustentada sobre a vitória.",
+    "evidence": [
+      "Juízes 4:6–9"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da honra anunciada em Juízes 4:9?",
+    "prompt": "Qual sequência revela o caminho da honra anunciada em Juízes 4:9?",
+    "cue": "Qual sequência revela o caminho da honra anunciada em Juízes 4:9?",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor promete entregar Sísera a Baraque"
+      },
+      {
+        "id": "b",
+        "text": "Débora anuncia honra nas mãos de uma mulher"
+      },
+      {
+        "id": "c",
+        "text": "O cântico bendiz Jael entre as mulheres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor entregará Sísera nas mãos de uma mulher",
+    "feedbackCorrect": "Promessa, anúncio de Débora e cântico sobre Jael formam o fio da honra.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de 4:7; o cântico de Juízes 5 fecha o fio."
+    },
+    "hint": "Siga: promessa, anúncio e cântico.",
+    "learningObjective": "Ver a honra de Sísera como fio até Juízes 5.",
+    "evidence": [
+      "Juízes 4:7",
+      "Juízes 4:9",
+      "Juízes 5:24"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Juízes 4:7, até que ribeiro o Senhor atrairia Sísera?",
+    "prompt": "Em Juízes 4:7, até que ribeiro o Senhor atrairia Sísera?",
+    "cue": "Em Juízes 4:7, até que ribeiro o Senhor atrairia Sísera?",
+    "verseRef": "Juízes 4:7",
+    "passageText": "E atrairei você até o ribeiro Quisom, a Sísera, comandante do exército de Jabim, com seus carros e suas tropas; e o entregarei em suas mãos.",
+    "template": "E atrairei você até o ribeiro ___, a Sísera, comandante do exército de Jabim, com seus carros e suas tropas; e o entregarei em suas mãos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quisom"
+      },
+      {
+        "id": "b",
+        "text": "Tabor"
+      },
+      {
+        "id": "c",
+        "text": "Jordão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "atrairei você até o ribeiro Quisom",
+    "feedbackCorrect": "O ribeiro Quisom é o lugar para onde Sísera será atraído.",
+    "feedbackWrong": {
+      "b": "Tabor é o monte do ajuntamento dos homens, não o ribeiro.",
+      "c": "O Jordão não é citado neste trecho da cena."
+    },
+    "hint": "Veja o lugar ligado ao comandante inimigo.",
+    "learningObjective": "Lembrar o lugar que carrega a promessa.",
+    "evidence": [
+      "Juízes 4:7"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Juízes 4:9 a Juízes 5:24?",
+    "prompt": "O que liga Juízes 4:9 a Juízes 5:24?",
+    "cue": "O que liga Juízes 4:9 a Juízes 5:24?",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "passageA": {
+      "ref": "Juízes 4:9",
+      "text": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes."
+    },
+    "passageB": {
+      "ref": "Juízes 5:24",
+      "text": "Bendita seja entre as mulheres Jael, mulher de Héber, o queneu; bendita seja entre as mulheres que habitam em tendas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A mulher recebe a honra"
+      },
+      {
+        "id": "b",
+        "text": "Jael é esquecida no cântico"
+      },
+      {
+        "id": "c",
+        "text": "Baraque recebe toda a honra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor entregará Sísera nas mãos de uma mulher",
+    "feedbackCorrect": "O anúncio de Débora encontra o cântico que bendiz Jael entre as mulheres.",
+    "feedbackWrong": {
+      "b": "O cântico bendiz Jael; ela é lembrada, não esquecida.",
+      "c": "Débora já avisou que a honra não seria de Baraque."
+    },
+    "hint": "Compare a mulher anunciada com a bendita do cântico.",
+    "learningObjective": "Ligar o anúncio de Débora ao cântico de Juízes 5.",
+    "evidence": [
+      "Juízes 4:9",
+      "Juízes 5:24"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-02-gideao-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Juízes 16:31, Sansão julgou Israel durante dez anos",
+    "prompt": "Em Juízes 16:31, Sansão julgou Israel durante dez anos",
+    "cue": "Em Juízes 16:31, Sansão julgou Israel durante dez anos",
+    "verseRef": "Juízes 16:31",
+    "passageText": "Então, seus irmãos desceram, e toda a casa de seu pai o tomou, subindo com ele. Sepultaram-no entre Zorá e Estaol, no sepulcro de Manoá, seu pai. E ele julgou Israel durante vinte anos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ele julgou Israel durante vinte anos",
+    "feedbackCorrect": "O texto fecha dizendo que Sansão julgou Israel durante vinte anos.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 16:31: são vinte anos, não dez."
+    },
+    "hint": "Olhe o número no fim do versículo.",
+    "learningObjective": "Observar a duração registrada do juízo de Sansão.",
+    "evidence": [
+      "Juízes 16:31"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-02-gideao-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 7:2, toque quem disse a Gideão sobre o povo.",
+    "prompt": "Em Juízes 7:2, toque quem disse a Gideão sobre o povo.",
+    "cue": "Em Juízes 7:2, toque quem disse a Gideão sobre o povo.",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Gideão"
+      },
+      {
+        "id": "c",
+        "text": "midianitas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E o Senhor disse a Gideão",
+    "feedbackCorrect": "Quem fala a Gideão sobre o povo demais é o Senhor.",
+    "feedbackWrong": {
+      "b": "Gideão é quem ouve a palavra, não quem a diz aqui.",
+      "c": "Os midianitas são os inimigos a serem entregues, não quem fala."
+    },
+    "hint": "Procure quem fala no começo do versículo.",
+    "learningObjective": "Identificar quem fala a Gideão.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-02-gideao-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Juízes 16:28, o que Sansão pede ao Senhor?",
+    "prompt": "Segundo Juízes 16:28, o que Sansão pede ao Senhor?",
+    "cue": "Segundo Juízes 16:28, o que Sansão pede ao Senhor?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um exército de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Força apenas esta vez"
+      },
+      {
+        "id": "c",
+        "text": "Fuga do cárcere"
+      },
+      {
+        "id": "d",
+        "text": "Um novo sepulcro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "me dês força apenas esta vez",
+    "feedbackCorrect": "Preso, Sansão clama pedindo força apenas esta vez.",
+    "feedbackWrong": {
+      "a": "Nenhum exército é pedido; o clamor é por força.",
+      "c": "Ele não pede fuga; pede força naquele momento.",
+      "d": "Sepulcro aparece só depois, em 16:31, com a família."
+    },
+    "hint": "Leia o pedido depois de lembres de mim.",
+    "learningObjective": "Observar o pedido final de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-02-gideao-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 16:29 na ordem do texto.",
+    "prompt": "Monte Juízes 16:29 na ordem do texto.",
+    "cue": "Monte Juízes 16:29 na ordem do texto.",
+    "verseRef": "Juízes 16:29",
+    "passageText": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a esquerda na outra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa"
+      },
+      {
+        "id": "b",
+        "text": "fazendo força sobre elas"
+      },
+      {
+        "id": "c",
+        "text": "com a mão direita em uma e com a esquerda na outra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "abraçou as duas colunas centrais",
+    "feedbackCorrect": "Abraço às colunas, força sobre elas e as duas mãos: essa é a ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo abraço às colunas; as mãos fecham o versículo."
+    },
+    "hint": "O versículo começa com o abraço de Sansão.",
+    "learningObjective": "Reconhecer a sequência de Juízes 16:29.",
+    "evidence": [
+      "Juízes 16:29"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-02-gideao-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Juízes 7:2, quem o Senhor entregaria nas mãos de Gideão?",
+    "prompt": "Em Juízes 7:2, quem o Senhor entregaria nas mãos de Gideão?",
+    "cue": "Em Juízes 7:2, quem o Senhor entregaria nas mãos de Gideão?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "template": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os ___ em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amalequitas"
+      },
+      {
+        "id": "b",
+        "text": "midianitas"
+      },
+      {
+        "id": "c",
+        "text": "filisteus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que eu entregue os midianitas em suas mãos",
+    "feedbackCorrect": "Os inimigos citados na palavra a Gideão são os midianitas.",
+    "feedbackWrong": {
+      "a": "Amalequitas não são citados nesta palavra a Gideão.",
+      "c": "Filisteus pertencem à história de Sansão, não a esta fala."
+    },
+    "hint": "Veja o povo nomeado no meio do versículo.",
+    "learningObjective": "Lembrar o inimigo citado a Gideão.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-02-gideao-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Gideão tinha gente demais para a batalha contra os midianitas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Gideão livra a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "A força está no tamanho"
+      },
+      {
+        "id": "c",
+        "text": "Israel não se gloriará sozinho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "Com povo demais, Israel poderia se gloriar; o Senhor impede esse crédito.",
+    "feedbackWrong": {
+      "a": "Quem entrega os midianitas é o Senhor, não Gideão sozinho.",
+      "b": "O tamanho do povo é justamente o problema apontado."
+    },
+    "hint": "Veja o motivo dado pelo Senhor.",
+    "learningObjective": "Ligar Juízes 7:2 ao risco da glória própria.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-02-gideao-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Juízes 7:2, o povo é demais para que Israel não atribua o livramento à própria mão",
+    "prompt": "Em Juízes 7:2, o povo é demais para que Israel não atribua o livramento à própria mão",
+    "cue": "Em Juízes 7:2, o povo é demais para que Israel não atribua o livramento à própria mão",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "assim, Israel não se gloriará contra mim",
+    "feedbackCorrect": "O excesso de gente abriria espaço para Israel creditar a vitória a si.",
+    "feedbackWrong": {
+      "false": "Releia o motivo: Israel não se gloriará dizendo que sua mão o livrou."
+    },
+    "hint": "Repare na explicação depois da vírgula.",
+    "learningObjective": "Compreender o motivo do povo demais.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-02-gideao-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 7:2, toque a palavra que introduz a consequência do aviso.",
+    "prompt": "Em Juízes 7:2, toque a palavra que introduz a consequência do aviso.",
+    "cue": "Em Juízes 7:2, toque a palavra que introduz a consequência do aviso.",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim"
+      },
+      {
+        "id": "b",
+        "text": "contigo"
+      },
+      {
+        "id": "c",
+        "text": "dizendo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim, Israel não se gloriará contra mim",
+    "feedbackCorrect": "A palavra introduz o efeito buscado: Israel não se gloriará.",
+    "feedbackWrong": {
+      "b": "Isso situa o povo com Gideão, não introduz a consequência.",
+      "c": "Isso introduz a fala imaginada de Israel, não a consequência."
+    },
+    "hint": "Procure a palavra antes de Israel não se gloriará.",
+    "learningObjective": "Reconhecer o marcador de resultado em 7:2.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-02-gideao-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Juízes 16:28 se relaciona com o princípio de Juízes 7:2?",
+    "prompt": "Como Juízes 16:28 se relaciona com o princípio de Juízes 7:2?",
+    "cue": "Como Juízes 16:28 se relaciona com o princípio de Juízes 7:2?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão prova que a força sempre foi só dele"
+      },
+      {
+        "id": "b",
+        "text": "Sansão depende do Senhor para ter força de novo"
+      },
+      {
+        "id": "c",
+        "text": "O cárcere torna inútil qualquer clamor ao Senhor"
+      },
+      {
+        "id": "d",
+        "text": "Gideão ensina Sansão a reunir mais gente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "me dês força apenas esta vez",
+    "feedbackCorrect": "Como em Gideão, a força decisiva é pedida ao Senhor, não possuída por si.",
+    "feedbackWrong": {
+      "a": "Ele clama ao Senhor pela força; não a trata como só sua.",
+      "c": "O clamor acontece justamente dentro do cárcere e da fraqueza.",
+      "d": "Não há encontro entre Gideão e Sansão nestes textos."
+    },
+    "hint": "Veja a quem Sansão dirige o pedido de força.",
+    "learningObjective": "Relacionar o clamor de Sansão ao princípio de Gideão.",
+    "evidence": [
+      "Juízes 16:28",
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-02-gideao-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o fim de Sansão em Juízes 16:28–30?",
+    "prompt": "Como avança o fim de Sansão em Juízes 16:28–30?",
+    "cue": "Como avança o fim de Sansão em Juízes 16:28–30?",
+    "verseRef": "Juízes 16:28–29",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos. Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a esquerda na outra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão clama ao Senhor por força"
+      },
+      {
+        "id": "b",
+        "text": "Sansão abraça as colunas da casa"
+      },
+      {
+        "id": "c",
+        "text": "A casa cai sobre a multidão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Clamor por força, abraço às colunas e queda da casa: esse é o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor de Sansão; a queda da casa é o desfecho."
+    },
+    "hint": "A queda da casa é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento do fim de Sansão.",
+    "evidence": [
+      "Juízes 16:28–30"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-02-gideao-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Juízes 16:31, durante quantos anos Sansão julgou Israel?",
+    "prompt": "Em Juízes 16:31, durante quantos anos Sansão julgou Israel?",
+    "cue": "Em Juízes 16:31, durante quantos anos Sansão julgou Israel?",
+    "verseRef": "Juízes 16:31",
+    "passageText": "Então, seus irmãos desceram, e toda a casa de seu pai o tomou, subindo com ele. Sepultaram-no entre Zorá e Estaol, no sepulcro de Manoá, seu pai. E ele julgou Israel durante vinte anos.",
+    "template": "Então, seus irmãos desceram, e toda a casa de seu pai o tomou, subindo com ele. Sepultaram-no entre Zorá e Estaol, no sepulcro de Manoá, seu pai. E ele julgou Israel durante ___ anos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "quarenta"
+      },
+      {
+        "id": "b",
+        "text": "vinte"
+      },
+      {
+        "id": "c",
+        "text": "dez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele julgou Israel durante vinte anos",
+    "feedbackCorrect": "O registro fecha a história com vinte anos de juízo em Israel.",
+    "feedbackWrong": {
+      "a": "Quarenta não aparece aqui; o texto fala em vinte anos.",
+      "c": "Dez não é o número do texto; o registro fala em vinte."
+    },
+    "hint": "Veja o número que fecha o versículo.",
+    "learningObjective": "Compreender o fecho do registro de Sansão.",
+    "evidence": [
+      "Juízes 16:31"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-02-gideao-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+    "prompt": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+    "cue": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 1:29",
+      "text": "Para que ninguém se glorie diante d'Ele na presença de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém se glorie diante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "O forte dispensa Deus"
+      },
+      {
+        "id": "c",
+        "text": "A glória é da própria mão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "Nos dois textos, o livramento não vira glória humana diante de Deus.",
+    "feedbackWrong": {
+      "b": "Paulo nega glória da carne diante de Deus, não independência.",
+      "c": "A própria mão glorificada é justamente o que 7:2 impede."
+    },
+    "hint": "Compare quem pode se gloriar nos dois trechos.",
+    "learningObjective": "Relacionar a glória negada em Juízes e em Paulo.",
+    "evidence": [
+      "Juízes 7:2",
+      "1 Coríntios 1:29"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-02-gideao-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Juízes 16:28 apresenta o pedido de Sansão apenas pela glória de Israel, sem desejo de vingança",
+    "prompt": "Juízes 16:28 apresenta o pedido de Sansão apenas pela glória de Israel, sem desejo de vingança",
+    "cue": "Juízes 16:28 apresenta o pedido de Sansão apenas pela glória de Israel, sem desejo de vingança",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que eu me vingue dos filisteus",
+    "feedbackCorrect": "O clamor inclui desejo de vingança pelos olhos; o texto não o esconde.",
+    "feedbackWrong": {
+      "true": "Releia o fim do pedido: ele fala em vingar-se dos filisteus."
+    },
+    "hint": "Veja o motivo pessoal citado no pedido.",
+    "learningObjective": "Interpretar o clamor de Sansão com cautela.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-02-gideao-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 7:2, toque a frase de crédito próprio que o Senhor cita.",
+    "prompt": "Em Juízes 7:2, toque a frase de crédito próprio que o Senhor cita.",
+    "cue": "Em Juízes 7:2, toque a frase de crédito próprio que o Senhor cita.",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em suas mãos"
+      },
+      {
+        "id": "b",
+        "text": "minha própria mão"
+      },
+      {
+        "id": "c",
+        "text": "povo demais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A minha própria mão me livrou",
+    "feedbackCorrect": "A frase citada é o crédito que Israel daria à própria mão.",
+    "feedbackWrong": {
+      "a": "Isso fala da entrega dos inimigos, não da glória de Israel.",
+      "c": "Isso descreve a quantidade de gente, não o crédito citado."
+    },
+    "hint": "Procure a fala entre aspas no fim do versículo.",
+    "learningObjective": "Sustentar com o texto o crédito próprio negado.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-02-gideao-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Juízes 16:28 pede diante do clamor de Sansão?",
+    "prompt": "Que leitura Juízes 16:28 pede diante do clamor de Sansão?",
+    "cue": "Que leitura Juízes 16:28 pede diante do clamor de Sansão?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Celebrar qualquer vingança feita em nome de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Tratar a prisão de Sansão como vitória completa"
+      },
+      {
+        "id": "c",
+        "text": "Apagar do texto o motivo pessoal do pedido"
+      },
+      {
+        "id": "d",
+        "text": "Ler com cautela um clamor ligado também à vingança"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "para que eu me vingue dos filisteus, ao menos por um dos meus olhos",
+    "feedbackCorrect": "O texto mostra clamor e vingança juntos; a leitura honesta não esconde isso.",
+    "feedbackWrong": {
+      "a": "O texto descreve o pedido; não manda celebrar vingança pessoal.",
+      "b": "Ele está preso e cego de um modo humilhante, não em vitória.",
+      "c": "O motivo está escrito e precisa ser lido, não apagado."
+    },
+    "hint": "Leia o pedido inteiro, sem cortar o motivo.",
+    "learningObjective": "Escolher uma leitura cautelosa do clamor de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-02-gideao-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio contra a glória própria na Bíblia?",
+    "prompt": "Qual sequência revela o fio contra a glória própria na Bíblia?",
+    "cue": "Qual sequência revela o fio contra a glória própria na Bíblia?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés avisa contra creditar tudo à própria força"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor impede Israel de se gloriar com Gideão"
+      },
+      {
+        "id": "c",
+        "text": "Paulo diz que ninguém se glorie diante de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "Aviso de Moisés, caso de Gideão e ensino de Paulo formam o mesmo fio.",
+    "feedbackWrong": {
+      "default": "Siga a ordem da Bíblia: Deuteronômio, Juízes e Coríntios."
+    },
+    "hint": "Siga: Lei, Juízes, cartas de Paulo.",
+    "learningObjective": "Ver a glória própria negada como fio bíblico.",
+    "evidence": [
+      "Deuteronômio 8:17",
+      "Juízes 7:2",
+      "1 Coríntios 1:29"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-02-gideao-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Juízes 16:28, o que Sansão pede que o Senhor lhe dê apenas esta vez?",
+    "prompt": "Em Juízes 16:28, o que Sansão pede que o Senhor lhe dê apenas esta vez?",
+    "cue": "Em Juízes 16:28, o que Sansão pede que o Senhor lhe dê apenas esta vez?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "template": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês ___ apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fuga"
+      },
+      {
+        "id": "b",
+        "text": "vista"
+      },
+      {
+        "id": "c",
+        "text": "força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "me dês força apenas esta vez",
+    "feedbackCorrect": "O pedido central é força, vinda do Senhor naquele momento final.",
+    "feedbackWrong": {
+      "a": "Ele não pede fuga do cárcere; pede força ali mesmo.",
+      "b": "Ele cita os olhos no motivo, mas o pedido feito é outro."
+    },
+    "hint": "Veja o substantivo logo depois de dês.",
+    "learningObjective": "Lembrar o termo do clamor final de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-02-gideao-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Juízes 7:2 a Deuteronômio 8:17?",
+    "prompt": "O que liga Juízes 7:2 a Deuteronômio 8:17?",
+    "cue": "O que liga Juízes 7:2 a Deuteronômio 8:17?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 8:17",
+      "text": "Não digas em teu coração: A minha força e o poder do meu braço me trouxeram estas riquezas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer o Senhor na vitória"
+      },
+      {
+        "id": "b",
+        "text": "Creditar tudo à própria mão"
+      },
+      {
+        "id": "c",
+        "text": "Lembrar quem dá a força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A minha própria mão me livrou",
+    "feedbackCorrect": "Moisés já avisava: não creditar a força a si; o Senhor é quem a dá.",
+    "feedbackWrong": {
+      "a": "Os dois textos chamam a lembrar do Senhor, não a esquecê-lo.",
+      "b": "Creditar à própria mão é o erro avisado, não a ponte de obediência."
+    },
+    "hint": "Veja o aviso de Moisés sobre o coração.",
+    "learningObjective": "Ligar Gideão ao aviso de Deuteronômio.",
+    "evidence": [
+      "Juízes 7:2",
+      "Deuteronômio 8:17"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-03-sansao-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Juízes 16:25, Sansão foi chamado do cárcere e posto entre as colunas",
+    "prompt": "Em Juízes 16:25, Sansão foi chamado do cárcere e posto entre as colunas",
+    "cue": "Em Juízes 16:25, Sansão foi chamado do cárcere e posto entre as colunas",
+    "verseRef": "Juízes 16:25",
+    "passageText": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Chamaram Sansão do cárcere",
+    "feedbackCorrect": "Sansão sai do cárcere para ser exposto entre as colunas.",
+    "feedbackWrong": {
+      "false": "Releia 16:25: chamaram Sansão do cárcere para diante deles."
+    },
+    "hint": "Veja de onde Sansão é chamado.",
+    "learningObjective": "Observar a situação inicial de Sansão na cena.",
+    "evidence": [
+      "Juízes 16:25"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-03-sansao-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 16:25, toque de onde Sansão foi chamado.",
+    "prompt": "Em Juízes 16:25, toque de onde Sansão foi chamado.",
+    "cue": "Em Juízes 16:25, toque de onde Sansão foi chamado.",
+    "verseRef": "Juízes 16:25",
+    "passageText": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "diante deles"
+      },
+      {
+        "id": "b",
+        "text": "do cárcere"
+      },
+      {
+        "id": "c",
+        "text": "entre as colunas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Chamaram Sansão do cárcere",
+    "feedbackCorrect": "Sansão estava preso e foi chamado do cárcere para a festa.",
+    "feedbackWrong": {
+      "a": "Diante deles é onde ele se apresenta, não de onde sai.",
+      "c": "Entre as colunas é onde o põem depois de chamá-lo."
+    },
+    "hint": "Procure o lugar de prisão citado.",
+    "learningObjective": "Identificar a condição de Sansão na cena.",
+    "evidence": [
+      "Juízes 16:25"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-03-sansao-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Juízes 16:27, cerca de quantas pessoas estavam sobre o teto?",
+    "prompt": "Segundo Juízes 16:27, cerca de quantas pessoas estavam sobre o teto?",
+    "cue": "Segundo Juízes 16:27, cerca de quantas pessoas estavam sobre o teto?",
+    "verseRef": "Juízes 16:27",
+    "passageText": "A casa estava cheia de homens e mulheres; ali estavam também todos os príncipes dos filisteus, e sobre o teto havia cerca de três mil homens e mulheres que assistiam enquanto Sansão os divertia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cerca de mil pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Cerca de dez mil pessoas"
+      },
+      {
+        "id": "c",
+        "text": "Cerca de três mil pessoas"
+      },
+      {
+        "id": "d",
+        "text": "Cerca de trezentas pessoas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cerca de três mil homens e mulheres",
+    "feedbackCorrect": "O teto tinha cerca de três mil homens e mulheres assistindo.",
+    "feedbackWrong": {
+      "a": "O texto fala em três mil, não em cerca de mil.",
+      "b": "Dez mil não aparece aqui; são cerca de três mil.",
+      "d": "Trezentas é bem menos do que o número registrado."
+    },
+    "hint": "Leia o número no fim do versículo.",
+    "learningObjective": "Observar o tamanho da multidão na casa.",
+    "evidence": [
+      "Juízes 16:27"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-03-sansao-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 16:28 na ordem do texto.",
+    "prompt": "Monte Juízes 16:28 na ordem do texto.",
+    "cue": "Monte Juízes 16:28 na ordem do texto.",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então Sansão clamou ao Senhor e disse"
+      },
+      {
+        "id": "b",
+        "text": "Senhor Deus, peço-te que te lembres de mim"
+      },
+      {
+        "id": "c",
+        "text": "e me dês força apenas esta vez, ó Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Clamor, pedido de lembrança e pedido de força: essa é a ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor ao Senhor; o pedido de força vem depois."
+    },
+    "hint": "O versículo começa com o clamor.",
+    "learningObjective": "Reconhecer a sequência de Juízes 16:28.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-03-sansao-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Juízes 16:27, cerca de quantos mil estavam sobre o teto?",
+    "prompt": "Em Juízes 16:27, cerca de quantos mil estavam sobre o teto?",
+    "cue": "Em Juízes 16:27, cerca de quantos mil estavam sobre o teto?",
+    "verseRef": "Juízes 16:27",
+    "passageText": "A casa estava cheia de homens e mulheres; ali estavam também todos os príncipes dos filisteus, e sobre o teto havia cerca de três mil homens e mulheres que assistiam enquanto Sansão os divertia.",
+    "template": "A casa estava cheia de homens e mulheres; ali estavam também todos os príncipes dos filisteus, e sobre o teto havia cerca de ___ mil homens e mulheres que assistiam enquanto Sansão os divertia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "três"
+      },
+      {
+        "id": "b",
+        "text": "dois"
+      },
+      {
+        "id": "c",
+        "text": "cinco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cerca de três mil homens e mulheres",
+    "feedbackCorrect": "Eram cerca de três mil homens e mulheres sobre o teto.",
+    "feedbackWrong": {
+      "b": "Dois mil não é o número registrado no texto.",
+      "c": "Cinco mil não aparece; o texto diz três mil."
+    },
+    "hint": "Veja o número antes de mil.",
+    "learningObjective": "Lembrar o número citado na cena.",
+    "evidence": [
+      "Juízes 16:27"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-03-sansao-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Juízes 16:25 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 16:25 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 16:25 comunica que se liga a este contexto?",
+    "verseRef": "Juízes 16:25",
+    "passageText": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas.",
+    "passageA": {
+      "ref": "Juízes 16:25",
+      "text": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sansão preso era exposto para divertir os filisteus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Forte sem clamar a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Chamado do cárcere para entreter"
+      },
+      {
+        "id": "c",
+        "text": "Livre para julgar Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mandem chamar Sansão para que nos entretenha",
+    "feedbackCorrect": "O juiz preso vira diversão dos filisteus entre as colunas.",
+    "feedbackWrong": {
+      "a": "A força será justamente pedida ao Senhor em 16:28.",
+      "c": "Ele está preso, não livre para julgar naquele momento."
+    },
+    "hint": "Veja para que chamam Sansão do cárcere.",
+    "learningObjective": "Ligar Juízes 16:25 à humilhação de Sansão.",
+    "evidence": [
+      "Juízes 16:25"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-03-sansao-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Juízes 16:26–28, Sansão primeiro abraça as colunas e só depois pede para apalpá-las",
+    "prompt": "Em Juízes 16:26–28, Sansão primeiro abraça as colunas e só depois pede para apalpá-las",
+    "cue": "Em Juízes 16:26–28, Sansão primeiro abraça as colunas e só depois pede para apalpá-las",
+    "verseRef": "Juízes 16:26–27",
+    "passageText": "Então Sansão disse ao jovem que o conduzia: Deixa-me, para que eu possa apalpar as colunas sobre as quais a casa se sustenta a fim de que eu possa me encostar nelas. A casa estava cheia de homens e mulheres; ali estavam também todos os príncipes dos filisteus, e sobre o teto havia cerca de três mil homens e mulheres que assistiam enquanto Sansão os divertia.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que eu possa apalpar as colunas",
+    "feedbackCorrect": "Primeiro ele pede para apalpar as colunas; o abraço só vem em 16:29.",
+    "feedbackWrong": {
+      "true": "Confira a ordem: pedido em 16:26, clamor em 16:28, abraço em 16:29."
+    },
+    "hint": "Compare os pedidos antes do desfecho.",
+    "learningObjective": "Compreender a ordem dos atos de Sansão.",
+    "evidence": [
+      "Juízes 16:26–29"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-03-sansao-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 16:26, toque a palavra que marca o passo seguinte da cena.",
+    "prompt": "Em Juízes 16:26, toque a palavra que marca o passo seguinte da cena.",
+    "cue": "Em Juízes 16:26, toque a palavra que marca o passo seguinte da cena.",
+    "verseRef": "Juízes 16:26",
+    "passageText": "Então Sansão disse ao jovem que o conduzia: Deixa-me, para que eu possa apalpar as colunas sobre as quais a casa se sustenta a fim de que eu possa me encostar nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "colunas"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "jovem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então Sansão disse ao jovem",
+    "feedbackCorrect": "A palavra inicial liga a exposição ao pedido sobre as colunas.",
+    "feedbackWrong": {
+      "a": "As colunas são o alvo do pedido, não a ligação da cena.",
+      "c": "O jovem é quem conduz Sansão, não o marcador inicial."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de sequência em 16:26.",
+    "evidence": [
+      "Juízes 16:26"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-03-sansao-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Juízes 16:26 prepara o que acontece em Juízes 16:29?",
+    "prompt": "Como Juízes 16:26 prepara o que acontece em Juízes 16:29?",
+    "cue": "Como Juízes 16:26 prepara o que acontece em Juízes 16:29?",
+    "verseRef": "Juízes 16:26",
+    "passageText": "Então Sansão disse ao jovem que o conduzia: Deixa-me, para que eu possa apalpar as colunas sobre as quais a casa se sustenta a fim de que eu possa me encostar nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As colunas são retiradas antes de Sansão chegar"
+      },
+      {
+        "id": "b",
+        "text": "O pedido de apalpar leva Sansão às colunas que abraçará"
+      },
+      {
+        "id": "c",
+        "text": "O jovem entrega a Sansão a força que ele perdeu"
+      },
+      {
+        "id": "d",
+        "text": "A multidão sai da casa antes do clamor final"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que eu possa apalpar as colunas sobre as quais a casa se sustenta",
+    "feedbackCorrect": "Ao apalpar as colunas, Sansão chega ao ponto que abraçará no desfecho.",
+    "feedbackWrong": {
+      "a": "As colunas continuam sustentando a casa até a queda.",
+      "c": "O jovem só conduz; a força é pedida ao Senhor.",
+      "d": "A casa segue cheia de gente até cair sobre a multidão."
+    },
+    "hint": "Ligue o pedido do jovem ao abraço final.",
+    "learningObjective": "Relacionar o pedido às colunas com o desfecho.",
+    "evidence": [
+      "Juízes 16:26",
+      "Juízes 16:29"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-03-sansao-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Juízes 16:25–28?",
+    "prompt": "Como avança a cena em Juízes 16:25–28?",
+    "cue": "Como avança a cena em Juízes 16:25–28?",
+    "verseRef": "Juízes 16:25–26",
+    "passageText": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas. Então Sansão disse ao jovem que o conduzia: Deixa-me, para que eu possa apalpar as colunas sobre as quais a casa se sustenta a fim de que eu possa me encostar nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão é trazido para entreter os filisteus"
+      },
+      {
+        "id": "b",
+        "text": "Ele pede para apalpar as colunas"
+      },
+      {
+        "id": "c",
+        "text": "Ele clama ao Senhor por força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Chamaram Sansão do cárcere",
+    "feedbackCorrect": "Exposição, pedido sobre as colunas e clamor por força: esse é o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pela exposição de Sansão; o clamor vem antes do desfecho."
+    },
+    "hint": "O clamor por força é o último dos três passos.",
+    "learningObjective": "Compreender o movimento até o clamor de Sansão.",
+    "evidence": [
+      "Juízes 16:25–28"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-03-sansao-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+    "prompt": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+    "cue": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+    "verseRef": "Juízes 16:29",
+    "passageText": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a esquerda na outra.",
+    "template": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a ___ na outra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "segunda"
+      },
+      {
+        "id": "b",
+        "text": "direita"
+      },
+      {
+        "id": "c",
+        "text": "esquerda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com a mão direita em uma e com a esquerda na outra",
+    "feedbackCorrect": "Direita em uma coluna e esquerda na outra, abraçando as duas.",
+    "feedbackWrong": {
+      "a": "Segunda indica ordem, não o nome da mão no texto.",
+      "b": "A direita fica na primeira coluna citada, não na segunda."
+    },
+    "hint": "Leia o fim do versículo com atenção às mãos.",
+    "learningObjective": "Compreender o gesto final de Sansão nas colunas.",
+    "evidence": [
+      "Juízes 16:29"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-03-sansao-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Juízes 16:28 a Hebreus 11:32?",
+    "prompt": "O que liga Juízes 16:28 a Hebreus 11:32?",
+    "cue": "O que liga Juízes 16:28 a Hebreus 11:32?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "passageA": {
+      "ref": "Juízes 16:28",
+      "text": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos."
+    },
+    "passageB": {
+      "ref": "Hebreus 11:32",
+      "text": "E que mais posso dizer? Certamente, não teria tempo suficiente para relatar o que há a respeito de Gideão, Baraque, Sansão, Jefté, Davi, Samuel e os profetas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filisteus citados pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Sansão lembrado em Hebreus"
+      },
+      {
+        "id": "c",
+        "text": "Sansão esquecido pelo Novo Testamento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Hebreus cita Sansão pelo nome entre os lembrados no capítulo da fé.",
+    "feedbackWrong": {
+      "a": "Os filisteus são os adversários, não os citados pela fé.",
+      "c": "Hebreus cita Sansão; ele não é esquecido ali."
+    },
+    "hint": "Veja qual nome de Juízes aparece em Hebreus.",
+    "learningObjective": "Relacionar Sansão à lembrança de Hebreus 11.",
+    "evidence": [
+      "Juízes 16:28",
+      "Hebreus 11:32"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-03-sansao-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Juízes 16:28 mostra Sansão dependendo do Senhor para receber força no fim",
+    "prompt": "Juízes 16:28 mostra Sansão dependendo do Senhor para receber força no fim",
+    "cue": "Juízes 16:28 mostra Sansão dependendo do Senhor para receber força no fim",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "me dês força apenas esta vez",
+    "feedbackCorrect": "O pedido mostra que a força final é suplicada ao Senhor, não autoafirmada.",
+    "feedbackWrong": {
+      "false": "Ele clama ao Senhor pela força; não a declara como só sua."
+    },
+    "hint": "Veja a quem Sansão dirige o pedido.",
+    "learningObjective": "Interpretar a dependência no clamor final.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-03-sansao-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+    "prompt": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+    "cue": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meus olhos"
+      },
+      {
+        "id": "b",
+        "text": "esta vez"
+      },
+      {
+        "id": "c",
+        "text": "me dês força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "me dês força apenas esta vez",
+    "feedbackCorrect": "Ele pede ao Senhor que lhe dê força: a dependência está no verbo dar.",
+    "feedbackWrong": {
+      "a": "Os olhos entram no motivo pessoal, não no pedido de força.",
+      "b": "Isso marca a ocasião única, não o que é pedido ao Senhor."
+    },
+    "hint": "Procure o que ele pede que Deus lhe dê.",
+    "learningObjective": "Sustentar com o texto a dependência de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-03-sansao-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Juízes 16:28–30 sustenta sobre o fim de Sansão?",
+    "prompt": "Que leitura Juízes 16:28–30 sustenta sobre o fim de Sansão?",
+    "cue": "Que leitura Juízes 16:28–30 sustenta sobre o fim de Sansão?",
+    "verseRef": "Juízes 16:28–29",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos. Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a esquerda na outra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão age no fim sem precisar do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Deus ouve o clamor final sem apagar a tensão da vingança"
+      },
+      {
+        "id": "c",
+        "text": "O texto celebra a vingança pessoal como ideal de fé"
+      },
+      {
+        "id": "d",
+        "text": "A morte de Sansão não tem efeito sobre os filisteus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Há clamor atendido e, ao mesmo tempo, vingança e morte sem maquiagem.",
+    "feedbackWrong": {
+      "a": "Ele clama ao Senhor pela força justamente no fim.",
+      "c": "Descrever o pedido não é celebrar vingança como ideal.",
+      "d": "A casa cai sobre príncipes e multidão, segundo o narrador."
+    },
+    "hint": "Leia clamor, motivo e desfecho juntos.",
+    "learningObjective": "Escolher uma leitura cautelosa do fim de Sansão.",
+    "evidence": [
+      "Juízes 16:28–30"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-03-sansao-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela como a Bíblia fecha e lembra Sansão?",
+    "prompt": "Qual sequência revela como a Bíblia fecha e lembra Sansão?",
+    "cue": "Qual sequência revela como a Bíblia fecha e lembra Sansão?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão clama ao Senhor na fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "Ele morre e é sepultado pela família"
+      },
+      {
+        "id": "c",
+        "text": "Hebreus cita Sansão entre os lembrados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Clamor, morte com sepultamento e lembrança em Hebreus formam o fecho.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor em Juízes; Hebreus faz a lembrança final."
+    },
+    "hint": "Siga: Juízes, sepultamento, Hebreus.",
+    "learningObjective": "Ver o fecho de Sansão e sua lembrança bíblica.",
+    "evidence": [
+      "Juízes 16:28",
+      "Juízes 16:31",
+      "Hebreus 11:32"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-03-sansao-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Juízes 16:30, com quem Sansão exclama que morreria?",
+    "prompt": "Em Juízes 16:30, com quem Sansão exclama que morreria?",
+    "cue": "Em Juízes 16:30, com quem Sansão exclama que morreria?",
+    "verseRef": "Juízes 16:30",
+    "passageText": "E Sansão exclamou: \"Que eu morra com os filisteus!\" E inclinou-se com toda a sua força, e a casa caiu sobre os príncipes e sobre toda a multidão que estava nela; e foram mais os que ele matou em sua morte do que os que havia matado em sua vida.",
+    "template": "E Sansão exclamou: \"Que eu morra com os ___!\" E inclinou-se com toda a sua força, e a casa caiu sobre os príncipes e sobre toda a multidão que estava nela; e foram mais os que ele matou em sua morte do que os que havia matado em sua vida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "israelitas"
+      },
+      {
+        "id": "b",
+        "text": "príncipes"
+      },
+      {
+        "id": "c",
+        "text": "filisteus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que eu morra com os filisteus",
+    "feedbackCorrect": "A exclamação nomeia os filisteus reunidos naquela casa.",
+    "feedbackWrong": {
+      "a": "Israelitas não são o povo reunido contra Sansão ali.",
+      "b": "Príncipes estão entre os atingidos, mas a exclamação nomeia outro grupo."
+    },
+    "hint": "Leia a exclamação entre aspas.",
+    "learningObjective": "Lembrar o nome ligado ao desfecho de Sansão.",
+    "evidence": [
+      "Juízes 16:30"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-03-sansao-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Juízes 16:31 a Juízes 2:16?",
+    "prompt": "O que liga Juízes 16:31 a Juízes 2:16?",
+    "cue": "O que liga Juízes 16:31 a Juízes 2:16?",
+    "verseRef": "Juízes 16:31",
+    "passageText": "Então, seus irmãos desceram, e toda a casa de seu pai o tomou, subindo com ele. Sepultaram-no entre Zorá e Estaol, no sepulcro de Manoá, seu pai. E ele julgou Israel durante vinte anos.",
+    "passageA": {
+      "ref": "Juízes 16:31",
+      "text": "Então, seus irmãos desceram, e toda a casa de seu pai o tomou, subindo com ele. Sepultaram-no entre Zorá e Estaol, no sepulcro de Manoá, seu pai. E ele julgou Israel durante vinte anos."
+    },
+    "passageB": {
+      "ref": "Juízes 2:16",
+      "text": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um juiz no padrão de livramento"
+      },
+      {
+        "id": "b",
+        "text": "Um rei permanente de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Um sacerdote do templo em Siló"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele julgou Israel durante vinte anos",
+    "feedbackCorrect": "Sansão é contado entre os juízes que o Senhor levantou naquele tempo.",
+    "feedbackWrong": {
+      "b": "O livro insiste que não havia rei; Sansão é juiz, não rei.",
+      "c": "Sansão julgou Israel, não serviu como sacerdote em Siló."
+    },
+    "hint": "Veja o verbo usado sobre Sansão no fim.",
+    "learningObjective": "Ligar Sansão ao padrão dos juízes levantados.",
+    "evidence": [
+      "Juízes 16:31",
+      "Juízes 2:16"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Juízes 4:10, Baraque subiu sozinho sem Débora ao seu lado",
+    "prompt": "Em Juízes 4:10, Baraque subiu sozinho sem Débora ao seu lado",
+    "cue": "Em Juízes 4:10, Baraque subiu sozinho sem Débora ao seu lado",
+    "verseRef": "Juízes 4:10",
+    "passageText": "Então, Baraque convocou Zebulom e Naftali em Quedes, e subiu com dez mil homens ao seu lado; e Débora também o acompanhou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "e Débora também o acompanhou",
+    "feedbackCorrect": "Baraque subiu com dez mil homens e Débora também o acompanhou.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 4:10: Débora também o acompanhou."
+    },
+    "hint": "Veja quem mais subiu com Baraque.",
+    "learningObjective": "Observar a presença de Débora com Baraque.",
+    "evidence": [
+      "Juízes 4:10"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 4:6, toque o lugar para onde Baraque ajuntaria os homens.",
+    "prompt": "Em Juízes 4:6, toque o lugar para onde Baraque ajuntaria os homens.",
+    "cue": "Em Juízes 4:6, toque o lugar para onde Baraque ajuntaria os homens.",
+    "verseRef": "Juízes 4:6",
+    "passageText": "E enviou chamar a Baraque, filho de Abinoão, de Quedes, na tribo de Naftali, e disse-lhe: O Senhor, Deus de Israel, não deu ordem, dizendo: \"Vá e ajunte homens ao Monte Tabor, e leve consigo dez mil homens dos filhos de Naftali e dos filhos de Zebulom?",
+    "options": [
+      {
+        "id": "a",
+        "text": "dez mil homens"
+      },
+      {
+        "id": "b",
+        "text": "filhos de Zebulom"
+      },
+      {
+        "id": "c",
+        "text": "Monte Tabor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ajunte homens ao Monte Tabor",
+    "feedbackCorrect": "O lugar do ajuntamento indicado a Baraque é o Monte Tabor.",
+    "feedbackWrong": {
+      "a": "Isso é a quantidade de homens chamados, não o lugar do ajuntamento.",
+      "b": "Zebulom é uma das tribos chamadas, não o lugar."
+    },
+    "hint": "Procure o monte citado na ordem.",
+    "learningObjective": "Identificar o lugar do ajuntamento de Baraque.",
+    "evidence": [
+      "Juízes 4:6"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Juízes 4:7, para onde o Senhor atrairia Sísera?",
+    "prompt": "Segundo Juízes 4:7, para onde o Senhor atrairia Sísera?",
+    "cue": "Segundo Juízes 4:7, para onde o Senhor atrairia Sísera?",
+    "verseRef": "Juízes 4:7",
+    "passageText": "E atrairei você até o ribeiro Quisom, a Sísera, comandante do exército de Jabim, com seus carros e suas tropas; e o entregarei em suas mãos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para o ribeiro Quisom"
+      },
+      {
+        "id": "b",
+        "text": "Para a palmeira de Débora"
+      },
+      {
+        "id": "c",
+        "text": "Para o Monte Tabor"
+      },
+      {
+        "id": "d",
+        "text": "Para a casa de Mica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "atrairei você até o ribeiro Quisom",
+    "feedbackCorrect": "Sísera, com carros e tropas, seria atraído ao ribeiro Quisom.",
+    "feedbackWrong": {
+      "b": "A palmeira é o lugar de Débora em 4:5, não o destino de Sísera.",
+      "c": "Tabor é o lugar dos homens de Baraque, não de Sísera.",
+      "d": "A casa de Mica pertence a outra história, em Juízes 17."
+    },
+    "hint": "Veja o destino do comandante inimigo.",
+    "learningObjective": "Observar o destino anunciado para Sísera.",
+    "evidence": [
+      "Juízes 4:7"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 4:10 na ordem do texto.",
+    "prompt": "Monte Juízes 4:10 na ordem do texto.",
+    "cue": "Monte Juízes 4:10 na ordem do texto.",
+    "verseRef": "Juízes 4:10",
+    "passageText": "Então, Baraque convocou Zebulom e Naftali em Quedes, e subiu com dez mil homens ao seu lado; e Débora também o acompanhou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, Baraque convocou Zebulom e Naftali em Quedes"
+      },
+      {
+        "id": "b",
+        "text": "e subiu com dez mil homens ao seu lado"
+      },
+      {
+        "id": "c",
+        "text": "e Débora também o acompanhou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Baraque convocou Zebulom e Naftali em Quedes",
+    "feedbackCorrect": "Convocação em Quedes, subida com dez mil e Débora junto: essa é a ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela convocação em Quedes; Débora junto fecha o versículo."
+    },
+    "hint": "O versículo começa com a convocação.",
+    "learningObjective": "Reconhecer a sequência de Juízes 4:10.",
+    "evidence": [
+      "Juízes 4:10"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Juízes 4:10, com quantos mil homens Baraque subiu?",
+    "prompt": "Em Juízes 4:10, com quantos mil homens Baraque subiu?",
+    "cue": "Em Juízes 4:10, com quantos mil homens Baraque subiu?",
+    "verseRef": "Juízes 4:10",
+    "passageText": "Então, Baraque convocou Zebulom e Naftali em Quedes, e subiu com dez mil homens ao seu lado; e Débora também o acompanhou.",
+    "template": "Então, Baraque convocou Zebulom e Naftali em Quedes, e subiu com ___ mil homens ao seu lado; e Débora também o acompanhou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "três"
+      },
+      {
+        "id": "b",
+        "text": "dez"
+      },
+      {
+        "id": "c",
+        "text": "vinte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "subiu com dez mil homens ao seu lado",
+    "feedbackCorrect": "Baraque subiu com dez mil homens, e Débora o acompanhou.",
+    "feedbackWrong": {
+      "a": "Três mil aparece no teto da casa de Sansão, não aqui.",
+      "c": "Vinte é o número de anos de Sansão, não dos homens aqui."
+    },
+    "hint": "Veja o número antes de mil homens.",
+    "learningObjective": "Lembrar o número de homens com Baraque.",
+    "evidence": [
+      "Juízes 4:10"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Gideão tinha gente demais para enfrentar os midianitas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A força está no tamanho"
+      },
+      {
+        "id": "b",
+        "text": "Gideão livra a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "Israel não se gloriará sozinho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "O povo demais poderia virar glória própria; o Senhor impede isso.",
+    "feedbackWrong": {
+      "a": "O tamanho do povo é justamente o problema apontado.",
+      "b": "Quem entregaria os midianitas é o Senhor, não Gideão sozinho."
+    },
+    "hint": "Veja o motivo dado pelo Senhor a Gideão.",
+    "learningObjective": "Ligar Juízes 7:2 ao risco da glória própria.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-07",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Juízes 16:25, toque de onde chamaram Sansão.",
+    "prompt": "Em Juízes 16:25, toque de onde chamaram Sansão.",
+    "cue": "Em Juízes 16:25, toque de onde chamaram Sansão.",
+    "verseRef": "Juízes 16:25",
+    "passageText": "E aconteceu que, alegrando-se o coração deles, disseram: Mandem chamar Sansão para que nos entretenha. Chamaram Sansão do cárcere, e ele se divertiu diante deles, e o fizeram ficar em pé entre as colunas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "diante deles"
+      },
+      {
+        "id": "b",
+        "text": "entre as colunas"
+      },
+      {
+        "id": "c",
+        "text": "do cárcere"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Chamaram Sansão do cárcere",
+    "feedbackCorrect": "Sansão foi chamado do cárcere para diante dos filisteus.",
+    "feedbackWrong": {
+      "a": "Diante deles é onde ele se apresenta, não de onde sai.",
+      "b": "Entre as colunas é onde o colocam depois de chamá-lo."
+    },
+    "hint": "Procure o lugar de prisão de Sansão.",
+    "learningObjective": "Identificar a condição de Sansão no desafio.",
+    "evidence": [
+      "Juízes 16:25"
+    ]
+  },
+  {
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-08",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Juízes 16:28 na ordem do texto.",
+    "prompt": "Monte Juízes 16:28 na ordem do texto.",
+    "cue": "Monte Juízes 16:28 na ordem do texto.",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então Sansão clamou ao Senhor e disse"
+      },
+      {
+        "id": "b",
+        "text": "Senhor Deus, peço-te que te lembres de mim"
+      },
+      {
+        "id": "c",
+        "text": "e me dês força apenas esta vez, ó Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Clamor, lembrança pedida e força suplicada: essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor ao Senhor; a força pedida vem depois."
+    },
+    "hint": "O versículo começa com o clamor de Sansão.",
+    "learningObjective": "Reconhecer a sequência do clamor de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Juízes 7:2, o povo demais poderia levar Israel a atribuir o livramento à própria mão",
+    "prompt": "Em Juízes 7:2, o povo demais poderia levar Israel a atribuir o livramento à própria mão",
+    "cue": "Em Juízes 7:2, o povo demais poderia levar Israel a atribuir o livramento à própria mão",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "assim, Israel não se gloriará contra mim",
+    "feedbackCorrect": "Com gente demais, Israel poderia dizer que a própria mão o livrou.",
+    "feedbackWrong": {
+      "false": "Releia o motivo do Senhor: impedir que Israel se glorie de si."
+    },
+    "hint": "Repare na fala que o Senhor não quer ouvir.",
+    "learningObjective": "Compreender o motivo do aviso a Gideão.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 4:9, toque a palavra que marca o contraste na resposta de Débora.",
+    "prompt": "Em Juízes 4:9, toque a palavra que marca o contraste na resposta de Débora.",
+    "cue": "Em Juízes 4:9, toque a palavra que marca o contraste na resposta de Débora.",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Certamente"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas a honra não será sua",
+    "feedbackCorrect": "Ela irá com Baraque, mas a honra não será dele: o contraste está aí.",
+    "feedbackWrong": {
+      "a": "Isso afirma que ela vai, não marca o contraste seguinte.",
+      "c": "Isso introduz o motivo, depois do aviso sobre a honra."
+    },
+    "hint": "Procure a palavra curta depois de irei com você.",
+    "learningObjective": "Reconhecer o marcador de contraste em 4:9.",
+    "evidence": [
+      "Juízes 4:9"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o pedido de Baraque e o aviso a Gideão se relacionam?",
+    "prompt": "Como o pedido de Baraque e o aviso a Gideão se relacionam?",
+    "cue": "Como o pedido de Baraque e o aviso a Gideão se relacionam?",
+    "verseRef": "Juízes 4:8–9",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei. Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os dois líderes decidem tudo sem ouvir o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Baraque e Gideão são elogiados pela força própria"
+      },
+      {
+        "id": "c",
+        "text": "Os dois líderes precisam depender da palavra do Senhor"
+      },
+      {
+        "id": "d",
+        "text": "Débora e o Senhor atrapalham os dois líderes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Certamente irei com você, mas a honra não será sua",
+    "feedbackCorrect": "Baraque depende da presença anunciada e Gideão, de um povo limitado por Deus.",
+    "feedbackWrong": {
+      "a": "Baraque recebe ordem do Senhor e Gideão ouve o Senhor falar.",
+      "b": "A honra e a glória própria são justamente retiradas dos líderes.",
+      "d": "A palavra do Senhor guia os dois, não os atrapalha."
+    },
+    "hint": "Junte a honra retirada com a glória impedida.",
+    "learningObjective": "Relacionar a dependência de Baraque e Gideão.",
+    "evidence": [
+      "Juízes 4:8–9",
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o desafio pelas histórias revisadas?",
+    "prompt": "Como avança o desafio pelas histórias revisadas?",
+    "cue": "Como avança o desafio pelas histórias revisadas?",
+    "verseRef": "Juízes 4:10",
+    "passageText": "Então, Baraque convocou Zebulom e Naftali em Quedes, e subiu com dez mil homens ao seu lado; e Débora também o acompanhou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora acompanha Baraque a Quedes"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor avisa Gideão sobre o povo"
+      },
+      {
+        "id": "c",
+        "text": "Sansão clama ao Senhor no fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e Débora também o acompanhou",
+    "feedbackCorrect": "Na ordem do livro: Débora e Baraque, Gideão avisado e Sansão no fim.",
+    "feedbackWrong": {
+      "default": "Siga os capítulos: Juízes 4, depois 7, depois 16."
+    },
+    "hint": "Siga a ordem dos capítulos do livro.",
+    "learningObjective": "Compreender a ordem das histórias revisadas.",
+    "evidence": [
+      "Juízes 4:10",
+      "Juízes 7:2",
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+    "prompt": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+    "cue": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+    "verseRef": "Juízes 16:29",
+    "passageText": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a esquerda na outra.",
+    "template": "Sansão, então, abraçou as duas colunas centrais que sustentavam a casa, fazendo força sobre elas, com a mão direita em uma e com a ___ na outra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esquerda"
+      },
+      {
+        "id": "b",
+        "text": "segunda"
+      },
+      {
+        "id": "c",
+        "text": "direita"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "com a mão direita em uma e com a esquerda na outra",
+    "feedbackCorrect": "Uma coluna na direita e a outra na esquerda, abraçando as duas.",
+    "feedbackWrong": {
+      "b": "Segunda marca ordem no texto, não o nome da mão.",
+      "c": "A direita está na primeira coluna citada, não na segunda."
+    },
+    "hint": "Leia as duas mãos no fim do versículo.",
+    "learningObjective": "Compreender o gesto de Sansão nas colunas.",
+    "evidence": [
+      "Juízes 16:29"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Juízes 4:9 a Hebreus 11:32?",
+    "prompt": "O que liga Juízes 4:9 a Hebreus 11:32?",
+    "cue": "O que liga Juízes 4:9 a Hebreus 11:32?",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "passageA": {
+      "ref": "Juízes 4:9",
+      "text": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes."
+    },
+    "passageB": {
+      "ref": "Hebreus 11:32",
+      "text": "E que mais posso dizer? Certamente, não teria tempo suficiente para relatar o que há a respeito de Gideão, Baraque, Sansão, Jefté, Davi, Samuel e os profetas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Baraque apagado de Hebreus"
+      },
+      {
+        "id": "b",
+        "text": "Nomes lembrados pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Sísera lembrado pela fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor entregará Sísera nas mãos de uma mulher",
+    "feedbackCorrect": "Hebreus cita Baraque, Gideão e Sansão entre os nomes lembrados pela fé.",
+    "feedbackWrong": {
+      "a": "Baraque é citado em Hebreus 11:32, não apagado.",
+      "c": "Sísera é o adversário entregue, não um nome da fé em Hebreus."
+    },
+    "hint": "Veja quais nomes de Juízes Hebreus cita.",
+    "learningObjective": "Relacionar os juízes à lembrança de Hebreus 11.",
+    "evidence": [
+      "Juízes 4:9",
+      "Hebreus 11:32"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-07",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Juízes 7:2, toque a palavra que introduz a consequência buscada pelo Senhor.",
+    "prompt": "Em Juízes 7:2, toque a palavra que introduz a consequência buscada pelo Senhor.",
+    "cue": "Em Juízes 7:2, toque a palavra que introduz a consequência buscada pelo Senhor.",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dizendo"
+      },
+      {
+        "id": "b",
+        "text": "contigo"
+      },
+      {
+        "id": "c",
+        "text": "assim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assim, Israel não se gloriará contra mim",
+    "feedbackCorrect": "A consequência buscada é Israel não se gloriar contra o Senhor.",
+    "feedbackWrong": {
+      "a": "Isso abre a fala imaginada de Israel, não a consequência.",
+      "b": "Isso situa o povo com Gideão, não introduz a consequência."
+    },
+    "hint": "Procure a palavra antes de Israel não se gloriará.",
+    "learningObjective": "Reconhecer o marcador de resultado no desafio.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-08",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Débora e Baraque em Juízes 4:6–9?",
+    "prompt": "Como se encadeiam os passos de Débora e Baraque em Juízes 4:6–9?",
+    "cue": "Como se encadeiam os passos de Débora e Baraque em Juízes 4:6–9?",
+    "verseRef": "Juízes 4:8–9",
+    "passageText": "Então, Baraque respondeu: Se você for comigo, irei; mas se não for comigo, não irei. Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora chama Baraque com uma ordem"
+      },
+      {
+        "id": "b",
+        "text": "Baraque pede a presença de Débora"
+      },
+      {
+        "id": "c",
+        "text": "Débora anuncia honra a uma mulher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se você for comigo, irei",
+    "feedbackCorrect": "Chamado, pedido de presença e anúncio sobre a honra: esse é o encadeamento.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado de Débora; o anúncio sobre a honra vem por último."
+    },
+    "hint": "O anúncio sobre a honra fecha a conversa.",
+    "learningObjective": "Compreender o encadeamento entre Débora e Baraque.",
+    "evidence": [
+      "Juízes 4:6–9"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-01",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Juízes 16:28 apresenta Sansão confiante na própria força, sem clamar ao Senhor",
+    "prompt": "Juízes 16:28 apresenta Sansão confiante na própria força, sem clamar ao Senhor",
+    "cue": "Juízes 16:28 apresenta Sansão confiante na própria força, sem clamar ao Senhor",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "No fim, Sansão clama ao Senhor pedindo força apenas esta vez.",
+    "feedbackWrong": {
+      "true": "Releia o começo de 16:28: Sansão clamou ao Senhor."
+    },
+    "hint": "Veja a primeira ação de Sansão no versículo.",
+    "learningObjective": "Interpretar o clamor final de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-02",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+    "prompt": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+    "cue": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+    "verseRef": "Juízes 4:9",
+    "passageText": "Ela respondeu: Certamente irei com você, mas a honra não será sua na missão que você está empreendendo, pois o Senhor entregará Sísera nas mãos de uma mulher. E Débora se levantou e foi com Baraque para Quedes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "uma mulher"
+      },
+      {
+        "id": "b",
+        "text": "nas mãos"
+      },
+      {
+        "id": "c",
+        "text": "a honra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas a honra não será sua",
+    "feedbackCorrect": "A honra da vitória é o que Débora diz que não será de Baraque.",
+    "feedbackWrong": {
+      "a": "A mulher recebe a entrega anunciada, não é o item negado a ele.",
+      "b": "Mãos aparecem na entrega de Sísera, não no que falta a Baraque."
+    },
+    "hint": "Procure o substantivo ligado a não será sua.",
+    "learningObjective": "Sustentar com o texto o tema da honra.",
+    "evidence": [
+      "Juízes 4:9"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-03",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura une Débora, Gideão e Sansão nestas histórias?",
+    "prompt": "Que leitura une Débora, Gideão e Sansão nestas histórias?",
+    "cue": "Que leitura une Débora, Gideão e Sansão nestas histórias?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor age por pessoas limitadas sem glorificar a força humana"
+      },
+      {
+        "id": "b",
+        "text": "A força humana maior sempre explica o livramento"
+      },
+      {
+        "id": "c",
+        "text": "A honra pessoal é o alvo principal de cada história"
+      },
+      {
+        "id": "d",
+        "text": "Líderes fortes nunca precisam ouvir o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "Honra deslocada, povo limitado e força suplicada apontam para a ação do Senhor.",
+    "feedbackWrong": {
+      "b": "Gideão tem gente demais e Sansão pede força: a explicação é o Senhor.",
+      "c": "A honra de Baraque é retirada e a glória de Israel é impedida.",
+      "d": "Baraque e Gideão ouvem o Senhor; Sansão clama a ele."
+    },
+    "hint": "Junte honra, povo demais e clamor por força.",
+    "learningObjective": "Escolher a interpretação que une as três histórias.",
+    "evidence": [
+      "Juízes 4:9",
+      "Juízes 7:2",
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-04",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da glória que não é humana?",
+    "prompt": "Qual sequência revela o fio da glória que não é humana?",
+    "cue": "Qual sequência revela o fio da glória que não é humana?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora anuncia honra nas mãos de uma mulher"
+      },
+      {
+        "id": "b",
+        "text": "Gideão ouve que Israel não se gloriará"
+      },
+      {
+        "id": "c",
+        "text": "Paulo diz que ninguém se glorie diante de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "Honra deslocada em Juízes 4, glória impedida em 7 e ensino de Paulo fecham o fio.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Juízes 4, Juízes 7 e a carta de Paulo."
+    },
+    "hint": "Siga: Débora, Gideão, Paulo.",
+    "learningObjective": "Ver a glória negada ao homem como fio bíblico.",
+    "evidence": [
+      "Juízes 4:9",
+      "Juízes 7:2",
+      "1 Coríntios 1:29"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-05",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Juízes 7:2, o que Israel não faria contra o Senhor?",
+    "prompt": "Em Juízes 7:2, o que Israel não faria contra o Senhor?",
+    "cue": "Em Juízes 7:2, o que Israel não faria contra o Senhor?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "template": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se ___ contra mim, dizendo: A minha própria mão me livrou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "livrará"
+      },
+      {
+        "id": "b",
+        "text": "gloriará"
+      },
+      {
+        "id": "c",
+        "text": "levantará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assim, Israel não se gloriará contra mim",
+    "feedbackCorrect": "O Senhor impede Israel de se gloriar como se a mão dele o livrasse.",
+    "feedbackWrong": {
+      "a": "Livrar é ação ligada ao Senhor e aos juízes, não a glória negada.",
+      "c": "Levantar é o que o Senhor faz com juízes, não o verbo negado aqui."
+    },
+    "hint": "Veja o verbo depois de Israel não se.",
+    "learningObjective": "Lembrar o termo central contra a glória própria.",
+    "evidence": [
+      "Juízes 7:2"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-06",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+    "prompt": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+    "cue": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+    "verseRef": "Juízes 7:2",
+    "passageText": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou.",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "E o Senhor disse a Gideão: Há povo demais contigo para que eu entregue os midianitas em suas mãos; assim, Israel não se gloriará contra mim, dizendo: A minha própria mão me livrou."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 1:29",
+      "text": "Para que ninguém se glorie diante d'Ele na presença de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O forte dispensa Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ninguém se glorie diante de Deus"
+      },
+      {
+        "id": "c",
+        "text": "A glória é da própria mão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Israel não se gloriará contra mim",
+    "feedbackCorrect": "Em Gideão e em Paulo, o livramento não vira glória humana diante de Deus.",
+    "feedbackWrong": {
+      "a": "Paulo nega que alguém se glorie diante de Deus, não independência.",
+      "c": "A própria mão glorificada é justamente o que Juízes 7:2 impede."
+    },
+    "hint": "Compare quem pode se gloriar nos dois trechos.",
+    "learningObjective": "Ligar a glória negada em Juízes e em Paulo.",
+    "evidence": [
+      "Juízes 7:2",
+      "1 Coríntios 1:29"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-07",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+    "prompt": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+    "cue": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "me dês força"
+      },
+      {
+        "id": "b",
+        "text": "meus olhos"
+      },
+      {
+        "id": "c",
+        "text": "esta vez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "me dês força apenas esta vez",
+    "feedbackCorrect": "Sansão pede que o Senhor lhe dê força: ele depende de receber.",
+    "feedbackWrong": {
+      "b": "Os olhos entram no motivo pessoal, não no pedido central.",
+      "c": "Isso marca a ocasião única, não o que ele suplica ao Senhor."
+    },
+    "hint": "Procure o que ele pede que Deus lhe dê.",
+    "learningObjective": "Sustentar com o texto a dependência de Sansão.",
+    "evidence": [
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-08",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fecho de Sansão até sua lembrança bíblica?",
+    "prompt": "Qual sequência revela o fecho de Sansão até sua lembrança bíblica?",
+    "cue": "Qual sequência revela o fecho de Sansão até sua lembrança bíblica?",
+    "verseRef": "Juízes 16:28",
+    "passageText": "Então Sansão clamou ao Senhor e disse: Senhor Deus, peço-te que te lembres de mim e me dês força apenas esta vez, ó Deus, para que eu me vingue dos filisteus, ao menos por um dos meus olhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão preso é exposto entre colunas"
+      },
+      {
+        "id": "b",
+        "text": "Ele pede força ao Senhor no fim"
+      },
+      {
+        "id": "c",
+        "text": "Hebreus cita Sansão pelo nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então Sansão clamou ao Senhor",
+    "feedbackCorrect": "Exposição humilhante, clamor por força e citação em Hebreus fecham o fio.",
+    "feedbackWrong": {
+      "default": "Comece pela exposição de Sansão; Hebreus faz a lembrança final."
+    },
+    "hint": "Siga: exposição, clamor, Hebreus.",
+    "learningObjective": "Ver o fecho de Sansão e sua lembrança em Hebreus.",
+    "evidence": [
+      "Juízes 16:25",
+      "Juízes 16:28",
+      "Hebreus 11:32"
+    ]
+  }
+]

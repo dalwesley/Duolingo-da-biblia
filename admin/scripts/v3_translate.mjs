@@ -14,22 +14,23 @@
  */
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { pathToFileURL } from 'url';
 import { complete, parseJsonReply } from './_llm.mjs';
 import { APP_L10N, argValue, readJson, trailDir } from './_v3_paths.mjs';
 
 const BATCH = 20;
-const LANG = {
+export const LANG = {
   en: { name: 'inglês', bible: 'Genesis, Exodus, John, Psalms, Romans…', tf: { true: 'True', false: 'False' } },
   es: { name: 'espanhol (neutro da América Latina, com "tú")', bible: 'Génesis, Éxodo, Juan, Salmos, Romanos…', tf: { true: 'Verdadero', false: 'Falso' } },
 };
 
 /** Opções que são texto da pessoa (não pedaço do versículo) se traduzem. */
-function translatableOptions(q) {
+export function translatableOptions(q) {
   if (q.type === 'choice' || q.type === 'connect') return true;
   return q.type === 'order' && q.difficulty !== 'semente';
 }
 
-function questionSource(q) {
+export function questionSource(q) {
   const e = {
     question: q.question,
     learningObjective: q.learningObjective,
@@ -41,7 +42,7 @@ function questionSource(q) {
   return e;
 }
 
-function studySource(s) {
+export function studySource(s) {
   return {
     context: s.context,
     focusQuestion: s.focusQuestion,
@@ -51,7 +52,7 @@ function studySource(s) {
   };
 }
 
-function system(lang) {
+export function system(lang) {
   const L = LANG[lang];
   return `Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para ${L.name}.
 
@@ -67,7 +68,7 @@ Regras:
 Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").`;
 }
 
-function checkEntry(src, tr, key) {
+export function checkEntry(src, tr, key) {
   const errs = [];
   for (const f of Object.keys(src)) {
     if (f.startsWith('_')) continue;
@@ -176,7 +177,9 @@ async function main() {
   console.log(`Revise e rode: node admin/scripts/v3_translate.mjs --trail ${trail} --apply`);
 }
 
-main().catch((e) => {
-  console.error(e.message || e);
-  process.exit(1);
-});
+if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
+  main().catch((e) => {
+    console.error(e.message || e);
+    process.exit(1);
+  });
+}

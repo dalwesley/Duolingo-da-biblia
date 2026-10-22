@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Lucas 18:1",
+    "passages": [
+      {
+        "ref": "Lucas 18:1"
+      },
+      {
+        "ref": "Lucas 18:2–3"
+      }
+    ],
+    "context": "Jesus conta esta parábola com um alvo declarado logo na abertura: ensinar que é preciso orar sempre e nunca desanimar. A personagem central é uma viúva sem poder nenhum diante de um juiz que não respeita ninguém.",
+    "keyword": "Persistência",
+    "keywordGloss": "Orar sempre e nunca desanimar: voltar a Deus de novo, confiando que ele é justo.",
+    "focusQuestion": "De que pedido você desistiu cedo demais e precisa voltar a apresentar a Deus?",
+    "reflectionPrompts": [
+      "Não desanimar",
+      "Clamar dia e noite",
+      "Deus não é o juiz injusto"
+    ],
+    "facts": [
+      {
+        "text": "A parábola foi contada sobre a necessidade de orar sempre e nunca desanimar.",
+        "evidenceRef": "Lucas 18:1",
+        "evidenceSpan": "a necessidade de orar sempre e nunca desanimar"
+      },
+      {
+        "text": "O juiz da história não temia a Deus nem respeitava homem algum.",
+        "evidenceRef": "Lucas 18:2",
+        "evidenceSpan": "um juiz que não temia a Deus"
+      },
+      {
+        "text": "A viúva pedia que ele julgasse a causa dela contra o adversário.",
+        "evidenceRef": "Lucas 18:3",
+        "evidenceSpan": "Julga a minha causa contra o meu adversário"
+      },
+      {
+        "text": "O juiz atendeu devido à insistência da viúva.",
+        "evidenceRef": "Lucas 18:5",
+        "evidenceSpan": "devido à insistência desta viúva eu julgarei a sua causa"
+      },
+      {
+        "text": "Deus fará justiça aos seus escolhidos, que clamam a ele dia e noite.",
+        "evidenceRef": "Lucas 18:7",
+        "evidenceSpan": "que clamam a Ele dia e noite"
+      },
+      {
+        "text": "Jesus promete justiça rapidamente e pergunta se encontrará fé na terra.",
+        "evidenceRef": "Lucas 18:8",
+        "evidenceSpan": "rapidamente, lhes fará justiça"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "juiz",
+        "gloss": "O personagem que não teme a Deus: é o contraste, não o retrato de Deus."
+      },
+      {
+        "term": "viúva",
+        "gloss": "Sem poder nem voz, ela só tem uma arma: insistir sem desistir."
+      },
+      {
+        "term": "adversário",
+        "gloss": "A causa dela é de justiça contra alguém mais forte que ela."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O alvo: orar sempre, sem desanimar",
+        "evidenceRef": "Lucas 18:1"
+      },
+      {
+        "label": "Juiz injusto e viúva sem voz",
+        "evidenceRef": "Lucas 18:2"
+      },
+      {
+        "label": "O juiz cede à insistência dela",
+        "evidenceRef": "Lucas 18:5"
+      },
+      {
+        "label": "Deus fará justiça aos que clamam",
+        "evidenceRef": "Lucas 18:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "A parábola tem um propósito declarado: ensinar a orar sempre e nunca desanimar.",
+        "marker": "sobre",
+        "evidenceRef": "Lucas 18:1"
+      },
+      {
+        "kind": "contraste",
+        "text": "O juiz não quis por um tempo; mas, depois, cedeu à insistência da viúva.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 18:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O resultado prometido aos que clamam é justiça feita rapidamente por Deus.",
+        "marker": "rapidamente",
+        "evidenceRef": "Lucas 18:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 11:9",
+        "bridge": "Pedir, buscar e bater"
+      },
+      {
+        "ref": "Salmos 88:1",
+        "bridge": "Clamor de dia e noite"
+      },
+      {
+        "ref": "Romanos 12:12",
+        "bridge": "Perseverar sempre em oração"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus é como o juiz injusto, que só atende de má vontade quando cansamos ele.",
+        "why": "O juiz é o contraste: se até ele atende, quanto mais Deus, que fará justiça aos seus escolhidos."
+      },
+      {
+        "text": "Persistir é uma técnica para obrigar Deus a fazer nossa vontade.",
+        "why": "A parábola fala de justiça para os escolhidos e termina falando de fé, não de manipulação."
+      },
+      {
+        "text": "Se Deus demora, é porque ele não se importa com quem clama.",
+        "why": "O texto afirma o contrário: ele fará justiça, e a pergunta final é sobre a nossa fé."
+      }
+    ],
+    "centralInsight": "Orar sempre e nunca desanimar, confiando na justiça de Deus",
+    "anchorQuestion": "Para que Jesus contou a parábola da viúva e do juiz?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 18:2, o juiz da parábola temia a Deus e respeitava todas as pessoas.",
+      "verseRef": "Lucas 18:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "um juiz que não temia a Deus, nem respeitava homem algum",
+      "feedbackCorrect": "Ele é descrito justamente como quem não teme nem respeita.",
+      "feedbackWrong": {
+        "true": "Releia Lucas 18:2: o juiz é o oposto disso."
+      },
+      "hint": "Veja como o juiz é apresentado.",
+      "learningObjective": "Observar o caráter do juiz da parábola.",
+      "evidence": [
+        "Lucas 18:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:3, toque quem foi até o juiz pedir justiça.",
+      "verseRef": "Lucas 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "cidade"
+        },
+        {
+          "id": "b",
+          "text": "viúva"
+        },
+        {
+          "id": "c",
+          "text": "adversário"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "uma viúva que veio até ele",
+      "feedbackCorrect": "Sem poder nem defensor, é ela quem vai e insiste.",
+      "feedbackWrong": {
+        "a": "Isso é o lugar da história, não quem foi pedir.",
+        "c": "Ele é o outro lado da causa dela."
+      },
+      "hint": "Procure a mulher na mesma cidade.",
+      "learningObjective": "Identificar a personagem que pede justiça.",
+      "evidence": [
+        "Lucas 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 18:3, o que a viúva pedia ao juiz?",
+      "verseRef": "Lucas 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dinheiro emprestado para pagar dívidas"
+        },
+        {
+          "id": "b",
+          "text": "Que julgasse a causa dela contra o adversário"
+        },
+        {
+          "id": "c",
+          "text": "Um emprego na casa do juiz da cidade"
+        },
+        {
+          "id": "d",
+          "text": "Permissão para deixar aquela cidade"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Julga a minha causa contra o meu adversário",
+      "feedbackCorrect": "O pedido dela é justiça numa causa, não favores.",
+      "feedbackWrong": {
+        "a": "Nenhum empréstimo aparece no pedido dela.",
+        "c": "Emprego não é citado em nenhum momento.",
+        "d": "Ela não quer sair: ela quer justiça ali."
+      },
+      "hint": "Ouça as palavras dela ao juiz.",
+      "learningObjective": "Observar o pedido da viúva.",
+      "evidence": [
+        "Lucas 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 18:2–3 na ordem do texto.",
+      "verseRef": "Lucas 18:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Havia em certa cidade um juiz"
+        },
+        {
+          "id": "b",
+          "text": "Havia também, naquela mesma cidade, uma viúva"
+        },
+        {
+          "id": "c",
+          "text": "Julga a minha causa contra o meu adversário"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Havia em certa cidade um juiz",
+      "feedbackCorrect": "Primeiro o juiz, depois a viúva, então o pedido dela.",
+      "feedbackWrong": {
+        "default": "Comece pela apresentação do juiz."
+      },
+      "hint": "A parábola apresenta as pessoas antes do pedido.",
+      "learningObjective": "Reconhecer a abertura da parábola.",
+      "evidence": [
+        "Lucas 18:2–3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 18:1, Jesus ensina a orar sempre e nunca fazer o quê?",
+      "verseRef": "Lucas 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "desanimar"
+        },
+        {
+          "id": "b",
+          "text": "calar"
+        },
+        {
+          "id": "c",
+          "text": "parar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "orar sempre e nunca desanimar",
+      "feedbackCorrect": "Persistir é continuar sem perder o ânimo na espera.",
+      "feedbackWrong": {
+        "b": "Falar com Deus é justamente o que devemos manter.",
+        "c": "A palavra do texto nomeia o ânimo, não só a ação."
+      },
+      "hint": "É perder o ânimo no meio da espera.",
+      "learningObjective": "Lembrar o alvo declarado da parábola.",
+      "evidence": [
+        "Lucas 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 18:3 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 18:3",
+      "passageA": {
+        "ref": "Lucas 18:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus contou a parábola para ensinar sobre a necessidade de orar sempre e nunca desanimar."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Desistência na primeira porta fechada"
+        },
+        {
+          "id": "b",
+          "text": "Insistência que não desiste"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio de quem aceitou tudo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "uma viúva que veio até ele",
+      "feedbackCorrect": "Ela volta ao juiz de novo: é o retrato de não desanimar.",
+      "feedbackWrong": {
+        "a": "Ela faz o oposto: ela não para de voltar.",
+        "c": "Ela fala e pede, não se cala diante da injustiça."
+      },
+      "hint": "Veja o que a viúva faz repetidamente.",
+      "learningObjective": "Ligar a viúva ao ensino sobre persistir.",
+      "evidence": [
+        "Lucas 18:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 18, Jesus compara Deus ao juiz injusto para ensinar que Deus atende de má vontade.",
+      "verseRef": "Lucas 18:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "E Deus não fará justiça aos seus escolhidos",
+      "feedbackCorrect": "O juiz é contraste: Deus fará justiça aos seus, sim.",
+      "feedbackWrong": {
+        "true": "A pergunta de Jesus espera um sim sobre Deus agir."
+      },
+      "hint": "Veja se o juiz é modelo ou contraste.",
+      "learningObjective": "Compreender o contraste entre o juiz e Deus.",
+      "evidence": [
+        "Lucas 18:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:5, toque a palavra que explica por que o juiz finalmente atendeu a viúva.",
+      "verseRef": "Lucas 18:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "insistência"
+        },
+        {
+          "id": "b",
+          "text": "causa"
+        },
+        {
+          "id": "c",
+          "text": "viúva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "devido à insistência desta viúva",
+      "feedbackCorrect": "Não foi bondade do juiz: foi a constância dela.",
+      "feedbackWrong": {
+        "b": "Isso é o pedido dela, não o motivo dele ceder.",
+        "c": "Ela é a pessoa; o motivo é o que ela fez sem parar."
+      },
+      "hint": "Procure o motivo depois de devido à.",
+      "learningObjective": "Reconhecer o que moveu a decisão do juiz.",
+      "evidence": [
+        "Lucas 18:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Jesus usa o juiz injusto em Lucas 18:6–7 para falar de Deus?",
+      "verseRef": "Lucas 18:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se até ele atende, Deus fará justiça aos seus escolhidos"
+        },
+        {
+          "id": "b",
+          "text": "Deus também precisa ser cansado para finalmente ouvir"
+        },
+        {
+          "id": "c",
+          "text": "Deus respeita menos as pessoas do que aquele juiz"
+        },
+        {
+          "id": "d",
+          "text": "Só quem grita mais alto é ouvido no céu por Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Deus não fará justiça aos seus escolhidos",
+      "feedbackCorrect": "Do pior juiz ao Pai justo: o argumento sobe, não desce.",
+      "feedbackWrong": {
+        "b": "Deus não é o juiz relutante: ele é o contraste dele.",
+        "c": "Deus escolhe e defende os seus; o juiz não respeitava ninguém.",
+        "d": "O ponto é justiça de Deus, não volume da voz."
+      },
+      "hint": "Pense do menor para o maior no argumento.",
+      "learningObjective": "Compreender o argumento do contraste na parábola.",
+      "evidence": [
+        "Lucas 18:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os eventos de Lucas 18:4–5?",
+      "verseRef": "Lucas 18:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O juiz se recusa a atendê-la por um tempo"
+        },
+        {
+          "id": "b",
+          "text": "A viúva continua vindo e insistindo nele"
+        },
+        {
+          "id": "c",
+          "text": "Ele decide julgar a causa dela de uma vez"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele não quis atendê-la",
+      "feedbackCorrect": "Recusa, insistência e decisão: é a virada da história.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa inicial do juiz."
+      },
+      "hint": "A decisão dele é o último passo.",
+      "learningObjective": "Compreender a virada da parábola.",
+      "evidence": [
+        "Lucas 18:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 18:7, o que Jesus afirma que Deus fará aos seus escolhidos?",
+      "verseRef": "Lucas 18:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "justiça"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "espera"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus não fará justiça aos seus escolhidos",
+      "feedbackCorrect": "A resposta de Deus ao clamor é fazer justiça.",
+      "feedbackWrong": {
+        "b": "Ele responde ao clamor, não com silêncio final.",
+        "c": "Esperar é o nosso lado; o dele é agir com justiça."
+      },
+      "hint": "É a mesma palavra do pedido da viúva.",
+      "learningObjective": "Compreender a promessa central da parábola.",
+      "evidence": [
+        "Lucas 18:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 18:3 a Lucas 11:9?",
+      "verseRef": "Lucas 18:3",
+      "passageA": {
+        "ref": "Lucas 18:3"
+      },
+      "passageB": {
+        "ref": "Lucas 11:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedir, buscar e bater"
+        },
+        {
+          "id": "b",
+          "text": "Pedir uma vez e calar"
+        },
+        {
+          "id": "c",
+          "text": "Bater só em portas humanas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Julga a minha causa contra o meu adversário",
+      "feedbackCorrect": "A viúva vive o pedir, buscar e bater sem desistir.",
+      "feedbackWrong": {
+        "b": "Ela pediu muitas vezes, e Jesus manda continuar.",
+        "c": "A perseverança dela aponta para orar a Deus."
+      },
+      "hint": "Veja os três verbos do ensino de Jesus.",
+      "learningObjective": "Relacionar a parábola ao ensino de Lucas 11.",
+      "evidence": [
+        "Lucas 18:3",
+        "Lucas 11:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Lucas 18 ensina a persistir confiando que Deus, diferente do juiz, fará justiça aos que clamam dia e noite.",
+      "verseRef": "Lucas 18:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "que clamam a Ele dia e noite",
+      "feedbackCorrect": "Persistência com confiança: é fé, não técnica de pressão.",
+      "feedbackWrong": {
+        "false": "A pergunta final de Jesus é se haverá fé, não força."
+      },
+      "hint": "Junte o clamor com a pergunta sobre fé.",
+      "learningObjective": "Interpretar a persistência como expressão de fé.",
+      "evidence": [
+        "Lucas 18:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:7, toque a quem Deus fará justiça, segundo Jesus.",
+      "verseRef": "Lucas 18:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "dia e noite"
+        },
+        {
+          "id": "b",
+          "text": "seus escolhidos"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fará justiça aos seus escolhidos",
+      "feedbackCorrect": "Não é qualquer pressão: é o povo dele clamando a ele.",
+      "feedbackWrong": {
+        "a": "Isso é quando eles clamam, não quem recebe justiça.",
+        "c": "Ele é quem faz a justiça, não quem a recebe."
+      },
+      "hint": "Procure o grupo depois de justiça aos.",
+      "learningObjective": "Sustentar no texto quem Deus defende.",
+      "evidence": [
+        "Lucas 18:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 18:8 sustenta sobre persistir em oração?",
+      "verseRef": "Lucas 18:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "É um jeito de cansar Deus até ele ceder a nós"
+        },
+        {
+          "id": "b",
+          "text": "É fé que continua clamando ao Deus justo"
+        },
+        {
+          "id": "c",
+          "text": "É prova de que Deus demora por não se importar"
+        },
+        {
+          "id": "d",
+          "text": "É desnecessário depois da primeira oração feita"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "encontrará, porventura, fé na terra?",
+      "feedbackCorrect": "Jesus fecha falando de fé: persistir é continuar crendo.",
+      "feedbackWrong": {
+        "a": "Deus não é o juiz cansado: ele é o justo que defende.",
+        "c": "Ele promete justiça rapidamente aos que clamam.",
+        "d": "O ensino de abertura é orar sempre, sem parar."
+      },
+      "hint": "Veja a última pergunta de Jesus na parábola.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Lucas 18:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido de Lucas 18:3–8?",
+      "verseRef": "Lucas 18:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "A viúva insiste diante do juiz injusto"
+        },
+        {
+          "id": "b",
+          "text": "Deus fará justiça aos seus que clamam"
+        },
+        {
+          "id": "c",
+          "text": "O Filho do Homem procura fé na terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "rapidamente, lhes fará justiça",
+      "feedbackCorrect": "Insistência, justiça de Deus e a pergunta sobre a fé.",
+      "feedbackWrong": {
+        "default": "Comece pela viúva diante do juiz."
+      },
+      "hint": "A pergunta sobre fé fecha a parábola.",
+      "learningObjective": "Ver o arco da parábola até a fé.",
+      "evidence": [
+        "Lucas 18:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 18:8, o que o Filho do Homem espera encontrar na terra quando vier?",
+      "verseRef": "Lucas 18:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "fama"
+        },
+        {
+          "id": "c",
+          "text": "força"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "encontrará, porventura, fé na terra?",
+      "feedbackCorrect": "A persistência que ele procura tem nome: fé que não desiste.",
+      "feedbackWrong": {
+        "b": "Reconhecimento humano não é o que ele procura.",
+        "c": "A viúva não tinha força: ela tinha perseverança crente."
+      },
+      "hint": "É a palavra final da pergunta de Jesus.",
+      "learningObjective": "Lembrar o que Jesus procura: fé perseverante.",
+      "evidence": [
+        "Lucas 18:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 18:7 a Salmos 88:1?",
+      "verseRef": "Lucas 18:7",
+      "passageA": {
+        "ref": "Lucas 18:7"
+      },
+      "passageB": {
+        "ref": "Salmos 88:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor de dia e noite"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio aceito sem clamar"
+        },
+        {
+          "id": "c",
+          "text": "Justiça feita pelas próprias mãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que clamam a Ele dia e noite",
+      "feedbackCorrect": "O salmista também clama de dia e de noite, sem parar.",
+      "feedbackWrong": {
+        "b": "Os dois textos clamam, não se calam na dor.",
+        "c": "A justiça é pedida a Deus, não feita à força."
+      },
+      "hint": "Compare os horários do clamor nos dois textos.",
+      "learningObjective": "Ligar o clamor da parábola ao dos Salmos.",
+      "evidence": [
+        "Lucas 18:7",
+        "Salmos 88:1"
+      ]
+    }
+  ]
+}

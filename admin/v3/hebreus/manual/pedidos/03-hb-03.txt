@@ -1,0 +1,67 @@
+Escreva a cena "hb-03" da trilha "hebreus" (Hebreus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "hebreus",
+  "title": "Hebreus",
+  "description": "Cristo, o Sumo Sacerdote superior — fé que persevera.",
+  "realm": "novo-testamento"
+ },
+ "block": "Hebreus",
+ "mission": {
+  "slug": "hb-03",
+  "title": "Uma alianca melhor",
+  "type": "lesson",
+  "intro": "A nova alianca foi estabelecida pelo sangue de Cristo. Seu sacrificio unico perdoa e purifica os que creem.",
+  "hookRef": "Uma alianca melhor",
+  "hookNote": "A nova alianca foi estabelecida pelo sangue de Cristo. Seu sacrificio unico perdoa e purifica os que creem.",
+  "centralInsight": "Os sacrificios antigos apontavam para a necessidade de expiacao, mas nao removiam definitivamente o pecado. Jesus cumpriu o que eles prefig…",
+  "objective": "O sacrificio perfeito"
+ },
+ "v2": {
+  "passageRef": "Uma alianca melhor",
+  "context": "A nova alianca foi estabelecida pelo sangue de Cristo. Seu sacrificio unico perdoa e purifica os que creem.",
+  "keyword": "Alianca",
+  "verseRefs": [
+   "Hebreus 8:6"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Hebreus 8:3–9"
+ ],
+ "verses": [
+  {
+   "ref": "Hebreus 8:3",
+   "text": "Pois todo sumo sacerdote é designado para oferecer tanto dons como sacrifícios; por isso, era necessário que este também tivesse o que oferecer."
+  },
+  {
+   "ref": "Hebreus 8:4",
+   "text": "Porque, se estivesse na terra, nem mesmo sacerdote seria, visto que ainda existem aqueles que oferecem dons segundo a lei."
+  },
+  {
+   "ref": "Hebreus 8:5",
+   "text": "Eles ministram como uma cópia e sombra das coisas celestiais, assim como Moisés foi divinamente instruído quando estava prestes a construir o tabernáculo; pois ele diz: \"Fazes tudo conforme o modelo que te foi mostrado no monte.\""
+  },
+  {
+   "ref": "Hebreus 8:6",
+   "text": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores."
+  },
+  {
+   "ref": "Hebreus 8:7",
+   "text": "Porque, se a primeira aliança tivesse sido sem defeito, de maneira nenhuma estaria sendo buscada uma segunda."
+  },
+  {
+   "ref": "Hebreus 8:8",
+   "text": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá."
+  },
+  {
+   "ref": "Hebreus 8:9",
+   "text": "Não como a aliança que fiz com seus pais no dia em que os tomei pela mão para os conduzir para fora da terra do Egito; pois eles não continuaram na minha aliança, e eu não atentei para eles, diz o Senhor."
+  }
+ ]
+}
+</cena>

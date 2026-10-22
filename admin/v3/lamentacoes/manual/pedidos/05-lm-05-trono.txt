@@ -1,0 +1,67 @@
+Escreva a cena "lm-05-trono" da trilha "lamentacoes" (Lamentações).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "lamentacoes",
+  "title": "Lamentações",
+  "description": "Luto de Jerusalém — e misericórdias que se renovam.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A cidade",
+ "mission": {
+  "slug": "lm-05-trono",
+  "title": "Tu permaneces",
+  "type": "lesson",
+  "intro": "O poema acaba olhando para o trono que não cai e pedindo: converte-nos, renova os nossos dias.",
+  "hookRef": "Lamentações 5:19–22",
+  "hookNote": "O luto não termina em desespero mudo. Termina numa pergunta e num pedido diante de quem permanece.",
+  "centralInsight": "No luto ainda se pede restauração",
+  "objective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição."
+ },
+ "v2": {
+  "passageRef": "Lamentações 5:19–22",
+  "context": "O trono subsiste, o povo pergunta pelo abandono e pede renovação.",
+  "keyword": "Restauração",
+  "verseRefs": [
+   "Lamentações 5:19–22"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lamentações 5:16–22"
+ ],
+ "verses": [
+  {
+   "ref": "Lamentações 5:16",
+   "text": "Caiu a coroa da nossa cabeça; ai de nós, porque pecamos!"
+  },
+  {
+   "ref": "Lamentações 5:17",
+   "text": "Por isso, o nosso coração desfaleceu; por isso, os nossos olhos se escureceram."
+  },
+  {
+   "ref": "Lamentações 5:18",
+   "text": "Pelo monte Sião, que está assolado, as raposas percorrem suas áreas."
+  },
+  {
+   "ref": "Lamentações 5:19",
+   "text": "Tu, Senhor, reinas eternamente, e o teu trono permanece de geração em geração."
+  },
+  {
+   "ref": "Lamentações 5:20",
+   "text": "Por que te esquecerias de nós para sempre? Por que nos abandonarias por tanto tempo?"
+  },
+  {
+   "ref": "Lamentações 5:21",
+   "text": "Restaura-nos, Senhor, e seremos restaurados; renova nossos dias como eram antigamente."
+  },
+  {
+   "ref": "Lamentações 5:22",
+   "text": "Por que nos rejeitarias totalmente? Por que te indignarias tanto contra nós?"
+  }
+ ]
+}
+</cena>

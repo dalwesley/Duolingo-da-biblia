@@ -1,0 +1,63 @@
+Escreva a cena "hb-01" da trilha "hebreus" (Hebreus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "hebreus",
+  "title": "Hebreus",
+  "description": "Cristo, o Sumo Sacerdote superior — fé que persevera.",
+  "realm": "novo-testamento"
+ },
+ "block": "Hebreus",
+ "mission": {
+  "slug": "hb-01",
+  "title": "Maior que os anjos e Moises",
+  "type": "lesson",
+  "intro": "Hebreus apresenta Jesus como o Filho eterno, superior aos anjos e fiel sobre a casa de Deus.",
+  "hookRef": "Maior que os anjos e Moises",
+  "hookNote": "Hebreus apresenta Jesus como o Filho eterno, superior aos anjos e fiel sobre a casa de Deus.",
+  "centralInsight": "Os destinatarios eram tentados a recuar. O autor mostra que Deus falou decisivamente por meio do Filho, cuja gloria ultrapassa toda criatur…",
+  "objective": "O Filho fala com autoridade"
+ },
+ "v2": {
+  "passageRef": "Maior que os anjos e Moises",
+  "context": "Hebreus apresenta Jesus como o Filho eterno, superior aos anjos e fiel sobre a casa de Deus.",
+  "keyword": "Maior",
+  "verseRefs": [
+   "Hebreus 1:1–3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Hebreus 1:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Hebreus 1:1",
+   "text": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho."
+  },
+  {
+   "ref": "Hebreus 1:2",
+   "text": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo."
+  },
+  {
+   "ref": "Hebreus 1:3",
+   "text": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas."
+  },
+  {
+   "ref": "Hebreus 1:4",
+   "text": "Tornou-se tão superior aos anjos quanto herdou um nome mais excelente do que o deles."
+  },
+  {
+   "ref": "Hebreus 1:5",
+   "text": "Pois a qual dos anjos Deus alguma vez disse: Tu és meu Filho, hoje eu te gerei? E ainda: Eu serei para ele um Pai, e ele será para mim um Filho?"
+  },
+  {
+   "ref": "Hebreus 1:6",
+   "text": "E, novamente, ao apresentar o Primogênito no mundo, diz: \"Que todos os anjos de Deus o adorem.\""
+  }
+ ]
+}
+</cena>

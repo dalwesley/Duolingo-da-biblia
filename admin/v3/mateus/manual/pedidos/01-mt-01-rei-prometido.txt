@@ -1,0 +1,71 @@
+Escreva a cena "mt-01-rei-prometido" da trilha "mateus" (Mateus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "mateus",
+  "title": "Mateus",
+  "description": "O Rei prometido — cumprimento e o Sermão do Monte.",
+  "realm": "novo-testamento"
+ },
+ "block": "Mateus",
+ "mission": {
+  "slug": "mt-01-rei-prometido",
+  "title": "O Rei prometido",
+  "type": "lesson",
+  "intro": "Mateus apresenta Jesus como o Messias prometido, Filho de Davi e Rei que veio cumprir as Escrituras.",
+  "hookRef": "O Rei prometido",
+  "hookNote": "Mateus apresenta Jesus como o Messias prometido, Filho de Davi e Rei que veio cumprir as Escrituras.",
+  "centralInsight": "A genealogia liga Jesus a Abraão e Davi. Seu nascimento pelo Espírito Santo cumpre a promessa de Emanuel: Deus conosco.",
+  "objective": "Nascimento e identidade de Jesus"
+ },
+ "v2": {
+  "passageRef": "O Rei prometido",
+  "context": "Mateus apresenta Jesus como o Messias prometido, Filho de Davi e Rei que veio cumprir as Escrituras.",
+  "keyword": "Rei",
+  "verseRefs": [
+   "Mateus 1:21–23"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 1:18–25"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 1:18",
+   "text": "O nascimento de Jesus Cristo ocorreu da seguinte maneira: Maria, sua mãe, estava desposada com José; sem que tivessem coabitado, ela achou-se grávida pelo Espírito Santo."
+  },
+  {
+   "ref": "Mateus 1:19",
+   "text": "Então José, seu esposo, sendo justo e não querendo infamá-la, resolveu deixá-la secretamente."
+  },
+  {
+   "ref": "Mateus 1:20",
+   "text": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo."
+  },
+  {
+   "ref": "Mateus 1:21",
+   "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+  },
+  {
+   "ref": "Mateus 1:22",
+   "text": "Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta:"
+  },
+  {
+   "ref": "Mateus 1:23",
+   "text": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+  },
+  {
+   "ref": "Mateus 1:24",
+   "text": "E José, ao acordar do sono, fez como o anjo do Senhor lhe havia ordenado e recebeu sua esposa."
+  },
+  {
+   "ref": "Mateus 1:25",
+   "text": "E não a conheceu até que ela deu à luz seu filho, o primogênito; e lhe pôs o nome de Jesus."
+  }
+ ]
+}
+</cena>

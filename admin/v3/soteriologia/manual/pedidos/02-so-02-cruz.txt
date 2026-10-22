@@ -1,0 +1,67 @@
+Escreva a cena "so-02-cruz" da trilha "soteriologia" (Soteriologia).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "soteriologia",
+  "title": "Soteriologia",
+  "description": "A salvação — eleição, regeneração, justificação e santificação.",
+  "realm": "teologia"
+ },
+ "block": "Salvação",
+ "mission": {
+  "slug": "so-02-cruz",
+  "title": "Cristo morreu por nós",
+  "type": "lesson",
+  "intro": "Jesus tomou sobre si o pecado para reconciliar pecadores com Deus.",
+  "hookRef": "Romanos 5:8",
+  "hookNote": "Jesus tomou sobre si o pecado para reconciliar pecadores com Deus.",
+  "centralInsight": "Esta missão apresenta cristo morreu por nós de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor…",
+  "objective": "Romanos 5:8"
+ },
+ "v2": {
+  "passageRef": "Romanos 5:8",
+  "context": "Jesus tomou sobre si o pecado para reconciliar pecadores com Deus.",
+  "keyword": "Cristo",
+  "verseRefs": [
+   "Romanos 5:8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 5:5–11"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 5:5",
+   "text": "E a esperança não decepciona, pois o amor de Deus é derramado em nossos corações pelo Espírito Santo que nos foi concedido."
+  },
+  {
+   "ref": "Romanos 5:6",
+   "text": "Porque Cristo, quando nós ainda éramos fracos, morreu a seu tempo pelos ímpios."
+  },
+  {
+   "ref": "Romanos 5:7",
+   "text": "Porque raramente alguém morrerá por um justo; embora talvez alguém se atreva a morrer por um bom."
+  },
+  {
+   "ref": "Romanos 5:8",
+   "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+  },
+  {
+   "ref": "Romanos 5:9",
+   "text": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira."
+  },
+  {
+   "ref": "Romanos 5:10",
+   "text": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;"
+  },
+  {
+   "ref": "Romanos 5:11",
+   "text": "E não apenas isso, mas também nos gloriamos em Deus por intermédio de nosso Senhor Jesus Cristo, por quem agora recebemos a reconciliação."
+  }
+ ]
+}
+</cena>

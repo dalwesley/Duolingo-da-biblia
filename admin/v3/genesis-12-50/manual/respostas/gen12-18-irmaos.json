@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Gênesis 42:21",
+  "passages": [
+   {
+    "ref": "Gênesis 42:21"
+   },
+   {
+    "ref": "Gênesis 42:6–9"
+   },
+   {
+    "ref": "Gênesis 42:18–20"
+   }
+  ],
+  "context": "Com fome em Canaã, dez irmãos de José descem ao Egito e se prostram diante do governador sem reconhecê-lo. José os reconhece, lembra dos sonhos e os prova sobre Benjamim.",
+  "keyword": "Prova",
+  "keywordGloss": "José coloca os irmãos diante da verdade sobre o irmão que venderam e sobre Benjamim.",
+  "focusQuestion": "O que você precisa encarar de verdade sobre o seu passado?",
+  "reflectionPrompts": [
+   "Encarar a culpa antiga",
+   "Deus usa a fome para reencontro",
+   "Proteger o irmão mais novo"
+  ],
+  "facts": [
+   {
+    "text": "Os dez irmãos de José descem ao Egito para comprar cereal.",
+    "evidenceRef": "Gênesis 42:3",
+    "evidenceSpan": "os dez irmãos de José desceram ao Egito para comprar cereal"
+   },
+   {
+    "text": "Os irmãos se prostram diante de José com o rosto em terra.",
+    "evidenceRef": "Gênesis 42:6",
+    "evidenceSpan": "os irmãos de José vieram e se prostraram diante dele, com o rosto em terra"
+   },
+   {
+    "text": "José reconhece os irmãos, mas eles não o reconhecem.",
+    "evidenceRef": "Gênesis 42:8",
+    "evidenceSpan": "José reconheceu seus irmãos, mas eles não o reconheceram"
+   },
+   {
+    "text": "José se lembra dos sonhos que tivera a respeito deles.",
+    "evidenceRef": "Gênesis 42:9",
+    "evidenceSpan": "José se lembrou dos sonhos que tivera a respeito deles"
+   },
+   {
+    "text": "Os irmãos confessam culpa sobre o irmão que não atenderam.",
+    "evidenceRef": "Gênesis 42:21",
+    "evidenceSpan": "somos culpados a respeito de nosso irmão, pois vimos a angústia de sua alma"
+   },
+   {
+    "text": "José se afasta deles e chora ao ouvir a conversa.",
+    "evidenceRef": "Gênesis 42:24",
+    "evidenceSpan": "E afastou-se deles e chorou"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "governador",
+    "gloss": "O cargo de José no Egito quando os irmãos chegam sem o reconhecer."
+   },
+   {
+    "term": "espiões",
+    "gloss": "A acusação que José faz aos irmãos para provar a verdade deles."
+   },
+   {
+    "term": "culpados",
+    "gloss": "Como os irmãos se reconhecem ao lembrar da angústia de José."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A fome leva os irmãos ao Egito",
+    "evidenceRef": "Gênesis 42:1–5"
+   },
+   {
+    "label": "Eles se prostram diante de José sem reconhecer",
+    "evidenceRef": "Gênesis 42:6–8"
+   },
+   {
+    "label": "José os acusa e exige Benjamim",
+    "evidenceRef": "Gênesis 42:9–15"
+   },
+   {
+    "label": "Eles confessam a culpa e José chora",
+    "evidenceRef": "Gênesis 42:21–24"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Porque há fome na terra de Canaã, os filhos de Israel descem ao Egito.",
+    "marker": "pois havia fome",
+    "evidenceRef": "Gênesis 42:5"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao ouvir a confissão dos irmãos, José se afasta e chora antes de voltar.",
+    "marker": "chorou",
+    "evidenceRef": "Gênesis 42:24"
+   },
+   {
+    "kind": "propósito",
+    "text": "José exige o irmão mais novo para provar se há verdade no que eles dizem.",
+    "marker": "para que",
+    "evidenceRef": "Gênesis 42:16"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gênesis 45:5",
+    "bridge": "Deus enviou José à frente"
+   },
+   {
+    "ref": "Atos 7:13",
+    "bridge": "José se fez reconhecer pelos irmãos"
+   },
+   {
+    "ref": "Gênesis 37:7",
+    "bridge": "Feixes se inclinam diante do seu"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Os irmãos reconheceram José assim que o viram no Egito.",
+    "why": "José os reconhece, mas eles não o reconhecem como governador."
+   },
+   {
+    "text": "José acusa os irmãos por vingança sem nenhum outro propósito.",
+    "why": "Ele os prova sobre Benjamim e chora ao ouvir a confissão deles."
+   },
+   {
+    "text": "A confissão dos irmãos foi inventada para escapar da prisão.",
+    "why": "Eles ligam o sofrimento presente à angústia de José que não atenderam."
+   }
+  ],
+  "centralInsight": "Diante de José sem saber, os irmãos encaram a culpa pelo que fizeram",
+  "anchorQuestion": "O que José procura ver nos irmãos que chegam ao Egito?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Gênesis 42 José e seus irmãos se reconhecem mutuamente logo no primeiro olhar",
+   "verseRef": "Gênesis 42:8",
+   "evidenceSpan": "José reconheceu seus irmãos, mas eles não o reconheceram",
+   "feedbackCorrect": "José reconhece os irmãos, mas eles não sabem que o governador é José.",
+   "feedbackWrong": {
+    "true": "Releia quem reconhece quem no encontro."
+   },
+   "hint": "Veja o reconhecimento dos dois lados.",
+   "learningObjective": "Observar o reconhecimento no reencontro.",
+   "evidence": [
+    "Gênesis 42:8"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Gênesis 42:6, toque o que os irmãos fazem diante de José ao chegar.",
+   "verseRef": "Gênesis 42:6",
+   "evidenceSpan": "os irmãos de José vieram e se prostraram diante dele",
+   "feedbackCorrect": "Os irmãos se prostram com o rosto em terra diante de José sem o reconhecer.",
+   "feedbackWrong": {
+    "b": "Isso é a posição do rosto deles, não a ação completa.",
+    "c": "Governador é o cargo dele, não o que eles fazem."
+   },
+   "hint": "Procure a ação dos irmãos diante dele.",
+   "learningObjective": "Identificar o gesto dos irmãos no Egito.",
+   "evidence": [
+    "Gênesis 42:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "se prostraram"
+    },
+    {
+     "id": "b",
+     "text": "rosto em terra"
+    },
+    {
+     "id": "c",
+     "text": "governador"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Gênesis 42:3, quantos irmãos de José descem ao Egito na primeira viagem?",
+   "verseRef": "Gênesis 42:3",
+   "evidenceSpan": "os dez irmãos de José desceram ao Egito",
+   "feedbackCorrect": "Dez irmãos descem; Benjamim fica com o pai e José já está no Egito.",
+   "feedbackWrong": {
+    "a": "Um irmão fica a menos na conta de quem desce primeiro.",
+    "c": "José e Benjamim completam os doze, mas não descem com eles.",
+    "d": "Os doze incluem José no Egito e Benjamim em Canaã."
+   },
+   "hint": "Leia o número de quem desce.",
+   "learningObjective": "Observar quem vai na primeira viagem.",
+   "evidence": [
+    "Gênesis 42:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Nove irmãos"
+    },
+    {
+     "id": "b",
+     "text": "Dez irmãos"
+    },
+    {
+     "id": "c",
+     "text": "Onze irmãos"
+    },
+    {
+     "id": "d",
+     "text": "Doze irmãos"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Gênesis 42:6 na ordem do texto.",
+   "verseRef": "Gênesis 42:6",
+   "evidenceSpan": "ele era quem vendia a todos os povos do país",
+   "feedbackCorrect": "José governa e vende mantimento, e então seus irmãos chegam e se prostram.",
+   "feedbackWrong": {
+    "default": "Comece pelo cargo de José na terra."
+   },
+   "hint": "O governo dele abre o versículo.",
+   "learningObjective": "Reconhecer a sequência de Gênesis 42:6.",
+   "evidence": [
+    "Gênesis 42:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "José, portanto, era o governador daquela terra"
+    },
+    {
+     "id": "b",
+     "text": "ele era quem vendia a todos os povos do país"
+    },
+    {
+     "id": "c",
+     "text": "e os irmãos de José vieram e se prostraram diante dele"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Gênesis 42:9, de que José acusa os irmãos ao falar com dureza?",
+   "verseRef": "Gênesis 42:9",
+   "evidenceSpan": "Vocês são espiões e vieram para examinar os pontos fracos da terra",
+   "feedbackCorrect": "José acusa os irmãos de serem espiões vindos para examinar a terra.",
+   "feedbackWrong": {
+    "b": "Ladrões não é a acusação que ele faz ao recebê-los.",
+    "c": "Pastores é a ocupação da família, não a acusação dele."
+   },
+   "hint": "Veja a acusação que abre a prova.",
+   "learningObjective": "Lembrar a acusação de José aos irmãos.",
+   "evidence": [
+    "Gênesis 42:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "espiões"
+    },
+    {
+     "id": "b",
+     "text": "ladrões"
+    },
+    {
+     "id": "c",
+     "text": "pastores"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Gênesis 42:9 comunica que se liga a este contexto?",
+   "verseRef": "Gênesis 42:9",
+   "evidenceSpan": "José se lembrou dos sonhos que tivera a respeito deles",
+   "feedbackCorrect": "Ao vê-los prostrados, José se lembra dos sonhos que tivera sobre eles.",
+   "feedbackWrong": {
+    "b": "A lembrança dos sonhos mostra que ele não esqueceu.",
+    "c": "Eles justamente não o reconhecem como governador."
+   },
+   "hint": "Veja a lembrança que o gesto desperta.",
+   "learningObjective": "Ligar a prostração à lembrança dos sonhos.",
+   "evidence": [
+    "Gênesis 42:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "José lembra dos sonhos antigos"
+    },
+    {
+     "id": "b",
+     "text": "José esquece o que lhe fizeram"
+    },
+    {
+     "id": "c",
+     "text": "Os irmãos reconhecem o governador"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 42:9"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Os irmãos se prostram diante de José sem saber quem ele é."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Gênesis 42 os irmãos se dizem culpados pelo que fizeram com o irmão José",
+   "verseRef": "Gênesis 42:21",
+   "evidenceSpan": "somos culpados a respeito de nosso irmão, pois vimos a angústia de sua alma",
+   "feedbackCorrect": "Diante da exigência de José, eles confessam culpa por não terem atendido o irmão.",
+   "feedbackWrong": {
+    "false": "Releia a confissão que fazem entre si."
+   },
+   "hint": "Veja a ligação que eles mesmos fazem.",
+   "learningObjective": "Compreender a confissão dos irmãos.",
+   "evidence": [
+    "Gênesis 42:21"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Gênesis 42:21, toque a palavra que liga o sofrimento deles à culpa antiga.",
+   "verseRef": "Gênesis 42:21",
+   "evidenceSpan": "Na verdade, somos culpados a respeito de nosso irmão",
+   "feedbackCorrect": "Eles se declaram culpados pelo que fizeram ao irmão que rogava por socorro.",
+   "feedbackWrong": {
+    "b": "Angústia é o que viram na alma dele, não a declaração sobre si.",
+    "c": "Irmão é a vítima, não como eles se declaram."
+   },
+   "hint": "Procure como eles se avaliam.",
+   "learningObjective": "Reconhecer a confissão de culpa dos irmãos.",
+   "evidence": [
+    "Gênesis 42:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "culpados"
+    },
+    {
+     "id": "b",
+     "text": "angústia"
+    },
+    {
+     "id": "c",
+     "text": "irmão"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como José prova se os irmãos estão dizendo a verdade sobre sua família?",
+   "verseRef": "Gênesis 42:15",
+   "evidenceSpan": "vocês não sairão daqui até que seu irmão mais novo chegue",
+   "feedbackCorrect": "José detém os irmãos e exige Benjamim para provar a verdade do que dizem.",
+   "feedbackWrong": {
+    "b": "Nenhuma escolta até Canaã é enviada nesta prova.",
+    "c": "Saber o nome do pai não é a prova que ele estabelece.",
+    "d": "Há prisão e condição clara antes de qualquer soltura."
+   },
+   "hint": "Veja a condição que José impõe.",
+   "learningObjective": "Compreender a prova estabelecida por José.",
+   "evidence": [
+    "Gênesis 42:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele exige que tragam o irmão mais novo"
+    },
+    {
+     "id": "b",
+     "text": "Ele manda seguir os irmãos até Canaã"
+    },
+    {
+     "id": "c",
+     "text": "Ele pergunta o nome do pai deles"
+    },
+    {
+     "id": "d",
+     "text": "Ele solta todos sem nenhuma condição"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o encontro em Gênesis 42:6–21?",
+   "verseRef": "Gênesis 42:7",
+   "evidenceSpan": "José, ao ver seus irmãos, os reconheceu",
+   "feedbackCorrect": "Da prostração sem reconhecimento à prova de José e à confissão de culpa deles.",
+   "feedbackWrong": {
+    "default": "Comece pelo gesto dos irmãos ao chegar."
+   },
+   "hint": "A prostração abre o encontro.",
+   "learningObjective": "Compreender o encadeamento do reencontro.",
+   "evidence": [
+    "Gênesis 42:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Os irmãos se prostram sem reconhecer José"
+    },
+    {
+     "id": "b",
+     "text": "Ele os acusa e exige o irmão mais novo"
+    },
+    {
+     "id": "c",
+     "text": "Eles confessam a culpa pelo irmão vendido"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Gênesis 42:24, qual irmão José toma e algema diante dos outros?",
+   "verseRef": "Gênesis 42:24",
+   "evidenceSpan": "tomou a Simeão dentre eles e o algemou diante deles",
+   "feedbackCorrect": "José toma Simeão e o algema diante dos irmãos antes de eles voltarem a Canaã.",
+   "feedbackWrong": {
+    "a": "Benjamim nem viajou com eles nesta primeira descida.",
+    "c": "Rúben fala na confissão, mas quem fica algemado é outro."
+   },
+   "hint": "Veja quem fica preso no Egito.",
+   "learningObjective": "Compreender quem garante o retorno deles.",
+   "evidence": [
+    "Gênesis 42:24"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Benjamim"
+    },
+    {
+     "id": "b",
+     "text": "Simeão"
+    },
+    {
+     "id": "c",
+     "text": "Rúben"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Gênesis 42:21 a Gênesis 45:5?",
+   "verseRef": "Gênesis 42:21",
+   "evidenceSpan": "somos culpados a respeito de nosso irmão",
+   "feedbackCorrect": "A culpa confessada aqui será respondida por José com preservação e perdão em 45.",
+   "feedbackWrong": {
+    "b": "A confissão deste capítulo é justamente uma admissão de culpa.",
+    "c": "Ele mesmo trará o passado à tona ao se revelar."
+   },
+   "hint": "Compare a culpa aqui com a resposta futura.",
+   "learningObjective": "Relacionar a confissão à futura revelação de José.",
+   "evidence": [
+    "Gênesis 42:21",
+    "Gênesis 45:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Culpa antiga encontra perdão adiante"
+    },
+    {
+     "id": "b",
+     "text": "Os irmãos nunca admitem culpa"
+    },
+    {
+     "id": "c",
+     "text": "José nunca fala do passado"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 42:21"
+   },
+   "passageB": {
+    "ref": "Gênesis 45:5"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Gênesis 42 mostra José totalmente indiferente ao ouvir a confissão dos irmãos",
+   "verseRef": "Gênesis 42:24",
+   "evidenceSpan": "E afastou-se deles e chorou",
+   "feedbackCorrect": "Ao ouvir a confissão, José se afasta e chora antes de voltar a falar com eles.",
+   "feedbackWrong": {
+    "true": "Releia a reação de José à confissão."
+   },
+   "hint": "Veja o que ele faz ao se afastar.",
+   "learningObjective": "Interpretar a emoção de José na prova.",
+   "evidence": [
+    "Gênesis 42:24"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Gênesis 42:24, toque o que José faz ao se afastar dos irmãos que confessam.",
+   "verseRef": "Gênesis 42:24",
+   "evidenceSpan": "E afastou-se deles e chorou; depois voltou e lhes falou",
+   "feedbackCorrect": "José se afasta e chora ao ouvir os irmãos confessarem a culpa antiga.",
+   "feedbackWrong": {
+    "b": "Falar é o que ele faz depois de voltar, não ao se afastar.",
+    "c": "Algemar Simeão vem depois do choro escondido."
+   },
+   "hint": "Procure a reação escondida dele.",
+   "learningObjective": "Sustentar a emoção de José diante da confissão.",
+   "evidence": [
+    "Gênesis 42:24"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "chorou"
+    },
+    {
+     "id": "b",
+     "text": "falou"
+    },
+    {
+     "id": "c",
+     "text": "algemou"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Gênesis 42 sustenta sobre José ao soltar parte dos irmãos?",
+   "verseRef": "Gênesis 42:18",
+   "evidenceSpan": "Façam o seguinte e viverão, pois temo a Deus",
+   "feedbackCorrect": "José declara temer a Deus ao mudar a prisão e manter a prova sobre Benjamim.",
+   "feedbackWrong": {
+    "b": "Ele lembra dos sonhos e da angústia, sem esquecer o passado.",
+    "c": "O temor citado é a Deus, não a Faraó nesta fala.",
+    "d": "Ele mantém a exigência de trazer Benjamim a ele."
+   },
+   "hint": "Veja a razão que o próprio José declara.",
+   "learningObjective": "Escolher a interpretação sustentada sobre José.",
+   "evidence": [
+    "Gênesis 42:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele os prova sem deixar de temer a Deus"
+    },
+    {
+     "id": "b",
+     "text": "Ele os solta por esquecer o passado"
+    },
+    {
+     "id": "c",
+     "text": "Ele teme que Faraó descubra tudo"
+    },
+    {
+     "id": "d",
+     "text": "Ele desiste de ver Benjamim um dia"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o que José procura nos irmãos?",
+   "verseRef": "Gênesis 42:21",
+   "evidenceSpan": "pois vimos a angústia de sua alma quando nos rogava, e não o atendemos",
+   "feedbackCorrect": "José ouve os irmãos encararem o passado que ele mesmo viveu na cisterna.",
+   "feedbackWrong": {
+    "default": "Comece pelo ato antigo contra José."
+   },
+   "hint": "A venda antiga é a base da sequência.",
+   "learningObjective": "Ver a prova como caminho de verdade.",
+   "evidence": [
+    "Gênesis 42:21",
+    "Gênesis 45:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Eles vendem o irmão que rogava por socorro"
+    },
+    {
+     "id": "b",
+     "text": "Anos depois confessam a culpa diante dele"
+    },
+    {
+     "id": "c",
+     "text": "José ouve escondido e se afasta chorando"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Gênesis 42:28, o que os irmãos perguntam ao ver o dinheiro devolvido no saco?",
+   "verseRef": "Gênesis 42:28",
+   "evidenceSpan": "O que é isso que Deus nos fez",
+   "feedbackCorrect": "Ao ver o dinheiro devolvido, eles temem e perguntam o que Deus lhes fez.",
+   "feedbackWrong": {
+    "b": "Faraó nem aparece nesta conversa entre os irmãos.",
+    "c": "José no Egito é chamado por eles de senhor da terra."
+   },
+   "hint": "Veja a quem eles atribuem o acontecido.",
+   "learningObjective": "Lembrar a reação de temor dos irmãos.",
+   "evidence": [
+    "Gênesis 42:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "Faraó"
+    },
+    {
+     "id": "c",
+     "text": "José"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Gênesis 42:6 a Atos 7:13?",
+   "verseRef": "Gênesis 42:6",
+   "evidenceSpan": "se prostraram diante dele, com o rosto em terra",
+   "feedbackCorrect": "Estevão lembra que só na segunda vez José se fez reconhecer pelos irmãos.",
+   "feedbackWrong": {
+    "b": "Na primeira viagem eles o tratam sem saber quem ele é.",
+    "c": "A família se reúne no Egito após a revelação."
+   },
+   "hint": "Veja quando o reconhecimento acontece.",
+   "learningObjective": "Ligar a primeira viagem ao reconhecimento posterior.",
+   "evidence": [
+    "Gênesis 42:6",
+    "Atos 7:13"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "José reconhecido pelos irmãos depois"
+    },
+    {
+     "id": "b",
+     "text": "Irmãos reconhecem José de imediato"
+    },
+    {
+     "id": "c",
+     "text": "Família nunca mais se reúne"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 42:6"
+   },
+   "passageB": {
+    "ref": "Atos 7:13"
+   }
+  }
+ ]
+}

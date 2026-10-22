@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Gênesis 21:1–2",
+  "passages": [
+   {
+    "ref": "Gênesis 21:1–2"
+   },
+   {
+    "ref": "Gênesis 21:3–6"
+   },
+   {
+    "ref": "Gênesis 21:12–13"
+   }
+  ],
+  "context": "Depois de anos de espera, o Senhor visita Sara como havia prometido e Isaque nasce no tempo que Deus estabeleceu, quando Abraão tem cem anos.",
+  "keyword": "Isaque",
+  "keywordGloss": "O filho da promessa, nascido de Sara no tempo que Deus havia estabelecido.",
+  "focusQuestion": "Qual promessa de Deus você já viu se cumprir no tempo dele?",
+  "reflectionPrompts": [
+   "Deus cumpre no tempo certo",
+   "Rir de alegria depois da espera",
+   "Confiar na palavra prometida"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor visita Sara como havia prometido.",
+    "evidenceRef": "Gênesis 21:1",
+    "evidenceSpan": "o Senhor visitou Sara, como havia prometido"
+   },
+   {
+    "text": "Sara dá à luz um filho no tempo que Deus estabeleceu.",
+    "evidenceRef": "Gênesis 21:2",
+    "evidenceSpan": "no tempo que Deus havia estabelecido"
+   },
+   {
+    "text": "Abraão põe o nome de Isaque ao filho de Sara.",
+    "evidenceRef": "Gênesis 21:3",
+    "evidenceSpan": "Abraão pôs o nome de Isaque ao filho"
+   },
+   {
+    "text": "Abraão tinha cem anos quando Isaque nasceu.",
+    "evidenceRef": "Gênesis 21:5",
+    "evidenceSpan": "Abraão contava cem anos quando Isaque, seu filho, nasceu"
+   },
+   {
+    "text": "Sara diz que Deus lhe deu motivo para rir.",
+    "evidenceRef": "Gênesis 21:6",
+    "evidenceSpan": "Deus me deu motivo para rir"
+   },
+   {
+    "text": "Deus diz que em Isaque será chamada a descendência de Abraão.",
+    "evidenceRef": "Gênesis 21:12",
+    "evidenceSpan": "em Isaque será chamada a tua descendência"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "visitou",
+    "gloss": "Deus age em favor de Sara exatamente como havia prometido antes."
+   },
+   {
+    "term": "prometido",
+    "gloss": "Aquilo que Deus disse e cumpre no tempo que ele estabeleceu."
+   },
+   {
+    "term": "descendência",
+    "gloss": "A linhagem da promessa, que Deus liga ao nome de Isaque."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus visita Sara como prometeu",
+    "evidenceRef": "Gênesis 21:1"
+   },
+   {
+    "label": "Isaque nasce no tempo de Deus",
+    "evidenceRef": "Gênesis 21:2"
+   },
+   {
+    "label": "Abraão obedece quanto ao nome e à circuncisão",
+    "evidenceRef": "Gênesis 21:3–4"
+   },
+   {
+    "label": "Sara ri de alegria pelo filho",
+    "evidenceRef": "Gênesis 21:6"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Sara concebe e dá à luz no tempo que Deus havia estabelecido, não antes.",
+    "marker": "no tempo",
+    "evidenceRef": "Gênesis 21:2"
+   },
+   {
+    "kind": "resultado",
+    "text": "O nascimento esperado por anos faz Sara dizer que Deus lhe deu motivo para rir.",
+    "marker": "rir",
+    "evidenceRef": "Gênesis 21:6"
+   },
+   {
+    "kind": "propósito",
+    "text": "Deus manda ouvir Sara porque em Isaque será chamada a descendência.",
+    "marker": "porque",
+    "evidenceRef": "Gênesis 21:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 11:11",
+    "bridge": "Sara recebe forças pela fé"
+   },
+   {
+    "ref": "Romanos 4:19",
+    "bridge": "Não enfraqueceu na fé"
+   },
+   {
+    "ref": "Gálatas 4:28",
+    "bridge": "Filhos da promessa como Isaque"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Isaque nasceu quando Abraão e Sara ainda eram jovens e fortes.",
+    "why": "Abraão tinha cem anos e o texto destaca a velhice dos dois."
+   },
+   {
+    "text": "O nascimento de Isaque foi um acaso sem relação com a promessa.",
+    "why": "O texto diz que o Senhor visitou Sara como havia prometido."
+   },
+   {
+    "text": "A promessa seguiria por Ismael em vez de Isaque.",
+    "why": "Deus diz a Abraão que em Isaque será chamada a sua descendência."
+   }
+  ],
+  "centralInsight": "Deus cumpre a promessa no seu tempo e Isaque nasce de Sara",
+  "anchorQuestion": "Como o nascimento de Isaque mostra Deus cumprindo o que prometeu?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Gênesis 21 o Senhor visita Sara exatamente como havia prometido a ela",
+   "verseRef": "Gênesis 21:1",
+   "evidenceSpan": "o Senhor visitou Sara, como havia prometido",
+   "feedbackCorrect": "O nascimento de Isaque é apresentado como cumprimento direto do que Deus prometeu.",
+   "feedbackWrong": {
+    "false": "Releia como o capítulo abre o nascimento."
+   },
+   "hint": "Veja a ligação com a promessa antiga.",
+   "learningObjective": "Observar o cumprimento da promessa a Sara.",
+   "evidence": [
+    "Gênesis 21:1"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Gênesis 21:3, toque o nome que Abraão dá ao filho de Sara.",
+   "verseRef": "Gênesis 21:3",
+   "evidenceSpan": "Abraão pôs o nome de Isaque ao filho",
+   "feedbackCorrect": "Abraão chama de Isaque o filho que Sara lhe deu à luz.",
+   "feedbackWrong": {
+    "b": "Filho é a relação dele com Abraão, não o nome próprio.",
+    "c": "Luz faz parte de dar à luz, não é o nome do menino."
+   },
+   "hint": "Procure o nome próprio do menino.",
+   "learningObjective": "Identificar o nome do filho da promessa.",
+   "evidence": [
+    "Gênesis 21:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Isaque"
+    },
+    {
+     "id": "b",
+     "text": "filho"
+    },
+    {
+     "id": "c",
+     "text": "luz"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Gênesis 21:5, quantos anos Abraão tinha quando Isaque nasceu?",
+   "verseRef": "Gênesis 21:5",
+   "evidenceSpan": "Abraão contava cem anos quando Isaque, seu filho, nasceu",
+   "feedbackCorrect": "Isaque nasce quando Abraão já conta cem anos de idade.",
+   "feedbackWrong": {
+    "a": "Setenta e cinco era a idade de Abraão ao sair de Harã.",
+    "b": "Oitenta e seis era a idade dele no nascimento de Ismael.",
+    "c": "Noventa e nove era a idade dele na renovação da aliança."
+   },
+   "hint": "Leia a idade registrada no nascimento.",
+   "learningObjective": "Observar a idade de Abraão no cumprimento.",
+   "evidence": [
+    "Gênesis 21:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Setenta e cinco anos"
+    },
+    {
+     "id": "b",
+     "text": "Oitenta e seis anos"
+    },
+    {
+     "id": "c",
+     "text": "Noventa e nove anos"
+    },
+    {
+     "id": "d",
+     "text": "Cem anos"
+    }
+   ],
+   "correctOptionId": "d"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Gênesis 21:2 na ordem do texto.",
+   "verseRef": "Gênesis 21:2",
+   "evidenceSpan": "no tempo que Deus havia estabelecido",
+   "feedbackCorrect": "Sara concebe na velhice e o filho nasce no tempo que Deus estabeleceu.",
+   "feedbackWrong": {
+    "default": "Comece pelo nascimento do filho."
+   },
+   "hint": "O nascimento abre o versículo.",
+   "learningObjective": "Reconhecer a sequência de Gênesis 21:2.",
+   "evidence": [
+    "Gênesis 21:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "E Sara concebeu e deu à luz um filho a Abraão"
+    },
+    {
+     "id": "b",
+     "text": "na sua velhice"
+    },
+    {
+     "id": "c",
+     "text": "no tempo que Deus havia estabelecido"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Gênesis 21:6, o que Sara diz que Deus lhe deu motivo para fazer?",
+   "verseRef": "Gênesis 21:6",
+   "evidenceSpan": "Deus me deu motivo para rir",
+   "feedbackCorrect": "Depois da longa espera, Sara ri de alegria pelo filho que Deus lhe deu.",
+   "feedbackWrong": {
+    "a": "O choro marcou outros momentos; aqui o sentimento é de alegria.",
+    "c": "Sara não foge; ela celebra o filho que nasceu."
+   },
+   "hint": "Veja a reação de Sara ao nascimento.",
+   "learningObjective": "Lembrar a reação de alegria de Sara.",
+   "evidence": [
+    "Gênesis 21:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "chorar"
+    },
+    {
+     "id": "b",
+     "text": "rir"
+    },
+    {
+     "id": "c",
+     "text": "fugir"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Gênesis 21:1 comunica que se liga a este contexto?",
+   "verseRef": "Gênesis 21:1",
+   "evidenceSpan": "como havia prometido, e realizou com ela o que havia dito",
+   "feedbackCorrect": "O Senhor visita Sara e realiza exatamente o que havia dito antes.",
+   "feedbackWrong": {
+    "b": "A promessa é cumprida, não trocada por outra neste capítulo.",
+    "c": "Sara recebe o cumprimento e ri de alegria."
+   },
+   "hint": "Veja a comparação com o que foi dito antes.",
+   "learningObjective": "Ligar o nascimento ao cumprimento da promessa.",
+   "evidence": [
+    "Gênesis 21:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus cumpre o que prometeu"
+    },
+    {
+     "id": "b",
+     "text": "Deus muda a promessa antiga"
+    },
+    {
+     "id": "c",
+     "text": "Sara dispensa a promessa"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 21:1"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Anos antes, Deus prometeu um filho a Abraão e Sara já idosos."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Gênesis 21 Isaque nasce antes do tempo que Deus havia estabelecido para Sara",
+   "verseRef": "Gênesis 21:2",
+   "evidenceSpan": "no tempo que Deus havia estabelecido",
+   "feedbackCorrect": "Isaque nasce exatamente no tempo que Deus estabeleceu, nem antes nem por acaso.",
+   "feedbackWrong": {
+    "true": "Releia quando o nascimento acontece."
+   },
+   "hint": "Veja o tempo citado no versículo.",
+   "learningObjective": "Compreender o tempo do cumprimento.",
+   "evidence": [
+    "Gênesis 21:2"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Gênesis 21:1, toque a palavra que liga o nascimento ao que Deus dissera antes.",
+   "verseRef": "Gênesis 21:1",
+   "evidenceSpan": "como havia prometido",
+   "feedbackCorrect": "Essa palavra compara o que Deus faz agora com o que ele havia prometido antes.",
+   "feedbackWrong": {
+    "a": "Sara é quem é visitada, não a palavra de ligação.",
+    "c": "Dito é o que Deus realiza, não a palavra de comparação."
+   },
+   "hint": "Procure a palavra de comparação no versículo.",
+   "learningObjective": "Reconhecer a ligação entre promessa e cumprimento.",
+   "evidence": [
+    "Gênesis 21:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sara"
+    },
+    {
+     "id": "b",
+     "text": "como"
+    },
+    {
+     "id": "c",
+     "text": "dito"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o nascimento de Isaque se relaciona com a promessa antiga?",
+   "verseRef": "Gênesis 21:2",
+   "evidenceSpan": "no tempo que Deus havia estabelecido",
+   "feedbackCorrect": "Deus visita Sara, cumpre o que disse e o filho nasce no tempo estabelecido.",
+   "feedbackWrong": {
+    "b": "O texto insiste que Deus realizou o que havia dito antes.",
+    "c": "A promessa é a mesma, agora cumprida no nascimento de Isaque.",
+    "d": "Sara é idosa; o destaque é o tempo e a ação de Deus."
+   },
+   "hint": "Compare os dois versículos sobre promessa e tempo.",
+   "learningObjective": "Compreender o nascimento como cumprimento.",
+   "evidence": [
+    "Gênesis 21:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cumpre no tempo de Deus o que foi dito"
+    },
+    {
+     "id": "b",
+     "text": "Acontece sem nenhuma palavra anterior"
+    },
+    {
+     "id": "c",
+     "text": "Substitui a promessa por outra melhor"
+    },
+    {
+     "id": "d",
+     "text": "Depende da força jovem de Sara"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o cumprimento em Gênesis 21:1–6?",
+   "verseRef": "Gênesis 21:1–2",
+   "evidenceSpan": "o Senhor visitou Sara, como havia prometido",
+   "feedbackCorrect": "A visita prometida gera o nascimento no tempo certo e a alegria de Sara.",
+   "feedbackWrong": {
+    "default": "Comece pela ação de Deus em favor de Sara."
+   },
+   "hint": "A visita de Deus abre a sequência.",
+   "learningObjective": "Compreender a progressão do cumprimento.",
+   "evidence": [
+    "Gênesis 21:1–2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus visita Sara como prometeu"
+    },
+    {
+     "id": "b",
+     "text": "Isaque nasce no tempo estabelecido"
+    },
+    {
+     "id": "c",
+     "text": "Sara ri de alegria pelo filho"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Gênesis 21:4, com quantos dias Isaque foi circuncidado por Abraão?",
+   "verseRef": "Gênesis 21:4",
+   "evidenceSpan": "quando ele tinha oito dias, conforme Deus lhe havia ordenado",
+   "feedbackCorrect": "Isaque é circuncidado com oito dias, conforme Deus havia ordenado a Abraão.",
+   "feedbackWrong": {
+    "b": "O texto registra um dia a mais que sete para a circuncisão.",
+    "c": "Dez passa em dois dias o tempo registrado no texto."
+   },
+   "hint": "Veja a idade em dias do menino.",
+   "learningObjective": "Compreender a obediência de Abraão quanto a Isaque.",
+   "evidence": [
+    "Gênesis 21:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "oito"
+    },
+    {
+     "id": "b",
+     "text": "sete"
+    },
+    {
+     "id": "c",
+     "text": "dez"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Gênesis 21:2 a Hebreus 11:11?",
+   "verseRef": "Gênesis 21:2",
+   "evidenceSpan": "no tempo que Deus havia estabelecido",
+   "feedbackCorrect": "Hebreus lembra que pela fé Sara recebeu poder para conceber o filho prometido.",
+   "feedbackWrong": {
+    "b": "O filho nasce dentro da promessa anunciada por Deus.",
+    "c": "O texto destaca a velhice, não a força jovem de Sara."
+   },
+   "hint": "Veja como Hebreus olha para Sara.",
+   "learningObjective": "Relacionar o nascimento de Isaque à fé de Sara.",
+   "evidence": [
+    "Gênesis 21:2",
+    "Hebreus 11:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Fé que recebe o cumprimento"
+    },
+    {
+     "id": "b",
+     "text": "Um filho fora da promessa"
+    },
+    {
+     "id": "c",
+     "text": "Sara jovem e cheia de força"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 21:2"
+   },
+   "passageB": {
+    "ref": "Hebreus 11:11"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Gênesis 21 mostra que o cumprimento de Deus chega sem gerar alegria em Sara",
+   "verseRef": "Gênesis 21:6",
+   "evidenceSpan": "Deus me deu motivo para rir",
+   "feedbackCorrect": "O filho esperado por anos faz Sara rir de alegria e convidar outros a rir com ela.",
+   "feedbackWrong": {
+    "true": "Releia a reação de Sara ao filho nascido."
+   },
+   "hint": "Veja o sentimento que o cumprimento gera.",
+   "learningObjective": "Interpretar a alegria no cumprimento de Deus.",
+   "evidence": [
+    "Gênesis 21:6"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Gênesis 21:6, toque quem Sara diz que rirá com ela ao ouvir do filho.",
+   "verseRef": "Gênesis 21:6",
+   "evidenceSpan": "todo aquele que ouvir isso vai rir comigo",
+   "feedbackCorrect": "Quem ouvir do nascimento rirá com Sara, de tão surpreendente que é o cumprimento.",
+   "feedbackWrong": {
+    "b": "Isso é o que Deus deu a Sara, não quem rirá com ela.",
+    "c": "Isso é quem age em favor de Sara, não quem ri com ela."
+   },
+   "hint": "Procure quem ouve a notícia e ri junto.",
+   "learningObjective": "Sustentar a alegria compartilhada do cumprimento.",
+   "evidence": [
+    "Gênesis 21:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "todo aquele"
+    },
+    {
+     "id": "b",
+     "text": "motivo para rir"
+    },
+    {
+     "id": "c",
+     "text": "Deus me deu"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Gênesis 21 sustenta sobre a espera de Abraão e Sara?",
+   "verseRef": "Gênesis 21:1",
+   "evidenceSpan": "o Senhor visitou Sara, como havia prometido",
+   "feedbackCorrect": "A espera termina porque Deus visita Sara e cumpre, no seu tempo, o que prometeu.",
+   "feedbackWrong": {
+    "b": "O capítulo abre justamente mostrando Deus cumprindo a promessa.",
+    "c": "O texto destaca a velhice e o tempo de Deus, não a força do casal.",
+    "d": "A promessa antiga é cumprida no nascimento de Isaque."
+   },
+   "hint": "Veja como o capítulo liga promessa e tempo.",
+   "learningObjective": "Escolher a interpretação sustentada sobre a espera.",
+   "evidence": [
+    "Gênesis 21:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus cumpre no tempo que ele estabeleceu"
+    },
+    {
+     "id": "b",
+     "text": "A espera prova que Deus esqueceu"
+    },
+    {
+     "id": "c",
+     "text": "O filho nasce pela força do casal idoso"
+    },
+    {
+     "id": "d",
+     "text": "A promessa antiga foi abandonada"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio da promessa até Isaque?",
+   "verseRef": "Gênesis 21:1",
+   "evidenceSpan": "como havia prometido, e realizou com ela o que havia dito",
+   "feedbackCorrect": "A promessa anunciada se cumpre em Isaque, por quem a descendência é chamada.",
+   "feedbackWrong": {
+    "default": "Comece pelo que Deus disse antes do nascimento."
+   },
+   "hint": "A promessa é o ponto de partida.",
+   "learningObjective": "Ver Isaque como cumprimento e continuidade da promessa.",
+   "evidence": [
+    "Gênesis 21:1",
+    "Gênesis 21:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus promete um filho a Sara"
+    },
+    {
+     "id": "b",
+     "text": "O filho nasce no tempo de Deus"
+    },
+    {
+     "id": "c",
+     "text": "A descendência segue pelo nome de Isaque"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Gênesis 21:1, o que o Senhor fez com Sara como havia prometido?",
+   "verseRef": "Gênesis 21:1",
+   "evidenceSpan": "o Senhor visitou Sara",
+   "feedbackCorrect": "O Senhor visita Sara em cumprimento direto do que havia prometido antes.",
+   "feedbackWrong": {
+    "b": "O capítulo mostra o contrário de esquecer, Deus cumpre a promessa.",
+    "c": "Não há novo adiamento; o filho nasce neste capítulo."
+   },
+   "hint": "Veja o verbo que abre o capítulo.",
+   "learningObjective": "Lembrar o termo do cumprimento a Sara.",
+   "evidence": [
+    "Gênesis 21:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "visitou"
+    },
+    {
+     "id": "b",
+     "text": "esqueceu"
+    },
+    {
+     "id": "c",
+     "text": "adiou"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Gênesis 21:12 a Gálatas 4:28?",
+   "verseRef": "Gênesis 21:12",
+   "evidenceSpan": "em Isaque será chamada a tua descendência",
+   "feedbackCorrect": "Paulo chama os crentes de filhos da promessa, como Isaque foi filho da promessa.",
+   "feedbackWrong": {
+    "b": "Isaque é justamente o filho nascido pela promessa de Deus.",
+    "c": "Deus mantém a descendência ligada ao nome de Isaque."
+   },
+   "hint": "Veja como Paulo usa a figura de Isaque.",
+   "learningObjective": "Ligar Isaque aos filhos da promessa em Paulo.",
+   "evidence": [
+    "Gênesis 21:12",
+    "Gálatas 4:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Filhos nascidos pela promessa"
+    },
+    {
+     "id": "b",
+     "text": "Descendência fora da promessa"
+    },
+    {
+     "id": "c",
+     "text": "Isaque trocado por Ismael"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Gênesis 21:12"
+   },
+   "passageB": {
+    "ref": "Gálatas 4:28"
+   }
+  }
+ ]
+}

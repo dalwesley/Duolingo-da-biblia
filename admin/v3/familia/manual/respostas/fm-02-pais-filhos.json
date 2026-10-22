@@ -1,0 +1,231 @@
+{
+ "study": {
+  "passageRef": "Efésios 6:1–4",
+  "passages": [{"ref": "Efésios 6:1–4"}],
+  "context": "Depois de falar do casamento, Paulo se dirige a filhos e pais. Filhos são chamados a honrar, e pais a criar os filhos no Senhor sem provocá-los.",
+  "keyword": "Honra",
+  "keywordGloss": "Honrar pai e mãe é o mandamento lembrado por Paulo, ligado a uma promessa.",
+  "focusQuestion": "Como você pode honrar em casa sem deixar de criar com firmeza e sem provocar?",
+  "reflectionPrompts": ["Honrar pai e mãe", "Criar sem provocar", "Instrução do Senhor"],
+  "facts": [
+   {"text": "Filhos devem obedecer aos pais no Senhor, pois isso é justo.", "evidenceRef": "Efésios 6:1", "evidenceSpan": "Filhos, obedeçam a seus pais no Senhor"},
+   {"text": "Honrar pai e mãe é o primeiro mandamento com promessa.", "evidenceRef": "Efésios 6:2", "evidenceSpan": "que é o primeiro mandamento com promessa"},
+   {"text": "A promessa fala de ir bem e ter vida longa sobre a terra.", "evidenceRef": "Efésios 6:3", "evidenceSpan": "tenhas uma vida longa sobre a terra"},
+   {"text": "Pais não devem provocar os filhos à ira.", "evidenceRef": "Efésios 6:4", "evidenceSpan": "não provoquem seus filhos à ira"},
+   {"text": "Pais devem criar os filhos na disciplina do Senhor.", "evidenceRef": "Efésios 6:4", "evidenceSpan": "criem-nos na disciplina e na admoestação do Senhor"}
+  ],
+  "keyTerms": [
+   {"term": "Honra", "gloss": "Valorizar pai e mãe, como manda o mandamento lembrado por Paulo."},
+   {"term": "disciplina", "gloss": "Formação firme dos filhos, dentro da instrução do Senhor."},
+   {"term": "admoestação", "gloss": "Correção que orienta os filhos segundo o Senhor."}
+  ],
+  "structure": [
+   {"label": "Filhos obedecem no Senhor", "evidenceRef": "Efésios 6:1"},
+   {"label": "Honra ligada a uma promessa", "evidenceRef": "Efésios 6:2–3"},
+   {"label": "Pais não provocam os filhos", "evidenceRef": "Efésios 6:4"},
+   {"label": "Pais criam na instrução do Senhor", "evidenceRef": "Efésios 6:4"}
+  ],
+  "relations": [
+   {"kind": "causa", "text": "Filhos obedecem porque isso é justo diante do Senhor.", "marker": "pois", "evidenceRef": "Efésios 6:1"},
+   {"kind": "propósito", "text": "A honra está ligada à promessa de ir bem e viver sobre a terra.", "marker": "para", "evidenceRef": "Efésios 6:3"},
+   {"kind": "contraste", "text": "Pais não provocam os filhos; em vez disso, criam-nos no Senhor.", "marker": "mas", "evidenceRef": "Efésios 6:4"}
+  ],
+  "crossRefs": [
+   {"ref": "Êxodo 20:12", "bridge": "Honrar pai e mãe"},
+   {"ref": "Colossenses 3:21", "bridge": "Pais não irritem os filhos"},
+   {"ref": "Deuteronômio 6:7", "bridge": "Ensinar os filhos no caminho"}
+  ],
+  "misreadings": [
+   {"text": "Honrar os pais significa concordar com tudo sem nunca conversar.", "why": "O texto chama filhos a obedecer no Senhor e honrar, sem apagar o diálogo em família (6:1-2)."},
+   {"text": "A promessa de vida longa é uma garantia matemática sem exceções.", "why": "Paulo cita a promessa do mandamento; o texto não a transforma em fórmula para cobrar de Deus (6:2-3)."},
+   {"text": "Disciplina autoriza os pais a provocar ou tratar com dureza.", "why": "O mesmo versículo manda não provocar os filhos e criá-los no Senhor (6:4)."}
+  ],
+  "centralInsight": "Filhos honram os pais, e pais criam sem provocar, na instrução do Senhor",
+  "anchorQuestion": "Segundo Efésios 6:4, o que os pais não devem fazer com os filhos?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Efésios 6:4, os pais são orientados a provocar seus filhos à ira para ensiná-los.",
+   "verseRef": "Efésios 6:4", "correctOptionId": "false",
+   "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "O texto diz o contrário; pais não devem provocar os filhos à ira.",
+   "feedbackWrong": {"true": "Releia Efésios 6:4; há um não antes de provoquem."},
+   "hint": "Preste atenção na negação do versículo.", "learningObjective": "Observar que pais não devem provocar os filhos.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Efésios 6:2, toque como a honra a pai e mãe é descrita.",
+   "verseRef": "Efésios 6:2",
+   "options": [{"id": "a", "text": "teu pai"}, {"id": "b", "text": "tua mãe"}, {"id": "c", "text": "primeiro mandamento"}],
+   "correctOptionId": "c", "evidenceSpan": "que é o primeiro mandamento com promessa",
+   "feedbackCorrect": "Honrar pai e mãe é o primeiro mandamento com promessa, diz Paulo.",
+   "feedbackWrong": {"a": "Isso diz quem honrar, não como o mandamento é descrito.", "b": "Isso também diz quem honrar; a descrição vem depois."},
+   "hint": "Leia a segunda parte do versículo.", "learningObjective": "Identificar a honra como mandamento com promessa.", "evidence": ["Efésios 6:2"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Efésios 6:1, por que filhos devem obedecer aos pais no Senhor?",
+   "verseRef": "Efésios 6:1",
+   "options": [{"id": "a", "text": "Porque isso é justo"}, {"id": "b", "text": "Porque os pais nunca erram"}, {"id": "c", "text": "Para evitar qualquer conversa"}, {"id": "d", "text": "Só enquanto são bem pequenos"}],
+   "correctOptionId": "a", "evidenceSpan": "pois isso é justo",
+   "feedbackCorrect": "Paulo dá a razão no próprio versículo; obedecer no Senhor é justo.",
+   "feedbackWrong": {"b": "O texto não diz que pais nunca erram; diz que obedecer é justo.", "c": "Obedecer no Senhor não dispensa conversa em família.", "d": "O versículo não limita a obediência aos bem pequenos."},
+   "hint": "Leia a razão no fim do versículo.", "learningObjective": "Observar a razão da obediência dos filhos.", "evidence": ["Efésios 6:1"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Efésios 6:4 na ordem do texto.",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "E vocês, pais, não provoquem seus filhos à ira"}, {"id": "b", "text": "mas criem-nos na disciplina"}, {"id": "c", "text": "e na admoestação do Senhor"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "Primeiro o limite, não provocar; depois, criar na disciplina do Senhor.",
+   "feedbackWrong": {"default": "Comece pelo que os pais não devem fazer; o Senhor fecha o versículo."},
+   "hint": "O versículo começa falando aos pais.", "learningObjective": "Reconhecer a sequência de Efésios 6:4.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Efésios 6:1, obedecer aos pais no Senhor é descrito como o quê?",
+   "verseRef": "Efésios 6:1",
+   "options": [{"id": "a", "text": "justo"}, {"id": "b", "text": "injusto"}, {"id": "c", "text": "opcional"}],
+   "correctOptionId": "a", "evidenceSpan": "pois isso é justo",
+   "feedbackCorrect": "Obedecer aos pais no Senhor é justo, afirma o texto de Paulo.",
+   "feedbackWrong": {"b": "O texto afirma o contrário; isso é justo.", "c": "O versículo não trata a obediência como algo sem importância."},
+   "hint": "Leia a última palavra do versículo.", "learningObjective": "Lembrar que obedecer no Senhor é justo.", "evidence": ["Efésios 6:1"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Efésios 6:2 comunica que se liga a este contexto?",
+   "verseRef": "Efésios 6:2",
+   "passageA": {"ref": "Efésios 6:2"},
+   "passageB": {"ref": "Contexto", "text": "Em casa, honrar pai e mãe faz parte da vida com Deus."},
+   "options": [{"id": "a", "text": "Honrar pai e mãe"}, {"id": "b", "text": "Ignorar pai e mãe"}, {"id": "c", "text": "Viver longe dos pais"}],
+   "correctOptionId": "a", "evidenceSpan": "Honra teu pai e tua mãe",
+   "feedbackCorrect": "O mandamento de honrar pai e mãe atravessa a vida da família com Deus.",
+   "feedbackWrong": {"b": "Ignorar é o contrário de honrar pai e mãe.", "c": "O contexto fala de honra em casa, não de distância."},
+   "hint": "Veja o verbo que abre o mandamento.", "learningObjective": "Ligar Efésios 6:2 à honra aos pais em casa.", "evidence": ["Efésios 6:2"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Efésios 6:2, a honra aos pais aparece sem nenhuma promessa ligada a ela.",
+   "verseRef": "Efésios 6:2", "correctOptionId": "false",
+   "evidenceSpan": "que é o primeiro mandamento com promessa",
+   "feedbackCorrect": "Há uma promessa ligada; é o primeiro mandamento com promessa.",
+   "feedbackWrong": {"true": "Releia o fim de Efésios 6:2 e o versículo seguinte."},
+   "hint": "Leia Efésios 6:2 até o fim.", "learningObjective": "Compreender a promessa ligada à honra aos pais.", "evidence": ["Efésios 6:2"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Efésios 6:4, toque a palavra que vira o ensino de provocar para o de criar.",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "mas"}, {"id": "b", "text": "ira"}, {"id": "c", "text": "Senhor"}],
+   "correctOptionId": "a", "evidenceSpan": "mas criem-nos na disciplina",
+   "feedbackCorrect": "Depois do limite, o texto vira para o positivo; criar no Senhor.",
+   "feedbackWrong": {"b": "Isso é o que os pais não devem causar nos filhos.", "c": "Isso diz segundo quem criar, não a virada do ensino."},
+   "hint": "Procure uma palavra curta no meio do versículo.", "learningObjective": "Reconhecer a virada de Efésios 6:4.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Efésios 6:4 equilibra a autoridade dos pais sobre os filhos?",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "Proibir qualquer ensino firme em casa"}, {"id": "b", "text": "Mandar nos filhos sem nenhum limite"}, {"id": "c", "text": "Criar com firmeza sem provocar os filhos"}, {"id": "d", "text": "Deixar os filhos sem orientação alguma"}],
+   "correctOptionId": "c", "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "Firmeza e limite andam juntos; criar no Senhor sem provocar à ira.",
+   "feedbackWrong": {"a": "O texto manda criar na disciplina; não proíbe firmeza.", "b": "Há um limite claro; não provocar os filhos à ira.", "d": "Criar na disciplina é orientar, não abandonar os filhos."},
+   "hint": "Junte as duas metades do versículo.", "learningObjective": "Relacionar firmeza e não provocação em Efésios 6:4.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o ensino em Efésios 6:1–2?",
+   "verseRef": "Efésios 6:1–2",
+   "options": [{"id": "a", "text": "Filhos obedecem aos pais no Senhor"}, {"id": "b", "text": "Filhos honram pai e mãe"}, {"id": "c", "text": "Esse mandamento traz uma promessa"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Honra teu pai e tua mãe",
+   "feedbackCorrect": "Obediência, honra e promessa aparecem nessa ordem no texto.",
+   "feedbackWrong": {"default": "Comece pela obediência em 6:1; a promessa fecha o movimento."},
+   "hint": "A promessa é o ponto de chegada.", "learningObjective": "Compreender o encadeamento de Efésios 6:1–2.", "evidence": ["Efésios 6:1–2"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Efésios 6:3, como é descrita a vida prometida sobre a terra?",
+   "verseRef": "Efésios 6:3",
+   "options": [{"id": "a", "text": "longa"}, {"id": "b", "text": "curta"}, {"id": "c", "text": "fácil"}],
+   "correctOptionId": "a", "evidenceSpan": "tenhas uma vida longa sobre a terra",
+   "feedbackCorrect": "A promessa fala de ir bem e de vida longa sobre a terra.",
+   "feedbackWrong": {"b": "O texto fala do contrário; vida longa sobre a terra.", "c": "O texto não promete facilidade; fala de ir bem e viver."},
+   "hint": "Leia o adjetivo ligado à vida.", "learningObjective": "Compreender a promessa ligada à honra aos pais.", "evidence": ["Efésios 6:3"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Efésios 6:2 a Êxodo 20:12?",
+   "verseRef": "Efésios 6:2",
+   "passageA": {"ref": "Efésios 6:2"},
+   "passageB": {"ref": "Êxodo 20:12"},
+   "options": [{"id": "a", "text": "Honrar pai e mãe"}, {"id": "b", "text": "Honrar somente a mãe"}, {"id": "c", "text": "Esquecer os pais idosos"}],
+   "correctOptionId": "a", "evidenceSpan": "Honra teu pai e tua mãe",
+   "feedbackCorrect": "Paulo cita o mandamento de Êxodo; honrar pai e mãe continua valendo.",
+   "feedbackWrong": {"b": "Os dois textos falam de pai e mãe, não só da mãe.", "c": "Esquecer os pais é o contrário de honrá-los."},
+   "hint": "Compare o mandamento nos dois trechos.", "learningObjective": "Relacionar Efésios 6:2 ao mandamento de Êxodo.", "evidence": ["Efésios 6:2", "Êxodo 20:12"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Em Efésios 6:4, criar os filhos no Senhor inclui disciplina sem provocá-los à ira.",
+   "verseRef": "Efésios 6:3–4", "correctOptionId": "true",
+   "evidenceSpan": "criem-nos na disciplina e na admoestação do Senhor",
+   "feedbackCorrect": "Disciplina e limite vêm juntos; criar no Senhor sem provocar à ira.",
+   "feedbackWrong": {"false": "Releia as duas metades de Efésios 6:4; elas andam juntas."},
+   "hint": "Junte o limite e o ensino do versículo.", "learningObjective": "Interpretar a disciplina junto com o não provocar.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Efésios 6:4, toque o que os pais não devem despertar nos filhos.",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "à ira"}, {"id": "b", "text": "disciplina"}, {"id": "c", "text": "admoestação"}],
+   "correctOptionId": "a", "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "O limite é claro; a criação no Senhor não passa por provocar os filhos.",
+   "feedbackWrong": {"b": "Isso é parte do criar no Senhor, não do que evitar despertar.", "c": "Isso também é parte do ensino, não do limite inicial."},
+   "hint": "Leia o que vem depois de não provoquem.", "learningObjective": "Sustentar com o texto o limite da disciplina.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Efésios 6:4 sustenta sobre criar filhos em casa?",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "Disciplina firme anda junto com não provocar"}, {"id": "b", "text": "Quanto mais ira, melhor fica a disciplina"}, {"id": "c", "text": "Pais certos nunca precisam instruir os filhos"}, {"id": "d", "text": "Filhos obedecem apenas por medo dos pais"}],
+   "correctOptionId": "a", "evidenceSpan": "criem-nos na disciplina e na admoestação do Senhor",
+   "feedbackCorrect": "O texto sustenta firmeza com limite; disciplina sem provocar os filhos.",
+   "feedbackWrong": {"b": "Provocar à ira é justamente o que o texto proíbe aos pais.", "c": "O texto manda criar e instruir; instrução faz parte do caminho.", "d": "A obediência pedida é no Senhor e justa, não só por medo."},
+   "hint": "Não separe as duas metades do versículo.", "learningObjective": "Escolher a leitura de criação que o texto sustenta.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o cuidado com filhos em Efésios 6:2–4?",
+   "verseRef": "Efésios 6:2",
+   "options": [{"id": "a", "text": "Deus ordena honrar pai e mãe"}, {"id": "b", "text": "A honra está ligada a uma promessa"}, {"id": "c", "text": "Pais criam os filhos sem provocá-los"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "que é o primeiro mandamento com promessa",
+   "feedbackCorrect": "Mandamento, promessa e criação sem provocar formam o cuidado do trecho.",
+   "feedbackWrong": {"default": "Siga Efésios 6 na ordem; a criação dos filhos vem por último."},
+   "hint": "Comece pelo mandamento em 6:2.", "learningObjective": "Ver mandamento, promessa e criação como um só cuidado.", "evidence": ["Efésios 6:2", "Efésios 6:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Efésios 6:2, o mandamento de honrar os pais é o primeiro com o quê?",
+   "verseRef": "Efésios 6:2",
+   "options": [{"id": "a", "text": "promessa"}, {"id": "b", "text": "ameaça"}, {"id": "c", "text": "castigo"}],
+   "correctOptionId": "a", "evidenceSpan": "que é o primeiro mandamento com promessa",
+   "feedbackCorrect": "É o primeiro mandamento com promessa, e ela aparece no versículo seguinte.",
+   "feedbackWrong": {"b": "O texto fala de um bem prometido, não de uma ameaça.", "c": "Castigo não é a palavra do texto; há uma promessa ligada."},
+   "hint": "Leia a última palavra do versículo.", "learningObjective": "Lembrar a promessa ligada ao mandamento de honrar.", "evidence": ["Efésios 6:2"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Efésios 6:4 a Colossenses 3:21?",
+   "verseRef": "Efésios 6:4",
+   "passageA": {"ref": "Efésios 6:4"},
+   "passageB": {"ref": "Colossenses 3:21"},
+   "options": [{"id": "a", "text": "Não provocar os filhos"}, {"id": "b", "text": "Provocar para ensinar melhor"}, {"id": "c", "text": "Deixar os filhos sem limites"}],
+   "correctOptionId": "a", "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "Paulo repete o limite em Colossenses; pais não devem irritar os filhos.",
+   "feedbackWrong": {"b": "Os dois textos proíbem provocar, não recomendam provocar.", "c": "Sem limites contradiz criar na disciplina do Senhor."},
+   "hint": "Compare o limite dado aos pais nos dois trechos.", "learningObjective": "Ligar o limite aos pais em Efésios e Colossenses.", "evidence": ["Efésios 6:4", "Colossenses 3:21"]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+Escreva a cena "numeros-partida-02-a-nuvem-e-a-trombeta" da trilha "numeros" (Números).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "numeros",
+  "title": "Números",
+  "description": "No deserto: censo, murmuração, serpente e a porta da terra.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Partida",
+ "mission": {
+  "slug": "numeros-partida-02-a-nuvem-e-a-trombeta",
+  "title": "A nuvem e a trombeta",
+  "type": "lesson",
+  "intro": "Quando mover e quando parar com Deus.",
+  "hookRef": "Números 11:16–17",
+  "hookNote": "Quando mover e quando parar com Deus.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre nuvem?"
+ },
+ "v2": {
+  "passageRef": "Números 11:16–17",
+  "context": "Quando mover e quando parar com Deus.",
+  "keyword": "Nuvem",
+  "verseRefs": [
+   "Números 9:15–17"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Números 11:13–20",
+  "Números 9:15–17"
+ ],
+ "verses": [
+  {
+   "ref": "Números 11:13",
+   "text": "De onde eu tirarei carne para dar a todo esse povo? Pois chora diante de mim, dizendo: Dá-nos carne para comer."
+  },
+  {
+   "ref": "Números 11:14",
+   "text": "Não consigo carregar todo esse povo sozinho, pois é excessivamente pesado para mim."
+  },
+  {
+   "ref": "Números 11:15",
+   "text": "Se assim você me tratar, peço que me mate de uma vez, se tenho encontrado favor aos seus olhos; e não me deixes ver a minha miséria."
+  },
+  {
+   "ref": "Números 11:16",
+   "text": "Disse o Senhor a Moisés: Ajunta-me setenta homens dos anciãos de Israel, que sabes serem anciãos e superintendentes do povo; e os trarás diante da tenda da congregação, para que ali fiquem com você."
+  },
+  {
+   "ref": "Números 11:17",
+   "text": "Então eu descerei e ali falarei com você; tirarei do Espírito que está sobre você e o colocarei sobre eles; e, juntos com você, eles levarão a carga do povo, para que você não a suporte sozinho."
+  },
+  {
+   "ref": "Números 11:18",
+   "text": "E dirás ao povo: Santifiquem-se para amanhã, e comereis carne; porque choraram aos ouvidos do Senhor, dizendo: Quem nos dará carne para comer? Pois nos ia bem no Egito. Portanto, o Senhor lhes dará carne, e vocês a comerão."
+  },
+  {
+   "ref": "Números 11:19",
+   "text": "Não comereis um dia, nem dois dias, nem cinco dias, nem dez dias, nem ainda vinte dias;"
+  },
+  {
+   "ref": "Números 11:20",
+   "text": "Até um mês inteiro, até que isso lhes saia pelos narizes, até que vocês se cansem disso, porque rejeitaram o Senhor que está no meio de vocês e choraram diante dele, dizendo: \"Por que saímos do Egito?\""
+  },
+  {
+   "ref": "Números 9:15",
+   "text": "E no dia em que o tabernáculo foi erguido, a nuvem o cobriu, ou seja, a tenda do Testemunho; e, à tarde, havia sobre o tabernáculo uma aparência de fogo até a manhã."
+  },
+  {
+   "ref": "Números 9:16",
+   "text": "Assim era continuamente: a nuvem o cobria, e, à noite, havia uma aparência de fogo."
+  },
+  {
+   "ref": "Números 9:17",
+   "text": "Sempre que a nuvem se erguia sobre a tenda, os filhos de Israel partiam. No local onde a nuvem parava, ali os filhos de Israel armavam o seu acampamento."
+  }
+ ]
+}
+</cena>

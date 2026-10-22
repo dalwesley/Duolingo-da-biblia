@@ -1,0 +1,3306 @@
+[
+  {
+    "id": "missao-sem-ms-01-comissao-01",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 28:18, Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.",
+    "prompt": "Em Mateus 28:18, Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.",
+    "cue": "Em Mateus 28:18, Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Jesus declara isso antes de enviar: toda autoridade, no céu e na terra, é dele.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 28:18: Jesus diz que toda autoridade lhe foi dada."
+    },
+    "hint": "Leia a fala de Jesus no versículo.",
+    "learningObjective": "Observar a autoridade total de Jesus antes do envio.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-01-comissao-02",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 28:19, toque a quem Jesus manda fazer de todas as nações.",
+    "prompt": "Em Mateus 28:19, toque a quem Jesus manda fazer de todas as nações.",
+    "cue": "Em Mateus 28:19, toque a quem Jesus manda fazer de todas as nações.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "discípulos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Jesus manda fazer discípulos: pessoas que o seguem e aprendem dele.",
+    "feedbackWrong": {
+      "a": "O Espírito Santo aparece no batismo, no fim do versículo.",
+      "b": "As nações dizem de onde eles vêm, não o que devem se tornar."
+    },
+    "hint": "Procure o que Jesus manda fazer.",
+    "learningObjective": "Identificar o alvo do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-01-comissao-03",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 28:19, em nome de quem os discípulos devem ser batizados?",
+    "prompt": "Segundo Mateus 28:19, em nome de quem os discípulos devem ser batizados?",
+    "cue": "Segundo Mateus 28:19, em nome de quem os discípulos devem ser batizados?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em nome do Pai, do Filho e do Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "Só em nome do Pai"
+      },
+      {
+        "id": "c",
+        "text": "Em nome de quem realiza o batismo"
+      },
+      {
+        "id": "d",
+        "text": "Em nome dos apóstolos reunidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "O batismo é em nome do Pai, do Filho e do Espírito Santo.",
+    "feedbackWrong": {
+      "b": "O texto cita três nomes, não só o do Pai.",
+      "c": "Quem batiza não empresta o próprio nome ao batismo.",
+      "d": "Os apóstolos batizam, mas não em nome deles mesmos."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar em nome de quem é o batismo ordenado.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-01-comissao-04",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:20 na ordem do texto.",
+    "prompt": "Monte Mateus 28:20 na ordem do texto.",
+    "cue": "Monte Mateus 28:20 na ordem do texto.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinando-os a observar tudo o que vos ordenei"
+      },
+      {
+        "id": "b",
+        "text": "e eis que estou convosco todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "até a consumação do século"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "Primeiro o ensino, depois a promessa de presença até o fim.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino; a promessa de presença fecha o versículo."
+    },
+    "hint": "O versículo começa pelo ensino.",
+    "learningObjective": "Reconhecer a sequência de Mateus 28:20.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-01-comissao-05",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 28:18, que palavra mostra o alcance do poder de Jesus?",
+    "prompt": "Em Mateus 28:18, que palavra mostra o alcance do poder de Jesus?",
+    "cue": "Em Mateus 28:18, que palavra mostra o alcance do poder de Jesus?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "template": "E, aproximando-se de Jesus, Ele lhes disse: Toda a ___ me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "permissão"
+      },
+      {
+        "id": "b",
+        "text": "autoridade"
+      },
+      {
+        "id": "c",
+        "text": "vontade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Toda a autoridade me foi dada",
+    "feedbackCorrect": "Toda autoridade, no céu e na terra, foi dada a Jesus.",
+    "feedbackWrong": {
+      "a": "Jesus não pede permissão: toda autoridade já lhe foi dada.",
+      "c": "O texto fala do poder que Jesus recebeu, não só de vontade."
+    },
+    "hint": "Leia o que Jesus diz que lhe foi dado.",
+    "learningObjective": "Lembrar a palavra que resume o poder de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-01-comissao-06",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 28:20 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:20 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:20 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "passageA": {
+      "ref": "Mateus 28:20",
+      "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus não deixa sua igreja sozinha na tarefa que lhe deu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus está com eles sempre"
+      },
+      {
+        "id": "b",
+        "text": "Jesus abandona os discípulos"
+      },
+      {
+        "id": "c",
+        "text": "A tarefa termina na Galileia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "Jesus promete estar com os seus todos os dias, até o fim.",
+    "feedbackWrong": {
+      "b": "É o contrário: ele promete ficar com eles todos os dias.",
+      "c": "O envio alcança todas as nações, não termina na Galileia."
+    },
+    "hint": "Veja a promessa no fim do versículo.",
+    "learningObjective": "Ligar Mateus 28:20 à presença contínua de Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-01-comissao-01",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:19–20, Jesus manda batizar as pessoas primeiro e só depois fazer delas discípulos.",
+    "prompt": "Em Mateus 28:19–20, Jesus manda batizar as pessoas primeiro e só depois fazer delas discípulos.",
+    "cue": "Em Mateus 28:19–20, Jesus manda batizar as pessoas primeiro e só depois fazer delas discípulos.",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "A ordem é fazer discípulos, batizando e ensinando: o batismo faz parte desse caminho.",
+    "feedbackWrong": {
+      "true": "Releia a ordem: fazer discípulos vem primeiro, batizando e ensinando em seguida."
+    },
+    "hint": "Siga a ordem dos verbos no texto.",
+    "learningObjective": "Compreender batismo e ensino dentro do fazer discípulos.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-01-comissao-02",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade de Jesus.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade de Jesus.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade de Jesus.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-os"
+      },
+      {
+        "id": "c",
+        "text": "Portanto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Portanto, vão e façam discípulos",
+    "feedbackCorrect": "O envio começa porque Jesus tem toda autoridade: por isso, vão.",
+    "feedbackWrong": {
+      "a": "As nações mostram o alcance, não a ligação com o versículo anterior.",
+      "b": "Batizar é parte da tarefa, não a ligação com a autoridade."
+    },
+    "hint": "Está no começo do versículo.",
+    "learningObjective": "Reconhecer a ligação entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-01-comissao-03",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como batizar e ensinar se relacionam com fazer discípulos em Mateus 28:19–20?",
+    "prompt": "Como batizar e ensinar se relacionam com fazer discípulos em Mateus 28:19–20?",
+    "cue": "Como batizar e ensinar se relacionam com fazer discípulos em Mateus 28:19–20?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Batizar substitui a necessidade de ensinar depois"
+      },
+      {
+        "id": "b",
+        "text": "Batizar e ensinar fazem parte de formar discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Fazer discípulos dispensa batismo e ensino juntos"
+      },
+      {
+        "id": "d",
+        "text": "Ensinar serve só para quem ainda não foi batizado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Batizando e ensinando são o caminho pelo qual discípulos são formados.",
+    "feedbackWrong": {
+      "a": "O ensino continua depois do batismo, para observar tudo.",
+      "c": "Os dois aparecem dentro da própria ordem de Jesus.",
+      "d": "Quem é batizado é ensinado a observar o que Jesus ordenou."
+    },
+    "hint": "Veja os dois verbos ligados ao fazer discípulos.",
+    "learningObjective": "Relacionar batismo e ensino na formação de discípulos.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-01-comissao-04",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a ordem de Jesus em Mateus 28:18–19?",
+    "prompt": "Como avança a ordem de Jesus em Mateus 28:18–19?",
+    "cue": "Como avança a ordem de Jesus em Mateus 28:18–19?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus declara sua autoridade total"
+      },
+      {
+        "id": "b",
+        "text": "Jesus envia a fazer discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Jesus manda batizar nas nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Primeiro a autoridade de Jesus, depois o envio e o batismo.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade de Jesus: o envio vem em seguida."
+    },
+    "hint": "A autoridade vem antes do envio.",
+    "learningObjective": "Compreender o encadeamento entre autoridade e missão.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-01-comissao-05",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 28:20, que palavra resume com quem Jesus promete estar?",
+    "prompt": "Em Mateus 28:20, que palavra resume com quem Jesus promete estar?",
+    "cue": "Em Mateus 28:20, que palavra resume com quem Jesus promete estar?",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "template": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou ___ todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "distante"
+      },
+      {
+        "id": "c",
+        "text": "ausente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "Jesus promete estar com os seus todos os dias, até o fim.",
+    "feedbackWrong": {
+      "b": "Jesus promete presença próxima, não distância dos seus.",
+      "c": "Ausente é o contrário da promessa de Jesus no texto."
+    },
+    "hint": "Leia a promessa no fim do trecho.",
+    "learningObjective": "Compreender a promessa de presença que acompanha o envio.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-01-comissao-06",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 28:19 a Atos 1:8?",
+    "prompt": "O que liga Mateus 28:19 a Atos 1:8?",
+    "cue": "O que liga Mateus 28:19 a Atos 1:8?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar sem sair do lugar"
+      },
+      {
+        "id": "b",
+        "text": "Só Jerusalém importa agora"
+      },
+      {
+        "id": "c",
+        "text": "Testemunhar até os confins"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Nos dois textos, o alcance é o mesmo: todas as nações, até os confins.",
+    "feedbackWrong": {
+      "a": "Atos promete poder para sair e testemunhar, não para ficar parado.",
+      "b": "Jerusalém é o começo em Atos, não o limite do testemunho."
+    },
+    "hint": "Compare o alcance dado nos dois textos.",
+    "learningObjective": "Relacionar a comissão de Mateus com a promessa de Atos.",
+    "evidence": [
+      "Mateus 28:19",
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-01-comissao-01",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Mateus 28:18–19, o envio da igreja nasce da autoridade de Jesus e alcança todas as nações.",
+    "prompt": "Em Mateus 28:18–19, o envio da igreja nasce da autoridade de Jesus e alcança todas as nações.",
+    "cue": "Em Mateus 28:18–19, o envio da igreja nasce da autoridade de Jesus e alcança todas as nações.",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "A autoridade de Jesus é o fundamento, e todas as nações são o alcance.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos: autoridade total e discípulos de todas as nações."
+    },
+    "hint": "Junte o fundamento e o alcance do envio.",
+    "learningObjective": "Interpretar o envio a partir da autoridade de Jesus.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-01-comissao-02",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os seus.",
+    "prompt": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os seus.",
+    "cue": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os seus.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos os dias"
+      },
+      {
+        "id": "b",
+        "text": "Ensinando-os"
+      },
+      {
+        "id": "c",
+        "text": "consumação do século"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "A presença de Jesus não é por um tempo: é todos os dias.",
+    "feedbackWrong": {
+      "b": "Ensinar é a tarefa dos discípulos, não a duração da promessa.",
+      "c": "A consumação marca o limite final, não a duração diária."
+    },
+    "hint": "Veja até quando dura a promessa.",
+    "learningObjective": "Sustentar com o texto a presença contínua de Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-01-comissao-03",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 28:19–20 sustenta sobre a missão da igreja?",
+    "prompt": "Que leitura Mateus 28:19–20 sustenta sobre a missão da igreja?",
+    "cue": "Que leitura Mateus 28:19–20 sustenta sobre a missão da igreja?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só alguns cristãos precisam se envolver no envio"
+      },
+      {
+        "id": "b",
+        "text": "Missão é divulgar a igreja para crescer em número"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar é opcional depois que a pessoa é batizada"
+      },
+      {
+        "id": "d",
+        "text": "Jesus envia a formar discípulos, batizando e ensinando"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Formar discípulos de Jesus, batizando e ensinando, é o centro da ordem.",
+    "feedbackWrong": {
+      "a": "A ordem é dada à igreja reunida, não a um grupo fechado.",
+      "b": "O alvo é formar discípulos de Jesus, não promover a igreja.",
+      "c": "O ensino vem logo depois do batismo, no próprio texto."
+    },
+    "hint": "Veja o que Jesus manda formar nas nações.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre missão.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-01-comissao-04",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Mateus 28:18–19?",
+    "prompt": "Qual sequência revela o sentido de Mateus 28:18–19?",
+    "cue": "Qual sequência revela o sentido de Mateus 28:18–19?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus recebe toda autoridade no céu"
+      },
+      {
+        "id": "b",
+        "text": "A igreja faz discípulos nas nações"
+      },
+      {
+        "id": "c",
+        "text": "Novos discípulos aprendem a obedecer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade de Jesus, envio às nações e discípulos que aprendem a obedecer.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade de Jesus; a obediência é o fruto final."
+    },
+    "hint": "Comece por quem tem a autoridade.",
+    "learningObjective": "Ver a lógica completa da grande comissão.",
+    "evidence": [
+      "Mateus 28:18–19",
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-01-comissao-05",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 28:19, até onde alcança o fazer discípulos ordenado por Jesus?",
+    "prompt": "Em Mateus 28:19, até onde alcança o fazer discípulos ordenado por Jesus?",
+    "cue": "Em Mateus 28:19, até onde alcança o fazer discípulos ordenado por Jesus?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "template": "Portanto, vão e façam discípulos de todas as ___, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidades"
+      },
+      {
+        "id": "b",
+        "text": "línguas"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O alcance é todas as nações: nenhum povo fica fora do envio.",
+    "feedbackWrong": {
+      "a": "Cidades são lugares; o texto fala do alcance entre os povos.",
+      "b": "O texto não limita o envio por idioma: são todas elas."
+    },
+    "hint": "Leia o alcance do envio.",
+    "learningObjective": "Lembrar o termo que mostra o alcance universal do envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-01-comissao-06",
+    "trail": "missao",
+    "section": "ms-01-comissao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 28:19 a Gênesis 12:3?",
+    "prompt": "O que liga Mateus 28:19 a Gênesis 12:3?",
+    "cue": "O que liga Mateus 28:19 a Gênesis 12:3?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Gênesis 12:3",
+      "text": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nações fora do plano"
+      },
+      {
+        "id": "b",
+        "text": "Bênção só para um povo"
+      },
+      {
+        "id": "c",
+        "text": "Bênção para todas as famílias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Desde Abraão, o plano de Deus alcança todas as famílias da terra.",
+    "feedbackWrong": {
+      "a": "As nações estão no plano desde a promessa a Abraão.",
+      "b": "Gênesis fala de todas as famílias, não de um povo só."
+    },
+    "hint": "Veja quem a promessa a Abraão alcança.",
+    "learningObjective": "Ligar a comissão à promessa feita a Abraão.",
+    "evidence": [
+      "Mateus 28:19",
+      "Gênesis 12:3"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-02-testemunho-01",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 1:8, Jesus diz que os discípulos serão suas testemunhas somente em Jerusalém.",
+    "prompt": "Em Atos 1:8, Jesus diz que os discípulos serão suas testemunhas somente em Jerusalém.",
+    "cue": "Em Atos 1:8, Jesus diz que os discípulos serão suas testemunhas somente em Jerusalém.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "até os confins da terra",
+    "feedbackCorrect": "Jerusalém é o começo: o testemunho vai até os confins da terra.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Atos 1:8: o alcance vai até os confins da terra."
+    },
+    "hint": "Leia o alcance completo no versículo.",
+    "learningObjective": "Observar o alcance do testemunho em Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-02-testemunho-02",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 1:5, toque quem batizou com água.",
+    "prompt": "Em Atos 1:5, toque quem batizou com água.",
+    "cue": "Em Atos 1:5, toque quem batizou com água.",
+    "verseRef": "Atos 1:5",
+    "passageText": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "água"
+      },
+      {
+        "id": "b",
+        "text": "João"
+      },
+      {
+        "id": "c",
+        "text": "Espírito Santo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "João batizou com água",
+    "feedbackCorrect": "João batizou com água; o batismo com o Espírito ainda viria.",
+    "feedbackWrong": {
+      "a": "Água é o meio do batismo de João, não quem batizava.",
+      "c": "Com o Espírito, os discípulos ainda seriam batizados."
+    },
+    "hint": "Procure quem faz a ação no versículo.",
+    "learningObjective": "Identificar quem batizou com água.",
+    "evidence": [
+      "Atos 1:5"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-02-testemunho-03",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Atos 1:8, até onde os discípulos serão testemunhas de Jesus?",
+    "prompt": "Segundo Atos 1:8, até onde os discípulos serão testemunhas de Jesus?",
+    "cue": "Segundo Atos 1:8, até onde os discípulos serão testemunhas de Jesus?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente dentro de Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Somente entre o povo de Israel"
+      },
+      {
+        "id": "c",
+        "text": "De Jerusalém até os confins da terra"
+      },
+      {
+        "id": "d",
+        "text": "Apenas na Judéia e em Samaria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e sereis minhas testemunhas tanto em Jerusalém",
+    "feedbackCorrect": "O testemunho começa em Jerusalém e chega aos confins da terra.",
+    "feedbackWrong": {
+      "a": "Jerusalém é o ponto de partida, não o limite.",
+      "b": "O alcance final é os confins da terra, sem esse limite.",
+      "d": "Judéia e Samaria são etapas; o texto vai além delas."
+    },
+    "hint": "Siga os lugares citados até o fim.",
+    "learningObjective": "Observar a progressão geográfica de Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-02-testemunho-04",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 1:8 na ordem do texto.",
+    "prompt": "Monte Atos 1:8 na ordem do texto.",
+    "cue": "Monte Atos 1:8 na ordem do texto.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas recebereis poder"
+      },
+      {
+        "id": "b",
+        "text": "ao descer sobre vós o Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "e sereis minhas testemunhas tanto em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas recebereis poder",
+    "feedbackCorrect": "Primeiro o poder prometido, depois o Espírito que desce e o testemunho.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de poder; o testemunho vem depois."
+    },
+    "hint": "O versículo começa pela promessa.",
+    "learningObjective": "Reconhecer a sequência de Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-02-testemunho-05",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 1:5, com o que João batizou o povo?",
+    "prompt": "Em Atos 1:5, com o que João batizou o povo?",
+    "cue": "Em Atos 1:5, com o que João batizou o povo?",
+    "verseRef": "Atos 1:5",
+    "passageText": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias.",
+    "template": "Pois, na verdade, João batizou com ___, mas vocês serão batizados com o Espírito Santo não muito depois destes dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vinho"
+      },
+      {
+        "id": "b",
+        "text": "água"
+      },
+      {
+        "id": "c",
+        "text": "fogo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "João batizou com água",
+    "feedbackCorrect": "João batizou com água; com o Espírito, o batismo seria maior.",
+    "feedbackWrong": {
+      "a": "Vinho não aparece neste versículo nem neste batismo.",
+      "c": "O texto não fala de fogo aqui: João batizou com água."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Lembrar o meio do batismo de João.",
+    "evidence": [
+      "Atos 1:5"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-02-testemunho-06",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Atos 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:5 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:5 comunica que se liga a este contexto?",
+    "verseRef": "Atos 1:5",
+    "passageText": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias.",
+    "passageA": {
+      "ref": "Atos 1:5",
+      "text": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes do envio, Jesus anuncia um batismo maior que o de João."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "João encerra a história"
+      },
+      {
+        "id": "b",
+        "text": "Nada novo vai acontecer"
+      },
+      {
+        "id": "c",
+        "text": "Um batismo maior vem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês serão batizados com o Espírito Santo",
+    "feedbackCorrect": "Depois da água de João, Jesus promete o batismo com o Espírito Santo.",
+    "feedbackWrong": {
+      "a": "João prepara; Jesus anuncia algo maior que ainda viria.",
+      "b": "Jesus promete algo novo para poucos dias depois."
+    },
+    "hint": "Compare os dois batismos do versículo.",
+    "learningObjective": "Ligar Atos 1:5 à promessa do Espírito Santo.",
+    "evidence": [
+      "Atos 1:5"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-02-testemunho-01",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 1:7–8, Jesus troca a curiosidade pelos tempos pela promessa de poder para testemunhar.",
+    "prompt": "Em Atos 1:7–8, Jesus troca a curiosidade pelos tempos pela promessa de poder para testemunhar.",
+    "cue": "Em Atos 1:7–8, Jesus troca a curiosidade pelos tempos pela promessa de poder para testemunhar.",
+    "verseRef": "Atos 1:7–8",
+    "passageText": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade; Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Não cabe a vocês conhecer os tempos ou as épocas",
+    "feedbackCorrect": "Sem revelar datas, Jesus promete poder e aponta a tarefa de testemunhar.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos: nada de datas, e sim poder para testemunhar."
+    },
+    "hint": "Compare o assunto dos dois versículos.",
+    "learningObjective": "Compreender a mudança de foco de Atos 1:7 para 1:8.",
+    "evidence": [
+      "Atos 1:7–8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-02-testemunho-02",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 1:8, toque a palavra que vira a conversa dos tempos para a missão.",
+    "prompt": "Em Atos 1:8, toque a palavra que vira a conversa dos tempos para a missão.",
+    "cue": "Em Atos 1:8, toque a palavra que vira a conversa dos tempos para a missão.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "até"
+      },
+      {
+        "id": "b",
+        "text": "Mas"
+      },
+      {
+        "id": "c",
+        "text": "tanto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas recebereis poder",
+    "feedbackCorrect": "Depois de fechar o assunto dos tempos, Jesus abre o da missão.",
+    "feedbackWrong": {
+      "a": "Essa palavra mostra até onde vai o testemunho.",
+      "c": "Essa palavra liga os lugares do testemunho, não vira a conversa."
+    },
+    "hint": "Veja a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a virada entre Atos 1:7 e 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-02-testemunho-03",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Atos 1:8 responde à pergunta dos discípulos em Atos 1:6?",
+    "prompt": "Como Atos 1:8 responde à pergunta dos discípulos em Atos 1:6?",
+    "cue": "Como Atos 1:8 responde à pergunta dos discípulos em Atos 1:6?",
+    "verseRef": "Atos 1:7–8",
+    "passageText": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade; Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus troca os discípulos por outros mensageiros"
+      },
+      {
+        "id": "b",
+        "text": "Jesus revela a data e depois envia os discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Jesus não revela a data e os envia a testemunhar"
+      },
+      {
+        "id": "d",
+        "text": "Jesus adia a missão até o reino ser restaurado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas recebereis poder, ao descer sobre vós o Espírito Santo",
+    "feedbackCorrect": "A resposta não é uma data: é poder do Espírito para testemunhar.",
+    "feedbackWrong": {
+      "a": "São os mesmos discípulos que recebem a promessa.",
+      "b": "Jesus diz que os tempos não cabem a eles conhecer.",
+      "d": "A missão começa com o Espírito, sem esperar essa restauração."
+    },
+    "hint": "Veja o que Jesus entrega em vez de uma data.",
+    "learningObjective": "Relacionar a pergunta de Atos 1:6 com a resposta de Jesus.",
+    "evidence": [
+      "Atos 1:7–8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-02-testemunho-04",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a resposta de Jesus em Atos 1:7–8?",
+    "prompt": "Como avança a resposta de Jesus em Atos 1:7–8?",
+    "cue": "Como avança a resposta de Jesus em Atos 1:7–8?",
+    "verseRef": "Atos 1:7–8",
+    "passageText": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade; Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os tempos ficam com o Pai"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito Santo desce sobre eles"
+      },
+      {
+        "id": "c",
+        "text": "Eles testemunham até os confins"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não cabe a vocês conhecer os tempos ou as épocas",
+    "feedbackCorrect": "Tempos com o Pai, Espírito sobre eles e testemunho até os confins.",
+    "feedbackWrong": {
+      "default": "Comece pelos tempos guardados; o testemunho é o ponto final."
+    },
+    "hint": "O testemunho é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da resposta de Jesus.",
+    "evidence": [
+      "Atos 1:7–8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-02-testemunho-05",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Atos 1:8, o que os discípulos serão de Jesus em todos esses lugares?",
+    "prompt": "Em Atos 1:8, o que os discípulos serão de Jesus em todos esses lugares?",
+    "cue": "Em Atos 1:8, o que os discípulos serão de Jesus em todos esses lugares?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "template": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas ___ tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "testemunhas"
+      },
+      {
+        "id": "b",
+        "text": "profetas"
+      },
+      {
+        "id": "c",
+        "text": "autoridades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e sereis minhas testemunhas tanto em Jerusalém",
+    "feedbackCorrect": "Eles serão testemunhas de Jesus, de Jerusalém aos confins da terra.",
+    "feedbackWrong": {
+      "b": "O papel dado por Jesus aqui é outro, ligado a contar dele.",
+      "c": "A autoridade dos tempos é do Pai; a eles cabe testemunhar."
+    },
+    "hint": "Leia o papel que Jesus lhes dá.",
+    "learningObjective": "Compreender o papel dos discípulos capacitados pelo Espírito.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-02-testemunho-06",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 1:8 a Mateus 28:19?",
+    "prompt": "O que liga Atos 1:8 a Mateus 28:19?",
+    "cue": "O que liga Atos 1:8 a Mateus 28:19?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "passageA": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "passageB": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficar só entre os seus"
+      },
+      {
+        "id": "b",
+        "text": "Fazer discípulos em toda parte"
+      },
+      {
+        "id": "c",
+        "text": "Guardar a fé em silêncio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "até os confins da terra",
+    "feedbackCorrect": "Todas as nações e os confins da terra falam do mesmo alcance.",
+    "feedbackWrong": {
+      "a": "Os dois textos empurram para fora, até os confins.",
+      "c": "Testemunhar e fazer discípulos são falados, não escondidos."
+    },
+    "hint": "Compare o alcance dado nos dois textos.",
+    "learningObjective": "Relacionar o testemunho de Atos com a comissão de Mateus.",
+    "evidence": [
+      "Atos 1:8",
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-02-testemunho-01",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Atos 1:8 promete poder principalmente para os discípulos conhecerem os tempos e as épocas.",
+    "prompt": "Atos 1:8 promete poder principalmente para os discípulos conhecerem os tempos e as épocas.",
+    "cue": "Atos 1:8 promete poder principalmente para os discípulos conhecerem os tempos e as épocas.",
+    "verseRef": "Atos 1:7–8",
+    "passageText": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade; Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "recebereis poder, ao descer sobre vós o Espírito Santo",
+    "feedbackCorrect": "O poder é para testemunhar de Jesus, não para conhecer tempos e épocas.",
+    "feedbackWrong": {
+      "true": "Releia Atos 1:7–8: os tempos são do Pai; o poder é para testemunhar."
+    },
+    "hint": "Veja para que serve o poder prometido.",
+    "learningObjective": "Interpretar a finalidade do poder do Espírito.",
+    "evidence": [
+      "Atos 1:7–8"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-02-testemunho-02",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 1:11, toque a palavra que mostra o que Jesus fará no futuro.",
+    "prompt": "Em Atos 1:11, toque a palavra que mostra o que Jesus fará no futuro.",
+    "cue": "Em Atos 1:11, toque a palavra que mostra o que Jesus fará no futuro.",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "voltará"
+      },
+      {
+        "id": "b",
+        "text": "Galileia"
+      },
+      {
+        "id": "c",
+        "text": "olhando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Esse Jesus que foi elevado entre vocês voltará",
+    "feedbackCorrect": "O mesmo Jesus que subiu voltará do mesmo modo, dizem os mensageiros.",
+    "feedbackWrong": {
+      "b": "Galileia identifica os homens, não o que Jesus fará.",
+      "c": "Olhar para o céu é a atitude deles, não a promessa sobre Jesus."
+    },
+    "hint": "Procure o verbo sobre Jesus no fim.",
+    "learningObjective": "Sustentar com o texto a promessa da volta de Jesus.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-02-testemunho-03",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Atos 1:7–8 sustenta sobre o poder do Espírito Santo?",
+    "prompt": "Que leitura Atos 1:7–8 sustenta sobre o poder do Espírito Santo?",
+    "cue": "Que leitura Atos 1:7–8 sustenta sobre o poder do Espírito Santo?",
+    "verseRef": "Atos 1:7–8",
+    "passageText": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade; Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele dispensa testemunhar perto de onde se vive"
+      },
+      {
+        "id": "b",
+        "text": "Ele serve para prever datas do fim"
+      },
+      {
+        "id": "c",
+        "text": "Ele capacita a testemunhar de Jesus em todo lugar"
+      },
+      {
+        "id": "d",
+        "text": "Ele é dado só para um grupo fechado de líderes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e sereis minhas testemunhas tanto em Jerusalém",
+    "feedbackCorrect": "O poder do Espírito tem uma direção clara: testemunhar de Jesus.",
+    "feedbackWrong": {
+      "a": "O testemunho começa em Jerusalém, onde eles estavam.",
+      "b": "Conhecer os tempos é justamente o que Jesus não entrega.",
+      "d": "A promessa é feita aos discípulos reunidos, como igreja."
+    },
+    "hint": "Ligue o poder prometido à tarefa anunciada.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o Espírito.",
+    "evidence": [
+      "Atos 1:7–8"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-02-testemunho-04",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Atos 1:8?",
+    "prompt": "Qual sequência revela o sentido de Atos 1:8?",
+    "cue": "Qual sequência revela o sentido de Atos 1:8?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus promete o Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "Os discípulos testemunham em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "O testemunho chega aos confins"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ao descer sobre vós o Espírito Santo",
+    "feedbackCorrect": "Promessa do Espírito, testemunho perto e alcance até os confins.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa do Espírito; os confins são o fim."
+    },
+    "hint": "Comece pelo que Jesus promete dar.",
+    "learningObjective": "Ver a lógica do envio em Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-02-testemunho-05",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Atos 1:8, por onde começa o testemunho anunciado por Jesus?",
+    "prompt": "Em Atos 1:8, por onde começa o testemunho anunciado por Jesus?",
+    "cue": "Em Atos 1:8, por onde começa o testemunho anunciado por Jesus?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "template": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em ___ como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Belém"
+      },
+      {
+        "id": "c",
+        "text": "Nazaré"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tanto em Jerusalém como em toda a Judéia e Samaria",
+    "feedbackCorrect": "O testemunho começa onde eles estão e avança até os confins.",
+    "feedbackWrong": {
+      "b": "Belém é a cidade do nascimento, não o começo citado aqui.",
+      "c": "Nazaré não é citada neste versículo de envio."
+    },
+    "hint": "Veja o primeiro lugar citado.",
+    "learningObjective": "Lembrar onde o testemunho começa segundo Jesus.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-02-testemunho-06",
+    "trail": "missao",
+    "section": "ms-02-testemunho",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Atos 1:8 a Marcos 5:19?",
+    "prompt": "O que liga Atos 1:8 a Marcos 5:19?",
+    "cue": "O que liga Atos 1:8 a Marcos 5:19?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "passageA": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "passageB": {
+      "ref": "Marcos 5:19",
+      "text": "Jesus, porém, não lho permitiu, mas ordenou-lhe: Vai para tua casa, para os teus. Anuncia-lhes tudo o que o Senhor te fez e como teve compaixão de ti."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunhar também onde se vive"
+      },
+      {
+        "id": "b",
+        "text": "Esconder o que Jesus fez"
+      },
+      {
+        "id": "c",
+        "text": "Só testemunhar longe de casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tanto em Jerusalém como em toda a Judéia e Samaria",
+    "feedbackCorrect": "Em Marcos, Jesus manda contar em casa; em Atos, começa onde se está.",
+    "feedbackWrong": {
+      "b": "Nos dois textos, o que Jesus fez deve ser contado.",
+      "c": "Marcos mostra o testemunho começando justamente em casa."
+    },
+    "hint": "Veja onde cada testemunho começa.",
+    "learningObjective": "Ligar o testemunho local ao alcance de Atos 1:8.",
+    "evidence": [
+      "Atos 1:8",
+      "Marcos 5:19"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-03-discipular-01",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 2:2, Paulo manda confiar o ensino a homens fiéis e capazes de instruir outros.",
+    "prompt": "Em 2 Timóteo 2:2, Paulo manda confiar o ensino a homens fiéis e capazes de instruir outros.",
+    "cue": "Em 2 Timóteo 2:2, Paulo manda confiar o ensino a homens fiéis e capazes de instruir outros.",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "isso confia a homens fiéis",
+    "feedbackCorrect": "É essa a corrente do texto: receber, confiar a fiéis e instruir outros.",
+    "feedbackWrong": {
+      "false": "Releia 2 Timóteo 2:2: o ensino vai a homens fiéis e capazes."
+    },
+    "hint": "Leia a ordem de Paulo no versículo.",
+    "learningObjective": "Observar a quem o ensino deve ser confiado.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-03-discipular-02",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 2:1, toque onde Timóteo deve se fortalecer.",
+    "prompt": "Em 2 Timóteo 2:1, toque onde Timóteo deve se fortalecer.",
+    "cue": "Em 2 Timóteo 2:1, toque onde Timóteo deve se fortalecer.",
+    "verseRef": "2 Timóteo 2:1",
+    "passageText": "Fortifica-te, pois, meu filho, na graça que está em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu filho"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Fortifica-te, pois, meu filho, na graça",
+    "feedbackCorrect": "A força de Timóteo está na graça que há em Cristo Jesus.",
+    "feedbackWrong": {
+      "a": "É como Paulo chama Timóteo, não onde ele se fortalece.",
+      "b": "Cristo Jesus é em quem a força está guardada para ele."
+    },
+    "hint": "Leia o conselho de Paulo a Timóteo.",
+    "learningObjective": "Identificar a fonte da força de Timóteo.",
+    "evidence": [
+      "2 Timóteo 2:1"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-03-discipular-03",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Timóteo 2:2, a quem Timóteo deve confiar o que ouviu de Paulo?",
+    "prompt": "Segundo 2 Timóteo 2:2, a quem Timóteo deve confiar o que ouviu de Paulo?",
+    "cue": "Segundo 2 Timóteo 2:2, a quem Timóteo deve confiar o que ouviu de Paulo?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente a quem já sabe de tudo"
+      },
+      {
+        "id": "b",
+        "text": "A homens fiéis e capazes de ensinar"
+      },
+      {
+        "id": "c",
+        "text": "A qualquer interessado de passagem"
+      },
+      {
+        "id": "d",
+        "text": "Apenas aos seus próprios familiares"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "isso confia a homens fiéis e também idôneos para instruir a outros",
+    "feedbackCorrect": "Fiéis e capazes de ensinar: as duas marcas aparecem juntas no texto.",
+    "feedbackWrong": {
+      "a": "Quem recebe ainda será formado para instruir a outros.",
+      "c": "O texto pede fidelidade comprovada, não interesse passageiro.",
+      "d": "O critério é a fidelidade, não o parentesco com Timóteo."
+    },
+    "hint": "Veja as duas qualidades citadas.",
+    "learningObjective": "Observar o perfil de quem recebe o ensino.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-03-discipular-04",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Timóteo 2:2 na ordem do texto.",
+    "prompt": "Monte 2 Timóteo 2:2 na ordem do texto.",
+    "cue": "Monte 2 Timóteo 2:2 na ordem do texto.",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E o que de mim ouviste por meio de muitas testemunhas"
+      },
+      {
+        "id": "b",
+        "text": "isso confia a homens fiéis"
+      },
+      {
+        "id": "c",
+        "text": "e também idôneos para instruir a outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E o que de mim ouviste por meio de muitas testemunhas",
+    "feedbackCorrect": "Ouvir de Paulo, confiar a fiéis e capacitar para instruir outros.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Timóteo ouviu; instruir outros fecha o versículo."
+    },
+    "hint": "O versículo começa pelo que foi ouvido.",
+    "learningObjective": "Reconhecer a sequência de 2 Timóteo 2:2.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-03-discipular-05",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 2:3, como Paulo chama quem participa das aflições por Cristo?",
+    "prompt": "Em 2 Timóteo 2:3, como Paulo chama quem participa das aflições por Cristo?",
+    "cue": "Em 2 Timóteo 2:3, como Paulo chama quem participa das aflições por Cristo?",
+    "verseRef": "2 Timóteo 2:3",
+    "passageText": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus.",
+    "template": "Participa, portanto, das aflições como um bom ___ de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "espectador"
+      },
+      {
+        "id": "b",
+        "text": "turista"
+      },
+      {
+        "id": "c",
+        "text": "soldado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Participa, portanto, das aflições como um bom soldado",
+    "feedbackCorrect": "Como bom soldado de Cristo, Timóteo partilha também das aflições.",
+    "feedbackWrong": {
+      "a": "Quem só assiste não participa das aflições citadas.",
+      "b": "A imagem de Paulo é de serviço fiel, não de visita rápida."
+    },
+    "hint": "Veja a comparação que Paulo usa.",
+    "learningObjective": "Lembrar a imagem usada para o discípulo fiel.",
+    "evidence": [
+      "2 Timóteo 2:3"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-03-discipular-06",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Timóteo 2:3 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Timóteo 2:3 comunica que se liga a este contexto?",
+    "cue": "O que 2 Timóteo 2:3 comunica que se liga a este contexto?",
+    "verseRef": "2 Timóteo 2:3",
+    "passageText": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus.",
+    "passageA": {
+      "ref": "2 Timóteo 2:3",
+      "text": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Seguir a Cristo também envolve enfrentar dificuldades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fugir de toda dificuldade"
+      },
+      {
+        "id": "b",
+        "text": "Servir só quando é fácil"
+      },
+      {
+        "id": "c",
+        "text": "Sofrer como bom soldado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Participa, portanto, das aflições como um bom soldado",
+    "feedbackCorrect": "Paulo não esconde o custo: o discípulo partilha das aflições.",
+    "feedbackWrong": {
+      "a": "O texto manda participar das aflições, não fugir delas.",
+      "b": "O bom soldado continua fiel também no tempo difícil."
+    },
+    "hint": "Veja o que o soldado aceita partilhar.",
+    "learningObjective": "Ligar 2 Timóteo 2:3 ao custo do discipulado.",
+    "evidence": [
+      "2 Timóteo 2:3"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-03-discipular-01",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 2:2, os homens fiéis só devem receber o ensino depois de já terem instruído outros.",
+    "prompt": "Em 2 Timóteo 2:2, os homens fiéis só devem receber o ensino depois de já terem instruído outros.",
+    "cue": "Em 2 Timóteo 2:2, os homens fiéis só devem receber o ensino depois de já terem instruído outros.",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "também idôneos para instruir a outros",
+    "feedbackCorrect": "Eles recebem o ensino já capazes de instruir: a instrução vem depois de receber.",
+    "feedbackWrong": {
+      "true": "Releia a ordem: confiar o ensino a quem é capaz de instruir outros."
+    },
+    "hint": "Siga a ordem dos passos no versículo.",
+    "learningObjective": "Compreender a ordem da transmissão do ensino.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-03-discipular-02",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 2:4, toque a palavra que apresenta o motivo de não se envolver.",
+    "prompt": "Em 2 Timóteo 2:4, toque a palavra que apresenta o motivo de não se envolver.",
+    "cue": "Em 2 Timóteo 2:4, toque a palavra que apresenta o motivo de não se envolver.",
+    "verseRef": "2 Timóteo 2:4",
+    "passageText": "Ninguém que milita se envolve em assuntos desta vida, pois o seu objetivo é agradar àquele que o recrutou para a batalha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pois"
+      },
+      {
+        "id": "b",
+        "text": "batalha"
+      },
+      {
+        "id": "c",
+        "text": "assuntos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois o seu objetivo é agradar àquele que o recrutou",
+    "feedbackCorrect": "O motivo vem em seguida: agradar àquele que o chamou para a batalha.",
+    "feedbackWrong": {
+      "b": "A batalha é o cenário da comparação, não a palavra do motivo.",
+      "c": "Os assuntos são o que o soldado evita, não o motivo dado."
+    },
+    "hint": "Está no meio do versículo, antes do motivo.",
+    "learningObjective": "Reconhecer o marcador de motivo em 2 Timóteo 2:4.",
+    "evidence": [
+      "2 Timóteo 2:4"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-03-discipular-03",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Timóteo 2:1 se relaciona com 2 Timóteo 2:2?",
+    "prompt": "Como 2 Timóteo 2:1 se relaciona com 2 Timóteo 2:2?",
+    "cue": "Como 2 Timóteo 2:1 se relaciona com 2 Timóteo 2:2?",
+    "verseRef": "2 Timóteo 2:1–2",
+    "passageText": "Fortifica-te, pois, meu filho, na graça que está em Cristo Jesus. E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fortalecido na graça, Timóteo passa adiante o ensino"
+      },
+      {
+        "id": "b",
+        "text": "Passar o ensino depende só da força de Timóteo"
+      },
+      {
+        "id": "c",
+        "text": "Timóteo deve esperar ficar forte para só então ouvir"
+      },
+      {
+        "id": "d",
+        "text": "A graça dispensa Timóteo de ensinar outras pessoas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Fortifica-te, pois, meu filho, na graça",
+    "feedbackCorrect": "A força vem da graça, e o ensino recebido segue adiante por Timóteo.",
+    "feedbackWrong": {
+      "b": "A fonte destacada é a graça em Cristo, não a força própria.",
+      "c": "Ele já ouviu o ensino; agora se fortalece e o confia a outros.",
+      "d": "É justamente fortalecido que ele vai ensinar e confiar."
+    },
+    "hint": "Junte a fonte da força com a tarefa seguinte.",
+    "learningObjective": "Relacionar força na graça e transmissão do ensino.",
+    "evidence": [
+      "2 Timóteo 2:1–2"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-03-discipular-04",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a transmissão em 2 Timóteo 2:2?",
+    "prompt": "Como se encadeia a transmissão em 2 Timóteo 2:2?",
+    "cue": "Como se encadeia a transmissão em 2 Timóteo 2:2?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Timóteo ouve o ensino de Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Ele confia o ensino a fiéis"
+      },
+      {
+        "id": "c",
+        "text": "Os fiéis instruem outras pessoas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "isso confia a homens fiéis",
+    "feedbackCorrect": "Paulo, Timóteo, homens fiéis e outros: uma corrente de ensino.",
+    "feedbackWrong": {
+      "default": "Comece por quem ouve de Paulo; instruir outros é o fim."
+    },
+    "hint": "Siga a corrente de pessoas no versículo.",
+    "learningObjective": "Compreender a cadeia de transmissão do evangelho.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-03-discipular-05",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 2:5, que palavra mostra a recompensa de quem compete direito?",
+    "prompt": "Em 2 Timóteo 2:5, que palavra mostra a recompensa de quem compete direito?",
+    "cue": "Em 2 Timóteo 2:5, que palavra mostra a recompensa de quem compete direito?",
+    "verseRef": "2 Timóteo 2:5",
+    "passageText": "E, se alguém também compete, não é coroado se não o fizer de acordo com as normas.",
+    "template": "E, se alguém também compete, não é ___ se não o fizer de acordo com as normas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aplaudido"
+      },
+      {
+        "id": "b",
+        "text": "conhecido"
+      },
+      {
+        "id": "c",
+        "text": "coroado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não é coroado se não o fizer de acordo com as normas",
+    "feedbackCorrect": "Não basta competir: é preciso fazê-lo de acordo com as normas.",
+    "feedbackWrong": {
+      "a": "O texto fala da coroa de quem compete direito, não de aplauso.",
+      "b": "Ser conhecido não é a recompensa citada por Paulo."
+    },
+    "hint": "Veja a recompensa de quem compete.",
+    "learningObjective": "Compreender a exigência de fidelidade nas comparações de Paulo.",
+    "evidence": [
+      "2 Timóteo 2:5"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-03-discipular-06",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Timóteo 2:2 a Mateus 28:20?",
+    "prompt": "O que liga 2 Timóteo 2:2 a Mateus 28:20?",
+    "cue": "O que liga 2 Timóteo 2:2 a Mateus 28:20?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "passageA": {
+      "ref": "2 Timóteo 2:2",
+      "text": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros."
+    },
+    "passageB": {
+      "ref": "Mateus 28:20",
+      "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinar o que Jesus mandou"
+      },
+      {
+        "id": "b",
+        "text": "Guardar o ensino em segredo"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar só uma única vez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também idôneos para instruir a outros",
+    "feedbackCorrect": "Nos dois textos, discípulos são formados pelo ensino que continua.",
+    "feedbackWrong": {
+      "b": "O ensino é confiado para ser passado, não escondido.",
+      "c": "Em Timóteo, quem aprende ensina outros: a cadeia continua."
+    },
+    "hint": "Compare a tarefa de ensinar nos dois textos.",
+    "learningObjective": "Relacionar a transmissão em Timóteo com a comissão de Mateus.",
+    "evidence": [
+      "2 Timóteo 2:2",
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-03-discipular-01",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "2 Timóteo 2:2 mostra o discipulado como uma corrente em que quem recebe também ensina outros.",
+    "prompt": "2 Timóteo 2:2 mostra o discipulado como uma corrente em que quem recebe também ensina outros.",
+    "cue": "2 Timóteo 2:2 mostra o discipulado como uma corrente em que quem recebe também ensina outros.",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "também idôneos para instruir a outros",
+    "feedbackCorrect": "Paulo, Timóteo, fiéis e outros: cada elo recebe e transmite o ensino.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: quem recebe deve ser capaz de instruir outros."
+    },
+    "hint": "Conte os elos citados no versículo.",
+    "learningObjective": "Interpretar o discipulado como transmissão fiel.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-03-discipular-02",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 2:3, toque o que o discípulo de Cristo também partilha.",
+    "prompt": "Em 2 Timóteo 2:3, toque o que o discípulo de Cristo também partilha.",
+    "cue": "Em 2 Timóteo 2:3, toque o que o discípulo de Cristo também partilha.",
+    "verseRef": "2 Timóteo 2:3",
+    "passageText": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "b",
+        "text": "aflições"
+      },
+      {
+        "id": "c",
+        "text": "bom soldado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Participa, portanto, das aflições como um bom soldado",
+    "feedbackCorrect": "O discipulado inclui partilhar aflições, não só receber o ensino.",
+    "feedbackWrong": {
+      "a": "Cristo Jesus é a quem o soldado serve fielmente.",
+      "c": "É a comparação usada por Paulo, não o que se partilha."
+    },
+    "hint": "Veja o que Paulo manda participar.",
+    "learningObjective": "Sustentar com o texto o custo do discipulado.",
+    "evidence": [
+      "2 Timóteo 2:3"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-03-discipular-03",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Timóteo 2:3–4 sustenta sobre seguir a Cristo?",
+    "prompt": "Que leitura 2 Timóteo 2:3–4 sustenta sobre seguir a Cristo?",
+    "cue": "Que leitura 2 Timóteo 2:3–4 sustenta sobre seguir a Cristo?",
+    "verseRef": "2 Timóteo 2:3–4",
+    "passageText": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus. Ninguém que milita se envolve em assuntos desta vida, pois o seu objetivo é agradar àquele que o recrutou para a batalha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O discípulo partilha aflições buscando agradar a Cristo"
+      },
+      {
+        "id": "b",
+        "text": "O discípulo deve se envolver em tudo ao mesmo tempo"
+      },
+      {
+        "id": "c",
+        "text": "Seguir a Cristo garante uma vida sem dificuldades"
+      },
+      {
+        "id": "d",
+        "text": "Agradar pessoas é o objetivo maior do discípulo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Participa, portanto, das aflições como um bom soldado",
+    "feedbackCorrect": "Como bom soldado, o discípulo sofre e busca agradar a quem o chamou.",
+    "feedbackWrong": {
+      "b": "O soldado evita se prender ao que desvia da sua missão.",
+      "c": "O texto fala justamente de participar das aflições.",
+      "d": "O objetivo é agradar a Cristo, que o recrutou."
+    },
+    "hint": "Junte o custo e o objetivo citados.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o discipulado.",
+    "evidence": [
+      "2 Timóteo 2:3–4"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-03-discipular-04",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 2 Timóteo 2:4–5?",
+    "prompt": "Qual sequência revela o sentido de 2 Timóteo 2:4–5?",
+    "cue": "Qual sequência revela o sentido de 2 Timóteo 2:4–5?",
+    "verseRef": "2 Timóteo 2:4–5",
+    "passageText": "Ninguém que milita se envolve em assuntos desta vida, pois o seu objetivo é agradar àquele que o recrutou para a batalha. E, se alguém também compete, não é coroado se não o fizer de acordo com as normas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O soldado evita se prender a assuntos"
+      },
+      {
+        "id": "b",
+        "text": "Ele busca agradar quem o chamou"
+      },
+      {
+        "id": "c",
+        "text": "Quem compete segue as normas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pois o seu objetivo é agradar àquele que o recrutou",
+    "feedbackCorrect": "Foco no chamado, desejo de agradar a Cristo e fidelidade às normas.",
+    "feedbackWrong": {
+      "default": "Comece pelo soldado focado; as normas fecham o trecho."
+    },
+    "hint": "Comece pela imagem do soldado.",
+    "learningObjective": "Ver foco e fidelidade nas imagens de Paulo.",
+    "evidence": [
+      "2 Timóteo 2:4–5"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-03-discipular-05",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 2:5, de acordo com o que deve competir quem quer ser coroado?",
+    "prompt": "Em 2 Timóteo 2:5, de acordo com o que deve competir quem quer ser coroado?",
+    "cue": "Em 2 Timóteo 2:5, de acordo com o que deve competir quem quer ser coroado?",
+    "verseRef": "2 Timóteo 2:5",
+    "passageText": "E, se alguém também compete, não é coroado se não o fizer de acordo com as normas.",
+    "template": "E, se alguém também compete, não é coroado se não o fizer de acordo com as ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pressas"
+      },
+      {
+        "id": "b",
+        "text": "normas"
+      },
+      {
+        "id": "c",
+        "text": "vontades"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se não o fizer de acordo com as normas",
+    "feedbackCorrect": "A coroa é de quem compete de acordo com as normas, com fidelidade.",
+    "feedbackWrong": {
+      "a": "Pressa não aparece no texto; o padrão citado é outro.",
+      "c": "Não é do próprio jeito: há um padrão a ser seguido."
+    },
+    "hint": "Veja o padrão exigido no fim.",
+    "learningObjective": "Lembrar o termo que carrega a fidelidade exigida.",
+    "evidence": [
+      "2 Timóteo 2:5"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-03-discipular-06",
+    "trail": "missao",
+    "section": "ms-03-discipular",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Timóteo 2:2 a 1 Coríntios 3:6–7?",
+    "prompt": "O que liga 2 Timóteo 2:2 a 1 Coríntios 3:6–7?",
+    "cue": "O que liga 2 Timóteo 2:2 a 1 Coríntios 3:6–7?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "passageA": {
+      "ref": "2 Timóteo 2:2",
+      "text": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 3:6–7",
+      "text": "Eu plantei, Apolo regou; mas foi Deus quem deu o crescimento. Assim, nem quem planta nem quem rega é algo, mas sim Deus, que é quem concede o crescimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus dá o crescimento"
+      },
+      {
+        "id": "b",
+        "text": "O resultado é só humano"
+      },
+      {
+        "id": "c",
+        "text": "Plantar dispensa regar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "isso confia a homens fiéis",
+    "feedbackCorrect": "Pessoas plantam e regam, mas quem dá o crescimento é Deus.",
+    "feedbackWrong": {
+      "b": "Paulo tira o mérito humano: o crescimento vem de Deus.",
+      "c": "Plantar e regar aparecem juntos; um não dispensa o outro."
+    },
+    "hint": "Veja quem faz a obra crescer em Coríntios.",
+    "learningObjective": "Ligar a transmissão fiel à ação de Deus no crescimento.",
+    "evidence": [
+      "2 Timóteo 2:2",
+      "1 Coríntios 3:6–7"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-01",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 28:17, todos os discípulos adoraram a Jesus sem que nenhum deles hesitasse.",
+    "prompt": "Em Mateus 28:17, todos os discípulos adoraram a Jesus sem que nenhum deles hesitasse.",
+    "cue": "Em Mateus 28:17, todos os discípulos adoraram a Jesus sem que nenhum deles hesitasse.",
+    "verseRef": "Mateus 28:17",
+    "passageText": "Quando o viram, adoraram-no; mas alguns hesitaram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas alguns hesitaram",
+    "feedbackCorrect": "Eles adoraram, mas o texto registra que alguns também hesitaram.",
+    "feedbackWrong": {
+      "true": "Releia Mateus 28:17: adoraram, mas alguns hesitaram."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar a reação dos discípulos diante de Jesus.",
+    "evidence": [
+      "Mateus 28:17"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-02",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 28:19, toque a quem Jesus manda fazer de todas as nações.",
+    "prompt": "Em Mateus 28:19, toque a quem Jesus manda fazer de todas as nações.",
+    "cue": "Em Mateus 28:19, toque a quem Jesus manda fazer de todas as nações.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "discípulos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Jesus manda fazer discípulos: pessoas que o seguem e aprendem dele.",
+    "feedbackWrong": {
+      "a": "O Espírito Santo aparece no batismo, no fim do versículo.",
+      "b": "As nações dizem de onde eles vêm, não o que se tornarão."
+    },
+    "hint": "Procure o que Jesus manda fazer.",
+    "learningObjective": "Relembrar o alvo do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-03",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Atos 1:8, até onde os discípulos serão testemunhas de Jesus?",
+    "prompt": "Segundo Atos 1:8, até onde os discípulos serão testemunhas de Jesus?",
+    "cue": "Segundo Atos 1:8, até onde os discípulos serão testemunhas de Jesus?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apenas na Judéia e em Samaria"
+      },
+      {
+        "id": "b",
+        "text": "Somente dentro de Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Somente entre o povo de Israel"
+      },
+      {
+        "id": "d",
+        "text": "De Jerusalém até os confins da terra"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "e sereis minhas testemunhas tanto em Jerusalém",
+    "feedbackCorrect": "O testemunho começa em Jerusalém e chega aos confins da terra.",
+    "feedbackWrong": {
+      "a": "Judéia e Samaria são etapas; o texto vai além delas.",
+      "b": "Jerusalém é o ponto de partida, não o limite final.",
+      "c": "O alcance final é os confins da terra, sem esse limite."
+    },
+    "hint": "Siga os lugares citados até o fim.",
+    "learningObjective": "Relembrar o alcance do testemunho em Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-04",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:20 na ordem do texto.",
+    "prompt": "Monte Mateus 28:20 na ordem do texto.",
+    "cue": "Monte Mateus 28:20 na ordem do texto.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinando-os a observar tudo o que vos ordenei"
+      },
+      {
+        "id": "b",
+        "text": "e eis que estou convosco todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "até a consumação do século"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "Primeiro o ensino, depois a promessa de presença até o fim.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino; a promessa de presença fecha o versículo."
+    },
+    "hint": "O versículo começa pelo ensino.",
+    "learningObjective": "Reconhecer a sequência de Mateus 28:20.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-05",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 28:18, que palavra mostra o alcance do poder de Jesus?",
+    "prompt": "Em Mateus 28:18, que palavra mostra o alcance do poder de Jesus?",
+    "cue": "Em Mateus 28:18, que palavra mostra o alcance do poder de Jesus?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "template": "E, aproximando-se de Jesus, Ele lhes disse: Toda a ___ me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "permissão"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "autoridade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a autoridade me foi dada",
+    "feedbackCorrect": "Toda autoridade, no céu e na terra, foi dada a Jesus.",
+    "feedbackWrong": {
+      "a": "Jesus não pede permissão: toda autoridade já lhe foi dada.",
+      "b": "O texto fala do poder recebido, não só de vontade."
+    },
+    "hint": "Leia o que Jesus diz que lhe foi dado.",
+    "learningObjective": "Relembrar a palavra que resume o poder de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-06",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus envia sua igreja a todas as nações, não só ao seu povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Discípulos de um povo só"
+      },
+      {
+        "id": "b",
+        "text": "Discípulos em todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "Ninguém precisa sair do lugar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio de Jesus alcança todas as nações, sem exceção de povo.",
+    "feedbackWrong": {
+      "a": "O texto diz todas as nações, não um povo só.",
+      "c": "A ordem é ir e fazer discípulos, não ficar parado."
+    },
+    "hint": "Veja o alcance do envio.",
+    "learningObjective": "Ligar Mateus 28:19 ao alcance universal do envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-07",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 1:8, toque quem desce sobre os discípulos.",
+    "prompt": "Em Atos 1:8, toque quem desce sobre os discípulos.",
+    "cue": "Em Atos 1:8, toque quem desce sobre os discípulos.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Jerusalém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ao descer sobre vós o Espírito Santo",
+    "feedbackCorrect": "É o Espírito Santo quem desce e capacita os discípulos.",
+    "feedbackWrong": {
+      "a": "Isso é o que eles recebem quando ele desce sobre eles.",
+      "c": "Jerusalém é o lugar onde o testemunho começa."
+    },
+    "hint": "Procure quem vem sobre os discípulos.",
+    "learningObjective": "Relembrar quem capacita os discípulos em Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-sem-ms-04-desafio-08",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 1:8 na ordem do texto.",
+    "prompt": "Monte Atos 1:8 na ordem do texto.",
+    "cue": "Monte Atos 1:8 na ordem do texto.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas recebereis poder"
+      },
+      {
+        "id": "b",
+        "text": "ao descer sobre vós o Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "e sereis minhas testemunhas tanto em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas recebereis poder",
+    "feedbackCorrect": "Poder prometido, Espírito que desce e testemunho que começa.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de poder; o testemunho vem depois."
+    },
+    "hint": "O versículo começa pela promessa.",
+    "learningObjective": "Reconhecer a sequência de Atos 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-01",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 1:7–8, saber os tempos é condição para receber poder e testemunhar de Jesus.",
+    "prompt": "Em Atos 1:7–8, saber os tempos é condição para receber poder e testemunhar de Jesus.",
+    "cue": "Em Atos 1:7–8, saber os tempos é condição para receber poder e testemunhar de Jesus.",
+    "verseRef": "Atos 1:7–8",
+    "passageText": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade; Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não cabe a vocês conhecer os tempos ou as épocas",
+    "feedbackCorrect": "Jesus não entrega os tempos: promete poder para testemunhar.",
+    "feedbackWrong": {
+      "true": "Releia Atos 1:7–8: os tempos são do Pai; o poder é para testemunhar."
+    },
+    "hint": "Compare o que Jesus nega e o que promete.",
+    "learningObjective": "Compreender que a missão não depende de saber datas.",
+    "evidence": [
+      "Atos 1:7–8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-02",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade de Jesus.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade de Jesus.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade de Jesus.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-os"
+      },
+      {
+        "id": "c",
+        "text": "Portanto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Portanto, vão e façam discípulos",
+    "feedbackCorrect": "O envio começa porque Jesus tem toda autoridade: por isso, vão.",
+    "feedbackWrong": {
+      "a": "As nações mostram o alcance, não a ligação anterior.",
+      "b": "Batizar é parte da tarefa, não a ligação com a autoridade."
+    },
+    "hint": "Está no começo do versículo.",
+    "learningObjective": "Reconhecer a ligação entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-03",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o ensino se transmite em 2 Timóteo 2:2?",
+    "prompt": "Como o ensino se transmite em 2 Timóteo 2:2?",
+    "cue": "Como o ensino se transmite em 2 Timóteo 2:2?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ensino passa direto, sem pessoas no meio"
+      },
+      {
+        "id": "b",
+        "text": "Quem recebe confia a fiéis que ensinam outros"
+      },
+      {
+        "id": "c",
+        "text": "Cada geração guarda o ensino só para si"
+      },
+      {
+        "id": "d",
+        "text": "Só Paulo ensina e ninguém mais transmite"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "isso confia a homens fiéis",
+    "feedbackCorrect": "Paulo, Timóteo, homens fiéis e outros: uma corrente de ensino.",
+    "feedbackWrong": {
+      "a": "O texto nomeia pessoas em cada passo da transmissão.",
+      "c": "Guardar só para si quebra a corrente que Paulo descreve.",
+      "d": "Paulo ensina Timóteo justamente para que outros ensinem."
+    },
+    "hint": "Siga a corrente de pessoas no versículo.",
+    "learningObjective": "Compreender a transmissão do ensino entre gerações.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-04",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a ordem de Jesus em Mateus 28:18–20?",
+    "prompt": "Como avança a ordem de Jesus em Mateus 28:18–20?",
+    "cue": "Como avança a ordem de Jesus em Mateus 28:18–20?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus declara sua autoridade total"
+      },
+      {
+        "id": "b",
+        "text": "Ele envia a fazer discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Ele manda batizar nas nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Primeiro a autoridade de Jesus, depois o envio e o batismo.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade de Jesus: o envio vem em seguida."
+    },
+    "hint": "A autoridade vem antes do envio.",
+    "learningObjective": "Compreender o encadeamento da grande comissão.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-05",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Atos 1:8, o que os discípulos serão de Jesus em todos esses lugares?",
+    "prompt": "Em Atos 1:8, o que os discípulos serão de Jesus em todos esses lugares?",
+    "cue": "Em Atos 1:8, o que os discípulos serão de Jesus em todos esses lugares?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "template": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas ___ tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "testemunhas"
+      },
+      {
+        "id": "b",
+        "text": "profetas"
+      },
+      {
+        "id": "c",
+        "text": "autoridades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e sereis minhas testemunhas tanto em Jerusalém",
+    "feedbackCorrect": "Eles serão testemunhas de Jesus, de Jerusalém aos confins da terra.",
+    "feedbackWrong": {
+      "b": "O papel dado por Jesus aqui é contar e mostrar quem ele é.",
+      "c": "A autoridade dos tempos é do Pai; a eles cabe testemunhar."
+    },
+    "hint": "Leia o papel que Jesus lhes dá.",
+    "learningObjective": "Compreender o papel dos discípulos capacitados pelo Espírito.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-06",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 1:8 a Mateus 28:19?",
+    "prompt": "O que liga Atos 1:8 a Mateus 28:19?",
+    "cue": "O que liga Atos 1:8 a Mateus 28:19?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "passageA": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "passageB": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficar só entre os seus"
+      },
+      {
+        "id": "b",
+        "text": "Guardar a fé em silêncio"
+      },
+      {
+        "id": "c",
+        "text": "Fazer discípulos em toda parte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "até os confins da terra",
+    "feedbackCorrect": "Todas as nações e os confins da terra falam do mesmo alcance.",
+    "feedbackWrong": {
+      "a": "Os dois textos empurram para fora, até os confins.",
+      "b": "Testemunhar e fazer discípulos são falados, não escondidos."
+    },
+    "hint": "Compare o alcance dado nos dois textos.",
+    "learningObjective": "Relacionar o testemunho de Atos com a comissão de Mateus.",
+    "evidence": [
+      "Atos 1:8",
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-07",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 1:8, toque a palavra que vira a conversa dos tempos para a missão.",
+    "prompt": "Em Atos 1:8, toque a palavra que vira a conversa dos tempos para a missão.",
+    "cue": "Em Atos 1:8, toque a palavra que vira a conversa dos tempos para a missão.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "até"
+      },
+      {
+        "id": "c",
+        "text": "tanto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas recebereis poder",
+    "feedbackCorrect": "Depois de fechar o assunto dos tempos, Jesus abre o da missão.",
+    "feedbackWrong": {
+      "b": "Essa palavra mostra até onde vai o testemunho.",
+      "c": "Essa palavra liga os lugares do testemunho, não vira a conversa."
+    },
+    "hint": "Veja a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a virada entre Atos 1:7 e 1:8.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-cam-ms-04-desafio-08",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a transmissão em 2 Timóteo 2:2?",
+    "prompt": "Como se encadeia a transmissão em 2 Timóteo 2:2?",
+    "cue": "Como se encadeia a transmissão em 2 Timóteo 2:2?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Timóteo ouve o ensino de Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Ele confia o ensino a fiéis"
+      },
+      {
+        "id": "c",
+        "text": "Os fiéis instruem outras pessoas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "isso confia a homens fiéis",
+    "feedbackCorrect": "Paulo, Timóteo, homens fiéis e outros: uma corrente de ensino.",
+    "feedbackWrong": {
+      "default": "Comece por quem ouve de Paulo; instruir outros é o fim."
+    },
+    "hint": "Siga a corrente de pessoas no versículo.",
+    "learningObjective": "Compreender a cadeia de transmissão do evangelho.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-01",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 28:19 mostra um envio que alcança todas as nações e os confins da terra.",
+    "prompt": "Mateus 28:19 mostra um envio que alcança todas as nações e os confins da terra.",
+    "cue": "Mateus 28:19 mostra um envio que alcança todas as nações e os confins da terra.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Todas as nações em Mateus e os confins em Atos mostram o mesmo alcance.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 28:19: o envio é a discípulos de todas as nações."
+    },
+    "hint": "Veja o alcance citado no versículo.",
+    "learningObjective": "Interpretar o alcance universal do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19",
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-02",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 2:2, toque a quem o ensino deve ser confiado.",
+    "prompt": "Em 2 Timóteo 2:2, toque a quem o ensino deve ser confiado.",
+    "cue": "Em 2 Timóteo 2:2, toque a quem o ensino deve ser confiado.",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instruir a outros"
+      },
+      {
+        "id": "b",
+        "text": "homens fiéis"
+      },
+      {
+        "id": "c",
+        "text": "muitas testemunhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "isso confia a homens fiéis",
+    "feedbackCorrect": "O ensino é confiado a homens fiéis, capazes de instruir outros.",
+    "feedbackWrong": {
+      "a": "Instruir é o que os fiéis farão depois de receber o ensino.",
+      "c": "As testemunhas cercam o ouvir de Timóteo, não quem recebe dele."
+    },
+    "hint": "Procure a quem o ensino é confiado.",
+    "learningObjective": "Sustentar com o texto o perfil de quem transmite o ensino.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-03",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura os textos da trilha sustentam sobre a missão da igreja?",
+    "prompt": "Que leitura os textos da trilha sustentam sobre a missão da igreja?",
+    "cue": "Que leitura os textos da trilha sustentam sobre a missão da igreja?",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus envia, o Espírito capacita e fiéis ensinam"
+      },
+      {
+        "id": "b",
+        "text": "O resultado depende só do esforço humano"
+      },
+      {
+        "id": "c",
+        "text": "Só quem viaja para longe participa da missão"
+      },
+      {
+        "id": "d",
+        "text": "Missão é técnica para crescer em número"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "recebereis poder, ao descer sobre vós o Espírito Santo",
+    "feedbackCorrect": "Envio de Jesus, poder do Espírito e transmissão fiel: é o fio da trilha.",
+    "feedbackWrong": {
+      "b": "Quem capacita é o Espírito; o crescimento pertence a Deus.",
+      "c": "O testemunho começa em Jerusalém, onde os discípulos estão.",
+      "d": "O alvo é fazer discípulos de Jesus, não aplicar técnicas."
+    },
+    "hint": "Junte envio, capacitação e transmissão.",
+    "learningObjective": "Escolher a interpretação que os três textos sustentam juntos.",
+    "evidence": [
+      "Atos 1:8",
+      "Mateus 28:19",
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-04",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da missão nesta trilha?",
+    "prompt": "Qual sequência revela o fio da missão nesta trilha?",
+    "cue": "Qual sequência revela o fio da missão nesta trilha?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus dá a grande comissão"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito dá poder para testemunhar"
+      },
+      {
+        "id": "c",
+        "text": "Fiéis transmitem o ensino a outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Comissão de Jesus, poder do Espírito e transmissão por discípulos fiéis.",
+    "feedbackWrong": {
+      "default": "Comece pela comissão de Jesus; a transmissão fecha o fio."
+    },
+    "hint": "Comece por quem envia a igreja.",
+    "learningObjective": "Ver o fio completo da missão nos três textos.",
+    "evidence": [
+      "Mateus 28:19",
+      "Atos 1:8",
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-05",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 2:2, que palavra mostra que os fiéis estão aptos a ensinar?",
+    "prompt": "Em 2 Timóteo 2:2, que palavra mostra que os fiéis estão aptos a ensinar?",
+    "cue": "Em 2 Timóteo 2:2, que palavra mostra que os fiéis estão aptos a ensinar?",
+    "verseRef": "2 Timóteo 2:2",
+    "passageText": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros.",
+    "template": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também ___ para instruir a outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "idôneos"
+      },
+      {
+        "id": "b",
+        "text": "apressados"
+      },
+      {
+        "id": "c",
+        "text": "famosos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também idôneos para instruir a outros",
+    "feedbackCorrect": "Fiéis e também aptos: quem recebe deve saber instruir a outros.",
+    "feedbackWrong": {
+      "b": "Pressa não aparece no texto; o critério é outro.",
+      "c": "Fama não é o critério de Paulo para transmitir o ensino."
+    },
+    "hint": "Veja a qualidade pedida por Paulo.",
+    "learningObjective": "Lembrar o termo que une fidelidade e capacidade de ensinar.",
+    "evidence": [
+      "2 Timóteo 2:2"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-06",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 28:19 a Gênesis 12:3?",
+    "prompt": "O que liga Mateus 28:19 a Gênesis 12:3?",
+    "cue": "O que liga Mateus 28:19 a Gênesis 12:3?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Gênesis 12:3",
+      "text": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bênção só para um povo"
+      },
+      {
+        "id": "b",
+        "text": "Nações fora do plano"
+      },
+      {
+        "id": "c",
+        "text": "Bênção para todas as famílias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Desde Abraão, o plano de Deus alcança todas as famílias da terra.",
+    "feedbackWrong": {
+      "a": "Gênesis fala de todas as famílias, não de um povo só.",
+      "b": "As nações estão no plano desde a promessa a Abraão."
+    },
+    "hint": "Veja quem a promessa a Abraão alcança.",
+    "learningObjective": "Ligar a comissão à promessa feita a Abraão.",
+    "evidence": [
+      "Mateus 28:19",
+      "Gênesis 12:3"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-07",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os seus.",
+    "prompt": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os seus.",
+    "cue": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os seus.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinando-os"
+      },
+      {
+        "id": "b",
+        "text": "todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "consumação do século"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "A presença de Jesus não é por um tempo: é todos os dias.",
+    "feedbackWrong": {
+      "a": "Ensinar é a tarefa dos discípulos, não a duração da promessa.",
+      "c": "A consumação marca o limite final, não a duração diária."
+    },
+    "hint": "Veja até quando dura a promessa.",
+    "learningObjective": "Sustentar com o texto a presença contínua de Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "missao-pro-ms-04-desafio-08",
+    "trail": "missao",
+    "section": "ms-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o alcance da promessa na história bíblica?",
+    "prompt": "Qual sequência revela o alcance da promessa na história bíblica?",
+    "cue": "Qual sequência revela o alcance da promessa na história bíblica?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A promessa alcança todas as famílias"
+      },
+      {
+        "id": "b",
+        "text": "Jesus envia a todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "O testemunho chega aos confins"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Promessa a Abraão, comissão de Jesus e testemunho até os confins.",
+    "feedbackWrong": {
+      "default": "Siga a história: promessa, comissão e testemunho mundial."
+    },
+    "hint": "Siga a ordem da história bíblica.",
+    "learningObjective": "Ver o alcance da promessa de Abraão até Atos.",
+    "evidence": [
+      "Mateus 28:19",
+      "Gênesis 12:3",
+      "Atos 1:8"
+    ]
+  }
+]

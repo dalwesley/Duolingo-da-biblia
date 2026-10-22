@@ -1,0 +1,116 @@
+Escreva a cena "exo-05-mar" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A Libertação",
+ "mission": {
+  "slug": "exo-05-mar",
+  "title": "O Mar Vermelho",
+  "type": "lesson",
+  "intro": "O faraó persegue Israel. Deus abre o mar, o povo passa em terra seca e os egípcios são vencidos.",
+  "hookRef": "Êxodo 14:13–31",
+  "hookNote": "Entre o Egito e o mar, Israel aprende: a salvação é do Senhor, não da força própria.",
+  "centralInsight": "Deus abre caminhos",
+  "objective": "O que significa “o Senhor pelejará por vós” hoje?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 14:13–31",
+  "context": "Entre o Egito e o mar, Israel aprende: a salvação é do Senhor, não da força própria.",
+  "keyword": "Salvação",
+  "verseRefs": [
+   "Êxodo 14:13–14"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 14:13–31",
+  "Êxodo 14:13–14"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 14:13",
+   "text": "Moisés, porém, disse ao povo: Não temais; aquietai-vos e vejam o livramento do Senhor, que hoje realizará por vocês; porque os egípcios que hoje veem, nunca mais os vereis."
+  },
+  {
+   "ref": "Êxodo 14:14",
+   "text": "O Senhor lutará por vocês, e vocês se calarão."
+  },
+  {
+   "ref": "Êxodo 14:15",
+   "text": "Então o Senhor disse a Moisés: Por que você clama a mim? Diga aos filhos de Israel que sigam em frente."
+  },
+  {
+   "ref": "Êxodo 14:16",
+   "text": "E você, levante a sua vara e estenda a sua mão sobre o mar, dividindo-o, para que os filhos de Israel passem pelo meio do mar em seco."
+  },
+  {
+   "ref": "Êxodo 14:17",
+   "text": "Eis que endurecerei o coração dos egípcios, para que os sigam e entrem nele; serei glorificado em Faraó, em todo o seu exército, nos seus carros e nos seus cavaleiros."
+  },
+  {
+   "ref": "Êxodo 14:18",
+   "text": "E os egípcios saberão que eu sou o Senhor, quando eu for glorificado em Faraó, nos seus carros e nos seus cavaleiros."
+  },
+  {
+   "ref": "Êxodo 14:19",
+   "text": "E o anjo de Deus, que ia à frente do exército de Israel, retirou-se e passou para trás deles; assim, a coluna de nuvem se afastou de diante deles e ficou atrás deles."
+  },
+  {
+   "ref": "Êxodo 14:20",
+   "text": "E passou entre o acampamento dos egípcios e o acampamento de Israel; a nuvem era escuridão para aqueles, mas iluminava a noite para estes, de maneira que, durante toda a noite, uns não puderam se aproximar dos outros."
+  },
+  {
+   "ref": "Êxodo 14:21",
+   "text": "Então, Moisés estendeu a mão sobre o mar, e o SENHOR, por um forte vento oriental que soprou toda aquela noite, fez o mar retirar-se, transformando-se em terra seca, e as águas foram divididas."
+  },
+  {
+   "ref": "Êxodo 14:22",
+   "text": "E os filhos de Israel atravessaram o mar em seco, com as águas formando um muro à sua direita e à sua esquerda."
+  },
+  {
+   "ref": "Êxodo 14:23",
+   "text": "E os egípcios os perseguiram, seguindo-os, todos os cavalos de Faraó, seus carros e cavaleiros até o meio do mar."
+  },
+  {
+   "ref": "Êxodo 14:24",
+   "text": "E aconteceu que, na vigília da manhã, o Senhor, na coluna de fogo e de nuvem, contemplou o acampamento dos egípcios e provocou alvoroço no acampamento deles."
+  },
+  {
+   "ref": "Êxodo 14:25",
+   "text": "E o Senhor emperrou as rodas dos seus carros, dificultando sua marcha. Então disseram os egípcios: Fugamos da presença de Israel, porque o Senhor está pelejando por eles contra os egípcios."
+  },
+  {
+   "ref": "Êxodo 14:26",
+   "text": "Então o Senhor disse a Moisés: Estenda a sua mão sobre o mar, para que as águas se voltem contra os egípcios, contra seus carros e contra seus cavaleiros."
+  },
+  {
+   "ref": "Êxodo 14:27",
+   "text": "Então, Moisés estendeu a mão sobre o mar, e, ao romper da manhã, o mar retomou sua força; os egípcios, ao fugirem, foram de encontro a ele, mas o SENHOR derribou os egípcios no meio do mar."
+  },
+  {
+   "ref": "Êxodo 14:28",
+   "text": "As águas retornaram e cobriram os carros e os cavaleiros de todo o exército do Faraó, que os haviam seguido no mar; não ficou nenhum deles."
+  },
+  {
+   "ref": "Êxodo 14:29",
+   "text": "Mas os filhos de Israel atravessaram o mar a pé enxuto, e as águas eram como muros, à sua direita e à sua esquerda."
+  },
+  {
+   "ref": "Êxodo 14:30",
+   "text": "Assim, o Senhor livrou Israel naquele dia das mãos dos egípcios, e Israel viu os egípcios mortos à beira do mar."
+  },
+  {
+   "ref": "Êxodo 14:31",
+   "text": "E Israel viu o grande poder que o Senhor havia demonstrado contra os egípcios; e o povo temeu ao Senhor e confiou no Senhor e em Moisés, seu servo."
+  }
+ ]
+}
+</cena>

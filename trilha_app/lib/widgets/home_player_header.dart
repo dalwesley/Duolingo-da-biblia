@@ -6,7 +6,6 @@ import '../theme/app_theme.dart';
 import 'immersive_background.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
-import '../utils/liturgical_calendar.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'streak_week.dart';
@@ -16,7 +15,7 @@ import '../l10n/app_language.dart';
 
 /// Saudação do dia — cartão de jogador: identidade + pulso + meta.
 ///
-/// Lâmpadas ficam na cena. Aqui: sequência, meta, gelo, passos e a semana.
+/// Lâmpadas ficam na cena. Aqui: sequência, meta, gelo e a semana.
 /// O CTA da missão vive só no hero — o header não duplica o toque.
 class HomePlayerHeader extends StatelessWidget {
   final VoidCallback? onProfileTap;
@@ -24,13 +23,11 @@ class HomePlayerHeader extends StatelessWidget {
   /// Mantido por compatibilidade: o pulso não abre mais a missão
   /// (duplicava o CTA do hero).
   final VoidCallback? onTapMission;
-  final VoidCallback? onLiturgyTap;
 
   const HomePlayerHeader({
     super.key,
     this.onProfileTap,
     this.onTapMission,
-    this.onLiturgyTap,
   });
 
   @override
@@ -47,7 +44,6 @@ class HomePlayerHeader extends StatelessWidget {
         freezeUsed: p.streakFreezeUsedThisWeek,
         freezeAvailable: p.streakFreezeAvailable,
         portraitStyle: p.settings.portraitStyle,
-        steps: p.steps,
       ),
     );
     final b = context.select(
@@ -63,8 +59,6 @@ class HomePlayerHeader extends StatelessWidget {
     final name = p.userName.trim().isEmpty
         ? l10n.homeDefaultName
         : p.userName.trim().split(' ').first;
-    final moment = LiturgicalCalendar.momentFor();
-    final liturgy = LiturgicalCalendar.accentOf(moment.season);
     final streak = p.streak;
     final freezeUsed = p.freezeUsed;
     final freezeCount = freezeUsed || p.freezeAvailable ? 1 : 0;
@@ -139,16 +133,6 @@ class HomePlayerHeader extends StatelessWidget {
                   ),
                 ),
               ),
-              Semantics(
-                label: l10n.homeStepsSemantics(p.steps),
-                child: CountBadge('${p.steps}', color: AppRoles.reward),
-              ),
-              if (onLiturgyTap != null)
-                _SeasonChip(
-                  moment: moment,
-                  accent: liturgy,
-                  onTap: onLiturgyTap!,
-                ),
             ],
           ),
           const SizedBox(height: 12),
@@ -201,49 +185,6 @@ class HomePlayerHeader extends StatelessWidget {
           const SizedBox(height: 10),
           const StreakWeek(orbSize: 28),
         ],
-      ),
-    );
-  }
-}
-
-class _SeasonChip extends StatelessWidget {
-  final LiturgicalMoment moment;
-  final Color accent;
-  final VoidCallback onTap;
-
-  const _SeasonChip({
-    required this.moment,
-    required this.accent,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Semantics(
-      button: true,
-      label: context.l10n.homeSeasonChipSemantics(moment.title),
-      excludeSemantics: true,
-      child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: () {
-          ActHaptics.tap();
-          onTap();
-        },
-        // Área de toque ≥44dp; o pill continua pequeno visualmente.
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 44, minWidth: 44),
-          child: Padding(
-            padding: const EdgeInsets.only(left: AppSpace.sm),
-            child: Center(
-              widthFactor: 1,
-              child: SoftBadge(
-                text: moment.title,
-                accent: accent,
-                textColor: accent,
-              ),
-            ),
-          ),
-        ),
       ),
     );
   }

@@ -1,0 +1,63 @@
+Escreva a cena "josue-entrada-03-o-jordao" da trilha "josue" (Josué).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "josue",
+  "title": "Josué",
+  "description": "Entrada na terra: coragem, Jericó e aliança renovada.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Entrada",
+ "mission": {
+  "slug": "josue-entrada-03-o-jordao",
+  "title": "O Jordão",
+  "type": "lesson",
+  "intro": "Passagem em terra seca — novo êxodo.",
+  "hookRef": "Referência: Josué",
+  "hookNote": "Passagem em terra seca — novo êxodo.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre jordão?"
+ },
+ "v2": {
+  "passageRef": "Referência: Josué",
+  "context": "Passagem em terra seca — novo êxodo.",
+  "keyword": "Jordão",
+  "verseRefs": [
+   "Josué 3:15–17"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Josué 3:12–17"
+ ],
+ "verses": [
+  {
+   "ref": "Josué 3:12",
+   "text": "Tomai, pois agora, doze homens das tribos de Israel, um de cada tribo."
+  },
+  {
+   "ref": "Josué 3:13",
+   "text": "Quando as solas dos pés dos sacerdotes que transportam a arca do Senhor, Senhor de toda a terra, repousarem nas águas do Jordão, estas se separarão, e as que vêm de cima se acumularão em um montão."
+  },
+  {
+   "ref": "Josué 3:14",
+   "text": "E aconteceu que, quando o povo deixou suas tendas para atravessar o Jordão, os sacerdotes levaram a arca da aliança à frente do povo."
+  },
+  {
+   "ref": "Josué 3:15",
+   "text": "E os que carregavam a arca, quando chegaram ao Jordão, e os pés dos sacerdotes se molharam na borda das águas, pois o Jordão transbordava sobre todas as suas ribanceiras, todos os dias da sega."
+  },
+  {
+   "ref": "Josué 3:16",
+   "text": "As águas que vinham de cima pararam e se acumulavam como um montão, muito longe da cidade de Adã, que fica ao lado de Sartã; e as que desciam ao mar da Arabá, que é o mar Salgado, foram totalmente cortadas; assim, o povo passou defronte de Jericó."
+  },
+  {
+   "ref": "Josué 3:17",
+   "text": "Os sacerdotes que carregavam a arca da aliança do Senhor pararam firmes no meio do Jordão, e todo o Israel atravessou em terra seca, até que toda a nação completou a travessia do Jordão."
+  }
+ ]
+}
+</cena>

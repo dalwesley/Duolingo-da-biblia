@@ -1,0 +1,3305 @@
+[
+  {
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-01",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Ao ouvir sobre Jerusalém, Neemias sentou-se, chorou e jejuou por alguns dias",
+    "prompt": "Ao ouvir sobre Jerusalém, Neemias sentou-se, chorou e jejuou por alguns dias",
+    "cue": "Ao ouvir sobre Jerusalém, Neemias sentou-se, chorou e jejuou por alguns dias",
+    "verseRef": "Neemias 1:4",
+    "passageText": "Quando eu ouvi essas palavras, sentei-me e chorei, e lamentei por alguns dias; estive jejuando e orando diante do Deus dos céus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "sentei-me e chorei",
+    "feedbackCorrect": "Neemias chora, lamenta, jejua e ora ao ouvir a notícia.",
+    "feedbackWrong": {
+      "false": "Releia Neemias 1:4 e veja a reação imediata de Neemias."
+    },
+    "hint": "Olhe a reação dele no versículo.",
+    "learningObjective": "Observar a primeira reação de Neemias diante da notícia.",
+    "evidence": [
+      "Neemias 1:4"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-02",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Neemias 1:3, toque o que estava derrubado em Jerusalém.",
+    "prompt": "Em Neemias 1:3, toque o que estava derrubado em Jerusalém.",
+    "cue": "Em Neemias 1:3, toque o que estava derrubado em Jerusalém.",
+    "verseRef": "Neemias 1:3",
+    "passageText": "Disseram-me: Os sobreviventes que ficaram do exílio estão na província em grande miséria e desprezo; os muros de Jerusalém estão derrubados, e suas portas, queimadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "portas"
+      },
+      {
+        "id": "b",
+        "text": "miséria"
+      },
+      {
+        "id": "c",
+        "text": "muros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os muros de Jerusalém estão derrubados",
+    "feedbackCorrect": "A notícia diz que os muros estavam derrubados e as portas queimadas.",
+    "feedbackWrong": {
+      "a": "As portas estavam queimadas, não derrubadas.",
+      "b": "A miséria descreve o povo, não o que foi derrubado."
+    },
+    "hint": "Procure o que caiu na cidade.",
+    "learningObjective": "Identificar o dano relatado em Jerusalém.",
+    "evidence": [
+      "Neemias 1:3"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-03",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Neemias 1:5, como Deus é descrito na oração?",
+    "prompt": "Segundo Neemias 1:5, como Deus é descrito na oração?",
+    "cue": "Segundo Neemias 1:5, como Deus é descrito na oração?",
+    "verseRef": "Neemias 1:5",
+    "passageText": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um Deus que só ouve os sacerdotes"
+      },
+      {
+        "id": "b",
+        "text": "Deus grande e temível que guarda a aliança"
+      },
+      {
+        "id": "c",
+        "text": "Um Deus que abandonou Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "Um Deus distante de quem o ama"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus grande e temível",
+    "feedbackCorrect": "Neemias começa lembrando que Deus é grande, temível e fiel à aliança.",
+    "feedbackWrong": {
+      "a": "Neemias, copeiro do rei, é quem está orando.",
+      "c": "A oração confia que Deus continua fiel ao seu povo.",
+      "d": "Ele guarda a aliança para com quem o ama, não está distante."
+    },
+    "hint": "Leia os primeiros títulos dados a Deus.",
+    "learningObjective": "Observar como Neemias descreve a Deus na oração.",
+    "evidence": [
+      "Neemias 1:5"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-04",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Neemias 1:4 na ordem do texto.",
+    "prompt": "Monte Neemias 1:4 na ordem do texto.",
+    "cue": "Monte Neemias 1:4 na ordem do texto.",
+    "verseRef": "Neemias 1:4",
+    "passageText": "Quando eu ouvi essas palavras, sentei-me e chorei, e lamentei por alguns dias; estive jejuando e orando diante do Deus dos céus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando eu ouvi essas palavras"
+      },
+      {
+        "id": "b",
+        "text": "sentei-me e chorei"
+      },
+      {
+        "id": "c",
+        "text": "estive jejuando e orando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando eu ouvi essas palavras",
+    "feedbackCorrect": "Ele ouve, chora e então permanece jejuando e orando.",
+    "feedbackWrong": {
+      "default": "Comece por ele ouvindo as palavras; o jejum vem depois."
+    },
+    "hint": "O versículo começa com ele ouvindo.",
+    "learningObjective": "Reconhecer a sequência de Neemias 1:4.",
+    "evidence": [
+      "Neemias 1:4"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-05",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Neemias 1:5, o que Deus guarda junto com a misericórdia?",
+    "prompt": "Em Neemias 1:5, o que Deus guarda junto com a misericórdia?",
+    "cue": "Em Neemias 1:5, o que Deus guarda junto com a misericórdia?",
+    "verseRef": "Neemias 1:5",
+    "passageText": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "template": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a ___ e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que guardas a aliança e a misericórdia",
+    "feedbackCorrect": "Deus guarda a aliança e a misericórdia para quem o ama.",
+    "feedbackWrong": {
+      "b": "Releia o início da oração em Neemias 1:5.",
+      "c": "A palavra lembrada depois é promessa, mas aqui o texto nomeia outro compromisso."
+    },
+    "hint": "Vem logo antes de misericórdia.",
+    "learningObjective": "Lembrar o compromisso que Deus guarda.",
+    "evidence": [
+      "Neemias 1:5"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-06",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Neemias 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 1:5 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 1:5 comunica que se liga a este contexto?",
+    "verseRef": "Neemias 1:5",
+    "passageText": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "passageA": {
+      "ref": "Neemias 1:5",
+      "text": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Neemias ora lembrando quem Deus é antes de pedir ajuda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só sacerdotes podem orar"
+      },
+      {
+        "id": "b",
+        "text": "Deus guarda a aliança"
+      },
+      {
+        "id": "c",
+        "text": "Deus esqueceu Jerusalém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que guardas a aliança e a misericórdia",
+    "feedbackCorrect": "A oração começa na fidelidade de Deus à aliança.",
+    "feedbackWrong": {
+      "a": "Quem ora aqui é um copeiro, não um sacerdote.",
+      "c": "Neemias ora justamente porque Deus não esqueceu seu povo."
+    },
+    "hint": "Veja o que Deus guarda.",
+    "learningObjective": "Ligar Neemias 1:5 à fidelidade de Deus.",
+    "evidence": [
+      "Neemias 1:5"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-01",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Neemias confessou apenas os pecados dos outros e não incluiu a si mesmo",
+    "prompt": "Neemias confessou apenas os pecados dos outros e não incluiu a si mesmo",
+    "cue": "Neemias confessou apenas os pecados dos outros e não incluiu a si mesmo",
+    "verseRef": "Neemias 1:6–7",
+    "passageText": "Estejam, pois, atentos os teus ouvidos e os teus olhos abertos, para acudires à oração do teu servo, que hoje faço à tua presença, dia e noite, pelos filhos de Israel, teus servos; e faço confissão pelos pecados dos filhos de Israel, os quais temos cometido contra ti; pois eu e a casa de meu pai temos pecado. Nós temos agido de forma corrupta contra ti, e não temos guardado os mandamentos, os estatutos, nem os juízos que ordenaste a Moisés, teu servo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "pois eu e a casa de meu pai temos pecado",
+    "feedbackCorrect": "Ele inclui a si e sua família na confissão pelos pecados de Israel.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Neemias 1:6, onde ele se inclui."
+    },
+    "hint": "Veja quem ele inclui na confissão.",
+    "learningObjective": "Compreender que a confissão de Neemias inclui a si mesmo.",
+    "evidence": [
+      "Neemias 1:6–7"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-02",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Neemias 1:9, toque o verbo que descreve o povo voltando para Deus.",
+    "prompt": "Em Neemias 1:9, toque o verbo que descreve o povo voltando para Deus.",
+    "cue": "Em Neemias 1:9, toque o verbo que descreve o povo voltando para Deus.",
+    "verseRef": "Neemias 1:9",
+    "passageText": "E se vocês se converterem a mim e guardarem os meus mandamentos, e os cumprirem, mesmo que os seus rejeitados estejam nos confins do céu, de lá os reunirei e os trarei ao lugar que escolhi para fazer habitar o meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guardarem"
+      },
+      {
+        "id": "b",
+        "text": "cumprirem"
+      },
+      {
+        "id": "c",
+        "text": "converterem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se vocês se converterem a mim",
+    "feedbackCorrect": "Voltar para Deus vem antes de guardar e cumprir os mandamentos.",
+    "feedbackWrong": {
+      "a": "Guardar vem depois de voltar para Deus.",
+      "b": "Cumprir é o passo seguinte à volta para Deus."
+    },
+    "hint": "É a primeira ação do povo no versículo.",
+    "learningObjective": "Reconhecer a volta para Deus como início da promessa.",
+    "evidence": [
+      "Neemias 1:9"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-03",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a promessa de Neemias 1:9 se relaciona com o exílio?",
+    "prompt": "Como a promessa de Neemias 1:9 se relaciona com o exílio?",
+    "cue": "Como a promessa de Neemias 1:9 se relaciona com o exílio?",
+    "verseRef": "Neemias 1:8–9",
+    "passageText": "Lembra-te, pois, da palavra que ordenaste a Moisés, teu servo, dizendo: \"Se transgredirdes, eu vos espalharei por entre os povos.\" E se vocês se converterem a mim e guardarem os meus mandamentos, e os cumprirem, mesmo que os seus rejeitados estejam nos confins do céu, de lá os reunirei e os trarei ao lugar que escolhi para fazer habitar o meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O exílio nunca se ligou à desobediência"
+      },
+      {
+        "id": "b",
+        "text": "Deus reunirá quem voltar para ele e obedecer"
+      },
+      {
+        "id": "c",
+        "text": "Deus reunirá todos sem mudança de vida"
+      },
+      {
+        "id": "d",
+        "text": "Moisés prometeu retorno sem aliança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se vocês se converterem a mim",
+    "feedbackCorrect": "Espalhar veio com a transgressão; reunir vem com a volta para Deus.",
+    "feedbackWrong": {
+      "a": "Neemias 1:8 liga o espalhar à transgressão do povo.",
+      "c": "A promessa fala de se converter e guardar os mandamentos.",
+      "d": "A palavra lembrada é a dada por meio de Moisés."
+    },
+    "hint": "Compare os dois versículos lado a lado.",
+    "learningObjective": "Relacionar exílio, volta para Deus e reunião do povo.",
+    "evidence": [
+      "Neemias 1:8–9"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-04",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a reação de Neemias diante da notícia?",
+    "prompt": "Como avança a reação de Neemias diante da notícia?",
+    "cue": "Como avança a reação de Neemias diante da notícia?",
+    "verseRef": "Neemias 1:4",
+    "passageText": "Quando eu ouvi essas palavras, sentei-me e chorei, e lamentei por alguns dias; estive jejuando e orando diante do Deus dos céus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Neemias ouve a notícia de Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Ele chora, jejua e ora a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ele pede favor para ir reconstruir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "estive jejuando e orando",
+    "feedbackCorrect": "Primeiro ele ouve, depois busca a Deus, e só então pede ao rei.",
+    "feedbackWrong": {
+      "default": "A busca a Deus vem antes do pedido ao rei."
+    },
+    "hint": "O pedido ao rei é o ponto de chegada.",
+    "learningObjective": "Compreender a ordem entre ouvir, orar e agir.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 2:5"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-05",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Neemias 2:4, o que Neemias faz antes de responder ao rei?",
+    "prompt": "Em Neemias 2:4, o que Neemias faz antes de responder ao rei?",
+    "cue": "Em Neemias 2:4, o que Neemias faz antes de responder ao rei?",
+    "verseRef": "Neemias 2:4",
+    "passageText": "O rei me perguntou: \"O que você deseja pedir agora?\" Então, eu orei ao Deus dos céus.",
+    "template": "O rei me perguntou: \"O que você deseja pedir agora?\" Então, eu ___ ao Deus dos céus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chorei"
+      },
+      {
+        "id": "b",
+        "text": "falei"
+      },
+      {
+        "id": "c",
+        "text": "orei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu orei ao Deus dos céus",
+    "feedbackCorrect": "Mesmo diante do rei, Neemias primeiro ora ao Deus dos céus.",
+    "feedbackWrong": {
+      "a": "O choro foi ao ouvir a notícia, meses antes.",
+      "b": "Ele fala só depois de buscar a Deus em silêncio."
+    },
+    "hint": "É uma ação breve e silenciosa.",
+    "learningObjective": "Compreender que Neemias ora também no momento da decisão.",
+    "evidence": [
+      "Neemias 2:4"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-06",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Neemias 1:9 a Deuteronômio 30:2–3?",
+    "prompt": "O que liga Neemias 1:9 a Deuteronômio 30:2–3?",
+    "cue": "O que liga Neemias 1:9 a Deuteronômio 30:2–3?",
+    "verseRef": "Neemias 1:9",
+    "passageText": "E se vocês se converterem a mim e guardarem os meus mandamentos, e os cumprirem, mesmo que os seus rejeitados estejam nos confins do céu, de lá os reunirei e os trarei ao lugar que escolhi para fazer habitar o meu nome.",
+    "passageA": {
+      "ref": "Neemias 1:9",
+      "text": "E se vocês se converterem a mim e guardarem os meus mandamentos, e os cumprirem, mesmo que os seus rejeitados estejam nos confins do céu, de lá os reunirei e os trarei ao lugar que escolhi para fazer habitar o meu nome."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 30:2–3",
+      "text": "E te converterás ao SENHOR, teu Deus, juntamente com teus filhos, de todo o teu coração e de toda a tua alma, e ouvirás a sua voz, conforme tudo o que hoje te ordeno. Então o SENHOR, teu Deus, mudará a tua sorte, terá compaixão de ti e te reunirá novamente de entre todos os povos para os quais o SENHOR, teu Deus, te havia dispersado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Voltar para Deus e ser reunido"
+      },
+      {
+        "id": "b",
+        "text": "Reunião sem arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Exílio sem volta possível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "de lá os reunirei",
+    "feedbackCorrect": "Nos dois textos, Deus reúne quem volta para ele de coração.",
+    "feedbackWrong": {
+      "b": "A reunião vem ligada à conversão, não sem ela.",
+      "c": "Os dois textos anunciam reunião depois da volta para Deus."
+    },
+    "hint": "Compare a condição e a promessa dos dois textos.",
+    "learningObjective": "Relacionar a promessa lembrada por Neemias à palavra de Moisés.",
+    "evidence": [
+      "Neemias 1:9",
+      "Deuteronômio 30:2–3"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-01",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A oração de Neemias une louvor a Deus, confissão do pecado e confiança na promessa",
+    "prompt": "A oração de Neemias une louvor a Deus, confissão do pecado e confiança na promessa",
+    "cue": "A oração de Neemias une louvor a Deus, confissão do pecado e confiança na promessa",
+    "verseRef": "Neemias 1:5–6",
+    "passageText": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos! Estejam, pois, atentos os teus ouvidos e os teus olhos abertos, para acudires à oração do teu servo, que hoje faço à tua presença, dia e noite, pelos filhos de Israel, teus servos; e faço confissão pelos pecados dos filhos de Israel, os quais temos cometido contra ti; pois eu e a casa de meu pai temos pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "faço confissão pelos pecados dos filhos de Israel",
+    "feedbackCorrect": "Ele louva o Deus fiel, confessa o pecado e lembra a promessa de reunir.",
+    "feedbackWrong": {
+      "false": "Veja o louvor em 1:5 e a confissão logo em 1:6."
+    },
+    "hint": "Junte o começo e o meio da oração.",
+    "learningObjective": "Interpretar os movimentos da oração de Neemias.",
+    "evidence": [
+      "Neemias 1:5–6"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-02",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Neemias 1:5, toque o que Deus guarda junto com a aliança para quem o ama.",
+    "prompt": "Em Neemias 1:5, toque o que Deus guarda junto com a aliança para quem o ama.",
+    "cue": "Em Neemias 1:5, toque o que Deus guarda junto com a aliança para quem o ama.",
+    "verseRef": "Neemias 1:5",
+    "passageText": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "céus"
+      },
+      {
+        "id": "b",
+        "text": "mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que guardas a aliança e a misericórdia",
+    "feedbackCorrect": "Deus guarda aliança e misericórdia para quem o ama e obedece.",
+    "feedbackWrong": {
+      "a": "Céus diz de onde Deus é, não o que ele guarda.",
+      "b": "Mandamentos são o que o povo deve guardar, não Deus."
+    },
+    "hint": "Procure o segundo bem guardado por Deus.",
+    "learningObjective": "Sustentar com o texto a misericórdia fiel de Deus.",
+    "evidence": [
+      "Neemias 1:5"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-03",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a oração de Neemias 1 sustenta sobre orar?",
+    "prompt": "Que leitura a oração de Neemias 1 sustenta sobre orar?",
+    "cue": "Que leitura a oração de Neemias 1 sustenta sobre orar?",
+    "verseRef": "Neemias 1:4–5",
+    "passageText": "Quando eu ouvi essas palavras, sentei-me e chorei, e lamentei por alguns dias; estive jejuando e orando diante do Deus dos céus. E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar começa reconhecendo quem Deus é"
+      },
+      {
+        "id": "b",
+        "text": "Jejuar obriga Deus a responder"
+      },
+      {
+        "id": "c",
+        "text": "Confessar é só pelos erros alheios"
+      },
+      {
+        "id": "d",
+        "text": "Promessas valem sem obediência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus grande e temível",
+    "feedbackCorrect": "Antes de pedir, Neemias reconhece quem Deus é e como ele é fiel.",
+    "feedbackWrong": {
+      "b": "O jejum expressa busca a Deus, não controle sobre ele.",
+      "c": "Ele confessa também o próprio pecado e o de sua família.",
+      "d": "A promessa lembrada liga reunião à obediência a Deus."
+    },
+    "hint": "Veja por onde a oração dele começa.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a oração.",
+    "evidence": [
+      "Neemias 1:4–5"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-04",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da oração até a ação?",
+    "prompt": "Qual sequência revela o caminho da oração até a ação?",
+    "cue": "Qual sequência revela o caminho da oração até a ação?",
+    "verseRef": "Neemias 1:9",
+    "passageText": "E se vocês se converterem a mim e guardarem os meus mandamentos, e os cumprirem, mesmo que os seus rejeitados estejam nos confins do céu, de lá os reunirei e os trarei ao lugar que escolhi para fazer habitar o meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete reunir quem se converter"
+      },
+      {
+        "id": "b",
+        "text": "Neemias confessa e pede favor a Deus"
+      },
+      {
+        "id": "c",
+        "text": "O rei envia Neemias a Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "de lá os reunirei e os trarei",
+    "feedbackCorrect": "A promessa sustenta a confissão, e a oração abre caminho para a missão.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa lembrada; o envio pelo rei vem por último."
+    },
+    "hint": "O envio pelo rei é o ponto de chegada.",
+    "learningObjective": "Ver como promessa, oração e ação se encadeiam.",
+    "evidence": [
+      "Neemias 1:9",
+      "Neemias 2:5"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-05",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Neemias 1:11, que verbo descreve a atitude dos servos diante do nome de Deus?",
+    "prompt": "Em Neemias 1:11, que verbo descreve a atitude dos servos diante do nome de Deus?",
+    "cue": "Em Neemias 1:11, que verbo descreve a atitude dos servos diante do nome de Deus?",
+    "verseRef": "Neemias 1:11",
+    "passageText": "Senhor, esteja atento às súplicas do teu servo e às súplicas dos teus servos que se alegram em temer o teu nome; faze prosperar hoje o teu servo e concede-lhe favor diante deste homem. Naquela época, eu era copeiro do rei.",
+    "template": "Senhor, esteja atento às súplicas do teu servo e às súplicas dos teus servos que se alegram em ___ o teu nome; faze prosperar hoje o teu servo e concede-lhe favor diante deste homem. Naquela época, eu era copeiro do rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seguir"
+      },
+      {
+        "id": "b",
+        "text": "ouvir"
+      },
+      {
+        "id": "c",
+        "text": "temer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que se alegram em temer o teu nome",
+    "feedbackCorrect": "Os servos se alegram em temer o nome de Deus com reverência.",
+    "feedbackWrong": {
+      "a": "Releia o fim da oração em Neemias 1:11.",
+      "b": "O texto fala de uma atitude de reverência, não só de escuta."
+    },
+    "hint": "É uma atitude de reverência alegre.",
+    "learningObjective": "Lembrar o termo que descreve a reverência dos servos.",
+    "evidence": [
+      "Neemias 1:11"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-06",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Neemias 1:5 a Daniel 9:4?",
+    "prompt": "O que liga Neemias 1:5 a Daniel 9:4?",
+    "cue": "O que liga Neemias 1:5 a Daniel 9:4?",
+    "verseRef": "Neemias 1:5",
+    "passageText": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!",
+    "passageA": {
+      "ref": "Neemias 1:5",
+      "text": "E disse: Ah, Senhor, Deus dos céus, Deus grande e temível, que guardas a aliança e a misericórdia para com aqueles que te amam e guardam os teus mandamentos!"
+    },
+    "passageB": {
+      "ref": "Daniel 9:4",
+      "text": "Orei ao Senhor, meu Deus, e confessei: Ah! Senhor! Deus grande e temível, que guardas a aliança e a misericórdia para com os que te amam e guardam os teus mandamentos;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oração sem confissão alguma"
+      },
+      {
+        "id": "b",
+        "text": "Oração confessa e louva Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus não guarda aliança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus grande e temível",
+    "feedbackCorrect": "Daniel e Neemias começam louvando o Deus que guarda a aliança.",
+    "feedbackWrong": {
+      "a": "Os dois confessam o pecado do povo logo depois do louvor.",
+      "c": "Os dois textos afirmam que Deus guarda a aliança."
+    },
+    "hint": "Compare o começo das duas orações.",
+    "learningObjective": "Ligar duas orações que louvam o Deus da aliança.",
+    "evidence": [
+      "Neemias 1:5",
+      "Daniel 9:4"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-01",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Os construtores trabalhavam totalmente desarmados enquanto outros apenas vigiavam",
+    "prompt": "Os construtores trabalhavam totalmente desarmados enquanto outros apenas vigiavam",
+    "cue": "Os construtores trabalhavam totalmente desarmados enquanto outros apenas vigiavam",
+    "verseRef": "Neemias 4:17–18",
+    "passageText": "Os que edificavam o muro, os que carregavam as cargas e os que transportavam, cada um realizava seu trabalho com uma das mãos e, com a outra segurava a arma. E os construtores trabalhavam com a espada cingida à cintura; assim edificavam. E o que tocava a trombeta estava junto de mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cada um realizava seu trabalho com uma das mãos",
+    "feedbackCorrect": "Cada um trabalhava com uma mão e, com a outra, segurava a arma.",
+    "feedbackWrong": {
+      "true": "Releia Neemias 4:17 e veja o que a outra mão segurava."
+    },
+    "hint": "Veja as duas mãos do trabalhador.",
+    "learningObjective": "Observar como o povo trabalhava sob ameaça.",
+    "evidence": [
+      "Neemias 4:17–18"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-02",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Neemias 4:17, toque o que cada trabalhador segurava com a outra mão.",
+    "prompt": "Em Neemias 4:17, toque o que cada trabalhador segurava com a outra mão.",
+    "cue": "Em Neemias 4:17, toque o que cada trabalhador segurava com a outra mão.",
+    "verseRef": "Neemias 4:17",
+    "passageText": "Os que edificavam o muro, os que carregavam as cargas e os que transportavam, cada um realizava seu trabalho com uma das mãos e, com a outra segurava a arma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "arma"
+      },
+      {
+        "id": "b",
+        "text": "muro"
+      },
+      {
+        "id": "c",
+        "text": "cargas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "com a outra segurava a arma",
+    "feedbackCorrect": "Uma mão trabalhava e a outra segurava a arma, sem parar a obra.",
+    "feedbackWrong": {
+      "b": "O muro era o que estava sendo edificado.",
+      "c": "As cargas eram transportadas, não seguradas como defesa."
+    },
+    "hint": "Procure o objeto de defesa.",
+    "learningObjective": "Identificar o que o trabalhador segurava.",
+    "evidence": [
+      "Neemias 4:17"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-03",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Neemias 4:14, o que Neemias diz ao povo diante dos inimigos?",
+    "prompt": "Segundo Neemias 4:14, o que Neemias diz ao povo diante dos inimigos?",
+    "cue": "Segundo Neemias 4:14, o que Neemias diz ao povo diante dos inimigos?",
+    "verseRef": "Neemias 4:14",
+    "passageText": "Inspecionei, levantei-me e disse aos nobres, aos magistrados e ao restante do povo: Não os temais! Lembrai-vos do Senhor, grande e temível, e lutai por vossos irmãos, vossos filhos, vossas mulheres e vossas casas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escondam-se dentro das casas"
+      },
+      {
+        "id": "b",
+        "text": "Peçam ajuda aos inimigos"
+      },
+      {
+        "id": "c",
+        "text": "Abandonem o muro e fujam"
+      },
+      {
+        "id": "d",
+        "text": "Não temam e lembrem-se do Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Lembrai-vos do Senhor, grande e temível",
+    "feedbackCorrect": "Neemias encoraja o povo a não temer e a lembrar-se do Senhor.",
+    "feedbackWrong": {
+      "a": "O povo é posicionado atrás do muro, pronto, não escondido.",
+      "b": "Os inimigos queriam parar a obra, não ajudar.",
+      "c": "Ele chama o povo a lutar por suas famílias, não a fugir."
+    },
+    "hint": "Veja a ordem dupla que ele dá.",
+    "learningObjective": "Observar o encorajamento de Neemias ao povo.",
+    "evidence": [
+      "Neemias 4:14"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-04",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Neemias 4:17 na ordem do texto.",
+    "prompt": "Monte Neemias 4:17 na ordem do texto.",
+    "cue": "Monte Neemias 4:17 na ordem do texto.",
+    "verseRef": "Neemias 4:17",
+    "passageText": "Os que edificavam o muro, os que carregavam as cargas e os que transportavam, cada um realizava seu trabalho com uma das mãos e, com a outra segurava a arma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que edificavam o muro"
+      },
+      {
+        "id": "b",
+        "text": "cada um realizava seu trabalho com uma das mãos"
+      },
+      {
+        "id": "c",
+        "text": "com a outra segurava a arma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Os que edificavam o muro",
+    "feedbackCorrect": "Quem edifica trabalha com uma mão e segura a arma com a outra.",
+    "feedbackWrong": {
+      "default": "Comece por quem edificava o muro."
+    },
+    "hint": "O versículo começa com quem edifica.",
+    "learningObjective": "Reconhecer a sequência de Neemias 4:17.",
+    "evidence": [
+      "Neemias 4:17"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-05",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Neemias 4:18, o que os construtores traziam cingido à cintura?",
+    "prompt": "Em Neemias 4:18, o que os construtores traziam cingido à cintura?",
+    "cue": "Em Neemias 4:18, o que os construtores traziam cingido à cintura?",
+    "verseRef": "Neemias 4:18",
+    "passageText": "E os construtores trabalhavam com a espada cingida à cintura; assim edificavam. E o que tocava a trombeta estava junto de mim.",
+    "template": "E os construtores trabalhavam com a ___ cingida à cintura; assim edificavam. E o que tocava a trombeta estava junto de mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lança"
+      },
+      {
+        "id": "b",
+        "text": "trombeta"
+      },
+      {
+        "id": "c",
+        "text": "espada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "trabalhavam com a espada cingida à cintura",
+    "feedbackCorrect": "Eles edificavam com a espada na cintura, prontos sem largar o trabalho.",
+    "feedbackWrong": {
+      "a": "Esse item aparece com os guardas, não na cintura de quem constrói.",
+      "b": "Quem toca esse instrumento fica junto de Neemias."
+    },
+    "hint": "Fica preso ao corpo de quem constrói.",
+    "learningObjective": "Lembrar como os construtores se mantinham prontos.",
+    "evidence": [
+      "Neemias 4:18"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-06",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Neemias 4:9 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 4:9 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 4:9 comunica que se liga a este contexto?",
+    "verseRef": "Neemias 4:9",
+    "passageText": "Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite.",
+    "passageA": {
+      "ref": "Neemias 4:9",
+      "text": "Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Inimigos se juntam para atacar Jerusalém e provocar confusão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar e vigiar juntos"
+      },
+      {
+        "id": "b",
+        "text": "Fugir da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Parar a obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nós oramos ao nosso Deus",
+    "feedbackCorrect": "A resposta do povo une oração a Deus e vigilância prática.",
+    "feedbackWrong": {
+      "b": "O povo fica, vigia e continua edificando.",
+      "c": "A obra continua mesmo sob ameaça de ataque."
+    },
+    "hint": "Veja as duas ações do povo.",
+    "learningObjective": "Ligar Neemias 4:9 à resposta do povo à ameaça.",
+    "evidence": [
+      "Neemias 4:9"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-01",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Diante da ameaça, o povo orou a Deus e também estabeleceu vigilância dia e noite",
+    "prompt": "Diante da ameaça, o povo orou a Deus e também estabeleceu vigilância dia e noite",
+    "cue": "Diante da ameaça, o povo orou a Deus e também estabeleceu vigilância dia e noite",
+    "verseRef": "Neemias 4:9",
+    "passageText": "Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "estabelecemos uma vigilância contra eles, dia e noite",
+    "feedbackCorrect": "Oração e vigilância andam juntas na resposta do povo.",
+    "feedbackWrong": {
+      "false": "Releia Neemias 4:9 e note as duas ações lado a lado."
+    },
+    "hint": "Note as duas ações do versículo.",
+    "learningObjective": "Compreender que oração e preparo andam juntos.",
+    "evidence": [
+      "Neemias 4:9"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-02",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Neemias 4:14, toque de quem o povo deve se lembrar para não temer.",
+    "prompt": "Em Neemias 4:14, toque de quem o povo deve se lembrar para não temer.",
+    "cue": "Em Neemias 4:14, toque de quem o povo deve se lembrar para não temer.",
+    "verseRef": "Neemias 4:14",
+    "passageText": "Inspecionei, levantei-me e disse aos nobres, aos magistrados e ao restante do povo: Não os temais! Lembrai-vos do Senhor, grande e temível, e lutai por vossos irmãos, vossos filhos, vossas mulheres e vossas casas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "nobres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Lembrai-vos do Senhor, grande e temível",
+    "feedbackCorrect": "A coragem do povo nasce de lembrar quem Deus é.",
+    "feedbackWrong": {
+      "b": "O povo é quem precisa lembrar, não lembrar de si.",
+      "c": "Os nobres recebem a palavra, não são o motivo da coragem."
+    },
+    "hint": "Procure o nome de quem encoraja.",
+    "learningObjective": "Reconhecer a fonte da coragem do povo.",
+    "evidence": [
+      "Neemias 4:14"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-03",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o povo responde quando os inimigos planejam atacar Jerusalém?",
+    "prompt": "Como o povo responde quando os inimigos planejam atacar Jerusalém?",
+    "cue": "Como o povo responde quando os inimigos planejam atacar Jerusalém?",
+    "verseRef": "Neemias 4:8–9",
+    "passageText": "E todos se juntaram de comum acordo para atacar Jerusalém e provocar confusão ali. Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Convida os inimigos para ajudar na obra"
+      },
+      {
+        "id": "b",
+        "text": "Troca a oração por apenas armas"
+      },
+      {
+        "id": "c",
+        "text": "Ora a Deus e monta guarda sem parar"
+      },
+      {
+        "id": "d",
+        "text": "Abandona o muro e foge para o campo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nós oramos ao nosso Deus",
+    "feedbackCorrect": "A ameaça é respondida com oração, guarda e obra que continua.",
+    "feedbackWrong": {
+      "a": "Os inimigos querem confusão, não participar da obra.",
+      "b": "As armas acompanham a oração, não a substituem.",
+      "d": "Ninguém foge; o povo se posiciona e continua."
+    },
+    "hint": "Junte o fim do trecho com o começo.",
+    "learningObjective": "Relacionar ameaça, oração e vigilância.",
+    "evidence": [
+      "Neemias 4:8–9"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-04",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos da defesa em Neemias 4?",
+    "prompt": "Como se encadeiam os passos da defesa em Neemias 4?",
+    "cue": "Como se encadeiam os passos da defesa em Neemias 4?",
+    "verseRef": "Neemias 4:9",
+    "passageText": "Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inimigos zombam e ameaçam a obra"
+      },
+      {
+        "id": "b",
+        "text": "O povo ora e vigia dia e noite"
+      },
+      {
+        "id": "c",
+        "text": "Todos voltam ao muro para trabalhar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nós oramos ao nosso Deus",
+    "feedbackCorrect": "A ameaça vem primeiro; a resposta une oração, guarda e trabalho.",
+    "feedbackWrong": {
+      "default": "Comece pela ameaça; o retorno ao trabalho vem depois."
+    },
+    "hint": "O trabalho retomado é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento entre ameaça e resposta.",
+    "evidence": [
+      "Neemias 4:9",
+      "Neemias 4:15"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-05",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Neemias 4:20, ao som de que instrumento o povo devia se reunir?",
+    "prompt": "Em Neemias 4:20, ao som de que instrumento o povo devia se reunir?",
+    "cue": "Em Neemias 4:20, ao som de que instrumento o povo devia se reunir?",
+    "verseRef": "Neemias 4:20",
+    "passageText": "No lugar onde ouvirdes o som da trombeta, ali acorrei para estarmos juntos; o nosso Deus lutará por nós.",
+    "template": "No lugar onde ouvirdes o som da ___, ali acorrei para estarmos juntos; o nosso Deus lutará por nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "voz"
+      },
+      {
+        "id": "b",
+        "text": "trombeta"
+      },
+      {
+        "id": "c",
+        "text": "espada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "onde ouvirdes o som da trombeta",
+    "feedbackCorrect": "O som reúne o povo no ponto de perigo, confiando que Deus luta por eles.",
+    "feedbackWrong": {
+      "a": "O texto nomeia um instrumento específico de sinal.",
+      "c": "Esse objeto não faz som de reunião."
+    },
+    "hint": "É um sinal sonoro de reunião.",
+    "learningObjective": "Compreender o sinal que reunia o povo na defesa.",
+    "evidence": [
+      "Neemias 4:20"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-06",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Neemias 4:20 a Êxodo 14:14?",
+    "prompt": "O que liga Neemias 4:20 a Êxodo 14:14?",
+    "cue": "O que liga Neemias 4:20 a Êxodo 14:14?",
+    "verseRef": "Neemias 4:20",
+    "passageText": "No lugar onde ouvirdes o som da trombeta, ali acorrei para estarmos juntos; o nosso Deus lutará por nós.",
+    "passageA": {
+      "ref": "Neemias 4:20",
+      "text": "No lugar onde ouvirdes o som da trombeta, ali acorrei para estarmos juntos; o nosso Deus lutará por nós."
+    },
+    "passageB": {
+      "ref": "Êxodo 14:14",
+      "text": "O Senhor lutará por vocês, e vocês se calarão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus abandona a batalha"
+      },
+      {
+        "id": "b",
+        "text": "Deus luta pelo seu povo"
+      },
+      {
+        "id": "c",
+        "text": "O povo luta sem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o nosso Deus lutará por nós",
+    "feedbackCorrect": "Nos dois momentos, o povo confia que Deus mesmo luta por ele.",
+    "feedbackWrong": {
+      "a": "Êxodo e Neemias mostram Deus presente na luta.",
+      "c": "Neemias afirma o contrário ao reunir o povo."
+    },
+    "hint": "Compare quem luta nos dois textos.",
+    "learningObjective": "Relacionar a confiança de Neemias à do Êxodo.",
+    "evidence": [
+      "Neemias 4:20",
+      "Êxodo 14:14"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-01",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Trabalhar com arma na mão mostra que Neemias havia deixado de confiar em Deus",
+    "prompt": "Trabalhar com arma na mão mostra que Neemias havia deixado de confiar em Deus",
+    "cue": "Trabalhar com arma na mão mostra que Neemias havia deixado de confiar em Deus",
+    "verseRef": "Neemias 4:17–18",
+    "passageText": "Os que edificavam o muro, os que carregavam as cargas e os que transportavam, cada um realizava seu trabalho com uma das mãos e, com a outra segurava a arma. E os construtores trabalhavam com a espada cingida à cintura; assim edificavam. E o que tocava a trombeta estava junto de mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "com a outra segurava a arma",
+    "feedbackCorrect": "O preparo acompanha a oração; o povo confia que Deus lutará por ele.",
+    "feedbackWrong": {
+      "true": "Junte a arma de 4:17 com a oração de 4:9 e a confiança de 4:20."
+    },
+    "hint": "Junte preparo e oração do capítulo.",
+    "learningObjective": "Interpretar o preparo como companheiro da confiança.",
+    "evidence": [
+      "Neemias 4:17–18"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-02",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Neemias 6:16, toque o trecho que os inimigos reconhecem como autor da obra.",
+    "prompt": "Em Neemias 6:16, toque o trecho que os inimigos reconhecem como autor da obra.",
+    "cue": "Em Neemias 6:16, toque o trecho que os inimigos reconhecem como autor da obra.",
+    "verseRef": "Neemias 6:16",
+    "passageText": "E aconteceu que, ao ouvirem isso, todos os nossos inimigos temeram, e todos os gentios ao nosso redor se humilharam muito, pois reconheceram que foi por intervenção de nosso Deus que realizamos esta obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nossos inimigos"
+      },
+      {
+        "id": "b",
+        "text": "nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "gentios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "foi por intervenção de nosso Deus",
+    "feedbackCorrect": "Até os inimigos reconhecem que a obra foi feita com Deus agindo.",
+    "feedbackWrong": {
+      "a": "Eles são quem reconhece, não quem fez a obra.",
+      "c": "Eles observam a obra; o reconhecimento aponta mais alto."
+    },
+    "hint": "Procure quem realizou a obra, segundo eles.",
+    "learningObjective": "Sustentar com o texto a ação de Deus na conclusão.",
+    "evidence": [
+      "Neemias 6:16"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-03",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Neemias 6:15–16 sustenta sobre a conclusão do muro?",
+    "prompt": "Que leitura Neemias 6:15–16 sustenta sobre a conclusão do muro?",
+    "cue": "Que leitura Neemias 6:15–16 sustenta sobre a conclusão do muro?",
+    "verseRef": "Neemias 6:15–16",
+    "passageText": "O muro foi finalizado no dia vinte e cinco de Elul, em um total de cinquenta e dois dias. E aconteceu que, ao ouvirem isso, todos os nossos inimigos temeram, e todos os gentios ao nosso redor se humilharam muito, pois reconheceram que foi por intervenção de nosso Deus que realizamos esta obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inimigos reconhecem a mão de Deus na obra"
+      },
+      {
+        "id": "b",
+        "text": "Deus age apenas sem trabalho humano"
+      },
+      {
+        "id": "c",
+        "text": "A rapidez prova só esforço humano"
+      },
+      {
+        "id": "d",
+        "text": "Muro pronto torna a oração desnecessária"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reconheceram que foi por intervenção de nosso Deus",
+    "feedbackCorrect": "A obra termina e até os adversários enxergam Deus nela.",
+    "feedbackWrong": {
+      "b": "Deus age enquanto o povo trabalha e vigia.",
+      "c": "O próprio texto credita a conclusão à intervenção de Deus.",
+      "d": "A oração sustentou a obra do começo ao fim."
+    },
+    "hint": "Veja a conclusão que os próprios inimigos tiram.",
+    "learningObjective": "Escolher a interpretação sustentada pela conclusão do muro.",
+    "evidence": [
+      "Neemias 6:15–16"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-04",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da obra sob oposição?",
+    "prompt": "Qual sequência revela o sentido da obra sob oposição?",
+    "cue": "Qual sequência revela o sentido da obra sob oposição?",
+    "verseRef": "Neemias 6:15–16",
+    "passageText": "O muro foi finalizado no dia vinte e cinco de Elul, em um total de cinquenta e dois dias. E aconteceu que, ao ouvirem isso, todos os nossos inimigos temeram, e todos os gentios ao nosso redor se humilharam muito, pois reconheceram que foi por intervenção de nosso Deus que realizamos esta obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo ora e vigia sob ameaça"
+      },
+      {
+        "id": "b",
+        "text": "O muro é concluído em cinquenta e dois dias"
+      },
+      {
+        "id": "c",
+        "text": "Inimigos reconhecem a intervenção de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O muro foi finalizado",
+    "feedbackCorrect": "Oração sob ameaça, obra concluída e reconhecimento de Deus nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela resposta à ameaça; o reconhecimento fecha a história."
+    },
+    "hint": "O reconhecimento dos inimigos fecha a cena.",
+    "learningObjective": "Ver o fio entre confiança, conclusão e testemunho.",
+    "evidence": [
+      "Neemias 4:9",
+      "Neemias 6:15–16"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-05",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Neemias 6:9, o que Neemias pede que Deus fortaleça nele?",
+    "prompt": "Em Neemias 6:9, o que Neemias pede que Deus fortaleça nele?",
+    "cue": "Em Neemias 6:9, o que Neemias pede que Deus fortaleça nele?",
+    "verseRef": "Neemias 6:9",
+    "passageText": "Porque todos eles tentavam nos intimidar, dizendo: As suas mãos desistirão da obra, e ela não será realizada. Agora, pois, ó Deus, fortalece as minhas mãos.",
+    "template": "Porque todos eles tentavam nos intimidar, dizendo: As suas ___ desistirão da obra, e ela não será realizada. Agora, pois, ó Deus, fortalece as minhas mãos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "vozes"
+      },
+      {
+        "id": "c",
+        "text": "mãos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fortalece as minhas mãos",
+    "feedbackCorrect": "Ameaçado, Neemias pede forças para continuar, em vez de desistir.",
+    "feedbackWrong": {
+      "a": "Ele pede força pessoal para não largar a tarefa.",
+      "b": "Releia o pedido breve de Neemias 6:9."
+    },
+    "hint": "É o que os inimigos queriam fazer desistir.",
+    "learningObjective": "Lembrar o pedido de força para perseverar na obra.",
+    "evidence": [
+      "Neemias 6:9"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-06",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Neemias 4:9 a Salmos 127:1?",
+    "prompt": "O que liga Neemias 4:9 a Salmos 127:1?",
+    "cue": "O que liga Neemias 4:9 a Salmos 127:1?",
+    "verseRef": "Neemias 4:9",
+    "passageText": "Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite.",
+    "passageA": {
+      "ref": "Neemias 4:9",
+      "text": "Contudo, nós oramos ao nosso Deus e, como proteção, estabelecemos uma vigilância contra eles, dia e noite."
+    },
+    "passageB": {
+      "ref": "Salmos 127:1",
+      "text": "Se o Senhor não edificar a casa, em vão trabalham os que a edificam; se o Senhor não guardar a cidade, em vão vigia a sentinela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vigiar torna Deus desnecessário"
+      },
+      {
+        "id": "b",
+        "text": "Edificar dispensa confiar"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor sustenta a obra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nós oramos ao nosso Deus",
+    "feedbackCorrect": "Vigiar só faz sentido porque é o Senhor quem guarda e sustenta.",
+    "feedbackWrong": {
+      "a": "O salmo diz o contrário sobre vigiar sem o Senhor.",
+      "b": "Nos dois textos, trabalho e confiança andam juntos."
+    },
+    "hint": "Veja quem guarda, segundo o salmo.",
+    "learningObjective": "Ligar vigilância humana e sustento de Deus.",
+    "evidence": [
+      "Neemias 4:9",
+      "Salmos 127:1"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-01",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Esdras leu o Livro da Lei desde a alva até ao meio-dia diante do povo",
+    "prompt": "Esdras leu o Livro da Lei desde a alva até ao meio-dia diante do povo",
+    "cue": "Esdras leu o Livro da Lei desde a alva até ao meio-dia diante do povo",
+    "verseRef": "Neemias 8:3",
+    "passageText": "E leu no livro, diante da praça que está em frente à Porta das Águas, desde a alva até ao meio-dia, perante homens e mulheres e todos os que podiam entender; e os ouvidos de todo o povo estavam atentos ao Livro da Lei.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "desde a alva até ao meio-dia",
+    "feedbackCorrect": "A leitura durou a manhã inteira, com o povo atento ao Livro.",
+    "feedbackWrong": {
+      "false": "Releia Neemias 8:3 e note o tempo da leitura."
+    },
+    "hint": "Veja quanto tempo dura a leitura.",
+    "learningObjective": "Observar a leitura pública e atenta da Lei.",
+    "evidence": [
+      "Neemias 8:3"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-02",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Neemias 8:1, toque quem o povo pediu que trouxesse o Livro da Lei.",
+    "prompt": "Em Neemias 8:1, toque quem o povo pediu que trouxesse o Livro da Lei.",
+    "cue": "Em Neemias 8:1, toque quem o povo pediu que trouxesse o Livro da Lei.",
+    "verseRef": "Neemias 8:1",
+    "passageText": "E, quando chegou o sétimo mês, e os filhos de Israel estavam em suas cidades, todo o povo se ajuntou como um só homem na praça, diante da Porta das Águas, e disseram a Esdras, o escriba, que trouxesse o Livro da Lei de Moisés, que o SENHOR tinha prescrito a Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Esdras"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "disseram a Esdras, o escriba",
+    "feedbackCorrect": "O povo pede ao escriba que traga o Livro da Lei de Moisés.",
+    "feedbackWrong": {
+      "a": "Moisés é o nome ligado ao Livro, não quem o traz.",
+      "c": "Israel é o povo que pede, não quem traz o Livro."
+    },
+    "hint": "Procure o nome do escriba.",
+    "learningObjective": "Identificar quem traz o Livro a pedido do povo.",
+    "evidence": [
+      "Neemias 8:1"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-03",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Neemias 8:8, como a leitura da Lei era feita?",
+    "prompt": "Segundo Neemias 8:8, como a leitura da Lei era feita?",
+    "cue": "Segundo Neemias 8:8, como a leitura da Lei era feita?",
+    "verseRef": "Neemias 8:8",
+    "passageText": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lendo depressa e sem explicar nada"
+      },
+      {
+        "id": "b",
+        "text": "Lendo e explicando para todos compreenderem"
+      },
+      {
+        "id": "c",
+        "text": "Lendo em segredo só para sacerdotes"
+      },
+      {
+        "id": "d",
+        "text": "Cada pessoa lendo sozinha em casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "dando explicações e declarações",
+    "feedbackCorrect": "Liam e davam explicações, fazendo todos compreenderem o texto.",
+    "feedbackWrong": {
+      "a": "O texto destaca justamente as explicações dadas.",
+      "c": "A leitura é pública, diante de todo o povo reunido.",
+      "d": "O povo está junto na praça ouvindo a mesma leitura."
+    },
+    "hint": "Veja o que acompanhava a leitura.",
+    "learningObjective": "Observar que a leitura era explicada ao povo.",
+    "evidence": [
+      "Neemias 8:8"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-04",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Neemias 8:6 na ordem do texto.",
+    "prompt": "Monte Neemias 8:6 na ordem do texto.",
+    "cue": "Monte Neemias 8:6 na ordem do texto.",
+    "verseRef": "Neemias 8:6",
+    "passageText": "E Esdras bendisse ao Senhor, o grande Deus. E todo o povo respondeu: Amém! Amém! levantando as mãos, inclinando-se, adoraram ao Senhor com o rosto em terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Esdras bendisse ao Senhor, o grande Deus"
+      },
+      {
+        "id": "b",
+        "text": "E todo o povo respondeu"
+      },
+      {
+        "id": "c",
+        "text": "adoraram ao Senhor com o rosto em terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E Esdras bendisse ao Senhor, o grande Deus",
+    "feedbackCorrect": "Esdras bendiz a Deus, o povo responde Amém e todos adoram.",
+    "feedbackWrong": {
+      "default": "Comece por Esdras bendizendo ao Senhor."
+    },
+    "hint": "O versículo começa com Esdras.",
+    "learningObjective": "Reconhecer a sequência de Neemias 8:6.",
+    "evidence": [
+      "Neemias 8:6"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-05",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Neemias 8:8, o que as explicações faziam todos fazerem com a leitura?",
+    "prompt": "Em Neemias 8:8, o que as explicações faziam todos fazerem com a leitura?",
+    "cue": "Em Neemias 8:8, o que as explicações faziam todos fazerem com a leitura?",
+    "verseRef": "Neemias 8:8",
+    "passageText": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido.",
+    "template": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos ___ o que estava sendo lido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvissem"
+      },
+      {
+        "id": "b",
+        "text": "compreendessem"
+      },
+      {
+        "id": "c",
+        "text": "decorassem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "faziam com que todos compreendessem",
+    "feedbackCorrect": "As explicações faziam todos compreenderem o que estava sendo lido.",
+    "feedbackWrong": {
+      "a": "Ouvir eles já ouviam; a explicação mira mais fundo.",
+      "c": "O alvo não é repetir de cor, e sim entender."
+    },
+    "hint": "É o fruto das explicações no povo.",
+    "learningObjective": "Lembrar o objetivo da explicação da Lei.",
+    "evidence": [
+      "Neemias 8:8"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-06",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Neemias 8:10 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:10 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:10 comunica que se liga a este contexto?",
+    "verseRef": "Neemias 8:10",
+    "passageText": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força.",
+    "passageA": {
+      "ref": "Neemias 8:10",
+      "text": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O povo chorava ao ouvir a Lei e é chamado a celebrar naquele dia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A tristeza é o fim"
+      },
+      {
+        "id": "b",
+        "text": "Chorar dispensa obedecer"
+      },
+      {
+        "id": "c",
+        "text": "A alegria do Senhor é força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a alegria do Senhor é a sua força",
+    "feedbackCorrect": "No dia consagrado, a alegria que vem do Senhor fortalece o povo.",
+    "feedbackWrong": {
+      "a": "Os líderes pedem que não se entristeçam naquele dia.",
+      "b": "Entender a Lei leva também a praticá-la, como nas cabanas."
+    },
+    "hint": "Veja o que fortalece o povo.",
+    "learningObjective": "Ligar Neemias 8:10 à força que vem da alegria em Deus.",
+    "evidence": [
+      "Neemias 8:10"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-01",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O povo entendeu a Lei sem que ninguém precisasse explicar o que era lido",
+    "prompt": "O povo entendeu a Lei sem que ninguém precisasse explicar o que era lido",
+    "cue": "O povo entendeu a Lei sem que ninguém precisasse explicar o que era lido",
+    "verseRef": "Neemias 8:8",
+    "passageText": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "dando explicações e declarações",
+    "feedbackCorrect": "Levitas davam explicações para que todos compreendessem a leitura.",
+    "feedbackWrong": {
+      "true": "Releia Neemias 8:8 e veja o papel das explicações."
+    },
+    "hint": "Veja como a leitura era acompanhada.",
+    "learningObjective": "Compreender o papel da explicação no entendimento.",
+    "evidence": [
+      "Neemias 8:8"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-02",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Neemias 8:12, toque a palavra que liga a alegria do povo ao entendimento.",
+    "prompt": "Em Neemias 8:12, toque a palavra que liga a alegria do povo ao entendimento.",
+    "cue": "Em Neemias 8:12, toque a palavra que liga a alegria do povo ao entendimento.",
+    "verseRef": "Neemias 8:12",
+    "passageText": "Então, todo o povo foi comer, beber, enviar porções e regozijar-se grandemente, porque haviam entendido as palavras que lhes foram explicadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "porque"
+      },
+      {
+        "id": "c",
+        "text": "grandemente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque haviam entendido as palavras",
+    "feedbackCorrect": "A alegria tem causa: eles haviam entendido as palavras explicadas.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre o versículo, mas não explica a causa.",
+      "c": "Essa palavra mede a alegria, não mostra sua causa."
+    },
+    "hint": "Procure a ligação entre alegrar-se e entender.",
+    "learningObjective": "Reconhecer a ligação de causa no texto.",
+    "evidence": [
+      "Neemias 8:12"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-03",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o choro do povo se relaciona com o chamado dos líderes em Neemias 8:9–10?",
+    "prompt": "Como o choro do povo se relaciona com o chamado dos líderes em Neemias 8:9–10?",
+    "cue": "Como o choro do povo se relaciona com o chamado dos líderes em Neemias 8:9–10?",
+    "verseRef": "Neemias 8:9–10",
+    "passageText": "E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que ensinavam todo o povo disseram: \"Este dia é consagrado ao Senhor, vosso Deus; pelo que não se entristeçam nem chorem, pois todo o povo chorava, ao ouvir as palavras da Lei.\" Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O choro dá lugar a celebração santa e partilha"
+      },
+      {
+        "id": "b",
+        "text": "Os líderes mandam ignorar a Lei ouvida"
+      },
+      {
+        "id": "c",
+        "text": "O dia santo exige tristeza sem fim"
+      },
+      {
+        "id": "d",
+        "text": "O povo celebra sem ter entendido nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não se entristeçam, pois a alegria do Senhor é a sua força",
+    "feedbackCorrect": "O dia é consagrado: comer, beber, partilhar e se alegrar no Senhor.",
+    "feedbackWrong": {
+      "b": "Eles valorizam a Lei e chamam o povo a celebrar por ela.",
+      "c": "Os líderes dizem claramente para não se entristecerem.",
+      "d": "A alegria vem justamente de terem entendido as palavras."
+    },
+    "hint": "Compare o choro com o convite seguinte.",
+    "learningObjective": "Relacionar choro, dia santo e alegria.",
+    "evidence": [
+      "Neemias 8:9–10"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-04",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena da leitura em Neemias 8?",
+    "prompt": "Como avança a cena da leitura em Neemias 8?",
+    "cue": "Como avança a cena da leitura em Neemias 8?",
+    "verseRef": "Neemias 8:12",
+    "passageText": "Então, todo o povo foi comer, beber, enviar porções e regozijar-se grandemente, porque haviam entendido as palavras que lhes foram explicadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo ouve a Lei com atenção"
+      },
+      {
+        "id": "b",
+        "text": "Os levitas explicam o sentido ao povo"
+      },
+      {
+        "id": "c",
+        "text": "O povo celebra por ter entendido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "porque haviam entendido as palavras",
+    "feedbackCorrect": "Ouvir, entender pela explicação e celebrar nessa ordem.",
+    "feedbackWrong": {
+      "default": "A celebração vem depois de ouvir e entender."
+    },
+    "hint": "A celebração é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de ouvir a celebrar.",
+    "evidence": [
+      "Neemias 8:12"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-05",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Neemias 8:10, a alegria do Senhor é o que para o povo?",
+    "prompt": "Em Neemias 8:10, a alegria do Senhor é o que para o povo?",
+    "cue": "Em Neemias 8:10, a alegria do Senhor é o que para o povo?",
+    "verseRef": "Neemias 8:10",
+    "passageText": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força.",
+    "template": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "festa"
+      },
+      {
+        "id": "b",
+        "text": "prova"
+      },
+      {
+        "id": "c",
+        "text": "força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a alegria do Senhor é a sua força",
+    "feedbackCorrect": "A alegria que vem do Senhor sustenta e fortalece o povo.",
+    "feedbackWrong": {
+      "a": "A celebração existe, mas o texto nomeia outro fruto dela.",
+      "b": "Releia o fim do convite em Neemias 8:10."
+    },
+    "hint": "É o que sustenta quem está fraco.",
+    "learningObjective": "Compreender a alegria em Deus como sustento do povo.",
+    "evidence": [
+      "Neemias 8:10"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-06",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Neemias 8:8 a Salmos 119:105?",
+    "prompt": "O que liga Neemias 8:8 a Salmos 119:105?",
+    "cue": "O que liga Neemias 8:8 a Salmos 119:105?",
+    "verseRef": "Neemias 8:8",
+    "passageText": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido.",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido."
+    },
+    "passageB": {
+      "ref": "Salmos 119:105",
+      "text": "A tua palavra é lâmpada para os meus pés e luz para o meu caminho"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra confunde o povo"
+      },
+      {
+        "id": "b",
+        "text": "Ler dispensa entender"
+      },
+      {
+        "id": "c",
+        "text": "A palavra guia o caminho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "faziam com que todos compreendessem",
+    "feedbackCorrect": "Entendida, a palavra ilumina os passos de quem a ouve.",
+    "feedbackWrong": {
+      "a": "A explicação torna a palavra clara, não confusa.",
+      "b": "Neemias 8 mostra o cuidado de explicar para entender."
+    },
+    "hint": "Veja o efeito da palavra nos dois textos.",
+    "learningObjective": "Relacionar a palavra entendida à guia para a vida.",
+    "evidence": [
+      "Neemias 8:8",
+      "Salmos 119:105"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-01",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Entender a Lei levou o povo a celebrar e a partilhar com quem nada tinha",
+    "prompt": "Entender a Lei levou o povo a celebrar e a partilhar com quem nada tinha",
+    "cue": "Entender a Lei levou o povo a celebrar e a partilhar com quem nada tinha",
+    "verseRef": "Neemias 8:12",
+    "passageText": "Então, todo o povo foi comer, beber, enviar porções e regozijar-se grandemente, porque haviam entendido as palavras que lhes foram explicadas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "porque haviam entendido as palavras que lhes foram explicadas",
+    "feedbackCorrect": "Eles comem, bebem, enviam porções e se alegram por terem entendido.",
+    "feedbackWrong": {
+      "false": "Releia Neemias 8:12 e ligue a alegria ao entendimento."
+    },
+    "hint": "Junte entendimento e celebração.",
+    "learningObjective": "Interpretar a alegria como fruto do entendimento.",
+    "evidence": [
+      "Neemias 8:12"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-02",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Neemias 8:17, toque o trecho que mostra o tamanho da alegria da festa.",
+    "prompt": "Em Neemias 8:17, toque o trecho que mostra o tamanho da alegria da festa.",
+    "cue": "Em Neemias 8:17, toque o trecho que mostra o tamanho da alegria da festa.",
+    "verseRef": "Neemias 8:17",
+    "passageText": "E toda a congregação dos que tinham voltado do cativeiro fez cabanas e habitou nelas, pois nunca tinham feito isso os filhos de Israel, desde os dias de Josué, filho de Num, até aquele dia; e houve uma mui grande alegria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cabanas"
+      },
+      {
+        "id": "b",
+        "text": "cativeiro"
+      },
+      {
+        "id": "c",
+        "text": "mui grande alegria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e houve uma mui grande alegria",
+    "feedbackCorrect": "A obediência redescoberta termina em uma alegria muito grande.",
+    "feedbackWrong": {
+      "a": "Isso é onde moraram na festa, não o sentimento dela.",
+      "b": "Isso descreve de onde o povo voltou, não a alegria."
+    },
+    "hint": "Procure o sentimento no fim do versículo.",
+    "learningObjective": "Sustentar com o texto a alegria da obediência.",
+    "evidence": [
+      "Neemias 8:17"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-03",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Neemias 8:9–12 sustenta sobre ouvir a palavra de Deus?",
+    "prompt": "Que leitura Neemias 8:9–12 sustenta sobre ouvir a palavra de Deus?",
+    "cue": "Que leitura Neemias 8:9–12 sustenta sobre ouvir a palavra de Deus?",
+    "verseRef": "Neemias 8:9–10",
+    "passageText": "E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que ensinavam todo o povo disseram: \"Este dia é consagrado ao Senhor, vosso Deus; pelo que não se entristeçam nem chorem, pois todo o povo chorava, ao ouvir as palavras da Lei.\" Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra entendida gera alegria e partilha"
+      },
+      {
+        "id": "b",
+        "text": "Emoção basta mesmo sem entender"
+      },
+      {
+        "id": "c",
+        "text": "Celebrar substitui qualquer obediência"
+      },
+      {
+        "id": "d",
+        "text": "Só líderes precisam compreender a Lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "enviem porções àqueles que não têm nada preparado",
+    "feedbackCorrect": "Quem entende celebra e reparta com quem nada tem preparado.",
+    "feedbackWrong": {
+      "b": "O texto liga a alegria a terem entendido as palavras.",
+      "c": "Depois de celebrar, o povo obedece celebrando as cabanas.",
+      "d": "Todo o povo capaz de entender estava reunido para ouvir."
+    },
+    "hint": "Junte entendimento, alegria e porções enviadas.",
+    "learningObjective": "Escolher a interpretação sustentada pela cena da leitura.",
+    "evidence": [
+      "Neemias 8:9–10"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-04",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da Lei redescoberta?",
+    "prompt": "Qual sequência revela o caminho da Lei redescoberta?",
+    "cue": "Qual sequência revela o caminho da Lei redescoberta?",
+    "verseRef": "Neemias 8:14",
+    "passageText": "E encontraram escrito na Lei que o Senhor ordenara por meio de Moisés que os filhos de Israel habitassem em cabanas durante a festa do sétimo mês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus dá a Lei por meio de Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Esdras lê e explica ao povo reunido"
+      },
+      {
+        "id": "c",
+        "text": "O povo celebra a festa das cabanas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "que o Senhor ordenara por meio de Moisés",
+    "feedbackCorrect": "A Lei dada por Moisés é lida, entendida e vivida na festa.",
+    "feedbackWrong": {
+      "default": "Comece pela Lei dada no passado; a festa é o fruto final."
+    },
+    "hint": "A festa vivida é o ponto de chegada.",
+    "learningObjective": "Ver a Lei como fio entre Moisés, Esdras e o povo.",
+    "evidence": [
+      "Neemias 8:14",
+      "Neemias 8:17"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-05",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Neemias 8:17, onde o povo habitou durante a festa redescoberta?",
+    "prompt": "Em Neemias 8:17, onde o povo habitou durante a festa redescoberta?",
+    "cue": "Em Neemias 8:17, onde o povo habitou durante a festa redescoberta?",
+    "verseRef": "Neemias 8:17",
+    "passageText": "E toda a congregação dos que tinham voltado do cativeiro fez cabanas e habitou nelas, pois nunca tinham feito isso os filhos de Israel, desde os dias de Josué, filho de Num, até aquele dia; e houve uma mui grande alegria.",
+    "template": "E toda a congregação dos que tinham voltado do cativeiro fez ___ e habitou nelas, pois nunca tinham feito isso os filhos de Israel, desde os dias de Josué, filho de Num, até aquele dia; e houve uma mui grande alegria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tendas"
+      },
+      {
+        "id": "b",
+        "text": "cabanas"
+      },
+      {
+        "id": "c",
+        "text": "casas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fez cabanas e habitou nelas",
+    "feedbackCorrect": "Como estava escrito, o povo fez moradas simples e habitou nelas.",
+    "feedbackWrong": {
+      "a": "O texto usa um nome específico para essas moradas.",
+      "c": "Eles saíram do conforto para morar como a Lei mandava."
+    },
+    "hint": "São moradas simples feitas de ramos.",
+    "learningObjective": "Lembrar a prática redescoberta na leitura da Lei.",
+    "evidence": [
+      "Neemias 8:17"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-06",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Neemias 8:18 a Josué 1:8?",
+    "prompt": "O que liga Neemias 8:18 a Josué 1:8?",
+    "cue": "O que liga Neemias 8:18 a Josué 1:8?",
+    "verseRef": "Neemias 8:18",
+    "passageText": "E, dia após dia, Esdras leu no Livro da Lei de Deus, desde o primeiro até o último dia; e celebraram a festa por sete dias; no oitavo dia, houve uma assembleia solene, segundo o prescrito.",
+    "passageA": {
+      "ref": "Neemias 8:18",
+      "text": "E, dia após dia, Esdras leu no Livro da Lei de Deus, desde o primeiro até o último dia; e celebraram a festa por sete dias; no oitavo dia, houve uma assembleia solene, segundo o prescrito."
+    },
+    "passageB": {
+      "ref": "Josué 1:8",
+      "text": "Não se afaste da tua boca o Livro desta Lei; antes, medita nele dia e noite, para que tenhas cuidado de fazer segundo tudo o que nele está escrito; pois assim farás prosperar o teu caminho e serás bem-sucedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Meditar e viver a Lei"
+      },
+      {
+        "id": "b",
+        "text": "Lei só para escribas"
+      },
+      {
+        "id": "c",
+        "text": "Ler uma vez basta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Esdras leu no Livro da Lei de Deus",
+    "feedbackCorrect": "Leitura dia após dia forma uma vida que pratica a Lei.",
+    "feedbackWrong": {
+      "b": "Josué e Neemias mostram a Lei para todo o povo viver.",
+      "c": "Esdras lê dia após dia, do primeiro ao último dia."
+    },
+    "hint": "Veja a frequência da leitura nos dois textos.",
+    "learningObjective": "Ligar leitura constante à prática da Lei.",
+    "evidence": [
+      "Neemias 8:18",
+      "Josué 1:8"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-01",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Esdras leu a Lei sozinho em casa enquanto o povo esperava na praça",
+    "prompt": "Esdras leu a Lei sozinho em casa enquanto o povo esperava na praça",
+    "cue": "Esdras leu a Lei sozinho em casa enquanto o povo esperava na praça",
+    "verseRef": "Neemias 8:3",
+    "passageText": "E leu no livro, diante da praça que está em frente à Porta das Águas, desde a alva até ao meio-dia, perante homens e mulheres e todos os que podiam entender; e os ouvidos de todo o povo estavam atentos ao Livro da Lei.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "leu no livro, diante da praça",
+    "feedbackCorrect": "Ele leu diante da praça, perante homens, mulheres e quem podia entender.",
+    "feedbackWrong": {
+      "true": "Releia Neemias 8:3 e veja onde e diante de quem ele leu."
+    },
+    "hint": "Veja o lugar da leitura.",
+    "learningObjective": "Observar que a leitura da Lei foi pública.",
+    "evidence": [
+      "Neemias 8:3"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-02",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Neemias 8:5, toque o que Esdras abriu diante de todo o povo.",
+    "prompt": "Em Neemias 8:5, toque o que Esdras abriu diante de todo o povo.",
+    "cue": "Em Neemias 8:5, toque o que Esdras abriu diante de todo o povo.",
+    "verseRef": "Neemias 8:5",
+    "passageText": "E Esdras abriu o livro à vista de todo o povo, pois estava em um lugar elevado; ao abri-lo, todo o povo se levantou",
+    "options": [
+      {
+        "id": "a",
+        "text": "livro"
+      },
+      {
+        "id": "b",
+        "text": "lugar"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Esdras abriu o livro",
+    "feedbackCorrect": "Ao abrir, todo o povo se levantou em respeito à leitura.",
+    "feedbackWrong": {
+      "b": "Isso descreve onde Esdras estava, não o que ele abriu.",
+      "c": "Eles são quem vê a abertura, não o que é aberto."
+    },
+    "hint": "Procure o objeto aberto por ele.",
+    "learningObjective": "Identificar o objeto central da reunião do povo.",
+    "evidence": [
+      "Neemias 8:5"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-03",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Neemias 9:2, o que o povo fez ao se pôr de pé?",
+    "prompt": "Segundo Neemias 9:2, o que o povo fez ao se pôr de pé?",
+    "cue": "Segundo Neemias 9:2, o que o povo fez ao se pôr de pé?",
+    "verseRef": "Neemias 9:2",
+    "passageText": "E a linhagem de Israel se separou de todos os estrangeiros, e, pondo-se em pé, confessaram os seus pecados e as iniquidades de seus pais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Celebrou de novo a festa das cabanas"
+      },
+      {
+        "id": "b",
+        "text": "Reconstruiu outra porta da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Confessou seus pecados e os de seus pais"
+      },
+      {
+        "id": "d",
+        "text": "Escolheu um novo rei para Judá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "confessaram os seus pecados",
+    "feedbackCorrect": "De pé, eles confessam os próprios pecados e os de seus pais.",
+    "feedbackWrong": {
+      "a": "A festa das cabanas foi celebrada antes, em Neemias 8.",
+      "b": "Os muros já estavam levantados; agora é renovação do povo.",
+      "d": "Nenhum rei é escolhido nessa reunião de confissão."
+    },
+    "hint": "Veja a ação ligada aos pecados.",
+    "learningObjective": "Observar a confissão pública do povo.",
+    "evidence": [
+      "Neemias 9:2"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-04",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Neemias 9:3 na ordem do texto.",
+    "prompt": "Monte Neemias 9:3 na ordem do texto.",
+    "cue": "Monte Neemias 9:3 na ordem do texto.",
+    "verseRef": "Neemias 9:3",
+    "passageText": "Levantando-se em seu lugar, leram no Livro da Lei do SENHOR, seu Deus, por uma quarta parte do dia; e na outra quarta parte confessaram e adoraram ao SENHOR, seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "leram no Livro da Lei do SENHOR, seu Deus"
+      },
+      {
+        "id": "b",
+        "text": "por uma quarta parte do dia"
+      },
+      {
+        "id": "c",
+        "text": "confessaram e adoraram ao SENHOR, seu Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "leram no Livro da Lei do SENHOR, seu Deus",
+    "feedbackCorrect": "Uma parte do dia para ler e outra para confessar e adorar.",
+    "feedbackWrong": {
+      "default": "Comece pela leitura; a confissão vem na outra parte do dia."
+    },
+    "hint": "A leitura vem na primeira parte.",
+    "learningObjective": "Reconhecer a sequência de Neemias 9:3.",
+    "evidence": [
+      "Neemias 9:3"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-05",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Neemias 8:9, como estava todo o povo ao ouvir as palavras da Lei?",
+    "prompt": "Em Neemias 8:9, como estava todo o povo ao ouvir as palavras da Lei?",
+    "cue": "Em Neemias 8:9, como estava todo o povo ao ouvir as palavras da Lei?",
+    "verseRef": "Neemias 8:9",
+    "passageText": "E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que ensinavam todo o povo disseram: \"Este dia é consagrado ao Senhor, vosso Deus; pelo que não se entristeçam nem chorem, pois todo o povo chorava, ao ouvir as palavras da Lei.\"",
+    "template": "E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que ensinavam todo o povo disseram: \"Este dia é consagrado ao Senhor, vosso Deus; pelo que não se entristeçam nem chorem, pois todo o povo ___, ao ouvir as palavras da Lei.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "cantava"
+      },
+      {
+        "id": "b",
+        "text": "chorava"
+      },
+      {
+        "id": "c",
+        "text": "dormia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todo o povo chorava, ao ouvir as palavras da Lei",
+    "feedbackCorrect": "A palavra tocou o coração do povo, que chorava ao ouvi-la.",
+    "feedbackWrong": {
+      "a": "A celebração vem depois do chamado dos líderes.",
+      "c": "O povo estava atento ouvindo, não distraído."
+    },
+    "hint": "É uma reação de emoção triste.",
+    "learningObjective": "Lembrar a reação inicial do povo à Lei.",
+    "evidence": [
+      "Neemias 8:9"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-06",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Neemias 8:12 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:12 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:12 comunica que se liga a este contexto?",
+    "verseRef": "Neemias 8:12",
+    "passageText": "Então, todo o povo foi comer, beber, enviar porções e regozijar-se grandemente, porque haviam entendido as palavras que lhes foram explicadas.",
+    "passageA": {
+      "ref": "Neemias 8:12",
+      "text": "Então, todo o povo foi comer, beber, enviar porções e regozijar-se grandemente, porque haviam entendido as palavras que lhes foram explicadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de entender a Lei, o povo foi celebrar e enviar porções."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Entender gera indiferença"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir dispensa praticar"
+      },
+      {
+        "id": "c",
+        "text": "Entender gera grande alegria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "regozijar-se grandemente",
+    "feedbackCorrect": "Eles se alegram grandemente porque entenderam as palavras.",
+    "feedbackWrong": {
+      "a": "O entendimento produz celebração, não indiferença.",
+      "b": "Entender leva a celebrar e também a obedecer."
+    },
+    "hint": "Veja o sentimento depois de entender.",
+    "learningObjective": "Ligar entendimento da Lei à alegria do povo.",
+    "evidence": [
+      "Neemias 8:12"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-07",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Neemias 8:14, toque onde o povo deveria habitar durante a festa do sétimo mês.",
+    "prompt": "Em Neemias 8:14, toque onde o povo deveria habitar durante a festa do sétimo mês.",
+    "cue": "Em Neemias 8:14, toque onde o povo deveria habitar durante a festa do sétimo mês.",
+    "verseRef": "Neemias 8:14",
+    "passageText": "E encontraram escrito na Lei que o Senhor ordenara por meio de Moisés que os filhos de Israel habitassem em cabanas durante a festa do sétimo mês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lei"
+      },
+      {
+        "id": "b",
+        "text": "festa"
+      },
+      {
+        "id": "c",
+        "text": "cabanas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "habitassem em cabanas durante a festa",
+    "feedbackCorrect": "A Lei mandava habitar nelas durante a festa do sétimo mês.",
+    "feedbackWrong": {
+      "a": "Isso é onde a ordem foi encontrada escrita.",
+      "b": "Isso é a ocasião, não o lugar de morar."
+    },
+    "hint": "Procure a morada simples da festa.",
+    "learningObjective": "Identificar a prática redescoberta na Lei.",
+    "evidence": [
+      "Neemias 8:14"
+    ]
+  },
+  {
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-08",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Neemias 8:18 na ordem do texto.",
+    "prompt": "Monte Neemias 8:18 na ordem do texto.",
+    "cue": "Monte Neemias 8:18 na ordem do texto.",
+    "verseRef": "Neemias 8:18",
+    "passageText": "E, dia após dia, Esdras leu no Livro da Lei de Deus, desde o primeiro até o último dia; e celebraram a festa por sete dias; no oitavo dia, houve uma assembleia solene, segundo o prescrito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esdras leu no Livro da Lei de Deus"
+      },
+      {
+        "id": "b",
+        "text": "celebraram a festa por sete dias"
+      },
+      {
+        "id": "c",
+        "text": "houve uma assembleia solene"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Esdras leu no Livro da Lei de Deus",
+    "feedbackCorrect": "Leitura dia após dia, festa de sete dias e assembleia no oitavo.",
+    "feedbackWrong": {
+      "default": "Comece pela leitura diária de Esdras."
+    },
+    "hint": "A leitura diária abre o versículo.",
+    "learningObjective": "Reconhecer a sequência de Neemias 8:18.",
+    "evidence": [
+      "Neemias 8:18"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-01",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Depois de ouvir a Lei, o povo celebrou sem nunca confessar pecado algum",
+    "prompt": "Depois de ouvir a Lei, o povo celebrou sem nunca confessar pecado algum",
+    "cue": "Depois de ouvir a Lei, o povo celebrou sem nunca confessar pecado algum",
+    "verseRef": "Neemias 9:2–3",
+    "passageText": "E a linhagem de Israel se separou de todos os estrangeiros, e, pondo-se em pé, confessaram os seus pecados e as iniquidades de seus pais. Levantando-se em seu lugar, leram no Livro da Lei do SENHOR, seu Deus, por uma quarta parte do dia; e na outra quarta parte confessaram e adoraram ao SENHOR, seu Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "confessaram os seus pecados e as iniquidades de seus pais",
+    "feedbackCorrect": "Houve jejum, confissão dos pecados e adoração, além da celebração.",
+    "feedbackWrong": {
+      "true": "Releia Neemias 9:2–3 e note jejum e confissão."
+    },
+    "hint": "Veja o capítulo seguinte à festa.",
+    "learningObjective": "Compreender que celebração e confissão se sucedem.",
+    "evidence": [
+      "Neemias 9:2–3"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-02",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Neemias 9:17, toque a palavra que vira a frase da rebelião para a misericórdia.",
+    "prompt": "Em Neemias 9:17, toque a palavra que vira a frase da rebelião para a misericórdia.",
+    "cue": "Em Neemias 9:17, toque a palavra que vira a frase da rebelião para a misericórdia.",
+    "verseRef": "Neemias 9:17",
+    "passageText": "Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus perdoador, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,",
+    "options": [
+      {
+        "id": "a",
+        "text": "cerviz"
+      },
+      {
+        "id": "b",
+        "text": "Recusaram"
+      },
+      {
+        "id": "c",
+        "text": "Contudo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Contudo, tu, ó Deus perdoador",
+    "feedbackCorrect": "Apesar da rebelião descrita, Deus continua perdoador e presente.",
+    "feedbackWrong": {
+      "a": "Isso descreve a dureza do povo, não a virada da frase.",
+      "b": "Essa palavra descreve a atitude rebelde dos pais."
+    },
+    "hint": "Procure a virada depois da rebelião.",
+    "learningObjective": "Reconhecer o marcador de contraste em Neemias 9.",
+    "evidence": [
+      "Neemias 9:17"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-03",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Neemias 9:16–17 relaciona os pais de Israel e Deus no deserto?",
+    "prompt": "Como Neemias 9:16–17 relaciona os pais de Israel e Deus no deserto?",
+    "cue": "Como Neemias 9:16–17 relaciona os pais de Israel e Deus no deserto?",
+    "verseRef": "Neemias 9:16–17",
+    "passageText": "No entanto, eles, nossos pais, se mostraram soberbos, endureceram a sua cerviz e não ouviram os teus mandamentos. Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus perdoador, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo endurece e Deus não desampara"
+      },
+      {
+        "id": "b",
+        "text": "Deus desampara na primeira rebelião"
+      },
+      {
+        "id": "c",
+        "text": "Os pais obedecem sempre sem falhar"
+      },
+      {
+        "id": "d",
+        "text": "A misericórdia exige um povo perfeito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não os desamparaste",
+    "feedbackCorrect": "Eles endurecem a cerviz, mas Deus perdoador não os abandona.",
+    "feedbackWrong": {
+      "b": "O texto afirma que Deus não os desamparou no deserto.",
+      "c": "Eles recusaram ouvir e endureceram a cerviz.",
+      "d": "A bondade de Deus aparece justamente com um povo rebelde."
+    },
+    "hint": "Junte a atitude dos pais e a de Deus.",
+    "learningObjective": "Relacionar rebelião humana e misericórdia de Deus.",
+    "evidence": [
+      "Neemias 9:16–17"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-04",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos da renovação em Neemias 9?",
+    "prompt": "Como se encadeiam os passos da renovação em Neemias 9?",
+    "cue": "Como se encadeiam os passos da renovação em Neemias 9?",
+    "verseRef": "Neemias 9:3",
+    "passageText": "Levantando-se em seu lugar, leram no Livro da Lei do SENHOR, seu Deus, por uma quarta parte do dia; e na outra quarta parte confessaram e adoraram ao SENHOR, seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo confessa seus pecados em jejum"
+      },
+      {
+        "id": "b",
+        "text": "Leitura e adoração ocupam o dia"
+      },
+      {
+        "id": "c",
+        "text": "A história de Deus fiel é lembrada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "leram no Livro da Lei do SENHOR",
+    "feedbackCorrect": "Confissão, leitura com adoração e memória da fidelidade de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo jejum com confissão do dia vinte e quatro."
+    },
+    "hint": "O jejum abre esse novo encontro.",
+    "learningObjective": "Compreender os passos da renovação do povo.",
+    "evidence": [
+      "Neemias 9:3"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-05",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Neemias 9:6, o que Deus fez junto com a terra e os mares?",
+    "prompt": "Em Neemias 9:6, o que Deus fez junto com a terra e os mares?",
+    "cue": "Em Neemias 9:6, o que Deus fez junto com a terra e os mares?",
+    "verseRef": "Neemias 9:6",
+    "passageText": "Somente Tu és SENHOR; Tu fizeste os céus, os céus dos céus e todo o seu exército; a terra e tudo o que nela há; os mares e tudo o que neles há, e Tu preservas a todos com vida; e o exército dos céus Te adora.",
+    "template": "Somente Tu és SENHOR; Tu fizeste os ___, os céus dos céus e todo o seu exército; a terra e tudo o que nela há; os mares e tudo o que neles há, e Tu preservas a todos com vida; e o exército dos céus Te adora.",
+    "options": [
+      {
+        "id": "a",
+        "text": "céus"
+      },
+      {
+        "id": "b",
+        "text": "povos"
+      },
+      {
+        "id": "c",
+        "text": "mares"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu fizeste os céus",
+    "feedbackCorrect": "A oração começa no Deus que fez céus, terra, mares e tudo.",
+    "feedbackWrong": {
+      "b": "Releia o começo da oração de Neemias 9:6.",
+      "c": "Esses também foram feitos, mas vêm depois na frase."
+    },
+    "hint": "É o primeiro lugar criado citado.",
+    "learningObjective": "Compreender Deus como Criador na confissão.",
+    "evidence": [
+      "Neemias 9:6"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-06",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Neemias 9:6 a Gênesis 1:1?",
+    "prompt": "O que liga Neemias 9:6 a Gênesis 1:1?",
+    "cue": "O que liga Neemias 9:6 a Gênesis 1:1?",
+    "verseRef": "Neemias 9:6",
+    "passageText": "Somente Tu és SENHOR; Tu fizeste os céus, os céus dos céus e todo o seu exército; a terra e tudo o que nela há; os mares e tudo o que neles há, e Tu preservas a todos com vida; e o exército dos céus Te adora.",
+    "passageA": {
+      "ref": "Neemias 9:6",
+      "text": "Somente Tu és SENHOR; Tu fizeste os céus, os céus dos céus e todo o seu exército; a terra e tudo o que nela há; os mares e tudo o que neles há, e Tu preservas a todos com vida; e o exército dos céus Te adora."
+    },
+    "passageB": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo criou a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "Céus surgiram por acaso"
+      },
+      {
+        "id": "c",
+        "text": "Deus criou céus e terra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tu fizeste os céus",
+    "feedbackCorrect": "A confissão de Neemias retoma o Deus Criador de Gênesis.",
+    "feedbackWrong": {
+      "a": "O povo confessa Deus como quem fez todas as coisas.",
+      "b": "Os dois textos dão um Criador a céus e terra."
+    },
+    "hint": "Compare quem fez todas as coisas.",
+    "learningObjective": "Relacionar a confissão à criação em Gênesis.",
+    "evidence": [
+      "Neemias 9:6",
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-07",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Neemias 9:8, toque como Deus encontrou o coração de Abraão diante dele.",
+    "prompt": "Em Neemias 9:8, toque como Deus encontrou o coração de Abraão diante dele.",
+    "cue": "Em Neemias 9:8, toque como Deus encontrou o coração de Abraão diante dele.",
+    "verseRef": "Neemias 9:8",
+    "passageText": "E encontraste o coração dele fiel diante de Ti, e com ele fizeste uma aliança, concedendo-lhe a terra dos cananeus, dos heteus, dos amorreus, dos ferezeus, dos jebuseus e dos girgaseus, a fim de a dar à sua descendência; e cumpriste as Tuas promessas, pois és justo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "fiel"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "encontraste o coração dele fiel diante de Ti",
+    "feedbackCorrect": "Deus viu um coração assim e fez aliança com Abraão.",
+    "feedbackWrong": {
+      "a": "Isso é o que Deus fez depois de ver o coração dele.",
+      "b": "Isso é o presente da aliança, não a qualidade do coração."
+    },
+    "hint": "Procure a qualidade do coração dele.",
+    "learningObjective": "Reconhecer o que Deus viu em Abraão.",
+    "evidence": [
+      "Neemias 9:8"
+    ]
+  },
+  {
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-08",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os feitos de Deus lembrados em Neemias 9:11–12?",
+    "prompt": "Como se encadeiam os feitos de Deus lembrados em Neemias 9:11–12?",
+    "cue": "Como se encadeiam os feitos de Deus lembrados em Neemias 9:11–12?",
+    "verseRef": "Neemias 9:11",
+    "passageText": "E dividiste o mar diante deles, de modo que atravessaram em seco; e lançaste os seus perseguidores nas profundezas, como uma pedra nas águas impetuosas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus divide o mar diante do povo"
+      },
+      {
+        "id": "b",
+        "text": "Coluna de nuvem guia durante o dia"
+      },
+      {
+        "id": "c",
+        "text": "Coluna de fogo alumia durante a noite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "dividiste o mar diante deles",
+    "feedbackCorrect": "Mar aberto, nuvem de dia e fogo à noite guiando o povo.",
+    "feedbackWrong": {
+      "default": "Comece pela saída pelo mar; a guia vem depois."
+    },
+    "hint": "A travessia do mar vem primeiro.",
+    "learningObjective": "Compreender a memória do livramento e da guia.",
+    "evidence": [
+      "Neemias 9:11"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-01",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Neemias 9, Deus é lembrado como perdoador que não desampara mesmo após a rebelião",
+    "prompt": "Em Neemias 9, Deus é lembrado como perdoador que não desampara mesmo após a rebelião",
+    "cue": "Em Neemias 9, Deus é lembrado como perdoador que não desampara mesmo após a rebelião",
+    "verseRef": "Neemias 9:17",
+    "passageText": "Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus perdoador, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "tu, ó Deus perdoador",
+    "feedbackCorrect": "Mesmo com o bezerro e a rebelião, Deus não os deixou no deserto.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Neemias 9:17 e o começo de 9:19."
+    },
+    "hint": "Veja como Deus é chamado no texto.",
+    "learningObjective": "Interpretar a misericórdia fiel de Deus na história.",
+    "evidence": [
+      "Neemias 9:17"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-02",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Neemias 9:5, toque a palavra que mostra por quanto tempo Deus deve ser bendito.",
+    "prompt": "Em Neemias 9:5, toque a palavra que mostra por quanto tempo Deus deve ser bendito.",
+    "cue": "Em Neemias 9:5, toque a palavra que mostra por quanto tempo Deus deve ser bendito.",
+    "verseRef": "Neemias 9:5",
+    "passageText": "E os levitas, Jesua, Cadmiel, Bani, Hasabneias, Serebias, Hodias, Sebanias e Petaías disseram: \"Levantem-se e bendigam ao SENHOR, seu Deus, de eternidade a eternidade; e que o nome da sua glória seja exaltado acima de toda bênção e louvor.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "louvor"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "eternidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "de eternidade a eternidade",
+    "feedbackCorrect": "O louvor se estende sem fim, como o próprio Deus bendito.",
+    "feedbackWrong": {
+      "a": "Isso é o que o nome recebe acima de tudo, não a duração.",
+      "b": "Isso descreve o nome de Deus, não o tempo do louvor."
+    },
+    "hint": "Procure a medida de tempo sem fim.",
+    "learningObjective": "Sustentar com o texto o louvor eterno a Deus.",
+    "evidence": [
+      "Neemias 9:5"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-03",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Neemias 9:17 sustenta sobre Deus e o povo rebelde?",
+    "prompt": "Que leitura Neemias 9:17 sustenta sobre Deus e o povo rebelde?",
+    "cue": "Que leitura Neemias 9:17 sustenta sobre Deus e o povo rebelde?",
+    "verseRef": "Neemias 9:17",
+    "passageText": "Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus perdoador, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus abandona o povo após o bezerro"
+      },
+      {
+        "id": "b",
+        "text": "Rebelião humana contrasta com misericórdia fiel"
+      },
+      {
+        "id": "c",
+        "text": "Deus perdoa só quem nunca se rebelou"
+      },
+      {
+        "id": "d",
+        "text": "Os pais foram fiéis em todo o deserto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "grande em bondade, não os desamparaste",
+    "feedbackCorrect": "O povo endurece, mas Deus continua clemente e não desampara.",
+    "feedbackWrong": {
+      "a": "O texto diz que, mesmo assim, Deus não os deixou.",
+      "c": "Ele perdoa justamente um povo que se rebelou.",
+      "d": "Eles recusaram ouvir e fizeram até um bezerro."
+    },
+    "hint": "Compare a atitude dos pais com a de Deus.",
+    "learningObjective": "Escolher a interpretação sustentada por Neemias 9:17.",
+    "evidence": [
+      "Neemias 9:17"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-04",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da história lembrada em Neemias 9?",
+    "prompt": "Qual sequência revela o fio da história lembrada em Neemias 9?",
+    "cue": "Qual sequência revela o fio da história lembrada em Neemias 9?",
+    "verseRef": "Neemias 9:7–8",
+    "passageText": "Tu és, SENHOR, o Deus que escolheste Abrão, que o tiraste de Ur dos caldeus e lhe puseste o nome de Abraão. E encontraste o coração dele fiel diante de Ti, e com ele fizeste uma aliança, concedendo-lhe a terra dos cananeus, dos heteus, dos amorreus, dos ferezeus, dos jebuseus e dos girgaseus, a fim de a dar à sua descendência; e cumpriste as Tuas promessas, pois és justo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus escolhe Abraão e faz aliança"
+      },
+      {
+        "id": "b",
+        "text": "Deus tira o povo da aflição do Egito"
+      },
+      {
+        "id": "c",
+        "text": "O povo confessa e bendiz ao Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "escolheste Abrão",
+    "feedbackCorrect": "Aliança com Abraão, livramento do Egito e confissão do povo renovado.",
+    "feedbackWrong": {
+      "default": "Comece por Abraão; a confissão atual fecha a memória."
+    },
+    "hint": "Siga a ordem da história bíblica.",
+    "learningObjective": "Ver a história como fio de fidelidade de Deus.",
+    "evidence": [
+      "Neemias 9:7–8",
+      "Neemias 9:9"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-05",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Neemias 9:17, como Deus é chamado mesmo diante da rebelião do povo?",
+    "prompt": "Em Neemias 9:17, como Deus é chamado mesmo diante da rebelião do povo?",
+    "cue": "Em Neemias 9:17, como Deus é chamado mesmo diante da rebelião do povo?",
+    "verseRef": "Neemias 9:17",
+    "passageText": "Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus perdoador, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,",
+    "template": "Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus ___, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,",
+    "options": [
+      {
+        "id": "a",
+        "text": "silencioso"
+      },
+      {
+        "id": "b",
+        "text": "perdoador"
+      },
+      {
+        "id": "c",
+        "text": "distante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tu, ó Deus perdoador",
+    "feedbackCorrect": "Deus é perdoador, clemente e grande em bondade com seu povo.",
+    "feedbackWrong": {
+      "a": "Ele ouve o clamor e continua falando ao povo.",
+      "c": "Ele permanece presente guiando de dia e de noite."
+    },
+    "hint": "É o título de misericórdia dado a Deus.",
+    "learningObjective": "Lembrar o caráter perdoador de Deus na confissão.",
+    "evidence": [
+      "Neemias 9:17"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-06",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Neemias 9:2 a 1 João 1:9?",
+    "prompt": "O que liga Neemias 9:2 a 1 João 1:9?",
+    "cue": "O que liga Neemias 9:2 a 1 João 1:9?",
+    "verseRef": "Neemias 9:2",
+    "passageText": "E a linhagem de Israel se separou de todos os estrangeiros, e, pondo-se em pé, confessaram os seus pecados e as iniquidades de seus pais.",
+    "passageA": {
+      "ref": "Neemias 9:2",
+      "text": "E a linhagem de Israel se separou de todos os estrangeiros, e, pondo-se em pé, confessaram os seus pecados e as iniquidades de seus pais."
+    },
+    "passageB": {
+      "ref": "1 João 1:9",
+      "text": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar e ser perdoado"
+      },
+      {
+        "id": "b",
+        "text": "Deus recusa quem volta"
+      },
+      {
+        "id": "c",
+        "text": "Confessar sem esperança alguma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "confessaram os seus pecados",
+    "feedbackCorrect": "Quem confessa encontra o Deus fiel e justo que perdoa.",
+    "feedbackWrong": {
+      "b": "Os dois textos mostram Deus recebendo quem confessa.",
+      "c": "João liga a confissão ao perdão e à purificação."
+    },
+    "hint": "Veja o fruto da confissão nos dois textos.",
+    "learningObjective": "Ligar confissão do povo ao perdão prometido.",
+    "evidence": [
+      "Neemias 9:2",
+      "1 João 1:9"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-07",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Neemias 8:10, toque a palavra que mostra o efeito da alegria do Senhor no povo.",
+    "prompt": "Em Neemias 8:10, toque a palavra que mostra o efeito da alegria do Senhor no povo.",
+    "cue": "Em Neemias 8:10, toque a palavra que mostra o efeito da alegria do Senhor no povo.",
+    "verseRef": "Neemias 8:10",
+    "passageText": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carnes"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "bebidas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a alegria do Senhor é a sua força",
+    "feedbackCorrect": "A alegria que vem do Senhor sustenta o povo renovado.",
+    "feedbackWrong": {
+      "a": "Isso é alimento da festa, não o sustento interior.",
+      "c": "Isso faz parte da celebração, não do efeito dela."
+    },
+    "hint": "Procure o sustento de quem celebra.",
+    "learningObjective": "Sustentar com o texto a alegria que fortalece.",
+    "evidence": [
+      "Neemias 8:10"
+    ]
+  },
+  {
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-08",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a reconstrução completa do povo?",
+    "prompt": "Qual sequência revela a reconstrução completa do povo?",
+    "cue": "Qual sequência revela a reconstrução completa do povo?",
+    "verseRef": "Neemias 9:5",
+    "passageText": "E os levitas, Jesua, Cadmiel, Bani, Hasabneias, Serebias, Hodias, Sebanias e Petaías disseram: \"Levantem-se e bendigam ao SENHOR, seu Deus, de eternidade a eternidade; e que o nome da sua glória seja exaltado acima de toda bênção e louvor.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Lei é lida e explicada ao povo"
+      },
+      {
+        "id": "b",
+        "text": "O povo confessa seus pecados a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus é bendito sem fim pelo povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "bendigam ao SENHOR, seu Deus",
+    "feedbackCorrect": "Palavra ouvida, pecado confessado e louvor que não tem fim.",
+    "feedbackWrong": {
+      "default": "Comece pela Lei explicada; o louvor eterno fecha o caminho."
+    },
+    "hint": "O louvor sem fim é o ponto de chegada.",
+    "learningObjective": "Ver palavra, confissão e louvor como reconstrução.",
+    "evidence": [
+      "Neemias 8:8",
+      "Neemias 9:5"
+    ]
+  }
+]

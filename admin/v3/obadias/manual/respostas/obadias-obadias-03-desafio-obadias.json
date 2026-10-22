@@ -1,0 +1,924 @@
+{
+ "study": {
+  "passageRef": "Obadias 1:10–15",
+  "passages": [
+   {
+    "ref": "Obadias 1:10–15"
+   },
+   {
+    "ref": "Obadias 1:3–4"
+   },
+   {
+    "ref": "Obadias 1:21"
+   }
+  ],
+  "context": "Este desafio revisa Obadias inteiro: a soberba de Edom, a violência contra o irmão Jacó, o Dia do Senhor sobre as nações e o reino que, no fim, é do Senhor.",
+  "keyword": "Obadias",
+  "keywordGloss": "O livro inteiro em um fio: soberba derrubada, irmão traído, juízo justo e reino do Senhor.",
+  "focusQuestion": "Do orgulho ao reino do Senhor, o que Deus mais quer corrigir em você hoje?",
+  "reflectionPrompts": [
+   "Soberba derrubada",
+   "Culpa contra o irmão",
+   "O reino é do Senhor"
+  ],
+  "facts": [
+   {
+    "text": "A soberba do coração enganou Edom em sua alta morada.",
+    "evidenceRef": "Obadias 1:3",
+    "evidenceSpan": "A soberba do teu coração te enganou"
+   },
+   {
+    "text": "Mesmo entre as estrelas, Deus derrubaria Edom.",
+    "evidenceRef": "Obadias 1:4",
+    "evidenceSpan": "de lá eu te derribarei, diz o Senhor"
+   },
+   {
+    "text": "A violência contra Jacó cobre Edom de vergonha.",
+    "evidenceRef": "Obadias 1:10",
+    "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó, cobrir-te-ás de vergonha"
+   },
+   {
+    "text": "Edom foi contado como um dos invasores de Jerusalém.",
+    "evidenceRef": "Obadias 1:11",
+    "evidenceSpan": "tu também eras um deles"
+   },
+   {
+    "text": "A maldade de Edom retornará sobre a sua cabeça.",
+    "evidenceRef": "Obadias 1:15",
+    "evidenceSpan": "a tua maldade retornará sobre a tua cabeça"
+   },
+   {
+    "text": "O reino será do Senhor, fecha o livro.",
+    "evidenceRef": "Obadias 1:21",
+    "evidenceSpan": "o reino será do Senhor"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "soberba",
+    "gloss": "Orgulho que engana Edom e o faz sentir-se intocável no alto."
+   },
+   {
+    "term": "violência",
+    "gloss": "O ato de Edom contra o irmão Jacó no dia da calamidade."
+   },
+   {
+    "term": "Dia do Senhor",
+    "gloss": "O dia em que Deus julga as nações e devolve o feito a cada um."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Soberba de Edom nas alturas",
+    "evidenceRef": "Obadias 1:3–4"
+   },
+   {
+    "label": "Violência contra o irmão Jacó",
+    "evidenceRef": "Obadias 1:10–11"
+   },
+   {
+    "label": "Dia do Senhor sobre as nações",
+    "evidenceRef": "Obadias 1:15"
+   },
+   {
+    "label": "Reino entregue ao Senhor",
+    "evidenceRef": "Obadias 1:21"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A violência contra Jacó causa a vergonha anunciada a Edom.",
+    "marker": "violência",
+    "evidenceRef": "Obadias 1:10"
+   },
+   {
+    "kind": "resultado",
+    "text": "O feito de Edom resulta no mal retornando sobre sua cabeça.",
+    "marker": "retornará",
+    "evidenceRef": "Obadias 1:15"
+   },
+   {
+    "kind": "contraste",
+    "text": "Edom se exalta no alto, mas o livro termina com o reino do Senhor.",
+    "marker": null,
+    "evidenceRef": "Obadias 1:21"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Jeremias 49:16",
+    "bridge": "Soberba nas alturas derrubada"
+   },
+   {
+    "ref": "Salmos 137:7",
+    "bridge": "Edom no dia de Jerusalém"
+   },
+   {
+    "ref": "Provérbios 16:18",
+    "bridge": "Soberba precede a queda"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Obadias é um convite para odiar descendentes de Edom hoje.",
+    "why": "O livro anuncia o juízo de Deus sobre Edom antigo; não manda o leitor odiar povo algum."
+   },
+   {
+    "text": "Quem só observa a queda do irmão não tem culpa.",
+    "why": "Edom foi contado como um dos invasores por estar do lado oposto."
+   },
+   {
+    "text": "O reino final pertence ao povo mais forte.",
+    "why": "A última frase do livro diz que o reino será do Senhor."
+   }
+  ],
+  "centralInsight": "Deus derruba a soberba de Edom e o reino é do Senhor",
+  "anchorQuestion": "Quais são os dois grandes motivos do juízo sobre Edom em Obadias?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Obadias 1:4, Deus diz que derrubaria Edom mesmo do ninho entre as estrelas.",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "true",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "Nem entre as estrelas Edom escaparia da mão de Deus.",
+   "feedbackWrong": {
+    "false": "Releia 1:4; Deus diz que de lá o derribarei."
+   },
+   "hint": "Veja a fala de Deus em 1:4.",
+   "learningObjective": "Revisar a resposta de Deus à soberba.",
+   "evidence": [
+    "Obadias 1:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:4, toque o animal da comparação com a altura.",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "b",
+   "evidenceSpan": "Se te remontares como águia",
+   "feedbackCorrect": "A águia é o animal usado na comparação da altura.",
+   "feedbackWrong": {
+    "a": "Ninho é a morada da ave, não o animal.",
+    "c": "Estrelas são o lugar alto, não o animal."
+   },
+   "hint": "Procure a comparação no texto.",
+   "learningObjective": "Revisar a imagem da águia.",
+   "evidence": [
+    "Obadias 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "ninho"
+    },
+    {
+     "id": "b",
+     "text": "águia"
+    },
+    {
+     "id": "c",
+     "text": "estrelas"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Obadias 1:10, por que Edom se cobrirá de vergonha?",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "Por causa da violência cometida contra teu irmão Jacó, cobrir-te-ás de vergonha",
+   "feedbackCorrect": "A causa da vergonha é a violência contra o irmão Jacó.",
+   "feedbackWrong": {
+    "b": "Perder altura é consequência, não a causa citada aqui.",
+    "c": "Aliados enganam Edom, mas a causa aqui é a violência.",
+    "d": "Lançar sortes é 1:11; a causa em 1:10 é a violência."
+   },
+   "hint": "Leia a causa em 1:10.",
+   "learningObjective": "Revisar a causa da vergonha de Edom.",
+   "evidence": [
+    "Obadias 1:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Pela violência contra Jacó"
+    },
+    {
+     "id": "b",
+     "text": "Por perder suas rochas altas"
+    },
+    {
+     "id": "c",
+     "text": "Por confiar nos aliados"
+    },
+    {
+     "id": "d",
+     "text": "Por lançar sortes em Jerusalém"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Obadias 1:4 na ordem do texto.",
+   "verseRef": "Obadias 1:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "Subida, ninho nas estrelas e a resposta de Deus que derruba.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "A resposta de Deus fecha tudo.",
+   "learningObjective": "Revisar a sequência de 1:4.",
+   "evidence": [
+    "Obadias 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Se te remontares como águia"
+    },
+    {
+     "id": "b",
+     "text": "e puseres o teu ninho entre as estrelas"
+    },
+    {
+     "id": "c",
+     "text": "de lá eu te derribarei"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Obadias 1:10, o que cobrirá Edom por sua violência?",
+   "verseRef": "Obadias 1:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "cobrir-te-ás de vergonha",
+   "feedbackCorrect": "A violência contra o irmão cobre Edom de vergonha.",
+   "feedbackWrong": {
+    "b": "Honra é o contrário do anunciado.",
+    "c": "Riqueza não é a consequência citada aqui."
+   },
+   "hint": "Veja a consequência em 1:10.",
+   "learningObjective": "Revisar a consequência sobre Edom.",
+   "evidence": [
+    "Obadias 1:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "vergonha"
+    },
+    {
+     "id": "b",
+     "text": "honra"
+    },
+    {
+     "id": "c",
+     "text": "riqueza"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Obadias 1:21 comunica que se liga a este contexto?",
+   "verseRef": "Obadias 1:21",
+   "correctOptionId": "b",
+   "evidenceSpan": "o reino será do Senhor",
+   "feedbackCorrect": "O livro inteiro termina entregando o reino ao Senhor.",
+   "feedbackWrong": {
+    "a": "Quem recebe o reino é o Senhor, não Edom.",
+    "c": "Sião é lugar de salvadores; a herança é retomada."
+   },
+   "hint": "Leia a última frase do livro.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Edom fica com o reino"
+    },
+    {
+     "id": "b",
+     "text": "O reino é do Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Sião perde sua herança"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:21"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Depois de todo o juízo, o livro fecha dizendo quem reina."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:11, toque o que lançaram sobre Jerusalém.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "c",
+   "evidenceSpan": "lançando sortes sobre Jerusalém",
+   "feedbackCorrect": "Sortes foram lançadas sobre Jerusalém pelos invasores.",
+   "feedbackWrong": {
+    "a": "Portas são por onde entram os estrangeiros.",
+    "b": "Bens foram levados pelos estranhos."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Revisar a partilha de Jerusalém.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "portas"
+    },
+    {
+     "id": "b",
+     "text": "bens"
+    },
+    {
+     "id": "c",
+     "text": "sortes"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Obadias 1:11 na ordem do texto.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "tu também eras um deles",
+   "feedbackCorrect": "O enfrentamento e o saque terminam com Edom contado entre eles.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "Edom aparece no fim da cena.",
+   "learningObjective": "Revisar a sequência da invasão.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "No dia em que o enfrentaste"
+    },
+    {
+     "id": "b",
+     "text": "quando os estranhos levaram os bens"
+    },
+    {
+     "id": "c",
+     "text": "tu também eras um deles"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Obadias, Edom é culpado só por lutar, e não por ficar do lado oposto ao irmão.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "false",
+   "evidenceSpan": "tu também eras um deles",
+   "feedbackCorrect": "Ficar do lado oposto e ser como um invasor já traz culpa a Edom.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 1:11 sobre Edom entre os invasores."
+   },
+   "hint": "Veja como Edom é contado.",
+   "learningObjective": "Compreender a culpa de Edom no conjunto.",
+   "evidence": [
+    "Obadias 1:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:3, toque o verbo que mostra o efeito da soberba.",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "b",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "A soberba enganou Edom, esse é o efeito destacado.",
+   "feedbackWrong": {
+    "a": "Habitar é o lugar de Edom, não o efeito.",
+    "c": "Dizer é a fala; o efeito vem antes."
+   },
+   "hint": "Procure o efeito da soberba.",
+   "learningObjective": "Reconhecer o engano da soberba.",
+   "evidence": [
+    "Obadias 1:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "habitas"
+    },
+    {
+     "id": "b",
+     "text": "enganou"
+    },
+    {
+     "id": "c",
+     "text": "dizes"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Obadias 1:15 se liga à violência de Edom em 1:10-11?",
+   "verseRef": "Obadias 1:15",
+   "correctOptionId": "a",
+   "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+   "feedbackCorrect": "O feito contra o irmão volta sobre Edom no Dia do Senhor.",
+   "feedbackWrong": {
+    "b": "Há juízo anunciado, não perdão sem resposta aqui.",
+    "c": "Quem devolve o feito é Deus, não Jacó por si.",
+    "d": "O Dia alcança todas as nações, diz o texto."
+   },
+   "hint": "Ligue o feito ao retorno.",
+   "learningObjective": "Relacionar violência e retorno do feito.",
+   "evidence": [
+    "Obadias 1:10–15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra o feito voltando a Edom"
+    },
+    {
+     "id": "b",
+     "text": "Mostra Edom perdoado sem juízo"
+    },
+    {
+     "id": "c",
+     "text": "Mostra Jacó se vingando sozinho"
+    },
+    {
+     "id": "d",
+     "text": "Mostra as nações fora do juízo"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Obadias do começo ao fim do livro?",
+   "verseRef": "Obadias 1:3–4",
+   "correctOptionId": "a",
+   "evidenceSpan": "de lá eu te derribarei, diz o Senhor",
+   "feedbackCorrect": "Da soberba à queda, e do juízo ao reino do Senhor.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "O reino do Senhor fecha o livro.",
+   "learningObjective": "Compreender o fio do livro inteiro.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Soberba engana o coração de Edom"
+    },
+    {
+     "id": "b",
+     "text": "Deus derruba Edom do alto"
+    },
+    {
+     "id": "c",
+     "text": "O reino termina com o Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Obadias 1:15, que verbo mostra o mal voltando sobre Edom?",
+   "verseRef": "Obadias 1:15",
+   "correctOptionId": "a",
+   "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+   "feedbackCorrect": "Retornar mostra o mal voltando sobre quem o fez.",
+   "feedbackWrong": {
+    "b": "Fizeste é o ato passado de Edom.",
+    "c": "Virá fala do Dia chegando, não do retorno."
+   },
+   "hint": "Procure o movimento de volta.",
+   "learningObjective": "Compreender o retorno do feito.",
+   "evidence": [
+    "Obadias 1:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "retornará"
+    },
+    {
+     "id": "b",
+     "text": "fizeste"
+    },
+    {
+     "id": "c",
+     "text": "virá"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Obadias 1:11 a Salmos 137:7?",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "lançando sortes sobre Jerusalém",
+   "feedbackCorrect": "Os dois textos lembram Edom contra Jerusalém no dia dela.",
+   "feedbackWrong": {
+    "b": "Nos dois, Edom está contra Jerusalém.",
+    "c": "Havia inimigos, e Edom entre eles."
+   },
+   "hint": "Compare o papel de Edom.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:11",
+    "Salmos 137:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Edom no dia de Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Edom salvando Jerusalém"
+    },
+    {
+     "id": "c",
+     "text": "Jerusalém sem inimigos"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:11"
+   },
+   "passageB": {
+    "ref": "Salmos 137:7"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:11, toque a palavra que marca o momento da invasão.",
+   "verseRef": "Obadias 1:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "quando os estranhos levaram os bens",
+   "feedbackCorrect": "Quando marca o momento em que Edom se junta à invasão.",
+   "feedbackWrong": {
+    "b": "Portas é o lugar de entrada, não o momento.",
+    "c": "Deles fecha a cena; o momento vem antes."
+   },
+   "hint": "Procure a marca de tempo.",
+   "learningObjective": "Reconhecer o momento do envolvimento.",
+   "evidence": [
+    "Obadias 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "quando"
+    },
+    {
+     "id": "b",
+     "text": "portas"
+    },
+    {
+     "id": "c",
+     "text": "deles"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os motivos do juízo em Obadias?",
+   "verseRef": "Obadias 1:15",
+   "correctOptionId": "a",
+   "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+   "feedbackCorrect": "Violência, Dia anunciado e retorno formam a cadeia do juízo.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "O retorno fecha a cadeia.",
+   "learningObjective": "Compreender os motivos ligados do juízo.",
+   "evidence": [
+    "Obadias 1:10–15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Violência contra o irmão Jacó"
+    },
+    {
+     "id": "b",
+     "text": "Dia do Senhor sobre as nações"
+    },
+    {
+     "id": "c",
+     "text": "Maldade retorna sobre Edom"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Obadias convida o leitor a odiar os descendentes de Edom nos dias de hoje.",
+   "verseRef": "Obadias 1:15",
+   "correctOptionId": "false",
+   "evidenceSpan": "sobre todas as nações",
+   "feedbackCorrect": "O livro anuncia o juízo de Deus; não convida ninguém ao ódio hoje.",
+   "feedbackWrong": {
+    "true": "O texto fala do Dia do Senhor, não de ódio do leitor."
+   },
+   "hint": "Veja quem julga no livro.",
+   "learningObjective": "Interpretar Obadias sem ódio ao leitor.",
+   "evidence": [
+    "Obadias 1:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:21, toque quem surge ao monte Sião.",
+   "verseRef": "Obadias 1:21",
+   "correctOptionId": "a",
+   "evidenceSpan": "surgirão salvadores ao monte Sião",
+   "feedbackCorrect": "Salvadores surgem em Sião no desfecho do livro.",
+   "feedbackWrong": {
+    "b": "Montanha é a de Esaú, julgada no desfecho.",
+    "c": "Reino é do Senhor; quem surge é outra palavra."
+   },
+   "hint": "Procure quem surge em Sião.",
+   "learningObjective": "Sustentar o desfecho em Sião.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "salvadores"
+    },
+    {
+     "id": "b",
+     "text": "montanha"
+    },
+    {
+     "id": "c",
+     "text": "reino"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o conjunto de Obadias sustenta?",
+   "verseRef": "Obadias 1:21",
+   "correctOptionId": "b",
+   "evidenceSpan": "o reino será do Senhor",
+   "feedbackCorrect": "Deus derruba a soberba, julga a violência e fica com o reino.",
+   "feedbackWrong": {
+    "a": "Deus responde à soberba e à violência no livro.",
+    "c": "A vingança não é do leitor; o Dia é do Senhor.",
+    "d": "Esaú é Edom no texto, não código de países atuais."
+   },
+   "hint": "Junte começo, meio e fim do livro.",
+   "learningObjective": "Escolher a leitura do livro inteiro.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Altura e violência ficam sem resposta"
+    },
+    {
+     "id": "b",
+     "text": "Deus julga e o reino é dele"
+    },
+    {
+     "id": "c",
+     "text": "O leitor deve se vingar do irmão"
+    },
+    {
+     "id": "d",
+     "text": "Edom aponta países atuais nomeados"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Obadias inteiro?",
+   "verseRef": "Obadias 1:21",
+   "correctOptionId": "a",
+   "evidenceSpan": "o reino será do Senhor",
+   "feedbackCorrect": "O livro vai da culpa de Edom ao reino final do Senhor.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "O reino do Senhor é o fim.",
+   "learningObjective": "Ver o fio completo de Obadias.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Soberba e violência de Edom"
+    },
+    {
+     "id": "b",
+     "text": "Juízo de Deus sobre Edom"
+    },
+    {
+     "id": "c",
+     "text": "Reino entregue ao Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Obadias 1:21, o que será do Senhor no fim do livro?",
+   "verseRef": "Obadias 1:21",
+   "correctOptionId": "a",
+   "evidenceSpan": "o reino será do Senhor",
+   "feedbackCorrect": "A última palavra do livro entrega o reino ao Senhor.",
+   "feedbackWrong": {
+    "b": "Monte é Sião; a posse final é outra palavra.",
+    "c": "Juízo é a tarefa; o que é do Senhor vem depois."
+   },
+   "hint": "Leia a frase final do livro.",
+   "learningObjective": "Lembrar a palavra final de Obadias.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "reino"
+    },
+    {
+     "id": "b",
+     "text": "monte"
+    },
+    {
+     "id": "c",
+     "text": "juízo"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Obadias 1:3 a Provérbios 16:18?",
+   "verseRef": "Obadias 1:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "A soberba do teu coração te enganou",
+   "feedbackCorrect": "Provérbios resume em frase o caminho de Edom em Obadias.",
+   "feedbackWrong": {
+    "b": "A altura não protegeu Edom do juízo de Deus.",
+    "c": "Nos dois textos o orgulho vem antes da queda."
+   },
+   "hint": "Veja o que vem antes da ruína.",
+   "learningObjective": "Relacionar o texto da cena com o contexto ou texto ligado.",
+   "evidence": [
+    "Obadias 1:3",
+    "Provérbios 16:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Soberba precede a queda"
+    },
+    {
+     "id": "b",
+     "text": "Altura protege o soberbo"
+    },
+    {
+     "id": "c",
+     "text": "Queda sem nenhum orgulho"
+    }
+   ],
+   "passageA": {
+    "ref": "Obadias 1:3"
+   },
+   "passageB": {
+    "ref": "Provérbios 16:18"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Obadias 1:15, toque o que volta sobre a cabeça de Edom.",
+   "verseRef": "Obadias 1:15",
+   "correctOptionId": "a",
+   "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+   "feedbackCorrect": "A própria maldade de Edom volta sobre sua cabeça.",
+   "feedbackWrong": {
+    "b": "Nações são o alcance do Dia, não o que volta.",
+    "c": "O Senhor traz o Dia; o que volta é outra coisa."
+   },
+   "hint": "Procure o sujeito do retorno.",
+   "learningObjective": "Sustentar o retorno do mal.",
+   "evidence": [
+    "Obadias 1:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "maldade"
+    },
+    {
+     "id": "b",
+     "text": "nações"
+    },
+    {
+     "id": "c",
+     "text": "Senhor"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do irmão em Obadias?",
+   "verseRef": "Obadias 1:21",
+   "correctOptionId": "a",
+   "evidenceSpan": "o reino será do Senhor",
+   "feedbackCorrect": "Da violência contra o irmão ao reino final do Senhor.",
+   "feedbackWrong": {
+    "default": "Reveja a sequência do texto e tente de novo."
+   },
+   "hint": "Comece por quem sofre a violência.",
+   "learningObjective": "Ver o caminho do irmão até o reino.",
+   "evidence": [
+    "Obadias 1:21"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jacó sofre violência de Edom"
+    },
+    {
+     "id": "b",
+     "text": "Deus julga o feito de Edom"
+    },
+    {
+     "id": "c",
+     "text": "Sião vê o reino do Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

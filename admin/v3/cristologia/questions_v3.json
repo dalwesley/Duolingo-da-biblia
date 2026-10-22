@@ -1,0 +1,3304 @@
+[
+  {
+    "id": "cristologia-sem-cr-01-deus-01",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 1:4, nele havia a vida e essa vida era a luz dos homens.",
+    "prompt": "Em João 1:4, nele havia a vida e essa vida era a luz dos homens.",
+    "cue": "Em João 1:4, nele havia a vida e essa vida era a luz dos homens.",
+    "verseRef": "João 1:4",
+    "passageText": "Nele havia a vida, e essa vida era a luz dos homens;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Nele havia a vida, e essa vida era a luz dos homens",
+    "feedbackCorrect": "O texto liga nele a vida que ilumina os homens.",
+    "feedbackWrong": {
+      "false": "Releia João 1:4: nele havia a vida, luz dos homens."
+    },
+    "hint": "Olhe o versículo 4.",
+    "learningObjective": "Observar que a vida nele ilumina os homens.",
+    "evidence": [
+      "João 1:4"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-01-deus-02",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 1:1, toque como o texto chama aquele que estava com Deus.",
+    "prompt": "Em João 1:1, toque como o texto chama aquele que estava com Deus.",
+    "cue": "Em João 1:1, toque como o texto chama aquele que estava com Deus.",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "com Deus"
+      },
+      {
+        "id": "c",
+        "text": "No princípio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "era o Verbo, e o Verbo estava com Deus",
+    "feedbackCorrect": "É esse o nome dele neste começo do evangelho.",
+    "feedbackWrong": {
+      "b": "Isso diz junto de quem ele estava.",
+      "c": "Isso diz quando, não como ele é chamado."
+    },
+    "hint": "Procure o nome dado a ele no começo.",
+    "learningObjective": "Identificar o nome dado a Jesus em João 1:1.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-01-deus-03",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 1:3, por meio de quem todas as coisas foram feitas?",
+    "prompt": "Segundo João 1:3, por meio de quem todas as coisas foram feitas?",
+    "cue": "Segundo João 1:3, por meio de quem todas as coisas foram feitas?",
+    "verseRef": "João 1:3",
+    "passageText": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos anjos, sem ele"
+      },
+      {
+        "id": "b",
+        "text": "Do Verbo, que estava com Deus"
+      },
+      {
+        "id": "c",
+        "text": "Dos homens, por sua força"
+      },
+      {
+        "id": "d",
+        "text": "De ninguém, surgiram sozinhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Todas as coisas foram feitas por meio dele",
+    "feedbackCorrect": "Todas as coisas foram feitas por meio dele, diz o texto.",
+    "feedbackWrong": {
+      "a": "O texto não fala de anjos fazendo as coisas.",
+      "c": "Os homens são parte do que foi feito, não os autores.",
+      "d": "Sem ele, nada do que foi feito se fez."
+    },
+    "hint": "Leia quem age no começo do versículo 3.",
+    "learningObjective": "Observar que tudo foi feito por meio do Verbo.",
+    "evidence": [
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-01-deus-04",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 1:1 na ordem do texto.",
+    "prompt": "Monte João 1:1 na ordem do texto.",
+    "cue": "Monte João 1:1 na ordem do texto.",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio, era o Verbo"
+      },
+      {
+        "id": "b",
+        "text": "e o Verbo estava com Deus"
+      },
+      {
+        "id": "c",
+        "text": "e o Verbo era Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "No princípio, era o Verbo",
+    "feedbackCorrect": "Era, estava com Deus e era Deus: essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Comece pelo princípio; o fim afirma quem ele era."
+    },
+    "hint": "O versículo começa pelo princípio.",
+    "learningObjective": "Reconhecer a sequência de João 1:1.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-01-deus-05",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 1:1, com quem ele estava no princípio?",
+    "prompt": "Em João 1:1, com quem ele estava no princípio?",
+    "cue": "Em João 1:1, com quem ele estava no princípio?",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio, era o Verbo, e o Verbo estava com ___, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "homens"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "anjos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Verbo estava com Deus",
+    "feedbackCorrect": "Ele estava junto dele já no princípio.",
+    "feedbackWrong": {
+      "a": "Os homens aparecem só no versículo 4, como quem recebe luz.",
+      "c": "O texto não menciona esses seres neste versículo."
+    },
+    "hint": "Olhe quem estava junto no começo.",
+    "learningObjective": "Lembrar junto de quem o Verbo estava.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-01-deus-06",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:3 comunica que se liga a este contexto?",
+    "cue": "O que João 1:3 comunica que se liga a este contexto?",
+    "verseRef": "João 1:3",
+    "passageText": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "passageA": {
+      "ref": "João 1:3",
+      "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes de tudo existir, Deus fez todas as coisas por meio do Verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens criaram todas as coisas"
+      },
+      {
+        "id": "b",
+        "text": "Tudo foi feito por ele"
+      },
+      {
+        "id": "c",
+        "text": "O mundo surgiu sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Todas as coisas foram feitas por meio dele",
+    "feedbackCorrect": "Nada ficou fora: tudo foi feito por meio dele.",
+    "feedbackWrong": {
+      "a": "Os homens recebem a luz; não fazem todas as coisas.",
+      "c": "Sem ele, nada do que foi feito se fez."
+    },
+    "hint": "Veja o alcance no começo do versículo.",
+    "learningObjective": "Ligar João 1:3 à criação de todas as coisas.",
+    "evidence": [
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-01-deus-01",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 1:1–2, ele começou a existir apenas quando tudo foi criado.",
+    "prompt": "Em João 1:1–2, ele começou a existir apenas quando tudo foi criado.",
+    "cue": "Em João 1:1–2, ele começou a existir apenas quando tudo foi criado.",
+    "verseRef": "João 1:1–2",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ele estava no princípio ao lado de Deus",
+    "feedbackCorrect": "Ele já estava no princípio, ao lado de Deus, antes das coisas feitas.",
+    "feedbackWrong": {
+      "true": "Releia o versículo 2: ele estava no princípio ao lado de Deus."
+    },
+    "hint": "Repare no tempo do verbo no versículo 2.",
+    "learningObjective": "Compreender que o Verbo já existia no princípio.",
+    "evidence": [
+      "João 1:1–2"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-01-deus-02",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 1:1, toque a expressão que mostra ele junto de outra pessoa.",
+    "prompt": "Em João 1:1, toque a expressão que mostra ele junto de outra pessoa.",
+    "cue": "Em João 1:1, toque a expressão que mostra ele junto de outra pessoa.",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "era o Verbo"
+      },
+      {
+        "id": "b",
+        "text": "com Deus"
+      },
+      {
+        "id": "c",
+        "text": "era Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Verbo estava com Deus",
+    "feedbackCorrect": "Ele estava junto, em companhia, desde o princípio.",
+    "feedbackWrong": {
+      "a": "Isso diz como ele é chamado, não junto de quem estava.",
+      "c": "Isso afirma quem ele é, não a companhia."
+    },
+    "hint": "Procure a expressão de companhia no versículo.",
+    "learningObjective": "Reconhecer a relação de companhia em João 1:1.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-01-deus-03",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 1:1 apresenta o Verbo em relação a Deus?",
+    "prompt": "Como João 1:1 apresenta o Verbo em relação a Deus?",
+    "cue": "Como João 1:1 apresenta o Verbo em relação a Deus?",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Junto de Deus e também Deus"
+      },
+      {
+        "id": "b",
+        "text": "Menor e separado dele"
+      },
+      {
+        "id": "c",
+        "text": "Distante dele, apenas uma ideia"
+      },
+      {
+        "id": "d",
+        "text": "Criado por ele no começo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Verbo estava com Deus, e o Verbo era Deus",
+    "feedbackCorrect": "O versículo junta as duas coisas: junto dele e também ele mesmo Deus.",
+    "feedbackWrong": {
+      "b": "O texto não o coloca abaixo; afirma que ele era Deus.",
+      "c": "Ele estava com Deus, não distante nem só uma ideia.",
+      "d": "Ele já era no princípio; não é contado entre as coisas feitas."
+    },
+    "hint": "Junte as duas afirmações do versículo.",
+    "learningObjective": "Relacionar companhia e identidade em João 1:1.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-01-deus-04",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em João 1:2–3?",
+    "prompt": "Como avança a cena em João 1:2–3?",
+    "cue": "Como avança a cena em João 1:2–3?",
+    "verseRef": "João 1:2–3",
+    "passageText": "Ele estava no princípio ao lado de Deus. Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele está junto de Deus no princípio"
+      },
+      {
+        "id": "b",
+        "text": "Todas as coisas são feitas por ele"
+      },
+      {
+        "id": "c",
+        "text": "Nada feito existe sem ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele estava no princípio ao lado de Deus",
+    "feedbackCorrect": "Primeiro ele junto de Deus; depois tudo feito por ele, sem exceção.",
+    "feedbackWrong": {
+      "default": "Comece por ele junto de Deus no princípio."
+    },
+    "hint": "O versículo 2 vem antes do 3.",
+    "learningObjective": "Compreender o avanço de João 1:2 para 1:3.",
+    "evidence": [
+      "João 1:2–3"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-01-deus-05",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 1:3, que palavra completa a ação sobre todas as coisas?",
+    "prompt": "Em João 1:3, que palavra completa a ação sobre todas as coisas?",
+    "cue": "Em João 1:3, que palavra completa a ação sobre todas as coisas?",
+    "verseRef": "João 1:3",
+    "passageText": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "template": "Todas as coisas foram ___ por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "feitas"
+      },
+      {
+        "id": "b",
+        "text": "ditas"
+      },
+      {
+        "id": "c",
+        "text": "vistas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Todas as coisas foram feitas por meio dele",
+    "feedbackCorrect": "Todas as coisas passaram a existir por meio dele.",
+    "feedbackWrong": {
+      "b": "O texto fala de fazer existir, não só de falar.",
+      "c": "Não é uma questão de olhar, mas de fazer."
+    },
+    "hint": "Repare o que aconteceu com todas as coisas.",
+    "learningObjective": "Compreender a ação criadora em João 1:3.",
+    "evidence": [
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-01-deus-06",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 1:3 a Gênesis 1:1?",
+    "prompt": "O que liga João 1:3 a Gênesis 1:1?",
+    "cue": "O que liga João 1:3 a Gênesis 1:1?",
+    "verseRef": "João 1:3",
+    "passageText": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "passageA": {
+      "ref": "João 1:3",
+      "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+    },
+    "passageB": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens criaram todas as coisas"
+      },
+      {
+        "id": "b",
+        "text": "O mundo surgiu sozinho"
+      },
+      {
+        "id": "c",
+        "text": "Tudo foi feito por Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Todas as coisas foram feitas por meio dele",
+    "feedbackCorrect": "João relê o princípio: Deus faz tudo, por meio do Verbo.",
+    "feedbackWrong": {
+      "a": "Quem faz todas as coisas é Deus, por meio dele.",
+      "b": "Os dois textos dão um autor ao começo de tudo."
+    },
+    "hint": "Compare quem faz tudo nos dois textos.",
+    "learningObjective": "Relacionar João 1:3 ao Deus criador de Gênesis.",
+    "evidence": [
+      "João 1:3",
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-01-deus-01",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 1:4, a vida que estava nele era a luz dos homens.",
+    "prompt": "Em João 1:4, a vida que estava nele era a luz dos homens.",
+    "cue": "Em João 1:4, a vida que estava nele era a luz dos homens.",
+    "verseRef": "João 1:4",
+    "passageText": "Nele havia a vida, e essa vida era a luz dos homens;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "essa vida era a luz dos homens",
+    "feedbackCorrect": "A vida nele não fica nele: ela ilumina os homens.",
+    "feedbackWrong": {
+      "false": "Releia o fim de João 1:4: essa vida era a luz dos homens."
+    },
+    "hint": "Olhe o fim do versículo 4.",
+    "learningObjective": "Interpretar a vida nele como luz para os homens.",
+    "evidence": [
+      "João 1:4"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-01-deus-02",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 1:4, toque o que a vida que estava nele era para os homens.",
+    "prompt": "Em João 1:4, toque o que a vida que estava nele era para os homens.",
+    "cue": "Em João 1:4, toque o que a vida que estava nele era para os homens.",
+    "verseRef": "João 1:4",
+    "passageText": "Nele havia a vida, e essa vida era a luz dos homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "a vida"
+      },
+      {
+        "id": "b",
+        "text": "Nele havia"
+      },
+      {
+        "id": "c",
+        "text": "luz dos homens"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "essa vida era a luz dos homens",
+    "feedbackCorrect": "A vida nele se volta para os homens como quem ilumina.",
+    "feedbackWrong": {
+      "a": "Isso é o que havia nele; falta o que ela era para os homens.",
+      "b": "Isso diz onde a vida estava, não o que ela era para nós."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar com o texto a vida como luz dos homens.",
+    "evidence": [
+      "João 1:4"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-01-deus-03",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 1:1–2 sustenta sobre Jesus, o Verbo?",
+    "prompt": "Que leitura João 1:1–2 sustenta sobre Jesus, o Verbo?",
+    "cue": "Que leitura João 1:1–2 sustenta sobre Jesus, o Verbo?",
+    "verseRef": "João 1:1–2",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio ao lado de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é Deus e tudo foi feito por ele"
+      },
+      {
+        "id": "b",
+        "text": "Ele é uma ideia sem existência real"
+      },
+      {
+        "id": "c",
+        "text": "Ele começou a existir ao nascer"
+      },
+      {
+        "id": "d",
+        "text": "Ele é apenas um mestre humano sábio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "No princípio, era o Verbo",
+    "feedbackCorrect": "Ele já era no princípio, estava com Deus e era Deus.",
+    "feedbackWrong": {
+      "b": "Ele estava com Deus e agiu fazendo todas as coisas.",
+      "c": "O texto o coloca antes de todas as coisas feitas.",
+      "d": "Um mestre humano não estava no princípio nem fez tudo."
+    },
+    "hint": "Compare cada opção com o princípio do texto.",
+    "learningObjective": "Escolher a interpretação sustentada por João 1.",
+    "evidence": [
+      "João 1:1–2"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-01-deus-04",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio que começa em João 1:4?",
+    "prompt": "Qual sequência revela o fio que começa em João 1:4?",
+    "cue": "Qual sequência revela o fio que começa em João 1:4?",
+    "verseRef": "João 1:4",
+    "passageText": "Nele havia a vida, e essa vida era a luz dos homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria tudo no princípio"
+      },
+      {
+        "id": "b",
+        "text": "Tudo é feito por meio do Verbo"
+      },
+      {
+        "id": "c",
+        "text": "A vida dele ilumina os homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Nele havia a vida",
+    "feedbackCorrect": "Criação, tudo por meio dele e vida que ilumina: esse é o fio.",
+    "feedbackWrong": {
+      "default": "Siga a história: princípio, criação por ele, luz aos homens."
+    },
+    "hint": "Comece pelo princípio de Gênesis.",
+    "learningObjective": "Ver João 1 como fio que liga criação e luz.",
+    "evidence": [
+      "João 1:4",
+      "Gênesis 1:1",
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-01-deus-05",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 1:1, desde quando ele já era, segundo o texto?",
+    "prompt": "Em João 1:1, desde quando ele já era, segundo o texto?",
+    "cue": "Em João 1:1, desde quando ele já era, segundo o texto?",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No ___, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meio"
+      },
+      {
+        "id": "b",
+        "text": "fim"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "No princípio, era o Verbo",
+    "feedbackCorrect": "Ele já era quando tudo começou.",
+    "feedbackWrong": {
+      "a": "Ele já era antes de qualquer meio da história.",
+      "b": "O texto o coloca no começo, não só no fim."
+    },
+    "hint": "Olhe a primeira expressão do evangelho.",
+    "learningObjective": "Lembrar o termo que marca a eternidade do Verbo.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-01-deus-06",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 1:1 a Colossenses 1:16?",
+    "prompt": "O que liga João 1:1 a Colossenses 1:16?",
+    "cue": "O que liga João 1:1 a Colossenses 1:16?",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "passageA": {
+      "ref": "João 1:1",
+      "text": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+    },
+    "passageB": {
+      "ref": "Colossenses 1:16",
+      "text": "Porque nele foram criadas todas as coisas que existem nos céus e sobre a terra, as visíveis e as invisíveis, sejam tronos, sejam soberanias, sejam principados, sejam potestades. Todas as coisas foram criadas por meio dele e para ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mundo feito sem Deus"
+      },
+      {
+        "id": "b",
+        "text": "Tudo criado por meio dele"
+      },
+      {
+        "id": "c",
+        "text": "Cristo alheio à criação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Verbo era Deus",
+    "feedbackCorrect": "Paulo diz o mesmo: tudo foi criado por meio dele e para ele.",
+    "feedbackWrong": {
+      "a": "Os dois textos ligam tudo a Deus, por meio dele.",
+      "c": "Colossenses o coloca no centro de toda a criação."
+    },
+    "hint": "Veja por meio de quem tudo foi criado.",
+    "learningObjective": "Ligar a criação em João à criação em Colossenses.",
+    "evidence": [
+      "João 1:1",
+      "Colossenses 1:16"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-02-homem-01",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Hebreus 2:16, ele socorre anjos em vez da descendência de Abraão.",
+    "prompt": "Em Hebreus 2:16, ele socorre anjos em vez da descendência de Abraão.",
+    "cue": "Em Hebreus 2:16, ele socorre anjos em vez da descendência de Abraão.",
+    "verseRef": "Hebreus 2:16",
+    "passageText": "Pois, na verdade, ele, evidentemente, não socorre anjos, mas socorre a descendência de Abraão.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "socorre a descendência de Abraão",
+    "feedbackCorrect": "Ele socorre pessoas, a descendência de Abraão, não anjos.",
+    "feedbackWrong": {
+      "true": "Releia o versículo: ele socorre a descendência de Abraão."
+    },
+    "hint": "Veja quem ele socorre no versículo.",
+    "learningObjective": "Observar quem Jesus socorre em Hebreus 2:16.",
+    "evidence": [
+      "Hebreus 2:16"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-02-homem-02",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 2:14, toque do que os filhos têm participação comum.",
+    "prompt": "Em Hebreus 2:14, toque do que os filhos têm participação comum.",
+    "cue": "Em Hebreus 2:14, toque do que os filhos têm participação comum.",
+    "verseRef": "Hebreus 2:14",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne e sangue"
+      },
+      {
+        "id": "b",
+        "text": "poder da morte"
+      },
+      {
+        "id": "c",
+        "text": "mesmas coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os filhos têm participação comum de carne e sangue",
+    "feedbackCorrect": "É dessa condição humana que ele também participou.",
+    "feedbackWrong": {
+      "b": "Isso pertence ao diabo no texto, não aos filhos.",
+      "c": "Isso é o que ele participou, não o nome da condição."
+    },
+    "hint": "Leia a primeira parte do versículo 14.",
+    "learningObjective": "Identificar a condição humana em Hebreus 2:14.",
+    "evidence": [
+      "Hebreus 2:14"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-02-homem-03",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 2:17, a quem Jesus se tornou semelhante em tudo?",
+    "prompt": "Segundo Hebreus 2:17, a quem Jesus se tornou semelhante em tudo?",
+    "cue": "Segundo Hebreus 2:17, a quem Jesus se tornou semelhante em tudo?",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Aos anjos, em tudo"
+      },
+      {
+        "id": "c",
+        "text": "A ninguém, só na aparência"
+      },
+      {
+        "id": "d",
+        "text": "Somente aos sacerdotes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se tornasse semelhante a seus irmãos em todas as coisas",
+    "feedbackCorrect": "Ele se tornou como nós, seus irmãos, em todas as coisas.",
+    "feedbackWrong": {
+      "b": "O versículo anterior diz que ele não socorre anjos assim.",
+      "c": "O texto afirma semelhança real, em todas as coisas.",
+      "d": "A semelhança é com seus irmãos, não só com um grupo."
+    },
+    "hint": "Procure os parentes citados no versículo.",
+    "learningObjective": "Observar a semelhança de Jesus conosco.",
+    "evidence": [
+      "Hebreus 2:17"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-02-homem-04",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 2:18 na ordem do texto.",
+    "prompt": "Monte Hebreus 2:18 na ordem do texto.",
+    "cue": "Monte Hebreus 2:18 na ordem do texto.",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque, naquilo que ele mesmo sofreu"
+      },
+      {
+        "id": "b",
+        "text": "e foi tentado"
+      },
+      {
+        "id": "c",
+        "text": "é poderoso para socorrer os que estão sendo tentados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque, naquilo que ele mesmo sofreu e foi tentado",
+    "feedbackCorrect": "Ele sofreu, foi provado e assim pode socorrer quem é provado.",
+    "feedbackWrong": {
+      "default": "Comece pelo sofrimento dele; o socorro vem no fim."
+    },
+    "hint": "O versículo começa pela causa.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 2:18.",
+    "evidence": [
+      "Hebreus 2:18"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-02-homem-05",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Hebreus 2:15, do pavor de quê muitos viviam escravos?",
+    "prompt": "Em Hebreus 2:15, do pavor de quê muitos viviam escravos?",
+    "cue": "Em Hebreus 2:15, do pavor de quê muitos viviam escravos?",
+    "verseRef": "Hebreus 2:15",
+    "passageText": "e livrasse todos os que, pelo pavor da morte, estavam sujeitos à servidão por toda a vida.",
+    "template": "e livrasse todos os que, pelo pavor da ___, estavam sujeitos à servidão por toda a vida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pelo pavor da morte, estavam sujeitos à servidão",
+    "feedbackCorrect": "Era o medo de morrer que prendia essas pessoas.",
+    "feedbackWrong": {
+      "a": "O medo citado não é da vida, mas do seu fim.",
+      "b": "O texto não fala de comida neste versículo."
+    },
+    "hint": "Olhe o que prendia as pessoas por toda a vida.",
+    "learningObjective": "Lembrar do que Jesus livra em Hebreus 2:15.",
+    "evidence": [
+      "Hebreus 2:15"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-02-homem-06",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Hebreus 2:18 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 2:18 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 2:18 comunica que se liga a este contexto?",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "passageA": {
+      "ref": "Hebreus 2:18",
+      "text": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem sofre tentação pode ser socorrido por Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele socorre os tentados"
+      },
+      {
+        "id": "b",
+        "text": "Ele ignora quem sofre"
+      },
+      {
+        "id": "c",
+        "text": "Tentação mostra abandono total"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é poderoso para socorrer os que estão sendo tentados",
+    "feedbackCorrect": "Quem está sendo provado encontra nele socorro real.",
+    "feedbackWrong": {
+      "b": "O texto afirma o contrário: ele é poderoso para socorrer.",
+      "c": "A prova é justamente onde o socorro dele chega."
+    },
+    "hint": "Veja o que ele pode fazer no fim do versículo.",
+    "learningObjective": "Ligar Hebreus 2:18 ao socorro na tentação.",
+    "evidence": [
+      "Hebreus 2:18"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-02-homem-01",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 2:14–15, Jesus participou de carne e sangue para deixar as pessoas presas ao medo de morrer.",
+    "prompt": "Em Hebreus 2:14–15, Jesus participou de carne e sangue para deixar as pessoas presas ao medo de morrer.",
+    "cue": "Em Hebreus 2:14–15, Jesus participou de carne e sangue para deixar as pessoas presas ao medo de morrer.",
+    "verseRef": "Hebreus 2:14–15",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo. e livrasse todos os que, pelo pavor da morte, estavam sujeitos à servidão por toda a vida.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "livrasse todos os que, pelo pavor da morte",
+    "feedbackCorrect": "Ele participou para livrar, não para prender, quem tinha medo.",
+    "feedbackWrong": {
+      "true": "Releia o alvo no versículo 15: livrar os que tinham pavor."
+    },
+    "hint": "Procure o alvo da ação no versículo 15.",
+    "learningObjective": "Compreender o propósito da encarnação em Hebreus 2.",
+    "evidence": [
+      "Hebreus 2:14–15"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-02-homem-02",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 2:17, toque a expressão que mostra o alvo de ele se tornar semelhante.",
+    "prompt": "Em Hebreus 2:17, toque a expressão que mostra o alvo de ele se tornar semelhante.",
+    "cue": "Em Hebreus 2:17, toque a expressão que mostra o alvo de ele se tornar semelhante.",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todas as coisas"
+      },
+      {
+        "id": "b",
+        "text": "para ser"
+      },
+      {
+        "id": "c",
+        "text": "seus irmãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para ser um sumo sacerdote misericordioso e fiel",
+    "feedbackCorrect": "A semelhança tinha um alvo: representar o povo diante de Deus.",
+    "feedbackWrong": {
+      "a": "Isso diz a medida da semelhança, não o alvo.",
+      "c": "Isso diz a quem ele se tornou semelhante, não o alvo."
+    },
+    "hint": "Procure a expressão de alvo no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de propósito em Hebreus 2:17.",
+    "evidence": [
+      "Hebreus 2:17"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-02-homem-03",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que Jesus participou de carne e sangue, segundo Hebreus 2:14–15?",
+    "prompt": "Por que Jesus participou de carne e sangue, segundo Hebreus 2:14–15?",
+    "cue": "Por que Jesus participou de carne e sangue, segundo Hebreus 2:14–15?",
+    "verseRef": "Hebreus 2:14–15",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo. e livrasse todos os que, pelo pavor da morte, estavam sujeitos à servidão por toda a vida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para evitar ele mesmo o sofrimento"
+      },
+      {
+        "id": "b",
+        "text": "Para socorrer anjos antes das pessoas"
+      },
+      {
+        "id": "c",
+        "text": "Para livrar pessoas presas ao medo de morrer"
+      },
+      {
+        "id": "d",
+        "text": "Para conhecer a vida humana de longe"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por meio da morte, destruísse aquele que tem o poder da morte",
+    "feedbackCorrect": "Ele entrou na nossa condição para enfrentar a morte e livrar quem tinha medo.",
+    "feedbackWrong": {
+      "a": "Ele não evitou: sofreu e morreu, diz o texto.",
+      "b": "O versículo 16 diz que ele socorre a descendência de Abraão.",
+      "d": "Ele participou das mesmas coisas, não observou de longe."
+    },
+    "hint": "Junte o meio do versículo 14 ao alvo do 15.",
+    "learningObjective": "Relacionar participação, morte e libertação.",
+    "evidence": [
+      "Hebreus 2:14–15"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-02-homem-04",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Hebreus 2:14–15?",
+    "prompt": "Como avança o argumento em Hebreus 2:14–15?",
+    "cue": "Como avança o argumento em Hebreus 2:14–15?",
+    "verseRef": "Hebreus 2:14–15",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo. e livrasse todos os que, pelo pavor da morte, estavam sujeitos à servidão por toda a vida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus participa da nossa condição humana"
+      },
+      {
+        "id": "b",
+        "text": "Ele enfrenta a morte em nosso favor"
+      },
+      {
+        "id": "c",
+        "text": "Pessoas presas ao medo são libertas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "igualmente Ele participou das mesmas coisas",
+    "feedbackCorrect": "Participar, enfrentar a morte e livrar: esse é o caminho do texto.",
+    "feedbackWrong": {
+      "default": "Comece pela participação dele na nossa condição."
+    },
+    "hint": "A libertação é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Hebreus 2:14–15.",
+    "evidence": [
+      "Hebreus 2:14–15"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-02-homem-05",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 2:18, como o texto completa o que ele mesmo sofreu?",
+    "prompt": "Em Hebreus 2:18, como o texto completa o que ele mesmo sofreu?",
+    "cue": "Em Hebreus 2:18, como o texto completa o que ele mesmo sofreu?",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "template": "Porque, naquilo que ele mesmo sofreu e foi ___, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esquecido"
+      },
+      {
+        "id": "b",
+        "text": "tentado"
+      },
+      {
+        "id": "c",
+        "text": "poupado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele mesmo sofreu e foi tentado",
+    "feedbackCorrect": "Ele sofreu e passou pela prova, como nós.",
+    "feedbackWrong": {
+      "a": "O texto o apresenta presente para socorrer, não ausente.",
+      "c": "Ele não foi poupado da prova; passou por ela."
+    },
+    "hint": "Repare a segunda parte do que ele viveu.",
+    "learningObjective": "Compreender que Jesus também foi provado.",
+    "evidence": [
+      "Hebreus 2:18"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-02-homem-06",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 2:17 a Filipenses 2:7?",
+    "prompt": "O que liga Hebreus 2:17 a Filipenses 2:7?",
+    "cue": "O que liga Hebreus 2:17 a Filipenses 2:7?",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "passageA": {
+      "ref": "Hebreus 2:17",
+      "text": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo."
+    },
+    "passageB": {
+      "ref": "Filipenses 2:7",
+      "text": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele se fez semelhante a nós"
+      },
+      {
+        "id": "b",
+        "text": "Ele socorre somente anjos"
+      },
+      {
+        "id": "c",
+        "text": "Ele evitou ser humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se tornasse semelhante a seus irmãos em todas as coisas",
+    "feedbackCorrect": "Os dois textos dizem que ele se tornou como nós, de verdade.",
+    "feedbackWrong": {
+      "b": "Hebreus diz que ele socorre a descendência de Abraão.",
+      "c": "Filipenses diz que ele se tornou em semelhança de homens."
+    },
+    "hint": "Compare como os dois textos o apresentam.",
+    "learningObjective": "Relacionar a semelhança de Jesus nos dois textos.",
+    "evidence": [
+      "Hebreus 2:17",
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-02-homem-01",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Hebreus 2:18, Jesus pode socorrer os tentados porque ele mesmo sofreu e foi tentado.",
+    "prompt": "Em Hebreus 2:18, Jesus pode socorrer os tentados porque ele mesmo sofreu e foi tentado.",
+    "cue": "Em Hebreus 2:18, Jesus pode socorrer os tentados porque ele mesmo sofreu e foi tentado.",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer",
+    "feedbackCorrect": "O socorro dele nasce do que ele mesmo viveu na prova.",
+    "feedbackWrong": {
+      "false": "O versículo começa justamente por essa ligação: porque sofreu, socorre."
+    },
+    "hint": "Veja a ligação entre sofrer e socorrer.",
+    "learningObjective": "Interpretar o sofrimento de Jesus como base do socorro.",
+    "evidence": [
+      "Hebreus 2:18"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-02-homem-02",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 2:17, toque a função de Jesus diante de Deus em favor do povo.",
+    "prompt": "Em Hebreus 2:17, toque a função de Jesus diante de Deus em favor do povo.",
+    "cue": "Em Hebreus 2:17, toque a função de Jesus diante de Deus em favor do povo.",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em todas"
+      },
+      {
+        "id": "b",
+        "text": "pecados do povo"
+      },
+      {
+        "id": "c",
+        "text": "sumo sacerdote"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para ser um sumo sacerdote misericordioso e fiel",
+    "feedbackCorrect": "Ele representa o povo diante de Deus com misericórdia.",
+    "feedbackWrong": {
+      "a": "Isso fala da medida da semelhança, não da função.",
+      "b": "Isso é o problema tratado, não a função dele."
+    },
+    "hint": "Procure o cargo citado no meio do versículo.",
+    "learningObjective": "Sustentar com o texto a função de Jesus pelo povo.",
+    "evidence": [
+      "Hebreus 2:17"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-02-homem-03",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Hebreus 2:17–18 sustenta sobre a ajuda de Jesus?",
+    "prompt": "Que leitura Hebreus 2:17–18 sustenta sobre a ajuda de Jesus?",
+    "cue": "Que leitura Hebreus 2:17–18 sustenta sobre a ajuda de Jesus?",
+    "verseRef": "Hebreus 2:17–18",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele só parecia homem, sem sofrer"
+      },
+      {
+        "id": "b",
+        "text": "Ele entende e socorre quem é tentado"
+      },
+      {
+        "id": "c",
+        "text": "Ele ajuda só quem nunca é tentado"
+      },
+      {
+        "id": "d",
+        "text": "Ele se afastou das pessoas ao sofrer"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é poderoso para socorrer os que estão sendo tentados",
+    "feedbackCorrect": "Ele sofreu e foi provado; por isso entende e socorre quem passa pela prova.",
+    "feedbackWrong": {
+      "a": "Ele participou de carne e sangue e sofreu de verdade.",
+      "c": "O socorro é para os que estão sendo tentados agora.",
+      "d": "O sofrimento o aproxima de nós, não o afasta."
+    },
+    "hint": "Junte a função do versículo 17 ao socorro do 18.",
+    "learningObjective": "Escolher a interpretação sustentada por Hebreus 2.",
+    "evidence": [
+      "Hebreus 2:17–18"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-02-homem-04",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Hebreus 2:17–18?",
+    "prompt": "Qual sequência revela o caminho de Hebreus 2:17–18?",
+    "cue": "Qual sequência revela o caminho de Hebreus 2:17–18?",
+    "verseRef": "Hebreus 2:17–18",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele se torna semelhante aos irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Ele cuida dos pecados do povo diante de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ele socorre quem está sendo tentado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se tornasse semelhante a seus irmãos em todas as coisas",
+    "feedbackCorrect": "Semelhante a nós, ele trata dos nossos pecados e socorre na prova.",
+    "feedbackWrong": {
+      "default": "Comece pela semelhança completa com os irmãos."
+    },
+    "hint": "O socorro aos tentados fecha o trecho.",
+    "learningObjective": "Ver o encadeamento de semelhança, perdão e socorro.",
+    "evidence": [
+      "Hebreus 2:17–18"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-02-homem-05",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Hebreus 2:14, quem é identificado como quem tem o poder da morte?",
+    "prompt": "Em Hebreus 2:14, quem é identificado como quem tem o poder da morte?",
+    "cue": "Em Hebreus 2:14, quem é identificado como quem tem o poder da morte?",
+    "verseRef": "Hebreus 2:14",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo.",
+    "template": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "homem"
+      },
+      {
+        "id": "b",
+        "text": "anjo"
+      },
+      {
+        "id": "c",
+        "text": "diabo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aquele que tem o poder da morte, isto é, o diabo",
+    "feedbackCorrect": "O texto nomeia quem mantinha pessoas presas pelo medo.",
+    "feedbackWrong": {
+      "a": "O homem é quem sofre esse poder, não quem o tem.",
+      "b": "Anjos não são citados com esse poder no texto."
+    },
+    "hint": "Olhe a explicação no fim do versículo 14.",
+    "learningObjective": "Lembrar quem o texto liga ao poder da morte.",
+    "evidence": [
+      "Hebreus 2:14"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-02-homem-06",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Hebreus 2:18 a Hebreus 4:15?",
+    "prompt": "O que liga Hebreus 2:18 a Hebreus 4:15?",
+    "cue": "O que liga Hebreus 2:18 a Hebreus 4:15?",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "passageA": {
+      "ref": "Hebreus 2:18",
+      "text": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados."
+    },
+    "passageB": {
+      "ref": "Hebreus 4:15",
+      "text": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem sofrer, ele julga"
+      },
+      {
+        "id": "b",
+        "text": "Ele não conhece tentação"
+      },
+      {
+        "id": "c",
+        "text": "Tentado, ele pode socorrer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele mesmo sofreu e foi tentado",
+    "feedbackCorrect": "Os dois textos o mostram provado como nós, mas sem pecado, pronto a socorrer.",
+    "feedbackWrong": {
+      "a": "Ele socorre porque sofreu, não por estar longe da prova.",
+      "b": "Hebreus 4 diz que ele foi tentado em todas as coisas como nós."
+    },
+    "hint": "Veja o que os dois textos dizem da prova dele.",
+    "learningObjective": "Ligar o socorro de Jesus à sua própria prova.",
+    "evidence": [
+      "Hebreus 2:18",
+      "Hebreus 4:15"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-03-senhor-01",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 2:8, Jesus se tornou obediente até à morte, e morte de cruz.",
+    "prompt": "Em Filipenses 2:8, Jesus se tornou obediente até à morte, e morte de cruz.",
+    "cue": "Em Filipenses 2:8, Jesus se tornou obediente até à morte, e morte de cruz.",
+    "verseRef": "Filipenses 2:8",
+    "passageText": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "tornando-se obediente até à morte, e morte de cruz",
+    "feedbackCorrect": "A obediência dele foi até o fim, até a cruz.",
+    "feedbackWrong": {
+      "false": "Releia o versículo 8: obediente até à morte de cruz."
+    },
+    "hint": "Olhe até onde vai a obediência no versículo.",
+    "learningObjective": "Observar a obediência de Jesus até a cruz.",
+    "evidence": [
+      "Filipenses 2:8"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-03-senhor-02",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 2:8, toque até que tipo de morte ele obedeceu.",
+    "prompt": "Em Filipenses 2:8, toque até que tipo de morte ele obedeceu.",
+    "cue": "Em Filipenses 2:8, toque até que tipo de morte ele obedeceu.",
+    "verseRef": "Filipenses 2:8",
+    "passageText": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte de cruz"
+      },
+      {
+        "id": "b",
+        "text": "si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "obediente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "obediente até à morte, e morte de cruz",
+    "feedbackCorrect": "Ele obedeceu até o ponto mais baixo: a cruz.",
+    "feedbackWrong": {
+      "b": "Isso fala dele mesmo se humilhar, não da morte.",
+      "c": "Isso diz como ele agiu, não o tipo de morte."
+    },
+    "hint": "Procure o fim do versículo 8.",
+    "learningObjective": "Identificar a morte de cruz em Filipenses 2:8.",
+    "evidence": [
+      "Filipenses 2:8"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-03-senhor-03",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 2:7, que forma Jesus assumiu ao se esvaziar?",
+    "prompt": "Segundo Filipenses 2:7, que forma Jesus assumiu ao se esvaziar?",
+    "cue": "Segundo Filipenses 2:7, que forma Jesus assumiu ao se esvaziar?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Forma de servo"
+      },
+      {
+        "id": "b",
+        "text": "Forma de rei terreno"
+      },
+      {
+        "id": "c",
+        "text": "Aparência sem ser homem"
+      },
+      {
+        "id": "d",
+        "text": "Forma de anjo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assumindo a forma de servo",
+    "feedbackCorrect": "Ele assumiu o lugar de quem serve, tornando-se como os homens.",
+    "feedbackWrong": {
+      "b": "Ele não busca trono terreno; assume o lugar de servir.",
+      "c": "Ele se tornou em semelhança de homens de verdade.",
+      "d": "O texto o coloca entre os homens, não entre anjos."
+    },
+    "hint": "Leia o que ele assume no versículo 7.",
+    "learningObjective": "Observar a forma assumida por Jesus.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-03-senhor-04",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 2:7–8 na ordem do texto.",
+    "prompt": "Monte Filipenses 2:7–8 na ordem do texto.",
+    "cue": "Monte Filipenses 2:7–8 na ordem do texto.",
+    "verseRef": "Filipenses 2:7–8",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a si mesmo se esvaziou assumindo a forma de servo"
+      },
+      {
+        "id": "b",
+        "text": "tornando-se em semelhança de homens"
+      },
+      {
+        "id": "c",
+        "text": "humilhou-se a si mesmo, tornando-se obediente até à morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+    "feedbackCorrect": "Esvaziar-se, tornar-se como homens e obedecer até morrer: essa é a descida.",
+    "feedbackWrong": {
+      "default": "Comece pelo esvaziamento; a morte fecha a descida."
+    },
+    "hint": "A cruz é o ponto mais baixo.",
+    "learningObjective": "Reconhecer a sequência da descida em Filipenses 2.",
+    "evidence": [
+      "Filipenses 2:7–8"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-03-senhor-05",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 2:9, o que o Pai fez com Jesus após a cruz?",
+    "prompt": "Em Filipenses 2:9, o que o Pai fez com Jesus após a cruz?",
+    "cue": "Em Filipenses 2:9, o que o Pai fez com Jesus após a cruz?",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "template": "Por isso, Deus o ___ sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "rejeitou"
+      },
+      {
+        "id": "b",
+        "text": "exaltou"
+      },
+      {
+        "id": "c",
+        "text": "escondeu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus o exaltou sobremaneira",
+    "feedbackCorrect": "Depois da cruz, o Pai o levantou ao mais alto lugar.",
+    "feedbackWrong": {
+      "a": "A cruz não foi rejeição final: o Pai o levantou.",
+      "c": "Ele não o escondeu; deu-lhe o nome acima de todo nome."
+    },
+    "hint": "Veja a ação do Pai no versículo 9.",
+    "learningObjective": "Lembrar a ação de Deus em Filipenses 2:9.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-03-senhor-06",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 2:11 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:11 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:11 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 2:11",
+    "passageText": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai.",
+    "passageA": {
+      "ref": "Filipenses 2:11",
+      "text": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus crucificado é reconhecido como Senhor por todos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus foi esquecido"
+      },
+      {
+        "id": "b",
+        "text": "A cruz foi o fim"
+      },
+      {
+        "id": "c",
+        "text": "Jesus Cristo é Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+    "feedbackCorrect": "Toda língua confessará quem ele é, para a glória do Pai.",
+    "feedbackWrong": {
+      "a": "O texto fala de confissão de todos, não de esquecimento.",
+      "b": "A cruz leva à exaltação e à confissão, não ao fim."
+    },
+    "hint": "Veja o que toda língua confessa.",
+    "learningObjective": "Ligar Filipenses 2:11 ao senhorio de Jesus.",
+    "evidence": [
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-03-senhor-01",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 2:9, o Pai exaltou Jesus depois que ele se humilhou até a cruz.",
+    "prompt": "Em Filipenses 2:9, o Pai exaltou Jesus depois que ele se humilhou até a cruz.",
+    "cue": "Em Filipenses 2:9, o Pai exaltou Jesus depois que ele se humilhou até a cruz.",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+    "feedbackCorrect": "A exaltação vem como resposta do Pai à descida até a cruz.",
+    "feedbackWrong": {
+      "false": "O versículo começa ligando a exaltação ao que veio antes."
+    },
+    "hint": "Repare nas duas primeiras palavras do versículo.",
+    "learningObjective": "Compreender a ligação entre humilhação e exaltação.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-03-senhor-02",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:9, toque a expressão que liga a exaltação ao que veio antes.",
+    "prompt": "Em Filipenses 2:9, toque a expressão que liga a exaltação ao que veio antes.",
+    "cue": "Em Filipenses 2:9, toque a expressão que liga a exaltação ao que veio antes.",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobremaneira"
+      },
+      {
+        "id": "b",
+        "text": "Por isso"
+      },
+      {
+        "id": "c",
+        "text": "todo nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+    "feedbackCorrect": "A exaltação responde à obediência até a cruz.",
+    "feedbackWrong": {
+      "a": "Isso diz a medida da exaltação, não a ligação.",
+      "c": "Isso fala do nome recebido, não da ligação com antes."
+    },
+    "hint": "Procure a expressão curta no começo do versículo.",
+    "learningObjective": "Reconhecer o marcador de resultado em Filipenses 2:9.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-03-senhor-03",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Filipenses 2:6–7 descreve o movimento de Jesus?",
+    "prompt": "Como Filipenses 2:6–7 descreve o movimento de Jesus?",
+    "cue": "Como Filipenses 2:6–7 descreve o movimento de Jesus?",
+    "verseRef": "Filipenses 2:6–7",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar. mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele busca tomar um lugar alheio"
+      },
+      {
+        "id": "b",
+        "text": "Ele é forçado a deixar o céu"
+      },
+      {
+        "id": "c",
+        "text": "Ele finge ser homem sem o ser"
+      },
+      {
+        "id": "d",
+        "text": "Ele desce por vontade própria até servir"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+    "feedbackCorrect": "Ele mesmo se esvaziou: a descida foi escolha dele, até servir.",
+    "feedbackWrong": {
+      "a": "Ele não tomou lugar alheio; abriu mão de se agarrar ao seu.",
+      "b": "O texto diz que ele mesmo se esvaziou; ninguém o forçou.",
+      "c": "Ele se tornou em semelhança de homens de verdade."
+    },
+    "hint": "Veja quem faz a ação de se esvaziar.",
+    "learningObjective": "Compreender a descida voluntária de Jesus.",
+    "evidence": [
+      "Filipenses 2:6–7"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-03-senhor-04",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a descida em Filipenses 2:7–8?",
+    "prompt": "Como avança a descida em Filipenses 2:7–8?",
+    "cue": "Como avança a descida em Filipenses 2:7–8?",
+    "verseRef": "Filipenses 2:7–8",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele assume a vida de quem serve"
+      },
+      {
+        "id": "b",
+        "text": "Ele se torna semelhante aos homens"
+      },
+      {
+        "id": "c",
+        "text": "Ele obedece até morrer na cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tornando-se em semelhança de homens",
+    "feedbackCorrect": "Servir, ser como os homens e obedecer até a cruz: a descida completa.",
+    "feedbackWrong": {
+      "default": "Comece pela posição que ele assume ao se esvaziar."
+    },
+    "hint": "Morrer na cruz é o último passo.",
+    "learningObjective": "Compreender os passos da descida em Filipenses 2.",
+    "evidence": [
+      "Filipenses 2:7–8"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-03-senhor-05",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 2:7, ao se esvaziar, Jesus assume a forma de quê?",
+    "prompt": "Em Filipenses 2:7, ao se esvaziar, Jesus assume a forma de quê?",
+    "cue": "Em Filipenses 2:7, ao se esvaziar, Jesus assume a forma de quê?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "template": "mas a si mesmo se esvaziou assumindo a forma de ___, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "juiz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assumindo a forma de servo",
+    "feedbackCorrect": "Ele assume o lugar de quem serve aos outros.",
+    "feedbackWrong": {
+      "a": "Ele não assume trono terreno neste movimento de descida.",
+      "c": "Aqui o movimento é servir e obedecer, não julgar."
+    },
+    "hint": "Olhe a posição que ele escolhe no versículo.",
+    "learningObjective": "Compreender a posição assumida na descida.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-03-senhor-06",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 2:9 a Atos 2:36?",
+    "prompt": "O que liga Filipenses 2:9 a Atos 2:36?",
+    "cue": "O que liga Filipenses 2:9 a Atos 2:36?",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "passageA": {
+      "ref": "Filipenses 2:9",
+      "text": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome"
+    },
+    "passageB": {
+      "ref": "Atos 2:36",
+      "text": "Estejam, portanto, certos de que toda a casa de Israel reconhece que a esse Jesus, a quem vocês crucificaram, Deus o tornou Senhor e Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens o esqueceram"
+      },
+      {
+        "id": "b",
+        "text": "A cruz o derrotou"
+      },
+      {
+        "id": "c",
+        "text": "Deus o fez Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus o exaltou sobremaneira",
+    "feedbackCorrect": "Pedro diz o mesmo: Deus fez Senhor o Jesus crucificado.",
+    "feedbackWrong": {
+      "a": "Atos anuncia o nome dele a todos, não esquecimento.",
+      "b": "Nos dois textos, a cruz leva à exaltação por Deus."
+    },
+    "hint": "Veja o que Deus fez com o crucificado.",
+    "learningObjective": "Relacionar exaltação em Filipenses e em Atos.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Atos 2:36"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-03-senhor-01",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:6–7, Jesus deixou de ser Deus ao assumir a forma de servo.",
+    "prompt": "Em Filipenses 2:6–7, Jesus deixou de ser Deus ao assumir a forma de servo.",
+    "cue": "Em Filipenses 2:6–7, Jesus deixou de ser Deus ao assumir a forma de servo.",
+    "verseRef": "Filipenses 2:6–7",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar. mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ele, que existia na forma de Deus",
+    "feedbackCorrect": "Ele assume a forma de servo sem deixar de ser quem era desde o começo.",
+    "feedbackWrong": {
+      "true": "O texto parte dele na forma de Deus; assumir servir não apaga isso."
+    },
+    "hint": "Veja como o texto o apresenta antes da descida.",
+    "learningObjective": "Interpretar o esvaziamento sem negar quem Jesus é.",
+    "evidence": [
+      "Filipenses 2:6–7"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-03-senhor-02",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:11, toque o título que toda língua confessará de Jesus.",
+    "prompt": "Em Filipenses 2:11, toque o título que toda língua confessará de Jesus.",
+    "cue": "Em Filipenses 2:11, toque o título que toda língua confessará de Jesus.",
+    "verseRef": "Filipenses 2:11",
+    "passageText": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Deus Pai"
+      },
+      {
+        "id": "c",
+        "text": "toda língua"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+    "feedbackCorrect": "A confissão final reconhece quem o crucificado é.",
+    "feedbackWrong": {
+      "b": "A glória vai ao Pai; o título confessado é de Jesus.",
+      "c": "Isso diz quem confessa, não o título confessado."
+    },
+    "hint": "Procure o título no fim do versículo.",
+    "learningObjective": "Sustentar com o texto o senhorio de Jesus.",
+    "evidence": [
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-03-senhor-03",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filipenses 2:9–10 sustenta sobre a exaltação de Jesus?",
+    "prompt": "Que leitura Filipenses 2:9–10 sustenta sobre a exaltação de Jesus?",
+    "cue": "Que leitura Filipenses 2:9–10 sustenta sobre a exaltação de Jesus?",
+    "verseRef": "Filipenses 2:9–10",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome Para que ao nome de Jesus se dobre todo joelho, nos céus, na terra e debaixo da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele venceu por se impor pela força"
+      },
+      {
+        "id": "b",
+        "text": "Deus o exaltou e todos o confessarão Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Só alguns anjos precisam reconhecê-lo"
+      },
+      {
+        "id": "d",
+        "text": "Sua morte mostrou abandono final de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "lhe concedeu o nome que está acima de todo nome",
+    "feedbackCorrect": "Quem exalta é Deus, e o alcance é todo joelho e toda língua.",
+    "feedbackWrong": {
+      "a": "Ele venceu descendo e obedecendo, não se impondo.",
+      "c": "O texto fala de céus, terra e debaixo da terra: todos.",
+      "d": "Deus o exaltou depois da cruz; não foi abandono final."
+    },
+    "hint": "Veja quem exalta e qual é o alcance.",
+    "learningObjective": "Escolher a interpretação sustentada por Filipenses 2.",
+    "evidence": [
+      "Filipenses 2:9–10"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-03-senhor-04",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio que atravessa Filipenses 2:6?",
+    "prompt": "Qual sequência revela o fio que atravessa Filipenses 2:6?",
+    "cue": "Qual sequência revela o fio que atravessa Filipenses 2:6?",
+    "verseRef": "Filipenses 2:6",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus desde o princípio no Verbo"
+      },
+      {
+        "id": "b",
+        "text": "O crucificado é exaltado por Deus"
+      },
+      {
+        "id": "c",
+        "text": "Toda língua o confessa como Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele, que existia na forma de Deus",
+    "feedbackCorrect": "Deus desde sempre, crucificado, exaltado e confessado por todos.",
+    "feedbackWrong": {
+      "default": "Siga a história: princípio, cruz e confissão final."
+    },
+    "hint": "Comece por quem ele era no princípio.",
+    "learningObjective": "Ver o fio de eternidade, cruz e senhorio.",
+    "evidence": [
+      "Filipenses 2:6",
+      "João 1:1",
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-03-senhor-05",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:6, como o texto apresenta Jesus em relação a Deus no começo?",
+    "prompt": "Em Filipenses 2:6, como o texto apresenta Jesus em relação a Deus no começo?",
+    "cue": "Em Filipenses 2:6, como o texto apresenta Jesus em relação a Deus no começo?",
+    "verseRef": "Filipenses 2:6",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar.",
+    "template": "Ele, que existia na forma de Deus, não considerou o ser ___ a Deus como algo a se apropriar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "igual"
+      },
+      {
+        "id": "b",
+        "text": "contrário"
+      },
+      {
+        "id": "c",
+        "text": "menor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não considerou o ser igual a Deus como algo a se apropriar",
+    "feedbackCorrect": "Ele não precisou tomar o que já era dele por natureza.",
+    "feedbackWrong": {
+      "b": "Ele está com Deus e é Deus, não contra Deus.",
+      "c": "O texto não o coloca abaixo de Deus neste ponto."
+    },
+    "hint": "Repare a comparação feita no versículo 6.",
+    "learningObjective": "Lembrar o termo que afirma quem Jesus é.",
+    "evidence": [
+      "Filipenses 2:6"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-03-senhor-06",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 2:10 a Isaías 45:23?",
+    "prompt": "O que liga Filipenses 2:10 a Isaías 45:23?",
+    "cue": "O que liga Filipenses 2:10 a Isaías 45:23?",
+    "verseRef": "Filipenses 2:10",
+    "passageText": "Para que ao nome de Jesus se dobre todo joelho, nos céus, na terra e debaixo da terra.",
+    "passageA": {
+      "ref": "Filipenses 2:10",
+      "text": "Para que ao nome de Jesus se dobre todo joelho, nos céus, na terra e debaixo da terra."
+    },
+    "passageB": {
+      "ref": "Isaías 45:23",
+      "text": "Por minha própria causa, eu jurei; da minha boca saiu o que é justo, e a minha palavra não tornará atrás. Diante de mim se dobrará todo joelho, e toda língua jurará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só Israel se curvará"
+      },
+      {
+        "id": "b",
+        "text": "Todo joelho se dobrará"
+      },
+      {
+        "id": "c",
+        "text": "Ninguém reconhecerá Jesus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ao nome de Jesus se dobre todo joelho",
+    "feedbackCorrect": "Paulo aplica a Jesus a reverência que Isaías liga ao próprio Deus.",
+    "feedbackWrong": {
+      "a": "Paulo amplia: céus, terra e debaixo da terra.",
+      "c": "Os dois textos falam de todos se curvando."
+    },
+    "hint": "Compare o gesto citado nos dois textos.",
+    "learningObjective": "Ligar a reverência a Jesus ao texto de Isaías.",
+    "evidence": [
+      "Filipenses 2:10",
+      "Isaías 45:23"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-01",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 1:1, ele começou a existir somente depois que todas as coisas foram criadas.",
+    "prompt": "Em João 1:1, ele começou a existir somente depois que todas as coisas foram criadas.",
+    "cue": "Em João 1:1, ele começou a existir somente depois que todas as coisas foram criadas.",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "No princípio, era o Verbo",
+    "feedbackCorrect": "Ele já era no princípio, antes de todas as coisas feitas.",
+    "feedbackWrong": {
+      "true": "Releia o começo: no princípio, ele já era."
+    },
+    "hint": "Repare no tempo do primeiro verbo.",
+    "learningObjective": "Observar que o Verbo já existia no princípio.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-02",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 1:1, toque como o texto chama aquele que estava com Deus.",
+    "prompt": "Em João 1:1, toque como o texto chama aquele que estava com Deus.",
+    "cue": "Em João 1:1, toque como o texto chama aquele que estava com Deus.",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "com Deus"
+      },
+      {
+        "id": "b",
+        "text": "Verbo"
+      },
+      {
+        "id": "c",
+        "text": "No princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "era o Verbo, e o Verbo estava com Deus",
+    "feedbackCorrect": "É esse o nome dele no começo de João.",
+    "feedbackWrong": {
+      "a": "Isso diz junto de quem ele estava.",
+      "c": "Isso diz quando, não como ele é chamado."
+    },
+    "hint": "Procure o nome dado a ele no começo.",
+    "learningObjective": "Identificar o nome de Jesus em João 1:1.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-03",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 2:16, quem Jesus socorre de modo especial?",
+    "prompt": "Segundo Hebreus 2:16, quem Jesus socorre de modo especial?",
+    "cue": "Segundo Hebreus 2:16, quem Jesus socorre de modo especial?",
+    "verseRef": "Hebreus 2:16",
+    "passageText": "Pois, na verdade, ele, evidentemente, não socorre anjos, mas socorre a descendência de Abraão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente sacerdotes antigos"
+      },
+      {
+        "id": "b",
+        "text": "A descendência de Abraão"
+      },
+      {
+        "id": "c",
+        "text": "Anjos antes de todos"
+      },
+      {
+        "id": "d",
+        "text": "Ninguém nesta vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "socorre a descendência de Abraão",
+    "feedbackCorrect": "Ele socorre pessoas, descendentes de Abraão, não anjos.",
+    "feedbackWrong": {
+      "a": "O alcance é a descendência de Abraão, não um grupo só.",
+      "c": "O texto diz que não é a anjos que ele socorre assim.",
+      "d": "Hebreus 2:18 fala do socorro dele aos tentados."
+    },
+    "hint": "Veja quem recebe o socorro no versículo.",
+    "learningObjective": "Observar quem Jesus socorre.",
+    "evidence": [
+      "Hebreus 2:16"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-04",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 2:7–8 na ordem do texto.",
+    "prompt": "Monte Filipenses 2:7–8 na ordem do texto.",
+    "cue": "Monte Filipenses 2:7–8 na ordem do texto.",
+    "verseRef": "Filipenses 2:7–8",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a si mesmo se esvaziou assumindo a forma de servo"
+      },
+      {
+        "id": "b",
+        "text": "tornando-se em semelhança de homens"
+      },
+      {
+        "id": "c",
+        "text": "humilhou-se a si mesmo, tornando-se obediente até à morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+    "feedbackCorrect": "Esvaziar-se, ser como homens e obedecer até morrer: a descida.",
+    "feedbackWrong": {
+      "default": "Comece pelo esvaziamento; a morte fecha a descida."
+    },
+    "hint": "A morte é o ponto mais baixo.",
+    "learningObjective": "Reconhecer a sequência da descida de Jesus.",
+    "evidence": [
+      "Filipenses 2:7–8"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-05",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 1:1, com quem ele estava no princípio?",
+    "prompt": "Em João 1:1, com quem ele estava no princípio?",
+    "cue": "Em João 1:1, com quem ele estava no princípio?",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio, era o Verbo, e o Verbo estava com ___, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "anjos"
+      },
+      {
+        "id": "c",
+        "text": "homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Verbo estava com Deus",
+    "feedbackCorrect": "Ele estava junto dele já no princípio.",
+    "feedbackWrong": {
+      "b": "Este versículo não menciona esses seres.",
+      "c": "Os homens aparecem em João 1:4, recebendo luz."
+    },
+    "hint": "Olhe quem estava junto no começo.",
+    "learningObjective": "Lembrar junto de quem ele estava.",
+    "evidence": [
+      "João 1:1"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-06",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:3 comunica que se liga a este contexto?",
+    "cue": "O que João 1:3 comunica que se liga a este contexto?",
+    "verseRef": "João 1:3",
+    "passageText": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez.",
+    "passageA": {
+      "ref": "João 1:3",
+      "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus fez todas as coisas por meio do Verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens fizeram todas as coisas"
+      },
+      {
+        "id": "b",
+        "text": "Tudo foi feito por ele"
+      },
+      {
+        "id": "c",
+        "text": "Mundo surgiu sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Todas as coisas foram feitas por meio dele",
+    "feedbackCorrect": "Nada ficou fora: tudo foi feito por meio dele.",
+    "feedbackWrong": {
+      "a": "Os homens recebem a luz; não fazem tudo.",
+      "c": "Sem ele, nada do que foi feito se fez."
+    },
+    "hint": "Veja o alcance no versículo 3.",
+    "learningObjective": "Ligar João 1:3 à criação por meio dele.",
+    "evidence": [
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-07",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 2:14, toque do que os filhos têm participação comum.",
+    "prompt": "Em Hebreus 2:14, toque do que os filhos têm participação comum.",
+    "cue": "Em Hebreus 2:14, toque do que os filhos têm participação comum.",
+    "verseRef": "Hebreus 2:14",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mesmas coisas"
+      },
+      {
+        "id": "b",
+        "text": "carne e sangue"
+      },
+      {
+        "id": "c",
+        "text": "poder da morte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os filhos têm participação comum de carne e sangue",
+    "feedbackCorrect": "É dessa condição humana que ele também participou.",
+    "feedbackWrong": {
+      "a": "Isso é o que ele participou, não o nome da condição.",
+      "c": "Isso é ligado ao diabo no texto, não aos filhos."
+    },
+    "hint": "Leia a primeira parte do versículo 14.",
+    "learningObjective": "Identificar a condição humana partilhada.",
+    "evidence": [
+      "Hebreus 2:14"
+    ]
+  },
+  {
+    "id": "cristologia-sem-cr-boss-08",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 2:18 na ordem do texto.",
+    "prompt": "Monte Hebreus 2:18 na ordem do texto.",
+    "cue": "Monte Hebreus 2:18 na ordem do texto.",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque, naquilo que ele mesmo sofreu"
+      },
+      {
+        "id": "b",
+        "text": "e foi tentado"
+      },
+      {
+        "id": "c",
+        "text": "é poderoso para socorrer os que estão sendo tentados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque, naquilo que ele mesmo sofreu e foi tentado",
+    "feedbackCorrect": "Ele sofreu, foi provado e pode socorrer quem é provado.",
+    "feedbackWrong": {
+      "default": "Comece pelo sofrimento dele; o socorro vem no fim."
+    },
+    "hint": "O versículo começa pela causa.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 2:18.",
+    "evidence": [
+      "Hebreus 2:18"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-01",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 2:17, Jesus se tornou semelhante aos irmãos para ser sumo sacerdote misericordioso e fiel.",
+    "prompt": "Em Hebreus 2:17, Jesus se tornou semelhante aos irmãos para ser sumo sacerdote misericordioso e fiel.",
+    "cue": "Em Hebreus 2:17, Jesus se tornou semelhante aos irmãos para ser sumo sacerdote misericordioso e fiel.",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para ser um sumo sacerdote misericordioso e fiel",
+    "feedbackCorrect": "A semelhança tinha esse alvo: representar o povo diante de Deus.",
+    "feedbackWrong": {
+      "false": "Releia o alvo no versículo: representar o povo com misericórdia."
+    },
+    "hint": "Procure o alvo da semelhança no versículo.",
+    "learningObjective": "Compreender o propósito de Jesus se fazer semelhante.",
+    "evidence": [
+      "Hebreus 2:17"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-02",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:9, toque a expressão que liga a exaltação ao que veio antes.",
+    "prompt": "Em Filipenses 2:9, toque a expressão que liga a exaltação ao que veio antes.",
+    "cue": "Em Filipenses 2:9, toque a expressão que liga a exaltação ao que veio antes.",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "todo nome"
+      },
+      {
+        "id": "b",
+        "text": "Por isso"
+      },
+      {
+        "id": "c",
+        "text": "sobremaneira"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+    "feedbackCorrect": "A exaltação responde à obediência até a cruz.",
+    "feedbackWrong": {
+      "a": "Isso fala do nome recebido, não da ligação.",
+      "c": "Isso diz a medida, não a ligação com antes."
+    },
+    "hint": "Procure a expressão curta no começo do versículo.",
+    "learningObjective": "Reconhecer a ligação entre cruz e exaltação.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-03",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Filipenses 2:6–7 descreve o movimento de Jesus?",
+    "prompt": "Como Filipenses 2:6–7 descreve o movimento de Jesus?",
+    "cue": "Como Filipenses 2:6–7 descreve o movimento de Jesus?",
+    "verseRef": "Filipenses 2:6–7",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar. mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele desce por vontade própria até servir"
+      },
+      {
+        "id": "b",
+        "text": "Ele busca tomar um lugar alheio"
+      },
+      {
+        "id": "c",
+        "text": "Ele é forçado a deixar o céu"
+      },
+      {
+        "id": "d",
+        "text": "Ele finge ser homem sem o ser"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+    "feedbackCorrect": "Ele mesmo se esvaziou: descer e servir foi escolha dele.",
+    "feedbackWrong": {
+      "b": "Ele não tomou lugar alheio; abriu mão do seu.",
+      "c": "O texto diz que ele mesmo se esvaziou.",
+      "d": "Ele se tornou em semelhança de homens de verdade."
+    },
+    "hint": "Veja quem faz a ação de se esvaziar.",
+    "learningObjective": "Compreender a descida voluntária de Jesus.",
+    "evidence": [
+      "Filipenses 2:6–7"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-04",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Hebreus 2:14–15?",
+    "prompt": "Como avança o argumento em Hebreus 2:14–15?",
+    "cue": "Como avança o argumento em Hebreus 2:14–15?",
+    "verseRef": "Hebreus 2:14–15",
+    "passageText": "Assim, como os filhos têm participação comum de carne e sangue, igualmente Ele participou das mesmas coisas, para que, por meio da morte, destruísse aquele que tem o poder da morte, isto é, o diabo. e livrasse todos os que, pelo pavor da morte, estavam sujeitos à servidão por toda a vida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus participa da nossa condição humana"
+      },
+      {
+        "id": "b",
+        "text": "Ele enfrenta a morte em nosso favor"
+      },
+      {
+        "id": "c",
+        "text": "Pessoas presas ao medo são libertas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "igualmente Ele participou das mesmas coisas",
+    "feedbackCorrect": "Participar, enfrentar a morte e livrar: esse é o caminho.",
+    "feedbackWrong": {
+      "default": "Comece pela participação dele na nossa condição."
+    },
+    "hint": "A libertação é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Hebreus 2:14–15.",
+    "evidence": [
+      "Hebreus 2:14–15"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-05",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 2:18, como o texto completa o que ele mesmo sofreu?",
+    "prompt": "Em Hebreus 2:18, como o texto completa o que ele mesmo sofreu?",
+    "cue": "Em Hebreus 2:18, como o texto completa o que ele mesmo sofreu?",
+    "verseRef": "Hebreus 2:18",
+    "passageText": "Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "template": "Porque, naquilo que ele mesmo sofreu e foi ___, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esquecido"
+      },
+      {
+        "id": "b",
+        "text": "tentado"
+      },
+      {
+        "id": "c",
+        "text": "poupado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele mesmo sofreu e foi tentado",
+    "feedbackCorrect": "Ele sofreu e passou pela prova, como nós.",
+    "feedbackWrong": {
+      "a": "Ele está presente para socorrer, não ausente.",
+      "c": "Ele não foi poupado; passou pela prova."
+    },
+    "hint": "Repare a segunda parte do que ele viveu.",
+    "learningObjective": "Compreender que Jesus também foi provado.",
+    "evidence": [
+      "Hebreus 2:18"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-06",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 2:17 a Filipenses 2:7?",
+    "prompt": "O que liga Hebreus 2:17 a Filipenses 2:7?",
+    "cue": "O que liga Hebreus 2:17 a Filipenses 2:7?",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "passageA": {
+      "ref": "Hebreus 2:17",
+      "text": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo."
+    },
+    "passageB": {
+      "ref": "Filipenses 2:7",
+      "text": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele evitou ser humano"
+      },
+      {
+        "id": "b",
+        "text": "Ele se fez semelhante a nós"
+      },
+      {
+        "id": "c",
+        "text": "Ele socorre somente anjos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se tornasse semelhante a seus irmãos em todas as coisas",
+    "feedbackCorrect": "Os dois textos dizem que ele se tornou como nós.",
+    "feedbackWrong": {
+      "a": "Filipenses diz que ele se tornou como os homens.",
+      "c": "Hebreus diz que ele socorre a descendência de Abraão."
+    },
+    "hint": "Compare como os dois textos o apresentam.",
+    "learningObjective": "Relacionar a semelhança de Jesus nos dois textos.",
+    "evidence": [
+      "Hebreus 2:17",
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-07",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:7, toque o que ele assumiu ao se esvaziar.",
+    "prompt": "Em Filipenses 2:7, toque o que ele assumiu ao se esvaziar.",
+    "cue": "Em Filipenses 2:7, toque o que ele assumiu ao se esvaziar.",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "forma de servo"
+      },
+      {
+        "id": "c",
+        "text": "semelhança de homens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assumindo a forma de servo",
+    "feedbackCorrect": "Ele assumiu o lugar de quem serve aos outros.",
+    "feedbackWrong": {
+      "a": "Isso fala dele mesmo agir, não do que assumiu.",
+      "c": "Isso diz como ele se tornou, não o que assumiu."
+    },
+    "hint": "Leia o que vem depois de se esvaziar.",
+    "learningObjective": "Identificar o que Jesus assumiu ao descer.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "cristologia-cam-cr-boss-08",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Filipenses 2:9–10?",
+    "prompt": "Como se encadeiam os passos de Filipenses 2:9–10?",
+    "cue": "Como se encadeiam os passos de Filipenses 2:9–10?",
+    "verseRef": "Filipenses 2:9–10",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome Para que ao nome de Jesus se dobre todo joelho, nos céus, na terra e debaixo da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus levanta Jesus ao mais alto lugar"
+      },
+      {
+        "id": "b",
+        "text": "Ele recebe o nome acima de todos"
+      },
+      {
+        "id": "c",
+        "text": "Todo joelho se dobra diante dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus o exaltou sobremaneira",
+    "feedbackCorrect": "Deus o levanta, dá o maior nome e todos se dobram diante dele.",
+    "feedbackWrong": {
+      "default": "Comece pela ação de Deus no versículo 9."
+    },
+    "hint": "O joelho dobrado fecha o trecho.",
+    "learningObjective": "Compreender exaltação, nome e reverência.",
+    "evidence": [
+      "Filipenses 2:9–10"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-01",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:7, Jesus apenas pareceu ser homem, sem assumir de verdade a nossa condição.",
+    "prompt": "Em Filipenses 2:7, Jesus apenas pareceu ser homem, sem assumir de verdade a nossa condição.",
+    "cue": "Em Filipenses 2:7, Jesus apenas pareceu ser homem, sem assumir de verdade a nossa condição.",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "tornando-se em semelhança de homens",
+    "feedbackCorrect": "Ele se tornou como os homens de verdade, até sofrer e morrer.",
+    "feedbackWrong": {
+      "true": "O texto diz que ele se tornou em semelhança de homens."
+    },
+    "hint": "Veja o verbo que descreve tornar-se homem.",
+    "learningObjective": "Interpretar a humanidade real de Jesus.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-02",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:11, toque o título que toda língua confessará de Jesus.",
+    "prompt": "Em Filipenses 2:11, toque o título que toda língua confessará de Jesus.",
+    "cue": "Em Filipenses 2:11, toque o título que toda língua confessará de Jesus.",
+    "verseRef": "Filipenses 2:11",
+    "passageText": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda língua"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Deus Pai"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+    "feedbackCorrect": "A confissão final reconhece quem o crucificado é.",
+    "feedbackWrong": {
+      "a": "Isso diz quem confessa, não o título.",
+      "c": "A glória vai ao Pai; o título é de Jesus."
+    },
+    "hint": "Procure o título no fim do versículo.",
+    "learningObjective": "Sustentar o senhorio de Jesus com o texto.",
+    "evidence": [
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-03",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filipenses 2:9–10 sustenta sobre a exaltação de Jesus?",
+    "prompt": "Que leitura Filipenses 2:9–10 sustenta sobre a exaltação de Jesus?",
+    "cue": "Que leitura Filipenses 2:9–10 sustenta sobre a exaltação de Jesus?",
+    "verseRef": "Filipenses 2:9–10",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome Para que ao nome de Jesus se dobre todo joelho, nos céus, na terra e debaixo da terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus o exaltou e todos o confessarão Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Só alguns anjos precisam reconhecê-lo"
+      },
+      {
+        "id": "c",
+        "text": "Sua morte mostrou abandono final de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Ele venceu por se impor pela força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lhe concedeu o nome que está acima de todo nome",
+    "feedbackCorrect": "Quem exalta é Deus, e o alcance é todo joelho e toda língua.",
+    "feedbackWrong": {
+      "b": "O texto fala de céus, terra e debaixo da terra.",
+      "c": "Deus o exaltou depois da cruz, não o abandonou.",
+      "d": "Ele venceu descendo e obedecendo, não se impondo."
+    },
+    "hint": "Veja quem exalta e qual é o alcance.",
+    "learningObjective": "Escolher a interpretação de Filipenses 2:9–10.",
+    "evidence": [
+      "Filipenses 2:9–10"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-04",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela quem Jesus é nos três textos?",
+    "prompt": "Qual sequência revela quem Jesus é nos três textos?",
+    "cue": "Qual sequência revela quem Jesus é nos três textos?",
+    "verseRef": "João 1:1",
+    "passageText": "No princípio, era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus desde o princípio no Verbo"
+      },
+      {
+        "id": "b",
+        "text": "Ele se faz semelhante aos homens"
+      },
+      {
+        "id": "c",
+        "text": "O crucificado é confessado Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "No princípio, era o Verbo",
+    "feedbackCorrect": "Deus desde sempre, feito como nós e confessado Senhor por todos.",
+    "feedbackWrong": {
+      "default": "Siga a história: princípio, encarnação e confissão."
+    },
+    "hint": "Comece por quem ele era no princípio.",
+    "learningObjective": "Ver o fio completo sobre quem Jesus é.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-05",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 1:4, o que havia nele e era luz dos homens?",
+    "prompt": "Em João 1:4, o que havia nele e era luz dos homens?",
+    "cue": "Em João 1:4, o que havia nele e era luz dos homens?",
+    "verseRef": "João 1:4",
+    "passageText": "Nele havia a vida, e essa vida era a luz dos homens;",
+    "template": "Nele havia a ___, e essa vida era a luz dos homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Nele havia a vida",
+    "feedbackCorrect": "O que havia nele ilumina os homens.",
+    "feedbackWrong": {
+      "a": "Ele enfrenta a morte para livrar, não a carrega como luz.",
+      "b": "Trevas são o contrário do que o texto afirma dele."
+    },
+    "hint": "Olhe o que havia nele no versículo 4.",
+    "learningObjective": "Lembrar o que havia no Verbo.",
+    "evidence": [
+      "João 1:4"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-06",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 2:11 a Atos 2:36?",
+    "prompt": "O que liga Filipenses 2:11 a Atos 2:36?",
+    "cue": "O que liga Filipenses 2:11 a Atos 2:36?",
+    "verseRef": "Filipenses 2:11",
+    "passageText": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai.",
+    "passageA": {
+      "ref": "Filipenses 2:11",
+      "text": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Atos 2:36",
+      "text": "Estejam, portanto, certos de que toda a casa de Israel reconhece que a esse Jesus, a quem vocês crucificaram, Deus o tornou Senhor e Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens o esqueceram"
+      },
+      {
+        "id": "b",
+        "text": "Deus o fez Senhor"
+      },
+      {
+        "id": "c",
+        "text": "A cruz o derrotou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+    "feedbackCorrect": "Pedro anuncia: Deus fez Senhor o Jesus que foi crucificado.",
+    "feedbackWrong": {
+      "a": "Atos anuncia o nome dele, não esquecimento.",
+      "c": "Nos dois textos a cruz leva à exaltação."
+    },
+    "hint": "Veja o que Deus fez com o crucificado.",
+    "learningObjective": "Ligar a confissão de Filipenses ao anúncio de Atos.",
+    "evidence": [
+      "Filipenses 2:11",
+      "Atos 2:36"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-07",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 2:17, toque a função de Jesus diante de Deus em favor do povo.",
+    "prompt": "Em Hebreus 2:17, toque a função de Jesus diante de Deus em favor do povo.",
+    "cue": "Em Hebreus 2:17, toque a função de Jesus diante de Deus em favor do povo.",
+    "verseRef": "Hebreus 2:17",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em todas"
+      },
+      {
+        "id": "b",
+        "text": "sumo sacerdote"
+      },
+      {
+        "id": "c",
+        "text": "pecados do povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para ser um sumo sacerdote misericordioso e fiel",
+    "feedbackCorrect": "Ele representa o povo diante de Deus com misericórdia.",
+    "feedbackWrong": {
+      "a": "Isso fala da medida da semelhança, não da função.",
+      "c": "Isso é o problema tratado, não a função dele."
+    },
+    "hint": "Procure o cargo citado no meio do versículo.",
+    "learningObjective": "Sustentar a função de Jesus pelo povo.",
+    "evidence": [
+      "Hebreus 2:17"
+    ]
+  },
+  {
+    "id": "cristologia-pro-cr-boss-08",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Hebreus 2:17–18?",
+    "prompt": "Qual sequência revela o caminho de Hebreus 2:17–18?",
+    "cue": "Qual sequência revela o caminho de Hebreus 2:17–18?",
+    "verseRef": "Hebreus 2:17–18",
+    "passageText": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Porque, naquilo que ele mesmo sofreu e foi tentado, é poderoso para socorrer os que estão sendo tentados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Semelhança completa com os irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Serviço fiel diante de Deus pelo povo"
+      },
+      {
+        "id": "c",
+        "text": "Socorro a quem está sendo tentado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se tornasse semelhante a seus irmãos em todas as coisas",
+    "feedbackCorrect": "Semelhante a nós, ele serve diante de Deus e socorre na prova.",
+    "feedbackWrong": {
+      "default": "Comece pela semelhança completa com os irmãos."
+    },
+    "hint": "O socorro aos tentados fecha o trecho.",
+    "learningObjective": "Ver semelhança, serviço e socorro ligados.",
+    "evidence": [
+      "Hebreus 2:17–18"
+    ]
+  }
+]

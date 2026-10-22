@@ -1,0 +1,85 @@
+Escreva a cena "naum-naum-03-desafio-naum" da trilha "naum" (Naum).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "naum",
+  "title": "Naum",
+  "description": "Nínive cai — o Senhor é refúgio e juízo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Nínive",
+ "mission": {
+  "slug": "naum-naum-03-desafio-naum",
+  "title": "Desafio: Naum",
+  "type": "boss",
+  "intro": "Consolo e juízo.",
+  "hookRef": "Referência: Naum",
+  "hookNote": "Consolo e juízo.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre naum?"
+ },
+ "v2": {
+  "passageRef": "Referência: Naum",
+  "context": "Consolo e juízo.",
+  "keyword": "Naum",
+  "verseRefs": [
+   "Naum 1:15"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "naum-naum-01-o-senhor-e-bom",
+   "title": "O Senhor é bom",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Naum 1:4–10"
+  },
+  {
+   "slug": "naum-naum-02-queda-da-cidade-crue",
+   "title": "Queda da cidade cruel",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Naum 1:4–10"
+  }
+ ],
+ "ranges": [
+  "Naum 1:4–10",
+  "Naum 3:1"
+ ],
+ "verses": [
+  {
+   "ref": "Naum 1:4",
+   "text": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha."
+  },
+  {
+   "ref": "Naum 1:5",
+   "text": "Os montes tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam."
+  },
+  {
+   "ref": "Naum 1:6",
+   "text": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso."
+  },
+  {
+   "ref": "Naum 1:7",
+   "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+  },
+  {
+   "ref": "Naum 1:8",
+   "text": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos."
+  },
+  {
+   "ref": "Naum 1:9",
+   "text": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes."
+  },
+  {
+   "ref": "Naum 1:10",
+   "text": "Porque, ainda que se entrelacem como espinhos e se embriaguem como bêbados, serão inteiramente consumidos como palha seca."
+  },
+  {
+   "ref": "Naum 3:1",
+   "text": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!"
+  }
+ ]
+}
+</cena>

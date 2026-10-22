@@ -1,0 +1,63 @@
+Escreva a cena "sm-02-pobres-de-espirito" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "As Bem-aventuranças",
+ "mission": {
+  "slug": "sm-02-pobres-de-espirito",
+  "title": "Pobres de espírito",
+  "type": "lesson",
+  "intro": "A primeira bem-aventurança derruba o orgulho humano. O Reino pertence aos que reconhecem sua total dependência de Deus.",
+  "hookRef": "Mateus 5:3",
+  "hookNote": "“Pobre de espírito” não é baixa autoestima nem romantizar miséria material. No hebraico bíblico, anawim descreve quem reconhece dependência…",
+  "centralInsight": "O Reino começa de joelhos",
+  "objective": "Em que área da vida ainda confio na minha suficiência em vez de dependência de Deus?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:3",
+  "context": "“Pobre de espírito” não é baixa autoestima nem romantizar miséria material. No hebraico bíblico, anawim descreve quem reconhece dependência total de Deus — sem recursos próprios para se justificar. É a porta do Sermão: sem mendigar graça, o resto vira moralismo. A promessa é presente (“deles é”), não só futura: o Reino pertence a quem chega de mãos vazias.",
+  "keyword": "Pobreza de espírito",
+  "verseRefs": [
+   "Mateus 5:3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:1",
+   "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+  },
+  {
+   "ref": "Mateus 5:2",
+   "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+  },
+  {
+   "ref": "Mateus 5:3",
+   "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:4",
+   "text": "Bem-aventurados os que choram, porque serão consolados."
+  },
+  {
+   "ref": "Mateus 5:5",
+   "text": "Bem-aventurados os mansos, porque herdarão a terra."
+  },
+  {
+   "ref": "Mateus 5:6",
+   "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+  }
+ ]
+}
+</cena>

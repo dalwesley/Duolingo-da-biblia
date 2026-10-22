@@ -1,0 +1,711 @@
+{
+ "study": {
+  "passageRef": "Levítico 17:8–11",
+  "passages": [
+   {
+    "ref": "Levítico 17:8–11"
+   },
+   {
+    "ref": "Levítico 17:12–14"
+   }
+  ],
+  "context": "Israel devia levar as ofertas ao lugar indicado pelo Senhor. Neste trecho, Deus explica por que o sangue não podia ser comido e qual era o seu papel no altar.",
+  "keyword": "sangue",
+  "keywordGloss": "No texto, o sangue carrega a vida e, no altar, foi dado por Deus para expiar.",
+  "focusQuestion": "Como você trata aquilo que o Senhor reservou para um propósito santo?",
+  "reflectionPrompts": [
+   "O sangue no altar",
+   "A vida pertence a Deus",
+   "Ofertas no lugar indicado"
+  ],
+  "facts": [
+   {
+    "text": "Quem não trouxer a oferta ao Senhor será eliminado do seu povo.",
+    "evidenceRef": "Levítico 17:9",
+    "evidenceSpan": "esse homem será eliminado do seu povo"
+   },
+   {
+    "text": "A vida da carne está no sangue.",
+    "evidenceRef": "Levítico 17:11",
+    "evidenceSpan": "a vida da carne está no sangue"
+   },
+   {
+    "text": "Deus deu o sangue sobre o altar para expiar pelo povo.",
+    "evidenceRef": "Levítico 17:11",
+    "evidenceSpan": "eu o dei sobre o altar para expiar por vocês"
+   },
+   {
+    "text": "Nenhuma alma entre Israel nem o estrangeiro devia comer sangue.",
+    "evidenceRef": "Levítico 17:12",
+    "evidenceSpan": "Nenhuma alma de entre vós comerá sangue"
+   },
+   {
+    "text": "Quem caçasse animal ou ave devia derramar o sangue e cobri-lo com pó.",
+    "evidenceRef": "Levítico 17:13",
+    "evidenceSpan": "deve derramar o seu sangue e cobri-lo com pó"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sangue",
+    "gloss": "Carrega a vida da carne e, por isso, recebe um destino dado por Deus."
+   },
+   {
+    "term": "expiar",
+    "gloss": "No texto, é o que o sangue faz no altar em favor do povo."
+   },
+   {
+    "term": "Tenda da Congregação",
+    "gloss": "Lugar indicado pelo Senhor para levar a oferta a ele."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A oferta levada ao Senhor",
+    "evidenceRef": "Levítico 17:9"
+   },
+   {
+    "label": "A proibição de comer sangue",
+    "evidenceRef": "Levítico 17:10"
+   },
+   {
+    "label": "O sangue dado sobre o altar",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "label": "O sangue da caça coberto com pó",
+    "evidenceRef": "Levítico 17:13"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Porque a vida da carne está no sangue, o sangue não é tratado como comida.",
+    "marker": "Pois",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "kind": "propósito",
+    "text": "Deus deu o sangue sobre o altar para expiar pelo povo.",
+    "marker": "para",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "kind": "resultado",
+    "text": "Por causa do que Deus explicou, nenhuma alma devia comer sangue.",
+    "marker": "Por isso",
+    "evidenceRef": "Levítico 17:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 9:22",
+    "bridge": "Sangue e perdão dos pecados"
+   },
+   {
+    "ref": "Mateus 26:28",
+    "bridge": "Sangue derramado para perdão"
+   },
+   {
+    "ref": "Hebreus 9:14",
+    "bridge": "Sangue de Cristo purifica"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O sangue era proibido só porque era um alimento sem valor.",
+    "why": "O texto liga o sangue à vida e diz que Deus o deu sobre o altar para expiar."
+   },
+   {
+    "text": "Cada pessoa podia oferecer onde quisesse, se a intenção fosse boa.",
+    "why": "O texto manda trazer a oferta à porta da Tenda da Congregação para oferecê-la ao Senhor."
+   },
+   {
+    "text": "A ordem de não comer sangue valia só para os estrangeiros.",
+    "why": "A ordem alcança a casa de Israel e também o estrangeiro que vive entre o povo."
+   }
+  ],
+  "centralInsight": "A vida está no sangue que Deus deu no altar para expiar pelo seu povo",
+  "anchorQuestion": "Segundo Levítico 17:11, por que o sangue faz expiação?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Levítico 17:9, quem não trouxer a oferta à porta da Tenda da Congregação será eliminado do seu povo.",
+   "verseRef": "Levítico 17:9",
+   "evidenceSpan": "esse homem será eliminado do seu povo",
+   "feedbackCorrect": "O texto liga a oferta ao Senhor ao lugar que ele indicou.",
+   "feedbackWrong": {
+    "false": "Releia Levítico 17:9 e veja o fim do versículo."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Observar o destino de quem não leva a oferta ao Senhor.",
+   "evidence": [
+    "Levítico 17:9"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:11, toque onde está a vida da carne.",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "a vida da carne está no sangue",
+   "feedbackCorrect": "A vida da carne está ligada ao sangue, por isso ele tem destino santo.",
+   "feedbackWrong": {
+    "a": "O altar é o destino dado por Deus, não onde a vida está.",
+    "c": "A carne é de quem a vida é descrita, não onde ela está."
+   },
+   "hint": "Procure o que vem logo depois de está.",
+   "learningObjective": "Identificar onde o texto coloca a vida da carne.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre o altar"
+    },
+    {
+     "id": "b",
+     "text": "no sangue"
+    },
+    {
+     "id": "c",
+     "text": "da carne"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Levítico 17:10, o que acontece com quem comer sangue?",
+   "verseRef": "Levítico 17:10",
+   "evidenceSpan": "que comer sangue",
+   "feedbackCorrect": "Quem comesse sangue seria eliminado do povo, diz o texto.",
+   "feedbackWrong": {
+    "a": "O texto não fala de aviso simples para quem come sangue.",
+    "b": "Cobrir com pó é ordem para quem caça, não para quem come sangue.",
+    "d": "O texto não limita a pena a sete dias."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a consequência de comer sangue.",
+   "evidence": [
+    "Levítico 17:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Será apenas avisado por Moisés"
+    },
+    {
+     "id": "b",
+     "text": "Deverá caçar e cobrir o sangue"
+    },
+    {
+     "id": "c",
+     "text": "Será eliminado do seu povo"
+    },
+    {
+     "id": "d",
+     "text": "Será afastado somente por sete dias"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 17:11 na ordem do texto.",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "Pois a vida da carne está no sangue",
+   "feedbackCorrect": "Primeiro a vida no sangue, depois o sangue no altar e a expiação.",
+   "feedbackWrong": {
+    "default": "Comece pela vida da carne; o altar vem depois."
+   },
+   "hint": "O versículo começa explicando a vida.",
+   "learningObjective": "Reconhecer a sequência de Levítico 17:11.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Pois a vida da carne está no sangue"
+    },
+    {
+     "id": "b",
+     "text": "eu o dei sobre o altar para expiar por vocês"
+    },
+    {
+     "id": "c",
+     "text": "é o sangue que fará expiação em virtude da vida"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Levítico 17:13, com o que o caçador deve cobrir o sangue do animal caçado?",
+   "verseRef": "Levítico 17:13",
+   "evidenceSpan": "cobri-lo com pó",
+   "feedbackCorrect": "O caçador devia derramar o sangue e cobri-lo com pó.",
+   "feedbackWrong": {
+    "b": "A água não é citada para cobrir o sangue da caça.",
+    "c": "O texto usa outra palavra para o que cobre o sangue."
+   },
+   "hint": "Veja o material citado no fim do versículo.",
+   "learningObjective": "Lembrar como tratar o sangue da caça.",
+   "evidence": [
+    "Levítico 17:13"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "pó"
+    },
+    {
+     "id": "b",
+     "text": "água"
+    },
+    {
+     "id": "c",
+     "text": "areia"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Levítico 17:11 comunica que se liga a este contexto?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar",
+   "feedbackCorrect": "Deus deu o sangue sobre o altar porque nele está a vida.",
+   "feedbackWrong": {
+    "a": "O sangue não foi dado como comida ao povo.",
+    "c": "O texto dá ao sangue um papel dado por Deus."
+   },
+   "hint": "Veja o destino que Deus dá ao sangue.",
+   "learningObjective": "Ligar Levítico 17:11 ao sangue dado no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Um alimento para o povo"
+    },
+    {
+     "id": "b",
+     "text": "A vida dada no altar"
+    },
+    {
+     "id": "c",
+     "text": "Um sinal sem valor"
+    }
+   ],
+   "correctOptionId": "b",
+   "passageA": {
+    "ref": "Levítico 17:11"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus deu o sangue no altar porque a vida está nele."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Levítico 17:11, o sangue podia ser comido pelo povo porque a vida da carne estava nele.",
+   "verseRef": "Levítico 17:10–11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "A vida no sangue leva ao contrário e ele é dado no altar, não comido.",
+   "feedbackWrong": {
+    "true": "Releia o destino que Deus dá ao sangue neste versículo."
+   },
+   "hint": "Veja para onde Deus destina o sangue.",
+   "learningObjective": "Compreender que a vida no sangue fundamenta a proibição.",
+   "evidence": [
+    "Levítico 17:10–11"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:12, toque a expressão que liga a ordem ao motivo já explicado.",
+   "verseRef": "Levítico 17:12",
+   "evidenceSpan": "Por isso, tenho dito",
+   "feedbackCorrect": "Essa expressão mostra que a ordem nasce do motivo dado antes.",
+   "feedbackWrong": {
+    "b": "Essa expressão introduz a fala, não a ligação com o motivo.",
+    "c": "Isso é a ordem dada, não a palavra que a liga ao motivo."
+   },
+   "hint": "Procure o começo do versículo.",
+   "learningObjective": "Reconhecer o marcador que liga motivo e ordem.",
+   "evidence": [
+    "Levítico 17:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Por isso"
+    },
+    {
+     "id": "b",
+     "text": "tenho dito"
+    },
+    {
+     "id": "c",
+     "text": "comerá sangue"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Levítico 17:11 explica o papel do sangue no altar?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "Deus mesmo deu o sangue no altar com um propósito em favor do povo.",
+   "feedbackWrong": {
+    "a": "O texto proíbe comer sangue e o destina ao altar.",
+    "c": "O texto diz que Deus o deu no altar para expiar.",
+    "d": "Quem dá o sangue no altar é Deus, diz o versículo."
+   },
+   "hint": "Veja quem dá o sangue e com que fim.",
+   "learningObjective": "Compreender o propósito do sangue no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo podia usá-lo como alimento sagrado"
+    },
+    {
+     "id": "b",
+     "text": "Deus o reservou para expiar pelo povo"
+    },
+    {
+     "id": "c",
+     "text": "Ele servia só para marcar o altar por fora"
+    },
+    {
+     "id": "d",
+     "text": "Moisés o escolheu como sinal da caça"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam as ideias em Levítico 17:10–11?",
+   "verseRef": "Levítico 17:10–11",
+   "evidenceSpan": "a vida da carne está no sangue",
+   "feedbackCorrect": "A ordem ganha sentido quando Deus explica a vida e o altar.",
+   "feedbackWrong": {
+    "default": "A consequência vem antes da explicação sobre a vida e o altar."
+   },
+   "hint": "A explicação sobre a vida vem no segundo versículo.",
+   "learningObjective": "Compreender a ligação entre proibição, vida e altar.",
+   "evidence": [
+    "Levítico 17:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O perigo de tratar o sangue como comida"
+    },
+    {
+     "id": "b",
+     "text": "Deus explica onde está a vida"
+    },
+    {
+     "id": "c",
+     "text": "Deus destina o sangue ao altar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Levítico 17:11, para que Deus deu o sangue sobre o altar?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "para expiar por vocês",
+   "feedbackCorrect": "No altar, o sangue serve a um ato de Deus em favor do povo.",
+   "feedbackWrong": {
+    "a": "O sangue no altar não é dado para alimentar o povo.",
+    "b": "O texto não fala de enfeite e sim de um ato em favor do povo."
+   },
+   "hint": "Procure a finalidade depois de altar.",
+   "learningObjective": "Compreender a finalidade do sangue no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "alimentar"
+    },
+    {
+     "id": "b",
+     "text": "enfeitar"
+    },
+    {
+     "id": "c",
+     "text": "expiar"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Levítico 17:11 a Hebreus 9:22?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "fará expiação em virtude da vida",
+   "feedbackCorrect": "Nos dois textos, o sangue está ligado ao perdão dado por Deus.",
+   "feedbackWrong": {
+    "b": "Hebreus fala do papel do sangue no perdão, não só de comida.",
+    "c": "Hebreus afirma quase tudo purificado com sangue."
+   },
+   "hint": "Compare o papel do sangue nos dois trechos.",
+   "learningObjective": "Relacionar expiação no altar e perdão em Hebreus.",
+   "evidence": [
+    "Levítico 17:11",
+    "Hebreus 9:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sangue derramado traz perdão"
+    },
+    {
+     "id": "b",
+     "text": "Sangue proibido como comida apenas"
+    },
+    {
+     "id": "c",
+     "text": "Altar que dispensa o sangue"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 17:11"
+   },
+   "passageB": {
+    "ref": "Hebreus 9:22"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Levítico 17:11 sustenta que a expiação está ligada à vida que há no sangue.",
+   "verseRef": "Levítico 17:11–12",
+   "evidenceSpan": "é o sangue que fará expiação em virtude da vida",
+   "feedbackCorrect": "O próprio texto une sangue, vida e expiação na mesma frase.",
+   "feedbackWrong": {
+    "false": "Releia o fim de Levítico 17:11 e ligue as três ideias."
+   },
+   "hint": "Ligue sangue, vida e altar no fim do versículo.",
+   "learningObjective": "Interpretar a ligação entre vida, sangue e expiação.",
+   "evidence": [
+    "Levítico 17:11–12"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:14, toque o trecho que repete onde está a vida de toda carne.",
+   "verseRef": "Levítico 17:14",
+   "evidenceSpan": "a vida de toda carne está em seu sangue",
+   "feedbackCorrect": "O texto repete que a vida de toda carne está ligada ao seu sangue.",
+   "feedbackWrong": {
+    "a": "Isso fala de quem não deve ser comido, não de onde está a vida.",
+    "b": "Isso é a consequência para quem come, não onde está a vida."
+   },
+   "hint": "Procure a segunda afirmação sobre a vida.",
+   "learningObjective": "Sustentar com o texto a ligação entre vida e sangue.",
+   "evidence": [
+    "Levítico 17:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "nenhuma carne"
+    },
+    {
+     "id": "b",
+     "text": "será eliminado"
+    },
+    {
+     "id": "c",
+     "text": "em seu sangue"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Levítico 17:9 sustenta sobre onde oferecer ao Senhor?",
+   "verseRef": "Levítico 17:9",
+   "evidenceSpan": "para oferecê-lo ao Senhor",
+   "feedbackCorrect": "Oferecer ao Senhor acontecia no lugar que ele mesmo indicou.",
+   "feedbackWrong": {
+    "b": "O texto condena quem não traz a oferta ao lugar indicado.",
+    "c": "O texto não separa intenção e obediência ao lugar.",
+    "d": "A ordem alcança Israel e o estrangeiro."
+   },
+   "hint": "Veja o lugar citado e a consequência ligada a ele.",
+   "learningObjective": "Escolher a interpretação sustentada sobre o lugar da oferta.",
+   "evidence": [
+    "Levítico 17:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A oferta ao Senhor tinha lugar indicado por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Cada um podia ofertar onde achasse melhor"
+    },
+    {
+     "id": "c",
+     "text": "O lugar importava menos que a intenção apenas"
+    },
+    {
+     "id": "d",
+     "text": "Só os estrangeiros deviam ir à Tenda"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do sangue que perdoa na Bíblia?",
+   "verseRef": "Levítico 17:14",
+   "evidenceSpan": "a vida de toda carne está em seu sangue",
+   "feedbackCorrect": "O sangue no altar aponta para o perdão pleno anunciado depois.",
+   "feedbackWrong": {
+    "default": "Comece em Levítico; Hebreus e o Evangelho vêm depois."
+   },
+   "hint": "Siga Levítico, depois Hebreus e o Evangelho.",
+   "learningObjective": "Ver o sangue do altar como começo de um fio bíblico.",
+   "evidence": [
+    "Levítico 17:11",
+    "Hebreus 9:22",
+    "Mateus 26:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus dá o sangue no altar em Levítico"
+    },
+    {
+     "id": "b",
+     "text": "Hebreus liga sangue e perdão dos pecados"
+    },
+    {
+     "id": "c",
+     "text": "Jesus fala do seu sangue para perdão"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Levítico 17:11, que palavra explica por que o sangue faz expiação?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "fará expiação em virtude da vida",
+   "feedbackCorrect": "A expiação acontece em virtude daquilo que o sangue carrega.",
+   "feedbackWrong": {
+    "a": "A fome não explica o papel do sangue no texto.",
+    "c": "O texto usa outra palavra para explicar a expiação."
+   },
+   "hint": "Veja a última parte do versículo.",
+   "learningObjective": "Lembrar o termo que carrega o sentido da expiação.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "fome"
+    },
+    {
+     "id": "b",
+     "text": "vida"
+    },
+    {
+     "id": "c",
+     "text": "força"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Levítico 17:11 a Mateus 26:28?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar",
+   "feedbackCorrect": "Jesus usa a linguagem do sangue derramado para perdão.",
+   "feedbackWrong": {
+    "a": "Mateus fala de sangue derramado, não de refeição com sangue.",
+    "b": "Mateus retoma o sangue para perdão, sem apagar Levítico aqui."
+   },
+   "hint": "Compare o que o sangue realiza nos dois trechos.",
+   "learningObjective": "Ligar o sangue do altar às palavras de Jesus.",
+   "evidence": [
+    "Levítico 17:11",
+    "Mateus 26:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Refeição entre Deus e povo"
+    },
+    {
+     "id": "b",
+     "text": "Fim de todo sacrifício em Levítico"
+    },
+    {
+     "id": "c",
+     "text": "Expiação pela vida entregue"
+    }
+   ],
+   "correctOptionId": "c",
+   "passageA": {
+    "ref": "Levítico 17:11"
+   },
+   "passageB": {
+    "ref": "Mateus 26:28"
+   }
+  }
+ ]
+}

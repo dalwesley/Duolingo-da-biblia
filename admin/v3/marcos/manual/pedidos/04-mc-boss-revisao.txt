@@ -1,0 +1,152 @@
+Escreva a cena "mc-boss-revisao" da trilha "marcos" (Marcos).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "marcos",
+  "title": "Marcos",
+  "description": "O Evangelho da ação — o Servo que veio para servir.",
+  "realm": "novo-testamento"
+ },
+ "block": "Marcos",
+ "mission": {
+  "slug": "mc-boss-revisao",
+  "title": "Desafio: O Servo poderoso",
+  "type": "boss",
+  "intro": "Revise o anúncio do Reino, o discipulado que serve e a vitória de Jesus na cruz.",
+  "hookRef": "Desafio: O Servo poderoso",
+  "hookNote": "Revise o anúncio do Reino, o discipulado que serve e a vitória de Jesus na cruz.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Revisão de Marcos"
+ },
+ "v2": {
+  "passageRef": "Desafio: O Servo poderoso",
+  "context": "Revise o anúncio do Reino, o discipulado que serve e a vitória de Jesus na cruz.",
+  "keyword": "Servo",
+  "verseRefs": [
+   "Marcos 10:45"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "mc-01-servo-autoridade",
+   "title": "O Servo com autoridade",
+   "centralInsight": "Desde o começo, Jesus convoca pessoas a abandonar o pecado e confiar nas boas-novas do Reino de Deus.",
+   "ref": "Marcos 1:11–18"
+  },
+  {
+   "slug": "mc-02-caminho-cruz",
+   "title": "O caminho da cruz",
+   "centralInsight": "Jesus corrige expectativas de glória sem sofrimento. Ele é o Cristo que sofre, e seus discípulos o seguem no caminho do serviço.",
+   "ref": "Marcos 8:31–38"
+  },
+  {
+   "slug": "mc-03-cruz-ressurreicao",
+   "title": "O Servo vence pela cruz",
+   "centralInsight": "Na cruz, o Servo sofredor revela sua identidade. O túmulo vazio anuncia que a morte não teve a última palavra.",
+   "ref": "Marcos 16:3–9"
+  }
+ ],
+ "ranges": [
+  "Marcos 1:11–18",
+  "Marcos 8:31–38",
+  "Marcos 16:3–9"
+ ],
+ "verses": [
+  {
+   "ref": "Marcos 1:11",
+   "text": "E ouviu-se uma voz dos céus que dizia: \"Tu és o meu Filho amado, em ti me comprazo."
+  },
+  {
+   "ref": "Marcos 1:12",
+   "text": "E logo o Espírito o impeliu ao deserto."
+  },
+  {
+   "ref": "Marcos 1:13",
+   "text": "E permaneceu no deserto durante quarenta dias, sendo tentado por Satanás; estava com as feras, e os anjos o serviam."
+  },
+  {
+   "ref": "Marcos 1:14",
+   "text": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus."
+  },
+  {
+   "ref": "Marcos 1:15",
+   "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+  },
+  {
+   "ref": "Marcos 1:16",
+   "text": "Caminhando ao longo do mar da Galileia, viu Simão e André, que lançavam a rede ao mar, pois eram pescadores."
+  },
+  {
+   "ref": "Marcos 1:17",
+   "text": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens."
+  },
+  {
+   "ref": "Marcos 1:18",
+   "text": "Deixando suas redes imediatamente eles o seguiram."
+  },
+  {
+   "ref": "Marcos 8:31",
+   "text": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse."
+  },
+  {
+   "ref": "Marcos 8:32",
+   "text": "E assim ele expunha isso de maneira clara. Então, Pedro o chamou para um lado e começou a reprová-lo."
+  },
+  {
+   "ref": "Marcos 8:33",
+   "text": "Mas ele, voltando-se e fitando os seus discípulos, repreendeu a Pedro, dizendo: Afaste-se de mim, Satanás! Pois tu não cogitas das coisas de Deus, mas apenas das dos homens."
+  },
+  {
+   "ref": "Marcos 8:34",
+   "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+  },
+  {
+   "ref": "Marcos 8:35",
+   "text": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará."
+  },
+  {
+   "ref": "Marcos 8:36",
+   "text": "Pois, de que vale ao homem ganhar o mundo inteiro e, entretanto, perder a sua alma?"
+  },
+  {
+   "ref": "Marcos 8:37",
+   "text": "Ou o que poderá um homem oferecer em troca da sua alma?"
+  },
+  {
+   "ref": "Marcos 8:38",
+   "text": "Porque quem se envergonhar de mim e das minhas palavras, nesta geração adúltera e pecadora, também o Filho do Homem se envergonhará dele, quando vier na glória de seu Pai com os santos anjos."
+  },
+  {
+   "ref": "Marcos 16:3",
+   "text": "E diziam umas às outras: Quem nos removerá a pedra da entrada do túmulo?"
+  },
+  {
+   "ref": "Marcos 16:4",
+   "text": "E, ao olharem, viram que a pedra já estava removida; pois era muito grande."
+  },
+  {
+   "ref": "Marcos 16:5",
+   "text": "Ao entrarem no sepulcro, viram um jovem sentado à direita, vestido de branco; ficaram surpresas e atemorizadas."
+  },
+  {
+   "ref": "Marcos 16:6",
+   "text": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado."
+  },
+  {
+   "ref": "Marcos 16:7",
+   "text": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse."
+  },
+  {
+   "ref": "Marcos 16:8",
+   "text": "E, ao saírem apressadamente, fugiram do sepulcro, pois estavam dominadas pelo temor e pelo assombro; e, de medo, não disseram nada a ninguém."
+  },
+  {
+   "ref": "Marcos 16:9",
+   "text": "E Jesus, após ressuscitar de manhã cedo no primeiro dia da semana, apareceu primeiro a Maria Madalena, da qual havia expulsado sete demônios."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,700 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:17–20",
+  "passages": [
+   {
+    "ref": "Mateus 5:17–20"
+   },
+   {
+    "ref": "Mateus 5:14–16"
+   }
+  ],
+  "context": "Antes de aprofundar os mandamentos, Jesus esclarece: ele não veio revogar a Lei e os profetas, mas cumprir. A justiça do Reino vai além da dos escribas e fariseus, até o coração.",
+  "keyword": "Cumprir",
+  "keywordGloss": "Jesus leva a Lei ao seu sentido pleno, em vez de descartá-la ou relaxá-la.",
+  "focusQuestion": "Sua obediência para na aparência ou alcança o coração?",
+  "reflectionPrompts": [
+   "Lei levada ao coração",
+   "Justiça maior que aparência",
+   "Observar e ensinar"
+  ],
+  "facts": [
+   {
+    "text": "Jesus não veio revogar a Lei ou os profetas.",
+    "evidenceRef": "Mateus 5:17",
+    "evidenceSpan": "não vim para revogar, vim para cumprir"
+   },
+   {
+    "text": "Nem um iota ou til se omitirá da lei até tudo se cumprir.",
+    "evidenceRef": "Mateus 5:18",
+    "evidenceSpan": "nem um iota ou um til jamais se omitirá da lei"
+   },
+   {
+    "text": "Quem observar e ensinar os mandamentos será grande no Reino.",
+    "evidenceRef": "Mateus 5:19",
+    "evidenceSpan": "aquele que os observar e ensinar, será considerado grande"
+   },
+   {
+    "text": "A justiça deve exceder a dos escribas e fariseus.",
+    "evidenceRef": "Mateus 5:20",
+    "evidenceSpan": "se a sua justiça não exceder em muito a dos escribas e fariseus"
+   },
+   {
+    "text": "Quem não tiver essa justiça não entrará no Reino.",
+    "evidenceRef": "Mateus 5:20",
+    "evidenceSpan": "de maneira nenhuma entrarão no reino dos céus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "cumprir",
+    "gloss": "Levar a Lei ao seu alvo pleno em Jesus, sem revogá-la."
+   },
+   {
+    "term": "iota",
+    "gloss": "Menor letra citada por Jesus para mostrar que nada da lei é descartado."
+   },
+   {
+    "term": "justiça",
+    "gloss": "Vida reta que excede a aparência religiosa dos escribas e fariseus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jesus nega ter vindo revogar",
+    "evidenceRef": "Mateus 5:17"
+   },
+   {
+    "label": "Permanência de cada detalhe da lei",
+    "evidenceRef": "Mateus 5:18"
+   },
+   {
+    "label": "Grandeza de quem observa e ensina",
+    "evidenceRef": "Mateus 5:19"
+   },
+   {
+    "label": "Justiça que deve exceder a dos fariseus",
+    "evidenceRef": "Mateus 5:20"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Violar e ensinar a violar torna menor; observar e ensinar torna grande.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 5:19"
+   },
+   {
+    "kind": "propósito",
+    "text": "Jesus veio com um alvo declarado para a Lei: cumpri-la plenamente.",
+    "marker": "para",
+    "evidenceRef": "Mateus 5:17"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 10:4",
+    "bridge": "Cristo é o alvo da Lei"
+   },
+   {
+    "ref": "Mateus 22:40",
+    "bridge": "Amor resume a Lei"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jesus aboliu a Lei, então mandamentos não importam mais.",
+    "why": "Ele mesmo nega: não vim para revogar, vim para cumprir (5:17)."
+   },
+   {
+    "text": "Cumprir a Lei é só cumprir rituais externos visíveis.",
+    "why": "A justiça exigida excede a dos escribas e fariseus (5:20) e alcança o coração."
+   },
+   {
+    "text": "Detalhes pequenos da vontade de Deus podem ser desprezados.",
+    "why": "Jesus valoriza até os menores mandamentos e quem os ensina (5:19)."
+   }
+  ],
+  "centralInsight": "Jesus não relativiza a Lei — aprofunda",
+  "anchorQuestion": "O que Jesus diz que veio fazer em relação à Lei e aos profetas?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:17, Jesus afirma que veio revogar a Lei e os profetas",
+   "verseRef": "Mateus 5:17",
+   "correctOptionId": "false",
+   "evidenceSpan": "não vim para revogar, vim para cumprir",
+   "feedbackCorrect": "Jesus nega a revogação: ele veio cumprir a Lei e os profetas.",
+   "feedbackWrong": {
+    "true": "Releia 5:17 até o fim: não vim para revogar, vim para cumprir."
+   },
+   "hint": "Veja o contraste no fim do versículo.",
+   "learningObjective": "Observar a intenção de Jesus com a Lei.",
+   "evidence": [
+    "Mateus 5:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:17, toque o que Jesus veio fazer com a Lei e os profetas.",
+   "verseRef": "Mateus 5:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "a Lei"
+    },
+    {
+     "id": "b",
+     "text": "cumprir"
+    },
+    {
+     "id": "c",
+     "text": "os profetas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "A palavra-chave da cena é essa: Jesus cumpre, não descarta a Escritura.",
+   "feedbackWrong": {
+    "a": "Isso é parte do que ele não veio revogar.",
+    "c": "Isso também é honrado por ele, não a ação dele."
+   },
+   "hint": "Procure o verbo final da frase de Jesus.",
+   "learningObjective": "Identificar a ação de Jesus sobre a Lei.",
+   "evidence": [
+    "Mateus 5:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:18, o que jamais se omitirá da lei até tudo se cumprir?",
+   "verseRef": "Mateus 5:17–18",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nem um livro inteiro dos profetas"
+    },
+    {
+     "id": "b",
+     "text": "Nem um iota ou um til"
+    },
+    {
+     "id": "c",
+     "text": "Nem uma festa do calendário anual"
+    },
+    {
+     "id": "d",
+     "text": "Nem um costume dos escribas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "nem um iota ou um til jamais se omitirá da lei",
+   "feedbackCorrect": "Jesus desce ao menor detalhe: nada da lei é tratado como descartável.",
+   "feedbackWrong": {
+    "a": "Jesus fala de detalhe menor que um livro: iota e til.",
+    "c": "Festas não são o assunto dessa frase de Jesus.",
+    "d": "Costumes humanos não são a lei em questão aqui."
+   },
+   "hint": "Pense nas menores marcas da escrita citada.",
+   "learningObjective": "Observar a permanência da lei em 5:18.",
+   "evidence": [
+    "Mateus 5:17–18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:17 na ordem do texto.",
+   "verseRef": "Mateus 5:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não pensem que vim revogar a Lei ou os profetas"
+    },
+    {
+     "id": "b",
+     "text": "não vim para revogar"
+    },
+    {
+     "id": "c",
+     "text": "vim para cumprir"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "Negação da revogação primeiro, alvo positivo de Jesus no fim.",
+   "feedbackWrong": {
+    "default": "Comece pelo que Jesus nega; o cumprir fecha."
+   },
+   "hint": "A frase termina com a intenção positiva dele.",
+   "learningObjective": "Reconhecer a sequência de Mateus 5:17.",
+   "evidence": [
+    "Mateus 5:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:17, o que Jesus diz que não veio fazer com a Lei?",
+   "verseRef": "Mateus 5:17–18",
+   "options": [
+    {
+     "id": "a",
+     "text": "revogar"
+    },
+    {
+     "id": "b",
+     "text": "ensinar"
+    },
+    {
+     "id": "c",
+     "text": "guardar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não vim para revogar",
+   "feedbackCorrect": "Antes de aprofundar mandamentos, Jesus protege a Lei de ser descartada.",
+   "feedbackWrong": {
+    "b": "Ensinar os mandamentos é elogiado por ele em 5:19.",
+    "c": "Guardar a vontade de Deus é o caminho do Reino."
+   },
+   "hint": "É o oposto da ação afirmada no fim da frase.",
+   "learningObjective": "Lembrar o que Jesus nega sobre a Lei.",
+   "evidence": [
+    "Mateus 5:17–18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:17 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:17–18",
+   "passageA": {
+    "ref": "Mateus 5:17"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jesus não relaxa a vontade de Deus no Sermão: ele a leva ao seu sentido mais profundo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Lei descartada por Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Lei aprofundada por Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Lei só para o passado"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "Cumprir é aprofundar: os mandamentos seguintes vão ao coração (5:21–22).",
+   "feedbackWrong": {
+    "a": "O próprio versículo nega que ele a descartou.",
+    "c": "Ela permanece até que tudo se cumpra, diz 5:18."
+   },
+   "hint": "Veja o verbo que resume a missão dele aqui.",
+   "learningObjective": "Ligar o cumprir de Jesus ao aprofundamento do Sermão.",
+   "evidence": [
+    "Mateus 5:17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:19, quem observar os mandamentos e ensinar assim será grande no Reino",
+   "verseRef": "Mateus 5:19",
+   "correctOptionId": "true",
+   "evidenceSpan": "aquele que os observar e ensinar, será considerado grande",
+   "feedbackCorrect": "Praticar e ensinar andam juntos na grandeza que Jesus reconhece no Reino.",
+   "feedbackWrong": {
+    "false": "Confira o segundo lado do contraste de 5:19, o da grandeza."
+   },
+   "hint": "Compare os dois destinos citados no versículo.",
+   "learningObjective": "Compreender o contraste de Mateus 5:19.",
+   "evidence": [
+    "Mateus 5:19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:18, toque o menor detalhe da lei citado por Jesus.",
+   "verseRef": "Mateus 5:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "um iota"
+    },
+    {
+     "id": "b",
+     "text": "a terra"
+    },
+    {
+     "id": "c",
+     "text": "tudo se cumpra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nem um iota ou um til",
+   "feedbackCorrect": "Jesus desce à menor letra para dizer que nada de Deus é desprezível.",
+   "feedbackWrong": {
+    "b": "Isso marca a duração da permanência, não o detalhe menor.",
+    "c": "Isso é o limite final, não a menor marca da escrita."
+   },
+   "hint": "Procure uma letrinha citada no meio do versículo.",
+   "learningObjective": "Reconhecer a ênfase no detalhe em 5:18.",
+   "evidence": [
+    "Mateus 5:18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 5:20 prepara os mandamentos que Jesus aprofunda depois?",
+   "verseRef": "Mateus 5:19–20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Baixando a justiça ao nível dos fariseus"
+    },
+    {
+     "id": "b",
+     "text": "Exigindo justiça maior que a dos fariseus"
+    },
+    {
+     "id": "c",
+     "text": "Trocando obediência por intenção sem prática"
+    },
+    {
+     "id": "d",
+     "text": "Limitando o Reino a escribas e fariseus"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "se a sua justiça não exceder em muito a dos escribas e fariseus",
+   "feedbackCorrect": "O padrão sobe antes dos exemplos: ira, olhar e palavra serão tratados no coração.",
+   "feedbackWrong": {
+    "a": "Jesus pede exceder em muito, não igualar por baixo.",
+    "c": "Observar e ensinar aparecem juntos em 5:19.",
+    "d": "Justamente eles não são o teto da justiça do Reino."
+   },
+   "hint": "Veja a comparação que Jesus faz em 5:20.",
+   "learningObjective": "Relacionar a justiça maior aos ensinos seguintes.",
+   "evidence": [
+    "Mateus 5:19–20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o ensino de Mateus 5:17 a 5:20?",
+   "verseRef": "Mateus 5:17–18",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus declara que veio cumprir"
+    },
+    {
+     "id": "b",
+     "text": "Ele afirma a permanência da lei"
+    },
+    {
+     "id": "c",
+     "text": "Ele exige justiça maior no Reino"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "Missão, permanência e exigência: a base dos mandamentos aprofundados.",
+   "feedbackWrong": {
+    "default": "A exigência de 5:20 é a conclusão do bloco."
+   },
+   "hint": "O padrão mais alto vem no último versículo.",
+   "learningObjective": "Compreender o movimento de base do Sermão.",
+   "evidence": [
+    "Mateus 5:17–18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:18, que outra marquinha Jesus cita ao lado do iota?",
+   "verseRef": "Mateus 5:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "til"
+    },
+    {
+     "id": "b",
+     "text": "ponto"
+    },
+    {
+     "id": "c",
+     "text": "sinal"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nem um iota ou um til",
+   "feedbackCorrect": "Até a menor marca da lei importa no ensino de Jesus sobre a Escritura.",
+   "feedbackWrong": {
+    "b": "A palavra de Jesus é outra, ligada à escrita antiga.",
+    "c": "Sinal é genérico; o texto nomeia a marquinha."
+   },
+   "hint": "É a palavra que vem depois de ou um, na frase.",
+   "learningObjective": "Lembrar o detalhe citado em 5:18.",
+   "evidence": [
+    "Mateus 5:18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:17 a Romanos 10:4?",
+   "verseRef": "Mateus 5:17",
+   "passageA": {
+    "ref": "Mateus 5:17"
+   },
+   "passageB": {
+    "ref": "Romanos 10:4"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo é o alvo da Lei"
+    },
+    {
+     "id": "b",
+     "text": "Lei foi erro de Deus"
+    },
+    {
+     "id": "c",
+     "text": "Cristo ignora a Lei"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "Paulo chama Cristo de fim e alvo da lei; Jesus a cumpre plenamente.",
+   "feedbackWrong": {
+    "b": "A Lei é de Deus e honrada nos dois textos.",
+    "c": "Jesus cumpre a Lei, nunca a trata com desprezo."
+   },
+   "hint": "Veja quem Paulo coloca como destino da lei.",
+   "learningObjective": "Relacionar o cumprir de Jesus ao alvo da Lei.",
+   "evidence": [
+    "Mateus 5:17",
+    "Romanos 10:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 5:17–20 sustenta desprezar mandamentos pequenos quando a intenção parece boa",
+   "verseRef": "Mateus 5:18–19",
+   "correctOptionId": "false",
+   "evidenceSpan": "um dos menores destes mandamentos",
+   "feedbackCorrect": "Jesus valoriza até os menores mandamentos e quem os observa e ensina.",
+   "feedbackWrong": {
+    "true": "Em 5:19, violar o menor e ensinar isso torna a pessoa menor."
+   },
+   "hint": "Veja o valor dado ao menor em 5:19.",
+   "learningObjective": "Rejeitar o desprezo por mandamentos menores.",
+   "evidence": [
+    "Mateus 5:18–19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:19, toque o que faz uma pessoa ser considerada grande no Reino.",
+   "verseRef": "Mateus 5:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "observar e ensinar"
+    },
+    {
+     "id": "b",
+     "text": "um dos menores"
+    },
+    {
+     "id": "c",
+     "text": "aos homens"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "aquele que os observar e ensinar, será considerado grande",
+   "feedbackCorrect": "Prática e ensino juntos: grandeza no Reino não separa vida e palavra.",
+   "feedbackWrong": {
+    "b": "Isso descreve o mandamento violado, não a ação elogiada.",
+    "c": "Isso é a quem se ensina errado, no lado menor do contraste."
+   },
+   "hint": "Procure dois verbos juntos na segunda metade.",
+   "learningObjective": "Sustentar no texto a grandeza de observar e ensinar.",
+   "evidence": [
+    "Mateus 5:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 5:17–20 sustenta sobre Jesus e a vontade de Deus?",
+   "verseRef": "Mateus 5:17–18",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele relaxa a Lei para facilitar a entrada no Reino"
+    },
+    {
+     "id": "b",
+     "text": "Ele mantém só os rituais visíveis da Lei antiga"
+    },
+    {
+     "id": "c",
+     "text": "Ele aprofunda a Lei até alcançar o coração"
+    },
+    {
+     "id": "d",
+     "text": "Ele troca a Lei por sentimentos sem obediência"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "Cumprir, em Jesus, é aprofundar: os próximos ensinos vão da ação ao coração.",
+   "feedbackWrong": {
+    "a": "A justiça pedida excede a dos fariseus, não fica menor.",
+    "b": "O aprofundamento seguinte trata ira, olhar e juramentos.",
+    "d": "Observar mandamentos continua central em 5:19."
+   },
+   "hint": "Veja o que acontece com ira e adultério logo depois.",
+   "learningObjective": "Escolher a interpretação sustentada por 5:17–20.",
+   "evidence": [
+    "Mateus 5:17–18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da Lei até o coração?",
+   "verseRef": "Mateus 5:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus dá a Lei ao seu povo"
+    },
+    {
+     "id": "b",
+     "text": "Jesus cumpre a Lei plenamente"
+    },
+    {
+     "id": "c",
+     "text": "Discípulos observam e ensinam outros"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "vim para cumprir",
+   "feedbackCorrect": "Lei dada, Lei cumprida em Jesus e vida ensinada pelos discípulos.",
+   "feedbackWrong": {
+    "default": "Comece pela Lei dada antes de Jesus no monte."
+   },
+   "hint": "O povo recebe a Lei antes do Sermão existir.",
+   "learningObjective": "Ver Jesus como cumprimento no fio da Lei.",
+   "evidence": [
+    "Mateus 5:17",
+    "Êxodo 20:1–2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:20, a justiça deve exceder a dos escribas e de quem mais?",
+   "verseRef": "Mateus 5:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "fariseus"
+    },
+    {
+     "id": "b",
+     "text": "saduceus"
+    },
+    {
+     "id": "c",
+     "text": "zelotes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "dos escribas e fariseus",
+   "feedbackCorrect": "Nem a referência religiosa da época é o teto da justiça do Reino.",
+   "feedbackWrong": {
+    "b": "O segundo grupo nomeado por Jesus é outro, bem conhecido.",
+    "c": "Zelotes não são citados nessa comparação de Jesus."
+   },
+   "hint": "Pense no grupo religioso mais citado nos Evangelhos.",
+   "learningObjective": "Lembrar a comparação feita em 5:20.",
+   "evidence": [
+    "Mateus 5:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:17 a Mateus 22:40?",
+   "verseRef": "Mateus 5:17–18",
+   "passageA": {
+    "ref": "Mateus 5:17"
+   },
+   "passageB": {
+    "ref": "Mateus 22:40"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amor resume a Lei"
+    },
+    {
+     "id": "b",
+     "text": "Lei dispensa o amor"
+    },
+    {
+     "id": "c",
+     "text": "Profetas foram cancelados"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a Lei ou os profetas",
+   "feedbackCorrect": "O próprio Jesus resume Lei e profetas no amor a Deus e ao próximo.",
+   "feedbackWrong": {
+    "b": "Em 22:40, toda a Lei depende justamente do amor.",
+    "c": "Jesus honra os profetas em 5:17 e em 22:40."
+   },
+   "hint": "Veja de que dependem Lei e profetas em Mateus 22.",
+   "learningObjective": "Ligar o cumprir da Lei ao resumo do amor.",
+   "evidence": [
+    "Mateus 5:17–18",
+    "Mateus 22:40"
+   ]
+  }
+ ]
+}

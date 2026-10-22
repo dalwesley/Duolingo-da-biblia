@@ -1,0 +1,2539 @@
+[
+  {
+    "id": "tito-sem-tt-01-lideres-01",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 1:5, Paulo deixou Tito em Creta para constituir anciãos em cada cidade.",
+    "prompt": "Em Tito 1:5, Paulo deixou Tito em Creta para constituir anciãos em cada cidade.",
+    "cue": "Em Tito 1:5, Paulo deixou Tito em Creta para constituir anciãos em cada cidade.",
+    "verseRef": "Tito 1:5",
+    "passageText": "Por isso, te deixei em Creta, para que pusesses em ordem o que ainda resta e, em cada cidade, constituísses anciãos, conforme já te prescrevi",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "em cada cidade, constituísses anciãos",
+    "feedbackCorrect": "Paulo deixou Tito em Creta justamente para organizar e constituir anciãos nas cidades.",
+    "feedbackWrong": {
+      "false": "Releia Tito 1:5: Tito fica para constituir anciãos em cada cidade."
+    },
+    "hint": "Olhe a tarefa dada a Tito.",
+    "learningObjective": "Observar a missão de Tito em Creta.",
+    "evidence": [
+      "Tito 1:5"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-01-lideres-02",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 1:5, toque quem Tito deveria constituir em cada cidade.",
+    "prompt": "Em Tito 1:5, toque quem Tito deveria constituir em cada cidade.",
+    "cue": "Em Tito 1:5, toque quem Tito deveria constituir em cada cidade.",
+    "verseRef": "Tito 1:5",
+    "passageText": "Por isso, te deixei em Creta, para que pusesses em ordem o que ainda resta e, em cada cidade, constituísses anciãos, conforme já te prescrevi",
+    "options": [
+      {
+        "id": "a",
+        "text": "Creta"
+      },
+      {
+        "id": "b",
+        "text": "anciãos"
+      },
+      {
+        "id": "c",
+        "text": "ordem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "constituísses anciãos",
+    "feedbackCorrect": "Em cada cidade, Tito deveria constituir anciãos para cuidar da igreja.",
+    "feedbackWrong": {
+      "a": "Creta é o lugar onde Tito ficou, não quem ele constitui.",
+      "c": "Ordem é o que Tito põe; o cargo vem depois."
+    },
+    "hint": "Procure o cargo nomeado no fim do versículo.",
+    "learningObjective": "Identificar quem Tito deveria constituir nas cidades.",
+    "evidence": [
+      "Tito 1:5"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-01-lideres-03",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 1:6, como devem ser os filhos de quem vai liderar?",
+    "prompt": "Segundo Tito 1:6, como devem ser os filhos de quem vai liderar?",
+    "cue": "Segundo Tito 1:6, como devem ser os filhos de quem vai liderar?",
+    "verseRef": "Tito 1:6",
+    "passageText": "Aquele que for irrepreensível, marido de uma só mulher, que tenha filhos crentes que não sejam acusados de dissolução nem sejam insubordinados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Distantes da fé comum"
+      },
+      {
+        "id": "b",
+        "text": "Livres de qualquer ensino"
+      },
+      {
+        "id": "c",
+        "text": "Crentes e não insubordinados"
+      },
+      {
+        "id": "d",
+        "text": "Acusados de dissolução"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "filhos crentes que não sejam acusados de dissolução nem sejam insubordinados",
+    "feedbackCorrect": "O texto pede filhos crentes, sem acusação de dissolução nem insubordinação.",
+    "feedbackWrong": {
+      "a": "Os filhos devem ser crentes, não distantes da fé.",
+      "b": "A vida dos filhos mostra o cuidado do pai com o ensino em casa.",
+      "d": "O texto diz o contrário: sem acusação de dissolução."
+    },
+    "hint": "Leia o que se espera dos filhos no versículo.",
+    "learningObjective": "Observar o testemunho da família de quem lidera.",
+    "evidence": [
+      "Tito 1:6"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-01-lideres-04",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 1:7 na ordem do texto.",
+    "prompt": "Monte Tito 1:7 na ordem do texto.",
+    "cue": "Monte Tito 1:7 na ordem do texto.",
+    "verseRef": "Tito 1:7",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque é necessário que o bispo seja irrepreensível"
+      },
+      {
+        "id": "b",
+        "text": "como despenseiro da casa de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não arrogante, nem irascível, nem dado ao vinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque é necessário que o bispo seja irrepreensível",
+    "feedbackCorrect": "O versículo começa pela necessidade, lembra a casa de Deus e lista o que evitar.",
+    "feedbackWrong": {
+      "default": "Comece por quem o bispo deve ser; os defeitos a evitar vêm depois."
+    },
+    "hint": "O versículo começa com a palavra Porque.",
+    "learningObjective": "Reconhecer a sequência de Tito 1:7.",
+    "evidence": [
+      "Tito 1:7"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-01-lideres-05",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 1:8, que qualidade mostra o líder acolhendo pessoas?",
+    "prompt": "Em Tito 1:8, que qualidade mostra o líder acolhendo pessoas?",
+    "cue": "Em Tito 1:8, que qualidade mostra o líder acolhendo pessoas?",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "template": "É ___, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "options": [
+      {
+        "id": "a",
+        "text": "arrogante"
+      },
+      {
+        "id": "b",
+        "text": "irascível"
+      },
+      {
+        "id": "c",
+        "text": "hospitaleiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "É hospitaleiro",
+    "feedbackCorrect": "O líder acolhe pessoas: a lista positiva de Tito 1:8 começa pela hospitalidade.",
+    "feedbackWrong": {
+      "a": "Arrogância também é defeito evitado, não qualidade.",
+      "b": "Ser irascível é defeito que Tito 1:7 manda evitar."
+    },
+    "hint": "É a primeira qualidade positiva do versículo.",
+    "learningObjective": "Lembrar a primeira qualidade positiva do líder.",
+    "evidence": [
+      "Tito 1:8"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-01-lideres-06",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 1:9 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:9 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:9 comunica que se liga a este contexto?",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "passageA": {
+      "ref": "Tito 1:9",
+      "text": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A igreja precisa de líderes que ensinem a verdade e corrijam o erro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só administrar as reuniões"
+      },
+      {
+        "id": "b",
+        "text": "Evitar qualquer oposição"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar e corrigir com a palavra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "feedbackCorrect": "Apegado à palavra, o líder exorta pela sã doutrina e convence quem se opõe.",
+    "feedbackWrong": {
+      "a": "Administrar não é o foco: o texto fala de exortar e convencer.",
+      "b": "O texto não evita a oposição; prepara para responder a ela."
+    },
+    "hint": "Veja as duas tarefas no fim do versículo.",
+    "learningObjective": "Ligar Tito 1:9 ao ensino que corrige o erro.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-01-lideres-01",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 1:7, o bispo pode ser arrogante desde que ensine bem a doutrina.",
+    "prompt": "Em Tito 1:7, o bispo pode ser arrogante desde que ensine bem a doutrina.",
+    "cue": "Em Tito 1:7, o bispo pode ser arrogante desde que ensine bem a doutrina.",
+    "verseRef": "Tito 1:7",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não arrogante, nem irascível",
+    "feedbackCorrect": "Caráter e ensino andam juntos: o bispo não deve ser arrogante nem irascível.",
+    "feedbackWrong": {
+      "true": "Releia Tito 1:7: arrogância está na lista do que o bispo não deve ser."
+    },
+    "hint": "Veja a lista do que evitar.",
+    "learningObjective": "Compreender que caráter e ensino não se separam.",
+    "evidence": [
+      "Tito 1:7"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-01-lideres-02",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 1:9, toque a expressão que mostra o propósito de se apegar à palavra fiel.",
+    "prompt": "Em Tito 1:9, toque a expressão que mostra o propósito de se apegar à palavra fiel.",
+    "cue": "Em Tito 1:9, toque a expressão que mostra o propósito de se apegar à palavra fiel.",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "options": [
+      {
+        "id": "a",
+        "text": "se opõem"
+      },
+      {
+        "id": "b",
+        "text": "de modo"
+      },
+      {
+        "id": "c",
+        "text": "Mantendo-se"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "de modo a ter poder",
+    "feedbackCorrect": "Apegar-se à palavra tem um alvo: poder exortar e convencer com a sã doutrina.",
+    "feedbackWrong": {
+      "a": "Quem se opõe é quem será convencido, não o propósito.",
+      "c": "Manter-se descreve a firmeza, não o propósito dela."
+    },
+    "hint": "Procure a ligação entre apegar-se e poder.",
+    "learningObjective": "Reconhecer o marcador de propósito em Tito 1:9.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-01-lideres-03",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 1:8 se relaciona com Tito 1:7 sobre o bispo?",
+    "prompt": "Como Tito 1:8 se relaciona com Tito 1:7 sobre o bispo?",
+    "cue": "Como Tito 1:8 se relaciona com Tito 1:7 sobre o bispo?",
+    "verseRef": "Tito 1:7–8",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância. É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primeiro fala de Creta e depois de outras cidades"
+      },
+      {
+        "id": "b",
+        "text": "Primeiro exige perfeição e depois dispensa o caráter"
+      },
+      {
+        "id": "c",
+        "text": "Primeiro trata do ensino e depois só da família"
+      },
+      {
+        "id": "d",
+        "text": "Primeiro afasta defeitos e depois aponta qualidades"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "É hospitaleiro, ama o que é bom",
+    "feedbackCorrect": "Depois dos defeitos a evitar, Paulo aponta as qualidades a cultivar no líder.",
+    "feedbackWrong": {
+      "a": "Creta aparece em 1:5; 1:7–8 continua falando do bispo.",
+      "b": "O caráter nunca é dispensado; ele é descrito dos dois lados.",
+      "c": "A família aparece em 1:6; aqui o tema é o caráter do bispo."
+    },
+    "hint": "Compare os verbos negativos de um verso com os positivos do outro.",
+    "learningObjective": "Relacionar defeitos evitados e qualidades buscadas no líder.",
+    "evidence": [
+      "Tito 1:7–8"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-01-lideres-04",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a orientação de Paulo em Tito 1:5–6?",
+    "prompt": "Como avança a orientação de Paulo em Tito 1:5–6?",
+    "cue": "Como avança a orientação de Paulo em Tito 1:5–6?",
+    "verseRef": "Tito 1:5–6",
+    "passageText": "Por isso, te deixei em Creta, para que pusesses em ordem o que ainda resta e, em cada cidade, constituísses anciãos, conforme já te prescrevi Aquele que for irrepreensível, marido de uma só mulher, que tenha filhos crentes que não sejam acusados de dissolução nem sejam insubordinados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tito põe em ordem o que resta"
+      },
+      {
+        "id": "b",
+        "text": "Anciãos são constituídos nas cidades"
+      },
+      {
+        "id": "c",
+        "text": "O caráter deles é descrito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pusesses em ordem o que ainda resta",
+    "feedbackCorrect": "Primeiro a ordem na ilha, depois anciãos nas cidades, então o caráter deles.",
+    "feedbackWrong": {
+      "default": "Comece pela tarefa geral de Tito; o caráter vem na descrição seguinte."
+    },
+    "hint": "A ordem vem antes dos nomes e do caráter.",
+    "learningObjective": "Compreender o avanço da orientação de Paulo a Tito.",
+    "evidence": [
+      "Tito 1:5–6"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-01-lideres-05",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 1:9, que ação o líder faz junto ao povo com a sã doutrina?",
+    "prompt": "Em Tito 1:9, que ação o líder faz junto ao povo com a sã doutrina?",
+    "cue": "Em Tito 1:9, que ação o líder faz junto ao povo com a sã doutrina?",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "template": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para ___ pela sã doutrina como para convencer os que se opõem",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconder"
+      },
+      {
+        "id": "b",
+        "text": "vender"
+      },
+      {
+        "id": "c",
+        "text": "exortar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tanto para exortar pela sã doutrina",
+    "feedbackCorrect": "Apegado à palavra, o líder tem poder para animar e corrigir o povo com a sã doutrina.",
+    "feedbackWrong": {
+      "a": "A palavra não é escondida; ela é usada para ensinar o povo.",
+      "b": "A doutrina não é mercadoria; é ensino confiado ao líder."
+    },
+    "hint": "Procure uma das duas tarefas no fim do versículo.",
+    "learningObjective": "Compreender o uso da sã doutrina junto ao povo.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-01-lideres-06",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 1:8 a 1 Timóteo 3:2?",
+    "prompt": "O que liga Tito 1:8 a 1 Timóteo 3:2?",
+    "cue": "O que liga Tito 1:8 a 1 Timóteo 3:2?",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "passageA": {
+      "ref": "Tito 1:8",
+      "text": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;"
+    },
+    "passageB": {
+      "ref": "1 Timóteo 3:2",
+      "text": "É necessário, portanto, que o bispo seja irrepreensível, esposo de uma só mulher, moderado, sensato, respeitável, hospitaleiro e apto para ensinar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Líder hospitaleiro e íntegro"
+      },
+      {
+        "id": "b",
+        "text": "Liderança sem olhar o caráter"
+      },
+      {
+        "id": "c",
+        "text": "Ensino separado da vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "É hospitaleiro, ama o que é bom",
+    "feedbackCorrect": "Nas duas cartas, quem lidera é irrepreensível e hospitaleiro: caráter antes do cargo.",
+    "feedbackWrong": {
+      "b": "Os dois textos olham justamente para o caráter de quem lidera.",
+      "c": "Ensino e vida andam juntos nas duas cartas de Paulo."
+    },
+    "hint": "Compare a qualidade que aparece nos dois textos.",
+    "learningObjective": "Relacionar o perfil do líder em Tito e em Timóteo.",
+    "evidence": [
+      "Tito 1:8",
+      "1 Timóteo 3:2"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-01-lideres-01",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tito 1:9, apegar-se à palavra fiel capacita o líder a exortar e a convencer quem se opõe.",
+    "prompt": "Em Tito 1:9, apegar-se à palavra fiel capacita o líder a exortar e a convencer quem se opõe.",
+    "cue": "Em Tito 1:9, apegar-se à palavra fiel capacita o líder a exortar e a convencer quem se opõe.",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "de modo a ter poder tanto para exortar",
+    "feedbackCorrect": "A firmeza na palavra fiel é o que dá ao líder condições de exortar e convencer.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Tito 1:9: apegar-se à palavra dá poder para as duas tarefas."
+    },
+    "hint": "Veja o resultado de se apegar à palavra.",
+    "learningObjective": "Interpretar a firmeza na palavra como base do ensino.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-01-lideres-02",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 1:8, toque o trecho que mostra o líder controlando as próprias vontades.",
+    "prompt": "Em Tito 1:8, toque o trecho que mostra o líder controlando as próprias vontades.",
+    "cue": "Em Tito 1:8, toque o trecho que mostra o líder controlando as próprias vontades.",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "options": [
+      {
+        "id": "a",
+        "text": "sóbrio"
+      },
+      {
+        "id": "b",
+        "text": "domínio de si"
+      },
+      {
+        "id": "c",
+        "text": "hospitaleiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tem domínio de si",
+    "feedbackCorrect": "Quem vai cuidar de outros precisa primeiro governar a si mesmo.",
+    "feedbackWrong": {
+      "a": "Ser sóbrio é equilíbrio; o controle de si vem no fim da lista.",
+      "c": "Hospitalidade é acolher os outros, não governar a si."
+    },
+    "hint": "Procure o fim da lista de qualidades.",
+    "learningObjective": "Sustentar com o texto o domínio próprio do líder.",
+    "evidence": [
+      "Tito 1:8"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-01-lideres-03",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 1:7 sustenta sobre quem lidera a igreja?",
+    "prompt": "Que leitura Tito 1:7 sustenta sobre quem lidera a igreja?",
+    "cue": "Que leitura Tito 1:7 sustenta sobre quem lidera a igreja?",
+    "verseRef": "Tito 1:7",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ganância é aceitável se houver resultados"
+      },
+      {
+        "id": "b",
+        "text": "Ensinar bem dispensa a vida em casa"
+      },
+      {
+        "id": "c",
+        "text": "O caráter vem antes do prestígio do cargo"
+      },
+      {
+        "id": "d",
+        "text": "O cargo torna a pessoa acima de correção"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "seja irrepreensível como despenseiro da casa de Deus",
+    "feedbackCorrect": "O bispo é despenseiro da casa de Deus: o serviço pede caráter, não prestígio.",
+    "feedbackWrong": {
+      "a": "O texto rejeita justamente a cobiça por ganho desonesto.",
+      "b": "A vida em casa faz parte do perfil desde Tito 1:6.",
+      "d": "Como despenseiro, ele presta contas; não está acima de correção."
+    },
+    "hint": "Veja como o texto chama quem cuida da casa de Deus.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre liderança.",
+    "evidence": [
+      "Tito 1:7"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-01-lideres-04",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica do ensino em Tito 1:9?",
+    "prompt": "Qual sequência revela a lógica do ensino em Tito 1:9?",
+    "cue": "Qual sequência revela a lógica do ensino em Tito 1:9?",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "options": [
+      {
+        "id": "a",
+        "text": "O líder se apega à palavra fiel"
+      },
+      {
+        "id": "b",
+        "text": "Ele exorta pela sã doutrina"
+      },
+      {
+        "id": "c",
+        "text": "Ele convence quem se opõe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mantendo-se apegado à palavra fiel",
+    "feedbackCorrect": "Primeiro firmeza na palavra, depois ensino ao povo e resposta a quem se opõe.",
+    "feedbackWrong": {
+      "default": "Comece pelo apego à palavra; exortar e convencer são o resultado."
+    },
+    "hint": "A firmeza vem antes das tarefas.",
+    "learningObjective": "Ver a ordem entre firmeza, ensino e correção.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-01-lideres-05",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 1:7, que palavra mostra o bispo cuidando do que é de Deus?",
+    "prompt": "Em Tito 1:7, que palavra mostra o bispo cuidando do que é de Deus?",
+    "cue": "Em Tito 1:7, que palavra mostra o bispo cuidando do que é de Deus?",
+    "verseRef": "Tito 1:7",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "template": "Porque é necessário que o bispo seja irrepreensível como ___ da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "options": [
+      {
+        "id": "a",
+        "text": "visitante"
+      },
+      {
+        "id": "b",
+        "text": "dono"
+      },
+      {
+        "id": "c",
+        "text": "despenseiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como despenseiro da casa de Deus",
+    "feedbackCorrect": "O bispo cuida da casa de Deus como quem administra o que pertence a outro.",
+    "feedbackWrong": {
+      "a": "Ele não é visita passageira; tem cuidado contínuo da casa.",
+      "b": "A casa é de Deus; o bispo não é dono dela."
+    },
+    "hint": "Ele cuida de algo que não é seu.",
+    "learningObjective": "Lembrar o termo que define o líder como cuidador da casa de Deus.",
+    "evidence": [
+      "Tito 1:7"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-01-lideres-06",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 1:9 a 2 Timóteo 4:2?",
+    "prompt": "O que liga Tito 1:9 a 2 Timóteo 4:2?",
+    "cue": "O que liga Tito 1:9 a 2 Timóteo 4:2?",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "passageA": {
+      "ref": "Tito 1:9",
+      "text": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem"
+    },
+    "passageB": {
+      "ref": "2 Timóteo 4:2",
+      "text": "Prega a palavra, insta a tempo e fora de tempo; corrige, repreende e exorta com toda a longanimidade e doutrina."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Corrigir só com castigos severos"
+      },
+      {
+        "id": "b",
+        "text": "Firmeza na palavra que corrige"
+      },
+      {
+        "id": "c",
+        "text": "Evitar ensinar quem discorda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "convencer os que se opõem",
+    "feedbackCorrect": "Nas duas cartas, a palavra pregada exorta e corrige: firmeza a serviço do povo.",
+    "feedbackWrong": {
+      "a": "A correção é com a palavra e ensino, não com castigos.",
+      "c": "Quem discorda é justamente quem deve ser convencido pela palavra."
+    },
+    "hint": "Veja o que a palavra faz com quem erra nos dois textos.",
+    "learningObjective": "Ligar o ensino de Tito ao encargo dado a Timóteo.",
+    "evidence": [
+      "Tito 1:9",
+      "2 Timóteo 4:2"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-02-graca-01",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 2:11, a graça de Deus se manifestou salvadora apenas para os líderes da igreja.",
+    "prompt": "Em Tito 2:11, a graça de Deus se manifestou salvadora apenas para os líderes da igreja.",
+    "cue": "Em Tito 2:11, a graça de Deus se manifestou salvadora apenas para os líderes da igreja.",
+    "verseRef": "Tito 2:11",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "salvadora a todos os homens",
+    "feedbackCorrect": "A graça se manifestou salvadora a todos os homens, não só a um grupo da igreja.",
+    "feedbackWrong": {
+      "true": "Releia Tito 2:11: a graça é salvadora a todos os homens."
+    },
+    "hint": "Veja o alcance da graça no versículo.",
+    "learningObjective": "Observar o alcance universal da graça anunciada.",
+    "evidence": [
+      "Tito 2:11"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-02-graca-02",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 2:11, toque quem a graça salvadora de Deus alcança.",
+    "prompt": "Em Tito 2:11, toque quem a graça salvadora de Deus alcança.",
+    "cue": "Em Tito 2:11, toque quem a graça salvadora de Deus alcança.",
+    "verseRef": "Tito 2:11",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça de Deus"
+      },
+      {
+        "id": "b",
+        "text": "se manifestou"
+      },
+      {
+        "id": "c",
+        "text": "todos os homens"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "salvadora a todos os homens",
+    "feedbackCorrect": "A graça de Deus se manifestou salvadora a todos os homens.",
+    "feedbackWrong": {
+      "a": "A graça é quem alcança; falta dizer quem é alcançado.",
+      "b": "Manifestar é o que a graça fez, não quem ela alcança."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Identificar quem a graça alcança.",
+    "evidence": [
+      "Tito 2:11"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-02-graca-03",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 2:12, a graça ensina a renunciar a quê?",
+    "prompt": "Segundo Tito 2:12, a graça ensina a renunciar a quê?",
+    "cue": "Segundo Tito 2:12, a graça ensina a renunciar a quê?",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "À sensatez e à justiça"
+      },
+      {
+        "id": "b",
+        "text": "À piedade neste século"
+      },
+      {
+        "id": "c",
+        "text": "À impiedade e às paixões mundanas"
+      },
+      {
+        "id": "d",
+        "text": "À esperança em Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "renunciar à impiedade e às paixões mundanas",
+    "feedbackCorrect": "A graça ensina a dizer não à impiedade e às paixões mundanas.",
+    "feedbackWrong": {
+      "a": "Sensatez e justiça são o novo modo de viver, não o que se renuncia.",
+      "b": "Piedade é o alvo da nova vida, não o que se deixa.",
+      "d": "A esperança em Cristo é aguardada, não renunciada."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar o que a graça ensina a deixar.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-02-graca-04",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 2:12 na ordem do texto.",
+    "prompt": "Monte Tito 2:12 na ordem do texto.",
+    "cue": "Monte Tito 2:12 na ordem do texto.",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensinando-nos a renunciar à impiedade e às paixões mundanas"
+      },
+      {
+        "id": "b",
+        "text": "para que vivamos, neste presente século"
+      },
+      {
+        "id": "c",
+        "text": "de maneira sensata, justa e piedosa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ensinando-nos a renunciar à impiedade",
+    "feedbackCorrect": "Primeiro renunciar ao mal, depois o novo modo de viver neste século.",
+    "feedbackWrong": {
+      "default": "Comece pelo que se renuncia; o modo de viver fecha o versículo."
+    },
+    "hint": "O versículo começa com o ensino da graça.",
+    "learningObjective": "Reconhecer a sequência de Tito 2:12.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-02-graca-05",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 2:11, como a graça de Deus se manifestou a todos os homens?",
+    "prompt": "Em Tito 2:11, como a graça de Deus se manifestou a todos os homens?",
+    "cue": "Em Tito 2:11, como a graça de Deus se manifestou a todos os homens?",
+    "verseRef": "Tito 2:11",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens.",
+    "template": "Pois a graça de Deus se manifestou ___ a todos os homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "distante"
+      },
+      {
+        "id": "b",
+        "text": "salvadora"
+      },
+      {
+        "id": "c",
+        "text": "secreta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se manifestou salvadora a todos os homens",
+    "feedbackCorrect": "A graça não ficou escondida: ela se manifestou trazendo salvação a todos.",
+    "feedbackWrong": {
+      "a": "Distante é o contrário de manifestada diante de todos.",
+      "c": "O texto diz que a graça se manifestou, não que ficou secreta."
+    },
+    "hint": "Olhe a palavra logo depois do verbo manifestou.",
+    "learningObjective": "Lembrar como a graça se manifestou.",
+    "evidence": [
+      "Tito 2:11"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-02-graca-06",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 2:14 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:14 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:14 comunica que se liga a este contexto?",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "passageA": {
+      "ref": "Tito 2:14",
+      "text": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo formou um povo marcado pelo zelo em fazer o bem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo fervoroso em boas obras"
+      },
+      {
+        "id": "b",
+        "text": "Povo parado sem fazer nada"
+      },
+      {
+        "id": "c",
+        "text": "Povo salvo pelas próprias obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "fervoroso em boas obras",
+    "feedbackCorrect": "O povo purificado por Cristo é reconhecido pelo fervor em boas obras.",
+    "feedbackWrong": {
+      "b": "O povo de Cristo é fervoroso, não parado.",
+      "c": "Cristo se entregou pelo povo; as obras são fruto, não preço."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Ligar Tito 2:14 ao zelo do povo de Cristo.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-02-graca-01",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 2:12, a graça ensina a dizer não à impiedade para viver de modo sensato, justo e piedoso.",
+    "prompt": "Em Tito 2:12, a graça ensina a dizer não à impiedade para viver de modo sensato, justo e piedoso.",
+    "cue": "Em Tito 2:12, a graça ensina a dizer não à impiedade para viver de modo sensato, justo e piedoso.",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que vivamos, neste presente século, de maneira sensata, justa e piedosa",
+    "feedbackCorrect": "Dizer não ao mal e viver de modo novo são os dois lados do ensino da graça.",
+    "feedbackWrong": {
+      "false": "Releia Tito 2:12: renunciar e viver de modo novo vêm juntos."
+    },
+    "hint": "Veja os dois movimentos do versículo.",
+    "learningObjective": "Compreender o duplo ensino da graça.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-02-graca-02",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 2:12, toque a palavra que liga o renunciar ao novo modo de viver.",
+    "prompt": "Em Tito 2:12, toque a palavra que liga o renunciar ao novo modo de viver.",
+    "cue": "Em Tito 2:12, toque a palavra que liga o renunciar ao novo modo de viver.",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensinando-nos"
+      },
+      {
+        "id": "b",
+        "text": "para"
+      },
+      {
+        "id": "c",
+        "text": "neste"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que vivamos",
+    "feedbackCorrect": "Renunciar tem um alvo: viver neste século de maneira sensata, justa e piedosa.",
+    "feedbackWrong": {
+      "a": "Ensinando descreve o que a graça faz, não a ligação de alvo.",
+      "c": "Neste indica o tempo da nova vida, não o alvo dela."
+    },
+    "hint": "É uma palavra curta antes de vivamos.",
+    "learningObjective": "Reconhecer o marcador de propósito em Tito 2:12.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-02-graca-03",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 2:12 se relaciona com Tito 2:11?",
+    "prompt": "Como Tito 2:12 se relaciona com Tito 2:11?",
+    "cue": "Como Tito 2:12 se relaciona com Tito 2:11?",
+    "verseRef": "Tito 2:11–12",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens. ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A nova vida depende só do esforço humano"
+      },
+      {
+        "id": "b",
+        "text": "Depois de salvar, a graça deixa cada um sozinho"
+      },
+      {
+        "id": "c",
+        "text": "A graça que salva também forma a vida diária"
+      },
+      {
+        "id": "d",
+        "text": "A salvação dispensa qualquer mudança de vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ensinando-nos a renunciar à impiedade",
+    "feedbackCorrect": "A mesma graça que se manifestou para salvar segue ensinando a vida nova.",
+    "feedbackWrong": {
+      "a": "Quem ensina é a graça; o esforço humano sozinho não é o motor.",
+      "b": "A graça continua presente como quem ensina, não abandona.",
+      "d": "O texto liga salvação e mudança: renunciar e viver de modo novo."
+    },
+    "hint": "Veja o que a graça continua fazendo no segundo versículo.",
+    "learningObjective": "Relacionar a graça que salva com a graça que ensina.",
+    "evidence": [
+      "Tito 2:11–12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-02-graca-04",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em Tito 2:11–12?",
+    "prompt": "Como avança o ensino em Tito 2:11–12?",
+    "cue": "Como avança o ensino em Tito 2:11–12?",
+    "verseRef": "Tito 2:11–12",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens. ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça de Deus se manifesta para salvar"
+      },
+      {
+        "id": "b",
+        "text": "Ela ensina a renunciar à impiedade"
+      },
+      {
+        "id": "c",
+        "text": "O povo vive de modo justo e piedoso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a graça de Deus se manifestou salvadora",
+    "feedbackCorrect": "A graça aparece para salvar, ensina a deixar o mal e forma a nova vida.",
+    "feedbackWrong": {
+      "default": "Comece pela manifestação da graça; a nova vida é o ponto de chegada."
+    },
+    "hint": "A salvação vem antes do ensino.",
+    "learningObjective": "Compreender o movimento da graça que salva e ensina.",
+    "evidence": [
+      "Tito 2:11–12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-02-graca-05",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 2:12, o que a graça ensina a fazer diante da impiedade?",
+    "prompt": "Em Tito 2:12, o que a graça ensina a fazer diante da impiedade?",
+    "cue": "Em Tito 2:12, o que a graça ensina a fazer diante da impiedade?",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "template": "ensinando-nos a ___ à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "praticar"
+      },
+      {
+        "id": "b",
+        "text": "esconder"
+      },
+      {
+        "id": "c",
+        "text": "renunciar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ensinando-nos a renunciar à impiedade",
+    "feedbackCorrect": "A graça não negocia com a impiedade: ela ensina a abrir mão dela.",
+    "feedbackWrong": {
+      "a": "Praticar é o contrário do que a graça ensina diante do mal.",
+      "b": "Esconder mantém o mal; a graça ensina a deixá-lo."
+    },
+    "hint": "Procure o verbo ligado à impiedade.",
+    "learningObjective": "Compreender a resposta ensinada diante da impiedade.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-02-graca-06",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 2:11 a Efésios 2:8?",
+    "prompt": "O que liga Tito 2:11 a Efésios 2:8?",
+    "cue": "O que liga Tito 2:11 a Efésios 2:8?",
+    "verseRef": "Tito 2:11",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens.",
+    "passageA": {
+      "ref": "Tito 2:11",
+      "text": "Pois a graça de Deus se manifestou salvadora a todos os homens."
+    },
+    "passageB": {
+      "ref": "Efésios 2:8",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação pela graça de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Salvação comprada por obras"
+      },
+      {
+        "id": "c",
+        "text": "Graça só para alguns povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a graça de Deus se manifestou salvadora",
+    "feedbackCorrect": "Nos dois textos, a salvação vem pela graça de Deus, como presente dele.",
+    "feedbackWrong": {
+      "b": "Efésios diz que a salvação não vem das obras.",
+      "c": "Tito fala da graça a todos os homens, não a poucos."
+    },
+    "hint": "Compare de onde vem a salvação nos dois textos.",
+    "learningObjective": "Relacionar a salvação pela graça em Tito e Efésios.",
+    "evidence": [
+      "Tito 2:11",
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-02-graca-01",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tito 2:14, as boas obras do povo são o preço pago para Cristo se entregar por ele.",
+    "prompt": "Em Tito 2:14, as boas obras do povo são o preço pago para Cristo se entregar por ele.",
+    "cue": "Em Tito 2:14, as boas obras do povo são o preço pago para Cristo se entregar por ele.",
+    "verseRef": "Tito 2:13–14",
+    "passageText": "Aguardando a gloriosa esperança e a manifestação da glória do nosso grande Deus e Salvador, Cristo Jesus, Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ele se entregou por nós",
+    "feedbackCorrect": "Cristo se entregou primeiro; as boas obras marcam o povo já purificado por ele.",
+    "feedbackWrong": {
+      "true": "Releia a ordem de Tito 2:14: ele se entregou para purificar o povo."
+    },
+    "hint": "Veja o que vem primeiro no versículo.",
+    "learningObjective": "Interpretar as boas obras como fruto, não como preço.",
+    "evidence": [
+      "Tito 2:13–14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-02-graca-02",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 2:13, toque quem o povo aguarda na manifestação da glória.",
+    "prompt": "Em Tito 2:13, toque quem o povo aguarda na manifestação da glória.",
+    "cue": "Em Tito 2:13, toque quem o povo aguarda na manifestação da glória.",
+    "verseRef": "Tito 2:13",
+    "passageText": "Aguardando a gloriosa esperança e a manifestação da glória do nosso grande Deus e Salvador, Cristo Jesus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "gloriosa esperança"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "grande Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "do nosso grande Deus e Salvador, Cristo Jesus",
+    "feedbackCorrect": "A esperança do povo tem um nome: a manifestação de Cristo Jesus em glória.",
+    "feedbackWrong": {
+      "a": "A gloriosa esperança é o que se aguarda; a pessoa vem no fim.",
+      "c": "Grande Deus descreve quem Cristo é; o nome fecha o versículo."
+    },
+    "hint": "Procure o nome no fim do versículo.",
+    "learningObjective": "Sustentar com o texto quem o povo aguarda.",
+    "evidence": [
+      "Tito 2:13"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-02-graca-03",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 2:13–14 sustenta sobre esperar Cristo?",
+    "prompt": "Que leitura Tito 2:13–14 sustenta sobre esperar Cristo?",
+    "cue": "Que leitura Tito 2:13–14 sustenta sobre esperar Cristo?",
+    "verseRef": "Tito 2:13–14",
+    "passageText": "Aguardando a gloriosa esperança e a manifestação da glória do nosso grande Deus e Salvador, Cristo Jesus, Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar Cristo dispensa a vida no presente"
+      },
+      {
+        "id": "b",
+        "text": "Esperar Cristo forma um povo puro e ativo no bem"
+      },
+      {
+        "id": "c",
+        "text": "A esperança vale só para líderes da igreja"
+      },
+      {
+        "id": "d",
+        "text": "Cristo purifica um povo sem qualquer fruto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "purificar para si mesmo um povo exclusivo",
+    "feedbackCorrect": "Quem aguarda Cristo vive como povo dele: purificado e fervoroso em boas obras.",
+    "feedbackWrong": {
+      "a": "A espera forma a vida presente, como mostra Tito 2:12.",
+      "c": "A graça é a todos os homens; a esperança é do povo inteiro.",
+      "d": "O povo purificado é fervoroso em boas obras, não sem fruto."
+    },
+    "hint": "Ligue a espera do verso 13 ao povo do verso 14.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a espera.",
+    "evidence": [
+      "Tito 2:13–14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-02-graca-04",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica de Tito 2:14?",
+    "prompt": "Qual sequência revela a lógica de Tito 2:14?",
+    "cue": "Qual sequência revela a lógica de Tito 2:14?",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo se entregou pelo seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Ele redime e purifica esse povo"
+      },
+      {
+        "id": "c",
+        "text": "O povo se dedica às boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele se entregou por nós",
+    "feedbackCorrect": "A entrega de Cristo vem primeiro; redenção, pureza e boas obras são o resultado.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega de Cristo; as boas obras fecham a sequência."
+    },
+    "hint": "As boas obras são o ponto de chegada.",
+    "learningObjective": "Ver a ordem entre entrega de Cristo e boas obras.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-02-graca-05",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 2:14, que verbo mostra Cristo libertando o povo da iniquidade?",
+    "prompt": "Em Tito 2:14, que verbo mostra Cristo libertando o povo da iniquidade?",
+    "cue": "Em Tito 2:14, que verbo mostra Cristo libertando o povo da iniquidade?",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "template": "Ele se entregou por nós, a fim de nos ___ de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconder"
+      },
+      {
+        "id": "b",
+        "text": "devolver"
+      },
+      {
+        "id": "c",
+        "text": "redimir"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a fim de nos redimir de toda a iniquidade",
+    "feedbackCorrect": "Cristo se entregou para libertar o povo de toda a iniquidade.",
+    "feedbackWrong": {
+      "a": "Ele não esconde a iniquidade; ele liberta o povo dela.",
+      "b": "O texto não fala de devolver, mas de resgatar da iniquidade."
+    },
+    "hint": "Procure o alvo da entrega de Cristo.",
+    "learningObjective": "Lembrar o termo que mostra a libertação feita por Cristo.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-02-graca-06",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 2:14 a 1 Pedro 2:9?",
+    "prompt": "O que liga Tito 2:14 a 1 Pedro 2:9?",
+    "cue": "O que liga Tito 2:14 a 1 Pedro 2:9?",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "passageA": {
+      "ref": "Tito 2:14",
+      "text": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras."
+    },
+    "passageB": {
+      "ref": "1 Pedro 2:9",
+      "text": "Mas vocês são a linhagem eleita, o sacerdócio real, a nação santa, o povo de propriedade exclusiva de Deus, para que proclamem as virtudes daquele que os chamou das trevas para a sua maravilhosa luz;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um povo que pertence a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cada pessoa por si só"
+      },
+      {
+        "id": "c",
+        "text": "Um povo sem chamado claro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "purificar para si mesmo um povo exclusivo",
+    "feedbackCorrect": "Nos dois textos, Deus forma um povo que é dele, chamado para viver para ele.",
+    "feedbackWrong": {
+      "b": "A linguagem é de povo reunido, não de cada um por si.",
+      "c": "Os dois textos dão ao povo um chamado claro de Deus."
+    },
+    "hint": "Veja a quem o povo pertence nos dois textos.",
+    "learningObjective": "Ligar o povo purificado de Tito ao povo de Deus em Pedro.",
+    "evidence": [
+      "Tito 2:14",
+      "1 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-01",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 1:6, o ancião deve ser marido de uma só mulher e ter filhos crentes.",
+    "prompt": "Em Tito 1:6, o ancião deve ser marido de uma só mulher e ter filhos crentes.",
+    "cue": "Em Tito 1:6, o ancião deve ser marido de uma só mulher e ter filhos crentes.",
+    "verseRef": "Tito 1:6",
+    "passageText": "Aquele que for irrepreensível, marido de uma só mulher, que tenha filhos crentes que não sejam acusados de dissolução nem sejam insubordinados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "marido de uma só mulher, que tenha filhos crentes",
+    "feedbackCorrect": "A vida em casa faz parte do perfil de quem vai liderar a igreja.",
+    "feedbackWrong": {
+      "false": "Releia Tito 1:6: família e fé aparecem no perfil do ancião."
+    },
+    "hint": "Olhe a família de quem lidera.",
+    "learningObjective": "Revisar o perfil familiar do ancião.",
+    "evidence": [
+      "Tito 1:6"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-02",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 1:5, toque o lugar onde Tito foi deixado por Paulo.",
+    "prompt": "Em Tito 1:5, toque o lugar onde Tito foi deixado por Paulo.",
+    "cue": "Em Tito 1:5, toque o lugar onde Tito foi deixado por Paulo.",
+    "verseRef": "Tito 1:5",
+    "passageText": "Por isso, te deixei em Creta, para que pusesses em ordem o que ainda resta e, em cada cidade, constituísses anciãos, conforme já te prescrevi",
+    "options": [
+      {
+        "id": "a",
+        "text": "cada cidade"
+      },
+      {
+        "id": "b",
+        "text": "ordem"
+      },
+      {
+        "id": "c",
+        "text": "Creta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "te deixei em Creta",
+    "feedbackCorrect": "Paulo deixou Tito na ilha de Creta para organizar as igrejas.",
+    "feedbackWrong": {
+      "a": "Cada cidade é onde anciãos serão constituídos, não a ilha.",
+      "b": "Ordem é a tarefa de Tito, não o lugar."
+    },
+    "hint": "Procure o nome do lugar no começo.",
+    "learningObjective": "Revisar onde Tito ficou para organizar as igrejas.",
+    "evidence": [
+      "Tito 1:5"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-03",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 2:11, como a graça de Deus se manifestou?",
+    "prompt": "Segundo Tito 2:11, como a graça de Deus se manifestou?",
+    "cue": "Segundo Tito 2:11, como a graça de Deus se manifestou?",
+    "verseRef": "Tito 2:11",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvadora a todos os homens"
+      },
+      {
+        "id": "b",
+        "text": "Escondida até o fim dos tempos"
+      },
+      {
+        "id": "c",
+        "text": "Só para anciãos de Creta"
+      },
+      {
+        "id": "d",
+        "text": "Sem relação com a vida diária"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se manifestou salvadora a todos os homens",
+    "feedbackCorrect": "A graça se manifestou trazendo salvação a todos os homens.",
+    "feedbackWrong": {
+      "b": "O texto diz que a graça se manifestou, não que se escondeu.",
+      "c": "O alcance é todos os homens, não só anciãos.",
+      "d": "O verso seguinte mostra a graça ensinando a vida diária."
+    },
+    "hint": "Leia o versículo inteiro de uma vez.",
+    "learningObjective": "Revisar a manifestação da graça salvadora.",
+    "evidence": [
+      "Tito 2:11"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-04",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 1:8 na ordem do texto.",
+    "prompt": "Monte Tito 1:8 na ordem do texto.",
+    "cue": "Monte Tito 1:8 na ordem do texto.",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "options": [
+      {
+        "id": "a",
+        "text": "É hospitaleiro, ama o que é bom"
+      },
+      {
+        "id": "b",
+        "text": "é sóbrio, justo, piedoso"
+      },
+      {
+        "id": "c",
+        "text": "e tem domínio de si"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "É hospitaleiro, ama o que é bom",
+    "feedbackCorrect": "A lista vai do acolhimento aos outros até o governo de si mesmo.",
+    "feedbackWrong": {
+      "default": "Comece por quem acolhe; o domínio de si fecha o versículo."
+    },
+    "hint": "O domínio de si é o fim da lista.",
+    "learningObjective": "Revisar a sequência das qualidades do líder.",
+    "evidence": [
+      "Tito 1:8"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-05",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 1:9, como é a palavra à qual o líder se apega?",
+    "prompt": "Em Tito 1:9, como é a palavra à qual o líder se apega?",
+    "cue": "Em Tito 1:9, como é a palavra à qual o líder se apega?",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "template": "Mantendo-se apegado à palavra ___, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "options": [
+      {
+        "id": "a",
+        "text": "fiel"
+      },
+      {
+        "id": "b",
+        "text": "nova"
+      },
+      {
+        "id": "c",
+        "text": "comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "apegado à palavra fiel",
+    "feedbackCorrect": "O líder se apega à mensagem confiável, recebida segundo a doutrina.",
+    "feedbackWrong": {
+      "b": "Não é novidade inventada; é a palavra segundo a doutrina.",
+      "c": "A palavra não é comum; ela é digna de confiança."
+    },
+    "hint": "Veja o adjetivo colado à palavra.",
+    "learningObjective": "Revisar a confiança da palavra ensinada.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-06",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:8 comunica que se liga a este contexto?",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "passageA": {
+      "ref": "Tito 1:8",
+      "text": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A vida do líder em casa e na igreja precisa mostrar o mesmo caráter."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida dupla tolerada sempre"
+      },
+      {
+        "id": "b",
+        "text": "Fama acima do caráter"
+      },
+      {
+        "id": "c",
+        "text": "Caráter íntegro em tudo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso",
+    "feedbackCorrect": "Hospitalidade, justiça e domínio de si mostram um caráter só, em todo lugar.",
+    "feedbackWrong": {
+      "a": "A lista pede uma vida íntegra, não uma vida dupla.",
+      "b": "O texto não busca fama; descreve qualidades reais de caráter."
+    },
+    "hint": "Veja o conjunto das qualidades listadas.",
+    "learningObjective": "Ligar as qualidades do líder à integridade de vida.",
+    "evidence": [
+      "Tito 1:8"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-07",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 2:13, toque o que o povo aguarda junto com a manifestação da glória.",
+    "prompt": "Em Tito 2:13, toque o que o povo aguarda junto com a manifestação da glória.",
+    "cue": "Em Tito 2:13, toque o que o povo aguarda junto com a manifestação da glória.",
+    "verseRef": "Tito 2:13",
+    "passageText": "Aguardando a gloriosa esperança e a manifestação da glória do nosso grande Deus e Salvador, Cristo Jesus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "gloriosa esperança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Aguardando a gloriosa esperança",
+    "feedbackCorrect": "O povo vive aguardando a esperança gloriosa da vinda de Cristo.",
+    "feedbackWrong": {
+      "a": "Grande Deus descreve Cristo; não é o nome da espera.",
+      "b": "Cristo Jesus é quem se manifestará; a espera recebe outro nome."
+    },
+    "hint": "Procure o começo do versículo.",
+    "learningObjective": "Revisar a esperança aguardada pelo povo.",
+    "evidence": [
+      "Tito 2:13"
+    ]
+  },
+  {
+    "id": "tito-sem-tt-03-desafio-08",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 2:14 na ordem do texto.",
+    "prompt": "Monte Tito 2:14 na ordem do texto.",
+    "cue": "Monte Tito 2:14 na ordem do texto.",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele se entregou por nós"
+      },
+      {
+        "id": "b",
+        "text": "a fim de nos redimir de toda a iniquidade"
+      },
+      {
+        "id": "c",
+        "text": "e purificar para si mesmo um povo exclusivo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele se entregou por nós",
+    "feedbackCorrect": "A entrega de Cristo vem primeiro; redenção e purificação são o alvo dela.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega de Cristo; o povo purificado vem depois."
+    },
+    "hint": "O versículo começa com o que ele fez por nós.",
+    "learningObjective": "Revisar a sequência da obra de Cristo em Tito 2:14.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-01",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 2:12, viver de modo piedoso neste século só começa depois que a esperança se cumprir.",
+    "prompt": "Em Tito 2:12, viver de modo piedoso neste século só começa depois que a esperança se cumprir.",
+    "cue": "Em Tito 2:12, viver de modo piedoso neste século só começa depois que a esperança se cumprir.",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que vivamos, neste presente século",
+    "feedbackCorrect": "A vida nova é para este presente século, enquanto a esperança é aguardada.",
+    "feedbackWrong": {
+      "true": "Releia Tito 2:12: viver de modo piedoso é para o presente século."
+    },
+    "hint": "Veja quando a nova vida acontece.",
+    "learningObjective": "Compreender que a nova vida é vivida no presente.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-02",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 2:10, toque a expressão que mostra o propósito da fidelidade dos servos.",
+    "prompt": "Em Tito 2:10, toque a expressão que mostra o propósito da fidelidade dos servos.",
+    "cue": "Em Tito 2:10, toque a expressão que mostra o propósito da fidelidade dos servos.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a fim"
+      },
+      {
+        "id": "b",
+        "text": "não roubando"
+      },
+      {
+        "id": "c",
+        "text": "toda a fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a fim de que em tudo possam embelezar",
+    "feedbackCorrect": "A fidelidade no dia a dia tem um alvo: tornar bela a doutrina de Deus.",
+    "feedbackWrong": {
+      "b": "Não roubar é parte da conduta, não o marcador do alvo.",
+      "c": "A fidelidade é o meio; o alvo vem na expressão seguinte."
+    },
+    "hint": "Procure a expressão antes de embelezar.",
+    "learningObjective": "Reconhecer o marcador de propósito em Tito 2:10.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-03",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 1:8 continua a lista iniciada em Tito 1:7?",
+    "prompt": "Como Tito 1:8 continua a lista iniciada em Tito 1:7?",
+    "cue": "Como Tito 1:8 continua a lista iniciada em Tito 1:7?",
+    "verseRef": "Tito 1:7–8",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância. É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abandona o tema do caráter do bispo"
+      },
+      {
+        "id": "b",
+        "text": "Troca proibições por qualidades a cultivar"
+      },
+      {
+        "id": "c",
+        "text": "Passa a falar só dos filhos do bispo"
+      },
+      {
+        "id": "d",
+        "text": "Repete as mesmas proibições com outras palavras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "É hospitaleiro, ama o que é bom",
+    "feedbackCorrect": "Depois do que evitar, Paulo mostra o que cultivar: o outro lado do caráter.",
+    "feedbackWrong": {
+      "a": "O tema continua o mesmo: o caráter de quem lidera.",
+      "c": "Os filhos aparecem em 1:6; aqui o foco é o próprio bispo.",
+      "d": "Não é repetição: são qualidades positivas, não proibições."
+    },
+    "hint": "Compare o tom dos dois versículos.",
+    "learningObjective": "Relacionar os dois lados do perfil do líder.",
+    "evidence": [
+      "Tito 1:7–8"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-04",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Tito 2:11–12?",
+    "prompt": "Como avança o argumento em Tito 2:11–12?",
+    "cue": "Como avança o argumento em Tito 2:11–12?",
+    "verseRef": "Tito 2:11–12",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens. ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça aparece para salvar a todos"
+      },
+      {
+        "id": "b",
+        "text": "O ensino dela afasta da impiedade"
+      },
+      {
+        "id": "c",
+        "text": "A vida diária ganha justiça e piedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a graça de Deus se manifestou salvadora",
+    "feedbackCorrect": "Salvar, ensinar a deixar o mal e formar a vida nova: esse é o caminho do texto.",
+    "feedbackWrong": {
+      "default": "Comece pela graça que aparece; a vida nova é a chegada."
+    },
+    "hint": "A graça aparece antes de ensinar.",
+    "learningObjective": "Compreender o avanço do argumento da graça.",
+    "evidence": [
+      "Tito 2:11–12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-05",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 2:10, que efeito a fidelidade dos servos tem sobre a doutrina?",
+    "prompt": "Em Tito 2:10, que efeito a fidelidade dos servos tem sobre a doutrina?",
+    "cue": "Em Tito 2:10, que efeito a fidelidade dos servos tem sobre a doutrina?",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "template": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam ___ a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconder"
+      },
+      {
+        "id": "b",
+        "text": "vender"
+      },
+      {
+        "id": "c",
+        "text": "embelezar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "possam embelezar a doutrina de Deus, nosso Salvador",
+    "feedbackCorrect": "A conduta fiel torna o ensino de Deus belo diante de quem observa.",
+    "feedbackWrong": {
+      "a": "A fidelidade mostra a doutrina, não a esconde.",
+      "b": "A doutrina não é vendida; ela é enfeitada pela vida fiel."
+    },
+    "hint": "Procure o verbo ligado à doutrina de Deus.",
+    "learningObjective": "Compreender o efeito da vida fiel sobre o ensino.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-06",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 1:8 a 1 Timóteo 3:2?",
+    "prompt": "O que liga Tito 1:8 a 1 Timóteo 3:2?",
+    "cue": "O que liga Tito 1:8 a 1 Timóteo 3:2?",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "passageA": {
+      "ref": "Tito 1:8",
+      "text": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;"
+    },
+    "passageB": {
+      "ref": "1 Timóteo 3:2",
+      "text": "É necessário, portanto, que o bispo seja irrepreensível, esposo de uma só mulher, moderado, sensato, respeitável, hospitaleiro e apto para ensinar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Liderança sem olhar o caráter"
+      },
+      {
+        "id": "b",
+        "text": "Líder hospitaleiro e íntegro"
+      },
+      {
+        "id": "c",
+        "text": "Ensino separado da vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "É hospitaleiro, ama o que é bom",
+    "feedbackCorrect": "Nas duas cartas, quem lidera é irrepreensível e hospitaleiro.",
+    "feedbackWrong": {
+      "a": "Os dois textos olham justamente para o caráter.",
+      "c": "Ensino e vida andam juntos nas cartas de Paulo."
+    },
+    "hint": "Compare a qualidade repetida nos dois textos.",
+    "learningObjective": "Relacionar o perfil do líder nas cartas de Paulo.",
+    "evidence": [
+      "Tito 1:8",
+      "1 Timóteo 3:2"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-07",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 2:12, toque a ação ensinada diante das paixões mundanas.",
+    "prompt": "Em Tito 2:12, toque a ação ensinada diante das paixões mundanas.",
+    "cue": "Em Tito 2:12, toque a ação ensinada diante das paixões mundanas.",
+    "verseRef": "Tito 2:12",
+    "passageText": "ensinando-nos a renunciar à impiedade e às paixões mundanas, para que vivamos, neste presente século, de maneira sensata, justa e piedosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "renunciar"
+      },
+      {
+        "id": "b",
+        "text": "presente século"
+      },
+      {
+        "id": "c",
+        "text": "paixões mundanas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ensinando-nos a renunciar à impiedade",
+    "feedbackCorrect": "A graça ensina uma resposta ativa: abrir mão da impiedade e das paixões.",
+    "feedbackWrong": {
+      "b": "O presente século é o tempo da nova vida, não a ação.",
+      "c": "As paixões são o que se deixa, não a ação ensinada."
+    },
+    "hint": "Procure o verbo do ensino da graça.",
+    "learningObjective": "Revisar a ação ensinada pela graça.",
+    "evidence": [
+      "Tito 2:12"
+    ]
+  },
+  {
+    "id": "tito-cam-tt-03-desafio-08",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Tito 1:5–6?",
+    "prompt": "Como se encadeiam os passos de Tito 1:5–6?",
+    "cue": "Como se encadeiam os passos de Tito 1:5–6?",
+    "verseRef": "Tito 1:5–6",
+    "passageText": "Por isso, te deixei em Creta, para que pusesses em ordem o que ainda resta e, em cada cidade, constituísses anciãos, conforme já te prescrevi Aquele que for irrepreensível, marido de uma só mulher, que tenha filhos crentes que não sejam acusados de dissolução nem sejam insubordinados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tito fica em Creta para pôr ordem"
+      },
+      {
+        "id": "b",
+        "text": "Anciãos são constituídos nas cidades"
+      },
+      {
+        "id": "c",
+        "text": "O caráter dos anciãos é descrito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "te deixei em Creta, para que pusesses em ordem",
+    "feedbackCorrect": "A missão em Creta gera anciãos nas cidades, descritos pelo caráter.",
+    "feedbackWrong": {
+      "default": "Comece pela missão de Tito; o caráter fecha a sequência."
+    },
+    "hint": "A missão vem antes dos anciãos.",
+    "learningObjective": "Compreender o encadeamento da missão em Creta.",
+    "evidence": [
+      "Tito 1:5–6"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-01",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tito 2:14, Cristo se entrega primeiro e o povo purificado responde com fervor em boas obras.",
+    "prompt": "Em Tito 2:14, Cristo se entrega primeiro e o povo purificado responde com fervor em boas obras.",
+    "cue": "Em Tito 2:14, Cristo se entrega primeiro e o povo purificado responde com fervor em boas obras.",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Ele se entregou por nós",
+    "feedbackCorrect": "A entrega de Cristo é a fonte; o fervor em boas obras é a resposta do povo.",
+    "feedbackWrong": {
+      "false": "Releia a ordem de Tito 2:14: ele se entregou para purificar o povo."
+    },
+    "hint": "Veja a ordem dos fatos no versículo.",
+    "learningObjective": "Interpretar as boas obras como resposta à obra de Cristo.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-02",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 2:14, toque como o texto chama o povo que Cristo purifica para si.",
+    "prompt": "Em Tito 2:14, toque como o texto chama o povo que Cristo purifica para si.",
+    "cue": "Em Tito 2:14, toque como o texto chama o povo que Cristo purifica para si.",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "povo exclusivo"
+      },
+      {
+        "id": "b",
+        "text": "se entregou"
+      },
+      {
+        "id": "c",
+        "text": "boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "um povo exclusivo, fervoroso em boas obras",
+    "feedbackCorrect": "Cristo purifica para si um povo que lhe pertence de modo especial.",
+    "feedbackWrong": {
+      "b": "Entregar-se é o que Cristo fez, não o nome do povo.",
+      "c": "Boas obras marcam o povo; o nome dele vem antes."
+    },
+    "hint": "Procure o nome logo depois de purificar.",
+    "learningObjective": "Sustentar com o texto a identidade do povo de Cristo.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-03",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 1:9 sustenta sobre o ensino na igreja?",
+    "prompt": "Que leitura Tito 1:9 sustenta sobre o ensino na igreja?",
+    "cue": "Que leitura Tito 1:9 sustenta sobre o ensino na igreja?",
+    "verseRef": "Tito 1:9",
+    "passageText": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinar dispensa apego à palavra fiel"
+      },
+      {
+        "id": "b",
+        "text": "Quem se opõe nunca deve ser respondido"
+      },
+      {
+        "id": "c",
+        "text": "A sã doutrina exorta e corrige o erro"
+      },
+      {
+        "id": "d",
+        "text": "Doutrina importa sem olhar a vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tanto para exortar pela sã doutrina como para convencer os que se opõem",
+    "feedbackCorrect": "Apegado à palavra, o ensino anima o povo e responde a quem se opõe.",
+    "feedbackWrong": {
+      "a": "O apego à palavra é justamente a base do ensino.",
+      "b": "Quem se opõe deve ser convencido pela palavra, não ignorado.",
+      "d": "Em Tito 1, doutrina e vida do líder andam sempre juntas."
+    },
+    "hint": "Veja as duas tarefas de quem se apega à palavra.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o ensino.",
+    "evidence": [
+      "Tito 1:9"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-04",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica de Tito 2:14?",
+    "prompt": "Qual sequência revela a lógica de Tito 2:14?",
+    "cue": "Qual sequência revela a lógica de Tito 2:14?",
+    "verseRef": "Tito 2:14",
+    "passageText": "Ele se entregou por nós, a fim de nos redimir de toda a iniquidade e purificar para si mesmo um povo exclusivo, fervoroso em boas obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo se entrega pelo povo"
+      },
+      {
+        "id": "b",
+        "text": "Ele purifica um povo para si"
+      },
+      {
+        "id": "c",
+        "text": "Esse povo arde em boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele se entregou por nós",
+    "feedbackCorrect": "Entrega, purificação e fervor no bem: as obras nascem da obra de Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega de Cristo; o fervor do povo é a chegada."
+    },
+    "hint": "O fervor do povo é o último passo.",
+    "learningObjective": "Ver a cadeia entre obra de Cristo e vida do povo.",
+    "evidence": [
+      "Tito 2:14"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-05",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 1:7, que marca resume a vida do bispo diante da igreja?",
+    "prompt": "Em Tito 1:7, que marca resume a vida do bispo diante da igreja?",
+    "cue": "Em Tito 1:7, que marca resume a vida do bispo diante da igreja?",
+    "verseRef": "Tito 1:7",
+    "passageText": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "template": "Porque é necessário que o bispo seja ___ como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irrepreensível"
+      },
+      {
+        "id": "b",
+        "text": "irascível"
+      },
+      {
+        "id": "c",
+        "text": "arrogante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é necessário que o bispo seja irrepreensível",
+    "feedbackCorrect": "A marca que resume o bispo é uma vida sem motivo justo de acusação.",
+    "feedbackWrong": {
+      "b": "Ser irascível também está na lista do que evitar.",
+      "c": "Arrogância é defeito que o texto manda evitar no bispo."
+    },
+    "hint": "É a marca pedida logo depois de bispo seja.",
+    "learningObjective": "Lembrar a marca central do líder em Tito 1:7.",
+    "evidence": [
+      "Tito 1:7"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-06",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 2:11 a Efésios 2:8?",
+    "prompt": "O que liga Tito 2:11 a Efésios 2:8?",
+    "cue": "O que liga Tito 2:11 a Efésios 2:8?",
+    "verseRef": "Tito 2:11",
+    "passageText": "Pois a graça de Deus se manifestou salvadora a todos os homens.",
+    "passageA": {
+      "ref": "Tito 2:11",
+      "text": "Pois a graça de Deus se manifestou salvadora a todos os homens."
+    },
+    "passageB": {
+      "ref": "Efésios 2:8",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça sem vida transformada"
+      },
+      {
+        "id": "b",
+        "text": "Salvação como pagamento humano"
+      },
+      {
+        "id": "c",
+        "text": "Salvação pela graça de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a graça de Deus se manifestou salvadora",
+    "feedbackCorrect": "Nos dois textos, a salvação vem pela graça de Deus, como presente dele.",
+    "feedbackWrong": {
+      "a": "Em Tito, a mesma graça ensina a vida nova.",
+      "b": "Efésios afirma que a salvação não vem das obras."
+    },
+    "hint": "Compare de onde vem a salvação nos dois textos.",
+    "learningObjective": "Ligar a graça salvadora de Tito à de Efésios.",
+    "evidence": [
+      "Tito 2:11",
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-07",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 1:8, toque o trecho que mostra o líder governando a si mesmo.",
+    "prompt": "Em Tito 1:8, toque o trecho que mostra o líder governando a si mesmo.",
+    "cue": "Em Tito 1:8, toque o trecho que mostra o líder governando a si mesmo.",
+    "verseRef": "Tito 1:8",
+    "passageText": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;",
+    "options": [
+      {
+        "id": "a",
+        "text": "hospitaleiro"
+      },
+      {
+        "id": "b",
+        "text": "piedoso"
+      },
+      {
+        "id": "c",
+        "text": "domínio de si"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tem domínio de si",
+    "feedbackCorrect": "Antes de cuidar da igreja, o líder é chamado a governar a si mesmo.",
+    "feedbackWrong": {
+      "a": "Hospitalidade é acolher os outros, não governar a si.",
+      "b": "Piedade é reverência a Deus; o governo de si fecha a lista."
+    },
+    "hint": "Procure o fim da lista de qualidades.",
+    "learningObjective": "Sustentar com o texto o domínio próprio do líder.",
+    "evidence": [
+      "Tito 1:8"
+    ]
+  },
+  {
+    "id": "tito-pro-tt-03-desafio-08",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da promessa em Tito 1:2 até Tito 2:11?",
+    "prompt": "Qual sequência revela o caminho da promessa em Tito 1:2 até Tito 2:11?",
+    "cue": "Qual sequência revela o caminho da promessa em Tito 1:2 até Tito 2:11?",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete a vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "Sua palavra se manifesta na pregação"
+      },
+      {
+        "id": "c",
+        "text": "A graça alcança todos os homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "prometeu antes de todos os tempos eternos",
+    "feedbackCorrect": "Promessa antiga, palavra manifestada no tempo certo e graça para todos.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de Deus; a graça a todos é a chegada."
+    },
+    "hint": "Siga a promessa até a manifestação da graça.",
+    "learningObjective": "Ver o fio da promessa de Deus até a graça manifestada.",
+    "evidence": [
+      "Tito 1:2",
+      "Tito 1:3",
+      "Tito 2:11"
+    ]
+  }
+]

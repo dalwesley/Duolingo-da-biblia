@@ -1,0 +1,921 @@
+{
+ "study": {
+  "passageRef": "Jonas 2:1–5",
+  "passages": [
+   {
+    "ref": "Jonas 2:1–5"
+   },
+   {
+    "ref": "Jonas 4:1–5"
+   },
+   {
+    "ref": "Jonas 4:7–11"
+   }
+  ],
+  "context": "Este desafio revisa a oração de Jonas no peixe e o confronto final sobre Nínive. Do fundo ele clama e é ouvido; depois, resiste à compaixão de Deus pela cidade que ele mesmo alcançou.",
+  "keyword": "compaixão",
+  "keywordGloss": "Jonas recebe cuidado no fundo, mas resiste à compaixão de Deus pela grande cidade de Nínive.",
+  "focusQuestion": "Você recebe a compaixão de Deus para si com mais facilidade do que a celebra pelos outros?",
+  "reflectionPrompts": [
+   "Ouvido no fundo",
+   "Ira pela cidade poupada",
+   "Compaixão pela cidade"
+  ],
+  "facts": [
+   {
+    "text": "Jonas orou ao Senhor do ventre do peixe na sua angústia.",
+    "evidenceRef": "Jonas 2:2",
+    "evidenceSpan": "Na minha angústia, clamei ao Senhor, e ele me respondeu"
+   },
+   {
+    "text": "Jonas fugiu porque sabia que Deus é clemente e misericordioso.",
+    "evidenceRef": "Jonas 4:2",
+    "evidenceSpan": "pois sabia que Tu és Deus clemente"
+   },
+   {
+    "text": "Jonas pediu ao Senhor que lhe tirasse a vida na sua ira.",
+    "evidenceRef": "Jonas 4:3",
+    "evidenceSpan": "tira-me a vida, pois é melhor para mim morrer do que viver"
+   },
+   {
+    "text": "O verme feriu a planta de Jonas e ela secou no dia seguinte.",
+    "evidenceRef": "Jonas 4:7",
+    "evidenceSpan": "enviou um verme, que feriu a planta, fazendo-a secar"
+   },
+   {
+    "text": "A planta não custou trabalho a Jonas e viveu uma só noite.",
+    "evidenceRef": "Jonas 4:10",
+    "evidenceSpan": "que não lhe custou trabalho, nem a fez crescer"
+   },
+   {
+    "text": "Em Nínive há mais de cento e vinte mil pessoas e muitos animais.",
+    "evidenceRef": "Jonas 4:11",
+    "evidenceSpan": "onde há mais de cento e vinte mil pessoas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "angústia",
+    "gloss": "A aflição de Jonas no fundo, de onde nasce o clamor ouvido por Deus."
+   },
+   {
+    "term": "clemente",
+    "gloss": "O caráter de Deus que Jonas conhecia e temia ver agir sobre Nínive."
+   },
+   {
+    "term": "compaixão",
+    "gloss": "O sentimento de Jonas pela planta e de Deus pela cidade inteira."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jonas clama do ventre do peixe",
+    "evidenceRef": "Jonas 2:1"
+   },
+   {
+    "label": "Jonas se ira com a cidade poupada",
+    "evidenceRef": "Jonas 4:1"
+   },
+   {
+    "label": "Deus usa a planta que seca",
+    "evidenceRef": "Jonas 4:7"
+   },
+   {
+    "label": "Deus defende sua compaixão por Nínive",
+    "evidenceRef": "Jonas 4:11"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Jonas fugiu porque sabia que Deus é clemente e se arrepende do mal.",
+    "marker": "pois",
+    "evidenceRef": "Jonas 4:2"
+   },
+   {
+    "kind": "contraste",
+    "text": "Lançado da presença de Deus, Jonas ainda espera ver o santo templo.",
+    "marker": "contudo",
+    "evidenceRef": "Jonas 2:4"
+   },
+   {
+    "kind": "contraste",
+    "text": "Jonas tem compaixão da planta, mas Deus defende compaixão pela cidade.",
+    "marker": null,
+    "evidenceRef": "Jonas 4:11"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 12:40",
+    "bridge": "Jesus cita os três dias"
+   },
+   {
+    "ref": "Mateus 12:41",
+    "bridge": "Nínive se arrependeu com Jonas"
+   },
+   {
+    "ref": "Êxodo 34:6",
+    "bridge": "Deus clemente e misericordioso"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jonas fugiu por medo de ser morto em Nínive.",
+    "why": "Ele confessa que fugiu porque sabia que Deus é clemente e perdoaria a cidade."
+   },
+   {
+    "text": "Deus ouve Jonas só depois que ele sai do peixe e muda.",
+    "why": "Ele ora do ventre do peixe e afirma que Deus ouviu a sua voz ali."
+   },
+   {
+    "text": "A compaixão de Deus alcança Jonas, mas não a cidade estrangeira.",
+    "why": "A pergunta final defende a compaixão de Deus pela grande cidade de Nínive."
+   }
+  ],
+  "centralInsight": "Deus ouve no fundo e tem compaixão da cidade desprezada",
+  "anchorQuestion": "Por que Jonas fugiu e o que Deus defende no fim do livro?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jonas 2:2, Jonas clamou ao Senhor na angústia e ele lhe respondeu do fundo.",
+   "verseRef": "Jonas 2:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "Na minha angústia, clamei ao Senhor, e ele me respondeu",
+   "feedbackCorrect": "Na angústia ele clama, e o Senhor responde e ouve sua voz.",
+   "feedbackWrong": {
+    "false": "Releia a resposta de Deus citada em Jonas 2:2."
+   },
+   "hint": "Veja a resposta ao clamor dele.",
+   "learningObjective": "Revisar o clamor ouvido de Jonas no peixe.",
+   "evidence": [
+    "Jonas 2:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jonas 2:1, toque de onde Jonas orou ao Senhor seu Deus.",
+   "verseRef": "Jonas 2:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "ventre do peixe"
+    },
+    {
+     "id": "b",
+     "text": "seu Deus"
+    },
+    {
+     "id": "c",
+     "text": "Jonas orou"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+   "feedbackCorrect": "Ele orou do ventre do peixe, antes de qualquer saída dali.",
+   "feedbackWrong": {
+    "b": "Isso diz a quem ele ora, não de onde ele ora agora.",
+    "c": "Isso é a ação dele, não o lugar de onde ora."
+   },
+   "hint": "Procure o lugar no fim do versículo.",
+   "learningObjective": "Revisar o lugar da oração de Jonas.",
+   "evidence": [
+    "Jonas 2:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jonas 4:7, o que Deus enviou no dia seguinte contra a planta?",
+   "verseRef": "Jonas 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Um forte vento sobre o mar"
+    },
+    {
+     "id": "b",
+     "text": "Um grande peixe do mar"
+    },
+    {
+     "id": "c",
+     "text": "Um verme que feriu a planta"
+    },
+    {
+     "id": "d",
+     "text": "Um navio vindo de Társis"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "enviou um verme, que feriu a planta, fazendo-a secar",
+   "feedbackCorrect": "Deus enviou um verme, a planta foi ferida e secou.",
+   "feedbackWrong": {
+    "a": "O vento sobre o mar pertence à tempestade do capítulo um.",
+    "b": "O peixe pertence ao fundo do mar, não à planta seca.",
+    "d": "Navio é da fuga em Jope, não desta cena final."
+   },
+   "hint": "Veja o enviado de Deus neste versículo.",
+   "learningObjective": "Revisar o verme que fez a planta secar.",
+   "evidence": [
+    "Jonas 4:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jonas 4:11 na ordem do texto.",
+   "verseRef": "Jonas 4:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "E eu não deveria ter compaixão da grande cidade de Nínive"
+    },
+    {
+     "id": "b",
+     "text": "onde há mais de cento e vinte mil pessoas"
+    },
+    {
+     "id": "c",
+     "text": "e também muitos animais"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E eu não deveria ter compaixão da grande cidade de Nínive",
+   "feedbackCorrect": "Compaixão pela cidade, milhares de pessoas e também animais.",
+   "feedbackWrong": {
+    "default": "Comece pela compaixão de Deus pela grande cidade."
+   },
+   "hint": "O versículo começa pela pergunta de Deus.",
+   "learningObjective": "Reconhecer a sequência da pergunta final.",
+   "evidence": [
+    "Jonas 4:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jonas 2:2, em que estado Jonas clamou ao Senhor e foi respondido?",
+   "verseRef": "Jonas 2:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "angústia"
+    },
+    {
+     "id": "b",
+     "text": "presença"
+    },
+    {
+     "id": "c",
+     "text": "cabeça"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+   "feedbackCorrect": "É na angústia do fundo que ele clama e Deus responde.",
+   "feedbackWrong": {
+    "b": "Presença é de onde ele se sente lançado depois.",
+    "c": "Cabeça aparece nas algas enroladas, no verso cinco."
+   },
+   "hint": "É o sentimento no início do verso dois.",
+   "learningObjective": "Revisar a angústia como lugar do clamor.",
+   "evidence": [
+    "Jonas 2:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jonas 4:2 comunica que se liga a este contexto?",
+   "verseRef": "Jonas 4:2",
+   "passageA": {
+    "ref": "Jonas 4:2"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jonas explica, já no fim, por que havia fugido no começo do livro."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele desconhecia o caráter de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Ele sabia que Deus é clemente"
+    },
+    {
+     "id": "c",
+     "text": "Ele temia o tamanho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "pois sabia que Tu és Deus clemente",
+   "feedbackCorrect": "Ele sabia que Deus é clemente; por isso fugiu no começo.",
+   "feedbackWrong": {
+    "a": "Ele conhecia bem Deus e cita o caráter dele aqui.",
+    "c": "O motivo confessado é a clemência, não o tamanho."
+   },
+   "hint": "Veja o que ele diz que já sabia.",
+   "learningObjective": "Ligar a explicação final à fuga do começo.",
+   "evidence": [
+    "Jonas 4:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jonas 4:2, toque como Jonas chama o Deus que ele conhecia.",
+   "verseRef": "Jonas 4:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus clemente"
+    },
+    {
+     "id": "b",
+     "text": "minha terra"
+    },
+    {
+     "id": "c",
+     "text": "para Társis"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tu és Deus clemente, e misericordioso",
+   "feedbackCorrect": "Deus clemente é como Jonas descreve quem ele já conhecia.",
+   "feedbackWrong": {
+    "b": "Isso é o lugar onde ele estava, não o caráter de Deus.",
+    "c": "Isso é o destino da fuga, não a descrição de Deus."
+   },
+   "hint": "Procure o adjetivo ligado a Deus.",
+   "learningObjective": "Revisar o caráter clemente de Deus em Jonas.",
+   "evidence": [
+    "Jonas 4:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jonas 2:4 na ordem do texto.",
+   "verseRef": "Jonas 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "fui lançado de diante de tua presença"
+    },
+    {
+     "id": "b",
+     "text": "contudo, ainda verei"
+    },
+    {
+     "id": "c",
+     "text": "o teu santo templo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "fui lançado de diante de tua presença; contudo, ainda verei o teu santo templo",
+   "feedbackCorrect": "Lançado da presença, contudo ele ainda espera ver o templo.",
+   "feedbackWrong": {
+    "default": "Comece por lançado da presença; a esperança vem depois."
+   },
+   "hint": "A esperança aparece depois do contudo.",
+   "learningObjective": "Reconhecer a virada de Jonas 2:4.",
+   "evidence": [
+    "Jonas 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jonas 4:2, Jonas explica a fuga dizendo que temia a crueldade de Deus contra Nínive.",
+   "verseRef": "Jonas 4:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "pois sabia que Tu és Deus clemente",
+   "feedbackCorrect": "Ele temia o contrário, a clemência que pouparia a cidade.",
+   "feedbackWrong": {
+    "true": "Releia o caráter de Deus confessado por Jonas."
+   },
+   "hint": "Veja qual traço de Deus ele cita.",
+   "learningObjective": "Compreender o motivo da fuga no conjunto do livro.",
+   "evidence": [
+    "Jonas 4:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jonas 2:4, toque a palavra que vira o fundo para a esperança.",
+   "verseRef": "Jonas 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "lançado"
+    },
+    {
+     "id": "b",
+     "text": "contudo"
+    },
+    {
+     "id": "c",
+     "text": "presença"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "contudo, ainda verei o teu santo templo",
+   "feedbackCorrect": "Contudo vira a frase da queda para a esperança do templo.",
+   "feedbackWrong": {
+    "a": "Lançado descreve a queda, não a virada de esperança.",
+    "c": "Presença é de onde ele se sente lançado no fundo."
+   },
+   "hint": "Procure a palavra curta após o ponto e vírgula.",
+   "learningObjective": "Reconhecer a virada de esperança na oração.",
+   "evidence": [
+    "Jonas 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jonas 4:10 se relaciona com Jonas 4:11 na argumentação de Deus?",
+   "verseRef": "Jonas 4:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Da planta pequena Deus leva à cidade grande"
+    },
+    {
+     "id": "b",
+     "text": "Deus troca a cidade pela planta de Jonas"
+    },
+    {
+     "id": "c",
+     "text": "Deus encerra o assunto sem comparar nada"
+    },
+    {
+     "id": "d",
+     "text": "Jonas passa a cuidar da cidade como da planta"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Você teve compaixão da planta",
+   "feedbackCorrect": "Da compaixão pela planta, Deus leva Jonas à cidade inteira.",
+   "feedbackWrong": {
+    "b": "A planta é comparação, não troca pela cidade grande.",
+    "c": "Toda a fala final é uma comparação entre os dois.",
+    "d": "Jonas não muda de atitude no texto do livro aqui."
+   },
+   "hint": "Compare os tamanhos nos dois versículos.",
+   "learningObjective": "Relacionar planta e cidade no confronto final.",
+   "evidence": [
+    "Jonas 4:10–11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o livro de Jonas 2:1 a Jonas 4:11?",
+   "verseRef": "Jonas 2:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jonas clama do ventre do peixe"
+    },
+    {
+     "id": "b",
+     "text": "Jonas se ira com a cidade poupada"
+    },
+    {
+     "id": "c",
+     "text": "Deus defende compaixão por Nínive"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+   "feedbackCorrect": "Do clamor no fundo à ira, e por fim à compaixão defendida.",
+   "feedbackWrong": {
+    "default": "Comece pela oração no peixe; a pergunta final fecha."
+   },
+   "hint": "A pergunta sobre Nínive fecha o livro.",
+   "learningObjective": "Compreender o arco do peixe à cidade no livro.",
+   "evidence": [
+    "Jonas 2:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jonas 4:2, Deus é grande em que qualidade, segundo Jonas?",
+   "verseRef": "Jonas 4:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "ira"
+    },
+    {
+     "id": "b",
+     "text": "benignidade"
+    },
+    {
+     "id": "c",
+     "text": "furor"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "grande em benignidade",
+   "feedbackCorrect": "Grande em benignidade é a confissão que incomoda Jonas.",
+   "feedbackWrong": {
+    "a": "Da ira ele é tardio, não grande, nesta confissão.",
+    "c": "Furor é o que Deus afasta da cidade arrependida."
+   },
+   "hint": "Leia a qualidade ligada à bondade.",
+   "learningObjective": "Compreender a benignidade no centro da queixa.",
+   "evidence": [
+    "Jonas 4:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jonas 2:1 a Mateus 12:40?",
+   "verseRef": "Jonas 2:1",
+   "passageA": {
+    "ref": "Jonas 2:1"
+   },
+   "passageB": {
+    "ref": "Mateus 12:40"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Três dias no ventre"
+    },
+    {
+     "id": "b",
+     "text": "Uma enramada ao sol"
+    },
+    {
+     "id": "c",
+     "text": "Um jejum da cidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "do ventre do peixe",
+   "evidence": [
+    "Jonas 2:1",
+    "Mateus 12:40"
+   ],
+   "feedbackCorrect": "Jesus liga o tempo de Jonas no peixe aos seus três dias.",
+   "feedbackWrong": {
+    "b": "A enramada é do fim do livro, não do sinal citado.",
+    "c": "O jejum é de Nínive, não do tempo de Jonas no peixe."
+   },
+   "hint": "Compare o tempo citado por Jesus aqui.",
+   "learningObjective": "Relacionar o ventre do peixe ao sinal de Jesus."
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jonas 4:11, toque a palavra do sentimento de Deus pela cidade.",
+   "verseRef": "Jonas 4:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "compaixão"
+    },
+    {
+     "id": "b",
+     "text": "pessoas"
+    },
+    {
+     "id": "c",
+     "text": "animais"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "E eu não deveria ter compaixão da grande cidade de Nínive",
+   "feedbackCorrect": "Compaixão nomeia o sentimento de Deus pela cidade inteira.",
+   "feedbackWrong": {
+    "b": "Pessoas são quem mora lá, não o sentimento de Deus.",
+    "c": "Animais ampliam o cuidado, não nomeiam o sentimento."
+   },
+   "hint": "Procure o sentimento na pergunta final.",
+   "learningObjective": "Reconhecer a compaixão de Deus no desafio.",
+   "evidence": [
+    "Jonas 4:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os fatos de Jonas 4:7–9?",
+   "verseRef": "Jonas 4:7–8",
+   "options": [
+    {
+     "id": "a",
+     "text": "O verme fere a planta e ela seca"
+    },
+    {
+     "id": "b",
+     "text": "O sol faz Jonas desfalecer de calor"
+    },
+    {
+     "id": "c",
+     "text": "Jonas defende sua ira até à morte"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "enviou um verme, que feriu a planta, fazendo-a secar",
+   "feedbackCorrect": "Planta seca, Jonas desfalece e defende a ira até à morte.",
+   "feedbackWrong": {
+    "default": "Comece pelo verme; a defesa da ira vem por último."
+   },
+   "hint": "A defesa da ira é a última reação dele.",
+   "learningObjective": "Compreender a sequência final da planta e da ira.",
+   "evidence": [
+    "Jonas 4:7–8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jonas mostra um profeta ouvido por Deus no fundo e depois confrontado por resistir à compaixão.",
+   "verseRef": "Jonas 2:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+   "feedbackCorrect": "Ele é ouvido no fundo e confrontado pela cidade poupada depois.",
+   "feedbackWrong": {
+    "false": "Junte o clamor ouvido e a ira do capítulo quatro."
+   },
+   "hint": "Junte o começo e o fim do livro.",
+   "learningObjective": "Interpretar o arco completo de Jonas no desafio.",
+   "evidence": [
+    "Jonas 2:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jonas 2:2, toque o trecho que sustenta que Deus ouviu Jonas no fundo.",
+   "verseRef": "Jonas 2:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "ele me respondeu"
+    },
+    {
+     "id": "b",
+     "text": "minha angústia"
+    },
+    {
+     "id": "c",
+     "text": "minha voz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+   "feedbackCorrect": "Ele me respondeu sustenta a escuta de Deus ao clamor do fundo.",
+   "feedbackWrong": {
+    "b": "Isso é o sentimento dele, não a resposta de Deus dada.",
+    "c": "A voz é o que ele levanta, não a resposta recebida."
+   },
+   "hint": "Procure a ação de Deus pelo clamor.",
+   "learningObjective": "Sustentar a escuta de Deus com o texto.",
+   "evidence": [
+    "Jonas 2:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o conjunto de Jonas sustenta sobre a compaixão de Deus?",
+   "verseRef": "Jonas 4:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ela alcança Jonas, mas para em Israel"
+    },
+    {
+     "id": "b",
+     "text": "Ela alcança até a cidade estrangeira odiada"
+    },
+    {
+     "id": "c",
+     "text": "Ela depende de Jonas aprovar quem a recebe"
+    },
+    {
+     "id": "d",
+     "text": "Ela aparece só quando não há arrependimento"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "E eu não deveria ter compaixão da grande cidade de Nínive",
+   "feedbackCorrect": "Deus defende compaixão pela cidade estrangeira que Jonas rejeita.",
+   "feedbackWrong": {
+    "a": "Nínive está fora de Israel e é o foco da compaixão final.",
+    "c": "Jonas resiste, e Deus mesmo defende a sua compaixão.",
+    "d": "A cidade poupada é justamente a que se converteu antes."
+   },
+   "hint": "Veja quem Deus defende na pergunta final.",
+   "learningObjective": "Escolher a leitura do conjunto sobre a compaixão.",
+   "evidence": [
+    "Jonas 4:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio da compaixão de Jonas até Jesus?",
+   "verseRef": "Jonas 4:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus tem compaixão da grande cidade"
+    },
+    {
+     "id": "b",
+     "text": "Nínive se arrepende ao ouvir o profeta"
+    },
+    {
+     "id": "c",
+     "text": "Jesus cita Nínive como exemplo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "compaixão da grande cidade de Nínive",
+   "evidence": [
+    "Jonas 4:11",
+    "Jonas 3:5",
+    "Mateus 12:41"
+   ],
+   "feedbackCorrect": "Compaixão divina, arrependimento da cidade e citação de Jesus.",
+   "feedbackWrong": {
+    "default": "Comece pela compaixão de Deus; Jesus fecha a sequência."
+   },
+   "hint": "Jesus é o ponto de chegada da sequência.",
+   "learningObjective": "Ver a compaixão por Nínive no ensino de Jesus."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jonas 4:10, de que Jonas teve compaixão sem ter feito crescer?",
+   "verseRef": "Jonas 4:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "cidade"
+    },
+    {
+     "id": "b",
+     "text": "planta"
+    },
+    {
+     "id": "c",
+     "text": "sombra"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Você teve compaixão da planta",
+   "feedbackCorrect": "Da planta de uma noite ele teve compaixão sem cultivá-la.",
+   "feedbackWrong": {
+    "a": "Cidade é o lado maior da comparação feita por Deus.",
+    "c": "Sombra é o benefício daquilo de que ele teve pena."
+   },
+   "hint": "É o pequeno lado da comparação final.",
+   "learningObjective": "Lembrar a planta como chave do confronto final.",
+   "evidence": [
+    "Jonas 4:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jonas 4:2 a Êxodo 34:6?",
+   "verseRef": "Jonas 4:2",
+   "passageA": {
+    "ref": "Jonas 4:2"
+   },
+   "passageB": {
+    "ref": "Êxodo 34:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus clemente e misericordioso"
+    },
+    {
+     "id": "b",
+     "text": "Deus apressado em irar-se"
+    },
+    {
+     "id": "c",
+     "text": "Deus alheio às cidades"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tu és Deus clemente, e misericordioso",
+   "evidence": [
+    "Jonas 4:2",
+    "Êxodo 34:6"
+   ],
+   "feedbackCorrect": "Jonas ecoa a antiga confissão do Deus clemente e misericordioso.",
+   "feedbackWrong": {
+    "b": "Os dois textos dizem tardio em irar-se, não apressado.",
+    "c": "Nos dois Deus se mostra perto, bondoso e compassivo."
+   },
+   "hint": "Compare os adjetivos dados a Deus aqui.",
+   "learningObjective": "Ligar a confissão de Jonas à antiga confissão de Êxodo."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jonas 4:7, toque o que Deus enviou para ferir a planta de Jonas.",
+   "verseRef": "Jonas 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "um verme"
+    },
+    {
+     "id": "b",
+     "text": "dia seguinte"
+    },
+    {
+     "id": "c",
+     "text": "a planta"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "enviou um verme, que feriu a planta",
+   "feedbackCorrect": "Um verme enviado por Deus fere a planta e ela seca logo.",
+   "feedbackWrong": {
+    "b": "Isso marca o tempo da cena, não o enviado de Deus.",
+    "c": "A planta é o que foi ferido, não quem a feriu aqui."
+   },
+   "hint": "Procure o enviado no começo do versículo.",
+   "learningObjective": "Sustentar a ação de Deus na planta que seca.",
+   "evidence": [
+    "Jonas 4:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do sinal de Jonas na Bíblia?",
+   "verseRef": "Jonas 2:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jonas ora do ventre do peixe"
+    },
+    {
+     "id": "b",
+     "text": "Jesus anuncia o sinal de Jonas"
+    },
+    {
+     "id": "c",
+     "text": "Nínive é citada por se arrepender"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "do ventre do peixe",
+   "evidence": [
+    "Jonas 2:1",
+    "Mateus 12:39–41"
+   ],
+   "feedbackCorrect": "Do ventre do peixe ao sinal anunciado e à cidade arrependida citada.",
+   "feedbackWrong": {
+    "default": "Comece no peixe; as citações de Jesus vêm depois."
+   },
+   "hint": "Siga de Jonas até as palavras de Jesus.",
+   "learningObjective": "Ver o sinal de Jonas como Jesus o apresenta."
+  }
+ ]
+}

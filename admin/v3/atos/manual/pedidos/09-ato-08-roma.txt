@@ -1,0 +1,59 @@
+Escreva a cena "ato-08-roma" da trilha "atos" (Atos dos Apóstolos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Até os confins",
+ "mission": {
+  "slug": "ato-08-roma",
+  "title": "Até Roma",
+  "type": "lesson",
+  "intro": "Preso, mas não calado. O evangelho chega ao coração do Império — sem impedimento.",
+  "hookRef": "Atos 28:30–31",
+  "hookNote": "O livro não termina com soltura triunfal, mas com testemunho sob custódia. Roma não é fim da história — é sinal de que o mapa de 1:8 avanço…",
+  "centralInsight": "Palavra não acorrentada",
+  "objective": "Que “prisão” tenho usado como desculpa para calar o evangelho?"
+ },
+ "v2": {
+  "passageRef": "Atos 28:30–31",
+  "context": "O livro não termina com soltura triunfal, mas com testemunho sob custódia. Roma não é fim da história — é sinal de que o mapa de 1:8 avançou. Houve naufrágio, julgamento e rejeição parcial em Israel; ainda assim a palavra corre. Atos deixa a igreja com um modelo: circunstâncias não cancelam a pregação do Reino.",
+  "keyword": "Sem impedimento",
+  "verseRefs": [
+   "Atos 28:30–31"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 28:27–31"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 28:27",
+   "text": "Porque o coração deste povo se tornou endurecido; e com os ouvidos ouviram tardiamente, e fecharam os olhos, para que nunca vejam com os olhos, nem ouçam com os ouvidos, nem entendam com o coração, e se convertam, e eu os cure."
+  },
+  {
+   "ref": "Atos 28:28",
+   "text": "Saiba, portanto, que a salvação de Deus foi enviada aos gentios, e eles a ouvirão."
+  },
+  {
+   "ref": "Atos 28:29",
+   "text": "Depois de dizer essas palavras, os judeus se afastaram, tendo entre si uma grande discussão."
+  },
+  {
+   "ref": "Atos 28:30",
+   "text": "E Paulo permaneceu dois anos inteiros em sua própria casa, que havia alugado, e recebia todos os que o procuravam."
+  },
+  {
+   "ref": "Atos 28:31",
+   "text": "Pregando o Reino de Deus e, com toda a ousadia, ensinava as coisas que se referem ao Senhor Jesus Cristo sem nenhum impedimento"
+  }
+ ]
+}
+</cena>

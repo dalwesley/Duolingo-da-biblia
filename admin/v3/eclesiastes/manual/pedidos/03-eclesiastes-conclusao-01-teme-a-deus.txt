@@ -1,0 +1,59 @@
+Escreva a cena "eclesiastes-conclusao-01-teme-a-deus" da trilha "eclesiastes" (Eclesiastes).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "eclesiastes",
+  "title": "Eclesiastes",
+  "description": "Vaidade sob o sol — e o temor de Deus no fim.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Conclusão",
+ "mission": {
+  "slug": "eclesiastes-conclusao-01-teme-a-deus",
+  "title": "Teme a Deus",
+  "type": "lesson",
+  "intro": "O fim de todo o homem.",
+  "hookRef": "Eclesiastes 12:13",
+  "hookNote": "O fim de todo o homem.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre teme?"
+ },
+ "v2": {
+  "passageRef": "Eclesiastes 12:13",
+  "context": "O fim de todo o homem.",
+  "keyword": "Teme",
+  "verseRefs": [
+   "Eclesiastes 12:13"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Eclesiastes 12:10–14"
+ ],
+ "verses": [
+  {
+   "ref": "Eclesiastes 12:10",
+   "text": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de verdade."
+  },
+  {
+   "ref": "Eclesiastes 12:11",
+   "text": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor."
+  },
+  {
+   "ref": "Eclesiastes 12:12",
+   "text": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne."
+  },
+  {
+   "ref": "Eclesiastes 12:13",
+   "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+  },
+  {
+   "ref": "Eclesiastes 12:14",
+   "text": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,71 @@
+Escreva a cena "tt-01-lideres" da trilha "tito" (Tito).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "tito",
+  "title": "Tito",
+  "description": "Ordem na igreja de Creta — sã doutrina e boas obras.",
+  "realm": "novo-testamento"
+ },
+ "block": "Tito",
+ "mission": {
+  "slug": "tt-01-lideres",
+  "title": "Líderes e sã doutrina",
+  "type": "lesson",
+  "intro": "Tito deve estabelecer presbíteros íntegros que protejam a igreja do erro.",
+  "hookRef": "Líderes e sã doutrina",
+  "hookNote": "Tito deve estabelecer presbíteros íntegros que protejam a igreja do erro.",
+  "centralInsight": "Paulo instrui a igreja em Tito 1 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele chama o…",
+  "objective": "Entender “Líderes” neste trecho."
+ },
+ "v2": {
+  "passageRef": "Líderes e sã doutrina",
+  "context": "Tito deve estabelecer presbíteros íntegros que protejam a igreja do erro.",
+  "keyword": "Líderes",
+  "verseRefs": [
+   "Tito 1:5–6"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Tito 1:2–9"
+ ],
+ "verses": [
+  {
+   "ref": "Tito 1:2",
+   "text": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;"
+  },
+  {
+   "ref": "Tito 1:3",
+   "text": "E, em seu devido tempo, manifestou a sua palavra por meio da pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;"
+  },
+  {
+   "ref": "Tito 1:4",
+   "text": "A Tito, meu verdadeiro filho na fé comum, graça e paz da parte de Deus Pai e de Cristo Jesus, nosso Salvador."
+  },
+  {
+   "ref": "Tito 1:5",
+   "text": "Por isso, te deixei em Creta, para que pusesses em ordem o que ainda resta e, em cada cidade, constituísses anciãos, conforme já te prescrevi"
+  },
+  {
+   "ref": "Tito 1:6",
+   "text": "Aquele que for irrepreensível, marido de uma só mulher, que tenha filhos crentes que não sejam acusados de dissolução nem sejam insubordinados."
+  },
+  {
+   "ref": "Tito 1:7",
+   "text": "Porque é necessário que o bispo seja irrepreensível como despenseiro da casa de Deus, não arrogante, nem irascível, nem dado ao vinho, nem violento, nem agressor, nem cobiçoso de torpe ganância."
+  },
+  {
+   "ref": "Tito 1:8",
+   "text": "É hospitaleiro, ama o que é bom, é sóbrio, justo, piedoso e tem domínio de si;"
+  },
+  {
+   "ref": "Tito 1:9",
+   "text": "Mantendo-se apegado à palavra fiel, que é segundo a doutrina, de modo a ter poder tanto para exortar pela sã doutrina como para convencer os que se opõem"
+  }
+ ]
+}
+</cena>

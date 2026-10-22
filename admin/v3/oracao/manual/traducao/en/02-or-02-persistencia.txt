@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "oracao-sem-or-02-persistencia-01": {
+  "question": "Em Lucas 18:2, o juiz da parábola temia a Deus e respeitava todas as pessoas.",
+  "learningObjective": "Observar o caráter do juiz da parábola.",
+  "feedbackCorrect": "Ele é descrito justamente como quem não teme nem respeita.",
+  "feedbackWrong": {
+   "true": "Releia Lucas 18:2: o juiz é o oposto disso."
+  },
+  "hint": "Veja como o juiz é apresentado.",
+  "_verso": "Havia em certa cidade um juiz que não temia a Deus, nem respeitava homem algum."
+ },
+ "oracao-sem-or-02-persistencia-02": {
+  "question": "Em Lucas 18:3, toque quem foi até o juiz pedir justiça.",
+  "learningObjective": "Identificar a personagem que pede justiça.",
+  "feedbackCorrect": "Sem poder nem defensor, é ela quem vai e insiste.",
+  "feedbackWrong": {
+   "a": "Ele é o outro lado da causa dela.",
+   "c": "Isso é o lugar da história, não quem foi pedir."
+  },
+  "hint": "Procure a mulher na mesma cidade.",
+  "_verso": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-sem-or-02-persistencia-03": {
+  "question": "Segundo Lucas 18:3, o que a viúva pedia ao juiz?",
+  "learningObjective": "Observar o pedido da viúva.",
+  "feedbackCorrect": "O pedido dela é justiça numa causa, não favores.",
+  "feedbackWrong": {
+   "a": "Nenhum empréstimo aparece no pedido dela.",
+   "c": "Emprego não é citado em nenhum momento.",
+   "d": "Ela não quer sair: ela quer justiça ali."
+  },
+  "hint": "Ouça as palavras dela ao juiz.",
+  "options": {
+   "a": "Dinheiro emprestado para pagar dívidas",
+   "b": "Que julgasse a causa dela contra o adversário",
+   "c": "Um emprego na casa do juiz da cidade",
+   "d": "Permissão para deixar aquela cidade"
+  },
+  "_verso": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-sem-or-02-persistencia-04": {
+  "question": "Monte Lucas 18:2–3 na ordem do texto.",
+  "learningObjective": "Reconhecer a abertura da parábola.",
+  "feedbackCorrect": "Primeiro o juiz, depois a viúva, então o pedido dela.",
+  "feedbackWrong": {
+   "default": "Comece pela apresentação do juiz."
+  },
+  "hint": "A parábola apresenta as pessoas antes do pedido.",
+  "_verso": "Havia em certa cidade um juiz que não temia a Deus, nem respeitava homem algum. Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-sem-or-02-persistencia-05": {
+  "question": "Em Lucas 18:1, Jesus ensina a orar sempre e nunca fazer o quê?",
+  "learningObjective": "Lembrar o alvo declarado da parábola.",
+  "feedbackCorrect": "Persistir é continuar sem perder o ânimo na espera.",
+  "feedbackWrong": {
+   "b": "A palavra do texto nomeia o ânimo, não só a ação.",
+   "c": "Falar com Deus é justamente o que devemos manter."
+  },
+  "hint": "É perder o ânimo no meio da espera.",
+  "_verso": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+ },
+ "oracao-sem-or-02-persistencia-06": {
+  "question": "O que Lucas 18:3 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a viúva ao ensino sobre persistir.",
+  "feedbackCorrect": "Ela volta ao juiz de novo: é o retrato de não desanimar.",
+  "feedbackWrong": {
+   "a": "Ela faz o oposto: ela não para de voltar.",
+   "b": "Ela fala e pede, não se cala diante da injustiça."
+  },
+  "hint": "Veja o que a viúva faz repetidamente.",
+  "options": {
+   "a": "Desistência na primeira porta fechada",
+   "b": "Silêncio de quem aceitou tudo",
+   "c": "Insistência que não desiste"
+  },
+  "_verso": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-cam-or-02-persistencia-01": {
+  "question": "Em Lucas 18, Jesus compara Deus ao juiz injusto para ensinar que Deus atende de má vontade.",
+  "learningObjective": "Compreender o contraste entre o juiz e Deus.",
+  "feedbackCorrect": "O juiz é contraste: Deus fará justiça aos seus, sim.",
+  "feedbackWrong": {
+   "true": "A pergunta de Jesus espera um sim sobre Deus agir."
+  },
+  "hint": "Veja se o juiz é modelo ou contraste.",
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-cam-or-02-persistencia-02": {
+  "question": "Em Lucas 18:5, toque a palavra que explica por que o juiz finalmente atendeu a viúva.",
+  "learningObjective": "Reconhecer o que moveu a decisão do juiz.",
+  "feedbackCorrect": "Não foi bondade do juiz: foi a constância dela.",
+  "feedbackWrong": {
+   "b": "Isso é o pedido dela, não o motivo dele ceder.",
+   "c": "Ela é a pessoa; o motivo é o que ela fez sem parar."
+  },
+  "hint": "Procure o motivo depois de devido à.",
+  "_verso": "Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar"
+ },
+ "oracao-cam-or-02-persistencia-03": {
+  "question": "Como Jesus usa o juiz injusto em Lucas 18:6–7 para falar de Deus?",
+  "learningObjective": "Compreender o argumento do contraste na parábola.",
+  "feedbackCorrect": "Do pior juiz ao Pai justo: o argumento sobe, não desce.",
+  "feedbackWrong": {
+   "b": "Deus escolhe e defende os seus; o juiz não respeitava ninguém.",
+   "c": "O ponto é justiça de Deus, não volume da voz.",
+   "d": "Deus não é o juiz relutante: ele é o contraste dele."
+  },
+  "hint": "Pense do menor para o maior no argumento.",
+  "options": {
+   "a": "Se até ele atende, Deus fará justiça aos seus escolhidos",
+   "b": "Deus respeita menos as pessoas do que aquele juiz",
+   "c": "Só quem grita mais alto é ouvido no céu por Deus",
+   "d": "Deus também precisa ser cansado para finalmente ouvir"
+  },
+  "_verso": "E disse o Senhor: Ouvi o que diz o juiz injusto. Considerai o que ele diz. E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-cam-or-02-persistencia-04": {
+  "question": "Como se encadeiam os eventos de Lucas 18:4–5?",
+  "learningObjective": "Compreender a virada da parábola.",
+  "feedbackCorrect": "Recusa, insistência e decisão: é a virada da história.",
+  "feedbackWrong": {
+   "default": "Comece pela recusa inicial do juiz."
+  },
+  "hint": "A decisão dele é o último passo.",
+  "options": {
+   "a": "O juiz se recusa a atendê-la por um tempo",
+   "b": "A viúva continua vindo e insistindo nele",
+   "c": "Ele decide julgar a causa dela de uma vez"
+  },
+  "_verso": "Por algum tempo, ele não quis atendê-la; mas, depois, disse para si mesmo: Embora eu não tema a Deus, nem tenha respeito por homem algum, Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar"
+ },
+ "oracao-cam-or-02-persistencia-05": {
+  "question": "Em Lucas 18:7, o que Jesus afirma que Deus fará aos seus escolhidos?",
+  "learningObjective": "Compreender a promessa central da parábola.",
+  "feedbackCorrect": "A resposta de Deus ao clamor é fazer justiça.",
+  "feedbackWrong": {
+   "b": "Ele responde ao clamor, não com silêncio final.",
+   "c": "Esperar é o nosso lado; o dele é agir com justiça."
+  },
+  "hint": "É a mesma palavra do pedido da viúva.",
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-cam-or-02-persistencia-06": {
+  "question": "O que liga Lucas 18:3 a Lucas 11:9?",
+  "learningObjective": "Relacionar a parábola ao ensino de Lucas 11.",
+  "feedbackCorrect": "A viúva vive o pedir, buscar e bater sem desistir.",
+  "feedbackWrong": {
+   "b": "Ela pediu muitas vezes, e Jesus manda continuar.",
+   "c": "A perseverança dela aponta para orar a Deus."
+  },
+  "hint": "Veja os três verbos do ensino de Jesus.",
+  "options": {
+   "a": "Pedir, buscar e bater",
+   "b": "Pedir uma vez e calar",
+   "c": "Bater só em portas humanas"
+  },
+  "_verso": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-pro-or-02-persistencia-01": {
+  "question": "Lucas 18 ensina a persistir confiando que Deus, diferente do juiz, fará justiça aos que clamam dia e noite.",
+  "learningObjective": "Interpretar a persistência como expressão de fé.",
+  "feedbackCorrect": "Persistência com confiança: é fé, não técnica de pressão.",
+  "feedbackWrong": {
+   "false": "A pergunta final de Jesus é se haverá fé, não força."
+  },
+  "hint": "Junte o clamor com a pergunta sobre fé.",
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-pro-or-02-persistencia-02": {
+  "question": "Em Lucas 18:7, toque a quem Deus fará justiça, segundo Jesus.",
+  "learningObjective": "Sustentar no texto quem Deus defende.",
+  "feedbackCorrect": "Não é qualquer pressão: é o povo dele clamando a ele.",
+  "feedbackWrong": {
+   "a": "Ele é quem faz a justiça, não quem a recebe.",
+   "c": "Isso é quando eles clamam, não quem recebe justiça."
+  },
+  "hint": "Procure o grupo depois de justiça aos.",
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-pro-or-02-persistencia-03": {
+  "question": "Que leitura Lucas 18:8 sustenta sobre persistir em oração?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta.",
+  "feedbackCorrect": "Jesus fecha falando de fé: persistir é continuar crendo.",
+  "feedbackWrong": {
+   "a": "Ele promete justiça rapidamente aos que clamam.",
+   "c": "O ensino de abertura é orar sempre, sem parar.",
+   "d": "Deus não é o juiz cansado: ele é o justo que defende."
+  },
+  "hint": "Veja a última pergunta de Jesus na parábola.",
+  "options": {
+   "a": "É prova de que Deus demora por não se importar",
+   "b": "É fé que continua clamando ao Deus justo",
+   "c": "É desnecessário depois da primeira oração feita",
+   "d": "É um jeito de cansar Deus até ele ceder a nós"
+  },
+  "_verso": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?"
+ },
+ "oracao-pro-or-02-persistencia-04": {
+  "question": "Qual sequência revela o sentido de Lucas 18:3–8?",
+  "learningObjective": "Ver o arco da parábola até a fé.",
+  "feedbackCorrect": "Insistência, justiça de Deus e a pergunta sobre a fé.",
+  "feedbackWrong": {
+   "default": "Comece pela viúva diante do juiz."
+  },
+  "hint": "A pergunta sobre fé fecha a parábola.",
+  "options": {
+   "a": "A viúva insiste diante do juiz injusto",
+   "b": "Deus fará justiça aos seus que clamam",
+   "c": "O Filho do Homem procura fé na terra"
+  },
+  "_verso": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?"
+ },
+ "oracao-pro-or-02-persistencia-05": {
+  "question": "Em Lucas 18:8, o que o Filho do Homem espera encontrar na terra quando vier?",
+  "learningObjective": "Lembrar o que Jesus procura: fé perseverante.",
+  "feedbackCorrect": "A persistência que ele procura tem nome: fé que não desiste.",
+  "feedbackWrong": {
+   "a": "Reconhecimento humano não é o que ele procura.",
+   "b": "A viúva não tinha força: ela tinha perseverança crente."
+  },
+  "hint": "É a palavra final da pergunta de Jesus.",
+  "_verso": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?"
+ },
+ "oracao-pro-or-02-persistencia-06": {
+  "question": "O que liga Lucas 18:7 a Salmos 88:1?",
+  "learningObjective": "Ligar o clamor da parábola ao dos Salmos.",
+  "feedbackCorrect": "O salmista também clama de dia e de noite, sem parar.",
+  "feedbackWrong": {
+   "a": "Os dois textos clamam, não se calam na dor.",
+   "c": "A justiça é pedida a Deus, não feita à força."
+  },
+  "hint": "Compare os horários do clamor nos dois textos.",
+  "options": {
+   "a": "Silêncio aceito sem clamar",
+   "b": "Clamor de dia e noite",
+   "c": "Justiça feita pelas próprias mãos"
+  },
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "estudo:or-02-persistencia": {
+  "context": "Jesus conta esta parábola com um alvo declarado logo na abertura: ensinar que é preciso orar sempre e nunca desanimar. A personagem central é uma viúva sem poder nenhum diante de um juiz que não respeita ninguém.",
+  "focusQuestion": "De que pedido você desistiu cedo demais e precisa voltar a apresentar a Deus?",
+  "keywordGloss": "Orar sempre e nunca desanimar: voltar a Deus de novo, confiando que ele é justo.",
+  "reflectionPrompts": [
+   "Não desanimar",
+   "Clamar dia e noite",
+   "Deus não é o juiz injusto"
+  ],
+  "facts": [
+   "A parábola foi contada sobre a necessidade de orar sempre e nunca desanimar.",
+   "O juiz da história não temia a Deus nem respeitava homem algum.",
+   "A viúva pedia que ele julgasse a causa dela contra o adversário.",
+   "O juiz atendeu devido à insistência da viúva.",
+   "Deus fará justiça aos seus escolhidos, que clamam a ele dia e noite.",
+   "Jesus promete justiça rapidamente e pergunta se encontrará fé na terra."
+  ],
+  "_verso": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+ }
+}

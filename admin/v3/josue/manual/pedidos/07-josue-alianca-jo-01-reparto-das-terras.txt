@@ -1,0 +1,80 @@
+Escreva a cena "josue-alianca-jo-01-reparto-das-terras" da trilha "josue" (Josué).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "josue",
+  "title": "Josué",
+  "description": "Entrada na terra: coragem, Jericó e aliança renovada.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Aliança",
+ "mission": {
+  "slug": "josue-alianca-jo-01-reparto-das-terras",
+  "title": "Reparto das terras",
+  "type": "lesson",
+  "intro": "Herança para as tribos.",
+  "hookRef": "Josué 24:15",
+  "hookNote": "Herança para as tribos.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre reparto?"
+ },
+ "v2": {
+  "passageRef": "Josué 24:15",
+  "context": "Herança para as tribos.",
+  "keyword": "Reparto",
+  "verseRefs": [
+   "Josué 21:43–45"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Josué 24:12–18",
+  "Josué 21:43–45"
+ ],
+ "verses": [
+  {
+   "ref": "Josué 24:12",
+   "text": "Enviei vespões diante de vocês, que os expulsaram da sua presença, assim como os dois reis dos amorreus; e isso não com a sua espada, nem com o seu arco."
+  },
+  {
+   "ref": "Josué 24:13",
+   "text": "Eu lhes dei a terra na qual não trabalharam, e cidades que não edificaram; agora habitam nelas e comem das vinhas e dos oliveirais que não plantaram."
+  },
+  {
+   "ref": "Josué 24:14",
+   "text": "Agora, portanto, temam ao Senhor e o sirvam com integridade e fidelidade; deitem de lado os deuses a que serviram seus pais além do Eufrates e no Egito e sirvam ao Senhor."
+  },
+  {
+   "ref": "Josué 24:15",
+   "text": "Todavia, se lhe parece mal servir ao SENHOR, escolham hoje a quem desejam servir: aos deuses que os seus pais serviram dalém do Eufrates ou aos deuses dos amorreus na terra onde habitam. Eu e a minha casa serviremos ao SENHOR."
+  },
+  {
+   "ref": "Josué 24:16",
+   "text": "Então o povo respondeu e disse: Longe de nós deixar o SENHOR para servirmos a outros deuses;"
+  },
+  {
+   "ref": "Josué 24:17",
+   "text": "Porque o SENHOR é o nosso Deus; Ele nos fez subir a nós e a nossos pais, da terra do Egito, da casa da servidão, e realizou grandes sinais diante de nossos olhos, além de nos ter guardado durante todo o caminho que andamos entre todos os povos pelos quais passamos."
+  },
+  {
+   "ref": "Josué 24:18",
+   "text": "E o SENHOR expulsou de diante de nós todas essas nações, inclusive o amorreu, que reside nesta terra; por isso, também nós serviremos ao SENHOR, pois Ele é o nosso Deus."
+  },
+  {
+   "ref": "Josué 21:43",
+   "text": "Assim, o Senhor concedeu a Israel toda a terra que prometeu dar a seus pais; e eles tomaram posse dela e habitaram nela."
+  },
+  {
+   "ref": "Josué 21:44",
+   "text": "E o Senhor lhes concedeu descanso em todas as direções conforme tudo o que tinha prometido aos seus pais; nenhum de todos os seus inimigos pôde resistir diante deles; o Senhor entregou todos os seus inimigos em suas mãos."
+  },
+  {
+   "ref": "Josué 21:45",
+   "text": "Nada falhou de todas as boas promessas que o Senhor havia proferido à casa de Israel; tudo se cumpriu."
+  }
+ ]
+}
+</cena>

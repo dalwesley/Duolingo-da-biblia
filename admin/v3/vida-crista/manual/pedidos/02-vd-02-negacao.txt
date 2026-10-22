@@ -1,0 +1,67 @@
+Escreva a cena "vd-02-negacao" da trilha "vida-crista" (Discipulado).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "vida-crista",
+  "title": "Discipulado",
+  "description": "Seguir a Jesus no dia a dia — fé, caráter, relacionamentos e missão.",
+  "realm": "vida-crista"
+ },
+ "block": "Vida Cristã",
+ "mission": {
+  "slug": "vd-02-negacao",
+  "title": "Negar a si mesmo",
+  "type": "lesson",
+  "intro": "A negação de si não é desprezo pela vida, mas rendição diária do ego à vontade de Cristo.",
+  "hookRef": "Lucas 9:23",
+  "hookNote": "A negação de si não é desprezo pela vida, mas rendição diária do ego à vontade de Cristo.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "Lucas 9:23"
+ },
+ "v2": {
+  "passageRef": "Lucas 9:23",
+  "context": "A negação de si não é desprezo pela vida, mas rendição diária do ego à vontade de Cristo.",
+  "keyword": "Negar",
+  "verseRefs": [
+   "Lucas 9:23"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lucas 9:20–26"
+ ],
+ "verses": [
+  {
+   "ref": "Lucas 9:20",
+   "text": "E lhes perguntou: E vocês, quem dizem que eu sou? Então, Pedro respondeu: O Cristo de Deus."
+  },
+  {
+   "ref": "Lucas 9:21",
+   "text": "E, advertindo-os, ordenou que a ninguém fizessem tal declaração a respeito dele."
+  },
+  {
+   "ref": "Lucas 9:22",
+   "text": "Dizendo: É necessário que o Filho do Homem sofra muitas coisas, seja rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas; seja morto e, no terceiro dia, ressuscite."
+  },
+  {
+   "ref": "Lucas 9:23",
+   "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+  },
+  {
+   "ref": "Lucas 9:24",
+   "text": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará."
+  },
+  {
+   "ref": "Lucas 9:25",
+   "text": "Pois que aproveita ao homem ganhar o mundo inteiro, se vier a se perder ou causar dano a si mesmo?"
+  },
+  {
+   "ref": "Lucas 9:26",
+   "text": "Porque qualquer um que se envergonhar de mim e das minhas palavras, dele também se envergonhará o Filho do Homem, quando vier em sua glória, e na do Pai e dos santos anjos."
+  }
+ ]
+}
+</cena>

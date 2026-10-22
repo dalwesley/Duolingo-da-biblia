@@ -1,0 +1,4059 @@
+[
+  {
+    "id": "mateus-sem-mt-01-rei-prometido-01",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 1:19, José resolveu deixar Maria secretamente por não querer infamá-la",
+    "prompt": "Em Mateus 1:19, José resolveu deixar Maria secretamente por não querer infamá-la",
+    "cue": "Em Mateus 1:19, José resolveu deixar Maria secretamente por não querer infamá-la",
+    "verseRef": "Mateus 1:19",
+    "passageText": "Então José, seu esposo, sendo justo e não querendo infamá-la, resolveu deixá-la secretamente.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "resolveu deixá-la secretamente",
+    "feedbackCorrect": "José era justo e, sem querer infamar Maria, resolveu deixá-la em segredo.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 1:19 e veja a decisão tomada por José."
+    },
+    "hint": "Olhe a decisão de José.",
+    "learningObjective": "Observar a decisão de José diante da gravidez de Maria.",
+    "evidence": [
+      "Mateus 1:19"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-01-rei-prometido-02",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 1:18, toque por quem Maria achou-se grávida.",
+    "prompt": "Em Mateus 1:18, toque por quem Maria achou-se grávida.",
+    "cue": "Em Mateus 1:18, toque por quem Maria achou-se grávida.",
+    "verseRef": "Mateus 1:18",
+    "passageText": "O nascimento de Jesus Cristo ocorreu da seguinte maneira: Maria, sua mãe, estava desposada com José; sem que tivessem coabitado, ela achou-se grávida pelo Espírito Santo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maria"
+      },
+      {
+        "id": "b",
+        "text": "José"
+      },
+      {
+        "id": "c",
+        "text": "Espírito Santo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ela achou-se grávida pelo Espírito Santo",
+    "feedbackCorrect": "O texto diz que Maria achou-se grávida pelo Espírito Santo.",
+    "feedbackWrong": {
+      "a": "Maria é quem achou-se grávida, não a origem da gravidez.",
+      "b": "José ainda não havia coabitado com Maria."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Identificar a origem da gravidez de Maria no texto.",
+    "evidence": [
+      "Mateus 1:18"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-01-rei-prometido-03",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 1:20, quem apareceu a José em um sonho?",
+    "prompt": "Segundo Mateus 1:20, quem apareceu a José em um sonho?",
+    "cue": "Segundo Mateus 1:20, quem apareceu a José em um sonho?",
+    "verseRef": "Mateus 1:20",
+    "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um anjo do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Um sacerdote do templo"
+      },
+      {
+        "id": "c",
+        "text": "Um parente de Davi"
+      },
+      {
+        "id": "d",
+        "text": "Um profeta de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lhe apareceu um anjo do Senhor",
+    "feedbackCorrect": "Enquanto José refletia, um anjo do Senhor lhe apareceu em sonho.",
+    "feedbackWrong": {
+      "b": "Nenhum sacerdote aparece nesta cena do sonho.",
+      "c": "Filho de Davi é José, a quem o mensageiro se dirige.",
+      "d": "Quem aparece em sonho é um mensageiro do Senhor, não um profeta."
+    },
+    "hint": "Veja quem surge enquanto José reflete.",
+    "learningObjective": "Observar quem fala com José no sonho.",
+    "evidence": [
+      "Mateus 1:20"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-01-rei-prometido-04",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 1:20 na ordem do texto.",
+    "prompt": "Monte Mateus 1:20 na ordem do texto.",
+    "cue": "Monte Mateus 1:20 na ordem do texto.",
+    "verseRef": "Mateus 1:20",
+    "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em um sonho lhe apareceu um anjo do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "não temas receber Maria"
+      },
+      {
+        "id": "c",
+        "text": "o que nela foi gerado é do Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em um sonho lhe apareceu um anjo do Senhor",
+    "feedbackCorrect": "Primeiro o sonho, depois o chamado a não temer e a explicação da gravidez.",
+    "feedbackWrong": {
+      "default": "Comece pelo sonho; a explicação sobre o filho fecha o versículo."
+    },
+    "hint": "O versículo começa com José refletindo.",
+    "learningObjective": "Reconhecer a sequência da fala do anjo em Mateus 1:20.",
+    "evidence": [
+      "Mateus 1:20"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-01-rei-prometido-05",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 1:21, que nome o filho de Maria deve receber?",
+    "prompt": "Em Mateus 1:21, que nome o filho de Maria deve receber?",
+    "cue": "Em Mateus 1:21, que nome o filho de Maria deve receber?",
+    "verseRef": "Mateus 1:21",
+    "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "template": "Ela dará à luz um filho e você lhe porá o nome de ___, porque ele salvará o seu povo dos seus pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "José"
+      },
+      {
+        "id": "b",
+        "text": "Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Davi"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "você lhe porá o nome de Jesus",
+    "feedbackCorrect": "O anjo manda pôr no filho um nome ligado à sua missão de salvar.",
+    "feedbackWrong": {
+      "a": "José é quem recebe a ordem de dar o nome.",
+      "c": "Davi é o antepassado de José, não o nome do filho."
+    },
+    "hint": "Veja o nome anunciado pelo anjo.",
+    "learningObjective": "Lembrar o nome anunciado para o filho de Maria.",
+    "evidence": [
+      "Mateus 1:21"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-01-rei-prometido-06",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 1:23 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:23 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:23 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "passageA": {
+      "ref": "Mateus 1:23",
+      "text": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No filho que nasce, Deus está presente com seu povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus está com seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus permanece distante do povo"
+      },
+      {
+        "id": "c",
+        "text": "José lidera o povo sozinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus conosco",
+    "feedbackCorrect": "O nome anunciado é explicado no texto como Deus presente com seu povo.",
+    "feedbackWrong": {
+      "b": "O nome aponta presença de Deus, não distância.",
+      "c": "José obedece, mas quem está com o povo é Deus."
+    },
+    "hint": "Veja a explicação dada ao nome.",
+    "learningObjective": "Ligar Mateus 1:23 à presença de Deus com seu povo.",
+    "evidence": [
+      "Mateus 1:23"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-01-rei-prometido-01",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 1:20, o anjo diz a José que ele deve temer receber Maria como sua mulher",
+    "prompt": "Em Mateus 1:20, o anjo diz a José que ele deve temer receber Maria como sua mulher",
+    "cue": "Em Mateus 1:20, o anjo diz a José que ele deve temer receber Maria como sua mulher",
+    "verseRef": "Mateus 1:20",
+    "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não temas receber Maria",
+    "feedbackCorrect": "O anjo diz justamente o contrário, chamando José a não temer.",
+    "feedbackWrong": {
+      "true": "Releia a ordem do anjo a José, filho de Davi."
+    },
+    "hint": "Repare na ordem dada a José.",
+    "learningObjective": "Compreender a ordem do anjo a José no sonho.",
+    "evidence": [
+      "Mateus 1:20"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-01-rei-prometido-02",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 1:20, toque a palavra que explica a origem do que foi gerado em Maria.",
+    "prompt": "Em Mateus 1:20, toque a palavra que explica a origem do que foi gerado em Maria.",
+    "cue": "Em Mateus 1:20, toque a palavra que explica a origem do que foi gerado em Maria.",
+    "verseRef": "Mateus 1:20",
+    "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porque"
+      },
+      {
+        "id": "b",
+        "text": "sonho"
+      },
+      {
+        "id": "c",
+        "text": "anjo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque o que nela foi gerado",
+    "feedbackCorrect": "Essa palavra abre a explicação do anjo sobre a gravidez de Maria.",
+    "feedbackWrong": {
+      "b": "O sonho é o meio da revelação, não a explicação.",
+      "c": "O anjo é quem fala; a explicação vem depois dessa palavra."
+    },
+    "hint": "Procure uma palavra curta antes da explicação.",
+    "learningObjective": "Reconhecer a palavra que introduz a explicação do anjo.",
+    "evidence": [
+      "Mateus 1:20"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-01-rei-prometido-03",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 1:21 explica o nome dado ao filho de Maria?",
+    "prompt": "Como Mateus 1:21 explica o nome dado ao filho de Maria?",
+    "cue": "Como Mateus 1:21 explica o nome dado ao filho de Maria?",
+    "verseRef": "Mateus 1:20–21",
+    "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo. Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O nome marca a cidade onde ele nasceria"
+      },
+      {
+        "id": "b",
+        "text": "O nome homenageia um antepassado de José"
+      },
+      {
+        "id": "c",
+        "text": "O nome resume a missão de resgatar pecadores"
+      },
+      {
+        "id": "d",
+        "text": "O nome foi escolhido para honrar Maria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele salvará o seu povo dos seus pecados",
+    "feedbackCorrect": "O nome é explicado pela missão do filho em favor do seu povo.",
+    "feedbackWrong": {
+      "a": "Nenhuma cidade é citada como motivo do nome.",
+      "b": "O texto liga o nome à missão do filho, não a uma homenagem.",
+      "d": "Quem anuncia o nome é o anjo, ligando-o à missão."
+    },
+    "hint": "Ligue o nome ao motivo apresentado pelo anjo.",
+    "learningObjective": "Relacionar o nome do filho à sua missão anunciada.",
+    "evidence": [
+      "Mateus 1:20–21"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-01-rei-prometido-04",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 1:18–24?",
+    "prompt": "Como avança a cena em Mateus 1:18–24?",
+    "cue": "Como avança a cena em Mateus 1:18–24?",
+    "verseRef": "Mateus 1:18–19",
+    "passageText": "O nascimento de Jesus Cristo ocorreu da seguinte maneira: Maria, sua mãe, estava desposada com José; sem que tivessem coabitado, ela achou-se grávida pelo Espírito Santo. Então José, seu esposo, sendo justo e não querendo infamá-la, resolveu deixá-la secretamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "José pensa em deixar Maria"
+      },
+      {
+        "id": "b",
+        "text": "O anjo anuncia nome e missão"
+      },
+      {
+        "id": "c",
+        "text": "José obedece e recebe Maria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "resolveu deixá-la secretamente",
+    "feedbackCorrect": "A dúvida de José é respondida pelo anjo e termina em obediência.",
+    "feedbackWrong": {
+      "default": "Comece pelo plano de José; a obediência dele fecha a cena."
+    },
+    "hint": "A obediência de José é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da dúvida à obediência de José.",
+    "evidence": [
+      "Mateus 1:18–19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-01-rei-prometido-05",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 1:22, para que tudo isso aconteceu, segundo o texto?",
+    "prompt": "Em Mateus 1:22, para que tudo isso aconteceu, segundo o texto?",
+    "cue": "Em Mateus 1:22, para que tudo isso aconteceu, segundo o texto?",
+    "verseRef": "Mateus 1:22",
+    "passageText": "Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta:",
+    "template": "Tudo isso aconteceu para que se ___ o que havia sido dito pelo Senhor, por intermédio do profeta:",
+    "options": [
+      {
+        "id": "a",
+        "text": "repetisse"
+      },
+      {
+        "id": "b",
+        "text": "cumprisse"
+      },
+      {
+        "id": "c",
+        "text": "encerrasse"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que se cumprisse",
+    "feedbackCorrect": "Mateus mostra o nascimento ligado ao que o Senhor já havia dito.",
+    "feedbackWrong": {
+      "a": "Não é mera repetição; é a palavra anterior se realizando.",
+      "c": "O texto fala de algo que se realiza, não que se encerra."
+    },
+    "hint": "Veja a finalidade indicada no versículo.",
+    "learningObjective": "Compreender que Mateus liga o nascimento à palavra anterior.",
+    "evidence": [
+      "Mateus 1:22"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-01-rei-prometido-06",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 1:21 a Lucas 1:31?",
+    "prompt": "O que liga Mateus 1:21 a Lucas 1:31?",
+    "cue": "O que liga Mateus 1:21 a Lucas 1:31?",
+    "verseRef": "Mateus 1:21",
+    "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "passageA": {
+      "ref": "Mateus 1:21",
+      "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+    },
+    "passageB": {
+      "ref": "Lucas 1:31",
+      "text": "Eis que você conceberá e dará à luz um filho, a quem dará o nome de Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um nome escolhido pela família"
+      },
+      {
+        "id": "b",
+        "text": "O nome anunciado pelo anjo"
+      },
+      {
+        "id": "c",
+        "text": "Dois filhos com nomes trocados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "você lhe porá o nome de Jesus",
+    "feedbackCorrect": "Nos dois relatos, um mensageiro anuncia antes o nome do filho.",
+    "feedbackWrong": {
+      "a": "Nos dois textos o nome vem anunciado, não escolhido pela família.",
+      "c": "Os dois relatos anunciam o mesmo filho e o mesmo nome."
+    },
+    "hint": "Compare quem anuncia o nome nos dois trechos.",
+    "learningObjective": "Relacionar os anúncios do nome do filho em Mateus e Lucas.",
+    "evidence": [
+      "Mateus 1:21",
+      "Lucas 1:31"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-01-rei-prometido-01",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 1:23 apresenta o filho anunciado como Deus presente com seu povo",
+    "prompt": "Mateus 1:23 apresenta o filho anunciado como Deus presente com seu povo",
+    "cue": "Mateus 1:23 apresenta o filho anunciado como Deus presente com seu povo",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deus conosco",
+    "feedbackCorrect": "O próprio texto traduz o nome e mostra Deus presente no filho.",
+    "feedbackWrong": {
+      "false": "Releia a explicação que o texto dá ao nome anunciado."
+    },
+    "hint": "Veja a explicação entre parênteses.",
+    "learningObjective": "Interpretar o nome anunciado à luz da explicação do texto.",
+    "evidence": [
+      "Mateus 1:23"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-01-rei-prometido-02",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 1:23, toque o nome que mostra Deus presente com seu povo.",
+    "prompt": "Em Mateus 1:23, toque o nome que mostra Deus presente com seu povo.",
+    "cue": "Em Mateus 1:23, toque o nome que mostra Deus presente com seu povo.",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "Emanuel"
+      },
+      {
+        "id": "c",
+        "text": "virgem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele será chamado pelo nome de Emanuel",
+    "feedbackCorrect": "Esse é o nome explicado no texto como Deus presente com o povo.",
+    "feedbackWrong": {
+      "a": "Filho descreve quem nasce; o nome próprio vem em seguida.",
+      "c": "A virgem é quem concebe; o nome do filho vem depois."
+    },
+    "hint": "Procure o nome próprio no fim do versículo.",
+    "learningObjective": "Sustentar com o texto a presença de Deus no filho.",
+    "evidence": [
+      "Mateus 1:23"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-01-rei-prometido-03",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 1:22 sustenta sobre o nascimento de Jesus?",
+    "prompt": "Que leitura Mateus 1:22 sustenta sobre o nascimento de Jesus?",
+    "cue": "Que leitura Mateus 1:22 sustenta sobre o nascimento de Jesus?",
+    "verseRef": "Mateus 1:22",
+    "passageText": "Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um sinal sem ligação com os profetas"
+      },
+      {
+        "id": "b",
+        "text": "Uma história criada apenas por José"
+      },
+      {
+        "id": "c",
+        "text": "Um acaso que Mateus tenta explicar depois"
+      },
+      {
+        "id": "d",
+        "text": "O cumprimento do que Deus já havia dito"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "para que se cumprisse o que havia sido dito pelo Senhor",
+    "feedbackCorrect": "Mateus apresenta o nascimento como realização da palavra anterior de Deus.",
+    "feedbackWrong": {
+      "a": "O versículo cita justamente o que foi dito pelo profeta.",
+      "b": "José obedece, mas a palavra citada é anterior a ele.",
+      "c": "O texto fala de propósito e cumprimento, não de acaso."
+    },
+    "hint": "Veja a finalidade que Mateus atribui ao acontecimento.",
+    "learningObjective": "Escolher a interpretação que Mateus dá ao nascimento.",
+    "evidence": [
+      "Mateus 1:22"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-01-rei-prometido-04",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Mateus 1:22–23?",
+    "prompt": "Qual sequência revela o sentido de Mateus 1:22–23?",
+    "cue": "Qual sequência revela o sentido de Mateus 1:22–23?",
+    "verseRef": "Mateus 1:22–23",
+    "passageText": "Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta: A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fala antes pelo profeta"
+      },
+      {
+        "id": "b",
+        "text": "A virgem concebe e dá à luz"
+      },
+      {
+        "id": "c",
+        "text": "O filho é chamado Deus conosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A virgem conceberá e dará à luz um filho",
+    "feedbackCorrect": "Palavra anterior, nascimento anunciado e nome que revela presença.",
+    "feedbackWrong": {
+      "default": "Comece pela palavra do profeta; o nome do filho fecha a sequência."
+    },
+    "hint": "A palavra do profeta vem antes do nascimento.",
+    "learningObjective": "Ver a sequência palavra, nascimento e presença em Mateus.",
+    "evidence": [
+      "Mateus 1:22–23"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-01-rei-prometido-05",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 1:21, o que o filho fará pelo seu povo?",
+    "prompt": "Em Mateus 1:21, o que o filho fará pelo seu povo?",
+    "cue": "Em Mateus 1:21, o que o filho fará pelo seu povo?",
+    "verseRef": "Mateus 1:21",
+    "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "template": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele ___ o seu povo dos seus pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "julgará"
+      },
+      {
+        "id": "b",
+        "text": "conduzirá"
+      },
+      {
+        "id": "c",
+        "text": "salvará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele salvará o seu povo dos seus pecados",
+    "feedbackCorrect": "A missão do filho é voltada aos pecados do seu povo.",
+    "feedbackWrong": {
+      "a": "O anúncio fala de resgate dos pecados, não de juízo aqui.",
+      "b": "Conduzir é vago; o texto nomeia uma ação ligada aos pecados."
+    },
+    "hint": "Veja a ação ligada aos pecados do povo.",
+    "learningObjective": "Lembrar a ação que define a missão do filho.",
+    "evidence": [
+      "Mateus 1:21"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-01-rei-prometido-06",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 1:23 a Isaías 7:14?",
+    "prompt": "O que liga Mateus 1:23 a Isaías 7:14?",
+    "cue": "O que liga Mateus 1:23 a Isaías 7:14?",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "passageA": {
+      "ref": "Mateus 1:23",
+      "text": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+    },
+    "passageB": {
+      "ref": "Isaías 7:14",
+      "text": "Portanto, o próprio Senhor vos dará um sinal: Eis que a virgem conceberá e dará à luz um filho, e lhe porá o nome de Emanuel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um nome sem texto anterior"
+      },
+      {
+        "id": "b",
+        "text": "Emanuel anunciado pelo profeta"
+      },
+      {
+        "id": "c",
+        "text": "Um sonho contado por José"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele será chamado pelo nome de Emanuel",
+    "feedbackCorrect": "Mateus cita o anúncio anterior do filho chamado por esse nome.",
+    "feedbackWrong": {
+      "a": "Mateus cita um texto anterior ao apresentar esse nome.",
+      "c": "O sonho é de José; a ponte aqui é o anúncio do profeta."
+    },
+    "hint": "Veja de onde Mateus tira as palavras citadas.",
+    "learningObjective": "Ligar o nascimento à palavra do profeta citada por Mateus.",
+    "evidence": [
+      "Mateus 1:23",
+      "Isaías 7:14"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-02-reino-ensino-01",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 5:5, Jesus diz que os mansos serão consolados",
+    "prompt": "Em Mateus 5:5, Jesus diz que os mansos serão consolados",
+    "cue": "Em Mateus 5:5, Jesus diz que os mansos serão consolados",
+    "verseRef": "Mateus 5:5",
+    "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Bem-aventurados os mansos, porque herdarão a terra",
+    "feedbackCorrect": "Aos mansos Jesus promete a terra; consolo é prometido aos que choram.",
+    "feedbackWrong": {
+      "true": "Compare a promessa aos mansos com a feita aos que choram."
+    },
+    "hint": "Compare os versículos 4 e 5.",
+    "learningObjective": "Distinguir as promessas de Mateus 5:4 e 5:5.",
+    "evidence": [
+      "Mateus 5:5"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-02-reino-ensino-02",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 5:3, toque quem Jesus declara dono do reino dos céus.",
+    "prompt": "Em Mateus 5:3, toque quem Jesus declara dono do reino dos céus.",
+    "cue": "Em Mateus 5:3, toque quem Jesus declara dono do reino dos céus.",
+    "verseRef": "Mateus 5:3",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bem-aventurados"
+      },
+      {
+        "id": "b",
+        "text": "reino dos céus"
+      },
+      {
+        "id": "c",
+        "text": "humildes de espírito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Bem-aventurados os humildes de espírito",
+    "feedbackCorrect": "Jesus liga o reino dos céus a um grupo marcado pela humildade.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre a frase; o grupo vem em seguida.",
+      "b": "Isso é o que eles recebem, não quem são eles."
+    },
+    "hint": "Procure o grupo logo após a primeira palavra.",
+    "learningObjective": "Identificar a quem pertence o reino dos céus.",
+    "evidence": [
+      "Mateus 5:3"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-02-reino-ensino-03",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 5:4, o que acontecerá aos que choram?",
+    "prompt": "Segundo Mateus 5:4, o que acontecerá aos que choram?",
+    "cue": "Segundo Mateus 5:4, o que acontecerá aos que choram?",
+    "verseRef": "Mateus 5:4",
+    "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Herdarão a terra"
+      },
+      {
+        "id": "b",
+        "text": "Alcançarão misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "Verão a Deus"
+      },
+      {
+        "id": "d",
+        "text": "Serão consolados"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "porque serão consolados",
+    "feedbackCorrect": "Jesus promete consolo justamente aos que choram.",
+    "feedbackWrong": {
+      "a": "Herdar a terra é a promessa aos mansos, no versículo seguinte.",
+      "b": "Misericórdia é prometida aos misericordiosos (5:7).",
+      "c": "Ver a Deus é a promessa aos puros de coração (5:8)."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Observar a promessa feita aos que choram.",
+    "evidence": [
+      "Mateus 5:4"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-02-reino-ensino-04",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 5:3–4 na ordem do texto.",
+    "prompt": "Monte Mateus 5:3–4 na ordem do texto.",
+    "cue": "Monte Mateus 5:3–4 na ordem do texto.",
+    "verseRef": "Mateus 5:3–4",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bem-aventurados os humildes de espírito"
+      },
+      {
+        "id": "b",
+        "text": "porque deles é o reino dos céus"
+      },
+      {
+        "id": "c",
+        "text": "Bem-aventurados os que choram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bem-aventurados os humildes de espírito",
+    "feedbackCorrect": "Primeiro os humildes e sua promessa; depois, os que choram.",
+    "feedbackWrong": {
+      "default": "Comece pelos humildes de espírito; os que choram vêm no versículo 4."
+    },
+    "hint": "O reino dos céus fecha o versículo 3.",
+    "learningObjective": "Reconhecer a sequência de Mateus 5:3–4.",
+    "evidence": [
+      "Mateus 5:3–4"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-02-reino-ensino-05",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 5:4, que promessa Jesus faz aos que choram?",
+    "prompt": "Em Mateus 5:4, que promessa Jesus faz aos que choram?",
+    "cue": "Em Mateus 5:4, que promessa Jesus faz aos que choram?",
+    "verseRef": "Mateus 5:4",
+    "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+    "template": "Bem-aventurados os que choram, porque serão ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "julgados"
+      },
+      {
+        "id": "b",
+        "text": "esquecidos"
+      },
+      {
+        "id": "c",
+        "text": "consolados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "porque serão consolados",
+    "feedbackCorrect": "Jesus promete consolo a quem chora, não abandono.",
+    "feedbackWrong": {
+      "a": "O versículo fala de consolo para quem chora.",
+      "b": "A promessa é de amparo, não de esquecimento."
+    },
+    "hint": "Veja o que Deus fará por quem chora.",
+    "learningObjective": "Lembrar a promessa feita aos que choram.",
+    "evidence": [
+      "Mateus 5:4"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-02-reino-ensino-06",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 5:6 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 5:6 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 5:6 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 5:6",
+    "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+    "passageA": {
+      "ref": "Mateus 5:6",
+      "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os discípulos desejam a justiça e Deus promete fartá-los."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar justiça é perda de tempo"
+      },
+      {
+        "id": "b",
+        "text": "Deus farta quem busca justiça"
+      },
+      {
+        "id": "c",
+        "text": "A justiça nunca será alcançada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois serão fartos",
+    "feedbackCorrect": "Ao desejo por justiça corresponde a promessa de Deus fartar.",
+    "feedbackWrong": {
+      "a": "Jesus chama de bem-aventurado quem tem esse desejo.",
+      "c": "O texto promete que serão fartos, não que ficarão vazios."
+    },
+    "hint": "Veja a promessa no fim do versículo.",
+    "learningObjective": "Ligar o desejo de justiça à promessa de Deus.",
+    "evidence": [
+      "Mateus 5:6"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-02-reino-ensino-01",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 5:3–4, cada bem-aventurança liga um traço do discípulo a uma promessa de Deus",
+    "prompt": "Em Mateus 5:3–4, cada bem-aventurança liga um traço do discípulo a uma promessa de Deus",
+    "cue": "Em Mateus 5:3–4, cada bem-aventurança liga um traço do discípulo a uma promessa de Deus",
+    "verseRef": "Mateus 5:3–4",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "porque deles é o reino dos céus",
+    "feedbackCorrect": "Cada frase apresenta um grupo e, em seguida, o que Deus promete a ele.",
+    "feedbackWrong": {
+      "false": "Observe como cada frase se divide em grupo e promessa."
+    },
+    "hint": "Repare na estrutura que se repete.",
+    "learningObjective": "Compreender a estrutura das bem-aventuranças.",
+    "evidence": [
+      "Mateus 5:3–4"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-02-reino-ensino-02",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 5:6, toque a palavra que introduz a promessa aos famintos de justiça.",
+    "prompt": "Em Mateus 5:6, toque a palavra que introduz a promessa aos famintos de justiça.",
+    "cue": "Em Mateus 5:6, toque a palavra que introduz a promessa aos famintos de justiça.",
+    "verseRef": "Mateus 5:6",
+    "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pois"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois serão fartos",
+    "feedbackCorrect": "Essa palavrinha vira a frase do desejo para a promessa.",
+    "feedbackWrong": {
+      "b": "Fome descreve o desejo, não introduz a promessa.",
+      "c": "Justiça é o alvo do desejo; a promessa vem depois."
+    },
+    "hint": "Procure uma palavra curta antes da promessa.",
+    "learningObjective": "Reconhecer a palavra que liga desejo e promessa.",
+    "evidence": [
+      "Mateus 5:6"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-02-reino-ensino-03",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 5:6 relaciona desejo e promessa no ensino de Jesus?",
+    "prompt": "Como Mateus 5:6 relaciona desejo e promessa no ensino de Jesus?",
+    "cue": "Como Mateus 5:6 relaciona desejo e promessa no ensino de Jesus?",
+    "verseRef": "Mateus 5:6",
+    "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O desejo por justiça fica sempre sem resposta"
+      },
+      {
+        "id": "b",
+        "text": "Quem busca justiça recebe de Deus o que procura"
+      },
+      {
+        "id": "c",
+        "text": "Quem busca justiça deve se fartar sozinho"
+      },
+      {
+        "id": "d",
+        "text": "A promessa é dada a quem não deseja nada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois serão fartos",
+    "feedbackCorrect": "Ao desejo por justiça, Jesus responde com a promessa de fartura.",
+    "feedbackWrong": {
+      "a": "A promessa afirma justamente uma resposta ao desejo.",
+      "c": "A frase está na voz passiva; é Deus quem farta.",
+      "d": "A promessa é ligada a quem tem fome e sede."
+    },
+    "hint": "Ligue a primeira metade da frase à segunda.",
+    "learningObjective": "Relacionar desejo de justiça e promessa em Mateus 5:6.",
+    "evidence": [
+      "Mateus 5:6"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-02-reino-ensino-04",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em Mateus 5:3–9?",
+    "prompt": "Como avança o ensino em Mateus 5:3–9?",
+    "cue": "Como avança o ensino em Mateus 5:3–9?",
+    "verseRef": "Mateus 5:3–4",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Humildes recebem o Reino"
+      },
+      {
+        "id": "b",
+        "text": "Enlutados recebem consolo"
+      },
+      {
+        "id": "c",
+        "text": "Pacificador é chamado filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bem-aventurados os que choram",
+    "feedbackCorrect": "O ensino caminha dos humildes aos que choram e chega ao pacificador.",
+    "feedbackWrong": {
+      "default": "Comece pelos humildes do versículo 3; o pacificador está no 9."
+    },
+    "hint": "O pacificador aparece por último no trecho.",
+    "learningObjective": "Compreender o avanço das bem-aventuranças até 5:9.",
+    "evidence": [
+      "Mateus 5:3–4"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-02-reino-ensino-05",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+    "prompt": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+    "cue": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+    "verseRef": "Mateus 5:7",
+    "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+    "template": "Bem-aventurados os misericordiosos, porque alcançarão ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "consolo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque alcançarão misericórdia",
+    "feedbackCorrect": "Quem pratica misericórdia é alcançado por ela, segundo Jesus.",
+    "feedbackWrong": {
+      "a": "Terra é a promessa aos mansos (5:5).",
+      "c": "Consolo é a promessa aos que choram (5:4)."
+    },
+    "hint": "A resposta repete a marca do grupo citado.",
+    "learningObjective": "Compreender a correspondência em Mateus 5:7.",
+    "evidence": [
+      "Mateus 5:7"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-02-reino-ensino-06",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 5:3 a Lucas 6:20?",
+    "prompt": "O que liga Mateus 5:3 a Lucas 6:20?",
+    "cue": "O que liga Mateus 5:3 a Lucas 6:20?",
+    "verseRef": "Mateus 5:3",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "passageA": {
+      "ref": "Mateus 5:3",
+      "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+    },
+    "passageB": {
+      "ref": "Lucas 6:20",
+      "text": "E, erguendo os olhos para os seus discípulos, disse-lhes: Bem-aventurados sois vós, os pobres, porque vosso é o reino de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino pertence aos poderosos"
+      },
+      {
+        "id": "b",
+        "text": "O reino pertence aos humildes"
+      },
+      {
+        "id": "c",
+        "text": "O reino dispensa os pobres"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "deles é o reino dos céus",
+    "feedbackCorrect": "Nos dois ensinos, o Reino é anunciado a quem é pobre e humilde.",
+    "feedbackWrong": {
+      "a": "Os dois textos ligam o Reino aos pobres, não aos poderosos.",
+      "c": "Os pobres são justamente os destinatários da promessa."
+    },
+    "hint": "Compare quem recebe o Reino nos dois textos.",
+    "learningObjective": "Relacionar o ensino de Jesus em Mateus e Lucas.",
+    "evidence": [
+      "Mateus 5:3",
+      "Lucas 6:20"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-02-reino-ensino-01",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 5:3 ensina que a humildade de espírito é um preço pago para comprar o reino dos céus",
+    "prompt": "Mateus 5:3 ensina que a humildade de espírito é um preço pago para comprar o reino dos céus",
+    "cue": "Mateus 5:3 ensina que a humildade de espírito é um preço pago para comprar o reino dos céus",
+    "verseRef": "Mateus 5:3",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "deles é o reino dos céus",
+    "feedbackCorrect": "Jesus declara que o Reino já é dos humildes; não há compra nem preço.",
+    "feedbackWrong": {
+      "true": "Releia o verbo no presente usado por Jesus no versículo."
+    },
+    "hint": "Repare no tempo do verbo usado.",
+    "learningObjective": "Rejeitar a leitura de merecimento em Mateus 5:3.",
+    "evidence": [
+      "Mateus 5:3"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-02-reino-ensino-02",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 5:8, toque o trecho que descreve quem verá a Deus.",
+    "prompt": "Em Mateus 5:8, toque o trecho que descreve quem verá a Deus.",
+    "cue": "Em Mateus 5:8, toque o trecho que descreve quem verá a Deus.",
+    "verseRef": "Mateus 5:8",
+    "passageText": "Bem-aventurados os puros de coração, pois verão a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "verão a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Bem-aventurados"
+      },
+      {
+        "id": "c",
+        "text": "puros de coração"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Bem-aventurados os puros de coração",
+    "feedbackCorrect": "A pureza de coração marca quem Jesus liga à promessa de ver Deus.",
+    "feedbackWrong": {
+      "a": "Isso é a promessa, não a descrição do grupo.",
+      "b": "Essa palavra abre todas as frases do trecho."
+    },
+    "hint": "Procure a descrição do grupo, não a promessa.",
+    "learningObjective": "Sustentar com o texto quem verá a Deus.",
+    "evidence": [
+      "Mateus 5:8"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-02-reino-ensino-03",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 5:3–4 sustenta sobre a vida no Reino?",
+    "prompt": "Que leitura Mateus 5:3–4 sustenta sobre a vida no Reino?",
+    "cue": "Que leitura Mateus 5:3–4 sustenta sobre a vida no Reino?",
+    "verseRef": "Mateus 5:3–4",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Reino é prêmio para quem se basta sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Chorar e ser manso afastam a pessoa de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus acolhe quem depende dele e promete responder"
+      },
+      {
+        "id": "d",
+        "text": "As promessas valem só para líderes religiosos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Bem-aventurados os humildes de espírito",
+    "feedbackCorrect": "Humildes, enlutados e famintos de justiça são acolhidos com promessas.",
+    "feedbackWrong": {
+      "a": "O Reino é dos humildes, não de quem se basta.",
+      "b": "Quem chora recebe promessa de consolo, não afastamento.",
+      "d": "Jesus fala a discípulos e multidões, sem restringir a líderes."
+    },
+    "hint": "Veja quem recebe promessa em cada frase.",
+    "learningObjective": "Escolher a interpretação sustentada pelas bem-aventuranças.",
+    "evidence": [
+      "Mateus 5:3–4"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-02-reino-ensino-04",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Mateus 5:3–9?",
+    "prompt": "Qual sequência revela o sentido de Mateus 5:3–9?",
+    "cue": "Qual sequência revela o sentido de Mateus 5:3–9?",
+    "verseRef": "Mateus 5:8–9",
+    "passageText": "Bem-aventurados os puros de coração, pois verão a Deus. Bem-aventurados os pacificadores, porque serão chamados filhos de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Humildes recebem o Reino de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Puros de coração veem a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Pacificador é chamado filho de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bem-aventurados os puros de coração, pois verão a Deus",
+    "feedbackCorrect": "Reino, visão de Deus e filiação marcam o caminho do ensino.",
+    "feedbackWrong": {
+      "default": "Comece pelo Reino em 5:3; a filiação do pacificador vem em 5:9."
+    },
+    "hint": "Siga a ordem dos versículos de 3 a 9.",
+    "learningObjective": "Ver o encadeamento das promessas do Reino.",
+    "evidence": [
+      "Mateus 5:8–9"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-02-reino-ensino-05",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 5:5, o que os mansos farão em relação à terra?",
+    "prompt": "Em Mateus 5:5, o que os mansos farão em relação à terra?",
+    "cue": "Em Mateus 5:5, o que os mansos farão em relação à terra?",
+    "verseRef": "Mateus 5:5",
+    "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+    "template": "Bem-aventurados os mansos, porque ___ a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perderão"
+      },
+      {
+        "id": "b",
+        "text": "comprarão"
+      },
+      {
+        "id": "c",
+        "text": "herdarão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "porque herdarão a terra",
+    "feedbackCorrect": "A terra aparece como herança prometida, não como compra.",
+    "feedbackWrong": {
+      "a": "A promessa é de receber, não de perder a terra.",
+      "b": "Herança se recebe; o texto não fala de compra."
+    },
+    "hint": "Pense em algo que se recebe como herança.",
+    "learningObjective": "Lembrar o verbo que liga mansidão e promessa.",
+    "evidence": [
+      "Mateus 5:5"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-02-reino-ensino-06",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 5:9 a Tiago 3:18?",
+    "prompt": "O que liga Mateus 5:9 a Tiago 3:18?",
+    "cue": "O que liga Mateus 5:9 a Tiago 3:18?",
+    "verseRef": "Mateus 5:9",
+    "passageText": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus.",
+    "passageA": {
+      "ref": "Mateus 5:9",
+      "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+    },
+    "passageB": {
+      "ref": "Tiago 3:18",
+      "text": "O fruto da justiça é semeado em paz para os que promovem a paz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz ligada aos filhos de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Paz como fuga dos conflitos"
+      },
+      {
+        "id": "c",
+        "text": "Filhos de Deus evitam a justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Bem-aventurados os pacificadores",
+    "feedbackCorrect": "Nos dois textos, a paz aparece ligada à justiça e à filiação.",
+    "feedbackWrong": {
+      "b": "Pacificador age pela paz; não foge dos conflitos.",
+      "c": "Tiago liga a paz justamente ao fruto da justiça."
+    },
+    "hint": "Compare o fruto de quem semeia em paz.",
+    "learningObjective": "Ligar o pacificador de Jesus ao ensino de Tiago.",
+    "evidence": [
+      "Mateus 5:9",
+      "Tiago 3:18"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-03-autoridade-01",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 8:24, Jesus dormia enquanto o barco era agitado pelas ondas",
+    "prompt": "Em Mateus 8:24, Jesus dormia enquanto o barco era agitado pelas ondas",
+    "cue": "Em Mateus 8:24, Jesus dormia enquanto o barco era agitado pelas ondas",
+    "verseRef": "Mateus 8:24",
+    "passageText": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "entretanto, Jesus dormia",
+    "feedbackCorrect": "A tempestade agitava o barco, e o texto diz que Jesus dormia.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Mateus 8:24 e veja o que Jesus fazia."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar Jesus dormindo durante a tempestade.",
+    "evidence": [
+      "Mateus 8:24"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-03-autoridade-02",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 8:24, toque o que Jesus fazia durante a tempestade.",
+    "prompt": "Em Mateus 8:24, toque o que Jesus fazia durante a tempestade.",
+    "cue": "Em Mateus 8:24, toque o que Jesus fazia durante a tempestade.",
+    "verseRef": "Mateus 8:24",
+    "passageText": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus dormia"
+      },
+      {
+        "id": "b",
+        "text": "pelas ondas"
+      },
+      {
+        "id": "c",
+        "text": "grande tempestade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "entretanto, Jesus dormia",
+    "feedbackCorrect": "Enquanto o barco era agitado, o texto mostra Jesus dormindo.",
+    "feedbackWrong": {
+      "b": "As ondas agitavam o barco; não descrevem Jesus.",
+      "c": "A tempestade é o cenário, não o que Jesus fazia."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Identificar o que Jesus fazia na tempestade.",
+    "evidence": [
+      "Mateus 8:24"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-03-autoridade-03",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 8:25, o que os discípulos fazem diante da tempestade?",
+    "prompt": "Segundo Mateus 8:25, o que os discípulos fazem diante da tempestade?",
+    "cue": "Segundo Mateus 8:25, o que os discípulos fazem diante da tempestade?",
+    "verseRef": "Mateus 8:25",
+    "passageText": "E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remam de volta para a margem"
+      },
+      {
+        "id": "b",
+        "text": "Dormem junto com Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Pulam do barco para nadar"
+      },
+      {
+        "id": "d",
+        "text": "Acordam Jesus clamando por socorro"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "o acordaram, clamando",
+    "feedbackCorrect": "Os discípulos se aproximam de Jesus e o acordam clamando.",
+    "feedbackWrong": {
+      "a": "O texto não fala de remos; eles buscam Jesus.",
+      "b": "Quem dormia era Jesus; os discípulos o acordam.",
+      "c": "Ninguém pula do barco nesta cena."
+    },
+    "hint": "Veja a quem os discípulos recorrem.",
+    "learningObjective": "Observar a reação dos discípulos na tempestade.",
+    "evidence": [
+      "Mateus 8:25"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-03-autoridade-04",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 8:24 na ordem do texto.",
+    "prompt": "Monte Mateus 8:24 na ordem do texto.",
+    "cue": "Monte Mateus 8:24 na ordem do texto.",
+    "verseRef": "Mateus 8:24",
+    "passageText": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E uma grande tempestade se levantou sobre o mar"
+      },
+      {
+        "id": "b",
+        "text": "o barco era agitado pelas ondas"
+      },
+      {
+        "id": "c",
+        "text": "entretanto, Jesus dormia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E uma grande tempestade se levantou sobre o mar",
+    "feedbackCorrect": "Tempestade, barco agitado e Jesus dormindo, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela tempestade; o sono de Jesus fecha o versículo."
+    },
+    "hint": "O versículo começa pela tempestade.",
+    "learningObjective": "Reconhecer a sequência de Mateus 8:24.",
+    "evidence": [
+      "Mateus 8:24"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-03-autoridade-05",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 8:25, que clamor os discípulos dirigem a Jesus?",
+    "prompt": "Em Mateus 8:25, que clamor os discípulos dirigem a Jesus?",
+    "cue": "Em Mateus 8:25, que clamor os discípulos dirigem a Jesus?",
+    "verseRef": "Mateus 8:25",
+    "passageText": "E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo!",
+    "template": "E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, ___! Estamos perecendo!",
+    "options": [
+      {
+        "id": "a",
+        "text": "salva-nos"
+      },
+      {
+        "id": "b",
+        "text": "deixa-nos"
+      },
+      {
+        "id": "c",
+        "text": "ouve-nos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Senhor, salva-nos",
+    "feedbackCorrect": "O clamor dos discípulos é um pedido direto de socorro a Jesus.",
+    "feedbackWrong": {
+      "b": "Eles pedem ajuda para não perecer, não para serem deixados.",
+      "c": "O pedido é por salvação diante do perigo, não só por atenção."
+    },
+    "hint": "Veja o pedido feito a quem dormia.",
+    "learningObjective": "Lembrar o clamor dos discípulos a Jesus.",
+    "evidence": [
+      "Mateus 8:25"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-03-autoridade-06",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 8:26 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 8:26 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 8:26 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "passageA": {
+      "ref": "Mateus 8:26",
+      "text": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus repreende os ventos e o mar, e vem uma grande calmaria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus acalma a tempestade"
+      },
+      {
+        "id": "b",
+        "text": "A tempestade vence o barco"
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos acalmam o mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "houve uma grande bonança",
+    "feedbackCorrect": "À ordem de Jesus segue uma grande calmaria sobre o mar.",
+    "feedbackWrong": {
+      "b": "O desfecho é calmaria, não a vitória da tempestade.",
+      "c": "Quem repreende ventos e mar é Jesus, não os discípulos."
+    },
+    "hint": "Veja o resultado da ordem de Jesus.",
+    "learningObjective": "Ligar Mateus 8:26 à calmaria que Jesus produz.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-03-autoridade-01",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 8:26, Jesus acalma o mar antes de falar do medo dos discípulos",
+    "prompt": "Em Mateus 8:26, Jesus acalma o mar antes de falar do medo dos discípulos",
+    "cue": "Em Mateus 8:26, Jesus acalma o mar antes de falar do medo dos discípulos",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Por que estais com medo",
+    "feedbackCorrect": "Jesus primeiro fala do medo e da fé, e só então repreende o mar.",
+    "feedbackWrong": {
+      "true": "Observe a ordem das ações dentro do mesmo versículo."
+    },
+    "hint": "Repare na ordem dentro do versículo.",
+    "learningObjective": "Compreender a ordem das ações de Jesus em 8:26.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-03-autoridade-02",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 8:26, toque a palavra que marca o passo seguinte de Jesus.",
+    "prompt": "Em Mateus 8:26, toque a palavra que marca o passo seguinte de Jesus.",
+    "cue": "Em Mateus 8:26, toque a palavra que marca o passo seguinte de Jesus.",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "medo"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "bonança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então, levantando-se, repreendeu",
+    "feedbackCorrect": "Essa palavra liga a fala de Jesus à sua ação sobre o mar.",
+    "feedbackWrong": {
+      "a": "Medo descreve os discípulos, não marca o passo seguinte.",
+      "c": "A calmaria é o resultado final, não a ligação."
+    },
+    "hint": "Procure a palavra logo após a fala de Jesus.",
+    "learningObjective": "Reconhecer o marcador de sequência em Mateus 8:26.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-03-autoridade-03",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 8:26 relaciona a fala de Jesus com a calmaria no mar?",
+    "prompt": "Como Mateus 8:26 relaciona a fala de Jesus com a calmaria no mar?",
+    "cue": "Como Mateus 8:26 relaciona a fala de Jesus com a calmaria no mar?",
+    "verseRef": "Mateus 8:25–26",
+    "passageText": "E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo! E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus corrige o medo e depois age sobre o mar"
+      },
+      {
+        "id": "b",
+        "text": "A calmaria acontece antes de Jesus acordar"
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos acalmam o mar após a fala"
+      },
+      {
+        "id": "d",
+        "text": "Jesus promete acalmar o mar outro dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "repreendeu os ventos e o mar",
+    "feedbackCorrect": "Fala sobre fé e ação sobre o mar se encadeiam no mesmo versículo.",
+    "feedbackWrong": {
+      "b": "Jesus já está acordado e falando antes da calmaria.",
+      "c": "Quem repreende ventos e mar é o próprio Jesus.",
+      "d": "A ação é imediata, não uma promessa para depois."
+    },
+    "hint": "Siga as duas partes do versículo em ordem.",
+    "learningObjective": "Relacionar fala e ação de Jesus em Mateus 8:26.",
+    "evidence": [
+      "Mateus 8:25–26"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-03-autoridade-04",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 8:24–26?",
+    "prompt": "Como avança a cena em Mateus 8:24–26?",
+    "cue": "Como avança a cena em Mateus 8:24–26?",
+    "verseRef": "Mateus 8:24–25",
+    "passageText": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia. E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo!",
+    "options": [
+      {
+        "id": "a",
+        "text": "A tempestade agita o barco"
+      },
+      {
+        "id": "b",
+        "text": "Os discípulos clamam por socorro"
+      },
+      {
+        "id": "c",
+        "text": "Jesus repreende ventos e mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E uma grande tempestade se levantou sobre o mar",
+    "feedbackCorrect": "Perigo, clamor e ação de Jesus formam o movimento da cena.",
+    "feedbackWrong": {
+      "default": "Comece pelo perigo no mar; a ação de Jesus fecha a cena."
+    },
+    "hint": "A ação de Jesus é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da tempestade à ação de Jesus.",
+    "evidence": [
+      "Mateus 8:24–25"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-03-autoridade-05",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 8:26, o que houve depois que Jesus repreendeu o mar?",
+    "prompt": "Em Mateus 8:26, o que houve depois que Jesus repreendeu o mar?",
+    "cue": "Em Mateus 8:26, o que houve depois que Jesus repreendeu o mar?",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "template": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "noite"
+      },
+      {
+        "id": "b",
+        "text": "bonança"
+      },
+      {
+        "id": "c",
+        "text": "tempestade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "houve uma grande bonança",
+    "feedbackCorrect": "À repreensão de Jesus segue uma grande calmaria no mar.",
+    "feedbackWrong": {
+      "a": "O texto fala de calmaria, não da chegada da noite.",
+      "c": "A tempestade é o que existia antes da ordem de Jesus."
+    },
+    "hint": "Veja o resultado no fim do versículo.",
+    "learningObjective": "Compreender o resultado da ordem de Jesus ao mar.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-03-autoridade-06",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 8:27 a Salmos 107:29?",
+    "prompt": "O que liga Mateus 8:27 a Salmos 107:29?",
+    "cue": "O que liga Mateus 8:27 a Salmos 107:29?",
+    "verseRef": "Mateus 8:27",
+    "passageText": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?",
+    "passageA": {
+      "ref": "Mateus 8:27",
+      "text": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?"
+    },
+    "passageB": {
+      "ref": "Salmos 107:29",
+      "text": "Ele faz cessar a tempestade e as suas ondas se aquietam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus acalma a tempestade"
+      },
+      {
+        "id": "b",
+        "text": "Marinheiros governam o vento"
+      },
+      {
+        "id": "c",
+        "text": "O mar escapa do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "até os ventos e o mar lhe obedecem",
+    "feedbackCorrect": "O salmo e a cena mostram o Senhor trazendo calma ao mar.",
+    "feedbackWrong": {
+      "b": "Quem acalma o mar é o Senhor, não os marinheiros.",
+      "c": "Nos dois textos o mar se aquieta diante do Senhor."
+    },
+    "hint": "Compare quem traz calma ao mar revolto.",
+    "learningObjective": "Relacionar a ação de Jesus no mar ao salmo.",
+    "evidence": [
+      "Mateus 8:27",
+      "Salmos 107:29"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-03-autoridade-01",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 8:29 mostra demônios reconhecendo Jesus como Filho de Deus antes do tempo",
+    "prompt": "Mateus 8:29 mostra demônios reconhecendo Jesus como Filho de Deus antes do tempo",
+    "cue": "Mateus 8:29 mostra demônios reconhecendo Jesus como Filho de Deus antes do tempo",
+    "verseRef": "Mateus 8:29",
+    "passageText": "E clamaram, dizendo: O que temos nós a ver contigo, ó Filho de Deus? Vieste aqui para nos atormentar antes do tempo?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ó Filho de Deus",
+    "feedbackCorrect": "Os próprios demônios nomeiam Jesus e temem sua autoridade.",
+    "feedbackWrong": {
+      "false": "Releia como os demônios se dirigem a Jesus."
+    },
+    "hint": "Veja o título usado pelos demônios.",
+    "learningObjective": "Interpretar o reconhecimento de Jesus em Mateus 8:29.",
+    "evidence": [
+      "Mateus 8:29"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-03-autoridade-02",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 8:27, toque o trecho que mostra a autoridade de Jesus reconhecida.",
+    "prompt": "Em Mateus 8:27, toque o trecho que mostra a autoridade de Jesus reconhecida.",
+    "cue": "Em Mateus 8:27, toque o trecho que mostra a autoridade de Jesus reconhecida.",
+    "verseRef": "Mateus 8:27",
+    "passageText": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ficaram maravilhados"
+      },
+      {
+        "id": "b",
+        "text": "lhe obedecem"
+      },
+      {
+        "id": "c",
+        "text": "aqueles homens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "até os ventos e o mar lhe obedecem",
+    "feedbackCorrect": "A obediência de ventos e mar sustenta a pergunta sobre quem é Jesus.",
+    "feedbackWrong": {
+      "a": "Maravilhar-se é a reação; a autoridade aparece no que obedece.",
+      "c": "Os homens reagem; quem obedece são ventos e mar."
+    },
+    "hint": "Procure o verbo no fim da pergunta dos homens.",
+    "learningObjective": "Sustentar com o texto a autoridade de Jesus.",
+    "evidence": [
+      "Mateus 8:27"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-03-autoridade-03",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 8:27 sustenta sobre Jesus após a calmaria?",
+    "prompt": "Que leitura Mateus 8:27 sustenta sobre Jesus após a calmaria?",
+    "cue": "Que leitura Mateus 8:27 sustenta sobre Jesus após a calmaria?",
+    "verseRef": "Mateus 8:27",
+    "passageText": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é apenas um mestre de palavras sábias"
+      },
+      {
+        "id": "b",
+        "text": "Ele tem autoridade até sobre ventos e mar"
+      },
+      {
+        "id": "c",
+        "text": "Ele depende do tempo para agir no mar"
+      },
+      {
+        "id": "d",
+        "text": "Ele teve sorte com a mudança do vento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Quem é este que até os ventos e o mar lhe obedecem",
+    "feedbackCorrect": "A pergunta dos homens nasce da obediência de ventos e mar a Jesus.",
+    "feedbackWrong": {
+      "a": "A cena mostra ação com autoridade, não só ensino.",
+      "c": "Ventos e mar obedecem a Jesus; ele não depende deles.",
+      "d": "O texto liga a calmaria à ordem de Jesus, não à sorte."
+    },
+    "hint": "Veja a conclusão que os próprios homens tiram.",
+    "learningObjective": "Escolher a interpretação sustentada pela reação em 8:27.",
+    "evidence": [
+      "Mateus 8:27"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-03-autoridade-04",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Mateus 8:26–29?",
+    "prompt": "Qual sequência revela o sentido de Mateus 8:26–29?",
+    "cue": "Qual sequência revela o sentido de Mateus 8:26–29?",
+    "verseRef": "Mateus 8:27",
+    "passageText": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus acalma ventos e mar"
+      },
+      {
+        "id": "b",
+        "text": "Homens perguntam quem ele é"
+      },
+      {
+        "id": "c",
+        "text": "Demônios o reconhecem Filho de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quem é este que até os ventos e o mar lhe obedecem",
+    "feedbackCorrect": "Do mar acalmado à pergunta dos homens e ao reconhecimento dos demônios.",
+    "feedbackWrong": {
+      "default": "Comece pela calmaria; o reconhecimento na outra margem fecha."
+    },
+    "hint": "A outra margem é o ponto de chegada.",
+    "learningObjective": "Ver a autoridade de Jesus reconhecida em duas margens.",
+    "evidence": [
+      "Mateus 8:27"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-03-autoridade-05",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 8:26, o que Jesus fez com os ventos e o mar ao se levantar?",
+    "prompt": "Em Mateus 8:26, o que Jesus fez com os ventos e o mar ao se levantar?",
+    "cue": "Em Mateus 8:26, o que Jesus fez com os ventos e o mar ao se levantar?",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "template": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, ___ os ventos e o mar, e houve uma grande bonança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ignorou"
+      },
+      {
+        "id": "b",
+        "text": "repreendeu"
+      },
+      {
+        "id": "c",
+        "text": "temeu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "levantando-se, repreendeu os ventos e o mar",
+    "feedbackCorrect": "Jesus age com autoridade direta sobre ventos e mar.",
+    "feedbackWrong": {
+      "a": "Ele não ignora a tempestade; age sobre ela.",
+      "c": "Quem tem medo são os discípulos, não Jesus."
+    },
+    "hint": "Veja a ação de Jesus ao se levantar.",
+    "learningObjective": "Lembrar o verbo que expressa a autoridade de Jesus.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-03-autoridade-06",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 8:29 a Marcos 5:7?",
+    "prompt": "O que liga Mateus 8:29 a Marcos 5:7?",
+    "cue": "O que liga Mateus 8:29 a Marcos 5:7?",
+    "verseRef": "Mateus 8:29",
+    "passageText": "E clamaram, dizendo: O que temos nós a ver contigo, ó Filho de Deus? Vieste aqui para nos atormentar antes do tempo?",
+    "passageA": {
+      "ref": "Mateus 8:29",
+      "text": "E clamaram, dizendo: O que temos nós a ver contigo, ó Filho de Deus? Vieste aqui para nos atormentar antes do tempo?"
+    },
+    "passageB": {
+      "ref": "Marcos 5:7",
+      "text": "E, clamando com alta voz, disse: Que tenho eu contigo, Jesus, Filho do Deus Altíssimo? Conjuro-te por Deus que não me atormentes!"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus teme os espíritos"
+      },
+      {
+        "id": "b",
+        "text": "Demônios governam sobre Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Demônios reconhecem o Filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ó Filho de Deus",
+    "feedbackCorrect": "Nos dois relatos, os demônios nomeiam Jesus com temor.",
+    "feedbackWrong": {
+      "a": "O temor está nos demônios, não em Jesus.",
+      "b": "Os demônios temem Jesus; não governam sobre ele."
+    },
+    "hint": "Veja como os demônios se dirigem a Jesus.",
+    "learningObjective": "Ligar o reconhecimento de Jesus nos dois evangelhos.",
+    "evidence": [
+      "Mateus 8:29",
+      "Marcos 5:7"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-04-cruz-vitoria-01",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 28:17, todos os discípulos adoraram Jesus sem qualquer hesitação",
+    "prompt": "Em Mateus 28:17, todos os discípulos adoraram Jesus sem qualquer hesitação",
+    "cue": "Em Mateus 28:17, todos os discípulos adoraram Jesus sem qualquer hesitação",
+    "verseRef": "Mateus 28:17",
+    "passageText": "Quando o viram, adoraram-no; mas alguns hesitaram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas alguns hesitaram",
+    "feedbackCorrect": "O texto diz que adoraram, mas registra que alguns hesitaram.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Mateus 28:17 com atenção."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar a reação dos discípulos ao ver Jesus.",
+    "evidence": [
+      "Mateus 28:17"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-04-cruz-vitoria-02",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 28:19, toque até onde o envio de Jesus alcança.",
+    "prompt": "Em Mateus 28:19, toque até onde o envio de Jesus alcança.",
+    "cue": "Em Mateus 28:19, toque até onde o envio de Jesus alcança.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "façam discípulos"
+      },
+      {
+        "id": "b",
+        "text": "Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "todas as nações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio de Jesus não tem fronteira de povo ou lugar.",
+    "feedbackWrong": {
+      "a": "Isso é a tarefa; o alcance vem logo depois.",
+      "b": "O Espírito Santo aparece no batismo citado no versículo."
+    },
+    "hint": "Procure o alcance depois da tarefa dada.",
+    "learningObjective": "Identificar o alcance do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-04-cruz-vitoria-03",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 28:16, para onde os onze discípulos seguiram?",
+    "prompt": "Segundo Mateus 28:16, para onde os onze discípulos seguiram?",
+    "cue": "Segundo Mateus 28:16, para onde os onze discípulos seguiram?",
+    "verseRef": "Mateus 28:16",
+    "passageText": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para Betânia, à casa de amigos"
+      },
+      {
+        "id": "b",
+        "text": "Para Jerusalém, ao templo"
+      },
+      {
+        "id": "c",
+        "text": "Para a Galileia, ao monte designado"
+      },
+      {
+        "id": "d",
+        "text": "Para o mar, ao barco de pesca"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Os onze discípulos seguiram para a Galileia",
+    "feedbackCorrect": "Os onze vão à Galileia, ao monte que Jesus havia designado.",
+    "feedbackWrong": {
+      "a": "Betânia não é citada neste trecho final.",
+      "b": "O encontro marcado não é no templo de Jerusalém.",
+      "d": "O encontro é num monte, não num barco."
+    },
+    "hint": "Veja o destino e o ponto de encontro.",
+    "learningObjective": "Observar o lugar do encontro com Jesus.",
+    "evidence": [
+      "Mateus 28:16"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-04-cruz-vitoria-04",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:19 na ordem do texto.",
+    "prompt": "Monte Mateus 28:19 na ordem do texto.",
+    "cue": "Monte Mateus 28:19 na ordem do texto.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "vão e façam discípulos de todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-os em nome do Pai"
+      },
+      {
+        "id": "c",
+        "text": "do Filho e do Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vão e façam discípulos de todas as nações",
+    "feedbackCorrect": "Envio, batismo e o nome do Pai, do Filho e do Espírito Santo.",
+    "feedbackWrong": {
+      "default": "Comece pelo envio às nações; o batismo vem em seguida."
+    },
+    "hint": "O versículo começa com a ordem de ir.",
+    "learningObjective": "Reconhecer a sequência de Mateus 28:19.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-04-cruz-vitoria-05",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 28:16, para que região os onze discípulos seguiram?",
+    "prompt": "Em Mateus 28:16, para que região os onze discípulos seguiram?",
+    "cue": "Em Mateus 28:16, para que região os onze discípulos seguiram?",
+    "verseRef": "Mateus 28:16",
+    "passageText": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado.",
+    "template": "Os onze discípulos seguiram para a ___, rumo ao monte que Jesus lhes havia designado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Samaria"
+      },
+      {
+        "id": "b",
+        "text": "Judeia"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "seguiram para a Galileia",
+    "feedbackCorrect": "É na Galileia que os onze encontram Jesus no monte designado.",
+    "feedbackWrong": {
+      "a": "Samaria não é o destino citado neste versículo.",
+      "b": "A região do encontro marcado é outra, ao norte."
+    },
+    "hint": "Veja o rumo tomado pelos onze.",
+    "learningObjective": "Lembrar o lugar do encontro dos onze com Jesus.",
+    "evidence": [
+      "Mateus 28:16"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-04-cruz-vitoria-06",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 28:20 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:20 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:20 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "passageA": {
+      "ref": "Mateus 28:20",
+      "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus está com os discípulos todos os dias, até o fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus sempre com os discípulos"
+      },
+      {
+        "id": "b",
+        "text": "Jesus parte e não volta"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos seguem sozinhos sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "O envio vem acompanhado da presença de Jesus todos os dias.",
+    "feedbackWrong": {
+      "b": "O texto promete presença até o fim, não abandono.",
+      "c": "A promessa é de presença contínua, não de solidão."
+    },
+    "hint": "Veja a promessa no fim do versículo.",
+    "learningObjective": "Ligar o envio à presença prometida de Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-04-cruz-vitoria-01",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, a ordem de fazer discípulos vem antes de Jesus afirmar sua autoridade",
+    "prompt": "Em Mateus 28:19, a ordem de fazer discípulos vem antes de Jesus afirmar sua autoridade",
+    "cue": "Em Mateus 28:19, a ordem de fazer discípulos vem antes de Jesus afirmar sua autoridade",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Jesus primeiro declara sua autoridade; o envio vem em seguida.",
+    "feedbackWrong": {
+      "true": "Compare a ordem dos versículos 18 e 19."
+    },
+    "hint": "Compare os versículos 18 e 19.",
+    "learningObjective": "Compreender a ordem entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-04-cruz-vitoria-02",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade declarada.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade declarada.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade declarada.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-os"
+      },
+      {
+        "id": "c",
+        "text": "Portanto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Portanto, vão e façam discípulos",
+    "feedbackCorrect": "Essa palavra mostra que o envio nasce da autoridade de Jesus.",
+    "feedbackWrong": {
+      "a": "Nações indicam o alcance, não a ligação da frase.",
+      "b": "Batizar é parte da tarefa, não a ligação com o verso anterior."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a ligação entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-04-cruz-vitoria-03",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 28:18 se relaciona com o envio em Mateus 28:19?",
+    "prompt": "Como Mateus 28:18 se relaciona com o envio em Mateus 28:19?",
+    "cue": "Como Mateus 28:18 se relaciona com o envio em Mateus 28:19?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A autoridade de Jesus sustenta o envio dos discípulos"
+      },
+      {
+        "id": "b",
+        "text": "A autoridade será dada só depois da missão"
+      },
+      {
+        "id": "c",
+        "text": "O envio acontece apesar de Jesus não ter autoridade"
+      },
+      {
+        "id": "d",
+        "text": "Os discípulos criam a própria missão no monte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "O envio nasce da autoridade que Jesus acaba de declarar.",
+    "feedbackWrong": {
+      "b": "A autoridade é declarada antes, como base do envio.",
+      "c": "Jesus afirma ter toda a autoridade antes de enviar.",
+      "d": "Quem envia e define a tarefa é o próprio Jesus."
+    },
+    "hint": "Ligue a declaração do verso 18 à ordem do 19.",
+    "learningObjective": "Relacionar autoridade de Jesus e envio dos discípulos.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-04-cruz-vitoria-04",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 28:18–20?",
+    "prompt": "Como avança a cena em Mateus 28:18–20?",
+    "cue": "Como avança a cena em Mateus 28:18–20?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus afirma toda a autoridade"
+      },
+      {
+        "id": "b",
+        "text": "Discípulos são enviados às nações"
+      },
+      {
+        "id": "c",
+        "text": "Jesus promete estar com eles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade declarada, envio dado e presença prometida, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade; a promessa de presença fecha a cena."
+    },
+    "hint": "A promessa final vem no versículo 20.",
+    "learningObjective": "Compreender o movimento de Mateus 28:18–20.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-04-cruz-vitoria-05",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, quem os enviados devem fazer em todas as nações?",
+    "prompt": "Em Mateus 28:19, quem os enviados devem fazer em todas as nações?",
+    "cue": "Em Mateus 28:19, quem os enviados devem fazer em todas as nações?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "template": "Portanto, vão e façam ___ de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "mestres"
+      },
+      {
+        "id": "b",
+        "text": "discípulos"
+      },
+      {
+        "id": "c",
+        "text": "apóstolos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "A tarefa é formar seguidores de Jesus em todas as nações.",
+    "feedbackWrong": {
+      "a": "O alvo é gente que segue e aprende de Jesus.",
+      "c": "O texto não usa esse título para o alvo da missão."
+    },
+    "hint": "Veja o alvo da ordem de ir.",
+    "learningObjective": "Compreender o alvo do envio em Mateus 28:19.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-04-cruz-vitoria-06",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 28:19 a Atos 1:8?",
+    "prompt": "O que liga Mateus 28:19 a Atos 1:8?",
+    "cue": "O que liga Mateus 28:19 a Atos 1:8?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Missão alcança todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "Missão restrita a um só povo"
+      },
+      {
+        "id": "c",
+        "text": "Testemunho sem sair do lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Nos dois textos, o testemunho de Jesus alcança todos os povos.",
+    "feedbackWrong": {
+      "b": "Os dois textos abrem a missão para além de um povo.",
+      "c": "Atos fala de testemunho até os confins da terra."
+    },
+    "hint": "Compare o alcance citado nos dois textos.",
+    "learningObjective": "Relacionar o envio de Mateus ao de Atos.",
+    "evidence": [
+      "Mateus 28:19",
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-04-cruz-vitoria-01",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 28:20 liga a missão dos discípulos à presença contínua de Jesus todos os dias",
+    "prompt": "Mateus 28:20 liga a missão dos discípulos à presença contínua de Jesus todos os dias",
+    "cue": "Mateus 28:20 liga a missão dos discípulos à presença contínua de Jesus todos os dias",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "estou convosco todos os dias",
+    "feedbackCorrect": "Quem envia é o mesmo que promete permanecer com os enviados.",
+    "feedbackWrong": {
+      "false": "Releia a promessa que fecha o evangelho de Mateus."
+    },
+    "hint": "Veja o fecho do evangelho.",
+    "learningObjective": "Interpretar a promessa de presença em Mateus 28:20.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-04-cruz-vitoria-02",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:18, toque o trecho que mostra o alcance da autoridade de Jesus.",
+    "prompt": "Em Mateus 28:18, toque o trecho que mostra o alcance da autoridade de Jesus.",
+    "cue": "Em Mateus 28:18, toque o trecho que mostra o alcance da autoridade de Jesus.",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "na terra"
+      },
+      {
+        "id": "b",
+        "text": "no céu"
+      },
+      {
+        "id": "c",
+        "text": "Toda a autoridade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "A autoridade de Jesus é apresentada sem limite de lugar.",
+    "feedbackWrong": {
+      "a": "Terra é só metade; o alcance inclui céu e terra.",
+      "b": "Céu é só metade do alcance citado no versículo."
+    },
+    "hint": "Procure o começo da declaração de Jesus.",
+    "learningObjective": "Sustentar com o texto o alcance da autoridade de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-04-cruz-vitoria-03",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 28:19–20 sustenta sobre a missão dos discípulos?",
+    "prompt": "Que leitura Mateus 28:19–20 sustenta sobre a missão dos discípulos?",
+    "cue": "Que leitura Mateus 28:19–20 sustenta sobre a missão dos discípulos?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma missão ampla, acompanhada pela presença de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Uma tarefa solitária, sem ajuda prometida"
+      },
+      {
+        "id": "c",
+        "text": "Um trabalho restrito aos onze do monte"
+      },
+      {
+        "id": "d",
+        "text": "Um envio que termina na Galileia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Alcance universal e presença todos os dias andam juntos no texto.",
+    "feedbackWrong": {
+      "b": "A promessa de presença acompanha o envio.",
+      "c": "O alvo são todas as nações, não só os onze.",
+      "d": "A Galileia é o ponto de partida, não o limite."
+    },
+    "hint": "Junte o alcance do verso 19 à promessa do 20.",
+    "learningObjective": "Escolher a interpretação sustentada pelo envio e pela promessa.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-04-cruz-vitoria-04",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "prompt": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "cue": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Rei declara sua autoridade total"
+      },
+      {
+        "id": "b",
+        "text": "A igreja é enviada a todos os povos"
+      },
+      {
+        "id": "c",
+        "text": "Cristo permanece presente até o fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade do Rei, envio da igreja e presença até o fim.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade do Rei; a presença até o fim fecha."
+    },
+    "hint": "Siga a ordem dos três versículos finais.",
+    "learningObjective": "Ver autoridade, envio e presença como um só movimento.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-04-cruz-vitoria-05",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, como Jesus diz que está com os discípulos?",
+    "prompt": "Em Mateus 28:20, como Jesus diz que está com os discípulos?",
+    "cue": "Em Mateus 28:20, como Jesus diz que está com os discípulos?",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "template": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou ___ todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "calado"
+      },
+      {
+        "id": "b",
+        "text": "distante"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eis que estou convosco todos os dias",
+    "feedbackCorrect": "A presença de Jesus acompanha os discípulos todos os dias.",
+    "feedbackWrong": {
+      "a": "Jesus fala e promete presença; não está calado.",
+      "b": "A promessa é de companhia, não de distância."
+    },
+    "hint": "Veja a palavra de companhia no fim.",
+    "learningObjective": "Lembrar a palavra da promessa de presença.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-04-cruz-vitoria-06",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 28:18 a Daniel 7:14?",
+    "prompt": "O que liga Mateus 28:18 a Daniel 7:14?",
+    "cue": "O que liga Mateus 28:18 a Daniel 7:14?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "passageA": {
+      "ref": "Mateus 28:18",
+      "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra."
+    },
+    "passageB": {
+      "ref": "Daniel 7:14",
+      "text": "Foi-lhe dado domínio, glória e reino, para que todos os povos, nações e homens de todas as línguas o servissem; seu domínio é um domínio eterno, que não passará, e seu reino não será destruído."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reinos sem nenhum governante"
+      },
+      {
+        "id": "b",
+        "text": "Autoridade tomada pela força"
+      },
+      {
+        "id": "c",
+        "text": "Autoridade dada ao Filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Nos dois textos, a autoridade é dada, não tomada pela força.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de governo e autoridade dados.",
+      "b": "Nos dois textos a autoridade é recebida como dom."
+    },
+    "hint": "Veja como a autoridade é recebida nos dois.",
+    "learningObjective": "Ligar a autoridade de Jesus ao texto de Daniel.",
+    "evidence": [
+      "Mateus 28:18",
+      "Daniel 7:14"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-01",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 5:9, Jesus diz que os pacificadores serão chamados filhos de Deus",
+    "prompt": "Em Mateus 5:9, Jesus diz que os pacificadores serão chamados filhos de Deus",
+    "cue": "Em Mateus 5:9, Jesus diz que os pacificadores serão chamados filhos de Deus",
+    "verseRef": "Mateus 5:9",
+    "passageText": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "serão chamados filhos de Deus",
+    "feedbackCorrect": "Jesus liga o pacificador ao nome de filho de Deus.",
+    "feedbackWrong": {
+      "false": "Releia a promessa feita aos pacificadores."
+    },
+    "hint": "Olhe a promessa de Mateus 5:9.",
+    "learningObjective": "Revisar a promessa aos pacificadores.",
+    "evidence": [
+      "Mateus 5:9"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-02",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 1:21, toque o nome que o filho de Maria deve receber.",
+    "prompt": "Em Mateus 1:21, toque o nome que o filho de Maria deve receber.",
+    "cue": "Em Mateus 1:21, toque o nome que o filho de Maria deve receber.",
+    "verseRef": "Mateus 1:21",
+    "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "filho"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "você lhe porá o nome de Jesus",
+    "feedbackCorrect": "O anjo anuncia um nome ligado à missão de salvar dos pecados.",
+    "feedbackWrong": {
+      "a": "Pecados são aquilo de que o povo será salvo.",
+      "b": "Filho descreve quem nasce; o nome vem em seguida."
+    },
+    "hint": "Veja o nome ligado à missão anunciada.",
+    "learningObjective": "Revisar o nome anunciado para o filho de Maria.",
+    "evidence": [
+      "Mateus 1:21"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-03",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 8:24, o que levantou sobre o mar durante a travessia?",
+    "prompt": "Segundo Mateus 8:24, o que levantou sobre o mar durante a travessia?",
+    "cue": "Segundo Mateus 8:24, o que levantou sobre o mar durante a travessia?",
+    "verseRef": "Mateus 8:24",
+    "passageText": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma multidão de peixes"
+      },
+      {
+        "id": "b",
+        "text": "Uma grande tempestade"
+      },
+      {
+        "id": "c",
+        "text": "Uma calmaria imediata"
+      },
+      {
+        "id": "d",
+        "text": "Um vento favorável"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "uma grande tempestade se levantou sobre o mar",
+    "feedbackCorrect": "O perigo da travessia é a grande tempestade sobre o mar.",
+    "feedbackWrong": {
+      "a": "Peixes não são citados nesta cena do barco.",
+      "c": "A calmaria só vem depois da ordem de Jesus.",
+      "d": "O vento faz parte do perigo, não de ajuda na travessia."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Revisar o perigo enfrentado no barco.",
+    "evidence": [
+      "Mateus 8:24"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-04",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 1:20 na ordem do texto.",
+    "prompt": "Monte Mateus 1:20 na ordem do texto.",
+    "cue": "Monte Mateus 1:20 na ordem do texto.",
+    "verseRef": "Mateus 1:20",
+    "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em um sonho lhe apareceu um anjo do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "não temas receber Maria"
+      },
+      {
+        "id": "c",
+        "text": "o que nela foi gerado é do Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em um sonho lhe apareceu um anjo do Senhor",
+    "feedbackCorrect": "Sonho, chamado a não temer e explicação da gravidez, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo sonho; a explicação fecha o versículo."
+    },
+    "hint": "O mensageiro aparece em sonho.",
+    "learningObjective": "Revisar a sequência da fala do anjo a José.",
+    "evidence": [
+      "Mateus 1:20"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-05",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 8:26, o que houve depois que Jesus repreendeu o mar?",
+    "prompt": "Em Mateus 8:26, o que houve depois que Jesus repreendeu o mar?",
+    "cue": "Em Mateus 8:26, o que houve depois que Jesus repreendeu o mar?",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "template": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escuridão"
+      },
+      {
+        "id": "b",
+        "text": "bonança"
+      },
+      {
+        "id": "c",
+        "text": "tempestade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "houve uma grande bonança",
+    "feedbackCorrect": "Depois da repreensão de Jesus, vem uma grande calmaria.",
+    "feedbackWrong": {
+      "a": "O texto fala de calmaria no mar, não de escuridão.",
+      "c": "A tempestade existia antes da ordem de Jesus."
+    },
+    "hint": "Veja o resultado no fim do versículo.",
+    "learningObjective": "Revisar o resultado da ordem de Jesus ao mar.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-06",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 5:6 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 5:6 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 5:6 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 5:6",
+    "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+    "passageA": {
+      "ref": "Mateus 5:6",
+      "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem deseja a justiça é farto por Deus, segundo Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fome como castigo de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Justiça que nunca chega ao faminto"
+      },
+      {
+        "id": "c",
+        "text": "Fome de justiça satisfeita por Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois serão fartos",
+    "feedbackCorrect": "Ao desejo por justiça corresponde a promessa de fartura.",
+    "feedbackWrong": {
+      "a": "Jesus chama esse faminto de bem-aventurado, não de castigado.",
+      "b": "A promessa é justamente de fartura para quem deseja."
+    },
+    "hint": "Veja a promessa no fim do versículo.",
+    "learningObjective": "Revisar desejo de justiça e promessa de Deus.",
+    "evidence": [
+      "Mateus 5:6"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-07",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 5:3, toque quem Jesus declara dono do reino dos céus.",
+    "prompt": "Em Mateus 5:3, toque quem Jesus declara dono do reino dos céus.",
+    "cue": "Em Mateus 5:3, toque quem Jesus declara dono do reino dos céus.",
+    "verseRef": "Mateus 5:3",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bem-aventurados"
+      },
+      {
+        "id": "b",
+        "text": "humildes de espírito"
+      },
+      {
+        "id": "c",
+        "text": "reino dos céus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Bem-aventurados os humildes de espírito",
+    "feedbackCorrect": "O reino dos céus é anunciado a um grupo bem definido por Jesus.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre a frase; o grupo vem depois.",
+      "c": "Isso é o que o grupo recebe, não quem ele é."
+    },
+    "hint": "Procure o grupo logo no começo da frase.",
+    "learningObjective": "Revisar a quem pertence o reino dos céus.",
+    "evidence": [
+      "Mateus 5:3"
+    ]
+  },
+  {
+    "id": "mateus-sem-mt-boss-revisao-08",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:20 na ordem do texto.",
+    "prompt": "Monte Mateus 28:20 na ordem do texto.",
+    "cue": "Monte Mateus 28:20 na ordem do texto.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinando-os a observar tudo o que vos ordenei"
+      },
+      {
+        "id": "b",
+        "text": "e eis que estou convosco todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "até a consumação do século"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "Ensino, presença todos os dias e horizonte até o fim, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino; o fim do tempo fecha o versículo."
+    },
+    "hint": "O versículo começa falando do ensino.",
+    "learningObjective": "Revisar a sequência final de Mateus 28:20.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-01",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, a ordem de fazer discípulos vem antes de Jesus afirmar sua autoridade",
+    "prompt": "Em Mateus 28:19, a ordem de fazer discípulos vem antes de Jesus afirmar sua autoridade",
+    "cue": "Em Mateus 28:19, a ordem de fazer discípulos vem antes de Jesus afirmar sua autoridade",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Jesus declara sua autoridade primeiro; o envio vem em seguida.",
+    "feedbackWrong": {
+      "true": "Compare a ordem dos versículos 18 e 19."
+    },
+    "hint": "Compare os versículos 18 e 19.",
+    "learningObjective": "Revisar a ordem entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-02",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 8:26, toque a palavra que marca o passo seguinte de Jesus.",
+    "prompt": "Em Mateus 8:26, toque a palavra que marca o passo seguinte de Jesus.",
+    "cue": "Em Mateus 8:26, toque a palavra que marca o passo seguinte de Jesus.",
+    "verseRef": "Mateus 8:26",
+    "passageText": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "medo"
+      },
+      {
+        "id": "c",
+        "text": "bonança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então, levantando-se, repreendeu",
+    "feedbackCorrect": "Essa palavra liga a fala de Jesus à sua ação sobre o mar.",
+    "feedbackWrong": {
+      "b": "Medo descreve os discípulos, não o passo seguinte.",
+      "c": "A calmaria é o resultado, não a ligação da frase."
+    },
+    "hint": "Procure a palavra após a fala de Jesus.",
+    "learningObjective": "Revisar o marcador de sequência em Mateus 8:26.",
+    "evidence": [
+      "Mateus 8:26"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-03",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 1:21 relaciona o nome do filho à sua missão?",
+    "prompt": "Como Mateus 1:21 relaciona o nome do filho à sua missão?",
+    "cue": "Como Mateus 1:21 relaciona o nome do filho à sua missão?",
+    "verseRef": "Mateus 1:21",
+    "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O nome anuncia que ele resgatará pecadores"
+      },
+      {
+        "id": "b",
+        "text": "O nome foi tirado de um sonho qualquer"
+      },
+      {
+        "id": "c",
+        "text": "O nome esconde a missão do filho"
+      },
+      {
+        "id": "d",
+        "text": "O nome marca apenas a família de José"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele salvará o seu povo dos seus pecados",
+    "feedbackCorrect": "Nome e missão são anunciados juntos pelo anjo a José.",
+    "feedbackWrong": {
+      "b": "O nome vem com explicação clara de missão, não por acaso.",
+      "c": "O nome revela a missão, não a esconde.",
+      "d": "A explicação liga o nome aos pecados do povo."
+    },
+    "hint": "Ligue o nome ao motivo dado pelo anjo.",
+    "learningObjective": "Revisar nome e missão do filho anunciado.",
+    "evidence": [
+      "Mateus 1:21"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-04",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a revisão do Rei em Mateus?",
+    "prompt": "Como avança a revisão do Rei em Mateus?",
+    "cue": "Como avança a revisão do Rei em Mateus?",
+    "verseRef": "Mateus 1:21",
+    "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O anjo anuncia o Salvador"
+      },
+      {
+        "id": "b",
+        "text": "Jesus ensina a vida do Reino"
+      },
+      {
+        "id": "c",
+        "text": "Jesus acalma ventos e mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele salvará o seu povo dos seus pecados",
+    "feedbackCorrect": "Anúncio do Salvador, ensino do Reino e autoridade no mar.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio a José; o mar vem depois do ensino."
+    },
+    "hint": "O ensino no monte vem antes do barco.",
+    "learningObjective": "Compreender a sequência das cenas revisadas.",
+    "evidence": [
+      "Mateus 1:21"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-05",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+    "prompt": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+    "cue": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+    "verseRef": "Mateus 5:7",
+    "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+    "template": "Bem-aventurados os misericordiosos, porque alcançarão ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "consolo"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "porque alcançarão misericórdia",
+    "feedbackCorrect": "Quem vive a misericórdia é alcançado por ela, diz Jesus.",
+    "feedbackWrong": {
+      "a": "Terra é prometida aos mansos (5:5).",
+      "b": "Consolo é prometido aos que choram (5:4)."
+    },
+    "hint": "A resposta repete a marca do grupo.",
+    "learningObjective": "Revisar a correspondência em Mateus 5:7.",
+    "evidence": [
+      "Mateus 5:7"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-06",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 8:27 a Salmos 107:29?",
+    "prompt": "O que liga Mateus 8:27 a Salmos 107:29?",
+    "cue": "O que liga Mateus 8:27 a Salmos 107:29?",
+    "verseRef": "Mateus 8:27",
+    "passageText": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?",
+    "passageA": {
+      "ref": "Mateus 8:27",
+      "text": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?"
+    },
+    "passageB": {
+      "ref": "Salmos 107:29",
+      "text": "Ele faz cessar a tempestade e as suas ondas se aquietam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mar escapa do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "O vento decide o destino"
+      },
+      {
+        "id": "c",
+        "text": "Deus acalma a tempestade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "até os ventos e o mar lhe obedecem",
+    "feedbackCorrect": "Salmo e evangelho mostram o Senhor trazendo calma ao mar.",
+    "feedbackWrong": {
+      "a": "Nos dois textos o mar se aquieta diante do Senhor.",
+      "b": "Quem governa vento e mar é o Senhor, não o acaso."
+    },
+    "hint": "Compare quem traz calma ao mar.",
+    "learningObjective": "Revisar Jesus no mar à luz do salmo.",
+    "evidence": [
+      "Mateus 8:27",
+      "Salmos 107:29"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-07",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 5:6, toque a palavra que introduz a promessa aos famintos de justiça.",
+    "prompt": "Em Mateus 5:6, toque a palavra que introduz a promessa aos famintos de justiça.",
+    "cue": "Em Mateus 5:6, toque a palavra que introduz a promessa aos famintos de justiça.",
+    "verseRef": "Mateus 5:6",
+    "passageText": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fome"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois serão fartos",
+    "feedbackCorrect": "Essa palavrinha vira a frase do desejo para a promessa.",
+    "feedbackWrong": {
+      "a": "Fome descreve o desejo, não introduz a promessa.",
+      "b": "Justiça é o alvo buscado; a promessa vem depois."
+    },
+    "hint": "Procure uma palavra curta antes da promessa.",
+    "learningObjective": "Revisar a ligação entre desejo e promessa.",
+    "evidence": [
+      "Mateus 5:6"
+    ]
+  },
+  {
+    "id": "mateus-cam-mt-boss-revisao-08",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Mateus 28:18–20?",
+    "prompt": "Como se encadeiam os passos de Mateus 28:18–20?",
+    "cue": "Como se encadeiam os passos de Mateus 28:18–20?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus afirma sua autoridade"
+      },
+      {
+        "id": "b",
+        "text": "Ele envia discípulos às nações"
+      },
+      {
+        "id": "c",
+        "text": "Ele promete estar com eles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Autoridade, envio às nações e presença prometida, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade; a presença fecha a cena."
+    },
+    "hint": "A promessa de presença vem por último.",
+    "learningObjective": "Revisar o encadeamento do envio final.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-01",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 1:22–23 apresenta o nascimento como cumprimento do que o Senhor disse pelo profeta",
+    "prompt": "Mateus 1:22–23 apresenta o nascimento como cumprimento do que o Senhor disse pelo profeta",
+    "cue": "Mateus 1:22–23 apresenta o nascimento como cumprimento do que o Senhor disse pelo profeta",
+    "verseRef": "Mateus 1:22–23",
+    "passageText": "Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta: A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que se cumprisse o que havia sido dito pelo Senhor",
+    "feedbackCorrect": "Mateus liga o nascimento à palavra anterior dita pelo profeta.",
+    "feedbackWrong": {
+      "false": "Releia a finalidade que Mateus atribui ao nascimento."
+    },
+    "hint": "Veja a finalidade em Mateus 1:22.",
+    "learningObjective": "Revisar o nascimento como cumprimento em Mateus.",
+    "evidence": [
+      "Mateus 1:22–23"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-02",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:18, toque o trecho que mostra o alcance da autoridade de Jesus.",
+    "prompt": "Em Mateus 28:18, toque o trecho que mostra o alcance da autoridade de Jesus.",
+    "cue": "Em Mateus 28:18, toque o trecho que mostra o alcance da autoridade de Jesus.",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda a autoridade"
+      },
+      {
+        "id": "b",
+        "text": "no céu"
+      },
+      {
+        "id": "c",
+        "text": "na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "A autoridade declarada por Jesus não tem limite de lugar.",
+    "feedbackWrong": {
+      "b": "Céu é só metade do alcance citado.",
+      "c": "Terra é só metade; o alcance é total."
+    },
+    "hint": "Procure o começo da declaração de Jesus.",
+    "learningObjective": "Revisar o alcance da autoridade de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-03",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 5:3–4 sustenta sobre quem pertence ao Reino?",
+    "prompt": "Que leitura Mateus 5:3–4 sustenta sobre quem pertence ao Reino?",
+    "cue": "Que leitura Mateus 5:3–4 sustenta sobre quem pertence ao Reino?",
+    "verseRef": "Mateus 5:3–4",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem depende de Deus recebe suas promessas"
+      },
+      {
+        "id": "b",
+        "text": "Quem chora é afastado da presença de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Quem se basta recebe o Reino como prêmio"
+      },
+      {
+        "id": "d",
+        "text": "Só líderes religiosos pertencem ao Reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Bem-aventurados os humildes de espírito",
+    "feedbackCorrect": "Humildes e famintos de justiça são acolhidos com promessas de Deus.",
+    "feedbackWrong": {
+      "b": "Quem chora recebe promessa de consolo de Deus.",
+      "c": "O Reino é dos humildes, não de quem se basta.",
+      "d": "Jesus ensina discípulos e multidões, sem esse limite."
+    },
+    "hint": "Veja quem recebe promessa em cada frase.",
+    "learningObjective": "Revisar a interpretação das bem-aventuranças.",
+    "evidence": [
+      "Mateus 5:3–4"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-04",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do Rei em Mateus?",
+    "prompt": "Qual sequência revela o sentido do Rei em Mateus?",
+    "cue": "Qual sequência revela o sentido do Rei em Mateus?",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "options": [
+      {
+        "id": "a",
+        "text": "Emanuel é anunciado pelo profeta"
+      },
+      {
+        "id": "b",
+        "text": "Jesus ensina e acalma o mar"
+      },
+      {
+        "id": "c",
+        "text": "O Rei envia discípulos às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele será chamado pelo nome de Emanuel",
+    "feedbackCorrect": "Anúncio, ensino com autoridade e envio formam o retrato do Rei.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio do profeta; o envio final fecha."
+    },
+    "hint": "O envio às nações é o ponto final.",
+    "learningObjective": "Ver o retrato do Rei do anúncio ao envio.",
+    "evidence": [
+      "Mateus 1:23"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-05",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 28:19, quem os enviados devem fazer em todas as nações?",
+    "prompt": "Em Mateus 28:19, quem os enviados devem fazer em todas as nações?",
+    "cue": "Em Mateus 28:19, quem os enviados devem fazer em todas as nações?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "template": "Portanto, vão e façam ___ de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "mestres"
+      },
+      {
+        "id": "c",
+        "text": "discípulos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "A tarefa final é formar seguidores de Jesus nas nações.",
+    "feedbackWrong": {
+      "a": "Esse título não é o alvo citado na ordem de Jesus.",
+      "b": "O alvo é gente que segue e aprende de Jesus."
+    },
+    "hint": "Veja o alvo da ordem de ir.",
+    "learningObjective": "Revisar o alvo do envio final de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-06",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 1:23 a Isaías 7:14?",
+    "prompt": "O que liga Mateus 1:23 a Isaías 7:14?",
+    "cue": "O que liga Mateus 1:23 a Isaías 7:14?",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "passageA": {
+      "ref": "Mateus 1:23",
+      "text": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+    },
+    "passageB": {
+      "ref": "Isaías 7:14",
+      "text": "Portanto, o próprio Senhor vos dará um sinal: Eis que a virgem conceberá e dará à luz um filho, e lhe porá o nome de Emanuel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Emanuel anunciado pelo profeta"
+      },
+      {
+        "id": "b",
+        "text": "Um nome sem texto anterior"
+      },
+      {
+        "id": "c",
+        "text": "Um sonho contado por José"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele será chamado pelo nome de Emanuel",
+    "feedbackCorrect": "Mateus cita o anúncio anterior do filho com esse nome.",
+    "feedbackWrong": {
+      "b": "Mateus cita um texto anterior ao apresentar o nome.",
+      "c": "A ponte aqui é o anúncio do profeta, não o sonho."
+    },
+    "hint": "Veja de onde vêm as palavras citadas.",
+    "learningObjective": "Revisar a ligação entre Mateus e o profeta.",
+    "evidence": [
+      "Mateus 1:23",
+      "Isaías 7:14"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-07",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 1:23, toque o nome que mostra Deus presente com seu povo.",
+    "prompt": "Em Mateus 1:23, toque o nome que mostra Deus presente com seu povo.",
+    "cue": "Em Mateus 1:23, toque o nome que mostra Deus presente com seu povo.",
+    "verseRef": "Mateus 1:23",
+    "passageText": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+    "options": [
+      {
+        "id": "a",
+        "text": "Emanuel"
+      },
+      {
+        "id": "b",
+        "text": "virgem"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele será chamado pelo nome de Emanuel",
+    "feedbackCorrect": "Esse nome é explicado no texto como Deus com seu povo.",
+    "feedbackWrong": {
+      "b": "A virgem é quem concebe; o nome do filho vem depois.",
+      "c": "Filho descreve quem nasce; o nome próprio vem a seguir."
+    },
+    "hint": "Procure o nome próprio no fim do versículo.",
+    "learningObjective": "Revisar o nome que revela a presença de Deus.",
+    "evidence": [
+      "Mateus 1:23"
+    ]
+  },
+  {
+    "id": "mateus-pro-mt-boss-revisao-08",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do Reino em Mateus 5:3–9 e 28:19?",
+    "prompt": "Qual sequência revela o caminho do Reino em Mateus 5:3–9 e 28:19?",
+    "cue": "Qual sequência revela o caminho do Reino em Mateus 5:3–9 e 28:19?",
+    "verseRef": "Mateus 5:9",
+    "passageText": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os humildes recebem o Reino"
+      },
+      {
+        "id": "b",
+        "text": "Pacificador é chamado filho de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos são enviados às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "serão chamados filhos de Deus",
+    "feedbackCorrect": "Reino recebido, filiação anunciada e envio às nações.",
+    "feedbackWrong": {
+      "default": "Comece pelos humildes de 5:3; o envio final vem por último."
+    },
+    "hint": "O envio final fecha a sequência.",
+    "learningObjective": "Ver o caminho do Reino até o envio final.",
+    "evidence": [
+      "Mateus 5:9"
+    ]
+  }
+]

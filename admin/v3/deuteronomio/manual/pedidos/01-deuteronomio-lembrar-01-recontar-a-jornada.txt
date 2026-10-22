@@ -1,0 +1,72 @@
+Escreva a cena "deuteronomio-lembrar-01-recontar-a-jornada" da trilha "deuteronomio" (Deuteronômio).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "deuteronomio",
+  "title": "Deuteronômio",
+  "description": "Moisés repete a Lei: amar ao Senhor de todo o coração.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Lembrar",
+ "mission": {
+  "slug": "deuteronomio-lembrar-01-recontar-a-jornada",
+  "title": "Recontar a jornada",
+  "type": "lesson",
+  "intro": "Memória da libertação e da fidelidade.",
+  "hookRef": "Deuteronômio 6:4",
+  "hookNote": "Memória da libertação e da fidelidade.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre recontar?"
+ },
+ "v2": {
+  "passageRef": "Deuteronômio 6:4",
+  "context": "Memória da libertação e da fidelidade.",
+  "keyword": "Recontar",
+  "verseRefs": [
+   "Deuteronômio 8:2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Deuteronômio 6:1–7",
+  "Deuteronômio 8:2"
+ ],
+ "verses": [
+  {
+   "ref": "Deuteronômio 6:1",
+   "text": "Estes, pois, são os mandamentos, os estatutos e os juízos que o Senhor, vosso Deus, mandou que vos ensinassem, para que os cumprísseis na terra a que passais para a possuir."
+  },
+  {
+   "ref": "Deuteronômio 6:2",
+   "text": "Para que temas ao Senhor, teu Deus, e guardes todos os seus estatutos e mandamentos que te ordeno, tu, teu filho e o filho de teu filho, todos os dias da tua vida; e que teus dias sejam prolongados."
+  },
+  {
+   "ref": "Deuteronômio 6:3",
+   "text": "Escuta, pois, ó Israel, e atenta que os guardes, para que te vá bem e muito te multipliques, como te disse o Senhor, Deus de teus pais, na terra que mana leite e mel."
+  },
+  {
+   "ref": "Deuteronômio 6:4",
+   "text": "Ouve, Israel: o Senhor, nosso Deus, é o único Senhor."
+  },
+  {
+   "ref": "Deuteronômio 6:5",
+   "text": "Amarás, portanto, o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e de toda a tua força."
+  },
+  {
+   "ref": "Deuteronômio 6:6",
+   "text": "E estas palavras, que hoje te ordeno, estarão no teu coração;"
+  },
+  {
+   "ref": "Deuteronômio 6:7",
+   "text": "E as inculcarás a teus filhos, e delas falarás assentado em tua casa, e andando pelo caminho, e ao deitar-te, e ao levantar-te."
+  },
+  {
+   "ref": "Deuteronômio 8:2",
+   "text": "Lembra-te de todo o caminho que o SENHOR, teu Deus, te guiou pelo deserto durante estes quarenta anos, para humilhar-te e testar-te, a fim de saber o que estava em teu coração, se guardarias ou não os seus mandamentos."
+  }
+ ]
+}
+</cena>

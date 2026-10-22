@@ -1,0 +1,2544 @@
+[
+  {
+    "id": "historia-igreja-sem-hi-01-eras-01",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 16:16, Simão Pedro responde que Jesus é o Cristo, o Filho do Deus vivo.",
+    "prompt": "Em Mateus 16:16, Simão Pedro responde que Jesus é o Cristo, o Filho do Deus vivo.",
+    "cue": "Em Mateus 16:16, Simão Pedro responde que Jesus é o Cristo, o Filho do Deus vivo.",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "Pedro confessa Jesus com essas palavras diante dos discípulos.",
+    "feedbackWrong": {
+      "false": "Releia a resposta de Pedro em Mateus 16:16."
+    },
+    "hint": "Leia a resposta de Pedro.",
+    "learningObjective": "Observar a confissão de Pedro sobre Jesus.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-01-eras-02",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 16:16, toque as palavras que nomeiam Deus na confissão de Pedro.",
+    "prompt": "Em Mateus 16:16, toque as palavras que nomeiam Deus na confissão de Pedro.",
+    "cue": "Em Mateus 16:16, toque as palavras que nomeiam Deus na confissão de Pedro.",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simão Pedro"
+      },
+      {
+        "id": "b",
+        "text": "respondeu"
+      },
+      {
+        "id": "c",
+        "text": "Deus vivo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Filho do Deus vivo",
+    "feedbackCorrect": "Pedro chama Jesus de Filho daquele que vive para sempre.",
+    "feedbackWrong": {
+      "a": "Esse é o nome de quem responde, não o nome dado na confissão.",
+      "b": "Esse verbo diz o que Pedro fez, não como ele nomeia o Pai."
+    },
+    "hint": "Procure o fim da frase de Pedro.",
+    "learningObjective": "Identificar como Pedro nomeia Deus na confissão.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-01-eras-03",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 16:16, quem Pedro diz que Jesus é?",
+    "prompt": "Segundo Mateus 16:16, quem Pedro diz que Jesus é?",
+    "cue": "Segundo Mateus 16:16, quem Pedro diz que Jesus é?",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um rei político de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Um mestre da lei de Moisés"
+      },
+      {
+        "id": "c",
+        "text": "O Cristo, Filho de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Um profeta como os antigos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "A confissão de Pedro reconhece Jesus como o enviado prometido.",
+    "feedbackWrong": {
+      "a": "Pedro não apresenta Jesus como líder político.",
+      "b": "A confissão fala da identidade de Jesus, não de um cargo de ensino.",
+      "d": "Pedro vai além de chamar Jesus apenas de profeta."
+    },
+    "hint": "Leia toda a resposta de Pedro.",
+    "learningObjective": "Observar a identidade de Jesus na confissão.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-01-eras-04",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 16:18 na ordem do texto.",
+    "prompt": "Monte Mateus 16:18 na ordem do texto.",
+    "cue": "Monte Mateus 16:18 na ordem do texto.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E também eu te digo que tu és Pedro"
+      },
+      {
+        "id": "b",
+        "text": "sobre esta pedra edificarei a minha igreja"
+      },
+      {
+        "id": "c",
+        "text": "as portas do inferno não prevalecerão contra ela"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sobre esta pedra edificarei a minha igreja",
+    "feedbackCorrect": "A promessa vem depois do nome de Pedro e termina na resistência da igreja.",
+    "feedbackWrong": {
+      "default": "Comece pela fala a Pedro; a promessa de resistência fecha o versículo."
+    },
+    "hint": "O versículo começa falando com Pedro.",
+    "learningObjective": "Reconhecer a sequência de Mateus 16:18.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-01-eras-05",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 16:18, o que as portas do inferno não farão contra a igreja?",
+    "prompt": "Em Mateus 16:18, o que as portas do inferno não farão contra a igreja?",
+    "cue": "Em Mateus 16:18, o que as portas do inferno não farão contra a igreja?",
+    "verseRef": "Mateus 16:17–18",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "template": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não ___ contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prevalecerão"
+      },
+      {
+        "id": "b",
+        "text": "edificarão"
+      },
+      {
+        "id": "c",
+        "text": "conhecerão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as portas do inferno não prevalecerão contra ela",
+    "feedbackCorrect": "A oposição não terá a vitória final sobre a igreja de Cristo.",
+    "feedbackWrong": {
+      "b": "Quem edifica é Jesus; o versículo fala do que não vencerá a igreja.",
+      "c": "O versículo não fala de conhecer, mas de vencer a igreja."
+    },
+    "hint": "Leia o fim do versículo 18.",
+    "learningObjective": "Lembrar a promessa de permanência da igreja.",
+    "evidence": [
+      "Mateus 16:17–18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-01-eras-06",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 16:17–18",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo promete que a sua igreja permanecerá através das eras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O inferno vence no fim"
+      },
+      {
+        "id": "b",
+        "text": "A igreja se sustenta sozinha"
+      },
+      {
+        "id": "c",
+        "text": "Cristo edifica e sustenta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "A promessa liga a permanência da igreja à ação do próprio Cristo.",
+    "feedbackWrong": {
+      "a": "O texto afirma justamente o contrário disso.",
+      "b": "Quem edifica é Cristo, não a igreja por si mesma."
+    },
+    "hint": "Veja quem age no versículo.",
+    "learningObjective": "Ligar a promessa de Cristo à permanência da igreja.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-01-eras-01",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 16:17, Jesus afirma que a confissão de Pedro nasceu apenas do esforço humano de Pedro.",
+    "prompt": "Em Mateus 16:17, Jesus afirma que a confissão de Pedro nasceu apenas do esforço humano de Pedro.",
+    "cue": "Em Mateus 16:17, Jesus afirma que a confissão de Pedro nasceu apenas do esforço humano de Pedro.",
+    "verseRef": "Mateus 16:17",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não foi revelado por carne e sangue",
+    "feedbackCorrect": "Jesus atribui a confissão à revelação do Pai, não ao esforço humano.",
+    "feedbackWrong": {
+      "true": "Releia quem Jesus diz que revelou isso a Pedro."
+    },
+    "hint": "Veja a origem que Jesus aponta.",
+    "learningObjective": "Compreender a origem da confissão de Pedro.",
+    "evidence": [
+      "Mateus 16:17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-01-eras-02",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 16:17, toque a palavra que introduz o motivo da bem-aventurança de Pedro.",
+    "prompt": "Em Mateus 16:17, toque a palavra que introduz o motivo da bem-aventurança de Pedro.",
+    "cue": "Em Mateus 16:17, toque a palavra que introduz o motivo da bem-aventurança de Pedro.",
+    "verseRef": "Mateus 16:17",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "porque"
+      },
+      {
+        "id": "b",
+        "text": "sangue"
+      },
+      {
+        "id": "c",
+        "text": "céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque isso não foi revelado",
+    "feedbackCorrect": "Essa palavra liga a bem-aventurança à revelação recebida do Pai.",
+    "feedbackWrong": {
+      "b": "Essa palavra faz parte do que não revelou a confissão.",
+      "c": "Essa palavra indica o lugar do Pai, não o motivo."
+    },
+    "hint": "Procure uma palavra curta logo após o nome de Pedro.",
+    "learningObjective": "Reconhecer o marcador de causa no texto.",
+    "evidence": [
+      "Mateus 16:17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-01-eras-03",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que Jesus chama Pedro de bem-aventurado em Mateus 16:16–17?",
+    "prompt": "Por que Jesus chama Pedro de bem-aventurado em Mateus 16:16–17?",
+    "cue": "Por que Jesus chama Pedro de bem-aventurado em Mateus 16:16–17?",
+    "verseRef": "Mateus 16:16–17",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\" E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Pedro decorou bem as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Porque Pedro nunca cometeu erros"
+      },
+      {
+        "id": "c",
+        "text": "Porque a confissão veio por revelação do Pai"
+      },
+      {
+        "id": "d",
+        "text": "Porque Pedro era o mais velho do grupo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas pelo meu Pai que está nos céus",
+    "feedbackCorrect": "A bem-aventurança está ligada ao Pai ter revelado quem Jesus é.",
+    "feedbackWrong": {
+      "a": "O texto aponta revelação do Pai, não memorização.",
+      "b": "Jesus não fala de uma vida sem erros de Pedro.",
+      "d": "A idade de Pedro não é mencionada no trecho."
+    },
+    "hint": "Compare a confissão com a explicação de Jesus.",
+    "learningObjective": "Relacionar a confissão de Pedro à revelação do Pai.",
+    "evidence": [
+      "Mateus 16:16–17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-01-eras-04",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 16:16–17?",
+    "prompt": "Como avança a cena em Mateus 16:16–17?",
+    "cue": "Como avança a cena em Mateus 16:16–17?",
+    "verseRef": "Mateus 16:16–17",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\" E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro confessa quem Jesus é"
+      },
+      {
+        "id": "b",
+        "text": "Jesus chama Pedro de bem-aventurado"
+      },
+      {
+        "id": "c",
+        "text": "Jesus atribui a confissão ao Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bem-aventurado és, Simão Barjonas",
+    "feedbackCorrect": "Primeiro a confissão, depois a resposta de Jesus e a sua explicação.",
+    "feedbackWrong": {
+      "default": "Comece pela fala de Pedro; a explicação de Jesus vem por último."
+    },
+    "hint": "A confissão abre a cena.",
+    "learningObjective": "Compreender o movimento da confissão à explicação.",
+    "evidence": [
+      "Mateus 16:16–17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-01-eras-05",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 16:16–17, como Jesus diz que a verdade sobre ele chegou a Pedro?",
+    "prompt": "Em Mateus 16:16–17, como Jesus diz que a verdade sobre ele chegou a Pedro?",
+    "cue": "Em Mateus 16:16–17, como Jesus diz que a verdade sobre ele chegou a Pedro?",
+    "verseRef": "Mateus 16:16–17",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\" E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "template": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\" E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi ___ por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "escondido"
+      },
+      {
+        "id": "b",
+        "text": "inventado"
+      },
+      {
+        "id": "c",
+        "text": "revelado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "isso não foi revelado por carne e sangue",
+    "feedbackCorrect": "A verdade sobre Jesus chegou a Pedro porque o Pai a mostrou.",
+    "feedbackWrong": {
+      "a": "O Pai mostrou a verdade a Pedro, não a escondeu dele.",
+      "b": "Jesus não trata a confissão como invenção humana."
+    },
+    "hint": "Leia a explicação que Jesus dá no versículo 17.",
+    "learningObjective": "Compreender que o Pai revela quem Jesus é.",
+    "evidence": [
+      "Mateus 16:16–17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-01-eras-06",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 16:16 a Filipenses 2:11?",
+    "prompt": "O que liga Mateus 16:16 a Filipenses 2:11?",
+    "cue": "O que liga Mateus 16:16 a Filipenses 2:11?",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "passageA": {
+      "ref": "Mateus 16:16",
+      "text": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\""
+    },
+    "passageB": {
+      "ref": "Filipenses 2:11",
+      "text": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar Cristo como Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Negar o Filho de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Esconder a fé em Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "Pedro confessa Jesus, e Paulo fala de toda língua confessando o Senhor.",
+    "feedbackWrong": {
+      "b": "Os dois textos afirmam quem Jesus é, não o negam.",
+      "c": "Os dois textos falam de confessar, não de esconder."
+    },
+    "hint": "Veja o que Pedro e Paulo falam sobre Jesus.",
+    "learningObjective": "Relacionar a confissão de Pedro à confissão da igreja.",
+    "evidence": [
+      "Mateus 16:16",
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-01-eras-01",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 16:18 sustenta que a igreja pertence a Cristo e que ele mesmo a edifica.",
+    "prompt": "Mateus 16:18 sustenta que a igreja pertence a Cristo e que ele mesmo a edifica.",
+    "cue": "Mateus 16:18 sustenta que a igreja pertence a Cristo e que ele mesmo a edifica.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "Jesus usa a primeira pessoa e chama a igreja de sua.",
+    "feedbackWrong": {
+      "false": "Releia quem diz que edificará e de quem é a igreja."
+    },
+    "hint": "Repare nos pronomes do versículo.",
+    "learningObjective": "Interpretar a igreja como obra e posse de Cristo.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-01-eras-02",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 16:18, toque o trecho que mostra a quem a igreja pertence.",
+    "prompt": "Em Mateus 16:18, toque o trecho que mostra a quem a igreja pertence.",
+    "cue": "Em Mateus 16:18, toque o trecho que mostra a quem a igreja pertence.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "minha igreja"
+      },
+      {
+        "id": "b",
+        "text": "esta pedra"
+      },
+      {
+        "id": "c",
+        "text": "do inferno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "O pronome mostra que a igreja é do próprio Jesus.",
+    "feedbackWrong": {
+      "b": "Esse trecho indica o fundamento, não a quem a igreja pertence.",
+      "c": "Esse trecho indica a oposição, não o dono da igreja."
+    },
+    "hint": "Procure um pronome junto da palavra principal da cena.",
+    "learningObjective": "Sustentar com o texto que a igreja pertence a Cristo.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-01-eras-03",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 16:18 sustenta sobre o futuro da igreja?",
+    "prompt": "Que leitura Mateus 16:18 sustenta sobre o futuro da igreja?",
+    "cue": "Que leitura Mateus 16:18 sustenta sobre o futuro da igreja?",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro sozinho sustenta a igreja para sempre"
+      },
+      {
+        "id": "b",
+        "text": "A igreja nunca enfrentará oposição alguma"
+      },
+      {
+        "id": "c",
+        "text": "Cristo garante a permanência da sua igreja"
+      },
+      {
+        "id": "d",
+        "text": "A promessa dispensa a confissão de Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "as portas do inferno não prevalecerão contra ela",
+    "feedbackCorrect": "Quem edifica é Cristo, e por isso a oposição não vence no fim.",
+    "feedbackWrong": {
+      "a": "Quem edifica é Jesus; Pedro recebe a promessa, não a sustenta sozinho.",
+      "b": "Haverá oposição; o texto promete que ela não vencerá.",
+      "d": "A promessa vem logo depois da confissão de quem Jesus é."
+    },
+    "hint": "Veja quem edifica e o que é prometido no fim.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-01-eras-04",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da igreja que começa em Mateus 16:17–18?",
+    "prompt": "Qual sequência revela o fio da igreja que começa em Mateus 16:17–18?",
+    "cue": "Qual sequência revela o fio da igreja que começa em Mateus 16:17–18?",
+    "verseRef": "Mateus 16:17–18",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo promete edificar a igreja"
+      },
+      {
+        "id": "b",
+        "text": "A igreja persevera no ensino apostólico"
+      },
+      {
+        "id": "c",
+        "text": "A fé recebida é guardada pelos santos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "A promessa de Cristo gera uma igreja que persevera e guarda a fé.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de Cristo; guardar a fé vem como resposta."
+    },
+    "hint": "Comece pelo que Cristo promete fazer.",
+    "learningObjective": "Ver a promessa de Cristo como início da vida da igreja.",
+    "evidence": [
+      "Mateus 16:17–18",
+      "Atos 2:42",
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-01-eras-05",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 16:16, que título Pedro dá a Jesus na sua confissão?",
+    "prompt": "Em Mateus 16:16, que título Pedro dá a Jesus na sua confissão?",
+    "cue": "Em Mateus 16:16, que título Pedro dá a Jesus na sua confissão?",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "template": "Simão Pedro respondeu: \"Tu és o ___, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "mestre"
+      },
+      {
+        "id": "c",
+        "text": "profeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "Esse título reconhece Jesus como o ungido prometido por Deus.",
+    "feedbackWrong": {
+      "b": "A confissão nomeia a missão de Jesus, não só o seu ensino.",
+      "c": "Pedro reconhece mais do que um mensageiro de Deus."
+    },
+    "hint": "É o primeiro título da resposta de Pedro.",
+    "learningObjective": "Lembrar o termo central da confissão de Pedro.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-01-eras-06",
+    "trail": "historia-igreja",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 16:18 a Efésios 2:20?",
+    "prompt": "O que liga Mateus 16:18 a Efésios 2:20?",
+    "cue": "O que liga Mateus 16:18 a Efésios 2:20?",
+    "verseRef": "Mateus 16:17–18",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Efésios 2:20",
+      "text": "Edificados sobre o fundamento dos apóstolos e dos profetas, sendo ele mesmo, Jesus Cristo, a pedra angular;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Igreja sem fundamento algum"
+      },
+      {
+        "id": "b",
+        "text": "Igreja edificada sobre Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Edifício feito só por homens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sobre esta pedra edificarei a minha igreja",
+    "feedbackCorrect": "Paulo usa a mesma imagem de edifício para falar do povo de Deus.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de fundamento, não de ausência dele.",
+      "c": "Nos dois textos, quem constrói o povo é Deus."
+    },
+    "hint": "Compare a imagem de construção nos dois textos.",
+    "learningObjective": "Ligar a promessa de Cristo à imagem do edifício em Paulo.",
+    "evidence": [
+      "Mateus 16:18",
+      "Efésios 2:20"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-02-credos-01",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Judas 1:1, Judas se apresenta como apóstolo de Jesus Cristo e irmão de João.",
+    "prompt": "Em Judas 1:1, Judas se apresenta como apóstolo de Jesus Cristo e irmão de João.",
+    "cue": "Em Judas 1:1, Judas se apresenta como apóstolo de Jesus Cristo e irmão de João.",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "servo de Jesus Cristo e irmão de Tiago",
+    "feedbackCorrect": "Ele se apresenta como servo de Jesus Cristo e irmão de Tiago.",
+    "feedbackWrong": {
+      "true": "Releia como Judas se apresenta no primeiro versículo."
+    },
+    "hint": "Leia a apresentação no início da carta.",
+    "learningObjective": "Observar como o autor se apresenta.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-02-credos-02",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Judas 1:3, toque a palavra que nomeia quem recebeu a fé entregue.",
+    "prompt": "Em Judas 1:3, toque a palavra que nomeia quem recebeu a fé entregue.",
+    "cue": "Em Judas 1:3, toque a palavra que nomeia quem recebeu a fé entregue.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "santos"
+      },
+      {
+        "id": "b",
+        "text": "vocês"
+      },
+      {
+        "id": "c",
+        "text": "Amados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé foi entregue ao povo separado para Deus.",
+    "feedbackWrong": {
+      "b": "Essa palavra indica os leitores, não o nome que recebem no fim.",
+      "c": "Essa palavra é o tratamento carinhoso aos leitores no início."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Identificar quem recebeu a fé entregue.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-02-credos-03",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Judas 1:1, quem escreve a carta?",
+    "prompt": "Segundo Judas 1:1, quem escreve a carta?",
+    "cue": "Segundo Judas 1:1, quem escreve a carta?",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro, apóstolo de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Tiago, irmão de João"
+      },
+      {
+        "id": "c",
+        "text": "Paulo, servo de Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Judas, irmão de Tiago"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Judas, servo de Jesus Cristo e irmão de Tiago",
+    "feedbackCorrect": "O autor se nomeia logo na primeira linha da carta.",
+    "feedbackWrong": {
+      "a": "Pedro não é citado como autor desta carta.",
+      "b": "Tiago é citado como irmão do autor, não como autor.",
+      "c": "Paulo escreveu outras cartas, não esta."
+    },
+    "hint": "Leia o primeiro nome da carta.",
+    "learningObjective": "Observar a autoria da carta de Judas.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-02-credos-04",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Judas 1:3 na ordem do texto.",
+    "prompt": "Monte Judas 1:3 na ordem do texto.",
+    "cue": "Monte Judas 1:3 na ordem do texto.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "enquanto me esforçava para escrever a vocês"
+      },
+      {
+        "id": "b",
+        "text": "senti-me obrigado a exortá-los a batalhar"
+      },
+      {
+        "id": "c",
+        "text": "pela fé que foi entregue uma vez por todas aos santos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pela fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "O plano inicial vem antes do novo chamado a batalhar pela fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo esforço inicial de Judas; a fé entregue fecha o versículo."
+    },
+    "hint": "O versículo começa com o plano de Judas.",
+    "learningObjective": "Reconhecer a sequência de Judas 1:3.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-02-credos-05",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Judas 1:2, o que Judas deseja que seja multiplicado, junto da paz e do amor?",
+    "prompt": "Em Judas 1:2, o que Judas deseja que seja multiplicado, junto da paz e do amor?",
+    "cue": "Em Judas 1:2, o que Judas deseja que seja multiplicado, junto da paz e do amor?",
+    "verseRef": "Judas 1:2",
+    "passageText": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados em vocês.",
+    "template": "Que a ___, a paz e o amor de Deus sejam multiplicados em vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados",
+    "feedbackCorrect": "O desejo de Judas reúne três dons para a vida dos leitores.",
+    "feedbackWrong": {
+      "a": "A alegria não é o primeiro dom nomeado por Judas.",
+      "b": "Judas nomeia outro dom antes da paz e do amor."
+    },
+    "hint": "Leia a primeira palavra do desejo de Judas.",
+    "learningObjective": "Lembrar o desejo de Judas pelos leitores.",
+    "evidence": [
+      "Judas 1:2"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-02-credos-06",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ao longo dos séculos, a igreja resumiu e guardou a fé recebida diante de erros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a fé recebida"
+      },
+      {
+        "id": "b",
+        "text": "Inventar uma fé nova"
+      },
+      {
+        "id": "c",
+        "text": "Abandonar a fé antiga"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "batalhar diligentemente pela fé",
+    "feedbackCorrect": "Guardar a fé recebida é o chamado que atravessa os séculos.",
+    "feedbackWrong": {
+      "b": "A fé foi entregue; não cabe à igreja inventar outra.",
+      "c": "O chamado é o contrário de abandonar a fé."
+    },
+    "hint": "Veja o que Judas pede aos leitores.",
+    "learningObjective": "Ligar Judas 1:3 ao cuidado da igreja com a fé.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-02-credos-01",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Judas 1:3, Judas muda o plano inicial porque se sente obrigado a exortar os leitores a batalhar pela fé.",
+    "prompt": "Em Judas 1:3, Judas muda o plano inicial porque se sente obrigado a exortar os leitores a batalhar pela fé.",
+    "cue": "Em Judas 1:3, Judas muda o plano inicial porque se sente obrigado a exortar os leitores a batalhar pela fé.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "senti-me obrigado a exortá-los a batalhar diligentemente pela fé",
+    "feedbackCorrect": "A necessidade do momento muda o tema imediato da carta.",
+    "feedbackWrong": {
+      "false": "Releia o motivo que Judas dá para escrever assim."
+    },
+    "hint": "Veja o que Judas sentiu ao escrever.",
+    "learningObjective": "Compreender a mudança de plano de Judas.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-02-credos-02",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Judas 1:3, toque a palavra que mostra que Judas se sentiu impelido a mudar o tema.",
+    "prompt": "Em Judas 1:3, toque a palavra que mostra que Judas se sentiu impelido a mudar o tema.",
+    "cue": "Em Judas 1:3, toque a palavra que mostra que Judas se sentiu impelido a mudar o tema.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "enquanto"
+      },
+      {
+        "id": "b",
+        "text": "comum"
+      },
+      {
+        "id": "c",
+        "text": "obrigado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "senti-me obrigado a exortá-los",
+    "feedbackCorrect": "Essa palavra explica a urgência que muda o plano da carta.",
+    "feedbackWrong": {
+      "a": "Essa palavra marca o tempo do plano inicial, não a urgência.",
+      "b": "Essa palavra descreve a salvação, não a urgência de Judas."
+    },
+    "hint": "Procure o que Judas sentiu no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador da urgência de Judas.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-02-credos-03",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que a carta de Judas 1:3–4 toma outro rumo além da salvação comum?",
+    "prompt": "Por que a carta de Judas 1:3–4 toma outro rumo além da salvação comum?",
+    "cue": "Por que a carta de Judas 1:3–4 toma outro rumo além da salvação comum?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Surgiu a necessidade de guardar a fé recebida"
+      },
+      {
+        "id": "b",
+        "text": "Os leitores pediram uma nova fé"
+      },
+      {
+        "id": "c",
+        "text": "Judas quis abandonar o tema da salvação"
+      },
+      {
+        "id": "d",
+        "text": "Judas quis contar a história do Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "senti-me obrigado a exortá-los a batalhar diligentemente pela fé",
+    "feedbackCorrect": "A entrada de ensinos errados torna urgente cuidar da fé recebida.",
+    "feedbackWrong": {
+      "b": "Nenhum pedido dos leitores é mencionado no trecho.",
+      "c": "A salvação comum continua sendo o assunto de fundo da carta.",
+      "d": "O Egito só aparece depois, como lembrança aos leitores."
+    },
+    "hint": "Veja a urgência que Judas sente ao escrever.",
+    "learningObjective": "Relacionar a mudança da carta à defesa da fé.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-02-credos-04",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a abertura em Judas 1:2–3?",
+    "prompt": "Como avança a abertura em Judas 1:2–3?",
+    "cue": "Como avança a abertura em Judas 1:2–3?",
+    "verseRef": "Judas 1:2–3",
+    "passageText": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados em vocês. Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo de misericórdia, paz e amor"
+      },
+      {
+        "id": "b",
+        "text": "Plano de escrever sobre a salvação"
+      },
+      {
+        "id": "c",
+        "text": "Chamado a batalhar pela fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados",
+    "feedbackCorrect": "A carta abre com bênção, passa pelo plano e chega ao chamado urgente.",
+    "feedbackWrong": {
+      "default": "Comece pela bênção do versículo 2; o chamado fecha o versículo 3."
+    },
+    "hint": "Comece pelo versículo 2.",
+    "learningObjective": "Compreender o movimento da abertura da carta.",
+    "evidence": [
+      "Judas 1:2–3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-02-credos-05",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Judas 1:3–4, de que modo os crentes devem batalhar pela fé?",
+    "prompt": "Em Judas 1:3–4, de que modo os crentes devem batalhar pela fé?",
+    "cue": "Em Judas 1:3–4, de que modo os crentes devem batalhar pela fé?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "template": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar ___ pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "raramente"
+      },
+      {
+        "id": "b",
+        "text": "diligentemente"
+      },
+      {
+        "id": "c",
+        "text": "silenciosamente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a batalhar diligentemente pela fé",
+    "feedbackCorrect": "Guardar a fé pede cuidado constante, e não descuido.",
+    "feedbackWrong": {
+      "a": "Judas pede o contrário de um cuidado raro e ocasional.",
+      "c": "O chamado é a agir com zelo, não a ficar em silêncio."
+    },
+    "hint": "Leia o advérbio junto do verbo batalhar.",
+    "learningObjective": "Compreender o zelo pedido por Judas.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-02-credos-06",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Judas 1:3 a Atos 2:42?",
+    "prompt": "O que liga Judas 1:3 a Atos 2:42?",
+    "cue": "O que liga Judas 1:3 a Atos 2:42?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos."
+    },
+    "passageB": {
+      "ref": "Atos 2:42",
+      "text": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Trocar o ensino apostólico"
+      },
+      {
+        "id": "b",
+        "text": "Perseverar no ensino recebido"
+      },
+      {
+        "id": "c",
+        "text": "Viver sem ensino algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A primeira igreja perseverou no ensino que Judas manda guardar.",
+    "feedbackWrong": {
+      "a": "Os dois textos valorizam o ensino recebido, não a troca dele.",
+      "c": "Os dois textos mostram uma fé ensinada e guardada."
+    },
+    "hint": "Veja o que a primeira igreja fazia com perseverança.",
+    "learningObjective": "Relacionar a fé entregue à perseverança da igreja.",
+    "evidence": [
+      "Judas 1:3",
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-02-credos-01",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Judas 1:3 ensina que cada geração deve criar uma nova fé conforme o seu tempo.",
+    "prompt": "Judas 1:3 ensina que cada geração deve criar uma nova fé conforme o seu tempo.",
+    "cue": "Judas 1:3 ensina que cada geração deve criar uma nova fé conforme o seu tempo.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé foi entregue de uma vez; cada geração deve guardá-la.",
+    "feedbackWrong": {
+      "true": "Releia como Judas descreve a entrega da fé aos santos."
+    },
+    "hint": "Veja quantas vezes a fé foi entregue.",
+    "learningObjective": "Interpretar a fé como dom recebido, não invenção.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-02-credos-02",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Judas 1:1, toque a palavra que sustenta que os crentes não guardam a fé sozinhos.",
+    "prompt": "Em Judas 1:1, toque a palavra que sustenta que os crentes não guardam a fé sozinhos.",
+    "cue": "Em Judas 1:1, toque a palavra que sustenta que os crentes não guardam a fé sozinhos.",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chamados"
+      },
+      {
+        "id": "b",
+        "text": "guardados"
+      },
+      {
+        "id": "c",
+        "text": "servo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "guardados em Jesus Cristo",
+    "feedbackCorrect": "Antes de guardar a fé, os crentes já estão sob o cuidado de Cristo.",
+    "feedbackWrong": {
+      "a": "Essa palavra fala do chamado de Deus, não do seu cuidado contínuo.",
+      "c": "Essa palavra fala do amor do Pai, não do cuidado que sustenta."
+    },
+    "hint": "Procure a última descrição dos leitores.",
+    "learningObjective": "Sustentar com o texto o cuidado de Deus pelos crentes.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-02-credos-03",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Judas 1:3–4 sustenta sobre cuidar da fé?",
+    "prompt": "Que leitura Judas 1:3–4 sustenta sobre cuidar da fé?",
+    "cue": "Que leitura Judas 1:3–4 sustenta sobre cuidar da fé?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Usar a graça como permissão para pecar"
+      },
+      {
+        "id": "b",
+        "text": "Negar o senhorio de Jesus Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Criar uma fé nova em cada época"
+      },
+      {
+        "id": "d",
+        "text": "Guardar a fé recebida diante de ensinos errados"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "batalhar diligentemente pela fé que foi entregue",
+    "feedbackCorrect": "O zelo de Judas protege a fé recebida dos ensinos que a distorcem.",
+    "feedbackWrong": {
+      "a": "Judas denuncia justamente quem distorce a graça assim.",
+      "b": "Negar o Senhor é o erro denunciado, não o ensino de Judas.",
+      "c": "A fé foi entregue uma vez por todas, não reinventada."
+    },
+    "hint": "Compare o chamado de Judas com o erro do versículo 4.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-02-credos-04",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da fé guardada que começa em Judas 1:3?",
+    "prompt": "Qual sequência revela o fio da fé guardada que começa em Judas 1:3?",
+    "cue": "Qual sequência revela o fio da fé guardada que começa em Judas 1:3?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé é entregue aos santos"
+      },
+      {
+        "id": "b",
+        "text": "A igreja persevera no ensino recebido"
+      },
+      {
+        "id": "c",
+        "text": "O crente guarda a fé até o fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé entregue é perseverada pela igreja e guardada até o fim.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega da fé; guardá-la até o fim vem por último."
+    },
+    "hint": "Comece pelo que Judas diz que já aconteceu.",
+    "learningObjective": "Ver a fé recebida como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Judas 1:3",
+      "Atos 2:42",
+      "2 Timóteo 4:7"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-02-credos-05",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Judas 1:4, em que certos homens transformam a graça de Deus?",
+    "prompt": "Em Judas 1:4, em que certos homens transformam a graça de Deus?",
+    "cue": "Em Judas 1:4, em que certos homens transformam a graça de Deus?",
+    "verseRef": "Judas 1:4",
+    "passageText": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "template": "Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em ___ e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "santidade"
+      },
+      {
+        "id": "b",
+        "text": "libertinagem"
+      },
+      {
+        "id": "c",
+        "text": "reverência"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "transformam a graça de nosso Deus em libertinagem",
+    "feedbackCorrect": "Judas denuncia o uso da graça como desculpa para viver sem limites.",
+    "feedbackWrong": {
+      "a": "Transformar a graça nisso seria o contrário do erro denunciado.",
+      "c": "O erro denunciado é a falta de temor, não o excesso dele."
+    },
+    "hint": "Leia o que Judas denuncia no meio do versículo.",
+    "learningObjective": "Lembrar o termo que nomeia a distorção da graça.",
+    "evidence": [
+      "Judas 1:4"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-02-credos-06",
+    "trail": "historia-igreja",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Judas 1:3 a 2 Timóteo 4:7?",
+    "prompt": "O que liga Judas 1:3 a 2 Timóteo 4:7?",
+    "cue": "O que liga Judas 1:3 a 2 Timóteo 4:7?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos."
+    },
+    "passageB": {
+      "ref": "2 Timóteo 4:7",
+      "text": "Combati o bom combate, completei a corrida, guardei a fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abandonar o bom combate"
+      },
+      {
+        "id": "b",
+        "text": "Guardar a fé até o fim"
+      },
+      {
+        "id": "c",
+        "text": "Guardar riquezas e honras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "batalhar diligentemente pela fé",
+    "feedbackCorrect": "Paulo termina a vida dizendo ter guardado a mesma fé recebida.",
+    "feedbackWrong": {
+      "a": "Paulo afirma o contrário, pois completou a carreira.",
+      "c": "Paulo fala de guardar a fé, não bens ou prestígio."
+    },
+    "hint": "Veja o que Paulo diz ter guardado no fim da vida.",
+    "learningObjective": "Ligar o chamado de Judas ao testemunho de Paulo.",
+    "evidence": [
+      "Judas 1:3",
+      "2 Timóteo 4:7"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-01",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 16:18, Jesus diz que edificará a sua igreja e que as portas do inferno não prevalecerão contra ela.",
+    "prompt": "Em Mateus 16:18, Jesus diz que edificará a sua igreja e que as portas do inferno não prevalecerão contra ela.",
+    "cue": "Em Mateus 16:18, Jesus diz que edificará a sua igreja e que as portas do inferno não prevalecerão contra ela.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "A promessa reúne o edificador e a permanência da igreja.",
+    "feedbackWrong": {
+      "false": "Releia a promessa completa de Jesus no versículo."
+    },
+    "hint": "Leia o versículo inteiro com atenção.",
+    "learningObjective": "Observar a promessa de Cristo à igreja.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-02",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 16:18, toque o trecho que mostra a quem a igreja pertence.",
+    "prompt": "Em Mateus 16:18, toque o trecho que mostra a quem a igreja pertence.",
+    "cue": "Em Mateus 16:18, toque o trecho que mostra a quem a igreja pertence.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "minha igreja"
+      },
+      {
+        "id": "b",
+        "text": "do inferno"
+      },
+      {
+        "id": "c",
+        "text": "esta pedra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "O pronome mostra que a igreja é do próprio Jesus.",
+    "feedbackWrong": {
+      "b": "Esse trecho indica a oposição, não o dono da igreja.",
+      "c": "Esse trecho indica o fundamento, não a quem a igreja pertence."
+    },
+    "hint": "Procure um pronome junto da palavra principal.",
+    "learningObjective": "Identificar a quem a igreja pertence.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-03",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 16:16, quem Pedro diz que Jesus é?",
+    "prompt": "Segundo Mateus 16:16, quem Pedro diz que Jesus é?",
+    "cue": "Segundo Mateus 16:16, quem Pedro diz que Jesus é?",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um rei político de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Um profeta como os antigos"
+      },
+      {
+        "id": "c",
+        "text": "Um mestre da lei de Moisés"
+      },
+      {
+        "id": "d",
+        "text": "O Cristo, Filho de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "A confissão de Pedro reconhece Jesus como o enviado prometido.",
+    "feedbackWrong": {
+      "a": "Pedro não apresenta Jesus como líder político.",
+      "b": "Pedro vai além de chamar Jesus apenas de profeta.",
+      "c": "A confissão fala da identidade de Jesus, não de um cargo."
+    },
+    "hint": "Leia toda a resposta de Pedro.",
+    "learningObjective": "Observar a confissão de Pedro sobre Jesus.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-04",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 16:18 na ordem do texto.",
+    "prompt": "Monte Mateus 16:18 na ordem do texto.",
+    "cue": "Monte Mateus 16:18 na ordem do texto.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E também eu te digo que tu és Pedro"
+      },
+      {
+        "id": "b",
+        "text": "sobre esta pedra edificarei a minha igreja"
+      },
+      {
+        "id": "c",
+        "text": "as portas do inferno não prevalecerão contra ela"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sobre esta pedra edificarei a minha igreja",
+    "feedbackCorrect": "A promessa vem depois do nome de Pedro e termina na resistência.",
+    "feedbackWrong": {
+      "default": "Comece pela fala a Pedro; a resistência fecha o versículo."
+    },
+    "hint": "O versículo começa falando com Pedro.",
+    "learningObjective": "Reconhecer a sequência de Mateus 16:18.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-05",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 16:17–18, o que as portas do inferno não farão contra a igreja?",
+    "prompt": "Em Mateus 16:17–18, o que as portas do inferno não farão contra a igreja?",
+    "cue": "Em Mateus 16:17–18, o que as portas do inferno não farão contra a igreja?",
+    "verseRef": "Mateus 16:17–18",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "template": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não ___ contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecerão"
+      },
+      {
+        "id": "b",
+        "text": "edificarão"
+      },
+      {
+        "id": "c",
+        "text": "prevalecerão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "as portas do inferno não prevalecerão contra ela",
+    "feedbackCorrect": "A oposição não terá a vitória final sobre a igreja de Cristo.",
+    "feedbackWrong": {
+      "a": "O versículo não fala de conhecer, mas de vencer a igreja.",
+      "b": "Quem edifica é Jesus; o versículo fala do que não vencerá."
+    },
+    "hint": "Leia o fim do versículo 18.",
+    "learningObjective": "Lembrar a promessa de permanência da igreja.",
+    "evidence": [
+      "Mateus 16:17–18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-06",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 16:17–18",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\" E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo promete que a sua igreja permanecerá através das eras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo edifica e sustenta"
+      },
+      {
+        "id": "b",
+        "text": "A igreja se sustenta sozinha"
+      },
+      {
+        "id": "c",
+        "text": "O inferno vence no fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "A permanência da igreja está ligada à ação do próprio Cristo.",
+    "feedbackWrong": {
+      "b": "Quem edifica é Cristo, não a igreja por si mesma.",
+      "c": "O texto afirma justamente o contrário disso."
+    },
+    "hint": "Veja quem age no versículo.",
+    "learningObjective": "Ligar a promessa de Cristo à permanência da igreja.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-07",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Judas 1:3, toque a palavra que nomeia quem recebeu a fé entregue.",
+    "prompt": "Em Judas 1:3, toque a palavra que nomeia quem recebeu a fé entregue.",
+    "cue": "Em Judas 1:3, toque a palavra que nomeia quem recebeu a fé entregue.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocês"
+      },
+      {
+        "id": "b",
+        "text": "santos"
+      },
+      {
+        "id": "c",
+        "text": "Amados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé foi entregue ao povo separado para Deus.",
+    "feedbackWrong": {
+      "a": "Essa palavra indica os leitores, não o nome dado no fim.",
+      "c": "Essa é a forma carinhosa de tratar os leitores no início."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Identificar quem recebeu a fé entregue.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-sem-hi-03-desafio-08",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Judas 1:3 na ordem do texto.",
+    "prompt": "Monte Judas 1:3 na ordem do texto.",
+    "cue": "Monte Judas 1:3 na ordem do texto.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "enquanto me esforçava para escrever a vocês"
+      },
+      {
+        "id": "b",
+        "text": "senti-me obrigado a exortá-los a batalhar"
+      },
+      {
+        "id": "c",
+        "text": "pela fé que foi entregue uma vez por todas aos santos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pela fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "O plano inicial vem antes do chamado a batalhar pela fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo esforço inicial; a fé entregue fecha o versículo."
+    },
+    "hint": "O versículo começa com o plano de Judas.",
+    "learningObjective": "Reconhecer a sequência de Judas 1:3.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-01",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Judas 1:3, Judas afirma que a fé deve ser reinventada por cada geração de crentes.",
+    "prompt": "Em Judas 1:3, Judas afirma que a fé deve ser reinventada por cada geração de crentes.",
+    "cue": "Em Judas 1:3, Judas afirma que a fé deve ser reinventada por cada geração de crentes.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé foi entregue de uma vez; cada geração deve guardá-la.",
+    "feedbackWrong": {
+      "true": "Releia como Judas descreve a entrega da fé."
+    },
+    "hint": "Veja quantas vezes a fé foi entregue.",
+    "learningObjective": "Compreender a fé como dom recebido.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-02",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 16:17, toque a palavra que introduz o motivo da bem-aventurança de Pedro.",
+    "prompt": "Em Mateus 16:17, toque a palavra que introduz o motivo da bem-aventurança de Pedro.",
+    "cue": "Em Mateus 16:17, toque a palavra que introduz o motivo da bem-aventurança de Pedro.",
+    "verseRef": "Mateus 16:17",
+    "passageText": "E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "porque"
+      },
+      {
+        "id": "b",
+        "text": "sangue"
+      },
+      {
+        "id": "c",
+        "text": "céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque isso não foi revelado",
+    "feedbackCorrect": "Essa palavra liga a bem-aventurança à revelação do Pai.",
+    "feedbackWrong": {
+      "b": "Essa palavra faz parte do que não revelou a confissão.",
+      "c": "Essa palavra indica o lugar do Pai, não o motivo."
+    },
+    "hint": "Procure uma palavra curta após o nome de Pedro.",
+    "learningObjective": "Reconhecer o marcador de causa no texto.",
+    "evidence": [
+      "Mateus 16:17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-03",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 16:16–17 explica a confissão de Pedro?",
+    "prompt": "Como Mateus 16:16–17 explica a confissão de Pedro?",
+    "cue": "Como Mateus 16:16–17 explica a confissão de Pedro?",
+    "verseRef": "Mateus 16:16–17",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\" E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela nasceu apenas do esforço de Pedro"
+      },
+      {
+        "id": "b",
+        "text": "Ela veio por revelação do Pai celeste"
+      },
+      {
+        "id": "c",
+        "text": "Ela foi ensinada pelos outros discípulos"
+      },
+      {
+        "id": "d",
+        "text": "Ela repetiu a opinião das multidões"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas pelo meu Pai que está nos céus",
+    "feedbackCorrect": "Jesus explica a confissão como dom revelado pelo Pai.",
+    "feedbackWrong": {
+      "a": "Jesus nega que a origem seja carne e sangue.",
+      "c": "Nenhum discípulo é citado como fonte da confissão.",
+      "d": "A pergunta de Jesus separa discípulos e multidão."
+    },
+    "hint": "Compare a confissão com a explicação de Jesus.",
+    "learningObjective": "Relacionar a confissão de Pedro à revelação do Pai.",
+    "evidence": [
+      "Mateus 16:16–17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-04",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Mateus 16:16–17?",
+    "prompt": "Como avança a cena em Mateus 16:16–17?",
+    "cue": "Como avança a cena em Mateus 16:16–17?",
+    "verseRef": "Mateus 16:16–17",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\" E Jesus afirmou: \"Bem-aventurado és, Simão Barjonas, porque isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro confessa quem Jesus é"
+      },
+      {
+        "id": "b",
+        "text": "Jesus chama Pedro de bem-aventurado"
+      },
+      {
+        "id": "c",
+        "text": "Jesus atribui a confissão ao Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bem-aventurado és, Simão Barjonas",
+    "feedbackCorrect": "Primeiro a confissão, depois a resposta e a explicação de Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pela fala de Pedro; a explicação vem por último."
+    },
+    "hint": "A confissão abre a cena.",
+    "learningObjective": "Compreender o movimento da confissão à explicação.",
+    "evidence": [
+      "Mateus 16:16–17"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-05",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Judas 1:3–4, de que modo os crentes devem batalhar pela fé?",
+    "prompt": "Em Judas 1:3–4, de que modo os crentes devem batalhar pela fé?",
+    "cue": "Em Judas 1:3–4, de que modo os crentes devem batalhar pela fé?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "template": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar ___ pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "diligentemente"
+      },
+      {
+        "id": "b",
+        "text": "raramente"
+      },
+      {
+        "id": "c",
+        "text": "silenciosamente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a batalhar diligentemente pela fé",
+    "feedbackCorrect": "Guardar a fé pede cuidado constante, e não descuido.",
+    "feedbackWrong": {
+      "b": "Judas pede o contrário de um cuidado raro.",
+      "c": "O chamado é agir com zelo, não ficar em silêncio."
+    },
+    "hint": "Leia o advérbio junto do verbo batalhar.",
+    "learningObjective": "Compreender o zelo pedido por Judas.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-06",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 16:16 a Filipenses 2:11?",
+    "prompt": "O que liga Mateus 16:16 a Filipenses 2:11?",
+    "cue": "O que liga Mateus 16:16 a Filipenses 2:11?",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "passageA": {
+      "ref": "Mateus 16:16",
+      "text": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\""
+    },
+    "passageB": {
+      "ref": "Filipenses 2:11",
+      "text": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esconder a fé em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Confessar Cristo como Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Negar o Filho de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "Pedro confessa Jesus, e Paulo fala de toda língua confessando.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de confessar, não de esconder.",
+      "c": "Os dois textos afirmam quem Jesus é, não o negam."
+    },
+    "hint": "Veja o que Pedro e Paulo falam sobre Jesus.",
+    "learningObjective": "Relacionar a confissão de Pedro à confissão da igreja.",
+    "evidence": [
+      "Mateus 16:16",
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-07",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Judas 1:3, toque a palavra que mostra que Judas se sentiu impelido a mudar o tema.",
+    "prompt": "Em Judas 1:3, toque a palavra que mostra que Judas se sentiu impelido a mudar o tema.",
+    "cue": "Em Judas 1:3, toque a palavra que mostra que Judas se sentiu impelido a mudar o tema.",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "comum"
+      },
+      {
+        "id": "b",
+        "text": "enquanto"
+      },
+      {
+        "id": "c",
+        "text": "obrigado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "senti-me obrigado a exortá-los",
+    "feedbackCorrect": "Essa palavra explica a urgência que muda o plano da carta.",
+    "feedbackWrong": {
+      "a": "Essa palavra descreve a salvação, não a urgência.",
+      "b": "Essa palavra marca o tempo do plano inicial."
+    },
+    "hint": "Procure o que Judas sentiu no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador da urgência de Judas.",
+    "evidence": [
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-cam-hi-03-desafio-08",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a abertura em Judas 1:2–3?",
+    "prompt": "Como avança a abertura em Judas 1:2–3?",
+    "cue": "Como avança a abertura em Judas 1:2–3?",
+    "verseRef": "Judas 1:2–3",
+    "passageText": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados em vocês. Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo de misericórdia, paz e amor"
+      },
+      {
+        "id": "b",
+        "text": "Plano de escrever sobre a salvação"
+      },
+      {
+        "id": "c",
+        "text": "Chamado a batalhar pela fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Que a misericórdia, a paz e o amor de Deus sejam multiplicados",
+    "feedbackCorrect": "A carta abre com bênção e chega ao chamado urgente.",
+    "feedbackWrong": {
+      "default": "Comece pela bênção do versículo 2; o chamado fecha."
+    },
+    "hint": "Comece pelo versículo 2.",
+    "learningObjective": "Compreender o movimento da abertura da carta.",
+    "evidence": [
+      "Judas 1:2–3"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-01",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Mateus 16:18 sustenta que a igreja pertence a Cristo e que ele mesmo a edifica.",
+    "prompt": "Mateus 16:18 sustenta que a igreja pertence a Cristo e que ele mesmo a edifica.",
+    "cue": "Mateus 16:18 sustenta que a igreja pertence a Cristo e que ele mesmo a edifica.",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "Jesus usa a primeira pessoa e chama a igreja de sua.",
+    "feedbackWrong": {
+      "false": "Releia quem diz que edificará e de quem é a igreja."
+    },
+    "hint": "Repare nos pronomes do versículo.",
+    "learningObjective": "Interpretar a igreja como obra de Cristo.",
+    "evidence": [
+      "Mateus 16:18"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-02",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 16:16, toque as palavras que nomeiam Deus na confissão de Pedro.",
+    "prompt": "Em Mateus 16:16, toque as palavras que nomeiam Deus na confissão de Pedro.",
+    "cue": "Em Mateus 16:16, toque as palavras que nomeiam Deus na confissão de Pedro.",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "respondeu"
+      },
+      {
+        "id": "b",
+        "text": "Simão Pedro"
+      },
+      {
+        "id": "c",
+        "text": "Deus vivo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Filho do Deus vivo",
+    "feedbackCorrect": "Pedro chama Jesus de Filho daquele que vive para sempre.",
+    "feedbackWrong": {
+      "a": "Esse verbo diz o que Pedro fez, não como nomeia o Pai.",
+      "b": "Esse é o nome de quem responde à pergunta."
+    },
+    "hint": "Procure o fim da frase de Pedro.",
+    "learningObjective": "Sustentar a confissão com o texto de Pedro.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-03",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Judas 1:3–4 sustenta sobre cuidar da fé?",
+    "prompt": "Que leitura Judas 1:3–4 sustenta sobre cuidar da fé?",
+    "cue": "Que leitura Judas 1:3–4 sustenta sobre cuidar da fé?",
+    "verseRef": "Judas 1:3–4",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos. Porque certos indivíduos se introduziram dissimuladamente, os quais já estavam escritos para este mesmo juízo, homens ímpios que transformam a graça de nosso Deus em libertinagem e negam o nosso único Soberano e Senhor, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar o senhorio de Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Usar a graça como permissão para pecar"
+      },
+      {
+        "id": "c",
+        "text": "Guardar a fé recebida diante de ensinos errados"
+      },
+      {
+        "id": "d",
+        "text": "Criar uma fé nova em cada época"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "batalhar diligentemente pela fé que foi entregue",
+    "feedbackCorrect": "O zelo de Judas protege a fé recebida dos ensinos errados.",
+    "feedbackWrong": {
+      "a": "Negar o Senhor é o erro denunciado por Judas.",
+      "b": "Judas denuncia justamente quem distorce a graça assim.",
+      "d": "A fé foi entregue uma vez, não reinventada."
+    },
+    "hint": "Compare o chamado de Judas com o erro seguinte.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Judas 1:3–4"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-04",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da igreja que começa em Mateus 16:18?",
+    "prompt": "Qual sequência revela o fio da igreja que começa em Mateus 16:18?",
+    "cue": "Qual sequência revela o fio da igreja que começa em Mateus 16:18?",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo promete edificar a igreja"
+      },
+      {
+        "id": "b",
+        "text": "A igreja persevera no ensino apostólico"
+      },
+      {
+        "id": "c",
+        "text": "A fé recebida é guardada pelos santos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "edificarei a minha igreja",
+    "feedbackCorrect": "A promessa de Cristo gera uma igreja que persevera e guarda.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de Cristo; guardar a fé vem depois."
+    },
+    "hint": "Comece pelo que Cristo promete fazer.",
+    "learningObjective": "Ver a promessa de Cristo como início da igreja.",
+    "evidence": [
+      "Mateus 16:18",
+      "Atos 2:42",
+      "Judas 1:3"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-05",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 16:16, que título Pedro dá a Jesus na sua confissão?",
+    "prompt": "Em Mateus 16:16, que título Pedro dá a Jesus na sua confissão?",
+    "cue": "Em Mateus 16:16, que título Pedro dá a Jesus na sua confissão?",
+    "verseRef": "Mateus 16:16",
+    "passageText": "Simão Pedro respondeu: \"Tu és o Cristo, o Filho do Deus vivo.\"",
+    "template": "Simão Pedro respondeu: \"Tu és o ___, o Filho do Deus vivo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "mestre"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo",
+    "feedbackCorrect": "Esse título reconhece Jesus como o ungido prometido.",
+    "feedbackWrong": {
+      "a": "A confissão nomeia a missão, não só o ensino.",
+      "b": "Pedro reconhece mais do que um mensageiro de Deus."
+    },
+    "hint": "É o primeiro título da resposta de Pedro.",
+    "learningObjective": "Lembrar o termo central da confissão.",
+    "evidence": [
+      "Mateus 16:16"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-06",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 16:18 a Efésios 2:20?",
+    "prompt": "O que liga Mateus 16:18 a Efésios 2:20?",
+    "cue": "O que liga Mateus 16:18 a Efésios 2:20?",
+    "verseRef": "Mateus 16:18",
+    "passageText": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.",
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "E também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Efésios 2:20",
+      "text": "Edificados sobre o fundamento dos apóstolos e dos profetas, sendo ele mesmo, Jesus Cristo, a pedra angular;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Edifício feito só por homens"
+      },
+      {
+        "id": "b",
+        "text": "Igreja edificada sobre Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Igreja sem fundamento algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sobre esta pedra edificarei a minha igreja",
+    "feedbackCorrect": "Paulo usa a mesma imagem de edifício para o povo de Deus.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, quem constrói o povo é Deus.",
+      "c": "Os dois textos falam de fundamento, não de ausência."
+    },
+    "hint": "Compare a imagem de construção nos dois textos.",
+    "learningObjective": "Ligar a promessa de Cristo ao edifício em Paulo.",
+    "evidence": [
+      "Mateus 16:18",
+      "Efésios 2:20"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-07",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Judas 1:1, toque a palavra que sustenta que os crentes não guardam a fé sozinhos.",
+    "prompt": "Em Judas 1:1, toque a palavra que sustenta que os crentes não guardam a fé sozinhos.",
+    "cue": "Em Judas 1:1, toque a palavra que sustenta que os crentes não guardam a fé sozinhos.",
+    "verseRef": "Judas 1:1",
+    "passageText": "Judas, servo de Jesus Cristo e irmão de Tiago, aos chamados, amados em Deus Pai e guardados em Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chamados"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "guardados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "guardados em Jesus Cristo",
+    "feedbackCorrect": "Antes de guardar a fé, os crentes estão sob cuidado de Cristo.",
+    "feedbackWrong": {
+      "a": "Essa palavra fala do chamado, não do cuidado contínuo.",
+      "b": "Essa palavra fala do amor do Pai, não do sustento."
+    },
+    "hint": "Procure a última descrição dos leitores.",
+    "learningObjective": "Sustentar o cuidado de Deus pelos crentes.",
+    "evidence": [
+      "Judas 1:1"
+    ]
+  },
+  {
+    "id": "historia-igreja-pro-hi-03-desafio-08",
+    "trail": "historia-igreja",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da fé recebida em Judas 1:3?",
+    "prompt": "Qual sequência revela o caminho da fé recebida em Judas 1:3?",
+    "cue": "Qual sequência revela o caminho da fé recebida em Judas 1:3?",
+    "verseRef": "Judas 1:3",
+    "passageText": "Amados, enquanto me esforçava para escrever a vocês sobre a nossa salvação comum, senti-me obrigado a exortá-los a batalhar diligentemente pela fé que foi entregue uma vez por todas aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé é entregue aos santos"
+      },
+      {
+        "id": "b",
+        "text": "Os crentes são exortados a batalhar"
+      },
+      {
+        "id": "c",
+        "text": "A fé é guardada até o fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fé que foi entregue uma vez por todas aos santos",
+    "feedbackCorrect": "A fé entregue gera exortação e perseverança até o fim.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega da fé; o fim vem por último."
+    },
+    "hint": "Comece pelo que já foi entregue.",
+    "learningObjective": "Ver a fé recebida como fio de perseverança.",
+    "evidence": [
+      "Judas 1:3",
+      "2 Timóteo 4:7"
+    ]
+  }
+]

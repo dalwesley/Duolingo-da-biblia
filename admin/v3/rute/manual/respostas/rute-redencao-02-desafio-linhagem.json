@@ -1,0 +1,412 @@
+{
+  "study": {
+    "passageRef": "Rute 4:17–22",
+    "passages": [{ "ref": "Rute 4:17–22" }, { "ref": "Rute 4:14" }],
+    "context": "Este desafio revisa o desfecho: Boaz resgatou a família, Rute teve um filho e as mulheres de Belém celebraram com Noemi. A genealogia final mostra aonde essa história pequena vai chegar.",
+    "keyword": "Linhagem",
+    "keywordGloss": "A linha de gerações que liga o menino de Belém, Obede, ao rei Davi e, séculos depois, a Jesus.",
+    "focusQuestion": "Que parte da sua história, hoje pequena, Deus pode ligar a algo maior?",
+    "reflectionPrompts": ["Revisar a lealdade", "Do lamento à celebração", "Pequeno começo, grande linhagem"],
+    "facts": [
+      { "text": "As mulheres disseram que o Senhor não deixou de conceder um redentor a Noemi.", "evidenceRef": "Rute 4:14", "evidenceSpan": "não deixou de te conceder um redentor" },
+      { "text": "As vizinhas deram ao menino o nome de Obede.", "evidenceRef": "Rute 4:17", "evidenceSpan": "chamaram seu nome de Obede" },
+      { "text": "Obede é pai de Jessé, e Jessé é pai de Davi.", "evidenceRef": "Rute 4:17", "evidenceSpan": "Este é o pai de Jessé, pai de Davi" },
+      { "text": "A genealogia começa em Perez e passa por Esrom.", "evidenceRef": "Rute 4:18", "evidenceSpan": "Perez gerou a Esrom" },
+      { "text": "Salmon gerou Boaz, e Boaz gerou Obede.", "evidenceRef": "Rute 4:21", "evidenceSpan": "Salmon gerou Boaz, e Boaz gerou Obede" },
+      { "text": "A lista termina com Jessé gerando Davi.", "evidenceRef": "Rute 4:22", "evidenceSpan": "Jessé gerou Davi" }
+    ],
+    "keyTerms": [
+      { "term": "Obede", "gloss": "O filho de Boaz e Rute, elo entre a eira de Belém e a casa de Davi." },
+      { "term": "Jessé", "gloss": "Filho de Obede e pai de Davi: o elo do meio da linhagem." },
+      { "term": "Davi", "gloss": "O rei aonde a genealogia chega, vindo de uma família de viúvas." }
+    ],
+    "structure": [
+      { "label": "As mulheres bendizem o Senhor", "evidenceRef": "Rute 4:14" },
+      { "label": "O menino recebe um nome", "evidenceRef": "Rute 4:17" },
+      { "label": "As gerações vêm desde Perez", "evidenceRef": "Rute 4:18" },
+      { "label": "A linhagem chega ao rei", "evidenceRef": "Rute 4:22" }
+    ],
+    "relations": [
+      { "kind": "resultado", "text": "Da lealdade e do resgate nasce Obede: a família extinta ganha futuro.", "marker": null, "evidenceRef": "Rute 4:17" },
+      { "kind": "sequência", "text": "Um nome gera o seguinte, de Perez até Davi, sem saltos.", "marker": "gerou", "evidenceRef": "Rute 4:22" },
+      { "kind": "contraste", "text": "Quem pediu o nome Mara ouve que Deus não a deixou sem redentor.", "marker": null, "evidenceRef": "Rute 4:14" }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 3:32", "bridge": "Linhagem registrada também em Lucas" },
+      { "ref": "Apocalipse 22:16", "bridge": "Jesus raiz e descendente de Davi" },
+      { "ref": "Mateus 1:1", "bridge": "Jesus filho de Davi" }
+    ],
+    "misreadings": [
+      { "text": "A genealogia final é um apêndice sem valor para a fé.", "why": "Ela mostra o destino da fidelidade: das viúvas de Belém à linhagem do rei." },
+      { "text": "O menino importa só porque Davi virá dele, e as mulheres não contam.", "why": "O texto celebra primeiro Noemi e Rute; Davi é fruto da história delas." },
+      { "text": "Deus só age em famílias grandes e poderosas de Israel.", "why": "A linhagem do rei passa por uma viúva sem filhos e uma moabita estrangeira." }
+    ],
+    "centralInsight": "A fidelidade pequena entra na grande história de Deus",
+    "anchorQuestion": "Como a genealogia de Rute 4 liga duas viúvas ao rei Davi?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente", "type": "true_false",
+      "question": "Em Rute 4:14, as mulheres bendisseram o Senhor pelo redentor concedido a Noemi.",
+      "verseRef": "Rute 4:14", "correctOptionId": "true",
+      "evidenceSpan": "Seja o Senhor bendito, que hoje não deixou de te conceder um redentor",
+      "feedbackCorrect": "A celebração delas é bênção ao Senhor pelo redentor dado.",
+      "feedbackWrong": { "false": "Releia Rute 4:14: a fala das mulheres começa com bênção." },
+      "hint": "Veja a primeira fala das mulheres.",
+      "learningObjective": "Observar a celebração em Rute 4:14.",
+      "evidence": ["Rute 4:14"]
+    },
+    {
+      "difficulty": "semente", "type": "find_in_text",
+      "question": "Em Rute 4:17, toque o nome que as vizinhas deram ao menino.",
+      "verseRef": "Rute 4:17",
+      "options": [{ "id": "a", "text": "Jessé" }, { "id": "b", "text": "Obede" }, { "id": "c", "text": "filho" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamaram seu nome de Obede",
+      "feedbackCorrect": "Esse é o nome do filho de Boaz e Rute.",
+      "feedbackWrong": { "a": "Esse nome é da geração seguinte, filho dele.", "c": "Filho é o que ele é, não o nome que recebeu." },
+      "hint": "Procure depois de chamaram seu nome.",
+      "learningObjective": "Identificar o nome do menino no desfecho.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "semente", "type": "choice",
+      "question": "Segundo Rute 4:17, o que as vizinhas disseram que nasceu a Noemi?",
+      "verseRef": "Rute 4:17",
+      "options": [
+        { "id": "a", "text": "Um rei para governar Belém" },
+        { "id": "b", "text": "Um filho na família dela" },
+        { "id": "c", "text": "Um profeta para julgar Israel" },
+        { "id": "d", "text": "Um sacerdote para o templo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "A Noemi nasceu um filho",
+      "feedbackCorrect": "Para Noemi, o neto é celebrado como filho recebido.",
+      "feedbackWrong": { "a": "O rei vem gerações depois, não neste nascimento.", "c": "Nenhum profeta é anunciado pelas vizinhas.", "d": "Nenhum cargo de templo aparece nesta cena." },
+      "hint": "Ouça a frase das vizinhas sobre Noemi.",
+      "learningObjective": "Observar como as vizinhas anunciam o nascimento.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "semente", "type": "order",
+      "question": "Monte Rute 4:18–19 na ordem do texto.",
+      "verseRef": "Rute 4:18–19",
+      "options": [
+        { "id": "a", "text": "Perez gerou a Esrom" },
+        { "id": "b", "text": "Esrom gerou Rão" },
+        { "id": "c", "text": "Rão gerou Aminadabe" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Perez gerou a Esrom",
+      "feedbackCorrect": "Perez, Esrom, Rão e Aminadabe: é o começo da lista.",
+      "feedbackWrong": { "default": "Comece por Perez, o primeiro nome da genealogia." },
+      "hint": "A lista começa em Perez.",
+      "learningObjective": "Reconhecer o começo da genealogia final.",
+      "evidence": ["Rute 4:18–19"]
+    },
+    {
+      "difficulty": "semente", "type": "complete",
+      "question": "Em Rute 4:22, quem Jessé gerou no fim da genealogia?",
+      "verseRef": "Rute 4:22",
+      "options": [{ "id": "a", "text": "Davi" }, { "id": "b", "text": "Boaz" }, { "id": "c", "text": "Perez" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jessé gerou Davi",
+      "feedbackCorrect": "É o nome que fecha o livro e abre o futuro de Israel.",
+      "feedbackWrong": { "b": "Ele é antepassado do menino, não filho de Jessé.", "c": "Ele abre a lista, não a fecha." },
+      "hint": "É o último nome do livro inteiro.",
+      "learningObjective": "Lembrar o nome final da genealogia de Rute.",
+      "evidence": ["Rute 4:22"]
+    },
+    {
+      "difficulty": "semente", "type": "connect",
+      "question": "O que Rute 4:14 comunica que se liga a este contexto?",
+      "verseRef": "Rute 4:14",
+      "passageA": { "ref": "Rute 4:14" },
+      "passageB": { "ref": "Contexto", "text": "A mulher que voltou vazia a Belém agora tem um neto celebrado pelas vizinhas." },
+      "options": [
+        { "id": "a", "text": "Volta sozinha para Moabe" },
+        { "id": "b", "text": "Um redentor para quem voltou vazia" },
+        { "id": "c", "text": "Esquecimento da dor passada" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não deixou de te conceder um redentor",
+      "feedbackCorrect": "Quem voltou vazia ouve que Deus lhe concedeu um redentor.",
+      "feedbackWrong": { "a": "Ela permanece em Belém, agora com família.", "c": "A dor não é apagada: ela é respondida com um neto." },
+      "hint": "Veja o que Deus concedeu, segundo elas.",
+      "learningObjective": "Ligar a celebração à volta vazia de Noemi.",
+      "evidence": ["Rute 4:14"]
+    },
+    {
+      "difficulty": "semente", "type": "find_in_text",
+      "question": "Em Rute 4:14, toque o que as mulheres desejam que o nome do menino seja em Israel.",
+      "verseRef": "Rute 4:14",
+      "options": [{ "id": "a", "text": "redentor" }, { "id": "b", "text": "afamado" }, { "id": "c", "text": "Israel" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "que o nome dele seja afamado em Israel",
+      "feedbackCorrect": "Elas desejam fama ao nome do menino em Israel.",
+      "feedbackWrong": { "a": "Isso é o que Deus concedeu, não o desejo sobre o nome.", "c": "Esse é o povo onde o nome seria conhecido." },
+      "hint": "Procure o desejo delas sobre o nome dele.",
+      "learningObjective": "Identificar o desejo das mulheres sobre o menino.",
+      "evidence": ["Rute 4:14"]
+    },
+    {
+      "difficulty": "semente", "type": "order",
+      "question": "Monte Rute 4:17 na ordem do texto.",
+      "verseRef": "Rute 4:17",
+      "options": [
+        { "id": "a", "text": "as vizinhas lhe deram um nome" },
+        { "id": "b", "text": "A Noemi nasceu um filho" },
+        { "id": "c", "text": "chamaram seu nome de Obede" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "as vizinhas lhe deram um nome",
+      "feedbackCorrect": "As vizinhas falam, anunciam o filho e dão o nome.",
+      "feedbackWrong": { "default": "Comece pela ação das vizinhas no versículo." },
+      "hint": "O nome próprio só aparece no fim.",
+      "learningObjective": "Reconhecer a sequência do anúncio do nome.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "caminhada", "type": "true_false",
+      "question": "Em Rute 4:17, o menino é apresentado como pai de Jessé, e não como filho de Jessé.",
+      "verseRef": "Rute 4:17", "correctOptionId": "true",
+      "evidenceSpan": "Este é o pai de Jessé, pai de Davi",
+      "feedbackCorrect": "Obede vem antes: ele é pai de Jessé, avô do rei.",
+      "feedbackWrong": { "false": "Releia o fim de Rute 4:17: a ordem das gerações é essa." },
+      "hint": "Confira quem é pai de quem.",
+      "learningObjective": "Compreender a ordem das gerações em Rute 4:17.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "caminhada", "type": "find_in_text",
+      "question": "Em Rute 4:21, toque quem gerou o menino Obede.",
+      "verseRef": "Rute 4:21",
+      "options": [{ "id": "a", "text": "Salmon" }, { "id": "b", "text": "Boaz" }, { "id": "c", "text": "Obede" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "Boaz gerou Obede",
+      "feedbackCorrect": "O parente resgatador é o pai do menino celebrado.",
+      "feedbackWrong": { "a": "Ele gerou Boaz, uma geração antes do menino.", "c": "Ele é o menino gerado, não quem o gerou." },
+      "hint": "Procure o sujeito do segundo gerou.",
+      "learningObjective": "Relacionar o resgatador ao menino da genealogia.",
+      "evidence": ["Rute 4:21"]
+    },
+    {
+      "difficulty": "caminhada", "type": "choice",
+      "question": "Como Rute 4:17 continua a celebração ouvida em Rute 4:14?",
+      "verseRef": "Rute 4:17",
+      "options": [
+        { "id": "a", "text": "Nomeando o menino e ligando-o às gerações seguintes" },
+        { "id": "b", "text": "Encerrando a história sem falar do futuro dele" },
+        { "id": "c", "text": "Levando a família de volta para a terra de Moabe" },
+        { "id": "d", "text": "Trocando o louvor das mulheres por novo lamento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamaram seu nome de Obede",
+      "feedbackCorrect": "O redentor celebrado ganha nome e descendência no texto.",
+      "feedbackWrong": { "b": "O futuro é declarado: pai de Jessé, pai do rei.", "c": "A família se firma em Belém, não volta a Moabe.", "d": "O tom segue de celebração, agora com nome e linhagem." },
+      "hint": "Veja o que o versículo acrescenta ao louvor.",
+      "learningObjective": "Relacionar a celebração ao nome e à linhagem.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "caminhada", "type": "order",
+      "question": "Como se encadeiam as gerações em Rute 4:21–22?",
+      "verseRef": "Rute 4:21–22",
+      "options": [
+        { "id": "a", "text": "O resgatador se torna pai do menino" },
+        { "id": "b", "text": "O menino se torna pai da geração seguinte" },
+        { "id": "c", "text": "A linha chega ao pai do futuro rei" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Salmon gerou Boaz, e Boaz gerou Obede",
+      "feedbackCorrect": "Do resgatador ao menino, e dele até a casa real.",
+      "feedbackWrong": { "default": "Comece pelo resgatador virando pai." },
+      "hint": "A casa real é o ponto de chegada.",
+      "learningObjective": "Compreender o encadeamento até a casa de Davi.",
+      "evidence": ["Rute 4:21–22"]
+    },
+    {
+      "difficulty": "caminhada", "type": "complete",
+      "question": "Em Rute 4:14, que palavra de louvor as mulheres dirigem ao Senhor?",
+      "verseRef": "Rute 4:14",
+      "options": [{ "id": "a", "text": "bendito" }, { "id": "b", "text": "distante" }, { "id": "c", "text": "tardio" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "Seja o Senhor bendito",
+      "feedbackCorrect": "A resposta à dor de Noemi agora é louvor público.",
+      "feedbackWrong": { "b": "Elas louvam um Deus que agiu, não distante.", "c": "Nada de atraso é dito: o louvor é pelo presente." },
+      "hint": "É a palavra de louvor que abre a fala.",
+      "learningObjective": "Compreender a virada do lamento ao louvor.",
+      "evidence": ["Rute 4:14"]
+    },
+    {
+      "difficulty": "caminhada", "type": "connect",
+      "question": "O que liga Rute 4:22 a Lucas 3:32?",
+      "verseRef": "Rute 4:22",
+      "passageA": { "ref": "Rute 4:22" },
+      "passageB": { "ref": "Lucas 3:32" },
+      "options": [
+        { "id": "a", "text": "Linhagem registrada também em Lucas" },
+        { "id": "b", "text": "Uma lista de reis de Moabe" },
+        { "id": "c", "text": "O nascimento contado duas vezes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Obede gerou Jessé, e Jessé gerou Davi",
+      "feedbackCorrect": "Lucas traz os mesmos nomes na genealogia de Jesus.",
+      "feedbackWrong": { "b": "São gerações de Israel, não reis moabitas.", "c": "Lucas lista gerações; não reconta o nascimento." },
+      "hint": "Compare os nomes das duas listas.",
+      "learningObjective": "Relacionar as genealogias de Rute e de Lucas.",
+      "evidence": ["Rute 4:22", "Lucas 3:32"]
+    },
+    {
+      "difficulty": "caminhada", "type": "find_in_text",
+      "question": "Em Rute 4:22, toque quem gerou o futuro rei, segundo a lista.",
+      "verseRef": "Rute 4:22",
+      "options": [{ "id": "a", "text": "Obede" }, { "id": "b", "text": "Jessé" }, { "id": "c", "text": "Davi" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jessé gerou Davi",
+      "feedbackCorrect": "Ele é o pai do rei e filho do menino de Belém.",
+      "feedbackWrong": { "a": "Ele é o avô do rei, uma geração antes.", "c": "Ele é o rei gerado, não quem o gerou." },
+      "hint": "Procure o sujeito do último gerou.",
+      "learningObjective": "Identificar o elo entre Obede e o rei.",
+      "evidence": ["Rute 4:22"]
+    },
+    {
+      "difficulty": "caminhada", "type": "order",
+      "question": "Como avança a cena final de Rute 4:14–18?",
+      "verseRef": "Rute 4:14",
+      "options": [
+        { "id": "a", "text": "As mulheres louvam a Deus pelo redentor" },
+        { "id": "b", "text": "As vizinhas dão um nome ao menino" },
+        { "id": "c", "text": "A genealogia recua até o antigo Perez" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Seja o Senhor bendito",
+      "feedbackCorrect": "Louvor, nome do menino e a lista das gerações.",
+      "feedbackWrong": { "default": "Comece pelo louvor das mulheres em Belém." },
+      "hint": "A genealogia é a parte final da cena.",
+      "learningObjective": "Compreender o movimento da cena final do livro.",
+      "evidence": ["Rute 4:14"]
+    },
+    {
+      "difficulty": "profundezas", "type": "true_false",
+      "question": "Rute 4:17 ensina que só o rei futuro importa na história, e as duas viúvas não têm valor nela.",
+      "verseRef": "Rute 4:17", "correctOptionId": "false",
+      "evidenceSpan": "A Noemi nasceu um filho",
+      "feedbackCorrect": "O texto celebra as viúvas primeiro: o rei vem da história delas.",
+      "feedbackWrong": { "true": "O anúncio é para Noemi: a história das viúvas é o centro." },
+      "hint": "Veja a quem o nascimento é anunciado.",
+      "learningObjective": "Interpretar o valor das viúvas na linhagem real.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "profundezas", "type": "find_in_text",
+      "question": "Em Rute 4:17, toque o trecho que aponta o destino real da linhagem.",
+      "verseRef": "Rute 4:17",
+      "options": [{ "id": "a", "text": "um filho" }, { "id": "b", "text": "pai de Davi" }, { "id": "c", "text": "deram um nome" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "pai de Jessé, pai de Davi",
+      "feedbackCorrect": "No batismo popular do menino, o rei já é anunciado.",
+      "feedbackWrong": { "a": "Isso anuncia o nascimento, não o destino real.", "c": "Isso fala das vizinhas, não do destino do menino." },
+      "hint": "Procure o nome do rei no fim do versículo.",
+      "learningObjective": "Sustentar no texto o destino da linhagem.",
+      "evidence": ["Rute 4:17"]
+    },
+    {
+      "difficulty": "profundezas", "type": "choice",
+      "question": "Que leitura o desfecho de Rute sustenta sobre histórias pequenas de fidelidade?",
+      "verseRef": "Rute 4:22",
+      "options": [
+        { "id": "a", "text": "Deus só usa famílias poderosas e numerosas" },
+        { "id": "b", "text": "Viúvas fiéis não entram nos planos de Deus" },
+        { "id": "c", "text": "Deus conduz a fidelidade das viúvas até a linhagem real" },
+        { "id": "d", "text": "A genealogia foi inventada sem base na história" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Jessé gerou Davi",
+      "feedbackCorrect": "Da eira de Belém à casa real: a fidelidade frutificou.",
+      "feedbackWrong": { "a": "A linhagem passa por viúvas e uma estrangeira pobre.", "b": "É justamente por elas que a linhagem continua.", "d": "O texto a apresenta como geração real da família." },
+      "hint": "Junte as protagonistas com o fim da lista.",
+      "learningObjective": "Escolher a interpretação que o desfecho sustenta.",
+      "evidence": ["Rute 4:22"]
+    },
+    {
+      "difficulty": "profundezas", "type": "order",
+      "question": "Qual sequência revela o sentido de Rute 4:22 na Bíblia?",
+      "verseRef": "Rute 4:22",
+      "options": [
+        { "id": "a", "text": "A moabita entra para o povo de Deus" },
+        { "id": "b", "text": "O descendente dela é avô do rei Davi" },
+        { "id": "c", "text": "Jesus é apresentado como filho de Davi" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jessé gerou Davi",
+      "feedbackCorrect": "Da moabita ao rei, e do rei a Jesus, filho de Davi.",
+      "feedbackWrong": { "default": "Comece pela entrada da moabita no povo." },
+      "hint": "Jesus, filho de Davi, fecha a linha.",
+      "learningObjective": "Ver a linhagem de Rute chegando a Jesus.",
+      "evidence": ["Rute 4:22", "Mateus 1:1"]
+    },
+    {
+      "difficulty": "profundezas", "type": "complete",
+      "question": "Em Rute 4:14, o que as mulheres dizem que Deus concedeu a Noemi?",
+      "verseRef": "Rute 4:14",
+      "options": [{ "id": "a", "text": "redentor" }, { "id": "b", "text": "trono" }, { "id": "c", "text": "exército" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "não deixou de te conceder um redentor",
+      "feedbackCorrect": "A palavra resume o livro: Deus não a deixou sem resgate.",
+      "feedbackWrong": { "b": "Trono só virá com Davi, gerações depois dela.", "c": "Nenhum exército é concedido nesta celebração." },
+      "hint": "É a palavra-chave de toda a história dela.",
+      "learningObjective": "Lembrar o termo que resume o desfecho de Noemi.",
+      "evidence": ["Rute 4:14"]
+    },
+    {
+      "difficulty": "profundezas", "type": "connect",
+      "question": "O que liga Rute 4:22 a Apocalipse 22:16?",
+      "verseRef": "Rute 4:22",
+      "passageA": { "ref": "Rute 4:22" },
+      "passageB": { "ref": "Apocalipse 22:16" },
+      "options": [
+        { "id": "a", "text": "O fim de toda genealogia" },
+        { "id": "b", "text": "Jesus raiz e descendente de Davi" },
+        { "id": "c", "text": "Um rei nascido em Moabe" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jessé gerou Davi",
+      "feedbackCorrect": "Jesus se apresenta como raiz e descendência dessa linhagem.",
+      "feedbackWrong": { "a": "A genealogia não termina: ela desemboca em Jesus.", "c": "O rei nasce em Belém, não em Moabe." },
+      "hint": "Veja como Jesus se apresenta no fim da Bíblia.",
+      "learningObjective": "Ligar a linhagem de Rute à pessoa de Jesus.",
+      "evidence": ["Rute 4:22", "Apocalipse 22:16"]
+    },
+    {
+      "difficulty": "profundezas", "type": "find_in_text",
+      "question": "Em Rute 4:18, toque o primeiro nome da genealogia final.",
+      "verseRef": "Rute 4:18",
+      "options": [{ "id": "a", "text": "gerações" }, { "id": "b", "text": "Perez" }, { "id": "c", "text": "Esrom" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "as gerações de Perez",
+      "feedbackCorrect": "A lista recua até ele antes de andar até Davi.",
+      "feedbackWrong": { "a": "Isso é o título da lista, não um nome dela.", "c": "Ele é o segundo nome, gerado pelo primeiro." },
+      "hint": "É o nome logo depois da palavra gerações.",
+      "learningObjective": "Identificar o ponto de partida da genealogia.",
+      "evidence": ["Rute 4:18"]
+    },
+    {
+      "difficulty": "profundezas", "type": "order",
+      "question": "Qual sequência revela a lógica do desfecho em Rute 4:14–22?",
+      "verseRef": "Rute 4:14",
+      "options": [
+        { "id": "a", "text": "Deus não deixa a viúva sem redentor" },
+        { "id": "b", "text": "O menino recebe nome e descendência" },
+        { "id": "c", "text": "A descendência desemboca no rei Davi" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não deixou de te conceder um redentor",
+      "feedbackCorrect": "Resgate concedido, menino nomeado e linhagem até o rei.",
+      "feedbackWrong": { "default": "Comece pelo que Deus concedeu à viúva." },
+      "hint": "O rei é o destino final da sequência.",
+      "learningObjective": "Compreender a lógica do desfecho do livro.",
+      "evidence": ["Rute 4:14"]
+    }
+  ]
+}

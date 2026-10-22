@@ -1,0 +1,3311 @@
+[
+  {
+    "id": "vida-crista-sem-vd-01-seguir-01",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Marcos 8:34, Jesus diz que quem quiser vir após ele deve negar-se a si mesmo.",
+    "prompt": "Em Marcos 8:34, Jesus diz que quem quiser vir após ele deve negar-se a si mesmo.",
+    "cue": "Em Marcos 8:34, Jesus diz que quem quiser vir após ele deve negar-se a si mesmo.",
+    "verseRef": "Marcos 8:34–35",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Jesus liga o vir após ele a negar-se a si mesmo, tomar a cruz e segui-lo.",
+    "feedbackWrong": {
+      "false": "Releia Marcos 8:34 e veja os três passos que Jesus coloca no chamado."
+    },
+    "hint": "Olhe o chamado de Jesus.",
+    "learningObjective": "Observar o chamado de Jesus em Marcos 8:34.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-01-seguir-02",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 8:34, toque o que a pessoa deve tomar ao seguir Jesus.",
+    "prompt": "Em Marcos 8:34, toque o que a pessoa deve tomar ao seguir Jesus.",
+    "cue": "Em Marcos 8:34, toque o que a pessoa deve tomar ao seguir Jesus.",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os seus discípulos"
+      },
+      {
+        "id": "b",
+        "text": "a sua cruz"
+      },
+      {
+        "id": "c",
+        "text": "a multidão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tome a sua cruz",
+    "feedbackCorrect": "Depois de negar-se a si mesma, a pessoa toma a sua cruz e segue Jesus.",
+    "feedbackWrong": {
+      "a": "Os discípulos também são chamados; não são o que a pessoa toma.",
+      "c": "A multidão é chamada por Jesus; não é o que a pessoa toma."
+    },
+    "hint": "Procure o objeto ligado ao verbo tomar.",
+    "learningObjective": "Identificar a cruz no chamado de Jesus.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-01-seguir-03",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 8:35, quem salvará a sua vida?",
+    "prompt": "Segundo Marcos 8:35, quem salvará a sua vida?",
+    "cue": "Segundo Marcos 8:35, quem salvará a sua vida?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem evitar qualquer perda"
+      },
+      {
+        "id": "b",
+        "text": "Quem ganhar o mundo inteiro"
+      },
+      {
+        "id": "c",
+        "text": "Quem a perder por Jesus e pelo evangelho"
+      },
+      {
+        "id": "d",
+        "text": "Quem a guardar só para si"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "Quem perde a vida por Jesus e pelo evangelho é quem a salvará.",
+    "feedbackWrong": {
+      "a": "O caminho de Jesus passa pela entrega, não por evitar toda perda.",
+      "b": "Ganhar o mundo é a pergunta do versículo seguinte, não a resposta aqui.",
+      "d": "Jesus diz o contrário de quem quer salvar a vida guardando-a para si."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Observar quem salva a vida segundo Jesus.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-01-seguir-04",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 8:34 na ordem do texto.",
+    "prompt": "Monte Marcos 8:34 na ordem do texto.",
+    "cue": "Monte Marcos 8:34 na ordem do texto.",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se alguém quiser vir após mim"
+      },
+      {
+        "id": "b",
+        "text": "negue-se a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "tome a sua cruz e siga-me"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se alguém quiser vir após mim",
+    "feedbackCorrect": "A ordem é vir após Jesus, negar-se, tomar a cruz e segui-lo.",
+    "feedbackWrong": {
+      "default": "Comece pela condição de vir após Jesus; segui-lo fecha o versículo."
+    },
+    "hint": "O versículo começa pela condição.",
+    "learningObjective": "Reconhecer a sequência do chamado em Marcos 8:34.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-01-seguir-05",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 8:35, o que acontecerá com a vida de quem a perde por Jesus e pelo evangelho?",
+    "prompt": "Em Marcos 8:35, o que acontecerá com a vida de quem a perde por Jesus e pelo evangelho?",
+    "cue": "Em Marcos 8:35, o que acontecerá com a vida de quem a perde por Jesus e pelo evangelho?",
+    "verseRef": "Marcos 8:34–35",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "template": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perderá"
+      },
+      {
+        "id": "b",
+        "text": "guardará"
+      },
+      {
+        "id": "c",
+        "text": "salvará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "este a salvará",
+    "feedbackCorrect": "A vida entregue por Jesus e pelo evangelho não se perde no fim, ela é salva.",
+    "feedbackWrong": {
+      "a": "Perder é o que acontece com quem guarda a vida só para si.",
+      "b": "Guardar a vida para si é justamente o caminho que Jesus não aponta."
+    },
+    "hint": "Veja o fim da frase de Jesus.",
+    "learningObjective": "Lembrar o destino da vida entregue por Jesus.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-01-seguir-06",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "passageA": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus chama pessoas comuns a ir após ele, e não só os discípulos mais próximos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A multidão dispensa os discípulos"
+      },
+      {
+        "id": "b",
+        "text": "O chamado alcança a multidão"
+      },
+      {
+        "id": "c",
+        "text": "Só os discípulos são chamados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "convocando a multidão e os seus discípulos",
+    "feedbackCorrect": "Jesus convoca a multidão junto com os discípulos para ouvir o chamado.",
+    "feedbackWrong": {
+      "a": "Multidão e discípulos ouvem juntos; ninguém é dispensado.",
+      "c": "A multidão também é convocada, não só os discípulos."
+    },
+    "hint": "Veja quem Jesus convoca.",
+    "learningObjective": "Ligar Marcos 8:34 ao alcance do chamado de Jesus.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-01-seguir-01",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Marcos 8:34–35, Jesus promete que quem o seguir nunca precisará abrir mão de nada.",
+    "prompt": "Em Marcos 8:34–35, Jesus promete que quem o seguir nunca precisará abrir mão de nada.",
+    "cue": "Em Marcos 8:34–35, Jesus promete que quem o seguir nunca precisará abrir mão de nada.",
+    "verseRef": "Marcos 8:34–35",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Seguir Jesus inclui negar-se, tomar a cruz e entregar a vida por ele.",
+    "feedbackWrong": {
+      "true": "Releia o chamado e veja o que Jesus pede a quem quer ir após ele."
+    },
+    "hint": "Repare no que o chamado pede.",
+    "learningObjective": "Compreender que seguir Jesus envolve entrega.",
+    "evidence": [
+      "Marcos 8:34–35"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-01-seguir-02",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 8:35, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "prompt": "Em Marcos 8:35, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "cue": "Em Marcos 8:35, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "quem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas quem perder a sua vida",
+    "feedbackCorrect": "O contraste vira a frase, de guardar a vida para entregá-la por Jesus.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre o versículo e explica o chamado anterior.",
+      "c": "Essa palavra aponta a pessoa, não o contraste da frase."
+    },
+    "hint": "Procure uma palavra curta no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Marcos 8:35.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-01-seguir-03",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Marcos 8:35 liga perder a vida e salvá-la?",
+    "prompt": "Como Marcos 8:35 liga perder a vida e salvá-la?",
+    "cue": "Como Marcos 8:35 liga perder a vida e salvá-la?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvar a vida exige guardá-la só para si"
+      },
+      {
+        "id": "b",
+        "text": "Perder a vida sempre termina em derrota"
+      },
+      {
+        "id": "c",
+        "text": "Perder por Jesus é o caminho para salvá-la"
+      },
+      {
+        "id": "d",
+        "text": "Jesus separa perder a vida de segui-lo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "A vida entregue por Jesus e pelo evangelho é a vida que será salva.",
+    "feedbackWrong": {
+      "a": "Guardar a vida só para si é o caminho que leva a perdê-la.",
+      "b": "Para quem entrega por Jesus, o fim anunciado é salvá-la.",
+      "d": "Perder a vida aparece dentro do chamado para seguir Jesus."
+    },
+    "hint": "Compare as duas metades do versículo.",
+    "learningObjective": "Compreender a relação entre perder e salvar a vida.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-01-seguir-04",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o chamado em Marcos 8:34–35?",
+    "prompt": "Como avança o chamado em Marcos 8:34–35?",
+    "cue": "Como avança o chamado em Marcos 8:34–35?",
+    "verseRef": "Marcos 8:34–35",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus chama quem quer ir após ele"
+      },
+      {
+        "id": "b",
+        "text": "A pessoa nega a si e toma a cruz"
+      },
+      {
+        "id": "c",
+        "text": "Ela segue Jesus no caminho dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se alguém quiser vir após mim",
+    "feedbackCorrect": "O chamado começa no querer ir após Jesus e termina em segui-lo de fato.",
+    "feedbackWrong": {
+      "default": "Seguir Jesus é o passo final; antes vêm negar-se e tomar a cruz."
+    },
+    "hint": "O último passo é seguir Jesus.",
+    "learningObjective": "Compreender os movimentos do chamado de Jesus.",
+    "evidence": [
+      "Marcos 8:34–35"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-01-seguir-05",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Marcos 8:34, qual é o passo final do chamado de Jesus?",
+    "prompt": "Em Marcos 8:34, qual é o passo final do chamado de Jesus?",
+    "cue": "Em Marcos 8:34, qual é o passo final do chamado de Jesus?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "template": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "detenha-se"
+      },
+      {
+        "id": "b",
+        "text": "volte-se"
+      },
+      {
+        "id": "c",
+        "text": "siga-me"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e siga-me",
+    "feedbackCorrect": "Negar-se e tomar a cruz desembocam em seguir Jesus no caminho dele.",
+    "feedbackWrong": {
+      "a": "O chamado não para no meio; ele termina seguindo Jesus.",
+      "b": "Voltar seria andar na direção contrária ao chamado de Jesus."
+    },
+    "hint": "Veja o último verbo do chamado.",
+    "learningObjective": "Compreender seguir Jesus como desfecho do chamado.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-01-seguir-06",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Marcos 8:34 a Mateus 16:24?",
+    "prompt": "O que liga Marcos 8:34 a Mateus 16:24?",
+    "cue": "O que liga Marcos 8:34 a Mateus 16:24?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "passageA": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "passageB": {
+      "ref": "Mateus 16:24",
+      "text": "Então Jesus disse a seus discípulos: Se alguém deseja vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mesmo chamado de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "A cruz sem seguir Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Dois chamados opostos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Nos dois Evangelhos, Jesus repete o chamado a negar-se, tomar a cruz e segui-lo.",
+    "feedbackWrong": {
+      "b": "Nos dois, tomar a cruz anda junto com seguir Jesus.",
+      "c": "Os dois textos dizem o mesmo chamado, com as mesmas palavras centrais."
+    },
+    "hint": "Compare o que Jesus pede nos dois textos.",
+    "learningObjective": "Relacionar o chamado de Jesus em Marcos e Mateus.",
+    "evidence": [
+      "Marcos 8:34",
+      "Mateus 16:24"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-01-seguir-01",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Marcos 8:35, perder a vida por Jesus e pelo evangelho não é o fim, pois essa vida será salva.",
+    "prompt": "Em Marcos 8:35, perder a vida por Jesus e pelo evangelho não é o fim, pois essa vida será salva.",
+    "cue": "Em Marcos 8:35, perder a vida por Jesus e pelo evangelho não é o fim, pois essa vida será salva.",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "este a salvará",
+    "feedbackCorrect": "A entrega por Jesus tem um destino anunciado por ele, a vida salva.",
+    "feedbackWrong": {
+      "false": "Releia o fim do versículo e veja o que Jesus promete a essa vida."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Interpretar a entrega da vida à luz da promessa de Jesus.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-01-seguir-02",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 8:35, toque a expressão que aponta para Jesus como motivo da entrega.",
+    "prompt": "Em Marcos 8:35, toque a expressão que aponta para Jesus como motivo da entrega.",
+    "cue": "Em Marcos 8:35, toque a expressão que aponta para Jesus como motivo da entrega.",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "este a salvará"
+      },
+      {
+        "id": "b",
+        "text": "a sua vida"
+      },
+      {
+        "id": "c",
+        "text": "por minha causa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "A entrega não é ao acaso, ela acontece por causa de Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é o destino da vida entregue, não o motivo dela.",
+      "b": "Isso é o que é entregue, não o motivo da entrega."
+    },
+    "hint": "Procure quem é o motivo da entrega.",
+    "learningObjective": "Sustentar com o texto que a entrega é por Jesus.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-01-seguir-03",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Marcos 8:34–35 sustenta sobre seguir Jesus?",
+    "prompt": "Que leitura Marcos 8:34–35 sustenta sobre seguir Jesus?",
+    "cue": "Que leitura Marcos 8:34–35 sustenta sobre seguir Jesus?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz garante ganho e prestígio neste mundo"
+      },
+      {
+        "id": "b",
+        "text": "Seguir é ir após Jesus negando o próprio rumo"
+      },
+      {
+        "id": "c",
+        "text": "Perder a vida por Jesus termina sem esperança"
+      },
+      {
+        "id": "d",
+        "text": "Seguir é admirar Jesus sem entregar o rumo da vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "negue-se a si mesmo, tome a sua cruz e siga-me",
+    "feedbackCorrect": "Seguir, no texto, é ir após Jesus depois de negar o próprio rumo.",
+    "feedbackWrong": {
+      "a": "Jesus liga a cruz à entrega, não a ganho e prestígio.",
+      "c": "Quem perde a vida por Jesus a salvará, diz o versículo seguinte.",
+      "d": "Admirar sem entregar não é o que Jesus pede em 8:34."
+    },
+    "hint": "Compare cada leitura com os passos de 8:34.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre seguir Jesus.",
+    "evidence": [
+      "Marcos 8:34–35"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-01-seguir-04",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do chamado em Marcos 8?",
+    "prompt": "Qual sequência revela o caminho do chamado em Marcos 8?",
+    "cue": "Qual sequência revela o caminho do chamado em Marcos 8?",
+    "verseRef": "Marcos 8:34–35",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus anuncia que sofrerá e morrerá"
+      },
+      {
+        "id": "b",
+        "text": "Jesus chama outros a ir após ele"
+      },
+      {
+        "id": "c",
+        "text": "Quem perde a vida por ele a salvará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "este a salvará",
+    "feedbackCorrect": "Jesus anuncia o próprio caminho e chama outros a segui-lo nele.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio de Jesus; a promessa sobre a vida fecha a sequência."
+    },
+    "hint": "Comece pelo que Jesus anuncia sobre si.",
+    "learningObjective": "Ver o chamado do discípulo ligado ao caminho de Jesus.",
+    "evidence": [
+      "Marcos 8:31",
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-01-seguir-05",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Marcos 8:34, que palavra mostra o custo de ir após Jesus?",
+    "prompt": "Em Marcos 8:34, que palavra mostra o custo de ir após Jesus?",
+    "cue": "Em Marcos 8:34, que palavra mostra o custo de ir após Jesus?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "template": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua ___ e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tome a sua cruz",
+    "feedbackCorrect": "A palavra que Jesus usa fala de entrega real, no caminho que ele mesmo ia trilhar.",
+    "feedbackWrong": {
+      "a": "Essa palavra aparece em 8:35, sobre guardar ou entregar a vida.",
+      "b": "Essa palavra aparece na pergunta de 8:36, não no chamado de 8:34."
+    },
+    "hint": "É algo que a pessoa toma.",
+    "learningObjective": "Lembrar o termo que carrega o custo do discipulado.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-01-seguir-06",
+    "trail": "vida-crista",
+    "section": "vd-01-seguir",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Marcos 8:35 a João 12:25?",
+    "prompt": "O que liga Marcos 8:35 a João 12:25?",
+    "cue": "O que liga Marcos 8:35 a João 12:25?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "passageA": {
+      "ref": "Marcos 8:35",
+      "text": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará."
+    },
+    "passageB": {
+      "ref": "João 12:25",
+      "text": "Quem ama a sua vida a perderá; mas aquele que aborrece a sua vida neste mundo a preservará para a vida eterna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perder a vida e salvá-la"
+      },
+      {
+        "id": "b",
+        "text": "Guardar a vida a qualquer custo"
+      },
+      {
+        "id": "c",
+        "text": "A vida sem Jesus e evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "Nos dois textos, a vida guardada só para si se perde e a entregue se salva.",
+    "feedbackWrong": {
+      "b": "Os dois textos mostram que guardar a vida para si leva a perdê-la.",
+      "c": "Nos dois, a vida salva está ligada a Jesus, não longe dele."
+    },
+    "hint": "Compare o destino da vida nos dois textos.",
+    "learningObjective": "Ligar o ensino de Jesus em Marcos e João sobre a vida.",
+    "evidence": [
+      "Marcos 8:35",
+      "João 12:25"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-02-negacao-01",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 9:23, Jesus diz que quem quiser vir após ele deve tomar a sua cruz uma única vez.",
+    "prompt": "Em Lucas 9:23, Jesus diz que quem quiser vir após ele deve tomar a sua cruz uma única vez.",
+    "cue": "Em Lucas 9:23, Jesus diz que quem quiser vir após ele deve tomar a sua cruz uma única vez.",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "Jesus marca o chamado com continuidade, a cruz é tomada todos os dias.",
+    "feedbackWrong": {
+      "true": "Releia o fim do chamado e repare na marca de tempo que Jesus usa."
+    },
+    "hint": "Repare na marca de tempo.",
+    "learningObjective": "Observar a frequência do chamado em Lucas 9:23.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-02-negacao-02",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 9:23, toque com que frequência a cruz deve ser tomada.",
+    "prompt": "Em Lucas 9:23, toque com que frequência a cruz deve ser tomada.",
+    "cue": "Em Lucas 9:23, toque com que frequência a cruz deve ser tomada.",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos os dias"
+      },
+      {
+        "id": "b",
+        "text": "a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "a todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "A cruz do discípulo não é de um dia só, ela é tomada todos os dias.",
+    "feedbackWrong": {
+      "b": "Isso é quem a pessoa nega, não a frequência do chamado.",
+      "c": "Isso diz a quem Jesus falava, não com que frequência."
+    },
+    "hint": "Procure a expressão de tempo.",
+    "learningObjective": "Identificar a frequência diária do chamado.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-02-negacao-03",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 9:23, a quem Jesus dizia essas palavras?",
+    "prompt": "Segundo Lucas 9:23, a quem Jesus dizia essas palavras?",
+    "cue": "Segundo Lucas 9:23, a quem Jesus dizia essas palavras?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A todos"
+      },
+      {
+        "id": "b",
+        "text": "Só aos líderes religiosos"
+      },
+      {
+        "id": "c",
+        "text": "Só a Pedro"
+      },
+      {
+        "id": "d",
+        "text": "Só a quem já seguia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E dizia a todos",
+    "feedbackCorrect": "O chamado não é para um grupo fechado, Jesus o dizia a todos.",
+    "feedbackWrong": {
+      "b": "Os líderes não são o público desse chamado em Lucas 9:23.",
+      "c": "Pedro confessou Jesus antes, mas o chamado é dito a todos.",
+      "d": "O chamado convida quem quiser vir após Jesus, dito a todos."
+    },
+    "hint": "Leia as primeiras palavras do versículo.",
+    "learningObjective": "Observar a quem Jesus dirige o chamado.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-02-negacao-04",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 9:23 na ordem do texto.",
+    "prompt": "Monte Lucas 9:23 na ordem do texto.",
+    "cue": "Monte Lucas 9:23 na ordem do texto.",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se alguém quiser vir após mim"
+      },
+      {
+        "id": "b",
+        "text": "negue-se a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "tome a sua cruz todos os dias e siga-me"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se alguém quiser vir após mim",
+    "feedbackCorrect": "A ordem é vir após Jesus, negar-se, tomar a cruz diária e segui-lo.",
+    "feedbackWrong": {
+      "default": "Comece pela condição de vir após Jesus; segui-lo fecha o versículo."
+    },
+    "hint": "O versículo começa pela condição.",
+    "learningObjective": "Reconhecer a sequência do chamado em Lucas 9:23.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-02-negacao-05",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 9:23, qual é o primeiro passo de quem quer vir após Jesus?",
+    "prompt": "Em Lucas 9:23, qual é o primeiro passo de quem quer vir após Jesus?",
+    "cue": "Em Lucas 9:23, qual é o primeiro passo de quem quer vir após Jesus?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "template": "E dizia a todos: Se alguém quiser vir após mim, ___ a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvará"
+      },
+      {
+        "id": "b",
+        "text": "negue-se"
+      },
+      {
+        "id": "c",
+        "text": "perdê-la-á"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "O primeiro passo do chamado é negar-se a si mesmo diante de Jesus.",
+    "feedbackWrong": {
+      "a": "Essa palavra fala do destino de quem entrega a vida por Jesus.",
+      "c": "Essa palavra fala do destino de quem guarda a vida para si."
+    },
+    "hint": "Volte ao primeiro verbo do chamado anterior.",
+    "learningObjective": "Lembrar o primeiro passo do chamado de Jesus.",
+    "evidence": [
+      "Lucas 9:23–24"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-02-negacao-06",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 9:23 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 9:23 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 9:23 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "passageA": {
+      "ref": "Lucas 9:23",
+      "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus fala a todos, e não só a um grupo fechado de seguidores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado só para Pedro"
+      },
+      {
+        "id": "b",
+        "text": "Chamado aberto a todos"
+      },
+      {
+        "id": "c",
+        "text": "Chamado sem seguidores"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E dizia a todos",
+    "feedbackCorrect": "Jesus dizia o chamado a todos, sem fechar o grupo dos que ouvem.",
+    "feedbackWrong": {
+      "a": "Pedro aparece antes no capítulo, mas o chamado é dito a todos.",
+      "c": "O chamado convida seguidores, não os dispensa."
+    },
+    "hint": "Veja a quem Jesus dizia isso.",
+    "learningObjective": "Ligar Lucas 9:23 ao alcance aberto do chamado.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-02-negacao-01",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 9:24, guardar a vida só para si é o caminho que Jesus aponta para salvá-la.",
+    "prompt": "Em Lucas 9:24, guardar a vida só para si é o caminho que Jesus aponta para salvá-la.",
+    "cue": "Em Lucas 9:24, guardar a vida só para si é o caminho que Jesus aponta para salvá-la.",
+    "verseRef": "Lucas 9:24",
+    "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+    "feedbackCorrect": "Quem guarda a vida para si a perde; quem a entrega por Jesus a salva.",
+    "feedbackWrong": {
+      "true": "Compare as duas metades do versículo e veja qual vida é salva."
+    },
+    "hint": "Compare as duas metades.",
+    "learningObjective": "Compreender o contraste de Lucas 9:24.",
+    "evidence": [
+      "Lucas 9:24"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-02-negacao-02",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "prompt": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "cue": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "verseRef": "Lucas 9:24",
+    "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois"
+      },
+      {
+        "id": "b",
+        "text": "quem"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+    "feedbackCorrect": "O contraste vira a frase, de guardar a vida para entregá-la por Jesus.",
+    "feedbackWrong": {
+      "a": "Essa palavra abre o versículo e explica o chamado anterior.",
+      "b": "Essa palavra aponta a pessoa, não o contraste da frase."
+    },
+    "hint": "Procure uma palavra curta no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Lucas 9:24.",
+    "evidence": [
+      "Lucas 9:24"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-02-negacao-03",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 9:23 liga negar-se e seguir Jesus?",
+    "prompt": "Como Lucas 9:23 liga negar-se e seguir Jesus?",
+    "cue": "Como Lucas 9:23 liga negar-se e seguir Jesus?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar-se é parte de ir após Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Negar-se vale só no primeiro dia"
+      },
+      {
+        "id": "c",
+        "text": "Seguir dispensa negar o próprio rumo"
+      },
+      {
+        "id": "d",
+        "text": "Negar-se substitui seguir Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "negue-se a si mesmo, tome a sua cruz todos os dias e siga-me",
+    "feedbackCorrect": "Negar-se, tomar a cruz diária e seguir formam um só chamado.",
+    "feedbackWrong": {
+      "b": "A marca diária mostra que negar-se não vale só no começo.",
+      "c": "O chamado junta negar o próprio rumo e seguir Jesus.",
+      "d": "Negar-se não substitui seguir; os dois estão no mesmo chamado."
+    },
+    "hint": "Veja os verbos ligados no mesmo chamado.",
+    "learningObjective": "Compreender a ligação entre negar-se e seguir.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-02-negacao-04",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o chamado em Lucas 9:23?",
+    "prompt": "Como avança o chamado em Lucas 9:23?",
+    "cue": "Como avança o chamado em Lucas 9:23?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pessoa nega o próprio comando"
+      },
+      {
+        "id": "b",
+        "text": "Ela toma a cruz todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "Ela segue Jesus no caminho dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E dizia a todos",
+    "feedbackCorrect": "Negar o próprio comando e tomar a cruz diária levam a seguir Jesus.",
+    "feedbackWrong": {
+      "default": "Seguir Jesus fecha o chamado; negar-se vem primeiro."
+    },
+    "hint": "O último passo é seguir Jesus.",
+    "learningObjective": "Compreender os movimentos do chamado diário.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-02-negacao-05",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 9:23, o que a pessoa toma todos os dias ao seguir Jesus?",
+    "prompt": "Em Lucas 9:23, o que a pessoa toma todos os dias ao seguir Jesus?",
+    "cue": "Em Lucas 9:23, o que a pessoa toma todos os dias ao seguir Jesus?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "template": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua ___ todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "Todos os dias, quem segue Jesus toma de novo a entrega do próprio rumo.",
+    "feedbackWrong": {
+      "a": "Essa palavra aparece no versículo seguinte, sobre guardar ou entregar.",
+      "b": "Essa palavra não aparece neste chamado de Lucas 9:23."
+    },
+    "hint": "É o segundo passo do chamado.",
+    "learningObjective": "Compreender a cruz como entrega diária.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-02-negacao-06",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 9:23 a Marcos 8:34?",
+    "prompt": "O que liga Lucas 9:23 a Marcos 8:34?",
+    "cue": "O que liga Lucas 9:23 a Marcos 8:34?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "passageA": {
+      "ref": "Lucas 9:23",
+      "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+    },
+    "passageB": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O chamado se repete nos Evangelhos"
+      },
+      {
+        "id": "b",
+        "text": "Chamados sem nenhuma relação"
+      },
+      {
+        "id": "c",
+        "text": "A cruz fica fora do chamado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tome a sua cruz todos os dias e siga-me",
+    "feedbackCorrect": "Lucas e Marcos guardam o mesmo chamado, e Lucas marca a frequência diária.",
+    "feedbackWrong": {
+      "b": "Os dois textos trazem negar-se, tomar a cruz e seguir Jesus.",
+      "c": "Nos dois textos, a cruz está no centro do chamado."
+    },
+    "hint": "Compare o que Jesus pede nos dois textos.",
+    "learningObjective": "Relacionar o chamado em Lucas e Marcos.",
+    "evidence": [
+      "Lucas 9:23",
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-02-negacao-01",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lucas 9:23, negar-se a si mesmo é uma rendição contínua, marcada pela cruz tomada todos os dias.",
+    "prompt": "Em Lucas 9:23, negar-se a si mesmo é uma rendição contínua, marcada pela cruz tomada todos os dias.",
+    "cue": "Em Lucas 9:23, negar-se a si mesmo é uma rendição contínua, marcada pela cruz tomada todos os dias.",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "A marca diária mostra uma rendição que se renova, não um gesto encerrado.",
+    "feedbackWrong": {
+      "false": "Releia a marca de tempo que Jesus junta ao chamado."
+    },
+    "hint": "Veja a marca de tempo.",
+    "learningObjective": "Interpretar negar-se como rendição contínua.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-02-negacao-02",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 9:24, toque o trecho que mostra o destino da vida entregue por Jesus.",
+    "prompt": "Em Lucas 9:24, toque o trecho que mostra o destino da vida entregue por Jesus.",
+    "cue": "Em Lucas 9:24, toque o trecho que mostra o destino da vida entregue por Jesus.",
+    "verseRef": "Lucas 9:24",
+    "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esse a salvará"
+      },
+      {
+        "id": "b",
+        "text": "a sua vida"
+      },
+      {
+        "id": "c",
+        "text": "por minha causa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+    "feedbackCorrect": "A vida entregue por Jesus não termina em perda, ela será salva.",
+    "feedbackWrong": {
+      "b": "Isso é o que é entregue, não o destino da entrega.",
+      "c": "Isso é o motivo da entrega, não o destino dela."
+    },
+    "hint": "Procure o fim da segunda metade.",
+    "learningObjective": "Sustentar com o texto o destino da vida entregue.",
+    "evidence": [
+      "Lucas 9:24"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-02-negacao-03",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 9:23 sustenta sobre negar-se a si mesmo?",
+    "prompt": "Que leitura Lucas 9:23 sustenta sobre negar-se a si mesmo?",
+    "cue": "Que leitura Lucas 9:23 sustenta sobre negar-se a si mesmo?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É render o comando da vida a Jesus"
+      },
+      {
+        "id": "b",
+        "text": "É um gesto único sem continuidade"
+      },
+      {
+        "id": "c",
+        "text": "É odiar a si mesmo e desprezar a vida"
+      },
+      {
+        "id": "d",
+        "text": "É o preço para merecer ser aceito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Negar-se é deixar o próprio eu fora do comando e ir após Jesus.",
+    "feedbackWrong": {
+      "b": "A cruz tomada todos os dias mostra continuidade no chamado.",
+      "c": "O chamado é ir após Jesus, não odiar quem ele criou.",
+      "d": "O texto não trata a cruz como pagamento por aceitação."
+    },
+    "hint": "Compare cada leitura com o chamado inteiro.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre negar-se.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-02-negacao-04",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do chamado em Lucas 9?",
+    "prompt": "Qual sequência revela o caminho do chamado em Lucas 9?",
+    "cue": "Qual sequência revela o caminho do chamado em Lucas 9?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus é confessado como o Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Jesus anuncia o próprio sofrimento"
+      },
+      {
+        "id": "c",
+        "text": "O discípulo toma a cruz todos os dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "A confissão e o anúncio de Jesus vêm antes do chamado à cruz diária.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão de Pedro; a cruz diária fecha a sequência."
+    },
+    "hint": "Comece pelo que Pedro confessa.",
+    "learningObjective": "Ver o chamado diário ligado a quem Jesus é.",
+    "evidence": [
+      "Lucas 9:20",
+      "Lucas 9:22",
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-02-negacao-05",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 9:24, o que a pessoa tenta guardar quando quer salvar tudo só para si?",
+    "prompt": "Em Lucas 9:24, o que a pessoa tenta guardar quando quer salvar tudo só para si?",
+    "cue": "Em Lucas 9:24, o que a pessoa tenta guardar quando quer salvar tudo só para si?",
+    "verseRef": "Lucas 9:24",
+    "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "template": "Pois aquele que quiser salvar a sua ___, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aquele que quiser salvar a sua vida, perdê-la-á",
+    "feedbackCorrect": "É a própria vida que, guardada só para si, acaba sendo perdida.",
+    "feedbackWrong": {
+      "a": "Essa palavra aparece na pergunta do versículo seguinte, sobre ganho.",
+      "b": "Essa palavra não é a que Lucas usa neste versículo."
+    },
+    "hint": "Veja o que está em jogo nas duas metades.",
+    "learningObjective": "Lembrar o termo central do contraste de Lucas 9:24.",
+    "evidence": [
+      "Lucas 9:24"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-02-negacao-06",
+    "trail": "vida-crista",
+    "section": "vd-02-negacao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 9:23 a Gálatas 2:20?",
+    "prompt": "O que liga Lucas 9:23 a Gálatas 2:20?",
+    "cue": "O que liga Lucas 9:23 a Gálatas 2:20?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "passageA": {
+      "ref": "Lucas 9:23",
+      "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+    },
+    "passageB": {
+      "ref": "Gálatas 2:20",
+      "text": "Estou crucificado com Cristo; e não sou eu quem vive, mas Cristo vive em mim; e a vida que agora tenho na carne, vivo-a pela fé no Filho de Deus, que me amou e se entregou a si mesmo por mim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé sem entrega pessoal"
+      },
+      {
+        "id": "b",
+        "text": "O eu no comando sempre"
+      },
+      {
+        "id": "c",
+        "text": "Vida entregue a Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Paulo descreve a mesma entrega, uma vida que já não é comandada pelo eu.",
+    "feedbackWrong": {
+      "a": "Nos dois, a fé aparece junto com entrega pessoal a Cristo.",
+      "b": "Os dois textos tiram o eu do comando da vida."
+    },
+    "hint": "Veja quem comanda a vida nos dois textos.",
+    "learningObjective": "Ligar o chamado de Jesus à vida entregue em Paulo.",
+    "evidence": [
+      "Lucas 9:23",
+      "Gálatas 2:20"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-03-frutos-01",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 15:4, Jesus pede que os discípulos permaneçam nele e diz que ele permanecerá neles.",
+    "prompt": "Em João 15:4, Jesus pede que os discípulos permaneçam nele e diz que ele permanecerá neles.",
+    "cue": "Em João 15:4, Jesus pede que os discípulos permaneçam nele e diz que ele permanecerá neles.",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Permaneçam em mim, e eu permanecerei em vocês",
+    "feedbackCorrect": "A ligação é dos dois lados, os discípulos permanecem e Jesus permanece neles.",
+    "feedbackWrong": {
+      "false": "Releia a primeira frase de João 15:4 e veja o convite de Jesus."
+    },
+    "hint": "Leia a primeira frase.",
+    "learningObjective": "Observar o convite para permanecer em Jesus.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-03-frutos-02",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 15:5, toque a figura que Jesus usa para si mesmo.",
+    "prompt": "Em João 15:5, toque a figura que Jesus usa para si mesmo.",
+    "cue": "Em João 15:5, toque a figura que Jesus usa para si mesmo.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os ramos"
+      },
+      {
+        "id": "b",
+        "text": "muito fruto"
+      },
+      {
+        "id": "c",
+        "text": "a videira"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eu sou a videira",
+    "feedbackCorrect": "Jesus se apresenta como a fonte de vida à qual os ramos estão ligados.",
+    "feedbackWrong": {
+      "a": "Isso é a figura dos discípulos, não a de Jesus.",
+      "b": "Isso é o resultado de permanecer, não a figura de Jesus."
+    },
+    "hint": "Procure o que Jesus diz ser.",
+    "learningObjective": "Identificar Jesus como a videira.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-03-frutos-03",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 15:5, quem são os ramos?",
+    "prompt": "Segundo João 15:5, quem são os ramos?",
+    "cue": "Segundo João 15:5, quem são os ramos?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que ouvem Jesus"
+      },
+      {
+        "id": "b",
+        "text": "O Pai que cuida da videira"
+      },
+      {
+        "id": "c",
+        "text": "As palavras de Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Jesus que dá vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vocês são os ramos",
+    "feedbackCorrect": "Jesus chama de ramos aqueles que o ouvem e permanecem nele.",
+    "feedbackWrong": {
+      "b": "O Pai é glorificado no fruto, mas os ramos são os discípulos.",
+      "c": "As palavras permanecem nos discípulos; não são os ramos.",
+      "d": "Jesus é a videira, não um dos ramos."
+    },
+    "hint": "Veja quem Jesus está chamando de vocês.",
+    "learningObjective": "Observar quem são os ramos na figura de Jesus.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-03-frutos-04",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 15:4 na ordem do texto.",
+    "prompt": "Monte João 15:4 na ordem do texto.",
+    "cue": "Monte João 15:4 na ordem do texto.",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permaneçam em mim, e eu permanecerei em vocês"
+      },
+      {
+        "id": "b",
+        "text": "Assim como o ramo não pode produzir fruto por si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "se não permanecer na videira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Permaneçam em mim, e eu permanecerei em vocês",
+    "feedbackCorrect": "Primeiro o convite para permanecer, depois a figura do ramo ligado.",
+    "feedbackWrong": {
+      "default": "Comece pelo convite de Jesus; a videira fecha a comparação."
+    },
+    "hint": "O versículo começa pelo convite.",
+    "learningObjective": "Reconhecer a sequência de João 15:4.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-03-frutos-05",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 15:5, o que dá quem permanece em Jesus?",
+    "prompt": "Em João 15:5, o que dá quem permanece em Jesus?",
+    "cue": "Em João 15:5, o que dá quem permanece em Jesus?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "template": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito ___; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fruto"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esse dá muito fruto",
+    "feedbackCorrect": "Quem permanece ligado a Jesus dá muito do resultado dessa ligação.",
+    "feedbackWrong": {
+      "b": "O texto não fala de poder próprio, mas do resultado de permanecer.",
+      "c": "O texto não fala de fama, mas do resultado de permanecer."
+    },
+    "hint": "Veja o resultado de permanecer.",
+    "learningObjective": "Lembrar o fruto de quem permanece em Jesus.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-03-frutos-06",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 15:5 comunica que se liga a este contexto?",
+    "prompt": "O que João 15:5 comunica que se liga a este contexto?",
+    "cue": "O que João 15:5 comunica que se liga a este contexto?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "passageA": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O discípulo ligado a Jesus produz fruto para a glória do Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ramo sozinho se basta"
+      },
+      {
+        "id": "b",
+        "text": "Fruto sem nenhuma ligação"
+      },
+      {
+        "id": "c",
+        "text": "Ramo ligado produz fruto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Aquele que permanece em mim, e eu nele, esse dá muito fruto",
+    "feedbackCorrect": "O fruto aparece onde há ligação contínua com Jesus.",
+    "feedbackWrong": {
+      "a": "Sem Jesus nada podem fazer, diz o mesmo versículo.",
+      "b": "O fruto nasce da ligação, não da falta dela."
+    },
+    "hint": "Veja de onde vem o fruto.",
+    "learningObjective": "Ligar João 15:5 à ligação que produz fruto.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-03-frutos-01",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 15:5, o ramo produz muito fruto porque consegue viver separado de Jesus.",
+    "prompt": "Em João 15:5, o ramo produz muito fruto porque consegue viver separado de Jesus.",
+    "cue": "Em João 15:5, o ramo produz muito fruto porque consegue viver separado de Jesus.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sem mim nada podem fazer",
+    "feedbackCorrect": "O fruto vem de permanecer em Jesus; separado dele, o ramo nada pode.",
+    "feedbackWrong": {
+      "true": "Releia o fim do versículo e veja o que Jesus diz de quem está sem ele."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Compreender que o fruto depende de permanecer.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-03-frutos-02",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 15:5, toque a palavra que apresenta o motivo de nada poderem sem Jesus.",
+    "prompt": "Em João 15:5, toque a palavra que apresenta o motivo de nada poderem sem Jesus.",
+    "cue": "Em João 15:5, toque a palavra que apresenta o motivo de nada poderem sem Jesus.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esse"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "muito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois sem mim nada podem fazer",
+    "feedbackCorrect": "Essa palavra introduz o motivo, sem Jesus nada podem fazer.",
+    "feedbackWrong": {
+      "a": "Essa palavra retoma quem permanece, não apresenta o motivo.",
+      "c": "Essa palavra fala da medida do fruto, não do motivo."
+    },
+    "hint": "Procure a palavra curta antes da explicação final.",
+    "learningObjective": "Reconhecer o marcador de causa em João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-03-frutos-03",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 15:4 liga permanecer e dar fruto?",
+    "prompt": "Como João 15:4 liga permanecer e dar fruto?",
+    "cue": "Como João 15:4 liga permanecer e dar fruto?",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanecer é etapa depois do fruto"
+      },
+      {
+        "id": "b",
+        "text": "Sem ligação com Jesus não há fruto"
+      },
+      {
+        "id": "c",
+        "text": "O fruto vem antes de qualquer ligação"
+      },
+      {
+        "id": "d",
+        "text": "O ramo cria fruto sozinho e depois se liga"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "também vocês não podem dar fruto, se não permanecerem em mim",
+    "feedbackCorrect": "A ligação com Jesus vem primeiro e o fruto nasce dela.",
+    "feedbackWrong": {
+      "a": "Permanecer é a condição do fruto, não uma etapa posterior.",
+      "c": "O fruto é resultado da ligação, não algo anterior a ela.",
+      "d": "O ramo não produz por si mesmo, diz o versículo."
+    },
+    "hint": "Veja a condição que o versículo coloca.",
+    "learningObjective": "Compreender a relação entre permanecer e frutificar.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-03-frutos-04",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a figura em João 15:4–5?",
+    "prompt": "Como avança a figura em João 15:4–5?",
+    "cue": "Como avança a figura em João 15:4–5?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanecer em Jesus e ele em vocês"
+      },
+      {
+        "id": "b",
+        "text": "Receber dele a vida como ramos"
+      },
+      {
+        "id": "c",
+        "text": "Dar muito fruto ligado a ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Permaneçam em mim",
+    "feedbackCorrect": "A ligação com Jesus sustenta a vida do ramo e dela nasce o fruto.",
+    "feedbackWrong": {
+      "default": "O fruto é o ponto de chegada; a ligação vem primeiro."
+    },
+    "hint": "O fruto é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de permanecer até frutificar.",
+    "evidence": [
+      "João 15:4–5"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-03-frutos-05",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 15:7, o que deve permanecer nos discípulos junto com Jesus?",
+    "prompt": "Em João 15:7, o que deve permanecer nos discípulos junto com Jesus?",
+    "cue": "Em João 15:7, o que deve permanecer nos discípulos junto com Jesus?",
+    "verseRef": "João 15:7",
+    "passageText": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito.",
+    "template": "Se vocês permanecerem em mim, e as minhas ___ permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "orações"
+      },
+      {
+        "id": "c",
+        "text": "promessas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e as minhas palavras permanecerem em vocês",
+    "feedbackCorrect": "Permanecer em Jesus anda junto com guardar o que ele disse.",
+    "feedbackWrong": {
+      "b": "Pedir aparece depois; antes vêm as palavras permanecendo.",
+      "c": "O texto fala do que Jesus disse permanecendo nos discípulos."
+    },
+    "hint": "Veja o que acompanha permanecer em Jesus.",
+    "learningObjective": "Compreender o papel das palavras de Jesus no permanecer.",
+    "evidence": [
+      "João 15:7"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-03-frutos-06",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 15:7 a João 8:31?",
+    "prompt": "O que liga João 15:7 a João 8:31?",
+    "cue": "O que liga João 15:7 a João 8:31?",
+    "verseRef": "João 15:7",
+    "passageText": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito.",
+    "passageA": {
+      "ref": "João 15:7",
+      "text": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito."
+    },
+    "passageB": {
+      "ref": "João 8:31",
+      "text": "Jesus dizia, portanto, aos judeus que haviam crido nele: Se vós permanecerdes na minha palavra, verdadeiramente sereis meus discípulos;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra ouvida e esquecida"
+      },
+      {
+        "id": "b",
+        "text": "Permanecer na palavra de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Fruto sem palavra alguma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "as minhas palavras permanecerem em vocês",
+    "feedbackCorrect": "Nos dois textos, ser discípulo é continuar na palavra de Jesus.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de continuar na palavra, não de esquecê-la.",
+      "c": "A palavra de Jesus está no centro dos dois textos."
+    },
+    "hint": "Compare o que permanece nos dois textos.",
+    "learningObjective": "Relacionar permanecer em Jesus e em sua palavra.",
+    "evidence": [
+      "João 15:7",
+      "João 8:31"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-03-frutos-01",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 15:8, o muito fruto dos discípulos glorifica o Pai e mostra que são discípulos de Jesus.",
+    "prompt": "Em João 15:8, o muito fruto dos discípulos glorifica o Pai e mostra que são discípulos de Jesus.",
+    "cue": "Em João 15:8, o muito fruto dos discípulos glorifica o Pai e mostra que são discípulos de Jesus.",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Nisto é glorificado meu Pai, quando derem muito fruto",
+    "feedbackCorrect": "O fruto aponta para o Pai e marca a vida de quem segue Jesus.",
+    "feedbackWrong": {
+      "false": "Releia João 15:8 e veja para quem o fruto aponta."
+    },
+    "hint": "Veja para quem o fruto aponta.",
+    "learningObjective": "Interpretar o fruto como glória para o Pai.",
+    "evidence": [
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-03-frutos-02",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 15:5, toque o trecho que mostra que o ramo não se basta.",
+    "prompt": "Em João 15:5, toque o trecho que mostra que o ramo não se basta.",
+    "cue": "Em João 15:5, toque o trecho que mostra que o ramo não se basta.",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "muito fruto"
+      },
+      {
+        "id": "b",
+        "text": "sem mim"
+      },
+      {
+        "id": "c",
+        "text": "os ramos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sem mim nada podem fazer",
+    "feedbackCorrect": "Longe de Jesus, o ramo não tem de onde tirar vida para frutificar.",
+    "feedbackWrong": {
+      "a": "Isso é o resultado da ligação, não a dependência dela.",
+      "c": "Isso nomeia os discípulos, não a dependência deles."
+    },
+    "hint": "Procure a condição no fim do trecho.",
+    "learningObjective": "Sustentar com o texto a dependência de Jesus.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-03-frutos-03",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 15:5 sustenta sobre o fruto do discípulo?",
+    "prompt": "Que leitura João 15:5 sustenta sobre o fruto do discípulo?",
+    "cue": "Que leitura João 15:5 sustenta sobre o fruto do discípulo?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto nasce de permanecer em Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Fruto é moeda para merecer amor"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer dispensa ouvir Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Discípulo produz fruto isolado de Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aquele que permanece em mim, e eu nele, esse dá muito fruto",
+    "feedbackCorrect": "O fruto é apresentado como fruto da ligação com Jesus.",
+    "feedbackWrong": {
+      "b": "O fruto glorifica o Pai; não compra o amor dele.",
+      "c": "As palavras de Jesus permanecem em quem permanece nele.",
+      "d": "Sem Jesus nada podem fazer, diz o mesmo versículo."
+    },
+    "hint": "Compare cada leitura com a figura da videira.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o fruto.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-03-frutos-04",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do fruto na vida do discípulo?",
+    "prompt": "Qual sequência revela o caminho do fruto na vida do discípulo?",
+    "cue": "Qual sequência revela o caminho do fruto na vida do discípulo?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus é a videira e nós os ramos"
+      },
+      {
+        "id": "b",
+        "text": "O fruto do Espírito amadurece em quem crê"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos frutíferos glorificam o Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "esse dá muito fruto",
+    "feedbackCorrect": "A vida vem de Jesus, o fruto amadurece e o Pai recebe a glória.",
+    "feedbackWrong": {
+      "default": "Comece pela videira; a glória do Pai fecha a sequência."
+    },
+    "hint": "Comece pela fonte da vida.",
+    "learningObjective": "Ver o fruto como caminho que glorifica o Pai.",
+    "evidence": [
+      "João 15:5",
+      "Gálatas 5:22",
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-03-frutos-05",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 15:8, o que se tornam os que dão muito fruto?",
+    "prompt": "Em João 15:8, o que se tornam os que dão muito fruto?",
+    "cue": "Em João 15:8, o que se tornam os que dão muito fruto?",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "template": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "servos"
+      },
+      {
+        "id": "b",
+        "text": "discípulos"
+      },
+      {
+        "id": "c",
+        "text": "ramos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e assim vocês se tornarão meus discípulos",
+    "feedbackCorrect": "Dar fruto em Jesus marca quem vive como discípulo dele.",
+    "feedbackWrong": {
+      "a": "O texto usa outra palavra para quem frutifica em Jesus.",
+      "c": "Ramos é a figura da ligação; o fruto mostra discípulos."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Lembrar o termo que liga fruto e discipulado.",
+    "evidence": [
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-03-frutos-06",
+    "trail": "vida-crista",
+    "section": "vd-03-frutos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 15:8 a Gálatas 5:22?",
+    "prompt": "O que liga João 15:8 a Gálatas 5:22?",
+    "cue": "O que liga João 15:8 a Gálatas 5:22?",
+    "verseRef": "João 15:7–8",
+    "passageText": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito. Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "passageA": {
+      "ref": "João 15:8",
+      "text": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos."
+    },
+    "passageB": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto como moeda de troca"
+      },
+      {
+        "id": "b",
+        "text": "Fruto que vem de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Esforço isolado do ramo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quando derem muito fruto",
+    "feedbackCorrect": "Nos dois textos, o fruto é obra de Deus na vida de quem é dele.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos trata o fruto como pagamento a Deus.",
+      "c": "O fruto vem da ligação com Deus, não do ramo isolado."
+    },
+    "hint": "Veja de quem vem o fruto nos dois.",
+    "learningObjective": "Ligar o fruto em João e em Gálatas à ação de Deus.",
+    "evidence": [
+      "João 15:8",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-01",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 9:23, Jesus limita o chamado de tomar a cruz aos dias mais difíceis da vida.",
+    "prompt": "Em Lucas 9:23, Jesus limita o chamado de tomar a cruz aos dias mais difíceis da vida.",
+    "cue": "Em Lucas 9:23, Jesus limita o chamado de tomar a cruz aos dias mais difíceis da vida.",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "Jesus marca o chamado para todos os dias, e não só para dias difíceis.",
+    "feedbackWrong": {
+      "true": "Releia a marca de tempo que Jesus junta ao chamado."
+    },
+    "hint": "Veja a marca de tempo.",
+    "learningObjective": "Revisar a frequência diária do chamado.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-02",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 8:34, toque o que a pessoa deve tomar ao seguir Jesus.",
+    "prompt": "Em Marcos 8:34, toque o que a pessoa deve tomar ao seguir Jesus.",
+    "cue": "Em Marcos 8:34, toque o que a pessoa deve tomar ao seguir Jesus.",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a multidão"
+      },
+      {
+        "id": "b",
+        "text": "a sua cruz"
+      },
+      {
+        "id": "c",
+        "text": "os seus discípulos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tome a sua cruz",
+    "feedbackCorrect": "Negar-se, tomar a cruz e seguir Jesus formam o chamado revisado aqui.",
+    "feedbackWrong": {
+      "a": "A multidão é chamada por Jesus; não é o que a pessoa toma.",
+      "c": "Os discípulos também são chamados; não são o que se toma."
+    },
+    "hint": "Procure o objeto ligado ao verbo tomar.",
+    "learningObjective": "Revisar a cruz no chamado de Marcos 8:34.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-03",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 8:36, o que não compensa perder mesmo ganhando o mundo inteiro?",
+    "prompt": "Segundo Marcos 8:36, o que não compensa perder mesmo ganhando o mundo inteiro?",
+    "cue": "Segundo Marcos 8:36, o que não compensa perder mesmo ganhando o mundo inteiro?",
+    "verseRef": "Marcos 8:36",
+    "passageText": "Pois, de que vale ao homem ganhar o mundo inteiro e, entretanto, perder a sua alma?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A própria alma"
+      },
+      {
+        "id": "b",
+        "text": "A própria cruz"
+      },
+      {
+        "id": "c",
+        "text": "A multidão reunida"
+      },
+      {
+        "id": "d",
+        "text": "O evangelho anunciado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "perder a sua alma",
+    "feedbackCorrect": "Ganhar o mundo inteiro não compensa perder a própria alma.",
+    "feedbackWrong": {
+      "b": "A cruz é tomada no chamado; a perda sem compensação é outra.",
+      "c": "A multidão é quem ouve o chamado, não o que se perde aqui.",
+      "d": "O evangelho é causa da entrega, não a perda citada aqui."
+    },
+    "hint": "Leia a pergunta que Jesus faz.",
+    "learningObjective": "Revisar o valor da alma em Marcos 8:36.",
+    "evidence": [
+      "Marcos 8:36"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-04",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 8:35 na ordem do texto.",
+    "prompt": "Monte Marcos 8:35 na ordem do texto.",
+    "cue": "Monte Marcos 8:35 na ordem do texto.",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois quem quiser salvar a sua vida a perderá"
+      },
+      {
+        "id": "b",
+        "text": "mas quem perder a sua vida por minha causa e pelo evangelho"
+      },
+      {
+        "id": "c",
+        "text": "este a salvará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pois quem quiser salvar a sua vida a perderá",
+    "feedbackCorrect": "Guardar a vida a perde; entregar a vida por Jesus a salva.",
+    "feedbackWrong": {
+      "default": "Comece por quem quer salvar a vida; a salvação fecha o versículo."
+    },
+    "hint": "O versículo começa por quem guarda.",
+    "learningObjective": "Reconhecer a sequência de Marcos 8:35.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-05",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 8:35, o que acontecerá com a vida entregue por Jesus e pelo evangelho?",
+    "prompt": "Em Marcos 8:35, o que acontecerá com a vida entregue por Jesus e pelo evangelho?",
+    "cue": "Em Marcos 8:35, o que acontecerá com a vida entregue por Jesus e pelo evangelho?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "template": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guardará"
+      },
+      {
+        "id": "b",
+        "text": "perderá"
+      },
+      {
+        "id": "c",
+        "text": "salvará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "este a salvará",
+    "feedbackCorrect": "A vida entregue por Jesus e pelo evangelho será salva por ele.",
+    "feedbackWrong": {
+      "a": "Guardar para si é o caminho que Jesus não aponta aqui.",
+      "b": "Perder é o fim de quem guarda a vida só para si."
+    },
+    "hint": "Veja o fim da frase de Jesus.",
+    "learningObjective": "Revisar o destino da vida entregue por Jesus.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-06",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 15:4 comunica que se liga a este contexto?",
+    "prompt": "O que João 15:4 comunica que se liga a este contexto?",
+    "cue": "O que João 15:4 comunica que se liga a este contexto?",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "passageA": {
+      "ref": "João 15:4",
+      "text": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ramo só dá fruto se continuar ligado à videira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ligação que gera fruto"
+      },
+      {
+        "id": "b",
+        "text": "Ramo solto e frutífero"
+      },
+      {
+        "id": "c",
+        "text": "Fruto sem videira alguma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se não permanecer na videira",
+    "feedbackCorrect": "Sem permanecer na videira, o ramo não produz fruto por si mesmo.",
+    "feedbackWrong": {
+      "b": "O ramo solto não produz fruto por si mesmo, diz o texto.",
+      "c": "O fruto nasce da ligação com a videira, não sem ela."
+    },
+    "hint": "Veja a condição para o fruto.",
+    "learningObjective": "Revisar a ligação entre ramo e videira.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-07",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 15:5, toque a figura que Jesus usa para os discípulos.",
+    "prompt": "Em João 15:5, toque a figura que Jesus usa para os discípulos.",
+    "cue": "Em João 15:5, toque a figura que Jesus usa para os discípulos.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "muito fruto"
+      },
+      {
+        "id": "b",
+        "text": "a videira"
+      },
+      {
+        "id": "c",
+        "text": "os ramos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês são os ramos",
+    "feedbackCorrect": "Os discípulos são os ramos ligados a Jesus, a videira.",
+    "feedbackWrong": {
+      "a": "Isso é o resultado de permanecer, não a figura dos discípulos.",
+      "b": "Isso é a figura de Jesus, não a dos discípulos."
+    },
+    "hint": "Procure o que Jesus diz que vocês são.",
+    "learningObjective": "Revisar os ramos em João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-sem-vd-04-desafio-08",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 15:5 na ordem do texto.",
+    "prompt": "Monte João 15:5 na ordem do texto.",
+    "cue": "Monte João 15:5 na ordem do texto.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eu sou a videira, vocês são os ramos"
+      },
+      {
+        "id": "b",
+        "text": "Aquele que permanece em mim, e eu nele, esse dá muito fruto"
+      },
+      {
+        "id": "c",
+        "text": "pois sem mim nada podem fazer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou a videira, vocês são os ramos",
+    "feedbackCorrect": "Jesus é a videira, quem permanece dá fruto e sem ele nada pode.",
+    "feedbackWrong": {
+      "default": "Comece por Jesus se apresentando; o motivo fecha o versículo."
+    },
+    "hint": "O versículo começa por Jesus.",
+    "learningObjective": "Reconhecer a sequência de João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-01",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 15:7, permanecer em Jesus anda junto com as palavras dele permanecerem no discípulo.",
+    "prompt": "Em João 15:7, permanecer em Jesus anda junto com as palavras dele permanecerem no discípulo.",
+    "cue": "Em João 15:7, permanecer em Jesus anda junto com as palavras dele permanecerem no discípulo.",
+    "verseRef": "João 15:7",
+    "passageText": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e as minhas palavras permanecerem em vocês",
+    "feedbackCorrect": "Permanecer em Jesus e guardar as palavras dele andam juntos no texto.",
+    "feedbackWrong": {
+      "false": "Releia João 15:7 e veja as duas coisas que permanecem juntas."
+    },
+    "hint": "Veja as duas permanências.",
+    "learningObjective": "Compreender a dupla permanência de João 15:7.",
+    "evidence": [
+      "João 15:7"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-02",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "prompt": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "cue": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+    "verseRef": "Lucas 9:24",
+    "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "quem"
+      },
+      {
+        "id": "b",
+        "text": "Pois"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+    "feedbackCorrect": "O contraste vira a frase, de guardar a vida para entregá-la por Jesus.",
+    "feedbackWrong": {
+      "a": "Essa palavra aponta a pessoa, não o contraste da frase.",
+      "b": "Essa palavra abre o versículo e explica o chamado anterior."
+    },
+    "hint": "Procure uma palavra curta no meio do versículo.",
+    "learningObjective": "Reconhecer o contraste em Lucas 9:24.",
+    "evidence": [
+      "Lucas 9:24"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-03",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 9:23–24 liga a cruz diária e a vida salva?",
+    "prompt": "Como Lucas 9:23–24 liga a cruz diária e a vida salva?",
+    "cue": "Como Lucas 9:23–24 liga a cruz diária e a vida salva?",
+    "verseRef": "Lucas 9:23–24",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomar a cruz impede qualquer entrega"
+      },
+      {
+        "id": "b",
+        "text": "A cruz diária é só enfeite do chamado"
+      },
+      {
+        "id": "c",
+        "text": "Quem entrega a vida por Jesus a salvará"
+      },
+      {
+        "id": "d",
+        "text": "Guardar a vida para si é salvá-la"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+    "feedbackCorrect": "A cruz diária e a vida entregue por Jesus pertencem ao mesmo chamado.",
+    "feedbackWrong": {
+      "a": "Tomar a cruz é justamente a forma diária dessa entrega.",
+      "b": "A frequência diária mostra peso real, não enfeite.",
+      "d": "Guardar a vida para si leva a perdê-la, diz o texto."
+    },
+    "hint": "Junte o chamado e o contraste seguinte.",
+    "learningObjective": "Relacionar cruz diária e vida entregue.",
+    "evidence": [
+      "Lucas 9:23–24"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-04",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o chamado revisado em Lucas 9:23?",
+    "prompt": "Como avança o chamado revisado em Lucas 9:23?",
+    "cue": "Como avança o chamado revisado em Lucas 9:23?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar o próprio comando da vida"
+      },
+      {
+        "id": "b",
+        "text": "Tomar a cruz todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer em Jesus como ramo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tome a sua cruz todos os dias",
+    "feedbackCorrect": "Negar-se e tomar a cruz diária levam a uma vida ligada a Jesus.",
+    "feedbackWrong": {
+      "default": "Permanecer em Jesus é o desfecho; negar-se vem primeiro."
+    },
+    "hint": "Comece por negar o próprio comando.",
+    "learningObjective": "Compreender a progressão do chamado do discípulo.",
+    "evidence": [
+      "Lucas 9:23",
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-05",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 9:23, qual é o passo final de quem toma a cruz todos os dias?",
+    "prompt": "Em Lucas 9:23, qual é o passo final de quem toma a cruz todos os dias?",
+    "cue": "Em Lucas 9:23, qual é o passo final de quem toma a cruz todos os dias?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "template": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "detenha-se"
+      },
+      {
+        "id": "b",
+        "text": "volte-se"
+      },
+      {
+        "id": "c",
+        "text": "siga-me"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e siga-me",
+    "feedbackCorrect": "Negar-se e tomar a cruz desembocam em seguir Jesus todos os dias.",
+    "feedbackWrong": {
+      "a": "O chamado não para no meio; ele termina seguindo Jesus.",
+      "b": "Voltar seria andar na direção contrária ao chamado."
+    },
+    "hint": "Veja o último verbo do chamado.",
+    "learningObjective": "Compreender seguir como desfecho do chamado diário.",
+    "evidence": [
+      "Lucas 9:23"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-06",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 9:23 a Marcos 8:34?",
+    "prompt": "O que liga Lucas 9:23 a Marcos 8:34?",
+    "cue": "O que liga Lucas 9:23 a Marcos 8:34?",
+    "verseRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "passageA": {
+      "ref": "Lucas 9:23",
+      "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+    },
+    "passageB": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seguir sem negar-se"
+      },
+      {
+        "id": "b",
+        "text": "Cruz sem seguir Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Negar-se e tomar a cruz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Os dois Evangelhos guardam o mesmo chamado, e Lucas marca o dia a dia.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, seguir Jesus inclui negar-se a si mesmo.",
+      "b": "Nos dois, a cruz anda junto com seguir Jesus."
+    },
+    "hint": "Compare o que Jesus pede nos dois.",
+    "learningObjective": "Relacionar o chamado em Lucas e Marcos.",
+    "evidence": [
+      "Lucas 9:23",
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-07",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 15:4, toque a ordem de Jesus para o ramo ficar ligado a ele.",
+    "prompt": "Em João 15:4, toque a ordem de Jesus para o ramo ficar ligado a ele.",
+    "cue": "Em João 15:4, toque a ordem de Jesus para o ramo ficar ligado a ele.",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "videira"
+      },
+      {
+        "id": "b",
+        "text": "fruto"
+      },
+      {
+        "id": "c",
+        "text": "Permaneçam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Permaneçam em mim",
+    "feedbackCorrect": "A ordem de Jesus abre a figura, ficar ligado a ele continuamente.",
+    "feedbackWrong": {
+      "a": "Isso é a figura de Jesus, não a ordem dada ao ramo.",
+      "b": "Isso é o resultado da ligação, não a ordem de Jesus."
+    },
+    "hint": "Procure o primeiro verbo do versículo.",
+    "learningObjective": "Identificar a ação central de permanecer.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "vida-crista-cam-vd-04-desafio-08",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a figura em João 15:5?",
+    "prompt": "Como se encadeia a figura em João 15:5?",
+    "cue": "Como se encadeia a figura em João 15:5?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus se apresenta como a videira"
+      },
+      {
+        "id": "b",
+        "text": "O discípulo permanece ligado a ele"
+      },
+      {
+        "id": "c",
+        "text": "O fruto aparece nessa ligação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou a videira",
+    "feedbackCorrect": "A videira vem primeiro, a ligação sustenta e o fruto aparece nela.",
+    "feedbackWrong": {
+      "default": "O fruto é o ponto de chegada; a videira vem primeiro."
+    },
+    "hint": "O fruto é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento da videira ao fruto.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-01",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 15:8, o fruto é apresentado como moeda para o discípulo merecer ser aceito por Jesus.",
+    "prompt": "Em João 15:8, o fruto é apresentado como moeda para o discípulo merecer ser aceito por Jesus.",
+    "cue": "Em João 15:8, o fruto é apresentado como moeda para o discípulo merecer ser aceito por Jesus.",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Nisto é glorificado meu Pai, quando derem muito fruto",
+    "feedbackCorrect": "O fruto glorifica o Pai e mostra discípulos, não compra aceitação.",
+    "feedbackWrong": {
+      "true": "Releia João 15:8 e veja para quem o fruto aponta."
+    },
+    "hint": "Veja para quem o fruto aponta.",
+    "learningObjective": "Rejeitar a leitura do fruto como moeda.",
+    "evidence": [
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-02",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 15:8, toque como Jesus chama quem dá muito fruto nele.",
+    "prompt": "Em João 15:8, toque como Jesus chama quem dá muito fruto nele.",
+    "cue": "Em João 15:8, toque como Jesus chama quem dá muito fruto nele.",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu Pai"
+      },
+      {
+        "id": "b",
+        "text": "meus discípulos"
+      },
+      {
+        "id": "c",
+        "text": "muito fruto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e assim vocês se tornarão meus discípulos",
+    "feedbackCorrect": "Quem frutifica permanecendo em Jesus se mostra discípulo dele.",
+    "feedbackWrong": {
+      "a": "Isso é quem é glorificado no fruto, não quem frutifica.",
+      "c": "Isso é o que a pessoa dá, não como Jesus a chama."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar a ligação entre fruto e discipulado.",
+    "evidence": [
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-03",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura reúne Marcos 8:34, Lucas 9:23 e João 15:5?",
+    "prompt": "Que leitura reúne Marcos 8:34, Lucas 9:23 e João 15:5?",
+    "cue": "Que leitura reúne Marcos 8:34, Lucas 9:23 e João 15:5?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto nasce do esforço isolado do ramo"
+      },
+      {
+        "id": "b",
+        "text": "Práticas servem para merecer a graça de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Seguir é entregar o rumo e permanecer em Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Graça dispensa qualquer resposta do discípulo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Aquele que permanece em mim, e eu nele, esse dá muito fruto",
+    "feedbackCorrect": "Os três textos juntam entrega do rumo e vida ligada a Jesus.",
+    "feedbackWrong": {
+      "a": "Sem Jesus nada podem fazer, diz João 15:5.",
+      "b": "Os textos não tratam as práticas como pagamento por graça.",
+      "d": "O chamado pede resposta diária, não dispensa de resposta."
+    },
+    "hint": "Procure o fio comum dos três textos.",
+    "learningObjective": "Reunir os três chamados numa só leitura fiel.",
+    "evidence": [
+      "Marcos 8:34",
+      "Lucas 9:23",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-04",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho completo do discípulo fiel?",
+    "prompt": "Qual sequência revela o caminho completo do discípulo fiel?",
+    "cue": "Qual sequência revela o caminho completo do discípulo fiel?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus chama a negar-se e segui-lo"
+      },
+      {
+        "id": "b",
+        "text": "A cruz é tomada todos os dias"
+      },
+      {
+        "id": "c",
+        "text": "Permanecendo nele, o discípulo frutifica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "esse dá muito fruto",
+    "feedbackCorrect": "O chamado, a cruz diária e o fruto em Jesus formam um só caminho.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado de Jesus; o fruto fecha a sequência."
+    },
+    "hint": "Comece pelo chamado de Jesus.",
+    "learningObjective": "Ver o caminho do discípulo nos três textos.",
+    "evidence": [
+      "Marcos 8:34",
+      "Lucas 9:23",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-05",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 15:5, o que dá quem permanece em Jesus e ele nele?",
+    "prompt": "Em João 15:5, o que dá quem permanece em Jesus e ele nele?",
+    "cue": "Em João 15:5, o que dá quem permanece em Jesus e ele nele?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "template": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito ___; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "fruto"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esse dá muito fruto",
+    "feedbackCorrect": "O fruto é o resultado de permanecer ligado a Jesus, a videira.",
+    "feedbackWrong": {
+      "a": "O texto não fala de poder próprio, mas do fruto da ligação.",
+      "c": "O texto não fala de fama, mas do fruto da ligação."
+    },
+    "hint": "Veja o resultado de permanecer.",
+    "learningObjective": "Lembrar o fruto como marca do discípulo.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-06",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 15:8 a Gálatas 5:22?",
+    "prompt": "O que liga João 15:8 a Gálatas 5:22?",
+    "cue": "O que liga João 15:8 a Gálatas 5:22?",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "passageA": {
+      "ref": "João 15:8",
+      "text": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos."
+    },
+    "passageB": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto que glorifica o Pai"
+      },
+      {
+        "id": "b",
+        "text": "Fruto como pagamento a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ramo frutificando sozinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Nisto é glorificado meu Pai, quando derem muito fruto",
+    "feedbackCorrect": "Nos dois textos, o fruto é obra de Deus e aponta para ele.",
+    "feedbackWrong": {
+      "b": "Nenhum dos textos trata o fruto como pagamento a Deus.",
+      "c": "O fruto vem da ligação com Deus, não do ramo sozinho."
+    },
+    "hint": "Veja de quem vem o fruto nos dois.",
+    "learningObjective": "Ligar o fruto à glória do Pai.",
+    "evidence": [
+      "João 15:8",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-07",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 9:26, toque o que acontecerá com quem se envergonha de Jesus.",
+    "prompt": "Em Lucas 9:26, toque o que acontecerá com quem se envergonha de Jesus.",
+    "cue": "Em Lucas 9:26, toque o que acontecerá com quem se envergonha de Jesus.",
+    "verseRef": "Lucas 9:26",
+    "passageText": "Porque qualquer um que se envergonhar de mim e das minhas palavras, dele também se envergonhará o Filho do Homem, quando vier em sua glória, e na do Pai e dos santos anjos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "se envergonhará"
+      },
+      {
+        "id": "b",
+        "text": "santos anjos"
+      },
+      {
+        "id": "c",
+        "text": "das minhas palavras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "dele também se envergonhará o Filho do Homem",
+    "feedbackCorrect": "Jesus liga a vergonha dele aqui à vergonha do Filho do Homem na vinda.",
+    "feedbackWrong": {
+      "b": "Isso acompanha a glória da vinda, não o que acontecerá à pessoa.",
+      "c": "Isso completa de quem a pessoa se envergonha, não o que acontecerá."
+    },
+    "hint": "Procure o verbo ligado ao Filho do Homem.",
+    "learningObjective": "Sustentar com o texto a seriedade de confessar Jesus.",
+    "evidence": [
+      "Lucas 9:26"
+    ]
+  },
+  {
+    "id": "vida-crista-pro-vd-04-desafio-08",
+    "trail": "vida-crista",
+    "section": "vd-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fruto que permanece em João 15?",
+    "prompt": "Qual sequência revela o fruto que permanece em João 15?",
+    "cue": "Qual sequência revela o fruto que permanece em João 15?",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ramo permanece na videira"
+      },
+      {
+        "id": "b",
+        "text": "As palavras de Jesus permanecem nele"
+      },
+      {
+        "id": "c",
+        "text": "O Pai é glorificado no fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Nisto é glorificado meu Pai",
+    "feedbackCorrect": "Permanecer, guardar a palavra e frutificar levam à glória do Pai.",
+    "feedbackWrong": {
+      "default": "Comece pela ligação do ramo; a glória do Pai fecha a sequência."
+    },
+    "hint": "Comece pela ligação do ramo.",
+    "learningObjective": "Ver o caminho do fruto que glorifica o Pai.",
+    "evidence": [
+      "João 15:4",
+      "João 15:7",
+      "João 15:8"
+    ]
+  }
+]

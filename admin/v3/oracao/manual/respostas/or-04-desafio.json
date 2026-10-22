@@ -1,0 +1,920 @@
+{
+  "study": {
+    "passageRef": "Mateus 6:9–10",
+    "passages": [
+      {
+        "ref": "Mateus 6:9–10"
+      },
+      {
+        "ref": "Lucas 18:1–3"
+      },
+      {
+        "ref": "Romanos 8:26–27"
+      }
+    ],
+    "context": "Este desafio junta os três ensinos da trilha: Jesus ensina a orar ao Pai começando pelo reino, a parábola manda persistir sem desanimar e Paulo mostra o Espírito intercedendo na nossa fraqueza.",
+    "keyword": "Vida de oração",
+    "keywordGloss": "Orar como filhos, continuar sem desanimar e contar com o Espírito quando faltam palavras.",
+    "focusQuestion": "Qual das três ajudas — forma, persistência ou Espírito — você mais precisa hoje?",
+    "reflectionPrompts": [
+      "Como filhos ao Pai",
+      "Sem desanimar na espera",
+      "Auxiliado na fraqueza"
+    ],
+    "facts": [
+      {
+        "text": "A oração de Jesus começa com o Pai e o nome dele santificado.",
+        "evidenceRef": "Mateus 6:9",
+        "evidenceSpan": "Pai nosso, que estás nos céus, santificado seja o teu nome"
+      },
+      {
+        "text": "O pão pedido no Pai Nosso é o de cada dia.",
+        "evidenceRef": "Mateus 6:11",
+        "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia"
+      },
+      {
+        "text": "A parábola foi contada para orar sempre e nunca desanimar.",
+        "evidenceRef": "Lucas 18:1",
+        "evidenceSpan": "a necessidade de orar sempre e nunca desanimar"
+      },
+      {
+        "text": "Deus fará justiça aos seus escolhidos, que clamam dia e noite.",
+        "evidenceRef": "Lucas 18:7",
+        "evidenceSpan": "que clamam a Ele dia e noite"
+      },
+      {
+        "text": "O Espírito nos auxilia em nossas fraquezas ao orar.",
+        "evidenceRef": "Romanos 8:26",
+        "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas"
+      },
+      {
+        "text": "Ele intercede pelos santos de acordo com a vontade de Deus.",
+        "evidenceRef": "Romanos 8:27",
+        "evidenceSpan": "intercede pelos santos de acordo com a vontade de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Pai",
+        "gloss": "O começo de toda oração ensinada por Jesus: Deus próximo e santo."
+      },
+      {
+        "term": "viúva",
+        "gloss": "O retrato da persistência: sem poder, ela insiste sem desistir."
+      },
+      {
+        "term": "gemidos",
+        "gloss": "A intercessão do Espírito quando nossas palavras acabam."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A forma: Pai, reino e vontade",
+        "evidenceRef": "Mateus 6:10"
+      },
+      {
+        "label": "A persistência: nunca desanimar",
+        "evidenceRef": "Lucas 18:1"
+      },
+      {
+        "label": "A fraqueza assumida sem medo",
+        "evidenceRef": "Romanos 8:26"
+      },
+      {
+        "label": "A intercessão segundo Deus",
+        "evidenceRef": "Romanos 8:27"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Oramos com confiança pois o reino, o poder e a glória são de Deus para sempre.",
+        "marker": "pois",
+        "evidenceRef": "Mateus 6:13"
+      },
+      {
+        "kind": "contraste",
+        "text": "O juiz não quis atender; mas a viúva insistiu até ser ouvida.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 18:4"
+      },
+      {
+        "kind": "propósito",
+        "text": "A intercessão do Espírito tem medida certa: de acordo com a vontade de Deus.",
+        "marker": "acordo",
+        "evidenceRef": "Romanos 8:27"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 6:18",
+        "bridge": "Orar no Espírito em todo tempo"
+      },
+      {
+        "ref": "Romanos 8:15",
+        "bridge": "Filhos que clamam Pai"
+      },
+      {
+        "ref": "Romanos 8:34",
+        "bridge": "Cristo também intercede por nós"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Vida de oração é dominar técnicas até Deus não ter escolha.",
+        "why": "Os três textos falam de um Pai, de fé que persiste e de um Espírito que ajuda: relação, não técnica."
+      },
+      {
+        "text": "Quem tem o Espírito não precisa da oração ensinada por Jesus.",
+        "why": "O Espírito auxilia na fraqueza de quem ora; ele não aposenta o Pai Nosso."
+      },
+      {
+        "text": "Persistir e depender do Espírito são ideias que se anulam.",
+        "why": "A viúva insiste por fé, e o Espírito intercede na mesma fraqueza: andam juntos."
+      }
+    ],
+    "centralInsight": "Orar como filhos, persistir com fé e depender do Espírito Santo",
+    "anchorQuestion": "Quais são os três ensinos que formam a vida de oração nesta trilha?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Neste desafio, Jesus ensina a começar a oração pelos nossos pedidos urgentes, antes de falar do Pai.",
+      "verseRef": "Mateus 6:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pai nosso, que estás nos céus, santificado seja o teu nome",
+      "feedbackCorrect": "A oração começa no Pai e no nome dele, não nas urgências.",
+      "feedbackWrong": {
+        "true": "Nome santificado e reino vêm antes dos nossos pedidos."
+      },
+      "hint": "Lembre a primeira linha da oração ensinada.",
+      "learningObjective": "Revisar a abertura do Pai Nosso.",
+      "evidence": [
+        "Mateus 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 6:9, toque a quem Jesus manda dirigir a oração.",
+      "verseRef": "Mateus 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pai"
+        },
+        {
+          "id": "b",
+          "text": "céus"
+        },
+        {
+          "id": "c",
+          "text": "nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pai nosso, que estás nos céus",
+      "feedbackCorrect": "Toda a vida de oração começa chamando Deus assim.",
+      "feedbackWrong": {
+        "b": "Isso é onde ele está, não a quem falamos.",
+        "c": "Isso é o primeiro pedido, depois de chamá-lo."
+      },
+      "hint": "É a palavra que abre a oração.",
+      "learningObjective": "Revisar o destinatário da oração de Jesus.",
+      "evidence": [
+        "Mateus 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 18:1, para que Jesus contou a parábola do juiz e da viúva?",
+      "verseRef": "Lucas 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para ensinar a orar sempre e nunca desanimar"
+        },
+        {
+          "id": "b",
+          "text": "Para ensinar a evitar juízes das cidades"
+        },
+        {
+          "id": "c",
+          "text": "Para mostrar que viúvas devem ficar caladas"
+        },
+        {
+          "id": "d",
+          "text": "Para encerrar o assunto da oração de uma vez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a necessidade de orar sempre e nunca desanimar",
+      "feedbackCorrect": "O alvo é declarado antes da história começar.",
+      "feedbackWrong": {
+        "b": "O juiz é personagem da lição, não um aviso prático.",
+        "c": "A viúva fala e insiste: é o exemplo a seguir.",
+        "d": "A parábola abre a persistência, não a encerra."
+      },
+      "hint": "O objetivo está no primeiro versículo.",
+      "learningObjective": "Revisar o propósito da parábola da viúva.",
+      "evidence": [
+        "Lucas 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 6:9 na ordem do texto.",
+      "verseRef": "Mateus 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pai nosso"
+        },
+        {
+          "id": "b",
+          "text": "que estás nos céus"
+        },
+        {
+          "id": "c",
+          "text": "santificado seja o teu nome"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Pai nosso, que estás nos céus",
+      "feedbackCorrect": "Pai, céus e nome santificado: a abertura continua a mesma.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado ao Pai nosso."
+      },
+      "hint": "Siga a oração palavra por palavra.",
+      "learningObjective": "Revisar a ordem da abertura do Pai Nosso.",
+      "evidence": [
+        "Mateus 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 6:10, pedimos que venha o governo de Deus chamado de quê?",
+      "verseRef": "Mateus 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "reino"
+        },
+        {
+          "id": "b",
+          "text": "pão"
+        },
+        {
+          "id": "c",
+          "text": "mal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Venha o teu reino",
+      "feedbackCorrect": "Antes do pão de cada dia, o governo dele é pedido.",
+      "feedbackWrong": {
+        "b": "Isso é pedido no versículo seguinte, depois dele.",
+        "c": "Do mal pedimos livramento, no fim da oração."
+      },
+      "hint": "É o que deve vir à terra.",
+      "learningObjective": "Revisar a prioridade do reino na oração.",
+      "evidence": [
+        "Mateus 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 18:3 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 18:3",
+      "passageA": {
+        "ref": "Lucas 18:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Três ensinos formam uma vida de oração: a forma de Jesus, a persistência e o auxílio do Espírito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Insistência que nunca desanima"
+        },
+        {
+          "id": "b",
+          "text": "Desistência na primeira recusa"
+        },
+        {
+          "id": "c",
+          "text": "Oração feita uma única vez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma viúva que veio até ele",
+      "feedbackCorrect": "Ela é a parte da persistência nesta vida de oração.",
+      "feedbackWrong": {
+        "b": "Ela voltou de novo ao juiz, sem desistir.",
+        "c": "A lição dela é justamente voltar sempre."
+      },
+      "hint": "Veja o papel da viúva entre os três ensinos.",
+      "learningObjective": "Revisar a persistência dentro da vida de oração.",
+      "evidence": [
+        "Lucas 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:3, toque quem foi pedir justiça ao juiz da cidade.",
+      "verseRef": "Lucas 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "cidade"
+        },
+        {
+          "id": "b",
+          "text": "viúva"
+        },
+        {
+          "id": "c",
+          "text": "adversário"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "uma viúva que veio até ele",
+      "feedbackCorrect": "Sem defensor, ela mesma vai, volta e insiste.",
+      "feedbackWrong": {
+        "a": "Isso é o cenário da história, não a pessoa.",
+        "c": "Ele é o outro lado da causa que ela leva."
+      },
+      "hint": "Procure a mulher da mesma cidade.",
+      "learningObjective": "Revisar a personagem da persistência.",
+      "evidence": [
+        "Lucas 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Romanos 8:26 na ordem do texto.",
+      "verseRef": "Romanos 8:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "o Espírito nos auxilia em nossas fraquezas"
+        },
+        {
+          "id": "b",
+          "text": "não sabemos orar como convém"
+        },
+        {
+          "id": "c",
+          "text": "intercede por nós com gemidos inexprimíveis"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "Auxílio, nossa falta de saber e a intercessão dele.",
+      "feedbackWrong": {
+        "default": "Comece pelo auxílio em nossas fraquezas."
+      },
+      "hint": "Os gemidos fecham o versículo.",
+      "learningObjective": "Revisar a sequência de Romanos 8:26.",
+      "evidence": [
+        "Romanos 8:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 18:7, a parábola trata Deus como um Pai justo que defende os seus, e não como um juiz relutante.",
+      "verseRef": "Lucas 18:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "E Deus não fará justiça aos seus escolhidos",
+      "feedbackCorrect": "O juiz injusto é o contraste que faz Deus brilhar.",
+      "feedbackWrong": {
+        "false": "A pergunta de Jesus espera confiança na justiça de Deus."
+      },
+      "hint": "Separe o personagem do contraste de Deus.",
+      "learningObjective": "Revisar o contraste entre juiz e Deus.",
+      "evidence": [
+        "Lucas 18:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 6:10, toque a palavrinha que iguala terra e céu na vontade de Deus.",
+      "verseRef": "Mateus 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "terra"
+        },
+        {
+          "id": "b",
+          "text": "como"
+        },
+        {
+          "id": "c",
+          "text": "reino"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "assim na terra como no céu",
+      "feedbackCorrect": "O céu é a medida do que se pede para a terra.",
+      "feedbackWrong": {
+        "a": "Isso é o lugar carente, não a comparação.",
+        "c": "Isso é o governo pedido, não a palavra de comparação."
+      },
+      "hint": "Procure a palavra curta entre os dois lugares.",
+      "learningObjective": "Revisar a comparação de Mateus 6:10.",
+      "evidence": [
+        "Mateus 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como o Pai Nosso e a parábola da viúva se completam nesta trilha?",
+      "verseRef": "Lucas 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um ensina como orar, a outra ensina a continuar"
+        },
+        {
+          "id": "b",
+          "text": "Os dois dispensam qualquer forma de oração"
+        },
+        {
+          "id": "c",
+          "text": "Um é para líderes, a outra só para viúvas"
+        },
+        {
+          "id": "d",
+          "text": "Os dois tratam de assuntos sem nenhuma ligação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a necessidade de orar sempre e nunca desanimar",
+      "feedbackCorrect": "Forma de Jesus e perseverança andam juntas na vida de oração.",
+      "feedbackWrong": {
+        "b": "Um dá a forma; a outra, a constância nela.",
+        "c": "Os ensinos são para discípulos em geral, sem restrição.",
+        "d": "A trilha inteira os junta num mesmo caminho."
+      },
+      "hint": "Pense em forma e constância juntas.",
+      "learningObjective": "Relacionar os ensinos de Jesus sobre orar.",
+      "evidence": [
+        "Lucas 18:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os pedidos iniciais do Pai Nosso?",
+      "verseRef": "Mateus 6:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "A santidade do nome vem em primeiro lugar"
+        },
+        {
+          "id": "b",
+          "text": "O reino de Deus é pedido logo em seguida"
+        },
+        {
+          "id": "c",
+          "text": "A vontade dele é feita na terra como no céu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "santificado seja o teu nome",
+      "feedbackCorrect": "Nome, reino e vontade: a primeira metade é toda dele.",
+      "feedbackWrong": {
+        "default": "Comece pela santidade do nome do Pai."
+      },
+      "hint": "Nossas necessidades ainda nem apareceram.",
+      "learningObjective": "Revisar a ordem da primeira metade da oração.",
+      "evidence": [
+        "Mateus 6:9–10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 18:1, orar sempre é o oposto de perder o ânimo chamado de quê?",
+      "verseRef": "Lucas 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "desanimar"
+        },
+        {
+          "id": "b",
+          "text": "descansar"
+        },
+        {
+          "id": "c",
+          "text": "silenciar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "orar sempre e nunca desanimar",
+      "feedbackCorrect": "A perseverança da viúva é a prática desse nunca.",
+      "feedbackWrong": {
+        "b": "Descansar em Deus é bom; o proibido é outro.",
+        "c": "Silenciar pode ser oração; o contrário aqui é ânimo perdido."
+      },
+      "hint": "É perder o ânimo no meio do caminho.",
+      "learningObjective": "Revisar o alvo da parábola da persistência.",
+      "evidence": [
+        "Lucas 18:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 6:9 a Romanos 8:15?",
+      "verseRef": "Mateus 6:9",
+      "passageA": {
+        "ref": "Mateus 6:9"
+      },
+      "passageB": {
+        "ref": "Romanos 8:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos que clamam Pai"
+        },
+        {
+          "id": "b",
+          "text": "Medo servil diante de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Oração sem família de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pai nosso, que estás nos céus",
+      "feedbackCorrect": "O Espírito da adoção faz o clamor que Jesus ensinou.",
+      "feedbackWrong": {
+        "b": "Romanos troca escravidão e medo por adoção.",
+        "c": "É Pai nosso: oração de filhos e de família."
+      },
+      "hint": "Veja o clamor de quem foi adotado.",
+      "learningObjective": "Relacionar Pai Nosso e adoção no Espírito.",
+      "evidence": [
+        "Mateus 6:9",
+        "Romanos 8:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Romanos 8:26, toque o que confessamos não saber fazer como convém.",
+      "verseRef": "Romanos 8:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "orar"
+        },
+        {
+          "id": "b",
+          "text": "gemidos"
+        },
+        {
+          "id": "c",
+          "text": "fraquezas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não sabemos orar como convém",
+      "feedbackCorrect": "A vida de oração inclui admitir essa falta de saber.",
+      "feedbackWrong": {
+        "b": "Isso é o modo dele interceder, não nossa tarefa.",
+        "c": "Isso é o terreno da ajuda, não o ato confessado."
+      },
+      "hint": "Procure o verbo depois de não sabemos.",
+      "learningObjective": "Revisar nossa limitação na oração.",
+      "evidence": [
+        "Romanos 8:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a história da viúva em Lucas 18:4–5?",
+      "verseRef": "Lucas 18:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O juiz se recusa a atender no começo"
+        },
+        {
+          "id": "b",
+          "text": "A viúva continua vindo até ele sem parar"
+        },
+        {
+          "id": "c",
+          "text": "Ele decide julgar a causa dela por fim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele não quis atendê-la",
+      "feedbackCorrect": "Recusa, retorno insistente e decisão do juiz.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa inicial do juiz."
+      },
+      "hint": "A decisão dele é a última parte.",
+      "learningObjective": "Revisar a virada da parábola da viúva.",
+      "evidence": [
+        "Lucas 18:4–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Nesta trilha, orar bem é sempre falar perfeito, nunca desanimar por dentro e nunca precisar do Espírito.",
+      "verseRef": "Romanos 8:26",
+      "correctOptionId": "false",
+      "evidenceSpan": "não sabemos orar como convém; mas o próprio Espírito intercede por nós",
+      "feedbackCorrect": "A trilha assume fraqueza e promete auxílio, não perfeição.",
+      "feedbackWrong": {
+        "true": "Não saber orar é o ponto onde o Espírito nos auxilia."
+      },
+      "hint": "Lembre a confissão de Romanos 8:26.",
+      "learningObjective": "Interpretar a vida de oração sem perfeccionismo.",
+      "evidence": [
+        "Romanos 8:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:7, toque a quem Deus promete fazer justiça quando clamam a ele.",
+      "verseRef": "Lucas 18:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "seus escolhidos"
+        },
+        {
+          "id": "b",
+          "text": "dia e noite"
+        },
+        {
+          "id": "c",
+          "text": "justiça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fará justiça aos seus escolhidos",
+      "feedbackCorrect": "A persistência se apoia em quem Deus é para os seus.",
+      "feedbackWrong": {
+        "b": "Isso é a constância do clamor, não quem o recebe.",
+        "c": "Isso é o que Deus faz, não a quem ele faz."
+      },
+      "hint": "Procure o grupo depois de justiça aos.",
+      "learningObjective": "Revisar a promessa de justiça aos escolhidos.",
+      "evidence": [
+        "Lucas 18:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura resume a vida de oração ensinada nesta trilha inteira?",
+      "verseRef": "Romanos 8:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Orar como filhos, persistir com fé e depender do Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Dominar técnicas até Deus ser obrigado a responder"
+        },
+        {
+          "id": "c",
+          "text": "Cada um ora sozinho, sem forma nem comunidade alguma"
+        },
+        {
+          "id": "d",
+          "text": "Desistir cedo prova maturidade espiritual verdadeira"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "Forma de filhos, constância de fé e auxílio na fraqueza.",
+      "feedbackWrong": {
+        "b": "Os três textos falam de relação, não de técnica.",
+        "c": "É Pai nosso, no plural, com forma ensinada.",
+        "d": "A viúva é elogiada justamente por não desistir."
+      },
+      "hint": "Junte os três ensinos da trilha.",
+      "learningObjective": "Escolher a síntese que a trilha sustenta.",
+      "evidence": [
+        "Romanos 8:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a teologia da oração nesta trilha?",
+      "verseRef": "Romanos 8:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos chamam Deus de Pai na oração"
+        },
+        {
+          "id": "b",
+          "text": "Eles clamam dia e noite pedindo justiça"
+        },
+        {
+          "id": "c",
+          "text": "O Espírito intercede na fraqueza deles"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+      "feedbackCorrect": "Filhos que clamam e são auxiliados pelo Espírito.",
+      "feedbackWrong": {
+        "default": "Comece pelo Pai a quem os filhos chamam."
+      },
+      "hint": "A intercessão na fraqueza fecha o caminho.",
+      "learningObjective": "Ver os três ensinos como um caminho só.",
+      "evidence": [
+        "Romanos 8:26",
+        "Lucas 18:7",
+        "Mateus 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Romanos 8:26, o Espírito intercede por nós com o que vai além das palavras?",
+      "verseRef": "Romanos 8:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "gemidos"
+        },
+        {
+          "id": "b",
+          "text": "gritos"
+        },
+        {
+          "id": "c",
+          "text": "poemas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "intercede por nós com gemidos inexprimíveis",
+      "feedbackCorrect": "Quando a palavra acaba, a intercessão continua nele.",
+      "feedbackWrong": {
+        "b": "Volume não é a medida dessa intercessão profunda.",
+        "c": "Nenhuma composição nossa é exigida neste texto."
+      },
+      "hint": "É inexprimível, maior que palavras.",
+      "learningObjective": "Revisar o modo da intercessão do Espírito.",
+      "evidence": [
+        "Romanos 8:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 18:1 a Efésios 6:18?",
+      "verseRef": "Lucas 18:1",
+      "passageA": {
+        "ref": "Lucas 18:1"
+      },
+      "passageB": {
+        "ref": "Efésios 6:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orar no Espírito em todo tempo"
+        },
+        {
+          "id": "b",
+          "text": "Orar uma vez só"
+        },
+        {
+          "id": "c",
+          "text": "Persistência sem o Espírito Santo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a necessidade de orar sempre e nunca desanimar",
+      "feedbackCorrect": "Sempre, em todo tempo e no Espírito: a mesma perseverança.",
+      "feedbackWrong": {
+        "b": "Os dois textos mandam continuar, não parar.",
+        "c": "A perseverança cristã é justamente no Espírito."
+      },
+      "hint": "Compare o sempre dos dois textos.",
+      "learningObjective": "Ligar persistência e oração no Espírito.",
+      "evidence": [
+        "Lucas 18:1",
+        "Efésios 6:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 6:13, toque de onde pedimos para não cair, no fim da oração.",
+      "verseRef": "Mateus 6:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "tentação"
+        },
+        {
+          "id": "b",
+          "text": "mal"
+        },
+        {
+          "id": "c",
+          "text": "reino"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não nos deixes cair em tentação",
+      "feedbackCorrect": "A vida de oração também pede guarda na hora da prova.",
+      "feedbackWrong": {
+        "b": "Do mal pedimos livramento, um passo depois.",
+        "c": "Isso é a declaração final de confiança, não o perigo."
+      },
+      "hint": "Procure a prova que pode nos derrubar.",
+      "learningObjective": "Revisar o pedido de guarda no Pai Nosso.",
+      "evidence": [
+        "Mateus 6:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a lógica completa de uma vida de oração?",
+      "verseRef": "Romanos 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Começar pelo Pai e pelo reino dele"
+        },
+        {
+          "id": "b",
+          "text": "Persistir sem desanimar durante a espera"
+        },
+        {
+          "id": "c",
+          "text": "Depender dele segundo a vontade de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "intercede pelos santos de acordo com a vontade de Deus",
+      "feedbackCorrect": "Reino primeiro, constância na espera e vontade dele no fim.",
+      "feedbackWrong": {
+        "default": "Comece onde Jesus começa: pelo Pai."
+      },
+      "hint": "A vontade de Deus é a medida final.",
+      "learningObjective": "Compreender a lógica completa da vida de oração.",
+      "evidence": [
+        "Romanos 8:27"
+      ]
+    }
+  ]
+}

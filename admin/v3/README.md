@@ -13,7 +13,26 @@ Cada trilha tem uma pasta `admin/v3/<trilha>/`:
 | `questions_v3.json`, `studies_v3.json` | junção das cenas (merge) |
 | `l10n/` | tradução EN/ES, antes de ir para o app |
 
-## Passo a passo
+## Fluxo manual no ChatGPT (sem API)
+
+O ChatGPT só escreve; `v3_manual.mjs` prepara o que colar e confere o que voltou.
+
+```bash
+node scripts/v3_manual.mjs kit                        # uma vez: v3/_chatgpt/ para um Projeto do ChatGPT
+node scripts/v3_manual.mjs pedidos --trail rute       # v3/rute/manual/pedidos/<nn>-<cena>.txt
+# cole cada pedido numa conversa nova do Projeto; salve a resposta em v3/rute/manual/respostas/<cena>.json
+node scripts/v3_manual.mjs conferir --trail rute      # válidas → cenas/; as outras → manual/correcoes/<cena>.txt
+# cole a correção na mesma conversa, salve por cima e confira de novo
+npm run v3:shuffle -- --trail rute && npm run v3:validate -- --trail rute --final && npm run v3:merge -- --trail rute
+node scripts/v3_manual.mjs traducao --trail rute      # opcional: tradução à mão (ou peça no Claude Code)
+node scripts/v3_manual.mjs conferir-traducao --trail rute
+npm run v3:translate -- --trail rute --apply
+npm run v3:publish -- --trail rute                    # simula + backup; --apply grava
+```
+
+`conferir` também recusa uma resposta que use versos fora do livro e dos capítulos da cena: o validador só confere se a referência existe na JFAAL.
+
+## Passo a passo pela API
 
 Rode de `admin/`. Troque `mateus` pela trilha.
 

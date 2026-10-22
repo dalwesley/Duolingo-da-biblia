@@ -1,0 +1,190 @@
+Escreva a cena "reis-dividido-03-desafio-fidelidade" da trilha "reis" (1–2 Reis).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "reis",
+  "title": "1–2 Reis",
+  "description": "Salomão, divisão do reino, profetas e exílio.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Reino dividido",
+ "mission": {
+  "slug": "reis-dividido-03-desafio-fidelidade",
+  "title": "Desafio: Fidelidade",
+  "type": "boss",
+  "intro": "Templo, cisma e profetas.",
+  "hookRef": "Referência: 1–2 Reis",
+  "hookNote": "Templo, cisma e profetas.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre fidelidade?"
+ },
+ "v2": {
+  "passageRef": "Referência: 1–2 Reis",
+  "context": "Templo, cisma e profetas.",
+  "keyword": "Fidelidade",
+  "verseRefs": [
+   "1 Reis 18:21"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "reis-dividido-01-norte-e-sul",
+   "title": "Norte e Sul",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "1 Reis 12:1–33"
+  },
+  {
+   "slug": "reis-dividido-02-elias-no-carmelo",
+   "title": "Elias no Carmelo",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "1 Reis 12:1–33"
+  }
+ ],
+ "ranges": [
+  "1 Reis 12:1–33",
+  "1 Reis 12:16",
+  "1 Reis 18:21"
+ ],
+ "verses": [
+  {
+   "ref": "1 Reis 12:1",
+   "text": "Roboão foi a Siquém, pois todo o Israel se congregou ali para torná-lo rei."
+  },
+  {
+   "ref": "1 Reis 12:2",
+   "text": "Então, quando Jeroboão, filho de Nebate, ouviu isso, ainda se encontrava no Egito, para onde havia fugido da presença do rei Salomão e onde habitava"
+  },
+  {
+   "ref": "1 Reis 12:3",
+   "text": "Enviaram e o chamaram; Jeroboão e toda a congregação de Israel deslocaram-se até Roboão e lhe falaram, dizendo:"
+  },
+  {
+   "ref": "1 Reis 12:4",
+   "text": "Teu pai agravou o nosso fardo; agora, alivia a dura servidão que ele nos impôs e o pesado jugo que nos impôs, e nós te serviremos."
+  },
+  {
+   "ref": "1 Reis 12:5",
+   "text": "E ele lhes respondeu: Voltem a mim após três dias. E o povo se afastou."
+  },
+  {
+   "ref": "1 Reis 12:6",
+   "text": "E o rei Roboão consultou os anciãos que haviam estado na presença de Salomão, seu pai, enquanto ele ainda vivia, perguntando: Como aconselhais que respondamos a este povo?"
+  },
+  {
+   "ref": "1 Reis 12:7",
+   "text": "Se hoje te tornares servo deste povo, e o servires, e, ouvindo-os, lhes falares boas palavras, eles se tornarão teus servos para sempre."
+  },
+  {
+   "ref": "1 Reis 12:8",
+   "text": "Ele, porém, desprezou o conselho que os anciãos lhe haviam dado e consultou os jovens que haviam crescido com ele e que o serviam."
+  },
+  {
+   "ref": "1 Reis 12:9",
+   "text": "E ele lhes perguntou: Que conselho vocês me dão para que eu responda a este povo que me disse: Alivie o jugo que seu pai nos impôs?"
+  },
+  {
+   "ref": "1 Reis 12:10",
+   "text": "E os jovens que haviam crescido com ele lhe disseram: Assim falarás a este povo que te disse: Teu pai tornou pesado o nosso jugo, mas tu alivia-o de sobre nós; assim lhes falarás: Meu dedo mínimo é mais grosso do que os lombos de meu pai."
+  },
+  {
+   "ref": "1 Reis 12:11",
+   "text": "Assim, se meu pai impôs a vocês um jugo pesado, eu ainda o aumentarei; meu pai os castigou com açoites, mas eu os castigarei com escorpiões."
+  },
+  {
+   "ref": "1 Reis 12:12",
+   "text": "Veio, pois, Jeroboão e todo o povo ao terceiro dia a Roboão, como o rei lhes ordenara, dizendo: \"Voltem a mim ao terceiro dia.\""
+  },
+  {
+   "ref": "1 Reis 12:13",
+   "text": "O rei respondeu ao povo de maneira severa, pois desprezou o conselho que os anciãos lhe haviam dado."
+  },
+  {
+   "ref": "1 Reis 12:14",
+   "text": "Meu pai tornou pesado o jugo de vocês, mas eu o tornarei ainda mais pesado; meu pai os castigou com açoites, mas eu os castigarei com escorpiões."
+  },
+  {
+   "ref": "1 Reis 12:15",
+   "text": "O rei, portanto, não atendeu ao povo, pois esse acontecimento vinha do Senhor, para confirmar a palavra que o Senhor havia dito por intermédio de Aías, o silonita, a Jeroboão, filho de Nebate."
+  },
+  {
+   "ref": "1 Reis 12:16",
+   "text": "Vendo, pois, todo o Israel que o rei não lhe dava ouvidos, o povo reagiu, dizendo: Que parte temos nós com Davi? Não há herança para nós no filho de Jessé! Às vossas tendas, ó Israel! Cuida, agora, da tua casa, ó Davi! Então, Israel se foi às suas tendas."
+  },
+  {
+   "ref": "1 Reis 12:17",
+   "text": "Quanto aos filhos de Israel que habitavam nas cidades de Judá, Roboão reinou sobre eles."
+  },
+  {
+   "ref": "1 Reis 12:18",
+   "text": "Então, o rei Roboão enviou Adorão, superintendente dos trabalhos forçados; porém todo o Israel o apedrejou até que morreu. Mas o rei Roboão conseguiu montar em seu carro e fugir para Jerusalém."
+  },
+  {
+   "ref": "1 Reis 12:19",
+   "text": "Assim, os israelitas permanecem rebeldes em relação à casa de Davi, até o dia de hoje."
+  },
+  {
+   "ref": "1 Reis 12:20",
+   "text": "E aconteceu que, ao ouvir todo o Israel que Jeroboão havia retornado, enviaram mensageiros e o chamaram para a assembleia, e o proclamaram rei sobre todo o Israel; somente a tribo de Judá permaneceu fiel à casa de Davi."
+  },
+  {
+   "ref": "1 Reis 12:21",
+   "text": "Vindo, pois, Roboão a Jerusalém, reuniu toda a casa de Judá e a tribo de Benjamim, cento e oitenta mil escolhidos, destros para a guerra, para pelejar contra a casa de Israel, a fim de restituir o reino a Roboão, filho de Salomão."
+  },
+  {
+   "ref": "1 Reis 12:22",
+   "text": "Entretanto, a palavra de Deus veio a Semaías, homem de Deus, dizendo:"
+  },
+  {
+   "ref": "1 Reis 12:23",
+   "text": "Fala a Roboão, filho de Salomão, rei de Judá, e a toda a casa de Judá, e a Benjamim, e ao resto do povo, dizendo:"
+  },
+  {
+   "ref": "1 Reis 12:24",
+   "text": "Assim diz o Senhor: Não subam nem pelejem contra seus irmãos, os filhos de Israel; que cada um volte para sua casa, pois eu é que fiz esta obra. E, obedecendo à palavra do Senhor, voltaram conforme ele havia ordenado."
+  },
+  {
+   "ref": "1 Reis 12:25",
+   "text": "Jeroboão edificou a cidade de Siquém, na região montanhosa de Efraim, e ali passou a residir. Depois, saiu e construiu a cidade de Penuel."
+  },
+  {
+   "ref": "1 Reis 12:26",
+   "text": "E Jeroboão disse a si mesmo: Agora, o reino retornará à casa de Davi."
+  },
+  {
+   "ref": "1 Reis 12:27",
+   "text": "Se este povo subir para oferecer sacrifícios na Casa do Senhor, em Jerusalém, o coração deles se voltará para Roboão, rei de Judá; e me matarão e retornarão a ele, ao rei de Judá."
+  },
+  {
+   "ref": "1 Reis 12:28",
+   "text": "Pelo que o rei, tendo tomado conselho, fez dois bezerros de ouro; e lhes disse: Já é difícil para vocês subirem a Jerusalém; aqui estão os seus deuses, ó Israel, que os tiraram da terra do Egito."
+  },
+  {
+   "ref": "1 Reis 12:29",
+   "text": "Colocou um em Betel e o outro em Dã."
+  },
+  {
+   "ref": "1 Reis 12:30",
+   "text": "E esse ato se tornou um pecado, pois o povo ia até Dã, cada um para adorar o bezerro."
+  },
+  {
+   "ref": "1 Reis 12:31",
+   "text": "Também fez santuários nos altos e, dentre o povo, constituiu sacerdotes que não eram dos filhos de Levi."
+  },
+  {
+   "ref": "1 Reis 12:32",
+   "text": "E Jeroboão celebrou uma festa no oitavo mês, no décimo quinto dia do mês, semelhante à festa que se fazia em Judá, e sacrificou no altar; da mesma forma, fez em Betel, oferecendo os bezerros que havia confeccionado; também em Betel, estabeleceu sacerdotes para os altos que havia erguido."
+  },
+  {
+   "ref": "1 Reis 12:33",
+   "text": "E sacrificou no altar que havia construído em Betel, no dia quinze do oitavo mês, conforme o que havia escolhido em seu coração. Assim, ordenou uma festa para os filhos de Israel e subiu para queimar incenso no altar."
+  },
+  {
+   "ref": "1 Reis 18:21",
+   "text": "Então, Elias se aproximou de todo o povo e disse: Até quando coxeareis entre dois pensamentos? Se o Senhor é Deus, segui-o; se Baal é Deus, segui-o. Porém, o povo nada lhe respondeu."
+  }
+ ]
+}
+</cena>

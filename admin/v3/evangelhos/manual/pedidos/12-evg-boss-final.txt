@@ -1,0 +1,223 @@
+Escreva a cena "evg-boss-final" da trilha "evangelhos" (Os Quatro Evangelhos).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "evangelhos",
+  "title": "Os Quatro Evangelhos",
+  "description": "Panorama de Mateus a João — vida, morte e ressurreição de Jesus.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cruz e Ressurreição",
+ "mission": {
+  "slug": "evg-boss-final",
+  "title": "Desafio final: Evangelhos",
+  "type": "boss",
+  "intro": "Do Verbo encarnado ao Rei ressuscitado — una o fio dos quatro Evangelhos.",
+  "hookRef": "João 1; Mateus 28",
+  "hookNote": "Os quatro Evangelhos contam um arco: vinda, cruz e vitória.",
+  "centralInsight": "Cristo no centro",
+  "objective": "Qual é o arco que você carrega dos Evangelhos?"
+ },
+ "v2": {
+  "passageRef": "João 1; Mateus 28",
+  "context": "Os quatro Evangelhos contam um arco: vinda, cruz e vitória.",
+  "keyword": "Evangelho",
+  "verseRefs": [
+   "João 1:14; Mateus 28:6"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "evg-07-ceia",
+   "title": "A última ceia",
+   "centralInsight": "Entrega por mim",
+   "ref": "Lucas 22:14–20"
+  },
+  {
+   "slug": "evg-08-cruz",
+   "title": "A cruz",
+   "centralInsight": "Amor que se entrega",
+   "ref": "Marcos 15:22–39"
+  },
+  {
+   "slug": "evg-09-ressurreicao",
+   "title": "Ele ressuscitou",
+   "centralInsight": "Ele vive",
+   "ref": "Mateus 28:1–20"
+  }
+ ],
+ "ranges": [
+  "Lucas 22:14–20",
+  "Lucas 22:19–20",
+  "Marcos 15:22–39",
+  "Marcos 15:37–39",
+  "Mateus 28:1–20",
+  "Mateus 28:5–6"
+ ],
+ "verses": [
+  {
+   "ref": "Lucas 22:14",
+   "text": "E, ao chegar a hora, Jesus se pôs à mesa, e com ele estavam os doze apóstolos."
+  },
+  {
+   "ref": "Lucas 22:15",
+   "text": "Desejei ansiosamente comer convosco esta Páscoa, antes do meu sofrimento."
+  },
+  {
+   "ref": "Lucas 22:16",
+   "text": "Porque eu vos digo que não a comerei mais até que se cumpra no reino de Deus."
+  },
+  {
+   "ref": "Lucas 22:17",
+   "text": "E, tomando o cálice, havendo dado graças, disse: Tomai-o e reparti-o entre vós;"
+  },
+  {
+   "ref": "Lucas 22:18",
+   "text": "Porque eu lhes digo que, de agora em diante, não beberei mais do fruto da videira, até que venha o reino de Deus."
+  },
+  {
+   "ref": "Lucas 22:19",
+   "text": "E, tomando o pão, tendo dado graças, o partiu e deu aos discípulos, dizendo: \"Isto é o meu corpo, que é entregue por vocês; façam isto em memória de mim.\""
+  },
+  {
+   "ref": "Lucas 22:20",
+   "text": "Da mesma forma, após a ceia, tomou o cálice, dizendo: Este cálice é a nova aliança no meu sangue, que é derramado por vocês."
+  },
+  {
+   "ref": "Marcos 15:22",
+   "text": "E o levaram para o Gólgota, que quer dizer: Lugar da Caveira."
+  },
+  {
+   "ref": "Marcos 15:23",
+   "text": "E ofereceram-lhe vinho misturado com mirra; porém, ele não o aceitou."
+  },
+  {
+   "ref": "Marcos 15:24",
+   "text": "E, ao crucificá-lo, repartiram entre si as suas vestes, lançando sortes para saber o que levaria cada um."
+  },
+  {
+   "ref": "Marcos 15:25",
+   "text": "Era a terceira hora quando o crucificaram."
+  },
+  {
+   "ref": "Marcos 15:26",
+   "text": "E, por cima d'Ele, estava em epígrafe a sua acusação, escrita: O REI DOS JUDEUS."
+  },
+  {
+   "ref": "Marcos 15:27",
+   "text": "E crucificaram com ele dois ladrões, um à sua direita e outro à sua esquerda."
+  },
+  {
+   "ref": "Marcos 15:28",
+   "text": "E cumpriu-se a Escritura que diz: \"Ele foi contado com os malfeitores\"."
+  },
+  {
+   "ref": "Marcos 15:29",
+   "text": "E os que passavam o insultavam, meneando a cabeça e dizendo: Ah! tu que destróis o santuário e o reedificas em três dias!"
+  },
+  {
+   "ref": "Marcos 15:30",
+   "text": "Salva-te a ti mesmo e desce da cruz!"
+  },
+  {
+   "ref": "Marcos 15:31",
+   "text": "Da mesma forma, os principais sacerdotes e os escribas diziam entre si, escarnecendo: \"Ele salvou os outros, mas a si mesmo não pode salvar-se.\""
+  },
+  {
+   "ref": "Marcos 15:32",
+   "text": "O Cristo, o Rei de Israel, desça agora da cruz, para que vejamos e creiamos. Igualmente, aqueles que com ele foram crucificados o insultavam."
+  },
+  {
+   "ref": "Marcos 15:33",
+   "text": "E, ao chegar a sexta hora, houve trevas sobre toda a terra até a nona hora."
+  },
+  {
+   "ref": "Marcos 15:34",
+   "text": "Às três horas da tarde, Jesus clamou em alta voz: \"Eloí, Eloí, lamá sabactâni? Meu Deus, meu Deus, por que me desamparaste?\""
+  },
+  {
+   "ref": "Marcos 15:35",
+   "text": "E alguns dos que estavam ali, ouvindo isso, diziam: \"Vejam, ele está chamando Elias!\""
+  },
+  {
+   "ref": "Marcos 15:36",
+   "text": "E um deles correu para embeber uma esponja em vinagre e, colocando-a na ponta de uma cana, deu-lhe de beber, dizendo: \"Deixai, vejamos se Elias vem tirá-lo!\""
+  },
+  {
+   "ref": "Marcos 15:37",
+   "text": "E Jesus, soltando um grande brado, expirou."
+  },
+  {
+   "ref": "Marcos 15:38",
+   "text": "E o véu do templo rasgou-se em duas partes, de cima para baixo."
+  },
+  {
+   "ref": "Marcos 15:39",
+   "text": "E o centurião que estava diante dele, ao ver como ele expirou, disse: Verdadeiramente, este homem era o Filho de Deus."
+  },
+  {
+   "ref": "Mateus 28:1",
+   "text": "Após o sábado, ao raiar do primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro."
+  },
+  {
+   "ref": "Mateus 28:2",
+   "text": "E ocorreu um grande terremoto, pois um anjo do Senhor desceu do céu, aproximou-se, rolou a pedra da entrada e sentou-se sobre ela."
+  },
+  {
+   "ref": "Mateus 28:3",
+   "text": "E o seu aspecto era como um relâmpago, e suas vestes eram brancas como a neve."
+  },
+  {
+   "ref": "Mateus 28:4",
+   "text": "E os guardas tremeram espavoridos e ficaram como se estivessem mortos."
+  },
+  {
+   "ref": "Mateus 28:5",
+   "text": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado."
+  },
+  {
+   "ref": "Mateus 28:6",
+   "text": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+  },
+  {
+   "ref": "Mateus 28:7",
+   "text": "Vão depressa e digam aos seus discípulos que Ele ressuscitou dos mortos e vai adiante de vocês para a Galileia; lá vocês o verão, como já lhes disse."
+  },
+  {
+   "ref": "Mateus 28:8",
+   "text": "E, saindo apressadamente do sepulcro, tomadas de medo e grande alegria, correram a anunciar aos discípulos."
+  },
+  {
+   "ref": "Mateus 28:9",
+   "text": "E, ao irem anunciá-lo aos seus discípulos, Jesus veio ao seu encontro e disse: \"Saudações!\" E elas, aproximando-se, adoraram-no abraçando seus pés."
+  },
+  {
+   "ref": "Mateus 28:10",
+   "text": "Então, Jesus lhes disse: Não temais! Vão e avisem a meus irmãos que se dirijam à Galileia, lá me verão."
+  },
+  {
+   "ref": "Mateus 28:11",
+   "text": "Enquanto elas iam, alguns dos guardas chegaram à cidade e relataram aos principais sacerdotes tudo o que tinha acontecido."
+  },
+  {
+   "ref": "Mateus 28:12",
+   "text": "Reunindo-se em conselho com os líderes e, após deliberarem entre si, entregaram uma considerável quantia em dinheiro aos soldados, dizendo:"
+  },
+  {
+   "ref": "Mateus 28:13",
+   "text": "Digam: Os discípulos dele vieram de noite e o roubaram enquanto estávamos dormindo."
+  },
+  {
+   "ref": "Mateus 28:14",
+   "text": "E, se isso chegar ao conhecimento do governador, nós o persuadiremos e vocês estarão em segurança."
+  },
+  {
+   "ref": "Mateus 28:15",
+   "text": "E eles, recebendo o dinheiro, agiram conforme as instruções que receberam. E essa informação se propagou entre os judeus até os dias atuais."
+  }
+ ]
+}
+</cena>

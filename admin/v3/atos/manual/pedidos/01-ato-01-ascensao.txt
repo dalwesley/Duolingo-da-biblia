@@ -1,0 +1,67 @@
+Escreva a cena "ato-01-ascensao" da trilha "atos" (Atos dos Apóstolos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Jerusalém",
+ "mission": {
+  "slug": "ato-01-ascensao",
+  "title": "A ascensão",
+  "type": "lesson",
+  "intro": "Jesus sobe aos céus e promete o Espírito. A missão começa com espera obediente — não com pressa humana.",
+  "hookRef": "Atos 1:8",
+  "hookNote": "Atos abre como continuidade do Evangelho: o Cristo ressuscitado prepara a igreja. A ascensão não é ausência — é entronização. O mapa da mis…",
+  "centralInsight": "Esperar o Espírito antes de agir",
+  "objective": "Onde começa o meu testemunho — e até onde estou disposto a ir?"
+ },
+ "v2": {
+  "passageRef": "Atos 1:8",
+  "context": "Atos abre como continuidade do Evangelho: o Cristo ressuscitado prepara a igreja. A ascensão não é ausência — é entronização. O mapa da missão (Jerusalém → Judeia/Samaria → confins) organiza o livro inteiro. Antes do poder, há obediência: esperar a promessa do Pai.",
+  "keyword": "Testemunhas",
+  "verseRefs": [
+   "Atos 1:8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 1:5–11"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 1:5",
+   "text": "Pois, na verdade, João batizou com água, mas vocês serão batizados com o Espírito Santo não muito depois destes dias."
+  },
+  {
+   "ref": "Atos 1:6",
+   "text": "Então, os que estavam reunidos lhe perguntaram: Senhor, é este o tempo em que restaurarás o reino a Israel?"
+  },
+  {
+   "ref": "Atos 1:7",
+   "text": "E lhes respondeu: Não cabe a vocês conhecer os tempos ou as épocas que o Pai reservou sob sua exclusiva autoridade;"
+  },
+  {
+   "ref": "Atos 1:8",
+   "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+  },
+  {
+   "ref": "Atos 1:9",
+   "text": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista."
+  },
+  {
+   "ref": "Atos 1:10",
+   "text": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco."
+  },
+  {
+   "ref": "Atos 1:11",
+   "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+  }
+ ]
+}
+</cena>

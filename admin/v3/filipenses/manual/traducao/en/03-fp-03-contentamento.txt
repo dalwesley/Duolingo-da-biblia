@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "filipenses-sem-fp-03-contentamento-01": {
+  "question": "Em Filipenses 4:11, Paulo diz que aprendeu a viver contente em toda situação.",
+  "learningObjective": "Observar o contentamento aprendido de Paulo.",
+  "feedbackCorrect": "Aprendido, não automático: contente em toda situação.",
+  "feedbackWrong": {
+   "false": "Releia Filipenses 4:11: é exatamente o que ele declara."
+  },
+  "hint": "Veja o verbo aprender no versículo.",
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+ },
+ "filipenses-sem-fp-03-contentamento-02": {
+  "question": "Em Filipenses 4:12, toque como Paulo sabe estar quando passa por rebaixamento.",
+  "learningObjective": "Identificar os extremos que Paulo viveu.",
+  "feedbackCorrect": "Ele conhece os dois extremos: rebaixado e honrado.",
+  "feedbackWrong": {
+   "a": "Isso é o extremo oposto ao que a pergunta pede.",
+   "b": "Isso é abundância de comida, não rebaixamento."
+  },
+  "hint": "Procure o primeiro extremo citado no versículo.",
+  "_verso": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-sem-fp-03-contentamento-03": {
+  "question": "Segundo Filipenses 4:12, o que Paulo já experimentou na vida?",
+  "learningObjective": "Observar os opostos vividos por Paulo.",
+  "feedbackCorrect": "Os dois lados da vida entraram na experiência dele.",
+  "feedbackWrong": {
+   "a": "Herança não é citada: ele fala de experiência.",
+   "b": "Ele cita ser honrado e abundância também.",
+   "d": "Ele cita também fome e escassez, não só fartura."
+  },
+  "hint": "Preste atenção nos pares de opostos.",
+  "options": {
+   "a": "Riqueza herdada desde o nascimento dele",
+   "b": "Só escassez, sem nunca ser honrado",
+   "c": "Fartura e fome, abundância e escassez",
+   "d": "Só fartura, sem nunca passar necessidade"
+  },
+  "_verso": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-sem-fp-03-contentamento-04": {
+  "question": "Monte Filipenses 4:12 na ordem do texto.",
+  "learningObjective": "Reconhecer a ordem dos extremos citados.",
+  "feedbackCorrect": "Humilhado, honrado e os extremos de fartura e fome.",
+  "feedbackWrong": {
+   "default": "Comece pelo primeiro sei o que é do versículo."
+  },
+  "hint": "A lista começa com estar humilhado.",
+  "_verso": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-sem-fp-03-contentamento-05": {
+  "question": "Em Filipenses 4:11, como Paulo aprendeu a viver em qualquer situação?",
+  "learningObjective": "Lembrar a palavra central do contentamento.",
+  "feedbackCorrect": "Nem fartura nem falta tiram esse estado dele.",
+  "feedbackWrong": {
+   "a": "Ele fala e escreve sobre isso; não se calou.",
+   "c": "Ansiedade é o contrário do aprendizado dele."
+  },
+  "hint": "É o nome desta cena inteira.",
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+ },
+ "filipenses-sem-fp-03-contentamento-06": {
+  "question": "O que Filipenses 4:11 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Filipenses 4:11 ao contentamento aprendido.",
+  "feedbackCorrect": "A ajuda alegra, mas o contentamento dele não depende dela.",
+  "feedbackWrong": {
+   "a": "Ele agradece abertamente, sem vergonha de receber.",
+   "b": "Ele se alegra com a ajuda, sem desespero algum."
+  },
+  "hint": "Veja o que ele diz que aprendeu.",
+  "options": {
+   "a": "Vergonha de precisar de outros",
+   "b": "Desespero por causa da ajuda",
+   "c": "Contentamento em toda situação"
+  },
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+ },
+ "filipenses-cam-fp-03-contentamento-01": {
+  "question": "Em Filipenses 4:13–14, Paulo agradece à igreja por se associar à tribulação dele, mesmo dizendo que tudo pode em Cristo.",
+  "learningObjective": "Compreender força em Cristo junto com receber ajuda.",
+  "feedbackCorrect": "Força em Cristo e gratidão pela ajuda andam juntas nele.",
+  "feedbackWrong": {
+   "false": "Ele afirma as duas coisas, uma em cada versículo."
+  },
+  "hint": "Leia os dois versículos como uma fala só.",
+  "_verso": "Posso todas as coisas por meio daquele que me dá força. Todavia, vocês fizeram bem em se associar à minha tribulação."
+ },
+ "filipenses-cam-fp-03-contentamento-02": {
+  "question": "Em Filipenses 4:12, toque a palavrinha que liga fartura e fome na mesma experiência.",
+  "learningObjective": "Reconhecer a ligação entre os extremos vividos.",
+  "feedbackCorrect": "A mesma vida comportou os dois extremos citados.",
+  "feedbackWrong": {
+   "b": "Isso resume as circunstâncias, sem ligar os extremos.",
+   "c": "Isso é um dos extremos, não a palavra que os liga."
+  },
+  "hint": "Procure a palavra que trabalha em par com quanto.",
+  "_verso": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-cam-fp-03-contentamento-03": {
+  "question": "Como Filipenses 4:11 ajuda a entender o posso todas as coisas de 4:13?",
+  "learningObjective": "Relacionar Filipenses 4:13 ao seu contexto imediato.",
+  "feedbackCorrect": "O contexto manda: todas as coisas são fartura e escassez.",
+  "feedbackWrong": {
+   "a": "Ele acabou de citar fome e escassez vividas.",
+   "b": "Desejos de consumo não aparecem no trecho.",
+   "d": "Ele recebe ajuda com gratidão, não com orgulho."
+  },
+  "hint": "Olhe os versículos que cercam a frase famosa.",
+  "options": {
+   "a": "É promessa de nunca mais passar necessidade",
+   "b": "É poder para conseguir qualquer objeto desejado",
+   "c": "É força para viver contente na fartura e na falta",
+   "d": "É capacidade de viver sem ajuda de ninguém"
+  },
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação. Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-cam-fp-03-contentamento-04": {
+  "question": "Como se encadeia o raciocínio de Paulo em Filipenses 4:11–13?",
+  "learningObjective": "Compreender o encadeamento até Filipenses 4:13.",
+  "feedbackCorrect": "Aprendizado, extremos vividos e a fonte da força.",
+  "feedbackWrong": {
+   "default": "Comece pelo que ele aprendeu."
+  },
+  "hint": "A fonte da força fecha o raciocínio.",
+  "options": {
+   "a": "Ele aprende contentamento em qualquer situação",
+   "b": "Ele atravessa fartura, fome e escassez",
+   "c": "Ele tudo pode naquele que lhe dá força"
+  },
+  "_verso": "Posso todas as coisas por meio daquele que me dá força."
+ },
+ "filipenses-cam-fp-03-contentamento-05": {
+  "question": "Em Filipenses 4:10, o que os filipenses finalmente fizeram por Paulo, segundo ele?",
+  "learningObjective": "Compreender a retomada da ajuda dos filipenses.",
+  "feedbackCorrect": "A ajuda voltou porque eles se lembraram dele de novo.",
+  "feedbackWrong": {
+   "a": "Eles já lembravam antes; faltava oportunidade.",
+   "c": "Nenhum julgamento aparece nesta carta de gratidão."
+  },
+  "hint": "É o motivo da alegria dele no versículo.",
+  "_verso": "Alegrei-me sobremaneira no Senhor porque, finalmente, vocês se lembraram de mim; pois haviam-se lembrado antes, mas não tiveram a oportunidade."
+ },
+ "filipenses-cam-fp-03-contentamento-06": {
+  "question": "O que liga Filipenses 4:11 a 1 Timóteo 6:8?",
+  "learningObjective": "Relacionar o contentamento em duas cartas de Paulo.",
+  "feedbackCorrect": "Comida e roupa bastam: contentamento com o suficiente.",
+  "feedbackWrong": {
+   "a": "Os dois textos ensinam frear a busca por mais.",
+   "b": "Ter pouco não é vergonha em nenhum dos textos."
+  },
+  "hint": "Veja o que basta nos dois textos.",
+  "options": {
+   "a": "Busca sem fim por mais bens",
+   "b": "Vergonha de ter pouco na vida",
+   "c": "Contentamento com o suficiente"
+  },
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+ },
+ "filipenses-pro-fp-03-contentamento-01": {
+  "question": "Filipenses 4:13 promete que o crente consegue realizar qualquer desejo que tiver, sem limites.",
+  "learningObjective": "Interpretar Filipenses 4:13 dentro do seu contexto.",
+  "feedbackCorrect": "No contexto, todas as coisas é viver na fartura e na falta.",
+  "feedbackWrong": {
+   "true": "Leia 4:11–12 antes: a força é para contentamento, não desejos."
+  },
+  "hint": "Confira o contexto imediato da frase.",
+  "_verso": "Posso todas as coisas por meio daquele que me dá força."
+ },
+ "filipenses-pro-fp-03-contentamento-02": {
+  "question": "Em Filipenses 4:13, toque o trecho que mostra que a força de Paulo não vem dele mesmo.",
+  "learningObjective": "Sustentar no texto a fonte da força de Paulo.",
+  "feedbackCorrect": "A força é recebida de outro: daquele que o fortalece.",
+  "feedbackWrong": {
+   "a": "Isso é a capacidade, não a fonte dela.",
+   "c": "Isso é o alcance, não de onde vem a força."
+  },
+  "hint": "Procure quem dá, no fim do versículo.",
+  "_verso": "Posso todas as coisas por meio daquele que me dá força."
+ },
+ "filipenses-pro-fp-03-contentamento-03": {
+  "question": "Que leitura Filipenses 4:11–12 sustenta sobre contentamento?",
+  "learningObjective": "Escolher a interpretação que o trecho sustenta.",
+  "feedbackCorrect": "Aprendido em Cristo, ele atravessa os dois extremos.",
+  "feedbackWrong": {
+   "a": "Ele recebe ajuda agradecido: as coisas convivem.",
+   "b": "Ele cita fome e escassez como experiência real dele.",
+   "d": "Ele sente e aprende; não é ausência de sentimento."
+  },
+  "hint": "Junte aprendizado, extremos e fonte da força.",
+  "options": {
+   "a": "Contentamento torna qualquer ajuda desnecessária",
+   "b": "Quem tem fé nunca passa por escassez real",
+   "c": "É possível estar inteiro na fartura e na falta, nele",
+   "d": "Contentamento é não sentir nada diante da perda"
+  },
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação. Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-pro-fp-03-contentamento-04": {
+  "question": "Qual sequência revela o sentido de Filipenses 4:10–13?",
+  "learningObjective": "Ver ajuda, contentamento e Cristo na ordem certa.",
+  "feedbackCorrect": "Ajuda recebida, contentamento independente e força nele.",
+  "feedbackWrong": {
+   "default": "Comece pela ajuda que voltou a chegar."
+  },
+  "hint": "A fonte da força é o fecho do trecho.",
+  "options": {
+   "a": "A igreja lembra dele e volta a ajudar",
+   "b": "Ele declara contentamento que não depende disso",
+   "c": "Ele aponta Cristo como a fonte da força"
+  },
+  "_verso": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-pro-fp-03-contentamento-05": {
+  "question": "Em Filipenses 4:12, qual extremo de falta Paulo diz já conhecer por experiência?",
+  "learningObjective": "Lembrar onde o contentamento foi provado.",
+  "feedbackCorrect": "O contentamento dele foi provado justamente na falta.",
+  "feedbackWrong": {
+   "b": "Isso é reconhecimento, não falta material.",
+   "c": "Isso é o extremo de sobra, não o de falta."
+  },
+  "hint": "É o oposto de abundância no fim da lista.",
+  "_verso": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+ },
+ "filipenses-pro-fp-03-contentamento-06": {
+  "question": "O que liga Filipenses 4:13 a 2 Coríntios 12:9?",
+  "learningObjective": "Ligar a força de Filipenses ao espinho de Paulo.",
+  "feedbackCorrect": "Nos dois, o poder de Deus se mostra justamente na fraqueza.",
+  "feedbackWrong": {
+   "b": "A força é dele em nós, não autossuficiência.",
+   "c": "A fraqueza vira lugar de graça, não de castigo."
+  },
+  "hint": "Veja onde o poder de Deus se aperfeiçoa.",
+  "options": {
+   "a": "Força de Deus na fraqueza",
+   "b": "Força própria sem depender",
+   "c": "Fraqueza como castigo final"
+  },
+  "_verso": "Posso todas as coisas por meio daquele que me dá força."
+ },
+ "estudo:fp-03-contentamento": {
+  "context": "Paulo agradece porque os filipenses voltaram a ajudá-lo financeiramente, depois de um tempo sem oportunidade. Antes que pensem que ele depende do dinheiro para estar bem, ele explica o que aprendeu.",
+  "focusQuestion": "O que mudaria se o que você tem hoje fosse suficiente para você?",
+  "keywordGloss": "Não é conformismo: é viver inteiro na fartura e na falta, fortalecido por Cristo.",
+  "reflectionPrompts": [
+   "Contente na falta",
+   "Receber ajuda sem vergonha",
+   "Força que vem dele"
+  ],
+  "facts": [
+   "Paulo se alegrou porque os filipenses finalmente se lembraram dele.",
+   "Ele aprendeu a viver contente em toda e qualquer situação.",
+   "Ele sabe o que é estar humilhado e também ser honrado.",
+   "Ele já teve experiência de fartura e de fome, abundância e escassez.",
+   "Ele pode todas as coisas por meio daquele que lhe dá força.",
+   "Os filipenses enviaram ajuda duas vezes quando ele estava em Tessalônica."
+  ],
+  "_verso": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação. Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez. Posso todas as coisas por meio daquele que me dá força."
+ }
+}

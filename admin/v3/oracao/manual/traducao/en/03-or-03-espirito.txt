@@ -1,0 +1,271 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "oracao-sem-or-03-espirito-01": {
+  "question": "Em Romanos 8:26, o Espírito nos auxilia em nossas fraquezas na hora de orar.",
+  "learningObjective": "Observar o auxílio do Espírito em Romanos 8:26.",
+  "feedbackCorrect": "A ajuda dele chega justamente onde somos fracos.",
+  "feedbackWrong": {
+   "false": "Releia o começo de Romanos 8:26: o auxílio é declarado."
+  },
+  "hint": "Veja o começo do versículo.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-sem-or-03-espirito-02": {
+  "question": "Em Romanos 8:26, toque quem intercede por nós com gemidos inexprimíveis.",
+  "learningObjective": "Identificar quem intercede em Romanos 8:26.",
+  "feedbackCorrect": "É o próprio dele quem assume nossa causa em oração.",
+  "feedbackWrong": {
+   "a": "Isso é onde precisamos de ajuda, não quem ajuda.",
+   "c": "Isso é o modo da intercessão, não quem intercede."
+  },
+  "hint": "Procure o sujeito da segunda metade do versículo.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-sem-or-03-espirito-03": {
+  "question": "Segundo Romanos 8:27, quem conhece o propósito do Espírito ao interceder?",
+  "learningObjective": "Observar quem conhece a intercessão do Espírito.",
+  "feedbackCorrect": "Deus, que examina corações, entende a intercessão dele.",
+  "feedbackWrong": {
+   "a": "O texto afirma que Deus conhece esse propósito.",
+   "c": "Os gemidos são inexprimíveis: não dependem de audição.",
+   "d": "Nenhum grupo humano é citado como intérprete aqui."
+  },
+  "hint": "Veja quem examina os corações.",
+  "options": {
+   "a": "Ninguém, nem mesmo o próprio Deus Pai",
+   "b": "Aquele que examina os corações dos homens",
+   "c": "Somente quem ouve gemidos em voz alta",
+   "d": "Apenas os líderes da igreja de Roma"
+  },
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-sem-or-03-espirito-04": {
+  "question": "Monte Romanos 8:26–27 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência de Romanos 8:26–27.",
+  "feedbackCorrect": "Auxílio na fraqueza, gemidos e intercessão segundo Deus.",
+  "feedbackWrong": {
+   "default": "Comece pelo auxílio em nossas fraquezas."
+  },
+  "hint": "A vontade de Deus fecha os dois versículos.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-sem-or-03-espirito-05": {
+  "question": "Em Romanos 8:27, o que aquele que examina conhece sobre os nossos interiores?",
+  "learningObjective": "Lembrar o que Deus examina em Romanos 8:27.",
+  "feedbackCorrect": "Nada em nós é segredo para quem examina por dentro.",
+  "feedbackWrong": {
+   "b": "Isso é o que Deus conhece do Espírito, não de nós.",
+   "c": "Isso é por quem ele intercede, não o que Deus examina."
+  },
+  "hint": "É o nosso interior, no começo do versículo.",
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-sem-or-03-espirito-06": {
+  "question": "O que Romanos 8:27 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Romanos 8:27 à intercessão segundo Deus.",
+  "feedbackCorrect": "Ele intercede pelos santos do jeito de Deus, não do nosso.",
+  "feedbackWrong": {
+   "a": "Ele examina corações: conhece tudo em nós.",
+   "c": "Justamente quem não sabe orar é auxiliado aqui."
+  },
+  "hint": "Veja a medida da intercessão no fim.",
+  "options": {
+   "a": "Deus sem conhecer nosso interior",
+   "b": "Intercessão segundo a vontade dele",
+   "c": "Oração só de quem sabe falar"
+  },
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-cam-or-03-espirito-01": {
+  "question": "Em Romanos 8:26–27, o Espírito só auxilia quem já sabe orar muito bem e sem fraqueza.",
+  "learningObjective": "Compreender que o auxílio é para a fraqueza.",
+  "feedbackCorrect": "É o contrário: o auxílio é para fracos que não sabem orar.",
+  "feedbackWrong": {
+   "true": "Não saber orar como convém é o ponto de partida do texto."
+  },
+  "hint": "Veja para quem o auxílio é prometido.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-cam-or-03-espirito-02": {
+  "question": "Em Romanos 8:26, toque o que nós não sabemos fazer como convém.",
+  "learningObjective": "Reconhecer nossa limitação declarada na oração.",
+  "feedbackCorrect": "A confissão é honesta: nem orar sabemos direito.",
+  "feedbackWrong": {
+   "a": "Isso é como ele intercede, não nossa incapacidade.",
+   "c": "Isso é onde somos ajudados, não o que não sabemos fazer."
+  },
+  "hint": "Procure o verbo depois de não sabemos.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-cam-or-03-espirito-03": {
+  "question": "Como Romanos 8:27 completa o que 8:26 diz sobre os gemidos do Espírito?",
+  "learningObjective": "Relacionar gemidos inexprimíveis e o conhecer de Deus.",
+  "feedbackCorrect": "Inexprimível para nós, perfeitamente claro para Deus.",
+  "feedbackWrong": {
+   "b": "Gemidos sem palavras são justamente o que ele entende.",
+   "c": "É de acordo com a vontade de Deus, diz o texto.",
+   "d": "Quem conhece é Deus examinando corações, não um tradutor."
+  },
+  "hint": "Veja quem entende o que não tem palavras.",
+  "options": {
+   "a": "Deus conhece o propósito dele, mesmo sem palavras",
+   "b": "Deus só entende orações bem formuladas e longas",
+   "c": "O propósito dele é contrário à vontade de Deus",
+   "d": "Os gemidos precisam de um tradutor humano presente"
+  },
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-cam-or-03-espirito-04": {
+  "question": "Como se encadeia o argumento de Romanos 8:27?",
+  "learningObjective": "Compreender o encadeamento de Romanos 8:27.",
+  "feedbackCorrect": "Examinar, conhecer e interceder segundo a vontade dele.",
+  "feedbackWrong": {
+   "default": "Comece por quem examina os corações."
+  },
+  "hint": "A vontade de Deus é o fecho do versículo.",
+  "options": {
+   "a": "Deus examina os corações dos seus",
+   "b": "Ele conhece o propósito do Espírito",
+   "c": "O Espírito intercede conforme a vontade dele"
+  },
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-cam-or-03-espirito-05": {
+  "question": "Em Romanos 8:26, em que área o Espírito nos auxilia quando vamos orar?",
+  "learningObjective": "Compreender onde atua o auxílio do Espírito.",
+  "feedbackCorrect": "A ajuda dele mira exatamente o nosso ponto fraco.",
+  "feedbackWrong": {
+   "a": "O texto fala de auxílio na fraqueza, não em vitórias.",
+   "b": "Não é eloquência que ele supre: é a fraqueza."
+  },
+  "hint": "É o nosso ponto fraco, logo no começo.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-cam-or-03-espirito-06": {
+  "question": "O que liga Romanos 8:26 a João 14:16?",
+  "learningObjective": "Relacionar o auxílio do Espírito à promessa de Jesus.",
+  "feedbackCorrect": "Jesus prometeu outro Auxiliador para estar sempre conosco.",
+  "feedbackWrong": {
+   "a": "Os dois textos põem ele bem no centro da ajuda.",
+   "b": "Ele fica para sempre, não abandona ninguém."
+  },
+  "hint": "Veja por quanto tempo o Auxiliador fica.",
+  "options": {
+   "a": "Oração sem presença do Espírito",
+   "b": "Ajuda que abandona na fraqueza",
+   "c": "Auxiliador que fica com os discípulos"
+  },
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-03-espirito-01": {
+  "question": "Romanos 8:26–27 ensina que nossa fraqueza ao orar não nos afasta de Deus, pois o Espírito intercede por nós.",
+  "learningObjective": "Interpretar a fraqueza como lugar de intercessão.",
+  "feedbackCorrect": "Sem palavras certas, temos um intercessor perfeito.",
+  "feedbackWrong": {
+   "false": "A fraqueza é justamente onde a intercessão acontece."
+  },
+  "hint": "Veja o que acontece quando não sabemos orar.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-03-espirito-02": {
+  "question": "Em Romanos 8:27, toque segundo o que o Espírito intercede pelos santos.",
+  "learningObjective": "Sustentar no texto a medida da intercessão.",
+  "feedbackCorrect": "A intercessão dele é perfeita porque segue a vontade do Pai.",
+  "feedbackWrong": {
+   "b": "Isso é por quem ele intercede, não segundo o quê.",
+   "c": "Isso é o que Deus conhece dele, não a medida final."
+  },
+  "hint": "Procure a medida no fim do versículo.",
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-pro-or-03-espirito-03": {
+  "question": "Que leitura Romanos 8:26–27 sustenta sobre orar em fraqueza?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta.",
+  "feedbackCorrect": "Nossa falta de palavras encontra a intercessão dele.",
+  "feedbackWrong": {
+   "a": "O texto consola justamente quem não sabe formular.",
+   "c": "Quem geme é o Espírito em nós, não uma técnica nossa.",
+   "d": "Auxiliar na fraqueza supõe que continuamos orando fracos."
+  },
+  "hint": "Junte nossa incapacidade com a ação dele.",
+  "options": {
+   "a": "Deus só ouve quem formula orações perfeitas sempre",
+   "b": "Mesmo sem palavras, somos ouvidos e auxiliados nele",
+   "c": "Devemos produzir gemidos audíveis como técnica certa",
+   "d": "Podemos parar de orar, pois ele faz tudo sozinho"
+  },
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "oracao-pro-or-03-espirito-04": {
+  "question": "Qual sequência revela o sentido de Romanos 8:26?",
+  "learningObjective": "Ver o caminho da fraqueza à intercessão perfeita.",
+  "feedbackCorrect": "Da nossa falta de palavras à intercessão que Deus entende.",
+  "feedbackWrong": {
+   "default": "Comece pela nossa incapacidade de orar."
+  },
+  "hint": "Os gemidos entendidos por Deus fecham o caminho.",
+  "options": {
+   "a": "Não sabemos orar como deveríamos orar",
+   "b": "O próprio Espírito assume nossa intercessão",
+   "c": "Gemidos sem palavras chegam ao coração de Deus"
+  },
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-03-espirito-05": {
+  "question": "Em Romanos 8:26, com que o Espírito intercede quando faltam palavras expressas?",
+  "learningObjective": "Lembrar o modo da intercessão do Espírito.",
+  "feedbackCorrect": "Além das palavras, a intercessão dele continua perfeita.",
+  "feedbackWrong": {
+   "b": "O texto não fala de volume, mas de profundidade.",
+   "c": "Discurso bem montado é justamente o que nos falta."
+  },
+  "hint": "É profundo demais para virar palavras.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-03-espirito-06": {
+  "question": "O que liga Romanos 8:27 a Romanos 8:34?",
+  "learningObjective": "Ligar as duas intercessões de Romanos 8.",
+  "feedbackCorrect": "Espírito em nós e Cristo à direita de Deus: dupla intercessão.",
+  "feedbackWrong": {
+   "a": "Os dois textos afirmam intercessão a nosso favor.",
+   "b": "Toda intercessão aqui é segundo a vontade de Deus."
+  },
+  "hint": "Veja quem mais intercede no mesmo capítulo.",
+  "options": {
+   "a": "Ninguém intercede pelos santos",
+   "b": "Intercessão contra a vontade de Deus",
+   "c": "Cristo também intercede por nós"
+  },
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "estudo:or-03-espirito": {
+  "context": "Paulo fala de um mundo que geme e de crentes que sofrem sem saber nem como pedir. É nesse ponto de fraqueza, e não de força, que entra a ajuda do Espírito Santo na oração.",
+  "focusQuestion": "O que você faria na oração se soubesse que não precisa acertar as palavras?",
+  "keywordGloss": "Quando não sabemos orar como convém, o próprio Espírito intercede por nós, segundo a vontade de Deus.",
+  "reflectionPrompts": [
+   "Orar sem saber",
+   "Gemidos que Deus entende",
+   "Segundo a vontade dele"
+  ],
+  "facts": [
+   "O Espírito nos auxilia em nossas fraquezas.",
+   "Nós não sabemos orar como convém.",
+   "O próprio Espírito intercede por nós com gemidos inexprimíveis.",
+   "Aquele que examina os corações conhece o propósito do Espírito.",
+   "Ele intercede pelos santos de acordo com a vontade de Deus."
+  ],
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ }
+}

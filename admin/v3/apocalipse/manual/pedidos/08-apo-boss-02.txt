@@ -1,0 +1,148 @@
+Escreva a cena "apo-boss-02" da trilha "apocalipse" (Apocalipse).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "apocalipse",
+  "title": "Apocalipse",
+  "description": "Revelação de Jesus: cartas, trono, conflito e nova criação.",
+  "realm": "novo-testamento"
+ },
+ "block": "Juízo e esperança",
+ "mission": {
+  "slug": "apo-boss-02",
+  "title": "Desafio final: Esperança",
+  "type": "boss",
+  "intro": "Revise: selados, queda de Babilônia e nova criação no Cordeiro.",
+  "hookRef": "Apocalipse 7:9–10",
+  "hookNote": "Revise: selados, queda de Babilônia e nova criação no Cordeiro.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Apocalipse 6–22"
+ },
+ "v2": {
+  "passageRef": "Apocalipse 7:9–10",
+  "context": "Revise: selados, queda de Babilônia e nova criação no Cordeiro.",
+  "keyword": "Final",
+  "verseRefs": [
+   "Apocalipse 7:9; 21:3–4"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "apo-06-selos",
+   "title": "Selos e testemunho",
+   "centralInsight": "Deus conhece os seus",
+   "ref": "Apocalipse 7:6–13"
+  },
+  {
+   "slug": "apo-07-babilonia",
+   "title": "Queda de Babilônia",
+   "centralInsight": "Sair da cumplicidade",
+   "ref": "Apocalipse 18:1–7"
+  },
+  {
+   "slug": "apo-03-novo",
+   "title": "Novo céu e nova terra",
+   "centralInsight": "Deus conosco",
+   "ref": "Apocalipse 21:1–7"
+  }
+ ],
+ "ranges": [
+  "Apocalipse 7:6–13",
+  "Apocalipse 18:1–7",
+  "Apocalipse 21:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Apocalipse 7:6",
+   "text": "Da tribo de Aser, doze mil; da tribo de Naftali, doze mil; da tribo de Manassés, doze mil;"
+  },
+  {
+   "ref": "Apocalipse 7:7",
+   "text": "Da tribo de Simeão, doze mil; da tribo de Levi, doze mil; da tribo de Issacar, doze mil;"
+  },
+  {
+   "ref": "Apocalipse 7:8",
+   "text": "Da tribo de Zebulom, doze mil; da tribo de José, doze mil; da tribo de Benjamim, doze mil;"
+  },
+  {
+   "ref": "Apocalipse 7:9",
+   "text": "Depois dessas coisas, olhei, e eis uma grande multidão que ninguém podia enumerar, de todas as nações, tribos, povos e línguas, em pé diante do trono e diante do Cordeiro, trajando vestes brancas e segurando palmas nas mãos;"
+  },
+  {
+   "ref": "Apocalipse 7:10",
+   "text": "E clamavam em alta voz, dizendo: Salvação ao nosso Deus, que se assenta no trono, e ao Cordeiro."
+  },
+  {
+   "ref": "Apocalipse 7:11",
+   "text": "E todos os anjos estavam em pé ao redor do trono, dos anciãos e dos quatro seres viventes; prostraram-se diante do trono, com o rosto em terra, e adoraram a Deus."
+  },
+  {
+   "ref": "Apocalipse 7:12",
+   "text": "Amém! O louvor, a glória, a sabedoria, as ações de graças, a honra, o poder e a força sejam ao nosso Deus, pelos séculos dos séculos. Amém!"
+  },
+  {
+   "ref": "Apocalipse 7:13",
+   "text": "Um dos anciãos me respondeu, dizendo: Estes que estão vestidos com vestiduras brancas, quem são e de onde vieram?"
+  },
+  {
+   "ref": "Apocalipse 18:1",
+   "text": "E, depois dessas coisas, eu vi descer do céu outro anjo, que possuía grande autoridade, e a terra se iluminou com a sua glória."
+  },
+  {
+   "ref": "Apocalipse 18:2",
+   "text": "E exclamou em alta voz, dizendo: Caiu! Caiu a grande Babilônia, e se tornou morada de demônios, covil de toda espécie de espírito imundo e esconderijo de todo gênero de ave imunda e detestável."
+  },
+  {
+   "ref": "Apocalipse 18:3",
+   "text": "Porque todas as nações beberam do vinho do furor de sua prostituição, e os reis da terra se prostituíram com ela e os mercadores da terra se enriqueceram à custa de sua luxúria."
+  },
+  {
+   "ref": "Apocalipse 18:4",
+   "text": "Ouvi outra voz do céu, dizendo: \"Retirai-vos dela, povo meu, para que não sejais cúmplices de seus pecados e para que não participeis de suas pragas.\""
+  },
+  {
+   "ref": "Apocalipse 18:5",
+   "text": "Porque os seus pecados se acumularam até ao céu, e Deus se lembrou dos atos iníquos que ela cometeu."
+  },
+  {
+   "ref": "Apocalipse 18:6",
+   "text": "Deem a ela o que ela também deu a vocês, e retribuam-lhe em dobro conforme as suas obras; no cálice em que ela misturou bebidas, misturem para ela o dobro."
+  },
+  {
+   "ref": "Apocalipse 18:7",
+   "text": "Quanto mais ela se glorificou e se entregou às luxúrias tanto mais receberá de tormento e pranto; pois diz em seu coração: Estou assentada como rainha, não sou viúva e nunca verei o pranto."
+  },
+  {
+   "ref": "Apocalipse 21:1",
+   "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+  },
+  {
+   "ref": "Apocalipse 21:2",
+   "text": "E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo."
+  },
+  {
+   "ref": "Apocalipse 21:3",
+   "text": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+  },
+  {
+   "ref": "Apocalipse 21:4",
+   "text": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram."
+  },
+  {
+   "ref": "Apocalipse 21:5",
+   "text": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+  },
+  {
+   "ref": "Apocalipse 21:6",
+   "text": "Está tudo consumado: Eu sou o Alfa e o Ômega, o Princípio e o Fim. A quem estiver sedento, darei gratuitamente da fonte da água da vida."
+  },
+  {
+   "ref": "Apocalipse 21:7",
+   "text": "Quem vencer herdará estas coisas; eu serei seu Deus, e ele será meu filho."
+  }
+ ]
+}
+</cena>

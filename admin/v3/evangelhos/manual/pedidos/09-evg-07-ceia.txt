@@ -1,0 +1,68 @@
+Escreva a cena "evg-07-ceia" da trilha "evangelhos" (Os Quatro Evangelhos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "evangelhos",
+  "title": "Os Quatro Evangelhos",
+  "description": "Panorama de Mateus a João — vida, morte e ressurreição de Jesus.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cruz e Ressurreição",
+ "mission": {
+  "slug": "evg-07-ceia",
+  "title": "A última ceia",
+  "type": "lesson",
+  "intro": "Na noite em que foi traído, Jesus institui a nova aliança em Seu sangue.",
+  "hookRef": "Lucas 22:14–20",
+  "hookNote": "Na ceia, Jesus interpreta Sua morte: corpo entregue, sangue da aliança.",
+  "centralInsight": "Entrega por mim",
+  "objective": "O que significa participar da ceia com consciência?"
+ },
+ "v2": {
+  "passageRef": "Lucas 22:14–20",
+  "context": "Na ceia, Jesus interpreta Sua morte: corpo entregue, sangue da aliança.",
+  "keyword": "Nova aliança",
+  "verseRefs": [
+   "Lucas 22:19–20"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lucas 22:14–20",
+  "Lucas 22:19–20"
+ ],
+ "verses": [
+  {
+   "ref": "Lucas 22:14",
+   "text": "E, ao chegar a hora, Jesus se pôs à mesa, e com ele estavam os doze apóstolos."
+  },
+  {
+   "ref": "Lucas 22:15",
+   "text": "Desejei ansiosamente comer convosco esta Páscoa, antes do meu sofrimento."
+  },
+  {
+   "ref": "Lucas 22:16",
+   "text": "Porque eu vos digo que não a comerei mais até que se cumpra no reino de Deus."
+  },
+  {
+   "ref": "Lucas 22:17",
+   "text": "E, tomando o cálice, havendo dado graças, disse: Tomai-o e reparti-o entre vós;"
+  },
+  {
+   "ref": "Lucas 22:18",
+   "text": "Porque eu lhes digo que, de agora em diante, não beberei mais do fruto da videira, até que venha o reino de Deus."
+  },
+  {
+   "ref": "Lucas 22:19",
+   "text": "E, tomando o pão, tendo dado graças, o partiu e deu aos discípulos, dizendo: \"Isto é o meu corpo, que é entregue por vocês; façam isto em memória de mim.\""
+  },
+  {
+   "ref": "Lucas 22:20",
+   "text": "Da mesma forma, após a ceia, tomou o cálice, dizendo: Este cálice é a nova aliança no meu sangue, que é derramado por vocês."
+  }
+ ]
+}
+</cena>

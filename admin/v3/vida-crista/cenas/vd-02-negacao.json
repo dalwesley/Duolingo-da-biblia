@@ -1,0 +1,889 @@
+{
+  "study": {
+    "slug": "vd-02-negacao",
+    "passageRef": "Lucas 9:23",
+    "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+    "passages": [
+      {
+        "ref": "Lucas 9:23",
+        "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+      }
+    ],
+    "context": "Pedro acabara de confessar que Jesus é o Cristo de Deus e Jesus anunciou o próprio sofrimento. Logo depois, ele diz a todos o que é vir após ele, não uma vez só, mas todos os dias.",
+    "keyword": "Negar",
+    "keywordGloss": "Não é odiar a si mesmo, é deixar de pôr o próprio eu no comando da vida.",
+    "focusQuestion": "O que você precisa render a Jesus de novo hoje, e não só uma vez?",
+    "reflectionPrompts": [
+      "Render o comando",
+      "Cruz todos os dias",
+      "Seguir de novo hoje"
+    ],
+    "facts": [
+      {
+        "text": "Jesus dizia essas palavras a todos.",
+        "evidenceRef": "Lucas 9:23",
+        "evidenceSpan": "E dizia a todos"
+      },
+      {
+        "text": "Quem quer vir após Jesus deve negar-se a si mesmo.",
+        "evidenceRef": "Lucas 9:23",
+        "evidenceSpan": "Se alguém quiser vir após mim, negue-se a si mesmo"
+      },
+      {
+        "text": "A cruz deve ser tomada todos os dias.",
+        "evidenceRef": "Lucas 9:23",
+        "evidenceSpan": "tome a sua cruz todos os dias"
+      },
+      {
+        "text": "Depois de negar-se e tomar a cruz, a pessoa segue Jesus.",
+        "evidenceRef": "Lucas 9:23",
+        "evidenceSpan": "e siga-me"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cruz",
+        "gloss": "A entrega diária do próprio rumo, no caminho de Jesus que anunciou a própria morte."
+      },
+      {
+        "term": "todos os dias",
+        "gloss": "A marca da continuidade, o discipulado não é um gesto único e encerrado."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus fala a todos",
+        "evidenceRef": "Lucas 9:23"
+      },
+      {
+        "label": "Negar a si mesmo",
+        "evidenceRef": "Lucas 9:23"
+      },
+      {
+        "label": "Tomar a cruz todos os dias",
+        "evidenceRef": "Lucas 9:23"
+      },
+      {
+        "label": "Seguir Jesus",
+        "evidenceRef": "Lucas 9:23"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Negar-se e tomar a cruz não acontecem uma vez só, eles acompanham o seguir dia após dia.",
+        "marker": "todos os dias",
+        "evidenceRef": "Lucas 9:23"
+      },
+      {
+        "kind": "contraste",
+        "text": "Guardar a vida só para si leva a perdê-la, mas entregá-la por Jesus leva a salvá-la.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 9:24"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Marcos 8:34",
+        "bridge": "Negar-se e tomar a cruz",
+        "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+      },
+      {
+        "ref": "Gálatas 2:20",
+        "bridge": "Vida entregue a Cristo",
+        "text": "Estou crucificado com Cristo; e não sou eu quem vive, mas Cristo vive em mim; e a vida que agora tenho na carne, vivo-a pela fé no Filho de Deus, que me amou e se entregou a si mesmo por mim."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Negar-se a si mesmo é odiar-se e desprezar a própria vida.",
+        "why": "Jesus liga negar-se a ir após ele; é render o comando, não desprezar quem ele criou."
+      },
+      {
+        "text": "Tomar a cruz todos os dias é um ritual para merecer ser aceito por Deus.",
+        "why": "O texto apresenta a cruz como resposta ao chamado de Jesus, não como pagamento por aceitação."
+      },
+      {
+        "text": "Seguir Jesus é uma decisão única que dispensa continuidade.",
+        "why": "Jesus acrescenta uma marca de tempo ao chamado, a cruz é tomada todos os dias (9:23)."
+      }
+    ],
+    "centralInsight": "Negar a si mesmo é render o comando da vida a Jesus todos os dias",
+    "anchorQuestion": "Segundo Lucas 9:23, com que frequência o discípulo toma a sua cruz?",
+    "relatedVerses": [
+      {
+        "reference": "Marcos 8:34",
+        "reason": "Negar-se e tomar a cruz"
+      },
+      {
+        "reference": "Gálatas 2:20",
+        "reason": "Vida entregue a Cristo"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "vida-crista-sem-vd-02-negacao-01",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Lucas 9:23, Jesus diz que quem quiser vir após ele deve tomar a sua cruz uma única vez.",
+      "prompt": "Em Lucas 9:23, Jesus diz que quem quiser vir após ele deve tomar a sua cruz uma única vez.",
+      "cue": "Em Lucas 9:23, Jesus diz que quem quiser vir após ele deve tomar a sua cruz uma única vez.",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "tome a sua cruz todos os dias",
+      "feedbackCorrect": "Jesus marca o chamado com continuidade, a cruz é tomada todos os dias.",
+      "feedbackWrong": {
+        "true": "Releia o fim do chamado e repare na marca de tempo que Jesus usa."
+      },
+      "hint": "Repare na marca de tempo.",
+      "learningObjective": "Observar a frequência do chamado em Lucas 9:23.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-sem-vd-02-negacao-02",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Lucas 9:23, toque com que frequência a cruz deve ser tomada.",
+      "prompt": "Em Lucas 9:23, toque com que frequência a cruz deve ser tomada.",
+      "cue": "Em Lucas 9:23, toque com que frequência a cruz deve ser tomada.",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "options": [
+        {
+          "id": "a",
+          "text": "todos os dias"
+        },
+        {
+          "id": "b",
+          "text": "a si mesmo"
+        },
+        {
+          "id": "c",
+          "text": "a todos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "tome a sua cruz todos os dias",
+      "feedbackCorrect": "A cruz do discípulo não é de um dia só, ela é tomada todos os dias.",
+      "feedbackWrong": {
+        "b": "Isso é quem a pessoa nega, não a frequência do chamado.",
+        "c": "Isso diz a quem Jesus falava, não com que frequência."
+      },
+      "hint": "Procure a expressão de tempo.",
+      "learningObjective": "Identificar a frequência diária do chamado.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-sem-vd-02-negacao-03",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Lucas 9:23, a quem Jesus dizia essas palavras?",
+      "prompt": "Segundo Lucas 9:23, a quem Jesus dizia essas palavras?",
+      "cue": "Segundo Lucas 9:23, a quem Jesus dizia essas palavras?",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A todos"
+        },
+        {
+          "id": "b",
+          "text": "Só aos líderes religiosos"
+        },
+        {
+          "id": "c",
+          "text": "Só a Pedro"
+        },
+        {
+          "id": "d",
+          "text": "Só a quem já seguia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "E dizia a todos",
+      "feedbackCorrect": "O chamado não é para um grupo fechado, Jesus o dizia a todos.",
+      "feedbackWrong": {
+        "b": "Os líderes não são o público desse chamado em Lucas 9:23.",
+        "c": "Pedro confessou Jesus antes, mas o chamado é dito a todos.",
+        "d": "O chamado convida quem quiser vir após Jesus, dito a todos."
+      },
+      "hint": "Leia as primeiras palavras do versículo.",
+      "learningObjective": "Observar a quem Jesus dirige o chamado.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-sem-vd-02-negacao-04",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Lucas 9:23 na ordem do texto.",
+      "prompt": "Monte Lucas 9:23 na ordem do texto.",
+      "cue": "Monte Lucas 9:23 na ordem do texto.",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se alguém quiser vir após mim"
+        },
+        {
+          "id": "b",
+          "text": "negue-se a si mesmo"
+        },
+        {
+          "id": "c",
+          "text": "tome a sua cruz todos os dias e siga-me"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Se alguém quiser vir após mim",
+      "feedbackCorrect": "A ordem é vir após Jesus, negar-se, tomar a cruz diária e segui-lo.",
+      "feedbackWrong": {
+        "default": "Comece pela condição de vir após Jesus; segui-lo fecha o versículo."
+      },
+      "hint": "O versículo começa pela condição.",
+      "learningObjective": "Reconhecer a sequência do chamado em Lucas 9:23.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-sem-vd-02-negacao-05",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Lucas 9:23, qual é o primeiro passo de quem quer vir após Jesus?",
+      "prompt": "Em Lucas 9:23, qual é o primeiro passo de quem quer vir após Jesus?",
+      "cue": "Em Lucas 9:23, qual é o primeiro passo de quem quer vir após Jesus?",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "template": "E dizia a todos: Se alguém quiser vir após mim, ___ a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvará"
+        },
+        {
+          "id": "b",
+          "text": "negue-se"
+        },
+        {
+          "id": "c",
+          "text": "perdê-la-á"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "negue-se a si mesmo",
+      "feedbackCorrect": "O primeiro passo do chamado é negar-se a si mesmo diante de Jesus.",
+      "feedbackWrong": {
+        "a": "Essa palavra fala do destino de quem entrega a vida por Jesus.",
+        "c": "Essa palavra fala do destino de quem guarda a vida para si."
+      },
+      "hint": "Volte ao primeiro verbo do chamado anterior.",
+      "learningObjective": "Lembrar o primeiro passo do chamado de Jesus.",
+      "evidence": [
+        "Lucas 9:23–24"
+      ]
+    },
+    {
+      "id": "vida-crista-sem-vd-02-negacao-06",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Lucas 9:23 comunica que se liga a este contexto?",
+      "prompt": "O que Lucas 9:23 comunica que se liga a este contexto?",
+      "cue": "O que Lucas 9:23 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "passageA": {
+        "ref": "Lucas 9:23",
+        "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus fala a todos, e não só a um grupo fechado de seguidores."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado só para Pedro"
+        },
+        {
+          "id": "b",
+          "text": "Chamado aberto a todos"
+        },
+        {
+          "id": "c",
+          "text": "Chamado sem seguidores"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "E dizia a todos",
+      "feedbackCorrect": "Jesus dizia o chamado a todos, sem fechar o grupo dos que ouvem.",
+      "feedbackWrong": {
+        "a": "Pedro aparece antes no capítulo, mas o chamado é dito a todos.",
+        "c": "O chamado convida seguidores, não os dispensa."
+      },
+      "hint": "Veja a quem Jesus dizia isso.",
+      "learningObjective": "Ligar Lucas 9:23 ao alcance aberto do chamado.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-cam-vd-02-negacao-01",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Lucas 9:24, guardar a vida só para si é o caminho que Jesus aponta para salvá-la.",
+      "prompt": "Em Lucas 9:24, guardar a vida só para si é o caminho que Jesus aponta para salvá-la.",
+      "cue": "Em Lucas 9:24, guardar a vida só para si é o caminho que Jesus aponta para salvá-la.",
+      "verseRef": "Lucas 9:24",
+      "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+      "feedbackCorrect": "Quem guarda a vida para si a perde; quem a entrega por Jesus a salva.",
+      "feedbackWrong": {
+        "true": "Compare as duas metades do versículo e veja qual vida é salva."
+      },
+      "hint": "Compare as duas metades.",
+      "learningObjective": "Compreender o contraste de Lucas 9:24.",
+      "evidence": [
+        "Lucas 9:24"
+      ]
+    },
+    {
+      "id": "vida-crista-cam-vd-02-negacao-02",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+      "prompt": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+      "cue": "Em Lucas 9:24, toque a palavra que marca o contraste entre guardar e entregar a vida.",
+      "verseRef": "Lucas 9:24",
+      "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois"
+        },
+        {
+          "id": "b",
+          "text": "quem"
+        },
+        {
+          "id": "c",
+          "text": "mas"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+      "feedbackCorrect": "O contraste vira a frase, de guardar a vida para entregá-la por Jesus.",
+      "feedbackWrong": {
+        "a": "Essa palavra abre o versículo e explica o chamado anterior.",
+        "b": "Essa palavra aponta a pessoa, não o contraste da frase."
+      },
+      "hint": "Procure uma palavra curta no meio do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em Lucas 9:24.",
+      "evidence": [
+        "Lucas 9:24"
+      ]
+    },
+    {
+      "id": "vida-crista-cam-vd-02-negacao-03",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Lucas 9:23 liga negar-se e seguir Jesus?",
+      "prompt": "Como Lucas 9:23 liga negar-se e seguir Jesus?",
+      "cue": "Como Lucas 9:23 liga negar-se e seguir Jesus?",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negar-se é parte de ir após Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Negar-se vale só no primeiro dia"
+        },
+        {
+          "id": "c",
+          "text": "Seguir dispensa negar o próprio rumo"
+        },
+        {
+          "id": "d",
+          "text": "Negar-se substitui seguir Jesus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "negue-se a si mesmo, tome a sua cruz todos os dias e siga-me",
+      "feedbackCorrect": "Negar-se, tomar a cruz diária e seguir formam um só chamado.",
+      "feedbackWrong": {
+        "b": "A marca diária mostra que negar-se não vale só no começo.",
+        "c": "O chamado junta negar o próprio rumo e seguir Jesus.",
+        "d": "Negar-se não substitui seguir; os dois estão no mesmo chamado."
+      },
+      "hint": "Veja os verbos ligados no mesmo chamado.",
+      "learningObjective": "Compreender a ligação entre negar-se e seguir.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-cam-vd-02-negacao-04",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o chamado em Lucas 9:23?",
+      "prompt": "Como avança o chamado em Lucas 9:23?",
+      "cue": "Como avança o chamado em Lucas 9:23?",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A pessoa nega o próprio comando"
+        },
+        {
+          "id": "b",
+          "text": "Ela toma a cruz todos os dias"
+        },
+        {
+          "id": "c",
+          "text": "Ela segue Jesus no caminho dele"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "E dizia a todos",
+      "feedbackCorrect": "Negar o próprio comando e tomar a cruz diária levam a seguir Jesus.",
+      "feedbackWrong": {
+        "default": "Seguir Jesus fecha o chamado; negar-se vem primeiro."
+      },
+      "hint": "O último passo é seguir Jesus.",
+      "learningObjective": "Compreender os movimentos do chamado diário.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-cam-vd-02-negacao-05",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Lucas 9:23, o que a pessoa toma todos os dias ao seguir Jesus?",
+      "prompt": "Em Lucas 9:23, o que a pessoa toma todos os dias ao seguir Jesus?",
+      "cue": "Em Lucas 9:23, o que a pessoa toma todos os dias ao seguir Jesus?",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "template": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua ___ todos os dias e siga-me.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vida"
+        },
+        {
+          "id": "b",
+          "text": "alma"
+        },
+        {
+          "id": "c",
+          "text": "cruz"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "tome a sua cruz todos os dias",
+      "feedbackCorrect": "Todos os dias, quem segue Jesus toma de novo a entrega do próprio rumo.",
+      "feedbackWrong": {
+        "a": "Essa palavra aparece no versículo seguinte, sobre guardar ou entregar.",
+        "b": "Essa palavra não aparece neste chamado de Lucas 9:23."
+      },
+      "hint": "É o segundo passo do chamado.",
+      "learningObjective": "Compreender a cruz como entrega diária.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-cam-vd-02-negacao-06",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Lucas 9:23 a Marcos 8:34?",
+      "prompt": "O que liga Lucas 9:23 a Marcos 8:34?",
+      "cue": "O que liga Lucas 9:23 a Marcos 8:34?",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "passageA": {
+        "ref": "Lucas 9:23",
+        "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+      },
+      "passageB": {
+        "ref": "Marcos 8:34",
+        "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O chamado se repete nos Evangelhos"
+        },
+        {
+          "id": "b",
+          "text": "Chamados sem nenhuma relação"
+        },
+        {
+          "id": "c",
+          "text": "A cruz fica fora do chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "tome a sua cruz todos os dias e siga-me",
+      "feedbackCorrect": "Lucas e Marcos guardam o mesmo chamado, e Lucas marca a frequência diária.",
+      "feedbackWrong": {
+        "b": "Os dois textos trazem negar-se, tomar a cruz e seguir Jesus.",
+        "c": "Nos dois textos, a cruz está no centro do chamado."
+      },
+      "hint": "Compare o que Jesus pede nos dois textos.",
+      "learningObjective": "Relacionar o chamado em Lucas e Marcos.",
+      "evidence": [
+        "Lucas 9:23",
+        "Marcos 8:34"
+      ]
+    },
+    {
+      "id": "vida-crista-pro-vd-02-negacao-01",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Lucas 9:23, negar-se a si mesmo é uma rendição contínua, marcada pela cruz tomada todos os dias.",
+      "prompt": "Em Lucas 9:23, negar-se a si mesmo é uma rendição contínua, marcada pela cruz tomada todos os dias.",
+      "cue": "Em Lucas 9:23, negar-se a si mesmo é uma rendição contínua, marcada pela cruz tomada todos os dias.",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "tome a sua cruz todos os dias",
+      "feedbackCorrect": "A marca diária mostra uma rendição que se renova, não um gesto encerrado.",
+      "feedbackWrong": {
+        "false": "Releia a marca de tempo que Jesus junta ao chamado."
+      },
+      "hint": "Veja a marca de tempo.",
+      "learningObjective": "Interpretar negar-se como rendição contínua.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-pro-vd-02-negacao-02",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Lucas 9:24, toque o trecho que mostra o destino da vida entregue por Jesus.",
+      "prompt": "Em Lucas 9:24, toque o trecho que mostra o destino da vida entregue por Jesus.",
+      "cue": "Em Lucas 9:24, toque o trecho que mostra o destino da vida entregue por Jesus.",
+      "verseRef": "Lucas 9:24",
+      "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "esse a salvará"
+        },
+        {
+          "id": "b",
+          "text": "a sua vida"
+        },
+        {
+          "id": "c",
+          "text": "por minha causa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "mas quem perder a vida por minha causa, esse a salvará",
+      "feedbackCorrect": "A vida entregue por Jesus não termina em perda, ela será salva.",
+      "feedbackWrong": {
+        "b": "Isso é o que é entregue, não o destino da entrega.",
+        "c": "Isso é o motivo da entrega, não o destino dela."
+      },
+      "hint": "Procure o fim da segunda metade.",
+      "learningObjective": "Sustentar com o texto o destino da vida entregue.",
+      "evidence": [
+        "Lucas 9:24"
+      ]
+    },
+    {
+      "id": "vida-crista-pro-vd-02-negacao-03",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Lucas 9:23 sustenta sobre negar-se a si mesmo?",
+      "prompt": "Que leitura Lucas 9:23 sustenta sobre negar-se a si mesmo?",
+      "cue": "Que leitura Lucas 9:23 sustenta sobre negar-se a si mesmo?",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "É render o comando da vida a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "É um gesto único sem continuidade"
+        },
+        {
+          "id": "c",
+          "text": "É odiar a si mesmo e desprezar a vida"
+        },
+        {
+          "id": "d",
+          "text": "É o preço para merecer ser aceito"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "negue-se a si mesmo",
+      "feedbackCorrect": "Negar-se é deixar o próprio eu fora do comando e ir após Jesus.",
+      "feedbackWrong": {
+        "b": "A cruz tomada todos os dias mostra continuidade no chamado.",
+        "c": "O chamado é ir após Jesus, não odiar quem ele criou.",
+        "d": "O texto não trata a cruz como pagamento por aceitação."
+      },
+      "hint": "Compare cada leitura com o chamado inteiro.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre negar-se.",
+      "evidence": [
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-pro-vd-02-negacao-04",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho do chamado em Lucas 9?",
+      "prompt": "Qual sequência revela o caminho do chamado em Lucas 9?",
+      "cue": "Qual sequência revela o caminho do chamado em Lucas 9?",
+      "verseRef": "Lucas 9:23–24",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me. Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus é confessado como o Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Jesus anuncia o próprio sofrimento"
+        },
+        {
+          "id": "c",
+          "text": "O discípulo toma a cruz todos os dias"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "tome a sua cruz todos os dias",
+      "feedbackCorrect": "A confissão e o anúncio de Jesus vêm antes do chamado à cruz diária.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão de Pedro; a cruz diária fecha a sequência."
+      },
+      "hint": "Comece pelo que Pedro confessa.",
+      "learningObjective": "Ver o chamado diário ligado a quem Jesus é.",
+      "evidence": [
+        "Lucas 9:20",
+        "Lucas 9:22",
+        "Lucas 9:23"
+      ]
+    },
+    {
+      "id": "vida-crista-pro-vd-02-negacao-05",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Lucas 9:24, o que a pessoa tenta guardar quando quer salvar tudo só para si?",
+      "prompt": "Em Lucas 9:24, o que a pessoa tenta guardar quando quer salvar tudo só para si?",
+      "cue": "Em Lucas 9:24, o que a pessoa tenta guardar quando quer salvar tudo só para si?",
+      "verseRef": "Lucas 9:24",
+      "passageText": "Pois aquele que quiser salvar a sua vida, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "template": "Pois aquele que quiser salvar a sua ___, perdê-la-á; mas quem perder a vida por minha causa, esse a salvará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mundo"
+        },
+        {
+          "id": "b",
+          "text": "alma"
+        },
+        {
+          "id": "c",
+          "text": "vida"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "aquele que quiser salvar a sua vida, perdê-la-á",
+      "feedbackCorrect": "É a própria vida que, guardada só para si, acaba sendo perdida.",
+      "feedbackWrong": {
+        "a": "Essa palavra aparece na pergunta do versículo seguinte, sobre ganho.",
+        "b": "Essa palavra não é a que Lucas usa neste versículo."
+      },
+      "hint": "Veja o que está em jogo nas duas metades.",
+      "learningObjective": "Lembrar o termo central do contraste de Lucas 9:24.",
+      "evidence": [
+        "Lucas 9:24"
+      ]
+    },
+    {
+      "id": "vida-crista-pro-vd-02-negacao-06",
+      "trail": "vida-crista",
+      "section": "vd-02-negacao",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Lucas 9:23 a Gálatas 2:20?",
+      "prompt": "O que liga Lucas 9:23 a Gálatas 2:20?",
+      "cue": "O que liga Lucas 9:23 a Gálatas 2:20?",
+      "verseRef": "Lucas 9:23",
+      "passageText": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me.",
+      "passageA": {
+        "ref": "Lucas 9:23",
+        "text": "E dizia a todos: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz todos os dias e siga-me."
+      },
+      "passageB": {
+        "ref": "Gálatas 2:20",
+        "text": "Estou crucificado com Cristo; e não sou eu quem vive, mas Cristo vive em mim; e a vida que agora tenho na carne, vivo-a pela fé no Filho de Deus, que me amou e se entregou a si mesmo por mim."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé sem entrega pessoal"
+        },
+        {
+          "id": "b",
+          "text": "O eu no comando sempre"
+        },
+        {
+          "id": "c",
+          "text": "Vida entregue a Cristo"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "negue-se a si mesmo",
+      "feedbackCorrect": "Paulo descreve a mesma entrega, uma vida que já não é comandada pelo eu.",
+      "feedbackWrong": {
+        "a": "Nos dois, a fé aparece junto com entrega pessoal a Cristo.",
+        "b": "Os dois textos tiram o eu do comando da vida."
+      },
+      "hint": "Veja quem comanda a vida nos dois textos.",
+      "learningObjective": "Ligar o chamado de Jesus à vida entregue em Paulo.",
+      "evidence": [
+        "Lucas 9:23",
+        "Gálatas 2:20"
+      ]
+    }
+  ]
+}

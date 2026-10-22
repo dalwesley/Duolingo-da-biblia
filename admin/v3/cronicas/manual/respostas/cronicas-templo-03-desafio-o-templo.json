@@ -1,0 +1,915 @@
+{
+ "study": {
+  "passageRef": "2 Crônicas 5:7–10",
+  "passages": [
+   {
+    "ref": "2 Crônicas 5:7–10"
+   },
+   {
+    "ref": "2 Crônicas 6:10–14"
+   }
+  ],
+  "context": "Este desafio revisa a dedicação do templo: arca, louvor, glória e oração. Salomão reconhece um Deus maior que a casa, que ouve, perdoa e cumpre promessas.",
+  "keyword": "Templo",
+  "keywordGloss": "Lugar onde o nome do Senhor está, para o povo orar e ser ouvido dos céus.",
+  "focusQuestion": "Como você quer buscar a Deus, com louvor, confissão e coração inteiro?",
+  "reflectionPrompts": [
+   "Glória maior que casa",
+   "Orar e ser ouvido",
+   "Coração inteiro diante Deus"
+  ],
+  "facts": [
+   {
+    "text": "Salomão trouxe a prata, o ouro e utensílios dedicados por Davi.",
+    "evidenceRef": "2 Crônicas 5:1",
+    "evidenceSpan": "Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios"
+   },
+   {
+    "text": "Os sacerdotes colocaram a arca no Santo dos Santos, sob os querubins.",
+    "evidenceRef": "2 Crônicas 5:7",
+    "evidenceSpan": "colocaram a arca da Aliança do Senhor em seu lugar, no santuário mais interior do templo"
+   },
+   {
+    "text": "Os querubins cobriam a arca e seus varais por cima com as asas.",
+    "evidenceRef": "2 Crônicas 5:8",
+    "evidenceSpan": "cobrindo a arca e seus varais por cima"
+   },
+   {
+    "text": "Salomão se ajoelhou e estendeu as mãos para o céu diante da congregação.",
+    "evidenceRef": "2 Crônicas 6:13",
+    "evidenceSpan": "ajoelhou-se diante de toda a congregação de Israel e estendeu as mãos para o céu"
+   },
+   {
+    "text": "Deus cumpriu a palavra a Davi levantando Salomão no trono de Israel.",
+    "evidenceRef": "2 Crônicas 6:10",
+    "evidenceSpan": "me levantei no lugar de Davi, meu pai, e me assentei no trono de Israel, conforme o Senhor prometera"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "querubins",
+    "gloss": "Figuras com asas sobre a arca, marcando o lugar mais santo da casa."
+   },
+   {
+    "term": "congregação",
+    "gloss": "Todo o povo reunido, diante de quem Salomão abençoa e ora."
+   },
+   {
+    "term": "arca",
+    "gloss": "Caixa da aliança com as tábuas, posta no lugar mais santo da casa."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Obra concluída e tesouros guardados",
+    "evidenceRef": "2 Crônicas 5:1"
+   },
+   {
+    "label": "Arca levada ao Santo dos Santos",
+    "evidenceRef": "2 Crônicas 5:7"
+   },
+   {
+    "label": "Salomão abençoa a congregação",
+    "evidenceRef": "2 Crônicas 6:3"
+   },
+   {
+    "label": "Salomão ora de joelhos ao céu",
+    "evidenceRef": "2 Crônicas 6:13"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Concluída a obra, Salomão reúne os líderes para levar a arca ao templo.",
+    "marker": "Então",
+    "evidenceRef": "2 Crônicas 5:2"
+   },
+   {
+    "kind": "propósito",
+    "text": "Salomão convoca líderes para que levem a arca da Cidade de Davi ao templo.",
+    "marker": "para",
+    "evidenceRef": "2 Crônicas 5:2"
+   },
+   {
+    "kind": "resultado",
+    "text": "Conforme prometido, Salomão se levanta no lugar de Davi e edifica a casa.",
+    "marker": "conforme",
+    "evidenceRef": "2 Crônicas 6:10"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Êxodo 40:35",
+    "bridge": "Glória impede sacerdotes ficar"
+   },
+   {
+    "ref": "1 João 1:9",
+    "bridge": "Confessar e ser perdoado"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A arca era um amuleto que garantia vitória sem obediência.",
+    "why": "Na arca estão as tábuas da aliança feita quando Israel saiu do Egito (5:10)."
+   },
+   {
+    "text": "Salomão ora de pé como dono da casa e do povo.",
+    "why": "Ele se ajoelha diante de toda a congregação e estende as mãos ao céu (6:13)."
+   },
+   {
+    "text": "A promessa a Davi dependeu só da força de Salomão.",
+    "why": "Salomão diz que se levantou conforme o Senhor prometera (6:10)."
+   }
+  ],
+  "centralInsight": "Deus maior que o templo ouve quem o busca de coração",
+  "anchorQuestion": "O que a dedicação mostra sobre Deus, maior que a casa, que ouve o povo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em 2 Crônicas 5:10, na arca havia apenas as duas tábuas colocadas por Moisés junto a Horebe",
+   "verseRef": "2 Crônicas 5:10",
+   "options": [],
+   "correctOptionId": "true",
+   "evidenceSpan": "Na arca não havia nada além das duas tábuas que Moisés havia colocadas junto a Horebe",
+   "feedbackCorrect": "Dentro da arca, só as tábuas da aliança feita na saída do Egito.",
+   "feedbackWrong": {
+    "false": "Releia o que havia dentro da arca em 5:10."
+   },
+   "hint": "Veja o conteúdo citado da arca.",
+   "learningObjective": "Observar o conteúdo da arca no templo.",
+   "evidence": [
+    "2 Crônicas 5:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 5:6, toque o primeiro animal citado entre os sacrificados diante da arca",
+   "verseRef": "2 Crônicas 5:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "ovelhas"
+    },
+    {
+     "id": "b",
+     "text": "bois"
+    },
+    {
+     "id": "c",
+     "text": "assembleia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sacrificaram ovelhas e bois que eram tantos que não podiam ser contados",
+   "feedbackCorrect": "Ovelhas e bois são tantos que nem podem ser contados.",
+   "feedbackWrong": {
+    "b": "Bois vêm logo depois; o primeiro citado é outro.",
+    "c": "Assembleia é quem se reúne, não animal sacrificado."
+   },
+   "hint": "Leia a lista de sacrifícios do versículo.",
+   "learningObjective": "Identificar os sacrifícios diante da arca.",
+   "evidence": [
+    "2 Crônicas 5:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo 2 Crônicas 5:2, quem Salomão convocou em Jerusalém para levar a arca?",
+   "verseRef": "2 Crônicas 5:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Apenas os cantores levitas"
+    },
+    {
+     "id": "b",
+     "text": "Reis de nações vizinhas"
+    },
+    {
+     "id": "c",
+     "text": "Anciãos e cabeças das tribos"
+    },
+    {
+     "id": "d",
+     "text": "Somente os filhos de Davi"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos",
+   "feedbackCorrect": "Salomão reúne anciãos e cabeças das tribos para levar a arca.",
+   "feedbackWrong": {
+    "a": "Cantores têm papel no louvor, mas a convocação é mais ampla.",
+    "b": "Quem é convocado é liderança de Israel, não reis vizinhos.",
+    "d": "A convocação inclui anciãos e cabeças, não só família real."
+   },
+   "hint": "Leia quem é chamado no começo do capítulo.",
+   "learningObjective": "Observar a liderança reunida para a arca.",
+   "evidence": [
+    "2 Crônicas 5:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte 2 Crônicas 5:7 na ordem do texto",
+   "verseRef": "2 Crônicas 5:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então os sacerdotes colocaram a arca da Aliança do Senhor em seu lugar"
+    },
+    {
+     "id": "b",
+     "text": "no santuário mais interior do templo, no Santo dos Santos"
+    },
+    {
+     "id": "c",
+     "text": "debaixo das asas dos querubins"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "colocaram a arca da Aliança do Senhor em seu lugar",
+   "feedbackCorrect": "A arca chega ao seu lugar, o lugar mais interior, sob querubins.",
+   "feedbackWrong": {
+    "default": "Comece pelos sacerdotes colocando a arca; os querubins fecham."
+   },
+   "hint": "O destino final fica sob os querubins.",
+   "learningObjective": "Reconhecer a sequência de 2 Crônicas 5:7.",
+   "evidence": [
+    "2 Crônicas 5:7"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em 2 Crônicas 5:8, o que os querubins estendiam sobre o lugar da arca?",
+   "verseRef": "2 Crônicas 5:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "varais"
+    },
+    {
+     "id": "b",
+     "text": "asas"
+    },
+    {
+     "id": "c",
+     "text": "mãos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Os querubins estendiam suas asas sobre o lugar da arca",
+   "feedbackCorrect": "As asas dos querubins cobrem a arca e seus varais por cima.",
+   "feedbackWrong": {
+    "a": "Varais são cobertos pelas asas, não estendidos sobre arca.",
+    "c": "Quem estende são os querubins, e o texto cita suas asas."
+   },
+   "hint": "Veja o que cobre a arca por cima.",
+   "learningObjective": "Lembrar as asas sobre a arca.",
+   "evidence": [
+    "2 Crônicas 5:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que 2 Crônicas 5:3 comunica que se liga a este contexto?",
+   "verseRef": "2 Crônicas 5:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Povo reunido na festa"
+    },
+    {
+     "id": "b",
+     "text": "Povo disperso sem rei"
+    },
+    {
+     "id": "c",
+     "text": "Festa cancelada no templo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se reuniram diante do rei, na ocasião da festa que acontecia no sétimo mês",
+   "feedbackCorrect": "Todo o Israel se reúne diante do rei na festa do sétimo mês.",
+   "feedbackWrong": {
+    "b": "O texto mostra reunião ampla, não dispersão do povo.",
+    "c": "A festa acontece; é nela que o povo se reúne."
+   },
+   "hint": "Veja quando os homens de Israel se reuniram.",
+   "learningObjective": "Ligar a dedicação à reunião festiva do povo.",
+   "evidence": [
+    "2 Crônicas 5:3"
+   ],
+   "passageA": {
+    "ref": "2 Crônicas 5:3"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Todo o Israel se reúne na festa para a dedicação."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 5:12, toque o tecido das vestes dos cantores levitas",
+   "verseRef": "2 Crônicas 5:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "címbalos"
+    },
+    {
+     "id": "b",
+     "text": "linho fino"
+    },
+    {
+     "id": "c",
+     "text": "trombetas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "vestidos de linho fino, estavam de pé ao leste do altar",
+   "feedbackCorrect": "Os cantores vestem linho fino junto ao altar, com instrumentos.",
+   "feedbackWrong": {
+    "a": "Címbalos são instrumentos nas mãos, não vestes deles.",
+    "c": "Trombetas são dos sacerdotes, não a roupa dos cantores."
+   },
+   "hint": "Procure como os cantores estavam vestidos.",
+   "learningObjective": "Observar as vestes dos cantores na dedicação.",
+   "evidence": [
+    "2 Crônicas 5:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte 2 Crônicas 6:3 na ordem do texto",
+   "verseRef": "2 Crônicas 6:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então o rei virou o rosto"
+    },
+    {
+     "id": "b",
+     "text": "abençoou toda a congregação de Israel"
+    },
+    {
+     "id": "c",
+     "text": "que se mantinha em pé"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então o rei virou o rosto, abençoou toda a congregação de Israel",
+   "feedbackCorrect": "O rei se volta, abençoa a congregação que está em pé.",
+   "feedbackWrong": {
+    "default": "Comece pelo rei virando o rosto; o povo em pé fecha."
+   },
+   "hint": "O versículo começa pela ação do rei.",
+   "learningObjective": "Reconhecer a sequência de 2 Crônicas 6:3.",
+   "evidence": [
+    "2 Crônicas 6:3"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em 2 Crônicas 6:5, Deus diz que escolheu uma cidade do Egito para ali pôr o seu nome",
+   "verseRef": "2 Crônicas 6:5",
+   "options": [],
+   "correctOptionId": "false",
+   "evidenceSpan": "não escolhi cidade alguma de todas as tribos de Israel, para edificar nela uma casa a fim de ali estabelecer o meu nome",
+   "feedbackCorrect": "Deus não escolheu cidade alguma até escolher Jerusalém e Davi.",
+   "feedbackWrong": {
+    "true": "Releia o que Deus não escolheu em 6:5."
+   },
+   "hint": "Veja a negação no começo da fala.",
+   "learningObjective": "Compreender a escolha de Jerusalém na fala de Deus.",
+   "evidence": [
+    "2 Crônicas 6:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 6:8, toque a palavra que marca a virada entre elogio e limite ao desejo de Davi",
+   "verseRef": "2 Crônicas 6:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porém"
+    },
+    {
+     "id": "b",
+     "text": "coração"
+    },
+    {
+     "id": "c",
+     "text": "nome"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porém o Senhor disse a Davi, meu pai",
+   "feedbackCorrect": "Essa palavra vira do elogio ao desejo para o limite seguinte.",
+   "feedbackWrong": {
+    "b": "Coração é onde estava o propósito, não a virada.",
+    "c": "Nome é para quem seria a casa, não a virada."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de virada na fala do Senhor.",
+   "evidence": [
+    "2 Crônicas 6:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como 2 Crônicas 6:10 mostra o cumprimento da palavra de Deus a Davi?",
+   "verseRef": "2 Crônicas 6:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Davi volta viver e edifica casa"
+    },
+    {
+     "id": "b",
+     "text": "Salomão reina e edifica como prometido"
+    },
+    {
+     "id": "c",
+     "text": "O povo edifica sem rei no trono"
+    },
+    {
+     "id": "d",
+     "text": "A promessa é adiada para outro povo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "me levantei no lugar de Davi, meu pai, e me assentei no trono de Israel, conforme o Senhor prometera",
+   "feedbackCorrect": "Salomão está no trono e a casa está edificada, como prometido.",
+   "feedbackWrong": {
+    "a": "Quem se levanta no lugar de Davi é o filho dele.",
+    "c": "Há um rei assentado no trono, Salomão, filho de Davi.",
+    "d": "A promessa se cumpre em Israel, na casa edificada."
+   },
+   "hint": "Veja as palavras conforme e prometera.",
+   "learningObjective": "Relacionar promessa a Davi e reinado de Salomão.",
+   "evidence": [
+    "2 Crônicas 6:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a fala em 2 Crônicas 6:5–6?",
+   "verseRef": "2 Crônicas 6:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus não escolheu cidade nem líder"
+    },
+    {
+     "id": "b",
+     "text": "Deus escolhe Jerusalém para nome"
+    },
+    {
+     "id": "c",
+     "text": "Deus escolhe Davi como chefe"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Escolhi Jerusalém para que ali se estabelecesse o meu nome",
+   "feedbackCorrect": "Da não escolha à escolha de cidade e de chefe do povo.",
+   "feedbackWrong": {
+    "default": "Comece pelo que Deus não escolheu; Davi fecha a fala."
+   },
+   "hint": "A escolha de Davi é o fim da fala.",
+   "learningObjective": "Compreender as escolhas de Deus contadas por Salomão.",
+   "evidence": [
+    "2 Crônicas 6:5–6"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em 2 Crônicas 6:6, que cidade Deus escolheu para ali estabelecer o seu nome?",
+   "verseRef": "2 Crônicas 6:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Belém"
+    },
+    {
+     "id": "c",
+     "text": "Hebrom"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Escolhi Jerusalém para que ali se estabelecesse o meu nome",
+   "feedbackCorrect": "Jerusalém é a cidade escolhida para o nome do Senhor.",
+   "feedbackWrong": {
+    "b": "Belém é cidade de Davi, mas a escolhida aqui é outra.",
+    "c": "Hebrom foi início do reino, não a cidade citada aqui."
+   },
+   "hint": "Leia a primeira escolha citada no versículo.",
+   "learningObjective": "Compreender Jerusalém como cidade escolhida por Deus.",
+   "evidence": [
+    "2 Crônicas 6:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga 2 Crônicas 5:14 a Êxodo 40:35?",
+   "verseRef": "2 Crônicas 5:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sacerdotes entram sem nuvem"
+    },
+    {
+     "id": "b",
+     "text": "Glória some da morada"
+    },
+    {
+     "id": "c",
+     "text": "Glória enche e impede ficar"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+   "feedbackCorrect": "Como no tabernáculo, a glória enche e nem sacerdotes ficam.",
+   "feedbackWrong": {
+    "a": "Nos dois, a nuvem da glória impede permanecer ministrando.",
+    "b": "Nos dois textos a glória enche a morada de Deus."
+   },
+   "hint": "Compare o efeito da nuvem nos sacerdotes.",
+   "learningObjective": "Relacionar glória no templo e no tabernáculo.",
+   "evidence": [
+    "2 Crônicas 5:14",
+    "Êxodo 40:35"
+   ],
+   "passageA": {
+    "ref": "2 Crônicas 5:14"
+   },
+   "passageB": {
+    "ref": "Êxodo 40:35"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 6:13, toque o gesto de Salomão antes de estender as mãos para o céu",
+   "verseRef": "2 Crônicas 6:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "tribuna"
+    },
+    {
+     "id": "b",
+     "text": "bronze"
+    },
+    {
+     "id": "c",
+     "text": "ajoelhou-se"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "ajoelhou-se diante de toda a congregação de Israel e estendeu as mãos para o céu",
+   "feedbackCorrect": "Salomão se ajoelha diante de todos e levanta as mãos ao céu.",
+   "feedbackWrong": {
+    "a": "Tribuna é onde ele fica, não gesto de oração.",
+    "b": "Bronze é material da tribuna, não gesto do rei."
+   },
+   "hint": "Procure o que o rei faz com o corpo.",
+   "learningObjective": "Reconhecer a postura humilde de Salomão ao orar.",
+   "evidence": [
+    "2 Crônicas 6:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os gestos em 2 Crônicas 6:12?",
+   "verseRef": "2 Crônicas 6:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Salomão fica diante do altar Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Ele está na presença da congregação"
+    },
+    {
+     "id": "c",
+     "text": "Ele estende as mãos em oração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "E pôs-se diante do altar do Senhor, na presença de toda a congregação de Israel, e estendeu as mãos",
+   "feedbackCorrect": "Diante do altar, diante do povo, Salomão estende as mãos.",
+   "feedbackWrong": {
+    "default": "Comece por Salomão diante do altar; as mãos fecham."
+   },
+   "hint": "As mãos estendidas fecham o versículo.",
+   "learningObjective": "Compreender a cena da oração pública de Salomão.",
+   "evidence": [
+    "2 Crônicas 6:12"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em 2 Crônicas 6:14, Salomão afirma que não há Deus como o Senhor nos céus nem na terra",
+   "verseRef": "2 Crônicas 6:14",
+   "options": [],
+   "correctOptionId": "true",
+   "evidenceSpan": "não há Deus como Tu, nem nos céus nem na terra",
+   "feedbackCorrect": "Salomão começa a oração confessando que Deus é incomparável.",
+   "feedbackWrong": {
+    "false": "Releia a confissão que abre a oração em 6:14."
+   },
+   "hint": "Veja como Salomão descreve Deus.",
+   "learningObjective": "Interpretar a incomparabilidade de Deus na oração.",
+   "evidence": [
+    "2 Crônicas 6:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 6:20, toque o que Salomão pede que fique aberto dia e noite sobre o templo",
+   "verseRef": "2 Crônicas 6:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "olhos"
+    },
+    {
+     "id": "b",
+     "text": "noite"
+    },
+    {
+     "id": "c",
+     "text": "lugar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Que os teus olhos estejam abertos dia e noite sobre este lugar",
+   "feedbackCorrect": "Salomão pede olhos de Deus abertos sobre aquele lugar de oração.",
+   "feedbackWrong": {
+    "b": "Noite é quando, junto do dia; o pedido é pelos olhos.",
+    "c": "Lugar é sobre onde o olhar fica, não o que abre."
+   },
+   "hint": "Procure o sujeito do pedido de Salomão.",
+   "learningObjective": "Sustentar com o texto o olhar atento de Deus.",
+   "evidence": [
+    "2 Crônicas 6:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura 2 Crônicas 6:19–20 sustenta sobre orar naquele templo?",
+   "verseRef": "2 Crônicas 6:19–20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ouve só orações de reis"
+    },
+    {
+     "id": "b",
+     "text": "Orar ali dispensa coração inteiro"
+    },
+    {
+     "id": "c",
+     "text": "O lugar sagrado substitui Deus céu"
+    },
+    {
+     "id": "d",
+     "text": "Deus atenta para oração servo"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "Atenta, pois, para a oração do teu servo e para a sua súplica, ó SENHOR, meu Deus",
+   "feedbackCorrect": "Salomão pede que Deus atente e ouça o clamor feito ali.",
+   "feedbackWrong": {
+    "a": "O pedido inclui servo e povo de Israel orando ali.",
+    "b": "A aliança pede andar diante de Deus com todo coração.",
+    "c": "Deus ouve do céu; o lugar aponta para ele, não o troca."
+   },
+   "hint": "Veja o pedido que Salomão faz a Deus.",
+   "learningObjective": "Escolher a interpretação que a oração sustenta.",
+   "evidence": [
+    "2 Crônicas 6:19–20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido da dedicação em 2 Crônicas 5:14?",
+   "verseRef": "2 Crônicas 5:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sacerdotes saem do santuário santificados"
+    },
+    {
+     "id": "b",
+     "text": "Louvor sobe com uma só voz"
+    },
+    {
+     "id": "c",
+     "text": "Glória enche casa por completo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a glória do SENHOR encheu a casa de Deus",
+   "feedbackCorrect": "Santificação e louvor encontram a glória que enche tudo.",
+   "feedbackWrong": {
+    "default": "Comece pela saída santificada; a glória fecha a cena."
+   },
+   "hint": "A glória enchendo a casa é o desfecho.",
+   "learningObjective": "Ver a glória como desfecho santo da dedicação.",
+   "evidence": [
+    "2 Crônicas 5:14"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em 2 Crônicas 6:15, por onde Deus disse a promessa que depois realizou com a mão?",
+   "verseRef": "2 Crônicas 6:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "sonho"
+    },
+    {
+     "id": "b",
+     "text": "boca"
+    },
+    {
+     "id": "c",
+     "text": "carta"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "pois pela Tua boca o disseste e pela Tua mão o realizaste",
+   "feedbackCorrect": "Deus falou pela boca e realizou pela mão, fiel à promessa.",
+   "feedbackWrong": {
+    "a": "O texto fala de boca e mão de Deus, não de sonho.",
+    "c": "Nenhuma carta é citada; Deus falou e realizou."
+   },
+   "hint": "Veja como Deus falou e realizou.",
+   "learningObjective": "Lembrar o termo que marca a palavra fiel de Deus.",
+   "evidence": [
+    "2 Crônicas 6:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga 2 Crônicas 6:21 a 1 João 1:9?",
+   "verseRef": "2 Crônicas 6:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confessar e ser perdoado fiel"
+    },
+    {
+     "id": "b",
+     "text": "Esconder pecado e ser ouvido"
+    },
+    {
+     "id": "c",
+     "text": "Perdão sem confessar nada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ouça e perdoe",
+   "feedbackCorrect": "Salomão pede perdão a quem ora; João promete perdão a quem confessa.",
+   "feedbackWrong": {
+    "b": "Confessar é o contrário de esconder o pecado.",
+    "c": "Nos dois, perdão está ligado a reconhecer diante Deus."
+   },
+   "hint": "Compare confissão e perdão nos dois textos.",
+   "learningObjective": "Ligar oração do templo à promessa de perdão.",
+   "evidence": [
+    "2 Crônicas 6:21",
+    "1 João 1:9"
+   ],
+   "passageA": {
+    "ref": "2 Crônicas 6:21"
+   },
+   "passageB": {
+    "ref": "1 João 1:9"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em 2 Crônicas 6:21, toque a última ação que Salomão pede a Deus pelo povo que ora",
+   "verseRef": "2 Crônicas 6:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "súplicas"
+    },
+    {
+     "id": "b",
+     "text": "povo"
+    },
+    {
+     "id": "c",
+     "text": "perdoe"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "ouça e perdoe",
+   "feedbackCorrect": "O pedido termina em perdão, ouça dos céus e perdoe.",
+   "feedbackWrong": {
+    "a": "Súplicas são o que o povo faz, não ação final Deus.",
+    "b": "Povo é quem ora; a ação pedida a Deus vem depois."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Sustentar com o texto o perdão pedido a Deus.",
+   "evidence": [
+    "2 Crônicas 6:21"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o cuidado fiel de Deus em 2 Crônicas 6:10?",
+   "verseRef": "2 Crônicas 6:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus cumpre palavra que falou"
+    },
+    {
+     "id": "b",
+     "text": "Salomão assenta no trono Israel"
+    },
+    {
+     "id": "c",
+     "text": "Salomão edifica casa ao nome"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Assim, o Senhor cumpriu a Sua palavra que havia dito",
+   "feedbackCorrect": "Palavra cumprida, filho no trono e casa edificada ao nome.",
+   "feedbackWrong": {
+    "default": "Comece pela palavra cumprida; a casa fecha o verso."
+   },
+   "hint": "A casa edificada é o fim do versículo.",
+   "learningObjective": "Ver promessa, trono e templo como fio fiel.",
+   "evidence": [
+    "2 Crônicas 6:10"
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

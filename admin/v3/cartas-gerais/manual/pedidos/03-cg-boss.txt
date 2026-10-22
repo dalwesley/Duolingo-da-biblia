@@ -1,0 +1,109 @@
+Escreva a cena "cg-boss" da trilha "cartas-gerais" (Cartas Gerais).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "cartas-gerais",
+  "title": "Cartas Gerais",
+  "description": "Panorama de Hebreus a Judas — perseverança e fé viva.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cartas Gerais",
+ "mission": {
+  "slug": "cg-boss",
+  "title": "Revisao: Cartas Gerais",
+  "type": "boss",
+  "intro": "Revise a identidade do povo de Deus e a fe que se torna visivel em uma vida santa.",
+  "hookRef": "Revisao: Cartas Gerais",
+  "hookNote": "Revise a identidade do povo de Deus e a fe que se torna visivel em uma vida santa.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Guarde os temas principais"
+ },
+ "v2": {
+  "passageRef": "Revisao: Cartas Gerais",
+  "context": "Revise a identidade do povo de Deus e a fe que se torna visivel em uma vida santa.",
+  "keyword": "Revisao",
+  "verseRefs": [
+   "1 Pedro 2:9; Tiago 1:22"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "cg-01",
+   "title": "Uma fe que se espalha",
+   "centralInsight": "As cartas gerais receberam esse nome por nao serem dirigidas somente a uma cidade especifica. Hebreus, Tiago, 1 e 2 Pedro, 1, 2 e 3 Joao e…",
+   "ref": "1 Pedro 2:6–12"
+  },
+  {
+   "slug": "cg-02",
+   "title": "Fe que aparece na vida",
+   "centralInsight": "Tiago resume um tema recorrente nas cartas gerais: a verdade recebida transforma atitudes, palavras, relacionamentos e esperanca.",
+   "ref": "Tiago 1:19–25"
+  }
+ ],
+ "ranges": [
+  "1 Pedro 2:6–12",
+  "Tiago 1:19–25"
+ ],
+ "verses": [
+  {
+   "ref": "1 Pedro 2:6",
+   "text": "Por isso, está escrito na Escritura: Eis que ponho em Sião a pedra angular, eleita e preciosa; e quem nela crer não será, de modo algum, decepcionado."
+  },
+  {
+   "ref": "1 Pedro 2:7",
+   "text": "Para vocês, que creem, é preciosa; mas, para os desobedientes, a pedra que os construtores rejeitaram, essa se tornou a principal pedra angular."
+  },
+  {
+   "ref": "1 Pedro 2:8",
+   "text": "E uma pedra de tropeço e rocha de ofensa. Esses são aqueles que tropeçam na palavra, sendo desobedientes, para os quais também foram postos."
+  },
+  {
+   "ref": "1 Pedro 2:9",
+   "text": "Mas vocês são a linhagem eleita, o sacerdócio real, a nação santa, o povo de propriedade exclusiva de Deus, para que proclamem as virtudes daquele que os chamou das trevas para a sua maravilhosa luz;"
+  },
+  {
+   "ref": "1 Pedro 2:10",
+   "text": "Vocês, que antes não eram um povo, mas agora são o povo de Deus; que não haviam alcançado misericórdia, mas agora alcançaram misericórdia."
+  },
+  {
+   "ref": "1 Pedro 2:11",
+   "text": "Amados, exorto-vos, como peregrinos e forasteiros que sois, a abster-vos das paixões carnais, que fazem guerra contra a alma;"
+  },
+  {
+   "ref": "1 Pedro 2:12",
+   "text": "Mantenham um comportamento exemplar entre os gentios, para que, naquilo que falam contra vocês como se fossem malfeitores, glorifiquem a Deus no dia da visitação, observando as boas obras que realizarem."
+  },
+  {
+   "ref": "Tiago 1:19",
+   "text": "Meus amados irmãos, saibam estas coisas: cada um esteja pronto para ouvir, tardio para falar e tardio para se irar."
+  },
+  {
+   "ref": "Tiago 1:20",
+   "text": "Porque a ira do homem não gera a justiça que vem de Deus."
+  },
+  {
+   "ref": "Tiago 1:21",
+   "text": "Portanto, despojados de toda impureza e do acúmulo de malícia, acolham, com mansidão, a palavra que foi implantada em vocês, a qual é poderosa para salvar suas almas."
+  },
+  {
+   "ref": "Tiago 1:22",
+   "text": "Sejam praticantes da palavra e não somente ouvintes, enganando-se a si mesmos."
+  },
+  {
+   "ref": "Tiago 1:23",
+   "text": "Porque, se alguém é ouvinte da palavra e não praticante, assemelha-se ao homem que contempla num espelho o seu rosto natural;"
+  },
+  {
+   "ref": "Tiago 1:24",
+   "text": "Porque ele contempla a si mesmo, se afasta e logo se esquece de como era a sua aparência."
+  },
+  {
+   "ref": "Tiago 1:25",
+   "text": "Mas aquele que observa atentamente a lei perfeita, a lei da liberdade, e nela persevera, não sendo ouvinte negligente, mas praticante ativo, este será bem-aventurado no que realizar."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,917 @@
+{
+ "study": {
+  "passageRef": "Atos 9:12–19",
+  "passages": [
+   {
+    "ref": "Atos 9:12–19"
+   },
+   {
+    "ref": "Atos 10:31–38"
+   },
+   {
+    "ref": "Atos 13:1–6"
+   },
+   {
+    "ref": "Atos 28:27–31"
+   }
+  ],
+  "context": "Este desafio revisa o avanço do evangelho de Damasco a Roma, passando pela porta aos gentios e pelo envio de Antioquia, até o testemunho sem impedimento.",
+  "keyword": "Até os confins",
+  "keywordGloss": "O caminho do testemunho que sai de Jerusalém e alcança Roma.",
+  "focusQuestion": "Como Deus abriu caminho do perseguidor Saulo até o testemunho em Roma?",
+  "reflectionPrompts": [
+   "Graça alcança inimigos",
+   "Porta aberta aos gentios",
+   "Palavra sem impedimento"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor chamou Saulo de instrumento escolhido para levar seu nome.",
+    "evidenceRef": "Atos 9:15",
+    "evidenceSpan": "este é um instrumento escolhido para levar o meu nome"
+   },
+   {
+    "text": "Pedro reconheceu que Deus não faz acepção de pessoas.",
+    "evidenceRef": "Atos 10:34",
+    "evidenceSpan": "Deus não faz acepção de pessoas"
+   },
+   {
+    "text": "O Espírito mandou separar Barnabé e Saulo para a obra.",
+    "evidenceRef": "Atos 13:2",
+    "evidenceSpan": "Separem-me, agora, Barnabé e Saulo"
+   },
+   {
+    "text": "Paulo permaneceu dois anos inteiros em casa alugada em Roma.",
+    "evidenceRef": "Atos 28:30",
+    "evidenceSpan": "Paulo permaneceu dois anos inteiros em sua própria casa"
+   },
+   {
+    "text": "Ele pregava o Reino de Deus com toda a ousadia em Roma.",
+    "evidenceRef": "Atos 28:31",
+    "evidenceSpan": "Pregando o Reino de Deus e, com toda a ousadia"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "instrumento escolhido",
+    "gloss": "Saulo separado para levar o nome a gentios, reis e Israel."
+   },
+   {
+    "term": "acepção de pessoas",
+    "gloss": "Favoritismo que Pedro reconhece não existir em Deus."
+   },
+   {
+    "term": "impedimento",
+    "gloss": "Barreira que não para o ensino de Paulo em Roma."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O perseguidor é escolhido em Damasco",
+    "evidenceRef": "Atos 9:12–19"
+   },
+   {
+    "label": "A porta se abre aos gentios",
+    "evidenceRef": "Atos 10:31–38"
+   },
+   {
+    "label": "Antioquia ouve o Espírito e envia",
+    "evidenceRef": "Atos 13:1–6"
+   },
+   {
+    "label": "O Reino é pregado em Roma",
+    "evidenceRef": "Atos 28:27–31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Ananias teme o perseguidor, porém o Senhor o chama de instrumento escolhido.",
+    "marker": "porém",
+    "evidenceRef": "Atos 9:15"
+   },
+   {
+    "kind": "contraste",
+    "text": "Deus não faz acepção, mas aceita quem o teme em qualquer nação.",
+    "marker": "Mas",
+    "evidenceRef": "Atos 10:35"
+   },
+   {
+    "kind": "resultado",
+    "text": "Após a rejeição de alguns, Paulo anuncia a salvação aos gentios.",
+    "marker": "portanto",
+    "evidenceRef": "Atos 28:28"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Atos 1:8",
+    "bridge": "Testemunho até os confins"
+   },
+   {
+    "ref": "Isaías 49:6",
+    "bridge": "Luz para os gentios"
+   },
+   {
+    "ref": "2 Timóteo 2:9",
+    "bridge": "A palavra não está acorrentada"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Saulo foi escolhido por merecer a missão com seu passado.",
+    "why": "Ele vinha prender discípulos quando o Senhor o chama (9:14–15)."
+   },
+   {
+    "text": "Deus aceita só um povo e fecha a porta aos outros.",
+    "why": "Pedro reconhece Deus sem acepção em qualquer nação (10:34–35)."
+   },
+   {
+    "text": "Paulo preso em Roma marca o fracasso final da missão.",
+    "why": "Ele prega o Reino sem impedimento por dois anos (28:30–31)."
+   }
+  ],
+  "centralInsight": "O evangelho avança até os confins da terra",
+  "anchorQuestion": "Que fio liga Atos 9:15 ao testemunho de Paulo em Atos 28:31?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Atos 10:34, Pedro reconhece que Deus não faz acepção de pessoas.",
+   "verseRef": "Atos 10:34",
+   "correctOptionId": "true",
+   "evidenceSpan": "Deus não faz acepção de pessoas",
+   "feedbackCorrect": "Pedro declara isso na casa de Cornélio, um gentio.",
+   "feedbackWrong": {
+    "false": "Releia a abertura da fala de Pedro em Cesareia."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar o reconhecimento de Pedro.",
+   "evidence": [
+    "Atos 10:34"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 9:15, toque a quem Saulo levaria o nome na primeira posição.",
+   "verseRef": "Atos 9:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "gentios"
+    },
+    {
+     "id": "b",
+     "text": "meu nome"
+    },
+    {
+     "id": "c",
+     "text": "reis"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "levar o meu nome diante dos gentios",
+   "feedbackCorrect": "Os gentios abrem a lista do chamado de Saulo.",
+   "feedbackWrong": {
+    "b": "Nome é o que ele levaria às pessoas.",
+    "c": "Reis vêm depois dos gentios na lista."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar os destinatários de Saulo.",
+   "evidence": [
+    "Atos 9:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Atos 13:2, quem o Espírito mandou separar para a obra?",
+   "verseRef": "Atos 13:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Só Saulo, sem Barnabé"
+    },
+    {
+     "id": "b",
+     "text": "Barnabé e Saulo juntos"
+    },
+    {
+     "id": "c",
+     "text": "João e Barnabé apenas"
+    },
+    {
+     "id": "d",
+     "text": "Pedro e João reunidos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Separem-me, agora, Barnabé e Saulo",
+   "feedbackCorrect": "O Espírito separa Barnabé e Saulo juntos.",
+   "feedbackWrong": {
+    "a": "Barnabé é nomeado junto com Saulo pelo Espírito.",
+    "c": "João acompanha como colaborador depois, em 13:5.",
+    "d": "Pedro e João não são os separados em Antioquia."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar o envio de Antioquia.",
+   "evidence": [
+    "Atos 13:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 28:30 na ordem do texto.",
+   "verseRef": "Atos 28:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "E Paulo permaneceu dois anos inteiros"
+    },
+    {
+     "id": "b",
+     "text": "em sua própria casa, que havia alugado"
+    },
+    {
+     "id": "c",
+     "text": "e recebia todos os que o procuravam"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E Paulo permaneceu dois anos inteiros",
+   "feedbackCorrect": "Dois anos em Roma, recebendo todos que o procuravam.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Revisar Paulo em Roma.",
+   "evidence": [
+    "Atos 28:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Atos 9:18, o que caiu dos olhos de Saulo antes de ele ver?",
+   "verseRef": "Atos 9:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "escamas"
+    },
+    {
+     "id": "b",
+     "text": "olhos"
+    },
+    {
+     "id": "c",
+     "text": "mãos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como que umas escamas caíram dos seus olhos",
+   "feedbackCorrect": "Como escamas caíram, e ele passou a ver.",
+   "feedbackWrong": {
+    "b": "Olhos são de onde as escamas caem.",
+    "c": "Mãos foram impostas por Ananias antes disso."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar a cura de Saulo.",
+   "evidence": [
+    "Atos 9:18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Atos 28:31 comunica que se liga a este contexto?",
+   "verseRef": "Atos 28:31",
+   "passageA": {
+    "ref": "Atos 28:31"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Paulo estava sob custódia em Roma por dois anos."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra sem nenhum impedimento"
+    },
+    {
+     "id": "b",
+     "text": "Anúncio totalmente encerrado"
+    },
+    {
+     "id": "c",
+     "text": "Ensino só após liberdade total"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sem nenhum impedimento",
+   "feedbackCorrect": "Mesmo sob custódia, ele ensinava sem impedimento.",
+   "feedbackWrong": {
+    "b": "Ele recebe todos e prega o Reino ali.",
+    "c": "O ensino acontece durante a custódia em Roma."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Ligar o fim de Atos à palavra livre.",
+   "evidence": [
+    "Atos 28:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 13:4, toque o destino para onde navegaram de Selêucia.",
+   "verseRef": "Atos 13:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Chipre"
+    },
+    {
+     "id": "b",
+     "text": "Selêucia"
+    },
+    {
+     "id": "c",
+     "text": "Espírito Santo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "dali navegaram para Chipre",
+   "feedbackCorrect": "De Selêucia navegaram para Chipre no envio.",
+   "feedbackWrong": {
+    "b": "Selêucia é o porto de onde partiram.",
+    "c": "O Espírito os enviou; o destino é uma ilha."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Revisar a primeira viagem.",
+   "evidence": [
+    "Atos 13:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 10:34 na ordem do texto.",
+   "verseRef": "Atos 10:34",
+   "options": [
+    {
+     "id": "a",
+     "text": "E Pedro, tomando a palavra, declarou"
+    },
+    {
+     "id": "b",
+     "text": "Na verdade, reconheço"
+    },
+    {
+     "id": "c",
+     "text": "que Deus não faz acepção de pessoas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E Pedro, tomando a palavra, declarou",
+   "feedbackCorrect": "Pedro fala, reconhece e declara Deus sem acepção.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Revisar a fala de Pedro.",
+   "evidence": [
+    "Atos 10:34"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Atos 9:13-15, o Senhor nega que Saulo tenha feito males aos santos.",
+   "verseRef": "Atos 9:13–14",
+   "correctOptionId": "false",
+   "evidenceSpan": "quantos males ele tem feito aos teus santos em Jerusalém",
+   "feedbackCorrect": "Ananias cita os males, e o Senhor revela a escolha sem negá-los.",
+   "feedbackWrong": {
+    "true": "Os males são citados por Ananias e não negados pelo Senhor."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar o passado de Saulo.",
+   "evidence": [
+    "Atos 9:13–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 10:35, toque a palavra inicial que marca contraste.",
+   "verseRef": "Atos 10:35",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mas"
+    },
+    {
+     "id": "b",
+     "text": "nação"
+    },
+    {
+     "id": "c",
+     "text": "teme"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mas, em qualquer nação, Deus aceita",
+   "feedbackCorrect": "A palavra inicial contrasta com qualquer acepção.",
+   "feedbackWrong": {
+    "b": "Nação mostra alcance, não marca o contraste.",
+    "c": "Temer descreve quem Deus aceita."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Revisar o contraste de Pedro.",
+   "evidence": [
+    "Atos 10:35"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Atos 13:4 se relaciona com a fala do Espírito em 13:2?",
+   "verseRef": "Atos 13:3–4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem separou os dois é quem os envia"
+    },
+    {
+     "id": "b",
+     "text": "A igreja cancela o envio anterior"
+    },
+    {
+     "id": "c",
+     "text": "Só Barnabé continua a viagem"
+    },
+    {
+     "id": "d",
+     "text": "O destino final passa a ser Jerusalém"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "enviados pelo Espírito Santo, desceram a Selêucia",
+   "feedbackCorrect": "O Espírito que separa em Antioquia envia na viagem.",
+   "feedbackWrong": {
+    "b": "Eles partem e proclamam a palavra em Chipre.",
+    "c": "Os dois viajam juntos desde a despedida.",
+    "d": "Eles navegam para Chipre, não para Jerusalém."
+   },
+   "hint": "Compare o começo e o fim do trecho.",
+   "learningObjective": "Relacionar separação e envio.",
+   "evidence": [
+    "Atos 13:2–4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o evangelho de Atos 9 a Atos 13?",
+   "verseRef": "Atos 9:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Saulo é escolhido para as nações"
+    },
+    {
+     "id": "b",
+     "text": "Pedro reconhece Deus sem acepção"
+    },
+    {
+     "id": "c",
+     "text": "Antioquia envia Barnabé e Saulo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "este é um instrumento escolhido para levar o meu nome",
+   "feedbackCorrect": "Escolha, porta aos gentios e envio missionário.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Compreender o avanço até Antioquia.",
+   "evidence": [
+    "Atos 9:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Atos 28:31, com que atitude Paulo ensinava em Roma?",
+   "verseRef": "Atos 28:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "ousadia"
+    },
+    {
+     "id": "b",
+     "text": "Reino"
+    },
+    {
+     "id": "c",
+     "text": "impedimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com toda a ousadia, ensinava as coisas",
+   "feedbackCorrect": "Ele ensinava com toda a ousadia sob custódia.",
+   "feedbackWrong": {
+    "b": "Reino é o conteúdo da pregação dele.",
+    "c": "Impedimento é negado ao fim do livro."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar a atitude de Paulo.",
+   "evidence": [
+    "Atos 28:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Atos 28:31 a 2 Timóteo 2:9?",
+   "verseRef": "Atos 28:31",
+   "passageA": {
+    "ref": "Atos 28:31"
+   },
+   "passageB": {
+    "ref": "2 Timóteo 2:9"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A palavra não está acorrentada"
+    },
+    {
+     "id": "b",
+     "text": "O apóstolo nunca fica preso"
+    },
+    {
+     "id": "c",
+     "text": "Anúncio só em tempos fáceis"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sem nenhum impedimento",
+   "feedbackCorrect": "Paulo preso, mas a palavra segue livre em Roma.",
+   "feedbackWrong": {
+    "b": "Paulo está sob custódia enquanto ensina.",
+    "c": "Ele ensina justamente numa situação difícil."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Relacionar palavra livre e prisão.",
+   "evidence": [
+    "Atos 28:31",
+    "2 Timóteo 2:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 9:15, toque a palavra que vira o receio de Ananias.",
+   "verseRef": "Atos 9:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "porém"
+    },
+    {
+     "id": "b",
+     "text": "gentios"
+    },
+    {
+     "id": "c",
+     "text": "Israel"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Disse-lhe, porém, o Senhor: Vai",
+   "feedbackCorrect": "A palavra vira o medo para a escolha revelada.",
+   "feedbackWrong": {
+    "b": "Gentios são destino, não a virada da fala.",
+    "c": "Israel fecha a lista de destinatários."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Revisar o contraste sobre Saulo.",
+   "evidence": [
+    "Atos 9:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos em Atos 28:28-31?",
+   "verseRef": "Atos 28:28–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "A salvação é anunciada aos gentios"
+    },
+    {
+     "id": "b",
+     "text": "Paulo permanece dois anos em Roma"
+    },
+    {
+     "id": "c",
+     "text": "O Reino é pregado sem impedimento"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a salvação de Deus foi enviada aos gentios",
+   "feedbackCorrect": "Anúncio, permanência e Reino pregado em Roma.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar o fim do livro.",
+   "evidence": [
+    "Atos 28:28–31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Atos 9:15-16 garante que Saulo, por ser escolhido, nunca sofreria pelo nome do Senhor.",
+   "verseRef": "Atos 9:15–16",
+   "correctOptionId": "false",
+   "evidenceSpan": "quanto é necessário que ele sofra por causa do meu nome",
+   "feedbackCorrect": "Escolha e sofrimento caminham juntos no chamado dele.",
+   "feedbackWrong": {
+    "true": "O Senhor anuncia quanto ele sofreria pelo seu nome."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Interpretar escolha e sofrimento.",
+   "evidence": [
+    "Atos 9:15–16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 10:38, toque o que Jesus fazia ao andar por toda parte.",
+   "verseRef": "Atos 10:38",
+   "options": [
+    {
+     "id": "a",
+     "text": "fazendo o bem"
+    },
+    {
+     "id": "b",
+     "text": "Espírito Santo"
+    },
+    {
+     "id": "c",
+     "text": "oprimidos pelo diabo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ele andou por toda parte, fazendo o bem",
+   "feedbackCorrect": "Ungido, Jesus andou fazendo o bem aos oprimidos.",
+   "feedbackWrong": {
+    "b": "Isso é a unção que ele recebeu de Deus.",
+    "c": "Oprimidos são curados por ele, não sua ação."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar a ação de Jesus.",
+   "evidence": [
+    "Atos 10:38"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o conjunto Atos 9-28 sustenta sobre o avanço do evangelho?",
+   "verseRef": "Atos 9:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele fica preso ao povo de origem"
+    },
+    {
+     "id": "b",
+     "text": "Ele alcança gentios e chega a Roma"
+    },
+    {
+     "id": "c",
+     "text": "Ele depende só de circunstâncias fáceis"
+    },
+    {
+     "id": "d",
+     "text": "Ele termina quando Paulo é preso"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "levar o meu nome diante dos gentios",
+   "feedbackCorrect": "De Saulo escolhido a Roma, o evangelho alcança nações.",
+   "feedbackWrong": {
+    "a": "Gentios, reis e Israel estão no chamado inicial.",
+    "c": "Jejum, rejeição e prisão acompanham o avanço.",
+    "d": "Preso, Paulo ainda prega sem impedimento."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Interpretar o avanço até os confins.",
+   "evidence": [
+    "Atos 9:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Atos 9 até 28?",
+   "verseRef": "Atos 9:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "O perseguidor é feito instrumento"
+    },
+    {
+     "id": "b",
+     "text": "A porta se abre aos gentios"
+    },
+    {
+     "id": "c",
+     "text": "O Reino é pregado em Roma"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "este é um instrumento escolhido para levar o meu nome",
+   "feedbackCorrect": "Instrumento escolhido, gentios alcançados e Roma ouvindo.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Ver o fio de Damasco a Roma.",
+   "evidence": [
+    "Atos 9:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Atos 10:34, que palavra nomeia o favoritismo que Deus não faz?",
+   "verseRef": "Atos 10:34",
+   "options": [
+    {
+     "id": "a",
+     "text": "acepção"
+    },
+    {
+     "id": "b",
+     "text": "pessoas"
+    },
+    {
+     "id": "c",
+     "text": "verdade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus não faz acepção de pessoas",
+   "feedbackCorrect": "O termo resume o reconhecimento de Pedro em Cesareia.",
+   "feedbackWrong": {
+    "b": "Pessoas completa a expressão sobre favoritismo.",
+    "c": "Verdade introduz a declaração de Pedro."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar o termo sem acepção.",
+   "evidence": [
+    "Atos 10:34"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Atos 9:15 a Isaías 49:6?",
+   "verseRef": "Atos 9:15",
+   "passageA": {
+    "ref": "Atos 9:15"
+   },
+   "passageB": {
+    "ref": "Isaías 49:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Luz para os gentios"
+    },
+    {
+     "id": "b",
+     "text": "Nome restrito a um povo"
+    },
+    {
+     "id": "c",
+     "text": "Missão sem alcançar nações"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "levar o meu nome diante dos gentios",
+   "feedbackCorrect": "O servo e Saulo levam a luz às nações gentias.",
+   "feedbackWrong": {
+    "b": "Isaías amplia a salvação até os confins.",
+    "c": "Reis e gentios estão no chamado de Saulo."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Ligar Saulo à luz para gentios.",
+   "evidence": [
+    "Atos 9:15",
+    "Isaías 49:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 28:28, toque o que os gentios fariam ao receber a salvação.",
+   "verseRef": "Atos 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "salvação de Deus"
+    },
+    {
+     "id": "b",
+     "text": "gentios"
+    },
+    {
+     "id": "c",
+     "text": "ouvirão"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "a salvação de Deus foi enviada aos gentios",
+   "feedbackCorrect": "Paulo afirma que os gentios ouvirão a salvação enviada.",
+   "feedbackWrong": {
+    "a": "Isso é o que foi enviado, não a ação deles.",
+    "b": "Eles são os destinatários; a ação vem no fim."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Revisar o alcance final.",
+   "evidence": [
+    "Atos 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho até os confins da terra?",
+   "verseRef": "Atos 28:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Testemunhas começam em Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Saulo leva o nome aos gentios"
+    },
+    {
+     "id": "c",
+     "text": "Paulo prega o Reino em Roma"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Pregando o Reino de Deus",
+   "feedbackCorrect": "De Jerusalém, pelas nações, até Roma sem impedimento.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Ver o mapa cumprido até Roma.",
+   "evidence": [
+    "Atos 28:31",
+    "Atos 9:15"
+   ]
+  }
+ ]
+}

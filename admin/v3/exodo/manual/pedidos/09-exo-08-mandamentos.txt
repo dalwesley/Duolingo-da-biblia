@@ -1,0 +1,63 @@
+Escreva a cena "exo-08-mandamentos" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "No deserto",
+ "mission": {
+  "slug": "exo-08-mandamentos",
+  "title": "Os Dez Mandamentos",
+  "type": "lesson",
+  "intro": "No Sinai, Deus fala. Os mandamentos não são peso vazio — são o caminho da aliança.",
+  "hookRef": "Êxodo 20:2-3",
+  "hookNote": "Antes do “não terás”, vem o “eu te tirei”. A lei caminha sobre a libertação.",
+  "centralInsight": "Graça antes da regra",
+  "objective": "Quais “outros deuses” competem com o Senhor na sua rotina?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 20:2-3",
+  "context": "Antes do “não terás”, vem o “eu te tirei”. A lei caminha sobre a libertação.",
+  "keyword": "Eu sou o Senhor",
+  "verseRefs": [
+   "Êxodo 20:2–3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 20:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 20:1",
+   "text": "Então, Deus pronunciou todas essas palavras:"
+  },
+  {
+   "ref": "Êxodo 20:2",
+   "text": "Eu sou o Senhor, teu Deus, que te tirei da terra do Egito, da casa da servidão."
+  },
+  {
+   "ref": "Êxodo 20:3",
+   "text": "Não terás outros deuses diante de minha presença."
+  },
+  {
+   "ref": "Êxodo 20:4",
+   "text": "Não farás para ti imagem esculpida, nem semelhança alguma do que está acima nos céus, nem abaixo na terra, nem nas águas que estão debaixo da terra."
+  },
+  {
+   "ref": "Êxodo 20:5",
+   "text": "Não te prostrarás diante delas nem as adorarás, pois eu, o Senhor, teu Deus, sou um Deus zeloso, que visita a iniquidade dos pais sobre os filhos até a terceira e quarta geração daqueles que me aborrecem."
+  },
+  {
+   "ref": "Êxodo 20:6",
+   "text": "E demonstrando amor e fidelidade a milhares de gerações daqueles que me amam e guardam os meus mandamentos."
+  }
+ ]
+}
+</cena>

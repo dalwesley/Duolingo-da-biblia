@@ -1,0 +1,67 @@
+Escreva a cena "daniel-palacio-03-a-cova-dos-leoes" da trilha "daniel" (Daniel).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "daniel",
+  "title": "Daniel",
+  "description": "Fidelidade no exílio e reinos sob o Altíssimo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "No palácio",
+ "mission": {
+  "slug": "daniel-palacio-03-a-cova-dos-leoes",
+  "title": "A cova dos leões",
+  "type": "lesson",
+  "intro": "Deus fecha a boca dos leões.",
+  "hookRef": "Referência: Daniel",
+  "hookNote": "Deus fecha a boca dos leões.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre cova?"
+ },
+ "v2": {
+  "passageRef": "Referência: Daniel",
+  "context": "Deus fecha a boca dos leões.",
+  "keyword": "Cova",
+  "verseRefs": [
+   "Daniel 6:22"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Daniel 6:19–25"
+ ],
+ "verses": [
+  {
+   "ref": "Daniel 6:19",
+   "text": "Pela manhã, ao romper do dia, o rei levantou-se e, apressadamente, foi até a cova dos leões."
+  },
+  {
+   "ref": "Daniel 6:20",
+   "text": "E, ao se aproximar da cova, o rei chamou Daniel com voz angustiada; e, falando, disse: Daniel, servo do Deus vivo! Será que o teu Deus, a quem tu serves de maneira constante, conseguiu livrar-te dos leões?"
+  },
+  {
+   "ref": "Daniel 6:21",
+   "text": "Então, Daniel falou ao rei: Ó rei, vive eternamente!"
+  },
+  {
+   "ref": "Daniel 6:22",
+   "text": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum."
+  },
+  {
+   "ref": "Daniel 6:23",
+   "text": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus."
+  },
+  {
+   "ref": "Daniel 6:24",
+   "text": "Então o rei ordenou que trouxessem os homens que haviam acusado Daniel, e eles, juntamente com seus filhos e esposas, foram lançados na cova dos leões. E ainda não haviam chegado ao fundo da cova, quando os leões se apoderaram deles, esmigalhando todos os seus ossos."
+  },
+  {
+   "ref": "Daniel 6:25",
+   "text": "O rei Dario escreveu a todos os povos, nações e homens de todas as línguas que habitam em toda a terra: Que a paz seja multiplicada entre vocês!"
+  }
+ ]
+}
+</cena>

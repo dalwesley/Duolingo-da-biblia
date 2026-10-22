@@ -1,0 +1,912 @@
+{
+  "study": {
+    "slug": "pn-01-pessoa",
+    "passageRef": "Atos 5:1–4",
+    "passageText": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade. E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos. Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "passages": [
+      {
+        "ref": "Atos 5:1–4",
+        "text": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade. E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos. Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+      }
+    ],
+    "context": "Ananias e Safira vendem uma propriedade e trazem uma oferta aos apóstolos, como outros crentes faziam. Nem tudo, porém, é entregue, embora a entrega pareça ser completa.",
+    "keyword": "Espírito Santo",
+    "keywordGloss": "Nos textos, ele não é uma força vaga, mas Deus presente, que pode ser enganado e conhece o coração.",
+    "focusQuestion": "O que muda na sua vida saber que Deus conhece o que ninguém mais vê em você?",
+    "reflectionPrompts": [
+      "Deus conhece o coração",
+      "Mentira não engana Deus",
+      "O Espírito é Deus"
+    ],
+    "facts": [
+      {
+        "text": "Ananias e sua mulher Safira venderam uma propriedade.",
+        "evidenceRef": "Atos 5:1",
+        "evidenceSpan": "venderam uma propriedade"
+      },
+      {
+        "text": "Ananias reteve parte do preço, com o conhecimento de sua mulher.",
+        "evidenceRef": "Atos 5:2",
+        "evidenceSpan": "reteve parte do preço"
+      },
+      {
+        "text": "Pedro diz que Satanás encheu o coração de Ananias para mentir ao Espírito Santo.",
+        "evidenceRef": "Atos 5:3",
+        "evidenceSpan": "mentir ao Espírito Santo"
+      },
+      {
+        "text": "A propriedade estava em poder de Ananias antes e depois da venda.",
+        "evidenceRef": "Atos 5:4",
+        "evidenceSpan": "Não estava ela em seu poder após a venda"
+      },
+      {
+        "text": "Pedro afirma que Ananias não mentiu aos homens, mas a Deus.",
+        "evidenceRef": "Atos 5:4",
+        "evidenceSpan": "Você não mentiu aos homens, mas a Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Espírito Santo",
+        "gloss": "Deus presente e atuante, a quem Ananias mente segundo Pedro."
+      },
+      {
+        "term": "mentir",
+        "gloss": "Enganar com aparência de entrega total, guardando parte sem dizer."
+      },
+      {
+        "term": "coração",
+        "gloss": "O interior da pessoa, onde o desígnio é concebido antes de virar ato."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Um casal vende uma propriedade",
+        "evidenceRef": "Atos 5:1"
+      },
+      {
+        "label": "Parte do preço fica retida",
+        "evidenceRef": "Atos 5:2"
+      },
+      {
+        "label": "Pedro confronta a mentira",
+        "evidenceRef": "Atos 5:3"
+      },
+      {
+        "label": "A mentira é revelada como feita a Deus",
+        "evidenceRef": "Atos 5:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Ananias retém parte do preço, mas traz o restante como quem entrega tudo.",
+        "marker": null,
+        "evidenceRef": "Atos 5:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Pedro pergunta por que Satanás encheu o coração de Ananias para mentir.",
+        "marker": "por que",
+        "evidenceRef": "Atos 5:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao ouvir as palavras de Pedro, Ananias cai e expira, e grande temor vem sobre todos.",
+        "marker": null,
+        "evidenceRef": "Atos 5:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 28:19",
+        "bridge": "Espírito junto ao Pai e Filho",
+        "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+      },
+      {
+        "ref": "João 14:26",
+        "bridge": "O Consolador ensina e lembra",
+        "text": "Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas e vos lembrará de tudo o que tenho dito a vocês."
+      },
+      {
+        "ref": "1 Coríntios 6:19",
+        "bridge": "O Espírito habita em vocês",
+        "text": "Ou não sabeis que o vosso corpo é o templo do Espírito Santo, que habita em vós, o qual recebestes da parte de Deus, e que não sois de vós mesmos?"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Espírito Santo é só uma força impessoal de Deus.",
+        "why": "Pedro diz que Ananias mentiu ao Espírito e que essa mentira foi feita a Deus, não a uma força."
+      },
+      {
+        "text": "Ananias foi obrigado a entregar todo o valor da venda.",
+        "why": "Pedro lembra que a propriedade estava em seu poder e o valor à sua disposição (5:4)."
+      },
+      {
+        "text": "O erro de Ananias foi apenas guardar dinheiro para si.",
+        "why": "Guardar parte era direito dele; o erro foi mentir, apresentando parte como se fosse tudo."
+      }
+    ],
+    "centralInsight": "O Espírito Santo é Deus, e mentir a ele é mentir ao próprio Deus.",
+    "anchorQuestion": "Segundo Pedro em Atos 5:4, a quem Ananias mentiu de fato?",
+    "relatedVerses": [
+      {
+        "reference": "Mateus 28:19",
+        "reason": "Espírito junto ao Pai e Filho"
+      },
+      {
+        "reference": "João 14:26",
+        "reason": "O Consolador ensina e lembra"
+      },
+      {
+        "reference": "1 Coríntios 6:19",
+        "reason": "O Espírito habita em vocês"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "pneumatologia-sem-pn-01-pessoa-01",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Atos 5:3, Pedro diz que Ananias mentiu ao Espírito Santo.",
+      "prompt": "Em Atos 5:3, Pedro diz que Ananias mentiu ao Espírito Santo.",
+      "cue": "Em Atos 5:3, Pedro diz que Ananias mentiu ao Espírito Santo.",
+      "verseRef": "Atos 5:3",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "mentir ao Espírito Santo",
+      "feedbackCorrect": "Pedro confronta Ananias por mentir ao Espírito Santo, retendo parte do valor.",
+      "feedbackWrong": {
+        "false": "Releia Atos 5:3, onde Pedro nomeia a quem Ananias mentiu."
+      },
+      "hint": "Olhe a fala de Pedro.",
+      "learningObjective": "Observar a quem Pedro diz que Ananias mentiu.",
+      "evidence": [
+        "Atos 5:3"
+      ]
+    },
+    {
+      "id": "pneumatologia-sem-pn-01-pessoa-02",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Atos 5:1, toque o nome do homem que vendeu uma propriedade com sua mulher.",
+      "prompt": "Em Atos 5:1, toque o nome do homem que vendeu uma propriedade com sua mulher.",
+      "cue": "Em Atos 5:1, toque o nome do homem que vendeu uma propriedade com sua mulher.",
+      "verseRef": "Atos 5:1",
+      "passageText": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "propriedade"
+        },
+        {
+          "id": "b",
+          "text": "Safira"
+        },
+        {
+          "id": "c",
+          "text": "Ananias"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "chamado Ananias",
+      "feedbackCorrect": "Ananias, com Safira, vendeu a propriedade no começo do relato.",
+      "feedbackWrong": {
+        "a": "A propriedade é o bem vendido, não uma pessoa.",
+        "b": "Safira é a mulher de Ananias, não o homem."
+      },
+      "hint": "Procure o nome masculino no começo do versículo.",
+      "learningObjective": "Identificar quem vende a propriedade em Atos 5:1.",
+      "evidence": [
+        "Atos 5:1"
+      ]
+    },
+    {
+      "id": "pneumatologia-sem-pn-01-pessoa-03",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Atos 5:2, o que Ananias fez com parte do preço da propriedade?",
+      "prompt": "Segundo Atos 5:2, o que Ananias fez com parte do preço da propriedade?",
+      "cue": "Segundo Atos 5:2, o que Ananias fez com parte do preço da propriedade?",
+      "verseRef": "Atos 5:2",
+      "passageText": "E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Devolveu tudo ao comprador"
+        },
+        {
+          "id": "b",
+          "text": "Repartiu o valor entre os jovens"
+        },
+        {
+          "id": "c",
+          "text": "Reteve uma parte do preço"
+        },
+        {
+          "id": "d",
+          "text": "Entregou tudo aos apóstolos"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "reteve parte do preço",
+      "feedbackCorrect": "Ele reteve parte do preço e depositou só o restante aos pés dos apóstolos.",
+      "feedbackWrong": {
+        "a": "O texto não fala de devolução ao comprador.",
+        "b": "Os jovens aparecem só depois, para sepultar (5:6).",
+        "d": "Ele depositou só o restante, não o valor inteiro."
+      },
+      "hint": "Leia o que ele faz antes de depositar o restante.",
+      "learningObjective": "Observar o que Ananias faz com parte do preço.",
+      "evidence": [
+        "Atos 5:2"
+      ]
+    },
+    {
+      "id": "pneumatologia-sem-pn-01-pessoa-04",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Atos 5:2 na ordem do texto.",
+      "prompt": "Monte Atos 5:2 na ordem do texto.",
+      "cue": "Monte Atos 5:2 na ordem do texto.",
+      "verseRef": "Atos 5:2",
+      "passageText": "E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "E reteve parte do preço"
+        },
+        {
+          "id": "b",
+          "text": "com o conhecimento de sua mulher"
+        },
+        {
+          "id": "c",
+          "text": "a depositou aos pés dos apóstolos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "reteve parte do preço",
+      "feedbackCorrect": "Ele retém parte, com a mulher sabendo, e deposita o restante aos apóstolos.",
+      "feedbackWrong": {
+        "default": "Comece pelo que ele reteve; o depósito vem no fim do versículo."
+      },
+      "hint": "O versículo começa pelo que ele guardou.",
+      "learningObjective": "Reconhecer a sequência de Atos 5:2.",
+      "evidence": [
+        "Atos 5:2"
+      ]
+    },
+    {
+      "id": "pneumatologia-sem-pn-01-pessoa-05",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Atos 5:4, Pedro diz que a propriedade estava em poder de quem?",
+      "prompt": "Em Atos 5:4, Pedro diz que a propriedade estava em poder de quem?",
+      "cue": "Em Atos 5:4, Pedro diz que a propriedade estava em poder de quem?",
+      "verseRef": "Atos 5:4",
+      "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "template": "Não estava ela em ___ poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "nosso"
+        },
+        {
+          "id": "b",
+          "text": "seu"
+        },
+        {
+          "id": "c",
+          "text": "deles"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Não estava ela em seu poder após a venda",
+      "feedbackCorrect": "Pedro lembra que o bem estava em poder do próprio Ananias.",
+      "feedbackWrong": {
+        "a": "Pedro fala com Ananias sobre o bem dele, não da igreja.",
+        "c": "O poder sobre o bem era de Ananias, não de outras pessoas."
+      },
+      "hint": "Veja a quem Pedro atribui o poder sobre o bem vendido.",
+      "learningObjective": "Lembrar que a propriedade estava em poder de Ananias.",
+      "evidence": [
+        "Atos 5:4"
+      ]
+    },
+    {
+      "id": "pneumatologia-sem-pn-01-pessoa-06",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Atos 5:4 comunica que se liga a este contexto?",
+      "prompt": "O que Atos 5:4 comunica que se liga a este contexto?",
+      "cue": "O que Atos 5:4 comunica que se liga a este contexto?",
+      "verseRef": "Atos 5:4",
+      "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "passageA": {
+        "ref": "Atos 5:4",
+        "text": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Pedro confronta Ananias por enganar a igreja com uma oferta parcial."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mentira ao Espírito atinge Deus"
+        },
+        {
+          "id": "b",
+          "text": "Deus não vê o coração"
+        },
+        {
+          "id": "c",
+          "text": "Ananias mentiu só aos homens"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+      "feedbackCorrect": "Para Pedro, mentir ao Espírito é mentir ao próprio Deus.",
+      "feedbackWrong": {
+        "b": "Pedro expõe o que estava escondido no coração dele.",
+        "c": "Pedro diz exatamente o contrário no fim do versículo."
+      },
+      "hint": "Compare os dois destinos da mentira no versículo.",
+      "learningObjective": "Ligar Atos 5:4 à ideia de que mentir ao Espírito é mentir a Deus.",
+      "evidence": [
+        "Atos 5:4"
+      ]
+    },
+    {
+      "id": "pneumatologia-cam-pn-01-pessoa-01",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Atos 5:4, os apóstolos obrigaram Ananias a vender sua propriedade e entregar todo o valor.",
+      "prompt": "Em Atos 5:4, os apóstolos obrigaram Ananias a vender sua propriedade e entregar todo o valor.",
+      "cue": "Em Atos 5:4, os apóstolos obrigaram Ananias a vender sua propriedade e entregar todo o valor.",
+      "verseRef": "Atos 5:4",
+      "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Não estava ela em seu poder após a venda",
+      "feedbackCorrect": "Pedro diz que o bem era dele e estava à sua disposição, sem obrigação de entregar tudo.",
+      "feedbackWrong": {
+        "true": "Releia a pergunta de Pedro sobre o bem estar em poder de Ananias."
+      },
+      "hint": "Repare no que Pedro diz sobre o poder de Ananias.",
+      "learningObjective": "Compreender que a entrega era livre, não obrigatória.",
+      "evidence": [
+        "Atos 5:4"
+      ]
+    },
+    {
+      "id": "pneumatologia-cam-pn-01-pessoa-02",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Atos 5:3, toque a palavra que liga a cena anterior à fala de Pedro.",
+      "prompt": "Em Atos 5:3, toque a palavra que liga a cena anterior à fala de Pedro.",
+      "cue": "Em Atos 5:3, toque a palavra que liga a cena anterior à fala de Pedro.",
+      "verseRef": "Atos 5:3",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "então"
+        },
+        {
+          "id": "b",
+          "text": "coração"
+        },
+        {
+          "id": "c",
+          "text": "propriedade"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Disse então Pedro",
+      "feedbackCorrect": "A palavra marca a passagem da oferta para o confronto de Pedro.",
+      "feedbackWrong": {
+        "b": "Coração é onde o desígnio nasce, não a ligação entre cenas.",
+        "c": "A propriedade é o bem vendido, não a ligação entre cenas."
+      },
+      "hint": "Procure a palavra logo antes do nome de Pedro.",
+      "learningObjective": "Reconhecer o marcador de sequência em Atos 5:3.",
+      "evidence": [
+        "Atos 5:3"
+      ]
+    },
+    {
+      "id": "pneumatologia-cam-pn-01-pessoa-03",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Atos 5:2 se relaciona com a fala de Pedro em Atos 5:3?",
+      "prompt": "Como Atos 5:2 se relaciona com a fala de Pedro em Atos 5:3?",
+      "cue": "Como Atos 5:2 se relaciona com a fala de Pedro em Atos 5:3?",
+      "verseRef": "Atos 5:2–3",
+      "passageText": "E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos. Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mostra uma doação completa e sincera"
+        },
+        {
+          "id": "b",
+          "text": "Mostra Safira discordando do marido"
+        },
+        {
+          "id": "c",
+          "text": "Mostra Pedro pedindo mais dinheiro"
+        },
+        {
+          "id": "d",
+          "text": "Mostra o engano que Pedro depois expõe"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "reteve parte do preço",
+      "feedbackCorrect": "O versículo 2 narra a retenção escondida que Pedro expõe no versículo 3.",
+      "feedbackWrong": {
+        "a": "Parte do preço ficou retida, sem ser declarada.",
+        "b": "Safira sabia da retenção, conforme o versículo 2.",
+        "c": "Pedro não pede dinheiro; ele confronta a mentira."
+      },
+      "hint": "Compare o que é feito em segredo e o que Pedro revela.",
+      "learningObjective": "Relacionar a ação escondida de Atos 5:2 ao confronto de 5:3.",
+      "evidence": [
+        "Atos 5:2–3"
+      ]
+    },
+    {
+      "id": "pneumatologia-cam-pn-01-pessoa-04",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como se encadeiam os fatos iniciais de Atos 5?",
+      "prompt": "Como se encadeiam os fatos iniciais de Atos 5?",
+      "cue": "Como se encadeiam os fatos iniciais de Atos 5?",
+      "verseRef": "Atos 5:1–2",
+      "passageText": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade. E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um casal vende uma propriedade"
+        },
+        {
+          "id": "b",
+          "text": "Uma parte do preço fica retida"
+        },
+        {
+          "id": "c",
+          "text": "O restante é depositado aos apóstolos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "venderam uma propriedade",
+      "feedbackCorrect": "Primeiro a venda, depois a retenção escondida, e então o depósito do restante.",
+      "feedbackWrong": {
+        "default": "Comece pela venda; o depósito do restante fecha a sequência."
+      },
+      "hint": "O depósito só vem depois da venda e da retenção.",
+      "learningObjective": "Compreender o encadeamento de Atos 5:1–2.",
+      "evidence": [
+        "Atos 5:1–2"
+      ]
+    },
+    {
+      "id": "pneumatologia-cam-pn-01-pessoa-05",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Atos 5:3, segundo Pedro, quem encheu o coração de Ananias para mentir?",
+      "prompt": "Em Atos 5:3, segundo Pedro, quem encheu o coração de Ananias para mentir?",
+      "cue": "Em Atos 5:3, segundo Pedro, quem encheu o coração de Ananias para mentir?",
+      "verseRef": "Atos 5:3",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "template": "Disse então Pedro: Ananias, por que ___ encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Safira"
+        },
+        {
+          "id": "b",
+          "text": "Satanás"
+        },
+        {
+          "id": "c",
+          "text": "Pedro"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "por que Satanás encheu seu coração",
+      "feedbackCorrect": "Pedro aponta a influência por trás do desígnio de mentir ao Espírito.",
+      "feedbackWrong": {
+        "a": "Safira sabia da retenção, mas não é apontada assim por Pedro.",
+        "c": "Pedro é quem confronta a mentira, não quem a inspira."
+      },
+      "hint": "Veja quem Pedro aponta como influência sobre Ananias.",
+      "learningObjective": "Compreender a origem do desígnio segundo Pedro.",
+      "evidence": [
+        "Atos 5:3"
+      ]
+    },
+    {
+      "id": "pneumatologia-cam-pn-01-pessoa-06",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Atos 5:3 a João 14:26?",
+      "prompt": "O que liga Atos 5:3 a João 14:26?",
+      "cue": "O que liga Atos 5:3 a João 14:26?",
+      "verseRef": "Atos 5:3",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "passageA": {
+        "ref": "Atos 5:3",
+        "text": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?"
+      },
+      "passageB": {
+        "ref": "João 14:26",
+        "text": "Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas e vos lembrará de tudo o que tenho dito a vocês."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Espírito é pessoa atuante"
+        },
+        {
+          "id": "b",
+          "text": "Uma força sem vontade própria"
+        },
+        {
+          "id": "c",
+          "text": "Um símbolo apenas literário"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "mentir ao Espírito Santo",
+      "feedbackCorrect": "Mentir ao Espírito e ser ensinado por ele mostram alguém que age, não uma força vaga.",
+      "feedbackWrong": {
+        "b": "Quem ensina e pode ser alvo de mentira não é força sem vontade.",
+        "c": "Nos dois textos o Espírito age de modo real e pessoal."
+      },
+      "hint": "Veja o que o Espírito faz nos dois trechos.",
+      "learningObjective": "Relacionar a ação pessoal do Espírito em Atos e em João.",
+      "evidence": [
+        "Atos 5:3",
+        "João 14:26"
+      ]
+    },
+    {
+      "id": "pneumatologia-pro-pn-01-pessoa-01",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Atos 5:3–4 trata mentir ao Espírito Santo como mentir ao próprio Deus.",
+      "prompt": "Atos 5:3–4 trata mentir ao Espírito Santo como mentir ao próprio Deus.",
+      "cue": "Atos 5:3–4 trata mentir ao Espírito Santo como mentir ao próprio Deus.",
+      "verseRef": "Atos 5:3–4",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+      "feedbackCorrect": "Pedro troca o nome sem trocar o ato, mostrando quem o Espírito é.",
+      "feedbackWrong": {
+        "false": "Compare o alvo da mentira nos versículos 3 e 4."
+      },
+      "hint": "Compare os versículos 3 e 4.",
+      "learningObjective": "Interpretar Atos 5:3–4 sobre quem o Espírito Santo é.",
+      "evidence": [
+        "Atos 5:3–4"
+      ]
+    },
+    {
+      "id": "pneumatologia-pro-pn-01-pessoa-02",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+      "prompt": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+      "cue": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+      "verseRef": "Atos 5:4",
+      "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "aos homens"
+        },
+        {
+          "id": "b",
+          "text": "seu coração"
+        },
+        {
+          "id": "c",
+          "text": "a Deus"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "mas a Deus",
+      "feedbackCorrect": "Pedro conclui que a mentira foi feita a Deus, não só às pessoas.",
+      "feedbackWrong": {
+        "a": "Pedro nega que a mentira tenha ficado só entre homens.",
+        "b": "O coração é onde o desígnio nasceu, não o alvo da mentira."
+      },
+      "hint": "Leia a conclusão de Pedro no fim do versículo.",
+      "learningObjective": "Sustentar com o texto que a mentira foi feita a Deus.",
+      "evidence": [
+        "Atos 5:4"
+      ]
+    },
+    {
+      "id": "pneumatologia-pro-pn-01-pessoa-03",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Atos 5:3–4 sustenta sobre o Espírito Santo?",
+      "prompt": "Que leitura Atos 5:3–4 sustenta sobre o Espírito Santo?",
+      "cue": "Que leitura Atos 5:3–4 sustenta sobre o Espírito Santo?",
+      "verseRef": "Atos 5:3–4",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele é Deus e age pessoalmente"
+        },
+        {
+          "id": "b",
+          "text": "Ele é uma criação posterior de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ele é uma força sem mente própria"
+        },
+        {
+          "id": "d",
+          "text": "Ele é inferior aos apóstolos reunidos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+      "feedbackCorrect": "Mentir a ele é mentir a Deus, e ele é alvo pessoal do engano.",
+      "feedbackWrong": {
+        "b": "O texto não apresenta o Espírito como criatura, mas como Deus.",
+        "c": "Uma força sem mente não seria alvo de mentira como Deus é.",
+        "d": "Pedro não coloca o Espírito abaixo dos apóstolos; ele o iguala a Deus no ato."
+      },
+      "hint": "Veja como Pedro nomeia o alvo da mentira nos dois versículos.",
+      "learningObjective": "Escolher a interpretação que Atos 5:3–4 sustenta sobre o Espírito.",
+      "evidence": [
+        "Atos 5:3–4"
+      ]
+    },
+    {
+      "id": "pneumatologia-pro-pn-01-pessoa-04",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho da identidade do Espírito?",
+      "prompt": "Qual sequência revela o caminho da identidade do Espírito?",
+      "cue": "Qual sequência revela o caminho da identidade do Espírito?",
+      "verseRef": "Atos 5:3",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus promete o Consolador enviado pelo Pai"
+        },
+        {
+          "id": "b",
+          "text": "Ananias mente ao Espírito Santo"
+        },
+        {
+          "id": "c",
+          "text": "Pedro chama essa mentira de mentira a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "mentir ao Espírito Santo",
+      "feedbackCorrect": "O Consolador prometido é Deus, a quem Ananias mente em Atos 5.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa de Jesus; Atos 5 vem depois, na igreja nascente."
+      },
+      "hint": "Siga a ordem da história, da promessa ao Pentecostes e depois.",
+      "learningObjective": "Ver a identidade do Espírito da promessa de Jesus a Atos 5.",
+      "evidence": [
+        "Atos 5:3",
+        "João 14:26"
+      ]
+    },
+    {
+      "id": "pneumatologia-pro-pn-01-pessoa-05",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Atos 5:4, Pedro diz primeiro que Ananias não mentiu a quem?",
+      "prompt": "Em Atos 5:4, Pedro diz primeiro que Ananias não mentiu a quem?",
+      "cue": "Em Atos 5:4, Pedro diz primeiro que Ananias não mentiu a quem?",
+      "verseRef": "Atos 5:4",
+      "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+      "template": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos ___, mas a Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "profetas"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "anjos"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+      "feedbackCorrect": "Pedro contrasta o alvo aparente com o alvo real da mentira.",
+      "feedbackWrong": {
+        "a": "Profetas não são citados por Pedro neste confronto.",
+        "c": "Anjos não são citados por Pedro neste confronto."
+      },
+      "hint": "Veja o contraste que Pedro faz no fim do versículo.",
+      "learningObjective": "Lembrar o contraste entre o alvo aparente e o real.",
+      "evidence": [
+        "Atos 5:4"
+      ]
+    },
+    {
+      "id": "pneumatologia-pro-pn-01-pessoa-06",
+      "trail": "pneumatologia",
+      "section": "pn-01-pessoa",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Atos 5:4 a Mateus 28:19?",
+      "prompt": "O que liga Atos 5:4 a Mateus 28:19?",
+      "cue": "O que liga Atos 5:4 a Mateus 28:19?",
+      "verseRef": "Atos 5:3",
+      "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+      "passageA": {
+        "ref": "Atos 5:4",
+        "text": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+      },
+      "passageB": {
+        "ref": "Mateus 28:19",
+        "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito junto ao Pai e Filho"
+        },
+        {
+          "id": "b",
+          "text": "Espírito abaixo dos seres humanos"
+        },
+        {
+          "id": "c",
+          "text": "Espírito separado do único Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+      "feedbackCorrect": "Atos chama o Espírito de Deus, e Jesus o nomeia com o Pai e o Filho.",
+      "feedbackWrong": {
+        "b": "Em Atos ele é Deus, não alguém abaixo dos homens.",
+        "c": "Mateus o coloca no único nome, com o Pai e o Filho."
+      },
+      "hint": "Veja com quem o Espírito é nomeado por Jesus.",
+      "learningObjective": "Ligar Atos 5:4 ao batismo em nome do Pai, do Filho e do Espírito.",
+      "evidence": [
+        "Atos 5:4",
+        "Mateus 28:19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+ "study": {
+  "passageRef": "Levítico 19:1–5",
+  "passages": [
+   {
+    "ref": "Levítico 19:1–5"
+   }
+  ],
+  "context": "O Senhor fala a toda a congregação de Israel. A santidade pedida aparece em respeitar pai e mãe, guardar os sábados, recusar ídolos e oferecer sacrifício para ser aceito.",
+  "keyword": "santos",
+  "keywordGloss": "No texto, é o chamado de todo o povo porque o Senhor, seu Deus, é santo.",
+  "focusQuestion": "Onde a santidade de Deus precisa aparecer na sua vida comum?",
+  "reflectionPrompts": [
+   "Santos porque Deus é santo",
+   "Família e sábados guardados",
+   "Nada de ídolos"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor disse a Moisés que falasse a toda a congregação dos filhos de Israel.",
+    "evidenceRef": "Levítico 19:2",
+    "evidenceSpan": "Falem a toda a congregação dos filhos de Israel"
+   },
+   {
+    "text": "Os filhos de Israel deviam ser santos porque o Senhor, seu Deus, é santo.",
+    "evidenceRef": "Levítico 19:2",
+    "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo"
+   },
+   {
+    "text": "Cada um devia respeitar sua mãe e seu pai e guardar os sábados do Senhor.",
+    "evidenceRef": "Levítico 19:3",
+    "evidenceSpan": "Cada um respeitará sua mãe e seu pai"
+   },
+   {
+    "text": "O povo não devia voltar-se para ídolos nem fazer deuses de metal fundido.",
+    "evidenceRef": "Levítico 19:4",
+    "evidenceSpan": "Não se voltem para os ídolos"
+   },
+   {
+    "text": "O sacrifício pacífico devia ser oferecido para que fossem aceitos.",
+    "evidenceRef": "Levítico 19:5",
+    "evidenceSpan": "oferecê-lo-eis para que sejais aceitos"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "santos",
+    "gloss": "Chamado de todo o povo a refletir quem o Senhor é."
+   },
+   {
+    "term": "sábados",
+    "gloss": "Tempo guardado como sinal de pertencimento ao Senhor."
+   },
+   {
+    "term": "ídolos",
+    "gloss": "Aquilo para o que o povo não devia voltar-se no lugar de Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Chamado a toda a congregação",
+    "evidenceRef": "Levítico 19:2"
+   },
+   {
+    "label": "Respeito aos pais e sábados guardados",
+    "evidenceRef": "Levítico 19:3"
+   },
+   {
+    "label": "Recusa dos ídolos e deuses fundidos",
+    "evidenceRef": "Levítico 19:4"
+   },
+   {
+    "label": "Sacrifício pacífico para ser aceito",
+    "evidenceRef": "Levítico 19:5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "O povo devia ser santo porque o Senhor, seu Deus, é santo.",
+    "marker": "porque",
+    "evidenceRef": "Levítico 19:2"
+   },
+   {
+    "kind": "propósito",
+    "text": "O sacrifício pacífico era oferecido para que fossem aceitos.",
+    "marker": "para",
+    "evidenceRef": "Levítico 19:5"
+   },
+   {
+    "kind": "sequência",
+    "text": "Quando oferecessem sacrifício pacífico, deviam fazê-lo do modo aceito.",
+    "marker": "quando",
+    "evidenceRef": "Levítico 19:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Pedro 1:16",
+    "bridge": "Sede santos porque sou santo"
+   },
+   {
+    "ref": "Efésios 1:4",
+    "bridge": "Escolhidos para ser santos"
+   },
+   {
+    "ref": "Hebreus 12:14",
+    "bridge": "Santificação para ver o Senhor"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Santidade era chamado só para sacerdotes, não para todo o povo.",
+    "why": "A ordem é falada a toda a congregação dos filhos de Israel."
+   },
+   {
+    "text": "Santidade era só ritual e não tocava família nem semana.",
+    "why": "Logo depois aparecem respeitar pai e mãe e guardar os sábados."
+   },
+   {
+    "text": "Ser santo permitia fazer deuses do próprio jeito.",
+    "why": "O mesmo trecho proíbe voltar-se para ídolos e fazer deuses fundidos."
+   }
+  ],
+  "centralInsight": "O povo deve ser santo porque o Senhor, seu Deus, é santo",
+  "anchorQuestion": "Por que os filhos de Israel deviam ser santos segundo Levítico 19:2?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Levítico 19:2, o chamado para ser santo foi dirigido apenas aos sacerdotes de Israel.",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Falem a toda a congregação dos filhos de Israel",
+   "feedbackCorrect": "O chamado alcança toda a congregação, não um grupo pequeno.",
+   "feedbackWrong": {
+    "true": "Releia a quem Moisés devia falar neste versículo."
+   },
+   "hint": "Veja o público citado no começo.",
+   "learningObjective": "Observar quem recebe o chamado à santidade.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 19:2, toque a quem Moisés devia falar.",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Falem a toda a congregação dos filhos de Israel",
+   "feedbackCorrect": "Moisés devia falar ao povo inteiro reunido como congregação.",
+   "feedbackWrong": {
+    "b": "Isso é o que devia ser dito, não a quem falar.",
+    "c": "Isso nomeia o Senhor, não o público da fala."
+   },
+   "hint": "Procure o público no começo do versículo.",
+   "learningObjective": "Identificar quem ouve o chamado.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "toda a congregação"
+    },
+    {
+     "id": "b",
+     "text": "Serão santos"
+    },
+    {
+     "id": "c",
+     "text": "seu Deus"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Levítico 19:3, quem cada um devia respeitar?",
+   "verseRef": "Levítico 19:3",
+   "evidenceSpan": "Cada um respeitará sua mãe e seu pai",
+   "feedbackCorrect": "A santidade começa também no respeito dentro de casa.",
+   "feedbackWrong": {
+    "a": "Vizinhos não são os citados neste versículo.",
+    "c": "Líderes não aparecem nesta ordem sobre respeito.",
+    "d": "O respeito citado sobe uma geração, não desce."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Observar a santidade na família.",
+   "evidence": [
+    "Levítico 19:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Seus vizinhos e estrangeiros"
+    },
+    {
+     "id": "b",
+     "text": "Sua mãe e seu pai"
+    },
+    {
+     "id": "c",
+     "text": "Seus líderes e juízes"
+    },
+    {
+     "id": "d",
+     "text": "Seus filhos e netos"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 19:3 na ordem do texto.",
+   "verseRef": "Levítico 19:3",
+   "evidenceSpan": "Cada um respeitará sua mãe e seu pai",
+   "feedbackCorrect": "Respeito aos pais, sábados guardados e o Senhor reconhecido.",
+   "feedbackWrong": {
+    "default": "Comece pelo respeito à mãe e ao pai."
+   },
+   "hint": "O versículo começa pela família.",
+   "learningObjective": "Reconhecer a sequência de Levítico 19:3.",
+   "evidence": [
+    "Levítico 19:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cada um respeitará sua mãe e seu pai"
+    },
+    {
+     "id": "b",
+     "text": "e guardará os meus sábados"
+    },
+    {
+     "id": "c",
+     "text": "eu sou o Senhor, seu Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Levítico 19:4, para o que o povo não devia voltar-se?",
+   "verseRef": "Levítico 19:4",
+   "evidenceSpan": "Não se voltem para os ídolos",
+   "feedbackCorrect": "Voltar-se para isso seria trocar o Senhor por outra coisa.",
+   "feedbackWrong": {
+    "a": "Os sábados deviam ser guardados, não evitados.",
+    "b": "Pai e mãe deviam ser respeitados, não recusados."
+   },
+   "hint": "Veja o que vem depois de voltem.",
+   "learningObjective": "Lembrar a recusa que acompanha a santidade.",
+   "evidence": [
+    "Levítico 19:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sábados"
+    },
+    {
+     "id": "b",
+     "text": "pais"
+    },
+    {
+     "id": "c",
+     "text": "ídolos"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Levítico 19:2 comunica que se liga a este contexto?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "O povo é chamado a refletir a santidade do seu Deus.",
+   "feedbackWrong": {
+    "b": "O motivo citado é quem Deus é, não orgulho do povo.",
+    "c": "O chamado nasce justamente do Senhor ser santo."
+   },
+   "hint": "Veja o motivo depois do chamado.",
+   "learningObjective": "Ligar o chamado ao caráter de Deus.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Santos porque Deus é santo"
+    },
+    {
+     "id": "b",
+     "text": "Santos por serem melhores"
+    },
+    {
+     "id": "c",
+     "text": "Separados sem nenhum Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 19:2"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus chama todo o povo a refletir quem ele é."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Levítico 19:3–4, guardar os sábados permitia ao povo voltar-se aos ídolos nos outros dias.",
+   "verseRef": "Levítico 19:3–4",
+   "evidenceSpan": "Não se voltem para os ídolos",
+   "feedbackCorrect": "Guardar o sábado não abria espaço para ídolo em dia algum.",
+   "feedbackWrong": {
+    "true": "Releia a ordem sobre ídolos logo depois dos sábados."
+   },
+   "hint": "Compare sábados e ídolos nos dois versículos.",
+   "learningObjective": "Compreender que santidade abrange semana e culto.",
+   "evidence": [
+    "Levítico 19:3–4"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 19:2, toque a palavra que liga o chamado ao seu motivo.",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Essa palavra mostra que o chamado nasce de quem Deus é.",
+   "feedbackWrong": {
+    "a": "Isso é o chamado dado, não o motivo dele.",
+    "c": "Isso afirma quem Deus é, não a palavra que liga."
+   },
+   "hint": "Procure a ligação entre chamado e motivo.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "santos"
+    },
+    {
+     "id": "b",
+     "text": "porque"
+    },
+    {
+     "id": "c",
+     "text": "sou santo"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o chamado de Levítico 19:2 aparece em Levítico 19:3?",
+   "verseRef": "Levítico 19:2–3",
+   "evidenceSpan": "Cada um respeitará sua mãe e seu pai",
+   "feedbackCorrect": "A santidade aparece em casa e no tempo separado para Deus.",
+   "feedbackWrong": {
+    "a": "Logo depois vêm pais respeitados e sábados guardados.",
+    "b": "Respeitar pai e mãe está dentro do mesmo chamado.",
+    "d": "Cada ordem é fechada com o Senhor se apresentando."
+   },
+   "hint": "Veja os dois exemplos do versículo seguinte.",
+   "learningObjective": "Compreender a santidade na vida comum.",
+   "evidence": [
+    "Levítico 19:2–3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele fica só no santuário, longe da vida diária"
+    },
+    {
+     "id": "b",
+     "text": "Ele dispensa a família em nome do culto"
+    },
+    {
+     "id": "c",
+     "text": "Ele toca família e tempo guardado para Deus"
+    },
+    {
+     "id": "d",
+     "text": "Ele troca Deus por regras sem relação com ele"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam as ideias em Levítico 19:2–3?",
+   "verseRef": "Levítico 19:2–3",
+   "evidenceSpan": "Falem a toda a congregação dos filhos de Israel",
+   "feedbackCorrect": "Do chamado geral, o texto desce para família e sábados.",
+   "feedbackWrong": {
+    "default": "Comece pelo chamado feito a todo o povo."
+   },
+   "hint": "O chamado vem antes dos exemplos práticos.",
+   "learningObjective": "Compreender do chamado aos exemplos.",
+   "evidence": [
+    "Levítico 19:2–3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus chama todo o povo a ser santo"
+    },
+    {
+     "id": "b",
+     "text": "A santidade aparece no respeito aos pais"
+    },
+    {
+     "id": "c",
+     "text": "Ela aparece também nos sábados guardados"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Levítico 19:3, o que cada um devia guardar junto do respeito aos pais?",
+   "verseRef": "Levítico 19:3",
+   "evidenceSpan": "e guardará os meus sábados",
+   "feedbackCorrect": "Família respeitada e tempo guardado caminham juntos.",
+   "feedbackWrong": {
+    "b": "Ídolos deviam ser recusados, não guardados.",
+    "c": "Neste versículo, o guardado junto aos pais recebe outro nome."
+   },
+   "hint": "Veja o que vem depois de guardará.",
+   "learningObjective": "Compreender santidade em casa e no tempo.",
+   "evidence": [
+    "Levítico 19:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sábados"
+    },
+    {
+     "id": "b",
+     "text": "ídolos"
+    },
+    {
+     "id": "c",
+     "text": "sacrifícios"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Levítico 19:2 a 1 Pedro 1:16?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Pedro cita quase as mesmas palavras para o povo de Deus.",
+   "feedbackWrong": {
+    "a": "Pedro repete o chamado ao povo de Deus, não só a sacerdotes.",
+    "c": "Pedro cita a ordem contra trocar Deus por ídolos."
+   },
+   "hint": "Compare a frase citada nos dois trechos.",
+   "learningObjective": "Relacionar o chamado em Levítico e Pedro.",
+   "evidence": [
+    "Levítico 19:2",
+    "1 Pedro 1:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Santidade só para sacerdotes"
+    },
+    {
+     "id": "b",
+     "text": "Sede santos, Deus é santo"
+    },
+    {
+     "id": "c",
+     "text": "Ídolos feitos sem culpa"
+    }
+   ],
+   "correctOptionId": "b",
+   "passageA": {
+    "ref": "Levítico 19:2"
+   },
+   "passageB": {
+    "ref": "1 Pedro 1:16"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Levítico 19:2 fundamenta o chamado a ser santo no fato de o Senhor ser santo.",
+   "verseRef": "Levítico 19:1–2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "O motivo dado pelo texto é quem o Senhor é.",
+   "feedbackWrong": {
+    "false": "Releia o motivo depois do chamado neste versículo."
+   },
+   "hint": "Veja o motivo ligado ao chamado.",
+   "learningObjective": "Interpretar o fundamento da santidade do povo.",
+   "evidence": [
+    "Levítico 19:1–2"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 19:4, toque o material dos deuses que o povo não devia fazer.",
+   "verseRef": "Levítico 19:4",
+   "evidenceSpan": "nem se façam deuses de metal fundido",
+   "feedbackCorrect": "Os deuses proibidos seriam feitos desse material pelo povo.",
+   "feedbackWrong": {
+    "a": "Isso nomeia o Senhor, não o material proibido.",
+    "b": "Isso é a ordem dada, não o material dos deuses."
+   },
+   "hint": "Procure o material no fim do versículo.",
+   "learningObjective": "Sustentar a recusa de deuses fabricados.",
+   "evidence": [
+    "Levítico 19:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "seu Deus"
+    },
+    {
+     "id": "b",
+     "text": "Não se voltem"
+    },
+    {
+     "id": "c",
+     "text": "metal fundido"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Levítico 19:2 sustenta sobre a santidade do povo?",
+   "verseRef": "Levítico 19:2–3",
+   "evidenceSpan": "Falem a toda a congregação dos filhos de Israel",
+   "feedbackCorrect": "O chamado é para todo o povo e aparece na vida inteira.",
+   "feedbackWrong": {
+    "b": "A fala é a toda a congregação, não só a sacerdotes.",
+    "c": "O respeito aos pais vem logo depois do chamado.",
+    "d": "O texto proíbe ídolos e deuses fundidos."
+   },
+   "hint": "Veja quem ouve e o que vem nos versículos seguintes.",
+   "learningObjective": "Escolher a interpretação sobre o alcance da santidade.",
+   "evidence": [
+    "Levítico 19:2",
+    "Levítico 19:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ela alcança culto, família e vida comum do povo"
+    },
+    {
+     "id": "b",
+     "text": "Ela pertence só aos sacerdotes no santuário"
+    },
+    {
+     "id": "c",
+     "text": "Ela dispensa respeitar pai e mãe"
+    },
+    {
+     "id": "d",
+     "text": "Ela permite ídolos feitos dentro de casa"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o chamado à santidade na Bíblia?",
+   "verseRef": "Levítico 19:2–3",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "De Levítico, Pedro repete o chamado e Hebreus mostra seu alvo.",
+   "feedbackWrong": {
+    "default": "Comece por Levítico; Pedro e Hebreus vêm depois."
+   },
+   "hint": "Siga Levítico, cartas e Hebreus.",
+   "learningObjective": "Ver o chamado à santidade atravessando a Bíblia.",
+   "evidence": [
+    "Levítico 19:2",
+    "1 Pedro 1:16",
+    "Hebreus 12:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus é santo e chama o seu povo"
+    },
+    {
+     "id": "b",
+     "text": "Pedro repete sede santos aos crentes"
+    },
+    {
+     "id": "c",
+     "text": "Sem santificação ninguém verá o Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Levítico 19:2, que palavra nomeia o chamado dado a todo o povo?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Essa é a palavra que resume o chamado da cena inteira.",
+   "feedbackWrong": {
+    "a": "Aceitos aparece no sacrifício, não no chamado principal.",
+    "c": "Fundidos descreve deuses proibidos, não o povo chamado."
+   },
+   "hint": "Veja o que o povo devia ser.",
+   "learningObjective": "Lembrar o termo central da santidade.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "aceitos"
+    },
+    {
+     "id": "b",
+     "text": "santos"
+    },
+    {
+     "id": "c",
+     "text": "fundidos"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Levítico 19:2 a Efésios 1:4?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Paulo também liga o povo de Deus a ser santo diante dele.",
+   "feedbackWrong": {
+    "a": "Efésios fala de escolha de Deus antes da fundação.",
+    "b": "Em Efésios, ser santo é diante dele."
+   },
+   "hint": "Compare o chamado a ser santo nos dois trechos.",
+   "learningObjective": "Ligar Levítico e Efésios no chamado à santidade.",
+   "evidence": [
+    "Levítico 19:2",
+    "Efésios 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Santos por esforço próprio apenas"
+    },
+    {
+     "id": "b",
+     "text": "Separados sem relação com Deus"
+    },
+    {
+     "id": "c",
+     "text": "Escolhidos para ser santos"
+    }
+   ],
+   "correctOptionId": "c",
+   "passageA": {
+    "ref": "Levítico 19:2"
+   },
+   "passageB": {
+    "ref": "Efésios 1:4"
+   }
+  }
+ ]
+}

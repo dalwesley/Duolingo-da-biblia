@@ -1,0 +1,322 @@
+{
+  "study": {
+    "passageRef": "Rute 1:20–21",
+    "passages": [{ "ref": "Rute 1:20–21" }],
+    "context": "Noemi saiu de Belém em tempo de fome, com marido e dois filhos. Em Moabe, os três morreram. Agora ela volta só com a nora Rute, e as mulheres da cidade mal a reconhecem.",
+    "keyword": "Mara",
+    "keywordGloss": "Nome que Noemi pede para si: significa amarga, como ela se sente ao voltar vazia.",
+    "focusQuestion": "Que nome você daria à sua fase mais difícil, e o diria diante de Deus?",
+    "reflectionPrompts": ["Nomear a própria dor", "Voltar vazia para casa", "Falar de Deus na amargura"],
+    "facts": [
+      { "text": "Ao chegarem a Belém, as mulheres perguntavam se aquela era Noemi.", "evidenceRef": "Rute 1:19", "evidenceSpan": "Não é esta Noemi?" },
+      { "text": "Noemi pediu que a chamassem de Mara, não de Noemi.", "evidenceRef": "Rute 1:20", "evidenceSpan": "chamem-me de Mara" },
+      { "text": "Ela disse que o Todo-Poderoso lhe causou grande amargura.", "evidenceRef": "Rute 1:20", "evidenceSpan": "o Todo-Poderoso me causou grande amargura" },
+      { "text": "Noemi partiu cheia, mas o Senhor a trouxe de volta despojada.", "evidenceRef": "Rute 1:21", "evidenceSpan": "Cheia parti, mas o Senhor me trouxe de volta despojada" },
+      { "text": "Ela sentia que o Senhor se manifestou contra ela.", "evidenceRef": "Rute 1:21", "evidenceSpan": "o Senhor se manifestou contra mim" },
+      { "text": "Noemi e Rute chegaram a Belém no princípio da colheita da cevada.", "evidenceRef": "Rute 1:22", "evidenceSpan": "no princípio da colheita da cevada" }
+    ],
+    "keyTerms": [
+      { "term": "Mara", "gloss": "O nome amargo que Noemi escolhe: ela nomeia a dor em vez de escondê-la." },
+      { "term": "amargura", "gloss": "É como Noemi descreve o que sente que o Todo-Poderoso lhe causou." },
+      { "term": "Noemi", "gloss": "O nome antigo já não combina, na visão dela, com quem voltou vazia." }
+    ],
+    "structure": [
+      { "label": "As mulheres mal reconhecem Noemi", "evidenceRef": "Rute 1:19" },
+      { "label": "Ela recusa o nome antigo", "evidenceRef": "Rute 1:20" },
+      { "label": "Ela explica: saiu cheia, voltou vazia", "evidenceRef": "Rute 1:21" },
+      { "label": "A chegada é no tempo da colheita", "evidenceRef": "Rute 1:22" }
+    ],
+    "relations": [
+      { "kind": "causa", "text": "O nome Mara tem um motivo declarado: o Todo-Poderoso lhe causou grande amargura.", "marker": "pois", "evidenceRef": "Rute 1:20" },
+      { "kind": "contraste", "text": "Cheia ela partiu, mas voltou despojada: o contraste resume a perda de Noemi.", "marker": "mas", "evidenceRef": "Rute 1:21" },
+      { "kind": "sequência", "text": "Assim Noemi voltou de Moabe com Rute: a cena da amargura termina em movimento, na colheita.", "marker": "Assim", "evidenceRef": "Rute 1:22" }
+    ],
+    "crossRefs": [
+      { "ref": "Êxodo 15:23", "bridge": "Mara nome das águas amargas" },
+      { "ref": "Salmos 13:1", "bridge": "Lamento que fala com Deus" },
+      { "ref": "1 Samuel 1:10", "bridge": "Amargura levada a Deus em oração" }
+    ],
+    "misreadings": [
+      { "text": "Noemi perdeu a fé e abandonou o Deus de Israel.", "why": "Ela continua falando do Senhor e do Todo-Poderoso e volta ao povo dele; sua fala é lamento, não abandono." },
+      { "text": "Sentir amargura é proibido para quem crê.", "why": "O texto registra a fala dela sem condená-la; a Bíblia guarda muitos lamentos parecidos." },
+      { "text": "Deus abandonou Noemi de uma vez para sempre.", "why": "Ela volta acompanhada de Rute e no princípio da colheita: o relato abre caminho, não fecha." }
+    ],
+    "centralInsight": "A perda pode fazer Deus parecer adversário",
+    "anchorQuestion": "Por que Noemi pediu que a chamassem de Mara em Rute 1:20?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente", "type": "true_false",
+      "question": "Em Rute 1:20, Noemi pediu que a chamassem de Mara por causa da grande amargura.",
+      "verseRef": "Rute 1:20", "correctOptionId": "true",
+      "evidenceSpan": "chamem-me de Mara, pois o Todo-Poderoso me causou grande amargura",
+      "feedbackCorrect": "Ela troca o nome e explica: grande amargura é o motivo.",
+      "feedbackWrong": { "false": "Releia Rute 1:20: ela mesma pede o nome e dá o motivo." },
+      "hint": "Veja o nome que ela mesma escolhe.",
+      "learningObjective": "Observar o pedido de Noemi em Rute 1:20.",
+      "evidence": ["Rute 1:20"]
+    },
+    {
+      "difficulty": "semente", "type": "find_in_text",
+      "question": "Em Rute 1:20, toque o nome que Noemi pede para si.",
+      "verseRef": "Rute 1:20",
+      "options": [{ "id": "a", "text": "Noemi" }, { "id": "b", "text": "Mara" }, { "id": "c", "text": "Todo-Poderoso" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamem-me de Mara",
+      "feedbackCorrect": "Ela pede o nome que combina com a amargura dela.",
+      "feedbackWrong": { "a": "Esse é o nome antigo, que ela recusa aqui.", "c": "Esse é Deus, a quem ela atribui a amargura." },
+      "hint": "É o nome amargo que ela mesma escolhe.",
+      "learningObjective": "Identificar o nome pedido por Noemi.",
+      "evidence": ["Rute 1:20"]
+    },
+    {
+      "difficulty": "semente", "type": "choice",
+      "question": "Segundo Rute 1:21, como Noemi diz que partiu e como voltou?",
+      "verseRef": "Rute 1:21",
+      "options": [
+        { "id": "a", "text": "Partiu vazia e voltou cheia de bens" },
+        { "id": "b", "text": "Partiu sozinha e voltou com os filhos" },
+        { "id": "c", "text": "Partiu cheia e voltou despojada" },
+        { "id": "d", "text": "Partiu doente e voltou curada a Belém" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Cheia parti, mas o Senhor me trouxe de volta despojada",
+      "feedbackCorrect": "Cheia ela partiu; despojada ela voltou para Belém.",
+      "feedbackWrong": { "a": "É o contrário: cheia na ida, vazia na volta.", "b": "Os filhos morreram em Moabe; ela volta com Rute.", "d": "Doença e cura não aparecem na fala dela." },
+      "hint": "Preste atenção nas duas palavras opostas.",
+      "learningObjective": "Observar o contraste cheia e despojada.",
+      "evidence": ["Rute 1:21"]
+    },
+    {
+      "difficulty": "semente", "type": "order",
+      "question": "Monte Rute 1:21 na ordem do texto.",
+      "verseRef": "Rute 1:21",
+      "options": [
+        { "id": "a", "text": "Cheia parti" },
+        { "id": "b", "text": "o Senhor me trouxe de volta despojada" },
+        { "id": "c", "text": "o Senhor se manifestou contra mim" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Cheia parti",
+      "feedbackCorrect": "Cheia na ida, despojada na volta, e o sentimento sobre Deus.",
+      "feedbackWrong": { "default": "Comece por como ela estava quando partiu." },
+      "hint": "A fala começa pelo passado dela.",
+      "learningObjective": "Reconhecer a sequência da fala de Noemi.",
+      "evidence": ["Rute 1:21"]
+    },
+    {
+      "difficulty": "semente", "type": "complete",
+      "question": "Em Rute 1:21, com que palavra Noemi descreve como ela partiu de Belém?",
+      "verseRef": "Rute 1:21",
+      "options": [{ "id": "a", "text": "Cheia" }, { "id": "b", "text": "Vazia" }, { "id": "c", "text": "Sozinha" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cheia parti",
+      "feedbackCorrect": "Ela partiu com marido e filhos: partiu completa.",
+      "feedbackWrong": { "b": "Vazia é como ela voltou, não como partiu.", "c": "Ela partiu acompanhada da família, não só." },
+      "hint": "É o oposto de como ela voltou.",
+      "learningObjective": "Lembrar como Noemi descreve sua partida.",
+      "evidence": ["Rute 1:21"]
+    },
+    {
+      "difficulty": "semente", "type": "connect",
+      "question": "O que Rute 1:20 comunica que se liga a este contexto?",
+      "verseRef": "Rute 1:20",
+      "passageA": { "ref": "Rute 1:20" },
+      "passageB": { "ref": "Contexto", "text": "Noemi volta a Belém viúva, sem filhos e sem sustento, depois de anos em Moabe." },
+      "options": [
+        { "id": "a", "text": "Alegria de quem voltou rica" },
+        { "id": "b", "text": "Amargura de quem voltou vazia" },
+        { "id": "c", "text": "Vergonha de ser reconhecida" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "me causou grande amargura",
+      "feedbackCorrect": "O nome novo nomeia a dor de voltar sem nada nem ninguém.",
+      "feedbackWrong": { "a": "Ela não celebra riqueza: ela lamenta a perda.", "c": "Ela fala com as mulheres, sem se esconder delas." },
+      "hint": "Veja o sentimento que ela mesma declara.",
+      "learningObjective": "Ligar o nome Mara à amargura da volta.",
+      "evidence": ["Rute 1:20"]
+    },
+    {
+      "difficulty": "caminhada", "type": "true_false",
+      "question": "Em Rute 1:20–21, Noemi liga o nome Mara ao que ela sente que o Todo-Poderoso fez com ela.",
+      "verseRef": "Rute 1:20–21", "correctOptionId": "true",
+      "evidenceSpan": "o Todo-Poderoso me causou grande amargura",
+      "feedbackCorrect": "O nome vem da leitura que ela faz da própria perda.",
+      "feedbackWrong": { "false": "Ela mesma explica o nome: o Todo-Poderoso lhe causou amargura." },
+      "hint": "Procure a explicação que ela dá do nome.",
+      "learningObjective": "Compreender a ligação entre o nome e a perda.",
+      "evidence": ["Rute 1:20–21"]
+    },
+    {
+      "difficulty": "caminhada", "type": "find_in_text",
+      "question": "Em Rute 1:21, toque a palavra que opõe como ela partiu e como voltou.",
+      "verseRef": "Rute 1:21",
+      "options": [{ "id": "a", "text": "então" }, { "id": "b", "text": "mas" }, { "id": "c", "text": "contra" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "Cheia parti, mas o Senhor me trouxe de volta despojada",
+      "feedbackCorrect": "Cheia na ida, despojada na volta: a palavrinha opõe os tempos.",
+      "feedbackWrong": { "a": "Essa palavra entra na pergunta das mulheres, sem opor.", "c": "Essa palavra fala de Deus, não opõe ida e volta." },
+      "hint": "Procure a conjunção que opõe cheia e vazia.",
+      "learningObjective": "Reconhecer o marcador de contraste em Rute 1:21.",
+      "evidence": ["Rute 1:21"]
+    },
+    {
+      "difficulty": "caminhada", "type": "choice",
+      "question": "Por que Noemi recusa o nome antigo em Rute 1:20–21?",
+      "verseRef": "Rute 1:20–21",
+      "options": [
+        { "id": "a", "text": "Porque saiu completa e retornou sem nada" },
+        { "id": "b", "text": "Porque as mulheres já usavam outro nome" },
+        { "id": "c", "text": "Porque Rute pediu que ela mudasse de nome" },
+        { "id": "d", "text": "Porque em Moabe nomes hebreus eram proibidos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cheia parti, mas o Senhor me trouxe de volta despojada",
+      "feedbackCorrect": "O nome antigo não cabe mais, na visão dela, em quem voltou vazia.",
+      "feedbackWrong": { "b": "As mulheres usam justamente o nome antigo dela.", "c": "Rute nem fala nesta cena de boas-vindas.", "d": "Nenhuma proibição de nomes é citada no texto." },
+      "hint": "Compare a ida e a volta dela.",
+      "learningObjective": "Relacionar a troca de nome à perda de Noemi.",
+      "evidence": ["Rute 1:20–21"]
+    },
+    {
+      "difficulty": "caminhada", "type": "order",
+      "question": "Como se encadeiam as falas em Rute 1:20–21?",
+      "verseRef": "Rute 1:20–21",
+      "options": [
+        { "id": "a", "text": "Ela recusa ser chamada pelo nome antigo" },
+        { "id": "b", "text": "Ela pede o nome que significa amarga" },
+        { "id": "c", "text": "Ela explica que voltou despojada" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Não me chamem de Noemi",
+      "feedbackCorrect": "Recusa, nome novo e explicação: é a ordem da fala dela.",
+      "feedbackWrong": { "default": "Comece pela recusa do nome antigo." },
+      "hint": "A explicação vem depois do nome novo.",
+      "learningObjective": "Compreender o encadeamento da fala de Noemi.",
+      "evidence": ["Rute 1:20–21"]
+    },
+    {
+      "difficulty": "caminhada", "type": "complete",
+      "question": "Em Rute 1:21, como Noemi diz que o Senhor a trouxe de volta?",
+      "verseRef": "Rute 1:21",
+      "options": [{ "id": "a", "text": "honrada" }, { "id": "b", "text": "despojada" }, { "id": "c", "text": "esquecida" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "me trouxe de volta despojada",
+      "feedbackCorrect": "Ela voltou sem marido, sem filhos e sem sustento.",
+      "feedbackWrong": { "a": "Honra é o que ela sente que perdeu no caminho.", "c": "Deus é justamente quem ela diz que a trouxe." },
+      "hint": "É o oposto de ter partido cheia.",
+      "learningObjective": "Compreender como Noemi descreve sua volta.",
+      "evidence": ["Rute 1:21"]
+    },
+    {
+      "difficulty": "caminhada", "type": "connect",
+      "question": "O que liga Rute 1:20 a Salmos 13:1?",
+      "verseRef": "Rute 1:20",
+      "passageA": { "ref": "Rute 1:20" },
+      "passageB": { "ref": "Salmos 13:1" },
+      "options": [
+        { "id": "a", "text": "Lamento que fala com Deus" },
+        { "id": "b", "text": "Silêncio diante do sofrimento" },
+        { "id": "c", "text": "Festa pelo fim da dor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Todo-Poderoso me causou grande amargura",
+      "feedbackCorrect": "Nos dois textos, a dor vira fala dirigida a Deus, não silêncio.",
+      "feedbackWrong": { "b": "Nenhum dos dois se cala: ambos falam da dor a Deus.", "c": "A dor ainda está presente nos dois textos." },
+      "hint": "Veja o que os dois fazem com a dor.",
+      "learningObjective": "Relacionar a fala de Noemi aos salmos de lamento.",
+      "evidence": ["Rute 1:20", "Salmos 13:1"]
+    },
+    {
+      "difficulty": "profundezas", "type": "true_false",
+      "question": "Rute 1:20–21 ensina que Noemi perdeu a fé e abandonou o Deus de Israel.",
+      "verseRef": "Rute 1:20–21", "correctOptionId": "false",
+      "evidenceSpan": "o Senhor se manifestou contra mim",
+      "feedbackCorrect": "Ela lamenta diante de Deus; não deixa de falar dele nem dele.",
+      "feedbackWrong": { "true": "Ela volta ao povo de Deus e fala dele: isso é lamento, não abandono." },
+      "hint": "Veja se ela para de falar de Deus.",
+      "learningObjective": "Distinguir lamento de abandono da fé.",
+      "evidence": ["Rute 1:20–21"]
+    },
+    {
+      "difficulty": "profundezas", "type": "find_in_text",
+      "question": "Em Rute 1:20, toque o que Noemi diz que o Todo-Poderoso lhe causou.",
+      "verseRef": "Rute 1:20",
+      "options": [{ "id": "a", "text": "chamem-me" }, { "id": "b", "text": "grande amargura" }, { "id": "c", "text": "Não" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "me causou grande amargura",
+      "feedbackCorrect": "É esse o sentimento que explica o nome novo dela.",
+      "feedbackWrong": { "a": "Isso é o pedido dela, não o que Deus lhe causou.", "c": "Isso abre a recusa do nome, sem nomear o sentimento." },
+      "hint": "Procure o sentimento no fim do versículo.",
+      "learningObjective": "Sustentar no texto o motivo do nome Mara.",
+      "evidence": ["Rute 1:20"]
+    },
+    {
+      "difficulty": "profundezas", "type": "choice",
+      "question": "Que leitura Rute 1:20–21 sustenta sobre a amargura de Noemi?",
+      "verseRef": "Rute 1:20–21",
+      "options": [
+        { "id": "a", "text": "Ela nega que Deus exista depois da perda" },
+        { "id": "b", "text": "Ela culpa Rute por tudo o que perdeu" },
+        { "id": "c", "text": "Ela nomeia a dor diante de Deus sem deixar de falar dele" },
+        { "id": "d", "text": "Ela ensina que lamentar é falta de fé" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o Senhor se manifestou contra mim, e o Todo-Poderoso tem me afligido",
+      "feedbackCorrect": "Ela diz a Deus o que sente, com nome e tudo: isso é lamento.",
+      "feedbackWrong": { "a": "Ela fala do Senhor o tempo todo; não nega Deus.", "b": "Rute não é culpada em nenhuma palavra dela.", "d": "O texto guarda o lamento dela sem condená-lo." },
+      "hint": "Veja diante de quem ela fala da dor.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre o lamento.",
+      "evidence": ["Rute 1:20–21"]
+    },
+    {
+      "difficulty": "profundezas", "type": "order",
+      "question": "Qual sequência revela o sentido de Rute 1:21–22?",
+      "verseRef": "Rute 1:21–22",
+      "options": [
+        { "id": "a", "text": "Ela partiu cheia de Belém com a família" },
+        { "id": "b", "text": "Ela volta despojada e pede outro nome" },
+        { "id": "c", "text": "Ela chega no princípio da colheita da cevada" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Cheia parti",
+      "feedbackCorrect": "A cena da maior dor termina justamente na época da colheita.",
+      "feedbackWrong": { "default": "Comece pela partida cheia; a colheita fecha a cena." },
+      "hint": "O tempo da colheita é o detalhe final.",
+      "learningObjective": "Perceber o sinal de abertura no fim da cena.",
+      "evidence": ["Rute 1:21–22"]
+    },
+    {
+      "difficulty": "profundezas", "type": "complete",
+      "question": "Em Rute 1:21, que nome Noemi questiona que as pessoas ainda lhe deem?",
+      "verseRef": "Rute 1:21",
+      "options": [{ "id": "a", "text": "Mara" }, { "id": "b", "text": "Noemi" }, { "id": "c", "text": "Cheia" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "vocês me chamam de Noemi?",
+      "feedbackCorrect": "Para ela, o nome antigo já não combina com quem voltou.",
+      "feedbackWrong": { "a": "Esse é o nome novo que ela pede, não questiona.", "c": "Isso descreve como ela partiu, não é nome." },
+      "hint": "É o nome que ela tinha antes da perda.",
+      "learningObjective": "Lembrar o nome que carrega a identidade perdida.",
+      "evidence": ["Rute 1:21"]
+    },
+    {
+      "difficulty": "profundezas", "type": "connect",
+      "question": "O que liga Rute 1:20 a Êxodo 15:23?",
+      "verseRef": "Rute 1:20",
+      "passageA": { "ref": "Rute 1:20" },
+      "passageB": { "ref": "Êxodo 15:23" },
+      "options": [
+        { "id": "a", "text": "Uma viagem pelo deserto" },
+        { "id": "b", "text": "Mara nome das águas amargas" },
+        { "id": "c", "text": "Água transformada em vinho" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamem-me de Mara",
+      "feedbackCorrect": "Em Êxodo, Mara é o lugar das águas amargas que não se podia beber.",
+      "feedbackWrong": { "a": "A viagem existe nos dois, mas a ponte está no nome.", "c": "Nenhum dos dois textos fala de vinho algum." },
+      "hint": "Compare o nome nos dois textos.",
+      "learningObjective": "Ligar o nome Mara ao seu sentido de amargura.",
+      "evidence": ["Rute 1:20", "Êxodo 15:23"]
+    }
+  ]
+}

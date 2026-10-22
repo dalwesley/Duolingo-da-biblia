@@ -1,0 +1,702 @@
+{
+ "study": {
+  "passageRef": "Marcos 1:14–17",
+  "passages": [
+   {
+    "ref": "Marcos 1:14–17"
+   }
+  ],
+  "context": "Depois do batismo e do deserto, Jesus começa a pregar na Galileia. Sua primeira mensagem anuncia que o tempo se cumpriu e chama pessoas a segui-lo.",
+  "keyword": "Reino",
+  "keywordGloss": "O governo de Deus que se aproxima em Jesus e pede resposta.",
+  "focusQuestion": "Que área da sua vida precisa ouvir hoje o chamado de Jesus?",
+  "reflectionPrompts": [
+   "Tempo cumprido",
+   "Reino próximo",
+   "Seguir Jesus"
+  ],
+  "facts": [
+   {
+    "text": "Jesus foi para a Galileia pregando o evangelho de Deus.",
+    "evidenceRef": "Marcos 1:14",
+    "evidenceSpan": "Jesus foi para a Galileia, pregando o evangelho de Deus"
+   },
+   {
+    "text": "Jesus anunciou que o tempo está cumprido.",
+    "evidenceRef": "Marcos 1:15",
+    "evidenceSpan": "O tempo está cumprido"
+   },
+   {
+    "text": "Jesus anunciou que o reino de Deus está próximo.",
+    "evidenceRef": "Marcos 1:15",
+    "evidenceSpan": "o reino de Deus está próximo"
+   },
+   {
+    "text": "Jesus chamou as pessoas ao arrependimento e à fé no evangelho.",
+    "evidenceRef": "Marcos 1:15",
+    "evidenceSpan": "arrependam-se e creiam no evangelho"
+   },
+   {
+    "text": "Jesus chamou Simão e André para segui-lo.",
+    "evidenceRef": "Marcos 1:16–17",
+    "evidenceSpan": "viu Simão e André"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "reino de Deus",
+    "gloss": "O governo de Deus, que em Jesus se faz próximo das pessoas."
+   },
+   {
+    "term": "evangelho",
+    "gloss": "A boa notícia de Deus anunciada por Jesus na Galileia."
+   },
+   {
+    "term": "arrependam-se",
+    "gloss": "Mudem de rumo, na resposta que Jesus pede a quem ouve."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jesus prega na Galileia",
+    "evidenceRef": "Marcos 1:14"
+   },
+   {
+    "label": "O tempo se cumpriu",
+    "evidenceRef": "Marcos 1:15"
+   },
+   {
+    "label": "O reino está próximo",
+    "evidenceRef": "Marcos 1:15"
+   },
+   {
+    "label": "Jesus chama seguidores",
+    "evidenceRef": "Marcos 1:17"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Depois da prisão de João, Jesus vai à Galileia e prega.",
+    "marker": "Depois",
+    "evidenceRef": "Marcos 1:14"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao chamado de Jesus, os pescadores deixam as redes e o seguem de imediato.",
+    "marker": "imediatamente",
+    "evidenceRef": "Marcos 1:18"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Daniel 7:14",
+    "bridge": "Reino que não terá fim"
+   },
+   {
+    "ref": "Mateus 4:17",
+    "bridge": "Jesus anuncia reino próximo"
+   },
+   {
+    "ref": "Lucas 17:20–21",
+    "bridge": "Reino presente entre vocês"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O reino de Deus é só um território político desta terra.",
+    "why": "Jesus o anuncia junto ao arrependimento e à fé no evangelho."
+   },
+   {
+    "text": "Arrepender-se é apenas sentir tristeza pelo erro.",
+    "why": "No contexto, quem ouve muda de rumo e segue Jesus de imediato."
+   },
+   {
+    "text": "O reino é realidade tão distante que não pede resposta hoje.",
+    "why": "Jesus diz que ele está próximo e já chama pessoas a crer."
+   }
+  ],
+  "centralInsight": "Em Jesus o reino de Deus se aproximou e chama ao arrependimento e à fé",
+  "anchorQuestion": "Segundo Marcos 1:15, o que Jesus pede a quem ouve o evangelho?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Marcos 1:15, Jesus anuncia que o tempo está cumprido e o reino de Deus está próximo",
+   "verseRef": "Marcos 1:15",
+   "correctOptionId": "true",
+   "evidenceSpan": "O tempo está cumprido, e o reino de Deus está próximo",
+   "feedbackCorrect": "Essa é a primeira mensagem de Jesus registrada por Marcos.",
+   "feedbackWrong": {
+    "false": "Releia a fala de Jesus no versículo inteiro."
+   },
+   "hint": "Leia a fala completa de Jesus.",
+   "learningObjective": "Observar o anúncio inicial de Jesus.",
+   "evidence": [
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Marcos 1:15, toque aquilo cuja chegada Jesus anuncia",
+   "verseRef": "Marcos 1:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "O tempo"
+    },
+    {
+     "id": "b",
+     "text": "reino de Deus"
+    },
+    {
+     "id": "c",
+     "text": "evangelho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o reino de Deus está próximo",
+   "feedbackCorrect": "O que está próximo, anuncia Jesus, é o governo de Deus.",
+   "feedbackWrong": {
+    "a": "Isso está cumprido, não é o que está próximo.",
+    "c": "Isso é a boa notícia a ser crida, no fim do verso."
+   },
+   "hint": "Procure o que vem antes de está próximo.",
+   "learningObjective": "Identificar o centro do anúncio de Jesus.",
+   "evidence": [
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Marcos 1:14, para onde Jesus foi pregar depois que João foi preso?",
+   "verseRef": "Marcos 1:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Para Jerusalém, no templo da cidade"
+    },
+    {
+     "id": "b",
+     "text": "Para o deserto, ficar sozinho"
+    },
+    {
+     "id": "c",
+     "text": "Para Nazaré, rever sua família"
+    },
+    {
+     "id": "d",
+     "text": "Para a Galileia, pregando o evangelho"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "Jesus foi para a Galileia, pregando o evangelho de Deus",
+   "feedbackCorrect": "Marcos situa o começo da pregação de Jesus na Galileia.",
+   "feedbackWrong": {
+    "a": "Jerusalém aparece no fim do caminho, não no começo.",
+    "b": "O deserto vem antes, nos versículos anteriores.",
+    "c": "O texto nomeia outra região para a pregação."
+   },
+   "hint": "Veja o lugar nomeado no versículo.",
+   "learningObjective": "Observar onde começa a pregação de Jesus.",
+   "evidence": [
+    "Marcos 1:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Marcos 1:15 na ordem do texto",
+   "verseRef": "Marcos 1:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "O tempo está cumprido"
+    },
+    {
+     "id": "b",
+     "text": "o reino de Deus está próximo"
+    },
+    {
+     "id": "c",
+     "text": "arrependam-se e creiam no evangelho"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O tempo está cumprido, e o reino de Deus está próximo",
+   "feedbackCorrect": "Tempo cumprido, reino próximo e então o chamado a crer.",
+   "feedbackWrong": {
+    "default": "Comece pelo tempo que se cumpriu."
+   },
+   "hint": "O chamado a crer fecha o versículo.",
+   "learningObjective": "Reconhecer a sequência de Marcos 1:15.",
+   "evidence": [
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Marcos 1:17, Jesus tornaria Simão e André pescadores de quê?",
+   "verseRef": "Marcos 1:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "pregadores"
+    },
+    {
+     "id": "b",
+     "text": "pescadores"
+    },
+    {
+     "id": "c",
+     "text": "discípulos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "eu os tornarei pescadores de homens",
+   "feedbackCorrect": "Quem pescava peixes passaria a reunir pessoas para Jesus.",
+   "feedbackWrong": {
+    "a": "A imagem usada por Jesus vem do ofício deles no mar.",
+    "c": "Eles serão seguidores, mas a imagem é a do ofício."
+   },
+   "hint": "Pense no ofício deles junto ao mar.",
+   "learningObjective": "Lembrar a imagem usada no chamado dos pescadores.",
+   "evidence": [
+    "Marcos 1:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Marcos 1:15 comunica que se liga a este contexto?",
+   "verseRef": "Marcos 1:14–15",
+   "passageA": {
+    "ref": "Marcos 1:15"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jesus começa a anunciar as boas notícias de Deus na Galileia."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Boa notícia sem chamado nenhum"
+    },
+    {
+     "id": "b",
+     "text": "O reino chegou perto"
+    },
+    {
+     "id": "c",
+     "text": "Tempo ainda muito distante"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o reino de Deus está próximo",
+   "feedbackCorrect": "A pregação de Jesus anuncia a chegada próxima do governo de Deus.",
+   "feedbackWrong": {
+    "a": "O anúncio termina com um chamado claro a crer.",
+    "c": "Jesus diz que o tempo se cumpriu, não que falta muito."
+   },
+   "hint": "Veja o que a fala diz sobre o tempo.",
+   "learningObjective": "Ligar Marcos 1:15 ao começo da pregação de Jesus.",
+   "evidence": [
+    "Marcos 1:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Marcos 1:17–18, Simão e André deixam as redes e seguem Jesus logo após o chamado dele",
+   "verseRef": "Marcos 1:17–18",
+   "correctOptionId": "true",
+   "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+   "feedbackCorrect": "A resposta ao chamado é imediata, sem deixar para depois.",
+   "feedbackWrong": {
+    "false": "Releia a velocidade da resposta no último versículo."
+   },
+   "hint": "Repare na pressa da resposta deles.",
+   "learningObjective": "Compreender a resposta imediata ao chamado de Jesus.",
+   "evidence": [
+    "Marcos 1:17–18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Marcos 1:14, toque a palavra que marca o que vem depois na história",
+   "verseRef": "Marcos 1:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Depois"
+    },
+    {
+     "id": "b",
+     "text": "preso"
+    },
+    {
+     "id": "c",
+     "text": "Galileia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Depois que João foi preso",
+   "feedbackCorrect": "Essa palavra situa a pregação depois da prisão de João.",
+   "feedbackWrong": {
+    "b": "Isso é o que aconteceu com João, não a marca de tempo.",
+    "c": "Isso é o lugar da pregação, não a marca de tempo."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer a marca de sequência na narrativa.",
+   "evidence": [
+    "Marcos 1:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "O que o anúncio de Marcos 1:15 pede de quem ouve?",
+   "verseRef": "Marcos 1:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Apenas admirar as palavras de Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Esperar sem mudar nada na vida"
+    },
+    {
+     "id": "c",
+     "text": "Mudar de rumo e confiar na boa notícia"
+    },
+    {
+     "id": "d",
+     "text": "Decorar a mensagem para repetir depois"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "arrependam-se e creiam no evangelho",
+   "feedbackCorrect": "O anúncio pede mudança de rumo e confiança na boa notícia.",
+   "feedbackWrong": {
+    "a": "Admirar sem responder não é o pedido de Jesus.",
+    "b": "O tempo cumprido pede resposta, não espera passiva.",
+    "d": "Repetir de cor não substitui mudar de rumo e crer."
+   },
+   "hint": "Veja os dois pedidos no fim do versículo.",
+   "learningObjective": "Relacionar o anúncio do reino à resposta pedida.",
+   "evidence": [
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Marcos 1:14–16?",
+   "verseRef": "Marcos 1:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "João é preso"
+    },
+    {
+     "id": "b",
+     "text": "Jesus prega na Galileia"
+    },
+    {
+     "id": "c",
+     "text": "Jesus chama os primeiros pescadores"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Depois que João foi preso, Jesus foi para a Galileia",
+   "feedbackCorrect": "Prisão de João, pregação de Jesus e chamado de pescadores.",
+   "feedbackWrong": {
+    "default": "Comece pelo que acontece com João Batista."
+   },
+   "hint": "Os pescadores entram no fim da sequência.",
+   "learningObjective": "Compreender o movimento do começo do ministério.",
+   "evidence": [
+    "Marcos 1:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Marcos 1:13, por quantos dias Jesus permaneceu no deserto?",
+   "verseRef": "Marcos 1:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "sete"
+    },
+    {
+     "id": "b",
+     "text": "doze"
+    },
+    {
+     "id": "c",
+     "text": "quarenta"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "permaneceu no deserto durante quarenta dias",
+   "feedbackCorrect": "Foram dias de tentação antes do anúncio na Galileia.",
+   "feedbackWrong": {
+    "a": "O número do texto é bem maior que uma semana.",
+    "b": "Doze lembra os apóstolos, mas não é este número."
+   },
+   "hint": "É o mesmo número dos anos de Israel no deserto.",
+   "learningObjective": "Compreender o tempo de tentação antes da pregação.",
+   "evidence": [
+    "Marcos 1:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Marcos 1:15 a Mateus 4:17?",
+   "verseRef": "Marcos 1:15",
+   "passageA": {
+    "ref": "Marcos 1:15"
+   },
+   "passageB": {
+    "ref": "Mateus 4:17"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Reino próximo pede arrependimento"
+    },
+    {
+     "id": "b",
+     "text": "Reino dispensa qualquer resposta"
+    },
+    {
+     "id": "c",
+     "text": "Jesus prega só em Jerusalém"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "arrependam-se e creiam no evangelho",
+   "feedbackCorrect": "Mateus registra o mesmo anúncio e o mesmo chamado.",
+   "feedbackWrong": {
+    "b": "Nos dois textos o anúncio vem com chamado claro.",
+    "c": "Os dois situam a pregação na Galileia, não em Jerusalém."
+   },
+   "hint": "Compare o pedido que acompanha o anúncio.",
+   "learningObjective": "Relacionar o anúncio do reino nos dois evangelhos.",
+   "evidence": [
+    "Marcos 1:15",
+    "Mateus 4:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Marcos 1:17–18, Simão e André pediram a Jesus um prazo para pensar antes de segui-lo",
+   "verseRef": "Marcos 1:17–18",
+   "correctOptionId": "false",
+   "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+   "feedbackCorrect": "Eles deixam as redes e o seguem de imediato, sem prazo pedido.",
+   "feedbackWrong": {
+    "true": "Releia a rapidez com que eles deixam as redes."
+   },
+   "hint": "Repare na velocidade da resposta deles.",
+   "learningObjective": "Interpretar a prontidão da resposta ao chamado de Jesus.",
+   "evidence": [
+    "Marcos 1:17–18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Marcos 1:18, toque a palavra que mostra a prontidão da resposta dos pescadores",
+   "verseRef": "Marcos 1:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "redes"
+    },
+    {
+     "id": "b",
+     "text": "imediatamente"
+    },
+    {
+     "id": "c",
+     "text": "seguiram"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+   "feedbackCorrect": "A palavra mostra resposta sem demora ao chamado de Jesus.",
+   "feedbackWrong": {
+    "a": "Isso é o que eles deixam, não a prontidão da resposta.",
+    "c": "Isso é a ação feita, não a prontidão com que é feita."
+   },
+   "hint": "Procure a palavra entre deixar e seguir.",
+   "learningObjective": "Sustentar com o texto a prontidão de quem segue Jesus.",
+   "evidence": [
+    "Marcos 1:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Marcos 1:15 sustenta sobre o reino de Deus?",
+   "verseRef": "Marcos 1:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "É só um território político desta terra"
+    },
+    {
+     "id": "b",
+     "text": "O governo de Deus se aproxima e chama à confiança"
+    },
+    {
+     "id": "c",
+     "text": "É promessa futura que nada muda no presente"
+    },
+    {
+     "id": "d",
+     "text": "Pede fé sem nenhuma mudança de rumo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o reino de Deus está próximo",
+   "feedbackCorrect": "O governo de Deus se aproxima em Jesus e pede resposta.",
+   "feedbackWrong": {
+    "a": "O anúncio vem ligado a arrependimento e fé, não a território.",
+    "c": "Próximo e com chamado, ele já toca o presente de quem ouve.",
+    "d": "O mesmo versículo pede mudar de rumo e crer."
+   },
+   "hint": "Junte anúncio e chamado do mesmo versículo.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta.",
+   "evidence": [
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido do reino anunciado em Marcos 1:15?",
+   "verseRef": "Marcos 1:17–18",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus promete um reino sem fim"
+    },
+    {
+     "id": "b",
+     "text": "Jesus anuncia o reino próximo"
+    },
+    {
+     "id": "c",
+     "text": "Pescadores deixam redes e seguem Jesus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+   "feedbackCorrect": "Promessa antiga, anúncio de Jesus, resposta de seguidores.",
+   "feedbackWrong": {
+    "default": "Siga promessa, anúncio de Jesus e resposta."
+   },
+   "hint": "A resposta dos pescadores fecha a sequência.",
+   "learningObjective": "Ver o reino como fio da promessa à resposta.",
+   "evidence": [
+    "Marcos 1:17–18",
+    "Daniel 7:14",
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Marcos 1:15, o que Jesus pede que as pessoas façam no evangelho?",
+   "verseRef": "Marcos 1:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "duvidem"
+    },
+    {
+     "id": "b",
+     "text": "esperem"
+    },
+    {
+     "id": "c",
+     "text": "creiam"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "arrependam-se e creiam no evangelho",
+   "feedbackCorrect": "A resposta ao reino próximo é confiar na boa notícia.",
+   "feedbackWrong": {
+    "a": "Jesus pede o contrário de duvidar da boa notícia.",
+    "b": "Esperar sem crer não é o pedido do versículo."
+   },
+   "hint": "É o segundo pedido de Jesus no versículo.",
+   "learningObjective": "Lembrar o termo que carrega a resposta de fé.",
+   "evidence": [
+    "Marcos 1:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Marcos 1:15 a Daniel 7:14?",
+   "verseRef": "Marcos 1:15",
+   "passageA": {
+    "ref": "Marcos 1:15"
+   },
+   "passageB": {
+    "ref": "Daniel 7:14"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Reinos humanos duram para sempre"
+    },
+    {
+     "id": "b",
+     "text": "Reino de Deus não terá fim"
+    },
+    {
+     "id": "c",
+     "text": "Daniel anuncia outro deus"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o reino de Deus está próximo",
+   "feedbackCorrect": "Daniel viu um reino eterno; Jesus anuncia sua chegada.",
+   "feedbackWrong": {
+    "a": "Daniel contrasta esse reino com os que passam.",
+    "c": "Daniel fala do domínio dado pelo próprio Deus."
+   },
+   "hint": "Veja quanto tempo dura o reino em Daniel.",
+   "learningObjective": "Ligar o reino anunciado por Jesus à promessa antiga.",
+   "evidence": [
+    "Marcos 1:15",
+    "Daniel 7:14"
+   ]
+  }
+ ]
+}

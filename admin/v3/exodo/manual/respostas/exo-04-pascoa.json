@@ -1,0 +1,715 @@
+{
+ "study": {
+  "passageRef": "Êxodo 12:6–11",
+  "passages": [
+   {
+    "ref": "Êxodo 12:1–7"
+   },
+   {
+    "ref": "Êxodo 12:8–13"
+   }
+  ],
+  "context": "Na noite da saída, cada casa de Israel toma um cordeiro, marca as portas com seu sangue e come às pressas, pronta para partir do Egito.",
+  "keyword": "Cordeiro",
+  "keywordGloss": "Animal sem defeito cujo sangue marcava as casas que Deus pouparia.",
+  "focusQuestion": "O que te lembra, no dia a dia, que sua liberdade custou algo a alguém?",
+  "reflectionPrompts": [
+   "Sangue que protege",
+   "Comer prontos para partir",
+   "Deus passa e poupa"
+  ],
+  "facts": [
+   {
+    "text": "Cada casa tomaria um cordeiro no décimo dia do mês.",
+    "evidenceRef": "Êxodo 12:3",
+    "evidenceSpan": "cada um tomará para si um cordeiro"
+   },
+   {
+    "text": "O cordeiro devia ser sem defeito, macho de um ano.",
+    "evidenceRef": "Êxodo 12:5",
+    "evidenceSpan": "deve ser sem defeito, macho de um ano"
+   },
+   {
+    "text": "O sangue seria colocado nas ombreiras e na verga da porta.",
+    "evidenceRef": "Êxodo 12:7",
+    "evidenceSpan": "o colocarão em ambas as ombreiras e na verga da porta"
+   },
+   {
+    "text": "A carne seria comida assada no fogo, com pães asmos e ervas amargas.",
+    "evidenceRef": "Êxodo 12:8",
+    "evidenceSpan": "comerão a carne assada no fogo"
+   },
+   {
+    "text": "O povo comeria às pressas, com lombos cingidos e cajado na mão.",
+    "evidenceRef": "Êxodo 12:11",
+    "evidenceSpan": "vocês o comerão às pressas"
+   },
+   {
+    "text": "Ao ver o sangue, Deus passaria sem praga destruidora naquelas casas.",
+    "evidenceRef": "Êxodo 12:13",
+    "evidenceSpan": "quando eu vir o sangue, passarei por vós"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "cordeiro",
+    "gloss": "Animal escolhido por casa, morto na noite em que Deus liberta Israel."
+   },
+   {
+    "term": "sangue",
+    "gloss": "Sinal nas portas das casas que Deus veria e pouparia naquela noite."
+   },
+   {
+    "term": "Páscoa",
+    "gloss": "Nome daquela noite de passagem e libertação dada pelo Senhor."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Cordeiro tomado e guardado por dias",
+    "evidenceRef": "Êxodo 12:3–6"
+   },
+   {
+    "label": "Sangue marca as portas das casas",
+    "evidenceRef": "Êxodo 12:7"
+   },
+   {
+    "label": "Refeição comida às pressas, prontos para sair",
+    "evidenceRef": "Êxodo 12:8–11"
+   },
+   {
+    "label": "Deus passa e poupa as casas marcadas",
+    "evidenceRef": "Êxodo 12:12–13"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Cada um toma um cordeiro para sua casa, segundo o tamanho dela.",
+    "marker": "para",
+    "evidenceRef": "Êxodo 12:3"
+   },
+   {
+    "kind": "sequência",
+    "text": "O cordeiro é guardado até o décimo quarto dia, quando é imolado ao entardecer.",
+    "marker": "até",
+    "evidenceRef": "Êxodo 12:6"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao ver o sangue nas casas, Deus passa por elas sem praga destruidora.",
+    "marker": "quando",
+    "evidenceRef": "Êxodo 12:13"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "João 1:29",
+    "bridge": "Jesus é o Cordeiro de Deus"
+   },
+   {
+    "ref": "1 Coríntios 5:7",
+    "bridge": "Cristo nosso Cordeiro pascal"
+   },
+   {
+    "ref": "Hebreus 11:28",
+    "bridge": "Páscoa celebrada pela fé"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O sangue nas portas é uma magia que obriga Deus a proteger a casa.",
+    "why": "É Deus quem anuncia que verá o sangue e passará; a iniciativa e a ação são dele."
+   },
+   {
+    "text": "A Páscoa é só uma refeição especial, sem relação com a libertação.",
+    "why": "O povo come de cajado na mão e às pressas, porque Deus o tira do Egito naquela noite."
+   },
+   {
+    "text": "Qualquer cordeiro serviria, de qualquer jeito, sem cuidado na escolha.",
+    "why": "O texto pede cordeiro sem defeito, macho de um ano, guardado até o dia certo."
+   }
+  ],
+  "centralInsight": "A libertação tem custo",
+  "anchorQuestion": "Segundo Êxodo 12:13, o que Deus faria ao ver o sangue nas casas?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Êxodo 12:5, o cordeiro da Páscoa podia ter qualquer defeito, desde que fosse macho de um ano.",
+   "verseRef": "Êxodo 12:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "deve ser sem defeito, macho de um ano",
+   "feedbackCorrect": "O cordeiro devia ser sem defeito, macho de um ano, escolhido com cuidado.",
+   "feedbackWrong": {
+    "true": "Releia Êxodo 12:5 e veja as duas exigências sobre o cordeiro."
+   },
+   "hint": "Veja como o cordeiro devia ser escolhido.",
+   "learningObjective": "Observar o cuidado na escolha do cordeiro pascal.",
+   "evidence": [
+    "Êxodo 12:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Êxodo 12:7, toque o primeiro lugar citado para colocar o sangue.",
+   "verseRef": "Êxodo 12:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "ambas as ombreiras"
+    },
+    {
+     "id": "b",
+     "text": "verga da porta"
+    },
+    {
+     "id": "c",
+     "text": "casas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o colocarão em ambas as ombreiras e na verga da porta",
+   "feedbackCorrect": "O sangue marca primeiro os lados da porta, e depois a parte de cima.",
+   "feedbackWrong": {
+    "b": "Isso aparece depois, na parte de cima da porta da casa.",
+    "c": "Isso indica onde o cordeiro seria comido, não o lugar do sangue."
+   },
+   "hint": "Leia a ordem dos lugares citados no versículo.",
+   "learningObjective": "Identificar onde o sangue seria colocado nas casas.",
+   "evidence": [
+    "Êxodo 12:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Êxodo 12:8, como a carne do cordeiro seria comida naquela noite?",
+   "verseRef": "Êxodo 12:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Crua, com ervas frescas e vinho"
+    },
+    {
+     "id": "b",
+     "text": "Cozida em água, com pães levedados"
+    },
+    {
+     "id": "c",
+     "text": "Assada no fogo, com pães asmos e ervas amargas"
+    },
+    {
+     "id": "d",
+     "text": "Frita em azeite, com frutas e mel"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "comerão a carne assada no fogo, com pães asmos; a comerão com ervas amargas",
+   "feedbackCorrect": "Assada no fogo, com pão sem fermento e ervas amargas naquela noite.",
+   "feedbackWrong": {
+    "a": "Êxodo 12:9 proíbe comer a carne crua na noite da Páscoa.",
+    "b": "Cozida em água é justamente o que o texto manda não fazer.",
+    "d": "O preparo citado é no fogo, com pães asmos e ervas amargas."
+   },
+   "hint": "Leia o preparo e os acompanhamentos citados.",
+   "learningObjective": "Observar como a refeição pascal seria feita.",
+   "evidence": [
+    "Êxodo 12:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Êxodo 12:6–7 na ordem do texto.",
+   "verseRef": "Êxodo 12:6–7",
+   "options": [
+    {
+     "id": "a",
+     "text": "o guardarão até o décimo quarto dia deste mês"
+    },
+    {
+     "id": "b",
+     "text": "toda a congregação de Israel o imolará no crepúsculo da tarde"
+    },
+    {
+     "id": "c",
+     "text": "pegarão o sangue e o colocarão em ambas as ombreiras"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o guardarão até o décimo quarto dia deste mês",
+   "feedbackCorrect": "Guardar até o dia certo, imolar ao entardecer e marcar as portas.",
+   "feedbackWrong": {
+    "default": "Comece por guardar o cordeiro; o sangue nas portas fecha."
+   },
+   "hint": "O primeiro trecho fala de guardar por dias.",
+   "learningObjective": "Reconhecer a sequência do preparo da Páscoa.",
+   "evidence": [
+    "Êxodo 12:6–7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Êxodo 12:8, com que tipo de ervas a carne seria comida?",
+   "verseRef": "Êxodo 12:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "amargas"
+    },
+    {
+     "id": "b",
+     "text": "doces"
+    },
+    {
+     "id": "c",
+     "text": "frescas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a comerão com ervas amargas",
+   "feedbackCorrect": "O sabor amargo acompanhava a memória da servidão que ficava para trás.",
+   "feedbackWrong": {
+    "b": "O texto escolhe justamente o sabor oposto para aquela refeição.",
+    "c": "O texto não fala do frescor, e sim do caráter dessas ervas."
+   },
+   "hint": "Leia o último acompanhamento citado no versículo.",
+   "learningObjective": "Lembrar o acompanhamento da refeição pascal.",
+   "evidence": [
+    "Êxodo 12:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Êxodo 12:13 comunica que se liga a este contexto?",
+   "verseRef": "Êxodo 12:13",
+   "passageA": {
+    "ref": "Êxodo 12:13"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O sangue nas portas marca as casas que Deus poupará naquela noite."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sangue protege as casas marcadas"
+    },
+    {
+     "id": "b",
+     "text": "As casas se salvam sozinhas"
+    },
+    {
+     "id": "c",
+     "text": "O faraó poupa as casas marcadas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando eu vir o sangue, passarei por vós",
+   "feedbackCorrect": "Ao ver o sinal, Deus passa sem trazer a praga destruidora à casa.",
+   "feedbackWrong": {
+    "b": "Quem passa e poupa é Deus ao ver o sinal nas portas.",
+    "c": "O faraó não é quem decide poupar as casas naquela noite."
+   },
+   "hint": "Veja o que Deus faz ao ver o sinal.",
+   "learningObjective": "Ligar o sangue nas portas à proteção de Deus.",
+   "evidence": [
+    "Êxodo 12:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Êxodo 12:4, uma casa pequena devia ficar com o cordeiro todo em vez de chamar o vizinho mais próximo.",
+   "verseRef": "Êxodo 12:4",
+   "correctOptionId": "false",
+   "evidenceSpan": "ele convidará o seu vizinho mais próximo",
+   "feedbackCorrect": "Casa pequena partilha o cordeiro com o vizinho mais próximo da casa.",
+   "feedbackWrong": {
+    "true": "Releia Êxodo 12:4 e veja a solução para a casa pequena."
+   },
+   "hint": "Veja a solução dada para casas pequenas.",
+   "learningObjective": "Compreender a partilha do cordeiro entre vizinhos.",
+   "evidence": [
+    "Êxodo 12:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Êxodo 12:13, toque a palavrinha que liga o ver de Deus ao passar dele.",
+   "verseRef": "Êxodo 12:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "quando"
+    },
+    {
+     "id": "b",
+     "text": "sangue"
+    },
+    {
+     "id": "c",
+     "text": "praga"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando eu vir o sangue, passarei por vós",
+   "feedbackCorrect": "Ao ver o sinal, Deus passa sem atingir as casas marcadas na noite.",
+   "feedbackWrong": {
+    "b": "Isso é o sinal visto por Deus, não a ligação entre ver e passar.",
+    "c": "Isso é o que não haverá nas casas marcadas pelo sinal."
+   },
+   "hint": "É a primeira palavrinha da promessa final.",
+   "learningObjective": "Reconhecer a ligação entre o sinal e a ação de Deus.",
+   "evidence": [
+    "Êxodo 12:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Êxodo 12:11 mostra o jeito de comer a Páscoa naquela noite?",
+   "verseRef": "Êxodo 12:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo come pronto para partir naquela noite"
+    },
+    {
+     "id": "b",
+     "text": "O povo come sem pressa, celebrando por dias"
+    },
+    {
+     "id": "c",
+     "text": "O povo come escondido, com medo do vizinho"
+    },
+    {
+     "id": "d",
+     "text": "O povo come depois de descansar da viagem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vocês o comerão às pressas; essa é a Páscoa do Senhor",
+   "feedbackCorrect": "Lombos cingidos, sapatos nos pés e cajado na mão mostram partida perto.",
+   "feedbackWrong": {
+    "b": "A refeição é às pressas, não uma celebração sem hora para sair.",
+    "c": "O vizinho pode até partilhar o cordeiro; não há medo dele aqui.",
+    "d": "A viagem ainda vai começar; eles comem prontos para sair."
+   },
+   "hint": "Repare na roupa, nos sapatos e no cajado citados.",
+   "learningObjective": "Relacionar o modo de comer com a saída iminente.",
+   "evidence": [
+    "Êxodo 12:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o preparo em Êxodo 12:6–7?",
+   "verseRef": "Êxodo 12:6–7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cordeiro guardado até o décimo quarto dia"
+    },
+    {
+     "id": "b",
+     "text": "Congregação imola o cordeiro ao entardecer"
+    },
+    {
+     "id": "c",
+     "text": "Sangue marca as portas das casas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o guardarão até o décimo quarto dia deste mês",
+   "feedbackCorrect": "Guardar, imolar e marcar as portas formam o preparo da noite.",
+   "feedbackWrong": {
+    "default": "Comece pelo cordeiro guardado; as portas marcadas fecham."
+   },
+   "hint": "As portas são marcadas depois da morte do cordeiro.",
+   "learningObjective": "Compreender os passos do preparo pascal em ordem.",
+   "evidence": [
+    "Êxodo 12:6–7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Êxodo 12:6, o que a congregação fará com o cordeiro ao entardecer?",
+   "verseRef": "Êxodo 12:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "imolará"
+    },
+    {
+     "id": "b",
+     "text": "guardará"
+    },
+    {
+     "id": "c",
+     "text": "comerá"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "toda a congregação de Israel o imolará no crepúsculo da tarde",
+   "feedbackCorrect": "Depois de guardado por dias, o cordeiro é morto ao entardecer certo.",
+   "feedbackWrong": {
+    "b": "Guardar acontece antes, até chegar o décimo quarto dia do mês.",
+    "c": "Comer vem depois, na refeição da noite com as casas marcadas."
+   },
+   "hint": "Leia o verbo ligado ao entardecer do dia certo.",
+   "learningObjective": "Compreender o momento central do preparo pascal.",
+   "evidence": [
+    "Êxodo 12:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Êxodo 12:13 a João 1:29?",
+   "verseRef": "Êxodo 12:13",
+   "passageA": {
+    "ref": "Êxodo 12:13"
+   },
+   "passageB": {
+    "ref": "João 1:29"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus é o Cordeiro de Deus"
+    },
+    {
+     "id": "b",
+     "text": "João Batista repete a Páscoa antiga"
+    },
+    {
+     "id": "c",
+     "text": "Cordeiros salvam por si mesmos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando eu vir o sangue, passarei por vós",
+   "feedbackCorrect": "João aponta Jesus com a mesma imagem do cordeiro que tira o pecado.",
+   "feedbackWrong": {
+    "b": "João anuncia uma pessoa, não repete o rito da noite do Egito.",
+    "c": "Na Páscoa, quem poupa as casas é Deus ao ver o sinal dado."
+   },
+   "hint": "Veja como João chama Jesus ao vê-lo chegar.",
+   "learningObjective": "Relacionar o cordeiro pascal com a apresentação de Jesus.",
+   "evidence": [
+    "Êxodo 12:13",
+    "João 1:29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Êxodo 12:12–13, Deus apresenta o sangue como sinal visto por ele, que passa sem praga destruidora nas casas marcadas.",
+   "verseRef": "Êxodo 12:12–13",
+   "correctOptionId": "true",
+   "evidenceSpan": "quando eu vir o sangue, passarei por vós",
+   "feedbackCorrect": "O sinal está nas portas, e é Deus quem vê, passa e poupa a casa.",
+   "feedbackWrong": {
+    "false": "Releia Êxodo 12:13 e veja quem vê o sinal e o que ele faz."
+   },
+   "hint": "Veja quem age ao ver o sinal nas portas.",
+   "learningObjective": "Interpretar o sangue como sinal diante de Deus.",
+   "evidence": [
+    "Êxodo 12:12–13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Êxodo 12:12, toque o trecho que mostra juízo além dos primogênitos.",
+   "verseRef": "Êxodo 12:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "deuses do Egito"
+    },
+    {
+     "id": "b",
+     "text": "terra do Egito"
+    },
+    {
+     "id": "c",
+     "text": "todos os primogênitos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "executarei juízo sobre todos os deuses do Egito",
+   "feedbackCorrect": "Naquela noite, o juízo alcança também os poderes adorados no Egito.",
+   "feedbackWrong": {
+    "b": "Isso nomeia o lugar da passagem, não o alvo além das pessoas.",
+    "c": "Isso é o alvo principal citado antes, não o alvo além dele."
+   },
+   "hint": "Procure um alvo que não é gente nem animal.",
+   "learningObjective": "Sustentar com o texto o alcance do juízo daquela noite.",
+   "evidence": [
+    "Êxodo 12:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Êxodo 12:12–13 sustenta sobre a libertação daquela noite?",
+   "verseRef": "Êxodo 12:12–13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Israel se poupa pela própria força e coragem"
+    },
+    {
+     "id": "b",
+     "text": "Deus poupa as casas marcadas pelo sangue do cordeiro"
+    },
+    {
+     "id": "c",
+     "text": "O faraó decide poupar quem marcou as portas"
+    },
+    {
+     "id": "d",
+     "text": "Marcar a porta é um enfeite sem efeito naquela noite"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "quando eu vir o sangue, passarei por vós",
+   "feedbackCorrect": "Quem vê o sangue e passa poupando a casa é o próprio Deus.",
+   "feedbackWrong": {
+    "a": "O texto põe a ação de poupar em Deus, não na força de Israel.",
+    "c": "O faraó não aparece poupando casas na promessa de Êxodo 12:13.",
+    "d": "Ao sinal está ligada a promessa de não haver praga na casa."
+   },
+   "hint": "Julgue cada leitura por quem vê o sinal e age.",
+   "learningObjective": "Escolher a interpretação sustentada sobre a proteção pascal.",
+   "evidence": [
+    "Êxodo 12:12–13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do cordeiro pascal até Cristo?",
+   "verseRef": "Êxodo 12:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cordeiro morto e sangue marca as portas"
+    },
+    {
+     "id": "b",
+     "text": "Deus vê o sangue e poupa as casas"
+    },
+    {
+     "id": "c",
+     "text": "Cristo, o Cordeiro pascal, é sacrificado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "quando eu vir o sangue, passarei por vós",
+   "feedbackCorrect": "Sinal nas portas, casas poupadas e Cristo chamado de Cordeiro pascal.",
+   "feedbackWrong": {
+    "default": "Siga da noite do Egito à leitura de Paulo em 1 Coríntios 5:7."
+   },
+   "hint": "Paulo é o ponto de chegada dessa sequência.",
+   "learningObjective": "Ver o cordeiro pascal como fio que chega a Cristo.",
+   "evidence": [
+    "Êxodo 12:13",
+    "1 Coríntios 5:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Êxodo 12:11, que nome o Senhor dá àquela refeição apressada?",
+   "verseRef": "Êxodo 12:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Páscoa"
+    },
+    {
+     "id": "b",
+     "text": "festa"
+    },
+    {
+     "id": "c",
+     "text": "ceia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "essa é a Páscoa do Senhor",
+   "feedbackCorrect": "Aquela noite de passagem e saída recebe esse nome dado por Deus.",
+   "feedbackWrong": {
+    "b": "Isso é genérico; o texto dá um nome próprio àquela noite.",
+    "c": "Isso descreve uma refeição, mas não é o nome dado aqui."
+   },
+   "hint": "Leia a última frase do versículo sobre a refeição.",
+   "learningObjective": "Lembrar o nome que carrega o sentido daquela noite.",
+   "evidence": [
+    "Êxodo 12:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Êxodo 12:7 a 1 Coríntios 5:7?",
+   "verseRef": "Êxodo 12:7",
+   "passageA": {
+    "ref": "Êxodo 12:7"
+   },
+   "passageB": {
+    "ref": "1 Coríntios 5:7"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo é o Cordeiro pascal"
+    },
+    {
+     "id": "b",
+     "text": "Paulo manda repetir o rito egípcio"
+    },
+    {
+     "id": "c",
+     "text": "Sangue em portas ainda é exigido"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o colocarão em ambas as ombreiras e na verga da porta",
+   "feedbackCorrect": "Paulo chama Cristo de nosso Cordeiro pascal oferecido por nós.",
+   "feedbackWrong": {
+    "b": "Paulo aponta para Cristo já oferecido, não para repetir o rito.",
+    "c": "A exigência daquela noite aponta para Cristo em Paulo, não se repete."
+   },
+   "hint": "Veja como Paulo chama Cristo nesse trecho.",
+   "learningObjective": "Ligar o cordeiro do Egito a Cristo segundo Paulo.",
+   "evidence": [
+    "Êxodo 12:7",
+    "1 Coríntios 5:7"
+   ]
+  }
+ ]
+}

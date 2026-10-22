@@ -1,0 +1,84 @@
+Escreva a cena "sm-19-pai-nosso" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "Vida diante do Pai",
+ "mission": {
+  "slug": "sm-19-pai-nosso",
+  "title": "Pai nosso",
+  "type": "lesson",
+  "intro": "Oração não é palco nem técnica para controlar Deus. Jesus nos leva ao secreto e nos dá um modelo: o Pai é santo, seu Reino vem primeiro, dependemos dele diariamente e perdoamos porque fomos alcançados por perdão.",
+  "hookRef": "Mateus 6:5–15",
+  "hookNote": "Jesus corrige dois desvios: oração como espetáculo diante das pessoas e repetição vazia como tentativa de pressionar Deus. O Pai nosso não…",
+  "centralInsight": "O Pai conhece necessidades antes das palavras",
+  "objective": "Minhas orações buscam primeiro o nome, o Reino e a vontade do Pai?"
+ },
+ "v2": {
+  "passageRef": "Mateus 6:5–15",
+  "context": "Jesus corrige dois desvios: oração como espetáculo diante das pessoas e repetição vazia como tentativa de pressionar Deus. O Pai nosso não é uma fórmula mágica, mas um modelo de prioridades: nome de Deus, Reino e vontade; pão diário, perdão e livramento. A oração começa em Deus e forma uma comunidade que depende, perdoa e vive diante do Pai.",
+  "keyword": "Pai",
+  "verseRefs": [
+   "Mateus 6:9–10"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 6:5–15",
+  "Mateus 6:9–10"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 6:5",
+   "text": "E, quando orardes, não sejais como os hipócritas; porque gostam de orar em pé nas sinagogas e nas esquinas das praças, para serem vistos pelos homens. Em verdade, vos digo que já receberam a recompensa."
+  },
+  {
+   "ref": "Mateus 6:6",
+   "text": "Mas você, quando orar, entre no seu quarto, feche a porta e ore ao seu Pai, que está em secreto; e seu Pai, que vê em secreto, o recompensará."
+  },
+  {
+   "ref": "Mateus 6:7",
+   "text": "E, ao orar, não empreguem vãs repetições, como os gentios, que presumem que, pelo seu muito falar, serão ouvidos."
+  },
+  {
+   "ref": "Mateus 6:8",
+   "text": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes."
+  },
+  {
+   "ref": "Mateus 6:9",
+   "text": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+  },
+  {
+   "ref": "Mateus 6:10",
+   "text": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+  },
+  {
+   "ref": "Mateus 6:11",
+   "text": "Dá-nos hoje o nosso pão de cada dia;"
+  },
+  {
+   "ref": "Mateus 6:12",
+   "text": "E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;"
+  },
+  {
+   "ref": "Mateus 6:13",
+   "text": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!"
+  },
+  {
+   "ref": "Mateus 6:14",
+   "text": "Porque, se vocês perdoarem as ofensas dos homens, também o Pai celestial perdoará vocês."
+  },
+  {
+   "ref": "Mateus 6:15",
+   "text": "Mas, se vocês não perdoarem aos homens suas ofensas, também o Pai de vocês não perdoará as ofensas de vocês."
+  }
+ ]
+}
+</cena>

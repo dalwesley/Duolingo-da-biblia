@@ -1,0 +1,156 @@
+Escreva a cena "gl-04-desafio" da trilha "galatas" (Gálatas).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "galatas",
+  "title": "Gálatas",
+  "description": "Liberdade em Cristo — justificação pela fé, sem jugo da Lei.",
+  "realm": "novo-testamento"
+ },
+ "block": "Gálatas",
+ "mission": {
+  "slug": "gl-04-desafio",
+  "title": "Desafio: Livres para servir",
+  "type": "boss",
+  "intro": "Revise o evangelho da graça, a fé e a liberdade que serve em amor.",
+  "hookRef": "Desafio: Livres para servir",
+  "hookNote": "Revise o evangelho da graça, a fé e a liberdade que serve em amor.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Gálatas 1-6"
+ },
+ "v2": {
+  "passageRef": "Desafio: Livres para servir",
+  "context": "Revise o evangelho da graça, a fé e a liberdade que serve em amor.",
+  "keyword": "Livres",
+  "verseRefs": [
+   "Gálatas 2:16"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "gl-01-outro-evangelho",
+   "title": "Nenhum outro evangelho",
+   "centralInsight": "Paulo instrui a igreja em Gálatas 1-2 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+   "ref": "Gálatas 1:3–11"
+  },
+  {
+   "slug": "gl-02-fe",
+   "title": "Fé e promessa",
+   "centralInsight": "Paulo instrui a igreja em Gálatas 3-4 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+   "ref": "Gálatas 3:8–14"
+  },
+  {
+   "slug": "gl-03-espirito",
+   "title": "Liberdade pelo Espírito",
+   "centralInsight": "Paulo instrui a igreja em Gálatas 5-6 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+   "ref": "Gálatas 5:19–26"
+  }
+ ],
+ "ranges": [
+  "Gálatas 1:3–11",
+  "Gálatas 3:8–14",
+  "Gálatas 5:19–26"
+ ],
+ "verses": [
+  {
+   "ref": "Gálatas 1:3",
+   "text": "Graça a vós e paz, da parte de Deus, nosso Pai, e de nosso Senhor Jesus Cristo."
+  },
+  {
+   "ref": "Gálatas 1:4",
+   "text": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai."
+  },
+  {
+   "ref": "Gálatas 1:5",
+   "text": "A ele seja dada a glória pelos séculos dos séculos. Amém!"
+  },
+  {
+   "ref": "Gálatas 1:6",
+   "text": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho."
+  },
+  {
+   "ref": "Gálatas 1:7",
+   "text": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo."
+  },
+  {
+   "ref": "Gálatas 1:8",
+   "text": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema."
+  },
+  {
+   "ref": "Gálatas 1:9",
+   "text": "Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado anátema."
+  },
+  {
+   "ref": "Gálatas 1:10",
+   "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria servo de Cristo."
+  },
+  {
+   "ref": "Gálatas 1:11",
+   "text": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana."
+  },
+  {
+   "ref": "Gálatas 3:8",
+   "text": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos."
+  },
+  {
+   "ref": "Gálatas 3:9",
+   "text": "Assim, os que são da fé são abençoados com o crente Abraão."
+  },
+  {
+   "ref": "Gálatas 3:10",
+   "text": "Todos aqueles que dependem das obras da lei estão sob maldição, pois está escrito: Maldito todo aquele que não permanece em todas as coisas escritas no livro da lei, para praticá-las."
+  },
+  {
+   "ref": "Gálatas 3:11",
+   "text": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé."
+  },
+  {
+   "ref": "Gálatas 3:12",
+   "text": "A lei não se fundamenta na fé; ao contrário, aquele que cumprir seus preceitos, por eles viverá."
+  },
+  {
+   "ref": "Gálatas 3:13",
+   "text": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro."
+  },
+  {
+   "ref": "Gálatas 3:14",
+   "text": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido."
+  },
+  {
+   "ref": "Gálatas 5:19",
+   "text": "Porque as obras da carne são manifestas: adultério, prostituição, impureza e lascívia."
+  },
+  {
+   "ref": "Gálatas 5:20",
+   "text": "Idolatria, feitiçarias, inimizades, porfias, ciúmes, iras, discórdias, dissensões, facções."
+  },
+  {
+   "ref": "Gálatas 5:21",
+   "text": "Invejas, homicídios, embriaguez, glutonarias e coisas semelhantes a estas, a respeito das quais eu vos declaro, como já vos preveni anteriormente, que os que praticam tais coisas não herdarão o reino de Deus."
+  },
+  {
+   "ref": "Gálatas 5:22",
+   "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+  },
+  {
+   "ref": "Gálatas 5:23",
+   "text": "Contra essas coisas não existe lei."
+  },
+  {
+   "ref": "Gálatas 5:24",
+   "text": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências."
+  },
+  {
+   "ref": "Gálatas 5:25",
+   "text": "Se vivemos no Espírito, andemos também pelo Espírito."
+  },
+  {
+   "ref": "Gálatas 5:26",
+   "text": "Não nos deixemos dominar pela vaidade, provocando uns aos outros e nutrindo inveja uns dos outros."
+  }
+ ]
+}
+</cena>

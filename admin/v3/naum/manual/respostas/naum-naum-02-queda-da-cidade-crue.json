@@ -1,0 +1,700 @@
+{
+ "study": {
+  "passageRef": "Naum 3:1",
+  "passages": [
+   {
+    "ref": "Naum 3:1"
+   },
+   {
+    "ref": "Naum 1:4–10"
+   }
+  ],
+  "context": "Gerações depois de Jonas, Nínive volta à violência. Naum chama a capital assíria de cidade sanguinária e anuncia seu fim como consolo ao povo oprimido.",
+  "keyword": "sanguinária",
+  "keywordGloss": "Marcada por derramar sangue: a cidade fez da violência o seu modo de viver.",
+  "focusQuestion": "O que você faz quando vê uma injustiça se repetir sem ninguém freá-la?",
+  "reflectionPrompts": [
+   "Violência que persiste",
+   "Juízo sem vingança",
+   "Consolo aos oprimidos"
+  ],
+  "facts": [
+   {
+    "text": "A cidade é chamada de sanguinária.",
+    "evidenceRef": "Naum 3:1",
+    "evidenceSpan": "Ai da cidade sanguinária"
+   },
+   {
+    "text": "A cidade está cheia de mentiras e de roubo.",
+    "evidenceRef": "Naum 3:1",
+    "evidenceSpan": "cheia de mentiras e de roubo"
+   },
+   {
+    "text": "A cidade não se libera de sua presa.",
+    "evidenceRef": "Naum 3:1",
+    "evidenceSpan": "não se libera de sua presa"
+   },
+   {
+    "text": "O Senhor acabará de uma vez com o lugar da cidade.",
+    "evidenceRef": "Naum 1:8",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade"
+   },
+   {
+    "text": "A angústia não se levantará por duas vezes.",
+    "evidenceRef": "Naum 1:9",
+    "evidenceSpan": "a angústia não se levantará por duas vezes"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sanguinária",
+    "gloss": "Cidade que derrama sangue e vive da violência contra outros."
+   },
+   {
+    "term": "mentiras",
+    "gloss": "Engano como prática: a cidade sustenta o roubo com mentira."
+   },
+   {
+    "term": "presa",
+    "gloss": "Quem é agarrado pela cidade e nunca é solto por ela."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A cidade é chamada sanguinária",
+    "evidenceRef": "Naum 3:1"
+   },
+   {
+    "label": "Mentira e roubo marcam a cidade",
+    "evidenceRef": "Naum 3:1"
+   },
+   {
+    "label": "A presa nunca é solta",
+    "evidenceRef": "Naum 3:1"
+   },
+   {
+    "label": "O Senhor põe fim à cidade",
+    "evidenceRef": "Naum 1:8"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A queda é anunciada porque a cidade persiste em sangue, mentira e roubo.",
+    "marker": null,
+    "evidenceRef": "Naum 3:1"
+   },
+   {
+    "kind": "resultado",
+    "text": "Com inundação, o Senhor acaba de uma vez com o lugar da cidade.",
+    "marker": "Com",
+    "evidenceRef": "Naum 1:8"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Jonas 3:10",
+    "bridge": "Conversão passada poupou Nínive"
+   },
+   {
+    "ref": "Miquéias 5:5",
+    "bridge": "Assíria ameaçou a terra"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A queda de Nínive é convite para comemorar a desgraça alheia.",
+    "why": "O texto consola quem sofria opressão; não chama ninguém a celebrar com ódio."
+   },
+   {
+    "text": "A Assíria de Naum representa algum país dos dias de hoje.",
+    "why": "Naum fala da Assíria antiga e de Nínive; o texto não mira nação atual alguma."
+   },
+   {
+    "text": "Deus desiste de Nínive sem nunca tê-la chamado antes.",
+    "why": "Em Jonas, a cidade ouviu o chamado, converteu-se e foi poupada (Jonas 3:10)."
+   }
+  ],
+  "centralInsight": "A queda de Nínive é juízo sobre a violência persistente, sem vingança",
+  "anchorQuestion": "Com que palavras Naum 3:1 descreve a cidade que vai cair?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Naum 3:1, a cidade é chamada de pacífica e justa.",
+   "verseRef": "Naum 3:1",
+   "correctOptionId": "false",
+   "evidenceSpan": "Ai da cidade sanguinária",
+   "feedbackCorrect": "A cidade é chamada de sanguinária, cheia de mentiras e roubo.",
+   "feedbackWrong": {
+    "true": "Releia Naum 3:1 e veja o nome dado à cidade."
+   },
+   "hint": "Veja o nome dado à cidade.",
+   "learningObjective": "Observar como Naum descreve a cidade.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Naum 3:1, toque como a cidade é chamada logo de início.",
+   "verseRef": "Naum 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "mentiras"
+    },
+    {
+     "id": "b",
+     "text": "sanguinária"
+    },
+    {
+     "id": "c",
+     "text": "roubo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ai da cidade sanguinária",
+   "feedbackCorrect": "Logo de início, a cidade é chamada de sanguinária.",
+   "feedbackWrong": {
+    "a": "Isso diz do que ela está cheia, depois do nome dela.",
+    "c": "Isso também a enche, mas vem depois do nome dela."
+   },
+   "hint": "Procure o primeiro adjetivo da cidade.",
+   "learningObjective": "Identificar o nome dado à cidade em 3:1.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Naum 3:1, de que a cidade está cheia?",
+   "verseRef": "Naum 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mentiras e roubo"
+    },
+    {
+     "id": "b",
+     "text": "Festas e cantos"
+    },
+    {
+     "id": "c",
+     "text": "Templos e altares"
+    },
+    {
+     "id": "d",
+     "text": "Colheitas e rebanhos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "cheia de mentiras e de roubo",
+   "feedbackCorrect": "A cidade está cheia de mentiras e de roubo.",
+   "feedbackWrong": {
+    "b": "Nada de festa é citado; o texto fala de engano e roubo.",
+    "c": "Templos não são o assunto deste versículo.",
+    "d": "O campo não aparece; a cidade vive de mentira e roubo."
+   },
+   "hint": "Leia o meio do versículo.",
+   "learningObjective": "Observar do que a cidade está cheia.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Naum 1:8 na ordem do texto.",
+   "verseRef": "Naum 1:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Com uma inundação transbordante"
+    },
+    {
+     "id": "b",
+     "text": "Ele acabará de uma vez com o lugar desta cidade"
+    },
+    {
+     "id": "c",
+     "text": "e as trevas perseguirão os seus inimigos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Com uma inundação transbordante",
+   "feedbackCorrect": "Inundação, fim da cidade e inimigos perseguidos, nessa ordem.",
+   "feedbackWrong": {
+    "default": "Comece pela inundação; os inimigos fecham o versículo."
+   },
+   "hint": "O versículo começa pela inundação.",
+   "learningObjective": "Reconhecer a sequência de Naum 1:8.",
+   "evidence": [
+    "Naum 1:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Naum 1:9, a angústia não se levantará por duas o quê?",
+   "verseRef": "Naum 1:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "vezes"
+    },
+    {
+     "id": "b",
+     "text": "semanas"
+    },
+    {
+     "id": "c",
+     "text": "gerações"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a angústia não se levantará por duas vezes",
+   "feedbackCorrect": "Por duas vezes ela não se levantará: o fim é definitivo.",
+   "feedbackWrong": {
+    "b": "A contagem do texto não é de tempo semanal.",
+    "c": "A palavra do texto é curta e conta repetições."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Lembrar a garantia de Naum 1:9.",
+   "evidence": [
+    "Naum 1:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Naum 1:8 comunica que se liga a este contexto?",
+   "verseRef": "Naum 1:8",
+   "passageA": {
+    "ref": "Naum 1:8"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A cidade opressora chega ao fim anunciado por Deus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Cidade sem fim anunciado"
+    },
+    {
+     "id": "b",
+     "text": "Fim anunciado da opressora"
+    },
+    {
+     "id": "c",
+     "text": "Opressão para sempre garantida"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+   "feedbackCorrect": "De uma vez, o Senhor acabará com o lugar da cidade.",
+   "feedbackWrong": {
+    "a": "O anúncio é justamente de fim para a cidade.",
+    "c": "A garantia do livro é o contrário disso."
+   },
+   "hint": "Veja o verbo principal do versículo.",
+   "learningObjective": "Ligar Naum 1:8 ao fim da cidade opressora.",
+   "evidence": [
+    "Naum 1:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Naum 1:9, a angústia se levantará repetidas vezes, sem fim para Judá.",
+   "verseRef": "Naum 1:9",
+   "correctOptionId": "false",
+   "evidenceSpan": "a angústia não se levantará por duas vezes",
+   "feedbackCorrect": "A angústia não se levantará por duas vezes, diz o texto.",
+   "feedbackWrong": {
+    "true": "Releia o fim de Naum 1:9 com atenção à negação."
+   },
+   "hint": "Repare na negação do versículo.",
+   "learningObjective": "Compreender o fim definitivo da opressão.",
+   "evidence": [
+    "Naum 1:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+   "verseRef": "Naum 1:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "angústia"
+    },
+    {
+     "id": "b",
+     "text": "duas vezes"
+    },
+    {
+     "id": "c",
+     "text": "não"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "a angústia não se levantará por duas vezes",
+   "feedbackCorrect": "A negação garante que a opressão não volta a se levantar.",
+   "feedbackWrong": {
+    "a": "Isso nomeia o sofrimento, e não o que o nega.",
+    "b": "Isso conta as vezes, e não a palavra que nega."
+   },
+   "hint": "Procure uma palavra curta antes do verbo.",
+   "learningObjective": "Reconhecer a negação que encerra a opressão.",
+   "evidence": [
+    "Naum 1:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Por que, segundo Naum 3:1, a cidade enfrenta o juízo?",
+   "verseRef": "Naum 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sua riqueza atraiu inveja alheia"
+    },
+    {
+     "id": "b",
+     "text": "Sua violência nunca foi abandonada"
+    },
+    {
+     "id": "c",
+     "text": "Seus muros já estavam velhos"
+    },
+    {
+     "id": "d",
+     "text": "Seu povo pediu para cair"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "não se libera de sua presa",
+   "feedbackCorrect": "A cidade não larga a presa: a violência persiste.",
+   "feedbackWrong": {
+    "a": "Inveja alheia não é citada como motivo algum.",
+    "c": "O motivo é moral, e não o estado dos muros.",
+    "d": "Nenhum pedido do povo aparece no texto."
+   },
+   "hint": "Veja o que a cidade se recusa a soltar.",
+   "learningObjective": "Relacionar o juízo à violência persistente.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como Naum 3:1 descreve a cidade, passo a passo?",
+   "verseRef": "Naum 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "A cidade derrama sangue"
+    },
+    {
+     "id": "b",
+     "text": "A cidade vive de engano e roubo"
+    },
+    {
+     "id": "c",
+     "text": "A cidade não solta a presa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Ai da cidade sanguinária",
+   "feedbackCorrect": "Sangue, engano com roubo e presa retida, nessa ordem.",
+   "feedbackWrong": {
+    "default": "Comece pelo sangue; a presa retida fecha a descrição."
+   },
+   "hint": "A presa aparece no fim.",
+   "learningObjective": "Compreender a descrição crescente da cidade.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Naum 1:8, como é a inundação que põe fim à cidade?",
+   "verseRef": "Naum 1:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "passageira"
+    },
+    {
+     "id": "b",
+     "text": "distante"
+    },
+    {
+     "id": "c",
+     "text": "transbordante"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Com uma inundação transbordante",
+   "feedbackCorrect": "A inundação transbordante marca um fim sem retorno.",
+   "feedbackWrong": {
+    "a": "O fim é de uma vez, e não algo que logo passa.",
+    "b": "A imagem é de águas que chegam e cobrem tudo."
+   },
+   "hint": "Leia o adjetivo logo no começo.",
+   "learningObjective": "Compreender a força do fim anunciado.",
+   "evidence": [
+    "Naum 1:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Naum 3:1 a Jonas 3:10?",
+   "verseRef": "Naum 3:1",
+   "passageA": {
+    "ref": "Naum 3:1"
+   },
+   "passageB": {
+    "ref": "Jonas 3:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Nínive nunca se converteu"
+    },
+    {
+     "id": "b",
+     "text": "Nínive já fora poupada antes"
+    },
+    {
+     "id": "c",
+     "text": "Deus esqueceu a cidade"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ai da cidade sanguinária",
+   "feedbackCorrect": "A mesma cidade, poupada em Jonas, volta à violência.",
+   "feedbackWrong": {
+    "a": "Em Jonas ela se converte e é poupada por Deus.",
+    "c": "Ele a chama de novo pelo nome, gerações depois."
+   },
+   "hint": "Lembre o desfecho da cidade em Jonas.",
+   "learningObjective": "Relacionar a Nínive de Naum à de Jonas.",
+   "evidence": [
+    "Naum 3:1",
+    "Jonas 3:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Naum 3:1 apresenta a queda de Nínive como resposta à violência que a cidade não abandonou.",
+   "verseRef": "Naum 3:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "não se libera de sua presa",
+   "feedbackCorrect": "Sangue, mentira e presa retida sustentam o anúncio da queda.",
+   "feedbackWrong": {
+    "false": "Junte as três marcas da cidade citadas no versículo."
+   },
+   "hint": "Junte as marcas da cidade.",
+   "learningObjective": "Interpretar a queda como juízo sobre a violência.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+   "verseRef": "Naum 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "sua presa"
+    },
+    {
+     "id": "b",
+     "text": "mentiras"
+    },
+    {
+     "id": "c",
+     "text": "roubo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não se libera de sua presa",
+   "feedbackCorrect": "A cidade não libera sua presa: não larga quem oprime.",
+   "feedbackWrong": {
+    "b": "Isso enche a cidade, mas não é o que ela retém.",
+    "c": "Isso é prática dela, e não quem ela segura."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Sustentar a violência persistente com o texto.",
+   "evidence": [
+    "Naum 3:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Naum sustenta sobre a queda de Nínive?",
+   "verseRef": "Naum 1:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Motivo para comemorar vingança"
+    },
+    {
+     "id": "b",
+     "text": "Prova de que Deus abandonou Judá"
+    },
+    {
+     "id": "c",
+     "text": "Juízo sobre violência persistente"
+    },
+    {
+     "id": "d",
+     "text": "Convite a odiar povos atuais"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+   "feedbackCorrect": "É juízo sobre violência antiga e persistente, e consolo a Judá.",
+   "feedbackWrong": {
+    "a": "O texto consola os oprimidos, sem festa de ódio.",
+    "b": "A queda do opressor é justamente cuidado com Judá.",
+    "d": "A Assíria antiga não representa povo algum de hoje."
+   },
+   "hint": "Pense em quem sofria sob essa cidade.",
+   "learningObjective": "Escolher a leitura fiel e cuidadosa da queda.",
+   "evidence": [
+    "Naum 1:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho de Nínive até a queda?",
+   "verseRef": "Naum 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nínive ouve Jonas e se converte"
+    },
+    {
+     "id": "b",
+     "text": "Nínive volta à violência e ao roubo"
+    },
+    {
+     "id": "c",
+     "text": "Naum anuncia o fim da cidade"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "cheia de mentiras e de roubo",
+   "feedbackCorrect": "Conversão em Jonas, retorno à violência e anúncio em Naum.",
+   "feedbackWrong": {
+    "default": "Comece pela conversão antiga; Naum vem depois."
+   },
+   "hint": "Jonas é bem anterior a Naum.",
+   "learningObjective": "Ver a história longa de Nínive na Bíblia.",
+   "evidence": [
+    "Naum 3:1",
+    "Jonas 3:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Naum 1:10, os inimigos serão consumidos como o que, já seco?",
+   "verseRef": "Naum 1:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "pedra"
+    },
+    {
+     "id": "b",
+     "text": "palha"
+    },
+    {
+     "id": "c",
+     "text": "sombra"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "serão inteiramente consumidos como palha seca",
+   "feedbackCorrect": "Como palha seca, eles serão inteiramente consumidos.",
+   "feedbackWrong": {
+    "a": "Pedra não seca nem queima como a imagem do texto.",
+    "c": "A imagem é de material seco que o fogo consome."
+   },
+   "hint": "Pense em algo seco que queima rápido.",
+   "learningObjective": "Lembrar a imagem do fim dos inimigos.",
+   "evidence": [
+    "Naum 1:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Naum 1:8 a Jonas 3:7–8?",
+   "verseRef": "Naum 1:8",
+   "passageA": {
+    "ref": "Naum 1:8"
+   },
+   "passageB": {
+    "ref": "Jonas 3:7–8"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Violência aprovada por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Arrependimento sempre recusado"
+    },
+    {
+     "id": "c",
+     "text": "Chamado antigo ao arrependimento"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+   "feedbackCorrect": "Em Jonas, até o rei chama a cidade a deixar a violência.",
+   "feedbackWrong": {
+    "a": "Em Jonas, a ordem é deixar a violência das mãos.",
+    "b": "Naquela geração, a cidade atendeu ao chamado."
+   },
+   "hint": "Veja o decreto do rei em Jonas.",
+   "learningObjective": "Ligar a queda ao chamado antigo de Jonas.",
+   "evidence": [
+    "Naum 1:8",
+    "Jonas 3:7–8"
+   ]
+  }
+ ]
+}

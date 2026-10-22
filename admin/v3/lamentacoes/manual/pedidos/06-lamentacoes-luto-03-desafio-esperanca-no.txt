@@ -1,0 +1,132 @@
+Escreva a cena "lamentacoes-luto-03-desafio-esperanca-no" da trilha "lamentacoes" (Lamentações).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "lamentacoes",
+  "title": "Lamentações",
+  "description": "Luto de Jerusalém — e misericórdias que se renovam.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A cidade",
+ "mission": {
+  "slug": "lamentacoes-luto-03-desafio-esperanca-no",
+  "title": "Desafio: Esperança no luto",
+  "type": "boss",
+  "intro": "Dor honesta e fidelidade de Deus.",
+  "hookRef": "Referência: Lamentações",
+  "hookNote": "Dor honesta e fidelidade de Deus.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre esperança?"
+ },
+ "v2": {
+  "passageRef": "Referência: Lamentações",
+  "context": "Dor honesta e fidelidade de Deus.",
+  "keyword": "Esperança",
+  "verseRefs": [
+   "Lamentações 3:21–24"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "lm-03-solitaria",
+   "title": "Sentada solitária",
+   "centralInsight": "O luto da cidade é concreto",
+   "ref": "Lamentações 1:1–4"
+  },
+  {
+   "slug": "lm-04-palavra",
+   "title": "Cumpriu a sua palavra",
+   "centralInsight": "O juízo cumpre a palavra antiga",
+   "ref": "Lamentações 2:14–20"
+  },
+  {
+   "slug": "lm-05-trono",
+   "title": "Tu permaneces",
+   "centralInsight": "No luto ainda se pede restauração",
+   "ref": "Lamentações 5:16–22"
+  }
+ ],
+ "ranges": [
+  "Lamentações 1:1–4",
+  "Lamentações 2:14–20",
+  "Lamentações 5:16–22"
+ ],
+ "verses": [
+  {
+   "ref": "Lamentações 1:1",
+   "text": "Como está solitária a cidade que outrora foi populosa! Tornou-se como viúva a que foi grande entre as nações; como princesa entre as províncias, agora está sujeita a trabalhos forçados!"
+  },
+  {
+   "ref": "Lamentações 1:2",
+   "text": "Chora incessantemente à noite, e suas lágrimas lhe escorrem pelo rosto; não há quem a console entre todos os que a amavam; todos os seus amigos se tornaram traiçoeiros e se converteram em seus inimigos."
+  },
+  {
+   "ref": "Lamentações 1:3",
+   "text": "Judá foi levado ao cativeiro por causa da aflição e da grande servidão; habita entre as nações, sem encontrar descanso; todos os seus perseguidores a apanham nas angústias."
+  },
+  {
+   "ref": "Lamentações 1:4",
+   "text": "Os caminhos de Sião choram, porque ninguém vem à reunião solene; todas as suas portas estão devastadas; os seus sacerdotes suspiram; suas moças estão tristes, e ela mesma se encontra em amargura."
+  },
+  {
+   "ref": "Lamentações 2:14",
+   "text": "Os teus profetas te disseram coisas vãs e insensatas e não revelaram a tua maldade, para que não restaurasses a tua sorte; ao contrário, anunciaram visões de sentenças falsas, que te levaram para o cativeiro."
+  },
+  {
+   "ref": "Lamentações 2:15",
+   "text": "Todos os que passam pelo caminho aplaudem, assobiam e balançam a cabeça em relação à filha de Jerusalém, dizendo: É esta a cidade que era chamada a perfeição da formosura, a alegria de toda a terra?"
+  },
+  {
+   "ref": "Lamentações 2:16",
+   "text": "Todos os seus inimigos abrem a boca contra você, assobiam e rangem os dentes; dizem: Devoramo-la; certamente, este é o dia que esperávamos; finalmente a encontrámos e a vimos."
+  },
+  {
+   "ref": "Lamentações 2:17",
+   "text": "O Senhor executou o que havia planejado, cumpriu a Sua palavra que proclamou desde os tempos antigos; derrubou e não teve compaixão; fez com que o inimigo se alegrasse por sua causa e exaltou o poder de seus adversários."
+  },
+  {
+   "ref": "Lamentações 2:18",
+   "text": "O coração de Jerusalém clama ao Senhor: Ó muralha da filha de Sião, corram as tuas lágrimas como um ribeiro, de dia e de noite; não te dês descanso, nem cessem as meninas dos teus olhos!"
+  },
+  {
+   "ref": "Lamentações 2:19",
+   "text": "Levanta-te, clama de noite no princípio das vigílias; derrama, como água, teu coração diante do Senhor; eleva a ele as tuas mãos, pela vida de teus filhinhos que desfalecem de fome à entrada de todas as ruas."
+  },
+  {
+   "ref": "Lamentações 2:20",
+   "text": "Vê, ó Senhor, e considera a quem fizeste assim: as mulheres comerão o fruto de suas entranhas, as crianças que acariciam? Ou será que o sacerdote e o profeta morrerão no santuário do Senhor?"
+  },
+  {
+   "ref": "Lamentações 5:16",
+   "text": "Caiu a coroa da nossa cabeça; ai de nós, porque pecamos!"
+  },
+  {
+   "ref": "Lamentações 5:17",
+   "text": "Por isso, o nosso coração desfaleceu; por isso, os nossos olhos se escureceram."
+  },
+  {
+   "ref": "Lamentações 5:18",
+   "text": "Pelo monte Sião, que está assolado, as raposas percorrem suas áreas."
+  },
+  {
+   "ref": "Lamentações 5:19",
+   "text": "Tu, Senhor, reinas eternamente, e o teu trono permanece de geração em geração."
+  },
+  {
+   "ref": "Lamentações 5:20",
+   "text": "Por que te esquecerias de nós para sempre? Por que nos abandonarias por tanto tempo?"
+  },
+  {
+   "ref": "Lamentações 5:21",
+   "text": "Restaura-nos, Senhor, e seremos restaurados; renova nossos dias como eram antigamente."
+  },
+  {
+   "ref": "Lamentações 5:22",
+   "text": "Por que nos rejeitarias totalmente? Por que te indignarias tanto contra nós?"
+  }
+ ]
+}
+</cena>

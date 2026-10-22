@@ -1,0 +1,3301 @@
+[
+  {
+    "id": "teologia-sistematica-sem-ts-01-todo-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 3:16, toda a Escritura é inspirada por Deus.",
+    "prompt": "Em 2 Timóteo 3:16, toda a Escritura é inspirada por Deus.",
+    "cue": "Em 2 Timóteo 3:16, toda a Escritura é inspirada por Deus.",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Paulo afirma que toda a Escritura vem de Deus.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 3:16, que liga toda a Escritura a Deus."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar a origem divina da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-01-todo-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 3:16, toque quem inspira a Escritura.",
+    "prompt": "Em 2 Timóteo 3:16, toque quem inspira a Escritura.",
+    "cue": "Em 2 Timóteo 3:16, toque quem inspira a Escritura.",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "ensino"
+      },
+      {
+        "id": "c",
+        "text": "Escritura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "A Escritura é inspirada por ele, segundo o texto.",
+    "feedbackWrong": {
+      "b": "O ensino é um dos usos dela, não sua fonte.",
+      "c": "Ela é o que recebe a inspiração, não quem inspira."
+    },
+    "hint": "Procure a fonte dela no versículo.",
+    "learningObjective": "Identificar Deus como fonte da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-01-todo-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Timóteo 3:16, para que a Escritura é útil?",
+    "prompt": "Segundo 2 Timóteo 3:16, para que a Escritura é útil?",
+    "cue": "Segundo 2 Timóteo 3:16, para que a Escritura é útil?",
+    "verseRef": "2 Timóteo 3:15–16",
+    "passageText": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus. Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só para guardar histórias antigas"
+      },
+      {
+        "id": "b",
+        "text": "Para ensino, repreensão, correção e instrução"
+      },
+      {
+        "id": "c",
+        "text": "Só para quem já não erra mais"
+      },
+      {
+        "id": "d",
+        "text": "Só para o ensino em público"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "útil para o ensino, para a repreensão, para a correção",
+    "feedbackCorrect": "Paulo lista quatro usos ligados ao ensino e à correção.",
+    "feedbackWrong": {
+      "a": "O texto liga a Escritura à vida, não só à memória.",
+      "c": "Ela corrige justamente quem precisa mudar.",
+      "d": "O ensino é um uso entre outros citados por Paulo."
+    },
+    "hint": "Conte os usos citados depois de útil.",
+    "learningObjective": "Observar os usos da Escritura citados no texto.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-01-todo-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Timóteo 3:16 na ordem do texto.",
+    "prompt": "Monte 2 Timóteo 3:16 na ordem do texto.",
+    "cue": "Monte 2 Timóteo 3:16 na ordem do texto.",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda a Escritura é inspirada por Deus"
+      },
+      {
+        "id": "b",
+        "text": "e útil para o ensino, para a repreensão"
+      },
+      {
+        "id": "c",
+        "text": "para a correção e para a instrução na justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Primeiro a origem, depois os usos da Escritura.",
+    "feedbackWrong": {
+      "default": "Comece pela origem da Escritura; os usos vêm depois."
+    },
+    "hint": "O versículo começa pela origem.",
+    "learningObjective": "Reconhecer a sequência de 2 Timóteo 3:16.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-01-todo-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 3:17, para que tipo de obra o homem de Deus deve estar preparado?",
+    "prompt": "Em 2 Timóteo 3:17, para que tipo de obra o homem de Deus deve estar preparado?",
+    "cue": "Em 2 Timóteo 3:17, para que tipo de obra o homem de Deus deve estar preparado?",
+    "verseRef": "2 Timóteo 3:17",
+    "passageText": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "template": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "vida"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "completamente preparado para toda boa obra",
+    "feedbackCorrect": "Ele fica preparado para toda boa ação a serviço de Deus.",
+    "feedbackWrong": {
+      "b": "O versículo fala do que ele fará, não de um tipo de vida.",
+      "c": "A fé aparece em 3:15; aqui o foco é a prática."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Lembrar o alvo prático da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-01-todo-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Timóteo 3:16 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Timóteo 3:16 comunica que se liga a este contexto?",
+    "cue": "O que 2 Timóteo 3:16 comunica que se liga a este contexto?",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "passageA": {
+      "ref": "2 Timóteo 3:16",
+      "text": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Escritura ensina, corrige e prepara quem serve a Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavras humanas sem autor divino"
+      },
+      {
+        "id": "b",
+        "text": "Deus fala e forma seu povo"
+      },
+      {
+        "id": "c",
+        "text": "Um livro só de regras antigas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Ela vem de Deus e forma quem a recebe.",
+    "feedbackWrong": {
+      "a": "O texto atribui sua origem a Deus, não só a humanos.",
+      "c": "Ela ensina e corrige para a vida, não só guarda regras."
+    },
+    "hint": "Veja de quem ela vem e o que faz.",
+    "learningObjective": "Ligar a origem da Escritura à sua função formativa.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-01-todo-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 3:16–17, a Escritura é inspirada, mas não serve para corrigir quem erra.",
+    "prompt": "Em 2 Timóteo 3:16–17, a Escritura é inspirada, mas não serve para corrigir quem erra.",
+    "cue": "Em 2 Timóteo 3:16–17, a Escritura é inspirada, mas não serve para corrigir quem erra.",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "útil para o ensino, para a repreensão, para a correção",
+    "feedbackCorrect": "Ela é útil também para repreensão e correção.",
+    "feedbackWrong": {
+      "true": "Releia a lista de usos em 3:16, que inclui a correção."
+    },
+    "hint": "Repare na lista de usos em 3:16.",
+    "learningObjective": "Compreender que a Escritura também corrige.",
+    "evidence": [
+      "2 Timóteo 3:16–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-01-todo-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 3:17, toque a expressão que mostra o propósito da Escritura.",
+    "prompt": "Em 2 Timóteo 3:17, toque a expressão que mostra o propósito da Escritura.",
+    "cue": "Em 2 Timóteo 3:17, toque a expressão que mostra o propósito da Escritura.",
+    "verseRef": "2 Timóteo 3:17",
+    "passageText": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda boa obra"
+      },
+      {
+        "id": "b",
+        "text": "homem de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Para que"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Para que o homem de Deus seja perfeito",
+    "feedbackCorrect": "Essa expressão abre a frase que declara o alvo da Escritura.",
+    "feedbackWrong": {
+      "a": "Essa expressão diz o resultado final, não a marca de propósito.",
+      "b": "Essa expressão diz quem é preparado, não o propósito."
+    },
+    "hint": "Procure o começo do versículo.",
+    "learningObjective": "Reconhecer o marcador de propósito no texto.",
+    "evidence": [
+      "2 Timóteo 3:17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-01-todo-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Timóteo 3:16 se relaciona com 2 Timóteo 3:17?",
+    "prompt": "Como 2 Timóteo 3:16 se relaciona com 2 Timóteo 3:17?",
+    "cue": "Como 2 Timóteo 3:16 se relaciona com 2 Timóteo 3:17?",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pessoa se prepara sozinha, sem a Escritura"
+      },
+      {
+        "id": "b",
+        "text": "A Escritura prepara a pessoa de Deus para servir bem"
+      },
+      {
+        "id": "c",
+        "text": "A Escritura serve só para guardar fatos antigos"
+      },
+      {
+        "id": "d",
+        "text": "A Escritura inspira, mas deixa a pessoa despreparada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "completamente preparado para toda boa obra",
+    "feedbackCorrect": "O versículo 17 mostra o alvo do que o 16 afirma.",
+    "feedbackWrong": {
+      "a": "Quem prepara é a Escritura recebida, não o esforço isolado.",
+      "c": "O alvo citado é a prática do bem, não só o passado.",
+      "d": "O texto diz o contrário, que ela prepara por completo."
+    },
+    "hint": "Veja o alvo declarado no versículo 17.",
+    "learningObjective": "Relacionar a inspiração da Escritura ao seu alvo prático.",
+    "evidence": [
+      "2 Timóteo 3:16–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-01-todo-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em 2 Timóteo 3:15–17?",
+    "prompt": "Como avança o ensino em 2 Timóteo 3:15–17?",
+    "cue": "Como avança o ensino em 2 Timóteo 3:15–17?",
+    "verseRef": "2 Timóteo 3:15–16",
+    "passageText": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus. Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Escritura vem de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ela ensina e corrige"
+      },
+      {
+        "id": "c",
+        "text": "A pessoa fica pronta para servir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Origem, ação formativa e preparo para servir, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela origem; o preparo para servir é o ponto de chegada."
+    },
+    "hint": "O preparo para servir vem por último.",
+    "learningObjective": "Compreender o encadeamento de origem, formação e prática.",
+    "evidence": [
+      "2 Timóteo 3:15–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-01-todo-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 3:15, por meio do que a pessoa se torna sábia para a salvação?",
+    "prompt": "Em 2 Timóteo 3:15, por meio do que a pessoa se torna sábia para a salvação?",
+    "cue": "Em 2 Timóteo 3:15, por meio do que a pessoa se torna sábia para a salvação?",
+    "verseRef": "2 Timóteo 3:15",
+    "passageText": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus.",
+    "template": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela ___ em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "podem tornar-te sábio para a salvação pela fé em Cristo Jesus",
+    "feedbackCorrect": "A sabedoria para a salvação vem por esse caminho em Cristo.",
+    "feedbackWrong": {
+      "b": "O texto não põe a lei nesse lugar; aponta para Cristo.",
+      "c": "O meio nomeado aqui está ligado a Cristo Jesus."
+    },
+    "hint": "Leia a parte final do versículo.",
+    "learningObjective": "Compreender o meio da salvação citado no texto.",
+    "evidence": [
+      "2 Timóteo 3:15"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-01-todo-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Timóteo 3:16 a Salmos 119:105?",
+    "prompt": "O que liga 2 Timóteo 3:16 a Salmos 119:105?",
+    "cue": "O que liga 2 Timóteo 3:16 a Salmos 119:105?",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "passageA": {
+      "ref": "2 Timóteo 3:16",
+      "text": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;"
+    },
+    "passageB": {
+      "ref": "Salmos 119:105",
+      "text": "A tua palavra é lâmpada para os meus pés e luz para o meu caminho"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra guia e ensina"
+      },
+      {
+        "id": "b",
+        "text": "A palavra esconde o caminho"
+      },
+      {
+        "id": "c",
+        "text": "Cada um inventa seu caminho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Nos dois textos, a palavra de Deus orienta a vida.",
+    "feedbackWrong": {
+      "b": "O Salmo diz que ela ilumina o caminho, não o esconde.",
+      "c": "Quem guia é a palavra recebida, não a invenção pessoal."
+    },
+    "hint": "Veja o que a palavra faz pelos pés no Salmo.",
+    "learningObjective": "Relacionar a Escritura que ensina à palavra que guia.",
+    "evidence": [
+      "2 Timóteo 3:16",
+      "Salmos 119:105"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-01-todo-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 3:16–17, a Escritura inspirada prepara o homem de Deus para boas obras.",
+    "prompt": "Em 2 Timóteo 3:16–17, a Escritura inspirada prepara o homem de Deus para boas obras.",
+    "cue": "Em 2 Timóteo 3:16–17, a Escritura inspirada prepara o homem de Deus para boas obras.",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "completamente preparado para toda boa obra",
+    "feedbackCorrect": "O texto liga Escritura, fé que salva e preparo para o bem.",
+    "feedbackWrong": {
+      "false": "Releia 3:15 e 3:17, que ligam fé, salvação e boas obras."
+    },
+    "hint": "Junte o que dizem os versículos 15 e 17.",
+    "learningObjective": "Interpretar a Escritura como caminho de fé e prática.",
+    "evidence": [
+      "2 Timóteo 3:15–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-01-todo-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 3:15, toque em quem está a fé que leva à salvação.",
+    "prompt": "Em 2 Timóteo 3:15, toque em quem está a fé que leva à salvação.",
+    "cue": "Em 2 Timóteo 3:15, toque em quem está a fé que leva à salvação.",
+    "verseRef": "2 Timóteo 3:15",
+    "passageText": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desde a infância"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "sagradas letras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pela fé em Cristo Jesus",
+    "feedbackCorrect": "A fé citada no texto tem nele o seu centro.",
+    "feedbackWrong": {
+      "a": "Isso marca desde quando Timóteo conhece as Escrituras.",
+      "c": "Elas tornam sábio, mas a fé está nele."
+    },
+    "hint": "Procure um nome próprio no fim.",
+    "learningObjective": "Sustentar com o texto o centro da fé que salva.",
+    "evidence": [
+      "2 Timóteo 3:15"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-01-todo-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Timóteo 3:16–17 sustenta sobre a Escritura?",
+    "prompt": "Que leitura 2 Timóteo 3:16–17 sustenta sobre a Escritura?",
+    "cue": "Que leitura 2 Timóteo 3:16–17 sustenta sobre a Escritura?",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela dispensa a fé em Cristo para salvar"
+      },
+      {
+        "id": "b",
+        "text": "Ela vale só para líderes de igreja"
+      },
+      {
+        "id": "c",
+        "text": "Ela vem de Deus e forma para boas obras"
+      },
+      {
+        "id": "d",
+        "text": "Ela inspira, mas não muda a vida de ninguém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Origem em Deus e formação para o bem andam juntas.",
+    "feedbackWrong": {
+      "a": "O texto liga a salvação justamente à fé em Cristo.",
+      "b": "Timóteo a conhece desde a infância, não só como líder.",
+      "d": "Ela é útil para corrigir e preparar, logo muda a vida."
+    },
+    "hint": "Junte origem e alvo nos dois versículos.",
+    "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+    "evidence": [
+      "2 Timóteo 3:16–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-01-todo-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de 2 Timóteo 3:15–17?",
+    "prompt": "Qual sequência revela o caminho de 2 Timóteo 3:15–17?",
+    "cue": "Qual sequência revela o caminho de 2 Timóteo 3:15–17?",
+    "verseRef": "2 Timóteo 3:15",
+    "passageText": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer as sagradas letras desde cedo"
+      },
+      {
+        "id": "b",
+        "text": "Ser sábio para a salvação pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Estar pronto para toda boa obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "desde a infância, tu conheces as sagradas letras",
+    "feedbackCorrect": "Conhecer, crer para a salvação e servir preparado.",
+    "feedbackWrong": {
+      "default": "Comece pelo conhecimento desde cedo; servir vem por último."
+    },
+    "hint": "A prática preparada fecha o caminho.",
+    "learningObjective": "Ver o fio entre conhecer, crer e servir.",
+    "evidence": [
+      "2 Timóteo 3:15–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-01-todo-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 3:16, como a Escritura é descrita logo no começo?",
+    "prompt": "Em 2 Timóteo 3:16, como a Escritura é descrita logo no começo?",
+    "cue": "Em 2 Timóteo 3:16, como a Escritura é descrita logo no começo?",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "template": "Toda a Escritura é ___ por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "a",
+        "text": "guardada"
+      },
+      {
+        "id": "b",
+        "text": "ensinada"
+      },
+      {
+        "id": "c",
+        "text": "inspirada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "É a palavra que abre a afirmação de Paulo sobre ela.",
+    "feedbackWrong": {
+      "a": "Guardar não é o que o versículo afirma sobre ela.",
+      "b": "Ensinar é um uso dela; sua origem é dita antes."
+    },
+    "hint": "É o adjetivo ligado a Deus no versículo.",
+    "learningObjective": "Lembrar o termo que declara a origem da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-01-todo-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-01-todo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Timóteo 3:17 a Tiago 1:22?",
+    "prompt": "O que liga 2 Timóteo 3:17 a Tiago 1:22?",
+    "cue": "O que liga 2 Timóteo 3:17 a Tiago 1:22?",
+    "verseRef": "2 Timóteo 3:17",
+    "passageText": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "passageA": {
+      "ref": "2 Timóteo 3:17",
+      "text": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra."
+    },
+    "passageB": {
+      "ref": "Tiago 1:22",
+      "text": "Sejam praticantes da palavra e não somente ouvintes, enganando-se a si mesmos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir a palavra e praticá-la"
+      },
+      {
+        "id": "b",
+        "text": "Falar sem fazer nada"
+      },
+      {
+        "id": "c",
+        "text": "Ouvir e esquecer a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "completamente preparado para toda boa obra",
+    "feedbackCorrect": "Os dois textos unem palavra recebida e vida praticada.",
+    "feedbackWrong": {
+      "b": "O preparo citado é para agir bem, não só falar.",
+      "c": "Tiago alerta justamente contra só ouvir e não praticar."
+    },
+    "hint": "Veja o que Tiago pede a quem ouve.",
+    "learningObjective": "Ligar o preparo pela Escritura à prática da palavra.",
+    "evidence": [
+      "2 Timóteo 3:17",
+      "Tiago 1:22"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-02-verdade-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 1:1, Paulo se apresenta como rei de Israel e apóstolo de Jesus Cristo.",
+    "prompt": "Em Tito 1:1, Paulo se apresenta como rei de Israel e apóstolo de Jesus Cristo.",
+    "cue": "Em Tito 1:1, Paulo se apresenta como rei de Israel e apóstolo de Jesus Cristo.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "servo de Deus e apóstolo de Jesus Cristo",
+    "feedbackCorrect": "Ele se chama servo de Deus e apóstolo de Jesus Cristo.",
+    "feedbackWrong": {
+      "true": "Releia a abertura, que o chama de servo, não de rei."
+    },
+    "hint": "Olhe como Paulo se apresenta.",
+    "learningObjective": "Observar como Paulo se apresenta na carta.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-02-verdade-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 1:1, toque com o que a verdade está de acordo.",
+    "prompt": "Em Tito 1:1, toque com o que a verdade está de acordo.",
+    "cue": "Em Tito 1:1, toque com o que a verdade está de acordo.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "fé dos eleitos"
+      },
+      {
+        "id": "c",
+        "text": "piedade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "O conhecimento da verdade anda junto dessa vida diante de Deus.",
+    "feedbackWrong": {
+      "a": "Ele é aquele de quem Paulo é apóstolo, não o acordo citado.",
+      "b": "Isso é o que Paulo promove, não o acordo citado no fim."
+    },
+    "hint": "Leia a parte final do versículo.",
+    "learningObjective": "Observar a ligação entre verdade e vida piedosa.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-02-verdade-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 1:2, o que Deus prometeu antes de todos os tempos?",
+    "prompt": "Segundo Tito 1:2, o que Deus prometeu antes de todos os tempos?",
+    "cue": "Segundo Tito 1:2, o que Deus prometeu antes de todos os tempos?",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Riqueza nesta vida"
+      },
+      {
+        "id": "b",
+        "text": "Fama para Paulo"
+      },
+      {
+        "id": "c",
+        "text": "A vida eterna"
+      },
+      {
+        "id": "d",
+        "text": "Um reino só em Creta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "na esperança da vida eterna que Deus, que não pode mentir, prometeu",
+    "feedbackCorrect": "A promessa antiga de Deus sustenta essa esperança.",
+    "feedbackWrong": {
+      "a": "O texto fala de esperança eterna, não de bens materiais.",
+      "b": "Paulo é servo nessa carta, não busca fama.",
+      "d": "A promessa é anterior aos tempos, não local."
+    },
+    "hint": "Leia o começo do versículo 2.",
+    "learningObjective": "Observar a promessa que sustenta a esperança.",
+    "evidence": [
+      "Tito 1:2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-02-verdade-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 1:2 na ordem do texto.",
+    "prompt": "Monte Tito 1:2 na ordem do texto.",
+    "cue": "Monte Tito 1:2 na ordem do texto.",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "na esperança da vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "que Deus, que não pode mentir, prometeu"
+      },
+      {
+        "id": "c",
+        "text": "antes de todos os tempos eternos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "na esperança da vida eterna que Deus, que não pode mentir",
+    "feedbackCorrect": "Primeiro a esperança, depois quem prometeu e quando.",
+    "feedbackWrong": {
+      "default": "Comece pela esperança citada no início do versículo."
+    },
+    "hint": "O versículo começa pela esperança.",
+    "learningObjective": "Reconhecer a sequência de Tito 1:2.",
+    "evidence": [
+      "Tito 1:2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-02-verdade-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 1:2, qual é a esperança de quem crê na promessa de Deus?",
+    "prompt": "Em Tito 1:2, qual é a esperança de quem crê na promessa de Deus?",
+    "cue": "Em Tito 1:2, qual é a esperança de quem crê na promessa de Deus?",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "template": "na esperança da vida ___ que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "eterna"
+      },
+      {
+        "id": "b",
+        "text": "passageira"
+      },
+      {
+        "id": "c",
+        "text": "humana"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "na esperança da vida eterna",
+    "feedbackCorrect": "É a vida que Deus prometeu antes dos tempos.",
+    "feedbackWrong": {
+      "b": "Ela foi prometida antes dos tempos, não é passageira.",
+      "c": "A esperança vem da promessa de Deus, não do esforço humano."
+    },
+    "hint": "Veja o adjetivo ligado à vida.",
+    "learningObjective": "Lembrar a esperança prometida por Deus.",
+    "evidence": [
+      "Tito 1:2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-02-verdade-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:1 comunica que se liga a este contexto?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "passageA": {
+      "ref": "Tito 1:1",
+      "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Conhecer a verdade de Deus muda o modo de viver."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Verdade só para debates"
+      },
+      {
+        "id": "b",
+        "text": "Ideias sem vida prática"
+      },
+      {
+        "id": "c",
+        "text": "Verdade vivida com piedade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "No texto, conhecer a verdade e viver diante de Deus andam juntos.",
+    "feedbackWrong": {
+      "a": "Paulo liga a verdade à piedade, não só à discussão.",
+      "b": "A verdade citada produz uma vida, não fica só na ideia."
+    },
+    "hint": "Veja a palavra final do versículo.",
+    "learningObjective": "Ligar conhecimento da verdade à vida piedosa.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-02-verdade-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 1:1, o conhecimento da verdade anda de acordo com a piedade.",
+    "prompt": "Em Tito 1:1, o conhecimento da verdade anda de acordo com a piedade.",
+    "cue": "Em Tito 1:1, o conhecimento da verdade anda de acordo com a piedade.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "Paulo une conhecer a verdade e viver com piedade.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1:1, que une verdade e piedade."
+    },
+    "hint": "Olhe o fim do versículo 1.",
+    "learningObjective": "Compreender a união entre verdade e piedade.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-02-verdade-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+    "prompt": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+    "cue": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de acordo com"
+      },
+      {
+        "id": "b",
+        "text": "servo de Deus"
+      },
+      {
+        "id": "c",
+        "text": "com o propósito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com o propósito de promover a fé dos eleitos de Deus",
+    "feedbackCorrect": "Essa expressão introduz o alvo do trabalho de Paulo.",
+    "feedbackWrong": {
+      "a": "Isso liga verdade e piedade, no fim do versículo.",
+      "b": "Isso diz quem Paulo é, não o alvo do seu serviço."
+    },
+    "hint": "Procure onde Paulo diz para que serve.",
+    "learningObjective": "Reconhecer o marcador de propósito no texto.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-02-verdade-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 1:2 sustenta a esperança citada por Paulo?",
+    "prompt": "Como Tito 1:2 sustenta a esperança citada por Paulo?",
+    "cue": "Como Tito 1:2 sustenta a esperança citada por Paulo?",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela se apoia na promessa de Deus, que não mente"
+      },
+      {
+        "id": "b",
+        "text": "Ela depende da força de vontade de cada pessoa"
+      },
+      {
+        "id": "c",
+        "text": "Ela nasce de uma promessa feita só agora"
+      },
+      {
+        "id": "d",
+        "text": "Ela dispensa confiar no que Deus falou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus, que não pode mentir, prometeu antes de todos os tempos eternos",
+    "feedbackCorrect": "Quem prometeu não pode mentir, por isso a esperança é firme.",
+    "feedbackWrong": {
+      "b": "O fundamento citado é a promessa de Deus, não a vontade humana.",
+      "c": "A promessa foi feita antes de todos os tempos.",
+      "d": "A esperança nasce justamente de confiar na palavra dele."
+    },
+    "hint": "Veja quem prometeu e como ele é descrito.",
+    "learningObjective": "Compreender o fundamento da esperança cristã.",
+    "evidence": [
+      "Tito 1:2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-02-verdade-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a abertura em Tito 1:1–3?",
+    "prompt": "Como avança a abertura em Tito 1:1–3?",
+    "cue": "Como avança a abertura em Tito 1:1–3?",
+    "verseRef": "Tito 1:1–2",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade. na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo serve para promover a fé"
+      },
+      {
+        "id": "b",
+        "text": "A verdade conduz à piedade"
+      },
+      {
+        "id": "c",
+        "text": "A esperança olha para a vida eterna"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "promover a fé dos eleitos de Deus e o pleno conhecimento da verdade",
+    "feedbackCorrect": "Serviço, verdade vivida e esperança, nessa ordem do texto.",
+    "feedbackWrong": {
+      "default": "Comece pelo serviço de Paulo; a esperança vem em 1:2."
+    },
+    "hint": "A esperança aparece no versículo seguinte.",
+    "learningObjective": "Compreender o movimento da abertura da carta.",
+    "evidence": [
+      "Tito 1:1–3"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-02-verdade-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 1:3, por meio do que Deus manifestou a sua palavra?",
+    "prompt": "Em Tito 1:3, por meio do que Deus manifestou a sua palavra?",
+    "cue": "Em Tito 1:3, por meio do que Deus manifestou a sua palavra?",
+    "verseRef": "Tito 1:3",
+    "passageText": "E, em seu devido tempo, manifestou a sua palavra por meio da pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;",
+    "template": "E, em seu devido tempo, manifestou a sua palavra por meio da ___ que me foi confiada segundo o mandamento de Deus, nosso Salvador;",
+    "options": [
+      {
+        "id": "a",
+        "text": "viagem"
+      },
+      {
+        "id": "b",
+        "text": "leitura"
+      },
+      {
+        "id": "c",
+        "text": "pregação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "manifestou a sua palavra por meio da pregação que me foi confiada",
+    "feedbackCorrect": "A palavra de Deus se manifestou por esse meio confiado a Paulo.",
+    "feedbackWrong": {
+      "a": "A viagem não é citada; o meio é a palavra anunciada.",
+      "b": "O texto fala do anúncio confiado a Paulo."
+    },
+    "hint": "Leia o meio citado depois de palavra.",
+    "learningObjective": "Compreender como a palavra foi manifestada.",
+    "evidence": [
+      "Tito 1:3"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-02-verdade-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 1:1 a João 8:32?",
+    "prompt": "O que liga Tito 1:1 a João 8:32?",
+    "cue": "O que liga Tito 1:1 a João 8:32?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "passageA": {
+      "ref": "Tito 1:1",
+      "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade."
+    },
+    "passageB": {
+      "ref": "João 8:32",
+      "text": "E conhecereis a verdade, e a verdade vos libertará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada pessoa inventa sua verdade"
+      },
+      {
+        "id": "b",
+        "text": "A verdade conhecida aprisiona pessoas"
+      },
+      {
+        "id": "c",
+        "text": "A verdade conhecida liberta e guia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o pleno conhecimento da verdade",
+    "feedbackCorrect": "Nos dois textos, conhecer a verdade transforma a vida.",
+    "feedbackWrong": {
+      "a": "A verdade vem de Deus e de Jesus, não da invenção pessoal.",
+      "b": "Jesus diz o contrário, que ela liberta quem a conhece."
+    },
+    "hint": "Veja o que Jesus diz que ela faz.",
+    "learningObjective": "Relacionar conhecimento da verdade e liberdade.",
+    "evidence": [
+      "Tito 1:1",
+      "João 8:32"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-02-verdade-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tito 1:1–2, a vida eterna é algo que o ser humano conquista para que Deus depois prometa.",
+    "prompt": "Em Tito 1:1–2, a vida eterna é algo que o ser humano conquista para que Deus depois prometa.",
+    "cue": "Em Tito 1:1–2, a vida eterna é algo que o ser humano conquista para que Deus depois prometa.",
+    "verseRef": "Tito 1:1–2",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade. na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Deus, que não pode mentir, prometeu antes de todos os tempos eternos",
+    "feedbackCorrect": "Ela é promessa antiga de Deus, não conquista humana posterior.",
+    "feedbackWrong": {
+      "true": "Releia 1:2, que põe a promessa antes de todos os tempos."
+    },
+    "hint": "Veja quando a promessa foi feita.",
+    "learningObjective": "Interpretar a vida eterna como promessa de Deus.",
+    "evidence": [
+      "Tito 1:1–2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-02-verdade-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 1:2, toque o que sustenta a esperança de quem crê.",
+    "prompt": "Em Tito 1:2, toque o que sustenta a esperança de quem crê.",
+    "cue": "Em Tito 1:2, toque o que sustenta a esperança de quem crê.",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "tempos eternos"
+      },
+      {
+        "id": "c",
+        "text": "na esperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "na esperança da vida eterna",
+    "feedbackCorrect": "É isso que Deus prometeu e que sustenta quem crê.",
+    "feedbackWrong": {
+      "b": "Isso marca quando Deus prometeu, não o conteúdo da promessa.",
+      "c": "Isso nomeia a atitude, não aquilo que se espera."
+    },
+    "hint": "Procure o conteúdo do que foi prometido.",
+    "learningObjective": "Sustentar com o texto o conteúdo da esperança.",
+    "evidence": [
+      "Tito 1:2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-02-verdade-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 1:1 sustenta sobre conhecer a verdade?",
+    "prompt": "Que leitura Tito 1:1 sustenta sobre conhecer a verdade?",
+    "cue": "Que leitura Tito 1:1 sustenta sobre conhecer a verdade?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a verdade deve virar vida piedosa"
+      },
+      {
+        "id": "b",
+        "text": "Conhecer a verdade serve só para vencer debates"
+      },
+      {
+        "id": "c",
+        "text": "A piedade dispensa conhecer a verdade de Deus"
+      },
+      {
+        "id": "d",
+        "text": "A verdade pode ser conhecida sem mudar nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "Paulo não separa o que se conhece do modo de viver.",
+    "feedbackWrong": {
+      "b": "O alvo citado inclui fé e piedade, não só debate.",
+      "c": "As duas andam juntas no mesmo versículo.",
+      "d": "O texto liga o conhecimento a uma vida diante de Deus."
+    },
+    "hint": "Compare cada opção com o fim do versículo.",
+    "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-02-verdade-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Tito 1:1–2?",
+    "prompt": "Qual sequência revela o caminho de Tito 1:1–2?",
+    "cue": "Qual sequência revela o caminho de Tito 1:1–2?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a verdade de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Viver de acordo com a piedade"
+      },
+      {
+        "id": "c",
+        "text": "Esperar a vida prometida por Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o pleno conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "Conhecer, viver e esperar, ligados na abertura da carta.",
+    "feedbackWrong": {
+      "default": "Comece pelo conhecimento; a esperança fecha em 1:2."
+    },
+    "hint": "A esperança da vida eterna vem depois.",
+    "learningObjective": "Ver o fio entre verdade, vida e esperança.",
+    "evidence": [
+      "Tito 1:1–2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-02-verdade-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 1:1, o que deve ser conhecido plenamente por quem crê?",
+    "prompt": "Em Tito 1:1, o que deve ser conhecido plenamente por quem crê?",
+    "cue": "Em Tito 1:1, o que deve ser conhecido plenamente por quem crê?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "template": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da ___ de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "história"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "tradição"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o pleno conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "É o conhecimento que Paulo quer promover com seu serviço.",
+    "feedbackWrong": {
+      "a": "O texto fala do que Deus revelou, não de história em geral.",
+      "c": "O foco é o que Deus fez conhecer, ligado à piedade."
+    },
+    "hint": "É o substantivo depois de conhecimento.",
+    "learningObjective": "Lembrar o termo central da cena.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-02-verdade-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-02-verdade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 1:2 a Números 23:19?",
+    "prompt": "O que liga Tito 1:2 a Números 23:19?",
+    "cue": "O que liga Tito 1:2 a Números 23:19?",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "passageA": {
+      "ref": "Tito 1:2",
+      "text": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;"
+    },
+    "passageB": {
+      "ref": "Números 23:19",
+      "text": "Deus não é homem, para que minta; nem filho do homem, para que se arrependa. Porventura, tendo Ele prometido, não o cumprirá? Ou, tendo falado, não o executará?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus muda de ideia sempre"
+      },
+      {
+        "id": "b",
+        "text": "Humanos nunca podem falhar"
+      },
+      {
+        "id": "c",
+        "text": "Deus não mente ao prometer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus, que não pode mentir, prometeu",
+    "feedbackCorrect": "Nos dois textos, Deus fala e cumpre o que diz.",
+    "feedbackWrong": {
+      "a": "Os textos afirmam o contrário sobre o caráter de Deus.",
+      "b": "O assunto é a fidelidade de Deus, não a perfeição humana."
+    },
+    "hint": "Veja como os dois textos descrevem Deus.",
+    "learningObjective": "Ligar a promessa de Tito à fidelidade de Deus.",
+    "evidence": [
+      "Tito 1:2",
+      "Números 23:19"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-03-igreja-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Efésios 4:5, há um só Senhor, uma única fé e um único batismo.",
+    "prompt": "Em Efésios 4:5, há um só Senhor, uma única fé e um único batismo.",
+    "cue": "Em Efésios 4:5, há um só Senhor, uma única fé e um único batismo.",
+    "verseRef": "Efésios 4:5",
+    "passageText": "Um só Senhor, uma única fé, um único batismo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+    "feedbackCorrect": "Paulo reúne Senhor, fé e batismo nessa confissão única.",
+    "feedbackWrong": {
+      "false": "Releia 4:5, que cita os três com um só e única."
+    },
+    "hint": "Leia a confissão curta de 4:5.",
+    "learningObjective": "Observar a confissão comum da igreja.",
+    "evidence": [
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-03-igreja-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Efésios 4:5, toque quem é um só para a igreja.",
+    "prompt": "Em Efésios 4:5, toque quem é um só para a igreja.",
+    "cue": "Em Efésios 4:5, toque quem é um só para a igreja.",
+    "verseRef": "Efésios 4:5",
+    "passageText": "Um só Senhor, uma única fé, um único batismo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "batismo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+    "feedbackCorrect": "Ele é o primeiro nomeado nessa confissão de unidade.",
+    "feedbackWrong": {
+      "a": "Ele é o sinal comum citado no fim, não a pessoa.",
+      "c": "Ela é a confiança comum, não a pessoa nomeada aqui."
+    },
+    "hint": "Procure uma pessoa, não uma prática.",
+    "learningObjective": "Identificar o Senhor único da igreja.",
+    "evidence": [
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-03-igreja-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Efésios 4:4, o que há um só para os crentes?",
+    "prompt": "Segundo Efésios 4:4, o que há um só para os crentes?",
+    "cue": "Segundo Efésios 4:4, o que há um só para os crentes?",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só corpo e um só Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Um só templo feito de pedras"
+      },
+      {
+        "id": "c",
+        "text": "Muitas esperanças diferentes"
+      },
+      {
+        "id": "d",
+        "text": "Muitos corpos e muitos espíritos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Paulo começa a lista da unidade por esses dois.",
+    "feedbackWrong": {
+      "b": "O corpo aqui são as pessoas unidas, não um prédio.",
+      "c": "A esperança citada também é única no mesmo versículo.",
+      "d": "O texto diz um só para os dois, não muitos."
+    },
+    "hint": "Leia a primeira parte de 4:4.",
+    "learningObjective": "Observar o começo da lista da unidade.",
+    "evidence": [
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-03-igreja-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Efésios 4:5 na ordem do texto.",
+    "prompt": "Monte Efésios 4:5 na ordem do texto.",
+    "cue": "Monte Efésios 4:5 na ordem do texto.",
+    "verseRef": "Efésios 4:5",
+    "passageText": "Um só Senhor, uma única fé, um único batismo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só Senhor"
+      },
+      {
+        "id": "b",
+        "text": "uma única fé"
+      },
+      {
+        "id": "c",
+        "text": "um único batismo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+    "feedbackCorrect": "Senhor, fé e batismo, na ordem da confissão.",
+    "feedbackWrong": {
+      "default": "Comece pelo Senhor citado primeiro no versículo."
+    },
+    "hint": "O versículo começa pelo Senhor.",
+    "learningObjective": "Reconhecer a sequência de Efésios 4:5.",
+    "evidence": [
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-03-igreja-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Efésios 4:4, em que os crentes foram chamados por Deus?",
+    "prompt": "Em Efésios 4:4, em que os crentes foram chamados por Deus?",
+    "cue": "Em Efésios 4:4, em que os crentes foram chamados por Deus?",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "template": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única ___ da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fostes chamados em uma única esperança da vossa vocação",
+    "feedbackCorrect": "O chamado de Deus vem junto dessa expectativa única.",
+    "feedbackWrong": {
+      "a": "Ela aparece em 4:5, na confissão seguinte.",
+      "c": "Ela é o vínculo da unidade em 4:3."
+    },
+    "hint": "Leia a parte final de 4:4.",
+    "learningObjective": "Lembrar a esperança única do chamado.",
+    "evidence": [
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-03-igreja-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Efésios 4:4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 4:4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 4:4 comunica que se liga a este contexto?",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "passageA": {
+      "ref": "Efésios 4:4",
+      "text": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Crentes diferentes formam juntos um só povo de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitos povos sem ligação"
+      },
+      {
+        "id": "b",
+        "text": "Um povo unido pelo Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Cada crente vive isolado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Um corpo e um Espírito unem quem foi chamado.",
+    "feedbackWrong": {
+      "a": "A esperança e o Espírito são únicos para todos.",
+      "c": "O texto fala de um só corpo, não de isolamento."
+    },
+    "hint": "Veja o que é um só no versículo.",
+    "learningObjective": "Ligar a unidade do Espírito à vida da igreja.",
+    "evidence": [
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-03-igreja-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Efésios 4:3, a igreja deve criar sozinha uma unidade que o Espírito ainda não deu.",
+    "prompt": "Em Efésios 4:3, a igreja deve criar sozinha uma unidade que o Espírito ainda não deu.",
+    "cue": "Em Efésios 4:3, a igreja deve criar sozinha uma unidade que o Espírito ainda não deu.",
+    "verseRef": "Efésios 4:3",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+    "feedbackCorrect": "O chamado é preservar a unidade do Espírito, já dada.",
+    "feedbackWrong": {
+      "true": "Releia 4:3, que fala em preservar, não em inventar."
+    },
+    "hint": "Repare no verbo usado em 4:3.",
+    "learningObjective": "Compreender que a unidade é preservada, não inventada.",
+    "evidence": [
+      "Efésios 4:3–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-03-igreja-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Efésios 4:3, toque a palavra que nomeia o laço da unidade na paz.",
+    "prompt": "Em Efésios 4:3, toque a palavra que nomeia o laço da unidade na paz.",
+    "cue": "Em Efésios 4:3, toque a palavra que nomeia o laço da unidade na paz.",
+    "verseRef": "Efésios 4:3",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "vínculo"
+      },
+      {
+        "id": "c",
+        "text": "unidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "no vínculo da paz",
+    "feedbackCorrect": "Essa palavra nomeia o laço que mantém a unidade.",
+    "feedbackWrong": {
+      "a": "Ele é quem dá a unidade citada no versículo.",
+      "c": "Isso é o que deve ser preservado, não o laço nomeado."
+    },
+    "hint": "Leia a expressão final do versículo.",
+    "learningObjective": "Reconhecer o laço que preserva a unidade.",
+    "evidence": [
+      "Efésios 4:3"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-03-igreja-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Efésios 4:6 coroa a lista de Efésios 4:4–5?",
+    "prompt": "Como Efésios 4:6 coroa a lista de Efésios 4:4–5?",
+    "cue": "Como Efésios 4:6 coroa a lista de Efésios 4:4–5?",
+    "verseRef": "Efésios 4:5–6",
+    "passageText": "Um só Senhor, uma única fé, um único batismo; Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separando os crentes por importância"
+      },
+      {
+        "id": "b",
+        "text": "Trocando a fé por muitas crenças locais"
+      },
+      {
+        "id": "c",
+        "text": "Apontando um só Deus e Pai sobre todos"
+      },
+      {
+        "id": "d",
+        "text": "Tirando o Espírito da vida da igreja"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Um só Deus e Pai de todos, o qual está acima de todos",
+    "feedbackCorrect": "A lista sobe até o Pai único, acima de todos.",
+    "feedbackWrong": {
+      "a": "O Pai é de todos, sem separar por importância.",
+      "b": "A fé citada em 4:5 continua única para todos.",
+      "d": "O Espírito já foi citado como único em 4:4."
+    },
+    "hint": "Veja quem fecha a lista em 4:6.",
+    "learningObjective": "Compreender o fechamento da lista da unidade.",
+    "evidence": [
+      "Efésios 4:4–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-03-igreja-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em Efésios 4:3–6?",
+    "prompt": "Como avança o ensino em Efésios 4:3–6?",
+    "cue": "Como avança o ensino em Efésios 4:3–6?",
+    "verseRef": "Efésios 4:3–4",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz. Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a unidade na paz"
+      },
+      {
+        "id": "b",
+        "text": "Um corpo e um Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Um Deus e Pai de todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+    "feedbackCorrect": "Do chamado prático ao fundamento único da igreja.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado de 4:3; o Pai fecha em 4:6."
+    },
+    "hint": "O Pai de todos fecha a lista.",
+    "learningObjective": "Compreender o movimento do chamado à confissão.",
+    "evidence": [
+      "Efésios 4:3–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-03-igreja-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Efésios 4:6, Deus é o que de todos os crentes?",
+    "prompt": "Em Efésios 4:6, Deus é o que de todos os crentes?",
+    "cue": "Em Efésios 4:6, Deus é o que de todos os crentes?",
+    "verseRef": "Efésios 4:6",
+    "passageText": "Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "template": "Um só Deus e ___ de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Um só Deus e Pai de todos, o qual está acima de todos",
+    "feedbackCorrect": "Ele é apresentado assim no fechamento da lista.",
+    "feedbackWrong": {
+      "a": "Esse título aparece em 4:5, ligado a Jesus.",
+      "b": "Ele é o Senhor da igreja, não o título usado aqui."
+    },
+    "hint": "Leia o começo de 4:6.",
+    "learningObjective": "Compreender Deus como Pai comum dos crentes.",
+    "evidence": [
+      "Efésios 4:6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-03-igreja-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Efésios 4:4 a 1 Coríntios 12:13?",
+    "prompt": "O que liga Efésios 4:4 a 1 Coríntios 12:13?",
+    "cue": "O que liga Efésios 4:4 a 1 Coríntios 12:13?",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "passageA": {
+      "ref": "Efésios 4:4",
+      "text": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;"
+    },
+    "passageB": {
+      "ref": "1 Coríntios 12:13",
+      "text": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitos espíritos, muitos corpos"
+      },
+      {
+        "id": "b",
+        "text": "Corpos separados sem Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Um Espírito, um só corpo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Nos dois textos, o Espírito forma um só corpo.",
+    "feedbackWrong": {
+      "a": "Os dois textos insistem no um só, não em muitos.",
+      "b": "O corpo citado vive justamente pelo Espírito."
+    },
+    "hint": "Compare o que os dois dizem do Espírito.",
+    "learningObjective": "Relacionar a unidade da igreja em Paulo.",
+    "evidence": [
+      "Efésios 4:4",
+      "1 Coríntios 12:13"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-03-igreja-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Efésios 4:5–6, crentes unidos confessam um só Senhor e um só Deus e Pai de todos.",
+    "prompt": "Em Efésios 4:5–6, crentes unidos confessam um só Senhor e um só Deus e Pai de todos.",
+    "cue": "Em Efésios 4:5–6, crentes unidos confessam um só Senhor e um só Deus e Pai de todos.",
+    "verseRef": "Efésios 4:5–6",
+    "passageText": "Um só Senhor, uma única fé, um único batismo; Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Um só Deus e Pai de todos, o qual está acima de todos",
+    "feedbackCorrect": "A confissão única reúne corpo, Senhor, fé e Pai.",
+    "feedbackWrong": {
+      "false": "Releia 4:5–6, que citam um só Senhor e um só Pai."
+    },
+    "hint": "Junte os versículos 5 e 6.",
+    "learningObjective": "Interpretar a confissão comum da igreja.",
+    "evidence": [
+      "Efésios 4:4–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-03-igreja-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Efésios 4:4, toque a imagem que mostra a igreja unida.",
+    "prompt": "Em Efésios 4:4, toque a imagem que mostra a igreja unida.",
+    "cue": "Em Efésios 4:4, toque a imagem que mostra a igreja unida.",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "corpo"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "vocação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Essa imagem mostra muitos crentes unidos como um.",
+    "feedbackWrong": {
+      "b": "Isso é o que se espera juntos, não a imagem da igreja.",
+      "c": "Isso é o chamado recebido, não a imagem usada."
+    },
+    "hint": "Procure a figura que reúne muitos em um.",
+    "learningObjective": "Sustentar com o texto a imagem da igreja unida.",
+    "evidence": [
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-03-igreja-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Efésios 4:3 sustenta sobre a unidade da igreja?",
+    "prompt": "Que leitura Efésios 4:3 sustenta sobre a unidade da igreja?",
+    "cue": "Que leitura Efésios 4:3 sustenta sobre a unidade da igreja?",
+    "verseRef": "Efésios 4:3",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela exige que todos tenham os mesmos dons"
+      },
+      {
+        "id": "b",
+        "text": "Ela depende de um só prédio para reunir"
+      },
+      {
+        "id": "c",
+        "text": "Ela é dom do Espírito a ser guardado na paz"
+      },
+      {
+        "id": "d",
+        "text": "Ela apaga a fé pessoal de cada crente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+    "feedbackCorrect": "A unidade vem do Espírito e pede esforço na paz.",
+    "feedbackWrong": {
+      "a": "O texto fala do chão comum, não de dons iguais.",
+      "b": "O corpo são pessoas unidas, não um lugar físico.",
+      "d": "A fé é comum, mas cada um é chamado pessoalmente."
+    },
+    "hint": "Veja de quem é a unidade em 4:3.",
+    "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+    "evidence": [
+      "Efésios 4:3–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-03-igreja-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fundamento da unidade em Efésios 4:4–6?",
+    "prompt": "Qual sequência revela o fundamento da unidade em Efésios 4:4–6?",
+    "cue": "Qual sequência revela o fundamento da unidade em Efésios 4:4–6?",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um Espírito forma um só corpo"
+      },
+      {
+        "id": "b",
+        "text": "Uma fé confessa um só Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Um Pai reúne todos os seus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Espírito, Senhor e Pai sustentam a mesma unidade.",
+    "feedbackWrong": {
+      "default": "Siga a ordem dos versículos 4, 5 e 6."
+    },
+    "hint": "Siga a ordem dos três versículos.",
+    "learningObjective": "Ver o fundamento único da vida da igreja.",
+    "evidence": [
+      "Efésios 4:4–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-03-igreja-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Efésios 4:5, o que há um único ligado à entrada na fé?",
+    "prompt": "Em Efésios 4:5, o que há um único ligado à entrada na fé?",
+    "cue": "Em Efésios 4:5, o que há um único ligado à entrada na fé?",
+    "verseRef": "Efésios 4:5",
+    "passageText": "Um só Senhor, uma única fé, um único batismo;",
+    "template": "Um só Senhor, uma única fé, um único ___;",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "batismo"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+    "feedbackCorrect": "Ele fecha a confissão curta do versículo 5.",
+    "feedbackWrong": {
+      "a": "O texto não usa essa palavra nessa confissão.",
+      "c": "O povo é o corpo; aqui o termo é outro."
+    },
+    "hint": "É a última palavra da confissão.",
+    "learningObjective": "Lembrar o sinal comum da fé confessada.",
+    "evidence": [
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-03-igreja-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-03-igreja",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Efésios 4:3 a João 17:21?",
+    "prompt": "O que liga Efésios 4:3 a João 17:21?",
+    "cue": "O que liga Efésios 4:3 a João 17:21?",
+    "verseRef": "Efésios 4:3",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz.",
+    "passageA": {
+      "ref": "Efésios 4:3",
+      "text": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz."
+    },
+    "passageB": {
+      "ref": "João 17:21",
+      "text": "Para que todos sejam um, assim como Tu, ó Pai, estás em mim e eu em Ti; que eles também sejam um em nós, para que o mundo creia que Tu me enviaste."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Unidade do povo de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cada crente crê sozinho"
+      },
+      {
+        "id": "c",
+        "text": "Divisão protege a igreja"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+    "feedbackCorrect": "Jesus ora por essa unidade e Paulo manda guardá-la.",
+    "feedbackWrong": {
+      "b": "A fé é vivida em um só corpo, não no isolamento.",
+      "c": "Os dois textos buscam unir, não dividir o povo."
+    },
+    "hint": "Veja o pedido de Jesus por seus discípulos.",
+    "learningObjective": "Ligar a oração de Jesus à unidade da igreja.",
+    "evidence": [
+      "Efésios 4:3",
+      "João 17:21"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 3:16, toda a Escritura é inspirada por Deus e útil para o ensino.",
+    "prompt": "Em 2 Timóteo 3:16, toda a Escritura é inspirada por Deus e útil para o ensino.",
+    "cue": "Em 2 Timóteo 3:16, toda a Escritura é inspirada por Deus e útil para o ensino.",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus e útil para o ensino",
+    "feedbackCorrect": "Paulo une origem em Deus e utilidade para ensinar.",
+    "feedbackWrong": {
+      "false": "Releia 3:16, que afirma as duas coisas juntas."
+    },
+    "hint": "Leia o versículo inteiro com calma.",
+    "learningObjective": "Revisar a origem e o uso da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Timóteo 3:16, toque quem inspira a Escritura.",
+    "prompt": "Em 2 Timóteo 3:16, toque quem inspira a Escritura.",
+    "cue": "Em 2 Timóteo 3:16, toque quem inspira a Escritura.",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escritura"
+      },
+      {
+        "id": "b",
+        "text": "ensino"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus",
+    "feedbackCorrect": "Ela vem dele, segundo a afirmação de Paulo.",
+    "feedbackWrong": {
+      "a": "Ela recebe a inspiração, não é quem inspira.",
+      "b": "Isso é um dos usos dela, não sua fonte."
+    },
+    "hint": "Procure a fonte dela no texto.",
+    "learningObjective": "Revisar Deus como fonte da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:16"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Efésios 4:5, o que a igreja confessa como único?",
+    "prompt": "Segundo Efésios 4:5, o que a igreja confessa como único?",
+    "cue": "Segundo Efésios 4:5, o que a igreja confessa como único?",
+    "verseRef": "Efésios 4:5",
+    "passageText": "Um só Senhor, uma única fé, um único batismo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só um prédio e um só lugar"
+      },
+      {
+        "id": "b",
+        "text": "Um só Senhor e uma única fé"
+      },
+      {
+        "id": "c",
+        "text": "Muitos batismos sem ligação"
+      },
+      {
+        "id": "d",
+        "text": "Muitos senhores e muitas fés"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+    "feedbackCorrect": "A confissão reúne Senhor, fé e batismo como únicos.",
+    "feedbackWrong": {
+      "a": "A unidade é de pessoas em um corpo, não de lugar.",
+      "c": "O batismo citado também é único no texto.",
+      "d": "O texto usa um só e única, não muitos."
+    },
+    "hint": "Conte quantas vezes aparece um só.",
+    "learningObjective": "Revisar a confissão comum da igreja.",
+    "evidence": [
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Efésios 4:6 na ordem do texto.",
+    "prompt": "Monte Efésios 4:6 na ordem do texto.",
+    "cue": "Monte Efésios 4:6 na ordem do texto.",
+    "verseRef": "Efésios 4:6",
+    "passageText": "Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só Deus e Pai de todos"
+      },
+      {
+        "id": "b",
+        "text": "o qual está acima de todos"
+      },
+      {
+        "id": "c",
+        "text": "age por meio de todos e habita em todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Um só Deus e Pai de todos, o qual está acima de todos",
+    "feedbackCorrect": "Pai de todos, acima de todos e presente em todos.",
+    "feedbackWrong": {
+      "default": "Comece pelo Pai citado no início do versículo."
+    },
+    "hint": "O versículo começa pelo Pai.",
+    "learningObjective": "Reconhecer a sequência de Efésios 4:6.",
+    "evidence": [
+      "Efésios 4:6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Efésios 4:4, em que os crentes foram chamados por Deus?",
+    "prompt": "Em Efésios 4:4, em que os crentes foram chamados por Deus?",
+    "cue": "Em Efésios 4:4, em que os crentes foram chamados por Deus?",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "template": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única ___ da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fostes chamados em uma única esperança da vossa vocação",
+    "feedbackCorrect": "O chamado vem com essa expectativa compartilhada.",
+    "feedbackWrong": {
+      "a": "Ela é o vínculo da unidade em 4:3.",
+      "c": "Ela é citada em 4:5 como única para todos."
+    },
+    "hint": "Leia o fim de 4:4.",
+    "learningObjective": "Revisar a esperança única do chamado.",
+    "evidence": [
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Timóteo 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Timóteo 3:17 comunica que se liga a este contexto?",
+    "cue": "O que 2 Timóteo 3:17 comunica que se liga a este contexto?",
+    "verseRef": "2 Timóteo 3:17",
+    "passageText": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "passageA": {
+      "ref": "2 Timóteo 3:17",
+      "text": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem recebe a Escritura fica pronto para servir bem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pronto só para falar"
+      },
+      {
+        "id": "b",
+        "text": "Pronto para toda boa obra"
+      },
+      {
+        "id": "c",
+        "text": "Longe de qualquer serviço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "completamente preparado para toda boa obra",
+    "feedbackCorrect": "O preparo citado mira a prática do bem.",
+    "feedbackWrong": {
+      "a": "Boa obra é ação, não só discurso bonito.",
+      "c": "O texto prepara para agir, não para se afastar."
+    },
+    "hint": "Veja o resultado final do versículo.",
+    "learningObjective": "Ligar Escritura recebida e serviço prático.",
+    "evidence": [
+      "2 Timóteo 3:17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-07",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 1:2, toque o que Deus prometeu antes dos tempos.",
+    "prompt": "Em Tito 1:2, toque o que Deus prometeu antes dos tempos.",
+    "cue": "Em Tito 1:2, toque o que Deus prometeu antes dos tempos.",
+    "verseRef": "Tito 1:2",
+    "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "na esperança"
+      },
+      {
+        "id": "b",
+        "text": "vida eterna"
+      },
+      {
+        "id": "c",
+        "text": "tempos eternos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "na esperança da vida eterna que Deus, que não pode mentir, prometeu",
+    "feedbackCorrect": "É o conteúdo da promessa antiga de Deus.",
+    "feedbackWrong": {
+      "a": "Isso nomeia a espera, não o bem prometido.",
+      "c": "Isso diz quando ele prometeu, não o que prometeu."
+    },
+    "hint": "Procure o bem esperado por quem crê.",
+    "learningObjective": "Revisar a promessa que sustenta a esperança.",
+    "evidence": [
+      "Tito 1:2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-sem-ts-boss-08",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 1:1 na ordem do texto.",
+    "prompt": "Monte Tito 1:1 na ordem do texto.",
+    "cue": "Monte Tito 1:1 na ordem do texto.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "com o propósito de promover a fé dos eleitos de Deus"
+      },
+      {
+        "id": "c",
+        "text": "e o pleno conhecimento da verdade de acordo com a piedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Paulo, servo de Deus e apóstolo de Jesus Cristo",
+    "feedbackCorrect": "Quem Paulo é, para que serve e o que promove.",
+    "feedbackWrong": {
+      "default": "Comece pela apresentação de Paulo no início."
+    },
+    "hint": "O versículo começa com o nome de Paulo.",
+    "learningObjective": "Reconhecer a sequência de Tito 1:1.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 1:1, conhecer a verdade dispensa viver com piedade diante de Deus.",
+    "prompt": "Em Tito 1:1, conhecer a verdade dispensa viver com piedade diante de Deus.",
+    "cue": "Em Tito 1:1, conhecer a verdade dispensa viver com piedade diante de Deus.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "Paulo liga o conhecimento da verdade à piedade.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1:1, que une verdade e piedade."
+    },
+    "hint": "Olhe a última parte do versículo.",
+    "learningObjective": "Compreender verdade e piedade juntas.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+    "prompt": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+    "cue": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "com o propósito"
+      },
+      {
+        "id": "b",
+        "text": "de acordo com"
+      },
+      {
+        "id": "c",
+        "text": "servo de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "com o propósito de promover a fé dos eleitos de Deus",
+    "feedbackCorrect": "Essa expressão abre a declaração do alvo de Paulo.",
+    "feedbackWrong": {
+      "b": "Isso liga verdade e piedade no fim do texto.",
+      "c": "Isso diz quem ele é, não o alvo do serviço."
+    },
+    "hint": "Procure onde ele diz para que serve.",
+    "learningObjective": "Reconhecer o propósito do serviço de Paulo.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Timóteo 3:16 se relaciona com Efésios 4:5 nesta trilha?",
+    "prompt": "Como 2 Timóteo 3:16 se relaciona com Efésios 4:5 nesta trilha?",
+    "cue": "Como 2 Timóteo 3:16 se relaciona com Efésios 4:5 nesta trilha?",
+    "verseRef": "2 Timóteo 3:16",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Escritura forma a fé comum da igreja"
+      },
+      {
+        "id": "b",
+        "text": "A fé comum dispensa ouvir a Escritura"
+      },
+      {
+        "id": "c",
+        "text": "A Escritura separa cada crente dos outros"
+      },
+      {
+        "id": "d",
+        "text": "Cada igreja inventa sua própria verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus e útil para o ensino",
+    "feedbackCorrect": "Ela ensina e corrige o povo que confessa uma só fé.",
+    "feedbackWrong": {
+      "b": "A fé comum é alimentada pelo ensino dela.",
+      "c": "Ela reúne e forma, não isola os crentes.",
+      "d": "A verdade vem de Deus, não da invenção de grupos."
+    },
+    "hint": "Pense no que o ensino produz na igreja.",
+    "learningObjective": "Relacionar Escritura e fé comum da igreja.",
+    "evidence": [
+      "2 Timóteo 3:16",
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o resumo da trilha em 2 Timóteo e Tito?",
+    "prompt": "Como avança o resumo da trilha em 2 Timóteo e Tito?",
+    "cue": "Como avança o resumo da trilha em 2 Timóteo e Tito?",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Escritura vem de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ela ensina e corrige a vida"
+      },
+      {
+        "id": "c",
+        "text": "A pessoa serve pronta para o bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus e útil para o ensino",
+    "feedbackCorrect": "Origem, formação e serviço, nessa ordem lógica.",
+    "feedbackWrong": {
+      "default": "Comece pela origem; o serviço pronto vem depois."
+    },
+    "hint": "Servir bem é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento da formação pela Escritura.",
+    "evidence": [
+      "2 Timóteo 3:16–17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Timóteo 3:17, para que o homem de Deus fica completamente preparado?",
+    "prompt": "Em 2 Timóteo 3:17, para que o homem de Deus fica completamente preparado?",
+    "cue": "Em 2 Timóteo 3:17, para que o homem de Deus fica completamente preparado?",
+    "verseRef": "2 Timóteo 3:17",
+    "passageText": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "template": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "completamente preparado para toda boa obra",
+    "feedbackCorrect": "O preparo mira ações boas a serviço de Deus.",
+    "feedbackWrong": {
+      "a": "O foco aqui é o que ele fará pelos outros.",
+      "c": "Ela aparece em 3:15, ligada à salvação."
+    },
+    "hint": "Leia o fim do versículo 17.",
+    "learningObjective": "Compreender o alvo prático da Escritura.",
+    "evidence": [
+      "2 Timóteo 3:17"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 1:1 a João 8:32?",
+    "prompt": "O que liga Tito 1:1 a João 8:32?",
+    "cue": "O que liga Tito 1:1 a João 8:32?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "passageA": {
+      "ref": "Tito 1:1",
+      "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade."
+    },
+    "passageB": {
+      "ref": "João 8:32",
+      "text": "E conhecereis a verdade, e a verdade vos libertará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada pessoa inventa sua verdade"
+      },
+      {
+        "id": "b",
+        "text": "A verdade conhecida liberta e guia"
+      },
+      {
+        "id": "c",
+        "text": "A verdade conhecida aprisiona pessoas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o pleno conhecimento da verdade",
+    "feedbackCorrect": "Conhecer a verdade, nos dois textos, transforma.",
+    "feedbackWrong": {
+      "a": "Ela vem de Deus, não da invenção pessoal.",
+      "c": "Jesus afirma que ela liberta quem a conhece."
+    },
+    "hint": "Veja o efeito dela segundo Jesus.",
+    "learningObjective": "Relacionar verdade conhecida e liberdade.",
+    "evidence": [
+      "Tito 1:1",
+      "João 8:32"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-07",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Efésios 4:3, toque a palavra que nomeia o laço da unidade na paz.",
+    "prompt": "Em Efésios 4:3, toque a palavra que nomeia o laço da unidade na paz.",
+    "cue": "Em Efésios 4:3, toque a palavra que nomeia o laço da unidade na paz.",
+    "verseRef": "Efésios 4:3",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "unidade"
+      },
+      {
+        "id": "c",
+        "text": "vínculo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "no vínculo da paz",
+    "feedbackCorrect": "Essa palavra nomeia o laço que guarda a unidade.",
+    "feedbackWrong": {
+      "a": "Ele dá a unidade que deve ser guardada.",
+      "b": "Isso é o que se preserva, não o laço citado."
+    },
+    "hint": "Leia a expressão final do versículo.",
+    "learningObjective": "Reconhecer o laço da unidade da igreja.",
+    "evidence": [
+      "Efésios 4:3"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-cam-ts-boss-08",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os fundamentos em Efésios 4:4–6?",
+    "prompt": "Como se encadeiam os fundamentos em Efésios 4:4–6?",
+    "cue": "Como se encadeiam os fundamentos em Efésios 4:4–6?",
+    "verseRef": "Efésios 4:4–5",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação; Um só Senhor, uma única fé, um único batismo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a unidade dada pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Confessar um só Senhor e uma fé"
+      },
+      {
+        "id": "c",
+        "text": "Reconhecer um só Pai de todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Da unidade guardada à confissão e ao Pai comum.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado de 4:3, antes da confissão."
+    },
+    "hint": "O chamado para guardar vem primeiro.",
+    "learningObjective": "Compreender os fundamentos encadeados da unidade.",
+    "evidence": [
+      "Efésios 4:3–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-01",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Efésios 4:5–6, há muitos senhores e muitos pais, um para cada grupo de crentes.",
+    "prompt": "Em Efésios 4:5–6, há muitos senhores e muitos pais, um para cada grupo de crentes.",
+    "cue": "Em Efésios 4:5–6, há muitos senhores e muitos pais, um para cada grupo de crentes.",
+    "verseRef": "Efésios 4:5–6",
+    "passageText": "Um só Senhor, uma única fé, um único batismo; Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+    "feedbackCorrect": "Há um só Senhor e um só Deus e Pai de todos.",
+    "feedbackWrong": {
+      "true": "Releia 4:5–6, que repetem um só e única."
+    },
+    "hint": "Conte os um só dos dois versículos.",
+    "learningObjective": "Interpretar a unidade da confissão da igreja.",
+    "evidence": [
+      "Efésios 4:5–6"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-02",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Efésios 4:4, toque a imagem que mostra a igreja unida.",
+    "prompt": "Em Efésios 4:4, toque a imagem que mostra a igreja unida.",
+    "cue": "Em Efésios 4:4, toque a imagem que mostra a igreja unida.",
+    "verseRef": "Efésios 4:4",
+    "passageText": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperança"
+      },
+      {
+        "id": "b",
+        "text": "vocação"
+      },
+      {
+        "id": "c",
+        "text": "corpo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Há um só corpo e um só Espírito",
+    "feedbackCorrect": "Essa imagem reúne muitos crentes como um só.",
+    "feedbackWrong": {
+      "a": "Isso é o que se espera, não a imagem da igreja.",
+      "b": "Isso é o chamado, não a imagem usada por Paulo."
+    },
+    "hint": "Procure a figura que reúne muitos em um.",
+    "learningObjective": "Sustentar a imagem da igreja unida no texto.",
+    "evidence": [
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-03",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a trilha sustenta ao juntar Escritura, verdade e igreja?",
+    "prompt": "Que leitura a trilha sustenta ao juntar Escritura, verdade e igreja?",
+    "cue": "Que leitura a trilha sustenta ao juntar Escritura, verdade e igreja?",
+    "verseRef": "2 Timóteo 3:16–17",
+    "passageText": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça; Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada crente vive sua verdade isolado"
+      },
+      {
+        "id": "b",
+        "text": "A palavra de Deus forma a vida e une a fé"
+      },
+      {
+        "id": "c",
+        "text": "A igreja dispensa a Escritura para crer"
+      },
+      {
+        "id": "d",
+        "text": "Basta saber termos sem mudar a vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Toda a Escritura é inspirada por Deus e útil para o ensino",
+    "feedbackCorrect": "Escritura, piedade e unidade andam juntas nos textos.",
+    "feedbackWrong": {
+      "a": "A fé confessada é comum, em um só corpo.",
+      "c": "É a Escritura que ensina e corrige essa fé.",
+      "d": "A verdade conduz à piedade e a boas obras."
+    },
+    "hint": "Junte os três temas vistos na trilha.",
+    "learningObjective": "Sintetizar Escritura, verdade e unidade da igreja.",
+    "evidence": [
+      "2 Timóteo 3:16–17",
+      "Tito 1:1",
+      "Efésios 4:5"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-04",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da verdade nesta trilha?",
+    "prompt": "Qual sequência revela o caminho da verdade nesta trilha?",
+    "cue": "Qual sequência revela o caminho da verdade nesta trilha?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a verdade de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Viver com piedade diante dele"
+      },
+      {
+        "id": "c",
+        "text": "Esperar a vida que ele prometeu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "Conhecer, viver e esperar, ligados por Paulo.",
+    "feedbackWrong": {
+      "default": "Comece pelo conhecimento; a esperança fecha o caminho."
+    },
+    "hint": "A promessa eterna é o ponto final.",
+    "learningObjective": "Ver o fio entre conhecer, viver e esperar.",
+    "evidence": [
+      "Tito 1:1–2"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-05",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 1:1, o que Paulo quer promover plenamente no conhecimento?",
+    "prompt": "Em Tito 1:1, o que Paulo quer promover plenamente no conhecimento?",
+    "cue": "Em Tito 1:1, o que Paulo quer promover plenamente no conhecimento?",
+    "verseRef": "Tito 1:1",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+    "template": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da ___ de acordo com a piedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdade"
+      },
+      {
+        "id": "b",
+        "text": "tradição"
+      },
+      {
+        "id": "c",
+        "text": "história"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o pleno conhecimento da verdade de acordo com a piedade",
+    "feedbackCorrect": "É o centro do serviço de Paulo nessa abertura.",
+    "feedbackWrong": {
+      "b": "O foco é o que Deus fez conhecer, com piedade.",
+      "c": "O texto fala do que Deus revelou ao seu povo."
+    },
+    "hint": "É o substantivo depois de conhecimento.",
+    "learningObjective": "Lembrar o termo central da verdade vivida.",
+    "evidence": [
+      "Tito 1:1"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-06",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Efésios 4:3 a João 17:21?",
+    "prompt": "O que liga Efésios 4:3 a João 17:21?",
+    "cue": "O que liga Efésios 4:3 a João 17:21?",
+    "verseRef": "Efésios 4:3",
+    "passageText": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz.",
+    "passageA": {
+      "ref": "Efésios 4:3",
+      "text": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz."
+    },
+    "passageB": {
+      "ref": "João 17:21",
+      "text": "Para que todos sejam um, assim como Tu, ó Pai, estás em mim e eu em Ti; que eles também sejam um em nós, para que o mundo creia que Tu me enviaste."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Divisão protege a igreja"
+      },
+      {
+        "id": "b",
+        "text": "Unidade do povo de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Cada crente crê sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+    "feedbackCorrect": "Jesus ora por ela e Paulo manda a igreja guardá-la.",
+    "feedbackWrong": {
+      "a": "Os dois textos unem o povo, não o dividem.",
+      "c": "A vida citada é em um só corpo, não isolada."
+    },
+    "hint": "Veja o pedido de Jesus pelos discípulos.",
+    "learningObjective": "Ligar a oração de Jesus à unidade da igreja.",
+    "evidence": [
+      "Efésios 4:3",
+      "João 17:21"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-07",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Timóteo 3:15, toque em quem está a fé que leva à salvação.",
+    "prompt": "Em 2 Timóteo 3:15, toque em quem está a fé que leva à salvação.",
+    "cue": "Em 2 Timóteo 3:15, toque em quem está a fé que leva à salvação.",
+    "verseRef": "2 Timóteo 3:15",
+    "passageText": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sagradas letras"
+      },
+      {
+        "id": "b",
+        "text": "desde a infância"
+      },
+      {
+        "id": "c",
+        "text": "Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pela fé em Cristo Jesus",
+    "feedbackCorrect": "A fé para a salvação está centrada nele.",
+    "feedbackWrong": {
+      "a": "Elas ensinam o caminho, mas a fé está nele.",
+      "b": "Isso marca desde quando Timóteo as conhece."
+    },
+    "hint": "Procure um nome próprio no fim.",
+    "learningObjective": "Sustentar o centro da fé que salva.",
+    "evidence": [
+      "2 Timóteo 3:15"
+    ]
+  },
+  {
+    "id": "teologia-sistematica-pro-ts-boss-08",
+    "trail": "teologia-sistematica",
+    "section": "ts-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus nesta trilha?",
+    "prompt": "Qual sequência revela o cuidado de Deus nesta trilha?",
+    "cue": "Qual sequência revela o cuidado de Deus nesta trilha?",
+    "verseRef": "Efésios 4:6",
+    "passageText": "Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um Pai acima de todos os crentes"
+      },
+      {
+        "id": "b",
+        "text": "Um Pai agindo por meio de todos"
+      },
+      {
+        "id": "c",
+        "text": "Um Pai habitando em todos eles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Um só Deus e Pai de todos, o qual está acima de todos",
+    "feedbackCorrect": "Acima, por meio e em todos, na ordem de Efésios 4:6.",
+    "feedbackWrong": {
+      "default": "Siga a ordem das três expressões em 4:6."
+    },
+    "hint": "Comece por quem está acima de todos.",
+    "learningObjective": "Ver o Pai presente sobre e entre os crentes.",
+    "evidence": [
+      "Efésios 4:6"
+    ]
+  }
+]

@@ -1,0 +1,935 @@
+{
+ "study": {
+  "passageRef": "Mateus 28:5–6",
+  "passages": [
+   {
+    "ref": "Lucas 22:14–20"
+   },
+   {
+    "ref": "Marcos 15:22–39"
+   },
+   {
+    "ref": "Mateus 28:1–20"
+   }
+  ],
+  "context": "Este desafio final revisa a ceia, a cruz e a ressurreição: Jesus interpreta sua morte na ceia, entrega-se na cruz e é anunciado vivo no sepulcro vazio pelas mulheres.",
+  "keyword": "Ele vive",
+  "keywordGloss": "O anúncio do anjo resume o fim dos evangelhos: Jesus ressuscitou, como havia dito.",
+  "focusQuestion": "Como ceia, cruz e ressurreição mudam o seu jeito de seguir Jesus hoje?",
+  "reflectionPrompts": [
+   "Nova aliança no sangue",
+   "Filho confessado na cruz",
+   "Sepulcro vazio anunciado"
+  ],
+  "facts": [
+   {
+    "text": "O cálice é a nova aliança no sangue de Jesus.",
+    "evidenceRef": "Lucas 22:20",
+    "evidenceSpan": "Este cálice é a nova aliança no meu sangue"
+   },
+   {
+    "text": "O véu do templo rasgou-se de cima para baixo.",
+    "evidenceRef": "Marcos 15:38",
+    "evidenceSpan": "E o véu do templo rasgou-se em duas partes, de cima para baixo"
+   },
+   {
+    "text": "O centurião confessou Jesus como Filho de Deus.",
+    "evidenceRef": "Marcos 15:39",
+    "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus"
+   },
+   {
+    "text": "O anjo disse às mulheres para não terem medo.",
+    "evidenceRef": "Mateus 28:5",
+    "evidenceSpan": "Não tenham medo; pois sei que vocês buscam Jesus"
+   },
+   {
+    "text": "Jesus ressuscitou, como ele havia dito.",
+    "evidenceRef": "Mateus 28:6",
+    "evidenceSpan": "Não está aqui, pois já ressuscitou, como ele havia dito"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "nova aliança",
+    "gloss": "A aliança selada no sangue de Jesus derramado pelos discípulos."
+   },
+   {
+    "term": "véu",
+    "gloss": "A cortina rasgada de cima para baixo na morte de Jesus."
+   },
+   {
+    "term": "ressuscitou",
+    "gloss": "Jesus vive; o sepulcro vazio é anunciado às mulheres."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Ceia interpreta a entrega de Jesus",
+    "evidenceRef": "Lucas 22:19–20"
+   },
+   {
+    "label": "Cruz com véu rasgado e confissão",
+    "evidenceRef": "Marcos 15:37–39"
+   },
+   {
+    "label": "Sepulcro vazio anunciado às mulheres",
+    "evidenceRef": "Mateus 28:5–6"
+   },
+   {
+    "label": "Mulheres correm a anunciar",
+    "evidenceRef": "Mateus 28:7–8"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Após a ceia, Jesus toma o cálice da nova aliança.",
+    "marker": "após",
+    "evidenceRef": "Lucas 22:20"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao ver Jesus expirar, o centurião o confessa Filho de Deus.",
+    "marker": "ao ver",
+    "evidenceRef": "Marcos 15:39"
+   },
+   {
+    "kind": "causa",
+    "text": "Jesus não está no sepulcro pois já ressuscitou.",
+    "marker": "pois",
+    "evidenceRef": "Mateus 28:6"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Jeremias 31:31",
+    "bridge": "Promessa da nova aliança"
+   },
+   {
+    "ref": "Isaías 53:12",
+    "bridge": "Contado com malfeitores"
+   },
+   {
+    "ref": "1 Coríntios 15:20",
+    "bridge": "Primícias dos que dormem"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A ceia não tem relação com a cruz que vem depois.",
+    "why": "Na ceia Jesus já fala de corpo entregue e sangue derramado (Lc 22:19-20)."
+   },
+   {
+    "text": "A cruz termina com Jesus totalmente esquecido por todos.",
+    "why": "O centurião o confessa e as mulheres depois anunciam sua ressurreição (Mc 15:39; Mt 28:6)."
+   },
+   {
+    "text": "A ressurreição foi inventada pelos discípulos que roubaram o corpo.",
+    "why": "Essa é a versão comprada dos guardas, não o anúncio do anjo (Mt 28:13,6)."
+   }
+  ],
+  "centralInsight": "Cristo no centro",
+  "anchorQuestion": "Como ceia e cruz ajudam a entender o sepulcro vazio?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lucas 22:20, o cálice é a nova aliança no sangue de Jesus derramado pelos discípulos.",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "true",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "Na ceia, Jesus já interpreta o cálice pela sua entrega.",
+   "feedbackWrong": {
+    "false": "Releia a fala do cálice em Lucas 22:20."
+   },
+   "hint": "",
+   "learningObjective": "Revisar o cálice da nova aliança.",
+   "evidence": [
+    "Lucas 22:20"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Marcos 15:38, toque o que se rasgou em duas partes na morte de Jesus.",
+   "verseRef": "Marcos 15:38",
+   "correctOptionId": "a",
+   "evidenceSpan": "E o véu do templo rasgou-se em duas partes",
+   "feedbackCorrect": "O rasgo do véu acompanha a morte de Jesus no relato.",
+   "feedbackWrong": {
+    "b": "Isso é como se rasgou, não o que se rasgou.",
+    "c": "Isso é a direção do rasgo."
+   },
+   "hint": "Procure o objeto que sofre a ação.",
+   "learningObjective": "Revisar o véu rasgado.",
+   "evidence": [
+    "Marcos 15:38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "véu do templo"
+    },
+    {
+     "id": "b",
+     "text": "duas partes"
+    },
+    {
+     "id": "c",
+     "text": "cima para baixo"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 28:2, o que o anjo fez com a pedra do sepulcro?",
+   "verseRef": "Mateus 28:2",
+   "correctOptionId": "b",
+   "evidenceSpan": "rolou a pedra da entrada e sentou-se sobre ela",
+   "feedbackCorrect": "O anjo rola a pedra e senta-se sobre ela diante dos guardas.",
+   "feedbackWrong": {
+    "a": "A pedra é rolada, não quebrada no texto.",
+    "c": "Selar seria fechar, o contrário do gesto.",
+    "d": "As mulheres veem o sepulcro aberto depois."
+   },
+   "hint": "Veja o gesto do anjo ao descer.",
+   "learningObjective": "Revisar a pedra rolada.",
+   "evidence": [
+    "Mateus 28:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Quebrou a pedra em pedaços"
+    },
+    {
+     "id": "b",
+     "text": "Rolou a pedra e sentou sobre ela"
+    },
+    {
+     "id": "c",
+     "text": "Selou a pedra com os guardas"
+    },
+    {
+     "id": "d",
+     "text": "Escondeu a pedra das mulheres"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lucas 22:20 na ordem do texto.",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Da mesma forma, após a ceia, tomou o cálice",
+   "feedbackCorrect": "Cálice tomado, aliança nomeada e beneficiários indicados.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece por Jesus tomando o cálice após a ceia."
+    }
+   },
+   "hint": "Comece pelo gesto após a ceia.",
+   "learningObjective": "Reconhecer a fala do cálice.",
+   "evidence": [
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Da mesma forma, após a ceia, tomou o cálice, dizendo"
+    },
+    {
+     "id": "b",
+     "text": "Este cálice é a nova aliança no meu sangue"
+    },
+    {
+     "id": "c",
+     "text": "que é derramado por vocês"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Marcos 15:37, o que Jesus soltou antes de expirar segundo Marcos?",
+   "verseRef": "Marcos 15:37",
+   "correctOptionId": "a",
+   "evidenceSpan": "E Jesus, soltando um grande brado, expirou",
+   "feedbackCorrect": "Um grande brado precede a morte de Jesus no relato.",
+   "feedbackWrong": {
+    "b": "Vinagre foi oferecido antes, em uma esponja.",
+    "c": "Esponja foi o meio de oferecer bebida."
+   },
+   "hint": "Veja o som final de Jesus.",
+   "learningObjective": "Revisar o brado final.",
+   "evidence": [
+    "Marcos 15:37"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "brado"
+    },
+    {
+     "id": "b",
+     "text": "vinagre"
+    },
+    {
+     "id": "c",
+     "text": "esponja"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 28:6 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "Quem se entregou na cruz é anunciado vivo no sepulcro.",
+   "feedbackWrong": {
+    "b": "A ressurreição honra, não apaga, a entrega.",
+    "c": "Ele não está mais no lugar do corpo."
+   },
+   "hint": "Ligue cruz e sepulcro vazio.",
+   "learningObjective": "Ligar entrega e ressurreição.",
+   "evidence": [
+    "Mateus 28:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Entrega termina em vida"
+    },
+    {
+     "id": "b",
+     "text": "Cruz apaga a ceia"
+    },
+    {
+     "id": "c",
+     "text": "Sepulcro guarda o corpo"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 28:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Cristo no centro: entregue na cruz e vivo para sempre."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lucas 22:19, toque em memória de quem a ceia deve ser feita.",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "a",
+   "evidenceSpan": "façam isto em memória de mim",
+   "feedbackCorrect": "A ceia guarda a memória da entrega de Jesus.",
+   "feedbackWrong": {
+    "b": "Isso é a gratidão antes de partir o pão.",
+    "c": "Isso indica quem recebe o pão."
+   },
+   "hint": "Procure a pessoa lembrada no gesto.",
+   "learningObjective": "Revisar a memória da ceia.",
+   "evidence": [
+    "Lucas 22:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "de mim"
+    },
+    {
+     "id": "b",
+     "text": "dado graças"
+    },
+    {
+     "id": "c",
+     "text": "aos discípulos"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 28:5 na ordem do texto.",
+   "verseRef": "Mateus 28:5",
+   "correctOptionId": "a",
+   "evidenceSpan": "Mas o anjo, dirigindo-se às mulheres, disse",
+   "feedbackCorrect": "O anjo fala, acalma e reconhece a busca das mulheres.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pelo anjo se dirigindo às mulheres."
+    }
+   },
+   "hint": "Comece por quem toma a palavra.",
+   "learningObjective": "Reconhecer a fala do anjo.",
+   "evidence": [
+    "Mateus 28:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Mas o anjo, dirigindo-se às mulheres, disse"
+    },
+    {
+     "id": "b",
+     "text": "Não tenham medo"
+    },
+    {
+     "id": "c",
+     "text": "pois sei que vocês buscam Jesus, que foi crucificado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Marcos 15:39, o centurião faz sua confissão antes de ver Jesus expirar na cruz.",
+   "verseRef": "Marcos 15:39",
+   "correctOptionId": "false",
+   "evidenceSpan": "ao ver como ele expirou, disse",
+   "feedbackCorrect": "A confissão vem ao ver como Jesus expirou, não antes disso.",
+   "feedbackWrong": {
+    "true": "Note a expressão ao ver como ele expirou."
+   },
+   "hint": "",
+   "learningObjective": "Compreender o momento da confissão.",
+   "evidence": [
+    "Marcos 15:39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 28:7, toque a palavra que marca a pressa do anúncio às mulheres.",
+   "verseRef": "Mateus 28:7",
+   "correctOptionId": "a",
+   "evidenceSpan": "Vão depressa e digam aos seus discípulos",
+   "feedbackCorrect": "O anúncio da ressurreição é urgente para os discípulos.",
+   "feedbackWrong": {
+    "b": "Isso é quem deve ouvir, não a pressa.",
+    "c": "Isso é o destino do encontro."
+   },
+   "hint": "Procure o advérbio de urgência.",
+   "learningObjective": "Reconhecer a urgência do anúncio.",
+   "evidence": [
+    "Mateus 28:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "depressa"
+    },
+    {
+     "id": "b",
+     "text": "discípulos"
+    },
+    {
+     "id": "c",
+     "text": "Galileia"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como ceia e cruz se ligam pelas palavras de Jesus em Lucas 22?",
+   "verseRef": "Lucas 22:19–20",
+   "correctOptionId": "a",
+   "evidenceSpan": "que é entregue por vocês",
+   "feedbackCorrect": "Corpo entregue e sangue derramado antecipam a cruz.",
+   "feedbackWrong": {
+    "b": "A entrega é real e acontece na cruz depois.",
+    "c": "A cruz cumpre o que a ceia anuncia.",
+    "d": "O futuro do reino existe, mas a fala é da entrega."
+   },
+   "hint": "Junte corpo entregue e sangue derramado.",
+   "learningObjective": "Compreender ceia como interpretação.",
+   "evidence": [
+    "Lucas 22:19–20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A ceia interpreta a morte que virá"
+    },
+    {
+     "id": "b",
+     "text": "A ceia substitui qualquer entrega real"
+    },
+    {
+     "id": "c",
+     "text": "A cruz cancela o sentido da ceia"
+    },
+    {
+     "id": "d",
+     "text": "O cálice fala só de uma festa futura"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a história da ceia à ressurreição?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "Ceia, cruz e ressurreição formam uma sequência única.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O sepulcro vazio é o último passo da sequência."
+    }
+   },
+   "hint": "Termine com o anúncio do anjo.",
+   "learningObjective": "Compreender a grande sequência.",
+   "evidence": [
+    "Lucas 22:20",
+    "Mateus 28:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus anuncia aliança no seu sangue"
+    },
+    {
+     "id": "b",
+     "text": "Jesus expira na cruz em Marcos"
+    },
+    {
+     "id": "c",
+     "text": "O anjo anuncia o sepulcro vazio"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 28:10, o que Jesus pede às mulheres que não tenham ao encontrá-lo?",
+   "verseRef": "Mateus 28:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, Jesus lhes disse: Não temais",
+   "feedbackCorrect": "O Jesus vivo repete a calma do anjo às mulheres.",
+   "feedbackWrong": {
+    "b": "A palavra usada por Jesus é o verbo desta opção vizinha.",
+    "c": "Alegria elas já têm ao correr do sepulcro."
+   },
+   "hint": "Veja a primeira fala de Jesus a elas.",
+   "learningObjective": "Compreender a calma do Ressuscitado.",
+   "evidence": [
+    "Mateus 28:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "temais"
+    },
+    {
+     "id": "b",
+     "text": "medo"
+    },
+    {
+     "id": "c",
+     "text": "alegria"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lucas 22:20 a Jeremias 31:31?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "Jeremias prometeu; Jesus anuncia a aliança no seu sangue.",
+   "feedbackWrong": {
+    "b": "Nova indica cumprimento, não repetição igual.",
+    "c": "Os dois textos falam de aliança por vir e cumprida."
+   },
+   "hint": "Compare o nome da aliança.",
+   "learningObjective": "Relacionar promessa e ceia.",
+   "evidence": [
+    "Lucas 22:20",
+    "Jeremias 31:31"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Nova aliança prometida e selada"
+    },
+    {
+     "id": "b",
+     "text": "Aliança antiga repetida igual"
+    },
+    {
+     "id": "c",
+     "text": "Nenhuma aliança futura"
+    }
+   ],
+   "passageA": {
+    "ref": "Lucas 22:20"
+   },
+   "passageB": {
+    "ref": "Jeremias 31:31"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Marcos 15:36, toque o que foi embebido em vinagre para dar a Jesus.",
+   "verseRef": "Marcos 15:36",
+   "correctOptionId": "a",
+   "evidenceSpan": "embeber uma esponja em vinagre",
+   "feedbackCorrect": "A esponja embebida é levantada a Jesus na cruz.",
+   "feedbackWrong": {
+    "b": "A cana sustenta a esponja, não é embebida.",
+    "c": "Beber é a finalidade, não o objeto embebido."
+   },
+   "hint": "Procure o objeto molhado no vinagre.",
+   "learningObjective": "Revisar o gesto na cruz.",
+   "evidence": [
+    "Marcos 15:36"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "uma esponja"
+    },
+    {
+     "id": "b",
+     "text": "uma cana"
+    },
+    {
+     "id": "c",
+     "text": "beber"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia o fim de Marcos 15:37 a 39?",
+   "verseRef": "Marcos 15:37–38",
+   "correctOptionId": "a",
+   "evidenceSpan": "E Jesus, soltando um grande brado, expirou",
+   "feedbackCorrect": "Morte, véu rasgado e confissão encerram Marcos 15.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A confissão do centurião fecha a sequência."
+    }
+   },
+   "hint": "Termine com a confissão do oficial.",
+   "learningObjective": "Compreender o fecho da cruz.",
+   "evidence": [
+    "Marcos 15:37–38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus expira soltando um brado"
+    },
+    {
+     "id": "b",
+     "text": "O véu se rasga de cima a baixo"
+    },
+    {
+     "id": "c",
+     "text": "O centurião confessa o Filho de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 28:15, a versão do roubo do corpo foi confirmada pelo anjo no sepulcro vazio.",
+   "verseRef": "Mateus 28:15",
+   "correctOptionId": "false",
+   "evidenceSpan": "agiram conforme as instruções que receberam",
+   "feedbackCorrect": "Os soldados agem conforme instruções compradas dos líderes.",
+   "feedbackWrong": {
+    "true": "Releia quem instrui os soldados em Mateus 28:12 a 15."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar a versão comprada.",
+   "evidence": [
+    "Mateus 28:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lucas 22:19, toque o trecho que sustenta a entrega de Jesus por outros.",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "b",
+   "evidenceSpan": "que é entregue por vocês",
+   "feedbackCorrect": "O corpo de Jesus é entregue em favor dos discípulos.",
+   "feedbackWrong": {
+    "a": "Partir é o gesto com o pão, não a finalidade.",
+    "c": "Isso é a ordem de lembrar, não a entrega."
+   },
+   "hint": "Procure a finalidade da entrega.",
+   "learningObjective": "Sustentar a entrega por outros.",
+   "evidence": [
+    "Lucas 22:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "o partiu"
+    },
+    {
+     "id": "b",
+     "text": "entregue por vocês"
+    },
+    {
+     "id": "c",
+     "text": "em memória"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura une ceia, cruz e ressurreição neste desafio?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "A entrega anunciada se cumpre na cruz e vence no sepulcro vazio.",
+   "feedbackWrong": {
+    "b": "Os três momentos se interpretam mutuamente.",
+    "c": "O vivo continua sendo o que se entregou.",
+    "d": "Centurião confessa e anjo anuncia a verdade."
+   },
+   "hint": "Junte os três momentos finais.",
+   "learningObjective": "Escolher a leitura do desafio final.",
+   "evidence": [
+    "Lucas 22:20",
+    "Mateus 28:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Entregue por nós e vivo para sempre"
+    },
+    {
+     "id": "b",
+     "text": "Ceia sem cruz e cruz sem vida"
+    },
+    {
+     "id": "c",
+     "text": "Ressurreição apaga a entrega passada"
+    },
+    {
+     "id": "d",
+     "text": "Centurião e anjo contam mentiras"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela Cristo no centro dos evangelhos?",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "Ceia interpreta, cruz entrega e ressurreição anuncia vida.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A ressurreição anunciada fecha a sequência."
+    }
+   },
+   "hint": "Termine com o sepulcro vazio.",
+   "learningObjective": "Ver o fio final dos evangelhos.",
+   "evidence": [
+    "Lucas 22:20",
+    "Mateus 28:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Nova aliança anunciada na ceia"
+    },
+    {
+     "id": "b",
+     "text": "Entrega consumada na cruz"
+    },
+    {
+     "id": "c",
+     "text": "Ressurreição anunciada no sepulcro"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Marcos 15:28, segundo Marcos, o que se cumpriu quando Jesus foi posto entre malfeitores?",
+   "verseRef": "Marcos 15:28",
+   "correctOptionId": "a",
+   "evidenceSpan": "E cumpriu-se a Escritura que diz",
+   "feedbackCorrect": "A cruz entre ladrões é lida como Escritura cumprida.",
+   "feedbackWrong": {
+    "b": "Acusação foi o letreiro sobre Jesus.",
+    "c": "Sorte foi lançada sobre as vestes dele."
+   },
+   "hint": "Veja o que o narrador declara cumprido.",
+   "learningObjective": "Lembrar o cumprimento na cruz.",
+   "evidence": [
+    "Marcos 15:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Escritura"
+    },
+    {
+     "id": "b",
+     "text": "acusação"
+    },
+    {
+     "id": "c",
+     "text": "sorte"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 28:6 a 1 Coríntios 15:20?",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "Paulo chama Cristo ressuscitado de primícias dos que dormem.",
+   "feedbackWrong": {
+    "b": "A ressurreição nega a última palavra da morte.",
+    "c": "O lugar vazio sustenta o anúncio do anjo."
+   },
+   "hint": "Compare anúncio e confissão de Paulo.",
+   "learningObjective": "Ligar ressurreição e primícias.",
+   "evidence": [
+    "Mateus 28:6",
+    "1 Coríntios 15:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ressuscitado como primícias vivas"
+    },
+    {
+     "id": "b",
+     "text": "Morte como última palavra"
+    },
+    {
+     "id": "c",
+     "text": "Anúncio sem corpo vazio"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 28:6"
+   },
+   "passageB": {
+    "ref": "1 Coríntios 15:20"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 28:8, toque o sentimento que acompanha o medo das mulheres ao correr.",
+   "verseRef": "Mateus 28:8",
+   "correctOptionId": "a",
+   "evidenceSpan": "tomadas de medo e grande alegria, correram a anunciar",
+   "feedbackCorrect": "Medo e alegria juntos marcam as primeiras mensageiras.",
+   "feedbackWrong": {
+    "b": "Isso é a pressa, não o sentimento pedido.",
+    "c": "Isso é o destino do anúncio delas."
+   },
+   "hint": "Procure a emoção ao lado do medo.",
+   "learningObjective": "Revisar a alegria das mulheres.",
+   "evidence": [
+    "Mateus 28:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "grande alegria"
+    },
+    {
+     "id": "b",
+     "text": "apressadamente"
+    },
+    {
+     "id": "c",
+     "text": "aos discípulos"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a resposta ao sepulcro vazio?",
+   "verseRef": "Mateus 28:8",
+   "correctOptionId": "a",
+   "evidenceSpan": "tomadas de medo e grande alegria, correram a anunciar",
+   "feedbackCorrect": "Anúncio, corrida e encontro com Jesus vivo se sucedem.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O encontro com Jesus vem após a corrida."
+    }
+   },
+   "hint": "Termine com o encontro no caminho.",
+   "learningObjective": "Ver anúncio, corrida e encontro.",
+   "evidence": [
+    "Mateus 28:6",
+    "Mateus 28:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O anjo anuncia que Jesus ressuscitou"
+    },
+    {
+     "id": "b",
+     "text": "As mulheres correm com medo e alegria"
+    },
+    {
+     "id": "c",
+     "text": "Jesus encontra as mulheres no caminho"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

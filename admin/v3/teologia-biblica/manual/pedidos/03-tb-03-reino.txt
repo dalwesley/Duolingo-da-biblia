@@ -1,0 +1,67 @@
+Escreva a cena "tb-03-reino" da trilha "teologia-biblica" (Teologia Bíblica).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "teologia-biblica",
+  "title": "Teologia Bíblica",
+  "description": "A história redentora — da criação à nova criação.",
+  "realm": "teologia"
+ },
+ "block": "Teologia Bíblica",
+ "mission": {
+  "slug": "tb-03-reino",
+  "title": "O reino de Deus",
+  "type": "lesson",
+  "intro": "Em Jesus, o reino de Deus se aproximou e chama pessoas ao arrependimento e à fé.",
+  "hookRef": "Marcos 1:15",
+  "hookNote": "Em Jesus, o reino de Deus se aproximou e chama pessoas ao arrependimento e à fé.",
+  "centralInsight": "Esta missão apresenta o reino de deus de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor a Deu…",
+  "objective": "Marcos 1:15"
+ },
+ "v2": {
+  "passageRef": "Marcos 1:15",
+  "context": "Em Jesus, o reino de Deus se aproximou e chama pessoas ao arrependimento e à fé.",
+  "keyword": "Reino",
+  "verseRefs": [
+   "Marcos 1:15"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Marcos 1:12–18"
+ ],
+ "verses": [
+  {
+   "ref": "Marcos 1:12",
+   "text": "E logo o Espírito o impeliu ao deserto."
+  },
+  {
+   "ref": "Marcos 1:13",
+   "text": "E permaneceu no deserto durante quarenta dias, sendo tentado por Satanás; estava com as feras, e os anjos o serviam."
+  },
+  {
+   "ref": "Marcos 1:14",
+   "text": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus."
+  },
+  {
+   "ref": "Marcos 1:15",
+   "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+  },
+  {
+   "ref": "Marcos 1:16",
+   "text": "Caminhando ao longo do mar da Galileia, viu Simão e André, que lançavam a rede ao mar, pois eram pescadores."
+  },
+  {
+   "ref": "Marcos 1:17",
+   "text": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens."
+  },
+  {
+   "ref": "Marcos 1:18",
+   "text": "Deixando suas redes imediatamente eles o seguiram."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,148 @@
+Escreva a cena "jj-04-desafio" da trilha "jejum" (Jejum e Disciplinas).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "jejum",
+  "title": "Jejum e Disciplinas",
+  "description": "Práticas espirituais — jejum, silêncio e vigilância.",
+  "realm": "vida-crista"
+ },
+ "block": "Jejum",
+ "mission": {
+  "slug": "jj-04-desafio",
+  "title": "Desafio: Desejo rendido",
+  "type": "boss",
+  "intro": "Revise o jejum como disciplina de dependência, sinceridade e oração.",
+  "hookRef": "Mateus 4; Mateus 6; Atos 13",
+  "hookNote": "Revise o jejum como disciplina de dependência, sinceridade e oração.",
+  "centralInsight": "O que este treino pede na prática?",
+  "objective": "Mateus 4; Mateus 6; Atos 13"
+ },
+ "v2": {
+  "passageRef": "Mateus 4; Mateus 6; Atos 13",
+  "context": "Revise o jejum como disciplina de dependência, sinceridade e oração.",
+  "keyword": "Desejo",
+  "verseRefs": [
+   "Mateus 4:4; 6:18; Atos 13:2"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "jj-01-desejo",
+   "title": "Disciplinar o desejo",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Mateus 4:1–7"
+  },
+  {
+   "slug": "jj-02-secreto",
+   "title": "Jejuar diante do Pai",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Mateus 6:13–21"
+  },
+  {
+   "slug": "jj-03-oracao",
+   "title": "Jejum com oração",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Atos 13:1–6"
+  }
+ ],
+ "ranges": [
+  "Mateus 4:1–7",
+  "Mateus 6:13–21",
+  "Atos 13:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 4:1",
+   "text": "Então, Jesus foi conduzido pelo Espírito ao deserto, a fim de ser tentado pelo diabo."
+  },
+  {
+   "ref": "Mateus 4:2",
+   "text": "E, depois de jejuar por quarenta dias e quarenta noites, teve fome."
+  },
+  {
+   "ref": "Mateus 4:3",
+   "text": "Então, o tentador, aproximando-se dele, disse: Se você é Filho de Deus, mande que estas pedras se transformem em pães."
+  },
+  {
+   "ref": "Mateus 4:4",
+   "text": "Ele, porém, respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que procede da boca de Deus."
+  },
+  {
+   "ref": "Mateus 4:5",
+   "text": "Então, o diabo o levou à Cidade Santa e o colocou sobre o alto do pináculo do templo."
+  },
+  {
+   "ref": "Mateus 4:6",
+   "text": "E disse-lhe: Se você é o Filho de Deus, atire-se abaixo, pois está escrito: Ele ordenará aos Seus anjos a seu respeito, e eles o sustentarão nas mãos, para que você não tropece em nenhuma pedra."
+  },
+  {
+   "ref": "Mateus 4:7",
+   "text": "Jesus lhe respondeu: Também está escrito: Não colocarás à prova o Senhor, teu Deus."
+  },
+  {
+   "ref": "Mateus 6:13",
+   "text": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!"
+  },
+  {
+   "ref": "Mateus 6:14",
+   "text": "Porque, se vocês perdoarem as ofensas dos homens, também o Pai celestial perdoará vocês."
+  },
+  {
+   "ref": "Mateus 6:15",
+   "text": "Mas, se vocês não perdoarem aos homens suas ofensas, também o Pai de vocês não perdoará as ofensas de vocês."
+  },
+  {
+   "ref": "Mateus 6:16",
+   "text": "Quando jejuarem, não apresentem uma aparência triste como os hipócritas; pois desfiguram os rostos para que os homens percebam que estão jejuando. Em verdade, eu lhes digo que já receberam sua recompensa."
+  },
+  {
+   "ref": "Mateus 6:17",
+   "text": "Quando você jejuar, unja a cabeça e lave o rosto."
+  },
+  {
+   "ref": "Mateus 6:18",
+   "text": "Para não dar a impressão de que você está jejuando aos homens, mas ao seu Pai, que está em secreto; e seu Pai, que vê em secreto, o recompensará."
+  },
+  {
+   "ref": "Mateus 6:19",
+   "text": "Não acumulem para vocês tesouros sobre a terra, onde a traça e a ferrugem corroem e onde os ladrões escavam e roubam;"
+  },
+  {
+   "ref": "Mateus 6:20",
+   "text": "Mas ajuntem para vocês tesouros no céu, onde nem a traça nem a ferrugem corroem e onde os ladrões não cavam nem roubam."
+  },
+  {
+   "ref": "Mateus 6:21",
+   "text": "Pois onde estiver o seu tesouro, ali estará também o seu coração."
+  },
+  {
+   "ref": "Atos 13:1",
+   "text": "Na igreja que estava em Antioquia, havia profetas e mestres: Barnabé, Simeão, por sobrenome Níger, Lúcio de Cirene, Manaém, colaço de Herodes, o tetrarca, e Saulo."
+  },
+  {
+   "ref": "Atos 13:2",
+   "text": "Enquanto serviam ao Senhor e jejuavam, o Espírito Santo falou: \"Separem-me, agora, Barnabé e Saulo, para a obra a que os tenho chamado.\""
+  },
+  {
+   "ref": "Atos 13:3",
+   "text": "Então, jejuando e orando, impuseram as mãos sobre eles e os despediram."
+  },
+  {
+   "ref": "Atos 13:4",
+   "text": "Eles, então, enviados pelo Espírito Santo, desceram a Selêucia e dali navegaram para Chipre."
+  },
+  {
+   "ref": "Atos 13:5",
+   "text": "Chegando a Salamina, proclamavam a palavra de Deus nas sinagogas judaicas; e tinham também João como colaborador."
+  },
+  {
+   "ref": "Atos 13:6",
+   "text": "E, tendo atravessado toda a ilha até Pafos, encontraram certo judeu, mágico, falso profeta, chamado Barjesus."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,309 @@
+{
+ "study": {
+  "passageRef": "Josué 24:15",
+  "passages": [{"ref": "Josué 24:15"}, {"ref": "Josué 24:26–31"}],
+  "context": "A terra já foi repartida e Josué, velho, reúne o povo em Siquém. Antes de morrer, ele põe a escolha diante de todos e grava a decisão em pedra, como testemunha para as próximas gerações.",
+  "keyword": "Escolhei",
+  "keywordGloss": "Servir ao Senhor não é herança automática: é escolha renovada de cada geração.",
+  "focusQuestion": "Que escolha concreta por Deus você precisa renovar hoje, com a sua casa?",
+  "reflectionPrompts": ["Escolha de hoje", "Eu e minha casa", "Testemunha para o futuro"],
+  "facts": [
+   {"text": "Josué manda o povo escolher hoje a quem deseja servir.", "evidenceRef": "Josué 24:15", "evidenceSpan": "escolham hoje a quem desejam servir"},
+   {"text": "Josué declara que ele e sua casa servirão ao Senhor.", "evidenceRef": "Josué 24:15", "evidenceSpan": "Eu e a minha casa serviremos ao SENHOR"},
+   {"text": "Josué escreve as palavras no livro da lei e ergue uma grande pedra.", "evidenceRef": "Josué 24:26", "evidenceSpan": "Josué escreveu estas palavras no livro da lei de Deus"},
+   {"text": "A pedra servirá de testemunha contra o povo, para que não minta ao seu Deus.", "evidenceRef": "Josué 24:27", "evidenceSpan": "será testemunha contra vocês, para que não mintam ao seu Deus"},
+   {"text": "Israel serviu ao Senhor todos os dias de Josué e dos anciãos que vieram depois.", "evidenceRef": "Josué 24:31", "evidenceSpan": "Israel serviu ao SENHOR todos os dias de Josué"}
+  ],
+  "keyTerms": [
+   {"term": "escolham", "gloss": "O verbo da despedida de Josué: Deus não força, mas a escolha é urgente e de hoje."},
+   {"term": "serviremos", "gloss": "A resposta de Josué inclui a casa inteira: fé que se vive em família."},
+   {"term": "testemunha", "gloss": "A pedra em Siquém guarda a memória da escolha para quem vier depois."}
+  ],
+  "structure": [
+   {"label": "Josué coloca a escolha diante do povo", "evidenceRef": "Josué 24:15"},
+   {"label": "Josué registra a decisão e ergue a pedra", "evidenceRef": "Josué 24:26"},
+   {"label": "O povo é despedido para a sua herança", "evidenceRef": "Josué 24:28"},
+   {"label": "Josué morre e Israel continua servindo", "evidenceRef": "Josué 24:29"}
+  ],
+  "relations": [
+   {"kind": "contraste", "text": "Josué abre a escolha a todos, mas declara sem hesitar a posição da sua casa.", "marker": "Todavia", "evidenceRef": "Josué 24:15"},
+   {"kind": "propósito", "text": "A pedra é erguida para testemunhar no futuro e guardar o povo de voltar atrás.", "marker": "para que", "evidenceRef": "Josué 24:27"},
+   {"kind": "resultado", "text": "A geração que conhecia as obras do Senhor continua servindo depois de Josué.", "marker": null, "evidenceRef": "Josué 24:31"}
+  ],
+  "crossRefs": [
+   {"ref": "Deuteronômio 30:19", "bridge": "Escolha diante do povo"},
+   {"ref": "1 Reis 18:21", "bridge": "Escolher a quem servir"},
+   {"ref": "Mateus 6:24", "bridge": "Não servir a dois senhores"}
+  ],
+  "misreadings": [
+   {"text": "Josué força o povo a servir ao Senhor sem deixar escolha real.", "why": "Ele coloca alternativas diante do povo e só então declara a escolha da sua casa."},
+   {"text": "A fé dos pais garante automaticamente a fé dos filhos para sempre.", "why": "Cada geração precisa escolher: Josué renova a aliança e ergue testemunha para o futuro."},
+   {"text": "Servir ao Senhor e a outros deuses ao mesmo tempo é possível.", "why": "A escolha é apresentada como decisão entre senhores, não como soma de devoções."}
+  ],
+  "centralInsight": "Servir ao Senhor é escolha de hoje, renovada em cada geração",
+  "anchorQuestion": "O que Josué declara sobre si e sua casa em Josué 24:15?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Josué 24:15, Josué diz que ficará neutro e deixará sua casa servir a quem quiser",
+   "verseRef": "Josué 24:15", "correctOptionId": "false",
+   "evidenceSpan": "Eu e a minha casa serviremos ao SENHOR",
+   "feedbackCorrect": "Josué não fica neutro: ele e sua casa servirão ao Senhor.",
+   "feedbackWrong": {"true": "Releia o fim de Josué 24:15: a casa de Josué já escolheu o Senhor."},
+   "hint": "Veja a declaração final de Josué no versículo.",
+   "learningObjective": "Observar a decisão declarada por Josué e sua casa.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Josué 24:15, toque quem Josué inclui na sua decisão de servir ao Senhor",
+   "verseRef": "Josué 24:15",
+   "options": [{"id": "a", "text": "ao SENHOR"}, {"id": "b", "text": "a minha casa"}, {"id": "c", "text": "onde habitam"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "Eu e a minha casa serviremos ao SENHOR",
+   "feedbackCorrect": "A escolha de Josué não é solitária: ela abraça a casa inteira.",
+   "feedbackWrong": {"a": "Ao Senhor é quem eles servem; quem é incluído vem antes.", "c": "Isso indica o lugar onde o povo mora, não a família de Josué."},
+   "hint": "Procure quem aparece junto de Josué na declaração.",
+   "learningObjective": "Identificar a casa incluída na decisão de Josué.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Josué 24:27, para que servirá a pedra erguida por Josué",
+   "verseRef": "Josué 24:27",
+   "options": [
+    {"id": "a", "text": "De testemunha da escolha do povo"},
+    {"id": "b", "text": "De altar para novos sacrifícios"},
+    {"id": "c", "text": "De marco da herança de Efraim"},
+    {"id": "d", "text": "De túmulo para os ossos de José"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Esta pedra nos servirá de testemunha",
+   "feedbackCorrect": "A pedra guarda a memória da decisão e cobra fidelidade no futuro.",
+   "feedbackWrong": {"b": "Josué não oferece sacrifício nela; ele a chama de testemunha.", "c": "A herança de cada um vem depois, na despedida do povo.", "d": "Os ossos de José são enterrados em Siquém, mas em outro momento."},
+   "hint": "Veja o nome que Josué dá à função da pedra.",
+   "learningObjective": "Observar a função da pedra da aliança em Siquém.",
+   "evidence": ["Josué 24:27"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Josué 24:15 na ordem do texto",
+   "verseRef": "Josué 24:15",
+   "options": [
+    {"id": "a", "text": "escolham hoje a quem desejam servir"},
+    {"id": "b", "text": "Eu e a minha casa"},
+    {"id": "c", "text": "serviremos ao SENHOR"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "escolham hoje a quem desejam servir",
+   "feedbackCorrect": "Primeiro o desafio ao povo, depois a resposta firme de Josué.",
+   "feedbackWrong": {"default": "Comece pelo desafio ao povo; a declaração de Josué fecha o versículo."},
+   "hint": "O versículo termina com a casa de Josué.",
+   "learningObjective": "Reconhecer a sequência do desafio e da declaração.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Josué 24:15, o que Josué e sua casa farão em relação ao Senhor",
+   "verseRef": "Josué 24:15",
+   "options": [{"id": "a", "text": "serviremos"}, {"id": "b", "text": "deixaremos"}, {"id": "c", "text": "temeremos"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Eu e a minha casa serviremos ao SENHOR",
+   "feedbackCorrect": "A frase mais conhecida de Josué é uma decisão de serviço, não só de crença.",
+   "feedbackWrong": {"b": "Deixar o Senhor é o que o povo promete nunca fazer em 24:16.", "c": "Temer aparece em 24:14 ligado a servir; aqui o verbo é de serviço."},
+   "hint": "Veja o verbo da declaração final de Josué.",
+   "learningObjective": "Lembrar o compromisso de Josué e sua casa.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Josué 24:15 comunica que se liga a este contexto",
+   "verseRef": "Josué 24:15",
+   "passageA": {"ref": "Josué 24:15"},
+   "passageB": {"ref": "Contexto", "text": "Josué reúne o povo em Siquém para renovar a aliança antes de morrer."},
+   "options": [{"id": "a", "text": "Escolha que não pode adiar"}, {"id": "b", "text": "Fé herdada sem decisão"}, {"id": "c", "text": "Servir a todos os deuses"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "escolham hoje a quem desejam servir",
+   "feedbackCorrect": "A palavra urgente do discurso é hoje: a decisão não fica para depois.",
+   "feedbackWrong": {"b": "Josué exige decisão pessoal; fé de família não dispensa escolha.", "c": "A escolha é entre senhores; não é servir a todos ao mesmo tempo."},
+   "hint": "Veja o prazo que Josué marca para a decisão.",
+   "learningObjective": "Ligar o discurso de Siquém à urgência da escolha.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Josué despediu o povo para suas heranças antes de registrar a decisão e erguer a pedra",
+   "verseRef": "Josué 24:27–28", "correctOptionId": "false",
+   "evidenceSpan": "Então, Josué despediu o povo, cada um para a sua herança",
+   "feedbackCorrect": "Primeiro o registro e a pedra testemunha; só depois a despedida.",
+   "feedbackWrong": {"true": "Releia Josué 24:26–28: escrever e erguer vêm antes de despedir."},
+   "hint": "Repare na ordem entre a pedra e a despedida.",
+   "learningObjective": "Compreender a sequência da renovação em Siquém.",
+   "evidence": ["Josué 24:26–28"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Josué 24:15, toque a palavra que abre a escolha colocada diante do povo",
+   "verseRef": "Josué 24:15",
+   "options": [{"id": "a", "text": "hoje"}, {"id": "b", "text": "Todavia"}, {"id": "c", "text": "dalém"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "Todavia, se lhe parece mal servir ao SENHOR, escolham",
+   "feedbackCorrect": "Essa palavra vira a fala: depois de tudo, a escolha é colocada na mesa.",
+   "feedbackWrong": {"a": "Hoje marca a urgência da decisão; a virada da fala vem antes.", "c": "Esse termo indica a origem dos deuses antigos dos pais."},
+   "hint": "Procure a palavra inicial que vira a fala de Josué.",
+   "learningObjective": "Reconhecer o marcador de contraste no discurso de Siquém.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como a pedra de Josué 24:27 se relaciona com a escolha de Josué 24:15",
+   "verseRef": "Josué 24:26–27",
+   "options": [
+    {"id": "a", "text": "A pedra guarda e cobra a decisão feita"},
+    {"id": "b", "text": "A pedra substitui a decisão do coração"},
+    {"id": "c", "text": "A pedra encerra a aliança para sempre"},
+    {"id": "d", "text": "A pedra serve só para marcar o lugar"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será testemunha contra vocês, para que não mintam ao seu Deus",
+   "feedbackCorrect": "O que foi escolhido com a boca fica gravado para testemunhar depois.",
+   "feedbackWrong": {"b": "A pedra não decide por ninguém; ela testemunha a decisão tomada.", "c": "Ela não encerra a aliança; ela a guarda para as próximas gerações.", "d": "Marcar o lugar é pouco: ela ouviu as palavras e testemunhará."},
+   "hint": "Veja o que a pedra fará se o povo voltar atrás.",
+   "learningObjective": "Relacionar a escolha feita à testemunha que a guarda.",
+   "evidence": ["Josué 24:26–27"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o fim do livro em Josué 24:26–29",
+   "verseRef": "Josué 24:26–27",
+   "options": [
+    {"id": "a", "text": "Josué registra as palavras no livro da lei"},
+    {"id": "b", "text": "A pedra é erguida como testemunha"},
+    {"id": "c", "text": "O povo volta cada um para sua herança"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Josué escreveu estas palavras no livro da lei de Deus",
+   "feedbackCorrect": "Registro, testemunha e despedida: a aliança fica guardada no papel e na pedra.",
+   "feedbackWrong": {"default": "Comece pelo registro no livro; a despedida vem por último."},
+   "hint": "A despedida do povo fecha essa sequência.",
+   "learningObjective": "Compreender os movimentos finais da renovação em Siquém.",
+   "evidence": ["Josué 24:26–27"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Josué 24:27, de que a pedra servirá para as próximas gerações",
+   "verseRef": "Josué 24:27",
+   "options": [{"id": "a", "text": "testemunha"}, {"id": "b", "text": "altar"}, {"id": "c", "text": "sinal"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Esta pedra nos servirá de testemunha",
+   "feedbackCorrect": "A pedra fica de pé como quem ouviu tudo e pode cobrar depois.",
+   "feedbackWrong": {"b": "Não há sacrifício sobre ela; a função anunciada é outra.", "c": "Sinal é vago perto do papel jurídico que Josué anuncia para ela."},
+   "hint": "Veja o papel que Josué anuncia para a pedra.",
+   "learningObjective": "Compreender a pedra como memória viva da aliança.",
+   "evidence": ["Josué 24:27"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Josué 24:15 a Deuteronômio 30:19",
+   "verseRef": "Josué 24:15",
+   "passageA": {"ref": "Josué 24:15"},
+   "passageB": {"ref": "Deuteronômio 30:19"},
+   "options": [{"id": "a", "text": "Escolha diante do povo"}, {"id": "b", "text": "Escolha adiada sem prazo"}, {"id": "c", "text": "Deuses tratados como iguais"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "escolham hoje a quem desejam servir",
+   "feedbackCorrect": "Moisés e Josué põem a decisão diante do povo, com o céu por testemunha.",
+   "feedbackWrong": {"b": "Os dois discursos marcam urgência: a escolha é para hoje.", "c": "Nos dois textos, escolher é decidir entre caminhos opostos."},
+   "hint": "Compare o gesto que os dois líderes fazem diante do povo.",
+   "learningObjective": "Relacionar a escolha em Siquém à escolha de Deuteronômio.",
+   "evidence": ["Josué 24:15", "Deuteronômio 30:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Israel serviu ao Senhor nos dias de Josué e dos anciãos que conheciam as obras dele",
+   "verseRef": "Josué 24:31", "correctOptionId": "true",
+   "evidenceSpan": "Israel serviu ao SENHOR todos os dias de Josué",
+   "feedbackCorrect": "Quem viu as obras de Deus sustenta a fé da geração seguinte por um tempo.",
+   "feedbackWrong": {"false": "Josué 24:31 liga o serviço à memória das obras do Senhor."},
+   "hint": "Veja até quando o serviço de Israel é descrito.",
+   "learningObjective": "Interpretar a perseverança ligada à memória das obras de Deus.",
+   "evidence": ["Josué 24:31"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Josué 24:15, toque o trecho que sustenta a decisão pública de Josué",
+   "verseRef": "Josué 24:15",
+   "options": [{"id": "a", "text": "parece mal"}, {"id": "b", "text": "desejam servir"}, {"id": "c", "text": "serviremos ao SENHOR"}],
+   "correctOptionId": "c",
+   "evidenceSpan": "serviremos ao SENHOR",
+   "feedbackCorrect": "Josué não só desafia os outros: ele se compromete em voz alta.",
+   "feedbackWrong": {"a": "Isso é a hipótese levantada ao povo, não a posição de Josué.", "b": "Isso é a escolha aberta ao povo; a de Josué é declarada depois."},
+   "hint": "Procure a declaração em primeira pessoa no fim.",
+   "learningObjective": "Sustentar com o texto o compromisso público de Josué.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Josué 24:15 sustenta sobre transmitir a fé à próxima geração",
+   "verseRef": "Josué 24:15",
+   "options": [
+    {"id": "a", "text": "Cada geração precisa escolher por si"},
+    {"id": "b", "text": "A fé dos pais dispensa a escolha dos filhos"},
+    {"id": "c", "text": "Basta morar na terra para servir a Deus"},
+    {"id": "d", "text": "A escolha pode ficar para qualquer época"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "escolham hoje a quem desejam servir",
+   "feedbackCorrect": "Josué não presume a fé do futuro: ele a desafia e a registra em pedra.",
+   "feedbackWrong": {"b": "Se dispensasse, Josué não reuniria o povo para decidir de novo.", "c": "Morar na terra dos amorreus não decide nada; é preciso escolher.", "d": "O prazo do discurso é hoje, e não uma época qualquer."},
+   "hint": "Veja por que Josué reúne o povo já estabelecido na terra.",
+   "learningObjective": "Escolher a interpretação sobre fé e nova geração em Siquém.",
+   "evidence": ["Josué 24:15"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o fio da escolha que atravessa a Bíblia",
+   "verseRef": "Josué 24:15",
+   "options": [
+    {"id": "a", "text": "Moisés põe vida e morte diante do povo"},
+    {"id": "b", "text": "Josué manda escolher a quem servir"},
+    {"id": "c", "text": "Jesus diz que ninguém serve a dois senhores"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "escolham hoje a quem desejam servir",
+   "feedbackCorrect": "De Moisés a Josué e a Jesus, Deus chama para uma decisão sem meio-termo.",
+   "feedbackWrong": {"default": "Siga a ordem: Deuteronômio, Josué e depois o Evangelho."},
+   "hint": "Siga a ordem dos livros na Bíblia.",
+   "learningObjective": "Ver a escolha por Deus como fio que atravessa a Bíblia.",
+   "evidence": ["Josué 24:15", "Deuteronômio 30:19", "Mateus 6:24"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Josué 24:31, os anciãos conheciam todas as o quê que o Senhor havia feito",
+   "verseRef": "Josué 24:31",
+   "options": [{"id": "a", "text": "obras"}, {"id": "b", "text": "leis"}, {"id": "c", "text": "guerras"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "conheciam todas as obras que o SENHOR havia feito",
+   "feedbackCorrect": "A fé persevera enquanto a memória das obras de Deus está viva.",
+   "feedbackWrong": {"b": "As leis importam, mas aqui o destaque é o que Deus fez na história.", "c": "Guerras são parte da história; o termo usado é mais amplo."},
+   "hint": "Veja o que sustenta o serviço daquela geração.",
+   "learningObjective": "Lembrar o termo que liga memória e perseverança na fé.",
+   "evidence": ["Josué 24:31"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Josué 24:15 a Mateus 6:24",
+   "verseRef": "Josué 24:15",
+   "passageA": {"ref": "Josué 24:15"},
+   "passageB": {"ref": "Mateus 6:24"},
+   "options": [{"id": "a", "text": "Não servir a dois senhores"}, {"id": "b", "text": "Servir um pouco a cada deus"}, {"id": "c", "text": "Escolha sem consequência alguma"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "escolham hoje a quem desejam servir",
+   "feedbackCorrect": "Josué e Jesus concordam: o coração não se divide entre dois senhores.",
+   "feedbackWrong": {"b": "Os dois textos excluem a devoção repartida entre senhores rivais.", "c": "A escolha define a quem se serve; consequência é o centro dela."},
+   "hint": "Veja o limite que Jesus põe ao serviço do coração.",
+   "learningObjective": "Ligar a escolha de Siquém ao ensino de Jesus sobre senhores.",
+   "evidence": ["Josué 24:15", "Mateus 6:24"]
+  }
+ ]
+}

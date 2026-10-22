@@ -1,0 +1,84 @@
+Escreva a cena "numeros-murmuracao-02-quarenta-anos" da trilha "numeros" (Números).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "numeros",
+  "title": "Números",
+  "description": "No deserto: censo, murmuração, serpente e a porta da terra.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Murmurações",
+ "mission": {
+  "slug": "numeros-murmuracao-02-quarenta-anos",
+  "title": "Quarenta anos",
+  "type": "lesson",
+  "intro": "A geração que não entrou.",
+  "hookRef": "Números 16:31–33",
+  "hookNote": "A geração que não entrou.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre quarenta?"
+ },
+ "v2": {
+  "passageRef": "Números 16:31–33",
+  "context": "A geração que não entrou.",
+  "keyword": "Quarenta",
+  "verseRefs": [
+   "Números 14:33–34"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Números 16:28–36",
+  "Números 14:33–34"
+ ],
+ "verses": [
+  {
+   "ref": "Números 16:28",
+   "text": "Então, Moisés disse: Nisto saberão que o Senhor me enviou para realizar todas essas obras, que não são fruto da minha própria vontade."
+  },
+  {
+   "ref": "Números 16:29",
+   "text": "Se esses morrerem como todos os homens e forem afligidos de igual modo que se dá com todos os homens, então, não sou enviado do Senhor."
+  },
+  {
+   "ref": "Números 16:30",
+   "text": "Mas, se o Senhor criar algo inaudito, e a terra abrir sua boca para os engolir com tudo o que possuem, e eles descerem vivos ao abismo, então saberão que estes homens desprezaram o Senhor."
+  },
+  {
+   "ref": "Números 16:31",
+   "text": "E aconteceu que, quando ele terminou de proferir todas aquelas palavras, a terra sob eles se fendeu."
+  },
+  {
+   "ref": "Números 16:32",
+   "text": "A terra se abriu e os tragou com suas famílias assim como todos os homens que pertenciam a Corá e todos os seus bens."
+  },
+  {
+   "ref": "Números 16:33",
+   "text": "E eles e tudo o que lhes pertencia desceram vivos ao abismo, e a terra os cobriu, e pereceram do meio da congregação."
+  },
+  {
+   "ref": "Números 16:34",
+   "text": "E todo Israel, que estava ao redor deles, fugiu de seu clamor, pois diziam: Não suceda que a terra nos trague também."
+  },
+  {
+   "ref": "Números 16:35",
+   "text": "Então saiu fogo do SENHOR e consumiu os duzentos e cinquenta homens que ofereciam o incenso."
+  },
+  {
+   "ref": "Números 16:36",
+   "text": "E o Senhor disse a Moisés:"
+  },
+  {
+   "ref": "Números 14:33",
+   "text": "E seus filhos serão pastores neste deserto por quarenta anos e levarão sobre si as consequências das suas infidelidades, até que os seus cadáveres se consumam neste deserto."
+  },
+  {
+   "ref": "Números 14:34",
+   "text": "Segundo o número de dias em que exploraram a terra, quarenta dias; cada dia representando um ano, levareis sobre vós as vossas iniquidades durante quarenta anos e sentireis o meu desagrado."
+  }
+ ]
+}
+</cena>

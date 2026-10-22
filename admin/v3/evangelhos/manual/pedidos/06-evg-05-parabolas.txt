@@ -1,0 +1,132 @@
+Escreva a cena "evg-05-parabolas" da trilha "evangelhos" (Os Quatro Evangelhos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "evangelhos",
+  "title": "Os Quatro Evangelhos",
+  "description": "Panorama de Mateus a João — vida, morte e ressurreição de Jesus.",
+  "realm": "novo-testamento"
+ },
+ "block": "Ensino e Sinais",
+ "mission": {
+  "slug": "evg-05-parabolas",
+  "title": "As parábolas do Reino",
+  "type": "lesson",
+  "intro": "Jesus ensina em parábolas: sementes, tesouros e portas — o Reino cresce de forma surpreendente.",
+  "hookRef": "Mateus 13:1–23",
+  "hookNote": "Parábolas revelam e escondem: o Reino cresce pela Palavra acolhida.",
+  "centralInsight": "Ouvir e entender",
+  "objective": "Qual solo descreve seu coração hoje?"
+ },
+ "v2": {
+  "passageRef": "Mateus 13:1–23",
+  "context": "Parábolas revelam e escondem: o Reino cresce pela Palavra acolhida.",
+  "keyword": "Semente",
+  "verseRefs": [
+   "Mateus 13:3–8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 13:1–23",
+  "Mateus 13:3–8"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 13:1",
+   "text": "Naquele dia, saindo Jesus de casa, assentou-se à beira-mar;"
+  },
+  {
+   "ref": "Mateus 13:2",
+   "text": "E grandes multidões se reuniram ao seu redor, de modo que, entrando em um barco se assentou; e toda a multidão permanecia em pé na praia."
+  },
+  {
+   "ref": "Mateus 13:3",
+   "text": "E lhes falou de muitas coisas por parábolas, dizendo: Eis que o semeador saiu a semear."
+  },
+  {
+   "ref": "Mateus 13:4",
+   "text": "E, ao semear, uma parte da semente caiu à beira do caminho, e, vindo as aves, a comeram."
+  },
+  {
+   "ref": "Mateus 13:5",
+   "text": "E outra parte caiu em solo rochoso, onde a terra era pouca, e logo nasceu, pois a terra não era profunda."
+  },
+  {
+   "ref": "Mateus 13:6",
+   "text": "Mas, ao sair o sol, secou-se e murchou, porque não tinha raiz."
+  },
+  {
+   "ref": "Mateus 13:7",
+   "text": "E outra caiu entre os espinhos, e os espinhos brotaram e a sufocaram."
+  },
+  {
+   "ref": "Mateus 13:8",
+   "text": "E outra caiu em boa terra e produziu fruto: um grão produziu cem, outro sessenta e outro trinta."
+  },
+  {
+   "ref": "Mateus 13:9",
+   "text": "Quem tem ouvidos para ouvir, que ouça."
+  },
+  {
+   "ref": "Mateus 13:10",
+   "text": "E, ao se aproximarem dele, os discípulos perguntaram: Por que lhes falas em parábolas?"
+  },
+  {
+   "ref": "Mateus 13:11",
+   "text": "Ele, respondendo, disse-lhes: Porque a vocês é concedido conhecer os mistérios do reino dos céus, mas a eles não é isso dado"
+  },
+  {
+   "ref": "Mateus 13:12",
+   "text": "Porque ao que já possui, se lhe dará, e terá em abundância, mas ao que não possui, até o que tem, lhe será tirado."
+  },
+  {
+   "ref": "Mateus 13:13",
+   "text": "Por isso, lhes falo por meio de parábolas, pois, vendo, não veem; e, ouvindo, não ouvem, nem entendem."
+  },
+  {
+   "ref": "Mateus 13:14",
+   "text": "E assim se cumpre neles a profecia de Isaías, que diz: Ouvindo, ouvireis, mas não compreendereis; e vendo, vereis, mas não percebereis."
+  },
+  {
+   "ref": "Mateus 13:15",
+   "text": "Porque o coração deste povo está endurecido; relutam em ouvir com os ouvidos e fecham os olhos, para que não vejam com os olhos, não ouçam com os ouvidos, nem entendam com o coração e se convertam e sejam por mim curados."
+  },
+  {
+   "ref": "Mateus 13:16",
+   "text": "Bem-aventurados, porém, são os vossos olhos, porque veem; e os vossos ouvidos, porque ouvem."
+  },
+  {
+   "ref": "Mateus 13:17",
+   "text": "Porque em verdade vos digo que muitos profetas e justos desejaram ver o que vós vedes, e não viram; e ouvir o que vós ouvis, e não ouviram."
+  },
+  {
+   "ref": "Mateus 13:18",
+   "text": "Ouçam, portanto, a parábola do semeador."
+  },
+  {
+   "ref": "Mateus 13:19",
+   "text": "Quando alguém ouve a palavra do reino e não a compreende, o maligno vem e arranca o que foi semeado em seu coração; este é o que foi semeado à beira do caminho."
+  },
+  {
+   "ref": "Mateus 13:20",
+   "text": "Mas o que foi semeado em solo rochoso, é aquele que ouve a palavra e a recebe imediatamente, com alegria;"
+  },
+  {
+   "ref": "Mateus 13:21",
+   "text": "Mas não tem raiz em si mesmo, sendo, antes, de pouca duração; e, quando lhe chega a angústia ou a perseguição por causa da palavra, logo se escandaliza."
+  },
+  {
+   "ref": "Mateus 13:22",
+   "text": "O que foi semeado entre espinhos é aquele que ouve a palavra, mas os cuidados deste mundo e a sedução das riquezas sufocam a palavra, e ela fica infrutífera."
+  },
+  {
+   "ref": "Mateus 13:23",
+   "text": "Mas o que foi semeado em boa terra é aquele que ouve a palavra e a compreende; esse frutifica e produz a cem, a sessenta e a trinta por um."
+  }
+ ]
+}
+</cena>

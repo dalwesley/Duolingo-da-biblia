@@ -1,0 +1,705 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:10–12",
+  "passages": [
+   {
+    "ref": "Mateus 5:10–12"
+   },
+   {
+    "ref": "Mateus 5:13–14"
+   }
+  ],
+  "context": "Jesus fecha as bem-aventuranças abençoando quem é perseguido por causa da justiça e por causa dele. Fidelidade ao Reino pode custar aprovação humana, mas não custa o galardão do Pai.",
+  "keyword": "Perseguição",
+  "keywordGloss": "Oposição sofrida por causa da justiça e de Jesus, sem abandonar a fidelidade a ele.",
+  "focusQuestion": "Você está disposto a permanecer fiel a Jesus mesmo quando isso custar aprovação?",
+  "reflectionPrompts": [
+   "Fidelidade com custo",
+   "Alegria apesar da rejeição",
+   "Galardão que está nos céus"
+  ],
+  "facts": [
+   {
+    "text": "Dos perseguidos por justiça é o reino dos céus.",
+    "evidenceRef": "Mateus 5:10",
+    "evidenceSpan": "deles é o reino dos céus"
+   },
+   {
+    "text": "Jesus abençoa quem é injuriado por causa dele.",
+    "evidenceRef": "Mateus 5:11",
+    "evidenceSpan": "por minha causa"
+   },
+   {
+    "text": "Contra os discípulos dirão todo mal, mentindo.",
+    "evidenceRef": "Mateus 5:11",
+    "evidenceSpan": "mentindo, disserem todo mal contra vós"
+   },
+   {
+    "text": "Os discípulos devem se alegrar e exultar na perseguição.",
+    "evidenceRef": "Mateus 5:12",
+    "evidenceSpan": "Alegrem-se e exultem"
+   },
+   {
+    "text": "O galardão dos perseguidos é grande nos céus.",
+    "evidenceRef": "Mateus 5:12",
+    "evidenceSpan": "grande é o galardão de vocês nos céus"
+   },
+   {
+    "text": "Os profetas antes deles também foram perseguidos.",
+    "evidenceRef": "Mateus 5:12",
+    "evidenceSpan": "perseguiram os profetas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "perseguidos",
+    "gloss": "Quem sofre oposição por viver a justiça e por seguir Jesus."
+   },
+   {
+    "term": "galardão",
+    "gloss": "Recompensa que Deus guarda nos céus para os fiéis a ele."
+   },
+   {
+    "term": "profetas",
+    "gloss": "Mensageiros de Deus antes, também perseguidos por sua fidelidade."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Bênção aos perseguidos por justiça",
+    "evidenceRef": "Mateus 5:10"
+   },
+   {
+    "label": "Injúria sofrida por causa de Jesus",
+    "evidenceRef": "Mateus 5:11"
+   },
+   {
+    "label": "Chamado a alegrar-se e exultar",
+    "evidenceRef": "Mateus 5:12"
+   },
+   {
+    "label": "Companhia dos profetas perseguidos",
+    "evidenceRef": "Mateus 5:12"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A alegria é ordenada porque o galardão nos céus é grande.",
+    "marker": "pois",
+    "evidenceRef": "Mateus 5:12"
+   },
+   {
+    "kind": "contraste",
+    "text": "Pessoas mentem contra os discípulos, mas Deus os chama bem-aventurados.",
+    "marker": null,
+    "evidenceRef": "Mateus 5:11"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Pedro 4:14",
+    "bridge": "Sofrer pelo nome de Cristo"
+   },
+   {
+    "ref": "Romanos 8:17",
+    "bridge": "Sofrer e ser glorificado com Cristo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Ser perseguido prova que a pessoa está errada diante de Deus.",
+    "why": "Jesus chama de bem-aventurados os perseguidos por causa da justiça e dele."
+   },
+   {
+    "text": "Qualquer sofrimento é perseguição abençoada por Jesus.",
+    "why": "O texto especifica o motivo: por causa da justiça e por minha causa."
+   },
+   {
+    "text": "Alegria na perseguição é fingir que a dor não existe.",
+    "why": "Jesus aponta para o galardão futuro; a dor é real, a esperança também."
+   }
+  ],
+  "centralInsight": "Fidelidade pode custar aprovação humana",
+  "anchorQuestion": "Por que os discípulos podem se alegrar quando perseguidos, segundo Mateus 5:12?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:10, dos perseguidos por causa da justiça é o reino dos céus",
+   "verseRef": "Mateus 5:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "deles é o reino dos céus",
+   "feedbackCorrect": "Nem a perseguição tira dos fiéis o pertencimento ao Reino de Deus.",
+   "feedbackWrong": {
+    "false": "Releia 5:10: deles é o reino dos céus."
+   },
+   "hint": "Olhe a promessa no fim do versículo.",
+   "learningObjective": "Observar a promessa aos perseguidos.",
+   "evidence": [
+    "Mateus 5:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:10, toque o que acontece aos bem-aventurados desse versículo.",
+   "verseRef": "Mateus 5:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "são perseguidos"
+    },
+    {
+     "id": "b",
+     "text": "reino dos céus"
+    },
+    {
+     "id": "c",
+     "text": "Bem-aventurados"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "os que são perseguidos por causa da justiça",
+   "feedbackCorrect": "Jesus abençoa pessoas que sofrem oposição por viverem a justiça dele.",
+   "feedbackWrong": {
+    "b": "Isso é a promessa deles, não o que sofrem agora.",
+    "c": "Isso é a declaração de Jesus, não o sofrimento citado."
+   },
+   "hint": "Procure o verbo ligado ao grupo abençoado.",
+   "learningObjective": "Identificar a condição dos abençoados de 5:10.",
+   "evidence": [
+    "Mateus 5:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:11, por causa de quem os discípulos são injuriados?",
+   "verseRef": "Mateus 5:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Por causa da própria teimosia deles"
+    },
+    {
+     "id": "b",
+     "text": "Por causa de Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Por causa de riqueza acumulada"
+    },
+    {
+     "id": "d",
+     "text": "Por causa de brigas por poder"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "por minha causa",
+   "feedbackCorrect": "Jesus personaliza a bênção: a injúria é sofrida por causa dele.",
+   "feedbackWrong": {
+    "a": "O motivo nomeado por Jesus é ele mesmo, não teimosia.",
+    "c": "Bens não aparecem como motivo em 5:11.",
+    "d": "A oposição é por fidelidade a Jesus, não por disputa."
+   },
+   "hint": "Leia as últimas palavras do versículo 11.",
+   "learningObjective": "Observar o motivo da perseguição em 5:11.",
+   "evidence": [
+    "Mateus 5:10–11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:10 na ordem do texto.",
+   "verseRef": "Mateus 5:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Bem-aventurados os que são perseguidos por causa da justiça"
+    },
+    {
+     "id": "b",
+     "text": "porque deles é"
+    },
+    {
+     "id": "c",
+     "text": "o reino dos céus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o reino dos céus",
+   "feedbackCorrect": "Perseguição por justiça agora, reino dos céus como pertencimento garantido.",
+   "feedbackWrong": {
+    "default": "Comece pelo grupo perseguido; o Reino fecha a promessa."
+   },
+   "hint": "A promessa vem depois da palavra porque.",
+   "learningObjective": "Reconhecer a sequência de Mateus 5:10.",
+   "evidence": [
+    "Mateus 5:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:10, de onde é o reino dos perseguidos por justiça?",
+   "verseRef": "Mateus 5:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "céus"
+    },
+    {
+     "id": "b",
+     "text": "homens"
+    },
+    {
+     "id": "c",
+     "text": "terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "reino dos céus",
+   "feedbackCorrect": "O reino que sustenta os perseguidos vem de Deus, não da aprovação humana.",
+   "feedbackWrong": {
+    "b": "Aprovação dos homens é justamente o que pode faltar.",
+    "c": "Terra é herança dos mansos em 5:5, não a frase aqui."
+   },
+   "hint": "Veja a origem do reino no fim de 5:10.",
+   "learningObjective": "Lembrar a origem do reino dos perseguidos.",
+   "evidence": [
+    "Mateus 5:10–11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:10 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:10–11",
+   "passageA": {
+    "ref": "Mateus 5:10"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Seguir Jesus com fidelidade pode custar a aprovação das pessoas ao redor."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Fidelidade custa aprovação"
+    },
+    {
+     "id": "b",
+     "text": "Aprovação prova fidelidade"
+    },
+    {
+     "id": "c",
+     "text": "Perseguição cancela o Reino"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "são perseguidos por causa da justiça",
+   "feedbackCorrect": "Jesus prepara os discípulos: o Reino pode custar aplauso humano.",
+   "feedbackWrong": {
+    "b": "Em 5:10, fiéis sofrem oposição em vez de aplauso.",
+    "c": "Deles continua sendo o reino dos céus, diz Jesus."
+   },
+   "hint": "Pense no preço social citado no versículo.",
+   "learningObjective": "Ligar perseguição ao custo da fidelidade.",
+   "evidence": [
+    "Mateus 5:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:12, a alegria dos perseguidos depende de a perseguição parar imediatamente",
+   "verseRef": "Mateus 5:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "grande é o galardão de vocês nos céus",
+   "feedbackCorrect": "A alegria se apoia no galardão futuro, mesmo com a oposição presente.",
+   "feedbackWrong": {
+    "true": "Jesus manda alegrar-se por causa do galardão, não da pausa."
+   },
+   "hint": "Veja o motivo que Jesus dá para a alegria.",
+   "learningObjective": "Compreender a base da alegria na perseguição.",
+   "evidence": [
+    "Mateus 5:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:11, toque o trecho que mostra o motivo da injúria sofrida.",
+   "verseRef": "Mateus 5:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "todo mal"
+    },
+    {
+     "id": "b",
+     "text": "por minha causa"
+    },
+    {
+     "id": "c",
+     "text": "Bem-aventurados sois"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "por minha causa",
+   "feedbackCorrect": "Três palavrinhas mudam tudo: o sofrimento é por lealdade a Jesus.",
+   "feedbackWrong": {
+    "a": "Isso é o conteúdo falso dito contra eles, não o motivo.",
+    "c": "Isso abre a bênção, sem dizer ainda o motivo dela."
+   },
+   "hint": "Procure o fim do versículo, onde Jesus fala de si.",
+   "learningObjective": "Reconhecer o motivo cristão da perseguição.",
+   "evidence": [
+    "Mateus 5:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 5:12 explica a alegria pedida em Mateus 5:11–12?",
+   "verseRef": "Mateus 5:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "A perseguição prova que Deus abandonou os fiéis"
+    },
+    {
+     "id": "b",
+     "text": "Os profetas sofreram sem qualquer esperança futura"
+    },
+    {
+     "id": "c",
+     "text": "O galardão nos céus sustenta a alegria presente"
+    },
+    {
+     "id": "d",
+     "text": "A mentira dos outros deve ser paga com mentira"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "grande é o galardão de vocês nos céus",
+   "feedbackCorrect": "Jesus ancora a alegria no que Deus guarda, não no humor dos perseguidores.",
+   "feedbackWrong": {
+    "a": "Jesus chama esses sofredores de bem-aventurados por Deus.",
+    "b": "Os profetas são companhia honrada, não exemplo de desespero.",
+    "d": "A resposta do Reino nunca é retribuir mentira com mentira."
+   },
+   "hint": "Procure o porque da ordem de se alegrar.",
+   "learningObjective": "Relacionar alegria presente e galardão futuro.",
+   "evidence": [
+    "Mateus 5:11–12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o ensino de Mateus 5:10 a 5:12?",
+   "verseRef": "Mateus 5:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Perseguição por causa da justiça"
+    },
+    {
+     "id": "b",
+     "text": "Injúria por causa de Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Alegria pelo galardão nos céus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "por minha causa",
+   "feedbackCorrect": "Da causa da perseguição ao motivo da alegria: Jesus fecha o bloco olhando adiante.",
+   "feedbackWrong": {
+    "default": "A alegria com galardão é o último passo, em 5:12."
+   },
+   "hint": "O galardão aparece no último versículo do bloco.",
+   "learningObjective": "Compreender o movimento da bênção aos perseguidos.",
+   "evidence": [
+    "Mateus 5:10–11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:11, o que farão contra os discípulos por causa de Jesus?",
+   "verseRef": "Mateus 5:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "injuriarem"
+    },
+    {
+     "id": "b",
+     "text": "abençoarem"
+    },
+    {
+     "id": "c",
+     "text": "esquecerem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando vos injuriarem e vos perseguirem",
+   "feedbackCorrect": "Jesus avisa com clareza: seguir a ele pode atrair injúria e perseguição.",
+   "feedbackWrong": {
+    "b": "A bênção vem de Jesus; das pessoas pode vir injúria.",
+    "c": "O texto fala de oposição ativa, não de esquecimento."
+   },
+   "hint": "Pense numa ofensa feita com palavras.",
+   "learningObjective": "Lembrar a forma de oposição citada em 5:11.",
+   "evidence": [
+    "Mateus 5:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:12 a 1 Pedro 4:14?",
+   "verseRef": "Mateus 5:12",
+   "passageA": {
+    "ref": "Mateus 5:12"
+   },
+   "passageB": {
+    "ref": "1 Pedro 4:14"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sofrer pelo nome de Cristo"
+    },
+    {
+     "id": "b",
+     "text": "Sofrer prova abandono divino"
+    },
+    {
+     "id": "c",
+     "text": "Injúria deve ser devolvida"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Alegrem-se e exultem",
+   "feedbackCorrect": "Pedro repete Jesus: sofrer pelo nome de Cristo é bem-aventurança, não vergonha.",
+   "feedbackWrong": {
+    "b": "Os dois textos chamam esse sofrimento de bem-aventurado.",
+    "c": "A resposta do Reino não é devolver injúria por injúria."
+   },
+   "hint": "Veja o nome pelo qual se sofre nos dois textos.",
+   "learningObjective": "Relacionar a perseguição abençoada em Jesus e Pedro.",
+   "evidence": [
+    "Mateus 5:12",
+    "1 Pedro 4:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 5:10–12 abençoa qualquer sofrimento, mesmo sem relação com a justiça ou com Jesus",
+   "verseRef": "Mateus 5:10–11",
+   "correctOptionId": "false",
+   "evidenceSpan": "por causa da justiça",
+   "feedbackCorrect": "A bênção tem endereço: perseguição por causa da justiça e de Jesus.",
+   "feedbackWrong": {
+    "true": "Observe os motivos nomeados em 5:10 e 5:11 antes de generalizar."
+   },
+   "hint": "Confira os motivos escritos nos dois versículos.",
+   "learningObjective": "Delimitar a perseguição abençoada pelo texto.",
+   "evidence": [
+    "Mateus 5:10–11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:12, toque onde está o galardão dos perseguidos.",
+   "verseRef": "Mateus 5:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "nos céus"
+    },
+    {
+     "id": "b",
+     "text": "Alegrem-se"
+    },
+    {
+     "id": "c",
+     "text": "os profetas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "grande é o galardão de vocês nos céus",
+   "feedbackCorrect": "O tesouro de quem sofre por Jesus está guardado onde o Pai está.",
+   "feedbackWrong": {
+    "b": "Isso é a reação pedida, não o lugar da recompensa.",
+    "c": "Eles são a companhia do passado, não o lugar do galardão."
+   },
+   "hint": "Procure o lugar citado depois da recompensa.",
+   "learningObjective": "Sustentar no texto o lugar do galardão.",
+   "evidence": [
+    "Mateus 5:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 5:10–12 sustenta sobre sofrer por seguir Jesus?",
+   "verseRef": "Mateus 5:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "É sinal de que Deus retirou sua bênção deles"
+    },
+    {
+     "id": "b",
+     "text": "Deve ser respondido com vingança aos perseguidores"
+    },
+    {
+     "id": "c",
+     "text": "Coloca o fiel na companhia honrada dos profetas"
+    },
+    {
+     "id": "d",
+     "text": "Dispensa alegria até tudo se resolver na terra"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "perseguiram os profetas",
+   "feedbackCorrect": "Jesus honra os perseguidos ligando sua história à dos profetas de Deus.",
+   "feedbackWrong": {
+    "a": "Jesus os chama bem-aventurados justamente nessa condição.",
+    "b": "O Reino responde com fidelidade e alegria, não vingança.",
+    "d": "A alegria é pedida agora, olhando para o galardão futuro."
+   },
+   "hint": "Veja com quem Jesus compara os perseguidos de hoje.",
+   "learningObjective": "Escolher a interpretação sustentada por 5:10–12.",
+   "evidence": [
+    "Mateus 5:10–12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio dos que sofrem por Deus?",
+   "verseRef": "Mateus 5:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Profetas foram perseguidos antes"
+    },
+    {
+     "id": "b",
+     "text": "Discípulos são perseguidos por Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Deus glorifica quem sofreu com Cristo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "perseguiram os profetas",
+   "feedbackCorrect": "Profetas, discípulos e glória futura: sofrer por Deus tem história e destino.",
+   "feedbackWrong": {
+    "default": "Comece pelos profetas do passado citados por Jesus."
+   },
+   "hint": "O passado dos profetas abre a sequência.",
+   "learningObjective": "Ver a perseguição dentro do fio bíblico maior.",
+   "evidence": [
+    "Mateus 5:12",
+    "Romanos 8:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:12, o que Jesus manda os perseguidos fazerem além de se alegrarem?",
+   "verseRef": "Mateus 5:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "exultem"
+    },
+    {
+     "id": "b",
+     "text": "calem"
+    },
+    {
+     "id": "c",
+     "text": "fujam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Alegrem-se e exultem",
+   "feedbackCorrect": "A alegria de quem pertence ao Reino transborda mesmo sob perseguição.",
+   "feedbackWrong": {
+    "b": "Jesus não manda silenciar a esperança dos fiéis.",
+    "c": "Fugir não é a palavra de Jesus nesse versículo final."
+   },
+   "hint": "É o segundo verbo de alegria da frase.",
+   "learningObjective": "Lembrar a reação ensinada aos perseguidos.",
+   "evidence": [
+    "Mateus 5:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:11 a Romanos 8:17?",
+   "verseRef": "Mateus 5:10–11",
+   "passageA": {
+    "ref": "Mateus 5:11"
+   },
+   "passageB": {
+    "ref": "Romanos 8:17"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sofrer e reinar com Cristo"
+    },
+    {
+     "id": "b",
+     "text": "Sofrer sem qualquer futuro"
+    },
+    {
+     "id": "c",
+     "text": "Glória sem passar pela cruz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por minha causa",
+   "feedbackCorrect": "Paulo une sofrer com Cristo agora e ser glorificado com ele depois.",
+   "feedbackWrong": {
+    "b": "Os dois textos dão futuro glorioso a esse sofrimento.",
+    "c": "O caminho de Cristo passa pela cruz antes da glória."
+   },
+   "hint": "Veja o que Paulo promete a quem sofre com Cristo.",
+   "learningObjective": "Ligar perseguição presente e glória futura.",
+   "evidence": [
+    "Mateus 5:10–11",
+    "Romanos 8:17"
+   ]
+  }
+ ]
+}

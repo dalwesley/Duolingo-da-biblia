@@ -1,0 +1,71 @@
+Escreva a cena "exo-07-sinai" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "No deserto",
+ "mission": {
+  "slug": "exo-07-sinai",
+  "title": "Chegada ao Sinai",
+  "type": "lesson",
+  "intro": "Três meses após a saída, Israel acampa diante do monte. Deus os chama a ser povo sacerdotal.",
+  "hookRef": "Êxodo 19:5-6",
+  "hookNote": "A libertação tem destino: um povo que pertence a Deus e serve diante das nações.",
+  "centralInsight": "Fui libertado para pertencer",
+  "objective": "O que muda se a sua fé for vocação sacerdotal, e não só privilégio privado?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 19:5-6",
+  "context": "A libertação tem destino: um povo que pertence a Deus e serve diante das nações.",
+  "keyword": "Aliança",
+  "verseRefs": [
+   "Êxodo 19:5–6"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 19:2–9"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 19:2",
+   "text": "E partiram de Refidim, chegando ao deserto do Sinai, onde se acamparam; ali, Israel se instalou em frente ao monte."
+  },
+  {
+   "ref": "Êxodo 19:3",
+   "text": "E Moisés subiu ao encontro de Deus, e o Senhor o chamou do monte, dizendo: Assim falarás à casa de Jacó e anunciarás aos filhos de Israel:"
+  },
+  {
+   "ref": "Êxodo 19:4",
+   "text": "Vocês viram o que fiz aos egípcios, como os levei sobre asas de águia e os trouxe até Mim;"
+  },
+  {
+   "ref": "Êxodo 19:5",
+   "text": "Agora, se vocês realmente ouvirem atentamente a minha voz e guardarem a minha aliança, então serão a minha propriedade peculiar entre todos os povos, pois toda a terra é minha."
+  },
+  {
+   "ref": "Êxodo 19:6",
+   "text": "E vocês me serão um reino de sacerdotes e uma nação santa. Essas são as palavras que você falará aos filhos de Israel."
+  },
+  {
+   "ref": "Êxodo 19:7",
+   "text": "Então Moisés veio, convocou os anciãos do povo e apresentou diante deles todas as palavras que o Senhor lhe havia ordenado."
+  },
+  {
+   "ref": "Êxodo 19:8",
+   "text": "Então, todo o povo respondeu em uníssono: Tudo o que o Senhor disse faremos. E Moisés relatou ao Senhor as palavras do povo."
+  },
+  {
+   "ref": "Êxodo 19:9",
+   "text": "Disse o Senhor a Moisés: \"Eis que virei a ti numa nuvem escura para que o povo ouça quando eu falar contigo e para que também creiam sempre em ti.\" Pois Moisés havia comunicado as palavras do seu povo ao Senhor."
+  }
+ ]
+}
+</cena>

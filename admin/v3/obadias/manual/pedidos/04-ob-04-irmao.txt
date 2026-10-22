@@ -1,0 +1,36 @@
+Escreva a cena "ob-04-irmao" da trilha "obadias" (Obadias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "obadias",
+  "title": "Obadias",
+  "description": "Orgulho de Edom e o reino do Senhor.",
+  "realm": "antigo-testamento"
+ },
+ "block": "O irmão",
+ "mission": {
+  "slug": "ob-04-irmao",
+  "title": "Violência contra o irmão",
+  "type": "lesson",
+  "intro": "Edom não ficou neutro no dia de Jacó. Ficou do lado oposto e entrou na partilha.",
+  "hookRef": "Obadias 10–11",
+  "hookNote": "A vergonha vem da violência contra o irmão, não de uma guerra qualquer.",
+  "centralInsight": "Festejar a queda do irmão é culpa",
+  "objective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém."
+ },
+ "v2": {
+  "passageRef": "Obadias 10–11",
+  "context": "A violência contra Jacó cobre Edom de vergonha, porque ele ficou do lado oposto.",
+  "keyword": "Irmão",
+  "verseRefs": [
+   "Obadias 10–11"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [],
+ "verses": []
+}
+</cena>

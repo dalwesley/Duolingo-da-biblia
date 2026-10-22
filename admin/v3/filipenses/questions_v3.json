@@ -1,0 +1,3298 @@
+[
+  {
+    "id": "filipenses-sem-fp-01-alegria-01",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 1:18, Paulo se alegra desde que Cristo seja proclamado.",
+    "prompt": "Em Filipenses 1:18, Paulo se alegra desde que Cristo seja proclamado.",
+    "cue": "Em Filipenses 1:18, Paulo se alegra desde que Cristo seja proclamado.",
+    "verseRef": "Filipenses 1:18",
+    "passageText": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Cristo seja proclamado de qualquer modo",
+    "feedbackCorrect": "Por pretexto ou por verdade, Cristo proclamado alegra Paulo.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Filipenses 1:18: nisso me alegro, diz ele."
+    },
+    "hint": "Veja a condição da alegria dele.",
+    "learningObjective": "Observar a causa da alegria de Paulo.",
+    "evidence": [
+      "Filipenses 1:18"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-01-alegria-02",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+    "prompt": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+    "cue": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "viver"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "viver é Cristo",
+    "feedbackCorrect": "Para ele, viver não é um projeto: é uma pessoa.",
+    "feedbackWrong": {
+      "b": "Esse é o verbo; quem preenche o viver vem depois.",
+      "c": "Isso é o que morrer é para ele, não o viver."
+    },
+    "hint": "Procure o nome depois do verbo é.",
+    "learningObjective": "Identificar o centro da vida de Paulo.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-01-alegria-03",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 1:21, o que Paulo diz sobre viver e morrer?",
+    "prompt": "Segundo Filipenses 1:21, o que Paulo diz sobre viver e morrer?",
+    "cue": "Segundo Filipenses 1:21, o que Paulo diz sobre viver e morrer?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver é incerto, e morrer é esquecer"
+      },
+      {
+        "id": "b",
+        "text": "Viver é sofrer, e morrer é fracassar"
+      },
+      {
+        "id": "c",
+        "text": "Viver é Cristo, e morrer é lucro"
+      },
+      {
+        "id": "d",
+        "text": "Viver é fugir, e morrer é perder tudo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "As duas metades giram em torno de Cristo, não do medo.",
+    "feedbackWrong": {
+      "a": "Ele tem certeza sobre os dois lados da frase.",
+      "b": "Morrer, para ele, é lucro, não fracasso algum.",
+      "d": "Ele não foge: ele julga ficar mais necessário."
+    },
+    "hint": "Compare as duas metades do versículo.",
+    "learningObjective": "Observar a declaração de Filipenses 1:21.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-01-alegria-04",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 1:20 na ordem do texto.",
+    "prompt": "Monte Filipenses 1:20 na ordem do texto.",
+    "cue": "Monte Filipenses 1:20 na ordem do texto.",
+    "verseRef": "Filipenses 1:20",
+    "passageText": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em nada serei envergonhado"
+      },
+      {
+        "id": "b",
+        "text": "será Cristo engrandecido no meu corpo"
+      },
+      {
+        "id": "c",
+        "text": "quer pela vida, quer pela morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em nada serei envergonhado",
+    "feedbackCorrect": "Sem vergonha, Cristo engrandecido, na vida ou na morte.",
+    "feedbackWrong": {
+      "default": "Comece pela esperança de não ser envergonhado."
+    },
+    "hint": "A frase fecha com vida e morte.",
+    "learningObjective": "Reconhecer a sequência da esperança de Paulo.",
+    "evidence": [
+      "Filipenses 1:20"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-01-alegria-05",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 1:18, o que Paulo faz quando Cristo é proclamado, mesmo por pretexto?",
+    "prompt": "Em Filipenses 1:18, o que Paulo faz quando Cristo é proclamado, mesmo por pretexto?",
+    "cue": "Em Filipenses 1:18, o que Paulo faz quando Cristo é proclamado, mesmo por pretexto?",
+    "verseRef": "Filipenses 1:18",
+    "passageText": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar.",
+    "template": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me ___, e sempre continuarei a me alegrar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "discuto"
+      },
+      {
+        "id": "b",
+        "text": "choro"
+      },
+      {
+        "id": "c",
+        "text": "alegro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nisso me alegro",
+    "feedbackCorrect": "A proclamação de Cristo alegra Paulo, venha como vier.",
+    "feedbackWrong": {
+      "a": "Ele não briga pelo motivo: ele celebra o anúncio.",
+      "b": "Choro não aparece: ele diz que continuará a se alegrar."
+    },
+    "hint": "É a reação dele ao evangelho anunciado.",
+    "learningObjective": "Lembrar a reação de Paulo à proclamação.",
+    "evidence": [
+      "Filipenses 1:18"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-01-alegria-06",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 1:18 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:18 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:18 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 1:18",
+    "passageText": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar.",
+    "passageA": {
+      "ref": "Filipenses 1:18",
+      "text": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo está preso, sem saber se viverá, enquanto outros pregam Cristo até por motivos tortos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria enquanto Cristo é proclamado"
+      },
+      {
+        "id": "b",
+        "text": "Raiva de quem prega diferente"
+      },
+      {
+        "id": "c",
+        "text": "Tristeza pelo fim do evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nisso me alegro",
+    "feedbackCorrect": "Mesmo preso, ele se alegra: o anúncio continua andando.",
+    "feedbackWrong": {
+      "b": "Ele não se ira: ele diz que continuará a se alegrar.",
+      "c": "O evangelho avança; não há fim anunciado aqui."
+    },
+    "hint": "Veja a reação dele ao anúncio de Cristo.",
+    "learningObjective": "Ligar a alegria de Paulo à proclamação de Cristo.",
+    "evidence": [
+      "Filipenses 1:18"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-01-alegria-01",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 1:23–24, Paulo decidiu partir porque ficar na carne já não servia para a igreja.",
+    "prompt": "Em Filipenses 1:23–24, Paulo decidiu partir porque ficar na carne já não servia para a igreja.",
+    "cue": "Em Filipenses 1:23–24, Paulo decidiu partir porque ficar na carne já não servia para a igreja.",
+    "verseRef": "Filipenses 1:23–24",
+    "passageText": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor. Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "julgo ser mais necessário, por causa de vocês, ficar na carne",
+    "feedbackCorrect": "Ele deseja partir, mas julga ficar mais necessário por eles.",
+    "feedbackWrong": {
+      "true": "O desejo é partir; o juízo dele é ficar por causa deles."
+    },
+    "hint": "Separe o desejo dele do juízo dele.",
+    "learningObjective": "Compreender o dilema entre partir e ficar.",
+    "evidence": [
+      "Filipenses 1:23–24"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-01-alegria-02",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 1:23, toque a palavra que mostra o que Paulo sente sobre partir.",
+    "prompt": "Em Filipenses 1:23, toque a palavra que mostra o que Paulo sente sobre partir.",
+    "cue": "Em Filipenses 1:23, toque a palavra que mostra o que Paulo sente sobre partir.",
+    "verseRef": "Filipenses 1:23",
+    "passageText": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "desejo"
+      },
+      {
+        "id": "c",
+        "text": "conflito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sinto o desejo de partir",
+    "feedbackCorrect": "Ele sente desejo de partir e estar com Cristo.",
+    "feedbackWrong": {
+      "a": "Ele é o destino do desejo, não a palavra do sentir.",
+      "c": "Isso nomeia a tensão dele, não o desejo em si."
+    },
+    "hint": "Procure o verbo sentir e o que vem depois.",
+    "learningObjective": "Reconhecer o desejo declarado por Paulo.",
+    "evidence": [
+      "Filipenses 1:23"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-01-alegria-03",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a alegria de Paulo se relaciona com o futuro dele em Filipenses 1:18–19?",
+    "prompt": "Como a alegria de Paulo se relaciona com o futuro dele em Filipenses 1:18–19?",
+    "cue": "Como a alegria de Paulo se relaciona com o futuro dele em Filipenses 1:18–19?",
+    "verseRef": "Filipenses 1:18–19",
+    "passageText": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar. Estou certo de que isto resultará em minha libertação, graças à vossa súplica e pela provisão do Espírito de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele deixa o futuro nas mãos dos seus rivais"
+      },
+      {
+        "id": "b",
+        "text": "Ele só se alegrará depois de sair da prisão"
+      },
+      {
+        "id": "c",
+        "text": "Ele troca a alegria por medo do julgamento"
+      },
+      {
+        "id": "d",
+        "text": "Ele se alegra agora e confia na oração da igreja"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "graças à vossa súplica e pela provisão do Espírito de Jesus Cristo",
+    "feedbackCorrect": "Alegria presente e confiança na súplica e no Espírito.",
+    "feedbackWrong": {
+      "a": "Ele confia na oração e no Espírito, não em rivais.",
+      "b": "Ele já se alegra, preso, antes de qualquer saída.",
+      "c": "Medo não domina: há expectativa e esperança nele."
+    },
+    "hint": "Junte a alegria de hoje com a esperança dele.",
+    "learningObjective": "Relacionar alegria presente e esperança futura.",
+    "evidence": [
+      "Filipenses 1:18–19"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-01-alegria-04",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os pensamentos de Paulo em Filipenses 1:23–24?",
+    "prompt": "Como se encadeiam os pensamentos de Paulo em Filipenses 1:23–24?",
+    "cue": "Como se encadeiam os pensamentos de Paulo em Filipenses 1:23–24?",
+    "verseRef": "Filipenses 1:23–24",
+    "passageText": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor. Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele deseja partir e estar com Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ele reconhece que partir seria muito melhor"
+      },
+      {
+        "id": "c",
+        "text": "Ele julga mais necessário ficar pela igreja"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sinto o desejo de partir e estar com Cristo",
+    "feedbackCorrect": "Desejo, reconhecimento e juízo pelos outros: é a ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo desejo que ele sente."
+    },
+    "hint": "O juízo pela igreja fecha o raciocínio.",
+    "learningObjective": "Compreender o encadeamento do dilema de Paulo.",
+    "evidence": [
+      "Filipenses 1:23–24"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-01-alegria-05",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 1:24, como Paulo avalia ficar na carne por causa da igreja?",
+    "prompt": "Em Filipenses 1:24, como Paulo avalia ficar na carne por causa da igreja?",
+    "cue": "Em Filipenses 1:24, como Paulo avalia ficar na carne por causa da igreja?",
+    "verseRef": "Filipenses 1:24",
+    "passageText": "Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne.",
+    "template": "Todavia, julgo ser mais ___, por causa de vocês, ficar na carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vergonhoso"
+      },
+      {
+        "id": "b",
+        "text": "inútil"
+      },
+      {
+        "id": "c",
+        "text": "necessário"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "julgo ser mais necessário",
+    "feedbackCorrect": "O bem da igreja pesa mais que o desejo dele.",
+    "feedbackWrong": {
+      "a": "Vergonha é o que ele espera justamente não ter.",
+      "b": "Ele vê fruto e necessidade em ficar, não inutilidade."
+    },
+    "hint": "É um juízo sobre o bem dos outros.",
+    "learningObjective": "Compreender por que Paulo aceita ficar.",
+    "evidence": [
+      "Filipenses 1:24"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-01-alegria-06",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 1:23 a 2 Coríntios 5:8?",
+    "prompt": "O que liga Filipenses 1:23 a 2 Coríntios 5:8?",
+    "cue": "O que liga Filipenses 1:23 a 2 Coríntios 5:8?",
+    "verseRef": "Filipenses 1:23",
+    "passageText": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor.",
+    "passageA": {
+      "ref": "Filipenses 1:23",
+      "text": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 5:8",
+      "text": "Temos plena confiança e desejamos deixar este corpo para habitar com o Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Medo de deixar o corpo"
+      },
+      {
+        "id": "b",
+        "text": "Fim da missão na terra"
+      },
+      {
+        "id": "c",
+        "text": "Desejo de estar com o Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "desejo de partir e estar com Cristo",
+    "feedbackCorrect": "Nos dois textos, partir é estar presente com o Senhor.",
+    "feedbackWrong": {
+      "a": "Não há medo: há desejo e confiança nos dois.",
+      "b": "A missão continua; o ponto comum é estar com ele."
+    },
+    "hint": "Compare o destino do partir nos dois textos.",
+    "learningObjective": "Relacionar o desejo de Paulo em duas cartas.",
+    "evidence": [
+      "Filipenses 1:23",
+      "2 Coríntios 5:8"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-01-alegria-01",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Filipenses 1:21 mostra a morte sem ser perda final, porque viver e morrer giram em torno de Cristo.",
+    "prompt": "Filipenses 1:21 mostra a morte sem ser perda final, porque viver e morrer giram em torno de Cristo.",
+    "cue": "Filipenses 1:21 mostra a morte sem ser perda final, porque viver e morrer giram em torno de Cristo.",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "Cristo é o centro dos dois lados: vida e morte.",
+    "feedbackWrong": {
+      "false": "Ele chama morrer de lucro, não de perda final."
+    },
+    "hint": "Veja o que ocupa o centro da frase.",
+    "learningObjective": "Interpretar a morte na perspectiva de Paulo.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-01-alegria-02",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 1:20, toque onde Cristo será engrandecido, segundo Paulo.",
+    "prompt": "Em Filipenses 1:20, toque onde Cristo será engrandecido, segundo Paulo.",
+    "cue": "Em Filipenses 1:20, toque onde Cristo será engrandecido, segundo Paulo.",
+    "verseRef": "Filipenses 1:20",
+    "passageText": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda a ousadia"
+      },
+      {
+        "id": "b",
+        "text": "minha ardente expectativa"
+      },
+      {
+        "id": "c",
+        "text": "meu corpo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "será Cristo engrandecido no meu corpo",
+    "feedbackCorrect": "Vivo ou morto, o corpo dele é o palco de Cristo.",
+    "feedbackWrong": {
+      "a": "Isso é o modo da proclamação, não o lugar dela.",
+      "b": "Isso é o sentimento dele, não onde Cristo aparece."
+    },
+    "hint": "Procure o lugar depois de engrandecido no.",
+    "learningObjective": "Sustentar no texto onde Cristo é engrandecido.",
+    "evidence": [
+      "Filipenses 1:20"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-01-alegria-03",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filipenses 1:20–21 sustenta sobre a vida de Paulo?",
+    "prompt": "Que leitura Filipenses 1:20–21 sustenta sobre a vida de Paulo?",
+    "cue": "Que leitura Filipenses 1:20–21 sustenta sobre a vida de Paulo?",
+    "verseRef": "Filipenses 1:20–21",
+    "passageText": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte. Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo é o centro na vida e também na morte"
+      },
+      {
+        "id": "b",
+        "text": "Sucesso é sair da prisão a qualquer custo"
+      },
+      {
+        "id": "c",
+        "text": "Ficar vivo prova que lhe faltou fé para partir"
+      },
+      {
+        "id": "d",
+        "text": "Morrer seria o fracasso total do evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quer pela vida, quer pela morte",
+    "feedbackCorrect": "Nos dois desfechos, o que importa é Cristo engrandecido.",
+    "feedbackWrong": {
+      "b": "Ele não mede sucesso pela saída: Cristo é a medida.",
+      "c": "Ficar é juízo de amor pela igreja, não falta de fé.",
+      "d": "Ele chama morrer de lucro, não de fracasso."
+    },
+    "hint": "Veja o que é igual na vida e na morte dele.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Filipenses 1:20–21"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-01-alegria-04",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filipenses 1:18–23?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 1:18–23?",
+    "cue": "Qual sequência revela o sentido de Filipenses 1:18–23?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo proclamado alegra o preso Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Cristo engrandecido nele, vivo ou morto"
+      },
+      {
+        "id": "c",
+        "text": "Estar com Cristo é o melhor destino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "Da proclamação ao estar com Cristo: o fio é o mesmo nome.",
+    "feedbackWrong": {
+      "default": "Comece pela alegria com a proclamação na prisão."
+    },
+    "hint": "Estar com Cristo é o ponto de chegada.",
+    "learningObjective": "Ver Cristo como fio de todo o trecho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-01-alegria-05",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 1:21, o que Paulo diz que morrer é para ele?",
+    "prompt": "Em Filipenses 1:21, o que Paulo diz que morrer é para ele?",
+    "cue": "Em Filipenses 1:21, o que Paulo diz que morrer é para ele?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "template": "Porque, para mim, viver é Cristo, e morrer é ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lucro"
+      },
+      {
+        "id": "b",
+        "text": "perda"
+      },
+      {
+        "id": "c",
+        "text": "castigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "morrer é lucro",
+    "feedbackCorrect": "Estar com Cristo faz da morte ganho, não perda.",
+    "feedbackWrong": {
+      "b": "Perda é o contrário do que ele declara aqui.",
+      "c": "Castigo não aparece: ele fala de estar com Cristo."
+    },
+    "hint": "É uma palavra do mundo dos ganhos.",
+    "learningObjective": "Lembrar o termo que carrega a esperança de Paulo.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-01-alegria-06",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 1:20 a Gálatas 2:20?",
+    "prompt": "O que liga Filipenses 1:20 a Gálatas 2:20?",
+    "cue": "O que liga Filipenses 1:20 a Gálatas 2:20?",
+    "verseRef": "Filipenses 1:20",
+    "passageText": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte.",
+    "passageA": {
+      "ref": "Filipenses 1:20",
+      "text": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte."
+    },
+    "passageB": {
+      "ref": "Gálatas 2:20",
+      "text": "Estou crucificado com Cristo; e não sou eu quem vive, mas Cristo vive em mim; e a vida que agora tenho na carne, vivo-a pela fé no Filho de Deus, que me amou e se entregou a si mesmo por mim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida sem Cristo no centro"
+      },
+      {
+        "id": "b",
+        "text": "Cristo vive em mim"
+      },
+      {
+        "id": "c",
+        "text": "Lei como centro da vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "será Cristo engrandecido no meu corpo",
+    "feedbackCorrect": "Em Gálatas, Paulo diz o mesmo: já não vivo eu, vive Cristo.",
+    "feedbackWrong": {
+      "a": "Os dois textos põem Cristo bem no centro da vida.",
+      "c": "A lei não é o centro declarado nesses versículos."
+    },
+    "hint": "Veja quem vive, segundo os dois textos.",
+    "learningObjective": "Ligar viver é Cristo à fé de Gálatas.",
+    "evidence": [
+      "Filipenses 1:20",
+      "Gálatas 2:20"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-02-humildade-01",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 2:3, Paulo mandou cada um se considerar superior a todos os outros.",
+    "prompt": "Em Filipenses 2:3, Paulo mandou cada um se considerar superior a todos os outros.",
+    "cue": "Em Filipenses 2:3, Paulo mandou cada um se considerar superior a todos os outros.",
+    "verseRef": "Filipenses 2:3",
+    "passageText": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cada um considere os outros superiores a si mesmo",
+    "feedbackCorrect": "É o contrário: considerar os outros superiores a si mesmo.",
+    "feedbackWrong": {
+      "true": "Releia Filipenses 2:3: a humildade olha para o outro."
+    },
+    "hint": "Veja a direção do considerar no versículo.",
+    "learningObjective": "Observar a ordem de Paulo sobre humildade.",
+    "evidence": [
+      "Filipenses 2:3"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-02-humildade-02",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 2:8, toque até onde foi a obediência de Cristo.",
+    "prompt": "Em Filipenses 2:8, toque até onde foi a obediência de Cristo.",
+    "cue": "Em Filipenses 2:8, toque até onde foi a obediência de Cristo.",
+    "verseRef": "Filipenses 2:8",
+    "passageText": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "homem"
+      },
+      {
+        "id": "b",
+        "text": "morte"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "obediente até à morte",
+    "feedbackCorrect": "A obediência dele não parou antes do fim mais duro.",
+    "feedbackWrong": {
+      "a": "Homem é a forma que ele assumiu, não o limite da obediência.",
+      "c": "Isso especifica o tipo de morte, depois do limite dito."
+    },
+    "hint": "Procure a palavra logo depois de até à.",
+    "learningObjective": "Identificar o limite da obediência de Cristo.",
+    "evidence": [
+      "Filipenses 2:8"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-02-humildade-03",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 2:8, como Cristo se humilhou?",
+    "prompt": "Segundo Filipenses 2:8, como Cristo se humilhou?",
+    "cue": "Segundo Filipenses 2:8, como Cristo se humilhou?",
+    "verseRef": "Filipenses 2:8",
+    "passageText": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recusando qualquer tipo de sofrimento"
+      },
+      {
+        "id": "b",
+        "text": "Fugindo das pessoas que o rejeitaram"
+      },
+      {
+        "id": "c",
+        "text": "Escondendo quem ele era até à velhice"
+      },
+      {
+        "id": "d",
+        "text": "Tornando-se obediente até à morte de cruz"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "humilhou-se a si mesmo, tornando-se obediente até à morte",
+    "feedbackCorrect": "A descida dele vai até a obediência na cruz.",
+    "feedbackWrong": {
+      "a": "Ele assumiu o sofrimento, não o recusou.",
+      "b": "Ele não fugiu: ele se entregou em obediência.",
+      "c": "A cruz expôs, não escondeu, a missão dele."
+    },
+    "hint": "Veja o fim da trajetória de descida.",
+    "learningObjective": "Observar a humilhação de Cristo em 2:8.",
+    "evidence": [
+      "Filipenses 2:8"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-02-humildade-04",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 2:7 na ordem do texto.",
+    "prompt": "Monte Filipenses 2:7 na ordem do texto.",
+    "cue": "Monte Filipenses 2:7 na ordem do texto.",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "a si mesmo se esvaziou"
+      },
+      {
+        "id": "b",
+        "text": "assumindo a forma de servo"
+      },
+      {
+        "id": "c",
+        "text": "tornando-se em semelhança de homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a si mesmo se esvaziou",
+    "feedbackCorrect": "Ele se esvazia, vira servo e se faz como os homens.",
+    "feedbackWrong": {
+      "default": "Comece pelo esvaziamento dele mesmo."
+    },
+    "hint": "A ordem começa com ele se esvaziando.",
+    "learningObjective": "Reconhecer a sequência da descida de Cristo.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-02-humildade-05",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 2:7, que forma Cristo assumiu ao se esvaziar?",
+    "prompt": "Em Filipenses 2:7, que forma Cristo assumiu ao se esvaziar?",
+    "cue": "Em Filipenses 2:7, que forma Cristo assumiu ao se esvaziar?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "template": "mas a si mesmo se esvaziou assumindo a forma de ___, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "juiz"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "servo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assumindo a forma de servo",
+    "feedbackCorrect": "Quem era Deus assume o lugar de quem serve.",
+    "feedbackWrong": {
+      "a": "O juízo não é a forma que ele assume ao descer.",
+      "b": "Ele será reconhecido Rei, mas aqui assume outro lugar."
+    },
+    "hint": "É o lugar de quem serve aos outros.",
+    "learningObjective": "Lembrar a forma assumida por Cristo.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-02-humildade-06",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 2:5 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:5 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:5 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 2:5",
+    "passageText": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 2:5",
+      "text": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo pede que a igreja abandone rivalidade e vaidade e cuide uns dos outros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Distância segura dos outros"
+      },
+      {
+        "id": "b",
+        "text": "Mesma mente de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Orgulho que vence debates"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o mesmo sentimento que existia em Cristo Jesus",
+    "feedbackCorrect": "O remédio da rivalidade é ter o sentimento de Cristo.",
+    "feedbackWrong": {
+      "a": "Cristo se aproximou e serviu; não se distanciou.",
+      "c": "Rivalidade e vaidade são o problema, não o remédio."
+    },
+    "hint": "Veja de quem é o sentimento pedido.",
+    "learningObjective": "Ligar a vida da igreja ao sentimento de Cristo.",
+    "evidence": [
+      "Filipenses 2:5"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-02-humildade-01",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 2:9, Deus exaltou Cristo porque ele se humilhou até à morte de cruz.",
+    "prompt": "Em Filipenses 2:9, Deus exaltou Cristo porque ele se humilhou até à morte de cruz.",
+    "cue": "Em Filipenses 2:9, Deus exaltou Cristo porque ele se humilhou até à morte de cruz.",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+    "feedbackCorrect": "O por isso liga a exaltação à humilhação obediente dele.",
+    "feedbackWrong": {
+      "false": "O versículo começa ligando exaltação à descida dele."
+    },
+    "hint": "Veja as duas primeiras palavras do versículo.",
+    "learningObjective": "Compreender a ligação entre humilhação e exaltação.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-02-humildade-02",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:3, toque a palavrinha que vira a ordem da rivalidade para a humildade.",
+    "prompt": "Em Filipenses 2:3, toque a palavrinha que vira a ordem da rivalidade para a humildade.",
+    "cue": "Em Filipenses 2:3, toque a palavrinha que vira a ordem da rivalidade para a humildade.",
+    "verseRef": "Filipenses 2:3",
+    "passageText": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "Nada"
+      },
+      {
+        "id": "c",
+        "text": "vaidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas, com humildade",
+    "feedbackCorrect": "Nada por rivalidade; com humildade, diz a virada.",
+    "feedbackWrong": {
+      "b": "Isso abre a proibição, não faz a virada dela.",
+      "c": "Isso é um dos males proibidos, não a virada."
+    },
+    "hint": "Procure a conjunção curta antes de humildade.",
+    "learningObjective": "Reconhecer o marcador de contraste em 2:3.",
+    "evidence": [
+      "Filipenses 2:3"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-02-humildade-03",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o caminho de Cristo em Filipenses 2:6–8 responde à rivalidade de 2:3?",
+    "prompt": "Como o caminho de Cristo em Filipenses 2:6–8 responde à rivalidade de 2:3?",
+    "cue": "Como o caminho de Cristo em Filipenses 2:6–8 responde à rivalidade de 2:3?",
+    "verseRef": "Filipenses 2:7–8",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em vez de se apegar ao seu direito, ele se fez servo"
+      },
+      {
+        "id": "b",
+        "text": "Ele venceu os rivais mostrando ser superior a todos"
+      },
+      {
+        "id": "c",
+        "text": "Ele exigiu que todos o servissem primeiro na terra"
+      },
+      {
+        "id": "d",
+        "text": "Ele abandonou as pessoas para viver sozinho no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+    "feedbackCorrect": "O oposto da rivalidade: abrir mão e servir até à cruz.",
+    "feedbackWrong": {
+      "b": "Ele não disputa superioridade: ele desce a servo.",
+      "c": "Quem serve aqui é ele, não quem o cerca.",
+      "d": "Ele se fez como os homens, não se afastou deles."
+    },
+    "hint": "Compare apegar-se a direitos com esvaziar-se.",
+    "learningObjective": "Relacionar o exemplo de Cristo à vida da igreja.",
+    "evidence": [
+      "Filipenses 2:7–8"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-02-humildade-04",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a descida de Cristo em Filipenses 2:6–8?",
+    "prompt": "Como se encadeia a descida de Cristo em Filipenses 2:6–8?",
+    "cue": "Como se encadeia a descida de Cristo em Filipenses 2:6–8?",
+    "verseRef": "Filipenses 2:6",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele não se apega ao ser igual a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ele se esvazia e assume forma de servo"
+      },
+      {
+        "id": "c",
+        "text": "Ele obedece até à morte de cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "existia na forma de Deus",
+    "feedbackCorrect": "Não se apegar, esvaziar-se e obedecer até à cruz.",
+    "feedbackWrong": {
+      "default": "Comece pelo que ele não fez questão de segurar."
+    },
+    "hint": "A cruz é o ponto mais baixo da descida.",
+    "learningObjective": "Compreender as etapas da descida de Cristo.",
+    "evidence": [
+      "Filipenses 2:6"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-02-humildade-05",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 2:5, o que a igreja deve ter em si, como houve em Cristo?",
+    "prompt": "Em Filipenses 2:5, o que a igreja deve ter em si, como houve em Cristo?",
+    "cue": "Em Filipenses 2:5, o que a igreja deve ter em si, como houve em Cristo?",
+    "verseRef": "Filipenses 2:5",
+    "passageText": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus.",
+    "template": "Tenham em vocês o mesmo ___ que existia em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "debate"
+      },
+      {
+        "id": "b",
+        "text": "medo"
+      },
+      {
+        "id": "c",
+        "text": "sentimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tenham em vocês o mesmo sentimento",
+    "feedbackCorrect": "Não é só admirar: é ter o mesmo modo de sentir.",
+    "feedbackWrong": {
+      "a": "Debate por rivalidade é justamente o problema.",
+      "b": "Medo não é o que Paulo manda copiar de Cristo."
+    },
+    "hint": "É o modo interior de Cristo diante dos outros.",
+    "learningObjective": "Compreender o que a igreja deve imitar em Cristo.",
+    "evidence": [
+      "Filipenses 2:5"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-02-humildade-06",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 2:7 a Marcos 10:45?",
+    "prompt": "O que liga Filipenses 2:7 a Marcos 10:45?",
+    "cue": "O que liga Filipenses 2:7 a Marcos 10:45?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "passageA": {
+      "ref": "Filipenses 2:7",
+      "text": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+    },
+    "passageB": {
+      "ref": "Marcos 10:45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Servo que foge do sofrimento"
+      },
+      {
+        "id": "b",
+        "text": "Grandeza por dominar os outros"
+      },
+      {
+        "id": "c",
+        "text": "Filho do Homem veio servir"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assumindo a forma de servo",
+    "feedbackCorrect": "Jesus mesmo disse: ele veio não para ser servido, mas servir.",
+    "feedbackWrong": {
+      "a": "Ele serve até dar a vida; não foge de nada.",
+      "b": "Os dois textos invertem a grandeza pelo domínio."
+    },
+    "hint": "Veja para que o Filho do Homem veio.",
+    "learningObjective": "Relacionar a forma de servo às palavras de Jesus.",
+    "evidence": [
+      "Filipenses 2:7",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-02-humildade-01",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Filipenses 2:6–7 ensina que Jesus deixou de ser Deus ao assumir a forma de servo.",
+    "prompt": "Filipenses 2:6–7 ensina que Jesus deixou de ser Deus ao assumir a forma de servo.",
+    "cue": "Filipenses 2:6–7 ensina que Jesus deixou de ser Deus ao assumir a forma de servo.",
+    "verseRef": "Filipenses 2:6–7",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar. mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "existia na forma de Deus",
+    "feedbackCorrect": "Ele existia na forma de Deus e assume a de servo: soma, não troca.",
+    "feedbackWrong": {
+      "true": "O hino mantém as duas formas sobre o mesmo Cristo."
+    },
+    "hint": "Veja o que ele já era antes de descer.",
+    "learningObjective": "Interpretar a descida sem apagar quem Cristo é.",
+    "evidence": [
+      "Filipenses 2:6–7"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-02-humildade-02",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:6, toque o que Cristo já existia sendo, antes de se esvaziar.",
+    "prompt": "Em Filipenses 2:6, toque o que Cristo já existia sendo, antes de se esvaziar.",
+    "cue": "Em Filipenses 2:6, toque o que Cristo já existia sendo, antes de se esvaziar.",
+    "verseRef": "Filipenses 2:6",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "forma de Deus"
+      },
+      {
+        "id": "b",
+        "text": "igual a Deus"
+      },
+      {
+        "id": "c",
+        "text": "se apropriar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "existia na forma de Deus",
+    "feedbackCorrect": "A descida parte do alto: ele já existia como Deus.",
+    "feedbackWrong": {
+      "b": "Isso fala da igualdade que ele não usou para si.",
+      "c": "Isso é o que ele não considerou fazer, não o que era."
+    },
+    "hint": "Procure a primeira descrição dele no versículo.",
+    "learningObjective": "Sustentar no texto quem Cristo era antes da descida.",
+    "evidence": [
+      "Filipenses 2:6"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-02-humildade-03",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filipenses 2:6–9 sustenta sobre humildade e exaltação?",
+    "prompt": "Que leitura Filipenses 2:6–9 sustenta sobre humildade e exaltação?",
+    "cue": "Que leitura Filipenses 2:6–9 sustenta sobre humildade e exaltação?",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem se humilha a servo é exaltado por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cristo é só um exemplo moral, sem ser Deus"
+      },
+      {
+        "id": "c",
+        "text": "Exaltação é prêmio de sorte para alguns poucos"
+      },
+      {
+        "id": "d",
+        "text": "Humildade é pensar que você não vale nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+    "feedbackCorrect": "A descida a servo termina em exaltação dada pelo Pai.",
+    "feedbackWrong": {
+      "b": "O hino começa afirmando que ele existia como Deus.",
+      "c": "A exaltação responde à obediência, não à sorte.",
+      "d": "Humildade aqui é servir o outro, não se odiar."
+    },
+    "hint": "Ligue o por isso à descida anterior.",
+    "learningObjective": "Escolher a interpretação que o hino sustenta.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-02-humildade-04",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filipenses 2:6–11?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 2:6–11?",
+    "cue": "Qual sequência revela o sentido de Filipenses 2:6–11?",
+    "verseRef": "Filipenses 2:11",
+    "passageText": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Filho existe na forma de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Ele desce a servo obediente até à cruz"
+      },
+      {
+        "id": "c",
+        "text": "Toda língua o confessa como Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+    "feedbackCorrect": "De Deus a servo, de servo a Senhor confessado por todos.",
+    "feedbackWrong": {
+      "default": "Comece por quem ele era antes de descer."
+    },
+    "hint": "A confissão universal fecha o hino.",
+    "learningObjective": "Ver o arco completo do hino de Cristo.",
+    "evidence": [
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-02-humildade-05",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:9, o que Deus concedeu a Cristo acima de todos os outros?",
+    "prompt": "Em Filipenses 2:9, o que Deus concedeu a Cristo acima de todos os outros?",
+    "cue": "Em Filipenses 2:9, o que Deus concedeu a Cristo acima de todos os outros?",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "template": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o ___ que está acima de todo nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lhe concedeu o nome que está acima de todo nome",
+    "feedbackCorrect": "Ao nome dele todo joelho se dobrará, diz o hino.",
+    "feedbackWrong": {
+      "a": "Trono não é a palavra do hino nesta frase.",
+      "b": "Nenhum templo é concedido nesta exaltação."
+    },
+    "hint": "É diante dele que todo joelho se dobra.",
+    "learningObjective": "Lembrar o centro da exaltação de Cristo.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-02-humildade-06",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 2:7 a João 1:14?",
+    "prompt": "O que liga Filipenses 2:7 a João 1:14?",
+    "cue": "O que liga Filipenses 2:7 a João 1:14?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "passageA": {
+      "ref": "Filipenses 2:7",
+      "text": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+    },
+    "passageB": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Carne como prisão do espírito"
+      },
+      {
+        "id": "b",
+        "text": "Deus desiste de ser Deus"
+      },
+      {
+        "id": "c",
+        "text": "O Verbo se fez carne"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tornando-se em semelhança de homens",
+    "feedbackCorrect": "João diz o mesmo mistério: o Verbo divino se fez carne.",
+    "feedbackWrong": {
+      "a": "A carne é assumida por amor, não uma prisão.",
+      "b": "Ele continua Deus ao se fazer carne, nos dois textos."
+    },
+    "hint": "Veja o que o Verbo se tornou em João.",
+    "learningObjective": "Ligar a descida de Cristo à encarnação em João.",
+    "evidence": [
+      "Filipenses 2:7",
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-03-contentamento-01",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 4:11, Paulo diz que aprendeu a viver contente em toda situação.",
+    "prompt": "Em Filipenses 4:11, Paulo diz que aprendeu a viver contente em toda situação.",
+    "cue": "Em Filipenses 4:11, Paulo diz que aprendeu a viver contente em toda situação.",
+    "verseRef": "Filipenses 4:11",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "aprendi a viver contente em toda e qualquer situação",
+    "feedbackCorrect": "Aprendido, não automático: contente em toda situação.",
+    "feedbackWrong": {
+      "false": "Releia Filipenses 4:11: é exatamente o que ele declara."
+    },
+    "hint": "Veja o verbo aprender no versículo.",
+    "learningObjective": "Observar o contentamento aprendido de Paulo.",
+    "evidence": [
+      "Filipenses 4:11"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-03-contentamento-02",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 4:12, toque como Paulo sabe estar quando passa por rebaixamento.",
+    "prompt": "Em Filipenses 4:12, toque como Paulo sabe estar quando passa por rebaixamento.",
+    "cue": "Em Filipenses 4:12, toque como Paulo sabe estar quando passa por rebaixamento.",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "honrado"
+      },
+      {
+        "id": "b",
+        "text": "fartura"
+      },
+      {
+        "id": "c",
+        "text": "humilhado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Sei o que é estar humilhado",
+    "feedbackCorrect": "Ele conhece os dois extremos: rebaixado e honrado.",
+    "feedbackWrong": {
+      "a": "Isso é o extremo oposto ao que a pergunta pede.",
+      "b": "Isso é abundância de comida, não rebaixamento."
+    },
+    "hint": "Procure o primeiro extremo citado no versículo.",
+    "learningObjective": "Identificar os extremos que Paulo viveu.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-03-contentamento-03",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 4:12, o que Paulo já experimentou na vida?",
+    "prompt": "Segundo Filipenses 4:12, o que Paulo já experimentou na vida?",
+    "cue": "Segundo Filipenses 4:12, o que Paulo já experimentou na vida?",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Riqueza herdada desde o nascimento dele"
+      },
+      {
+        "id": "b",
+        "text": "Só escassez, sem nunca ser honrado"
+      },
+      {
+        "id": "c",
+        "text": "Fartura e fome, abundância e escassez"
+      },
+      {
+        "id": "d",
+        "text": "Só fartura, sem nunca passar necessidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tanto de fartura quanto de fome, assim como de abundância e de escassez",
+    "feedbackCorrect": "Os dois lados da vida entraram na experiência dele.",
+    "feedbackWrong": {
+      "a": "Herança não é citada: ele fala de experiência.",
+      "b": "Ele cita ser honrado e abundância também.",
+      "d": "Ele cita também fome e escassez, não só fartura."
+    },
+    "hint": "Preste atenção nos pares de opostos.",
+    "learningObjective": "Observar os opostos vividos por Paulo.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-03-contentamento-04",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 4:12 na ordem do texto.",
+    "prompt": "Monte Filipenses 4:12 na ordem do texto.",
+    "cue": "Monte Filipenses 4:12 na ordem do texto.",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sei o que é estar humilhado"
+      },
+      {
+        "id": "b",
+        "text": "também o que é ser honrado"
+      },
+      {
+        "id": "c",
+        "text": "tanto de fartura quanto de fome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Sei o que é estar humilhado",
+    "feedbackCorrect": "Humilhado, honrado e os extremos de fartura e fome.",
+    "feedbackWrong": {
+      "default": "Comece pelo primeiro sei o que é do versículo."
+    },
+    "hint": "A lista começa com estar humilhado.",
+    "learningObjective": "Reconhecer a ordem dos extremos citados.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-03-contentamento-05",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 4:11, como Paulo aprendeu a viver em qualquer situação?",
+    "prompt": "Em Filipenses 4:11, como Paulo aprendeu a viver em qualquer situação?",
+    "cue": "Em Filipenses 4:11, como Paulo aprendeu a viver em qualquer situação?",
+    "verseRef": "Filipenses 4:11",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "template": "Não digo isso por necessidade, pois aprendi a viver ___ em toda e qualquer situação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "calado"
+      },
+      {
+        "id": "b",
+        "text": "contente"
+      },
+      {
+        "id": "c",
+        "text": "ansioso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "aprendi a viver contente",
+    "feedbackCorrect": "Nem fartura nem falta tiram esse estado dele.",
+    "feedbackWrong": {
+      "a": "Ele fala e escreve sobre isso; não se calou.",
+      "c": "Ansiedade é o contrário do aprendizado dele."
+    },
+    "hint": "É o nome desta cena inteira.",
+    "learningObjective": "Lembrar a palavra central do contentamento.",
+    "evidence": [
+      "Filipenses 4:11"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-03-contentamento-06",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 4:11 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:11 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:11 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 4:11",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "passageA": {
+      "ref": "Filipenses 4:11",
+      "text": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Preso e dependente, Paulo recebe de novo a ajuda dos filipenses para suas necessidades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vergonha de precisar de outros"
+      },
+      {
+        "id": "b",
+        "text": "Desespero por causa da ajuda"
+      },
+      {
+        "id": "c",
+        "text": "Contentamento em toda situação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aprendi a viver contente em toda e qualquer situação",
+    "feedbackCorrect": "A ajuda alegra, mas o contentamento dele não depende dela.",
+    "feedbackWrong": {
+      "a": "Ele agradece abertamente, sem vergonha de receber.",
+      "b": "Ele se alegra com a ajuda, sem desespero algum."
+    },
+    "hint": "Veja o que ele diz que aprendeu.",
+    "learningObjective": "Ligar Filipenses 4:11 ao contentamento aprendido.",
+    "evidence": [
+      "Filipenses 4:11"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-03-contentamento-01",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 4:13–14, Paulo agradece à igreja por se associar à tribulação dele, mesmo dizendo que tudo pode em Cristo.",
+    "prompt": "Em Filipenses 4:13–14, Paulo agradece à igreja por se associar à tribulação dele, mesmo dizendo que tudo pode em Cristo.",
+    "cue": "Em Filipenses 4:13–14, Paulo agradece à igreja por se associar à tribulação dele, mesmo dizendo que tudo pode em Cristo.",
+    "verseRef": "Filipenses 4:13–14",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força. Todavia, vocês fizeram bem em se associar à minha tribulação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "vocês fizeram bem em se associar à minha tribulação",
+    "feedbackCorrect": "Força em Cristo e gratidão pela ajuda andam juntas nele.",
+    "feedbackWrong": {
+      "false": "Ele afirma as duas coisas, uma em cada versículo."
+    },
+    "hint": "Leia os dois versículos como uma fala só.",
+    "learningObjective": "Compreender força em Cristo junto com receber ajuda.",
+    "evidence": [
+      "Filipenses 4:13–14"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-03-contentamento-02",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 4:12, toque a palavrinha que liga fartura e fome na mesma experiência.",
+    "prompt": "Em Filipenses 4:12, toque a palavrinha que liga fartura e fome na mesma experiência.",
+    "cue": "Em Filipenses 4:12, toque a palavrinha que liga fartura e fome na mesma experiência.",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tanto"
+      },
+      {
+        "id": "b",
+        "text": "tudo"
+      },
+      {
+        "id": "c",
+        "text": "fome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tanto de fartura quanto de fome",
+    "feedbackCorrect": "A mesma vida comportou os dois extremos citados.",
+    "feedbackWrong": {
+      "b": "Isso resume as circunstâncias, sem ligar os extremos.",
+      "c": "Isso é um dos extremos, não a palavra que os liga."
+    },
+    "hint": "Procure a palavra que trabalha em par com quanto.",
+    "learningObjective": "Reconhecer a ligação entre os extremos vividos.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-03-contentamento-03",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Filipenses 4:11 ajuda a entender o posso todas as coisas de 4:13?",
+    "prompt": "Como Filipenses 4:11 ajuda a entender o posso todas as coisas de 4:13?",
+    "cue": "Como Filipenses 4:11 ajuda a entender o posso todas as coisas de 4:13?",
+    "verseRef": "Filipenses 4:11–12",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação. Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É promessa de nunca mais passar necessidade"
+      },
+      {
+        "id": "b",
+        "text": "É poder para conseguir qualquer objeto desejado"
+      },
+      {
+        "id": "c",
+        "text": "É força para viver contente na fartura e na falta"
+      },
+      {
+        "id": "d",
+        "text": "É capacidade de viver sem ajuda de ninguém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aprendi a viver contente em toda e qualquer situação",
+    "feedbackCorrect": "O contexto manda: todas as coisas são fartura e escassez.",
+    "feedbackWrong": {
+      "a": "Ele acabou de citar fome e escassez vividas.",
+      "b": "Desejos de consumo não aparecem no trecho.",
+      "d": "Ele recebe ajuda com gratidão, não com orgulho."
+    },
+    "hint": "Olhe os versículos que cercam a frase famosa.",
+    "learningObjective": "Relacionar Filipenses 4:13 ao seu contexto imediato.",
+    "evidence": [
+      "Filipenses 4:11–12"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-03-contentamento-04",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia o raciocínio de Paulo em Filipenses 4:11–13?",
+    "prompt": "Como se encadeia o raciocínio de Paulo em Filipenses 4:11–13?",
+    "cue": "Como se encadeia o raciocínio de Paulo em Filipenses 4:11–13?",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele aprende contentamento em qualquer situação"
+      },
+      {
+        "id": "b",
+        "text": "Ele atravessa fartura, fome e escassez"
+      },
+      {
+        "id": "c",
+        "text": "Ele tudo pode naquele que lhe dá força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Posso todas as coisas por meio daquele que me dá força",
+    "feedbackCorrect": "Aprendizado, extremos vividos e a fonte da força.",
+    "feedbackWrong": {
+      "default": "Comece pelo que ele aprendeu."
+    },
+    "hint": "A fonte da força fecha o raciocínio.",
+    "learningObjective": "Compreender o encadeamento até Filipenses 4:13.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-03-contentamento-05",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 4:10, o que os filipenses finalmente fizeram por Paulo, segundo ele?",
+    "prompt": "Em Filipenses 4:10, o que os filipenses finalmente fizeram por Paulo, segundo ele?",
+    "cue": "Em Filipenses 4:10, o que os filipenses finalmente fizeram por Paulo, segundo ele?",
+    "verseRef": "Filipenses 4:10",
+    "passageText": "Alegrei-me sobremaneira no Senhor porque, finalmente, vocês se lembraram de mim; pois haviam-se lembrado antes, mas não tiveram a oportunidade.",
+    "template": "Alegrei-me sobremaneira no Senhor porque, finalmente, vocês se ___ de mim; pois haviam-se lembrado antes, mas não tiveram a oportunidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esqueceram"
+      },
+      {
+        "id": "b",
+        "text": "lembraram"
+      },
+      {
+        "id": "c",
+        "text": "julgaram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "vocês se lembraram de mim",
+    "feedbackCorrect": "A ajuda voltou porque eles se lembraram dele de novo.",
+    "feedbackWrong": {
+      "a": "Eles já lembravam antes; faltava oportunidade.",
+      "c": "Nenhum julgamento aparece nesta carta de gratidão."
+    },
+    "hint": "É o motivo da alegria dele no versículo.",
+    "learningObjective": "Compreender a retomada da ajuda dos filipenses.",
+    "evidence": [
+      "Filipenses 4:10"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-03-contentamento-06",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 4:11 a 1 Timóteo 6:8?",
+    "prompt": "O que liga Filipenses 4:11 a 1 Timóteo 6:8?",
+    "cue": "O que liga Filipenses 4:11 a 1 Timóteo 6:8?",
+    "verseRef": "Filipenses 4:11",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "passageA": {
+      "ref": "Filipenses 4:11",
+      "text": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+    },
+    "passageB": {
+      "ref": "1 Timóteo 6:8",
+      "text": "Se temos sustento e vestuário, com isso devemos estar satisfeitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Busca sem fim por mais bens"
+      },
+      {
+        "id": "b",
+        "text": "Vergonha de ter pouco na vida"
+      },
+      {
+        "id": "c",
+        "text": "Contentamento com o suficiente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aprendi a viver contente",
+    "feedbackCorrect": "Comida e roupa bastam: contentamento com o suficiente.",
+    "feedbackWrong": {
+      "a": "Os dois textos ensinam frear a busca por mais.",
+      "b": "Ter pouco não é vergonha em nenhum dos textos."
+    },
+    "hint": "Veja o que basta nos dois textos.",
+    "learningObjective": "Relacionar o contentamento em duas cartas de Paulo.",
+    "evidence": [
+      "Filipenses 4:11",
+      "1 Timóteo 6:8"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-03-contentamento-01",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Filipenses 4:13 promete que o crente consegue realizar qualquer desejo que tiver, sem limites.",
+    "prompt": "Filipenses 4:13 promete que o crente consegue realizar qualquer desejo que tiver, sem limites.",
+    "cue": "Filipenses 4:13 promete que o crente consegue realizar qualquer desejo que tiver, sem limites.",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Posso todas as coisas por meio daquele que me dá força",
+    "feedbackCorrect": "No contexto, todas as coisas é viver na fartura e na falta.",
+    "feedbackWrong": {
+      "true": "Leia 4:11–12 antes: a força é para contentamento, não desejos."
+    },
+    "hint": "Confira o contexto imediato da frase.",
+    "learningObjective": "Interpretar Filipenses 4:13 dentro do seu contexto.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-03-contentamento-02",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:13, toque o trecho que mostra que a força de Paulo não vem dele mesmo.",
+    "prompt": "Em Filipenses 4:13, toque o trecho que mostra que a força de Paulo não vem dele mesmo.",
+    "cue": "Em Filipenses 4:13, toque o trecho que mostra que a força de Paulo não vem dele mesmo.",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posso todas"
+      },
+      {
+        "id": "b",
+        "text": "me dá força"
+      },
+      {
+        "id": "c",
+        "text": "todas as coisas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio daquele que me dá força",
+    "feedbackCorrect": "A força é recebida de outro: daquele que o fortalece.",
+    "feedbackWrong": {
+      "a": "Isso é a capacidade, não a fonte dela.",
+      "c": "Isso é o alcance, não de onde vem a força."
+    },
+    "hint": "Procure quem dá, no fim do versículo.",
+    "learningObjective": "Sustentar no texto a fonte da força de Paulo.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-03-contentamento-03",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filipenses 4:11–12 sustenta sobre contentamento?",
+    "prompt": "Que leitura Filipenses 4:11–12 sustenta sobre contentamento?",
+    "cue": "Que leitura Filipenses 4:11–12 sustenta sobre contentamento?",
+    "verseRef": "Filipenses 4:11–12",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação. Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contentamento torna qualquer ajuda desnecessária"
+      },
+      {
+        "id": "b",
+        "text": "Quem tem fé nunca passa por escassez real"
+      },
+      {
+        "id": "c",
+        "text": "É possível estar inteiro na fartura e na falta, nele"
+      },
+      {
+        "id": "d",
+        "text": "Contentamento é não sentir nada diante da perda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aprendi a viver contente em toda e qualquer situação",
+    "feedbackCorrect": "Aprendido em Cristo, ele atravessa os dois extremos.",
+    "feedbackWrong": {
+      "a": "Ele recebe ajuda agradecido: as coisas convivem.",
+      "b": "Ele cita fome e escassez como experiência real dele.",
+      "d": "Ele sente e aprende; não é ausência de sentimento."
+    },
+    "hint": "Junte aprendizado, extremos e fonte da força.",
+    "learningObjective": "Escolher a interpretação que o trecho sustenta.",
+    "evidence": [
+      "Filipenses 4:11–12"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-03-contentamento-04",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filipenses 4:10–13?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 4:10–13?",
+    "cue": "Qual sequência revela o sentido de Filipenses 4:10–13?",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja lembra dele e volta a ajudar"
+      },
+      {
+        "id": "b",
+        "text": "Ele declara contentamento que não depende disso"
+      },
+      {
+        "id": "c",
+        "text": "Ele aponta Cristo como a fonte da força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tanto de fartura quanto de fome",
+    "feedbackCorrect": "Ajuda recebida, contentamento independente e força nele.",
+    "feedbackWrong": {
+      "default": "Comece pela ajuda que voltou a chegar."
+    },
+    "hint": "A fonte da força é o fecho do trecho.",
+    "learningObjective": "Ver ajuda, contentamento e Cristo na ordem certa.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-03-contentamento-05",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:12, qual extremo de falta Paulo diz já conhecer por experiência?",
+    "prompt": "Em Filipenses 4:12, qual extremo de falta Paulo diz já conhecer por experiência?",
+    "cue": "Em Filipenses 4:12, qual extremo de falta Paulo diz já conhecer por experiência?",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "template": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escassez"
+      },
+      {
+        "id": "b",
+        "text": "honra"
+      },
+      {
+        "id": "c",
+        "text": "abundância"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim como de abundância e de escassez",
+    "feedbackCorrect": "O contentamento dele foi provado justamente na falta.",
+    "feedbackWrong": {
+      "b": "Isso é reconhecimento, não falta material.",
+      "c": "Isso é o extremo de sobra, não o de falta."
+    },
+    "hint": "É o oposto de abundância no fim da lista.",
+    "learningObjective": "Lembrar onde o contentamento foi provado.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-03-contentamento-06",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 4:13 a 2 Coríntios 12:9?",
+    "prompt": "O que liga Filipenses 4:13 a 2 Coríntios 12:9?",
+    "cue": "O que liga Filipenses 4:13 a 2 Coríntios 12:9?",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "passageA": {
+      "ref": "Filipenses 4:13",
+      "text": "Posso todas as coisas por meio daquele que me dá força."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 12:9",
+      "text": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força de Deus na fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "Força própria sem depender"
+      },
+      {
+        "id": "c",
+        "text": "Fraqueza como castigo final"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por meio daquele que me dá força",
+    "feedbackCorrect": "Nos dois, o poder de Deus se mostra justamente na fraqueza.",
+    "feedbackWrong": {
+      "b": "A força é dele em nós, não autossuficiência.",
+      "c": "A fraqueza vira lugar de graça, não de castigo."
+    },
+    "hint": "Veja onde o poder de Deus se aperfeiçoa.",
+    "learningObjective": "Ligar a força de Filipenses ao espinho de Paulo.",
+    "evidence": [
+      "Filipenses 4:13",
+      "2 Coríntios 12:9"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-01",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Neste desafio, Paulo pede em Filipenses 2:3 que cada pessoa se ache superior às outras.",
+    "prompt": "Neste desafio, Paulo pede em Filipenses 2:3 que cada pessoa se ache superior às outras.",
+    "cue": "Neste desafio, Paulo pede em Filipenses 2:3 que cada pessoa se ache superior às outras.",
+    "verseRef": "Filipenses 2:3",
+    "passageText": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cada um considere os outros superiores a si mesmo",
+    "feedbackCorrect": "A ordem é inversa: considerar os outros superiores a si.",
+    "feedbackWrong": {
+      "true": "O texto manda olhar o outro como superior, em humildade."
+    },
+    "hint": "Lembre a direção da humildade na carta.",
+    "learningObjective": "Revisar a ordem de Filipenses 2:3.",
+    "evidence": [
+      "Filipenses 2:3"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-02",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+    "prompt": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+    "cue": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morrer"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "viver é Cristo",
+    "feedbackCorrect": "O resumo da carta começa com esse nome no centro.",
+    "feedbackWrong": {
+      "a": "Isso é o outro lado da frase, não o viver.",
+      "c": "Isso define o morrer dele, não o viver."
+    },
+    "hint": "Procure o nome no meio do versículo.",
+    "learningObjective": "Revisar o centro da vida de Paulo.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-03",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "No resumo de Paulo em Filipenses 1:21, viver e morrer são definidos como o quê?",
+    "prompt": "No resumo de Paulo em Filipenses 1:21, viver e morrer são definidos como o quê?",
+    "cue": "No resumo de Paulo em Filipenses 1:21, viver e morrer são definidos como o quê?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver é prisão, e morrer é fuga"
+      },
+      {
+        "id": "b",
+        "text": "Viver é dúvida, e morrer é nada"
+      },
+      {
+        "id": "c",
+        "text": "Viver é Cristo, e morrer é lucro"
+      },
+      {
+        "id": "d",
+        "text": "Viver é medo, e morrer é derrota"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "É a frase que resume a alegria dele na prisão.",
+    "feedbackWrong": {
+      "a": "Ficar ou partir, o centro dele não é a prisão.",
+      "b": "Ele tem certeza declarada sobre os dois lados.",
+      "d": "Ele chama morrer de lucro, não de derrota."
+    },
+    "hint": "Recupere a frase mais famosa da carta.",
+    "learningObjective": "Revisar a declaração central de Filipenses 1.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-04",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 2:7 na ordem do texto.",
+    "prompt": "Monte Filipenses 2:7 na ordem do texto.",
+    "cue": "Monte Filipenses 2:7 na ordem do texto.",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "a si mesmo se esvaziou"
+      },
+      {
+        "id": "b",
+        "text": "assumindo a forma de servo"
+      },
+      {
+        "id": "c",
+        "text": "tornando-se em semelhança de homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a si mesmo se esvaziou",
+    "feedbackCorrect": "Esvaziar-se, forma de servo e semelhança humana.",
+    "feedbackWrong": {
+      "default": "Comece pelo esvaziamento dele mesmo."
+    },
+    "hint": "Siga a descida passo a passo.",
+    "learningObjective": "Revisar a sequência da descida de Cristo.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-05",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 2:7, Cristo se esvaziou assumindo a forma de quem serve, chamada de quê?",
+    "prompt": "Em Filipenses 2:7, Cristo se esvaziou assumindo a forma de quem serve, chamada de quê?",
+    "cue": "Em Filipenses 2:7, Cristo se esvaziou assumindo a forma de quem serve, chamada de quê?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "template": "mas a si mesmo se esvaziou assumindo a forma de ___, tornando-se em semelhança de homens;",
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "juiz"
+      },
+      {
+        "id": "c",
+        "text": "senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assumindo a forma de servo",
+    "feedbackCorrect": "É a forma que resume a mente de Cristo na carta.",
+    "feedbackWrong": {
+      "b": "O juízo não é a forma que ele assume aqui.",
+      "c": "Senhor ele será confessado depois, na exaltação."
+    },
+    "hint": "É a posição de quem serve os outros.",
+    "learningObjective": "Revisar a forma assumida por Cristo.",
+    "evidence": [
+      "Filipenses 2:7"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-06",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 4:13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:13 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "passageA": {
+      "ref": "Filipenses 4:13",
+      "text": "Posso todas as coisas por meio daquele que me dá força."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Um preso depende de ajuda, atravessa fartura e falta e, ainda assim, continua inteiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força de Cristo em toda situação"
+      },
+      {
+        "id": "b",
+        "text": "Força própria sem ninguém"
+      },
+      {
+        "id": "c",
+        "text": "Sorte que muda com o tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por meio daquele que me dá força",
+    "feedbackCorrect": "A força não é dele: vem daquele que o fortalece.",
+    "feedbackWrong": {
+      "b": "Ele recebe força e ajuda; não é autossuficiente.",
+      "c": "Nada de sorte: há uma fonte pessoal declarada."
+    },
+    "hint": "Veja de quem vem aquilo que ele pode.",
+    "learningObjective": "Revisar a fonte da força de Paulo.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-07",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 2:9, toque o que Deus concedeu a Cristo acima de todos.",
+    "prompt": "Em Filipenses 2:9, toque o que Deus concedeu a Cristo acima de todos.",
+    "cue": "Em Filipenses 2:9, toque o que Deus concedeu a Cristo acima de todos.",
+    "verseRef": "Filipenses 2:9",
+    "passageText": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "sobremaneira"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lhe concedeu o nome que está acima de todo nome",
+    "feedbackCorrect": "Diante desse nome, todo joelho se dobrará.",
+    "feedbackWrong": {
+      "a": "Ele é quem concede, não o que é concedido.",
+      "b": "Isso diz o quanto ele foi exaltado, não o que recebeu."
+    },
+    "hint": "Procure o presente dado na exaltação.",
+    "learningObjective": "Revisar o centro da exaltação de Cristo.",
+    "evidence": [
+      "Filipenses 2:9"
+    ]
+  },
+  {
+    "id": "filipenses-sem-fp-04-desafio-08",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 1:20 na ordem do texto.",
+    "prompt": "Monte Filipenses 1:20 na ordem do texto.",
+    "cue": "Monte Filipenses 1:20 na ordem do texto.",
+    "verseRef": "Filipenses 1:20",
+    "passageText": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em nada serei envergonhado"
+      },
+      {
+        "id": "b",
+        "text": "será Cristo engrandecido no meu corpo"
+      },
+      {
+        "id": "c",
+        "text": "quer pela vida, quer pela morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em nada serei envergonhado",
+    "feedbackCorrect": "Sem vergonha, Cristo engrandecido, vivo ou morto.",
+    "feedbackWrong": {
+      "default": "Comece pela esperança de não ter vergonha."
+    },
+    "hint": "A frase fecha com os dois destinos dele.",
+    "learningObjective": "Revisar a esperança de Paulo na prisão.",
+    "evidence": [
+      "Filipenses 1:20"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-01",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 4:13, Paulo garante que conseguirá realizar qualquer desejo pessoal que tiver.",
+    "prompt": "Em Filipenses 4:13, Paulo garante que conseguirá realizar qualquer desejo pessoal que tiver.",
+    "cue": "Em Filipenses 4:13, Paulo garante que conseguirá realizar qualquer desejo pessoal que tiver.",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Posso todas as coisas por meio daquele que me dá força",
+    "feedbackCorrect": "No contexto, é força para contentamento, não para desejos.",
+    "feedbackWrong": {
+      "true": "Leia 4:11–12: fartura e escassez definem as todas as coisas."
+    },
+    "hint": "Volte dois versículos antes da frase.",
+    "learningObjective": "Revisar Filipenses 4:13 no seu contexto.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-02",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:3, toque a conjunção que vira rivalidade em humildade.",
+    "prompt": "Em Filipenses 2:3, toque a conjunção que vira rivalidade em humildade.",
+    "cue": "Em Filipenses 2:3, toque a conjunção que vira rivalidade em humildade.",
+    "verseRef": "Filipenses 2:3",
+    "passageText": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nada"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "vaidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas, com humildade",
+    "feedbackCorrect": "A virada da frase é a virada da vida em comunidade.",
+    "feedbackWrong": {
+      "a": "Isso abre a proibição, sem fazer a virada.",
+      "c": "Isso é um dos males a abandonar."
+    },
+    "hint": "Procure a palavrinha antes de humildade.",
+    "learningObjective": "Revisar o contraste de Filipenses 2:3.",
+    "evidence": [
+      "Filipenses 2:3"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-03",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o exemplo de Cristo em Filipenses 2:5–8 ataca a rivalidade da igreja?",
+    "prompt": "Como o exemplo de Cristo em Filipenses 2:5–8 ataca a rivalidade da igreja?",
+    "cue": "Como o exemplo de Cristo em Filipenses 2:5–8 ataca a rivalidade da igreja?",
+    "verseRef": "Filipenses 2:7–8",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provando que servir é para os mais fracos"
+      },
+      {
+        "id": "b",
+        "text": "Mandando cada um cuidar só da própria vida"
+      },
+      {
+        "id": "c",
+        "text": "Mostrando que grandeza é descer para servir"
+      },
+      {
+        "id": "d",
+        "text": "Ensinando a vencer debates com mais força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+    "feedbackCorrect": "Contra a disputa por cima, Cristo desce a servo.",
+    "feedbackWrong": {
+      "a": "Quem serve é o maior de todos, o próprio Cristo.",
+      "b": "O texto manda cuidar também do que é dos outros.",
+      "d": "Ele não vence rivalidade rivalizando melhor."
+    },
+    "hint": "Compare disputar o topo com descer a servo.",
+    "learningObjective": "Revisar a aplicação do hino à comunidade.",
+    "evidence": [
+      "Filipenses 2:7–8"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-04",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a descida de Cristo neste desafio?",
+    "prompt": "Como se encadeia a descida de Cristo neste desafio?",
+    "cue": "Como se encadeia a descida de Cristo neste desafio?",
+    "verseRef": "Filipenses 2:6",
+    "passageText": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele abre mão de se apegar ao que é seu"
+      },
+      {
+        "id": "b",
+        "text": "Ele assume o lugar de quem serve a todos"
+      },
+      {
+        "id": "c",
+        "text": "Ele obedece até à morte mais humilhante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "existia na forma de Deus",
+    "feedbackCorrect": "Abrir mão, servir e obedecer até à cruz.",
+    "feedbackWrong": {
+      "default": "Comece pelo que ele não segurou para si."
+    },
+    "hint": "A cruz continua sendo o ponto final.",
+    "learningObjective": "Revisar as etapas da mente de Cristo.",
+    "evidence": [
+      "Filipenses 2:6"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-05",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 4:11, Paulo aprendeu a viver de que modo em qualquer situação?",
+    "prompt": "Em Filipenses 4:11, Paulo aprendeu a viver de que modo em qualquer situação?",
+    "cue": "Em Filipenses 4:11, Paulo aprendeu a viver de que modo em qualquer situação?",
+    "verseRef": "Filipenses 4:11",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "template": "Não digo isso por necessidade, pois aprendi a viver ___ em toda e qualquer situação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "distante"
+      },
+      {
+        "id": "b",
+        "text": "contente"
+      },
+      {
+        "id": "c",
+        "text": "apressado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "aprendi a viver contente",
+    "feedbackCorrect": "É o aprendizado que sustenta o fim da carta.",
+    "feedbackWrong": {
+      "a": "Ele se aproxima da igreja com gratidão, não distância.",
+      "c": "Pressa não é citada neste aprendizado dele."
+    },
+    "hint": "É o título do aprendizado dele.",
+    "learningObjective": "Revisar o contentamento aprendido de Paulo.",
+    "evidence": [
+      "Filipenses 4:11"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-06",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 2:7 a João 1:14?",
+    "prompt": "O que liga Filipenses 2:7 a João 1:14?",
+    "cue": "O que liga Filipenses 2:7 a João 1:14?",
+    "verseRef": "Filipenses 2:7",
+    "passageText": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;",
+    "passageA": {
+      "ref": "Filipenses 2:7",
+      "text": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+    },
+    "passageB": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens viram deuses por esforço"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona o céu vazio"
+      },
+      {
+        "id": "c",
+        "text": "O Verbo se fez carne"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tornando-se em semelhança de homens",
+    "feedbackCorrect": "O mesmo mistério: o divino se faz gente de verdade.",
+    "feedbackWrong": {
+      "a": "A direção é inversa: Deus desce, não homens sobem.",
+      "b": "Ele não abandona quem é ao se fazer carne."
+    },
+    "hint": "Veja o que o Verbo se tornou em João.",
+    "learningObjective": "Revisar a ligação entre o hino e a encarnação.",
+    "evidence": [
+      "Filipenses 2:7",
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-07",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 1:23, toque a palavra que nomeia o que Paulo sente sobre partir.",
+    "prompt": "Em Filipenses 1:23, toque a palavra que nomeia o que Paulo sente sobre partir.",
+    "cue": "Em Filipenses 1:23, toque a palavra que nomeia o que Paulo sente sobre partir.",
+    "verseRef": "Filipenses 1:23",
+    "passageText": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conflito"
+      },
+      {
+        "id": "b",
+        "text": "desejo"
+      },
+      {
+        "id": "c",
+        "text": "partir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sinto o desejo de partir",
+    "feedbackCorrect": "O desejo dele aponta para estar com Cristo.",
+    "feedbackWrong": {
+      "a": "Isso nomeia a tensão, não o desejo sentido.",
+      "c": "Isso é a ação desejada, não o sentimento nomeado."
+    },
+    "hint": "Procure o que ele sente, declarado no versículo.",
+    "learningObjective": "Revisar o dilema de partir e ficar.",
+    "evidence": [
+      "Filipenses 1:23"
+    ]
+  },
+  {
+    "id": "filipenses-cam-fp-04-desafio-08",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o contentamento de Paulo em Filipenses 4:11–13?",
+    "prompt": "Como avança o contentamento de Paulo em Filipenses 4:11–13?",
+    "cue": "Como avança o contentamento de Paulo em Filipenses 4:11–13?",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contentamento aprendido em qualquer cenário"
+      },
+      {
+        "id": "b",
+        "text": "Extremos de fartura e de falta atravessados"
+      },
+      {
+        "id": "c",
+        "text": "Força recebida daquele que o fortalece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Posso todas as coisas por meio daquele que me dá força",
+    "feedbackCorrect": "Aprender, atravessar extremos e depender dele.",
+    "feedbackWrong": {
+      "default": "Comece pelo aprendizado declarado dele."
+    },
+    "hint": "A força recebida fecha o avanço.",
+    "learningObjective": "Revisar o caminho até Filipenses 4:13.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-01",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filipenses, alegria, humildade e contentamento têm o mesmo centro, que é Cristo.",
+    "prompt": "Em Filipenses, alegria, humildade e contentamento têm o mesmo centro, que é Cristo.",
+    "cue": "Em Filipenses, alegria, humildade e contentamento têm o mesmo centro, que é Cristo.",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "Preso, servo ou na falta, o centro não muda: Cristo.",
+    "feedbackWrong": {
+      "false": "Os três temas da carta se encontram nesse nome."
+    },
+    "hint": "Procure o nome comum aos três temas.",
+    "learningObjective": "Interpretar a unidade temática da carta.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-02",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 1:20, toque onde Cristo será engrandecido na vida de Paulo.",
+    "prompt": "Em Filipenses 1:20, toque onde Cristo será engrandecido na vida de Paulo.",
+    "cue": "Em Filipenses 1:20, toque onde Cristo será engrandecido na vida de Paulo.",
+    "verseRef": "Filipenses 1:20",
+    "passageText": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu corpo"
+      },
+      {
+        "id": "b",
+        "text": "minha ardente expectativa"
+      },
+      {
+        "id": "c",
+        "text": "toda a ousadia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "será Cristo engrandecido no meu corpo",
+    "feedbackCorrect": "Vivo ou morto, o corpo dele mostra Cristo grande.",
+    "feedbackWrong": {
+      "b": "Isso é o sentimento dele, não o lugar.",
+      "c": "Isso descreve o jeito, não o lugar do engrandecer."
+    },
+    "hint": "Procure o lugar depois de engrandecido no.",
+    "learningObjective": "Revisar onde Cristo aparece na vida de Paulo.",
+    "evidence": [
+      "Filipenses 1:20"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-03",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura resume melhor a carta de Filipenses neste desafio?",
+    "prompt": "Que leitura resume melhor a carta de Filipenses neste desafio?",
+    "cue": "Que leitura resume melhor a carta de Filipenses neste desafio?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem boas circunstâncias, ninguém consegue viver a fé"
+      },
+      {
+        "id": "b",
+        "text": "Com Cristo no centro, há alegria, serviço e contentamento"
+      },
+      {
+        "id": "c",
+        "text": "Humildade e alegria são temas que se contradizem"
+      },
+      {
+        "id": "d",
+        "text": "A prisão de Paulo prova que Deus o abandonou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "Um centro só sustenta os três temas da carta.",
+    "feedbackWrong": {
+      "a": "Paulo vive tudo isso justamente preso e na falta.",
+      "c": "A alegria dele nasce do Cristo que se humilhou.",
+      "d": "Ele lê a prisão como palco de Cristo, não abandono."
+    },
+    "hint": "Junte os três temas num centro comum.",
+    "learningObjective": "Escolher a síntese que a carta sustenta.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-04",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o arco inteiro de Filipenses?",
+    "prompt": "Qual sequência revela o arco inteiro de Filipenses?",
+    "cue": "Qual sequência revela o arco inteiro de Filipenses?",
+    "verseRef": "Filipenses 2:11",
+    "passageText": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo proclamado alegra até um preso"
+      },
+      {
+        "id": "b",
+        "text": "A mente de Cristo desce ao lugar de servo"
+      },
+      {
+        "id": "c",
+        "text": "O Pai exalta e toda língua confessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+    "feedbackCorrect": "Proclamação, descida e confissão universal do Senhor.",
+    "feedbackWrong": {
+      "default": "Comece pela proclamação que alegra Paulo."
+    },
+    "hint": "A confissão de todos fecha o arco.",
+    "learningObjective": "Ver o arco da carta do começo ao hino.",
+    "evidence": [
+      "Filipenses 2:11"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-05",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:13, o que Paulo recebe daquele que o sustenta em tudo?",
+    "prompt": "Em Filipenses 4:13, o que Paulo recebe daquele que o sustenta em tudo?",
+    "cue": "Em Filipenses 4:13, o que Paulo recebe daquele que o sustenta em tudo?",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "template": "Posso todas as coisas por meio daquele que me dá ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "folga"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio daquele que me dá força",
+    "feedbackCorrect": "É o recurso dele na fartura e também na escassez.",
+    "feedbackWrong": {
+      "a": "Fama não é o que ele busca nem recebe aqui.",
+      "c": "Ele continua trabalhando; não recebe folga."
+    },
+    "hint": "É o que o outro lhe dá, no fim da frase.",
+    "learningObjective": "Revisar o recurso de Paulo em toda situação.",
+    "evidence": [
+      "Filipenses 4:13"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-06",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 1:21 a Romanos 14:8?",
+    "prompt": "O que liga Filipenses 1:21 a Romanos 14:8?",
+    "cue": "O que liga Filipenses 1:21 a Romanos 14:8?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "passageA": {
+      "ref": "Filipenses 1:21",
+      "text": "Porque, para mim, viver é Cristo, e morrer é lucro."
+    },
+    "passageB": {
+      "ref": "Romanos 14:8",
+      "text": "Pois, se vivemos, vivemos para o Senhor; e se morremos, morremos para o Senhor. Assim, tanto na vida como na morte, somos do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vivemos e morremos para o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Vida e morte sem nenhum senhor"
+      },
+      {
+        "id": "c",
+        "text": "Morte como ponto final absoluto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "Em Romanos, Paulo resume igual: dele somos, vivos ou mortos.",
+    "feedbackWrong": {
+      "b": "Os dois textos entregam vida e morte ao Senhor.",
+      "c": "Morrer é lucro e estar com ele, não um fim vazio."
+    },
+    "hint": "Veja a quem pertencem vida e morte em Romanos.",
+    "learningObjective": "Ligar a síntese de Filipenses à de Romanos.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Romanos 14:8"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-07",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:5, toque o que deve existir na igreja como existiu em Cristo.",
+    "prompt": "Em Filipenses 2:5, toque o que deve existir na igreja como existiu em Cristo.",
+    "cue": "Em Filipenses 2:5, toque o que deve existir na igreja como existiu em Cristo.",
+    "verseRef": "Filipenses 2:5",
+    "passageText": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sentimento"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tenham em vocês o mesmo sentimento",
+    "feedbackCorrect": "Não é imitar gestos soltos: é o mesmo modo de sentir.",
+    "feedbackWrong": {
+      "b": "Ele é o modelo; o que se copia vem antes.",
+      "c": "Isso é a quem Paulo fala, não o que copiar."
+    },
+    "hint": "Procure o substantivo depois de mesmo.",
+    "learningObjective": "Revisar o que a igreja copia de Cristo.",
+    "evidence": [
+      "Filipenses 2:5"
+    ]
+  },
+  {
+    "id": "filipenses-pro-fp-04-desafio-08",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica da alegria que permanece?",
+    "prompt": "Qual sequência revela a lógica da alegria que permanece?",
+    "cue": "Qual sequência revela a lógica da alegria que permanece?",
+    "verseRef": "Filipenses 1:21",
+    "passageText": "Porque, para mim, viver é Cristo, e morrer é lucro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver é Cristo, mesmo dentro da prisão"
+      },
+      {
+        "id": "b",
+        "text": "Morrer é lucro, sem medo do desfecho"
+      },
+      {
+        "id": "c",
+        "text": "Ficar é servir à igreja com o coração inteiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "viver é Cristo, e morrer é lucro",
+    "feedbackCorrect": "Centro na vida, ganho na morte e serviço aos outros.",
+    "feedbackWrong": {
+      "default": "Comece pela definição de viver para Paulo."
+    },
+    "hint": "Servir à igreja é a conclusão prática dele.",
+    "learningObjective": "Compreender a lógica da alegria de Paulo.",
+    "evidence": [
+      "Filipenses 1:21"
+    ]
+  }
+]

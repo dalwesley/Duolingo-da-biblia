@@ -1,0 +1,64 @@
+Escreva a cena "ato-04-estevao" da trilha "atos" (Atos dos Apóstolos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Jerusalém",
+ "mission": {
+  "slug": "ato-04-estevao",
+  "title": "Estêvão e a pressão",
+  "type": "lesson",
+  "intro": "Serviço, sabedoria e martírio: a igreja aprende que o evangelho custa — e avança sob pressão.",
+  "hookRef": "Atos 7:55–60",
+  "hookNote": "Estêvão, escolhido para servir mesas, torna-se testemunha poderosa. Seu discurso relê a história de Israel e denuncia resistência ao Espíri…",
+  "centralInsight": "Serviço e palavra andam juntos",
+  "objective": "Estou disposto a permanecer fiel se o custo do evangelho subir?"
+ },
+ "v2": {
+  "passageRef": "Atos 7:55–60",
+  "context": "Estêvão, escolhido para servir mesas, torna-se testemunha poderosa. Seu discurso relê a história de Israel e denuncia resistência ao Espírito. O martírio ecoa Jesus (perdão aos algozes) e introduz Saulo. A perseguição espalha a igreja — o mapa de 1:8 avança pelo sofrimento fiel.",
+  "keyword": "Martírio",
+  "verseRefs": [
+   "Atos 7:55–56"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 7:55–60",
+  "Atos 7:55–56"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 7:55",
+   "text": "Mas ele, cheio do Espírito Santo, fixou os olhos no céu e viu a glória de Deus e Jesus, que estava à sua direita."
+  },
+  {
+   "ref": "Atos 7:56",
+   "text": "E disse: Eis que vejo os céus abertos e o Filho do Homem em pé à destra de Deus."
+  },
+  {
+   "ref": "Atos 7:57",
+   "text": "Eles, porém, gritando em alta voz, taparam os ouvidos e, unânimes, lançaram-se contra ele."
+  },
+  {
+   "ref": "Atos 7:58",
+   "text": "E, expulsando-o da cidade, o apedrejaram. As testemunhas deixaram suas vestes aos pés de um jovem chamado Saulo."
+  },
+  {
+   "ref": "Atos 7:59",
+   "text": "E apedrejaram Estêvão, que invocava o Senhor e clamava: Senhor Jesus, recebe o meu espírito!"
+  },
+  {
+   "ref": "Atos 7:60",
+   "text": "E, ajoelhando-se, clamou em alta voz: Senhor, não lhes imputes este pecado! Com estas palavras, adormeceu."
+  }
+ ]
+}
+</cena>

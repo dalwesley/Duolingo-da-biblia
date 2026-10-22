@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Lucas 22:15–20",
+  "passages": [
+   {
+    "ref": "Lucas 22:14–20"
+   }
+  ],
+  "context": "Na última Páscoa com os apóstolos, Jesus deseja comer com eles antes de sofrer. Ele toma pão e cálice e interpreta sua morte como corpo entregue e sangue da nova aliança.",
+  "keyword": "Nova aliança",
+  "keywordGloss": "O cálice é a nova aliança no sangue de Jesus, derramado pelos discípulos.",
+  "focusQuestion": "Como você pode participar da ceia lembrando com gratidão a entrega de Jesus?",
+  "reflectionPrompts": [
+   "Corpo entregue por vocês",
+   "Sangue da nova aliança",
+   "Em memória de mim"
+  ],
+  "facts": [
+   {
+    "text": "Jesus desejou comer a Páscoa com os apóstolos antes de sofrer.",
+    "evidenceRef": "Lucas 22:15",
+    "evidenceSpan": "Desejei ansiosamente comer convosco esta Páscoa, antes do meu sofrimento"
+   },
+   {
+    "text": "Jesus não comeria mais a Páscoa até se cumprir no reino.",
+    "evidenceRef": "Lucas 22:16",
+    "evidenceSpan": "não a comerei mais até que se cumpra no reino de Deus"
+   },
+   {
+    "text": "O pão é o corpo de Jesus entregue pelos discípulos.",
+    "evidenceRef": "Lucas 22:19",
+    "evidenceSpan": "Isto é o meu corpo, que é entregue por vocês"
+   },
+   {
+    "text": "Os discípulos devem fazer isso em memória de Jesus.",
+    "evidenceRef": "Lucas 22:19",
+    "evidenceSpan": "façam isto em memória de mim"
+   },
+   {
+    "text": "O cálice é a nova aliança no sangue derramado por eles.",
+    "evidenceRef": "Lucas 22:20",
+    "evidenceSpan": "Este cálice é a nova aliança no meu sangue"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Páscoa",
+    "gloss": "A refeição que lembrava a libertação do Egito; Jesus a come antes de sofrer."
+   },
+   {
+    "term": "corpo",
+    "gloss": "Jesus se entrega de verdade; o pão aponta para essa entrega."
+   },
+   {
+    "term": "nova aliança",
+    "gloss": "A relação com Deus selada pelo sangue de Jesus derramado."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jesus deseja a Páscoa com os seus",
+    "evidenceRef": "Lucas 22:15"
+   },
+   {
+    "label": "Olhar para o cumprimento no reino",
+    "evidenceRef": "Lucas 22:16–18"
+   },
+   {
+    "label": "Pão partido, corpo entregue",
+    "evidenceRef": "Lucas 22:19"
+   },
+   {
+    "label": "Cálice, nova aliança no sangue",
+    "evidenceRef": "Lucas 22:20"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Da mesma forma, após a ceia, Jesus toma o cálice depois do pão.",
+    "marker": "após",
+    "evidenceRef": "Lucas 22:20"
+   },
+   {
+    "kind": "propósito",
+    "text": "O corpo é entregue por vocês, em favor dos discípulos.",
+    "marker": "por",
+    "evidenceRef": "Lucas 22:19"
+   },
+   {
+    "kind": "propósito",
+    "text": "A ceia deve ser feita em memória de Jesus.",
+    "marker": "em memória",
+    "evidenceRef": "Lucas 22:19"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Êxodo 12:14",
+    "bridge": "Memorial da libertação"
+   },
+   {
+    "ref": "Jeremias 31:31",
+    "bridge": "Promessa da nova aliança"
+   },
+   {
+    "ref": "1 Coríntios 11:25",
+    "bridge": "Cálice da nova aliança"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A ceia é só um jantar comum sem ligação com a morte de Jesus.",
+    "why": "Jesus liga pão e cálice a corpo entregue e sangue derramado (22:19-20)."
+   },
+   {
+    "text": "Participar da ceia é um costume vazio sem memória de Jesus.",
+    "why": "Ele ordena fazer isto em memória dele (22:19)."
+   },
+   {
+    "text": "A nova aliança depende do esforço dos discípulos para ser selada.",
+    "why": "O cálice é a aliança no sangue de Jesus, derramado por eles (22:20)."
+   }
+  ],
+  "centralInsight": "Entrega por mim",
+  "anchorQuestion": "Segundo Lucas 22:20, o que o cálice representa?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lucas 22:19, Jesus disse que o pão é o seu corpo entregue pelos discípulos.",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "true",
+   "evidenceSpan": "Isto é o meu corpo, que é entregue por vocês",
+   "feedbackCorrect": "O pão aponta para a entrega real de Jesus pelos seus.",
+   "feedbackWrong": {
+    "false": "Releia as palavras de Jesus sobre o pão em Lucas 22:19."
+   },
+   "hint": "",
+   "learningObjective": "Observar o significado dado ao pão.",
+   "evidence": [
+    "Lucas 22:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lucas 22:20, toque o que o cálice é segundo Jesus.",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "O cálice carrega o anúncio de uma aliança selada no sangue.",
+   "feedbackWrong": {
+    "b": "Isso é o meio da aliança, não o nome dela.",
+    "c": "Isso indica os beneficiários, não o nome dado."
+   },
+   "hint": "Procure o nome dado logo após o cálice.",
+   "learningObjective": "Identificar o cálice da nova aliança.",
+   "evidence": [
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "nova aliança"
+    },
+    {
+     "id": "b",
+     "text": "meu sangue"
+    },
+    {
+     "id": "c",
+     "text": "por vocês"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lucas 22:15, o que Jesus desejou fazer antes do sofrimento?",
+   "verseRef": "Lucas 22:15",
+   "correctOptionId": "b",
+   "evidenceSpan": "Desejei ansiosamente comer convosco esta Páscoa",
+   "feedbackCorrect": "Jesus quis partilhar aquela Páscoa antes de sofrer.",
+   "feedbackWrong": {
+    "a": "Ele se põe à mesa, não foge da hora.",
+    "c": "Ele come a Páscoa agora, olhando para o reino.",
+    "d": "Ele está à mesa com os doze apóstolos."
+   },
+   "hint": "Veja o desejo expresso por Jesus.",
+   "learningObjective": "Observar o desejo de Jesus na ceia.",
+   "evidence": [
+    "Lucas 22:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Fugir para longe de Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Comer a Páscoa com os apóstolos"
+    },
+    {
+     "id": "c",
+     "text": "Adiar a Páscoa para outro ano"
+    },
+    {
+     "id": "d",
+     "text": "Celebrar sozinho sem os doze"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lucas 22:19 na ordem do texto.",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, tomando o pão, tendo dado graças, o partiu",
+   "feedbackCorrect": "Tomar, dar graças, partir e entregar marcam a ação sobre o pão.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece por Jesus tomando o pão."
+    }
+   },
+   "hint": "Comece pela ação inicial sobre o pão.",
+   "learningObjective": "Reconhecer a sequência sobre o pão.",
+   "evidence": [
+    "Lucas 22:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "tomando o pão, tendo dado graças, o partiu"
+    },
+    {
+     "id": "b",
+     "text": "e deu aos discípulos, dizendo"
+    },
+    {
+     "id": "c",
+     "text": "Isto é o meu corpo, que é entregue por vocês"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lucas 22:19, em memória de quem os discípulos devem fazer aquilo?",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "a",
+   "evidenceSpan": "façam isto em memória de mim",
+   "feedbackCorrect": "A ceia guarda a memória da pessoa e da entrega de Jesus.",
+   "feedbackWrong": {
+    "b": "O Pai é glorificado, mas a memória citada é de Jesus.",
+    "c": "Moisés lembra a Páscoa antiga, não esta ordem."
+   },
+   "hint": "Veja as palavras finais sobre o pão.",
+   "learningObjective": "Lembrar a memória ordenada por Jesus.",
+   "evidence": [
+    "Lucas 22:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "mim"
+    },
+    {
+     "id": "b",
+     "text": "Pai"
+    },
+    {
+     "id": "c",
+     "text": "Moisés"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lucas 22:20 comunica que se liga a este contexto?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "O cálice anuncia aliança firmada pela entrega de Jesus.",
+   "feedbackWrong": {
+    "b": "O sangue derramado mostra entrega real.",
+    "c": "Jesus mesmo interpreta o cálice na ceia."
+   },
+   "hint": "Ouça a interpretação do próprio Jesus.",
+   "learningObjective": "Ligar o cálice à entrega de Jesus.",
+   "evidence": [
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Entrega selada no sangue"
+    },
+    {
+     "id": "b",
+     "text": "Aliança sem entrega alguma"
+    },
+    {
+     "id": "c",
+     "text": "Sangue sem nenhum significado"
+    }
+   ],
+   "passageA": {
+    "ref": "Lucas 22:20"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Na ceia, Jesus interpreta sua morte como entrega pelos discípulos."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lucas 22:19 e 20, o cálice vem antes do pão na ordem apresentada por Jesus.",
+   "verseRef": "Lucas 22:19–20",
+   "correctOptionId": "false",
+   "evidenceSpan": "Da mesma forma, após a ceia, tomou o cálice",
+   "feedbackCorrect": "O pão vem primeiro; o cálice é tomado da mesma forma, após a ceia.",
+   "feedbackWrong": {
+    "true": "Note a expressão após a ceia no versículo 20."
+   },
+   "hint": "",
+   "learningObjective": "Compreender a ordem de pão e cálice.",
+   "evidence": [
+    "Lucas 22:19–20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lucas 22:20, toque o trecho que marca o momento em que Jesus toma o cálice.",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Da mesma forma, após a ceia, tomou o cálice",
+   "feedbackCorrect": "O cálice vem depois, seguindo o mesmo gesto do pão.",
+   "feedbackWrong": {
+    "b": "Isso é o significado, não o momento.",
+    "c": "Isso indica por quem, não quando."
+   },
+   "hint": "Procure a marca de tempo no início.",
+   "learningObjective": "Reconhecer a sequência da ceia.",
+   "evidence": [
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "após a ceia"
+    },
+    {
+     "id": "b",
+     "text": "nova aliança"
+    },
+    {
+     "id": "c",
+     "text": "por vocês"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Lucas 22:16 e 18 ligam a ceia ao reino de Deus?",
+   "verseRef": "Lucas 22:16–17",
+   "correctOptionId": "a",
+   "evidenceSpan": "não a comerei mais até que se cumpra no reino de Deus",
+   "feedbackCorrect": "A ceia presente aponta para uma ceia cumprida no reino.",
+   "feedbackWrong": {
+    "b": "Ele fala do reino com expectativa futura.",
+    "c": "O reino reaparece como horizonte da ceia.",
+    "d": "Jesus é quem anuncia e conduz ao reino."
+   },
+   "hint": "Veja o horizonte futuro das duas falas.",
+   "learningObjective": "Compreender ceia e reino ligados.",
+   "evidence": [
+    "Lucas 22:16",
+    "Lucas 22:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus olha para o cumprimento no reino"
+    },
+    {
+     "id": "b",
+     "text": "Jesus abandona a esperança do reino"
+    },
+    {
+     "id": "c",
+     "text": "A ceia encerra o tema do reino"
+    },
+    {
+     "id": "d",
+     "text": "O reino virá sem relação com Jesus"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a ceia em Lucas 22:17 a 20?",
+   "verseRef": "Lucas 22:17",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, tomando o cálice, havendo dado graças, disse",
+   "feedbackCorrect": "Cálice repartido, pão interpretado e cálice da aliança fecham a cena.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O pão fica entre os dois momentos do cálice."
+    }
+   },
+   "hint": "Comece pelo primeiro cálice repartido.",
+   "learningObjective": "Compreender os movimentos da ceia.",
+   "evidence": [
+    "Lucas 22:17",
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus toma o cálice e manda repartir"
+    },
+    {
+     "id": "b",
+     "text": "Jesus parte o pão e fala do corpo"
+    },
+    {
+     "id": "c",
+     "text": "Jesus toma o cálice da nova aliança"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lucas 22:17, o que Jesus manda os apóstolos fazer com o cálice entre eles?",
+   "verseRef": "Lucas 22:17",
+   "correctOptionId": "a",
+   "evidenceSpan": "Tomai-o e reparti-o entre vós",
+   "feedbackCorrect": "O cálice é partilhado entre todos, não retido por um só.",
+   "feedbackWrong": {
+    "b": "Guardar iria contra a ordem de partilhar.",
+    "c": "Esconder não aparece na fala de Jesus."
+   },
+   "hint": "Veja a ordem dada após tomar o cálice.",
+   "learningObjective": "Compreender a partilha do cálice.",
+   "evidence": [
+    "Lucas 22:17"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "reparti-o"
+    },
+    {
+     "id": "b",
+     "text": "guardai-o"
+    },
+    {
+     "id": "c",
+     "text": "escondei-o"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lucas 22:20 a Jeremias 31:31?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "Jeremias prometeu nova aliança; Jesus a anuncia no seu sangue.",
+   "feedbackWrong": {
+    "b": "Jesus fala de nova aliança, não de fim absoluto.",
+    "c": "O sangue aqui é o do próprio Jesus."
+   },
+   "hint": "Compare o nome da aliança nos dois.",
+   "learningObjective": "Relacionar a ceia à promessa de Jeremias.",
+   "evidence": [
+    "Lucas 22:20",
+    "Jeremias 31:31"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Promessa da nova aliança"
+    },
+    {
+     "id": "b",
+     "text": "Fim de toda aliança"
+    },
+    {
+     "id": "c",
+     "text": "Aliança só com sangue animal"
+    }
+   ],
+   "passageA": {
+    "ref": "Lucas 22:20"
+   },
+   "passageB": {
+    "ref": "Jeremias 31:31"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Lucas 22:19 e 20, Jesus interpreta sua morte como entrega em favor dos discípulos.",
+   "verseRef": "Lucas 22:19–20",
+   "correctOptionId": "true",
+   "evidenceSpan": "que é entregue por vocês",
+   "feedbackCorrect": "Corpo entregue e sangue derramado são ditos por vocês, em favor deles.",
+   "feedbackWrong": {
+    "false": "As duas falas terminam indicando os beneficiários da entrega."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar a morte como entrega por outros.",
+   "evidence": [
+    "Lucas 22:19–20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lucas 22:19, toque o trecho que sustenta a entrega de Jesus pelos discípulos.",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "b",
+   "evidenceSpan": "que é entregue por vocês",
+   "feedbackCorrect": "A entrega é pessoal e dirigida aos que estavam à mesa.",
+   "feedbackWrong": {
+    "a": "Isso é gratidão antes de partir, não a entrega.",
+    "c": "Isso indica quem recebe o pão partido."
+   },
+   "hint": "Procure a finalidade no fim da fala do pão.",
+   "learningObjective": "Sustentar a entrega por outros.",
+   "evidence": [
+    "Lucas 22:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "dado graças"
+    },
+    {
+     "id": "b",
+     "text": "entregue por vocês"
+    },
+    {
+     "id": "c",
+     "text": "aos discípulos"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lucas 22:19 e 20 sustenta sobre a ceia?",
+   "verseRef": "Lucas 22:19–20",
+   "correctOptionId": "a",
+   "evidenceSpan": "façam isto em memória de mim",
+   "feedbackCorrect": "Pão e cálice guardam corpo entregue e sangue da aliança.",
+   "feedbackWrong": {
+    "b": "Os símbolos apontam direto para a entrega na cruz.",
+    "c": "O tema é entrega e aliança, não prosperidade.",
+    "d": "A memória é da entrega, não só dos milagres."
+   },
+   "hint": "Junte pão, cálice e as falas de Jesus.",
+   "learningObjective": "Escolher a leitura sustentada da ceia.",
+   "evidence": [
+    "Lucas 22:19–20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Memória viva da entrega de Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Ritual sem relação com a cruz"
+    },
+    {
+     "id": "c",
+     "text": "Promessa de prosperidade aos fiéis"
+    },
+    {
+     "id": "d",
+     "text": "Lembrança apenas dos milagres"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido da ceia em Lucas 22?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+   "feedbackCorrect": "Da Páscoa à entrega, a ceia aponta para o reino cumprido.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O cumprimento no reino é o horizonte final."
+    }
+   },
+   "hint": "Termine no horizonte do reino.",
+   "learningObjective": "Ver Páscoa, entrega e reino.",
+   "evidence": [
+    "Lucas 22:15",
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Páscoa desejada antes do sofrimento"
+    },
+    {
+     "id": "b",
+     "text": "Corpo e sangue entregues pelos discípulos"
+    },
+    {
+     "id": "c",
+     "text": "Cumprimento esperado no reino de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lucas 22:20, por quem o sangue de Jesus é derramado segundo o texto?",
+   "verseRef": "Lucas 22:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "que é derramado por vocês",
+   "feedbackCorrect": "A entrega alcança pessoalmente os discípulos à mesa.",
+   "feedbackWrong": {
+    "b": "Anjos não são os beneficiários citados aqui.",
+    "c": "Multidões não são nomeadas nesta fala."
+   },
+   "hint": "Veja os destinatários no fim do versículo.",
+   "learningObjective": "Lembrar os beneficiários da entrega.",
+   "evidence": [
+    "Lucas 22:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "vocês"
+    },
+    {
+     "id": "b",
+     "text": "anjos"
+    },
+    {
+     "id": "c",
+     "text": "multidões"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lucas 22:19 a Êxodo 12:14?",
+   "verseRef": "Lucas 22:19",
+   "correctOptionId": "a",
+   "evidenceSpan": "façam isto em memória de mim",
+   "feedbackCorrect": "A Páscoa era memorial da libertação; Jesus manda lembrar sua entrega.",
+   "feedbackWrong": {
+    "b": "Nos dois textos, lembrar guarda a obra de Deus.",
+    "c": "Êxodo chama aquele dia de memorial."
+   },
+   "hint": "Compare a ordem de lembrar nos dois.",
+   "learningObjective": "Ligar a ceia ao memorial da Páscoa.",
+   "evidence": [
+    "Lucas 22:19",
+    "Êxodo 12:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Memória da libertação de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Esquecimento do passado salvo"
+    },
+    {
+     "id": "c",
+     "text": "Páscoa sem nenhum memorial"
+    }
+   ],
+   "passageA": {
+    "ref": "Lucas 22:19"
+   },
+   "passageB": {
+    "ref": "Êxodo 12:14"
+   }
+  }
+ ]
+}

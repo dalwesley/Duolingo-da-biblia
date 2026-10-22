@@ -1,0 +1,67 @@
+Escreva a cena "os-05-menino" da trilha "oseias" (Oséias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "oseias",
+  "title": "Oséias",
+  "description": "Amor fiel de Deus a um povo adúltero.",
+  "realm": "antigo-testamento"
+ },
+ "block": "O pai",
+ "mission": {
+  "slug": "os-05-menino",
+  "title": "Quando Israel era menino",
+  "type": "lesson",
+  "intro": "Jeová lembra o amor de pai: chamou o filho do Egito, ensinou a andar e tirou o jugo.",
+  "hookRef": "Oséias 11:1–4",
+  "hookNote": "O tom muda de tribunal para colo. A infidelidade dói porque o laço era de pai.",
+  "centralInsight": "O amor de Deus é de pai",
+  "objective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido."
+ },
+ "v2": {
+  "passageRef": "Oséias 11:1–4",
+  "context": "Jeová amou Israel menino, chamou-o do Egito e o atraiu com laços de amor.",
+  "keyword": "Filho",
+  "verseRefs": [
+   "Oséias 11:1–4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Oseias 11:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Oseias 11:1",
+   "text": "Quando Israel era jovem eu o amei; e do Egito chamei meu filho."
+  },
+  {
+   "ref": "Oseias 11:2",
+   "text": "Mas, quanto mais eu os chamava, mais se afastavam de minha presença; sacrificavam a baalins e queimavam incenso às imagens esculpidas."
+  },
+  {
+   "ref": "Oseias 11:3",
+   "text": "Eu, no entanto, ensinei a andar a Efraim; cuidei deles como quem pega uma criança nos braços, mas não perceberam que eu os estava curando."
+  },
+  {
+   "ref": "Oseias 11:4",
+   "text": "Atraí-os com cordas humanas, com laços de amor; fui para eles como quem alivia o jugo sobre as suas queixadas e me inclinei para lhes dar de comer."
+  },
+  {
+   "ref": "Oseias 11:5",
+   "text": "Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque se recusam a se converter."
+  },
+  {
+   "ref": "Oseias 11:6",
+   "text": "E a espada cairá sobre suas cidades, consumirá seus ferrolhos e devorará por causa de seus caprichos."
+  },
+  {
+   "ref": "Oseias 11:7",
+   "text": "Meu povo se inclina a desviar-se de mim; embora sejam chamados a se voltar para o Altíssimo, ninguém o faz."
+  }
+ ]
+}
+</cena>

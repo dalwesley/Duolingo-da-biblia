@@ -1,0 +1,707 @@
+{
+ "study": {
+  "passageRef": "Atos 28:27–31",
+  "passages": [
+   {
+    "ref": "Atos 28:27–31"
+   }
+  ],
+  "context": "Paulo está preso em Roma, morando numa casa alugada por dois anos. Ele recebe quem o procura e anuncia o Reino de Deus sem impedimento, após anunciar a salvação aos gentios.",
+  "keyword": "Sem impedimento",
+  "keywordGloss": "Mesmo preso, Paulo ensina sobre Jesus sem que a palavra seja parada.",
+  "focusQuestion": "Que dificuldade você tem usado como desculpa para calar o evangelho?",
+  "reflectionPrompts": [
+   "Preso, mas anunciando",
+   "Salvação enviada aos gentios",
+   "Palavra sem impedimento"
+  ],
+  "facts": [
+   {
+    "text": "Paulo anuncia que a salvação de Deus foi enviada aos gentios.",
+    "evidenceRef": "Atos 28:28",
+    "evidenceSpan": "a salvação de Deus foi enviada aos gentios"
+   },
+   {
+    "text": "Os judeus se afastaram com grande discussão entre si.",
+    "evidenceRef": "Atos 28:29",
+    "evidenceSpan": "os judeus se afastaram, tendo entre si uma grande discussão"
+   },
+   {
+    "text": "Paulo permaneceu dois anos inteiros em casa alugada em Roma.",
+    "evidenceRef": "Atos 28:30",
+    "evidenceSpan": "Paulo permaneceu dois anos inteiros em sua própria casa"
+   },
+   {
+    "text": "Ele recebia todos os que o procuravam em sua casa.",
+    "evidenceRef": "Atos 28:30",
+    "evidenceSpan": "e recebia todos os que o procuravam"
+   },
+   {
+    "text": "Paulo pregava o Reino de Deus com toda a ousadia.",
+    "evidenceRef": "Atos 28:31",
+    "evidenceSpan": "Pregando o Reino de Deus e, com toda a ousadia"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "gentios",
+    "gloss": "Os povos além de Israel a quem a salvação foi enviada, segundo Paulo."
+   },
+   {
+    "term": "ousadia",
+    "gloss": "Coragem de Paulo ao ensinar sobre Jesus mesmo sob custódia."
+   },
+   {
+    "term": "impedimento",
+    "gloss": "Barreira que, segundo o fim de Atos, não para o ensino de Paulo."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Corações endurecidos são confrontados",
+    "evidenceRef": "Atos 28:27"
+   },
+   {
+    "label": "A salvação é anunciada aos gentios",
+    "evidenceRef": "Atos 28:28"
+   },
+   {
+    "label": "Paulo permanece dois anos recebendo visitas",
+    "evidenceRef": "Atos 28:30"
+   },
+   {
+    "label": "O Reino é pregado sem impedimento",
+    "evidenceRef": "Atos 28:31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Após a palavra sobre corações endurecidos, Paulo anuncia a salvação aos gentios.",
+    "marker": "portanto",
+    "evidenceRef": "Atos 28:28"
+   },
+   {
+    "kind": "contraste",
+    "text": "Paulo está em custódia numa casa, mas ensina sobre Jesus sem impedimento.",
+    "marker": "sem nenhum impedimento",
+    "evidenceRef": "Atos 28:31"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois das palavras de Paulo, os judeus se afastam em grande discussão.",
+    "marker": "Depois",
+    "evidenceRef": "Atos 28:29"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Atos 1:8",
+    "bridge": "Testemunho até os confins"
+   },
+   {
+    "ref": "2 Timóteo 2:9",
+    "bridge": "A palavra não está acorrentada"
+   },
+   {
+    "ref": "Isaías 49:6",
+    "bridge": "Salvação até os confins"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O fim preso de Paulo significa o fracasso da missão.",
+    "why": "Ele prega o Reino com ousadia e sem impedimento por dois anos (28:30–31)."
+   },
+   {
+    "text": "Anunciar os gentios significa que Deus rejeitou Israel para sempre sem palavra a ele.",
+    "why": "Paulo anuncia primeiro aos judeus em Roma e só então fala dos gentios (28:28)."
+   },
+   {
+    "text": "Circunstâncias difíceis cancelam automaticamente o testemunho.",
+    "why": "Mesmo em casa sob custódia, Paulo recebe todos e ensina sobre Jesus (28:30–31)."
+   }
+  ],
+  "centralInsight": "Palavra não acorrentada",
+  "anchorQuestion": "Em Atos 28:31, como Paulo ensinava sobre o Senhor Jesus em Roma?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Atos 28:30, Paulo permaneceu dois anos inteiros na casa que havia alugado.",
+   "verseRef": "Atos 28:30",
+   "correctOptionId": "true",
+   "evidenceSpan": "Paulo permaneceu dois anos inteiros em sua própria casa",
+   "feedbackCorrect": "Por dois anos ele ficou ali recebendo quem o procurava.",
+   "feedbackWrong": {
+    "false": "Releia o tempo e o lugar citados em Atos 28:30."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Observar o período de Paulo em Roma.",
+   "evidence": [
+    "Atos 28:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 28:31, toque o que Paulo pregava em Roma.",
+   "verseRef": "Atos 28:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Reino de Deus"
+    },
+    {
+     "id": "b",
+     "text": "ousadia"
+    },
+    {
+     "id": "c",
+     "text": "impedimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pregando o Reino de Deus",
+   "feedbackCorrect": "O Reino de Deus era o centro da sua pregação ali.",
+   "feedbackWrong": {
+    "b": "Ousadia descreve como ele ensinava, não o conteúdo.",
+    "c": "Impedimento é justamente o que não havia no ensino."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Identificar o conteúdo da pregação.",
+   "evidence": [
+    "Atos 28:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Atos 28:28, a quem a salvação de Deus foi enviada, segundo Paulo?",
+   "verseRef": "Atos 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Somente aos judeus de Roma"
+    },
+    {
+     "id": "b",
+     "text": "Aos gentios, que a ouvirão"
+    },
+    {
+     "id": "c",
+     "text": "Apenas aos soldados romanos"
+    },
+    {
+     "id": "d",
+     "text": "Somente aos discípulos antigos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "a salvação de Deus foi enviada aos gentios",
+   "feedbackCorrect": "Paulo anuncia a salvação enviada aos gentios.",
+   "feedbackWrong": {
+    "a": "Ele fala após parte dos judeus rejeitar a palavra.",
+    "c": "Soldados não são citados neste anúncio final.",
+    "d": "O anúncio se abre aos gentios, não se fecha nos antigos."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Observar o anúncio aos gentios.",
+   "evidence": [
+    "Atos 28:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 28:30 na ordem do texto.",
+   "verseRef": "Atos 28:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "E Paulo permaneceu dois anos inteiros"
+    },
+    {
+     "id": "b",
+     "text": "em sua própria casa, que havia alugado"
+    },
+    {
+     "id": "c",
+     "text": "e recebia todos os que o procuravam"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E Paulo permaneceu dois anos inteiros",
+   "feedbackCorrect": "Dois anos na casa alugada, recebendo todos que vinham.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Reconhecer a sequência de Atos 28:30.",
+   "evidence": [
+    "Atos 28:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Atos 28:30, quem Paulo recebia na casa onde permanecia?",
+   "verseRef": "Atos 28:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "todos"
+    },
+    {
+     "id": "b",
+     "text": "judeus"
+    },
+    {
+     "id": "c",
+     "text": "gentios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "recebia todos os que o procuravam",
+   "feedbackCorrect": "Ele recebia todos os que o procuravam naquela casa.",
+   "feedbackWrong": {
+    "b": "Judeus aparecem no versículo anterior se afastando.",
+    "c": "Gentios são citados no anúncio de 28:28, outro momento."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Lembrar quem Paulo recebia.",
+   "evidence": [
+    "Atos 28:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Atos 28:31 comunica que se liga a este contexto?",
+   "verseRef": "Atos 28:31",
+   "passageA": {
+    "ref": "Atos 28:31"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Paulo estava sob custódia em Roma, numa casa alugada."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra totalmente parada"
+    },
+    {
+     "id": "b",
+     "text": "Palavra sem nenhum impedimento"
+    },
+    {
+     "id": "c",
+     "text": "Pregação só com liberdade total"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "sem nenhum impedimento",
+   "feedbackCorrect": "Preso, ele ainda ensinava sobre Jesus sem impedimento.",
+   "feedbackWrong": {
+    "a": "O fim do livro diz o contrário sobre o ensino dele.",
+    "c": "Ele ensina justamente sem ter liberdade total."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Ligar o fim de Atos à palavra livre.",
+   "evidence": [
+    "Atos 28:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Atos 28:29-30, Paulo parou de receber pessoas depois da discussão dos judeus.",
+   "verseRef": "Atos 28:29–30",
+   "correctOptionId": "false",
+   "evidenceSpan": "e recebia todos os que o procuravam",
+   "feedbackCorrect": "Mesmo após a discussão, ele recebia todos que o procuravam.",
+   "feedbackWrong": {
+    "true": "Em 28:30 ele permanece recebendo todos os que vêm."
+   },
+   "hint": "Compare o começo e o fim do trecho.",
+   "learningObjective": "Compreender a continuidade do testemunho em Roma.",
+   "evidence": [
+    "Atos 28:29–30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 28:28, toque a palavra que liga a rejeição ao anúncio aos gentios.",
+   "verseRef": "Atos 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "portanto"
+    },
+    {
+     "id": "b",
+     "text": "gentios"
+    },
+    {
+     "id": "c",
+     "text": "ouvirão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Saiba, portanto, que a salvação de Deus",
+   "feedbackCorrect": "A palavra mostra a consequência do coração endurecido.",
+   "feedbackWrong": {
+    "b": "Gentios recebem a salvação; a ligação vem antes.",
+    "c": "Ouvirão é a resposta deles, não o marcador."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Reconhecer o marcador de resultado.",
+   "evidence": [
+    "Atos 28:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Atos 28:31 se relaciona com a situação de Paulo em 28:30?",
+   "verseRef": "Atos 28:30–31",
+   "options": [
+    {
+     "id": "a",
+     "text": "A prisão encerra de vez o ensino dele"
+    },
+    {
+     "id": "b",
+     "text": "Mesmo em custódia, ele ensina sem impedimento"
+    },
+    {
+     "id": "c",
+     "text": "Ele só ensina após ser totalmente solto"
+    },
+    {
+     "id": "d",
+     "text": "A casa alugada impede qualquer visita útil"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ensinava as coisas que se referem ao Senhor Jesus Cristo sem nenhum impedimento",
+   "feedbackCorrect": "Na casa sob custódia, o ensino continua sem impedimento.",
+   "feedbackWrong": {
+    "a": "Ele prega o Reino com ousadia naquela situação.",
+    "c": "O ensino acontece durante os dois anos ali, não depois.",
+    "d": "Ele recebia todos os que o procuravam na casa."
+   },
+   "hint": "Compare o começo e o fim do trecho.",
+   "learningObjective": "Relacionar custódia e pregação livre.",
+   "evidence": [
+    "Atos 28:30–31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Atos 28:28-31?",
+   "verseRef": "Atos 28:28–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "A salvação é anunciada aos gentios"
+    },
+    {
+     "id": "b",
+     "text": "Paulo permanece dois anos em Roma"
+    },
+    {
+     "id": "c",
+     "text": "O Reino é pregado sem impedimento"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a salvação de Deus foi enviada aos gentios",
+   "feedbackCorrect": "Anúncio aos gentios, permanência em Roma e Reino pregado.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Compreender o movimento final do livro.",
+   "evidence": [
+    "Atos 28:28–31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Atos 28:31, com que atitude Paulo ensinava sobre Jesus?",
+   "verseRef": "Atos 28:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "ousadia"
+    },
+    {
+     "id": "b",
+     "text": "Reino"
+    },
+    {
+     "id": "c",
+     "text": "impedimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com toda a ousadia, ensinava as coisas",
+   "feedbackCorrect": "Ele ensinava com toda a ousadia, mesmo sob custódia.",
+   "feedbackWrong": {
+    "b": "Reino é o conteúdo pregado, não a atitude dele.",
+    "c": "Impedimento é negado no fim, não a atitude."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Compreender a atitude de Paulo ao ensinar.",
+   "evidence": [
+    "Atos 28:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Atos 28:31 a 2 Timóteo 2:9?",
+   "verseRef": "Atos 28:31",
+   "passageA": {
+    "ref": "Atos 28:31"
+   },
+   "passageB": {
+    "ref": "2 Timóteo 2:9"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A palavra não está acorrentada"
+    },
+    {
+     "id": "b",
+     "text": "O mensageiro nunca sofre nada"
+    },
+    {
+     "id": "c",
+     "text": "Ensino apenas quando tudo facilita"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sem nenhum impedimento",
+   "feedbackCorrect": "Paulo preso, mas a palavra de Deus segue sem correntes.",
+   "feedbackWrong": {
+    "b": "Paulo sofre em custódia enquanto a palavra avança.",
+    "c": "Ele ensina justamente numa situação difícil em Roma."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Relacionar a palavra livre e o apóstolo preso.",
+   "evidence": [
+    "Atos 28:31",
+    "2 Timóteo 2:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Atos 28:30-31 mostra que a custódia de Paulo não parou o anúncio do Reino de Deus.",
+   "verseRef": "Atos 28:30–31",
+   "correctOptionId": "true",
+   "evidenceSpan": "Pregando o Reino de Deus e, com toda a ousadia",
+   "feedbackCorrect": "Em custódia, ele pregava o Reino com ousadia por dois anos.",
+   "feedbackWrong": {
+    "false": "Releia o que ele fazia durante os dois anos em 28:31."
+   },
+   "hint": "Compare o começo e o fim do trecho.",
+   "learningObjective": "Interpretar o testemunho sob custódia.",
+   "evidence": [
+    "Atos 28:30–31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 28:28, toque a quem a salvação foi enviada no anúncio final.",
+   "verseRef": "Atos 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "salvação de Deus"
+    },
+    {
+     "id": "b",
+     "text": "gentios"
+    },
+    {
+     "id": "c",
+     "text": "ouvirão"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "a salvação de Deus foi enviada aos gentios",
+   "feedbackCorrect": "Os gentios são os destinatários anunciados por Paulo.",
+   "feedbackWrong": {
+    "a": "Isso é o que foi enviado, não a quem foi enviado.",
+    "c": "Isso é a resposta deles ao ouvirem a salvação."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Sustentar o alcance final do anúncio.",
+   "evidence": [
+    "Atos 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Atos 28:28-31 sustenta sobre o fim do livro?",
+   "verseRef": "Atos 28:30–31",
+   "options": [
+    {
+     "id": "a",
+     "text": "A missão fracassa com Paulo preso"
+    },
+    {
+     "id": "b",
+     "text": "A palavra avança aos gentios sem impedimento"
+    },
+    {
+     "id": "c",
+     "text": "Paulo desiste após a discussão em Roma"
+    },
+    {
+     "id": "d",
+     "text": "O Reino só será pregado após sua soltura"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ensinava as coisas que se referem ao Senhor Jesus Cristo sem nenhum impedimento",
+   "feedbackCorrect": "O livro fecha com a palavra avançando, não com fracasso.",
+   "feedbackWrong": {
+    "a": "Ele recebe todos e prega com ousadia por dois anos.",
+    "c": "Após a discussão, ele permanece anunciando em Roma.",
+    "d": "A pregação acontece durante a custódia, não só depois."
+   },
+   "hint": "Compare o começo e o fim do trecho.",
+   "learningObjective": "Escolher a interpretação do desfecho de Atos.",
+   "evidence": [
+    "Atos 28:28–31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Atos 1:8 até Atos 28:31?",
+   "verseRef": "Atos 28:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Testemunhas começam em Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "O testemunho atravessa povos e prisões"
+    },
+    {
+     "id": "c",
+     "text": "O Reino é pregado em Roma"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Pregando o Reino de Deus",
+   "feedbackCorrect": "De Jerusalém a Roma, o Reino segue sendo pregado.",
+   "feedbackWrong": {
+    "default": "Releia o trecho na sequência em que ele aparece."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Ver o fio de Jerusalém até Roma.",
+   "evidence": [
+    "Atos 28:31",
+    "Atos 1:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Atos 28:31, que palavra negada mostra que nada parou o ensino?",
+   "verseRef": "Atos 28:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "impedimento"
+    },
+    {
+     "id": "b",
+     "text": "ousadia"
+    },
+    {
+     "id": "c",
+     "text": "Reino"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sem nenhum impedimento",
+   "feedbackCorrect": "Sem nenhum impedimento fecha o livro de Atos.",
+   "feedbackWrong": {
+    "b": "Ousadia descreve a atitude; a barreira negada é outra.",
+    "c": "Reino é o conteúdo; a palavra final nega uma barreira."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Lembrar o termo final do livro.",
+   "evidence": [
+    "Atos 28:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Atos 28:28 a Isaías 49:6?",
+   "verseRef": "Atos 28:28",
+   "passageA": {
+    "ref": "Atos 28:28"
+   },
+   "passageB": {
+    "ref": "Isaías 49:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Salvação até os confins"
+    },
+    {
+     "id": "b",
+     "text": "Salvação presa a um povo"
+    },
+    {
+     "id": "c",
+     "text": "Gentios sem ouvir nada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a salvação de Deus foi enviada aos gentios",
+   "feedbackCorrect": "Isaías e Paulo veem a salvação alcançando as nações.",
+   "feedbackWrong": {
+    "b": "A promessa antiga já mirava os confins da terra.",
+    "c": "Paulo afirma que os gentios ouvirão a salvação."
+   },
+   "hint": "Releia o versículo com atenção.",
+   "learningObjective": "Ligar o anúncio final à promessa aos confins.",
+   "evidence": [
+    "Atos 28:28",
+    "Isaías 49:6"
+   ]
+  }
+ ]
+}

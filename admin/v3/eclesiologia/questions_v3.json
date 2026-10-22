@@ -1,0 +1,3298 @@
+[
+  {
+    "id": "eclesiologia-sem-ec-01-corpo-01",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 12:13, judeus e gregos, escravos e livres foram reunidos em um só corpo.",
+    "prompt": "Em 1 Coríntios 12:13, judeus e gregos, escravos e livres foram reunidos em um só corpo.",
+    "cue": "Em 1 Coríntios 12:13, judeus e gregos, escravos e livres foram reunidos em um só corpo.",
+    "verseRef": "1 Coríntios 12:13",
+    "passageText": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quer judeus quer gregos, quer escravos quer livres",
+    "feedbackCorrect": "O texto reúne no mesmo corpo pessoas de origens e condições bem diferentes.",
+    "feedbackWrong": {
+      "false": "Releia a lista de 12:13: judeus e gregos, escravos e livres, no mesmo corpo."
+    },
+    "hint": "Veja quem o versículo inclui.",
+    "learningObjective": "Observar quem o Espírito reúne no mesmo corpo.",
+    "evidence": [
+      "1 Coríntios 12:13"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-01-corpo-02",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 12:12, toque quem tem muitos membros.",
+    "prompt": "Em 1 Coríntios 12:12, toque quem tem muitos membros.",
+    "cue": "Em 1 Coríntios 12:12, toque quem tem muitos membros.",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "o corpo"
+      },
+      {
+        "id": "c",
+        "text": "muitos membros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o corpo é um e tem muitos membros",
+    "feedbackCorrect": "A comparação começa por uma realidade conhecida: um todo com muitas partes.",
+    "feedbackWrong": {
+      "a": "Cristo é apresentado por meio dessa comparação, no fim do versículo.",
+      "c": "Isso é o que ele tem em grande número, não quem tem."
+    },
+    "hint": "Procure o sujeito da comparação.",
+    "learningObjective": "Identificar a imagem central da comparação de Paulo.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-01-corpo-03",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 12:14, de que o corpo é formado?",
+    "prompt": "Segundo 1 Coríntios 12:14, de que o corpo é formado?",
+    "cue": "Segundo 1 Coríntios 12:14, de que o corpo é formado?",
+    "verseRef": "1 Coríntios 12:14",
+    "passageText": "Pois o corpo não é um único membro, mas sim muitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só do membro mais forte"
+      },
+      {
+        "id": "b",
+        "text": "De muitos membros"
+      },
+      {
+        "id": "c",
+        "text": "De um único membro repetido"
+      },
+      {
+        "id": "d",
+        "text": "Só de membros iguais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o corpo não é um único membro, mas sim muitos",
+    "feedbackCorrect": "Paulo nega um corpo de peça única: ele é formado por muitos membros.",
+    "feedbackWrong": {
+      "a": "Nenhum membro sozinho forma o corpo inteiro.",
+      "c": "O texto diz o contrário: não é um único membro.",
+      "d": "Muitos membros não quer dizer membros iguais uns aos outros."
+    },
+    "hint": "Leia a negação que o versículo faz.",
+    "learningObjective": "Observar que o corpo é formado por muitos membros.",
+    "evidence": [
+      "1 Coríntios 12:14"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-01-corpo-04",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Coríntios 12:12 na ordem do texto.",
+    "prompt": "Monte 1 Coríntios 12:12 na ordem do texto.",
+    "cue": "Monte 1 Coríntios 12:12 na ordem do texto.",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois assim como o corpo é um"
+      },
+      {
+        "id": "b",
+        "text": "e tem muitos membros"
+      },
+      {
+        "id": "c",
+        "text": "e todos os membros, sendo muitos, constituem um só corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o corpo é um e tem muitos membros",
+    "feedbackCorrect": "Um, muitos, um só: essa é a sequência que Paulo apresenta.",
+    "feedbackWrong": {
+      "default": "Comece pela afirmação de que ele é um; o um só vem no fim."
+    },
+    "hint": "O versículo começa comparando.",
+    "learningObjective": "Reconhecer a sequência da comparação em 12:12.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-01-corpo-05",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 12:13, qual palavra completa o par oposto a escravos?",
+    "prompt": "Em 1 Coríntios 12:13, qual palavra completa o par oposto a escravos?",
+    "cue": "Em 1 Coríntios 12:13, qual palavra completa o par oposto a escravos?",
+    "verseRef": "1 Coríntios 12:13",
+    "passageText": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "template": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer ___; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "judeus"
+      },
+      {
+        "id": "b",
+        "text": "gregos"
+      },
+      {
+        "id": "c",
+        "text": "livres"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quer escravos quer livres",
+    "feedbackCorrect": "Escravos e pessoas livres, tão distantes na época, estão no mesmo corpo.",
+    "feedbackWrong": {
+      "a": "Judeus formam par com gregos, não com escravos.",
+      "b": "Gregos formam par com judeus, no começo da lista."
+    },
+    "hint": "Procure o segundo par da lista.",
+    "learningObjective": "Lembrar quem o texto inclui no mesmo corpo.",
+    "evidence": [
+      "1 Coríntios 12:13"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-01-corpo-06",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 12:12 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 12:12 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 12:12 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "passageA": {
+      "ref": "1 Coríntios 12:12",
+      "text": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pessoas diferentes passam a pertencer umas às outras em Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só um membro importa"
+      },
+      {
+        "id": "b",
+        "text": "Um só corpo, muitos membros"
+      },
+      {
+        "id": "c",
+        "text": "Cada membro vive sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "constituem um só corpo",
+    "feedbackCorrect": "Muitos diferentes, um só todo: é a imagem que Paulo usa para Cristo e os seus.",
+    "feedbackWrong": {
+      "a": "Todos os membros formam o corpo; nenhum é descartado.",
+      "c": "O texto liga os membros uns aos outros, em vez de isolá-los."
+    },
+    "hint": "Veja o resultado dos muitos membros.",
+    "learningObjective": "Ligar a comparação do corpo à vida comum em Cristo.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-01-corpo-01",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 12:12–13, pessoas de origens diferentes formam corpos separados conforme sua origem.",
+    "prompt": "Em 1 Coríntios 12:12–13, pessoas de origens diferentes formam corpos separados conforme sua origem.",
+    "cue": "Em 1 Coríntios 12:12–13, pessoas de origens diferentes formam corpos separados conforme sua origem.",
+    "verseRef": "1 Coríntios 12:12–13",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo. Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "Origens diferentes não separam: em um só Espírito, todos estão no mesmo corpo.",
+    "feedbackWrong": {
+      "true": "Releia 12:13: todos foram batizados em um corpo, não em vários."
+    },
+    "hint": "Conte quantos corpos o texto menciona.",
+    "learningObjective": "Compreender que a origem diferente não divide o corpo.",
+    "evidence": [
+      "1 Coríntios 12:12–13"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-01-corpo-02",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 12:13, toque o trecho que mostra a fonte comum da unidade.",
+    "prompt": "Em 1 Coríntios 12:13, toque o trecho que mostra a fonte comum da unidade.",
+    "cue": "Em 1 Coríntios 12:13, toque o trecho que mostra a fonte comum da unidade.",
+    "verseRef": "1 Coríntios 12:13",
+    "passageText": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um só Espírito"
+      },
+      {
+        "id": "b",
+        "text": "todos nós"
+      },
+      {
+        "id": "c",
+        "text": "quer judeus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "A unidade tem uma fonte só, comum a judeus e gregos, escravos e livres.",
+    "feedbackWrong": {
+      "b": "Isso mostra quem é reunido, não a fonte da reunião.",
+      "c": "Isso começa a lista de origens, não mostra a fonte comum."
+    },
+    "hint": "Procure quem age reunindo todos.",
+    "learningObjective": "Reconhecer o Espírito como fonte da unidade do corpo.",
+    "evidence": [
+      "1 Coríntios 12:13"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-01-corpo-03",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 12:13 explica a unidade descrita em 12:12?",
+    "prompt": "Como 1 Coríntios 12:13 explica a unidade descrita em 12:12?",
+    "cue": "Como 1 Coríntios 12:13 explica a unidade descrita em 12:12?",
+    "verseRef": "1 Coríntios 12:12–13",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo. Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada grupo forma seu próprio corpo, sem ligação"
+      },
+      {
+        "id": "b",
+        "text": "O mesmo Espírito reúne todos no mesmo corpo"
+      },
+      {
+        "id": "c",
+        "text": "A unidade vem de todos fazerem a mesma tarefa"
+      },
+      {
+        "id": "d",
+        "text": "A unidade depende de todos terem a mesma origem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "A comparação vira realidade: o mesmo Espírito coloca todos no mesmo corpo.",
+    "feedbackWrong": {
+      "a": "O texto fala de um corpo só, não de corpos por grupo.",
+      "c": "O texto não iguala as tarefas; ele reúne as pessoas.",
+      "d": "As origens continuam diferentes; quem une é o Espírito."
+    },
+    "hint": "Veja quem age no começo de 12:13.",
+    "learningObjective": "Relacionar a comparação do corpo à ação do Espírito.",
+    "evidence": [
+      "1 Coríntios 12:12–13"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-01-corpo-04",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em 1 Coríntios 12:12–13?",
+    "prompt": "Como avança o argumento em 1 Coríntios 12:12–13?",
+    "cue": "Como avança o argumento em 1 Coríntios 12:12–13?",
+    "verseRef": "1 Coríntios 12:12–13",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo. Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo compara Cristo a um corpo com muitos membros"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito coloca todos no mesmo corpo"
+      },
+      {
+        "id": "c",
+        "text": "Diferenças de origem não dividem esse corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim também é Cristo",
+    "feedbackCorrect": "Comparação, ação do Espírito e inclusão de todos: o argumento se fecha assim.",
+    "feedbackWrong": {
+      "default": "Comece pela comparação de 12:12; a inclusão de todos vem em 12:13."
+    },
+    "hint": "A comparação vem antes da explicação.",
+    "learningObjective": "Compreender o avanço do argumento de Paulo.",
+    "evidence": [
+      "1 Coríntios 12:12–13"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-01-corpo-05",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 12:11, que ação do Espírito aparece depois de realizar todas estas coisas?",
+    "prompt": "Em 1 Coríntios 12:11, que ação do Espírito aparece depois de realizar todas estas coisas?",
+    "cue": "Em 1 Coríntios 12:11, que ação do Espírito aparece depois de realizar todas estas coisas?",
+    "verseRef": "1 Coríntios 12:11",
+    "passageText": "Mas um só e o mesmo Espírito realiza todas estas coisas, distribuindo-as como lhe apraz a cada um individualmente.",
+    "template": "Mas um só e o mesmo Espírito realiza todas estas coisas, ___-as como lhe apraz a cada um individualmente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reunindo"
+      },
+      {
+        "id": "b",
+        "text": "distribuindo"
+      },
+      {
+        "id": "c",
+        "text": "separando"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "distribuindo-as como lhe apraz a cada um individualmente",
+    "feedbackCorrect": "Um só Espírito realiza e reparte: cada pessoa recebe dele, pessoalmente.",
+    "feedbackWrong": {
+      "a": "Reunir aparece em 12:13; aqui o verbo fala de repartir a cada um.",
+      "c": "O Espírito não separa as pessoas em grupos; ele reparte dons."
+    },
+    "hint": "Veja o que ele faz a cada um, no fim.",
+    "learningObjective": "Compreender que o Espírito reparte a cada pessoa.",
+    "evidence": [
+      "1 Coríntios 12:11"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-01-corpo-06",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Coríntios 12:12 a Romanos 12:5?",
+    "prompt": "O que liga 1 Coríntios 12:12 a Romanos 12:5?",
+    "cue": "O que liga 1 Coríntios 12:12 a Romanos 12:5?",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "passageA": {
+      "ref": "1 Coríntios 12:12",
+      "text": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo."
+    },
+    "passageB": {
+      "ref": "Romanos 12:5",
+      "text": "Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitos membros, um só corpo"
+      },
+      {
+        "id": "b",
+        "text": "Um membro dispensa os outros"
+      },
+      {
+        "id": "c",
+        "text": "Cada membro basta a si"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos os membros, sendo muitos, constituem um só corpo",
+    "feedbackCorrect": "Nos dois textos, muitos diferentes formam um só corpo em Cristo.",
+    "feedbackWrong": {
+      "b": "Se formam um só corpo, nenhum membro dispensa o outro.",
+      "c": "Membros de um corpo precisam uns dos outros; ninguém basta a si."
+    },
+    "hint": "Compare a imagem usada nos dois trechos.",
+    "learningObjective": "Relacionar a imagem do corpo em dois textos de Paulo.",
+    "evidence": [
+      "1 Coríntios 12:12",
+      "Romanos 12:5"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-01-corpo-01",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 12:14, o corpo é formado por muitos membros, e não por um único.",
+    "prompt": "Em 1 Coríntios 12:14, o corpo é formado por muitos membros, e não por um único.",
+    "cue": "Em 1 Coríntios 12:14, o corpo é formado por muitos membros, e não por um único.",
+    "verseRef": "1 Coríntios 12:14",
+    "passageText": "Pois o corpo não é um único membro, mas sim muitos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o corpo não é um único membro, mas sim muitos",
+    "feedbackCorrect": "Paulo nega a peça única: são muitos membros, e diferentes entre si.",
+    "feedbackWrong": {
+      "false": "Releia 12:14: não é um único membro, mas sim muitos."
+    },
+    "hint": "Leia a afirmação inteira do versículo.",
+    "learningObjective": "Interpretar a diversidade de membros no corpo.",
+    "evidence": [
+      "1 Coríntios 12:14"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-01-corpo-02",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 12:15, toque o trecho que afirma que o pé continua pertencendo, mesmo sendo diferente.",
+    "prompt": "Em 1 Coríntios 12:15, toque o trecho que afirma que o pé continua pertencendo, mesmo sendo diferente.",
+    "cue": "Em 1 Coríntios 12:15, toque o trecho que afirma que o pé continua pertencendo, mesmo sendo diferente.",
+    "verseRef": "1 Coríntios 12:15",
+    "passageText": "Se o pé disser: \"Como não sou mão, não sou do corpo; nem por isso deixa de fazer parte do corpo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "parte do corpo"
+      },
+      {
+        "id": "b",
+        "text": "não sou mão"
+      },
+      {
+        "id": "c",
+        "text": "o pé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nem por isso deixa de fazer parte do corpo",
+    "feedbackCorrect": "Ser diferente da mão não exclui o pé: ele continua fazendo parte do todo.",
+    "feedbackWrong": {
+      "b": "Isso é a comparação do pé com outro membro, não a conclusão.",
+      "c": "Isso nomeia quem fala, não a afirmação sobre pertencer."
+    },
+    "hint": "Procure a conclusão no fim do versículo.",
+    "learningObjective": "Sustentar com o texto que ser diferente não exclui ninguém.",
+    "evidence": [
+      "1 Coríntios 12:15"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-01-corpo-03",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Coríntios 12:15–16 sustenta sobre quem se sente menor no corpo?",
+    "prompt": "Que leitura 1 Coríntios 12:15–16 sustenta sobre quem se sente menor no corpo?",
+    "cue": "Que leitura 1 Coríntios 12:15–16 sustenta sobre quem se sente menor no corpo?",
+    "verseRef": "1 Coríntios 12:15–16",
+    "passageText": "Se o pé disser: \"Como não sou mão, não sou do corpo; nem por isso deixa de fazer parte do corpo.\" E se a orelha disser: \"Porque não sou olho, não sou do corpo; nem por isso deixa de ser do corpo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada membro deve tentar ser igual aos outros"
+      },
+      {
+        "id": "b",
+        "text": "Quem se sente menor deve afastar-se dos demais"
+      },
+      {
+        "id": "c",
+        "text": "Ser diferente dos outros não tira ninguém do corpo"
+      },
+      {
+        "id": "d",
+        "text": "Só quem exerce função visível pertence de verdade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nem por isso deixa de fazer parte do corpo",
+    "feedbackCorrect": "Pé e orelha continuam do corpo, mesmo não sendo mão nem olho.",
+    "feedbackWrong": {
+      "a": "O texto não pede igualdade de função, mas reconhece cada membro.",
+      "b": "A conclusão do texto é pertencer, não se afastar.",
+      "d": "Funções menos visíveis também fazem parte do corpo."
+    },
+    "hint": "Veja a conclusão repetida nos dois versículos.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre pertencer.",
+    "evidence": [
+      "1 Coríntios 12:15–16"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-01-corpo-04",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 12:12?",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 12:12?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 12:12?",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O corpo tem muitos membros diferentes"
+      },
+      {
+        "id": "b",
+        "text": "Todos esses membros formam um só corpo"
+      },
+      {
+        "id": "c",
+        "text": "Assim também acontece em Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim também é Cristo",
+    "feedbackCorrect": "Muitos, um só, em Cristo: o sentido da comparação aparece nessa ordem.",
+    "feedbackWrong": {
+      "default": "Cristo é o ponto de chegada da comparação; comece pelos membros."
+    },
+    "hint": "Cristo aparece no fim da comparação.",
+    "learningObjective": "Ver como a comparação aponta para Cristo e os seus.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-01-corpo-05",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 12:14, que palavra resume quantos membros o corpo tem?",
+    "prompt": "Em 1 Coríntios 12:14, que palavra resume quantos membros o corpo tem?",
+    "cue": "Em 1 Coríntios 12:14, que palavra resume quantos membros o corpo tem?",
+    "verseRef": "1 Coríntios 12:14",
+    "passageText": "Pois o corpo não é um único membro, mas sim muitos.",
+    "template": "Pois o corpo não é um único membro, mas sim ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos"
+      },
+      {
+        "id": "b",
+        "text": "iguais"
+      },
+      {
+        "id": "c",
+        "text": "únicos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o corpo não é um único membro, mas sim muitos",
+    "feedbackCorrect": "Não um só, nem todos iguais: muitos membros formam o corpo.",
+    "feedbackWrong": {
+      "b": "O texto fala de quantidade e diferença, não de igualdade.",
+      "c": "Único é justamente o que o texto nega para o corpo."
+    },
+    "hint": "É a palavra oposta a um único, no fim.",
+    "learningObjective": "Lembrar a palavra que resume a diversidade do corpo.",
+    "evidence": [
+      "1 Coríntios 12:14"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-01-corpo-06",
+    "trail": "eclesiologia",
+    "section": "ec-01-corpo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 12:13 a Efésios 4:4?",
+    "prompt": "O que liga 1 Coríntios 12:13 a Efésios 4:4?",
+    "cue": "O que liga 1 Coríntios 12:13 a Efésios 4:4?",
+    "verseRef": "1 Coríntios 12:13",
+    "passageText": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "passageA": {
+      "ref": "1 Coríntios 12:13",
+      "text": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito."
+    },
+    "passageB": {
+      "ref": "Efésios 4:4",
+      "text": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Origens diferentes, corpos separados"
+      },
+      {
+        "id": "b",
+        "text": "Um Espírito une o corpo"
+      },
+      {
+        "id": "c",
+        "text": "Cada crente vive por si"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "Um só corpo e um só Espírito: os dois textos ligam unidade e Espírito.",
+    "feedbackWrong": {
+      "a": "Os dois textos unem, em vez de separar por origem.",
+      "c": "O corpo reúne as pessoas; ninguém é deixado por si."
+    },
+    "hint": "Compare o que os dois dizem sobre corpo e Espírito.",
+    "learningObjective": "Ligar a unidade do corpo ao mesmo Espírito nos dois textos.",
+    "evidence": [
+      "1 Coríntios 12:13",
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-02-reuniao-01",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 2:42, os crentes perseveravam apenas nas orações, sem o ensino dos apóstolos.",
+    "prompt": "Em Atos 2:42, os crentes perseveravam apenas nas orações, sem o ensino dos apóstolos.",
+    "cue": "Em Atos 2:42, os crentes perseveravam apenas nas orações, sem o ensino dos apóstolos.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "perseveravam na doutrina dos apóstolos",
+    "feedbackCorrect": "Ensino, comunhão, partir do pão e orações aparecem juntos na mesma rotina.",
+    "feedbackWrong": {
+      "true": "Releia o começo de 2:42: primeiro vem o ensino dos apóstolos."
+    },
+    "hint": "Leia a lista inteira do versículo.",
+    "learningObjective": "Observar as práticas perseverantes dos primeiros crentes.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-02-reuniao-02",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 2:42, toque em que ensino os crentes perseveravam.",
+    "prompt": "Em Atos 2:42, toque em que ensino os crentes perseveravam.",
+    "cue": "Em Atos 2:42, toque em que ensino os crentes perseveravam.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "doutrina dos apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "nas orações"
+      },
+      {
+        "id": "c",
+        "text": "na comunhão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "perseveravam na doutrina dos apóstolos",
+    "feedbackCorrect": "A perseverança começa ouvindo e guardando o ensino dos apóstolos.",
+    "feedbackWrong": {
+      "b": "Isso fecha a lista; o ensino aparece no começo.",
+      "c": "Isso é a vida partilhada, não o ensino citado primeiro."
+    },
+    "hint": "É o primeiro item da lista.",
+    "learningObjective": "Identificar o ensino no qual os crentes perseveravam.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-02-reuniao-03",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Atos 2:43, o que era feito por intermédio dos apóstolos?",
+    "prompt": "Segundo Atos 2:43, o que era feito por intermédio dos apóstolos?",
+    "cue": "Segundo Atos 2:43, o que era feito por intermédio dos apóstolos?",
+    "verseRef": "Atos 2:43",
+    "passageText": "Em cada alma havia temor; e muitos prodígios e sinais eram feitos por intermédio dos apóstolos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A distribuição de alimentos"
+      },
+      {
+        "id": "b",
+        "text": "Só a venda de propriedades"
+      },
+      {
+        "id": "c",
+        "text": "Muitos prodígios e sinais"
+      },
+      {
+        "id": "d",
+        "text": "A escolha de novos líderes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "muitos prodígios e sinais eram feitos por intermédio dos apóstolos",
+    "feedbackCorrect": "O temor vinha acompanhado de prodígios e sinais feitos pelos apóstolos.",
+    "feedbackWrong": {
+      "a": "Distribuir aparece em 2:45, ligado à necessidade de cada um.",
+      "b": "Vender propriedades aparece em 2:45, feita pelos próprios crentes.",
+      "d": "O versículo não fala de escolha de líderes."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar os sinais feitos por meio dos apóstolos.",
+    "evidence": [
+      "Atos 2:43"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-02-reuniao-04",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 2:42 na ordem do texto.",
+    "prompt": "Monte Atos 2:42 na ordem do texto.",
+    "cue": "Monte Atos 2:42 na ordem do texto.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E perseveravam na doutrina dos apóstolos e na comunhão"
+      },
+      {
+        "id": "b",
+        "text": "no partir do pão"
+      },
+      {
+        "id": "c",
+        "text": "e nas orações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "perseveravam na doutrina dos apóstolos",
+    "feedbackCorrect": "Ensino, mesa partilhada e oração: essa é a ordem da lista de Lucas.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino dos apóstolos; as orações fecham o versículo."
+    },
+    "hint": "O versículo começa pelo ensino.",
+    "learningObjective": "Reconhecer a sequência de Atos 2:42.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-02-reuniao-05",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 2:44, como estavam todos os que criam?",
+    "prompt": "Em Atos 2:44, como estavam todos os que criam?",
+    "cue": "Em Atos 2:44, como estavam todos os que criam?",
+    "verseRef": "Atos 2:44",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum.",
+    "template": "Todos os que criam estavam ___ e tinham tudo em comum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "calados"
+      },
+      {
+        "id": "b",
+        "text": "longe"
+      },
+      {
+        "id": "c",
+        "text": "juntos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Todos os que criam estavam juntos",
+    "feedbackCorrect": "A marca visível daquele povo era estar junto, e não disperso.",
+    "feedbackWrong": {
+      "a": "O versículo fala de estar junto e partilhar, não de silêncio.",
+      "b": "O texto afirma o contrário sobre os que criam."
+    },
+    "hint": "Veja a primeira afirmação do versículo.",
+    "learningObjective": "Lembrar que os crentes viviam juntos.",
+    "evidence": [
+      "Atos 2:44"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-02-reuniao-06",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Atos 2:42 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 2:42 comunica que se liga a este contexto?",
+    "cue": "O que Atos 2:42 comunica que se liga a este contexto?",
+    "verseRef": "Atos 2:42–43",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor; e muitos prodígios e sinais eram feitos por intermédio dos apóstolos.",
+    "passageA": {
+      "ref": "Atos 2:42",
+      "text": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Crentes aprendem, partilham a mesa e oram juntos com perseverança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé sem ensino nem oração"
+      },
+      {
+        "id": "b",
+        "text": "Perseverança na vida comum"
+      },
+      {
+        "id": "c",
+        "text": "Encontros raros e isolados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E perseveravam na doutrina dos apóstolos e na comunhão",
+    "feedbackCorrect": "Perseverar é continuar: ensino, mesa e oração fazem parte da rotina comum.",
+    "feedbackWrong": {
+      "a": "Ensino e oração estão no centro do versículo.",
+      "c": "Perseverar é o contrário de encontros raros e isolados."
+    },
+    "hint": "Repare no verbo que abre o versículo.",
+    "learningObjective": "Ligar Atos 2:42 à perseverança na vida comum.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-02-reuniao-01",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 2:44–45, ter tudo em comum significava que ninguém recebia ajuda quando tinha necessidade.",
+    "prompt": "Em Atos 2:44–45, ter tudo em comum significava que ninguém recebia ajuda quando tinha necessidade.",
+    "cue": "Em Atos 2:44–45, ter tudo em comum significava que ninguém recebia ajuda quando tinha necessidade.",
+    "verseRef": "Atos 2:44–45",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum. E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha necessidade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "à medida que alguém tinha necessidade",
+    "feedbackCorrect": "A partilha chegava justamente a quem tinha necessidade, na medida dela.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 2:45: distribuíam conforme a necessidade de cada um."
+    },
+    "hint": "Veja para quem ia o produto das vendas.",
+    "learningObjective": "Compreender a partilha voltada a quem precisa.",
+    "evidence": [
+      "Atos 2:44–45"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-02-reuniao-02",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 2:42, toque a palavra que mostra que aquela vida continuava dia após dia.",
+    "prompt": "Em Atos 2:42, toque a palavra que mostra que aquela vida continuava dia após dia.",
+    "cue": "Em Atos 2:42, toque a palavra que mostra que aquela vida continuava dia após dia.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "comunhão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E perseveravam na doutrina dos apóstolos",
+    "feedbackCorrect": "Não foi um entusiasmo de um dia: eles continuavam naquela vida.",
+    "feedbackWrong": {
+      "b": "Isso nomeia o ensino recebido, não a continuidade.",
+      "c": "Isso nomeia a vida partilhada, não a continuidade dela."
+    },
+    "hint": "É o verbo que abre o versículo.",
+    "learningObjective": "Reconhecer a perseverança como marca da vida comum.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-02-reuniao-03",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Atos 2:45 explica o ter tudo em comum de 2:44?",
+    "prompt": "Como Atos 2:45 explica o ter tudo em comum de 2:44?",
+    "cue": "Como Atos 2:45 explica o ter tudo em comum de 2:44?",
+    "verseRef": "Atos 2:44–45",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum. E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha necessidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A necessidade de cada um era ignorada"
+      },
+      {
+        "id": "b",
+        "text": "A partilha acontecia só em festas anuais"
+      },
+      {
+        "id": "c",
+        "text": "Bens ficavam guardados só para os líderes"
+      },
+      {
+        "id": "d",
+        "text": "Bens eram vendidos para suprir quem precisava"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "distribuindo o produto entre todos, à medida que alguém tinha necessidade",
+    "feedbackCorrect": "Ter em comum vira prática: vender e repartir conforme a necessidade.",
+    "feedbackWrong": {
+      "a": "A necessidade de cada um orientava a distribuição.",
+      "b": "O texto liga a partilha à necessidade, não a uma festa.",
+      "c": "O produto era distribuído entre todos, não guardado para poucos."
+    },
+    "hint": "Veja o destino do produto das vendas.",
+    "learningObjective": "Relacionar a vida em comum com o cuidado de quem precisa.",
+    "evidence": [
+      "Atos 2:44–45"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-02-reuniao-04",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a partilha em Atos 2:44–45?",
+    "prompt": "Como avança a partilha em Atos 2:44–45?",
+    "cue": "Como avança a partilha em Atos 2:44–45?",
+    "verseRef": "Atos 2:44–45",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum. E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha necessidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os crentes estão juntos e têm tudo em comum"
+      },
+      {
+        "id": "b",
+        "text": "Propriedades e bens são vendidos"
+      },
+      {
+        "id": "c",
+        "text": "O produto chega a quem tem necessidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Todos os que criam estavam juntos e tinham tudo em comum",
+    "feedbackCorrect": "Juntos, com bens vendidos e repartidos: a partilha ganha forma prática.",
+    "feedbackWrong": {
+      "default": "Comece pelo estar juntos de 2:44; a necessidade fecha 2:45."
+    },
+    "hint": "A necessidade de cada um é o ponto final.",
+    "learningObjective": "Compreender os passos da partilha em Atos 2.",
+    "evidence": [
+      "Atos 2:44–45"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-02-reuniao-05",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Atos 2:45, a distribuição acontecia conforme o que de cada pessoa?",
+    "prompt": "Em Atos 2:45, a distribuição acontecia conforme o que de cada pessoa?",
+    "cue": "Em Atos 2:45, a distribuição acontecia conforme o que de cada pessoa?",
+    "verseRef": "Atos 2:45",
+    "passageText": "E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha necessidade.",
+    "template": "E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobra"
+      },
+      {
+        "id": "b",
+        "text": "riqueza"
+      },
+      {
+        "id": "c",
+        "text": "necessidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "à medida que alguém tinha necessidade",
+    "feedbackCorrect": "A medida da partilha era a falta real de cada pessoa, atendida a tempo.",
+    "feedbackWrong": {
+      "a": "Não era o que sobrava: era conforme a falta de quem recebia.",
+      "b": "Quem tinha vendia; quem recebia era medido pela sua falta."
+    },
+    "hint": "Veja o critério no fim do versículo.",
+    "learningObjective": "Compreender o critério da distribuição entre os crentes.",
+    "evidence": [
+      "Atos 2:45"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-02-reuniao-06",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 2:42 a Hebreus 10:25?",
+    "prompt": "O que liga Atos 2:42 a Hebreus 10:25?",
+    "cue": "O que liga Atos 2:42 a Hebreus 10:25?",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "passageA": {
+      "ref": "Atos 2:42",
+      "text": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+    },
+    "passageB": {
+      "ref": "Hebreus 10:25",
+      "text": "Não deixemos de nos reunir, como é o costume de alguns; antes, exortemo-nos uns aos outros, e tanto mais quanto percebemos que o Dia se aproxima."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver a fé sempre sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Reunir-se só quando convém"
+      },
+      {
+        "id": "c",
+        "text": "Não abandonar a vida reunida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E perseveravam na doutrina dos apóstolos e na comunhão",
+    "feedbackCorrect": "Perseverar junto e não abandonar a reunião dizem a mesma fidelidade.",
+    "feedbackWrong": {
+      "a": "Os dois textos valorizam a vida reunida, não o isolamento.",
+      "b": "Perseverança é constância, não encontro só por conveniência."
+    },
+    "hint": "Compare o conselho de Hebreus com a rotina de Atos.",
+    "learningObjective": "Relacionar a perseverança de Atos ao reunir-se em Hebreus.",
+    "evidence": [
+      "Atos 2:42",
+      "Hebreus 10:25"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-02-reuniao-01",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Atos 2:41–42, quem acolheu a palavra foi batizado e passou a perseverar com os demais crentes.",
+    "prompt": "Em Atos 2:41–42, quem acolheu a palavra foi batizado e passou a perseverar com os demais crentes.",
+    "cue": "Em Atos 2:41–42, quem acolheu a palavra foi batizado e passou a perseverar com os demais crentes.",
+    "verseRef": "Atos 2:41–42",
+    "passageText": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase três mil pessoas. E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "foram batizados os que acolheram a sua Palavra com alegria",
+    "feedbackCorrect": "Acolher a palavra, ser batizado e perseverar junto aparecem em sequência.",
+    "feedbackWrong": {
+      "false": "Releia 2:41-42: acolheram, foram batizados e perseveravam."
+    },
+    "hint": "Siga a sequência dos dois versículos.",
+    "learningObjective": "Interpretar a entrada para a vida comum em Atos 2.",
+    "evidence": [
+      "Atos 2:41–42"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-02-reuniao-02",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 2:44, toque o trecho que mostra a partilha de bens entre os crentes.",
+    "prompt": "Em Atos 2:44, toque o trecho que mostra a partilha de bens entre os crentes.",
+    "cue": "Em Atos 2:44, toque o trecho que mostra a partilha de bens entre os crentes.",
+    "verseRef": "Atos 2:44",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estavam juntos"
+      },
+      {
+        "id": "b",
+        "text": "os que criam"
+      },
+      {
+        "id": "c",
+        "text": "tudo em comum"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e tinham tudo em comum",
+    "feedbackCorrect": "A fé partilhada aparece também nos bens: nada era tratado como só meu.",
+    "feedbackWrong": {
+      "a": "Estar junto é presença; a partilha de bens vem na frase seguinte.",
+      "b": "Isso identifica as pessoas, não a partilha entre elas."
+    },
+    "hint": "Procure o que eles tinham, no fim.",
+    "learningObjective": "Sustentar com o texto a partilha de bens dos crentes.",
+    "evidence": [
+      "Atos 2:44"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-02-reuniao-03",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Atos 2:41–42 sustenta sobre entrar para esse povo?",
+    "prompt": "Que leitura Atos 2:41–42 sustenta sobre entrar para esse povo?",
+    "cue": "Que leitura Atos 2:41–42 sustenta sobre entrar para esse povo?",
+    "verseRef": "Atos 2:41–42",
+    "passageText": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase três mil pessoas. E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverar é tarefa apenas dos apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "Quem acolhe a palavra se junta aos outros para perseverar"
+      },
+      {
+        "id": "c",
+        "text": "Basta ouvir uma vez e viver isolado depois"
+      },
+      {
+        "id": "d",
+        "text": "A vida comum dispensa ensino e oração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "somaram-se à igreja quase três mil pessoas",
+    "feedbackCorrect": "Quem acolhe a palavra é somado aos outros e persevera com eles.",
+    "feedbackWrong": {
+      "a": "Quem persevera em 2:42 é todo o grupo, não só apóstolos.",
+      "c": "Os novos crentes se somam ao grupo e continuam juntos.",
+      "d": "Ensino e orações são justamente o centro da perseverança."
+    },
+    "hint": "Veja o que acontece logo depois do batismo.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre pertencer.",
+    "evidence": [
+      "Atos 2:41–42"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-02-reuniao-04",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Atos 2:41–42?",
+    "prompt": "Qual sequência revela o sentido de Atos 2:41–42?",
+    "cue": "Qual sequência revela o sentido de Atos 2:41–42?",
+    "verseRef": "Atos 2:41–42",
+    "passageText": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase três mil pessoas. E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra é acolhida com alegria"
+      },
+      {
+        "id": "b",
+        "text": "Pessoas são batizadas e somadas ao grupo"
+      },
+      {
+        "id": "c",
+        "text": "O grupo persevera na vida comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "foram batizados os que acolheram a sua Palavra com alegria",
+    "feedbackCorrect": "Acolher, pertencer e perseverar: entrar é começar uma vida comum.",
+    "feedbackWrong": {
+      "default": "Comece pelo acolher da palavra; perseverar é o passo contínuo."
+    },
+    "hint": "Perseverar é o último passo, contínuo.",
+    "learningObjective": "Ver a vida comum como fruto de acolher a palavra.",
+    "evidence": [
+      "Atos 2:41–42"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-02-reuniao-05",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Atos 2:41, com que atitude os novos crentes acolheram a palavra?",
+    "prompt": "Em Atos 2:41, com que atitude os novos crentes acolheram a palavra?",
+    "cue": "Em Atos 2:41, com que atitude os novos crentes acolheram a palavra?",
+    "verseRef": "Atos 2:41",
+    "passageText": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase três mil pessoas.",
+    "template": "Assim, foram batizados os que acolheram a sua Palavra com ___; e naquele dia, somaram-se à igreja quase três mil pessoas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pressa"
+      },
+      {
+        "id": "b",
+        "text": "alegria"
+      },
+      {
+        "id": "c",
+        "text": "medo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "acolheram a sua Palavra com alegria",
+    "feedbackCorrect": "A palavra foi acolhida com alegria, e essa alegria virou vida partilhada.",
+    "feedbackWrong": {
+      "a": "O texto não fala de pressa, mas de acolhimento alegre.",
+      "c": "Temor aparece em 2:43, sobre todos; aqui o termo é outro."
+    },
+    "hint": "Veja o sentimento ligado ao acolher.",
+    "learningObjective": "Lembrar a atitude de quem acolhe a palavra.",
+    "evidence": [
+      "Atos 2:41"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-02-reuniao-06",
+    "trail": "eclesiologia",
+    "section": "ec-02-reuniao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Atos 2:44 a Atos 4:32?",
+    "prompt": "O que liga Atos 2:44 a Atos 4:32?",
+    "cue": "O que liga Atos 2:44 a Atos 4:32?",
+    "verseRef": "Atos 2:44",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum.",
+    "passageA": {
+      "ref": "Atos 2:44",
+      "text": "Todos os que criam estavam juntos e tinham tudo em comum."
+    },
+    "passageB": {
+      "ref": "Atos 4:32",
+      "text": "A multidão dos que criam era de um só coração e de uma só alma; ninguém considerava exclusivamente sua nem uma das coisas que possuía, mas tudo, entre eles, lhes era comum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um coração na partilha"
+      },
+      {
+        "id": "b",
+        "text": "Fé sem vida partilhada"
+      },
+      {
+        "id": "c",
+        "text": "Cada um só por si"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Todos os que criam estavam juntos e tinham tudo em comum",
+    "feedbackCorrect": "Nos dois textos, crer junto se mostra em coração unido e bens partilhados.",
+    "feedbackWrong": {
+      "b": "A fé aparece justamente em vida e bens partilhados.",
+      "c": "Os dois textos mostram o contrário do cada um por si."
+    },
+    "hint": "Veja o que os dois trechos dizem do coração do grupo.",
+    "learningObjective": "Ligar a partilha de Atos 2 ao coração unido de Atos 4.",
+    "evidence": [
+      "Atos 2:44",
+      "Atos 4:32"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-03-missao-01",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 28:18, Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.",
+    "prompt": "Em Mateus 28:18, Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.",
+    "cue": "Em Mateus 28:18, Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Antes de enviar, Jesus declara a autoridade total que sustenta o envio.",
+    "feedbackWrong": {
+      "false": "Releia a fala de Jesus em 28:18 sobre céu e terra."
+    },
+    "hint": "Veja o alcance da autoridade citada.",
+    "learningObjective": "Observar a autoridade de Jesus antes do envio.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-03-missao-02",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 28:19, toque até onde alcança o fazer discípulos.",
+    "prompt": "Em Mateus 28:19, toque até onde alcança o fazer discípulos.",
+    "cue": "Em Mateus 28:19, toque até onde alcança o fazer discípulos.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "vão e façam"
+      },
+      {
+        "id": "b",
+        "text": "todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "Espírito Santo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O alcance é o mundo inteiro: nenhum povo fica fora do envio.",
+    "feedbackWrong": {
+      "a": "Isso é o movimento de ir e fazer, não o alcance citado.",
+      "c": "Isso nomeia em quem batizar, não até onde ir."
+    },
+    "hint": "Procure o destino do envio.",
+    "learningObjective": "Identificar o alcance universal do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-03-missao-03",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 28:19, em nome de quem os discípulos batizam?",
+    "prompt": "Segundo Mateus 28:19, em nome de quem os discípulos batizam?",
+    "cue": "Segundo Mateus 28:19, em nome de quem os discípulos batizam?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do Pai, do Filho e do Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "Só em nome do Pai"
+      },
+      {
+        "id": "c",
+        "text": "Em nome de cada nação"
+      },
+      {
+        "id": "d",
+        "text": "Em nome dos apóstolos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "O texto nomeia Pai, Filho e Espírito Santo juntos no batismo.",
+    "feedbackWrong": {
+      "b": "O texto acrescenta o Filho e o Espírito Santo ao Pai.",
+      "c": "As nações são o destino, não o nome do batismo.",
+      "d": "Os apóstolos são enviados; o nome citado é outro."
+    },
+    "hint": "Leia os três nomes citados no versículo.",
+    "learningObjective": "Observar o nome em que o batismo acontece.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-03-missao-04",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:19–20 na ordem do texto.",
+    "prompt": "Monte Mateus 28:19–20 na ordem do texto.",
+    "cue": "Monte Mateus 28:19–20 na ordem do texto.",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Portanto, vão e façam discípulos de todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-os em nome do Pai, do Filho e do Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Ensinando-os a observar tudo o que vos ordenei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Ir, batizar e ensinar aparecem nessa ordem na fala de Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo ir e fazer discípulos; o ensino vem depois."
+    },
+    "hint": "O ensino aparece no versículo seguinte.",
+    "learningObjective": "Reconhecer a sequência do envio em Mateus 28.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-03-missao-05",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "prompt": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "cue": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "template": "E, aproximando-se de Jesus, Ele lhes disse: Toda a ___ me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "autoridade"
+      },
+      {
+        "id": "b",
+        "text": "permissão"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "A autoridade de Jesus sobre céu e terra é a base de todo o envio.",
+    "feedbackWrong": {
+      "b": "Jesus não pede licença: ele declara o que lhe foi dado.",
+      "c": "O texto não fala de riqueza recebida por Jesus aqui."
+    },
+    "hint": "É o que vem depois de Toda a, no texto.",
+    "learningObjective": "Lembrar a base do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-03-missao-06",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus envia seus discípulos para além do próprio povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Missão só para um povo"
+      },
+      {
+        "id": "b",
+        "text": "Ficar apenas na Galileia"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos de todas as nações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio ultrapassa fronteiras: o alvo são todas as nações.",
+    "feedbackWrong": {
+      "a": "O texto alarga o alvo para todas as nações.",
+      "b": "A Galileia é o ponto de encontro, não o limite do envio."
+    },
+    "hint": "Veja o destino citado por Jesus.",
+    "learningObjective": "Ligar o envio ao alcance de todas as nações.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-03-missao-01",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:19–20, fazer discípulos dispensa ensinar as pessoas a observar o que Jesus ordenou.",
+    "prompt": "Em Mateus 28:19–20, fazer discípulos dispensa ensinar as pessoas a observar o que Jesus ordenou.",
+    "cue": "Em Mateus 28:19–20, fazer discípulos dispensa ensinar as pessoas a observar o que Jesus ordenou.",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "O envio inclui ensinar a observar tudo o que Jesus ordenou.",
+    "feedbackWrong": {
+      "true": "Releia 28:20: ensinar a observar faz parte do mesmo envio."
+    },
+    "hint": "Veja a tarefa citada no versículo 20.",
+    "learningObjective": "Compreender que fazer discípulos inclui ensino contínuo.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-03-missao-02",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade afirmada antes.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade afirmada antes.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade afirmada antes.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "façam"
+      },
+      {
+        "id": "b",
+        "text": "Portanto"
+      },
+      {
+        "id": "c",
+        "text": "vão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Portanto, vão e façam discípulos de todas as nações",
+    "feedbackCorrect": "Essa palavrinha mostra que o envio nasce da autoridade de Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é a tarefa dada, não a ligação com a autoridade.",
+      "c": "Isso é o movimento do envio, não a ligação com o verso anterior."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a ligação entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-03-missao-03",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 28:19 se liga a Mateus 28:18?",
+    "prompt": "Como Mateus 28:19 se liga a Mateus 28:18?",
+    "cue": "Como Mateus 28:19 se liga a Mateus 28:18?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A autoridade vale só para o céu, não para a terra"
+      },
+      {
+        "id": "b",
+        "text": "O envio continua mesmo sem autoridade de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Porque Jesus tem autoridade, ele pode enviar"
+      },
+      {
+        "id": "d",
+        "text": "Os discípulos enviam a si mesmos ao mundo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade total primeiro, envio depois: um nasce do outro.",
+    "feedbackWrong": {
+      "a": "A autoridade citada alcança céu e terra juntos.",
+      "b": "O envio vem justamente depois da autoridade declarada.",
+      "d": "Quem envia é Jesus; os discípulos são os enviados."
+    },
+    "hint": "Repare na primeira palavra do versículo 19.",
+    "learningObjective": "Relacionar a autoridade de Jesus ao envio dos discípulos.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-03-missao-04",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a tarefa em Mateus 28:19–20?",
+    "prompt": "Como avança a tarefa em Mateus 28:19–20?",
+    "cue": "Como avança a tarefa em Mateus 28:19–20?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ir e fazer discípulos nas nações"
+      },
+      {
+        "id": "b",
+        "text": "Batizar em nome do Pai, Filho e Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar a observar o que Jesus ordenou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "A tarefa avança do ir ao batizar e ao ensinar com perseverança.",
+    "feedbackWrong": {
+      "default": "Comece pelo ir às nações; o ensino fecha a tarefa."
+    },
+    "hint": "O ensino é a etapa que continua no tempo.",
+    "learningObjective": "Compreender as etapas da tarefa dada por Jesus.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-03-missao-05",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, Jesus manda fazer o quê de todas as nações?",
+    "prompt": "Em Mateus 28:19, Jesus manda fazer o quê de todas as nações?",
+    "cue": "Em Mateus 28:19, Jesus manda fazer o quê de todas as nações?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "template": "Portanto, vão e façam ___ de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "visitantes"
+      },
+      {
+        "id": "c",
+        "text": "ouvintes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O alvo não é só contato passageiro: é formar seguidores de Jesus.",
+    "feedbackWrong": {
+      "b": "Visitar é pouco: o texto fala de formar seguidores.",
+      "c": "Ouvir é só o começo; o alvo é seguir e aprender."
+    },
+    "hint": "É quem aprende de Jesus e o segue.",
+    "learningObjective": "Compreender o alvo do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-03-missao-06",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 28:19 a Atos 1:8?",
+    "prompt": "O que liga Mateus 28:19 a Atos 1:8?",
+    "cue": "O que liga Mateus 28:19 a Atos 1:8?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Envio sem o Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Testemunhas até os confins"
+      },
+      {
+        "id": "c",
+        "text": "Ficar só em Jerusalém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Todas as nações e até os confins da terra: o alcance é o mesmo.",
+    "feedbackWrong": {
+      "a": "Atos liga o envio justamente ao Espírito que vem sobre eles.",
+      "c": "Jerusalém é o começo em Atos, não o limite do envio."
+    },
+    "hint": "Compare o alcance citado nos dois trechos.",
+    "learningObjective": "Relacionar o envio de Mateus ao de Atos.",
+    "evidence": [
+      "Mateus 28:19",
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-03-missao-01",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, Jesus afirma estar com os discípulos todos os dias até a consumação do século.",
+    "prompt": "Em Mateus 28:20, Jesus afirma estar com os discípulos todos os dias até a consumação do século.",
+    "cue": "Em Mateus 28:20, Jesus afirma estar com os discípulos todos os dias até a consumação do século.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "eis que estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "Quem envia promete ficar junto: presença todos os dias, até o fim.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 28:20: ele está com eles todos os dias."
+    },
+    "hint": "Veja a promessa no fim da fala.",
+    "learningObjective": "Interpretar a presença prometida por Jesus aos enviados.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-03-missao-02",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, toque o trecho que mostra Jesus presente com os discípulos.",
+    "prompt": "Em Mateus 28:20, toque o trecho que mostra Jesus presente com os discípulos.",
+    "cue": "Em Mateus 28:20, toque o trecho que mostra Jesus presente com os discípulos.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos os dias"
+      },
+      {
+        "id": "b",
+        "text": "consumação do século"
+      },
+      {
+        "id": "c",
+        "text": "estou convosco"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eis que estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "A promessa é pessoal: o próprio Jesus está com os que ele envia.",
+    "feedbackWrong": {
+      "a": "Isso marca a duração da presença, não a presença em si.",
+      "b": "Isso marca até quando dura a promessa, não quem está presente."
+    },
+    "hint": "Procure Jesus falando de si mesmo.",
+    "learningObjective": "Sustentar com o texto a presença de Jesus com os discípulos.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-03-missao-03",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 28:19–20 sustenta sobre o envio dos discípulos?",
+    "prompt": "Que leitura Mateus 28:19–20 sustenta sobre o envio dos discípulos?",
+    "cue": "Que leitura Mateus 28:19–20 sustenta sobre o envio dos discípulos?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinar é etapa opcional depois do batismo"
+      },
+      {
+        "id": "b",
+        "text": "Fazer discípulos é só reunir nomes rapidamente"
+      },
+      {
+        "id": "c",
+        "text": "O envio prova que Jesus ficará ausente dos seus"
+      },
+      {
+        "id": "d",
+        "text": "Enviar não é abandonar, pois Jesus promete presença"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "eis que estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "Envio, ensino e presença prometida caminham juntos na mesma fala.",
+    "feedbackWrong": {
+      "a": "Ensinar a observar é parte do envio, não etapa opcional.",
+      "b": "O texto pede discípulos ensinados, não só nomes reunidos.",
+      "c": "A promessa final é de presença todos os dias, não ausência."
+    },
+    "hint": "Junte o começo e o fim da fala de Jesus.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre o envio.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-03-missao-04",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "prompt": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "cue": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus recebe toda autoridade no céu e na terra"
+      },
+      {
+        "id": "b",
+        "text": "Ele envia os discípulos a todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "Ele promete estar com eles todos os dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Autoridade, envio e presença: a fala de Jesus se fecha nesse fio.",
+    "feedbackWrong": {
+      "default": "Comece pela autoridade de 28:18; a presença fecha em 28:20."
+    },
+    "hint": "A promessa de presença é o fecho da fala.",
+    "learningObjective": "Ver autoridade, envio e presença como um só fio.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-03-missao-05",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, os discípulos ensinam a observar tudo o que Jesus fez o quê?",
+    "prompt": "Em Mateus 28:20, os discípulos ensinam a observar tudo o que Jesus fez o quê?",
+    "cue": "Em Mateus 28:20, os discípulos ensinam a observar tudo o que Jesus fez o quê?",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "template": "Ensinando-os a observar tudo o que vos ___; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouviu"
+      },
+      {
+        "id": "b",
+        "text": "ordenei"
+      },
+      {
+        "id": "c",
+        "text": "sugeriu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "O ensino guarda as palavras do próprio Jesus, com a autoridade dele.",
+    "feedbackWrong": {
+      "a": "Quem fala é Jesus; ele ordena, e os discípulos ensinam.",
+      "c": "Sugestão é fraca demais para a fala de quem tem autoridade."
+    },
+    "hint": "É o verbo de Jesus sobre suas palavras.",
+    "learningObjective": "Lembrar que o ensino guarda o que Jesus ordenou.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-03-missao-06",
+    "trail": "eclesiologia",
+    "section": "ec-03-missao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 28:20 a Mateus 1:23?",
+    "prompt": "O que liga Mateus 28:20 a Mateus 1:23?",
+    "cue": "O que liga Mateus 28:20 a Mateus 1:23?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "passageA": {
+      "ref": "Mateus 28:20",
+      "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+    },
+    "passageB": {
+      "ref": "Mateus 1:23",
+      "text": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus conosco até o fim"
+      },
+      {
+        "id": "b",
+        "text": "Presença só num lugar sagrado"
+      },
+      {
+        "id": "c",
+        "text": "Jesus distante dos enviados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eis que estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "O livro abre com Deus conosco e fecha com Jesus conosco todos os dias.",
+    "feedbackWrong": {
+      "b": "A presença prometida acompanha os discípulos onde forem.",
+      "c": "Os dois trechos afirmam presença, não distância de Jesus."
+    },
+    "hint": "Compare o nome de Jesus no começo do livro.",
+    "learningObjective": "Ligar a presença de Jesus no começo e no fim de Mateus.",
+    "evidence": [
+      "Mateus 28:20",
+      "Mateus 1:23"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-01",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 2:42, os crentes perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "prompt": "Em Atos 2:42, os crentes perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "cue": "Em Atos 2:42, os crentes perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações",
+    "feedbackCorrect": "As quatro práticas aparecem juntas, na mesma rotina perseverante.",
+    "feedbackWrong": {
+      "false": "Releia a lista completa de Atos 2:42, do ensino às orações."
+    },
+    "hint": "Confira a lista inteira do versículo.",
+    "learningObjective": "Revisar as práticas perseverantes dos primeiros crentes.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-02",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Coríntios 12:12, toque o que o corpo tem em grande número.",
+    "prompt": "Em 1 Coríntios 12:12, toque o que o corpo tem em grande número.",
+    "cue": "Em 1 Coríntios 12:12, toque o que o corpo tem em grande número.",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "um só corpo"
+      },
+      {
+        "id": "c",
+        "text": "muitos membros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o corpo é um e tem muitos membros",
+    "feedbackCorrect": "Um corpo só, mas com grande número de partes diferentes.",
+    "feedbackWrong": {
+      "a": "Cristo é o ponto de chegada da comparação, no fim.",
+      "b": "Isso é o resultado dos muitos, não o que há em grande número."
+    },
+    "hint": "Procure a quantidade citada no meio.",
+    "learningObjective": "Revisar a imagem do corpo com seus membros.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-03",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 28:19, em nome de quem os discípulos batizam?",
+    "prompt": "Segundo Mateus 28:19, em nome de quem os discípulos batizam?",
+    "cue": "Segundo Mateus 28:19, em nome de quem os discípulos batizam?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em nome de cada cidade"
+      },
+      {
+        "id": "b",
+        "text": "Em nome dos doze apóstolos"
+      },
+      {
+        "id": "c",
+        "text": "Só em nome do Filho"
+      },
+      {
+        "id": "d",
+        "text": "Do Pai, do Filho e do Espírito Santo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+    "feedbackCorrect": "Pai, Filho e Espírito Santo são nomeados juntos no batismo.",
+    "feedbackWrong": {
+      "a": "Cidades são destino do envio, não nome do batismo.",
+      "b": "Os apóstolos são enviados; o nome citado é outro.",
+      "c": "O texto nomeia também o Pai e o Espírito Santo."
+    },
+    "hint": "Leia os três nomes do versículo.",
+    "learningObjective": "Revisar o nome em que o batismo acontece.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-04",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 2:42 na ordem do texto.",
+    "prompt": "Monte Atos 2:42 na ordem do texto.",
+    "cue": "Monte Atos 2:42 na ordem do texto.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E perseveravam na doutrina dos apóstolos e na comunhão"
+      },
+      {
+        "id": "b",
+        "text": "no partir do pão"
+      },
+      {
+        "id": "c",
+        "text": "e nas orações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "perseveravam na doutrina dos apóstolos",
+    "feedbackCorrect": "Ensino e comunhão, partir do pão e orações: essa é a ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino dos apóstolos; as orações fecham."
+    },
+    "hint": "O versículo começa pelo ensino.",
+    "learningObjective": "Revisar a sequência de Atos 2:42.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-05",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 2:42, em que os crentes perseveravam no fim da lista, depois do partir do pão?",
+    "prompt": "Em Atos 2:42, em que os crentes perseveravam no fim da lista, depois do partir do pão?",
+    "cue": "Em Atos 2:42, em que os crentes perseveravam no fim da lista, depois do partir do pão?",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "template": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vendas"
+      },
+      {
+        "id": "b",
+        "text": "viagens"
+      },
+      {
+        "id": "c",
+        "text": "orações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e nas orações",
+    "feedbackCorrect": "A lista perseverante se fecha falando com Deus juntos.",
+    "feedbackWrong": {
+      "a": "Vendas de bens aparecem depois, em Atos 2:45.",
+      "b": "Viagens não aparecem nesta lista de Atos 2:42."
+    },
+    "hint": "É a última prática da lista.",
+    "learningObjective": "Revisar o fecho da lista de Atos 2:42.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-06",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Coríntios 12:12 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 12:12 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 12:12 comunica que se liga a este contexto?",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "passageA": {
+      "ref": "1 Coríntios 12:12",
+      "text": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pessoas diferentes passam a pertencer umas às outras em Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só um membro importa"
+      },
+      {
+        "id": "b",
+        "text": "Um só corpo, muitos membros"
+      },
+      {
+        "id": "c",
+        "text": "Cada membro vive sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "constituem um só corpo",
+    "feedbackCorrect": "Muitos diferentes formam um só todo em Cristo.",
+    "feedbackWrong": {
+      "a": "Todos os membros formam o corpo; nenhum é descartado.",
+      "c": "O texto liga os membros uns aos outros, sem isolá-los."
+    },
+    "hint": "Veja o resultado dos muitos membros.",
+    "learningObjective": "Revisar a ligação entre corpo e pertencimento.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-07",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 2:42, toque a prática ligada à mesa partilhada dos crentes.",
+    "prompt": "Em Atos 2:42, toque a prática ligada à mesa partilhada dos crentes.",
+    "cue": "Em Atos 2:42, toque a prática ligada à mesa partilhada dos crentes.",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nas orações"
+      },
+      {
+        "id": "b",
+        "text": "na comunhão"
+      },
+      {
+        "id": "c",
+        "text": "partir do pão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "no partir do pão",
+    "feedbackCorrect": "A mesa faz parte da rotina comum daquele povo perseverante.",
+    "feedbackWrong": {
+      "a": "Isso é falar com Deus juntos, não a mesa partilhada.",
+      "b": "Isso é a vida partilhada em geral, não a mesa citada."
+    },
+    "hint": "Procure o alimento citado na lista.",
+    "learningObjective": "Revisar a mesa na vida comum dos crentes.",
+    "evidence": [
+      "Atos 2:42"
+    ]
+  },
+  {
+    "id": "eclesiologia-sem-ec-boss-08",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 28:19–20 na ordem do texto.",
+    "prompt": "Monte Mateus 28:19–20 na ordem do texto.",
+    "cue": "Monte Mateus 28:19–20 na ordem do texto.",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Portanto, vão e façam discípulos de todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-os em nome do Pai, do Filho e do Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Ensinando-os a observar tudo o que vos ordenei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "Ir, batizar e ensinar: essa é a sequência da fala de Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo ir às nações; o ensino vem no versículo 20."
+    },
+    "hint": "O ensino aparece por último, no verso 20.",
+    "learningObjective": "Revisar a sequência do envio em Mateus 28.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-01",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 28:19–20, fazer discípulos dispensa ensinar as pessoas a observar o que Jesus ordenou.",
+    "prompt": "Em Mateus 28:19–20, fazer discípulos dispensa ensinar as pessoas a observar o que Jesus ordenou.",
+    "cue": "Em Mateus 28:19–20, fazer discípulos dispensa ensinar as pessoas a observar o que Jesus ordenou.",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+    "feedbackCorrect": "Fazer discípulos inclui ensinar a observar tudo o que Jesus ordenou.",
+    "feedbackWrong": {
+      "true": "Releia 28:20: o ensino faz parte do mesmo envio."
+    },
+    "hint": "Veja a tarefa do versículo 20.",
+    "learningObjective": "Revisar que o envio inclui ensino contínuo.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-02",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade afirmada antes.",
+    "prompt": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade afirmada antes.",
+    "cue": "Em Mateus 28:19, toque a palavra que liga o envio à autoridade afirmada antes.",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "façam"
+      },
+      {
+        "id": "b",
+        "text": "Portanto"
+      },
+      {
+        "id": "c",
+        "text": "vão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Portanto, vão e façam discípulos de todas as nações",
+    "feedbackCorrect": "O envio nasce da autoridade total que Jesus acabou de declarar.",
+    "feedbackWrong": {
+      "a": "Isso é a tarefa dada, não a ligação com a autoridade.",
+      "c": "Isso é o movimento do envio, não a ligação anterior."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Revisar a ligação entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-03",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Coríntios 12:13 explica a unidade descrita em 12:12?",
+    "prompt": "Como 1 Coríntios 12:13 explica a unidade descrita em 12:12?",
+    "cue": "Como 1 Coríntios 12:13 explica a unidade descrita em 12:12?",
+    "verseRef": "1 Coríntios 12:12–13",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo. Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O mesmo Espírito reúne todos no mesmo corpo"
+      },
+      {
+        "id": "b",
+        "text": "A unidade vem de todos fazerem a mesma tarefa"
+      },
+      {
+        "id": "c",
+        "text": "Cada grupo forma seu próprio corpo, sem ligação"
+      },
+      {
+        "id": "d",
+        "text": "A unidade depende de todos terem a mesma origem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "Origens diferentes, mesmo Espírito e mesmo corpo para todos.",
+    "feedbackWrong": {
+      "b": "O texto reúne pessoas, sem igualar as tarefas delas.",
+      "c": "O texto fala de um corpo só, não de corpos por grupo.",
+      "d": "As origens seguem diferentes; quem une é o Espírito."
+    },
+    "hint": "Veja quem age no começo de 12:13.",
+    "learningObjective": "Revisar o Espírito como fonte da unidade.",
+    "evidence": [
+      "1 Coríntios 12:12–13"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-04",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a partilha em Atos 2:44–45?",
+    "prompt": "Como avança a partilha em Atos 2:44–45?",
+    "cue": "Como avança a partilha em Atos 2:44–45?",
+    "verseRef": "Atos 2:44–45",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum. E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha necessidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os crentes estão juntos e têm tudo em comum"
+      },
+      {
+        "id": "b",
+        "text": "Propriedades e bens são vendidos"
+      },
+      {
+        "id": "c",
+        "text": "O produto chega a quem tem necessidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Todos os que criam estavam juntos e tinham tudo em comum",
+    "feedbackCorrect": "Estar juntos vira venda e repartição conforme a necessidade.",
+    "feedbackWrong": {
+      "default": "Comece pelo estar juntos de 2:44; a necessidade fecha."
+    },
+    "hint": "A necessidade de cada um fecha o trecho.",
+    "learningObjective": "Revisar os passos da partilha em Atos 2.",
+    "evidence": [
+      "Atos 2:44–45"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-05",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 28:19, Jesus manda fazer discípulos de todas as quê?",
+    "prompt": "Em Mateus 28:19, Jesus manda fazer discípulos de todas as quê?",
+    "cue": "Em Mateus 28:19, Jesus manda fazer discípulos de todas as quê?",
+    "verseRef": "Mateus 28:19",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "template": "Portanto, vão e façam discípulos de todas as ___, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "famílias"
+      },
+      {
+        "id": "c",
+        "text": "cidades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "façam discípulos de todas as nações",
+    "feedbackCorrect": "O alcance do envio é amplo: povos de toda a terra.",
+    "feedbackWrong": {
+      "b": "Famílias são grupos menores; o texto mira povos inteiros.",
+      "c": "Cidades são lugares; o alcance citado é maior que elas."
+    },
+    "hint": "Pense em povos inteiros da terra.",
+    "learningObjective": "Revisar o alcance do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-06",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 2:42 a Hebreus 10:25?",
+    "prompt": "O que liga Atos 2:42 a Hebreus 10:25?",
+    "cue": "O que liga Atos 2:42 a Hebreus 10:25?",
+    "verseRef": "Atos 2:42",
+    "passageText": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "passageA": {
+      "ref": "Atos 2:42",
+      "text": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+    },
+    "passageB": {
+      "ref": "Hebreus 10:25",
+      "text": "Não deixemos de nos reunir, como é o costume de alguns; antes, exortemo-nos uns aos outros, e tanto mais quanto percebemos que o Dia se aproxima."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reunir-se só quando convém"
+      },
+      {
+        "id": "b",
+        "text": "Viver a fé sempre sozinho"
+      },
+      {
+        "id": "c",
+        "text": "Não abandonar a vida reunida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E perseveravam na doutrina dos apóstolos e na comunhão",
+    "feedbackCorrect": "Perseverar junto e não abandonar a reunião dizem a mesma coisa.",
+    "feedbackWrong": {
+      "a": "Perseverança é constância, não encontro ocasional.",
+      "b": "Os dois textos valorizam a vida reunida dos crentes."
+    },
+    "hint": "Compare o conselho de Hebreus com Atos.",
+    "learningObjective": "Revisar a perseverança reunida em dois textos.",
+    "evidence": [
+      "Atos 2:42",
+      "Hebreus 10:25"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-07",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 2:44, toque o trecho que mostra os crentes reunidos, e não dispersos.",
+    "prompt": "Em Atos 2:44, toque o trecho que mostra os crentes reunidos, e não dispersos.",
+    "cue": "Em Atos 2:44, toque o trecho que mostra os crentes reunidos, e não dispersos.",
+    "verseRef": "Atos 2:44",
+    "passageText": "Todos os que criam estavam juntos e tinham tudo em comum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tudo em comum"
+      },
+      {
+        "id": "b",
+        "text": "estavam juntos"
+      },
+      {
+        "id": "c",
+        "text": "os que criam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Todos os que criam estavam juntos",
+    "feedbackCorrect": "A vida daquele povo era vivida lado a lado, no dia a dia.",
+    "feedbackWrong": {
+      "a": "Isso mostra a partilha de bens, não o estar reunido.",
+      "c": "Isso identifica as pessoas, não como elas viviam."
+    },
+    "hint": "Procure como eles estavam, no meio.",
+    "learningObjective": "Revisar a vida reunida dos primeiros crentes.",
+    "evidence": [
+      "Atos 2:44"
+    ]
+  },
+  {
+    "id": "eclesiologia-cam-ec-boss-08",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Mateus 28:18–19?",
+    "prompt": "Como se encadeiam os passos de Mateus 28:18–19?",
+    "cue": "Como se encadeiam os passos de Mateus 28:18–19?",
+    "verseRef": "Mateus 28:18–19",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus se aproxima dos discípulos"
+      },
+      {
+        "id": "b",
+        "text": "Ele afirma ter toda autoridade"
+      },
+      {
+        "id": "c",
+        "text": "Por isso envia às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "Aproximação, autoridade declarada e envio: esse é o encadeamento.",
+    "feedbackWrong": {
+      "default": "Comece pela aproximação; o envio vem depois da autoridade."
+    },
+    "hint": "O envio é consequência da autoridade.",
+    "learningObjective": "Revisar o encadeamento entre autoridade e envio.",
+    "evidence": [
+      "Mateus 28:18–19"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-01",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 12:15, quem se sente diferente dos outros deixa de fazer parte do corpo.",
+    "prompt": "Em 1 Coríntios 12:15, quem se sente diferente dos outros deixa de fazer parte do corpo.",
+    "cue": "Em 1 Coríntios 12:15, quem se sente diferente dos outros deixa de fazer parte do corpo.",
+    "verseRef": "1 Coríntios 12:15",
+    "passageText": "Se o pé disser: \"Como não sou mão, não sou do corpo; nem por isso deixa de fazer parte do corpo.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "nem por isso deixa de fazer parte do corpo",
+    "feedbackCorrect": "Mesmo se sentindo menor, o membro continua fazendo parte do corpo.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 12:15: nem por isso deixa de fazer parte."
+    },
+    "hint": "Veja a conclusão no fim do versículo.",
+    "learningObjective": "Revisar que ser diferente não exclui ninguém do corpo.",
+    "evidence": [
+      "1 Coríntios 12:15"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-02",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 12:13, toque o trecho que mostra a fonte comum da unidade do corpo.",
+    "prompt": "Em 1 Coríntios 12:13, toque o trecho que mostra a fonte comum da unidade do corpo.",
+    "cue": "Em 1 Coríntios 12:13, toque o trecho que mostra a fonte comum da unidade do corpo.",
+    "verseRef": "1 Coríntios 12:13",
+    "passageText": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um só Espírito"
+      },
+      {
+        "id": "b",
+        "text": "todos nós"
+      },
+      {
+        "id": "c",
+        "text": "quer gregos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "Um só Espírito reúne judeus e gregos, escravos e livres.",
+    "feedbackWrong": {
+      "b": "Isso mostra quem é reunido, não a fonte da reunião.",
+      "c": "Isso é parte da lista de origens, não a fonte comum."
+    },
+    "hint": "Procure quem age reunindo todos.",
+    "learningObjective": "Revisar o Espírito como fonte da unidade.",
+    "evidence": [
+      "1 Coríntios 12:13"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-03",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 28:19–20 sustenta sobre o envio dos discípulos?",
+    "prompt": "Que leitura Mateus 28:19–20 sustenta sobre o envio dos discípulos?",
+    "cue": "Que leitura Mateus 28:19–20 sustenta sobre o envio dos discípulos?",
+    "verseRef": "Mateus 28:19–20",
+    "passageText": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fazer discípulos é só reunir nomes rapidamente"
+      },
+      {
+        "id": "b",
+        "text": "O envio prova que Jesus ficará ausente dos seus"
+      },
+      {
+        "id": "c",
+        "text": "Enviar não é abandonar, pois Jesus promete presença"
+      },
+      {
+        "id": "d",
+        "text": "Ensinar é etapa opcional depois do batismo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eis que estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "O envio termina com promessa de presença todos os dias.",
+    "feedbackWrong": {
+      "a": "O texto pede discípulos ensinados, não só nomes reunidos.",
+      "b": "A promessa final é de presença, não de ausência de Jesus.",
+      "d": "Ensinar a observar faz parte do envio dado por Jesus."
+    },
+    "hint": "Junte o envio do verso 19 ao fecho do 20.",
+    "learningObjective": "Revisar envio e presença prometida como um só fio.",
+    "evidence": [
+      "Mateus 28:19–20"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-04",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 12:12?",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 12:12?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 12:12?",
+    "verseRef": "1 Coríntios 12:12",
+    "passageText": "Pois assim como o corpo é um e tem muitos membros, e todos os membros, sendo muitos, constituem um só corpo, assim também é Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O corpo tem muitos membros diferentes"
+      },
+      {
+        "id": "b",
+        "text": "Todos esses membros formam um só corpo"
+      },
+      {
+        "id": "c",
+        "text": "Assim também acontece em Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim também é Cristo",
+    "feedbackCorrect": "Muitos diferentes, um só corpo, em Cristo: o sentido aparece assim.",
+    "feedbackWrong": {
+      "default": "Cristo fecha a comparação; comece pelos membros."
+    },
+    "hint": "Cristo é o ponto de chegada da comparação.",
+    "learningObjective": "Revisar como a comparação aponta para Cristo.",
+    "evidence": [
+      "1 Coríntios 12:12"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-05",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "prompt": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "cue": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+    "verseRef": "Mateus 28:18",
+    "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra.",
+    "template": "E, aproximando-se de Jesus, Ele lhes disse: Toda a ___ me foi dada no céu e na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "autoridade"
+      },
+      {
+        "id": "b",
+        "text": "riqueza"
+      },
+      {
+        "id": "c",
+        "text": "permissão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+    "feedbackCorrect": "A autoridade total de Jesus sustenta o envio a todas as nações.",
+    "feedbackWrong": {
+      "b": "O texto não fala de riqueza recebida por Jesus aqui.",
+      "c": "Jesus não pede licença: ele declara o que lhe foi dado."
+    },
+    "hint": "É o que vem depois de Toda a.",
+    "learningObjective": "Revisar a base do envio de Jesus.",
+    "evidence": [
+      "Mateus 28:18"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-06",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 12:13 a Efésios 4:4?",
+    "prompt": "O que liga 1 Coríntios 12:13 a Efésios 4:4?",
+    "cue": "O que liga 1 Coríntios 12:13 a Efésios 4:4?",
+    "verseRef": "1 Coríntios 12:13",
+    "passageText": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito.",
+    "passageA": {
+      "ref": "1 Coríntios 12:13",
+      "text": "Pois, em um só Espírito, todos nós fomos batizados em um corpo, quer judeus quer gregos, quer escravos quer livres; e a todos nós foi dado a beber de um só Espírito."
+    },
+    "passageB": {
+      "ref": "Efésios 4:4",
+      "text": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada crente vive por si"
+      },
+      {
+        "id": "b",
+        "text": "Origens diferentes, corpos separados"
+      },
+      {
+        "id": "c",
+        "text": "Um Espírito une o corpo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "em um só Espírito, todos nós fomos batizados em um corpo",
+    "feedbackCorrect": "Um só corpo e um só Espírito ligam os dois textos de Paulo.",
+    "feedbackWrong": {
+      "a": "O corpo reúne; ninguém é deixado vivendo por si.",
+      "b": "Os dois textos unem as pessoas, em vez de separá-las."
+    },
+    "hint": "Compare corpo e Espírito nos dois trechos.",
+    "learningObjective": "Revisar a unidade do corpo pelo mesmo Espírito.",
+    "evidence": [
+      "1 Coríntios 12:13",
+      "Efésios 4:4"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-07",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os discípulos.",
+    "prompt": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os discípulos.",
+    "cue": "Em Mateus 28:20, toque o trecho que mostra por quanto tempo Jesus fica com os discípulos.",
+    "verseRef": "Mateus 28:20",
+    "passageText": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos os dias"
+      },
+      {
+        "id": "b",
+        "text": "estou convosco"
+      },
+      {
+        "id": "c",
+        "text": "consumação do século"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eis que estou convosco todos os dias até a consumação do século",
+    "feedbackCorrect": "A presença prometida não é ocasional: é dia após dia, até o fim.",
+    "feedbackWrong": {
+      "b": "Isso afirma a presença, não a duração dela no tempo.",
+      "c": "Isso marca o limite final, não a frequência da presença."
+    },
+    "hint": "Procure a frequência da presença.",
+    "learningObjective": "Revisar a duração da presença prometida por Jesus.",
+    "evidence": [
+      "Mateus 28:20"
+    ]
+  },
+  {
+    "id": "eclesiologia-pro-ec-boss-08",
+    "trail": "eclesiologia",
+    "section": "ec-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de entrada na vida comum em Atos 2:41–42?",
+    "prompt": "Qual sequência revela o caminho de entrada na vida comum em Atos 2:41–42?",
+    "cue": "Qual sequência revela o caminho de entrada na vida comum em Atos 2:41–42?",
+    "verseRef": "Atos 2:41–42",
+    "passageText": "Assim, foram batizados os que acolheram a sua Palavra com alegria; e naquele dia, somaram-se à igreja quase três mil pessoas. E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra é acolhida com alegria"
+      },
+      {
+        "id": "b",
+        "text": "Pessoas são batizadas e somadas ao grupo"
+      },
+      {
+        "id": "c",
+        "text": "O grupo persevera na vida comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "foram batizados os que acolheram a sua Palavra com alegria",
+    "feedbackCorrect": "Acolher, pertencer e perseverar: entrar é começar vida comum.",
+    "feedbackWrong": {
+      "default": "Comece pelo acolher da palavra; perseverar continua depois."
+    },
+    "hint": "Perseverar é o passo que continua no tempo.",
+    "learningObjective": "Revisar acolhimento, pertencimento e perseverança.",
+    "evidence": [
+      "Atos 2:41–42"
+    ]
+  }
+]

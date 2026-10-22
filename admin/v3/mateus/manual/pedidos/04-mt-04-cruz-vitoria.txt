@@ -1,0 +1,63 @@
+Escreva a cena "mt-04-cruz-vitoria" da trilha "mateus" (Mateus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "mateus",
+  "title": "Mateus",
+  "description": "O Rei prometido — cumprimento e o Sermão do Monte.",
+  "realm": "novo-testamento"
+ },
+ "block": "Mateus",
+ "mission": {
+  "slug": "mt-04-cruz-vitoria",
+  "title": "A cruz e a vitória",
+  "type": "lesson",
+  "intro": "O Rei serve, entrega sua vida pelos pecadores, ressuscita corporalmente e envia discípulos a todas as nações.",
+  "hookRef": "A cruz e a vitória",
+  "hookNote": "O Rei serve, entrega sua vida pelos pecadores, ressuscita corporalmente e envia discípulos a todas as nações.",
+  "centralInsight": "A morte de Jesus é voluntária e sacrificial. Sua ressurreição confirma sua vitória e fundamenta a missão da igreja.",
+  "objective": "Paixão e ressurreição"
+ },
+ "v2": {
+  "passageRef": "A cruz e a vitória",
+  "context": "O Rei serve, entrega sua vida pelos pecadores, ressuscita corporalmente e envia discípulos a todas as nações.",
+  "keyword": "Cruz",
+  "verseRefs": [
+   "Mateus 28:18–20"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 28:15–20"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 28:15",
+   "text": "E eles, recebendo o dinheiro, agiram conforme as instruções que receberam. E essa informação se propagou entre os judeus até os dias atuais."
+  },
+  {
+   "ref": "Mateus 28:16",
+   "text": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado."
+  },
+  {
+   "ref": "Mateus 28:17",
+   "text": "Quando o viram, adoraram-no; mas alguns hesitaram."
+  },
+  {
+   "ref": "Mateus 28:18",
+   "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra."
+  },
+  {
+   "ref": "Mateus 28:19",
+   "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+  },
+  {
+   "ref": "Mateus 28:20",
+   "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+  }
+ ]
+}
+</cena>

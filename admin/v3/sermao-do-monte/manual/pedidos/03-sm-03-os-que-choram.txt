@@ -1,0 +1,67 @@
+Escreva a cena "sm-03-os-que-choram" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "As Bem-aventuranças",
+ "mission": {
+  "slug": "sm-03-os-que-choram",
+  "title": "Os que choram",
+  "type": "lesson",
+  "intro": "Jesus não promete um Reino sem lágrimas — promete consolação. Chorar aqui é reconhecer o quebrantamento do pecado e da dor do mundo, e levar isso a Deus.",
+  "hookRef": "Mateus 5:4",
+  "hookNote": "O choro aqui não é qualquer tristeza. No fluxo das bem-aventuranças, é lamento pelo pecado próprio e pela quebrantura do mundo — o oposto d…",
+  "centralInsight": "Lamento santo abre espaço ao consolo",
+  "objective": "Há algo que Deus quer que eu lamente de verdade, em vez de anestesiar?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:4",
+  "context": "O choro aqui não é qualquer tristeza. No fluxo das bem-aventuranças, é lamento pelo pecado próprio e pela quebrantura do mundo — o oposto do coração endurecido. Consolo (parakaleo) aponta para o Espírito Consolador e para a restauração final. Quem foge do lamento santo também foge da cura. Jesus não anula a dor; promete presença e esperança no meio dela.",
+  "keyword": "Lamento",
+  "verseRefs": [
+   "Mateus 5:4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:1",
+   "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+  },
+  {
+   "ref": "Mateus 5:2",
+   "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+  },
+  {
+   "ref": "Mateus 5:3",
+   "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:4",
+   "text": "Bem-aventurados os que choram, porque serão consolados."
+  },
+  {
+   "ref": "Mateus 5:5",
+   "text": "Bem-aventurados os mansos, porque herdarão a terra."
+  },
+  {
+   "ref": "Mateus 5:6",
+   "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+  },
+  {
+   "ref": "Mateus 5:7",
+   "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+  }
+ ]
+}
+</cena>

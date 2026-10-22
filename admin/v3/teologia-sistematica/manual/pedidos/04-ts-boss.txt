@@ -1,0 +1,132 @@
+Escreva a cena "ts-boss" da trilha "teologia-sistematica" (Teologia Sistemática).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "teologia-sistematica",
+  "title": "Teologia Sistemática",
+  "description": "Doutrina organizada: Deus, salvação, igreja e últimas coisas.",
+  "realm": "teologia"
+ },
+ "block": "Teologia Sistemática",
+ "mission": {
+  "slug": "ts-boss",
+  "title": "Desafio: Verdade que transforma",
+  "type": "boss",
+  "intro": "Revise a unidade da Escritura, a doutrina e a vida piedosa.",
+  "hookRef": "2 Timóteo 3; Efésios 4",
+  "hookNote": "Revise a unidade da Escritura, a doutrina e a vida piedosa.",
+  "centralInsight": "O que este conceito revela sobre Deus?",
+  "objective": "2 Timóteo 3; Efésios 4"
+ },
+ "v2": {
+  "passageRef": "2 Timóteo 3; Efésios 4",
+  "context": "Revise a unidade da Escritura, a doutrina e a vida piedosa.",
+  "keyword": "Verdade",
+  "verseRefs": [
+   "2 Timóteo 3:16; Efésios 4:4–6"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "ts-01-todo",
+   "title": "A Bíblia como um todo",
+   "centralInsight": "Esta missão apresenta a bíblia como um todo de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor…",
+   "ref": "2 Timóteo 3:13–17"
+  },
+  {
+   "slug": "ts-02-verdade",
+   "title": "Conhecer para viver",
+   "centralInsight": "Esta missão apresenta conhecer para viver de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor a…",
+   "ref": "Tito 1:1–4"
+  },
+  {
+   "slug": "ts-03-igreja",
+   "title": "Uma fé compartilhada",
+   "centralInsight": "Esta missão apresenta uma fé compartilhada de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor…",
+   "ref": "Efésios 4:1–9"
+  }
+ ],
+ "ranges": [
+  "2 Timóteo 3:13–17",
+  "Tito 1:1–4",
+  "Efésios 4:1–9"
+ ],
+ "verses": [
+  {
+   "ref": "2 Timóteo 3:13",
+   "text": "Contudo, os homens perversos e impostores irão de mal a pior, enganando e sendo enganados."
+  },
+  {
+   "ref": "2 Timóteo 3:14",
+   "text": "Tu, porém, permanece firme nas coisas que aprendeste e das quais te tornaste plenamente ciente, sabendo de quem as aprendeste."
+  },
+  {
+   "ref": "2 Timóteo 3:15",
+   "text": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 3:16",
+   "text": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;"
+  },
+  {
+   "ref": "2 Timóteo 3:17",
+   "text": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra."
+  },
+  {
+   "ref": "Tito 1:1",
+   "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade."
+  },
+  {
+   "ref": "Tito 1:2",
+   "text": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;"
+  },
+  {
+   "ref": "Tito 1:3",
+   "text": "E, em seu devido tempo, manifestou a sua palavra por meio da pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;"
+  },
+  {
+   "ref": "Tito 1:4",
+   "text": "A Tito, meu verdadeiro filho na fé comum, graça e paz da parte de Deus Pai e de Cristo Jesus, nosso Salvador."
+  },
+  {
+   "ref": "Efésios 4:1",
+   "text": "Exorto vocês, portanto, eu, prisioneiro no Senhor, que andem de maneira digna da vocação à qual foram chamados."
+  },
+  {
+   "ref": "Efésios 4:2",
+   "text": "Com toda a humildade e mansidão, com longanimidade, suportando-vos uns aos outros em amor,"
+  },
+  {
+   "ref": "Efésios 4:3",
+   "text": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz."
+  },
+  {
+   "ref": "Efésios 4:4",
+   "text": "Há um só corpo e um só Espírito, assim como fostes chamados em uma única esperança da vossa vocação;"
+  },
+  {
+   "ref": "Efésios 4:5",
+   "text": "Um só Senhor, uma única fé, um único batismo;"
+  },
+  {
+   "ref": "Efésios 4:6",
+   "text": "Um só Deus e Pai de todos, o qual está acima de todos, age por meio de todos e habita em todos."
+  },
+  {
+   "ref": "Efésios 4:7",
+   "text": "Entretanto, a graça foi concedida a cada um de nós de acordo com a medida do dom de Cristo."
+  },
+  {
+   "ref": "Efésios 4:8",
+   "text": "Por isso, diz: Quando ele subiu às alturas, levou cativo o cativeiro e concedeu dons aos homens."
+  },
+  {
+   "ref": "Efésios 4:9",
+   "text": "Ora, o que subiu, senão aquele que também desceu às regiões mais baixas da terra?"
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,161 @@
+Escreva a cena "fp-04-desafio" da trilha "filipenses" (Filipenses).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "filipenses",
+  "title": "Filipenses",
+  "description": "Alegria no Senhor — humildade e o exemplo de Cristo.",
+  "realm": "novo-testamento"
+ },
+ "block": "Filipenses",
+ "mission": {
+  "slug": "fp-04-desafio",
+  "title": "Desafio: Alegria que permanece",
+  "type": "boss",
+  "intro": "Revise alegria, humildade, perseverança e contentamento em Cristo.",
+  "hookRef": "Desafio: Alegria que permanece",
+  "hookNote": "Revise alegria, humildade, perseverança e contentamento em Cristo.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Filipenses 1-4"
+ },
+ "v2": {
+  "passageRef": "Desafio: Alegria que permanece",
+  "context": "Revise alegria, humildade, perseverança e contentamento em Cristo.",
+  "keyword": "Alegria",
+  "verseRefs": [
+   "Filipenses 1:21; 2:5",
+   "Filipenses 1:21; 2:5; 4:13"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "fp-01-alegria",
+   "title": "Alegria no evangelho",
+   "centralInsight": "Paulo instrui a igreja em Filipenses 1 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele c…",
+   "ref": "Filipenses 1:18–24"
+  },
+  {
+   "slug": "fp-02-humildade",
+   "title": "A mente de Cristo",
+   "centralInsight": "Paulo instrui a igreja em Filipenses 2 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele c…",
+   "ref": "Filipenses 2:2–11"
+  },
+  {
+   "slug": "fp-03-contentamento",
+   "title": "Contentamento e perseverança",
+   "centralInsight": "Paulo instrui a igreja em Filipenses 3-4 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+   "ref": "Filipenses 4:9–16"
+  }
+ ],
+ "ranges": [
+  "Filipenses 1:18–24",
+  "Filipenses 2:2–11",
+  "Filipenses 4:9–16"
+ ],
+ "verses": [
+  {
+   "ref": "Filipenses 1:18",
+   "text": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar."
+  },
+  {
+   "ref": "Filipenses 1:19",
+   "text": "Estou certo de que isto resultará em minha libertação, graças à vossa súplica e pela provisão do Espírito de Jesus Cristo."
+  },
+  {
+   "ref": "Filipenses 1:20",
+   "text": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte."
+  },
+  {
+   "ref": "Filipenses 1:21",
+   "text": "Porque, para mim, viver é Cristo, e morrer é lucro."
+  },
+  {
+   "ref": "Filipenses 1:22",
+   "text": "Entretanto, se o viver na carne resulta em fruto para o meu trabalho, já não sei o que hei de escolher."
+  },
+  {
+   "ref": "Filipenses 1:23",
+   "text": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor."
+  },
+  {
+   "ref": "Filipenses 1:24",
+   "text": "Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne."
+  },
+  {
+   "ref": "Filipenses 2:2",
+   "text": "Completem a minha alegria, de modo que sintam o mesmo amor, estejam plenamente unidos em alma e compartilhem o mesmo sentimento."
+  },
+  {
+   "ref": "Filipenses 2:3",
+   "text": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo."
+  },
+  {
+   "ref": "Filipenses 2:4",
+   "text": "Cada um cuide, não somente do que lhe pertence, mas também do que é dos outros."
+  },
+  {
+   "ref": "Filipenses 2:5",
+   "text": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus."
+  },
+  {
+   "ref": "Filipenses 2:6",
+   "text": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar."
+  },
+  {
+   "ref": "Filipenses 2:7",
+   "text": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+  },
+  {
+   "ref": "Filipenses 2:8",
+   "text": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz."
+  },
+  {
+   "ref": "Filipenses 2:9",
+   "text": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome"
+  },
+  {
+   "ref": "Filipenses 2:10",
+   "text": "Para que ao nome de Jesus se dobre todo joelho, nos céus, na terra e debaixo da terra."
+  },
+  {
+   "ref": "Filipenses 2:11",
+   "text": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai."
+  },
+  {
+   "ref": "Filipenses 4:9",
+   "text": "O que também aprendestes, recebestes, ouvistes e vistes em mim, isso praticai; e o Deus da paz será convosco."
+  },
+  {
+   "ref": "Filipenses 4:10",
+   "text": "Alegrei-me sobremaneira no Senhor porque, finalmente, vocês se lembraram de mim; pois haviam-se lembrado antes, mas não tiveram a oportunidade."
+  },
+  {
+   "ref": "Filipenses 4:11",
+   "text": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação."
+  },
+  {
+   "ref": "Filipenses 4:12",
+   "text": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez."
+  },
+  {
+   "ref": "Filipenses 4:13",
+   "text": "Posso todas as coisas por meio daquele que me dá força."
+  },
+  {
+   "ref": "Filipenses 4:14",
+   "text": "Todavia, vocês fizeram bem em se associar à minha tribulação."
+  },
+  {
+   "ref": "Filipenses 4:15",
+   "text": "E vocês, ó filipenses, sabem que, no início do evangelho, quando parti da Macedônia, nenhuma igreja se associou comigo no tocante a dar e receber, exceto vocês."
+  },
+  {
+   "ref": "Filipenses 4:16",
+   "text": "Porque também em Tessalônica vocês me enviaram não apenas uma vez, mas duas, o suficiente para atender às minhas necessidades."
+  }
+ ]
+}
+</cena>

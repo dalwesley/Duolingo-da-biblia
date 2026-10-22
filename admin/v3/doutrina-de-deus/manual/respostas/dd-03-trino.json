@@ -1,0 +1,266 @@
+{
+ "study": {
+  "passageRef": "Mateus 28:16–20",
+  "passages": [{"ref": "Mateus 28:16–20"}],
+  "context": "Depois de ressuscitar, Jesus encontra os onze discípulos na Galileia. Ele declara sua autoridade, envia-os a todas as nações e promete estar com eles.",
+  "keyword": "autoridade",
+  "keywordGloss": "Jesus diz que toda a autoridade no céu e na terra lhe foi dada: é desse lugar que ele envia.",
+  "focusQuestion": "O que muda na sua semana saber que Jesus está com você todos os dias?",
+  "reflectionPrompts": ["Jesus tem toda autoridade", "Um só nome no batismo", "Presente todos os dias"],
+  "facts": [
+   {"text": "Os onze discípulos seguiram para a Galileia, ao monte designado por Jesus.", "evidenceRef": "Mateus 28:16", "evidenceSpan": "Os onze discípulos seguiram para a Galileia"},
+   {"text": "Ao ver Jesus, os discípulos o adoraram, mas alguns hesitaram.", "evidenceRef": "Mateus 28:17", "evidenceSpan": "adoraram-no; mas alguns hesitaram"},
+   {"text": "Jesus afirma que toda a autoridade lhe foi dada no céu e na terra.", "evidenceRef": "Mateus 28:18", "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra"},
+   {"text": "Jesus manda batizar em nome do Pai, do Filho e do Espírito Santo.", "evidenceRef": "Mateus 28:19", "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo"},
+   {"text": "Jesus promete estar com os discípulos todos os dias.", "evidenceRef": "Mateus 28:20", "evidenceSpan": "estou convosco todos os dias"}
+  ],
+  "keyTerms": [
+   {"term": "autoridade", "gloss": "Toda ela, no céu e na terra, foi dada a Jesus: ele envia a partir desse lugar."},
+   {"term": "discípulos", "gloss": "Seguidores que aprendem de Jesus e são feitos em todas as nações."},
+   {"term": "Espírito Santo", "gloss": "Nomeado junto com o Pai e o Filho no único nome do batismo."}
+  ],
+  "structure": [
+   {"label": "Os discípulos vão ao monte", "evidenceRef": "Mateus 28:16"},
+   {"label": "Jesus declara sua autoridade", "evidenceRef": "Mateus 28:18"},
+   {"label": "Jesus envia a fazer discípulos", "evidenceRef": "Mateus 28:19"},
+   {"label": "Jesus promete sua presença", "evidenceRef": "Mateus 28:20"}
+  ],
+  "relations": [
+   {"kind": "contraste", "text": "Os discípulos adoram Jesus ao vê-lo, mas alguns ainda hesitam.", "marker": "mas", "evidenceRef": "Mateus 28:17"},
+   {"kind": "propósito", "text": "Porque Jesus recebeu toda a autoridade, ele envia os discípulos a todas as nações.", "marker": "Portanto", "evidenceRef": "Mateus 28:19"}
+  ],
+  "crossRefs": [
+   {"ref": "Mateus 3:16–17", "bridge": "Pai, Filho e Espírito no batismo"},
+   {"ref": "João 14:26", "bridge": "O Espírito ensina e lembra"},
+   {"ref": "Efésios 4:5–6", "bridge": "Um só Deus e Pai"}
+  ],
+  "misreadings": [
+   {"text": "O Pai, o Filho e o Espírito são três deuses separados.", "why": "O batismo é em um só nome, o do Pai, do Filho e do Espírito Santo, não em três nomes."},
+   {"text": "O Espírito Santo é apenas uma força sem nome próprio no envio.", "why": "No batismo, ele é nomeado junto com o Pai e o Filho, no mesmo único nome."},
+   {"text": "Jesus é só um mensageiro que aponta para outro maior.", "why": "Ele diz que toda a autoridade no céu e na terra lhe foi dada e promete estar presente."}
+  ],
+  "centralInsight": "Jesus envia seus discípulos em nome do Pai, do Filho e do Espírito Santo",
+  "anchorQuestion": "Em nome de quem Jesus manda batizar os discípulos de todas as nações?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Mateus 28:17, os discípulos adoraram Jesus quando o viram.",
+   "verseRef": "Mateus 28:17", "correctOptionId": "true",
+   "evidenceSpan": "Quando o viram, adoraram-no",
+   "feedbackCorrect": "Ao ver Jesus ressuscitado, os discípulos o adoraram.",
+   "feedbackWrong": {"false": "Releia Mateus 28:17 e veja o que eles fizeram ao ver Jesus."},
+   "hint": "Veja a primeira reação ao ver Jesus.",
+   "learningObjective": "Observar a adoração dos discípulos ao Jesus ressuscitado.",
+   "evidence": ["Mateus 28:17"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Mateus 28:19, toque quem é nomeado junto com o Pai e o Filho no batismo.",
+   "verseRef": "Mateus 28:19",
+   "options": [{"id": "a", "text": "todas as nações"}, {"id": "b", "text": "do Pai"}, {"id": "c", "text": "Espírito Santo"}],
+   "correctOptionId": "c", "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+   "feedbackCorrect": "Pai, Filho e ele são nomeados juntos, em um só nome, no batismo.",
+   "feedbackWrong": {"a": "As nações são quem recebe os discípulos, não quem é nomeado no batismo.", "b": "O Pai é um dos nomeados; falta quem vem depois do Filho."},
+   "hint": "Leia os três nomeados no fim do versículo.",
+   "learningObjective": "Identificar quem é nomeado junto no batismo.",
+   "evidence": ["Mateus 28:19"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Mateus 28:19, o que Jesus manda fazer em todas as nações?",
+   "verseRef": "Mateus 28:19",
+   "options": [{"id": "a", "text": "Construir templos em cada cidade"}, {"id": "b", "text": "Fazer discípulos de todas as nações"}, {"id": "c", "text": "Escolher reis para cada povo"}, {"id": "d", "text": "Voltar logo para Jerusalém"}],
+   "correctOptionId": "b", "evidenceSpan": "façam discípulos de todas as nações",
+   "feedbackCorrect": "O envio é para fazer discípulos em todas as nações, batizando e ensinando.",
+   "feedbackWrong": {"a": "O texto fala de pessoas formadas, não de construções.", "c": "Nenhum rei é escolhido; o alvo são discípulos em cada nação.", "d": "A ordem é ir às nações, não voltar para Jerusalém."},
+   "hint": "Leia o começo da ordem de Jesus.",
+   "learningObjective": "Observar o alvo do envio de Jesus.",
+   "evidence": ["Mateus 28:19"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Mateus 28:20 na ordem do texto.",
+   "verseRef": "Mateus 28:20",
+   "options": [{"id": "a", "text": "Ensinando-os a observar tudo o que vos ordenei"}, {"id": "b", "text": "e eis que estou convosco todos os dias"}, {"id": "c", "text": "até a consumação do século"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Ensinando-os a observar tudo o que vos ordenei",
+   "feedbackCorrect": "Ensinar, a promessa da presença diária e o alcance até o fim: nessa ordem.",
+   "feedbackWrong": {"default": "Comece pelo ensino; a promessa de presença fecha o trecho."},
+   "hint": "O trecho começa com o que os discípulos devem ensinar.",
+   "learningObjective": "Reconhecer a sequência de Mateus 28:20.",
+   "evidence": ["Mateus 28:20"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Mateus 28:16, para onde os onze discípulos seguiram?",
+   "verseRef": "Mateus 28:16",
+   "options": [{"id": "a", "text": "Galileia"}, {"id": "b", "text": "Jerusalém"}, {"id": "c", "text": "Nazaré"}],
+   "correctOptionId": "a", "evidenceSpan": "Os onze discípulos seguiram para a Galileia",
+   "feedbackCorrect": "Eles foram ao monte designado por Jesus, na região indicada por ele.",
+   "feedbackWrong": {"b": "A cidade santa não é o destino aqui; veja o rumo do monte designado.", "c": "A cidade da infância de Jesus não é citada neste encontro final."},
+   "hint": "Veja o rumo que eles tomam para o monte.",
+   "learningObjective": "Lembrar o lugar do encontro com Jesus ressuscitado.",
+   "evidence": ["Mateus 28:16"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 28:19",
+   "passageA": {"ref": "Mateus 28:19"},
+   "passageB": {"ref": "Contexto", "text": "Jesus ressuscitado envia os onze a todas as nações."},
+   "options": [{"id": "a", "text": "Um envio só para um povo"}, {"id": "b", "text": "Um envio a todas as nações"}, {"id": "c", "text": "Um fim para a missão"}],
+   "correctOptionId": "b", "evidenceSpan": "façam discípulos de todas as nações",
+   "feedbackCorrect": "O envio de Jesus alcança todas as nações, sem ficar em um só povo.",
+   "feedbackWrong": {"a": "O alcance é de todas as nações, não de um povo só.", "c": "É um começo de missão, não o fim dela."},
+   "hint": "Veja até onde vai o envio de Jesus.",
+   "learningObjective": "Ligar Mateus 28:19 ao alcance universal do envio.",
+   "evidence": ["Mateus 28:19"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Mateus 28:18–19, o envio dos discípulos vem depois de Jesus afirmar que recebeu toda a autoridade.",
+   "verseRef": "Mateus 28:18–19", "correctOptionId": "true",
+   "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "Primeiro a autoridade de Jesus; depois, o envio fundado nela.",
+   "feedbackWrong": {"false": "Releia a ordem: a declaração sobre autoridade vem antes do envio."},
+   "hint": "Compare a ordem dos dois versículos.",
+   "learningObjective": "Compreender que o envio se apoia na autoridade de Jesus.",
+   "evidence": ["Mateus 28:18–19"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio dos discípulos.",
+   "verseRef": "Mateus 28:19",
+   "options": [{"id": "a", "text": "Portanto"}, {"id": "b", "text": "discípulos"}, {"id": "c", "text": "nações"}],
+   "correctOptionId": "a", "evidenceSpan": "Portanto, vão e façam discípulos",
+   "feedbackCorrect": "Essa palavra mostra que o envio nasce do que Jesus acabou de afirmar.",
+   "feedbackWrong": {"b": "Isso é o que eles devem fazer, não a ligação com a autoridade.", "c": "Isso é até onde eles vão, não a ligação com a autoridade."},
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador que liga autoridade e envio.",
+   "evidence": ["Mateus 28:19"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Mateus 28:18 se relaciona com Mateus 28:19?",
+   "verseRef": "Mateus 28:18–19",
+   "options": [{"id": "a", "text": "A autoridade de Jesus é a base do envio"}, {"id": "b", "text": "A autoridade de Jesus dispensa o envio"}, {"id": "c", "text": "O envio dá autoridade a Jesus pela primeira vez"}, {"id": "d", "text": "O envio vale só enquanto Jesus está longe"}],
+   "correctOptionId": "a", "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "Jesus envia porque toda a autoridade no céu e na terra lhe foi dada.",
+   "feedbackWrong": {"b": "Logo depois de afirmar sua autoridade, ele envia: não dispensa.", "c": "A autoridade já foi dada antes do envio; o envio nasce dela.", "d": "Ele promete estar presente todos os dias, não longe dos enviados."},
+   "hint": "Veja a palavra que abre o versículo do envio.",
+   "learningObjective": "Relacionar a autoridade de Jesus com o envio dos discípulos.",
+   "evidence": ["Mateus 28:18–19"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança a cena em Mateus 28:18–20?",
+   "verseRef": "Mateus 28:18–19",
+   "options": [{"id": "a", "text": "Jesus afirma ter toda a autoridade"}, {"id": "b", "text": "Jesus envia a fazer discípulos"}, {"id": "c", "text": "Jesus promete estar com eles"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "Autoridade declarada, envio dado e presença prometida: nessa ordem.",
+   "feedbackWrong": {"default": "Comece pelo que Jesus afirma sobre si; a promessa fecha a cena."},
+   "hint": "A promessa de presença é o ponto de chegada.",
+   "learningObjective": "Compreender o movimento de Mateus 28:18–20.",
+   "evidence": ["Mateus 28:18–20"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Mateus 28:20, que palavra mostra que Jesus fica junto dos discípulos?",
+   "verseRef": "Mateus 28:20",
+   "options": [{"id": "a", "text": "longe"}, {"id": "b", "text": "convosco"}, {"id": "c", "text": "ausente"}],
+   "correctOptionId": "b", "evidenceSpan": "estou convosco todos os dias",
+   "feedbackCorrect": "Jesus não envia e some: ele fica junto dos seus todos os dias.",
+   "feedbackWrong": {"a": "A promessa é de presença junto, não de distância.", "c": "O texto afirma o contrário: ele está com eles todos os dias."},
+   "hint": "Leia a promessa que fecha o Evangelho.",
+   "learningObjective": "Compreender a promessa da presença diária de Jesus.",
+   "evidence": ["Mateus 28:20"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Mateus 28:19 a Mateus 3:16–17?",
+   "verseRef": "Mateus 28:19",
+   "passageA": {"ref": "Mateus 28:19"},
+   "passageB": {"ref": "Mateus 3:16–17"},
+   "options": [{"id": "a", "text": "Pai, Filho e Espírito juntos"}, {"id": "b", "text": "Um batismo sem nome algum"}, {"id": "c", "text": "Discípulos agindo sozinhos"}],
+   "correctOptionId": "a", "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+   "feedbackCorrect": "No batismo de Jesus e no envio, Pai, Filho e Espírito aparecem juntos.",
+   "feedbackWrong": {"b": "Nos dois textos há nomes e presença, não um rito vazio.", "c": "Jesus promete estar com eles; não agem sozinhos nem por conta própria."},
+   "hint": "Compare quem aparece junto nos dois batismos.",
+   "learningObjective": "Relacionar o batismo de Jesus com o batismo do envio.",
+   "evidence": ["Mateus 28:19", "Mateus 3:16–17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Mateus 28:20 apresenta Jesus presente com os discípulos só em alguns dias especiais.",
+   "verseRef": "Mateus 28:20", "correctOptionId": "false",
+   "evidenceSpan": "estou convosco todos os dias",
+   "feedbackCorrect": "A promessa é para todos os dias, até a consumação do século.",
+   "feedbackWrong": {"true": "Releia o fim do versículo e veja com que frequência Jesus promete estar."},
+   "hint": "Veja com que frequência Jesus promete estar com eles.",
+   "learningObjective": "Interpretar a promessa de Jesus como presença diária, não ocasional.",
+   "evidence": ["Mateus 28:20"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Mateus 28:18, toque o trecho que sustenta que Jesus pode enviar com alcance total.",
+   "verseRef": "Mateus 28:18",
+   "options": [{"id": "a", "text": "no céu"}, {"id": "b", "text": "Toda a autoridade"}, {"id": "c", "text": "na terra"}],
+   "correctOptionId": "b", "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "Nada fica fora do alcance de Jesus: céu e terra estão sob sua autoridade.",
+   "feedbackWrong": {"a": "Isso diz um dos lugares; o alcance total vem da frase inteira sobre poder.", "c": "Isso diz um dos lugares; falta a palavra que mostra o tamanho do poder."},
+   "hint": "Procure a frase sobre o poder que foi dado a Jesus.",
+   "learningObjective": "Sustentar com o texto a autoridade total de Jesus.",
+   "evidence": ["Mateus 28:18"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Mateus 28:19 sustenta sobre o nome do batismo?",
+   "verseRef": "Mateus 28:19",
+   "options": [{"id": "a", "text": "O Pai, o Filho e o Espírito são nomeados juntos, em um só nome"}, {"id": "b", "text": "São três deuses que agem sempre separados"}, {"id": "c", "text": "O Filho e o Espírito são ajudantes menores do Pai"}, {"id": "d", "text": "Só o Pai deve ser nomeado no batismo"}],
+   "correctOptionId": "a", "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+   "feedbackCorrect": "Um só nome reúne Pai, Filho e Espírito no batismo dos discípulos.",
+   "feedbackWrong": {"b": "Um só nome não combina com três deuses separados.", "c": "Os três estão no mesmo nome, sem uns abaixo dos outros no texto.", "d": "O texto nomeia os três juntos, não só o Pai."},
+   "hint": "Conte quantos nomes o versículo usa para os três.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre o nome do batismo.",
+   "evidence": ["Mateus 28:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o fio do batismo que atravessa Mateus?",
+   "verseRef": "Mateus 28:18",
+   "options": [{"id": "a", "text": "Deus se revela no batismo de Jesus"}, {"id": "b", "text": "Jesus inclui Pai, Filho e Espírito no batismo"}, {"id": "c", "text": "Os discípulos levam esse batismo às nações"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "Do batismo de Jesus ao envio, o mesmo nome alcança todas as nações.",
+   "feedbackWrong": {"default": "Comece pelo batismo de Jesus; o alcance às nações fecha o fio."},
+   "hint": "Siga Mateus do começo ao fim do Evangelho.",
+   "learningObjective": "Ver o batismo em Mateus como um fio do começo ao envio final.",
+   "evidence": ["Mateus 28:19", "Mateus 3:16–17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Mateus 28:19, qual palavra vem antes de do Pai, do Filho e do Espírito Santo?",
+   "verseRef": "Mateus 28:19",
+   "options": [{"id": "a", "text": "nomes"}, {"id": "b", "text": "nome"}, {"id": "c", "text": "título"}],
+   "correctOptionId": "b", "evidenceSpan": "batizando-os em nome do Pai, do Filho e do Espírito Santo",
+   "feedbackCorrect": "É um só, no singular, para Pai, Filho e Espírito juntos no batismo.",
+   "feedbackWrong": {"a": "O texto usa o singular: um só para os três nomeados juntos.", "c": "A palavra do texto é simples e está no singular, antes dos três."},
+   "hint": "Veja a palavra simples antes de Pai, Filho e Espírito.",
+   "learningObjective": "Lembrar o termo singular que une os três no batismo.",
+   "evidence": ["Mateus 28:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Mateus 28:19 a Efésios 4:5–6?",
+   "verseRef": "Mateus 28:19",
+   "passageA": {"ref": "Mateus 28:19"},
+   "passageB": {"ref": "Efésios 4:5–6"},
+   "options": [{"id": "a", "text": "Muitos deuses para muitos povos"}, {"id": "b", "text": "Um só Deus e Pai"}, {"id": "c", "text": "Cada nação com seu deus"}],
+   "correctOptionId": "b", "evidenceSpan": "em nome do Pai, do Filho e do Espírito Santo",
+   "feedbackCorrect": "Paulo confessa um só Deus e Pai, o mesmo Deus do batismo em um só nome.",
+   "feedbackWrong": {"a": "Paulo fala de um só Senhor e um só Deus, não de muitos.", "c": "O envio é a todas as nações, mas com um só Deus e Pai."},
+   "hint": "Veja o que Paulo repete com as palavras um só.",
+   "learningObjective": "Ligar o batismo em um só nome à confissão de um só Deus.",
+   "evidence": ["Mateus 28:19", "Efésios 4:5–6"]
+  }
+ ]
+}

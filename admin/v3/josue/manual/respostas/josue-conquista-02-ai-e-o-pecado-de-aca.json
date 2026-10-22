@@ -1,0 +1,308 @@
+{
+ "study": {
+  "passageRef": "Josué 7:10–11",
+  "passages": [{"ref": "Josué 7:10–11"}, {"ref": "Josué 6:18–19"}],
+  "context": "Depois da vitória em Jericó, Israel perde para a pequena Ai. Josué se prostra sem entender, e Deus responde apontando não para a estratégia, mas para um pecado escondido no meio do povo.",
+  "keyword": "Aliança",
+  "keywordGloss": "Guardar o que Deus consagrou é parte da aliança; quebrar isso atinge todo o povo.",
+  "focusQuestion": "Há algo escondido que você precisa trazer à luz diante de Deus?",
+  "reflectionPrompts": ["Nada escondido de Deus", "O pecado atinge a todos", "Voltar à aliança"],
+  "facts": [
+   {"text": "Deus manda Josué se levantar em vez de ficar prostrado sobre o rosto.", "evidenceRef": "Josué 7:10", "evidenceSpan": "Levanta-te! Por que estás prostrado assim sobre o rosto"},
+   {"text": "Deus declara que Israel pecou e transgrediu a sua aliança.", "evidenceRef": "Josué 7:11", "evidenceSpan": "Israel pecou e transgrediu a minha aliança"},
+   {"text": "Tomaram das coisas condenadas, que Deus havia separado em Jericó.", "evidenceRef": "Josué 7:11", "evidenceSpan": "tomaram das coisas condenadas"},
+   {"text": "Além de tomar, roubaram, mentiram e esconderam o proibido na bagagem.", "evidenceRef": "Josué 7:11", "evidenceSpan": "roubaram, mentiram e esconderam debaixo da sua bagagem"},
+   {"text": "Deus já havia avisado para o povo se guardar das coisas condenadas.", "evidenceRef": "Josué 6:18", "evidenceSpan": "guardem-se das coisas que são condenadas"}
+  ],
+  "keyTerms": [
+   {"term": "aliança", "gloss": "O compromisso que liga Deus e Israel: quebrar a palavra dele é quebrar a relação."},
+   {"term": "condenadas", "gloss": "O que Deus separou para destruição em Jericó e ninguém podia guardar para si."},
+   {"term": "bagagem", "gloss": "O esconderijo do proibido: escondido das pessoas, mas não de Deus."}
+  ],
+  "structure": [
+   {"label": "Josué prostrado sem entender a derrota", "evidenceRef": "Josué 7:10"},
+   {"label": "Deus revela o pecado de Israel", "evidenceRef": "Josué 7:11"},
+   {"label": "O proibido tomado e escondido", "evidenceRef": "Josué 7:11"}
+  ],
+  "relations": [
+   {"kind": "causa", "text": "A derrota não vem de falha militar: Deus aponta o pecado escondido como a causa.", "marker": null, "evidenceRef": "Josué 7:11"},
+   {"kind": "sequência", "text": "Tomar o proibido leva a roubar, mentir e esconder: um passo puxa o outro.", "marker": "e", "evidenceRef": "Josué 7:11"},
+   {"kind": "contraste", "text": "Josué busca a resposta prostrado no chão, mas Deus o manda levantar e agir.", "marker": null, "evidenceRef": "Josué 7:10"}
+  ],
+  "crossRefs": [
+   {"ref": "Josué 6:18", "bridge": "Aviso sobre o consagrado"},
+   {"ref": "Deuteronômio 7:26", "bridge": "Não guardar o condenado"},
+   {"ref": "Oseias 2:15", "bridge": "Vale da aflição vira esperança"}
+  ],
+  "misreadings": [
+   {"text": "Israel perdeu em Ai porque a cidade era mais forte do que parecia.", "why": "Deus não fala de estratégia: ele revela pecado e quebra da aliança no povo."},
+   {"text": "O erro foi só de uma pessoa, então não devia afetar mais ninguém.", "why": "Deus diz que Israel pecou: o proibido escondido traz maldição ao arraial inteiro."},
+   {"text": "Se ninguém viu o que foi guardado, Deus também não leva em conta.", "why": "Deus descreve em detalhes o que foi tomado, roubado, mentido e escondido."}
+  ],
+  "centralInsight": "Pecado escondido quebra a aliança e atinge todo o povo",
+  "anchorQuestion": "Segundo Josué 7:11, o que Israel fez com as coisas condenadas?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Josué 7:11, Deus diz que Israel tomou das coisas condenadas e as escondeu na bagagem",
+   "verseRef": "Josué 7:11", "correctOptionId": "true",
+   "evidenceSpan": "tomaram das coisas condenadas",
+   "feedbackCorrect": "Deus revela o passo inteiro: tomar, roubar, mentir e esconder o proibido.",
+   "feedbackWrong": {"false": "Releia Josué 7:11: tomaram, roubaram, mentiram e esconderam."},
+   "hint": "Veja a lista de ações que Deus revela.",
+   "learningObjective": "Observar o pecado revelado por Deus em Josué 7.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Josué 7:11, toque o que Israel tomou indevidamente em Jericó",
+   "verseRef": "Josué 7:11",
+   "options": [{"id": "a", "text": "minha aliança"}, {"id": "b", "text": "coisas condenadas"}, {"id": "c", "text": "sua bagagem"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "tomaram das coisas condenadas",
+   "feedbackCorrect": "O proibido de Jericó foi tomado, contrariando a ordem clara de Deus.",
+   "feedbackWrong": {"a": "A aliança é o que foi transgredido; o objeto tomado vem depois.", "c": "A bagagem é o esconderijo; o que foi posto nela é o problema."},
+   "hint": "Procure o objeto direto do verbo tomar.",
+   "learningObjective": "Identificar o que foi tomado contra a ordem de Deus.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Josué 7:10, o que Deus manda Josué fazer em vez de ficar prostrado",
+   "verseRef": "Josué 7:10",
+   "options": [
+    {"id": "a", "text": "Levantar-se e encarar o problema"},
+    {"id": "b", "text": "Ficar no chão até a resposta vir"},
+    {"id": "c", "text": "Reunir o exército para nova batalha"},
+    {"id": "d", "text": "Pedir um sinal no céu naquela noite"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Levanta-te! Por que estás prostrado assim sobre o rosto",
+   "feedbackCorrect": "Deus não deixa Josué no chão: há um pecado a tratar, e não só a lamentar.",
+   "feedbackWrong": {"b": "A ordem é justamente sair do chão e agir sobre a causa.", "c": "A próxima batalha não é o tema; é o pecado escondido no povo.", "d": "Deus responde com uma revelação direta, não com um sinal no céu."},
+   "hint": "Veja a primeira palavra de Deus a Josué.",
+   "learningObjective": "Observar a ordem de Deus a Josué na derrota.",
+   "evidence": ["Josué 7:10"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Josué 7:11 na ordem do texto",
+   "verseRef": "Josué 7:11",
+   "options": [
+    {"id": "a", "text": "Israel pecou e transgrediu a minha aliança"},
+    {"id": "b", "text": "tomaram das coisas condenadas"},
+    {"id": "c", "text": "esconderam debaixo da sua bagagem"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Israel pecou e transgrediu a minha aliança",
+   "feedbackCorrect": "Deus nomeia o pecado, o objeto tomado e por fim o esconderijo.",
+   "feedbackWrong": {"default": "Comece pela declaração sobre Israel; o esconderijo fecha a lista."},
+   "hint": "O versículo começa com quem pecou.",
+   "learningObjective": "Reconhecer a sequência da revelação de Deus.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Josué 7:11, Israel pecou e o que fez com a aliança de Deus",
+   "verseRef": "Josué 7:11",
+   "options": [{"id": "a", "text": "guardou"}, {"id": "b", "text": "transgrediu"}, {"id": "c", "text": "cumpriu"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "Israel pecou e transgrediu a minha aliança",
+   "feedbackCorrect": "Não foi um descuido: foi quebra do compromisso que Deus ordenara.",
+   "feedbackWrong": {"a": "Guardar a aliança seria o contrário do que Deus denuncia.", "c": "Cumprir a aliança é o que Israel deixou de fazer em Jericó."},
+   "hint": "Veja o verbo ligado diretamente à aliança.",
+   "learningObjective": "Lembrar a quebra da aliança denunciada por Deus.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Josué 7:11 comunica que se liga a este contexto",
+   "verseRef": "Josué 7:11",
+   "passageA": {"ref": "Josué 7:11"},
+   "passageB": {"ref": "Contexto", "text": "Israel acaba de perder a batalha contra a pequena cidade de Ai."},
+   "options": [{"id": "a", "text": "Derrota ligada ao pecado escondido"}, {"id": "b", "text": "Derrota por falta de soldados"}, {"id": "c", "text": "Deus ausente na batalha"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Israel pecou e transgrediu a minha aliança",
+   "feedbackCorrect": "Deus explica a derrota: não é força de Ai, é pecado no meio de Israel.",
+   "feedbackWrong": {"b": "Deus não cita número de soldados; cita pecado e aliança quebrada.", "c": "Deus está presente falando e revelando a causa da derrota."},
+   "hint": "Veja a causa que Deus aponta para a derrota.",
+   "learningObjective": "Ligar a derrota em Ai ao pecado revelado por Deus.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Deus explica a derrota em Ai apontando um pecado escondido, e não uma falha de estratégia militar",
+   "verseRef": "Josué 7:11", "correctOptionId": "true",
+   "evidenceSpan": "tomaram das coisas condenadas, roubaram, mentiram",
+   "feedbackCorrect": "A causa revelada é moral e de aliança: tomaram, roubaram, mentiram, esconderam.",
+   "feedbackWrong": {"false": "Deus não corrige o plano de guerra; ele revela o pecado escondido."},
+   "hint": "Veja o tipo de causa que Deus apresenta a Josué.",
+   "learningObjective": "Compreender a causa espiritual da derrota em Ai.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Josué 7:11, toque a ação que mostra a tentativa de ocultar o proibido",
+   "verseRef": "Josué 7:11",
+   "options": [{"id": "a", "text": "roubaram"}, {"id": "b", "text": "mentiram"}, {"id": "c", "text": "esconderam"}],
+   "correctOptionId": "c",
+   "evidenceSpan": "esconderam debaixo da sua bagagem",
+   "feedbackCorrect": "O último passo da lista é enterrar o erro para ninguém ver.",
+   "feedbackWrong": {"a": "Roubar é tomar o alheio; ocultar o tomado vem no fim da lista.", "b": "Mentir disfarça com palavras; ocultar a coisa é outra ação."},
+   "hint": "Procure a ação ligada à bagagem.",
+   "learningObjective": "Reconhecer o ocultamento como parte do pecado em Ai.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Josué 7:11 explica o que aconteceu depois da vitória em Jericó",
+   "verseRef": "Josué 7:11",
+   "options": [
+    {"id": "a", "text": "Um passo errado puxou outro até esconder"},
+    {"id": "b", "text": "O povo celebrou e esqueceu a ordem sem querer"},
+    {"id": "c", "text": "Deus mudou a ordem sobre o despojo depois"},
+    {"id": "d", "text": "O erro ficou só no pensamento de uma pessoa"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "tomaram das coisas condenadas, roubaram, mentiram e esconderam",
+   "feedbackCorrect": "Tomar leva a roubar, mentir e esconder: o pecado cresce em cadeia.",
+   "feedbackWrong": {"b": "A lista de Deus mostra escolhas seguidas, não um esquecimento só.", "c": "A ordem de 6:18–19 continua valendo; Deus a cobra em 7:11.", "d": "Houve ações concretas: tomar, roubar, mentir e esconder na bagagem."},
+   "hint": "Siga a lista de verbos que Deus apresenta.",
+   "learningObjective": "Compreender o encadeamento do pecado revelado em Josué 7.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança a resposta de Deus em Josué 7:10–11",
+   "verseRef": "Josué 7:10–11",
+   "options": [
+    {"id": "a", "text": "Deus manda Josué se levantar do chão"},
+    {"id": "b", "text": "Deus declara o pecado de Israel"},
+    {"id": "c", "text": "Deus detalha o proibido escondido"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Levanta-te! Por que estás prostrado assim sobre o rosto",
+   "feedbackCorrect": "Primeiro Deus levanta Josué, depois nomeia o pecado e o seu esconderijo.",
+   "feedbackWrong": {"default": "Comece pela ordem a Josué; o detalhe da bagagem vem por último."},
+   "hint": "A bagagem só aparece no fim da resposta de Deus.",
+   "learningObjective": "Compreender o movimento da resposta de Deus a Josué.",
+   "evidence": ["Josué 7:10–11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Josué 7:11, tomaram o proibido e depois o que fizeram antes de mentir",
+   "verseRef": "Josué 7:11",
+   "options": [{"id": "a", "text": "devolveram"}, {"id": "b", "text": "roubaram"}, {"id": "c", "text": "queimaram"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "tomaram das coisas condenadas, roubaram, mentiram",
+   "feedbackCorrect": "A lista sobe um degrau: tomar o consagrado já é roubo contra Deus.",
+   "feedbackWrong": {"a": "Nada é devolvido no relato; o caminho é de aprofundar o erro.", "c": "Queimar o proibido não acontece; ele é escondido na bagagem."},
+   "hint": "Veja o segundo verbo da lista de Deus.",
+   "learningObjective": "Compreender a progressão do pecado em Josué 7:11.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Josué 7:11 a Deuteronômio 7:26",
+   "verseRef": "Josué 7:11",
+   "passageA": {"ref": "Josué 7:11"},
+   "passageB": {"ref": "Deuteronômio 7:26"},
+   "options": [{"id": "a", "text": "Não guardar o condenado"}, {"id": "b", "text": "Guardar tesouros da conquista"}, {"id": "c", "text": "Esconder erros de Deus"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "tomaram das coisas condenadas",
+   "feedbackCorrect": "A ordem antiga e o erro em Ai tratam do mesmo ponto: não reter o proibido.",
+   "feedbackWrong": {"b": "Os dois textos proíbem guardar para si o que Deus condenou.", "c": "Deus vê o escondido e o revela: nada fica oculto para ele."},
+   "hint": "Compare a ordem antiga com o erro cometido em Ai.",
+   "learningObjective": "Relacionar o pecado de Ai à ordem de Deuteronômio.",
+   "evidence": ["Josué 7:11", "Deuteronômio 7:26"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "O pecado de um só homem em Ai não teve efeito algum sobre o restante do povo de Israel",
+   "verseRef": "Josué 7:11", "correctOptionId": "false",
+   "evidenceSpan": "Israel pecou e transgrediu a minha aliança",
+   "feedbackCorrect": "Deus fala de Israel inteiro: o escondido de um contamina o arraial todo.",
+   "feedbackWrong": {"true": "Deus diz que Israel pecou, e a derrota atinge o exército inteiro."},
+   "hint": "Veja de quem Deus diz que é o pecado.",
+   "learningObjective": "Interpretar o alcance coletivo do pecado em Ai.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Josué 7:11, toque o trecho que mostra o pecado como ato de todo o povo",
+   "verseRef": "Josué 7:11",
+   "options": [{"id": "a", "text": "Israel pecou"}, {"id": "b", "text": "minha aliança"}, {"id": "c", "text": "sua bagagem"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Israel pecou e transgrediu a minha aliança",
+   "feedbackCorrect": "Deus não isola um nome aqui: ele chama o pecado pelo nome do povo.",
+   "feedbackWrong": {"b": "A aliança é o que foi quebrado; quem pecou vem no começo.", "c": "A bagagem é o esconderijo do erro, não o sujeito do pecado."},
+   "hint": "Procure o sujeito coletivo no começo do versículo.",
+   "learningObjective": "Sustentar com o texto o alcance coletivo do pecado.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Josué 7:10–11 sustenta sobre lidar com a derrota espiritual",
+   "verseRef": "Josué 7:10–11",
+   "options": [
+    {"id": "a", "text": "Levantar e tratar a causa diante de Deus"},
+    {"id": "b", "text": "Lamentar sem nunca encarar a causa"},
+    {"id": "c", "text": "Esconder o erro para proteger o grupo"},
+    {"id": "d", "text": "Culpar apenas a força do inimigo"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Levanta-te! Por que estás prostrado assim sobre o rosto",
+   "feedbackCorrect": "Deus levanta Josué para enfrentar o pecado revelado, não só a derrota.",
+   "feedbackWrong": {"b": "A ordem de Deus é levantar: lamentação sem ação não resolve.", "c": "Esconder foi justamente o passo que aprofundou o pecado.", "d": "Deus não aponta a força de Ai; aponta a aliança quebrada."},
+   "hint": "Veja a atitude que Deus pede a Josué no chão.",
+   "learningObjective": "Escolher a interpretação que Josué 7 sustenta sobre derrota e pecado.",
+   "evidence": ["Josué 7:10–11"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho do proibido na história de Jericó e Ai",
+   "verseRef": "Josué 7:11",
+   "options": [
+    {"id": "a", "text": "Deus avisa para não tocar no consagrado"},
+    {"id": "b", "text": "O proibido é tomado e escondido"},
+    {"id": "c", "text": "O vale da aflição vira porta de esperança"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "tomaram das coisas condenadas",
+   "feedbackCorrect": "Do aviso à queda, e da queda à esperança que Deus anuncia em Oseias.",
+   "feedbackWrong": {"default": "Siga a ordem: aviso em Josué 6, queda em Josué 7, esperança em Oseias."},
+   "hint": "Siga a ordem dos livros na Bíblia.",
+   "learningObjective": "Ver o pecado de Ai dentro de um fio de queda e esperança.",
+   "evidence": ["Josué 7:11", "Josué 6:18", "Oseias 2:15"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Josué 7:11, Israel pecou e transgrediu a minha o quê",
+   "verseRef": "Josué 7:11",
+   "options": [{"id": "a", "text": "aliança"}, {"id": "b", "text": "promessa"}, {"id": "c", "text": "vitória"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "transgrediu a minha aliança, que eu lhes ordenara",
+   "feedbackCorrect": "O centro do pecado não é um objeto: é a relação quebrada com Deus.",
+   "feedbackWrong": {"b": "A promessa continua; o que foi quebrado é o compromisso com Deus.", "c": "A vitória foi de Deus; o que Israel rompe é o pacto com ele."},
+   "hint": "Veja o compromisso que Deus diz ter ordenado ao povo.",
+   "learningObjective": "Lembrar o termo que mostra o pecado como quebra de relação.",
+   "evidence": ["Josué 7:11"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Josué 7:11 a Oseias 2:15",
+   "verseRef": "Josué 7:11",
+   "passageA": {"ref": "Josué 7:11"},
+   "passageB": {"ref": "Oseias 2:15"},
+   "options": [{"id": "a", "text": "Pecado escondido para sempre"}, {"id": "b", "text": "Vale da aflição vira esperança"}, {"id": "c", "text": "Deus abandona o vale de Acor"}],
+   "correctOptionId": "b",
+   "evidenceSpan": "Israel pecou e transgrediu a minha aliança",
+   "feedbackCorrect": "O lugar da aflição por causa do pecado vira, em Oseias, porta de esperança.",
+   "feedbackWrong": {"a": "Deus revela o escondido; em Oseias, ele transforma o vale.", "c": "É o contrário: Deus promete fazer do vale uma porta aberta."},
+   "hint": "Veja o que Deus promete fazer com o vale da aflição.",
+   "learningObjective": "Ligar o julgamento em Ai à esperança anunciada em Oseias.",
+   "evidence": ["Josué 7:11", "Oseias 2:15"]
+  }
+ ]
+}

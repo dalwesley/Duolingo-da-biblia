@@ -1,0 +1,322 @@
+{
+  "study": {
+    "passageRef": "Filipenses 2:5–8",
+    "passages": [{ "ref": "Filipenses 2:5–8" }],
+    "context": "Paulo quer uma igreja unida, sem rivalidade nem vaidade. Para isso, ele não dá só uma ordem: ele mostra o caminho do próprio Cristo, que desceu de Deus a servo e à cruz.",
+    "keyword": "Mente de Cristo",
+    "keywordGloss": "O sentimento de Cristo: em vez de se apegar ao que é seu, ele se esvazia e serve até o fim.",
+    "focusQuestion": "Em que relação você precisa parar de se defender e começar a servir?",
+    "reflectionPrompts": ["Considerar o outro", "Descer para servir", "Exaltação vem de Deus"],
+    "facts": [
+      { "text": "Paulo pede que a igreja compartilhe o mesmo sentimento e esteja unida em alma.", "evidenceRef": "Filipenses 2:2", "evidenceSpan": "compartilhem o mesmo sentimento" },
+      { "text": "Com humildade, cada um deve considerar os outros superiores a si mesmo.", "evidenceRef": "Filipenses 2:3", "evidenceSpan": "cada um considere os outros superiores a si mesmo" },
+      { "text": "Cada um deve cuidar também do que é dos outros, não só do seu.", "evidenceRef": "Filipenses 2:4", "evidenceSpan": "também do que é dos outros" },
+      { "text": "Cristo, existindo na forma de Deus, não se apegou ao ser igual a Deus.", "evidenceRef": "Filipenses 2:6", "evidenceSpan": "não considerou o ser igual a Deus como algo a se apropriar" },
+      { "text": "Ele se esvaziou, assumindo a forma de servo.", "evidenceRef": "Filipenses 2:7", "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo" },
+      { "text": "Ele se humilhou, obediente até à morte, e morte de cruz.", "evidenceRef": "Filipenses 2:8", "evidenceSpan": "tornando-se obediente até à morte, e morte de cruz" }
+    ],
+    "keyTerms": [
+      { "term": "servo", "gloss": "A forma que Cristo assume: ele vem para servir, não para ser servido." },
+      { "term": "forma", "gloss": "Ele existia na forma de Deus e assume a forma de servo, sem deixar de ser quem é." },
+      { "term": "cruz", "gloss": "O ponto mais baixo da descida: obediência até a morte mais vergonhosa." }
+    ],
+    "structure": [
+      { "label": "A igreja chamada à unidade", "evidenceRef": "Filipenses 2:2" },
+      { "label": "Humildade que considera o outro", "evidenceRef": "Filipenses 2:3" },
+      { "label": "Cristo se esvazia como servo", "evidenceRef": "Filipenses 2:7" },
+      { "label": "Deus exalta o Filho humilhado", "evidenceRef": "Filipenses 2:9" }
+    ],
+    "relations": [
+      { "kind": "contraste", "text": "Ele era Deus, mas se esvaziou: o contraste entre a forma de Deus e a de servo é o coração do hino.", "marker": "mas", "evidenceRef": "Filipenses 2:7" },
+      { "kind": "resultado", "text": "Por causa da humilhação até a cruz, Deus o exaltou acima de tudo.", "marker": "Por isso", "evidenceRef": "Filipenses 2:9" },
+      { "kind": "propósito", "text": "A exaltação tem um fim: que todo joelho se dobre ao nome de Jesus.", "marker": "Para que", "evidenceRef": "Filipenses 2:10" }
+    ],
+    "crossRefs": [
+      { "ref": "Marcos 10:45", "bridge": "Filho do Homem veio servir" },
+      { "ref": "João 1:14", "bridge": "O Verbo se fez carne" },
+      { "ref": "Isaías 53:11", "bridge": "Servo que justifica a muitos" }
+    ],
+    "misreadings": [
+      { "text": "Jesus deixou de ser Deus quando se fez homem e servo.", "why": "O hino diz que ele existia na forma de Deus e assume a de servo: ele acrescenta, não troca quem é." },
+      { "text": "Humildade é achar que você não vale nada.", "why": "No texto, humildade é considerar os outros e cuidar deles, à semelhança de Cristo que serve." },
+      { "text": "O hino é só para admirar de longe, sem imitar.", "why": "Paulo abre mandando a igreja ter o mesmo sentimento que houve em Cristo." }
+    ],
+    "centralInsight": "A mente de Cristo se humilha a servo e é exaltada pelo Pai",
+    "anchorQuestion": "Que caminho Cristo percorre de Filipenses 2:6 até 2:9?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente", "type": "true_false",
+      "question": "Em Filipenses 2:3, Paulo mandou cada um se considerar superior a todos os outros.",
+      "verseRef": "Filipenses 2:3", "correctOptionId": "false",
+      "evidenceSpan": "cada um considere os outros superiores a si mesmo",
+      "feedbackCorrect": "É o contrário: considerar os outros superiores a si mesmo.",
+      "feedbackWrong": { "true": "Releia Filipenses 2:3: a humildade olha para o outro." },
+      "hint": "Veja a direção do considerar no versículo.",
+      "learningObjective": "Observar a ordem de Paulo sobre humildade.",
+      "evidence": ["Filipenses 2:3"]
+    },
+    {
+      "difficulty": "semente", "type": "find_in_text",
+      "question": "Em Filipenses 2:8, toque até onde foi a obediência de Cristo.",
+      "verseRef": "Filipenses 2:8",
+      "options": [{ "id": "a", "text": "homem" }, { "id": "b", "text": "morte" }, { "id": "c", "text": "cruz" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "obediente até à morte",
+      "feedbackCorrect": "A obediência dele não parou antes do fim mais duro.",
+      "feedbackWrong": { "a": "Homem é a forma que ele assumiu, não o limite da obediência.", "c": "Isso especifica o tipo de morte, depois do limite dito." },
+      "hint": "Procure a palavra logo depois de até à.",
+      "learningObjective": "Identificar o limite da obediência de Cristo.",
+      "evidence": ["Filipenses 2:8"]
+    },
+    {
+      "difficulty": "semente", "type": "choice",
+      "question": "Segundo Filipenses 2:8, como Cristo se humilhou?",
+      "verseRef": "Filipenses 2:8",
+      "options": [
+        { "id": "a", "text": "Fugindo das pessoas que o rejeitaram" },
+        { "id": "b", "text": "Tornando-se obediente até à morte de cruz" },
+        { "id": "c", "text": "Escondendo quem ele era até à velhice" },
+        { "id": "d", "text": "Recusando qualquer tipo de sofrimento" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "humilhou-se a si mesmo, tornando-se obediente até à morte",
+      "feedbackCorrect": "A descida dele vai até a obediência na cruz.",
+      "feedbackWrong": { "a": "Ele não fugiu: ele se entregou em obediência.", "c": "A cruz expôs, não escondeu, a missão dele.", "d": "Ele assumiu o sofrimento, não o recusou." },
+      "hint": "Veja o fim da trajetória de descida.",
+      "learningObjective": "Observar a humilhação de Cristo em 2:8.",
+      "evidence": ["Filipenses 2:8"]
+    },
+    {
+      "difficulty": "semente", "type": "order",
+      "question": "Monte Filipenses 2:7 na ordem do texto.",
+      "verseRef": "Filipenses 2:7",
+      "options": [
+        { "id": "a", "text": "a si mesmo se esvaziou" },
+        { "id": "b", "text": "assumindo a forma de servo" },
+        { "id": "c", "text": "tornando-se em semelhança de homens" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a si mesmo se esvaziou",
+      "feedbackCorrect": "Ele se esvazia, vira servo e se faz como os homens.",
+      "feedbackWrong": { "default": "Comece pelo esvaziamento dele mesmo." },
+      "hint": "A ordem começa com ele se esvaziando.",
+      "learningObjective": "Reconhecer a sequência da descida de Cristo.",
+      "evidence": ["Filipenses 2:7"]
+    },
+    {
+      "difficulty": "semente", "type": "complete",
+      "question": "Em Filipenses 2:7, que forma Cristo assumiu ao se esvaziar?",
+      "verseRef": "Filipenses 2:7",
+      "options": [{ "id": "a", "text": "servo" }, { "id": "b", "text": "rei" }, { "id": "c", "text": "juiz" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "assumindo a forma de servo",
+      "feedbackCorrect": "Quem era Deus assume o lugar de quem serve.",
+      "feedbackWrong": { "b": "Ele será reconhecido Rei, mas aqui assume outro lugar.", "c": "O juízo não é a forma que ele assume ao descer." },
+      "hint": "É o lugar de quem serve aos outros.",
+      "learningObjective": "Lembrar a forma assumida por Cristo.",
+      "evidence": ["Filipenses 2:7"]
+    },
+    {
+      "difficulty": "semente", "type": "connect",
+      "question": "O que Filipenses 2:5 comunica que se liga a este contexto?",
+      "verseRef": "Filipenses 2:5",
+      "passageA": { "ref": "Filipenses 2:5" },
+      "passageB": { "ref": "Contexto", "text": "Paulo pede que a igreja abandone rivalidade e vaidade e cuide uns dos outros." },
+      "options": [
+        { "id": "a", "text": "Mesma mente de Cristo" },
+        { "id": "b", "text": "Orgulho que vence debates" },
+        { "id": "c", "text": "Distância segura dos outros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o mesmo sentimento que existia em Cristo Jesus",
+      "feedbackCorrect": "O remédio da rivalidade é ter o sentimento de Cristo.",
+      "feedbackWrong": { "b": "Rivalidade e vaidade são o problema, não o remédio.", "c": "Cristo se aproximou e serviu; não se distanciou." },
+      "hint": "Veja de quem é o sentimento pedido.",
+      "learningObjective": "Ligar a vida da igreja ao sentimento de Cristo.",
+      "evidence": ["Filipenses 2:5"]
+    },
+    {
+      "difficulty": "caminhada", "type": "true_false",
+      "question": "Em Filipenses 2:9, Deus exaltou Cristo porque ele se humilhou até à morte de cruz.",
+      "verseRef": "Filipenses 2:9", "correctOptionId": "true",
+      "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+      "feedbackCorrect": "O por isso liga a exaltação à humilhação obediente dele.",
+      "feedbackWrong": { "false": "O versículo começa ligando exaltação à descida dele." },
+      "hint": "Veja as duas primeiras palavras do versículo.",
+      "learningObjective": "Compreender a ligação entre humilhação e exaltação.",
+      "evidence": ["Filipenses 2:9"]
+    },
+    {
+      "difficulty": "caminhada", "type": "find_in_text",
+      "question": "Em Filipenses 2:3, toque a palavrinha que vira a ordem da rivalidade para a humildade.",
+      "verseRef": "Filipenses 2:3",
+      "options": [{ "id": "a", "text": "Nada" }, { "id": "b", "text": "mas" }, { "id": "c", "text": "vaidade" }],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas, com humildade",
+      "feedbackCorrect": "Nada por rivalidade; com humildade, diz a virada.",
+      "feedbackWrong": { "a": "Isso abre a proibição, não faz a virada dela.", "c": "Isso é um dos males proibidos, não a virada." },
+      "hint": "Procure a conjunção curta antes de humildade.",
+      "learningObjective": "Reconhecer o marcador de contraste em 2:3.",
+      "evidence": ["Filipenses 2:3"]
+    },
+    {
+      "difficulty": "caminhada", "type": "choice",
+      "question": "Como o caminho de Cristo em Filipenses 2:6–8 responde à rivalidade de 2:3?",
+      "verseRef": "Filipenses 2:7–8",
+      "options": [
+        { "id": "a", "text": "Em vez de se apegar ao seu direito, ele se fez servo" },
+        { "id": "b", "text": "Ele venceu os rivais mostrando ser superior a todos" },
+        { "id": "c", "text": "Ele abandonou as pessoas para viver sozinho no céu" },
+        { "id": "d", "text": "Ele exigiu que todos o servissem primeiro na terra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a si mesmo se esvaziou assumindo a forma de servo",
+      "feedbackCorrect": "O oposto da rivalidade: abrir mão e servir até à cruz.",
+      "feedbackWrong": { "b": "Ele não disputa superioridade: ele desce a servo.", "c": "Ele se fez como os homens, não se afastou deles.", "d": "Quem serve aqui é ele, não quem o cerca." },
+      "hint": "Compare apegar-se a direitos com esvaziar-se.",
+      "learningObjective": "Relacionar o exemplo de Cristo à vida da igreja.",
+      "evidence": ["Filipenses 2:7–8"]
+    },
+    {
+      "difficulty": "caminhada", "type": "order",
+      "question": "Como se encadeia a descida de Cristo em Filipenses 2:6–8?",
+      "verseRef": "Filipenses 2:6",
+      "options": [
+        { "id": "a", "text": "Ele não se apega ao ser igual a Deus" },
+        { "id": "b", "text": "Ele se esvazia e assume forma de servo" },
+        { "id": "c", "text": "Ele obedece até à morte de cruz" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "existia na forma de Deus",
+      "feedbackCorrect": "Não se apegar, esvaziar-se e obedecer até à cruz.",
+      "feedbackWrong": { "default": "Comece pelo que ele não fez questão de segurar." },
+      "hint": "A cruz é o ponto mais baixo da descida.",
+      "learningObjective": "Compreender as etapas da descida de Cristo.",
+      "evidence": ["Filipenses 2:6"]
+    },
+    {
+      "difficulty": "caminhada", "type": "complete",
+      "question": "Em Filipenses 2:5, o que a igreja deve ter em si, como houve em Cristo?",
+      "verseRef": "Filipenses 2:5",
+      "options": [{ "id": "a", "text": "sentimento" }, { "id": "b", "text": "medo" }, { "id": "c", "text": "debate" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tenham em vocês o mesmo sentimento",
+      "feedbackCorrect": "Não é só admirar: é ter o mesmo modo de sentir.",
+      "feedbackWrong": { "b": "Medo não é o que Paulo manda copiar de Cristo.", "c": "Debate por rivalidade é justamente o problema." },
+      "hint": "É o modo interior de Cristo diante dos outros.",
+      "learningObjective": "Compreender o que a igreja deve imitar em Cristo.",
+      "evidence": ["Filipenses 2:5"]
+    },
+    {
+      "difficulty": "caminhada", "type": "connect",
+      "question": "O que liga Filipenses 2:7 a Marcos 10:45?",
+      "verseRef": "Filipenses 2:7",
+      "passageA": { "ref": "Filipenses 2:7" },
+      "passageB": { "ref": "Marcos 10:45" },
+      "options": [
+        { "id": "a", "text": "Filho do Homem veio servir" },
+        { "id": "b", "text": "Servo que foge do sofrimento" },
+        { "id": "c", "text": "Grandeza por dominar os outros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assumindo a forma de servo",
+      "feedbackCorrect": "Jesus mesmo disse: ele veio não para ser servido, mas servir.",
+      "feedbackWrong": { "b": "Ele serve até dar a vida; não foge de nada.", "c": "Os dois textos invertem a grandeza pelo domínio." },
+      "hint": "Veja para que o Filho do Homem veio.",
+      "learningObjective": "Relacionar a forma de servo às palavras de Jesus.",
+      "evidence": ["Filipenses 2:7", "Marcos 10:45"]
+    },
+    {
+      "difficulty": "profundezas", "type": "true_false",
+      "question": "Filipenses 2:6–7 ensina que Jesus deixou de ser Deus ao assumir a forma de servo.",
+      "verseRef": "Filipenses 2:6–7", "correctOptionId": "false",
+      "evidenceSpan": "existia na forma de Deus",
+      "feedbackCorrect": "Ele existia na forma de Deus e assume a de servo: soma, não troca.",
+      "feedbackWrong": { "true": "O hino mantém as duas formas sobre o mesmo Cristo." },
+      "hint": "Veja o que ele já era antes de descer.",
+      "learningObjective": "Interpretar a descida sem apagar quem Cristo é.",
+      "evidence": ["Filipenses 2:6–7"]
+    },
+    {
+      "difficulty": "profundezas", "type": "find_in_text",
+      "question": "Em Filipenses 2:6, toque o que Cristo já existia sendo, antes de se esvaziar.",
+      "verseRef": "Filipenses 2:6",
+      "options": [{ "id": "a", "text": "forma de Deus" }, { "id": "b", "text": "igual a Deus" }, { "id": "c", "text": "se apropriar" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "existia na forma de Deus",
+      "feedbackCorrect": "A descida parte do alto: ele já existia como Deus.",
+      "feedbackWrong": { "b": "Isso fala da igualdade que ele não usou para si.", "c": "Isso é o que ele não considerou fazer, não o que era." },
+      "hint": "Procure a primeira descrição dele no versículo.",
+      "learningObjective": "Sustentar no texto quem Cristo era antes da descida.",
+      "evidence": ["Filipenses 2:6"]
+    },
+    {
+      "difficulty": "profundezas", "type": "choice",
+      "question": "Que leitura Filipenses 2:6–9 sustenta sobre humildade e exaltação?",
+      "verseRef": "Filipenses 2:9",
+      "options": [
+        { "id": "a", "text": "Quem se humilha a servo é exaltado por Deus" },
+        { "id": "b", "text": "Humildade é pensar que você não vale nada" },
+        { "id": "c", "text": "Exaltação é prêmio de sorte para alguns poucos" },
+        { "id": "d", "text": "Cristo é só um exemplo moral, sem ser Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, Deus o exaltou sobremaneira",
+      "feedbackCorrect": "A descida a servo termina em exaltação dada pelo Pai.",
+      "feedbackWrong": { "b": "Humildade aqui é servir o outro, não se odiar.", "c": "A exaltação responde à obediência, não à sorte.", "d": "O hino começa afirmando que ele existia como Deus." },
+      "hint": "Ligue o por isso à descida anterior.",
+      "learningObjective": "Escolher a interpretação que o hino sustenta.",
+      "evidence": ["Filipenses 2:9"]
+    },
+    {
+      "difficulty": "profundezas", "type": "order",
+      "question": "Qual sequência revela o sentido de Filipenses 2:6–11?",
+      "verseRef": "Filipenses 2:11",
+      "options": [
+        { "id": "a", "text": "O Filho existe na forma de Deus" },
+        { "id": "b", "text": "Ele desce a servo obediente até à cruz" },
+        { "id": "c", "text": "Toda língua o confessa como Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "toda língua confesse que Jesus Cristo é Senhor",
+      "feedbackCorrect": "De Deus a servo, de servo a Senhor confessado por todos.",
+      "feedbackWrong": { "default": "Comece por quem ele era antes de descer." },
+      "hint": "A confissão universal fecha o hino.",
+      "learningObjective": "Ver o arco completo do hino de Cristo.",
+      "evidence": ["Filipenses 2:11"]
+    },
+    {
+      "difficulty": "profundezas", "type": "complete",
+      "question": "Em Filipenses 2:9, o que Deus concedeu a Cristo acima de todos os outros?",
+      "verseRef": "Filipenses 2:9",
+      "options": [{ "id": "a", "text": "nome" }, { "id": "b", "text": "trono" }, { "id": "c", "text": "templo" }],
+      "correctOptionId": "a",
+      "evidenceSpan": "lhe concedeu o nome que está acima de todo nome",
+      "feedbackCorrect": "Ao nome dele todo joelho se dobrará, diz o hino.",
+      "feedbackWrong": { "b": "Trono não é a palavra do hino nesta frase.", "c": "Nenhum templo é concedido nesta exaltação." },
+      "hint": "É diante dele que todo joelho se dobra.",
+      "learningObjective": "Lembrar o centro da exaltação de Cristo.",
+      "evidence": ["Filipenses 2:9"]
+    },
+    {
+      "difficulty": "profundezas", "type": "connect",
+      "question": "O que liga Filipenses 2:7 a João 1:14?",
+      "verseRef": "Filipenses 2:7",
+      "passageA": { "ref": "Filipenses 2:7" },
+      "passageB": { "ref": "João 1:14" },
+      "options": [
+        { "id": "a", "text": "O Verbo se fez carne" },
+        { "id": "b", "text": "Deus desiste de ser Deus" },
+        { "id": "c", "text": "Carne como prisão do espírito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tornando-se em semelhança de homens",
+      "feedbackCorrect": "João diz o mesmo mistério: o Verbo divino se fez carne.",
+      "feedbackWrong": { "b": "Ele continua Deus ao se fazer carne, nos dois textos.", "c": "A carne é assumida por amor, não uma prisão." },
+      "hint": "Veja o que o Verbo se tornou em João.",
+      "learningObjective": "Ligar a descida de Cristo à encarnação em João.",
+      "evidence": ["Filipenses 2:7", "João 1:14"]
+    }
+  ]
+}

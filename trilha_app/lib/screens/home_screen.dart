@@ -443,6 +443,14 @@ class _HomeScreenState extends State<HomeScreen>
     final a = Appearance.of(context);
     final juntos = JuntosInbox.pending(context);
     final mistakes = progress.mistakeQuestionIds.length;
+    // Linhas com medida: cada uma mostra quanto falta, não só um rótulo.
+    final questsTotal = DailyQuestDefs.all.length;
+    final questsDone = goalMet ? DailyQuestsCard.doneCount(progress) : 0;
+    final questsAllDone = questsDone >= questsTotal;
+    final season = goalMet
+        ? SeasonChallengeBanner.seasonVault(context, trails, progress: progress)
+        : null;
+    final seasonTrack = season?.tracks.first;
     final reviewScenes = progress.weeklyReviewReady
         ? progress
               .missionsCompletedInWeek(progress.weeklyReviewWeekKey())
@@ -453,6 +461,7 @@ class _HomeScreenState extends State<HomeScreen>
     // feita hoje encerra as ofertas até amanhã.
     final now = DateTime.now();
     final campaign = SeasonWalkCatalog.current(now);
+    final liturgy = LiturgicalCalendar.momentFor(now);
     String ymdOf(DateTime d) => d.toIso8601String().substring(0, 10);
     final seasonReviewPending = SeasonWalkAccess.weekReviewPending(
       campaign: campaign,
@@ -497,8 +506,11 @@ class _HomeScreenState extends State<HomeScreen>
         _MoreTile(
           glyph: CinematicGlyph.target,
           title: l10n.questDailyTitle,
-          caption: l10n.homeQuestsExtraCaption,
-          color: AppRoles.presence,
+          caption: questsAllDone ? l10n.questDone : l10n.homeQuestsExtraCaption,
+          color: questsAllDone ? AppRoles.success : AppRoles.presence,
+          badge: '$questsDone/$questsTotal',
+          meter: questsDone / questsTotal,
+          segments: questsTotal,
           onTap: () => _openCardSheet(
             DailyQuestsCard(
               onQuestTap: (q) {
@@ -511,9 +523,23 @@ class _HomeScreenState extends State<HomeScreen>
       if (goalMet)
         _MoreTile(
           glyph: CinematicGlyph.crown,
-          title: l10n.seasonChallengeTitle,
-          caption: l10n.seasonChallengeSeeProgress,
-          color: a.chrome,
+          title: season?.vault.title ?? l10n.seasonChallengeTitle,
+          caption: seasonTrack == null
+              ? l10n.seasonChallengeSeeProgress
+              : seasonTrack.isComplete
+              ? l10n.questDone
+              : l10n.seasonChallengePathPercent(
+                  (seasonTrack.progress * 100).round(),
+                ),
+          color: seasonTrack?.isComplete == true ? AppRoles.success : a.chrome,
+          meter: seasonTrack == null
+              ? null
+              : seasonTrack.isComplete
+              ? 1
+              : seasonTrack.progress,
+          meterColor: seasonTrack == null || seasonTrack.isComplete
+              ? null
+              : SeasonChallengeBanner.trackAccent(seasonTrack),
           onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
       // A fila de erros é grátis para todo mundo — inclusive assinante.
@@ -521,12 +547,21 @@ class _HomeScreenState extends State<HomeScreen>
         _MoreTile(
           glyph: CinematicGlyph.refresh,
           title: l10n.homeReviewTitle,
-          caption: l10n.homeReviewCaption(mistakes),
+          caption: l10n.homeReviewMistakesCaption,
           color: a.chrome,
+          badge: '$mistakes',
           onTap: () => Navigator.of(
             context,
           ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
         ),
+      // Estação do calendário cristão: sempre presente, abre a leitura dela.
+      _MoreTile(
+        glyph: CinematicGlyph.calendar,
+        title: liturgy.title,
+        caption: liturgy.subtitle,
+        color: LiturgicalCalendar.accentOf(liturgy.season),
+        onTap: () => _openBible(liturgy.focusRef),
+      ),
     ];
   }
 
@@ -623,7 +658,7 @@ class _HomeScreenState extends State<HomeScreen>
               ),
               physics: const ClampingScrollPhysics(),
               children: [
-                // Header: saudação + estação + pulso do dia.
+                // Header: saudação + pulso do dia.
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: AppSpace.screen,
@@ -637,8 +672,6 @@ class _HomeScreenState extends State<HomeScreen>
                           : current != null
                           ? () => widget.onOpenMission(current.slug)
                           : widget.onOpenTrilhas,
-                      onLiturgyTap: () =>
-                          _openBible(LiturgicalCalendar.momentFor().focusRef),
                     ),
                   ),
                 ),
@@ -1029,6 +1062,18 @@ class _MoreTile {
   final bool hot;
   final VoidCallback onTap;
 
+  /// Contagem à direita (ex.: "2/3", "12").
+  final String? badge;
+
+  /// Barra de progresso 0–1 sob a legenda; null = linha sem medida.
+  final double? meter;
+
+  /// > 1 divide a barra em gomos (tarefas contáveis); 0 = barra contínua.
+  final int segments;
+
+  /// Cor da barra quando difere do tom da linha (nível do desafio).
+  final Color? meterColor;
+
   const _MoreTile({
     required this.glyph,
     required this.title,
@@ -1036,6 +1081,10 @@ class _MoreTile {
     required this.color,
     required this.onTap,
     this.hot = false,
+    this.badge,
+    this.meter,
+    this.segments = 0,
+    this.meterColor,
   });
 }
 
@@ -1127,7 +1176,11 @@ class _MoreTileRowState extends State<_MoreTileRow> {
     final tone = a.ink(tile.color);
     return Semantics(
       button: true,
-      label: '${tile.title}, ${tile.caption}',
+      label: [
+        tile.title,
+        tile.caption,
+        if (tile.badge != null) tile.badge!,
+      ].join(', '),
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
@@ -1143,17 +1196,17 @@ class _MoreTileRowState extends State<_MoreTileRow> {
           curve: AppMotion.enter,
           padding: const EdgeInsets.symmetric(
             horizontal: AppSpace.lg,
-            vertical: 14,
+            vertical: AppSpace.lg,
           ),
           decoration: BoxDecoration(
-            // Linha com novidade ganha um brilho da própria cor vindo do
-            // ícone; pressionar clareia a linha inteira.
+            // Toda linha carrega um sopro da própria cor vindo do ícone;
+            // com novidade o brilho dobra. Pressionar clareia a linha.
             gradient: LinearGradient(
               colors: [
-                tone.withValues(alpha: tile.hot ? 0.12 : 0),
+                tone.withValues(alpha: tile.hot ? 0.14 : 0.06),
                 tone.withValues(alpha: 0),
               ],
-              stops: const [0, 0.7],
+              stops: const [0, 0.6],
             ),
           ),
           foregroundDecoration: BoxDecoration(
@@ -1185,10 +1238,24 @@ class _MoreTileRowState extends State<_MoreTileRow> {
                         color: tile.hot ? tone : a.textSecondary,
                       ),
                     ),
+                    if (tile.meter != null) ...[
+                      const SizedBox(height: AppSpace.sm),
+                      _MoreTileMeter(
+                        value: tile.meter!,
+                        segments: tile.segments,
+                        color: tile.meterColor != null
+                            ? a.ink(tile.meterColor!)
+                            : tone,
+                      ),
+                    ],
                   ],
                 ),
               ),
               const SizedBox(width: AppSpace.sm),
+              if (tile.badge != null) ...[
+                CountBadge(tile.badge!, color: tone),
+                const SizedBox(width: AppSpace.sm),
+              ],
               AnimatedSlide(
                 duration: AppMotion.quick,
                 offset: _pressed ? const Offset(0.15, 0) : Offset.zero,
@@ -1198,6 +1265,49 @@ class _MoreTileRowState extends State<_MoreTileRow> {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Medida da linha: barra contínua ou em gomos (um por tarefa), fina para
+/// não disputar com o título.
+class _MoreTileMeter extends StatelessWidget {
+  final double value;
+  final int segments;
+  final Color color;
+
+  const _MoreTileMeter({
+    required this.value,
+    required this.segments,
+    required this.color,
+  });
+
+  static const _height = 4.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    if (segments <= 1) {
+      return AppProgressBar(value: value, color: color, height: _height);
+    }
+    final filled = (value.clamp(0.0, 1.0) * segments).round();
+    return Row(
+      children: [
+        for (var i = 0; i < segments; i++) ...[
+          if (i > 0) const SizedBox(width: 4),
+          Expanded(
+            child: AnimatedContainer(
+              duration: AppMotion.quick,
+              curve: AppMotion.enter,
+              height: _height,
+              decoration: BoxDecoration(
+                color: i < filled ? color : a.progressTrack,
+                borderRadius: BorderRadius.circular(AppRadii.pill),
+              ),
+            ),
+          ),
+        ],
+      ],
     );
   }
 }

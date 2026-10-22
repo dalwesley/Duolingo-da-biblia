@@ -1,0 +1,4820 @@
+[
+  {
+    "id": "romanos-sem-rm-01-pecado-01",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, todos pecaram e carecem da glória de Deus.",
+    "prompt": "Em Romanos 3:23, todos pecaram e carecem da glória de Deus.",
+    "cue": "Em Romanos 3:23, todos pecaram e carecem da glória de Deus.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "todos pecaram e carecem da glória de Deus",
+    "feedbackCorrect": "Paulo inclui todos no pecado e todos na necessidade da glória de Deus.",
+    "feedbackWrong": {
+      "false": "Releia Romanos 3:23, que inclui todos no pecado."
+    },
+    "hint": "Olhe quem o versículo inclui.",
+    "learningObjective": "Observar que todos pecaram segundo Romanos 3:23.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-01-pecado-02",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, toque o que todos fizeram.",
+    "prompt": "Em Romanos 3:23, toque o que todos fizeram.",
+    "cue": "Em Romanos 3:23, toque o que todos fizeram.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecaram"
+      },
+      {
+        "id": "b",
+        "text": "glória de Deus"
+      },
+      {
+        "id": "c",
+        "text": "carecem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Todos pecaram: o diagnóstico de Paulo não deixa ninguém de fora.",
+    "feedbackWrong": {
+      "b": "A glória de Deus é aquilo de que todos carecem.",
+      "c": "Carecer é a condição; a ação afirmada antes é outra."
+    },
+    "hint": "Procure a ação atribuída a todos.",
+    "learningObjective": "Identificar a ação universal afirmada em Romanos 3:23.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-01-pecado-03",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 3:20, por meio de que ninguém será justificado diante de Deus?",
+    "prompt": "Segundo Romanos 3:20, por meio de que ninguém será justificado diante de Deus?",
+    "cue": "Segundo Romanos 3:20, por meio de que ninguém será justificado diante de Deus?",
+    "verseRef": "Romanos 3:20",
+    "passageText": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por meio da fé em Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Por meio das obras da lei"
+      },
+      {
+        "id": "c",
+        "text": "Por meio do sangue de Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Por meio da graça de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ninguém será justificado diante dele por meio das obras da lei",
+    "feedbackCorrect": "As obras da lei não justificam; a lei dá pleno conhecimento do pecado.",
+    "feedbackWrong": {
+      "a": "A fé em Jesus é o caminho da justiça, não o que o versículo nega.",
+      "c": "O sangue de Cristo aparece em 3:25, não como meio negado aqui.",
+      "d": "A graça justifica gratuitamente, segundo Romanos 3:24."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar o papel da lei em Romanos 3:20.",
+    "evidence": [
+      "Romanos 3:20"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-01-pecado-04",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 3:24 na ordem do texto.",
+    "prompt": "Monte Romanos 3:24 na ordem do texto.",
+    "cue": "Monte Romanos 3:24 na ordem do texto.",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "sendo justificados gratuitamente"
+      },
+      {
+        "id": "b",
+        "text": "por sua graça"
+      },
+      {
+        "id": "c",
+        "text": "através da redenção que há em Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "A ordem mostra presente gratuito, graça de Deus e redenção em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelos justificados gratuitamente; Cristo Jesus fecha o versículo."
+    },
+    "hint": "O versículo começa pelo presente recebido.",
+    "learningObjective": "Reconhecer a sequência de Romanos 3:24.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-01-pecado-05",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 3:20, do que a lei dá pleno conhecimento?",
+    "prompt": "Em Romanos 3:20, do que a lei dá pleno conhecimento?",
+    "cue": "Em Romanos 3:20, do que a lei dá pleno conhecimento?",
+    "verseRef": "Romanos 3:20",
+    "passageText": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado.",
+    "template": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "esforço"
+      },
+      {
+        "id": "c",
+        "text": "mérito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se obtém o pleno conhecimento do pecado",
+    "feedbackCorrect": "A lei não justifica; ela faz conhecer o pecado em sua plenitude.",
+    "feedbackWrong": {
+      "b": "O esforço humano não é o conhecimento dado pela lei aqui.",
+      "c": "A lei não produz mérito que justifique diante de Deus."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Lembrar a função da lei em Romanos 3:20.",
+    "evidence": [
+      "Romanos 3:20"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-01-pecado-06",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 3:23 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 3:23 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 3:23 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "passageA": {
+      "ref": "Romanos 3:23",
+      "text": "Porque todos pecaram e carecem da glória de Deus,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Judeus e gentios estão todos sob o pecado e precisam do evangelho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos precisam de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Só alguns pecaram"
+      },
+      {
+        "id": "c",
+        "text": "A lei salva sozinha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos pecaram e carecem da glória de Deus",
+    "feedbackCorrect": "Todos pecaram e carecem da glória: ninguém se basta diante de Deus.",
+    "feedbackWrong": {
+      "b": "O texto diz todos, sem deixar um grupo de fora.",
+      "c": "A lei mostra o pecado; ela não justifica ninguém."
+    },
+    "hint": "Veja quem o versículo inclui.",
+    "learningObjective": "Ligar Romanos 3:23 à necessidade universal do evangelho.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-01-pecado-01",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 3:20-21, a justiça de Deus se manifestou por meio das obras da lei.",
+    "prompt": "Em Romanos 3:20-21, a justiça de Deus se manifestou por meio das obras da lei.",
+    "cue": "Em Romanos 3:20-21, a justiça de Deus se manifestou por meio das obras da lei.",
+    "verseRef": "Romanos 3:20–21",
+    "passageText": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado. Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se manifestou de forma independente da lei",
+    "feedbackCorrect": "Ela se manifestou de forma independente da lei, testemunhada por ela.",
+    "feedbackWrong": {
+      "true": "Releia 3:21, que diz independente da lei."
+    },
+    "hint": "Compare o papel da lei nos dois versículos.",
+    "learningObjective": "Compreender o contraste entre lei e justiça manifestada.",
+    "evidence": [
+      "Romanos 3:20–21"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-01-pecado-02",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 3:21, toque a palavra que abre o contraste com o que veio antes.",
+    "prompt": "Em Romanos 3:21, toque a palavra que abre o contraste com o que veio antes.",
+    "cue": "Em Romanos 3:21, toque a palavra que abre o contraste com o que veio antes.",
+    "verseRef": "Romanos 3:21",
+    "passageText": "Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "agora"
+      },
+      {
+        "id": "b",
+        "text": "justiça de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas agora a justiça de Deus",
+    "feedbackCorrect": "A virada do argumento começa com a palavra que abre o versículo.",
+    "feedbackWrong": {
+      "a": "Essa palavra marca o tempo novo, não abre o contraste.",
+      "b": "Esse é o tema anunciado, não a palavra de virada."
+    },
+    "hint": "Olhe o início do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Romanos 3:21.",
+    "evidence": [
+      "Romanos 3:21"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-01-pecado-03",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a justiça de Deus alcança as pessoas em Romanos 3:21-22?",
+    "prompt": "Como a justiça de Deus alcança as pessoas em Romanos 3:21-22?",
+    "cue": "Como a justiça de Deus alcança as pessoas em Romanos 3:21-22?",
+    "verseRef": "Romanos 3:21–22",
+    "passageText": "Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei. Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela pertence apenas a um povo escolhido"
+      },
+      {
+        "id": "b",
+        "text": "Ela premia quem nunca reconheceu o pecado"
+      },
+      {
+        "id": "c",
+        "text": "Ela recompensa quem cumpre bem a lei"
+      },
+      {
+        "id": "d",
+        "text": "Ela alcança quem confia em Jesus Cristo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "para todos e sobre todos os que creem",
+    "feedbackCorrect": "A justiça é para todos e sobre todos os que creem, sem distinção.",
+    "feedbackWrong": {
+      "a": "O texto afirma que não há distinção entre os que creem.",
+      "b": "O contexto mostra todos pecando e precisando dessa justiça.",
+      "c": "O texto a separa das obras da lei em 3:21."
+    },
+    "hint": "Veja quem recebe essa justiça no versículo 22.",
+    "learningObjective": "Relacionar a justiça de Deus à fé em Jesus.",
+    "evidence": [
+      "Romanos 3:21–22"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-01-pecado-04",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Romanos 3:20-22?",
+    "prompt": "Como avança o argumento em Romanos 3:20-22?",
+    "cue": "Como avança o argumento em Romanos 3:20-22?",
+    "verseRef": "Romanos 3:20–21",
+    "passageText": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado. Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei faz conhecer o pecado"
+      },
+      {
+        "id": "b",
+        "text": "A justiça de Deus se manifesta"
+      },
+      {
+        "id": "c",
+        "text": "Ela alcança todos os que creem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se manifestou de forma independente da lei",
+    "feedbackCorrect": "Primeiro o diagnóstico, depois o anúncio, e então quem ele alcança.",
+    "feedbackWrong": {
+      "default": "Comece pela lei mostrando o pecado; quem crê vem por último."
+    },
+    "hint": "O alcance sobre quem crê fecha o trecho.",
+    "learningObjective": "Compreender o encadeamento de Romanos 3:20-22.",
+    "evidence": [
+      "Romanos 3:20–21"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-01-pecado-05",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 3:22, sobre todos os que fazem o quê está a justiça de Deus?",
+    "prompt": "Em Romanos 3:22, sobre todos os que fazem o quê está a justiça de Deus?",
+    "cue": "Em Romanos 3:22, sobre todos os que fazem o quê está a justiça de Deus?",
+    "verseRef": "Romanos 3:22",
+    "passageText": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "template": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que ___, pois não há distinção.",
+    "options": [
+      {
+        "id": "a",
+        "text": "creem"
+      },
+      {
+        "id": "b",
+        "text": "trabalham"
+      },
+      {
+        "id": "c",
+        "text": "obedecem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sobre todos os que creem",
+    "feedbackCorrect": "A justiça é sobre todos os que creem, pois não há distinção.",
+    "feedbackWrong": {
+      "b": "Trabalhar pela lei não é o caminho anunciado aqui.",
+      "c": "O verbo do texto fala de crer, não de cumprir obras."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Compreender quem a justiça de Deus alcança.",
+    "evidence": [
+      "Romanos 3:22"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-01-pecado-06",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 3:22 a Habacuque 2:4?",
+    "prompt": "O que liga Romanos 3:22 a Habacuque 2:4?",
+    "cue": "O que liga Romanos 3:22 a Habacuque 2:4?",
+    "verseRef": "Romanos 3:22",
+    "passageText": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "passageA": {
+      "ref": "Romanos 3:22",
+      "text": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção."
+    },
+    "passageB": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver pela fé em Deus"
+      },
+      {
+        "id": "b",
+        "text": "Viver pelas obras da lei"
+      },
+      {
+        "id": "c",
+        "text": "Viver sem precisar crer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por meio da fé em Jesus Cristo",
+    "feedbackCorrect": "Habacuque já anunciava que o justo viverá pela fé.",
+    "feedbackWrong": {
+      "b": "Romanos separa essa justiça das obras da lei.",
+      "c": "Os dois textos colocam a fé no centro da vida justa."
+    },
+    "hint": "Compare o meio pelo qual a justiça chega.",
+    "learningObjective": "Relacionar Romanos 3:22 ao anúncio de Habacuque 2:4.",
+    "evidence": [
+      "Romanos 3:22",
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-01-pecado-01",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 3:24-26 mostra Deus justo ao justificar quem tem fé em Jesus.",
+    "prompt": "Romanos 3:24-26 mostra Deus justo ao justificar quem tem fé em Jesus.",
+    "cue": "Romanos 3:24-26 mostra Deus justo ao justificar quem tem fé em Jesus.",
+    "verseRef": "Romanos 3:25–26",
+    "passageText": "A quem Deus propôs, por meio da fé no seu sangue, como propiciação para manifestar a sua justiça, visto que, na sua tolerância, deixou impunes os pecados cometidos anteriormente; Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e justificador de quem tem fé em Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ele mesmo seja justo e justificador de quem tem fé em Jesus",
+    "feedbackCorrect": "Deus não abre mão da justiça ao justificar quem tem fé em Jesus.",
+    "feedbackWrong": {
+      "false": "Releia 3:26, que une justo e justificador em Deus."
+    },
+    "hint": "Olhe o alvo afirmado no versículo 26.",
+    "learningObjective": "Interpretar Deus como justo e justificador.",
+    "evidence": [
+      "Romanos 3:25–26"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-01-pecado-02",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 3:24, toque a palavra que mostra que justificar não custa ao pecador.",
+    "prompt": "Em Romanos 3:24, toque a palavra que mostra que justificar não custa ao pecador.",
+    "cue": "Em Romanos 3:24, toque a palavra que mostra que justificar não custa ao pecador.",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "redenção"
+      },
+      {
+        "id": "b",
+        "text": "gratuitamente"
+      },
+      {
+        "id": "c",
+        "text": "Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "A justificação é presente gratuito, por graça, em Cristo Jesus.",
+    "feedbackWrong": {
+      "a": "Esse termo nomeia o resgate em Cristo, não o custo ao pecador.",
+      "c": "Cristo é onde há redenção; o presente gratuito vem antes."
+    },
+    "hint": "Procure como o presente é dado.",
+    "learningObjective": "Sustentar com o texto a gratuidade da justificação.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-01-pecado-03",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 3:23-24 sustenta sobre como o pecador é justificado?",
+    "prompt": "Que leitura Romanos 3:23-24 sustenta sobre como o pecador é justificado?",
+    "cue": "Que leitura Romanos 3:23-24 sustenta sobre como o pecador é justificado?",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus justifica pela graça quem crê em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Só quem pecou pouco pode ser justificado"
+      },
+      {
+        "id": "c",
+        "text": "A lei justifica quem a conhece bem"
+      },
+      {
+        "id": "d",
+        "text": "Cada um se justifica pelo próprio mérito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "Todos pecaram, e a justificação vem gratuitamente, pela graça, em Cristo.",
+    "feedbackWrong": {
+      "b": "Todos pecaram; a graça não é limitada aos que pecaram pouco.",
+      "c": "A lei dá conhecimento do pecado, não justificação, em 3:20.",
+      "d": "O texto fala de presente pela graça, não de mérito próprio."
+    },
+    "hint": "Junte a necessidade de 3:23 ao presente de 3:24.",
+    "learningObjective": "Escolher a interpretação sustentada sobre a justificação.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-01-pecado-04",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 3:23-26?",
+    "prompt": "Qual sequência revela o sentido de Romanos 3:23-26?",
+    "cue": "Qual sequência revela o sentido de Romanos 3:23-26?",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos pecaram e precisam de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus justifica pela graça em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê em Jesus é justificado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todos pecaram e carecem da glória de Deus",
+    "feedbackCorrect": "Necessidade de todos, presente da graça e fé em Jesus formam o fio.",
+    "feedbackWrong": {
+      "default": "Comece pela necessidade de todos; a fé em Jesus fecha o fio."
+    },
+    "hint": "Siga da necessidade ao presente e à fé.",
+    "learningObjective": "Ver a lógica completa de Romanos 3:23-26.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-01-pecado-05",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 3:26, Deus é justo e o quê de quem tem fé em Jesus?",
+    "prompt": "Em Romanos 3:26, Deus é justo e o quê de quem tem fé em Jesus?",
+    "cue": "Em Romanos 3:26, Deus é justo e o quê de quem tem fé em Jesus?",
+    "verseRef": "Romanos 3:26",
+    "passageText": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e justificador de quem tem fé em Jesus.",
+    "template": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e ___ de quem tem fé em Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "condenador"
+      },
+      {
+        "id": "b",
+        "text": "justificador"
+      },
+      {
+        "id": "c",
+        "text": "acusador"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "justo e justificador de quem tem fé em Jesus",
+    "feedbackCorrect": "Deus permanece justo e, ao mesmo tempo, justifica quem crê.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário para quem tem fé em Jesus.",
+      "c": "Quem acusa não é o papel de Deus afirmado neste versículo."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Lembrar o termo que une justiça e justificação em Deus.",
+    "evidence": [
+      "Romanos 3:26"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-01-pecado-06",
+    "trail": "romanos",
+    "section": "rm-01-pecado",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 3:24 a Gênesis 15:6?",
+    "prompt": "O que liga Romanos 3:24 a Gênesis 15:6?",
+    "cue": "O que liga Romanos 3:24 a Gênesis 15:6?",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "passageA": {
+      "ref": "Romanos 3:24",
+      "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+    },
+    "passageB": {
+      "ref": "Gênesis 15:6",
+      "text": "E ele creu no Senhor, e isso lhe foi imputado como justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Creu e Deus contou justiça"
+      },
+      {
+        "id": "b",
+        "text": "Cumpriu a lei toda"
+      },
+      {
+        "id": "c",
+        "text": "Obedeceu e mereceu justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "Abraão creu, e isso lhe foi contado como justiça, como Paulo retoma.",
+    "feedbackWrong": {
+      "b": "Abraão viveu antes da lei dada no Sinai.",
+      "c": "Gênesis liga a justiça ao crer, não ao merecer por obras."
+    },
+    "hint": "Veja o que Abraão fez no texto de Gênesis.",
+    "learningObjective": "Ligar a justificação pela fé ao exemplo de Abraão.",
+    "evidence": [
+      "Romanos 3:24",
+      "Gênesis 15:6"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-02-justificacao-01",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 5:1, temos paz com Deus por meio das nossas próprias obras.",
+    "prompt": "Em Romanos 5:1, temos paz com Deus por meio das nossas próprias obras.",
+    "cue": "Em Romanos 5:1, temos paz com Deus por meio das nossas próprias obras.",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "temos paz com Deus por meio de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "A paz vem por meio de nosso Senhor Jesus Cristo, mediante a fé.",
+    "feedbackWrong": {
+      "true": "Releia 5:1, que aponta para Jesus Cristo como meio dessa paz."
+    },
+    "hint": "Veja por meio de quem vem essa paz.",
+    "learningObjective": "Observar o meio da paz com Deus em Romanos 5:1.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-02-justificacao-02",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 5:1, toque o que os justificados têm com Deus.",
+    "prompt": "Em Romanos 5:1, toque o que os justificados têm com Deus.",
+    "cue": "Em Romanos 5:1, toque o que os justificados têm com Deus.",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "Senhor Jesus Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "temos paz com Deus",
+    "feedbackCorrect": "Justificados mediante a fé, temos paz com Deus em Cristo.",
+    "feedbackWrong": {
+      "b": "Esse é o meio pelo qual fomos justificados, não o que temos com Deus.",
+      "c": "Cristo é por meio de quem temos essa relação com Deus."
+    },
+    "hint": "Procure a relação com Deus.",
+    "learningObjective": "Identificar a paz com Deus em Romanos 5:1.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-02-justificacao-03",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 5:2, a que temos acesso pela fé por meio de Cristo?",
+    "prompt": "Segundo Romanos 5:2, a que temos acesso pela fé por meio de Cristo?",
+    "cue": "Segundo Romanos 5:2, a que temos acesso pela fé por meio de Cristo?",
+    "verseRef": "Romanos 5:2",
+    "passageText": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A uma vida sem qualquer tribulação"
+      },
+      {
+        "id": "b",
+        "text": "A um prêmio pelas nossas obras"
+      },
+      {
+        "id": "c",
+        "text": "Ao direito de julgar os outros"
+      },
+      {
+        "id": "d",
+        "text": "A esta graça em que estamos firmes"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "temos acesso pela fé a esta graça na qual estamos firmes",
+    "feedbackCorrect": "Por meio de Cristo, pela fé, entramos nesta graça e nela estamos firmes.",
+    "feedbackWrong": {
+      "a": "O versículo seguinte fala de tribulações, não de ausência delas.",
+      "b": "O acesso é pela fé, não um prêmio por obras próprias.",
+      "c": "O acesso anunciado é à graça de Deus, não a julgar outros."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Observar o acesso à graça em Romanos 5:2.",
+    "evidence": [
+      "Romanos 5:2"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-02-justificacao-04",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 5:3-4 na ordem do texto.",
+    "prompt": "Monte Romanos 5:3-4 na ordem do texto.",
+    "cue": "Monte Romanos 5:3-4 na ordem do texto.",
+    "verseRef": "Romanos 5:3–4",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a tribulação produz perseverança"
+      },
+      {
+        "id": "b",
+        "text": "a perseverança, experiência"
+      },
+      {
+        "id": "c",
+        "text": "a experiência, esperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "A cadeia do texto vai da tribulação à perseverança e à esperança.",
+    "feedbackWrong": {
+      "default": "Comece pela tribulação; a esperança fecha a cadeia."
+    },
+    "hint": "A esperança é o ponto de chegada.",
+    "learningObjective": "Reconhecer a cadeia de Romanos 5:3-4.",
+    "evidence": [
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-02-justificacao-05",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 5:4, o que a experiência produz no fim da cadeia?",
+    "prompt": "Em Romanos 5:4, o que a experiência produz no fim da cadeia?",
+    "cue": "Em Romanos 5:4, o que a experiência produz no fim da cadeia?",
+    "verseRef": "Romanos 5:4",
+    "passageText": "E a perseverança, experiência; e a experiência, esperança.",
+    "template": "E a perseverança, experiência; e a experiência, ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperança"
+      },
+      {
+        "id": "b",
+        "text": "cansaço"
+      },
+      {
+        "id": "c",
+        "text": "desânimo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e a experiência, esperança",
+    "feedbackCorrect": "A experiência, em quem crê, alimenta a esperança na glória de Deus.",
+    "feedbackWrong": {
+      "b": "O texto aponta para frente, não para um fim esgotado.",
+      "c": "A cadeia de Paulo termina em confiança, não em desistência."
+    },
+    "hint": "Olhe a última palavra do versículo.",
+    "learningObjective": "Lembrar o fruto final da cadeia em Romanos 5:4.",
+    "evidence": [
+      "Romanos 5:4"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-02-justificacao-06",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 5:1 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 5:1 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 5:1 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "passageA": {
+      "ref": "Romanos 5:1",
+      "text": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus declara justo o pecador que confia em Cristo, como Abraão creu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz com Deus pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Guerra com Deus para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Paz comprada por obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Justificados, pois, mediante a fé, temos paz com Deus",
+    "feedbackCorrect": "Quem é justificado mediante a fé tem paz com Deus em Cristo.",
+    "feedbackWrong": {
+      "b": "O texto anuncia o fim da guerra para quem crê.",
+      "c": "A paz vem mediante a fé em Cristo, não por compra."
+    },
+    "hint": "Veja o resultado de ser justificado.",
+    "learningObjective": "Ligar Romanos 5:1 à justificação pela fé.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-02-justificacao-01",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 5:3, a tribulação produz desistência em quem foi justificado pela fé.",
+    "prompt": "Em Romanos 5:3, a tribulação produz desistência em quem foi justificado pela fé.",
+    "cue": "Em Romanos 5:3, a tribulação produz desistência em quem foi justificado pela fé.",
+    "verseRef": "Romanos 5:3",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "A tribulação produz perseverança em quem sabe o que Deus está fazendo.",
+    "feedbackWrong": {
+      "true": "Releia 5:3, que nomeia outro fruto para a tribulação."
+    },
+    "hint": "Veja o fruto que o versículo nomeia.",
+    "learningObjective": "Compreender o fruto da tribulação em Romanos 5:3.",
+    "evidence": [
+      "Romanos 5:3"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-02-justificacao-02",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 5:3, toque o verbo que liga a tribulação ao seu fruto.",
+    "prompt": "Em Romanos 5:3, toque o verbo que liga a tribulação ao seu fruto.",
+    "cue": "Em Romanos 5:3, toque o verbo que liga a tribulação ao seu fruto.",
+    "verseRef": "Romanos 5:3",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança;",
+    "options": [
+      {
+        "id": "a",
+        "text": "sabendo"
+      },
+      {
+        "id": "b",
+        "text": "tribulações"
+      },
+      {
+        "id": "c",
+        "text": "produz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "Esse verbo mostra que o sofrimento, em Deus, gera algo firme.",
+    "feedbackWrong": {
+      "a": "Essa palavra mostra o saber de quem crê, não a ligação dos frutos.",
+      "b": "Esse é o ponto de partida, não o verbo que produz fruto."
+    },
+    "hint": "Procure a ação entre os dois nomes.",
+    "learningObjective": "Reconhecer a relação de resultado em Romanos 5:3.",
+    "evidence": [
+      "Romanos 5:3"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-02-justificacao-03",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 5:3-4 encadeia a vida de quem foi justificado?",
+    "prompt": "Como Romanos 5:3-4 encadeia a vida de quem foi justificado?",
+    "cue": "Como Romanos 5:3-4 encadeia a vida de quem foi justificado?",
+    "verseRef": "Romanos 5:3–4",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A experiência apaga a confiança em Deus"
+      },
+      {
+        "id": "b",
+        "text": "Sofrer com Deus gera firmeza e confiança futura"
+      },
+      {
+        "id": "c",
+        "text": "Esperar vem antes de qualquer firmeza interior"
+      },
+      {
+        "id": "d",
+        "text": "Sofrer prova que a fé da pessoa acabou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "A cadeia vai do sofrimento à firmeza, da vivência à confiança.",
+    "feedbackWrong": {
+      "a": "A experiência alimenta a esperança, segundo o texto.",
+      "c": "A confiança futura aparece no fim da cadeia, não no começo.",
+      "d": "Paulo se gloria nas tribulações justamente por esse fruto."
+    },
+    "hint": "Siga a ordem dos frutos nos dois versículos.",
+    "learningObjective": "Relacionar tribulação, perseverança e esperança.",
+    "evidence": [
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-02-justificacao-04",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Romanos 5:1-2?",
+    "prompt": "Como avança a cena em Romanos 5:1-2?",
+    "cue": "Como avança a cena em Romanos 5:1-2?",
+    "verseRef": "Romanos 5:1–2",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo. Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Justificados, temos paz com Deus"
+      },
+      {
+        "id": "b",
+        "text": "Pela fé, entramos nesta graça"
+      },
+      {
+        "id": "c",
+        "text": "Firmes, esperamos a glória de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "temos paz com Deus por meio de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Paz com Deus, acesso à graça e esperança da glória formam o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pela paz com Deus; a glória esperada fecha o trecho."
+    },
+    "hint": "A glória de Deus é o horizonte final.",
+    "learningObjective": "Compreender o movimento de Romanos 5:1-2.",
+    "evidence": [
+      "Romanos 5:1–2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-02-justificacao-05",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 5:2, como estamos nesta graça em que entramos pela fé?",
+    "prompt": "Em Romanos 5:2, como estamos nesta graça em que entramos pela fé?",
+    "cue": "Em Romanos 5:2, como estamos nesta graça em que entramos pela fé?",
+    "verseRef": "Romanos 5:2",
+    "passageText": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "template": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos ___; e nos gloriamos na esperança da glória de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sozinhos"
+      },
+      {
+        "id": "b",
+        "text": "vazios"
+      },
+      {
+        "id": "c",
+        "text": "firmes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a esta graça na qual estamos firmes",
+    "feedbackCorrect": "Não entramos e saímos da graça: nela estamos firmes em Cristo.",
+    "feedbackWrong": {
+      "a": "O acesso é por meio de Cristo, que nos firma na graça.",
+      "b": "A graça sustenta quem crê; não o deixa vazio."
+    },
+    "hint": "Olhe o estado em que a graça nos mantém.",
+    "learningObjective": "Compreender a firmeza do crente na graça.",
+    "evidence": [
+      "Romanos 5:2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-02-justificacao-06",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 5:3 a Tiago 1:3?",
+    "prompt": "O que liga Romanos 5:3 a Tiago 1:3?",
+    "cue": "O que liga Romanos 5:3 a Tiago 1:3?",
+    "verseRef": "Romanos 5:3",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança;",
+    "passageA": {
+      "ref": "Romanos 5:3",
+      "text": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança;"
+    },
+    "passageB": {
+      "ref": "Tiago 1:3",
+      "text": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé sem qualquer provação"
+      },
+      {
+        "id": "b",
+        "text": "Provação sinal de abandono"
+      },
+      {
+        "id": "c",
+        "text": "Provação que produz perseverança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "Paulo e Tiago veem a provação gerando perseverança em quem crê.",
+    "feedbackWrong": {
+      "a": "A fé é provada justamente no meio da tribulação.",
+      "b": "Nos dois textos, a provação produz firmeza, não abandono."
+    },
+    "hint": "Compare o fruto nos dois textos.",
+    "learningObjective": "Relacionar a perseverança em Romanos e em Tiago.",
+    "evidence": [
+      "Romanos 5:3",
+      "Tiago 1:3"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-02-justificacao-01",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 5:3-4 apresenta a tribulação como um caminho que termina em esperança para quem crê.",
+    "prompt": "Romanos 5:3-4 apresenta a tribulação como um caminho que termina em esperança para quem crê.",
+    "cue": "Romanos 5:3-4 apresenta a tribulação como um caminho que termina em esperança para quem crê.",
+    "verseRef": "Romanos 5:3–4",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e a experiência, esperança",
+    "feedbackCorrect": "A cadeia de Paulo termina em esperança, não em derrota.",
+    "feedbackWrong": {
+      "false": "Siga a cadeia até o fim, em Romanos 5:4."
+    },
+    "hint": "Siga a cadeia até a última palavra.",
+    "learningObjective": "Interpretar a tribulação à luz da esperança final.",
+    "evidence": [
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-02-justificacao-02",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 5:2, toque o trecho que mostra o futuro esperado por quem crê.",
+    "prompt": "Em Romanos 5:2, toque o trecho que mostra o futuro esperado por quem crê.",
+    "cue": "Em Romanos 5:2, toque o trecho que mostra o futuro esperado por quem crê.",
+    "verseRef": "Romanos 5:2",
+    "passageText": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória de Deus"
+      },
+      {
+        "id": "b",
+        "text": "pela fé"
+      },
+      {
+        "id": "c",
+        "text": "esta graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "na esperança da glória de Deus",
+    "feedbackCorrect": "O futuro de quem crê se volta para a glória de Deus.",
+    "feedbackWrong": {
+      "b": "Esse é o meio do acesso, não o horizonte esperado.",
+      "c": "Esse trecho fala da graça presente, não do futuro esperado."
+    },
+    "hint": "Procure para onde olha a esperança.",
+    "learningObjective": "Sustentar com o texto a esperança da glória de Deus.",
+    "evidence": [
+      "Romanos 5:2"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-02-justificacao-03",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 5:1 sustenta sobre a paz com Deus?",
+    "prompt": "Que leitura Romanos 5:1 sustenta sobre a paz com Deus?",
+    "cue": "Que leitura Romanos 5:1 sustenta sobre a paz com Deus?",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela é fruto de ser justificado pela fé em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ela é calma que a pessoa fabrica sozinha"
+      },
+      {
+        "id": "c",
+        "text": "Ela depende de nunca mais sofrer tribulação"
+      },
+      {
+        "id": "d",
+        "text": "Ela é prêmio de quem juntou boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Justificados, pois, mediante a fé, temos paz com Deus",
+    "feedbackCorrect": "A paz nasce da justificação mediante a fé, por meio de Cristo.",
+    "feedbackWrong": {
+      "b": "A paz é com Deus e vem por meio de Cristo, não de si.",
+      "c": "Logo depois, Paulo fala de tribulações sem perder essa paz.",
+      "d": "O meio afirmado é a fé em Cristo, não obras acumuladas."
+    },
+    "hint": "Ligue o começo do versículo ao seu fim.",
+    "learningObjective": "Escolher a interpretação sustentada sobre a paz com Deus.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-02-justificacao-04",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 5:1-4?",
+    "prompt": "Qual sequência revela o sentido de Romanos 5:1-4?",
+    "cue": "Qual sequência revela o sentido de Romanos 5:1-4?",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Declarado justo pela fé em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Em paz com Deus e firme na graça"
+      },
+      {
+        "id": "c",
+        "text": "Esperança que atravessa a tribulação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Justificados, pois, mediante a fé, temos paz com Deus",
+    "feedbackCorrect": "Justificação, paz presente e esperança provada formam o caminho.",
+    "feedbackWrong": {
+      "default": "Comece por ser declarado justo; a esperança provada vem por último."
+    },
+    "hint": "A tribulação aparece depois da paz anunciada.",
+    "learningObjective": "Ver o fio entre justificação, paz e esperança.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-02-justificacao-05",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 5:1, que palavra abre o versículo e nomeia quem foi declarado justo?",
+    "prompt": "Em Romanos 5:1, que palavra abre o versículo e nomeia quem foi declarado justo?",
+    "cue": "Em Romanos 5:1, que palavra abre o versículo e nomeia quem foi declarado justo?",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "template": "___, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Condenados"
+      },
+      {
+        "id": "b",
+        "text": "Esquecidos"
+      },
+      {
+        "id": "c",
+        "text": "Justificados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Justificados, pois, mediante a fé",
+    "feedbackCorrect": "O versículo abre nomeando quem Deus declarou justo mediante a fé.",
+    "feedbackWrong": {
+      "a": "O texto anuncia o contrário para quem crê em Cristo.",
+      "b": "Deus firma na graça quem justifica, não o esquece."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Lembrar o termo central de Romanos 5:1.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-02-justificacao-06",
+    "trail": "romanos",
+    "section": "rm-02-justificacao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 5:2 a João 14:27?",
+    "prompt": "O que liga Romanos 5:2 a João 14:27?",
+    "cue": "O que liga Romanos 5:2 a João 14:27?",
+    "verseRef": "Romanos 5:2",
+    "passageText": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "passageA": {
+      "ref": "Romanos 5:2",
+      "text": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus."
+    },
+    "passageB": {
+      "ref": "João 14:27",
+      "text": "Deixo com vocês a paz; a minha paz lhes dou; não a dou como a dá o mundo. Que o coração de vocês não se turbe nem se atemorize."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz comprada por obras"
+      },
+      {
+        "id": "b",
+        "text": "Paz sem Cristo algum"
+      },
+      {
+        "id": "c",
+        "text": "Cristo dá a sua paz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos gloriamos na esperança da glória de Deus",
+    "feedbackCorrect": "A paz com Deus vem por meio de Cristo, que dá a sua paz aos seus.",
+    "feedbackWrong": {
+      "a": "O acesso é pela fé em Cristo, não por compra.",
+      "b": "Romanos liga essa paz a nosso Senhor Jesus Cristo."
+    },
+    "hint": "Veja quem dá a paz no texto de João.",
+    "learningObjective": "Ligar a paz de Romanos 5 à paz dada por Cristo.",
+    "evidence": [
+      "Romanos 5:2",
+      "João 14:27"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-03-vida-espirito-01",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 8:1, já não há condenação para os que estão em Cristo Jesus.",
+    "prompt": "Em Romanos 8:1, já não há condenação para os que estão em Cristo Jesus.",
+    "cue": "Em Romanos 8:1, já não há condenação para os que estão em Cristo Jesus.",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "já não há condenação para os que estão em Cristo Jesus",
+    "feedbackCorrect": "Para quem está em Cristo Jesus, a condenação ficou para trás.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Romanos 8:1."
+    },
+    "hint": "Olhe o começo do capítulo.",
+    "learningObjective": "Observar a ausência de condenação em Cristo.",
+    "evidence": [
+      "Romanos 8:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-03-vida-espirito-02",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 8:1, toque o que já não há para quem está em Cristo Jesus.",
+    "prompt": "Em Romanos 8:1, toque o que já não há para quem está em Cristo Jesus.",
+    "cue": "Em Romanos 8:1, toque o que já não há para quem está em Cristo Jesus.",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "condenação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "já não há condenação",
+    "feedbackCorrect": "A sentença de condenação não pesa mais sobre quem está em Cristo.",
+    "feedbackWrong": {
+      "a": "Cristo Jesus é onde a pessoa está, não o que foi removido.",
+      "b": "O Espírito é segundo quem se anda, não o que deixou de haver."
+    },
+    "hint": "Procure o que foi retirado.",
+    "learningObjective": "Identificar o que já não há em Romanos 8:1.",
+    "evidence": [
+      "Romanos 8:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-03-vida-espirito-03",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 8:2, o que livrou Paulo da lei do pecado e da morte?",
+    "prompt": "Segundo Romanos 8:2, o que livrou Paulo da lei do pecado e da morte?",
+    "cue": "Segundo Romanos 8:2, o que livrou Paulo da lei do pecado e da morte?",
+    "verseRef": "Romanos 8:2",
+    "passageText": "Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A distância das pessoas pecadoras"
+      },
+      {
+        "id": "b",
+        "text": "O esquecimento dos pecados passados"
+      },
+      {
+        "id": "c",
+        "text": "A lei do Espírito da vida em Cristo"
+      },
+      {
+        "id": "d",
+        "text": "O seu próprio esforço contínuo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a lei do Espírito da vida, em Cristo Jesus, me livrou",
+    "feedbackCorrect": "Quem livra é a lei do Espírito da vida, em Cristo Jesus.",
+    "feedbackWrong": {
+      "a": "Afastar-se de pessoas não é o que o versículo afirma.",
+      "b": "Esquecer o passado não é o agente nomeado no versículo.",
+      "d": "O texto credita a libertação ao Espírito em Cristo, não ao esforço."
+    },
+    "hint": "Leia quem age no versículo.",
+    "learningObjective": "Observar quem liberta em Romanos 8:2.",
+    "evidence": [
+      "Romanos 8:2"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-03-vida-espirito-04",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 8:5 na ordem do texto.",
+    "prompt": "Monte Romanos 8:5 na ordem do texto.",
+    "cue": "Monte Romanos 8:5 na ordem do texto.",
+    "verseRef": "Romanos 8:5",
+    "passageText": "Pois aqueles que se inclinam para a carne cogitam das coisas da carne; mas aqueles que se inclinam para o Espírito, das coisas do Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aqueles que se inclinam para a carne cogitam das coisas da carne"
+      },
+      {
+        "id": "b",
+        "text": "mas aqueles que se inclinam para o Espírito"
+      },
+      {
+        "id": "c",
+        "text": "das coisas do Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "aqueles que se inclinam para o Espírito, das coisas do Espírito",
+    "feedbackCorrect": "O versículo contrasta duas inclinações e duas formas de pensar.",
+    "feedbackWrong": {
+      "default": "Comece pela inclinação para a carne; o Espírito fecha o versículo."
+    },
+    "hint": "O Espírito aparece na segunda metade.",
+    "learningObjective": "Reconhecer o contraste de Romanos 8:5.",
+    "evidence": [
+      "Romanos 8:5"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-03-vida-espirito-05",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 8:2, a lei do Espírito é lei de quê, em Cristo Jesus?",
+    "prompt": "Em Romanos 8:2, a lei do Espírito é lei de quê, em Cristo Jesus?",
+    "cue": "Em Romanos 8:2, a lei do Espírito é lei de quê, em Cristo Jesus?",
+    "verseRef": "Romanos 8:2",
+    "passageText": "Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "template": "Porque a lei do Espírito da ___, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "pecado"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a lei do Espírito da vida, em Cristo Jesus",
+    "feedbackCorrect": "É lei da vida, que livra da lei do pecado e da morte.",
+    "feedbackWrong": {
+      "b": "O pecado é da outra lei, da qual Paulo foi livrado.",
+      "c": "A morte é da outra lei, da qual Paulo foi livrado."
+    },
+    "hint": "Contraste com o fim do versículo.",
+    "learningObjective": "Lembrar o nome da lei do Espírito em Romanos 8:2.",
+    "evidence": [
+      "Romanos 8:2"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-03-vida-espirito-06",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 8:1 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 8:1 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 8:1 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "passageA": {
+      "ref": "Romanos 8:1",
+      "text": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidos a Cristo, os cristãos morrem para o domínio do pecado e vivem pelo Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida longe do Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Sem condenação em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Condenação para quem crê"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "já não há condenação para os que estão em Cristo Jesus",
+    "feedbackCorrect": "Estar em Cristo Jesus muda a sentença: já não há condenação.",
+    "feedbackWrong": {
+      "a": "O versículo liga essa liberdade a andar segundo o Espírito.",
+      "c": "O texto afirma justamente o fim da condenação em Cristo."
+    },
+    "hint": "Veja a nova situação em Cristo.",
+    "learningObjective": "Ligar Romanos 8:1 à nova vida em Cristo.",
+    "evidence": [
+      "Romanos 8:1"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-03-vida-espirito-01",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 8:1-2, não há condenação porque o Espírito da vida livrou em Cristo Jesus.",
+    "prompt": "Em Romanos 8:1-2, não há condenação porque o Espírito da vida livrou em Cristo Jesus.",
+    "cue": "Em Romanos 8:1-2, não há condenação porque o Espírito da vida livrou em Cristo Jesus.",
+    "verseRef": "Romanos 8:1–2",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito. Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "me livrou da lei do pecado e da morte",
+    "feedbackCorrect": "A liberdade do pecado e da morte explica a ausência de condenação.",
+    "feedbackWrong": {
+      "false": "Ligue 8:1 à explicação que vem logo em 8:2."
+    },
+    "hint": "Ligue os dois versículos pela explicação.",
+    "learningObjective": "Compreender a causa da ausência de condenação.",
+    "evidence": [
+      "Romanos 8:1–2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-03-vida-espirito-02",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 8:2, toque a palavra que abre a explicação do versículo anterior.",
+    "prompt": "Em Romanos 8:2, toque a palavra que abre a explicação do versículo anterior.",
+    "cue": "Em Romanos 8:2, toque a palavra que abre a explicação do versículo anterior.",
+    "verseRef": "Romanos 8:2",
+    "passageText": "Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito da vida"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porque a lei do Espírito da vida",
+    "feedbackCorrect": "O versículo 2 começa explicando por que não há condenação.",
+    "feedbackWrong": {
+      "a": "Esse é quem liberta, não a palavra que abre a explicação.",
+      "c": "Esse é um dos poderes dos quais Paulo foi livrado."
+    },
+    "hint": "Olhe a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de causa em Romanos 8:2.",
+    "evidence": [
+      "Romanos 8:2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-03-vida-espirito-03",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 8:3-4 apresenta o que Deus fez diante do limite da lei?",
+    "prompt": "Como Romanos 8:3-4 apresenta o que Deus fez diante do limite da lei?",
+    "cue": "Como Romanos 8:3-4 apresenta o que Deus fez diante do limite da lei?",
+    "verseRef": "Romanos 8:3–4",
+    "passageText": "Porque o que era impossível à lei, por estar debilitada pela carne, isso Deus o fez, enviando seu próprio Filho na semelhança da carne pecaminosa e, para que pudesse condenar o pecado na carne, o realizou. Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada pessoa resolve sozinha o seu pecado"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandonou a lei e o seu preceito"
+      },
+      {
+        "id": "c",
+        "text": "A lei falhou porque Deus a enfraqueceu"
+      },
+      {
+        "id": "d",
+        "text": "Deus enviou seu Filho e condenou o pecado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "isso Deus o fez, enviando seu próprio Filho",
+    "feedbackCorrect": "O que era impossível à lei, Deus o fez ao enviar seu próprio Filho.",
+    "feedbackWrong": {
+      "a": "A ação decisiva do texto é de Deus, não do esforço isolado.",
+      "b": "O preceito da lei se cumpre em quem anda no Espírito.",
+      "c": "O texto diz que a lei estava debilitada pela carne."
+    },
+    "hint": "Veja o sujeito da ação nos dois versículos.",
+    "learningObjective": "Relacionar o limite da lei à ação de Deus em Cristo.",
+    "evidence": [
+      "Romanos 8:3–4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-03-vida-espirito-04",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Romanos 8:3-4?",
+    "prompt": "Como avança a cena em Romanos 8:3-4?",
+    "cue": "Como avança a cena em Romanos 8:3-4?",
+    "verseRef": "Romanos 8:3–4",
+    "passageText": "Porque o que era impossível à lei, por estar debilitada pela carne, isso Deus o fez, enviando seu próprio Filho na semelhança da carne pecaminosa e, para que pudesse condenar o pecado na carne, o realizou. Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei não podia libertar sozinha"
+      },
+      {
+        "id": "b",
+        "text": "Deus envia seu próprio Filho"
+      },
+      {
+        "id": "c",
+        "text": "A vida passa a seguir o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o que era impossível à lei",
+    "feedbackCorrect": "Limite da lei, ação de Deus e nova direção de vida formam o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pelo limite da lei; seguir o Espírito fecha o trecho."
+    },
+    "hint": "A nova direção de vida é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Romanos 8:3-4.",
+    "evidence": [
+      "Romanos 8:3–4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-03-vida-espirito-05",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 8:4, não vivemos segundo a carne, mas sim segundo quem?",
+    "prompt": "Em Romanos 8:4, não vivemos segundo a carne, mas sim segundo quem?",
+    "cue": "Em Romanos 8:4, não vivemos segundo a carne, mas sim segundo quem?",
+    "verseRef": "Romanos 8:4",
+    "passageText": "Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o Espírito.",
+    "template": "Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas sim segundo o Espírito",
+    "feedbackCorrect": "A nova vida é dirigida pelo Espírito, não pela carne.",
+    "feedbackWrong": {
+      "b": "A carne é justamente a direção que o texto nega.",
+      "c": "O pecado foi condenado por Deus em Cristo, em 8:3."
+    },
+    "hint": "Olhe a última palavra do versículo.",
+    "learningObjective": "Compreender a direção da nova vida no Espírito.",
+    "evidence": [
+      "Romanos 8:4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-03-vida-espirito-06",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 8:4 a Gálatas 5:16?",
+    "prompt": "O que liga Romanos 8:4 a Gálatas 5:16?",
+    "cue": "O que liga Romanos 8:4 a Gálatas 5:16?",
+    "verseRef": "Romanos 8:4",
+    "passageText": "Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o Espírito.",
+    "passageA": {
+      "ref": "Romanos 8:4",
+      "text": "Para que o preceito da lei se cumprisse em nós, que não vivemos segundo a carne, mas sim segundo o Espírito."
+    },
+    "passageB": {
+      "ref": "Gálatas 5:16",
+      "text": "Digo, porém: andem no Espírito e jamais satisfarão os desejos da carne."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver sem direção alguma"
+      },
+      {
+        "id": "b",
+        "text": "Viver guiado pela carne"
+      },
+      {
+        "id": "c",
+        "text": "Viver guiado pelo Espírito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não vivemos segundo a carne, mas sim segundo o Espírito",
+    "feedbackCorrect": "Paulo chama, nos dois textos, a andar e viver pelo Espírito.",
+    "feedbackWrong": {
+      "a": "Os dois textos dão uma direção clara para a vida nova.",
+      "b": "A carne é a direção negada nos dois textos de Paulo."
+    },
+    "hint": "Compare a direção de vida nos dois textos.",
+    "learningObjective": "Relacionar a vida no Espírito em Romanos e Gálatas.",
+    "evidence": [
+      "Romanos 8:4",
+      "Gálatas 5:16"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-03-vida-espirito-01",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 8:1 ensina que quem está em Cristo pode viver segundo a carne sem qualquer diferença.",
+    "prompt": "Romanos 8:1 ensina que quem está em Cristo pode viver segundo a carne sem qualquer diferença.",
+    "cue": "Romanos 8:1 ensina que quem está em Cristo pode viver segundo a carne sem qualquer diferença.",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "que não andam conforme a carne, mas segundo o Espírito",
+    "feedbackCorrect": "O mesmo versículo liga estar em Cristo a andar segundo o Espírito.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 8:1, sobre como essas pessoas andam."
+    },
+    "hint": "Olhe como anda quem está em Cristo.",
+    "learningObjective": "Interpretar a liberdade em Cristo sem apagar a nova direção.",
+    "evidence": [
+      "Romanos 8:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-03-vida-espirito-02",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 8:1, toque o trecho que mostra onde está quem não tem condenação.",
+    "prompt": "Em Romanos 8:1, toque o trecho que mostra onde está quem não tem condenação.",
+    "cue": "Em Romanos 8:1, toque o trecho que mostra onde está quem não tem condenação.",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não há condenação"
+      },
+      {
+        "id": "b",
+        "text": "em Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "segundo o Espírito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para os que estão em Cristo Jesus",
+    "feedbackCorrect": "A ausência de condenação vale para quem está em Cristo Jesus.",
+    "feedbackWrong": {
+      "a": "Esse trecho anuncia o resultado, não o lugar em Cristo.",
+      "c": "Esse trecho mostra como a pessoa anda, não onde ela está."
+    },
+    "hint": "Procure a posição da pessoa em relação a Cristo.",
+    "learningObjective": "Sustentar com o texto onde está quem não é condenado.",
+    "evidence": [
+      "Romanos 8:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-03-vida-espirito-03",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 8:5 sustenta sobre a inclinação da pessoa?",
+    "prompt": "Que leitura Romanos 8:5 sustenta sobre a inclinação da pessoa?",
+    "cue": "Que leitura Romanos 8:5 sustenta sobre a inclinação da pessoa?",
+    "verseRef": "Romanos 8:5",
+    "passageText": "Pois aqueles que se inclinam para a carne cogitam das coisas da carne; mas aqueles que se inclinam para o Espírito, das coisas do Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mente mostra a direção que a vida segue"
+      },
+      {
+        "id": "b",
+        "text": "Inclinar-se ao Espírito é esforço humano puro"
+      },
+      {
+        "id": "c",
+        "text": "Carne e Espírito levam ao mesmo pensamento"
+      },
+      {
+        "id": "d",
+        "text": "O corpo material é mau e deve ser desprezado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "aqueles que se inclinam para o Espírito, das coisas do Espírito",
+    "feedbackCorrect": "Cada inclinação ocupa a mente com as suas próprias coisas.",
+    "feedbackWrong": {
+      "b": "Quem dá vida e liberta é o Espírito, não o esforço isolado.",
+      "c": "O texto contrasta as duas inclinações e seus pensamentos.",
+      "d": "O contraste é de direção de vida, não de desprezo pelo corpo."
+    },
+    "hint": "Ligue inclinação e pensamento no versículo.",
+    "learningObjective": "Escolher a interpretação sustentada sobre inclinação e mente.",
+    "evidence": [
+      "Romanos 8:5"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-03-vida-espirito-04",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 8:1-4?",
+    "prompt": "Qual sequência revela o sentido de Romanos 8:1-4?",
+    "cue": "Qual sequência revela o sentido de Romanos 8:1-4?",
+    "verseRef": "Romanos 8:1–2",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito. Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em Cristo, sem condenação alguma"
+      },
+      {
+        "id": "b",
+        "text": "Livre do pecado e da morte"
+      },
+      {
+        "id": "c",
+        "text": "Vida dirigida pelo Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "já não há condenação para os que estão em Cristo Jesus",
+    "feedbackCorrect": "Sem condenação, livre e dirigido pelo Espírito é o caminho do trecho.",
+    "feedbackWrong": {
+      "default": "Comece pela sentença removida em Cristo; o Espírito fecha."
+    },
+    "hint": "A direção do Espírito é o ponto de chegada.",
+    "learningObjective": "Ver o fio da nova vida em Romanos 8:1-4.",
+    "evidence": [
+      "Romanos 8:1–2"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-03-vida-espirito-05",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 8:3, o que Deus condenou na carne ao enviar seu Filho?",
+    "prompt": "Em Romanos 8:3, o que Deus condenou na carne ao enviar seu Filho?",
+    "cue": "Em Romanos 8:3, o que Deus condenou na carne ao enviar seu Filho?",
+    "verseRef": "Romanos 8:3",
+    "passageText": "Porque o que era impossível à lei, por estar debilitada pela carne, isso Deus o fez, enviando seu próprio Filho na semelhança da carne pecaminosa e, para que pudesse condenar o pecado na carne, o realizou.",
+    "template": "Porque o que era impossível à lei, por estar debilitada pela carne, isso Deus o fez, enviando seu próprio Filho na semelhança da carne pecaminosa e, para que pudesse condenar o ___ na carne, o realizou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que pudesse condenar o pecado na carne",
+    "feedbackCorrect": "Deus condenou o pecado, não abandonou as pessoas à carne.",
+    "feedbackWrong": {
+      "b": "O alvo nomeado no versículo é bem específico.",
+      "c": "O Filho vem na semelhança da carne; o condenado é outro."
+    },
+    "hint": "Olhe o alvo da ação de Deus.",
+    "learningObjective": "Lembrar o que Deus condenou em Romanos 8:3.",
+    "evidence": [
+      "Romanos 8:3"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-03-vida-espirito-06",
+    "trail": "romanos",
+    "section": "rm-03-vida-espirito",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 8:1 a 2 Coríntios 5:17?",
+    "prompt": "O que liga Romanos 8:1 a 2 Coríntios 5:17?",
+    "cue": "O que liga Romanos 8:1 a 2 Coríntios 5:17?",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "passageA": {
+      "ref": "Romanos 8:1",
+      "text": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 5:17",
+      "text": "Portanto, se alguém está em Cristo, é uma nova criação; as coisas antigas já passaram; eis que tudo se tornou novo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida igual em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Nova vida em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Velha vida em Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para os que estão em Cristo Jesus",
+    "feedbackCorrect": "Estar em Cristo é nova criação e fim da antiga condenação.",
+    "feedbackWrong": {
+      "a": "Em Cristo há mudança real, não uma vida sem novidade.",
+      "c": "Paulo anuncia novidade para quem está em Cristo."
+    },
+    "hint": "Veja o que Paulo diz de quem está em Cristo.",
+    "learningObjective": "Ligar Romanos 8:1 à nova criação em Cristo.",
+    "evidence": [
+      "Romanos 8:1",
+      "2 Coríntios 5:17"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-04-israel-01",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 11:32, Deus colocou só alguns sob a desobediência para ter misericórdia de poucos.",
+    "prompt": "Em Romanos 11:32, Deus colocou só alguns sob a desobediência para ter misericórdia de poucos.",
+    "cue": "Em Romanos 11:32, Deus colocou só alguns sob a desobediência para ter misericórdia de poucos.",
+    "verseRef": "Romanos 11:32",
+    "passageText": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a fim de poder demonstrar misericórdia para com todos",
+    "feedbackCorrect": "O texto fala de todos sob a desobediência e misericórdia para todos.",
+    "feedbackWrong": {
+      "true": "Releia 11:32 e repare nos dois usos da palavra todos."
+    },
+    "hint": "Repare a quem a misericórdia alcança.",
+    "learningObjective": "Observar o alcance universal afirmado em Romanos 11:32.",
+    "evidence": [
+      "Romanos 11:32"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-04-israel-02",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 11:32, toque a quem Deus quer demonstrar misericórdia no fim do versículo.",
+    "prompt": "Em Romanos 11:32, toque a quem Deus quer demonstrar misericórdia no fim do versículo.",
+    "cue": "Em Romanos 11:32, toque a quem Deus quer demonstrar misericórdia no fim do versículo.",
+    "verseRef": "Romanos 11:32",
+    "passageText": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desobediência"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "demonstrar misericórdia para com todos",
+    "feedbackCorrect": "A misericórdia anunciada no fim do versículo é para todos.",
+    "feedbackWrong": {
+      "a": "Essa é a condição em que todos foram colocados, não quem recebe.",
+      "b": "Deus é quem demonstra, não quem recebe essa demonstração."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Identificar o alcance da misericórdia em Romanos 11:32.",
+    "evidence": [
+      "Romanos 11:32"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-04-israel-03",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 11:33, o que Paulo exclama sobre a sabedoria de Deus?",
+    "prompt": "Segundo Romanos 11:33, o que Paulo exclama sobre a sabedoria de Deus?",
+    "cue": "Segundo Romanos 11:33, o que Paulo exclama sobre a sabedoria de Deus?",
+    "verseRef": "Romanos 11:33",
+    "passageText": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela depende do conselho humano"
+      },
+      {
+        "id": "b",
+        "text": "Ela ficou longe dos caminhos dele"
+      },
+      {
+        "id": "c",
+        "text": "Ela é rasa e fácil de medir"
+      },
+      {
+        "id": "d",
+        "text": "Ela é profunda e insondável"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus",
+    "feedbackCorrect": "Paulo responde com espanto diante da profundidade de Deus.",
+    "feedbackWrong": {
+      "a": "O versículo seguinte nega que alguém tenha sido seu conselheiro.",
+      "b": "Sabedoria e caminhos de Deus aparecem juntos no louvor.",
+      "c": "O texto fala de profundidade, não de algo raso."
+    },
+    "hint": "Leia a exclamação de Paulo.",
+    "learningObjective": "Observar o louvor à sabedoria de Deus em Romanos 11:33.",
+    "evidence": [
+      "Romanos 11:33"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-04-israel-04",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 11:36 na ordem do texto.",
+    "prompt": "Monte Romanos 11:36 na ordem do texto.",
+    "cue": "Monte Romanos 11:36 na ordem do texto.",
+    "verseRef": "Romanos 11:36",
+    "passageText": "Porque dele, por meio dele, e para ele são todas as coisas; a ele, portanto, seja a glória eternamente. Amém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque dele"
+      },
+      {
+        "id": "b",
+        "text": "por meio dele"
+      },
+      {
+        "id": "c",
+        "text": "e para ele são todas as coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "dele, por meio dele, e para ele são todas as coisas",
+    "feedbackCorrect": "Tudo é dele, por meio dele e para ele: por isso a glória é dele.",
+    "feedbackWrong": {
+      "default": "Comece pela origem em Deus; para ele fecha a frase."
+    },
+    "hint": "A frase aponta origem, meio e fim em Deus.",
+    "learningObjective": "Reconhecer a sequência de Romanos 11:36.",
+    "evidence": [
+      "Romanos 11:36"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-04-israel-05",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 11:33, Paulo exclama sobre a o quê das riquezas de Deus?",
+    "prompt": "Em Romanos 11:33, Paulo exclama sobre a o quê das riquezas de Deus?",
+    "cue": "Em Romanos 11:33, Paulo exclama sobre a o quê das riquezas de Deus?",
+    "verseRef": "Romanos 11:33",
+    "passageText": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!",
+    "template": "Ó ___ das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "profundidade"
+      },
+      {
+        "id": "b",
+        "text": "pobreza"
+      },
+      {
+        "id": "c",
+        "text": "pequenez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ó profundidade das riquezas",
+    "feedbackCorrect": "A exclamação celebra quão profundo é o agir de Deus.",
+    "feedbackWrong": {
+      "b": "Paulo celebra riqueza e grandeza, não falta.",
+      "c": "Os caminhos de Deus são maiores do que Paulo pode sondar."
+    },
+    "hint": "É a primeira exclamação do versículo.",
+    "learningObjective": "Lembrar a exclamação inicial de Romanos 11:33.",
+    "evidence": [
+      "Romanos 11:33"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-04-israel-06",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 11:36 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 11:36 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 11:36 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 11:36",
+    "passageText": "Porque dele, por meio dele, e para ele são todas as coisas; a ele, portanto, seja a glória eternamente. Amém!",
+    "passageA": {
+      "ref": "Romanos 11:36",
+      "text": "Porque dele, por meio dele, e para ele são todas as coisas; a ele, portanto, seja a glória eternamente. Amém!"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo contempla a soberania, a misericórdia e a fidelidade de Deus em seu plano."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo depende só do homem"
+      },
+      {
+        "id": "b",
+        "text": "Tudo foge das mãos dele"
+      },
+      {
+        "id": "c",
+        "text": "Tudo é dele e para ele"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "dele, por meio dele, e para ele são todas as coisas",
+    "feedbackCorrect": "Origem, meio e fim estão em Deus; a ele seja a glória.",
+    "feedbackWrong": {
+      "a": "A frase atribui todas as coisas a Deus, não só ao homem.",
+      "b": "O texto coloca todas as coisas nele, não fora dele."
+    },
+    "hint": "Veja origem e fim de todas as coisas.",
+    "learningObjective": "Ligar Romanos 11:36 à soberania fiel de Deus.",
+    "evidence": [
+      "Romanos 11:36"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-04-israel-01",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 11:30-31, a misericórdia alcança um grupo e fecha para sempre a porta ao outro.",
+    "prompt": "Em Romanos 11:30-31, a misericórdia alcança um grupo e fecha para sempre a porta ao outro.",
+    "cue": "Em Romanos 11:30-31, a misericórdia alcança um grupo e fecha para sempre a porta ao outro.",
+    "verseRef": "Romanos 11:30–31",
+    "passageText": "Pois assim como vocês, outrora, foram desobedientes a Deus, agora conseguiram misericórdia em razão da desobediência deles. Assim, estes também agora se tornaram desobedientes, para que, por meio da misericórdia que vos foi demonstrada, possam alcançar a misericórdia.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "possam alcançar a misericórdia",
+    "feedbackCorrect": "O movimento do texto abre misericórdia também para os desobedientes.",
+    "feedbackWrong": {
+      "true": "Releia o alvo no fim de 11:31."
+    },
+    "hint": "Veja o alvo no fim do versículo 31.",
+    "learningObjective": "Compreender o movimento mútuo da misericórdia.",
+    "evidence": [
+      "Romanos 11:30–31"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-04-israel-02",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 11:31, toque as palavras que mostram o alvo da desobediência atual.",
+    "prompt": "Em Romanos 11:31, toque as palavras que mostram o alvo da desobediência atual.",
+    "cue": "Em Romanos 11:31, toque as palavras que mostram o alvo da desobediência atual.",
+    "verseRef": "Romanos 11:31",
+    "passageText": "Assim, estes também agora se tornaram desobedientes, para que, por meio da misericórdia que vos foi demonstrada, possam alcançar a misericórdia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desobedientes"
+      },
+      {
+        "id": "b",
+        "text": "para que"
+      },
+      {
+        "id": "c",
+        "text": "agora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que, por meio da misericórdia",
+    "feedbackCorrect": "Essas palavras ligam a situação atual ao alvo de misericórdia.",
+    "feedbackWrong": {
+      "a": "Esse é o estado atual, não a finalidade apontada.",
+      "c": "Essa palavra marca o tempo, não o alvo pretendido."
+    },
+    "hint": "Procure a ligação de finalidade.",
+    "learningObjective": "Reconhecer o marcador de propósito em Romanos 11:31.",
+    "evidence": [
+      "Romanos 11:31"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-04-israel-03",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 11:30-31 relaciona os dois grupos diante de Deus?",
+    "prompt": "Como Romanos 11:30-31 relaciona os dois grupos diante de Deus?",
+    "cue": "Como Romanos 11:30-31 relaciona os dois grupos diante de Deus?",
+    "verseRef": "Romanos 11:30–31",
+    "passageText": "Pois assim como vocês, outrora, foram desobedientes a Deus, agora conseguiram misericórdia em razão da desobediência deles. Assim, estes também agora se tornaram desobedientes, para que, por meio da misericórdia que vos foi demonstrada, possam alcançar a misericórdia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o primeiro grupo precisou de misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "A misericórdia recebida abre caminho à do outro"
+      },
+      {
+        "id": "c",
+        "text": "Um grupo torna o outro incapaz de misericórdia"
+      },
+      {
+        "id": "d",
+        "text": "A desobediência de um anula a ação de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "possam alcançar a misericórdia",
+    "feedbackCorrect": "A misericórdia demonstrada a uns mira também alcançar os outros.",
+    "feedbackWrong": {
+      "a": "Os dois grupos aparecem como desobedientes e alcançáveis.",
+      "c": "O texto mira o alcance da misericórdia, não o seu bloqueio.",
+      "d": "Deus usa até esse cenário para demonstrar misericórdia."
+    },
+    "hint": "Siga quem recebe e quem pode alcançar.",
+    "learningObjective": "Relacionar desobediência e misericórdia entre os grupos.",
+    "evidence": [
+      "Romanos 11:30–31"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-04-israel-04",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Romanos 11:30-32?",
+    "prompt": "Como avança o argumento em Romanos 11:30-32?",
+    "cue": "Como avança o argumento em Romanos 11:30-32?",
+    "verseRef": "Romanos 11:31–32",
+    "passageText": "Assim, estes também agora se tornaram desobedientes, para que, por meio da misericórdia que vos foi demonstrada, possam alcançar a misericórdia. Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um grupo recebe misericórdia primeiro"
+      },
+      {
+        "id": "b",
+        "text": "O outro também pode ser alcançado"
+      },
+      {
+        "id": "c",
+        "text": "Deus quer misericórdia para todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a fim de poder demonstrar misericórdia para com todos",
+    "feedbackCorrect": "O argumento caminha dos grupos alcançados à misericórdia para todos.",
+    "feedbackWrong": {
+      "default": "Comece pelo grupo alcançado primeiro; todos fecha o trecho."
+    },
+    "hint": "A palavra todos é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento de Romanos 11:30-32.",
+    "evidence": [
+      "Romanos 11:31–32"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-04-israel-05",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 11:32, o que Deus quer demonstrar para com todos?",
+    "prompt": "Em Romanos 11:32, o que Deus quer demonstrar para com todos?",
+    "cue": "Em Romanos 11:32, o que Deus quer demonstrar para com todos?",
+    "verseRef": "Romanos 11:32",
+    "passageText": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "template": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar ___ para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "condenação"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "esquecimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "poder demonstrar misericórdia para com todos",
+    "feedbackCorrect": "O alvo de Deus no texto é demonstrar misericórdia para com todos.",
+    "feedbackWrong": {
+      "a": "A desobediência é o cenário; o alvo demonstrado é outro.",
+      "c": "Deus não esquece os grupos; ele mira alcançá-los."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Compreender o propósito afirmado em Romanos 11:32.",
+    "evidence": [
+      "Romanos 11:32"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-04-israel-06",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 11:32 a Efésios 2:4?",
+    "prompt": "O que liga Romanos 11:32 a Efésios 2:4?",
+    "cue": "O que liga Romanos 11:32 a Efésios 2:4?",
+    "verseRef": "Romanos 11:32",
+    "passageText": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "passageA": {
+      "ref": "Romanos 11:32",
+      "text": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos."
+    },
+    "passageB": {
+      "ref": "Efésios 2:4",
+      "text": "Mas Deus, sendo imensamente rico em misericórdia, por causa do grande amor com que nos amou,"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pobre em misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Deus rico em misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "Homem rico em mérito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "demonstrar misericórdia para com todos",
+    "feedbackCorrect": "Nos dois textos, Deus age a partir da sua rica misericórdia.",
+    "feedbackWrong": {
+      "a": "Efésios chama Deus de rico justamente nesse ponto.",
+      "c": "O centro dos textos é o agir de Deus, não mérito humano."
+    },
+    "hint": "Compare o caráter de Deus nos dois textos.",
+    "learningObjective": "Relacionar a misericórdia de Deus em Romanos e Efésios.",
+    "evidence": [
+      "Romanos 11:32",
+      "Efésios 2:4"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-04-israel-01",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 11:33-36 responde ao plano de Deus com louvor a caminhos que ninguém sondou por completo.",
+    "prompt": "Romanos 11:33-36 responde ao plano de Deus com louvor a caminhos que ninguém sondou por completo.",
+    "cue": "Romanos 11:33-36 responde ao plano de Deus com louvor a caminhos que ninguém sondou por completo.",
+    "verseRef": "Romanos 11:33–34",
+    "passageText": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos! Porque quem conheceu a mente do Senhor? Ou quem foi o seu conselheiro?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos",
+    "feedbackCorrect": "Diante do plano de Deus, Paulo louva em vez de explicar tudo.",
+    "feedbackWrong": {
+      "false": "Releia as exclamações de Romanos 11:33."
+    },
+    "hint": "Veja a reação de Paulo no versículo 33.",
+    "learningObjective": "Interpretar o louvor diante dos caminhos de Deus.",
+    "evidence": [
+      "Romanos 11:33–34"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-04-israel-02",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 11:33, toque a palavra que mostra o limite de sondar os juízos de Deus.",
+    "prompt": "Em Romanos 11:33, toque a palavra que mostra o limite de sondar os juízos de Deus.",
+    "cue": "Em Romanos 11:33, toque a palavra que mostra o limite de sondar os juízos de Deus.",
+    "verseRef": "Romanos 11:33",
+    "passageText": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminhos"
+      },
+      {
+        "id": "b",
+        "text": "juízos"
+      },
+      {
+        "id": "c",
+        "text": "insondáveis"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quão insondáveis são os Seus juízos",
+    "feedbackCorrect": "Essa palavra marca o limite humano diante dos juízos de Deus.",
+    "feedbackWrong": {
+      "a": "Esse é o outro objeto ligado aos caminhos dele.",
+      "b": "Esse é o objeto sondado, não a palavra do limite."
+    },
+    "hint": "Procure como são os juízos dele.",
+    "learningObjective": "Sustentar com o texto o limite diante de Deus.",
+    "evidence": [
+      "Romanos 11:33"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-04-israel-03",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 11:34-36 sustenta sobre a relação do homem com Deus?",
+    "prompt": "Que leitura Romanos 11:34-36 sustenta sobre a relação do homem com Deus?",
+    "cue": "Que leitura Romanos 11:34-36 sustenta sobre a relação do homem com Deus?",
+    "verseRef": "Romanos 11:34–35",
+    "passageText": "Porque quem conheceu a mente do Senhor? Ou quem foi o seu conselheiro? Ou quem primeiro lhe deu algo, de modo que isso lhe seja restituído?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus precisa do conselho humano para agir"
+      },
+      {
+        "id": "b",
+        "text": "Ninguém aconselhou Deus nem lhe deu primeiro"
+      },
+      {
+        "id": "c",
+        "text": "O homem deu algo a Deus antes de receber"
+      },
+      {
+        "id": "d",
+        "text": "Os caminhos de Deus são todos óbvios ao homem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quem conheceu a mente do Senhor? Ou quem foi o seu conselheiro?",
+    "feedbackCorrect": "As perguntas de Paulo negam conselheiro e credor humanos de Deus.",
+    "feedbackWrong": {
+      "a": "A pergunta retórica mostra que Deus não teve conselheiro.",
+      "c": "O versículo 35 pergunta quem lhe deu algo primeiro.",
+      "d": "O versículo anterior chama seus caminhos de inescrutáveis."
+    },
+    "hint": "Leia as perguntas como respostas esperadas.",
+    "learningObjective": "Escolher a interpretação sustentada sobre Deus e o homem.",
+    "evidence": [
+      "Romanos 11:34–35"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-04-israel-04",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 11:32-36?",
+    "prompt": "Qual sequência revela o sentido de Romanos 11:32-36?",
+    "cue": "Qual sequência revela o sentido de Romanos 11:32-36?",
+    "verseRef": "Romanos 11:32",
+    "passageText": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos sob a desobediência humana"
+      },
+      {
+        "id": "b",
+        "text": "Misericórdia de Deus para todos"
+      },
+      {
+        "id": "c",
+        "text": "Louvor e glória dados a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus colocou todos sob a desobediência",
+    "feedbackCorrect": "Desobediência de todos, misericórdia de Deus e louvor formam o fio.",
+    "feedbackWrong": {
+      "default": "Comece pela condição de todos; o louvor fecha o trecho."
+    },
+    "hint": "O louvor é a resposta final de Paulo.",
+    "learningObjective": "Ver o fio entre desobediência, misericórdia e louvor.",
+    "evidence": [
+      "Romanos 11:32"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-04-israel-05",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 11:36, a ele seja o quê eternamente?",
+    "prompt": "Em Romanos 11:36, a ele seja o quê eternamente?",
+    "cue": "Em Romanos 11:36, a ele seja o quê eternamente?",
+    "verseRef": "Romanos 11:36",
+    "passageText": "Porque dele, por meio dele, e para ele são todas as coisas; a ele, portanto, seja a glória eternamente. Amém!",
+    "template": "Porque dele, por meio dele, e para ele são todas as coisas; a ele, portanto, seja a ___ eternamente. Amém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "vergonha"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "dívida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a ele, portanto, seja a glória eternamente",
+    "feedbackCorrect": "Pois tudo é dele e para ele, a glória é dele eternamente.",
+    "feedbackWrong": {
+      "a": "O louvor de Paulo honra a Deus, não o envergonha.",
+      "c": "Ninguém pôs Deus em dívida, segundo 11:35."
+    },
+    "hint": "Olhe o fim do louvor de Paulo.",
+    "learningObjective": "Lembrar o desfecho de louvor em Romanos 11:36.",
+    "evidence": [
+      "Romanos 11:36"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-04-israel-06",
+    "trail": "romanos",
+    "section": "rm-04-israel",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 11:33 a Isaías 55:8?",
+    "prompt": "O que liga Romanos 11:33 a Isaías 55:8?",
+    "cue": "O que liga Romanos 11:33 a Isaías 55:8?",
+    "verseRef": "Romanos 11:33",
+    "passageText": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!",
+    "passageA": {
+      "ref": "Romanos 11:33",
+      "text": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!"
+    },
+    "passageB": {
+      "ref": "Isaías 55:8",
+      "text": "Pois os meus pensamentos não são como os seus pensamentos, nem os seus caminhos são como os meus caminhos, diz o Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caminhos iguais aos humanos"
+      },
+      {
+        "id": "b",
+        "text": "Caminhos de Deus são maiores"
+      },
+      {
+        "id": "c",
+        "text": "Caminhos humanos acima de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quão inescrutáveis os Seus caminhos",
+    "feedbackCorrect": "Isaías e Paulo afirmam que os caminhos de Deus superam os nossos.",
+    "feedbackWrong": {
+      "a": "A diferença entre os caminhos é justamente o ponto dos textos.",
+      "c": "Os dois textos colocam Deus acima dos caminhos humanos."
+    },
+    "hint": "Compare de quem são os caminhos maiores.",
+    "learningObjective": "Ligar os caminhos inescrutáveis de Deus a Isaías.",
+    "evidence": [
+      "Romanos 11:33",
+      "Isaías 55:8"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-05-culto-01",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 12:1, devemos apresentar nossos corpos como sacrifício vivo, santo e aceitável a Deus.",
+    "prompt": "Em Romanos 12:1, devemos apresentar nossos corpos como sacrifício vivo, santo e aceitável a Deus.",
+    "cue": "Em Romanos 12:1, devemos apresentar nossos corpos como sacrifício vivo, santo e aceitável a Deus.",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus",
+    "feedbackCorrect": "A resposta às misericórdias de Deus é apresentar o corpo a ele.",
+    "feedbackWrong": {
+      "false": "Releia o pedido de Paulo em Romanos 12:1."
+    },
+    "hint": "Olhe o que Paulo roga aos irmãos.",
+    "learningObjective": "Observar o chamado de Romanos 12:1.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-05-culto-02",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 12:1, toque como os corpos devem ser apresentados a Deus.",
+    "prompt": "Em Romanos 12:1, toque como os corpos devem ser apresentados a Deus.",
+    "cue": "Em Romanos 12:1, toque como os corpos devem ser apresentados a Deus.",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdias de Deus"
+      },
+      {
+        "id": "b",
+        "text": "culto racional"
+      },
+      {
+        "id": "c",
+        "text": "sacrifício vivo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como sacrifício vivo, santo e aceitável a Deus",
+    "feedbackCorrect": "O corpo é apresentado como sacrifício vivo, santo e aceitável a Deus.",
+    "feedbackWrong": {
+      "a": "Pelas misericórdias é o motivo do pedido, não o modo da oferta.",
+      "b": "Esse é o nome desse culto, não o modo pedido antes dele."
+    },
+    "hint": "Procure a comparação usada por Paulo.",
+    "learningObjective": "Identificar a imagem de Romanos 12:1.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-05-culto-03",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 12:2, com o que não devemos nos conformar?",
+    "prompt": "Segundo Romanos 12:2, com o que não devemos nos conformar?",
+    "cue": "Segundo Romanos 12:2, com o que não devemos nos conformar?",
+    "verseRef": "Romanos 12:2",
+    "passageText": "E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com este mundo presente"
+      },
+      {
+        "id": "b",
+        "text": "Com os irmãos da igreja"
+      },
+      {
+        "id": "c",
+        "text": "Com a renovação da mente"
+      },
+      {
+        "id": "d",
+        "text": "Com a vontade de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não se conformem com este mundo",
+    "feedbackCorrect": "Em vez de copiar este mundo, a mente é renovada por Deus.",
+    "feedbackWrong": {
+      "b": "O texto chama a viver como membros uns dos outros.",
+      "c": "A renovação da mente é o caminho da transformação aqui.",
+      "d": "A vontade de Deus é o que devemos experimentar, não rejeitar."
+    },
+    "hint": "Leia a primeira ordem do versículo.",
+    "learningObjective": "Observar a ordem inicial de Romanos 12:2.",
+    "evidence": [
+      "Romanos 12:2"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-05-culto-04",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 12:4-5 na ordem do texto.",
+    "prompt": "Monte Romanos 12:4-5 na ordem do texto.",
+    "cue": "Monte Romanos 12:4-5 na ordem do texto.",
+    "verseRef": "Romanos 12:4–5",
+    "passageText": "Porque assim como em um corpo temos muitos membros, mas não todos os membros exercem a mesma função, Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque assim como em um corpo temos muitos membros"
+      },
+      {
+        "id": "b",
+        "text": "mas não todos os membros exercem a mesma função"
+      },
+      {
+        "id": "c",
+        "text": "formamos um só corpo em Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "formamos um só corpo em Cristo",
+    "feedbackCorrect": "Muitos membros com funções diferentes formam um só corpo em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelos muitos membros; um só corpo fecha o trecho."
+    },
+    "hint": "A unidade em Cristo fecha o trecho.",
+    "learningObjective": "Reconhecer a sequência de Romanos 12:4-5.",
+    "evidence": [
+      "Romanos 12:4–5"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-05-culto-05",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 12:2, pela renovação de que somos transformados?",
+    "prompt": "Em Romanos 12:2, pela renovação de que somos transformados?",
+    "cue": "Em Romanos 12:2, pela renovação de que somos transformados?",
+    "verseRef": "Romanos 12:2",
+    "passageText": "E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "template": "E não se conformem com este mundo, mas transformem-se pela renovação da sua ___, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "mente"
+      },
+      {
+        "id": "c",
+        "text": "vontade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "transformem-se pela renovação da sua mente",
+    "feedbackCorrect": "A transformação passa pela mente renovada por Deus.",
+    "feedbackWrong": {
+      "a": "O órgão nomeado no versículo é bem específico.",
+      "c": "A vontade de Deus é experimentada depois dessa renovação."
+    },
+    "hint": "Olhe o meio da transformação.",
+    "learningObjective": "Lembrar o meio da transformação em Romanos 12:2.",
+    "evidence": [
+      "Romanos 12:2"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-05-culto-06",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 12:1 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 12:1 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 12:1 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "passageA": {
+      "ref": "Romanos 12:1",
+      "text": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A graça recebida se torna serviço, amor, santidade e vida comunitária."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida inteira como culto"
+      },
+      {
+        "id": "b",
+        "text": "Corpo longe de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Culto só no templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que é o seu culto racional",
+    "feedbackCorrect": "Apresentar o corpo a Deus é chamado por Paulo de culto racional.",
+    "feedbackWrong": {
+      "b": "O corpo é justamente apresentado a Deus, não afastado dele.",
+      "c": "O culto aqui é o corpo apresentado, não um lugar apenas."
+    },
+    "hint": "Veja o nome que Paulo dá a essa entrega.",
+    "learningObjective": "Ligar Romanos 12:1 ao culto da vida inteira.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-05-culto-01",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 12:2, não se conformar com este mundo e ser transformado pela mente renovada andam juntos.",
+    "prompt": "Em Romanos 12:2, não se conformar com este mundo e ser transformado pela mente renovada andam juntos.",
+    "cue": "Em Romanos 12:2, não se conformar com este mundo e ser transformado pela mente renovada andam juntos.",
+    "verseRef": "Romanos 12:2",
+    "passageText": "E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não se conformem com este mundo, mas transformem-se pela renovação da sua mente",
+    "feedbackCorrect": "Paulo une a recusa ao mundo e a renovação da mente no mesmo chamado.",
+    "feedbackWrong": {
+      "false": "Releia as duas ordens ligadas no mesmo versículo."
+    },
+    "hint": "Veja as duas ordens do versículo.",
+    "learningObjective": "Compreender a ligação entre recusa e renovação.",
+    "evidence": [
+      "Romanos 12:2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-05-culto-02",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 12:2, toque a palavra que marca a virada da recusa para a transformação.",
+    "prompt": "Em Romanos 12:2, toque a palavra que marca a virada da recusa para a transformação.",
+    "cue": "Em Romanos 12:2, toque a palavra que marca a virada da recusa para a transformação.",
+    "verseRef": "Romanos 12:2",
+    "passageText": "E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "mente"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas transformem-se pela renovação da sua mente",
+    "feedbackCorrect": "A virada troca copiar o mundo por uma mente renovada.",
+    "feedbackWrong": {
+      "a": "Esse é o modelo recusado, não a palavra de virada.",
+      "b": "Esse é o centro renovado, não a palavra que vira a frase."
+    },
+    "hint": "Olhe a palavra curta entre as ordens.",
+    "learningObjective": "Reconhecer o marcador de contraste em Romanos 12:2.",
+    "evidence": [
+      "Romanos 12:2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-05-culto-03",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 12:3 liga o pensar de si à fé recebida?",
+    "prompt": "Como Romanos 12:3 liga o pensar de si à fé recebida?",
+    "cue": "Como Romanos 12:3 liga o pensar de si à fé recebida?",
+    "verseRef": "Romanos 12:3",
+    "passageText": "Porque, pela graça que me foi concedida, digo a cada um de vocês que não pense de si mesmo além do que é adequado; ao contrário, tenha um julgamento moderado, de acordo com a medida da fé que Deus distribuiu a cada um.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pensar de si não tem relação com Deus aqui"
+      },
+      {
+        "id": "b",
+        "text": "Cada um deve se achar acima dos outros irmãos"
+      },
+      {
+        "id": "c",
+        "text": "A fé recebida autoriza orgulho na igreja"
+      },
+      {
+        "id": "d",
+        "text": "Cada um mede a si pela fé que Deus distribuiu"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "de acordo com a medida da fé que Deus distribuiu a cada um",
+    "feedbackCorrect": "O pensar moderado é medido pela fé que Deus distribuiu a cada um.",
+    "feedbackWrong": {
+      "a": "A medida vem justamente do que Deus distribuiu a cada um.",
+      "b": "Paulo pede que ninguém pense de si além do adequado.",
+      "c": "A graça recebida leva à moderação, não ao orgulho."
+    },
+    "hint": "Veja a medida citada no fim do versículo.",
+    "learningObjective": "Relacionar autoavaliação e fé distribuída por Deus.",
+    "evidence": [
+      "Romanos 12:3"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-05-culto-04",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Romanos 12:1-2?",
+    "prompt": "Como avança a cena em Romanos 12:1-2?",
+    "cue": "Como avança a cena em Romanos 12:1-2?",
+    "verseRef": "Romanos 12:1–2",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional. E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corpos apresentados a Deus em culto"
+      },
+      {
+        "id": "b",
+        "text": "Mente renovada e vida transformada"
+      },
+      {
+        "id": "c",
+        "text": "Vontade de Deus enfim experimentada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "apresentem os seus corpos como sacrifício vivo",
+    "feedbackCorrect": "Entrega do corpo, mente renovada e vontade experimentada formam o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega do corpo; a vontade de Deus fecha."
+    },
+    "hint": "A vontade de Deus é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Romanos 12:1-2.",
+    "evidence": [
+      "Romanos 12:1–2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-05-culto-05",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 12:5, também somos o quê uns dos outros em Cristo?",
+    "prompt": "Em Romanos 12:5, também somos o quê uns dos outros em Cristo?",
+    "cue": "Em Romanos 12:5, também somos o quê uns dos outros em Cristo?",
+    "verseRef": "Romanos 12:5",
+    "passageText": "Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros.",
+    "template": "Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos ___ uns dos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estranhos"
+      },
+      {
+        "id": "b",
+        "text": "membros"
+      },
+      {
+        "id": "c",
+        "text": "rivais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "também somos membros uns dos outros",
+    "feedbackCorrect": "Um só corpo significa membros ligados uns aos outros.",
+    "feedbackWrong": {
+      "a": "Em Cristo, os muitos não ficam estranhos entre si.",
+      "c": "O texto une os muitos em um só corpo, não em disputa."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Compreender a ligação entre os membros do corpo.",
+    "evidence": [
+      "Romanos 12:5"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-05-culto-06",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 12:5 a 1 Coríntios 12:27?",
+    "prompt": "O que liga Romanos 12:5 a 1 Coríntios 12:27?",
+    "cue": "O que liga Romanos 12:5 a 1 Coríntios 12:27?",
+    "verseRef": "Romanos 12:5",
+    "passageText": "Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros.",
+    "passageA": {
+      "ref": "Romanos 12:5",
+      "text": "Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 12:27",
+      "text": "Agora vocês são o corpo de Cristo, e individualmente são membros desse corpo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Membros sem qualquer ligação"
+      },
+      {
+        "id": "b",
+        "text": "Um corpo, muitos membros"
+      },
+      {
+        "id": "c",
+        "text": "Corpos separados em Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "formamos um só corpo em Cristo",
+    "feedbackCorrect": "Nos dois textos, muitos membros diferentes formam um só corpo.",
+    "feedbackWrong": {
+      "a": "Os membros são uns dos outros, ligados no mesmo corpo.",
+      "c": "A imagem dos textos é de unidade, não de separação."
+    },
+    "hint": "Compare a imagem usada nos dois textos.",
+    "learningObjective": "Relacionar o corpo de Cristo em Romanos e Coríntios.",
+    "evidence": [
+      "Romanos 12:5",
+      "1 Coríntios 12:27"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-05-culto-01",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 12:1 reduz o culto a um ato feito só dentro do templo, sem a vida do dia a dia.",
+    "prompt": "Romanos 12:1 reduz o culto a um ato feito só dentro do templo, sem a vida do dia a dia.",
+    "cue": "Romanos 12:1 reduz o culto a um ato feito só dentro do templo, sem a vida do dia a dia.",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "apresentem os seus corpos como sacrifício vivo",
+    "feedbackCorrect": "O culto aqui é o próprio corpo apresentado a Deus em vida.",
+    "feedbackWrong": {
+      "true": "Releia o que Paulo chama de culto racional em 12:1."
+    },
+    "hint": "Veja o que é chamado de culto.",
+    "learningObjective": "Interpretar o culto como vida inteira apresentada a Deus.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-05-culto-02",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 12:1, toque o trecho que nomeia essa entrega do corpo como culto.",
+    "prompt": "Em Romanos 12:1, toque o trecho que nomeia essa entrega do corpo como culto.",
+    "cue": "Em Romanos 12:1, toque o trecho que nomeia essa entrega do corpo como culto.",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "culto racional"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício vivo"
+      },
+      {
+        "id": "c",
+        "text": "irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que é o seu culto racional",
+    "feedbackCorrect": "Paulo nomeia a entrega do corpo como o culto racional a Deus.",
+    "feedbackWrong": {
+      "b": "Esse trecho descreve a oferta, não o nome dado ao culto.",
+      "c": "Esse é o público chamado, não o nome da entrega."
+    },
+    "hint": "Procure o nome no fim do versículo.",
+    "learningObjective": "Sustentar com o texto o culto da vida inteira.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-05-culto-03",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 12:4-5 sustenta sobre as diferenças na igreja?",
+    "prompt": "Que leitura Romanos 12:4-5 sustenta sobre as diferenças na igreja?",
+    "cue": "Que leitura Romanos 12:4-5 sustenta sobre as diferenças na igreja?",
+    "verseRef": "Romanos 12:4–5",
+    "passageText": "Porque assim como em um corpo temos muitos membros, mas não todos os membros exercem a mesma função, Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só membro concentra todo o valor do corpo"
+      },
+      {
+        "id": "b",
+        "text": "Funções diferentes não quebram a unidade do corpo"
+      },
+      {
+        "id": "c",
+        "text": "Cada membro pode viver isolado dos outros"
+      },
+      {
+        "id": "d",
+        "text": "Todos devem exercer exatamente a mesma função"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não todos os membros exercem a mesma função",
+    "feedbackCorrect": "Funções diferentes convivem com um só corpo e membros ligados.",
+    "feedbackWrong": {
+      "a": "O valor está no corpo inteiro formado por muitos membros.",
+      "c": "Os membros são uns dos outros, não isolados entre si.",
+      "d": "O texto diz que nem todos exercem a mesma função."
+    },
+    "hint": "Junte função diferente e corpo único.",
+    "learningObjective": "Escolher a interpretação sustentada sobre unidade e diferença.",
+    "evidence": [
+      "Romanos 12:4–5"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-05-culto-04",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 12:1-5?",
+    "prompt": "Qual sequência revela o sentido de Romanos 12:1-5?",
+    "cue": "Qual sequência revela o sentido de Romanos 12:1-5?",
+    "verseRef": "Romanos 12:1–2",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional. E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdias recebidas de Deus Pai"
+      },
+      {
+        "id": "b",
+        "text": "Corpos entregues como culto vivo"
+      },
+      {
+        "id": "c",
+        "text": "Um só corpo, membros ligados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Rogo a vocês, irmãos, pelas misericórdias de Deus",
+    "feedbackCorrect": "Misericórdia recebida, vida entregue e corpo unido formam o fio.",
+    "feedbackWrong": {
+      "default": "Comece pelas misericórdias; o corpo unido fecha o trecho."
+    },
+    "hint": "A vida em comum é o ponto de chegada.",
+    "learningObjective": "Ver o fio entre misericórdia, culto e comunidade.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-05-culto-05",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 12:3, de acordo com a medida de que Deus distribuiu a cada um?",
+    "prompt": "Em Romanos 12:3, de acordo com a medida de que Deus distribuiu a cada um?",
+    "cue": "Em Romanos 12:3, de acordo com a medida de que Deus distribuiu a cada um?",
+    "verseRef": "Romanos 12:3",
+    "passageText": "Porque, pela graça que me foi concedida, digo a cada um de vocês que não pense de si mesmo além do que é adequado; ao contrário, tenha um julgamento moderado, de acordo com a medida da fé que Deus distribuiu a cada um.",
+    "template": "Porque, pela graça que me foi concedida, digo a cada um de vocês que não pense de si mesmo além do que é adequado; ao contrário, tenha um julgamento moderado, de acordo com a medida da ___ que Deus distribuiu a cada um.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "sorte"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a medida da fé que Deus distribuiu a cada um",
+    "feedbackCorrect": "A medida para pensar de si é a fé que Deus distribuiu.",
+    "feedbackWrong": {
+      "a": "Reconhecimento humano não é a medida citada por Paulo.",
+      "b": "O texto não mede ninguém por acaso ou destino cego."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Lembrar a medida dada por Deus em Romanos 12:3.",
+    "evidence": [
+      "Romanos 12:3"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-05-culto-06",
+    "trail": "romanos",
+    "section": "rm-05-culto",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 12:1 a 1 Pedro 2:5?",
+    "prompt": "O que liga Romanos 12:1 a 1 Pedro 2:5?",
+    "cue": "O que liga Romanos 12:1 a 1 Pedro 2:5?",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "passageA": {
+      "ref": "Romanos 12:1",
+      "text": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional."
+    },
+    "passageB": {
+      "ref": "1 Pedro 2:5",
+      "text": "Vocês também, como pedras vivas, estão sendo edificados como uma casa espiritual e um sacerdócio santo, a fim de oferecer sacrifícios espirituais agradáveis a Deus, por intermédio de Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Corpos sem valor para Deus"
+      },
+      {
+        "id": "b",
+        "text": "Sacrifícios longe de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Sacrifícios vivos para Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "apresentem os seus corpos como sacrifício vivo",
+    "feedbackCorrect": "Pedro e Paulo falam de vida oferecida a Deus como sacrifício.",
+    "feedbackWrong": {
+      "a": "O corpo apresentado é santo e aceitável a Deus aqui.",
+      "b": "Os sacrifícios dos dois textos são apresentados a Deus."
+    },
+    "hint": "Compare a oferta descrita nos dois textos.",
+    "learningObjective": "Ligar o sacrifício vivo de Romanos ao de Pedro.",
+    "evidence": [
+      "Romanos 12:1",
+      "1 Pedro 2:5"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-01",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, só alguns pecaram e carecem da glória de Deus.",
+    "prompt": "Em Romanos 3:23, só alguns pecaram e carecem da glória de Deus.",
+    "cue": "Em Romanos 3:23, só alguns pecaram e carecem da glória de Deus.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "todos pecaram e carecem da glória de Deus",
+    "feedbackCorrect": "Paulo inclui todos no pecado e na necessidade da glória de Deus.",
+    "feedbackWrong": {
+      "true": "Releia quem Romanos 3:23 inclui na afirmação."
+    },
+    "hint": "Veja quem o versículo inclui.",
+    "learningObjective": "Revisar a universalidade do pecado em Romanos 3:23.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-02",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 3:23, toque o que todos fizeram diante de Deus.",
+    "prompt": "Em Romanos 3:23, toque o que todos fizeram diante de Deus.",
+    "cue": "Em Romanos 3:23, toque o que todos fizeram diante de Deus.",
+    "verseRef": "Romanos 3:23",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus,",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecaram"
+      },
+      {
+        "id": "b",
+        "text": "carecem"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todos pecaram",
+    "feedbackCorrect": "Todos pecaram: é o ponto de partida do evangelho em Romanos.",
+    "feedbackWrong": {
+      "b": "Carecer é a condição que segue a ação afirmada.",
+      "c": "Essa palavra mostra quem está incluído, não a ação feita."
+    },
+    "hint": "Procure a ação de todos.",
+    "learningObjective": "Revisar a ação universal em Romanos 3:23.",
+    "evidence": [
+      "Romanos 3:23"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-03",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 5:1, o que têm os justificados mediante a fé?",
+    "prompt": "Segundo Romanos 5:1, o que têm os justificados mediante a fé?",
+    "cue": "Segundo Romanos 5:1, o que têm os justificados mediante a fé?",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz com Deus por meio de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Mérito próprio diante de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Guerra com Deus por meio de Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Isenção de toda tribulação futura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "temos paz com Deus por meio de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Justificados mediante a fé, temos paz com Deus em Cristo.",
+    "feedbackWrong": {
+      "b": "A paz vem por meio de Cristo, não de mérito próprio.",
+      "c": "O texto anuncia paz, não guerra, para quem crê.",
+      "d": "Romanos 5:3 fala de tribulações logo depois da paz."
+    },
+    "hint": "Leia o resultado no versículo.",
+    "learningObjective": "Revisar a paz com Deus em Romanos 5:1.",
+    "evidence": [
+      "Romanos 5:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-04",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 5:3-4 na ordem do texto.",
+    "prompt": "Monte Romanos 5:3-4 na ordem do texto.",
+    "cue": "Monte Romanos 5:3-4 na ordem do texto.",
+    "verseRef": "Romanos 5:3–4",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a tribulação produz perseverança"
+      },
+      {
+        "id": "b",
+        "text": "a perseverança, experiência"
+      },
+      {
+        "id": "c",
+        "text": "a experiência, esperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "A cadeia revisada vai da tribulação à perseverança e à esperança.",
+    "feedbackWrong": {
+      "default": "Comece pela tribulação; a esperança fecha a cadeia."
+    },
+    "hint": "A esperança fecha a cadeia.",
+    "learningObjective": "Revisar a cadeia de Romanos 5:3-4.",
+    "evidence": [
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-05",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 5:2, a esta o quê temos acesso pela fé, na qual estamos firmes?",
+    "prompt": "Em Romanos 5:2, a esta o quê temos acesso pela fé, na qual estamos firmes?",
+    "cue": "Em Romanos 5:2, a esta o quê temos acesso pela fé, na qual estamos firmes?",
+    "verseRef": "Romanos 5:2",
+    "passageText": "Por meio dele, também temos acesso pela fé a esta graça na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "template": "Por meio dele, também temos acesso pela fé a esta ___ na qual estamos firmes; e nos gloriamos na esperança da glória de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "tribulação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "temos acesso pela fé a esta graça na qual estamos firmes",
+    "feedbackCorrect": "Pela fé em Cristo, entramos nesta graça e nela estamos firmes.",
+    "feedbackWrong": {
+      "a": "A glória é esperada no fim do versículo, não onde estamos firmes.",
+      "c": "A tribulação aparece no versículo seguinte, com outro fruto."
+    },
+    "hint": "Olhe onde estamos firmes.",
+    "learningObjective": "Revisar o acesso à graça em Romanos 5:2.",
+    "evidence": [
+      "Romanos 5:2"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-06",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 3:24 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 3:24 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 3:24 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 3:24",
+    "passageText": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "passageA": {
+      "ref": "Romanos 3:24",
+      "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Todos pecaram, mas Deus justifica gratuitamente pela graça que há em Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Condenados sem qualquer esperança"
+      },
+      {
+        "id": "b",
+        "text": "Justificados gratuitamente pela graça"
+      },
+      {
+        "id": "c",
+        "text": "Justificados pelo próprio mérito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sendo justificados gratuitamente, por sua graça",
+    "feedbackCorrect": "A justificação é gratuita, por graça, através da redenção em Cristo.",
+    "feedbackWrong": {
+      "a": "Em Cristo há redenção para quem pecou, não só condenação.",
+      "c": "O texto fala de presente gratuito, não de mérito próprio."
+    },
+    "hint": "Veja como o presente é dado.",
+    "learningObjective": "Ligar Romanos 3:24 à justificação gratuita.",
+    "evidence": [
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-07",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 8:1, toque o que já não há para quem está em Cristo Jesus.",
+    "prompt": "Em Romanos 8:1, toque o que já não há para quem está em Cristo Jesus.",
+    "cue": "Em Romanos 8:1, toque o que já não há para quem está em Cristo Jesus.",
+    "verseRef": "Romanos 8:1",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "condenação"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "já não há condenação",
+    "feedbackCorrect": "Em Cristo Jesus, a condenação não pesa mais sobre quem crê.",
+    "feedbackWrong": {
+      "b": "Cristo Jesus é onde a pessoa está, não o que foi removido.",
+      "c": "O Espírito é segundo quem se anda, não o que deixou de haver."
+    },
+    "hint": "Procure o que foi retirado.",
+    "learningObjective": "Revisar a ausência de condenação em Romanos 8:1.",
+    "evidence": [
+      "Romanos 8:1"
+    ]
+  },
+  {
+    "id": "romanos-sem-rm-06-desafio-08",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 12:4-5 na ordem do texto.",
+    "prompt": "Monte Romanos 12:4-5 na ordem do texto.",
+    "cue": "Monte Romanos 12:4-5 na ordem do texto.",
+    "verseRef": "Romanos 12:4–5",
+    "passageText": "Porque assim como em um corpo temos muitos membros, mas não todos os membros exercem a mesma função, Assim como nós, que somos muitos, formamos um só corpo em Cristo, também somos membros uns dos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque assim como em um corpo temos muitos membros"
+      },
+      {
+        "id": "b",
+        "text": "mas não todos os membros exercem a mesma função"
+      },
+      {
+        "id": "c",
+        "text": "formamos um só corpo em Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "formamos um só corpo em Cristo",
+    "feedbackCorrect": "Muitos membros diferentes formam um só corpo em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelos muitos membros; um só corpo fecha."
+    },
+    "hint": "A unidade fecha o trecho.",
+    "learningObjective": "Revisar a imagem do corpo em Romanos 12:4-5.",
+    "evidence": [
+      "Romanos 12:4–5"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-01",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 8:1-2, ainda há condenação para quem está em Cristo porque o pecado domina.",
+    "prompt": "Em Romanos 8:1-2, ainda há condenação para quem está em Cristo porque o pecado domina.",
+    "cue": "Em Romanos 8:1-2, ainda há condenação para quem está em Cristo porque o pecado domina.",
+    "verseRef": "Romanos 8:1–2",
+    "passageText": "Portanto, agora já não há condenação para os que estão em Cristo Jesus, que não andam conforme a carne, mas segundo o Espírito. Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "já não há condenação para os que estão em Cristo Jesus",
+    "feedbackCorrect": "O Espírito da vida livrou do pecado e da morte em Cristo Jesus.",
+    "feedbackWrong": {
+      "true": "Releia a afirmação e a explicação em 8:1-2."
+    },
+    "hint": "Ligue a afirmação à sua explicação.",
+    "learningObjective": "Compreender a liberdade da condenação em Romanos 8.",
+    "evidence": [
+      "Romanos 8:1–2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-02",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 8:2, toque a palavra que abre a explicação do versículo anterior.",
+    "prompt": "Em Romanos 8:2, toque a palavra que abre a explicação do versículo anterior.",
+    "cue": "Em Romanos 8:2, toque a palavra que abre a explicação do versículo anterior.",
+    "verseRef": "Romanos 8:2",
+    "passageText": "Porque a lei do Espírito da vida, em Cristo Jesus, me livrou da lei do pecado e da morte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "Espírito da vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porque a lei do Espírito da vida",
+    "feedbackCorrect": "O versículo explica por que já não há condenação em Cristo.",
+    "feedbackWrong": {
+      "a": "Esse é um dos poderes dos quais Paulo foi livrado.",
+      "c": "Esse é quem liberta, não a palavra que abre a explicação."
+    },
+    "hint": "Olhe a primeira palavra.",
+    "learningObjective": "Reconhecer a causa em Romanos 8:2.",
+    "evidence": [
+      "Romanos 8:2"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-03",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 11:30-31 relaciona os grupos diante da misericórdia de Deus?",
+    "prompt": "Como Romanos 11:30-31 relaciona os grupos diante da misericórdia de Deus?",
+    "cue": "Como Romanos 11:30-31 relaciona os grupos diante da misericórdia de Deus?",
+    "verseRef": "Romanos 11:30–31",
+    "passageText": "Pois assim como vocês, outrora, foram desobedientes a Deus, agora conseguiram misericórdia em razão da desobediência deles. Assim, estes também agora se tornaram desobedientes, para que, por meio da misericórdia que vos foi demonstrada, possam alcançar a misericórdia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o primeiro grupo precisou de misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "A misericórdia fecha a porta ao outro grupo"
+      },
+      {
+        "id": "c",
+        "text": "A misericórdia recebida mira alcançar o outro"
+      },
+      {
+        "id": "d",
+        "text": "A desobediência anula qualquer ação de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "possam alcançar a misericórdia",
+    "feedbackCorrect": "A misericórdia demonstrada a uns mira também alcançar os outros.",
+    "feedbackWrong": {
+      "a": "Os dois grupos aparecem como desobedientes no trecho.",
+      "b": "O alvo do texto é que o outro também alcance misericórdia.",
+      "d": "Deus demonstra misericórdia justamente nesse cenário."
+    },
+    "hint": "Siga quem recebe e quem pode alcançar.",
+    "learningObjective": "Relacionar os grupos e a misericórdia em Romanos 11.",
+    "evidence": [
+      "Romanos 11:30–31"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-04",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os frutos em Romanos 5:3-4?",
+    "prompt": "Como se encadeiam os frutos em Romanos 5:3-4?",
+    "cue": "Como se encadeiam os frutos em Romanos 5:3-4?",
+    "verseRef": "Romanos 5:3–4",
+    "passageText": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofrimento que gera firmeza interior"
+      },
+      {
+        "id": "b",
+        "text": "Firmeza que amadurece a vivência"
+      },
+      {
+        "id": "c",
+        "text": "Vivência que sustenta a confiança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a tribulação produz perseverança",
+    "feedbackCorrect": "O sofrimento, em Deus, gera firmeza, vivência e confiança futura.",
+    "feedbackWrong": {
+      "default": "Comece pelo sofrimento; a confiança futura fecha a cadeia."
+    },
+    "hint": "A confiança é o ponto de chegada.",
+    "learningObjective": "Compreender a cadeia de frutos em Romanos 5:3-4.",
+    "evidence": [
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-05",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 5:4, o que vem antes da experiência na cadeia de Paulo?",
+    "prompt": "Em Romanos 5:4, o que vem antes da experiência na cadeia de Paulo?",
+    "cue": "Em Romanos 5:4, o que vem antes da experiência na cadeia de Paulo?",
+    "verseRef": "Romanos 5:4",
+    "passageText": "E a perseverança, experiência; e a experiência, esperança.",
+    "template": "E a ___, experiência; e a experiência, esperança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tribulação"
+      },
+      {
+        "id": "b",
+        "text": "perseverança"
+      },
+      {
+        "id": "c",
+        "text": "esperança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a perseverança, experiência; e a experiência, esperança",
+    "feedbackCorrect": "A perseverança amadurece em experiência, e esta em esperança.",
+    "feedbackWrong": {
+      "a": "Essa abre a cadeia no versículo anterior, não aqui.",
+      "c": "Essa é a última palavra da cadeia, não a anterior à experiência."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Compreender a ordem da cadeia em Romanos 5:4.",
+    "evidence": [
+      "Romanos 5:4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-06",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 3:22 a Habacuque 2:4?",
+    "prompt": "O que liga Romanos 3:22 a Habacuque 2:4?",
+    "cue": "O que liga Romanos 3:22 a Habacuque 2:4?",
+    "verseRef": "Romanos 3:22",
+    "passageText": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção.",
+    "passageA": {
+      "ref": "Romanos 3:22",
+      "text": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção."
+    },
+    "passageB": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que o soberbo se afastará; sua alma não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver pela fé em Deus"
+      },
+      {
+        "id": "b",
+        "text": "Viver sem precisar crer"
+      },
+      {
+        "id": "c",
+        "text": "Viver pelas obras da lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por meio da fé em Jesus Cristo",
+    "feedbackCorrect": "Habacuque já anunciava que o justo viverá pela fé.",
+    "feedbackWrong": {
+      "b": "Os dois textos colocam a fé no centro da vida justa.",
+      "c": "Romanos separa essa justiça das obras da lei."
+    },
+    "hint": "Compare o meio da vida justa.",
+    "learningObjective": "Relacionar Romanos 3:22 a Habacuque 2:4.",
+    "evidence": [
+      "Romanos 3:22",
+      "Habacuque 2:4"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-07",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 11:32, toque o que Deus quer demonstrar para com todos.",
+    "prompt": "Em Romanos 11:32, toque o que Deus quer demonstrar para com todos.",
+    "cue": "Em Romanos 11:32, toque o que Deus quer demonstrar para com todos.",
+    "verseRef": "Romanos 11:32",
+    "passageText": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "desobediência"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "demonstrar misericórdia para com todos",
+    "feedbackCorrect": "O alvo de Deus no texto é demonstrar misericórdia para todos.",
+    "feedbackWrong": {
+      "a": "Essa palavra mostra quem recebe, não o que é demonstrado.",
+      "c": "Essa é a condição de todos, não o presente demonstrado."
+    },
+    "hint": "Olhe o alvo no fim.",
+    "learningObjective": "Reconhecer o alvo de Deus em Romanos 11:32.",
+    "evidence": [
+      "Romanos 11:32"
+    ]
+  },
+  {
+    "id": "romanos-cam-rm-06-desafio-08",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a resposta em Romanos 12:1-2?",
+    "prompt": "Como avança a resposta em Romanos 12:1-2?",
+    "cue": "Como avança a resposta em Romanos 12:1-2?",
+    "verseRef": "Romanos 12:1–2",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional. E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corpos entregues a Deus em culto"
+      },
+      {
+        "id": "b",
+        "text": "Mente renovada sem se conformar"
+      },
+      {
+        "id": "c",
+        "text": "Vontade de Deus enfim experimentada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "apresentem os seus corpos como sacrifício vivo",
+    "feedbackCorrect": "Entrega, mente renovada e vontade experimentada formam o avanço.",
+    "feedbackWrong": {
+      "default": "Comece pela entrega do corpo; a vontade fecha."
+    },
+    "hint": "A vontade de Deus fecha o trecho.",
+    "learningObjective": "Compreender o avanço de Romanos 12:1-2.",
+    "evidence": [
+      "Romanos 12:1–2"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-01",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 3:26 mostra Deus justo e justificador de quem tem fé em Jesus sem abrir mão da justiça.",
+    "prompt": "Romanos 3:26 mostra Deus justo e justificador de quem tem fé em Jesus sem abrir mão da justiça.",
+    "cue": "Romanos 3:26 mostra Deus justo e justificador de quem tem fé em Jesus sem abrir mão da justiça.",
+    "verseRef": "Romanos 3:26",
+    "passageText": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e justificador de quem tem fé em Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ele mesmo seja justo e justificador de quem tem fé em Jesus",
+    "feedbackCorrect": "Deus permanece justo ao justificar quem tem fé em Jesus.",
+    "feedbackWrong": {
+      "false": "Releia o alvo afirmado em Romanos 3:26."
+    },
+    "hint": "Olhe as duas palavras sobre Deus.",
+    "learningObjective": "Interpretar Deus como justo e justificador.",
+    "evidence": [
+      "Romanos 3:26"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-02",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 12:1, toque como os corpos devem ser apresentados a Deus.",
+    "prompt": "Em Romanos 12:1, toque como os corpos devem ser apresentados a Deus.",
+    "cue": "Em Romanos 12:1, toque como os corpos devem ser apresentados a Deus.",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "culto racional"
+      },
+      {
+        "id": "b",
+        "text": "misericórdias de Deus"
+      },
+      {
+        "id": "c",
+        "text": "sacrifício vivo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como sacrifício vivo, santo e aceitável a Deus",
+    "feedbackCorrect": "O corpo apresentado a Deus é sacrifício vivo, santo e aceitável.",
+    "feedbackWrong": {
+      "a": "Esse é o nome do culto, não o modo da oferta pedida.",
+      "b": "Pelas misericórdias é o motivo, não o modo da oferta."
+    },
+    "hint": "Procure a comparação de Paulo.",
+    "learningObjective": "Sustentar o culto vivo em Romanos 12:1.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-03",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 8:5 sustenta sobre a inclinação da pessoa?",
+    "prompt": "Que leitura Romanos 8:5 sustenta sobre a inclinação da pessoa?",
+    "cue": "Que leitura Romanos 8:5 sustenta sobre a inclinação da pessoa?",
+    "verseRef": "Romanos 8:5",
+    "passageText": "Pois aqueles que se inclinam para a carne cogitam das coisas da carne; mas aqueles que se inclinam para o Espírito, das coisas do Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inclinar-se ao Espírito é esforço humano puro"
+      },
+      {
+        "id": "b",
+        "text": "O corpo material deve ser desprezado sempre"
+      },
+      {
+        "id": "c",
+        "text": "Carne e Espírito geram o mesmo pensamento"
+      },
+      {
+        "id": "d",
+        "text": "A mente mostra a direção que a vida segue"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "aqueles que se inclinam para o Espírito, das coisas do Espírito",
+    "feedbackCorrect": "Cada inclinação ocupa a mente com as suas próprias coisas.",
+    "feedbackWrong": {
+      "a": "Quem liberta e dá vida é o Espírito em Cristo Jesus.",
+      "b": "O contraste é de direção de vida, não de desprezo pelo corpo.",
+      "c": "O texto contrasta as duas inclinações e seus pensamentos."
+    },
+    "hint": "Ligue inclinação e pensamento.",
+    "learningObjective": "Escolher a interpretação sustentada em Romanos 8:5.",
+    "evidence": [
+      "Romanos 8:5"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-04",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do evangelho em Romanos 3 a 8?",
+    "prompt": "Qual sequência revela o fio do evangelho em Romanos 3 a 8?",
+    "cue": "Qual sequência revela o fio do evangelho em Romanos 3 a 8?",
+    "verseRef": "Romanos 3:23–24",
+    "passageText": "Porque todos pecaram e carecem da glória de Deus, sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todos pecaram diante de Deus Pai"
+      },
+      {
+        "id": "b",
+        "text": "Justificados pela fé em Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Vida nova guiada pelo Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todos pecaram e carecem da glória de Deus",
+    "feedbackCorrect": "Pecado de todos, justificação pela fé e vida no Espírito formam o fio.",
+    "feedbackWrong": {
+      "default": "Comece pelo pecado de todos; o Espírito fecha o fio."
+    },
+    "hint": "A vida no Espírito é o ponto de chegada.",
+    "learningObjective": "Ver o fio do evangelho de Romanos 3 a 8.",
+    "evidence": [
+      "Romanos 3:23–24"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-05",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 3:26, Deus é justo e o quê de quem tem fé em Jesus?",
+    "prompt": "Em Romanos 3:26, Deus é justo e o quê de quem tem fé em Jesus?",
+    "cue": "Em Romanos 3:26, Deus é justo e o quê de quem tem fé em Jesus?",
+    "verseRef": "Romanos 3:26",
+    "passageText": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e justificador de quem tem fé em Jesus.",
+    "template": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e ___ de quem tem fé em Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "acusador"
+      },
+      {
+        "id": "b",
+        "text": "justificador"
+      },
+      {
+        "id": "c",
+        "text": "condenador"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "justo e justificador de quem tem fé em Jesus",
+    "feedbackCorrect": "Deus é justo e, ao mesmo tempo, justifica quem crê em Jesus.",
+    "feedbackWrong": {
+      "a": "Acusar não é o papel de Deus afirmado neste versículo.",
+      "c": "Para quem tem fé em Jesus, o texto afirma o contrário."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Lembrar o termo central de Romanos 3:26.",
+    "evidence": [
+      "Romanos 3:26"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-06",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 5:1 a Gênesis 15:6?",
+    "prompt": "O que liga Romanos 5:1 a Gênesis 15:6?",
+    "cue": "O que liga Romanos 5:1 a Gênesis 15:6?",
+    "verseRef": "Romanos 5:1",
+    "passageText": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo.",
+    "passageA": {
+      "ref": "Romanos 5:1",
+      "text": "Justificados, pois, mediante a fé, temos paz com Deus por meio de nosso Senhor Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Gênesis 15:6",
+      "text": "E ele creu no Senhor, e isso lhe foi imputado como justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obedeceu e mereceu justiça"
+      },
+      {
+        "id": "b",
+        "text": "Creu e foi contado justiça"
+      },
+      {
+        "id": "c",
+        "text": "Cumpriu a lei toda sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justificados, pois, mediante a fé, temos paz com Deus",
+    "feedbackCorrect": "Abraão creu, e isso lhe foi contado como justiça; Paulo retoma o fio.",
+    "feedbackWrong": {
+      "a": "Gênesis liga a justiça ao crer, não ao merecer.",
+      "c": "Abraão viveu antes da lei dada no Sinai."
+    },
+    "hint": "Veja o que Abraão fez em Gênesis.",
+    "learningObjective": "Ligar a justificação pela fé ao exemplo de Abraão.",
+    "evidence": [
+      "Romanos 5:1",
+      "Gênesis 15:6"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-07",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 12:1, toque o trecho que nomeia a entrega do corpo como culto.",
+    "prompt": "Em Romanos 12:1, toque o trecho que nomeia a entrega do corpo como culto.",
+    "cue": "Em Romanos 12:1, toque o trecho que nomeia a entrega do corpo como culto.",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "culto racional"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício vivo"
+      },
+      {
+        "id": "c",
+        "text": "irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que é o seu culto racional",
+    "feedbackCorrect": "Paulo nomeia a entrega do corpo como culto racional a Deus.",
+    "feedbackWrong": {
+      "b": "Esse trecho descreve a oferta, não o nome do culto.",
+      "c": "Esse é o público chamado, não o nome da entrega."
+    },
+    "hint": "Procure o nome no fim.",
+    "learningObjective": "Sustentar o culto da vida inteira em Romanos 12:1.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "romanos-pro-rm-06-desafio-08",
+    "trail": "romanos",
+    "section": "rm-06-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o desfecho do evangelho em Romanos 11 a 12?",
+    "prompt": "Qual sequência revela o desfecho do evangelho em Romanos 11 a 12?",
+    "cue": "Qual sequência revela o desfecho do evangelho em Romanos 11 a 12?",
+    "verseRef": "Romanos 12:1",
+    "passageText": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pecado que alcança a todos nós"
+      },
+      {
+        "id": "b",
+        "text": "Graça recebida pela fé em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Culto da vida inteira a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Rogo a vocês, irmãos, pelas misericórdias de Deus",
+    "feedbackCorrect": "Pecado de todos, graça pela fé e vida como culto fecham Romanos.",
+    "feedbackWrong": {
+      "default": "Comece pelo pecado de todos; o culto da vida fecha."
+    },
+    "hint": "O culto da vida inteira é o desfecho.",
+    "learningObjective": "Ver o desfecho prático do evangelho em Romanos.",
+    "evidence": [
+      "Romanos 12:1"
+    ]
+  }
+]

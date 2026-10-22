@@ -1,0 +1,64 @@
+Escreva a cena "sm-17-amor-aos-inimigos" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "Relações do Reino",
+ "mission": {
+  "slug": "sm-17-amor-aos-inimigos",
+  "title": "Amor aos inimigos",
+  "type": "lesson",
+  "intro": "O clímax das antíteses: amar quem nos odeia e orar por quem nos persegue. Assim o discípulo reflete o Pai, que faz o sol nascer sobre maus e bons — e é chamado à maturidade do amor.",
+  "hookRef": "Mateus 5:43–48",
+  "hookNote": "“Odiarás o teu inimigo” não está na Torá como mandamento — era tradição popular que distorcia “amarás o próximo” (Lv 19:18). Jesus corrige…",
+  "centralInsight": "Amar só os amigos não distingue o discípulo",
+  "objective": "Há alguém que trato como inimigo e ainda não coloquei em oração?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:43–48",
+  "context": "“Odiarás o teu inimigo” não está na Torá como mandamento — era tradição popular que distorcia “amarás o próximo” (Lv 19:18). Jesus corrige e eleva: amar inimigos e orar pelos perseguidores. O modelo é o Pai, cuja providência alcança justos e injustos. “Perfeitos” (teleioi) aponta maturidade/completude do amor — não impecabilidade instantânea. Quem ama só quem ama de volta não se diferencia; o Reino exige amor que imita Deus.",
+  "keyword": "Amor",
+  "verseRefs": [
+   "Mateus 5:44"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:43–48",
+  "Mateus 5:44"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:43",
+   "text": "Vocês ouviram que foi dito: \"Amarás o teu próximo e odiarás o teu inimigo.\""
+  },
+  {
+   "ref": "Mateus 5:44",
+   "text": "Amem os seus inimigos, orem por aqueles que os perseguem, e pratiquem o bem para os que os odeiam."
+  },
+  {
+   "ref": "Mateus 5:45",
+   "text": "Para que vocês se tornem filhos do seu Pai que está nos céus; porque ele faz nascer o seu sol sobre maus e bons e faz chover sobre justos e injustos."
+  },
+  {
+   "ref": "Mateus 5:46",
+   "text": "Pois, se vocês amam somente aqueles que os amam, que recompensa vocês têm? Os publicanos também fazem o mesmo."
+  },
+  {
+   "ref": "Mateus 5:47",
+   "text": "E, se saudarem somente os seus irmãos, que fazem de diferente? Não fazem os publicanos também da mesma forma?"
+  },
+  {
+   "ref": "Mateus 5:48",
+   "text": "Sejam perfeitos, assim como é perfeito o seu Pai que está no céu"
+  }
+ ]
+}
+</cena>

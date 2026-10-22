@@ -1,0 +1,79 @@
+Escreva a cena "co-02-amor" da trilha "corintios" (1–2 Coríntios).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "corintios",
+  "title": "1–2 Coríntios",
+  "description": "Igreja, unidade, dons e o amor que edifica.",
+  "realm": "novo-testamento"
+ },
+ "block": "Coríntios",
+ "mission": {
+  "slug": "co-02-amor",
+  "title": "Corpo, dons e amor",
+  "type": "lesson",
+  "intro": "Os dons servem ao corpo, mas o caminho excelente é o amor.",
+  "hookRef": "Corpo, dons e amor",
+  "hookNote": "Os dons servem ao corpo, mas o caminho excelente é o amor.",
+  "centralInsight": "Paulo instrui a igreja em 1Coríntios 12-14 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. E…",
+  "objective": "1Coríntios 12-14"
+ },
+ "v2": {
+  "passageRef": "Corpo, dons e amor",
+  "context": "Os dons servem ao corpo, mas o caminho excelente é o amor.",
+  "keyword": "Corpo",
+  "verseRefs": [
+   "1 Coríntios 13:4–7"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "1 Coríntios 13:1–10"
+ ],
+ "verses": [
+  {
+   "ref": "1 Coríntios 13:1",
+   "text": "Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o bronze que ressoa ou como o sino que retine."
+  },
+  {
+   "ref": "1 Coríntios 13:2",
+   "text": "E ainda que eu tenha o dom de profetizar e conheça todos os mistérios e toda a ciência; e ainda que eu tenha tamanha fé, a ponto de transportar montes, se eu não tiver amor, nada serei."
+  },
+  {
+   "ref": "1 Coríntios 13:3",
+   "text": "E mesmo que eu distribua todos os meus bens para ajudar os pobres, e mesmo que eu entregue meu corpo para ser queimado, se eu não tiver amor, nada disso me será proveitoso."
+  },
+  {
+   "ref": "1 Coríntios 13:4",
+   "text": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;"
+  },
+  {
+   "ref": "1 Coríntios 13:5",
+   "text": "Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor."
+  },
+  {
+   "ref": "1 Coríntios 13:6",
+   "text": "Não se alegra com a injustiça, mas regozija-se com a verdade;"
+  },
+  {
+   "ref": "1 Coríntios 13:7",
+   "text": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta."
+  },
+  {
+   "ref": "1 Coríntios 13:8",
+   "text": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará."
+  },
+  {
+   "ref": "1 Coríntios 13:9",
+   "text": "Porque conhecemos apenas em parte e profetizamos também em parte;"
+  },
+  {
+   "ref": "1 Coríntios 13:10",
+   "text": "Quando, porém, vier o que é perfeito, então, o que é parcial será abolido."
+  }
+ ]
+}
+</cena>

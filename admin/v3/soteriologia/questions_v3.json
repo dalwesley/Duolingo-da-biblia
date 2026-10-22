@@ -1,0 +1,3300 @@
+[
+  {
+    "id": "soteriologia-sem-so-01-graca-01",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+    "prompt": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+    "cue": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pela graça vocês são salvos, por meio da fé",
+    "feedbackCorrect": "Paulo liga as duas coisas: Deus salva pela graça, e recebemos por meio da fé.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 2:8: a salvação vem pela graça, por meio da fé."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar que a salvação vem pela graça, por meio da fé.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-01-graca-02",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Efésios 2:8, toque por meio de que recebemos a salvação.",
+    "prompt": "Em Efésios 2:8, toque por meio de que recebemos a salvação.",
+    "cue": "Em Efésios 2:8, toque por meio de que recebemos a salvação.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por meio da fé",
+    "feedbackCorrect": "O texto diz que somos salvos pela graça, por meio da fé.",
+    "feedbackWrong": {
+      "b": "O dom descreve de onde vem; o meio de receber é outro termo.",
+      "c": "A graça é o favor que salva; o meio de receber vem logo depois."
+    },
+    "hint": "Procure como o presente é recebido.",
+    "learningObjective": "Identificar a fé como meio de receber a salvação.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-01-graca-03",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+    "prompt": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+    "cue": "Segundo Efésios 2:9, a salvação não é resultado de quê?",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do dom recebido"
+      },
+      {
+        "id": "b",
+        "text": "Da bondade divina"
+      },
+      {
+        "id": "c",
+        "text": "De obras humanas"
+      },
+      {
+        "id": "d",
+        "text": "Da graça de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "Paulo exclui as obras como causa da salvação, para ninguém se gloriar.",
+    "feedbackWrong": {
+      "a": "O dom é como a salvação chega, não o que é negado.",
+      "b": "A bondade de Deus move a salvação; o texto nega outro caminho.",
+      "d": "A graça é justamente a fonte da salvação, não o que é excluído."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar que obras não causam a salvação.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-01-graca-04",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Efésios 2:8 na ordem do texto.",
+    "prompt": "Monte Efésios 2:8 na ordem do texto.",
+    "cue": "Monte Efésios 2:8 na ordem do texto.",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque pela graça vocês são salvos"
+      },
+      {
+        "id": "b",
+        "text": "por meio da fé"
+      },
+      {
+        "id": "c",
+        "text": "e isto não vem de vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque pela graça vocês são salvos",
+    "feedbackCorrect": "A ordem é graça que salva, fé que recebe e origem fora de nós.",
+    "feedbackWrong": {
+      "default": "Comece pela graça; a origem do presente fecha a sequência."
+    },
+    "hint": "O versículo começa pela ação de Deus.",
+    "learningObjective": "Reconhecer a sequência de Efésios 2:8.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-01-graca-05",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Efésios 2:9, de que a salvação não é resultado?",
+    "prompt": "Em Efésios 2:9, de que a salvação não é resultado?",
+    "cue": "Em Efésios 2:9, de que a salvação não é resultado?",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "template": "não é resultado de ___, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esforços"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "presentes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "Não é resultado de obras: ninguém tem do que se gloriar.",
+    "feedbackWrong": {
+      "a": "A palavra de Paulo nomeia as ações humanas de modo direto.",
+      "c": "O texto nega um caminho de mérito, não os presentes de Deus."
+    },
+    "hint": "Pense no que geraria orgulho próprio.",
+    "learningObjective": "Lembrar que a salvação não resulta de obras.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-01-graca-06",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Efésios 2:8 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8 comunica que se liga a este contexto?",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A salvação é presente de Deus, não conquista do nosso esforço."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prêmio por boas obras"
+      },
+      {
+        "id": "b",
+        "text": "Presente recebido pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Salvação comprada pelo esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "É dom de Deus, recebido pela fé, e não conquista humana.",
+    "feedbackWrong": {
+      "a": "Efésios 2:9 nega que seja prêmio por obras.",
+      "c": "O texto diz que isto não vem de vocês."
+    },
+    "hint": "Veja como Paulo chama a salvação.",
+    "learningObjective": "Ligar Efésios 2:8 à salvação como presente.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-01-graca-01",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Efésios 2:10, as boas obras são o preço pago para sermos salvos.",
+    "prompt": "Em Efésios 2:10, as boas obras são o preço pago para sermos salvos.",
+    "cue": "Em Efésios 2:10, as boas obras são o preço pago para sermos salvos.",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "As boas obras são o propósito da nova criação, não o preço da salvação.",
+    "feedbackWrong": {
+      "true": "Releia a ordem: criados em Cristo para boas obras, não salvos por elas."
+    },
+    "hint": "Repare na ordem entre criar e agir.",
+    "learningObjective": "Compreender boas obras como propósito, não pagamento.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-01-graca-02",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Efésios 2:9, toque a palavra que mostra a finalidade de ninguém se gloriar.",
+    "prompt": "Em Efésios 2:9, toque a palavra que mostra a finalidade de ninguém se gloriar.",
+    "cue": "Em Efésios 2:9, toque a palavra que mostra a finalidade de ninguém se gloriar.",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para"
+      },
+      {
+        "id": "b",
+        "text": "ninguém"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que ninguém se glorie",
+    "feedbackCorrect": "A finalidade é clara: sem obras como causa, ninguém se gloria.",
+    "feedbackWrong": {
+      "b": "Essa palavra diz quem não se gloria, não a finalidade.",
+      "c": "Esse termo é negado como causa; a finalidade vem antes."
+    },
+    "hint": "Procure a conjunção de finalidade.",
+    "learningObjective": "Reconhecer o marcador de propósito em Efésios 2:9.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-01-graca-03",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Efésios 2:10 se relaciona com Efésios 2:8–9?",
+    "prompt": "Como Efésios 2:10 se relaciona com Efésios 2:8–9?",
+    "cue": "Como Efésios 2:10 se relaciona com Efésios 2:8–9?",
+    "verseRef": "Efésios 2:9–10",
+    "passageText": "não é resultado de obras, para que ninguém se glorie. Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boas ações compram o favor divino"
+      },
+      {
+        "id": "b",
+        "text": "Criados por Deus, vivemos o bem preparado"
+      },
+      {
+        "id": "c",
+        "text": "O esforço humano começa a salvação"
+      },
+      {
+        "id": "d",
+        "text": "Quem crê pode abandonar o bem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Salvos como presente, somos criados para viver as obras que Deus preparou.",
+    "feedbackWrong": {
+      "a": "Efésios 2:9 nega obras como resultado que salva.",
+      "c": "O texto diz que isto não vem de vocês (2:8).",
+      "d": "Fomos criados justamente para boas obras (2:10)."
+    },
+    "hint": "Veja o que Deus preparou depois de salvar.",
+    "learningObjective": "Relacionar salvação recebida e vida nova em boas obras.",
+    "evidence": [
+      "Efésios 2:9–10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-01-graca-04",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Efésios 2:8–9?",
+    "prompt": "Como avança o argumento em Efésios 2:8–9?",
+    "cue": "Como avança o argumento em Efésios 2:8–9?",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A salvação chega como presente gratuito"
+      },
+      {
+        "id": "b",
+        "text": "Ela não nasce do esforço humano"
+      },
+      {
+        "id": "c",
+        "text": "Ninguém tem base para se vangloriar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "Presente gratuito, sem origem em nós, e por isso sem vanglória.",
+    "feedbackWrong": {
+      "default": "Comece pelo presente; a falta de vanglória é a conclusão."
+    },
+    "hint": "A conclusão sobre orgulho vem por último.",
+    "learningObjective": "Compreender o encadeamento graça, dom e humildade.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-01-graca-05",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Efésios 2:10, o que Deus fez de antemão com as boas obras?",
+    "prompt": "Em Efésios 2:10, o que Deus fez de antemão com as boas obras?",
+    "cue": "Em Efésios 2:10, o que Deus fez de antemão com as boas obras?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "template": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão ___ para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "preparou"
+      },
+      {
+        "id": "b",
+        "text": "vendeu"
+      },
+      {
+        "id": "c",
+        "text": "exigiu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus de antemão preparou",
+    "feedbackCorrect": "Deus preparou de antemão as boas obras para andarmos nelas.",
+    "feedbackWrong": {
+      "b": "Nada é vendido; a salvação inteira é presente.",
+      "c": "O texto fala de preparo prévio, não de uma cobrança inicial."
+    },
+    "hint": "Olhe o que vem antes de andarmos nelas.",
+    "learningObjective": "Compreender que Deus preparou as boas obras.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-01-graca-06",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Efésios 2:8 a Tito 3:5?",
+    "prompt": "O que liga Efésios 2:8 a Tito 3:5?",
+    "cue": "O que liga Efésios 2:8 a Tito 3:5?",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+    },
+    "passageB": {
+      "ref": "Tito 3:5",
+      "text": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação dada sem merecimento humano"
+      },
+      {
+        "id": "b",
+        "text": "Obras humanas conquistam Deus"
+      },
+      {
+        "id": "c",
+        "text": "Graça dispensa a nova vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "Nos dois textos, Deus salva sem que obras humanas mereçam isso.",
+    "feedbackWrong": {
+      "b": "Os dois textos negam obras como base da salvação.",
+      "c": "Tito fala de renovação; a graça não dispensa nova vida."
+    },
+    "hint": "Compare a base da salvação nos dois textos.",
+    "learningObjective": "Relacionar graça sem merecimento em Paulo e Tito.",
+    "evidence": [
+      "Efésios 2:8",
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-01-graca-01",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Efésios 2:8–10, receber a salvação pela fé e viver boas obras pertencem ao mesmo plano de Deus.",
+    "prompt": "Em Efésios 2:8–10, receber a salvação pela fé e viver boas obras pertencem ao mesmo plano de Deus.",
+    "cue": "Em Efésios 2:8–10, receber a salvação pela fé e viver boas obras pertencem ao mesmo plano de Deus.",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "O presente recebido pela fé gera a vida criada para boas obras.",
+    "feedbackWrong": {
+      "false": "Os versículos se completam: dom recebido (2:8) e vida nova (2:10)."
+    },
+    "hint": "Leia os três versículos como um só argumento.",
+    "learningObjective": "Interpretar graça e boas obras no mesmo plano de Deus.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-01-graca-02",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Efésios 2:10, toque o destino da nova criação descrita por Paulo.",
+    "prompt": "Em Efésios 2:10, toque o destino da nova criação descrita por Paulo.",
+    "cue": "Em Efésios 2:10, toque o destino da nova criação descrita por Paulo.",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obra de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "boas obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Fomos criados em Cristo Jesus para boas obras preparadas por Deus.",
+    "feedbackWrong": {
+      "a": "Isso diz o que somos; o destino vem depois da palavra para.",
+      "b": "Isso diz em quem fomos criados, não para que fomos criados."
+    },
+    "hint": "Procure o que vem depois de criados.",
+    "learningObjective": "Sustentar que a nova vida se volta às boas obras.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-01-graca-03",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Efésios 2:8–9 sustenta sobre a salvação?",
+    "prompt": "Que leitura Efésios 2:8–9 sustenta sobre a salvação?",
+    "cue": "Que leitura Efésios 2:8–9 sustenta sobre a salvação?",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça torna inútil praticar o bem"
+      },
+      {
+        "id": "b",
+        "text": "A graça salva e forma vida nova"
+      },
+      {
+        "id": "c",
+        "text": "A fé é uma obra que merece salário"
+      },
+      {
+        "id": "d",
+        "text": "Boas obras pagam a entrada no céu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pela graça vocês são salvos, por meio da fé",
+    "feedbackCorrect": "A graça salva como presente e, em 2:10, forma uma vida de boas obras.",
+    "feedbackWrong": {
+      "a": "Em 2:10, fomos criados para boas obras.",
+      "c": "Paulo diz que isto não vem de vocês; é dom.",
+      "d": "O texto nega resultado de obras e vanglória."
+    },
+    "hint": "Junte o presente de 2:8 com o propósito de 2:10.",
+    "learningObjective": "Escolher a interpretação sustentada por Efésios 2:8–10.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-01-graca-04",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Efésios 2:8–10?",
+    "prompt": "Qual sequência revela o sentido de Efésios 2:8–10?",
+    "cue": "Qual sequência revela o sentido de Efésios 2:8–10?",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus salva por sua graça"
+      },
+      {
+        "id": "b",
+        "text": "A fé recebe o presente"
+      },
+      {
+        "id": "c",
+        "text": "A nova vida pratica o bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "Graça que salva, fé que recebe e nova vida que pratica o bem.",
+    "feedbackWrong": {
+      "default": "Comece pela ação de Deus; a prática do bem é o fruto final."
+    },
+    "hint": "Siga de Deus para a resposta e o fruto.",
+    "learningObjective": "Ver a ordem graça, fé e nova vida em Efésios 2.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-01-graca-05",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Efésios 2:8, qual palavra nomeia o favor que salva?",
+    "prompt": "Em Efésios 2:8, qual palavra nomeia o favor que salva?",
+    "cue": "Em Efésios 2:8, qual palavra nomeia o favor que salva?",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "template": "Porque pela ___ vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esforço"
+      },
+      {
+        "id": "b",
+        "text": "mérito"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "Pela graça somos salvos: favor de Deus, não mérito humano.",
+    "feedbackWrong": {
+      "a": "O texto diz que isto não vem de vocês.",
+      "b": "Mérito geraria vanglória, que 2:9 exclui."
+    },
+    "hint": "Olhe o começo da frase de Paulo.",
+    "learningObjective": "Lembrar o termo central da salvação em Efésios 2:8.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-01-graca-06",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Efésios 2:10 a Tiago 2:17?",
+    "prompt": "O que liga Efésios 2:10 a Tiago 2:17?",
+    "cue": "O que liga Efésios 2:10 a Tiago 2:17?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "passageA": {
+      "ref": "Efésios 2:10",
+      "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+    },
+    "passageB": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, está morta por si só."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça cancela as obras"
+      },
+      {
+        "id": "b",
+        "text": "Fé viva aparece em obras"
+      },
+      {
+        "id": "c",
+        "text": "Obras compram a salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para boas obras",
+    "feedbackCorrect": "Criados para boas obras, mostramos viva a fé que recebemos.",
+    "feedbackWrong": {
+      "a": "Efésios 2:10 afirma boas obras como propósito.",
+      "c": "Efésios 2:9 nega obras como causa da salvação."
+    },
+    "hint": "Veja o fruto esperado nos dois textos.",
+    "learningObjective": "Ligar nova criação e fé viva em obras.",
+    "evidence": [
+      "Efésios 2:10",
+      "Tiago 2:17"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-02-cruz-01",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 5:8, Cristo morreu por nós depois que deixamos de ser pecadores.",
+    "prompt": "Em Romanos 5:8, Cristo morreu por nós depois que deixamos de ser pecadores.",
+    "cue": "Em Romanos 5:8, Cristo morreu por nós depois que deixamos de ser pecadores.",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sendo nós ainda pecadores",
+    "feedbackCorrect": "Cristo morreu por nós sendo nós ainda pecadores, antes de qualquer mudança.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Romanos 5:8: sendo nós ainda pecadores."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar que Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-02-cruz-02",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 5:8, toque como Paulo nos descreve quando Cristo morreu por nós.",
+    "prompt": "Em Romanos 5:8, toque como Paulo nos descreve quando Cristo morreu por nós.",
+    "cue": "Em Romanos 5:8, toque como Paulo nos descreve quando Cristo morreu por nós.",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecadores"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sendo nós ainda pecadores",
+    "feedbackCorrect": "Éramos ainda pecadores quando Cristo morreu por nós.",
+    "feedbackWrong": {
+      "b": "Deus é quem demonstra amor; nós éramos outra coisa.",
+      "c": "Isso é o que Deus demonstra, não como estávamos."
+    },
+    "hint": "Procure nossa condição no fim do trecho.",
+    "learningObjective": "Identificar nossa condição quando Cristo morreu.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-02-cruz-03",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 5:9, por meio de que fomos justificados?",
+    "prompt": "Segundo Romanos 5:9, por meio de que fomos justificados?",
+    "cue": "Segundo Romanos 5:9, por meio de que fomos justificados?",
+    "verseRef": "Romanos 5:9",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pelo sangue de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Por boas obras nossas"
+      },
+      {
+        "id": "c",
+        "text": "Por esforço repetido"
+      },
+      {
+        "id": "d",
+        "text": "Por tempo de religião"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sendo justificados pelo seu sangue",
+    "feedbackCorrect": "Justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "feedbackWrong": {
+      "b": "O texto aponta o sangue dele, não obras nossas.",
+      "c": "Nenhum esforço nosso aparece como base aqui.",
+      "d": "Tempo de religião não é citado por Paulo."
+    },
+    "hint": "Leia a primeira metade do versículo.",
+    "learningObjective": "Observar que fomos justificados pelo sangue de Cristo.",
+    "evidence": [
+      "Romanos 5:9"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-02-cruz-04",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 5:8 na ordem do texto.",
+    "prompt": "Monte Romanos 5:8 na ordem do texto.",
+    "cue": "Monte Romanos 5:8 na ordem do texto.",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas Deus demonstra o seu próprio amor por nós"
+      },
+      {
+        "id": "b",
+        "text": "pelo fato de Cristo ter morrido por nós"
+      },
+      {
+        "id": "c",
+        "text": "sendo nós ainda pecadores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Deus demonstra amor, Cristo morre por nós, e éramos ainda pecadores.",
+    "feedbackWrong": {
+      "default": "Comece pela demonstração de Deus; nossa condição fecha."
+    },
+    "hint": "O versículo começa com a ação de Deus.",
+    "learningObjective": "Reconhecer a sequência de Romanos 5:8.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-02-cruz-05",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 5:9, pelo que fomos justificados, segundo Paulo?",
+    "prompt": "Em Romanos 5:9, pelo que fomos justificados, segundo Paulo?",
+    "cue": "Em Romanos 5:9, pelo que fomos justificados, segundo Paulo?",
+    "verseRef": "Romanos 5:9",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "template": "Muito mais agora, sendo justificados pelo seu ___, seremos por ele salvos da ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tempo"
+      },
+      {
+        "id": "b",
+        "text": "sangue"
+      },
+      {
+        "id": "c",
+        "text": "esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sendo justificados pelo seu sangue",
+    "feedbackCorrect": "Fomos justificados pelo seu sangue, o sangue de Cristo.",
+    "feedbackWrong": {
+      "a": "Não é questão de tempo, mas do sangue dele.",
+      "c": "Paulo não põe esforço nosso nessa frase."
+    },
+    "hint": "Olhe o meio do versículo.",
+    "learningObjective": "Lembrar que fomos justificados pelo sangue.",
+    "evidence": [
+      "Romanos 5:9"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-02-cruz-06",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 5:8–9",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores. Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "passageA": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus amou pecadores antes de qualquer mudança deles."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor depois da melhora"
+      },
+      {
+        "id": "b",
+        "text": "Amor apenas por justos"
+      },
+      {
+        "id": "c",
+        "text": "Amor antes da melhora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sendo nós ainda pecadores",
+    "feedbackCorrect": "O amor de Deus chega antes da melhora: ainda pecadores.",
+    "feedbackWrong": {
+      "a": "Cristo morreu sendo nós ainda pecadores.",
+      "b": "Os justos não são o alvo descrito neste versículo."
+    },
+    "hint": "Veja nossa condição quando Cristo morreu.",
+    "learningObjective": "Ligar Romanos 5:8 ao amor que precede a mudança.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-02-cruz-01",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 5:10, a reconciliação com Deus aconteceu enquanto ainda éramos inimigos.",
+    "prompt": "Em Romanos 5:10, a reconciliação com Deus aconteceu enquanto ainda éramos inimigos.",
+    "cue": "Em Romanos 5:10, a reconciliação com Deus aconteceu enquanto ainda éramos inimigos.",
+    "verseRef": "Romanos 5:10",
+    "passageText": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quando éramos inimigos, fomos reconciliados",
+    "feedbackCorrect": "Quando éramos inimigos, fomos reconciliados pela morte do Filho.",
+    "feedbackWrong": {
+      "false": "Releia Romanos 5:10: éramos inimigos quando fomos reconciliados."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Compreender que a reconciliação ocorreu em nossa inimizade.",
+    "evidence": [
+      "Romanos 5:10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-02-cruz-02",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 5:8, toque a palavra que mostra que Cristo morreu antes de mudarmos.",
+    "prompt": "Em Romanos 5:8, toque a palavra que mostra que Cristo morreu antes de mudarmos.",
+    "cue": "Em Romanos 5:8, toque a palavra que mostra que Cristo morreu antes de mudarmos.",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "próprio"
+      },
+      {
+        "id": "b",
+        "text": "ainda"
+      },
+      {
+        "id": "c",
+        "text": "morrido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sendo nós ainda pecadores",
+    "feedbackCorrect": "Ainda pecadores: a morte de Cristo vem antes da nossa mudança.",
+    "feedbackWrong": {
+      "a": "Isso qualifica o amor de Deus, não o tempo da ação.",
+      "c": "Isso diz o que Cristo fez, não quando estávamos assim."
+    },
+    "hint": "Procure uma palavra curta de tempo.",
+    "learningObjective": "Reconhecer o marcador de tempo em Romanos 5:8.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-02-cruz-03",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 5:8 se relaciona com Romanos 5:6?",
+    "prompt": "Como Romanos 5:8 se relaciona com Romanos 5:6?",
+    "cue": "Como Romanos 5:8 se relaciona com Romanos 5:6?",
+    "verseRef": "Romanos 5:6–7",
+    "passageText": "Porque Cristo, quando nós ainda éramos fracos, morreu a seu tempo pelos ímpios. Porque raramente alguém morrerá por um justo; embora talvez alguém se atreva a morrer por um bom.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz responde a um pedido humano"
+      },
+      {
+        "id": "b",
+        "text": "O amor de Deus age pelos fracos sem mérito"
+      },
+      {
+        "id": "c",
+        "text": "Deus espera o pecador se corrigir sozinho"
+      },
+      {
+        "id": "d",
+        "text": "Cristo morreu apenas por pessoas boas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Cristo, quando nós ainda éramos fracos, morreu",
+    "feedbackCorrect": "Fracos e sem mérito, fomos alcançados pelo amor demonstrado na cruz.",
+    "feedbackWrong": {
+      "a": "A iniciativa descrita é de Deus, que demonstra amor.",
+      "c": "Deus age quando ainda éramos fracos (5:6).",
+      "d": "Em 5:6, Cristo morreu pelos ímpios, não só por bons."
+    },
+    "hint": "Compare nossa condição nos dois versículos.",
+    "learningObjective": "Relacionar fraqueza humana e iniciativa de Deus.",
+    "evidence": [
+      "Romanos 5:6–7"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-02-cruz-04",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Romanos 5:9–10?",
+    "prompt": "Como avança o argumento em Romanos 5:9–10?",
+    "cue": "Como avança o argumento em Romanos 5:9–10?",
+    "verseRef": "Romanos 5:9–10",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira. Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Justificados pelo sangue de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Reconciliados quando éramos inimigos"
+      },
+      {
+        "id": "c",
+        "text": "Salvos pela vida do Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sendo justificados pelo seu sangue",
+    "feedbackCorrect": "Justificados e reconciliados, seremos salvos pela vida do Filho.",
+    "feedbackWrong": {
+      "default": "A vida do Filho é o ponto de chegada do argumento."
+    },
+    "hint": "O último passo fala da vida dele.",
+    "learningObjective": "Compreender o progresso de Romanos 5:9–10.",
+    "evidence": [
+      "Romanos 5:9–10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-02-cruz-05",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 5:10, como fomos trazidos de volta a Deus?",
+    "prompt": "Em Romanos 5:10, como fomos trazidos de volta a Deus?",
+    "cue": "Em Romanos 5:10, como fomos trazidos de volta a Deus?",
+    "verseRef": "Romanos 5:10",
+    "passageText": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "template": "Pois, se quando éramos inimigos, fomos ___ com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "options": [
+      {
+        "id": "a",
+        "text": "reconciliados"
+      },
+      {
+        "id": "b",
+        "text": "esquecidos"
+      },
+      {
+        "id": "c",
+        "text": "condenados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "fomos reconciliados com Deus",
+    "feedbackCorrect": "Fomos reconciliados com Deus pela morte de seu Filho.",
+    "feedbackWrong": {
+      "b": "Deus agiu por nós, não nos esqueceu.",
+      "c": "O texto afirma o contrário: houve reconciliação."
+    },
+    "hint": "Pense no oposto de viver como inimigos.",
+    "learningObjective": "Compreender a reconciliação pela morte do Filho.",
+    "evidence": [
+      "Romanos 5:10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-02-cruz-06",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 5:8 a João 3:16?",
+    "prompt": "O que liga Romanos 5:8 a João 3:16?",
+    "cue": "O que liga Romanos 5:8 a João 3:16?",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "passageA": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "passageB": {
+      "ref": "João 3:16",
+      "text": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ama e entrega Filho"
+      },
+      {
+        "id": "b",
+        "text": "Deus ama só os bons"
+      },
+      {
+        "id": "c",
+        "text": "Amor exige merecimento prévio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Nos dois textos, Deus ama e entrega o Filho por pecadores.",
+    "feedbackWrong": {
+      "b": "João fala do mundo amado por Deus, não só dos bons.",
+      "c": "Cristo morreu sendo nós ainda pecadores."
+    },
+    "hint": "Compare quem Deus entrega nos dois textos.",
+    "learningObjective": "Relacionar o amor de Deus em Romanos e João.",
+    "evidence": [
+      "Romanos 5:8",
+      "João 3:16"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-02-cruz-01",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Romanos 5:8–9, Deus passou a nos amar somente depois da morte de Cristo.",
+    "prompt": "Em Romanos 5:8–9, Deus passou a nos amar somente depois da morte de Cristo.",
+    "cue": "Em Romanos 5:8–9, Deus passou a nos amar somente depois da morte de Cristo.",
+    "verseRef": "Romanos 5:8–9",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores. Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "A morte de Cristo demonstra o amor que Deus tem, não o cria depois.",
+    "feedbackWrong": {
+      "true": "A cruz demonstra o amor de Deus; não o faz começar."
+    },
+    "hint": "Veja o que a cruz faz com o amor de Deus.",
+    "learningObjective": "Interpretar a cruz como demonstração do amor de Deus.",
+    "evidence": [
+      "Romanos 5:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-02-cruz-02",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 5:9, toque a palavra que descreve o que já aconteceu conosco.",
+    "prompt": "Em Romanos 5:9, toque a palavra que descreve o que já aconteceu conosco.",
+    "cue": "Em Romanos 5:9, toque a palavra que descreve o que já aconteceu conosco.",
+    "verseRef": "Romanos 5:9",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "justificados"
+      },
+      {
+        "id": "c",
+        "text": "ira"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sendo justificados pelo seu sangue",
+    "feedbackCorrect": "Já justificados pelo sangue, seremos salvos da ira por ele.",
+    "feedbackWrong": {
+      "a": "Isso é o meio; a palavra pedida diz nossa nova condição.",
+      "c": "Isso é aquilo de que seremos salvos, não nossa condição."
+    },
+    "hint": "Procure nossa condição logo no começo.",
+    "learningObjective": "Sustentar que a justificação já ocorreu pelo sangue.",
+    "evidence": [
+      "Romanos 5:9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-02-cruz-03",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 5:8–10 sustenta sobre o amor de Deus?",
+    "prompt": "Que leitura Romanos 5:8–10 sustenta sobre o amor de Deus?",
+    "cue": "Que leitura Romanos 5:8–10 sustenta sobre o amor de Deus?",
+    "verseRef": "Romanos 5:8–9",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores. Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ama apenas quem já se corrigiu"
+      },
+      {
+        "id": "b",
+        "text": "Deus toma iniciativa e reconcilia pecadores"
+      },
+      {
+        "id": "c",
+        "text": "Cristo convence um Deus relutante"
+      },
+      {
+        "id": "d",
+        "text": "Reconciliar depende só do nosso esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Deus demonstra amor, e pecadores inimigos são reconciliados pelo Filho.",
+    "feedbackWrong": {
+      "a": "Cristo morreu sendo nós ainda pecadores.",
+      "c": "É o próprio amor de Deus que a cruz demonstra.",
+      "d": "Fomos reconciliados pela morte do Filho, não por esforço."
+    },
+    "hint": "Veja quem age primeiro nos versículos.",
+    "learningObjective": "Escolher a interpretação sustentada por Romanos 5:8–10.",
+    "evidence": [
+      "Romanos 5:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-02-cruz-04",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 5:8–10?",
+    "prompt": "Qual sequência revela o sentido de Romanos 5:8–10?",
+    "cue": "Qual sequência revela o sentido de Romanos 5:8–10?",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus demonstra amor na cruz"
+      },
+      {
+        "id": "b",
+        "text": "Pecadores são reconciliados com Deus"
+      },
+      {
+        "id": "c",
+        "text": "Salvos pela vida de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cristo ter morrido por nós",
+    "feedbackCorrect": "Amor demonstrado, reconciliação realizada e vida que salva.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor demonstrado; a vida dele fecha."
+    },
+    "hint": "Siga do amor à reconciliação e à vida.",
+    "learningObjective": "Ver o encadeamento amor, reconciliação e vida.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-02-cruz-05",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 5:10, por meio de que seremos salvos no fim do versículo?",
+    "prompt": "Em Romanos 5:10, por meio de que seremos salvos no fim do versículo?",
+    "cue": "Em Romanos 5:10, por meio de que seremos salvos no fim do versículo?",
+    "verseRef": "Romanos 5:10",
+    "passageText": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "template": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua ___;",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "ira"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "seremos salvos por sua vida",
+    "feedbackCorrect": "Reconciliados pela morte, seremos salvos por sua vida.",
+    "feedbackWrong": {
+      "a": "A morte reconcilia; o fim do versículo aponta outro termo.",
+      "b": "A ira é aquilo de que somos salvos em 5:9."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Lembrar que seremos salvos pela vida do Filho.",
+    "evidence": [
+      "Romanos 5:10"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-02-cruz-06",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 5:10 a 1 João 4:10?",
+    "prompt": "O que liga Romanos 5:10 a 1 João 4:10?",
+    "cue": "O que liga Romanos 5:10 a 1 João 4:10?",
+    "verseRef": "Romanos 5:10",
+    "passageText": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "passageA": {
+      "ref": "Romanos 5:10",
+      "text": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;"
+    },
+    "passageB": {
+      "ref": "1 João 4:10",
+      "text": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus espera nossa iniciativa"
+      },
+      {
+        "id": "b",
+        "text": "Amor de Deus age primeiro"
+      },
+      {
+        "id": "c",
+        "text": "Amor responde ao mérito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fomos reconciliados com Deus pela morte de seu Filho",
+    "feedbackCorrect": "Nos dois textos, Deus ama primeiro e envia o Filho por nós.",
+    "feedbackWrong": {
+      "a": "A iniciativa nos dois textos é de Deus.",
+      "c": "Éramos inimigos quando fomos reconciliados."
+    },
+    "hint": "Veja quem ama primeiro nos dois textos.",
+    "learningObjective": "Ligar reconciliação e iniciativa do amor de Deus.",
+    "evidence": [
+      "Romanos 5:10",
+      "1 João 4:10"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-03-nascimento-01",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 3:3, quem não nascer de novo não pode ver o reino de Deus.",
+    "prompt": "Em João 3:3, quem não nascer de novo não pode ver o reino de Deus.",
+    "cue": "Em João 3:3, quem não nascer de novo não pode ver o reino de Deus.",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "se alguém não nascer de novo, não pode ver o reino de Deus",
+    "feedbackCorrect": "Jesus é direto: sem novo nascimento, ninguém vê o reino de Deus.",
+    "feedbackWrong": {
+      "false": "Releia João 3:3: é exatamente o que Jesus diz a Nicodemos."
+    },
+    "hint": "Olhe a resposta de Jesus.",
+    "learningObjective": "Observar a exigência do novo nascimento.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-03-nascimento-02",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 3:3, toque a condição que Jesus apresenta a Nicodemos.",
+    "prompt": "Em João 3:3, toque a condição que Jesus apresenta a Nicodemos.",
+    "cue": "Em João 3:3, toque a condição que Jesus apresenta a Nicodemos.",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino de Deus"
+      },
+      {
+        "id": "b",
+        "text": "nascer de novo"
+      },
+      {
+        "id": "c",
+        "text": "Em verdade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "A condição apresentada por Jesus é nascer de novo.",
+    "feedbackWrong": {
+      "a": "Isso é o que se vê ao cumprir a condição.",
+      "c": "Isso abre a fala de Jesus, não é a condição."
+    },
+    "hint": "Procure o que alguém precisa que aconteça.",
+    "learningObjective": "Identificar a condição apresentada por Jesus.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-03-nascimento-03",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 3:5, do que é preciso nascer para entrar no reino?",
+    "prompt": "Segundo João 3:5, do que é preciso nascer para entrar no reino?",
+    "cue": "Segundo João 3:5, do que é preciso nascer para entrar no reino?",
+    "verseRef": "João 3:5",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De uma família religiosa"
+      },
+      {
+        "id": "b",
+        "text": "Da carne e do esforço"
+      },
+      {
+        "id": "c",
+        "text": "Da água e do Espírito"
+      },
+      {
+        "id": "d",
+        "text": "De novo no ventre materno"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem não nascer da água e do Espírito",
+    "feedbackCorrect": "Jesus fala de nascer da água e do Espírito para entrar no reino.",
+    "feedbackWrong": {
+      "a": "Família religiosa não é citada por Jesus aqui.",
+      "b": "A carne só gera carne, como diz 3:6.",
+      "d": "Essa é a leitura literal de Nicodemos em 3:4."
+    },
+    "hint": "Leia a resposta de Jesus em 3:5.",
+    "learningObjective": "Observar a origem do novo nascimento em João 3:5.",
+    "evidence": [
+      "João 3:5"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-03-nascimento-04",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 3:5 na ordem do texto.",
+    "prompt": "Monte João 3:5 na ordem do texto.",
+    "cue": "Monte João 3:5 na ordem do texto.",
+    "verseRef": "João 3:5",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "quem não nascer da água e do Espírito"
+      },
+      {
+        "id": "b",
+        "text": "não pode entrar"
+      },
+      {
+        "id": "c",
+        "text": "no reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "quem não nascer da água e do Espírito",
+    "feedbackCorrect": "Nascer da água e do Espírito é a condição para entrar no reino.",
+    "feedbackWrong": {
+      "default": "Comece pela condição; o reino fecha o versículo."
+    },
+    "hint": "O versículo começa pela condição.",
+    "learningObjective": "Reconhecer a sequência de João 3:5.",
+    "evidence": [
+      "João 3:5"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-03-nascimento-05",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 3:5, além da água, de quem é preciso nascer?",
+    "prompt": "Em João 3:5, além da água, de quem é preciso nascer?",
+    "cue": "Em João 3:5, além da água, de quem é preciso nascer?",
+    "verseRef": "João 3:5",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus.",
+    "template": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do ___ não pode entrar no reino de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ventre"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nascer da água e do Espírito",
+    "feedbackCorrect": "É preciso nascer da água e do Espírito, diz Jesus.",
+    "feedbackWrong": {
+      "a": "Voltar ao ventre foi a ideia literal de Nicodemos.",
+      "c": "Esforço humano não aparece nessa resposta de Jesus."
+    },
+    "hint": "Olhe o fim da condição em 3:5.",
+    "learningObjective": "Lembrar que o novo nascimento é do Espírito.",
+    "evidence": [
+      "João 3:5"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-03-nascimento-06",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que João 3:3 comunica que se liga a este contexto?",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "passageA": {
+      "ref": "João 3:3",
+      "text": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\""
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Espírito dá nova vida a quem crê em Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Receber vida nova"
+      },
+      {
+        "id": "b",
+        "text": "Melhorar a vida antiga"
+      },
+      {
+        "id": "c",
+        "text": "Voltar ao ventre materno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Nascer de novo é receber vida nova, não só melhorar a antiga.",
+    "feedbackWrong": {
+      "b": "Jesus fala de nascer, não apenas de melhorar.",
+      "c": "Essa foi a leitura literal de Nicodemos."
+    },
+    "hint": "Pense no que nasce de novo.",
+    "learningObjective": "Ligar João 3:3 à vida nova dada por Deus.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-03-nascimento-01",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 3:4, Nicodemos entendeu de imediato que Jesus falava de uma obra do Espírito.",
+    "prompt": "Em João 3:4, Nicodemos entendeu de imediato que Jesus falava de uma obra do Espírito.",
+    "cue": "Em João 3:4, Nicodemos entendeu de imediato que Jesus falava de uma obra do Espírito.",
+    "verseRef": "João 3:4",
+    "passageText": "Nicodemos perguntou: Como pode um homem nascer, sendo velho? Poderá ele, porventura, entrar novamente no ventre de sua mãe e nascer uma segunda vez?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "entrar novamente no ventre de sua mãe",
+    "feedbackCorrect": "Nicodemos pensou ao pé da letra, em voltar ao ventre da mãe.",
+    "feedbackWrong": {
+      "true": "Releia a pergunta dele sobre entrar novamente no ventre."
+    },
+    "hint": "Olhe a pergunta de Nicodemos.",
+    "learningObjective": "Compreender o mal-entendido literal de Nicodemos.",
+    "evidence": [
+      "João 3:4"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-03-nascimento-02",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 3:4, toque a palavra que mostra Nicodemos pensando numa repetição física.",
+    "prompt": "Em João 3:4, toque a palavra que mostra Nicodemos pensando numa repetição física.",
+    "cue": "Em João 3:4, toque a palavra que mostra Nicodemos pensando numa repetição física.",
+    "verseRef": "João 3:4",
+    "passageText": "Nicodemos perguntou: Como pode um homem nascer, sendo velho? Poderá ele, porventura, entrar novamente no ventre de sua mãe e nascer uma segunda vez?",
+    "options": [
+      {
+        "id": "a",
+        "text": "novamente"
+      },
+      {
+        "id": "b",
+        "text": "velho"
+      },
+      {
+        "id": "c",
+        "text": "mãe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "entrar novamente no ventre de sua mãe",
+    "feedbackCorrect": "Novamente revela a leitura física: nascer uma segunda vez igual.",
+    "feedbackWrong": {
+      "b": "Isso descreve Nicodemos, não a repetição pensada.",
+      "c": "Isso é o lugar imaginado, não a ideia de repetir."
+    },
+    "hint": "Procure o advérbio da pergunta dele.",
+    "learningObjective": "Reconhecer o sinal da leitura literal de Nicodemos.",
+    "evidence": [
+      "João 3:4"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-03-nascimento-03",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 3:4 se relaciona com João 3:3?",
+    "prompt": "Como João 3:4 se relaciona com João 3:3?",
+    "cue": "Como João 3:4 se relaciona com João 3:3?",
+    "verseRef": "João 3:3–4",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\" Nicodemos perguntou: Como pode um homem nascer, sendo velho? Poderá ele, porventura, entrar novamente no ventre de sua mãe e nascer uma segunda vez?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nicodemos pede outro sinal a Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus muda de assunto para os sinais"
+      },
+      {
+        "id": "c",
+        "text": "Jesus diz que idade impede nascer"
+      },
+      {
+        "id": "d",
+        "text": "Nicodemos ouve ao pé da letra Jesus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "entrar novamente no ventre de sua mãe",
+    "feedbackCorrect": "Nicodemos ouve ao pé da letra o que Jesus diz em sentido novo.",
+    "feedbackWrong": {
+      "a": "Ele pergunta como pode nascer, não pede sinal.",
+      "b": "A conversa continua no novo nascimento.",
+      "c": "Jesus não fala de idade como impedimento."
+    },
+    "hint": "Veja como ele imagina nascer outra vez.",
+    "learningObjective": "Relacionar a afirmação de Jesus e a reação de Nicodemos.",
+    "evidence": [
+      "João 3:3–4"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-03-nascimento-04",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em João 3:5–6?",
+    "prompt": "Como avança o ensino em João 3:5–6?",
+    "cue": "Como avança o ensino em João 3:5–6?",
+    "verseRef": "João 3:5–6",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus. O que é nascido da carne é carne; e o que é nascido do Espírito é espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova vida vem pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Carne gera apenas carne"
+      },
+      {
+        "id": "c",
+        "text": "Espírito gera vida espiritual"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "quem não nascer da água e do Espírito",
+    "feedbackCorrect": "Jesus apresenta a nova vida e contrasta carne e Espírito.",
+    "feedbackWrong": {
+      "default": "Comece pela condição de entrar; o contraste fecha."
+    },
+    "hint": "A condição de entrar vem primeiro.",
+    "learningObjective": "Compreender o contraste entre carne e Espírito.",
+    "evidence": [
+      "João 3:5–6"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-03-nascimento-05",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 3:6, o que o nascido da carne é, segundo Jesus?",
+    "prompt": "Em João 3:6, o que o nascido da carne é, segundo Jesus?",
+    "cue": "Em João 3:6, o que o nascido da carne é, segundo Jesus?",
+    "verseRef": "João 3:6",
+    "passageText": "O que é nascido da carne é carne; e o que é nascido do Espírito é espírito.",
+    "template": "O que é nascido da ___ é carne; e o que é nascido do Espírito é espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "água"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O que é nascido da carne é carne",
+    "feedbackCorrect": "O nascido da carne é carne: ela não gera vida do Espírito.",
+    "feedbackWrong": {
+      "a": "A lei não é citada neste versículo.",
+      "c": "Água aparece em 3:5, não neste contraste final."
+    },
+    "hint": "Olhe a primeira metade do contraste.",
+    "learningObjective": "Compreender o limite da carne em João 3:6.",
+    "evidence": [
+      "João 3:6"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-03-nascimento-06",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 3:5 a Ezequiel 36:26–27?",
+    "prompt": "O que liga João 3:5 a Ezequiel 36:26–27?",
+    "cue": "O que liga João 3:5 a Ezequiel 36:26–27?",
+    "verseRef": "João 3:5",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus.",
+    "passageA": {
+      "ref": "João 3:5",
+      "text": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus."
+    },
+    "passageB": {
+      "ref": "Ezequiel 36:26–27",
+      "text": "E lhes darei um coração novo e colocarei dentro deles um espírito novo; tirarei deles o coração de pedra e lhes darei um coração de carne. E colocarei dentro de vós o meu Espírito e farei com que andeis nos meus estatutos, guardeis os meus juízos e os observeis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração novo pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Carne gera vida espiritual"
+      },
+      {
+        "id": "c",
+        "text": "Esforço humano se basta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nascer da água e do Espírito",
+    "feedbackCorrect": "Ezequiel promete coração novo e o Espírito dentro do povo.",
+    "feedbackWrong": {
+      "b": "João 3:6 nega que a carne gere o espiritual.",
+      "c": "Nos dois textos, a mudança vem de Deus."
+    },
+    "hint": "Compare quem Deus põe dentro do seu povo.",
+    "learningObjective": "Relacionar novo nascimento e promessa do Espírito.",
+    "evidence": [
+      "João 3:5",
+      "Ezequiel 36:26–27"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-03-nascimento-01",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 3:5–6, Jesus aponta uma origem nova dada pelo Espírito, e não apenas esforço humano.",
+    "prompt": "Em João 3:5–6, Jesus aponta uma origem nova dada pelo Espírito, e não apenas esforço humano.",
+    "cue": "Em João 3:5–6, Jesus aponta uma origem nova dada pelo Espírito, e não apenas esforço humano.",
+    "verseRef": "João 3:5–6",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus. O que é nascido da carne é carne; e o que é nascido do Espírito é espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o que é nascido do Espírito é espírito",
+    "feedbackCorrect": "A vida nova nasce do Espírito; a carne só produz carne.",
+    "feedbackWrong": {
+      "false": "Releia 3:6: o nascido do Espírito é espírito."
+    },
+    "hint": "Compare as duas origens em 3:6.",
+    "learningObjective": "Interpretar o novo nascimento como obra do Espírito.",
+    "evidence": [
+      "João 3:5–6"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-03-nascimento-02",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 3:6, toque de onde nasce a nova vida descrita por Jesus.",
+    "prompt": "Em João 3:6, toque de onde nasce a nova vida descrita por Jesus.",
+    "cue": "Em João 3:6, toque de onde nasce a nova vida descrita por Jesus.",
+    "verseRef": "João 3:6",
+    "passageText": "O que é nascido da carne é carne; e o que é nascido do Espírito é espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "da carne"
+      },
+      {
+        "id": "b",
+        "text": "é espírito"
+      },
+      {
+        "id": "c",
+        "text": "do Espírito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o que é nascido do Espírito é espírito",
+    "feedbackCorrect": "A nova vida é nascida do Espírito, segundo Jesus.",
+    "feedbackWrong": {
+      "a": "Da carne nasce carne, não a vida nova.",
+      "b": "Isso descreve o resultado, não a origem pedida."
+    },
+    "hint": "Procure a origem no fim do versículo.",
+    "learningObjective": "Sustentar que a nova vida vem do Espírito.",
+    "evidence": [
+      "João 3:6"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-03-nascimento-03",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 3:3–6 sustenta sobre nascer de novo?",
+    "prompt": "Que leitura João 3:3–6 sustenta sobre nascer de novo?",
+    "cue": "Que leitura João 3:3–6 sustenta sobre nascer de novo?",
+    "verseRef": "João 3:3–4",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\" Nicodemos perguntou: Como pode um homem nascer, sendo velho? Poderá ele, porventura, entrar novamente no ventre de sua mãe e nascer uma segunda vez?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Receber vida nova dada pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Melhorar o comportamento por esforço"
+      },
+      {
+        "id": "c",
+        "text": "Nascer numa família religiosa basta"
+      },
+      {
+        "id": "d",
+        "text": "Voltar ao ventre e nascer outra vez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Jesus explica em 3:5–6: vida nova que nasce do Espírito.",
+    "feedbackWrong": {
+      "b": "Melhorar por esforço continua sendo carne (3:6).",
+      "c": "Nicodemos era religioso e ouviu que precisava nascer.",
+      "d": "Essa é a leitura literal corrigida por Jesus."
+    },
+    "hint": "Siga a explicação de Jesus até 3:6.",
+    "learningObjective": "Escolher a interpretação sustentada por João 3:3–6.",
+    "evidence": [
+      "João 3:3–4"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-03-nascimento-04",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do novo nascimento na Bíblia?",
+    "prompt": "Qual sequência revela o fio do novo nascimento na Bíblia?",
+    "cue": "Qual sequência revela o fio do novo nascimento na Bíblia?",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete coração e espírito novos"
+      },
+      {
+        "id": "b",
+        "text": "Jesus anuncia o novo nascimento"
+      },
+      {
+        "id": "c",
+        "text": "Crentes nascem pela palavra viva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Promessa antiga, anúncio de Jesus e vida nova dos que creem.",
+    "feedbackWrong": {
+      "default": "Siga a ordem: profecia, Evangelho e carta de Pedro."
+    },
+    "hint": "Siga a ordem dos livros citados.",
+    "learningObjective": "Ver o novo nascimento como fio bíblico.",
+    "evidence": [
+      "João 3:3",
+      "Ezequiel 36:26–27",
+      "1 Pedro 1:23"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-03-nascimento-05",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 3:3, o que não se pode ver sem o novo nascimento?",
+    "prompt": "Em João 3:3, o que não se pode ver sem o novo nascimento?",
+    "cue": "Em João 3:3, o que não se pode ver sem o novo nascimento?",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "template": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o ___ de Deus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "templo"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não pode ver o reino de Deus",
+    "feedbackCorrect": "Sem nascer de novo, não se pode ver o reino de Deus.",
+    "feedbackWrong": {
+      "a": "Jesus não fala do templo nesta resposta.",
+      "b": "O alvo da frase é maior que um grupo humano."
+    },
+    "hint": "Olhe o fim da fala de Jesus.",
+    "learningObjective": "Lembrar o reino como alvo do novo nascimento.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-03-nascimento-06",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 3:3 a 1 Pedro 1:23?",
+    "prompt": "O que liga João 3:3 a 1 Pedro 1:23?",
+    "cue": "O que liga João 3:3 a 1 Pedro 1:23?",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "passageA": {
+      "ref": "João 3:3",
+      "text": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\""
+    },
+    "passageB": {
+      "ref": "1 Pedro 1:23",
+      "text": "Sendo assim regenerados, não por uma semente corruptível, mas por uma semente incorruptível, através da palavra de Deus, que vive e é permanente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida nova por esforço"
+      },
+      {
+        "id": "b",
+        "text": "Nova vida pela palavra"
+      },
+      {
+        "id": "c",
+        "text": "Nascer de família religiosa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Pedro fala de nascer de novo pela palavra viva de Deus.",
+    "feedbackWrong": {
+      "a": "Pedro liga o novo nascimento à palavra, não ao esforço.",
+      "c": "A origem citada é a palavra de Deus, não a família."
+    },
+    "hint": "Veja de que Pedro diz que nascemos.",
+    "learningObjective": "Ligar novo nascimento em Jesus e em Pedro.",
+    "evidence": [
+      "João 3:3",
+      "1 Pedro 1:23"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-01",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+    "prompt": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+    "cue": "Em Efésios 2:8, somos salvos pela graça por meio da fé.",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pela graça vocês são salvos, por meio da fé",
+    "feedbackCorrect": "Paulo resume assim: graça de Deus recebida por meio da fé.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 2:8: é exatamente essa a afirmação."
+    },
+    "hint": "Olhe a primeira cena revisada.",
+    "learningObjective": "Relembrar a salvação pela graça, por meio da fé.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-02",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Efésios 2:9, toque o que a salvação não é resultado, segundo Paulo.",
+    "prompt": "Em Efésios 2:9, toque o que a salvação não é resultado, segundo Paulo.",
+    "cue": "Em Efésios 2:9, toque o que a salvação não é resultado, segundo Paulo.",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glorie"
+      },
+      {
+        "id": "b",
+        "text": "ninguém"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "Não é resultado de obras, para que ninguém se glorie.",
+    "feedbackWrong": {
+      "a": "Isso é o orgulho evitado, não a causa negada.",
+      "b": "Isso diz quem não se gloria, não a causa negada."
+    },
+    "hint": "Procure a causa que Paulo nega.",
+    "learningObjective": "Relembrar que obras não causam a salvação.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-03",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 5:8, quando Cristo morreu por nós?",
+    "prompt": "Segundo Romanos 5:8, quando Cristo morreu por nós?",
+    "cue": "Segundo Romanos 5:8, quando Cristo morreu por nós?",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Após anos de boas obras"
+      },
+      {
+        "id": "b",
+        "text": "Depois de nos tornarmos justos"
+      },
+      {
+        "id": "c",
+        "text": "Quando pedimos com perfeição"
+      },
+      {
+        "id": "d",
+        "text": "Sendo nós ainda pecadores"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "sendo nós ainda pecadores",
+    "feedbackCorrect": "Cristo morreu por nós sendo nós ainda pecadores.",
+    "feedbackWrong": {
+      "a": "Obras não aparecem como condição neste texto.",
+      "b": "O texto diz ainda pecadores, não já justos.",
+      "c": "Nenhum pedido perfeito é citado aqui."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Relembrar o momento da morte de Cristo por nós.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-04",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 3:3 na ordem do texto.",
+    "prompt": "Monte João 3:3 na ordem do texto.",
+    "cue": "Monte João 3:3 na ordem do texto.",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "se alguém não nascer de novo"
+      },
+      {
+        "id": "b",
+        "text": "não pode ver"
+      },
+      {
+        "id": "c",
+        "text": "o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Sem nascer de novo, não se pode ver o reino de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela condição dita por Jesus."
+    },
+    "hint": "O versículo começa pela condição.",
+    "learningObjective": "Reconhecer a sequência de João 3:3.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-05",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 5:8, o que Deus demonstra por nós na cruz?",
+    "prompt": "Em Romanos 5:8, o que Deus demonstra por nós na cruz?",
+    "cue": "Em Romanos 5:8, o que Deus demonstra por nós na cruz?",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "template": "Mas Deus demonstra o seu próprio ___ por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Deus demonstra o seu próprio amor por nós na cruz.",
+    "feedbackWrong": {
+      "b": "O texto destaca outro atributo de Deus aqui.",
+      "c": "Juízo não é a palavra que Paulo usa nesta frase."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Lembrar que a cruz demonstra o amor de Deus.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-06",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Efésios 2:8 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8 comunica que se liga a este contexto?",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A salvação é presente de Deus, não conquista do nosso esforço."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação comprada pelo esforço"
+      },
+      {
+        "id": "b",
+        "text": "Presente recebido pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Prêmio por boas obras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é um dom de Deus",
+    "feedbackCorrect": "É dom de Deus, recebido pela fé, não conquista nossa.",
+    "feedbackWrong": {
+      "a": "O texto diz que isto não vem de vocês.",
+      "c": "Efésios 2:9 nega prêmio por obras."
+    },
+    "hint": "Veja como Paulo chama a salvação.",
+    "learningObjective": "Ligar a revisão à salvação como presente.",
+    "evidence": [
+      "Efésios 2:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-07",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 5:8, toque como estávamos quando Cristo morreu por nós.",
+    "prompt": "Em Romanos 5:8, toque como estávamos quando Cristo morreu por nós.",
+    "cue": "Em Romanos 5:8, toque como estávamos quando Cristo morreu por nós.",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "pecadores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sendo nós ainda pecadores",
+    "feedbackCorrect": "Estávamos ainda como pecadores quando Cristo morreu.",
+    "feedbackWrong": {
+      "a": "Deus é quem age; nossa condição vem no fim.",
+      "b": "Isso Deus demonstra; não descreve nossa condição."
+    },
+    "hint": "Procure nossa condição no fim.",
+    "learningObjective": "Relembrar nossa condição na morte de Cristo.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-sem-so-boss-08",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 5:8 na ordem do texto.",
+    "prompt": "Monte Romanos 5:8 na ordem do texto.",
+    "cue": "Monte Romanos 5:8 na ordem do texto.",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas Deus demonstra o seu próprio amor por nós"
+      },
+      {
+        "id": "b",
+        "text": "pelo fato de Cristo ter morrido por nós"
+      },
+      {
+        "id": "c",
+        "text": "sendo nós ainda pecadores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Amor demonstrado, Cristo morto por nós, ainda pecadores.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor de Deus; pecadores fecha."
+    },
+    "hint": "O versículo começa com Deus.",
+    "learningObjective": "Reconhecer a sequência de Romanos 5:8.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-01",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Efésios 2:9, as boas obras são a causa que faz Deus nos salvar.",
+    "prompt": "Em Efésios 2:9, as boas obras são a causa que faz Deus nos salvar.",
+    "cue": "Em Efésios 2:9, as boas obras são a causa que faz Deus nos salvar.",
+    "verseRef": "Efésios 2:9",
+    "passageText": "não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não é resultado de obras",
+    "feedbackCorrect": "Paulo nega obras como causa, para ninguém se gloriar.",
+    "feedbackWrong": {
+      "true": "Releia Efésios 2:9: não é resultado de obras."
+    },
+    "hint": "Olhe a negação do versículo.",
+    "learningObjective": "Compreender obras fora da causa da salvação.",
+    "evidence": [
+      "Efésios 2:9"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-02",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 3:3, toque a palavra que marca a condição dita por Jesus.",
+    "prompt": "Em João 3:3, toque a palavra que marca a condição dita por Jesus.",
+    "cue": "Em João 3:3, toque a palavra que marca a condição dita por Jesus.",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "alguém"
+      },
+      {
+        "id": "b",
+        "text": "reino"
+      },
+      {
+        "id": "c",
+        "text": "se"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "A condição começa com essa palavra curta dita por Jesus.",
+    "feedbackWrong": {
+      "a": "Isso diz quem precisa nascer, não marca a condição.",
+      "b": "Isso é o que se vê, não o marcador pedido."
+    },
+    "hint": "Procure a primeira palavra da condição.",
+    "learningObjective": "Reconhecer o marcador de condição em João 3:3.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-03",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 5:10 se relaciona com Romanos 5:8?",
+    "prompt": "Como Romanos 5:10 se relaciona com Romanos 5:8?",
+    "cue": "Como Romanos 5:10 se relaciona com Romanos 5:8?",
+    "verseRef": "Romanos 5:9–10",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira. Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seremos salvos sem a vida do Filho"
+      },
+      {
+        "id": "b",
+        "text": "A reconciliação anula a morte do Filho"
+      },
+      {
+        "id": "c",
+        "text": "Deus espera deixarmos a inimizade sozinhos"
+      },
+      {
+        "id": "d",
+        "text": "Cristo nos reconcilia mesmo como inimigos"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "quando éramos inimigos, fomos reconciliados",
+    "feedbackCorrect": "Inimigos, fomos reconciliados pela morte do Filho de Deus.",
+    "feedbackWrong": {
+      "a": "O texto diz que seremos salvos por sua vida.",
+      "b": "Ela acontece justamente pela morte do Filho.",
+      "c": "A reconciliação ocorre quando éramos inimigos."
+    },
+    "hint": "Veja nossa condição ao sermos reconciliados.",
+    "learningObjective": "Relacionar morte de Cristo e reconciliação.",
+    "evidence": [
+      "Romanos 5:9–10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-04",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as três cenas desta revisão?",
+    "prompt": "Como se encadeiam as três cenas desta revisão?",
+    "cue": "Como se encadeiam as três cenas desta revisão?",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus salva pela graça como presente"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morre por nós pecadores"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito dá vida nova"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "Graça que salva, cruz por pecadores e vida nova do Espírito.",
+    "feedbackWrong": {
+      "default": "Siga a ordem das cenas: graça, cruz e nascimento."
+    },
+    "hint": "Siga a ordem das lições da trilha.",
+    "learningObjective": "Compreender o encadeamento das três cenas.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-05",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Efésios 2:10, o que Deus fez de antemão com as boas obras?",
+    "prompt": "Em Efésios 2:10, o que Deus fez de antemão com as boas obras?",
+    "cue": "Em Efésios 2:10, o que Deus fez de antemão com as boas obras?",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "template": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão ___ para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "preparou"
+      },
+      {
+        "id": "b",
+        "text": "adiou"
+      },
+      {
+        "id": "c",
+        "text": "vendeu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus de antemão preparou",
+    "feedbackCorrect": "Deus preparou de antemão as boas obras para nelas andarmos.",
+    "feedbackWrong": {
+      "b": "O preparo já foi feito, não adiado.",
+      "c": "Nada é vendido; a salvação é presente."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Compreender boas obras preparadas por Deus.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-06",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Efésios 2:8 a Tito 3:5?",
+    "prompt": "O que liga Efésios 2:8 a Tito 3:5?",
+    "cue": "O que liga Efésios 2:8 a Tito 3:5?",
+    "verseRef": "Efésios 2:8",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+    },
+    "passageB": {
+      "ref": "Tito 3:5",
+      "text": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação dada sem merecimento humano"
+      },
+      {
+        "id": "b",
+        "text": "Graça dispensa a nova vida"
+      },
+      {
+        "id": "c",
+        "text": "Obras humanas conquistam Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pela graça vocês são salvos",
+    "feedbackCorrect": "Nos dois textos, Deus salva sem merecimento por obras.",
+    "feedbackWrong": {
+      "b": "Tito fala de renovação pelo Espírito.",
+      "c": "Os dois negam obras como base da salvação."
+    },
+    "hint": "Compare a base da salvação nos textos.",
+    "learningObjective": "Relacionar graça sem merecimento nas cartas.",
+    "evidence": [
+      "Efésios 2:8",
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-07",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 5:10, toque como éramos quando fomos reconciliados.",
+    "prompt": "Em Romanos 5:10, toque como éramos quando fomos reconciliados.",
+    "cue": "Em Romanos 5:10, toque como éramos quando fomos reconciliados.",
+    "verseRef": "Romanos 5:10",
+    "passageText": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "options": [
+      {
+        "id": "a",
+        "text": "reconciliados"
+      },
+      {
+        "id": "b",
+        "text": "Filho"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quando éramos inimigos, fomos reconciliados",
+    "feedbackCorrect": "Éramos inimigos quando Deus nos reconciliou pelo Filho.",
+    "feedbackWrong": {
+      "a": "Isso é o resultado, não nossa condição anterior.",
+      "b": "O Filho é quem morre; nós estávamos em outra condição."
+    },
+    "hint": "Procure nossa condição antes do resultado.",
+    "learningObjective": "Reconhecer nossa condição na reconciliação.",
+    "evidence": [
+      "Romanos 5:10"
+    ]
+  },
+  {
+    "id": "soteriologia-cam-so-boss-08",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Romanos 5:9–10 em dois passos?",
+    "prompt": "Como avança Romanos 5:9–10 em dois passos?",
+    "cue": "Como avança Romanos 5:9–10 em dois passos?",
+    "verseRef": "Romanos 5:9–10",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira. Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Justificados pelo sangue de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Reconciliados pela morte do Filho"
+      },
+      {
+        "id": "c",
+        "text": "Salvos pela vida do Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sendo justificados pelo seu sangue",
+    "feedbackCorrect": "Justificados e reconciliados, seremos salvos por sua vida.",
+    "feedbackWrong": {
+      "default": "A vida do Filho é o passo final do texto."
+    },
+    "hint": "O fim fala da vida dele.",
+    "learningObjective": "Compreender o avanço de Romanos 5:9–10.",
+    "evidence": [
+      "Romanos 5:9–10"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-01",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 3:3, nascer de novo significa voltar ao ventre da mãe e nascer outra vez.",
+    "prompt": "Em João 3:3, nascer de novo significa voltar ao ventre da mãe e nascer outra vez.",
+    "cue": "Em João 3:3, nascer de novo significa voltar ao ventre da mãe e nascer outra vez.",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Nicodemos pensou assim; Jesus explica falando do Espírito.",
+    "feedbackWrong": {
+      "true": "Essa leitura literal é corrigida em João 3:5–6."
+    },
+    "hint": "Lembre a explicação que Jesus dá depois.",
+    "learningObjective": "Interpretar o novo nascimento além do sentido literal.",
+    "evidence": [
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-02",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Efésios 2:10, toque o destino da nova criação em Cristo.",
+    "prompt": "Em Efésios 2:10, toque o destino da nova criação em Cristo.",
+    "cue": "Em Efésios 2:10, toque o destino da nova criação em Cristo.",
+    "verseRef": "Efésios 2:10",
+    "passageText": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "boas obras"
+      },
+      {
+        "id": "b",
+        "text": "obra de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "criados em Cristo Jesus para boas obras",
+    "feedbackCorrect": "Criados em Cristo Jesus para boas obras preparadas por Deus.",
+    "feedbackWrong": {
+      "b": "Isso diz o que somos, não para que fomos criados.",
+      "c": "Isso diz em quem fomos criados, não o destino."
+    },
+    "hint": "Procure o que vem depois de criados.",
+    "learningObjective": "Sustentar boas obras como fruto da nova vida.",
+    "evidence": [
+      "Efésios 2:10"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-03",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura reúne Efésios 2:8, Romanos 5:8 e João 3:3?",
+    "prompt": "Que leitura reúne Efésios 2:8, Romanos 5:8 e João 3:3?",
+    "cue": "Que leitura reúne Efésios 2:8, Romanos 5:8 e João 3:3?",
+    "verseRef": "Efésios 2:8–9",
+    "passageText": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça torna inútil a vida nova"
+      },
+      {
+        "id": "b",
+        "text": "Deus ama só quem já mudou"
+      },
+      {
+        "id": "c",
+        "text": "Deus salva pecadores e dá vida nova"
+      },
+      {
+        "id": "d",
+        "text": "Salvação exige pagamento humano final"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pela graça vocês são salvos, por meio da fé",
+    "feedbackCorrect": "Graça na cruz alcança pecadores e gera vida nova pelo Espírito.",
+    "feedbackWrong": {
+      "a": "João 3 e Efésios 2:10 afirmam vida nova.",
+      "b": "Cristo morreu sendo nós ainda pecadores.",
+      "d": "Efésios nega salvação como resultado de obras."
+    },
+    "hint": "Junte presente, cruz e novo nascimento.",
+    "learningObjective": "Escolher a síntese sustentada pelas três cenas.",
+    "evidence": [
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-04",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido das três cenas juntas?",
+    "prompt": "Qual sequência revela o sentido das três cenas juntas?",
+    "cue": "Qual sequência revela o sentido das três cenas juntas?",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus demonstra amor na cruz"
+      },
+      {
+        "id": "b",
+        "text": "A fé recebe a graça dada"
+      },
+      {
+        "id": "c",
+        "text": "Nova vida nasce do Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Amor na cruz, graça recebida pela fé e vida nova do Espírito.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor de Deus; a vida nova fecha."
+    },
+    "hint": "Vá da iniciativa de Deus à nova vida.",
+    "learningObjective": "Ver a síntese amor, fé e nova vida.",
+    "evidence": [
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-05",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 3:5, além da água, de quem é preciso nascer?",
+    "prompt": "Em João 3:5, além da água, de quem é preciso nascer?",
+    "cue": "Em João 3:5, além da água, de quem é preciso nascer?",
+    "verseRef": "João 3:5",
+    "passageText": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus.",
+    "template": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do ___ não pode entrar no reino de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "ventre"
+      },
+      {
+        "id": "c",
+        "text": "esforço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nascer da água e do Espírito",
+    "feedbackCorrect": "Jesus diz que é preciso nascer da água e do Espírito.",
+    "feedbackWrong": {
+      "b": "Voltar ao ventre foi a ideia de Nicodemos.",
+      "c": "Esforço humano não é a origem citada."
+    },
+    "hint": "Olhe o fim da condição dita por Jesus.",
+    "learningObjective": "Lembrar o Espírito como origem da nova vida.",
+    "evidence": [
+      "João 3:5"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-06",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 5:8 a João 3:16?",
+    "prompt": "O que liga Romanos 5:8 a João 3:16?",
+    "cue": "O que liga Romanos 5:8 a João 3:16?",
+    "verseRef": "Romanos 5:8",
+    "passageText": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores.",
+    "passageA": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "passageB": {
+      "ref": "João 3:16",
+      "text": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ama só os bons"
+      },
+      {
+        "id": "b",
+        "text": "Amor exige merecimento prévio"
+      },
+      {
+        "id": "c",
+        "text": "Deus ama e entrega Filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+    "feedbackCorrect": "Nos dois textos, o amor de Deus entrega o Filho por nós.",
+    "feedbackWrong": {
+      "a": "João fala do mundo amado por Deus.",
+      "b": "Cristo morreu sendo nós ainda pecadores."
+    },
+    "hint": "Compare quem Deus entrega nos textos.",
+    "learningObjective": "Ligar o amor demonstrado na cruz em Romanos e João.",
+    "evidence": [
+      "Romanos 5:8",
+      "João 3:16"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-07",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 5:9, toque a palavra que descreve quem foi alcançado pelo sangue.",
+    "prompt": "Em Romanos 5:9, toque a palavra que descreve quem foi alcançado pelo sangue.",
+    "cue": "Em Romanos 5:9, toque a palavra que descreve quem foi alcançado pelo sangue.",
+    "verseRef": "Romanos 5:9",
+    "passageText": "Muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "ira"
+      },
+      {
+        "id": "c",
+        "text": "justificados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sendo justificados pelo seu sangue",
+    "feedbackCorrect": "Justificados pelo sangue, seremos por ele salvos da ira.",
+    "feedbackWrong": {
+      "a": "Isso é o meio, não a condição descrita.",
+      "b": "Isso é aquilo de que seremos salvos."
+    },
+    "hint": "Procure nossa condição no começo.",
+    "learningObjective": "Sustentar a justificação pelo sangue de Cristo.",
+    "evidence": [
+      "Romanos 5:9"
+    ]
+  },
+  {
+    "id": "soteriologia-pro-so-boss-08",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus nas três cenas?",
+    "prompt": "Qual sequência revela o cuidado de Deus nas três cenas?",
+    "cue": "Qual sequência revela o cuidado de Deus nas três cenas?",
+    "verseRef": "João 3:3",
+    "passageText": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus dá a salvação como presente"
+      },
+      {
+        "id": "b",
+        "text": "Deus reconcilia pecadores na cruz"
+      },
+      {
+        "id": "c",
+        "text": "Deus faz nascer de novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se alguém não nascer de novo",
+    "feedbackCorrect": "Presente da graça, reconciliação na cruz e novo nascimento.",
+    "feedbackWrong": {
+      "default": "Siga graça, cruz e novo nascimento nessa ordem."
+    },
+    "hint": "Siga a ordem das três lições.",
+    "learningObjective": "Ver o cuidado de Deus em graça, cruz e Espírito.",
+    "evidence": [
+      "João 3:3"
+    ]
+  }
+]

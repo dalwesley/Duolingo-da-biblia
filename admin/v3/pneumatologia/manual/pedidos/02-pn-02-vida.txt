@@ -1,0 +1,75 @@
+Escreva a cena "pn-02-vida" da trilha "pneumatologia" (Pneumatologia).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "pneumatologia",
+  "title": "Pneumatologia",
+  "description": "O Espírito Santo — pessoa, obra e frutos na igreja.",
+  "realm": "teologia"
+ },
+ "block": "Espírito Santo",
+ "mission": {
+  "slug": "pn-02-vida",
+  "title": "Nova vida pelo Espírito",
+  "type": "lesson",
+  "intro": "O Espírito habita em todo cristão e dá vida, esperança e poder para obedecer.",
+  "hookRef": "Romanos 8:9-11",
+  "hookNote": "O Espírito habita em todo cristão e dá vida, esperança e poder para obedecer.",
+  "centralInsight": "Esta missão apresenta nova vida pelo espírito de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melh…",
+  "objective": "Romanos 8:9-11"
+ },
+ "v2": {
+  "passageRef": "Romanos 8:9-11",
+  "context": "O Espírito habita em todo cristão e dá vida, esperança e poder para obedecer.",
+  "keyword": "Nova",
+  "verseRefs": [
+   "Romanos 8:9–11"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 8:6–14"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 8:6",
+   "text": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz."
+  },
+  {
+   "ref": "Romanos 8:7",
+   "text": "A inclinação da carne é inimizade contra Deus, pois não se sujeita à lei de Deus, nem mesmo pode fazê-lo."
+  },
+  {
+   "ref": "Romanos 8:8",
+   "text": "Portanto, os que estão na carne não podem agradar a Deus."
+  },
+  {
+   "ref": "Romanos 8:9",
+   "text": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele."
+  },
+  {
+   "ref": "Romanos 8:10",
+   "text": "E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da justiça."
+  },
+  {
+   "ref": "Romanos 8:11",
+   "text": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita."
+  },
+  {
+   "ref": "Romanos 8:12",
+   "text": "Assim, irmãos, somos devedores, não à carne, como se constrangidos a viver segundo a carne."
+  },
+  {
+   "ref": "Romanos 8:13",
+   "text": "Porque, se viverdes segundo a carne, morrereis; mas, se, pelo Espírito, mortificardes as obras do corpo, certamente, vivereis."
+  },
+  {
+   "ref": "Romanos 8:14",
+   "text": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,292 @@
+{
+ "study": {
+  "passageRef": "Efésios 5:25",
+  "passages": [{"ref": "Efésios 5:25"}, {"ref": "Efésios 6:1–4"}, {"ref": "Gálatas 6:2"}],
+  "context": "Este desafio revisa a trilha Família. Casamento como aliança, filhos e pais sob o Senhor, e a igreja como família que carrega fardos junta.",
+  "keyword": "Lar",
+  "keywordGloss": "Lar que serve é onde Cristo é amado em casa e na comunidade da fé.",
+  "focusQuestion": "Onde o seu lar pode servir hoje, dentro de casa ou na família da fé?",
+  "reflectionPrompts": ["Amor que se entrega", "Honra sem provocar", "Fardos carregados juntos"],
+  "facts": [
+   {"text": "Cristo amou a igreja e se entregou por ela.", "evidenceRef": "Efésios 5:25", "evidenceSpan": "Cristo amou a igreja e a si mesmo se entregou por ela"},
+   {"text": "Ao casar, os dois se tornam uma só carne.", "evidenceRef": "Efésios 5:31", "evidenceSpan": "os dois se tornarão uma só carne"},
+   {"text": "Filhos devem obedecer aos pais no Senhor.", "evidenceRef": "Efésios 6:1", "evidenceSpan": "Filhos, obedeçam a seus pais no Senhor"},
+   {"text": "Pais não devem provocar os filhos à ira.", "evidenceRef": "Efésios 6:4", "evidenceSpan": "não provoquem seus filhos à ira"},
+   {"text": "Levar as cargas uns dos outros cumpre a lei de Cristo.", "evidenceRef": "Gálatas 6:2", "evidenceSpan": "estarão cumprindo a lei de Cristo"},
+   {"text": "O bem deve ser feito principalmente à família da fé.", "evidenceRef": "Gálatas 6:10", "evidenceSpan": "principalmente aos que pertencem à família da fé"}
+  ],
+  "keyTerms": [
+   {"term": "entregou", "gloss": "Cristo se entregou pela igreja; esse amor mede o serviço em casa."},
+   {"term": "disciplina", "gloss": "Formação dos filhos no Senhor, sem provocá-los à ira."},
+   {"term": "cargas", "gloss": "Pesos que a família da fé ajuda uns aos outros a carregar."}
+  ],
+  "structure": [
+   {"label": "Amor de aliança como o de Cristo", "evidenceRef": "Efésios 5:25"},
+   {"label": "Filhos honram e obedecem aos pais", "evidenceRef": "Efésios 6:1–2"},
+   {"label": "Pais criam os filhos sem provocar", "evidenceRef": "Efésios 6:4"},
+   {"label": "Comunidade carrega cargas junta", "evidenceRef": "Gálatas 6:2"}
+  ],
+  "relations": [
+   {"kind": "propósito", "text": "Cristo se entregou para santificar a igreja pela palavra.", "marker": "Para", "evidenceRef": "Efésios 5:26"},
+   {"kind": "contraste", "text": "Pais não provocam os filhos; em vez disso, criam-nos no Senhor.", "marker": "mas", "evidenceRef": "Efésios 6:4"},
+   {"kind": "resultado", "text": "Levar as cargas uns dos outros resulta em cumprir a lei de Cristo.", "marker": "assim", "evidenceRef": "Gálatas 6:2"}
+  ],
+  "crossRefs": [
+   {"ref": "Gênesis 2:24", "bridge": "Deixar, unir-se, uma só carne"},
+   {"ref": "Colossenses 3:20–21", "bridge": "Filhos obedecem, pais não irritam"},
+   {"ref": "Romanos 15:1", "bridge": "Fortes suportam os fracos"}
+  ],
+  "misreadings": [
+   {"text": "Lar que serve é a família perfeita, sem falhas nem dores.", "why": "Os textos chamam famílias reais a amar, honrar e restaurar com brandura (Gl 6:1)."},
+   {"text": "Autoridade em casa dispensa entrega, cuidado e limites.", "why": "Cristo se entrega e cuida (Ef 5:25,29), e pais não provocam os filhos (Ef 6:4)."},
+   {"text": "Servir é tarefa de cada um sozinho, sem a comunidade.", "why": "A lei de Cristo se cumpre levando as cargas uns dos outros (Gl 6:2)."}
+  ],
+  "centralInsight": "Um lar que serve ama como Cristo, honra os pais e carrega fardos junto",
+  "anchorQuestion": "O que um lar que serve faz segundo Efésios 5:25, Efésios 6:4 e Gálatas 6:2?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Gálatas 6:2, levar as cargas é apresentado como tarefa de cada um sozinho.",
+   "verseRef": "Gálatas 6:2", "correctOptionId": "false",
+   "evidenceSpan": "Levem as cargas uns dos outros",
+   "feedbackCorrect": "As cargas são levadas uns dos outros, em comunidade, não sozinho.",
+   "feedbackWrong": {"true": "Releia Gálatas 6:2; o chamado é uns aos outros."},
+   "hint": "Veja quem carrega com quem.", "learningObjective": "Observar que as cargas são levadas em comunidade.", "evidence": ["Gálatas 6:2"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Efésios 5:25, toque quem Cristo amou e por quem se entregou.",
+   "verseRef": "Efésios 5:25",
+   "options": [{"id": "a", "text": "Maridos"}, {"id": "b", "text": "Cristo"}, {"id": "c", "text": "igreja"}],
+   "correctOptionId": "c", "evidenceSpan": "Cristo amou a igreja",
+   "feedbackCorrect": "Cristo amou a igreja e se entregou por ela; esse é o modelo do lar.",
+   "feedbackWrong": {"a": "Os maridos recebem a ordem de amar como Cristo amou.", "b": "Cristo é quem ama; toque quem foi amado por ele."},
+   "hint": "Procure quem recebe o amor de Cristo.", "learningObjective": "Identificar a igreja como amada por Cristo.", "evidence": ["Efésios 5:25"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Efésios 6:2, honrar pai e mãe é chamado de quê?",
+   "verseRef": "Efésios 6:2",
+   "options": [{"id": "a", "text": "Primeiro mandamento com promessa"}, {"id": "b", "text": "Mandamento sem nenhuma importância"}, {"id": "c", "text": "Conselho dado só para adultos"}, {"id": "d", "text": "Tradição apenas de algumas famílias"}],
+   "correctOptionId": "a", "evidenceSpan": "que é o primeiro mandamento com promessa",
+   "feedbackCorrect": "Honrar pai e mãe é o primeiro mandamento com promessa, diz Paulo.",
+   "feedbackWrong": {"b": "O texto destaca a importância ligando o mandamento a promessa.", "c": "O chamado é dado a filhos, não só a adultos.", "d": "É mandamento de Deus, não costume de algumas famílias."},
+   "hint": "Leia o fim do versículo.", "learningObjective": "Observar a honra como mandamento com promessa.", "evidence": ["Efésios 6:2"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Efésios 5:31 na ordem do texto.",
+   "verseRef": "Efésios 5:31",
+   "options": [{"id": "a", "text": "Por isso, o homem deixará seu pai e sua mãe"}, {"id": "b", "text": "e se unirá à sua mulher"}, {"id": "c", "text": "e os dois se tornarão uma só carne"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "o homem deixará seu pai e sua mãe",
+   "feedbackCorrect": "Deixar, unir-se e ser uma só carne é a sequência do versículo.",
+   "feedbackWrong": {"default": "Comece pelo homem deixando pai e mãe; uma só carne fecha."},
+   "hint": "O versículo começa com Por isso.", "learningObjective": "Reconhecer a sequência de Efésios 5:31.", "evidence": ["Efésios 5:31"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Efésios 5:33, com que atitude a esposa é chamada a tratar o marido?",
+   "verseRef": "Efésios 5:33",
+   "options": [{"id": "a", "text": "respeite"}, {"id": "b", "text": "ignore"}, {"id": "c", "text": "despreze"}],
+   "correctOptionId": "a", "evidenceSpan": "a esposa respeite o marido",
+   "feedbackCorrect": "Amor do marido e respeito da esposa fecham juntos o trecho da aliança.",
+   "feedbackWrong": {"b": "Ignorar é o contrário do cuidado mútuo do trecho.", "c": "Desprezar contradiz o respeito pedido no versículo."},
+   "hint": "Leia a última parte do trecho da aliança.", "learningObjective": "Lembrar o respeito pedido em Efésios 5:33.", "evidence": ["Efésios 5:33"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Efésios 6:4 comunica que se liga a este contexto?",
+   "verseRef": "Efésios 6:4",
+   "passageA": {"ref": "Efésios 6:4"},
+   "passageB": {"ref": "Contexto", "text": "Criar filhos no Senhor é firme e, ao mesmo tempo, sem provocação."},
+   "options": [{"id": "a", "text": "Criar sem provocar os filhos"}, {"id": "b", "text": "Criar provocando todos os dias"}, {"id": "c", "text": "Criar sem nenhuma orientação"}],
+   "correctOptionId": "a", "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "Criar no Senhor une firmeza e o limite de não provocar os filhos.",
+   "feedbackWrong": {"b": "Provocar é justamente o que o texto manda evitar.", "c": "Sem orientação nega a disciplina e a instrução do Senhor."},
+   "hint": "Junte o limite e o ensino do versículo.", "learningObjective": "Ligar Efésios 6:4 à criação firme sem provocação.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Gálatas 6:2, toque o que devemos levar uns dos outros.",
+   "verseRef": "Gálatas 6:2",
+   "options": [{"id": "a", "text": "cargas"}, {"id": "b", "text": "lei"}, {"id": "c", "text": "outros"}],
+   "correctOptionId": "a", "evidenceSpan": "Levem as cargas uns dos outros",
+   "feedbackCorrect": "O lar que serve também carrega as cargas uns dos outros.",
+   "feedbackWrong": {"b": "Isso é o que se cumpre ao ajudar, não o que se leva.", "c": "Isso diz de quem são, não o que levamos pelo outro."},
+   "hint": "Leia o começo do versículo.", "learningObjective": "Identificar as cargas levadas em comunidade.", "evidence": ["Gálatas 6:2"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Gálatas 6:10 na ordem do texto.",
+   "verseRef": "Gálatas 6:10",
+   "options": [{"id": "a", "text": "enquanto tivermos a oportunidade"}, {"id": "b", "text": "façamos o bem a todos"}, {"id": "c", "text": "principalmente aos que pertencem à família da fé"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "enquanto tivermos a oportunidade",
+   "feedbackCorrect": "Oportunidade, bem a todos e família da fé vêm nessa ordem.",
+   "feedbackWrong": {"default": "Comece pela oportunidade; a família da fé fecha o versículo."},
+   "hint": "O versículo começa com Assim, enquanto.", "learningObjective": "Reconhecer a sequência de Gálatas 6:10.", "evidence": ["Gálatas 6:10"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Efésios 6:4, a disciplina dos filhos é separada de qualquer cuidado com o coração deles.",
+   "verseRef": "Efésios 6:4", "correctOptionId": "false",
+   "evidenceSpan": "não provoquem seus filhos à ira",
+   "feedbackCorrect": "Disciplina e cuidado andam juntos; criar no Senhor sem provocar.",
+   "feedbackWrong": {"true": "Releia as duas metades de Efésios 6:4; elas andam juntas."},
+   "hint": "Não separe as duas metades do versículo.", "learningObjective": "Compreender disciplina junto com o não provocar.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Efésios 6:4, toque a palavra que vira o ensino de provocar para o de criar.",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "mas"}, {"id": "b", "text": "ira"}, {"id": "c", "text": "Senhor"}],
+   "correctOptionId": "a", "evidenceSpan": "mas criem-nos na disciplina",
+   "feedbackCorrect": "Depois do limite, o texto vira para criar os filhos no Senhor.",
+   "feedbackWrong": {"b": "Isso é o que os pais não devem causar nos filhos.", "c": "Isso diz segundo quem criar, não a virada do ensino."},
+   "hint": "Procure uma palavra curta no meio do versículo.", "learningObjective": "Reconhecer a virada de Efésios 6:4.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Efésios 5:28 se relaciona com o amor de Cristo em Efésios 5:25?",
+   "verseRef": "Efésios 5:28",
+   "options": [{"id": "a", "text": "Amar a esposa é também amar a si mesmo"}, {"id": "b", "text": "Amar a esposa dispensa amar a si mesmo"}, {"id": "c", "text": "Cristo amou a igreja sem se entregar"}, {"id": "d", "text": "O marido deve cuidar apenas de si mesmo"}],
+   "correctOptionId": "a", "evidenceSpan": "Quem ama a esposa, ama a si mesmo",
+   "feedbackCorrect": "O amor pela esposa e por si mesmo aparece unido, como um só corpo.",
+   "feedbackWrong": {"b": "O texto une os dois amores, não dispensa um deles.", "c": "Cristo se entregou pela igreja; esse é o ponto de 5:25.", "d": "Cuidar só de si nega o amor que alimenta o outro (5:29)."},
+   "hint": "Leia a segunda frase de Efésios 5:28.", "learningObjective": "Relacionar amar a esposa e amar a si mesmo.", "evidence": ["Efésios 5:28"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o cuidado em Gálatas 6:1–2?",
+   "verseRef": "Gálatas 6:1–2",
+   "options": [{"id": "a", "text": "Restaurar com brandura quem caiu"}, {"id": "b", "text": "Levar as cargas uns dos outros"}, {"id": "c", "text": "Cumprir assim a lei de Cristo"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Levem as cargas uns dos outros",
+   "feedbackCorrect": "Restaurar, levar juntos e cumprir a lei de Cristo se encadeiam.",
+   "feedbackWrong": {"default": "Comece pela restauração em 6:1; a lei de Cristo fecha em 6:2."},
+   "hint": "A lei de Cristo é o ponto de chegada.", "learningObjective": "Compreender o encadeamento de Gálatas 6:1–2.", "evidence": ["Gálatas 6:1–2"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Efésios 6:3, como é descrita a vida prometida sobre a terra?",
+   "verseRef": "Efésios 6:3",
+   "options": [{"id": "a", "text": "longa"}, {"id": "b", "text": "curta"}, {"id": "c", "text": "fácil"}],
+   "correctOptionId": "a", "evidenceSpan": "tenhas uma vida longa sobre a terra",
+   "feedbackCorrect": "A promessa ligada à honra fala de ir bem e de vida longa.",
+   "feedbackWrong": {"b": "O texto fala do contrário; vida longa sobre a terra.", "c": "O texto não promete facilidade; fala de ir bem e viver."},
+   "hint": "Leia o adjetivo ligado à vida.", "learningObjective": "Compreender a promessa ligada à honra aos pais.", "evidence": ["Efésios 6:3"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Efésios 5:31 a Gênesis 2:24?",
+   "verseRef": "Efésios 5:31",
+   "passageA": {"ref": "Efésios 5:31"},
+   "passageB": {"ref": "Gênesis 2:24"},
+   "options": [{"id": "a", "text": "Deixar, unir-se e ser um"}, {"id": "b", "text": "Voltar para casa dos pais"}, {"id": "c", "text": "Viver sem compromisso algum"}],
+   "correctOptionId": "a", "evidenceSpan": "o homem deixará seu pai e sua mãe",
+   "feedbackCorrect": "Paulo cita Gênesis; deixar e unir-se forma uma só carne.",
+   "feedbackWrong": {"b": "O movimento do texto é sair da casa dos pais, não voltar.", "c": "A união descrita é compromisso profundo, não ausência dele."},
+   "hint": "Compare os verbos dos dois trechos.", "learningObjective": "Relacionar o casamento em Efésios à criação em Gênesis.", "evidence": ["Efésios 5:31", "Gênesis 2:24"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Efésios 5:21, toque o trecho que mostra que a sujeição é mútua.",
+   "verseRef": "Efésios 5:21",
+   "options": [{"id": "a", "text": "no temor"}, {"id": "b", "text": "uns aos outros"}, {"id": "c", "text": "de Cristo"}],
+   "correctOptionId": "b", "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo",
+   "feedbackCorrect": "A ordem abre a trilha da família; todos, uns aos outros, em Cristo.",
+   "feedbackWrong": {"a": "Isso diz o clima da sujeição, não quem se sujeita a quem.", "c": "Isso nomeia diante de quem vivemos, não a reciprocidade."},
+   "hint": "Procure quem se sujeita a quem.", "learningObjective": "Reconhecer a sujeição mútua que abre o trecho.", "evidence": ["Efésios 5:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como se encadeiam os passos de Efésios 6:1–2?",
+   "verseRef": "Efésios 6:1–2",
+   "options": [{"id": "a", "text": "Filhos obedecem aos pais no Senhor"}, {"id": "b", "text": "Filhos honram pai e mãe"}, {"id": "c", "text": "Um mandamento com promessa é lembrado"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Honra teu pai e tua mãe",
+   "feedbackCorrect": "Obediência, honra e promessa aparecem nessa ordem no trecho.",
+   "feedbackWrong": {"default": "Comece pela obediência em 6:1; a promessa fecha o movimento."},
+   "hint": "A promessa é o ponto de chegada.", "learningObjective": "Compreender o encadeamento de Efésios 6:1–2.", "evidence": ["Efésios 6:1–2"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Em Efésios 5:25, o amor do marido é medido pela entrega de Cristo pela igreja.",
+   "verseRef": "Efésios 5:25", "correctOptionId": "true",
+   "evidenceSpan": "assim como Cristo amou a igreja e a si mesmo se entregou por ela",
+   "feedbackCorrect": "A medida é alta e concreta; Cristo se entregou pela igreja.",
+   "feedbackWrong": {"false": "Releia Efésios 5:25 e veja a comparação com Cristo."},
+   "hint": "Veja a comparação do versículo.", "learningObjective": "Interpretar a entrega de Cristo como medida do amor.", "evidence": ["Efésios 5:25"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Efésios 6:2, toque como a honra a pai e mãe é descrita.",
+   "verseRef": "Efésios 6:2",
+   "options": [{"id": "a", "text": "teu pai"}, {"id": "b", "text": "tua mãe"}, {"id": "c", "text": "primeiro mandamento"}],
+   "correctOptionId": "c", "evidenceSpan": "que é o primeiro mandamento com promessa",
+   "feedbackCorrect": "Honrar pai e mãe é o primeiro mandamento com promessa, diz Paulo.",
+   "feedbackWrong": {"a": "Isso diz quem honrar, não como o mandamento é descrito.", "b": "Isso também diz quem honrar; a descrição vem depois."},
+   "hint": "Leia a segunda parte do versículo.", "learningObjective": "Sustentar a honra como mandamento com promessa.", "evidence": ["Efésios 6:2"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Efésios 6:4 sustenta sobre disciplina em casa?",
+   "verseRef": "Efésios 6:4",
+   "options": [{"id": "a", "text": "Disciplina no Senhor sem provocar os filhos"}, {"id": "b", "text": "Disciplina que usa a ira para controlar"}, {"id": "c", "text": "Ausência total de disciplina em casa"}, {"id": "d", "text": "Filhos devem criar a si mesmos sozinhos"}],
+   "correctOptionId": "a", "evidenceSpan": "criem-nos na disciplina e na admoestação do Senhor",
+   "feedbackCorrect": "O texto sustenta firmeza com limite; disciplina sem provocar à ira.",
+   "feedbackWrong": {"b": "Usar a ira é justamente o que o texto proíbe aos pais.", "c": "O texto manda criar na disciplina; não é ausência de ensino.", "d": "Os pais são chamados a criar os filhos no Senhor."},
+   "hint": "Não separe firmeza e limite no versículo.", "learningObjective": "Escolher a leitura de disciplina que o texto sustenta.", "evidence": ["Efésios 6:4"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho do amor de Cristo em Efésios 5:25–27?",
+   "verseRef": "Efésios 5:25",
+   "options": [{"id": "a", "text": "Cristo se entrega pela igreja"}, {"id": "b", "text": "A igreja é santificada pela palavra"}, {"id": "c", "text": "A igreja é apresentada santa a Cristo"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Cristo amou a igreja",
+   "feedbackCorrect": "Entrega, santificação e apresentação santa formam o caminho do texto.",
+   "feedbackWrong": {"default": "Siga Efésios 5 na ordem; a entrega vem antes da santificação."},
+   "hint": "Comece pelo que Cristo fez em 5:25.", "learningObjective": "Ver o encadeamento entrega, santificação e glória.", "evidence": ["Efésios 5:25", "Efésios 5:26", "Efésios 5:27"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Gálatas 6:5, cada um carregará o fardo de quem?",
+   "verseRef": "Gálatas 6:5",
+   "options": [{"id": "a", "text": "próprio"}, {"id": "b", "text": "alheio"}, {"id": "c", "text": "emprestado"}],
+   "correctOptionId": "a", "evidenceSpan": "cada um carregará o seu próprio fardo",
+   "feedbackCorrect": "Servir junto não apaga o fardo que é de cada um carregar.",
+   "feedbackWrong": {"b": "Ajudamos nas cargas, mas o fardo aqui é de cada um.", "c": "O texto não fala de fardo emprestado; fala do seu próprio."},
+   "hint": "Leia o adjetivo ligado a fardo.", "learningObjective": "Lembrar a responsabilidade de cada um pelo seu fardo.", "evidence": ["Gálatas 6:5"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Gálatas 6:2 a Romanos 15:1?",
+   "verseRef": "Gálatas 6:2",
+   "passageA": {"ref": "Gálatas 6:2"},
+   "passageB": {"ref": "Romanos 15:1"},
+   "options": [{"id": "a", "text": "Fortes ajudam os mais fracos"}, {"id": "b", "text": "Cada um cuida só de si"}, {"id": "c", "text": "Ignorar quem está sobrecarregado"}],
+   "correctOptionId": "a", "evidenceSpan": "Levem as cargas uns dos outros",
+   "feedbackCorrect": "Nos dois textos, quem pode mais ajuda a carregar quem está fraco.",
+   "feedbackWrong": {"b": "Cuidar só de si nega o levar as cargas uns dos outros.", "c": "Ignorar o sobrecarregado é o contrário dos dois textos."},
+   "hint": "Compare quem ajuda quem nos dois trechos.", "learningObjective": "Ligar o carregar cargas ao apoio aos fracos.", "evidence": ["Gálatas 6:2", "Romanos 15:1"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Gálatas 6:1, toque com que espírito o irmão deve ser restaurado.",
+   "verseRef": "Gálatas 6:1",
+   "options": [{"id": "a", "text": "falta"}, {"id": "b", "text": "brandura"}, {"id": "c", "text": "tentados"}],
+   "correctOptionId": "b", "evidenceSpan": "com espírito de brandura",
+   "feedbackCorrect": "A restauração do lar que serve é com brandura, não com dureza.",
+   "feedbackWrong": {"a": "Isso é o que aconteceu com o irmão, não o espírito de quem ajuda.", "c": "Isso é o risco de quem restaura, não o espírito pedido."},
+   "hint": "Procure o espírito de quem restaura.", "learningObjective": "Sustentar a brandura como modo de restaurar.", "evidence": ["Gálatas 6:1"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o serviço da família da fé em Gálatas 6:2–10?",
+   "verseRef": "Gálatas 6:10",
+   "options": [{"id": "a", "text": "Ajudar quem está sobrecarregado"}, {"id": "b", "text": "Fazer o bem a todos"}, {"id": "c", "text": "Cuidar principalmente da família da fé"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "façamos o bem a todos",
+   "feedbackCorrect": "Carregar cargas, fazer o bem a todos e cuidar da família da fé.",
+   "feedbackWrong": {"default": "Comece pelas cargas em 6:2; a família da fé fecha em 6:10."},
+   "hint": "Siga de Gálatas 6:2 até 6:10.", "learningObjective": "Ver o serviço, das cargas à família da fé.", "evidence": ["Gálatas 6:10", "Gálatas 6:2"]
+  }
+ ]
+}

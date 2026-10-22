@@ -1,0 +1,320 @@
+{
+ "study": {
+  "passageRef": "2 Reis 17:35–39",
+  "passages": [{"ref": "2 Reis 17:35–39"}, {"ref": "2 Reis 17:13–14"}, {"ref": "2 Reis 17:19"}, {"ref": "2 Reis 17:33"}],
+  "context": "Samaria já caiu e o texto volta os olhos para Judá e para os povos que ocupam o norte. Judá foi advertida pelos mesmos profetas e segue os costumes de Israel. A aliança continua chamando, temer somente ao Senhor.",
+  "keyword": "Aliança",
+  "keywordGloss": "Pacto em que Deus, que tirou o povo do Egito, pede temor e culto somente a ele.",
+  "focusQuestion": "Que costume antigo você precisa deixar para temer somente ao Senhor de coração inteiro?",
+  "reflectionPrompts": ["Não seguir o mau exemplo", "Temer somente ao Senhor", "Lembrar a aliança cada dia"],
+  "facts": [
+   {"text": "Deus advertiu também a Judá por meio de todos os profetas e videntes.", "evidenceRef": "2 Reis 17:13", "evidenceSpan": "advertiu a Israel e a Judá por meio de todos os profetas"},
+   {"text": "Até Judá não observou os mandamentos do Senhor e seguiu costumes de Israel.", "evidenceRef": "2 Reis 17:19", "evidenceSpan": "Até Judá não observou os mandamentos"},
+   {"text": "Os povos em Samaria temiam ao Senhor e serviam aos seus próprios deuses.", "evidenceRef": "2 Reis 17:33", "evidenceSpan": "serviam aos seus próprios deuses"},
+   {"text": "Deus tirou o povo do Egito com grande poder e com braço forte.", "evidenceRef": "2 Reis 17:36", "evidenceSpan": "que vos fez sair da terra do Egito com grande poder"},
+   {"text": "Os povos não deram ouvidos e seguiram o seu antigo costume.", "evidenceRef": "2 Reis 17:40", "evidenceSpan": "seguiram o seu antigo costume"}
+  ],
+  "keyTerms": [
+   {"term": "aliança", "gloss": "Pacto de Deus com seu povo, que não deve ser esquecido nem trocado."},
+   {"term": "temereis", "gloss": "Reverência e culto devidos somente ao Senhor, e não a outros deuses."},
+   {"term": "costumes", "gloss": "Práticas das nações e de Israel que Judá e os povos seguem em vez de Deus."}
+  ],
+  "structure": [
+   {"label": "Deus adverte Judá também", "evidenceRef": "2 Reis 17:13"},
+   {"label": "Judá segue costumes de Israel", "evidenceRef": "2 Reis 17:19"},
+   {"label": "Povos misturam Senhor e deuses", "evidenceRef": "2 Reis 17:33"},
+   {"label": "Aliança manda temer só ao Senhor", "evidenceRef": "2 Reis 17:36"}
+  ],
+  "relations": [
+   {"kind": "contraste", "text": "Judá, que tinha o templo e a promessa, também não guarda os mandamentos como Israel.", "marker": "Até", "evidenceRef": "2 Reis 17:19"},
+   {"kind": "contraste", "text": "Os povos temem ao Senhor, mas ao mesmo tempo servem aos seus próprios deuses.", "marker": "mas", "evidenceRef": "2 Reis 17:33"},
+   {"kind": "resultado", "text": "Sem dar ouvidos à aliança, o resultado é seguir o antigo costume das nações.", "marker": "ao contrário", "evidenceRef": "2 Reis 17:40"}
+  ],
+  "crossRefs": [
+   {"ref": "Êxodo 20:2", "bridge": "Deus libertador pede culto exclusivo"},
+   {"ref": "Jeremias 31:31", "bridge": "Deus promete uma nova aliança"}
+  ],
+  "misreadings": [
+   {"text": "Judá estava seguro para sempre por ter Jerusalém e um rei da casa de Davi.", "why": "O texto adverte Judá pelos profetas e diz que até Judá seguiu os costumes de Israel."},
+   {"text": "Temer ao Senhor e servir a outros deuses ao mesmo tempo é uma fé aceitável.", "why": "A aliança ordena não temer outros deuses e temer somente ao Senhor que libertou o povo."},
+   {"text": "Depois da queda do norte, Deus não promete mais livramento a ninguém.", "why": "O texto promete que quem teme ao Senhor será livrado das mãos dos adversários."}
+  ],
+  "centralInsight": "Judá avisada precisa temer só ao Senhor e lembrar a aliança",
+  "anchorQuestion": "O que 2 Reis 17 diz que até Judá fez, seguindo Israel?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em 2 Reis 17:19, até Judá não observou os mandamentos do Senhor e seguiu os costumes introduzidos por Israel.",
+   "verseRef": "2 Reis 17:19", "correctOptionId": "true",
+   "evidenceSpan": "Até Judá não observou os mandamentos",
+   "feedbackCorrect": "Nem Judá escapa do diagnóstico, também ela segue o caminho do reino do norte.",
+   "feedbackWrong": {"false": "Releia 17:19, até Judá não observou os mandamentos do Senhor."},
+   "hint": "Veja quem mais entra no diagnóstico do texto.",
+   "learningObjective": "Observar que Judá também desobedeceu ao Senhor.",
+   "evidence": ["2 Reis 17:19"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em 2 Reis 17:19, toque o reino que o texto diz que também não guardou os mandamentos.",
+   "verseRef": "2 Reis 17:19",
+   "options": [{"id": "a", "text": "Judá"}, {"id": "b", "text": "Israel"}, {"id": "c", "text": "Deus"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Até Judá não observou os mandamentos do SENHOR",
+   "feedbackCorrect": "A palavra até mostra a surpresa do texto, logo Judá também desobedece.",
+   "feedbackWrong": {"b": "Israel é o exemplo seguido, o reino surpreendente aqui é outro.", "c": "Deus é quem dá os mandamentos, não quem deixa de guardá-los."},
+   "hint": "Veja a primeira palavra de surpresa do versículo.",
+   "learningObjective": "Identificar Judá no caminho de desobediência.",
+   "evidence": ["2 Reis 17:19"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo 2 Reis 17:19, o que o texto afirma sobre Judá?",
+   "verseRef": "2 Reis 17:19",
+   "options": [
+    {"id": "a", "text": "Também não guardou os mandamentos"},
+    {"id": "b", "text": "Guardou tudo com fidelidade total"},
+    {"id": "c", "text": "Expulsou os costumes vindos de Israel"},
+    {"id": "d", "text": "Nunca foi advertida pelos profetas"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "seguiu os costumes que Israel havia introduzido",
+   "feedbackCorrect": "Judá segue os costumes de Israel em vez de guardar os mandamentos do Senhor.",
+   "feedbackWrong": {"b": "O texto diz o contrário, até Judá não observou os mandamentos.", "c": "Ela segue os costumes de Israel, não os expulsa de seu meio.", "d": "A advertência dos profetas era para Israel e também para Judá."},
+   "hint": "Leia de quem Judá segue os costumes.",
+   "learningObjective": "Observar a desobediência de Judá após a queda do norte.",
+   "evidence": ["2 Reis 17:19"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte 2 Reis 17:33 na ordem do texto.",
+   "verseRef": "2 Reis 17:33",
+   "options": [
+    {"id": "a", "text": "Temiam o SENHOR"},
+    {"id": "b", "text": "serviam aos seus próprios deuses"},
+    {"id": "c", "text": "conforme o costume das nações"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Temiam o SENHOR",
+   "feedbackCorrect": "A mistura vem nesta ordem, temor ao Senhor, serviço a deuses e costume das nações.",
+   "feedbackWrong": {"default": "Comece pelo temor ao Senhor, o costume das nações fecha o versículo."},
+   "hint": "O temor ao Senhor abre o versículo.",
+   "learningObjective": "Reconhecer a mistura religiosa descrita no texto.",
+   "evidence": ["2 Reis 17:33"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em 2 Reis 17:19, o que Judá seguiu, vindos de Israel, em vez dos mandamentos?",
+   "verseRef": "2 Reis 17:19",
+   "options": [{"id": "a", "text": "costumes"}, {"id": "b", "text": "mandamentos"}, {"id": "c", "text": "presença"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "seguiu os costumes que Israel havia introduzido",
+   "feedbackCorrect": "Judá troca os mandamentos de Deus pelos costumes introduzidos por Israel.",
+   "feedbackWrong": {"b": "Mandamentos são justamente o que Judá não observou segundo o texto.", "c": "Presença lembra o afastamento de Israel, não o que Judá segue aqui."},
+   "hint": "Veja o que foi introduzido por Israel.",
+   "learningObjective": "Lembrar o que Judá imitou do reino do norte.",
+   "evidence": ["2 Reis 17:19"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que 2 Reis 17:19 comunica que se liga a este contexto?",
+   "verseRef": "2 Reis 17:19",
+   "passageA": {"ref": "2 Reis 17:19"},
+   "passageB": {"ref": "Contexto", "text": "Samaria caiu e Judá viu de perto o juízo sobre o reino do norte."},
+   "options": [
+    {"id": "a", "text": "Judá segue o mesmo caminho"},
+    {"id": "b", "text": "Judá fica imune ao pecado"},
+    {"id": "c", "text": "Norte não influencia Judá"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "seguiu os costumes que Israel havia introduzido",
+   "feedbackCorrect": "Ver a queda do norte não basta, Judá segue o mesmo caminho de desobediência.",
+   "feedbackWrong": {"b": "O até do texto mostra Judá dentro do mesmo diagnóstico de pecado.", "c": "Os costumes seguidos por Judá foram introduzidos justamente por Israel."},
+   "hint": "Veja de onde vêm os costumes de Judá.",
+   "learningObjective": "Ligar a queda do norte ao risco vivido por Judá.",
+   "evidence": ["2 Reis 17:19"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em 2 Reis 17:33, os povos trazidos para Samaria temiam ao Senhor e ao mesmo tempo serviam aos seus próprios deuses.",
+   "verseRef": "2 Reis 17:33", "correctOptionId": "true",
+   "evidenceSpan": "Temiam o SENHOR, mas, ao mesmo tempo, serviam aos seus próprios deuses",
+   "feedbackCorrect": "A fé descrita é dividida, temor ao Senhor misturado com serviço a outros deuses.",
+   "feedbackWrong": {"false": "Releia 17:33, eles temiam ao Senhor e serviam aos próprios deuses."},
+   "hint": "Veja os dois lados ligados no versículo.",
+   "learningObjective": "Compreender a religião dividida dos novos povos.",
+   "evidence": ["2 Reis 17:33"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em 2 Reis 17:33, toque a palavra que marca o contraste entre temer e servir.",
+   "verseRef": "2 Reis 17:33",
+   "options": [{"id": "a", "text": "mas"}, {"id": "b", "text": "tempo"}, {"id": "c", "text": "deuses"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Temiam o SENHOR, mas, ao mesmo tempo",
+   "feedbackCorrect": "A palavrinha expõe a divisão, temem ao Senhor mas servem a outros deuses.",
+   "feedbackWrong": {"b": "Tempo compõe a expressão ao mesmo tempo, a marca do contraste vem antes.", "c": "Deuses são os servidos no outro lado, não a marca que liga os lados."},
+   "hint": "Procure a palavra entre duas vírgulas.",
+   "learningObjective": "Reconhecer o contraste da fé dividida em Samaria.",
+   "evidence": ["2 Reis 17:33"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como 2 Reis 17:33 descreve a religião dos povos em Samaria?",
+   "verseRef": "2 Reis 17:33",
+   "options": [
+    {"id": "a", "text": "Temor ao Senhor misturado com ídolos"},
+    {"id": "b", "text": "Fé pura somente ao Senhor Deus"},
+    {"id": "c", "text": "Abandono total de qualquer culto"},
+    {"id": "d", "text": "Culto fiel igual ao da aliança"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Temiam o SENHOR, mas, ao mesmo tempo, serviam aos seus próprios deuses",
+   "feedbackCorrect": "É uma fé dividida em dois cultos, diferente da aliança que pede só ao Senhor.",
+   "feedbackWrong": {"b": "Há mistura com deuses próprios, não uma fé somente ao Senhor.", "c": "Eles mantêm dois cultos ao mesmo tempo, não abandonam culto algum.", "d": "A aliança manda não temer outros deuses, o contrário dessa mistura."},
+   "hint": "Veja os dois verbos ligados pelo contraste.",
+   "learningObjective": "Relacionar a mistura de Samaria à aliança de Deus.",
+   "evidence": ["2 Reis 17:33"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança a ordem da aliança em 2 Reis 17:35–36?",
+   "verseRef": "2 Reis 17:35–36",
+   "options": [
+    {"id": "a", "text": "Deus fez uma aliança com o povo"},
+    {"id": "b", "text": "Deus manda não temer outros deuses"},
+    {"id": "c", "text": "Ao Senhor o povo deve temer"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "a Ele temereis, a Ele vos prostrareis",
+   "feedbackCorrect": "Aliança feita, proibição de outros deuses e temor devido somente ao Senhor libertador.",
+   "feedbackWrong": {"default": "Comece pela aliança feita por Deus, o temor a ele fecha a ordem."},
+   "hint": "A aliança vem antes da ordem de temer.",
+   "learningObjective": "Compreender a lógica da aliança em 2 Reis 17.",
+   "evidence": ["2 Reis 17:35–36"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em 2 Reis 17:36, o que o povo deve oferecer somente ao Senhor libertador?",
+   "verseRef": "2 Reis 17:36",
+   "options": [{"id": "a", "text": "sacrifícios"}, {"id": "b", "text": "ídolos"}, {"id": "c", "text": "altares"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "a Ele oferecereis sacrifícios",
+   "feedbackCorrect": "Temor, prostração e sacrifícios pertencem só ao Senhor que tirou o povo do Egito.",
+   "feedbackWrong": {"b": "Ídolos são o que a aliança proíbe servir, não o que oferecer a Deus.", "c": "Altares não são a palavra final aqui, o culto devido é nomeado depois."},
+   "hint": "Leia o último verbo do versículo.",
+   "learningObjective": "Compreender o culto exclusivo devido ao Senhor.",
+   "evidence": ["2 Reis 17:36"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga 2 Reis 17:36 a Êxodo 20:2?",
+   "verseRef": "2 Reis 17:36",
+   "passageA": {"ref": "2 Reis 17:36"},
+   "passageB": {"ref": "Êxodo 20:2"},
+   "options": [
+    {"id": "a", "text": "Deus libertador pede culto exclusivo"},
+    {"id": "b", "text": "Libertação dispensa temer a Deus"},
+    {"id": "c", "text": "Outros deuses partilham o culto"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que vos fez sair da terra do Egito com grande poder",
+   "feedbackCorrect": "Nos dois textos o Deus que tira do Egito é quem deve ser temido e servido sozinho.",
+   "feedbackWrong": {"b": "Ser libertado por Deus é motivo para temê-lo, não para dispensá-lo.", "c": "A aliança exclui outros deuses do culto devido ao Senhor libertador."},
+   "hint": "Compare quem tira o povo do Egito.",
+   "learningObjective": "Relacionar a aliança de Reis ao Deus do êxodo.",
+   "evidence": ["2 Reis 17:36", "Êxodo 20:2"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "2 Reis 17:39 ensina que temer ao Senhor é inútil, porque ele nunca livra seu povo dos adversários.",
+   "verseRef": "2 Reis 17:39", "correctOptionId": "false",
+   "evidenceSpan": "Ele vos livrará das mãos de todos os vossos adversários",
+   "feedbackCorrect": "O texto promete o contrário, quem teme ao Senhor será livrado dos adversários.",
+   "feedbackWrong": {"true": "Releia 17:39, ao Senhor temereis e ele vos livrará dos adversários."},
+   "hint": "Veja a promessa ligada a temer ao Senhor.",
+   "learningObjective": "Interpretar a promessa de livramento a quem teme a Deus.",
+   "evidence": ["2 Reis 17:39"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em 2 Reis 17:38, toque o que o povo não deve esquecer segundo a aliança.",
+   "verseRef": "2 Reis 17:38",
+   "options": [{"id": "a", "text": "aliança"}, {"id": "b", "text": "deuses"}, {"id": "c", "text": "convosco"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "da aliança que estabeleci convosco, não vos esquecereis",
+   "feedbackCorrect": "Esquecer a aliança é o caminho da queda, lembrá-la sustenta o temor ao Senhor.",
+   "feedbackWrong": {"b": "Outros deuses não devem ser temidos, o que guardar na memória é outra coisa.", "c": "Essa palavra diz com quem Deus fez o pacto, não o que guardar na memória."},
+   "hint": "Veja o que Deus estabeleceu com o povo.",
+   "learningObjective": "Sustentar com o texto a memória da aliança.",
+   "evidence": ["2 Reis 17:38"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura 2 Reis 17:37–38 sustenta sobre permanecer fiel?",
+   "verseRef": "2 Reis 17:37–38",
+   "options": [
+    {"id": "a", "text": "Lembrar a aliança sustenta a fidelidade"},
+    {"id": "b", "text": "Esquecer a aliança não afeta o temor"},
+    {"id": "c", "text": "Temer outros deuses protege o povo"},
+    {"id": "d", "text": "A lei escrita dispensa obedecer cada dia"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não vos esquecereis nem temereis outros deuses",
+   "feedbackCorrect": "Fidelidade diária nasce de não esquecer a aliança e não temer outros deuses.",
+   "feedbackWrong": {"b": "Esquecer a aliança e temer outros deuses andam juntos na queda do povo.", "c": "Temer outros deuses é proibido com clareza, não é proteção alguma.", "d": "O cuidado pedido é para todos os dias, não dispensa da obediência."},
+   "hint": "Veja o que não esquecer e o que não temer.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre fidelidade.",
+   "evidence": ["2 Reis 17:37–38"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o chamado da aliança ao povo de Deus?",
+   "verseRef": "2 Reis 17:39",
+   "options": [
+    {"id": "a", "text": "Deus tira o povo da terra do Egito"},
+    {"id": "b", "text": "O povo deve temer só ao Senhor"},
+    {"id": "c", "text": "Deus promete livrar quem o teme"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Ele vos livrará das mãos de todos os vossos adversários",
+   "feedbackCorrect": "O Deus que libertou no passado pede temor exclusivo e promete livrar seu povo.",
+   "feedbackWrong": {"default": "Comece pela libertação do Egito, a promessa de livramento vem depois do temor."},
+   "hint": "Siga libertação, temor e livramento.",
+   "learningObjective": "Ver a aliança como libertação, chamado e promessa.",
+   "evidence": ["2 Reis 17:36", "2 Reis 17:39"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em 2 Reis 17:39, o que Deus fará por quem o teme, diante dos adversários?",
+   "verseRef": "2 Reis 17:39",
+   "options": [{"id": "a", "text": "livrará"}, {"id": "b", "text": "deixará"}, {"id": "c", "text": "esquecerá"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele vos livrará das mãos de todos os vossos adversários",
+   "feedbackCorrect": "A promessa ao povo que teme é livramento das mãos de todos os adversários.",
+   "feedbackWrong": {"b": "Deus não abandona quem o teme, a promessa do texto é de livramento.", "c": "Esquecer é o perigo do povo com a aliança, não a ação de Deus aqui."},
+   "hint": "Veja a promessa no fim do versículo.",
+   "learningObjective": "Lembrar a promessa ligada ao temor ao Senhor.",
+   "evidence": ["2 Reis 17:39"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga 2 Reis 17:38 a Jeremias 31:31?",
+   "verseRef": "2 Reis 17:38",
+   "passageA": {"ref": "2 Reis 17:38"},
+   "passageB": {"ref": "Jeremias 31:31"},
+   "options": [
+    {"id": "a", "text": "Deus promete uma nova aliança"},
+    {"id": "b", "text": "Esquecer a aliança basta ao povo"},
+    {"id": "c", "text": "Deus desiste de fazer aliança"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "da aliança que estabeleci convosco",
+   "feedbackCorrect": "Ao povo que esquece a aliança, Jeremias anuncia Deus fazendo uma aliança nova.",
+   "feedbackWrong": {"b": "Esquecer a aliança é a doença diagnosticada, não um caminho suficiente.", "c": "Deus não desiste, ele promete uma aliança nova com seu povo."},
+   "hint": "Veja o que Jeremias anuncia para os dias futuros.",
+   "learningObjective": "Ligar a aliança esquecida à promessa de aliança nova.",
+   "evidence": ["2 Reis 17:38", "Jeremias 31:31"]
+  }
+ ]
+}

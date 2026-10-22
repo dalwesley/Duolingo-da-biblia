@@ -1,0 +1,3298 @@
+[
+  {
+    "id": "pedro-sem-pd-01-01",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1, a herança dos crentes está reservada nos céus para eles.",
+    "prompt": "Em 1 Pedro 1, a herança dos crentes está reservada nos céus para eles.",
+    "cue": "Em 1 Pedro 1, a herança dos crentes está reservada nos céus para eles.",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "reservada nos céus para vocês",
+    "feedbackCorrect": "Pedro diz que a herança está reservada nos céus para os crentes.",
+    "feedbackWrong": {
+      "false": "Releia 1 Pedro 1:4 e veja onde a herança está guardada."
+    },
+    "hint": "Leia o fim do versículo 4.",
+    "learningObjective": "Observar onde a herança dos crentes está guardada.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-01-02",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:3, toque quem é bendito no começo do louvor de Pedro.",
+    "prompt": "Em 1 Pedro 1:3, toque quem é bendito no começo do louvor de Pedro.",
+    "cue": "Em 1 Pedro 1:3, toque quem é bendito no começo do louvor de Pedro.",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressurreição"
+      },
+      {
+        "id": "b",
+        "text": "Deus e Pai"
+      },
+      {
+        "id": "c",
+        "text": "muita misericórdia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Pedro bendiz o Pai de nosso Senhor Jesus Cristo, autor da nova vida.",
+    "feedbackWrong": {
+      "a": "Isso é o meio da regeneração, não quem é bendito.",
+      "c": "Isso descreve como Deus agiu, não quem é bendito."
+    },
+    "hint": "Leia as primeiras palavras do versículo.",
+    "learningObjective": "Identificar a quem Pedro bendiz no início do trecho.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-01-03",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Pedro 1:4, como é a herança dos crentes?",
+    "prompt": "Segundo 1 Pedro 1:4, como é a herança dos crentes?",
+    "cue": "Segundo 1 Pedro 1:4, como é a herança dos crentes?",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dividida apenas entre os apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "Perdida quando vêm as provações"
+      },
+      {
+        "id": "c",
+        "text": "Incorruptível e reservada nos céus"
+      },
+      {
+        "id": "d",
+        "text": "Provisória e sujeita a estragar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Para uma herança incorruptível, sem mácula e imarcescível",
+    "feedbackCorrect": "A herança não se corrompe nem murcha, e está guardada nos céus.",
+    "feedbackWrong": {
+      "a": "Ela é reservada para os crentes, não só para apóstolos.",
+      "b": "As provações não apagam o que Deus reserva nos céus.",
+      "d": "O texto diz o contrário, que ela é incorruptível e imarcescível."
+    },
+    "hint": "Leia os adjetivos do versículo 4.",
+    "learningObjective": "Observar como o texto descreve a herança.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-01-04",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Pedro 1:3 na ordem do texto.",
+    "prompt": "Monte 1 Pedro 1:3 na ordem do texto.",
+    "cue": "Monte 1 Pedro 1:3 na ordem do texto.",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "que, segundo a sua muita misericórdia, nos regenerou"
+      },
+      {
+        "id": "c",
+        "text": "para uma viva esperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Pedro bendiz a Deus, lembra sua misericórdia e nomeia a esperança.",
+    "feedbackWrong": {
+      "default": "Comece bendizendo a Deus; a esperança fecha a frase."
+    },
+    "hint": "O versículo começa com louvor.",
+    "learningObjective": "Reconhecer a sequência de 1 Pedro 1:3.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-01-05",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:4, qual é a primeira qualidade da herança?",
+    "prompt": "Em 1 Pedro 1:4, qual é a primeira qualidade da herança?",
+    "cue": "Em 1 Pedro 1:4, qual é a primeira qualidade da herança?",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "template": "Para uma herança ___, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terrena"
+      },
+      {
+        "id": "b",
+        "text": "temporária"
+      },
+      {
+        "id": "c",
+        "text": "incorruptível"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Para uma herança incorruptível, sem mácula e imarcescível",
+    "feedbackCorrect": "A herança não pode se corromper, pois Deus a guarda nos céus.",
+    "feedbackWrong": {
+      "a": "Ela está reservada nos céus, não limitada a esta terra.",
+      "b": "Ela não tem prazo para estragar; Deus a reserva nos céus."
+    },
+    "hint": "Leia o primeiro adjetivo do versículo 4.",
+    "learningObjective": "Lembrar a primeira qualidade da herança.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-01-06",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Pedro 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 1:3 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 1:3 comunica que se liga a este contexto?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "passageA": {
+      "ref": "1 Pedro 1:3",
+      "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus nos deu nova vida por sua misericórdia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Herança comprada por nós"
+      },
+      {
+        "id": "b",
+        "text": "Salvação sem a ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "Esperança nascida da ressurreição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "A nova vida gera esperança porque Jesus ressuscitou dentre os mortos.",
+    "feedbackWrong": {
+      "a": "A herança é presente da misericórdia de Deus, não compra humana.",
+      "b": "Pedro liga a esperança justamente à ressurreição de Jesus."
+    },
+    "hint": "Veja o meio pelo qual fomos regenerados.",
+    "learningObjective": "Ligar a nova vida à esperança da ressurreição.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-01-01",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Pedro 1, a viva esperança nasce mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "prompt": "Em 1 Pedro 1, a viva esperança nasce mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "cue": "Em 1 Pedro 1, a viva esperança nasce mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mediante a ressurreição de Jesus Cristo dentre os mortos",
+    "feedbackCorrect": "A esperança é viva porque nasce da ressurreição de Jesus.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1 Pedro 1:3 e veja o meio da regeneração."
+    },
+    "hint": "Leia a última parte do versículo 3.",
+    "learningObjective": "Compreender a ligação entre ressurreição e esperança.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-01-02",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Pedro 1:3, toque a palavra que indica por meio de que fomos regenerados.",
+    "prompt": "Em 1 Pedro 1:3, toque a palavra que indica por meio de que fomos regenerados.",
+    "cue": "Em 1 Pedro 1:3, toque a palavra que indica por meio de que fomos regenerados.",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bendito"
+      },
+      {
+        "id": "b",
+        "text": "mediante"
+      },
+      {
+        "id": "c",
+        "text": "segundo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mediante a ressurreição de Jesus Cristo dentre os mortos",
+    "feedbackCorrect": "A regeneração acontece por meio da ressurreição de Jesus.",
+    "feedbackWrong": {
+      "a": "Isso abre o louvor, não indica o meio da regeneração.",
+      "c": "Isso aponta a misericórdia como base, não o meio indicado."
+    },
+    "hint": "Procure a palavra logo antes de ressurreição.",
+    "learningObjective": "Reconhecer o meio da regeneração no texto.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-01-03",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como os crentes são guardados, segundo 1 Pedro 1:5?",
+    "prompt": "Como os crentes são guardados, segundo 1 Pedro 1:5?",
+    "cue": "Como os crentes são guardados, segundo 1 Pedro 1:5?",
+    "verseRef": "1 Pedro 1:5",
+    "passageText": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem qualquer guarda até o fim"
+      },
+      {
+        "id": "b",
+        "text": "Guardados apenas pelo próprio esforço"
+      },
+      {
+        "id": "c",
+        "text": "Guardados por Deus enquanto creem"
+      },
+      {
+        "id": "d",
+        "text": "Protegidos somente quando não sofrem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês estão sendo guardados pelo poder de Deus",
+    "feedbackCorrect": "Pela fé, os crentes estão sendo guardados pelo poder de Deus.",
+    "feedbackWrong": {
+      "a": "O texto afirma que eles já estão sendo guardados agora.",
+      "b": "Quem guarda é Deus, pelo seu poder, e não o esforço humano.",
+      "d": "Pedro escreve justamente a crentes que passam por provações."
+    },
+    "hint": "Veja quem guarda e por qual meio.",
+    "learningObjective": "Relacionar fé e guarda de Deus em 1 Pedro 1:5.",
+    "evidence": [
+      "1 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-01-04",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em 1 Pedro 1:3–4?",
+    "prompt": "Como avança a cena em 1 Pedro 1:3–4?",
+    "cue": "Como avança a cena em 1 Pedro 1:3–4?",
+    "verseRef": "1 Pedro 1:3–4",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos. Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus regenera por sua misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Uma viva esperança é dada aos crentes"
+      },
+      {
+        "id": "c",
+        "text": "Uma herança os espera nos céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "Da misericórdia nasce a esperança, e dela se abre a herança futura.",
+    "feedbackWrong": {
+      "default": "Comece pela ação de Deus no versículo 3; a herança vem no 4."
+    },
+    "hint": "A herança aparece só no versículo 4.",
+    "learningObjective": "Compreender o movimento de 1 Pedro 1:3–4.",
+    "evidence": [
+      "1 Pedro 1:3–4"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-01-05",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Pedro 1:5, por meio de que os crentes estão sendo guardados?",
+    "prompt": "Em 1 Pedro 1:5, por meio de que os crentes estão sendo guardados?",
+    "cue": "Em 1 Pedro 1:5, por meio de que os crentes estão sendo guardados?",
+    "verseRef": "1 Pedro 1:5",
+    "passageText": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "template": "Que, pela ___, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "medo"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus",
+    "feedbackCorrect": "Os crentes permanecem guardados por Deus enquanto confiam nele.",
+    "feedbackWrong": {
+      "b": "O texto não fala de temor paralisante, mas de confiança em Deus.",
+      "c": "Bens materiais não guardam ninguém para a salvação final."
+    },
+    "hint": "Leia as primeiras palavras do versículo 5.",
+    "learningObjective": "Compreender o papel da confiança em Deus na guarda.",
+    "evidence": [
+      "1 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-01-06",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Pedro 1:4 a Romanos 6:4?",
+    "prompt": "O que liga 1 Pedro 1:4 a Romanos 6:4?",
+    "cue": "O que liga 1 Pedro 1:4 a Romanos 6:4?",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "passageA": {
+      "ref": "1 Pedro 1:4",
+      "text": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês."
+    },
+    "passageB": {
+      "ref": "Romanos 6:4",
+      "text": "Portanto, fomos sepultados com ele na morte pelo batismo, a fim de que, assim como Cristo foi ressuscitado dentre os mortos pela glória do Pai, também andemos nós em novidade de vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Herança sem nova vida"
+      },
+      {
+        "id": "b",
+        "text": "Nova vida após a ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição sem esperança futura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "reservada nos céus para vocês",
+    "feedbackCorrect": "A ressurreição de Cristo abre vida nova agora e herança futura.",
+    "feedbackWrong": {
+      "a": "Em Romanos, a ressurreição chama a andar em novidade de vida.",
+      "c": "Pedro liga a ressurreição justamente à esperança e à herança."
+    },
+    "hint": "Compare o que a ressurreição produz nos dois textos.",
+    "learningObjective": "Relacionar ressurreição, vida nova e herança futura.",
+    "evidence": [
+      "1 Pedro 1:4",
+      "Romanos 6:4"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-01-01",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 1, a herança dos crentes pode perder o brilho e se estragar com o tempo.",
+    "prompt": "Em 1 Pedro 1, a herança dos crentes pode perder o brilho e se estragar com o tempo.",
+    "cue": "Em 1 Pedro 1, a herança dos crentes pode perder o brilho e se estragar com o tempo.",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sem mácula e imarcescível",
+    "feedbackCorrect": "Imarcescível quer dizer que não murcha: a herança não se estraga.",
+    "feedbackWrong": {
+      "true": "Releia os adjetivos de 1 Pedro 1:4 sobre a herança."
+    },
+    "hint": "Repare nos dois últimos adjetivos do versículo 4.",
+    "learningObjective": "Interpretar a segurança da herança em 1 Pedro 1:4.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-01-02",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 1:4, toque a palavra que diz que a herança não murcha.",
+    "prompt": "Em 1 Pedro 1:4, toque a palavra que diz que a herança não murcha.",
+    "cue": "Em 1 Pedro 1:4, toque a palavra que diz que a herança não murcha.",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "imarcescível"
+      },
+      {
+        "id": "b",
+        "text": "reservada"
+      },
+      {
+        "id": "c",
+        "text": "incorruptível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem mácula e imarcescível",
+    "feedbackCorrect": "Essa palavra diz que a herança não murcha nem perde o brilho.",
+    "feedbackWrong": {
+      "b": "Isso diz onde ela está guardada, não que não murcha.",
+      "c": "Isso diz que ela não se corrompe, não que não murcha."
+    },
+    "hint": "Procure o último adjetivo do versículo.",
+    "learningObjective": "Sustentar com o texto que a herança não murcha.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-01-03",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Pedro 1:3–4 sustenta sobre a esperança cristã?",
+    "prompt": "Que leitura 1 Pedro 1:3–4 sustenta sobre a esperança cristã?",
+    "cue": "Que leitura 1 Pedro 1:3–4 sustenta sobre a esperança cristã?",
+    "verseRef": "1 Pedro 1:3–4",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos. Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A misericórdia de Deus dispensa a fé"
+      },
+      {
+        "id": "b",
+        "text": "A esperança cristã se apoia na ressurreição de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "A herança futura dispensa nova vida hoje"
+      },
+      {
+        "id": "d",
+        "text": "A esperança depende das circunstâncias presentes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "A esperança é viva porque Jesus ressuscitou e Deus guarda a herança.",
+    "feedbackWrong": {
+      "a": "Pedro diz que os crentes são guardados pela fé (1:5).",
+      "c": "Quem foi regenerado já recebeu nova vida, não só promessa futura.",
+      "d": "Ela se apoia na ressurreição, não no momento que o crente vive."
+    },
+    "hint": "Veja em que fato passado a esperança se apoia.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a esperança.",
+    "evidence": [
+      "1 Pedro 1:3–4"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-01-04",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 Pedro 1:3?",
+    "prompt": "Qual sequência revela o sentido de 1 Pedro 1:3?",
+    "cue": "Qual sequência revela o sentido de 1 Pedro 1:3?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus ressuscita dentre os mortos"
+      },
+      {
+        "id": "b",
+        "text": "Crentes nascem para uma viva esperança"
+      },
+      {
+        "id": "c",
+        "text": "Herança guardada os aguarda no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mediante a ressurreição de Jesus Cristo dentre os mortos",
+    "feedbackCorrect": "A ressurreição gera a nova vida, que se abre para a herança futura.",
+    "feedbackWrong": {
+      "default": "Comece pelo fato da ressurreição; a herança é o ponto de chegada."
+    },
+    "hint": "Siga a ordem do fato para o seu fruto.",
+    "learningObjective": "Ver a ressurreição como base da esperança e da herança.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-01-05",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 1:3, que verbo mostra a ação de Deus que nos deu nova vida?",
+    "prompt": "Em 1 Pedro 1:3, que verbo mostra a ação de Deus que nos deu nova vida?",
+    "cue": "Em 1 Pedro 1:3, que verbo mostra a ação de Deus que nos deu nova vida?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "template": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos ___ para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "regenerou"
+      },
+      {
+        "id": "b",
+        "text": "reservou"
+      },
+      {
+        "id": "c",
+        "text": "guardou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "Deus nos fez nascer de novo para uma viva esperança.",
+    "feedbackWrong": {
+      "b": "Reservar é o que Deus faz com a herança, no versículo 4.",
+      "c": "Guardar é o que Deus faz com os crentes, no versículo 5."
+    },
+    "hint": "Procure o verbo logo depois de misericórdia.",
+    "learningObjective": "Lembrar o termo que carrega a nova vida em Cristo.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-01-06",
+    "trail": "pedro",
+    "section": "pd-01",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Pedro 1:3 a João 3:3?",
+    "prompt": "O que liga 1 Pedro 1:3 a João 3:3?",
+    "cue": "O que liga 1 Pedro 1:3 a João 3:3?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "passageA": {
+      "ref": "1 Pedro 1:3",
+      "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos."
+    },
+    "passageB": {
+      "ref": "João 3:3",
+      "text": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nascer de novo por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Esperança sem novo nascimento"
+      },
+      {
+        "id": "c",
+        "text": "Nascer de novo por esforço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "Jesus e Pedro falam da mesma obra: Deus faz nascer de novo.",
+    "feedbackWrong": {
+      "b": "A esperança de Pedro nasce justamente dessa nova vida.",
+      "c": "Nos dois textos, nascer de novo é obra de Deus, não conquista."
+    },
+    "hint": "Compare o que Jesus exige e o que Pedro celebra.",
+    "learningObjective": "Ligar a regeneração de Pedro ao novo nascimento em João.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "João 3:3"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-02-01",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Pedro 2, Cristo, quando insultado, não revidava com insulto.",
+    "prompt": "Em 1 Pedro 2, Cristo, quando insultado, não revidava com insulto.",
+    "cue": "Em 1 Pedro 2, Cristo, quando insultado, não revidava com insulto.",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Quando o insultavam, não revidava com insulto",
+    "feedbackCorrect": "Insultado, Cristo não devolvia insulto nem fazia ameaças.",
+    "feedbackWrong": {
+      "false": "Releia 1 Pedro 2:23 e veja como Cristo reagia aos insultos."
+    },
+    "hint": "Leia a primeira parte do versículo 23.",
+    "learningObjective": "Observar a reação de Cristo ao insulto.",
+    "evidence": [
+      "1 Pedro 2:23"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-02-02",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Pedro 2:21, toque o que Cristo deixou para os crentes.",
+    "prompt": "Em 1 Pedro 2:21, toque o que Cristo deixou para os crentes.",
+    "cue": "Em 1 Pedro 2:21, toque o que Cristo deixou para os crentes.",
+    "verseRef": "1 Pedro 2:21",
+    "passageText": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exemplo"
+      },
+      {
+        "id": "b",
+        "text": "lugar"
+      },
+      {
+        "id": "c",
+        "text": "passos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "deixando-nos um exemplo, para que sigamos os seus passos",
+    "feedbackCorrect": "Cristo sofreu e deixou um caminho para quem o segue.",
+    "feedbackWrong": {
+      "b": "Isso diz onde ele sofreu por nós, não o que deixou.",
+      "c": "Isso é o que seguimos, não o que ele deixou nomeado antes."
+    },
+    "hint": "Procure o substantivo depois de deixando-nos.",
+    "learningObjective": "Identificar o que Cristo deixou aos crentes.",
+    "evidence": [
+      "1 Pedro 2:21"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-02-03",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Pedro 2:21, por que Cristo é apresentado aos crentes?",
+    "prompt": "Segundo 1 Pedro 2:21, por que Cristo é apresentado aos crentes?",
+    "cue": "Segundo 1 Pedro 2:21, por que Cristo é apresentado aos crentes?",
+    "verseRef": "1 Pedro 2:21",
+    "passageText": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofreu sem nunca ensinar ninguém"
+      },
+      {
+        "id": "b",
+        "text": "Evitou todo sofrimento injusto"
+      },
+      {
+        "id": "c",
+        "text": "Mandou revidar os insultos"
+      },
+      {
+        "id": "d",
+        "text": "Sofreu e deixou exemplo a seguir"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "deixando-nos um exemplo, para que sigamos os seus passos",
+    "feedbackCorrect": "Cristo sofreu em nosso lugar e deixou um caminho a seguir.",
+    "feedbackWrong": {
+      "a": "Ele deixou exemplo justamente para ser seguido.",
+      "b": "Ele sofreu injustamente, sem pecado e sem revidar.",
+      "c": "Ele não revidava quando o insultavam (2:23)."
+    },
+    "hint": "Leia o que ele deixou e para quê.",
+    "learningObjective": "Observar Cristo como exemplo em 1 Pedro 2:21.",
+    "evidence": [
+      "1 Pedro 2:21"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-02-04",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Pedro 2:23 na ordem do texto.",
+    "prompt": "Monte 1 Pedro 2:23 na ordem do texto.",
+    "cue": "Monte 1 Pedro 2:23 na ordem do texto.",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando o insultavam, não revidava com insulto"
+      },
+      {
+        "id": "b",
+        "text": "e, ao sofrer, não fazia ameaças"
+      },
+      {
+        "id": "c",
+        "text": "mas entregava-se àquele que julga com justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando o insultavam, não revidava com insulto",
+    "feedbackCorrect": "Sem revidar e sem ameaçar, Cristo se entregava ao Juiz justo.",
+    "feedbackWrong": {
+      "default": "Comece pela reação ao insulto; a entrega a Deus fecha o versículo."
+    },
+    "hint": "O versículo começa com o insulto recebido.",
+    "learningObjective": "Reconhecer a sequência de 1 Pedro 2:23.",
+    "evidence": [
+      "1 Pedro 2:23"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-02-05",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Pedro 2:22, o que Cristo não cometeu?",
+    "prompt": "Em 1 Pedro 2:22, o que Cristo não cometeu?",
+    "cue": "Em 1 Pedro 2:22, o que Cristo não cometeu?",
+    "verseRef": "1 Pedro 2:22",
+    "passageText": "Ele não cometeu pecado, nem dolo algum se encontrou em sua boca.",
+    "template": "Ele não cometeu ___, nem dolo algum se encontrou em sua boca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "engano"
+      },
+      {
+        "id": "b",
+        "text": "insulto"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele não cometeu pecado",
+    "feedbackCorrect": "Cristo sofreu sem ter cometido pecado algum.",
+    "feedbackWrong": {
+      "a": "O engano aparece na boca dele, não como ato cometido aqui.",
+      "b": "Insulto é o que ele recebia, não o que ele fazia."
+    },
+    "hint": "Leia a primeira frase do versículo 22.",
+    "learningObjective": "Lembrar a pureza de Cristo no sofrimento.",
+    "evidence": [
+      "1 Pedro 2:22"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-02-06",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Pedro 2:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 2:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:21 comunica que se liga a este contexto?",
+    "verseRef": "1 Pedro 2:21",
+    "passageText": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos.",
+    "passageA": {
+      "ref": "1 Pedro 2:21",
+      "text": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Crentes chamados a seguir Cristo quando sofrem fazendo o bem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reviver insultos recebidos"
+      },
+      {
+        "id": "b",
+        "text": "Seguir os passos de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Evitar todo chamado de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que sigamos os seus passos",
+    "feedbackCorrect": "O chamado do crente é andar no mesmo caminho de Cristo.",
+    "feedbackWrong": {
+      "a": "Cristo não revidava; seguir seus passos é o contrário disso.",
+      "c": "O texto afirma um chamado, não uma fuga dele."
+    },
+    "hint": "Veja a finalidade do exemplo deixado.",
+    "learningObjective": "Ligar o exemplo de Cristo ao chamado do crente.",
+    "evidence": [
+      "1 Pedro 2:21"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-02-01",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Pedro 2, suportar sofrimento por pecar é o que o texto apresenta como grato a Deus.",
+    "prompt": "Em 1 Pedro 2, suportar sofrimento por pecar é o que o texto apresenta como grato a Deus.",
+    "cue": "Em 1 Pedro 2, suportar sofrimento por pecar é o que o texto apresenta como grato a Deus.",
+    "verseRef": "1 Pedro 2:20",
+    "passageText": "Pois que louvor há, se, pecando e sendo esbofeteados por isso, o suportais com paciência? Se, entretanto, quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus",
+    "feedbackCorrect": "Grato a Deus é suportar com paciência sofrendo por fazer o bem.",
+    "feedbackWrong": {
+      "true": "Releia 2:20 e compare pecar com praticar o bem."
+    },
+    "hint": "Compare as duas metades do versículo 20.",
+    "learningObjective": "Compreender qual sofrimento o texto aprova.",
+    "evidence": [
+      "1 Pedro 2:20"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-02-02",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Pedro 2:23, toque a palavra que marca a virada da reação de Cristo.",
+    "prompt": "Em 1 Pedro 2:23, toque a palavra que marca a virada da reação de Cristo.",
+    "cue": "Em 1 Pedro 2:23, toque a palavra que marca a virada da reação de Cristo.",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "ao"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas entregava-se àquele que julga com justiça",
+    "feedbackCorrect": "Em vez de revidar, Cristo se entregava a quem julga com justiça.",
+    "feedbackWrong": {
+      "a": "Isso abre a cena do insulto, não marca a virada.",
+      "c": "Isso indica o momento do sofrer, não a virada."
+    },
+    "hint": "Procure uma palavra curta antes de entregava-se.",
+    "learningObjective": "Reconhecer o marcador de contraste em 2:23.",
+    "evidence": [
+      "1 Pedro 2:23"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-02-03",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual sofrimento 1 Pedro 2:20 chama de grato a Deus?",
+    "prompt": "Qual sofrimento 1 Pedro 2:20 chama de grato a Deus?",
+    "cue": "Qual sofrimento 1 Pedro 2:20 chama de grato a Deus?",
+    "verseRef": "1 Pedro 2:20",
+    "passageText": "Pois que louvor há, se, pecando e sendo esbofeteados por isso, o suportais com paciência? Se, entretanto, quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofrer buscando vingança pessoal"
+      },
+      {
+        "id": "b",
+        "text": "Sofrer como castigo por pecar"
+      },
+      {
+        "id": "c",
+        "text": "Sofrer sem confiar em Deus"
+      },
+      {
+        "id": "d",
+        "text": "Sofrer por fazer o bem com paciência"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus",
+    "feedbackCorrect": "O texto aprova quem sofre por fazer o bem e suporta com paciência.",
+    "feedbackWrong": {
+      "a": "Cristo não revidava nem buscava vingança ao sofrer (2:23).",
+      "b": "Sofrer por pecar não recebe louvor, segundo o próprio versículo.",
+      "c": "Cristo se entregava a Deus, que julga com justiça (2:23)."
+    },
+    "hint": "Compare pecar e praticar o bem no versículo.",
+    "learningObjective": "Relacionar fazer o bem e suportar com paciência.",
+    "evidence": [
+      "1 Pedro 2:20"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-02-04",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em 1 Pedro 2:21?",
+    "prompt": "Como avança a cena em 1 Pedro 2:21?",
+    "cue": "Como avança a cena em 1 Pedro 2:21?",
+    "verseRef": "1 Pedro 2:21",
+    "passageText": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo sofre em nosso lugar"
+      },
+      {
+        "id": "b",
+        "text": "Ele deixa um exemplo claro"
+      },
+      {
+        "id": "c",
+        "text": "Seguimos os seus passos hoje"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pois também Cristo sofreu em nosso lugar",
+    "feedbackCorrect": "Cristo sofre, deixa o exemplo, e o crente segue seus passos.",
+    "feedbackWrong": {
+      "default": "Comece pelo sofrimento de Cristo; seguir é a resposta final."
+    },
+    "hint": "Seguir os passos é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de 1 Pedro 2:21.",
+    "evidence": [
+      "1 Pedro 2:21"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-02-05",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Pedro 2:23, o que Cristo não fazia ao sofrer?",
+    "prompt": "Em 1 Pedro 2:23, o que Cristo não fazia ao sofrer?",
+    "cue": "Em 1 Pedro 2:23, o que Cristo não fazia ao sofrer?",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "template": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ___, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "orações"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "ameaças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e, ao sofrer, não fazia ameaças",
+    "feedbackCorrect": "Ao sofrer, Cristo não ameaçava quem o fazia sofrer.",
+    "feedbackWrong": {
+      "a": "O texto não trata disso aqui; fala do que ele não fazia ao sofrer.",
+      "b": "Isso não é a palavra que o versículo nega sobre Cristo."
+    },
+    "hint": "Leia a parte do meio do versículo 23.",
+    "learningObjective": "Compreender a reação de Cristo ao sofrer.",
+    "evidence": [
+      "1 Pedro 2:23"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-02-06",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Pedro 2:23 a Isaías 53:9?",
+    "prompt": "O que liga 1 Pedro 2:23 a Isaías 53:9?",
+    "cue": "O que liga 1 Pedro 2:23 a Isaías 53:9?",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "passageA": {
+      "ref": "1 Pedro 2:23",
+      "text": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça."
+    },
+    "passageB": {
+      "ref": "Isaías 53:9",
+      "text": "E designaram sua sepultura entre os ímpios, mas na sua morte esteve com o rico, pois nunca praticou injustiça, nem houve dolo em sua boca."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Revide diante do insulto"
+      },
+      {
+        "id": "b",
+        "text": "Culpa pelo próprio erro"
+      },
+      {
+        "id": "c",
+        "text": "Sofrimento sem pecado nem engano"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quando o insultavam, não revidava com insulto",
+    "feedbackCorrect": "Os dois textos mostram o Servo sem pecado e sem engano na boca.",
+    "feedbackWrong": {
+      "a": "Cristo não revidava, e Isaías não mostra revide do Servo.",
+      "b": "O Servo sofre sem ter cometido o erro que lhe atribuem."
+    },
+    "hint": "Compare a boca e a conduta nos dois textos.",
+    "learningObjective": "Relacionar Cristo ao Servo descrito em Isaías.",
+    "evidence": [
+      "1 Pedro 2:23",
+      "Isaías 53:9"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-02-01",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 2, o sofrimento do crente é sempre castigo por um pecado pessoal.",
+    "prompt": "Em 1 Pedro 2, o sofrimento do crente é sempre castigo por um pecado pessoal.",
+    "cue": "Em 1 Pedro 2, o sofrimento do crente é sempre castigo por um pecado pessoal.",
+    "verseRef": "1 Pedro 2:19–20",
+    "passageText": "Porque é digno de reconhecimento se alguém, por causa da consciência diante de Deus, suporta tristezas, sofrendo injustamente. Pois que louvor há, se, pecando e sendo esbofeteados por isso, o suportais com paciência? Se, entretanto, quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "suporta tristezas, sofrendo injustamente",
+    "feedbackCorrect": "Pedro fala de sofrer injustamente, fazendo o bem, e não só por pecar.",
+    "feedbackWrong": {
+      "true": "Releia 2:19-20 e veja o sofrimento por fazer o bem."
+    },
+    "hint": "Repare em como Pedro qualifica esse sofrer.",
+    "learningObjective": "Interpretar o sofrimento injusto em 1 Pedro 2.",
+    "evidence": [
+      "1 Pedro 2:19–20"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-02-02",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 2:24, toque o trecho que mostra como fomos sarados.",
+    "prompt": "Em 1 Pedro 2:24, toque o trecho que mostra como fomos sarados.",
+    "cue": "Em 1 Pedro 2:24, toque o trecho que mostra como fomos sarados.",
+    "verseRef": "1 Pedro 2:24",
+    "passageText": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os pecados"
+      },
+      {
+        "id": "b",
+        "text": "suas chagas"
+      },
+      {
+        "id": "c",
+        "text": "seu corpo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por suas chagas, vocês foram sarados",
+    "feedbackCorrect": "Pedro liga a nossa cura às feridas sofridas por Cristo.",
+    "feedbackWrong": {
+      "a": "Isso é o que ele carregou, não o meio da cura citado no fim.",
+      "c": "Isso diz onde ele carregou os pecados, não como fomos sarados."
+    },
+    "hint": "Leia a última frase do versículo 24.",
+    "learningObjective": "Sustentar com o texto a cura pelas chagas de Cristo.",
+    "evidence": [
+      "1 Pedro 2:24"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-02-03",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Pedro 2:21 sustenta sobre o sofrimento de Cristo?",
+    "prompt": "Que leitura 1 Pedro 2:21 sustenta sobre o sofrimento de Cristo?",
+    "cue": "Que leitura 1 Pedro 2:21 sustenta sobre o sofrimento de Cristo?",
+    "verseRef": "1 Pedro 2:21",
+    "passageText": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo sofreu sem relação com nossos pecados"
+      },
+      {
+        "id": "b",
+        "text": "Cristo sofreu apenas como exemplo moral"
+      },
+      {
+        "id": "c",
+        "text": "Cristo sofreu para ensinar o revide"
+      },
+      {
+        "id": "d",
+        "text": "Cristo salva e deixa um caminho a seguir"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "pois também Cristo sofreu em nosso lugar",
+    "feedbackCorrect": "Ele sofreu em nosso lugar e, ao mesmo tempo, deixou exemplo.",
+    "feedbackWrong": {
+      "a": "O texto diz que ele carregou os nossos pecados no madeiro.",
+      "b": "Ele também carregou nossos pecados, não foi só exemplo (2:24).",
+      "c": "Ele não revidava nem fazia ameaças ao sofrer (2:23)."
+    },
+    "hint": "Junte em nosso lugar com o exemplo deixado.",
+    "learningObjective": "Escolher a interpretação que une salvação e exemplo.",
+    "evidence": [
+      "1 Pedro 2:21"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-02-04",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 Pedro 2:22–23?",
+    "prompt": "Qual sequência revela o sentido de 1 Pedro 2:22–23?",
+    "cue": "Qual sequência revela o sentido de 1 Pedro 2:22–23?",
+    "verseRef": "1 Pedro 2:22–23",
+    "passageText": "Ele não cometeu pecado, nem dolo algum se encontrou em sua boca. Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo vive sem pecado e sem engano"
+      },
+      {
+        "id": "b",
+        "text": "Ele sofre sem revidar nem ameaçar"
+      },
+      {
+        "id": "c",
+        "text": "Ele se entrega ao Juiz justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele não cometeu pecado",
+    "feedbackCorrect": "Sem pecado, sem revide: Cristo confia sua causa a Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela pureza de Cristo; a entrega a Deus fecha a cena."
+    },
+    "hint": "A entrega a Deus é o último passo do trecho.",
+    "learningObjective": "Ver a confiança de Cristo como centro da cena.",
+    "evidence": [
+      "1 Pedro 2:22–23"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-02-05",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 2:24, para que os crentes devem viver, mortos para os pecados?",
+    "prompt": "Em 1 Pedro 2:24, para que os crentes devem viver, mortos para os pecados?",
+    "cue": "Em 1 Pedro 2:24, para que os crentes devem viver, mortos para os pecados?",
+    "verseRef": "1 Pedro 2:24",
+    "passageText": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados.",
+    "template": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a ___; por suas chagas, vocês foram sarados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "vingança"
+      },
+      {
+        "id": "c",
+        "text": "fama"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vivamos para a justiça",
+    "feedbackCorrect": "Mortos para o pecado, os crentes vivem para a vida certa diante de Deus.",
+    "feedbackWrong": {
+      "b": "Cristo não revidava; a vida nova não é movida por vingança.",
+      "c": "O alvo do texto é a vida certa, não a reputação pessoal."
+    },
+    "hint": "Leia a parte depois de mortos para os pecados.",
+    "learningObjective": "Lembrar o termo que carrega o fruto da cruz.",
+    "evidence": [
+      "1 Pedro 2:24"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-02-06",
+    "trail": "pedro",
+    "section": "pd-02",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Pedro 2:24 a Isaías 53:5?",
+    "prompt": "O que liga 1 Pedro 2:24 a Isaías 53:5?",
+    "cue": "O que liga 1 Pedro 2:24 a Isaías 53:5?",
+    "verseRef": "1 Pedro 2:24",
+    "passageText": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados.",
+    "passageA": {
+      "ref": "1 Pedro 2:24",
+      "text": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados."
+    },
+    "passageB": {
+      "ref": "Isaías 53:5",
+      "text": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sarados por suas feridas"
+      },
+      {
+        "id": "b",
+        "text": "Sofrimento sem qualquer propósito"
+      },
+      {
+        "id": "c",
+        "text": "Curados por nosso esforço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por suas chagas, vocês foram sarados",
+    "feedbackCorrect": "Pedro usa a linguagem de Isaías: pelas feridas dele, fomos sarados.",
+    "feedbackWrong": {
+      "b": "Isaías e Pedro ligam esse sofrer à cura de outros.",
+      "c": "A cura vem das feridas do Servo, não do esforço de quem sofre."
+    },
+    "hint": "Compare a última frase dos dois trechos.",
+    "learningObjective": "Ligar as chagas de Cristo à profecia de Isaías.",
+    "evidence": [
+      "1 Pedro 2:24",
+      "Isaías 53:5"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-03-01",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3, o Senhor não retarda o cumprimento da sua promessa.",
+    "prompt": "Em 2 Pedro 3, o Senhor não retarda o cumprimento da sua promessa.",
+    "cue": "Em 2 Pedro 3, o Senhor não retarda o cumprimento da sua promessa.",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor não retarda em cumprir a sua promessa",
+    "feedbackCorrect": "A aparente demora não é atraso de Deus, mas paciência dele.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 2 Pedro 3:9 sobre a promessa."
+    },
+    "hint": "Leia a primeira frase do versículo 9.",
+    "learningObjective": "Observar que Deus não retarda sua promessa.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-03-02",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3:9, toque a palavra que diz como o Senhor é conosco.",
+    "prompt": "Em 2 Pedro 3:9, toque a palavra que diz como o Senhor é conosco.",
+    "cue": "Em 2 Pedro 3:9, toque a palavra que diz como o Senhor é conosco.",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "contrário"
+      },
+      {
+        "id": "b",
+        "text": "demorada"
+      },
+      {
+        "id": "c",
+        "text": "longânimo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pelo contrário, é longânimo convosco",
+    "feedbackCorrect": "Deus é paciente conosco, esperando o arrependimento de todos.",
+    "feedbackWrong": {
+      "a": "Isso marca a virada da frase, não como Deus é conosco.",
+      "b": "Isso é como alguns julgam a promessa, não como Deus é."
+    },
+    "hint": "Procure o adjetivo depois de pelo contrário.",
+    "learningObjective": "Identificar como Deus é descrito em 3:9.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-03-03",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Pedro 3:8, como é o tempo para o Senhor?",
+    "prompt": "Segundo 2 Pedro 3:8, como é o tempo para o Senhor?",
+    "cue": "Segundo 2 Pedro 3:8, como é o tempo para o Senhor?",
+    "verseRef": "2 Pedro 3:8",
+    "passageText": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um dia é como mil anos"
+      },
+      {
+        "id": "b",
+        "text": "Mil anos são como nada eterno"
+      },
+      {
+        "id": "c",
+        "text": "O tempo não passa para ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Um dia é como dez anos apenas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para o Senhor, um dia é como mil anos",
+    "feedbackCorrect": "Deus não mede o tempo como nós: um dia, para ele, é como mil anos.",
+    "feedbackWrong": {
+      "b": "O texto compara um dia a mil anos, nos dois sentidos.",
+      "c": "Pedro fala do modo de Deus ver o tempo, não de paralisia.",
+      "d": "A comparação do texto é com mil anos, não com dez."
+    },
+    "hint": "Leia a comparação do versículo 8.",
+    "learningObjective": "Observar a comparação de tempo em 3:8.",
+    "evidence": [
+      "2 Pedro 3:8"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-03-04",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 3:9 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 3:9 na ordem do texto.",
+    "cue": "Monte 2 Pedro 3:9 na ordem do texto.",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor não retarda em cumprir a sua promessa"
+      },
+      {
+        "id": "b",
+        "text": "pelo contrário, é longânimo convosco"
+      },
+      {
+        "id": "c",
+        "text": "não desejando que ninguém pereça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor não retarda em cumprir a sua promessa",
+    "feedbackCorrect": "Deus não tarda; é paciente e não quer que ninguém pereça.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa; o desejo de Deus fecha o trecho."
+    },
+    "hint": "O versículo começa falando da promessa.",
+    "learningObjective": "Reconhecer a sequência de 2 Pedro 3:9.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-03-05",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3:10, como virá o Dia do Senhor à noite?",
+    "prompt": "Em 2 Pedro 3:10, como virá o Dia do Senhor à noite?",
+    "cue": "Em 2 Pedro 3:10, como virá o Dia do Senhor à noite?",
+    "verseRef": "2 Pedro 3:10",
+    "passageText": "Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas.",
+    "template": "Mas o dia do Senhor virá como um ___ à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ladrão"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "juiz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o dia do Senhor virá como um ladrão à noite",
+    "feedbackCorrect": "O Dia virá de repente, sem aviso, como a chegada de um ladrão.",
+    "feedbackWrong": {
+      "b": "A comparação do texto é com quem chega sem ser esperado.",
+      "c": "Juízo haverá, mas a comparação aqui é com a surpresa."
+    },
+    "hint": "Veja a comparação logo depois de virá como um.",
+    "learningObjective": "Lembrar a comparação da vinda do Dia do Senhor.",
+    "evidence": [
+      "2 Pedro 3:10"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-03-06",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Pedro 3:9 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 3:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 3:9 comunica que se liga a este contexto?",
+    "verseRef": "2 Pedro 3:9–10",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento. Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas.",
+    "passageA": {
+      "ref": "2 Pedro 3:9",
+      "text": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus espera com paciência para que pessoas se arrependam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessa esquecida por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Paciência que chama ao arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Demora sem qualquer propósito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é longânimo convosco",
+    "feedbackCorrect": "A espera de Deus tem propósito: que todos cheguem ao arrependimento.",
+    "feedbackWrong": {
+      "a": "Pedro diz que Deus não retarda nem esquece a promessa.",
+      "c": "A demora tem um propósito claro no fim do versículo."
+    },
+    "hint": "Veja o desejo de Deus no fim do versículo.",
+    "learningObjective": "Ligar a paciência de Deus ao arrependimento.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-03-01",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3, a aparente demora significa que Deus esqueceu a sua promessa.",
+    "prompt": "Em 2 Pedro 3, a aparente demora significa que Deus esqueceu a sua promessa.",
+    "cue": "Em 2 Pedro 3, a aparente demora significa que Deus esqueceu a sua promessa.",
+    "verseRef": "2 Pedro 3:8–9",
+    "passageText": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia. O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor não retarda em cumprir a sua promessa",
+    "feedbackCorrect": "Deus não esqueceu nem tarda; ele é paciente para salvar.",
+    "feedbackWrong": {
+      "true": "Releia 3:9 e veja a razão que Pedro dá para a espera."
+    },
+    "hint": "Leia a explicação que Pedro dá em seguida.",
+    "learningObjective": "Compreender a razão da aparente demora.",
+    "evidence": [
+      "2 Pedro 3:8–9"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-03-02",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:9, toque o trecho que marca a virada da explicação de Pedro.",
+    "prompt": "Em 2 Pedro 3:9, toque o trecho que marca a virada da explicação de Pedro.",
+    "cue": "Em 2 Pedro 3:9, toque o trecho que marca a virada da explicação de Pedro.",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "como alguns"
+      },
+      {
+        "id": "b",
+        "text": "pelo contrário"
+      },
+      {
+        "id": "c",
+        "text": "não desejando"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pelo contrário, é longânimo convosco",
+    "feedbackCorrect": "A virada mostra que não é demora, mas paciência de Deus.",
+    "feedbackWrong": {
+      "a": "Isso apresenta o juízo de alguns, não a virada de Pedro.",
+      "c": "Isso explica o desejo de Deus, depois da virada já feita."
+    },
+    "hint": "Procure duas palavras logo antes de longânimo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 3:9.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-03-03",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que o Senhor é longânimo, segundo 2 Pedro 3:9?",
+    "prompt": "Por que o Senhor é longânimo, segundo 2 Pedro 3:9?",
+    "cue": "Por que o Senhor é longânimo, segundo 2 Pedro 3:9?",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o juízo foi cancelado para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Para que ninguém precise mudar de vida"
+      },
+      {
+        "id": "c",
+        "text": "Porque não pode cumprir a promessa"
+      },
+      {
+        "id": "d",
+        "text": "Para dar tempo de arrependimento às pessoas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não desejando que ninguém pereça",
+    "feedbackCorrect": "A paciência de Deus abre tempo para que pessoas se arrependam.",
+    "feedbackWrong": {
+      "a": "O Dia virá como um ladrão, afirma o versículo seguinte.",
+      "b": "O desejo de Deus é justamente que todos mudem de direção.",
+      "c": "Pedro afirma que Deus não retarda o cumprimento da promessa."
+    },
+    "hint": "Veja o desejo de Deus no fim do versículo.",
+    "learningObjective": "Relacionar paciência de Deus e arrependimento.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-03-04",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em 2 Pedro 3:8–9?",
+    "prompt": "Como avança a cena em 2 Pedro 3:8–9?",
+    "cue": "Como avança a cena em 2 Pedro 3:8–9?",
+    "verseRef": "2 Pedro 3:8–9",
+    "passageText": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia. O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo de Deus é diferente do nosso"
+      },
+      {
+        "id": "b",
+        "text": "Ele não tarda em cumprir sua promessa"
+      },
+      {
+        "id": "c",
+        "text": "Sua paciência abre tempo ao arrependimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para o Senhor, um dia é como mil anos",
+    "feedbackCorrect": "Deus vê o tempo de outro modo, não tarda e espera com paciência.",
+    "feedbackWrong": {
+      "default": "Comece pelo tempo de Deus; o arrependimento é o ponto final."
+    },
+    "hint": "O arrependimento aparece só no fim do versículo 9.",
+    "learningObjective": "Compreender o movimento de 2 Pedro 3:8–9.",
+    "evidence": [
+      "2 Pedro 3:8–9"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-03-05",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:8, um dia para o Senhor é como quantos anos?",
+    "prompt": "Em 2 Pedro 3:8, um dia para o Senhor é como quantos anos?",
+    "cue": "Em 2 Pedro 3:8, um dia para o Senhor é como quantos anos?",
+    "verseRef": "2 Pedro 3:8",
+    "passageText": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia.",
+    "template": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como ___ anos, e mil anos, como um dia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dez"
+      },
+      {
+        "id": "b",
+        "text": "cem"
+      },
+      {
+        "id": "c",
+        "text": "mil"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "um dia é como mil anos",
+    "feedbackCorrect": "Para Deus, o tempo não corre como para nós.",
+    "feedbackWrong": {
+      "a": "A comparação do texto é bem maior que uma década.",
+      "b": "A comparação do texto é bem maior que um século."
+    },
+    "hint": "Leia o número da comparação do versículo 8.",
+    "learningObjective": "Compreender como Deus vê o tempo.",
+    "evidence": [
+      "2 Pedro 3:8"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-03-06",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Pedro 3:8 a Salmos 90:4?",
+    "prompt": "O que liga 2 Pedro 3:8 a Salmos 90:4?",
+    "cue": "O que liga 2 Pedro 3:8 a Salmos 90:4?",
+    "verseRef": "2 Pedro 3:8",
+    "passageText": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia.",
+    "passageA": {
+      "ref": "2 Pedro 3:8",
+      "text": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia."
+    },
+    "passageB": {
+      "ref": "Salmos 90:4",
+      "text": "Porque mil anos, aos teus olhos, são como o dia de ontem que se foi e como a vigília da noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tempo humano mede Deus"
+      },
+      {
+        "id": "b",
+        "text": "Mil anos aos olhos divinos"
+      },
+      {
+        "id": "c",
+        "text": "Deus preso ao relógio humano"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um dia é como mil anos",
+    "feedbackCorrect": "Os dois textos dizem que Deus vê mil anos de outro modo.",
+    "feedbackWrong": {
+      "a": "É o contrário: Deus não se mede pelo nosso tempo.",
+      "c": "Os dois textos mostram Deus acima do nosso relógio."
+    },
+    "hint": "Compare o número que aparece nos dois textos.",
+    "learningObjective": "Relacionar a visão de tempo em Pedro e nos Salmos.",
+    "evidence": [
+      "2 Pedro 3:8",
+      "Salmos 90:4"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-03-01",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3, a certeza do Dia do Senhor chama os crentes a viver em santo procedimento e piedade.",
+    "prompt": "Em 2 Pedro 3, a certeza do Dia do Senhor chama os crentes a viver em santo procedimento e piedade.",
+    "cue": "Em 2 Pedro 3, a certeza do Dia do Senhor chama os crentes a viver em santo procedimento e piedade.",
+    "verseRef": "2 Pedro 3:11",
+    "passageText": "Visto que todas essas coisas estão prestes a ser desfeitas, que tipo de pessoas vocês devem ser, vivendo em santo procedimento e piedade?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "vivendo em santo procedimento e piedade",
+    "feedbackCorrect": "Quem espera o Dia vive de modo santo e piedoso desde agora.",
+    "feedbackWrong": {
+      "false": "Releia 3:11 e veja a pergunta que Pedro faz aos crentes."
+    },
+    "hint": "Leia a pergunta de Pedro no versículo 11.",
+    "learningObjective": "Interpretar a resposta prática à espera do Dia.",
+    "evidence": [
+      "2 Pedro 3:11"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-03-02",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3:13, toque a palavra que diz o que habita na nova terra.",
+    "prompt": "Em 2 Pedro 3:13, toque a palavra que diz o que habita na nova terra.",
+    "cue": "Em 2 Pedro 3:13, toque a palavra que diz o que habita na nova terra.",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "nova terra"
+      },
+      {
+        "id": "c",
+        "text": "promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esperamos novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "A esperança final é um mundo novo marcado pela vida certa.",
+    "feedbackWrong": {
+      "b": "Isso é o lugar esperado, não o que habita nele.",
+      "c": "Isso é a base da espera, não o que habita na nova terra."
+    },
+    "hint": "Leia a última palavra do versículo 13.",
+    "learningObjective": "Sustentar com o texto a marca da nova terra.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-03-03",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Pedro 3:13 sustenta sobre a esperança final?",
+    "prompt": "Que leitura 2 Pedro 3:13 sustenta sobre a esperança final?",
+    "cue": "Que leitura 2 Pedro 3:13 sustenta sobre a esperança final?",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A vida certa futura depende só de esforço humano"
+      },
+      {
+        "id": "b",
+        "text": "Novos céus significam fim de toda esperança"
+      },
+      {
+        "id": "c",
+        "text": "A promessa final dispensa vida santa agora"
+      },
+      {
+        "id": "d",
+        "text": "A esperança final é uma terra renovada e justa"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "esperamos novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "Segundo a promessa, esperamos um mundo novo onde habita a justiça.",
+    "feedbackWrong": {
+      "a": "É esperança segundo a promessa de Deus, não conquista humana.",
+      "b": "O texto chama isso de esperança, não de fim dela.",
+      "c": "Pedro chama a viver em santidade enquanto se espera (3:11)."
+    },
+    "hint": "Veja o que esperamos segundo a promessa.",
+    "learningObjective": "Escolher a interpretação da esperança final no texto.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-03-04",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 2 Pedro 3:10?",
+    "prompt": "Qual sequência revela o sentido de 2 Pedro 3:10?",
+    "cue": "Qual sequência revela o sentido de 2 Pedro 3:10?",
+    "verseRef": "2 Pedro 3:10",
+    "passageText": "Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é paciente e chama ao arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "O Dia do Senhor virá de repente"
+      },
+      {
+        "id": "c",
+        "text": "Esperamos novos céus e nova terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o dia do Senhor virá como um ladrão à noite",
+    "feedbackCorrect": "Paciência agora, Dia de repente e, por fim, mundo novo e justo.",
+    "feedbackWrong": {
+      "default": "Comece pela paciência de 3:9; os novos céus fecham o fio."
+    },
+    "hint": "Siga a ordem dos versículos 9, 10 e 13.",
+    "learningObjective": "Ver o fio da paciência ao mundo novo em 2 Pedro 3.",
+    "evidence": [
+      "2 Pedro 3:10"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-03-05",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3:9, a que Deus deseja que todos cheguem?",
+    "prompt": "Em 2 Pedro 3:9, a que Deus deseja que todos cheguem?",
+    "cue": "Em 2 Pedro 3:9, a que Deus deseja que todos cheguem?",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "template": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "julgamento"
+      },
+      {
+        "id": "c",
+        "text": "esquecimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "senão que todos cheguem ao arrependimento",
+    "feedbackCorrect": "A paciência de Deus quer ver pessoas mudando de direção.",
+    "feedbackWrong": {
+      "b": "O desejo citado no fim do versículo é de salvação, não de juízo.",
+      "c": "Deus não deseja esquecimento, mas mudança de vida."
+    },
+    "hint": "Leia a última palavra do versículo 9.",
+    "learningObjective": "Lembrar o termo que carrega o propósito da paciência.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-03-06",
+    "trail": "pedro",
+    "section": "pd-03",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "prompt": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "cue": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "passageA": {
+      "ref": "2 Pedro 3:13",
+      "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+    },
+    "passageB": {
+      "ref": "Apocalipse 21:1",
+      "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim sem nova criação"
+      },
+      {
+        "id": "b",
+        "text": "Justiça ausente da promessa"
+      },
+      {
+        "id": "c",
+        "text": "Novos céus e nova terra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "esperamos novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "Pedro e João esperam o mesmo futuro: céus e terra renovados.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de criação renovada, não de fim vazio.",
+      "b": "Pedro diz que na nova terra habita justamente a justiça."
+    },
+    "hint": "Compare a primeira imagem dos dois trechos.",
+    "learningObjective": "Ligar a esperança de Pedro à visão final de João.",
+    "evidence": [
+      "2 Pedro 3:13",
+      "Apocalipse 21:1"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-01",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1, a herança dos crentes está reservada nos céus para eles.",
+    "prompt": "Em 1 Pedro 1, a herança dos crentes está reservada nos céus para eles.",
+    "cue": "Em 1 Pedro 1, a herança dos crentes está reservada nos céus para eles.",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "reservada nos céus para vocês",
+    "feedbackCorrect": "Pedro diz que a herança está reservada nos céus para os crentes.",
+    "feedbackWrong": {
+      "false": "Releia 1 Pedro 1:4 e veja onde a herança está guardada."
+    },
+    "hint": "Leia o fim do versículo 4 de 1 Pedro 1.",
+    "learningObjective": "Revisar onde a herança dos crentes está guardada.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-02",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:3, toque o que Deus nos deu ao nos regenerar.",
+    "prompt": "Em 1 Pedro 1:3, toque o que Deus nos deu ao nos regenerar.",
+    "cue": "Em 1 Pedro 1:3, toque o que Deus nos deu ao nos regenerar.",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressurreição"
+      },
+      {
+        "id": "b",
+        "text": "muita misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "viva esperança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "Fomos regenerados para uma esperança que está viva.",
+    "feedbackWrong": {
+      "a": "Isso é o meio da regeneração, não o dom nomeado depois de para.",
+      "b": "Isso é a base da ação de Deus, não o que ele nos deu aqui."
+    },
+    "hint": "Procure duas palavras depois de regenerou para.",
+    "learningObjective": "Revisar o dom da regeneração em 1 Pedro 1:3.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-03",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Pedro 3:9, como o Senhor é descrito?",
+    "prompt": "Segundo 2 Pedro 3:9, como o Senhor é descrito?",
+    "cue": "Segundo 2 Pedro 3:9, como o Senhor é descrito?",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Longânimo e contrário à perdição de todos"
+      },
+      {
+        "id": "b",
+        "text": "Apressado e indiferente às pessoas"
+      },
+      {
+        "id": "c",
+        "text": "Favorável a que todos pereçam"
+      },
+      {
+        "id": "d",
+        "text": "Esquecido da promessa que fez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pelo contrário, é longânimo convosco",
+    "feedbackCorrect": "Deus é paciente e não deseja que ninguém pereça.",
+    "feedbackWrong": {
+      "b": "Ele espera com paciência justamente por amor às pessoas.",
+      "c": "O texto diz o contrário, que ele não deseja a perdição.",
+      "d": "Pedro afirma que ele não retarda o cumprimento da promessa."
+    },
+    "hint": "Leia o adjetivo central do versículo 9.",
+    "learningObjective": "Revisar como Deus é descrito em 2 Pedro 3:9.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-04",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Pedro 1:4 na ordem do texto.",
+    "prompt": "Monte 1 Pedro 1:4 na ordem do texto.",
+    "cue": "Monte 1 Pedro 1:4 na ordem do texto.",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para uma herança incorruptível"
+      },
+      {
+        "id": "b",
+        "text": "sem mácula e imarcescível"
+      },
+      {
+        "id": "c",
+        "text": "reservada nos céus para vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Para uma herança incorruptível, sem mácula e imarcescível",
+    "feedbackCorrect": "A herança não se corrompe, não mancha, não murcha e está nos céus.",
+    "feedbackWrong": {
+      "default": "Comece nomeando a herança; o lugar dela fecha o versículo."
+    },
+    "hint": "O versículo começa com a palavra Para.",
+    "learningObjective": "Revisar a sequência de 1 Pedro 1:4.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-05",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:4, qual é a primeira qualidade da herança?",
+    "prompt": "Em 1 Pedro 1:4, qual é a primeira qualidade da herança?",
+    "cue": "Em 1 Pedro 1:4, qual é a primeira qualidade da herança?",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "template": "Para uma herança ___, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "temporária"
+      },
+      {
+        "id": "b",
+        "text": "incorruptível"
+      },
+      {
+        "id": "c",
+        "text": "terrena"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Para uma herança incorruptível, sem mácula e imarcescível",
+    "feedbackCorrect": "A herança não pode se corromper, pois Deus a guarda nos céus.",
+    "feedbackWrong": {
+      "a": "Ela não tem prazo para estragar; Deus a reserva nos céus.",
+      "c": "Ela está reservada nos céus, não limitada a esta terra."
+    },
+    "hint": "Leia o primeiro adjetivo do versículo 4.",
+    "learningObjective": "Revisar a primeira qualidade da herança.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-06",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Pedro 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 1:3 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 1:3 comunica que se liga a este contexto?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "passageA": {
+      "ref": "1 Pedro 1:3",
+      "text": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus nos deu nova vida por sua misericórdia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação sem a ressurreição"
+      },
+      {
+        "id": "b",
+        "text": "Herança comprada por nós"
+      },
+      {
+        "id": "c",
+        "text": "Esperança nascida da ressurreição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "A nova vida gera esperança porque Jesus ressuscitou dentre os mortos.",
+    "feedbackWrong": {
+      "a": "Pedro liga a esperança justamente à ressurreição de Jesus.",
+      "b": "A herança é presente da misericórdia de Deus, não compra humana."
+    },
+    "hint": "Veja o meio pelo qual fomos regenerados.",
+    "learningObjective": "Revisar a ligação entre nova vida e ressurreição.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-07",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Pedro 2:22, toque o que Cristo não cometeu.",
+    "prompt": "Em 1 Pedro 2:22, toque o que Cristo não cometeu.",
+    "cue": "Em 1 Pedro 2:22, toque o que Cristo não cometeu.",
+    "verseRef": "1 Pedro 2:22",
+    "passageText": "Ele não cometeu pecado, nem dolo algum se encontrou em sua boca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sua boca"
+      },
+      {
+        "id": "b",
+        "text": "pecado"
+      },
+      {
+        "id": "c",
+        "text": "dolo algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele não cometeu pecado",
+    "feedbackCorrect": "Cristo sofreu sendo inocente, sem pecado algum.",
+    "feedbackWrong": {
+      "a": "Isso é o lugar do engano ausente, não o ato não cometido.",
+      "c": "Isso se encontrou na boca dele, não é o verbo cometeu aqui."
+    },
+    "hint": "Leia a primeira frase do versículo 22.",
+    "learningObjective": "Revisar a pureza de Cristo em 1 Pedro 2:22.",
+    "evidence": [
+      "1 Pedro 2:22"
+    ]
+  },
+  {
+    "id": "pedro-sem-pd-boss-08",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 3:10 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 3:10 na ordem do texto.",
+    "cue": "Monte 2 Pedro 3:10 na ordem do texto.",
+    "verseRef": "2 Pedro 3:10",
+    "passageText": "Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o dia do Senhor virá como um ladrão à noite"
+      },
+      {
+        "id": "b",
+        "text": "naquele dia, os céus passarão com estrepitoso estrondo"
+      },
+      {
+        "id": "c",
+        "text": "e os elementos se desfarão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o dia do Senhor virá como um ladrão à noite",
+    "feedbackCorrect": "O Dia chega de repente, e céus e elementos são desfeitos.",
+    "feedbackWrong": {
+      "default": "Comece pela vinda do Dia; os elementos fecham a lista."
+    },
+    "hint": "O versículo começa com a vinda do Dia.",
+    "learningObjective": "Revisar a sequência de 2 Pedro 3:10.",
+    "evidence": [
+      "2 Pedro 3:10"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-01",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3, a aparente demora significa que Deus esqueceu a sua promessa.",
+    "prompt": "Em 2 Pedro 3, a aparente demora significa que Deus esqueceu a sua promessa.",
+    "cue": "Em 2 Pedro 3, a aparente demora significa que Deus esqueceu a sua promessa.",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor não retarda em cumprir a sua promessa",
+    "feedbackCorrect": "Deus não esqueceu nem tarda; ele é paciente para salvar.",
+    "feedbackWrong": {
+      "true": "Releia 3:9 e veja a razão que Pedro dá para a espera."
+    },
+    "hint": "Leia a explicação que Pedro dá em seguida.",
+    "learningObjective": "Revisar a razão da aparente demora de Deus.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-02",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Pedro 2:23, toque a palavra que marca a virada da reação de Cristo.",
+    "prompt": "Em 1 Pedro 2:23, toque a palavra que marca a virada da reação de Cristo.",
+    "cue": "Em 1 Pedro 2:23, toque a palavra que marca a virada da reação de Cristo.",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "Quando"
+      },
+      {
+        "id": "c",
+        "text": "ao"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas entregava-se àquele que julga com justiça",
+    "feedbackCorrect": "Em vez de revidar, Cristo se entregava a quem julga com justiça.",
+    "feedbackWrong": {
+      "b": "Isso abre a cena do insulto, não marca a virada.",
+      "c": "Isso indica o momento do sofrer, não a virada."
+    },
+    "hint": "Procure uma palavra curta antes de entregava-se.",
+    "learningObjective": "Revisar o marcador de contraste em 2:23.",
+    "evidence": [
+      "1 Pedro 2:23"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-03",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual sofrimento 1 Pedro 2:20 chama de grato a Deus?",
+    "prompt": "Qual sofrimento 1 Pedro 2:20 chama de grato a Deus?",
+    "cue": "Qual sofrimento 1 Pedro 2:20 chama de grato a Deus?",
+    "verseRef": "1 Pedro 2:20",
+    "passageText": "Pois que louvor há, se, pecando e sendo esbofeteados por isso, o suportais com paciência? Se, entretanto, quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofrer por fazer o bem com paciência"
+      },
+      {
+        "id": "b",
+        "text": "Sofrer buscando vingança pessoal"
+      },
+      {
+        "id": "c",
+        "text": "Sofrer como castigo por pecar"
+      },
+      {
+        "id": "d",
+        "text": "Sofrer sem confiar em Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus",
+    "feedbackCorrect": "O texto aprova quem sofre por fazer o bem e suporta com paciência.",
+    "feedbackWrong": {
+      "b": "Cristo não revidava nem buscava vingança ao sofrer (2:23).",
+      "c": "Sofrer por pecar não recebe louvor, segundo o próprio versículo.",
+      "d": "Cristo se entregava a Deus, que julga com justiça (2:23)."
+    },
+    "hint": "Compare pecar e praticar o bem no versículo.",
+    "learningObjective": "Revisar qual sofrimento o texto aprova.",
+    "evidence": [
+      "1 Pedro 2:20"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-04",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em 1 Pedro 1:3?",
+    "prompt": "Como avança a cena em 1 Pedro 1:3?",
+    "cue": "Como avança a cena em 1 Pedro 1:3?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus age segundo sua muita misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Ele nos faz nascer de novo"
+      },
+      {
+        "id": "c",
+        "text": "Uma viva esperança nos é dada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "segundo a sua muita misericórdia, nos regenerou",
+    "feedbackCorrect": "Da misericórdia de Deus nasce a nova vida e a esperança.",
+    "feedbackWrong": {
+      "default": "Comece pela misericórdia; a esperança é o fruto final."
+    },
+    "hint": "A esperança aparece no fim do movimento.",
+    "learningObjective": "Revisar o movimento de 1 Pedro 1:3.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-05",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Pedro 2:23, o que Cristo não fazia ao sofrer?",
+    "prompt": "Em 1 Pedro 2:23, o que Cristo não fazia ao sofrer?",
+    "cue": "Em 1 Pedro 2:23, o que Cristo não fazia ao sofrer?",
+    "verseRef": "1 Pedro 2:23",
+    "passageText": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "template": "Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ___, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "orações"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "ameaças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e, ao sofrer, não fazia ameaças",
+    "feedbackCorrect": "Ao sofrer, Cristo não ameaçava quem o fazia sofrer.",
+    "feedbackWrong": {
+      "a": "O texto não trata disso aqui; fala do que ele não fazia ao sofrer.",
+      "b": "Isso não é a palavra que o versículo nega sobre Cristo."
+    },
+    "hint": "Leia a parte do meio do versículo 23.",
+    "learningObjective": "Revisar a reação de Cristo ao sofrer.",
+    "evidence": [
+      "1 Pedro 2:23"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-06",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Pedro 2:24 a Isaías 53:5?",
+    "prompt": "O que liga 1 Pedro 2:24 a Isaías 53:5?",
+    "cue": "O que liga 1 Pedro 2:24 a Isaías 53:5?",
+    "verseRef": "1 Pedro 2:24",
+    "passageText": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados.",
+    "passageA": {
+      "ref": "1 Pedro 2:24",
+      "text": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados."
+    },
+    "passageB": {
+      "ref": "Isaías 53:5",
+      "text": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofrimento sem qualquer propósito"
+      },
+      {
+        "id": "b",
+        "text": "Sarados por suas feridas"
+      },
+      {
+        "id": "c",
+        "text": "Curados por nosso esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por suas chagas, vocês foram sarados",
+    "feedbackCorrect": "Pedro usa a linguagem de Isaías: pelas feridas dele, fomos sarados.",
+    "feedbackWrong": {
+      "a": "Isaías e Pedro ligam esse sofrer à cura de outros.",
+      "c": "A cura vem das feridas do Servo, não do esforço de quem sofre."
+    },
+    "hint": "Compare a última frase dos dois trechos.",
+    "learningObjective": "Revisar a ligação entre Cristo e o Servo de Isaías.",
+    "evidence": [
+      "1 Pedro 2:24",
+      "Isaías 53:5"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-07",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:8, toque o trecho que mostra como esse tempo é para o Senhor.",
+    "prompt": "Em 2 Pedro 3:8, toque o trecho que mostra como esse tempo é para o Senhor.",
+    "cue": "Em 2 Pedro 3:8, toque o trecho que mostra como esse tempo é para o Senhor.",
+    "verseRef": "2 Pedro 3:8",
+    "passageText": "Amados, há, contudo, uma coisa que não devem esquecer: que para o Senhor, um dia é como mil anos, e mil anos, como um dia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um dia"
+      },
+      {
+        "id": "b",
+        "text": "mil anos"
+      },
+      {
+        "id": "c",
+        "text": "uma coisa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e mil anos, como um dia",
+    "feedbackCorrect": "Para o Senhor, mil anos são como um dia apenas.",
+    "feedbackWrong": {
+      "a": "Isso é o outro lado da comparação, não o trecho pedido.",
+      "c": "Isso abre o aviso de Pedro, não a comparação de tempo."
+    },
+    "hint": "Leia a segunda metade da comparação do versículo.",
+    "learningObjective": "Revisar como Deus vê o tempo em 3:8.",
+    "evidence": [
+      "2 Pedro 3:8"
+    ]
+  },
+  {
+    "id": "pedro-cam-pd-boss-08",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de 1 Pedro 2:22–23?",
+    "prompt": "Como se encadeiam os passos de 1 Pedro 2:22–23?",
+    "cue": "Como se encadeiam os passos de 1 Pedro 2:22–23?",
+    "verseRef": "1 Pedro 2:22–23",
+    "passageText": "Ele não cometeu pecado, nem dolo algum se encontrou em sua boca. Quando o insultavam, não revidava com insulto; e, ao sofrer, não fazia ameaças, mas entregava-se àquele que julga com justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo vive sem qualquer pecado"
+      },
+      {
+        "id": "b",
+        "text": "Ele é insultado e não revida"
+      },
+      {
+        "id": "c",
+        "text": "Ele se entrega a Deus que julga"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele não cometeu pecado",
+    "feedbackCorrect": "Inocente, insultado sem revidar, Cristo confia em Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela inocência de Cristo; a entrega fecha o trecho."
+    },
+    "hint": "A entrega a Deus vem no fim do versículo 23.",
+    "learningObjective": "Revisar o encadeamento de 1 Pedro 2:22–23.",
+    "evidence": [
+      "1 Pedro 2:22–23"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-01",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 2, o sofrimento do crente é sempre castigo por um pecado pessoal.",
+    "prompt": "Em 1 Pedro 2, o sofrimento do crente é sempre castigo por um pecado pessoal.",
+    "cue": "Em 1 Pedro 2, o sofrimento do crente é sempre castigo por um pecado pessoal.",
+    "verseRef": "1 Pedro 2:19–20",
+    "passageText": "Porque é digno de reconhecimento se alguém, por causa da consciência diante de Deus, suporta tristezas, sofrendo injustamente. Pois que louvor há, se, pecando e sendo esbofeteados por isso, o suportais com paciência? Se, entretanto, quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "suporta tristezas, sofrendo injustamente",
+    "feedbackCorrect": "Pedro fala de sofrer injustamente, fazendo o bem, e não só por pecar.",
+    "feedbackWrong": {
+      "true": "Releia 2:19-20 e veja o sofrimento por fazer o bem."
+    },
+    "hint": "Repare em como Pedro qualifica esse sofrer.",
+    "learningObjective": "Revisar o sofrimento injusto em 1 Pedro 2.",
+    "evidence": [
+      "1 Pedro 2:19–20"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-02",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 2:24, toque o trecho que mostra como fomos sarados.",
+    "prompt": "Em 1 Pedro 2:24, toque o trecho que mostra como fomos sarados.",
+    "cue": "Em 1 Pedro 2:24, toque o trecho que mostra como fomos sarados.",
+    "verseRef": "1 Pedro 2:24",
+    "passageText": "Ele mesmo carregou em seu corpo, sobre o madeiro, os nossos pecados, para que, mortos para os pecados, vivamos para a justiça; por suas chagas, vocês foram sarados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "suas chagas"
+      },
+      {
+        "id": "b",
+        "text": "os pecados"
+      },
+      {
+        "id": "c",
+        "text": "seu corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por suas chagas, vocês foram sarados",
+    "feedbackCorrect": "Pedro liga a nossa cura às feridas sofridas por Cristo.",
+    "feedbackWrong": {
+      "b": "Isso é o que ele carregou, não o meio da cura citado no fim.",
+      "c": "Isso diz onde ele carregou os pecados, não como fomos sarados."
+    },
+    "hint": "Leia a última frase do versículo 24.",
+    "learningObjective": "Revisar a cura pelas chagas de Cristo.",
+    "evidence": [
+      "1 Pedro 2:24"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-03",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Pedro 1:3–4 sustenta sobre a esperança cristã?",
+    "prompt": "Que leitura 1 Pedro 1:3–4 sustenta sobre a esperança cristã?",
+    "cue": "Que leitura 1 Pedro 1:3–4 sustenta sobre a esperança cristã?",
+    "verseRef": "1 Pedro 1:3–4",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos. Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A misericórdia de Deus dispensa a fé"
+      },
+      {
+        "id": "b",
+        "text": "A esperança cristã se apoia na ressurreição de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "A esperança depende das circunstâncias presentes"
+      },
+      {
+        "id": "d",
+        "text": "A herança futura dispensa nova vida hoje"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "A esperança é viva porque Jesus ressuscitou e Deus guarda a herança.",
+    "feedbackWrong": {
+      "a": "Pedro diz que os crentes são guardados pela fé (1:5).",
+      "c": "Ela se apoia na ressurreição, não no momento que o crente vive.",
+      "d": "Quem foi regenerado já recebeu nova vida, não só promessa futura."
+    },
+    "hint": "Veja em que fato passado a esperança se apoia.",
+    "learningObjective": "Revisar a base da esperança cristã em Pedro.",
+    "evidence": [
+      "1 Pedro 1:3–4"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-04",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 Pedro 1:3?",
+    "prompt": "Qual sequência revela o sentido de 1 Pedro 1:3?",
+    "cue": "Qual sequência revela o sentido de 1 Pedro 1:3?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus ressuscita dentre os mortos"
+      },
+      {
+        "id": "b",
+        "text": "Crentes nascem para uma viva esperança"
+      },
+      {
+        "id": "c",
+        "text": "Uma herança os espera nos céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mediante a ressurreição de Jesus Cristo dentre os mortos",
+    "feedbackCorrect": "A ressurreição gera a nova vida, que se abre para a herança futura.",
+    "feedbackWrong": {
+      "default": "Comece pelo fato da ressurreição; a herança é o ponto de chegada."
+    },
+    "hint": "Siga a ordem do fato para o seu fruto.",
+    "learningObjective": "Revisar a ressurreição como base da esperança.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-05",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3:9, a que Deus deseja que todos cheguem?",
+    "prompt": "Em 2 Pedro 3:9, a que Deus deseja que todos cheguem?",
+    "cue": "Em 2 Pedro 3:9, a que Deus deseja que todos cheguem?",
+    "verseRef": "2 Pedro 3:9",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento.",
+    "template": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "julgamento"
+      },
+      {
+        "id": "b",
+        "text": "esquecimento"
+      },
+      {
+        "id": "c",
+        "text": "arrependimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "senão que todos cheguem ao arrependimento",
+    "feedbackCorrect": "A paciência de Deus quer ver pessoas mudando de direção.",
+    "feedbackWrong": {
+      "a": "O desejo citado no fim do versículo é de salvação, não de juízo.",
+      "b": "Deus não deseja esquecimento, mas mudança de vida."
+    },
+    "hint": "Leia a última palavra do versículo 9.",
+    "learningObjective": "Revisar o propósito da paciência de Deus.",
+    "evidence": [
+      "2 Pedro 3:9"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-06",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "prompt": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "cue": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "passageA": {
+      "ref": "2 Pedro 3:13",
+      "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+    },
+    "passageB": {
+      "ref": "Apocalipse 21:1",
+      "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim sem nova criação"
+      },
+      {
+        "id": "b",
+        "text": "Novos céus e nova terra"
+      },
+      {
+        "id": "c",
+        "text": "Justiça ausente da promessa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esperamos novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "Pedro e João esperam o mesmo futuro: céus e terra renovados.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de criação renovada, não de fim vazio.",
+      "c": "Pedro diz que na nova terra habita justamente a justiça."
+    },
+    "hint": "Compare a primeira imagem dos dois trechos.",
+    "learningObjective": "Revisar a esperança dos novos céus.",
+    "evidence": [
+      "2 Pedro 3:13",
+      "Apocalipse 21:1"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-07",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3:13, toque a palavra que diz o que habita na nova terra.",
+    "prompt": "Em 2 Pedro 3:13, toque a palavra que diz o que habita na nova terra.",
+    "cue": "Em 2 Pedro 3:13, toque a palavra que diz o que habita na nova terra.",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "nova terra"
+      },
+      {
+        "id": "c",
+        "text": "promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esperamos novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "A esperança final é um mundo novo marcado pela vida certa.",
+    "feedbackWrong": {
+      "b": "Isso é o lugar esperado, não o que habita nele.",
+      "c": "Isso é a base da espera, não o que habita na nova terra."
+    },
+    "hint": "Leia a última palavra do versículo 13.",
+    "learningObjective": "Revisar a marca da nova terra em 3:13.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "pedro-pro-pd-boss-08",
+    "trail": "pedro",
+    "section": "pd-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da espera em 2 Pedro 3:9–10?",
+    "prompt": "Qual sequência revela o caminho da espera em 2 Pedro 3:9–10?",
+    "cue": "Qual sequência revela o caminho da espera em 2 Pedro 3:9–10?",
+    "verseRef": "2 Pedro 3:9–10",
+    "passageText": "O Senhor não retarda em cumprir a sua promessa, como alguns julgam demorada; pelo contrário, é longânimo convosco, não desejando que ninguém pereça, senão que todos cheguem ao arrependimento. Mas o dia do Senhor virá como um ladrão à noite; naquele dia, os céus passarão com estrepitoso estrondo, e os elementos se desfarão; a terra e as obras que nela existem serão atingidas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus espera com paciência pelas pessoas"
+      },
+      {
+        "id": "b",
+        "text": "O Dia do Senhor chega de repente"
+      },
+      {
+        "id": "c",
+        "text": "Céus e terra novos são esperados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor não retarda em cumprir a sua promessa",
+    "feedbackCorrect": "Paciência agora, Dia de repente e, por fim, mundo novo e justo.",
+    "feedbackWrong": {
+      "default": "Comece pela paciência de 3:9; os novos céus fecham o fio."
+    },
+    "hint": "Siga a ordem dos versículos 9, 10 e 13.",
+    "learningObjective": "Revisar o fio da paciência ao mundo novo.",
+    "evidence": [
+      "2 Pedro 3:9–10"
+    ]
+  }
+]

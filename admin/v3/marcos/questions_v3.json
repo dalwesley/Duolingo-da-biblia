@@ -1,0 +1,3306 @@
+[
+  {
+    "id": "marcos-sem-mc-01-servo-autoridade-01",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Marcos 1:15, Jesus diz que o reino de Deus está próximo e pede arrependimento e fé no evangelho.",
+    "prompt": "Em Marcos 1:15, Jesus diz que o reino de Deus está próximo e pede arrependimento e fé no evangelho.",
+    "cue": "Em Marcos 1:15, Jesus diz que o reino de Deus está próximo e pede arrependimento e fé no evangelho.",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "Jesus anuncia o reino próximo e pede arrependimento e fé.",
+    "feedbackWrong": {
+      "false": "Releia Marcos 1:15 e veja o anúncio e o pedido de Jesus."
+    },
+    "hint": "Leia o anúncio completo de Jesus.",
+    "learningObjective": "Observar o anúncio e o pedido de Jesus em Marcos 1:15.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-01-servo-autoridade-02",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 1:11, toque como a voz dos céus chama Jesus.",
+    "prompt": "Em Marcos 1:11, toque como a voz dos céus chama Jesus.",
+    "cue": "Em Marcos 1:11, toque como a voz dos céus chama Jesus.",
+    "verseRef": "Marcos 1:11",
+    "passageText": "E ouviu-se uma voz dos céus que dizia: \"Tu és o meu Filho amado, em ti me comprazo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "voz dos céus"
+      },
+      {
+        "id": "b",
+        "text": "Filho amado"
+      },
+      {
+        "id": "c",
+        "text": "me comprazo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tu és o meu Filho amado",
+    "feedbackCorrect": "A voz chama Jesus de Filho amado, em quem Deus se compraz.",
+    "feedbackWrong": {
+      "a": "A voz dos céus é quem fala, não como Jesus é chamado.",
+      "c": "Isso diz o prazer de Deus, não o nome dado a Jesus."
+    },
+    "hint": "Procure o nome que a voz dá a Jesus.",
+    "learningObjective": "Identificar Jesus como Filho amado em Marcos 1:11.",
+    "evidence": [
+      "Marcos 1:11"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-01-servo-autoridade-03",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 1:16, o que Simão e André faziam junto ao mar?",
+    "prompt": "Segundo Marcos 1:16, o que Simão e André faziam junto ao mar?",
+    "cue": "Segundo Marcos 1:16, o que Simão e André faziam junto ao mar?",
+    "verseRef": "Marcos 1:16",
+    "passageText": "Caminhando ao longo do mar da Galileia, viu Simão e André, que lançavam a rede ao mar, pois eram pescadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lançavam a rede ao mar"
+      },
+      {
+        "id": "b",
+        "text": "Vendiam peixes no mercado"
+      },
+      {
+        "id": "c",
+        "text": "Plantavam junto à praia"
+      },
+      {
+        "id": "d",
+        "text": "Consertavam um barco em casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lançavam a rede ao mar, pois eram pescadores",
+    "feedbackCorrect": "Eles lançavam a rede ao mar, pois eram pescadores.",
+    "feedbackWrong": {
+      "b": "O texto os mostra pescando, não vendendo.",
+      "c": "O trabalho deles é a pesca, não o plantio.",
+      "d": "Eles estão junto ao mar, lançando a rede."
+    },
+    "hint": "Veja o trabalho deles no versículo.",
+    "learningObjective": "Observar o trabalho de Simão e André ao serem chamados.",
+    "evidence": [
+      "Marcos 1:16"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-01-servo-autoridade-04",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 1:15 na ordem do texto.",
+    "prompt": "Monte Marcos 1:15 na ordem do texto.",
+    "cue": "Monte Marcos 1:15 na ordem do texto.",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo está cumprido"
+      },
+      {
+        "id": "b",
+        "text": "e o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependam-se e creiam no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O tempo está cumprido, e o reino de Deus está próximo",
+    "feedbackCorrect": "Tempo cumprido, reino próximo e o pedido de arrependimento e fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo tempo cumprido; o pedido fecha o versículo."
+    },
+    "hint": "O versículo começa pelo tempo.",
+    "learningObjective": "Reconhecer a sequência do anúncio de Jesus.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-01-servo-autoridade-05",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 1:15, como Jesus diz que o reino de Deus está?",
+    "prompt": "Em Marcos 1:15, como Jesus diz que o reino de Deus está?",
+    "cue": "Em Marcos 1:15, como Jesus diz que o reino de Deus está?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "template": "O tempo está cumprido, e o reino de Deus está ___; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "próximo"
+      },
+      {
+        "id": "b",
+        "text": "distante"
+      },
+      {
+        "id": "c",
+        "text": "escondido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "O reino está próximo: Deus se aproximou das pessoas.",
+    "feedbackWrong": {
+      "b": "Jesus diz o contrário: o reino se aproximou.",
+      "c": "Jesus anuncia o reino abertamente, não escondido."
+    },
+    "hint": "Leia o meio do versículo.",
+    "learningObjective": "Lembrar que o reino de Deus está próximo.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-01-servo-autoridade-06",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Marcos 1:14 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:14 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:14 comunica que se liga a este contexto?",
+    "verseRef": "Marcos 1:14",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus.",
+    "passageA": {
+      "ref": "Marcos 1:14",
+      "text": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus começa a anunciar depois que João é preso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus começa seu anúncio público"
+      },
+      {
+        "id": "b",
+        "text": "A Galileia dispensa o evangelho"
+      },
+      {
+        "id": "c",
+        "text": "João continua pregando livre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Jesus foi para a Galileia, pregando o evangelho de Deus",
+    "feedbackCorrect": "Depois da prisão de João, Jesus vai à Galileia pregar.",
+    "feedbackWrong": {
+      "b": "É justamente à Galileia que Jesus leva o evangelho.",
+      "c": "João foi preso; quem prega agora é Jesus."
+    },
+    "hint": "Veja quem prega e onde, nesse versículo.",
+    "learningObjective": "Ligar Marcos 1:14 ao começo do anúncio de Jesus.",
+    "evidence": [
+      "Marcos 1:14"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-01-servo-autoridade-01",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Marcos 1:14–15, Jesus anuncia o reino mas adia qualquer resposta das pessoas para depois.",
+    "prompt": "Em Marcos 1:14–15, Jesus anuncia o reino mas adia qualquer resposta das pessoas para depois.",
+    "cue": "Em Marcos 1:14–15, Jesus anuncia o reino mas adia qualquer resposta das pessoas para depois.",
+    "verseRef": "Marcos 1:14–15",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus. O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "O anúncio já vem com pedido imediato: arrependimento e fé.",
+    "feedbackWrong": {
+      "true": "O pedido vem junto do anúncio: arrependam-se e creiam."
+    },
+    "hint": "Veja o que Jesus pede no mesmo anúncio.",
+    "learningObjective": "Compreender que o anúncio do reino pede resposta imediata.",
+    "evidence": [
+      "Marcos 1:14–15"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-01-servo-autoridade-02",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 1:14, toque a palavra que marca o que acontece logo após a prisão de João.",
+    "prompt": "Em Marcos 1:14, toque a palavra que marca o que acontece logo após a prisão de João.",
+    "cue": "Em Marcos 1:14, toque a palavra que marca o que acontece logo após a prisão de João.",
+    "verseRef": "Marcos 1:14",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "preso"
+      },
+      {
+        "id": "b",
+        "text": "Galileia"
+      },
+      {
+        "id": "c",
+        "text": "Depois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Depois que João foi preso",
+    "feedbackCorrect": "A palavra abre o versículo e liga a prisão ao passo de Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é o fato anterior, não a palavra de ligação.",
+      "b": "Isso é o lugar para onde Jesus vai."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de sequência em Marcos 1:14.",
+    "evidence": [
+      "Marcos 1:14"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-01-servo-autoridade-03",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a proximidade do reino pede das pessoas, em Marcos 1:15?",
+    "prompt": "O que a proximidade do reino pede das pessoas, em Marcos 1:15?",
+    "cue": "O que a proximidade do reino pede das pessoas, em Marcos 1:15?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiar apenas nos próprios méritos"
+      },
+      {
+        "id": "b",
+        "text": "Buscar um reino longe de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Mudar de rumo e confiar na notícia"
+      },
+      {
+        "id": "d",
+        "text": "Esperar o reino sem mudar nada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "O reino próximo pede mudança de rumo e fé na boa notícia.",
+    "feedbackWrong": {
+      "a": "A confiança é na boa notícia de Deus, não em méritos.",
+      "b": "O reino está próximo, não longe de Deus.",
+      "d": "Jesus pede resposta, não espera passiva."
+    },
+    "hint": "Junte os dois pedidos do fim do versículo.",
+    "learningObjective": "Relacionar a proximidade do reino ao arrependimento e à fé.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-01-servo-autoridade-04",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Marcos 1:14–15?",
+    "prompt": "Como avança a cena em Marcos 1:14–15?",
+    "cue": "Como avança a cena em Marcos 1:14–15?",
+    "verseRef": "Marcos 1:14–15",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus. O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "João é preso"
+      },
+      {
+        "id": "b",
+        "text": "Jesus vai para a Galileia pregar"
+      },
+      {
+        "id": "c",
+        "text": "Ele anuncia o reino próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Depois que João foi preso, Jesus foi para a Galileia",
+    "feedbackCorrect": "Prisão de João, ida à Galileia e o anúncio do reino.",
+    "feedbackWrong": {
+      "default": "Comece pela prisão de João; o anúncio vem depois."
+    },
+    "hint": "A prisão de João vem primeiro.",
+    "learningObjective": "Compreender o avanço da cena até o anúncio do reino.",
+    "evidence": [
+      "Marcos 1:14–15"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-01-servo-autoridade-05",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Marcos 1:17, o que Jesus diz que tornará Simão e André?",
+    "prompt": "Em Marcos 1:17, o que Jesus diz que tornará Simão e André?",
+    "cue": "Em Marcos 1:17, o que Jesus diz que tornará Simão e André?",
+    "verseRef": "Marcos 1:17",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens.",
+    "template": "E Jesus lhes disse: Venham após mim, e eu os tornarei ___ de homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "servos"
+      },
+      {
+        "id": "b",
+        "text": "pescadores"
+      },
+      {
+        "id": "c",
+        "text": "mestres"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu os tornarei pescadores de homens",
+    "feedbackCorrect": "De pescadores de peixes, eles reunirão pessoas para Deus.",
+    "feedbackWrong": {
+      "a": "Jesus usa a imagem do trabalho deles: o mar e as redes.",
+      "c": "O chamado usa o ofício deles, não um título de ensino."
+    },
+    "hint": "Jesus parte do ofício que eles já têm.",
+    "learningObjective": "Compreender a nova tarefa dada aos discípulos.",
+    "evidence": [
+      "Marcos 1:17"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-01-servo-autoridade-06",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Marcos 1:15 a Mateus 4:17?",
+    "prompt": "O que liga Marcos 1:15 a Mateus 4:17?",
+    "cue": "O que liga Marcos 1:15 a Mateus 4:17?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+    },
+    "passageB": {
+      "ref": "Mateus 4:17",
+      "text": "Desde então, Jesus passou a pregar e a dizer: Arrependam-se porque o reino dos céus está próximo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pregação sem chamado à mudança"
+      },
+      {
+        "id": "b",
+        "text": "O reino pede arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Reino distante dos pecadores"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "Nos dois textos, o reino próximo pede arrependimento.",
+    "feedbackWrong": {
+      "a": "Nos dois, o anúncio vem com chamado à mudança.",
+      "c": "O reino se aproxima das pessoas, não se afasta."
+    },
+    "hint": "Compare o pedido que acompanha o anúncio.",
+    "learningObjective": "Relacionar o anúncio do reino em Marcos e Mateus.",
+    "evidence": [
+      "Marcos 1:15",
+      "Mateus 4:17"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-01-servo-autoridade-01",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Marcos 1:17–18, seguir Jesus começa com deixar as redes para trás.",
+    "prompt": "Em Marcos 1:17–18, seguir Jesus começa com deixar as redes para trás.",
+    "cue": "Em Marcos 1:17–18, seguir Jesus começa com deixar as redes para trás.",
+    "verseRef": "Marcos 1:17–18",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens. Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "Eles deixam as redes na hora e seguem Jesus.",
+    "feedbackWrong": {
+      "false": "Releia Marcos 1:18: as redes ficam, e eles o seguem."
+    },
+    "hint": "Veja a resposta imediata dos pescadores.",
+    "learningObjective": "Interpretar o seguir Jesus como deixar o que prende.",
+    "evidence": [
+      "Marcos 1:17–18"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-01-servo-autoridade-02",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 1:18, toque o que Simão e André deixam para seguir Jesus.",
+    "prompt": "Em Marcos 1:18, toque o que Simão e André deixam para seguir Jesus.",
+    "cue": "Em Marcos 1:18, toque o que Simão e André deixam para seguir Jesus.",
+    "verseRef": "Marcos 1:18",
+    "passageText": "Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o seguiram"
+      },
+      {
+        "id": "b",
+        "text": "imediatamente"
+      },
+      {
+        "id": "c",
+        "text": "suas redes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "Eles deixam o instrumento do seu sustento para segui-lo.",
+    "feedbackWrong": {
+      "a": "Isso é o que eles fazem depois de deixar.",
+      "b": "Isso diz a rapidez, não o que foi deixado."
+    },
+    "hint": "Procure o objeto ligado ao trabalho deles.",
+    "learningObjective": "Sustentar com o texto o custo do primeiro chamado.",
+    "evidence": [
+      "Marcos 1:18"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-01-servo-autoridade-03",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Marcos 1:11–12 sustenta sobre Jesus no começo do Evangelho?",
+    "prompt": "Que leitura Marcos 1:11–12 sustenta sobre Jesus no começo do Evangelho?",
+    "cue": "Que leitura Marcos 1:11–12 sustenta sobre Jesus no começo do Evangelho?",
+    "verseRef": "Marcos 1:11–12",
+    "passageText": "E ouviu-se uma voz dos céus que dizia: \"Tu és o meu Filho amado, em ti me comprazo. E logo o Espírito o impeliu ao deserto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus é Filho amado confirmado pelo céu"
+      },
+      {
+        "id": "b",
+        "text": "Jesus precisa provar que é Filho"
+      },
+      {
+        "id": "c",
+        "text": "A voz declara um rei político"
+      },
+      {
+        "id": "d",
+        "text": "O Espírito abandona Jesus no deserto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu és o meu Filho amado, em ti me comprazo",
+    "feedbackCorrect": "Antes de agir, Jesus é declarado Filho amado pelo céu.",
+    "feedbackWrong": {
+      "b": "A voz confirma quem ele é; não é uma prova a passar.",
+      "c": "A voz fala de Filho amado, não de cargo político.",
+      "d": "O Espírito o impele ao deserto, não o abandona."
+    },
+    "hint": "Junte a voz dos céus e a ação do Espírito.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre Jesus.",
+    "evidence": [
+      "Marcos 1:11–12"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-01-servo-autoridade-04",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Jesus no começo de Marcos?",
+    "prompt": "Qual sequência revela o caminho de Jesus no começo de Marcos?",
+    "cue": "Qual sequência revela o caminho de Jesus no começo de Marcos?",
+    "verseRef": "Marcos 1:11",
+    "passageText": "E ouviu-se uma voz dos céus que dizia: \"Tu és o meu Filho amado, em ti me comprazo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A voz declara Jesus Filho amado"
+      },
+      {
+        "id": "b",
+        "text": "Jesus anuncia o reino na Galileia"
+      },
+      {
+        "id": "c",
+        "text": "Pescadores deixam redes e o seguem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tu és o meu Filho amado",
+    "feedbackCorrect": "Filho confirmado, reino anunciado e discípulos que seguem.",
+    "feedbackWrong": {
+      "default": "Comece pela voz dos céus, antes do anúncio na Galileia."
+    },
+    "hint": "Siga a ordem do capítulo um de Marcos.",
+    "learningObjective": "Ver o fio do começo do Evangelho de Marcos.",
+    "evidence": [
+      "Marcos 1:11",
+      "Marcos 1:15",
+      "Marcos 1:18"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-01-servo-autoridade-05",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Marcos 1:15, o que Jesus diz do tempo?",
+    "prompt": "Em Marcos 1:15, o que Jesus diz do tempo?",
+    "cue": "Em Marcos 1:15, o que Jesus diz do tempo?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "template": "O tempo está ___, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprido"
+      },
+      {
+        "id": "b",
+        "text": "perdido"
+      },
+      {
+        "id": "c",
+        "text": "adiado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O tempo está cumprido",
+    "feedbackCorrect": "O tempo se cumpriu: a espera acabou e o reino chegou.",
+    "feedbackWrong": {
+      "b": "O tempo não se perdeu; ele se cumpriu em Jesus.",
+      "c": "Jesus não adia: ele anuncia que o tempo chegou."
+    },
+    "hint": "É a primeira afirmação do anúncio.",
+    "learningObjective": "Lembrar o termo que abre o anúncio de Jesus.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-01-servo-autoridade-06",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Marcos 1:17 a Marcos 10:45?",
+    "prompt": "O que liga Marcos 1:17 a Marcos 10:45?",
+    "cue": "O que liga Marcos 1:17 a Marcos 10:45?",
+    "verseRef": "Marcos 1:17",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens.",
+    "passageA": {
+      "ref": "Marcos 1:17",
+      "text": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens."
+    },
+    "passageB": {
+      "ref": "Marcos 10:45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seguir sem deixar nada"
+      },
+      {
+        "id": "b",
+        "text": "Buscar o primeiro lugar"
+      },
+      {
+        "id": "c",
+        "text": "Seguir o Servo que serve"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Venham após mim, e eu os tornarei pescadores de homens",
+    "feedbackCorrect": "Quem segue Jesus entra no caminho do Servo que serve.",
+    "feedbackWrong": {
+      "a": "Os primeiros discípulos deixam as redes ao segui-lo.",
+      "b": "O Servo veio para servir, não buscar o primeiro lugar."
+    },
+    "hint": "Veja para que o Filho do Homem veio, no segundo texto.",
+    "learningObjective": "Ligar o chamado dos discípulos ao Servo que serve.",
+    "evidence": [
+      "Marcos 1:17",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-02-caminho-cruz-01",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Marcos 8:31, Jesus ensina que o Filho do Homem seria aclamado pelos líderes e poupado da morte.",
+    "prompt": "Em Marcos 8:31, Jesus ensina que o Filho do Homem seria aclamado pelos líderes e poupado da morte.",
+    "cue": "Em Marcos 8:31, Jesus ensina que o Filho do Homem seria aclamado pelos líderes e poupado da morte.",
+    "verseRef": "Marcos 8:31",
+    "passageText": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fosse rejeitado pelos anciãos",
+    "feedbackCorrect": "Jesus anuncia rejeição, morte e ressurreição ao terceiro dia.",
+    "feedbackWrong": {
+      "true": "Releia Marcos 8:31: ele seria rejeitado e morto."
+    },
+    "hint": "Veja o que os líderes fariam com ele.",
+    "learningObjective": "Observar o anúncio de sofrimento em Marcos 8:31.",
+    "evidence": [
+      "Marcos 8:31"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-02-caminho-cruz-02",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 8:31, toque depois de quanto tempo o Filho do Homem ressuscitaria.",
+    "prompt": "Em Marcos 8:31, toque depois de quanto tempo o Filho do Homem ressuscitaria.",
+    "cue": "Em Marcos 8:31, toque depois de quanto tempo o Filho do Homem ressuscitaria.",
+    "verseRef": "Marcos 8:31",
+    "passageText": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "principais sacerdotes"
+      },
+      {
+        "id": "b",
+        "text": "muitas coisas"
+      },
+      {
+        "id": "c",
+        "text": "três dias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "depois de três dias, ressuscitasse",
+    "feedbackCorrect": "Jesus anuncia que ressuscitaria depois de três dias.",
+    "feedbackWrong": {
+      "a": "Eles estão entre os que o rejeitariam.",
+      "b": "Isso é o que ele sofreria, não o prazo da ressurreição."
+    },
+    "hint": "Procure o prazo no fim do versículo.",
+    "learningObjective": "Observar o prazo anunciado da ressurreição.",
+    "evidence": [
+      "Marcos 8:31"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-02-caminho-cruz-03",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 8:34, quem Jesus convoca para ouvir o chamado?",
+    "prompt": "Segundo Marcos 8:34, quem Jesus convoca para ouvir o chamado?",
+    "cue": "Segundo Marcos 8:34, quem Jesus convoca para ouvir o chamado?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente a sua família"
+      },
+      {
+        "id": "b",
+        "text": "A multidão e os seus discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Somente os principais sacerdotes"
+      },
+      {
+        "id": "d",
+        "text": "Somente Pedro, em particular"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "convocando a multidão e os seus discípulos, disse-lhes",
+    "feedbackCorrect": "O chamado é aberto: multidão e discípulos ouvem juntos.",
+    "feedbackWrong": {
+      "a": "A convocação inclui a multidão, não só a família.",
+      "c": "Os sacerdotes estão entre os que rejeitam Jesus.",
+      "d": "Pedro é repreendido antes; o chamado é para todos ali."
+    },
+    "hint": "Veja quem Jesus reúne antes de falar.",
+    "learningObjective": "Observar a quem Jesus dirige o chamado da cruz.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-02-caminho-cruz-04",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 8:31 na ordem do texto.",
+    "prompt": "Monte Marcos 8:31 na ordem do texto.",
+    "cue": "Monte Marcos 8:31 na ordem do texto.",
+    "verseRef": "Marcos 8:31",
+    "passageText": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E começou a lhes ensinar"
+      },
+      {
+        "id": "b",
+        "text": "que o Filho do Homem sofresse muitas coisas"
+      },
+      {
+        "id": "c",
+        "text": "fosse morto e, depois de três dias, ressuscitasse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E começou a lhes ensinar que era necessário",
+    "feedbackCorrect": "Ensino, sofrimento e morte, com ressurreição ao terceiro dia.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino de Jesus; a ressurreição fecha."
+    },
+    "hint": "O versículo começa com Jesus ensinando.",
+    "learningObjective": "Reconhecer a sequência do anúncio de Marcos 8:31.",
+    "evidence": [
+      "Marcos 8:31"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-02-caminho-cruz-05",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 8:34, o que quem segue Jesus deve tomar?",
+    "prompt": "Em Marcos 8:34, o que quem segue Jesus deve tomar?",
+    "cue": "Em Marcos 8:34, o que quem segue Jesus deve tomar?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "template": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua ___ e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rede"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tome a sua cruz e siga-me",
+    "feedbackCorrect": "Seguir Jesus inclui tomar a própria cruz, como ele ensina.",
+    "feedbackWrong": {
+      "a": "As redes ficaram para trás no chamado dos pescadores.",
+      "b": "O pedido é tomar algo ligado à entrega, não à casa."
+    },
+    "hint": "É o segundo pedido de Jesus no versículo.",
+    "learningObjective": "Lembrar o pedido de tomar a cruz.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-02-caminho-cruz-06",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "passageA": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Seguir Jesus inclui negar a si mesmo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar a própria glória"
+      },
+      {
+        "id": "b",
+        "text": "Negar a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "Evitar qualquer perda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "negue-se a si mesmo, tome a sua cruz e siga-me",
+    "feedbackCorrect": "O primeiro passo do chamado é negar a si mesmo.",
+    "feedbackWrong": {
+      "a": "Jesus pede o contrário de buscar a própria glória.",
+      "c": "O caminho inclui perda por causa de Jesus."
+    },
+    "hint": "Veja o primeiro pedido do versículo.",
+    "learningObjective": "Ligar Marcos 8:34 à renúncia de si mesmo.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-02-caminho-cruz-01",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Marcos 8:34–35, Jesus liga salvar a vida a perdê-la por causa dele e do evangelho.",
+    "prompt": "Em Marcos 8:34–35, Jesus liga salvar a vida a perdê-la por causa dele e do evangelho.",
+    "cue": "Em Marcos 8:34–35, Jesus liga salvar a vida a perdê-la por causa dele e do evangelho.",
+    "verseRef": "Marcos 8:34–35",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "Perder a vida por Jesus e pelo evangelho é salvá-la.",
+    "feedbackWrong": {
+      "false": "Releia Marcos 8:35: quem perde por Jesus, este a salvará."
+    },
+    "hint": "Compare salvar e perder no versículo 35.",
+    "learningObjective": "Compreender a ligação entre perder e salvar a vida.",
+    "evidence": [
+      "Marcos 8:34–35"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-02-caminho-cruz-02",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 8:33, toque a palavra que opõe as coisas de Deus às dos homens.",
+    "prompt": "Em Marcos 8:33, toque a palavra que opõe as coisas de Deus às dos homens.",
+    "cue": "Em Marcos 8:33, toque a palavra que opõe as coisas de Deus às dos homens.",
+    "verseRef": "Marcos 8:33",
+    "passageText": "Mas ele, voltando-se e fitando os seus discípulos, repreendeu a Pedro, dizendo: Afaste-se de mim, Satanás! Pois tu não cogitas das coisas de Deus, mas apenas das dos homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apenas"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "Pois"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não cogitas das coisas de Deus, mas apenas das dos homens",
+    "feedbackCorrect": "A palavra separa dois modos de pensar: o de Deus e o humano.",
+    "feedbackWrong": {
+      "a": "Isso limita o pensar de Pedro, não opõe as partes.",
+      "c": "Isso começa a explicação, não marca a oposição."
+    },
+    "hint": "Procure uma palavra curta entre as duas ideias.",
+    "learningObjective": "Reconhecer o marcador de contraste em Marcos 8:33.",
+    "evidence": [
+      "Marcos 8:33"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-02-caminho-cruz-03",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que Jesus repreende Pedro em Marcos 8:32–33?",
+    "prompt": "Por que Jesus repreende Pedro em Marcos 8:32–33?",
+    "cue": "Por que Jesus repreende Pedro em Marcos 8:32–33?",
+    "verseRef": "Marcos 8:32–33",
+    "passageText": "E assim ele expunha isso de maneira clara. Então, Pedro o chamou para um lado e começou a reprová-lo. Mas ele, voltando-se e fitando os seus discípulos, repreendeu a Pedro, dizendo: Afaste-se de mim, Satanás! Pois tu não cogitas das coisas de Deus, mas apenas das dos homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro julga pelo desejo humano, não pelo caminho de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Pedro quer adiar a viagem a Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Pedro fala alto demais diante da multidão"
+      },
+      {
+        "id": "d",
+        "text": "Pedro defende os outros discípulos do sofrimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tu não cogitas das coisas de Deus, mas apenas das dos homens",
+    "feedbackCorrect": "Pedro reprova a cruz porque pensa só do modo humano.",
+    "feedbackWrong": {
+      "b": "O texto não fala de viagem nem de prazo.",
+      "c": "A conversa é à parte; o problema é o modo de pensar.",
+      "d": "Pedro reprova o sofrimento de Jesus, não defende outros."
+    },
+    "hint": "Veja o motivo que Jesus mesmo declara.",
+    "learningObjective": "Compreender o motivo da repreensão a Pedro.",
+    "evidence": [
+      "Marcos 8:32–33"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-02-caminho-cruz-04",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Marcos 8:32–33?",
+    "prompt": "Como se encadeiam os eventos de Marcos 8:32–33?",
+    "cue": "Como se encadeiam os eventos de Marcos 8:32–33?",
+    "verseRef": "Marcos 8:32–33",
+    "passageText": "E assim ele expunha isso de maneira clara. Então, Pedro o chamou para um lado e começou a reprová-lo. Mas ele, voltando-se e fitando os seus discípulos, repreendeu a Pedro, dizendo: Afaste-se de mim, Satanás! Pois tu não cogitas das coisas de Deus, mas apenas das dos homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro chama Jesus à parte"
+      },
+      {
+        "id": "b",
+        "text": "Pedro começa a reprová-lo"
+      },
+      {
+        "id": "c",
+        "text": "Jesus repreende Pedro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pedro o chamou para um lado e começou a reprová-lo",
+    "feedbackCorrect": "Pedro chama, reprova, e Jesus o repreende em seguida.",
+    "feedbackWrong": {
+      "default": "Comece por Pedro chamando Jesus à parte."
+    },
+    "hint": "A iniciativa começa com Pedro.",
+    "learningObjective": "Compreender o encadeamento entre Pedro e Jesus.",
+    "evidence": [
+      "Marcos 8:32–33"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-02-caminho-cruz-05",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Marcos 8:35, o que acontece com quem quer salvar a sua vida?",
+    "prompt": "Em Marcos 8:35, o que acontece com quem quer salvar a sua vida?",
+    "cue": "Em Marcos 8:35, o que acontece com quem quer salvar a sua vida?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "template": "Pois quem quiser salvar a sua vida a ___, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "venderá"
+      },
+      {
+        "id": "b",
+        "text": "perderá"
+      },
+      {
+        "id": "c",
+        "text": "guardará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quem quiser salvar a sua vida a perderá",
+    "feedbackCorrect": "Agarrar a própria vida, no fim, é perdê-la.",
+    "feedbackWrong": {
+      "a": "A troca da alma aparece nos versículos seguintes.",
+      "c": "Jesus afirma o contrário de guardar a vida assim."
+    },
+    "hint": "Leia a primeira metade do versículo.",
+    "learningObjective": "Compreender o aviso de Jesus sobre salvar a vida.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-02-caminho-cruz-06",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Marcos 8:34 a Marcos 10:45?",
+    "prompt": "O que liga Marcos 8:34 a Marcos 10:45?",
+    "cue": "O que liga Marcos 8:34 a Marcos 10:45?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "passageA": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "passageB": {
+      "ref": "Marcos 10:45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O maior busca ser servido"
+      },
+      {
+        "id": "b",
+        "text": "Seguir sem servir ninguém"
+      },
+      {
+        "id": "c",
+        "text": "O Filho veio servir"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tome a sua cruz e siga-me",
+    "feedbackCorrect": "Seguir Jesus é andar atrás do Filho que veio servir.",
+    "feedbackWrong": {
+      "a": "O Filho veio para servir, não para ser servido.",
+      "b": "O caminho de Jesus é de serviço aos outros."
+    },
+    "hint": "Veja para que o Filho do Homem veio.",
+    "learningObjective": "Relacionar o chamado da cruz ao Servo que serve.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-02-caminho-cruz-01",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Marcos 8:38, Jesus diz que envergonhar-se dele não traz nenhuma consequência futura.",
+    "prompt": "Em Marcos 8:38, Jesus diz que envergonhar-se dele não traz nenhuma consequência futura.",
+    "cue": "Em Marcos 8:38, Jesus diz que envergonhar-se dele não traz nenhuma consequência futura.",
+    "verseRef": "Marcos 8:38",
+    "passageText": "Porque quem se envergonhar de mim e das minhas palavras, nesta geração adúltera e pecadora, também o Filho do Homem se envergonhará dele, quando vier na glória de seu Pai com os santos anjos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "também o Filho do Homem se envergonhará dele",
+    "feedbackCorrect": "Há consequência: o Filho do Homem se envergonhará de quem o negou.",
+    "feedbackWrong": {
+      "true": "Releia o fim: o Filho do Homem também se envergonhará dele."
+    },
+    "hint": "Veja o que acontece quando o Filho vier.",
+    "learningObjective": "Interpretar o aviso sobre envergonhar-se de Jesus.",
+    "evidence": [
+      "Marcos 8:38"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-02-caminho-cruz-02",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 8:36, toque o que de nada vale ganhar, se a alma se perde.",
+    "prompt": "Em Marcos 8:36, toque o que de nada vale ganhar, se a alma se perde.",
+    "cue": "Em Marcos 8:36, toque o que de nada vale ganhar, se a alma se perde.",
+    "verseRef": "Marcos 8:36",
+    "passageText": "Pois, de que vale ao homem ganhar o mundo inteiro e, entretanto, perder a sua alma?",
+    "options": [
+      {
+        "id": "a",
+        "text": "sua alma"
+      },
+      {
+        "id": "b",
+        "text": "mundo inteiro"
+      },
+      {
+        "id": "c",
+        "text": "ao homem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "de que vale ao homem ganhar o mundo inteiro",
+    "feedbackCorrect": "Nem o mundo inteiro compensa perder a própria alma.",
+    "feedbackWrong": {
+      "a": "A alma é o que se perde, não o que se ganha.",
+      "c": "Isso é a quem a pergunta se dirige."
+    },
+    "hint": "Procure o ganho que Jesus compara à alma.",
+    "learningObjective": "Sustentar com o texto o valor da alma.",
+    "evidence": [
+      "Marcos 8:36"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-02-caminho-cruz-03",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Marcos 8:35–36 sustenta sobre ganhar e perder?",
+    "prompt": "Que leitura Marcos 8:35–36 sustenta sobre ganhar e perder?",
+    "cue": "Que leitura Marcos 8:35–36 sustenta sobre ganhar e perder?",
+    "verseRef": "Marcos 8:35–36",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará. Pois, de que vale ao homem ganhar o mundo inteiro e, entretanto, perder a sua alma?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A alma vale menos que o sucesso"
+      },
+      {
+        "id": "b",
+        "text": "Ganhar tudo e perder a alma é perda total"
+      },
+      {
+        "id": "c",
+        "text": "Proteger a vida é o bem supremo"
+      },
+      {
+        "id": "d",
+        "text": "Jesus promete glória sem cruz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "de que vale ao homem ganhar o mundo inteiro e, entretanto, perder a sua alma?",
+    "feedbackCorrect": "O maior ganho vira perda total se a alma se perde.",
+    "feedbackWrong": {
+      "a": "Nada compensa a alma, nem o mundo inteiro.",
+      "c": "Quem agarra a vida a perde, diz Jesus.",
+      "d": "O caminho anunciado passa pela cruz, não a evita."
+    },
+    "hint": "Junte o aviso do verso 35 à pergunta do 36.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Marcos 8:35–36"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-02-caminho-cruz-04",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Marcos 8:31–38?",
+    "prompt": "Qual sequência revela o sentido de Marcos 8:31–38?",
+    "cue": "Qual sequência revela o sentido de Marcos 8:31–38?",
+    "verseRef": "Marcos 8:31",
+    "passageText": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus anuncia que sofrerá e ressuscitará"
+      },
+      {
+        "id": "b",
+        "text": "Jesus chama a tomar a cruz"
+      },
+      {
+        "id": "c",
+        "text": "O Filho virá na glória do Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "depois de três dias, ressuscitasse",
+    "feedbackCorrect": "Anúncio da cruz, chamado a segui-lo e a glória futura.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio do sofrimento de Jesus."
+    },
+    "hint": "Siga do anúncio de Jesus à sua vinda futura.",
+    "learningObjective": "Ver o encadeamento do caminho da cruz em Marcos 8.",
+    "evidence": [
+      "Marcos 8:31",
+      "Marcos 8:34",
+      "Marcos 8:38"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-02-caminho-cruz-05",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Marcos 8:34, o que Jesus pede primeiro a quem quer segui-lo?",
+    "prompt": "Em Marcos 8:34, o que Jesus pede primeiro a quem quer segui-lo?",
+    "cue": "Em Marcos 8:34, o que Jesus pede primeiro a quem quer segui-lo?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "template": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, ___ a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "proteja-se"
+      },
+      {
+        "id": "b",
+        "text": "exalte-se"
+      },
+      {
+        "id": "c",
+        "text": "negue-se"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "negue-se a si mesmo",
+    "feedbackCorrect": "Antes da cruz, o discípulo nega a si mesmo.",
+    "feedbackWrong": {
+      "a": "Proteger-se é o caminho que perde a vida (8:35).",
+      "b": "O pedido é o contrário de exaltar a si mesmo."
+    },
+    "hint": "É o primeiro pedido da lista de Jesus.",
+    "learningObjective": "Lembrar o termo central do discipulado em Marcos 8.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-02-caminho-cruz-06",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Marcos 8:35 a João 12:24?",
+    "prompt": "O que liga Marcos 8:35 a João 12:24?",
+    "cue": "O que liga Marcos 8:35 a João 12:24?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "passageA": {
+      "ref": "Marcos 8:35",
+      "text": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará."
+    },
+    "passageB": {
+      "ref": "João 12:24",
+      "text": "Em verdade, em verdade vos digo: se o grão de trigo, caindo na terra, não morrer, permanecerá só; mas, se morrer, produzirá abundantes frutos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perder a vida gera fruto"
+      },
+      {
+        "id": "b",
+        "text": "Guardar a vida gera fruto"
+      },
+      {
+        "id": "c",
+        "text": "A morte encerra o caminho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "Como o grão que morre, perder por Jesus gera vida.",
+    "feedbackWrong": {
+      "b": "O grão guardado fica só; o que morre dá fruto.",
+      "c": "Nos dois textos, a entrega abre caminho para vida."
+    },
+    "hint": "Veja o que acontece com o grão no segundo texto.",
+    "learningObjective": "Ligar perder a vida em Marcos ao grão em João.",
+    "evidence": [
+      "Marcos 8:35",
+      "João 12:24"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-01",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Marcos 16:4, as mulheres viram que a pedra já estava removida.",
+    "prompt": "Em Marcos 16:4, as mulheres viram que a pedra já estava removida.",
+    "cue": "Em Marcos 16:4, as mulheres viram que a pedra já estava removida.",
+    "verseRef": "Marcos 16:4",
+    "passageText": "E, ao olharem, viram que a pedra já estava removida; pois era muito grande.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "viram que a pedra já estava removida",
+    "feedbackCorrect": "Ao olharem, elas veem a pedra já fora do lugar.",
+    "feedbackWrong": {
+      "false": "Releia Marcos 16:4: a pedra já estava removida."
+    },
+    "hint": "Veja o que elas encontram ao olhar.",
+    "learningObjective": "Observar a pedra removida em Marcos 16:4.",
+    "evidence": [
+      "Marcos 16:4"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-02",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 16:4, toque como era a pedra do túmulo.",
+    "prompt": "Em Marcos 16:4, toque como era a pedra do túmulo.",
+    "cue": "Em Marcos 16:4, toque como era a pedra do túmulo.",
+    "verseRef": "Marcos 16:4",
+    "passageText": "E, ao olharem, viram que a pedra já estava removida; pois era muito grande.",
+    "options": [
+      {
+        "id": "a",
+        "text": "já estava removida"
+      },
+      {
+        "id": "b",
+        "text": "ao olharem"
+      },
+      {
+        "id": "c",
+        "text": "muito grande"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois era muito grande",
+    "feedbackCorrect": "A pedra era muito grande, e mesmo assim já estava removida.",
+    "feedbackWrong": {
+      "a": "Isso é o estado dela, não o seu tamanho.",
+      "b": "Isso é o que as mulheres fazem, não a pedra."
+    },
+    "hint": "Procure o tamanho no fim do versículo.",
+    "learningObjective": "Observar o tamanho da pedra em Marcos 16:4.",
+    "evidence": [
+      "Marcos 16:4"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-03",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 16:5, o que as mulheres viram ao entrar no sepulcro?",
+    "prompt": "Segundo Marcos 16:5, o que as mulheres viram ao entrar no sepulcro?",
+    "cue": "Segundo Marcos 16:5, o que as mulheres viram ao entrar no sepulcro?",
+    "verseRef": "Marcos 16:5",
+    "passageText": "Ao entrarem no sepulcro, viram um jovem sentado à direita, vestido de branco; ficaram surpresas e atemorizadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardas dormindo na entrada"
+      },
+      {
+        "id": "b",
+        "text": "Um jovem sentado, vestido de branco"
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos esperando dentro"
+      },
+      {
+        "id": "d",
+        "text": "O corpo de Jesus no lugar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "viram um jovem sentado à direita, vestido de branco",
+    "feedbackCorrect": "Elas veem um jovem de branco, sentado à direita.",
+    "feedbackWrong": {
+      "a": "O texto não fala de guardas nessa cena.",
+      "c": "Quem está dentro é um jovem, não os discípulos.",
+      "d": "O corpo não está lá, como o jovem anuncia."
+    },
+    "hint": "Leia quem está dentro do sepulcro.",
+    "learningObjective": "Observar o jovem encontrado no sepulcro.",
+    "evidence": [
+      "Marcos 16:5"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-04",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 16:6 na ordem do texto.",
+    "prompt": "Monte Marcos 16:6 na ordem do texto.",
+    "cue": "Monte Marcos 16:6 na ordem do texto.",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não fiquem assustadas"
+      },
+      {
+        "id": "b",
+        "text": "vocês buscam a Jesus, o Nazareno, que foi crucificado"
+      },
+      {
+        "id": "c",
+        "text": "ele ressuscitou, não está mais aqui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não fiquem assustadas; vocês buscam a Jesus",
+    "feedbackCorrect": "Calma, quem elas buscam e o anúncio: ele ressuscitou.",
+    "feedbackWrong": {
+      "default": "Comece pelas palavras de calma do jovem."
+    },
+    "hint": "O jovem começa acalmando as mulheres.",
+    "learningObjective": "Reconhecer a sequência do anúncio em Marcos 16:6.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-05",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 16:6, o que o jovem diz que Jesus fez?",
+    "prompt": "Em Marcos 16:6, o que o jovem diz que Jesus fez?",
+    "cue": "Em Marcos 16:6, o que o jovem diz que Jesus fez?",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "template": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ___, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dormiu"
+      },
+      {
+        "id": "b",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "c",
+        "text": "fugiu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele ressuscitou, não está mais aqui",
+    "feedbackCorrect": "O anúncio é direto: ele ressuscitou e não está ali.",
+    "feedbackWrong": {
+      "a": "O lugar está vazio porque ele vive, não dorme.",
+      "c": "Ele não fugiu: o jovem anuncia algo maior."
+    },
+    "hint": "É a notícia central do versículo.",
+    "learningObjective": "Lembrar o anúncio da ressurreição.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-06",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "passageA": {
+      "ref": "Marcos 16:6",
+      "text": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A morte de Jesus não é o fim da história."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz foi só ilusão"
+      },
+      {
+        "id": "b",
+        "text": "Jesus continua no túmulo"
+      },
+      {
+        "id": "c",
+        "text": "A morte não venceu Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele ressuscitou, não está mais aqui",
+    "feedbackCorrect": "O crucificado ressuscitou: a morte não o reteve.",
+    "feedbackWrong": {
+      "a": "A cruz foi real; a vitória vem depois dela.",
+      "b": "O jovem diz que ele não está mais ali."
+    },
+    "hint": "Veja o anúncio sobre onde Jesus está.",
+    "learningObjective": "Ligar Marcos 16:6 à vitória sobre a morte.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-01",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Marcos 16:7, o jovem manda as mulheres guardarem silêncio e não avisarem ninguém.",
+    "prompt": "Em Marcos 16:7, o jovem manda as mulheres guardarem silêncio e não avisarem ninguém.",
+    "cue": "Em Marcos 16:7, o jovem manda as mulheres guardarem silêncio e não avisarem ninguém.",
+    "verseRef": "Marcos 16:7",
+    "passageText": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Vão, digam aos discípulos e a Pedro",
+    "feedbackCorrect": "A ordem é ir e contar aos discípulos e a Pedro.",
+    "feedbackWrong": {
+      "true": "A ordem é o contrário: vão e digam aos discípulos."
+    },
+    "hint": "Leia a ordem que o jovem dá.",
+    "learningObjective": "Compreender a ordem de levar a notícia.",
+    "evidence": [
+      "Marcos 16:7"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-02",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 16:6, toque a palavra que vira o medo das mulheres em anúncio.",
+    "prompt": "Em Marcos 16:6, toque a palavra que vira o medo das mulheres em anúncio.",
+    "cue": "Em Marcos 16:6, toque a palavra que vira o medo das mulheres em anúncio.",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "vocês"
+      },
+      {
+        "id": "c",
+        "text": "aqui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas ele lhes disse: Não fiquem assustadas",
+    "feedbackCorrect": "A palavra abre a fala que acalma e anuncia.",
+    "feedbackWrong": {
+      "b": "Isso indica a quem ele fala, não a virada.",
+      "c": "Isso indica o lugar vazio, não a virada."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que abre o anúncio.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-03",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Marcos 16:4 responde à preocupação de Marcos 16:3?",
+    "prompt": "Como Marcos 16:4 responde à preocupação de Marcos 16:3?",
+    "cue": "Como Marcos 16:4 responde à preocupação de Marcos 16:3?",
+    "verseRef": "Marcos 16:3–4",
+    "passageText": "E diziam umas às outras: Quem nos removerá a pedra da entrada do túmulo? E, ao olharem, viram que a pedra já estava removida; pois era muito grande.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pedra temida já não fecha o túmulo"
+      },
+      {
+        "id": "b",
+        "text": "As mulheres removem a pedra juntas"
+      },
+      {
+        "id": "c",
+        "text": "A pedra some diante dos olhos delas"
+      },
+      {
+        "id": "d",
+        "text": "Guardas abrem o túmulo a pedido delas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "viram que a pedra já estava removida",
+    "feedbackCorrect": "O obstáculo temido já estava resolvido quando olharam.",
+    "feedbackWrong": {
+      "b": "Elas não removem: ao olhar, a pedra já estava fora.",
+      "c": "Elas veem a pedra já removida, não o momento da remoção.",
+      "d": "O texto não menciona guardas nessa cena."
+    },
+    "hint": "Compare a pergunta do verso 3 com o verso 4.",
+    "learningObjective": "Relacionar a preocupação das mulheres à pedra removida.",
+    "evidence": [
+      "Marcos 16:3–4"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-04",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Marcos 16:5–6?",
+    "prompt": "Como avança a cena em Marcos 16:5–6?",
+    "cue": "Como avança a cena em Marcos 16:5–6?",
+    "verseRef": "Marcos 16:5–6",
+    "passageText": "Ao entrarem no sepulcro, viram um jovem sentado à direita, vestido de branco; ficaram surpresas e atemorizadas. Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As mulheres entram no sepulcro"
+      },
+      {
+        "id": "b",
+        "text": "Elas veem um jovem de branco"
+      },
+      {
+        "id": "c",
+        "text": "Elas ouvem que Jesus ressuscitou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ao entrarem no sepulcro, viram um jovem",
+    "feedbackCorrect": "Entrada, encontro com o jovem e o anúncio ouvido.",
+    "feedbackWrong": {
+      "default": "Comece pela entrada delas no sepulcro."
+    },
+    "hint": "O anúncio vem depois que elas entram.",
+    "learningObjective": "Compreender o avanço da cena no sepulcro.",
+    "evidence": [
+      "Marcos 16:5–6"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-05",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Marcos 16:7, para onde o jovem diz que Jesus vai adiante deles?",
+    "prompt": "Em Marcos 16:7, para onde o jovem diz que Jesus vai adiante deles?",
+    "cue": "Em Marcos 16:7, para onde o jovem diz que Jesus vai adiante deles?",
+    "verseRef": "Marcos 16:7",
+    "passageText": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "template": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a ___; lá vocês o verão conforme ele lhes disse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Nazaré"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele está indo adiante de vocês para a Galileia",
+    "feedbackCorrect": "Jesus vai adiante para a Galileia, como havia dito.",
+    "feedbackWrong": {
+      "a": "O encontro marcado é na Galileia, não em Jerusalém.",
+      "b": "O destino dito pelo jovem é outro, ao norte."
+    },
+    "hint": "É o lugar do encontro prometido.",
+    "learningObjective": "Compreender o destino do encontro com Jesus.",
+    "evidence": [
+      "Marcos 16:7"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-06",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Marcos 16:6 a Marcos 8:31?",
+    "prompt": "O que liga Marcos 16:6 a Marcos 8:31?",
+    "cue": "O que liga Marcos 16:6 a Marcos 8:31?",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "passageA": {
+      "ref": "Marcos 16:6",
+      "text": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado."
+    },
+    "passageB": {
+      "ref": "Marcos 8:31",
+      "text": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus evitou falar da morte"
+      },
+      {
+        "id": "b",
+        "text": "A ressurreição foi improviso total"
+      },
+      {
+        "id": "c",
+        "text": "Jesus já havia anunciado isso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele ressuscitou, não está mais aqui",
+    "feedbackCorrect": "Jesus já anunciara que morreria e ressuscitaria (8:31).",
+    "feedbackWrong": {
+      "a": "Em 8:31 ele fala abertamente da morte e da ressurreição.",
+      "b": "Ele mesmo anunciou isso antes, em Marcos 8:31."
+    },
+    "hint": "Veja o que Jesus ensinou em Marcos 8:31.",
+    "learningObjective": "Relacionar a ressurreição ao anúncio prévio de Jesus.",
+    "evidence": [
+      "Marcos 16:6",
+      "Marcos 8:31"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-01",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Marcos 16:6, o jovem liga o Jesus buscado à cruz e anuncia que ele ressuscitou.",
+    "prompt": "Em Marcos 16:6, o jovem liga o Jesus buscado à cruz e anuncia que ele ressuscitou.",
+    "cue": "Em Marcos 16:6, o jovem liga o Jesus buscado à cruz e anuncia que ele ressuscitou.",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "vocês buscam a Jesus, o Nazareno, que foi crucificado",
+    "feedbackCorrect": "O ressuscitado é o mesmo Jesus que foi crucificado.",
+    "feedbackWrong": {
+      "false": "O jovem nomeia o crucificado e anuncia: ele ressuscitou."
+    },
+    "hint": "Veja como o jovem identifica Jesus.",
+    "learningObjective": "Interpretar a ligação entre cruz e ressurreição.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-02",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 16:5, toque como o jovem no sepulcro estava vestido.",
+    "prompt": "Em Marcos 16:5, toque como o jovem no sepulcro estava vestido.",
+    "cue": "Em Marcos 16:5, toque como o jovem no sepulcro estava vestido.",
+    "verseRef": "Marcos 16:5",
+    "passageText": "Ao entrarem no sepulcro, viram um jovem sentado à direita, vestido de branco; ficaram surpresas e atemorizadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sentado à direita"
+      },
+      {
+        "id": "b",
+        "text": "no sepulcro"
+      },
+      {
+        "id": "c",
+        "text": "vestido de branco"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "viram um jovem sentado à direita, vestido de branco",
+    "feedbackCorrect": "O jovem está vestido de branco, sentado à direita.",
+    "feedbackWrong": {
+      "a": "Isso diz a posição dele, não a roupa.",
+      "b": "Isso diz o lugar, não como ele estava vestido."
+    },
+    "hint": "Procure a roupa, no fim da descrição.",
+    "learningObjective": "Sustentar com o texto a descrição do jovem.",
+    "evidence": [
+      "Marcos 16:5"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-03",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Marcos 16:6–7 sustenta sobre a ressurreição?",
+    "prompt": "Que leitura Marcos 16:6–7 sustenta sobre a ressurreição?",
+    "cue": "Que leitura Marcos 16:6–7 sustenta sobre a ressurreição?",
+    "verseRef": "Marcos 16:6–7",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado. Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro fica de fora do anúncio do jovem"
+      },
+      {
+        "id": "b",
+        "text": "O crucificado ressuscitou e vai adiante deles"
+      },
+      {
+        "id": "c",
+        "text": "O corpo de Jesus foi escondido pelas mulheres"
+      },
+      {
+        "id": "d",
+        "text": "A ressurreição é só um sentimento dos discípulos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele ressuscitou, não está mais aqui",
+    "feedbackCorrect": "O crucificado vive e vai adiante dos discípulos.",
+    "feedbackWrong": {
+      "a": "O jovem nomeia Pedro no recado, incluindo-o.",
+      "c": "O anúncio é de ressurreição, não de esconderijo.",
+      "d": "Há lugar vazio e encontro marcado, não só sentimento."
+    },
+    "hint": "Junte o anúncio do verso 6 ao recado do 7.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Marcos 16:6–7"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-04",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Marcos 16:6–7?",
+    "prompt": "Qual sequência revela o sentido de Marcos 16:6–7?",
+    "cue": "Qual sequência revela o sentido de Marcos 16:6–7?",
+    "verseRef": "Marcos 16:6–7",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado. Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As mulheres buscam o Jesus crucificado"
+      },
+      {
+        "id": "b",
+        "text": "O jovem anuncia que ele ressuscitou"
+      },
+      {
+        "id": "c",
+        "text": "Ele vai adiante para a Galileia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou",
+    "feedbackCorrect": "Busca pelo crucificado, anúncio da ressurreição e encontro.",
+    "feedbackWrong": {
+      "default": "Comece por quem elas buscam no sepulcro."
+    },
+    "hint": "Siga da busca ao encontro marcado.",
+    "learningObjective": "Ver o encadeamento entre cruz, ressurreição e encontro.",
+    "evidence": [
+      "Marcos 16:6–7"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-05",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Marcos 16:3, o que as mulheres temiam não conseguir remover?",
+    "prompt": "Em Marcos 16:3, o que as mulheres temiam não conseguir remover?",
+    "cue": "Em Marcos 16:3, o que as mulheres temiam não conseguir remover?",
+    "verseRef": "Marcos 16:3",
+    "passageText": "E diziam umas às outras: Quem nos removerá a pedra da entrada do túmulo?",
+    "template": "E diziam umas às outras: Quem nos removerá a ___ da entrada do túmulo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "pedra"
+      },
+      {
+        "id": "b",
+        "text": "cruz"
+      },
+      {
+        "id": "c",
+        "text": "porta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Quem nos removerá a pedra da entrada do túmulo?",
+    "feedbackCorrect": "A preocupação era a pedra enorme da entrada.",
+    "feedbackWrong": {
+      "b": "A cruz ficou para trás; o obstáculo é na entrada do túmulo.",
+      "c": "O obstáculo nomeado no caminho é outro, bem pesado."
+    },
+    "hint": "Lembre a preocupação delas no caminho.",
+    "learningObjective": "Lembrar o obstáculo superado na manhã da ressurreição.",
+    "evidence": [
+      "Marcos 16:3"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-06",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Marcos 16:7 a Marcos 14:28?",
+    "prompt": "O que liga Marcos 16:7 a Marcos 14:28?",
+    "cue": "O que liga Marcos 16:7 a Marcos 14:28?",
+    "verseRef": "Marcos 16:7",
+    "passageText": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "passageA": {
+      "ref": "Marcos 16:7",
+      "text": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse."
+    },
+    "passageB": {
+      "ref": "Marcos 14:28",
+      "text": "Mas, depois da minha ressurreição, irei à frente de vocês para a Galileia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A Galileia era plano novo"
+      },
+      {
+        "id": "b",
+        "text": "Jesus cumpre o que prometeu"
+      },
+      {
+        "id": "c",
+        "text": "Pedro é deixado de fora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele está indo adiante de vocês para a Galileia",
+    "feedbackCorrect": "Jesus já prometera ir adiante deles para a Galileia.",
+    "feedbackWrong": {
+      "a": "Ele havia dito isso antes, em Marcos 14:28.",
+      "c": "Pedro é nomeado no recado, não deixado de fora."
+    },
+    "hint": "Compare o destino com a promessa anterior de Jesus.",
+    "learningObjective": "Ligar o recado do túmulo à promessa de Jesus.",
+    "evidence": [
+      "Marcos 16:7",
+      "Marcos 14:28"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-01",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Marcos 1:18, Simão e André pediram um prazo para vender as redes antes de seguir Jesus.",
+    "prompt": "Em Marcos 1:18, Simão e André pediram um prazo para vender as redes antes de seguir Jesus.",
+    "cue": "Em Marcos 1:18, Simão e André pediram um prazo para vender as redes antes de seguir Jesus.",
+    "verseRef": "Marcos 1:18",
+    "passageText": "Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "Eles deixam as redes imediatamente e o seguem.",
+    "feedbackWrong": {
+      "true": "Não há prazo: eles deixam as redes na hora."
+    },
+    "hint": "Veja a rapidez da resposta deles.",
+    "learningObjective": "Revisar a resposta imediata dos primeiros discípulos.",
+    "evidence": [
+      "Marcos 1:18"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-02",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 1:17, toque o que Jesus tornará Simão e André.",
+    "prompt": "Em Marcos 1:17, toque o que Jesus tornará Simão e André.",
+    "cue": "Em Marcos 1:17, toque o que Jesus tornará Simão e André.",
+    "verseRef": "Marcos 1:17",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "após mim"
+      },
+      {
+        "id": "b",
+        "text": "lhes disse"
+      },
+      {
+        "id": "c",
+        "text": "pescadores de homens"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu os tornarei pescadores de homens",
+    "feedbackCorrect": "De pescadores de peixes, eles reunirão pessoas para Deus.",
+    "feedbackWrong": {
+      "a": "Isso é o chamado a vir, não a nova tarefa.",
+      "b": "Isso introduz a fala, não nomeia a tarefa."
+    },
+    "hint": "Procure a nova tarefa no fim da fala.",
+    "learningObjective": "Revisar a tarefa dada aos discípulos.",
+    "evidence": [
+      "Marcos 1:17"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-03",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 8:31, o que Jesus ensina sobre o Filho do Homem?",
+    "prompt": "Segundo Marcos 8:31, o que Jesus ensina sobre o Filho do Homem?",
+    "cue": "Segundo Marcos 8:31, o que Jesus ensina sobre o Filho do Homem?",
+    "verseRef": "Marcos 8:31",
+    "passageText": "E começou a lhes ensinar que era necessário que o Filho do Homem sofresse muitas coisas, fosse rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, fosse morto e, depois de três dias, ressuscitasse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evitará qualquer rejeição dos líderes"
+      },
+      {
+        "id": "b",
+        "text": "Será aclamado e poupado da morte"
+      },
+      {
+        "id": "c",
+        "text": "Reunirá um exército em Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "Sofrerá, morrerá e ressuscitará"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "fosse morto e, depois de três dias, ressuscitasse",
+    "feedbackCorrect": "Jesus anuncia sofrimento, morte e ressurreição.",
+    "feedbackWrong": {
+      "a": "Ele seria rejeitado pelos líderes, diz o texto.",
+      "b": "Ele anuncia rejeição e morte, não aclamação.",
+      "c": "O caminho anunciado é a cruz, não um exército."
+    },
+    "hint": "Leia o ensino completo do versículo.",
+    "learningObjective": "Revisar o anúncio de sofrimento e ressurreição.",
+    "evidence": [
+      "Marcos 8:31"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-04",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 16:6 na ordem do texto.",
+    "prompt": "Monte Marcos 16:6 na ordem do texto.",
+    "cue": "Monte Marcos 16:6 na ordem do texto.",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não fiquem assustadas"
+      },
+      {
+        "id": "b",
+        "text": "vocês buscam a Jesus, o Nazareno, que foi crucificado"
+      },
+      {
+        "id": "c",
+        "text": "ele ressuscitou, não está mais aqui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não fiquem assustadas; vocês buscam a Jesus",
+    "feedbackCorrect": "Calma, quem elas buscam e o anúncio: ele ressuscitou.",
+    "feedbackWrong": {
+      "default": "Comece pelas palavras de calma do jovem."
+    },
+    "hint": "O jovem começa acalmando as mulheres.",
+    "learningObjective": "Revisar a sequência do anúncio no túmulo.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-05",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 1:15, em que Jesus pede que as pessoas creiam?",
+    "prompt": "Em Marcos 1:15, em que Jesus pede que as pessoas creiam?",
+    "cue": "Em Marcos 1:15, em que Jesus pede que as pessoas creiam?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "template": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "medo"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "A fé pedida por Jesus é na boa notícia de Deus.",
+    "feedbackWrong": {
+      "a": "O pedido é crer na boa notícia, não viver com medo.",
+      "b": "Jesus chama à fé aberta na notícia, não ao silêncio."
+    },
+    "hint": "É a boa notícia anunciada por Jesus.",
+    "learningObjective": "Revisar o objeto da fé em Marcos 1:15.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-06",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 8:34 comunica que se liga a este contexto?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "passageA": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Seguir Jesus inclui negar a si mesmo e tomar a cruz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar a própria glória"
+      },
+      {
+        "id": "b",
+        "text": "Negar a si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "Evitar qualquer perda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "negue-se a si mesmo, tome a sua cruz e siga-me",
+    "feedbackCorrect": "O primeiro passo do chamado é negar a si mesmo.",
+    "feedbackWrong": {
+      "a": "Jesus pede o contrário de buscar a própria glória.",
+      "c": "O caminho inclui perda por causa de Jesus."
+    },
+    "hint": "Veja o primeiro pedido do versículo.",
+    "learningObjective": "Revisar o chamado a negar a si mesmo.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-07",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 16:4, toque o que já estava removido quando as mulheres olharam.",
+    "prompt": "Em Marcos 16:4, toque o que já estava removido quando as mulheres olharam.",
+    "cue": "Em Marcos 16:4, toque o que já estava removido quando as mulheres olharam.",
+    "verseRef": "Marcos 16:4",
+    "passageText": "E, ao olharem, viram que a pedra já estava removida; pois era muito grande.",
+    "options": [
+      {
+        "id": "a",
+        "text": "removida"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "grande"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a pedra já estava removida",
+    "feedbackCorrect": "O obstáculo enorme já estava fora do lugar.",
+    "feedbackWrong": {
+      "a": "Isso é o estado dela, não o objeto removido.",
+      "c": "Isso é o tamanho dela, não o objeto."
+    },
+    "hint": "Procure o objeto antes do estado dele.",
+    "learningObjective": "Revisar o obstáculo removido no túmulo.",
+    "evidence": [
+      "Marcos 16:4"
+    ]
+  },
+  {
+    "id": "marcos-sem-mc-boss-revisao-08",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 8:34 na ordem do texto.",
+    "prompt": "Monte Marcos 8:34 na ordem do texto.",
+    "cue": "Monte Marcos 8:34 na ordem do texto.",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "negue-se a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "tome a sua cruz"
+      },
+      {
+        "id": "c",
+        "text": "e siga-me"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "negue-se a si mesmo, tome a sua cruz e siga-me",
+    "feedbackCorrect": "Negar a si, tomar a cruz e seguir Jesus, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece por negar a si mesmo."
+    },
+    "hint": "O primeiro pedido é sobre si mesmo.",
+    "learningObjective": "Revisar a ordem do chamado de Jesus.",
+    "evidence": [
+      "Marcos 8:34"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-01",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Marcos 8:35, Jesus ensina que proteger a própria vida a qualquer custo é o caminho para salvá-la.",
+    "prompt": "Em Marcos 8:35, Jesus ensina que proteger a própria vida a qualquer custo é o caminho para salvá-la.",
+    "cue": "Em Marcos 8:35, Jesus ensina que proteger a própria vida a qualquer custo é o caminho para salvá-la.",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quem quiser salvar a sua vida a perderá",
+    "feedbackCorrect": "Agarrar a própria vida é perdê-la, diz Jesus.",
+    "feedbackWrong": {
+      "true": "Jesus diz o contrário: quem quer salvar assim, perde."
+    },
+    "hint": "Compare salvar e perder no versículo.",
+    "learningObjective": "Revisar o ensino sobre perder e salvar a vida.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-02",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 8:33, toque a palavra que opõe as coisas de Deus às dos homens.",
+    "prompt": "Em Marcos 8:33, toque a palavra que opõe as coisas de Deus às dos homens.",
+    "cue": "Em Marcos 8:33, toque a palavra que opõe as coisas de Deus às dos homens.",
+    "verseRef": "Marcos 8:33",
+    "passageText": "Mas ele, voltando-se e fitando os seus discípulos, repreendeu a Pedro, dizendo: Afaste-se de mim, Satanás! Pois tu não cogitas das coisas de Deus, mas apenas das dos homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "apenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não cogitas das coisas de Deus, mas apenas das dos homens",
+    "feedbackCorrect": "A palavra separa o pensar de Deus do pensar humano.",
+    "feedbackWrong": {
+      "a": "Isso começa a explicação, não marca a oposição.",
+      "c": "Isso limita o pensar de Pedro, não opõe."
+    },
+    "hint": "Procure uma palavra curta entre as ideias.",
+    "learningObjective": "Revisar o contraste no ensino de Jesus.",
+    "evidence": [
+      "Marcos 8:33"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-03",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a proximidade do reino pede, em Marcos 1:15?",
+    "prompt": "O que a proximidade do reino pede, em Marcos 1:15?",
+    "cue": "O que a proximidade do reino pede, em Marcos 1:15?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar um reino distante"
+      },
+      {
+        "id": "b",
+        "text": "Esperar sem mudar de rumo"
+      },
+      {
+        "id": "c",
+        "text": "Responder com arrependimento e fé"
+      },
+      {
+        "id": "d",
+        "text": "Confiar nos próprios méritos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "O reino próximo pede mudança de rumo e fé.",
+    "feedbackWrong": {
+      "a": "O reino está próximo, não distante.",
+      "b": "Jesus pede resposta, não espera passiva.",
+      "d": "A confiança é na boa notícia de Deus."
+    },
+    "hint": "Junte os dois pedidos do anúncio.",
+    "learningObjective": "Revisar a resposta pedida ao anúncio do reino.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-04",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Marcos 1:14–15?",
+    "prompt": "Como avança a cena em Marcos 1:14–15?",
+    "cue": "Como avança a cena em Marcos 1:14–15?",
+    "verseRef": "Marcos 1:14–15",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus. O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "João é preso"
+      },
+      {
+        "id": "b",
+        "text": "Jesus vai para a Galileia pregar"
+      },
+      {
+        "id": "c",
+        "text": "Ele anuncia o reino próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Depois que João foi preso, Jesus foi para a Galileia",
+    "feedbackCorrect": "Prisão de João, ida à Galileia e anúncio do reino.",
+    "feedbackWrong": {
+      "default": "Comece pela prisão de João."
+    },
+    "hint": "A prisão de João vem primeiro.",
+    "learningObjective": "Revisar o avanço até o anúncio do reino.",
+    "evidence": [
+      "Marcos 1:14–15"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-05",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Marcos 8:35, quem perder a vida por Jesus a fará o quê?",
+    "prompt": "Em Marcos 8:35, quem perder a vida por Jesus a fará o quê?",
+    "cue": "Em Marcos 8:35, quem perder a vida por Jesus a fará o quê?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "template": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perderá"
+      },
+      {
+        "id": "b",
+        "text": "guardará"
+      },
+      {
+        "id": "c",
+        "text": "salvará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "Perder por Jesus e pelo evangelho é salvar a vida.",
+    "feedbackWrong": {
+      "a": "Perder é o caminho; o resultado dito é o outro verbo.",
+      "b": "Guardar-se é o caminho que Jesus diz perder a vida."
+    },
+    "hint": "Leia o resultado no fim do versículo.",
+    "learningObjective": "Revisar o resultado de perder a vida por Jesus.",
+    "evidence": [
+      "Marcos 8:35"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-06",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Marcos 8:34 a Marcos 10:45?",
+    "prompt": "O que liga Marcos 8:34 a Marcos 10:45?",
+    "cue": "O que liga Marcos 8:34 a Marcos 10:45?",
+    "verseRef": "Marcos 8:34",
+    "passageText": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me.",
+    "passageA": {
+      "ref": "Marcos 8:34",
+      "text": "E, convocando a multidão e os seus discípulos, disse-lhes: Se alguém quiser vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me."
+    },
+    "passageB": {
+      "ref": "Marcos 10:45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O maior busca ser servido"
+      },
+      {
+        "id": "b",
+        "text": "O Filho veio servir"
+      },
+      {
+        "id": "c",
+        "text": "Seguir sem servir ninguém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tome a sua cruz e siga-me",
+    "feedbackCorrect": "Seguir Jesus é andar atrás do Filho que veio servir.",
+    "feedbackWrong": {
+      "a": "O Filho veio para servir, não para ser servido.",
+      "c": "O caminho de Jesus é de serviço aos outros."
+    },
+    "hint": "Veja para que o Filho veio.",
+    "learningObjective": "Revisar a ligação entre cruz e serviço.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-07",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 1:14, toque a palavra que marca o passo depois da prisão de João.",
+    "prompt": "Em Marcos 1:14, toque a palavra que marca o passo depois da prisão de João.",
+    "cue": "Em Marcos 1:14, toque a palavra que marca o passo depois da prisão de João.",
+    "verseRef": "Marcos 1:14",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depois"
+      },
+      {
+        "id": "b",
+        "text": "preso"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Depois que João foi preso",
+    "feedbackCorrect": "A palavra abre o versículo e marca a sequência.",
+    "feedbackWrong": {
+      "b": "Isso é o fato anterior, não a ligação.",
+      "c": "Isso é o lugar para onde Jesus vai."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Revisar o marcador de sequência em Marcos 1:14.",
+    "evidence": [
+      "Marcos 1:14"
+    ]
+  },
+  {
+    "id": "marcos-cam-mc-boss-revisao-08",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Marcos 16:3–4?",
+    "prompt": "Como se encadeiam os eventos de Marcos 16:3–4?",
+    "cue": "Como se encadeiam os eventos de Marcos 16:3–4?",
+    "verseRef": "Marcos 16:3–4",
+    "passageText": "E diziam umas às outras: Quem nos removerá a pedra da entrada do túmulo? E, ao olharem, viram que a pedra já estava removida; pois era muito grande.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As mulheres perguntam sobre a pedra"
+      },
+      {
+        "id": "b",
+        "text": "Elas olham para o túmulo"
+      },
+      {
+        "id": "c",
+        "text": "Elas veem a pedra já removida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quem nos removerá a pedra da entrada do túmulo?",
+    "feedbackCorrect": "Pergunta preocupada, olhar e a pedra já removida.",
+    "feedbackWrong": {
+      "default": "Comece pela pergunta das mulheres no caminho."
+    },
+    "hint": "A preocupação vem antes do olhar.",
+    "learningObjective": "Revisar o encadeamento da manhã da ressurreição.",
+    "evidence": [
+      "Marcos 16:3–4"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-01",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Marcos 16:6, o túmulo vazio acompanha o anúncio de que o Jesus crucificado ressuscitou.",
+    "prompt": "Em Marcos 16:6, o túmulo vazio acompanha o anúncio de que o Jesus crucificado ressuscitou.",
+    "cue": "Em Marcos 16:6, o túmulo vazio acompanha o anúncio de que o Jesus crucificado ressuscitou.",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ele ressuscitou, não está mais aqui",
+    "feedbackCorrect": "O ressuscitado é o crucificado, e o lugar está vazio.",
+    "feedbackWrong": {
+      "false": "O jovem anuncia: ele ressuscitou, não está aqui."
+    },
+    "hint": "Junte o anúncio ao lugar vazio.",
+    "learningObjective": "Revisar a ligação entre cruz e ressurreição.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-02",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 16:6, toque como o jovem identifica o Jesus que elas buscam.",
+    "prompt": "Em Marcos 16:6, toque como o jovem identifica o Jesus que elas buscam.",
+    "cue": "Em Marcos 16:6, toque como o jovem identifica o Jesus que elas buscam.",
+    "verseRef": "Marcos 16:6",
+    "passageText": "Mas ele lhes disse: Não fiquem assustadas; vocês buscam a Jesus, o Nazareno, que foi crucificado; ele ressuscitou, não está mais aqui; vejam o lugar onde o haviam colocado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "crucificado"
+      },
+      {
+        "id": "b",
+        "text": "Nazareno"
+      },
+      {
+        "id": "c",
+        "text": "assustadas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vocês buscam a Jesus, o Nazareno, que foi crucificado",
+    "feedbackCorrect": "O ressuscitado é identificado como o crucificado.",
+    "feedbackWrong": {
+      "b": "Isso é sua origem, não o que lhe aconteceu.",
+      "c": "Isso descreve as mulheres, não Jesus."
+    },
+    "hint": "Procure o que aconteceu com Jesus antes.",
+    "learningObjective": "Revisar a identidade do ressuscitado como crucificado.",
+    "evidence": [
+      "Marcos 16:6"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-03",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Marcos 16:7 sustenta sobre Pedro?",
+    "prompt": "Que leitura Marcos 16:7 sustenta sobre Pedro?",
+    "cue": "Que leitura Marcos 16:7 sustenta sobre Pedro?",
+    "verseRef": "Marcos 16:7",
+    "passageText": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Galileia cancela o encontro prometido"
+      },
+      {
+        "id": "b",
+        "text": "As mulheres devem se calar para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Pedro também recebe o recado do jovem"
+      },
+      {
+        "id": "d",
+        "text": "Pedro é excluído por ter falhado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "digam aos discípulos e a Pedro",
+    "feedbackCorrect": "Pedro é nomeado no recado: ele também é chamado.",
+    "feedbackWrong": {
+      "a": "Na Galileia eles o verão, como ele disse.",
+      "b": "A ordem é ir e contar, não se calar.",
+      "d": "O jovem o nomeia justamente para incluí-lo."
+    },
+    "hint": "Veja quem o jovem nomeia no recado.",
+    "learningObjective": "Interpretar a inclusão de Pedro no anúncio.",
+    "evidence": [
+      "Marcos 16:7"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-04",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Jesus em Marcos?",
+    "prompt": "Qual sequência revela o caminho de Jesus em Marcos?",
+    "cue": "Qual sequência revela o caminho de Jesus em Marcos?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus anuncia o reino próximo"
+      },
+      {
+        "id": "b",
+        "text": "Jesus chama a tomar a cruz"
+      },
+      {
+        "id": "c",
+        "text": "Jesus ressuscita e vai adiante deles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "Reino anunciado, caminho da cruz e ressurreição.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio do reino na Galileia."
+    },
+    "hint": "Siga do começo de Marcos até o túmulo vazio.",
+    "learningObjective": "Ver o fio de Marcos do anúncio à ressurreição.",
+    "evidence": [
+      "Marcos 1:15",
+      "Marcos 8:34",
+      "Marcos 16:7"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-05",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Marcos 16:7, a quem o jovem manda dar o recado, além de Pedro?",
+    "prompt": "Em Marcos 16:7, a quem o jovem manda dar o recado, além de Pedro?",
+    "cue": "Em Marcos 16:7, a quem o jovem manda dar o recado, além de Pedro?",
+    "verseRef": "Marcos 16:7",
+    "passageText": "Vão, digam aos discípulos e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "template": "Vão, digam aos ___ e a Pedro que ele está indo adiante de vocês para a Galileia; lá vocês o verão conforme ele lhes disse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "sacerdotes"
+      },
+      {
+        "id": "c",
+        "text": "guardas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "digam aos discípulos e a Pedro",
+    "feedbackCorrect": "O recado é para os discípulos, com Pedro nomeado.",
+    "feedbackWrong": {
+      "b": "Os sacerdotes não recebem esse recado no texto.",
+      "c": "O texto não manda avisar guardas do túmulo."
+    },
+    "hint": "Leia o começo da ordem do jovem.",
+    "learningObjective": "Revisar os destinatários do anúncio da ressurreição.",
+    "evidence": [
+      "Marcos 16:7"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-06",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Marcos 8:35 a João 12:24?",
+    "prompt": "O que liga Marcos 8:35 a João 12:24?",
+    "cue": "O que liga Marcos 8:35 a João 12:24?",
+    "verseRef": "Marcos 8:35",
+    "passageText": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará.",
+    "passageA": {
+      "ref": "Marcos 8:35",
+      "text": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará."
+    },
+    "passageB": {
+      "ref": "João 12:24",
+      "text": "Em verdade, em verdade vos digo: se o grão de trigo, caindo na terra, não morrer, permanecerá só; mas, se morrer, produzirá abundantes frutos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perder a vida gera fruto"
+      },
+      {
+        "id": "b",
+        "text": "A morte encerra o caminho"
+      },
+      {
+        "id": "c",
+        "text": "Guardar a vida gera fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem perder a sua vida por minha causa e pelo evangelho, este a salvará",
+    "feedbackCorrect": "Como o grão que morre, perder por Jesus gera vida.",
+    "feedbackWrong": {
+      "b": "Nos dois textos, a entrega abre caminho para vida.",
+      "c": "O grão guardado fica só; o que morre dá fruto."
+    },
+    "hint": "Veja o que acontece com o grão.",
+    "learningObjective": "Revisar a ligação entre perder a vida e gerar fruto.",
+    "evidence": [
+      "Marcos 8:35",
+      "João 12:24"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-07",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 8:36, toque o que de nada vale ganhar, se a alma se perde.",
+    "prompt": "Em Marcos 8:36, toque o que de nada vale ganhar, se a alma se perde.",
+    "cue": "Em Marcos 8:36, toque o que de nada vale ganhar, se a alma se perde.",
+    "verseRef": "Marcos 8:36",
+    "passageText": "Pois, de que vale ao homem ganhar o mundo inteiro e, entretanto, perder a sua alma?",
+    "options": [
+      {
+        "id": "a",
+        "text": "sua alma"
+      },
+      {
+        "id": "b",
+        "text": "mundo inteiro"
+      },
+      {
+        "id": "c",
+        "text": "ao homem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "de que vale ao homem ganhar o mundo inteiro",
+    "feedbackCorrect": "Nem o mundo inteiro compensa perder a alma.",
+    "feedbackWrong": {
+      "a": "A alma é o que se perde, não o que se ganha.",
+      "c": "Isso é a quem a pergunta se dirige."
+    },
+    "hint": "Procure o ganho comparado à alma.",
+    "learningObjective": "Revisar o valor da alma em Marcos 8.",
+    "evidence": [
+      "Marcos 8:36"
+    ]
+  },
+  {
+    "id": "marcos-pro-mc-boss-revisao-08",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o conflito de Marcos 8:32–34?",
+    "prompt": "Qual sequência revela o conflito de Marcos 8:32–34?",
+    "cue": "Qual sequência revela o conflito de Marcos 8:32–34?",
+    "verseRef": "Marcos 8:33",
+    "passageText": "Mas ele, voltando-se e fitando os seus discípulos, repreendeu a Pedro, dizendo: Afaste-se de mim, Satanás! Pois tu não cogitas das coisas de Deus, mas apenas das dos homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro reprova o caminho de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus repreende Pedro"
+      },
+      {
+        "id": "c",
+        "text": "Jesus chama todos a tomar a cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "repreendeu a Pedro",
+    "feedbackCorrect": "Reprovação de Pedro, repreensão de Jesus e o chamado.",
+    "feedbackWrong": {
+      "default": "Comece pela reprovação de Pedro."
+    },
+    "hint": "O conflito começa com Pedro à parte.",
+    "learningObjective": "Revisar o encadeamento do conflito com Pedro.",
+    "evidence": [
+      "Marcos 8:32",
+      "Marcos 8:33",
+      "Marcos 8:34"
+    ]
+  }
+]

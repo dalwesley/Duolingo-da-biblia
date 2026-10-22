@@ -1,0 +1,619 @@
+{
+  "studies": {
+    "es-01-volta": {
+      "slug": "es-01-volta",
+      "passageRef": "Atos 1:9–11",
+      "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista. E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco. Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+      "passages": [
+        {
+          "ref": "Atos 1:8–11",
+          "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra. E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista. E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco. Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+        },
+        {
+          "ref": "Atos 1:14",
+          "text": "Todos esses perseveravam unânimes em oração e súplicas, juntamente com as mulheres, com Maria, mãe de Jesus, e com os seus irmãos."
+        }
+      ],
+      "context": "Jesus ressuscitado fala aos discípulos e sobe ao céu diante deles. Dois homens vestidos de branco anunciam que ele voltará do mesmo modo.",
+      "keyword": "voltará",
+      "keywordGloss": "A promessa é que esse mesmo Jesus voltará do mesmo modo como os discípulos o viram subir.",
+      "focusQuestion": "Como a certeza de que Jesus voltará muda o seu modo de viver hoje?",
+      "reflectionPrompts": [
+        "Jesus voltará",
+        "Testemunhar com esperança",
+        "Orar e esperar"
+      ],
+      "facts": [
+        {
+          "text": "Os discípulos serão testemunhas até os confins da terra.",
+          "evidenceRef": "Atos 1:8",
+          "evidenceSpan": "sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra"
+        },
+        {
+          "text": "Jesus foi elevado às alturas diante dos discípulos.",
+          "evidenceRef": "Atos 1:9",
+          "evidenceSpan": "foi elevado às alturas diante deles"
+        },
+        {
+          "text": "Uma nuvem encobriu Jesus, afastando-o da vista deles.",
+          "evidenceRef": "Atos 1:9",
+          "evidenceSpan": "uma nuvem o encobriu, afastando-o de sua vista"
+        },
+        {
+          "text": "Dois homens vestidos de branco surgiram ao lado deles.",
+          "evidenceRef": "Atos 1:10",
+          "evidenceSpan": "surgiram ao lado deles dois homens vestidos de branco"
+        },
+        {
+          "text": "Jesus voltará do mesmo modo como o viram subir.",
+          "evidenceRef": "Atos 1:11",
+          "evidenceSpan": "voltará da mesma maneira como o viram subir"
+        },
+        {
+          "text": "Todos perseveravam unânimes em oração e súplicas.",
+          "evidenceRef": "Atos 1:14",
+          "evidenceSpan": "Todos esses perseveravam unânimes em oração e súplicas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "voltará",
+          "gloss": "O anúncio garante o retorno desse mesmo Jesus, do mesmo modo como subiu."
+        },
+        {
+          "term": "nuvem",
+          "gloss": "A nuvem encobre Jesus e o afasta da vista dos discípulos no momento da subida."
+        },
+        {
+          "term": "testemunhas",
+          "gloss": "Os discípulos são enviados a falar de Jesus de Jerusalém até os confins da terra."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus é elevado diante deles",
+          "evidenceRef": "Atos 1:9"
+        },
+        {
+          "label": "Os discípulos olham para o céu",
+          "evidenceRef": "Atos 1:10"
+        },
+        {
+          "label": "A volta de Jesus é anunciada",
+          "evidenceRef": "Atos 1:11"
+        },
+        {
+          "label": "O grupo persevera em oração",
+          "evidenceRef": "Atos 1:14"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Jesus é elevado enquanto os discípulos observam a subida.",
+          "marker": "enquanto",
+          "evidenceRef": "Atos 1:9"
+        },
+        {
+          "kind": "propósito",
+          "text": "Os discípulos recebem poder para ser testemunhas até os confins da terra.",
+          "marker": "até",
+          "evidenceRef": "Atos 1:8"
+        },
+        {
+          "kind": "resultado",
+          "text": "Depois do anúncio, o grupo persevera unido em oração e súplicas.",
+          "marker": null,
+          "evidenceRef": "Atos 1:14"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 14:3",
+          "bridge": "Jesus promete voltar",
+          "text": "E, quando eu for e vos preparar um lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós."
+        },
+        {
+          "ref": "Mateus 24:42",
+          "bridge": "Vigiar sem saber o dia",
+          "text": "Portanto, fiquem vigilantes, pois vocês não sabem em que dia o Senhor de vocês virá."
+        },
+        {
+          "ref": "1 Tessalonicenses 4:16",
+          "bridge": "O Senhor descerá do céu",
+          "text": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Os discípulos deviam ficar só olhando para o céu, esperando sem nada fazer.",
+          "why": "Antes de subir, Jesus os envia como testemunhas até os confins da terra, e depois eles perseveram em oração."
+        },
+        {
+          "text": "O texto permite calcular o dia em que Jesus voltará.",
+          "why": "O anúncio diz que ele voltará do mesmo modo, mas não revela dia nem hora alguma."
+        },
+        {
+          "text": "A volta de Jesus seria apenas um sentimento no coração, sem ele voltar de verdade.",
+          "why": "Os homens dizem que esse Jesus voltará da mesma maneira como o viram subir."
+        }
+      ],
+      "centralInsight": "Jesus voltará do mesmo modo como subiu, e essa promessa sustenta a esperança",
+      "anchorQuestion": "Segundo Atos 1:11, como Jesus voltará?",
+      "relatedVerses": [
+        {
+          "reference": "João 14:3",
+          "reason": "Jesus promete voltar"
+        },
+        {
+          "reference": "Mateus 24:42",
+          "reason": "Vigiar sem saber o dia"
+        },
+        {
+          "reference": "1 Tessalonicenses 4:16",
+          "reason": "O Senhor descerá do céu"
+        }
+      ]
+    },
+    "es-02-juizo": {
+      "slug": "es-02-juizo",
+      "passageRef": "2 Coríntios 5:8–10",
+      "passageText": "Temos plena confiança e desejamos deixar este corpo para habitar com o Senhor. Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+      "passages": [
+        {
+          "ref": "2 Coríntios 5:7–10",
+          "text": "Porque andamos por fé e não pelo que vemos. Temos plena confiança e desejamos deixar este corpo para habitar com o Senhor. Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo."
+        },
+        {
+          "ref": "2 Coríntios 5:11",
+          "text": "Tendo em vista o temor que devemos ao Senhor, procuramos persuadir os homens; somos plenamente conhecidos por Deus, e espero que também a vossa consciência nos reconheça."
+        }
+      ],
+      "context": "Paulo fala de viver pela fé, desejar estar com o Senhor e buscar agradá-lo. Nesse caminho, ele lembra que todos comparecerão diante de Cristo.",
+      "keyword": "tribunal de Cristo",
+      "keywordGloss": "Todos comparecerão diante de Cristo, e cada um receberá conforme o bem ou o mal que praticou.",
+      "focusQuestion": "Como saber que você comparecerá diante de Cristo muda suas escolhas de hoje?",
+      "reflectionPrompts": [
+        "Andar por fé",
+        "Agradar ao Senhor",
+        "Viver com responsabilidade"
+      ],
+      "facts": [
+        {
+          "text": "Andamos por fé e não pelo que vemos.",
+          "evidenceRef": "2 Coríntios 5:7",
+          "evidenceSpan": "andamos por fé e não pelo que vemos"
+        },
+        {
+          "text": "Paulo deseja deixar este corpo para habitar com o Senhor.",
+          "evidenceRef": "2 Coríntios 5:8",
+          "evidenceSpan": "desejamos deixar este corpo para habitar com o Senhor"
+        },
+        {
+          "text": "Nos esforçamos sempre para agradar ao Senhor.",
+          "evidenceRef": "2 Coríntios 5:9",
+          "evidenceSpan": "nos esforçamos sempre para agradá-lo"
+        },
+        {
+          "text": "Todos devemos comparecer diante do tribunal de Cristo.",
+          "evidenceRef": "2 Coríntios 5:10",
+          "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo"
+        },
+        {
+          "text": "Cada um receberá de acordo com o bem ou o mal que praticou.",
+          "evidenceRef": "2 Coríntios 5:10",
+          "evidenceSpan": "cada um receba de acordo com o bem ou o mal que praticou por meio do corpo"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "tribunal de Cristo",
+          "gloss": "O lugar diante do qual todos comparecerão, segundo o texto de Paulo."
+        },
+        {
+          "term": "fé",
+          "gloss": "O modo de andar nesta vida, mesmo sem ver tudo com os olhos."
+        },
+        {
+          "term": "comparecer",
+          "gloss": "Estar presente diante de Cristo, como o texto afirma de todos nós."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Andar por fé nesta vida",
+          "evidenceRef": "2 Coríntios 5:7"
+        },
+        {
+          "label": "Desejar estar com o Senhor",
+          "evidenceRef": "2 Coríntios 5:8"
+        },
+        {
+          "label": "Esforçar-se para agradar a Deus",
+          "evidenceRef": "2 Coríntios 5:9"
+        },
+        {
+          "label": "Comparecer diante de Cristo",
+          "evidenceRef": "2 Coríntios 5:10"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O andar do crente é por fé, e não pelo que se vê.",
+          "marker": "não",
+          "evidenceRef": "2 Coríntios 5:7"
+        },
+        {
+          "kind": "causa",
+          "text": "Por desejar estar com o Senhor, Paulo se esforça para agradá-lo.",
+          "marker": "Por isso",
+          "evidenceRef": "2 Coríntios 5:9"
+        },
+        {
+          "kind": "propósito",
+          "text": "Todos comparecem para que cada um receba conforme o que praticou.",
+          "marker": "para que",
+          "evidenceRef": "2 Coríntios 5:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 5:28–29",
+          "bridge": "Ressurreição para vida ou juízo",
+          "text": "Não se maravilhem com isso, pois vem a hora em que todos os que estão nos túmulos ouvirão a sua voz e sairão. E aqueles que tiverem feito o bem ressuscitarão para a vida; e aqueles que tiverem praticado o mal ressuscitarão para o juízo."
+        },
+        {
+          "ref": "Romanos 14:12",
+          "bridge": "Cada um dará contas",
+          "text": "Assim, pois, cada um de nós dará conta a Deus de si mesmo."
+        },
+        {
+          "ref": "Romanos 2:6",
+          "bridge": "Cada um conforme suas obras",
+          "text": "Ele recompensará a cada um conforme o seu comportamento"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Só quem não crê comparecerá diante de Cristo, e quem crê está fora disso.",
+          "why": "Paulo escreve todos nós devemos comparecer, incluindo a si mesmo e aos leitores."
+        },
+        {
+          "text": "O que a pessoa faz com o corpo não tem importância alguma para Deus.",
+          "why": "O texto diz que cada um receberá de acordo com o bem ou o mal praticado por meio do corpo."
+        },
+        {
+          "text": "Andar por fé é enxergar tudo com clareza, sem nada escondido.",
+          "why": "Paulo opõe os dois caminhos ao dizer que andamos por fé e não pelo que vemos."
+        }
+      ],
+      "centralInsight": "Todos comparecerão diante de Cristo, e cada um receberá conforme o que fez",
+      "anchorQuestion": "Segundo 2 Coríntios 5:10, diante de quem todos comparecerão?",
+      "relatedVerses": [
+        {
+          "reference": "João 5:28–29",
+          "reason": "Ressurreição para vida ou juízo"
+        },
+        {
+          "reference": "Romanos 14:12",
+          "reason": "Cada um dará contas"
+        },
+        {
+          "reference": "Romanos 2:6",
+          "reason": "Cada um conforme suas obras"
+        }
+      ]
+    },
+    "es-03-novo": {
+      "slug": "es-03-novo",
+      "passageRef": "Apocalipse 21:1–5",
+      "passageText": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe. E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo. E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+      "passages": [
+        {
+          "ref": "Apocalipse 21:1–5",
+          "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe. E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo. E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+        }
+      ],
+      "context": "João vê o fim da história que a Bíblia conta. Deus faz novo céu e nova terra, mora com seu povo e acaba com a morte, o luto e a dor.",
+      "keyword": "novas",
+      "keywordGloss": "Quem está no trono diz que faz novas todas as coisas, e suas palavras são fiéis e verdadeiras.",
+      "focusQuestion": "Que dor de hoje você quer entregar a Deus, que promete fazer tudo novo?",
+      "reflectionPrompts": [
+        "Deus mora com seu povo",
+        "Sem morte nem dor",
+        "Tudo feito novo"
+      ],
+      "facts": [
+        {
+          "text": "João vê um novo céu e uma nova terra.",
+          "evidenceRef": "Apocalipse 21:1",
+          "evidenceSpan": "Vi um novo céu e uma nova terra"
+        },
+        {
+          "text": "A cidade santa descia do céu, da parte de Deus.",
+          "evidenceRef": "Apocalipse 21:2",
+          "evidenceSpan": "vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus"
+        },
+        {
+          "text": "Deus habitará com os homens e será o Deus deles.",
+          "evidenceRef": "Apocalipse 21:3",
+          "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo"
+        },
+        {
+          "text": "Deus enxugará de seus olhos toda lágrima.",
+          "evidenceRef": "Apocalipse 21:4",
+          "evidenceSpan": "E Deus enxugará de seus olhos toda lágrima"
+        },
+        {
+          "text": "A morte não existirá mais, nem luto, nem pranto, nem dor.",
+          "evidenceRef": "Apocalipse 21:4",
+          "evidenceSpan": "e a morte não existirá mais, nem haverá luto, nem pranto, nem dor"
+        },
+        {
+          "text": "Quem está no trono faz novas todas as coisas.",
+          "evidenceRef": "Apocalipse 21:5",
+          "evidenceSpan": "Eis que faço novas todas as coisas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "novo céu",
+          "gloss": "A criação renovada por Deus depois que o primeiro céu e a primeira terra passaram."
+        },
+        {
+          "term": "tabernáculo",
+          "gloss": "A morada de Deus com os homens, como o texto anuncia com grande voz."
+        },
+        {
+          "term": "novas",
+          "gloss": "A palavra de quem está no trono sobre todas as coisas renovadas por Deus."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Novo céu e nova terra surgem",
+          "evidenceRef": "Apocalipse 21:1"
+        },
+        {
+          "label": "A cidade santa desce de Deus",
+          "evidenceRef": "Apocalipse 21:2"
+        },
+        {
+          "label": "Deus habita com seu povo",
+          "evidenceRef": "Apocalipse 21:3"
+        },
+        {
+          "label": "Morte, luto e dor chegam ao fim",
+          "evidenceRef": "Apocalipse 21:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O primeiro céu e a primeira terra passaram, e surge o que é novo.",
+          "marker": "primeiro",
+          "evidenceRef": "Apocalipse 21:1"
+        },
+        {
+          "kind": "causa",
+          "text": "Não há mais dor porque as primeiras coisas já passaram.",
+          "marker": "porque",
+          "evidenceRef": "Apocalipse 21:4"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois de ver a cidade descer, João ouve a voz que anuncia a morada de Deus.",
+          "marker": null,
+          "evidenceRef": "Apocalipse 21:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 65:17",
+          "bridge": "Deus cria novos céus",
+          "text": "Pois eis que eu crio novos céus e uma nova terra; e não haverá mais lembrança das coisas passadas, jamais haverá memória delas."
+        },
+        {
+          "ref": "Isaías 25:8",
+          "bridge": "Deus enxuga as lágrimas",
+          "text": "Destruirá a morte para sempre, e assim o Senhor Deus enxugará as lágrimas de todos os rostos, e tirará de toda a terra o opróbrio do seu povo, porque o Senhor falou."
+        },
+        {
+          "ref": "2 Pedro 3:13",
+          "bridge": "Novos céus com justiça",
+          "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A promessa é só de um céu distante, sem nova terra nem cidade.",
+          "why": "João vê novo céu, nova terra e a cidade santa descendo da parte de Deus."
+        },
+        {
+          "text": "Na nova criação, Deus continuará longe do seu povo, como agora.",
+          "why": "A voz anuncia que ele habitará com eles e será o Deus deles."
+        },
+        {
+          "text": "A morte continuará existindo, apenas com menos força que hoje.",
+          "why": "O texto afirma que a morte não existirá mais, nem luto, nem pranto, nem dor."
+        }
+      ],
+      "centralInsight": "Deus fará novo céu e nova terra, morará com seu povo e acabará com a morte e a dor",
+      "anchorQuestion": "Segundo Apocalipse 21:4, o que não existirá mais na nova criação?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 65:17",
+          "reason": "Deus cria novos céus"
+        },
+        {
+          "reference": "Isaías 25:8",
+          "reason": "Deus enxuga as lágrimas"
+        },
+        {
+          "reference": "2 Pedro 3:13",
+          "reason": "Novos céus com justiça"
+        }
+      ]
+    },
+    "es-boss": {
+      "slug": "es-boss",
+      "passageRef": "Atos 1:9–11",
+      "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista. E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco. Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+      "passages": [
+        {
+          "ref": "Atos 1:9–11",
+          "text": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista. E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco. Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+        },
+        {
+          "ref": "2 Coríntios 5:9–10",
+          "text": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo."
+        },
+        {
+          "ref": "Apocalipse 21:3–5",
+          "text": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras."
+        }
+      ],
+      "context": "Este desafio revisa a volta de Jesus, o comparecimento diante de Cristo e a nova criação. A esperança final é firme porque Deus cumpre o que promete.",
+      "keyword": "Esperança",
+      "keywordGloss": "Jesus voltará, todos comparecerão diante dele e Deus fará novas todas as coisas.",
+      "focusQuestion": "Como essa esperança final sustenta suas escolhas e sua espera hoje?",
+      "reflectionPrompts": [
+        "Jesus voltará",
+        "Viver com responsabilidade",
+        "Deus faz tudo novo"
+      ],
+      "facts": [
+        {
+          "text": "Jesus voltará do mesmo modo como o viram subir.",
+          "evidenceRef": "Atos 1:11",
+          "evidenceSpan": "voltará da mesma maneira como o viram subir"
+        },
+        {
+          "text": "Todos devemos comparecer diante do tribunal de Cristo.",
+          "evidenceRef": "2 Coríntios 5:10",
+          "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo"
+        },
+        {
+          "text": "Cada um receberá de acordo com o bem ou o mal que praticou.",
+          "evidenceRef": "2 Coríntios 5:10",
+          "evidenceSpan": "cada um receba de acordo com o bem ou o mal que praticou por meio do corpo"
+        },
+        {
+          "text": "Deus habitará com os homens e será o Deus deles.",
+          "evidenceRef": "Apocalipse 21:3",
+          "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo"
+        },
+        {
+          "text": "A morte não existirá mais, nem luto, nem pranto, nem dor.",
+          "evidenceRef": "Apocalipse 21:4",
+          "evidenceSpan": "e a morte não existirá mais, nem haverá luto, nem pranto, nem dor"
+        },
+        {
+          "text": "Quem está no trono faz novas todas as coisas.",
+          "evidenceRef": "Apocalipse 21:5",
+          "evidenceSpan": "Eis que faço novas todas as coisas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "voltará",
+          "gloss": "O anúncio de que esse mesmo Jesus voltará como os discípulos o viram subir."
+        },
+        {
+          "term": "tribunal de Cristo",
+          "gloss": "O lugar diante do qual todos comparecerão, segundo Paulo."
+        },
+        {
+          "term": "novas",
+          "gloss": "A palavra do trono sobre todas as coisas renovadas por Deus."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A volta de Jesus é prometida",
+          "evidenceRef": "Atos 1:11"
+        },
+        {
+          "label": "A vida pede esforço para agradar",
+          "evidenceRef": "2 Coríntios 5:9"
+        },
+        {
+          "label": "Todos comparecem diante de Cristo",
+          "evidenceRef": "2 Coríntios 5:10"
+        },
+        {
+          "label": "Deus renova todas as coisas",
+          "evidenceRef": "Apocalipse 21:5"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Jesus é elevado enquanto os discípulos observam a subida.",
+          "marker": "enquanto",
+          "evidenceRef": "Atos 1:9"
+        },
+        {
+          "kind": "propósito",
+          "text": "Todos comparecem para que cada um receba conforme o que praticou.",
+          "marker": "para que",
+          "evidenceRef": "2 Coríntios 5:10"
+        },
+        {
+          "kind": "causa",
+          "text": "Não há mais dor porque as primeiras coisas já passaram.",
+          "marker": "porque",
+          "evidenceRef": "Apocalipse 21:4"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 14:3",
+          "bridge": "Jesus promete voltar",
+          "text": "E, quando eu for e vos preparar um lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós."
+        },
+        {
+          "ref": "Mateus 24:42",
+          "bridge": "Vigiar sem saber o dia",
+          "text": "Portanto, fiquem vigilantes, pois vocês não sabem em que dia o Senhor de vocês virá."
+        },
+        {
+          "ref": "Isaías 25:8",
+          "bridge": "Deus enxuga as lágrimas",
+          "text": "Destruirá a morte para sempre, e assim o Senhor Deus enxugará as lágrimas de todos os rostos, e tirará de toda a terra o opróbrio do seu povo, porque o Senhor falou."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Dá para marcar no calendário o dia em que Jesus voltará.",
+          "why": "Atos anuncia o modo da volta, e Jesus ensina que não sabemos o dia, por isso devemos vigiar."
+        },
+        {
+          "text": "Só quem não crê comparecerá diante de Cristo no fim.",
+          "why": "Paulo escreve que todos nós devemos comparecer diante do tribunal de Cristo."
+        },
+        {
+          "text": "Na nova criação, Deus seguirá longe e a morte continuará.",
+          "why": "Apocalipse anuncia Deus habitando com seu povo e a morte deixando de existir."
+        }
+      ],
+      "centralInsight": "O que este conceito revela sobre Deus?",
+      "anchorQuestion": "Quais são as três promessas finais revistas neste desafio?",
+      "relatedVerses": [
+        {
+          "reference": "João 14:3",
+          "reason": "Jesus promete voltar"
+        },
+        {
+          "reference": "Mateus 24:42",
+          "reason": "Vigiar sem saber o dia"
+        },
+        {
+          "reference": "Isaías 25:8",
+          "reason": "Deus enxuga as lágrimas"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4063 @@
+[
+  {
+    "id": "ester-sem-ester-corte-01-ester-rainha-01",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Ester 2:10, Ester não revelou o seu povo nem sua linhagem",
+    "prompt": "Em Ester 2:10, Ester não revelou o seu povo nem sua linhagem",
+    "cue": "Em Ester 2:10, Ester não revelou o seu povo nem sua linhagem",
+    "verseRef": "Ester 2:10",
+    "passageText": "Ester, porém, não revelou o seu povo nem sua linhagem, pois Mardoqueu a havia instruído a não fazê-lo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não revelou o seu povo nem sua linhagem",
+    "feedbackCorrect": "Ester guarda sua origem conforme a instrução recebida de Mardoqueu.",
+    "feedbackWrong": {
+      "false": "Releia Ester 2:10, que afirma que ela não revelou povo nem linhagem."
+    },
+    "hint": "Olhe o que Ester não fez.",
+    "learningObjective": "Observar que Ester guarda sua origem ao entrar na casa do rei.",
+    "evidence": [
+      "Ester 2:10"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-01-ester-rainha-02",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Ester 2:7, toque o outro nome de Ester.",
+    "prompt": "Em Ester 2:7, toque o outro nome de Ester.",
+    "cue": "Em Ester 2:7, toque o outro nome de Ester.",
+    "verseRef": "Ester 2:7",
+    "passageText": "Ele criara Hadassa (que é Ester, filha de seu tio), pois não tinha pai nem mãe; era uma jovem bela, de formosura e aparência agradável. Quando seus pais faleceram, Mardoqueu a tomou como filha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mardoqueu"
+      },
+      {
+        "id": "b",
+        "text": "filha"
+      },
+      {
+        "id": "c",
+        "text": "Hadassa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele criara Hadassa (que é Ester",
+    "feedbackCorrect": "Hadassa é o outro nome de Ester, filha do tio de Mardoqueu.",
+    "feedbackWrong": {
+      "a": "Mardoqueu é quem criou Ester, não o outro nome dela.",
+      "b": "Filha descreve a relação com Mardoqueu, não um nome."
+    },
+    "hint": "Procure o nome entre parênteses no versículo.",
+    "learningObjective": "Identificar Hadassa como o outro nome de Ester.",
+    "evidence": [
+      "Ester 2:7"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-01-ester-rainha-03",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Ester 2:9, o que Hegai deu a Ester além de enfeites e porções?",
+    "prompt": "Segundo Ester 2:9, o que Hegai deu a Ester além de enfeites e porções?",
+    "cue": "Segundo Ester 2:9, o que Hegai deu a Ester além de enfeites e porções?",
+    "verseRef": "Ester 2:9",
+    "passageText": "E a jovem lhe pareceu formosa e encontrou favor diante dele. Por isso, apressou-se em dar-lhe seus enfeites e suas porções, além de oferecer-lhe sete servas escolhidas da casa do rei, e a levou com suas servas para os melhores aposentos da casa das mulheres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sete servas escolhidas"
+      },
+      {
+        "id": "b",
+        "text": "Um banquete no palácio"
+      },
+      {
+        "id": "c",
+        "text": "Cartas para as províncias"
+      },
+      {
+        "id": "d",
+        "text": "Uma coroa real"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "oferecer-lhe sete servas escolhidas da casa do rei",
+    "feedbackCorrect": "Hegai deu a Ester sete servas escolhidas e os melhores aposentos.",
+    "feedbackWrong": {
+      "b": "O banquete é dado pelo rei depois da coroação (2:18).",
+      "c": "Nenhuma carta é entregue a Ester neste momento do texto.",
+      "d": "A coroa só vem depois, das mãos do rei, em Ester 2:17."
+    },
+    "hint": "Leia a lista do que Hegai oferece a Ester.",
+    "learningObjective": "Observar o favor concreto que Ester recebe de Hegai.",
+    "evidence": [
+      "Ester 2:9"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-01-ester-rainha-04",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Ester 2:17 na ordem do texto.",
+    "prompt": "Monte Ester 2:17 na ordem do texto.",
+    "cue": "Monte Ester 2:17 na ordem do texto.",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E o rei amou Ester mais do que a todas as mulheres"
+      },
+      {
+        "id": "b",
+        "text": "e colocou a coroa real em sua cabeça"
+      },
+      {
+        "id": "c",
+        "text": "fazendo dela rainha em lugar de Vasti"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E o rei amou Ester mais do que a todas as mulheres",
+    "feedbackCorrect": "Primeiro o rei ama Ester, depois põe a coroa e a faz rainha.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor do rei; a coroa e o título vêm em seguida."
+    },
+    "hint": "O versículo começa pelo sentimento do rei.",
+    "learningObjective": "Reconhecer a sequência da coroação de Ester.",
+    "evidence": [
+      "Ester 2:17"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-01-ester-rainha-05",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Ester 2:17, o que o rei colocou na cabeça de Ester?",
+    "prompt": "Em Ester 2:17, o que o rei colocou na cabeça de Ester?",
+    "cue": "Em Ester 2:17, o que o rei colocou na cabeça de Ester?",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "template": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a ___ real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "options": [
+      {
+        "id": "a",
+        "text": "véu"
+      },
+      {
+        "id": "b",
+        "text": "coroa"
+      },
+      {
+        "id": "c",
+        "text": "anel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "colocou a coroa real em sua cabeça",
+    "feedbackCorrect": "O rei colocou a coroa real na cabeça de Ester ao fazê-la rainha.",
+    "feedbackWrong": {
+      "a": "O texto não fala de véu; fala do sinal real posto na cabeça.",
+      "c": "Nenhum anel é mencionado na coroação de Ester."
+    },
+    "hint": "É o sinal visível do lugar de rainha.",
+    "learningObjective": "Lembrar o sinal da coroação de Ester.",
+    "evidence": [
+      "Ester 2:17"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-01-ester-rainha-06",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "passageA": {
+      "ref": "Ester 2:17",
+      "text": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma judia órfã, criada por Mardoqueu, é levada à casa do rei em Susã."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ester abandona seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Vasti volta ao trono"
+      },
+      {
+        "id": "c",
+        "text": "Ester se torna rainha"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+    "feedbackCorrect": "A órfã levada à casa do rei é feita rainha em lugar de Vasti.",
+    "feedbackWrong": {
+      "a": "Ester não abandona seu povo; ela apenas guarda sua origem.",
+      "b": "É Ester quem ocupa o lugar deixado por Vasti."
+    },
+    "hint": "Veja o lugar que Ester passa a ocupar.",
+    "learningObjective": "Ligar a trajetória de Ester à sua chegada ao lugar de rainha.",
+    "evidence": [
+      "Ester 2:17"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-01-ester-rainha-01",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Ester 2:15, Ester pediu muitos bens além do que Hegai lhe sugeriu para ir ao rei",
+    "prompt": "Em Ester 2:15, Ester pediu muitos bens além do que Hegai lhe sugeriu para ir ao rei",
+    "cue": "Em Ester 2:15, Ester pediu muitos bens além do que Hegai lhe sugeriu para ir ao rei",
+    "verseRef": "Ester 2:15",
+    "passageText": "Chegando, portanto, o momento de Ester, filha de Abiail, tio de Mardoqueu, que a tomara como filha, para ir ao rei, nada pediu além do que lhe sugeriu Hegai, eunuco do rei, guarda das mulheres; e Ester conquistou o favor de todos os que a viam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "nada pediu além do que lhe sugeriu Hegai",
+    "feedbackCorrect": "Ester nada pediu além da sugestão de Hegai e conquistou o favor de todos.",
+    "feedbackWrong": {
+      "true": "Releia Ester 2:15, que diz que ela nada pediu além do sugerido."
+    },
+    "hint": "Repare no que Ester não pediu.",
+    "learningObjective": "Compreender a postura simples de Ester diante do rei.",
+    "evidence": [
+      "Ester 2:15"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-01-ester-rainha-02",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Ester 2:10, toque a palavra que marca o contraste na apresentação de Ester.",
+    "prompt": "Em Ester 2:10, toque a palavra que marca o contraste na apresentação de Ester.",
+    "cue": "Em Ester 2:10, toque a palavra que marca o contraste na apresentação de Ester.",
+    "verseRef": "Ester 2:10",
+    "passageText": "Ester, porém, não revelou o seu povo nem sua linhagem, pois Mardoqueu a havia instruído a não fazê-lo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "revelou"
+      },
+      {
+        "id": "c",
+        "text": "instruído"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ester, porém, não revelou",
+    "feedbackCorrect": "O contraste é que, levada ao rei, Ester guarda sua origem.",
+    "feedbackWrong": {
+      "b": "Revelou é a ação que Ester não pratica neste versículo.",
+      "c": "Instruído explica o motivo, mas não marca o contraste."
+    },
+    "hint": "Procure uma palavra curta logo depois do nome de Ester.",
+    "learningObjective": "Reconhecer o marcador de contraste em Ester 2:10.",
+    "evidence": [
+      "Ester 2:10"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-01-ester-rainha-03",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Ester 2:15 ajuda a entender a postura de Ester diante do rei?",
+    "prompt": "Como Ester 2:15 ajuda a entender a postura de Ester diante do rei?",
+    "cue": "Como Ester 2:15 ajuda a entender a postura de Ester diante do rei?",
+    "verseRef": "Ester 2:15",
+    "passageText": "Chegando, portanto, o momento de Ester, filha de Abiail, tio de Mardoqueu, que a tomara como filha, para ir ao rei, nada pediu além do que lhe sugeriu Hegai, eunuco do rei, guarda das mulheres; e Ester conquistou o favor de todos os que a viam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela segue a orientação recebida sem exigir nada"
+      },
+      {
+        "id": "b",
+        "text": "Ela exige vantagens para se destacar das outras"
+      },
+      {
+        "id": "c",
+        "text": "Ela revela sua origem para ganhar preferência"
+      },
+      {
+        "id": "d",
+        "text": "Ela recusa qualquer ajuda de Hegai no palácio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nada pediu além do que lhe sugeriu Hegai",
+    "feedbackCorrect": "Ester vai ao rei sem exigir nada além da orientação de Hegai.",
+    "feedbackWrong": {
+      "b": "O texto diz o contrário, pois ela nada pediu além do sugerido.",
+      "c": "Sua origem continua guardada, conforme Ester 2:10 e 2:20.",
+      "d": "Ela aceita a sugestão de Hegai, em vez de recusar ajuda."
+    },
+    "hint": "Compare o que ela pede com o que lhe foi sugerido.",
+    "learningObjective": "Compreender a postura de Ester a partir de Ester 2:15.",
+    "evidence": [
+      "Ester 2:15"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-01-ester-rainha-04",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a trajetória de Ester em Ester 2?",
+    "prompt": "Como avança a trajetória de Ester em Ester 2?",
+    "cue": "Como avança a trajetória de Ester em Ester 2?",
+    "verseRef": "Ester 2:9–10",
+    "passageText": "E a jovem lhe pareceu formosa e encontrou favor diante dele. Por isso, apressou-se em dar-lhe seus enfeites e suas porções, além de oferecer-lhe sete servas escolhidas da casa do rei, e a levou com suas servas para os melhores aposentos da casa das mulheres. Ester, porém, não revelou o seu povo nem sua linhagem, pois Mardoqueu a havia instruído a não fazê-lo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma órfã é criada por Mardoqueu"
+      },
+      {
+        "id": "b",
+        "text": "Ester é levada à casa do rei"
+      },
+      {
+        "id": "c",
+        "text": "Ester guarda sua origem no palácio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não revelou o seu povo nem sua linhagem",
+    "feedbackCorrect": "Ester é criada por Mardoqueu, levada ao rei e guarda sua origem.",
+    "feedbackWrong": {
+      "default": "Comece pela criação de Ester; o silêncio sobre a origem vem no palácio."
+    },
+    "hint": "Siga Ester de casa até o palácio.",
+    "learningObjective": "Compreender os movimentos iniciais da trajetória de Ester.",
+    "evidence": [
+      "Ester 2:9–10"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-01-ester-rainha-05",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Ester 2:15, o que Ester conquistou de todos os que a viam?",
+    "prompt": "Em Ester 2:15, o que Ester conquistou de todos os que a viam?",
+    "cue": "Em Ester 2:15, o que Ester conquistou de todos os que a viam?",
+    "verseRef": "Ester 2:15",
+    "passageText": "Chegando, portanto, o momento de Ester, filha de Abiail, tio de Mardoqueu, que a tomara como filha, para ir ao rei, nada pediu além do que lhe sugeriu Hegai, eunuco do rei, guarda das mulheres; e Ester conquistou o favor de todos os que a viam.",
+    "template": "Chegando, portanto, o momento de Ester, filha de Abiail, tio de Mardoqueu, que a tomara como filha, para ir ao rei, nada pediu além do que lhe sugeriu Hegai, eunuco do rei, guarda das mulheres; e Ester conquistou o ___ de todos os que a viam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "temor"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "favor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ester conquistou o favor de todos os que a viam",
+    "feedbackCorrect": "Ester conquistou a boa acolhida de todos os que a viam.",
+    "feedbackWrong": {
+      "a": "O texto não fala de medo das pessoas diante de Ester.",
+      "b": "O silêncio é sobre sua origem, não o que ela conquistou."
+    },
+    "hint": "É a mesma acolhida que ela encontra diante do rei.",
+    "learningObjective": "Compreender a acolhida que acompanha Ester no palácio.",
+    "evidence": [
+      "Ester 2:15"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-01-ester-rainha-06",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Ester 2:17 a Provérbios 21:1?",
+    "prompt": "O que liga Ester 2:17 a Provérbios 21:1?",
+    "cue": "O que liga Ester 2:17 a Provérbios 21:1?",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "passageA": {
+      "ref": "Ester 2:17",
+      "text": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti."
+    },
+    "passageB": {
+      "ref": "Provérbios 21:1",
+      "text": "Como ribeiros de águas é o coração do rei na mão do Senhor; ele o inclina para onde quer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reis decidem sem Deus"
+      },
+      {
+        "id": "b",
+        "text": "Rainhas governam sozinhas"
+      },
+      {
+        "id": "c",
+        "text": "Coração do rei dirigido por Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o rei amou Ester mais do que a todas as mulheres",
+    "feedbackCorrect": "Provérbios lembra que até a decisão do rei está nas mãos do Senhor.",
+    "feedbackWrong": {
+      "a": "Provérbios diz que o coração do rei está na mão do Senhor.",
+      "b": "Nenhum dos textos apresenta Ester governando sozinha."
+    },
+    "hint": "Veja quem dirige as decisões do rei em Provérbios.",
+    "learningObjective": "Relacionar a decisão de Assuero ao governo do Senhor sobre reis.",
+    "evidence": [
+      "Ester 2:17",
+      "Provérbios 21:1"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-01-ester-rainha-01",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Ester 2:10, o silêncio de Ester sobre sua origem é apresentado como obediência à instrução de Mardoqueu",
+    "prompt": "Em Ester 2:10, o silêncio de Ester sobre sua origem é apresentado como obediência à instrução de Mardoqueu",
+    "cue": "Em Ester 2:10, o silêncio de Ester sobre sua origem é apresentado como obediência à instrução de Mardoqueu",
+    "verseRef": "Ester 2:10",
+    "passageText": "Ester, porém, não revelou o seu povo nem sua linhagem, pois Mardoqueu a havia instruído a não fazê-lo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Mardoqueu a havia instruído a não fazê-lo",
+    "feedbackCorrect": "O texto liga o silêncio de Ester à instrução de quem a criou.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Ester 2:10, que dá o motivo do silêncio."
+    },
+    "hint": "Procure o motivo dado no fim do versículo.",
+    "learningObjective": "Interpretar o silêncio de Ester como obediência, não como vergonha.",
+    "evidence": [
+      "Ester 2:10"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-01-ester-rainha-02",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Ester 2:17, toque o trecho que mostra o sinal visível do novo lugar de Ester.",
+    "prompt": "Em Ester 2:17, toque o trecho que mostra o sinal visível do novo lugar de Ester.",
+    "cue": "Em Ester 2:17, toque o trecho que mostra o sinal visível do novo lugar de Ester.",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em sua cabeça"
+      },
+      {
+        "id": "b",
+        "text": "coroa real"
+      },
+      {
+        "id": "c",
+        "text": "todas as mulheres"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "colocou a coroa real em sua cabeça",
+    "feedbackCorrect": "Esse objeto marca visivelmente que Ester agora é rainha.",
+    "feedbackWrong": {
+      "a": "Esse trecho diz o lugar do corpo, não o sinal do reinado.",
+      "c": "As mulheres são o grupo com quem Ester é comparada."
+    },
+    "hint": "Procure o objeto que o rei coloca em Ester.",
+    "learningObjective": "Sustentar no texto o novo lugar ocupado por Ester.",
+    "evidence": [
+      "Ester 2:17"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-01-ester-rainha-03",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Ester 2:7-17 sustenta sobre a chegada de Ester ao trono?",
+    "prompt": "Que leitura Ester 2:7-17 sustenta sobre a chegada de Ester ao trono?",
+    "cue": "Que leitura Ester 2:7-17 sustenta sobre a chegada de Ester ao trono?",
+    "verseRef": "Ester 2:16–17",
+    "passageText": "Assim, Ester foi levada ao rei Assuero, à casa real, no décimo mês, que é o mês de Tebete, no sétimo ano do seu reinado. E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A beleza dispensa qualquer cuidado de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Esconder a origem é sinal de vergonha"
+      },
+      {
+        "id": "c",
+        "text": "Mardoqueu perde importância após a coroação"
+      },
+      {
+        "id": "d",
+        "text": "Uma órfã guardada chega ao lugar de rainha"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+    "feedbackCorrect": "O texto conduz a órfã criada por Mardoqueu até a coroa em lugar de Vasti.",
+    "feedbackWrong": {
+      "a": "O texto destaca o favor repetido, não uma beleza autossuficiente.",
+      "b": "O silêncio é obediência a Mardoqueu, conforme Ester 2:10.",
+      "c": "Mardoqueu segue à porta do rei e avisa sobre a conspiração."
+    },
+    "hint": "Junte o começo da trajetória com o fim do trecho.",
+    "learningObjective": "Escolher a interpretação sustentada pela trajetória de Ester.",
+    "evidence": [
+      "Ester 2:16–17"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-01-ester-rainha-04",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da trajetória de Ester até a coroa?",
+    "prompt": "Qual sequência revela o sentido da trajetória de Ester até a coroa?",
+    "cue": "Qual sequência revela o sentido da trajetória de Ester até a coroa?",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A origem de Ester permanece guardada"
+      },
+      {
+        "id": "b",
+        "text": "O favor acompanha Ester no palácio"
+      },
+      {
+        "id": "c",
+        "text": "A posição de rainha abre um futuro serviço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+    "feedbackCorrect": "Origem guardada, favor no palácio e uma posição que servirá depois.",
+    "feedbackWrong": {
+      "default": "Comece pela origem guardada; a posição é o ponto de chegada."
+    },
+    "hint": "A coroa é chegada, não ponto de partida.",
+    "learningObjective": "Ver a coroação como posição preparada para serviço futuro.",
+    "evidence": [
+      "Ester 2:17"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-01-ester-rainha-05",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Ester 2:20, o que Ester ainda não havia revelado, além do seu povo?",
+    "prompt": "Em Ester 2:20, o que Ester ainda não havia revelado, além do seu povo?",
+    "cue": "Em Ester 2:20, o que Ester ainda não havia revelado, além do seu povo?",
+    "verseRef": "Ester 2:20",
+    "passageText": "Ester, porém, ainda não havia revelado sua linhagem nem seu povo, conforme Mardoqueu lhe ordenara; pois cumpria o mandado de Mardoqueu assim como quando ele a criava.",
+    "template": "Ester, porém, ainda não havia revelado sua ___ nem seu povo, conforme Mardoqueu lhe ordenara; pois cumpria o mandado de Mardoqueu assim como quando ele a criava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "servas"
+      },
+      {
+        "id": "b",
+        "text": "coroa"
+      },
+      {
+        "id": "c",
+        "text": "linhagem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ainda não havia revelado sua linhagem nem seu povo",
+    "feedbackCorrect": "Mesmo rainha, Ester mantém guardada a sua origem familiar.",
+    "feedbackWrong": {
+      "a": "As servas foram dadas por Hegai ainda em 2:9.",
+      "b": "A coroa já foi colocada publicamente pelo rei em 2:17."
+    },
+    "hint": "É a palavra ligada à família de origem de Ester.",
+    "learningObjective": "Lembrar o termo ligado à origem guardada de Ester.",
+    "evidence": [
+      "Ester 2:20"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-01-ester-rainha-06",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Ester 2:17 a Gênesis 50:20?",
+    "prompt": "O que liga Ester 2:17 a Gênesis 50:20?",
+    "cue": "O que liga Ester 2:17 a Gênesis 50:20?",
+    "verseRef": "Ester 2:17",
+    "passageText": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti.",
+    "passageA": {
+      "ref": "Ester 2:17",
+      "text": "E o rei amou Ester mais do que a todas as mulheres, e encontrou nela favor e benevolência mais do que em todas as virgens; e colocou a coroa real em sua cabeça, fazendo dela rainha em lugar de Vasti."
+    },
+    "passageB": {
+      "ref": "Gênesis 50:20",
+      "text": "Vocês, na verdade, intentaram o mal contra mim; contudo, Deus o transformou em bem, para realizar, como vocês veem agora, que se conservem muitos em vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Famílias nunca causam dor"
+      },
+      {
+        "id": "b",
+        "text": "Posição usada para salvar vidas"
+      },
+      {
+        "id": "c",
+        "text": "Palácios garantem vida fácil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+    "feedbackCorrect": "Como José, Ester recebe uma posição que servirá para preservar vidas.",
+    "feedbackWrong": {
+      "a": "Gênesis 50 fala justamente de mal vindo dos próprios irmãos.",
+      "c": "A posição de José e de Ester envolve dor e risco, não facilidade."
+    },
+    "hint": "Veja para que serve a posição recebida nos dois textos.",
+    "learningObjective": "Ligar a posição de Ester ao padrão de Deus preservar vidas.",
+    "evidence": [
+      "Ester 2:17",
+      "Gênesis 50:20"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-01",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Ester 3:8, Hamã diz ao rei que há um povo espalhado e disperso entre os povos",
+    "prompt": "Em Ester 3:8, Hamã diz ao rei que há um povo espalhado e disperso entre os povos",
+    "cue": "Em Ester 3:8, Hamã diz ao rei que há um povo espalhado e disperso entre os povos",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Há um povo espalhado e disperso entre os povos",
+    "feedbackCorrect": "Hamã apresenta ao rei um povo presente em todas as províncias.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Ester 3:8 e veja como Hamã descreve esse povo."
+    },
+    "hint": "Olhe o começo da fala de Hamã.",
+    "learningObjective": "Observar como Hamã apresenta o povo ao rei.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-02",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Ester 3:8, toque quem fala ao rei Assuero.",
+    "prompt": "Em Ester 3:8, toque quem fala ao rei Assuero.",
+    "cue": "Em Ester 3:8, toque quem fala ao rei Assuero.",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "Hamã"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E Hamã disse ao rei Assuero",
+    "feedbackCorrect": "É Hamã quem leva essa acusação ao rei Assuero.",
+    "feedbackWrong": {
+      "a": "O rei é quem ouve a fala, não quem a apresenta.",
+      "b": "O povo é o assunto da fala, não quem fala ao rei."
+    },
+    "hint": "Procure o nome no começo do versículo.",
+    "learningObjective": "Identificar Hamã como autor da acusação.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-03",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Ester 2:5, como Mardoqueu é apresentado na cidadela de Susã?",
+    "prompt": "Segundo Ester 2:5, como Mardoqueu é apresentado na cidadela de Susã?",
+    "cue": "Segundo Ester 2:5, como Mardoqueu é apresentado na cidadela de Susã?",
+    "verseRef": "Ester 2:5",
+    "passageText": "Havia um homem judeu na cidadela de Susã, chamado Mardoqueu filho de Jair, filho de Simei, filho de Quis, da tribo de Benjamim",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um guarda da porta"
+      },
+      {
+        "id": "b",
+        "text": "Um eunuco do rei"
+      },
+      {
+        "id": "c",
+        "text": "Um comissário real"
+      },
+      {
+        "id": "d",
+        "text": "Um homem judeu"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Havia um homem judeu na cidadela de Susã",
+    "feedbackCorrect": "Mardoqueu é apresentado como homem judeu vivendo em Susã.",
+    "feedbackWrong": {
+      "a": "Guardas da porta são citados depois, não na apresentação dele.",
+      "b": "Eunucos aparecem na casa do rei, mas Mardoqueu é judeu em Susã.",
+      "c": "Comissários são nomeados para reunir moças, não são Mardoqueu."
+    },
+    "hint": "Leia a primeira frase que apresenta Mardoqueu.",
+    "learningObjective": "Observar a presença judia em Susã antes da acusação.",
+    "evidence": [
+      "Ester 2:5"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-04",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Ester 3:8 na ordem do texto.",
+    "prompt": "Monte Ester 3:8 na ordem do texto.",
+    "cue": "Monte Ester 3:8 na ordem do texto.",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um povo espalhado e disperso entre os povos"
+      },
+      {
+        "id": "b",
+        "text": "cujas leis são diferentes das leis de todos os povos"
+      },
+      {
+        "id": "c",
+        "text": "pelo que não convém ao rei tolerá-los"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Há um povo espalhado e disperso entre os povos",
+    "feedbackCorrect": "Hamã descreve o povo, acusa suas leis e propõe não tolerá-lo.",
+    "feedbackWrong": {
+      "default": "Comece pela descrição do povo; a conclusão de Hamã fecha a fala."
+    },
+    "hint": "A conclusão de Hamã aparece no fim.",
+    "learningObjective": "Reconhecer a sequência da fala de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-05",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Ester 3:8, o que Hamã diz que são diferentes das de todos os povos?",
+    "prompt": "Em Ester 3:8, o que Hamã diz que são diferentes das de todos os povos?",
+    "cue": "Em Ester 3:8, o que Hamã diz que são diferentes das de todos os povos?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "template": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas ___ são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidades"
+      },
+      {
+        "id": "b",
+        "text": "roupas"
+      },
+      {
+        "id": "c",
+        "text": "leis"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cujas leis são diferentes das leis de todos os povos",
+    "feedbackCorrect": "Hamã usa a diferença das normas desse povo como acusação.",
+    "feedbackWrong": {
+      "a": "O versículo não compara cidades daquele povo com outras.",
+      "b": "Nenhuma roupa é mencionada na fala de Hamã ao rei."
+    },
+    "hint": "É o ponto em que esse povo difere dos demais.",
+    "learningObjective": "Lembrar o centro da acusação de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-06",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Ester 2:5 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 2:5 comunica que se liga a este contexto?",
+    "cue": "O que Ester 2:5 comunica que se liga a este contexto?",
+    "verseRef": "Ester 2:5",
+    "passageText": "Havia um homem judeu na cidadela de Susã, chamado Mardoqueu filho de Jair, filho de Simei, filho de Quis, da tribo de Benjamim",
+    "passageA": {
+      "ref": "Ester 2:5",
+      "text": "Havia um homem judeu na cidadela de Susã, chamado Mardoqueu filho de Jair, filho de Simei, filho de Quis, da tribo de Benjamim"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes da acusação de Hamã, judeus já viviam na cidadela de Susã."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Judeus vivem em Susã"
+      },
+      {
+        "id": "b",
+        "text": "Hamã mora em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Susã fica sem judeus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Havia um homem judeu na cidadela de Susã",
+    "feedbackCorrect": "Mardoqueu mostra que havia vida judia em Susã antes da acusação.",
+    "feedbackWrong": {
+      "b": "O versículo fala de Mardoqueu em Susã, não de Hamã.",
+      "c": "O texto coloca justamente um judeu vivendo em Susã."
+    },
+    "hint": "Veja quem vivia na cidadela de Susã.",
+    "learningObjective": "Ligar a presença judia em Susã ao cenário da acusação.",
+    "evidence": [
+      "Ester 2:5"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-01",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Ester 3:8, Hamã afirma que o povo espalhado cumpre fielmente as leis do rei",
+    "prompt": "Em Ester 3:8, Hamã afirma que o povo espalhado cumpre fielmente as leis do rei",
+    "cue": "Em Ester 3:8, Hamã afirma que o povo espalhado cumpre fielmente as leis do rei",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "que não cumpre as do rei",
+    "feedbackCorrect": "Hamã acusa esse povo justamente de não cumprir as leis do rei.",
+    "feedbackWrong": {
+      "true": "Releia a segunda metade de Ester 3:8 e veja a acusação."
+    },
+    "hint": "Veja o que Hamã nega sobre esse povo.",
+    "learningObjective": "Compreender a acusação de desobediência feita por Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-02",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Ester 3:8, toque a palavra que vem logo depois de espalhado e.",
+    "prompt": "Em Ester 3:8, toque a palavra que vem logo depois de espalhado e.",
+    "cue": "Em Ester 3:8, toque a palavra que vem logo depois de espalhado e.",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disperso"
+      },
+      {
+        "id": "b",
+        "text": "povos"
+      },
+      {
+        "id": "c",
+        "text": "espalhado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "espalhado e disperso entre os povos",
+    "feedbackCorrect": "As duas palavras juntas mostram presença por todo o reino.",
+    "feedbackWrong": {
+      "b": "Povos aparece depois e indica entre quem eles vivem.",
+      "c": "Essa é a palavra anterior, não a que vem depois dela."
+    },
+    "hint": "Leia a dupla de palavras no começo da fala.",
+    "learningObjective": "Reconhecer como o texto descreve a dispersão do povo.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-03",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a acusação de Hamã se constrói em Ester 3:8?",
+    "prompt": "Como a acusação de Hamã se constrói em Ester 3:8?",
+    "cue": "Como a acusação de Hamã se constrói em Ester 3:8?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele reconhece fidelidade e pede recompensa"
+      },
+      {
+        "id": "b",
+        "text": "Ele liga diferença de costumes a desobediência"
+      },
+      {
+        "id": "c",
+        "text": "Ele prova um ataque armado contra o rei"
+      },
+      {
+        "id": "d",
+        "text": "Ele pede proteção para um povo perseguido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cujas leis são diferentes das leis de todos os povos",
+    "feedbackCorrect": "Hamã transforma diferença de normas em acusação de desobediência.",
+    "feedbackWrong": {
+      "a": "Ele acusa desobediência, não fidelidade digna de prêmio.",
+      "c": "Nenhum ataque é provado ou citado na fala ao rei.",
+      "d": "Hamã pede o contrário de proteção para aquele povo."
+    },
+    "hint": "Junte a diferença citada com a conclusão de Hamã.",
+    "learningObjective": "Compreender a lógica da acusação de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-04",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a fala de Hamã em Ester 3:8?",
+    "prompt": "Como se encadeia a fala de Hamã em Ester 3:8?",
+    "cue": "Como se encadeia a fala de Hamã em Ester 3:8?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hamã apresenta um povo disperso no reino"
+      },
+      {
+        "id": "b",
+        "text": "Hamã acusa esse povo de desobedecer ao rei"
+      },
+      {
+        "id": "c",
+        "text": "Hamã sugere que o rei não o tolere"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pelo que não convém ao rei tolerá-los",
+    "feedbackCorrect": "Descrição, acusação e proposta de exclusão formam a fala de Hamã.",
+    "feedbackWrong": {
+      "default": "A proposta de não tolerar só vem depois da acusação."
+    },
+    "hint": "A sugestão final depende da acusação anterior.",
+    "learningObjective": "Compreender o encadeamento da fala de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-05",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Ester 2:10, além da linhagem, o que Ester não revelou ao chegar ao palácio?",
+    "prompt": "Em Ester 2:10, além da linhagem, o que Ester não revelou ao chegar ao palácio?",
+    "cue": "Em Ester 2:10, além da linhagem, o que Ester não revelou ao chegar ao palácio?",
+    "verseRef": "Ester 2:10",
+    "passageText": "Ester, porém, não revelou o seu povo nem sua linhagem, pois Mardoqueu a havia instruído a não fazê-lo.",
+    "template": "Ester, porém, não revelou o seu ___ nem sua linhagem, pois Mardoqueu a havia instruído a não fazê-lo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "cidade"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não revelou o seu povo nem sua linhagem",
+    "feedbackCorrect": "Ester guarda tanto sua origem familiar quanto seu pertencimento.",
+    "feedbackWrong": {
+      "b": "A cidade de Susã é onde ela vive, não o que ela esconde.",
+      "c": "O nome de Ester é conhecido no palácio; sua origem é guardada."
+    },
+    "hint": "É a palavra ligada à sua gente de origem.",
+    "learningObjective": "Compreender o que Ester mantém guardado no palácio.",
+    "evidence": [
+      "Ester 2:10"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-06",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Ester 3:8 a Salmos 33:10?",
+    "prompt": "O que liga Ester 3:8 a Salmos 33:10?",
+    "cue": "O que liga Ester 3:8 a Salmos 33:10?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "passageA": {
+      "ref": "Ester 3:8",
+      "text": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los."
+    },
+    "passageB": {
+      "ref": "Salmos 33:10",
+      "text": "O Senhor frustra os planos das nações e anula as intenções dos povos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor frustra planos contrários"
+      },
+      {
+        "id": "b",
+        "text": "Planos humanos sempre vencem"
+      },
+      {
+        "id": "c",
+        "text": "Reis nunca são enganados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não convém ao rei tolerá-los",
+    "feedbackCorrect": "O Salmo lembra que o Senhor pode frustrar intenções contra seu povo.",
+    "feedbackWrong": {
+      "b": "O Salmo afirma justamente que o Senhor frustra planos.",
+      "c": "Assuero ouve Hamã; nenhum texto garante reis infalíveis."
+    },
+    "hint": "Veja o que o Senhor faz com intenções dos povos.",
+    "learningObjective": "Relacionar o plano de Hamã ao governo do Senhor sobre planos.",
+    "evidence": [
+      "Ester 3:8",
+      "Salmos 33:10"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-01",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Ester 3:8, Hamã apresenta a diferença daquele povo como motivo para protegê-lo no reino",
+    "prompt": "Em Ester 3:8, Hamã apresenta a diferença daquele povo como motivo para protegê-lo no reino",
+    "cue": "Em Ester 3:8, Hamã apresenta a diferença daquele povo como motivo para protegê-lo no reino",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não convém ao rei tolerá-los",
+    "feedbackCorrect": "Hamã usa a diferença como motivo para não tolerar aquele povo.",
+    "feedbackWrong": {
+      "true": "Releia a conclusão da fala, que pede o contrário de proteção."
+    },
+    "hint": "Olhe a conclusão que Hamã tira da diferença.",
+    "learningObjective": "Interpretar a intenção excludente da fala de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-02",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Ester 3:8, toque o trecho que mostra a acusação de desobediência ao rei.",
+    "prompt": "Em Ester 3:8, toque o trecho que mostra a acusação de desobediência ao rei.",
+    "cue": "Em Ester 3:8, toque o trecho que mostra a acusação de desobediência ao rei.",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "são diferentes"
+      },
+      {
+        "id": "b",
+        "text": "não cumpre"
+      },
+      {
+        "id": "c",
+        "text": "teu reino"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que não cumpre as do rei",
+    "feedbackCorrect": "Essa expressão transforma diferença em acusação de desobediência.",
+    "feedbackWrong": {
+      "a": "Isso fala de diferença, mas a desobediência vem depois.",
+      "c": "Esse trecho indica o território de Assuero, não uma acusação."
+    },
+    "hint": "Procure a negação ligada às normas do rei.",
+    "learningObjective": "Sustentar no texto a acusação central de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-03",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Ester 3:8 sustenta sobre a fala de Hamã ao rei?",
+    "prompt": "Que leitura Ester 3:8 sustenta sobre a fala de Hamã ao rei?",
+    "cue": "Que leitura Ester 3:8 sustenta sobre a fala de Hamã ao rei?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A diferença vira pretexto para excluir um povo"
+      },
+      {
+        "id": "b",
+        "text": "Um pedido de proteção para os judeus de Susã"
+      },
+      {
+        "id": "c",
+        "text": "Uma prova de ataque armado já acontecido"
+      },
+      {
+        "id": "d",
+        "text": "Um relato neutro sem intenção contra ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pelo que não convém ao rei tolerá-los",
+    "feedbackCorrect": "A conclusão de não tolerar mostra a diferença usada como pretexto.",
+    "feedbackWrong": {
+      "b": "Hamã sugere não tolerar, o contrário de proteger.",
+      "c": "Nenhum ataque acontecido é apresentado como prova no versículo.",
+      "d": "A fala termina com proposta contra aquele povo, não neutra."
+    },
+    "hint": "Dê peso especial à conclusão da fala de Hamã.",
+    "learningObjective": "Escolher a interpretação sustentada pela fala de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-04",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da ameaça em Ester 3:8?",
+    "prompt": "Qual sequência revela o sentido da ameaça em Ester 3:8?",
+    "cue": "Qual sequência revela o sentido da ameaça em Ester 3:8?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um povo vive espalhado pelo reino inteiro"
+      },
+      {
+        "id": "b",
+        "text": "Sua diferença é tratada como perigo"
+      },
+      {
+        "id": "c",
+        "text": "Sua exclusão é proposta diante do rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Há um povo espalhado e disperso entre os povos",
+    "feedbackCorrect": "Presença ampla, diferença acusada e exclusão proposta formam a ameaça.",
+    "feedbackWrong": {
+      "default": "Comece pela presença do povo; a exclusão é a proposta final."
+    },
+    "hint": "Siga da presença do povo até a proposta de Hamã.",
+    "learningObjective": "Ver como a ameaça contra os judeus se forma na fala.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-05",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Ester 3:8, segundo Hamã, não convém ao rei fazer o quê com esse povo?",
+    "prompt": "Em Ester 3:8, segundo Hamã, não convém ao rei fazer o quê com esse povo?",
+    "cue": "Em Ester 3:8, segundo Hamã, não convém ao rei fazer o quê com esse povo?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "template": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tolerá-los"
+      },
+      {
+        "id": "b",
+        "text": "ouvi-los"
+      },
+      {
+        "id": "c",
+        "text": "protegê-los"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não convém ao rei tolerá-los",
+    "feedbackCorrect": "A palavra final revela a intenção de excluir aquele povo.",
+    "feedbackWrong": {
+      "b": "Hamã não pede audiência para o povo acusado por ele.",
+      "c": "A conclusão de Hamã vai na direção contrária à proteção."
+    },
+    "hint": "É o verbo que fecha a fala de Hamã.",
+    "learningObjective": "Lembrar a palavra que revela a intenção de Hamã.",
+    "evidence": [
+      "Ester 3:8"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-06",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Ester 3:8 a Provérbios 19:21?",
+    "prompt": "O que liga Ester 3:8 a Provérbios 19:21?",
+    "cue": "O que liga Ester 3:8 a Provérbios 19:21?",
+    "verseRef": "Ester 3:8",
+    "passageText": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los.",
+    "passageA": {
+      "ref": "Ester 3:8",
+      "text": "E Hamã disse ao rei Assuero: Há um povo espalhado e disperso entre os povos em todas as províncias do teu reino, cujas leis são diferentes das leis de todos os povos, e que não cumpre as do rei; pelo que não convém ao rei tolerá-los."
+    },
+    "passageB": {
+      "ref": "Provérbios 19:21",
+      "text": "Há muitos planos no coração do homem, mas o desígnio do SENHOR permanecerá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hamã recebe a última palavra"
+      },
+      {
+        "id": "b",
+        "text": "Desígnio do Senhor permanece firme"
+      },
+      {
+        "id": "c",
+        "text": "Todo plano humano permanece"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E Hamã disse ao rei Assuero",
+    "feedbackCorrect": "Provérbios lembra que, acima de muitos planos, permanece o do Senhor.",
+    "feedbackWrong": {
+      "a": "A história não termina na fala de Hamã ao rei.",
+      "c": "Provérbios contrasta planos humanos com o desígnio permanente."
+    },
+    "hint": "Compare planos de homens com o que permanece.",
+    "learningObjective": "Ligar o plano de Hamã à permanência do desígnio do Senhor.",
+    "evidence": [
+      "Ester 3:8",
+      "Provérbios 19:21"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-01",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Ester 4:16, Ester pede que os judeus de Susã jejuem por ela por três dias",
+    "prompt": "Em Ester 4:16, Ester pede que os judeus de Susã jejuem por ela por três dias",
+    "cue": "Em Ester 4:16, Ester pede que os judeus de Susã jejuem por ela por três dias",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não comam nem bebam por três dias",
+    "feedbackCorrect": "Ester convoca três dias de jejum antes de ir ao rei.",
+    "feedbackWrong": {
+      "false": "Releia Ester 4:16 e veja a duração do jejum pedido."
+    },
+    "hint": "Olhe a duração citada por Ester.",
+    "learningObjective": "Observar o jejum convocado por Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-02",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Ester 4:16, toque quem Ester pede que seja reunido em Susã.",
+    "prompt": "Em Ester 4:16, toque quem Ester pede que seja reunido em Susã.",
+    "cue": "Em Ester 4:16, toque quem Ester pede que seja reunido em Susã.",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "judeus"
+      },
+      {
+        "id": "b",
+        "text": "servas"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reúna todos os judeus que se encontram em Susã",
+    "feedbackCorrect": "Ester quer todos os judeus de Susã jejuando por ela.",
+    "feedbackWrong": {
+      "b": "As servas jejuam com Ester, mas a reunião é dos judeus.",
+      "c": "O rei é a quem Ester irá depois do jejum."
+    },
+    "hint": "Procure o povo ao qual Ester pertence.",
+    "learningObjective": "Identificar quem participa do jejum convocado.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-03",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Ester 4:16, por quanto tempo os judeus deveriam jejuar por Ester?",
+    "prompt": "Segundo Ester 4:16, por quanto tempo os judeus deveriam jejuar por Ester?",
+    "cue": "Segundo Ester 4:16, por quanto tempo os judeus deveriam jejuar por Ester?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por quarenta dias"
+      },
+      {
+        "id": "b",
+        "text": "Por três dias"
+      },
+      {
+        "id": "c",
+        "text": "Por um dia"
+      },
+      {
+        "id": "d",
+        "text": "Por sete dias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não comam nem bebam por três dias",
+    "feedbackCorrect": "O jejum pedido dura três dias, de dia e de noite.",
+    "feedbackWrong": {
+      "a": "Quarenta dias não aparece neste pedido de Ester.",
+      "c": "O texto pede mais do que um único dia de jejum.",
+      "d": "Sete dias não é a duração citada por Ester."
+    },
+    "hint": "Leia a instrução sobre comer e beber.",
+    "learningObjective": "Observar a duração do jejum em Ester 4:16.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-04",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Ester 4:16 na ordem do texto.",
+    "prompt": "Monte Ester 4:16 na ordem do texto.",
+    "cue": "Monte Ester 4:16 na ordem do texto.",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vá, reúna todos os judeus que se encontram em Susã"
+      },
+      {
+        "id": "b",
+        "text": "e jejuem por mim"
+      },
+      {
+        "id": "c",
+        "text": "não comam nem bebam por três dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Vá, reúna todos os judeus que se encontram em Susã",
+    "feedbackCorrect": "Ester manda reunir os judeus e jejuar por três dias.",
+    "feedbackWrong": {
+      "default": "Comece pela ordem de reunir; a duração do jejum vem depois."
+    },
+    "hint": "O versículo começa com uma ordem de reunião.",
+    "learningObjective": "Reconhecer a sequência do pedido de Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-05",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Ester 4:16, por quantos dias os judeus não comeriam nem beberiam?",
+    "prompt": "Em Ester 4:16, por quantos dias os judeus não comeriam nem beberiam?",
+    "cue": "Em Ester 4:16, por quantos dias os judeus não comeriam nem beberiam?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "template": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por ___ dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sete"
+      },
+      {
+        "id": "b",
+        "text": "cinco"
+      },
+      {
+        "id": "c",
+        "text": "três"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não comam nem bebam por três dias",
+    "feedbackCorrect": "Foram três dias de jejum, nem de dia nem de noite.",
+    "feedbackWrong": {
+      "a": "Sete não é a duração pedida para este jejum.",
+      "b": "Cinco não é o número citado por Ester no versículo."
+    },
+    "hint": "É um número pequeno, citado logo após beber.",
+    "learningObjective": "Lembrar a duração do jejum convocado.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-06",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "passageA": {
+      "ref": "Ester 4:16",
+      "text": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ester está prestes a ir ao rei sem ser chamada, correndo risco de morte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ester age mesmo com risco"
+      },
+      {
+        "id": "b",
+        "text": "Ester desiste de ir"
+      },
+      {
+        "id": "c",
+        "text": "Ester já está segura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se perecer, que assim aconteça",
+    "feedbackCorrect": "Ester decide ir ao rei mesmo sabendo que pode perecer.",
+    "feedbackWrong": {
+      "b": "Ela afirma que irá ao rei depois do jejum.",
+      "c": "Ir sem ser chamada contrariava a lei e trazia risco."
+    },
+    "hint": "Veja a frase final da fala de Ester.",
+    "learningObjective": "Ligar o jejum à decisão arriscada de Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-01",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Ester 9:1, no dia em que os inimigos esperavam dominar os judeus ocorreu o contrário",
+    "prompt": "Em Ester 9:1, no dia em que os inimigos esperavam dominar os judeus ocorreu o contrário",
+    "cue": "Em Ester 9:1, no dia em que os inimigos esperavam dominar os judeus ocorreu o contrário",
+    "verseRef": "Ester 9:1",
+    "passageText": "No décimo segundo mês, que é o mês de Adar, no dia treze desse mesmo mês, quando chegou a palavra do rei e a sua ordem para se executar, no dia em que os inimigos dos judeus esperavam se apoderar deles, ocorreu o contrário: os judeus é que se apoderaram de seus inimigos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ocorreu o contrário",
+    "feedbackCorrect": "O dia da ameaça se torna dia de virada para os judeus.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Ester 9:1, que resume a virada daquele dia."
+    },
+    "hint": "Olhe o resultado citado no fim do versículo.",
+    "learningObjective": "Compreender a virada narrada em Ester 9:1.",
+    "evidence": [
+      "Ester 9:1"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-02",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Ester 4:16, toque a palavra que marca o que vem depois do jejum.",
+    "prompt": "Em Ester 4:16, toque a palavra que marca o que vem depois do jejum.",
+    "cue": "Em Ester 4:16, toque a palavra que marca o que vem depois do jejum.",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "jejuem"
+      },
+      {
+        "id": "b",
+        "text": "Depois"
+      },
+      {
+        "id": "c",
+        "text": "noite"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Depois, irei ter com o rei",
+    "feedbackCorrect": "A ida ao rei vem depois dos três dias de jejum.",
+    "feedbackWrong": {
+      "a": "Jejuem é o pedido anterior, não o marcador do passo seguinte.",
+      "c": "Noite faz parte da duração do jejum, não da sequência."
+    },
+    "hint": "Procure a palavra que inicia a segunda metade da fala.",
+    "learningObjective": "Reconhecer a sequência entre jejum e ação.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-03",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o jejum se relaciona com a ida de Ester ao rei em Ester 4:16?",
+    "prompt": "Como o jejum se relaciona com a ida de Ester ao rei em Ester 4:16?",
+    "cue": "Como o jejum se relaciona com a ida de Ester ao rei em Ester 4:16?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O jejum prepara coletivamente a ida ao rei"
+      },
+      {
+        "id": "b",
+        "text": "O jejum substitui a ida ao rei"
+      },
+      {
+        "id": "c",
+        "text": "O jejum é pedido apenas às servas"
+      },
+      {
+        "id": "d",
+        "text": "O jejum acontece depois da audiência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Depois, irei ter com o rei",
+    "feedbackCorrect": "Todos jejuam primeiro; depois Ester vai ao rei.",
+    "feedbackWrong": {
+      "b": "Ester jejua e também vai ao rei; uma coisa não cancela a outra.",
+      "c": "O pedido alcança todos os judeus de Susã, não só as servas.",
+      "d": "A ordem do texto coloca o jejum antes da audiência."
+    },
+    "hint": "Repare na ordem entre jejuar e ir ao rei.",
+    "learningObjective": "Compreender a relação entre jejum coletivo e ação.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-04",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as decisões de Ester em Ester 4:16?",
+    "prompt": "Como se encadeiam as decisões de Ester em Ester 4:16?",
+    "cue": "Como se encadeiam as decisões de Ester em Ester 4:16?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ester convoca o jejum dos judeus"
+      },
+      {
+        "id": "b",
+        "text": "Ester jejua junto com suas servas"
+      },
+      {
+        "id": "c",
+        "text": "Ester vai ao rei assumindo o risco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Depois, irei ter com o rei",
+    "feedbackCorrect": "Primeiro o povo jejua, Ester se junta e só então ela vai ao rei.",
+    "feedbackWrong": {
+      "default": "A ida ao rei é o último passo, depois do jejum coletivo."
+    },
+    "hint": "A audiência é o ponto de chegada da sequência.",
+    "learningObjective": "Compreender o encadeamento entre jejum e ação.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-05",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Ester 4:16, Ester diz que irá ao rei ainda que isso contrarie o quê?",
+    "prompt": "Em Ester 4:16, Ester diz que irá ao rei ainda que isso contrarie o quê?",
+    "cue": "Em Ester 4:16, Ester diz que irá ao rei ainda que isso contrarie o quê?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "template": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a ___; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fome"
+      },
+      {
+        "id": "b",
+        "text": "noite"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ainda que isso contrarie a lei",
+    "feedbackCorrect": "Ir sem ser chamada contrariava a norma que protegia o rei.",
+    "feedbackWrong": {
+      "a": "A fome faz parte do jejum, não do risco da audiência.",
+      "b": "A noite marca a duração do jejum, não a norma contrariada."
+    },
+    "hint": "É o que tornava perigoso ir sem ser chamada.",
+    "learningObjective": "Compreender o risco assumido por Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-06",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Ester 4:16 a Esdras 8:23?",
+    "prompt": "O que liga Ester 4:16 a Esdras 8:23?",
+    "cue": "O que liga Ester 4:16 a Esdras 8:23?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "passageA": {
+      "ref": "Ester 4:16",
+      "text": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça."
+    },
+    "passageB": {
+      "ref": "Esdras 8:23",
+      "text": "Assim, jejuamos e pedimos isso ao nosso Deus, e Ele nos atendeu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejum antes de agir"
+      },
+      {
+        "id": "b",
+        "text": "Agir sem buscar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Jejum como castigo público"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "jejuem por mim",
+    "feedbackCorrect": "Nos dois textos, o povo jejua antes de um passo decisivo.",
+    "feedbackWrong": {
+      "b": "Esdras liga o jejum a pedir a Deus antes de agir.",
+      "c": "Nenhum dos textos trata o jejum como punição pública."
+    },
+    "hint": "Compare o momento em que o jejum acontece.",
+    "learningObjective": "Relacionar o jejum de Ester ao jejum antes de agir em Esdras.",
+    "evidence": [
+      "Ester 4:16",
+      "Esdras 8:23"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-01",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Ester 4:16, Ester só decide ir ao rei depois de garantir que não correria nenhum risco",
+    "prompt": "Em Ester 4:16, Ester só decide ir ao rei depois de garantir que não correria nenhum risco",
+    "cue": "Em Ester 4:16, Ester só decide ir ao rei depois de garantir que não correria nenhum risco",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se perecer, que assim aconteça",
+    "feedbackCorrect": "Ester age sem garantia, aceitando até a possibilidade de perecer.",
+    "feedbackWrong": {
+      "true": "Releia a frase final de Ester, que aceita o risco de perecer."
+    },
+    "hint": "Veja o que Ester aceita no fim da fala.",
+    "learningObjective": "Interpretar a coragem de Ester sem garantia de segurança.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-02",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Ester 4:16, toque o trecho em que Ester aceita a possibilidade de morrer.",
+    "prompt": "Em Ester 4:16, toque o trecho em que Ester aceita a possibilidade de morrer.",
+    "cue": "Em Ester 4:16, toque o trecho em que Ester aceita a possibilidade de morrer.",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "três dias"
+      },
+      {
+        "id": "b",
+        "text": "minhas servas"
+      },
+      {
+        "id": "c",
+        "text": "se perecer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se perecer, que assim aconteça",
+    "feedbackCorrect": "Com essa frase, Ester aceita o custo da sua decisão.",
+    "feedbackWrong": {
+      "a": "Isso indica a duração do jejum, não o risco aceito.",
+      "b": "As servas acompanham o jejum; o risco está na frase final."
+    },
+    "hint": "Procure a condição citada no fim do versículo.",
+    "learningObjective": "Sustentar no texto o risco assumido por Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-03",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Ester 4:16 sustenta sobre a decisão de Ester?",
+    "prompt": "Que leitura Ester 4:16 sustenta sobre a decisão de Ester?",
+    "cue": "Que leitura Ester 4:16 sustenta sobre a decisão de Ester?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela age sozinha e dispensa seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Ela usa o jejum para fugir do rei"
+      },
+      {
+        "id": "c",
+        "text": "Ela envolve seu povo e assume o risco"
+      },
+      {
+        "id": "d",
+        "text": "Ela adia a decisão até ficar segura"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "jejuem por mim",
+    "feedbackCorrect": "Ester convoca todos ao jejum e vai ao rei mesmo podendo perecer.",
+    "feedbackWrong": {
+      "a": "Ela pede a participação de todos os judeus de Susã.",
+      "b": "Depois do jejum, ela afirma que irá ao rei.",
+      "d": "Não há segurança prometida; ela aceita perecer."
+    },
+    "hint": "Junte o jejum coletivo com a frase final de Ester.",
+    "learningObjective": "Escolher a interpretação sustentada pela decisão de Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-04",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do livramento que começa em Ester 4:16?",
+    "prompt": "Qual sequência revela o sentido do livramento que começa em Ester 4:16?",
+    "cue": "Qual sequência revela o sentido do livramento que começa em Ester 4:16?",
+    "verseRef": "Ester 9:25",
+    "passageText": "Mas, quando Ester se apresentou diante do rei, ele enviou cartas ordenando que o mal que havia tramado contra os judeus recaísse sobre a própria cabeça dele; por isso, ele e seus filhos foram enforcados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ester convoca jejum antes de agir"
+      },
+      {
+        "id": "b",
+        "text": "Ester se apresenta diante do rei"
+      },
+      {
+        "id": "c",
+        "text": "O mal tramado recai sobre Hamã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "quando Ester se apresentou diante do rei",
+    "feedbackCorrect": "Jejum, apresentação ao rei e a queda do plano de Hamã se encadeiam.",
+    "feedbackWrong": {
+      "default": "Comece pelo jejum de Ester 4; a queda de Hamã vem depois."
+    },
+    "hint": "Siga de Ester 4 até Ester 9.",
+    "learningObjective": "Ver o jejum como começo do caminho do livramento.",
+    "evidence": [
+      "Ester 4:16",
+      "Ester 9:25"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-05",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Ester 9:22, a tristeza dos judeus se mudou em quê?",
+    "prompt": "Em Ester 9:22, a tristeza dos judeus se mudou em quê?",
+    "cue": "Em Ester 9:22, a tristeza dos judeus se mudou em quê?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "template": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em ___, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "temor"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "alegria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "O mês da ameaça se torna mês de festa para os judeus.",
+    "feedbackWrong": {
+      "a": "Quem passa a temer são os adversários, não os judeus salvos.",
+      "b": "O desfecho é celebrado com banquetes, não com silêncio."
+    },
+    "hint": "É o sentimento que substitui a tristeza no desfecho.",
+    "learningObjective": "Lembrar a palavra que marca a virada final.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-06",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Ester 9:22 a Salmos 30:11?",
+    "prompt": "O que liga Ester 9:22 a Salmos 30:11?",
+    "cue": "O que liga Ester 9:22 a Salmos 30:11?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres."
+    },
+    "passageB": {
+      "ref": "Salmos 30:11",
+      "text": "Transformaste o meu pranto em alegria, tiraste o meu pano de luto e me cingiste de júbilo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pranto transformado em alegria"
+      },
+      {
+        "id": "b",
+        "text": "Festa sem motivo lembrado"
+      },
+      {
+        "id": "c",
+        "text": "Luto guardado para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "Nos dois textos, Deus muda o luto do seu povo em festa.",
+    "feedbackWrong": {
+      "b": "Ester 9 celebra justamente um livramento lembrado.",
+      "c": "Os dois textos falam de mudança do luto, não de permanência."
+    },
+    "hint": "Compare o sentimento inicial e o final nos dois textos.",
+    "learningObjective": "Ligar a virada de Ester ao louvor pela tristeza transformada.",
+    "evidence": [
+      "Ester 9:22",
+      "Salmos 30:11"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-02-purim-01",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Ester 9:22, os dias do livramento deveriam ser lembrados com luto e silêncio todos os anos",
+    "prompt": "Em Ester 9:22, os dias do livramento deveriam ser lembrados com luto e silêncio todos os anos",
+    "cue": "Em Ester 9:22, os dias do livramento deveriam ser lembrados com luto e silêncio todos os anos",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "dias de banquetes e de alegria",
+    "feedbackCorrect": "Aqueles dias se tornaram banquetes e alegria, não luto anual.",
+    "feedbackWrong": {
+      "true": "Releia Ester 9:22, que fala de tristeza mudada em alegria."
+    },
+    "hint": "Veja o sentimento que substitui a tristeza.",
+    "learningObjective": "Observar o caráter festivo de Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-02-purim-02",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Ester 9:26, toque o nome dado àqueles dias de festa.",
+    "prompt": "Em Ester 9:26, toque o nome dado àqueles dias de festa.",
+    "cue": "Em Ester 9:26, toque o nome dado àqueles dias de festa.",
+    "verseRef": "Ester 9:26",
+    "passageText": "Por isso, àqueles dias chamam Purim, em referência ao nome Pur; e também por causa de todas as palavras daquela carta, do que testemunharam e do que lhes havia sucedido",
+    "options": [
+      {
+        "id": "a",
+        "text": "carta"
+      },
+      {
+        "id": "b",
+        "text": "dias"
+      },
+      {
+        "id": "c",
+        "text": "Purim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "àqueles dias chamam Purim",
+    "feedbackCorrect": "Os dias do livramento recebem o nome de Purim.",
+    "feedbackWrong": {
+      "a": "A carta registra os fatos, mas não é o nome da festa.",
+      "b": "Dias é palavra comum; o nome próprio vem em seguida."
+    },
+    "hint": "Procure o nome próprio depois de chamam.",
+    "learningObjective": "Identificar o nome da festa do livramento.",
+    "evidence": [
+      "Ester 9:26"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-02-purim-03",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Ester 9:22, além de banquetes e alegria, o que marcaria aqueles dias?",
+    "prompt": "Segundo Ester 9:22, além de banquetes e alegria, o que marcaria aqueles dias?",
+    "cue": "Segundo Ester 9:22, além de banquetes e alegria, o que marcaria aqueles dias?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejum e pano de luto"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio em todas as cidades"
+      },
+      {
+        "id": "c",
+        "text": "Dádivas aos pobres"
+      },
+      {
+        "id": "d",
+        "text": "Viagens até Jerusalém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e dádivas aos pobres",
+    "feedbackCorrect": "Purim une festa, partilha entre pessoas e cuidado com os pobres.",
+    "feedbackWrong": {
+      "a": "Jejum e luto pertencem ao antes; agora há festa.",
+      "b": "O texto fala de banquetes e alegria, não de silêncio.",
+      "d": "Nenhuma viagem a Jerusalém é ordenada neste versículo."
+    },
+    "hint": "Leia o fim da descrição dos dias de festa.",
+    "learningObjective": "Observar as práticas que marcam Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-02-purim-04",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Ester 9:22 na ordem do texto.",
+    "prompt": "Monte Ester 9:22 na ordem do texto.",
+    "cue": "Monte Ester 9:22 na ordem do texto.",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a tristeza se lhes mudou em alegria"
+      },
+      {
+        "id": "b",
+        "text": "e o luto em dia de festa"
+      },
+      {
+        "id": "c",
+        "text": "e de mandarem porções dos banquetes uns aos outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "Tristeza vira alegria, luto vira festa e há partilha.",
+    "feedbackWrong": {
+      "default": "Comece pela tristeza transformada; a partilha fecha o trecho."
+    },
+    "hint": "O trecho começa pela mudança da tristeza.",
+    "learningObjective": "Reconhecer a sequência de Ester 9:22.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-02-purim-05",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Ester 9:22, para quem os judeus deveriam mandar dádivas na festa?",
+    "prompt": "Em Ester 9:22, para quem os judeus deveriam mandar dádivas na festa?",
+    "cue": "Em Ester 9:22, para quem os judeus deveriam mandar dádivas na festa?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "template": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigos"
+      },
+      {
+        "id": "b",
+        "text": "reis"
+      },
+      {
+        "id": "c",
+        "text": "pobres"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e dádivas aos pobres",
+    "feedbackCorrect": "A alegria de Purim inclui cuidado concreto com quem precisa.",
+    "feedbackWrong": {
+      "a": "As dádivas citadas são para os pobres, não para inimigos.",
+      "b": "O texto não manda dádivas a reis nesta festa."
+    },
+    "hint": "É quem mais precisa receber na festa.",
+    "learningObjective": "Lembrar o cuidado com os pobres em Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-02-purim-06",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "cue": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os judeus tiveram sossego depois de dias de ameaça e luto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa apaga os pobres"
+      },
+      {
+        "id": "b",
+        "text": "Livramento vira festa lembrada"
+      },
+      {
+        "id": "c",
+        "text": "Luto dura para sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "O sossego após a ameaça se torna festa celebrada e partilhada.",
+    "feedbackWrong": {
+      "a": "A festa inclui justamente dádivas aos pobres.",
+      "c": "O texto diz que a tristeza se mudou em alegria."
+    },
+    "hint": "Veja o que acontece com a tristeza do povo.",
+    "learningObjective": "Ligar o livramento à festa de Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-02-purim-01",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Ester 9:27, os judeus se comprometeram a celebrar esses dois dias todos os anos",
+    "prompt": "Em Ester 9:27, os judeus se comprometeram a celebrar esses dois dias todos os anos",
+    "cue": "Em Ester 9:27, os judeus se comprometeram a celebrar esses dois dias todos os anos",
+    "verseRef": "Ester 9:27",
+    "passageText": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a não deixar de celebrar esses dois dias",
+    "feedbackCorrect": "Purim se torna compromisso anual dos judeus e de sua descendência.",
+    "feedbackWrong": {
+      "false": "Releia Ester 9:27 e veja o compromisso assumido pelo povo."
+    },
+    "hint": "Olhe a frequência citada no compromisso.",
+    "learningObjective": "Compreender o caráter anual de Purim.",
+    "evidence": [
+      "Ester 9:27"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-02-purim-02",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Ester 9:22, toque a palavra que mostra a virada da tristeza do povo.",
+    "prompt": "Em Ester 9:22, toque a palavra que mostra a virada da tristeza do povo.",
+    "cue": "Em Ester 9:22, toque a palavra que mostra a virada da tristeza do povo.",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mudou"
+      },
+      {
+        "id": "b",
+        "text": "festa"
+      },
+      {
+        "id": "c",
+        "text": "banquetes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "Esse verbo resume a virada de todo o mês para os judeus.",
+    "feedbackWrong": {
+      "b": "Festa é o resultado da virada, não o verbo da mudança.",
+      "c": "Banquetes são a prática da celebração, não a virada."
+    },
+    "hint": "Procure o verbo entre tristeza e alegria.",
+    "learningObjective": "Reconhecer a palavra que marca a virada em Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-02-purim-03",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Ester 9:26 explica a origem do nome Purim?",
+    "prompt": "Como Ester 9:26 explica a origem do nome Purim?",
+    "cue": "Como Ester 9:26 explica a origem do nome Purim?",
+    "verseRef": "Ester 9:26",
+    "passageText": "Por isso, àqueles dias chamam Purim, em referência ao nome Pur; e também por causa de todas as palavras daquela carta, do que testemunharam e do que lhes havia sucedido",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vem do nome das sortes lançadas contra eles"
+      },
+      {
+        "id": "b",
+        "text": "Vem do livro das crônicas reais"
+      },
+      {
+        "id": "c",
+        "text": "Vem do banquete dado pelo rei"
+      },
+      {
+        "id": "d",
+        "text": "Vem do nome da cidade de Susã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em referência ao nome Pur",
+    "feedbackCorrect": "Purim lembra o Pur, as sortes do plano contra os judeus.",
+    "feedbackWrong": {
+      "b": "O registro em livro não explica o nome da festa.",
+      "c": "Há banquetes na festa, mas o nome vem de Pur.",
+      "d": "Susã é a cidade dos fatos, não a origem do nome."
+    },
+    "hint": "Leia a palavra curta a que o nome faz referência.",
+    "learningObjective": "Compreender a origem do nome Purim.",
+    "evidence": [
+      "Ester 9:26"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-02-purim-04",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a instituição de Purim em Ester 9?",
+    "prompt": "Como se encadeia a instituição de Purim em Ester 9?",
+    "cue": "Como se encadeia a instituição de Purim em Ester 9?",
+    "verseRef": "Ester 9:22–23",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres. Assim, os judeus se comprometeram a observar o que, naquela ocasião, haviam feito pela primeira vez, conforme Mardoqueu lhes havia ordenado",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo tem sossego dos inimigos"
+      },
+      {
+        "id": "b",
+        "text": "Os dias viram banquetes e alegria"
+      },
+      {
+        "id": "c",
+        "text": "Os judeus assumem celebrar a festa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "os judeus tiveram sossego de seus inimigos",
+    "feedbackCorrect": "Sossego, festa e compromisso anual formam a instituição de Purim.",
+    "feedbackWrong": {
+      "default": "Comece pelo sossego; o compromisso de celebrar vem depois."
+    },
+    "hint": "O compromisso anual é o passo final.",
+    "learningObjective": "Compreender como Purim se torna prática permanente.",
+    "evidence": [
+      "Ester 9:22–23"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-02-purim-05",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Ester 9:27, os judeus deveriam celebrar esses dias em que frequência?",
+    "prompt": "Em Ester 9:27, os judeus deveriam celebrar esses dias em que frequência?",
+    "cue": "Em Ester 9:27, os judeus deveriam celebrar esses dias em que frequência?",
+    "verseRef": "Ester 9:27",
+    "passageText": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos.",
+    "template": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dias"
+      },
+      {
+        "id": "b",
+        "text": "meses"
+      },
+      {
+        "id": "c",
+        "text": "anos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todos os anos",
+    "feedbackCorrect": "A celebração se repete anualmente, no tempo estabelecido.",
+    "feedbackWrong": {
+      "a": "São dois dias celebrados, repetidos a cada ano.",
+      "b": "A festa é anual, não uma celebração de todos os meses."
+    },
+    "hint": "Pense no ciclo maior citado no fim do versículo.",
+    "learningObjective": "Compreender a repetição anual de Purim.",
+    "evidence": [
+      "Ester 9:27"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-02-purim-06",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Ester 9:27 a Êxodo 12:14?",
+    "prompt": "O que liga Ester 9:27 a Êxodo 12:14?",
+    "cue": "O que liga Ester 9:27 a Êxodo 12:14?",
+    "verseRef": "Ester 9:27",
+    "passageText": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos.",
+    "passageA": {
+      "ref": "Ester 9:27",
+      "text": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos."
+    },
+    "passageB": {
+      "ref": "Êxodo 12:14",
+      "text": "Esse dia será para vós um memorial, e o celebrareis como uma solenidade ao Senhor; nas vossas gerações o celebrareis por estatuto perpétuo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer o passado doloroso"
+      },
+      {
+        "id": "b",
+        "text": "Lembrar livramento por gerações"
+      },
+      {
+        "id": "c",
+        "text": "Celebrar apenas uma vez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a não deixar de celebrar esses dois dias",
+    "feedbackCorrect": "Como na Páscoa, um livramento passa a ser lembrado por gerações.",
+    "feedbackWrong": {
+      "a": "A celebração existe justamente para não esquecer o livramento.",
+      "c": "Os dois textos falam de celebração repetida nas gerações."
+    },
+    "hint": "Veja quem continua celebrando nos dois textos.",
+    "learningObjective": "Relacionar Purim à memória de livramentos por gerações.",
+    "evidence": [
+      "Ester 9:27",
+      "Êxodo 12:14"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-02-purim-01",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Ester 9:28, a memória de Purim deveria durar apenas para a geração que viveu aqueles dias",
+    "prompt": "Em Ester 9:28, a memória de Purim deveria durar apenas para a geração que viveu aqueles dias",
+    "cue": "Em Ester 9:28, a memória de Purim deveria durar apenas para a geração que viveu aqueles dias",
+    "verseRef": "Ester 9:28",
+    "passageText": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a memória deles nunca se extinguiria entre seus descendentes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a memória deles nunca se extinguiria entre seus descendentes",
+    "feedbackCorrect": "Purim foi pensado para ser lembrado por cada geração do povo.",
+    "feedbackWrong": {
+      "true": "Releia Ester 9:28, que fala de todas as gerações e famílias."
+    },
+    "hint": "Veja até onde a memória deveria alcançar.",
+    "learningObjective": "Interpretar Purim como memória transmitida entre gerações.",
+    "evidence": [
+      "Ester 9:28"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-02-purim-02",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Ester 9:28, toque o que nunca se extinguiria entre os descendentes.",
+    "prompt": "Em Ester 9:28, toque o que nunca se extinguiria entre os descendentes.",
+    "cue": "Em Ester 9:28, toque o que nunca se extinguiria entre os descendentes.",
+    "verseRef": "Ester 9:28",
+    "passageText": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a memória deles nunca se extinguiria entre seus descendentes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "geração"
+      },
+      {
+        "id": "b",
+        "text": "cidades"
+      },
+      {
+        "id": "c",
+        "text": "memória"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a memória deles nunca se extinguiria",
+    "feedbackCorrect": "O que permanece entre os descendentes é a lembrança daqueles dias.",
+    "feedbackWrong": {
+      "a": "Geração indica quem lembra, não o que permanece.",
+      "b": "Cidades indicam onde se celebra, não o que permanece."
+    },
+    "hint": "Procure o substantivo ligado a nunca se extinguir.",
+    "learningObjective": "Sustentar no texto a memória permanente de Purim.",
+    "evidence": [
+      "Ester 9:28"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-02-purim-03",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Ester 9:22-28 sustenta sobre o sentido de Purim?",
+    "prompt": "Que leitura Ester 9:22-28 sustenta sobre o sentido de Purim?",
+    "cue": "Que leitura Ester 9:22-28 sustenta sobre o sentido de Purim?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um costume sem ligação com o livramento"
+      },
+      {
+        "id": "b",
+        "text": "Uma memória alegre passada às gerações"
+      },
+      {
+        "id": "c",
+        "text": "Um luto anual pela antiga ameaça"
+      },
+      {
+        "id": "d",
+        "text": "Uma festa privada só para Susã"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "Purim transmite às gerações a alegria de um livramento real.",
+    "feedbackWrong": {
+      "a": "A festa nasce justamente dos dias de sossego dos inimigos.",
+      "c": "A tristeza se mudou em alegria; não é luto anual.",
+      "d": "O texto alcança famílias, províncias e cidades, não só Susã."
+    },
+    "hint": "Junte a alegria de 9:22 com as gerações de 9:28.",
+    "learningObjective": "Escolher a interpretação sustentada sobre Purim.",
+    "evidence": [
+      "Ester 9:22",
+      "Ester 9:28"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-02-purim-04",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido completo de Purim em Ester 9?",
+    "prompt": "Qual sequência revela o sentido completo de Purim em Ester 9?",
+    "cue": "Qual sequência revela o sentido completo de Purim em Ester 9?",
+    "verseRef": "Ester 9:25–26",
+    "passageText": "Mas, quando Ester se apresentou diante do rei, ele enviou cartas ordenando que o mal que havia tramado contra os judeus recaísse sobre a própria cabeça dele; por isso, ele e seus filhos foram enforcados. Por isso, àqueles dias chamam Purim, em referência ao nome Pur; e também por causa de todas as palavras daquela carta, do que testemunharam e do que lhes havia sucedido",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hamã planeja destruir os judeus"
+      },
+      {
+        "id": "b",
+        "text": "Ester se apresenta diante do rei"
+      },
+      {
+        "id": "c",
+        "text": "Os dias do livramento ganham nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "quando Ester se apresentou diante do rei",
+    "feedbackCorrect": "Plano de destruição, ação de Ester e festa nomeada contam Purim.",
+    "feedbackWrong": {
+      "default": "Comece pelo plano de Hamã; o nome Purim vem no desfecho."
+    },
+    "hint": "Siga da ameaça até o nome da festa.",
+    "learningObjective": "Ver Purim como memória de ameaça vencida e livramento.",
+    "evidence": [
+      "Ester 9:24–26"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-02-purim-05",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Ester 9:22, o luto dos judeus se mudou em dia de quê?",
+    "prompt": "Em Ester 9:22, o luto dos judeus se mudou em dia de quê?",
+    "cue": "Em Ester 9:22, o luto dos judeus se mudou em dia de quê?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "template": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de ___; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trabalho"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "festa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e o luto em dia de festa",
+    "feedbackCorrect": "O luto daquele mês se transforma em celebração para o povo.",
+    "feedbackWrong": {
+      "a": "O texto fala de descanso e alegria, não de um dia comum.",
+      "b": "A celebração é marcada por banquetes, não por silêncio."
+    },
+    "hint": "É a palavra que vem depois de dia de, no versículo.",
+    "learningObjective": "Lembrar a palavra que marca a virada do luto.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-02-purim-06",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Ester 9:28 a Salmos 145:4?",
+    "prompt": "O que liga Ester 9:28 a Salmos 145:4?",
+    "cue": "O que liga Ester 9:28 a Salmos 145:4?",
+    "verseRef": "Ester 9:28",
+    "passageText": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a memória deles nunca se extinguiria entre seus descendentes.",
+    "passageA": {
+      "ref": "Ester 9:28",
+      "text": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a memória deles nunca se extinguiria entre seus descendentes."
+    },
+    "passageB": {
+      "ref": "Salmos 145:4",
+      "text": "Uma geração louvará as tuas obras e anunciará os teus poderosos feitos a outra geração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festas substituem a memória"
+      },
+      {
+        "id": "b",
+        "text": "Gerações anunciam feitos de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Cada geração esquece a anterior"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "seriam lembrados e comemorados por cada geração",
+    "feedbackCorrect": "Purim e o Salmo mostram gerações passando adiante os feitos de Deus.",
+    "feedbackWrong": {
+      "a": "A festa é justamente o meio de guardar a memória.",
+      "c": "Os dois textos insistem em lembrar, não em esquecer."
+    },
+    "hint": "Veja o papel de uma geração diante da seguinte.",
+    "learningObjective": "Ligar Purim ao anúncio dos feitos de Deus entre gerações.",
+    "evidence": [
+      "Ester 9:28",
+      "Salmos 145:4"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-01",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Ester 9:1, no dia em que os inimigos esperavam dominar os judeus ocorreu o contrário",
+    "prompt": "Em Ester 9:1, no dia em que os inimigos esperavam dominar os judeus ocorreu o contrário",
+    "cue": "Em Ester 9:1, no dia em que os inimigos esperavam dominar os judeus ocorreu o contrário",
+    "verseRef": "Ester 9:1",
+    "passageText": "No décimo segundo mês, que é o mês de Adar, no dia treze desse mesmo mês, quando chegou a palavra do rei e a sua ordem para se executar, no dia em que os inimigos dos judeus esperavam se apoderar deles, ocorreu o contrário: os judeus é que se apoderaram de seus inimigos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ocorreu o contrário",
+    "feedbackCorrect": "O dia marcado para a ameaça se torna dia de virada.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Ester 9:1, que resume a virada do dia."
+    },
+    "hint": "Olhe o resultado do dia treze.",
+    "learningObjective": "Observar a virada narrada em Ester 9:1.",
+    "evidence": [
+      "Ester 9:1"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-02",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Ester 9:1, toque a palavra que resume a virada daquele dia.",
+    "prompt": "Em Ester 9:1, toque a palavra que resume a virada daquele dia.",
+    "cue": "Em Ester 9:1, toque a palavra que resume a virada daquele dia.",
+    "verseRef": "Ester 9:1",
+    "passageText": "No décimo segundo mês, que é o mês de Adar, no dia treze desse mesmo mês, quando chegou a palavra do rei e a sua ordem para se executar, no dia em que os inimigos dos judeus esperavam se apoderar deles, ocorreu o contrário: os judeus é que se apoderaram de seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigos"
+      },
+      {
+        "id": "b",
+        "text": "judeus"
+      },
+      {
+        "id": "c",
+        "text": "contrário"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ocorreu o contrário",
+    "feedbackCorrect": "Aconteceu o inverso do que os inimigos esperavam naquele dia.",
+    "feedbackWrong": {
+      "a": "Inimigos são quem esperava dominar, não a palavra da virada.",
+      "b": "Judeus são o povo livrado, não o resumo da virada."
+    },
+    "hint": "Procure o que ocorreu, perto do fim do versículo.",
+    "learningObjective": "Identificar a palavra central da virada.",
+    "evidence": [
+      "Ester 9:1"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-03",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Ester 9:10, o que os judeus não fizeram após vencer os filhos de Hamã?",
+    "prompt": "Segundo Ester 9:10, o que os judeus não fizeram após vencer os filhos de Hamã?",
+    "cue": "Segundo Ester 9:10, o que os judeus não fizeram após vencer os filhos de Hamã?",
+    "verseRef": "Ester 9:10",
+    "passageText": "Os dez filhos de Hamã, filho de Hammedata, o inimigo dos judeus, foram mortos, mas não tocaram no despojo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não avisaram ao rei"
+      },
+      {
+        "id": "b",
+        "text": "Não contaram os mortos"
+      },
+      {
+        "id": "c",
+        "text": "Não tocaram no despojo"
+      },
+      {
+        "id": "d",
+        "text": "Não voltaram para casa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas não tocaram no despojo",
+    "feedbackCorrect": "Mesmo vencedores, os judeus não tocaram nos bens dos vencidos.",
+    "feedbackWrong": {
+      "a": "O rei é informado dos fatos no versículo seguinte.",
+      "b": "O número de mortos em Susã é levado ao rei em 9:11.",
+      "d": "O texto não fala de retorno para casa neste versículo."
+    },
+    "hint": "Leia a parte final do versículo.",
+    "learningObjective": "Observar o limite dos judeus após a vitória.",
+    "evidence": [
+      "Ester 9:10"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-04",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Ester 9:1 na ordem do texto.",
+    "prompt": "Monte Ester 9:1 na ordem do texto.",
+    "cue": "Monte Ester 9:1 na ordem do texto.",
+    "verseRef": "Ester 9:1",
+    "passageText": "No décimo segundo mês, que é o mês de Adar, no dia treze desse mesmo mês, quando chegou a palavra do rei e a sua ordem para se executar, no dia em que os inimigos dos judeus esperavam se apoderar deles, ocorreu o contrário: os judeus é que se apoderaram de seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "no dia em que os inimigos dos judeus esperavam se apoderar deles"
+      },
+      {
+        "id": "b",
+        "text": "ocorreu o contrário"
+      },
+      {
+        "id": "c",
+        "text": "os judeus é que se apoderaram de seus inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ocorreu o contrário",
+    "feedbackCorrect": "A expectativa dos inimigos é invertida naquele dia.",
+    "feedbackWrong": {
+      "default": "Comece pela expectativa dos inimigos; a virada vem depois."
+    },
+    "hint": "A virada fica no meio do versículo.",
+    "learningObjective": "Reconhecer a sequência de Ester 9:1.",
+    "evidence": [
+      "Ester 9:1"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-05",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Ester 9:22, para quem deveriam ser mandadas dádivas na festa?",
+    "prompt": "Em Ester 9:22, para quem deveriam ser mandadas dádivas na festa?",
+    "cue": "Em Ester 9:22, para quem deveriam ser mandadas dádivas na festa?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "template": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pobres"
+      },
+      {
+        "id": "b",
+        "text": "reis"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e dádivas aos pobres",
+    "feedbackCorrect": "A festa de Purim inclui cuidado com quem mais precisa.",
+    "feedbackWrong": {
+      "b": "Nenhuma dádiva a reis é citada na descrição da festa.",
+      "c": "As dádivas são para os pobres, não para os inimigos."
+    },
+    "hint": "É quem mais precisa receber na celebração.",
+    "learningObjective": "Lembrar a partilha que marca Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-06",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "cue": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de dias de ameaça, os judeus tiveram sossego de seus inimigos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sossego sem celebração"
+      },
+      {
+        "id": "b",
+        "text": "Livramento vira festa"
+      },
+      {
+        "id": "c",
+        "text": "Ameaça dura para sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "O sossego após a ameaça se torna banquete e alegria.",
+    "feedbackWrong": {
+      "a": "Há banquetes e alegria justamente para celebrar o sossego.",
+      "c": "O texto mostra a tristeza mudada, não ameaça permanente."
+    },
+    "hint": "Veja o destino da tristeza do povo.",
+    "learningObjective": "Ligar o livramento à celebração de Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-07",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Ester 9:10, toque aquilo em que os judeus não tocaram.",
+    "prompt": "Em Ester 9:10, toque aquilo em que os judeus não tocaram.",
+    "cue": "Em Ester 9:10, toque aquilo em que os judeus não tocaram.",
+    "verseRef": "Ester 9:10",
+    "passageText": "Os dez filhos de Hamã, filho de Hammedata, o inimigo dos judeus, foram mortos, mas não tocaram no despojo",
+    "options": [
+      {
+        "id": "a",
+        "text": "despojo"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas não tocaram no despojo",
+    "feedbackCorrect": "A vitória não se torna saque dos bens alheios.",
+    "feedbackWrong": {
+      "b": "Os filhos de Hamã são os vencidos citados no versículo.",
+      "c": "Inimigo descreve Hamã, não aquilo que ficou intocado."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Observar o que os judeus recusam após vencer.",
+    "evidence": [
+      "Ester 9:10"
+    ]
+  },
+  {
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-08",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Ester 9:22 na ordem do texto.",
+    "prompt": "Monte Ester 9:22 na ordem do texto.",
+    "cue": "Monte Ester 9:22 na ordem do texto.",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como os dias em que os judeus tiveram sossego de seus inimigos"
+      },
+      {
+        "id": "b",
+        "text": "e no mês em que a tristeza se lhes mudou em alegria"
+      },
+      {
+        "id": "c",
+        "text": "e o luto em dia de festa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Como os dias em que os judeus tiveram sossego de seus inimigos",
+    "feedbackCorrect": "Sossego, alegria e festa resumem a memória de Purim.",
+    "feedbackWrong": {
+      "default": "Comece pelos dias de sossego; o luto transformado fecha."
+    },
+    "hint": "O versículo começa lembrando os dias de sossego.",
+    "learningObjective": "Reconhecer a sequência de Ester 9:22.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-01",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Ester 9:24, Hamã lançou sortes para proteger os judeus de seus inimigos",
+    "prompt": "Em Ester 9:24, Hamã lançou sortes para proteger os judeus de seus inimigos",
+    "cue": "Em Ester 9:24, Hamã lançou sortes para proteger os judeus de seus inimigos",
+    "verseRef": "Ester 9:24",
+    "passageText": "Porque Hamã, filho de Hammedata, o agagita, inimigo de todos os judeus, havia intentado destruir os judeus; e lançou o Pur, isto é, sortes, para assolar e exterminá-los.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "lançou o Pur, isto é, sortes, para assolar e exterminá-los",
+    "feedbackCorrect": "As sortes de Hamã faziam parte do plano de exterminar os judeus.",
+    "feedbackWrong": {
+      "true": "Releia o objetivo das sortes citado em Ester 9:24."
+    },
+    "hint": "Veja para que serviam as sortes de Hamã.",
+    "learningObjective": "Compreender a intenção das sortes de Hamã.",
+    "evidence": [
+      "Ester 9:24"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-02",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Ester 9:22, toque a palavra que marca a mudança da tristeza do povo.",
+    "prompt": "Em Ester 9:22, toque a palavra que marca a mudança da tristeza do povo.",
+    "cue": "Em Ester 9:22, toque a palavra que marca a mudança da tristeza do povo.",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mudou"
+      },
+      {
+        "id": "b",
+        "text": "banquetes"
+      },
+      {
+        "id": "c",
+        "text": "pobres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "Esse verbo liga o antes de luto ao depois de festa.",
+    "feedbackWrong": {
+      "b": "Banquetes são a prática da festa, não o verbo da virada.",
+      "c": "Pobres são destinatários de dádivas, não a marca da mudança."
+    },
+    "hint": "Procure o verbo entre tristeza e alegria.",
+    "learningObjective": "Reconhecer o marcador da virada em Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-03",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Ester 9:22 se relaciona com Ester 9:1 no caminho de Purim?",
+    "prompt": "Como Ester 9:22 se relaciona com Ester 9:1 no caminho de Purim?",
+    "cue": "Como Ester 9:22 se relaciona com Ester 9:1 no caminho de Purim?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A festa acontece antes de qualquer livramento"
+      },
+      {
+        "id": "b",
+        "text": "A festa guarda a memória da virada vivida"
+      },
+      {
+        "id": "c",
+        "text": "O sossego torna a celebração desnecessária"
+      },
+      {
+        "id": "d",
+        "text": "A alegria apaga a necessidade de lembrar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Como os dias em que os judeus tiveram sossego de seus inimigos",
+    "feedbackCorrect": "Purim celebra anualmente os dias em que houve sossego e virada.",
+    "feedbackWrong": {
+      "a": "A celebração vem depois dos dias de livramento.",
+      "c": "O sossego é o motivo lembrado pela celebração.",
+      "d": "A festa existe justamente para guardar a memória."
+    },
+    "hint": "Junte o dia da virada com os dias de festa.",
+    "learningObjective": "Relacionar livramento e memória em Purim.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-04",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia o livramento em Ester 9:1-22?",
+    "prompt": "Como se encadeia o livramento em Ester 9:1-22?",
+    "cue": "Como se encadeia o livramento em Ester 9:1-22?",
+    "verseRef": "Ester 9:1–2",
+    "passageText": "No décimo segundo mês, que é o mês de Adar, no dia treze desse mesmo mês, quando chegou a palavra do rei e a sua ordem para se executar, no dia em que os inimigos dos judeus esperavam se apoderar deles, ocorreu o contrário: os judeus é que se apoderaram de seus inimigos. Os judeus, nas suas cidades, em todas as províncias do rei Assuero, se reuniram para acabar com aqueles que lhes desejavam o mal; ninguém podia resistir-lhes, pois o terror que inspiravam se abateu sobre todos os povos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ameaça chega ao dia marcado"
+      },
+      {
+        "id": "b",
+        "text": "Acontece o inverso do esperado"
+      },
+      {
+        "id": "c",
+        "text": "O povo celebra dias de alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ocorreu o contrário",
+    "feedbackCorrect": "Dia marcado, virada e celebração formam o caminho de Purim.",
+    "feedbackWrong": {
+      "default": "Comece pelo dia da ameaça; a festa é o desfecho."
+    },
+    "hint": "A celebração só vem depois da virada.",
+    "learningObjective": "Compreender o encadeamento do livramento.",
+    "evidence": [
+      "Ester 9:1–2"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-05",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Ester 9:26, que nome aqueles dias de livramento recebem?",
+    "prompt": "Em Ester 9:26, que nome aqueles dias de livramento recebem?",
+    "cue": "Em Ester 9:26, que nome aqueles dias de livramento recebem?",
+    "verseRef": "Ester 9:26",
+    "passageText": "Por isso, àqueles dias chamam Purim, em referência ao nome Pur; e também por causa de todas as palavras daquela carta, do que testemunharam e do que lhes havia sucedido",
+    "template": "Por isso, àqueles dias chamam ___, em referência ao nome Pur; e também por causa de todas as palavras daquela carta, do que testemunharam e do que lhes havia sucedido",
+    "options": [
+      {
+        "id": "a",
+        "text": "Páscoa"
+      },
+      {
+        "id": "b",
+        "text": "Purim"
+      },
+      {
+        "id": "c",
+        "text": "Adar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "àqueles dias chamam Purim",
+    "feedbackCorrect": "O nome da festa guarda a lembrança das sortes de Hamã.",
+    "feedbackWrong": {
+      "a": "Páscoa é outra festa, ligada à saída do Egito.",
+      "c": "Adar é o nome do mês, não o nome da festa."
+    },
+    "hint": "É o nome ligado a Pur no mesmo versículo.",
+    "learningObjective": "Compreender o nome dado aos dias do livramento.",
+    "evidence": [
+      "Ester 9:26"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-06",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Ester 9:27 a Êxodo 12:14?",
+    "prompt": "O que liga Ester 9:27 a Êxodo 12:14?",
+    "cue": "O que liga Ester 9:27 a Êxodo 12:14?",
+    "verseRef": "Ester 9:27",
+    "passageText": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos.",
+    "passageA": {
+      "ref": "Ester 9:27",
+      "text": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos."
+    },
+    "passageB": {
+      "ref": "Êxodo 12:14",
+      "text": "Esse dia será para vós um memorial, e o celebrareis como uma solenidade ao Senhor; nas vossas gerações o celebrareis por estatuto perpétuo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Celebrar somente uma vez"
+      },
+      {
+        "id": "b",
+        "text": "Guardar festa em segredo"
+      },
+      {
+        "id": "c",
+        "text": "Lembrar livramento por gerações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a não deixar de celebrar esses dois dias",
+    "feedbackCorrect": "Purim e Páscoa transmitem um livramento às gerações seguintes.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de celebração contínua nas gerações.",
+      "b": "Cartas e memoriais tornam a celebração pública e transmitida."
+    },
+    "hint": "Veja quem continua celebrando nos dois textos.",
+    "learningObjective": "Relacionar Purim à memória de livramentos por gerações.",
+    "evidence": [
+      "Ester 9:27",
+      "Êxodo 12:14"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-07",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Ester 9:27, toque quem, além dos judeus da época, deveria celebrar Purim.",
+    "prompt": "Em Ester 9:27, toque quem, além dos judeus da época, deveria celebrar Purim.",
+    "cue": "Em Ester 9:27, toque quem, além dos judeus da época, deveria celebrar Purim.",
+    "verseRef": "Ester 9:27",
+    "passageText": "Os judeus se comprometeram, assim como a sua descendência e todos os que se unissem a eles, a não deixar de celebrar esses dois dias, conforme o que foi escrito a seu respeito e o tempo estabelecido, todos os anos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "descendência"
+      },
+      {
+        "id": "b",
+        "text": "dias"
+      },
+      {
+        "id": "c",
+        "text": "anos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim como a sua descendência",
+    "feedbackCorrect": "O compromisso alcança quem viria depois daquela geração.",
+    "feedbackWrong": {
+      "b": "Dias indicam o que se celebra, não os celebrantes futuros.",
+      "c": "Anos indicam a repetição, não quem deve celebrar."
+    },
+    "hint": "Procure a palavra ligada às gerações futuras.",
+    "learningObjective": "Reconhecer o alcance geracional de Purim.",
+    "evidence": [
+      "Ester 9:27"
+    ]
+  },
+  {
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-08",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como Mardoqueu organiza a memória em Ester 9:20-21?",
+    "prompt": "Como Mardoqueu organiza a memória em Ester 9:20-21?",
+    "cue": "Como Mardoqueu organiza a memória em Ester 9:20-21?",
+    "verseRef": "Ester 9:20–21",
+    "passageText": "Mardoqueu escreveu estas coisas e enviou cartas a todos os judeus que se achavam em todas as províncias do rei Assuero, tanto aos que estavam perto como aos que estavam longe. ordenando-lhes que comemorassem o dia quatorze do mês de Adar e o dia quinze do mesmo, todos os anos,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mardoqueu registra o que aconteceu"
+      },
+      {
+        "id": "b",
+        "text": "Cartas alcançam judeus perto e longe"
+      },
+      {
+        "id": "c",
+        "text": "Todos comemoram os dias todos os anos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mardoqueu escreveu estas coisas",
+    "feedbackCorrect": "Registro, cartas e celebração anual guardam a memória do livramento.",
+    "feedbackWrong": {
+      "default": "Comece pelo registro de Mardoqueu; a comemoração anual fecha."
+    },
+    "hint": "O registro vem antes do envio das cartas.",
+    "learningObjective": "Compreender como a memória de Purim é organizada.",
+    "evidence": [
+      "Ester 9:20–21"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-01",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Ester 9:28, a memória de Purim nunca se extinguiria entre os descendentes dos judeus",
+    "prompt": "Em Ester 9:28, a memória de Purim nunca se extinguiria entre os descendentes dos judeus",
+    "cue": "Em Ester 9:28, a memória de Purim nunca se extinguiria entre os descendentes dos judeus",
+    "verseRef": "Ester 9:28",
+    "passageText": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a memória deles nunca se extinguiria entre seus descendentes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a memória deles nunca se extinguiria entre seus descendentes",
+    "feedbackCorrect": "Purim foi estabelecido para atravessar gerações do povo.",
+    "feedbackWrong": {
+      "false": "Releia Ester 9:28 e veja o alcance da memória instituída."
+    },
+    "hint": "Olhe quem deve continuar lembrando.",
+    "learningObjective": "Interpretar Purim como memória permanente do livramento.",
+    "evidence": [
+      "Ester 9:28"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-02",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Ester 4:16, toque o trecho em que Ester aceita a possibilidade de perecer.",
+    "prompt": "Em Ester 4:16, toque o trecho em que Ester aceita a possibilidade de perecer.",
+    "cue": "Em Ester 4:16, toque o trecho em que Ester aceita a possibilidade de perecer.",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "se perecer"
+      },
+      {
+        "id": "b",
+        "text": "minhas servas"
+      },
+      {
+        "id": "c",
+        "text": "três dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se perecer, que assim aconteça",
+    "feedbackCorrect": "Ester age pelo seu povo sem exigir garantia de vida.",
+    "feedbackWrong": {
+      "b": "As servas acompanham o jejum; o risco está na frase final.",
+      "c": "Isso é a duração do jejum, não o risco aceito."
+    },
+    "hint": "Procure a condição no fim da fala de Ester.",
+    "learningObjective": "Sustentar no texto a coragem arriscada de Ester.",
+    "evidence": [
+      "Ester 4:16"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-03",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o conjunto de Ester 4:16 e Ester 9:22 sustenta?",
+    "prompt": "Que leitura o conjunto de Ester 4:16 e Ester 9:22 sustenta?",
+    "cue": "Que leitura o conjunto de Ester 4:16 e Ester 9:22 sustenta?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O livramento dispensa qualquer risco humano"
+      },
+      {
+        "id": "b",
+        "text": "Um povo jejua, arrisca e depois celebra junto"
+      },
+      {
+        "id": "c",
+        "text": "Ester age sozinha e a festa apaga a memória"
+      },
+      {
+        "id": "d",
+        "text": "A festa existe sem relação com a ameaça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a tristeza se lhes mudou em alegria",
+    "feedbackCorrect": "Jejum coletivo e risco de Ester desembocam em alegria compartilhada.",
+    "feedbackWrong": {
+      "a": "Ester assume risco real antes de qualquer livramento.",
+      "c": "Ester convoca todos ao jejum e Purim guarda a memória.",
+      "d": "Purim nasce dos dias em que houve sossego dos inimigos."
+    },
+    "hint": "Junte o começo arriscado com o desfecho festivo.",
+    "learningObjective": "Escolher a interpretação sustentada pelo arco do livramento.",
+    "evidence": [
+      "Ester 9:22"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-04",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da queda de Hamã em Ester 9?",
+    "prompt": "Qual sequência revela o sentido da queda de Hamã em Ester 9?",
+    "cue": "Qual sequência revela o sentido da queda de Hamã em Ester 9?",
+    "verseRef": "Ester 9:24–25",
+    "passageText": "Porque Hamã, filho de Hammedata, o agagita, inimigo de todos os judeus, havia intentado destruir os judeus; e lançou o Pur, isto é, sortes, para assolar e exterminá-los. Mas, quando Ester se apresentou diante do rei, ele enviou cartas ordenando que o mal que havia tramado contra os judeus recaísse sobre a própria cabeça dele; por isso, ele e seus filhos foram enforcados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hamã planeja exterminar os judeus"
+      },
+      {
+        "id": "b",
+        "text": "Ester se apresenta diante do rei"
+      },
+      {
+        "id": "c",
+        "text": "O mal tramado recai sobre Hamã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "quando Ester se apresentou diante do rei",
+    "feedbackCorrect": "Plano de Hamã, ação de Ester e reversão do mal se encadeiam.",
+    "feedbackWrong": {
+      "default": "Comece pelo plano de Hamã; sua queda é o desfecho."
+    },
+    "hint": "A apresentação de Ester fica entre plano e queda.",
+    "learningObjective": "Ver a reversão do plano de Hamã no livramento.",
+    "evidence": [
+      "Ester 9:24–25"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-05",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Ester 9:28, o que nunca se extinguiria entre os descendentes?",
+    "prompt": "Em Ester 9:28, o que nunca se extinguiria entre os descendentes?",
+    "cue": "Em Ester 9:28, o que nunca se extinguiria entre os descendentes?",
+    "verseRef": "Ester 9:28",
+    "passageText": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a memória deles nunca se extinguiria entre seus descendentes.",
+    "template": "E que esses dias seriam lembrados e comemorados por cada geração por todas as famílias, em todas as províncias e em todas as cidades, e que os dias de Purim jamais caducariam entre os judeus, e que a ___ deles nunca se extinguiria entre seus descendentes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tristeza"
+      },
+      {
+        "id": "b",
+        "text": "ameaça"
+      },
+      {
+        "id": "c",
+        "text": "memória"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a memória deles nunca se extinguiria",
+    "feedbackCorrect": "O que permanece é a lembrança do livramento, não a ameaça.",
+    "feedbackWrong": {
+      "a": "A tristeza se mudou em alegria, conforme Ester 9:22.",
+      "b": "A ameaça foi vencida; o que continua é a lembrança dela vencida."
+    },
+    "hint": "É o que a celebração anual guarda.",
+    "learningObjective": "Lembrar o termo central da permanência de Purim.",
+    "evidence": [
+      "Ester 9:28"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-06",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Ester 9:22 a Salmos 30:11?",
+    "prompt": "O que liga Ester 9:22 a Salmos 30:11?",
+    "cue": "O que liga Ester 9:22 a Salmos 30:11?",
+    "verseRef": "Ester 9:22",
+    "passageText": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres.",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "Como os dias em que os judeus tiveram sossego de seus inimigos, e no mês em que a tristeza se lhes mudou em alegria, e o luto em dia de festa; para que os fizessem dias de banquetes e de alegria, e de mandarem porções dos banquetes uns aos outros, e dádivas aos pobres."
+    },
+    "passageB": {
+      "ref": "Salmos 30:11",
+      "text": "Transformaste o meu pranto em alegria, tiraste o meu pano de luto e me cingiste de júbilo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Luto guardado para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Alegria sem livramento anterior"
+      },
+      {
+        "id": "c",
+        "text": "Pranto transformado em alegria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o luto em dia de festa",
+    "feedbackCorrect": "Nos dois textos, o sofrimento do povo de Deus vira festa.",
+    "feedbackWrong": {
+      "a": "Ambos falam de mudança do luto, não de permanência dele.",
+      "b": "A alegria de Ester nasce de um livramento lembrado."
+    },
+    "hint": "Compare o sentimento inicial e o final dos textos.",
+    "learningObjective": "Ligar a virada de Purim ao louvor pela tristeza transformada.",
+    "evidence": [
+      "Ester 9:22",
+      "Salmos 30:11"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-07",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Ester 9:25, toque sobre quem o mal tramado deveria recair.",
+    "prompt": "Em Ester 9:25, toque sobre quem o mal tramado deveria recair.",
+    "cue": "Em Ester 9:25, toque sobre quem o mal tramado deveria recair.",
+    "verseRef": "Ester 9:25",
+    "passageText": "Mas, quando Ester se apresentou diante do rei, ele enviou cartas ordenando que o mal que havia tramado contra os judeus recaísse sobre a própria cabeça dele; por isso, ele e seus filhos foram enforcados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cabeça"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "cartas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "recaísse sobre a própria cabeça dele",
+    "feedbackCorrect": "O plano de Hamã volta contra o próprio autor do plano.",
+    "feedbackWrong": {
+      "b": "Os filhos sofrem com Hamã, mas a expressão aponta para ele.",
+      "c": "Cartas são o meio da ordem real, não o alvo da reversão."
+    },
+    "hint": "Procure a expressão ligada à própria pessoa de Hamã.",
+    "learningObjective": "Sustentar no texto a reversão sobre Hamã.",
+    "evidence": [
+      "Ester 9:25"
+    ]
+  },
+  {
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-08",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho completo da providência em Ester?",
+    "prompt": "Qual sequência revela o caminho completo da providência em Ester?",
+    "cue": "Qual sequência revela o caminho completo da providência em Ester?",
+    "verseRef": "Ester 4:16",
+    "passageText": "Vá, reúna todos os judeus que se encontram em Susã e jejuem por mim; não comam nem bebam por três dias, nem de dia nem de noite. Eu e minhas servas também jejuaremos. Depois, irei ter com o rei, ainda que isso contrarie a lei; se perecer, que assim aconteça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um povo jejua antes da ação arriscada"
+      },
+      {
+        "id": "b",
+        "text": "A tristeza se transforma em celebração"
+      },
+      {
+        "id": "c",
+        "text": "Gerações futuras guardam essa memória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Depois, irei ter com o rei",
+    "feedbackCorrect": "Jejum e risco, virada festiva e memória formam o arco inteiro.",
+    "feedbackWrong": {
+      "default": "Comece pelo jejum de Ester 4; a memória geracional fecha."
+    },
+    "hint": "Siga de Ester 4 até o fim de Ester 9.",
+    "learningObjective": "Ver o arco completo do livramento lembrado em Purim.",
+    "evidence": [
+      "Ester 4:16",
+      "Ester 9:22",
+      "Ester 9:28"
+    ]
+  }
+]

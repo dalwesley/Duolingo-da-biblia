@@ -1,0 +1,63 @@
+Escreva a cena "ato-07-missoes" da trilha "atos" (Atos dos Apóstolos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Até os confins",
+ "mission": {
+  "slug": "ato-07-missoes",
+  "title": "Missão desde Antioquia",
+  "type": "lesson",
+  "intro": "A igreja jejuando envia. A palavra corre entre as nações — com oposição e alegria.",
+  "hookRef": "Atos 13:2–3",
+  "hookNote": "Antioquia torna-se base missionária: diversidade, ensino e escuta do Espírito. Enviar não é abandono — é participação na missão de Deus. Na…",
+  "centralInsight": "Jejuar e ouvir o Espírito",
+  "objective": "Minha comunidade só recebe — ou também envia?"
+ },
+ "v2": {
+  "passageRef": "Atos 13:2–3",
+  "context": "Antioquia torna-se base missionária: diversidade, ensino e escuta do Espírito. Enviar não é abandono — é participação na missão de Deus. Na viagem, Paulo anuncia Cristo em sinagogas e entre gentios; há fruto e perseguição. A igreja aprende: o Espírito envia, a palavra salva, o sofrimento acompanha.",
+  "keyword": "Envio",
+  "verseRefs": [
+   "Atos 13:2–3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 13:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 13:1",
+   "text": "Na igreja que estava em Antioquia, havia profetas e mestres: Barnabé, Simeão, por sobrenome Níger, Lúcio de Cirene, Manaém, colaço de Herodes, o tetrarca, e Saulo."
+  },
+  {
+   "ref": "Atos 13:2",
+   "text": "Enquanto serviam ao Senhor e jejuavam, o Espírito Santo falou: \"Separem-me, agora, Barnabé e Saulo, para a obra a que os tenho chamado.\""
+  },
+  {
+   "ref": "Atos 13:3",
+   "text": "Então, jejuando e orando, impuseram as mãos sobre eles e os despediram."
+  },
+  {
+   "ref": "Atos 13:4",
+   "text": "Eles, então, enviados pelo Espírito Santo, desceram a Selêucia e dali navegaram para Chipre."
+  },
+  {
+   "ref": "Atos 13:5",
+   "text": "Chegando a Salamina, proclamavam a palavra de Deus nas sinagogas judaicas; e tinham também João como colaborador."
+  },
+  {
+   "ref": "Atos 13:6",
+   "text": "E, tendo atravessado toda a ilha até Pafos, encontraram certo judeu, mágico, falso profeta, chamado Barjesus."
+  }
+ ]
+}
+</cena>

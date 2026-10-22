@@ -1,0 +1,202 @@
+Escreva a cena "neemias-renovacao-01-leitura-da-lei" da trilha "neemias" (Neemias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "neemias",
+  "title": "Neemias",
+  "description": "Muros, oração e renovação da aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Renovação",
+ "mission": {
+  "slug": "neemias-renovacao-01-leitura-da-lei",
+  "title": "Leitura da Lei",
+  "type": "lesson",
+  "intro": "O povo chora e depois celebra.",
+  "hookRef": "Neemias 8–10",
+  "hookNote": "O povo chora e depois celebra.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre leitura?"
+ },
+ "v2": {
+  "passageRef": "Neemias 8–10",
+  "context": "O povo chora e depois celebra.",
+  "keyword": "Leitura",
+  "verseRefs": [
+   "Neemias 8:8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Neemias 8:1–18",
+  "Neemias 9:1–38",
+  "Neemias 10:1–39",
+  "Neemias 8:8"
+ ],
+ "verses": [
+  {
+   "ref": "Neemias 8:1",
+   "text": "E, quando chegou o sétimo mês, e os filhos de Israel estavam em suas cidades, todo o povo se ajuntou como um só homem na praça, diante da Porta das Águas, e disseram a Esdras, o escriba, que trouxesse o Livro da Lei de Moisés, que o SENHOR tinha prescrito a Israel."
+  },
+  {
+   "ref": "Neemias 8:2",
+   "text": "E Esdras, o sacerdote, trouxe a Lei diante da congregação, tanto de homens como de mulheres, e de todos os que eram capazes de entender o que ouviam, no primeiro dia do sétimo mês."
+  },
+  {
+   "ref": "Neemias 8:3",
+   "text": "E leu no livro, diante da praça que está em frente à Porta das Águas, desde a alva até ao meio-dia, perante homens e mulheres e todos os que podiam entender; e os ouvidos de todo o povo estavam atentos ao Livro da Lei."
+  },
+  {
+   "ref": "Neemias 8:4",
+   "text": "Esdras, o escriba, estava sobre um púlpito de madeira, que havia sido construído para esse propósito; à sua direita estavam Matitias, Sema, Ananias, Urias, Hilquias e Maaseias; e à sua esquerda, Pedaias, Misael, Malquias, Hasum, Hasbadana, Zacarias e Mesulão."
+  },
+  {
+   "ref": "Neemias 8:5",
+   "text": "E Esdras abriu o livro à vista de todo o povo, pois estava em um lugar elevado; ao abri-lo, todo o povo se levantou"
+  },
+  {
+   "ref": "Neemias 8:6",
+   "text": "E Esdras bendisse ao Senhor, o grande Deus. E todo o povo respondeu: Amém! Amém! levantando as mãos, inclinando-se, adoraram ao Senhor com o rosto em terra."
+  },
+  {
+   "ref": "Neemias 8:7",
+   "text": "E Jesua, Bani, Serebias, Jamim, Acube, Sabetai, Hodias, Maaséias, Quelita, Azarias, Jozabade, Hanã, Pelaías e os levitas ensinavam o povo na Lei; e o povo estava no seu lugar."
+  },
+  {
+   "ref": "Neemias 8:8",
+   "text": "E leram no Livro, na Lei de Deus; e, dando explicações e declarações, faziam com que todos compreendessem o que estava sendo lido."
+  },
+  {
+   "ref": "Neemias 8:9",
+   "text": "E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que ensinavam todo o povo disseram: \"Este dia é consagrado ao Senhor, vosso Deus; pelo que não se entristeçam nem chorem, pois todo o povo chorava, ao ouvir as palavras da Lei.\""
+  },
+  {
+   "ref": "Neemias 8:10",
+   "text": "Disse-lhes ainda: Vão, comam carnes gordas e bebam bebidas doces, e enviem porções àqueles que não têm nada preparado; porque este dia é consagrado ao nosso Senhor. Portanto, não se entristeçam, pois a alegria do Senhor é a sua força."
+  },
+  {
+   "ref": "Neemias 8:11",
+   "text": "E os levitas silenciaram o povo, dizendo: Acalmem-se, porque este dia é santo; não se deixem entristecer."
+  },
+  {
+   "ref": "Neemias 8:12",
+   "text": "Então, todo o povo foi comer, beber, enviar porções e regozijar-se grandemente, porque haviam entendido as palavras que lhes foram explicadas."
+  },
+  {
+   "ref": "Neemias 8:13",
+   "text": "E no dia seguinte, os cabeças das famílias de todo o povo, os sacerdotes e os levitas se reuniram com Esdras, o escriba, para prestarem atenção às palavras da Lei."
+  },
+  {
+   "ref": "Neemias 8:14",
+   "text": "E encontraram escrito na Lei que o Senhor ordenara por meio de Moisés que os filhos de Israel habitassem em cabanas durante a festa do sétimo mês."
+  },
+  {
+   "ref": "Neemias 8:15",
+   "text": "E publicaram isso e fizeram passar um pregão por todas as suas cidades e em Jerusalém, dizendo: \"Saí ao monte e trazei ramos de oliveiras, ramos de zambujeiros, ramos de murtas, ramos de palmeiras e ramos de árvores frondosas, para fazer cabanas, como está escrito.\""
+  },
+  {
+   "ref": "Neemias 8:16",
+   "text": "Então, o povo saiu, trouxe os ramos e fez para si cabanas, cada um em seu terraço, nos seus pátios, nos átrios da Casa de Deus, na praça da Porta das Águas e na praça da Porta de Efraim."
+  },
+  {
+   "ref": "Neemias 8:17",
+   "text": "E toda a congregação dos que tinham voltado do cativeiro fez cabanas e habitou nelas, pois nunca tinham feito isso os filhos de Israel, desde os dias de Josué, filho de Num, até aquele dia; e houve uma mui grande alegria."
+  },
+  {
+   "ref": "Neemias 8:18",
+   "text": "E, dia após dia, Esdras leu no Livro da Lei de Deus, desde o primeiro até o último dia; e celebraram a festa por sete dias; no oitavo dia, houve uma assembleia solene, segundo o prescrito."
+  },
+  {
+   "ref": "Neemias 9:1",
+   "text": "E no dia vinte e quatro deste mês, os filhos de Israel se reuniram em jejum, vestindo pano de saco e trazendo terra sobre si."
+  },
+  {
+   "ref": "Neemias 9:2",
+   "text": "E a linhagem de Israel se separou de todos os estrangeiros, e, pondo-se em pé, confessaram os seus pecados e as iniquidades de seus pais."
+  },
+  {
+   "ref": "Neemias 9:3",
+   "text": "Levantando-se em seu lugar, leram no Livro da Lei do SENHOR, seu Deus, por uma quarta parte do dia; e na outra quarta parte confessaram e adoraram ao SENHOR, seu Deus."
+  },
+  {
+   "ref": "Neemias 9:4",
+   "text": "E Jesua, Bani, Cadmiel, Sebanias, Buni, Serebias, Bani e Quenani se puseram em pé no estrado dos levitas e clamaram em alta voz ao SENHOR, seu Deus."
+  },
+  {
+   "ref": "Neemias 9:5",
+   "text": "E os levitas, Jesua, Cadmiel, Bani, Hasabneias, Serebias, Hodias, Sebanias e Petaías disseram: \"Levantem-se e bendigam ao SENHOR, seu Deus, de eternidade a eternidade; e que o nome da sua glória seja exaltado acima de toda bênção e louvor.\""
+  },
+  {
+   "ref": "Neemias 9:6",
+   "text": "Somente Tu és SENHOR; Tu fizeste os céus, os céus dos céus e todo o seu exército; a terra e tudo o que nela há; os mares e tudo o que neles há, e Tu preservas a todos com vida; e o exército dos céus Te adora."
+  },
+  {
+   "ref": "Neemias 9:7",
+   "text": "Tu és, SENHOR, o Deus que escolheste Abrão, que o tiraste de Ur dos caldeus e lhe puseste o nome de Abraão."
+  },
+  {
+   "ref": "Neemias 9:8",
+   "text": "E encontraste o coração dele fiel diante de Ti, e com ele fizeste uma aliança, concedendo-lhe a terra dos cananeus, dos heteus, dos amorreus, dos ferezeus, dos jebuseus e dos girgaseus, a fim de a dar à sua descendência; e cumpriste as Tuas promessas, pois és justo."
+  },
+  {
+   "ref": "Neemias 9:9",
+   "text": "E viste a aflição de nossos pais no Egito e ouviste o seu clamor perto do Mar Vermelho."
+  },
+  {
+   "ref": "Neemias 9:10",
+   "text": "Fizeste sinais e milagres contra Faraó, contra todos os seus servos e contra todo o povo da sua terra, porque soubeste que os trataram com soberba; e assim adquiriste renome, como se vê hoje."
+  },
+  {
+   "ref": "Neemias 9:11",
+   "text": "E dividiste o mar diante deles, de modo que atravessaram em seco; e lançaste os seus perseguidores nas profundezas, como uma pedra nas águas impetuosas."
+  },
+  {
+   "ref": "Neemias 9:12",
+   "text": "E os guiaste durante o dia por uma coluna de nuvem e à noite por uma coluna de fogo, para alumiar o caminho por onde deveriam seguir."
+  },
+  {
+   "ref": "Neemias 9:13",
+   "text": "Desceste sobre o monte Sinai; do céu falaste com eles e lhes deste juízos retos, leis verdadeiras, estatutos e mandamentos bons."
+  },
+  {
+   "ref": "Neemias 9:14",
+   "text": "E o teu santo sábado lhes fizeste conhecer; preceitos, estatutos e a lei, por intermédio de Moisés, teu servo, lhes mandaste."
+  },
+  {
+   "ref": "Neemias 9:15",
+   "text": "E lhes deste pão dos céus na sua fome e água da rocha na sua sede; e lhes disseste que entrassem para possuírem a terra que, com mão levantada, lhes juraste dar."
+  },
+  {
+   "ref": "Neemias 9:16",
+   "text": "No entanto, eles, nossos pais, se mostraram soberbos, endureceram a sua cerviz e não ouviram os teus mandamentos."
+  },
+  {
+   "ref": "Neemias 9:17",
+   "text": "Recusaram ouvir-te e não se lembraram das tuas maravilhas que lhes fizeste; endureceram a sua cerviz e, na sua rebelião, levantaram um chefe para voltarem à sua servidão. Contudo, tu, ó Deus perdoador, clemente e misericordioso, tardio em irar-te e grande em bondade, não os desamparaste,"
+  },
+  {
+   "ref": "Neemias 9:18",
+   "text": "Mas mesmo quando fizeram para si um bezerro de fundição e disseram: \"Este é o teu Deus, que te tirou do Egito\", cometeram grandes blasfêmias."
+  },
+  {
+   "ref": "Neemias 9:19",
+   "text": "Contudo, pela grandeza das Tuas misericórdias, não os deixaste no deserto: a coluna de nuvem nunca se afastou deles durante o dia, para guiá-los pelo caminho, nem a coluna de fogo à noite, para lhes alumiar e mostrar o caminho que deviam seguir."
+  },
+  {
+   "ref": "Neemias 9:20",
+   "text": "E lhes concedeste o teu bom Espírito, para ensiná-los; não retiraste o maná de sua boca; e lhes deste água na sua sede."
+  },
+  {
+   "ref": "Neemias 9:21",
+   "text": "Assim, os sustentaste por quarenta anos no deserto, e nada lhes faltou; as suas vestes não envelheceram e os seus pés não se incharam."
+  },
+  {
+   "ref": "Neemias 9:22",
+   "text": "Também lhes deste reinos e povos, que lhes repartiste em porções; assim, eles possuíram a terra de Seom, isto é, a terra do rei de Hesbom e a terra de Ogue, rei de Basã."
+  }
+ ]
+}
+</cena>

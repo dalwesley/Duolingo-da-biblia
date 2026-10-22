@@ -1,0 +1,4069 @@
+[
+  {
+    "id": "lucas-sem-lc-01-salvador-humilde-01",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 2:11, o anjo anuncia que nasceu o Salvador na cidade de Davi.",
+    "prompt": "Em Lucas 2:11, o anjo anuncia que nasceu o Salvador na cidade de Davi.",
+    "cue": "Em Lucas 2:11, o anjo anuncia que nasceu o Salvador na cidade de Davi.",
+    "verseRef": "Lucas 2:11",
+    "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "na cidade de Davi, nasceu para vocês o Salvador",
+    "feedbackCorrect": "O anjo liga o nascimento à cidade de Davi e ao nome Salvador.",
+    "feedbackWrong": {
+      "false": "Veja o fim de Lucas 2:9, quando os pastores ficaram com grande temor."
+    },
+    "hint": "Olhe quem nasceu e onde, segundo o anjo.",
+    "learningObjective": "Observar o anúncio do nascimento do Salvador.",
+    "evidence": [
+      "Lucas 2:11"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-01-salvador-humilde-02",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 2:10, toque o que o anjo traz aos pastores.",
+    "prompt": "Em Lucas 2:10, toque o que o anjo traz aos pastores.",
+    "cue": "Em Lucas 2:10, toque o que o anjo traz aos pastores.",
+    "verseRef": "Lucas 2:10",
+    "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande alegria"
+      },
+      {
+        "id": "b",
+        "text": "todo o povo"
+      },
+      {
+        "id": "c",
+        "text": "boas novas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aqui trago boas novas de grande alegria",
+    "feedbackCorrect": "O anjo não traz ameaça, mas boas novas de grande alegria.",
+    "feedbackWrong": {
+      "a": "Isso descreve o tamanho da alegria, não o que ele traz.",
+      "b": "Isso diz para quem é a notícia, não o que ele traz."
+    },
+    "hint": "Veja o que o anjo diz que traz.",
+    "learningObjective": "Observar o conteúdo do anúncio aos pastores.",
+    "evidence": [
+      "Lucas 2:10"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-01-salvador-humilde-03",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 2:7, onde o menino foi deitado após nascer?",
+    "prompt": "Segundo Lucas 2:7, onde o menino foi deitado após nascer?",
+    "cue": "Segundo Lucas 2:7, onde o menino foi deitado após nascer?",
+    "verseRef": "Lucas 2:7",
+    "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em uma manjedoura"
+      },
+      {
+        "id": "b",
+        "text": "Nos campos com os pastores"
+      },
+      {
+        "id": "c",
+        "text": "Em um berço na hospedaria"
+      },
+      {
+        "id": "d",
+        "text": "Em uma casa na cidade de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o deitou em uma manjedoura",
+    "feedbackCorrect": "Sem lugar na hospedaria, o menino é deitado em uma manjedoura.",
+    "feedbackWrong": {
+      "b": "Os pastores estavam nos campos, mas o menino não foi levado para lá.",
+      "c": "Não havia lugar para eles na hospedaria.",
+      "d": "O texto fala da manjedoura, não de uma casa."
+    },
+    "hint": "Leia o motivo dado no fim do versículo.",
+    "learningObjective": "Observar o lugar simples do nascimento.",
+    "evidence": [
+      "Lucas 2:7"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-01-salvador-humilde-04",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 2:9 na ordem do texto.",
+    "prompt": "Monte Lucas 2:9 na ordem do texto.",
+    "cue": "Monte Lucas 2:9 na ordem do texto.",
+    "verseRef": "Lucas 2:9",
+    "passageText": "E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E um anjo do Senhor desceu aonde eles estavam"
+      },
+      {
+        "id": "b",
+        "text": "a glória do Senhor os envolveu em luz"
+      },
+      {
+        "id": "c",
+        "text": "ficaram tomados de grande temor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E um anjo do Senhor desceu aonde eles estavam",
+    "feedbackCorrect": "Primeiro o anjo chega, depois a luz envolve e o temor aparece.",
+    "feedbackWrong": {
+      "default": "Comece por quem desceu até os pastores."
+    },
+    "hint": "Comece por quem desceu até os pastores.",
+    "learningObjective": "Reconhecer a sequência do aparecimento do anjo.",
+    "evidence": [
+      "Lucas 2:9"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-01-salvador-humilde-05",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 2:8, quem estava nos campos cuidando dos rebanhos?",
+    "prompt": "Em Lucas 2:8, quem estava nos campos cuidando dos rebanhos?",
+    "cue": "Em Lucas 2:8, quem estava nos campos cuidando dos rebanhos?",
+    "verseRef": "Lucas 2:8",
+    "passageText": "Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite.",
+    "template": "Naquela região, havia ___ que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pastores"
+      },
+      {
+        "id": "b",
+        "text": "viajantes"
+      },
+      {
+        "id": "c",
+        "text": "soldados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "havia pastores que estavam nos campos",
+    "feedbackCorrect": "Eram trabalhadores do campo, em vigília durante a noite.",
+    "feedbackWrong": {
+      "b": "O texto nomeia quem cuidava dos rebanhos naquela região.",
+      "c": "Não são guardas, mas quem cuidava dos rebanhos."
+    },
+    "hint": "Quem trabalhava à noite naquela região?",
+    "learningObjective": "Lembrar quem recebeu primeiro a notícia.",
+    "evidence": [
+      "Lucas 2:8"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-01-salvador-humilde-06",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 2:11 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 2:11 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 2:11 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 2:11",
+    "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "passageA": {
+      "ref": "Lucas 2:11",
+      "text": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus manda a maior notícia primeiro a trabalhadores simples do campo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Notícia guardada em segredo"
+      },
+      {
+        "id": "b",
+        "text": "Boas novas para todo povo"
+      },
+      {
+        "id": "c",
+        "text": "Salvação só para importantes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nasceu para vocês o Salvador",
+    "feedbackCorrect": "A alegria anunciada não é de poucos, mas para todo o povo.",
+    "feedbackWrong": {
+      "a": "Os pastores ouvem abertamente e o sinal é dado a eles.",
+      "c": "O anjo fala de alegria para todo o povo."
+    },
+    "hint": "Veja para quem o anjo diz que a alegria será.",
+    "learningObjective": "Ligar o nascimento à alegria para todo o povo.",
+    "evidence": [
+      "Lucas 2:11"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-01-salvador-humilde-01",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 2:8-9, os pastores recebem o anjo sem medo porque já esperavam a notícia.",
+    "prompt": "Em Lucas 2:8-9, os pastores recebem o anjo sem medo porque já esperavam a notícia.",
+    "cue": "Em Lucas 2:8-9, os pastores recebem o anjo sem medo porque já esperavam a notícia.",
+    "verseRef": "Lucas 2:8–9",
+    "passageText": "Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ficaram tomados de grande temor",
+    "feedbackCorrect": "Ao ver o anjo e a glória, eles ficam tomados de grande temor.",
+    "feedbackWrong": {
+      "true": "Releia a reação deles em Lucas 2:9, diante da luz e do anjo."
+    },
+    "hint": "Veja a reação dos pastores à aparição.",
+    "learningObjective": "Compreender a reação inicial dos pastores.",
+    "evidence": [
+      "Lucas 2:8–9"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-01-salvador-humilde-02",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+    "prompt": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+    "cue": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+    "verseRef": "Lucas 2:7",
+    "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "manjedoura"
+      },
+      {
+        "id": "b",
+        "text": "porque"
+      },
+      {
+        "id": "c",
+        "text": "hospedaria"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque não havia lugar para eles na hospedaria",
+    "feedbackCorrect": "Essa palavra abre o motivo de não haver lugar na hospedaria.",
+    "feedbackWrong": {
+      "a": "Isso é o lugar onde ele foi deitado, não o motivo.",
+      "c": "Isso é o lugar que estava sem vaga, não a palavra do motivo."
+    },
+    "hint": "Procure a palavra que dá o motivo no fim.",
+    "learningObjective": "Reconhecer a palavra que marca a causa no texto.",
+    "evidence": [
+      "Lucas 2:7"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-01-salvador-humilde-03",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 2:10 se relaciona com o temor de Lucas 2:9?",
+    "prompt": "Como Lucas 2:10 se relaciona com o temor de Lucas 2:9?",
+    "cue": "Como Lucas 2:10 se relaciona com o temor de Lucas 2:9?",
+    "verseRef": "Lucas 2:9–10",
+    "passageText": "E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "O temor prova que a notícia era só para eles"
+      },
+      {
+        "id": "b",
+        "text": "A luz afasta os pastores antes da mensagem"
+      },
+      {
+        "id": "c",
+        "text": "A alegria apaga a glória que eles viram"
+      },
+      {
+        "id": "d",
+        "text": "Ao grande temor, o anjo responde com alegria"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "ficaram tomados de grande temor",
+    "feedbackCorrect": "O anjo responde ao medo com o convite a não temer e com alegria.",
+    "feedbackWrong": {
+      "a": "A notícia é para todo o povo, não só para eles.",
+      "b": "Os pastores permanecem e ouvem o anúncio até o fim.",
+      "c": "A glória continua e leva ao louvor dos céus."
+    },
+    "hint": "Compare o sentimento de 2:9 com a primeira fala de 2:10.",
+    "learningObjective": "Relacionar o temor dos pastores à resposta do anjo.",
+    "evidence": [
+      "Lucas 2:9–10"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-01-salvador-humilde-04",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o anúncio em Lucas 2:10-11?",
+    "prompt": "Como avança o anúncio em Lucas 2:10-11?",
+    "cue": "Como avança o anúncio em Lucas 2:10-11?",
+    "verseRef": "Lucas 2:10–11",
+    "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O anjo pede que não tenham medo"
+      },
+      {
+        "id": "b",
+        "text": "Ele anuncia boas novas de alegria"
+      },
+      {
+        "id": "c",
+        "text": "O Salvador nasceu na cidade de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não tenham medo",
+    "feedbackCorrect": "Primeiro o medo é tratado, depois a notícia e o nascimento são anunciados.",
+    "feedbackWrong": {
+      "default": "Comece pela primeira fala do anjo."
+    },
+    "hint": "Comece pela primeira fala do anjo.",
+    "learningObjective": "Compreender o movimento do anúncio do anjo.",
+    "evidence": [
+      "Lucas 2:10–11"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-01-salvador-humilde-05",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+    "prompt": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+    "cue": "Em Lucas 2:13, o que a multidão da milícia celestial fez junto ao anjo?",
+    "verseRef": "Lucas 2:13",
+    "passageText": "E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:",
+    "template": "E, naquele momento, ___ com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "dizendo"
+      },
+      {
+        "id": "b",
+        "text": "apareceu"
+      },
+      {
+        "id": "c",
+        "text": "louvando"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "apareceu com o anjo uma multidão da milícia celestial",
+    "feedbackCorrect": "De repente, uma multidão aparece com o anjo louvando a Deus.",
+    "feedbackWrong": {
+      "a": "Isso introduz as palavras do louvor, não a chegada dela.",
+      "c": "Isso descreve o que a multidão faz depois de aparecer."
+    },
+    "hint": "Veja o verbo que abre a cena do louvor.",
+    "learningObjective": "Compreender a entrada da multidão celestial.",
+    "evidence": [
+      "Lucas 2:13"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-01-salvador-humilde-06",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 2:11 a Mateus 1:21?",
+    "prompt": "O que liga Lucas 2:11 a Mateus 1:21?",
+    "cue": "O que liga Lucas 2:11 a Mateus 1:21?",
+    "verseRef": "Lucas 2:11",
+    "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "passageA": {
+      "ref": "Lucas 2:11",
+      "text": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor."
+    },
+    "passageB": {
+      "ref": "Mateus 1:21",
+      "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus vem para salvar"
+      },
+      {
+        "id": "b",
+        "text": "Um menino comum em Belém"
+      },
+      {
+        "id": "c",
+        "text": "Pastores viram um sinal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nasceu para vocês o Salvador",
+    "feedbackCorrect": "Nos dois textos, o menino que nasce vem para salvar o povo.",
+    "feedbackWrong": {
+      "b": "Mateus dá ao nome Jesus o sentido de salvar dos pecados.",
+      "c": "O sinal aos pastores confirma, mas a ponte é a salvação."
+    },
+    "hint": "Veja o sentido do nome dado em Mateus.",
+    "learningObjective": "Relacionar o Salvador de Lucas à missão de Jesus.",
+    "evidence": [
+      "Lucas 2:11",
+      "Mateus 1:21"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-01-salvador-humilde-01",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 2:10 apresenta a salvação como alegria para todo o povo.",
+    "prompt": "Lucas 2:10 apresenta a salvação como alegria para todo o povo.",
+    "cue": "Lucas 2:10 apresenta a salvação como alegria para todo o povo.",
+    "verseRef": "Lucas 2:10",
+    "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "que serão para todo o povo",
+    "feedbackCorrect": "O anjo diz que as boas novas serão para todo o povo.",
+    "feedbackWrong": {
+      "false": "Releia para quem as boas novas de grande alegria serão."
+    },
+    "hint": "Veja o alcance das boas novas no versículo.",
+    "learningObjective": "Interpretar o alcance universal do anúncio.",
+    "evidence": [
+      "Lucas 2:10"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-01-salvador-humilde-02",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 2:14, toque o que o louvor atribui a Deus nas alturas.",
+    "prompt": "Em Lucas 2:14, toque o que o louvor atribui a Deus nas alturas.",
+    "cue": "Em Lucas 2:14, toque o que o louvor atribui a Deus nas alturas.",
+    "verseRef": "Lucas 2:14",
+    "passageText": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Glória a Deus nas maiores alturas",
+    "feedbackCorrect": "O louvor começa atribuindo glória a Deus nas maiores alturas.",
+    "feedbackWrong": {
+      "b": "A paz é anunciada para a terra, não atribuída nas alturas.",
+      "c": "A terra recebe a paz, não é o que se atribui a Deus."
+    },
+    "hint": "Veja a primeira palavra do louvor.",
+    "learningObjective": "Sustentar com o texto o louvor a Deus.",
+    "evidence": [
+      "Lucas 2:14"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-01-salvador-humilde-03",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 2:10-11 sustenta sobre a chegada do Salvador?",
+    "prompt": "Que leitura Lucas 2:10-11 sustenta sobre a chegada do Salvador?",
+    "cue": "Que leitura Lucas 2:10-11 sustenta sobre a chegada do Salvador?",
+    "verseRef": "Lucas 2:10–11",
+    "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus traz salvação alcançando gente simples"
+      },
+      {
+        "id": "b",
+        "text": "O anúncio aos pastores foi mero acaso"
+      },
+      {
+        "id": "c",
+        "text": "A humildade indica ausência de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Salvação é só para quem tem prestígio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nasceu para vocês o Salvador",
+    "feedbackCorrect": "Anunciado a pastores e para todo o povo, o Salvador alcança gente simples.",
+    "feedbackWrong": {
+      "b": "O texto dá propósito ao anúncio e ao sinal aos pastores.",
+      "c": "Os céus louvam nesse nascimento, sinal da presença de Deus.",
+      "d": "O anúncio a pastores mostra o contrário do prestígio como porta."
+    },
+    "hint": "Compare quem ouve com o alcance dito pelo anjo.",
+    "learningObjective": "Escolher a interpretação sustentada pelo anúncio.",
+    "evidence": [
+      "Lucas 2:10–11"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-01-salvador-humilde-04",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do anúncio em Lucas 2?",
+    "prompt": "Qual sequência revela o sentido do anúncio em Lucas 2?",
+    "cue": "Qual sequência revela o sentido do anúncio em Lucas 2?",
+    "verseRef": "Lucas 2:14",
+    "passageText": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus anuncia boas novas aos humildes"
+      },
+      {
+        "id": "b",
+        "text": "O Salvador nasce para todo o povo"
+      },
+      {
+        "id": "c",
+        "text": "Céus louvam e falam de paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Glória a Deus nas maiores alturas",
+    "feedbackCorrect": "A notícia aos simples revela o Salvador e termina em louvor e paz.",
+    "feedbackWrong": {
+      "default": "Comece por quem recebe a notícia no campo."
+    },
+    "hint": "Comece por quem recebe a notícia no campo.",
+    "learningObjective": "Ver o caminho do anúncio até o louvor.",
+    "evidence": [
+      "Lucas 2:14"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-01-salvador-humilde-05",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 2:11, que nome mostra o que o menino veio fazer pelo povo?",
+    "prompt": "Em Lucas 2:11, que nome mostra o que o menino veio fazer pelo povo?",
+    "cue": "Em Lucas 2:11, que nome mostra o que o menino veio fazer pelo povo?",
+    "verseRef": "Lucas 2:11",
+    "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "template": "Hoje, na cidade de Davi, nasceu para vocês o ___, que é Cristo, o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Salvador"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nasceu para vocês o Salvador",
+    "feedbackCorrect": "O nome Salvador resume a missão do menino que nasceu.",
+    "feedbackWrong": {
+      "a": "Cristo é título do enviado, mas a ação de salvar está no outro nome.",
+      "b": "Senhor mostra autoridade, mas o nome da missão vem antes."
+    },
+    "hint": "É o nome ligado ao que ele veio fazer pelo povo.",
+    "learningObjective": "Lembrar o termo central do anúncio.",
+    "evidence": [
+      "Lucas 2:11"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-01-salvador-humilde-06",
+    "trail": "lucas",
+    "section": "lc-01-salvador-humilde",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 2:14 a Isaías 9:6?",
+    "prompt": "O que liga Lucas 2:14 a Isaías 9:6?",
+    "cue": "O que liga Lucas 2:14 a Isaías 9:6?",
+    "verseRef": "Lucas 2:14",
+    "passageText": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem.",
+    "passageA": {
+      "ref": "Lucas 2:14",
+      "text": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem."
+    },
+    "passageB": {
+      "ref": "Isaías 9:6",
+      "text": "Porque um menino nos nasceu, um filho se nos deu; e o governo está sobre os seus ombros; e seu nome será: Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz sem um governante"
+      },
+      {
+        "id": "b",
+        "text": "Paz trazida pelo menino"
+      },
+      {
+        "id": "c",
+        "text": "Glória só dos anjos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "paz na terra",
+    "feedbackCorrect": "Isaías anuncia um menino governante, e Lucas fala de paz na terra.",
+    "feedbackWrong": {
+      "a": "Isaías liga a paz ao governo do menino que nasce.",
+      "c": "O louvor é a Deus, e a paz chega à terra pelo menino."
+    },
+    "hint": "Veja quem Isaías diz que nasce e governa.",
+    "learningObjective": "Ligar a paz de Lucas à promessa de Isaías.",
+    "evidence": [
+      "Lucas 2:14",
+      "Isaías 9:6"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-02-misericordia-01",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 15:4, o homem que perde uma ovelha espera em casa até que ela volte sozinha.",
+    "prompt": "Em Lucas 15:4, o homem que perde uma ovelha espera em casa até que ela volte sozinha.",
+    "cue": "Em Lucas 15:4, o homem que perde uma ovelha espera em casa até que ela volte sozinha.",
+    "verseRef": "Lucas 15:4",
+    "passageText": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "vai em busca daquela que se perdeu",
+    "feedbackCorrect": "Ele deixa as noventa e nove e vai em busca da que se perdeu.",
+    "feedbackWrong": {
+      "true": "Ele fica em casa esperando a ovelha voltar por conta própria."
+    },
+    "hint": "Veja o que ele faz depois de perder uma ovelha.",
+    "learningObjective": "Observar a busca ativa por quem se perdeu.",
+    "evidence": [
+      "Lucas 15:4"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-02-misericordia-02",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 15:5, toque onde o homem coloca a ovelha ao encontrá-la.",
+    "prompt": "Em Lucas 15:5, toque onde o homem coloca a ovelha ao encontrá-la.",
+    "cue": "Em Lucas 15:5, toque onde o homem coloca a ovelha ao encontrá-la.",
+    "verseRef": "Lucas 15:5",
+    "passageText": "E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobre os ombros"
+      },
+      {
+        "id": "b",
+        "text": "ao encontrá-la"
+      },
+      {
+        "id": "c",
+        "text": "transbordando de júbilo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a coloca sobre os ombros",
+    "feedbackCorrect": "Achada, a ovelha é carregada sobre os ombros com júbilo.",
+    "feedbackWrong": {
+      "b": "Isso marca o momento do achado, não onde ela é colocada.",
+      "c": "Isso descreve a alegria dele, não o lugar da ovelha."
+    },
+    "hint": "Veja o que ele faz logo ao achá-la.",
+    "learningObjective": "Observar como o perdido é tratado ao ser achado.",
+    "evidence": [
+      "Lucas 15:5"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-02-misericordia-03",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 15:8, o que a mulher faz quando perde uma dracma?",
+    "prompt": "Segundo Lucas 15:8, o que a mulher faz quando perde uma dracma?",
+    "cue": "Segundo Lucas 15:8, o que a mulher faz quando perde uma dracma?",
+    "verseRef": "Lucas 15:8",
+    "passageText": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acende a candeia e procura com empenho"
+      },
+      {
+        "id": "b",
+        "text": "Pede que as vizinhas varram a casa"
+      },
+      {
+        "id": "c",
+        "text": "Compra outra dracma no mercado"
+      },
+      {
+        "id": "d",
+        "text": "Espera alguém devolver a moeda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "acende a candeia, varre a casa",
+    "feedbackCorrect": "Ela ilumina, varre e procura com empenho até encontrar.",
+    "feedbackWrong": {
+      "b": "As vizinhas são chamadas só depois, para celebrar.",
+      "c": "O texto não fala de compra, mas de busca em casa.",
+      "d": "Ela mesma procura até encontrar, sem esperar devolução."
+    },
+    "hint": "Leia as três ações dela no versículo.",
+    "learningObjective": "Observar o empenho da busca pela dracma.",
+    "evidence": [
+      "Lucas 15:8"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-02-misericordia-04",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 15:4 na ordem do texto.",
+    "prompt": "Monte Lucas 15:4 na ordem do texto.",
+    "cue": "Monte Lucas 15:4 na ordem do texto.",
+    "verseRef": "Lucas 15:4",
+    "passageText": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Qual de vós, que possui cem ovelhas e perde uma delas"
+      },
+      {
+        "id": "b",
+        "text": "não deixa as noventa e nove e vai em busca daquela que se perdeu"
+      },
+      {
+        "id": "c",
+        "text": "até encontrá-la"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Qual de vós, que possui cem ovelhas e perde uma delas",
+    "feedbackCorrect": "Ele tem cem, perde uma, busca as outras deixando e procura até achar.",
+    "feedbackWrong": {
+      "default": "Comece pelo dono das cem ovelhas."
+    },
+    "hint": "Comece pelo dono das cem ovelhas.",
+    "learningObjective": "Reconhecer a sequência da parábola da ovelha.",
+    "evidence": [
+      "Lucas 15:4"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-02-misericordia-05",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 15:9, o que a mulher diz que já achou?",
+    "prompt": "Em Lucas 15:9, o que a mulher diz que já achou?",
+    "cue": "Em Lucas 15:9, o que a mulher diz que já achou?",
+    "verseRef": "Lucas 15:9",
+    "passageText": "E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a dracma que tinha perdido.",
+    "template": "E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a ___ que tinha perdido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chave"
+      },
+      {
+        "id": "b",
+        "text": "dracma"
+      },
+      {
+        "id": "c",
+        "text": "moeda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu já achei a dracma que tinha perdido",
+    "feedbackCorrect": "Era uma das dez dracmas dela, procurada por toda a casa.",
+    "feedbackWrong": {
+      "a": "Ela não perdeu uma chave, mas parte do que tinha guardado.",
+      "c": "O nome usado por Jesus na história é outro, mais específico."
+    },
+    "hint": "Pense na segunda história da cena.",
+    "learningObjective": "Lembrar o objeto perdido da segunda história.",
+    "evidence": [
+      "Lucas 15:9"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-02-misericordia-06",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 15:6 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 15:6 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 15:6 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 15:6",
+    "passageText": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida.",
+    "passageA": {
+      "ref": "Lucas 15:6",
+      "text": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem perde algo de valor procura até achar e chama outros para celebrar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Busca feita em segredo"
+      },
+      {
+        "id": "b",
+        "text": "Perda sem qualquer valor"
+      },
+      {
+        "id": "c",
+        "text": "Alegria compartilhada ao encontrar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Alegrem-se comigo, porque já achei a minha ovelha perdida",
+    "feedbackCorrect": "O achado vira festa partilhada com amigos e vizinhos.",
+    "feedbackWrong": {
+      "a": "Ele reúne amigos e vizinhos para contar o achado.",
+      "b": "Ele procura justamente porque a ovelha tem valor para ele."
+    },
+    "hint": "Veja quem ele reúne ao chegar em casa.",
+    "learningObjective": "Ligar o achado à celebração partilhada.",
+    "evidence": [
+      "Lucas 15:6"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-02-misericordia-01",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 15:6-7, a alegria de quem acha a ovelha aponta para o júbilo no céu por um pecador que se arrepende.",
+    "prompt": "Em Lucas 15:6-7, a alegria de quem acha a ovelha aponta para o júbilo no céu por um pecador que se arrepende.",
+    "cue": "Em Lucas 15:6-7, a alegria de quem acha a ovelha aponta para o júbilo no céu por um pecador que se arrepende.",
+    "verseRef": "Lucas 15:6–7",
+    "passageText": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida. Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "haverá maior júbilo no céu",
+    "feedbackCorrect": "Jesus liga a festa da casa ao júbilo no céu pelo arrependido.",
+    "feedbackWrong": {
+      "false": "A festa termina na casa, sem qualquer eco no céu."
+    },
+    "hint": "Veja a aplicação que Jesus faz no versículo seguinte.",
+    "learningObjective": "Compreender a ligação entre achado e arrependimento.",
+    "evidence": [
+      "Lucas 15:6–7"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-02-misericordia-02",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 15:8, toque a palavra que mostra o empenho da busca da mulher.",
+    "prompt": "Em Lucas 15:8, toque a palavra que mostra o empenho da busca da mulher.",
+    "cue": "Em Lucas 15:8, toque a palavra que mostra o empenho da busca da mulher.",
+    "verseRef": "Lucas 15:8",
+    "passageText": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la?",
+    "options": [
+      {
+        "id": "a",
+        "text": "dez dracmas"
+      },
+      {
+        "id": "b",
+        "text": "diligentemente"
+      },
+      {
+        "id": "c",
+        "text": "candeia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a procura diligentemente até encontrá-la",
+    "feedbackCorrect": "Ela procura diligentemente, sem desistir até encontrar.",
+    "feedbackWrong": {
+      "a": "Isso diz quanto ela tinha, não como ela procura.",
+      "c": "A candeia é o instrumento da busca, não o modo de buscar."
+    },
+    "hint": "Procure o advérbio que descreve como ela procura.",
+    "learningObjective": "Reconhecer o empenho marcado no texto.",
+    "evidence": [
+      "Lucas 15:8"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-02-misericordia-03",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 15:5 se relaciona com Lucas 15:4?",
+    "prompt": "Como Lucas 15:5 se relaciona com Lucas 15:4?",
+    "cue": "Como Lucas 15:5 se relaciona com Lucas 15:4?",
+    "verseRef": "Lucas 15:4–5",
+    "passageText": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la? E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ovelha volta sozinha para o rebanho"
+      },
+      {
+        "id": "b",
+        "text": "A busca termina sem encontrar a ovelha"
+      },
+      {
+        "id": "c",
+        "text": "O dono desiste ao anoitecer no campo"
+      },
+      {
+        "id": "d",
+        "text": "Quem buscou carrega com alegria o que achou"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "a coloca sobre os ombros, transbordando de júbilo",
+    "feedbackCorrect": "A busca de 15:4 termina em encontro e cuidado em 15:5.",
+    "feedbackWrong": {
+      "a": "É ele quem vai buscar e carregar, não ela quem volta só.",
+      "b": "O texto diz que ele a encontra e a coloca nos ombros.",
+      "c": "Ele procura até encontrá-la, sem desistir."
+    },
+    "hint": "Veja o desfecho da busca iniciada no verso anterior.",
+    "learningObjective": "Relacionar busca e encontro na parábola.",
+    "evidence": [
+      "Lucas 15:4–5"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-02-misericordia-04",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a história em Lucas 15:8-9?",
+    "prompt": "Como avança a história em Lucas 15:8-9?",
+    "cue": "Como avança a história em Lucas 15:8-9?",
+    "verseRef": "Lucas 15:8–9",
+    "passageText": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la? E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a dracma que tinha perdido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma dracma se perde entre dez"
+      },
+      {
+        "id": "b",
+        "text": "A mulher procura por toda a casa"
+      },
+      {
+        "id": "c",
+        "text": "Amigas são chamadas para celebrar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "reúne as amigas e vizinhas",
+    "feedbackCorrect": "A perda gera busca empenhada, e o achado vira celebração.",
+    "feedbackWrong": {
+      "default": "Comece pelo que se perde dentro de casa."
+    },
+    "hint": "Comece pelo que se perde dentro de casa.",
+    "learningObjective": "Compreender o movimento da segunda história.",
+    "evidence": [
+      "Lucas 15:8–9"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-02-misericordia-05",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 15:7, por quem há maior júbilo no céu quando muda de rumo?",
+    "prompt": "Em Lucas 15:7, por quem há maior júbilo no céu quando muda de rumo?",
+    "cue": "Em Lucas 15:7, por quem há maior júbilo no céu quando muda de rumo?",
+    "verseRef": "Lucas 15:7",
+    "passageText": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "template": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se ___ do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "afasta"
+      },
+      {
+        "id": "b",
+        "text": "arrepende"
+      },
+      {
+        "id": "c",
+        "text": "esconde"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por causa de um pecador que se arrepende",
+    "feedbackCorrect": "O céu se alegra por um pecador que se arrepende.",
+    "feedbackWrong": {
+      "a": "Quem se afasta é o perdido antes do encontro, não o motivo da festa.",
+      "c": "O achado é celebrado abertamente, não escondido."
+    },
+    "hint": "Veja a condição ligada ao júbilo no céu.",
+    "learningObjective": "Compreender o arrependimento como motivo da alegria.",
+    "evidence": [
+      "Lucas 15:7"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-02-misericordia-06",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 15:4 a Ezequiel 34:11?",
+    "prompt": "O que liga Lucas 15:4 a Ezequiel 34:11?",
+    "cue": "O que liga Lucas 15:4 a Ezequiel 34:11?",
+    "verseRef": "Lucas 15:4",
+    "passageText": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la?",
+    "passageA": {
+      "ref": "Lucas 15:4",
+      "text": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la?"
+    },
+    "passageB": {
+      "ref": "Ezequiel 34:11",
+      "text": "Porque assim diz o Senhor Deus: Eis que eu mesmo buscarei as minhas ovelhas e as procurarei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus mesmo busca os perdidos"
+      },
+      {
+        "id": "b",
+        "text": "Perder-se não tem importância"
+      },
+      {
+        "id": "c",
+        "text": "Ovelhas cuidam de si mesmas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vai em busca daquela que se perdeu",
+    "feedbackCorrect": "Em Ezequiel, o próprio Senhor diz que buscará suas ovelhas.",
+    "feedbackWrong": {
+      "b": "A busca empenhada mostra o valor de quem se perdeu.",
+      "c": "Nos dois textos, as ovelhas precisam ser buscadas."
+    },
+    "hint": "Veja quem se põe a buscar nos dois textos.",
+    "learningObjective": "Relacionar a busca de Jesus à promessa de Ezequiel.",
+    "evidence": [
+      "Lucas 15:4",
+      "Ezequiel 34:11"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-02-misericordia-01",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 15:7 ensina que Deus se alegra mais com quem nunca erra do que com o pecador que se arrepende.",
+    "prompt": "Lucas 15:7 ensina que Deus se alegra mais com quem nunca erra do que com o pecador que se arrepende.",
+    "cue": "Lucas 15:7 ensina que Deus se alegra mais com quem nunca erra do que com o pecador que se arrepende.",
+    "verseRef": "Lucas 15:7",
+    "passageText": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "maior júbilo no céu por causa de um pecador que se arrepende",
+    "feedbackCorrect": "O texto afirma o contrário, com júbilo pelo arrependido.",
+    "feedbackWrong": {
+      "true": "É verdade, pois os justos são sempre o motivo maior da festa."
+    },
+    "hint": "Compare quem causa maior júbilo no céu.",
+    "learningObjective": "Interpretar corretamente a alegria pelo arrependido.",
+    "evidence": [
+      "Lucas 15:7"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-02-misericordia-02",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+    "prompt": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+    "cue": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+    "verseRef": "Lucas 15:10",
+    "passageText": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um pecador"
+      },
+      {
+        "id": "b",
+        "text": "diante dos anjos"
+      },
+      {
+        "id": "c",
+        "text": "da mesma maneira"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "há júbilo diante dos anjos de Deus",
+    "feedbackCorrect": "Jesus situa o júbilo diante dos anjos de Deus.",
+    "feedbackWrong": {
+      "a": "Isso é quem se arrepende, não o lugar da alegria.",
+      "c": "Isso liga as histórias, não diz onde há júbilo."
+    },
+    "hint": "Procure o lugar dessa alegria no fim da cena.",
+    "learningObjective": "Sustentar com o texto a alegria no céu.",
+    "evidence": [
+      "Lucas 15:10"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-02-misericordia-03",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 15:7 sustenta sobre Deus diante do pecador arrependido?",
+    "prompt": "Que leitura Lucas 15:7 sustenta sobre Deus diante do pecador arrependido?",
+    "cue": "Que leitura Lucas 15:7 sustenta sobre Deus diante do pecador arrependido?",
+    "verseRef": "Lucas 15:6–7",
+    "passageText": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida. Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus despreza os noventa e nove justos"
+      },
+      {
+        "id": "b",
+        "text": "Deus se alegra sem chamar ao arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Deus celebra a volta de quem se perdeu"
+      },
+      {
+        "id": "d",
+        "text": "Deus espera o perdido voltar sozinho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "haverá maior júbilo no céu",
+    "feedbackCorrect": "A alegria de Deus responde ao pecador que se arrepende e volta.",
+    "feedbackWrong": {
+      "a": "O texto celebra um sem desprezar os outros do rebanho.",
+      "b": "O júbilo é justamente por um pecador que se arrepende.",
+      "d": "As histórias mostram Deus buscando, não apenas esperando."
+    },
+    "hint": "Veja o motivo do júbilo afirmado por Jesus.",
+    "learningObjective": "Escolher a interpretação sustentada pelas parábolas.",
+    "evidence": [
+      "Lucas 15:6–7"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-02-misericordia-04",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido das buscas em Lucas 15?",
+    "prompt": "Qual sequência revela o sentido das buscas em Lucas 15?",
+    "cue": "Qual sequência revela o sentido das buscas em Lucas 15?",
+    "verseRef": "Lucas 15:6",
+    "passageText": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ovelha é procurada até ser achada"
+      },
+      {
+        "id": "b",
+        "text": "Há júbilo no céu pelo arrependido"
+      },
+      {
+        "id": "c",
+        "text": "Cristo veio ao mundo salvar pecadores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "já achei a minha ovelha perdida",
+    "feedbackCorrect": "Da busca na terra à alegria no céu, Cristo veio salvar pecadores.",
+    "feedbackWrong": {
+      "default": "Comece pela busca contada por Jesus."
+    },
+    "hint": "Comece pela busca contada por Jesus.",
+    "learningObjective": "Ver o fio da busca até a missão de Cristo.",
+    "evidence": [
+      "Lucas 15:6",
+      "Lucas 15:7",
+      "1 Timóteo 1:15"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-02-misericordia-05",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 15:10, o que há diante dos anjos de Deus por um pecador arrependido?",
+    "prompt": "Em Lucas 15:10, o que há diante dos anjos de Deus por um pecador arrependido?",
+    "cue": "Em Lucas 15:10, o que há diante dos anjos de Deus por um pecador arrependido?",
+    "verseRef": "Lucas 15:10",
+    "passageText": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende.",
+    "template": "Assim, lhes afirmo que, da mesma maneira, há ___ diante dos anjos de Deus por um pecador que se arrepende.",
+    "options": [
+      {
+        "id": "a",
+        "text": "silêncio"
+      },
+      {
+        "id": "b",
+        "text": "júbilo"
+      },
+      {
+        "id": "c",
+        "text": "temor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "há júbilo diante dos anjos de Deus",
+    "feedbackCorrect": "Diante dos anjos de Deus há júbilo pelo arrependido.",
+    "feedbackWrong": {
+      "a": "O texto fala de festa no céu, não de silêncio.",
+      "c": "O temor não é a reação descrita para esse momento."
+    },
+    "hint": "Veja a reação do céu nas duas histórias.",
+    "learningObjective": "Lembrar o termo da alegria celestial.",
+    "evidence": [
+      "Lucas 15:10"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-02-misericordia-06",
+    "trail": "lucas",
+    "section": "lc-02-misericordia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 15:10 a 1 Timóteo 1:15?",
+    "prompt": "O que liga Lucas 15:10 a 1 Timóteo 1:15?",
+    "cue": "O que liga Lucas 15:10 a 1 Timóteo 1:15?",
+    "verseRef": "Lucas 15:10",
+    "passageText": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende.",
+    "passageA": {
+      "ref": "Lucas 15:10",
+      "text": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende."
+    },
+    "passageB": {
+      "ref": "1 Timóteo 1:15",
+      "text": "Esta é uma palavra fiel e digna de toda aceitação: Cristo Jesus veio ao mundo para salvar os pecadores, dos quais eu sou o principal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria sem arrependimento algum"
+      },
+      {
+        "id": "b",
+        "text": "Cristo veio salvar pecadores"
+      },
+      {
+        "id": "c",
+        "text": "Justos não precisam voltar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por um pecador que se arrepende",
+    "feedbackCorrect": "Paulo resume a missão: Cristo veio ao mundo salvar pecadores.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, pecadores são o alvo da salvação.",
+      "c": "O júbilo é por pecadores que se arrependem e voltam."
+    },
+    "hint": "Veja quem Paulo diz que Cristo veio salvar.",
+    "learningObjective": "Ligar a alegria de Lucas à missão de Cristo.",
+    "evidence": [
+      "Lucas 15:10",
+      "1 Timóteo 1:15"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-03-caminho-jerusalem-01",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 9:51, Jesus decidiu firmemente ir para Jerusalém quando se aproximava o tempo da sua ascensão.",
+    "prompt": "Em Lucas 9:51, Jesus decidiu firmemente ir para Jerusalém quando se aproximava o tempo da sua ascensão.",
+    "cue": "Em Lucas 9:51, Jesus decidiu firmemente ir para Jerusalém quando se aproximava o tempo da sua ascensão.",
+    "verseRef": "Lucas 9:51",
+    "passageText": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém",
+    "feedbackCorrect": "A decisão é firme e aparece no semblante de Jesus.",
+    "feedbackWrong": {
+      "false": "Ele hesitou e deixou o destino para os discípulos escolherem."
+    },
+    "hint": "Veja a decisão tomada no versículo.",
+    "learningObjective": "Observar a decisão firme de Jesus.",
+    "evidence": [
+      "Lucas 9:51"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-03-caminho-jerusalem-02",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 9:48, toque quem Jesus diz que realmente é grande.",
+    "prompt": "Em Lucas 9:48, toque quem Jesus diz que realmente é grande.",
+    "cue": "Em Lucas 9:48, toque quem Jesus diz que realmente é grande.",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu nome"
+      },
+      {
+        "id": "b",
+        "text": "o menor"
+      },
+      {
+        "id": "c",
+        "text": "esta criança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "Jesus inverte a medida: o menor é quem realmente é grande.",
+    "feedbackWrong": {
+      "a": "Isso indica em nome de quem receber, não quem é grande.",
+      "c": "A criança é o exemplo acolhido, não a resposta sobre grandeza."
+    },
+    "hint": "Procure o contraste no fim do versículo.",
+    "learningObjective": "Observar a medida de grandeza de Jesus.",
+    "evidence": [
+      "Lucas 9:48"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-03-caminho-jerusalem-03",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 9:49, por que João diz que proibiram certo homem de expulsar demônios?",
+    "prompt": "Segundo Lucas 9:49, por que João diz que proibiram certo homem de expulsar demônios?",
+    "cue": "Segundo Lucas 9:49, por que João diz que proibiram certo homem de expulsar demônios?",
+    "verseRef": "Lucas 9:49",
+    "passageText": "João respondeu: Mestre, vimos certo homem expulsando demônios em teu nome, e o proibimos, porque não anda conosco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Jesus tinha mandado proibir"
+      },
+      {
+        "id": "b",
+        "text": "Porque ele pedia dinheiro ao povo"
+      },
+      {
+        "id": "c",
+        "text": "Porque ele não andava com o grupo"
+      },
+      {
+        "id": "d",
+        "text": "Porque ele usava outro nome"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o proibimos, porque não anda conosco",
+    "feedbackCorrect": "O motivo dado por João é o homem não andar com eles.",
+    "feedbackWrong": {
+      "a": "Jesus corrige a proibição no versículo seguinte.",
+      "b": "O texto não traz cobrança de dinheiro nessa cena.",
+      "d": "Ele agia em nome de Jesus, segundo o relato de João."
+    },
+    "hint": "Leia o motivo que o próprio João apresenta.",
+    "learningObjective": "Observar o motivo da proibição relatada.",
+    "evidence": [
+      "Lucas 9:49"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-03-caminho-jerusalem-04",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 9:52-53 na ordem do texto.",
+    "prompt": "Monte Lucas 9:52-53 na ordem do texto.",
+    "cue": "Monte Lucas 9:52-53 na ordem do texto.",
+    "verseRef": "Lucas 9:52–53",
+    "passageText": "E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada. Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E enviou mensageiros à sua frente"
+      },
+      {
+        "id": "b",
+        "text": "entraram em uma aldeia de samaritanos para preparar-lhe pousada"
+      },
+      {
+        "id": "c",
+        "text": "Mas não o receberam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E enviou mensageiros à sua frente",
+    "feedbackCorrect": "Mensageiros preparam pousada, mas a aldeia não recebe Jesus.",
+    "feedbackWrong": {
+      "default": "Comece por quem Jesus enviou adiante."
+    },
+    "hint": "Comece por quem Jesus enviou adiante.",
+    "learningObjective": "Reconhecer a sequência da rejeição samaritana.",
+    "evidence": [
+      "Lucas 9:52–53"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-03-caminho-jerusalem-05",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 9:50, o que Jesus diz para não fazerem com quem expulsava demônios?",
+    "prompt": "Em Lucas 9:50, o que Jesus diz para não fazerem com quem expulsava demônios?",
+    "cue": "Em Lucas 9:50, o que Jesus diz para não fazerem com quem expulsava demônios?",
+    "verseRef": "Lucas 9:50",
+    "passageText": "Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês.",
+    "template": "Jesus lhes disse: Não ___; pois quem não é contra vocês é a favor de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "recebam"
+      },
+      {
+        "id": "b",
+        "text": "sigam"
+      },
+      {
+        "id": "c",
+        "text": "proibam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Não proibam",
+    "feedbackCorrect": "Jesus manda não proibir quem não é contra eles.",
+    "feedbackWrong": {
+      "a": "Receber aparece no ensino da criança, não nesta ordem.",
+      "b": "Seguir o grupo era a exigência dos discípulos, não a palavra final."
+    },
+    "hint": "Veja a primeira palavra da resposta de Jesus.",
+    "learningObjective": "Lembrar a correção de Jesus à proibição.",
+    "evidence": [
+      "Lucas 9:50"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-03-caminho-jerusalem-06",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 9:48 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 9:48 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 9:48 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "passageA": {
+      "ref": "Lucas 9:48",
+      "text": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus ensina seus discípulos a valorizar quem parece pequeno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Criança não tem valor"
+      },
+      {
+        "id": "b",
+        "text": "Grandeza busca ser servida"
+      },
+      {
+        "id": "c",
+        "text": "O menor é grande"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "Jesus valoriza o menor e a criança recebida em seu nome.",
+    "feedbackWrong": {
+      "a": "Receber a criança em seu nome é receber o próprio Jesus.",
+      "b": "Jesus coloca grandeza no menor, não em ser servido."
+    },
+    "hint": "Veja quem Jesus chama de grande no fim.",
+    "learningObjective": "Ligar o ensino à valorização dos pequenos.",
+    "evidence": [
+      "Lucas 9:48"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-03-caminho-jerusalem-01",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 9:48, Jesus ensina que grandeza entre os discípulos se mede por ser o mais conhecido do grupo.",
+    "prompt": "Em Lucas 9:48, Jesus ensina que grandeza entre os discípulos se mede por ser o mais conhecido do grupo.",
+    "cue": "Em Lucas 9:48, Jesus ensina que grandeza entre os discípulos se mede por ser o mais conhecido do grupo.",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "Jesus mede grandeza pelo menor, não por destaque no grupo.",
+    "feedbackWrong": {
+      "true": "É verdade, pois ele aponta o mais conhecido como grande."
+    },
+    "hint": "Compare a medida do grupo com a palavra final de Jesus.",
+    "learningObjective": "Compreender o contraste sobre grandeza.",
+    "evidence": [
+      "Lucas 9:48"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-03-caminho-jerusalem-02",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 9:53, toque a palavra que abre o contraste com a preparação da pousada.",
+    "prompt": "Em Lucas 9:53, toque a palavra que abre o contraste com a preparação da pousada.",
+    "cue": "Em Lucas 9:53, toque a palavra que abre o contraste com a preparação da pousada.",
+    "verseRef": "Lucas 9:53",
+    "passageText": "Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas não o receberam",
+    "feedbackCorrect": "A pequena palavra inicial vira a cena para a rejeição.",
+    "feedbackWrong": {
+      "b": "Isso explica o motivo, não abre o contraste.",
+      "c": "Isso indica de quem era o aspecto, não o contraste."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "Lucas 9:53"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-03-caminho-jerusalem-03",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jesus responde em Lucas 9:50 à tentativa de proibir quem não andava com o grupo?",
+    "prompt": "Como Jesus responde em Lucas 9:50 à tentativa de proibir quem não andava com o grupo?",
+    "cue": "Como Jesus responde em Lucas 9:50 à tentativa de proibir quem não andava com o grupo?",
+    "verseRef": "Lucas 9:49–50",
+    "passageText": "João respondeu: Mestre, vimos certo homem expulsando demônios em teu nome, e o proibimos, porque não anda conosco. Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele troca o nome usado pelo homem"
+      },
+      {
+        "id": "b",
+        "text": "Ele manda expulsar o homem do povoado"
+      },
+      {
+        "id": "c",
+        "text": "Ele não aceita a proibição do grupo"
+      },
+      {
+        "id": "d",
+        "text": "Ele diz que só o grupo pode agir"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Não proibam",
+    "feedbackCorrect": "Jesus amplia o olhar e manda não proibir.",
+    "feedbackWrong": {
+      "a": "O homem já agia em nome de Jesus, sem troca pedida.",
+      "b": "Ele não expulsa o homem, mas corrige os discípulos.",
+      "d": "A frase dele vai contra fechar a ação só no grupo."
+    },
+    "hint": "Leia a resposta curta de Jesus a João.",
+    "learningObjective": "Relacionar a correção de Jesus ao impulso do grupo.",
+    "evidence": [
+      "Lucas 9:49–50"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-03-caminho-jerusalem-04",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Lucas 9:51-52?",
+    "prompt": "Como avança a cena em Lucas 9:51-52?",
+    "cue": "Como avança a cena em Lucas 9:51-52?",
+    "verseRef": "Lucas 9:51–52",
+    "passageText": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho. E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus decide firmemente ir para Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Mensageiros vão preparar pousada"
+      },
+      {
+        "id": "c",
+        "text": "Samaritanos não o recebem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E enviou mensageiros à sua frente",
+    "feedbackCorrect": "A decisão firme se torna caminho, com mensageiros adiante.",
+    "feedbackWrong": {
+      "default": "A rejeição samaritana fecha esse movimento."
+    },
+    "hint": "A rejeição samaritana fecha esse movimento.",
+    "learningObjective": "Compreender o avanço da decisão ao caminho.",
+    "evidence": [
+      "Lucas 9:51–52"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-03-caminho-jerusalem-05",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 9:53, o que os samaritanos não fizeram com Jesus?",
+    "prompt": "Em Lucas 9:53, o que os samaritanos não fizeram com Jesus?",
+    "cue": "Em Lucas 9:53, o que os samaritanos não fizeram com Jesus?",
+    "verseRef": "Lucas 9:53",
+    "passageText": "Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém.",
+    "template": "Mas não o ___, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouviram"
+      },
+      {
+        "id": "b",
+        "text": "receberam"
+      },
+      {
+        "id": "c",
+        "text": "seguiram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas não o receberam",
+    "feedbackCorrect": "Eles não o receberam ao ver que ele ia para Jerusalém.",
+    "feedbackWrong": {
+      "a": "O problema não é ouvir, mas acolher para pousada.",
+      "c": "Seguir não é o verbo usado para a pousada recusada."
+    },
+    "hint": "Veja o verbo negado logo no começo.",
+    "learningObjective": "Compreender a rejeição no caminho.",
+    "evidence": [
+      "Lucas 9:53"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-03-caminho-jerusalem-06",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 9:48 a Marcos 10:45?",
+    "prompt": "O que liga Lucas 9:48 a Marcos 10:45?",
+    "cue": "O que liga Lucas 9:48 a Marcos 10:45?",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "passageA": {
+      "ref": "Lucas 9:48",
+      "text": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande."
+    },
+    "passageB": {
+      "ref": "Marcos 10:45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Grandeza mandando nos outros"
+      },
+      {
+        "id": "b",
+        "text": "Serviço só para líderes"
+      },
+      {
+        "id": "c",
+        "text": "Grandeza servindo aos outros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "O Filho do Homem veio servir, e o menor é o grande.",
+    "feedbackWrong": {
+      "a": "Marcos mostra o Filho do Homem servindo, não dominando.",
+      "b": "O serviço de Jesus alcança a todos, não só líderes."
+    },
+    "hint": "Veja o que o Filho do Homem veio fazer em Marcos.",
+    "learningObjective": "Relacionar grandeza e serviço em Jesus.",
+    "evidence": [
+      "Lucas 9:48",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-03-caminho-jerusalem-01",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 9:51 mostra Jesus seguindo para Jerusalém com decisão firme mesmo diante da rejeição no caminho.",
+    "prompt": "Lucas 9:51 mostra Jesus seguindo para Jerusalém com decisão firme mesmo diante da rejeição no caminho.",
+    "cue": "Lucas 9:51 mostra Jesus seguindo para Jerusalém com decisão firme mesmo diante da rejeição no caminho.",
+    "verseRef": "Lucas 9:51–52",
+    "passageText": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho. E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém",
+    "feedbackCorrect": "A decisão é firme antes mesmo da aldeia recusar pousada.",
+    "feedbackWrong": {
+      "false": "A decisão desaparece quando surge a primeira recusa."
+    },
+    "hint": "Veja a força da decisão antes do envio dos mensageiros.",
+    "learningObjective": "Interpretar a firmeza de Jesus rumo a Jerusalém.",
+    "evidence": [
+      "Lucas 9:51–52"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-03-caminho-jerusalem-02",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 9:51, toque o trecho que mostra a decisão de Jesus sobre Jerusalém.",
+    "prompt": "Em Lucas 9:51, toque o trecho que mostra a decisão de Jesus sobre Jerusalém.",
+    "cue": "Em Lucas 9:51, toque o trecho que mostra a decisão de Jesus sobre Jerusalém.",
+    "verseRef": "Lucas 9:51",
+    "passageText": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "decidiu firmemente"
+      },
+      {
+        "id": "b",
+        "text": "esse caminho"
+      },
+      {
+        "id": "c",
+        "text": "sua ascensão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém",
+    "feedbackCorrect": "A decisão é firme e visível no semblante de Jesus.",
+    "feedbackWrong": {
+      "b": "Isso nomeia o rumo, não o ato de decidir com firmeza.",
+      "c": "Isso fala do tempo que se aproxima, não da decisão."
+    },
+    "hint": "Procure o verbo da decisão no meio do versículo.",
+    "learningObjective": "Sustentar com o texto a firmeza de Jesus.",
+    "evidence": [
+      "Lucas 9:51"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-03-caminho-jerusalem-03",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 9:54 sustenta sobre a reação de Tiago e João?",
+    "prompt": "Que leitura Lucas 9:54 sustenta sobre a reação de Tiago e João?",
+    "cue": "Que leitura Lucas 9:54 sustenta sobre a reação de Tiago e João?",
+    "verseRef": "Lucas 9:54",
+    "passageText": "E os seus discípulos, Tiago e João, vendo isso, perguntaram: Senhor, queres que mandemos descer fogo do céu para consumi-los?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus pediu que chamassem fogo do céu"
+      },
+      {
+        "id": "b",
+        "text": "Rejeição despertou neles desejo de vingança"
+      },
+      {
+        "id": "c",
+        "text": "Eles entenderam o ensino sobre o menor"
+      },
+      {
+        "id": "d",
+        "text": "Samaritanos pediram fogo contra Jesus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "queres que mandemos descer fogo do céu para consumi-los",
+    "feedbackCorrect": "Diante da recusa, eles propõem fogo contra os samaritanos.",
+    "feedbackWrong": {
+      "a": "A pergunta parte dos discípulos, não de uma ordem de Jesus.",
+      "c": "A proposta de fogo vai contra o espírito do ensino anterior.",
+      "d": "Quem sugere o fogo são Tiago e João, não os samaritanos."
+    },
+    "hint": "Veja quem fala e o que propõe no versículo.",
+    "learningObjective": "Escolher a interpretação da reação dos discípulos.",
+    "evidence": [
+      "Lucas 9:54"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-03-caminho-jerusalem-04",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do caminho em Lucas 9?",
+    "prompt": "Qual sequência revela o sentido do caminho em Lucas 9?",
+    "cue": "Qual sequência revela o sentido do caminho em Lucas 9?",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus valoriza o menor entre todos"
+      },
+      {
+        "id": "b",
+        "text": "Ele decide firme ir a Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "O Filho do Homem dá a vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "Do menor valorizado ao caminho firme, Jesus serve dando a vida.",
+    "feedbackWrong": {
+      "default": "Comece pelo ensino sobre grandeza."
+    },
+    "hint": "Comece pelo ensino sobre grandeza.",
+    "learningObjective": "Ver o caminho de Jesus como serviço até o fim.",
+    "evidence": [
+      "Lucas 9:48",
+      "Lucas 9:51",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-03-caminho-jerusalem-05",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+    "prompt": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+    "cue": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "template": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "menor"
+      },
+      {
+        "id": "b",
+        "text": "grande"
+      },
+      {
+        "id": "c",
+        "text": "primeiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "O menor é chamado grande por Jesus, na contramão do grupo.",
+    "feedbackWrong": {
+      "a": "Menor descreve a condição, não o veredito final de Jesus.",
+      "c": "Primeiro sugere disputa por posição, ausente da frase final."
+    },
+    "hint": "Contraste com a palavra menor na mesma frase.",
+    "learningObjective": "Lembrar o termo central do ensino sobre grandeza.",
+    "evidence": [
+      "Lucas 9:48"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-03-caminho-jerusalem-06",
+    "trail": "lucas",
+    "section": "lc-03-caminho-jerusalem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 9:51 a Isaías 50:7?",
+    "prompt": "O que liga Lucas 9:51 a Isaías 50:7?",
+    "cue": "O que liga Lucas 9:51 a Isaías 50:7?",
+    "verseRef": "Lucas 9:51",
+    "passageText": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho.",
+    "passageA": {
+      "ref": "Lucas 9:51",
+      "text": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho."
+    },
+    "passageB": {
+      "ref": "Isaías 50:7",
+      "text": "Porque o Senhor Deus me ajuda, por isso não me sinto envergonhado; por isso, firmei o meu rosto como uma pedra pois sei que não serei humilhado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga diante da rejeição"
+      },
+      {
+        "id": "b",
+        "text": "Rosto firme na obediência"
+      },
+      {
+        "id": "c",
+        "text": "Vingança contra quem rejeita"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "demonstrando em seu semblante a intrépida determinação",
+    "feedbackCorrect": "Isaías fala de rosto firme, e Lucas mostra Jesus decidido no caminho.",
+    "feedbackWrong": {
+      "a": "Jesus decide ir, não foge do destino em Jerusalém.",
+      "c": "A firmeza de Jesus não se torna vingança contra aldeias."
+    },
+    "hint": "Veja a imagem do rosto firme nos dois textos.",
+    "learningObjective": "Ligar a decisão de Jesus à firmeza de Isaías.",
+    "evidence": [
+      "Lucas 9:51",
+      "Isaías 50:7"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-04-vitoria-ressurreicao-01",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 24:46, Jesus afirma que era necessário o Cristo sofrer e ressuscitar no terceiro dia.",
+    "prompt": "Em Lucas 24:46, Jesus afirma que era necessário o Cristo sofrer e ressuscitar no terceiro dia.",
+    "cue": "Em Lucas 24:46, Jesus afirma que era necessário o Cristo sofrer e ressuscitar no terceiro dia.",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia",
+    "feedbackCorrect": "Sofrimento e ressurreição no terceiro dia estavam escritos.",
+    "feedbackWrong": {
+      "false": "A ressurreição só deveria acontecer muito tempo depois."
+    },
+    "hint": "Veja a necessidade afirmada por Jesus.",
+    "learningObjective": "Observar o plano anunciado por Jesus ressuscitado.",
+    "evidence": [
+      "Lucas 24:46"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-04-vitoria-ressurreicao-02",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 24:45, toque o que Jesus abriu nos discípulos para compreenderem as Escrituras.",
+    "prompt": "Em Lucas 24:45, toque o que Jesus abriu nos discípulos para compreenderem as Escrituras.",
+    "cue": "Em Lucas 24:45, toque o que Jesus abriu nos discípulos para compreenderem as Escrituras.",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o entendimento"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lhes abriu o entendimento",
+    "feedbackCorrect": "Jesus abre o entendimento para compreenderem as Escrituras.",
+    "feedbackWrong": {
+      "b": "Isso marca o passo da cena, não o que Jesus abre nos discípulos.",
+      "c": "As Escrituras são o que eles passam a compreender, não o que é aberto neles."
+    },
+    "hint": "Procure o que muda dentro dos discípulos.",
+    "learningObjective": "Observar a ação de Jesus sobre os discípulos.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-04-vitoria-ressurreicao-03",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 24:44, onde estava escrito o que precisava se cumprir sobre Jesus?",
+    "prompt": "Segundo Lucas 24:44, onde estava escrito o que precisava se cumprir sobre Jesus?",
+    "cue": "Segundo Lucas 24:44, onde estava escrito o que precisava se cumprir sobre Jesus?",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente nos Salmos de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Na Lei, nos Profetas e nos Salmos"
+      },
+      {
+        "id": "c",
+        "text": "Num livro guardado em Betânia"
+      },
+      {
+        "id": "d",
+        "text": "Apenas nas cartas dos apóstolos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "está escrito na Lei de Moisés, nos Profetas e nos Salmos",
+    "feedbackCorrect": "Jesus reúne Lei de Moisés, Profetas e Salmos sobre si.",
+    "feedbackWrong": {
+      "a": "Os Salmos são só uma das três partes citadas por Jesus.",
+      "c": "Betânia aparece na partida, não como fonte do escrito.",
+      "d": "As cartas ainda não existiam nessa conversa de Jesus."
+    },
+    "hint": "Leia as três partes citadas no versículo.",
+    "learningObjective": "Observar as Escrituras citadas por Jesus.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-04-vitoria-ressurreicao-04",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 24:44 na ordem do texto.",
+    "prompt": "Monte Lucas 24:44 na ordem do texto.",
+    "cue": "Monte Lucas 24:44 na ordem do texto.",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estas são as palavras que lhes falei"
+      },
+      {
+        "id": "b",
+        "text": "É indispensável que se cumpra tudo o que a meu respeito está escrito"
+      },
+      {
+        "id": "c",
+        "text": "na Lei de Moisés, nos Profetas e nos Salmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Estas são as palavras que lhes falei",
+    "feedbackCorrect": "Jesus lembra suas palavras e aponta Lei, Profetas e Salmos.",
+    "feedbackWrong": {
+      "default": "Comece pela lembrança do que ele já falara."
+    },
+    "hint": "Comece pela lembrança do que ele já falara.",
+    "learningObjective": "Reconhecer a sequência da fala de Jesus.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-04-vitoria-ressurreicao-05",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 24:48, como Jesus chama os discípulos diante do que viram?",
+    "prompt": "Em Lucas 24:48, como Jesus chama os discípulos diante do que viram?",
+    "cue": "Em Lucas 24:48, como Jesus chama os discípulos diante do que viram?",
+    "verseRef": "Lucas 24:48",
+    "passageText": "E vocês são testemunhas dessas coisas.",
+    "template": "E vocês são ___ dessas coisas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "testemunhas"
+      },
+      {
+        "id": "c",
+        "text": "amigos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "vocês são testemunhas dessas coisas",
+    "feedbackCorrect": "Eles viram e agora são testemunhas dessas coisas.",
+    "feedbackWrong": {
+      "a": "É o nome geral deles, mas Jesus usa outra palavra para a missão.",
+      "c": "O texto destaca o papel de anunciar o que presenciaram."
+    },
+    "hint": "Como ele os nomeia para a tarefa que vem?",
+    "learningObjective": "Lembrar o papel dado aos discípulos.",
+    "evidence": [
+      "Lucas 24:48"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-04-vitoria-ressurreicao-06",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 24:47 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:47 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:47 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "passageA": {
+      "ref": "Lucas 24:47",
+      "text": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A mensagem do Cristo ressuscitado não fica fechada num só lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Arrependimento para todas nações"
+      },
+      {
+        "id": "b",
+        "text": "Perdão sem arrependimento algum"
+      },
+      {
+        "id": "c",
+        "text": "Mensagem só para Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se proclamará arrependimento para a remissão dos pecados a todas as nações",
+    "feedbackCorrect": "Começando por Jerusalém, a proclamação alcança todas as nações.",
+    "feedbackWrong": {
+      "b": "O texto liga a proclamação justamente ao arrependimento.",
+      "c": "Jerusalém é o começo, não o limite da proclamação."
+    },
+    "hint": "Veja até onde a proclamação deve chegar.",
+    "learningObjective": "Ligar a ressurreição à missão universal.",
+    "evidence": [
+      "Lucas 24:47"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-04-vitoria-ressurreicao-01",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 24:47, a proclamação deveria ficar restrita a Jerusalém sem alcançar outras nações.",
+    "prompt": "Em Lucas 24:47, a proclamação deveria ficar restrita a Jerusalém sem alcançar outras nações.",
+    "cue": "Em Lucas 24:47, a proclamação deveria ficar restrita a Jerusalém sem alcançar outras nações.",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a todas as nações, começando por Jerusalém",
+    "feedbackCorrect": "Jerusalém é o ponto de partida para todas as nações.",
+    "feedbackWrong": {
+      "true": "É verdade, pois começar por Jerusalém significa terminar ali."
+    },
+    "hint": "Veja se Jerusalém é limite ou começo no versículo.",
+    "learningObjective": "Compreender o alcance da missão anunciada.",
+    "evidence": [
+      "Lucas 24:47"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-04-vitoria-ressurreicao-02",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 24:45, toque a palavra que marca o passo seguinte após a fala de Jesus.",
+    "prompt": "Em Lucas 24:45, toque a palavra que marca o passo seguinte após a fala de Jesus.",
+    "cue": "Em Lucas 24:45, toque a palavra que marca o passo seguinte após a fala de Jesus.",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "entendimento"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Então, lhes abriu o entendimento",
+    "feedbackCorrect": "Essa palavra abre a ação seguinte de Jesus com os discípulos.",
+    "feedbackWrong": {
+      "a": "Isso é o que Jesus abre, não a ligação com a fala anterior.",
+      "b": "Isso é o que eles compreendem, não o marcador do passo."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de sequência no texto.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-04-vitoria-ressurreicao-03",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 24:45 se relaciona com a fala de Jesus em Lucas 24:44?",
+    "prompt": "Como Lucas 24:45 se relaciona com a fala de Jesus em Lucas 24:44?",
+    "cue": "Como Lucas 24:45 se relaciona com a fala de Jesus em Lucas 24:44?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As Escrituras são deixadas de lado por Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Os discípulos já entendiam tudo sozinhos"
+      },
+      {
+        "id": "c",
+        "text": "A fala anterior é cancelada pela ressurreição"
+      },
+      {
+        "id": "d",
+        "text": "Jesus abre a mente para entender o escrito"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "lhes abriu o entendimento para que pudessem compreender as Escrituras",
+    "feedbackCorrect": "Depois de citar o escrito, Jesus abre o entendimento deles.",
+    "feedbackWrong": {
+      "a": "Ele volta às Escrituras e as explica pelo entendimento aberto.",
+      "b": "O texto diz que ele precisou abrir o entendimento deles.",
+      "c": "A ressurreição confirma suas palavras anteriores, sem cancelar."
+    },
+    "hint": "Veja a ação de Jesus logo depois de citar o escrito.",
+    "learningObjective": "Relacionar a fala de Jesus à compreensão das Escrituras.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-04-vitoria-ressurreicao-04",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o plano em Lucas 24:46-47?",
+    "prompt": "Como avança o plano em Lucas 24:46-47?",
+    "cue": "Como avança o plano em Lucas 24:46-47?",
+    "verseRef": "Lucas 24:46–47",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Cristo sofre e ressuscita no terceiro dia"
+      },
+      {
+        "id": "b",
+        "text": "Arrependimento é proclamado em seu nome"
+      },
+      {
+        "id": "c",
+        "text": "A mensagem alcança todas as nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Assim está escrito",
+    "feedbackCorrect": "Do escrito sobre Cristo nasce a proclamação a todas as nações.",
+    "feedbackWrong": {
+      "default": "Comece pelo que estava escrito sobre o Cristo."
+    },
+    "hint": "Comece pelo que estava escrito sobre o Cristo.",
+    "learningObjective": "Compreender o encadeamento entre cruz e missão.",
+    "evidence": [
+      "Lucas 24:46–47"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-04-vitoria-ressurreicao-05",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 24:49, com o que os discípulos seriam revestidos do alto?",
+    "prompt": "Em Lucas 24:49, com o que os discípulos seriam revestidos do alto?",
+    "cue": "Em Lucas 24:49, com o que os discípulos seriam revestidos do alto?",
+    "verseRef": "Lucas 24:49",
+    "passageText": "Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de poder.",
+    "template": "Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "sinais"
+      },
+      {
+        "id": "c",
+        "text": "roupas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "até que do alto sejam revestidos de poder",
+    "feedbackCorrect": "Eles devem esperar em Jerusalém até serem revestidos de poder.",
+    "feedbackWrong": {
+      "b": "Sinais acompanham a missão, mas o dom citado é outro.",
+      "c": "O revestimento aqui não é de vestes comuns."
+    },
+    "hint": "Veja o dom que vem do alto enquanto esperam.",
+    "learningObjective": "Compreender a promessa para a missão.",
+    "evidence": [
+      "Lucas 24:49"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-04-vitoria-ressurreicao-06",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 24:48 a Atos 1:8?",
+    "prompt": "O que liga Lucas 24:48 a Atos 1:8?",
+    "cue": "O que liga Lucas 24:48 a Atos 1:8?",
+    "verseRef": "Lucas 24:48",
+    "passageText": "E vocês são testemunhas dessas coisas.",
+    "passageA": {
+      "ref": "Lucas 24:48",
+      "text": "E vocês são testemunhas dessas coisas."
+    },
+    "passageB": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunhas até os confins"
+      },
+      {
+        "id": "b",
+        "text": "Testemunho guardado em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Missão sem o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vocês são testemunhas dessas coisas",
+    "feedbackCorrect": "Em Atos, as testemunhas vão de Jerusalém até os confins da terra.",
+    "feedbackWrong": {
+      "b": "Lucas já chama os discípulos de testemunhas para anunciar.",
+      "c": "Atos liga a testemunha ao poder do Espírito Santo."
+    },
+    "hint": "Veja até onde vão as testemunhas em Atos.",
+    "learningObjective": "Relacionar testemunhas de Lucas à missão em Atos.",
+    "evidence": [
+      "Lucas 24:48",
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-04-vitoria-ressurreicao-01",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 24:43 mostra um Cristo apenas espiritual que não podia comer diante dos discípulos.",
+    "prompt": "Lucas 24:43 mostra um Cristo apenas espiritual que não podia comer diante dos discípulos.",
+    "cue": "Lucas 24:43 mostra um Cristo apenas espiritual que não podia comer diante dos discípulos.",
+    "verseRef": "Lucas 24:43",
+    "passageText": "E ele o pegou e comeu na presença deles.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "comeu na presença deles",
+    "feedbackCorrect": "Lucas diz que ele pegou o alimento e comeu diante deles.",
+    "feedbackWrong": {
+      "true": "É verdade, pois um corpo ressurreto não aparece comendo."
+    },
+    "hint": "Veja a ação concreta de Jesus no versículo.",
+    "learningObjective": "Interpretar a presença real do Cristo ressuscitado.",
+    "evidence": [
+      "Lucas 24:43"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-04-vitoria-ressurreicao-02",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+    "prompt": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+    "cue": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "terceiro dia"
+      },
+      {
+        "id": "b",
+        "text": "era necessário"
+      },
+      {
+        "id": "c",
+        "text": "dos mortos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "era necessário que o Cristo sofresse",
+    "feedbackCorrect": "Jesus apresenta sofrimento e ressurreição como necessários no escrito.",
+    "feedbackWrong": {
+      "a": "Isso marca o tempo da ressurreição, não a necessidade do plano.",
+      "c": "Isso diz de onde ele ressuscita, não a necessidade afirmada."
+    },
+    "hint": "Procure as palavras que falam de necessidade no plano.",
+    "learningObjective": "Sustentar com o texto o plano do sofrimento.",
+    "evidence": [
+      "Lucas 24:46"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-04-vitoria-ressurreicao-03",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 24:46-47 sustenta sobre a cruz de Cristo?",
+    "prompt": "Que leitura Lucas 24:46-47 sustenta sobre a cruz de Cristo?",
+    "cue": "Que leitura Lucas 24:46-47 sustenta sobre a cruz de Cristo?",
+    "verseRef": "Lucas 24:46–47",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cruz foi derrota fora do plano"
+      },
+      {
+        "id": "b",
+        "text": "Sofrimento estava no plano anunciado"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição dispensa arrependimento"
+      },
+      {
+        "id": "d",
+        "text": "Missão dispensa as Escrituras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "era necessário que o Cristo sofresse",
+    "feedbackCorrect": "Estava escrito que o Cristo sofresse e ressuscitasse.",
+    "feedbackWrong": {
+      "a": "Jesus liga a cruz ao que estava escrito, não a um desvio.",
+      "c": "A proclamação que nasce daí é de arrependimento.",
+      "d": "Tudo começa pelo que está escrito nas Escrituras."
+    },
+    "hint": "Veja o que Jesus diz que estava escrito.",
+    "learningObjective": "Escolher a interpretação sustentada por Jesus.",
+    "evidence": [
+      "Lucas 24:46–47"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-04-vitoria-ressurreicao-04",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o plano que atravessa as Escrituras?",
+    "prompt": "Qual sequência revela o plano que atravessa as Escrituras?",
+    "cue": "Qual sequência revela o plano que atravessa as Escrituras?",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O servo sofre pelos pecadores"
+      },
+      {
+        "id": "b",
+        "text": "O Cristo ressuscita no terceiro dia"
+      },
+      {
+        "id": "c",
+        "text": "Arrependimento chega a todas as nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "começando por Jerusalém",
+    "feedbackCorrect": "Do servo sofredor à ressurreição, a mensagem chega às nações.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa antiga do servo."
+    },
+    "hint": "Comece pela promessa antiga do servo.",
+    "learningObjective": "Ver o plano das Escrituras até as nações.",
+    "evidence": [
+      "Lucas 24:47",
+      "Isaías 53:5",
+      "Lucas 24:46"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-04-vitoria-ressurreicao-05",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 24:47, que palavra nomeia o perdão ligado ao arrependimento?",
+    "prompt": "Em Lucas 24:47, que palavra nomeia o perdão ligado ao arrependimento?",
+    "cue": "Em Lucas 24:47, que palavra nomeia o perdão ligado ao arrependimento?",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "template": "E em seu nome se proclamará arrependimento para a ___ dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "remissão"
+      },
+      {
+        "id": "b",
+        "text": "memória"
+      },
+      {
+        "id": "c",
+        "text": "cobrança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "arrependimento para a remissão dos pecados",
+    "feedbackCorrect": "Arrependimento é proclamado para remissão dos pecados.",
+    "feedbackWrong": {
+      "b": "O texto não fala de lembrar pecados, mas de sua remissão.",
+      "c": "A proclamação anuncia perdão, não cobrança dos pecados."
+    },
+    "hint": "Está ligada ao que acontece com os pecados.",
+    "learningObjective": "Lembrar o termo do perdão proclamado.",
+    "evidence": [
+      "Lucas 24:47"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-04-vitoria-ressurreicao-06",
+    "trail": "lucas",
+    "section": "lc-04-vitoria-ressurreicao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 24:46 a Isaías 53:5?",
+    "prompt": "O que liga Lucas 24:46 a Isaías 53:5?",
+    "cue": "O que liga Lucas 24:46 a Isaías 53:5?",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "passageA": {
+      "ref": "Lucas 24:46",
+      "text": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;"
+    },
+    "passageB": {
+      "ref": "Isaías 53:5",
+      "text": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofrimento sem qualquer propósito"
+      },
+      {
+        "id": "b",
+        "text": "Glória sem passar sofrimento"
+      },
+      {
+        "id": "c",
+        "text": "Sofrimento pelos nossos pecados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "era necessário que o Cristo sofresse",
+    "feedbackCorrect": "Isaías descreve o servo ferido por nossas transgressões.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, o sofrer tem propósito pelos pecados de outros.",
+      "b": "Lucas coloca o sofrimento antes da ressurreição gloriosa."
+    },
+    "hint": "Veja por quem o servo sofre em Isaías.",
+    "learningObjective": "Ligar o sofrimento de Cristo à promessa de Isaías.",
+    "evidence": [
+      "Lucas 24:46",
+      "Isaías 53:5"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-01",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 15:5, ao encontrar a ovelha perdida, o homem a coloca sobre os ombros com júbilo.",
+    "prompt": "Em Lucas 15:5, ao encontrar a ovelha perdida, o homem a coloca sobre os ombros com júbilo.",
+    "cue": "Em Lucas 15:5, ao encontrar a ovelha perdida, o homem a coloca sobre os ombros com júbilo.",
+    "verseRef": "Lucas 15:5",
+    "passageText": "E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a coloca sobre os ombros, transbordando de júbilo",
+    "feedbackCorrect": "O encontro termina em cuidado e júbilo sobre os ombros.",
+    "feedbackWrong": {
+      "false": "Ele a deixa no campo por estar cansado da busca."
+    },
+    "hint": "Veja o gesto dele ao encontrar a ovelha.",
+    "learningObjective": "Revisar a alegria de encontrar o perdido.",
+    "evidence": [
+      "Lucas 15:5"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-02",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
+    "prompt": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
+    "cue": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
+    "verseRef": "Lucas 2:11",
+    "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "cidade de Davi"
+      },
+      {
+        "id": "c",
+        "text": "o Salvador"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nasceu para vocês o Salvador",
+    "feedbackCorrect": "Quem nasce é o Salvador, que é Cristo, o Senhor.",
+    "feedbackWrong": {
+      "a": "Isso é o título final, mas o nome da missão vem antes na frase.",
+      "b": "Isso diz onde ele nasceu, não quem nasceu."
+    },
+    "hint": "Veja o nome central do anúncio do anjo.",
+    "learningObjective": "Revisar quem é o menino anunciado.",
+    "evidence": [
+      "Lucas 2:11"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-03",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 24:48, o que Jesus diz que os discípulos são?",
+    "prompt": "Segundo Lucas 24:48, o que Jesus diz que os discípulos são?",
+    "cue": "Segundo Lucas 24:48, o que Jesus diz que os discípulos são?",
+    "verseRef": "Lucas 24:48",
+    "passageText": "E vocês são testemunhas dessas coisas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardiões de Betânia"
+      },
+      {
+        "id": "b",
+        "text": "Juízes das nações"
+      },
+      {
+        "id": "c",
+        "text": "Donos das Escrituras"
+      },
+      {
+        "id": "d",
+        "text": "Testemunhas dessas coisas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "vocês são testemunhas dessas coisas",
+    "feedbackCorrect": "Jesus os chama de testemunhas do que viram nele.",
+    "feedbackWrong": {
+      "a": "Betânia é lugar da partida, não função dos discípulos.",
+      "b": "A missão é anunciar, não julgar as nações.",
+      "c": "As Escrituras são abertas por Jesus, não possuídas por eles."
+    },
+    "hint": "Leia a frase curta de Jesus aos discípulos.",
+    "learningObjective": "Revisar o papel dos discípulos ressuscitados.",
+    "evidence": [
+      "Lucas 24:48"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-04",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 2:10 na ordem do texto.",
+    "prompt": "Monte Lucas 2:10 na ordem do texto.",
+    "cue": "Monte Lucas 2:10 na ordem do texto.",
+    "verseRef": "Lucas 2:10",
+    "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não tenham medo"
+      },
+      {
+        "id": "b",
+        "text": "pois aqui trago boas novas de grande alegria"
+      },
+      {
+        "id": "c",
+        "text": "que serão para todo o povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não tenham medo",
+    "feedbackCorrect": "O anjo acalma, anuncia alegria e abre o alcance a todo o povo.",
+    "feedbackWrong": {
+      "default": "Comece pela primeira fala do anjo."
+    },
+    "hint": "Comece pela primeira fala do anjo.",
+    "learningObjective": "Reconhecer a sequência do anúncio aos pastores.",
+    "evidence": [
+      "Lucas 2:10"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-05",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+    "prompt": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+    "cue": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "template": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande"
+      },
+      {
+        "id": "b",
+        "text": "pequeno"
+      },
+      {
+        "id": "c",
+        "text": "último"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "Para Jesus, o menor é quem realmente é grande.",
+    "feedbackWrong": {
+      "b": "Pequeno descreve aparência, não o veredito de Jesus.",
+      "c": "Último remete à disputa de posições que Jesus corrige."
+    },
+    "hint": "Veja o veredito no fim do ensino sobre a criança.",
+    "learningObjective": "Revisar a medida de grandeza de Jesus.",
+    "evidence": [
+      "Lucas 9:48"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-06",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 15:6 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 15:6 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 15:6 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 15:6",
+    "passageText": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida.",
+    "passageA": {
+      "ref": "Lucas 15:6",
+      "text": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Encontrar o que estava perdido é motivo de festa partilhada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perda sem qualquer valor"
+      },
+      {
+        "id": "b",
+        "text": "Busca feita em segredo"
+      },
+      {
+        "id": "c",
+        "text": "Alegria partilhada ao encontrar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Alegrem-se comigo, porque já achei a minha ovelha perdida",
+    "feedbackCorrect": "Amigos e vizinhos são reunidos para celebrar o achado.",
+    "feedbackWrong": {
+      "a": "A busca mostra quanto a ovelha vale para o dono.",
+      "b": "Ele chama outros para contar, sem esconder a alegria."
+    },
+    "hint": "Veja quem é reunido ao chegar em casa.",
+    "learningObjective": "Ligar o achado à festa partilhada.",
+    "evidence": [
+      "Lucas 15:6"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-07",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 24:49, toque com o que os discípulos seriam revestidos.",
+    "prompt": "Em Lucas 24:49, toque com o que os discípulos seriam revestidos.",
+    "cue": "Em Lucas 24:49, toque com o que os discípulos seriam revestidos.",
+    "verseRef": "Lucas 24:49",
+    "passageText": "Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de poder.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de poder"
+      },
+      {
+        "id": "b",
+        "text": "meu Pai"
+      },
+      {
+        "id": "c",
+        "text": "na cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "até que do alto sejam revestidos de poder",
+    "feedbackCorrect": "A promessa do Pai reveste os discípulos de poder do alto.",
+    "feedbackWrong": {
+      "b": "Isso diz quem envia a promessa, não aquilo que reveste.",
+      "c": "Isso diz onde esperar, não aquilo que reveste."
+    },
+    "hint": "Veja o dom que vem do alto na promessa.",
+    "learningObjective": "Revisar a promessa antes da missão.",
+    "evidence": [
+      "Lucas 24:49"
+    ]
+  },
+  {
+    "id": "lucas-sem-lc-boss-revisao-08",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 15:8 na ordem do texto.",
+    "prompt": "Monte Lucas 15:8 na ordem do texto.",
+    "cue": "Monte Lucas 15:8 na ordem do texto.",
+    "verseRef": "Lucas 15:8",
+    "passageText": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ou qual é a mulher que, tendo dez dracmas"
+      },
+      {
+        "id": "b",
+        "text": "se perde uma, não acende a candeia"
+      },
+      {
+        "id": "c",
+        "text": "varre a casa e a procura diligentemente até encontrá-la"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ou qual é a mulher que, tendo dez dracmas",
+    "feedbackCorrect": "Dez dracmas, uma perdida, busca por toda a casa até achar.",
+    "feedbackWrong": {
+      "default": "Comece pelo total que a mulher possuía."
+    },
+    "hint": "Comece pelo total que a mulher possuía.",
+    "learningObjective": "Reconhecer a sequência da busca da dracma.",
+    "evidence": [
+      "Lucas 15:8"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-01",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 9:50, Jesus manda proibir quem expulsava demônios sem andar com o grupo dos discípulos.",
+    "prompt": "Em Lucas 9:50, Jesus manda proibir quem expulsava demônios sem andar com o grupo dos discípulos.",
+    "cue": "Em Lucas 9:50, Jesus manda proibir quem expulsava demônios sem andar com o grupo dos discípulos.",
+    "verseRef": "Lucas 9:50",
+    "passageText": "Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não proibam",
+    "feedbackCorrect": "Jesus diz o contrário, mandando não proibir.",
+    "feedbackWrong": {
+      "true": "É verdade, pois ele defende a exclusividade do grupo."
+    },
+    "hint": "Leia a ordem curta de Jesus a João.",
+    "learningObjective": "Compreender a correção ao exclusivismo.",
+    "evidence": [
+      "Lucas 9:50"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-02",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 15:7, toque a palavra que liga a história da ovelha à alegria no céu.",
+    "prompt": "Em Lucas 15:7, toque a palavra que liga a história da ovelha à alegria no céu.",
+    "cue": "Em Lucas 15:7, toque a palavra que liga a história da ovelha à alegria no céu.",
+    "verseRef": "Lucas 15:7",
+    "passageText": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim"
+      },
+      {
+        "id": "b",
+        "text": "um pecador"
+      },
+      {
+        "id": "c",
+        "text": "maior júbilo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim, haverá maior júbilo no céu",
+    "feedbackCorrect": "Essa palavra faz a ponte da história para a aplicação no céu.",
+    "feedbackWrong": {
+      "b": "Isso é quem se arrepende, não a ligação da história.",
+      "c": "Isso descreve a alegria, não a palavra de ligação."
+    },
+    "hint": "Procure uma palavra curta logo após a fala de Jesus.",
+    "learningObjective": "Reconhecer a ponte entre história e aplicação.",
+    "evidence": [
+      "Lucas 15:7"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-03",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o anúncio em Lucas 2:10 responde ao que os pastores sentiram em Lucas 2:9?",
+    "prompt": "Como o anúncio em Lucas 2:10 responde ao que os pastores sentiram em Lucas 2:9?",
+    "cue": "Como o anúncio em Lucas 2:10 responde ao que os pastores sentiram em Lucas 2:9?",
+    "verseRef": "Lucas 2:9–10",
+    "passageText": "E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os pastores são mandados embora em silêncio"
+      },
+      {
+        "id": "b",
+        "text": "Ao grande temor chegam palavras de alegria"
+      },
+      {
+        "id": "c",
+        "text": "O temor prova que a notícia não era para eles"
+      },
+      {
+        "id": "d",
+        "text": "A luz desaparece antes de qualquer palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ficaram tomados de grande temor",
+    "feedbackCorrect": "Ao temor, o anjo responde para não terem medo, com alegria.",
+    "feedbackWrong": {
+      "a": "Eles ouvem o anúncio inteiro e recebem um sinal.",
+      "c": "A alegria anunciada é para todo o povo, incluindo eles.",
+      "d": "A glória permanece e a multidão celestial aparece depois."
+    },
+    "hint": "Compare o sentimento inicial com a primeira fala do anjo.",
+    "learningObjective": "Relacionar temor e anúncio na noite do nascimento.",
+    "evidence": [
+      "Lucas 2:9–10"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-04",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a busca em Lucas 15:4-5?",
+    "prompt": "Como avança a busca em Lucas 15:4-5?",
+    "cue": "Como avança a busca em Lucas 15:4-5?",
+    "verseRef": "Lucas 15:4–5",
+    "passageText": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la? E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma ovelha se perde entre cem"
+      },
+      {
+        "id": "b",
+        "text": "O dono vai buscar até encontrar"
+      },
+      {
+        "id": "c",
+        "text": "Ele a traz sobre os ombros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vai em busca daquela que se perdeu",
+    "feedbackCorrect": "Perda, busca empenhada e encontro com cuidado formam o arco.",
+    "feedbackWrong": {
+      "default": "Comece pelo que se perde no rebanho."
+    },
+    "hint": "Comece pelo que se perde no rebanho.",
+    "learningObjective": "Compreender o arco da busca pelo perdido.",
+    "evidence": [
+      "Lucas 15:4–5"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-05",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 24:45, o que Jesus abriu para os discípulos compreenderem as Escrituras?",
+    "prompt": "Em Lucas 24:45, o que Jesus abriu para os discípulos compreenderem as Escrituras?",
+    "cue": "Em Lucas 24:45, o que Jesus abriu para os discípulos compreenderem as Escrituras?",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "template": "Então, lhes abriu o ___ para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "entendimento"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "lhes abriu o entendimento",
+    "feedbackCorrect": "Jesus abre o entendimento e eles compreendem as Escrituras.",
+    "feedbackWrong": {
+      "a": "Caminho descreve a jornada, não o que é aberto neles aqui.",
+      "c": "A palavra usada por Lucas nomeia a capacidade de entender."
+    },
+    "hint": "Veja o que Jesus abre neles, segundo Lucas.",
+    "learningObjective": "Compreender como os discípulos passam a entender.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-06",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 9:48 a Marcos 10:45?",
+    "prompt": "O que liga Lucas 9:48 a Marcos 10:45?",
+    "cue": "O que liga Lucas 9:48 a Marcos 10:45?",
+    "verseRef": "Lucas 9:48",
+    "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande.",
+    "passageA": {
+      "ref": "Lucas 9:48",
+      "text": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande."
+    },
+    "passageB": {
+      "ref": "Marcos 10:45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Serviço só para líderes"
+      },
+      {
+        "id": "b",
+        "text": "Grandeza servindo aos outros"
+      },
+      {
+        "id": "c",
+        "text": "Grandeza mandando nos outros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+    "feedbackCorrect": "O menor é grande, e o Filho do Homem veio para servir.",
+    "feedbackWrong": {
+      "a": "O serviço de Jesus não se limita a quem lidera.",
+      "c": "Marcos apresenta Jesus servindo e dando a vida."
+    },
+    "hint": "Veja o que o Filho do Homem veio fazer em Marcos.",
+    "learningObjective": "Relacionar grandeza e serviço no desafio.",
+    "evidence": [
+      "Lucas 9:48",
+      "Marcos 10:45"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-07",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+    "prompt": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+    "cue": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+    "verseRef": "Lucas 2:7",
+    "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "hospedaria"
+      },
+      {
+        "id": "b",
+        "text": "porque"
+      },
+      {
+        "id": "c",
+        "text": "manjedoura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque não havia lugar para eles na hospedaria",
+    "feedbackCorrect": "A palavra abre o motivo de não haver lugar na hospedaria.",
+    "feedbackWrong": {
+      "a": "Isso é o lugar sem vaga, não a palavra do motivo.",
+      "c": "Isso é onde ele foi deitado, não a palavra do motivo."
+    },
+    "hint": "Procure a palavra do motivo no fim do versículo.",
+    "learningObjective": "Reconhecer a causa no nascimento humilde.",
+    "evidence": [
+      "Lucas 2:7"
+    ]
+  },
+  {
+    "id": "lucas-cam-lc-boss-revisao-08",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a conversa em Lucas 24:44-45?",
+    "prompt": "Como avança a conversa em Lucas 24:44-45?",
+    "cue": "Como avança a conversa em Lucas 24:44-45?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus lembra o que estava escrito"
+      },
+      {
+        "id": "b",
+        "text": "Ele abre o entendimento dos discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Eles passam a compreender as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então, lhes abriu o entendimento",
+    "feedbackCorrect": "Da lembrança do escrito, Jesus abre o entendimento deles.",
+    "feedbackWrong": {
+      "default": "As Escrituras compreendidas são o ponto de chegada."
+    },
+    "hint": "As Escrituras compreendidas são o ponto de chegada.",
+    "learningObjective": "Compreender a abertura das Escrituras aos discípulos.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-01",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 24:46-47 apresenta sofrimento, ressurreição e proclamação às nações como um só plano anunciado.",
+    "prompt": "Lucas 24:46-47 apresenta sofrimento, ressurreição e proclamação às nações como um só plano anunciado.",
+    "cue": "Lucas 24:46-47 apresenta sofrimento, ressurreição e proclamação às nações como um só plano anunciado.",
+    "verseRef": "Lucas 24:46–47",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "era necessário que o Cristo sofresse",
+    "feedbackCorrect": "O mesmo Jesus liga escrito, cruz, ressurreição e nações.",
+    "feedbackWrong": {
+      "false": "São fatos soltos sem ligação nas palavras de Jesus."
+    },
+    "hint": "Veja como Jesus costura os três pontos em sua fala.",
+    "learningObjective": "Interpretar a unidade do plano de Deus.",
+    "evidence": [
+      "Lucas 24:46–47"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-02",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+    "prompt": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+    "cue": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+    "verseRef": "Lucas 15:10",
+    "passageText": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende.",
+    "options": [
+      {
+        "id": "a",
+        "text": "da mesma maneira"
+      },
+      {
+        "id": "b",
+        "text": "um pecador"
+      },
+      {
+        "id": "c",
+        "text": "diante dos anjos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "há júbilo diante dos anjos de Deus",
+    "feedbackCorrect": "O júbilo acontece diante dos anjos de Deus.",
+    "feedbackWrong": {
+      "a": "Isso liga as histórias, não indica o lugar do júbilo.",
+      "b": "Isso é quem se arrepende, não o lugar da alegria."
+    },
+    "hint": "Procure o lugar dessa alegria no fim de Lucas 15.",
+    "learningObjective": "Sustentar a alegria celestial pelo arrependido.",
+    "evidence": [
+      "Lucas 15:10"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-03",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 9:51 sustenta sobre Jesus a caminho de Jerusalém?",
+    "prompt": "Que leitura Lucas 9:51 sustenta sobre Jesus a caminho de Jerusalém?",
+    "cue": "Que leitura Lucas 9:51 sustenta sobre Jesus a caminho de Jerusalém?",
+    "verseRef": "Lucas 9:51",
+    "passageText": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é levado sem saber para onde vai"
+      },
+      {
+        "id": "b",
+        "text": "Ele desiste do caminho diante da recusa"
+      },
+      {
+        "id": "c",
+        "text": "Ele foge de Jerusalém ao ser rejeitado"
+      },
+      {
+        "id": "d",
+        "text": "Ele segue com decisão firme e obediente"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém",
+    "feedbackCorrect": "A decisão é firme e visível antes da rejeição samaritana.",
+    "feedbackWrong": {
+      "a": "O texto mostra decisão consciente, não alguém arrastado.",
+      "b": "Ele envia mensageiros e mantém o rumo decidido.",
+      "c": "A rejeição vem depois, e ele já decidira ir a Jerusalém."
+    },
+    "hint": "Veja a força da decisão antes da rejeição.",
+    "learningObjective": "Escolher a interpretação da firmeza de Jesus.",
+    "evidence": [
+      "Lucas 9:51"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-04",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio de Lucas do nascimento à missão?",
+    "prompt": "Qual sequência revela o fio de Lucas do nascimento à missão?",
+    "cue": "Qual sequência revela o fio de Lucas do nascimento à missão?",
+    "verseRef": "Lucas 2:11",
+    "passageText": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Salvador nasce na cidade de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Perdidos são buscados e celebrados"
+      },
+      {
+        "id": "c",
+        "text": "O Cristo ressuscitado envia testemunhas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nasceu para vocês o Salvador",
+    "feedbackCorrect": "Do nascimento humilde à busca e ao envio, Lucas mostra o Salvador.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio do nascimento."
+    },
+    "hint": "Comece pelo anúncio do nascimento.",
+    "learningObjective": "Ver o fio inteiro do Evangelho de Lucas.",
+    "evidence": [
+      "Lucas 2:11",
+      "Lucas 15:7",
+      "Lucas 24:48"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-05",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 15:7, por quem há júbilo no céu quando muda de rumo?",
+    "prompt": "Em Lucas 15:7, por quem há júbilo no céu quando muda de rumo?",
+    "cue": "Em Lucas 15:7, por quem há júbilo no céu quando muda de rumo?",
+    "verseRef": "Lucas 15:7",
+    "passageText": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "template": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se ___ do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconde"
+      },
+      {
+        "id": "b",
+        "text": "afasta"
+      },
+      {
+        "id": "c",
+        "text": "arrepende"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por causa de um pecador que se arrepende",
+    "feedbackCorrect": "Um pecador que se arrepende é o motivo do júbilo no céu.",
+    "feedbackWrong": {
+      "a": "O achado é celebrado com outros, não escondido.",
+      "b": "Quem se afasta está perdido antes da festa do encontro."
+    },
+    "hint": "Veja a condição ligada ao júbilo no céu.",
+    "learningObjective": "Lembrar o coração da busca pelos perdidos.",
+    "evidence": [
+      "Lucas 15:7"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-06",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 24:48 a Atos 1:8?",
+    "prompt": "O que liga Lucas 24:48 a Atos 1:8?",
+    "cue": "O que liga Lucas 24:48 a Atos 1:8?",
+    "verseRef": "Lucas 24:48",
+    "passageText": "E vocês são testemunhas dessas coisas.",
+    "passageA": {
+      "ref": "Lucas 24:48",
+      "text": "E vocês são testemunhas dessas coisas."
+    },
+    "passageB": {
+      "ref": "Atos 1:8",
+      "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunhas até os confins"
+      },
+      {
+        "id": "b",
+        "text": "Missão sem o Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Testemunho guardado em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vocês são testemunhas dessas coisas",
+    "feedbackCorrect": "As testemunhas de Lucas vão até os confins em Atos.",
+    "feedbackWrong": {
+      "b": "Atos une testemunho e poder do Espírito Santo.",
+      "c": "O chamado já nasce para ser anunciado, não guardado."
+    },
+    "hint": "Veja até onde as testemunhas vão em Atos.",
+    "learningObjective": "Ligar as testemunhas à missão universal.",
+    "evidence": [
+      "Lucas 24:48",
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-07",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+    "prompt": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+    "cue": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "era necessário"
+      },
+      {
+        "id": "b",
+        "text": "terceiro dia"
+      },
+      {
+        "id": "c",
+        "text": "dos mortos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "era necessário que o Cristo sofresse",
+    "feedbackCorrect": "Sofrer e ressuscitar eram necessários no plano escrito.",
+    "feedbackWrong": {
+      "b": "Isso marca o tempo da ressurreição, não a necessidade.",
+      "c": "Isso diz de onde ele ressuscita, não a necessidade."
+    },
+    "hint": "Procure as palavras de necessidade no plano escrito.",
+    "learningObjective": "Sustentar o plano do sofrimento e da ressurreição.",
+    "evidence": [
+      "Lucas 24:46"
+    ]
+  },
+  {
+    "id": "lucas-pro-lc-boss-revisao-08",
+    "trail": "lucas",
+    "section": "lc-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus que atravessa Lucas?",
+    "prompt": "Qual sequência revela o cuidado de Deus que atravessa Lucas?",
+    "cue": "Qual sequência revela o cuidado de Deus que atravessa Lucas?",
+    "verseRef": "Lucas 15:7",
+    "passageText": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor busca a ovelha perdida"
+      },
+      {
+        "id": "b",
+        "text": "Jesus celebra o pecador arrependido"
+      },
+      {
+        "id": "c",
+        "text": "Testemunhas levam arrependimento às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "maior júbilo no céu por causa de um pecador que se arrepende",
+    "feedbackCorrect": "Da busca de Deus ao envio das testemunhas, perdidos são alcançados.",
+    "feedbackWrong": {
+      "default": "Comece pela busca atribuída ao próprio Senhor."
+    },
+    "hint": "Comece pela busca atribuída ao próprio Senhor.",
+    "learningObjective": "Ver o cuidado de Deus até as nações.",
+    "evidence": [
+      "Lucas 15:7",
+      "Ezequiel 34:11",
+      "Lucas 24:47"
+    ]
+  }
+]

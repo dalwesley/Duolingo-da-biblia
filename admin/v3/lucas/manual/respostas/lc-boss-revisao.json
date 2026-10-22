@@ -1,0 +1,925 @@
+{
+ "study": {
+  "passageRef": "Lucas 2:10–11",
+  "passages": [
+   {
+    "ref": "Lucas 2:7–14"
+   },
+   {
+    "ref": "Lucas 15:4–10"
+   },
+   {
+    "ref": "Lucas 9:48–54"
+   },
+   {
+    "ref": "Lucas 24:43–50"
+   }
+  ],
+  "context": "Este desafio revisita Lucas: o Salvador anunciado a pastores, a busca pelos perdidos, a decisão de ir a Jerusalém e o Cristo ressuscitado que envia testemunhas.",
+  "keyword": "Salvador",
+  "keywordGloss": "Jesus nasce humilde, busca os perdidos, segue a Jerusalém e vence ressuscitando.",
+  "focusQuestion": "Qual parte do caminho de Jesus em Lucas mais chama você a segui-lo hoje?",
+  "reflectionPrompts": [
+   "Salvador dos humildes",
+   "Deus busca os perdidos",
+   "Testemunhas do ressuscitado"
+  ],
+  "facts": [
+   {
+    "text": "Na cidade de Davi nasceu o Salvador, que é Cristo, o Senhor.",
+    "evidenceRef": "Lucas 2:11",
+    "evidenceSpan": "nasceu para vocês o Salvador"
+   },
+   {
+    "text": "Há maior júbilo no céu por um pecador que se arrepende.",
+    "evidenceRef": "Lucas 15:7",
+    "evidenceSpan": "haverá maior júbilo no céu"
+   },
+   {
+    "text": "Jesus decidiu firmemente ir para Jerusalém.",
+    "evidenceRef": "Lucas 9:51",
+    "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém"
+   },
+   {
+    "text": "Era necessário o Cristo sofrer e ressuscitar no terceiro dia.",
+    "evidenceRef": "Lucas 24:46",
+    "evidenceSpan": "era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia"
+   },
+   {
+    "text": "Arrependimento seria proclamado a todas as nações, começando por Jerusalém.",
+    "evidenceRef": "Lucas 24:47",
+    "evidenceSpan": "se proclamará arrependimento para a remissão dos pecados a todas as nações"
+   },
+   {
+    "text": "Os discípulos são testemunhas dessas coisas.",
+    "evidenceRef": "Lucas 24:48",
+    "evidenceSpan": "vocês são testemunhas dessas coisas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Salvador",
+    "gloss": "Jesus, anunciado no nascimento como quem vem salvar o povo."
+   },
+   {
+    "term": "arrepende",
+    "gloss": "Mudança de quem se perdeu e volta, motivo de júbilo no céu."
+   },
+   {
+    "term": "testemunhas",
+    "gloss": "Discípulos que viram o ressuscitado e anunciam a todas as nações."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Nascimento anunciado aos pastores",
+    "evidenceRef": "Lucas 2:11"
+   },
+   {
+    "label": "Perdidos buscados com alegria",
+    "evidenceRef": "Lucas 15:7"
+   },
+   {
+    "label": "Caminho firme para Jerusalém",
+    "evidenceRef": "Lucas 9:51"
+   },
+   {
+    "label": "Cristo ressuscitado envia testemunhas",
+    "evidenceRef": "Lucas 24:48"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "O menino fica na manjedoura porque não havia lugar na hospedaria.",
+    "marker": "porque",
+    "evidenceRef": "Lucas 2:7"
+   },
+   {
+    "kind": "contraste",
+    "text": "Mensageiros preparam pousada, mas samaritanos não recebem Jesus.",
+    "marker": "Mas",
+    "evidenceRef": "Lucas 9:53"
+   },
+   {
+    "kind": "propósito",
+    "text": "Arrependimento é proclamado para remissão dos pecados a todas as nações.",
+    "marker": "para",
+    "evidenceRef": "Lucas 24:47"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Ezequiel 34:11",
+    "bridge": "O Senhor busca suas ovelhas"
+   },
+   {
+    "ref": "Marcos 10:45",
+    "bridge": "Grandeza servindo e salvando"
+   },
+   {
+    "ref": "Atos 1:8",
+    "bridge": "Testemunhas até os confins"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus anuncia salvação só para pessoas importantes.",
+    "why": "O nascimento é anunciado a pastores e a alegria é para todo o povo (Lc 2)."
+   },
+   {
+    "text": "O perdido deve voltar sozinho, sem ser buscado.",
+    "why": "Lucas 15 mostra busca empenhada até encontrar o que se perdeu."
+   },
+   {
+    "text": "A cruz foi derrota fora do plano de Deus.",
+    "why": "Jesus afirma que estava escrito que o Cristo sofresse e ressuscitasse (24:46)."
+   }
+  ],
+  "centralInsight": "Jesus é o Salvador que nasce humilde, busca os perdidos, segue firme a Jerusalém e vence pela ressurreição.",
+  "anchorQuestion": "Como Lucas apresenta Jesus do nascimento humilde à ressurreição?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lucas 15:5, ao encontrar a ovelha perdida, o homem a coloca sobre os ombros com júbilo.",
+   "verseRef": "Lucas 15:5",
+   "evidenceSpan": "a coloca sobre os ombros, transbordando de júbilo",
+   "feedbackCorrect": "O encontro termina em cuidado e júbilo sobre os ombros.",
+   "feedbackWrong": {
+    "false": "Ele a deixa no campo por estar cansado da busca."
+   },
+   "hint": "Veja o gesto dele ao encontrar a ovelha.",
+   "learningObjective": "Revisar a alegria de encontrar o perdido.",
+   "evidence": [
+    "Lucas 15:5"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lucas 2:11, toque quem nasceu na cidade de Davi.",
+   "verseRef": "Lucas 2:11",
+   "evidenceSpan": "nasceu para vocês o Salvador",
+   "feedbackCorrect": "Quem nasce é o Salvador, que é Cristo, o Senhor.",
+   "feedbackWrong": {
+    "b": "Isso diz onde ele nasceu, não quem nasceu.",
+    "c": "Isso é o título final, mas o nome da missão vem antes na frase."
+   },
+   "hint": "Veja o nome central do anúncio do anjo.",
+   "learningObjective": "Revisar quem é o menino anunciado.",
+   "evidence": [
+    "Lucas 2:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "o Salvador"
+    },
+    {
+     "id": "b",
+     "text": "cidade de Davi"
+    },
+    {
+     "id": "c",
+     "text": "o Senhor"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lucas 24:48, o que Jesus diz que os discípulos são?",
+   "verseRef": "Lucas 24:48",
+   "evidenceSpan": "vocês são testemunhas dessas coisas",
+   "feedbackCorrect": "Jesus os chama de testemunhas do que viram nele.",
+   "feedbackWrong": {
+    "b": "As Escrituras são abertas por Jesus, não possuídas por eles.",
+    "c": "A missão é anunciar, não julgar as nações.",
+    "d": "Betânia é lugar da partida, não função dos discípulos."
+   },
+   "hint": "Leia a frase curta de Jesus aos discípulos.",
+   "learningObjective": "Revisar o papel dos discípulos ressuscitados.",
+   "evidence": [
+    "Lucas 24:48"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Testemunhas dessas coisas"
+    },
+    {
+     "id": "b",
+     "text": "Donos das Escrituras"
+    },
+    {
+     "id": "c",
+     "text": "Juízes das nações"
+    },
+    {
+     "id": "d",
+     "text": "Guardiões de Betânia"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lucas 2:10 na ordem do texto.",
+   "verseRef": "Lucas 2:10",
+   "evidenceSpan": "Não tenham medo",
+   "feedbackCorrect": "O anjo acalma, anuncia alegria e abre o alcance a todo o povo.",
+   "feedbackWrong": {
+    "default": "Comece pela primeira fala do anjo."
+   },
+   "hint": "Comece pela primeira fala do anjo.",
+   "learningObjective": "Reconhecer a sequência do anúncio aos pastores.",
+   "evidence": [
+    "Lucas 2:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Não tenham medo"
+    },
+    {
+     "id": "b",
+     "text": "pois aqui trago boas novas de grande alegria"
+    },
+    {
+     "id": "c",
+     "text": "que serão para todo o povo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lucas 9:48, como Jesus chama quem é menor entre todos?",
+   "verseRef": "Lucas 9:48",
+   "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+   "feedbackCorrect": "Para Jesus, o menor é quem realmente é grande.",
+   "feedbackWrong": {
+    "b": "Pequeno descreve aparência, não o veredito de Jesus.",
+    "c": "Último remete à disputa de posições que Jesus corrige."
+   },
+   "hint": "Veja o veredito no fim do ensino sobre a criança.",
+   "learningObjective": "Revisar a medida de grandeza de Jesus.",
+   "evidence": [
+    "Lucas 9:48"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "grande"
+    },
+    {
+     "id": "b",
+     "text": "pequeno"
+    },
+    {
+     "id": "c",
+     "text": "último"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lucas 15:6 comunica que se liga a este contexto?",
+   "verseRef": "Lucas 15:6",
+   "evidenceSpan": "Alegrem-se comigo, porque já achei a minha ovelha perdida",
+   "feedbackCorrect": "Amigos e vizinhos são reunidos para celebrar o achado.",
+   "feedbackWrong": {
+    "b": "Ele chama outros para contar, sem esconder a alegria.",
+    "c": "A busca mostra quanto a ovelha vale para o dono."
+   },
+   "hint": "Veja quem é reunido ao chegar em casa.",
+   "learningObjective": "Ligar o achado à festa partilhada.",
+   "evidence": [
+    "Lucas 15:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Alegria partilhada ao encontrar"
+    },
+    {
+     "id": "b",
+     "text": "Busca feita em segredo"
+    },
+    {
+     "id": "c",
+     "text": "Perda sem qualquer valor"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Lucas 15:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Encontrar o que estava perdido é motivo de festa partilhada."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lucas 24:49, toque com o que os discípulos seriam revestidos.",
+   "verseRef": "Lucas 24:49",
+   "evidenceSpan": "até que do alto sejam revestidos de poder",
+   "feedbackCorrect": "A promessa do Pai reveste os discípulos de poder do alto.",
+   "feedbackWrong": {
+    "b": "Isso diz quem envia a promessa, não aquilo que reveste.",
+    "c": "Isso diz onde esperar, não aquilo que reveste."
+   },
+   "hint": "Veja o dom que vem do alto na promessa.",
+   "learningObjective": "Revisar a promessa antes da missão.",
+   "evidence": [
+    "Lucas 24:49"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "de poder"
+    },
+    {
+     "id": "b",
+     "text": "meu Pai"
+    },
+    {
+     "id": "c",
+     "text": "na cidade"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lucas 15:8 na ordem do texto.",
+   "verseRef": "Lucas 15:8",
+   "evidenceSpan": "Ou qual é a mulher que, tendo dez dracmas",
+   "feedbackCorrect": "Dez dracmas, uma perdida, busca por toda a casa até achar.",
+   "feedbackWrong": {
+    "default": "Comece pelo total que a mulher possuía."
+   },
+   "hint": "Comece pelo total que a mulher possuía.",
+   "learningObjective": "Reconhecer a sequência da busca da dracma.",
+   "evidence": [
+    "Lucas 15:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ou qual é a mulher que, tendo dez dracmas"
+    },
+    {
+     "id": "b",
+     "text": "se perde uma, não acende a candeia"
+    },
+    {
+     "id": "c",
+     "text": "varre a casa e a procura diligentemente até encontrá-la"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lucas 9:50, Jesus manda proibir quem expulsava demônios sem andar com o grupo dos discípulos.",
+   "verseRef": "Lucas 9:50",
+   "evidenceSpan": "Não proibam",
+   "feedbackCorrect": "Jesus diz o contrário, mandando não proibir.",
+   "feedbackWrong": {
+    "true": "É verdade, pois ele defende a exclusividade do grupo."
+   },
+   "hint": "Leia a ordem curta de Jesus a João.",
+   "learningObjective": "Compreender a correção ao exclusivismo.",
+   "evidence": [
+    "Lucas 9:50"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lucas 15:7, toque a palavra que liga a história da ovelha à alegria no céu.",
+   "verseRef": "Lucas 15:7",
+   "evidenceSpan": "assim, haverá maior júbilo no céu",
+   "feedbackCorrect": "Essa palavra faz a ponte da história para a aplicação no céu.",
+   "feedbackWrong": {
+    "b": "Isso descreve a alegria, não a palavra de ligação.",
+    "c": "Isso é quem se arrepende, não a ligação da história."
+   },
+   "hint": "Procure uma palavra curta logo após a fala de Jesus.",
+   "learningObjective": "Reconhecer a ponte entre história e aplicação.",
+   "evidence": [
+    "Lucas 15:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "assim"
+    },
+    {
+     "id": "b",
+     "text": "maior júbilo"
+    },
+    {
+     "id": "c",
+     "text": "um pecador"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o anúncio em Lucas 2:10 responde ao que os pastores sentiram em Lucas 2:9?",
+   "verseRef": "Lucas 2:9–10",
+   "evidenceSpan": "ficaram tomados de grande temor",
+   "feedbackCorrect": "Ao temor, o anjo responde para não terem medo, com alegria.",
+   "feedbackWrong": {
+    "b": "Eles ouvem o anúncio inteiro e recebem um sinal.",
+    "c": "A alegria anunciada é para todo o povo, incluindo eles.",
+    "d": "A glória permanece e a multidão celestial aparece depois."
+   },
+   "hint": "Compare o sentimento inicial com a primeira fala do anjo.",
+   "learningObjective": "Relacionar temor e anúncio na noite do nascimento.",
+   "evidence": [
+    "Lucas 2:9–10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ao grande temor chegam palavras de alegria"
+    },
+    {
+     "id": "b",
+     "text": "Os pastores são mandados embora em silêncio"
+    },
+    {
+     "id": "c",
+     "text": "O temor prova que a notícia não era para eles"
+    },
+    {
+     "id": "d",
+     "text": "A luz desaparece antes de qualquer palavra"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a busca em Lucas 15:4-5?",
+   "verseRef": "Lucas 15:4–5",
+   "evidenceSpan": "vai em busca daquela que se perdeu",
+   "feedbackCorrect": "Perda, busca empenhada e encontro com cuidado formam o arco.",
+   "feedbackWrong": {
+    "default": "Comece pelo que se perde no rebanho."
+   },
+   "hint": "Comece pelo que se perde no rebanho.",
+   "learningObjective": "Compreender o arco da busca pelo perdido.",
+   "evidence": [
+    "Lucas 15:4–5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Uma ovelha se perde entre cem"
+    },
+    {
+     "id": "b",
+     "text": "O dono vai buscar até encontrar"
+    },
+    {
+     "id": "c",
+     "text": "Ele a traz sobre os ombros"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lucas 24:45, o que Jesus abriu para os discípulos compreenderem as Escrituras?",
+   "verseRef": "Lucas 24:45",
+   "evidenceSpan": "lhes abriu o entendimento",
+   "feedbackCorrect": "Jesus abre o entendimento e eles compreendem as Escrituras.",
+   "feedbackWrong": {
+    "b": "Caminho descreve a jornada, não o que é aberto neles aqui.",
+    "c": "A palavra usada por Lucas nomeia a capacidade de entender."
+   },
+   "hint": "Veja o que Jesus abre neles, segundo Lucas.",
+   "learningObjective": "Compreender como os discípulos passam a entender.",
+   "evidence": [
+    "Lucas 24:45"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "entendimento"
+    },
+    {
+     "id": "b",
+     "text": "caminho"
+    },
+    {
+     "id": "c",
+     "text": "coração"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lucas 9:48 a Marcos 10:45?",
+   "verseRef": "Lucas 9:48",
+   "evidenceSpan": "o menor entre vocês é quem realmente é grande",
+   "feedbackCorrect": "O menor é grande, e o Filho do Homem veio para servir.",
+   "feedbackWrong": {
+    "b": "Marcos apresenta Jesus servindo e dando a vida.",
+    "c": "O serviço de Jesus não se limita a quem lidera."
+   },
+   "hint": "Veja o que o Filho do Homem veio fazer em Marcos.",
+   "learningObjective": "Relacionar grandeza e serviço no desafio.",
+   "evidence": [
+    "Lucas 9:48",
+    "Marcos 10:45"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Grandeza servindo aos outros"
+    },
+    {
+     "id": "b",
+     "text": "Grandeza mandando nos outros"
+    },
+    {
+     "id": "c",
+     "text": "Serviço só para líderes"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Lucas 9:48"
+   },
+   "passageB": {
+    "ref": "Marcos 10:45"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lucas 2:7, toque a palavra que explica por que o menino ficou na manjedoura.",
+   "verseRef": "Lucas 2:7",
+   "evidenceSpan": "porque não havia lugar para eles na hospedaria",
+   "feedbackCorrect": "A palavra abre o motivo de não haver lugar na hospedaria.",
+   "feedbackWrong": {
+    "b": "Isso é onde ele foi deitado, não a palavra do motivo.",
+    "c": "Isso é o lugar sem vaga, não a palavra do motivo."
+   },
+   "hint": "Procure a palavra do motivo no fim do versículo.",
+   "learningObjective": "Reconhecer a causa no nascimento humilde.",
+   "evidence": [
+    "Lucas 2:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "porque"
+    },
+    {
+     "id": "b",
+     "text": "manjedoura"
+    },
+    {
+     "id": "c",
+     "text": "hospedaria"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a conversa em Lucas 24:44-45?",
+   "verseRef": "Lucas 24:44–45",
+   "evidenceSpan": "Então, lhes abriu o entendimento",
+   "feedbackCorrect": "Da lembrança do escrito, Jesus abre o entendimento deles.",
+   "feedbackWrong": {
+    "default": "As Escrituras compreendidas são o ponto de chegada."
+   },
+   "hint": "As Escrituras compreendidas são o ponto de chegada.",
+   "learningObjective": "Compreender a abertura das Escrituras aos discípulos.",
+   "evidence": [
+    "Lucas 24:44–45"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus lembra o que estava escrito"
+    },
+    {
+     "id": "b",
+     "text": "Ele abre o entendimento dos discípulos"
+    },
+    {
+     "id": "c",
+     "text": "Eles passam a compreender as Escrituras"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Lucas 24:46-47 apresenta sofrimento, ressurreição e proclamação às nações como um só plano anunciado.",
+   "verseRef": "Lucas 24:46–47",
+   "evidenceSpan": "era necessário que o Cristo sofresse",
+   "feedbackCorrect": "O mesmo Jesus liga escrito, cruz, ressurreição e nações.",
+   "feedbackWrong": {
+    "false": "São fatos soltos sem ligação nas palavras de Jesus."
+   },
+   "hint": "Veja como Jesus costura os três pontos em sua fala.",
+   "learningObjective": "Interpretar a unidade do plano de Deus.",
+   "evidence": [
+    "Lucas 24:46–47"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lucas 15:10, toque onde há júbilo por um pecador que se arrepende.",
+   "verseRef": "Lucas 15:10",
+   "evidenceSpan": "há júbilo diante dos anjos de Deus",
+   "feedbackCorrect": "O júbilo acontece diante dos anjos de Deus.",
+   "feedbackWrong": {
+    "b": "Isso é quem se arrepende, não o lugar da alegria.",
+    "c": "Isso liga as histórias, não indica o lugar do júbilo."
+   },
+   "hint": "Procure o lugar dessa alegria no fim de Lucas 15.",
+   "learningObjective": "Sustentar a alegria celestial pelo arrependido.",
+   "evidence": [
+    "Lucas 15:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "diante dos anjos"
+    },
+    {
+     "id": "b",
+     "text": "um pecador"
+    },
+    {
+     "id": "c",
+     "text": "da mesma maneira"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lucas 9:51 sustenta sobre Jesus a caminho de Jerusalém?",
+   "verseRef": "Lucas 9:51",
+   "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém",
+   "feedbackCorrect": "A decisão é firme e visível antes da rejeição samaritana.",
+   "feedbackWrong": {
+    "b": "A rejeição vem depois, e ele já decidira ir a Jerusalém.",
+    "c": "O texto mostra decisão consciente, não alguém arrastado.",
+    "d": "Ele envia mensageiros e mantém o rumo decidido."
+   },
+   "hint": "Veja a força da decisão antes da rejeição.",
+   "learningObjective": "Escolher a interpretação da firmeza de Jesus.",
+   "evidence": [
+    "Lucas 9:51"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele segue com decisão firme e obediente"
+    },
+    {
+     "id": "b",
+     "text": "Ele foge de Jerusalém ao ser rejeitado"
+    },
+    {
+     "id": "c",
+     "text": "Ele é levado sem saber para onde vai"
+    },
+    {
+     "id": "d",
+     "text": "Ele desiste do caminho diante da recusa"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio de Lucas do nascimento à missão?",
+   "verseRef": "Lucas 2:11",
+   "evidenceSpan": "nasceu para vocês o Salvador",
+   "feedbackCorrect": "Do nascimento humilde à busca e ao envio, Lucas mostra o Salvador.",
+   "feedbackWrong": {
+    "default": "Comece pelo anúncio do nascimento."
+   },
+   "hint": "Comece pelo anúncio do nascimento.",
+   "learningObjective": "Ver o fio inteiro do Evangelho de Lucas.",
+   "evidence": [
+    "Lucas 2:11",
+    "Lucas 15:7",
+    "Lucas 24:48"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O Salvador nasce na cidade de Davi"
+    },
+    {
+     "id": "b",
+     "text": "Perdidos são buscados e celebrados"
+    },
+    {
+     "id": "c",
+     "text": "O Cristo ressuscitado envia testemunhas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lucas 15:7, por quem há júbilo no céu quando muda de rumo?",
+   "verseRef": "Lucas 15:7",
+   "evidenceSpan": "por causa de um pecador que se arrepende",
+   "feedbackCorrect": "Um pecador que se arrepende é o motivo do júbilo no céu.",
+   "feedbackWrong": {
+    "b": "Quem se afasta está perdido antes da festa do encontro.",
+    "c": "O achado é celebrado com outros, não escondido."
+   },
+   "hint": "Veja a condição ligada ao júbilo no céu.",
+   "learningObjective": "Lembrar o coração da busca pelos perdidos.",
+   "evidence": [
+    "Lucas 15:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "arrepende"
+    },
+    {
+     "id": "b",
+     "text": "afasta"
+    },
+    {
+     "id": "c",
+     "text": "esconde"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lucas 24:48 a Atos 1:8?",
+   "verseRef": "Lucas 24:48",
+   "evidenceSpan": "vocês são testemunhas dessas coisas",
+   "feedbackCorrect": "As testemunhas de Lucas vão até os confins em Atos.",
+   "feedbackWrong": {
+    "b": "O chamado já nasce para ser anunciado, não guardado.",
+    "c": "Atos une testemunho e poder do Espírito Santo."
+   },
+   "hint": "Veja até onde as testemunhas vão em Atos.",
+   "learningObjective": "Ligar as testemunhas à missão universal.",
+   "evidence": [
+    "Lucas 24:48",
+    "Atos 1:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Testemunhas até os confins"
+    },
+    {
+     "id": "b",
+     "text": "Testemunho guardado em Jerusalém"
+    },
+    {
+     "id": "c",
+     "text": "Missão sem o Espírito"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Lucas 24:48"
+   },
+   "passageB": {
+    "ref": "Atos 1:8"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lucas 24:46, toque o trecho que mostra que o sofrimento fazia parte do escrito.",
+   "verseRef": "Lucas 24:46",
+   "evidenceSpan": "era necessário que o Cristo sofresse",
+   "feedbackCorrect": "Sofrer e ressuscitar eram necessários no plano escrito.",
+   "feedbackWrong": {
+    "b": "Isso marca o tempo da ressurreição, não a necessidade.",
+    "c": "Isso diz de onde ele ressuscita, não a necessidade."
+   },
+   "hint": "Procure as palavras de necessidade no plano escrito.",
+   "learningObjective": "Sustentar o plano do sofrimento e da ressurreição.",
+   "evidence": [
+    "Lucas 24:46"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "era necessário"
+    },
+    {
+     "id": "b",
+     "text": "terceiro dia"
+    },
+    {
+     "id": "c",
+     "text": "dos mortos"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o cuidado de Deus que atravessa Lucas?",
+   "verseRef": "Lucas 15:7",
+   "evidenceSpan": "maior júbilo no céu por causa de um pecador que se arrepende",
+   "feedbackCorrect": "Da busca de Deus ao envio das testemunhas, perdidos são alcançados.",
+   "feedbackWrong": {
+    "default": "Comece pela busca atribuída ao próprio Senhor."
+   },
+   "hint": "Comece pela busca atribuída ao próprio Senhor.",
+   "learningObjective": "Ver o cuidado de Deus até as nações.",
+   "evidence": [
+    "Lucas 15:7",
+    "Ezequiel 34:11",
+    "Lucas 24:47"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor busca a ovelha perdida"
+    },
+    {
+     "id": "b",
+     "text": "Jesus celebra o pecador arrependido"
+    },
+    {
+     "id": "c",
+     "text": "Testemunhas levam arrependimento às nações"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

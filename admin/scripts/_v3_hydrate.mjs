@@ -6,7 +6,7 @@
  * `compactCena` faz o caminho inverso, para mostrar ao modelo os exemplos de
  * Gênesis no mesmo formato enxuto que ele deve devolver.
  */
-import { passageText, verseCount } from './_jfaal.mjs';
+import { parseRef, passageText, splitRanges, verseCount } from './_jfaal.mjs';
 
 export const SHORT = { semente: 'sem', caminhada: 'cam', profundezas: 'pro' };
 export const SKILL = { semente: 'observe', caminhada: 'understand', profundezas: 'interpret' };
@@ -154,4 +154,38 @@ export function compactCena(cena) {
     return q;
   });
   return { study: s, questions };
+}
+
+/**
+ * A cena fica no livro e nos capítulos do seu pacote (com folga de um
+ * capítulo para o contexto vizinho). O validador confere se cada referência
+ * existe na JFAAL, não se é desta cena: uma cena de outro livro passaria.
+ * Textos cruzados (crossRefs, passageB) ficam de fora: vêm de fora mesmo.
+ */
+export function scopeErrors(cena, packet) {
+  const chapters = new Map();
+  // O hookRef da cena conta também: o Desafio final cobre a trilha inteira ("Gênesis 1–12").
+  const own = splitRanges(packet.mission?.hookRef).map((r) => r.ref);
+  for (const r of [...(packet.ranges || []), ...(packet.verses || []).map((v) => v.ref), ...own]) {
+    const p = parseRef(r);
+    if (!p) continue;
+    if (!chapters.has(p.book)) chapters.set(p.book, new Set());
+    chapters.get(p.book).add(p.chapter);
+  }
+  if (!chapters.size) return [];
+  const outside = (ref) => {
+    const p = parseRef(ref);
+    if (!p) return true;
+    const near = chapters.get(p.book);
+    return !near || ![...near].some((c) => Math.abs(c - p.chapter) <= 1);
+  };
+  const errs = [];
+  const s = cena.study || {};
+  const hint = 'fora do livro e dos capítulos da cena (use os versos de "verses")';
+  if (s.passageRef && outside(s.passageRef)) errs.push(`estudo: passageRef "${s.passageRef}" ${hint}`);
+  for (const f of s.facts || []) if (f.evidenceRef && outside(f.evidenceRef)) errs.push(`estudo: fact com evidenceRef "${f.evidenceRef}" ${hint}`);
+  for (const q of cena.questions || []) {
+    if (q.verseRef && outside(q.verseRef)) errs.push(`${q.id}: verseRef "${q.verseRef}" ${hint}`);
+  }
+  return errs;
 }

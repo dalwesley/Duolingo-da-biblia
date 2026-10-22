@@ -1,0 +1,321 @@
+{
+ "study": {
+  "passageRef": "Tiago 2:14–17",
+  "passages": [{ "ref": "Tiago 2:14–17" }],
+  "context": "Tiago escreve a crentes que diziam crer, mas não ajudavam quem passava necessidade. Ele usa um caso concreto para mostrar quanto vale uma fé que fica só em palavras.",
+  "keyword": "fé e obras",
+  "keywordGloss": "No texto, a fé verdadeira aparece nas obras de ajuda a quem precisa.",
+  "focusQuestion": "Onde a sua fé pode virar ajuda concreta para alguém nesta semana?",
+  "reflectionPrompts": ["Fé que aparece", "Ajudar quem precisa", "Palavras e ação"],
+  "facts": [
+   { "text": "Tiago pergunta de que adianta afirmar fé sem obras.", "evidenceRef": "Tiago 2:14", "evidenceSpan": "de que adianta alguém afirmar que tem fé, se não tiver obras" },
+   { "text": "Um irmão ou uma irmã pode estar precisando de roupa e do alimento diário.", "evidenceRef": "Tiago 2:15", "evidenceSpan": "necessitando de roupa e carecendo do alimento diário" },
+   { "text": "Palavras de paz sem dar o necessário para o corpo não trazem benefício.", "evidenceRef": "Tiago 2:16", "evidenceSpan": "mas não lhes der o necessário para o corpo, qual é o benefício disso" },
+   { "text": "A fé sem obras está morta por si só.", "evidenceRef": "Tiago 2:17", "evidenceSpan": "a fé, se não tiver obras, está morta por si só" },
+   { "text": "Até os demônios creem que há um só Deus e tremem.", "evidenceRef": "Tiago 2:19", "evidenceSpan": "até mesmo os demônios creem e tremem" }
+  ],
+  "keyTerms": [
+   { "term": "obras", "gloss": "Ações concretas de ajuda que mostram se a fé afirmada está viva." },
+   { "term": "morta", "gloss": "É como Tiago chama a fé sem obras: sem vida, sem fruto, por si só." },
+   { "term": "fé", "gloss": "Confiança afirmada em Deus, que o texto prova pelas ações, não só pelas palavras." }
+  ],
+  "structure": [
+   { "label": "A pergunta que abre o argumento", "evidenceRef": "Tiago 2:14" },
+   { "label": "O caso do irmão necessitado", "evidenceRef": "Tiago 2:15" },
+   { "label": "Palavras sem o necessário", "evidenceRef": "Tiago 2:16" },
+   { "label": "A conclusão sobre a fé sem obras", "evidenceRef": "Tiago 2:17" }
+  ],
+  "relations": [
+   { "kind": "contraste", "text": "Dizer palavras boas a quem precisa contrasta com não dar o necessário para o corpo.", "marker": "mas", "evidenceRef": "Tiago 2:16" },
+   { "kind": "resultado", "text": "Sem obras, o resultado da fé afirmada é estar morta por si só.", "marker": "Assim", "evidenceRef": "Tiago 2:17" },
+   { "kind": "contraste", "text": "Crer que há um só Deus sem obedecer fica no nível dos demônios, que creem e tremem.", "marker": null, "evidenceRef": "Tiago 2:19" }
+  ],
+  "crossRefs": [
+   { "ref": "Mateus 7:21", "bridge": "Fé que pratica a vontade" },
+   { "ref": "Efésios 2:10", "bridge": "Criados para boas obras" },
+   { "ref": "1 João 3:18", "bridge": "Amar em ações verdadeiras" }
+  ],
+  "misreadings": [
+   { "text": "Boas obras compram a salvação como pagamento a Deus.", "why": "Tiago não fala de pagamento; ele mostra que a fé sem fruto está morta (2:17)." },
+   { "text": "Basta dizer que crê, sem ajudar ninguém.", "why": "O caso do necessitado mostra que palavras sem o necessário não beneficiam (2:16)." },
+   { "text": "Quem faz boas obras não precisa de fé.", "why": "Tiago junta as duas coisas; as obras mostram a fé, não a substituem (2:18)." }
+  ],
+  "centralInsight": "Tiago não ensina salvação por merecimento; a fé que recebe Cristo nunca fica sem fruto.",
+  "anchorQuestion": "Segundo Tiago 2:17, como está a fé que não tem obras?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Tiago 2:17, a fé sem obras está morta por si só.",
+   "verseRef": "Tiago 2:17", "correctOptionId": "true",
+   "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+   "feedbackCorrect": "Tiago conclui o caso do necessitado com esta frase sobre a fé sem obras.",
+   "feedbackWrong": { "false": "Releia Tiago 2:17 e veja como ele chama a fé sem obras." },
+   "hint": "Olhe a conclusão do versículo.",
+   "learningObjective": "Observar a conclusão de Tiago sobre a fé sem obras.",
+   "evidence": ["Tiago 2:17"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Tiago 2:15, toque a peça de vestir de que um irmão pode estar necessitando.",
+   "verseRef": "Tiago 2:15",
+   "options": [{ "id": "a", "text": "irmã" }, { "id": "b", "text": "roupa" }, { "id": "c", "text": "alimento diário" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "necessitando de roupa",
+   "feedbackCorrect": "O irmão ou irmã pode estar necessitando de roupa e do alimento diário.",
+   "feedbackWrong": { "a": "A irmã é quem passa necessidade, não a peça de vestir.", "c": "O alimento diário é a outra necessidade; a peça de vestir vem antes." },
+   "hint": "Procure o item de vestir citado no versículo.",
+   "learningObjective": "Identificar a necessidade concreta citada por Tiago.",
+   "evidence": ["Tiago 2:15"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Tiago 2:15–16, o que o necessitado recebe de quem só fala palavras de paz?",
+   "verseRef": "Tiago 2:15–16",
+   "options": [
+    { "id": "a", "text": "Roupa e alimento na hora" },
+    { "id": "b", "text": "Palavras de paz, sem o necessário" },
+    { "id": "c", "text": "Uma promessa para o mês seguinte" },
+    { "id": "d", "text": "Dinheiro para comprar comida" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Vão em paz, aqueçam-se e saciem-se",
+   "feedbackCorrect": "Ele ouve palavras boas, mas não recebe o necessário para o corpo.",
+   "feedbackWrong": { "a": "Roupa e alimento são a necessidade; quem só fala não os entrega.", "c": "O texto não fala de promessa futura, e sim de palavras sem entrega.", "d": "Nenhum dinheiro é dado; só palavras são ditas ao necessitado." },
+   "hint": "Veja o que é dado e o que é apenas dito.",
+   "learningObjective": "Observar a diferença entre falar e dar o necessário.",
+   "evidence": ["Tiago 2:15–16"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Tiago 2:16 na ordem do texto.",
+   "verseRef": "Tiago 2:16",
+   "options": [
+    { "id": "a", "text": "E se algum de vocês lhes disser" },
+    { "id": "b", "text": "Vão em paz, aqueçam-se e saciem-se" },
+    { "id": "c", "text": "mas não lhes der o necessário para o corpo" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "mas não lhes der o necessário para o corpo",
+   "feedbackCorrect": "Primeiro as palavras de paz; depois, a falta do necessário para o corpo.",
+   "feedbackWrong": { "default": "Comece pela fala ao necessitado; a falta da entrega vem depois." },
+   "hint": "O versículo começa com alguém falando.",
+   "learningObjective": "Reconhecer a sequência de Tiago 2:16.",
+   "evidence": ["Tiago 2:16"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Tiago 2:14, o que falta a quem afirma ter fé, na pergunta de Tiago?",
+   "verseRef": "Tiago 2:14",
+   "options": [{ "id": "a", "text": "palavras" }, { "id": "b", "text": "obras" }, { "id": "c", "text": "tempo" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "se não tiver obras",
+   "feedbackCorrect": "A pergunta de Tiago junta afirmar fé e ter esse fruto visível.",
+   "feedbackWrong": { "a": "Quem só fala já tem palavras; falta-lhe o fruto em ações.", "c": "O texto não fala de tempo, e sim do que acompanha a fé." },
+   "hint": "Releia a pergunta que abre o trecho.",
+   "learningObjective": "Lembrar o que Tiago espera junto da fé afirmada.",
+   "evidence": ["Tiago 2:14"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Tiago 2:17 comunica que se liga a este contexto?",
+   "verseRef": "Tiago 2:17",
+   "passageA": { "ref": "Tiago 2:17" },
+   "passageB": { "ref": "Contexto", "text": "Uma fé verdadeira aparece em ajuda concreta a quem precisa." },
+   "options": [
+    { "id": "a", "text": "Fé viva gera obras" },
+    { "id": "b", "text": "Palavras bastam sem agir" },
+    { "id": "c", "text": "Obras substituem a fé" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "está morta por si só",
+   "feedbackCorrect": "Sem esse fruto, Tiago chama a fé de morta; com ele, ela se mostra viva.",
+   "feedbackWrong": { "b": "O caso do necessitado mostra que só palavras não beneficiam.", "c": "As ações mostram a fé; não ocupam o lugar dela." },
+   "hint": "Pense no fruto que essa fé produz.",
+   "learningObjective": "Ligar Tiago 2:17 à fé que aparece em ajuda concreta.",
+   "evidence": ["Tiago 2:17"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Tiago 2:16, dar palavras de paz sem o necessário já é ajuda completa ao necessitado.",
+   "verseRef": "Tiago 2:16", "correctOptionId": "false",
+   "evidenceSpan": "mas não lhes der o necessário para o corpo",
+   "feedbackCorrect": "Tiago pergunta qual é o benefício disso; palavras sem entrega não ajudam o corpo.",
+   "feedbackWrong": { "true": "Releia o fim de Tiago 2:16 e veja a pergunta sobre o benefício." },
+   "hint": "Olhe a pergunta no fim do versículo.",
+   "learningObjective": "Compreender que palavras sem entrega não beneficiam quem precisa.",
+   "evidence": ["Tiago 2:16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Tiago 2:16, toque a palavra que marca o contraste entre dizer e não dar.",
+   "verseRef": "Tiago 2:16",
+   "options": [{ "id": "a", "text": "paz" }, { "id": "b", "text": "mas" }, { "id": "c", "text": "corpo" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas não lhes der",
+   "feedbackCorrect": "Essa palavra vira a frase: fala-se de paz, porém nada se entrega.",
+   "feedbackWrong": { "a": "A paz faz parte das palavras ditas, não do contraste.", "c": "O corpo é quem sofre a falta; o contraste vem antes dele." },
+   "hint": "Procure a conjunção que vira a frase.",
+   "learningObjective": "Reconhecer o marcador de contraste em Tiago 2:16.",
+   "evidence": ["Tiago 2:16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Tiago 2:18 responde a quem separa fé de obras?",
+   "verseRef": "Tiago 2:18",
+   "options": [
+    { "id": "a", "text": "As obras mostram a fé que a pessoa diz ter" },
+    { "id": "b", "text": "A fé pode ficar escondida para sempre" },
+    { "id": "c", "text": "Cada um escolhe entre fé ou obras" },
+    { "id": "d", "text": "As obras tornam a fé desnecessária" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "eu, com as minhas obras, lhe mostrarei a minha fé",
+   "feedbackCorrect": "Tiago não separa as duas; ele mostra a fé por meio do que faz.",
+   "feedbackWrong": { "b": "Ele afirma que mostrará a fé; fé viva não fica escondida.", "c": "Não é uma escolha entre uma ou outra; as duas andam juntas.", "d": "As ações evidenciam a fé, em vez de torná-la desnecessária." },
+   "hint": "Veja o que o autor diz que fará com as suas ações.",
+   "learningObjective": "Compreender que, para Tiago, as obras mostram a fé.",
+   "evidence": ["Tiago 2:18"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o caso em Tiago 2:15–16?",
+   "verseRef": "Tiago 2:15–16",
+   "options": [
+    { "id": "a", "text": "Um irmão ou irmã passa necessidade" },
+    { "id": "b", "text": "Alguém lhe deseja paz e saciedade" },
+    { "id": "c", "text": "Mas nada lhe dá para o corpo" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "necessitando de roupa e carecendo do alimento diário",
+   "feedbackCorrect": "Necessidade, palavras boas e, por fim, a falta da entrega concreta.",
+   "feedbackWrong": { "default": "Comece pela necessidade; as palavras vêm antes da falta de entrega." },
+   "hint": "A necessidade aparece primeiro no caso.",
+   "learningObjective": "Compreender o avanço do caso do necessitado.",
+   "evidence": ["Tiago 2:15–16"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Tiago 2:18, o que o autor afirma que fará por meio das suas obras?",
+   "verseRef": "Tiago 2:18",
+   "options": [{ "id": "a", "text": "esconderei" }, { "id": "b", "text": "mostrarei" }, { "id": "c", "text": "negarei" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "lhe mostrarei a minha fé",
+   "feedbackCorrect": "Ele não pede fé invisível; afirma que a mostrará pelo que faz.",
+   "feedbackWrong": { "a": "O autor quer evidenciar a fé, não escondê-la de ninguém.", "c": "Ele não nega a fé; ele a demonstra com suas ações." },
+   "hint": "Procure o verbo ligado às ações do autor.",
+   "learningObjective": "Compreender que as obras tornam a fé visível.",
+   "evidence": ["Tiago 2:18"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Tiago 2:17 a Mateus 7:21?",
+   "verseRef": "Tiago 2:17",
+   "passageA": { "ref": "Tiago 2:17" },
+   "passageB": { "ref": "Mateus 7:21" },
+   "options": [
+    { "id": "a", "text": "Fé que se pratica" },
+    { "id": "b", "text": "Fé só de palavras" },
+    { "id": "c", "text": "Obras sem nenhuma fé" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "está morta por si só",
+   "feedbackCorrect": "Jesus e Tiago pedem mais que palavras: uma fé que se pratica.",
+   "feedbackWrong": { "b": "Chamar Jesus de Senhor sem praticar é justamente o alvo dos dois textos.", "c": "Nos dois textos, praticar nasce da fé, não anda sem ela." },
+   "hint": "Veja o que Jesus pede além de palavras.",
+   "learningObjective": "Relacionar fé e prática em Tiago e nas palavras de Jesus.",
+   "evidence": ["Tiago 2:17", "Mateus 7:21"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Em Tiago 2:19, crer que há um só Deus sem obedecer não eleva a pessoa acima dos demônios que creem e tremem.",
+   "verseRef": "Tiago 2:19", "correctOptionId": "true",
+   "evidenceSpan": "até mesmo os demônios creem e tremem",
+   "feedbackCorrect": "Crer sem obedecer fica no nível citado por Tiago: até os demônios creem e tremem.",
+   "feedbackWrong": { "false": "Releia Tiago 2:19 e compare esse crer com o dos demônios." },
+   "hint": "Compare esse crer com quem mais crê no versículo.",
+   "learningObjective": "Interpretar por que crer sem obedecer não basta, segundo Tiago.",
+   "evidence": ["Tiago 2:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Tiago 2:17, toque a palavra que revela o estado da fé sem obras.",
+   "verseRef": "Tiago 2:17",
+   "options": [{ "id": "a", "text": "fé" }, { "id": "b", "text": "obras" }, { "id": "c", "text": "morta" }],
+   "correctOptionId": "c",
+   "evidenceSpan": "está morta por si só",
+   "feedbackCorrect": "É o veredito de Tiago sobre a fé que não produz nenhuma ação.",
+   "feedbackWrong": { "a": "A fé é o assunto da frase; o estado dela vem depois.", "b": "As ações são o que falta; o estado da fé vem no fim." },
+   "hint": "Procure o adjetivo no fim da frase.",
+   "learningObjective": "Sustentar com o texto o veredito sobre a fé sem obras.",
+   "evidence": ["Tiago 2:17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Tiago 2:16–17 sustenta sobre fé e obras?",
+   "verseRef": "Tiago 2:16–17",
+   "options": [
+    { "id": "a", "text": "A fé viva se mostra em obras de ajuda" },
+    { "id": "b", "text": "As obras pagam o preço da salvação" },
+    { "id": "c", "text": "Dizer que crê basta, mesmo sem fruto" },
+    { "id": "d", "text": "As obras tornam a fé inútil" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a fé, se não tiver obras, está morta por si só",
+   "feedbackCorrect": "Tiago não vende salvação; ele mostra que a fé viva aparece ajudando.",
+   "feedbackWrong": { "b": "O texto não trata ações como pagamento; elas mostram uma fé viva.", "c": "Palavras sem o necessário são justamente o que Tiago reprova.", "d": "Sem fé, as ações perdem a raiz que o texto apresenta." },
+   "hint": "Compare cada opção com o caso do necessitado.",
+   "learningObjective": "Escolher a interpretação de fé e obras que o texto sustenta.",
+   "evidence": ["Tiago 2:16–17"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o sentido de Tiago 2:17–18?",
+   "verseRef": "Tiago 2:17–18",
+   "options": [
+    { "id": "a", "text": "A fé verdadeira recebe a Cristo" },
+    { "id": "b", "text": "Essa fé se expressa em amor e ajuda" },
+    { "id": "c", "text": "As obras mostram ao mundo essa fé" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "lhe mostrarei a minha fé",
+   "feedbackCorrect": "A fé recebida se expressa em amor, e as ações a tornam visível.",
+   "feedbackWrong": { "default": "Comece pela fé recebida; a ajuda visível é o fruto dela." },
+   "hint": "Comece pelo que se recebe, não pelo fruto.",
+   "learningObjective": "Ver a ordem entre fé recebida, amor e obras visíveis.",
+   "evidence": ["Tiago 2:17–18", "Gálatas 5:6", "Efésios 2:10"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Tiago 2:19, o que os demônios fazem ao crer que há um só Deus?",
+   "verseRef": "Tiago 2:19",
+   "options": [{ "id": "a", "text": "riem" }, { "id": "b", "text": "fogem" }, { "id": "c", "text": "tremem" }],
+   "correctOptionId": "c",
+   "evidenceSpan": "demônios creem e tremem",
+   "feedbackCorrect": "Eles creem e têm essa reação, sem que isso seja obediência a Deus.",
+   "feedbackWrong": { "a": "A reação citada por Tiago é séria, não de deboche.", "b": "O texto não fala de fuga; fala da reação deles ao crer." },
+   "hint": "Procure a reação deles no fim do versículo.",
+   "learningObjective": "Lembrar a reação que mostra um crer sem obediência.",
+   "evidence": ["Tiago 2:19"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Tiago 2:18 a Efésios 2:10?",
+   "verseRef": "Tiago 2:18",
+   "passageA": { "ref": "Tiago 2:18" },
+   "passageB": { "ref": "Efésios 2:10" },
+   "options": [
+    { "id": "a", "text": "Criados para boas obras" },
+    { "id": "b", "text": "Salvos por merecimento próprio" },
+    { "id": "c", "text": "Fé sem nenhum fruto" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com as minhas obras, lhe mostrarei a minha fé",
+   "feedbackCorrect": "Paulo diz para que fomos criados em Cristo; Tiago mostra essa fé em ação.",
+   "feedbackWrong": { "b": "Efésios fala de obra de Deus em nós, não de merecimento nosso.", "c": "Os dois textos esperam fruto visível de quem crê." },
+   "hint": "Veja para que Deus criou o seu povo.",
+   "learningObjective": "Ligar a fé que se mostra ao propósito de Deus em Efésios.",
+   "evidence": ["Tiago 2:18", "Efésios 2:10"]
+  }
+ ]
+}

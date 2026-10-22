@@ -1,0 +1,67 @@
+Escreva a cena "naum-naum-01-o-senhor-e-bom" da trilha "naum" (Naum).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "naum",
+  "title": "Naum",
+  "description": "Nínive cai — o Senhor é refúgio e juízo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Nínive",
+ "mission": {
+  "slug": "naum-naum-01-o-senhor-e-bom",
+  "title": "O Senhor é bom",
+  "type": "lesson",
+  "intro": "Refúgio no dia da angústia.",
+  "hookRef": "Naum 1:7",
+  "hookNote": "Refúgio no dia da angústia.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre senhor?"
+ },
+ "v2": {
+  "passageRef": "Naum 1:7",
+  "context": "Refúgio no dia da angústia.",
+  "keyword": "Senhor",
+  "verseRefs": [
+   "Naum 1:7"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Naum 1:4–10"
+ ],
+ "verses": [
+  {
+   "ref": "Naum 1:4",
+   "text": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha."
+  },
+  {
+   "ref": "Naum 1:5",
+   "text": "Os montes tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam."
+  },
+  {
+   "ref": "Naum 1:6",
+   "text": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso."
+  },
+  {
+   "ref": "Naum 1:7",
+   "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+  },
+  {
+   "ref": "Naum 1:8",
+   "text": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos."
+  },
+  {
+   "ref": "Naum 1:9",
+   "text": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes."
+  },
+  {
+   "ref": "Naum 1:10",
+   "text": "Porque, ainda que se entrelacem como espinhos e se embriaguem como bêbados, serão inteiramente consumidos como palha seca."
+  }
+ ]
+}
+</cena>

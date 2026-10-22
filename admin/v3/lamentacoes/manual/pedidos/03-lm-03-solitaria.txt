@@ -1,0 +1,55 @@
+Escreva a cena "lm-03-solitaria" da trilha "lamentacoes" (Lamentações).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "lamentacoes",
+  "title": "Lamentações",
+  "description": "Luto de Jerusalém — e misericórdias que se renovam.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A cidade",
+ "mission": {
+  "slug": "lm-03-solitaria",
+  "title": "Sentada solitária",
+  "type": "lesson",
+  "intro": "O livro abre com uma cidade que já foi cheia e agora está só, viúva e sob trabalho.",
+  "hookRef": "Lamentações 1:1",
+  "hookNote": "O luto não é abstrato. É Jerusalém sem povo, sem honra e sem liberdade.",
+  "centralInsight": "O luto da cidade é concreto",
+  "objective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho."
+ },
+ "v2": {
+  "passageRef": "Lamentações 1:1",
+  "context": "Jerusalém, antes grande, está solitária, viúva e sob trabalho forçado.",
+  "keyword": "Solidão",
+  "verseRefs": [
+   "Lamentações 1:1"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lamentações 1:1–4"
+ ],
+ "verses": [
+  {
+   "ref": "Lamentações 1:1",
+   "text": "Como está solitária a cidade que outrora foi populosa! Tornou-se como viúva a que foi grande entre as nações; como princesa entre as províncias, agora está sujeita a trabalhos forçados!"
+  },
+  {
+   "ref": "Lamentações 1:2",
+   "text": "Chora incessantemente à noite, e suas lágrimas lhe escorrem pelo rosto; não há quem a console entre todos os que a amavam; todos os seus amigos se tornaram traiçoeiros e se converteram em seus inimigos."
+  },
+  {
+   "ref": "Lamentações 1:3",
+   "text": "Judá foi levado ao cativeiro por causa da aflição e da grande servidão; habita entre as nações, sem encontrar descanso; todos os seus perseguidores a apanham nas angústias."
+  },
+  {
+   "ref": "Lamentações 1:4",
+   "text": "Os caminhos de Sião choram, porque ninguém vem à reunião solene; todas as suas portas estão devastadas; os seus sacerdotes suspiram; suas moças estão tristes, e ela mesma se encontra em amargura."
+  }
+ ]
+}
+</cena>

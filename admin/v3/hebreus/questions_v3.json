@@ -1,0 +1,4059 @@
+[
+  {
+    "id": "hebreus-sem-hb-01-01",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Hebreus 1:1, Deus falou outrora aos pais pelos profetas.",
+    "prompt": "Em Hebreus 1:1, Deus falou outrora aos pais pelos profetas.",
+    "cue": "Em Hebreus 1:1, Deus falou outrora aos pais pelos profetas.",
+    "verseRef": "Hebreus 1:1",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "falado muitas vezes e de muitas maneiras, aos pais, pelos profetas",
+    "feedbackCorrect": "Outrora, Deus falou muitas vezes e de muitas maneiras, pelos profetas.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Hebreus 1:1 e veja por quem Deus falava outrora."
+    },
+    "hint": "Veja por quem Deus falava no tempo antigo.",
+    "learningObjective": "Observar como Deus falava antes da vinda do Filho.",
+    "evidence": [
+      "Hebreus 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-01-02",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 1:3, toque quem sustenta todas as coisas.",
+    "prompt": "Em Hebreus 1:3, toque quem sustenta todas as coisas.",
+    "cue": "Em Hebreus 1:3, toque quem sustenta todas as coisas.",
+    "verseRef": "Hebreus 1:3",
+    "passageText": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "Majestade"
+      },
+      {
+        "id": "c",
+        "text": "Ele"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sustentando todas as coisas pela palavra do seu poder",
+    "feedbackCorrect": "Ele, o Filho, sustenta todas as coisas pela palavra do seu poder.",
+    "feedbackWrong": {
+      "a": "A palavra é o meio; quem sustenta é uma pessoa.",
+      "b": "A Majestade é quem recebe o Filho assentado, não quem sustenta."
+    },
+    "hint": "Procure quem faz a ação no começo do versículo.",
+    "learningObjective": "Identificar o Filho como quem sustenta tudo.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-01-03",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 1:4, o Filho tornou-se superior a quem?",
+    "prompt": "Segundo Hebreus 1:4, o Filho tornou-se superior a quem?",
+    "cue": "Segundo Hebreus 1:4, o Filho tornou-se superior a quem?",
+    "verseRef": "Hebreus 1:4",
+    "passageText": "Tornou-se tão superior aos anjos quanto herdou um nome mais excelente do que o deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ao universo criado"
+      },
+      {
+        "id": "b",
+        "text": "Aos profetas do passado"
+      },
+      {
+        "id": "c",
+        "text": "Aos pais da fé"
+      },
+      {
+        "id": "d",
+        "text": "Aos anjos de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Tornou-se tão superior aos anjos",
+    "feedbackCorrect": "O nome herdado pelo Filho é mais excelente que o dos anjos.",
+    "feedbackWrong": {
+      "a": "O universo foi feito por meio dele; não é comparado a ele aqui.",
+      "b": "Os profetas falaram por Deus, mas a comparação aqui é com outros seres.",
+      "c": "Os pais ouviram pelos profetas; não são o termo da comparação."
+    },
+    "hint": "Leia com quem o nome do Filho é comparado.",
+    "learningObjective": "Observar a superioridade do Filho sobre os anjos.",
+    "evidence": [
+      "Hebreus 1:4"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-01-04",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 1:1 na ordem do texto.",
+    "prompt": "Monte Hebreus 1:1 na ordem do texto.",
+    "cue": "Monte Hebreus 1:1 na ordem do texto.",
+    "verseRef": "Hebreus 1:1",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Havendo Deus, outrora, falado muitas vezes"
+      },
+      {
+        "id": "b",
+        "text": "e de muitas maneiras, aos pais, pelos profetas"
+      },
+      {
+        "id": "c",
+        "text": "nestes últimos dias nos falou pelo Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nestes últimos dias nos falou pelo Filho",
+    "feedbackCorrect": "Primeiro a fala antiga pelos profetas; por fim, a fala pelo Filho.",
+    "feedbackWrong": {
+      "default": "Comece pela fala antiga; a fala pelo Filho fecha o versículo."
+    },
+    "hint": "A fala pelo Filho vem no fim do versículo.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 1:1.",
+    "evidence": [
+      "Hebreus 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-01-05",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Hebreus 1:2, Deus designou o Filho como o quê de todas as coisas?",
+    "prompt": "Em Hebreus 1:2, Deus designou o Filho como o quê de todas as coisas?",
+    "cue": "Em Hebreus 1:2, Deus designou o Filho como o quê de todas as coisas?",
+    "verseRef": "Hebreus 1:2",
+    "passageText": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo.",
+    "template": "a quem designou ___ de todas as coisas, por meio de quem também fez o universo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "herdeiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a quem designou herdeiro de todas as coisas",
+    "feedbackCorrect": "O Filho é o herdeiro de todas as coisas, não um servo a mais.",
+    "feedbackWrong": {
+      "a": "Servos cumprem ordens; o Filho é apresentado como herdeiro.",
+      "b": "Profetas falaram por Deus; o Filho recebe tudo como herança."
+    },
+    "hint": "Veja o que o Filho recebe de Deus no versículo.",
+    "learningObjective": "Lembrar que o Filho é herdeiro de todas as coisas.",
+    "evidence": [
+      "Hebreus 1:2"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-01-06",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Hebreus 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Hebreus 1:6",
+    "passageText": "E, novamente, ao apresentar o Primogênito no mundo, diz: \"Que todos os anjos de Deus o adorem.\"",
+    "passageA": {
+      "ref": "Hebreus 1:6",
+      "text": "E, novamente, ao apresentar o Primogênito no mundo, diz: \"Que todos os anjos de Deus o adorem.\""
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os anjos reconhecem quem o Filho é diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os anjos mandam no Filho"
+      },
+      {
+        "id": "b",
+        "text": "Os anjos adoram o Filho"
+      },
+      {
+        "id": "c",
+        "text": "Os anjos substituem o Filho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Que todos os anjos de Deus o adorem",
+    "feedbackCorrect": "Os anjos adoram o Filho: eles o servem, e não o contrário.",
+    "feedbackWrong": {
+      "a": "Quem manda é Deus, ao apresentar o Primogênito no mundo.",
+      "c": "Os anjos adoram o Filho; ninguém toma o lugar dele."
+    },
+    "hint": "Veja o que Deus ordena aos anjos fazer.",
+    "learningObjective": "Ligar Hebreus 1:6 ao lugar do Filho acima dos anjos.",
+    "evidence": [
+      "Hebreus 1:6"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-01-01",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 1:1, Deus falou aos pais pelo Filho muitas vezes e de muitas maneiras.",
+    "prompt": "Em Hebreus 1:1, Deus falou aos pais pelo Filho muitas vezes e de muitas maneiras.",
+    "cue": "Em Hebreus 1:1, Deus falou aos pais pelo Filho muitas vezes e de muitas maneiras.",
+    "verseRef": "Hebreus 1:1",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "falado muitas vezes e de muitas maneiras, aos pais, pelos profetas",
+    "feedbackCorrect": "Muitas vezes e de muitas maneiras foi pelos profetas; pelo Filho, nestes dias.",
+    "feedbackWrong": {
+      "true": "Troque os mensageiros: muitas vezes foi pelos profetas, não pelo Filho."
+    },
+    "hint": "Separe a fala antiga da fala dos últimos dias.",
+    "learningObjective": "Distinguir a fala pelos profetas da fala pelo Filho.",
+    "evidence": [
+      "Hebreus 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-01-02",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 1:1, toque a palavra que marca o tempo antigo da fala de Deus.",
+    "prompt": "Em Hebreus 1:1, toque a palavra que marca o tempo antigo da fala de Deus.",
+    "cue": "Em Hebreus 1:1, toque a palavra que marca o tempo antigo da fala de Deus.",
+    "verseRef": "Hebreus 1:1",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outrora"
+      },
+      {
+        "id": "b",
+        "text": "profetas"
+      },
+      {
+        "id": "c",
+        "text": "Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Havendo Deus, outrora, falado",
+    "feedbackCorrect": "Essa palavra abre o tempo antigo, antes da fala pelo Filho.",
+    "feedbackWrong": {
+      "b": "Profetas são os mensageiros daquele tempo, não a marca de tempo.",
+      "c": "O Filho marca os últimos dias, o outro lado do contraste."
+    },
+    "hint": "Procure a palavra de tempo logo após o nome de Deus.",
+    "learningObjective": "Reconhecer o marcador do tempo antigo em Hebreus 1:1.",
+    "evidence": [
+      "Hebreus 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-01-03",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Hebreus 1:1 liga a fala antiga de Deus à fala pelo Filho?",
+    "prompt": "Como Hebreus 1:1 liga a fala antiga de Deus à fala pelo Filho?",
+    "cue": "Como Hebreus 1:1 liga a fala antiga de Deus à fala pelo Filho?",
+    "verseRef": "Hebreus 1:1",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Filho falou aos pais no tempo antigo"
+      },
+      {
+        "id": "b",
+        "text": "Deus deixou de falar depois dos profetas"
+      },
+      {
+        "id": "c",
+        "text": "Deus falou antes por profetas e agora pelo Filho"
+      },
+      {
+        "id": "d",
+        "text": "Os profetas falaram depois da vinda do Filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nestes últimos dias nos falou pelo Filho",
+    "feedbackCorrect": "Há um antes pelos profetas e um agora pelo Filho, sem silêncio no meio.",
+    "feedbackWrong": {
+      "a": "Aos pais, Deus falou pelos profetas; o Filho vem nos últimos dias.",
+      "b": "Deus não se calou: nestes últimos dias, ele nos falou pelo Filho.",
+      "d": "A ordem é inversa: primeiro os profetas, depois o Filho."
+    },
+    "hint": "Compare o tempo dos profetas com o tempo do Filho.",
+    "learningObjective": "Compreender a ligação entre as duas falas de Deus.",
+    "evidence": [
+      "Hebreus 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-01-04",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Hebreus 1:1–2?",
+    "prompt": "Como avança o argumento em Hebreus 1:1–2?",
+    "cue": "Como avança o argumento em Hebreus 1:1–2?",
+    "verseRef": "Hebreus 1:1–2",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho. a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fala outrora pelos profetas"
+      },
+      {
+        "id": "b",
+        "text": "Deus fala agora pelo Filho"
+      },
+      {
+        "id": "c",
+        "text": "O Filho é herdeiro de tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nestes últimos dias nos falou pelo Filho",
+    "feedbackCorrect": "Da fala antiga, o texto chega ao Filho e mostra o lugar dele.",
+    "feedbackWrong": {
+      "default": "Comece pelos profetas; o herdeiro aparece depois da fala pelo Filho."
+    },
+    "hint": "O Filho herdeiro aparece no segundo versículo.",
+    "learningObjective": "Compreender o avanço de Hebreus 1:1–2.",
+    "evidence": [
+      "Hebreus 1:1–2"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-01-05",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 1:3, todas as coisas são sustentadas pela palavra de qual atributo do Filho?",
+    "prompt": "Em Hebreus 1:3, todas as coisas são sustentadas pela palavra de qual atributo do Filho?",
+    "cue": "Em Hebreus 1:3, todas as coisas são sustentadas pela palavra de qual atributo do Filho?",
+    "verseRef": "Hebreus 1:3",
+    "passageText": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "template": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu ___, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sustentando todas as coisas pela palavra do seu poder",
+    "feedbackCorrect": "O Filho sustenta tudo pela palavra do seu poder, sem esforço.",
+    "feedbackWrong": {
+      "a": "Pecado é o que ele purifica, não o meio de sustentar tudo.",
+      "b": "A glória aparece no começo do versículo, ligada ao resplendor."
+    },
+    "hint": "Leia o meio do versículo, sobre sustentar.",
+    "learningObjective": "Compreender que o Filho sustenta tudo pela sua palavra.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-01-06",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 1:5 a Salmos 2:7?",
+    "prompt": "O que liga Hebreus 1:5 a Salmos 2:7?",
+    "cue": "O que liga Hebreus 1:5 a Salmos 2:7?",
+    "verseRef": "Hebreus 1:5",
+    "passageText": "Pois a qual dos anjos Deus alguma vez disse: Tu és meu Filho, hoje eu te gerei? E ainda: Eu serei para ele um Pai, e ele será para mim um Filho?",
+    "passageA": {
+      "ref": "Hebreus 1:5",
+      "text": "Pois a qual dos anjos Deus alguma vez disse: Tu és meu Filho, hoje eu te gerei? E ainda: Eu serei para ele um Pai, e ele será para mim um Filho?"
+    },
+    "passageB": {
+      "ref": "Salmos 2:7",
+      "text": "Proclamarei o decreto do Senhor: Ele me disse: \"Tu és meu Filho, hoje te gerei.\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os profetas geram o Filho"
+      },
+      {
+        "id": "b",
+        "text": "Um anjo recebe esse nome"
+      },
+      {
+        "id": "c",
+        "text": "Deus chama Jesus de Filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tu és meu Filho",
+    "feedbackCorrect": "Hebreus cita o Salmo: só ao Filho Deus disse essas palavras.",
+    "feedbackWrong": {
+      "a": "Quem fala no Salmo é Deus, chamando alguém de seu Filho.",
+      "b": "A pergunta do texto é a qual anjo Deus disse isso: a nenhum."
+    },
+    "hint": "Veja quem Deus chama assim nos dois textos.",
+    "learningObjective": "Relacionar Hebreus 1:5 à palavra de Deus no Salmo.",
+    "evidence": [
+      "Hebreus 1:5",
+      "Salmos 2:7"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-01-01",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Hebreus 1:3 apresenta o Filho como a expressão exata do Ser de Deus.",
+    "prompt": "Hebreus 1:3 apresenta o Filho como a expressão exata do Ser de Deus.",
+    "cue": "Hebreus 1:3 apresenta o Filho como a expressão exata do Ser de Deus.",
+    "verseRef": "Hebreus 1:3",
+    "passageText": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a expressão exata do seu Ser",
+    "feedbackCorrect": "Quem vê o Filho vê exatamente quem Deus é, sem sombra.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Hebreus 1:3 sobre o resplendor e a expressão."
+    },
+    "hint": "Olhe como o versículo descreve o Filho.",
+    "learningObjective": "Interpretar o Filho como revelação exata de Deus.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-01-02",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 1:3, toque a palavra que mostra o Filho revelando a glória de Deus.",
+    "prompt": "Em Hebreus 1:3, toque a palavra que mostra o Filho revelando a glória de Deus.",
+    "cue": "Em Hebreus 1:3, toque a palavra que mostra o Filho revelando a glória de Deus.",
+    "verseRef": "Hebreus 1:3",
+    "passageText": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alturas"
+      },
+      {
+        "id": "b",
+        "text": "purificação"
+      },
+      {
+        "id": "c",
+        "text": "resplendor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele é o resplendor da sua glória",
+    "feedbackCorrect": "Como o brilho revela o sol, o Filho revela a glória de Deus.",
+    "feedbackWrong": {
+      "a": "Alturas é o lugar onde ele se assenta, no fim do versículo.",
+      "b": "Essa palavra fala dos pecados, não de revelar a glória."
+    },
+    "hint": "Procure a imagem de luz no começo do versículo.",
+    "learningObjective": "Sustentar com o texto que o Filho revela Deus.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-01-03",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Hebreus 1:4–6 sustenta sobre o Filho e os anjos?",
+    "prompt": "Que leitura Hebreus 1:4–6 sustenta sobre o Filho e os anjos?",
+    "cue": "Que leitura Hebreus 1:4–6 sustenta sobre o Filho e os anjos?",
+    "verseRef": "Hebreus 1:4–5",
+    "passageText": "Tornou-se tão superior aos anjos quanto herdou um nome mais excelente do que o deles. Pois a qual dos anjos Deus alguma vez disse: Tu és meu Filho, hoje eu te gerei? E ainda: Eu serei para ele um Pai, e ele será para mim um Filho?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Filho é o maior anjo criado por Deus"
+      },
+      {
+        "id": "b",
+        "text": "O Filho é superior e os anjos o adoram"
+      },
+      {
+        "id": "c",
+        "text": "Os anjos falam no lugar do Filho hoje"
+      },
+      {
+        "id": "d",
+        "text": "Os anjos têm o mesmo nome que o Filho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tornou-se tão superior aos anjos",
+    "feedbackCorrect": "O Filho herdou nome maior, e os anjos o adoram por ordem de Deus.",
+    "feedbackWrong": {
+      "a": "Deus nunca chamou um anjo de Filho; o Filho está acima deles.",
+      "c": "Quem fala por fim é o Filho; os anjos o adoram, não o substituem.",
+      "d": "O nome do Filho é mais excelente que o deles, não igual."
+    },
+    "hint": "Junte o nome herdado com a ordem dada aos anjos.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre o Filho.",
+    "evidence": [
+      "Hebreus 1:4–5"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-01-04",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do Filho em Hebreus 1:3?",
+    "prompt": "Qual sequência revela o caminho do Filho em Hebreus 1:3?",
+    "cue": "Qual sequência revela o caminho do Filho em Hebreus 1:3?",
+    "verseRef": "Hebreus 1:3",
+    "passageText": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Filho revela quem Deus é"
+      },
+      {
+        "id": "b",
+        "text": "Ele purifica os pecados"
+      },
+      {
+        "id": "c",
+        "text": "Ele se assenta nas alturas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assentou-se à direita da Majestade, nas alturas",
+    "feedbackCorrect": "Revelar Deus, purificar pecados e assentar-se: a obra completa do Filho.",
+    "feedbackWrong": {
+      "default": "Siga o versículo: revelar, purificar e só então assentar-se."
+    },
+    "hint": "O assentar vem depois da purificação, no texto.",
+    "learningObjective": "Ver a obra do Filho como caminho completo em Hebreus 1:3.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-01-05",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Hebreus 1:3, o que o Filho fez com os pecados antes de se assentar?",
+    "prompt": "Em Hebreus 1:3, o que o Filho fez com os pecados antes de se assentar?",
+    "cue": "Em Hebreus 1:3, o que o Filho fez com os pecados antes de se assentar?",
+    "verseRef": "Hebreus 1:2–3",
+    "passageText": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo. Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "template": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo. Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a ___ dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "purificação"
+      },
+      {
+        "id": "b",
+        "text": "adoração"
+      },
+      {
+        "id": "c",
+        "text": "separação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "depois de ter feito a purificação dos pecados",
+    "feedbackCorrect": "Ele fez a purificação dos pecados e então se assentou nas alturas.",
+    "feedbackWrong": {
+      "b": "Adoração é o que os anjos lhe prestam, não o que ele faz com pecados.",
+      "c": "Separação não é a palavra do texto para o que ele fez."
+    },
+    "hint": "Leia a parte do versículo anterior ao assentar.",
+    "learningObjective": "Lembrar a obra do Filho pelos pecados.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-01-06",
+    "trail": "hebreus",
+    "section": "hb-01",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Hebreus 1:2 a João 1:3?",
+    "prompt": "O que liga Hebreus 1:2 a João 1:3?",
+    "cue": "O que liga Hebreus 1:2 a João 1:3?",
+    "verseRef": "Hebreus 1:2",
+    "passageText": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo.",
+    "passageA": {
+      "ref": "Hebreus 1:2",
+      "text": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo."
+    },
+    "passageB": {
+      "ref": "João 1:3",
+      "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os profetas criaram o mundo"
+      },
+      {
+        "id": "b",
+        "text": "Cristo fez todas as coisas"
+      },
+      {
+        "id": "c",
+        "text": "O universo surgiu sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio de quem também fez o universo",
+    "feedbackCorrect": "Os dois textos dizem que tudo foi feito por meio dele.",
+    "feedbackWrong": {
+      "a": "Profetas falaram por Deus; quem fez o universo foi o Filho.",
+      "c": "Nada surgiu sozinho: tudo foi feito por meio do Filho."
+    },
+    "hint": "Veja por meio de quem tudo foi feito nos dois textos.",
+    "learningObjective": "Ligar a criação por meio do Filho em Hebreus e em João.",
+    "evidence": [
+      "Hebreus 1:2",
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-02-01",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Hebreus 4:15, Jesus foi tentado em todas as coisas mas sem pecado.",
+    "prompt": "Em Hebreus 4:15, Jesus foi tentado em todas as coisas mas sem pecado.",
+    "cue": "Em Hebreus 4:15, Jesus foi tentado em todas as coisas mas sem pecado.",
+    "verseRef": "Hebreus 4:15",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado",
+    "feedbackCorrect": "Ele conhece a tentação por dentro, sem nunca ter cedido ao pecado.",
+    "feedbackWrong": {
+      "false": "Releia Hebreus 4:15 até o fim e veja como a tentação dele termina."
+    },
+    "hint": "Leia o versículo inteiro, até a última parte.",
+    "learningObjective": "Observar que Jesus foi tentado sem pecar.",
+    "evidence": [
+      "Hebreus 4:15"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-02-02",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 4:15, toque aquilo de que o sumo sacerdote se compadece em nós.",
+    "prompt": "Em Hebreus 4:15, toque aquilo de que o sumo sacerdote se compadece em nós.",
+    "cue": "Em Hebreus 4:15, toque aquilo de que o sumo sacerdote se compadece em nós.",
+    "verseRef": "Hebreus 4:15",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "fraquezas"
+      },
+      {
+        "id": "c",
+        "text": "coisas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "Ele se compadece das nossas fraquezas porque já passou pela prova.",
+    "feedbackWrong": {
+      "a": "Pecado é justamente o que ele não teve, no fim do versículo.",
+      "c": "Coisas é palavra ampla demais; o texto nomeia algo nosso."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Identificar a compaixão de Jesus pelas fraquezas.",
+    "evidence": [
+      "Hebreus 4:15"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-02-03",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 4:14, o que Jesus, o Filho de Deus, fez nos céus?",
+    "prompt": "Segundo Hebreus 4:14, o que Jesus, o Filho de Deus, fez nos céus?",
+    "cue": "Segundo Hebreus 4:14, o que Jesus, o Filho de Deus, fez nos céus?",
+    "verseRef": "Hebreus 4:14",
+    "passageText": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos firmes a nossa confissão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Penetrou nos céus como sumo sacerdote"
+      },
+      {
+        "id": "b",
+        "text": "Ficou esperando na terra com os discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Desceu ao descanso dos antigos patriarcas"
+      },
+      {
+        "id": "d",
+        "text": "Entregou o sacerdócio a outros homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "grande sumo sacerdote que penetrou nos céus",
+    "feedbackCorrect": "Ele penetrou nos céus: entrou na presença de Deus pelo seu povo.",
+    "feedbackWrong": {
+      "b": "O texto o coloca além dos céus, não esperando na terra.",
+      "c": "O descanso é tema anterior; aqui o foco é o sacerdote nos céus.",
+      "d": "Ele mesmo é o grande sumo sacerdote; não entrega o cargo."
+    },
+    "hint": "Veja onde o grande sumo sacerdote já chegou.",
+    "learningObjective": "Observar Jesus como sumo sacerdote nos céus.",
+    "evidence": [
+      "Hebreus 4:14"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-02-04",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 4:16 na ordem do texto.",
+    "prompt": "Monte Hebreus 4:16 na ordem do texto.",
+    "cue": "Monte Hebreus 4:16 na ordem do texto.",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cheguemos, pois, com confiança ao trono da graça"
+      },
+      {
+        "id": "b",
+        "text": "para receber misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "e encontrar graça como auxílio em tempo oportuno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cheguemos, pois, com confiança ao trono da graça",
+    "feedbackCorrect": "Chegar, receber misericórdia e encontrar graça: nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo convite a chegar; o auxílio fecha o versículo."
+    },
+    "hint": "O versículo começa com um convite.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 4:16.",
+    "evidence": [
+      "Hebreus 4:16"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-02-05",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Hebreus 4:16, como devemos chegar ao trono da graça?",
+    "prompt": "Em Hebreus 4:16, como devemos chegar ao trono da graça?",
+    "cue": "Em Hebreus 4:16, como devemos chegar ao trono da graça?",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "template": "Cheguemos, pois, com ___ ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "medo"
+      },
+      {
+        "id": "b",
+        "text": "pressa"
+      },
+      {
+        "id": "c",
+        "text": "confiança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cheguemos, pois, com confiança ao trono da graça",
+    "feedbackCorrect": "Chegamos com confiança porque quem nos recebe se compadece de nós.",
+    "feedbackWrong": {
+      "a": "O convite é justamente o contrário de chegar com medo.",
+      "b": "O texto não fala de correria, e sim da atitude do coração."
+    },
+    "hint": "Veja a atitude pedida logo após o convite.",
+    "learningObjective": "Lembrar a atitude para chegar a Deus.",
+    "evidence": [
+      "Hebreus 4:16"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-02-06",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Hebreus 4:15 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 4:15 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 4:15 comunica que se liga a este contexto?",
+    "verseRef": "Hebreus 4:15",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "passageA": {
+      "ref": "Hebreus 4:15",
+      "text": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus conhece por dentro a fraqueza de quem ele recebe."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele nunca foi provado"
+      },
+      {
+        "id": "b",
+        "text": "Ele entende nossa fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "Ele ignora nossa fraqueza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "Tentado como nós, ele se compadece em vez de se afastar.",
+    "feedbackWrong": {
+      "a": "Ele foi tentado em todas as coisas, à nossa semelhança.",
+      "c": "Compadecer-se é o contrário de ignorar quem sofre."
+    },
+    "hint": "Veja o que ele sente diante das fraquezas.",
+    "learningObjective": "Ligar Hebreus 4:15 à compaixão de Jesus.",
+    "evidence": [
+      "Hebreus 4:15"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-02-01",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 4:14, temos um sumo sacerdote distante que não conhece a nossa vida.",
+    "prompt": "Em Hebreus 4:14, temos um sumo sacerdote distante que não conhece a nossa vida.",
+    "cue": "Em Hebreus 4:14, temos um sumo sacerdote distante que não conhece a nossa vida.",
+    "verseRef": "Hebreus 4:14–15",
+    "passageText": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos firmes a nossa confissão. Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "Ele está nos céus e, ao mesmo tempo, se compadece das fraquezas.",
+    "feedbackWrong": {
+      "true": "Junte os dois versículos: nos céus, sim; distante de nós, não."
+    },
+    "hint": "Não pare no versículo 14; leia o seguinte.",
+    "learningObjective": "Compreender que Jesus está nos céus e perto de nós.",
+    "evidence": [
+      "Hebreus 4:14–15"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-02-02",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 4:12, toque a palavra que apresenta o motivo do que vem antes.",
+    "prompt": "Em Hebreus 4:12, toque a palavra que apresenta o motivo do que vem antes.",
+    "cue": "Em Hebreus 4:12, toque a palavra que apresenta o motivo do que vem antes.",
+    "verseRef": "Hebreus 4:12",
+    "passageText": "Porque a palavra de Deus é viva e eficaz, e mais cortante do que qualquer espada de dois gumes, e penetra até ao ponto de dividir alma e espírito, juntas e medulas, e é apta para discernir os pensamentos e propósitos do coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alma"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "Porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Porque a palavra de Deus é viva e eficaz",
+    "feedbackCorrect": "Essa palavra abre a explicação sobre o poder da palavra de Deus.",
+    "feedbackWrong": {
+      "a": "Alma aparece no meio do versículo, no efeito da palavra.",
+      "b": "Espada é a imagem usada depois, não a ligação inicial."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de motivo em Hebreus 4:12.",
+    "evidence": [
+      "Hebreus 4:12"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-02-03",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Hebreus 4:12 se relaciona com o esforço pedido em 4:11?",
+    "prompt": "Como Hebreus 4:12 se relaciona com o esforço pedido em 4:11?",
+    "cue": "Como Hebreus 4:12 se relaciona com o esforço pedido em 4:11?",
+    "verseRef": "Hebreus 4:11–12",
+    "passageText": "Esforcemo-nos, pois, por entrar naquele descanso, a fim de que ninguém caia no mesmo exemplo de desobediência. Porque a palavra de Deus é viva e eficaz, e mais cortante do que qualquer espada de dois gumes, e penetra até ao ponto de dividir alma e espírito, juntas e medulas, e é apta para discernir os pensamentos e propósitos do coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra dispensa qualquer esforço do leitor"
+      },
+      {
+        "id": "b",
+        "text": "A palavra viva mostra o coração de quem ouve"
+      },
+      {
+        "id": "c",
+        "text": "A palavra serve só para conhecer fatos antigos"
+      },
+      {
+        "id": "d",
+        "text": "O esforço humano substitui a palavra de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a palavra de Deus é viva e eficaz",
+    "feedbackCorrect": "A palavra viva discerne pensamentos e propósitos do coração.",
+    "feedbackWrong": {
+      "a": "O texto pede esforço justamente porque a palavra age em nós.",
+      "c": "Ela penetra e discerne o coração, muito além de fatos antigos.",
+      "d": "O esforço responde à palavra; não toma o lugar dela."
+    },
+    "hint": "Veja o que a palavra faz dentro da pessoa.",
+    "learningObjective": "Relacionar a palavra viva ao chamado ao esforço.",
+    "evidence": [
+      "Hebreus 4:11–12"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-02-04",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Hebreus 4:14–15?",
+    "prompt": "Como avança o argumento em Hebreus 4:14–15?",
+    "cue": "Como avança o argumento em Hebreus 4:14–15?",
+    "verseRef": "Hebreus 4:14–15",
+    "passageText": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos firmes a nossa confissão. Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temos um sumo sacerdote nos céus"
+      },
+      {
+        "id": "b",
+        "text": "Conservemos firmes a nossa confissão"
+      },
+      {
+        "id": "c",
+        "text": "Ele se compadece das fraquezas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "conservemos firmes a nossa confissão",
+    "feedbackCorrect": "Primeiro quem temos, depois o chamado a firmar, e o motivo nele.",
+    "feedbackWrong": {
+      "default": "Comece pelo sumo sacerdote; a compaixão vem no versículo seguinte."
+    },
+    "hint": "A compaixão fecha o trecho, no versículo 15.",
+    "learningObjective": "Compreender o avanço de Hebreus 4:14–15.",
+    "evidence": [
+      "Hebreus 4:14–15"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-02-05",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 4:14, como devemos conservar a nossa confissão?",
+    "prompt": "Em Hebreus 4:14, como devemos conservar a nossa confissão?",
+    "cue": "Em Hebreus 4:14, como devemos conservar a nossa confissão?",
+    "verseRef": "Hebreus 4:14",
+    "passageText": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos firmes a nossa confissão.",
+    "template": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos ___ a nossa confissão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "soltas"
+      },
+      {
+        "id": "b",
+        "text": "firmes"
+      },
+      {
+        "id": "c",
+        "text": "mudas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conservemos firmes a nossa confissão",
+    "feedbackCorrect": "A confissão se conserva firme porque o sacerdote já entrou nos céus.",
+    "feedbackWrong": {
+      "a": "Soltar a confissão é o contrário do chamado do texto.",
+      "c": "O texto chama a segurar a confissão, não a calá-la."
+    },
+    "hint": "Leia o fim do versículo 14.",
+    "learningObjective": "Compreender o chamado a manter firme a confissão.",
+    "evidence": [
+      "Hebreus 4:14"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-02-06",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 4:15 a Hebreus 2:17?",
+    "prompt": "O que liga Hebreus 4:15 a Hebreus 2:17?",
+    "cue": "O que liga Hebreus 4:15 a Hebreus 2:17?",
+    "verseRef": "Hebreus 4:15",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "passageA": {
+      "ref": "Hebreus 4:15",
+      "text": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado."
+    },
+    "passageB": {
+      "ref": "Hebreus 2:17",
+      "text": "Por isso, era necessário que Ele se tornasse semelhante a seus irmãos em todas as coisas, para ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdote longe de quem sofre"
+      },
+      {
+        "id": "b",
+        "text": "Sacerdote que conhece nossa prova"
+      },
+      {
+        "id": "c",
+        "text": "Sacerdote sem misericórdia alguma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "Nos dois textos, ele se fez como nós para ser misericordioso.",
+    "feedbackWrong": {
+      "a": "Ele se compadece das fraquezas; não está longe de quem sofre.",
+      "c": "A misericórdia é justamente o centro dos dois trechos."
+    },
+    "hint": "Veja o que os dois trechos dizem sobre ele e nós.",
+    "learningObjective": "Relacionar a compaixão do sacerdote nos dois trechos.",
+    "evidence": [
+      "Hebreus 4:15",
+      "Hebreus 2:17"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-02-01",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Hebreus 4:16 ensina que só quem não tem fraquezas pode chegar ao trono da graça.",
+    "prompt": "Hebreus 4:16 ensina que só quem não tem fraquezas pode chegar ao trono da graça.",
+    "cue": "Hebreus 4:16 ensina que só quem não tem fraquezas pode chegar ao trono da graça.",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para receber misericórdia e encontrar graça",
+    "feedbackCorrect": "O convite é para receber misericórdia, justamente quem precisa dela.",
+    "feedbackWrong": {
+      "true": "O trono é da graça: chega-se para receber ajuda, não por merecer."
+    },
+    "hint": "Veja o que se recebe ao chegar ao trono.",
+    "learningObjective": "Interpretar o trono da graça como lugar de ajuda.",
+    "evidence": [
+      "Hebreus 4:16"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-02-02",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 4:15, toque o trecho que mostra a diferença entre Jesus e nós na prova.",
+    "prompt": "Em Hebreus 4:15, toque o trecho que mostra a diferença entre Jesus e nós na prova.",
+    "cue": "Em Hebreus 4:15, toque o trecho que mostra a diferença entre Jesus e nós na prova.",
+    "verseRef": "Hebreus 4:15",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sem pecado"
+      },
+      {
+        "id": "b",
+        "text": "nossas fraquezas"
+      },
+      {
+        "id": "c",
+        "text": "todas as coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas sem pecado",
+    "feedbackCorrect": "Tentado como nós em tudo, ele é o único que nunca pecou.",
+    "feedbackWrong": {
+      "b": "Fraquezas são o que ele sente por nós, não o que o separa.",
+      "c": "Isso mostra a semelhança da prova, não a diferença final."
+    },
+    "hint": "Procure o fim do versículo, após a semelhança.",
+    "learningObjective": "Sustentar com o texto a pureza de Jesus na tentação.",
+    "evidence": [
+      "Hebreus 4:15"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-02-03",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Hebreus 4:14–16 sustenta sobre chegar a Deus?",
+    "prompt": "Que leitura Hebreus 4:14–16 sustenta sobre chegar a Deus?",
+    "cue": "Que leitura Hebreus 4:14–16 sustenta sobre chegar a Deus?",
+    "verseRef": "Hebreus 4:14–15",
+    "passageText": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos firmes a nossa confissão. Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Podemos chegar confiantes porque ele se compadece"
+      },
+      {
+        "id": "b",
+        "text": "Devemos esperar ficar fortes para então orar"
+      },
+      {
+        "id": "c",
+        "text": "A ajuda de Deus chega sempre antes da prova"
+      },
+      {
+        "id": "d",
+        "text": "Deus recebe apenas quem nunca foi tentado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "A confiança nasce de um sacerdote que conhece a fraqueza sem pecar.",
+    "feedbackWrong": {
+      "b": "O convite é chegar para receber graça, não depois de vencer tudo.",
+      "c": "O texto fala de auxílio em tempo oportuno, não de ausência de prova.",
+      "d": "Quem chega é justamente quem foi provado e precisa de ajuda."
+    },
+    "hint": "Ligue a compaixão dele ao convite do versículo 16.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre orar.",
+    "evidence": [
+      "Hebreus 4:14–15"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-02-04",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho aberto em Hebreus 4:15–16?",
+    "prompt": "Qual sequência revela o caminho aberto em Hebreus 4:15–16?",
+    "cue": "Qual sequência revela o caminho aberto em Hebreus 4:15–16?",
+    "verseRef": "Hebreus 4:15–16",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado. Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele foi tentado sem pecar"
+      },
+      {
+        "id": "b",
+        "text": "Cheguemos confiantes ao trono"
+      },
+      {
+        "id": "c",
+        "text": "Recebemos graça na hora certa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "encontrar graça como auxílio em tempo oportuno",
+    "feedbackCorrect": "Porque ele venceu a prova, chegamos e recebemos ajuda a tempo.",
+    "feedbackWrong": {
+      "default": "Comece pela prova vencida; o auxílio é o ponto de chegada."
+    },
+    "hint": "A ajuda em tempo oportuno fecha o caminho.",
+    "learningObjective": "Ver o caminho da compaixão à ajuda em Hebreus 4.",
+    "evidence": [
+      "Hebreus 4:15–16"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-02-05",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Hebreus 4:16, o que recebemos primeiro ao chegar ao trono da graça?",
+    "prompt": "Em Hebreus 4:16, o que recebemos primeiro ao chegar ao trono da graça?",
+    "cue": "Em Hebreus 4:16, o que recebemos primeiro ao chegar ao trono da graça?",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "template": "Cheguemos, pois, com confiança ao trono da graça, para receber ___ e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "descanso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para receber misericórdia e encontrar graça",
+    "feedbackCorrect": "Recebemos misericórdia e encontramos graça como auxílio oportuno.",
+    "feedbackWrong": {
+      "a": "O trono aqui é da graça, não de condenação para quem chega.",
+      "c": "Descanso é o tema de 4:11; aqui o dom nomeado é outro."
+    },
+    "hint": "Leia a parte do versículo depois de chegar.",
+    "learningObjective": "Lembrar o dom recebido no trono da graça.",
+    "evidence": [
+      "Hebreus 4:16"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-02-06",
+    "trail": "hebreus",
+    "section": "hb-02",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Hebreus 4:16 a Efésios 3:12?",
+    "prompt": "O que liga Hebreus 4:16 a Efésios 3:12?",
+    "cue": "O que liga Hebreus 4:16 a Efésios 3:12?",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "passageA": {
+      "ref": "Hebreus 4:16",
+      "text": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno."
+    },
+    "passageB": {
+      "ref": "Efésios 3:12",
+      "text": "No qual temos ousadia e acesso com confiança, por meio da fé nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acesso a Deus com confiança"
+      },
+      {
+        "id": "b",
+        "text": "Medo ao chegar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Acesso só para sacerdotes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Cheguemos, pois, com confiança ao trono da graça",
+    "feedbackCorrect": "Paulo e Hebreus falam do mesmo acesso confiante a Deus em Cristo.",
+    "feedbackWrong": {
+      "b": "Os dois textos chamam a chegar perto, não a fugir com medo.",
+      "c": "O acesso é para quem crê, por meio de Jesus, não só para um grupo."
+    },
+    "hint": "Veja a atitude com que se chega a Deus nos dois.",
+    "learningObjective": "Ligar o acesso confiante em Hebreus e em Paulo.",
+    "evidence": [
+      "Hebreus 4:16",
+      "Efésios 3:12"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-03-01",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Hebreus 8:6, Jesus é mediador de uma aliança superior.",
+    "prompt": "Em Hebreus 8:6, Jesus é mediador de uma aliança superior.",
+    "cue": "Em Hebreus 8:6, Jesus é mediador de uma aliança superior.",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "é também mediador de uma aliança superior",
+    "feedbackCorrect": "Ele possui um ministério mais excelente e medeia essa aliança.",
+    "feedbackWrong": {
+      "false": "Releia Hebreus 8:6 e veja o papel de Jesus na aliança."
+    },
+    "hint": "Veja o papel de Jesus no meio do versículo.",
+    "learningObjective": "Observar Jesus como mediador da aliança superior.",
+    "evidence": [
+      "Hebreus 8:6"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-03-02",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 8:6, toque o papel de Jesus entre Deus e o povo.",
+    "prompt": "Em Hebreus 8:6, toque o papel de Jesus entre Deus e o povo.",
+    "cue": "Em Hebreus 8:6, toque o papel de Jesus entre Deus e o povo.",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ministério"
+      },
+      {
+        "id": "b",
+        "text": "promessas"
+      },
+      {
+        "id": "c",
+        "text": "mediador"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é também mediador de uma aliança superior",
+    "feedbackCorrect": "Ele é o mediador: fica entre Deus e o povo nessa aliança.",
+    "feedbackWrong": {
+      "a": "Ministério é o serviço dele; o papel entre Deus e o povo é outro.",
+      "b": "Promessas são a base da aliança, não o papel de Jesus nela."
+    },
+    "hint": "Procure quem liga Deus ao povo no versículo.",
+    "learningObjective": "Identificar Jesus como mediador da aliança.",
+    "evidence": [
+      "Hebreus 8:6"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-03-03",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 8:5, como é o serviço dos sacerdotes antigos?",
+    "prompt": "Segundo Hebreus 8:5, como é o serviço dos sacerdotes antigos?",
+    "cue": "Segundo Hebreus 8:5, como é o serviço dos sacerdotes antigos?",
+    "verseRef": "Hebreus 8:5",
+    "passageText": "Eles ministram como uma cópia e sombra das coisas celestiais, assim como Moisés foi divinamente instruído quando estava prestes a construir o tabernáculo; pois ele diz: \"Fazes tudo conforme o modelo que te foi mostrado no monte.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invenção dos homens sem ordem divina"
+      },
+      {
+        "id": "b",
+        "text": "Serviço maior que o de Jesus no céu"
+      },
+      {
+        "id": "c",
+        "text": "Cópia e sombra das coisas celestiais"
+      },
+      {
+        "id": "d",
+        "text": "Realidade final vinda do céu à terra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eles ministram como uma cópia e sombra das coisas celestiais",
+    "feedbackCorrect": "O serviço deles mostrava a forma do céu, sem ser o próprio céu.",
+    "feedbackWrong": {
+      "a": "Moisés foi instruído por Deus ao construir o tabernáculo.",
+      "b": "O ministério de Jesus é muito mais excelente que esse serviço.",
+      "d": "Cópia e sombra apontam para a realidade; não são ela mesma."
+    },
+    "hint": "Leia o começo do versículo sobre como eles ministram.",
+    "learningObjective": "Observar o serviço antigo como cópia e sombra.",
+    "evidence": [
+      "Hebreus 8:5"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-03-04",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 8:8 na ordem do texto.",
+    "prompt": "Monte Hebreus 8:8 na ordem do texto.",
+    "cue": "Monte Hebreus 8:8 na ordem do texto.",
+    "verseRef": "Hebreus 8:8",
+    "passageText": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que vêm dias, diz o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "em que firmarei uma nova aliança"
+      },
+      {
+        "id": "c",
+        "text": "com a casa de Israel e com a casa de Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "firmarei uma nova aliança com a casa de Israel e com a casa de Judá",
+    "feedbackCorrect": "Dias vêm, Deus firma a aliança, e o povo é Israel e Judá.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio dos dias; o povo aparece no fim."
+    },
+    "hint": "O versículo começa com um anúncio de Deus.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 8:8.",
+    "evidence": [
+      "Hebreus 8:8"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-03-05",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Hebreus 8:6, a aliança mediada por Jesus é maior em que sentido?",
+    "prompt": "Em Hebreus 8:6, a aliança mediada por Jesus é maior em que sentido?",
+    "cue": "Em Hebreus 8:6, a aliança mediada por Jesus é maior em que sentido?",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "template": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança ___, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequena"
+      },
+      {
+        "id": "b",
+        "text": "antiga"
+      },
+      {
+        "id": "c",
+        "text": "superior"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mediador de uma aliança superior",
+    "feedbackCorrect": "É uma aliança superior, acima da primeira em promessas e efeito.",
+    "feedbackWrong": {
+      "a": "O texto a chama de superior e mais excelente, não menor.",
+      "b": "Antiga é justamente a aliança anterior, não esta."
+    },
+    "hint": "Veja como o versículo descreve essa aliança.",
+    "learningObjective": "Lembrar que a nova aliança é superior.",
+    "evidence": [
+      "Hebreus 8:6"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-03-06",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Hebreus 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 8:8 comunica que se liga a este contexto?",
+    "verseRef": "Hebreus 8:8",
+    "passageText": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "passageA": {
+      "ref": "Hebreus 8:8",
+      "text": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus mesmo promete firmar algo novo com seu povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus desiste do seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus promete nova aliança"
+      },
+      {
+        "id": "c",
+        "text": "O povo cria nova aliança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "firmarei uma nova aliança",
+    "feedbackCorrect": "É Deus quem diz que firmará a nova aliança com Israel e Judá.",
+    "feedbackWrong": {
+      "a": "Desistir seria o contrário de firmar uma nova aliança.",
+      "c": "Quem firma é Deus: a promessa parte dele, não do povo."
+    },
+    "hint": "Veja quem promete e o que ele promete fazer.",
+    "learningObjective": "Ligar Hebreus 8:8 à promessa de Deus.",
+    "evidence": [
+      "Hebreus 8:8"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-03-01",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 8:6, o ministério de Jesus é muito mais excelente que o antigo.",
+    "prompt": "Em Hebreus 8:6, o ministério de Jesus é muito mais excelente que o antigo.",
+    "cue": "Em Hebreus 8:6, o ministério de Jesus é muito mais excelente que o antigo.",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ele possui um ministério muito mais excelente",
+    "feedbackCorrect": "O ministério dele é muito mais excelente que o serviço antigo.",
+    "feedbackWrong": {
+      "false": "Releia Hebreus 8:6 e veja o grau do ministério dele."
+    },
+    "hint": "Veja o grau do ministério de Jesus no versículo 6.",
+    "learningObjective": "Compreender a diferença entre os dois ministérios.",
+    "evidence": [
+      "Hebreus 8:5–6"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-03-02",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 8:5, toque a palavra que liga a obra de Moisés ao modelo do monte.",
+    "prompt": "Em Hebreus 8:5, toque a palavra que liga a obra de Moisés ao modelo do monte.",
+    "cue": "Em Hebreus 8:5, toque a palavra que liga a obra de Moisés ao modelo do monte.",
+    "verseRef": "Hebreus 8:5",
+    "passageText": "Eles ministram como uma cópia e sombra das coisas celestiais, assim como Moisés foi divinamente instruído quando estava prestes a construir o tabernáculo; pois ele diz: \"Fazes tudo conforme o modelo que te foi mostrado no monte.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "monte"
+      },
+      {
+        "id": "b",
+        "text": "conforme"
+      },
+      {
+        "id": "c",
+        "text": "sombra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Fazes tudo conforme o modelo que te foi mostrado no monte",
+    "feedbackCorrect": "Tudo devia ser feito conforme o modelo mostrado a Moisés.",
+    "feedbackWrong": {
+      "a": "Monte é o lugar do modelo, não a palavra de ligação.",
+      "c": "Sombra descreve o serviço, não a ligação com o modelo."
+    },
+    "hint": "Procure a palavra antes de falar do modelo.",
+    "learningObjective": "Reconhecer a ligação entre a cópia e o modelo.",
+    "evidence": [
+      "Hebreus 8:5"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-03-03",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Hebreus 8:7 explica a vinda de uma segunda aliança?",
+    "prompt": "Como Hebreus 8:7 explica a vinda de uma segunda aliança?",
+    "cue": "Como Hebreus 8:7 explica a vinda de uma segunda aliança?",
+    "verseRef": "Hebreus 8:7",
+    "passageText": "Porque, se a primeira aliança tivesse sido sem defeito, de maneira nenhuma estaria sendo buscada uma segunda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo inventou uma aliança melhor por conta própria"
+      },
+      {
+        "id": "b",
+        "text": "Deus mudou de ideia sem nenhum motivo dado"
+      },
+      {
+        "id": "c",
+        "text": "A primeira aliança nunca existiu de verdade"
+      },
+      {
+        "id": "d",
+        "text": "A primeira não era sem defeito, por isso outra veio"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "se a primeira aliança tivesse sido sem defeito",
+    "feedbackCorrect": "Se a primeira bastasse, nenhuma segunda estaria sendo buscada.",
+    "feedbackWrong": {
+      "a": "Quem firma a nova aliança é Deus, como ele prometeu.",
+      "b": "O texto dá o motivo: a primeira não era sem defeito.",
+      "c": "A primeira existiu; o ponto é que ela não era sem defeito."
+    },
+    "hint": "Leia a condição que o versículo apresenta.",
+    "learningObjective": "Compreender por que uma segunda aliança foi buscada.",
+    "evidence": [
+      "Hebreus 8:7"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-03-04",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Hebreus 8:5–6?",
+    "prompt": "Como avança o argumento em Hebreus 8:5–6?",
+    "cue": "Como avança o argumento em Hebreus 8:5–6?",
+    "verseRef": "Hebreus 8:5–6",
+    "passageText": "Eles ministram como uma cópia e sombra das coisas celestiais, assim como Moisés foi divinamente instruído quando estava prestes a construir o tabernáculo; pois ele diz: \"Fazes tudo conforme o modelo que te foi mostrado no monte.\" Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O serviço antigo é cópia e sombra"
+      },
+      {
+        "id": "b",
+        "text": "Jesus recebe ministério mais excelente"
+      },
+      {
+        "id": "c",
+        "text": "Ele medeia uma aliança superior"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele possui um ministério muito mais excelente",
+    "feedbackCorrect": "Da sombra antiga, o texto chega ao ministério excelente de Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pela cópia antiga; o mediador fecha o movimento."
+    },
+    "hint": "O mediador da aliança superior vem por último.",
+    "learningObjective": "Compreender o avanço de Hebreus 8:5–6.",
+    "evidence": [
+      "Hebreus 8:5–6"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-03-05",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 8:8, que tipo de aliança Deus diz que firmará?",
+    "prompt": "Em Hebreus 8:8, que tipo de aliança Deus diz que firmará?",
+    "cue": "Em Hebreus 8:8, que tipo de aliança Deus diz que firmará?",
+    "verseRef": "Hebreus 8:8",
+    "passageText": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "template": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma ___ aliança com a casa de Israel e com a casa de Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "velha"
+      },
+      {
+        "id": "b",
+        "text": "secreta"
+      },
+      {
+        "id": "c",
+        "text": "nova"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "firmarei uma nova aliança",
+    "feedbackCorrect": "Deus promete firmar uma aliança nova, diferente da antiga.",
+    "feedbackWrong": {
+      "a": "Velha seria repetir a anterior; Deus anuncia algo novo.",
+      "b": "A promessa é anunciada ao povo, não escondida dele."
+    },
+    "hint": "Veja o adjetivo que Deus usa para a aliança.",
+    "learningObjective": "Compreender a novidade da aliança prometida.",
+    "evidence": [
+      "Hebreus 8:8"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-03-06",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 8:8 a Jeremias 31:31?",
+    "prompt": "O que liga Hebreus 8:8 a Jeremias 31:31?",
+    "cue": "O que liga Hebreus 8:8 a Jeremias 31:31?",
+    "verseRef": "Hebreus 8:8",
+    "passageText": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "passageA": {
+      "ref": "Hebreus 8:8",
+      "text": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "passageB": {
+      "ref": "Jeremias 31:31",
+      "text": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim de toda promessa"
+      },
+      {
+        "id": "b",
+        "text": "A nova aliança prometida"
+      },
+      {
+        "id": "c",
+        "text": "Aliança só com os pais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "firmarei uma nova aliança",
+    "feedbackCorrect": "Hebreus cita a promessa de Jeremias sobre dias que viriam.",
+    "feedbackWrong": {
+      "a": "É justamente uma promessa nova sendo cumprida, não o fim delas.",
+      "c": "A promessa olha para frente, para Israel e Judá, não só ao passado."
+    },
+    "hint": "Veja o que Deus promete nos dois textos.",
+    "learningObjective": "Relacionar Hebreus 8:8 à promessa de Jeremias.",
+    "evidence": [
+      "Hebreus 8:8",
+      "Jeremias 31:31"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-03-01",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Hebreus 8:9 apresenta a nova aliança como idêntica à feita com os pais no Egito.",
+    "prompt": "Hebreus 8:9 apresenta a nova aliança como idêntica à feita com os pais no Egito.",
+    "cue": "Hebreus 8:9 apresenta a nova aliança como idêntica à feita com os pais no Egito.",
+    "verseRef": "Hebreus 8:9",
+    "passageText": "Não como a aliança que fiz com seus pais no dia em que os tomei pela mão para os conduzir para fora da terra do Egito; pois eles não continuaram na minha aliança, e eu não atentei para eles, diz o Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não como a aliança que fiz com seus pais",
+    "feedbackCorrect": "O próprio texto diz que ela não será como a aliança do Egito.",
+    "feedbackWrong": {
+      "true": "O versículo começa negando: não como a aliança feita com os pais."
+    },
+    "hint": "Leia as primeiras palavras do versículo 9.",
+    "learningObjective": "Interpretar a diferença entre as duas alianças.",
+    "evidence": [
+      "Hebreus 8:9"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-03-02",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 8:7, toque o trecho que mostra o limite da primeira aliança.",
+    "prompt": "Em Hebreus 8:7, toque o trecho que mostra o limite da primeira aliança.",
+    "cue": "Em Hebreus 8:7, toque o trecho que mostra o limite da primeira aliança.",
+    "verseRef": "Hebreus 8:7",
+    "passageText": "Porque, se a primeira aliança tivesse sido sem defeito, de maneira nenhuma estaria sendo buscada uma segunda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "segunda"
+      },
+      {
+        "id": "b",
+        "text": "primeira aliança"
+      },
+      {
+        "id": "c",
+        "text": "sem defeito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se a primeira aliança tivesse sido sem defeito",
+    "feedbackCorrect": "A primeira não era sem defeito; por isso outra foi buscada.",
+    "feedbackWrong": {
+      "a": "Segunda é a aliança que veio, não o limite da primeira.",
+      "b": "Isso nomeia a aliança, mas não mostra o limite dela."
+    },
+    "hint": "Procure como a primeira teria de ser para bastar.",
+    "learningObjective": "Sustentar com o texto o limite da primeira aliança.",
+    "evidence": [
+      "Hebreus 8:7"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-03-03",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Hebreus 8:3–6 sustenta sobre o serviço antigo?",
+    "prompt": "Que leitura Hebreus 8:3–6 sustenta sobre o serviço antigo?",
+    "cue": "Que leitura Hebreus 8:3–6 sustenta sobre o serviço antigo?",
+    "verseRef": "Hebreus 8:5–6",
+    "passageText": "Eles ministram como uma cópia e sombra das coisas celestiais, assim como Moisés foi divinamente instruído quando estava prestes a construir o tabernáculo; pois ele diz: \"Fazes tudo conforme o modelo que te foi mostrado no monte.\" Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Era maior que o ministério de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Era o fim da história do culto a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Era sombra que apontava para algo maior"
+      },
+      {
+        "id": "d",
+        "text": "Era invenção humana sem valor para Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eles ministram como uma cópia e sombra das coisas celestiais",
+    "feedbackCorrect": "Cópia e sombra têm valor: mostram a forma do que é maior.",
+    "feedbackWrong": {
+      "a": "O ministério de Jesus é muito mais excelente que esse serviço.",
+      "b": "Ele apontava adiante; o ministério excelente ainda viria.",
+      "d": "Moisés agiu por instrução divina, conforme o modelo do monte."
+    },
+    "hint": "Pense no que uma sombra faz em relação ao real.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre o culto antigo.",
+    "evidence": [
+      "Hebreus 8:5–6"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-03-04",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Hebreus 8:6–7?",
+    "prompt": "Qual sequência revela o sentido de Hebreus 8:6–7?",
+    "cue": "Qual sequência revela o sentido de Hebreus 8:6–7?",
+    "verseRef": "Hebreus 8:6–7",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores. Porque, se a primeira aliança tivesse sido sem defeito, de maneira nenhuma estaria sendo buscada uma segunda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A primeira não era sem defeito"
+      },
+      {
+        "id": "b",
+        "text": "Uma segunda aliança foi buscada"
+      },
+      {
+        "id": "c",
+        "text": "Jesus medeia a aliança superior"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "de maneira nenhuma estaria sendo buscada uma segunda",
+    "feedbackCorrect": "O limite da primeira abre caminho para a aliança mediada por Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo limite da primeira; o mediador é a chegada."
+    },
+    "hint": "O defeito da primeira vem antes da busca pela segunda.",
+    "learningObjective": "Ver a lógica da nova aliança em Hebreus 8.",
+    "evidence": [
+      "Hebreus 8:6–7"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-03-05",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Hebreus 8:6, a aliança superior foi instituída com base em promessas de que tipo?",
+    "prompt": "Em Hebreus 8:6, a aliança superior foi instituída com base em promessas de que tipo?",
+    "cue": "Em Hebreus 8:6, a aliança superior foi instituída com base em promessas de que tipo?",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "template": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "maiores"
+      },
+      {
+        "id": "b",
+        "text": "melhores"
+      },
+      {
+        "id": "c",
+        "text": "primeiras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "instituída com base em promessas melhores",
+    "feedbackCorrect": "Promessas melhores sustentam uma aliança superior à primeira.",
+    "feedbackWrong": {
+      "a": "O texto não mede as promessas por tamanho, e sim por qualidade.",
+      "c": "Primeiras seriam as da aliança antiga, não as desta."
+    },
+    "hint": "Leia o fim do versículo 6.",
+    "learningObjective": "Lembrar a base da aliança superior.",
+    "evidence": [
+      "Hebreus 8:6"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-03-06",
+    "trail": "hebreus",
+    "section": "hb-03",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Hebreus 8:6 a Lucas 22:20?",
+    "prompt": "O que liga Hebreus 8:6 a Lucas 22:20?",
+    "cue": "O que liga Hebreus 8:6 a Lucas 22:20?",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "passageA": {
+      "ref": "Hebreus 8:6",
+      "text": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores."
+    },
+    "passageB": {
+      "ref": "Lucas 22:20",
+      "text": "Da mesma forma, após a ceia, tomou o cálice, dizendo: Este cálice é a nova aliança no meu sangue, que é derramado por vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança sem mediador algum"
+      },
+      {
+        "id": "b",
+        "text": "Sangue de animais para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Nova aliança no sangue de Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mediador de uma aliança superior",
+    "feedbackCorrect": "Na ceia, Jesus chama o cálice de nova aliança no seu sangue.",
+    "feedbackWrong": {
+      "a": "Hebreus nomeia o mediador: a aliança não ficou sem ele.",
+      "b": "Lucas fala do sangue de Jesus, não de animais para sempre."
+    },
+    "hint": "Veja o que Jesus diz do cálice na ceia.",
+    "learningObjective": "Ligar a aliança superior ao sangue de Jesus.",
+    "evidence": [
+      "Hebreus 8:6",
+      "Lucas 22:20"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-04-01",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Hebreus 11:1, a fé é a dúvida diante das coisas que se esperam.",
+    "prompt": "Em Hebreus 11:1, a fé é a dúvida diante das coisas que se esperam.",
+    "cue": "Em Hebreus 11:1, a fé é a dúvida diante das coisas que se esperam.",
+    "verseRef": "Hebreus 11:1",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "A fé é a certeza das coisas que se esperam",
+    "feedbackCorrect": "A fé é certeza do que se espera, não dúvida sobre isso.",
+    "feedbackWrong": {
+      "true": "Troque a palavra central: o texto fala de certeza, não de dúvida."
+    },
+    "hint": "Compare a afirmação com a primeira palavra depois de fé.",
+    "learningObjective": "Observar a definição de fé em Hebreus 11:1.",
+    "evidence": [
+      "Hebreus 11:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-04-02",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 11:1, toque a primeira marca da fé diante do que se espera.",
+    "prompt": "Em Hebreus 11:1, toque a primeira marca da fé diante do que se espera.",
+    "cue": "Em Hebreus 11:1, toque a primeira marca da fé diante do que se espera.",
+    "verseRef": "Hebreus 11:1",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "certeza"
+      },
+      {
+        "id": "b",
+        "text": "realidades"
+      },
+      {
+        "id": "c",
+        "text": "convicção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A fé é a certeza das coisas que se esperam",
+    "feedbackCorrect": "A fé é certeza das coisas que se esperam, antes de vê-las.",
+    "feedbackWrong": {
+      "b": "Realidades são o objeto da convicção, não a primeira marca.",
+      "c": "Essa é a segunda marca, ligada ao que não se vê."
+    },
+    "hint": "Leia a primeira metade do versículo.",
+    "learningObjective": "Identificar a primeira marca da fé.",
+    "evidence": [
+      "Hebreus 11:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-04-03",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 11:2, o que os antigos conquistaram pela fé?",
+    "prompt": "Segundo Hebreus 11:2, o que os antigos conquistaram pela fé?",
+    "cue": "Segundo Hebreus 11:2, o que os antigos conquistaram pela fé?",
+    "verseRef": "Hebreus 11:2",
+    "passageText": "Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Riquezas e terras sem nenhum esforço"
+      },
+      {
+        "id": "b",
+        "text": "Isenção de qualquer sofrimento futuro"
+      },
+      {
+        "id": "c",
+        "text": "Um nome famoso entre todos os povos"
+      },
+      {
+        "id": "d",
+        "text": "Um bom testemunho diante de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "pela fé, os antigos conquistaram um bom testemunho",
+    "feedbackCorrect": "Pela fé, os antigos receberam a aprovação de Deus sobre sua vida.",
+    "feedbackWrong": {
+      "a": "O texto não promete riqueza como fruto direto da fé aqui.",
+      "b": "O capítulo inclui sofrimento; fé não é isenção de dor.",
+      "c": "O testemunho é diante de Deus, não fama entre os povos."
+    },
+    "hint": "Veja o que a fé conquistou para os antigos.",
+    "learningObjective": "Observar o fruto da fé dos antigos.",
+    "evidence": [
+      "Hebreus 11:2"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-04-04",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 11:1 na ordem do texto.",
+    "prompt": "Monte Hebreus 11:1 na ordem do texto.",
+    "cue": "Monte Hebreus 11:1 na ordem do texto.",
+    "verseRef": "Hebreus 11:1",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé é a certeza das coisas que se esperam"
+      },
+      {
+        "id": "b",
+        "text": "e a convicção de realidades"
+      },
+      {
+        "id": "c",
+        "text": "que não se veem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A fé é a certeza das coisas que se esperam",
+    "feedbackCorrect": "Certeza do que se espera e convicção do que não se vê.",
+    "feedbackWrong": {
+      "default": "Comece pela certeza; o que não se vê fecha o versículo."
+    },
+    "hint": "O versículo começa definindo a fé.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 11:1.",
+    "evidence": [
+      "Hebreus 11:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-04-05",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Hebreus 11:1, a fé é certeza das coisas que se fazem o quê?",
+    "prompt": "Em Hebreus 11:1, a fé é certeza das coisas que se fazem o quê?",
+    "cue": "Em Hebreus 11:1, a fé é certeza das coisas que se fazem o quê?",
+    "verseRef": "Hebreus 11:1–2",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem. Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "template": "A fé é a certeza das coisas que se ___ e a convicção de realidades que não se veem. Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "veem"
+      },
+      {
+        "id": "b",
+        "text": "tocam"
+      },
+      {
+        "id": "c",
+        "text": "esperam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A fé é a certeza das coisas que se esperam",
+    "feedbackCorrect": "A fé tem certeza justamente daquilo que ainda se espera.",
+    "feedbackWrong": {
+      "a": "Ver é o contrário do ponto aqui: a fé alcança o que não se vê.",
+      "b": "Tocar não é a palavra do texto para essas coisas."
+    },
+    "hint": "Pense no que ainda está no futuro.",
+    "learningObjective": "Lembrar a ligação da fé com o que se espera.",
+    "evidence": [
+      "Hebreus 11:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-04-06",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Hebreus 11:4 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 11:4 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 11:4 comunica que se liga a este contexto?",
+    "verseRef": "Hebreus 11:4",
+    "passageText": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala.",
+    "passageA": {
+      "ref": "Hebreus 11:4",
+      "text": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A confiança em Deus aparece também no que a pessoa oferece."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caim oferece melhor que Abel"
+      },
+      {
+        "id": "b",
+        "text": "Abel oferece com fé"
+      },
+      {
+        "id": "c",
+        "text": "Abel oferece sem fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pela fé, Abel ofereceu a Deus",
+    "feedbackCorrect": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário: a oferta de Abel foi mais excelente.",
+      "c": "O versículo começa ligando a oferta de Abel à fé dele."
+    },
+    "hint": "Veja as duas primeiras palavras do versículo.",
+    "learningObjective": "Ligar a oferta de Abel à fé dele.",
+    "evidence": [
+      "Hebreus 11:4"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-04-01",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 11:3, aquilo que é visível foi feito do que também era visível.",
+    "prompt": "Em Hebreus 11:3, aquilo que é visível foi feito do que também era visível.",
+    "cue": "Em Hebreus 11:3, aquilo que é visível foi feito do que também era visível.",
+    "verseRef": "Hebreus 11:3",
+    "passageText": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "aquilo que é visível foi feito das coisas que não se veem",
+    "feedbackCorrect": "O visível foi feito das coisas que não se veem, pela palavra.",
+    "feedbackWrong": {
+      "true": "Inverta o fim do versículo: o visível veio do que não se vê."
+    },
+    "hint": "Leia atentamente o fim do versículo 3.",
+    "learningObjective": "Compreender a origem do mundo visível.",
+    "evidence": [
+      "Hebreus 11:3"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-04-02",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 11:3, toque a expressão que abre a afirmação sobre entender a criação.",
+    "prompt": "Em Hebreus 11:3, toque a expressão que abre a afirmação sobre entender a criação.",
+    "cue": "Em Hebreus 11:3, toque a expressão que abre a afirmação sobre entender a criação.",
+    "verseRef": "Hebreus 11:3",
+    "passageText": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pela fé"
+      },
+      {
+        "id": "b",
+        "text": "palavra de Deus"
+      },
+      {
+        "id": "c",
+        "text": "visível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Pela fé, entendemos que os mundos foram formados",
+    "feedbackCorrect": "É pela fé que entendemos como os mundos foram formados.",
+    "feedbackWrong": {
+      "b": "A palavra é o meio da criação, não a abertura da afirmação.",
+      "c": "Visível é o resultado, no fim do versículo."
+    },
+    "hint": "É como o versículo começa.",
+    "learningObjective": "Reconhecer a fé como caminho para entender a criação.",
+    "evidence": [
+      "Hebreus 11:3"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-04-03",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Hebreus 11:1–2 liga a definição de fé aos antigos?",
+    "prompt": "Como Hebreus 11:1–2 liga a definição de fé aos antigos?",
+    "cue": "Como Hebreus 11:1–2 liga a definição de fé aos antigos?",
+    "verseRef": "Hebreus 11:1–2",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem. Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os antigos viveram sem precisar confiar nada"
+      },
+      {
+        "id": "b",
+        "text": "Os antigos viam tudo antes de confiar em Deus"
+      },
+      {
+        "id": "c",
+        "text": "A fé começou só depois dos tempos antigos"
+      },
+      {
+        "id": "d",
+        "text": "Quem viveu assim recebeu aprovação de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "pela fé, os antigos conquistaram um bom testemunho",
+    "feedbackCorrect": "A definição ganha rostos: os antigos viveram e foram aprovados.",
+    "feedbackWrong": {
+      "a": "Foi justamente pela fé que eles conquistaram bom testemunho.",
+      "b": "A fé é convicção do que não se vê, também para eles.",
+      "c": "Os antigos já viviam pela fé, antes de nós."
+    },
+    "hint": "Veja o que aconteceu com quem viveu a definição.",
+    "learningObjective": "Relacionar a definição de fé aos antigos.",
+    "evidence": [
+      "Hebreus 11:1–2"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-04-04",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Hebreus 11:1–2?",
+    "prompt": "Como avança o argumento em Hebreus 11:1–2?",
+    "cue": "Como avança o argumento em Hebreus 11:1–2?",
+    "verseRef": "Hebreus 11:1–2",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem. Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé tem certeza do que espera"
+      },
+      {
+        "id": "b",
+        "text": "A fé convence do que não se vê"
+      },
+      {
+        "id": "c",
+        "text": "Os antigos recebem bom testemunho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pela fé, os antigos conquistaram um bom testemunho",
+    "feedbackCorrect": "Definição primeiro; depois, os antigos como prova viva dela.",
+    "feedbackWrong": {
+      "default": "Comece pela definição; os antigos vêm no versículo seguinte."
+    },
+    "hint": "Os antigos aparecem só no segundo versículo.",
+    "learningObjective": "Compreender o avanço de Hebreus 11:1–2.",
+    "evidence": [
+      "Hebreus 11:1–2"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-04-05",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 11:2, os antigos conquistaram pela fé um bom o quê?",
+    "prompt": "Em Hebreus 11:2, os antigos conquistaram pela fé um bom o quê?",
+    "cue": "Em Hebreus 11:2, os antigos conquistaram pela fé um bom o quê?",
+    "verseRef": "Hebreus 11:2",
+    "passageText": "Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "template": "Pois, pela fé, os antigos conquistaram um bom ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prêmio"
+      },
+      {
+        "id": "b",
+        "text": "testemunho"
+      },
+      {
+        "id": "c",
+        "text": "império"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conquistaram um bom testemunho",
+    "feedbackCorrect": "O bom testemunho é a aprovação de Deus sobre a vida deles.",
+    "feedbackWrong": {
+      "a": "O texto não fala de troféu, e sim da aprovação de Deus.",
+      "c": "Nenhum império é prometido aos antigos neste versículo."
+    },
+    "hint": "Veja o que Deus diz sobre a vida deles.",
+    "learningObjective": "Compreender o bom testemunho dos antigos.",
+    "evidence": [
+      "Hebreus 11:2"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-04-06",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 11:3 a Gênesis 1:1?",
+    "prompt": "O que liga Hebreus 11:3 a Gênesis 1:1?",
+    "cue": "O que liga Hebreus 11:3 a Gênesis 1:1?",
+    "verseRef": "Hebreus 11:3",
+    "passageText": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem.",
+    "passageA": {
+      "ref": "Hebreus 11:3",
+      "text": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem."
+    },
+    "passageB": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria pela palavra"
+      },
+      {
+        "id": "b",
+        "text": "O visível cria Deus"
+      },
+      {
+        "id": "c",
+        "text": "A fé dispensa a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os mundos foram formados pela palavra de Deus",
+    "feedbackCorrect": "Hebreus relê Gênesis: Deus forma os mundos pela sua palavra.",
+    "feedbackWrong": {
+      "b": "Deus é o Criador; o visível é obra da palavra dele.",
+      "c": "É pela palavra de Deus que a fé entende a criação."
+    },
+    "hint": "Veja o meio pelo qual os mundos foram formados.",
+    "learningObjective": "Relacionar a fé na criação em Hebreus e Gênesis.",
+    "evidence": [
+      "Hebreus 11:3",
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-04-01",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Hebreus 11:4 mostra a fé de Abel agindo no que ele ofereceu a Deus.",
+    "prompt": "Hebreus 11:4 mostra a fé de Abel agindo no que ele ofereceu a Deus.",
+    "cue": "Hebreus 11:4 mostra a fé de Abel agindo no que ele ofereceu a Deus.",
+    "verseRef": "Hebreus 11:4",
+    "passageText": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente",
+    "feedbackCorrect": "A fé de Abel não ficou só por dentro: ela ofereceu a Deus.",
+    "feedbackWrong": {
+      "false": "O versículo começa com a fé e logo mostra a oferta de Abel."
+    },
+    "hint": "Ligue o começo do versículo à ação de Abel.",
+    "learningObjective": "Interpretar a fé como confiança que age.",
+    "evidence": [
+      "Hebreus 11:4"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-04-02",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 11:4, toque o trecho que mostra como foi o sacrifício de Abel.",
+    "prompt": "Em Hebreus 11:4, toque o trecho que mostra como foi o sacrifício de Abel.",
+    "cue": "Em Hebreus 11:4, toque o trecho que mostra como foi o sacrifício de Abel.",
+    "verseRef": "Hebreus 11:4",
+    "passageText": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justo"
+      },
+      {
+        "id": "b",
+        "text": "mais excelente"
+      },
+      {
+        "id": "c",
+        "text": "morto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um sacrifício mais excelente do que o de Caim",
+    "feedbackCorrect": "O sacrifício de Abel foi mais excelente que o do irmão dele.",
+    "feedbackWrong": {
+      "a": "Justo é o testemunho que Abel recebeu, não a oferta em si.",
+      "c": "Morto fala do fim dele, não de como foi o sacrifício."
+    },
+    "hint": "Compare a oferta dele com a do irmão.",
+    "learningObjective": "Sustentar com o texto a oferta de Abel.",
+    "evidence": [
+      "Hebreus 11:4"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-04-03",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Hebreus 11:1–4 sustenta sobre a fé verdadeira?",
+    "prompt": "Que leitura Hebreus 11:1–4 sustenta sobre a fé verdadeira?",
+    "cue": "Que leitura Hebreus 11:1–4 sustenta sobre a fé verdadeira?",
+    "verseRef": "Hebreus 11:1–2",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem. Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É só sentimento, sem mudar a prática"
+      },
+      {
+        "id": "b",
+        "text": "Garante vencer toda luta ainda nesta vida"
+      },
+      {
+        "id": "c",
+        "text": "Exige ver tudo antes de confiar em Deus"
+      },
+      {
+        "id": "d",
+        "text": "Confia sem ver e vive a partir disso"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "A fé é a certeza das coisas que se esperam",
+    "feedbackCorrect": "A fé tem certeza do que não vê e age, como Abel ao oferecer.",
+    "feedbackWrong": {
+      "a": "Pela fé, Abel ofereceu: a confiança mudou a ação dele.",
+      "b": "Abel morreu sem ver tudo, e ainda assim o texto o aprova.",
+      "c": "A fé é convicção justamente de realidades que não se veem."
+    },
+    "hint": "Junte a definição com o exemplo de Abel.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre a fé.",
+    "evidence": [
+      "Hebreus 11:1–2"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-04-04",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Hebreus 11:3–4?",
+    "prompt": "Qual sequência revela o sentido de Hebreus 11:3–4?",
+    "cue": "Qual sequência revela o sentido de Hebreus 11:3–4?",
+    "verseRef": "Hebreus 11:3–4",
+    "passageText": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem. Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os mundos formados pela palavra"
+      },
+      {
+        "id": "b",
+        "text": "Abel oferece o sacrifício excelente"
+      },
+      {
+        "id": "c",
+        "text": "Abel ainda fala após a morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mesmo depois de morto, ainda fala",
+    "feedbackCorrect": "Da criação pela palavra, o texto chega a Abel, cuja fé ainda fala.",
+    "feedbackWrong": {
+      "default": "Comece pela criação; a fala de Abel após a morte fecha o trecho."
+    },
+    "hint": "O ainda fala de Abel é o ponto final.",
+    "learningObjective": "Ver o fio da fé da criação até Abel.",
+    "evidence": [
+      "Hebreus 11:3–4"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-04-05",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Hebreus 11:3, os mundos foram o quê pela palavra de Deus?",
+    "prompt": "Em Hebreus 11:3, os mundos foram o quê pela palavra de Deus?",
+    "cue": "Em Hebreus 11:3, os mundos foram o quê pela palavra de Deus?",
+    "verseRef": "Hebreus 11:3",
+    "passageText": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem.",
+    "template": "Pela fé, entendemos que os mundos foram ___ pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vistos"
+      },
+      {
+        "id": "b",
+        "text": "formados"
+      },
+      {
+        "id": "c",
+        "text": "tocados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os mundos foram formados pela palavra de Deus",
+    "feedbackCorrect": "Pela fé entendemos que Deus formou os mundos pela palavra.",
+    "feedbackWrong": {
+      "a": "Ver é o nosso limite; formar é o que Deus fez.",
+      "c": "O texto fala de formar os mundos, não de tocá-los."
+    },
+    "hint": "Veja o verbo ligado aos mundos no versículo.",
+    "learningObjective": "Lembrar a ação de Deus na criação pela fé.",
+    "evidence": [
+      "Hebreus 11:3"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-04-06",
+    "trail": "hebreus",
+    "section": "hb-04",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Hebreus 11:4 a Gênesis 4:4?",
+    "prompt": "O que liga Hebreus 11:4 a Gênesis 4:4?",
+    "cue": "O que liga Hebreus 11:4 a Gênesis 4:4?",
+    "verseRef": "Hebreus 11:4",
+    "passageText": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala.",
+    "passageA": {
+      "ref": "Hebreus 11:4",
+      "text": "Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala."
+    },
+    "passageB": {
+      "ref": "Gênesis 4:4",
+      "text": "E Abel também trouxe das primícias de seu rebanho e da gordura delas; o Senhor se agradou de Abel e de sua oferta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abel crê e oferece a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus recusa quem oferece"
+      },
+      {
+        "id": "c",
+        "text": "Caim oferece melhor que Abel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Abel ofereceu a Deus um sacrifício mais excelente",
+    "feedbackCorrect": "Gênesis conta a oferta; Hebreus mostra a fé por trás dela.",
+    "feedbackWrong": {
+      "b": "Deus aprovou as ofertas de Abel, segundo o próprio texto.",
+      "c": "Hebreus diz que a oferta de Abel foi mais excelente."
+    },
+    "hint": "Veja quem oferece e como Deus recebe isso.",
+    "learningObjective": "Ligar a fé de Abel ao relato de Gênesis.",
+    "evidence": [
+      "Hebreus 11:4",
+      "Gênesis 4:4"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-01",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Hebreus 8:3, todo sumo sacerdote é designado para oferecer dons e sacrifícios.",
+    "prompt": "Em Hebreus 8:3, todo sumo sacerdote é designado para oferecer dons e sacrifícios.",
+    "cue": "Em Hebreus 8:3, todo sumo sacerdote é designado para oferecer dons e sacrifícios.",
+    "verseRef": "Hebreus 8:3",
+    "passageText": "Pois todo sumo sacerdote é designado para oferecer tanto dons como sacrifícios; por isso, era necessário que este também tivesse o que oferecer.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "todo sumo sacerdote é designado para oferecer tanto dons como sacrifícios",
+    "feedbackCorrect": "Oferecer dons e sacrifícios é a tarefa dada ao sumo sacerdote.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Hebreus 8:3 sobre a tarefa do sacerdote."
+    },
+    "hint": "Veja a tarefa dada a todo sumo sacerdote.",
+    "learningObjective": "Relembrar a tarefa do sumo sacerdote.",
+    "evidence": [
+      "Hebreus 8:3"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-02",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 1:4, toque a palavra que mostra a posição do Filho sobre os anjos.",
+    "prompt": "Em Hebreus 1:4, toque a palavra que mostra a posição do Filho sobre os anjos.",
+    "cue": "Em Hebreus 1:4, toque a palavra que mostra a posição do Filho sobre os anjos.",
+    "verseRef": "Hebreus 1:4",
+    "passageText": "Tornou-se tão superior aos anjos quanto herdou um nome mais excelente do que o deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "superior"
+      },
+      {
+        "id": "c",
+        "text": "anjos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tornou-se tão superior aos anjos",
+    "feedbackCorrect": "Ele se tornou superior aos anjos, com nome mais excelente.",
+    "feedbackWrong": {
+      "a": "Nome é o que ele herdou; a posição vem antes disso.",
+      "c": "Anjos são os comparados a ele, não a posição dele."
+    },
+    "hint": "Procure a comparação logo no começo do versículo.",
+    "learningObjective": "Relembrar a posição do Filho sobre os anjos.",
+    "evidence": [
+      "Hebreus 1:4"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-03",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Hebreus 4:16, o que encontramos como auxílio em tempo oportuno?",
+    "prompt": "Segundo Hebreus 4:16, o que encontramos como auxílio em tempo oportuno?",
+    "cue": "Segundo Hebreus 4:16, o que encontramos como auxílio em tempo oportuno?",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência completa de qualquer prova"
+      },
+      {
+        "id": "b",
+        "text": "Força para nunca mais precisar orar"
+      },
+      {
+        "id": "c",
+        "text": "Resposta igual para todos os pedidos"
+      },
+      {
+        "id": "d",
+        "text": "Graça para a hora da necessidade"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "encontrar graça como auxílio em tempo oportuno",
+    "feedbackCorrect": "No trono da graça, a ajuda chega na hora em que precisamos.",
+    "feedbackWrong": {
+      "a": "Auxílio em tempo oportuno supõe prova, não ausência dela.",
+      "b": "A graça nos leva a voltar a Deus, não a deixar de orar.",
+      "c": "O texto fala de auxílio oportuno, não de respostas iguais."
+    },
+    "hint": "Leia o fim do convite do versículo 16.",
+    "learningObjective": "Relembrar a graça recebida em tempo oportuno.",
+    "evidence": [
+      "Hebreus 4:16"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-04",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 1:3 na ordem do texto.",
+    "prompt": "Monte Hebreus 1:3 na ordem do texto.",
+    "cue": "Monte Hebreus 1:3 na ordem do texto.",
+    "verseRef": "Hebreus 1:3",
+    "passageText": "Ele é o resplendor da sua glória e a expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder, depois de ter feito a purificação dos pecados, assentou-se à direita da Majestade, nas alturas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é o resplendor da sua glória"
+      },
+      {
+        "id": "b",
+        "text": "e a expressão exata do seu Ser"
+      },
+      {
+        "id": "c",
+        "text": "sustentando todas as coisas pela palavra do seu poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele é o resplendor da sua glória",
+    "feedbackCorrect": "Resplendor, expressão exata e sustento de tudo: nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo resplendor da glória; o sustento vem depois."
+    },
+    "hint": "O versículo começa pela glória do Filho.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 1:3.",
+    "evidence": [
+      "Hebreus 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-05",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Hebreus 11:1, a fé é também convicção de que tipo de realidades?",
+    "prompt": "Em Hebreus 11:1, a fé é também convicção de que tipo de realidades?",
+    "cue": "Em Hebreus 11:1, a fé é também convicção de que tipo de realidades?",
+    "verseRef": "Hebreus 11:1",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem.",
+    "template": "A fé é a certeza das coisas que se esperam e a ___ de realidades que não se veem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convicção"
+      },
+      {
+        "id": "b",
+        "text": "dúvida"
+      },
+      {
+        "id": "c",
+        "text": "certeza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e a convicção de realidades que não se veem",
+    "feedbackCorrect": "A fé é convicção de realidades que ainda não se veem.",
+    "feedbackWrong": {
+      "b": "Dúvida é o contrário das duas marcas da fé no texto.",
+      "c": "Certeza é a primeira marca, ligada ao que se espera."
+    },
+    "hint": "É a segunda marca, depois da certeza.",
+    "learningObjective": "Relembrar a segunda marca da fé.",
+    "evidence": [
+      "Hebreus 11:1"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-06",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Hebreus 11:2 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 11:2 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 11:2 comunica que se liga a este contexto?",
+    "verseRef": "Hebreus 11:2",
+    "passageText": "Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "passageA": {
+      "ref": "Hebreus 11:2",
+      "text": "Pois, pela fé, os antigos conquistaram um bom testemunho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem confiou em Deus no passado recebeu sua aprovação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Antigos aprovados pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Fé sem aprovação de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Antigos reprovados pela fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os antigos conquistaram um bom testemunho",
+    "feedbackCorrect": "Pela fé, os antigos conquistaram um bom testemunho de Deus.",
+    "feedbackWrong": {
+      "b": "O testemunho vem justamente de Deus sobre quem creu.",
+      "c": "Bom testemunho é aprovação, não reprovação deles."
+    },
+    "hint": "Veja o que os antigos conquistaram pela fé.",
+    "learningObjective": "Ligar a fé dos antigos à aprovação de Deus.",
+    "evidence": [
+      "Hebreus 11:2"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-07",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Hebreus 4:16, toque o lugar de graça ao qual somos convidados a chegar.",
+    "prompt": "Em Hebreus 4:16, toque o lugar de graça ao qual somos convidados a chegar.",
+    "cue": "Em Hebreus 4:16, toque o lugar de graça ao qual somos convidados a chegar.",
+    "verseRef": "Hebreus 4:16",
+    "passageText": "Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "auxílio"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "trono"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ao trono da graça",
+    "feedbackCorrect": "Chegamos ao trono da graça para receber misericórdia.",
+    "feedbackWrong": {
+      "a": "Auxílio é o que encontramos lá, não o lugar em si.",
+      "b": "Graça descreve o trono; o lugar nomeado vem antes."
+    },
+    "hint": "Procure o lugar depois do convite a chegar.",
+    "learningObjective": "Identificar o trono da graça em Hebreus 4:16.",
+    "evidence": [
+      "Hebreus 4:16"
+    ]
+  },
+  {
+    "id": "hebreus-sem-hb-boss-08",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Hebreus 8:6 na ordem do texto.",
+    "prompt": "Monte Hebreus 8:6 na ordem do texto.",
+    "cue": "Monte Hebreus 8:6 na ordem do texto.",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ele possui um ministério muito mais excelente"
+      },
+      {
+        "id": "b",
+        "text": "é também mediador de uma aliança superior"
+      },
+      {
+        "id": "c",
+        "text": "instituída com base em promessas melhores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele possui um ministério muito mais excelente",
+    "feedbackCorrect": "Ministério excelente, mediador e promessas melhores: nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo ministério dele; as promessas fecham o versículo."
+    },
+    "hint": "As promessas melhores vêm no fim do versículo.",
+    "learningObjective": "Reconhecer a sequência de Hebreus 8:6.",
+    "evidence": [
+      "Hebreus 8:6"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-01",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Hebreus 1:1, Deus falou nestes últimos dias aos pais pelos profetas antigos.",
+    "prompt": "Em Hebreus 1:1, Deus falou nestes últimos dias aos pais pelos profetas antigos.",
+    "cue": "Em Hebreus 1:1, Deus falou nestes últimos dias aos pais pelos profetas antigos.",
+    "verseRef": "Hebreus 1:1",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "nestes últimos dias nos falou pelo Filho",
+    "feedbackCorrect": "Nestes últimos dias Deus nos falou pelo Filho, não pelos profetas.",
+    "feedbackWrong": {
+      "true": "Troque o mensageiro final: nos últimos dias, é o Filho quem fala."
+    },
+    "hint": "Separe o tempo dos profetas do tempo do Filho.",
+    "learningObjective": "Distinguir as duas falas de Deus na revisão.",
+    "evidence": [
+      "Hebreus 1:1"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-02",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 8:6, toque a palavra que marca a virada para o ministério de Jesus.",
+    "prompt": "Em Hebreus 8:6, toque a palavra que marca a virada para o ministério de Jesus.",
+    "cue": "Em Hebreus 8:6, toque a palavra que marca a virada para o ministério de Jesus.",
+    "verseRef": "Hebreus 8:6",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ministério"
+      },
+      {
+        "id": "b",
+        "text": "Agora"
+      },
+      {
+        "id": "c",
+        "text": "efeito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Agora, com efeito, ele possui um ministério",
+    "feedbackCorrect": "Essa palavra vira a página do serviço antigo para o de Jesus.",
+    "feedbackWrong": {
+      "a": "Ministério é o assunto novo, não a marca da virada.",
+      "c": "Efeito acompanha a virada, mas não é a palavra de tempo."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a virada do argumento em Hebreus 8:6.",
+    "evidence": [
+      "Hebreus 8:6"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-03",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Hebreus 4:14–15 sustenta o convite de chegar a Deus?",
+    "prompt": "Como Hebreus 4:14–15 sustenta o convite de chegar a Deus?",
+    "cue": "Como Hebreus 4:14–15 sustenta o convite de chegar a Deus?",
+    "verseRef": "Hebreus 4:14–15",
+    "passageText": "Portanto, uma vez que temos Jesus, o Filho de Deus, como o grande sumo sacerdote que penetrou nos céus, conservemos firmes a nossa confissão. Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temos um sacerdote nos céus que se compadece"
+      },
+      {
+        "id": "b",
+        "text": "Temos um sacerdote que nunca foi provado"
+      },
+      {
+        "id": "c",
+        "text": "Deus atende só quem já venceu a tentação"
+      },
+      {
+        "id": "d",
+        "text": "A confissão firme dispensa a ajuda de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "grande sumo sacerdote que penetrou nos céus",
+    "feedbackCorrect": "Nos céus e compassivo: por isso chegamos com confiança.",
+    "feedbackWrong": {
+      "b": "Ele foi tentado em todas as coisas, à nossa semelhança.",
+      "c": "Chega-se para receber misericórdia, antes de qualquer vitória.",
+      "d": "Conservar a confissão anda junto com buscar a graça dele."
+    },
+    "hint": "Junte o lugar dele com o coração dele por nós.",
+    "learningObjective": "Relacionar o sacerdote compassivo ao convite de orar.",
+    "evidence": [
+      "Hebreus 4:14–15"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-04",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o fio de Hebreus nesta revisão?",
+    "prompt": "Como avança o fio de Hebreus nesta revisão?",
+    "cue": "Como avança o fio de Hebreus nesta revisão?",
+    "verseRef": "Hebreus 1:1–2",
+    "passageText": "Havendo Deus, outrora, falado muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho. a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fala por fim pelo Filho"
+      },
+      {
+        "id": "b",
+        "text": "O Filho é herdeiro de tudo"
+      },
+      {
+        "id": "c",
+        "text": "Ele fez o universo por ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a quem designou herdeiro de todas as coisas",
+    "feedbackCorrect": "A fala pelo Filho vem primeiro; herdeiro e Criador a explicam.",
+    "feedbackWrong": {
+      "default": "Comece pela fala nos últimos dias; o universo fecha o trecho."
+    },
+    "hint": "O universo feito por ele vem no fim do versículo 2.",
+    "learningObjective": "Compreender o começo do fio de Hebreus.",
+    "evidence": [
+      "Hebreus 1:1–2"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-05",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Hebreus 4:15, o sumo sacerdote pode fazer o quê diante das nossas fraquezas?",
+    "prompt": "Em Hebreus 4:15, o sumo sacerdote pode fazer o quê diante das nossas fraquezas?",
+    "cue": "Em Hebreus 4:15, o sumo sacerdote pode fazer o quê diante das nossas fraquezas?",
+    "verseRef": "Hebreus 4:15",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "template": "Pois não temos um sumo sacerdote que não possa ___ das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "compadecer-se"
+      },
+      {
+        "id": "b",
+        "text": "esquecer-se"
+      },
+      {
+        "id": "c",
+        "text": "afastar-se"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "Ele pode compadecer-se porque foi tentado à nossa semelhança.",
+    "feedbackWrong": {
+      "b": "Ele conhece as fraquezas por dentro; não as esquece.",
+      "c": "Afastar-se é o contrário do que o texto afirma sobre ele."
+    },
+    "hint": "Veja o verbo ligado às nossas fraquezas.",
+    "learningObjective": "Compreender a compaixão do sumo sacerdote.",
+    "evidence": [
+      "Hebreus 4:15"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-06",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Hebreus 1:2 a João 1:3?",
+    "prompt": "O que liga Hebreus 1:2 a João 1:3?",
+    "cue": "O que liga Hebreus 1:2 a João 1:3?",
+    "verseRef": "Hebreus 1:2",
+    "passageText": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo.",
+    "passageA": {
+      "ref": "Hebreus 1:2",
+      "text": "a quem designou herdeiro de todas as coisas, por meio de quem também fez o universo."
+    },
+    "passageB": {
+      "ref": "João 1:3",
+      "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os anjos criaram o universo"
+      },
+      {
+        "id": "b",
+        "text": "Cristo fez todas as coisas"
+      },
+      {
+        "id": "c",
+        "text": "O universo surgiu sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio de quem também fez o universo",
+    "feedbackCorrect": "Os dois textos dizem que tudo foi feito por meio dele.",
+    "feedbackWrong": {
+      "a": "Anjos adoram o Filho; quem fez o universo foi ele.",
+      "c": "Nada surgiu sozinho: tudo foi feito por meio do Filho."
+    },
+    "hint": "Veja por meio de quem tudo foi feito nos dois.",
+    "learningObjective": "Relacionar a criação pelo Filho nos dois textos.",
+    "evidence": [
+      "Hebreus 1:2",
+      "João 1:3"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-07",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Hebreus 4:12, toque a qualidade da palavra que mostra que ela não está morta.",
+    "prompt": "Em Hebreus 4:12, toque a qualidade da palavra que mostra que ela não está morta.",
+    "cue": "Em Hebreus 4:12, toque a qualidade da palavra que mostra que ela não está morta.",
+    "verseRef": "Hebreus 4:12",
+    "passageText": "Porque a palavra de Deus é viva e eficaz, e mais cortante do que qualquer espada de dois gumes, e penetra até ao ponto de dividir alma e espírito, juntas e medulas, e é apta para discernir os pensamentos e propósitos do coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eficaz"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "viva"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a palavra de Deus é viva e eficaz",
+    "feedbackCorrect": "A palavra de Deus é viva: ela age e discerne o coração.",
+    "feedbackWrong": {
+      "a": "Essa é a segunda qualidade, sobre o efeito dela.",
+      "b": "Espada é a imagem de comparação, não a qualidade pedida."
+    },
+    "hint": "É a primeira qualidade nomeada no versículo.",
+    "learningObjective": "Reconhecer a palavra de Deus como viva.",
+    "evidence": [
+      "Hebreus 4:12"
+    ]
+  },
+  {
+    "id": "hebreus-cam-hb-boss-08",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as marcas da fé em Hebreus 11:1–2?",
+    "prompt": "Como se encadeiam as marcas da fé em Hebreus 11:1–2?",
+    "cue": "Como se encadeiam as marcas da fé em Hebreus 11:1–2?",
+    "verseRef": "Hebreus 11:1–2",
+    "passageText": "A fé é a certeza das coisas que se esperam e a convicção de realidades que não se veem. Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Certeza do que ainda se espera"
+      },
+      {
+        "id": "b",
+        "text": "Convicção do que não se vê"
+      },
+      {
+        "id": "c",
+        "text": "Antigos aprovados por viver assim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pela fé, os antigos conquistaram um bom testemunho",
+    "feedbackCorrect": "As duas marcas da fé aparecem antes do testemunho dos antigos.",
+    "feedbackWrong": {
+      "default": "Comece pelas marcas da fé; os antigos vêm depois."
+    },
+    "hint": "Os antigos aprovados fecham o encadeamento.",
+    "learningObjective": "Compreender a cadeia da fé em Hebreus 11:1–2.",
+    "evidence": [
+      "Hebreus 11:1–2"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-01",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Hebreus mostra Jesus maior que os anjos e mediador de uma aliança superior.",
+    "prompt": "Hebreus mostra Jesus maior que os anjos e mediador de uma aliança superior.",
+    "cue": "Hebreus mostra Jesus maior que os anjos e mediador de uma aliança superior.",
+    "verseRef": "Hebreus 1:4–5",
+    "passageText": "Tornou-se tão superior aos anjos quanto herdou um nome mais excelente do que o deles. Pois a qual dos anjos Deus alguma vez disse: Tu és meu Filho, hoje eu te gerei? E ainda: Eu serei para ele um Pai, e ele será para mim um Filho?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Tornou-se tão superior aos anjos",
+    "feedbackCorrect": "Maior que os anjos e mediador superior: é o fio da carta.",
+    "feedbackWrong": {
+      "false": "Junte Hebreus 1:4 com 8:6 e veja os dois lados do argumento."
+    },
+    "hint": "Pense no fio que liga o começo e o meio da carta.",
+    "learningObjective": "Interpretar o fio central de Hebreus na revisão.",
+    "evidence": [
+      "Hebreus 1:4–5"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-02",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 11:2, toque quem o texto apresenta como prova viva da fé.",
+    "prompt": "Em Hebreus 11:2, toque quem o texto apresenta como prova viva da fé.",
+    "cue": "Em Hebreus 11:2, toque quem o texto apresenta como prova viva da fé.",
+    "verseRef": "Hebreus 11:2",
+    "passageText": "Pois, pela fé, os antigos conquistaram um bom testemunho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "antigos"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "testemunho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os antigos conquistaram um bom testemunho",
+    "feedbackCorrect": "Os antigos viveram a definição e receberam bom testemunho.",
+    "feedbackWrong": {
+      "b": "Fé é o caminho deles, não as pessoas apresentadas.",
+      "c": "Testemunho é o que eles conquistaram, não quem eles são."
+    },
+    "hint": "Procure as pessoas nomeadas no versículo.",
+    "learningObjective": "Sustentar com o texto os exemplos de fé.",
+    "evidence": [
+      "Hebreus 11:2"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-03",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura resume bem o convite final de Hebreus nesta revisão?",
+    "prompt": "Que leitura resume bem o convite final de Hebreus nesta revisão?",
+    "cue": "Que leitura resume bem o convite final de Hebreus nesta revisão?",
+    "verseRef": "Hebreus 4:15–16",
+    "passageText": "Pois não temos um sumo sacerdote que não possa compadecer-se das nossas fraquezas; antes, foi ele tentado em todas as coisas, à nossa semelhança, mas sem pecado. Cheguemos, pois, com confiança ao trono da graça, para receber misericórdia e encontrar graça como auxílio em tempo oportuno.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Voltar aos sacrifícios antigos para completar Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Chegar confiantes a quem se compadece de nós"
+      },
+      {
+        "id": "c",
+        "text": "Esperar merecer para só então buscar a Deus"
+      },
+      {
+        "id": "d",
+        "text": "Confiar que fé dispensa qualquer perseverança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "compadecer-se das nossas fraquezas",
+    "feedbackCorrect": "A resposta de Hebreus é chegar com confiança, sem recuar.",
+    "feedbackWrong": {
+      "a": "A aliança em Jesus é superior; não falta completar com a antiga.",
+      "c": "Chega-se para receber misericórdia, não por já merecer.",
+      "d": "A fé de Hebreus persevera; Abel e os antigos a viveram agindo."
+    },
+    "hint": "Ligue a compaixão dele ao trono da graça.",
+    "learningObjective": "Escolher a leitura que resume o convite de Hebreus.",
+    "evidence": [
+      "Hebreus 4:15–16"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-04",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio completo de Hebreus nesta revisão?",
+    "prompt": "Qual sequência revela o fio completo de Hebreus nesta revisão?",
+    "cue": "Qual sequência revela o fio completo de Hebreus nesta revisão?",
+    "verseRef": "Hebreus 8:6–7",
+    "passageText": "Agora, com efeito, ele possui um ministério muito mais excelente, na medida em que é também mediador de uma aliança superior, instituída com base em promessas melhores. Porque, se a primeira aliança tivesse sido sem defeito, de maneira nenhuma estaria sendo buscada uma segunda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Filho maior é apresentado"
+      },
+      {
+        "id": "b",
+        "text": "Ele medeia a aliança superior"
+      },
+      {
+        "id": "c",
+        "text": "A fé persevera sem recuar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mediador de uma aliança superior",
+    "feedbackCorrect": "Do Filho maior, à aliança superior, à fé que persevera.",
+    "feedbackWrong": {
+      "default": "Siga a carta: Filho, aliança e, por fim, a fé que anda."
+    },
+    "hint": "A fé que persevera é o ponto de chegada da carta.",
+    "learningObjective": "Ver o fio completo de Hebreus na revisão.",
+    "evidence": [
+      "Hebreus 8:6–7"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-05",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Hebreus 8:8, o que Deus diz que fará com a nova aliança prometida?",
+    "prompt": "Em Hebreus 8:8, o que Deus diz que fará com a nova aliança prometida?",
+    "cue": "Em Hebreus 8:8, o que Deus diz que fará com a nova aliança prometida?",
+    "verseRef": "Hebreus 8:8",
+    "passageText": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "template": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que ___ uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "options": [
+      {
+        "id": "a",
+        "text": "quebrarei"
+      },
+      {
+        "id": "b",
+        "text": "firmarei"
+      },
+      {
+        "id": "c",
+        "text": "esconderei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "firmarei uma nova aliança",
+    "feedbackCorrect": "Deus mesmo firmará a nova aliança com Israel e Judá.",
+    "feedbackWrong": {
+      "a": "Quebrar é o contrário da promessa que Deus anuncia aqui.",
+      "c": "A promessa é anunciada ao povo, não escondida dele."
+    },
+    "hint": "Veja o verbo de Deus sobre a nova aliança.",
+    "learningObjective": "Lembrar a promessa de Deus na nova aliança.",
+    "evidence": [
+      "Hebreus 8:8"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-06",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Hebreus 8:8 a Jeremias 31:31?",
+    "prompt": "O que liga Hebreus 8:8 a Jeremias 31:31?",
+    "cue": "O que liga Hebreus 8:8 a Jeremias 31:31?",
+    "verseRef": "Hebreus 8:8",
+    "passageText": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá.",
+    "passageA": {
+      "ref": "Hebreus 8:8",
+      "text": "Porque, repreendendo-os, diz: Eis que vêm dias, diz o Senhor, em que firmarei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "passageB": {
+      "ref": "Jeremias 31:31",
+      "text": "Eis que vêm dias, diz o Senhor, em que estabelecerei uma nova aliança com a casa de Israel e com a casa de Judá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim de toda promessa"
+      },
+      {
+        "id": "b",
+        "text": "Aliança só com os pais"
+      },
+      {
+        "id": "c",
+        "text": "A nova aliança prometida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "firmarei uma nova aliança",
+    "feedbackCorrect": "Hebreus cita Jeremias: a nova aliança foi prometida por Deus.",
+    "feedbackWrong": {
+      "a": "É uma promessa sendo lembrada, não o fim das promessas.",
+      "b": "A promessa olha adiante, para Israel e Judá, não só ao passado."
+    },
+    "hint": "Veja o que Deus promete nos dois textos.",
+    "learningObjective": "Relacionar a nova aliança à promessa de Jeremias.",
+    "evidence": [
+      "Hebreus 8:8",
+      "Jeremias 31:31"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-07",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Hebreus 1:6, toque o que os anjos devem fazer diante do Primogênito.",
+    "prompt": "Em Hebreus 1:6, toque o que os anjos devem fazer diante do Primogênito.",
+    "cue": "Em Hebreus 1:6, toque o que os anjos devem fazer diante do Primogênito.",
+    "verseRef": "Hebreus 1:6",
+    "passageText": "E, novamente, ao apresentar o Primogênito no mundo, diz: \"Que todos os anjos de Deus o adorem.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primogênito"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "adorem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que todos os anjos de Deus o adorem",
+    "feedbackCorrect": "Todos os anjos adoram o Filho apresentado no mundo.",
+    "feedbackWrong": {
+      "a": "Primogênito é quem é adorado, não o que os anjos fazem.",
+      "b": "Mundo é onde o Primogênito é apresentado, não a ação deles."
+    },
+    "hint": "Veja a ordem de Deus aos anjos no fim do versículo.",
+    "learningObjective": "Sustentar a adoração dos anjos ao Filho.",
+    "evidence": [
+      "Hebreus 1:6"
+    ]
+  },
+  {
+    "id": "hebreus-pro-hb-boss-08",
+    "trail": "hebreus",
+    "section": "hb-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da fé que persevera em Hebreus 11?",
+    "prompt": "Qual sequência revela o caminho da fé que persevera em Hebreus 11?",
+    "cue": "Qual sequência revela o caminho da fé que persevera em Hebreus 11?",
+    "verseRef": "Hebreus 11:3–4",
+    "passageText": "Pela fé, entendemos que os mundos foram formados pela palavra de Deus, de maneira que aquilo que é visível foi feito das coisas que não se veem. Pela fé, Abel ofereceu a Deus um sacrifício mais excelente do que o de Caim; por meio dele obteve testemunho de ser justo, tendo a aprovação de Deus quanto às suas ofertas. E, mesmo depois de morto, ainda fala.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pela fé entendemos a criação"
+      },
+      {
+        "id": "b",
+        "text": "Abel oferece com fé a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Abel ainda fala após morrer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mesmo depois de morto, ainda fala",
+    "feedbackCorrect": "Entender, oferecer e ainda falar: a fé deixa um testemunho vivo.",
+    "feedbackWrong": {
+      "default": "Comece por entender a criação; a fala de Abel fecha o caminho."
+    },
+    "hint": "A fala de Abel depois da morte é o fim do caminho.",
+    "learningObjective": "Ver o caminho da fé perseverante em Hebreus 11.",
+    "evidence": [
+      "Hebreus 11:3–4"
+    ]
+  }
+]

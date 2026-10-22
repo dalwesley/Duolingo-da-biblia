@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "teologia-biblica-sem-tb-01-historia-01",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 24:44, Jesus diz que deve se cumprir tudo o que está escrito a respeito dele na Lei de Moisés, nos Profetas e nos Salmos",
+    "prompt": "Em Lucas 24:44, Jesus diz que deve se cumprir tudo o que está escrito a respeito dele na Lei de Moisés, nos Profetas e nos Salmos",
+    "cue": "Em Lucas 24:44, Jesus diz que deve se cumprir tudo o que está escrito a respeito dele na Lei de Moisés, nos Profetas e nos Salmos",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "na Lei de Moisés, nos Profetas e nos Salmos",
+    "feedbackCorrect": "Jesus reúne Lei, Profetas e Salmos como escritos a respeito dele.",
+    "feedbackWrong": {
+      "false": "Releia Lucas 24:44 e veja a lista que Jesus nomeia."
+    },
+    "hint": "Leia a lista no fim do versículo.",
+    "learningObjective": "Observar as três partes das Escrituras nomeadas por Jesus.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-01-historia-02",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 24:44, toque a parte das Escrituras nomeada por último",
+    "prompt": "Em Lucas 24:44, toque a parte das Escrituras nomeada por último",
+    "cue": "Em Lucas 24:44, toque a parte das Escrituras nomeada por último",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nos Profetas"
+      },
+      {
+        "id": "b",
+        "text": "Lei de Moisés"
+      },
+      {
+        "id": "c",
+        "text": "nos Salmos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos Profetas e nos Salmos",
+    "feedbackCorrect": "A lista termina com os Salmos, depois da Lei e dos Profetas.",
+    "feedbackWrong": {
+      "a": "Os Profetas vêm no meio da lista.",
+      "b": "A Lei de Moisés abre a lista, não a fecha."
+    },
+    "hint": "Leia a lista até o fim.",
+    "learningObjective": "Identificar a ordem das partes das Escrituras.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-01-historia-03",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 24:45, o que Jesus fez para os discípulos entenderem as Escrituras?",
+    "prompt": "Segundo Lucas 24:45, o que Jesus fez para os discípulos entenderem as Escrituras?",
+    "cue": "Segundo Lucas 24:45, o que Jesus fez para os discípulos entenderem as Escrituras?",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abriu o entendimento deles para compreender"
+      },
+      {
+        "id": "b",
+        "text": "Mandou que perguntassem aos mestres"
+      },
+      {
+        "id": "c",
+        "text": "Pediu que decorassem os textos sagrados"
+      },
+      {
+        "id": "d",
+        "text": "Entregou um resumo escrito aos discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lhes abriu o entendimento para que pudessem compreender as Escrituras",
+    "feedbackCorrect": "Jesus abriu o entendimento deles; a compreensão é presente dele.",
+    "feedbackWrong": {
+      "b": "Quem abre o entendimento é o próprio Jesus.",
+      "c": "Decorar não é o que o texto descreve aqui.",
+      "d": "Nada é entregue por escrito; Jesus age no entendimento."
+    },
+    "hint": "Veja o que Jesus faz, não o que eles fazem.",
+    "learningObjective": "Observar a ação de Jesus sobre os discípulos.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-01-historia-04",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 24:44 na ordem do texto",
+    "prompt": "Monte Lucas 24:44 na ordem do texto",
+    "cue": "Monte Lucas 24:44 na ordem do texto",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E disse-lhes"
+      },
+      {
+        "id": "b",
+        "text": "Estas são as palavras que lhes falei"
+      },
+      {
+        "id": "c",
+        "text": "É indispensável que se cumpra tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Estas são as palavras que lhes falei",
+    "feedbackCorrect": "Jesus fala, lembra suas palavras e anuncia o cumprimento.",
+    "feedbackWrong": {
+      "default": "Comece pela fala de Jesus e siga até o cumprimento."
+    },
+    "hint": "O versículo começa com Jesus falando.",
+    "learningObjective": "Reconhecer a sequência de Lucas 24:44.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-01-historia-05",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 24:46, o que o Cristo faria no terceiro dia?",
+    "prompt": "Em Lucas 24:46, o que o Cristo faria no terceiro dia?",
+    "cue": "Em Lucas 24:46, o que o Cristo faria no terceiro dia?",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "template": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ___ dos mortos no terceiro dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "aparecesse"
+      },
+      {
+        "id": "b",
+        "text": "ressuscitasse"
+      },
+      {
+        "id": "c",
+        "text": "voltasse"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ressuscitasse dos mortos no terceiro dia",
+    "feedbackCorrect": "Estava escrito que ele sofreria e voltaria à vida no terceiro dia.",
+    "feedbackWrong": {
+      "a": "O texto fala de voltar dos mortos, não só aparecer.",
+      "c": "A palavra do texto é mais forte que apenas voltar."
+    },
+    "hint": "Veja o que devia acontecer no terceiro dia.",
+    "learningObjective": "Lembrar o anúncio da ressurreição no terceiro dia.",
+    "evidence": [
+      "Lucas 24:46"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-01-historia-06",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes de morrer, Jesus já tinha falado aos discípulos sobre si."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras sem ligação com Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Tudo aponta para Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Palavras esquecidas sem cumprimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tudo o que a meu respeito está escrito",
+    "feedbackCorrect": "Tudo o que está escrito a respeito dele deve se cumprir.",
+    "feedbackWrong": {
+      "a": "O texto liga as Escrituras diretamente a Jesus.",
+      "c": "Jesus diz que suas palavras se cumprirão, não serão esquecidas."
+    },
+    "hint": "Veja a respeito de quem tudo foi escrito.",
+    "learningObjective": "Ligar Lucas 24:44 à pessoa de Jesus.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-01-historia-01",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 24:45, os discípulos compreenderam as Escrituras por esforço próprio sem ajuda de Jesus",
+    "prompt": "Em Lucas 24:45, os discípulos compreenderam as Escrituras por esforço próprio sem ajuda de Jesus",
+    "cue": "Em Lucas 24:45, os discípulos compreenderam as Escrituras por esforço próprio sem ajuda de Jesus",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "lhes abriu o entendimento",
+    "feedbackCorrect": "Foi Jesus quem abriu o entendimento deles para compreenderem.",
+    "feedbackWrong": {
+      "true": "Releia o versículo e veja quem abre o entendimento."
+    },
+    "hint": "Procure quem faz a ação principal.",
+    "learningObjective": "Compreender que entender as Escrituras é dom de Jesus.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-01-historia-02",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 24:45, toque a expressão que mostra com que fim Jesus agiu nos discípulos",
+    "prompt": "Em Lucas 24:45, toque a expressão que mostra com que fim Jesus agiu nos discípulos",
+    "cue": "Em Lucas 24:45, toque a expressão que mostra com que fim Jesus agiu nos discípulos",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "para que"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que pudessem compreender as Escrituras",
+    "feedbackCorrect": "A expressão mostra o fim da ação, que eles compreendessem.",
+    "feedbackWrong": {
+      "a": "Isso é o que eles compreenderiam, não a marca de fim.",
+      "c": "Essa palavra marca o momento, não o fim da ação."
+    },
+    "hint": "Procure a expressão antes de compreenderem.",
+    "learningObjective": "Reconhecer a marca de propósito no texto.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-01-historia-03",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 24:47 continua o que Lucas 24:46 anuncia?",
+    "prompt": "Como Lucas 24:47 continua o que Lucas 24:46 anuncia?",
+    "cue": "Como Lucas 24:47 continua o que Lucas 24:46 anuncia?",
+    "verseRef": "Lucas 24:46–47",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os discípulos guardariam tudo em segredo"
+      },
+      {
+        "id": "b",
+        "text": "Só Jerusalém ouviria a mensagem de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "A boa notícia sairia de Jerusalém às nações"
+      },
+      {
+        "id": "d",
+        "text": "A história termina na ressurreição, sem missão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a todas as nações, começando por Jerusalém",
+    "feedbackCorrect": "Depois da ressurreição, a mensagem avança até todas as nações.",
+    "feedbackWrong": {
+      "a": "O texto fala em proclamar, não em guardar segredo.",
+      "b": "Jerusalém é o começo, não o limite da mensagem.",
+      "d": "O versículo seguinte já anuncia proclamação, não fim."
+    },
+    "hint": "Veja onde a proclamação começa e até onde vai.",
+    "learningObjective": "Relacionar ressurreição e missão às nações.",
+    "evidence": [
+      "Lucas 24:46–47"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-01-historia-04",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Lucas 24:44–45?",
+    "prompt": "Como avança a cena em Lucas 24:44–45?",
+    "cue": "Como avança a cena em Lucas 24:44–45?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus lembra o que já tinha dito"
+      },
+      {
+        "id": "b",
+        "text": "Jesus abre o entendimento dos discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Jesus resume o que estava escrito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "lhes abriu o entendimento",
+    "feedbackCorrect": "Primeiro a lembrança, depois o entendimento aberto e o resumo.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Jesus lembra aos discípulos."
+    },
+    "hint": "O resumo do escrito vem depois.",
+    "learningObjective": "Compreender o movimento da cena com os discípulos.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-01-historia-05",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 24:47, o que será proclamado em nome de Jesus?",
+    "prompt": "Em Lucas 24:47, o que será proclamado em nome de Jesus?",
+    "cue": "Em Lucas 24:47, o que será proclamado em nome de Jesus?",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "template": "E em seu nome se proclamará ___ para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "anúncio"
+      },
+      {
+        "id": "b",
+        "text": "arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "perdão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se proclamará arrependimento para a remissão dos pecados",
+    "feedbackCorrect": "Em nome dele se proclama a mudança de rumo às nações.",
+    "feedbackWrong": {
+      "a": "A palavra do texto nomeia a resposta pedida às pessoas.",
+      "c": "Isso é o fruto proclamado, não o que se proclama."
+    },
+    "hint": "Veja o que vem antes de remissão dos pecados.",
+    "learningObjective": "Compreender a resposta pedida na proclamação.",
+    "evidence": [
+      "Lucas 24:47"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-01-historia-06",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 24:46 a 1 Coríntios 15:3–4?",
+    "prompt": "O que liga Lucas 24:46 a 1 Coríntios 15:3–4?",
+    "cue": "O que liga Lucas 24:46 a 1 Coríntios 15:3–4?",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "passageA": {
+      "ref": "Lucas 24:46",
+      "text": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;"
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé dispensa as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Ressurreição só espiritual"
+      },
+      {
+        "id": "c",
+        "text": "Cristo sofre e ressuscita"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Cristo sofresse e ressuscitasse dos mortos",
+    "feedbackCorrect": "Paulo repete o mesmo resumo, conforme as Escrituras.",
+    "feedbackWrong": {
+      "a": "Paulo insiste que tudo foi conforme as Escrituras.",
+      "b": "Os dois textos falam de morte e ressurreição reais."
+    },
+    "hint": "Compare sofrimento e terceiro dia nos dois textos.",
+    "learningObjective": "Relacionar o resumo de Lucas ao de Paulo.",
+    "evidence": [
+      "Lucas 24:46",
+      "1 Coríntios 15:3–4"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-01-historia-01",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 24:44–46 mostra Jesus lendo as Escrituras antigas como textos que falam a respeito dele",
+    "prompt": "Lucas 24:44–46 mostra Jesus lendo as Escrituras antigas como textos que falam a respeito dele",
+    "cue": "Lucas 24:44–46 mostra Jesus lendo as Escrituras antigas como textos que falam a respeito dele",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "tudo o que a meu respeito está escrito",
+    "feedbackCorrect": "Jesus se coloca no centro do que Lei, Profetas e Salmos escreveram.",
+    "feedbackWrong": {
+      "false": "Releia de quem o texto diz que tudo foi escrito."
+    },
+    "hint": "Veja a respeito de quem tudo está escrito.",
+    "learningObjective": "Interpretar Jesus como centro das Escrituras.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-01-historia-02",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 24:47, toque o trecho que mostra até onde a mensagem deve chegar",
+    "prompt": "Em Lucas 24:47, toque o trecho que mostra até onde a mensagem deve chegar",
+    "cue": "Em Lucas 24:47, toque o trecho que mostra até onde a mensagem deve chegar",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seu nome"
+      },
+      {
+        "id": "b",
+        "text": "todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "por Jerusalém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a todas as nações, começando por Jerusalém",
+    "feedbackCorrect": "A mensagem começa em Jerusalém e alcança todos os povos.",
+    "feedbackWrong": {
+      "a": "Isso diz em nome de quem se proclama, não até onde.",
+      "c": "Jerusalém é o ponto de partida, não o destino final."
+    },
+    "hint": "Procure o destino mais amplo da proclamação.",
+    "learningObjective": "Sustentar com o texto o alcance universal da mensagem.",
+    "evidence": [
+      "Lucas 24:47"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-01-historia-03",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 24:44–45 sustenta sobre as Escrituras?",
+    "prompt": "Que leitura Lucas 24:44–45 sustenta sobre as Escrituras?",
+    "cue": "Que leitura Lucas 24:44–45 sustenta sobre as Escrituras?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada parte da Bíblia trata de assunto sem ligação"
+      },
+      {
+        "id": "b",
+        "text": "Entender a Bíblia dispensa a ajuda de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "As Escrituras só contam história antiga do povo"
+      },
+      {
+        "id": "d",
+        "text": "Jesus é a chave para entender as Escrituras"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "lhes abriu o entendimento para que pudessem compreender as Escrituras",
+    "feedbackCorrect": "Jesus abre o entendimento e se mostra no centro dos textos.",
+    "feedbackWrong": {
+      "a": "Jesus liga Lei, Profetas e Salmos a si mesmo.",
+      "b": "Os discípulos só compreendem quando ele abre o entendimento.",
+      "c": "Os textos antigos falam a respeito dele, diz Jesus."
+    },
+    "hint": "Compare o papel de Jesus nos dois versículos.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-01-historia-04",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Lucas 24:46–47?",
+    "prompt": "Qual sequência revela o sentido de Lucas 24:46–47?",
+    "cue": "Qual sequência revela o sentido de Lucas 24:46–47?",
+    "verseRef": "Lucas 24:46–47",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As Escrituras anunciam o Cristo que sofre"
+      },
+      {
+        "id": "b",
+        "text": "O Cristo ressuscita no terceiro dia"
+      },
+      {
+        "id": "c",
+        "text": "O arrependimento é anunciado às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "era necessário que o Cristo sofresse",
+    "feedbackCorrect": "Escrituras, morte e ressurreição, e então missão às nações.",
+    "feedbackWrong": {
+      "default": "Comece pelo que está escrito sobre o Cristo."
+    },
+    "hint": "A missão vem depois da ressurreição.",
+    "learningObjective": "Ver o encadeamento entre Escrituras, Cristo e nações.",
+    "evidence": [
+      "Lucas 24:46–47"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-01-historia-05",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 24:44, o que é indispensável que aconteça com tudo o que foi escrito?",
+    "prompt": "Em Lucas 24:44, o que é indispensável que aconteça com tudo o que foi escrito?",
+    "cue": "Em Lucas 24:44, o que é indispensável que aconteça com tudo o que foi escrito?",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "template": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se ___ tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cumpra"
+      },
+      {
+        "id": "b",
+        "text": "repita"
+      },
+      {
+        "id": "c",
+        "text": "ignore"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "É indispensável que se cumpra tudo",
+    "feedbackCorrect": "Tudo o que foi escrito a respeito dele precisa se realizar.",
+    "feedbackWrong": {
+      "b": "Não é repetir palavras, é acontecer o prometido.",
+      "c": "O texto afirma o contrário, que tudo se realizará."
+    },
+    "hint": "Veja o verbo depois de indispensável que se.",
+    "learningObjective": "Lembrar o termo que carrega o cumprimento das Escrituras.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-01-historia-06",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 24:44 a Lucas 24:27?",
+    "prompt": "O que liga Lucas 24:44 a Lucas 24:27?",
+    "cue": "O que liga Lucas 24:44 a Lucas 24:27?",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Lucas 24:27",
+      "text": "E, começando por Moisés e por todos os profetas, explicou-lhes o que a seu respeito estava escrito em todas as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés sem ligação com Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus explica tudo sobre si"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos entendem sozinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "na Lei de Moisés, nos Profetas e nos Salmos",
+    "feedbackCorrect": "No caminho e depois, Jesus mostra a si mesmo nas Escrituras.",
+    "feedbackWrong": {
+      "a": "Jesus começa por Moisés para falar de si mesmo.",
+      "c": "Nos dois textos é Jesus quem explica as Escrituras."
+    },
+    "hint": "Veja quem explica e sobre quem ele fala.",
+    "learningObjective": "Ligar as duas explicações de Jesus no mesmo capítulo.",
+    "evidence": [
+      "Lucas 24:44",
+      "Lucas 24:27"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-02-promessa-01",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 3:16, Paulo diz que as promessas foram feitas a muitas descendências ao mesmo tempo",
+    "prompt": "Em Gálatas 3:16, Paulo diz que as promessas foram feitas a muitas descendências ao mesmo tempo",
+    "cue": "Em Gálatas 3:16, Paulo diz que as promessas foram feitas a muitas descendências ao mesmo tempo",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas sim de uma só",
+    "feedbackCorrect": "Paulo destaca uma só descendência, que é Cristo.",
+    "feedbackWrong": {
+      "true": "Releia a comparação que Paulo faz no versículo."
+    },
+    "hint": "Compare poucos e muitos no versículo.",
+    "learningObjective": "Observar o contraste entre uma e muitas descendências.",
+    "evidence": [
+      "Gálatas 3:16"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-02-promessa-02",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 3:16, toque quem Paulo identifica como a descendência",
+    "prompt": "Em Gálatas 3:16, toque quem Paulo identifica como a descendência",
+    "cue": "Em Gálatas 3:16, toque quem Paulo identifica como a descendência",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos"
+      },
+      {
+        "id": "b",
+        "text": "Abraão"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que é Cristo",
+    "feedbackCorrect": "Paulo fecha o versículo nomeando Cristo como a descendência.",
+    "feedbackWrong": {
+      "a": "Paulo afasta justamente a ideia de muitos neste ponto.",
+      "b": "Abraão recebe as promessas, não é a descendência aqui."
+    },
+    "hint": "Leia o nome no fim do versículo.",
+    "learningObjective": "Identificar Cristo como a descendência prometida.",
+    "evidence": [
+      "Gálatas 3:16"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-02-promessa-03",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 3:14, a bênção de Abraão chegaria a quem?",
+    "prompt": "Segundo Gálatas 3:14, a bênção de Abraão chegaria a quem?",
+    "cue": "Segundo Gálatas 3:14, a bênção de Abraão chegaria a quem?",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aos gentios, em Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Apenas a quem guardasse a lei"
+      },
+      {
+        "id": "c",
+        "text": "Somente aos moradores de Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "Somente aos filhos de Abraão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a bênção de Abraão chegasse aos gentios, em Jesus Cristo",
+    "feedbackCorrect": "A bênção prometida a Abraão alcança os gentios em Cristo.",
+    "feedbackWrong": {
+      "b": "A bênção chega em Cristo e é recebida pela fé.",
+      "c": "Jerusalém não é o limite nomeado neste versículo.",
+      "d": "O texto amplia a bênção para além desse círculo."
+    },
+    "hint": "Veja quem recebe e em quem isso acontece.",
+    "learningObjective": "Observar o alcance da bênção de Abraão.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-02-promessa-04",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 3:13 na ordem do texto",
+    "prompt": "Monte Gálatas 3:13 na ordem do texto",
+    "cue": "Monte Gálatas 3:13 na ordem do texto",
+    "verseRef": "Gálatas 3:13",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo nos redimiu da maldição da lei"
+      },
+      {
+        "id": "b",
+        "text": "tornando-se ele mesmo maldição em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "Maldito todo aquele que for pendurado em madeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cristo nos redimiu da maldição da lei",
+    "feedbackCorrect": "Cristo nos livra tomando sobre si a maldição do madeiro.",
+    "feedbackWrong": {
+      "default": "Comece pelo livramento feito por Cristo."
+    },
+    "hint": "O versículo começa com Cristo agindo.",
+    "learningObjective": "Reconhecer a sequência de Gálatas 3:13.",
+    "evidence": [
+      "Gálatas 3:13"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-02-promessa-05",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 3:18, como Deus concedeu a herança a Abraão?",
+    "prompt": "Em Gálatas 3:18, como Deus concedeu a herança a Abraão?",
+    "cue": "Em Gálatas 3:18, como Deus concedeu a herança a Abraão?",
+    "verseRef": "Gálatas 3:18",
+    "passageText": "Pois, se a herança provém da lei, já não decorre da promessa; mas foi gratuitamente que Deus a concedeu a Abraão por meio da promessa.",
+    "template": "Pois, se a herança provém da lei, já não decorre da promessa; mas foi ___ que Deus a concedeu a Abraão por meio da promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dificilmente"
+      },
+      {
+        "id": "b",
+        "text": "parcialmente"
+      },
+      {
+        "id": "c",
+        "text": "gratuitamente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "foi gratuitamente que Deus a concedeu a Abraão",
+    "feedbackCorrect": "A herança foi presente de Deus, não pagamento por esforço.",
+    "feedbackWrong": {
+      "a": "O texto fala de presente, não de caminho difícil.",
+      "b": "Deus concedeu por inteiro, como presente completo."
+    },
+    "hint": "Veja como o presente foi dado a Abraão.",
+    "learningObjective": "Lembrar que a herança é presente de Deus.",
+    "evidence": [
+      "Gálatas 3:18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-02-promessa-06",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "passageA": {
+      "ref": "Gálatas 3:16",
+      "text": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\""
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus fez promessas a Abraão muito antes de Jesus nascer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A promessa aponta para Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Promessa sem destino certo"
+      },
+      {
+        "id": "c",
+        "text": "Abraão maior que seu descendente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E à tua descendência, que é Cristo",
+    "feedbackCorrect": "Paulo lê a promessa antiga apontando para Cristo.",
+    "feedbackWrong": {
+      "b": "A promessa tem destino nomeado no fim do versículo.",
+      "c": "O foco de Paulo é o descendente prometido, Cristo."
+    },
+    "hint": "Veja quem o fim do versículo nomeia.",
+    "learningObjective": "Ligar a promessa a Abraão à pessoa de Cristo.",
+    "evidence": [
+      "Gálatas 3:16"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-02-promessa-01",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 3:14, a bênção de Abraão chega aos gentios em Jesus Cristo",
+    "prompt": "Em Gálatas 3:14, a bênção de Abraão chega aos gentios em Jesus Cristo",
+    "cue": "Em Gálatas 3:14, a bênção de Abraão chega aos gentios em Jesus Cristo",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a bênção de Abraão chegasse aos gentios, em Jesus Cristo",
+    "feedbackCorrect": "A bênção antiga atravessa séculos e chega aos gentios nele.",
+    "feedbackWrong": {
+      "false": "Releia para quem e em quem a bênção chega."
+    },
+    "hint": "Veja o destino da bênção no versículo.",
+    "learningObjective": "Compreender o alcance da bênção prometida.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-02-promessa-02",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 3:17, toque a palavra que introduz a ressalva de Paulo",
+    "prompt": "Em Gálatas 3:17, toque a palavra que introduz a ressalva de Paulo",
+    "cue": "Em Gálatas 3:17, toque a palavra que introduz a ressalva de Paulo",
+    "verseRef": "Gálatas 3:17",
+    "passageText": "Isso, porém, afirmo que a aliança previamente confirmada por Deus em Cristo, a lei, que surgiu quatrocentos e trinta anos depois, não anula a promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "depois"
+      },
+      {
+        "id": "c",
+        "text": "quatrocentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Isso, porém, afirmo",
+    "feedbackCorrect": "Essa palavra vira o argumento antes de falar da lei.",
+    "feedbackWrong": {
+      "b": "Essa palavra marca tempo, não a ressalva do argumento.",
+      "c": "Isso é parte do tempo citado, não a ressalva."
+    },
+    "hint": "Procure palavra curta entre vírgulas no começo.",
+    "learningObjective": "Reconhecer a marca de ressalva no argumento.",
+    "evidence": [
+      "Gálatas 3:17"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-02-promessa-03",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 3:17–18 relaciona a lei com a promessa?",
+    "prompt": "Como Gálatas 3:17–18 relaciona a lei com a promessa?",
+    "cue": "Como Gálatas 3:17–18 relaciona a lei com a promessa?",
+    "verseRef": "Gálatas 3:17–18",
+    "passageText": "Isso, porém, afirmo que a aliança previamente confirmada por Deus em Cristo, a lei, que surgiu quatrocentos e trinta anos depois, não anula a promessa. Pois, se a herança provém da lei, já não decorre da promessa; mas foi gratuitamente que Deus a concedeu a Abraão por meio da promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A promessa depende do cumprimento da lei"
+      },
+      {
+        "id": "b",
+        "text": "A lei apaga a promessa feita antes dela"
+      },
+      {
+        "id": "c",
+        "text": "A lei e a promessa salvam do mesmo jeito"
+      },
+      {
+        "id": "d",
+        "text": "A promessa continua valendo apesar da lei"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não anula a promessa",
+    "feedbackCorrect": "Vinda séculos depois, a lei não desfaz o que Deus prometeu.",
+    "feedbackWrong": {
+      "a": "A herança decorre da promessa, não da lei, diz Paulo.",
+      "b": "Paulo nega justamente que a lei apague a promessa.",
+      "c": "Paulo separa os dois caminhos neste argumento."
+    },
+    "hint": "Pense no que veio antes e no que veio depois.",
+    "learningObjective": "Relacionar promessa e lei na ordem do tempo.",
+    "evidence": [
+      "Gálatas 3:17–18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-02-promessa-04",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Gálatas 3:17–18?",
+    "prompt": "Como avança o argumento em Gálatas 3:17–18?",
+    "cue": "Como avança o argumento em Gálatas 3:17–18?",
+    "verseRef": "Gálatas 3:17–18",
+    "passageText": "Isso, porém, afirmo que a aliança previamente confirmada por Deus em Cristo, a lei, que surgiu quatrocentos e trinta anos depois, não anula a promessa. Pois, se a herança provém da lei, já não decorre da promessa; mas foi gratuitamente que Deus a concedeu a Abraão por meio da promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus confirma sua promessa a Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Séculos depois vem a lei"
+      },
+      {
+        "id": "c",
+        "text": "A promessa segue de pé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a aliança previamente confirmada por Deus",
+    "feedbackCorrect": "Promessa confirmada, lei posterior, promessa preservada.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Deus confirmou antes da lei."
+    },
+    "hint": "A lei chega séculos depois da promessa.",
+    "learningObjective": "Compreender a ordem do argumento de Paulo.",
+    "evidence": [
+      "Gálatas 3:17–18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-02-promessa-05",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 3:19, por causa de que a lei foi adicionada?",
+    "prompt": "Em Gálatas 3:19, por causa de que a lei foi adicionada?",
+    "cue": "Em Gálatas 3:19, por causa de que a lei foi adicionada?",
+    "verseRef": "Gálatas 3:19",
+    "passageText": "Qual, pois, a razão de ser da lei? Ela foi adicionada por causa das transgressões, até que viesse o descendente a quem foi feita a promessa, e foi promulgada por meio de anjos, pela mão de um mediador.",
+    "template": "Qual, pois, a razão de ser da lei? Ela foi adicionada por causa das ___, até que viesse o descendente a quem foi feita a promessa, e foi promulgada por meio de anjos, pela mão de um mediador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "transgressões"
+      },
+      {
+        "id": "b",
+        "text": "dúvidas"
+      },
+      {
+        "id": "c",
+        "text": "viagens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ela foi adicionada por causa das transgressões",
+    "feedbackCorrect": "A lei veio por causa das faltas do povo, até Cristo vir.",
+    "feedbackWrong": {
+      "b": "O motivo nomeado é moral, não falta de certeza.",
+      "c": "Viagens do povo não são o motivo citado aqui."
+    },
+    "hint": "Veja o motivo logo após a pergunta de Paulo.",
+    "learningObjective": "Compreender por que a lei foi adicionada.",
+    "evidence": [
+      "Gálatas 3:19"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-02-promessa-06",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 3:14 a Gênesis 12:3?",
+    "prompt": "O que liga Gálatas 3:14 a Gênesis 12:3?",
+    "cue": "O que liga Gálatas 3:14 a Gênesis 12:3?",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "passageA": {
+      "ref": "Gálatas 3:14",
+      "text": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido."
+    },
+    "passageB": {
+      "ref": "Gênesis 12:3",
+      "text": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bênção de Abraão às nações"
+      },
+      {
+        "id": "b",
+        "text": "Bênção restrita a um povo"
+      },
+      {
+        "id": "c",
+        "text": "Famílias sem promessa de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a bênção de Abraão chegasse aos gentios",
+    "feedbackCorrect": "Paulo vê a bênção das famílias chegando aos gentios.",
+    "feedbackWrong": {
+      "b": "Gênesis promete bênção a todas as famílias da terra.",
+      "c": "Os dois textos falam de bênção prometida por Deus."
+    },
+    "hint": "Compare quem é abençoado nos dois textos.",
+    "learningObjective": "Relacionar a promessa em Gênesis ao cumprimento em Paulo.",
+    "evidence": [
+      "Gálatas 3:14",
+      "Gênesis 12:3"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-02-promessa-01",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gálatas 3:18 ensina que a herança vem da lei e não da promessa de Deus",
+    "prompt": "Gálatas 3:18 ensina que a herança vem da lei e não da promessa de Deus",
+    "cue": "Gálatas 3:18 ensina que a herança vem da lei e não da promessa de Deus",
+    "verseRef": "Gálatas 3:18",
+    "passageText": "Pois, se a herança provém da lei, já não decorre da promessa; mas foi gratuitamente que Deus a concedeu a Abraão por meio da promessa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se a herança provém da lei, já não decorre da promessa",
+    "feedbackCorrect": "Paulo afirma o contrário, que ela decorre da promessa.",
+    "feedbackWrong": {
+      "true": "Releia a comparação entre lei e promessa no versículo."
+    },
+    "hint": "Veja de onde Paulo diz que a herança decorre.",
+    "learningObjective": "Interpretar a herança como fruto da promessa.",
+    "evidence": [
+      "Gálatas 3:18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-02-promessa-02",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o lugar de outros",
+    "prompt": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o lugar de outros",
+    "cue": "Em Gálatas 3:13, toque o trecho que mostra Cristo tomando o lugar de outros",
+    "verseRef": "Gálatas 3:13",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "da lei"
+      },
+      {
+        "id": "b",
+        "text": "em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "está escrito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tornando-se ele mesmo maldição em nosso lugar",
+    "feedbackCorrect": "Ele se torna maldição no lugar de quem estava sob ela.",
+    "feedbackWrong": {
+      "a": "Isso diz de onde ele nos livrou, não o lugar tomado.",
+      "c": "Isso introduz a citação, não a troca de lugar."
+    },
+    "hint": "Procure onde Cristo se colocou por nós.",
+    "learningObjective": "Sustentar com o texto a troca feita por Cristo.",
+    "evidence": [
+      "Gálatas 3:13"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-02-promessa-03",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 3:16 sustenta sobre as promessas a Abraão?",
+    "prompt": "Que leitura Gálatas 3:16 sustenta sobre as promessas a Abraão?",
+    "cue": "Que leitura Gálatas 3:16 sustenta sobre as promessas a Abraão?",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "As promessas falam só de muitos descendentes"
+      },
+      {
+        "id": "b",
+        "text": "Cristo é um exemplo entre muitos prometidos"
+      },
+      {
+        "id": "c",
+        "text": "A promessa perdeu força com o passar do tempo"
+      },
+      {
+        "id": "d",
+        "text": "As promessas se concentram em Cristo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E à tua descendência, que é Cristo",
+    "feedbackCorrect": "Paulo concentra a promessa num descendente, que é Cristo.",
+    "feedbackWrong": {
+      "a": "Paulo destaca o singular contra a ideia de muitos aqui.",
+      "b": "Cristo é nomeado como a própria descendência prometida.",
+      "c": "Séculos depois, Paulo trata a promessa como viva."
+    },
+    "hint": "Veja o nome que fecha o argumento do versículo.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Gálatas 3:16"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-02-promessa-04",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Gálatas 3:13–14?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 3:13–14?",
+    "cue": "Qual sequência revela o sentido de Gálatas 3:13–14?",
+    "verseRef": "Gálatas 3:13–14",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro. Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete bênção a Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Cristo recebe a maldição em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "A bênção chega aos gentios pela fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cristo nos redimiu da maldição da lei",
+    "feedbackCorrect": "Promessa antiga, cruz de Cristo, bênção aos gentios.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa feita a Abraão."
+    },
+    "hint": "A bênção aos gentios é o ponto de chegada.",
+    "learningObjective": "Ver o encadeamento de promessa, cruz e bênção.",
+    "evidence": [
+      "Gálatas 3:13–14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-02-promessa-05",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 3:16, as promessas foram feitas a Abraão e à sua o quê?",
+    "prompt": "Em Gálatas 3:16, as promessas foram feitas a Abraão e à sua o quê?",
+    "cue": "Em Gálatas 3:16, as promessas foram feitas a Abraão e à sua o quê?",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "template": "Ora, as promessas foram feitas a Abraão e à sua ___. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "descendência"
+      },
+      {
+        "id": "b",
+        "text": "geração"
+      },
+      {
+        "id": "c",
+        "text": "família"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as promessas foram feitas a Abraão e à sua descendência",
+    "feedbackCorrect": "A palavra no singular carrega o argumento inteiro de Paulo.",
+    "feedbackWrong": {
+      "b": "O termo escolhido por Paulo aponta para Cristo.",
+      "c": "A palavra de Paulo é mais precisa que família aqui."
+    },
+    "hint": "É a palavra que Paulo compara no singular.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da promessa.",
+    "evidence": [
+      "Gálatas 3:16"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-02-promessa-06",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 3:16 a 2 Coríntios 1:20?",
+    "prompt": "O que liga Gálatas 3:16 a 2 Coríntios 1:20?",
+    "cue": "O que liga Gálatas 3:16 a 2 Coríntios 1:20?",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "passageA": {
+      "ref": "Gálatas 3:16",
+      "text": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\""
+    },
+    "passageB": {
+      "ref": "2 Coríntios 1:20",
+      "text": "Porque quantas são as promessas de Deus, tantas se cumprem nele; por isso, declaramos \"sim\" a elas, para a glória de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessas dependem do esforço humano"
+      },
+      {
+        "id": "b",
+        "text": "Promessas se cumprem em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Cristo confirma só algumas promessas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E à tua descendência, que é Cristo",
+    "feedbackCorrect": "Para Paulo, as promessas de Deus encontram seu sim nele.",
+    "feedbackWrong": {
+      "a": "O sim está em Cristo, não no esforço de quem ouve.",
+      "c": "Paulo fala de todas as promessas, quantas forem."
+    },
+    "hint": "Veja o que Paulo diz do sim de Deus.",
+    "learningObjective": "Ligar a promessa a Abraão ao sim de Deus em Cristo.",
+    "evidence": [
+      "Gálatas 3:16",
+      "2 Coríntios 1:20"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-03-reino-01",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Marcos 1:15, Jesus anuncia que o tempo está cumprido e o reino de Deus está próximo",
+    "prompt": "Em Marcos 1:15, Jesus anuncia que o tempo está cumprido e o reino de Deus está próximo",
+    "cue": "Em Marcos 1:15, Jesus anuncia que o tempo está cumprido e o reino de Deus está próximo",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O tempo está cumprido, e o reino de Deus está próximo",
+    "feedbackCorrect": "Essa é a primeira mensagem de Jesus registrada por Marcos.",
+    "feedbackWrong": {
+      "false": "Releia a fala de Jesus no versículo inteiro."
+    },
+    "hint": "Leia a fala completa de Jesus.",
+    "learningObjective": "Observar o anúncio inicial de Jesus.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-03-reino-02",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Marcos 1:15, toque aquilo cuja chegada Jesus anuncia",
+    "prompt": "Em Marcos 1:15, toque aquilo cuja chegada Jesus anuncia",
+    "cue": "Em Marcos 1:15, toque aquilo cuja chegada Jesus anuncia",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino de Deus"
+      },
+      {
+        "id": "b",
+        "text": "O tempo"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "O que está próximo, anuncia Jesus, é o governo de Deus.",
+    "feedbackWrong": {
+      "b": "Isso está cumprido, não é o que está próximo.",
+      "c": "Isso é a boa notícia a ser crida, no fim do verso."
+    },
+    "hint": "Procure o que vem antes de está próximo.",
+    "learningObjective": "Identificar o centro do anúncio de Jesus.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-03-reino-03",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Marcos 1:14, para onde Jesus foi pregar depois que João foi preso?",
+    "prompt": "Segundo Marcos 1:14, para onde Jesus foi pregar depois que João foi preso?",
+    "cue": "Segundo Marcos 1:14, para onde Jesus foi pregar depois que João foi preso?",
+    "verseRef": "Marcos 1:14",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para o deserto, ficar sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Para Jerusalém, no templo da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Para Nazaré, rever sua família"
+      },
+      {
+        "id": "d",
+        "text": "Para a Galileia, pregando o evangelho"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Jesus foi para a Galileia, pregando o evangelho de Deus",
+    "feedbackCorrect": "Marcos situa o começo da pregação de Jesus na Galileia.",
+    "feedbackWrong": {
+      "a": "O deserto vem antes, nos versículos anteriores.",
+      "b": "Jerusalém aparece no fim do caminho, não no começo.",
+      "c": "O texto nomeia outra região para a pregação."
+    },
+    "hint": "Veja o lugar nomeado no versículo.",
+    "learningObjective": "Observar onde começa a pregação de Jesus.",
+    "evidence": [
+      "Marcos 1:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-03-reino-04",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 1:15 na ordem do texto",
+    "prompt": "Monte Marcos 1:15 na ordem do texto",
+    "cue": "Monte Marcos 1:15 na ordem do texto",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo está cumprido"
+      },
+      {
+        "id": "b",
+        "text": "o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependam-se e creiam no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O tempo está cumprido, e o reino de Deus está próximo",
+    "feedbackCorrect": "Tempo cumprido, reino próximo e então o chamado a crer.",
+    "feedbackWrong": {
+      "default": "Comece pelo tempo que se cumpriu."
+    },
+    "hint": "O chamado a crer fecha o versículo.",
+    "learningObjective": "Reconhecer a sequência de Marcos 1:15.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-03-reino-05",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 1:17, Jesus tornaria Simão e André pescadores de quê?",
+    "prompt": "Em Marcos 1:17, Jesus tornaria Simão e André pescadores de quê?",
+    "cue": "Em Marcos 1:17, Jesus tornaria Simão e André pescadores de quê?",
+    "verseRef": "Marcos 1:17",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens.",
+    "template": "E Jesus lhes disse: Venham após mim, e eu os tornarei ___ de homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pregadores"
+      },
+      {
+        "id": "b",
+        "text": "discípulos"
+      },
+      {
+        "id": "c",
+        "text": "pescadores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu os tornarei pescadores de homens",
+    "feedbackCorrect": "Quem pescava peixes passaria a reunir pessoas para Jesus.",
+    "feedbackWrong": {
+      "a": "A imagem usada por Jesus vem do ofício deles no mar.",
+      "b": "Eles serão seguidores, mas a imagem é a do ofício."
+    },
+    "hint": "Pense no ofício deles junto ao mar.",
+    "learningObjective": "Lembrar a imagem usada no chamado dos pescadores.",
+    "evidence": [
+      "Marcos 1:17"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-03-reino-06",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "verseRef": "Marcos 1:14–15",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus. O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus começa a anunciar as boas notícias de Deus na Galileia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tempo ainda muito distante"
+      },
+      {
+        "id": "b",
+        "text": "O reino chegou perto"
+      },
+      {
+        "id": "c",
+        "text": "Boa notícia sem chamado nenhum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "A pregação de Jesus anuncia a chegada próxima do governo de Deus.",
+    "feedbackWrong": {
+      "a": "Jesus diz que o tempo se cumpriu, não que falta muito.",
+      "c": "O anúncio termina com um chamado claro a crer."
+    },
+    "hint": "Veja o que a fala diz sobre o tempo.",
+    "learningObjective": "Ligar Marcos 1:15 ao começo da pregação de Jesus.",
+    "evidence": [
+      "Marcos 1:14–15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-03-reino-01",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Marcos 1:17–18, Simão e André deixam as redes e seguem Jesus logo após o chamado dele",
+    "prompt": "Em Marcos 1:17–18, Simão e André deixam as redes e seguem Jesus logo após o chamado dele",
+    "cue": "Em Marcos 1:17–18, Simão e André deixam as redes e seguem Jesus logo após o chamado dele",
+    "verseRef": "Marcos 1:17–18",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens. Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "A resposta ao chamado é imediata, sem deixar para depois.",
+    "feedbackWrong": {
+      "false": "Releia a velocidade da resposta no último versículo."
+    },
+    "hint": "Repare na pressa da resposta deles.",
+    "learningObjective": "Compreender a resposta imediata ao chamado de Jesus.",
+    "evidence": [
+      "Marcos 1:17–18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-03-reino-02",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 1:14, toque a palavra que marca o que vem depois na história",
+    "prompt": "Em Marcos 1:14, toque a palavra que marca o que vem depois na história",
+    "cue": "Em Marcos 1:14, toque a palavra que marca o que vem depois na história",
+    "verseRef": "Marcos 1:14",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "preso"
+      },
+      {
+        "id": "b",
+        "text": "Depois"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Depois que João foi preso",
+    "feedbackCorrect": "Essa palavra situa a pregação depois da prisão de João.",
+    "feedbackWrong": {
+      "a": "Isso é o que aconteceu com João, não a marca de tempo.",
+      "c": "Isso é o lugar da pregação, não a marca de tempo."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a marca de sequência na narrativa.",
+    "evidence": [
+      "Marcos 1:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-03-reino-03",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que o anúncio de Marcos 1:15 pede de quem ouve?",
+    "prompt": "O que o anúncio de Marcos 1:15 pede de quem ouve?",
+    "cue": "O que o anúncio de Marcos 1:15 pede de quem ouve?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mudar de rumo e confiar na boa notícia"
+      },
+      {
+        "id": "b",
+        "text": "Decorar a mensagem para repetir depois"
+      },
+      {
+        "id": "c",
+        "text": "Apenas admirar as palavras de Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Esperar sem mudar nada na vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "O anúncio pede mudança de rumo e confiança na boa notícia.",
+    "feedbackWrong": {
+      "b": "Repetir de cor não substitui mudar de rumo e crer.",
+      "c": "Admirar sem responder não é o pedido de Jesus.",
+      "d": "O tempo cumprido pede resposta, não espera passiva."
+    },
+    "hint": "Veja os dois pedidos no fim do versículo.",
+    "learningObjective": "Relacionar o anúncio do reino à resposta pedida.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-03-reino-04",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Marcos 1:14–16?",
+    "prompt": "Como avança a cena em Marcos 1:14–16?",
+    "cue": "Como avança a cena em Marcos 1:14–16?",
+    "verseRef": "Marcos 1:14–15",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus. O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "João é preso"
+      },
+      {
+        "id": "b",
+        "text": "Jesus prega na Galileia"
+      },
+      {
+        "id": "c",
+        "text": "Jesus chama os primeiros pescadores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Depois que João foi preso, Jesus foi para a Galileia",
+    "feedbackCorrect": "Prisão de João, pregação de Jesus e chamado de pescadores.",
+    "feedbackWrong": {
+      "default": "Comece pelo que acontece com João Batista."
+    },
+    "hint": "Os pescadores entram no fim da sequência.",
+    "learningObjective": "Compreender o movimento do começo do ministério.",
+    "evidence": [
+      "Marcos 1:14–15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-03-reino-05",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Marcos 1:13, por quantos dias Jesus permaneceu no deserto?",
+    "prompt": "Em Marcos 1:13, por quantos dias Jesus permaneceu no deserto?",
+    "cue": "Em Marcos 1:13, por quantos dias Jesus permaneceu no deserto?",
+    "verseRef": "Marcos 1:13",
+    "passageText": "E permaneceu no deserto durante quarenta dias, sendo tentado por Satanás; estava com as feras, e os anjos o serviam.",
+    "template": "E permaneceu no deserto durante ___ dias, sendo tentado por Satanás; estava com as feras, e os anjos o serviam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "quarenta"
+      },
+      {
+        "id": "b",
+        "text": "doze"
+      },
+      {
+        "id": "c",
+        "text": "sete"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "permaneceu no deserto durante quarenta dias",
+    "feedbackCorrect": "Foram dias de tentação antes do anúncio na Galileia.",
+    "feedbackWrong": {
+      "b": "Doze lembra os apóstolos, mas não é este número.",
+      "c": "O número do texto é bem maior que uma semana."
+    },
+    "hint": "É o mesmo número dos anos de Israel no deserto.",
+    "learningObjective": "Compreender o tempo de tentação antes da pregação.",
+    "evidence": [
+      "Marcos 1:13"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-03-reino-06",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Marcos 1:15 a Mateus 4:17?",
+    "prompt": "O que liga Marcos 1:15 a Mateus 4:17?",
+    "cue": "O que liga Marcos 1:15 a Mateus 4:17?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+    },
+    "passageB": {
+      "ref": "Mateus 4:17",
+      "text": "Desde então, Jesus passou a pregar e a dizer: Arrependam-se porque o reino dos céus está próximo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus prega só em Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Reino próximo pede arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Reino dispensa qualquer resposta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "Mateus registra o mesmo anúncio e o mesmo chamado.",
+    "feedbackWrong": {
+      "a": "Os dois situam a pregação na Galileia, não em Jerusalém.",
+      "c": "Nos dois textos o anúncio vem com chamado claro."
+    },
+    "hint": "Compare o pedido que acompanha o anúncio.",
+    "learningObjective": "Relacionar o anúncio do reino nos dois evangelhos.",
+    "evidence": [
+      "Marcos 1:15",
+      "Mateus 4:17"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-03-reino-01",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Marcos 1:17–18, Simão e André pediram a Jesus um prazo para pensar antes de segui-lo",
+    "prompt": "Em Marcos 1:17–18, Simão e André pediram a Jesus um prazo para pensar antes de segui-lo",
+    "cue": "Em Marcos 1:17–18, Simão e André pediram a Jesus um prazo para pensar antes de segui-lo",
+    "verseRef": "Marcos 1:17–18",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens. Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "Eles deixam as redes e o seguem de imediato, sem prazo pedido.",
+    "feedbackWrong": {
+      "true": "Releia a rapidez com que eles deixam as redes."
+    },
+    "hint": "Repare na velocidade da resposta deles.",
+    "learningObjective": "Interpretar a prontidão da resposta ao chamado de Jesus.",
+    "evidence": [
+      "Marcos 1:17–18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-03-reino-02",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 1:18, toque a palavra que mostra a prontidão da resposta dos pescadores",
+    "prompt": "Em Marcos 1:18, toque a palavra que mostra a prontidão da resposta dos pescadores",
+    "cue": "Em Marcos 1:18, toque a palavra que mostra a prontidão da resposta dos pescadores",
+    "verseRef": "Marcos 1:18",
+    "passageText": "Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seguiram"
+      },
+      {
+        "id": "b",
+        "text": "redes"
+      },
+      {
+        "id": "c",
+        "text": "imediatamente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "A palavra mostra resposta sem demora ao chamado de Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é a ação feita, não a prontidão com que é feita.",
+      "b": "Isso é o que eles deixam, não a prontidão da resposta."
+    },
+    "hint": "Procure a palavra entre deixar e seguir.",
+    "learningObjective": "Sustentar com o texto a prontidão de quem segue Jesus.",
+    "evidence": [
+      "Marcos 1:18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-03-reino-03",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Marcos 1:15 sustenta sobre o reino de Deus?",
+    "prompt": "Que leitura Marcos 1:15 sustenta sobre o reino de Deus?",
+    "cue": "Que leitura Marcos 1:15 sustenta sobre o reino de Deus?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É promessa futura que nada muda no presente"
+      },
+      {
+        "id": "b",
+        "text": "O governo de Deus se aproxima e chama à confiança"
+      },
+      {
+        "id": "c",
+        "text": "É só um território político desta terra"
+      },
+      {
+        "id": "d",
+        "text": "Pede fé sem nenhuma mudança de rumo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "O governo de Deus se aproxima em Jesus e pede resposta.",
+    "feedbackWrong": {
+      "a": "Próximo e com chamado, ele já toca o presente de quem ouve.",
+      "c": "O anúncio vem ligado a arrependimento e fé, não a território.",
+      "d": "O mesmo versículo pede mudar de rumo e crer."
+    },
+    "hint": "Junte anúncio e chamado do mesmo versículo.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-03-reino-04",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do reino anunciado em Marcos 1:15?",
+    "prompt": "Qual sequência revela o sentido do reino anunciado em Marcos 1:15?",
+    "cue": "Qual sequência revela o sentido do reino anunciado em Marcos 1:15?",
+    "verseRef": "Marcos 1:17–18",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens. Deixando suas redes imediatamente eles o seguiram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete um reino sem fim"
+      },
+      {
+        "id": "b",
+        "text": "Jesus anuncia o reino próximo"
+      },
+      {
+        "id": "c",
+        "text": "Pescadores deixam redes e seguem Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deixando suas redes imediatamente eles o seguiram",
+    "feedbackCorrect": "Promessa antiga, anúncio de Jesus, resposta de seguidores.",
+    "feedbackWrong": {
+      "default": "Siga promessa, anúncio de Jesus e resposta."
+    },
+    "hint": "A resposta dos pescadores fecha a sequência.",
+    "learningObjective": "Ver o reino como fio da promessa à resposta.",
+    "evidence": [
+      "Marcos 1:17–18",
+      "Daniel 7:14",
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-03-reino-05",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Marcos 1:15, o que Jesus pede que as pessoas façam no evangelho?",
+    "prompt": "Em Marcos 1:15, o que Jesus pede que as pessoas façam no evangelho?",
+    "cue": "Em Marcos 1:15, o que Jesus pede que as pessoas façam no evangelho?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "template": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e ___ no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "duvidem"
+      },
+      {
+        "id": "b",
+        "text": "esperem"
+      },
+      {
+        "id": "c",
+        "text": "creiam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "A resposta ao reino próximo é confiar na boa notícia.",
+    "feedbackWrong": {
+      "a": "Jesus pede o contrário de duvidar da boa notícia.",
+      "b": "Esperar sem crer não é o pedido do versículo."
+    },
+    "hint": "É o segundo pedido de Jesus no versículo.",
+    "learningObjective": "Lembrar o termo que carrega a resposta de fé.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-03-reino-06",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Marcos 1:15 a Daniel 7:14?",
+    "prompt": "O que liga Marcos 1:15 a Daniel 7:14?",
+    "cue": "O que liga Marcos 1:15 a Daniel 7:14?",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho."
+    },
+    "passageB": {
+      "ref": "Daniel 7:14",
+      "text": "Foi-lhe dado domínio, glória e reino, para que todos os povos, nações e homens de todas as línguas o servissem; seu domínio é um domínio eterno, que não passará, e seu reino não será destruído."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel anuncia outro deus"
+      },
+      {
+        "id": "b",
+        "text": "Reino de Deus não terá fim"
+      },
+      {
+        "id": "c",
+        "text": "Reinos humanos duram para sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o reino de Deus está próximo",
+    "feedbackCorrect": "Daniel viu um reino eterno; Jesus anuncia sua chegada.",
+    "feedbackWrong": {
+      "a": "Daniel fala do domínio dado pelo próprio Deus.",
+      "c": "Daniel contrasta esse reino com os que passam."
+    },
+    "hint": "Veja quanto tempo dura o reino em Daniel.",
+    "learningObjective": "Ligar o reino anunciado por Jesus à promessa antiga.",
+    "evidence": [
+      "Marcos 1:15",
+      "Daniel 7:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-01",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 24:44, Jesus diz que deve se cumprir tudo o que está escrito a respeito dele nas Escrituras",
+    "prompt": "Em Lucas 24:44, Jesus diz que deve se cumprir tudo o que está escrito a respeito dele nas Escrituras",
+    "cue": "Em Lucas 24:44, Jesus diz que deve se cumprir tudo o que está escrito a respeito dele nas Escrituras",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "É indispensável que se cumpra tudo o que a meu respeito está escrito",
+    "feedbackCorrect": "Jesus reúne os escritos antigos como textos a respeito dele.",
+    "feedbackWrong": {
+      "false": "Releia o que Jesus diz sobre o cumprimento."
+    },
+    "hint": "Veja o que deve acontecer com o escrito.",
+    "learningObjective": "Revisar Jesus como centro das Escrituras.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-02",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 24:44, toque a parte das Escrituras nomeada por último",
+    "prompt": "Em Lucas 24:44, toque a parte das Escrituras nomeada por último",
+    "cue": "Em Lucas 24:44, toque a parte das Escrituras nomeada por último",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nos Profetas"
+      },
+      {
+        "id": "b",
+        "text": "Lei de Moisés"
+      },
+      {
+        "id": "c",
+        "text": "nos Salmos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos Profetas e nos Salmos",
+    "feedbackCorrect": "A lista de Jesus termina com os Salmos.",
+    "feedbackWrong": {
+      "a": "Os Profetas estão no meio da lista.",
+      "b": "A Lei de Moisés abre a lista de Jesus."
+    },
+    "hint": "Leia a lista até o fim.",
+    "learningObjective": "Revisar as partes das Escrituras nomeadas.",
+    "evidence": [
+      "Lucas 24:44"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-03",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 3:16, quem é a descendência prometida a Abraão?",
+    "prompt": "Segundo Gálatas 3:16, quem é a descendência prometida a Abraão?",
+    "cue": "Segundo Gálatas 3:16, quem é a descendência prometida a Abraão?",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente o povo da Galileia"
+      },
+      {
+        "id": "b",
+        "text": "Muitos descendentes ao mesmo tempo"
+      },
+      {
+        "id": "c",
+        "text": "Apenas os mestres da lei"
+      },
+      {
+        "id": "d",
+        "text": "Cristo, o descendente prometido"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E à tua descendência, que é Cristo",
+    "feedbackCorrect": "Paulo nomeia Cristo como a descendência da promessa.",
+    "feedbackWrong": {
+      "a": "A Galileia nem aparece neste texto de Paulo.",
+      "b": "Paulo destaca uma só descendência neste argumento.",
+      "c": "Mestres da lei não são nomeados neste versículo."
+    },
+    "hint": "Veja o nome no fim do versículo.",
+    "learningObjective": "Revisar a promessa feita a Abraão.",
+    "evidence": [
+      "Gálatas 3:16"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-04",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Marcos 1:15 na ordem do texto",
+    "prompt": "Monte Marcos 1:15 na ordem do texto",
+    "cue": "Monte Marcos 1:15 na ordem do texto",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo está cumprido"
+      },
+      {
+        "id": "b",
+        "text": "o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependam-se e creiam no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O tempo está cumprido, e o reino de Deus está próximo",
+    "feedbackCorrect": "Tempo cumprido, reino próximo e chamado a crer.",
+    "feedbackWrong": {
+      "default": "Comece pelo tempo que se cumpriu."
+    },
+    "hint": "O chamado fecha o versículo.",
+    "learningObjective": "Revisar o anúncio inicial de Jesus.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-05",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Marcos 1:17, Jesus tornaria os pescadores pescadores de quê antes chamados pelo ofício?",
+    "prompt": "Em Marcos 1:17, Jesus tornaria os pescadores pescadores de quê antes chamados pelo ofício?",
+    "cue": "Em Marcos 1:17, Jesus tornaria os pescadores pescadores de quê antes chamados pelo ofício?",
+    "verseRef": "Marcos 1:17",
+    "passageText": "E Jesus lhes disse: Venham após mim, e eu os tornarei pescadores de homens.",
+    "template": "E Jesus lhes disse: Venham após mim, e eu os tornarei ___ de homens.",
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "pescadores"
+      },
+      {
+        "id": "c",
+        "text": "pregadores"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu os tornarei pescadores de homens",
+    "feedbackCorrect": "A imagem do novo chamado vem do ofício deles no mar.",
+    "feedbackWrong": {
+      "a": "Seguidores eles são, mas a imagem é a do ofício.",
+      "c": "A imagem de Jesus vem do trabalho deles com redes."
+    },
+    "hint": "Pense no trabalho deles no mar.",
+    "learningObjective": "Revisar o chamado dos primeiros pescadores.",
+    "evidence": [
+      "Marcos 1:17"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-06",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Bíblia inteira conta uma só história conduzida por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Textos antigos já esquecidos"
+      },
+      {
+        "id": "b",
+        "text": "Tudo aponta para Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Histórias soltas sem centro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tudo o que a meu respeito está escrito",
+    "feedbackCorrect": "Os escritos antigos ganham centro na pessoa de Jesus.",
+    "feedbackWrong": {
+      "a": "Jesus trata os textos como vivos e a se cumprir.",
+      "c": "Jesus liga os textos a si, não os deixa soltos."
+    },
+    "hint": "Veja a respeito de quem tudo foi escrito.",
+    "learningObjective": "Revisar a unidade da história bíblica.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-07",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 3:14, toque a quem a bênção de Abraão chegaria",
+    "prompt": "Em Gálatas 3:14, toque a quem a bênção de Abraão chegaria",
+    "cue": "Em Gálatas 3:14, toque a quem a bênção de Abraão chegaria",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abraão"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "gentios"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a bênção de Abraão chegasse aos gentios",
+    "feedbackCorrect": "A bênção antiga alcança povos além do círculo de Abraão.",
+    "feedbackWrong": {
+      "a": "Abraão é a origem da bênção, não seu destino aqui.",
+      "b": "A fé é o meio de receber, não quem recebe aqui."
+    },
+    "hint": "Procure o povo nomeado como destino.",
+    "learningObjective": "Revisar o alcance da bênção de Abraão.",
+    "evidence": [
+      "Gálatas 3:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-sem-tb-boss-08",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 24:46 na ordem do texto",
+    "prompt": "Monte Lucas 24:46 na ordem do texto",
+    "cue": "Monte Lucas 24:46 na ordem do texto",
+    "verseRef": "Lucas 24:46",
+    "passageText": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim está escrito"
+      },
+      {
+        "id": "b",
+        "text": "era necessário que o Cristo sofresse"
+      },
+      {
+        "id": "c",
+        "text": "ressuscitasse dos mortos no terceiro dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Assim está escrito, que era necessário que o Cristo sofresse",
+    "feedbackCorrect": "Escrito, sofrimento do Cristo e ressurreição no terceiro dia.",
+    "feedbackWrong": {
+      "default": "Comece pelo que está escrito sobre o Cristo."
+    },
+    "hint": "O terceiro dia fecha o versículo.",
+    "learningObjective": "Revisar o resumo de morte e ressurreição.",
+    "evidence": [
+      "Lucas 24:46"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-01",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 3:17, a lei que veio séculos depois anula a promessa feita a Abraão",
+    "prompt": "Em Gálatas 3:17, a lei que veio séculos depois anula a promessa feita a Abraão",
+    "cue": "Em Gálatas 3:17, a lei que veio séculos depois anula a promessa feita a Abraão",
+    "verseRef": "Gálatas 3:17",
+    "passageText": "Isso, porém, afirmo que a aliança previamente confirmada por Deus em Cristo, a lei, que surgiu quatrocentos e trinta anos depois, não anula a promessa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não anula a promessa",
+    "feedbackCorrect": "Paulo afirma que a lei posterior não desfaz a promessa.",
+    "feedbackWrong": {
+      "true": "Releia o efeito da lei sobre a promessa."
+    },
+    "hint": "Veja o que a lei não consegue fazer.",
+    "learningObjective": "Compreender a permanência da promessa de Deus.",
+    "evidence": [
+      "Gálatas 3:17"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-02",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 3:17, toque a palavra que introduz a ressalva de Paulo",
+    "prompt": "Em Gálatas 3:17, toque a palavra que introduz a ressalva de Paulo",
+    "cue": "Em Gálatas 3:17, toque a palavra que introduz a ressalva de Paulo",
+    "verseRef": "Gálatas 3:17",
+    "passageText": "Isso, porém, afirmo que a aliança previamente confirmada por Deus em Cristo, a lei, que surgiu quatrocentos e trinta anos depois, não anula a promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "depois"
+      },
+      {
+        "id": "c",
+        "text": "quatrocentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Isso, porém, afirmo",
+    "feedbackCorrect": "Essa palavra vira o argumento antes de citar a lei.",
+    "feedbackWrong": {
+      "b": "Essa palavra marca tempo, não a ressalva feita.",
+      "c": "Isso faz parte do tempo citado por Paulo."
+    },
+    "hint": "Procure palavra curta entre vírgulas.",
+    "learningObjective": "Reconhecer a ressalva no argumento de Paulo.",
+    "evidence": [
+      "Gálatas 3:17"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-03",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lucas 24:45 explica a compreensão dos discípulos?",
+    "prompt": "Como Lucas 24:45 explica a compreensão dos discípulos?",
+    "cue": "Como Lucas 24:45 explica a compreensão dos discípulos?",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eles compreenderam sozinhos com o tempo"
+      },
+      {
+        "id": "b",
+        "text": "Outros mestres explicaram tudo depois"
+      },
+      {
+        "id": "c",
+        "text": "A alegria do encontro bastou para entender"
+      },
+      {
+        "id": "d",
+        "text": "Jesus abriu o entendimento deles para isso"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "lhes abriu o entendimento para que pudessem compreender as Escrituras",
+    "feedbackCorrect": "A compreensão nasce da ação de Jesus sobre eles.",
+    "feedbackWrong": {
+      "a": "O texto credita a abertura a Jesus, não ao tempo.",
+      "b": "Nenhum outro mestre é citado neste versículo.",
+      "c": "Admiração havia antes; entender vem da ação dele."
+    },
+    "hint": "Veja quem age para que eles compreendam.",
+    "learningObjective": "Relacionar compreensão das Escrituras à ação de Jesus.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-04",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam promessa e lei em Gálatas 3:17–18?",
+    "prompt": "Como se encadeiam promessa e lei em Gálatas 3:17–18?",
+    "cue": "Como se encadeiam promessa e lei em Gálatas 3:17–18?",
+    "verseRef": "Gálatas 3:17–18",
+    "passageText": "Isso, porém, afirmo que a aliança previamente confirmada por Deus em Cristo, a lei, que surgiu quatrocentos e trinta anos depois, não anula a promessa. Pois, se a herança provém da lei, já não decorre da promessa; mas foi gratuitamente que Deus a concedeu a Abraão por meio da promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus confirma sua promessa primeiro"
+      },
+      {
+        "id": "b",
+        "text": "A lei chega séculos depois"
+      },
+      {
+        "id": "c",
+        "text": "A herança segue vindo da promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a aliança previamente confirmada por Deus",
+    "feedbackCorrect": "Promessa confirmada, lei posterior, herança da promessa.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Deus confirmou antes."
+    },
+    "hint": "A lei é a peça do meio da sequência.",
+    "learningObjective": "Compreender promessa e lei na ordem do tempo.",
+    "evidence": [
+      "Gálatas 3:17–18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-05",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 3:18, como Deus concedeu a herança a Abraão?",
+    "prompt": "Em Gálatas 3:18, como Deus concedeu a herança a Abraão?",
+    "cue": "Em Gálatas 3:18, como Deus concedeu a herança a Abraão?",
+    "verseRef": "Gálatas 3:18",
+    "passageText": "Pois, se a herança provém da lei, já não decorre da promessa; mas foi gratuitamente que Deus a concedeu a Abraão por meio da promessa.",
+    "template": "Pois, se a herança provém da lei, já não decorre da promessa; mas foi ___ que Deus a concedeu a Abraão por meio da promessa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dificilmente"
+      },
+      {
+        "id": "b",
+        "text": "gratuitamente"
+      },
+      {
+        "id": "c",
+        "text": "parcialmente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "foi gratuitamente que Deus a concedeu a Abraão",
+    "feedbackCorrect": "A herança é presente gratuito, não salário por esforço.",
+    "feedbackWrong": {
+      "a": "O texto fala de presente, não de custo alto.",
+      "c": "O presente de Deus é inteiro, não pela metade."
+    },
+    "hint": "Veja o modo como o presente foi dado.",
+    "learningObjective": "Compreender a herança como presente de Deus.",
+    "evidence": [
+      "Gálatas 3:18"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-06",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 3:14 a Gênesis 12:3?",
+    "prompt": "O que liga Gálatas 3:14 a Gênesis 12:3?",
+    "cue": "O que liga Gálatas 3:14 a Gênesis 12:3?",
+    "verseRef": "Gálatas 3:14",
+    "passageText": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "passageA": {
+      "ref": "Gálatas 3:14",
+      "text": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido."
+    },
+    "passageB": {
+      "ref": "Gênesis 12:3",
+      "text": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; e em você todas as famílias da terra serão benditas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Famílias fora do plano de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Bênção fechada num só povo"
+      },
+      {
+        "id": "c",
+        "text": "Bênção de Abraão às nações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a bênção de Abraão chegasse aos gentios",
+    "feedbackCorrect": "A bênção das famílias chega aos gentios em Cristo.",
+    "feedbackWrong": {
+      "a": "Os dois textos incluem as famílias no plano.",
+      "b": "Gênesis abre a bênção para todas as famílias."
+    },
+    "hint": "Compare quem recebe a bênção nos textos.",
+    "learningObjective": "Relacionar promessa antiga e alcance aos gentios.",
+    "evidence": [
+      "Gálatas 3:14",
+      "Gênesis 12:3"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-07",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Marcos 1:14, toque a palavra que marca o passo seguinte da história",
+    "prompt": "Em Marcos 1:14, toque a palavra que marca o passo seguinte da história",
+    "cue": "Em Marcos 1:14, toque a palavra que marca o passo seguinte da história",
+    "verseRef": "Marcos 1:14",
+    "passageText": "Depois que João foi preso, Jesus foi para a Galileia, pregando o evangelho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "preso"
+      },
+      {
+        "id": "b",
+        "text": "Depois"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Depois que João foi preso",
+    "feedbackCorrect": "Essa palavra liga a prisão de João à pregação de Jesus.",
+    "feedbackWrong": {
+      "a": "Isso aconteceu com João, não marca a ligação.",
+      "c": "Isso nomeia o lugar, não o passo da história."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer a ligação entre João e Jesus.",
+    "evidence": [
+      "Marcos 1:14"
+    ]
+  },
+  {
+    "id": "teologia-biblica-cam-tb-boss-08",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena de Lucas 24:43–45?",
+    "prompt": "Como avança a cena de Lucas 24:43–45?",
+    "cue": "Como avança a cena de Lucas 24:43–45?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus come com os discípulos"
+      },
+      {
+        "id": "b",
+        "text": "Jesus lembra suas palavras antigas"
+      },
+      {
+        "id": "c",
+        "text": "Jesus abre o entendimento deles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "lhes abriu o entendimento",
+    "feedbackCorrect": "Presença à mesa, lembrança das palavras, entendimento aberto.",
+    "feedbackWrong": {
+      "default": "Comece pela refeição com os discípulos."
+    },
+    "hint": "O entendimento aberto fecha a cena.",
+    "learningObjective": "Compreender o avanço do encontro com Jesus.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-01",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Marcos 1:15 apresenta o reino de Deus como realidade distante que não pede resposta das pessoas",
+    "prompt": "Marcos 1:15 apresenta o reino de Deus como realidade distante que não pede resposta das pessoas",
+    "cue": "Marcos 1:15 apresenta o reino de Deus como realidade distante que não pede resposta das pessoas",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "Próximo, o reino já pede arrependimento e fé de quem ouve.",
+    "feedbackWrong": {
+      "true": "Releia a distância e o pedido do versículo."
+    },
+    "hint": "Junte proximidade e chamado do versículo.",
+    "learningObjective": "Interpretar a proximidade do reino anunciado.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-02",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Marcos 1:15, toque a palavra que mostra a mudança de rumo pedida",
+    "prompt": "Em Marcos 1:15, toque a palavra que mostra a mudança de rumo pedida",
+    "cue": "Em Marcos 1:15, toque a palavra que mostra a mudança de rumo pedida",
+    "verseRef": "Marcos 1:15",
+    "passageText": "O tempo está cumprido, e o reino de Deus está próximo; arrependam-se e creiam no evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "está próximo"
+      },
+      {
+        "id": "b",
+        "text": "está cumprido"
+      },
+      {
+        "id": "c",
+        "text": "arrependam-se"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "arrependam-se e creiam no evangelho",
+    "feedbackCorrect": "A palavra abre o chamado à mudança de rumo e à fé.",
+    "feedbackWrong": {
+      "a": "Isso fala da chegada, não da resposta pedida.",
+      "b": "Isso fala do tempo, não da resposta pedida."
+    },
+    "hint": "Procure um pedido a quem está ouvindo.",
+    "learningObjective": "Sustentar a resposta pedida pelo anúncio do reino.",
+    "evidence": [
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-03",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a trilha sustenta sobre a história da Bíblia?",
+    "prompt": "Que leitura a trilha sustenta sobre a história da Bíblia?",
+    "cue": "Que leitura a trilha sustenta sobre a história da Bíblia?",
+    "verseRef": "Lucas 24:44–45",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma só história que conduz a Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Textos antigos sem valor para hoje"
+      },
+      {
+        "id": "c",
+        "text": "Histórias soltas de heróis antigos"
+      },
+      {
+        "id": "d",
+        "text": "Cada livro inventa um deus diferente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tudo o que a meu respeito está escrito",
+    "feedbackCorrect": "Escrituras, promessa e reino se encontram em Jesus.",
+    "feedbackWrong": {
+      "b": "Jesus os trata como vivos e a se cumprir nele.",
+      "c": "Jesus liga os textos antigos à sua própria história.",
+      "d": "Do começo ao fim é o mesmo Deus agindo."
+    },
+    "hint": "Junte Escrituras, promessa e reino em Jesus.",
+    "learningObjective": "Escolher a leitura de unidade da história bíblica.",
+    "evidence": [
+      "Lucas 24:44–45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-04",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da história até Jesus?",
+    "prompt": "Qual sequência revela o fio da história até Jesus?",
+    "cue": "Qual sequência revela o fio da história até Jesus?",
+    "verseRef": "Gálatas 3:16",
+    "passageText": "Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: \"E às descendências, como se estivesse falando de muitos, mas sim de uma só: E à tua descendência, que é Cristo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete bênção por Abraão"
+      },
+      {
+        "id": "b",
+        "text": "Cristo é a descendência prometida"
+      },
+      {
+        "id": "c",
+        "text": "Jesus anuncia o reino próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E à tua descendência, que é Cristo",
+    "feedbackCorrect": "Promessa a Abraão, Cristo prometido, reino anunciado.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa mais antiga a Abraão."
+    },
+    "hint": "O anúncio do reino é o último passo.",
+    "learningObjective": "Ver o fio de promessa, Cristo e reino.",
+    "evidence": [
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-05",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 24:45, o que Jesus abriu nos discípulos?",
+    "prompt": "Em Lucas 24:45, o que Jesus abriu nos discípulos?",
+    "cue": "Em Lucas 24:45, o que Jesus abriu nos discípulos?",
+    "verseRef": "Lucas 24:45",
+    "passageText": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras.",
+    "template": "Então, lhes abriu o ___ para que pudessem compreender as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "caminho"
+      },
+      {
+        "id": "c",
+        "text": "entendimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lhes abriu o entendimento para que pudessem compreender as Escrituras",
+    "feedbackCorrect": "Com a mente aberta por ele, eles compreendem as Escrituras.",
+    "feedbackWrong": {
+      "a": "A palavra do texto é mais ligada a compreender.",
+      "b": "Caminho lembra Emaús, mas não é a palavra aqui."
+    },
+    "hint": "É o que permite compreender as Escrituras.",
+    "learningObjective": "Lembrar o termo ligado a compreender Jesus nas Escrituras.",
+    "evidence": [
+      "Lucas 24:45"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-06",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 24:44 a Lucas 24:27?",
+    "prompt": "O que liga Lucas 24:44 a Lucas 24:27?",
+    "cue": "O que liga Lucas 24:44 a Lucas 24:27?",
+    "verseRef": "Lucas 24:44",
+    "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Lucas 24:27",
+      "text": "E, começando por Moisés e por todos os profetas, explicou-lhes o que a seu respeito estava escrito em todas as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus explica tudo sobre si"
+      },
+      {
+        "id": "b",
+        "text": "Discípulos entendem sozinhos"
+      },
+      {
+        "id": "c",
+        "text": "Moisés sem ligação com Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "na Lei de Moisés, nos Profetas e nos Salmos",
+    "feedbackCorrect": "No caminho e à mesa, Jesus se mostra nas Escrituras.",
+    "feedbackWrong": {
+      "b": "Nos dois textos quem explica é o próprio Jesus.",
+      "c": "Jesus começa por Moisés falando de si mesmo."
+    },
+    "hint": "Veja quem explica e sobre quem fala.",
+    "learningObjective": "Ligar as explicações de Jesus sobre si mesmo.",
+    "evidence": [
+      "Lucas 24:44",
+      "Lucas 24:27"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-07",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 24:47, toque o trecho que mostra até onde a mensagem chega",
+    "prompt": "Em Lucas 24:47, toque o trecho que mostra até onde a mensagem chega",
+    "cue": "Em Lucas 24:47, toque o trecho que mostra até onde a mensagem chega",
+    "verseRef": "Lucas 24:47",
+    "passageText": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "por Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "seu nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a todas as nações, começando por Jerusalém",
+    "feedbackCorrect": "De Jerusalém, a mensagem alcança todos os povos.",
+    "feedbackWrong": {
+      "b": "Jerusalém é a partida, não o alcance final.",
+      "c": "Isso diz em nome de quem, não até onde vai."
+    },
+    "hint": "Procure o destino mais amplo da mensagem.",
+    "learningObjective": "Sustentar o alcance universal da proclamação.",
+    "evidence": [
+      "Lucas 24:47"
+    ]
+  },
+  {
+    "id": "teologia-biblica-pro-tb-boss-08",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da bênção de Abraão?",
+    "prompt": "Qual sequência revela o caminho da bênção de Abraão?",
+    "cue": "Qual sequência revela o caminho da bênção de Abraão?",
+    "verseRef": "Gálatas 3:13–14",
+    "passageText": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro. Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete abençoar as famílias"
+      },
+      {
+        "id": "b",
+        "text": "Cristo toma a maldição em nosso lugar"
+      },
+      {
+        "id": "c",
+        "text": "A bênção alcança os gentios pela fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cristo nos redimiu da maldição da lei",
+    "feedbackCorrect": "Promessa às famílias, cruz de Cristo, bênção aos gentios.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa feita a Abraão."
+    },
+    "hint": "Os gentios recebem a bênção no fim.",
+    "learningObjective": "Ver promessa, cruz e bênção como um só fio.",
+    "evidence": [
+      "Gálatas 3:13–14",
+      "Gênesis 12:3"
+    ]
+  }
+]

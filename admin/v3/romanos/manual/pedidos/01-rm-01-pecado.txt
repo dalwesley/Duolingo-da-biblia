@@ -1,0 +1,67 @@
+Escreva a cena "rm-01-pecado" da trilha "romanos" (Romanos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "romanos",
+  "title": "Romanos",
+  "description": "O evangelho da justiça de Deus — pecado, graça e nova vida.",
+  "realm": "novo-testamento"
+ },
+ "block": "Romanos",
+ "mission": {
+  "slug": "rm-01-pecado",
+  "title": "Pecado e justiça de Deus",
+  "type": "lesson",
+  "intro": "Paulo mostra que judeus e gentios estão sob o pecado e precisam do evangelho.",
+  "hookRef": "Pecado e justiça de Deus",
+  "hookNote": "Paulo mostra que judeus e gentios estão sob o pecado e precisam do evangelho.",
+  "centralInsight": "Paulo instrui a igreja em Romanos 1:16-3:20 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo.…",
+  "objective": "Romanos 1:16-3:20"
+ },
+ "v2": {
+  "passageRef": "Pecado e justiça de Deus",
+  "context": "Paulo mostra que judeus e gentios estão sob o pecado e precisam do evangelho.",
+  "keyword": "Pecado",
+  "verseRefs": [
+   "Romanos 3:23"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 3:20–26"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 3:20",
+   "text": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado."
+  },
+  {
+   "ref": "Romanos 3:21",
+   "text": "Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei."
+  },
+  {
+   "ref": "Romanos 3:22",
+   "text": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção."
+  },
+  {
+   "ref": "Romanos 3:23",
+   "text": "Porque todos pecaram e carecem da glória de Deus,"
+  },
+  {
+   "ref": "Romanos 3:24",
+   "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+  },
+  {
+   "ref": "Romanos 3:25",
+   "text": "A quem Deus propôs, por meio da fé no seu sangue, como propiciação para manifestar a sua justiça, visto que, na sua tolerância, deixou impunes os pecados cometidos anteriormente;"
+  },
+  {
+   "ref": "Romanos 3:26",
+   "text": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e justificador de quem tem fé em Jesus."
+  }
+ ]
+}
+</cena>

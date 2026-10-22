@@ -1,0 +1,60 @@
+Escreva a cena "vd-03-frutos" da trilha "vida-crista" (Discipulado).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "vida-crista",
+  "title": "Discipulado",
+  "description": "Seguir a Jesus no dia a dia — fé, caráter, relacionamentos e missão.",
+  "realm": "vida-crista"
+ },
+ "block": "Vida Cristã",
+ "mission": {
+  "slug": "vd-03-frutos",
+  "title": "Frutos que permanecem",
+  "type": "lesson",
+  "intro": "Quem permanece em Cristo recebe vida dele e produz fruto para a glória do Pai.",
+  "hookRef": "João 15:4-8",
+  "hookNote": "Quem permanece em Cristo recebe vida dele e produz fruto para a glória do Pai.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "João 15:4-8"
+ },
+ "v2": {
+  "passageRef": "João 15:4-8",
+  "context": "Quem permanece em Cristo recebe vida dele e produz fruto para a glória do Pai.",
+  "keyword": "Frutos",
+  "verseRefs": [
+   "João 15:4-5"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "João 15:4–8",
+  "João 15:4–5"
+ ],
+ "verses": [
+  {
+   "ref": "João 15:4",
+   "text": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim."
+  },
+  {
+   "ref": "João 15:5",
+   "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+  },
+  {
+   "ref": "João 15:6",
+   "text": "Se alguém não permanecer em mim, será lançado fora, à semelhança do ramo, e secará; e os apanham, lançam no fogo e os queimam."
+  },
+  {
+   "ref": "João 15:7",
+   "text": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito."
+  },
+  {
+   "ref": "João 15:8",
+   "text": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos."
+  }
+ ]
+}
+</cena>

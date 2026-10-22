@@ -1,0 +1,933 @@
+{
+ "study": {
+  "passageRef": "Juízes 4:8–9",
+  "passages": [
+   {
+    "ref": "Juízes 4:8–9"
+   },
+   {
+    "ref": "Juízes 4:5–7"
+   },
+   {
+    "ref": "Juízes 4:10–11"
+   },
+   {
+    "ref": "Juízes 7:2"
+   },
+   {
+    "ref": "Juízes 16:25–31"
+   }
+  ],
+  "context": "Este desafio revisa Débora e Baraque, o aviso a Gideão e o fim de Sansão. Em comum, o Senhor age por meio de pessoas limitadas, e a glória do livramento não fica com a força humana.",
+  "keyword": "honra",
+  "keywordGloss": "A honra da vitória não fica automaticamente com o líder mais visível.",
+  "focusQuestion": "Você consegue confiar no Senhor quando o livramento não aumenta o seu prestígio?",
+  "reflectionPrompts": [
+   "Honra nas mãos de Deus",
+   "Força humana limitada",
+   "Clamar na fraqueza"
+  ],
+  "facts": [
+   {
+    "text": "Os filhos de Israel subiam a Débora a juízo.",
+    "evidenceRef": "Juízes 4:5",
+    "evidenceSpan": "os filhos de Israel subiam a ela a juízo"
+   },
+   {
+    "text": "Débora anunciou que o Senhor entregaria Sísera nas mãos de uma mulher.",
+    "evidenceRef": "Juízes 4:9",
+    "evidenceSpan": "o Senhor entregará Sísera nas mãos de uma mulher"
+   },
+   {
+    "text": "Baraque subiu com dez mil homens e Débora também o acompanhou.",
+    "evidenceRef": "Juízes 4:10",
+    "evidenceSpan": "e Débora também o acompanhou"
+   },
+   {
+    "text": "O Senhor disse a Gideão que havia povo demais com ele.",
+    "evidenceRef": "Juízes 7:2",
+    "evidenceSpan": "Há povo demais contigo"
+   },
+   {
+    "text": "Sansão clamou ao Senhor pedindo força apenas esta vez.",
+    "evidenceRef": "Juízes 16:28",
+    "evidenceSpan": "me dês força apenas esta vez"
+   },
+   {
+    "text": "Sansão julgou Israel durante vinte anos.",
+    "evidenceRef": "Juízes 16:31",
+    "evidenceSpan": "ele julgou Israel durante vinte anos"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "honra",
+    "gloss": "Prestígio da vitória, que Débora anuncia que não será de Baraque."
+   },
+   {
+    "term": "força",
+    "gloss": "Aquilo que Sansão pede ao Senhor e que Israel não deve creditar a si."
+   },
+   {
+    "term": "própria mão",
+    "gloss": "Crédito que Israel poderia dar a si mesmo pelo livramento de Gideão."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Débora anuncia e acompanha Baraque",
+    "evidenceRef": "Juízes 4:9"
+   },
+   {
+    "label": "O Senhor limita o povo de Gideão",
+    "evidenceRef": "Juízes 7:2"
+   },
+   {
+    "label": "Sansão clama ao Senhor na fraqueza",
+    "evidenceRef": "Juízes 16:28"
+   },
+   {
+    "label": "Sansão morre e é sepultado",
+    "evidenceRef": "Juízes 16:31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Débora vai com Baraque, mas a honra da missão não será dele.",
+    "marker": "mas",
+    "evidenceRef": "Juízes 4:9"
+   },
+   {
+    "kind": "propósito",
+    "text": "O povo é demais para que Israel não credite o livramento à própria mão.",
+    "marker": "para",
+    "evidenceRef": "Juízes 7:2"
+   },
+   {
+    "kind": "resultado",
+    "text": "Sansão se inclina com força e a casa cai sobre a multidão.",
+    "marker": null,
+    "evidenceRef": "Juízes 16:30"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 11:32",
+    "bridge": "Nomes lembrados pela fé"
+   },
+   {
+    "ref": "1 Coríntios 1:29",
+    "bridge": "Ninguém se glorie diante de Deus"
+   },
+   {
+    "ref": "Deuteronômio 8:17",
+    "bridge": "Lembrar quem dá a força"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A honra da vitória sempre fica com o líder mais visível.",
+    "why": "Débora anuncia que a honra não será de Baraque e que Sísera cairá nas mãos de uma mulher."
+   },
+   {
+    "text": "Ter mais gente e mais força garante um livramento para se gloriar.",
+    "why": "O Senhor chama o povo de Gideão de demais e Sansão precisa clamar por força."
+   },
+   {
+    "text": "Hebreus citar esses nomes apaga as tensões das histórias.",
+    "why": "As narrativas continuam mostrando hesitação, limites e o motivo de vingança de Sansão."
+   }
+  ],
+  "centralInsight": "O Senhor age por pessoas limitadas, mas a glória do livramento não é da força humana.",
+  "anchorQuestion": "O que Débora, Gideão e Sansão mostram sobre de quem vem o livramento?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Juízes 4:10, Baraque subiu sozinho sem Débora ao seu lado",
+   "verseRef": "Juízes 4:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "e Débora também o acompanhou",
+   "feedbackCorrect": "Baraque subiu com dez mil homens e Débora também o acompanhou.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 4:10: Débora também o acompanhou."
+   },
+   "hint": "Veja quem mais subiu com Baraque.",
+   "learningObjective": "Observar a presença de Débora com Baraque.",
+   "evidence": [
+    "Juízes 4:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Juízes 4:6, toque o lugar para onde Baraque ajuntaria os homens.",
+   "verseRef": "Juízes 4:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Monte Tabor"
+    },
+    {
+     "id": "b",
+     "text": "dez mil homens"
+    },
+    {
+     "id": "c",
+     "text": "filhos de Zebulom"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ajunte homens ao Monte Tabor",
+   "feedbackCorrect": "O lugar do ajuntamento indicado a Baraque é o Monte Tabor.",
+   "feedbackWrong": {
+    "b": "Isso é a quantidade de homens chamados, não o lugar do ajuntamento.",
+    "c": "Zebulom é uma das tribos chamadas, não o lugar."
+   },
+   "hint": "Procure o monte citado na ordem.",
+   "learningObjective": "Identificar o lugar do ajuntamento de Baraque.",
+   "evidence": [
+    "Juízes 4:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Juízes 4:7, para onde o Senhor atrairia Sísera?",
+   "verseRef": "Juízes 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Para o Monte Tabor"
+    },
+    {
+     "id": "b",
+     "text": "Para o ribeiro Quisom"
+    },
+    {
+     "id": "c",
+     "text": "Para a palmeira de Débora"
+    },
+    {
+     "id": "d",
+     "text": "Para a casa de Mica"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "atrairei você até o ribeiro Quisom",
+   "feedbackCorrect": "Sísera, com carros e tropas, seria atraído ao ribeiro Quisom.",
+   "feedbackWrong": {
+    "a": "Tabor é o lugar dos homens de Baraque, não de Sísera.",
+    "c": "A palmeira é o lugar de Débora em 4:5, não o destino de Sísera.",
+    "d": "A casa de Mica pertence a outra história, em Juízes 17."
+   },
+   "hint": "Veja o destino do comandante inimigo.",
+   "learningObjective": "Observar o destino anunciado para Sísera.",
+   "evidence": [
+    "Juízes 4:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Juízes 4:10 na ordem do texto.",
+   "verseRef": "Juízes 4:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então, Baraque convocou Zebulom e Naftali em Quedes"
+    },
+    {
+     "id": "b",
+     "text": "e subiu com dez mil homens ao seu lado"
+    },
+    {
+     "id": "c",
+     "text": "e Débora também o acompanhou"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Baraque convocou Zebulom e Naftali em Quedes",
+   "feedbackCorrect": "Convocação em Quedes, subida com dez mil e Débora junto: essa é a ordem.",
+   "feedbackWrong": {
+    "default": "Comece pela convocação em Quedes; Débora junto fecha o versículo."
+   },
+   "hint": "O versículo começa com a convocação.",
+   "learningObjective": "Reconhecer a sequência de Juízes 4:10.",
+   "evidence": [
+    "Juízes 4:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Juízes 4:10, com quantos mil homens Baraque subiu?",
+   "verseRef": "Juízes 4:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "três"
+    },
+    {
+     "id": "b",
+     "text": "dez"
+    },
+    {
+     "id": "c",
+     "text": "vinte"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "subiu com dez mil homens ao seu lado",
+   "feedbackCorrect": "Baraque subiu com dez mil homens, e Débora o acompanhou.",
+   "feedbackWrong": {
+    "a": "Três mil aparece no teto da casa de Sansão, não aqui.",
+    "c": "Vinte é o número de anos de Sansão, não dos homens aqui."
+   },
+   "hint": "Veja o número antes de mil homens.",
+   "learningObjective": "Lembrar o número de homens com Baraque.",
+   "evidence": [
+    "Juízes 4:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Juízes 7:2 comunica que se liga a este contexto?",
+   "verseRef": "Juízes 7:2",
+   "passageA": {
+    "ref": "Juízes 7:2"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Gideão tinha gente demais para enfrentar os midianitas."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A força está no tamanho"
+    },
+    {
+     "id": "b",
+     "text": "Israel não se gloriará sozinho"
+    },
+    {
+     "id": "c",
+     "text": "Gideão livra a si mesmo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Israel não se gloriará contra mim",
+   "feedbackCorrect": "O povo demais poderia virar glória própria; o Senhor impede isso.",
+   "feedbackWrong": {
+    "a": "O tamanho do povo é justamente o problema apontado.",
+    "c": "Quem entregaria os midianitas é o Senhor, não Gideão sozinho."
+   },
+   "hint": "Veja o motivo dado pelo Senhor a Gideão.",
+   "learningObjective": "Ligar Juízes 7:2 ao risco da glória própria.",
+   "evidence": [
+    "Juízes 7:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Juízes 16:25, toque de onde chamaram Sansão.",
+   "verseRef": "Juízes 16:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "entre as colunas"
+    },
+    {
+     "id": "b",
+     "text": "diante deles"
+    },
+    {
+     "id": "c",
+     "text": "do cárcere"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Chamaram Sansão do cárcere",
+   "feedbackCorrect": "Sansão foi chamado do cárcere para diante dos filisteus.",
+   "feedbackWrong": {
+    "a": "Entre as colunas é onde o colocam depois de chamá-lo.",
+    "b": "Diante deles é onde ele se apresenta, não de onde sai."
+   },
+   "hint": "Procure o lugar de prisão de Sansão.",
+   "learningObjective": "Identificar a condição de Sansão no desafio.",
+   "evidence": [
+    "Juízes 16:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Juízes 16:28 na ordem do texto.",
+   "verseRef": "Juízes 16:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então Sansão clamou ao Senhor e disse"
+    },
+    {
+     "id": "b",
+     "text": "Senhor Deus, peço-te que te lembres de mim"
+    },
+    {
+     "id": "c",
+     "text": "e me dês força apenas esta vez, ó Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Então Sansão clamou ao Senhor",
+   "feedbackCorrect": "Clamor, lembrança pedida e força suplicada: essa é a ordem do versículo.",
+   "feedbackWrong": {
+    "default": "Comece pelo clamor ao Senhor; a força pedida vem depois."
+   },
+   "hint": "O versículo começa com o clamor de Sansão.",
+   "learningObjective": "Reconhecer a sequência do clamor de Sansão.",
+   "evidence": [
+    "Juízes 16:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Juízes 7:2, o povo demais poderia levar Israel a atribuir o livramento à própria mão",
+   "verseRef": "Juízes 7:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "assim, Israel não se gloriará contra mim",
+   "feedbackCorrect": "Com gente demais, Israel poderia dizer que a própria mão o livrou.",
+   "feedbackWrong": {
+    "false": "Releia o motivo do Senhor: impedir que Israel se glorie de si."
+   },
+   "hint": "Repare na fala que o Senhor não quer ouvir.",
+   "learningObjective": "Compreender o motivo do aviso a Gideão.",
+   "evidence": [
+    "Juízes 7:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Juízes 4:9, toque a palavra que marca o contraste na resposta de Débora.",
+   "verseRef": "Juízes 4:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Certamente"
+    },
+    {
+     "id": "b",
+     "text": "mas"
+    },
+    {
+     "id": "c",
+     "text": "pois"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas a honra não será sua",
+   "feedbackCorrect": "Ela irá com Baraque, mas a honra não será dele: o contraste está aí.",
+   "feedbackWrong": {
+    "a": "Isso afirma que ela vai, não marca o contraste seguinte.",
+    "c": "Isso introduz o motivo, depois do aviso sobre a honra."
+   },
+   "hint": "Procure a palavra curta depois de irei com você.",
+   "learningObjective": "Reconhecer o marcador de contraste em 4:9.",
+   "evidence": [
+    "Juízes 4:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o pedido de Baraque e o aviso a Gideão se relacionam?",
+   "verseRef": "Juízes 4:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Os dois líderes precisam depender da palavra do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Os dois líderes decidem tudo sem ouvir o Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Baraque e Gideão são elogiados pela força própria"
+    },
+    {
+     "id": "d",
+     "text": "Débora e o Senhor atrapalham os dois líderes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Certamente irei com você, mas a honra não será sua",
+   "feedbackCorrect": "Baraque depende da presença anunciada e Gideão, de um povo limitado por Deus.",
+   "feedbackWrong": {
+    "b": "Baraque recebe ordem do Senhor e Gideão ouve o Senhor falar.",
+    "c": "A honra e a glória própria são justamente retiradas dos líderes.",
+    "d": "A palavra do Senhor guia os dois, não os atrapalha."
+   },
+   "hint": "Junte a honra retirada com a glória impedida.",
+   "learningObjective": "Relacionar a dependência de Baraque e Gideão.",
+   "evidence": [
+    "Juízes 4:8–9",
+    "Juízes 7:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o desafio pelas histórias revisadas?",
+   "verseRef": "Juízes 4:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Débora acompanha Baraque a Quedes"
+    },
+    {
+     "id": "b",
+     "text": "O Senhor avisa Gideão sobre o povo"
+    },
+    {
+     "id": "c",
+     "text": "Sansão clama ao Senhor no fim"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "e Débora também o acompanhou",
+   "feedbackCorrect": "Na ordem do livro: Débora e Baraque, Gideão avisado e Sansão no fim.",
+   "feedbackWrong": {
+    "default": "Siga os capítulos: Juízes 4, depois 7, depois 16."
+   },
+   "hint": "Siga a ordem dos capítulos do livro.",
+   "learningObjective": "Compreender a ordem das histórias revisadas.",
+   "evidence": [
+    "Juízes 4:10",
+    "Juízes 7:2",
+    "Juízes 16:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Juízes 16:29, com que mão Sansão ficou na segunda coluna citada?",
+   "verseRef": "Juízes 16:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "direita"
+    },
+    {
+     "id": "b",
+     "text": "esquerda"
+    },
+    {
+     "id": "c",
+     "text": "segunda"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "com a mão direita em uma e com a esquerda na outra",
+   "feedbackCorrect": "Uma coluna na direita e a outra na esquerda, abraçando as duas.",
+   "feedbackWrong": {
+    "a": "A direita está na primeira coluna citada, não na segunda.",
+    "c": "Segunda marca ordem no texto, não o nome da mão."
+   },
+   "hint": "Leia as duas mãos no fim do versículo.",
+   "learningObjective": "Compreender o gesto de Sansão nas colunas.",
+   "evidence": [
+    "Juízes 16:29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Juízes 4:9 a Hebreus 11:32?",
+   "verseRef": "Juízes 4:9",
+   "passageA": {
+    "ref": "Juízes 4:9"
+   },
+   "passageB": {
+    "ref": "Hebreus 11:32"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Nomes lembrados pela fé"
+    },
+    {
+     "id": "b",
+     "text": "Sísera lembrado pela fé"
+    },
+    {
+     "id": "c",
+     "text": "Baraque apagado de Hebreus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Senhor entregará Sísera nas mãos de uma mulher",
+   "feedbackCorrect": "Hebreus cita Baraque, Gideão e Sansão entre os nomes lembrados pela fé.",
+   "feedbackWrong": {
+    "b": "Sísera é o adversário entregue, não um nome da fé em Hebreus.",
+    "c": "Baraque é citado em Hebreus 11:32, não apagado."
+   },
+   "hint": "Veja quais nomes de Juízes Hebreus cita.",
+   "learningObjective": "Relacionar os juízes à lembrança de Hebreus 11.",
+   "evidence": [
+    "Juízes 4:9",
+    "Hebreus 11:32"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Juízes 7:2, toque a palavra que introduz a consequência buscada pelo Senhor.",
+   "verseRef": "Juízes 7:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "contigo"
+    },
+    {
+     "id": "b",
+     "text": "dizendo"
+    },
+    {
+     "id": "c",
+     "text": "assim"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "assim, Israel não se gloriará contra mim",
+   "feedbackCorrect": "A consequência buscada é Israel não se gloriar contra o Senhor.",
+   "feedbackWrong": {
+    "a": "Isso situa o povo com Gideão, não introduz a consequência.",
+    "b": "Isso abre a fala imaginada de Israel, não a consequência."
+   },
+   "hint": "Procure a palavra antes de Israel não se gloriará.",
+   "learningObjective": "Reconhecer o marcador de resultado no desafio.",
+   "evidence": [
+    "Juízes 7:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos de Débora e Baraque em Juízes 4:6–9?",
+   "verseRef": "Juízes 4:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Débora chama Baraque com uma ordem"
+    },
+    {
+     "id": "b",
+     "text": "Baraque pede a presença de Débora"
+    },
+    {
+     "id": "c",
+     "text": "Débora anuncia honra a uma mulher"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Se você for comigo, irei",
+   "feedbackCorrect": "Chamado, pedido de presença e anúncio sobre a honra: esse é o encadeamento.",
+   "feedbackWrong": {
+    "default": "Comece pelo chamado de Débora; o anúncio sobre a honra vem por último."
+   },
+   "hint": "O anúncio sobre a honra fecha a conversa.",
+   "learningObjective": "Compreender o encadeamento entre Débora e Baraque.",
+   "evidence": [
+    "Juízes 4:6–9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Juízes 16:28 apresenta Sansão confiante na própria força, sem clamar ao Senhor",
+   "verseRef": "Juízes 16:28",
+   "correctOptionId": "false",
+   "evidenceSpan": "Então Sansão clamou ao Senhor",
+   "feedbackCorrect": "No fim, Sansão clama ao Senhor pedindo força apenas esta vez.",
+   "feedbackWrong": {
+    "true": "Releia o começo de 16:28: Sansão clamou ao Senhor."
+   },
+   "hint": "Veja a primeira ação de Sansão no versículo.",
+   "learningObjective": "Interpretar o clamor final de Sansão.",
+   "evidence": [
+    "Juízes 16:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Juízes 4:9, toque o que não seria de Baraque na missão.",
+   "verseRef": "Juízes 4:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "a honra"
+    },
+    {
+     "id": "b",
+     "text": "nas mãos"
+    },
+    {
+     "id": "c",
+     "text": "uma mulher"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas a honra não será sua",
+   "feedbackCorrect": "A honra da vitória é o que Débora diz que não será de Baraque.",
+   "feedbackWrong": {
+    "b": "Mãos aparecem na entrega de Sísera, não no que falta a Baraque.",
+    "c": "A mulher recebe a entrega anunciada, não é o item negado a ele."
+   },
+   "hint": "Procure o substantivo ligado a não será sua.",
+   "learningObjective": "Sustentar com o texto o tema da honra.",
+   "evidence": [
+    "Juízes 4:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura une Débora, Gideão e Sansão nestas histórias?",
+   "verseRef": "Juízes 7:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor age por pessoas limitadas sem glorificar a força humana"
+    },
+    {
+     "id": "b",
+     "text": "A força humana maior sempre explica o livramento"
+    },
+    {
+     "id": "c",
+     "text": "Líderes fortes nunca precisam ouvir o Senhor"
+    },
+    {
+     "id": "d",
+     "text": "A honra pessoal é o alvo principal de cada história"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Israel não se gloriará contra mim",
+   "feedbackCorrect": "Honra deslocada, povo limitado e força suplicada apontam para a ação do Senhor.",
+   "feedbackWrong": {
+    "b": "Gideão tem gente demais e Sansão pede força: a explicação é o Senhor.",
+    "c": "Baraque e Gideão ouvem o Senhor; Sansão clama a ele.",
+    "d": "A honra de Baraque é retirada e a glória de Israel é impedida."
+   },
+   "hint": "Junte honra, povo demais e clamor por força.",
+   "learningObjective": "Escolher a interpretação que une as três histórias.",
+   "evidence": [
+    "Juízes 4:9",
+    "Juízes 7:2",
+    "Juízes 16:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio da glória que não é humana?",
+   "verseRef": "Juízes 7:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Débora anuncia honra nas mãos de uma mulher"
+    },
+    {
+     "id": "b",
+     "text": "Gideão ouve que Israel não se gloriará"
+    },
+    {
+     "id": "c",
+     "text": "Paulo diz que ninguém se glorie diante de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Israel não se gloriará contra mim",
+   "feedbackCorrect": "Honra deslocada em Juízes 4, glória impedida em 7 e ensino de Paulo fecham o fio.",
+   "feedbackWrong": {
+    "default": "Siga a Bíblia: Juízes 4, Juízes 7 e a carta de Paulo."
+   },
+   "hint": "Siga: Débora, Gideão, Paulo.",
+   "learningObjective": "Ver a glória negada ao homem como fio bíblico.",
+   "evidence": [
+    "Juízes 4:9",
+    "Juízes 7:2",
+    "1 Coríntios 1:29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Juízes 7:2, o que Israel não faria contra o Senhor?",
+   "verseRef": "Juízes 7:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "livrará"
+    },
+    {
+     "id": "b",
+     "text": "gloriará"
+    },
+    {
+     "id": "c",
+     "text": "levantará"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "assim, Israel não se gloriará contra mim",
+   "feedbackCorrect": "O Senhor impede Israel de se gloriar como se a mão dele o livrasse.",
+   "feedbackWrong": {
+    "a": "Livrar é ação ligada ao Senhor e aos juízes, não a glória negada.",
+    "c": "Levantar é o que o Senhor faz com juízes, não o verbo negado aqui."
+   },
+   "hint": "Veja o verbo depois de Israel não se.",
+   "learningObjective": "Lembrar o termo central contra a glória própria.",
+   "evidence": [
+    "Juízes 7:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Juízes 7:2 a 1 Coríntios 1:29?",
+   "verseRef": "Juízes 7:2",
+   "passageA": {
+    "ref": "Juízes 7:2"
+   },
+   "passageB": {
+    "ref": "1 Coríntios 1:29"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A glória é da própria mão"
+    },
+    {
+     "id": "b",
+     "text": "O forte dispensa Deus"
+    },
+    {
+     "id": "c",
+     "text": "Ninguém se glorie diante de Deus"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Israel não se gloriará contra mim",
+   "feedbackCorrect": "Em Gideão e em Paulo, o livramento não vira glória humana diante de Deus.",
+   "feedbackWrong": {
+    "a": "A própria mão glorificada é justamente o que Juízes 7:2 impede.",
+    "b": "Paulo nega que alguém se glorie diante de Deus, não independência."
+   },
+   "hint": "Compare quem pode se gloriar nos dois trechos.",
+   "learningObjective": "Ligar a glória negada em Juízes e em Paulo.",
+   "evidence": [
+    "Juízes 7:2",
+    "1 Coríntios 1:29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Juízes 16:28, toque o pedido que mostra Sansão dependendo do Senhor.",
+   "verseRef": "Juízes 16:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "meus olhos"
+    },
+    {
+     "id": "b",
+     "text": "me dês força"
+    },
+    {
+     "id": "c",
+     "text": "esta vez"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "me dês força apenas esta vez",
+   "feedbackCorrect": "Sansão pede que o Senhor lhe dê força: ele depende de receber.",
+   "feedbackWrong": {
+    "a": "Os olhos entram no motivo pessoal, não no pedido central.",
+    "c": "Isso marca a ocasião única, não o que ele suplica ao Senhor."
+   },
+   "hint": "Procure o que ele pede que Deus lhe dê.",
+   "learningObjective": "Sustentar com o texto a dependência de Sansão.",
+   "evidence": [
+    "Juízes 16:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fecho de Sansão até sua lembrança bíblica?",
+   "verseRef": "Juízes 16:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sansão preso é exposto entre colunas"
+    },
+    {
+     "id": "b",
+     "text": "Ele pede força ao Senhor no fim"
+    },
+    {
+     "id": "c",
+     "text": "Hebreus cita Sansão pelo nome"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Então Sansão clamou ao Senhor",
+   "feedbackCorrect": "Exposição humilhante, clamor por força e citação em Hebreus fecham o fio.",
+   "feedbackWrong": {
+    "default": "Comece pela exposição de Sansão; Hebreus faz a lembrança final."
+   },
+   "hint": "Siga: exposição, clamor, Hebreus.",
+   "learningObjective": "Ver o fecho de Sansão e sua lembrança em Hebreus.",
+   "evidence": [
+    "Juízes 16:25",
+    "Juízes 16:28",
+    "Hebreus 11:32"
+   ]
+  }
+ ]
+}

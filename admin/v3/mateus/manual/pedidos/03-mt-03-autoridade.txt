@@ -1,0 +1,71 @@
+Escreva a cena "mt-03-autoridade" da trilha "mateus" (Mateus).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "mateus",
+  "title": "Mateus",
+  "description": "O Rei prometido — cumprimento e o Sermão do Monte.",
+  "realm": "novo-testamento"
+ },
+ "block": "Mateus",
+ "mission": {
+  "slug": "mt-03-autoridade",
+  "title": "Autoridade do Rei",
+  "type": "lesson",
+  "intro": "Jesus demonstra autoridade sobre doenças, demônios, natureza e pecado, chamando pessoas a segui-lo com fé.",
+  "hookRef": "Autoridade do Rei",
+  "hookNote": "Jesus demonstra autoridade sobre doenças, demônios, natureza e pecado, chamando pessoas a segui-lo com fé.",
+  "centralInsight": "Os milagres em Mateus não são truques: revelam a autoridade do Messias e apontam para sua compaixão e seu Reino.",
+  "objective": "Milagres e chamado"
+ },
+ "v2": {
+  "passageRef": "Autoridade do Rei",
+  "context": "Jesus demonstra autoridade sobre doenças, demônios, natureza e pecado, chamando pessoas a segui-lo com fé.",
+  "keyword": "Autoridade",
+  "verseRefs": [
+   "Mateus 8:26–27"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 8:23–30"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 8:23",
+   "text": "E, ao entrar no barco, os seus discípulos o acompanharam."
+  },
+  {
+   "ref": "Mateus 8:24",
+   "text": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia."
+  },
+  {
+   "ref": "Mateus 8:25",
+   "text": "E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo!"
+  },
+  {
+   "ref": "Mateus 8:26",
+   "text": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança."
+  },
+  {
+   "ref": "Mateus 8:27",
+   "text": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?"
+  },
+  {
+   "ref": "Mateus 8:28",
+   "text": "Ao chegarem à outra margem, na terra dos gadarenos, saíram ao encontro dele dois endemoniados, saindo dos sepulcros, tão furiosos que ninguém podia passar por aquele caminho."
+  },
+  {
+   "ref": "Mateus 8:29",
+   "text": "E clamaram, dizendo: O que temos nós a ver contigo, ó Filho de Deus? Vieste aqui para nos atormentar antes do tempo?"
+  },
+  {
+   "ref": "Mateus 8:30",
+   "text": "E havia uma grande manada de porcos pastando não muito longe deles."
+  }
+ ]
+}
+</cena>

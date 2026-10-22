@@ -1,0 +1,66 @@
+Escreva a cena "eclesiastes-conclusao-02-desafio-sentido" da trilha "eclesiastes" (Eclesiastes).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "eclesiastes",
+  "title": "Eclesiastes",
+  "description": "Vaidade sob o sol — e o temor de Deus no fim.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Conclusão",
+ "mission": {
+  "slug": "eclesiastes-conclusao-02-desafio-sentido",
+  "title": "Desafio: Sentido",
+  "type": "boss",
+  "intro": "Vaidade e temor do Senhor.",
+  "hookRef": "Eclesiastes 12:13",
+  "hookNote": "Vaidade e temor do Senhor.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre sentido?"
+ },
+ "v2": {
+  "passageRef": "Eclesiastes 12:13",
+  "context": "Vaidade e temor do Senhor.",
+  "keyword": "Sentido",
+  "verseRefs": [
+   "Eclesiastes 1:2; 12:13"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "eclesiastes-conclusao-01-teme-a-deus",
+   "title": "Teme a Deus",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Eclesiastes 12:10–14"
+  }
+ ],
+ "ranges": [
+  "Eclesiastes 12:10–14"
+ ],
+ "verses": [
+  {
+   "ref": "Eclesiastes 12:10",
+   "text": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de verdade."
+  },
+  {
+   "ref": "Eclesiastes 12:11",
+   "text": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor."
+  },
+  {
+   "ref": "Eclesiastes 12:12",
+   "text": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne."
+  },
+  {
+   "ref": "Eclesiastes 12:13",
+   "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+  },
+  {
+   "ref": "Eclesiastes 12:14",
+   "text": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más."
+  }
+ ]
+}
+</cena>

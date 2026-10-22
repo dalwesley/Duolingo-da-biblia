@@ -1,0 +1,67 @@
+Escreva a cena "fm-02-pais-filhos" da trilha "familia" (Família e Relacionamentos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "familia",
+  "title": "Família e Relacionamentos",
+  "description": "Casamento, filhos e comunidade — viver o evangelho em casa.",
+  "realm": "vida-crista"
+ },
+ "block": "Família",
+ "mission": {
+  "slug": "fm-02-pais-filhos",
+  "title": "Pais e filhos",
+  "type": "lesson",
+  "intro": "Filhos são chamados a honrar seus pais, e pais a criar os filhos na disciplina e instrução do Senhor.",
+  "hookRef": "Efésios 6:1-4",
+  "hookNote": "Filhos são chamados a honrar seus pais, e pais a criar os filhos na disciplina e instrução do Senhor.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "Efésios 6:1-4"
+ },
+ "v2": {
+  "passageRef": "Efésios 6:1-4",
+  "context": "Filhos são chamados a honrar seus pais, e pais a criar os filhos na disciplina e instrução do Senhor.",
+  "keyword": "Pais",
+  "verseRefs": [
+   "Efésios 6:1–4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Efésios 6:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Efésios 6:1",
+   "text": "Filhos, obedeçam a seus pais no Senhor, pois isso é justo."
+  },
+  {
+   "ref": "Efésios 6:2",
+   "text": "Honra teu pai e tua mãe, que é o primeiro mandamento com promessa."
+  },
+  {
+   "ref": "Efésios 6:3",
+   "text": "para que te vá bem, e tenhas uma vida longa sobre a terra."
+  },
+  {
+   "ref": "Efésios 6:4",
+   "text": "E vocês, pais, não provoquem seus filhos à ira, mas criem-nos na disciplina e na admoestação do Senhor."
+  },
+  {
+   "ref": "Efésios 6:5",
+   "text": "Empregados, obedeçam a seus senhores terrenos com temor e tremor, na sinceridade de seu coração, como a Cristo"
+  },
+  {
+   "ref": "Efésios 6:6",
+   "text": "não servindo apenas quando são vistos, como para agradar aos homens, mas como servos de Cristo, fazendo de coração a vontade de Deus."
+  },
+  {
+   "ref": "Efésios 6:7",
+   "text": "Servindo de boa vontade, como ao Senhor, e não apenas como a homens."
+  }
+ ]
+}
+</cena>

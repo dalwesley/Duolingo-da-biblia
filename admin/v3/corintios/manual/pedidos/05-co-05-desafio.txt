@@ -1,0 +1,191 @@
+Escreva a cena "co-05-desafio" da trilha "corintios" (1–2 Coríntios).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "corintios",
+  "title": "1–2 Coríntios",
+  "description": "Igreja, unidade, dons e o amor que edifica.",
+  "realm": "novo-testamento"
+ },
+ "block": "Coríntios",
+ "mission": {
+  "slug": "co-05-desafio",
+  "title": "Desafio: Igreja edificada",
+  "type": "boss",
+  "intro": "Revise cruz, unidade, dons, amor, ressurreição e consolo.",
+  "hookRef": "Desafio: Igreja edificada",
+  "hookNote": "Revise cruz, unidade, dons, amor, ressurreição e consolo.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "1Coríntios 1-15; 2Coríntios 1-5"
+ },
+ "v2": {
+  "passageRef": "Desafio: Igreja edificada",
+  "context": "Revise cruz, unidade, dons, amor, ressurreição e consolo.",
+  "keyword": "Igreja",
+  "verseRefs": [
+   "1 Coríntios 3:11"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "co-01-cruz",
+   "title": "Unidade e a cruz",
+   "centralInsight": "Paulo instrui a igreja em 1Coríntios 1-4 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+   "ref": "1 Coríntios 1:15–21"
+  },
+  {
+   "slug": "co-02-amor",
+   "title": "Corpo, dons e amor",
+   "centralInsight": "Paulo instrui a igreja em 1Coríntios 12-14 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. E…",
+   "ref": "1 Coríntios 13:1–10"
+  },
+  {
+   "slug": "co-03-ressurreicao",
+   "title": "A ressurreição de Cristo",
+   "centralInsight": "Paulo instrui a igreja em 1Coríntios 15 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+   "ref": "1 Coríntios 15:1–7"
+  },
+  {
+   "slug": "co-04-consolacao",
+   "title": "Consolação em meio à fraqueza",
+   "centralInsight": "Paulo instrui a igreja em 2Coríntios 1-5 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+   "ref": "2 Coríntios 12:6–12"
+  }
+ ],
+ "ranges": [
+  "1 Coríntios 1:15–21",
+  "1 Coríntios 13:1–10",
+  "1 Coríntios 15:1–7",
+  "2 Coríntios 12:6–12"
+ ],
+ "verses": [
+  {
+   "ref": "1 Coríntios 1:15",
+   "text": "Para que ninguém diga que vocês foram batizados em meu nome."
+  },
+  {
+   "ref": "1 Coríntios 1:16",
+   "text": "Batizei também a família de Estéfanas; além destes, não me recordo se batizei mais alguém."
+  },
+  {
+   "ref": "1 Coríntios 1:17",
+   "text": "Porque Cristo me enviou, não para batizar, mas para pregar o evangelho; não com sabedoria de palavras, para que a cruz de Cristo não se anule."
+  },
+  {
+   "ref": "1 Coríntios 1:18",
+   "text": "Certamente, a mensagem da cruz é loucura para os que se perdem, mas para nós, que somos salvos, ela é o poder de Deus."
+  },
+  {
+   "ref": "1 Coríntios 1:19",
+   "text": "Pois está escrito: Destruirei a sabedoria dos sábios e aniquilarei a inteligência dos instruídos."
+  },
+  {
+   "ref": "1 Coríntios 1:20",
+   "text": "Onde está o sábio? Onde está o escriba? Onde está o inquiridor deste século? Acaso Deus não tornou louca a sabedoria do mundo?"
+  },
+  {
+   "ref": "1 Coríntios 1:21",
+   "text": "Pois, na sabedoria de Deus, o mundo não conheceu a Deus por meio de sua própria sabedoria; agradou a Deus salvar os que creem pela loucura da pregação."
+  },
+  {
+   "ref": "1 Coríntios 13:1",
+   "text": "Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o bronze que ressoa ou como o sino que retine."
+  },
+  {
+   "ref": "1 Coríntios 13:2",
+   "text": "E ainda que eu tenha o dom de profetizar e conheça todos os mistérios e toda a ciência; e ainda que eu tenha tamanha fé, a ponto de transportar montes, se eu não tiver amor, nada serei."
+  },
+  {
+   "ref": "1 Coríntios 13:3",
+   "text": "E mesmo que eu distribua todos os meus bens para ajudar os pobres, e mesmo que eu entregue meu corpo para ser queimado, se eu não tiver amor, nada disso me será proveitoso."
+  },
+  {
+   "ref": "1 Coríntios 13:4",
+   "text": "O amor é paciente, é benigno; o amor não arde em ciúmes, não se vangloria, não se ensoberbece;"
+  },
+  {
+   "ref": "1 Coríntios 13:5",
+   "text": "Não se porta de maneira inconveniente, não busca os seus próprios interesses, não se irrita facilmente, não guarda rancor."
+  },
+  {
+   "ref": "1 Coríntios 13:6",
+   "text": "Não se alegra com a injustiça, mas regozija-se com a verdade;"
+  },
+  {
+   "ref": "1 Coríntios 13:7",
+   "text": "Tudo suporta, tudo crê, tudo espera, tudo enfrenta."
+  },
+  {
+   "ref": "1 Coríntios 13:8",
+   "text": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará."
+  },
+  {
+   "ref": "1 Coríntios 13:9",
+   "text": "Porque conhecemos apenas em parte e profetizamos também em parte;"
+  },
+  {
+   "ref": "1 Coríntios 13:10",
+   "text": "Quando, porém, vier o que é perfeito, então, o que é parcial será abolido."
+  },
+  {
+   "ref": "1 Coríntios 15:1",
+   "text": "Além disso, irmãos, venho lembrar-vos do evangelho que já vos anunciei, o qual também recebestes e no qual ainda perseverais."
+  },
+  {
+   "ref": "1 Coríntios 15:2",
+   "text": "Pelo qual também sois salvos, se retiverdes a palavra como eu vo-la tenho pregado; caso contrário, a vossa crença é em vão."
+  },
+  {
+   "ref": "1 Coríntios 15:3",
+   "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+  },
+  {
+   "ref": "1 Coríntios 15:4",
+   "text": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,"
+  },
+  {
+   "ref": "1 Coríntios 15:5",
+   "text": "E foi visto por Cefas e, em seguida, pelos doze."
+  },
+  {
+   "ref": "1 Coríntios 15:6",
+   "text": "Depois, foi visto por mais de quinhentos irmãos de uma só vez, dos quais a maioria sobrevive até agora; porém alguns já dormem."
+  },
+  {
+   "ref": "1 Coríntios 15:7",
+   "text": "Depois, foi visto por Tiago, e em seguida, por todos os apóstolos."
+  },
+  {
+   "ref": "2 Coríntios 12:6",
+   "text": "Porque, se eu quisesse gloriar-me, não seria insensato, pois estaria proclamando a verdade; no entanto, abstenho-me, para que ninguém me considere além do que vê em mim ou ouve de mim."
+  },
+  {
+   "ref": "2 Coríntios 12:7",
+   "text": "E, para que eu não me ensoberbecesse pela grandeza das revelações, foi-me dado um espinho na carne, um mensageiro de Satanás, para me esbofetear, a fim de que eu não me exaltasse."
+  },
+  {
+   "ref": "2 Coríntios 12:8",
+   "text": "A esse respeito, três vezes pedi ao Senhor que o afastasse de mim."
+  },
+  {
+   "ref": "2 Coríntios 12:9",
+   "text": "E ele me disse: A minha graça te basta, pois o meu poder se aperfeiçoa na fraqueza. Portanto, de bom grado me gloriarei nas minhas fraquezas, para que o poder de Cristo descanse sobre mim."
+  },
+  {
+   "ref": "2 Coríntios 12:10",
+   "text": "Por isso, tenho prazer nas fraquezas, nas injúrias, nas necessidades, nas perseguições e nas angústias, por amor de Cristo. Pois, quando estou fraco, é então que sou forte."
+  },
+  {
+   "ref": "2 Coríntios 12:11",
+   "text": "Tenho agido insensatamente ao me gloriar; vocês me pressionaram a isto pois eu deveria ter sido elogiado por vocês, uma vez que em nada fui inferior aos mais destacados apóstolos, ainda que eu não seja nada."
+  },
+  {
+   "ref": "2 Coríntios 12:12",
+   "text": "Os sinais do meu apostolado foram manifestos entre vocês com toda a paciência, por meio de sinais, prodígios e maravilhas."
+  }
+ ]
+}
+</cena>

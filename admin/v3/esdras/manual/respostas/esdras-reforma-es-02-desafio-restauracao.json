@@ -1,0 +1,920 @@
+{
+ "study": {
+  "passageRef": "Esdras 7:6–10",
+  "passages": [
+   {
+    "ref": "Esdras 7:6–10"
+   },
+   {
+    "ref": "Esdras 7:13–15"
+   },
+   {
+    "ref": "Esdras 7:25–28"
+   }
+  ],
+  "context": "Este desafio revisa a restauração em Esdras 7. Um povo volta, uma casa é cuidada e a Lei volta a ser ensinada; por trás de reis e viagens, o texto repete quem sustenta tudo.",
+  "keyword": "restauração",
+  "keywordGloss": "Deus refaz seu povo por fora e por dentro, do retorno à terra ao coração ensinado pela Lei.",
+  "focusQuestion": "Na sua restauração, o que Deus já fez e qual é o próximo passo de obediência?",
+  "reflectionPrompts": [
+   "Deus move reis",
+   "Coração que aprende",
+   "Povo que reaprende"
+  ],
+  "facts": [
+   {
+    "text": "Esdras era escriba versado na Lei de Moisés e recebeu do rei tudo o que pediu.",
+    "evidenceRef": "Esdras 7:6",
+    "evidenceSpan": "era um escriba versado na Lei de Moisés"
+   },
+   {
+    "text": "A jornada de Esdras termina em Jerusalém segundo a boa mão do seu Deus.",
+    "evidenceRef": "Esdras 7:9",
+    "evidenceSpan": "segundo a boa mão do seu Deus sobre ele"
+   },
+   {
+    "text": "Esdras dispôs o coração para buscar, cumprir e ensinar a Lei do Senhor.",
+    "evidenceRef": "Esdras 7:10",
+    "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor"
+   },
+   {
+    "text": "O decreto real permite ir a Jerusalém a todo israelita que desejar acompanhar Esdras.",
+    "evidenceRef": "Esdras 7:13",
+    "evidenceSpan": "todo aquele do povo de Israel"
+   },
+   {
+    "text": "A carta manda ensinar as leis de Deus a quem ainda não as conhece.",
+    "evidenceRef": "Esdras 7:25",
+    "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas"
+   },
+   {
+    "text": "Esdras bendiz o Senhor por mover o coração do rei em favor da sua casa.",
+    "evidenceRef": "Esdras 7:27",
+    "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "escriba",
+    "gloss": "Especialista que estudava e ensinava a Lei ao povo de Deus."
+   },
+   {
+    "term": "boa mão",
+    "gloss": "Favor de Deus que protege a jornada e abre o coração dos reis."
+   },
+   {
+    "term": "estatutos",
+    "gloss": "Determinações da Lei ensinadas por Esdras em Israel."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O escriba sobe e é favorecido",
+    "evidenceRef": "Esdras 7:6"
+   },
+   {
+    "label": "A jornada chega sob a boa mão",
+    "evidenceRef": "Esdras 7:9"
+   },
+   {
+    "label": "Buscar, cumprir e ensinar a Lei",
+    "evidenceRef": "Esdras 7:10"
+   },
+   {
+    "label": "Ensinar também quem não sabe",
+    "evidenceRef": "Esdras 7:25"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "O coração de Esdras se dispõe com a finalidade de buscar, cumprir e ensinar a Lei.",
+    "marker": "para",
+    "evidenceRef": "Esdras 7:10"
+   },
+   {
+    "kind": "causa",
+    "text": "Esdras se anima porque a boa mão do Senhor seu Deus está sobre ele.",
+    "marker": "segundo",
+    "evidenceRef": "Esdras 7:28"
+   },
+   {
+    "kind": "resultado",
+    "text": "Movido por Deus, o rei favorece a casa do Senhor e Esdras reúne chefes.",
+    "marker": "assim",
+    "evidenceRef": "Esdras 7:28"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Deuteronômio 6:6–7",
+    "bridge": "Palavra no coração e ensino"
+   },
+   {
+    "ref": "Josué 1:8",
+    "bridge": "Meditar para viver a Lei"
+   },
+   {
+    "ref": "Salmos 1:2",
+    "bridge": "Prazer na Lei de Deus"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A restauração depende só de decretos de reis e de recursos materiais.",
+    "why": "O texto repete a boa mão de Deus e o coração disposto a buscar e cumprir a Lei."
+   },
+   {
+    "text": "Quem já conhece a Lei não precisa mais ser formado por ela.",
+    "why": "O próprio Esdras, versado na Lei, dispõe o coração para buscá-la de novo."
+   },
+   {
+    "text": "Ensinar a Lei é tarefa para poucos, sem alcançar quem não sabe.",
+    "why": "A ordem expressa é ensinar justamente aos que não sabem as leis de Deus."
+   }
+  ],
+  "centralInsight": "Deus restaura seu povo movendo reis e formando corações pela sua Lei",
+  "anchorQuestion": "Como Esdras resume sua missão diante da Lei em Esdras 7:10?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Esdras 7:13, apenas os sacerdotes receberam permissão para ir com Esdras a Jerusalém",
+   "verseRef": "Esdras 7:13",
+   "correctOptionId": "false",
+   "evidenceSpan": "todo aquele do povo de Israel",
+   "feedbackCorrect": "A permissão alcança todo o povo que desejar ir, e não só sacerdotes.",
+   "feedbackWrong": {
+    "true": "Releia quem o decreto autoriza a acompanhar Esdras."
+   },
+   "hint": "Veja o alcance da permissão no decreto.",
+   "learningObjective": "Observar quem pode acompanhar Esdras a Jerusalém.",
+   "evidence": [
+    "Esdras 7:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Esdras 7:10, toque onde Esdras deve ensinar estatutos e juízos.",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "o coração"
+    },
+    {
+     "id": "b",
+     "text": "em Israel"
+    },
+    {
+     "id": "c",
+     "text": "seus estatutos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "para ensinar em Israel seus estatutos e juízos",
+   "feedbackCorrect": "Todo Israel é o campo do ensino de Esdras.",
+   "feedbackWrong": {
+    "a": "O coração é a sede da disposição, não o lugar do ensino.",
+    "c": "Estatutos é o conteúdo, não o povo ensinado."
+   },
+   "hint": "Procure o povo destinatário do ensino.",
+   "learningObjective": "Revisar o destino do ensino de Esdras.",
+   "evidence": [
+    "Esdras 7:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Esdras 7:13, quem pode ir a Jerusalém com Esdras?",
+   "verseRef": "Esdras 7:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem do povo desejar ir com ele"
+    },
+    {
+     "id": "b",
+     "text": "Somente os sete conselheiros reais"
+    },
+    {
+     "id": "c",
+     "text": "Apenas soldados do rei persa"
+    },
+    {
+     "id": "d",
+     "text": "Ninguém além do próprio Esdras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo aquele do povo de Israel, bem como seus sacerdotes e levitas, que desejar ir com você a Jerusalém, vá",
+   "feedbackCorrect": "O decreto abre a viagem a todo israelita que quiser acompanhar Esdras.",
+   "feedbackWrong": {
+    "b": "Os conselheiros enviam Esdras; quem viaja é o povo disposto.",
+    "c": "Não há escolta persa citada como viajante nesse decreto.",
+    "d": "Esdras reúne justamente outras pessoas para subir com ele."
+   },
+   "hint": "Leia a condição posta para quem quiser ir.",
+   "learningObjective": "Observar o alcance do decreto de Artaxerxes.",
+   "evidence": [
+    "Esdras 7:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Esdras 7:10 na ordem do texto.",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esdras havia disposto o coração para buscar a Lei do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "para cumpri-la"
+    },
+    {
+     "id": "c",
+     "text": "e para ensinar em Israel seus estatutos e juízos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+   "feedbackCorrect": "A ordem é buscar, cumprir e ensinar a Lei do Senhor.",
+   "feedbackWrong": {
+    "default": "Comece por buscar; o ensino fecha o versículo."
+   },
+   "hint": "O último passo é o ensino em Israel.",
+   "learningObjective": "Reconhecer a ordem dos passos de Esdras.",
+   "evidence": [
+    "Esdras 7:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Esdras 7:10, qual é o primeiro passo do coração disposto de Esdras?",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "ignorar"
+    },
+    {
+     "id": "b",
+     "text": "esconder"
+    },
+    {
+     "id": "c",
+     "text": "buscar"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "para buscar a Lei do Senhor",
+   "feedbackCorrect": "Tudo começa por buscar conhecer a Lei do Senhor.",
+   "feedbackWrong": {
+    "a": "O coração disposto se volta para a Lei, e não a ignora.",
+    "b": "Esdras busca a Lei para ensiná-la, e não para ocultá-la."
+   },
+   "hint": "É o primeiro verbo da tríade do versículo.",
+   "learningObjective": "Revisar o primeiro passo de Esdras diante da Lei.",
+   "evidence": [
+    "Esdras 7:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Esdras 7:28 comunica que se liga a este contexto?",
+   "verseRef": "Esdras 7:28",
+   "passageA": {
+    "ref": "Esdras 7:28"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A restauração une retorno à terra, cuidado com a casa de Deus e ensino da Lei ao povo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Voltar e reaprender com Deus"
+    },
+    {
+     "id": "b",
+     "text": "Voltar sem mudar nada dentro"
+    },
+    {
+     "id": "c",
+     "text": "Depender apenas da própria força"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "e reuni de Israel alguns chefes para subirem comigo",
+   "feedbackCorrect": "Esdras se anima em Deus e reúne outros para a subida restauradora.",
+   "feedbackWrong": {
+    "b": "O retorno vem com coração formado pela Lei de Deus.",
+    "c": "Esdras se anima segundo a boa mão do Senhor sobre ele."
+   },
+   "hint": "Veja o que Esdras faz depois de se animar.",
+   "learningObjective": "Ligar Esdras 7:28 à restauração completa do povo.",
+   "evidence": [
+    "Esdras 7:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Esdras 7:27, toque o que Deus moveu em favor da sua casa.",
+   "verseRef": "Esdras 7:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "nossos pais"
+    },
+    {
+     "id": "b",
+     "text": "coração do rei"
+    },
+    {
+     "id": "c",
+     "text": "em Jerusalém"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+   "feedbackCorrect": "Deus inclina o interior do rei para favorecer sua casa.",
+   "feedbackWrong": {
+    "a": "Os pais identificam o Deus bendito, não o que foi movido.",
+    "c": "Jerusalém é o lugar da casa, não o que Deus moveu."
+   },
+   "hint": "Procure o interior da pessoa favorecedora.",
+   "learningObjective": "Observar como Deus age no coração do rei.",
+   "evidence": [
+    "Esdras 7:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Esdras 7:9 na ordem do texto.",
+   "verseRef": "Esdras 7:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "começou a sua jornada de Babilônia"
+    },
+    {
+     "id": "b",
+     "text": "chegou a Jerusalém"
+    },
+    {
+     "id": "c",
+     "text": "segundo a boa mão do seu Deus sobre ele"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "começou a sua jornada de Babilônia",
+   "feedbackCorrect": "Saída da Babilônia, chegada a Jerusalém e o favor de Deus resumem a viagem.",
+   "feedbackWrong": {
+    "default": "Comece pela saída da Babilônia; a chegada vem depois."
+   },
+   "hint": "A viagem começa longe de Jerusalém.",
+   "learningObjective": "Reconhecer a sequência da jornada de Esdras.",
+   "evidence": [
+    "Esdras 7:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Esdras 7:25, quem ainda não conhece as leis de Deus deve ser ensinado nelas",
+   "verseRef": "Esdras 7:25",
+   "correctOptionId": "true",
+   "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas",
+   "feedbackCorrect": "A missão de Esdras inclui ensinar justamente quem não sabe.",
+   "feedbackWrong": {
+    "false": "Releia o fim de Esdras 7:25 sobre quem não sabe."
+   },
+   "hint": "Veja o destino dado a quem desconhece a Lei.",
+   "learningObjective": "Compreender o ensino como parte da restauração.",
+   "evidence": [
+    "Esdras 7:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Esdras 7:9, toque a palavra que liga a chegada à boa mão de Deus.",
+   "verseRef": "Esdras 7:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "sobre"
+    },
+    {
+     "id": "c",
+     "text": "segundo"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "chegou a Jerusalém, segundo a boa mão do seu Deus sobre ele",
+   "feedbackCorrect": "A chegada se deu em conformidade com o favor divino.",
+   "feedbackWrong": {
+    "a": "Essa palavra abre a frase, sem fazer essa ligação.",
+    "b": "Essa palavra diz sobre quem a mão repousa."
+   },
+   "hint": "Procure a palavrinha imediatamente antes do favor.",
+   "learningObjective": "Reconhecer a ligação entre jornada e favor de Deus.",
+   "evidence": [
+    "Esdras 7:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Esdras 7:25 combina justiça e ensino na restauração?",
+   "verseRef": "Esdras 7:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Juízes julgam e ignorantes são ensinados"
+    },
+    {
+     "id": "b",
+     "text": "Juízes substituem o ensino da Lei"
+    },
+    {
+     "id": "c",
+     "text": "Só quem já sabe recebe atenção"
+    },
+    {
+     "id": "d",
+     "text": "O ensino fica restrito aos magistrados"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nomeia magistrados e juízes que julguem todo o povo",
+   "feedbackCorrect": "Julgar quem sabe e ensinar quem não sabe andam juntos.",
+   "feedbackWrong": {
+    "b": "O ensino acompanha o juízo, e não é substituído por ele.",
+    "c": "Quem não sabe é alvo explícito do ensino ordenado.",
+    "d": "Os magistrados julgam; o ensino mira todo o povo."
+   },
+   "hint": "Veja os dois destinos dados ao povo no versículo.",
+   "learningObjective": "Relacionar juízo e ensino na missão de Esdras.",
+   "evidence": [
+    "Esdras 7:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos do coração em Esdras 7:10?",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Aprender a Lei a fundo"
+    },
+    {
+     "id": "b",
+     "text": "Obedecer ao que aprendeu"
+    },
+    {
+     "id": "c",
+     "text": "Ensinar o povo em Israel"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "para buscar a Lei do Senhor, para cumpri-la e para ensinar em Israel",
+   "feedbackCorrect": "Aprender, obedecer e ensinar formam o caminho inteiro.",
+   "feedbackWrong": {
+    "default": "A obediência fica entre aprender e ensinar."
+   },
+   "hint": "Ensinar é a etapa final do encadeamento.",
+   "learningObjective": "Compreender a progressão do coração de Esdras.",
+   "evidence": [
+    "Esdras 7:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Esdras 7:6, o que o rei fez com tudo o que Esdras lhe pedira?",
+   "verseRef": "Esdras 7:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "negou"
+    },
+    {
+     "id": "b",
+     "text": "concedeu"
+    },
+    {
+     "id": "c",
+     "text": "adiou"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o rei lhe concedeu tudo o que lhe pedira",
+   "feedbackCorrect": "O pedido de Esdras foi plenamente atendido pelo rei.",
+   "feedbackWrong": {
+    "a": "O texto registra atendimento total, e não recusa.",
+    "c": "Não há espera imposta; tudo foi atendido."
+   },
+   "hint": "Veja o desfecho dos pedidos de Esdras.",
+   "learningObjective": "Compreender o favor real como parte da restauração.",
+   "evidence": [
+    "Esdras 7:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Esdras 7:10 a Deuteronômio 6:6–7?",
+   "verseRef": "Esdras 7:10",
+   "passageA": {
+    "ref": "Esdras 7:10"
+   },
+   "passageB": {
+    "ref": "Deuteronômio 6:6–7"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra no coração e ensino"
+    },
+    {
+     "id": "b",
+     "text": "Palavra guardada só para si"
+    },
+    {
+     "id": "c",
+     "text": "Ensino sem vida no coração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+   "feedbackCorrect": "Moisés põe a Palavra no coração que ensina; Esdras vive isso.",
+   "feedbackWrong": {
+    "b": "Deuteronômio manda inculcar a Palavra aos filhos.",
+    "c": "Nos dois textos, coração e ensino andam juntos."
+   },
+   "hint": "Compare onde a Palavra fica e o que ela gera.",
+   "learningObjective": "Relacionar o coração de Esdras ao ensino em Deuteronômio.",
+   "evidence": [
+    "Esdras 7:10",
+    "Deuteronômio 6:6–7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Esdras 7:25, toque o trecho que identifica quem ainda precisa aprender as leis de Deus.",
+   "verseRef": "Esdras 7:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "magistrados e juízes"
+    },
+    {
+     "id": "b",
+     "text": "não as sabem"
+    },
+    {
+     "id": "c",
+     "text": "todo o povo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e aos que não as sabem, que lhes sejam ensinadas",
+   "feedbackCorrect": "Quem desconhece a Lei é justamente quem deve ser ensinado.",
+   "feedbackWrong": {
+    "a": "Magistrados são nomeados para julgar, não os aprendizes aqui.",
+    "c": "O povo todo é julgado; o recorte aponta quem ignora a Lei."
+   },
+   "hint": "Procure o grupo definido pela falta de saber.",
+   "learningObjective": "Identificar quem deve ser ensinado segundo a carta.",
+   "evidence": [
+    "Esdras 7:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o desfecho em Esdras 7:27–28?",
+   "verseRef": "Esdras 7:27–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esdras bendiz ao Senhor pelo favor"
+    },
+    {
+     "id": "b",
+     "text": "Ele reconhece a misericórdia recebida"
+    },
+    {
+     "id": "c",
+     "text": "Ele reúne chefes para a subida"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Bendito seja o SENHOR, Deus de nossos pais",
+   "feedbackCorrect": "Gratidão, reconhecimento e ação encerram a cena de Esdras.",
+   "feedbackWrong": {
+    "default": "Comece pela bênção de Esdras; reunir chefes é o fim."
+   },
+   "hint": "A reunião de chefes é a ação final.",
+   "learningObjective": "Compreender o movimento da gratidão à ação.",
+   "evidence": [
+    "Esdras 7:27–28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Esdras 7:28, Esdras se anima apenas pela própria força, sem relação com a mão de Deus",
+   "verseRef": "Esdras 7:28",
+   "correctOptionId": "false",
+   "evidenceSpan": "segundo a boa mão do SENHOR meu Deus sobre mim",
+   "feedbackCorrect": "O ânimo de Esdras nasce da boa mão do Senhor sobre ele.",
+   "feedbackWrong": {
+    "true": "Releia a quem Esdras atribui seu ânimo no fim do capítulo."
+   },
+   "hint": "Veja a fonte do ânimo declarada por Esdras.",
+   "learningObjective": "Interpretar o ânimo de Esdras como fruto do favor de Deus.",
+   "evidence": [
+    "Esdras 7:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Esdras 7:10, toque o trecho que mostra a preparação interior antes do ensino.",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "disposto o coração"
+    },
+    {
+     "id": "b",
+     "text": "em Israel"
+    },
+    {
+     "id": "c",
+     "text": "seus estatutos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Esdras havia disposto o coração para buscar a Lei do Senhor",
+   "feedbackCorrect": "A restauração do povo passa pelo coração preparado do mestre.",
+   "feedbackWrong": {
+    "b": "Israel é onde o ensino chega, não a preparação.",
+    "c": "Estatutos são o conteúdo, não o interior de Esdras."
+   },
+   "hint": "Procure o que se passa dentro de Esdras.",
+   "learningObjective": "Sustentar a preparação interior como base do ensino.",
+   "evidence": [
+    "Esdras 7:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Esdras 7:27–28 sustenta sobre a restauração do povo?",
+   "verseRef": "Esdras 7:27–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus age nos reis e anima seus servos"
+    },
+    {
+     "id": "b",
+     "text": "Reis agem e Deus apenas observa distante"
+    },
+    {
+     "id": "c",
+     "text": "A restauração dispensa gratidão a Deus"
+    },
+    {
+     "id": "d",
+     "text": "O favor real torna a Lei desnecessária"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+   "feedbackCorrect": "Deus move o rei por fora e anima Esdras por dentro.",
+   "feedbackWrong": {
+    "b": "Esdras bendiz a Deus justamente por agir no rei.",
+    "c": "A primeira reação de Esdras é bendizer ao Senhor.",
+    "d": "O favor do rei serve à casa e à Lei, e não as substitui."
+   },
+   "hint": "Veja a quem Esdras atribui rei favorável e ânimo.",
+   "learningObjective": "Escolher a interpretação sustentada sobre Deus e a restauração.",
+   "evidence": [
+    "Esdras 7:27–28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio da Lei do coração ao povo reunido?",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "A Palavra habita primeiro no coração"
+    },
+    {
+     "id": "b",
+     "text": "O mestre vive e transmite a Lei"
+    },
+    {
+     "id": "c",
+     "text": "A comunidade ouve reunida e atenta"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "para ensinar em Israel seus estatutos e juízos",
+   "feedbackCorrect": "Do coração ao ensino e ao povo ouvindo, a Lei refaz a comunidade.",
+   "feedbackWrong": {
+    "default": "Comece no coração; o povo ouvindo é o desfecho."
+   },
+   "hint": "Siga do interior de uma pessoa à comunidade.",
+   "learningObjective": "Ver Esdras no fio maior do ensino da Lei.",
+   "evidence": [
+    "Esdras 7:10",
+    "Deuteronômio 6:6–7",
+    "Neemias 8:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Esdras 7:10, qual é o fruto final de buscar e cumprir a Lei?",
+   "verseRef": "Esdras 7:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "ensinar"
+    },
+    {
+     "id": "b",
+     "text": "aposentar"
+    },
+    {
+     "id": "c",
+     "text": "partir"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "e para ensinar em Israel seus estatutos e juízos",
+   "feedbackCorrect": "O conhecimento vivido transborda em ensino para Israel.",
+   "feedbackWrong": {
+    "b": "O coração restaurado não se aposenta; ele ensina.",
+    "c": "Partir já foi a viagem; agora o fruto é outro."
+   },
+   "hint": "É o último verbo da tríade de Esdras.",
+   "learningObjective": "Lembrar o ensino como fruto da restauração interior.",
+   "evidence": [
+    "Esdras 7:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Esdras 7:10 a Salmos 1:2?",
+   "verseRef": "Esdras 7:10",
+   "passageA": {
+    "ref": "Esdras 7:10"
+   },
+   "passageB": {
+    "ref": "Salmos 1:2"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Prazer na Lei dia e noite"
+    },
+    {
+     "id": "b",
+     "text": "Lei lembrada só em festas"
+    },
+    {
+     "id": "c",
+     "text": "Conhecer sem meditar nunca"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para buscar a Lei do Senhor, para cumpri-la",
+   "feedbackCorrect": "O salmo chama de feliz quem medita na Lei; Esdras a busca de coração.",
+   "feedbackWrong": {
+    "b": "O salmo fala de meditação diária, e não ocasional.",
+    "c": "Buscar a Lei, em Esdras, é dedicação contínua do coração."
+   },
+   "hint": "Compare a dedicação diária descrita no salmo.",
+   "learningObjective": "Ligar a busca de Esdras ao prazer na Lei do Salmos 1.",
+   "evidence": [
+    "Esdras 7:10",
+    "Salmos 1:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Esdras 7:28, toque a reação de Esdras ao favor de Deus diante do rei.",
+   "verseRef": "Esdras 7:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "alguns chefes"
+    },
+    {
+     "id": "b",
+     "text": "me animei"
+    },
+    {
+     "id": "c",
+     "text": "subirem comigo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "assim me animei, segundo a boa mão do SENHOR meu Deus sobre mim",
+   "feedbackCorrect": "O favor de Deus não gera orgulho; gera ânimo para reunir e subir.",
+   "feedbackWrong": {
+    "a": "Os chefes são reunidos depois do ânimo de Esdras.",
+    "c": "Subir é o destino do grupo, não a reação interior."
+   },
+   "hint": "Procure o verbo na primeira pessoa após o favor.",
+   "learningObjective": "Sustentar com o texto a resposta interior de Esdras.",
+   "evidence": [
+    "Esdras 7:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela como Deus restaura em Esdras 7:27–28?",
+   "verseRef": "Esdras 7:27–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus move o coração do rei persa"
+    },
+    {
+     "id": "b",
+     "text": "A casa do Senhor recebe favor e beleza"
+    },
+    {
+     "id": "c",
+     "text": "Chefes são reunidos para subir juntos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "que assim moveu o coração do rei para embelezar a Casa do SENHOR",
+   "feedbackCorrect": "Rei movido, casa favorecida e povo reunido mostram Deus restaurando.",
+   "feedbackWrong": {
+    "default": "Comece pelo coração do rei; a reunião do povo fecha."
+   },
+   "hint": "Siga do rei à casa e depois ao povo.",
+   "learningObjective": "Ver a restauração como ação completa de Deus.",
+   "evidence": [
+    "Esdras 7:27–28"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,497 @@
+{
+ "study": {
+  "passageRef": "Lamentações 5:19–22",
+  "passages": [
+   { "ref": "Lamentações 5:16–22" }
+  ],
+  "context": "A coroa do povo caiu e Sião está assolado. No fim do livro, o povo olha para o trono do Senhor, que permanece, pergunta pelo abandono e pede restauração.",
+  "keyword": "Restauração",
+  "keywordGloss": "O povo pede que o Senhor o restaure e renove os seus dias como eram antigamente.",
+  "focusQuestion": "Diante do que caiu na sua vida, que pedido de restauração você precisa fazer a Deus?",
+  "reflectionPrompts": [
+   "A coroa caiu",
+   "O trono permanece",
+   "Restaura-nos, Senhor"
+  ],
+  "facts": [
+   {
+    "text": "A coroa caiu da cabeça do povo.",
+    "evidenceRef": "Lamentações 5:16",
+    "evidenceSpan": "Caiu a coroa da nossa cabeça"
+   },
+   {
+    "text": "O povo confessa que pecou.",
+    "evidenceRef": "Lamentações 5:16",
+    "evidenceSpan": "porque pecamos"
+   },
+   {
+    "text": "As raposas percorrem o monte Sião, que está assolado.",
+    "evidenceRef": "Lamentações 5:18",
+    "evidenceSpan": "as raposas percorrem suas áreas"
+   },
+   {
+    "text": "O trono do Senhor permanece de geração em geração.",
+    "evidenceRef": "Lamentações 5:19",
+    "evidenceSpan": "o teu trono permanece de geração em geração"
+   },
+   {
+    "text": "O povo pede que Deus renove os seus dias como eram antigamente.",
+    "evidenceRef": "Lamentações 5:21",
+    "evidenceSpan": "renova nossos dias como eram antigamente"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "coroa",
+    "gloss": "Sinal da honra e do governo do povo, agora caído por causa do pecado."
+   },
+   {
+    "term": "trono",
+    "gloss": "O governo do Senhor, que permanece de geração em geração quando tudo cai."
+   },
+   {
+    "term": "coração",
+    "gloss": "O coração do povo desfaleceu e os seus olhos se escureceram no luto."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A coroa caiu por causa do pecado",
+    "evidenceRef": "Lamentações 5:16"
+   },
+   {
+    "label": "Olhos escurecidos sobre Sião assolado",
+    "evidenceRef": "Lamentações 5:18"
+   },
+   {
+    "label": "O trono do Senhor permanece",
+    "evidenceRef": "Lamentações 5:19"
+   },
+   {
+    "label": "Pedido de restauração e renovação",
+    "evidenceRef": "Lamentações 5:21"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Por causa da queda, o coração do povo desfaleceu e os olhos se escureceram.",
+    "marker": "Por isso",
+    "evidenceRef": "Lamentações 5:17"
+   },
+   {
+    "kind": "contraste",
+    "text": "A coroa do povo caiu, mas o trono do Senhor permanece para sempre.",
+    "marker": null,
+    "evidenceRef": "Lamentações 5:19"
+   },
+   {
+    "kind": "resultado",
+    "text": "Se o Senhor restaurar o povo, ele será restaurado de verdade.",
+    "marker": "seremos",
+    "evidenceRef": "Lamentações 5:21"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 85:4",
+    "bridge": "Restaura-nos, Deus da salvação"
+   },
+   {
+    "ref": "Salmos 80:3",
+    "bridge": "Restaura-nos e seremos salvos"
+   },
+   {
+    "ref": "Jeremias 31:18",
+    "bridge": "Converte-me e serei convertido"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O livro termina com a restauração já acontecendo diante do povo.",
+    "why": "O fim é um pedido e perguntas sem resposta narrada: o povo ainda espera ser restaurado."
+   },
+   {
+    "text": "O trono que permanece é o do rei de Judá, que logo voltará.",
+    "why": "A coroa do povo caiu; o trono que permanece de geração em geração é o do Senhor."
+   },
+   {
+    "text": "Pedir restauração exige esconder o pecado que causou a queda.",
+    "why": "O povo pede confessando: caiu a coroa, porque pecamos."
+   }
+  ],
+  "centralInsight": "No luto ainda se pede restauração",
+  "anchorQuestion": "Segundo Lamentações 5:19, o que permanece de geração em geração?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lamentações 5:19, o trono do Senhor permanece de geração em geração.",
+   "verseRef": "Lamentações 5:19",
+   "correctOptionId": "true",
+   "evidenceSpan": "o teu trono permanece de geração em geração",
+   "feedbackCorrect": "A coroa do povo caiu, mas o trono do Senhor permanece para sempre.",
+   "feedbackWrong": {
+    "false": "Releia 5:19: o trono dele permanece de geração em geração."
+   },
+   "hint": "Veja o que não cai no versículo.",
+   "learningObjective": "Observar a permanência do trono do Senhor.",
+   "evidence": ["Lamentações 5:19"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lamentações 5:16, toque o que caiu da cabeça do povo.",
+   "verseRef": "Lamentações 5:16",
+   "options": [
+    { "id": "a", "text": "coroa" },
+    { "id": "b", "text": "cabeça" },
+    { "id": "c", "text": "pecamos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Caiu a coroa da nossa cabeça",
+   "feedbackCorrect": "Caiu a coroa: a honra do povo caiu, e ele confessa que pecou.",
+   "feedbackWrong": {
+    "b": "A cabeça é de onde caiu; o que caiu vem antes dela.",
+    "c": "Pecamos é a confissão; o que caiu da cabeça é outra palavra."
+   },
+   "hint": "Veja o que caiu no começo.",
+   "learningObjective": "Identificar a queda da coroa do povo.",
+   "evidence": ["Lamentações 5:16"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lamentações 5:18, quem percorre o monte Sião assolado?",
+   "verseRef": "Lamentações 5:18",
+   "options": [
+    { "id": "a", "text": "Sacerdotes em festa" },
+    { "id": "b", "text": "Raposas" },
+    { "id": "c", "text": "Viajantes em romaria" },
+    { "id": "d", "text": "Guardas da cidade" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "as raposas percorrem suas áreas",
+   "feedbackCorrect": "Sião está tão vazio que raposas percorrem o monte assolado.",
+   "feedbackWrong": {
+    "a": "Não há festa em Sião; o monte está assolado e vazio.",
+    "c": "Ninguém sobe em romaria; quem anda por lá são raposas.",
+    "d": "Não há guardas citados; o monte foi deixado às raposas."
+   },
+   "hint": "Leia quem anda pelo monte vazio.",
+   "learningObjective": "Observar o abandono do monte Sião.",
+   "evidence": ["Lamentações 5:18"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lamentações 5:21 na ordem do texto.",
+   "verseRef": "Lamentações 5:21",
+   "options": [
+    { "id": "a", "text": "Restaura-nos, Senhor" },
+    { "id": "b", "text": "e seremos restaurados" },
+    { "id": "c", "text": "renova nossos dias como eram antigamente" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "Pedido, certeza de restauração e desejo de dias renovados.",
+   "feedbackWrong": {
+    "default": "Comece pelo pedido ao Senhor; os dias antigos fecham."
+   },
+   "hint": "O versículo começa pelo pedido.",
+   "learningObjective": "Reconhecer a sequência de Lamentações 5:21.",
+   "evidence": ["Lamentações 5:21"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lamentações 5:19, como o Senhor reina, segundo o poeta?",
+   "verseRef": "Lamentações 5:19",
+   "options": [
+    { "id": "a", "text": "eternamente" },
+    { "id": "b", "text": "fielmente" },
+    { "id": "c", "text": "totalmente" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tu, Senhor, reinas eternamente",
+   "feedbackCorrect": "O Senhor reina eternamente: seu trono não depende da coroa caída.",
+   "feedbackWrong": {
+    "b": "A palavra do texto fala da duração sem fim do seu reinado.",
+    "c": "Totalmente não é a palavra usada para o reinado eterno."
+   },
+   "hint": "Veja a duração do reinado.",
+   "learningObjective": "Lembrar a eternidade do reinado do Senhor.",
+   "evidence": ["Lamentações 5:19"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lamentações 5:19 comunica que se liga a este contexto?",
+   "verseRef": "Lamentações 5:19",
+   "passageA": { "ref": "Lamentações 5:19" },
+   "passageB": { "ref": "Contexto", "text": "A coroa do povo caiu, mas o trono de Deus não cai." },
+   "options": [
+    { "id": "a", "text": "O trono de Deus permanece" },
+    { "id": "b", "text": "A coroa do povo permanece" },
+    { "id": "c", "text": "Todo trono caiu para sempre" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o teu trono permanece",
+   "feedbackCorrect": "Tudo caiu ao redor, mas o trono do Senhor permanece para sempre.",
+   "feedbackWrong": {
+    "b": "A coroa do povo caiu, como o próprio povo confessa.",
+    "c": "Um trono não caiu: o do Senhor, de geração em geração."
+   },
+   "hint": "Veja o que permanece no versículo.",
+   "learningObjective": "Ligar a permanência do trono à esperança no luto.",
+   "evidence": ["Lamentações 5:19"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lamentações 5:20, o poeta afirma que Deus já restaurou o povo por completo.",
+   "verseRef": "Lamentações 5:20",
+   "correctOptionId": "false",
+   "evidenceSpan": "Por que te esquecerias de nós para sempre",
+   "feedbackCorrect": "O poeta ainda pergunta e pede: a restauração ainda não aconteceu.",
+   "feedbackWrong": {
+    "true": "Ele pergunta por que seria esquecido; a restauração é pedido, não fato."
+   },
+   "hint": "Veja se 5:20 afirma ou pergunta.",
+   "learningObjective": "Compreender que a restauração ainda é pedido.",
+   "evidence": ["Lamentações 5:20"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lamentações 5:17, toque a palavra que liga a queda ao coração desfalecido.",
+   "verseRef": "Lamentações 5:17",
+   "options": [
+    { "id": "a", "text": "Por isso" },
+    { "id": "b", "text": "coração" },
+    { "id": "c", "text": "olhos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por isso, o nosso coração desfaleceu",
+   "feedbackCorrect": "Por causa da queda, o coração desfalece e os olhos se escurecem.",
+   "feedbackWrong": {
+    "b": "O coração é o que desfalece; a ligação de causa vem antes.",
+    "c": "Os olhos também sofrem; a palavra de causa abre o versículo."
+   },
+   "hint": "Procure a ligação de causa.",
+   "learningObjective": "Reconhecer o marcador de causa em 5:17.",
+   "evidence": ["Lamentações 5:17"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Lamentações 5:20 se liga a Lamentações 5:19?",
+   "verseRef": "Lamentações 5:19–20",
+   "options": [
+    { "id": "a", "text": "Quem crê no trono eterno ainda pode perguntar e pedir" },
+    { "id": "b", "text": "O trono eterno dispensa qualquer pergunta" },
+    { "id": "c", "text": "A pergunta prova que o trono caiu" },
+    { "id": "d", "text": "Deus permanece, então o luto deve calar" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o teu trono permanece de geração em geração",
+   "feedbackCorrect": "Porque o trono permanece, o povo pode perguntar e pedir sem desistir.",
+   "feedbackWrong": {
+    "b": "O povo pergunta justamente a quem permanece no trono.",
+    "c": "A pergunta não derruba o trono; ela se apoia nele.",
+    "d": "O luto fala: pergunta, pede e confessa diante de Deus."
+   },
+   "hint": "Pense a quem a pergunta é feita.",
+   "learningObjective": "Relacionar o trono eterno com a pergunta do povo.",
+   "evidence": ["Lamentações 5:19–20"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Lamentações 5:16–17?",
+   "verseRef": "Lamentações 5:16–17",
+   "options": [
+    { "id": "a", "text": "A coroa do povo caiu" },
+    { "id": "b", "text": "O povo confessa o seu pecado" },
+    { "id": "c", "text": "O coração desfalece e os olhos escurecem" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Caiu a coroa da nossa cabeça",
+   "feedbackCorrect": "Coroa caída, pecado confessado e coração desfalecido.",
+   "feedbackWrong": {
+    "default": "Comece pela coroa caída; o coração desfalecido vem depois."
+   },
+   "hint": "A confissão vem junto da queda.",
+   "learningObjective": "Compreender o avanço da queda à confissão.",
+   "evidence": ["Lamentações 5:16–17"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lamentações 5:21, como o poeta quer os dias renovados?",
+   "verseRef": "Lamentações 5:21",
+   "options": [
+    { "id": "a", "text": "antigamente" },
+    { "id": "b", "text": "novamente" },
+    { "id": "c", "text": "finalmente" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "renova nossos dias como eram antigamente",
+   "feedbackCorrect": "O pedido é por dias como eram antigamente: vida renovada por Deus.",
+   "feedbackWrong": {
+    "b": "Novamente é próximo, mas o texto olha para como os dias eram antes.",
+    "c": "O poeta não marca um fim; pede dias como os de antigamente."
+   },
+   "hint": "Veja a comparação do pedido.",
+   "learningObjective": "Compreender o desejo por dias renovados.",
+   "evidence": ["Lamentações 5:21"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lamentações 5:21 a Salmos 85:4?",
+   "verseRef": "Lamentações 5:21",
+   "passageA": { "ref": "Lamentações 5:21" },
+   "passageB": { "ref": "Salmos 85:4" },
+   "options": [
+    { "id": "a", "text": "Restaura-nos, Deus da salvação" },
+    { "id": "b", "text": "Deus já encerrou sua ira" },
+    { "id": "c", "text": "O povo restaura a si mesmo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "Nos dois textos, o povo pede ao próprio Deus que o restaure.",
+   "feedbackWrong": {
+    "b": "O salmo ainda pede que Deus afaste a sua ira; não encerrou.",
+    "c": "Quem restaura é Deus; o povo pede, não se restaura sozinho."
+   },
+   "hint": "Compare o pedido dos dois textos.",
+   "learningObjective": "Relacionar o pedido de restauração em Lamentações e nos Salmos.",
+   "evidence": ["Lamentações 5:21", "Salmos 85:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Lamentações 5:21–22, o povo pede restauração mesmo temendo ser rejeitado por completo.",
+   "verseRef": "Lamentações 5:21–22",
+   "correctOptionId": "true",
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "O livro termina pedindo restauração, mesmo com o temor da rejeição.",
+   "feedbackWrong": {
+    "false": "Ele pede restauração e, logo depois, pergunta sobre a rejeição total."
+   },
+   "hint": "Leia o pedido e a pergunta final juntos.",
+   "learningObjective": "Interpretar o pedido feito mesmo sob temor.",
+   "evidence": ["Lamentações 5:21–22"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lamentações 5:22, toque a palavra que mostra o temor de uma rejeição total.",
+   "verseRef": "Lamentações 5:22",
+   "options": [
+    { "id": "a", "text": "totalmente" },
+    { "id": "b", "text": "rejeitarias" },
+    { "id": "c", "text": "indignarias" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nos rejeitarias totalmente",
+   "feedbackCorrect": "O temor é de uma rejeição total; mesmo assim, o povo continua pedindo.",
+   "feedbackWrong": {
+    "b": "Rejeitar é o ato temido; o alcance total vem na palavra seguinte.",
+    "c": "Indignar aparece na segunda pergunta; o total vem na primeira."
+   },
+   "hint": "Procure o alcance da rejeição.",
+   "learningObjective": "Sustentar com o texto o temor da rejeição total.",
+   "evidence": ["Lamentações 5:22"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lamentações 5:21 sustenta sobre o fim do luto?",
+   "verseRef": "Lamentações 5:21",
+   "options": [
+    { "id": "a", "text": "A restauração já aconteceu sem pedido" },
+    { "id": "b", "text": "O povo pede a Deus o que só Deus pode fazer" },
+    { "id": "c", "text": "Renovar os dias depende só do povo" },
+    { "id": "d", "text": "O passado bom não deve ser lembrado" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "Restaurar e renovar é obra pedida a Deus: só ele pode fazê-lo.",
+   "feedbackWrong": {
+    "a": "A restauração é pedida; o livro não narra ela acontecendo.",
+    "c": "O povo pede porque não pode renovar os próprios dias sozinho.",
+    "d": "O pedido lembra os dias antigos como referência do que Deus pode renovar."
+   },
+   "hint": "Veja a quem o pedido é dirigido.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre restauração.",
+   "evidence": ["Lamentações 5:21"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da restauração que começa em Lamentações 5:21?",
+   "verseRef": "Lamentações 5:21",
+   "options": [
+    { "id": "a", "text": "O povo pede que Deus o restaure" },
+    { "id": "b", "text": "O salmista pede o fim da ira" },
+    { "id": "c", "text": "Efraim pede para ser convertido" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "O pedido de Lamentações ecoa nos Salmos e no pedido de Efraim em Jeremias.",
+   "feedbackWrong": {
+    "default": "Siga a Bíblia: Lamentações, Salmos e Jeremias."
+   },
+   "hint": "Siga a ordem dos livros citados.",
+   "learningObjective": "Ver o pedido de restauração como fio que atravessa a Bíblia.",
+   "evidence": ["Lamentações 5:21", "Salmos 85:4", "Jeremias 31:18"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lamentações 5:16, o que o povo confessa sobre si mesmo?",
+   "verseRef": "Lamentações 5:16",
+   "options": [
+    { "id": "a", "text": "pecamos" },
+    { "id": "b", "text": "sofremos" },
+    { "id": "c", "text": "choramos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque pecamos",
+   "feedbackCorrect": "Ai de nós, porque pecamos: a confissão acompanha o pedido de restauração.",
+   "feedbackWrong": {
+    "b": "Sofrer é verdade no livro, mas a confissão nomeia o pecado.",
+    "c": "Chorar aparece em todo o livro; aqui o povo confessa o pecado."
+   },
+   "hint": "Veja a causa confessada da queda.",
+   "learningObjective": "Lembrar a confissão que acompanha o luto.",
+   "evidence": ["Lamentações 5:16"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lamentações 5:21 a Jeremias 31:18?",
+   "verseRef": "Lamentações 5:21",
+   "passageA": { "ref": "Lamentações 5:21" },
+   "passageB": { "ref": "Jeremias 31:18" },
+   "options": [
+    { "id": "a", "text": "Só Deus converte o coração" },
+    { "id": "b", "text": "O povo se converte sozinho" },
+    { "id": "c", "text": "Converter dispensa pedir a Deus" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Restaura-nos, Senhor",
+   "feedbackCorrect": "Nos dois textos, voltar para Deus é obra que se pede ao próprio Deus.",
+   "feedbackWrong": {
+    "b": "Efraim pede para ser convertido; não se converte sozinho.",
+    "c": "O pedido é justamente o caminho: converte-me, diz Efraim."
+   },
+   "hint": "Veja quem deve fazer a conversão.",
+   "learningObjective": "Ligar a restauração pedida à conversão feita por Deus.",
+   "evidence": ["Lamentações 5:21", "Jeremias 31:18"]
+  }
+ ]
+}

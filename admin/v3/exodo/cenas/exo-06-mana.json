@@ -1,0 +1,913 @@
+{
+  "study": {
+    "slug": "exo-06-mana",
+    "passageRef": "Êxodo 16:2–7",
+    "passageText": "E toda a congregação dos filhos de Israel se queixou contra Moisés e Arão no deserto. E os filhos de Israel disseram: Quem nos dera que tivéssemos morrido pela mão do Senhor, na terra do Egito, quando estávamos sentados junto às panelas de carne e comíamos pão a fartar! Por que nos trouxeram a este deserto, para matar de fome toda esta multidão? Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não. E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o dobro do que colhem nos outros dias. Então, Moisés e Arão disseram a todos os filhos de Israel: à tarde, vocês saberão que foi o Senhor quem vos tirou da terra do Egito. E pela manhã vereis a glória do Senhor, pois Ele ouviu as vossas murmurações; afinal, quem somos nós para que murmureis contra nós?",
+    "passages": [
+      {
+        "ref": "Êxodo 16:1–7",
+        "text": "E, partindo de Elim, toda a congregação dos filhos de Israel chegou ao deserto de Sim, que se localiza entre Elim e Sinai, no décimo quinto dia do segundo mês, após terem saído da terra do Egito. E toda a congregação dos filhos de Israel se queixou contra Moisés e Arão no deserto. E os filhos de Israel disseram: Quem nos dera que tivéssemos morrido pela mão do Senhor, na terra do Egito, quando estávamos sentados junto às panelas de carne e comíamos pão a fartar! Por que nos trouxeram a este deserto, para matar de fome toda esta multidão? Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não. E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o dobro do que colhem nos outros dias. Então, Moisés e Arão disseram a todos os filhos de Israel: à tarde, vocês saberão que foi o Senhor quem vos tirou da terra do Egito. E pela manhã vereis a glória do Senhor, pois Ele ouviu as vossas murmurações; afinal, quem somos nós para que murmureis contra nós?"
+      }
+    ],
+    "context": "Um mês e meio depois da saída do Egito, Israel chega ao deserto de Sim com fome. O povo se queixa, e Deus anuncia pão vindo do céu a cada dia.",
+    "keyword": "Maná",
+    "keywordGloss": "Pão que Deus faz chover do céu, colhido pelo povo a cada manhã.",
+    "focusQuestion": "Em que área você precisa confiar na provisão de um dia de cada vez?",
+    "reflectionPrompts": [
+      "Pão de cada dia",
+      "Queixa no deserto",
+      "Confiar um dia por vez"
+    ],
+    "facts": [
+      {
+        "text": "Toda a congregação se queixou contra Moisés e Arão no deserto.",
+        "evidenceRef": "Êxodo 16:2",
+        "evidenceSpan": "toda a congregação dos filhos de Israel se queixou contra Moisés e Arão"
+      },
+      {
+        "text": "O povo diz que no Egito comia pão a fartar junto às panelas de carne.",
+        "evidenceRef": "Êxodo 16:3",
+        "evidenceSpan": "quando estávamos sentados junto às panelas de carne e comíamos pão a fartar"
+      },
+      {
+        "text": "Deus fará chover pão do céu para o povo colher a cada dia.",
+        "evidenceRef": "Êxodo 16:4",
+        "evidenceSpan": "Eis que vos farei chover do céu pão"
+      },
+      {
+        "text": "No sexto dia, o povo preparará o dobro do que colhe nos outros dias.",
+        "evidenceRef": "Êxodo 16:5",
+        "evidenceSpan": "será o dobro do que colhem nos outros dias"
+      },
+      {
+        "text": "Pela manhã, o povo veria a glória do Senhor, que ouviu suas murmurações.",
+        "evidenceRef": "Êxodo 16:7",
+        "evidenceSpan": "pela manhã vereis a glória do Senhor, pois Ele ouviu as vossas murmurações"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pão",
+        "gloss": "Alimento que Deus faz chover do céu para sustentar o povo."
+      },
+      {
+        "term": "diariamente",
+        "gloss": "Ritmo da colheita que ensina o povo a confiar um dia por vez."
+      },
+      {
+        "term": "murmurações",
+        "gloss": "Queixas do povo que Deus ouve mesmo antes de responder com pão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Povo chega ao deserto e se queixa de fome",
+        "evidenceRef": "Êxodo 16:1–3"
+      },
+      {
+        "label": "Deus anuncia pão do céu a cada dia",
+        "evidenceRef": "Êxodo 16:4"
+      },
+      {
+        "label": "Sexto dia com porção dobrada preparada",
+        "evidenceRef": "Êxodo 16:5"
+      },
+      {
+        "label": "À tarde saberão quem os tirou do Egito",
+        "evidenceRef": "Êxodo 16:6–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Deus dá pão diário para colocar o povo à prova, se anda segundo sua lei ou não.",
+        "marker": "para",
+        "evidenceRef": "Êxodo 16:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Deus responde porque ouviu as murmurações do povo contra Moisés e Arão.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 16:7"
+      },
+      {
+        "kind": "sequência",
+        "text": "À tarde saberão quem os tirou do Egito, e pela manhã verão a glória do Senhor.",
+        "marker": "E",
+        "evidenceRef": "Êxodo 16:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 6:11",
+        "bridge": "Pão nosso de cada dia",
+        "text": "Dá-nos hoje o nosso pão de cada dia;"
+      },
+      {
+        "ref": "João 6:31",
+        "bridge": "Pão do céu no deserto",
+        "text": "Nossos pais comeram o maná no deserto, como está escrito: Deu-lhes a comer o pão do céu."
+      },
+      {
+        "ref": "Deuteronômio 8:3",
+        "bridge": "Homem vive da palavra de Deus",
+        "text": "E te humilhou, e permitiu que tivesses fome, e te sustentou com o maná, que tu não conhecias, nem teus pais o conheceram, para te dar a entender que o homem não viverá somente de pão, mas de tudo o que procede da boca do Senhor viverá o homem."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A queixa do povo mostra que o Egito era melhor que a liberdade com Deus.",
+        "why": "A fome idealiza o passado; Deus responde com pão sem devolver o povo à servidão."
+      },
+      {
+        "text": "Deus sustenta o povo só uma vez, e depois cada um se vira sozinho.",
+        "why": "O pão vem diariamente, e no sexto dia a porção é dobrada por ordem de Deus."
+      },
+      {
+        "text": "A provisão diária é só comida, sem formar confiança no povo.",
+        "why": "Deus diz que a colheita diária coloca o povo à prova, se anda em sua lei."
+      }
+    ],
+    "centralInsight": "Deus sustenta no caminho",
+    "anchorQuestion": "Segundo Êxodo 16:4, o que o povo colheria a cada dia no deserto?",
+    "relatedVerses": [
+      {
+        "reference": "Mateus 6:11",
+        "reason": "Pão nosso de cada dia"
+      },
+      {
+        "reference": "João 6:31",
+        "reason": "Pão do céu no deserto"
+      },
+      {
+        "reference": "Deuteronômio 8:3",
+        "reason": "Homem vive da palavra de Deus"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "exodo-sem-exo-06-mana-01",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Êxodo 16:4, Deus diz a Moisés que fará chover do céu pão para o povo colher a cada dia.",
+      "prompt": "Em Êxodo 16:4, Deus diz a Moisés que fará chover do céu pão para o povo colher a cada dia.",
+      "cue": "Em Êxodo 16:4, Deus diz a Moisés que fará chover do céu pão para o povo colher a cada dia.",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Eis que vos farei chover do céu pão",
+      "feedbackCorrect": "Deus responde à fome com pão vindo do céu, colhido diariamente.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 16:4 e veja o que Deus anuncia que cairá do céu."
+      },
+      "hint": "Olhe o alimento anunciado por Deus.",
+      "learningObjective": "Observar a provisão diária anunciada por Deus.",
+      "evidence": [
+        "Êxodo 16:4"
+      ]
+    },
+    {
+      "id": "exodo-sem-exo-06-mana-02",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Êxodo 16:4, toque o alimento que Deus fará chover do céu.",
+      "prompt": "Em Êxodo 16:4, toque o alimento que Deus fará chover do céu.",
+      "cue": "Em Êxodo 16:4, toque o alimento que Deus fará chover do céu.",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "pão"
+        },
+        {
+          "id": "b",
+          "text": "céu"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Eis que vos farei chover do céu pão",
+      "feedbackCorrect": "Pão do céu é o sustento que o povo colherá a cada manhã.",
+      "feedbackWrong": {
+        "b": "Isso é de onde vem o sustento, não o alimento colhido.",
+        "c": "Isso é quem sai para colher, não o que cai do céu."
+      },
+      "hint": "Procure o que será colhido pelo povo.",
+      "learningObjective": "Identificar o alimento dado por Deus no deserto.",
+      "evidence": [
+        "Êxodo 16:4"
+      ]
+    },
+    {
+      "id": "exodo-sem-exo-06-mana-03",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Êxodo 16:2, o que toda a congregação fez contra Moisés e Arão no deserto?",
+      "prompt": "Segundo Êxodo 16:2, o que toda a congregação fez contra Moisés e Arão no deserto?",
+      "cue": "Segundo Êxodo 16:2, o que toda a congregação fez contra Moisés e Arão no deserto?",
+      "verseRef": "Êxodo 16:2",
+      "passageText": "E toda a congregação dos filhos de Israel se queixou contra Moisés e Arão no deserto.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ofereceu sacrifícios junto ao monte"
+        },
+        {
+          "id": "b",
+          "text": "Voltou ao Egito durante a noite"
+        },
+        {
+          "id": "c",
+          "text": "Se queixou contra eles no deserto"
+        },
+        {
+          "id": "d",
+          "text": "Pediu água com calma e esperou"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "toda a congregação dos filhos de Israel se queixou contra Moisés e Arão",
+      "feedbackCorrect": "A fome vira queixa coletiva contra Moisés e Arão no deserto.",
+      "feedbackWrong": {
+        "a": "Nenhum sacrifício é citado nessa chegada ao deserto de Sim.",
+        "b": "O povo fala do Egito, mas não volta para lá durante a noite.",
+        "d": "O texto fala de queixa aberta, não de pedido calmo ao líder."
+      },
+      "hint": "Leia a atitude do povo ao chegar ao deserto.",
+      "learningObjective": "Observar a reação do povo diante da fome.",
+      "evidence": [
+        "Êxodo 16:2"
+      ]
+    },
+    {
+      "id": "exodo-sem-exo-06-mana-04",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Êxodo 16:4 na ordem do texto.",
+      "prompt": "Monte Êxodo 16:4 na ordem do texto.",
+      "cue": "Monte Êxodo 16:4 na ordem do texto.",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que vos farei chover do céu pão"
+        },
+        {
+          "id": "b",
+          "text": "o povo sairá e colherá diariamente a porção de cada dia"
+        },
+        {
+          "id": "c",
+          "text": "para que eu o coloque à prova"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Eis que vos farei chover do céu pão",
+      "feedbackCorrect": "Pão do céu, colheita diária e povo colocado à prova por Deus.",
+      "feedbackWrong": {
+        "default": "Comece pelo pão anunciado; a prova do povo fecha o versículo."
+      },
+      "hint": "O primeiro trecho traz o anúncio de Deus.",
+      "learningObjective": "Reconhecer a sequência do anúncio do maná.",
+      "evidence": [
+        "Êxodo 16:4"
+      ]
+    },
+    {
+      "id": "exodo-sem-exo-06-mana-05",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Êxodo 16:5, quanto o povo preparará no sexto dia em relação aos outros?",
+      "prompt": "Em Êxodo 16:5, quanto o povo preparará no sexto dia em relação aos outros?",
+      "cue": "Em Êxodo 16:5, quanto o povo preparará no sexto dia em relação aos outros?",
+      "verseRef": "Êxodo 16:5",
+      "passageText": "E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o dobro do que colhem nos outros dias.",
+      "template": "E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o ___ do que colhem nos outros dias.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mesmo"
+        },
+        {
+          "id": "b",
+          "text": "pouco"
+        },
+        {
+          "id": "c",
+          "text": "dobro"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "será o dobro do que colhem nos outros dias",
+      "feedbackCorrect": "No sexto dia, a porção preparada sustenta também o dia seguinte.",
+      "feedbackWrong": {
+        "a": "Nos outros dias é uma porção; no sexto, o texto muda a medida.",
+        "b": "A ordem é preparar mais, não menos, no sexto dia da semana."
+      },
+      "hint": "Compare o sexto dia com os outros dias.",
+      "learningObjective": "Lembrar a porção dobrada do sexto dia.",
+      "evidence": [
+        "Êxodo 16:5"
+      ]
+    },
+    {
+      "id": "exodo-sem-exo-06-mana-06",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Êxodo 16:4 comunica que se liga a este contexto?",
+      "prompt": "O que Êxodo 16:4 comunica que se liga a este contexto?",
+      "cue": "O que Êxodo 16:4 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 16:4–5",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não. E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o dobro do que colhem nos outros dias.",
+      "passageA": {
+        "ref": "Êxodo 16:4",
+        "text": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus sustenta o povo livre da fome, ensinando confiança dia a dia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo volta ao Egito"
+        },
+        {
+          "id": "b",
+          "text": "O deserto alimenta sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Deus sustenta a cada dia"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "colherá diariamente a porção de cada dia",
+      "feedbackCorrect": "Um dia por vez, o povo aprende que seu sustento vem de Deus.",
+      "feedbackWrong": {
+        "a": "Deus sustenta o povo no caminho, sem devolvê-lo à servidão.",
+        "b": "Quem faz chover o pão é Deus, não o deserto por si mesmo."
+      },
+      "hint": "Veja o ritmo da colheita anunciada por Deus.",
+      "learningObjective": "Ligar o maná ao sustento diário de Deus.",
+      "evidence": [
+        "Êxodo 16:4"
+      ]
+    },
+    {
+      "id": "exodo-cam-exo-06-mana-01",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Êxodo 16:3, o povo que se queixa afirma que no deserto encontraria comida mais farta que no Egito.",
+      "prompt": "Em Êxodo 16:3, o povo que se queixa afirma que no deserto encontraria comida mais farta que no Egito.",
+      "cue": "Em Êxodo 16:3, o povo que se queixa afirma que no deserto encontraria comida mais farta que no Egito.",
+      "verseRef": "Êxodo 16:3",
+      "passageText": "E os filhos de Israel disseram: Quem nos dera que tivéssemos morrido pela mão do Senhor, na terra do Egito, quando estávamos sentados junto às panelas de carne e comíamos pão a fartar! Por que nos trouxeram a este deserto, para matar de fome toda esta multidão?",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "quando estávamos sentados junto às panelas de carne e comíamos pão a fartar",
+      "feedbackCorrect": "Com fome, o povo idealiza o Egito e esquece que lá era escravo.",
+      "feedbackWrong": {
+        "true": "Releia Êxodo 16:3 e veja de onde o povo lembra comer a fartar."
+      },
+      "hint": "Veja onde o povo diz que comia a fartar.",
+      "learningObjective": "Compreender como a fome distorce a memória do povo.",
+      "evidence": [
+        "Êxodo 16:3"
+      ]
+    },
+    {
+      "id": "exodo-cam-exo-06-mana-02",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Êxodo 16:4, toque a palavrinha que mostra o alvo da colheita diária.",
+      "prompt": "Em Êxodo 16:4, toque a palavrinha que mostra o alvo da colheita diária.",
+      "cue": "Em Êxodo 16:4, toque a palavrinha que mostra o alvo da colheita diária.",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "para"
+        },
+        {
+          "id": "b",
+          "text": "céu"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "para que eu o coloque à prova",
+      "feedbackCorrect": "A colheita diária forma o povo, provando se anda na lei de Deus.",
+      "feedbackWrong": {
+        "b": "Isso indica a origem do pão, não o alvo da colheita diária.",
+        "c": "Isso marca o ritmo, não o alvo que Deus declara para o povo."
+      },
+      "hint": "Olhe o alvo declarado por Deus.",
+      "learningObjective": "Reconhecer o marcador de propósito no maná.",
+      "evidence": [
+        "Êxodo 16:4"
+      ]
+    },
+    {
+      "id": "exodo-cam-exo-06-mana-03",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Êxodo 16:6–7 responde às murmurações do povo no deserto?",
+      "prompt": "Como Êxodo 16:6–7 responde às murmurações do povo no deserto?",
+      "cue": "Como Êxodo 16:6–7 responde às murmurações do povo no deserto?",
+      "verseRef": "Êxodo 16:6–7",
+      "passageText": "Então, Moisés e Arão disseram a todos os filhos de Israel: à tarde, vocês saberão que foi o Senhor quem vos tirou da terra do Egito. E pela manhã vereis a glória do Senhor, pois Ele ouviu as vossas murmurações; afinal, quem somos nós para que murmureis contra nós?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo descobre que Moisés os enganou no caminho"
+        },
+        {
+          "id": "b",
+          "text": "Deus ouviu as queixas e mostrará sua glória"
+        },
+        {
+          "id": "c",
+          "text": "Deus devolve o povo ao Egito por sua queixa"
+        },
+        {
+          "id": "d",
+          "text": "Moisés e Arão provam ser maiores que Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "pois Ele ouviu as vossas murmurações",
+      "feedbackCorrect": "À tarde e pela manhã, o povo verá que Deus ouviu e agiu por ele.",
+      "feedbackWrong": {
+        "a": "O texto confirma que foi o Senhor quem tirou o povo do Egito.",
+        "c": "Deus sustenta no deserto, não devolve ninguém à servidão.",
+        "d": "Moisés pergunta quem eles são; a glória vista é do Senhor."
+      },
+      "hint": "Veja quem ouviu as queixas segundo o texto.",
+      "learningObjective": "Relacionar a murmuração com a resposta de Deus.",
+      "evidence": [
+        "Êxodo 16:6–7"
+      ]
+    },
+    {
+      "id": "exodo-cam-exo-06-mana-04",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a cena em Êxodo 16:2–4?",
+      "prompt": "Como avança a cena em Êxodo 16:2–4?",
+      "cue": "Como avança a cena em Êxodo 16:2–4?",
+      "verseRef": "Êxodo 16:3–4",
+      "passageText": "E os filhos de Israel disseram: Quem nos dera que tivéssemos morrido pela mão do Senhor, na terra do Egito, quando estávamos sentados junto às panelas de carne e comíamos pão a fartar! Por que nos trouxeram a este deserto, para matar de fome toda esta multidão? Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo lembra com saudade das panelas do Egito"
+        },
+        {
+          "id": "b",
+          "text": "Povo acusa Moisés de levá-lo a morrer de fome"
+        },
+        {
+          "id": "c",
+          "text": "Deus anuncia pão vindo do céu a cada dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Eis que vos farei chover do céu pão",
+      "feedbackCorrect": "Saudade distorcida, acusação e resposta de Deus com pão do céu.",
+      "feedbackWrong": {
+        "default": "Comece pela lembrança do Egito; o pão de Deus fecha."
+      },
+      "hint": "A resposta de Deus vem depois da queixa do povo.",
+      "learningObjective": "Compreender o movimento da queixa à provisão.",
+      "evidence": [
+        "Êxodo 16:3–4"
+      ]
+    },
+    {
+      "id": "exodo-cam-exo-06-mana-05",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Êxodo 16:6, em que parte do dia o povo saberá quem o tirou do Egito?",
+      "prompt": "Em Êxodo 16:6, em que parte do dia o povo saberá quem o tirou do Egito?",
+      "cue": "Em Êxodo 16:6, em que parte do dia o povo saberá quem o tirou do Egito?",
+      "verseRef": "Êxodo 16:6",
+      "passageText": "Então, Moisés e Arão disseram a todos os filhos de Israel: à tarde, vocês saberão que foi o Senhor quem vos tirou da terra do Egito.",
+      "template": "Então, Moisés e Arão disseram a todos os filhos de Israel: à ___, vocês saberão que foi o Senhor quem vos tirou da terra do Egito.",
+      "options": [
+        {
+          "id": "a",
+          "text": "noite"
+        },
+        {
+          "id": "b",
+          "text": "manhã"
+        },
+        {
+          "id": "c",
+          "text": "tarde"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "à tarde, vocês saberão que foi o Senhor quem vos tirou da terra do Egito",
+      "feedbackCorrect": "Antes da glória da manhã, o povo reconhece quem o libertou.",
+      "feedbackWrong": {
+        "a": "O texto divide a resposta entre dois momentos claros do dia.",
+        "b": "A manhã é ligada à glória vista pelo povo no versículo seguinte."
+      },
+      "hint": "Leia o primeiro momento citado por Moisés e Arão.",
+      "learningObjective": "Compreender os dois momentos da resposta de Deus.",
+      "evidence": [
+        "Êxodo 16:6"
+      ]
+    },
+    {
+      "id": "exodo-cam-exo-06-mana-06",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Êxodo 16:4 a Deuteronômio 8:3?",
+      "prompt": "O que liga Êxodo 16:4 a Deuteronômio 8:3?",
+      "cue": "O que liga Êxodo 16:4 a Deuteronômio 8:3?",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "passageA": {
+        "ref": "Êxodo 16:4",
+        "text": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não."
+      },
+      "passageB": {
+        "ref": "Deuteronômio 8:3",
+        "text": "E te humilhou, e permitiu que tivesses fome, e te sustentou com o maná, que tu não conhecias, nem teus pais o conheceram, para te dar a entender que o homem não viverá somente de pão, mas de tudo o que procede da boca do Senhor viverá o homem."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deserto prova força humana"
+        },
+        {
+          "id": "b",
+          "text": "Sustento vem da palavra divina"
+        },
+        {
+          "id": "c",
+          "text": "Só pão sustenta o ser humano"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "colherá diariamente a porção de cada dia",
+      "feedbackCorrect": "Moisés relê o maná como lição de viver de tudo que Deus diz.",
+      "feedbackWrong": {
+        "a": "A lição é depender de Deus, não provar força própria no deserto.",
+        "c": "Deuteronômio nega justamente que só de pão viva o homem."
+      },
+      "hint": "Veja a lição que Moisés tira do maná depois.",
+      "learningObjective": "Relacionar o maná com a dependência da palavra de Deus.",
+      "evidence": [
+        "Êxodo 16:4",
+        "Deuteronômio 8:3"
+      ]
+    },
+    {
+      "id": "exodo-pro-exo-06-mana-01",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Êxodo 16:4–5 mostra que a provisão de Deus forma confiança diária, com porção de cada dia e dobro no sexto dia.",
+      "prompt": "Êxodo 16:4–5 mostra que a provisão de Deus forma confiança diária, com porção de cada dia e dobro no sexto dia.",
+      "cue": "Êxodo 16:4–5 mostra que a provisão de Deus forma confiança diária, com porção de cada dia e dobro no sexto dia.",
+      "verseRef": "Êxodo 16:4–5",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não. E acontecerá que, no sexto dia, vocês prepararão o que colherem, e será o dobro do que colhem nos outros dias.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "colherá diariamente a porção de cada dia",
+      "feedbackCorrect": "Um dia por vez, e dobro no sexto, Deus ensina o povo a depender dele.",
+      "feedbackWrong": {
+        "false": "Releia o ritmo diário e a exceção do sexto dia em Êxodo 16:4–5."
+      },
+      "hint": "Veja o ritmo e a exceção anunciados por Deus.",
+      "learningObjective": "Interpretar o maná como formação de confiança diária.",
+      "evidence": [
+        "Êxodo 16:4–5"
+      ]
+    },
+    {
+      "id": "exodo-pro-exo-06-mana-02",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Êxodo 16:7, toque o que o povo verá pela manhã no deserto.",
+      "prompt": "Em Êxodo 16:7, toque o que o povo verá pela manhã no deserto.",
+      "cue": "Em Êxodo 16:7, toque o que o povo verá pela manhã no deserto.",
+      "verseRef": "Êxodo 16:7",
+      "passageText": "E pela manhã vereis a glória do Senhor, pois Ele ouviu as vossas murmurações; afinal, quem somos nós para que murmureis contra nós?",
+      "options": [
+        {
+          "id": "a",
+          "text": "murmurações"
+        },
+        {
+          "id": "b",
+          "text": "glória"
+        },
+        {
+          "id": "c",
+          "text": "manhã"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "pela manhã vereis a glória do Senhor",
+      "feedbackCorrect": "A resposta de Deus à queixa é mostrar sua presença gloriosa ao povo.",
+      "feedbackWrong": {
+        "a": "Isso é o que Deus ouviu do povo, não o que ele mostrará.",
+        "c": "Isso marca o momento do dia, não o que o povo verá de Deus."
+      },
+      "hint": "Procure o que Deus mostrará de si mesmo.",
+      "learningObjective": "Sustentar com o texto a presença de Deus na provisão.",
+      "evidence": [
+        "Êxodo 16:7"
+      ]
+    },
+    {
+      "id": "exodo-pro-exo-06-mana-03",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Êxodo 16:3–4 sustenta sobre a queixa do povo com fome?",
+      "prompt": "Que leitura Êxodo 16:3–4 sustenta sobre a queixa do povo com fome?",
+      "cue": "Que leitura Êxodo 16:3–4 sustenta sobre a queixa do povo com fome?",
+      "verseRef": "Êxodo 16:3–4",
+      "passageText": "E os filhos de Israel disseram: Quem nos dera que tivéssemos morrido pela mão do Senhor, na terra do Egito, quando estávamos sentados junto às panelas de carne e comíamos pão a fartar! Por que nos trouxeram a este deserto, para matar de fome toda esta multidão? Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus errou ao tirar o povo de onde comia a fartar"
+        },
+        {
+          "id": "b",
+          "text": "O Egito era de fato o melhor lugar para Israel viver"
+        },
+        {
+          "id": "c",
+          "text": "A fome faz o povo idealizar a servidão passada"
+        },
+        {
+          "id": "d",
+          "text": "Reclamar é o caminho que Deus aprova para ser ouvido"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "comíamos pão a fartar",
+      "feedbackCorrect": "Escravo, o povo comia; livre e com fome, ele embeleza o passado.",
+      "feedbackWrong": {
+        "a": "Deus responde com pão sem admitir erro na libertação do povo.",
+        "b": "A fartura lembrada era dentro da servidão que Deus desfez.",
+        "d": "Deus ouve apesar da queixa, não porque a aprove como caminho."
+      },
+      "hint": "Compare a lembrança do Egito com a condição real lá.",
+      "learningObjective": "Escolher a interpretação sustentada sobre a memória do povo.",
+      "evidence": [
+        "Êxodo 16:3–4"
+      ]
+    },
+    {
+      "id": "exodo-pro-exo-06-mana-04",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o fio do maná até o ensino de Jesus?",
+      "prompt": "Qual sequência revela o fio do maná até o ensino de Jesus?",
+      "cue": "Qual sequência revela o fio do maná até o ensino de Jesus?",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus dá pão do céu a cada dia no deserto"
+        },
+        {
+          "id": "b",
+          "text": "Jesus ensina a pedir o pão de cada dia"
+        },
+        {
+          "id": "c",
+          "text": "Jesus se apresenta como o pão do céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Eis que vos farei chover do céu pão",
+      "feedbackCorrect": "Maná diário, oração pelo pão de hoje e Jesus como pão do céu.",
+      "feedbackWrong": {
+        "default": "Siga do deserto à oração de Jesus, e dela a João 6."
+      },
+      "hint": "João 6 é o ponto de chegada dessa sequência.",
+      "learningObjective": "Ver o maná como fio que chega ao ensino de Jesus.",
+      "evidence": [
+        "Êxodo 16:4",
+        "Mateus 6:11",
+        "João 6:31"
+      ]
+    },
+    {
+      "id": "exodo-pro-exo-06-mana-05",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Êxodo 16:4, a colheita diária colocaria o povo em que experiência com Deus?",
+      "prompt": "Em Êxodo 16:4, a colheita diária colocaria o povo em que experiência com Deus?",
+      "cue": "Em Êxodo 16:4, a colheita diária colocaria o povo em que experiência com Deus?",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "template": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à ___, a fim de saber se anda segundo a minha lei ou não.",
+      "options": [
+        {
+          "id": "a",
+          "text": "prova"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "para que eu o coloque à prova",
+      "feedbackCorrect": "Cada manhã prova se o povo confia e anda segundo a lei de Deus.",
+      "feedbackWrong": {
+        "b": "Nenhum confronto é citado como alvo da colheita diária.",
+        "c": "O foco aqui é confiança testada, não celebração no deserto."
+      },
+      "hint": "Leia o alvo que Deus declara para a colheita.",
+      "learningObjective": "Lembrar o termo que mostra o propósito formativo do maná.",
+      "evidence": [
+        "Êxodo 16:4"
+      ]
+    },
+    {
+      "id": "exodo-pro-exo-06-mana-06",
+      "trail": "exodo",
+      "section": "exo-06-mana",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Êxodo 16:4 a João 6:31?",
+      "prompt": "O que liga Êxodo 16:4 a João 6:31?",
+      "cue": "O que liga Êxodo 16:4 a João 6:31?",
+      "verseRef": "Êxodo 16:4",
+      "passageText": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não.",
+      "passageA": {
+        "ref": "Êxodo 16:4",
+        "text": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não."
+      },
+      "passageB": {
+        "ref": "João 6:31",
+        "text": "Nossos pais comeram o maná no deserto, como está escrito: Deu-lhes a comer o pão do céu."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Maná continua caindo hoje igual"
+        },
+        {
+          "id": "b",
+          "text": "Moisés é o pão da vida"
+        },
+        {
+          "id": "c",
+          "text": "Jesus é o pão do céu"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Eis que vos farei chover do céu pão",
+      "feedbackCorrect": "A multidão cita o maná, e Jesus se apresenta como o pão verdadeiro.",
+      "feedbackWrong": {
+        "a": "João não promete maná caindo, e sim aponta para Jesus presente.",
+        "b": "Moisés anuncia o pão; quem se apresenta como pão é Jesus."
+      },
+      "hint": "Veja quem Jesus diz ser diante da multidão.",
+      "learningObjective": "Ligar o maná do deserto a Jesus em João.",
+      "evidence": [
+        "Êxodo 16:4",
+        "João 6:31"
+      ]
+    }
+  ]
+}

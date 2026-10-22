@@ -1,0 +1,902 @@
+{
+  "study": {
+    "slug": "sm-01-rei-no-monte",
+    "passageRef": "Mateus 5:1–2",
+    "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+    "passages": [
+      {
+        "ref": "Mateus 5:1–2",
+        "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:"
+      },
+      {
+        "ref": "Mateus 5:3–5",
+        "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra."
+      }
+    ],
+    "context": "Antes das bem-aventuranças, Mateus mostra Jesus no monte, sentado como mestre, e os discípulos se aproximando. O Sermão começa com proximidade: quem quer ouvir o Rei chega perto.",
+    "keyword": "Discipulado",
+    "keywordGloss": "Seguir Jesus de perto para ouvir, aprender e praticar o que ele ensina.",
+    "focusQuestion": "Você tem se aproximado de Jesus como discípulo ou só ouvido de longe?",
+    "reflectionPrompts": [
+      "Chegar perto de Jesus",
+      "Ouvir antes de agir",
+      "Aprender com o Mestre"
+    ],
+    "facts": [
+      {
+        "text": "Jesus sobe a um monte ao ver as multidões.",
+        "evidenceRef": "Mateus 5:1",
+        "evidenceSpan": "subiu a um monte"
+      },
+      {
+        "text": "Os discípulos se aproximam de Jesus assentado.",
+        "evidenceRef": "Mateus 5:1",
+        "evidenceSpan": "aproximaram-se dele os seus discípulos"
+      },
+      {
+        "text": "Jesus abre a boca e passa a ensinar os discípulos.",
+        "evidenceRef": "Mateus 5:2",
+        "evidenceSpan": "passou a ensiná-los"
+      },
+      {
+        "text": "Dos humildes de espírito é o reino dos céus.",
+        "evidenceRef": "Mateus 5:3",
+        "evidenceSpan": "deles é o reino dos céus"
+      },
+      {
+        "text": "Os mansos herdarão a terra.",
+        "evidenceRef": "Mateus 5:5",
+        "evidenceSpan": "herdarão a terra"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "discípulos",
+        "gloss": "Quem se aproxima de Jesus para aprender dele e seguir o seu caminho."
+      },
+      {
+        "term": "monte",
+        "gloss": "Lugar onde Jesus se assenta para ensinar com autoridade aos seus."
+      },
+      {
+        "term": "Bem-aventurados",
+        "gloss": "Felizes aos olhos de Deus, não apenas aos olhos das pessoas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus sobe e se assenta no monte",
+        "evidenceRef": "Mateus 5:1"
+      },
+      {
+        "label": "Os discípulos se aproximam dele",
+        "evidenceRef": "Mateus 5:1"
+      },
+      {
+        "label": "Jesus começa a ensiná-los",
+        "evidenceRef": "Mateus 5:2"
+      },
+      {
+        "label": "As primeiras bem-aventuranças",
+        "evidenceRef": "Mateus 5:3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Jesus se assenta e, então, os discípulos se aproximam para ouvir.",
+        "marker": "assentar",
+        "evidenceRef": "Mateus 5:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Aos humildes de espírito pertence o reino dos céus.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 5:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 19:3",
+        "bridge": "Deus fala no monte",
+        "text": "E Moisés subiu ao encontro de Deus, e o Senhor o chamou do monte, dizendo: Assim falarás à casa de Jacó e anunciarás aos filhos de Israel:"
+      },
+      {
+        "ref": "Mateus 4:17",
+        "bridge": "Jesus anuncia o Reino",
+        "text": "Desde então, Jesus passou a pregar e a dizer: Arrependam-se porque o reino dos céus está próximo."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus sobe ao monte para fugir das multidões.",
+        "why": "Ele se assenta para ensinar, e os discípulos se aproximam; não há fuga, há ensino."
+      },
+      {
+        "text": "O Sermão é só para a multidão curiosa, sem compromisso.",
+        "why": "Mateus destaca os discípulos se aproximando de Jesus antes do ensino."
+      },
+      {
+        "text": "Bem-aventurado é quem se sente forte e autossuficiente.",
+        "why": "A primeira palavra de Jesus abençoa os humildes de espírito (5:3)."
+      }
+    ],
+    "centralInsight": "O Reino começa com ouvir",
+    "anchorQuestion": "Quem se aproxima de Jesus quando ele se assenta no monte em Mateus 5:1?",
+    "relatedVerses": [
+      {
+        "reference": "Êxodo 19:3",
+        "reason": "Deus fala no monte"
+      },
+      {
+        "reference": "Mateus 4:17",
+        "reason": "Jesus anuncia o Reino"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "sermao-do-monte-sem-sm-01-rei-no-monte-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Mateus 5:1, os discípulos se aproximam de Jesus quando ele se assenta no monte",
+      "prompt": "Em Mateus 5:1, os discípulos se aproximam de Jesus quando ele se assenta no monte",
+      "cue": "Em Mateus 5:1, os discípulos se aproximam de Jesus quando ele se assenta no monte",
+      "verseRef": "Mateus 5:1",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "aproximaram-se dele os seus discípulos",
+      "feedbackCorrect": "Mateus mostra Jesus assentado e os discípulos chegando perto dele.",
+      "feedbackWrong": {
+        "false": "Releia Mateus 5:1 até o fim: os discípulos se aproximam dele."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Observar que os discípulos se aproximam de Jesus no monte.",
+      "evidence": [
+        "Mateus 5:1"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-01-rei-no-monte-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Mateus 5:1, toque quem se aproximou de Jesus no monte.",
+      "prompt": "Em Mateus 5:1, toque quem se aproximou de Jesus no monte.",
+      "cue": "Em Mateus 5:1, toque quem se aproximou de Jesus no monte.",
+      "verseRef": "Mateus 5:1",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "os seus discípulos"
+        },
+        {
+          "id": "b",
+          "text": "as multidões"
+        },
+        {
+          "id": "c",
+          "text": "um monte"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "aproximaram-se dele os seus discípulos",
+      "feedbackCorrect": "Quem chega perto de Jesus assentado são os seus seguidores mais próximos.",
+      "feedbackWrong": {
+        "b": "As multidões são vistas por Jesus; quem se aproxima é outro grupo.",
+        "c": "Isso é o lugar para onde Jesus sobe, não quem chega perto."
+      },
+      "hint": "Procure quem chega perto no fim da frase.",
+      "learningObjective": "Identificar quem se aproxima de Jesus para ouvir.",
+      "evidence": [
+        "Mateus 5:1"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-01-rei-no-monte-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Mateus 5:2, o que Jesus faz ao abrir a boca?",
+      "prompt": "Segundo Mateus 5:2, o que Jesus faz ao abrir a boca?",
+      "cue": "Segundo Mateus 5:2, o que Jesus faz ao abrir a boca?",
+      "verseRef": "Mateus 5:2",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passa a ensinar os discípulos"
+        },
+        {
+          "id": "b",
+          "text": "Pede silêncio e encerra o dia"
+        },
+        {
+          "id": "c",
+          "text": "Despede as multidões do monte"
+        },
+        {
+          "id": "d",
+          "text": "Desce para falar com os fariseus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "passou a ensiná-los",
+      "feedbackCorrect": "Jesus abre a boca para ensinar quem se aproximou dele.",
+      "feedbackWrong": {
+        "b": "Ele não encerra; ele começa a falar.",
+        "c": "Ninguém é despedido; o ensino está começando.",
+        "d": "Jesus está no monte com os discípulos, não descendo."
+      },
+      "hint": "Veja o verbo ligado ao abrir da boca.",
+      "learningObjective": "Observar que Jesus começa a ensinar os discípulos.",
+      "evidence": [
+        "Mateus 5:2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-01-rei-no-monte-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Mateus 5:1 na ordem do texto.",
+      "prompt": "Monte Mateus 5:1 na ordem do texto.",
+      "cue": "Monte Mateus 5:1 na ordem do texto.",
+      "verseRef": "Mateus 5:1",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "E, vendo Jesus as multidões"
+        },
+        {
+          "id": "b",
+          "text": "subiu a um monte"
+        },
+        {
+          "id": "c",
+          "text": "aproximaram-se dele os seus discípulos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "subiu a um monte",
+      "feedbackCorrect": "Jesus vê as multidões, sobe ao monte e os discípulos se aproximam.",
+      "feedbackWrong": {
+        "default": "Comece por Jesus vendo as multidões; a aproximação vem no fim."
+      },
+      "hint": "Siga os verbos do versículo.",
+      "learningObjective": "Reconhecer a sequência de Mateus 5:1.",
+      "evidence": [
+        "Mateus 5:1"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-01-rei-no-monte-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Mateus 5:2, o que Jesus passa a fazer com quem se aproximou?",
+      "prompt": "Em Mateus 5:2, o que Jesus passa a fazer com quem se aproximou?",
+      "cue": "Em Mateus 5:2, o que Jesus passa a fazer com quem se aproximou?",
+      "verseRef": "Mateus 5:2",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "template": "E, abrindo a boca, passou a ___, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "segui-los"
+        },
+        {
+          "id": "b",
+          "text": "ouvi-los"
+        },
+        {
+          "id": "c",
+          "text": "ensiná-los"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "passou a ensiná-los",
+      "feedbackCorrect": "Jesus não só reúne os discípulos: ele passa a formá-los com sua palavra.",
+      "feedbackWrong": {
+        "a": "Eles seguem Jesus; ele é o Mestre que fala.",
+        "b": "Quem ouve aqui são eles; Jesus é quem fala."
+      },
+      "hint": "Pense no papel de quem se assentou no monte.",
+      "learningObjective": "Lembrar a ação de Jesus ao iniciar o Sermão.",
+      "evidence": [
+        "Mateus 5:2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-01-rei-no-monte-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Mateus 5:1 comunica que se liga a este contexto?",
+      "prompt": "O que Mateus 5:1 comunica que se liga a este contexto?",
+      "cue": "O que Mateus 5:1 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 5:1–2",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "passageA": {
+        "ref": "Mateus 5:1",
+        "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus sobe ao monte e os discípulos se aproximam para ouvir o seu ensino."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Só sábios podem seguir"
+        },
+        {
+          "id": "b",
+          "text": "Jesus foge da multidão"
+        },
+        {
+          "id": "c",
+          "text": "O Reino começa com ouvir"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "aproximaram-se dele os seus discípulos",
+      "feedbackCorrect": "Antes de qualquer palavra do Sermão, os discípulos chegam perto para ouvir.",
+      "feedbackWrong": {
+        "a": "Quem se aproxima são seguidores comuns, não uma elite.",
+        "b": "Ele se assenta para ensinar, não para se esconder."
+      },
+      "hint": "Veja a atitude de quem chega perto.",
+      "learningObjective": "Ligar a cena à disposição de ouvir Jesus de perto.",
+      "evidence": [
+        "Mateus 5:1"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-01-rei-no-monte-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Mateus 5:1–2, Jesus ensina à multidão de longe e só depois chama os discípulos para perto",
+      "prompt": "Em Mateus 5:1–2, Jesus ensina à multidão de longe e só depois chama os discípulos para perto",
+      "cue": "Em Mateus 5:1–2, Jesus ensina à multidão de longe e só depois chama os discípulos para perto",
+      "verseRef": "Mateus 5:1–2",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "aproximaram-se dele os seus discípulos",
+      "feedbackCorrect": "A ordem é outra: os discípulos se aproximam primeiro, e Jesus os ensina.",
+      "feedbackWrong": {
+        "true": "Releia a sequência: a aproximação vem antes de Jesus abrir a boca."
+      },
+      "hint": "Compare o fim de 5:1 com o começo de 5:2.",
+      "learningObjective": "Compreender a ordem entre aproximação e ensino.",
+      "evidence": [
+        "Mateus 5:1–2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-01-rei-no-monte-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Mateus 5:1, toque o que Jesus faz antes de os discípulos se aproximarem.",
+      "prompt": "Em Mateus 5:1, toque o que Jesus faz antes de os discípulos se aproximarem.",
+      "cue": "Em Mateus 5:1, toque o que Jesus faz antes de os discípulos se aproximarem.",
+      "verseRef": "Mateus 5:1",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "multidões"
+        },
+        {
+          "id": "b",
+          "text": "subiu"
+        },
+        {
+          "id": "c",
+          "text": "assentar"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "ao se assentar",
+      "feedbackCorrect": "Sentado como mestre, Jesus recebe os discípulos que chegam perto.",
+      "feedbackWrong": {
+        "a": "Isso é quem Jesus vê, não o que ele faz ao sentar.",
+        "b": "Subir ao monte vem antes de ele se sentar."
+      },
+      "hint": "Procure a postura de mestre no meio do versículo.",
+      "learningObjective": "Reconhecer a postura de ensino de Jesus.",
+      "evidence": [
+        "Mateus 5:1"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-01-rei-no-monte-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Mateus 5:2 se liga a Mateus 5:1?",
+      "prompt": "Como Mateus 5:2 se liga a Mateus 5:1?",
+      "cue": "Como Mateus 5:2 se liga a Mateus 5:1?",
+      "verseRef": "Mateus 5:1–2",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com os discípulos perto, Jesus começa a ensinar"
+        },
+        {
+          "id": "b",
+          "text": "Os discípulos ensinam Jesus sobre o Reino"
+        },
+        {
+          "id": "c",
+          "text": "Jesus muda de lugar para fugir dos seguidores"
+        },
+        {
+          "id": "d",
+          "text": "A multidão interrompe e impede o ensino"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "passou a ensiná-los",
+      "feedbackCorrect": "A aproximação dos discípulos abre espaço para a palavra de Jesus.",
+      "feedbackWrong": {
+        "b": "Quem ensina é Jesus; eles se aproximam para ouvir.",
+        "c": "Ele permanece no monte; o ensino começa ali.",
+        "d": "Nada interrompe; Jesus abre a boca e ensina."
+      },
+      "hint": "Junte a última ação de 5:1 com a primeira de 5:2.",
+      "learningObjective": "Relacionar aproximação dos discípulos e início do ensino.",
+      "evidence": [
+        "Mateus 5:1–2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-01-rei-no-monte-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a abertura do Sermão em Mateus 5:1–2?",
+      "prompt": "Como avança a abertura do Sermão em Mateus 5:1–2?",
+      "cue": "Como avança a abertura do Sermão em Mateus 5:1–2?",
+      "verseRef": "Mateus 5:1–2",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus sobe e se assenta"
+        },
+        {
+          "id": "b",
+          "text": "Discípulos chegam perto dele"
+        },
+        {
+          "id": "c",
+          "text": "Jesus abre o seu ensino"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "passou a ensiná-los",
+      "feedbackCorrect": "Monte, aproximação e palavra: o Sermão nasce dessa sequência simples.",
+      "feedbackWrong": {
+        "default": "A palavra de Jesus vem depois que os discípulos chegam perto."
+      },
+      "hint": "O ensino é o último passo da cena.",
+      "learningObjective": "Compreender o movimento da abertura do Sermão.",
+      "evidence": [
+        "Mateus 5:1–2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-01-rei-no-monte-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Mateus 5:3, quem Jesus chama de bem-aventurados logo no início?",
+      "prompt": "Em Mateus 5:3, quem Jesus chama de bem-aventurados logo no início?",
+      "cue": "Em Mateus 5:3, quem Jesus chama de bem-aventurados logo no início?",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "template": "Bem-aventurados os ___ de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "fortes"
+        },
+        {
+          "id": "b",
+          "text": "humildes"
+        },
+        {
+          "id": "c",
+          "text": "ricos"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Bem-aventurados os humildes de espírito",
+      "feedbackCorrect": "O Sermão abre abençoando quem reconhece a própria pobreza diante de Deus.",
+      "feedbackWrong": {
+        "a": "A força própria não é o ponto de partida que Jesus abençoa.",
+        "c": "Riqueza não é a marca da primeira bem-aventurança."
+      },
+      "hint": "Leia a primeira palavra de Jesus no Sermão.",
+      "learningObjective": "Compreender quem abre as bem-aventuranças.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-01-rei-no-monte-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Mateus 5:1 a Êxodo 19:3?",
+      "prompt": "O que liga Mateus 5:1 a Êxodo 19:3?",
+      "cue": "O que liga Mateus 5:1 a Êxodo 19:3?",
+      "verseRef": "Mateus 5:1",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos.",
+      "passageA": {
+        "ref": "Mateus 5:1",
+        "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+      },
+      "passageB": {
+        "ref": "Êxodo 19:3",
+        "text": "E Moisés subiu ao encontro de Deus, e o Senhor o chamou do monte, dizendo: Assim falarás à casa de Jacó e anunciarás aos filhos de Israel:"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Monte maior que Deus"
+        },
+        {
+          "id": "b",
+          "text": "Fuga do povo de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Deus fala no monte"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "subiu a um monte",
+      "feedbackCorrect": "Como Moisés subiu ao monte, Jesus sobe e fala com autoridade de Deus.",
+      "feedbackWrong": {
+        "a": "O monte é lugar de encontro; Deus continua sendo o Senhor.",
+        "b": "Nos dois textos há encontro e palavra, não fuga."
+      },
+      "hint": "Compare o lugar onde a palavra é dada.",
+      "learningObjective": "Relacionar o monte de Jesus ao monte de Moisés.",
+      "evidence": [
+        "Mateus 5:1",
+        "Êxodo 19:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-01-rei-no-monte-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Mateus 5:1–2 mostra que o ensino do Reino forma primeiro quem se aproxima de Jesus para ouvir",
+      "prompt": "Mateus 5:1–2 mostra que o ensino do Reino forma primeiro quem se aproxima de Jesus para ouvir",
+      "cue": "Mateus 5:1–2 mostra que o ensino do Reino forma primeiro quem se aproxima de Jesus para ouvir",
+      "verseRef": "Mateus 5:1–2",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "aproximaram-se dele os seus discípulos",
+      "feedbackCorrect": "Mateus sublinha a aproximação: o Reino começa com discípulos perto do Rei.",
+      "feedbackWrong": {
+        "false": "Os discípulos se aproximam antes do ensino; isso é parte da cena."
+      },
+      "hint": "Repare em quem Mateus coloca no centro da cena.",
+      "learningObjective": "Interpretar a aproximação como marca do discipulado.",
+      "evidence": [
+        "Mateus 5:1–2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-01-rei-no-monte-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Mateus 5:2, toque o trecho que mostra Jesus tomando a palavra como Mestre.",
+      "prompt": "Em Mateus 5:2, toque o trecho que mostra Jesus tomando a palavra como Mestre.",
+      "cue": "Em Mateus 5:2, toque o trecho que mostra Jesus tomando a palavra como Mestre.",
+      "verseRef": "Mateus 5:2",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "dizendo"
+        },
+        {
+          "id": "b",
+          "text": "ensiná-los"
+        },
+        {
+          "id": "c",
+          "text": "abrindo a boca"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "abrindo a boca",
+      "feedbackCorrect": "A expressão solene marca o início de um ensino com peso e autoridade.",
+      "feedbackWrong": {
+        "a": "Essa palavra só introduz a fala; a solenidade vem antes.",
+        "b": "Isso diz o que ele faz com eles, não o gesto solene inicial."
+      },
+      "hint": "Procure o gesto que abre a fala de Jesus.",
+      "learningObjective": "Sustentar no texto a autoridade do ensino de Jesus.",
+      "evidence": [
+        "Mateus 5:2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-01-rei-no-monte-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Mateus 5:1–2 sustenta sobre o começo do Sermão?",
+      "prompt": "Que leitura Mateus 5:1–2 sustenta sobre o começo do Sermão?",
+      "cue": "Que leitura Mateus 5:1–2 sustenta sobre o começo do Sermão?",
+      "verseRef": "Mateus 5:1–2",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "O monte prova que o Reino é distante da vida"
+        },
+        {
+          "id": "b",
+          "text": "Multidões ouvem de longe e nada muda nelas"
+        },
+        {
+          "id": "c",
+          "text": "Jesus evita o povo para falar só a especialistas"
+        },
+        {
+          "id": "d",
+          "text": "O Reino começa com discípulos perto do Rei"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "aproximaram-se dele os seus discípulos",
+      "feedbackCorrect": "A cena põe discípulos perto de Jesus: é assim que o Reino começa a formar pessoas.",
+      "feedbackWrong": {
+        "a": "O monte é lugar de ensino, não de distância da vida real.",
+        "b": "Mateus destaca quem se aproxima, não quem fica indiferente.",
+        "c": "Ele ensina discípulos comuns, não uma classe de especialistas."
+      },
+      "hint": "Veja quem ganha destaque entre monte e multidão.",
+      "learningObjective": "Escolher a interpretação sustentada pela abertura do Sermão.",
+      "evidence": [
+        "Mateus 5:1–2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-01-rei-no-monte-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o fio do monte na Bíblia?",
+      "prompt": "Qual sequência revela o fio do monte na Bíblia?",
+      "cue": "Qual sequência revela o fio do monte na Bíblia?",
+      "verseRef": "Mateus 5:1",
+      "passageText": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés sobe ao monte de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Jesus ensina os discípulos no monte"
+        },
+        {
+          "id": "c",
+          "text": "Discípulos levam a palavra ao mundo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "subiu a um monte",
+      "feedbackCorrect": "A palavra dada no monte com Moisés ecoa em Jesus e segue pelos discípulos.",
+      "feedbackWrong": {
+        "default": "Siga a história: Moisés, depois Jesus, depois os discípulos."
+      },
+      "hint": "Pense na ordem dos personagens na história bíblica.",
+      "learningObjective": "Ver o monte de Jesus dentro do fio bíblico maior.",
+      "evidence": [
+        "Mateus 5:1",
+        "Êxodo 19:3",
+        "Mateus 28:19–20"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-01-rei-no-monte-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Mateus 5:5, o que Jesus promete aos mansos?",
+      "prompt": "Em Mateus 5:5, o que Jesus promete aos mansos?",
+      "cue": "Em Mateus 5:5, o que Jesus promete aos mansos?",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "template": "Bem-aventurados os mansos, porque ___ a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "comprarão"
+        },
+        {
+          "id": "b",
+          "text": "perderão"
+        },
+        {
+          "id": "c",
+          "text": "herdarão"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "A terra é herança prometida aos mansos, não prêmio de quem vence pela força.",
+      "feedbackWrong": {
+        "a": "Herança se recebe; o texto não fala de compra.",
+        "b": "A promessa aos mansos é receber, não perder a terra."
+      },
+      "hint": "Pense em presente recebido, não em conquista.",
+      "learningObjective": "Lembrar a promessa feita aos mansos.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-01-rei-no-monte-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-01-rei-no-monte",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Mateus 5:2 a Mateus 4:17?",
+      "prompt": "O que liga Mateus 5:2 a Mateus 4:17?",
+      "cue": "O que liga Mateus 5:2 a Mateus 4:17?",
+      "verseRef": "Mateus 5:2",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo:",
+      "passageA": {
+        "ref": "Mateus 5:2",
+        "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+      },
+      "passageB": {
+        "ref": "Mateus 4:17",
+        "text": "Desde então, Jesus passou a pregar e a dizer: Arrependam-se porque o reino dos céus está próximo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Só Moisés anuncia Deus"
+        },
+        {
+          "id": "b",
+          "text": "Jesus anuncia o Reino"
+        },
+        {
+          "id": "c",
+          "text": "O Reino ficou para depois"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "passou a ensiná-los",
+      "feedbackCorrect": "O mesmo Jesus que anuncia o Reino próximo agora ensina como nele se vive.",
+      "feedbackWrong": {
+        "a": "Jesus retoma e amplia a palavra dada antes dele.",
+        "c": "Em 4:17 o Reino já está próximo; em 5 ele é ensinado."
+      },
+      "hint": "Veja o tema que Jesus prega antes do Sermão.",
+      "learningObjective": "Ligar o Sermão ao anúncio do Reino em Mateus.",
+      "evidence": [
+        "Mateus 5:2",
+        "Mateus 4:17"
+      ]
+    }
+  ]
+}

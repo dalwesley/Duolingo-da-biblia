@@ -1,0 +1,80 @@
+Escreva a cena "reis-salomao-02-o-coracao-dividido" da trilha "reis" (1–2 Reis).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "reis",
+  "title": "1–2 Reis",
+  "description": "Salomão, divisão do reino, profetas e exílio.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Salomão",
+ "mission": {
+  "slug": "reis-salomao-02-o-coracao-dividido",
+  "title": "O coração dividido",
+  "type": "lesson",
+  "intro": "Mulheres estrangeiras e idolatria.",
+  "hookRef": "1 Reis 12:28–30",
+  "hookNote": "Mulheres estrangeiras e idolatria.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre coração?"
+ },
+ "v2": {
+  "passageRef": "1 Reis 12:28–30",
+  "context": "Mulheres estrangeiras e idolatria.",
+  "keyword": "Coração",
+  "verseRefs": [
+   "1 Reis 11:4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "1 Reis 12:25–33",
+  "1 Reis 11:4"
+ ],
+ "verses": [
+  {
+   "ref": "1 Reis 12:25",
+   "text": "Jeroboão edificou a cidade de Siquém, na região montanhosa de Efraim, e ali passou a residir. Depois, saiu e construiu a cidade de Penuel."
+  },
+  {
+   "ref": "1 Reis 12:26",
+   "text": "E Jeroboão disse a si mesmo: Agora, o reino retornará à casa de Davi."
+  },
+  {
+   "ref": "1 Reis 12:27",
+   "text": "Se este povo subir para oferecer sacrifícios na Casa do Senhor, em Jerusalém, o coração deles se voltará para Roboão, rei de Judá; e me matarão e retornarão a ele, ao rei de Judá."
+  },
+  {
+   "ref": "1 Reis 12:28",
+   "text": "Pelo que o rei, tendo tomado conselho, fez dois bezerros de ouro; e lhes disse: Já é difícil para vocês subirem a Jerusalém; aqui estão os seus deuses, ó Israel, que os tiraram da terra do Egito."
+  },
+  {
+   "ref": "1 Reis 12:29",
+   "text": "Colocou um em Betel e o outro em Dã."
+  },
+  {
+   "ref": "1 Reis 12:30",
+   "text": "E esse ato se tornou um pecado, pois o povo ia até Dã, cada um para adorar o bezerro."
+  },
+  {
+   "ref": "1 Reis 12:31",
+   "text": "Também fez santuários nos altos e, dentre o povo, constituiu sacerdotes que não eram dos filhos de Levi."
+  },
+  {
+   "ref": "1 Reis 12:32",
+   "text": "E Jeroboão celebrou uma festa no oitavo mês, no décimo quinto dia do mês, semelhante à festa que se fazia em Judá, e sacrificou no altar; da mesma forma, fez em Betel, oferecendo os bezerros que havia confeccionado; também em Betel, estabeleceu sacerdotes para os altos que havia erguido."
+  },
+  {
+   "ref": "1 Reis 12:33",
+   "text": "E sacrificou no altar que havia construído em Betel, no dia quinze do oitavo mês, conforme o que havia escolhido em seu coração. Assim, ordenou uma festa para os filhos de Israel e subiu para queimar incenso no altar."
+  },
+  {
+   "ref": "1 Reis 11:4",
+   "text": "Porque ocorreu que, na velhice de Salomão, suas mulheres lhe desviaram o coração para seguir outros deuses; e o seu coração não era completamente fiel ao Senhor, seu Deus, como o coração de Davi, seu pai."
+  }
+ ]
+}
+</cena>

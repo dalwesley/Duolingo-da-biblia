@@ -1,0 +1,717 @@
+{
+ "study": {
+  "passageRef": "Jó 38:1–6",
+  "passages": [
+   {
+    "ref": "Jó 38:1–6"
+   },
+   {
+    "ref": "Jó 38:8–11"
+   },
+   {
+    "ref": "Jó 42:5–6"
+   }
+  ],
+  "context": "Deus finalmente responde a Jó, mas não com explicações sobre cada perda. Suas perguntas percorrem terra, mar, luz e céus, e conduzem Jó a enxergar Deus de um jeito novo.",
+  "keyword": "arrependo",
+  "keywordGloss": "Depois de ver Deus, Jó abandona suas certezas sobre si mesmo no pó e na cinza.",
+  "focusQuestion": "O que muda em você quando Deus deixa de ser só ouvido e passa a ser visto?",
+  "reflectionPrompts": [
+   "Ouvir Deus de perto",
+   "Perguntas que humilham",
+   "Ver antes de entender tudo"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor responde a Jó do meio de um redemoinho.",
+    "evidenceRef": "Jó 38:1",
+    "evidenceSpan": "do meio de um redemoinho, o Senhor respondeu a Jó"
+   },
+   {
+    "text": "Deus anuncia que ele perguntará e Jó ensinará.",
+    "evidenceRef": "Jó 38:3",
+    "evidenceSpan": "eu te perguntarei, e tu me ensinarás"
+   },
+   {
+    "text": "Deus pergunta quem determinou as medidas da terra.",
+    "evidenceRef": "Jó 38:5",
+    "evidenceSpan": "Quem determinou suas medidas, se é que o sabes"
+   },
+   {
+    "text": "Deus disse ao mar até onde ele poderia chegar.",
+    "evidenceRef": "Jó 38:11",
+    "evidenceSpan": "Até aqui chegarás, e não mais além"
+   },
+   {
+    "text": "Jó afirma que antes conhecia Deus só de ouvir, mas agora o vê.",
+    "evidenceRef": "Jó 42:5",
+    "evidenceSpan": "agora os meus olhos te veem"
+   },
+   {
+    "text": "Jó se arrepende no pó e na cinza.",
+    "evidenceRef": "Jó 42:6",
+    "evidenceSpan": "me arrependo no pó e na cinza"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "entendimento",
+    "gloss": "Compreensão humana, mostrada por Deus como limitada diante de sua obra."
+   },
+   {
+    "term": "arrependo",
+    "gloss": "Mudança de Jó depois de ver Deus, reconhecida no pó e na cinza."
+   },
+   {
+    "term": "redemoinho",
+    "gloss": "Cenário forte da chegada da fala do Senhor a Jó."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O Senhor responde a Jó",
+    "evidenceRef": "Jó 38:1"
+   },
+   {
+    "label": "Deus assume as perguntas",
+    "evidenceRef": "Jó 38:3"
+   },
+   {
+    "label": "Perguntas pela terra, mar e luz",
+    "evidenceRef": "Jó 38:4–24"
+   },
+   {
+    "label": "Jó vê Deus e se arrepende",
+    "evidenceRef": "Jó 42:5–6"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Deus manda Jó se preparar e então anuncia suas perguntas.",
+    "marker": "portanto",
+    "evidenceRef": "Jó 38:3"
+   },
+   {
+    "kind": "contraste",
+    "text": "Antes Jó conhecia Deus de ouvir; depois da resposta, seus olhos o veem.",
+    "marker": "mas",
+    "evidenceRef": "Jó 42:5"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao ver Deus, Jó se abomina e se arrepende no pó e na cinza.",
+    "marker": "Por isso",
+    "evidenceRef": "Jó 42:6"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Isaías 40:28",
+    "bridge": "Entendimento de Deus insondável"
+   },
+   {
+    "ref": "Romanos 11:33",
+    "bridge": "Sabedoria de Deus insondável"
+   },
+   {
+    "ref": "Gênesis 1:1",
+    "bridge": "Deus cria céus e terra"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus responde a Jó explicando o motivo de cada uma das suas perdas.",
+    "why": "As perguntas de Jó 38 percorrem a criação e o governo de Deus, sem narrar o motivo das perdas."
+   },
+   {
+    "text": "Conhecer Deus só de ouvir é o mesmo que vê-lo como Jó o viu.",
+    "why": "O próprio Jó contrasta o ouvir de antes com o ver de agora (42:5)."
+   },
+   {
+    "text": "As perguntas de Deus servem para esmagar Jó sem nenhum encontro com ele.",
+    "why": "Deus se dirige a Jó pessoalmente, e o resultado é Jó ver Deus e se arrepender (42:5-6)."
+   }
+  ],
+  "centralInsight": "Deus responde a Jó com perguntas, e Jó passa de ouvir a ver",
+  "anchorQuestion": "Como Jó descreve sua mudança depois que Deus lhe responde?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 38:3, Deus manda Jó cingir os lombos e se calar sem responder nada.",
+   "verseRef": "Jó 38:3",
+   "correctOptionId": "false",
+   "evidenceSpan": "eu te perguntarei, e tu me ensinarás",
+   "feedbackCorrect": "Deus chama Jó a responder, assumindo ele mesmo o papel de perguntar.",
+   "feedbackWrong": {
+    "true": "Releia Jó 38:3, onde Deus diz que perguntará e Jó ensinará."
+   },
+   "hint": "Veja quem pergunta e quem responde.",
+   "learningObjective": "Observar o chamado de Deus a Jó.",
+   "evidence": [
+    "Jó 38:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 38:3, toque o que Jó deve cingir como um homem.",
+   "verseRef": "Jó 38:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "os lombos"
+    },
+    {
+     "id": "b",
+     "text": "um homem"
+    },
+    {
+     "id": "c",
+     "text": "tu me ensinarás"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Cinge, portanto, os lombos como um homem",
+   "feedbackCorrect": "Cingir os lombos é preparar-se para um encontro sério com Deus.",
+   "feedbackWrong": {
+    "b": "Isso compara Jó a um homem pronto, não é o que ele cinge.",
+    "c": "Isso é o que Jó fará ao responder, não o que ele cinge."
+   },
+   "hint": "Procure a ordem de preparo que Deus dá.",
+   "learningObjective": "Identificar o preparo pedido a Jó.",
+   "evidence": [
+    "Jó 38:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 38:5, o que Deus pergunta sobre a terra?",
+   "verseRef": "Jó 38:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem nomeou cada rio e cada vale"
+    },
+    {
+     "id": "b",
+     "text": "Quem guardou as portas da morte"
+    },
+    {
+     "id": "c",
+     "text": "Quem determinou as medidas dela"
+    },
+    {
+     "id": "d",
+     "text": "Quem contou as nuvens do céu"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Quem determinou suas medidas, se é que o sabes",
+   "feedbackCorrect": "Deus pergunta pelas medidas da terra e pelo cordel de medir estendido sobre ela.",
+   "feedbackWrong": {
+    "a": "A pergunta aqui é sobre medidas, não sobre nomes de rios.",
+    "b": "As portas da morte aparecem depois, em Jó 38:17.",
+    "d": "Contar as nuvens é outra pergunta, em Jó 38:37."
+   },
+   "hint": "Leia a primeira pergunta do versículo.",
+   "learningObjective": "Observar a pergunta sobre as medidas da terra.",
+   "evidence": [
+    "Jó 38:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 38:10-11 na ordem do texto.",
+   "verseRef": "Jó 38:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quando eu tracei para ele um limite"
+    },
+    {
+     "id": "b",
+     "text": "E disse: Até aqui chegarás, e não mais além"
+    },
+    {
+     "id": "c",
+     "text": "aqui se quebrará a bravura das tuas ondas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Quando eu tracei para ele um limite",
+   "feedbackCorrect": "Deus traça o limite, fala ao mar e fixa onde as ondas se quebram.",
+   "feedbackWrong": {
+    "default": "Comece pelo limite traçado por Deus ao mar."
+   },
+   "hint": "O limite vem antes da fala ao mar.",
+   "learningObjective": "Reconhecer a sequência sobre o mar.",
+   "evidence": [
+    "Jó 38:10–11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 38:5, o que Deus pergunta que foi determinado sobre a terra?",
+   "verseRef": "Jó 38:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "nomes"
+    },
+    {
+     "id": "b",
+     "text": "medidas"
+    },
+    {
+     "id": "c",
+     "text": "portas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Quem determinou suas medidas",
+   "feedbackCorrect": "As medidas da terra foram determinadas por Deus, não por Jó.",
+   "feedbackWrong": {
+    "a": "Dar nomes aparece em outros relatos; aqui Deus fala de medidas.",
+    "c": "Portas e ferrolhos são ditos do mar, em Jó 38:10."
+   },
+   "hint": "Veja o que o cordel de medir ajuda a fazer.",
+   "learningObjective": "Lembrar a pergunta sobre as medidas da terra.",
+   "evidence": [
+    "Jó 38:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 38:3 comunica que se liga a este contexto?",
+   "verseRef": "Jó 38:3",
+   "passageA": {
+    "ref": "Jó 38:3"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Depois de ouvir muitos discursos, Jó vai responder diante do próprio Deus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus assume as perguntas"
+    },
+    {
+     "id": "b",
+     "text": "Jó encerra o encontro"
+    },
+    {
+     "id": "c",
+     "text": "Outro amigo fala primeiro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "eu te perguntarei, e tu me ensinarás",
+   "feedbackCorrect": "A cena muda quando Deus deixa de ser assunto e passa a perguntar.",
+   "feedbackWrong": {
+    "b": "O encontro está começando, não se encerrando nesse versículo.",
+    "c": "Quem fala e pergunta agora é o próprio Deus."
+   },
+   "hint": "Veja a inversão de papéis no versículo.",
+   "learningObjective": "Ligar Jó 38:3 à virada do encontro com Deus.",
+   "evidence": [
+    "Jó 38:3"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 38:12, Deus pergunta a Jó se foi ele quem deu ordem à madrugada.",
+   "verseRef": "Jó 38:12",
+   "correctOptionId": "true",
+   "evidenceSpan": "Ou desde os teus dias deste ordem à madrugada",
+   "feedbackCorrect": "É uma pergunta de Deus, e Jó sabe que nunca comandou a madrugada.",
+   "feedbackWrong": {
+    "false": "A frase está no texto como pergunta que expõe o limite de Jó."
+   },
+   "hint": "Leia a frase como pergunta de Deus a Jó.",
+   "learningObjective": "Compreender a ironia das perguntas de Deus.",
+   "evidence": [
+    "Jó 38:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos dos trovões.",
+   "verseRef": "Jó 38:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "um leito"
+    },
+    {
+     "id": "b",
+     "text": "um caminho"
+    },
+    {
+     "id": "c",
+     "text": "relâmpagos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e um caminho para os relâmpagos dos trovões",
+   "feedbackCorrect": "Até o caminho dos relâmpagos foi aberto por Deus, não pelo homem.",
+   "feedbackWrong": {
+    "a": "O leito aberto é para o aguaceiro, na primeira parte do versículo.",
+    "c": "Os relâmpagos são quem usa o caminho; o que Deus abre é o caminho."
+   },
+   "hint": "Separe as duas obras citadas no versículo.",
+   "learningObjective": "Reconhecer a ação de Deus sobre a tempestade.",
+   "evidence": [
+    "Jó 38:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como as perguntas de Jó 38:4-12 se relacionam com Jó?",
+   "verseRef": "Jó 38:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostram obras de Deus anteriores e maiores que Jó"
+    },
+    {
+     "id": "b",
+     "text": "Pedem que Jó repita o que os amigos disseram"
+    },
+    {
+     "id": "c",
+     "text": "Convidam Jó a medir a terra com as próprias mãos"
+    },
+    {
+     "id": "d",
+     "text": "Provam que Jó participou da criação do mundo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Onde estavas tu quando eu lançava os fundamentos da terra",
+   "feedbackCorrect": "Cada pergunta coloca Jó diante de obras que só Deus fez e governa.",
+   "feedbackWrong": {
+    "b": "Deus não pede repetição de discursos; ele faz perguntas novas a Jó.",
+    "c": "Medir a terra é justamente o que Jó nunca fez.",
+    "d": "A pergunta onde estavas tu mostra que Jó não participou."
+   },
+   "hint": "Pense em quem fez cada obra citada por Deus.",
+   "learningObjective": "Relacionar as perguntas ao limite de Jó.",
+   "evidence": [
+    "Jó 38:4–5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a resposta de Deus em Jó 38?",
+   "verseRef": "Jó 38:3–4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus chama Jó a se preparar"
+    },
+    {
+     "id": "b",
+     "text": "Deus anuncia que fará as perguntas"
+    },
+    {
+     "id": "c",
+     "text": "Deus pergunta pelos fundamentos da terra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Cinge, portanto, os lombos como um homem",
+   "feedbackCorrect": "Preparo, anúncio das perguntas e então a primeira grande pergunta.",
+   "feedbackWrong": {
+    "default": "A pergunta pela terra vem depois do preparo e do anúncio."
+   },
+   "hint": "O preparo de Jó abre esse trecho.",
+   "learningObjective": "Compreender o avanço da fala de Deus.",
+   "evidence": [
+    "Jó 38:3–4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 38:34, até onde Deus pergunta se Jó pode levantar sua voz?",
+   "verseRef": "Jó 38:34",
+   "options": [
+    {
+     "id": "a",
+     "text": "estrelas"
+    },
+    {
+     "id": "b",
+     "text": "águas"
+    },
+    {
+     "id": "c",
+     "text": "nuvens"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Podes levantar a tua voz até as nuvens",
+   "feedbackCorrect": "Nem a chuva obedece à voz de Jó; as nuvens estão sob o governo de Deus.",
+   "feedbackWrong": {
+    "a": "As estrelas são tratadas em outras perguntas, não nesta.",
+    "b": "As águas seriam o resultado, não o destino da voz de Jó."
+   },
+   "hint": "Veja o destino da voz citado no versículo.",
+   "learningObjective": "Compreender o limite da voz humana diante de Deus.",
+   "evidence": [
+    "Jó 38:34"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 38:33 a Isaías 40:28?",
+   "verseRef": "Jó 38:33",
+   "passageA": {
+    "ref": "Jó 38:33"
+   },
+   "passageB": {
+    "ref": "Isaías 40:28"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Entendimento de Deus insondável"
+    },
+    {
+     "id": "b",
+     "text": "O homem governa os céus"
+    },
+    {
+     "id": "c",
+     "text": "Deus se cansa de governar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Conheces as ordenanças dos céus",
+   "feedbackCorrect": "Isaías afirma que o entendimento do Criador não pode ser esquadrinhado.",
+   "feedbackWrong": {
+    "b": "A pergunta de Deus mostra que Jó não governa os céus.",
+    "c": "Isaías diz o contrário, que o Criador nem se cansa nem se fatiga."
+   },
+   "hint": "Veja o que Isaías diz do entendimento do Criador.",
+   "learningObjective": "Relacionar as ordenanças dos céus ao Criador.",
+   "evidence": [
+    "Jó 38:33",
+    "Isaías 40:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 42:5, Jó afirma que conhecer Deus só de ouvir já era o mesmo que vê-lo.",
+   "verseRef": "Jó 42:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem",
+   "feedbackCorrect": "Jó contrasta o ouvir de antes com o ver de agora diante de Deus.",
+   "feedbackWrong": {
+    "true": "A palavra apenas mostra que o ouvir de antes era menor que o ver."
+   },
+   "hint": "Repare no contraste entre antes e agora.",
+   "learningObjective": "Interpretar a mudança de Jó ao ver Deus.",
+   "evidence": [
+    "Jó 42:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 42:5, toque o trecho que mostra o novo conhecimento de Jó.",
+   "verseRef": "Jó 42:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "apenas de ouvir"
+    },
+    {
+     "id": "b",
+     "text": "os meus olhos"
+    },
+    {
+     "id": "c",
+     "text": "Eu te conhecia"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "agora os meus olhos te veem",
+   "feedbackCorrect": "Jó passa de ouvir falar de Deus a vê-lo por si mesmo.",
+   "feedbackWrong": {
+    "a": "Isso descreve o conhecimento antigo de Jó, não o novo.",
+    "c": "Isso é o conhecimento de antes, só de ouvir; o novo está nos olhos."
+   },
+   "hint": "Procure o que muda no agora de Jó.",
+   "learningObjective": "Sustentar a virada do ouvir ao ver.",
+   "evidence": [
+    "Jó 42:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 42:5-6 sustenta sobre o encontro de Jó com Deus?",
+   "verseRef": "Jó 42:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó recebe todas as explicações e dispensa arrependimento"
+    },
+    {
+     "id": "b",
+     "text": "Ver Deus leva Jó a se arrepender de suas certezas"
+    },
+    {
+     "id": "c",
+     "text": "Jó conclui que Deus lhe devia uma resposta completa"
+    },
+    {
+     "id": "d",
+     "text": "O arrependimento de Jó prova que os amigos acertaram"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "me arrependo no pó e na cinza",
+   "feedbackCorrect": "Sem receber um relatório das perdas, Jó vê Deus e muda sua postura.",
+   "feedbackWrong": {
+    "a": "O texto não traz explicações das perdas, mas arrependimento de Jó.",
+    "c": "Jó não cobra Deus; ele se abomina e se arrepende.",
+    "d": "O arrependimento de Jó não valida acusações feitas contra ele."
+   },
+   "hint": "Veja o que acontece com Jó depois de ver Deus.",
+   "learningObjective": "Escolher a leitura sustentada do fim do encontro.",
+   "evidence": [
+    "Jó 42:5–6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho de Jó até ver Deus?",
+   "verseRef": "Jó 42:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus pergunta pela criação do mundo"
+    },
+    {
+     "id": "b",
+     "text": "Jó diz que agora seus olhos veem Deus"
+    },
+    {
+     "id": "c",
+     "text": "Jó se arrepende no pó e na cinza"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "agora os meus olhos te veem",
+   "feedbackCorrect": "As perguntas de Deus conduzem Jó a vê-lo e a se arrepender.",
+   "feedbackWrong": {
+    "default": "O ver vem depois das perguntas e antes do arrependimento."
+   },
+   "hint": "O arrependimento é o ponto de chegada.",
+   "learningObjective": "Ver o encontro de Jó como caminho completo.",
+   "evidence": [
+    "Jó 42:5–6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 42:6, o que Jó faz no pó e na cinza depois de ver Deus?",
+   "verseRef": "Jó 42:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "escondo"
+    },
+    {
+     "id": "b",
+     "text": "acuso"
+    },
+    {
+     "id": "c",
+     "text": "arrependo"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "me arrependo no pó e na cinza",
+   "feedbackCorrect": "A resposta final de Jó às perguntas de Deus é arrependimento humilde.",
+   "feedbackWrong": {
+    "a": "Jó não se esconde de Deus; ele fala com Deus e muda.",
+    "b": "Quem é acusado muda de figura; Jó se volta contra si mesmo."
+   },
+   "hint": "Veja o verbo de Jó sobre si mesmo.",
+   "learningObjective": "Lembrar a resposta de Jó ao ver Deus.",
+   "evidence": [
+    "Jó 42:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 42:5 a Romanos 11:33?",
+   "verseRef": "Jó 42:5",
+   "passageA": {
+    "ref": "Jó 42:5"
+   },
+   "passageB": {
+    "ref": "Romanos 11:33"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria de Deus insondável"
+    },
+    {
+     "id": "b",
+     "text": "Deus explica todos os caminhos"
+    },
+    {
+     "id": "c",
+     "text": "Ver Deus dispensa humildade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "agora os meus olhos te veem",
+   "feedbackCorrect": "Jó e Paulo se curvam diante de um Deus maior que suas explicações.",
+   "feedbackWrong": {
+    "b": "Paulo chama os caminhos de Deus de inescrutáveis, não explicados.",
+    "c": "Ver Deus produz em Jó arrependimento, não orgulho."
+   },
+   "hint": "Veja como Paulo reage à sabedoria de Deus.",
+   "learningObjective": "Ligar o ver de Jó à adoração de Paulo.",
+   "evidence": [
+    "Jó 42:5",
+    "Romanos 11:33"
+   ]
+  }
+ ]
+}

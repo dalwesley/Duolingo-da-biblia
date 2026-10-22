@@ -1,0 +1,3298 @@
+[
+  {
+    "id": "cartas-joao-sem-cj-01-01",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 1:5, Deus é luz e nele não há treva nenhuma.",
+    "prompt": "Em 1 João 1:5, Deus é luz e nele não há treva nenhuma.",
+    "cue": "Em 1 João 1:5, Deus é luz e nele não há treva nenhuma.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "É a mensagem que João ouviu e anuncia sobre quem Deus é.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1 João 1:5, onde Deus é apresentado sem treva alguma."
+    },
+    "hint": "Olhe como o versículo descreve Deus.",
+    "learningObjective": "Observar como João apresenta Deus.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-01-02",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 1:5, toque o que Deus é segundo a mensagem anunciada.",
+    "prompt": "Em 1 João 1:5, toque o que Deus é segundo a mensagem anunciada.",
+    "cue": "Em 1 João 1:5, toque o que Deus é segundo a mensagem anunciada.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "treva nenhuma"
+      },
+      {
+        "id": "b",
+        "text": "luz"
+      },
+      {
+        "id": "c",
+        "text": "mensagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus é luz",
+    "feedbackCorrect": "João anuncia que Deus é assim, sem nenhuma treva nele.",
+    "feedbackWrong": {
+      "a": "Isso é o que não há em Deus, não o que ele é.",
+      "c": "Mensagem é o que João anuncia; toque o que Deus é."
+    },
+    "hint": "Procure a afirmação curta sobre Deus.",
+    "learningObjective": "Identificar a afirmação central sobre Deus.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-01-03",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 1:7, o que acontece com quem anda na luz?",
+    "prompt": "Segundo 1 João 1:7, o que acontece com quem anda na luz?",
+    "cue": "Segundo 1 João 1:7, o que acontece com quem anda na luz?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deixa de ouvir a mensagem de João"
+      },
+      {
+        "id": "b",
+        "text": "Tem comunhão uns com os outros"
+      },
+      {
+        "id": "c",
+        "text": "Nunca mais precisa confessar nada"
+      },
+      {
+        "id": "d",
+        "text": "Vive isolado dos outros crentes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "temos comunhão uns com os outros",
+    "feedbackCorrect": "Andar na luz aparece junto com a vida partilhada entre os irmãos.",
+    "feedbackWrong": {
+      "a": "Ouvir a mensagem é o ponto de partida do capítulo.",
+      "c": "O mesmo trecho fala de purificação do pecado, não de dispensa dela.",
+      "d": "O texto liga esse andar à comunhão, não ao isolamento."
+    },
+    "hint": "Leia a parte do meio do versículo.",
+    "learningObjective": "Observar o fruto de andar na luz.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-01-04",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 1:3 na ordem do texto.",
+    "prompt": "Monte 1 João 1:3 na ordem do texto.",
+    "cue": "Monte 1 João 1:3 na ordem do texto.",
+    "verseRef": "1 João 1:3",
+    "passageText": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O que vimos e ouvimos"
+      },
+      {
+        "id": "b",
+        "text": "isso também vos anunciamos"
+      },
+      {
+        "id": "c",
+        "text": "nossa comunhão é com o Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O que vimos e ouvimos",
+    "feedbackCorrect": "João anuncia o que viu e ouviu para gerar comunhão com Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo que João viu e ouviu; a comunhão vem depois."
+    },
+    "hint": "O versículo começa pelo que João viu.",
+    "learningObjective": "Reconhecer a sequência de 1 João 1:3.",
+    "evidence": [
+      "1 João 1:3"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-01-05",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 1:7, o que purifica de todo pecado quem anda na luz?",
+    "prompt": "Em 1 João 1:7, o que purifica de todo pecado quem anda na luz?",
+    "cue": "Em 1 João 1:7, o que purifica de todo pecado quem anda na luz?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "template": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o ___ de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "pecado"
+      },
+      {
+        "id": "c",
+        "text": "sangue"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado",
+    "feedbackCorrect": "A purificação vem de Jesus, não do esforço de quem anda na luz.",
+    "feedbackWrong": {
+      "a": "Filho identifica Jesus; quem purifica é nomeado antes.",
+      "b": "Pecado é aquilo de que somos purificados, não o que purifica."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Lembrar quem purifica do pecado.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-01-06",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:5 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:5 comunica que se liga a este contexto?",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "passageA": {
+      "ref": "1 João 1:5",
+      "text": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Diante de Deus, nada precisa ficar escondido nas trevas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Em Deus só há claridade"
+      },
+      {
+        "id": "b",
+        "text": "A mensagem ficou escondida"
+      },
+      {
+        "id": "c",
+        "text": "Deus também tem trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "A mensagem mostra um Deus em quem não há nada escondido ou escuro.",
+    "feedbackWrong": {
+      "b": "João anuncia a mensagem abertamente aos leitores.",
+      "c": "O texto nega qualquer treva em Deus."
+    },
+    "hint": "Veja o que o versículo afirma e nega sobre Deus.",
+    "learningObjective": "Ligar 1 João 1:5 à vida às claras diante de Deus.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-01-01",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 1:6 e 7, é possível ter comunhão com Deus e andar nas trevas ao mesmo tempo.",
+    "prompt": "Em 1 João 1:6 e 7, é possível ter comunhão com Deus e andar nas trevas ao mesmo tempo.",
+    "cue": "Em 1 João 1:6 e 7, é possível ter comunhão com Deus e andar nas trevas ao mesmo tempo.",
+    "verseRef": "1 João 1:6–7",
+    "passageText": "Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mentimos e não praticamos a verdade",
+    "feedbackCorrect": "Os dois caminhos se excluem, pois andar nas trevas desmente a afirmação.",
+    "feedbackWrong": {
+      "true": "Releia 1 João 1:6 e veja o nome que o texto dá a essa afirmação."
+    },
+    "hint": "Compare o dizer de um versículo com o andar do outro.",
+    "learningObjective": "Compreender o contraste entre trevas e luz.",
+    "evidence": [
+      "1 João 1:6–7"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-01-02",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 1:7, toque a palavra que vira o caminho das trevas para o da luz.",
+    "prompt": "Em 1 João 1:7, toque a palavra que vira o caminho das trevas para o da luz.",
+    "cue": "Em 1 João 1:7, toque a palavra que vira o caminho das trevas para o da luz.",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outros"
+      },
+      {
+        "id": "b",
+        "text": "comunhão"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Se, porém, andarmos na luz",
+    "feedbackCorrect": "Essa palavra marca a virada para o outro caminho possível.",
+    "feedbackWrong": {
+      "a": "Outros fala dos irmãos, não da mudança de caminho.",
+      "b": "Comunhão é o fruto do novo caminho, não a palavra da virada."
+    },
+    "hint": "Procure uma palavra curta logo no começo.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-01-03",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 João 1:7 se relaciona com o versículo anterior?",
+    "prompt": "Como 1 João 1:7 se relaciona com o versículo anterior?",
+    "cue": "Como 1 João 1:7 se relaciona com o versículo anterior?",
+    "verseRef": "1 João 1:6–7",
+    "passageText": "Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Afirma que o caminho vivido não importa"
+      },
+      {
+        "id": "b",
+        "text": "Repete o caminho das trevas com outras palavras"
+      },
+      {
+        "id": "c",
+        "text": "Troca o tema para falar só de rituais"
+      },
+      {
+        "id": "d",
+        "text": "Apresenta o caminho oposto ao das trevas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Se, porém, andarmos na luz",
+    "feedbackCorrect": "Depois do alerta, o texto mostra o caminho contrário e seus frutos.",
+    "feedbackWrong": {
+      "a": "O capítulo inteiro liga a comunhão ao caminho vivido.",
+      "b": "O caminho aqui é o oposto, não uma repetição.",
+      "c": "O tema continua sendo o modo de viver diante de Deus."
+    },
+    "hint": "Repare na virada entre os dois versículos.",
+    "learningObjective": "Relacionar o contraste entre 1 João 1:6 e 1:7.",
+    "evidence": [
+      "1 João 1:6–7"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-01-04",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em 1 João 1:5 a 7?",
+    "prompt": "Como avança o ensino em 1 João 1:5 a 7?",
+    "cue": "Como avança o ensino em 1 João 1:5 a 7?",
+    "verseRef": "1 João 1:5–6",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma. Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "João anuncia a mensagem ouvida"
+      },
+      {
+        "id": "b",
+        "text": "Deus é apresentado sem trevas"
+      },
+      {
+        "id": "c",
+        "text": "O dizer é provado pelo andar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "A mensagem vem primeiro e, em seguida, prova a vida de quem a ouviu.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio; a prova no andar vem depois."
+    },
+    "hint": "A luz de Deus é apresentada antes do teste da vida.",
+    "learningObjective": "Compreender o movimento do anúncio à prática.",
+    "evidence": [
+      "1 João 1:5–6"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-01-05",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 1:9, o que fazemos com os pecados em vez de negá-los?",
+    "prompt": "Em 1 João 1:9, o que fazemos com os pecados em vez de negá-los?",
+    "cue": "Em 1 João 1:9, o que fazemos com os pecados em vez de negá-los?",
+    "verseRef": "1 João 1:9",
+    "passageText": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "template": "Se ___ os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "confessarmos"
+      },
+      {
+        "id": "b",
+        "text": "escondermos"
+      },
+      {
+        "id": "c",
+        "text": "negarmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Se confessarmos os nossos pecados",
+    "feedbackCorrect": "O caminho do texto é admitir diante de Deus, não negar nem esconder.",
+    "feedbackWrong": {
+      "b": "Esconder é o caminho das trevas que o capítulo rejeita.",
+      "c": "Negar é justamente o que os versículos 8 e 10 condenam."
+    },
+    "hint": "É a atitude oposta a negar o pecado.",
+    "learningObjective": "Compreender a resposta dada ao pecado no texto.",
+    "evidence": [
+      "1 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-01-06",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 1:5 a João 8:12?",
+    "prompt": "O que liga 1 João 1:5 a João 8:12?",
+    "cue": "O que liga 1 João 1:5 a João 8:12?",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "passageA": {
+      "ref": "1 João 1:5",
+      "text": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma."
+    },
+    "passageB": {
+      "ref": "João 8:12",
+      "text": "Jesus lhes falou novamente, dizendo: Eu sou a luz do mundo; quem me segue não andará nas trevas; antes, terá a luz da vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mensagem sem Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus é a claridade"
+      },
+      {
+        "id": "c",
+        "text": "Trevas vencem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus é luz",
+    "feedbackCorrect": "Jesus se apresenta com a mesma imagem que João usa para Deus.",
+    "feedbackWrong": {
+      "a": "João ouviu a mensagem do próprio Jesus.",
+      "c": "Nos dois textos, as trevas não têm a última palavra."
+    },
+    "hint": "Compare a imagem usada nos dois trechos.",
+    "learningObjective": "Relacionar a imagem de Deus em João e em Jesus.",
+    "evidence": [
+      "1 João 1:5",
+      "João 8:12"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-01-01",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 João 1:8 e 9, negar o pecado engana a si mesmo, mas confessar encontra Deus fiel e justo para perdoar.",
+    "prompt": "Em 1 João 1:8 e 9, negar o pecado engana a si mesmo, mas confessar encontra Deus fiel e justo para perdoar.",
+    "cue": "Em 1 João 1:8 e 9, negar o pecado engana a si mesmo, mas confessar encontra Deus fiel e justo para perdoar.",
+    "verseRef": "1 João 1:8–9",
+    "passageText": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a verdade não habita em nós. Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Ele é fiel e justo para nos perdoar os pecados",
+    "feedbackCorrect": "O texto equilibra o alerta contra negar com a promessa a quem confessa.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos juntos e veja os dois caminhos lado a lado."
+    },
+    "hint": "Leia os versículos 8 e 9 como um par.",
+    "learningObjective": "Interpretar o equilíbrio entre alerta e promessa.",
+    "evidence": [
+      "1 João 1:8–9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-01-02",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 1:9, toque o trecho que mostra como Deus é ao perdoar.",
+    "prompt": "Em 1 João 1:9, toque o trecho que mostra como Deus é ao perdoar.",
+    "cue": "Em 1 João 1:9, toque o trecho que mostra como Deus é ao perdoar.",
+    "verseRef": "1 João 1:9",
+    "passageText": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fiel e justo"
+      },
+      {
+        "id": "b",
+        "text": "nossos pecados"
+      },
+      {
+        "id": "c",
+        "text": "toda injustiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ele é fiel e justo para nos perdoar os pecados",
+    "feedbackCorrect": "O perdão se apoia no caráter de Deus, não no merecimento de quem confessa.",
+    "feedbackWrong": {
+      "b": "Isso é o que confessamos, não como Deus é.",
+      "c": "Isso é aquilo de que ele purifica, não o seu caráter."
+    },
+    "hint": "Procure a descrição de Deus no meio do versículo.",
+    "learningObjective": "Sustentar com o texto o caráter de Deus ao perdoar.",
+    "evidence": [
+      "1 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-01-03",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 1:8 a 10 sustenta sobre lidar com o pecado?",
+    "prompt": "Que leitura 1 João 1:8 a 10 sustenta sobre lidar com o pecado?",
+    "cue": "Que leitura 1 João 1:8 a 10 sustenta sobre lidar com o pecado?",
+    "verseRef": "1 João 1:8–9",
+    "passageText": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a verdade não habita em nós. Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem crê já não precisa admitir pecado algum"
+      },
+      {
+        "id": "b",
+        "text": "Deus perdoa apenas quem nunca errou feio"
+      },
+      {
+        "id": "c",
+        "text": "Negar o pecado protege a comunhão com Deus"
+      },
+      {
+        "id": "d",
+        "text": "Confessar abre caminho para perdão e purificação"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Se confessarmos os nossos pecados",
+    "feedbackCorrect": "Entre negar e confessar, o texto aponta a confissão como caminho.",
+    "feedbackWrong": {
+      "a": "Dizer que não tem pecado é o erro dos versículos 8 e 10.",
+      "b": "A promessa é para quem confessa, não para quem nunca errou.",
+      "c": "Negar é chamado de engano e de mentira no trecho."
+    },
+    "hint": "Compare as duas atitudes que o trecho coloca lado a lado.",
+    "learningObjective": "Escolher a interpretação sustentada sobre o pecado.",
+    "evidence": [
+      "1 João 1:8–9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-01-04",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 João 1:5 a 9?",
+    "prompt": "Qual sequência revela o sentido de 1 João 1:5 a 9?",
+    "cue": "Qual sequência revela o sentido de 1 João 1:5 a 9?",
+    "verseRef": "1 João 1:5–6",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma. Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é claridade sem trevas"
+      },
+      {
+        "id": "b",
+        "text": "O pecado é trazido à claridade"
+      },
+      {
+        "id": "c",
+        "text": "Deus perdoa e purifica quem confessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "Quem Deus é vem primeiro; depois, a resposta honesta ao pecado.",
+    "feedbackWrong": {
+      "default": "Comece por quem Deus é; o perdão fecha a sequência."
+    },
+    "hint": "Siga do caráter de Deus à resposta do crente.",
+    "learningObjective": "Ver a lógica do argumento de João no trecho.",
+    "evidence": [
+      "1 João 1:5–6"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-01-05",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 1:8, o que não habita em quem nega o próprio pecado?",
+    "prompt": "Em 1 João 1:8, o que não habita em quem nega o próprio pecado?",
+    "cue": "Em 1 João 1:8, o que não habita em quem nega o próprio pecado?",
+    "verseRef": "1 João 1:8",
+    "passageText": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a verdade não habita em nós.",
+    "template": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a ___ não habita em nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "alegria"
+      },
+      {
+        "id": "c",
+        "text": "verdade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e a verdade não habita em nós",
+    "feedbackCorrect": "Negar o pecado mostra que a verdade ainda não mora no coração.",
+    "feedbackWrong": {
+      "a": "Palavra aparece no versículo 10; aqui o termo é outro.",
+      "b": "Alegria aparece no versículo 4, não neste diagnóstico."
+    },
+    "hint": "É o contrário de viver na mentira.",
+    "learningObjective": "Lembrar o termo que resume o diagnóstico de João.",
+    "evidence": [
+      "1 João 1:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-01-06",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 1:7 a Efésios 5:8?",
+    "prompt": "O que liga 1 João 1:7 a Efésios 5:8?",
+    "cue": "O que liga 1 João 1:7 a Efésios 5:8?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "passageA": {
+      "ref": "1 João 1:7",
+      "text": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado."
+    },
+    "passageB": {
+      "ref": "Efésios 5:8",
+      "text": "Pois, anteriormente, éreis trevas, porém, agora, sois luz no Senhor; andai como filhos da luz"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Das trevas para claridade"
+      },
+      {
+        "id": "b",
+        "text": "Claridade só no céu"
+      },
+      {
+        "id": "c",
+        "text": "Trevas como novo lar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "andarmos na luz, assim como Ele está na luz",
+    "feedbackCorrect": "Os dois textos descrevem uma mudança de ambiente de vida.",
+    "feedbackWrong": {
+      "b": "Os dois chamam a viver assim já agora, não só no céu.",
+      "c": "As trevas são o passado deixado, não o novo lar."
+    },
+    "hint": "Veja de onde o crente saiu e onde vive agora.",
+    "learningObjective": "Ligar o andar na luz em João e em Paulo.",
+    "evidence": [
+      "1 João 1:7",
+      "Efésios 5:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-02-01",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 4:8, aquele que não ama conhece a Deus mesmo assim.",
+    "prompt": "Em 1 João 4:8, aquele que não ama conhece a Deus mesmo assim.",
+    "cue": "Em 1 João 4:8, aquele que não ama conhece a Deus mesmo assim.",
+    "verseRef": "1 João 4:8",
+    "passageText": "Aquele que não ama não conhece a Deus, pois Deus é amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Aquele que não ama não conhece a Deus",
+    "feedbackCorrect": "João liga conhecer a Deus ao amar, porque o próprio Deus é amor.",
+    "feedbackWrong": {
+      "true": "Releia 1 João 4:8 e veja a ligação entre amar e conhecer."
+    },
+    "hint": "Veja a primeira parte do versículo.",
+    "learningObjective": "Observar a ligação entre amar e conhecer a Deus.",
+    "evidence": [
+      "1 João 4:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-02-02",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 4:7, toque de onde vem aquilo que devemos viver uns com os outros.",
+    "prompt": "Em 1 João 4:7, toque de onde vem aquilo que devemos viver uns com os outros.",
+    "cue": "Em 1 João 4:7, toque de onde vem aquilo que devemos viver uns com os outros.",
+    "verseRef": "1 João 4:7",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nascido de Deus"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "uns aos outros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque o amor vem de Deus",
+    "feedbackCorrect": "Amar os irmãos começa recebendo de Deus aquilo que ele é.",
+    "feedbackWrong": {
+      "a": "Isso descreve quem ama, não a fonte do que vive.",
+      "c": "Isso indica com quem vivemos, não de onde vem."
+    },
+    "hint": "Procure a palavra ligada à fonte em Deus.",
+    "learningObjective": "Identificar a fonte do amor no texto.",
+    "evidence": [
+      "1 João 4:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-02-03",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 4:4, por que os crentes já derrotaram os falsos profetas?",
+    "prompt": "Segundo 1 João 4:4, por que os crentes já derrotaram os falsos profetas?",
+    "cue": "Segundo 1 João 4:4, por que os crentes já derrotaram os falsos profetas?",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque eram mais numerosos que eles"
+      },
+      {
+        "id": "b",
+        "text": "Porque viviam longe do mundo"
+      },
+      {
+        "id": "c",
+        "text": "Porque nunca ouviram ensino falso"
+      },
+      {
+        "id": "d",
+        "text": "Porque quem está neles é maior"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+    "feedbackCorrect": "A segurança dos crentes está em quem habita neles, não neles mesmos.",
+    "feedbackWrong": {
+      "a": "O texto não fala de número, mas de quem está nos crentes.",
+      "b": "O contraste é entre quem está neles e quem está no mundo.",
+      "c": "Eles ouviram o ensino falso; a vitória tem outra razão."
+    },
+    "hint": "Leia a razão dada na segunda parte.",
+    "learningObjective": "Observar a razão da vitória dos crentes.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-02-04",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 4:7 na ordem do texto.",
+    "prompt": "Monte 1 João 4:7 na ordem do texto.",
+    "cue": "Monte 1 João 4:7 na ordem do texto.",
+    "verseRef": "1 João 4:7",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amemo-nos uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "porque o amor vem de Deus"
+      },
+      {
+        "id": "c",
+        "text": "todo aquele que ama é nascido de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "porque o amor vem de Deus",
+    "feedbackCorrect": "Primeiro o convite, depois a fonte, e então quem ama é descrito.",
+    "feedbackWrong": {
+      "default": "Comece pelo convite a amar; a fonte vem em seguida."
+    },
+    "hint": "O versículo começa com um convite.",
+    "learningObjective": "Reconhecer a sequência de 1 João 4:7.",
+    "evidence": [
+      "1 João 4:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-02-05",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 4:9, como Deus chama o Filho que enviou ao mundo?",
+    "prompt": "Em 1 João 4:9, como Deus chama o Filho que enviou ao mundo?",
+    "cue": "Em 1 João 4:9, como Deus chama o Filho que enviou ao mundo?",
+    "verseRef": "1 João 4:9",
+    "passageText": "Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos.",
+    "template": "Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho ___ ao mundo, para que, por meio dele, vivamos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "adotivo"
+      },
+      {
+        "id": "b",
+        "text": "primeiro"
+      },
+      {
+        "id": "c",
+        "text": "unigênito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "em haver Deus enviado seu Filho unigênito ao mundo",
+    "feedbackCorrect": "O envio mostra o tamanho do amor, pois Deus deu o seu único Filho.",
+    "feedbackWrong": {
+      "a": "O texto usa um termo que marca o Filho como único.",
+      "b": "Primeiro sugere outros depois dele; o texto diz outra palavra."
+    },
+    "hint": "É a palavra que marca o Filho como único.",
+    "learningObjective": "Lembrar como o texto chama o Filho enviado.",
+    "evidence": [
+      "1 João 4:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-02-06",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 4:8 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 4:8 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 4:8 comunica que se liga a este contexto?",
+    "verseRef": "1 João 4:8",
+    "passageText": "Aquele que não ama não conhece a Deus, pois Deus é amor.",
+    "passageA": {
+      "ref": "1 João 4:8",
+      "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é a fonte de todo amor verdadeiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é a fonte do amor"
+      },
+      {
+        "id": "b",
+        "text": "Amor nasce do esforço humano"
+      },
+      {
+        "id": "c",
+        "text": "Conhecer dispensa amar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois Deus é amor",
+    "feedbackCorrect": "Se Deus é assim, todo amor verdadeiro começa nele.",
+    "feedbackWrong": {
+      "b": "A fonte apontada é Deus, não o esforço humano.",
+      "c": "Quem não ama, diz o texto, não conhece a Deus."
+    },
+    "hint": "Veja o que o versículo afirma sobre Deus.",
+    "learningObjective": "Ligar 1 João 4:8 à fonte do amor.",
+    "evidence": [
+      "1 João 4:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-02-01",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 4:10, o amor começou quando nós amamos a Deus e ele depois respondeu ao nosso amor.",
+    "prompt": "Em 1 João 4:10, o amor começou quando nós amamos a Deus e ele depois respondeu ao nosso amor.",
+    "cue": "Em 1 João 4:10, o amor começou quando nós amamos a Deus e ele depois respondeu ao nosso amor.",
+    "verseRef": "1 João 4:10",
+    "passageText": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não que tenhamos amado a Deus, mas que Ele nos amou",
+    "feedbackCorrect": "A ordem do texto é inversa, pois Deus amou e enviou o Filho primeiro.",
+    "feedbackWrong": {
+      "true": "Releia o começo de 1 João 4:10 e repare na ordem dos fatos."
+    },
+    "hint": "Repare quem age primeiro no versículo.",
+    "learningObjective": "Compreender a ordem do amor de Deus.",
+    "evidence": [
+      "1 João 4:10"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-02-02",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 4:10, toque a palavra que corrige quem pensa que o amor começou em nós.",
+    "prompt": "Em 1 João 4:10, toque a palavra que corrige quem pensa que o amor começou em nós.",
+    "cue": "Em 1 João 4:10, toque a palavra que corrige quem pensa que o amor começou em nós.",
+    "verseRef": "1 João 4:10",
+    "passageText": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas que Ele nos amou",
+    "feedbackCorrect": "Essa palavrinha vira a frase e coloca Deus como quem começou.",
+    "feedbackWrong": {
+      "a": "Deus é quem age, mas a correção vem na virada da frase.",
+      "b": "Isso é o tema da frase, não a palavra da virada."
+    },
+    "hint": "Procure a virada no meio da frase.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "1 João 4:10"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-02-03",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 João 4:11 se liga ao que Deus fez nos versículos anteriores?",
+    "prompt": "Como 1 João 4:11 se liga ao que Deus fez nos versículos anteriores?",
+    "cue": "Como 1 João 4:11 se liga ao que Deus fez nos versículos anteriores?",
+    "verseRef": "1 João 4:10–11",
+    "passageText": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados. Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus amou primeiro, e isso gera amor ao irmão"
+      },
+      {
+        "id": "b",
+        "text": "Deus amou, e agora cada um vive por si"
+      },
+      {
+        "id": "c",
+        "text": "O irmão precisa merecer antes de ser amado"
+      },
+      {
+        "id": "d",
+        "text": "Amar o irmão paga o amor que Deus deu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "devemos nós também amar uns aos outros",
+    "feedbackCorrect": "O amor recebido de Deus se transforma em amor dado aos irmãos.",
+    "feedbackWrong": {
+      "b": "A ligação é justamente com a vida entre irmãos.",
+      "c": "Deus amou sem esperar merecimento, e o padrão se repete.",
+      "d": "O texto fala de resposta grata, não de pagamento."
+    },
+    "hint": "Veja a consequência tirada no versículo 11.",
+    "learningObjective": "Relacionar o amor de Deus com o amor ao irmão.",
+    "evidence": [
+      "1 João 4:10–11"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-02-04",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em 1 João 4:10 e 11?",
+    "prompt": "Como avança o ensino em 1 João 4:10 e 11?",
+    "cue": "Como avança o ensino em 1 João 4:10 e 11?",
+    "verseRef": "1 João 4:10–11",
+    "passageText": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados. Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus nos amou primeiro"
+      },
+      {
+        "id": "b",
+        "text": "Ele enviou o Filho por nós"
+      },
+      {
+        "id": "c",
+        "text": "Nós amamos uns aos outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele nos amou e enviou Seu Filho",
+    "feedbackCorrect": "Primeiro o que Deus fez, depois a resposta entre irmãos.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor de Deus; a resposta humana vem por último."
+    },
+    "hint": "A resposta dos crentes fecha o trecho.",
+    "learningObjective": "Compreender o movimento do amor de Deus à prática.",
+    "evidence": [
+      "1 João 4:10–11"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-02-05",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 4:11, o que devemos fazer uns aos outros por termos sido amados?",
+    "prompt": "Em 1 João 4:11, o que devemos fazer uns aos outros por termos sido amados?",
+    "cue": "Em 1 João 4:11, o que devemos fazer uns aos outros por termos sido amados?",
+    "verseRef": "1 João 4:11",
+    "passageText": "Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros.",
+    "template": "Amados, se Deus nos amou de tal maneira, devemos nós também ___ uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvir"
+      },
+      {
+        "id": "b",
+        "text": "amar"
+      },
+      {
+        "id": "c",
+        "text": "conhecer"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "devemos nós também amar uns aos outros",
+    "feedbackCorrect": "A resposta ao amor recebido é amar as pessoas ao redor.",
+    "feedbackWrong": {
+      "a": "Ouvir aparece no versículo 6, não nesta conclusão.",
+      "c": "Conhecer descreve a relação com Deus; aqui a ação é outra."
+    },
+    "hint": "É a ação que responde ao que Deus fez.",
+    "learningObjective": "Compreender a resposta prática ao amor de Deus.",
+    "evidence": [
+      "1 João 4:11"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-02-06",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 4:10 a João 3:16?",
+    "prompt": "O que liga 1 João 4:10 a João 3:16?",
+    "cue": "O que liga 1 João 4:10 a João 3:16?",
+    "verseRef": "1 João 4:10",
+    "passageText": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados.",
+    "passageA": {
+      "ref": "1 João 4:10",
+      "text": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados."
+    },
+    "passageB": {
+      "ref": "João 3:16",
+      "text": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus amou e enviou o Filho"
+      },
+      {
+        "id": "b",
+        "text": "Nós amamos primeiro"
+      },
+      {
+        "id": "c",
+        "text": "Filho enviado sem amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ele nos amou e enviou Seu Filho",
+    "feedbackCorrect": "Nos dois textos, Deus ama primeiro e age enviando o Filho.",
+    "feedbackWrong": {
+      "b": "Os dois textos colocam Deus como quem começa.",
+      "c": "O envio nasce do amor, não acontece sem ele."
+    },
+    "hint": "Compare quem ama e quem é enviado.",
+    "learningObjective": "Relacionar o amor de Deus em João e no Evangelho.",
+    "evidence": [
+      "1 João 4:10",
+      "João 3:16"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-02-01",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 João 4:7 e 8, conhecer a Deus aparece no amor aos irmãos porque o próprio Deus é amor.",
+    "prompt": "Em 1 João 4:7 e 8, conhecer a Deus aparece no amor aos irmãos porque o próprio Deus é amor.",
+    "cue": "Em 1 João 4:7 e 8, conhecer a Deus aparece no amor aos irmãos porque o próprio Deus é amor.",
+    "verseRef": "1 João 4:7–8",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus. Aquele que não ama não conhece a Deus, pois Deus é amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "todo aquele que ama é nascido de Deus e conhece a Deus",
+    "feedbackCorrect": "Para João, amar é retrato de quem nasceu de Deus e o conhece.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos e veja como amar e conhecer andam juntos."
+    },
+    "hint": "Leia os versículos 7 e 8 como um par.",
+    "learningObjective": "Interpretar o retrato de quem conhece a Deus.",
+    "evidence": [
+      "1 João 4:7–8"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-02-02",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 4:9, toque o trecho que mostra onde o amor de Deus apareceu.",
+    "prompt": "Em 1 João 4:9, toque o trecho que mostra onde o amor de Deus apareceu.",
+    "cue": "Em 1 João 4:9, toque o trecho que mostra onde o amor de Deus apareceu.",
+    "verseRef": "1 João 4:9",
+    "passageText": "Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "se manifestou"
+      },
+      {
+        "id": "b",
+        "text": "ao mundo"
+      },
+      {
+        "id": "c",
+        "text": "Filho unigênito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Nisto se manifestou o amor de Deus em nós",
+    "feedbackCorrect": "O amor de Deus não ficou invisível; ele apareceu num fato concreto.",
+    "feedbackWrong": {
+      "b": "Isso é o destino do envio, não a aparição do amor.",
+      "c": "Isso é quem foi enviado, não onde o amor apareceu."
+    },
+    "hint": "Procure o verbo que fala de algo aparecer.",
+    "learningObjective": "Sustentar com o texto que o amor se mostrou.",
+    "evidence": [
+      "1 João 4:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-02-03",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 4:7 e 8 sustenta sobre conhecer a Deus?",
+    "prompt": "Que leitura 1 João 4:7 e 8 sustenta sobre conhecer a Deus?",
+    "cue": "Que leitura 1 João 4:7 e 8 sustenta sobre conhecer a Deus?",
+    "verseRef": "1 João 4:7–8",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus. Aquele que não ama não conhece a Deus, pois Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a Deus se mostra amando pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Basta saber ideias certas sobre Deus"
+      },
+      {
+        "id": "c",
+        "text": "Amar é opcional para quem já crê"
+      },
+      {
+        "id": "d",
+        "text": "Sentir amor dispensa amar os irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "todo aquele que ama é nascido de Deus e conhece a Deus",
+    "feedbackCorrect": "O conhecimento de Deus, no texto, tem rosto prático no amor.",
+    "feedbackWrong": {
+      "b": "Quem não ama, diz João, não conhece a Deus.",
+      "c": "Amar é apresentado como marca, não como enfeite opcional.",
+      "d": "O amor do texto se vive uns com os outros."
+    },
+    "hint": "Veja o retrato de quem nasceu de Deus.",
+    "learningObjective": "Escolher a interpretação sustentada sobre conhecer a Deus.",
+    "evidence": [
+      "1 João 4:7–8"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-02-04",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 João 4:8 a 11?",
+    "prompt": "Qual sequência revela o sentido de 1 João 4:8 a 11?",
+    "cue": "Qual sequência revela o sentido de 1 João 4:8 a 11?",
+    "verseRef": "1 João 4:8–9",
+    "passageText": "Aquele que não ama não conhece a Deus, pois Deus é amor. Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é amor em si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "Seu amor se mostra no Filho enviado"
+      },
+      {
+        "id": "c",
+        "text": "Quem o conhece ama o irmão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pois Deus é amor",
+    "feedbackCorrect": "Quem Deus é explica o que ele fez e o que nasce em quem o conhece.",
+    "feedbackWrong": {
+      "default": "Comece por quem Deus é; amar o irmão fecha a sequência."
+    },
+    "hint": "Siga de quem Deus é ao que fazemos.",
+    "learningObjective": "Ver a lógica do argumento sobre o amor.",
+    "evidence": [
+      "1 João 4:8–9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-02-05",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 4:4, que palavra mostra quem está nos crentes diante do mundo?",
+    "prompt": "Em 1 João 4:4, que palavra mostra quem está nos crentes diante do mundo?",
+    "cue": "Em 1 João 4:4, que palavra mostra quem está nos crentes diante do mundo?",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "template": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois ___ é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "maior"
+      },
+      {
+        "id": "b",
+        "text": "igual"
+      },
+      {
+        "id": "c",
+        "text": "menor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+    "feedbackCorrect": "A confiança dos crentes está na grandeza de quem habita neles.",
+    "feedbackWrong": {
+      "b": "O texto não coloca os dois lados no mesmo nível.",
+      "c": "É o contrário do que João afirma aos filhinhos."
+    },
+    "hint": "É uma comparação entre dois lados.",
+    "learningObjective": "Lembrar o termo que carrega a confiança do texto.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-02-06",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 4:7 a Romanos 5:8?",
+    "prompt": "O que liga 1 João 4:7 a Romanos 5:8?",
+    "cue": "O que liga 1 João 4:7 a Romanos 5:8?",
+    "verseRef": "1 João 4:7",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus.",
+    "passageA": {
+      "ref": "1 João 4:7",
+      "text": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus."
+    },
+    "passageB": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus espera nosso amor"
+      },
+      {
+        "id": "b",
+        "text": "Amor provado na cruz"
+      },
+      {
+        "id": "c",
+        "text": "Amor só em palavras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque o amor vem de Deus",
+    "feedbackCorrect": "Paulo mostra a prova desse amor, e João mostra sua fonte.",
+    "feedbackWrong": {
+      "a": "Deus age primeiro, sem esperar o nosso amor.",
+      "c": "Os dois textos tratam de amor agido, não só falado."
+    },
+    "hint": "Veja onde Paulo diz que o amor foi provado.",
+    "learningObjective": "Ligar a fonte do amor à sua prova na cruz.",
+    "evidence": [
+      "1 João 4:7",
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-03-01",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 João 1:6, o amor aparece em andar segundo os mandamentos de Deus.",
+    "prompt": "Em 2 João 1:6, o amor aparece em andar segundo os mandamentos de Deus.",
+    "cue": "Em 2 João 1:6, o amor aparece em andar segundo os mandamentos de Deus.",
+    "verseRef": "2 João 1:6",
+    "passageText": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "E o amor é este: que andemos segundo os seus mandamentos",
+    "feedbackCorrect": "João define o amor pelo caminho vivido, não só pelo sentimento.",
+    "feedbackWrong": {
+      "false": "Releia 2 João 1:6 e veja a definição que o texto dá."
+    },
+    "hint": "Olhe a definição dada no versículo.",
+    "learningObjective": "Observar a definição de amor no texto.",
+    "evidence": [
+      "2 João 1:6"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-03-02",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 João 1:6, toque segundo o que devemos andar para viver o amor.",
+    "prompt": "Em 2 João 1:6, toque segundo o que devemos andar para viver o amor.",
+    "cue": "Em 2 João 1:6, toque segundo o que devemos andar para viver o amor.",
+    "verseRef": "2 João 1:6",
+    "passageText": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que andemos segundo os seus mandamentos",
+    "feedbackCorrect": "O amor ganha forma no caminho que Deus indicou.",
+    "feedbackWrong": {
+      "a": "Isso é o que vivemos; toque o caminho indicado.",
+      "c": "Princípio marca o tempo do ensino, não o caminho."
+    },
+    "hint": "Procure a direção dada para o andar.",
+    "learningObjective": "Identificar o caminho do amor no texto.",
+    "evidence": [
+      "2 João 1:6"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-03-03",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 João 1:4, o que deixou João sobremodo alegre?",
+    "prompt": "Segundo 2 João 1:4, o que deixou João sobremodo alegre?",
+    "cue": "Segundo 2 João 1:4, o que deixou João sobremodo alegre?",
+    "verseRef": "2 João 1:4",
+    "passageText": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade, conforme o mandamento que recebemos do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Saber que filhos andam na verdade"
+      },
+      {
+        "id": "b",
+        "text": "Receber notícias de viagens longas"
+      },
+      {
+        "id": "c",
+        "text": "Ver a comunidade crescer em número"
+      },
+      {
+        "id": "d",
+        "text": "Ouvir que ninguém mais tinha dúvidas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade",
+    "feedbackCorrect": "A alegria de João nasce de vidas andando no caminho de Cristo.",
+    "feedbackWrong": {
+      "b": "O motivo citado é o andar dos filhos, não viagens.",
+      "c": "O texto não fala de número de pessoas.",
+      "d": "A carta trata justamente de dúvidas sobre ensinos."
+    },
+    "hint": "Leia o motivo logo após a alegria.",
+    "learningObjective": "Observar o motivo da alegria de João.",
+    "evidence": [
+      "2 João 1:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-03-04",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 João 1:3 na ordem do texto.",
+    "prompt": "Monte 2 João 1:3 na ordem do texto.",
+    "cue": "Monte 2 João 1:3 na ordem do texto.",
+    "verseRef": "2 João 1:3",
+    "passageText": "Graça, misericórdia e paz da parte de Deus Pai e do Senhor Jesus Cristo, o Filho do Pai, sejam com vocês em verdade e amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça, misericórdia e paz da parte de Deus Pai"
+      },
+      {
+        "id": "b",
+        "text": "do Senhor Jesus Cristo, o Filho do Pai"
+      },
+      {
+        "id": "c",
+        "text": "sejam com vocês em verdade e amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sejam com vocês em verdade e amor",
+    "feedbackCorrect": "A saudação junta graça e paz ao caminho de verdade e amor.",
+    "feedbackWrong": {
+      "default": "Comece pelos dons pedidos; verdade e amor fecham a frase."
+    },
+    "hint": "A frase termina com duas marcas da carta.",
+    "learningObjective": "Reconhecer a sequência de 2 João 1:3.",
+    "evidence": [
+      "2 João 1:3"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-03-05",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 João 1:4, em que alguns filhos andam, para alegria de João?",
+    "prompt": "Em 2 João 1:4, em que alguns filhos andam, para alegria de João?",
+    "cue": "Em 2 João 1:4, em que alguns filhos andam, para alegria de João?",
+    "verseRef": "2 João 1:4",
+    "passageText": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade, conforme o mandamento que recebemos do Pai.",
+    "template": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na ___, conforme o mandamento que recebemos do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "alguns dos teus filhos andam na verdade",
+    "feedbackCorrect": "Andar nesse caminho é o retrato que alegra quem escreveu.",
+    "feedbackWrong": {
+      "a": "Alegria é o sentimento de João, não o caminho andado.",
+      "c": "Paz aparece na saudação, não neste andar."
+    },
+    "hint": "É o caminho nomeado no meio do versículo.",
+    "learningObjective": "Lembrar o caminho citado por João.",
+    "evidence": [
+      "2 João 1:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-03-06",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "cue": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "verseRef": "2 João 1:6",
+    "passageText": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor.",
+    "passageA": {
+      "ref": "2 João 1:6",
+      "text": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Amar é viver como Deus mandou, e não só sentir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sentimento sem caminho"
+      },
+      {
+        "id": "b",
+        "text": "Mandamentos sem amor"
+      },
+      {
+        "id": "c",
+        "text": "Amor que obedece a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que andemos segundo os seus mandamentos",
+    "feedbackCorrect": "No texto, amor e obediência caminham na mesma frase.",
+    "feedbackWrong": {
+      "a": "O versículo dá um caminho concreto ao amor.",
+      "b": "Os mandamentos aparecem dentro da definição de amor."
+    },
+    "hint": "Veja como o versículo define o amor.",
+    "learningObjective": "Ligar 2 João 1:6 ao amor que obedece.",
+    "evidence": [
+      "2 João 1:6"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-03-01",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 João 1:4, andar na verdade alegra João porque segue o mandamento recebido do Pai.",
+    "prompt": "Em 2 João 1:4, andar na verdade alegra João porque segue o mandamento recebido do Pai.",
+    "cue": "Em 2 João 1:4, andar na verdade alegra João porque segue o mandamento recebido do Pai.",
+    "verseRef": "2 João 1:4",
+    "passageText": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade, conforme o mandamento que recebemos do Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "conforme o mandamento que recebemos do Pai",
+    "feedbackCorrect": "A alegria vem de ver a verdade vivida como o Pai mandou.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 2 João 1:4 e veja a referência ao Pai."
+    },
+    "hint": "Olhe a explicação no fim do versículo.",
+    "learningObjective": "Compreender a razão da alegria de João.",
+    "evidence": [
+      "2 João 1:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-03-02",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 João 1:9, toque a palavra que marca quem não permanece no ensino de Cristo.",
+    "prompt": "Em 2 João 1:9, toque a palavra que marca quem não permanece no ensino de Cristo.",
+    "cue": "Em 2 João 1:9, toque a palavra que marca quem não permanece no ensino de Cristo.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "não"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não permanece na doutrina de Cristo não tem Deus",
+    "feedbackCorrect": "A negação marca o retrato de quem se desvia do ensino.",
+    "feedbackWrong": {
+      "a": "Filho aparece no retrato oposto, de quem persevera.",
+      "c": "Deus é quem essa pessoa não tem, segundo o texto."
+    },
+    "hint": "Procure a palavrinha que nega.",
+    "learningObjective": "Reconhecer o marcador do contraste no texto.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-03-03",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 João 1:6 explica o pedido de amar feito no versículo anterior?",
+    "prompt": "Como 2 João 1:6 explica o pedido de amar feito no versículo anterior?",
+    "cue": "Como 2 João 1:6 explica o pedido de amar feito no versículo anterior?",
+    "verseRef": "2 João 1:5–6",
+    "passageText": "E agora, senhora, peço-te, não como escrevendo-te um mandamento novo, mas aquilo que recebemos desde o princípio: que nos amemos uns aos outros. E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amar é sentir carinho quando convém"
+      },
+      {
+        "id": "b",
+        "text": "Amar dispensa qualquer direção de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Amar é concordar com todo ensino novo"
+      },
+      {
+        "id": "d",
+        "text": "Amar é viver no caminho que Deus indicou"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E o amor é este: que andemos segundo os seus mandamentos",
+    "feedbackCorrect": "João não deixa o pedido vago; ele mostra o caminho do amor.",
+    "feedbackWrong": {
+      "a": "O texto define amor por um andar, não por conveniência.",
+      "b": "A direção de Deus é justamente o conteúdo do amor.",
+      "c": "A carta alerta contra ensinos que negam Cristo."
+    },
+    "hint": "Veja a definição que vem logo depois do pedido.",
+    "learningObjective": "Relacionar o pedido de amar com sua definição.",
+    "evidence": [
+      "2 João 1:5–6"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-03-04",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a carta em 2 João 1:3 a 6?",
+    "prompt": "Como avança a carta em 2 João 1:3 a 6?",
+    "cue": "Como avança a carta em 2 João 1:3 a 6?",
+    "verseRef": "2 João 1:3–4",
+    "passageText": "Graça, misericórdia e paz da parte de Deus Pai e do Senhor Jesus Cristo, o Filho do Pai, sejam com vocês em verdade e amor. Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade, conforme o mandamento que recebemos do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça e paz em verdade e amor"
+      },
+      {
+        "id": "b",
+        "text": "Filhos andando na verdade"
+      },
+      {
+        "id": "c",
+        "text": "Amar andando nos mandamentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sejam com vocês em verdade e amor",
+    "feedbackCorrect": "A saudação abre o caminho que a carta depois descreve e pede.",
+    "feedbackWrong": {
+      "default": "Comece pela saudação; o pedido de amar vem depois."
+    },
+    "hint": "A carta começa com uma saudação.",
+    "learningObjective": "Compreender o movimento da abertura da carta.",
+    "evidence": [
+      "2 João 1:3–4"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-03-05",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 João 1:5, o pedido de amar não é apresentado como mandamento de que tipo?",
+    "prompt": "Em 2 João 1:5, o pedido de amar não é apresentado como mandamento de que tipo?",
+    "cue": "Em 2 João 1:5, o pedido de amar não é apresentado como mandamento de que tipo?",
+    "verseRef": "2 João 1:5",
+    "passageText": "E agora, senhora, peço-te, não como escrevendo-te um mandamento novo, mas aquilo que recebemos desde o princípio: que nos amemos uns aos outros.",
+    "template": "E agora, senhora, peço-te, não como escrevendo-te um mandamento ___, mas aquilo que recebemos desde o princípio: que nos amemos uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "secreto"
+      },
+      {
+        "id": "b",
+        "text": "novo"
+      },
+      {
+        "id": "c",
+        "text": "antigo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não como escrevendo-te um mandamento novo",
+    "feedbackCorrect": "O pedido é antigo, recebido desde o princípio da fé.",
+    "feedbackWrong": {
+      "a": "Nada é secreto aqui; o ensino veio desde o princípio.",
+      "c": "O texto diz o contrário sobre a idade do pedido."
+    },
+    "hint": "Veja como João apresenta o pedido.",
+    "learningObjective": "Compreender a antiguidade do mandamento de amar.",
+    "evidence": [
+      "2 João 1:5"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-03-06",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 João 1:6 a João 14:15?",
+    "prompt": "O que liga 2 João 1:6 a João 14:15?",
+    "cue": "O que liga 2 João 1:6 a João 14:15?",
+    "verseRef": "2 João 1:6",
+    "passageText": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor.",
+    "passageA": {
+      "ref": "2 João 1:6",
+      "text": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor."
+    },
+    "passageB": {
+      "ref": "João 14:15",
+      "text": "Se vós me amais, guardareis os meus mandamentos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor guarda os mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "Amor dispensa obedecer"
+      },
+      {
+        "id": "c",
+        "text": "Mandamentos sem amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que andemos segundo os seus mandamentos",
+    "feedbackCorrect": "Jesus e João ligam o amor à guarda do que Deus mandou.",
+    "feedbackWrong": {
+      "b": "Os dois textos unem amor e obediência.",
+      "c": "Nos dois, obedecer nasce do amor, não anda sem ele."
+    },
+    "hint": "Compare o que os dois dizem sobre amar.",
+    "learningObjective": "Relacionar amor e obediência nos dois textos.",
+    "evidence": [
+      "2 João 1:6",
+      "João 14:15"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-03-01",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 João 1:9, permanecer no ensino de Cristo é opcional para ter o Pai e o Filho.",
+    "prompt": "Em 2 João 1:9, permanecer no ensino de Cristo é opcional para ter o Pai e o Filho.",
+    "cue": "Em 2 João 1:9, permanecer no ensino de Cristo é opcional para ter o Pai e o Filho.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "O texto liga ter o Pai e o Filho a perseverar no ensino de Cristo.",
+    "feedbackWrong": {
+      "true": "Releia 2 João 1:9 e veja os dois retratos lado a lado."
+    },
+    "hint": "Compare quem se desvia com quem persevera.",
+    "learningObjective": "Interpretar o chamado a permanecer em Cristo.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-03-02",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 João 1:7, toque o trecho que mostra a confissão verdadeira sobre Jesus.",
+    "prompt": "Em 2 João 1:7, toque o trecho que mostra a confissão verdadeira sobre Jesus.",
+    "cue": "Em 2 João 1:7, toque o trecho que mostra a confissão verdadeira sobre Jesus.",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos enganadores"
+      },
+      {
+        "id": "b",
+        "text": "veio em carne"
+      },
+      {
+        "id": "c",
+        "text": "pelo mundo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não confessam que Jesus Cristo veio em carne",
+    "feedbackCorrect": "A confissão em jogo é sobre Jesus ter vindo de verdade entre nós.",
+    "feedbackWrong": {
+      "a": "Isso descreve quem espalha o ensino falso.",
+      "c": "Isso é onde eles andam, não o que se confessa."
+    },
+    "hint": "Procure o que deve ser confessado sobre Jesus.",
+    "learningObjective": "Sustentar com o texto a confissão sobre Jesus.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-03-03",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 João 1:7 a 9 sustenta diante de ensinos que negam Jesus?",
+    "prompt": "Que leitura 2 João 1:7 a 9 sustenta diante de ensinos que negam Jesus?",
+    "cue": "Que leitura 2 João 1:7 a 9 sustenta diante de ensinos que negam Jesus?",
+    "verseRef": "2 João 1:7–8",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo. Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todo ensino novo merece apoio imediato"
+      },
+      {
+        "id": "b",
+        "text": "Amor aceita qualquer ensino sobre Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer em Cristo guarda amor e verdade"
+      },
+      {
+        "id": "d",
+        "text": "Verdade certa dispensa amar pessoas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço",
+    "feedbackCorrect": "A carta protege a comunidade sem abandonar o amor que a define.",
+    "feedbackWrong": {
+      "a": "O texto manda cuidar, e não apoiar sem discernir.",
+      "b": "Quem nega Jesus vindo em carne é chamado de enganador.",
+      "d": "O pedido de amar uns aos outros segue de pé na carta."
+    },
+    "hint": "Junte o alerta do texto com o pedido de amar.",
+    "learningObjective": "Escolher a interpretação que une amor e verdade.",
+    "evidence": [
+      "2 João 1:7–8"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-03-04",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 2 João 1:7 a 9?",
+    "prompt": "Qual sequência revela o sentido de 2 João 1:7 a 9?",
+    "cue": "Qual sequência revela o sentido de 2 João 1:7 a 9?",
+    "verseRef": "2 João 1:7–8",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo. Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar Jesus vindo em carne"
+      },
+      {
+        "id": "b",
+        "text": "Permanecer no ensino de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Ter o Pai e o Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não confessam que Jesus Cristo veio em carne",
+    "feedbackCorrect": "A confissão sobre Jesus sustenta o permanecer que leva ao Pai e ao Filho.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão sobre Jesus; o fruto vem por último."
+    },
+    "hint": "Siga da confissão ao fruto de permanecer.",
+    "learningObjective": "Ver a lógica do trecho sobre permanecer.",
+    "evidence": [
+      "2 João 1:7–8"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-03-05",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 João 1:9, o que faz quem tem tanto o Pai quanto o Filho?",
+    "prompt": "Em 2 João 1:9, o que faz quem tem tanto o Pai quanto o Filho?",
+    "cue": "Em 2 João 1:9, o que faz quem tem tanto o Pai quanto o Filho?",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "template": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem ___ nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "persevera"
+      },
+      {
+        "id": "b",
+        "text": "se desvia"
+      },
+      {
+        "id": "c",
+        "text": "duvida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "O fruto prometido é de quem continua no ensino de Cristo.",
+    "feedbackWrong": {
+      "b": "Quem se desvia é o retrato contrário do mesmo versículo.",
+      "c": "O texto não premia a dúvida, mas a permanência."
+    },
+    "hint": "É o verbo oposto a se desviar.",
+    "learningObjective": "Lembrar o verbo que carrega o sentido do trecho.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-03-06",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 João 1:9 a 1 João 2:23?",
+    "prompt": "O que liga 2 João 1:9 a 1 João 2:23?",
+    "cue": "O que liga 2 João 1:9 a 1 João 2:23?",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "passageA": {
+      "ref": "2 João 1:9",
+      "text": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho."
+    },
+    "passageB": {
+      "ref": "1 João 2:23",
+      "text": "Quem nega o Filho, esse não tem o Pai; aquele que confessa o Filho tem também o Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar o Filho, ter o Pai"
+      },
+      {
+        "id": "b",
+        "text": "Negar o Filho basta"
+      },
+      {
+        "id": "c",
+        "text": "Pai sem o Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esse tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "Nas duas cartas, Pai e Filho são conhecidos juntos, nunca separados.",
+    "feedbackWrong": {
+      "b": "Negar o Filho fecha o caminho ao Pai, nos dois textos.",
+      "c": "O Pai não é apresentado sem o Filho em nenhum deles."
+    },
+    "hint": "Veja a ligação entre Pai e Filho nos dois.",
+    "learningObjective": "Ligar a permanência em Cristo nas duas cartas.",
+    "evidence": [
+      "2 João 1:9",
+      "1 João 2:23"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-01",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 4:7, todo aquele que ama é nascido do esforço humano e conhece a si mesmo.",
+    "prompt": "Em 1 João 4:7, todo aquele que ama é nascido do esforço humano e conhece a si mesmo.",
+    "cue": "Em 1 João 4:7, todo aquele que ama é nascido do esforço humano e conhece a si mesmo.",
+    "verseRef": "1 João 4:7",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "todo aquele que ama é nascido de Deus e conhece a Deus",
+    "feedbackCorrect": "O texto liga o amar a nascer de Deus e a conhecê-lo.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1 João 4:7 e veja a origem de quem ama."
+    },
+    "hint": "Veja de quem nasce quem ama.",
+    "learningObjective": "Revisar a origem de quem ama.",
+    "evidence": [
+      "1 João 4:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-02",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 1:5, toque o que não há em Deus de jeito nenhum.",
+    "prompt": "Em 1 João 1:5, toque o que não há em Deus de jeito nenhum.",
+    "cue": "Em 1 João 1:5, toque o que não há em Deus de jeito nenhum.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "treva nenhuma"
+      },
+      {
+        "id": "b",
+        "text": "mensagem"
+      },
+      {
+        "id": "c",
+        "text": "vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nele não há treva nenhuma",
+    "feedbackCorrect": "Em Deus não há nada escuro ou escondido.",
+    "feedbackWrong": {
+      "b": "Mensagem é o que João anuncia, não o que falta em Deus.",
+      "c": "Vocês são os ouvintes, não o que falta em Deus."
+    },
+    "hint": "Leia a negação no fim do versículo.",
+    "learningObjective": "Revisar como João apresenta Deus.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-03",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 João 1:7, o que os enganadores não confessam sobre Jesus?",
+    "prompt": "Segundo 2 João 1:7, o que os enganadores não confessam sobre Jesus?",
+    "cue": "Segundo 2 João 1:7, o que os enganadores não confessam sobre Jesus?",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ele veio em carne"
+      },
+      {
+        "id": "b",
+        "text": "Que ele falou por parábolas"
+      },
+      {
+        "id": "c",
+        "text": "Que ele ensinou nas sinagogas"
+      },
+      {
+        "id": "d",
+        "text": "Que ele teve discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não confessam que Jesus Cristo veio em carne",
+    "feedbackCorrect": "A confissão em jogo é Jesus ter vindo de verdade entre nós.",
+    "feedbackWrong": {
+      "b": "As parábolas não são o tema deste alerta.",
+      "c": "O ponto da carta é a vinda de Jesus, não seus lugares de ensino.",
+      "d": "Ter discípulos não é o ensino negado aqui."
+    },
+    "hint": "Leia a confissão negada no versículo.",
+    "learningObjective": "Revisar o alerta contra os enganadores.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-04",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 4:10 na ordem do texto.",
+    "prompt": "Monte 1 João 4:10 na ordem do texto.",
+    "cue": "Monte 1 João 4:10 na ordem do texto.",
+    "verseRef": "1 João 4:10",
+    "passageText": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não que tenhamos amado a Deus"
+      },
+      {
+        "id": "b",
+        "text": "mas que Ele nos amou"
+      },
+      {
+        "id": "c",
+        "text": "enviou Seu Filho como propiciação pelos nossos pecados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas que Ele nos amou",
+    "feedbackCorrect": "Primeiro a correção, depois o amor de Deus e o envio do Filho.",
+    "feedbackWrong": {
+      "default": "Comece pela correção; o envio do Filho fecha o versículo."
+    },
+    "hint": "O versículo começa corrigindo uma ideia.",
+    "learningObjective": "Reconhecer a sequência de 1 João 4:10.",
+    "evidence": [
+      "1 João 4:10"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-05",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 4:8, o que faz quem, segundo o texto, não conhece a Deus?",
+    "prompt": "Em 1 João 4:8, o que faz quem, segundo o texto, não conhece a Deus?",
+    "cue": "Em 1 João 4:8, o que faz quem, segundo o texto, não conhece a Deus?",
+    "verseRef": "1 João 4:8",
+    "passageText": "Aquele que não ama não conhece a Deus, pois Deus é amor.",
+    "template": "Aquele que não ama não ___ a Deus, pois Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhece"
+      },
+      {
+        "id": "b",
+        "text": "ouve"
+      },
+      {
+        "id": "c",
+        "text": "ama"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aquele que não ama não conhece a Deus",
+    "feedbackCorrect": "Quem não ama, diz João, ainda não conhece a Deus de verdade. Nota: a lacuna recai sobre o verbo negado.",
+    "feedbackWrong": {
+      "b": "Ouvir aparece em outro contexto das cartas.",
+      "c": "Esse verbo já está na primeira negação do versículo."
+    },
+    "hint": "É o segundo verbo negado do versículo.",
+    "learningObjective": "Revisar a ligação entre amar e conhecer.",
+    "evidence": [
+      "1 João 4:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-06",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:7 comunica que se liga a este contexto?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "passageA": {
+      "ref": "1 João 1:7",
+      "text": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A comunhão com Deus aparece na vida com os irmãos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé vivida sozinha"
+      },
+      {
+        "id": "b",
+        "text": "Comunhão na luz de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Trevas com comunhão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "temos comunhão uns com os outros",
+    "feedbackCorrect": "Andar na luz e viver com os irmãos aparecem juntos.",
+    "feedbackWrong": {
+      "a": "O texto liga esse andar à vida partilhada.",
+      "c": "Trevas e comunhão são caminhos opostos no capítulo."
+    },
+    "hint": "Veja o fruto citado no meio do versículo.",
+    "learningObjective": "Ligar andar na luz à comunhão.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-07",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 João 1:4, toque como João ficou ao saber dos filhos na verdade.",
+    "prompt": "Em 2 João 1:4, toque como João ficou ao saber dos filhos na verdade.",
+    "cue": "Em 2 João 1:4, toque como João ficou ao saber dos filhos na verdade.",
+    "verseRef": "2 João 1:4",
+    "passageText": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade, conforme o mandamento que recebemos do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "na verdade"
+      },
+      {
+        "id": "b",
+        "text": "teus filhos"
+      },
+      {
+        "id": "c",
+        "text": "sobremodo alegre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Fiquei sobremodo alegre em saber",
+    "feedbackCorrect": "Ver vidas na verdade é motivo de grande alegria para João.",
+    "feedbackWrong": {
+      "a": "Isso é o caminho deles, não o sentimento dele.",
+      "b": "Isso é de quem João fala, não como ele ficou."
+    },
+    "hint": "Procure o sentimento logo no começo.",
+    "learningObjective": "Revisar a alegria de João na carta.",
+    "evidence": [
+      "2 João 1:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-sem-cj-boss-08",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 1:9 na ordem do texto.",
+    "prompt": "Monte 1 João 1:9 na ordem do texto.",
+    "cue": "Monte 1 João 1:9 na ordem do texto.",
+    "verseRef": "1 João 1:9",
+    "passageText": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se confessarmos os nossos pecados"
+      },
+      {
+        "id": "b",
+        "text": "Ele é fiel e justo para nos perdoar os pecados"
+      },
+      {
+        "id": "c",
+        "text": "nos purificar de toda injustiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se confessarmos os nossos pecados",
+    "feedbackCorrect": "Primeiro a confissão, depois quem Deus é e o que ele faz.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão; a purificação fecha o versículo."
+    },
+    "hint": "O versículo começa com a nossa parte.",
+    "learningObjective": "Reconhecer a sequência de 1 João 1:9.",
+    "evidence": [
+      "1 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-01",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 1:6 e 2 João 1:6, andar nas trevas e andar nos mandamentos descrevem o mesmo caminho de amor.",
+    "prompt": "Em 1 João 1:6 e 2 João 1:6, andar nas trevas e andar nos mandamentos descrevem o mesmo caminho de amor.",
+    "cue": "Em 1 João 1:6 e 2 João 1:6, andar nas trevas e andar nos mandamentos descrevem o mesmo caminho de amor.",
+    "verseRef": "1 João 1:6",
+    "passageText": "Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mentimos e não praticamos a verdade",
+    "feedbackCorrect": "Um caminho é chamado de mentira; o outro define o amor verdadeiro.",
+    "feedbackWrong": {
+      "true": "Compare o nome que cada carta dá a esses dois caminhos."
+    },
+    "hint": "Compare os dois modos de andar citados.",
+    "learningObjective": "Compreender o contraste entre os caminhos.",
+    "evidence": [
+      "1 João 1:6"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-02",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 1:7, toque a palavra que vira o caminho das trevas para o da luz.",
+    "prompt": "Em 1 João 1:7, toque a palavra que vira o caminho das trevas para o da luz.",
+    "cue": "Em 1 João 1:7, toque a palavra que vira o caminho das trevas para o da luz.",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outros"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "comunhão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Se, porém, andarmos na luz",
+    "feedbackCorrect": "Essa palavra marca a virada para o outro caminho possível.",
+    "feedbackWrong": {
+      "a": "Outros fala dos irmãos, não da mudança.",
+      "c": "Comunhão é o fruto do novo caminho, não a virada."
+    },
+    "hint": "Procure uma palavra curta logo no começo.",
+    "learningObjective": "Reconhecer o marcador de contraste revisado.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-03",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o amor de Deus em 1 João 4 se liga ao andar em 2 João 1:6?",
+    "prompt": "Como o amor de Deus em 1 João 4 se liga ao andar em 2 João 1:6?",
+    "cue": "Como o amor de Deus em 1 João 4 se liga ao andar em 2 João 1:6?",
+    "verseRef": "1 João 4:11",
+    "passageText": "Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O caminho importa mais que as pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Quem foi amado vive amando no caminho de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Quem foi amado não precisa mais de caminho"
+      },
+      {
+        "id": "d",
+        "text": "Amar a Deus dispensa amar os irmãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "devemos nós também amar uns aos outros",
+    "feedbackCorrect": "O amor recebido vira vida prática entre irmãos e no caminho de Deus.",
+    "feedbackWrong": {
+      "a": "O caminho existe para as pessoas serem amadas.",
+      "c": "As cartas dão um caminho concreto a esse amor.",
+      "d": "Amar os irmãos é justamente a resposta esperada."
+    },
+    "hint": "Junte a resposta de uma carta com a definição da outra.",
+    "learningObjective": "Relacionar o amor recebido com o caminho vivido.",
+    "evidence": [
+      "1 João 4:11"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-04",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as três marcas das cartas de João?",
+    "prompt": "Como se encadeiam as três marcas das cartas de João?",
+    "cue": "Como se encadeiam as três marcas das cartas de João?",
+    "verseRef": "1 João 1:5–6",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma. Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é luz e chama à confissão"
+      },
+      {
+        "id": "b",
+        "text": "Deus é amor e envia o Filho"
+      },
+      {
+        "id": "c",
+        "text": "Amor anda nos mandamentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "Luz, amor e caminho aparecem nessa ordem nas cenas revisadas.",
+    "feedbackWrong": {
+      "default": "Siga a ordem das cenas, da primeira carta à segunda."
+    },
+    "hint": "Siga a ordem em que as cenas apareceram.",
+    "learningObjective": "Compreender o fio que une as três cenas.",
+    "evidence": [
+      "1 João 1:5–6"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-05",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 4:7, todo aquele que ama é o quê de Deus?",
+    "prompt": "Em 1 João 4:7, todo aquele que ama é o quê de Deus?",
+    "cue": "Em 1 João 4:7, todo aquele que ama é o quê de Deus?",
+    "verseRef": "1 João 4:7",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus.",
+    "template": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é ___ de Deus e conhece a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "enviado"
+      },
+      {
+        "id": "b",
+        "text": "nascido"
+      },
+      {
+        "id": "c",
+        "text": "chamado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todo aquele que ama é nascido de Deus",
+    "feedbackCorrect": "Amar é retrato de uma vida que nasceu de Deus.",
+    "feedbackWrong": {
+      "a": "Enviado descreve o Filho, não quem ama.",
+      "c": "O texto usa um verbo de nascimento, não de chamado."
+    },
+    "hint": "É uma imagem de nascimento e vida nova.",
+    "learningObjective": "Compreender o retrato de quem ama.",
+    "evidence": [
+      "1 João 4:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-06",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 4:11 a Romanos 5:8?",
+    "prompt": "O que liga 1 João 4:11 a Romanos 5:8?",
+    "cue": "O que liga 1 João 4:11 a Romanos 5:8?",
+    "verseRef": "1 João 4:11",
+    "passageText": "Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros.",
+    "passageA": {
+      "ref": "1 João 4:11",
+      "text": "Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros."
+    },
+    "passageB": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amados por Deus, amamos"
+      },
+      {
+        "id": "b",
+        "text": "Amor só depois de merecer"
+      },
+      {
+        "id": "c",
+        "text": "Deus ama de longe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se Deus nos amou de tal maneira, devemos nós também amar uns aos outros",
+    "feedbackCorrect": "O amor que Deus provou primeiro gera amor entre os irmãos.",
+    "feedbackWrong": {
+      "b": "Deus amou sem esperar merecimento, diz Paulo.",
+      "c": "A cruz mostra um amor que se aproxima, não distância."
+    },
+    "hint": "Veja a ordem entre ser amado e amar.",
+    "learningObjective": "Relacionar ser amado por Deus com amar.",
+    "evidence": [
+      "1 João 4:11",
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-07",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 João 1:8, toque o que os leitores devem receber por inteiro.",
+    "prompt": "Em 2 João 1:8, toque o que os leitores devem receber por inteiro.",
+    "cue": "Em 2 João 1:8, toque o que os leitores devem receber por inteiro.",
+    "verseRef": "2 João 1:8",
+    "passageText": "Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocês mesmos"
+      },
+      {
+        "id": "b",
+        "text": "galardão completo"
+      },
+      {
+        "id": "c",
+        "text": "com esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas para que recebam o galardão completo",
+    "feedbackCorrect": "O cuidado com a verdade protege um fruto que não deve se perder.",
+    "feedbackWrong": {
+      "a": "Isso é quem deve se cuidar, não o que recebe.",
+      "c": "Isso descreve o trabalho feito, não a recompensa."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Revisar o cuidado pedido na segunda carta.",
+    "evidence": [
+      "2 João 1:8"
+    ]
+  },
+  {
+    "id": "cartas-joao-cam-cj-boss-08",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o cuidado nas cartas de João?",
+    "prompt": "Como avança o cuidado nas cartas de João?",
+    "cue": "Como avança o cuidado nas cartas de João?",
+    "verseRef": "1 João 1:8–9",
+    "passageText": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a verdade não habita em nós. Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir a mensagem de João"
+      },
+      {
+        "id": "b",
+        "text": "Andar na luz com os irmãos"
+      },
+      {
+        "id": "c",
+        "text": "Confessar e ser purificado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se confessarmos os nossos pecados",
+    "feedbackCorrect": "A mensagem ouvida vira caminho, e o caminho inclui confessar.",
+    "feedbackWrong": {
+      "default": "Comece por ouvir; a purificação fecha a sequência."
+    },
+    "hint": "A confissão é o ponto de chegada.",
+    "learningObjective": "Compreender o avanço da mensagem à prática.",
+    "evidence": [
+      "1 João 1:8–9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-01",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Nas cartas de João, luz, amor e verdade descrevem uma só vida de comunhão com Deus e com os irmãos.",
+    "prompt": "Nas cartas de João, luz, amor e verdade descrevem uma só vida de comunhão com Deus e com os irmãos.",
+    "cue": "Nas cartas de João, luz, amor e verdade descrevem uma só vida de comunhão com Deus e com os irmãos.",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "temos comunhão uns com os outros",
+    "feedbackCorrect": "As três marcas aparecem juntas numa mesma vida diante de Deus.",
+    "feedbackWrong": {
+      "false": "Releia as cenas e veja como as marcas se completam."
+    },
+    "hint": "Pense nas três cenas juntas, não separadas.",
+    "learningObjective": "Interpretar a unidade das cartas de João.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-02",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 1:9, toque o trecho que mostra como Deus é ao perdoar.",
+    "prompt": "Em 1 João 1:9, toque o trecho que mostra como Deus é ao perdoar.",
+    "cue": "Em 1 João 1:9, toque o trecho que mostra como Deus é ao perdoar.",
+    "verseRef": "1 João 1:9",
+    "passageText": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda injustiça"
+      },
+      {
+        "id": "b",
+        "text": "fiel e justo"
+      },
+      {
+        "id": "c",
+        "text": "nossos pecados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele é fiel e justo para nos perdoar os pecados",
+    "feedbackCorrect": "O perdão se apoia no caráter de Deus, não no nosso merecimento.",
+    "feedbackWrong": {
+      "a": "Isso é aquilo de que ele purifica.",
+      "c": "Isso é o que confessamos, não como Deus é."
+    },
+    "hint": "Procure a descrição de Deus no versículo.",
+    "learningObjective": "Sustentar o caráter de Deus ao perdoar.",
+    "evidence": [
+      "1 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-03",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura resume bem as cartas de João revisadas?",
+    "prompt": "Que leitura resume bem as cartas de João revisadas?",
+    "cue": "Que leitura resume bem as cartas de João revisadas?",
+    "verseRef": "1 João 4:7–8",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus. Aquele que não ama não conhece a Deus, pois Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer a Deus dispensa os irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Basta afirmar a fé com palavras certas"
+      },
+      {
+        "id": "c",
+        "text": "Verdade e amor devem andar separados"
+      },
+      {
+        "id": "d",
+        "text": "Comunhão se mostra em luz, amor e verdade"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "todo aquele que ama é nascido de Deus e conhece a Deus",
+    "feedbackCorrect": "As cartas medem a comunhão pela vida vivida, não só pela afirmação.",
+    "feedbackWrong": {
+      "a": "Quem não ama não conhece a Deus, diz o texto.",
+      "b": "Dizer sem andar é chamado de mentira na primeira carta.",
+      "c": "A segunda carta une amor e verdade na mesma frase."
+    },
+    "hint": "Junte as marcas das três cenas.",
+    "learningObjective": "Escolher a síntese sustentada das cartas.",
+    "evidence": [
+      "1 João 4:7–8"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-04",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio das cartas de João?",
+    "prompt": "Qual sequência revela o fio das cartas de João?",
+    "cue": "Qual sequência revela o fio das cartas de João?",
+    "verseRef": "1 João 4:8–9",
+    "passageText": "Aquele que não ama não conhece a Deus, pois Deus é amor. Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus revela luz e amor"
+      },
+      {
+        "id": "b",
+        "text": "O Filho é enviado por nós"
+      },
+      {
+        "id": "c",
+        "text": "A igreja ama e guarda a verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pois Deus é amor",
+    "feedbackCorrect": "Quem Deus é vem primeiro; a vida da igreja é a resposta.",
+    "feedbackWrong": {
+      "default": "Comece por quem Deus é; a resposta da igreja fecha."
+    },
+    "hint": "Siga de Deus à resposta da igreja.",
+    "learningObjective": "Ver o fio teológico das cartas revisadas.",
+    "evidence": [
+      "1 João 4:8–9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-05",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 João 1:9, em que se deve permanecer para ter o Pai e o Filho?",
+    "prompt": "Em 2 João 1:9, em que se deve permanecer para ter o Pai e o Filho?",
+    "cue": "Em 2 João 1:9, em que se deve permanecer para ter o Pai e o Filho?",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "template": "Todo aquele que se desvia e não permanece na ___ de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "verdade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não permanece na doutrina de Cristo não tem Deus",
+    "feedbackCorrect": "Permanecer no ensino de Cristo guarda a comunhão com o Pai e o Filho.",
+    "feedbackWrong": {
+      "a": "O termo do texto é o ensino, não o prédio ou grupo.",
+      "c": "Verdade é tema da carta, mas a palavra aqui é outra."
+    },
+    "hint": "É a palavra ligada ao ensino de Cristo.",
+    "learningObjective": "Lembrar o termo central de permanecer.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-06",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 João 1:9 a 1 João 2:23?",
+    "prompt": "O que liga 2 João 1:9 a 1 João 2:23?",
+    "cue": "O que liga 2 João 1:9 a 1 João 2:23?",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "passageA": {
+      "ref": "2 João 1:9",
+      "text": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho."
+    },
+    "passageB": {
+      "ref": "1 João 2:23",
+      "text": "Quem nega o Filho, esse não tem o Pai; aquele que confessa o Filho tem também o Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai sem o Filho"
+      },
+      {
+        "id": "b",
+        "text": "Filho sem o Pai"
+      },
+      {
+        "id": "c",
+        "text": "Ter o Pai e o Filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "esse tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "Nas duas cartas, Pai e Filho são conhecidos juntos.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos separa o Pai do Filho.",
+      "b": "Quem tem o Filho tem também o Pai, dizem os textos."
+    },
+    "hint": "Veja quem é conhecido junto nos dois trechos.",
+    "learningObjective": "Ligar permanecer em Cristo nas cartas.",
+    "evidence": [
+      "2 João 1:9",
+      "1 João 2:23"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-07",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 4:4, toque a palavra que mostra quem vence na comparação com o mundo.",
+    "prompt": "Em 1 João 4:4, toque a palavra que mostra quem vence na comparação com o mundo.",
+    "cue": "Em 1 João 4:4, toque a palavra que mostra quem vence na comparação com o mundo.",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "maior"
+      },
+      {
+        "id": "b",
+        "text": "falsos profetas"
+      },
+      {
+        "id": "c",
+        "text": "no mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+    "feedbackCorrect": "A confiança está em quem habita nos crentes ser maior.",
+    "feedbackWrong": {
+      "b": "Isso é quem foi derrotado, não a palavra da comparação.",
+      "c": "Isso é o lado menor da comparação feita."
+    },
+    "hint": "Procure a palavra de comparação.",
+    "learningObjective": "Sustentar a confiança dos crentes no texto.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "cartas-joao-pro-cj-boss-08",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho diante do pecado nas cartas?",
+    "prompt": "Qual sequência revela o caminho diante do pecado nas cartas?",
+    "cue": "Qual sequência revela o caminho diante do pecado nas cartas?",
+    "verseRef": "1 João 1:8–9",
+    "passageText": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a verdade não habita em nós. Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar o pecado engana o coração"
+      },
+      {
+        "id": "b",
+        "text": "Confessar encontra perdão em Deus"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer em Cristo guarda a comunhão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "enganamos a nós mesmos",
+    "feedbackCorrect": "O erro negado é deixado, e a confissão leva a permanecer em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelo erro de negar; permanecer fecha o caminho."
+    },
+    "hint": "Siga do engano à permanência em Cristo.",
+    "learningObjective": "Ver o caminho diante do pecado nas cartas.",
+    "evidence": [
+      "1 João 1:8–9"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+Escreva a cena "levitico-sacerdocio-02-nadabe-e-abiu" da trilha "levitico" (Levítico).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "levitico",
+  "title": "Levítico",
+  "description": "Santidade, sacrifício e culto — viver perto de um Deus santo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Sacerdócio",
+ "mission": {
+  "slug": "levitico-sacerdocio-02-nadabe-e-abiu",
+  "title": "Nadabe e Abiú",
+  "type": "lesson",
+  "intro": "Fogo estranho — santidade não se brinca.",
+  "hookRef": "Levítico 8:23–24",
+  "hookNote": "Fogo estranho — santidade não se brinca.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre nadabe?"
+ },
+ "v2": {
+  "passageRef": "Levítico 8:23–24",
+  "context": "Fogo estranho — santidade não se brinca.",
+  "keyword": "Nadabe",
+  "verseRefs": [
+   "Levítico 10:1–2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Levítico 8:20–27",
+  "Levítico 10:1–2"
+ ],
+ "verses": [
+  {
+   "ref": "Levítico 8:20",
+   "text": "E ele partiu o carneiro em pedaços; e Moisés queimou a cabeça, os pedaços e a gordura."
+  },
+  {
+   "ref": "Levítico 8:21",
+   "text": "E Moisés lavou as entranhas e as pernas com água; e queimou todo o carneiro sobre o altar: era um holocausto de aroma agradável, uma oferta queimada ao Senhor, como o Senhor ordenara a Moisés."
+  },
+  {
+   "ref": "Levítico 8:22",
+   "text": "Então, trouxe o outro carneiro, o carneiro da consagração; e Arão e seus filhos impuseram as mãos sobre a cabeça do carneiro."
+  },
+  {
+   "ref": "Levítico 8:23",
+   "text": "E o imolou; Moisés tomou do seu sangue, e o colocou na ponta da orelha direita de Arão, no polegar da sua mão direita e no polegar do seu pé direito."
+  },
+  {
+   "ref": "Levítico 8:24",
+   "text": "Então, fez chegar os filhos de Arão; e Moisés colocou daquele sangue na ponta da orelha direita deles, no polegar da mão direita e no polegar do pé direito; e aspergiu Moisés o restante do sangue sobre o altar, ao redor."
+  },
+  {
+   "ref": "Levítico 8:25",
+   "text": "E tomou a gordura, a cauda, toda a gordura que está nas entranhas, o redenho do fígado, ambos os rins, e a sua gordura, e a coxa direita."
+  },
+  {
+   "ref": "Levítico 8:26",
+   "text": "Também do cesto dos pães ázimos, que estava diante do Senhor, tomou um bolo ázimo, um pão com azeite e uma obreia, e os colocou sobre a gordura e sobre a coxa direita."
+  },
+  {
+   "ref": "Levítico 8:27",
+   "text": "E entregou tudo isso nas mãos de Arão e de seus filhos e os moveu como oferta movida perante o Senhor."
+  },
+  {
+   "ref": "Levítico 10:1",
+   "text": "E os filhos de Arão, Nadabe e Abiú, tomaram cada um o seu incensário, colocaram fogo neles, puseram incenso sobre este e trouxeram fogo estranho diante do Senhor, o que Ele não lhes havia ordenado."
+  },
+  {
+   "ref": "Levítico 10:2",
+   "text": "E saiu fogo da presença do Senhor e os consumiu; e assim morreram perante o Senhor."
+  }
+ ]
+}
+</cena>

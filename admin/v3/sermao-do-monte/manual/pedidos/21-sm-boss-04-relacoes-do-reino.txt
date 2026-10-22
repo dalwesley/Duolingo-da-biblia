@@ -1,0 +1,159 @@
+Escreva a cena "sm-boss-04-relacoes-do-reino" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "Relações do Reino",
+ "mission": {
+  "slug": "sm-boss-04-relacoes-do-reino",
+  "title": "Desafio: Relações do Reino",
+  "type": "boss",
+  "intro": "Desafio da Cena 4. Mostre que entendeu pureza de coração, verdade na palavra, não retaliação e o amor radical aos inimigos.",
+  "hookRef": "Mateus 5:27–48",
+  "hookNote": "As antíteses do Sermão aprofundam a ética do Reino nas relações: pureza no olhar, integridade na palavra, generosidade sob agressão e amor…",
+  "centralInsight": "Amar só os amigos não distingue o discípulo",
+  "objective": "Meu coração, minha palavra e minha resposta ao mal refletem o Pai — ou só a cultura ao redor?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:27–48",
+  "context": "As antíteses do Sermão aprofundam a ética do Reino nas relações: pureza no olhar, integridade na palavra, generosidade sob agressão e amor que imita o Pai. Jesus não baixa o padrão — ele o leva ao coração. O desafio pergunta se você entendeu que o Reino transforma como tratamos corpo, palavra, injustiça e inimigos.",
+  "keyword": "Amor radical",
+  "verseRefs": [
+   "Mateus 5:44–48"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "sm-14-adulterio-do-coracao",
+   "title": "Adultério do coração",
+   "centralInsight": "O desejo pode adulterar antes do ato",
+   "ref": "Mateus 5:27–32"
+  },
+  {
+   "slug": "sm-15-sim-sim-nao-nao",
+   "title": "Sim, sim; não, não",
+   "centralInsight": "Palavra simples revela caráter",
+   "ref": "Mateus 5:33–37"
+  },
+  {
+   "slug": "sm-16-outra-face",
+   "title": "A outra face",
+   "centralInsight": "Lei limitava vingança; Jesus transcende",
+   "ref": "Mateus 5:38–42"
+  },
+  {
+   "slug": "sm-17-amor-aos-inimigos",
+   "title": "Amor aos inimigos",
+   "centralInsight": "Amar só os amigos não distingue o discípulo",
+   "ref": "Mateus 5:43–48"
+  }
+ ],
+ "ranges": [
+  "Mateus 5:27–32",
+  "Mateus 5:28",
+  "Mateus 5:33–37",
+  "Mateus 5:37",
+  "Mateus 5:38–42",
+  "Mateus 5:39",
+  "Mateus 5:43–48",
+  "Mateus 5:44"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:27",
+   "text": "Vocês ouviram o que foi dito aos antigos: Não cometerás adultério."
+  },
+  {
+   "ref": "Mateus 5:28",
+   "text": "Eu, porém, lhes digo que qualquer que olhar para uma mulher com intenção impura, já adulterou com ela em seu coração."
+  },
+  {
+   "ref": "Mateus 5:29",
+   "text": "Se o teu olho direito te faz tropeçar, arranca-o e lança-o longe de ti; pois é melhor que se perca um dos teus membros do que todo o teu corpo ser lançado no inferno."
+  },
+  {
+   "ref": "Mateus 5:30",
+   "text": "E, se a tua mão direita te faz tropeçar, corta-a e lança-a de ti; pois te convém que se perca um dos teus membros e não vá todo o teu corpo para o inferno."
+  },
+  {
+   "ref": "Mateus 5:31",
+   "text": "Também foi dito: Aquele que repudiar sua mulher, deve dar-lhe uma carta de divórcio."
+  },
+  {
+   "ref": "Mateus 5:32",
+   "text": "Eu, porém, vos digo que qualquer que repudiar sua mulher, exceto em caso de infidelidade, a faz tornar-se adúltera; e aquele que se casar com a repudiada comete adultério."
+  },
+  {
+   "ref": "Mateus 5:33",
+   "text": "Além disso, você ouviu que foi dito aos antigos: Não perjurarás, mas cumprirás rigorosamente os teus juramentos ao Senhor."
+  },
+  {
+   "ref": "Mateus 5:34",
+   "text": "Porém, eu digo a vocês que de modo algum jureis; nem pelo céu, por ser o trono de Deus;"
+  },
+  {
+   "ref": "Mateus 5:35",
+   "text": "nem pela terra, por ser o estrado de seus pés; nem por Jerusalém, por ser a cidade do grande Rei;"
+  },
+  {
+   "ref": "Mateus 5:36",
+   "text": "Nem jures pela tua cabeça, pois não tens poder para fazer um único fio de cabelo tornar-se branco ou preto."
+  },
+  {
+   "ref": "Mateus 5:37",
+   "text": "Seja, portanto, a palavra de vocês: \"Sim, sim; não, não; o que passar disso vem do maligno.\""
+  },
+  {
+   "ref": "Mateus 5:38",
+   "text": "Vocês ouvistes que foi dito: \"Olho por olho, dente por dente.\""
+  },
+  {
+   "ref": "Mateus 5:39",
+   "text": "Eu, porém, lhes digo: não resistam ao perverso; mas, se alguém lhe ferir a face direita, ofereça também a outra."
+  },
+  {
+   "ref": "Mateus 5:40",
+   "text": "E, se alguém quiser demandar contra você e tirar-lhe a túnica, entregue também o manto."
+  },
+  {
+   "ref": "Mateus 5:41",
+   "text": "E, se alguém te forçar a andar uma milha, vai com ele duas."
+  },
+  {
+   "ref": "Mateus 5:42",
+   "text": "Dê a quem te pede e não voltes as costas ao que deseja que lhe empreste."
+  },
+  {
+   "ref": "Mateus 5:43",
+   "text": "Vocês ouviram que foi dito: \"Amarás o teu próximo e odiarás o teu inimigo.\""
+  },
+  {
+   "ref": "Mateus 5:44",
+   "text": "Amem os seus inimigos, orem por aqueles que os perseguem, e pratiquem o bem para os que os odeiam."
+  },
+  {
+   "ref": "Mateus 5:45",
+   "text": "Para que vocês se tornem filhos do seu Pai que está nos céus; porque ele faz nascer o seu sol sobre maus e bons e faz chover sobre justos e injustos."
+  },
+  {
+   "ref": "Mateus 5:46",
+   "text": "Pois, se vocês amam somente aqueles que os amam, que recompensa vocês têm? Os publicanos também fazem o mesmo."
+  },
+  {
+   "ref": "Mateus 5:47",
+   "text": "E, se saudarem somente os seus irmãos, que fazem de diferente? Não fazem os publicanos também da mesma forma?"
+  },
+  {
+   "ref": "Mateus 5:48",
+   "text": "Sejam perfeitos, assim como é perfeito o seu Pai que está no céu"
+  }
+ ]
+}
+</cena>

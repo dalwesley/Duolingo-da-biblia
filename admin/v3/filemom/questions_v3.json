@@ -1,0 +1,2545 @@
+[
+  {
+    "id": "filemom-sem-fm-01-intercessao-01",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filemom 1:10, Paulo chama Onésimo de seu filho, gerado entre algemas.",
+    "prompt": "Em Filemom 1:10, Paulo chama Onésimo de seu filho, gerado entre algemas.",
+    "cue": "Em Filemom 1:10, Paulo chama Onésimo de seu filho, gerado entre algemas.",
+    "verseRef": "Filemom 1:10",
+    "passageText": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "meu filho Onésimo, que gerei entre algemas",
+    "feedbackCorrect": "Paulo chama Onésimo de filho e diz que o gerou entre algemas.",
+    "feedbackWrong": {
+      "false": "Releia Filemom 1:10 e veja como Paulo apresenta Onésimo."
+    },
+    "hint": "Olhe como Paulo apresenta Onésimo.",
+    "learningObjective": "Observar como Paulo apresenta Onésimo a Filemom.",
+    "evidence": [
+      "Filemom 1:10"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-01-intercessao-02",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filemom 1:7, toque o que foi reanimado pelo amor de Filemom.",
+    "prompt": "Em Filemom 1:7, toque o que foi reanimado pelo amor de Filemom.",
+    "cue": "Em Filemom 1:7, toque o que foi reanimado pelo amor de Filemom.",
+    "verseRef": "Filemom 1:7",
+    "passageText": "Pois, irmão, tive grande alegria e consolo pelo seu amor, pois o coração dos santos tem sido reanimado por meio de você.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "consolo"
+      },
+      {
+        "id": "c",
+        "text": "alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o coração dos santos tem sido reanimado",
+    "feedbackCorrect": "O texto diz que o coração dos santos foi reanimado por meio de Filemom.",
+    "feedbackWrong": {
+      "b": "O consolo é de Paulo; procure o que mudou nos santos.",
+      "c": "A alegria é de Paulo; o que foi reanimado nos santos vem depois."
+    },
+    "hint": "Procure o que Filemom reanimou nos outros.",
+    "learningObjective": "Identificar o efeito do amor de Filemom sobre os santos.",
+    "evidence": [
+      "Filemom 1:7"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-01-intercessao-03",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filemom 1:8, o que Paulo diz ter em Cristo sobre o que é apropriado?",
+    "prompt": "Segundo Filemom 1:8, o que Paulo diz ter em Cristo sobre o que é apropriado?",
+    "cue": "Segundo Filemom 1:8, o que Paulo diz ter em Cristo sobre o que é apropriado?",
+    "verseRef": "Filemom 1:8",
+    "passageText": "Por isso, embora eu tenha plena liberdade em Cristo para te mandar o que é apropriado,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plena liberdade para mandar"
+      },
+      {
+        "id": "b",
+        "text": "Permissão dada por Filemom"
+      },
+      {
+        "id": "c",
+        "text": "Uma ordem vinda de Roma"
+      },
+      {
+        "id": "d",
+        "text": "Apoio de uma igreja vizinha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tenha plena liberdade em Cristo para te mandar",
+    "feedbackCorrect": "Paulo afirma ter em Cristo plena liberdade para mandar o que é apropriado.",
+    "feedbackWrong": {
+      "b": "A liberdade que ele cita está em Cristo, não numa permissão de Filemom.",
+      "c": "Roma não aparece no versículo; a base citada é Cristo.",
+      "d": "Nenhuma igreja vizinha é citada como base dessa liberdade."
+    },
+    "hint": "Veja em quem Paulo fundamenta essa liberdade.",
+    "learningObjective": "Observar a liberdade que Paulo diz ter em Cristo.",
+    "evidence": [
+      "Filemom 1:8"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-01-intercessao-04",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filemom 1:11 na ordem do texto.",
+    "prompt": "Monte Filemom 1:11 na ordem do texto.",
+    "cue": "Monte Filemom 1:11 na ordem do texto.",
+    "verseRef": "Filemom 1:11",
+    "passageText": "o qual antes era inútil para ti; mas agora é muito útil, tanto para ti quanto para mim. Eu to estou enviando de volta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o qual antes era inútil para ti"
+      },
+      {
+        "id": "b",
+        "text": "mas agora é muito útil"
+      },
+      {
+        "id": "c",
+        "text": "tanto para ti quanto para mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora é muito útil",
+    "feedbackCorrect": "Antes inútil para Filemom, Onésimo agora é útil para Filemom e para Paulo.",
+    "feedbackWrong": {
+      "default": "Comece pelo antes de Onésimo; o agora vem em seguida."
+    },
+    "hint": "O versículo começa pelo passado de Onésimo.",
+    "learningObjective": "Reconhecer a sequência de Filemom 1:11.",
+    "evidence": [
+      "Filemom 1:11"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-01-intercessao-05",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filemom 1:9, em nome de que Paulo faz o pedido a Filemom?",
+    "prompt": "Em Filemom 1:9, em nome de que Paulo faz o pedido a Filemom?",
+    "cue": "Em Filemom 1:9, em nome de que Paulo faz o pedido a Filemom?",
+    "verseRef": "Filemom 1:9",
+    "passageText": "Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "template": "Peço-te, portanto, em nome do ___, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "options": [
+      {
+        "id": "a",
+        "text": "cargo"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "medo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em nome do amor",
+    "feedbackCorrect": "Paulo pede em nome do amor, e não pela força de um cargo.",
+    "feedbackWrong": {
+      "a": "Ele não usa um cargo para pedir; a base aparece antes de seu nome.",
+      "c": "O pedido não nasce do medo; Paulo declara outra base no versículo."
+    },
+    "hint": "Veja a base que Paulo declara para pedir.",
+    "learningObjective": "Lembrar a base do pedido de Paulo.",
+    "evidence": [
+      "Filemom 1:9"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-01-intercessao-06",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filemom 1:10 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:10 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:10 comunica que se liga a este contexto?",
+    "verseRef": "Filemom 1:10",
+    "passageText": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas.",
+    "passageA": {
+      "ref": "Filemom 1:10",
+      "text": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo está preso, mas ali Onésimo se tornou seu filho na fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho gerado entre algemas"
+      },
+      {
+        "id": "b",
+        "text": "Companheiro de viagem antiga"
+      },
+      {
+        "id": "c",
+        "text": "Filho de sangue de Paulo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "meu filho Onésimo, que gerei entre algemas",
+    "feedbackCorrect": "Mesmo preso, Paulo gerou Onésimo na fé e o chama de filho.",
+    "feedbackWrong": {
+      "b": "O vínculo citado não é uma viagem, e sim a prisão de Paulo.",
+      "c": "Paulo não fala de sangue; fala de um filho gerado entre algemas."
+    },
+    "hint": "Veja onde Paulo estava ao gerar Onésimo.",
+    "learningObjective": "Ligar Filemom 1:10 à prisão em que Onésimo se tornou filho de Paulo.",
+    "evidence": [
+      "Filemom 1:10"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-01-intercessao-01",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filemom 1:8–9, Paulo usa sua liberdade em Cristo para impor a Filemom o que deve fazer.",
+    "prompt": "Em Filemom 1:8–9, Paulo usa sua liberdade em Cristo para impor a Filemom o que deve fazer.",
+    "cue": "Em Filemom 1:8–9, Paulo usa sua liberdade em Cristo para impor a Filemom o que deve fazer.",
+    "verseRef": "Filemom 1:8–9",
+    "passageText": "Por isso, embora eu tenha plena liberdade em Cristo para te mandar o que é apropriado, Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Peço-te, portanto, em nome do amor",
+    "feedbackCorrect": "Paulo poderia mandar, mas escolhe pedir em nome do amor.",
+    "feedbackWrong": {
+      "true": "Ele diz que pede em nome do amor, e não que impõe sua vontade."
+    },
+    "hint": "Compare mandar com o que ele faz de fato.",
+    "learningObjective": "Compreender que Paulo troca a imposição pelo pedido.",
+    "evidence": [
+      "Filemom 1:8–9"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-01-intercessao-02",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filemom 1:14, toque a palavra que marca a virada na decisão de Paulo.",
+    "prompt": "Em Filemom 1:14, toque a palavra que marca a virada na decisão de Paulo.",
+    "cue": "Em Filemom 1:14, toque a palavra que marca a virada na decisão de Paulo.",
+    "verseRef": "Filemom 1:14",
+    "passageText": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nada"
+      },
+      {
+        "id": "b",
+        "text": "Porém"
+      },
+      {
+        "id": "c",
+        "text": "bondade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porém, não quis fazer nada",
+    "feedbackCorrect": "Depois de querer reter Onésimo, Paulo muda o rumo por respeito a Filemom.",
+    "feedbackWrong": {
+      "a": "Essa palavra diz o que Paulo não fez; a virada vem na primeira palavra.",
+      "c": "A bondade é o alvo da decisão; a virada aparece no começo."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Filemom 1:14.",
+    "evidence": [
+      "Filemom 1:14"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-01-intercessao-03",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Filemom 1:14 explica a forma do pedido de Paulo?",
+    "prompt": "Como Filemom 1:14 explica a forma do pedido de Paulo?",
+    "cue": "Como Filemom 1:14 explica a forma do pedido de Paulo?",
+    "verseRef": "Filemom 1:14",
+    "passageText": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele desiste de defender Onésimo diante de Filemom"
+      },
+      {
+        "id": "b",
+        "text": "Ele quer que Filemom decida bem por vontade própria"
+      },
+      {
+        "id": "c",
+        "text": "Ele entrega a decisão a uma autoridade romana"
+      },
+      {
+        "id": "d",
+        "text": "Ele manda Onésimo ficar sem consultar Filemom"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não quis fazer nada sem o teu consentimento",
+    "feedbackCorrect": "Paulo espera o consentimento para que o bem de Filemom seja livre.",
+    "feedbackWrong": {
+      "a": "Ele continua pedindo por Onésimo; só não decide no lugar de Filemom.",
+      "c": "Nenhuma autoridade romana entra na decisão citada no versículo.",
+      "d": "É o contrário; ele não quis agir sem Filemom concordar."
+    },
+    "hint": "Veja o que Paulo não quis dispensar de Filemom.",
+    "learningObjective": "Relacionar o pedido de Paulo ao consentimento de Filemom.",
+    "evidence": [
+      "Filemom 1:14"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-01-intercessao-04",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos em Filemom 1:7–9?",
+    "prompt": "Como se encadeiam os passos em Filemom 1:7–9?",
+    "cue": "Como se encadeiam os passos em Filemom 1:7–9?",
+    "verseRef": "Filemom 1:8–9",
+    "passageText": "Por isso, embora eu tenha plena liberdade em Cristo para te mandar o que é apropriado, Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo se alegra com o amor de Filemom"
+      },
+      {
+        "id": "b",
+        "text": "Paulo lembra que poderia mandar em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Paulo escolhe pedir em nome do amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em nome do amor",
+    "feedbackCorrect": "Do elogio ao amor, Paulo passa pela liberdade de mandar e chega ao pedido.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor de Filemom; o pedido pelo amor fecha o trecho."
+    },
+    "hint": "O pedido é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento do pedido de Paulo.",
+    "evidence": [
+      "Filemom 1:7",
+      "Filemom 1:8–9"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-01-intercessao-05",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filemom 1:14, sem o que de Filemom Paulo não quis agir?",
+    "prompt": "Em Filemom 1:14, sem o que de Filemom Paulo não quis agir?",
+    "cue": "Em Filemom 1:14, sem o que de Filemom Paulo não quis agir?",
+    "verseRef": "Filemom 1:14",
+    "passageText": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "template": "Porém, não quis fazer nada sem o teu ___, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "medo"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "consentimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sem o teu consentimento",
+    "feedbackCorrect": "Paulo não quis fazer nada sem Filemom concordar com a decisão.",
+    "feedbackWrong": {
+      "a": "O medo não é citado; Paulo espera uma concordância livre.",
+      "b": "O texto não fala de silêncio; fala de concordância de Filemom."
+    },
+    "hint": "Veja o que Paulo espera antes de agir.",
+    "learningObjective": "Lembrar o que Paulo respeita na decisão de Filemom.",
+    "evidence": [
+      "Filemom 1:14"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-01-intercessao-06",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filemom 1:10 a Colossenses 4:9?",
+    "prompt": "O que liga Filemom 1:10 a Colossenses 4:9?",
+    "cue": "O que liga Filemom 1:10 a Colossenses 4:9?",
+    "verseRef": "Filemom 1:10",
+    "passageText": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas.",
+    "passageA": {
+      "ref": "Filemom 1:10",
+      "text": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas."
+    },
+    "passageB": {
+      "ref": "Colossenses 4:9",
+      "text": "Juntamente com Onésimo, o irmão fiel e amado, que é do vosso meio; eles vos farão saber acerca de tudo o que está acontecendo aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo livre de algemas"
+      },
+      {
+        "id": "b",
+        "text": "Onésimo irmão fiel e amado"
+      },
+      {
+        "id": "c",
+        "text": "Onésimo escravo sem valor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "meu filho Onésimo",
+    "feedbackCorrect": "Nos dois textos, Onésimo aparece ligado a Paulo por um vínculo de fé e afeto.",
+    "feedbackWrong": {
+      "a": "Paulo segue preso aqui; a ponte está em quem Onésimo se tornou.",
+      "c": "Em Colossenses, Onésimo não é tratado como alguém sem valor."
+    },
+    "hint": "Veja como Onésimo é apresentado nos dois textos.",
+    "learningObjective": "Relacionar a apresentação de Onésimo em Filemom e Colossenses.",
+    "evidence": [
+      "Filemom 1:10",
+      "Colossenses 4:9"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-01-intercessao-01",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filemom 1:13–14, Paulo coloca o bem de Filemom acima do alívio que Onésimo lhe daria na prisão.",
+    "prompt": "Em Filemom 1:13–14, Paulo coloca o bem de Filemom acima do alívio que Onésimo lhe daria na prisão.",
+    "cue": "Em Filemom 1:13–14, Paulo coloca o bem de Filemom acima do alívio que Onésimo lhe daria na prisão.",
+    "verseRef": "Filemom 1:13–14",
+    "passageText": "Eu gostaria de mantê-lo comigo, para que me auxiliasse nas algemas que carrego por causa do evangelho. Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não quis fazer nada sem o teu consentimento",
+    "feedbackCorrect": "Mesmo querendo ajuda na prisão, Paulo não decide sem Filemom concordar.",
+    "feedbackWrong": {
+      "false": "Ele queria reter Onésimo, mas não quis agir sem consentimento."
+    },
+    "hint": "Veja o desejo de Paulo e o limite que ele impõe a si.",
+    "learningObjective": "Interpretar o respeito de Paulo pela decisão de Filemom.",
+    "evidence": [
+      "Filemom 1:13–14"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-01-intercessao-02",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filemom 1:12, toque o trecho que mostra quanto Onésimo vale para Paulo.",
+    "prompt": "Em Filemom 1:12, toque o trecho que mostra quanto Onésimo vale para Paulo.",
+    "cue": "Em Filemom 1:12, toque o trecho que mostra quanto Onésimo vale para Paulo.",
+    "verseRef": "Filemom 1:12",
+    "passageText": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu coração"
+      },
+      {
+        "id": "b",
+        "text": "própria pessoa"
+      },
+      {
+        "id": "c",
+        "text": "de volta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quero dizer, meu coração",
+    "feedbackCorrect": "Paulo não devolve um objeto; envia alguém que chama de seu próprio coração.",
+    "feedbackWrong": {
+      "b": "Essa expressão compara a recepção; o afeto maior vem no fim.",
+      "c": "Isso indica retorno, não o valor que Paulo dá a Onésimo."
+    },
+    "hint": "Procure como Paulo se refere a Onésimo no fim.",
+    "learningObjective": "Sustentar com o texto o valor de Onésimo para Paulo.",
+    "evidence": [
+      "Filemom 1:12"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-01-intercessao-03",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filemom 1:12 sustenta sobre o pedido de Paulo?",
+    "prompt": "Que leitura Filemom 1:12 sustenta sobre o pedido de Paulo?",
+    "cue": "Que leitura Filemom 1:12 sustenta sobre o pedido de Paulo?",
+    "verseRef": "Filemom 1:12",
+    "passageText": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo ameaça Filemom para forçar uma decisão"
+      },
+      {
+        "id": "b",
+        "text": "Paulo pede acolhida com afeto profundo por Onésimo"
+      },
+      {
+        "id": "c",
+        "text": "Paulo quer apenas recuperar um ajudante útil"
+      },
+      {
+        "id": "d",
+        "text": "Paulo trata Onésimo como objeto devolvido sem valor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como se fosse a minha própria pessoa",
+    "feedbackCorrect": "Paulo pede que Onésimo seja recebido como a ele mesmo, com afeto profundo.",
+    "feedbackWrong": {
+      "a": "Não há ameaça neste versículo; há um pedido carregado de afeto.",
+      "c": "A ajuda na prisão aparece em 1:13; aqui o destaque é o afeto.",
+      "d": "Quem é chamado de coração de Paulo não é tratado como objeto sem valor."
+    },
+    "hint": "Repare nas comparações que Paulo faz ao devolver Onésimo.",
+    "learningObjective": "Escolher a interpretação sustentada por Filemom 1:12.",
+    "evidence": [
+      "Filemom 1:12"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-01-intercessao-04",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filemom 1:8–14?",
+    "prompt": "Qual sequência revela o sentido de Filemom 1:8–14?",
+    "cue": "Qual sequência revela o sentido de Filemom 1:8–14?",
+    "verseRef": "Filemom 1:12",
+    "passageText": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo pede em nome do amor"
+      },
+      {
+        "id": "b",
+        "text": "Paulo devolve Onésimo a Filemom"
+      },
+      {
+        "id": "c",
+        "text": "A decisão fica com Filemom, livremente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Recebe-o de volta",
+    "feedbackCorrect": "Paulo pede pelo amor, devolve Onésimo e deixa a decisão livre com Filemom.",
+    "feedbackWrong": {
+      "default": "Comece pelo modo de pedir; a decisão livre de Filemom fecha o movimento."
+    },
+    "hint": "A liberdade de Filemom é o ponto final.",
+    "learningObjective": "Ver o movimento completo do apelo de Paulo.",
+    "evidence": [
+      "Filemom 1:9",
+      "Filemom 1:12",
+      "Filemom 1:14"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-01-intercessao-05",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filemom 1:13, em que condição Paulo carrega sua prisão por causa do evangelho?",
+    "prompt": "Em Filemom 1:13, em que condição Paulo carrega sua prisão por causa do evangelho?",
+    "cue": "Em Filemom 1:13, em que condição Paulo carrega sua prisão por causa do evangelho?",
+    "verseRef": "Filemom 1:13",
+    "passageText": "Eu gostaria de mantê-lo comigo, para que me auxiliasse nas algemas que carrego por causa do evangelho.",
+    "template": "Eu gostaria de mantê-lo comigo, para que me auxiliasse nas ___ que carrego por causa do evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "algemas"
+      },
+      {
+        "id": "b",
+        "text": "viagens"
+      },
+      {
+        "id": "c",
+        "text": "igrejas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nas algemas que carrego por causa do evangelho",
+    "feedbackCorrect": "Paulo escreve preso pelo evangelho e, mesmo assim, pensa em Filemom.",
+    "feedbackWrong": {
+      "b": "Ele não fala de viagens aqui; fala da condição em que está preso.",
+      "c": "Igrejas não são a condição citada; veja o que ele carrega."
+    },
+    "hint": "Veja a condição de Paulo ao escrever.",
+    "learningObjective": "Lembrar o termo que marca a prisão de Paulo pelo evangelho.",
+    "evidence": [
+      "Filemom 1:13"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-01-intercessao-06",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filemom 1:7 a 1 João 4:11?",
+    "prompt": "O que liga Filemom 1:7 a 1 João 4:11?",
+    "cue": "O que liga Filemom 1:7 a 1 João 4:11?",
+    "verseRef": "Filemom 1:7",
+    "passageText": "Pois, irmão, tive grande alegria e consolo pelo seu amor, pois o coração dos santos tem sido reanimado por meio de você.",
+    "passageA": {
+      "ref": "Filemom 1:7",
+      "text": "Pois, irmão, tive grande alegria e consolo pelo seu amor, pois o coração dos santos tem sido reanimado por meio de você."
+    },
+    "passageB": {
+      "ref": "1 João 4:11",
+      "text": "Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que reanima o coração"
+      },
+      {
+        "id": "b",
+        "text": "Fé sem amor ao irmão"
+      },
+      {
+        "id": "c",
+        "text": "Amor sem efeito nos outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o coração dos santos tem sido reanimado",
+    "feedbackCorrect": "O amor de Filemom reanima os santos; João liga esse amor ao amor recebido de Deus.",
+    "feedbackWrong": {
+      "b": "Nos dois textos, a fé se mostra no amor prático aos irmãos.",
+      "c": "O amor de Filemom tem efeito claro; ele reanima os santos."
+    },
+    "hint": "Compare o efeito desse sentimento nos irmãos.",
+    "learningObjective": "Ligar o amor de Filemom ao ensino de João sobre amar os irmãos.",
+    "evidence": [
+      "Filemom 1:7",
+      "1 João 4:11"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-02-reconciliacao-01",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filemom 1:16, Paulo pede que Onésimo seja recebido não mais como escravo, mas como irmão muito amado.",
+    "prompt": "Em Filemom 1:16, Paulo pede que Onésimo seja recebido não mais como escravo, mas como irmão muito amado.",
+    "cue": "Em Filemom 1:16, Paulo pede que Onésimo seja recebido não mais como escravo, mas como irmão muito amado.",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "A nova palavra sobre Onésimo é irmão muito amado, e não mais escravo.",
+    "feedbackWrong": {
+      "false": "Releia Filemom 1:16 e compare as duas formas de receber Onésimo."
+    },
+    "hint": "Compare a condição antiga com a nova.",
+    "learningObjective": "Observar a nova relação pedida por Paulo.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-02-reconciliacao-02",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filemom 1:16, toque a palavra que nomeia a antiga condição de Onésimo.",
+    "prompt": "Em Filemom 1:16, toque a palavra que nomeia a antiga condição de Onésimo.",
+    "cue": "Em Filemom 1:16, toque a palavra que nomeia a antiga condição de Onésimo.",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escravo"
+      },
+      {
+        "id": "b",
+        "text": "irmão"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não mais como um escravo",
+    "feedbackCorrect": "A condição que deve ficar para trás é a de escravo diante de Filemom.",
+    "feedbackWrong": {
+      "b": "Irmão é a nova relação pedida, não a condição antiga.",
+      "c": "Senhor aparece no fim do versículo, ligado à nova relação."
+    },
+    "hint": "Procure a condição que Paulo diz não valer mais.",
+    "learningObjective": "Identificar a condição antiga de Onésimo no texto.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-02-reconciliacao-03",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filemom 1:18, se Onésimo causou dano ou deve algo, o que Paulo manda fazer?",
+    "prompt": "Segundo Filemom 1:18, se Onésimo causou dano ou deve algo, o que Paulo manda fazer?",
+    "cue": "Segundo Filemom 1:18, se Onésimo causou dano ou deve algo, o que Paulo manda fazer?",
+    "verseRef": "Filemom 1:18",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedir a outra igreja que pague tudo"
+      },
+      {
+        "id": "b",
+        "text": "Exigir pagamento imediato de Onésimo"
+      },
+      {
+        "id": "c",
+        "text": "Colocar tudo na conta de Paulo"
+      },
+      {
+        "id": "d",
+        "text": "Ignorar o dano como se nada houvesse"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "coloca tudo em minha conta",
+    "feedbackCorrect": "Paulo assume a conta para que o dano não feche a porta da recepção.",
+    "feedbackWrong": {
+      "a": "Nenhuma outra igreja é citada; a conta vai para o próprio Paulo.",
+      "b": "Paulo não manda cobrar Onésimo; ele assume a conta em seu lugar.",
+      "d": "Ele não ignora o dano; nomeia o dano e se oferece para pagar."
+    },
+    "hint": "Veja em nome de quem fica a dívida.",
+    "learningObjective": "Observar o gesto concreto de Paulo diante de uma possível dívida.",
+    "evidence": [
+      "Filemom 1:18"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-02-reconciliacao-04",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filemom 1:16 na ordem do texto.",
+    "prompt": "Monte Filemom 1:16 na ordem do texto.",
+    "cue": "Monte Filemom 1:16 na ordem do texto.",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não mais como um escravo"
+      },
+      {
+        "id": "b",
+        "text": "antes, muito mais do que um escravo"
+      },
+      {
+        "id": "c",
+        "text": "como um irmão muito amado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "O versículo sai da condição antiga e chega à nova; irmão muito amado.",
+    "feedbackWrong": {
+      "default": "Comece negando a condição antiga; o irmão amado fecha o versículo."
+    },
+    "hint": "A nova relação aparece no fim da frase.",
+    "learningObjective": "Reconhecer a sequência de Filemom 1:16.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-02-reconciliacao-05",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filemom 1:17, como Filemom deve considerar Paulo para receber Onésimo como a ele?",
+    "prompt": "Em Filemom 1:17, como Filemom deve considerar Paulo para receber Onésimo como a ele?",
+    "cue": "Em Filemom 1:17, como Filemom deve considerar Paulo para receber Onésimo como a ele?",
+    "verseRef": "Filemom 1:17",
+    "passageText": "Se, portanto, tu me consideras um companheiro, recebe-o, como se fosse eu.",
+    "template": "Se, portanto, tu me consideras um ___, recebe-o, como se fosse eu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "credor"
+      },
+      {
+        "id": "b",
+        "text": "companheiro"
+      },
+      {
+        "id": "c",
+        "text": "estranho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tu me consideras um companheiro",
+    "feedbackCorrect": "Se Paulo é companheiro de Filemom, Onésimo deve ser recebido como Paulo.",
+    "feedbackWrong": {
+      "a": "Paulo não se apresenta cobrando; ele apela ao vínculo entre eles.",
+      "c": "Um estranho não sustenta o pedido; o vínculo citado é próximo."
+    },
+    "hint": "Veja o vínculo entre Paulo e Filemom.",
+    "learningObjective": "Lembrar o vínculo que sustenta o pedido de recepção.",
+    "evidence": [
+      "Filemom 1:17"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-02-reconciliacao-06",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filemom 1:17 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:17 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:17 comunica que se liga a este contexto?",
+    "verseRef": "Filemom 1:17",
+    "passageText": "Se, portanto, tu me consideras um companheiro, recebe-o, como se fosse eu.",
+    "passageA": {
+      "ref": "Filemom 1:17",
+      "text": "Se, portanto, tu me consideras um companheiro, recebe-o, como se fosse eu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo pede que Filemom acolha Onésimo do mesmo modo que acolheria o próprio Paulo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Receber como um estranho"
+      },
+      {
+        "id": "b",
+        "text": "Receber só por obrigação"
+      },
+      {
+        "id": "c",
+        "text": "Receber como ao próprio Paulo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "recebe-o, como se fosse eu",
+    "feedbackCorrect": "A medida da recepção de Onésimo é a recepção que Filemom daria a Paulo.",
+    "feedbackWrong": {
+      "a": "Onésimo não deve ser tratado como estranho, e sim como o próprio Paulo.",
+      "b": "A comparação do versículo é com Paulo, não com uma obrigação fria."
+    },
+    "hint": "Veja a comparação que Paulo faz consigo mesmo.",
+    "learningObjective": "Ligar Filemom 1:17 à recepção de Onésimo como a Paulo.",
+    "evidence": [
+      "Filemom 1:17"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-02-reconciliacao-01",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filemom 1:15, Paulo afirma com certeza absoluta por que Onésimo se distanciou de Filemom.",
+    "prompt": "Em Filemom 1:15, Paulo afirma com certeza absoluta por que Onésimo se distanciou de Filemom.",
+    "cue": "Em Filemom 1:15, Paulo afirma com certeza absoluta por que Onésimo se distanciou de Filemom.",
+    "verseRef": "Filemom 1:15",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Pois pode ser que ele tenha se distanciado",
+    "feedbackCorrect": "Paulo diz pode ser, apresentando uma leitura possível, e não uma certeza.",
+    "feedbackWrong": {
+      "true": "Repare nas primeiras palavras do versículo; Paulo fala em possibilidade."
+    },
+    "hint": "Repare no grau de certeza das primeiras palavras.",
+    "learningObjective": "Compreender a cautela de Paulo ao reler a distância de Onésimo.",
+    "evidence": [
+      "Filemom 1:15"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-02-reconciliacao-02",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filemom 1:15, toque a expressão que liga a distância ao modo de receber depois.",
+    "prompt": "Em Filemom 1:15, toque a expressão que liga a distância ao modo de receber depois.",
+    "cue": "Em Filemom 1:15, toque a expressão que liga a distância ao modo de receber depois.",
+    "verseRef": "Filemom 1:15",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para que"
+      },
+      {
+        "id": "b",
+        "text": "temporariamente"
+      },
+      {
+        "id": "c",
+        "text": "para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que o recebas para sempre",
+    "feedbackCorrect": "A expressão abre a finalidade; a distância pode servir a um reencontro duradouro.",
+    "feedbackWrong": {
+      "b": "Essa palavra mede o tempo da distância, não introduz a finalidade.",
+      "c": "Isso diz a duração do reencontro; a ligação vem logo antes."
+    },
+    "hint": "Procure a expressão que abre a finalidade.",
+    "learningObjective": "Reconhecer o marcador de propósito em Filemom 1:15.",
+    "evidence": [
+      "Filemom 1:15"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-02-reconciliacao-03",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Filemom 1:16 continua a ideia de receber Onésimo para sempre em 1:15?",
+    "prompt": "Como Filemom 1:16 continua a ideia de receber Onésimo para sempre em 1:15?",
+    "cue": "Como Filemom 1:16 continua a ideia de receber Onésimo para sempre em 1:15?",
+    "verseRef": "Filemom 1:15–16",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre. não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A recepção dura porque a relação mudou para irmão amado"
+      },
+      {
+        "id": "b",
+        "text": "Filemom deve esquecer Onésimo depois de recebê-lo"
+      },
+      {
+        "id": "c",
+        "text": "A recepção dura porque Onésimo provará ser mais obediente"
+      },
+      {
+        "id": "d",
+        "text": "Onésimo voltará ao mesmo lugar de antes, sem mudança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "O para sempre ganha rosto; Onésimo volta numa relação nova, de irmão amado.",
+    "feedbackWrong": {
+      "b": "Receber para sempre é o oposto de esquecer depois da recepção.",
+      "c": "O texto não condiciona a duração a um desempenho futuro de Onésimo.",
+      "d": "O versículo seguinte muda justamente o lugar relacional de Onésimo."
+    },
+    "hint": "Veja o que muda na relação entre os dois versículos.",
+    "learningObjective": "Relacionar a duração da recepção à nova relação de irmãos.",
+    "evidence": [
+      "Filemom 1:15–16"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-02-reconciliacao-04",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "prompt": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "cue": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "verseRef": "Filemom 1:15–16",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre. não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma distância por algum tempo"
+      },
+      {
+        "id": "b",
+        "text": "Um reencontro pensado para durar"
+      },
+      {
+        "id": "c",
+        "text": "Uma relação nova como irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que o recebas para sempre",
+    "feedbackCorrect": "Da distância temporária, o texto passa ao reencontro duradouro como irmãos.",
+    "feedbackWrong": {
+      "default": "Comece pela distância; a relação de irmãos é o ponto de chegada."
+    },
+    "hint": "A nova relação fecha o movimento.",
+    "learningObjective": "Compreender o encadeamento entre distância e nova relação.",
+    "evidence": [
+      "Filemom 1:15–16"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-02-reconciliacao-05",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filemom 1:15, por quanto tempo Onésimo se distanciou de Filemom?",
+    "prompt": "Em Filemom 1:15, por quanto tempo Onésimo se distanciou de Filemom?",
+    "cue": "Em Filemom 1:15, por quanto tempo Onésimo se distanciou de Filemom?",
+    "verseRef": "Filemom 1:15",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre.",
+    "template": "Pois pode ser que ele tenha se distanciado de ti ___, para que o recebas para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "secretamente"
+      },
+      {
+        "id": "b",
+        "text": "temporariamente"
+      },
+      {
+        "id": "c",
+        "text": "definitivamente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele tenha se distanciado de ti temporariamente",
+    "feedbackCorrect": "A distância foi por um tempo; o reencontro é pensado para sempre.",
+    "feedbackWrong": {
+      "a": "O texto mede o tempo da distância, não fala de segredo.",
+      "c": "O contraste do versículo é com o para sempre do reencontro."
+    },
+    "hint": "Compare o tempo da distância com o do reencontro.",
+    "learningObjective": "Lembrar a palavra que contrasta distância breve e recepção duradoura.",
+    "evidence": [
+      "Filemom 1:15"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-02-reconciliacao-06",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filemom 1:16 a Gálatas 3:28?",
+    "prompt": "O que liga Filemom 1:16 a Gálatas 3:28?",
+    "cue": "O que liga Filemom 1:16 a Gálatas 3:28?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "passageA": {
+      "ref": "Filemom 1:16",
+      "text": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor."
+    },
+    "passageB": {
+      "ref": "Gálatas 3:28",
+      "text": "Nisto não existe judeu nem grego; não há escravo nem liberto; não há homem nem mulher; porque todos vocês são um em Cristo Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A antiga condição é celebrada"
+      },
+      {
+        "id": "b",
+        "text": "Cristo mantém todas as barreiras"
+      },
+      {
+        "id": "c",
+        "text": "Em Cristo a relação muda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tanto na carne quanto no Senhor",
+    "feedbackCorrect": "Em Cristo, a relação entre escravo e senhor não continua como antes.",
+    "feedbackWrong": {
+      "a": "A condição antiga é justamente o que não deve definir Onésimo.",
+      "b": "Gálatas reúne diferentes em Cristo; não celebra barreiras mantidas."
+    },
+    "hint": "Veja o que acontece com as diferenças em Cristo.",
+    "learningObjective": "Relacionar a nova relação em Filemom à unidade em Cristo.",
+    "evidence": [
+      "Filemom 1:16",
+      "Gálatas 3:28"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-02-reconciliacao-01",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filemom 1:18–19, Paulo diz que receber Onésimo torna desnecessário assumir qualquer dívida dele.",
+    "prompt": "Em Filemom 1:18–19, Paulo diz que receber Onésimo torna desnecessário assumir qualquer dívida dele.",
+    "cue": "Em Filemom 1:18–19, Paulo diz que receber Onésimo torna desnecessário assumir qualquer dívida dele.",
+    "verseRef": "Filemom 1:18–19",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta. Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "coloca tudo em minha conta",
+    "feedbackCorrect": "Paulo não dispensa o custo; ele o assume e assina que pagará.",
+    "feedbackWrong": {
+      "true": "Releia o gesto de Paulo; ele põe a dívida em sua própria conta."
+    },
+    "hint": "Veja quem fica com a conta no fim.",
+    "learningObjective": "Interpretar o custo concreto assumido por Paulo.",
+    "evidence": [
+      "Filemom 1:18–19"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-02-reconciliacao-02",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filemom 1:19, toque o trecho que mostra o compromisso de Paulo de pagar.",
+    "prompt": "Em Filemom 1:19, toque o trecho que mostra o compromisso de Paulo de pagar.",
+    "cue": "Em Filemom 1:19, toque o trecho que mostra o compromisso de Paulo de pagar.",
+    "verseRef": "Filemom 1:19",
+    "passageText": "Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "própria mão"
+      },
+      {
+        "id": "b",
+        "text": "para comigo"
+      },
+      {
+        "id": "c",
+        "text": "eu pagarei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu pagarei",
+    "feedbackCorrect": "Paulo não só sugere; ele se compromete por escrito a pagar.",
+    "feedbackWrong": {
+      "a": "Isso mostra que ele assinou; o compromisso de pagar vem logo depois.",
+      "b": "Isso aponta outra dívida citada; o pagamento assumido vem antes."
+    },
+    "hint": "Procure a promessa direta de Paulo no versículo.",
+    "learningObjective": "Sustentar com o texto o compromisso de Paulo de pagar.",
+    "evidence": [
+      "Filemom 1:19"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-02-reconciliacao-03",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Filemom 1:18–19 sustenta sobre o gesto de Paulo?",
+    "prompt": "Que leitura Filemom 1:18–19 sustenta sobre o gesto de Paulo?",
+    "cue": "Que leitura Filemom 1:18–19 sustenta sobre o gesto de Paulo?",
+    "verseRef": "Filemom 1:18–19",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta. Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo assume o custo para abrir caminho à recepção"
+      },
+      {
+        "id": "b",
+        "text": "Paulo usa dinheiro para comprar a decisão de Filemom"
+      },
+      {
+        "id": "c",
+        "text": "Paulo prova que Onésimo não deve nada a ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Paulo transfere a dívida para a igreja de Filemom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Eu, Paulo, escrevi isto com a minha própria mão",
+    "feedbackCorrect": "Ao assumir a conta, Paulo remove um obstáculo para Filemom receber Onésimo.",
+    "feedbackWrong": {
+      "b": "Ele assume um custo de Onésimo; não oferece pagamento pela decisão.",
+      "c": "O texto trabalha com a hipótese de dano ou dívida, e não com inocência provada.",
+      "d": "A conta fica com o próprio Paulo, assinada por sua mão."
+    },
+    "hint": "Veja quem assume o custo e para que isso serve.",
+    "learningObjective": "Escolher a interpretação sustentada pelo gesto de Paulo.",
+    "evidence": [
+      "Filemom 1:18–19"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-02-reconciliacao-04",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filemom 1:18–19?",
+    "prompt": "Qual sequência revela o sentido de Filemom 1:18–19?",
+    "cue": "Qual sequência revela o sentido de Filemom 1:18–19?",
+    "verseRef": "Filemom 1:18–19",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta. Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo assume a dívida de Onésimo"
+      },
+      {
+        "id": "b",
+        "text": "Paulo assina o compromisso de pagar"
+      },
+      {
+        "id": "c",
+        "text": "Filemom pode receber sem cobrar Onésimo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "coloca tudo em minha conta",
+    "feedbackCorrect": "Paulo assume, assina o compromisso e abre caminho para uma recepção livre.",
+    "feedbackWrong": {
+      "default": "Comece pela conta assumida; a recepção sem cobrança é o efeito."
+    },
+    "hint": "O efeito sobre Filemom vem por último.",
+    "learningObjective": "Ver a lógica do gesto de Paulo em favor da recepção.",
+    "evidence": [
+      "Filemom 1:18–19"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-02-reconciliacao-05",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filemom 1:16, que palavra nomeia a nova relação de Onésimo com Filemom?",
+    "prompt": "Em Filemom 1:16, que palavra nomeia a nova relação de Onésimo com Filemom?",
+    "cue": "Em Filemom 1:16, que palavra nomeia a nova relação de Onésimo com Filemom?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "template": "não mais como um escravo; antes, muito mais do que um escravo, como um ___ muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigo"
+      },
+      {
+        "id": "b",
+        "text": "irmão"
+      },
+      {
+        "id": "c",
+        "text": "estranho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "A palavra que muda a relação é irmão; Onésimo deve ser recebido assim.",
+    "feedbackWrong": {
+      "a": "Inimigo vai contra o pedido de recepção feito por Paulo.",
+      "c": "Estranho mantém distância; o texto pede proximidade de família."
+    },
+    "hint": "Veja o novo nome da relação em Cristo.",
+    "learningObjective": "Lembrar o termo que carrega a nova relação em Cristo.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-02-reconciliacao-06",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filemom 1:17 a Mateus 10:40?",
+    "prompt": "O que liga Filemom 1:17 a Mateus 10:40?",
+    "cue": "O que liga Filemom 1:17 a Mateus 10:40?",
+    "verseRef": "Filemom 1:17",
+    "passageText": "Se, portanto, tu me consideras um companheiro, recebe-o, como se fosse eu.",
+    "passageA": {
+      "ref": "Filemom 1:17",
+      "text": "Se, portanto, tu me consideras um companheiro, recebe-o, como se fosse eu."
+    },
+    "passageB": {
+      "ref": "Mateus 10:40",
+      "text": "Quem os recebe, recebe a mim; e quem me recebe, recebe aquele que me enviou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Receber sem qualquer vínculo"
+      },
+      {
+        "id": "b",
+        "text": "Acolher só quem é igual"
+      },
+      {
+        "id": "c",
+        "text": "Acolher em nome de outro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "recebe-o, como se fosse eu",
+    "feedbackCorrect": "Receber Onésimo como a Paulo ecoa receber alguém em nome de outro.",
+    "feedbackWrong": {
+      "a": "O vínculo é justamente o que sustenta o pedido nos dois textos.",
+      "b": "Nos dois textos, a recepção atravessa um vínculo, e não a igualdade."
+    },
+    "hint": "Repare na recepção feita em lugar de outra pessoa.",
+    "learningObjective": "Ligar a recepção como a Paulo ao ensino de Jesus sobre receber.",
+    "evidence": [
+      "Filemom 1:17",
+      "Mateus 10:40"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-01",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filemom 1:11, Paulo diz que Onésimo antes era inútil para Filemom, mas agora é muito útil para os dois.",
+    "prompt": "Em Filemom 1:11, Paulo diz que Onésimo antes era inútil para Filemom, mas agora é muito útil para os dois.",
+    "cue": "Em Filemom 1:11, Paulo diz que Onésimo antes era inútil para Filemom, mas agora é muito útil para os dois.",
+    "verseRef": "Filemom 1:11",
+    "passageText": "o qual antes era inútil para ti; mas agora é muito útil, tanto para ti quanto para mim. Eu to estou enviando de volta.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "agora é muito útil, tanto para ti quanto para mim",
+    "feedbackCorrect": "O antes e o agora de Onésimo aparecem lado a lado no mesmo versículo.",
+    "feedbackWrong": {
+      "false": "Compare o antes e o agora que Paulo coloca em Filemom 1:11."
+    },
+    "hint": "Compare o antes e o agora de Onésimo.",
+    "learningObjective": "Observar a mudança de Onésimo descrita por Paulo.",
+    "evidence": [
+      "Filemom 1:11"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-02",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filemom 1:10, toque o nome de quem Paulo chama de seu filho.",
+    "prompt": "Em Filemom 1:10, toque o nome de quem Paulo chama de seu filho.",
+    "cue": "Em Filemom 1:10, toque o nome de quem Paulo chama de seu filho.",
+    "verseRef": "Filemom 1:10",
+    "passageText": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "algemas"
+      },
+      {
+        "id": "b",
+        "text": "favor"
+      },
+      {
+        "id": "c",
+        "text": "Onésimo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "meu filho Onésimo",
+    "feedbackCorrect": "Paulo apresenta pelo nome o filho que gerou entre algemas.",
+    "feedbackWrong": {
+      "a": "Isso nomeia a prisão de Paulo, não a pessoa pedida.",
+      "b": "Essa palavra abre o pedido; o nome do filho vem depois dela."
+    },
+    "hint": "Procure o nome próprio ligado a filho.",
+    "learningObjective": "Identificar quem Paulo chama de filho.",
+    "evidence": [
+      "Filemom 1:10"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-03",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filemom 1:19, o que Paulo afirma sobre uma possível dívida de Onésimo?",
+    "prompt": "Segundo Filemom 1:19, o que Paulo afirma sobre uma possível dívida de Onésimo?",
+    "cue": "Segundo Filemom 1:19, o que Paulo afirma sobre uma possível dívida de Onésimo?",
+    "verseRef": "Filemom 1:19",
+    "passageText": "Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filemom pagará tudo sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Ele mesmo pagará a dívida"
+      },
+      {
+        "id": "c",
+        "text": "Onésimo pagará tudo de imediato"
+      },
+      {
+        "id": "d",
+        "text": "Ninguém precisará pagar nada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu pagarei",
+    "feedbackCorrect": "Paulo escreve de próprio punho e se compromete a pagar.",
+    "feedbackWrong": {
+      "a": "A conta não fica com Filemom; Paulo a assume em 1:18–19.",
+      "c": "Quem se compromete a pagar no versículo é o próprio Paulo.",
+      "d": "Há custo assumido por Paulo, e não dívida simplesmente apagada."
+    },
+    "hint": "Veja quem assina o compromisso no versículo.",
+    "learningObjective": "Observar o compromisso de Paulo de pagar.",
+    "evidence": [
+      "Filemom 1:19"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-04",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filemom 1:18 na ordem do texto.",
+    "prompt": "Monte Filemom 1:18 na ordem do texto.",
+    "cue": "Monte Filemom 1:18 na ordem do texto.",
+    "verseRef": "Filemom 1:18",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se ele te causou algum dano"
+      },
+      {
+        "id": "b",
+        "text": "ou te deve algo"
+      },
+      {
+        "id": "c",
+        "text": "coloca tudo em minha conta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "coloca tudo em minha conta",
+    "feedbackCorrect": "Dano ou dívida, tudo deve ser colocado na conta do próprio Paulo.",
+    "feedbackWrong": {
+      "default": "Comece pela hipótese do dano; a conta de Paulo fecha o versículo."
+    },
+    "hint": "A solução de Paulo aparece no fim.",
+    "learningObjective": "Reconhecer a sequência de Filemom 1:18.",
+    "evidence": [
+      "Filemom 1:18"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-05",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filemom 1:12, como Paulo chama Onésimo ao enviá-lo de volta a Filemom?",
+    "prompt": "Em Filemom 1:12, como Paulo chama Onésimo ao enviá-lo de volta a Filemom?",
+    "cue": "Em Filemom 1:12, como Paulo chama Onésimo ao enviá-lo de volta a Filemom?",
+    "verseRef": "Filemom 1:12",
+    "passageText": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu coração.",
+    "template": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quero dizer, meu coração",
+    "feedbackCorrect": "Paulo envia de volta alguém que chama de seu próprio coração.",
+    "feedbackWrong": {
+      "b": "O texto não usa essa palavra aqui; veja o fim do versículo.",
+      "c": "Paulo não fala de um lugar; fala com afeto de uma pessoa."
+    },
+    "hint": "Veja a palavra de afeto no fim do versículo.",
+    "learningObjective": "Lembrar como Paulo se refere a Onésimo ao devolvê-lo.",
+    "evidence": [
+      "Filemom 1:12"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-06",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filemom 1:16 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:16 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:16 comunica que se liga a este contexto?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "passageA": {
+      "ref": "Filemom 1:16",
+      "text": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Onésimo volta a Filemom depois de se distanciar dele por algum tempo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "De irmão a estranho"
+      },
+      {
+        "id": "b",
+        "text": "De escravo a irmão amado"
+      },
+      {
+        "id": "c",
+        "text": "De livre a prisioneiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "A volta de Onésimo traz uma relação nova; de escravo a irmão amado.",
+    "feedbackWrong": {
+      "a": "O movimento é de aproximação como irmão, e não de estranhamento.",
+      "c": "Quem está preso é Paulo; a mudança citada é a relação de Onésimo."
+    },
+    "hint": "Compare a condição antiga com a nova recepção.",
+    "learningObjective": "Ligar Filemom 1:16 à mudança de relação de Onésimo.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-07",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filemom 1:7, toque quem tem o coração reanimado pelo amor de Filemom.",
+    "prompt": "Em Filemom 1:7, toque quem tem o coração reanimado pelo amor de Filemom.",
+    "cue": "Em Filemom 1:7, toque quem tem o coração reanimado pelo amor de Filemom.",
+    "verseRef": "Filemom 1:7",
+    "passageText": "Pois, irmão, tive grande alegria e consolo pelo seu amor, pois o coração dos santos tem sido reanimado por meio de você.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seu amor"
+      },
+      {
+        "id": "b",
+        "text": "coração dos santos"
+      },
+      {
+        "id": "c",
+        "text": "grande alegria"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o coração dos santos tem sido reanimado",
+    "feedbackCorrect": "O amor de Filemom já reanimou o coração dos santos antes deste pedido.",
+    "feedbackWrong": {
+      "a": "Isso é a causa do efeito; o grupo reanimado vem na frase seguinte.",
+      "c": "Isso é o que Paulo sentiu; procure quem foi reanimado."
+    },
+    "hint": "Procure o grupo alcançado pelo amor de Filemom.",
+    "learningObjective": "Observar quem foi reanimado pelo amor de Filemom.",
+    "evidence": [
+      "Filemom 1:7"
+    ]
+  },
+  {
+    "id": "filemom-sem-fm-03-desafio-08",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filemom 1:9 na ordem do texto.",
+    "prompt": "Monte Filemom 1:9 na ordem do texto.",
+    "cue": "Monte Filemom 1:9 na ordem do texto.",
+    "verseRef": "Filemom 1:9",
+    "passageText": "Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peço-te, portanto, em nome do amor"
+      },
+      {
+        "id": "b",
+        "text": "sendo eu Paulo, o velho"
+      },
+      {
+        "id": "c",
+        "text": "e agora até prisioneiro de Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em nome do amor",
+    "feedbackCorrect": "Paulo pede pelo amor e se apresenta como velho e prisioneiro de Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelo pedido de Paulo; sua prisão fecha o versículo."
+    },
+    "hint": "O versículo começa pelo pedido.",
+    "learningObjective": "Reconhecer a sequência de Filemom 1:9.",
+    "evidence": [
+      "Filemom 1:9"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-01",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filemom 1:14, Paulo não age sem o consentimento de Filemom para que a bondade dele não seja por obrigação.",
+    "prompt": "Em Filemom 1:14, Paulo não age sem o consentimento de Filemom para que a bondade dele não seja por obrigação.",
+    "cue": "Em Filemom 1:14, Paulo não age sem o consentimento de Filemom para que a bondade dele não seja por obrigação.",
+    "verseRef": "Filemom 1:14",
+    "passageText": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que a tua bondade não fosse por obrigação",
+    "feedbackCorrect": "Paulo protege a liberdade de Filemom para que o bem nasça da vontade.",
+    "feedbackWrong": {
+      "false": "Releia o motivo que Paulo dá para esperar o consentimento."
+    },
+    "hint": "Veja o motivo de Paulo esperar Filemom.",
+    "learningObjective": "Compreender por que Paulo espera o consentimento de Filemom.",
+    "evidence": [
+      "Filemom 1:14"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-02",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filemom 1:11, toque a palavrinha que marca a virada de inútil para útil.",
+    "prompt": "Em Filemom 1:11, toque a palavrinha que marca a virada de inútil para útil.",
+    "cue": "Em Filemom 1:11, toque a palavrinha que marca a virada de inútil para útil.",
+    "verseRef": "Filemom 1:11",
+    "passageText": "o qual antes era inútil para ti; mas agora é muito útil, tanto para ti quanto para mim. Eu to estou enviando de volta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "agora"
+      },
+      {
+        "id": "c",
+        "text": "antes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas agora é muito útil",
+    "feedbackCorrect": "A palavrinha vira a frase do passado inútil para o presente útil.",
+    "feedbackWrong": {
+      "b": "Essa palavra marca o tempo novo; a ligação da virada vem antes.",
+      "c": "Essa palavra marca o tempo antigo; a virada vem logo depois."
+    },
+    "hint": "Procure a ligação entre o antes e o agora.",
+    "learningObjective": "Reconhecer o marcador de contraste em Filemom 1:11.",
+    "evidence": [
+      "Filemom 1:11"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-03",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Filemom 1:9 se relaciona com Filemom 1:8?",
+    "prompt": "Como Filemom 1:9 se relaciona com Filemom 1:8?",
+    "cue": "Como Filemom 1:9 se relaciona com Filemom 1:8?",
+    "verseRef": "Filemom 1:8–9",
+    "passageText": "Por isso, embora eu tenha plena liberdade em Cristo para te mandar o que é apropriado, Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo troca a ordem pelo pedido feito pelo amor"
+      },
+      {
+        "id": "b",
+        "text": "Paulo aumenta a pressão sobre Filemom"
+      },
+      {
+        "id": "c",
+        "text": "Paulo deixa Onésimo fora do pedido"
+      },
+      {
+        "id": "d",
+        "text": "Paulo pede desculpas por não ter autoridade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Peço-te, portanto, em nome do amor",
+    "feedbackCorrect": "Tendo liberdade para mandar, Paulo escolhe o caminho do pedido pelo amor.",
+    "feedbackWrong": {
+      "b": "O pedido pelo amor diminui a imposição, em vez de aumentar a pressão.",
+      "c": "O pedido seguinte é justamente em favor de Onésimo (1:10).",
+      "d": "Ele afirma ter liberdade para mandar; não se desculpa por falta dela."
+    },
+    "hint": "Compare a possibilidade de 1:8 com a escolha de 1:9.",
+    "learningObjective": "Relacionar a autoridade de Paulo à sua escolha de pedir.",
+    "evidence": [
+      "Filemom 1:8–9"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-04",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos em Filemom 1:7–11?",
+    "prompt": "Como se encadeiam os passos em Filemom 1:7–11?",
+    "cue": "Como se encadeiam os passos em Filemom 1:7–11?",
+    "verseRef": "Filemom 1:9",
+    "passageText": "Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo se alegra com o amor de Filemom"
+      },
+      {
+        "id": "b",
+        "text": "Paulo pede em nome do amor"
+      },
+      {
+        "id": "c",
+        "text": "Paulo apresenta seu filho Onésimo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "em nome do amor",
+    "feedbackCorrect": "Do amor já conhecido de Filemom, Paulo passa ao pedido e chega a Onésimo.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor de Filemom; Onésimo é apresentado por último."
+    },
+    "hint": "Onésimo só é nomeado no fim do movimento.",
+    "learningObjective": "Compreender o encadeamento que leva ao pedido por Onésimo.",
+    "evidence": [
+      "Filemom 1:7",
+      "Filemom 1:9",
+      "Filemom 1:10"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-05",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filemom 1:14, como Paulo não quer que a bondade de Filemom aconteça?",
+    "prompt": "Em Filemom 1:14, como Paulo não quer que a bondade de Filemom aconteça?",
+    "cue": "Em Filemom 1:14, como Paulo não quer que a bondade de Filemom aconteça?",
+    "verseRef": "Filemom 1:14",
+    "passageText": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade.",
+    "template": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por ___, mas de livre vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vontade"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "obrigação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não fosse por obrigação, mas de livre vontade",
+    "feedbackCorrect": "Paulo quer bondade livre, e não um bem feito por obrigação.",
+    "feedbackWrong": {
+      "a": "A vontade livre é justamente o que Paulo deseja proteger.",
+      "b": "A palavra do texto é mais específica; veja o contraste com livre vontade."
+    },
+    "hint": "Veja o contrário de livre vontade na frase.",
+    "learningObjective": "Lembrar a palavra que Paulo rejeita para a bondade de Filemom.",
+    "evidence": [
+      "Filemom 1:14"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-06",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filemom 1:10 a Colossenses 4:9?",
+    "prompt": "O que liga Filemom 1:10 a Colossenses 4:9?",
+    "cue": "O que liga Filemom 1:10 a Colossenses 4:9?",
+    "verseRef": "Filemom 1:10",
+    "passageText": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas.",
+    "passageA": {
+      "ref": "Filemom 1:10",
+      "text": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas."
+    },
+    "passageB": {
+      "ref": "Colossenses 4:9",
+      "text": "Juntamente com Onésimo, o irmão fiel e amado, que é do vosso meio; eles vos farão saber acerca de tudo o que está acontecendo aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo solto das algemas"
+      },
+      {
+        "id": "b",
+        "text": "Onésimo inútil para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Onésimo irmão fiel e amado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "meu filho Onésimo",
+    "feedbackCorrect": "Nos dois textos, Onésimo é apresentado por um vínculo de fé, afeto e confiança.",
+    "feedbackWrong": {
+      "a": "A prisão de Paulo não é a ponte; a ponte é quem Onésimo se tornou.",
+      "b": "Em Colossenses, Onésimo é recomendado, e não descartado como inútil."
+    },
+    "hint": "Veja como Onésimo é apresentado nos dois textos.",
+    "learningObjective": "Relacionar a apresentação de Onésimo nas duas cartas.",
+    "evidence": [
+      "Filemom 1:10",
+      "Colossenses 4:9"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-07",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filemom 1:15, toque a expressão que introduz a finalidade da distância.",
+    "prompt": "Em Filemom 1:15, toque a expressão que introduz a finalidade da distância.",
+    "cue": "Em Filemom 1:15, toque a expressão que introduz a finalidade da distância.",
+    "verseRef": "Filemom 1:15",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de ti"
+      },
+      {
+        "id": "b",
+        "text": "para que"
+      },
+      {
+        "id": "c",
+        "text": "para sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que o recebas para sempre",
+    "feedbackCorrect": "A expressão aponta a finalidade; receber Onésimo para sempre.",
+    "feedbackWrong": {
+      "a": "Isso indica de quem Onésimo se distanciou, não a finalidade.",
+      "c": "Isso diz a duração do reencontro; a finalidade se abre antes."
+    },
+    "hint": "Procure a expressão que abre a finalidade.",
+    "learningObjective": "Reconhecer o marcador de propósito em Filemom 1:15.",
+    "evidence": [
+      "Filemom 1:15"
+    ]
+  },
+  {
+    "id": "filemom-cam-fm-03-desafio-08",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "prompt": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "cue": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "verseRef": "Filemom 1:15–16",
+    "passageText": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre. não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onésimo se distancia por um tempo"
+      },
+      {
+        "id": "b",
+        "text": "Filemom o recebe para sempre"
+      },
+      {
+        "id": "c",
+        "text": "A relação se torna de irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que o recebas para sempre",
+    "feedbackCorrect": "A distância curta aponta para um reencontro duradouro numa relação nova.",
+    "feedbackWrong": {
+      "default": "Comece pela distância; a relação de irmãos fecha o movimento."
+    },
+    "hint": "A relação nova é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento entre distância e nova relação.",
+    "evidence": [
+      "Filemom 1:15–16"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-01",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filemom 1:16, Paulo pede que Filemom continue tratando Onésimo apenas como escravo, sem mudar a relação.",
+    "prompt": "Em Filemom 1:16, Paulo pede que Filemom continue tratando Onésimo apenas como escravo, sem mudar a relação.",
+    "cue": "Em Filemom 1:16, Paulo pede que Filemom continue tratando Onésimo apenas como escravo, sem mudar a relação.",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "Paulo pede o contrário; Onésimo deve ser recebido como irmão muito amado.",
+    "feedbackWrong": {
+      "true": "Compare a condição negada no começo com a relação pedida no fim."
+    },
+    "hint": "Compare o começo e o fim do versículo.",
+    "learningObjective": "Interpretar a mudança de relação pedida por Paulo.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-02",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filemom 1:18, toque onde Paulo manda colocar qualquer dívida de Onésimo.",
+    "prompt": "Em Filemom 1:18, toque onde Paulo manda colocar qualquer dívida de Onésimo.",
+    "cue": "Em Filemom 1:18, toque onde Paulo manda colocar qualquer dívida de Onésimo.",
+    "verseRef": "Filemom 1:18",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "algum dano"
+      },
+      {
+        "id": "b",
+        "text": "te deve"
+      },
+      {
+        "id": "c",
+        "text": "minha conta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "coloca tudo em minha conta",
+    "feedbackCorrect": "Paulo coloca a dívida em seu próprio nome para abrir caminho à recepção.",
+    "feedbackWrong": {
+      "a": "Isso nomeia o problema; o destino da dívida vem no fim.",
+      "b": "Isso levanta a hipótese; a solução de Paulo vem depois."
+    },
+    "hint": "Procure o destino que Paulo dá à dívida.",
+    "learningObjective": "Sustentar com o texto que Paulo assume a dívida.",
+    "evidence": [
+      "Filemom 1:18"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-03",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a carta a Filemom sustenta sobre a nova relação de Onésimo?",
+    "prompt": "Que leitura a carta a Filemom sustenta sobre a nova relação de Onésimo?",
+    "cue": "Que leitura a carta a Filemom sustenta sobre a nova relação de Onésimo?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça mantém cada um no lugar antigo"
+      },
+      {
+        "id": "b",
+        "text": "Paulo defende tratar Onésimo só como escravo"
+      },
+      {
+        "id": "c",
+        "text": "Receber dispensa qualquer reparação de dano"
+      },
+      {
+        "id": "d",
+        "text": "A relação muda de escravo para irmão amado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não mais como um escravo",
+    "feedbackCorrect": "O pedido central muda a relação; Onésimo volta como irmão amado em Cristo.",
+    "feedbackWrong": {
+      "a": "O texto não mantém o lugar antigo; ele o nega de forma explícita.",
+      "b": "Paulo pede justamente que essa forma de tratar Onésimo fique para trás.",
+      "c": "Paulo assume a possível dívida em 1:18–19, em vez de dispensá-la."
+    },
+    "hint": "Veja a relação que Paulo pede no fim da carta.",
+    "learningObjective": "Escolher a interpretação sustentada pela carta sobre a relação nova.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-04",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filemom 1:17–19?",
+    "prompt": "Qual sequência revela o sentido de Filemom 1:17–19?",
+    "cue": "Qual sequência revela o sentido de Filemom 1:17–19?",
+    "verseRef": "Filemom 1:18–19",
+    "passageText": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta. Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filemom recebe Onésimo como a Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Paulo assume a dívida em sua conta"
+      },
+      {
+        "id": "c",
+        "text": "Paulo confirma de próprio punho o pagamento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "coloca tudo em minha conta",
+    "feedbackCorrect": "O pedido de recepção vem primeiro; Paulo assume e depois assina o pagamento.",
+    "feedbackWrong": {
+      "default": "Comece pelo pedido de receber; a assinatura de Paulo fecha o trecho."
+    },
+    "hint": "A assinatura de Paulo é o último passo.",
+    "learningObjective": "Ver a lógica do pedido de recepção sustentado por Paulo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18–19"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-05",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filemom 1:16, que palavra nomeia a nova relação de Onésimo com Filemom?",
+    "prompt": "Em Filemom 1:16, que palavra nomeia a nova relação de Onésimo com Filemom?",
+    "cue": "Em Filemom 1:16, que palavra nomeia a nova relação de Onésimo com Filemom?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "template": "não mais como um escravo; antes, muito mais do que um escravo, como um ___ muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "estranho"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "A nova relação tem nome de família; irmão, e não mais escravo.",
+    "feedbackWrong": {
+      "b": "Estranho mantém distância; o texto pede proximidade de família.",
+      "c": "Inimigo contradiz o pedido de recepção feito por Paulo."
+    },
+    "hint": "Veja o novo nome da relação em Cristo.",
+    "learningObjective": "Lembrar o termo que carrega a nova relação em Cristo.",
+    "evidence": [
+      "Filemom 1:16"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-06",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filemom 1:16 a 2 Coríntios 5:18?",
+    "prompt": "O que liga Filemom 1:16 a 2 Coríntios 5:18?",
+    "cue": "O que liga Filemom 1:16 a 2 Coríntios 5:18?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "passageA": {
+      "ref": "Filemom 1:16",
+      "text": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 5:18",
+      "text": "Tudo isso provém de Deus, que nos reconciliou consigo mesmo por intermédio de Cristo e nos confiou o ministério da reconciliação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus mantém a distância"
+      },
+      {
+        "id": "b",
+        "text": "Reconciliação sem relação nova"
+      },
+      {
+        "id": "c",
+        "text": "Deus reconcilia em Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tanto na carne quanto no Senhor",
+    "feedbackCorrect": "Paulo vive em Filemom a reconciliação que anuncia como obra de Deus em Cristo.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, Deus aproxima quem estava distante em Cristo.",
+      "b": "A reconciliação cria uma relação nova, visível entre irmãos."
+    },
+    "hint": "Veja a obra de Deus comum aos dois textos.",
+    "learningObjective": "Ligar a recepção de Onésimo à reconciliação em Cristo.",
+    "evidence": [
+      "Filemom 1:16",
+      "2 Coríntios 5:18"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-07",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filemom 1:19, toque o trecho que mostra o compromisso de Paulo de pagar.",
+    "prompt": "Em Filemom 1:19, toque o trecho que mostra o compromisso de Paulo de pagar.",
+    "cue": "Em Filemom 1:19, toque o trecho que mostra o compromisso de Paulo de pagar.",
+    "verseRef": "Filemom 1:19",
+    "passageText": "Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eu pagarei"
+      },
+      {
+        "id": "b",
+        "text": "própria mão"
+      },
+      {
+        "id": "c",
+        "text": "devedor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu pagarei",
+    "feedbackCorrect": "Paulo assina e se compromete; o custo não volta para Onésimo nem Filemom.",
+    "feedbackWrong": {
+      "b": "Isso mostra a assinatura; o compromisso de pagar vem logo depois.",
+      "c": "Isso cita outra dívida do texto; a promessa de Paulo vem antes."
+    },
+    "hint": "Procure a promessa direta de Paulo no versículo.",
+    "learningObjective": "Sustentar com o texto o compromisso final de Paulo.",
+    "evidence": [
+      "Filemom 1:19"
+    ]
+  },
+  {
+    "id": "filemom-pro-fm-03-desafio-08",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do apelo de Paulo na carta?",
+    "prompt": "Qual sequência revela o sentido do apelo de Paulo na carta?",
+    "cue": "Qual sequência revela o sentido do apelo de Paulo na carta?",
+    "verseRef": "Filemom 1:16",
+    "passageText": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo apela pelo amor, sem mandar"
+      },
+      {
+        "id": "b",
+        "text": "Paulo assume o custo do outro"
+      },
+      {
+        "id": "c",
+        "text": "Uma relação nova nasce em Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "como um irmão muito amado",
+    "feedbackCorrect": "O apelo pelo amor sustenta o custo assumido e gera uma relação nova.",
+    "feedbackWrong": {
+      "default": "Comece pelo modo de pedir; a relação nova é o fruto do apelo."
+    },
+    "hint": "A relação nova é o fruto final do apelo.",
+    "learningObjective": "Ver o apelo inteiro de Paulo como caminho de reconciliação.",
+    "evidence": [
+      "Filemom 1:9",
+      "Filemom 1:18",
+      "Filemom 1:16"
+    ]
+  }
+]

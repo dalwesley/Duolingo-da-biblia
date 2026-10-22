@@ -1,0 +1,712 @@
+{
+ "study": {
+  "passageRef": "Ageu 2:4–9",
+  "passages": [
+   {
+    "ref": "Ageu 2:4–9"
+   },
+   {
+    "ref": "Ageu 1:13–14"
+   },
+   {
+    "ref": "Ageu 2:3"
+   }
+  ],
+  "context": "A nova casa parecia pequena perto da primeira, e o povo podia desanimar. Deus responde chamando líderes e povo ao trabalho e prometendo sua presença e paz.",
+  "keyword": "eu sou convosco",
+  "keywordGloss": "A promessa de Deus de estar com o povo enquanto ele trabalha na sua casa.",
+  "focusQuestion": "Onde você precisa trabalhar confiando que Deus está com você?",
+  "reflectionPrompts": [
+   "Não comparar com antes",
+   "Trabalhar sem medo",
+   "Deus dará paz"
+  ],
+  "facts": [
+   {
+    "text": "Quem viu a primeira casa achava a nova como nada aos seus olhos.",
+    "evidenceRef": "Ageu 2:3",
+    "evidenceSpan": "Não é ela como nada aos seus olhos"
+   },
+   {
+    "text": "Deus manda Zorobabel, Josué e todo o povo se esforçarem e trabalharem.",
+    "evidenceRef": "Ageu 2:4",
+    "evidenceSpan": "esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai"
+   },
+   {
+    "text": "Deus promete estar com o povo no trabalho.",
+    "evidenceRef": "Ageu 2:4",
+    "evidenceSpan": "porque eu sou convosco, diz o SENHOR dos Exércitos"
+   },
+   {
+    "text": "O Espírito de Deus permanece no meio do povo.",
+    "evidenceRef": "Ageu 2:5",
+    "evidenceSpan": "o meu Espírito permanece no meio de vocês; não tenham medo"
+   },
+   {
+    "text": "Deus promete encher a casa de glória e dar paz naquele lugar.",
+    "evidenceRef": "Ageu 2:9",
+    "evidenceSpan": "e neste lugar darei paz, diz o Senhor dos Exércitos"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "eu sou convosco",
+    "gloss": "Deus presente com o povo, motivo para trabalhar sem medo."
+   },
+   {
+    "term": "glória",
+    "gloss": "Aquilo de que Deus promete encher esta casa."
+   },
+   {
+    "term": "paz",
+    "gloss": "O que Deus promete dar neste lugar ao fim da palavra."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A nova casa parece pequena",
+    "evidenceRef": "Ageu 2:3"
+   },
+   {
+    "label": "Deus chama todos ao trabalho",
+    "evidenceRef": "Ageu 2:4"
+   },
+   {
+    "label": "A presença de Deus tira o medo",
+    "evidenceRef": "Ageu 2:5"
+   },
+   {
+    "label": "Glória maior e paz prometidas",
+    "evidenceRef": "Ageu 2:7–9"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "O povo deve trabalhar porque Deus está com ele.",
+    "marker": "porque",
+    "evidenceRef": "Ageu 2:4"
+   },
+   {
+    "kind": "contraste",
+    "text": "A casa parece nada agora, mas sua glória futura será maior que a da primeira.",
+    "marker": "maior",
+    "evidenceRef": "Ageu 2:9"
+   },
+   {
+    "kind": "resultado",
+    "text": "Com o Espírito no meio do povo, a ordem é não ter medo.",
+    "marker": null,
+    "evidenceRef": "Ageu 2:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 28:20",
+    "bridge": "Jesus sempre com os seus"
+   },
+   {
+    "ref": "Hebreus 12:26",
+    "bridge": "Deus abala céus e terra"
+   },
+   {
+    "ref": "João 14:27",
+    "bridge": "Jesus dá a sua paz"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A promessa de glória maior descreve em detalhe como e quando tudo se cumprirá.",
+    "why": "O texto afirma que Deus encherá a casa de glória e dará paz, sem detalhar o cumprimento."
+   },
+   {
+    "text": "Se a obra parece pequena, Deus não está nela.",
+    "why": "Deus reconhece que a casa parece nada e mesmo assim promete estar com o povo."
+   },
+   {
+    "text": "A presença de Deus dispensa o trabalho do povo.",
+    "why": "A mesma palavra manda esforçar-se e trabalhar porque Deus está com eles."
+   }
+  ],
+  "centralInsight": "Deus está com o povo e promete glória maior e paz nesta casa",
+  "anchorQuestion": "Em Ageu 2:4, que promessa Deus faz ao mandar o povo trabalhar?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Ageu 2:3, quem viu a primeira casa achava a nova tão gloriosa quanto ela.",
+   "verseRef": "Ageu 2:3",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não é ela como nada aos seus olhos",
+   "feedbackCorrect": "A nova casa parecia como nada para quem tinha visto a primeira.",
+   "feedbackWrong": {
+    "true": "Releia a pergunta do fim de Ageu 2:3 sobre como a casa é vista."
+   },
+   "hint": "Veja como a casa é vista no fim.",
+   "learningObjective": "Observar a comparação entre a nova casa e a primeira.",
+   "evidence": [
+    "Ageu 2:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Ageu 2:4, toque quem mais é chamado a se esforçar, junto dos líderes.",
+   "verseRef": "Ageu 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Zorobabel"
+    },
+    {
+     "id": "b",
+     "text": "todo o povo"
+    },
+    {
+     "id": "c",
+     "text": "Josué"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "esforçai-vos, todo o povo da terra",
+   "feedbackCorrect": "Não só os líderes: todo o povo da terra é chamado.",
+   "feedbackWrong": {
+    "a": "Zorobabel é chamado primeiro, mas a pergunta pede quem mais.",
+    "c": "Josué também é líder; o chamado alcança ainda outro grupo."
+   },
+   "hint": "Leia até o fim da lista de chamados.",
+   "learningObjective": "Identificar que todo o povo é chamado ao esforço.",
+   "evidence": [
+    "Ageu 2:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Ageu 2:4, o que Deus manda o povo fazer?",
+   "verseRef": "Ageu 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esperar a casa ficar pronta"
+    },
+    {
+     "id": "b",
+     "text": "Esforçar-se e trabalhar"
+    },
+    {
+     "id": "c",
+     "text": "Parar por medo do futuro"
+    },
+    {
+     "id": "d",
+     "text": "Comparar as duas casas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e trabalhai; porque eu sou convosco",
+   "feedbackCorrect": "O chamado é claro: esforçar-se e pôr as mãos no trabalho.",
+   "feedbackWrong": {
+    "a": "Deus manda trabalhar, não esperar sem agir.",
+    "c": "Em Ageu 2:5 a ordem é não ter medo.",
+    "d": "A comparação aparece em 2:3 como desânimo, não como ordem."
+   },
+   "hint": "Procure o verbo de ação no fim da fala.",
+   "learningObjective": "Observar o chamado ao trabalho em Ageu 2:4.",
+   "evidence": [
+    "Ageu 2:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Ageu 2:4 na ordem do texto.",
+   "verseRef": "Ageu 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esforça-te, Zorobabel, diz o SENHOR"
+    },
+    {
+     "id": "b",
+     "text": "e sê forte, Josué, filho de Jozadaque, o sumo sacerdote"
+    },
+    {
+     "id": "c",
+     "text": "e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Esforça-te, Zorobabel, diz o SENHOR",
+   "feedbackCorrect": "O chamado alcança Zorobabel, depois Josué e então todo o povo.",
+   "feedbackWrong": {
+    "default": "Comece por Zorobabel; todo o povo fecha o chamado."
+   },
+   "hint": "O povo inteiro aparece por último.",
+   "learningObjective": "Reconhecer a ordem dos chamados em Ageu 2:4.",
+   "evidence": [
+    "Ageu 2:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Ageu 2:5, o que Deus manda o povo não ter?",
+   "verseRef": "Ageu 2:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "pressa"
+    },
+    {
+     "id": "b",
+     "text": "medo"
+    },
+    {
+     "id": "c",
+     "text": "dúvida"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o meu Espírito permanece no meio de vocês; não tenham medo",
+   "feedbackCorrect": "Com o Espírito no meio do povo, não há lugar para temer.",
+   "feedbackWrong": {
+    "a": "O texto não fala de pressa neste versículo.",
+    "c": "A palavra usada por Deus aqui é outra, ligada a temer."
+   },
+   "hint": "Leia a última ordem do versículo.",
+   "learningObjective": "Lembrar a ordem de não temer em Ageu 2:5.",
+   "evidence": [
+    "Ageu 2:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Ageu 2:4 comunica que se liga a este contexto?",
+   "verseRef": "Ageu 2:4–5",
+   "passageA": {
+    "ref": "Ageu 2:4"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo desanimado é chamado a trabalhar porque Deus está com ele."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus está com quem trabalha"
+    },
+    {
+     "id": "b",
+     "text": "O povo trabalha sozinho"
+    },
+    {
+     "id": "c",
+     "text": "A obra já terminou"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque eu sou convosco, diz o SENHOR dos Exércitos",
+   "feedbackCorrect": "O motivo do esforço é a presença prometida de Deus.",
+   "feedbackWrong": {
+    "b": "Deus promete estar junto, não deixar o povo só.",
+    "c": "A obra ainda estava em andamento e pedia esforço."
+   },
+   "hint": "Veja o motivo dado para trabalhar.",
+   "learningObjective": "Ligar Ageu 2:4 à presença de Deus com o povo.",
+   "evidence": [
+    "Ageu 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Ageu 2:5, Deus diz que seu Espírito só ficaria com o povo depois da obra pronta.",
+   "verseRef": "Ageu 2:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "o meu Espírito permanece no meio de vocês; não tenham medo",
+   "feedbackCorrect": "O Espírito já permanece no meio do povo durante a obra.",
+   "feedbackWrong": {
+    "true": "Releia o tempo do verbo sobre o Espírito em Ageu 2:5."
+   },
+   "hint": "Veja quando o Espírito permanece no meio.",
+   "learningObjective": "Compreender que a presença de Deus acompanha a obra.",
+   "evidence": [
+    "Ageu 2:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Ageu 2:4, toque a palavra que dá o motivo para trabalhar.",
+   "verseRef": "Ageu 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "trabalhai"
+    },
+    {
+     "id": "b",
+     "text": "porque"
+    },
+    {
+     "id": "c",
+     "text": "convosco"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e trabalhai; porque eu sou convosco",
+   "feedbackCorrect": "A palavrinha introduz o motivo: Deus está com o povo.",
+   "feedbackWrong": {
+    "a": "Isso é a ordem dada, não a palavra que traz o motivo.",
+    "c": "Isso diz com quem Deus está, não introduz o motivo."
+   },
+   "hint": "Procure a palavra logo depois da ordem final.",
+   "learningObjective": "Reconhecer o marcador de motivo em Ageu 2:4.",
+   "evidence": [
+    "Ageu 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Ageu 2:4 sustenta o ânimo do povo para trabalhar?",
+   "verseRef": "Ageu 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Promete riqueza rápida a cada família"
+    },
+    {
+     "id": "b",
+     "text": "Garante que a obra não exigirá esforço"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que o Senhor está com eles"
+    },
+    {
+     "id": "d",
+     "text": "Diz que a nova casa já superou a primeira"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "porque eu sou convosco, diz o SENHOR dos Exércitos",
+   "feedbackCorrect": "O ânimo não vem do tamanho da obra, mas da presença de Deus.",
+   "feedbackWrong": {
+    "a": "A prata e o ouro são de Deus (2:8); não há promessa de riqueza rápida.",
+    "b": "O texto manda esforçar-se; o esforço continua necessário.",
+    "d": "A glória maior é promessa futura, em Ageu 2:9."
+   },
+   "hint": "Veja o motivo ligado ao chamado para trabalhar.",
+   "learningObjective": "Relacionar o trabalho à presença prometida de Deus.",
+   "evidence": [
+    "Ageu 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a palavra em Ageu 2:3-5?",
+   "verseRef": "Ageu 2:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus chama os líderes pelo nome"
+    },
+    {
+     "id": "b",
+     "text": "Deus chama todo o povo a trabalhar"
+    },
+    {
+     "id": "c",
+     "text": "Deus promete estar com eles"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "porque eu sou convosco, diz o SENHOR dos Exércitos",
+   "feedbackCorrect": "O chamado vai dos líderes ao povo todo e termina na promessa da presença.",
+   "feedbackWrong": {
+    "default": "A promessa de estar junto fecha o movimento."
+   },
+   "hint": "A promessa vem como ponto de chegada.",
+   "learningObjective": "Compreender o movimento do chamado à promessa.",
+   "evidence": [
+    "Ageu 2:3–5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Ageu 2:7, de que Deus promete encher esta casa?",
+   "verseRef": "Ageu 2:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "ouro"
+    },
+    {
+     "id": "b",
+     "text": "glória"
+    },
+    {
+     "id": "c",
+     "text": "pedras"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "encherei esta casa de glória, diz o Senhor dos Exércitos",
+   "feedbackCorrect": "A casa será cheia da presença gloriosa do próprio Deus.",
+   "feedbackWrong": {
+    "a": "O ouro é citado em 2:8 como posse de Deus.",
+    "c": "O texto não fala de encher a casa de material."
+   },
+   "hint": "Leia o fim do versículo sobre esta casa.",
+   "learningObjective": "Compreender a promessa sobre o futuro da casa.",
+   "evidence": [
+    "Ageu 2:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Ageu 2:6 a Hebreus 12:26?",
+   "verseRef": "Ageu 2:6",
+   "passageA": {
+    "ref": "Ageu 2:6"
+   },
+   "passageB": {
+    "ref": "Hebreus 12:26"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus abala céus e terra"
+    },
+    {
+     "id": "b",
+     "text": "O povo abala as nações"
+    },
+    {
+     "id": "c",
+     "text": "Nada mais será abalado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "farei abalar os céus e a terra, o mar e a terra seca",
+   "feedbackCorrect": "Hebreus cita a mesma promessa de Deus abalar céus e terra.",
+   "feedbackWrong": {
+    "b": "Quem faz abalar é Deus, nos dois textos.",
+    "c": "Hebreus repete a promessa de um novo abalo."
+   },
+   "hint": "Compare quem age e o que é movido.",
+   "learningObjective": "Relacionar a promessa de Ageu 2:6 à sua citação em Hebreus.",
+   "evidence": [
+    "Ageu 2:6",
+    "Hebreus 12:26"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Ageu 2:9 afirma que a glória da última casa será maior e que Deus dará paz ali.",
+   "verseRef": "Ageu 2:9",
+   "correctOptionId": "true",
+   "evidenceSpan": "A glória desta última casa será maior do que a da primeira",
+   "feedbackCorrect": "O texto promete glória maior para esta casa e paz neste lugar.",
+   "feedbackWrong": {
+    "false": "Releia as duas promessas de Ageu 2:9."
+   },
+   "hint": "Confira as duas promessas do versículo.",
+   "learningObjective": "Interpretar a promessa de glória maior e paz.",
+   "evidence": [
+    "Ageu 2:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Ageu 2:8-9, toque o que Deus promete dar neste lugar.",
+   "verseRef": "Ageu 2:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "prata"
+    },
+    {
+     "id": "b",
+     "text": "ouro"
+    },
+    {
+     "id": "c",
+     "text": "paz"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "e neste lugar darei paz, diz o Senhor dos Exércitos",
+   "feedbackCorrect": "Prata e ouro já são de Deus; o que ele promete dar ali é algo maior.",
+   "feedbackWrong": {
+    "a": "A prata é citada como posse de Deus, não como dom prometido.",
+    "b": "O ouro também é posse de Deus em 2:8."
+   },
+   "hint": "Leia o fim de Ageu 2:9.",
+   "learningObjective": "Sustentar com o texto a promessa feita para este lugar.",
+   "evidence": [
+    "Ageu 2:8–9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Ageu 2:7-9 sustenta sobre o futuro desta casa?",
+   "verseRef": "Ageu 2:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus encherá a casa de glória e dará paz"
+    },
+    {
+     "id": "b",
+     "text": "O texto detalha datas do cumprimento final"
+    },
+    {
+     "id": "c",
+     "text": "A glória depende só do ouro das nações"
+    },
+    {
+     "id": "d",
+     "text": "A casa pequena prova o abandono de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A glória desta última casa será maior do que a da primeira",
+   "feedbackCorrect": "O texto afirma a ação de Deus: encher de glória e dar paz.",
+   "feedbackWrong": {
+    "b": "Nenhuma data é dada; a promessa é de Deus agir.",
+    "c": "Prata e ouro já são de Deus; a glória vem dele.",
+    "d": "Deus promete estar com o povo justamente nessa casa."
+   },
+   "hint": "Fique no que o próprio texto afirma.",
+   "learningObjective": "Escolher a interpretação que Ageu 2:7-9 sustenta.",
+   "evidence": [
+    "Ageu 2:7–9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Ageu 2:6-9?",
+   "verseRef": "Ageu 2:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus promete abalar céus e terra"
+    },
+    {
+     "id": "b",
+     "text": "Deus encherá a casa de glória"
+    },
+    {
+     "id": "c",
+     "text": "Deus dará paz neste lugar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "e neste lugar darei paz, diz o Senhor dos Exércitos",
+   "feedbackCorrect": "Do abalo anunciado, o caminho chega à casa cheia de glória e à paz.",
+   "feedbackWrong": {
+    "default": "A paz é a promessa final do trecho."
+   },
+   "hint": "Siga a ordem dos versículos 6 a 9.",
+   "learningObjective": "Ver o caminho do abalo à paz em Ageu 2.",
+   "evidence": [
+    "Ageu 2:6–9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Ageu 2:6, o que Deus diz que fará com os céus e a terra?",
+   "verseRef": "Ageu 2:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "guardar"
+    },
+    {
+     "id": "b",
+     "text": "abalar"
+    },
+    {
+     "id": "c",
+     "text": "medir"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "farei abalar os céus e a terra, o mar e a terra seca",
+   "feedbackCorrect": "Deus anuncia um abalo que alcançará céus, terra e mar.",
+   "feedbackWrong": {
+    "a": "O verbo usado aponta movimento forte, não guardar.",
+    "c": "Não há medida citada; há abalo prometido."
+   },
+   "hint": "Procure o verbo antes de céus e terra.",
+   "learningObjective": "Lembrar o verbo central da promessa de Ageu 2:6.",
+   "evidence": [
+    "Ageu 2:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Ageu 2:9 a João 14:27?",
+   "verseRef": "Ageu 2:9",
+   "passageA": {
+    "ref": "Ageu 2:9"
+   },
+   "passageB": {
+    "ref": "João 14:27"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus dá a sua paz"
+    },
+    {
+     "id": "b",
+     "text": "Paz sem a presença divina"
+    },
+    {
+     "id": "c",
+     "text": "Paz feita só por reis"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "e neste lugar darei paz, diz o Senhor dos Exércitos",
+   "feedbackCorrect": "Em Ageu Deus promete paz; em Jesus, essa paz é dada aos seus.",
+   "feedbackWrong": {
+    "b": "Nos dois textos a paz vem de Deus, presente com os seus.",
+    "c": "Quem dá a paz é Deus, não governantes humanos."
+   },
+   "hint": "Veja quem dá o dom nos dois textos.",
+   "learningObjective": "Ligar a paz prometida em Ageu à paz dada por Jesus.",
+   "evidence": [
+    "Ageu 2:9",
+    "João 14:27"
+   ]
+  }
+ ]
+}

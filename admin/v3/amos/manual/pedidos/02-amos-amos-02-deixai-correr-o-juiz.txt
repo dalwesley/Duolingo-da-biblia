@@ -1,0 +1,67 @@
+Escreva a cena "amos-amos-02-deixai-correr-o-juiz" da trilha "amos" (Amós).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "amos",
+  "title": "Amós",
+  "description": "Justiça como águas — Deus defende o oprimido.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Justiça",
+ "mission": {
+  "slug": "amos-amos-02-deixai-correr-o-juiz",
+  "title": "Deixai correr o juízo",
+  "type": "lesson",
+  "intro": "Culto sem justiça não basta.",
+  "hookRef": "Amós 5:24",
+  "hookNote": "Culto sem justiça não basta.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre deixai?"
+ },
+ "v2": {
+  "passageRef": "Amós 5:24",
+  "context": "Culto sem justiça não basta.",
+  "keyword": "Deixai",
+  "verseRefs": [
+   "Amós 5:24"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Amós 5:21–27"
+ ],
+ "verses": [
+  {
+   "ref": "Amós 5:21",
+   "text": "Eu aborreço, desprezo as suas festas e não tenho nenhum prazer nas suas assembleias solenes."
+  },
+  {
+   "ref": "Amós 5:22",
+   "text": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados."
+  },
+  {
+   "ref": "Amós 5:23",
+   "text": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos"
+  },
+  {
+   "ref": "Amós 5:24",
+   "text": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene."
+  },
+  {
+   "ref": "Amós 5:25",
+   "text": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante quarenta anos, ó casa de Israel?"
+  },
+  {
+   "ref": "Amós 5:26",
+   "text": "Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos."
+  },
+  {
+   "ref": "Amós 5:27",
+   "text": "Portanto, eu os desterrarei além de Damasco, diz o SENHOR, cujo nome é Deus dos Exércitos."
+  }
+ ]
+}
+</cena>

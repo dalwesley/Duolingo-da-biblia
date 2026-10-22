@@ -1,0 +1,700 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:43–46",
+  "passages": [
+   {
+    "ref": "Mateus 5:43–46"
+   },
+   {
+    "ref": "Mateus 5:47–48"
+   }
+  ],
+  "context": "Jesus fecha as antíteses com o chamado mais alto: amar os inimigos e orar pelos perseguidores. Amar só quem ama não distingue o discípulo; o Pai faz sol e chuva caírem sobre maus e bons.",
+  "keyword": "Amor",
+  "keywordGloss": "Bem ativo até para com inimigos, imitando o Pai que abençoa maus e bons sem distinção.",
+  "focusQuestion": "Há alguém que você trata como inimigo e ainda não colocou em oração?",
+  "reflectionPrompts": [
+   "Orar por quem persegue",
+   "Imitar a generosidade do Pai",
+   "Amar além do círculo fácil"
+  ],
+  "facts": [
+   {
+    "text": "Foi dito para amar o próximo e odiar o inimigo.",
+    "evidenceRef": "Mateus 5:43",
+    "evidenceSpan": "Amarás o teu próximo e odiarás o teu inimigo"
+   },
+   {
+    "text": "Jesus manda amar os inimigos e orar pelos perseguidores.",
+    "evidenceRef": "Mateus 5:44",
+    "evidenceSpan": "Amem os seus inimigos, orem por aqueles que os perseguem"
+   },
+   {
+    "text": "O Pai faz o sol nascer sobre maus e bons.",
+    "evidenceRef": "Mateus 5:45",
+    "evidenceSpan": "ele faz nascer o seu sol sobre maus e bons"
+   },
+   {
+    "text": "Amar só quem ama não rende recompensa distinta, diz Jesus.",
+    "evidenceRef": "Mateus 5:46",
+    "evidenceSpan": "se vocês amam somente aqueles que os amam"
+   },
+   {
+    "text": "Os discípulos devem ser perfeitos como o Pai celeste.",
+    "evidenceRef": "Mateus 5:48",
+    "evidenceSpan": "Sejam perfeitos, assim como é perfeito o seu Pai"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "inimigos",
+    "gloss": "Quem se opõe ou persegue, incluído por Jesus no alcance do amor."
+   },
+   {
+    "term": "Pai",
+    "gloss": "O Pai nos céus, modelo de generosidade para maus e bons."
+   },
+   {
+    "term": "perfeitos",
+    "gloss": "Inteiros e maduros no amor como o Pai, no contexto de amar sem exceção."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O dito de amar próximo e odiar inimigo",
+    "evidenceRef": "Mateus 5:43"
+   },
+   {
+    "label": "Jesus manda amar e orar por inimigos",
+    "evidenceRef": "Mateus 5:44"
+   },
+   {
+    "label": "O Pai abençoa maus e bons igualmente",
+    "evidenceRef": "Mateus 5:45"
+   },
+   {
+    "label": "Amor completo como o do Pai",
+    "evidenceRef": "Mateus 5:48"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Amar inimigos é para se tornarem filhos do Pai que está nos céus.",
+    "marker": "Para",
+    "evidenceRef": "Mateus 5:45"
+   },
+   {
+    "kind": "contraste",
+    "text": "Amar só quem ama é o que até os publicanos fazem, sem distinção.",
+    "marker": "somente",
+    "evidenceRef": "Mateus 5:46"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 12:20",
+    "bridge": "Bem ao inimigo faminto"
+   },
+   {
+    "ref": "Lucas 6:27",
+    "bridge": "Amar e fazer bem sempre"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Amar inimigos é aprovar tudo o que eles fazem de errado.",
+    "why": "Jesus manda orar e fazer o bem; amar não é chamar o mal de bem (5:44–45)."
+   },
+   {
+    "text": "Sede perfeitos é exigência de nunca falhar em nada na vida.",
+    "why": "No contexto, a perfeição citada imita o Pai que ama maus e bons (5:45–48)."
+   },
+   {
+    "text": "O Pai abençoa só quem já merece o sol e a chuva dele.",
+    "why": "O texto diz o contrário: sol sobre maus e bons, chuva sobre justos e injustos."
+   }
+  ],
+  "centralInsight": "Amar só os amigos não distingue o discípulo",
+  "anchorQuestion": "Por que amar inimigos faz os discípulos parecerem com o Pai, segundo Mateus 5:45?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:44, Jesus manda amar os inimigos e orar pelos perseguidores",
+   "verseRef": "Mateus 5:44",
+   "correctOptionId": "true",
+   "evidenceSpan": "Amem os seus inimigos, orem por aqueles que os perseguem",
+   "feedbackCorrect": "O amor do Reino alcança justamente quem se opõe ao discípulo.",
+   "feedbackWrong": {
+    "false": "Releia 5:44 inteiro: amor e oração pelos que perseguem."
+   },
+   "hint": "Veja os dois primeiros mandamentos do versículo.",
+   "learningObjective": "Observar o amor aos inimigos em 5:44.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:44, toque a quem Jesus manda amar de modo surpreendente.",
+   "verseRef": "Mateus 5:44",
+   "options": [
+    {
+     "id": "a",
+     "text": "os seus inimigos"
+    },
+    {
+     "id": "b",
+     "text": "os perseguem"
+    },
+    {
+     "id": "c",
+     "text": "os odeiam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "Jesus coloca no centro do amor justamente quem ninguém escolheria amar.",
+   "feedbackWrong": {
+    "b": "Por eles Jesus manda orar, na segunda parte da frase.",
+    "c": "Para eles ele manda praticar o bem, no fim da frase."
+   },
+   "hint": "Procure o primeiro grupo citado por Jesus.",
+   "learningObjective": "Identificar quem deve ser amado em 5:44.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:45, sobre quem o Pai faz o sol nascer a cada dia?",
+   "verseRef": "Mateus 5:44–45",
+   "options": [
+    {
+     "id": "a",
+     "text": "Somente sobre os justos que merecem"
+    },
+    {
+     "id": "b",
+     "text": "Sobre maus e bons sem distinção"
+    },
+    {
+     "id": "c",
+     "text": "Somente sobre os filhos obedientes"
+    },
+    {
+     "id": "d",
+     "text": "Somente sobre quem ora no monte"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ele faz nascer o seu sol sobre maus e bons",
+   "feedbackCorrect": "A generosidade do Pai não usa a régua de merecimento que usamos.",
+   "feedbackWrong": {
+    "a": "O texto inclui os maus no mesmo sol dos bons.",
+    "c": "Filhos são chamados a imitar esse alcance amplo.",
+    "d": "O monte não é condição para o sol do Pai nascer."
+   },
+   "hint": "Veja os dois grupos unidos pela mesma luz.",
+   "learningObjective": "Observar a generosidade do Pai em 5:45.",
+   "evidence": [
+    "Mateus 5:44–45"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:44 na ordem do texto.",
+   "verseRef": "Mateus 5:44",
+   "options": [
+    {
+     "id": "a",
+     "text": "Amem os seus inimigos"
+    },
+    {
+     "id": "b",
+     "text": "orem por aqueles que os perseguem"
+    },
+    {
+     "id": "c",
+     "text": "pratiquem o bem para os que os odeiam"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "Amar, orar e fazer o bem: três verbos para o mesmo coração largo.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor aos inimigos, a ordem inicial."
+   },
+   "hint": "A oração pelos perseguidores vem no meio.",
+   "learningObjective": "Reconhecer a sequência de Mateus 5:44.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:45, o que o Pai faz nascer sobre maus e bons?",
+   "verseRef": "Mateus 5:44–45",
+   "options": [
+    {
+     "id": "a",
+     "text": "sol"
+    },
+    {
+     "id": "b",
+     "text": "lua"
+    },
+    {
+     "id": "c",
+     "text": "vento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ele faz nascer o seu sol sobre maus e bons",
+   "feedbackCorrect": "O mesmo sol para todos é a foto da generosidade que devemos imitar.",
+   "feedbackWrong": {
+    "b": "A lua não é citada nessa imagem de Jesus.",
+    "c": "Vento aparece em outras cenas, não nesta do Pai generoso."
+   },
+   "hint": "Pense na luz que nasce toda manhã para todos.",
+   "learningObjective": "Lembrar a imagem do Pai generoso em 5:45.",
+   "evidence": [
+    "Mateus 5:44–45"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:44 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:44–45",
+   "passageA": {
+    "ref": "Mateus 5:44"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "No Reino, amar só quem ama de volta não distingue o discípulo de ninguém."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amar só amigos basta sempre"
+    },
+    {
+     "id": "b",
+     "text": "Amor alcança até inimigos"
+    },
+    {
+     "id": "c",
+     "text": "Inimigo deve ser ignorado"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "O traço que distingue o discípulo é um amor que atravessa a inimizade.",
+   "feedbackWrong": {
+    "a": "Jesus pergunta que recompensa há nisso em 5:46.",
+    "c": "Ignorar é pouco: Jesus manda amar, orar e fazer bem."
+   },
+   "hint": "Veja quem entra no alcance do amor aqui.",
+   "learningObjective": "Ligar amor aos inimigos à identidade do discípulo.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:46, amar somente quem ama rende ao discípulo uma recompensa distinta",
+   "verseRef": "Mateus 5:46",
+   "correctOptionId": "false",
+   "evidenceSpan": "que recompensa vocês têm?",
+   "feedbackCorrect": "Jesus pergunta sem esperar sim: até os publicanos fazem o mesmo.",
+   "feedbackWrong": {
+    "true": "A pergunta de Jesus em 5:46 espera a resposta nenhuma."
+   },
+   "hint": "Ouça o tom da pergunta feita por Jesus.",
+   "learningObjective": "Compreender a crítica ao amor limitado.",
+   "evidence": [
+    "Mateus 5:46"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:45, toque os dois grupos alcançados pelo sol do Pai.",
+   "verseRef": "Mateus 5:45",
+   "options": [
+    {
+     "id": "a",
+     "text": "maus e bons"
+    },
+    {
+     "id": "b",
+     "text": "seu sol"
+    },
+    {
+     "id": "c",
+     "text": "nos céus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sobre maus e bons e faz chover sobre justos e injustos",
+   "feedbackCorrect": "Dois opostos sob o mesmo sol: assim o Pai trata o mundo que criou.",
+   "feedbackWrong": {
+    "b": "Isso é o que nasce sobre eles, não quem é alcançado.",
+    "c": "Isso é onde o Pai está, não os grupos citados."
+   },
+   "hint": "Procure o par de opostos no meio do versículo.",
+   "learningObjective": "Reconhecer o alcance da bondade do Pai.",
+   "evidence": [
+    "Mateus 5:45"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 5:45 explica o mandamento de Mateus 5:44?",
+   "verseRef": "Mateus 5:44–45",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra o Pai como modelo desse amor amplo"
+    },
+    {
+     "id": "b",
+     "text": "Limita o amor a quem já é justo e bom"
+    },
+    {
+     "id": "c",
+     "text": "Troca a oração por distância dos perseguidores"
+    },
+    {
+     "id": "d",
+     "text": "Promete sol apenas aos filhos obedientes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "filhos do seu Pai que está nos céus",
+   "feedbackCorrect": "Filhos se parecem com o Pai: quem ele abençoa sem distinção, nós imitamos.",
+   "feedbackWrong": {
+    "b": "Sol e chuva caem também sobre maus e injustos.",
+    "c": "Orar pelos perseguidores aproxima, não distancia o coração.",
+    "d": "A promessa é imitar o Pai, não limitar a bondade dele."
+   },
+   "hint": "Pergunte com quem os filhos devem se parecer.",
+   "learningObjective": "Relacionar mandamento e modelo do Pai.",
+   "evidence": [
+    "Mateus 5:44–45"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia o ensino de Mateus 5:44 a 5:46?",
+   "verseRef": "Mateus 5:44–45",
+   "options": [
+    {
+     "id": "a",
+     "text": "Amar inimigos e orar por eles"
+    },
+    {
+     "id": "b",
+     "text": "Imitar o Pai que abençoa todos"
+    },
+    {
+     "id": "c",
+     "text": "Superar o amor que só retribui"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "Mandamento, modelo no Pai e contraste com o amor comum, nessa ordem.",
+   "feedbackWrong": {
+    "default": "Comece pelo mandamento direto de Jesus em 5:44."
+   },
+   "hint": "O contraste com os publicanos vem depois, em 5:46.",
+   "learningObjective": "Compreender o encadeamento do amor aos inimigos.",
+   "evidence": [
+    "Mateus 5:44–45"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:46, o que Jesus pergunta se temos ao amar só quem nos ama?",
+   "verseRef": "Mateus 5:46",
+   "options": [
+    {
+     "id": "a",
+     "text": "recompensa"
+    },
+    {
+     "id": "b",
+     "text": "desculpa"
+    },
+    {
+     "id": "c",
+     "text": "vantagem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que recompensa vocês têm?",
+   "feedbackCorrect": "A pergunta desmonta a ideia de que amor retribuído é grande feito do Reino.",
+   "feedbackWrong": {
+    "b": "Jesus não oferece desculpa para o amor limitado aqui.",
+    "c": "A palavra usada por Jesus é outra, ligada ao Pai que recompensa."
+   },
+   "hint": "Pense no que se espera receber de volta.",
+   "learningObjective": "Lembrar a pergunta crítica de 5:46.",
+   "evidence": [
+    "Mateus 5:46"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:44 a Romanos 12:20?",
+   "verseRef": "Mateus 5:44",
+   "passageA": {
+    "ref": "Mateus 5:44"
+   },
+   "passageB": {
+    "ref": "Romanos 12:20"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Bem ao inimigo faminto"
+    },
+    {
+     "id": "b",
+     "text": "Fome usada como vingança"
+    },
+    {
+     "id": "c",
+     "text": "Inimigo deve passar fome"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pratiquem o bem para os que os odeiam",
+   "feedbackCorrect": "Paulo concretiza Jesus: inimigo com fome recebe comida, não desprezo.",
+   "feedbackWrong": {
+    "b": "A fome do inimigo é chance de bem, não de vingança.",
+    "c": "Os dois textos mandam saciar, não abandonar o inimigo."
+   },
+   "hint": "Veja o que Paulo manda dar ao inimigo com fome.",
+   "learningObjective": "Relacionar amor ao inimigo e bem prático.",
+   "evidence": [
+    "Mateus 5:44",
+    "Romanos 12:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 5:48 pede uma perfeição sem falhas em tudo, sem relação com amar inimigos",
+   "verseRef": "Mateus 5:47–48",
+   "correctOptionId": "false",
+   "evidenceSpan": "Sejam perfeitos, assim como é perfeito o seu Pai",
+   "feedbackCorrect": "No contexto, ser como o Pai é amar de modo completo, sem exceção de pessoas.",
+   "feedbackWrong": {
+    "true": "Leia 5:45 junto: o Pai perfeito abençoa maus e bons."
+   },
+   "hint": "Junte o versículo 48 ao modelo do Pai em 5:45.",
+   "learningObjective": "Interpretar a perfeição no seu contexto de amor.",
+   "evidence": [
+    "Mateus 5:47–48"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:48, toque como o Pai celeste é descrito por Jesus.",
+   "verseRef": "Mateus 5:48",
+   "options": [
+    {
+     "id": "a",
+     "text": "perfeito"
+    },
+    {
+     "id": "b",
+     "text": "no céu"
+    },
+    {
+     "id": "c",
+     "text": "Sejam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "assim como é perfeito o seu Pai que está no céu",
+   "feedbackCorrect": "O Pai completo no amor é o espelho final de todo esse bloco do Sermão.",
+   "feedbackWrong": {
+    "b": "Isso localiza o Pai, não descreve o caráter dele aqui.",
+    "c": "Isso é a ordem aos discípulos, não a descrição do Pai."
+   },
+   "hint": "Procure o adjetivo ligado ao Pai no versículo.",
+   "learningObjective": "Sustentar no texto o modelo perfeito do Pai.",
+   "evidence": [
+    "Mateus 5:48"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 5:43–48 sustenta sobre amar os inimigos?",
+   "verseRef": "Mateus 5:44–45",
+   "options": [
+    {
+     "id": "a",
+     "text": "É aprovar tudo o que o inimigo faz de errado"
+    },
+    {
+     "id": "b",
+     "text": "É imitar o Pai fazendo bem até a quem se opõe"
+    },
+    {
+     "id": "c",
+     "text": "É sentimento bonito sem prática nem oração"
+    },
+    {
+     "id": "d",
+     "text": "É tarefa só para quem nunca foi perseguido"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "Amar, orar e fazer o bem: o discípulo reflete o Pai que abençoa todos.",
+   "feedbackWrong": {
+    "a": "Fazer o bem não chama o mal do outro de bem.",
+    "c": "Jesus lista práticas concretas: amar, orar, praticar o bem.",
+    "d": "Perseguidores são justamente citados como alvo da oração."
+   },
+   "hint": "Junte os três verbos de 5:44 com o Pai de 5:45.",
+   "learningObjective": "Escolher a interpretação sustentada por 5:43–48.",
+   "evidence": [
+    "Mateus 5:44–45"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do amor completo?",
+   "verseRef": "Mateus 5:45",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pai abençoa maus e bons sem distinção"
+    },
+    {
+     "id": "b",
+     "text": "Filhos amam também os inimigos"
+    },
+    {
+     "id": "c",
+     "text": "Amor se torna completo como o do Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ele faz nascer o seu sol sobre maus e bons",
+   "feedbackCorrect": "Do Pai aos filhos e à maturidade no amor: o bloco fecha no alto.",
+   "feedbackWrong": {
+    "default": "Comece pelo modelo do Pai citado em 5:45."
+   },
+   "hint": "O modelo vem antes da imitação dos filhos.",
+   "learningObjective": "Ver o amor aos inimigos como maturidade filial.",
+   "evidence": [
+    "Mateus 5:45",
+    "Lucas 6:35"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:47, se saudarem somente os seus quem, nada fazem de diferente?",
+   "verseRef": "Mateus 5:47",
+   "options": [
+    {
+     "id": "a",
+     "text": "irmãos"
+    },
+    {
+     "id": "b",
+     "text": "inimigos"
+    },
+    {
+     "id": "c",
+     "text": "vizinhos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se saudarem somente os seus irmãos",
+   "feedbackCorrect": "Cumprimentar só o próprio círculo é o mínimo que qualquer pessoa faz.",
+   "feedbackWrong": {
+    "b": "Saudar inimigos seria justamente o diferente citado por Jesus.",
+    "c": "Vizinhos não são a palavra usada nessa pergunta dele."
+   },
+   "hint": "Pense no círculo mais próximo e fácil de saudar.",
+   "learningObjective": "Lembrar o círculo limitado criticado em 5:47.",
+   "evidence": [
+    "Mateus 5:47"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:44 a Lucas 6:27?",
+   "verseRef": "Mateus 5:44–45",
+   "passageA": {
+    "ref": "Mateus 5:44"
+   },
+   "passageB": {
+    "ref": "Lucas 6:27"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amar e fazer bem sempre"
+    },
+    {
+     "id": "b",
+     "text": "Amar só quem retribui bem"
+    },
+    {
+     "id": "c",
+     "text": "Odiar com educação apenas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "Lucas registra o mesmo coração de Jesus: amem e façam bem aos que odeiam.",
+   "feedbackWrong": {
+    "b": "Os dois Evangelhos rompem o limite da retribuição.",
+    "c": "Educação fria não é o amor ativo que Jesus ordena."
+   },
+   "hint": "Compare os verbos de Jesus nos dois Evangelhos.",
+   "learningObjective": "Ligar o amor aos inimigos nos Evangelhos.",
+   "evidence": [
+    "Mateus 5:44–45",
+    "Lucas 6:27"
+   ]
+  }
+ ]
+}

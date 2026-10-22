@@ -1,0 +1,3310 @@
+[
+  {
+    "id": "escatologia-sem-es-01-volta-01",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 1:11, os dois homens anunciam que Jesus voltará do mesmo modo como o viram subir.",
+    "prompt": "Em Atos 1:11, os dois homens anunciam que Jesus voltará do mesmo modo como o viram subir.",
+    "cue": "Em Atos 1:11, os dois homens anunciam que Jesus voltará do mesmo modo como o viram subir.",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "O anúncio liga a volta ao modo da subida que os discípulos acabaram de ver.",
+    "feedbackWrong": {
+      "false": "Releia o fim do versículo, onde a volta é anunciada com clareza."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar a promessa da volta de Jesus.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-01-volta-02",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 1:9, toque o que encobriu Jesus e o afastou da vista deles.",
+    "prompt": "Em Atos 1:9, toque o que encobriu Jesus e o afastou da vista deles.",
+    "cue": "Em Atos 1:9, toque o que encobriu Jesus e o afastou da vista deles.",
+    "verseRef": "Atos 1:9",
+    "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sua vista"
+      },
+      {
+        "id": "b",
+        "text": "foi elevado"
+      },
+      {
+        "id": "c",
+        "text": "nuvem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "uma nuvem o encobriu, afastando-o de sua vista",
+    "feedbackCorrect": "Algo encobre Jesus no fim da subida, diante dos olhos dos discípulos.",
+    "feedbackWrong": {
+      "a": "Isso é de quem ele foi afastado, não o que o encobriu.",
+      "b": "Isso diz o que houve com Jesus, não o que o encobriu."
+    },
+    "hint": "Procure perto do fim do versículo.",
+    "learningObjective": "Observar como Jesus foi afastado da vista deles.",
+    "evidence": [
+      "Atos 1:9"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-01-volta-03",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Atos 1:10, quem surgiu ao lado dos discípulos enquanto olhavam para o céu?",
+    "prompt": "Segundo Atos 1:10, quem surgiu ao lado dos discípulos enquanto olhavam para o céu?",
+    "cue": "Segundo Atos 1:10, quem surgiu ao lado dos discípulos enquanto olhavam para o céu?",
+    "verseRef": "Atos 1:10",
+    "passageText": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Soldados do templo"
+      },
+      {
+        "id": "b",
+        "text": "Dois homens vestidos de branco"
+      },
+      {
+        "id": "c",
+        "text": "Uma multidão de Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "Pedro e João apenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "surgiram ao lado deles dois homens vestidos de branco",
+    "feedbackCorrect": "Dois homens de branco surgem ao lado deles e fazem o anúncio da volta.",
+    "feedbackWrong": {
+      "a": "O texto não cita soldados nessa cena.",
+      "c": "Nenhuma multidão aparece nessa cena do monte.",
+      "d": "Pedro e João fazem parte dos discípulos que olhavam."
+    },
+    "hint": "Leia quem surge ao lado deles.",
+    "learningObjective": "Observar quem aparece aos discípulos.",
+    "evidence": [
+      "Atos 1:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-01-volta-04",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 1:9 na ordem do texto.",
+    "prompt": "Monte Atos 1:9 na ordem do texto.",
+    "cue": "Monte Atos 1:9 na ordem do texto.",
+    "verseRef": "Atos 1:9",
+    "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E, ao dizer essas palavras"
+      },
+      {
+        "id": "b",
+        "text": "foi elevado às alturas diante deles"
+      },
+      {
+        "id": "c",
+        "text": "e uma nuvem o encobriu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "foi elevado às alturas diante deles",
+    "feedbackCorrect": "Jesus fala, é elevado diante deles e então é encoberto.",
+    "feedbackWrong": {
+      "default": "Comece pela fala de Jesus; o encobrimento fecha o versículo."
+    },
+    "hint": "O versículo começa com Jesus falando.",
+    "learningObjective": "Reconhecer a sequência da subida de Jesus.",
+    "evidence": [
+      "Atos 1:9"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-01-volta-05",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+    "prompt": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+    "cue": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+    "verseRef": "Atos 1:10",
+    "passageText": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco.",
+    "template": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escuro"
+      },
+      {
+        "id": "b",
+        "text": "branco"
+      },
+      {
+        "id": "c",
+        "text": "longo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "dois homens vestidos de branco",
+    "feedbackCorrect": "Os dois homens que anunciam a volta estavam vestidos assim.",
+    "feedbackWrong": {
+      "a": "O texto descreve a roupa com a cor clara, não essa.",
+      "c": "Isso descreveria comprimento, e o texto fala de cor."
+    },
+    "hint": "Veja como o texto descreve os dois homens.",
+    "learningObjective": "Lembrar como os dois homens são descritos.",
+    "evidence": [
+      "Atos 1:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-01-volta-06",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus subiu ao céu diante dos discípulos que olhavam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus nunca mais voltará"
+      },
+      {
+        "id": "b",
+        "text": "Os discípulos subiriam sozinhos"
+      },
+      {
+        "id": "c",
+        "text": "Jesus voltará como subiu"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "A promessa liga a volta futura ao modo da subida que eles viram.",
+    "feedbackWrong": {
+      "a": "O anúncio afirma justamente o contrário disso.",
+      "b": "Quem subiu foi Jesus; os discípulos ficam e ouvem a promessa."
+    },
+    "hint": "Compare a volta anunciada com a subida vista.",
+    "learningObjective": "Ligar a subida de Jesus à promessa da volta.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-01-volta-01",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 1:8, Jesus deixa os discípulos sem nenhuma tarefa até ele voltar.",
+    "prompt": "Em Atos 1:8, Jesus deixa os discípulos sem nenhuma tarefa até ele voltar.",
+    "cue": "Em Atos 1:8, Jesus deixa os discípulos sem nenhuma tarefa até ele voltar.",
+    "verseRef": "Atos 1:8",
+    "passageText": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra",
+    "feedbackCorrect": "Antes de subir, Jesus os envia como testemunhas até os confins da terra.",
+    "feedbackWrong": {
+      "true": "Releia a ordem de Jesus no versículo 8, antes da subida."
+    },
+    "hint": "Releia o que Jesus diz antes de subir.",
+    "learningObjective": "Compreender que esperar a volta inclui testemunhar.",
+    "evidence": [
+      "Atos 1:8"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-01-volta-02",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 1:10, toque a palavra que marca o tempo em que os dois homens surgem.",
+    "prompt": "Em Atos 1:10, toque a palavra que marca o tempo em que os dois homens surgem.",
+    "cue": "Em Atos 1:10, toque a palavra que marca o tempo em que os dois homens surgem.",
+    "verseRef": "Atos 1:10",
+    "passageText": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "branco"
+      },
+      {
+        "id": "b",
+        "text": "enquanto"
+      },
+      {
+        "id": "c",
+        "text": "fixamente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E, enquanto eles olhavam fixamente para o céu",
+    "feedbackCorrect": "A palavra abre a cena e liga o surgimento ao olhar dos discípulos.",
+    "feedbackWrong": {
+      "a": "Isso descreve a roupa, não o tempo da cena.",
+      "c": "Isso diz como eles olhavam, não quando os homens surgem."
+    },
+    "hint": "Procure a palavra que abre a segunda parte.",
+    "learningObjective": "Reconhecer a palavra que marca o momento da cena.",
+    "evidence": [
+      "Atos 1:10"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-01-volta-03",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Atos 1:11 responde ao olhar dos discípulos para o céu?",
+    "prompt": "Como Atos 1:11 responde ao olhar dos discípulos para o céu?",
+    "cue": "Como Atos 1:11 responde ao olhar dos discípulos para o céu?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Manda que fiquem ali até ele voltar"
+      },
+      {
+        "id": "b",
+        "text": "Revela o dia exato do retorno"
+      },
+      {
+        "id": "c",
+        "text": "Anuncia a volta e os devolve à vida"
+      },
+      {
+        "id": "d",
+        "text": "Diz que a subida foi só um sonho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por que vocês estão olhando para o céu",
+    "feedbackCorrect": "A pergunta interrompe o olhar parado e aponta para a promessa e a tarefa.",
+    "feedbackWrong": {
+      "a": "Logo depois eles voltam a Jerusalém e se reúnem em oração.",
+      "b": "O anúncio fala do modo da volta, sem dar data alguma.",
+      "d": "Eles viram Jesus subir de verdade, diante dos olhos."
+    },
+    "hint": "Veja o efeito da pergunta dos dois homens.",
+    "learningObjective": "Compreender que a promessa move os discípulos à ação.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-01-volta-04",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Atos 1:9-10?",
+    "prompt": "Como avança a cena em Atos 1:9-10?",
+    "cue": "Como avança a cena em Atos 1:9-10?",
+    "verseRef": "Atos 1:9–10",
+    "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista. E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus sobe e é encoberto"
+      },
+      {
+        "id": "b",
+        "text": "Os discípulos olham para o céu"
+      },
+      {
+        "id": "c",
+        "text": "Dois homens surgem ao lado deles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "surgiram ao lado deles dois homens vestidos de branco",
+    "feedbackCorrect": "Primeiro a subida, depois o olhar deles e o surgimento dos dois homens.",
+    "feedbackWrong": {
+      "default": "A subida vem primeiro; o anúncio fecha a cena."
+    },
+    "hint": "O anúncio é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da cena da subida.",
+    "evidence": [
+      "Atos 1:9–10"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-01-volta-05",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Atos 1:11, de que região eram os homens a quem os dois falaram?",
+    "prompt": "Em Atos 1:11, de que região eram os homens a quem os dois falaram?",
+    "cue": "Em Atos 1:11, de que região eram os homens a quem os dois falaram?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "template": "Homens da ___, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Galileia"
+      },
+      {
+        "id": "b",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Samaria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Homens da Galileia, por que vocês estão olhando para o céu",
+    "feedbackCorrect": "Os dois homens se dirigem aos discípulos chamando-os por sua região.",
+    "feedbackWrong": {
+      "b": "Essa cidade é para onde eles voltam depois, no versículo 12.",
+      "c": "Essa região aparece na missão do versículo 8, não aqui."
+    },
+    "hint": "Veja como os dois homens os chamam.",
+    "learningObjective": "Lembrar a quem o anúncio da volta foi feito.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-01-volta-06",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 1:11 a João 14:3?",
+    "prompt": "O que liga Atos 1:11 a João 14:3?",
+    "cue": "O que liga Atos 1:11 a João 14:3?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+    },
+    "passageB": {
+      "ref": "João 14:3",
+      "text": "E, quando eu for e vos preparar um lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A volta seria só interior"
+      },
+      {
+        "id": "b",
+        "text": "Jesus voltará para os seus"
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos subiriam sozinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "Jesus prometeu voltar, e os dois homens confirmam essa promessa na subida.",
+    "feedbackWrong": {
+      "a": "Nos dois textos ele volta de verdade para buscar os seus.",
+      "c": "Quem volta é Jesus; os discípulos são recebidos por ele."
+    },
+    "hint": "Compare a promessa de Jesus com o anúncio.",
+    "learningObjective": "Relacionar a promessa de Jesus à confirmação em Atos.",
+    "evidence": [
+      "Atos 1:11",
+      "João 14:3"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-01-volta-01",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Atos 1:14 mostra o grupo perseverando unânime em oração e súplicas depois da subida.",
+    "prompt": "Atos 1:14 mostra o grupo perseverando unânime em oração e súplicas depois da subida.",
+    "cue": "Atos 1:14 mostra o grupo perseverando unânime em oração e súplicas depois da subida.",
+    "verseRef": "Atos 1:14",
+    "passageText": "Todos esses perseveravam unânimes em oração e súplicas, juntamente com as mulheres, com Maria, mãe de Jesus, e com os seus irmãos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Todos esses perseveravam unânimes em oração e súplicas",
+    "feedbackCorrect": "Depois da subida, o grupo se reúne e persevera unido em oração.",
+    "feedbackWrong": {
+      "false": "Veja a missão no versículo 8 e a oração no versículo 14."
+    },
+    "hint": "Junte o começo e o fim do trecho.",
+    "learningObjective": "Interpretar a espera da volta como vida orante.",
+    "evidence": [
+      "Atos 1:14"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-01-volta-02",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+    "prompt": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+    "cue": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "voltará"
+      },
+      {
+        "id": "c",
+        "text": "olhando"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "O verbo anuncia com certeza o que vai acontecer com esse Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é o lugar para onde olhavam, não a promessa.",
+      "c": "Isso descreve os discípulos, não a promessa feita a eles."
+    },
+    "hint": "Procure o verbo da promessa no fim.",
+    "learningObjective": "Sustentar com o texto a certeza da volta.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-01-volta-03",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Atos 1:11 sustenta sobre a volta de Jesus?",
+    "prompt": "Que leitura Atos 1:11 sustenta sobre a volta de Jesus?",
+    "cue": "Que leitura Atos 1:11 sustenta sobre a volta de Jesus?",
+    "verseRef": "Atos 1:10–11",
+    "passageText": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco. Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele voltará de verdade, como subiu"
+      },
+      {
+        "id": "b",
+        "text": "Ele voltará só no coração dos crentes"
+      },
+      {
+        "id": "c",
+        "text": "Ele voltará em data que podemos marcar"
+      },
+      {
+        "id": "d",
+        "text": "Ele já voltou e ninguém percebeu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Esse Jesus que foi elevado entre vocês voltará",
+    "feedbackCorrect": "O texto fala desse mesmo Jesus voltando do modo como foi visto subir.",
+    "feedbackWrong": {
+      "b": "A volta é ligada à subida visível que eles presenciaram.",
+      "c": "O texto fala do modo da volta, sem revelar data.",
+      "d": "O anúncio aponta para uma volta futura, ainda esperada."
+    },
+    "hint": "Veja quem volta e como ele volta.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre a volta.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-01-volta-04",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da promessa da volta de Jesus?",
+    "prompt": "Qual sequência revela o caminho da promessa da volta de Jesus?",
+    "cue": "Qual sequência revela o caminho da promessa da volta de Jesus?",
+    "verseRef": "Atos 1:9–10",
+    "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista. E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus sobe ao céu diante deles"
+      },
+      {
+        "id": "b",
+        "text": "Jesus promete voltar para os seus"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê vigia sem saber o dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "foi elevado às alturas diante deles",
+    "feedbackCorrect": "A subida gera a promessa, e a promessa pede vigilância sem data marcada.",
+    "feedbackWrong": {
+      "default": "Siga a ordem da Bíblia, de Atos aos Evangelhos."
+    },
+    "hint": "Comece pela subida que os discípulos viram.",
+    "learningObjective": "Ver a volta como promessa que pede vigilância.",
+    "evidence": [
+      "Atos 1:9–10",
+      "João 14:3",
+      "Mateus 24:42"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-01-volta-05",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Atos 1:11, Jesus voltará de que maneira em relação à subida?",
+    "prompt": "Em Atos 1:11, Jesus voltará de que maneira em relação à subida?",
+    "cue": "Em Atos 1:11, Jesus voltará de que maneira em relação à subida?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "template": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da ___ maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "qualquer"
+      },
+      {
+        "id": "b",
+        "text": "outra"
+      },
+      {
+        "id": "c",
+        "text": "mesma"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "A volta é anunciada em ligação direta com o modo da subida vista.",
+    "feedbackWrong": {
+      "a": "Não é de qualquer jeito; é ligado à subida presenciada.",
+      "b": "O texto liga a volta justamente ao modo já visto."
+    },
+    "hint": "Veja a comparação feita no fim do versículo.",
+    "learningObjective": "Lembrar o termo que liga a volta à subida.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-01-volta-06",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Atos 1:11 a Mateus 24:42?",
+    "prompt": "O que liga Atos 1:11 a Mateus 24:42?",
+    "cue": "O que liga Atos 1:11 a Mateus 24:42?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+    },
+    "passageB": {
+      "ref": "Mateus 24:42",
+      "text": "Portanto, fiquem vigilantes, pois vocês não sabem em que dia o Senhor de vocês virá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer a promessa feita"
+      },
+      {
+        "id": "b",
+        "text": "Vigiar esperando a volta"
+      },
+      {
+        "id": "c",
+        "text": "Marcar a data certa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "A volta é certa, mas o dia é desconhecido; por isso Jesus manda vigiar.",
+    "feedbackWrong": {
+      "a": "A promessa pede atenção constante, não esquecimento.",
+      "c": "Mateus diz que não sabemos o dia em que o Senhor virá."
+    },
+    "hint": "Veja o que fazer quando o dia é desconhecido.",
+    "learningObjective": "Ligar a certeza da volta à vigilância.",
+    "evidence": [
+      "Atos 1:11",
+      "Mateus 24:42"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-02-juizo-01",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Coríntios 5:10, só alguns de nós deverão comparecer diante do tribunal de Cristo.",
+    "prompt": "Em 2 Coríntios 5:10, só alguns de nós deverão comparecer diante do tribunal de Cristo.",
+    "cue": "Em 2 Coríntios 5:10, só alguns de nós deverão comparecer diante do tribunal de Cristo.",
+    "verseRef": "2 Coríntios 5:9–10",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "Paulo inclui todos nesse comparecimento diante de Cristo.",
+    "feedbackWrong": {
+      "true": "Releia o começo do versículo e veja quem está incluído."
+    },
+    "hint": "Olhe as primeiras palavras do versículo.",
+    "learningObjective": "Observar quem comparecerá diante de Cristo.",
+    "evidence": [
+      "2 Coríntios 5:9–10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-02-juizo-02",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Coríntios 5:10, toque diante de que todos devemos comparecer.",
+    "prompt": "Em 2 Coríntios 5:10, toque diante de que todos devemos comparecer.",
+    "cue": "Em 2 Coríntios 5:10, toque diante de que todos devemos comparecer.",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "corpo"
+      },
+      {
+        "id": "b",
+        "text": "tribunal"
+      },
+      {
+        "id": "c",
+        "text": "acordo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "O texto nomeia o lugar desse comparecimento de todos nós.",
+    "feedbackWrong": {
+      "a": "Isso aparece no fim, ligado ao que cada um praticou.",
+      "c": "Isso liga o recebimento ao bem ou ao mal praticado."
+    },
+    "hint": "Procure depois da palavra diante.",
+    "learningObjective": "Observar diante de quem todos comparecerão.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-02-juizo-03",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Coríntios 5:10, conforme o que cada um receberá diante de Cristo?",
+    "prompt": "Segundo 2 Coríntios 5:10, conforme o que cada um receberá diante de Cristo?",
+    "cue": "Segundo 2 Coríntios 5:10, conforme o que cada um receberá diante de Cristo?",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conforme sua riqueza na terra"
+      },
+      {
+        "id": "b",
+        "text": "Conforme o nome da sua família"
+      },
+      {
+        "id": "c",
+        "text": "Conforme o bem ou o mal praticado"
+      },
+      {
+        "id": "d",
+        "text": "Conforme a opinião dos vizinhos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cada um receba de acordo com o bem ou o mal que praticou por meio do corpo",
+    "feedbackCorrect": "O recebimento está ligado ao bem ou ao mal praticado por meio do corpo.",
+    "feedbackWrong": {
+      "a": "O texto não mede ninguém por bens ou dinheiro.",
+      "b": "O texto olha para a prática de cada um, não para a família.",
+      "d": "Quem está diante deles é Cristo, não os vizinhos."
+    },
+    "hint": "Leia a segunda parte do versículo.",
+    "learningObjective": "Observar a base do recebimento diante de Cristo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-02-juizo-04",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Coríntios 5:10 na ordem do texto.",
+    "prompt": "Monte 2 Coríntios 5:10 na ordem do texto.",
+    "cue": "Monte 2 Coríntios 5:10 na ordem do texto.",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos nós devemos comparecer diante do tribunal de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "para que cada um receba de acordo com o bem ou o mal"
+      },
+      {
+        "id": "c",
+        "text": "que praticou por meio do corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "Todos comparecem, e cada um recebe conforme o que praticou.",
+    "feedbackWrong": {
+      "default": "Comece por quem comparece; o corpo fecha o versículo."
+    },
+    "hint": "O versículo começa por quem comparece.",
+    "learningObjective": "Reconhecer a sequência de 2 Coríntios 5:10.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-02-juizo-05",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Coríntios 5:7, como Paulo diz que andamos nesta vida?",
+    "prompt": "Em 2 Coríntios 5:7, como Paulo diz que andamos nesta vida?",
+    "cue": "Em 2 Coríntios 5:7, como Paulo diz que andamos nesta vida?",
+    "verseRef": "2 Coríntios 5:7",
+    "passageText": "Porque andamos por fé e não pelo que vemos.",
+    "template": "Porque andamos por ___ e não pelo que vemos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vista"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "andamos por fé e não pelo que vemos",
+    "feedbackCorrect": "Paulo descreve assim o andar de quem ainda não vê tudo.",
+    "feedbackWrong": {
+      "a": "O texto opõe justamente esse caminho ao que ele afirma.",
+      "b": "O texto não fala de esforço próprio nesse versículo."
+    },
+    "hint": "Veja o contraste no fim do versículo.",
+    "learningObjective": "Lembrar como Paulo descreve o andar do crente.",
+    "evidence": [
+      "2 Coríntios 5:7"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-02-juizo-06",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Coríntios 5:9 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Coríntios 5:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 5:9 comunica que se liga a este contexto?",
+    "verseRef": "2 Coríntios 5:9",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "passageA": {
+      "ref": "2 Coríntios 5:9",
+      "text": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo vive por fé e deseja estar com o Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver só pelo que vê"
+      },
+      {
+        "id": "b",
+        "text": "Viver sem se importar"
+      },
+      {
+        "id": "c",
+        "text": "Buscar agradar ao Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "Quem deseja estar com o Senhor se esforça para agradá-lo já agora.",
+    "feedbackWrong": {
+      "a": "O versículo 7 diz que andamos por fé, não pelo que vemos.",
+      "b": "Paulo fala de esforço constante, não de descuido."
+    },
+    "hint": "Veja o esforço que Paulo descreve.",
+    "learningObjective": "Ligar a vida pela fé ao desejo de agradar a Deus.",
+    "evidence": [
+      "2 Coríntios 5:9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-02-juizo-01",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 5:7-9, o desejo de estar com o Senhor leva Paulo a se esforçar para agradá-lo.",
+    "prompt": "Em 2 Coríntios 5:7-9, o desejo de estar com o Senhor leva Paulo a se esforçar para agradá-lo.",
+    "cue": "Em 2 Coríntios 5:7-9, o desejo de estar com o Senhor leva Paulo a se esforçar para agradá-lo.",
+    "verseRef": "2 Coríntios 5:8–9",
+    "passageText": "Temos plena confiança e desejamos deixar este corpo para habitar com o Senhor. Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência",
+    "feedbackCorrect": "O desejo pelo Senhor se traduz em esforço para agradá-lo sempre.",
+    "feedbackWrong": {
+      "false": "Junte o desejo do versículo 8 ao esforço do versículo 9."
+    },
+    "hint": "Ligue os versículos 8 e 9.",
+    "learningObjective": "Compreender a ligação entre desejo e esforço em Paulo.",
+    "evidence": [
+      "2 Coríntios 5:8–9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-02-juizo-02",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 5:9, toque a expressão que liga o esforço ao que veio antes.",
+    "prompt": "Em 2 Coríntios 5:9, toque a expressão que liga o esforço ao que veio antes.",
+    "cue": "Em 2 Coríntios 5:9, toque a expressão que liga o esforço ao que veio antes.",
+    "verseRef": "2 Coríntios 5:9",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sempre"
+      },
+      {
+        "id": "b",
+        "text": "Por isso"
+      },
+      {
+        "id": "c",
+        "text": "ausência"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Por isso, nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "A expressão abre o versículo ligando o esforço ao desejo anterior.",
+    "feedbackWrong": {
+      "a": "Isso diz com que constância, não o que liga as ideias.",
+      "c": "Isso é uma das situações citadas, não a ligação."
+    },
+    "hint": "Procure no começo do versículo.",
+    "learningObjective": "Reconhecer a expressão que liga desejo e esforço.",
+    "evidence": [
+      "2 Coríntios 5:9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-02-juizo-03",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 2 Coríntios 5:10 se relaciona com 2 Coríntios 5:9?",
+    "prompt": "Como 2 Coríntios 5:10 se relaciona com 2 Coríntios 5:9?",
+    "cue": "Como 2 Coríntios 5:10 se relaciona com 2 Coríntios 5:9?",
+    "verseRef": "2 Coríntios 5:9–10",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agradar a Deus perde importância depois"
+      },
+      {
+        "id": "b",
+        "text": "O esforço vale só para líderes da igreja"
+      },
+      {
+        "id": "c",
+        "text": "Viver para agradar combina com prestar contas"
+      },
+      {
+        "id": "d",
+        "text": "Prestar contas anula a vida pela fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "Buscar agradar ao Senhor combina com saber que todos comparecerão diante dele.",
+    "feedbackWrong": {
+      "a": "O comparecimento reforça, e não apaga, esse esforço.",
+      "b": "O versículo 10 inclui todos nós, sem limitar a líderes.",
+      "d": "Paulo junta os dois temas na mesma sequência de ideias."
+    },
+    "hint": "Pense por que o esforço faz sentido aqui.",
+    "learningObjective": "Relacionar o esforço para agradar com o comparecimento.",
+    "evidence": [
+      "2 Coríntios 5:9–10"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-02-juizo-04",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o caminho em 2 Coríntios 5:8-9?",
+    "prompt": "Como avança o caminho em 2 Coríntios 5:8-9?",
+    "cue": "Como avança o caminho em 2 Coríntios 5:8-9?",
+    "verseRef": "2 Coríntios 5:8–9",
+    "passageText": "Temos plena confiança e desejamos deixar este corpo para habitar com o Senhor. Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejar estar com o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Esforçar-se para agradar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Agradar na presença e na ausência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência",
+    "feedbackCorrect": "Paulo deseja o Senhor e se esforça para agradá-lo em toda situação.",
+    "feedbackWrong": {
+      "default": "Comece pelo andar atual; o esforço fecha a sequência."
+    },
+    "hint": "O esforço é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Paulo nesses versículos.",
+    "evidence": [
+      "2 Coríntios 5:8–9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-02-juizo-05",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 5:9, Paulo se esforça sempre para fazer o que em relação ao Senhor?",
+    "prompt": "Em 2 Coríntios 5:9, Paulo se esforça sempre para fazer o que em relação ao Senhor?",
+    "cue": "Em 2 Coríntios 5:9, Paulo se esforça sempre para fazer o que em relação ao Senhor?",
+    "verseRef": "2 Coríntios 5:9",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "template": "Por isso, nos esforçamos sempre para ___ tanto na presença quanto na ausência.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ignorá-lo"
+      },
+      {
+        "id": "b",
+        "text": "agradá-lo"
+      },
+      {
+        "id": "c",
+        "text": "evitá-lo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "O esforço de Paulo tem um alvo claro em relação ao Senhor.",
+    "feedbackWrong": {
+      "a": "Paulo busca justamente o contrário de ignorar o Senhor.",
+      "c": "Ele deseja habitar com o Senhor, não fugir dele."
+    },
+    "hint": "Veja o alvo do esforço constante.",
+    "learningObjective": "Compreender o alvo do esforço de Paulo.",
+    "evidence": [
+      "2 Coríntios 5:9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-02-juizo-06",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Coríntios 5:10 a João 5:28-29?",
+    "prompt": "O que liga 2 Coríntios 5:10 a João 5:28-29?",
+    "cue": "O que liga 2 Coríntios 5:10 a João 5:28-29?",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "passageA": {
+      "ref": "2 Coríntios 5:10",
+      "text": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo."
+    },
+    "passageB": {
+      "ref": "João 5:28–29",
+      "text": "Não se maravilhem com isso, pois vem a hora em que todos os que estão nos túmulos ouvirão a sua voz e sairão. E aqueles que tiverem feito o bem ressuscitarão para a vida; e aqueles que tiverem praticado o mal ressuscitarão para o juízo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só alguns serão julgados"
+      },
+      {
+        "id": "b",
+        "text": "O corpo nunca importará"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição e contas a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "Jesus fala dos que sairão dos túmulos, e Paulo de todos diante de Cristo.",
+    "feedbackWrong": {
+      "a": "João fala de todos nos túmulos, e Paulo de todos nós.",
+      "b": "Paulo liga o recebimento ao que foi praticado pelo corpo."
+    },
+    "hint": "Compare quem está incluído nos dois textos.",
+    "learningObjective": "Relacionar o comparecimento em Paulo e em Jesus.",
+    "evidence": [
+      "2 Coríntios 5:10",
+      "João 5:28–29"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-02-juizo-01",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 5:10, o que cada um praticou por meio do corpo não entra no recebimento diante de Cristo.",
+    "prompt": "Em 2 Coríntios 5:10, o que cada um praticou por meio do corpo não entra no recebimento diante de Cristo.",
+    "cue": "Em 2 Coríntios 5:10, o que cada um praticou por meio do corpo não entra no recebimento diante de Cristo.",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cada um receba de acordo com o bem ou o mal que praticou por meio do corpo",
+    "feedbackCorrect": "O texto liga o recebimento justamente ao bem ou mal praticado pelo corpo.",
+    "feedbackWrong": {
+      "true": "Releia a parte final do versículo com atenção."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Interpretar a responsabilidade pelas ações do corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-02-juizo-02",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 5:10, toque o trecho que mostra que ninguém fica de fora.",
+    "prompt": "Em 2 Coríntios 5:10, toque o trecho que mostra que ninguém fica de fora.",
+    "cue": "Em 2 Coríntios 5:10, toque o trecho que mostra que ninguém fica de fora.",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cada um"
+      },
+      {
+        "id": "b",
+        "text": "todos nós"
+      },
+      {
+        "id": "c",
+        "text": "por meio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "A abertura do versículo inclui todas as pessoas nesse comparecimento.",
+    "feedbackWrong": {
+      "a": "Isso destaca cada pessoa no recebimento, não o alcance total.",
+      "c": "Isso introduz o meio das ações, não quem comparece."
+    },
+    "hint": "Procure logo no começo do versículo.",
+    "learningObjective": "Sustentar com o texto que todos comparecerão.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-02-juizo-03",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Coríntios 5:9-10 sustenta sobre a vida de quem crê?",
+    "prompt": "Que leitura 2 Coríntios 5:9-10 sustenta sobre a vida de quem crê?",
+    "cue": "Que leitura 2 Coríntios 5:9-10 sustenta sobre a vida de quem crê?",
+    "verseRef": "2 Coríntios 5:9–10",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver por fé sem responsabilidade alguma"
+      },
+      {
+        "id": "b",
+        "text": "Viver por fé buscando agradar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Viver sem pensar no encontro com Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Viver só pelo que os olhos enxergam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "Paulo junta andar por fé, buscar agradar e comparecer diante de Cristo.",
+    "feedbackWrong": {
+      "a": "O esforço e o comparecimento mostram responsabilidade real.",
+      "c": "O texto coloca esse encontro diante de todos nós.",
+      "d": "Paulo diz o contrário ao opor fé ao que se vê."
+    },
+    "hint": "Junte os versículos 7, 9 e 10.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre a fé.",
+    "evidence": [
+      "2 Coríntios 5:9–10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-02-juizo-04",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 2 Coríntios 5:9-10?",
+    "prompt": "Qual sequência revela o sentido de 2 Coríntios 5:9-10?",
+    "cue": "Qual sequência revela o sentido de 2 Coríntios 5:9-10?",
+    "verseRef": "2 Coríntios 5:9–10",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar agradar ao Senhor agora"
+      },
+      {
+        "id": "b",
+        "text": "Comparecer diante de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Receber conforme o bem ou mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cada um receba de acordo com o bem ou o mal que praticou por meio do corpo",
+    "feedbackCorrect": "A vida atual por fé caminha para o encontro e o recebimento diante de Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pela vida atual; o recebimento fecha a sequência."
+    },
+    "hint": "O recebimento é o ponto final do trecho.",
+    "learningObjective": "Ver o fio que liga fé, encontro e responsabilidade.",
+    "evidence": [
+      "2 Coríntios 5:9–10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-02-juizo-05",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 5:10, por meio de que cada um praticou o bem ou o mal?",
+    "prompt": "Em 2 Coríntios 5:10, por meio de que cada um praticou o bem ou o mal?",
+    "cue": "Em 2 Coríntios 5:10, por meio de que cada um praticou o bem ou o mal?",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "template": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "corpo"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que praticou por meio do corpo",
+    "feedbackCorrect": "Paulo liga as ações praticadas à vida vivida aqui.",
+    "feedbackWrong": {
+      "b": "O texto não fala de reputação nesse ponto final.",
+      "c": "O texto não fala do lugar onde a pessoa estava."
+    },
+    "hint": "Veja o meio citado no fim do versículo.",
+    "learningObjective": "Lembrar o termo que liga ação e vida presente.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-02-juizo-06",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Coríntios 5:10 a Romanos 14:12?",
+    "prompt": "O que liga 2 Coríntios 5:10 a Romanos 14:12?",
+    "cue": "O que liga 2 Coríntios 5:10 a Romanos 14:12?",
+    "verseRef": "2 Coríntios 5:9–10",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência. Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "passageA": {
+      "ref": "2 Coríntios 5:10",
+      "text": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo."
+    },
+    "passageB": {
+      "ref": "Romanos 14:12",
+      "text": "Assim, pois, cada um de nós dará conta a Deus de si mesmo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém prestará contas"
+      },
+      {
+        "id": "b",
+        "text": "Só líderes darão contas"
+      },
+      {
+        "id": "c",
+        "text": "Cada um dará contas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cada um receba de acordo com o bem ou o mal que praticou por meio do corpo",
+    "feedbackCorrect": "Paulo afirma nos dois textos que cada pessoa estará diante de Deus.",
+    "feedbackWrong": {
+      "a": "Romanos afirma justamente que cada um dará conta de si.",
+      "b": "Os dois textos incluem cada pessoa, não só líderes."
+    },
+    "hint": "Veja quem está incluído em Romanos.",
+    "learningObjective": "Ligar o comparecimento à prestação de contas.",
+    "evidence": [
+      "2 Coríntios 5:9–10",
+      "Romanos 14:12"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-03-novo-01",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Apocalipse 21:1, João vê um novo céu e uma nova terra.",
+    "prompt": "Em Apocalipse 21:1, João vê um novo céu e uma nova terra.",
+    "cue": "Em Apocalipse 21:1, João vê um novo céu e uma nova terra.",
+    "verseRef": "Apocalipse 21:1",
+    "passageText": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Vi um novo céu e uma nova terra",
+    "feedbackCorrect": "A visão começa com céu e terra feitos novos por Deus.",
+    "feedbackWrong": {
+      "false": "Releia a primeira frase da visão de João."
+    },
+    "hint": "Olhe a primeira frase do capítulo.",
+    "learningObjective": "Observar o novo céu e a nova terra.",
+    "evidence": [
+      "Apocalipse 21:1"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-03-novo-02",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Apocalipse 21:1, toque o que João vê de novo junto com o céu.",
+    "prompt": "Em Apocalipse 21:1, toque o que João vê de novo junto com o céu.",
+    "cue": "Em Apocalipse 21:1, toque o que João vê de novo junto com o céu.",
+    "verseRef": "Apocalipse 21:1",
+    "passageText": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "primeira terra"
+      },
+      {
+        "id": "b",
+        "text": "nova terra"
+      },
+      {
+        "id": "c",
+        "text": "o mar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Vi um novo céu e uma nova terra",
+    "feedbackCorrect": "A visão junta céu e terra renovados por Deus.",
+    "feedbackWrong": {
+      "a": "Essa é a que passou, não a que surge nova.",
+      "c": "Isso é citado como o que já não existe."
+    },
+    "hint": "Procure no começo da visão.",
+    "learningObjective": "Observar a nova terra vista por João.",
+    "evidence": [
+      "Apocalipse 21:1"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-03-novo-03",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Apocalipse 21:3, o que Deus fará com os homens na nova criação?",
+    "prompt": "Segundo Apocalipse 21:3, o que Deus fará com os homens na nova criação?",
+    "cue": "Segundo Apocalipse 21:3, o que Deus fará com os homens na nova criação?",
+    "verseRef": "Apocalipse 21:3",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficará longe deles para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Habitará com eles como seu Deus"
+      },
+      {
+        "id": "c",
+        "text": "Falará com eles só de longe"
+      },
+      {
+        "id": "d",
+        "text": "Deixará cada um por sua conta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "A grande voz anuncia Deus morando com seu povo.",
+    "feedbackWrong": {
+      "a": "A voz anuncia justamente a presença dele com eles.",
+      "c": "O texto fala de morar com eles, não de distância.",
+      "d": "Eles serão o povo dele, cuidados por sua presença."
+    },
+    "hint": "Ouça o que a grande voz anuncia.",
+    "learningObjective": "Observar a promessa de Deus com seu povo.",
+    "evidence": [
+      "Apocalipse 21:3"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-03-novo-04",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Apocalipse 21:4 na ordem do texto.",
+    "prompt": "Monte Apocalipse 21:4 na ordem do texto.",
+    "cue": "Monte Apocalipse 21:4 na ordem do texto.",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Deus enxugará de seus olhos toda lágrima"
+      },
+      {
+        "id": "b",
+        "text": "e a morte não existirá mais"
+      },
+      {
+        "id": "c",
+        "text": "nem haverá luto, nem pranto, nem dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E Deus enxugará de seus olhos toda lágrima",
+    "feedbackCorrect": "Deus enxuga as lágrimas e põe fim à morte, ao luto e à dor.",
+    "feedbackWrong": {
+      "default": "Comece pela ação de Deus nos olhos deles."
+    },
+    "hint": "O versículo começa com o que Deus faz.",
+    "learningObjective": "Reconhecer a sequência de Apocalipse 21:4.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-03-novo-05",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Apocalipse 21:4, o que Deus enxugará dos olhos do seu povo?",
+    "prompt": "Em Apocalipse 21:4, o que Deus enxugará dos olhos do seu povo?",
+    "cue": "Em Apocalipse 21:4, o que Deus enxugará dos olhos do seu povo?",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "template": "E Deus enxugará de seus olhos toda ___; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poeira"
+      },
+      {
+        "id": "b",
+        "text": "lágrima"
+      },
+      {
+        "id": "c",
+        "text": "sombra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E Deus enxugará de seus olhos toda lágrima",
+    "feedbackCorrect": "A promessa fala do fim de todo choro na nova criação.",
+    "feedbackWrong": {
+      "a": "O texto fala do choro do povo, não de sujeira nos olhos.",
+      "c": "O texto não cita isso ao falar dos olhos deles."
+    },
+    "hint": "Pense no que acompanha luto e dor.",
+    "learningObjective": "Lembrar o que Deus enxugará dos olhos.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-03-novo-06",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+    "verseRef": "Apocalipse 21:3",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles.",
+    "passageA": {
+      "ref": "Apocalipse 21:3",
+      "text": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus promete estar com seu povo na nova criação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus morará com seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus ficará bem longe"
+      },
+      {
+        "id": "c",
+        "text": "O povo ficará sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "A voz do trono anuncia a morada de Deus com os homens.",
+    "feedbackWrong": {
+      "b": "O anúncio é de presença com eles, não de distância.",
+      "c": "Ele será o Deus deles, presente no meio do povo."
+    },
+    "hint": "Veja onde Deus estará na nova criação.",
+    "learningObjective": "Ligar Apocalipse 21:3 à presença de Deus.",
+    "evidence": [
+      "Apocalipse 21:3"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-03-novo-01",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Apocalipse 21:4, a morte continuará existindo na nova criação, apenas mais fraca que hoje.",
+    "prompt": "Em Apocalipse 21:4, a morte continuará existindo na nova criação, apenas mais fraca que hoje.",
+    "cue": "Em Apocalipse 21:4, a morte continuará existindo na nova criação, apenas mais fraca que hoje.",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "e a morte não existirá mais, nem haverá luto, nem pranto, nem dor",
+    "feedbackCorrect": "O texto anuncia o fim da morte, do luto, do pranto e da dor.",
+    "feedbackWrong": {
+      "true": "Releia a lista do que não existirá mais."
+    },
+    "hint": "Leia a lista do versículo.",
+    "learningObjective": "Compreender o fim da morte na nova criação.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-03-novo-02",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Apocalipse 21:4, toque a palavra que explica por que a dor acabou.",
+    "prompt": "Em Apocalipse 21:4, toque a palavra que explica por que a dor acabou.",
+    "cue": "Em Apocalipse 21:4, toque a palavra que explica por que a dor acabou.",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nem"
+      },
+      {
+        "id": "b",
+        "text": "mais"
+      },
+      {
+        "id": "c",
+        "text": "porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "porque as primeiras coisas já passaram",
+    "feedbackCorrect": "A palavra final liga o fim da dor ao fim das primeiras coisas.",
+    "feedbackWrong": {
+      "a": "Isso soma itens à lista, sem explicar o motivo.",
+      "b": "Isso reforça o fim da morte, não explica a causa."
+    },
+    "hint": "Procure perto do fim do versículo.",
+    "learningObjective": "Reconhecer a palavra que explica o fim da dor.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-03-novo-03",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Apocalipse 21:4 completa o anúncio de Apocalipse 21:3?",
+    "prompt": "Como Apocalipse 21:4 completa o anúncio de Apocalipse 21:3?",
+    "cue": "Como Apocalipse 21:4 completa o anúncio de Apocalipse 21:3?",
+    "verseRef": "Apocalipse 21:3–4",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com Deus presente, sofrimento tem fim"
+      },
+      {
+        "id": "b",
+        "text": "A presença de Deus mantém morte e dor"
+      },
+      {
+        "id": "c",
+        "text": "O povo de Deus fica sem consolo algum"
+      },
+      {
+        "id": "d",
+        "text": "João volta a ver a primeira terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque as primeiras coisas já passaram",
+    "feedbackCorrect": "Com o novo céu e a nova terra, as primeiras coisas e sua dor passam.",
+    "feedbackWrong": {
+      "b": "O versículo 4 anuncia o fim justamente dessas coisas.",
+      "c": "Céu e terra novos aparecem juntos na mesma visão.",
+      "d": "A primeira terra é citada como a que já passou."
+    },
+    "hint": "Junte a novidade do início ao fim da dor.",
+    "learningObjective": "Relacionar a nova criação ao fim do sofrimento.",
+    "evidence": [
+      "Apocalipse 21:3–4"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-03-novo-04",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a visão em Apocalipse 21:2-3?",
+    "prompt": "Como avança a visão em Apocalipse 21:2-3?",
+    "cue": "Como avança a visão em Apocalipse 21:2-3?",
+    "verseRef": "Apocalipse 21:2–3",
+    "passageText": "E eu, João, vi a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma noiva para o seu esposo. E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade santa desce de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus habita com seu povo"
+      },
+      {
+        "id": "c",
+        "text": "Eles serão o povo dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "A cidade desce, Deus habita com eles e eles são o povo dele.",
+    "feedbackWrong": {
+      "default": "Comece pelo céu e pela terra; a morada fecha a sequência."
+    },
+    "hint": "A morada de Deus é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da visão de João.",
+    "evidence": [
+      "Apocalipse 21:2–3"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-03-novo-05",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Apocalipse 21:4, o que não existirá mais na nova criação?",
+    "prompt": "Em Apocalipse 21:4, o que não existirá mais na nova criação?",
+    "cue": "Em Apocalipse 21:4, o que não existirá mais na nova criação?",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "template": "E Deus enxugará de seus olhos toda lágrima; e a ___ não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "noite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e a morte não existirá mais",
+    "feedbackCorrect": "O fim disso marca a diferença da nova criação.",
+    "feedbackWrong": {
+      "b": "A lista fala de luto, pranto e dor, não disso.",
+      "c": "Esse item não aparece nessa lista do versículo 4."
+    },
+    "hint": "Veja o primeiro item que deixa de existir.",
+    "learningObjective": "Compreender o que chega ao fim na nova criação.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-03-novo-06",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Apocalipse 21:4 a Isaías 25:8?",
+    "prompt": "O que liga Apocalipse 21:4 a Isaías 25:8?",
+    "cue": "O que liga Apocalipse 21:4 a Isaías 25:8?",
+    "verseRef": "Apocalipse 21:3–4",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "passageA": {
+      "ref": "Apocalipse 21:4",
+      "text": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram."
+    },
+    "passageB": {
+      "ref": "Isaías 25:8",
+      "text": "Destruirá a morte para sempre, e assim o Senhor Deus enxugará as lágrimas de todos os rostos, e tirará de toda a terra o opróbrio do seu povo, porque o Senhor falou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O choro nunca terá fim"
+      },
+      {
+        "id": "b",
+        "text": "Deus acabará com o choro"
+      },
+      {
+        "id": "c",
+        "text": "Cada um seca o próprio choro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E Deus enxugará de seus olhos toda lágrima",
+    "feedbackCorrect": "Isaías já anunciava Deus acabando com o choro do seu povo.",
+    "feedbackWrong": {
+      "a": "Os dois textos anunciam justamente o fim do choro.",
+      "c": "Nos dois textos quem age para consolar é Deus."
+    },
+    "hint": "Compare quem age sobre os olhos nos dois.",
+    "learningObjective": "Relacionar a promessa de Isaías ao seu cumprimento.",
+    "evidence": [
+      "Apocalipse 21:3–4",
+      "Isaías 25:8"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-03-novo-01",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Apocalipse 21:5 apresenta quem está no trono fazendo novas todas as coisas.",
+    "prompt": "Apocalipse 21:5 apresenta quem está no trono fazendo novas todas as coisas.",
+    "cue": "Apocalipse 21:5 apresenta quem está no trono fazendo novas todas as coisas.",
+    "verseRef": "Apocalipse 21:5",
+    "passageText": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Eis que faço novas todas as coisas",
+    "feedbackCorrect": "A fala do trono confirma a renovação de todas as coisas por Deus.",
+    "feedbackWrong": {
+      "false": "Junte a voz do versículo 3 à fala do trono no 5."
+    },
+    "hint": "Junte os versículos 3 e 5.",
+    "learningObjective": "Interpretar a nova criação como renovação total.",
+    "evidence": [
+      "Apocalipse 21:5"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-03-novo-02",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Apocalipse 21:3, toque o verbo que mostra Deus morando com seu povo.",
+    "prompt": "Em Apocalipse 21:3, toque o verbo que mostra Deus morando com seu povo.",
+    "cue": "Em Apocalipse 21:3, toque o verbo que mostra Deus morando com seu povo.",
+    "verseRef": "Apocalipse 21:3",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvi"
+      },
+      {
+        "id": "b",
+        "text": "habitará"
+      },
+      {
+        "id": "c",
+        "text": "serão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "O verbo anuncia a morada de Deus no meio do seu povo.",
+    "feedbackWrong": {
+      "a": "Isso é o que João faz ao ouvir a grande voz.",
+      "c": "Isso fala do povo, não da morada de Deus com ele."
+    },
+    "hint": "Procure o que Deus fará com eles.",
+    "learningObjective": "Sustentar com o texto a presença de Deus.",
+    "evidence": [
+      "Apocalipse 21:3"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-03-novo-03",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Apocalipse 21:1-4 sustenta sobre o futuro do povo de Deus?",
+    "prompt": "Que leitura Apocalipse 21:1-4 sustenta sobre o futuro do povo de Deus?",
+    "cue": "Que leitura Apocalipse 21:1-4 sustenta sobre o futuro do povo de Deus?",
+    "verseRef": "Apocalipse 21:3–4",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primeira terra durando para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Deus presente e sofrimento encerrado"
+      },
+      {
+        "id": "c",
+        "text": "Nova terra sem a presença de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Deus distante e choro sem fim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "Deus mora com seu povo numa criação sem morte, luto nem dor.",
+    "feedbackWrong": {
+      "a": "A primeira terra é citada como a que já passou.",
+      "c": "A voz do trono coloca Deus morando com os homens.",
+      "d": "O texto anuncia presença dele e fim do choro."
+    },
+    "hint": "Junte a morada de Deus ao fim da dor.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre o futuro.",
+    "evidence": [
+      "Apocalipse 21:3–4"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-03-novo-04",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Apocalipse 21:4-5?",
+    "prompt": "Qual sequência revela o sentido de Apocalipse 21:4-5?",
+    "cue": "Qual sequência revela o sentido de Apocalipse 21:4-5?",
+    "verseRef": "Apocalipse 21:4–5",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O choro é enxugado por Deus"
+      },
+      {
+        "id": "b",
+        "text": "A morte chega ao fim"
+      },
+      {
+        "id": "c",
+        "text": "Deus faz novas todas as coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eis que faço novas todas as coisas",
+    "feedbackCorrect": "Deus consola, põe fim à morte e renova todas as coisas.",
+    "feedbackWrong": {
+      "default": "Comece pelo que passa; a renovação total fecha a visão."
+    },
+    "hint": "A renovação de tudo é o ponto final.",
+    "learningObjective": "Ver o sentido completo da visão da nova criação.",
+    "evidence": [
+      "Apocalipse 21:4–5"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-03-novo-05",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Apocalipse 21:5, como Deus diz que faz todas as coisas?",
+    "prompt": "Em Apocalipse 21:5, como Deus diz que faz todas as coisas?",
+    "cue": "Em Apocalipse 21:5, como Deus diz que faz todas as coisas?",
+    "verseRef": "Apocalipse 21:5",
+    "passageText": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "template": "E aquele que estava assentado no trono disse: Eis que faço ___ todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poucas"
+      },
+      {
+        "id": "b",
+        "text": "velhas"
+      },
+      {
+        "id": "c",
+        "text": "novas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eis que faço novas todas as coisas",
+    "feedbackCorrect": "A fala do trono resume a promessa de renovação total.",
+    "feedbackWrong": {
+      "a": "O alcance é todas as coisas, não apenas algumas.",
+      "b": "O texto anuncia o contrário disso sobre todas as coisas."
+    },
+    "hint": "Veja a fala de quem está no trono.",
+    "learningObjective": "Lembrar o termo que resume a nova criação.",
+    "evidence": [
+      "Apocalipse 21:5"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-03-novo-06",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Apocalipse 21:1 a 2 Pedro 3:13?",
+    "prompt": "O que liga Apocalipse 21:1 a 2 Pedro 3:13?",
+    "cue": "O que liga Apocalipse 21:1 a 2 Pedro 3:13?",
+    "verseRef": "Apocalipse 21:1",
+    "passageText": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe.",
+    "passageA": {
+      "ref": "Apocalipse 21:1",
+      "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+    },
+    "passageB": {
+      "ref": "2 Pedro 3:13",
+      "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar novos céus justos"
+      },
+      {
+        "id": "b",
+        "text": "A terra nunca mudará"
+      },
+      {
+        "id": "c",
+        "text": "Viver sem esperar nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Vi um novo céu e uma nova terra",
+    "feedbackCorrect": "Pedro ensina a esperar os novos céus que João depois vê.",
+    "feedbackWrong": {
+      "b": "Os dois textos falam de céu e terra renovados.",
+      "c": "Pedro chama justamente a aguardar essa promessa."
+    },
+    "hint": "Veja o que Pedro manda esperar.",
+    "learningObjective": "Ligar a visão de João à espera ensinada por Pedro.",
+    "evidence": [
+      "Apocalipse 21:1",
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-01",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 1:11, Jesus voltará do mesmo modo como os discípulos o viram subir.",
+    "prompt": "Em Atos 1:11, Jesus voltará do mesmo modo como os discípulos o viram subir.",
+    "cue": "Em Atos 1:11, Jesus voltará do mesmo modo como os discípulos o viram subir.",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "O anúncio da volta está ligado ao modo da subida presenciada.",
+    "feedbackWrong": {
+      "false": "Releia o fim do anúncio dos dois homens."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Revisar a promessa da volta de Jesus.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-02",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 1:9, toque o que encobriu Jesus diante dos discípulos.",
+    "prompt": "Em Atos 1:9, toque o que encobriu Jesus diante dos discípulos.",
+    "cue": "Em Atos 1:9, toque o que encobriu Jesus diante dos discípulos.",
+    "verseRef": "Atos 1:9",
+    "passageText": "E, ao dizer essas palavras, enquanto o observavam, foi elevado às alturas diante deles, e uma nuvem o encobriu, afastando-o de sua vista.",
+    "options": [
+      {
+        "id": "a",
+        "text": "foi elevado"
+      },
+      {
+        "id": "b",
+        "text": "nuvem"
+      },
+      {
+        "id": "c",
+        "text": "sua vista"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "uma nuvem o encobriu, afastando-o de sua vista",
+    "feedbackCorrect": "Algo encobre Jesus no fim da subida diante deles.",
+    "feedbackWrong": {
+      "a": "Isso diz o que houve com Jesus, não o que o encobriu.",
+      "c": "Isso é de quem ele foi afastado, não o que o encobriu."
+    },
+    "hint": "Procure perto do fim do versículo.",
+    "learningObjective": "Revisar como Jesus foi afastado da vista deles.",
+    "evidence": [
+      "Atos 1:9"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-03",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Coríntios 5:10, diante de quem todos devemos comparecer?",
+    "prompt": "Segundo 2 Coríntios 5:10, diante de quem todos devemos comparecer?",
+    "cue": "Segundo 2 Coríntios 5:10, diante de quem todos devemos comparecer?",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diante dos líderes da cidade"
+      },
+      {
+        "id": "b",
+        "text": "Diante do tribunal de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Diante da nossa própria família"
+      },
+      {
+        "id": "d",
+        "text": "Diante dos nossos vizinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "Paulo nomeia diante de quem será esse comparecimento de todos.",
+    "feedbackWrong": {
+      "a": "O texto não cita autoridades da cidade nesse encontro.",
+      "c": "O texto fala de todos diante de Cristo, não da família.",
+      "d": "Quem recebe cada um ali é Cristo, não os vizinhos."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Revisar diante de quem todos comparecerão.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-04",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 1:11 na ordem do texto.",
+    "prompt": "Monte Atos 1:11 na ordem do texto.",
+    "cue": "Monte Atos 1:11 na ordem do texto.",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Homens da Galileia"
+      },
+      {
+        "id": "b",
+        "text": "por que vocês estão olhando para o céu"
+      },
+      {
+        "id": "c",
+        "text": "Esse Jesus que foi elevado entre vocês voltará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Esse Jesus que foi elevado entre vocês voltará",
+    "feedbackCorrect": "Os homens chamam os discípulos, perguntam e anunciam a volta.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado; o anúncio fecha o versículo."
+    },
+    "hint": "O anúncio vem no fim do versículo.",
+    "learningObjective": "Reconhecer a sequência do anúncio da volta.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-05",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+    "prompt": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+    "cue": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+    "verseRef": "Atos 1:10",
+    "passageText": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de branco.",
+    "template": "E, enquanto eles olhavam fixamente para o céu, ele subia, e surgiram ao lado deles dois homens vestidos de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escuro"
+      },
+      {
+        "id": "b",
+        "text": "branco"
+      },
+      {
+        "id": "c",
+        "text": "longo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "dois homens vestidos de branco",
+    "feedbackCorrect": "Os dois homens do anúncio são descritos com essa cor.",
+    "feedbackWrong": {
+      "a": "O texto descreve a roupa com a cor clara, não essa.",
+      "c": "Isso seria comprimento, e o texto fala de cor."
+    },
+    "hint": "Veja como os dois homens são descritos.",
+    "learningObjective": "Revisar como os dois homens são descritos.",
+    "evidence": [
+      "Atos 1:10"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-06",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21:3 comunica que se liga a este contexto?",
+    "verseRef": "Apocalipse 21:3",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles.",
+    "passageA": {
+      "ref": "Apocalipse 21:3",
+      "text": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A esperança final reúne volta, justiça e nova criação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança firme na promessa"
+      },
+      {
+        "id": "b",
+        "text": "O povo ficará sem Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus ficará bem longe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "Deus morando com seu povo sustenta a esperança firme do fim.",
+    "feedbackWrong": {
+      "b": "Ele será o Deus deles, presente no meio do povo.",
+      "c": "O texto anuncia presença dele com o povo, não distância."
+    },
+    "hint": "Veja onde Deus estará com seu povo.",
+    "learningObjective": "Ligar a nova criação à esperança final.",
+    "evidence": [
+      "Apocalipse 21:3"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-07",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Apocalipse 21:4, toque o que Deus enxugará dos olhos do povo.",
+    "prompt": "Em Apocalipse 21:4, toque o que Deus enxugará dos olhos do povo.",
+    "cue": "Em Apocalipse 21:4, toque o que Deus enxugará dos olhos do povo.",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luto"
+      },
+      {
+        "id": "b",
+        "text": "pranto"
+      },
+      {
+        "id": "c",
+        "text": "lágrima"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E Deus enxugará de seus olhos toda lágrima",
+    "feedbackCorrect": "A ação de Deus sobre os olhos abre a promessa desse versículo.",
+    "feedbackWrong": {
+      "a": "Isso está na lista do que não haverá mais, depois.",
+      "b": "Isso também é da lista posterior, não dos olhos."
+    },
+    "hint": "Procure logo no começo do versículo.",
+    "learningObjective": "Revisar o que Deus enxugará dos olhos.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-sem-es-boss-08",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Apocalipse 21:3 na ordem do texto.",
+    "prompt": "Monte Apocalipse 21:3 na ordem do texto.",
+    "cue": "Monte Apocalipse 21:3 na ordem do texto.",
+    "verseRef": "Apocalipse 21:3",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E ouvi uma grande voz que vinha do trono, dizendo"
+      },
+      {
+        "id": "b",
+        "text": "Eis o tabernáculo de Deus com os homens"
+      },
+      {
+        "id": "c",
+        "text": "Ele habitará com eles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eis o tabernáculo de Deus com os homens",
+    "feedbackCorrect": "João ouve a voz, que anuncia a morada de Deus com os homens.",
+    "feedbackWrong": {
+      "default": "Comece por João ouvindo a voz do trono."
+    },
+    "hint": "O versículo começa com o que João ouve.",
+    "learningObjective": "Reconhecer a sequência de Apocalipse 21:3.",
+    "evidence": [
+      "Apocalipse 21:3"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-01",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 5:10, quem crê em Cristo está fora do comparecimento diante dele.",
+    "prompt": "Em 2 Coríntios 5:10, quem crê em Cristo está fora do comparecimento diante dele.",
+    "cue": "Em 2 Coríntios 5:10, quem crê em Cristo está fora do comparecimento diante dele.",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "Paulo inclui todos nós nesse comparecimento diante de Cristo.",
+    "feedbackWrong": {
+      "true": "Releia quem Paulo inclui logo no começo do versículo."
+    },
+    "hint": "Olhe quem está incluído no versículo.",
+    "learningObjective": "Compreender que todos comparecerão diante de Cristo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-02",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 5:9, toque a expressão que liga o esforço ao desejo anterior.",
+    "prompt": "Em 2 Coríntios 5:9, toque a expressão que liga o esforço ao desejo anterior.",
+    "cue": "Em 2 Coríntios 5:9, toque a expressão que liga o esforço ao desejo anterior.",
+    "verseRef": "2 Coríntios 5:9",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sempre"
+      },
+      {
+        "id": "b",
+        "text": "Por isso"
+      },
+      {
+        "id": "c",
+        "text": "ausência"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Por isso, nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "A expressão abre o versículo ligando esforço e desejo pelo Senhor.",
+    "feedbackWrong": {
+      "a": "Isso diz a constância, não a ligação entre as ideias.",
+      "c": "Isso é uma situação citada, não a expressão de ligação."
+    },
+    "hint": "Procure no começo do versículo.",
+    "learningObjective": "Reconhecer a ligação entre desejo e esforço.",
+    "evidence": [
+      "2 Coríntios 5:9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-03",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como as três promessas finais se relacionam entre si?",
+    "prompt": "Como as três promessas finais se relacionam entre si?",
+    "cue": "Como as três promessas finais se relacionam entre si?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma cancela a outra no fim"
+      },
+      {
+        "id": "b",
+        "text": "Só a nova criação importa de verdade"
+      },
+      {
+        "id": "c",
+        "text": "Volta, contas e renovação se juntam"
+      },
+      {
+        "id": "d",
+        "text": "A volta torna as contas desnecessárias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "Cristo volta, todos comparecem diante dele e Deus renova tudo.",
+    "feedbackWrong": {
+      "a": "As promessas se completam na mesma esperança final.",
+      "b": "A trilha junta as três sem descartar nenhuma delas.",
+      "d": "Paulo mantém o comparecimento mesmo anunciando a volta."
+    },
+    "hint": "Pense no caminho completo da esperança.",
+    "learningObjective": "Relacionar volta, comparecimento e nova criação.",
+    "evidence": [
+      "Atos 1:11",
+      "2 Coríntios 5:10",
+      "Apocalipse 21:5"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-04",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as promessas finais da trilha?",
+    "prompt": "Como se encadeiam as promessas finais da trilha?",
+    "cue": "Como se encadeiam as promessas finais da trilha?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus promete voltar"
+      },
+      {
+        "id": "b",
+        "text": "Todos comparecem diante de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Deus faz novas todas as coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "A volta abre o fim, seguido do encontro e da renovação total.",
+    "feedbackWrong": {
+      "default": "Comece pela volta anunciada em Atos."
+    },
+    "hint": "Comece pela promessa de Atos 1.",
+    "learningObjective": "Compreender o encadeamento das promessas finais.",
+    "evidence": [
+      "Atos 1:11",
+      "2 Coríntios 5:10",
+      "Apocalipse 21:5"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-05",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Coríntios 5:9, Paulo se esforça sempre para fazer o que ao Senhor?",
+    "prompt": "Em 2 Coríntios 5:9, Paulo se esforça sempre para fazer o que ao Senhor?",
+    "cue": "Em 2 Coríntios 5:9, Paulo se esforça sempre para fazer o que ao Senhor?",
+    "verseRef": "2 Coríntios 5:9",
+    "passageText": "Por isso, nos esforçamos sempre para agradá-lo tanto na presença quanto na ausência.",
+    "template": "Por isso, nos esforçamos sempre para ___ tanto na presença quanto na ausência.",
+    "options": [
+      {
+        "id": "a",
+        "text": "agradá-lo"
+      },
+      {
+        "id": "b",
+        "text": "ignorá-lo"
+      },
+      {
+        "id": "c",
+        "text": "evitá-lo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nos esforçamos sempre para agradá-lo",
+    "feedbackCorrect": "O esforço constante de Paulo tem esse alvo claro.",
+    "feedbackWrong": {
+      "b": "Paulo busca o contrário de ignorar o Senhor.",
+      "c": "Ele deseja estar com o Senhor, não fugir dele."
+    },
+    "hint": "Veja o alvo do esforço constante.",
+    "learningObjective": "Revisar o alvo do esforço de Paulo.",
+    "evidence": [
+      "2 Coríntios 5:9"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-06",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 1:11 a João 14:3?",
+    "prompt": "O que liga Atos 1:11 a João 14:3?",
+    "cue": "O que liga Atos 1:11 a João 14:3?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+    },
+    "passageB": {
+      "ref": "João 14:3",
+      "text": "E, quando eu for e vos preparar um lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A volta seria só interior"
+      },
+      {
+        "id": "b",
+        "text": "Jesus voltará para os seus"
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos subiriam sozinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "Jesus prometeu voltar, e Atos confirma essa promessa na subida.",
+    "feedbackWrong": {
+      "a": "Nos dois textos ele volta de verdade para os seus.",
+      "c": "Quem volta é Jesus para receber os seus."
+    },
+    "hint": "Compare a promessa com o anúncio em Atos.",
+    "learningObjective": "Relacionar a promessa de Jesus à confirmação em Atos.",
+    "evidence": [
+      "Atos 1:11",
+      "João 14:3"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-07",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Apocalipse 21:4, toque a palavra que explica por que a dor acabou.",
+    "prompt": "Em Apocalipse 21:4, toque a palavra que explica por que a dor acabou.",
+    "cue": "Em Apocalipse 21:4, toque a palavra que explica por que a dor acabou.",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porque"
+      },
+      {
+        "id": "b",
+        "text": "mais"
+      },
+      {
+        "id": "c",
+        "text": "nem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque as primeiras coisas já passaram",
+    "feedbackCorrect": "A palavra final liga o fim da dor ao fim das primeiras coisas.",
+    "feedbackWrong": {
+      "b": "Isso reforça o fim da morte, sem explicar a causa.",
+      "c": "Isso soma itens à lista, sem explicar o motivo."
+    },
+    "hint": "Procure perto do fim do versículo.",
+    "learningObjective": "Reconhecer a explicação do fim da dor.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-cam-es-boss-08",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a nova criação em Apocalipse 21:3-4?",
+    "prompt": "Como avança a nova criação em Apocalipse 21:3-4?",
+    "cue": "Como avança a nova criação em Apocalipse 21:3-4?",
+    "verseRef": "Apocalipse 21:3–4",
+    "passageText": "E ouvi uma grande voz que vinha do trono, dizendo: Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo. Deus mesmo estará com eles e será o Deus deles. E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus habita com seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus enxuga toda lágrima"
+      },
+      {
+        "id": "c",
+        "text": "A morte deixa de existir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele habitará com eles, e eles serão o Seu povo",
+    "feedbackCorrect": "A presença de Deus vem com o consolo e o fim da morte.",
+    "feedbackWrong": {
+      "default": "Comece pela morada de Deus no versículo 3."
+    },
+    "hint": "Comece pelo versículo 3.",
+    "learningObjective": "Compreender o avanço da visão da nova criação.",
+    "evidence": [
+      "Apocalipse 21:3–4"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-01",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Apocalipse 21:4 ensina que a morte continuará para sempre, mesmo com Deus presente.",
+    "prompt": "Apocalipse 21:4 ensina que a morte continuará para sempre, mesmo com Deus presente.",
+    "cue": "Apocalipse 21:4 ensina que a morte continuará para sempre, mesmo com Deus presente.",
+    "verseRef": "Apocalipse 21:4",
+    "passageText": "E Deus enxugará de seus olhos toda lágrima; e a morte não existirá mais, nem haverá luto, nem pranto, nem dor, porque as primeiras coisas já passaram.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "e a morte não existirá mais, nem haverá luto, nem pranto, nem dor",
+    "feedbackCorrect": "Com Deus presente, a morte e toda dor chegam ao fim.",
+    "feedbackWrong": {
+      "true": "Releia a lista do que não existirá mais."
+    },
+    "hint": "Leia a lista do versículo 4.",
+    "learningObjective": "Interpretar o fim da morte na nova criação.",
+    "evidence": [
+      "Apocalipse 21:4"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-02",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+    "prompt": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+    "cue": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "olhando"
+      },
+      {
+        "id": "c",
+        "text": "voltará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "O verbo anuncia com certeza o retorno desse mesmo Jesus.",
+    "feedbackWrong": {
+      "a": "Isso é o lugar do olhar, não a promessa feita.",
+      "b": "Isso descreve os discípulos, não a promessa a eles."
+    },
+    "hint": "Procure o verbo no fim do versículo.",
+    "learningObjective": "Sustentar a certeza da volta com o texto.",
+    "evidence": [
+      "Atos 1:11"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-03",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o conjunto final sustenta sobre a esperança de quem crê?",
+    "prompt": "Que leitura o conjunto final sustenta sobre a esperança de quem crê?",
+    "cue": "Que leitura o conjunto final sustenta sobre a esperança de quem crê?",
+    "verseRef": "Apocalipse 21:5",
+    "passageText": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar com medo e sem certeza"
+      },
+      {
+        "id": "b",
+        "text": "Esperança firme em Deus que renova"
+      },
+      {
+        "id": "c",
+        "text": "Esperar marcando datas no calendário"
+      },
+      {
+        "id": "d",
+        "text": "Esperar sem mudar nada na vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Eis que faço novas todas as coisas",
+    "feedbackCorrect": "A volta, o encontro com Cristo e a renovação sustentam esperança firme.",
+    "feedbackWrong": {
+      "a": "As promessas são apresentadas como certas e verdadeiras.",
+      "c": "Nenhum texto revisado entrega data para marcar.",
+      "d": "Paulo liga essa esperança ao esforço para agradar."
+    },
+    "hint": "Junte as três promessas revistas.",
+    "learningObjective": "Escolher a leitura final que os textos sustentam.",
+    "evidence": [
+      "Apocalipse 21:5",
+      "Atos 1:11",
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-04",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do fim anunciado na Bíblia?",
+    "prompt": "Qual sequência revela o sentido do fim anunciado na Bíblia?",
+    "cue": "Qual sequência revela o sentido do fim anunciado na Bíblia?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo volta como prometeu"
+      },
+      {
+        "id": "b",
+        "text": "Cada um recebe conforme viveu"
+      },
+      {
+        "id": "c",
+        "text": "Deus renova céu e terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "Volta, recebimento diante de Cristo e renovação formam o fim anunciado.",
+    "feedbackWrong": {
+      "default": "Comece pela volta de Cristo em Atos."
+    },
+    "hint": "Siga de Atos até Apocalipse.",
+    "learningObjective": "Ver o fio completo das promessas finais.",
+    "evidence": [
+      "Atos 1:11",
+      "2 Coríntios 5:10",
+      "Apocalipse 21:1"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-05",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Apocalipse 21:5, como Deus diz que faz todas as coisas?",
+    "prompt": "Em Apocalipse 21:5, como Deus diz que faz todas as coisas?",
+    "cue": "Em Apocalipse 21:5, como Deus diz que faz todas as coisas?",
+    "verseRef": "Apocalipse 21:5",
+    "passageText": "E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "template": "E aquele que estava assentado no trono disse: Eis que faço ___ todas as coisas. E acrescentou: Escreve, porque estas palavras são fiéis e verdadeiras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "velhas"
+      },
+      {
+        "id": "b",
+        "text": "poucas"
+      },
+      {
+        "id": "c",
+        "text": "novas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eis que faço novas todas as coisas",
+    "feedbackCorrect": "A fala do trono resume a renovação prometida por Deus.",
+    "feedbackWrong": {
+      "a": "O texto anuncia o contrário disso sobre todas as coisas.",
+      "b": "O alcance é todas as coisas, não apenas algumas."
+    },
+    "hint": "Veja a fala de quem está no trono.",
+    "learningObjective": "Lembrar o termo que resume a renovação final.",
+    "evidence": [
+      "Apocalipse 21:5"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-06",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Atos 1:11 a Mateus 24:42?",
+    "prompt": "O que liga Atos 1:11 a Mateus 24:42?",
+    "cue": "O que liga Atos 1:11 a Mateus 24:42?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+    },
+    "passageB": {
+      "ref": "Mateus 24:42",
+      "text": "Portanto, fiquem vigilantes, pois vocês não sabem em que dia o Senhor de vocês virá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer a promessa feita"
+      },
+      {
+        "id": "b",
+        "text": "Vigiar esperando o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Marcar a data certa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "A volta é certa e o dia desconhecido; por isso Jesus manda vigiar.",
+    "feedbackWrong": {
+      "a": "A promessa pede atenção constante, não esquecimento.",
+      "c": "Mateus diz que não sabemos o dia da vinda do Senhor."
+    },
+    "hint": "Veja o que fazer sem saber o dia.",
+    "learningObjective": "Ligar a certeza da volta à vigilância.",
+    "evidence": [
+      "Atos 1:11",
+      "Mateus 24:42"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-07",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Coríntios 5:10, toque o trecho que mostra que ninguém fica de fora.",
+    "prompt": "Em 2 Coríntios 5:10, toque o trecho que mostra que ninguém fica de fora.",
+    "cue": "Em 2 Coríntios 5:10, toque o trecho que mostra que ninguém fica de fora.",
+    "verseRef": "2 Coríntios 5:10",
+    "passageText": "Porque todos nós devemos comparecer diante do tribunal de Cristo, para que cada um receba de acordo com o bem ou o mal que praticou por meio do corpo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cada um"
+      },
+      {
+        "id": "b",
+        "text": "todos nós"
+      },
+      {
+        "id": "c",
+        "text": "por meio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todos nós devemos comparecer diante do tribunal de Cristo",
+    "feedbackCorrect": "A abertura do versículo inclui todos nesse comparecimento.",
+    "feedbackWrong": {
+      "a": "Isso destaca cada pessoa ao receber, não o alcance total.",
+      "c": "Isso introduz o meio das ações, não quem comparece."
+    },
+    "hint": "Procure logo no começo do versículo.",
+    "learningObjective": "Sustentar que todos comparecerão diante de Cristo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ]
+  },
+  {
+    "id": "escatologia-pro-es-boss-08",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da esperança que começa em Atos 1:11?",
+    "prompt": "Qual sequência revela o caminho da esperança que começa em Atos 1:11?",
+    "cue": "Qual sequência revela o caminho da esperança que começa em Atos 1:11?",
+    "verseRef": "Atos 1:11",
+    "passageText": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus voltará do céu"
+      },
+      {
+        "id": "b",
+        "text": "Todos estarão diante de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Deus morará com seu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir",
+    "feedbackCorrect": "A esperança vai da volta ao encontro e à morada de Deus com o povo.",
+    "feedbackWrong": {
+      "default": "Siga a ordem da Bíblia, de Atos a Apocalipse."
+    },
+    "hint": "Siga de Atos até Apocalipse.",
+    "learningObjective": "Ver o caminho completo da esperança final.",
+    "evidence": [
+      "Atos 1:11",
+      "2 Coríntios 5:10",
+      "Apocalipse 21:3"
+    ]
+  }
+]

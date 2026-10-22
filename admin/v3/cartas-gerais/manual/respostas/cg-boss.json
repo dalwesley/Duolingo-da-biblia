@@ -1,0 +1,421 @@
+{
+ "study": {
+  "passageRef": "1 Pedro 2:9–10",
+  "passages": [
+   { "ref": "1 Pedro 2:6–10" },
+   { "ref": "1 Pedro 2:11–12" },
+   { "ref": "Tiago 1:19–22" },
+   { "ref": "Tiago 1:23–25" }
+  ],
+  "context": "Este desafio revisa duas cenas: em Pedro, o povo chamado das trevas para a luz; em Tiago, a palavra ouvida que precisa ser acolhida e praticada com mansidão.",
+  "keyword": "praticar",
+  "keywordGloss": "A fé viva das cartas gerais aparece na vida: identidade recebida de Deus e palavra posta em prática.",
+  "focusQuestion": "O que você vai praticar hoje da palavra que já ouviu e da identidade que recebeu?",
+  "reflectionPrompts": [
+   "Povo chamado para a luz",
+   "Palavra acolhida com mansidão",
+   "Fé que aparece na vida"
+  ],
+  "facts": [
+   { "text": "Deus põe em Sião a pedra angular, eleita e preciosa.", "evidenceRef": "1 Pedro 2:6", "evidenceSpan": "ponho em Sião a pedra angular" },
+   { "text": "Os crentes são linhagem eleita e sacerdócio real.", "evidenceRef": "1 Pedro 2:9", "evidenceSpan": "vocês são a linhagem eleita, o sacerdócio real" },
+   { "text": "Os crentes devem manter comportamento exemplar entre os gentios.", "evidenceRef": "1 Pedro 2:12", "evidenceSpan": "Mantenham um comportamento exemplar entre os gentios" },
+   { "text": "Cada um deve estar pronto para ouvir e tardio para falar.", "evidenceRef": "Tiago 1:19", "evidenceSpan": "cada um esteja pronto para ouvir, tardio para falar" },
+   { "text": "Devemos ser praticantes da palavra, não somente ouvintes.", "evidenceRef": "Tiago 1:22", "evidenceSpan": "Sejam praticantes da palavra e não somente ouvintes" },
+   { "text": "Quem observa a lei e persevera será bem-aventurado.", "evidenceRef": "Tiago 1:25", "evidenceSpan": "este será bem-aventurado no que realizar" }
+  ],
+  "keyTerms": [
+   { "term": "pedra angular", "gloss": "A pedra principal da construção: Cristo sustenta o povo de Deus." },
+   { "term": "praticantes", "gloss": "Quem faz o que a palavra diz, em vez de apenas ouvi-la." },
+   { "term": "misericórdia", "gloss": "O favor de Deus que alcançou quem antes não era povo dele." }
+  ],
+  "structure": [
+   { "label": "A pedra posta e rejeitada pelos homens", "evidenceRef": "1 Pedro 2:6–7" },
+   { "label": "Um povo chamado das trevas para a luz", "evidenceRef": "1 Pedro 2:9" },
+   { "label": "Pronto para ouvir e acolher a palavra", "evidenceRef": "Tiago 1:19–21" },
+   { "label": "Praticante perseverante e bem-aventurado", "evidenceRef": "Tiago 1:25" }
+  ],
+  "relations": [
+   { "kind": "contraste", "text": "A mesma pedra é preciosa para quem crê e motivo de tropeço para quem desobedece.", "marker": "mas", "evidenceRef": "1 Pedro 2:7" },
+   { "kind": "causa", "text": "A ira do homem não produz a justiça de Deus, por isso deve dar lugar à mansidão.", "marker": "Porque", "evidenceRef": "Tiago 1:20" },
+   { "kind": "resultado", "text": "Quem persevera praticando a lei será bem-aventurado no que realizar.", "marker": "será", "evidenceRef": "Tiago 1:25" }
+  ],
+  "crossRefs": [
+   { "ref": "Isaías 28:16", "bridge": "A pedra posta em Sião" },
+   { "ref": "Mateus 7:24", "bridge": "Ouvir e praticar a palavra" },
+   { "ref": "Lucas 11:28", "bridge": "Felizes os que guardam a palavra" }
+  ],
+  "misreadings": [
+   { "text": "Ser povo eleito dispensa boas obras diante dos outros.", "why": "Pedro liga a identidade do povo a um comportamento exemplar entre os gentios (1 Pedro 2:12)." },
+   { "text": "Ouvir a palavra muitas vezes já conta como praticá-la.", "why": "Tiago separa os dois e chama de engano ser só ouvinte (Tiago 1:22)." },
+   { "text": "A ira humana ajuda a fazer a justiça de Deus acontecer.", "why": "Tiago afirma o contrário e pede mansidão no lugar da ira (Tiago 1:20–21)." }
+  ],
+  "centralInsight": "Povo de Deus chamado para anunciar quem ele é e praticar a palavra que ouve.",
+  "anchorQuestion": "O que Pedro e Tiago pedem, juntos, ao povo que ouve a palavra de Deus?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em 1 Pedro 2:10, quem antes não era povo agora é povo de Deus.",
+   "verseRef": "1 Pedro 2:10", "correctOptionId": "true",
+   "evidenceSpan": "agora são o povo de Deus",
+   "feedbackCorrect": "Antes não eram povo; agora são povo de Deus e têm misericórdia.",
+   "feedbackWrong": { "false": "Releia 2:10: a mudança de não povo para povo é o centro." },
+   "hint": "Compare o antes e o agora do versículo.",
+   "learningObjective": "Revisar a mudança descrita em 1 Pedro 2:10.",
+   "evidence": ["1 Pedro 2:10"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em 1 Pedro 2:9, toque o título com a palavra santa dado ao povo.",
+   "verseRef": "1 Pedro 2:9",
+   "options": [{ "id": "a", "text": "linhagem eleita" }, { "id": "b", "text": "nação santa" }, { "id": "c", "text": "sacerdócio real" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "a nação santa",
+   "feedbackCorrect": "Pedro chama o povo de Deus de nação santa, separada para ele.",
+   "feedbackWrong": { "a": "Eleita descreve a escolha do povo; o título pedido traz outra palavra.", "c": "Real descreve o sacerdócio; o título pedido vem logo depois." },
+   "hint": "Procure o título ligado à santidade.",
+   "learningObjective": "Revisar os títulos do povo de Deus em 2:9.",
+   "evidence": ["1 Pedro 2:9"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Tiago 1:22, o que devemos ser diante da palavra?",
+   "verseRef": "Tiago 1:22",
+   "options": [
+    { "id": "a", "text": "Somente ouvintes atentos" },
+    { "id": "b", "text": "Praticantes da palavra" },
+    { "id": "c", "text": "Apenas leitores rápidos" },
+    { "id": "d", "text": "Ouvintes que ensinam outros" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Sejam praticantes da palavra e não somente ouvintes",
+   "feedbackCorrect": "Tiago pede praticantes da palavra, não somente ouvintes.",
+   "feedbackWrong": { "a": "Só ouvir é justamente o que Tiago manda não ser apenas.", "c": "Ler rápido não é o pedido; é fazer o que a palavra diz.", "d": "Ensinar não substitui praticar o que se ouviu." },
+   "hint": "Leia a ordem que abre o versículo.",
+   "learningObjective": "Revisar o pedido central de Tiago 1:22.",
+   "evidence": ["Tiago 1:22"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte 1 Pedro 2:12 na ordem do texto.",
+   "verseRef": "1 Pedro 2:12",
+   "options": [
+    { "id": "a", "text": "Mantenham um comportamento exemplar entre os gentios" },
+    { "id": "b", "text": "glorifiquem a Deus no dia da visitação" },
+    { "id": "c", "text": "observando as boas obras que realizarem" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Mantenham um comportamento exemplar entre os gentios",
+   "feedbackCorrect": "Vida exemplar, Deus glorificado e boas obras observadas: é a ordem.",
+   "feedbackWrong": { "default": "Comece pelo comportamento exemplar entre os gentios." },
+   "hint": "O versículo começa pelo comportamento.",
+   "learningObjective": "Reconhecer a sequência de 1 Pedro 2:12.",
+   "evidence": ["1 Pedro 2:12"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em 1 Pedro 2:10, o que os crentes alcançaram agora?",
+   "verseRef": "1 Pedro 2:10",
+   "options": [{ "id": "a", "text": "justiça" }, { "id": "b", "text": "misericórdia" }, { "id": "c", "text": "glória" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "agora alcançaram misericórdia",
+   "feedbackCorrect": "Quem não havia alcançado misericórdia agora a alcançou.",
+   "feedbackWrong": { "a": "O verso não fala de alcançar justiça, e sim do favor de Deus.", "c": "A glória não é citada aqui; o verso repete o favor recebido." },
+   "hint": "Veja o fim do versículo 10.",
+   "learningObjective": "Revisar o que os crentes alcançaram segundo 2:10.",
+   "evidence": ["1 Pedro 2:10"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que 1 Pedro 2:11 comunica que se liga a este contexto?",
+   "verseRef": "1 Pedro 2:11",
+   "passageA": { "ref": "1 Pedro 2:11" },
+   "passageB": { "ref": "Contexto", "text": "Os crentes vivem entre os gentios como peregrinos." },
+   "options": [
+    { "id": "a", "text": "Viver bem entre os gentios" },
+    { "id": "b", "text": "Fugir de todas as pessoas" },
+    { "id": "c", "text": "Falar mal dos gentios" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como peregrinos e forasteiros que sois",
+   "feedbackCorrect": "Peregrinos vivem entre os gentios com vida exemplar (2:12).",
+   "feedbackWrong": { "b": "Peregrino não é fugitivo: ele vive bem no meio dos gentios.", "c": "Pedro pede boas obras diante deles, não palavras contra eles." },
+   "hint": "Ligue o verso 11 ao pedido do verso 12.",
+   "learningObjective": "Ligar a vida de peregrino ao testemunho entre os gentios.",
+   "evidence": ["1 Pedro 2:11"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Tiago 1:19, toque a atitude pedida antes de falar.",
+   "verseRef": "Tiago 1:19",
+   "options": [{ "id": "a", "text": "tardio para falar" }, { "id": "b", "text": "pronto para ouvir" }, { "id": "c", "text": "amados irmãos" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "cada um esteja pronto para ouvir",
+   "feedbackCorrect": "Antes de falar, cada um deve estar pronto para ouvir.",
+   "feedbackWrong": { "a": "Isso é a atitude com a fala, que deve esperar.", "c": "Assim Tiago chama os leitores, não a atitude pedida." },
+   "hint": "Veja a primeira atitude da lista.",
+   "learningObjective": "Revisar a atitude pedida em Tiago 1:19.",
+   "evidence": ["Tiago 1:19"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Tiago 1:22 na ordem do texto.",
+   "verseRef": "Tiago 1:22",
+   "options": [
+    { "id": "a", "text": "Sejam praticantes da palavra" },
+    { "id": "b", "text": "e não somente ouvintes" },
+    { "id": "c", "text": "enganando-se a si mesmos" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Sejam praticantes da palavra",
+   "feedbackCorrect": "Praticar, não só ouvir: só ouvir engana a si mesmo.",
+   "feedbackWrong": { "default": "Comece pelo pedido de ser praticante da palavra." },
+   "hint": "O versículo começa pelo pedido positivo.",
+   "learningObjective": "Reconhecer a sequência de Tiago 1:22.",
+   "evidence": ["Tiago 1:22"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Tiago 1:19–20, falar rápido e irar-se gera a justiça de Deus.",
+   "verseRef": "Tiago 1:19–20", "correctOptionId": "false",
+   "evidenceSpan": "a ira do homem não gera a justiça que vem de Deus",
+   "feedbackCorrect": "A ira não gera a justiça de Deus; Tiago pede ouvir pronto.",
+   "feedbackWrong": { "true": "Releia 1:20: a ira do homem não gera a justiça de Deus." },
+   "hint": "Veja o fruto que a ira não produz.",
+   "learningObjective": "Compreender a relação entre ira e justiça em Tiago.",
+   "evidence": ["Tiago 1:19–20"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em 1 Pedro 2:7, toque a palavra que marca o contraste com quem crê.",
+   "verseRef": "1 Pedro 2:7",
+   "options": [{ "id": "a", "text": "Para" }, { "id": "b", "text": "mas" }, { "id": "c", "text": "pedra" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas, para os desobedientes",
+   "feedbackCorrect": "Depois de falar de quem crê, o texto vira para os desobedientes.",
+   "feedbackWrong": { "a": "Essa palavra abre o verso e fala de quem crê, sem virada.", "c": "A pedra é o assunto dos dois lados, não a virada entre eles." },
+   "hint": "Repare na virada entre as duas partes.",
+   "learningObjective": "Reconhecer a palavra de contraste em 1 Pedro 2:7.",
+   "evidence": ["1 Pedro 2:7"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como 1 Pedro 2:12 se relaciona com 2:11?",
+   "verseRef": "1 Pedro 2:11–12",
+   "options": [
+    { "id": "a", "text": "A vida exemplar pode glorificar a Deus" },
+    { "id": "b", "text": "Peregrinos devem se isolar dos gentios" },
+    { "id": "c", "text": "Boas obras substituem a fé na pedra" },
+    { "id": "d", "text": "Falar dos gentios dispensa boas obras" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "glorifiquem a Deus no dia da visitação",
+   "feedbackCorrect": "A vida exemplar dos peregrinos pode levar gentios a Deus.",
+   "feedbackWrong": { "b": "O pedido é viver bem entre eles, não se isolar deles.", "c": "As obras acompanham a fé; não tomam o lugar da pedra.", "d": "O texto pede justamente boas obras observáveis." },
+   "hint": "Veja o resultado da vida exemplar no verso 12.",
+   "learningObjective": "Relacionar o chamado de peregrino ao seu fruto.",
+   "evidence": ["1 Pedro 2:11–12"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o contraste em Tiago 1:24–25?",
+   "verseRef": "Tiago 1:24–25",
+   "options": [
+    { "id": "a", "text": "Afastar-se e esquecer o próprio rosto" },
+    { "id": "b", "text": "Observar atentamente a lei perfeita" },
+    { "id": "c", "text": "Perseverar praticando e ser feliz" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "logo se esquece de como era a sua aparência",
+   "feedbackCorrect": "Do esquecimento à prática perseverante: é o avanço do trecho.",
+   "feedbackWrong": { "default": "Comece por quem se afasta e esquece; perseverar fecha." },
+   "hint": "Perseverar praticando é o ponto de chegada.",
+   "learningObjective": "Compreender o contraste entre esquecer e perseverar.",
+   "evidence": ["Tiago 1:24–25"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Tiago 1:21, com que atitude a palavra deve ser acolhida?",
+   "verseRef": "Tiago 1:21",
+   "options": [{ "id": "a", "text": "pressa" }, { "id": "b", "text": "mansidão" }, { "id": "c", "text": "ira" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "acolham, com mansidão, a palavra",
+   "feedbackCorrect": "A palavra é acolhida com mansidão, não com ira nem pressa.",
+   "feedbackWrong": { "a": "A pressa é para ouvir; a palavra se acolhe de outro modo.", "c": "A ira é o que deve ser deixado, segundo o verso 20." },
+   "hint": "Veja como a palavra deve ser recebida.",
+   "learningObjective": "Compreender a atitude de acolher a palavra.",
+   "evidence": ["Tiago 1:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Tiago 1:22 a Mateus 7:24?",
+   "verseRef": "Tiago 1:22",
+   "passageA": { "ref": "Tiago 1:22" },
+   "passageB": { "ref": "Mateus 7:24" },
+   "options": [
+    { "id": "a", "text": "Ouvir e praticar a palavra" },
+    { "id": "b", "text": "Ouvir sem praticar nada" },
+    { "id": "c", "text": "Praticar sem ouvir Deus" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Sejam praticantes da palavra",
+   "feedbackCorrect": "Jesus e Tiago unem o mesmo par: ouvir e colocar em prática.",
+   "feedbackWrong": { "b": "Os dois textos condenam o ouvir sem prática.", "c": "Nos dois, a prática nasce de ouvir a palavra primeiro." },
+   "hint": "Compare o pedido dos dois textos sobre a palavra.",
+   "learningObjective": "Relacionar Tiago e Jesus sobre ouvir e praticar.",
+   "evidence": ["Tiago 1:22", "Mateus 7:24"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Tiago 1:21, toque a palavra que abre a conclusão do trecho.",
+   "verseRef": "Tiago 1:21",
+   "options": [{ "id": "a", "text": "Portanto" }, { "id": "b", "text": "mansidão" }, { "id": "c", "text": "almas" }],
+   "correctOptionId": "a",
+   "evidenceSpan": "Portanto, despojados de toda impureza",
+   "feedbackCorrect": "A palavra abre a conclusão: deixar a impureza e acolher a palavra.",
+   "feedbackWrong": { "b": "Isso é a atitude de acolher, não a abertura da conclusão.", "c": "Almas é o que a palavra pode salvar, no fim do verso." },
+   "hint": "É a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer a palavra de conclusão em Tiago 1:21.",
+   "evidence": ["Tiago 1:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como se encadeiam os versos em 1 Pedro 2:9–10?",
+   "verseRef": "1 Pedro 2:9–10",
+   "options": [
+    { "id": "a", "text": "Um povo eleito para proclamar Deus" },
+    { "id": "b", "text": "Antes, esse povo não era povo" },
+    { "id": "c", "text": "Agora, ele alcançou misericórdia de Deus" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "antes não eram um povo, mas agora são o povo de Deus",
+   "feedbackCorrect": "Identidade proclamada, passado sem povo e misericórdia alcançada.",
+   "feedbackWrong": { "default": "Comece pela identidade de 2:9; a misericórdia fecha 2:10." },
+   "hint": "A misericórdia alcançada fecha o encadeamento.",
+   "learningObjective": "Compreender o encadeamento de 1 Pedro 2:9–10.",
+   "evidence": ["1 Pedro 2:9–10"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "1 Pedro 2:9 sustenta que ser povo de Deus inclui proclamar suas virtudes.",
+   "verseRef": "1 Pedro 2:9", "correctOptionId": "true",
+   "evidenceSpan": "para que proclamem as virtudes daquele",
+   "feedbackCorrect": "O povo foi chamado para proclamar as virtudes de Deus.",
+   "feedbackWrong": { "false": "Releia o meio de 2:9: proclamar faz parte do chamado." },
+   "hint": "Veja a finalidade dada ao povo no verso.",
+   "learningObjective": "Interpretar a missão que acompanha a identidade do povo.",
+   "evidence": ["1 Pedro 2:9"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em 1 Pedro 2:8, toque a ação dos desobedientes diante da palavra.",
+   "verseRef": "1 Pedro 2:8",
+   "options": [{ "id": "a", "text": "pedra de tropeço" }, { "id": "b", "text": "tropeçam na palavra" }, { "id": "c", "text": "rocha de ofensa" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "tropeçam na palavra, sendo desobedientes",
+   "feedbackCorrect": "Os desobedientes tropeçam na palavra, em vez de crer nela.",
+   "feedbackWrong": { "a": "Isso descreve a pedra para eles, não o que eles fazem.", "c": "Isso também descreve a pedra, não a ação deles." },
+   "hint": "Procure a ação ligada à desobediência.",
+   "learningObjective": "Sustentar com o texto a resposta à palavra.",
+   "evidence": ["1 Pedro 2:8"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Tiago 1:25 sustenta sobre quem ouve a lei?",
+   "verseRef": "Tiago 1:24–25",
+   "options": [
+    { "id": "a", "text": "Quem persevera praticando será feliz" },
+    { "id": "b", "text": "Ouvir uma vez já basta para sempre" },
+    { "id": "c", "text": "A lei perfeita prende quem a pratica" },
+    { "id": "d", "text": "Ser feliz é esquecer o que ouviu" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "este será bem-aventurado no que realizar",
+   "feedbackCorrect": "Perseverar praticando, e não só ouvir, traz bem-aventurança.",
+   "feedbackWrong": { "b": "Tiago pede perseverança, não um ouvir único e passageiro.", "c": "Ele chama a lei de lei da liberdade, não de prisão.", "d": "Esquecer é o erro do homem do espelho (1:24)." },
+   "hint": "Veja quem o fim do verso 25 chama de feliz.",
+   "learningObjective": "Escolher a leitura que Tiago 1:25 sustenta.",
+   "evidence": ["Tiago 1:24–25"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o sentido de 1 Pedro 2:9?",
+   "verseRef": "1 Pedro 2:9",
+   "options": [
+    { "id": "a", "text": "Deus chama seu povo das trevas" },
+    { "id": "b", "text": "Esse povo proclama as virtudes dele" },
+    { "id": "c", "text": "Sua vida exemplar glorifica a Deus" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "os chamou das trevas para a sua maravilhosa luz",
+   "feedbackCorrect": "Chamado das trevas, o povo anuncia Deus e vive para sua glória.",
+   "feedbackWrong": { "default": "Comece pelo chamado das trevas para a luz de Deus." },
+   "hint": "O chamado de Deus é o ponto de partida.",
+   "learningObjective": "Ver o fio entre chamado, anúncio e vida do povo.",
+   "evidence": ["1 Pedro 2:9", "1 Pedro 2:12"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Tiago 1:25, que palavra nomeia a lei em que se deve perseverar?",
+   "verseRef": "Tiago 1:25",
+   "options": [{ "id": "a", "text": "liberdade" }, { "id": "b", "text": "impureza" }, { "id": "c", "text": "malícia" }],
+   "correctOptionId": "a",
+   "evidenceSpan": "a lei perfeita, a lei da liberdade",
+   "feedbackCorrect": "A lei perfeita é chamada de lei da liberdade por Tiago.",
+   "feedbackWrong": { "b": "Impureza é o que deve ser deixado para trás (1:21).", "c": "Malícia também fica para trás ao acolher a palavra (1:21)." },
+   "hint": "Veja o segundo nome dado à lei.",
+   "learningObjective": "Lembrar o nome que mostra a lei como liberdade.",
+   "evidence": ["Tiago 1:25"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga 1 Pedro 2:9 a Êxodo 19:6?",
+   "verseRef": "1 Pedro 2:9",
+   "passageA": { "ref": "1 Pedro 2:9" },
+   "passageB": { "ref": "Êxodo 19:6" },
+   "options": [
+    { "id": "a", "text": "Sacerdócio e povo exclusivo" },
+    { "id": "b", "text": "Povo sem sacerdote algum" },
+    { "id": "c", "text": "Reino sem Deus presente" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o sacerdócio real, a nação santa",
+   "feedbackCorrect": "Pedro usa para a igreja as palavras ditas a Israel no Sinai.",
+   "feedbackWrong": { "b": "Nos dois textos, o povo inteiro é chamado sacerdotal.", "c": "Êxodo e Pedro falam do Deus que forma um povo para si." },
+   "hint": "Compare os títulos dados ao povo nos dois textos.",
+   "learningObjective": "Ligar o povo de Deus em Pedro e em Êxodo.",
+   "evidence": ["1 Pedro 2:9", "Êxodo 19:6"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Tiago 1:25, toque como é chamado quem não é ouvinte negligente.",
+   "verseRef": "Tiago 1:25",
+   "options": [{ "id": "a", "text": "ouvinte negligente" }, { "id": "b", "text": "praticante ativo" }, { "id": "c", "text": "lei perfeita" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas praticante ativo",
+   "feedbackCorrect": "Quem persevera na lei é praticante ativo, não ouvinte negligente.",
+   "feedbackWrong": { "a": "Isso é justamente o que essa pessoa não é.", "c": "Isso é o que a pessoa observa, não como ela é chamada." },
+   "hint": "Procure o oposto de ouvinte negligente.",
+   "learningObjective": "Sustentar com o texto o retrato do praticante.",
+   "evidence": ["Tiago 1:25"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho de Tiago 1:21–25?",
+   "verseRef": "Tiago 1:25",
+   "options": [
+    { "id": "a", "text": "Acolher a palavra com mansidão" },
+    { "id": "b", "text": "Ser praticante, não só ouvinte" },
+    { "id": "c", "text": "Ser bem-aventurado no que realizar" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "mas praticante ativo, este será bem-aventurado",
+   "feedbackCorrect": "Acolher, praticar e ser bem-aventurado: o caminho se completa.",
+   "feedbackWrong": { "default": "Comece por acolher a palavra; a bem-aventurança fecha." },
+   "hint": "A bem-aventurança é o ponto de chegada.",
+   "learningObjective": "Ver o caminho completo de Tiago 1:21–25.",
+   "evidence": ["Tiago 1:21", "Tiago 1:22", "Tiago 1:25"]
+  }
+ ]
+}

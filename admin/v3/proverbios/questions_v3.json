@@ -1,0 +1,3307 @@
+[
+  {
+    "id": "proverbios-sem-proverbios-pratica-01-palavras-e-trabalho-01",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Provérbios 10:19, quem modera os lábios é prudente.",
+    "prompt": "Em Provérbios 10:19, quem modera os lábios é prudente.",
+    "cue": "Em Provérbios 10:19, quem modera os lábios é prudente.",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quem modera os lábios é prudente",
+    "feedbackCorrect": "Medir as palavras é a marca da prudência neste conselho.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 10:19: moderar os lábios é ser prudente."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar a prudência de moderar a fala.",
+    "evidence": [
+      "Provérbios 10:19"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-01-palavras-e-trabalho-02",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Provérbios 10:20, toque a que a língua do justo é comparada.",
+    "prompt": "Em Provérbios 10:20, toque a que a língua do justo é comparada.",
+    "cue": "Em Provérbios 10:20, toque a que a língua do justo é comparada.",
+    "verseRef": "Provérbios 10:20",
+    "passageText": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "língua do justo"
+      },
+      {
+        "id": "b",
+        "text": "prata escolhida"
+      },
+      {
+        "id": "c",
+        "text": "coração dos ímpios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A língua do justo é como prata escolhida",
+    "feedbackCorrect": "A fala reta tem valor raro, como prata escolhida.",
+    "feedbackWrong": {
+      "a": "Isso é o que está sendo comparado, não a comparação.",
+      "c": "Isso é o lado de pouco valor, na segunda parte do versículo."
+    },
+    "hint": "Procure a comparação na primeira parte.",
+    "learningObjective": "Identificar a comparação da língua do justo.",
+    "evidence": [
+      "Provérbios 10:20"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-01-palavras-e-trabalho-03",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Provérbios 10:21, o que os lábios do justo fazem?",
+    "prompt": "Segundo Provérbios 10:21, o que os lábios do justo fazem?",
+    "cue": "Segundo Provérbios 10:21, o que os lábios do justo fazem?",
+    "verseRef": "Provérbios 10:21",
+    "passageText": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disseminam calúnias"
+      },
+      {
+        "id": "b",
+        "text": "Apascentam a muitos"
+      },
+      {
+        "id": "c",
+        "text": "Resultam em pecado"
+      },
+      {
+        "id": "d",
+        "text": "Ocultam o ódio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os lábios do justo apascentam a muitos",
+    "feedbackCorrect": "A palavra do justo alimenta e sustenta outras pessoas.",
+    "feedbackWrong": {
+      "a": "Disseminar calúnias é atitude do insensato, em 10:18.",
+      "c": "Resultar em pecado é o fim dos rendimentos do ímpio (10:16).",
+      "d": "Ocultar o ódio marca lábios falsos, em 10:18."
+    },
+    "hint": "Veja o efeito da fala do justo sobre os outros.",
+    "learningObjective": "Observar o efeito da palavra do justo.",
+    "evidence": [
+      "Provérbios 10:21"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-01-palavras-e-trabalho-04",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Provérbios 10:19 na ordem do texto.",
+    "prompt": "Monte Provérbios 10:19 na ordem do texto.",
+    "cue": "Monte Provérbios 10:19 na ordem do texto.",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando há muita fala, não faltam transgressões"
+      },
+      {
+        "id": "b",
+        "text": "mas quem modera os lábios"
+      },
+      {
+        "id": "c",
+        "text": "é prudente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando há muita fala, não faltam transgressões",
+    "feedbackCorrect": "Primeiro o perigo de falar sem freio; depois, a prudência.",
+    "feedbackWrong": {
+      "default": "Comece pela muita fala; a prudência fecha o versículo."
+    },
+    "hint": "O versículo começa pelo excesso de fala.",
+    "learningObjective": "Reconhecer a sequência de Provérbios 10:19.",
+    "evidence": [
+      "Provérbios 10:19"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-01-palavras-e-trabalho-05",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Provérbios 10:16, a que a obra do justo conduz?",
+    "prompt": "Em Provérbios 10:16, a que a obra do justo conduz?",
+    "cue": "Em Provérbios 10:16, a que a obra do justo conduz?",
+    "verseRef": "Provérbios 10:16",
+    "passageText": "A obra do justo conduz à vida, mas os rendimentos do ímpio resultam em pecado.",
+    "template": "A obra do justo conduz à ___, mas os rendimentos do ímpio resultam em pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "erro"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A obra do justo conduz à vida",
+    "feedbackCorrect": "O trabalho do justo tem direção: conduz à vida.",
+    "feedbackWrong": {
+      "b": "Erro é o rumo de quem abandona a correção (10:17).",
+      "c": "Pecado é o resultado dos rendimentos do ímpio, neste versículo."
+    },
+    "hint": "Olhe a primeira parte do versículo.",
+    "learningObjective": "Lembrar o rumo da obra do justo.",
+    "evidence": [
+      "Provérbios 10:16"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-01-palavras-e-trabalho-06",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Provérbios 10:19 comunica que se liga a este contexto?",
+    "prompt": "O que Provérbios 10:19 comunica que se liga a este contexto?",
+    "cue": "O que Provérbios 10:19 comunica que se liga a este contexto?",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "passageA": {
+      "ref": "Provérbios 10:19",
+      "text": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Falar sem freio abre espaço para pecar; medir as palavras protege a vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Calúnia alimenta quem ouve"
+      },
+      {
+        "id": "b",
+        "text": "Falar muito evita pecar"
+      },
+      {
+        "id": "c",
+        "text": "Moderar a boca é prudência"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem modera os lábios é prudente",
+    "feedbackCorrect": "A prudência aparece justamente em pôr freio na fala.",
+    "feedbackWrong": {
+      "a": "Calúnia é marca do insensato, não alimento para ninguém (10:18).",
+      "b": "O texto diz o contrário: muita fala traz transgressões."
+    },
+    "hint": "Veja o nome dado a quem mede a fala.",
+    "learningObjective": "Ligar Provérbios 10:19 à prudência na fala.",
+    "evidence": [
+      "Provérbios 10:19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-01-palavras-e-trabalho-01",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Provérbios 10:17, quem abandona a correção permanece no caminho da vida.",
+    "prompt": "Em Provérbios 10:17, quem abandona a correção permanece no caminho da vida.",
+    "cue": "Em Provérbios 10:17, quem abandona a correção permanece no caminho da vida.",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quem abandona a correção anda em erro",
+    "feedbackCorrect": "Abandonar a correção tira a pessoa do caminho da vida.",
+    "feedbackWrong": {
+      "true": "O caminho da vida é de quem guarda o ensinamento, diz o texto."
+    },
+    "hint": "Compare guardar e abandonar no versículo.",
+    "learningObjective": "Compreender o contraste de Provérbios 10:17.",
+    "evidence": [
+      "Provérbios 10:17"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-01-palavras-e-trabalho-02",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Provérbios 10:19, toque o verbo que mostra o freio prudente sobre a fala.",
+    "prompt": "Em Provérbios 10:19, toque o verbo que mostra o freio prudente sobre a fala.",
+    "cue": "Em Provérbios 10:19, toque o verbo que mostra o freio prudente sobre a fala.",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "modera"
+      },
+      {
+        "id": "b",
+        "text": "prudente"
+      },
+      {
+        "id": "c",
+        "text": "lábios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem modera os lábios é prudente",
+    "feedbackCorrect": "Prudência, aqui, é um verbo em ação: pôr medida na fala.",
+    "feedbackWrong": {
+      "b": "Prudente é o nome de quem freia, não o verbo da ação.",
+      "c": "Lábios nomeiam onde o freio age, não a ação de frear."
+    },
+    "hint": "Procure a ação de quem é prudente.",
+    "learningObjective": "Reconhecer a ação que marca a prudência.",
+    "evidence": [
+      "Provérbios 10:19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-01-palavras-e-trabalho-03",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Provérbios 10:19 liga muita fala ao erro?",
+    "prompt": "Como Provérbios 10:19 liga muita fala ao erro?",
+    "cue": "Como Provérbios 10:19 liga muita fala ao erro?",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Muita fala impede qualquer transgressão"
+      },
+      {
+        "id": "b",
+        "text": "Quem fala pouco nunca erra com a boca"
+      },
+      {
+        "id": "c",
+        "text": "Falar sem freio multiplica os deslizes"
+      },
+      {
+        "id": "d",
+        "text": "Falar muito prova um coração puro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quando há muita fala, não faltam transgressões",
+    "feedbackCorrect": "Quanto mais fala sem medida, mais espaço para transgredir.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário sobre a muita fala.",
+      "b": "O conselho é moderar, não uma garantia sobre quem fala pouco.",
+      "d": "O texto não mede o coração pela quantidade de palavras."
+    },
+    "hint": "Veja o que não falta quando a fala é muita.",
+    "learningObjective": "Compreender a relação entre fala excessiva e erro.",
+    "evidence": [
+      "Provérbios 10:19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-01-palavras-e-trabalho-04",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em Provérbios 10:19–20?",
+    "prompt": "Como avança o ensino em Provérbios 10:19–20?",
+    "cue": "Como avança o ensino em Provérbios 10:19–20?",
+    "verseRef": "Provérbios 10:19–20",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente. A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Muita fala abre espaço ao erro"
+      },
+      {
+        "id": "b",
+        "text": "Medir as palavras mostra prudência"
+      },
+      {
+        "id": "c",
+        "text": "A fala justa tem grande valor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A língua do justo é como prata escolhida",
+    "feedbackCorrect": "Do perigo da boca solta ao valor da fala justa e medida.",
+    "feedbackWrong": {
+      "default": "Comece pelo perigo de 10:19; o valor da língua vem em 10:20."
+    },
+    "hint": "A prata aparece só no segundo versículo.",
+    "learningObjective": "Compreender o movimento de Provérbios 10:19–20.",
+    "evidence": [
+      "Provérbios 10:19–20"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-01-palavras-e-trabalho-05",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Provérbios 10:17, o que não se deve abandonar para andar bem?",
+    "prompt": "Em Provérbios 10:17, o que não se deve abandonar para andar bem?",
+    "cue": "Em Provérbios 10:17, o que não se deve abandonar para andar bem?",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "template": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a ___ anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prata"
+      },
+      {
+        "id": "b",
+        "text": "calúnia"
+      },
+      {
+        "id": "c",
+        "text": "correção"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem abandona a correção anda em erro",
+    "feedbackCorrect": "Aceitar ser corrigido mantém a pessoa no caminho da vida.",
+    "feedbackWrong": {
+      "a": "Prata é a imagem da língua do justo, em 10:20.",
+      "b": "Calúnia deve ser abandonada; ela é marca do insensato (10:18)."
+    },
+    "hint": "Veja o que é abandonado por quem anda em erro.",
+    "learningObjective": "Compreender o valor de aceitar correção.",
+    "evidence": [
+      "Provérbios 10:17"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-01-palavras-e-trabalho-06",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Provérbios 10:19 a Tiago 1:19?",
+    "prompt": "O que liga Provérbios 10:19 a Tiago 1:19?",
+    "cue": "O que liga Provérbios 10:19 a Tiago 1:19?",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "passageA": {
+      "ref": "Provérbios 10:19",
+      "text": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente."
+    },
+    "passageB": {
+      "ref": "Tiago 1:19",
+      "text": "Meus amados irmãos, saibam estas coisas: cada um esteja pronto para ouvir, tardio para falar e tardio para se irar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Falar sem medir as palavras"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir antes de falar"
+      },
+      {
+        "id": "c",
+        "text": "Falar antes de ouvir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quem modera os lábios é prudente",
+    "feedbackCorrect": "Tiago resume a prudência: pronto para ouvir, tardio para falar.",
+    "feedbackWrong": {
+      "a": "Palavra sem medida é justamente o perigo dos dois textos.",
+      "c": "Tiago manda o contrário: ouvir primeiro, falar depois."
+    },
+    "hint": "Veja a ordem que Tiago propõe para boca e ouvidos.",
+    "learningObjective": "Relacionar a fala medida em Provérbios e Tiago.",
+    "evidence": [
+      "Provérbios 10:19",
+      "Tiago 1:19"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-01-palavras-e-trabalho-01",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Provérbios 10:21 mostra que a palavra do justo pode sustentar outras pessoas.",
+    "prompt": "Provérbios 10:21 mostra que a palavra do justo pode sustentar outras pessoas.",
+    "cue": "Provérbios 10:21 mostra que a palavra do justo pode sustentar outras pessoas.",
+    "verseRef": "Provérbios 10:21",
+    "passageText": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Os lábios do justo apascentam a muitos",
+    "feedbackCorrect": "Apascentar é cuidar e alimentar: a fala justa faz isso.",
+    "feedbackWrong": {
+      "false": "O texto diz que os lábios do justo apascentam a muitos."
+    },
+    "hint": "Veja o efeito dos lábios do justo sobre muitos.",
+    "learningObjective": "Interpretar o alcance da palavra do justo.",
+    "evidence": [
+      "Provérbios 10:21"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-01-palavras-e-trabalho-02",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Provérbios 10:21, toque o verbo que mostra o efeito da fala do justo.",
+    "prompt": "Em Provérbios 10:21, toque o verbo que mostra o efeito da fala do justo.",
+    "cue": "Em Provérbios 10:21, toque o verbo que mostra o efeito da fala do justo.",
+    "verseRef": "Provérbios 10:21",
+    "passageText": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perecem"
+      },
+      {
+        "id": "b",
+        "text": "apascentam"
+      },
+      {
+        "id": "c",
+        "text": "senso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os lábios do justo apascentam a muitos",
+    "feedbackCorrect": "A fala do justo cuida de pessoas como pastor cuida do rebanho.",
+    "feedbackWrong": {
+      "a": "Perecer é o fim dos tolos, na segunda parte do versículo.",
+      "c": "Senso é o que falta aos tolos; não é efeito da fala justa."
+    },
+    "hint": "Procure a ação dos lábios do justo.",
+    "learningObjective": "Sustentar com o texto o efeito da palavra justa.",
+    "evidence": [
+      "Provérbios 10:21"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-01-palavras-e-trabalho-03",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Provérbios 10:20 sustenta sobre a fala do justo?",
+    "prompt": "Que leitura Provérbios 10:20 sustenta sobre a fala do justo?",
+    "cue": "Que leitura Provérbios 10:20 sustenta sobre a fala do justo?",
+    "verseRef": "Provérbios 10:20",
+    "passageText": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seu valor depende de falar muito"
+      },
+      {
+        "id": "b",
+        "text": "Falar bonito dispensa um coração reto"
+      },
+      {
+        "id": "c",
+        "text": "O coração ímpio vale tanto quanto ela"
+      },
+      {
+        "id": "d",
+        "text": "Palavra reta tem valor que sustenta"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "A língua do justo é como prata escolhida",
+    "feedbackCorrect": "Como prata escolhida, essa palavra é rara, pura e valiosa.",
+    "feedbackWrong": {
+      "a": "Muita fala é perigo em 10:19, não fonte de valor.",
+      "b": "Língua e coração andam juntos neste capítulo; um revela o outro.",
+      "c": "O texto diz que o coração dos ímpios tem muito pouco valor."
+    },
+    "hint": "Pense no valor da comparação usada no texto.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a fala.",
+    "evidence": [
+      "Provérbios 10:20"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-01-palavras-e-trabalho-04",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra sábia em Provérbios 10?",
+    "prompt": "Qual sequência revela o caminho da palavra sábia em Provérbios 10?",
+    "cue": "Qual sequência revela o caminho da palavra sábia em Provérbios 10?",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar o ensinamento mantém na vida"
+      },
+      {
+        "id": "b",
+        "text": "Medir as palavras guarda do erro"
+      },
+      {
+        "id": "c",
+        "text": "Falar somente o que edifica quem ouve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O caminho da vida pertence àquele que guarda o ensinamento",
+    "feedbackCorrect": "Quem guarda o ensino mede a boca e usa a palavra para edificar.",
+    "feedbackWrong": {
+      "default": "Comece por guardar o ensinamento, em Provérbios 10:17."
+    },
+    "hint": "Siga de Provérbios ao ensino sobre edificar.",
+    "learningObjective": "Ver a palavra sábia como fruto de um coração ensinado.",
+    "evidence": [
+      "Provérbios 10:17",
+      "Provérbios 10:19",
+      "Efésios 4:29"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-01-palavras-e-trabalho-05",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Provérbios 10:22, que verbo mostra o efeito da bênção do Senhor?",
+    "prompt": "Em Provérbios 10:22, que verbo mostra o efeito da bênção do Senhor?",
+    "cue": "Em Provérbios 10:22, que verbo mostra o efeito da bênção do Senhor?",
+    "verseRef": "Provérbios 10:22",
+    "passageText": "A bênção do Senhor enriquece, e não traz desgosto.",
+    "template": "A bênção do Senhor ___, e não traz desgosto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "empobrece"
+      },
+      {
+        "id": "b",
+        "text": "entristece"
+      },
+      {
+        "id": "c",
+        "text": "enriquece"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A bênção do Senhor enriquece, e não traz desgosto",
+    "feedbackCorrect": "A bênção de Deus é apresentada como fonte de bem, não de desgosto.",
+    "feedbackWrong": {
+      "a": "O texto atribui à bênção o efeito contrário ao empobrecer.",
+      "b": "Entristecer combina com desgosto, que o texto nega dessa bênção."
+    },
+    "hint": "Veja o que a bênção faz logo no começo.",
+    "learningObjective": "Lembrar o efeito da bênção em Provérbios 10:22.",
+    "evidence": [
+      "Provérbios 10:22"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-01-palavras-e-trabalho-06",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-01-palavras-e-trabalho",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Provérbios 10:21 a Efésios 4:29?",
+    "prompt": "O que liga Provérbios 10:21 a Efésios 4:29?",
+    "cue": "O que liga Provérbios 10:21 a Efésios 4:29?",
+    "verseRef": "Provérbios 10:21",
+    "passageText": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem.",
+    "passageA": {
+      "ref": "Provérbios 10:21",
+      "text": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem."
+    },
+    "passageB": {
+      "ref": "Efésios 4:29",
+      "text": "Não saia da sua boca nenhuma palavra torpe, mas apenas a que seja útil para edificação, conforme a necessidade, e que transmita graça aos que ouvem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio que abandona quem precisa"
+      },
+      {
+        "id": "b",
+        "text": "Palavra que alimenta quem ouve"
+      },
+      {
+        "id": "c",
+        "text": "Palavra que espalha calúnia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os lábios do justo apascentam a muitos",
+    "feedbackCorrect": "Nos dois textos, a boa palavra serve para sustentar quem ouve.",
+    "feedbackWrong": {
+      "a": "Efésios não manda calar: manda falar o que edifica.",
+      "c": "Calúnia é a fala do insensato em Provérbios 10:18."
+    },
+    "hint": "Compare o bem que a palavra faz a quem ouve.",
+    "learningObjective": "Ligar a palavra que apascenta à palavra que edifica.",
+    "evidence": [
+      "Provérbios 10:21",
+      "Efésios 4:29"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-01",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Provérbios 10:18, quem dissemina calúnias é chamado de prudente.",
+    "prompt": "Em Provérbios 10:18, quem dissemina calúnias é chamado de prudente.",
+    "cue": "Em Provérbios 10:18, quem dissemina calúnias é chamado de prudente.",
+    "verseRef": "Provérbios 10:18",
+    "passageText": "Aquele que oculta o ódio tem lábios falsos, e quem dissemina calúnias é um insensato.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quem dissemina calúnias é um insensato",
+    "feedbackCorrect": "Calúnia é marca do insensato, nunca da prudência.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 10:18: quem calunia é chamado insensato."
+    },
+    "hint": "Veja o nome dado a quem calunia.",
+    "learningObjective": "Observar o juízo sobre quem calunia.",
+    "evidence": [
+      "Provérbios 10:18"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-02",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Provérbios 10:18, toque o que o insensato dissemina entre as pessoas.",
+    "prompt": "Em Provérbios 10:18, toque o que o insensato dissemina entre as pessoas.",
+    "cue": "Em Provérbios 10:18, toque o que o insensato dissemina entre as pessoas.",
+    "verseRef": "Provérbios 10:18",
+    "passageText": "Aquele que oculta o ódio tem lábios falsos, e quem dissemina calúnias é um insensato.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ódio"
+      },
+      {
+        "id": "b",
+        "text": "calúnias"
+      },
+      {
+        "id": "c",
+        "text": "lábios falsos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quem dissemina calúnias é um insensato",
+    "feedbackCorrect": "Espalhar mentira sobre outros é a marca aqui denunciada.",
+    "feedbackWrong": {
+      "a": "Ódio é o que se oculta por dentro, na primeira parte.",
+      "c": "Isso descreve quem esconde o ódio, não o que se espalha."
+    },
+    "hint": "Olhe a segunda parte do versículo.",
+    "learningObjective": "Identificar a atitude do insensato.",
+    "evidence": [
+      "Provérbios 10:18"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-03",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Provérbios 10:17, a quem pertence o caminho da vida?",
+    "prompt": "Segundo Provérbios 10:17, a quem pertence o caminho da vida?",
+    "cue": "Segundo Provérbios 10:17, a quem pertence o caminho da vida?",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A quem guarda o ensinamento"
+      },
+      {
+        "id": "b",
+        "text": "A quem dissemina calúnias"
+      },
+      {
+        "id": "c",
+        "text": "A quem oculta o ódio"
+      },
+      {
+        "id": "d",
+        "text": "A quem abandona a correção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O caminho da vida pertence àquele que guarda o ensinamento",
+    "feedbackCorrect": "Guardar o ensinamento, e não rejeitá-lo, é o caminho da vida.",
+    "feedbackWrong": {
+      "b": "Caluniar é atitude do insensato, em 10:18.",
+      "c": "Ocultar o ódio marca lábios falsos, em 10:18.",
+      "d": "Quem abandona a correção anda em erro, diz o mesmo versículo."
+    },
+    "hint": "Veja o que a pessoa faz com o ensinamento.",
+    "learningObjective": "Observar o caminho da vida em Provérbios 10:17.",
+    "evidence": [
+      "Provérbios 10:17"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-04",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Provérbios 10:17 na ordem do texto.",
+    "prompt": "Monte Provérbios 10:17 na ordem do texto.",
+    "cue": "Monte Provérbios 10:17 na ordem do texto.",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O caminho da vida pertence àquele que guarda o ensinamento"
+      },
+      {
+        "id": "b",
+        "text": "mas quem abandona a correção"
+      },
+      {
+        "id": "c",
+        "text": "anda em erro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O caminho da vida pertence àquele que guarda o ensinamento",
+    "feedbackCorrect": "Vida para quem guarda; erro para quem abandona a correção.",
+    "feedbackWrong": {
+      "default": "Comece pelo caminho da vida; o erro fecha o versículo."
+    },
+    "hint": "O versículo começa pelo caminho da vida.",
+    "learningObjective": "Reconhecer a sequência de Provérbios 10:17.",
+    "evidence": [
+      "Provérbios 10:17"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-05",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Provérbios 10:22, o que a bênção do Senhor não traz junto?",
+    "prompt": "Em Provérbios 10:22, o que a bênção do Senhor não traz junto?",
+    "cue": "Em Provérbios 10:22, o que a bênção do Senhor não traz junto?",
+    "verseRef": "Provérbios 10:22",
+    "passageText": "A bênção do Senhor enriquece, e não traz desgosto.",
+    "template": "A bênção do Senhor enriquece, e não traz ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prata"
+      },
+      {
+        "id": "b",
+        "text": "desgosto"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A bênção do Senhor enriquece, e não traz desgosto",
+    "feedbackCorrect": "O bem que vem do Senhor não vem misturado com desgosto.",
+    "feedbackWrong": {
+      "a": "Prata é a imagem da língua do justo, em 10:20.",
+      "c": "Vida é o rumo da obra do justo, em 10:16; aqui falta outra palavra."
+    },
+    "hint": "Olhe o que é negado no fim do versículo.",
+    "learningObjective": "Lembrar o caráter da bênção do Senhor.",
+    "evidence": [
+      "Provérbios 10:22"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-06",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Provérbios 10:20 comunica que se liga a este contexto?",
+    "prompt": "O que Provérbios 10:20 comunica que se liga a este contexto?",
+    "cue": "O que Provérbios 10:20 comunica que se liga a este contexto?",
+    "verseRef": "Provérbios 10:20",
+    "passageText": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "passageA": {
+      "ref": "Provérbios 10:20",
+      "text": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Palavra reta vale muito e revela um coração bem dirigido por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fala justa tem valor"
+      },
+      {
+        "id": "b",
+        "text": "Fala falsa vale prata"
+      },
+      {
+        "id": "c",
+        "text": "Coração ímpio vale muito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A língua do justo é como prata escolhida",
+    "feedbackCorrect": "Como prata escolhida, a fala justa é valiosa e rara.",
+    "feedbackWrong": {
+      "b": "Falsidade é denunciada em 10:18; não recebe esse valor.",
+      "c": "O texto diz que esse coração tem muito pouco valor."
+    },
+    "hint": "Veja a comparação da primeira parte.",
+    "learningObjective": "Ligar Provérbios 10:20 ao valor da fala justa.",
+    "evidence": [
+      "Provérbios 10:20"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-07",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Provérbios 10:16, toque a que a obra do justo conduz.",
+    "prompt": "Em Provérbios 10:16, toque a que a obra do justo conduz.",
+    "cue": "Em Provérbios 10:16, toque a que a obra do justo conduz.",
+    "verseRef": "Provérbios 10:16",
+    "passageText": "A obra do justo conduz à vida, mas os rendimentos do ímpio resultam em pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A obra do justo conduz à vida",
+    "feedbackCorrect": "O trabalho do justo tem um rumo: conduz à vida.",
+    "feedbackWrong": {
+      "b": "Obra é o que o justo faz, não o destino dela.",
+      "c": "Pecado é o resultado do lado ímpio do versículo."
+    },
+    "hint": "Procure o destino na primeira parte.",
+    "learningObjective": "Observar o destino da obra do justo.",
+    "evidence": [
+      "Provérbios 10:16"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-pratica-02-desafio-sabedoria-08",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Provérbios 10:20 na ordem do texto.",
+    "prompt": "Monte Provérbios 10:20 na ordem do texto.",
+    "cue": "Monte Provérbios 10:20 na ordem do texto.",
+    "verseRef": "Provérbios 10:20",
+    "passageText": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A língua do justo é como prata escolhida"
+      },
+      {
+        "id": "b",
+        "text": "mas o coração dos ímpios"
+      },
+      {
+        "id": "c",
+        "text": "tem muito pouco valor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A língua do justo é como prata escolhida",
+    "feedbackCorrect": "Primeiro o valor da fala justa; depois, o pouco valor do outro coração.",
+    "feedbackWrong": {
+      "default": "Comece pela língua comparada à prata; o valor baixo fecha."
+    },
+    "hint": "A prata vem antes do coração ímpio.",
+    "learningObjective": "Reconhecer a sequência de Provérbios 10:20.",
+    "evidence": [
+      "Provérbios 10:20"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-01",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Provérbios 10:16–17, abandonar a correção produz o mesmo fruto que guardar o ensinamento.",
+    "prompt": "Em Provérbios 10:16–17, abandonar a correção produz o mesmo fruto que guardar o ensinamento.",
+    "cue": "Em Provérbios 10:16–17, abandonar a correção produz o mesmo fruto que guardar o ensinamento.",
+    "verseRef": "Provérbios 10:16–17",
+    "passageText": "A obra do justo conduz à vida, mas os rendimentos do ímpio resultam em pecado. O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quem abandona a correção anda em erro",
+    "feedbackCorrect": "Os frutos são opostos: vida de um lado, erro do outro.",
+    "feedbackWrong": {
+      "true": "Guardar leva à vida; abandonar a correção leva ao erro."
+    },
+    "hint": "Compare os destinos dos dois lados.",
+    "learningObjective": "Compreender os frutos opostos de Provérbios 10.",
+    "evidence": [
+      "Provérbios 10:16–17"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-02",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Provérbios 10:17, toque o verbo de quem está no caminho da vida.",
+    "prompt": "Em Provérbios 10:17, toque o verbo de quem está no caminho da vida.",
+    "cue": "Em Provérbios 10:17, toque o verbo de quem está no caminho da vida.",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "abandona"
+      },
+      {
+        "id": "b",
+        "text": "anda"
+      },
+      {
+        "id": "c",
+        "text": "guarda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pertence àquele que guarda o ensinamento",
+    "feedbackCorrect": "Estar na vida passa por guardar o que foi ensinado.",
+    "feedbackWrong": {
+      "a": "Abandonar é o verbo de quem sai para o erro.",
+      "b": "Andar descreve o movimento de quem abandonou a correção."
+    },
+    "hint": "Veja a ação ligada ao ensinamento.",
+    "learningObjective": "Reconhecer a ação de quem guarda o ensino.",
+    "evidence": [
+      "Provérbios 10:17"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-03",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Provérbios 10:19 se relaciona com Provérbios 10:18?",
+    "prompt": "Como Provérbios 10:19 se relaciona com Provérbios 10:18?",
+    "cue": "Como Provérbios 10:19 se relaciona com Provérbios 10:18?",
+    "verseRef": "Provérbios 10:18–19",
+    "passageText": "Aquele que oculta o ódio tem lábios falsos, e quem dissemina calúnias é um insensato. Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um trata da boca e o outro só do trabalho"
+      },
+      {
+        "id": "b",
+        "text": "Os dois elogiam falar sem pensar"
+      },
+      {
+        "id": "c",
+        "text": "Os dois tratam do mau uso da boca"
+      },
+      {
+        "id": "d",
+        "text": "Um condena e o outro libera a calúnia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem dissemina calúnias é um insensato",
+    "feedbackCorrect": "Calúnia e fala sem freio são faces do mesmo mau uso da boca.",
+    "feedbackWrong": {
+      "a": "Trabalho aparece em 10:16; aqui o assunto continua sendo a boca.",
+      "b": "Nenhum dos dois elogia a fala impensada; ambos a reprovam.",
+      "d": "A calúnia é condenada, não liberada no versículo seguinte."
+    },
+    "hint": "Veja o órgão do corpo presente nos dois textos.",
+    "learningObjective": "Relacionar os conselhos sobre a boca.",
+    "evidence": [
+      "Provérbios 10:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-04",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os rumos em Provérbios 10:16–17?",
+    "prompt": "Como se encadeiam os rumos em Provérbios 10:16–17?",
+    "cue": "Como se encadeiam os rumos em Provérbios 10:16–17?",
+    "verseRef": "Provérbios 10:16–17",
+    "passageText": "A obra do justo conduz à vida, mas os rendimentos do ímpio resultam em pecado. O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A obra justa conduz à vida"
+      },
+      {
+        "id": "b",
+        "text": "Guardar o ensino mantém no rumo"
+      },
+      {
+        "id": "c",
+        "text": "Abandonar a correção gera erro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A obra do justo conduz à vida",
+    "feedbackCorrect": "Do trabalho ao ensino guardado; o erro aparece ao abandonar.",
+    "feedbackWrong": {
+      "default": "Comece pela obra do justo, em 10:16; o erro fecha 10:17."
+    },
+    "hint": "O erro é o ponto final do trecho.",
+    "learningObjective": "Compreender o encadeamento de Provérbios 10:16–17.",
+    "evidence": [
+      "Provérbios 10:16–17"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-05",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Provérbios 10:20, como é a prata à qual a língua do justo é comparada?",
+    "prompt": "Em Provérbios 10:20, como é a prata à qual a língua do justo é comparada?",
+    "cue": "Em Provérbios 10:20, como é a prata à qual a língua do justo é comparada?",
+    "verseRef": "Provérbios 10:20",
+    "passageText": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "template": "A língua do justo é como prata ___, mas o coração dos ímpios tem muito pouco valor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escolhida"
+      },
+      {
+        "id": "b",
+        "text": "falsa"
+      },
+      {
+        "id": "c",
+        "text": "verde"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A língua do justo é como prata escolhida",
+    "feedbackCorrect": "Não é prata qualquer: é escolhida, como a fala bem medida.",
+    "feedbackWrong": {
+      "b": "Falsos são os lábios de quem oculta o ódio (10:18).",
+      "c": "Verde lembra a erva dada aos animais em outros textos, não aqui."
+    },
+    "hint": "Veja o adjetivo depois de prata.",
+    "learningObjective": "Compreender o valor da língua do justo.",
+    "evidence": [
+      "Provérbios 10:20"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-06",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Provérbios 10:19 a Tiago 1:19?",
+    "prompt": "O que liga Provérbios 10:19 a Tiago 1:19?",
+    "cue": "O que liga Provérbios 10:19 a Tiago 1:19?",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "passageA": {
+      "ref": "Provérbios 10:19",
+      "text": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente."
+    },
+    "passageB": {
+      "ref": "Tiago 1:19",
+      "text": "Meus amados irmãos, saibam estas coisas: cada um esteja pronto para ouvir, tardio para falar e tardio para se irar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir vem antes de falar"
+      },
+      {
+        "id": "b",
+        "text": "Caluniar ajuda quem ouve"
+      },
+      {
+        "id": "c",
+        "text": "Falar sem freio é sabedoria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem modera os lábios é prudente",
+    "feedbackCorrect": "Nos dois, a sabedoria aparece em ouvir primeiro e falar com medida.",
+    "feedbackWrong": {
+      "b": "Calúnia é atitude insensata em Provérbios 10:18.",
+      "c": "Os dois textos tratam a fala sem freio como perigo."
+    },
+    "hint": "Veja a ordem entre ouvir e falar em Tiago.",
+    "learningObjective": "Relacionar a boca medida em Provérbios e Tiago.",
+    "evidence": [
+      "Provérbios 10:19",
+      "Tiago 1:19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-07",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Provérbios 10:21, toque quem os lábios do justo apascentam.",
+    "prompt": "Em Provérbios 10:21, toque quem os lábios do justo apascentam.",
+    "cue": "Em Provérbios 10:21, toque quem os lábios do justo apascentam.",
+    "verseRef": "Provérbios 10:21",
+    "passageText": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "senso"
+      },
+      {
+        "id": "b",
+        "text": "muitos"
+      },
+      {
+        "id": "c",
+        "text": "tolos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os lábios do justo apascentam a muitos",
+    "feedbackCorrect": "A boa palavra não serve só a quem fala: alcança muita gente.",
+    "feedbackWrong": {
+      "a": "Senso é o que falta aos tolos, no fim do versículo.",
+      "c": "Os tolos são o outro lado do contraste, os que perecem."
+    },
+    "hint": "Veja o alcance da fala do justo.",
+    "learningObjective": "Observar o alcance da palavra do justo.",
+    "evidence": [
+      "Provérbios 10:21"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-pratica-02-desafio-sabedoria-08",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o conselho em Provérbios 10:19–20?",
+    "prompt": "Como avança o conselho em Provérbios 10:19–20?",
+    "cue": "Como avança o conselho em Provérbios 10:19–20?",
+    "verseRef": "Provérbios 10:19–20",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente. A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fala sem freio gera transgressão"
+      },
+      {
+        "id": "b",
+        "text": "Lábios moderados mostram prudência"
+      },
+      {
+        "id": "c",
+        "text": "Fala justa vale como prata"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "quem modera os lábios é prudente",
+    "feedbackCorrect": "Do perigo da boca solta ao valor da fala justa e medida.",
+    "feedbackWrong": {
+      "default": "Comece pelo excesso de fala; a prata fecha o movimento."
+    },
+    "hint": "A prata aparece só no fim do trecho.",
+    "learningObjective": "Compreender o avanço de Provérbios 10:19–20.",
+    "evidence": [
+      "Provérbios 10:19–20"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-01",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Provérbios 10:18–19 apresenta a boca sem domínio como marca de insensatez, e não de sabedoria.",
+    "prompt": "Provérbios 10:18–19 apresenta a boca sem domínio como marca de insensatez, e não de sabedoria.",
+    "cue": "Provérbios 10:18–19 apresenta a boca sem domínio como marca de insensatez, e não de sabedoria.",
+    "verseRef": "Provérbios 10:18–19",
+    "passageText": "Aquele que oculta o ódio tem lábios falsos, e quem dissemina calúnias é um insensato. Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quem dissemina calúnias é um insensato",
+    "feedbackCorrect": "Calúnia e fala sem freio recebem o nome de insensatez.",
+    "feedbackWrong": {
+      "false": "Os dois textos chamam essa boca de insensata e transgressora."
+    },
+    "hint": "Veja os nomes dados a esse uso da boca.",
+    "learningObjective": "Interpretar a boca sem domínio à luz do texto.",
+    "evidence": [
+      "Provérbios 10:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-02",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Provérbios 10:19, toque o que não falta quando há muita fala.",
+    "prompt": "Em Provérbios 10:19, toque o que não falta quando há muita fala.",
+    "cue": "Em Provérbios 10:19, toque o que não falta quando há muita fala.",
+    "verseRef": "Provérbios 10:19",
+    "passageText": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lábios"
+      },
+      {
+        "id": "b",
+        "text": "transgressões"
+      },
+      {
+        "id": "c",
+        "text": "prudente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Quando há muita fala, não faltam transgressões",
+    "feedbackCorrect": "A fala sem medida vem acompanhada de tropeços com a boca.",
+    "feedbackWrong": {
+      "a": "Lábios são o lugar da fala, não o que abunda nela.",
+      "c": "Prudente é quem modera, na segunda parte do versículo."
+    },
+    "hint": "Olhe a consequência na primeira parte.",
+    "learningObjective": "Sustentar com o texto o fruto da fala excessiva.",
+    "evidence": [
+      "Provérbios 10:19"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-03",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Provérbios 10:22 sustenta sobre a bênção do Senhor?",
+    "prompt": "Que leitura Provérbios 10:22 sustenta sobre a bênção do Senhor?",
+    "cue": "Que leitura Provérbios 10:22 sustenta sobre a bênção do Senhor?",
+    "verseRef": "Provérbios 10:22",
+    "passageText": "A bênção do Senhor enriquece, e não traz desgosto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Riqueza sempre prova favor de Deus"
+      },
+      {
+        "id": "b",
+        "text": "A bênção depende só do esforço humano"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê nunca sentirá tristeza"
+      },
+      {
+        "id": "d",
+        "text": "A bênção divina é fonte de bem"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "A bênção do Senhor enriquece, e não traz desgosto",
+    "feedbackCorrect": "O provérbio aponta a bênção de Deus como fonte de bem verdadeiro.",
+    "feedbackWrong": {
+      "a": "O texto fala da bênção do Senhor, não usa riqueza como prova automática.",
+      "b": "A fonte nomeada é a bênção do Senhor, não o esforço sozinho.",
+      "c": "É um padrão de sabedoria, não garantia de vida sem tristeza."
+    },
+    "hint": "Veja de quem vem o bem neste versículo.",
+    "learningObjective": "Interpretar a bênção como padrão, e não como fórmula.",
+    "evidence": [
+      "Provérbios 10:22"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-04",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra sábia na Bíblia?",
+    "prompt": "Qual sequência revela o caminho da palavra sábia na Bíblia?",
+    "cue": "Qual sequência revela o caminho da palavra sábia na Bíblia?",
+    "verseRef": "Provérbios 10:17",
+    "passageText": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a correção mantém na vida"
+      },
+      {
+        "id": "b",
+        "text": "Usar a boca para sustentar muitos"
+      },
+      {
+        "id": "c",
+        "text": "Falar o que edifica quem ouve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O caminho da vida pertence àquele que guarda o ensinamento",
+    "feedbackCorrect": "Coração ensinado gera palavra que sustenta e edifica os outros.",
+    "feedbackWrong": {
+      "default": "Comece por guardar o ensinamento, em Provérbios 10:17."
+    },
+    "hint": "Siga de Provérbios ao ensino de Efésios.",
+    "learningObjective": "Ver a palavra sábia como fio bíblico de edificação.",
+    "evidence": [
+      "Provérbios 10:17",
+      "Provérbios 10:21",
+      "Efésios 4:29"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-05",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Provérbios 10:18, como são os lábios de quem oculta o ódio?",
+    "prompt": "Em Provérbios 10:18, como são os lábios de quem oculta o ódio?",
+    "cue": "Em Provérbios 10:18, como são os lábios de quem oculta o ódio?",
+    "verseRef": "Provérbios 10:18",
+    "passageText": "Aquele que oculta o ódio tem lábios falsos, e quem dissemina calúnias é um insensato.",
+    "template": "Aquele que oculta o ódio tem lábios ___, e quem dissemina calúnias é um insensato.",
+    "options": [
+      {
+        "id": "a",
+        "text": "falsos"
+      },
+      {
+        "id": "b",
+        "text": "justos"
+      },
+      {
+        "id": "c",
+        "text": "prudentes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aquele que oculta o ódio tem lábios falsos",
+    "feedbackCorrect": "Esconder ódio atrás de palavras bonitas é falsidade, diz o texto.",
+    "feedbackWrong": {
+      "b": "Justo é quem fala para apascentar, em 10:21.",
+      "c": "Prudente é quem modera os lábios, em 10:19."
+    },
+    "hint": "Veja o adjetivo dado a esses lábios.",
+    "learningObjective": "Lembrar o juízo sobre a fala falsa.",
+    "evidence": [
+      "Provérbios 10:18"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-06",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Provérbios 10:21 a Efésios 4:29?",
+    "prompt": "O que liga Provérbios 10:21 a Efésios 4:29?",
+    "cue": "O que liga Provérbios 10:21 a Efésios 4:29?",
+    "verseRef": "Provérbios 10:21",
+    "passageText": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem.",
+    "passageA": {
+      "ref": "Provérbios 10:21",
+      "text": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem."
+    },
+    "passageB": {
+      "ref": "Efésios 4:29",
+      "text": "Não saia da sua boca nenhuma palavra torpe, mas apenas a que seja útil para edificação, conforme a necessidade, e que transmita graça aos que ouvem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio sempre edifica mais"
+      },
+      {
+        "id": "b",
+        "text": "Palavra boa sustenta quem ouve"
+      },
+      {
+        "id": "c",
+        "text": "Palavra falsa vale prata"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os lábios do justo apascentam a muitos",
+    "feedbackCorrect": "Apascentar e edificar descrevem o mesmo bem feito pela palavra.",
+    "feedbackWrong": {
+      "a": "Efésios manda falar o que é bom, não calar sempre.",
+      "c": "Falsidade é condenada em Provérbios 10:18, nunca valorizada."
+    },
+    "hint": "Compare o bem que a palavra faz nos dois textos.",
+    "learningObjective": "Ligar a palavra que apascenta à palavra que edifica.",
+    "evidence": [
+      "Provérbios 10:21",
+      "Efésios 4:29"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-07",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Provérbios 10:22, toque a palavra que nomeia o bem que vem do Senhor.",
+    "prompt": "Em Provérbios 10:22, toque a palavra que nomeia o bem que vem do Senhor.",
+    "cue": "Em Provérbios 10:22, toque a palavra que nomeia o bem que vem do Senhor.",
+    "verseRef": "Provérbios 10:22",
+    "passageText": "A bênção do Senhor enriquece, e não traz desgosto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desgosto"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "bênção"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A bênção do Senhor enriquece",
+    "feedbackCorrect": "É esse dom vindo de Deus que o versículo apresenta como fonte de bem.",
+    "feedbackWrong": {
+      "a": "Isso é justamente o que esse bem não traz junto.",
+      "b": "Senhor nomeia quem dá; a palavra pedida nomeia o que ele dá."
+    },
+    "hint": "Veja o sujeito que age no começo do versículo.",
+    "learningObjective": "Sustentar com o texto a origem do bem.",
+    "evidence": [
+      "Provérbios 10:22"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-pratica-02-desafio-sabedoria-08",
+    "trail": "proverbios",
+    "section": "proverbios-pratica-02-desafio-sabedoria",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do bem que começa em Provérbios 10:22?",
+    "prompt": "Qual sequência revela o caminho do bem que começa em Provérbios 10:22?",
+    "cue": "Qual sequência revela o caminho do bem que começa em Provérbios 10:22?",
+    "verseRef": "Provérbios 10:22",
+    "passageText": "A bênção do Senhor enriquece, e não traz desgosto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O bem verdadeiro vem da bênção divina"
+      },
+      {
+        "id": "b",
+        "text": "Esse bem não vem com desgosto"
+      },
+      {
+        "id": "c",
+        "text": "Ele é recebido com gratidão a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A bênção do Senhor enriquece, e não traz desgosto",
+    "feedbackCorrect": "O bem vem de Deus, não traz desgosto e é recebido com gratidão.",
+    "feedbackWrong": {
+      "default": "Comece pela bênção de Provérbios 10:22; a gratidão vem depois."
+    },
+    "hint": "Siga de Provérbios à gratidão ensinada por Paulo.",
+    "learningObjective": "Ver o bem de Deus recebido com gratidão na Bíblia.",
+    "evidence": [
+      "Provérbios 10:22",
+      "1 Timóteo 4:4"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-01-o-principio-da-sabed-01",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Provérbios 1:7, o temor do Senhor é o princípio do conhecimento.",
+    "prompt": "Em Provérbios 1:7, o temor do Senhor é o princípio do conhecimento.",
+    "cue": "Em Provérbios 1:7, o temor do Senhor é o princípio do conhecimento.",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O temor do Senhor é o princípio do conhecimento",
+    "feedbackCorrect": "É a primeira grande afirmação do livro: todo saber começa aí.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Provérbios 1:7: o temor do Senhor é esse princípio."
+    },
+    "hint": "Olhe a primeira parte do versículo.",
+    "learningObjective": "Observar qual é o princípio do conhecimento.",
+    "evidence": [
+      "Provérbios 1:7"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-01-o-principio-da-sabed-02",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Provérbios 1:7, toque a palavra que nomeia por onde o conhecimento começa.",
+    "prompt": "Em Provérbios 1:7, toque a palavra que nomeia por onde o conhecimento começa.",
+    "cue": "Em Provérbios 1:7, toque a palavra que nomeia por onde o conhecimento começa.",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instrução"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "sabedoria"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é o princípio do conhecimento",
+    "feedbackCorrect": "O texto chama esse temor de princípio: é o ponto de partida do saber.",
+    "feedbackWrong": {
+      "a": "Instrução também é desprezada pelos insensatos; não é o ponto de partida.",
+      "c": "Sabedoria é o que os insensatos desprezam, no fim do versículo."
+    },
+    "hint": "Olhe a primeira metade do versículo.",
+    "learningObjective": "Identificar o ponto de partida do conhecimento.",
+    "evidence": [
+      "Provérbios 1:7"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-01-o-principio-da-sabed-03",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Provérbios 1:8, o que o filho não deve abandonar?",
+    "prompt": "Segundo Provérbios 1:8, o que o filho não deve abandonar?",
+    "cue": "Segundo Provérbios 1:8, o que o filho não deve abandonar?",
+    "verseRef": "Provérbios 1:8",
+    "passageText": "Filho meu, ouça o ensino de seu pai e não abandone a instrução de sua mãe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os enigmas dos sábios"
+      },
+      {
+        "id": "b",
+        "text": "O ensino de estranhos"
+      },
+      {
+        "id": "c",
+        "text": "A instrução de sua mãe"
+      },
+      {
+        "id": "d",
+        "text": "O conselho dos pecadores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não abandone a instrução de sua mãe",
+    "feedbackCorrect": "Pai e mãe aparecem como primeiros mestres do filho neste trecho.",
+    "feedbackWrong": {
+      "a": "Os enigmas aparecem em 1:6, como algo a compreender, não a abandonar.",
+      "b": "O texto fala do ensino do pai e da instrução da mãe, em casa.",
+      "d": "Dos pecadores o filho deve fugir, não seguir o conselho (1:10)."
+    },
+    "hint": "Leia quem ensina dentro de casa.",
+    "learningObjective": "Observar o ensino dos pais no começo do livro.",
+    "evidence": [
+      "Provérbios 1:8"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-01-o-principio-da-sabed-04",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Provérbios 1:8 na ordem do texto.",
+    "prompt": "Monte Provérbios 1:8 na ordem do texto.",
+    "cue": "Monte Provérbios 1:8 na ordem do texto.",
+    "verseRef": "Provérbios 1:8",
+    "passageText": "Filho meu, ouça o ensino de seu pai e não abandone a instrução de sua mãe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho meu, ouça o ensino de seu pai"
+      },
+      {
+        "id": "b",
+        "text": "e não abandone a instrução"
+      },
+      {
+        "id": "c",
+        "text": "de sua mãe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Filho meu, ouça o ensino de seu pai",
+    "feedbackCorrect": "Primeiro ouvir o pai; depois, não abandonar a instrução da mãe.",
+    "feedbackWrong": {
+      "default": "Comece por ouvir o pai; a mãe fecha o versículo."
+    },
+    "hint": "O versículo começa com o filho ouvindo.",
+    "learningObjective": "Reconhecer a sequência de Provérbios 1:8.",
+    "evidence": [
+      "Provérbios 1:8"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-01-o-principio-da-sabed-05",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Provérbios 1:8, o que o filho deve ouvir de seu pai?",
+    "prompt": "Em Provérbios 1:8, o que o filho deve ouvir de seu pai?",
+    "cue": "Em Provérbios 1:8, o que o filho deve ouvir de seu pai?",
+    "verseRef": "Provérbios 1:8",
+    "passageText": "Filho meu, ouça o ensino de seu pai e não abandone a instrução de sua mãe.",
+    "template": "Filho meu, ouça o ___ de seu pai e não abandone a instrução de sua mãe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "castigo"
+      },
+      {
+        "id": "b",
+        "text": "conselho"
+      },
+      {
+        "id": "c",
+        "text": "ensino"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ouça o ensino de seu pai",
+    "feedbackCorrect": "Ouvir o pai é o primeiro passo prático depois do princípio anunciado.",
+    "feedbackWrong": {
+      "a": "O texto não fala de castigo aqui, e sim do que o pai ensina.",
+      "b": "Conselho é ideia próxima, mas a palavra do texto é outra."
+    },
+    "hint": "Procure o que vem depois de ouvir o pai.",
+    "learningObjective": "Lembrar o ensino do pai em Provérbios 1:8.",
+    "evidence": [
+      "Provérbios 1:8"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-01-o-principio-da-sabed-06",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Provérbios 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Provérbios 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Provérbios 1:7 comunica que se liga a este contexto?",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "passageA": {
+      "ref": "Provérbios 1:7",
+      "text": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus deve vir primeiro, antes de qualquer saber ou escolha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O saber começa em Deus"
+      },
+      {
+        "id": "b",
+        "text": "O saber dispensa Deus"
+      },
+      {
+        "id": "c",
+        "text": "O medo substitui o saber"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O temor do Senhor é o princípio do conhecimento",
+    "feedbackCorrect": "Se o temor do Senhor é o princípio, o saber começa nele.",
+    "feedbackWrong": {
+      "b": "O texto liga o saber justamente a Deus, não à distância dele.",
+      "c": "Temor aqui não é pânico: é o começo do conhecimento."
+    },
+    "hint": "Veja quem está no começo do versículo.",
+    "learningObjective": "Ligar Provérbios 1:7 à ideia de Deus no começo.",
+    "evidence": [
+      "Provérbios 1:7"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-01-o-principio-da-sabed-01",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Provérbios 1:7, quem despreza a sabedoria já alcançou o princípio do conhecimento.",
+    "prompt": "Em Provérbios 1:7, quem despreza a sabedoria já alcançou o princípio do conhecimento.",
+    "cue": "Em Provérbios 1:7, quem despreza a sabedoria já alcançou o princípio do conhecimento.",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "os insensatos desprezam a sabedoria e a instrução",
+    "feedbackCorrect": "Desprezar a sabedoria é o contrário do temor que abre o conhecimento.",
+    "feedbackWrong": {
+      "true": "Quem despreza é chamado insensato; o princípio é o temor do Senhor."
+    },
+    "hint": "Compare os dois lados do versículo.",
+    "learningObjective": "Compreender o contraste de Provérbios 1:7.",
+    "evidence": [
+      "Provérbios 1:7"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-01-o-principio-da-sabed-02",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Provérbios 1:7, toque a palavra que marca o contraste entre o temor e os insensatos.",
+    "prompt": "Em Provérbios 1:7, toque a palavra que marca o contraste entre o temor e os insensatos.",
+    "cue": "Em Provérbios 1:7, toque a palavra que marca o contraste entre o temor e os insensatos.",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "temor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas os insensatos desprezam",
+    "feedbackCorrect": "Essa palavrinha vira o versículo: de um lado o temor, do outro o desprezo.",
+    "feedbackWrong": {
+      "b": "Conhecimento é o tema da primeira parte, não a palavra de contraste.",
+      "c": "Temor nomeia o lado certo do contraste, não a virada."
+    },
+    "hint": "Procure a palavra curta no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "Provérbios 1:7"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-01-o-principio-da-sabed-03",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que o sábio de Provérbios 1:5 continua ouvindo?",
+    "prompt": "Por que o sábio de Provérbios 1:5 continua ouvindo?",
+    "cue": "Por que o sábio de Provérbios 1:5 continua ouvindo?",
+    "verseRef": "Provérbios 1:5",
+    "passageText": "O sábio ouvirá e crescerá em prudência; e o instruído adquirirá habilidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque só os jovens precisam aprender"
+      },
+      {
+        "id": "b",
+        "text": "Porque ouvir dispensa obedecer"
+      },
+      {
+        "id": "c",
+        "text": "Porque aprender é caminho que não se fecha"
+      },
+      {
+        "id": "d",
+        "text": "Porque ele ainda não ouviu nada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O sábio ouvirá e crescerá em prudência",
+    "feedbackCorrect": "Quem já é sábio não para: ouvir faz o sábio crescer ainda mais.",
+    "feedbackWrong": {
+      "a": "O texto fala do sábio e do instruído, não só dos jovens.",
+      "b": "Ouvir, neste livro, serve para viver melhor, não para fugir da prática.",
+      "d": "Ele é chamado sábio justamente porque já ouve; mesmo assim, continua."
+    },
+    "hint": "Veja o que acontece com quem já é sábio.",
+    "learningObjective": "Compreender que o sábio continua aprendendo.",
+    "evidence": [
+      "Provérbios 1:5"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-01-o-principio-da-sabed-04",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o propósito em Provérbios 1:4–5?",
+    "prompt": "Como avança o propósito em Provérbios 1:4–5?",
+    "cue": "Como avança o propósito em Provérbios 1:4–5?",
+    "verseRef": "Provérbios 1:4–5",
+    "passageText": "Para conceder aos inexperientes prudência e aos jovens, conhecimento e bom senso O sábio ouvirá e crescerá em prudência; e o instruído adquirirá habilidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dar prudência a quem não tem experiência"
+      },
+      {
+        "id": "b",
+        "text": "O sábio ouve e continua crescendo"
+      },
+      {
+        "id": "c",
+        "text": "Quem é instruído ganha habilidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O sábio ouvirá e crescerá em prudência",
+    "feedbackCorrect": "O livro forma quem começa e faz crescer quem já é sábio.",
+    "feedbackWrong": {
+      "default": "Comece pelo propósito para os inexperientes, em Provérbios 1:4."
+    },
+    "hint": "O propósito vem antes dos exemplos de 1:5.",
+    "learningObjective": "Compreender o movimento de Provérbios 1:4–5.",
+    "evidence": [
+      "Provérbios 1:4–5"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-01-o-principio-da-sabed-05",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Provérbios 1:5, que verbo mostra a atitude de quem é sábio?",
+    "prompt": "Em Provérbios 1:5, que verbo mostra a atitude de quem é sábio?",
+    "cue": "Em Provérbios 1:5, que verbo mostra a atitude de quem é sábio?",
+    "verseRef": "Provérbios 1:5",
+    "passageText": "O sábio ouvirá e crescerá em prudência; e o instruído adquirirá habilidade.",
+    "template": "O sábio ___ e crescerá em prudência; e o instruído adquirirá habilidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensinará"
+      },
+      {
+        "id": "b",
+        "text": "falará"
+      },
+      {
+        "id": "c",
+        "text": "ouvirá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O sábio ouvirá e crescerá em prudência",
+    "feedbackCorrect": "Antes de ensinar ou falar, o sábio é marcado por escutar.",
+    "feedbackWrong": {
+      "a": "Ensinar pode vir depois; a marca do sábio aqui é outra.",
+      "b": "Falar muito não é o sinal dado; o texto valoriza a escuta."
+    },
+    "hint": "Veja a primeira ação do sábio no versículo.",
+    "learningObjective": "Compreender a escuta como atitude do sábio.",
+    "evidence": [
+      "Provérbios 1:5"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-01-o-principio-da-sabed-06",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Provérbios 1:7 a Salmos 111:10?",
+    "prompt": "O que liga Provérbios 1:7 a Salmos 111:10?",
+    "cue": "O que liga Provérbios 1:7 a Salmos 111:10?",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "passageA": {
+      "ref": "Provérbios 1:7",
+      "text": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução."
+    },
+    "passageB": {
+      "ref": "Salmos 111:10",
+      "text": "O temor do Senhor é o princípio da sabedoria; revelam prudência todos os que o praticam. O seu louvor permanece para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O saber nasce do orgulho"
+      },
+      {
+        "id": "b",
+        "text": "O temor impede o saber"
+      },
+      {
+        "id": "c",
+        "text": "O temor abre a sabedoria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O temor do Senhor é o princípio do conhecimento",
+    "feedbackCorrect": "Os dois textos põem o temor do Senhor no começo da sabedoria.",
+    "feedbackWrong": {
+      "a": "Orgulho é o contrário do temor que os textos ensinam.",
+      "b": "Nos dois, o temor abre o saber, não o fecha."
+    },
+    "hint": "Compare como os dois falam do começo.",
+    "learningObjective": "Relacionar o princípio da sabedoria em Provérbios e Salmos.",
+    "evidence": [
+      "Provérbios 1:7",
+      "Salmos 111:10"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-01-o-principio-da-sabed-01",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Provérbios 1:7 mostra que desprezar a instrução é o oposto de temer o Senhor.",
+    "prompt": "Provérbios 1:7 mostra que desprezar a instrução é o oposto de temer o Senhor.",
+    "cue": "Provérbios 1:7 mostra que desprezar a instrução é o oposto de temer o Senhor.",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mas os insensatos desprezam a sabedoria e a instrução",
+    "feedbackCorrect": "O contraste do versículo põe temor e desprezo em lados opostos.",
+    "feedbackWrong": {
+      "false": "O mas do versículo opõe o temor ao desprezo dos insensatos."
+    },
+    "hint": "Repare nos dois lados ligados pelo contraste.",
+    "learningObjective": "Interpretar o contraste central de Provérbios 1:7.",
+    "evidence": [
+      "Provérbios 1:7"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-01-o-principio-da-sabed-02",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Provérbios 1:10, toque o verbo que mostra a resposta do filho à sedução.",
+    "prompt": "Em Provérbios 1:10, toque o verbo que mostra a resposta do filho à sedução.",
+    "cue": "Em Provérbios 1:10, toque o verbo que mostra a resposta do filho à sedução.",
+    "verseRef": "Provérbios 1:10",
+    "passageText": "Meu filho, se os pecadores tentarem seduzi-lo, não consinta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tentarem"
+      },
+      {
+        "id": "b",
+        "text": "seduzi-lo"
+      },
+      {
+        "id": "c",
+        "text": "consinta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se os pecadores tentarem seduzi-lo, não consinta",
+    "feedbackCorrect": "A sabedoria aparece na recusa: não consentir com quem seduz ao erro.",
+    "feedbackWrong": {
+      "a": "Tentar é a ação dos pecadores, não a resposta do filho.",
+      "b": "Seduzir é o plano dos pecadores; a resposta vem no fim."
+    },
+    "hint": "Olhe a ordem final dada ao filho.",
+    "learningObjective": "Sustentar com o texto a recusa à sedução.",
+    "evidence": [
+      "Provérbios 1:10"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-01-o-principio-da-sabed-03",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Provérbios 1:5 sustenta sobre quem já é sábio?",
+    "prompt": "Que leitura Provérbios 1:5 sustenta sobre quem já é sábio?",
+    "cue": "Que leitura Provérbios 1:5 sustenta sobre quem já é sábio?",
+    "verseRef": "Provérbios 1:5",
+    "passageText": "O sábio ouvirá e crescerá em prudência; e o instruído adquirirá habilidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem é sábio já aprendeu tudo"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir é marca permanente do sábio"
+      },
+      {
+        "id": "c",
+        "text": "Ouvir é só para quem começa"
+      },
+      {
+        "id": "d",
+        "text": "Ouvir vale menos do que falar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O sábio ouvirá e crescerá em prudência",
+    "feedbackCorrect": "O sábio não se aposenta de ouvir: continua crescendo.",
+    "feedbackWrong": {
+      "a": "Se já tivesse aprendido tudo, não cresceria ao ouvir.",
+      "c": "O texto fala justamente de quem já é sábio e instruído.",
+      "d": "Neste livro, ouvir vem antes e sustenta o falar."
+    },
+    "hint": "Veja o que acontece com o sábio no texto.",
+    "learningObjective": "Escolher a interpretação sobre o sábio que continua ouvindo.",
+    "evidence": [
+      "Provérbios 1:5"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-01-o-principio-da-sabed-04",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Provérbios 1:7 na Bíblia?",
+    "prompt": "Qual sequência revela o sentido de Provérbios 1:7 na Bíblia?",
+    "cue": "Qual sequência revela o sentido de Provérbios 1:7 na Bíblia?",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temer o Senhor é o começo do saber"
+      },
+      {
+        "id": "b",
+        "text": "Pedir sabedoria a Deus com fé"
+      },
+      {
+        "id": "c",
+        "text": "Receber a sabedoria que vem do alto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O temor do Senhor é o princípio do conhecimento",
+    "feedbackCorrect": "Começa no temor, passa pelo pedido a Deus e chega ao dom recebido.",
+    "feedbackWrong": {
+      "default": "Comece por Provérbios 1:7; o pedido de Tiago 1:5 vem depois."
+    },
+    "hint": "Siga a ordem: começo, pedido, presente.",
+    "learningObjective": "Ver o temor como começo de um caminho bíblico.",
+    "evidence": [
+      "Provérbios 1:7",
+      "Tiago 1:5",
+      "Tiago 3:17"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-01-o-principio-da-sabed-05",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Provérbios 1:5, em que o sábio cresce ao ouvir?",
+    "prompt": "Em Provérbios 1:5, em que o sábio cresce ao ouvir?",
+    "cue": "Em Provérbios 1:5, em que o sábio cresce ao ouvir?",
+    "verseRef": "Provérbios 1:5",
+    "passageText": "O sábio ouvirá e crescerá em prudência; e o instruído adquirirá habilidade.",
+    "template": "O sábio ouvirá e crescerá em ___; e o instruído adquirirá habilidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instrução"
+      },
+      {
+        "id": "b",
+        "text": "prudência"
+      },
+      {
+        "id": "c",
+        "text": "habilidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O sábio ouvirá e crescerá em prudência",
+    "feedbackCorrect": "Ouvir com atenção faz o sábio crescer justamente nisso.",
+    "feedbackWrong": {
+      "a": "Instrução aparece em 1:7–8; o crescimento aqui tem outro nome.",
+      "c": "Habilidade é o ganho do instruído, na segunda parte de 1:5."
+    },
+    "hint": "Olhe o que aumenta em quem ouve.",
+    "learningObjective": "Lembrar o fruto da escuta do sábio.",
+    "evidence": [
+      "Provérbios 1:5"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-01-o-principio-da-sabed-06",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-01-o-principio-da-sabed",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Provérbios 1:7 a Tiago 1:5?",
+    "prompt": "O que liga Provérbios 1:7 a Tiago 1:5?",
+    "cue": "O que liga Provérbios 1:7 a Tiago 1:5?",
+    "verseRef": "Provérbios 1:7",
+    "passageText": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução.",
+    "passageA": {
+      "ref": "Provérbios 1:7",
+      "text": "O temor do Senhor é o princípio do conhecimento, mas os insensatos desprezam a sabedoria e a instrução."
+    },
+    "passageB": {
+      "ref": "Tiago 1:5",
+      "text": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus nega saber a quem pede"
+      },
+      {
+        "id": "b",
+        "text": "Pedir sabedoria a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Sabedoria vem só do esforço"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O temor do Senhor é o princípio do conhecimento",
+    "feedbackCorrect": "Quem teme o Senhor pode pedir a ele a sabedoria que falta.",
+    "feedbackWrong": {
+      "a": "Tiago diz o contrário: Deus dá a quem pede, sem repreender.",
+      "c": "Tiago manda pedir a Deus; não é conquista solitária."
+    },
+    "hint": "Veja o que fazer quando falta sabedoria.",
+    "learningObjective": "Ligar o princípio da sabedoria ao pedido a Deus.",
+    "evidence": [
+      "Provérbios 1:7",
+      "Tiago 1:5"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-02-dois-caminhos-01",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Provérbios 4:19, o caminho dos ímpios é como a luz da aurora.",
+    "prompt": "Em Provérbios 4:19, o caminho dos ímpios é como a luz da aurora.",
+    "cue": "Em Provérbios 4:19, o caminho dos ímpios é como a luz da aurora.",
+    "verseRef": "Provérbios 4:19",
+    "passageText": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+    "feedbackCorrect": "A luz da aurora descreve os justos; o caminho ímpio é escuridão.",
+    "feedbackWrong": {
+      "true": "Troque os lados: luz da aurora é a senda dos justos, em 4:18."
+    },
+    "hint": "Compare os dois versículos lado a lado.",
+    "learningObjective": "Observar o contraste entre os dois caminhos.",
+    "evidence": [
+      "Provérbios 4:19"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-02-dois-caminhos-02",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Provérbios 4:18, toque o trecho ao qual a senda dos justos é comparada.",
+    "prompt": "Em Provérbios 4:18, toque o trecho ao qual a senda dos justos é comparada.",
+    "cue": "Em Provérbios 4:18, toque o trecho ao qual a senda dos justos é comparada.",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dia perfeito"
+      },
+      {
+        "id": "b",
+        "text": "luz da aurora"
+      },
+      {
+        "id": "c",
+        "text": "senda dos justos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é como a luz da aurora",
+    "feedbackCorrect": "A comparação é com a claridade que nasce e cresce pela manhã.",
+    "feedbackWrong": {
+      "a": "Dia perfeito é onde essa luz chega, não o ponto da comparação.",
+      "c": "Isso é quem anda no caminho, não aquilo a que ele é comparado."
+    },
+    "hint": "Procure depois da expressão de comparação.",
+    "learningObjective": "Identificar a comparação de Provérbios 4:18.",
+    "evidence": [
+      "Provérbios 4:18"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-02-dois-caminhos-03",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Provérbios 4:18, o que acontece com a luz no caminho dos justos?",
+    "prompt": "Segundo Provérbios 4:18, o que acontece com a luz no caminho dos justos?",
+    "cue": "Segundo Provérbios 4:18, o que acontece com a luz no caminho dos justos?",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vai apagando aos poucos"
+      },
+      {
+        "id": "b",
+        "text": "Fica igual do começo ao fim"
+      },
+      {
+        "id": "c",
+        "text": "Brilha mais até o dia perfeito"
+      },
+      {
+        "id": "d",
+        "text": "Brilha somente durante a noite"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+    "feedbackCorrect": "A luz não nasce pronta: cresce até virar dia perfeito.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário: ela vai brilhando mais.",
+      "b": "Há crescimento claro, da aurora ao dia perfeito.",
+      "d": "A imagem é da manhã que avança, não da noite."
+    },
+    "hint": "Siga a luz do começo ao fim do versículo.",
+    "learningObjective": "Observar o crescimento da luz no caminho justo.",
+    "evidence": [
+      "Provérbios 4:18"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-02-dois-caminhos-04",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Provérbios 4:19 na ordem do texto.",
+    "prompt": "Monte Provérbios 4:19 na ordem do texto.",
+    "cue": "Monte Provérbios 4:19 na ordem do texto.",
+    "verseRef": "Provérbios 4:19",
+    "passageText": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O caminho dos ímpios é como a escuridão"
+      },
+      {
+        "id": "b",
+        "text": "não sabem eles"
+      },
+      {
+        "id": "c",
+        "text": "em que vão tropeçar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+    "feedbackCorrect": "Primeiro o escuro do caminho; depois, o tropeço de quem não vê.",
+    "feedbackWrong": {
+      "default": "Comece pela escuridão; o tropeço fecha o versículo."
+    },
+    "hint": "O versículo começa pelo caminho escuro.",
+    "learningObjective": "Reconhecer a sequência de Provérbios 4:19.",
+    "evidence": [
+      "Provérbios 4:19"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-02-dois-caminhos-05",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Provérbios 4:19, a que o caminho dos ímpios é comparado?",
+    "prompt": "Em Provérbios 4:19, a que o caminho dos ímpios é comparado?",
+    "cue": "Em Provérbios 4:19, a que o caminho dos ímpios é comparado?",
+    "verseRef": "Provérbios 4:19",
+    "passageText": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "template": "O caminho dos ímpios é como a ___; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aurora"
+      },
+      {
+        "id": "b",
+        "text": "escuridão"
+      },
+      {
+        "id": "c",
+        "text": "senda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+    "feedbackCorrect": "Sem luz para enxergar, esse caminho termina em tropeço.",
+    "feedbackWrong": {
+      "a": "Aurora descreve a senda dos justos, no versículo anterior.",
+      "c": "Senda é o caminho dos justos; aqui a comparação é com o escuro."
+    },
+    "hint": "Pense no contrário da luz de 4:18.",
+    "learningObjective": "Lembrar a comparação do caminho ímpio.",
+    "evidence": [
+      "Provérbios 4:19"
+    ]
+  },
+  {
+    "id": "proverbios-sem-proverbios-sabedoria-02-dois-caminhos-06",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Provérbios 4:18 comunica que se liga a este contexto?",
+    "prompt": "O que Provérbios 4:18 comunica que se liga a este contexto?",
+    "cue": "O que Provérbios 4:18 comunica que se liga a este contexto?",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "passageA": {
+      "ref": "Provérbios 4:18",
+      "text": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem anda com Deus vive com clareza crescente, e não no escuro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O justo tropeça sem ver"
+      },
+      {
+        "id": "b",
+        "text": "Andar justo ganha luz"
+      },
+      {
+        "id": "c",
+        "text": "Andar justo fica escuro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a senda dos justos é como a luz da aurora",
+    "feedbackCorrect": "A senda justa é descrita como luz que só aumenta.",
+    "feedbackWrong": {
+      "a": "Tropeçar sem ver acontece com quem anda na escuridão.",
+      "c": "Escuro é a marca do outro caminho, em 4:19."
+    },
+    "hint": "Veja a imagem usada para a senda justa.",
+    "learningObjective": "Ligar Provérbios 4:18 à clareza de quem anda com Deus.",
+    "evidence": [
+      "Provérbios 4:18"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-02-dois-caminhos-01",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Provérbios 4:18–19, o caminho justo ganha luz aos poucos, enquanto o caminho ímpio fica na escuridão.",
+    "prompt": "Em Provérbios 4:18–19, o caminho justo ganha luz aos poucos, enquanto o caminho ímpio fica na escuridão.",
+    "cue": "Em Provérbios 4:18–19, o caminho justo ganha luz aos poucos, enquanto o caminho ímpio fica na escuridão.",
+    "verseRef": "Provérbios 4:18–19",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito. O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+    "feedbackCorrect": "Um caminho clareia passo a passo; o outro não deixa enxergar.",
+    "feedbackWrong": {
+      "false": "Releia os dois: luz crescente de um lado, escuridão do outro."
+    },
+    "hint": "Ponha os dois versículos lado a lado.",
+    "learningObjective": "Compreender o contraste entre os dois caminhos.",
+    "evidence": [
+      "Provérbios 4:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-02-dois-caminhos-02",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Provérbios 4:19, toque o verbo que mostra a consequência de andar no escuro.",
+    "prompt": "Em Provérbios 4:19, toque o verbo que mostra a consequência de andar no escuro.",
+    "cue": "Em Provérbios 4:19, toque o verbo que mostra a consequência de andar no escuro.",
+    "verseRef": "Provérbios 4:19",
+    "passageText": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tropeçar"
+      },
+      {
+        "id": "b",
+        "text": "vão"
+      },
+      {
+        "id": "c",
+        "text": "sabem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não sabem eles em que vão tropeçar",
+    "feedbackCorrect": "Sem enxergar o caminho, a queda vem sem a pessoa perceber onde.",
+    "feedbackWrong": {
+      "b": "Esse verbo só acompanha a consequência; não a nomeia.",
+      "c": "Saber é justamente o que falta a quem anda no escuro."
+    },
+    "hint": "Olhe o fim do versículo, o que acontece no escuro.",
+    "learningObjective": "Reconhecer a consequência de andar na escuridão.",
+    "evidence": [
+      "Provérbios 4:19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-02-dois-caminhos-03",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Provérbios 4:19 se relaciona com Provérbios 4:18?",
+    "prompt": "Como Provérbios 4:19 se relaciona com Provérbios 4:18?",
+    "cue": "Como Provérbios 4:19 se relaciona com Provérbios 4:18?",
+    "verseRef": "Provérbios 4:18–19",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito. O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diz que o justo também termina no escuro"
+      },
+      {
+        "id": "b",
+        "text": "Contrasta luz crescente com andar sem rumo"
+      },
+      {
+        "id": "c",
+        "text": "Mostra os dois caminhos como iguais"
+      },
+      {
+        "id": "d",
+        "text": "Troca a aurora pela escuridão no mesmo caminho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+    "feedbackCorrect": "Um versículo clareia; o outro escurece: são rumos opostos.",
+    "feedbackWrong": {
+      "a": "O escuro é só do caminho ímpio; o justo chega ao dia perfeito.",
+      "c": "Luz e escuridão não são iguais: marcam destinos diferentes.",
+      "d": "Não há troca: cada caminho tem sua própria imagem."
+    },
+    "hint": "Compare a imagem de cada versículo.",
+    "learningObjective": "Relacionar os dois caminhos de Provérbios 4.",
+    "evidence": [
+      "Provérbios 4:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-02-dois-caminhos-04",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os dois caminhos em Provérbios 4:18–19?",
+    "prompt": "Como se encadeiam os dois caminhos em Provérbios 4:18–19?",
+    "cue": "Como se encadeiam os dois caminhos em Provérbios 4:18–19?",
+    "verseRef": "Provérbios 4:18–19",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito. O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O justo anda em luz que cresce"
+      },
+      {
+        "id": "b",
+        "text": "O ímpio anda sem enxergar o rumo"
+      },
+      {
+        "id": "c",
+        "text": "Sem ver, o ímpio acaba tropeçando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não sabem eles em que vão tropeçar",
+    "feedbackCorrect": "Primeiro os dois rumos; no fim, a consequência de andar no escuro.",
+    "feedbackWrong": {
+      "default": "Comece pela senda justa, em 4:18; o tropeço fecha 4:19."
+    },
+    "hint": "O tropeço é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento dos dois caminhos.",
+    "evidence": [
+      "Provérbios 4:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-02-dois-caminhos-05",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Provérbios 4:18, que palavra mostra a luz aumentando no caminho?",
+    "prompt": "Em Provérbios 4:18, que palavra mostra a luz aumentando no caminho?",
+    "cue": "Em Provérbios 4:18, que palavra mostra a luz aumentando no caminho?",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "template": "Mas a senda dos justos é como a luz da aurora, que vai ___ mais até se tornar um dia perfeito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apagando"
+      },
+      {
+        "id": "b",
+        "text": "parando"
+      },
+      {
+        "id": "c",
+        "text": "brilhando"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+    "feedbackCorrect": "A luz do caminho justo não fica parada: aumenta até o dia pleno.",
+    "feedbackWrong": {
+      "a": "Apagar é o contrário do movimento descrito no texto.",
+      "b": "O texto mostra avanço contínuo, não uma luz parada."
+    },
+    "hint": "Veja o verbo ligado à luz no meio do versículo.",
+    "learningObjective": "Compreender o crescimento gradual da luz.",
+    "evidence": [
+      "Provérbios 4:18"
+    ]
+  },
+  {
+    "id": "proverbios-cam-proverbios-sabedoria-02-dois-caminhos-06",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Provérbios 4:19 a Salmos 1:6?",
+    "prompt": "O que liga Provérbios 4:19 a Salmos 1:6?",
+    "cue": "O que liga Provérbios 4:19 a Salmos 1:6?",
+    "verseRef": "Provérbios 4:19",
+    "passageText": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "passageA": {
+      "ref": "Provérbios 4:19",
+      "text": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar."
+    },
+    "passageB": {
+      "ref": "Salmos 1:6",
+      "text": "Pois o Senhor conhece o caminho dos justos, mas o caminho dos ímpios será destruído."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Todo caminho leva a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus conhece os caminhos"
+      },
+      {
+        "id": "c",
+        "text": "O ímpio nunca tropeça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+    "feedbackCorrect": "Nos dois textos, Deus conhece o rumo do justo e o do ímpio.",
+    "feedbackWrong": {
+      "a": "Salmos 1:6 separa os caminhos; eles não levam ao mesmo lugar.",
+      "c": "Provérbios 4:19 diz justamente que o ímpio tropeça."
+    },
+    "hint": "Veja o que o Senhor faz com os caminhos.",
+    "learningObjective": "Relacionar os dois caminhos em Provérbios e Salmos.",
+    "evidence": [
+      "Provérbios 4:19",
+      "Salmos 1:6"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-02-dois-caminhos-01",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Provérbios 4:18–19 garante que o justo nunca enfrentará noite nem dificuldade no caminho.",
+    "prompt": "Provérbios 4:18–19 garante que o justo nunca enfrentará noite nem dificuldade no caminho.",
+    "cue": "Provérbios 4:18–19 garante que o justo nunca enfrentará noite nem dificuldade no caminho.",
+    "verseRef": "Provérbios 4:18–19",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito. O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+    "feedbackCorrect": "O texto fala de direção e luz crescente, não de vida sem luta.",
+    "feedbackWrong": {
+      "true": "A promessa aqui é de rumo claro, não de caminho sem dificuldade."
+    },
+    "hint": "Separe a imagem do texto de uma garantia automática.",
+    "learningObjective": "Interpretar a imagem sem transformar conselho em garantia.",
+    "evidence": [
+      "Provérbios 4:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-02-dois-caminhos-02",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Provérbios 4:18, toque o trecho que mostra a luz crescendo aos poucos.",
+    "prompt": "Em Provérbios 4:18, toque o trecho que mostra a luz crescendo aos poucos.",
+    "cue": "Em Provérbios 4:18, toque o trecho que mostra a luz crescendo aos poucos.",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dia perfeito"
+      },
+      {
+        "id": "b",
+        "text": "vai brilhando mais"
+      },
+      {
+        "id": "c",
+        "text": "senda dos justos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que vai brilhando mais até se tornar um dia perfeito",
+    "feedbackCorrect": "O crescimento é gradual: a luz aumenta até o dia ficar perfeito.",
+    "feedbackWrong": {
+      "a": "Dia perfeito é a chegada, não o processo de clarear.",
+      "c": "Isso nomeia quem anda no caminho, não o crescimento da luz."
+    },
+    "hint": "Procure o movimento, não a chegada.",
+    "learningObjective": "Sustentar com o texto o crescimento gradual da luz.",
+    "evidence": [
+      "Provérbios 4:18"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-02-dois-caminhos-03",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Provérbios 4:18–19 sustenta sobre os dois caminhos?",
+    "prompt": "Que leitura Provérbios 4:18–19 sustenta sobre os dois caminhos?",
+    "cue": "Que leitura Provérbios 4:18–19 sustenta sobre os dois caminhos?",
+    "verseRef": "Provérbios 4:18–19",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito. O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar com Deus clareia o rumo da vida"
+      },
+      {
+        "id": "b",
+        "text": "O ímpio tropeça por azar, sem escolha"
+      },
+      {
+        "id": "c",
+        "text": "Os dois caminhos levam ao mesmo fim"
+      },
+      {
+        "id": "d",
+        "text": "A luz prova sucesso material do justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a senda dos justos é como a luz da aurora",
+    "feedbackCorrect": "A diferença está no rumo: clareza crescente ou escuridão cega.",
+    "feedbackWrong": {
+      "b": "Tropeçar vem de andar no escuro: é fruto do caminho escolhido.",
+      "c": "Luz e escuridão apontam fins opostos, não o mesmo destino.",
+      "d": "A luz fala de enxergar o caminho, não de riqueza garantida."
+    },
+    "hint": "Compare a direção de cada caminho.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre os caminhos.",
+    "evidence": [
+      "Provérbios 4:18–19"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-02-dois-caminhos-04",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Provérbios 4:18 na Bíblia?",
+    "prompt": "Qual sequência revela o sentido de Provérbios 4:18 na Bíblia?",
+    "cue": "Qual sequência revela o sentido de Provérbios 4:18 na Bíblia?",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O temor do Senhor abre o caminho sábio"
+      },
+      {
+        "id": "b",
+        "text": "A senda justa clareia mais e mais"
+      },
+      {
+        "id": "c",
+        "text": "Jesus se apresenta como luz do mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a senda dos justos é como a luz da aurora",
+    "feedbackCorrect": "Do temor que abre o caminho à luz plena, que é o próprio Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo temor de Provérbios 1:7; Jesus como luz vem no fim."
+    },
+    "hint": "Siga a história: Provérbios, depois os Evangelhos.",
+    "learningObjective": "Ver a luz do caminho como fio que chega a Jesus.",
+    "evidence": [
+      "Provérbios 4:18",
+      "Provérbios 1:7",
+      "João 8:12"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-02-dois-caminhos-05",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Provérbios 4:19, que palavra nomeia quem anda na escuridão?",
+    "prompt": "Em Provérbios 4:19, que palavra nomeia quem anda na escuridão?",
+    "cue": "Em Provérbios 4:19, que palavra nomeia quem anda na escuridão?",
+    "verseRef": "Provérbios 4:19",
+    "passageText": "O caminho dos ímpios é como a escuridão; não sabem eles em que vão tropeçar.",
+    "template": "O caminho dos ___ é como a escuridão; não sabem eles em que vão tropeçar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sábios"
+      },
+      {
+        "id": "b",
+        "text": "ímpios"
+      },
+      {
+        "id": "c",
+        "text": "justos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O caminho dos ímpios é como a escuridão",
+    "feedbackCorrect": "Quem anda longe de Deus é quem caminha sem enxergar o rumo.",
+    "feedbackWrong": {
+      "a": "O sábio ouve e cresce (1:5); não é quem anda no escuro.",
+      "c": "Os justos são os da senda clara, no versículo anterior."
+    },
+    "hint": "Veja de quem é o caminho logo no começo.",
+    "learningObjective": "Lembrar quem anda na escuridão em Provérbios 4:19.",
+    "evidence": [
+      "Provérbios 4:19"
+    ]
+  },
+  {
+    "id": "proverbios-pro-proverbios-sabedoria-02-dois-caminhos-06",
+    "trail": "proverbios",
+    "section": "proverbios-sabedoria-02-dois-caminhos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Provérbios 4:18 a João 8:12?",
+    "prompt": "O que liga Provérbios 4:18 a João 8:12?",
+    "cue": "O que liga Provérbios 4:18 a João 8:12?",
+    "verseRef": "Provérbios 4:18",
+    "passageText": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito.",
+    "passageA": {
+      "ref": "Provérbios 4:18",
+      "text": "Mas a senda dos justos é como a luz da aurora, que vai brilhando mais até se tornar um dia perfeito."
+    },
+    "passageB": {
+      "ref": "João 8:12",
+      "text": "Jesus lhes falou novamente, dizendo: Eu sou a luz do mundo; quem me segue não andará nas trevas; antes, terá a luz da vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus é a luz"
+      },
+      {
+        "id": "b",
+        "text": "A escuridão vence a luz"
+      },
+      {
+        "id": "c",
+        "text": "A luz dispensa Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a senda dos justos é como a luz da aurora",
+    "feedbackCorrect": "Jesus se diz a luz do mundo: quem o segue não anda na escuridão.",
+    "feedbackWrong": {
+      "b": "Quem segue Jesus, diz ele, não andará na escuridão.",
+      "c": "Para João, a luz tem nome: é o próprio Jesus."
+    },
+    "hint": "Veja como Jesus se apresenta nesse texto.",
+    "learningObjective": "Ligar a luz do caminho justo a Jesus, a luz do mundo.",
+    "evidence": [
+      "Provérbios 4:18",
+      "João 8:12"
+    ]
+  }
+]

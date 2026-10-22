@@ -1,0 +1,700 @@
+{
+ "study": {
+  "passageRef": "Mateus 6:9–13",
+  "passages": [
+   {
+    "ref": "Mateus 6:9–13"
+   },
+   {
+    "ref": "Mateus 6:5–8"
+   }
+  ],
+  "context": "Entre a esmola e o jejum, Jesus ensina a orar. Nada de palco nem de muitas palavras para impressionar: o Pai já sabe do que precisamos. A oração começa no nome, no Reino e na vontade dele.",
+  "keyword": "Pai",
+  "keywordGloss": "Deus tratado como Pai que está nos céus, conhece as necessidades e vê em secreto.",
+  "focusQuestion": "Suas orações buscam primeiro o nome, o Reino e a vontade do Pai?",
+  "reflectionPrompts": [
+   "Primeiro o nome do Pai",
+   "Pão de cada dia",
+   "Perdoar como perdoados"
+  ],
+  "facts": [
+   {
+    "text": "Hipócritas oram em pé para serem vistos pelos homens.",
+    "evidenceRef": "Mateus 6:5",
+    "evidenceSpan": "para serem vistos pelos homens"
+   },
+   {
+    "text": "Orar é entrar no quarto e falar ao Pai em secreto.",
+    "evidenceRef": "Mateus 6:6",
+    "evidenceSpan": "entre no seu quarto, feche a porta"
+   },
+   {
+    "text": "O Pai sabe das necessidades antes de pedirmos a ele.",
+    "evidenceRef": "Mateus 6:8",
+    "evidenceSpan": "o vosso Pai sabe do que tendes necessidade"
+   },
+   {
+    "text": "A oração começa com o nome de Deus santificado.",
+    "evidenceRef": "Mateus 6:9",
+    "evidenceSpan": "santificado seja o teu nome"
+   },
+   {
+    "text": "Perdoar os homens abre caminho ao perdão do Pai.",
+    "evidenceRef": "Mateus 6:14",
+    "evidenceSpan": "também o Pai celestial perdoará vocês"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Pai nosso",
+    "gloss": "O Deus dos céus tratado como Pai dos que oram em Jesus."
+   },
+   {
+    "term": "reino",
+    "gloss": "Governo de Deus pedido antes de qualquer necessidade pessoal."
+   },
+   {
+    "term": "dívidas",
+    "gloss": "Ofensas contra Deus, perdoadas como perdoamos aos outros."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Oração sem palco e sem repetição vazia",
+    "evidenceRef": "Mateus 6:5"
+   },
+   {
+    "label": "Pai, nome e Reino em primeiro lugar",
+    "evidenceRef": "Mateus 6:9"
+   },
+   {
+    "label": "Pão, perdão e livramento pedidos",
+    "evidenceRef": "Mateus 6:11"
+   },
+   {
+    "label": "Perdão ligado a perdoar os outros",
+    "evidenceRef": "Mateus 6:14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Primeiro nome, Reino e vontade do Pai; depois pão, perdão e proteção.",
+    "marker": "Portanto",
+    "evidenceRef": "Mateus 6:9"
+   },
+   {
+    "kind": "causa",
+    "text": "Não usar vãs repetições porque o Pai já sabe do que precisamos.",
+    "marker": "pois",
+    "evidenceRef": "Mateus 6:8"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Lucas 11:2",
+    "bridge": "Jesus ensina a orar"
+   },
+   {
+    "ref": "Romanos 8:15",
+    "bridge": "Filhos clamam ao Pai"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Muitas palavras e repetições fazem Deus ouvir com mais atenção.",
+    "why": "Jesus diz que o Pai sabe antes de pedirmos; gentios é que pensam assim (6:7–8)."
+   },
+   {
+    "text": "Pai Nosso é fórmula automática que funciona sem coração envolvido.",
+    "why": "É modelo de oração de filhos: começa no Pai e termina perdoando pessoas (6:9–14)."
+   },
+   {
+    "text": "Pedir o pão de cada dia é falta de fé no Deus que já sabe.",
+    "why": "O mesmo Jesus que afirma 6:8 manda pedir o pão de hoje em 6:11."
+   }
+  ],
+  "centralInsight": "O Pai conhece necessidades antes das palavras",
+  "anchorQuestion": "Com o que a oração ensinada por Jesus começa em Mateus 6:9–10?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 6:9, Jesus ensina a começar a oração tratando Deus como Pai nosso",
+   "verseRef": "Mateus 6:9",
+   "correctOptionId": "true",
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "A primeira palavra do modelo de Jesus coloca Deus como Pai dos que oram.",
+   "feedbackWrong": {
+    "false": "A oração abre com Pai nosso, que estás nos céus."
+   },
+   "hint": "Olhe as duas primeiras palavras do modelo.",
+   "learningObjective": "Observar o começo do Pai Nosso.",
+   "evidence": [
+    "Mateus 6:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:9, toque como Jesus ensina a chamar a Deus na oração.",
+   "verseRef": "Mateus 6:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pai nosso"
+    },
+    {
+     "id": "b",
+     "text": "teu nome"
+    },
+    {
+     "id": "c",
+     "text": "nos céus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "Antes de qualquer pedido, Deus é Pai: essa é a porta da oração de Jesus.",
+   "feedbackWrong": {
+    "b": "Isso é honrado na oração, não o nome pelo qual chamamos.",
+    "c": "Isso localiza o Pai, não é como o chamamos na abertura."
+   },
+   "hint": "Procure as primeiras palavras do modelo de oração.",
+   "learningObjective": "Identificar o tratamento dado a Deus em 6:9.",
+   "evidence": [
+    "Mateus 6:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 6:11, o que pedimos a Deus para hoje na oração?",
+   "verseRef": "Mateus 6:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "O pão de cada dia para hoje"
+    },
+    {
+     "id": "b",
+     "text": "Riqueza acumulada para anos"
+    },
+    {
+     "id": "c",
+     "text": "Fama entre todas as pessoas"
+    },
+    {
+     "id": "d",
+     "text": "Vitória sobre todos os inimigos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia",
+   "feedbackCorrect": "Depois do Reino do Pai, o pão de hoje: dependência diária e simples.",
+   "feedbackWrong": {
+    "b": "Acúmulo ansioso é tratado por Jesus em 6:19–34.",
+    "c": "Fama é o alvo dos hipócritas, não dos filhos que oram.",
+    "d": "A oração pede pão, perdão e livramento, não vingança."
+   },
+   "hint": "Veja o primeiro pedido por nós no modelo.",
+   "learningObjective": "Observar o pedido do pão em 6:11.",
+   "evidence": [
+    "Mateus 6:10–11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 6:10 na ordem do texto.",
+   "verseRef": "Mateus 6:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Venha o teu reino"
+    },
+    {
+     "id": "b",
+     "text": "que a tua vontade seja feita"
+    },
+    {
+     "id": "c",
+     "text": "assim na terra como no céu"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Venha o teu reino",
+   "feedbackCorrect": "Reino e vontade do Pai na terra como no céu vêm antes dos nossos pedidos.",
+   "feedbackWrong": {
+    "default": "Comece pelo Reino que deve vir; a terra é o destino."
+   },
+   "hint": "O céu é o modelo citado no fim do versículo.",
+   "learningObjective": "Reconhecer a sequência de Mateus 6:10.",
+   "evidence": [
+    "Mateus 6:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 6:9, o que deve ser santificado na oração ao Pai?",
+   "verseRef": "Mateus 6:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "nome"
+    },
+    {
+     "id": "b",
+     "text": "reino"
+    },
+    {
+     "id": "c",
+     "text": "pão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "santificado seja o teu nome",
+   "feedbackCorrect": "Antes do nosso pão, o nome do Pai é o primeiro desejo de quem ora.",
+   "feedbackWrong": {
+    "b": "O reino é pedido para vir no versículo seguinte.",
+    "c": "O pão de cada dia só aparece em 6:11."
+   },
+   "hint": "É o primeiro desejo expresso no modelo.",
+   "learningObjective": "Lembrar o primeiro pedido do Pai Nosso.",
+   "evidence": [
+    "Mateus 6:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 6:9 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 6:9–10",
+   "passageA": {
+    "ref": "Mateus 6:9"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jesus ensina filhos a orar: primeiro o Pai, o nome dele, o Reino e a vontade dele."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Primeiro o Pai e o Reino"
+    },
+    {
+     "id": "b",
+     "text": "Primeiro os meus desejos"
+    },
+    {
+     "id": "c",
+     "text": "Palavras compram a atenção"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "A ordem do Pai Nosso educa o coração antes de apresentar necessidades.",
+   "feedbackWrong": {
+    "b": "Os pedidos por nós só vêm depois, em 6:11–13.",
+    "c": "O Pai já sabe; não é a quantidade que o convence (6:8)."
+   },
+   "hint": "Veja o que ocupa os versículos 9 e 10.",
+   "learningObjective": "Ligar o Pai Nosso à prioridade do Pai.",
+   "evidence": [
+    "Mateus 6:9–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 6:7, muitas repetições fazem Deus ouvir melhor quem ora a ele",
+   "verseRef": "Mateus 6:7",
+   "correctOptionId": "false",
+   "evidenceSpan": "não empreguem vãs repetições",
+   "feedbackCorrect": "Jesus corta a ideia de convencer Deus pelo volume de palavras repetidas.",
+   "feedbackWrong": {
+    "true": "Ele chama isso de vãs repetições, costume dos gentios."
+   },
+   "hint": "Veja o adjetivo que Jesus dá às repetições.",
+   "learningObjective": "Compreender a crítica às repetições vazias.",
+   "evidence": [
+    "Mateus 6:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:10, toque o que Jesus manda pedir que venha à terra.",
+   "verseRef": "Mateus 6:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "teu reino"
+    },
+    {
+     "id": "b",
+     "text": "tua vontade"
+    },
+    {
+     "id": "c",
+     "text": "no céu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Venha o teu reino",
+   "feedbackCorrect": "Antes do pão nosso, o Reino dele: a ordem dos pedidos forma o coração.",
+   "feedbackWrong": {
+    "b": "Isso é o segundo pedido, sobre a vontade ser feita.",
+    "c": "Isso é o modelo de onde a vontade já é feita."
+   },
+   "hint": "Procure o primeiro pedido do versículo 10.",
+   "learningObjective": "Reconhecer a prioridade do Reino na oração.",
+   "evidence": [
+    "Mateus 6:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 6:8 sustenta o modo de orar de Mateus 6:6?",
+   "verseRef": "Mateus 6:7–8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus só ouve quem repete sem parar"
+    },
+    {
+     "id": "b",
+     "text": "O Pai já sabe, então orar é confiar nele"
+    },
+    {
+     "id": "c",
+     "text": "Orar em secreto serve para impressionar mais"
+    },
+    {
+     "id": "d",
+     "text": "Necessidades devem ficar fora da oração toda"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o vosso Pai sabe do que tendes necessidade",
+   "feedbackCorrect": "Quem sabe que o Pai já sabe pode orar simples, em secreto e com confiança.",
+   "feedbackWrong": {
+    "a": "Repetição vazia é justamente criticada em 6:7.",
+    "c": "Secreto é o oposto de impressionar pessoas (6:5–6).",
+    "d": "O próprio modelo pede pão, perdão e livramento."
+   },
+   "hint": "Junte o Pai que sabe com o quarto fechado.",
+   "learningObjective": "Relacionar confiança no Pai e oração secreta.",
+   "evidence": [
+    "Mateus 6:7–8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia o Pai Nosso de Mateus 6:9 a 6:11?",
+   "verseRef": "Mateus 6:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nome do Pai santificado"
+    },
+    {
+     "id": "b",
+     "text": "Reino e vontade do Pai"
+    },
+    {
+     "id": "c",
+     "text": "Pão nosso de cada dia"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "santificado seja o teu nome",
+   "feedbackCorrect": "Deus primeiro em nome, Reino e vontade; depois, as nossas necessidades diárias.",
+   "feedbackWrong": {
+    "default": "Comece pelo nome do Pai, em 6:9."
+   },
+   "hint": "O pão nosso só aparece em 6:11.",
+   "learningObjective": "Compreender a ordem dos pedidos do Pai Nosso.",
+   "evidence": [
+    "Mateus 6:9–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 6:10, o que deve ser feita na terra como no céu?",
+   "verseRef": "Mateus 6:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "vontade"
+    },
+    {
+     "id": "b",
+     "text": "festa"
+    },
+    {
+     "id": "c",
+     "text": "lei"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que a tua vontade seja feita",
+   "feedbackCorrect": "Orar é alinhar a terra ao céu, não tentar dobrar Deus aos nossos planos.",
+   "feedbackWrong": {
+    "b": "Festa não é o pedido desse versículo do modelo.",
+    "c": "A palavra é sobre o querer do Pai ser realizado."
+   },
+   "hint": "Pense no que Deus deseja ver acontecendo.",
+   "learningObjective": "Lembrar o segundo grande pedido do modelo.",
+   "evidence": [
+    "Mateus 6:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 6:9 a Lucas 11:2?",
+   "verseRef": "Mateus 6:9",
+   "passageA": {
+    "ref": "Mateus 6:9"
+   },
+   "passageB": {
+    "ref": "Lucas 11:2"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus ensina a orar"
+    },
+    {
+     "id": "b",
+     "text": "Cada um inventa sua fórmula"
+    },
+    {
+     "id": "c",
+     "text": "Orar dispensa pedir pão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "Nos dois Evangelhos, os discípulos aprendem a orar com o próprio Jesus.",
+   "feedbackWrong": {
+    "b": "O modelo é presente de Jesus, não invenção solta.",
+    "c": "O pão de cada dia faz parte do modelo ensinado."
+   },
+   "hint": "Veja quem ensina a oração nos dois textos.",
+   "learningObjective": "Relacionar o Pai Nosso nos Evangelhos.",
+   "evidence": [
+    "Mateus 6:9",
+    "Lucas 11:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 6:8 mostra que orar não serve para informar a Deus algo que ele ignora",
+   "verseRef": "Mateus 6:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "antes mesmo de lho pedirdes",
+   "feedbackCorrect": "Oramos como filhos que confiam, não como quem atualiza um Deus desinformado.",
+   "feedbackWrong": {
+    "false": "O Pai sabe antes mesmo de pedirmos, diz Jesus."
+   },
+   "hint": "Veja o que o Pai sabe antes do pedido.",
+   "learningObjective": "Interpretar a oração como confiança filial.",
+   "evidence": [
+    "Mateus 6:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:12, toque o que pedimos a Deus sobre nossas ofensas a ele.",
+   "verseRef": "Mateus 6:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "nossas dívidas"
+    },
+    {
+     "id": "b",
+     "text": "assim como nós"
+    },
+    {
+     "id": "c",
+     "text": "nossos devedores"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "perdoa-nos as nossas dívidas",
+   "feedbackCorrect": "Quem ora pede perdão na mesma medida em que perdoa quem lhe deve.",
+   "feedbackWrong": {
+    "b": "Isso é como perdoamos, não o que pedimos por nós.",
+    "c": "Eles são perdoados por nós, não o que Deus perdoa em nós."
+   },
+   "hint": "Procure o que Deus é chamado a perdoar em nós.",
+   "learningObjective": "Sustentar no texto o pedido de perdão.",
+   "evidence": [
+    "Mateus 6:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o Pai Nosso de Mateus 6:9–13 sustenta sobre orar ao Pai?",
+   "verseRef": "Mateus 6:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "É convencer Deus com muitas palavras repetidas"
+    },
+    {
+     "id": "b",
+     "text": "É buscar primeiro o Pai e confiar nas necessidades"
+    },
+    {
+     "id": "c",
+     "text": "É pedir tudo para si antes de falar com Deus"
+    },
+    {
+     "id": "d",
+     "text": "É fórmula que dispensa perdoar as outras pessoas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Venha o teu reino",
+   "feedbackCorrect": "Nome, Reino e vontade primeiro; pão, perdão e livramento com confiança de filhos.",
+   "feedbackWrong": {
+    "a": "Vãs repetições são criticadas por Jesus em 6:7.",
+    "c": "Os pedidos do Pai ocupam o começo do modelo.",
+    "d": "Perdoar os devedores está dentro da própria oração (6:12)."
+   },
+   "hint": "Siga a ordem dos pedidos de 6:9 até 6:13.",
+   "learningObjective": "Escolher a interpretação sustentada pelo Pai Nosso.",
+   "evidence": [
+    "Mateus 6:9–10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da oração dos filhos?",
+   "verseRef": "Mateus 6:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Discípulos chamam Deus de Pai"
+    },
+    {
+     "id": "b",
+     "text": "Eles pedem o Reino e a vontade dele"
+    },
+    {
+     "id": "c",
+     "text": "Eles perdoam como foram perdoados"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "De Pai a Reino e a perdão praticado: a oração forma uma vida inteira.",
+   "feedbackWrong": {
+    "default": "Comece pelo tratamento de Pai, em 6:9."
+   },
+   "hint": "O perdão praticado fecha o modelo em 6:12–14.",
+   "learningObjective": "Ver o Pai Nosso como formação de filhos.",
+   "evidence": [
+    "Mateus 6:9",
+    "Mateus 6:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 6:13, em que Jesus pede para não cairmos com a ajuda do Pai?",
+   "verseRef": "Mateus 6:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "tentação"
+    },
+    {
+     "id": "b",
+     "text": "demora"
+    },
+    {
+     "id": "c",
+     "text": "tristeza"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não nos deixes cair em tentação",
+   "feedbackCorrect": "A oração termina pedindo proteção real contra o mal que ronda os filhos.",
+   "feedbackWrong": {
+    "b": "Demora não é o perigo nomeado no fim do modelo.",
+    "c": "Tristeza não é a palavra usada nessa petição final."
+   },
+   "hint": "Pense no perigo espiritual citado antes do livramento.",
+   "learningObjective": "Lembrar o pedido de proteção do Pai Nosso.",
+   "evidence": [
+    "Mateus 6:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 6:9 a Romanos 8:15?",
+   "verseRef": "Mateus 6:9–10",
+   "passageA": {
+    "ref": "Mateus 6:9"
+   },
+   "passageB": {
+    "ref": "Romanos 8:15"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Filhos clamam ao Pai"
+    },
+    {
+     "id": "b",
+     "text": "Escravos temem um juiz"
+    },
+    {
+     "id": "c",
+     "text": "Orar é falar sozinho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "Paulo chama de espírito de adoção o que Jesus ensina: clamar ao Pai como filhos.",
+   "feedbackWrong": {
+    "b": "O espírito dado é de filhos, não de escravidão e medo.",
+    "c": "Quem ora fala com um Pai real que ouve em secreto."
+   },
+   "hint": "Veja como os filhos chamam Deus em Romanos.",
+   "learningObjective": "Ligar o Pai Nosso à filiação em Cristo.",
+   "evidence": [
+    "Mateus 6:9–10",
+    "Romanos 8:15"
+   ]
+  }
+ ]
+}

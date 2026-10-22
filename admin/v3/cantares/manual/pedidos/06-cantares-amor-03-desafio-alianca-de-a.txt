@@ -1,0 +1,136 @@
+Escreva a cena "cantares-amor-03-desafio-alianca-de-a" da trilha "cantares" (Cantares).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "cantares",
+  "title": "Cantares",
+  "description": "Amor fiel — poesia da aliança e do desejo santo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A busca",
+ "mission": {
+  "slug": "cantares-amor-03-desafio-alianca-de-a",
+  "title": "Desafio: Aliança de amor",
+  "type": "boss",
+  "intro": "Fidelidade e celebração do amor.",
+  "hookRef": "Referência: Cantares",
+  "hookNote": "Fidelidade e celebração do amor.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre aliança?"
+ },
+ "v2": {
+  "passageRef": "Referência: Cantares",
+  "context": "Fidelidade e celebração do amor.",
+  "keyword": "Aliança",
+  "verseRefs": [
+   "Cantares 8:7"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "ct-03-beijos",
+   "title": "Melhor do que o vinho",
+   "centralInsight": "O amor deseja a presença",
+   "ref": "Cantares 1:1–7"
+  },
+  {
+   "slug": "ct-04-pertence",
+   "title": "Meu, e eu dele",
+   "centralInsight": "Amor de aliança é pertença mútua",
+   "ref": "Cantares 2:13–17"
+  },
+  {
+   "slug": "ct-05-busca",
+   "title": "Busquei o que a alma ama",
+   "centralInsight": "Quem ama procura até achar",
+   "ref": "Cantares 3:1–7"
+  }
+ ],
+ "ranges": [
+  "Cantares 1:1–7",
+  "Cantares 2:13–17",
+  "Cantares 3:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Cantares 1:1",
+   "text": "Cântico dos Cânticos de Salomão."
+  },
+  {
+   "ref": "Cantares 1:2",
+   "text": "Beije-me com os beijos da tua boca, pois o teu amor é melhor do que o vinho."
+  },
+  {
+   "ref": "Cantares 1:3",
+   "text": "Os teus perfumes têm um aroma agradável; assim como o perfume derramado é o teu nome; por isso, as jovens te amam."
+  },
+  {
+   "ref": "Cantares 1:4",
+   "text": "Leva-me contigo; apressemo-nos. O rei me trouxe para suas recâmaras; em você nos alegraremos e nos regozijaremos; lembraremos do seu amor mais do que do vinho; não é sem razão que os justos te amam."
+  },
+  {
+   "ref": "Cantares 1:5",
+   "text": "Sou morena e formosa, ó filhas de Jerusalém, como as tendas de Quedar, como as cortinas de Salomão."
+  },
+  {
+   "ref": "Cantares 1:6",
+   "text": "Não olhem para mim por causa da minha cor morena, pois o sol me queimou. Os filhos da minha mãe se indignaram contra mim e me designaram para cuidar das vinhas; a minha própria vinha, eu não guardei."
+  },
+  {
+   "ref": "Cantares 1:7",
+   "text": "Diga-me, ó amado da minha alma: onde apascentas o teu rebanho? onde o fazes repousar ao meio-dia? Para que eu não ande vagando junto aos rebanhos dos teus companheiros?"
+  },
+  {
+   "ref": "Cantares 2:13",
+   "text": "A figueira começou a produzir os seus figos, e as videiras em flor exalam seu perfume: levanta-te, minha amada, minha formosa, e vem."
+  },
+  {
+   "ref": "Cantares 2:14",
+   "text": "Pomba minha, que andas pelas fendas das rochas, no esconderijo das rochas íngremes, mostra-me o teu rosto, faze-me ouvir a tua voz, porque a tua voz é doce, e o teu rosto é amável."
+  },
+  {
+   "ref": "Cantares 2:15",
+   "text": "Apanhem as raposas, as raposinhas que devastam os vinhedos, pois as nossas vinhas estão em flor."
+  },
+  {
+   "ref": "Cantares 2:16",
+   "text": "Meu amado é meu, e eu sou dele; ele apascenta o seu rebanho entre os lírios."
+  },
+  {
+   "ref": "Cantares 2:17",
+   "text": "Até que o dia refresque e fujam as sombras, volta, meu amado, faze-te semelhante ao gamo ou ao filho das gazelas sobre os montes escabrosos"
+  },
+  {
+   "ref": "Cantares 3:1",
+   "text": "Na noite, busquei em meu leito aquele a quem minha alma ama; busquei-o, mas não o encontrei"
+  },
+  {
+   "ref": "Cantares 3:2",
+   "text": "Levantar-me-ei, pois, e rodearei a cidade; pelas ruas e pelas praças buscarei o amado da minha alma. Busquei-o, mas não o encontrei"
+  },
+  {
+   "ref": "Cantares 3:3",
+   "text": "Encontraram-me os guardas que rondavam pela cidade. Então, perguntei-lhes: Vistes o amado da minha alma?"
+  },
+  {
+   "ref": "Cantares 3:4",
+   "text": "Afastei-me um pouco deles, e logo encontrei o amado da minha alma; agarrei-me a ele e não o deixei, até que o fiz entrar na casa de minha mãe, na câmara daquela que me gerou"
+  },
+  {
+   "ref": "Cantares 3:5",
+   "text": "Conjuro-vos, ó filhas de Jerusalém, pelas gazelas e cervas do campo, que não acordeis nem desperteis o amor, até que este o queira"
+  },
+  {
+   "ref": "Cantares 3:6",
+   "text": "Quem é esta que sobe do deserto, como colunas de fumo, perfumada de mirra, e de incenso, e de toda sorte de pós aromáticos?"
+  },
+  {
+   "ref": "Cantares 3:7",
+   "text": "Eis a liteira de Salomão; ao seu redor estão sessenta valentes, dos valentes de Israel"
+  }
+ ]
+}
+</cena>

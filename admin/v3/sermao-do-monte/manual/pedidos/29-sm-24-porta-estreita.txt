@@ -1,0 +1,71 @@
+Escreva a cena "sm-24-porta-estreita" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "Decisões do discípulo",
+ "mission": {
+  "slug": "sm-24-porta-estreita",
+  "title": "A porta estreita",
+  "type": "lesson",
+  "intro": "Jesus encerra o Sermão exigindo uma decisão. A porta estreita e o caminho apertado não prometem facilidade, mas conduzem à vida. O caminho largo parece amplo, porém termina em perdição.",
+  "hookRef": "Mateus 7:13–14",
+  "hookNote": "Depois de ensinar o caminho do Reino, Jesus exige resposta. A porta estreita não é elitismo humano ou salvação por desempenho; é o chamado…",
+  "centralInsight": "Nem todo caminho popular conduz à vida",
+  "objective": "Estou escolhendo o caminho de Jesus mesmo quando ele não é o mais fácil ou popular?"
+ },
+ "v2": {
+  "passageRef": "Mateus 7:13–14",
+  "context": "Depois de ensinar o caminho do Reino, Jesus exige resposta. A porta estreita não é elitismo humano ou salvação por desempenho; é o chamado a entrar pelo caminho de Cristo, que confronta autonomia e pecado. O caminho largo acomoda desejos e multidões, mas sua aparência fácil não muda seu fim. O discípulo não escolhe pela popularidade, e sim pela vida que Jesus oferece.",
+  "keyword": "Estreita",
+  "verseRefs": [
+   "Mateus 7:13–14"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 7:10–17"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 7:10",
+   "text": "E, se lhe pedir um peixe, lhe dará uma serpente?"
+  },
+  {
+   "ref": "Mateus 7:11",
+   "text": "Se vocês, apesar de serem maus, sabem oferecer boas dádivas a seus filhos, quanto mais o Pai de vocês, que está nos céus, dará boas coisas aos que lhe pedirem?"
+  },
+  {
+   "ref": "Mateus 7:12",
+   "text": "Assim, tudo o que vocês desejam que os outros façam a vocês, assim façam também a eles; porque esta é a Lei e os Profetas."
+  },
+  {
+   "ref": "Mateus 7:13",
+   "text": "Entrem pela porta estreita; pois ampla é a porta e espaçoso é o caminho que leva à perdição, e muitos são os que entram por ele."
+  },
+  {
+   "ref": "Mateus 7:14",
+   "text": "Porque estreita é a porta e apertado é o caminho que conduz à vida, e poucos são os que o acertam."
+  },
+  {
+   "ref": "Mateus 7:15",
+   "text": "Cuidado com os falsos profetas, que se apresentam a vocês disfarçados de ovelhas, mas, interiormente, são lobos devoradores."
+  },
+  {
+   "ref": "Mateus 7:16",
+   "text": "Pelos seus frutos vocês os conhecerão. Por acaso se colhem uvas dos espinheiros ou figos dos abrolhos?"
+  },
+  {
+   "ref": "Mateus 7:17",
+   "text": "Assim, toda árvore boa produz bons frutos, porém uma árvore má produz frutos maus."
+  }
+ ]
+}
+</cena>

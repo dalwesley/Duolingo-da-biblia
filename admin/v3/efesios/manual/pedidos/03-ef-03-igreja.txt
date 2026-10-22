@@ -1,0 +1,67 @@
+Escreva a cena "ef-03-igreja" da trilha "efesios" (Efésios).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "efesios",
+  "title": "Efésios",
+  "description": "A igreja em Cristo — unidade, graça e armadura de Deus.",
+  "realm": "novo-testamento"
+ },
+ "block": "Efésios",
+ "mission": {
+  "slug": "ef-03-igreja",
+  "title": "A nova vida e a armadura",
+  "type": "lesson",
+  "intro": "A igreja cresce em unidade e maturidade enquanto seus membros vestem a armadura de Deus.",
+  "hookRef": "A nova vida e a armadura",
+  "hookNote": "A igreja cresce em unidade e maturidade enquanto seus membros vestem a armadura de Deus.",
+  "centralInsight": "Paulo instrui a igreja em Efésios 4-6 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+  "objective": "Efésios 4-6"
+ },
+ "v2": {
+  "passageRef": "A nova vida e a armadura",
+  "context": "A igreja cresce em unidade e maturidade enquanto seus membros vestem a armadura de Deus.",
+  "keyword": "Nova",
+  "verseRefs": [
+   "Efésios 6:11"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Efésios 6:8–14"
+ ],
+ "verses": [
+  {
+   "ref": "Efésios 6:8",
+   "text": "Sabendo que cada um receberá do Senhor o que de bom fizer, seja servo, seja livre."
+  },
+  {
+   "ref": "Efésios 6:9",
+   "text": "E vocês, senhores, procedam da mesma forma em relação a eles, deixando de lado as ameaças, sabendo que o Senhor, tanto deles como de vocês, está nos céus e que com Ele não há acepção de pessoas."
+  },
+  {
+   "ref": "Efésios 6:10",
+   "text": "Finalmente, irmãos, fortaleçam-se no Senhor e na força do seu poder"
+  },
+  {
+   "ref": "Efésios 6:11",
+   "text": "Revistam-se de toda a armadura de Deus, para que possam ficar firmes contra as astutas ciladas do diabo."
+  },
+  {
+   "ref": "Efésios 6:12",
+   "text": "Porque não lutamos contra o sangue e a carne, mas sim contra os principados, contra as potestades, contra os dominadores deste mundo tenebroso, contra as forças espirituais do mal, nas regiões celestes."
+  },
+  {
+   "ref": "Efésios 6:13",
+   "text": "Portanto, tomem toda a armadura de Deus, para que possam resistir no dia mau e, depois de terem vencido tudo, permaneçam firmes."
+  },
+  {
+   "ref": "Efésios 6:14",
+   "text": "Estejam, portanto, firmes, cingindo-se com a verdade e vestindo a couraça da justiça."
+  }
+ ]
+}
+</cena>

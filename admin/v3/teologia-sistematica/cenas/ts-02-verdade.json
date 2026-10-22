@@ -1,0 +1,905 @@
+{
+  "study": {
+    "slug": "ts-02-verdade",
+    "passageRef": "Tito 1:1–3",
+    "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade. na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos; E, em seu devido tempo, manifestou a sua palavra por meio da pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;",
+    "passages": [
+      {
+        "ref": "Tito 1:1–3",
+        "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade. na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos; E, em seu devido tempo, manifestou a sua palavra por meio da pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;"
+      }
+    ],
+    "context": "Paulo se apresenta a Tito, seu cooperador em Creta. Logo na abertura, ele liga o conhecimento da verdade a uma vida de piedade e à esperança.",
+    "keyword": "verdade",
+    "keywordGloss": "A verdade de Deus, conhecida de verdade, conduz a uma vida piedosa e à esperança da vida eterna.",
+    "focusQuestion": "Que verdade sobre Deus precisa sair da sua cabeça e chegar à sua prática?",
+    "reflectionPrompts": [
+      "Verdade que se vive",
+      "Deus que não mente",
+      "Esperança que sustenta"
+    ],
+    "facts": [
+      {
+        "text": "Paulo é servo de Deus e apóstolo de Jesus Cristo.",
+        "evidenceRef": "Tito 1:1",
+        "evidenceSpan": "servo de Deus e apóstolo de Jesus Cristo"
+      },
+      {
+        "text": "Sua missão promove a fé dos eleitos e o pleno conhecimento da verdade.",
+        "evidenceRef": "Tito 1:1",
+        "evidenceSpan": "promover a fé dos eleitos de Deus e o pleno conhecimento da verdade"
+      },
+      {
+        "text": "A verdade está de acordo com a piedade.",
+        "evidenceRef": "Tito 1:1",
+        "evidenceSpan": "conhecimento da verdade de acordo com a piedade"
+      },
+      {
+        "text": "Deus, que não pode mentir, prometeu a vida eterna antes de todos os tempos.",
+        "evidenceRef": "Tito 1:2",
+        "evidenceSpan": "Deus, que não pode mentir, prometeu antes de todos os tempos eternos"
+      },
+      {
+        "text": "Deus manifestou sua palavra pela pregação confiada a Paulo.",
+        "evidenceRef": "Tito 1:3",
+        "evidenceSpan": "manifestou a sua palavra por meio da pregação que me foi confiada"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "verdade",
+        "gloss": "O que Deus revela e que, conhecido, deve ser vivido com piedade."
+      },
+      {
+        "term": "piedade",
+        "gloss": "Vida de reverência a Deus que acompanha o conhecimento da verdade."
+      },
+      {
+        "term": "vida eterna",
+        "gloss": "A esperança prometida por Deus, que não pode mentir."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Paulo servo e apóstolo",
+        "evidenceRef": "Tito 1:1"
+      },
+      {
+        "label": "Fé e verdade com piedade",
+        "evidenceRef": "Tito 1:1"
+      },
+      {
+        "label": "Esperança da vida eterna",
+        "evidenceRef": "Tito 1:2"
+      },
+      {
+        "label": "A palavra manifestada na pregação",
+        "evidenceRef": "Tito 1:3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O serviço de Paulo tem o propósito de promover a fé e o conhecimento da verdade.",
+        "marker": "propósito",
+        "evidenceRef": "Tito 1:1"
+      },
+      {
+        "kind": "causa",
+        "text": "A esperança se apoia em Deus, que não pode mentir e prometeu a vida eterna.",
+        "marker": "que não pode mentir",
+        "evidenceRef": "Tito 1:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 17:17",
+        "bridge": "A palavra de Deus é verdade",
+        "text": "Santifica-os na tua verdade; a tua palavra é a verdade."
+      },
+      {
+        "ref": "João 8:32",
+        "bridge": "A verdade conhecida liberta",
+        "text": "E conhecereis a verdade, e a verdade vos libertará."
+      },
+      {
+        "ref": "Números 23:19",
+        "bridge": "Deus não mente ao falar",
+        "text": "Deus não é homem, para que minta; nem filho do homem, para que se arrependa. Porventura, tendo Ele prometido, não o cumprirá? Ou, tendo falado, não o executará?"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Conhecer a verdade é só acumular ideias corretas sobre Deus.",
+        "why": "Paulo liga o pleno conhecimento da verdade à piedade, a uma vida diante de Deus."
+      },
+      {
+        "text": "A esperança da vida eterna depende do esforço humano para merecê-la.",
+        "why": "Ela é promessa de Deus, feita antes de todos os tempos, e Deus não pode mentir."
+      },
+      {
+        "text": "A verdade de Deus muda conforme o tempo e a cultura.",
+        "why": "Ela foi prometida antes dos tempos e manifestada no tempo devido pela palavra de Deus."
+      }
+    ],
+    "centralInsight": "Conhecer a verdade de Deus conduz a uma vida piedosa e cheia de esperança",
+    "anchorQuestion": "Segundo Tito 1:1, com o que o conhecimento da verdade anda junto?",
+    "relatedVerses": [
+      {
+        "reference": "João 17:17",
+        "reason": "A palavra de Deus é verdade"
+      },
+      {
+        "reference": "João 8:32",
+        "reason": "A verdade conhecida liberta"
+      },
+      {
+        "reference": "Números 23:19",
+        "reason": "Deus não mente ao falar"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "teologia-sistematica-sem-ts-02-verdade-01",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Tito 1:1, Paulo se apresenta como rei de Israel e apóstolo de Jesus Cristo.",
+      "prompt": "Em Tito 1:1, Paulo se apresenta como rei de Israel e apóstolo de Jesus Cristo.",
+      "cue": "Em Tito 1:1, Paulo se apresenta como rei de Israel e apóstolo de Jesus Cristo.",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "servo de Deus e apóstolo de Jesus Cristo",
+      "feedbackCorrect": "Ele se chama servo de Deus e apóstolo de Jesus Cristo.",
+      "feedbackWrong": {
+        "true": "Releia a abertura, que o chama de servo, não de rei."
+      },
+      "hint": "Olhe como Paulo se apresenta.",
+      "learningObjective": "Observar como Paulo se apresenta na carta.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-sem-ts-02-verdade-02",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Tito 1:1, toque com o que a verdade está de acordo.",
+      "prompt": "Em Tito 1:1, toque com o que a verdade está de acordo.",
+      "cue": "Em Tito 1:1, toque com o que a verdade está de acordo.",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus Cristo"
+        },
+        {
+          "id": "b",
+          "text": "fé dos eleitos"
+        },
+        {
+          "id": "c",
+          "text": "piedade"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+      "feedbackCorrect": "O conhecimento da verdade anda junto dessa vida diante de Deus.",
+      "feedbackWrong": {
+        "a": "Ele é aquele de quem Paulo é apóstolo, não o acordo citado.",
+        "b": "Isso é o que Paulo promove, não o acordo citado no fim."
+      },
+      "hint": "Leia a parte final do versículo.",
+      "learningObjective": "Observar a ligação entre verdade e vida piedosa.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-sem-ts-02-verdade-03",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Tito 1:2, o que Deus prometeu antes de todos os tempos?",
+      "prompt": "Segundo Tito 1:2, o que Deus prometeu antes de todos os tempos?",
+      "cue": "Segundo Tito 1:2, o que Deus prometeu antes de todos os tempos?",
+      "verseRef": "Tito 1:2",
+      "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "a",
+          "text": "Riqueza nesta vida"
+        },
+        {
+          "id": "b",
+          "text": "Fama para Paulo"
+        },
+        {
+          "id": "c",
+          "text": "A vida eterna"
+        },
+        {
+          "id": "d",
+          "text": "Um reino só em Creta"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "na esperança da vida eterna que Deus, que não pode mentir, prometeu",
+      "feedbackCorrect": "A promessa antiga de Deus sustenta essa esperança.",
+      "feedbackWrong": {
+        "a": "O texto fala de esperança eterna, não de bens materiais.",
+        "b": "Paulo é servo nessa carta, não busca fama.",
+        "d": "A promessa é anterior aos tempos, não local."
+      },
+      "hint": "Leia o começo do versículo 2.",
+      "learningObjective": "Observar a promessa que sustenta a esperança.",
+      "evidence": [
+        "Tito 1:2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-sem-ts-02-verdade-04",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Tito 1:2 na ordem do texto.",
+      "prompt": "Monte Tito 1:2 na ordem do texto.",
+      "cue": "Monte Tito 1:2 na ordem do texto.",
+      "verseRef": "Tito 1:2",
+      "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "a",
+          "text": "na esperança da vida eterna"
+        },
+        {
+          "id": "b",
+          "text": "que Deus, que não pode mentir, prometeu"
+        },
+        {
+          "id": "c",
+          "text": "antes de todos os tempos eternos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "na esperança da vida eterna que Deus, que não pode mentir",
+      "feedbackCorrect": "Primeiro a esperança, depois quem prometeu e quando.",
+      "feedbackWrong": {
+        "default": "Comece pela esperança citada no início do versículo."
+      },
+      "hint": "O versículo começa pela esperança.",
+      "learningObjective": "Reconhecer a sequência de Tito 1:2.",
+      "evidence": [
+        "Tito 1:2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-sem-ts-02-verdade-05",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Tito 1:2, qual é a esperança de quem crê na promessa de Deus?",
+      "prompt": "Em Tito 1:2, qual é a esperança de quem crê na promessa de Deus?",
+      "cue": "Em Tito 1:2, qual é a esperança de quem crê na promessa de Deus?",
+      "verseRef": "Tito 1:2",
+      "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "template": "na esperança da vida ___ que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "a",
+          "text": "eterna"
+        },
+        {
+          "id": "b",
+          "text": "passageira"
+        },
+        {
+          "id": "c",
+          "text": "humana"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "na esperança da vida eterna",
+      "feedbackCorrect": "É a vida que Deus prometeu antes dos tempos.",
+      "feedbackWrong": {
+        "b": "Ela foi prometida antes dos tempos, não é passageira.",
+        "c": "A esperança vem da promessa de Deus, não do esforço humano."
+      },
+      "hint": "Veja o adjetivo ligado à vida.",
+      "learningObjective": "Lembrar a esperança prometida por Deus.",
+      "evidence": [
+        "Tito 1:2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-sem-ts-02-verdade-06",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Tito 1:1 comunica que se liga a este contexto?",
+      "prompt": "O que Tito 1:1 comunica que se liga a este contexto?",
+      "cue": "O que Tito 1:1 comunica que se liga a este contexto?",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "passageA": {
+        "ref": "Tito 1:1",
+        "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Conhecer a verdade de Deus muda o modo de viver."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Verdade só para debates"
+        },
+        {
+          "id": "b",
+          "text": "Ideias sem vida prática"
+        },
+        {
+          "id": "c",
+          "text": "Verdade vivida com piedade"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+      "feedbackCorrect": "No texto, conhecer a verdade e viver diante de Deus andam juntos.",
+      "feedbackWrong": {
+        "a": "Paulo liga a verdade à piedade, não só à discussão.",
+        "b": "A verdade citada produz uma vida, não fica só na ideia."
+      },
+      "hint": "Veja a palavra final do versículo.",
+      "learningObjective": "Ligar conhecimento da verdade à vida piedosa.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-cam-ts-02-verdade-01",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Tito 1:1, o conhecimento da verdade anda de acordo com a piedade.",
+      "prompt": "Em Tito 1:1, o conhecimento da verdade anda de acordo com a piedade.",
+      "cue": "Em Tito 1:1, o conhecimento da verdade anda de acordo com a piedade.",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+      "feedbackCorrect": "Paulo une conhecer a verdade e viver com piedade.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 1:1, que une verdade e piedade."
+      },
+      "hint": "Olhe o fim do versículo 1.",
+      "learningObjective": "Compreender a união entre verdade e piedade.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-cam-ts-02-verdade-02",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+      "prompt": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+      "cue": "Em Tito 1:1, toque a expressão que mostra o alvo do serviço de Paulo.",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "de acordo com"
+        },
+        {
+          "id": "b",
+          "text": "servo de Deus"
+        },
+        {
+          "id": "c",
+          "text": "com o propósito"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "com o propósito de promover a fé dos eleitos de Deus",
+      "feedbackCorrect": "Essa expressão introduz o alvo do trabalho de Paulo.",
+      "feedbackWrong": {
+        "a": "Isso liga verdade e piedade, no fim do versículo.",
+        "b": "Isso diz quem Paulo é, não o alvo do seu serviço."
+      },
+      "hint": "Procure onde Paulo diz para que serve.",
+      "learningObjective": "Reconhecer o marcador de propósito no texto.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-cam-ts-02-verdade-03",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Tito 1:2 sustenta a esperança citada por Paulo?",
+      "prompt": "Como Tito 1:2 sustenta a esperança citada por Paulo?",
+      "cue": "Como Tito 1:2 sustenta a esperança citada por Paulo?",
+      "verseRef": "Tito 1:2",
+      "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela se apoia na promessa de Deus, que não mente"
+        },
+        {
+          "id": "b",
+          "text": "Ela depende da força de vontade de cada pessoa"
+        },
+        {
+          "id": "c",
+          "text": "Ela nasce de uma promessa feita só agora"
+        },
+        {
+          "id": "d",
+          "text": "Ela dispensa confiar no que Deus falou"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Deus, que não pode mentir, prometeu antes de todos os tempos eternos",
+      "feedbackCorrect": "Quem prometeu não pode mentir, por isso a esperança é firme.",
+      "feedbackWrong": {
+        "b": "O fundamento citado é a promessa de Deus, não a vontade humana.",
+        "c": "A promessa foi feita antes de todos os tempos.",
+        "d": "A esperança nasce justamente de confiar na palavra dele."
+      },
+      "hint": "Veja quem prometeu e como ele é descrito.",
+      "learningObjective": "Compreender o fundamento da esperança cristã.",
+      "evidence": [
+        "Tito 1:2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-cam-ts-02-verdade-04",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a abertura em Tito 1:1–3?",
+      "prompt": "Como avança a abertura em Tito 1:1–3?",
+      "cue": "Como avança a abertura em Tito 1:1–3?",
+      "verseRef": "Tito 1:1–2",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade. na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paulo serve para promover a fé"
+        },
+        {
+          "id": "b",
+          "text": "A verdade conduz à piedade"
+        },
+        {
+          "id": "c",
+          "text": "A esperança olha para a vida eterna"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "promover a fé dos eleitos de Deus e o pleno conhecimento da verdade",
+      "feedbackCorrect": "Serviço, verdade vivida e esperança, nessa ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pelo serviço de Paulo; a esperança vem em 1:2."
+      },
+      "hint": "A esperança aparece no versículo seguinte.",
+      "learningObjective": "Compreender o movimento da abertura da carta.",
+      "evidence": [
+        "Tito 1:1–3"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-cam-ts-02-verdade-05",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Tito 1:3, por meio do que Deus manifestou a sua palavra?",
+      "prompt": "Em Tito 1:3, por meio do que Deus manifestou a sua palavra?",
+      "cue": "Em Tito 1:3, por meio do que Deus manifestou a sua palavra?",
+      "verseRef": "Tito 1:3",
+      "passageText": "E, em seu devido tempo, manifestou a sua palavra por meio da pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;",
+      "template": "E, em seu devido tempo, manifestou a sua palavra por meio da ___ que me foi confiada segundo o mandamento de Deus, nosso Salvador;",
+      "options": [
+        {
+          "id": "a",
+          "text": "viagem"
+        },
+        {
+          "id": "b",
+          "text": "leitura"
+        },
+        {
+          "id": "c",
+          "text": "pregação"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "manifestou a sua palavra por meio da pregação que me foi confiada",
+      "feedbackCorrect": "A palavra de Deus se manifestou por esse meio confiado a Paulo.",
+      "feedbackWrong": {
+        "a": "A viagem não é citada; o meio é a palavra anunciada.",
+        "b": "O texto fala do anúncio confiado a Paulo."
+      },
+      "hint": "Leia o meio citado depois de palavra.",
+      "learningObjective": "Compreender como a palavra foi manifestada.",
+      "evidence": [
+        "Tito 1:3"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-cam-ts-02-verdade-06",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Tito 1:1 a João 8:32?",
+      "prompt": "O que liga Tito 1:1 a João 8:32?",
+      "cue": "O que liga Tito 1:1 a João 8:32?",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "passageA": {
+        "ref": "Tito 1:1",
+        "text": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade."
+      },
+      "passageB": {
+        "ref": "João 8:32",
+        "text": "E conhecereis a verdade, e a verdade vos libertará."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cada pessoa inventa sua verdade"
+        },
+        {
+          "id": "b",
+          "text": "A verdade conhecida aprisiona pessoas"
+        },
+        {
+          "id": "c",
+          "text": "A verdade conhecida liberta e guia"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o pleno conhecimento da verdade",
+      "feedbackCorrect": "Nos dois textos, conhecer a verdade transforma a vida.",
+      "feedbackWrong": {
+        "a": "A verdade vem de Deus e de Jesus, não da invenção pessoal.",
+        "b": "Jesus diz o contrário, que ela liberta quem a conhece."
+      },
+      "hint": "Veja o que Jesus diz que ela faz.",
+      "learningObjective": "Relacionar conhecimento da verdade e liberdade.",
+      "evidence": [
+        "Tito 1:1",
+        "João 8:32"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-pro-ts-02-verdade-01",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Tito 1:1–2, a vida eterna é algo que o ser humano conquista para que Deus depois prometa.",
+      "prompt": "Em Tito 1:1–2, a vida eterna é algo que o ser humano conquista para que Deus depois prometa.",
+      "cue": "Em Tito 1:1–2, a vida eterna é algo que o ser humano conquista para que Deus depois prometa.",
+      "verseRef": "Tito 1:1–2",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade. na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Deus, que não pode mentir, prometeu antes de todos os tempos eternos",
+      "feedbackCorrect": "Ela é promessa antiga de Deus, não conquista humana posterior.",
+      "feedbackWrong": {
+        "true": "Releia 1:2, que põe a promessa antes de todos os tempos."
+      },
+      "hint": "Veja quando a promessa foi feita.",
+      "learningObjective": "Interpretar a vida eterna como promessa de Deus.",
+      "evidence": [
+        "Tito 1:1–2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-pro-ts-02-verdade-02",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Tito 1:2, toque o que sustenta a esperança de quem crê.",
+      "prompt": "Em Tito 1:2, toque o que sustenta a esperança de quem crê.",
+      "cue": "Em Tito 1:2, toque o que sustenta a esperança de quem crê.",
+      "verseRef": "Tito 1:2",
+      "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "options": [
+        {
+          "id": "a",
+          "text": "vida eterna"
+        },
+        {
+          "id": "b",
+          "text": "tempos eternos"
+        },
+        {
+          "id": "c",
+          "text": "na esperança"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "na esperança da vida eterna",
+      "feedbackCorrect": "É isso que Deus prometeu e que sustenta quem crê.",
+      "feedbackWrong": {
+        "b": "Isso marca quando Deus prometeu, não o conteúdo da promessa.",
+        "c": "Isso nomeia a atitude, não aquilo que se espera."
+      },
+      "hint": "Procure o conteúdo do que foi prometido.",
+      "learningObjective": "Sustentar com o texto o conteúdo da esperança.",
+      "evidence": [
+        "Tito 1:2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-pro-ts-02-verdade-03",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Tito 1:1 sustenta sobre conhecer a verdade?",
+      "prompt": "Que leitura Tito 1:1 sustenta sobre conhecer a verdade?",
+      "cue": "Que leitura Tito 1:1 sustenta sobre conhecer a verdade?",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conhecer a verdade deve virar vida piedosa"
+        },
+        {
+          "id": "b",
+          "text": "Conhecer a verdade serve só para vencer debates"
+        },
+        {
+          "id": "c",
+          "text": "A piedade dispensa conhecer a verdade de Deus"
+        },
+        {
+          "id": "d",
+          "text": "A verdade pode ser conhecida sem mudar nada"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "conhecimento da verdade de acordo com a piedade",
+      "feedbackCorrect": "Paulo não separa o que se conhece do modo de viver.",
+      "feedbackWrong": {
+        "b": "O alvo citado inclui fé e piedade, não só debate.",
+        "c": "As duas andam juntas no mesmo versículo.",
+        "d": "O texto liga o conhecimento a uma vida diante de Deus."
+      },
+      "hint": "Compare cada opção com o fim do versículo.",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-pro-ts-02-verdade-04",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho de Tito 1:1–2?",
+      "prompt": "Qual sequência revela o caminho de Tito 1:1–2?",
+      "cue": "Qual sequência revela o caminho de Tito 1:1–2?",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conhecer a verdade de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Viver de acordo com a piedade"
+        },
+        {
+          "id": "c",
+          "text": "Esperar a vida prometida por Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "o pleno conhecimento da verdade de acordo com a piedade",
+      "feedbackCorrect": "Conhecer, viver e esperar, ligados na abertura da carta.",
+      "feedbackWrong": {
+        "default": "Comece pelo conhecimento; a esperança fecha em 1:2."
+      },
+      "hint": "A esperança da vida eterna vem depois.",
+      "learningObjective": "Ver o fio entre verdade, vida e esperança.",
+      "evidence": [
+        "Tito 1:1–2"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-pro-ts-02-verdade-05",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Tito 1:1, o que deve ser conhecido plenamente por quem crê?",
+      "prompt": "Em Tito 1:1, o que deve ser conhecido plenamente por quem crê?",
+      "cue": "Em Tito 1:1, o que deve ser conhecido plenamente por quem crê?",
+      "verseRef": "Tito 1:1",
+      "passageText": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da verdade de acordo com a piedade.",
+      "template": "Paulo, servo de Deus e apóstolo de Jesus Cristo, com o propósito de promover a fé dos eleitos de Deus e o pleno conhecimento da ___ de acordo com a piedade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "história"
+        },
+        {
+          "id": "b",
+          "text": "verdade"
+        },
+        {
+          "id": "c",
+          "text": "tradição"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "o pleno conhecimento da verdade de acordo com a piedade",
+      "feedbackCorrect": "É o conhecimento que Paulo quer promover com seu serviço.",
+      "feedbackWrong": {
+        "a": "O texto fala do que Deus revelou, não de história em geral.",
+        "c": "O foco é o que Deus fez conhecer, ligado à piedade."
+      },
+      "hint": "É o substantivo depois de conhecimento.",
+      "learningObjective": "Lembrar o termo central da cena.",
+      "evidence": [
+        "Tito 1:1"
+      ]
+    },
+    {
+      "id": "teologia-sistematica-pro-ts-02-verdade-06",
+      "trail": "teologia-sistematica",
+      "section": "ts-02-verdade",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Tito 1:2 a Números 23:19?",
+      "prompt": "O que liga Tito 1:2 a Números 23:19?",
+      "cue": "O que liga Tito 1:2 a Números 23:19?",
+      "verseRef": "Tito 1:2",
+      "passageText": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;",
+      "passageA": {
+        "ref": "Tito 1:2",
+        "text": "na esperança da vida eterna que Deus, que não pode mentir, prometeu antes de todos os tempos eternos;"
+      },
+      "passageB": {
+        "ref": "Números 23:19",
+        "text": "Deus não é homem, para que minta; nem filho do homem, para que se arrependa. Porventura, tendo Ele prometido, não o cumprirá? Ou, tendo falado, não o executará?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus muda de ideia sempre"
+        },
+        {
+          "id": "b",
+          "text": "Humanos nunca podem falhar"
+        },
+        {
+          "id": "c",
+          "text": "Deus não mente ao prometer"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Deus, que não pode mentir, prometeu",
+      "feedbackCorrect": "Nos dois textos, Deus fala e cumpre o que diz.",
+      "feedbackWrong": {
+        "a": "Os textos afirmam o contrário sobre o caráter de Deus.",
+        "b": "O assunto é a fidelidade de Deus, não a perfeição humana."
+      },
+      "hint": "Veja como os dois textos descrevem Deus.",
+      "learningObjective": "Ligar a promessa de Tito à fidelidade de Deus.",
+      "evidence": [
+        "Tito 1:2",
+        "Números 23:19"
+      ]
+    }
+  ]
+}

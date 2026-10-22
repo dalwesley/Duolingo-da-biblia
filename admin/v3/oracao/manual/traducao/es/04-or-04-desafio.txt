@@ -1,0 +1,345 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "oracao-sem-or-04-desafio-01": {
+  "question": "Neste desafio, Jesus ensina a começar a oração pelos nossos pedidos urgentes, antes de falar do Pai.",
+  "learningObjective": "Revisar a abertura do Pai Nosso.",
+  "feedbackCorrect": "A oração começa no Pai e no nome dele, não nas urgências.",
+  "feedbackWrong": {
+   "true": "Nome santificado e reino vêm antes dos nossos pedidos."
+  },
+  "hint": "Lembre a primeira linha da oração ensinada.",
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-sem-or-04-desafio-02": {
+  "question": "Em Mateus 6:9, toque a quem Jesus manda dirigir a oração.",
+  "learningObjective": "Revisar o destinatário da oração de Jesus.",
+  "feedbackCorrect": "Toda a vida de oração começa chamando Deus assim.",
+  "feedbackWrong": {
+   "a": "Isso é o primeiro pedido, depois de chamá-lo.",
+   "b": "Isso é onde ele está, não a quem falamos."
+  },
+  "hint": "É a palavra que abre a oração.",
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-sem-or-04-desafio-03": {
+  "question": "Segundo Lucas 18:1, para que Jesus contou a parábola do juiz e da viúva?",
+  "learningObjective": "Revisar o propósito da parábola da viúva.",
+  "feedbackCorrect": "O alvo é declarado antes da história começar.",
+  "feedbackWrong": {
+   "b": "A viúva fala e insiste: é o exemplo a seguir.",
+   "c": "A parábola abre a persistência, não a encerra.",
+   "d": "O juiz é personagem da lição, não um aviso prático."
+  },
+  "hint": "O objetivo está no primeiro versículo.",
+  "options": {
+   "a": "Para ensinar a orar sempre e nunca desanimar",
+   "b": "Para mostrar que viúvas devem ficar caladas",
+   "c": "Para encerrar o assunto da oração de uma vez",
+   "d": "Para ensinar a evitar juízes das cidades"
+  },
+  "_verso": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+ },
+ "oracao-sem-or-04-desafio-04": {
+  "question": "Monte Mateus 6:9 na ordem do texto.",
+  "learningObjective": "Revisar a ordem da abertura do Pai Nosso.",
+  "feedbackCorrect": "Pai, céus e nome santificado: a abertura continua a mesma.",
+  "feedbackWrong": {
+   "default": "Comece pelo chamado ao Pai nosso."
+  },
+  "hint": "Siga a oração palavra por palavra.",
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-sem-or-04-desafio-05": {
+  "question": "Em Mateus 6:10, pedimos que venha o governo de Deus chamado de quê?",
+  "learningObjective": "Revisar a prioridade do reino na oração.",
+  "feedbackCorrect": "Antes do pão de cada dia, o governo dele é pedido.",
+  "feedbackWrong": {
+   "a": "Isso é pedido no versículo seguinte, depois dele.",
+   "c": "Do mal pedimos livramento, no fim da oração."
+  },
+  "hint": "É o que deve vir à terra.",
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-sem-or-04-desafio-06": {
+  "question": "O que Lucas 18:3 comunica que se liga a este contexto?",
+  "learningObjective": "Revisar a persistência dentro da vida de oração.",
+  "feedbackCorrect": "Ela é a parte da persistência nesta vida de oração.",
+  "feedbackWrong": {
+   "b": "Ela voltou de novo ao juiz, sem desistir.",
+   "c": "A lição dela é justamente voltar sempre."
+  },
+  "hint": "Veja o papel da viúva entre os três ensinos.",
+  "options": {
+   "a": "Insistência que nunca desanima",
+   "b": "Desistência na primeira recusa",
+   "c": "Oração feita uma única vez"
+  },
+  "_verso": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-sem-or-04-desafio-07": {
+  "question": "Em Lucas 18:3, toque quem foi pedir justiça ao juiz da cidade.",
+  "learningObjective": "Revisar a personagem da persistência.",
+  "feedbackCorrect": "Sem defensor, ela mesma vai, volta e insiste.",
+  "feedbackWrong": {
+   "b": "Isso é o cenário da história, não a pessoa.",
+   "c": "Ele é o outro lado da causa que ela leva."
+  },
+  "hint": "Procure a mulher da mesma cidade.",
+  "_verso": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+ },
+ "oracao-sem-or-04-desafio-08": {
+  "question": "Monte Romanos 8:26 na ordem do texto.",
+  "learningObjective": "Revisar a sequência de Romanos 8:26.",
+  "feedbackCorrect": "Auxílio, nossa falta de saber e a intercessão dele.",
+  "feedbackWrong": {
+   "default": "Comece pelo auxílio em nossas fraquezas."
+  },
+  "hint": "Os gemidos fecham o versículo.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-cam-or-04-desafio-01": {
+  "question": "Em Lucas 18:7, a parábola trata Deus como um Pai justo que defende os seus, e não como um juiz relutante.",
+  "learningObjective": "Revisar o contraste entre juiz e Deus.",
+  "feedbackCorrect": "O juiz injusto é o contraste que faz Deus brilhar.",
+  "feedbackWrong": {
+   "false": "A pergunta de Jesus espera confiança na justiça de Deus."
+  },
+  "hint": "Separe o personagem do contraste de Deus.",
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-cam-or-04-desafio-02": {
+  "question": "Em Mateus 6:10, toque a palavrinha que iguala terra e céu na vontade de Deus.",
+  "learningObjective": "Revisar a comparação de Mateus 6:10.",
+  "feedbackCorrect": "O céu é a medida do que se pede para a terra.",
+  "feedbackWrong": {
+   "a": "Isso é o governo pedido, não a palavra de comparação.",
+   "b": "Isso é o lugar carente, não a comparação."
+  },
+  "hint": "Procure a palavra curta entre os dois lugares.",
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-cam-or-04-desafio-03": {
+  "question": "Como o Pai Nosso e a parábola da viúva se completam nesta trilha?",
+  "learningObjective": "Relacionar os ensinos de Jesus sobre orar.",
+  "feedbackCorrect": "Forma de Jesus e perseverança andam juntas na vida de oração.",
+  "feedbackWrong": {
+   "a": "Um dá a forma; a outra, a constância nela.",
+   "b": "Os ensinos são para discípulos em geral, sem restrição.",
+   "c": "A trilha inteira os junta num mesmo caminho."
+  },
+  "hint": "Pense em forma e constância juntas.",
+  "options": {
+   "a": "Os dois dispensam qualquer forma de oração",
+   "b": "Um é para líderes, a outra só para viúvas",
+   "c": "Os dois tratam de assuntos sem nenhuma ligação",
+   "d": "Um ensina como orar, a outra ensina a continuar"
+  },
+  "_verso": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+ },
+ "oracao-cam-or-04-desafio-04": {
+  "question": "Como se encadeiam os pedidos iniciais do Pai Nosso?",
+  "learningObjective": "Revisar a ordem da primeira metade da oração.",
+  "feedbackCorrect": "Nome, reino e vontade: a primeira metade é toda dele.",
+  "feedbackWrong": {
+   "default": "Comece pela santidade do nome do Pai."
+  },
+  "hint": "Nossas necessidades ainda nem apareceram.",
+  "options": {
+   "a": "A santidade do nome vem em primeiro lugar",
+   "b": "O reino de Deus é pedido logo em seguida",
+   "c": "A vontade dele é feita na terra como no céu"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-cam-or-04-desafio-05": {
+  "question": "Em Lucas 18:1, orar sempre é o oposto de perder o ânimo chamado de quê?",
+  "learningObjective": "Revisar o alvo da parábola da persistência.",
+  "feedbackCorrect": "A perseverança da viúva é a prática desse nunca.",
+  "feedbackWrong": {
+   "b": "Descansar em Deus é bom; o proibido é outro.",
+   "c": "Silenciar pode ser oração; o contrário aqui é ânimo perdido."
+  },
+  "hint": "É perder o ânimo no meio do caminho.",
+  "_verso": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+ },
+ "oracao-cam-or-04-desafio-06": {
+  "question": "O que liga Mateus 6:9 a Romanos 8:15?",
+  "learningObjective": "Relacionar Pai Nosso e adoção no Espírito.",
+  "feedbackCorrect": "O Espírito da adoção faz o clamor que Jesus ensinou.",
+  "feedbackWrong": {
+   "b": "É Pai nosso: oração de filhos e de família.",
+   "c": "Romanos troca escravidão e medo por adoção."
+  },
+  "hint": "Veja o clamor de quem foi adotado.",
+  "options": {
+   "a": "Filhos que clamam Pai",
+   "b": "Oração sem família de Deus",
+   "c": "Medo servil diante de Deus"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-cam-or-04-desafio-07": {
+  "question": "Em Romanos 8:26, toque o que confessamos não saber fazer como convém.",
+  "learningObjective": "Revisar nossa limitação na oração.",
+  "feedbackCorrect": "A vida de oração inclui admitir essa falta de saber.",
+  "feedbackWrong": {
+   "b": "Isso é o modo dele interceder, não nossa tarefa.",
+   "c": "Isso é o terreno da ajuda, não o ato confessado."
+  },
+  "hint": "Procure o verbo depois de não sabemos.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-cam-or-04-desafio-08": {
+  "question": "Como avança a história da viúva em Lucas 18:4–5?",
+  "learningObjective": "Revisar a virada da parábola da viúva.",
+  "feedbackCorrect": "Recusa, retorno insistente e decisão do juiz.",
+  "feedbackWrong": {
+   "default": "Comece pela recusa inicial do juiz."
+  },
+  "hint": "A decisão dele é a última parte.",
+  "options": {
+   "a": "O juiz se recusa a atender no começo",
+   "b": "A viúva continua vindo até ele sem parar",
+   "c": "Ele decide julgar a causa dela por fim"
+  },
+  "_verso": "Por algum tempo, ele não quis atendê-la; mas, depois, disse para si mesmo: Embora eu não tema a Deus, nem tenha respeito por homem algum, Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar"
+ },
+ "oracao-pro-or-04-desafio-01": {
+  "question": "Nesta trilha, orar bem é sempre falar perfeito, nunca desanimar por dentro e nunca precisar do Espírito.",
+  "learningObjective": "Interpretar a vida de oração sem perfeccionismo.",
+  "feedbackCorrect": "A trilha assume fraqueza e promete auxílio, não perfeição.",
+  "feedbackWrong": {
+   "true": "Não saber orar é o ponto onde o Espírito nos auxilia."
+  },
+  "hint": "Lembre a confissão de Romanos 8:26.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-04-desafio-02": {
+  "question": "Em Lucas 18:7, toque a quem Deus promete fazer justiça quando clamam a ele.",
+  "learningObjective": "Revisar a promessa de justiça aos escolhidos.",
+  "feedbackCorrect": "A persistência se apoia em quem Deus é para os seus.",
+  "feedbackWrong": {
+   "a": "Isso é a constância do clamor, não quem o recebe.",
+   "c": "Isso é o que Deus faz, não a quem ele faz."
+  },
+  "hint": "Procure o grupo depois de justiça aos.",
+  "_verso": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+ },
+ "oracao-pro-or-04-desafio-03": {
+  "question": "Que leitura resume a vida de oração ensinada nesta trilha inteira?",
+  "learningObjective": "Escolher a síntese que a trilha sustenta.",
+  "feedbackCorrect": "Forma de filhos, constância de fé e auxílio na fraqueza.",
+  "feedbackWrong": {
+   "a": "Os três textos falam de relação, não de técnica.",
+   "b": "É Pai nosso, no plural, com forma ensinada.",
+   "d": "A viúva é elogiada justamente por não desistir."
+  },
+  "hint": "Junte os três ensinos da trilha.",
+  "options": {
+   "a": "Dominar técnicas até Deus ser obrigado a responder",
+   "b": "Cada um ora sozinho, sem forma nem comunidade alguma",
+   "c": "Orar como filhos, persistir com fé e depender do Espírito",
+   "d": "Desistir cedo prova maturidade espiritual verdadeira"
+  },
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-04-desafio-04": {
+  "question": "Qual sequência revela a teologia da oração nesta trilha?",
+  "learningObjective": "Ver os três ensinos como um caminho só.",
+  "feedbackCorrect": "Filhos que clamam e são auxiliados pelo Espírito.",
+  "feedbackWrong": {
+   "default": "Comece pelo Pai a quem os filhos chamam."
+  },
+  "hint": "A intercessão na fraqueza fecha o caminho.",
+  "options": {
+   "a": "Filhos chamam Deus de Pai na oração",
+   "b": "Eles clamam dia e noite pedindo justiça",
+   "c": "O Espírito intercede na fraqueza deles"
+  },
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-04-desafio-05": {
+  "question": "Em Romanos 8:26, o Espírito intercede por nós com o que vai além das palavras?",
+  "learningObjective": "Revisar o modo da intercessão do Espírito.",
+  "feedbackCorrect": "Quando a palavra acaba, a intercessão continua nele.",
+  "feedbackWrong": {
+   "b": "Volume não é a medida dessa intercessão profunda.",
+   "c": "Nenhuma composição nossa é exigida neste texto."
+  },
+  "hint": "É inexprimível, maior que palavras.",
+  "_verso": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+ },
+ "oracao-pro-or-04-desafio-06": {
+  "question": "O que liga Lucas 18:1 a Efésios 6:18?",
+  "learningObjective": "Ligar persistência e oração no Espírito.",
+  "feedbackCorrect": "Sempre, em todo tempo e no Espírito: a mesma perseverança.",
+  "feedbackWrong": {
+   "a": "Os dois textos mandam continuar, não parar.",
+   "c": "A perseverança cristã é justamente no Espírito."
+  },
+  "hint": "Compare o sempre dos dois textos.",
+  "options": {
+   "a": "Orar uma vez só",
+   "b": "Orar no Espírito em todo tempo",
+   "c": "Persistência sem o Espírito Santo"
+  },
+  "_verso": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+ },
+ "oracao-pro-or-04-desafio-07": {
+  "question": "Em Mateus 6:13, toque de onde pedimos para não cair, no fim da oração.",
+  "learningObjective": "Revisar o pedido de guarda no Pai Nosso.",
+  "feedbackCorrect": "A vida de oração também pede guarda na hora da prova.",
+  "feedbackWrong": {
+   "a": "Isso é a declaração final de confiança, não o perigo.",
+   "b": "Do mal pedimos livramento, um passo depois."
+  },
+  "hint": "Procure a prova que pode nos derrubar.",
+  "_verso": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!"
+ },
+ "oracao-pro-or-04-desafio-08": {
+  "question": "Qual sequência revela a lógica completa de uma vida de oração?",
+  "learningObjective": "Compreender a lógica completa da vida de oração.",
+  "feedbackCorrect": "Reino primeiro, constância na espera e vontade dele no fim.",
+  "feedbackWrong": {
+   "default": "Comece onde Jesus começa: pelo Pai."
+  },
+  "hint": "A vontade de Deus é a medida final.",
+  "options": {
+   "a": "Começar pelo Pai e pelo reino dele",
+   "b": "Persistir sem desanimar durante a espera",
+   "c": "Depender dele segundo a vontade de Deus"
+  },
+  "_verso": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+ },
+ "estudo:or-04-desafio": {
+  "context": "Este desafio junta os três ensinos da trilha: Jesus ensina a orar ao Pai começando pelo reino, a parábola manda persistir sem desanimar e Paulo mostra o Espírito intercedendo na nossa fraqueza.",
+  "focusQuestion": "Qual das três ajudas — forma, persistência ou Espírito — você mais precisa hoje?",
+  "keywordGloss": "Orar como filhos, continuar sem desanimar e contar com o Espírito quando faltam palavras.",
+  "reflectionPrompts": [
+   "Como filhos ao Pai",
+   "Sem desanimar na espera",
+   "Auxiliado na fraqueza"
+  ],
+  "facts": [
+   "A oração de Jesus começa com o Pai e o nome dele santificado.",
+   "O pão pedido no Pai Nosso é o de cada dia.",
+   "A parábola foi contada para orar sempre e nunca desanimar.",
+   "Deus fará justiça aos seus escolhidos, que clamam dia e noite.",
+   "O Espírito nos auxilia em nossas fraquezas ao orar.",
+   "Ele intercede pelos santos de acordo com a vontade de Deus."
+  ],
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ }
+}

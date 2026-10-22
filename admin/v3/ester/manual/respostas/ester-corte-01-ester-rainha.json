@@ -1,0 +1,715 @@
+{
+ "study": {
+  "passageRef": "Ester 2:15–17",
+  "passages": [
+   {
+    "ref": "Ester 2:7"
+   },
+   {
+    "ref": "Ester 2:10"
+   },
+   {
+    "ref": "Ester 2:15–17"
+   },
+   {
+    "ref": "Ester 2:22"
+   }
+  ],
+  "context": "Após Vasti ser deposta, Assuero busca nova rainha entre jovens de todo o reino. Ester, judia órfã criada por Mardoqueu em Susã, é levada à casa do rei sem revelar sua origem.",
+  "keyword": "favor",
+  "keywordGloss": "Ester encontra acolhimento e preferência diante de Hegai, de todos que a veem e do rei.",
+  "focusQuestion": "Onde você percebe que foi posicionado para servir a outras pessoas?",
+  "reflectionPrompts": [
+   "Criada por Mardoqueu",
+   "Origem guardada",
+   "Favor diante do rei"
+  ],
+  "facts": [
+   {
+    "text": "Ester era órfã e foi tomada como filha por Mardoqueu.",
+    "evidenceRef": "Ester 2:7",
+    "evidenceSpan": "Mardoqueu a tomou como filha"
+   },
+   {
+    "text": "Ester não revelou seu povo nem sua linhagem.",
+    "evidenceRef": "Ester 2:10",
+    "evidenceSpan": "não revelou o seu povo nem sua linhagem"
+   },
+   {
+    "text": "Ester nada pediu além do que Hegai sugeriu ao ir ao rei.",
+    "evidenceRef": "Ester 2:15",
+    "evidenceSpan": "nada pediu além do que lhe sugeriu Hegai"
+   },
+   {
+    "text": "O rei amou Ester mais do que a todas as mulheres.",
+    "evidenceRef": "Ester 2:17",
+    "evidenceSpan": "o rei amou Ester mais do que a todas as mulheres"
+   },
+   {
+    "text": "Ester foi feita rainha em lugar de Vasti.",
+    "evidenceRef": "Ester 2:17",
+    "evidenceSpan": "fazendo dela rainha em lugar de Vasti"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "favor",
+    "gloss": "Acolhimento que Ester encontra diante de Hegai, de todos e do rei."
+   },
+   {
+    "term": "coroa",
+    "gloss": "Sinal visível de que Ester passa a ocupar o lugar de rainha."
+   },
+   {
+    "term": "rainha",
+    "gloss": "Posição que Ester recebe em lugar de Vasti por decisão do rei."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Uma órfã criada por Mardoqueu",
+    "evidenceRef": "Ester 2:7"
+   },
+   {
+    "label": "Ester guarda sua origem",
+    "evidenceRef": "Ester 2:10"
+   },
+   {
+    "label": "Ester conquista o favor de todos",
+    "evidenceRef": "Ester 2:15"
+   },
+   {
+    "label": "Ester recebe a coroa real",
+    "evidenceRef": "Ester 2:17"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Ester guarda sua origem porque Mardoqueu a instruiu a não revelá-la.",
+    "marker": "pois",
+    "evidenceRef": "Ester 2:10"
+   },
+   {
+    "kind": "sequência",
+    "text": "Chegado o momento de Ester, ela vai ao rei seguindo a sugestão de Hegai.",
+    "marker": "portanto",
+    "evidenceRef": "Ester 2:15"
+   },
+   {
+    "kind": "resultado",
+    "text": "O favor diante do rei resulta na coroa e no lugar de rainha.",
+    "marker": null,
+    "evidenceRef": "Ester 2:17"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Provérbios 21:1",
+    "bridge": "Coração do rei dirigido por Deus"
+   },
+   {
+    "ref": "Gênesis 50:20",
+    "bridge": "Posição usada para salvar vidas"
+   },
+   {
+    "ref": "Deuteronômio 31:8",
+    "bridge": "Deus vai adiante do povo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Ester virou rainha só por sua beleza.",
+    "why": "O texto repete o favor que ela encontra diante de Hegai, de todos que a veem e do rei (2:9,15,17)."
+   },
+   {
+    "text": "Ester escondeu sua origem por vergonha de ser judia.",
+    "why": "O texto explica o silêncio como obediência à instrução de Mardoqueu (2:10,20)."
+   },
+   {
+    "text": "Mardoqueu some da história depois da coroação.",
+    "why": "Ele continua à porta do rei e, por Ester, avisa sobre a conspiração contra Assuero (2:19-22)."
+   }
+  ],
+  "centralInsight": "Deus prepara, em silêncio, uma rainha para o seu povo",
+  "anchorQuestion": "Quem criou Ester e o que ele a instruiu a não revelar?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Ester 2:10, Ester não revelou o seu povo nem sua linhagem",
+   "verseRef": "Ester 2:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "não revelou o seu povo nem sua linhagem",
+   "feedbackCorrect": "Ester guarda sua origem conforme a instrução recebida de Mardoqueu.",
+   "feedbackWrong": {
+    "false": "Releia Ester 2:10, que afirma que ela não revelou povo nem linhagem."
+   },
+   "hint": "Olhe o que Ester não fez.",
+   "learningObjective": "Observar que Ester guarda sua origem ao entrar na casa do rei.",
+   "evidence": [
+    "Ester 2:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Ester 2:7, toque o outro nome de Ester.",
+   "verseRef": "Ester 2:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mardoqueu"
+    },
+    {
+     "id": "b",
+     "text": "Hadassa"
+    },
+    {
+     "id": "c",
+     "text": "filha"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ele criara Hadassa (que é Ester",
+   "feedbackCorrect": "Hadassa é o outro nome de Ester, filha do tio de Mardoqueu.",
+   "feedbackWrong": {
+    "a": "Mardoqueu é quem criou Ester, não o outro nome dela.",
+    "c": "Filha descreve a relação com Mardoqueu, não um nome."
+   },
+   "hint": "Procure o nome entre parênteses no versículo.",
+   "learningObjective": "Identificar Hadassa como o outro nome de Ester.",
+   "evidence": [
+    "Ester 2:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Ester 2:9, o que Hegai deu a Ester além de enfeites e porções?",
+   "verseRef": "Ester 2:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Uma coroa real"
+    },
+    {
+     "id": "b",
+     "text": "Sete servas escolhidas"
+    },
+    {
+     "id": "c",
+     "text": "Um banquete no palácio"
+    },
+    {
+     "id": "d",
+     "text": "Cartas para as províncias"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "oferecer-lhe sete servas escolhidas da casa do rei",
+   "feedbackCorrect": "Hegai deu a Ester sete servas escolhidas e os melhores aposentos.",
+   "feedbackWrong": {
+    "a": "A coroa só vem depois, das mãos do rei, em Ester 2:17.",
+    "c": "O banquete é dado pelo rei depois da coroação (2:18).",
+    "d": "Nenhuma carta é entregue a Ester neste momento do texto."
+   },
+   "hint": "Leia a lista do que Hegai oferece a Ester.",
+   "learningObjective": "Observar o favor concreto que Ester recebe de Hegai.",
+   "evidence": [
+    "Ester 2:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Ester 2:17 na ordem do texto.",
+   "verseRef": "Ester 2:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "E o rei amou Ester mais do que a todas as mulheres"
+    },
+    {
+     "id": "b",
+     "text": "e colocou a coroa real em sua cabeça"
+    },
+    {
+     "id": "c",
+     "text": "fazendo dela rainha em lugar de Vasti"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E o rei amou Ester mais do que a todas as mulheres",
+   "feedbackCorrect": "Primeiro o rei ama Ester, depois põe a coroa e a faz rainha.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor do rei; a coroa e o título vêm em seguida."
+   },
+   "hint": "O versículo começa pelo sentimento do rei.",
+   "learningObjective": "Reconhecer a sequência da coroação de Ester.",
+   "evidence": [
+    "Ester 2:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Ester 2:17, o que o rei colocou na cabeça de Ester?",
+   "verseRef": "Ester 2:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "véu"
+    },
+    {
+     "id": "b",
+     "text": "coroa"
+    },
+    {
+     "id": "c",
+     "text": "anel"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "colocou a coroa real em sua cabeça",
+   "feedbackCorrect": "O rei colocou a coroa real na cabeça de Ester ao fazê-la rainha.",
+   "feedbackWrong": {
+    "a": "O texto não fala de véu; fala do sinal real posto na cabeça.",
+    "c": "Nenhum anel é mencionado na coroação de Ester."
+   },
+   "hint": "É o sinal visível do lugar de rainha.",
+   "learningObjective": "Lembrar o sinal da coroação de Ester.",
+   "evidence": [
+    "Ester 2:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Ester 2:17 comunica que se liga a este contexto?",
+   "verseRef": "Ester 2:17",
+   "passageA": {
+    "ref": "Ester 2:17"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Uma judia órfã, criada por Mardoqueu, é levada à casa do rei em Susã."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ester abandona seu povo"
+    },
+    {
+     "id": "b",
+     "text": "Vasti volta ao trono"
+    },
+    {
+     "id": "c",
+     "text": "Ester se torna rainha"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+   "feedbackCorrect": "A órfã levada à casa do rei é feita rainha em lugar de Vasti.",
+   "feedbackWrong": {
+    "a": "Ester não abandona seu povo; ela apenas guarda sua origem.",
+    "b": "É Ester quem ocupa o lugar deixado por Vasti."
+   },
+   "hint": "Veja o lugar que Ester passa a ocupar.",
+   "learningObjective": "Ligar a trajetória de Ester à sua chegada ao lugar de rainha.",
+   "evidence": [
+    "Ester 2:17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Ester 2:15, Ester pediu muitos bens além do que Hegai lhe sugeriu para ir ao rei",
+   "verseRef": "Ester 2:15",
+   "correctOptionId": "false",
+   "evidenceSpan": "nada pediu além do que lhe sugeriu Hegai",
+   "feedbackCorrect": "Ester nada pediu além da sugestão de Hegai e conquistou o favor de todos.",
+   "feedbackWrong": {
+    "true": "Releia Ester 2:15, que diz que ela nada pediu além do sugerido."
+   },
+   "hint": "Repare no que Ester não pediu.",
+   "learningObjective": "Compreender a postura simples de Ester diante do rei.",
+   "evidence": [
+    "Ester 2:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Ester 2:10, toque a palavra que marca o contraste na apresentação de Ester.",
+   "verseRef": "Ester 2:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "revelou"
+    },
+    {
+     "id": "b",
+     "text": "porém"
+    },
+    {
+     "id": "c",
+     "text": "instruído"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ester, porém, não revelou",
+   "feedbackCorrect": "O contraste é que, levada ao rei, Ester guarda sua origem.",
+   "feedbackWrong": {
+    "a": "Revelou é a ação que Ester não pratica neste versículo.",
+    "c": "Instruído explica o motivo, mas não marca o contraste."
+   },
+   "hint": "Procure uma palavra curta logo depois do nome de Ester.",
+   "learningObjective": "Reconhecer o marcador de contraste em Ester 2:10.",
+   "evidence": [
+    "Ester 2:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Ester 2:15 ajuda a entender a postura de Ester diante do rei?",
+   "verseRef": "Ester 2:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ela exige vantagens para se destacar das outras"
+    },
+    {
+     "id": "b",
+     "text": "Ela segue a orientação recebida sem exigir nada"
+    },
+    {
+     "id": "c",
+     "text": "Ela recusa qualquer ajuda de Hegai no palácio"
+    },
+    {
+     "id": "d",
+     "text": "Ela revela sua origem para ganhar preferência"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "nada pediu além do que lhe sugeriu Hegai",
+   "feedbackCorrect": "Ester vai ao rei sem exigir nada além da orientação de Hegai.",
+   "feedbackWrong": {
+    "a": "O texto diz o contrário, pois ela nada pediu além do sugerido.",
+    "c": "Ela aceita a sugestão de Hegai, em vez de recusar ajuda.",
+    "d": "Sua origem continua guardada, conforme Ester 2:10 e 2:20."
+   },
+   "hint": "Compare o que ela pede com o que lhe foi sugerido.",
+   "learningObjective": "Compreender a postura de Ester a partir de Ester 2:15.",
+   "evidence": [
+    "Ester 2:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a trajetória de Ester em Ester 2?",
+   "verseRef": "Ester 2:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Uma órfã é criada por Mardoqueu"
+    },
+    {
+     "id": "b",
+     "text": "Ester é levada à casa do rei"
+    },
+    {
+     "id": "c",
+     "text": "Ester guarda sua origem no palácio"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "não revelou o seu povo nem sua linhagem",
+   "feedbackCorrect": "Ester é criada por Mardoqueu, levada ao rei e guarda sua origem.",
+   "feedbackWrong": {
+    "default": "Comece pela criação de Ester; o silêncio sobre a origem vem no palácio."
+   },
+   "hint": "Siga Ester de casa até o palácio.",
+   "learningObjective": "Compreender os movimentos iniciais da trajetória de Ester.",
+   "evidence": [
+    "Ester 2:9–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Ester 2:15, o que Ester conquistou de todos os que a viam?",
+   "verseRef": "Ester 2:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "temor"
+    },
+    {
+     "id": "b",
+     "text": "favor"
+    },
+    {
+     "id": "c",
+     "text": "silêncio"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ester conquistou o favor de todos os que a viam",
+   "feedbackCorrect": "Ester conquistou a boa acolhida de todos os que a viam.",
+   "feedbackWrong": {
+    "a": "O texto não fala de medo das pessoas diante de Ester.",
+    "c": "O silêncio é sobre sua origem, não o que ela conquistou."
+   },
+   "hint": "É a mesma acolhida que ela encontra diante do rei.",
+   "learningObjective": "Compreender a acolhida que acompanha Ester no palácio.",
+   "evidence": [
+    "Ester 2:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Ester 2:17 a Provérbios 21:1?",
+   "verseRef": "Ester 2:17",
+   "passageA": {
+    "ref": "Ester 2:17"
+   },
+   "passageB": {
+    "ref": "Provérbios 21:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Reis decidem sem Deus"
+    },
+    {
+     "id": "b",
+     "text": "Coração do rei dirigido por Deus"
+    },
+    {
+     "id": "c",
+     "text": "Rainhas governam sozinhas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o rei amou Ester mais do que a todas as mulheres",
+   "feedbackCorrect": "Provérbios lembra que até a decisão do rei está nas mãos do Senhor.",
+   "feedbackWrong": {
+    "a": "Provérbios diz que o coração do rei está na mão do Senhor.",
+    "c": "Nenhum dos textos apresenta Ester governando sozinha."
+   },
+   "hint": "Veja quem dirige as decisões do rei em Provérbios.",
+   "learningObjective": "Relacionar a decisão de Assuero ao governo do Senhor sobre reis.",
+   "evidence": [
+    "Ester 2:17",
+    "Provérbios 21:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Ester 2:10, o silêncio de Ester sobre sua origem é apresentado como obediência à instrução de Mardoqueu",
+   "verseRef": "Ester 2:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "Mardoqueu a havia instruído a não fazê-lo",
+   "feedbackCorrect": "O texto liga o silêncio de Ester à instrução de quem a criou.",
+   "feedbackWrong": {
+    "false": "Releia o fim de Ester 2:10, que dá o motivo do silêncio."
+   },
+   "hint": "Procure o motivo dado no fim do versículo.",
+   "learningObjective": "Interpretar o silêncio de Ester como obediência, não como vergonha.",
+   "evidence": [
+    "Ester 2:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Ester 2:17, toque o trecho que mostra o sinal visível do novo lugar de Ester.",
+   "verseRef": "Ester 2:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "todas as mulheres"
+    },
+    {
+     "id": "b",
+     "text": "coroa real"
+    },
+    {
+     "id": "c",
+     "text": "em sua cabeça"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "colocou a coroa real em sua cabeça",
+   "feedbackCorrect": "Esse objeto marca visivelmente que Ester agora é rainha.",
+   "feedbackWrong": {
+    "a": "As mulheres são o grupo com quem Ester é comparada.",
+    "c": "Esse trecho diz o lugar do corpo, não o sinal do reinado."
+   },
+   "hint": "Procure o objeto que o rei coloca em Ester.",
+   "learningObjective": "Sustentar no texto o novo lugar ocupado por Ester.",
+   "evidence": [
+    "Ester 2:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Ester 2:7-17 sustenta sobre a chegada de Ester ao trono?",
+   "verseRef": "Ester 2:16–17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Uma órfã guardada chega ao lugar de rainha"
+    },
+    {
+     "id": "b",
+     "text": "A beleza dispensa qualquer cuidado de Deus"
+    },
+    {
+     "id": "c",
+     "text": "Esconder a origem é sinal de vergonha"
+    },
+    {
+     "id": "d",
+     "text": "Mardoqueu perde importância após a coroação"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+   "feedbackCorrect": "O texto conduz a órfã criada por Mardoqueu até a coroa em lugar de Vasti.",
+   "feedbackWrong": {
+    "b": "O texto destaca o favor repetido, não uma beleza autossuficiente.",
+    "c": "O silêncio é obediência a Mardoqueu, conforme Ester 2:10.",
+    "d": "Mardoqueu segue à porta do rei e avisa sobre a conspiração."
+   },
+   "hint": "Junte o começo da trajetória com o fim do trecho.",
+   "learningObjective": "Escolher a interpretação sustentada pela trajetória de Ester.",
+   "evidence": [
+    "Ester 2:16–17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido da trajetória de Ester até a coroa?",
+   "verseRef": "Ester 2:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "A origem de Ester permanece guardada"
+    },
+    {
+     "id": "b",
+     "text": "O favor acompanha Ester no palácio"
+    },
+    {
+     "id": "c",
+     "text": "A posição de rainha abre um futuro serviço"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+   "feedbackCorrect": "Origem guardada, favor no palácio e uma posição que servirá depois.",
+   "feedbackWrong": {
+    "default": "Comece pela origem guardada; a posição é o ponto de chegada."
+   },
+   "hint": "A coroa é chegada, não ponto de partida.",
+   "learningObjective": "Ver a coroação como posição preparada para serviço futuro.",
+   "evidence": [
+    "Ester 2:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Ester 2:20, o que Ester ainda não havia revelado, além do seu povo?",
+   "verseRef": "Ester 2:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "linhagem"
+    },
+    {
+     "id": "b",
+     "text": "coroa"
+    },
+    {
+     "id": "c",
+     "text": "servas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ainda não havia revelado sua linhagem nem seu povo",
+   "feedbackCorrect": "Mesmo rainha, Ester mantém guardada a sua origem familiar.",
+   "feedbackWrong": {
+    "b": "A coroa já foi colocada publicamente pelo rei em 2:17.",
+    "c": "As servas foram dadas por Hegai ainda em 2:9."
+   },
+   "hint": "É a palavra ligada à família de origem de Ester.",
+   "learningObjective": "Lembrar o termo ligado à origem guardada de Ester.",
+   "evidence": [
+    "Ester 2:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Ester 2:17 a Gênesis 50:20?",
+   "verseRef": "Ester 2:17",
+   "passageA": {
+    "ref": "Ester 2:17"
+   },
+   "passageB": {
+    "ref": "Gênesis 50:20"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Posição usada para salvar vidas"
+    },
+    {
+     "id": "b",
+     "text": "Palácios garantem vida fácil"
+    },
+    {
+     "id": "c",
+     "text": "Famílias nunca causam dor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fazendo dela rainha em lugar de Vasti",
+   "feedbackCorrect": "Como José, Ester recebe uma posição que servirá para preservar vidas.",
+   "feedbackWrong": {
+    "b": "A posição de José e de Ester envolve dor e risco, não facilidade.",
+    "c": "Gênesis 50 fala justamente de mal vindo dos próprios irmãos."
+   },
+   "hint": "Veja para que serve a posição recebida nos dois textos.",
+   "learningObjective": "Ligar a posição de Ester ao padrão de Deus preservar vidas.",
+   "evidence": [
+    "Ester 2:17",
+    "Gênesis 50:20"
+   ]
+  }
+ ]
+}

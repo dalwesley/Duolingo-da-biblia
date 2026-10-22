@@ -1,0 +1,59 @@
+Escreva a cena "periodo-inte-inter-02-esperanca-messianica" da trilha "periodo-intertestamentario" (Período Intertestamentário).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "periodo-intertestamentario",
+  "title": "Período Intertestamentário",
+  "description": "Os anos de silêncio profético — e a preparação do cenário.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Entre os testamentos",
+ "mission": {
+  "slug": "periodo-inte-inter-02-esperanca-messianica",
+  "title": "Esperança messiânica",
+  "type": "lesson",
+  "intro": "Anseio por livramento.",
+  "hookRef": "História / esperança messiânica",
+  "hookNote": "Anseio por livramento.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre esperança?"
+ },
+ "v2": {
+  "passageRef": "História / esperança messiânica",
+  "context": "Anseio por livramento.",
+  "keyword": "Esperança",
+  "verseRefs": [
+   "Malaquias 4:5–6"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Malaquias 4:2–6"
+ ],
+ "verses": [
+  {
+   "ref": "Malaquias 4:2",
+   "text": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria."
+  },
+  {
+   "ref": "Malaquias 4:3",
+   "text": "E pisareis os ímpios, pois se tornarão cinzas sob as plantas dos vossos pés, no dia em que eu fizer isso, diz o Senhor dos Exércitos."
+  },
+  {
+   "ref": "Malaquias 4:4",
+   "text": "Lembrem-se da Lei de Moisés, meu servo, que lhe prescrevi em Horebe para todo o Israel, ou seja, estatutos e juízos."
+  },
+  {
+   "ref": "Malaquias 4:5",
+   "text": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR."
+  },
+  {
+   "ref": "Malaquias 4:6",
+   "text": "Ele converterá o coração dos pais aos filhos, e o coração dos filhos aos pais; para que eu não venha e fira a terra com maldição."
+  }
+ ]
+}
+</cena>

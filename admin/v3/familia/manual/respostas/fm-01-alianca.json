@@ -1,0 +1,231 @@
+{
+ "study": {
+  "passageRef": "Efésios 5:21–25",
+  "passages": [{"ref": "Efésios 5:21–25"}],
+  "context": "Paulo mostra como a fé em Cristo aparece dentro de casa. O trecho começa com sujeição mútua no temor de Cristo e coloca o amor que se entrega no centro do casamento.",
+  "keyword": "Casamento",
+  "keywordGloss": "No texto, o casamento é lido à luz de Cristo e da igreja, com amor que se entrega e respeito.",
+  "focusQuestion": "Como o amor de Cristo, que se entregou, pode aparecer hoje nas suas relações em casa?",
+  "reflectionPrompts": ["Sujeição mútua", "Amor que se entrega", "Respeito em casa"],
+  "facts": [
+   {"text": "Todos são chamados a sujeitar-se uns aos outros no temor de Cristo.", "evidenceRef": "Efésios 5:21", "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo"},
+   {"text": "Cristo é a cabeça da igreja e o salvador do corpo.", "evidenceRef": "Efésios 5:23", "evidenceSpan": "Cristo é a cabeça da igreja"},
+   {"text": "Cristo amou a igreja e se entregou por ela.", "evidenceRef": "Efésios 5:25", "evidenceSpan": "Cristo amou a igreja e a si mesmo se entregou por ela"},
+   {"text": "Ao casar, os dois se tornam uma só carne.", "evidenceRef": "Efésios 5:31", "evidenceSpan": "os dois se tornarão uma só carne"},
+   {"text": "A esposa é chamada a respeitar o marido.", "evidenceRef": "Efésios 5:33", "evidenceSpan": "a esposa respeite o marido"}
+  ],
+  "keyTerms": [
+   {"term": "cabeça", "gloss": "No texto, Cristo cabeça é o salvador que se entrega pelo corpo, não um dominador."},
+   {"term": "entregou", "gloss": "Cristo se entregou pela igreja; esse é o modelo do amor do marido."},
+   {"term": "temor de Cristo", "gloss": "A reverência a Cristo é o clima da sujeição mútua em casa."}
+  ],
+  "structure": [
+   {"label": "Sujeição mútua no temor de Cristo", "evidenceRef": "Efésios 5:21"},
+   {"label": "Mulheres, maridos e Cristo cabeça", "evidenceRef": "Efésios 5:22–23"},
+   {"label": "A igreja sujeita a Cristo", "evidenceRef": "Efésios 5:24"},
+   {"label": "Maridos amam como Cristo se entregou", "evidenceRef": "Efésios 5:25"}
+  ],
+  "relations": [
+   {"kind": "propósito", "text": "Cristo se entregou para santificar a igreja, purificando-a pela palavra.", "marker": "Para", "evidenceRef": "Efésios 5:26"},
+   {"kind": "contraste", "text": "Ninguém odeia a própria carne; antes, cada um a alimenta e cuida dela.", "marker": "antes", "evidenceRef": "Efésios 5:29"},
+   {"kind": "resultado", "text": "Por isso o homem deixa pai e mãe, une-se à mulher e os dois são uma só carne.", "marker": "Por isso", "evidenceRef": "Efésios 5:31"}
+  ],
+  "crossRefs": [
+   {"ref": "Gênesis 2:24", "bridge": "Deixar, unir-se, uma só carne"},
+   {"ref": "Colossenses 3:19", "bridge": "Amar sem tratar com amargura"},
+   {"ref": "1 Pedro 3:7", "bridge": "Tratar a esposa com entendimento"}
+  ],
+  "misreadings": [
+   {"text": "Ser cabeça autoriza o marido a dominar ou maltratar a esposa.", "why": "No texto, a cabeça é Cristo, que se entregou, alimenta e cuida da igreja (5:25,29)."},
+   {"text": "Amar como Cristo significa aceitar calado qualquer abuso em casa.", "why": "O modelo é Cristo que se entrega para santificar e cuidar, nunca a violência contra o outro (5:25-29)."},
+   {"text": "Sujeição é só da mulher e não tem nada de mútuo no trecho.", "why": "O trecho começa ordenando que todos se sujeitem uns aos outros no temor de Cristo (5:21)."}
+  ],
+  "centralInsight": "No casamento, Cristo é a medida do amor que se entrega e do respeito mútuo",
+  "anchorQuestion": "Segundo Efésios 5:25, como Cristo mostrou amor pela igreja?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em Efésios 5:25, os maridos são chamados a amar suas esposas como Cristo amou a igreja.",
+   "verseRef": "Efésios 5:25", "correctOptionId": "true",
+   "evidenceSpan": "assim como Cristo amou a igreja",
+   "feedbackCorrect": "O modelo dado ao marido é o próprio Cristo, que amou a igreja e se entregou por ela.",
+   "feedbackWrong": {"false": "Releia Efésios 5:25 e veja a comparação com Cristo e a igreja."},
+   "hint": "Veja a comparação do versículo.", "learningObjective": "Observar Cristo como modelo do amor no casamento.", "evidence": ["Efésios 5:25"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em Efésios 5:25, toque quem os maridos devem imitar ao amar.",
+   "verseRef": "Efésios 5:25",
+   "options": [{"id": "a", "text": "Maridos"}, {"id": "b", "text": "Cristo"}, {"id": "c", "text": "igreja"}],
+   "correctOptionId": "b", "evidenceSpan": "Cristo amou a igreja",
+   "feedbackCorrect": "O marido ama olhando para Cristo, que se entregou pela igreja.",
+   "feedbackWrong": {"a": "Os maridos recebem a ordem; o modelo vem depois.", "c": "A igreja é quem foi amada; o modelo é quem amou."},
+   "hint": "Procure quem faz a ação de amar.", "learningObjective": "Identificar Cristo como modelo do amor do marido.", "evidence": ["Efésios 5:25"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo Efésios 5:31, o que acontece quando o homem se une à sua mulher?",
+   "verseRef": "Efésios 5:31",
+   "options": [{"id": "a", "text": "Os dois continuam vivendo separados"}, {"id": "b", "text": "Os dois se tornam uma só carne"}, {"id": "c", "text": "O homem volta a morar com os pais"}, {"id": "d", "text": "A mulher deixa de ter família"}],
+   "correctOptionId": "b", "evidenceSpan": "os dois se tornarão uma só carne",
+   "feedbackCorrect": "Unidos, marido e mulher se tornam uma só carne, diz o texto.",
+   "feedbackWrong": {"a": "O texto fala de união, não de vida separada.", "c": "O movimento é deixar pai e mãe para unir-se à mulher.", "d": "O texto não apaga a família de ninguém; fala da nova união."},
+   "hint": "Leia o fim do versículo.", "learningObjective": "Observar a união do casal como uma só carne.", "evidence": ["Efésios 5:31"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte Efésios 5:25 na ordem do texto.",
+   "verseRef": "Efésios 5:25",
+   "options": [{"id": "a", "text": "Maridos, amem suas próprias esposas"}, {"id": "b", "text": "assim como Cristo amou a igreja"}, {"id": "c", "text": "e a si mesmo se entregou por ela"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Maridos, amem suas próprias esposas",
+   "feedbackCorrect": "A ordem vem primeiro; depois, o modelo de Cristo que se entregou.",
+   "feedbackWrong": {"default": "Comece pela ordem aos maridos; a entrega de Cristo fecha o versículo."},
+   "hint": "O versículo começa com quem recebe a ordem.", "learningObjective": "Reconhecer a sequência de Efésios 5:25.", "evidence": ["Efésios 5:25"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em Efésios 5:33, com que atitude a esposa é chamada a tratar o marido?",
+   "verseRef": "Efésios 5:33",
+   "options": [{"id": "a", "text": "respeite"}, {"id": "b", "text": "ignore"}, {"id": "c", "text": "despreze"}],
+   "correctOptionId": "a", "evidenceSpan": "a esposa respeite o marido",
+   "feedbackCorrect": "O versículo fecha o trecho ligando amor do marido e respeito da esposa.",
+   "feedbackWrong": {"b": "Ignorar é o contrário do cuidado que o trecho ensina.", "c": "Desprezar contradiz o respeito pedido no fim do versículo."},
+   "hint": "Leia a última parte do trecho.", "learningObjective": "Lembrar o respeito pedido à esposa em Efésios 5:33.", "evidence": ["Efésios 5:33"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que Efésios 5:28 comunica que se liga a este contexto?",
+   "verseRef": "Efésios 5:28",
+   "passageA": {"ref": "Efésios 5:28"},
+   "passageB": {"ref": "Contexto", "text": "Em casa, cuidar do outro é também cuidar de quem Deus uniu a você."},
+   "options": [{"id": "a", "text": "Cuidar do outro como de si"}, {"id": "b", "text": "Cuidar apenas de si mesmo"}, {"id": "c", "text": "Ignorar quem está ao lado"}],
+   "correctOptionId": "a", "evidenceSpan": "Quem ama a esposa, ama a si mesmo",
+   "feedbackCorrect": "Quem ama a esposa ama a si mesmo; o cuidado com o outro volta ao próprio casal.",
+   "feedbackWrong": {"b": "O texto não separa o marido da esposa; quem ama um, ama o outro.", "c": "Ignorar é o contrário de amar como a si mesmo."},
+   "hint": "Veja a ligação entre amar a esposa e amar a si.", "learningObjective": "Ligar Efésios 5:28 ao cuidado mútuo no casamento.", "evidence": ["Efésios 5:28"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em Efésios 5:28, amar a esposa é apresentado como algo totalmente separado de amar a si mesmo.",
+   "verseRef": "Efésios 5:28", "correctOptionId": "false",
+   "evidenceSpan": "Quem ama a esposa, ama a si mesmo",
+   "feedbackCorrect": "O texto une as duas coisas; quem ama a esposa, ama a si mesmo.",
+   "feedbackWrong": {"true": "Releia o fim de Efésios 5:28 e veja a ligação direta."},
+   "hint": "Leia a segunda frase do versículo.", "learningObjective": "Compreender a ligação entre amar a esposa e a si mesmo.", "evidence": ["Efésios 5:28"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em Efésios 5:21, toque o trecho que mostra que a sujeição é mútua.",
+   "verseRef": "Efésios 5:21",
+   "options": [{"id": "a", "text": "no temor"}, {"id": "b", "text": "uns aos outros"}, {"id": "c", "text": "de Cristo"}],
+   "correctOptionId": "b", "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo",
+   "feedbackCorrect": "A ordem é para todos, uns aos outros, antes de falar de cada papel em casa.",
+   "feedbackWrong": {"a": "Isso diz o clima da sujeição, não quem se sujeita a quem.", "c": "Isso nomeia diante de quem vivemos, não a reciprocidade."},
+   "hint": "Procure quem se sujeita a quem.", "learningObjective": "Reconhecer a sujeição mútua que abre o trecho.", "evidence": ["Efésios 5:21"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como Efésios 5:26 se liga ao amor de Cristo em Efésios 5:25?",
+   "verseRef": "Efésios 5:25–26",
+   "options": [{"id": "a", "text": "Ele se entrega para tornar a igreja santa"}, {"id": "b", "text": "Ele se entrega para afastar a igreja de si"}, {"id": "c", "text": "Ele ama a igreja só quando ela já está perfeita"}, {"id": "d", "text": "Ele exige que a igreja se purifique sozinha"}],
+   "correctOptionId": "a", "evidenceSpan": "Para santificá-la, purificando-a mediante a lavagem da água pela palavra",
+   "feedbackCorrect": "A entrega de Cristo tem um alvo; ele se dá para santificar a igreja.",
+   "feedbackWrong": {"b": "A entrega aproxima e santifica, não afasta a igreja.", "c": "Cristo se entrega antes, para purificar a igreja.", "d": "É Cristo quem age para santificar, não a igreja sozinha."},
+   "hint": "Repare na palavra que mostra o alvo da entrega.", "learningObjective": "Relacionar a entrega de Cristo ao seu alvo de santificar.", "evidence": ["Efésios 5:25–26"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o trecho em Efésios 5:22–23?",
+   "verseRef": "Efésios 5:22–23",
+   "options": [{"id": "a", "text": "A mulher se submete ao seu marido"}, {"id": "b", "text": "O marido é apresentado como cabeça"}, {"id": "c", "text": "Cristo é cabeça e salvador da igreja"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Cristo é a cabeça da igreja",
+   "feedbackCorrect": "O texto sai do casal para Cristo, que dá o sentido da palavra cabeça.",
+   "feedbackWrong": {"default": "Comece pelo casal em 5:22; Cristo cabeça fecha o movimento."},
+   "hint": "Cristo aparece no segundo versículo do palco.", "learningObjective": "Compreender o movimento de Efésios 5:22–23.", "evidence": ["Efésios 5:22–23"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em Efésios 5:28, os maridos devem amar as esposas como a quem?",
+   "verseRef": "Efésios 5:28",
+   "options": [{"id": "a", "text": "si mesmos"}, {"id": "b", "text": "seus pais"}, {"id": "c", "text": "seus filhos"}],
+   "correctOptionId": "a", "evidenceSpan": "como a si mesmos",
+   "feedbackCorrect": "O marido ama a esposa como a si mesmo; o cuidado é de um só corpo.",
+   "feedbackWrong": {"b": "Pais aparecem em outro versículo, sobre deixar e unir-se.", "c": "Filhos não são a comparação feita neste versículo."},
+   "hint": "Leia a comparação no meio do versículo.", "learningObjective": "Compreender o amor do marido como cuidado de si e do outro.", "evidence": ["Efésios 5:28"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga Efésios 5:31 a Gênesis 2:24?",
+   "verseRef": "Efésios 5:31",
+   "passageA": {"ref": "Efésios 5:31"},
+   "passageB": {"ref": "Gênesis 2:24"},
+   "options": [{"id": "a", "text": "Deixar, unir-se e ser um"}, {"id": "b", "text": "Voltar para casa dos pais"}, {"id": "c", "text": "Viver sem compromisso algum"}],
+   "correctOptionId": "a", "evidenceSpan": "o homem deixará seu pai e sua mãe",
+   "feedbackCorrect": "Paulo cita Gênesis; deixar os pais e unir-se forma uma só carne.",
+   "feedbackWrong": {"b": "O movimento do texto é sair da casa dos pais, não voltar.", "c": "A união descrita é compromisso profundo, não ausência dele."},
+   "hint": "Compare os verbos dos dois trechos.", "learningObjective": "Relacionar o casamento em Efésios à criação em Gênesis.", "evidence": ["Efésios 5:31", "Gênesis 2:24"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Em Efésios 5:32, o mistério do casamento é explicado como referência a Cristo e à igreja.",
+   "verseRef": "Efésios 5:32", "correctOptionId": "true",
+   "evidenceSpan": "eu me refiro a Cristo e à igreja",
+   "feedbackCorrect": "Paulo diz com clareza; o mistério aponta para Cristo e para a igreja.",
+   "feedbackWrong": {"false": "Releia o fim de Efésios 5:32 e veja a explicação de Paulo."},
+   "hint": "Leia a explicação no fim do versículo.", "learningObjective": "Interpretar o casamento como sinal de Cristo e da igreja.", "evidence": ["Efésios 5:32"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em Efésios 5:32, toque a quem, junto com Cristo, o mistério se refere.",
+   "verseRef": "Efésios 5:32",
+   "options": [{"id": "a", "text": "este mistério"}, {"id": "b", "text": "à igreja"}, {"id": "c", "text": "Grande"}],
+   "correctOptionId": "b", "evidenceSpan": "eu me refiro a Cristo e à igreja",
+   "feedbackCorrect": "O mistério do casamento aponta para Cristo e para a igreja, diz Paulo.",
+   "feedbackWrong": {"a": "Isso nomeia o mistério, não a quem ele se refere.", "c": "Isso diz o tamanho do mistério, não o seu alvo."},
+   "hint": "Leia a explicação depois dos dois-pontos.", "learningObjective": "Sustentar com o texto o alvo do mistério do casamento.", "evidence": ["Efésios 5:32"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura Efésios 5:25 sustenta sobre ser cabeça no casamento?",
+   "verseRef": "Efésios 5:25",
+   "options": [{"id": "a", "text": "Cabeça é amar entregando-se, não dominando"}, {"id": "b", "text": "Cabeça é mandar sem nunca servir o outro"}, {"id": "c", "text": "Cabeça é cuidar apenas de si mesmo sempre"}, {"id": "d", "text": "Cabeça é exigir tudo sem se entregar nada"}],
+   "correctOptionId": "a", "evidenceSpan": "a si mesmo se entregou por ela",
+   "feedbackCorrect": "A medida da cabeça é Cristo, que se entregou pela igreja que ama.",
+   "feedbackWrong": {"b": "Cristo cabeça se entregou; mandar sem servir inverte o modelo.", "c": "O texto manda alimentar e cuidar do outro, não só de si.", "d": "Exigir sem entrega contradiz Cristo, que se deu pela igreja."},
+   "hint": "Veja o que Cristo fez pela igreja.", "learningObjective": "Escolher a leitura de cabeça que o texto sustenta.", "evidence": ["Efésios 5:25"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o caminho do amor de Cristo em Efésios 5:25–27?",
+   "verseRef": "Efésios 5:25",
+   "options": [{"id": "a", "text": "Cristo ama a igreja e se entrega"}, {"id": "b", "text": "A igreja é santificada pela palavra"}, {"id": "c", "text": "A igreja é apresentada santa e gloriosa"}],
+   "correctOrder": ["a", "b", "c"], "evidenceSpan": "Cristo amou a igreja",
+   "feedbackCorrect": "Entrega, santificação e apresentação santa formam o caminho do texto.",
+   "feedbackWrong": {"default": "Siga Efésios 5 na ordem; a entrega vem antes da santificação."},
+   "hint": "Comece pelo que Cristo fez em 5:25.", "learningObjective": "Ver o encadeamento entrega, santificação e glória.", "evidence": ["Efésios 5:25", "Efésios 5:26", "Efésios 5:27"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em Efésios 5:31, o que o homem faz em relação ao pai e à mãe ao casar?",
+   "verseRef": "Efésios 5:31",
+   "options": [{"id": "a", "text": "deixará"}, {"id": "b", "text": "esquecerá"}, {"id": "c", "text": "evitará"}],
+   "correctOptionId": "a", "evidenceSpan": "o homem deixará seu pai e sua mãe",
+   "feedbackCorrect": "Deixar pai e mãe é o primeiro passo para unir-se e ser uma só carne.",
+   "feedbackWrong": {"b": "Deixar não é esquecer; é sair para formar a nova união.", "c": "O texto não fala de evitar os pais, mas de nova prioridade."},
+   "hint": "É o primeiro verbo do versículo sobre o homem.", "learningObjective": "Lembrar o verbo que abre a nova união do casal.", "evidence": ["Efésios 5:31"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga Efésios 5:29 a 1 Pedro 3:7?",
+   "verseRef": "Efésios 5:29",
+   "passageA": {"ref": "Efésios 5:29"},
+   "passageB": {"ref": "1 Pedro 3:7"},
+   "options": [{"id": "a", "text": "Tratar com cuidado e entendimento"}, {"id": "b", "text": "Tratar com dureza e distância"}, {"id": "c", "text": "Ignorar as necessidades do outro"}],
+   "correctOptionId": "a", "evidenceSpan": "a alimenta e cuida dela",
+   "feedbackCorrect": "Nos dois textos, o marido trata a esposa com cuidado, nunca com dureza.",
+   "feedbackWrong": {"b": "Dureza contradiz alimentar, cuidar e tratar com entendimento.", "c": "Os dois textos chamam a atenção para o outro, não a ignorá-lo."},
+   "hint": "Compare o cuidado descrito nos dois trechos.", "learningObjective": "Ligar o cuidado do marido em Efésios e em Pedro.", "evidence": ["Efésios 5:29", "1 Pedro 3:7"]
+  }
+ ]
+}

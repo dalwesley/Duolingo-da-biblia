@@ -1,0 +1,75 @@
+Escreva a cena "ip-02-perseguicao" da trilha "igreja-primitiva" (Igreja Primitiva).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "igreja-primitiva",
+  "title": "Igreja Primitiva",
+  "description": "Dos apóstolos aos pais da igreja — fé sob pressão romana.",
+  "realm": "vida-crista"
+ },
+ "block": "Igreja Primitiva",
+ "mission": {
+  "slug": "ip-02-perseguicao",
+  "title": "Fé em meio à perseguição",
+  "type": "lesson",
+  "intro": "Diante das ameaças, a igreja orou por ousadia para anunciar a Palavra, e Deus a fortaleceu.",
+  "hookRef": "Atos 4:29-31",
+  "hookNote": "Diante das ameaças, a igreja orou por ousadia para anunciar a Palavra, e Deus a fortaleceu.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "Atos 4:29-31"
+ },
+ "v2": {
+  "passageRef": "Atos 4:29-31",
+  "context": "Diante das ameaças, a igreja orou por ousadia para anunciar a Palavra, e Deus a fortaleceu.",
+  "keyword": "Meio",
+  "verseRefs": [
+   "Atos 4:29-31"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 4:26–34"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 4:26",
+   "text": "Levantaram-se os reis da terra, e as autoridades se reuniram à uma contra o Senhor e contra o seu Ungido;"
+  },
+  {
+   "ref": "Atos 4:27",
+   "text": "Porque verdadeiramente se uniram nesta cidade contra o teu santo Servo Jesus, a quem ungiste, Herodes e Pôncio Pilatos, com os gentios e os povos de Israel;"
+  },
+  {
+   "ref": "Atos 4:28",
+   "text": "Para realizarem tudo o que a tua mão e o teu propósito já haviam determinado"
+  },
+  {
+   "ref": "Atos 4:29",
+   "text": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que anunciem com toda a intrepidez a tua palavra."
+  },
+  {
+   "ref": "Atos 4:30",
+   "text": "Estendendo a tua mão para realizar curas, sinais e prodígios pelo nome do teu santo Servo Jesus."
+  },
+  {
+   "ref": "Atos 4:31",
+   "text": "E, depois de orarem, o lugar onde estavam reunidos tremeu; todos ficaram cheios do Espírito Santo e anunciavam com intrepidez a palavra de Deus."
+  },
+  {
+   "ref": "Atos 4:32",
+   "text": "A multidão dos que criam era de um só coração e de uma só alma; ninguém considerava exclusivamente sua nem uma das coisas que possuía, mas tudo, entre eles, lhes era comum."
+  },
+  {
+   "ref": "Atos 4:33",
+   "text": "Os apóstolos davam testemunho da ressurreição do Senhor Jesus com grande poder e havia abundante graça sobre todos eles."
+  },
+  {
+   "ref": "Atos 4:34",
+   "text": "Não havia, portanto, entre eles, nenhum necessitado, pois todos os que possuíam terrenos ou casas, vendendo-os, traziam o valor correspondente e o depositavam aos pés dos apóstolos."
+  }
+ ]
+}
+</cena>

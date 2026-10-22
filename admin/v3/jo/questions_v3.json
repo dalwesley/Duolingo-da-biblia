@@ -1,0 +1,4063 @@
+[
+  {
+    "id": "jo-sem-jo-dialogo-01-amigos-e-acusacoes-01",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jó 38:1, o Senhor responde a Jó do meio de um redemoinho.",
+    "prompt": "Em Jó 38:1, o Senhor responde a Jó do meio de um redemoinho.",
+    "cue": "Em Jó 38:1, o Senhor responde a Jó do meio de um redemoinho.",
+    "verseRef": "Jó 38:1",
+    "passageText": "Então, do meio de um redemoinho, o Senhor respondeu a Jó:",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "do meio de um redemoinho, o Senhor respondeu a Jó",
+    "feedbackCorrect": "Depois de tantos discursos humanos, é o Senhor quem finalmente fala a Jó.",
+    "feedbackWrong": {
+      "false": "Jó 38:1 diz que o Senhor respondeu a Jó do meio de um redemoinho."
+    },
+    "hint": "Veja de onde vem a voz do Senhor.",
+    "learningObjective": "Observar como começa a resposta de Deus.",
+    "evidence": [
+      "Jó 38:1"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-01-amigos-e-acusacoes-02",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jó 38:1, toque de onde o Senhor responde a Jó.",
+    "prompt": "Em Jó 38:1, toque de onde o Senhor responde a Jó.",
+    "cue": "Em Jó 38:1, toque de onde o Senhor responde a Jó.",
+    "verseRef": "Jó 38:1",
+    "passageText": "Então, do meio de um redemoinho, o Senhor respondeu a Jó:",
+    "options": [
+      {
+        "id": "a",
+        "text": "um redemoinho"
+      },
+      {
+        "id": "b",
+        "text": "a Jó"
+      },
+      {
+        "id": "c",
+        "text": "o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "do meio de um redemoinho",
+    "feedbackCorrect": "A resposta de Deus chega do meio de um redemoinho, com grandeza e peso.",
+    "feedbackWrong": {
+      "b": "Jó é quem ouve a resposta, não o lugar de onde ela vem.",
+      "c": "O Senhor é quem fala, não o lugar da fala."
+    },
+    "hint": "Procure o cenário da voz de Deus.",
+    "learningObjective": "Identificar o cenário da resposta de Deus.",
+    "evidence": [
+      "Jó 38:1"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-01-amigos-e-acusacoes-03",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jó 38:4, o que Deus pergunta a Jó sobre a terra?",
+    "prompt": "Segundo Jó 38:4, o que Deus pergunta a Jó sobre a terra?",
+    "cue": "Segundo Jó 38:4, o que Deus pergunta a Jó sobre a terra?",
+    "verseRef": "Jó 38:4",
+    "passageText": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onde ele estava ao serem lançados os fundamentos"
+      },
+      {
+        "id": "b",
+        "text": "Quem mediu os rios da terra"
+      },
+      {
+        "id": "c",
+        "text": "Quem deu nome a cada estrela"
+      },
+      {
+        "id": "d",
+        "text": "Onde ficam as portas da morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Onde estavas tu quando eu lançava os fundamentos da terra",
+    "feedbackCorrect": "A primeira grande pergunta coloca Jó diante de um tempo em que ele não existia.",
+    "feedbackWrong": {
+      "b": "A pergunta aqui é sobre os fundamentos da terra, não sobre rios.",
+      "c": "As estrelas aparecem em outros versículos, com outra pergunta.",
+      "d": "As portas da morte são perguntadas mais adiante, em 38:17."
+    },
+    "hint": "Leia a primeira pergunta de Deus no capítulo.",
+    "learningObjective": "Observar a primeira pergunta de Deus a Jó.",
+    "evidence": [
+      "Jó 38:4"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-01-amigos-e-acusacoes-04",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jó 38:1-2 na ordem do texto.",
+    "prompt": "Monte Jó 38:1-2 na ordem do texto.",
+    "cue": "Monte Jó 38:1-2 na ordem do texto.",
+    "verseRef": "Jó 38:1–2",
+    "passageText": "Então, do meio de um redemoinho, o Senhor respondeu a Jó: Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, do meio de um redemoinho, o Senhor respondeu a Jó"
+      },
+      {
+        "id": "b",
+        "text": "Quem é este que obscurece o meu propósito"
+      },
+      {
+        "id": "c",
+        "text": "com palavras sem entendimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então, do meio de um redemoinho, o Senhor respondeu a Jó",
+    "feedbackCorrect": "Deus chega falando e já questiona palavras ditas sem entendimento.",
+    "feedbackWrong": {
+      "default": "Comece pela chegada do Senhor; a pergunta vem depois."
+    },
+    "hint": "O capítulo começa com a resposta do Senhor.",
+    "learningObjective": "Reconhecer a abertura da resposta de Deus.",
+    "evidence": [
+      "Jó 38:1–2"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-01-amigos-e-acusacoes-05",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jó 38:4, Deus lançava os fundamentos de quê ao perguntar a Jó?",
+    "prompt": "Em Jó 38:4, Deus lançava os fundamentos de quê ao perguntar a Jó?",
+    "cue": "Em Jó 38:4, Deus lançava os fundamentos de quê ao perguntar a Jó?",
+    "verseRef": "Jó 38:4",
+    "passageText": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento.",
+    "template": "Onde estavas tu quando eu lançava os fundamentos da ___? Dize-mo, se tens entendimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lançava os fundamentos da terra",
+    "feedbackCorrect": "Deus pergunta por um momento anterior a Jó, o lançamento dos fundamentos da terra.",
+    "feedbackWrong": {
+      "b": "O céu aparece em outras perguntas; aqui são os fundamentos da terra.",
+      "c": "O mar é tratado depois, a partir de Jó 38:8."
+    },
+    "hint": "Veja o que Deus estava fundando na pergunta.",
+    "learningObjective": "Lembrar o objeto da primeira pergunta de Deus.",
+    "evidence": [
+      "Jó 38:4"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-01-amigos-e-acusacoes-06",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jó 38:2 comunica que se liga a este contexto?",
+    "prompt": "O que Jó 38:2 comunica que se liga a este contexto?",
+    "cue": "O que Jó 38:2 comunica que se liga a este contexto?",
+    "verseRef": "Jó 38:2",
+    "passageText": "Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "passageA": {
+      "ref": "Jó 38:2",
+      "text": "Quem é este que obscurece o meu propósito com palavras sem entendimento?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Muitas palavras sobre Deus e a dor foram ditas antes de Deus falar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Falar sem entendimento obscurece"
+      },
+      {
+        "id": "b",
+        "text": "Deus aprova cada discurso anterior"
+      },
+      {
+        "id": "c",
+        "text": "Toda fala humana acerta sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "obscurece o meu propósito com palavras sem entendimento",
+    "feedbackCorrect": "Deus avalia que palavras sem entendimento tornam seu propósito mais escuro.",
+    "feedbackWrong": {
+      "b": "A primeira fala de Deus é de correção, não de aprovação geral.",
+      "c": "Deus corrige justamente a falta de entendimento nas palavras."
+    },
+    "hint": "Veja o efeito das palavras citado por Deus.",
+    "learningObjective": "Ligar Jó 38:2 ao risco de falar sem entender.",
+    "evidence": [
+      "Jó 38:2"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-01-amigos-e-acusacoes-01",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jó 38:2, Deus afirma que as palavras anteriores explicaram plenamente o seu propósito.",
+    "prompt": "Em Jó 38:2, Deus afirma que as palavras anteriores explicaram plenamente o seu propósito.",
+    "cue": "Em Jó 38:2, Deus afirma que as palavras anteriores explicaram plenamente o seu propósito.",
+    "verseRef": "Jó 38:2",
+    "passageText": "Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "com palavras sem entendimento",
+    "feedbackCorrect": "Deus diz o contrário, pois as palavras obscureceram seu propósito.",
+    "feedbackWrong": {
+      "true": "Releia Jó 38:2, onde Deus fala de palavras sem entendimento."
+    },
+    "hint": "Veja como Deus qualifica as palavras anteriores.",
+    "learningObjective": "Compreender a correção de Deus às falas humanas.",
+    "evidence": [
+      "Jó 38:2"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-01-amigos-e-acusacoes-02",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jó 38:2, toque como Deus descreve as palavras que obscurecem seu propósito.",
+    "prompt": "Em Jó 38:2, toque como Deus descreve as palavras que obscurecem seu propósito.",
+    "cue": "Em Jó 38:2, toque como Deus descreve as palavras que obscurecem seu propósito.",
+    "verseRef": "Jó 38:2",
+    "passageText": "Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu propósito"
+      },
+      {
+        "id": "b",
+        "text": "Quem é este"
+      },
+      {
+        "id": "c",
+        "text": "sem entendimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com palavras sem entendimento",
+    "feedbackCorrect": "O problema não é falar de Deus, mas falar sem entendimento do que ele faz.",
+    "feedbackWrong": {
+      "a": "Isso é o que fica obscurecido, não como as palavras são descritas.",
+      "b": "Isso abre a pergunta de Deus, não descreve as palavras."
+    },
+    "hint": "Procure a descrição que vem depois de palavras.",
+    "learningObjective": "Reconhecer a qualificação das falas em Jó 38:2.",
+    "evidence": [
+      "Jó 38:2"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-01-amigos-e-acusacoes-03",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jó 38:1-2 muda a cena depois de tantos discursos humanos?",
+    "prompt": "Como Jó 38:1-2 muda a cena depois de tantos discursos humanos?",
+    "cue": "Como Jó 38:1-2 muda a cena depois de tantos discursos humanos?",
+    "verseRef": "Jó 38:1–2",
+    "passageText": "Então, do meio de um redemoinho, o Senhor respondeu a Jó: Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outro amigo toma a palavra para acusar Jó"
+      },
+      {
+        "id": "b",
+        "text": "O próprio Senhor responde e corrige falas vazias"
+      },
+      {
+        "id": "c",
+        "text": "Um mensageiro traz notícias de novas perdas"
+      },
+      {
+        "id": "d",
+        "text": "Jó encerra o assunto e fica em silêncio total"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor respondeu a Jó",
+    "feedbackCorrect": "A virada é Deus mesmo falar, questionando palavras ditas sem entendimento.",
+    "feedbackWrong": {
+      "a": "Quem toma a palavra agora é o Senhor, não mais um dos homens.",
+      "c": "Não há mensageiro novo; há a chegada da voz do Senhor.",
+      "d": "Jó não encerra nada; Deus o chama a responder perguntas."
+    },
+    "hint": "Veja quem passa a falar no capítulo 38.",
+    "learningObjective": "Compreender a virada de Jó 38 na história.",
+    "evidence": [
+      "Jó 38:1–2"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-01-amigos-e-acusacoes-04",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a fala de Deus em Jó 38:1-4?",
+    "prompt": "Como avança a fala de Deus em Jó 38:1-4?",
+    "cue": "Como avança a fala de Deus em Jó 38:1-4?",
+    "verseRef": "Jó 38:1–2",
+    "passageText": "Então, do meio de um redemoinho, o Senhor respondeu a Jó: Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor responde do redemoinho"
+      },
+      {
+        "id": "b",
+        "text": "Deus expõe palavras sem entendimento"
+      },
+      {
+        "id": "c",
+        "text": "Deus pergunta onde Jó estava na criação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor respondeu a Jó",
+    "feedbackCorrect": "Deus chega, corrige a fala humana e então pergunta pela criação da terra.",
+    "feedbackWrong": {
+      "default": "A pergunta sobre a terra vem depois da chegada e da correção."
+    },
+    "hint": "A criação da terra é o último passo aqui.",
+    "learningObjective": "Compreender os movimentos iniciais de Jó 38.",
+    "evidence": [
+      "Jó 38:1–2"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-01-amigos-e-acusacoes-05",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jó 38:11, que palavra de Deus marca onde as ondas devem parar?",
+    "prompt": "Em Jó 38:11, que palavra de Deus marca onde as ondas devem parar?",
+    "cue": "Em Jó 38:11, que palavra de Deus marca onde as ondas devem parar?",
+    "verseRef": "Jó 38:11",
+    "passageText": "E disse: Até aqui chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?",
+    "template": "E disse: Até ___ chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "aqui"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "depois"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "aqui se quebrará a bravura das tuas ondas",
+    "feedbackCorrect": "Deus fixa o ponto exato onde a força do mar deve se quebrar.",
+    "feedbackWrong": {
+      "b": "A ordem de Deus aponta o aqui do limite das ondas.",
+      "c": "O texto marca um lugar preciso para o limite, não um tempo depois."
+    },
+    "hint": "Veja onde a bravura das ondas se quebra.",
+    "learningObjective": "Compreender o limite posto por Deus ao mar.",
+    "evidence": [
+      "Jó 38:11"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-01-amigos-e-acusacoes-06",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jó 38:4 a Gênesis 1:1?",
+    "prompt": "O que liga Jó 38:4 a Gênesis 1:1?",
+    "cue": "O que liga Jó 38:4 a Gênesis 1:1?",
+    "verseRef": "Jó 38:4",
+    "passageText": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento.",
+    "passageA": {
+      "ref": "Jó 38:4",
+      "text": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento."
+    },
+    "passageB": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria desde o princípio"
+      },
+      {
+        "id": "b",
+        "text": "A terra surgiu sem um autor"
+      },
+      {
+        "id": "c",
+        "text": "O homem ajudou Deus a criar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quando eu lançava os fundamentos da terra",
+    "feedbackCorrect": "Nos dois textos, Deus é o autor da terra antes de qualquer presença humana.",
+    "feedbackWrong": {
+      "b": "Os dois textos dão um autor à terra, e esse autor é Deus.",
+      "c": "Gênesis e Jó colocam Deus sozinho como Criador no princípio."
+    },
+    "hint": "Compare quem age no princípio nos dois textos.",
+    "learningObjective": "Relacionar a pergunta de Deus ao Deus Criador.",
+    "evidence": [
+      "Jó 38:4",
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-01-amigos-e-acusacoes-01",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Jó 38:4, Deus pergunta a Jó onde ele estava quando os fundamentos da terra foram lançados.",
+    "prompt": "Em Jó 38:4, Deus pergunta a Jó onde ele estava quando os fundamentos da terra foram lançados.",
+    "cue": "Em Jó 38:4, Deus pergunta a Jó onde ele estava quando os fundamentos da terra foram lançados.",
+    "verseRef": "Jó 38:4",
+    "passageText": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Onde estavas tu quando eu lançava os fundamentos da terra",
+    "feedbackCorrect": "A pergunta mostra que Jó não estava lá quando Deus estabeleceu a terra.",
+    "feedbackWrong": {
+      "false": "É exatamente a pergunta que Deus faz em Jó 38:4."
+    },
+    "hint": "Releia a primeira pergunta feita a Jó.",
+    "learningObjective": "Interpretar o limite humano diante da criação.",
+    "evidence": [
+      "Jó 38:4"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-01-amigos-e-acusacoes-02",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jó 38:4, toque o trecho que mostra a ação de Deus na criação.",
+    "prompt": "Em Jó 38:4, toque o trecho que mostra a ação de Deus na criação.",
+    "cue": "Em Jó 38:4, toque o trecho que mostra a ação de Deus na criação.",
+    "verseRef": "Jó 38:4",
+    "passageText": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onde estavas tu"
+      },
+      {
+        "id": "b",
+        "text": "lançava os fundamentos"
+      },
+      {
+        "id": "c",
+        "text": "se tens entendimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quando eu lançava os fundamentos da terra",
+    "feedbackCorrect": "Só Deus aparece agindo no lançamento dos fundamentos da terra.",
+    "feedbackWrong": {
+      "a": "Isso pergunta pela ausência de Jó, não mostra a ação de Deus.",
+      "c": "Isso desafia o entendimento de Jó, não descreve Deus criando."
+    },
+    "hint": "Procure o verbo que tem Deus como sujeito.",
+    "learningObjective": "Sustentar que Deus age sozinho na criação.",
+    "evidence": [
+      "Jó 38:4"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-01-amigos-e-acusacoes-03",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jó 38:1-4 sustenta sobre as explicações humanas diante da dor?",
+    "prompt": "Que leitura Jó 38:1-4 sustenta sobre as explicações humanas diante da dor?",
+    "cue": "Que leitura Jó 38:1-4 sustenta sobre as explicações humanas diante da dor?",
+    "verseRef": "Jó 38:1–2",
+    "passageText": "Então, do meio de um redemoinho, o Senhor respondeu a Jó: Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elas tornam desnecessário ouvir o próprio Deus"
+      },
+      {
+        "id": "b",
+        "text": "Elas alcançam tudo o que Deus está fazendo"
+      },
+      {
+        "id": "c",
+        "text": "Elas devem acusar quem sofre para ajudar"
+      },
+      {
+        "id": "d",
+        "text": "Elas têm limites e podem falar sem entendimento"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "com palavras sem entendimento",
+    "feedbackCorrect": "Deus mesmo expõe o limite das falas humanas sobre seu propósito.",
+    "feedbackWrong": {
+      "a": "É ouvindo Deus que Jó é colocado no seu devido lugar.",
+      "b": "Deus chama as palavras de sem entendimento, não de completas.",
+      "c": "Acusar quem sofre é justamente o tipo de fala que Deus corrige."
+    },
+    "hint": "Veja a avaliação que o próprio Deus faz das falas.",
+    "learningObjective": "Escolher a leitura sustentada sobre falas humanas.",
+    "evidence": [
+      "Jó 38:1–2"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-01-amigos-e-acusacoes-04",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o governo de Deus lembrado na Bíblia?",
+    "prompt": "Qual sequência revela o governo de Deus lembrado na Bíblia?",
+    "cue": "Qual sequência revela o governo de Deus lembrado na Bíblia?",
+    "verseRef": "Jó 38:11",
+    "passageText": "E disse: Até aqui chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus lança os fundamentos da terra"
+      },
+      {
+        "id": "b",
+        "text": "Deus põe limite às águas do mar"
+      },
+      {
+        "id": "c",
+        "text": "O salmo louva o limite dado às águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Até aqui chegarás, e não mais além",
+    "feedbackCorrect": "O Deus que funda a terra e limita o mar é louvado depois pelo mesmo cuidado.",
+    "feedbackWrong": {
+      "default": "Siga de Jó 38 ao louvor do salmo sobre as águas."
+    },
+    "hint": "O salmo vem depois, retomando o limite das águas.",
+    "learningObjective": "Ver o governo de Deus como fio bíblico.",
+    "evidence": [
+      "Jó 38:11",
+      "Salmos 104:9"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-01-amigos-e-acusacoes-05",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jó 38:7, o que as estrelas da alva faziam juntas na criação?",
+    "prompt": "Em Jó 38:7, o que as estrelas da alva faziam juntas na criação?",
+    "cue": "Em Jó 38:7, o que as estrelas da alva faziam juntas na criação?",
+    "verseRef": "Jó 38:7",
+    "passageText": "quando as estrelas da alva, juntas, alegremente cantavam, e todos os filhos de Deus rejubilavam?",
+    "template": "quando as estrelas da alva, juntas, alegremente ___, e todos os filhos de Deus rejubilavam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "lutavam"
+      },
+      {
+        "id": "b",
+        "text": "dormiam"
+      },
+      {
+        "id": "c",
+        "text": "cantavam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quando as estrelas da alva, juntas, alegremente cantavam",
+    "feedbackCorrect": "A criação começa em clima de louvor, antes de Jó existir.",
+    "feedbackWrong": {
+      "a": "Não há luta na cena; há canto e alegria na criação.",
+      "b": "O texto fala de canto alegre, não de sono das estrelas."
+    },
+    "hint": "Veja a ação alegre das estrelas no versículo.",
+    "learningObjective": "Lembrar a imagem de louvor na criação.",
+    "evidence": [
+      "Jó 38:7"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-01-amigos-e-acusacoes-06",
+    "trail": "jo",
+    "section": "jo-dialogo-01-amigos-e-acusacoes",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jó 38:11 a Salmos 104:9?",
+    "prompt": "O que liga Jó 38:11 a Salmos 104:9?",
+    "cue": "O que liga Jó 38:11 a Salmos 104:9?",
+    "verseRef": "Jó 38:11",
+    "passageText": "E disse: Até aqui chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?",
+    "passageA": {
+      "ref": "Jó 38:11",
+      "text": "E disse: Até aqui chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?"
+    },
+    "passageB": {
+      "ref": "Salmos 104:9",
+      "text": "Puseste um limite às águas que não ultrapassarão, para que não tornem a cobrir a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "As águas escapam do governo divino"
+      },
+      {
+        "id": "b",
+        "text": "Deus põe limite às águas"
+      },
+      {
+        "id": "c",
+        "text": "O mar decide suas fronteiras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Até aqui chegarás, e não mais além",
+    "feedbackCorrect": "Nos dois textos, as águas têm fronteira marcada pela palavra de Deus.",
+    "feedbackWrong": {
+      "a": "O salmo diz que as águas não ultrapassarão o limite posto.",
+      "c": "Quem decide a fronteira do mar é Deus, nos dois textos."
+    },
+    "hint": "Compare o limite citado nos dois trechos.",
+    "learningObjective": "Ligar o limite do mar em Jó e nos Salmos.",
+    "evidence": [
+      "Jó 38:11",
+      "Salmos 104:9"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-02-deus-responde-01",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jó 38:3, Deus manda Jó cingir os lombos e se calar sem responder nada.",
+    "prompt": "Em Jó 38:3, Deus manda Jó cingir os lombos e se calar sem responder nada.",
+    "cue": "Em Jó 38:3, Deus manda Jó cingir os lombos e se calar sem responder nada.",
+    "verseRef": "Jó 38:3",
+    "passageText": "Cinge, portanto, os lombos como um homem; eu te perguntarei, e tu me ensinarás.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "eu te perguntarei, e tu me ensinarás",
+    "feedbackCorrect": "Deus chama Jó a responder, assumindo ele mesmo o papel de perguntar.",
+    "feedbackWrong": {
+      "true": "Releia Jó 38:3, onde Deus diz que perguntará e Jó ensinará."
+    },
+    "hint": "Veja quem pergunta e quem responde.",
+    "learningObjective": "Observar o chamado de Deus a Jó.",
+    "evidence": [
+      "Jó 38:3"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-02-deus-responde-02",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jó 38:3, toque o que Jó deve cingir como um homem.",
+    "prompt": "Em Jó 38:3, toque o que Jó deve cingir como um homem.",
+    "cue": "Em Jó 38:3, toque o que Jó deve cingir como um homem.",
+    "verseRef": "Jó 38:3",
+    "passageText": "Cinge, portanto, os lombos como um homem; eu te perguntarei, e tu me ensinarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os lombos"
+      },
+      {
+        "id": "b",
+        "text": "um homem"
+      },
+      {
+        "id": "c",
+        "text": "tu me ensinarás"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Cinge, portanto, os lombos como um homem",
+    "feedbackCorrect": "Cingir os lombos é preparar-se para um encontro sério com Deus.",
+    "feedbackWrong": {
+      "b": "Isso compara Jó a um homem pronto, não é o que ele cinge.",
+      "c": "Isso é o que Jó fará ao responder, não o que ele cinge."
+    },
+    "hint": "Procure a ordem de preparo que Deus dá.",
+    "learningObjective": "Identificar o preparo pedido a Jó.",
+    "evidence": [
+      "Jó 38:3"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-02-deus-responde-03",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jó 38:5, o que Deus pergunta sobre a terra?",
+    "prompt": "Segundo Jó 38:5, o que Deus pergunta sobre a terra?",
+    "cue": "Segundo Jó 38:5, o que Deus pergunta sobre a terra?",
+    "verseRef": "Jó 38:5",
+    "passageText": "Quem determinou suas medidas, se é que o sabes? Ou quem estendeu sobre ela o cordel de medir?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem nomeou cada rio e cada vale"
+      },
+      {
+        "id": "b",
+        "text": "Quem contou as nuvens do céu"
+      },
+      {
+        "id": "c",
+        "text": "Quem determinou as medidas dela"
+      },
+      {
+        "id": "d",
+        "text": "Quem guardou as portas da morte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quem determinou suas medidas, se é que o sabes",
+    "feedbackCorrect": "Deus pergunta pelas medidas da terra e pelo cordel de medir estendido sobre ela.",
+    "feedbackWrong": {
+      "a": "A pergunta aqui é sobre medidas, não sobre nomes de rios.",
+      "b": "Contar as nuvens é outra pergunta, em Jó 38:37.",
+      "d": "As portas da morte aparecem depois, em Jó 38:17."
+    },
+    "hint": "Leia a primeira pergunta do versículo.",
+    "learningObjective": "Observar a pergunta sobre as medidas da terra.",
+    "evidence": [
+      "Jó 38:5"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-02-deus-responde-04",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jó 38:10-11 na ordem do texto.",
+    "prompt": "Monte Jó 38:10-11 na ordem do texto.",
+    "cue": "Monte Jó 38:10-11 na ordem do texto.",
+    "verseRef": "Jó 38:10–11",
+    "passageText": "Quando eu tracei para ele um limite e coloquei portas e ferrolhos; E disse: Até aqui chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando eu tracei para ele um limite"
+      },
+      {
+        "id": "b",
+        "text": "E disse: Até aqui chegarás, e não mais além"
+      },
+      {
+        "id": "c",
+        "text": "aqui se quebrará a bravura das tuas ondas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Quando eu tracei para ele um limite",
+    "feedbackCorrect": "Deus traça o limite, fala ao mar e fixa onde as ondas se quebram.",
+    "feedbackWrong": {
+      "default": "Comece pelo limite traçado por Deus ao mar."
+    },
+    "hint": "O limite vem antes da fala ao mar.",
+    "learningObjective": "Reconhecer a sequência sobre o mar.",
+    "evidence": [
+      "Jó 38:10–11"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-02-deus-responde-05",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jó 38:5, o que Deus pergunta que foi determinado sobre a terra?",
+    "prompt": "Em Jó 38:5, o que Deus pergunta que foi determinado sobre a terra?",
+    "cue": "Em Jó 38:5, o que Deus pergunta que foi determinado sobre a terra?",
+    "verseRef": "Jó 38:5",
+    "passageText": "Quem determinou suas medidas, se é que o sabes? Ou quem estendeu sobre ela o cordel de medir?",
+    "template": "Quem determinou suas ___, se é que o sabes? Ou quem estendeu sobre ela o cordel de medir?",
+    "options": [
+      {
+        "id": "a",
+        "text": "medidas"
+      },
+      {
+        "id": "b",
+        "text": "nomes"
+      },
+      {
+        "id": "c",
+        "text": "portas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Quem determinou suas medidas",
+    "feedbackCorrect": "As medidas da terra foram determinadas por Deus, não por Jó.",
+    "feedbackWrong": {
+      "b": "Dar nomes aparece em outros relatos; aqui Deus fala de medidas.",
+      "c": "Portas e ferrolhos são ditos do mar, em Jó 38:10."
+    },
+    "hint": "Veja o que o cordel de medir ajuda a fazer.",
+    "learningObjective": "Lembrar a pergunta sobre as medidas da terra.",
+    "evidence": [
+      "Jó 38:5"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-02-deus-responde-06",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jó 38:3 comunica que se liga a este contexto?",
+    "prompt": "O que Jó 38:3 comunica que se liga a este contexto?",
+    "cue": "O que Jó 38:3 comunica que se liga a este contexto?",
+    "verseRef": "Jó 38:3",
+    "passageText": "Cinge, portanto, os lombos como um homem; eu te perguntarei, e tu me ensinarás.",
+    "passageA": {
+      "ref": "Jó 38:3",
+      "text": "Cinge, portanto, os lombos como um homem; eu te perguntarei, e tu me ensinarás."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de ouvir muitos discursos, Jó vai responder diante do próprio Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Outro amigo fala primeiro"
+      },
+      {
+        "id": "b",
+        "text": "Deus assume as perguntas"
+      },
+      {
+        "id": "c",
+        "text": "Jó encerra o encontro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu te perguntarei, e tu me ensinarás",
+    "feedbackCorrect": "A cena muda quando Deus deixa de ser assunto e passa a perguntar.",
+    "feedbackWrong": {
+      "a": "Quem fala e pergunta agora é o próprio Deus.",
+      "c": "O encontro está começando, não se encerrando nesse versículo."
+    },
+    "hint": "Veja a inversão de papéis no versículo.",
+    "learningObjective": "Ligar Jó 38:3 à virada do encontro com Deus.",
+    "evidence": [
+      "Jó 38:3"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-02-deus-responde-01",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jó 38:12, Deus pergunta a Jó se foi ele quem deu ordem à madrugada.",
+    "prompt": "Em Jó 38:12, Deus pergunta a Jó se foi ele quem deu ordem à madrugada.",
+    "cue": "Em Jó 38:12, Deus pergunta a Jó se foi ele quem deu ordem à madrugada.",
+    "verseRef": "Jó 38:12",
+    "passageText": "Ou desde os teus dias deste ordem à madrugada? Ou fizeste a alva conhecer o seu lugar?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Ou desde os teus dias deste ordem à madrugada",
+    "feedbackCorrect": "É uma pergunta de Deus, e Jó sabe que nunca comandou a madrugada.",
+    "feedbackWrong": {
+      "false": "A frase está no texto como pergunta que expõe o limite de Jó."
+    },
+    "hint": "Leia a frase como pergunta de Deus a Jó.",
+    "learningObjective": "Compreender a ironia das perguntas de Deus.",
+    "evidence": [
+      "Jó 38:12"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-02-deus-responde-02",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos dos trovões.",
+    "prompt": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos dos trovões.",
+    "cue": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos dos trovões.",
+    "verseRef": "Jó 38:25",
+    "passageText": "Quem abriu um leito para o aguaceiro e um caminho para os relâmpagos dos trovões?",
+    "options": [
+      {
+        "id": "a",
+        "text": "relâmpagos"
+      },
+      {
+        "id": "b",
+        "text": "um leito"
+      },
+      {
+        "id": "c",
+        "text": "um caminho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e um caminho para os relâmpagos dos trovões",
+    "feedbackCorrect": "Até o caminho dos relâmpagos foi aberto por Deus, não pelo homem.",
+    "feedbackWrong": {
+      "a": "Os relâmpagos são quem usa o caminho; o que Deus abre é o caminho.",
+      "b": "O leito aberto é para o aguaceiro, na primeira parte do versículo."
+    },
+    "hint": "Separe as duas obras citadas no versículo.",
+    "learningObjective": "Reconhecer a ação de Deus sobre a tempestade.",
+    "evidence": [
+      "Jó 38:25"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-02-deus-responde-03",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como as perguntas de Jó 38:4-12 se relacionam com Jó?",
+    "prompt": "Como as perguntas de Jó 38:4-12 se relacionam com Jó?",
+    "cue": "Como as perguntas de Jó 38:4-12 se relacionam com Jó?",
+    "verseRef": "Jó 38:4–5",
+    "passageText": "Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento. Quem determinou suas medidas, se é que o sabes? Ou quem estendeu sobre ela o cordel de medir?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provam que Jó participou da criação do mundo"
+      },
+      {
+        "id": "b",
+        "text": "Convidam Jó a medir a terra com as próprias mãos"
+      },
+      {
+        "id": "c",
+        "text": "Pedem que Jó repita o que os amigos disseram"
+      },
+      {
+        "id": "d",
+        "text": "Mostram obras de Deus anteriores e maiores que Jó"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Onde estavas tu quando eu lançava os fundamentos da terra",
+    "feedbackCorrect": "Cada pergunta coloca Jó diante de obras que só Deus fez e governa.",
+    "feedbackWrong": {
+      "a": "A pergunta onde estavas tu mostra que Jó não participou.",
+      "b": "Medir a terra é justamente o que Jó nunca fez.",
+      "c": "Deus não pede repetição de discursos; ele faz perguntas novas a Jó."
+    },
+    "hint": "Pense em quem fez cada obra citada por Deus.",
+    "learningObjective": "Relacionar as perguntas ao limite de Jó.",
+    "evidence": [
+      "Jó 38:4–5"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-02-deus-responde-04",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a resposta de Deus em Jó 38?",
+    "prompt": "Como avança a resposta de Deus em Jó 38?",
+    "cue": "Como avança a resposta de Deus em Jó 38?",
+    "verseRef": "Jó 38:3–4",
+    "passageText": "Cinge, portanto, os lombos como um homem; eu te perguntarei, e tu me ensinarás. Onde estavas tu quando eu lançava os fundamentos da terra? Dize-mo, se tens entendimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus chama Jó a se preparar"
+      },
+      {
+        "id": "b",
+        "text": "Deus anuncia que fará as perguntas"
+      },
+      {
+        "id": "c",
+        "text": "Deus pergunta pelos fundamentos da terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cinge, portanto, os lombos como um homem",
+    "feedbackCorrect": "Preparo, anúncio das perguntas e então a primeira grande pergunta.",
+    "feedbackWrong": {
+      "default": "A pergunta pela terra vem depois do preparo e do anúncio."
+    },
+    "hint": "O preparo de Jó abre esse trecho.",
+    "learningObjective": "Compreender o avanço da fala de Deus.",
+    "evidence": [
+      "Jó 38:3–4"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-02-deus-responde-05",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jó 38:34, até onde Deus pergunta se Jó pode levantar sua voz?",
+    "prompt": "Em Jó 38:34, até onde Deus pergunta se Jó pode levantar sua voz?",
+    "cue": "Em Jó 38:34, até onde Deus pergunta se Jó pode levantar sua voz?",
+    "verseRef": "Jó 38:34",
+    "passageText": "Podes levantar a tua voz até as nuvens, para que a abundância das águas te envolva?",
+    "template": "Podes levantar a tua voz até as ___, para que a abundância das águas te envolva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "nuvens"
+      },
+      {
+        "id": "b",
+        "text": "estrelas"
+      },
+      {
+        "id": "c",
+        "text": "águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Podes levantar a tua voz até as nuvens",
+    "feedbackCorrect": "Nem a chuva obedece à voz de Jó; as nuvens estão sob o governo de Deus.",
+    "feedbackWrong": {
+      "b": "As estrelas são tratadas em outras perguntas, não nesta.",
+      "c": "As águas seriam o resultado, não o destino da voz de Jó."
+    },
+    "hint": "Veja o destino da voz citado no versículo.",
+    "learningObjective": "Compreender o limite da voz humana diante de Deus.",
+    "evidence": [
+      "Jó 38:34"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-02-deus-responde-06",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jó 38:33 a Isaías 40:28?",
+    "prompt": "O que liga Jó 38:33 a Isaías 40:28?",
+    "cue": "O que liga Jó 38:33 a Isaías 40:28?",
+    "verseRef": "Jó 38:33",
+    "passageText": "Conheces as ordenanças dos céus? Ou podes estabelecer sua influência sobre a terra?",
+    "passageA": {
+      "ref": "Jó 38:33",
+      "text": "Conheces as ordenanças dos céus? Ou podes estabelecer sua influência sobre a terra?"
+    },
+    "passageB": {
+      "ref": "Isaías 40:28",
+      "text": "Não sabes, não ouviste que o eterno Deus, o Senhor, o Criador dos fins da terra, nem se cansa, nem se fatiga? Seu entendimento é impossível de esquadrinhar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Entendimento de Deus insondável"
+      },
+      {
+        "id": "b",
+        "text": "Deus se cansa de governar"
+      },
+      {
+        "id": "c",
+        "text": "O homem governa os céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Conheces as ordenanças dos céus",
+    "feedbackCorrect": "Isaías afirma que o entendimento do Criador não pode ser esquadrinhado.",
+    "feedbackWrong": {
+      "b": "Isaías diz o contrário, que o Criador nem se cansa nem se fatiga.",
+      "c": "A pergunta de Deus mostra que Jó não governa os céus."
+    },
+    "hint": "Veja o que Isaías diz do entendimento do Criador.",
+    "learningObjective": "Relacionar as ordenanças dos céus ao Criador.",
+    "evidence": [
+      "Jó 38:33",
+      "Isaías 40:28"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-02-deus-responde-01",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Jó 42:5, Jó afirma que conhecer Deus só de ouvir já era o mesmo que vê-lo.",
+    "prompt": "Em Jó 42:5, Jó afirma que conhecer Deus só de ouvir já era o mesmo que vê-lo.",
+    "cue": "Em Jó 42:5, Jó afirma que conhecer Deus só de ouvir já era o mesmo que vê-lo.",
+    "verseRef": "Jó 42:5",
+    "passageText": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem",
+    "feedbackCorrect": "Jó contrasta o ouvir de antes com o ver de agora diante de Deus.",
+    "feedbackWrong": {
+      "true": "A palavra apenas mostra que o ouvir de antes era menor que o ver."
+    },
+    "hint": "Repare no contraste entre antes e agora.",
+    "learningObjective": "Interpretar a mudança de Jó ao ver Deus.",
+    "evidence": [
+      "Jó 42:5"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-02-deus-responde-02",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jó 42:5, toque o trecho que mostra o novo conhecimento de Jó.",
+    "prompt": "Em Jó 42:5, toque o trecho que mostra o novo conhecimento de Jó.",
+    "cue": "Em Jó 42:5, toque o trecho que mostra o novo conhecimento de Jó.",
+    "verseRef": "Jó 42:5",
+    "passageText": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem",
+    "options": [
+      {
+        "id": "a",
+        "text": "os meus olhos"
+      },
+      {
+        "id": "b",
+        "text": "Eu te conhecia"
+      },
+      {
+        "id": "c",
+        "text": "apenas de ouvir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "agora os meus olhos te veem",
+    "feedbackCorrect": "Jó passa de ouvir falar de Deus a vê-lo por si mesmo.",
+    "feedbackWrong": {
+      "b": "Isso é o conhecimento de antes, só de ouvir; o novo está nos olhos.",
+      "c": "Isso descreve o conhecimento antigo de Jó, não o novo."
+    },
+    "hint": "Procure o que muda no agora de Jó.",
+    "learningObjective": "Sustentar a virada do ouvir ao ver.",
+    "evidence": [
+      "Jó 42:5"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-02-deus-responde-03",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jó 42:5-6 sustenta sobre o encontro de Jó com Deus?",
+    "prompt": "Que leitura Jó 42:5-6 sustenta sobre o encontro de Jó com Deus?",
+    "cue": "Que leitura Jó 42:5-6 sustenta sobre o encontro de Jó com Deus?",
+    "verseRef": "Jó 42:5–6",
+    "passageText": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem Por isso, abomino a mim mesmo e me arrependo no pó e na cinza.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O arrependimento de Jó prova que os amigos acertaram"
+      },
+      {
+        "id": "b",
+        "text": "Ver Deus leva Jó a se arrepender de suas certezas"
+      },
+      {
+        "id": "c",
+        "text": "Jó recebe todas as explicações e dispensa arrependimento"
+      },
+      {
+        "id": "d",
+        "text": "Jó conclui que Deus lhe devia uma resposta completa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "me arrependo no pó e na cinza",
+    "feedbackCorrect": "Sem receber um relatório das perdas, Jó vê Deus e muda sua postura.",
+    "feedbackWrong": {
+      "a": "O arrependimento de Jó não valida acusações feitas contra ele.",
+      "c": "O texto não traz explicações das perdas, mas arrependimento de Jó.",
+      "d": "Jó não cobra Deus; ele se abomina e se arrepende."
+    },
+    "hint": "Veja o que acontece com Jó depois de ver Deus.",
+    "learningObjective": "Escolher a leitura sustentada do fim do encontro.",
+    "evidence": [
+      "Jó 42:5–6"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-02-deus-responde-04",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Jó até ver Deus?",
+    "prompt": "Qual sequência revela o caminho de Jó até ver Deus?",
+    "cue": "Qual sequência revela o caminho de Jó até ver Deus?",
+    "verseRef": "Jó 42:5–6",
+    "passageText": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem Por isso, abomino a mim mesmo e me arrependo no pó e na cinza.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pergunta pela criação do mundo"
+      },
+      {
+        "id": "b",
+        "text": "Jó diz que agora seus olhos veem Deus"
+      },
+      {
+        "id": "c",
+        "text": "Jó se arrepende no pó e na cinza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora os meus olhos te veem",
+    "feedbackCorrect": "As perguntas de Deus conduzem Jó a vê-lo e a se arrepender.",
+    "feedbackWrong": {
+      "default": "O ver vem depois das perguntas e antes do arrependimento."
+    },
+    "hint": "O arrependimento é o ponto de chegada.",
+    "learningObjective": "Ver o encontro de Jó como caminho completo.",
+    "evidence": [
+      "Jó 42:5–6"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-02-deus-responde-05",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jó 42:6, o que Jó faz no pó e na cinza depois de ver Deus?",
+    "prompt": "Em Jó 42:6, o que Jó faz no pó e na cinza depois de ver Deus?",
+    "cue": "Em Jó 42:6, o que Jó faz no pó e na cinza depois de ver Deus?",
+    "verseRef": "Jó 42:6",
+    "passageText": "Por isso, abomino a mim mesmo e me arrependo no pó e na cinza.",
+    "template": "Por isso, abomino a mim mesmo e me ___ no pó e na cinza.",
+    "options": [
+      {
+        "id": "a",
+        "text": "acuso"
+      },
+      {
+        "id": "b",
+        "text": "escondo"
+      },
+      {
+        "id": "c",
+        "text": "arrependo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "me arrependo no pó e na cinza",
+    "feedbackCorrect": "A resposta final de Jó às perguntas de Deus é arrependimento humilde.",
+    "feedbackWrong": {
+      "a": "Quem é acusado muda de figura; Jó se volta contra si mesmo.",
+      "b": "Jó não se esconde de Deus; ele fala com Deus e muda."
+    },
+    "hint": "Veja o verbo de Jó sobre si mesmo.",
+    "learningObjective": "Lembrar a resposta de Jó ao ver Deus.",
+    "evidence": [
+      "Jó 42:6"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-02-deus-responde-06",
+    "trail": "jo",
+    "section": "jo-dialogo-02-deus-responde",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jó 42:5 a Romanos 11:33?",
+    "prompt": "O que liga Jó 42:5 a Romanos 11:33?",
+    "cue": "O que liga Jó 42:5 a Romanos 11:33?",
+    "verseRef": "Jó 42:5",
+    "passageText": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem",
+    "passageA": {
+      "ref": "Jó 42:5",
+      "text": "Eu te conhecia apenas de ouvir, mas agora os meus olhos te veem"
+    },
+    "passageB": {
+      "ref": "Romanos 11:33",
+      "text": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus explica todos os caminhos"
+      },
+      {
+        "id": "b",
+        "text": "Ver Deus dispensa humildade"
+      },
+      {
+        "id": "c",
+        "text": "Sabedoria de Deus insondável"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "agora os meus olhos te veem",
+    "feedbackCorrect": "Jó e Paulo se curvam diante de um Deus maior que suas explicações.",
+    "feedbackWrong": {
+      "a": "Paulo chama os caminhos de Deus de inescrutáveis, não explicados.",
+      "b": "Ver Deus produz em Jó arrependimento, não orgulho."
+    },
+    "hint": "Veja como Paulo reage à sabedoria de Deus.",
+    "learningObjective": "Ligar o ver de Jó à adoração de Paulo.",
+    "evidence": [
+      "Jó 42:5",
+      "Romanos 11:33"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-01",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jó 38:8, Deus pergunta quem fechou o mar com portões quando ele irrompeu.",
+    "prompt": "Em Jó 38:8, Deus pergunta quem fechou o mar com portões quando ele irrompeu.",
+    "cue": "Em Jó 38:8, Deus pergunta quem fechou o mar com portões quando ele irrompeu.",
+    "verseRef": "Jó 38:8",
+    "passageText": "Ou quem fechou o mar com portões quando irrompeu da madre?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quem fechou o mar com portões quando irrompeu da madre",
+    "feedbackCorrect": "A imagem mostra o mar contido por Deus desde o seu irromper.",
+    "feedbackWrong": {
+      "false": "É exatamente a pergunta que Deus faz em Jó 38:8 sobre o mar."
+    },
+    "hint": "Veja a imagem usada para o mar.",
+    "learningObjective": "Observar a pergunta de Deus sobre o mar.",
+    "evidence": [
+      "Jó 38:8"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-02",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jó 38:12, toque a quem Deus pergunta se Jó deu ordem.",
+    "prompt": "Em Jó 38:12, toque a quem Deus pergunta se Jó deu ordem.",
+    "cue": "Em Jó 38:12, toque a quem Deus pergunta se Jó deu ordem.",
+    "verseRef": "Jó 38:12",
+    "passageText": "Ou desde os teus dias deste ordem à madrugada? Ou fizeste a alva conhecer o seu lugar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "o seu lugar"
+      },
+      {
+        "id": "b",
+        "text": "os teus dias"
+      },
+      {
+        "id": "c",
+        "text": "à madrugada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "deste ordem à madrugada",
+    "feedbackCorrect": "Nem o nascer de um novo dia obedece a uma ordem de Jó.",
+    "feedbackWrong": {
+      "a": "Isso fala do lugar da alva, não de quem recebe a ordem.",
+      "b": "Isso marca o tempo da vida de Jó, não quem é ordenado."
+    },
+    "hint": "Procure o destinatário da ordem citada.",
+    "learningObjective": "Identificar o limite de Jó diante da madrugada.",
+    "evidence": [
+      "Jó 38:12"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-03",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jó 38:16, sobre o que Deus pergunta a Jó?",
+    "prompt": "Segundo Jó 38:16, sobre o que Deus pergunta a Jó?",
+    "cue": "Segundo Jó 38:16, sobre o que Deus pergunta a Jó?",
+    "verseRef": "Jó 38:16",
+    "passageText": "Ou você entrou nos mananciais do mar, ou percorreu as profundezas do abismo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se ele entrou nos mananciais do mar"
+      },
+      {
+        "id": "b",
+        "text": "Se ele nomeou todas as estrelas do céu"
+      },
+      {
+        "id": "c",
+        "text": "Se ele alimentou os filhos da leoa"
+      },
+      {
+        "id": "d",
+        "text": "Se ele contou os depósitos da neve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ou você entrou nos mananciais do mar",
+    "feedbackCorrect": "Deus pergunta por lugares do mar profundo que Jó nunca percorreu.",
+    "feedbackWrong": {
+      "b": "As estrelas aparecem em perguntas de Jó 38:31-32.",
+      "c": "A leoa e seus filhotes aparecem no fim do capítulo, em 38:39.",
+      "d": "Os depósitos da neve são perguntados em Jó 38:22."
+    },
+    "hint": "Leia o lugar profundo citado no versículo.",
+    "learningObjective": "Observar a pergunta sobre o fundo do mar.",
+    "evidence": [
+      "Jó 38:16"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-04",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jó 38:8-9 na ordem do texto.",
+    "prompt": "Monte Jó 38:8-9 na ordem do texto.",
+    "cue": "Monte Jó 38:8-9 na ordem do texto.",
+    "verseRef": "Jó 38:8–9",
+    "passageText": "Ou quem fechou o mar com portões quando irrompeu da madre? Quando coloquei as nuvens como vestidura e a escuridão como fraldas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ou quem fechou o mar com portões"
+      },
+      {
+        "id": "b",
+        "text": "quando irrompeu da madre"
+      },
+      {
+        "id": "c",
+        "text": "Quando coloquei as nuvens como vestidura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ou quem fechou o mar com portões",
+    "feedbackCorrect": "O mar irrompe, é fechado por Deus e recebe nuvens como vestidura.",
+    "feedbackWrong": {
+      "default": "Comece pelo fechamento do mar com portões."
+    },
+    "hint": "O versículo começa com a pergunta sobre o mar.",
+    "learningObjective": "Reconhecer a sequência sobre o mar.",
+    "evidence": [
+      "Jó 38:8–9"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-05",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jó 38:22, nos depósitos de que Deus pergunta se Jó entrou?",
+    "prompt": "Em Jó 38:22, nos depósitos de que Deus pergunta se Jó entrou?",
+    "cue": "Em Jó 38:22, nos depósitos de que Deus pergunta se Jó entrou?",
+    "verseRef": "Jó 38:22",
+    "passageText": "Ou você entrou nos depósitos da neve e viu os tesouros da saraiva?",
+    "template": "Ou você entrou nos depósitos da ___ e viu os tesouros da saraiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "gelo"
+      },
+      {
+        "id": "b",
+        "text": "chuva"
+      },
+      {
+        "id": "c",
+        "text": "neve"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "você entrou nos depósitos da neve",
+    "feedbackCorrect": "Até os depósitos da neve e da saraiva estão fora do alcance de Jó.",
+    "feedbackWrong": {
+      "a": "O gelo aparece em Jó 38:29, não nos depósitos de 38:22.",
+      "b": "A chuva é tratada em outras perguntas; aqui são os depósitos."
+    },
+    "hint": "Veja o que é guardado nos depósitos.",
+    "learningObjective": "Lembrar a pergunta sobre os depósitos.",
+    "evidence": [
+      "Jó 38:22"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-06",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jó 38:26 comunica que se liga a este contexto?",
+    "prompt": "O que Jó 38:26 comunica que se liga a este contexto?",
+    "cue": "O que Jó 38:26 comunica que se liga a este contexto?",
+    "verseRef": "Jó 38:26",
+    "passageText": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente;",
+    "passageA": {
+      "ref": "Jó 38:26",
+      "text": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus cuida também de lugares onde nenhuma pessoa vive ou olha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus rega até o ermo vazio"
+      },
+      {
+        "id": "b",
+        "text": "O deserto vive sem Deus"
+      },
+      {
+        "id": "c",
+        "text": "Chuva só cai onde há gente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Para fazer chover sobre a terra onde não há ninguém",
+    "feedbackCorrect": "A chuva de Deus alcança terra sem ninguém e ermo sem gente.",
+    "feedbackWrong": {
+      "b": "Quem faz chover no ermo é Deus, segundo a pergunta dele.",
+      "c": "O versículo afirma justamente chuva onde não há ninguém."
+    },
+    "hint": "Veja onde a chuva cai nesse versículo.",
+    "learningObjective": "Ligar Jó 38:26 ao cuidado de Deus no ermo.",
+    "evidence": [
+      "Jó 38:26"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-07",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jó 38:28, toque o que Deus pergunta quem gera.",
+    "prompt": "Em Jó 38:28, toque o que Deus pergunta quem gera.",
+    "cue": "Em Jó 38:28, toque o que Deus pergunta quem gera.",
+    "verseRef": "Jó 38:28",
+    "passageText": "A chuva será que tem um pai? Ou quem é que gera as gotas do orvalho?",
+    "options": [
+      {
+        "id": "a",
+        "text": "um pai"
+      },
+      {
+        "id": "b",
+        "text": "A chuva"
+      },
+      {
+        "id": "c",
+        "text": "gotas do orvalho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem é que gera as gotas do orvalho",
+    "feedbackCorrect": "Nem as gotas do orvalho nascem sem o governo de Deus.",
+    "feedbackWrong": {
+      "a": "Pai é o que a chuva talvez tenha, não o que é gerado.",
+      "b": "A chuva abre a pergunta; o gerado citado depois é o orvalho."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Observar a pergunta sobre o orvalho.",
+    "evidence": [
+      "Jó 38:28"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-dialogo-03-desafio-sofrimento-08",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jó 38:31-32 na ordem do texto.",
+    "prompt": "Monte Jó 38:31-32 na ordem do texto.",
+    "cue": "Monte Jó 38:31-32 na ordem do texto.",
+    "verseRef": "Jó 38:31–32",
+    "passageText": "Poderás tu atar as constelações das sete estrelas ou soltar os laços de Órion? Ou fazes aparecer as constelações no momento certo? Ou guias a Ursa com seus filhotes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Poderás tu atar as constelações das sete estrelas"
+      },
+      {
+        "id": "b",
+        "text": "ou soltar os laços de Órion"
+      },
+      {
+        "id": "c",
+        "text": "Ou fazes aparecer as constelações no momento certo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Poderás tu atar as constelações das sete estrelas",
+    "feedbackCorrect": "Atar constelações e soltar Órion são obras fora das mãos de Jó.",
+    "feedbackWrong": {
+      "default": "Comece pelas constelações das sete estrelas."
+    },
+    "hint": "A primeira ação citada vem antes de Órion.",
+    "learningObjective": "Reconhecer a sequência sobre as constelações.",
+    "evidence": [
+      "Jó 38:31"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-01",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jó 38:26, Deus afirma que só faz chover onde há gente para aproveitar a água.",
+    "prompt": "Em Jó 38:26, Deus afirma que só faz chover onde há gente para aproveitar a água.",
+    "cue": "Em Jó 38:26, Deus afirma que só faz chover onde há gente para aproveitar a água.",
+    "verseRef": "Jó 38:26",
+    "passageText": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sobre a terra onde não há ninguém e no ermo onde não há gente",
+    "feedbackCorrect": "A chuva de Deus alcança também terra vazia e ermo sem gente.",
+    "feedbackWrong": {
+      "true": "O versículo diz o contrário, pois fala de terra onde não há ninguém."
+    },
+    "hint": "Veja quem mora onde a chuva cai.",
+    "learningObjective": "Compreender o cuidado de Deus além do olhar humano.",
+    "evidence": [
+      "Jó 38:26"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-02",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos.",
+    "prompt": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos.",
+    "cue": "Em Jó 38:25, toque o que Deus abriu para os relâmpagos.",
+    "verseRef": "Jó 38:25",
+    "passageText": "Quem abriu um leito para o aguaceiro e um caminho para os relâmpagos dos trovões?",
+    "options": [
+      {
+        "id": "a",
+        "text": "relâmpagos"
+      },
+      {
+        "id": "b",
+        "text": "um caminho"
+      },
+      {
+        "id": "c",
+        "text": "um leito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e um caminho para os relâmpagos dos trovões",
+    "feedbackCorrect": "Leito para o aguaceiro e caminho para os relâmpagos são obras de Deus.",
+    "feedbackWrong": {
+      "a": "Os relâmpagos são quem usa o caminho; o que Deus abre é o caminho.",
+      "c": "O leito é aberto para o aguaceiro, na primeira parte."
+    },
+    "hint": "Separe aguaceiro e relâmpagos no versículo.",
+    "learningObjective": "Reconhecer as duas ações de Deus na tempestade.",
+    "evidence": [
+      "Jó 38:25"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-03",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jó 38:26-27 apresenta o propósito da chuva no ermo?",
+    "prompt": "Como Jó 38:26-27 apresenta o propósito da chuva no ermo?",
+    "cue": "Como Jó 38:26-27 apresenta o propósito da chuva no ermo?",
+    "verseRef": "Jó 38:26–27",
+    "passageText": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente; Para dessedentar a terra deserta e assolada e para fazer crescer os renovos da erva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recompensar cidades fiéis com colheitas"
+      },
+      {
+        "id": "b",
+        "text": "Castigar viajantes que cruzam o deserto"
+      },
+      {
+        "id": "c",
+        "text": "Esconder a água de quem procura por ela"
+      },
+      {
+        "id": "d",
+        "text": "Regar uma terra que ninguém vê florescer"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Para dessedentar a terra deserta e assolada",
+    "feedbackCorrect": "Deus faz crescer renovos até onde nenhum olhar humano acompanha.",
+    "feedbackWrong": {
+      "a": "O texto fala de ermo sem gente, não de cidades recompensadas.",
+      "b": "A chuva aqui vivifica a terra, não castiga viajantes.",
+      "c": "A água chega a dessedentar a terra, não a se esconder dela."
+    },
+    "hint": "Veja o resultado da chuva na terra deserta.",
+    "learningObjective": "Compreender o propósito da chuva no ermo.",
+    "evidence": [
+      "Jó 38:26–27"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-04",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as perguntas de Jó 38:16-18?",
+    "prompt": "Como se encadeiam as perguntas de Jó 38:16-18?",
+    "cue": "Como se encadeiam as perguntas de Jó 38:16-18?",
+    "verseRef": "Jó 38:16–17",
+    "passageText": "Ou você entrou nos mananciais do mar, ou percorreu as profundezas do abismo? Ou se abriram para você as portas da morte, ou você viu as portas da região tenebrosa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pergunta pelos mananciais do mar"
+      },
+      {
+        "id": "b",
+        "text": "Deus pergunta pelas portas da morte"
+      },
+      {
+        "id": "c",
+        "text": "Deus pergunta pela largura da terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ou você entrou nos mananciais do mar",
+    "feedbackCorrect": "Mar profundo, portas da morte e largura da terra escapam a Jó.",
+    "feedbackWrong": {
+      "default": "Comece pelo fundo do mar; a largura da terra fecha."
+    },
+    "hint": "A largura da terra é a última pergunta aqui.",
+    "learningObjective": "Compreender a série de lugares inalcançáveis.",
+    "evidence": [
+      "Jó 38:16–17"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-05",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jó 38:34, o que Deus pergunta se Jó pode levantar até as nuvens?",
+    "prompt": "Em Jó 38:34, o que Deus pergunta se Jó pode levantar até as nuvens?",
+    "cue": "Em Jó 38:34, o que Deus pergunta se Jó pode levantar até as nuvens?",
+    "verseRef": "Jó 38:34",
+    "passageText": "Podes levantar a tua voz até as nuvens, para que a abundância das águas te envolva?",
+    "template": "Podes levantar a tua ___ até as nuvens, para que a abundância das águas te envolva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "voz"
+      },
+      {
+        "id": "b",
+        "text": "mão"
+      },
+      {
+        "id": "c",
+        "text": "olhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Podes levantar a tua voz até as nuvens",
+    "feedbackCorrect": "A voz de Jó não comanda nuvens nem traz abundância de águas.",
+    "feedbackWrong": {
+      "b": "A pergunta é sobre a voz que chegaria às nuvens, não a mão.",
+      "c": "Olhos não são citados aqui; Deus fala da voz de Jó."
+    },
+    "hint": "Veja o que Jó levantaria até as nuvens.",
+    "learningObjective": "Compreender o limite da voz de Jó.",
+    "evidence": [
+      "Jó 38:34"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-06",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jó 38:26 a Salmos 147:8?",
+    "prompt": "O que liga Jó 38:26 a Salmos 147:8?",
+    "cue": "O que liga Jó 38:26 a Salmos 147:8?",
+    "verseRef": "Jó 38:26",
+    "passageText": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente;",
+    "passageA": {
+      "ref": "Jó 38:26",
+      "text": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente;"
+    },
+    "passageB": {
+      "ref": "Salmos 147:8",
+      "text": "É Ele quem cobre os céus de nuvens, prepara a chuva para a terra e faz brotar a erva nos montes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Erva cresce só onde há cultivo"
+      },
+      {
+        "id": "b",
+        "text": "Chuva nasce das nuvens sozinhas"
+      },
+      {
+        "id": "c",
+        "text": "Deus prepara chuva para terra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Para fazer chover sobre a terra onde não há ninguém",
+    "feedbackCorrect": "Nos dois textos, é Deus quem prepara e manda a chuva sobre a terra.",
+    "feedbackWrong": {
+      "a": "Deus faz brotar erva até nos montes, fora do cultivo humano.",
+      "b": "O salmo atribui as nuvens e a chuva ao agir de Deus."
+    },
+    "hint": "Compare quem envia a chuva nos dois textos.",
+    "learningObjective": "Relacionar a chuva de Jó ao louvor do salmo.",
+    "evidence": [
+      "Jó 38:26",
+      "Salmos 147:8"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-07",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jó 38:36, toque o que Deus pergunta quem pôs nas camadas das nuvens.",
+    "prompt": "Em Jó 38:36, toque o que Deus pergunta quem pôs nas camadas das nuvens.",
+    "cue": "Em Jó 38:36, toque o que Deus pergunta quem pôs nas camadas das nuvens.",
+    "verseRef": "Jó 38:36",
+    "passageText": "Quem pôs sabedoria nas profundezas das camadas das nuvens? Ou quem deu entendimento ao meteoro?",
+    "options": [
+      {
+        "id": "a",
+        "text": "meteoro"
+      },
+      {
+        "id": "b",
+        "text": "entendimento"
+      },
+      {
+        "id": "c",
+        "text": "sabedoria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quem pôs sabedoria nas profundezas das camadas das nuvens",
+    "feedbackCorrect": "Até a sabedoria escondida nas nuvens foi posta por alguém maior que Jó.",
+    "feedbackWrong": {
+      "a": "O meteoro recebe entendimento; não é o que foi posto nas nuvens.",
+      "b": "Entendimento é dado ao meteoro, na segunda parte do versículo."
+    },
+    "hint": "Divida o versículo em duas perguntas.",
+    "learningObjective": "Reconhecer a origem divina da sabedoria.",
+    "evidence": [
+      "Jó 38:36"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-dialogo-03-desafio-sofrimento-08",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avançam as perguntas de Jó 38:22-24?",
+    "prompt": "Como avançam as perguntas de Jó 38:22-24?",
+    "cue": "Como avançam as perguntas de Jó 38:22-24?",
+    "verseRef": "Jó 38:22–23",
+    "passageText": "Ou você entrou nos depósitos da neve e viu os tesouros da saraiva? Que eu retenho para o tempo da angústia, para o dia da peleja e da guerra?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pergunta pelos depósitos da neve"
+      },
+      {
+        "id": "b",
+        "text": "Deus fala dos tesouros da saraiva"
+      },
+      {
+        "id": "c",
+        "text": "Deus pergunta pelo caminho da luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "você entrou nos depósitos da neve",
+    "feedbackCorrect": "Neve, saraiva e luz aparecem como tesouros e caminhos só de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos depósitos da neve; o caminho da luz vem depois."
+    },
+    "hint": "A luz é o último tema dessa série.",
+    "learningObjective": "Compreender o avanço das perguntas sobre o céu.",
+    "evidence": [
+      "Jó 38:22–23"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-01",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Jó 38:33, as perguntas de Deus mostram que Jó não conhece todas as ordenanças dos céus.",
+    "prompt": "Em Jó 38:33, as perguntas de Deus mostram que Jó não conhece todas as ordenanças dos céus.",
+    "cue": "Em Jó 38:33, as perguntas de Deus mostram que Jó não conhece todas as ordenanças dos céus.",
+    "verseRef": "Jó 38:33",
+    "passageText": "Conheces as ordenanças dos céus? Ou podes estabelecer sua influência sobre a terra?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Conheces as ordenanças dos céus",
+    "feedbackCorrect": "Governar céus e sua influência na terra está além do alcance de Jó.",
+    "feedbackWrong": {
+      "false": "A pergunta de Deus espera um não de Jó sobre os céus."
+    },
+    "hint": "Veja o que Deus pergunta se Jó conhece.",
+    "learningObjective": "Interpretar o limite de Jó diante dos céus.",
+    "evidence": [
+      "Jó 38:33"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-02",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jó 38:33, toque o que só Deus conhece por inteiro nos céus.",
+    "prompt": "Em Jó 38:33, toque o que só Deus conhece por inteiro nos céus.",
+    "cue": "Em Jó 38:33, toque o que só Deus conhece por inteiro nos céus.",
+    "verseRef": "Jó 38:33",
+    "passageText": "Conheces as ordenanças dos céus? Ou podes estabelecer sua influência sobre a terra?",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobre a terra"
+      },
+      {
+        "id": "b",
+        "text": "Conheces"
+      },
+      {
+        "id": "c",
+        "text": "ordenanças dos céus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Conheces as ordenanças dos céus",
+    "feedbackCorrect": "As ordenanças dos céus revelam uma ordem que Jó não estabeleceu.",
+    "feedbackWrong": {
+      "a": "Isso indica onde a influência chega, não o que Deus conhece.",
+      "b": "Isso é só o verbo da pergunta, não o objeto conhecido."
+    },
+    "hint": "Procure o objeto do verbo conhecer.",
+    "learningObjective": "Sustentar o governo de Deus sobre os céus.",
+    "evidence": [
+      "Jó 38:33"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-03",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jó 38 sustenta sobre explicar o sofrimento humano?",
+    "prompt": "Que leitura Jó 38 sustenta sobre explicar o sofrimento humano?",
+    "cue": "Que leitura Jó 38 sustenta sobre explicar o sofrimento humano?",
+    "verseRef": "Jó 38:2",
+    "passageText": "Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Silenciar a dor é a única resposta de fé possível"
+      },
+      {
+        "id": "b",
+        "text": "Nem toda explicação humana alcança o propósito de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus deve um relatório completo a quem pergunta"
+      },
+      {
+        "id": "d",
+        "text": "Quem sofre sempre esconde um pecado específico"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "obscurece o meu propósito com palavras sem entendimento",
+    "feedbackCorrect": "Deus expõe explicações sem entendimento, sem entregar uma fórmula para a dor.",
+    "feedbackWrong": {
+      "a": "Jó fala, pergunta e adora; fé não é só silêncio forçado.",
+      "c": "Deus responde com perguntas, não com um relatório das perdas.",
+      "d": "Jó 1 apresenta Jó como íntegro; a fórmula pecado e castigo não basta."
+    },
+    "hint": "Veja como Deus avalia as palavras sobre seu propósito.",
+    "learningObjective": "Escolher a leitura sustentada sobre sofrimento.",
+    "evidence": [
+      "Jó 38:2"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-04",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o governo de Deus em Jó 38?",
+    "prompt": "Qual sequência revela o governo de Deus em Jó 38?",
+    "cue": "Qual sequência revela o governo de Deus em Jó 38?",
+    "verseRef": "Jó 38:11",
+    "passageText": "E disse: Até aqui chegarás, e não mais além; aqui se quebrará a bravura das tuas ondas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus lança os fundamentos da terra"
+      },
+      {
+        "id": "b",
+        "text": "Deus marca o limite das ondas"
+      },
+      {
+        "id": "c",
+        "text": "Deus alimenta até as feras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Até aqui chegarás, e não mais além",
+    "feedbackCorrect": "Terra fundada, mar limitado e feras alimentadas mostram um só governo.",
+    "feedbackWrong": {
+      "default": "Comece pela fundação da terra; as feras fecham o capítulo."
+    },
+    "hint": "Siga da terra ao mar e depois aos animais.",
+    "learningObjective": "Ver a amplitude do governo de Deus.",
+    "evidence": [
+      "Jó 38:11"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-05",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jó 38:2, palavras com que falta obscurecem o propósito de Deus?",
+    "prompt": "Em Jó 38:2, palavras com que falta obscurecem o propósito de Deus?",
+    "cue": "Em Jó 38:2, palavras com que falta obscurecem o propósito de Deus?",
+    "verseRef": "Jó 38:2",
+    "passageText": "Quem é este que obscurece o meu propósito com palavras sem entendimento?",
+    "template": "Quem é este que obscurece o meu propósito com palavras sem ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "entendimento"
+      },
+      {
+        "id": "b",
+        "text": "conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "fundamento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "com palavras sem entendimento",
+    "feedbackCorrect": "Falar de Deus sem entendimento pode escurecer, em vez de esclarecer.",
+    "feedbackWrong": {
+      "b": "A palavra do texto é mais específica sobre compreender Deus.",
+      "c": "Fundamentos são da terra em 38:4; aqui falta outra coisa."
+    },
+    "hint": "Veja o que falta às palavras citadas por Deus.",
+    "learningObjective": "Lembrar o termo central das palavras humanas.",
+    "evidence": [
+      "Jó 38:2"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-06",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jó 38:39 a Salmos 104:21?",
+    "prompt": "O que liga Jó 38:39 a Salmos 104:21?",
+    "cue": "O que liga Jó 38:39 a Salmos 104:21?",
+    "verseRef": "Jó 38:39",
+    "passageText": "Acaso caças a presa para a leoa? Ou sacias a fome dos leõezinhos?",
+    "passageA": {
+      "ref": "Jó 38:39",
+      "text": "Acaso caças a presa para a leoa? Ou sacias a fome dos leõezinhos?"
+    },
+    "passageB": {
+      "ref": "Salmos 104:21",
+      "text": "Os filhotes de leão rugem pela presa e buscam de Deus o sustento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Feras vivem sem precisar de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus sustenta até os leões"
+      },
+      {
+        "id": "c",
+        "text": "Jó caça para os animais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Acaso caças a presa para a leoa",
+    "feedbackCorrect": "O salmo diz que os leõezinhos buscam de Deus o seu sustento.",
+    "feedbackWrong": {
+      "a": "O salmo coloca o sustento das feras nas mãos de Deus.",
+      "c": "A pergunta de Deus mostra que Jó não caça para a leoa."
+    },
+    "hint": "Veja de quem as feras buscam sustento no salmo.",
+    "learningObjective": "Ligar o cuidado de Deus aos animais.",
+    "evidence": [
+      "Jó 38:39",
+      "Salmos 104:21"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-07",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jó 38:39, toque o trecho que mostra Deus cuidando da alimentação das feras.",
+    "prompt": "Em Jó 38:39, toque o trecho que mostra Deus cuidando da alimentação das feras.",
+    "cue": "Em Jó 38:39, toque o trecho que mostra Deus cuidando da alimentação das feras.",
+    "verseRef": "Jó 38:39",
+    "passageText": "Acaso caças a presa para a leoa? Ou sacias a fome dos leõezinhos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "para a leoa"
+      },
+      {
+        "id": "b",
+        "text": "dos leõezinhos"
+      },
+      {
+        "id": "c",
+        "text": "Acaso caças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Acaso caças a presa para a leoa",
+    "feedbackCorrect": "A pergunta aponta para um cuidado que não passa pelas mãos de Jó.",
+    "feedbackWrong": {
+      "b": "Os leõezinhos têm sua fome saciada, mas a presa é para a leoa.",
+      "c": "Isso abre a pergunta a Jó, não mostra o cuidado em si."
+    },
+    "hint": "Procure quem recebe a presa na pergunta.",
+    "learningObjective": "Sustentar o sustento divino das feras.",
+    "evidence": [
+      "Jó 38:39"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-dialogo-03-desafio-sofrimento-08",
+    "trail": "jo",
+    "section": "jo-dialogo-03-desafio-sofrimento",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus que atravessa a Bíblia?",
+    "prompt": "Qual sequência revela o cuidado de Deus que atravessa a Bíblia?",
+    "cue": "Qual sequência revela o cuidado de Deus que atravessa a Bíblia?",
+    "verseRef": "Jó 38:26",
+    "passageText": "Para fazer chover sobre a terra onde não há ninguém e no ermo onde não há gente;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus faz chover onde não há ninguém"
+      },
+      {
+        "id": "b",
+        "text": "O salmo louva Deus que prepara a chuva"
+      },
+      {
+        "id": "c",
+        "text": "A criação inteira depende do Criador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Para fazer chover sobre a terra onde não há ninguém",
+    "feedbackCorrect": "A chuva no ermo vira louvor ao Deus que sustenta toda a criação.",
+    "feedbackWrong": {
+      "default": "Comece em Jó 38 e depois vá ao louvor do salmo."
+    },
+    "hint": "O salmo retoma depois o tema da chuva.",
+    "learningObjective": "Ver o sustento de Deus como fio bíblico.",
+    "evidence": [
+      "Jó 38:26",
+      "Salmos 147:8"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-01-jo-integro-01",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jó 1:1, Jó é descrito como homem íntegro e reto, temente a Deus.",
+    "prompt": "Em Jó 1:1, Jó é descrito como homem íntegro e reto, temente a Deus.",
+    "cue": "Em Jó 1:1, Jó é descrito como homem íntegro e reto, temente a Deus.",
+    "verseRef": "Jó 1:1",
+    "passageText": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "era íntegro e reto, temente a Deus",
+    "feedbackCorrect": "A primeira apresentação de Jó junta integridade, retidão e temor a Deus.",
+    "feedbackWrong": {
+      "false": "Releia Jó 1:1, onde Jó é chamado íntegro, reto e temente a Deus."
+    },
+    "hint": "Olhe a apresentação inicial de Jó.",
+    "learningObjective": "Observar como o texto apresenta Jó.",
+    "evidence": [
+      "Jó 1:1"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-01-jo-integro-02",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jó 1:1, toque o que Jó fazia em relação ao mal.",
+    "prompt": "Em Jó 1:1, toque o que Jó fazia em relação ao mal.",
+    "cue": "Em Jó 1:1, toque o que Jó fazia em relação ao mal.",
+    "verseRef": "Jó 1:1",
+    "passageText": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra de Uz"
+      },
+      {
+        "id": "b",
+        "text": "se desviava"
+      },
+      {
+        "id": "c",
+        "text": "nome era Jó"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que se desviava do mal",
+    "feedbackCorrect": "Jó não só temia a Deus, mas se afastava ativamente do mal.",
+    "feedbackWrong": {
+      "a": "Isso diz onde Jó morava, não o que ele fazia com o mal.",
+      "c": "Isso apresenta o nome dele, não sua atitude diante do mal."
+    },
+    "hint": "Procure a atitude de Jó no fim do versículo.",
+    "learningObjective": "Identificar a atitude de Jó diante do mal.",
+    "evidence": [
+      "Jó 1:1"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-01-jo-integro-03",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jó 1:5, o que Jó fazia depois dos banquetes dos filhos?",
+    "prompt": "Segundo Jó 1:5, o que Jó fazia depois dos banquetes dos filhos?",
+    "cue": "Segundo Jó 1:5, o que Jó fazia depois dos banquetes dos filhos?",
+    "verseRef": "Jó 1:5",
+    "passageText": "Sucedendo os dias de seus banquetes, Jó chamava seus filhos e os santificava; levantava-se de madrugada e oferecia holocaustos conforme o número de todos eles, pois pensava: \"Talvez meus filhos tenham pecado e blasfemado contra Deus em seu coração.\" Assim Jó fazia continuamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mudava-se da terra de Uz"
+      },
+      {
+        "id": "b",
+        "text": "Oferecia holocaustos pelos filhos"
+      },
+      {
+        "id": "c",
+        "text": "Vendia parte do seu gado"
+      },
+      {
+        "id": "d",
+        "text": "Proibia novos banquetes em casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "oferecia holocaustos conforme o número de todos eles",
+    "feedbackCorrect": "Jó chamava os filhos, santificava-os e oferecia holocaustos por todos eles.",
+    "feedbackWrong": {
+      "a": "Jó permanece em Uz; o versículo fala da oferta pelos filhos.",
+      "c": "O assunto aqui é o cuidado espiritual com os filhos, não o gado.",
+      "d": "Os banquetes continuavam; Jó agia depois deles, oferecendo por os filhos."
+    },
+    "hint": "Veja o que Jó fazia de madrugada.",
+    "learningObjective": "Observar o cuidado de Jó pelos filhos.",
+    "evidence": [
+      "Jó 1:5"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-01-jo-integro-04",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jó 1:1 na ordem do texto.",
+    "prompt": "Monte Jó 1:1 na ordem do texto.",
+    "cue": "Monte Jó 1:1 na ordem do texto.",
+    "verseRef": "Jó 1:1",
+    "passageText": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Havia um homem na terra de Uz"
+      },
+      {
+        "id": "b",
+        "text": "cujo nome era Jó"
+      },
+      {
+        "id": "c",
+        "text": "esse homem era íntegro e reto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Havia um homem na terra de Uz",
+    "feedbackCorrect": "O texto apresenta o lugar, o nome e só então o caráter de Jó.",
+    "feedbackWrong": {
+      "default": "Comece pelo homem em Uz; o caráter vem depois do nome."
+    },
+    "hint": "O versículo começa pelo lugar.",
+    "learningObjective": "Reconhecer a sequência de Jó 1:1.",
+    "evidence": [
+      "Jó 1:1"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-01-jo-integro-05",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jó 1:2, quantos filhos homens nasceram a Jó?",
+    "prompt": "Em Jó 1:2, quantos filhos homens nasceram a Jó?",
+    "cue": "Em Jó 1:2, quantos filhos homens nasceram a Jó?",
+    "verseRef": "Jó 1:2",
+    "passageText": "Nasceram-lhe sete filhos e três filhas.",
+    "template": "Nasceram-lhe ___ filhos e três filhas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sete"
+      },
+      {
+        "id": "b",
+        "text": "três"
+      },
+      {
+        "id": "c",
+        "text": "cinco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Nasceram-lhe sete filhos e três filhas",
+    "feedbackCorrect": "Foram sete filhos, além de três filhas, no começo da história.",
+    "feedbackWrong": {
+      "b": "Três é o número das filhas, não dos filhos homens.",
+      "c": "O texto não fala de cinco; conta os filhos logo no início do livro."
+    },
+    "hint": "Conte os filhos homens citados no versículo.",
+    "learningObjective": "Lembrar a família inicial de Jó.",
+    "evidence": [
+      "Jó 1:2"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-01-jo-integro-06",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jó 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Jó 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Jó 1:8 comunica que se liga a este contexto?",
+    "verseRef": "Jó 1:8",
+    "passageText": "Então o Senhor perguntou a Satanás: Você notou o meu servo Jó? Pois não há ninguém na terra semelhante a ele, homem íntegro e reto, temente a Deus e que se desvia do mal.",
+    "passageA": {
+      "ref": "Jó 1:8",
+      "text": "Então o Senhor perguntou a Satanás: Você notou o meu servo Jó? Pois não há ninguém na terra semelhante a ele, homem íntegro e reto, temente a Deus e que se desvia do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus mesmo apresenta Jó como servo diferente de todos na terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jó pede para ser provado"
+      },
+      {
+        "id": "b",
+        "text": "Deus confirma a integridade de Jó"
+      },
+      {
+        "id": "c",
+        "text": "Satanás elogia a fé de Jó"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não há ninguém na terra semelhante a ele",
+    "feedbackCorrect": "É o próprio Deus quem testemunha que não há ninguém como Jó na terra.",
+    "feedbackWrong": {
+      "a": "Jó não pede prova alguma; Deus é quem o aponta a Satanás.",
+      "c": "Quem fala bem de Jó aqui é Deus, não Satanás."
+    },
+    "hint": "Veja quem está falando de Jó nesse versículo.",
+    "learningObjective": "Ligar Jó 1:8 ao testemunho de Deus sobre Jó.",
+    "evidence": [
+      "Jó 1:8"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-01-jo-integro-01",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jó 1:5, Jó oferecia holocaustos apenas quando sabia que os filhos tinham pecado.",
+    "prompt": "Em Jó 1:5, Jó oferecia holocaustos apenas quando sabia que os filhos tinham pecado.",
+    "cue": "Em Jó 1:5, Jó oferecia holocaustos apenas quando sabia que os filhos tinham pecado.",
+    "verseRef": "Jó 1:5",
+    "passageText": "Sucedendo os dias de seus banquetes, Jó chamava seus filhos e os santificava; levantava-se de madrugada e oferecia holocaustos conforme o número de todos eles, pois pensava: \"Talvez meus filhos tenham pecado e blasfemado contra Deus em seu coração.\" Assim Jó fazia continuamente.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Talvez meus filhos tenham pecado",
+    "feedbackCorrect": "Jó agia por cuidado diante de uma possibilidade, e fazia isso continuamente.",
+    "feedbackWrong": {
+      "true": "O texto diz talvez, não certeza, e afirma que Jó fazia isso continuamente."
+    },
+    "hint": "Repare na palavra que mostra dúvida de Jó.",
+    "learningObjective": "Compreender o motivo cauteloso das ofertas de Jó.",
+    "evidence": [
+      "Jó 1:5"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-01-jo-integro-02",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jó 1:5, toque a palavra que introduz o motivo das ofertas de Jó.",
+    "prompt": "Em Jó 1:5, toque a palavra que introduz o motivo das ofertas de Jó.",
+    "cue": "Em Jó 1:5, toque a palavra que introduz o motivo das ofertas de Jó.",
+    "verseRef": "Jó 1:5",
+    "passageText": "Sucedendo os dias de seus banquetes, Jó chamava seus filhos e os santificava; levantava-se de madrugada e oferecia holocaustos conforme o número de todos eles, pois pensava: \"Talvez meus filhos tenham pecado e blasfemado contra Deus em seu coração.\" Assim Jó fazia continuamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim"
+      },
+      {
+        "id": "b",
+        "text": "conforme"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois pensava",
+    "feedbackCorrect": "A palavra liga a oferta ao pensamento de Jó sobre os filhos.",
+    "feedbackWrong": {
+      "a": "Isso fecha o costume de Jó, não introduz o motivo.",
+      "b": "Isso indica a medida das ofertas, não o motivo delas."
+    },
+    "hint": "Procure a palavrinha antes do pensamento de Jó.",
+    "learningObjective": "Reconhecer a ligação de causa em Jó 1:5.",
+    "evidence": [
+      "Jó 1:5"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-01-jo-integro-03",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jó 1:5 explica o costume de Jó de oferecer holocaustos?",
+    "prompt": "Como Jó 1:5 explica o costume de Jó de oferecer holocaustos?",
+    "cue": "Como Jó 1:5 explica o costume de Jó de oferecer holocaustos?",
+    "verseRef": "Jó 1:5",
+    "passageText": "Sucedendo os dias de seus banquetes, Jó chamava seus filhos e os santificava; levantava-se de madrugada e oferecia holocaustos conforme o número de todos eles, pois pensava: \"Talvez meus filhos tenham pecado e blasfemado contra Deus em seu coração.\" Assim Jó fazia continuamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele sabia com certeza que os filhos pecavam nos banquetes"
+      },
+      {
+        "id": "b",
+        "text": "Ele tentava garantir proteção para os bens da família"
+      },
+      {
+        "id": "c",
+        "text": "Ele agia caso os filhos tivessem ofendido a Deus no coração"
+      },
+      {
+        "id": "d",
+        "text": "Ele cumpria uma festa anual obrigatória para pais ricos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois pensava",
+    "feedbackCorrect": "Jó oferecia por precaução amorosa, pensando no coração dos filhos diante de Deus.",
+    "feedbackWrong": {
+      "a": "Jó diz talvez; ele não afirma ter certeza do pecado dos filhos.",
+      "b": "A preocupação de Jó é o coração dos filhos, não os bens.",
+      "d": "O texto liga as ofertas aos banquetes dos filhos, não a uma festa anual."
+    },
+    "hint": "Pense no pensamento que o texto atribui a Jó.",
+    "learningObjective": "Relacionar as ofertas ao cuidado de Jó pelos filhos.",
+    "evidence": [
+      "Jó 1:5"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-01-jo-integro-04",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena de Jó 1:1 a Jó 1:8?",
+    "prompt": "Como avança a cena de Jó 1:1 a Jó 1:8?",
+    "cue": "Como avança a cena de Jó 1:1 a Jó 1:8?",
+    "verseRef": "Jó 1:5–6",
+    "passageText": "Sucedendo os dias de seus banquetes, Jó chamava seus filhos e os santificava; levantava-se de madrugada e oferecia holocaustos conforme o número de todos eles, pois pensava: \"Talvez meus filhos tenham pecado e blasfemado contra Deus em seu coração.\" Assim Jó fazia continuamente. Num dia em que os filhos de Deus vieram apresentar-se diante do Senhor, Satanás também se apresentou entre eles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jó é apresentado como íntegro em Uz"
+      },
+      {
+        "id": "b",
+        "text": "Jó intercede pelos filhos após os banquetes"
+      },
+      {
+        "id": "c",
+        "text": "Deus aponta Jó a Satanás no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Assim Jó fazia continuamente",
+    "feedbackCorrect": "Primeiro o caráter de Jó, depois seu cuidado em casa e então a cena no céu.",
+    "feedbackWrong": {
+      "default": "A cena no céu vem depois de o leitor conhecer Jó e sua família."
+    },
+    "hint": "A conversa no céu é o último passo.",
+    "learningObjective": "Compreender o avanço da apresentação de Jó.",
+    "evidence": [
+      "Jó 1:5–6"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-01-jo-integro-05",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jó 1:12, que palavra mostra o limite imposto quanto a tocar em Jó?",
+    "prompt": "Em Jó 1:12, que palavra mostra o limite imposto quanto a tocar em Jó?",
+    "cue": "Em Jó 1:12, que palavra mostra o limite imposto quanto a tocar em Jó?",
+    "verseRef": "Jó 1:12",
+    "passageText": "E o Senhor disse a Satanás: Eis que tudo o que ele possui está em tuas mãos; somente contra ele não estendas a mão. E Satanás saiu da presença do Senhor.",
+    "template": "E o Senhor disse a Satanás: Eis que tudo o que ele possui está em tuas mãos; ___ contra ele não estendas a mão. E Satanás saiu da presença do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "somente"
+      },
+      {
+        "id": "b",
+        "text": "nunca"
+      },
+      {
+        "id": "c",
+        "text": "também"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "somente contra ele não estendas a mão",
+    "feedbackCorrect": "Os bens são permitidos na prova, mas a pessoa de Jó fica fora do alcance.",
+    "feedbackWrong": {
+      "b": "O limite é preciso sobre a pessoa de Jó, não uma proibição geral.",
+      "c": "A palavra do texto restringe, não acrescenta outra permissão."
+    },
+    "hint": "Veja a restrição que o Senhor faz a Satanás.",
+    "learningObjective": "Compreender o limite posto por Deus na prova.",
+    "evidence": [
+      "Jó 1:12"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-01-jo-integro-06",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jó 1:22 a Tiago 5:11?",
+    "prompt": "O que liga Jó 1:22 a Tiago 5:11?",
+    "cue": "O que liga Jó 1:22 a Tiago 5:11?",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "passageA": {
+      "ref": "Jó 1:22",
+      "text": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta."
+    },
+    "passageB": {
+      "ref": "Tiago 5:11",
+      "text": "Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverança sem acusar a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Riqueza como prova de fé"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio diante de qualquer dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Jó não pecou, nem atribuiu a Deus qualquer falta",
+    "feedbackCorrect": "Tiago lembra a paciência de Jó, o mesmo que não acusou a Deus nas perdas.",
+    "feedbackWrong": {
+      "b": "Tiago fala de perseverança, não de riqueza como sinal de fé.",
+      "c": "Jó fala e adora; o ponto é perseverar sem acusar a Deus."
+    },
+    "hint": "Veja o que Tiago elogia em Jó.",
+    "learningObjective": "Relacionar a reação de Jó à lembrança de Tiago.",
+    "evidence": [
+      "Jó 1:22",
+      "Tiago 5:11"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-01-jo-integro-01",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Jó 1:8, o próprio Deus descreve Jó como homem íntegro e reto, temente a Deus.",
+    "prompt": "Em Jó 1:8, o próprio Deus descreve Jó como homem íntegro e reto, temente a Deus.",
+    "cue": "Em Jó 1:8, o próprio Deus descreve Jó como homem íntegro e reto, temente a Deus.",
+    "verseRef": "Jó 1:7–8",
+    "passageText": "Então, o Senhor perguntou a Satanás: De onde você vem? Satanás respondeu ao Senhor: De vagar pela terra e percorrê-la. Então o Senhor perguntou a Satanás: Você notou o meu servo Jó? Pois não há ninguém na terra semelhante a ele, homem íntegro e reto, temente a Deus e que se desvia do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "homem íntegro e reto, temente a Deus e que se desvia do mal",
+    "feedbackCorrect": "A integridade de Jó não é só fama entre homens; Deus mesmo a afirma.",
+    "feedbackWrong": {
+      "false": "Em Jó 1:8, Deus chama Jó de íntegro, reto e temente a Deus."
+    },
+    "hint": "Veja como Deus apresenta Jó a Satanás.",
+    "learningObjective": "Interpretar o peso do testemunho de Deus sobre Jó.",
+    "evidence": [
+      "Jó 1:7–8"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-01-jo-integro-02",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jó 1:8, toque como Deus chama Jó ao apresentá-lo.",
+    "prompt": "Em Jó 1:8, toque como Deus chama Jó ao apresentá-lo.",
+    "cue": "Em Jó 1:8, toque como Deus chama Jó ao apresentá-lo.",
+    "verseRef": "Jó 1:8",
+    "passageText": "Então o Senhor perguntou a Satanás: Você notou o meu servo Jó? Pois não há ninguém na terra semelhante a ele, homem íntegro e reto, temente a Deus e que se desvia do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "semelhante a ele"
+      },
+      {
+        "id": "b",
+        "text": "meu servo Jó"
+      },
+      {
+        "id": "c",
+        "text": "ninguém na terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Você notou o meu servo Jó",
+    "feedbackCorrect": "Deus chama Jó de seu servo antes de qualquer prova começar.",
+    "feedbackWrong": {
+      "a": "Isso completa a comparação, não o título que Deus dá a Jó.",
+      "c": "Isso fala da comparação com outros, não de como Deus o chama."
+    },
+    "hint": "Procure o título que Deus dá a Jó.",
+    "learningObjective": "Sustentar que Jó é servo de Deus antes da prova.",
+    "evidence": [
+      "Jó 1:8"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-01-jo-integro-03",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jó 1:1-8 sustenta sobre Jó antes das perdas?",
+    "prompt": "Que leitura Jó 1:1-8 sustenta sobre Jó antes das perdas?",
+    "cue": "Que leitura Jó 1:1-8 sustenta sobre Jó antes das perdas?",
+    "verseRef": "Jó 1:1–2",
+    "passageText": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal. Nasceram-lhe sete filhos e três filhas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sua riqueza é apresentada como prêmio por um voto"
+      },
+      {
+        "id": "b",
+        "text": "Deus o descreve como homem que precisa ser corrigido"
+      },
+      {
+        "id": "c",
+        "text": "Sua integridade é afirmada antes de qualquer sofrimento"
+      },
+      {
+        "id": "d",
+        "text": "Seus sacrifícios garantiam que nada lhe faltaria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "era íntegro e reto, temente a Deus",
+    "feedbackCorrect": "Antes de perder qualquer coisa, Jó já é afirmado como íntegro por Deus e pelo narrador.",
+    "feedbackWrong": {
+      "a": "Os bens são descritos, mas nunca como prêmio por um voto de Jó.",
+      "b": "Deus elogia Jó a Satanás; não o apresenta como alguém a corrigir.",
+      "d": "As ofertas expressam temor a Deus, não um seguro contra perdas."
+    },
+    "hint": "Compare cada opção com a ordem em que o livro apresenta Jó.",
+    "learningObjective": "Escolher a leitura sustentada sobre Jó antes da prova.",
+    "evidence": [
+      "Jó 1:1–2"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-01-jo-integro-04",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Jó lembrado na Bíblia?",
+    "prompt": "Qual sequência revela o caminho de Jó lembrado na Bíblia?",
+    "cue": "Qual sequência revela o caminho de Jó lembrado na Bíblia?",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus afirma a integridade de Jó"
+      },
+      {
+        "id": "b",
+        "text": "Jó perde bens e filhos sem pecar"
+      },
+      {
+        "id": "c",
+        "text": "Tiago lembra a paciência de Jó"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em todas essas coisas, Jó não pecou",
+    "feedbackCorrect": "A integridade afirmada atravessa a perda e vira exemplo de paciência no Novo Testamento.",
+    "feedbackWrong": {
+      "default": "Siga a ordem da história, de Jó 1 até a carta de Tiago."
+    },
+    "hint": "Tiago escreve muito depois dos fatos de Jó.",
+    "learningObjective": "Ver Jó como exemplo que atravessa a Bíblia.",
+    "evidence": [
+      "Jó 1:22",
+      "Tiago 5:11"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-01-jo-integro-05",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jó 1:22, que verbo o texto nega sobre Jó depois das perdas?",
+    "prompt": "Em Jó 1:22, que verbo o texto nega sobre Jó depois das perdas?",
+    "cue": "Em Jó 1:22, que verbo o texto nega sobre Jó depois das perdas?",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "template": "Em todas essas coisas, Jó não ___, nem atribuiu a Deus qualquer falta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecou"
+      },
+      {
+        "id": "b",
+        "text": "chorou"
+      },
+      {
+        "id": "c",
+        "text": "adorou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Jó não pecou",
+    "feedbackCorrect": "Mesmo perdendo tudo, Jó não pecou nem acusou a Deus de falta alguma.",
+    "feedbackWrong": {
+      "b": "O luto aparece nos gestos de Jó, mas o verbo negado é outro.",
+      "c": "Adorar é o que Jó faz em 1:20; aqui o texto nega outra coisa."
+    },
+    "hint": "Veja o que o narrador garante que Jó não fez.",
+    "learningObjective": "Lembrar a avaliação final de Jó no capítulo.",
+    "evidence": [
+      "Jó 1:22"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-01-jo-integro-06",
+    "trail": "jo",
+    "section": "jo-prova-01-jo-integro",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jó 1:1 a Ezequiel 14:14?",
+    "prompt": "O que liga Jó 1:1 a Ezequiel 14:14?",
+    "cue": "O que liga Jó 1:1 a Ezequiel 14:14?",
+    "verseRef": "Jó 1:1",
+    "passageText": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal.",
+    "passageA": {
+      "ref": "Jó 1:1",
+      "text": "Havia um homem na terra de Uz, cujo nome era Jó; esse homem era íntegro e reto, temente a Deus e que se desviava do mal."
+    },
+    "passageB": {
+      "ref": "Ezequiel 14:14",
+      "text": "Ainda que estivessem no meio dela estes três homens, Noé, Daniel e Jó, eles, pela sua justiça apenas livrariam a própria vida, diz o Senhor Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jó julga as nações vizinhas"
+      },
+      {
+        "id": "b",
+        "text": "Jó lembrado entre os justos"
+      },
+      {
+        "id": "c",
+        "text": "Riqueza protege os justos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "era íntegro e reto, temente a Deus",
+    "feedbackCorrect": "Séculos depois, Ezequiel ainda cita Jó ao lado de Noé e Daniel pela justiça.",
+    "feedbackWrong": {
+      "a": "Ezequiel não põe Jó como juiz de nações, mas entre homens justos.",
+      "c": "O destaque de Ezequiel é a justiça de Jó, não sua riqueza."
+    },
+    "hint": "Veja ao lado de quem Ezequiel coloca Jó.",
+    "learningObjective": "Ligar a justiça de Jó à sua lembrança em Ezequiel.",
+    "evidence": [
+      "Jó 1:1",
+      "Ezequiel 14:14"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-02-perda-e-adoracao-01",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jó 1:20, Jó vestiu roupas de festa e celebrou com os servos que restaram.",
+    "prompt": "Em Jó 1:20, Jó vestiu roupas de festa e celebrou com os servos que restaram.",
+    "cue": "Em Jó 1:20, Jó vestiu roupas de festa e celebrou com os servos que restaram.",
+    "verseRef": "Jó 1:20",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "rasgou seu manto, rapou a cabeça",
+    "feedbackCorrect": "A reação de Jó é de luto profundo, não de festa, ao ouvir as notícias.",
+    "feedbackWrong": {
+      "true": "Releia Jó 1:20, onde Jó rasga o manto e rapa a cabeça em luto."
+    },
+    "hint": "Veja os gestos de Jó ao se levantar.",
+    "learningObjective": "Observar os gestos de luto de Jó.",
+    "evidence": [
+      "Jó 1:20"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-02-perda-e-adoracao-02",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jó 1:20, toque o primeiro gesto de luto de Jó.",
+    "prompt": "Em Jó 1:20, toque o primeiro gesto de luto de Jó.",
+    "cue": "Em Jó 1:20, toque o primeiro gesto de luto de Jó.",
+    "verseRef": "Jó 1:20",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lançou-se em terra"
+      },
+      {
+        "id": "b",
+        "text": "rasgou seu manto"
+      },
+      {
+        "id": "c",
+        "text": "rapou a cabeça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "rasgou seu manto, rapou a cabeça",
+    "feedbackCorrect": "Antes de falar qualquer coisa, Jó rasga o manto em sinal de dor.",
+    "feedbackWrong": {
+      "a": "Lançar-se em terra vem depois, já ligado à adoração.",
+      "c": "Rapou a cabeça é o gesto seguinte; o primeiro vem antes dele."
+    },
+    "hint": "Siga a ordem dos gestos no versículo.",
+    "learningObjective": "Identificar o primeiro gesto de luto de Jó.",
+    "evidence": [
+      "Jó 1:20"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-02-perda-e-adoracao-03",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jó 1:19, o que causou a morte dos filhos de Jó?",
+    "prompt": "Segundo Jó 1:19, o que causou a morte dos filhos de Jó?",
+    "cue": "Segundo Jó 1:19, o que causou a morte dos filhos de Jó?",
+    "verseRef": "Jó 1:19",
+    "passageText": "Eis que se levantou um grande vento do deserto e atingiu os quatro cantos da casa, a qual desabou sobre os jovens, e morreram; eu escapei apenas para trazer-te a nova.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um incêndio durante o banquete"
+      },
+      {
+        "id": "b",
+        "text": "Um grande vento derrubou a casa"
+      },
+      {
+        "id": "c",
+        "text": "Um ataque de povos vizinhos"
+      },
+      {
+        "id": "d",
+        "text": "Uma doença que veio de repente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se levantou um grande vento do deserto",
+    "feedbackCorrect": "Um vento do deserto atingiu os quatro cantos da casa, que desabou sobre os jovens.",
+    "feedbackWrong": {
+      "a": "O fogo aparece na perda das ovelhas, não na casa dos filhos.",
+      "c": "Ataques levaram bois e camelos; a casa cai por causa do vento.",
+      "d": "O texto não fala de doença; fala de vento e desabamento."
+    },
+    "hint": "Leia o que atinge os quatro cantos da casa.",
+    "learningObjective": "Observar a causa da última perda anunciada.",
+    "evidence": [
+      "Jó 1:19"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-02-perda-e-adoracao-04",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jó 1:20 na ordem do texto.",
+    "prompt": "Monte Jó 1:20 na ordem do texto.",
+    "cue": "Monte Jó 1:20 na ordem do texto.",
+    "verseRef": "Jó 1:20",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, Jó se levantou, rasgou seu manto"
+      },
+      {
+        "id": "b",
+        "text": "rapou a cabeça"
+      },
+      {
+        "id": "c",
+        "text": "lançou-se em terra e adorou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então, Jó se levantou, rasgou seu manto",
+    "feedbackCorrect": "Luto no corpo e adoração aparecem juntos na mesma sequência.",
+    "feedbackWrong": {
+      "default": "Comece por Jó se levantando; a adoração fecha o versículo."
+    },
+    "hint": "O versículo começa com Jó se levantando.",
+    "learningObjective": "Reconhecer a sequência de Jó 1:20.",
+    "evidence": [
+      "Jó 1:20"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-02-perda-e-adoracao-05",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jó 1:21, como Jó diz que saiu do ventre de sua mãe?",
+    "prompt": "Em Jó 1:21, como Jó diz que saiu do ventre de sua mãe?",
+    "cue": "Em Jó 1:21, como Jó diz que saiu do ventre de sua mãe?",
+    "verseRef": "Jó 1:21",
+    "passageText": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "template": "E disse: ___ saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rico"
+      },
+      {
+        "id": "b",
+        "text": "Nu"
+      },
+      {
+        "id": "c",
+        "text": "Pronto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Nu saí do ventre de minha mãe",
+    "feedbackCorrect": "Jó reconhece que chegou ao mundo sem nada e sem nada voltará.",
+    "feedbackWrong": {
+      "a": "Jó tinha bens, mas diz que nasceu sem trazer nada.",
+      "c": "A palavra do texto fala da condição de Jó ao nascer, não de preparo."
+    },
+    "hint": "Veja como Jó descreve sua chegada ao mundo.",
+    "learningObjective": "Lembrar a confissão de Jó sobre sua origem.",
+    "evidence": [
+      "Jó 1:21"
+    ]
+  },
+  {
+    "id": "jo-sem-jo-prova-02-perda-e-adoracao-06",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jó 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Jó 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Jó 1:21 comunica que se liga a este contexto?",
+    "verseRef": "Jó 1:21",
+    "passageText": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "passageA": {
+      "ref": "Jó 1:21",
+      "text": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jó perdeu bens e filhos no mesmo dia e responde falando de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jó exige seus bens de volta"
+      },
+      {
+        "id": "b",
+        "text": "Jó bendiz o nome do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Jó amaldiçoa seu nascimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "bendito seja o nome do SENHOR",
+    "feedbackCorrect": "No dia da maior perda, a boca de Jó bendiz o nome do Senhor.",
+    "feedbackWrong": {
+      "a": "Não há exigência na fala de Jó, mas reconhecimento e louvor.",
+      "c": "Jó não amaldiçoa; ele bendiz o nome do Senhor."
+    },
+    "hint": "Veja a última frase da fala de Jó.",
+    "learningObjective": "Ligar Jó 1:21 à adoração em meio à perda.",
+    "evidence": [
+      "Jó 1:21"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-02-perda-e-adoracao-01",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jó 1:21, Jó afirma que trouxe seus bens ao nascer e que os levaria ao morrer.",
+    "prompt": "Em Jó 1:21, Jó afirma que trouxe seus bens ao nascer e que os levaria ao morrer.",
+    "cue": "Em Jó 1:21, Jó afirma que trouxe seus bens ao nascer e que os levaria ao morrer.",
+    "verseRef": "Jó 1:21",
+    "passageText": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Nu saí do ventre de minha mãe e nu voltarei para lá",
+    "feedbackCorrect": "Jó diz o contrário, pois chegou sem nada e sem nada voltará.",
+    "feedbackWrong": {
+      "true": "Releia o começo de Jó 1:21, onde Jó diz que saiu nu e nu voltará."
+    },
+    "hint": "Compare o começo e o fim da vida na fala de Jó.",
+    "learningObjective": "Compreender a fala de Jó sobre origem e fim.",
+    "evidence": [
+      "Jó 1:21"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-02-perda-e-adoracao-02",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jó 1:20, toque o verbo que mostra a virada do luto para a adoração.",
+    "prompt": "Em Jó 1:20, toque o verbo que mostra a virada do luto para a adoração.",
+    "cue": "Em Jó 1:20, toque o verbo que mostra a virada do luto para a adoração.",
+    "verseRef": "Jó 1:20",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rasgou"
+      },
+      {
+        "id": "b",
+        "text": "levantou"
+      },
+      {
+        "id": "c",
+        "text": "adorou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lançou-se em terra e adorou",
+    "feedbackCorrect": "Depois dos gestos de luto, o texto termina com Jó adorando a Deus.",
+    "feedbackWrong": {
+      "a": "Rasgar o manto expressa dor, não ainda a adoração.",
+      "b": "Levantar-se abre a cena; a adoração vem no fim dela."
+    },
+    "hint": "Procure o último verbo do versículo.",
+    "learningObjective": "Reconhecer a virada do luto à adoração.",
+    "evidence": [
+      "Jó 1:20"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-02-perda-e-adoracao-03",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jó 1:20 junta luto e adoração na mesma cena?",
+    "prompt": "Como Jó 1:20 junta luto e adoração na mesma cena?",
+    "cue": "Como Jó 1:20 junta luto e adoração na mesma cena?",
+    "verseRef": "Jó 1:20",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jó chora em público, mas adora só dias depois"
+      },
+      {
+        "id": "b",
+        "text": "Jó abandona o luto porque entende o motivo das perdas"
+      },
+      {
+        "id": "c",
+        "text": "Jó expressa a dor no corpo e se prostra diante de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Jó esconde a dor para parecer forte diante dos servos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lançou-se em terra e adorou",
+    "feedbackCorrect": "No mesmo versículo, Jó rasga o manto em dor e se prostra adorando a Deus.",
+    "feedbackWrong": {
+      "a": "A adoração acontece na mesma cena das notícias, não dias depois.",
+      "b": "Jó não recebe explicação alguma; mesmo assim ele adora.",
+      "d": "Os gestos de Jó são visíveis e intensos; nada é escondido."
+    },
+    "hint": "Observe o começo e o fim do mesmo versículo.",
+    "learningObjective": "Relacionar luto e adoração na reação de Jó.",
+    "evidence": [
+      "Jó 1:20"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-02-perda-e-adoracao-04",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as perdas anunciadas a Jó?",
+    "prompt": "Como se encadeiam as perdas anunciadas a Jó?",
+    "cue": "Como se encadeiam as perdas anunciadas a Jó?",
+    "verseRef": "Jó 1:16–17",
+    "passageText": "Enquanto ele ainda falava, veio outro e disse: O fogo de Deus caiu do céu e queimou as ovelhas juntamente com os servos, consumindo-os; só eu escapei para trazer-te a notícia. Enquanto ainda falava esse, veio outro e disse: Os caldeus se dividiram em três bandos, atacaram os camelos, levaram-nos e mataram os servos a fio de espada; eu sou o único que escapei para trazer a nova.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um mensageiro ainda fala e outro chega"
+      },
+      {
+        "id": "b",
+        "text": "As notícias se acumulam sem pausa para Jó"
+      },
+      {
+        "id": "c",
+        "text": "A última notícia fala dos filhos de Jó"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Enquanto ele ainda falava, veio outro",
+    "feedbackCorrect": "As perdas vêm em ondas, até chegar a mais dolorosa, a dos filhos.",
+    "feedbackWrong": {
+      "default": "As notícias se sobrepõem antes de chegar à dos filhos."
+    },
+    "hint": "A notícia dos filhos é a última a chegar.",
+    "learningObjective": "Compreender o acúmulo das notícias de perda.",
+    "evidence": [
+      "Jó 1:16–17"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-02-perda-e-adoracao-05",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jó 1:20, sobre o que Jó se lançou antes de adorar?",
+    "prompt": "Em Jó 1:20, sobre o que Jó se lançou antes de adorar?",
+    "cue": "Em Jó 1:20, sobre o que Jó se lançou antes de adorar?",
+    "verseRef": "Jó 1:20",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou.",
+    "template": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em ___ e adorou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cinza"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "lançou-se em terra e adorou",
+    "feedbackCorrect": "Jó se lança em terra, com o rosto no chão, e nesse lugar adora.",
+    "feedbackWrong": {
+      "a": "Cinza aparece em outros momentos de luto, mas aqui o texto diz terra.",
+      "c": "A casa citada é a dos filhos; Jó se lança em outro lugar."
+    },
+    "hint": "Veja o lugar do corpo de Jó ao adorar.",
+    "learningObjective": "Compreender o gesto corporal da adoração de Jó.",
+    "evidence": [
+      "Jó 1:20"
+    ]
+  },
+  {
+    "id": "jo-cam-jo-prova-02-perda-e-adoracao-06",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jó 1:21 a Salmos 34:1?",
+    "prompt": "O que liga Jó 1:21 a Salmos 34:1?",
+    "cue": "O que liga Jó 1:21 a Salmos 34:1?",
+    "verseRef": "Jó 1:21",
+    "passageText": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "passageA": {
+      "ref": "Jó 1:21",
+      "text": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!"
+    },
+    "passageB": {
+      "ref": "Salmos 34:1",
+      "text": "Bendirei ao Senhor em todo o tempo; o seu louvor estará sempre nos meus lábios."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esconder a dor ao louvar"
+      },
+      {
+        "id": "b",
+        "text": "Louvar só depois da restauração"
+      },
+      {
+        "id": "c",
+        "text": "Bendizer a Deus em todo tempo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "bendito seja o nome do SENHOR",
+    "feedbackCorrect": "Jó bendiz na perda, e o salmo fala de bendizer ao Senhor em todo tempo.",
+    "feedbackWrong": {
+      "a": "O louvor de Jó vem junto com gestos públicos de luto.",
+      "b": "Jó bendiz antes de qualquer restauração, ainda no dia da perda."
+    },
+    "hint": "Compare o tempo em que cada um bendiz a Deus.",
+    "learningObjective": "Relacionar a fala de Jó ao louvor em todo tempo.",
+    "evidence": [
+      "Jó 1:21",
+      "Salmos 34:1"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-02-perda-e-adoracao-01",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Jó 1:22, mesmo depois de todas as perdas, Jó não pecou nem atribuiu falta a Deus.",
+    "prompt": "Em Jó 1:22, mesmo depois de todas as perdas, Jó não pecou nem atribuiu falta a Deus.",
+    "cue": "Em Jó 1:22, mesmo depois de todas as perdas, Jó não pecou nem atribuiu falta a Deus.",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Jó não pecou, nem atribuiu a Deus qualquer falta",
+    "feedbackCorrect": "O narrador avalia a reação inteira de Jó e não encontra pecado nela.",
+    "feedbackWrong": {
+      "false": "Jó 1:22 afirma exatamente que Jó não pecou nem acusou a Deus."
+    },
+    "hint": "Veja a avaliação final do narrador.",
+    "learningObjective": "Interpretar a avaliação do narrador sobre Jó.",
+    "evidence": [
+      "Jó 1:22"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-02-perda-e-adoracao-02",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jó 1:22, toque o trecho que mostra que Jó não acusou a Deus.",
+    "prompt": "Em Jó 1:22, toque o trecho que mostra que Jó não acusou a Deus.",
+    "cue": "Em Jó 1:22, toque o trecho que mostra que Jó não acusou a Deus.",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não pecou"
+      },
+      {
+        "id": "b",
+        "text": "qualquer falta"
+      },
+      {
+        "id": "c",
+        "text": "Em todas essas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nem atribuiu a Deus qualquer falta",
+    "feedbackCorrect": "Jó sofreu e adorou sem transformar Deus em culpado pelas perdas.",
+    "feedbackWrong": {
+      "a": "Isso fala do pecado de Jó em geral; a acusação a Deus vem depois.",
+      "c": "Isso marca o alcance das perdas, não a ausência de acusação."
+    },
+    "hint": "Procure o fim da avaliação do narrador.",
+    "learningObjective": "Sustentar que Jó não acusou a Deus na perda.",
+    "evidence": [
+      "Jó 1:22"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-02-perda-e-adoracao-03",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jó 1:20-22 sustenta sobre adorar em meio à perda?",
+    "prompt": "Que leitura Jó 1:20-22 sustenta sobre adorar em meio à perda?",
+    "cue": "Que leitura Jó 1:20-22 sustenta sobre adorar em meio à perda?",
+    "verseRef": "Jó 1:20–21",
+    "passageText": "Então, Jó se levantou, rasgou seu manto, rapou a cabeça, lançou-se em terra e adorou. E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "options": [
+      {
+        "id": "a",
+        "text": "É possível sofrer em luto e ainda bendizer a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Bendizer a Deus garante o fim rápido do sofrimento"
+      },
+      {
+        "id": "c",
+        "text": "A adoração certa apaga a memória de quem se perdeu"
+      },
+      {
+        "id": "d",
+        "text": "Quem adora de verdade não demonstra tristeza alguma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lançou-se em terra e adorou",
+    "feedbackCorrect": "Luto visível e louvor sincero aparecem juntos, sem um anular o outro.",
+    "feedbackWrong": {
+      "b": "O texto não promete alívio imediato a quem bendiz a Deus.",
+      "c": "Jó fala dos filhos e das perdas; nada é esquecido na adoração.",
+      "d": "Jó rasga o manto e rapa a cabeça antes de adorar; a dor é real."
+    },
+    "hint": "Veja se o texto separa dor e louvor ou os junta.",
+    "learningObjective": "Escolher a leitura sustentada sobre luto e adoração.",
+    "evidence": [
+      "Jó 1:20–21"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-02-perda-e-adoracao-04",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da perseverança de Jó?",
+    "prompt": "Qual sequência revela o caminho da perseverança de Jó?",
+    "cue": "Qual sequência revela o caminho da perseverança de Jó?",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jó perde tudo e não acusou a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Tiago lembra a paciência de Jó"
+      },
+      {
+        "id": "c",
+        "text": "Crer também é perseverar na dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em todas essas coisas, Jó não pecou",
+    "feedbackCorrect": "A reação de Jó vira exemplo lembrado por Tiago para quem persevera crendo.",
+    "feedbackWrong": {
+      "default": "Comece em Jó 1 e só depois vá à carta de Tiago."
+    },
+    "hint": "Siga da história de Jó ao ensino de Tiago.",
+    "learningObjective": "Ver a perseverança de Jó como fio bíblico.",
+    "evidence": [
+      "Jó 1:22",
+      "Tiago 5:11"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-02-perda-e-adoracao-05",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jó 1:21, que palavra Jó dirige ao nome do Senhor na perda?",
+    "prompt": "Em Jó 1:21, que palavra Jó dirige ao nome do Senhor na perda?",
+    "cue": "Em Jó 1:21, que palavra Jó dirige ao nome do Senhor na perda?",
+    "verseRef": "Jó 1:21",
+    "passageText": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; bendito seja o nome do SENHOR!",
+    "template": "E disse: Nu saí do ventre de minha mãe e nu voltarei para lá; o SENHOR deu e o SENHOR tomou; ___ seja o nome do SENHOR!",
+    "options": [
+      {
+        "id": "a",
+        "text": "esquecido"
+      },
+      {
+        "id": "b",
+        "text": "ausente"
+      },
+      {
+        "id": "c",
+        "text": "bendito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "bendito seja o nome do SENHOR",
+    "feedbackCorrect": "A última palavra de Jó sobre Deus na cena é de louvor, não de queixa.",
+    "feedbackWrong": {
+      "a": "Jó não declara Deus esquecido; ele bendiz o seu nome.",
+      "b": "Para Jó, Deus não está ausente; é ele quem deu e tomou."
+    },
+    "hint": "Veja a palavra final da fala de Jó.",
+    "learningObjective": "Lembrar a palavra de louvor de Jó na perda.",
+    "evidence": [
+      "Jó 1:21"
+    ]
+  },
+  {
+    "id": "jo-pro-jo-prova-02-perda-e-adoracao-06",
+    "trail": "jo",
+    "section": "jo-prova-02-perda-e-adoracao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jó 1:22 a Tiago 5:11?",
+    "prompt": "O que liga Jó 1:22 a Tiago 5:11?",
+    "cue": "O que liga Jó 1:22 a Tiago 5:11?",
+    "verseRef": "Jó 1:22",
+    "passageText": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta.",
+    "passageA": {
+      "ref": "Jó 1:22",
+      "text": "Em todas essas coisas, Jó não pecou, nem atribuiu a Deus qualquer falta."
+    },
+    "passageB": {
+      "ref": "Tiago 5:11",
+      "text": "Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio como única fé"
+      },
+      {
+        "id": "b",
+        "text": "O fim que o Senhor deu"
+      },
+      {
+        "id": "c",
+        "text": "Perdas como castigo escondido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Em todas essas coisas, Jó não pecou",
+    "feedbackCorrect": "Tiago convida a olhar o fim que o Senhor deu a Jó, cheio de misericórdia.",
+    "feedbackWrong": {
+      "a": "Jó fala, pergunta e adora; sua fé não é só silêncio.",
+      "c": "Tiago não chama as perdas de castigo; destaca perseverança e misericórdia."
+    },
+    "hint": "Veja o que Tiago pede que observemos em Jó.",
+    "learningObjective": "Ligar a perseverança de Jó à misericórdia final de Deus.",
+    "evidence": [
+      "Jó 1:22",
+      "Tiago 5:11"
+    ]
+  }
+]

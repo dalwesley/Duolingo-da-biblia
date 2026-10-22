@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Atos 1:9–11",
+  "passages": [
+   {
+    "ref": "Atos 1:8–11"
+   },
+   {
+    "ref": "Atos 1:14"
+   }
+  ],
+  "context": "Jesus ressuscitado fala aos discípulos e sobe ao céu diante deles. Dois homens vestidos de branco anunciam que ele voltará do mesmo modo.",
+  "keyword": "voltará",
+  "keywordGloss": "A promessa é que esse mesmo Jesus voltará do mesmo modo como os discípulos o viram subir.",
+  "focusQuestion": "Como a certeza de que Jesus voltará muda o seu modo de viver hoje?",
+  "reflectionPrompts": [
+   "Jesus voltará",
+   "Testemunhar com esperança",
+   "Orar e esperar"
+  ],
+  "facts": [
+   {
+    "text": "Os discípulos serão testemunhas até os confins da terra.",
+    "evidenceRef": "Atos 1:8",
+    "evidenceSpan": "sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra"
+   },
+   {
+    "text": "Jesus foi elevado às alturas diante dos discípulos.",
+    "evidenceRef": "Atos 1:9",
+    "evidenceSpan": "foi elevado às alturas diante deles"
+   },
+   {
+    "text": "Uma nuvem encobriu Jesus, afastando-o da vista deles.",
+    "evidenceRef": "Atos 1:9",
+    "evidenceSpan": "uma nuvem o encobriu, afastando-o de sua vista"
+   },
+   {
+    "text": "Dois homens vestidos de branco surgiram ao lado deles.",
+    "evidenceRef": "Atos 1:10",
+    "evidenceSpan": "surgiram ao lado deles dois homens vestidos de branco"
+   },
+   {
+    "text": "Jesus voltará do mesmo modo como o viram subir.",
+    "evidenceRef": "Atos 1:11",
+    "evidenceSpan": "voltará da mesma maneira como o viram subir"
+   },
+   {
+    "text": "Todos perseveravam unânimes em oração e súplicas.",
+    "evidenceRef": "Atos 1:14",
+    "evidenceSpan": "Todos esses perseveravam unânimes em oração e súplicas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "voltará",
+    "gloss": "O anúncio garante o retorno desse mesmo Jesus, do mesmo modo como subiu."
+   },
+   {
+    "term": "nuvem",
+    "gloss": "A nuvem encobre Jesus e o afasta da vista dos discípulos no momento da subida."
+   },
+   {
+    "term": "testemunhas",
+    "gloss": "Os discípulos são enviados a falar de Jesus de Jerusalém até os confins da terra."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jesus é elevado diante deles",
+    "evidenceRef": "Atos 1:9"
+   },
+   {
+    "label": "Os discípulos olham para o céu",
+    "evidenceRef": "Atos 1:10"
+   },
+   {
+    "label": "A volta de Jesus é anunciada",
+    "evidenceRef": "Atos 1:11"
+   },
+   {
+    "label": "O grupo persevera em oração",
+    "evidenceRef": "Atos 1:14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Jesus é elevado enquanto os discípulos observam a subida.",
+    "marker": "enquanto",
+    "evidenceRef": "Atos 1:9"
+   },
+   {
+    "kind": "propósito",
+    "text": "Os discípulos recebem poder para ser testemunhas até os confins da terra.",
+    "marker": "até",
+    "evidenceRef": "Atos 1:8"
+   },
+   {
+    "kind": "resultado",
+    "text": "Depois do anúncio, o grupo persevera unido em oração e súplicas.",
+    "marker": null,
+    "evidenceRef": "Atos 1:14"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "João 14:3",
+    "bridge": "Jesus promete voltar"
+   },
+   {
+    "ref": "Mateus 24:42",
+    "bridge": "Vigiar sem saber o dia"
+   },
+   {
+    "ref": "1 Tessalonicenses 4:16",
+    "bridge": "O Senhor descerá do céu"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Os discípulos deviam ficar só olhando para o céu, esperando sem nada fazer.",
+    "why": "Antes de subir, Jesus os envia como testemunhas até os confins da terra, e depois eles perseveram em oração."
+   },
+   {
+    "text": "O texto permite calcular o dia em que Jesus voltará.",
+    "why": "O anúncio diz que ele voltará do mesmo modo, mas não revela dia nem hora alguma."
+   },
+   {
+    "text": "A volta de Jesus seria apenas um sentimento no coração, sem ele voltar de verdade.",
+    "why": "Os homens dizem que esse Jesus voltará da mesma maneira como o viram subir."
+   }
+  ],
+  "centralInsight": "Jesus voltará do mesmo modo como subiu, e essa promessa sustenta a esperança",
+  "anchorQuestion": "Segundo Atos 1:11, como Jesus voltará?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Atos 1:11, os dois homens anunciam que Jesus voltará do mesmo modo como o viram subir.",
+   "verseRef": "Atos 1:11",
+   "correctOptionId": "true",
+   "evidenceSpan": "voltará da mesma maneira como o viram subir",
+   "feedbackCorrect": "O anúncio liga a volta ao modo da subida que os discípulos acabaram de ver.",
+   "feedbackWrong": {
+    "false": "Releia o fim do versículo, onde a volta é anunciada com clareza."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Observar a promessa da volta de Jesus.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 1:9, toque o que encobriu Jesus e o afastou da vista deles.",
+   "verseRef": "Atos 1:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "foi elevado"
+    },
+    {
+     "id": "b",
+     "text": "nuvem"
+    },
+    {
+     "id": "c",
+     "text": "sua vista"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "uma nuvem o encobriu, afastando-o de sua vista",
+   "feedbackCorrect": "Algo encobre Jesus no fim da subida, diante dos olhos dos discípulos.",
+   "feedbackWrong": {
+    "a": "Isso diz o que houve com Jesus, não o que o encobriu.",
+    "c": "Isso é de quem ele foi afastado, não o que o encobriu."
+   },
+   "hint": "Procure perto do fim do versículo.",
+   "learningObjective": "Observar como Jesus foi afastado da vista deles.",
+   "evidence": [
+    "Atos 1:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Atos 1:10, quem surgiu ao lado dos discípulos enquanto olhavam para o céu?",
+   "verseRef": "Atos 1:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Dois homens vestidos de branco"
+    },
+    {
+     "id": "b",
+     "text": "Uma multidão de Jerusalém"
+    },
+    {
+     "id": "c",
+     "text": "Pedro e João apenas"
+    },
+    {
+     "id": "d",
+     "text": "Soldados do templo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "surgiram ao lado deles dois homens vestidos de branco",
+   "feedbackCorrect": "Dois homens de branco surgem ao lado deles e fazem o anúncio da volta.",
+   "feedbackWrong": {
+    "b": "Nenhuma multidão aparece nessa cena do monte.",
+    "c": "Pedro e João fazem parte dos discípulos que olhavam.",
+    "d": "O texto não cita soldados nessa cena."
+   },
+   "hint": "Leia quem surge ao lado deles.",
+   "learningObjective": "Observar quem aparece aos discípulos.",
+   "evidence": [
+    "Atos 1:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 1:9 na ordem do texto.",
+   "verseRef": "Atos 1:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "E, ao dizer essas palavras"
+    },
+    {
+     "id": "b",
+     "text": "foi elevado às alturas diante deles"
+    },
+    {
+     "id": "c",
+     "text": "e uma nuvem o encobriu"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "foi elevado às alturas diante deles",
+   "feedbackCorrect": "Jesus fala, é elevado diante deles e então é encoberto.",
+   "feedbackWrong": {
+    "default": "Comece pela fala de Jesus; o encobrimento fecha o versículo."
+   },
+   "hint": "O versículo começa com Jesus falando.",
+   "learningObjective": "Reconhecer a sequência da subida de Jesus.",
+   "evidence": [
+    "Atos 1:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Atos 1:10, de que cor era a roupa dos dois homens que surgiram?",
+   "verseRef": "Atos 1:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "escuro"
+    },
+    {
+     "id": "b",
+     "text": "branco"
+    },
+    {
+     "id": "c",
+     "text": "longo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "dois homens vestidos de branco",
+   "feedbackCorrect": "Os dois homens que anunciam a volta estavam vestidos assim.",
+   "feedbackWrong": {
+    "a": "O texto descreve a roupa com a cor clara, não essa.",
+    "c": "Isso descreveria comprimento, e o texto fala de cor."
+   },
+   "hint": "Veja como o texto descreve os dois homens.",
+   "learningObjective": "Lembrar como os dois homens são descritos.",
+   "evidence": [
+    "Atos 1:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Atos 1:11 comunica que se liga a este contexto?",
+   "verseRef": "Atos 1:11",
+   "passageA": {
+    "ref": "Atos 1:11"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jesus subiu ao céu diante dos discípulos que olhavam."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus nunca mais voltará"
+    },
+    {
+     "id": "b",
+     "text": "Jesus voltará como subiu"
+    },
+    {
+     "id": "c",
+     "text": "Os discípulos subiriam sozinhos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "voltará da mesma maneira como o viram subir",
+   "feedbackCorrect": "A promessa liga a volta futura ao modo da subida que eles viram.",
+   "feedbackWrong": {
+    "a": "O anúncio afirma justamente o contrário disso.",
+    "c": "Quem subiu foi Jesus; os discípulos ficam e ouvem a promessa."
+   },
+   "hint": "Compare a volta anunciada com a subida vista.",
+   "learningObjective": "Ligar a subida de Jesus à promessa da volta.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Atos 1:8, Jesus deixa os discípulos sem nenhuma tarefa até ele voltar.",
+   "verseRef": "Atos 1:8",
+   "correctOptionId": "false",
+   "evidenceSpan": "sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra",
+   "feedbackCorrect": "Antes de subir, Jesus os envia como testemunhas até os confins da terra.",
+   "feedbackWrong": {
+    "true": "Releia a ordem de Jesus no versículo 8, antes da subida."
+   },
+   "hint": "Releia o que Jesus diz antes de subir.",
+   "learningObjective": "Compreender que esperar a volta inclui testemunhar.",
+   "evidence": [
+    "Atos 1:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 1:10, toque a palavra que marca o tempo em que os dois homens surgem.",
+   "verseRef": "Atos 1:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "enquanto"
+    },
+    {
+     "id": "b",
+     "text": "fixamente"
+    },
+    {
+     "id": "c",
+     "text": "branco"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "E, enquanto eles olhavam fixamente para o céu",
+   "feedbackCorrect": "A palavra abre a cena e liga o surgimento ao olhar dos discípulos.",
+   "feedbackWrong": {
+    "b": "Isso diz como eles olhavam, não quando os homens surgem.",
+    "c": "Isso descreve a roupa, não o tempo da cena."
+   },
+   "hint": "Procure a palavra que abre a segunda parte.",
+   "learningObjective": "Reconhecer a palavra que marca o momento da cena.",
+   "evidence": [
+    "Atos 1:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Atos 1:11 responde ao olhar dos discípulos para o céu?",
+   "verseRef": "Atos 1:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Manda que fiquem ali até ele voltar"
+    },
+    {
+     "id": "b",
+     "text": "Anuncia a volta e os devolve à vida"
+    },
+    {
+     "id": "c",
+     "text": "Revela o dia exato do retorno"
+    },
+    {
+     "id": "d",
+     "text": "Diz que a subida foi só um sonho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "por que vocês estão olhando para o céu",
+   "feedbackCorrect": "A pergunta interrompe o olhar parado e aponta para a promessa e a tarefa.",
+   "feedbackWrong": {
+    "a": "Logo depois eles voltam a Jerusalém e se reúnem em oração.",
+    "c": "O anúncio fala do modo da volta, sem dar data alguma.",
+    "d": "Eles viram Jesus subir de verdade, diante dos olhos."
+   },
+   "hint": "Veja o efeito da pergunta dos dois homens.",
+   "learningObjective": "Compreender que a promessa move os discípulos à ação.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Atos 1:9-10?",
+   "verseRef": "Atos 1:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus sobe e é encoberto"
+    },
+    {
+     "id": "b",
+     "text": "Os discípulos olham para o céu"
+    },
+    {
+     "id": "c",
+     "text": "Dois homens surgem ao lado deles"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "surgiram ao lado deles dois homens vestidos de branco",
+   "feedbackCorrect": "Primeiro a subida, depois o olhar deles e o surgimento dos dois homens.",
+   "feedbackWrong": {
+    "default": "A subida vem primeiro; o anúncio fecha a cena."
+   },
+   "hint": "O anúncio é o ponto de chegada.",
+   "learningObjective": "Compreender o movimento da cena da subida.",
+   "evidence": [
+    "Atos 1:9–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Atos 1:11, de que região eram os homens a quem os dois falaram?",
+   "verseRef": "Atos 1:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jerusalém"
+    },
+    {
+     "id": "b",
+     "text": "Samaria"
+    },
+    {
+     "id": "c",
+     "text": "Galileia"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Homens da Galileia, por que vocês estão olhando para o céu",
+   "feedbackCorrect": "Os dois homens se dirigem aos discípulos chamando-os por sua região.",
+   "feedbackWrong": {
+    "a": "Essa cidade é para onde eles voltam depois, no versículo 12.",
+    "b": "Essa região aparece na missão do versículo 8, não aqui."
+   },
+   "hint": "Veja como os dois homens os chamam.",
+   "learningObjective": "Lembrar a quem o anúncio da volta foi feito.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Atos 1:11 a João 14:3?",
+   "verseRef": "Atos 1:11",
+   "passageA": {
+    "ref": "Atos 1:11"
+   },
+   "passageB": {
+    "ref": "João 14:3"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus voltará para os seus"
+    },
+    {
+     "id": "b",
+     "text": "A volta seria só interior"
+    },
+    {
+     "id": "c",
+     "text": "Os discípulos subiriam sozinhos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "voltará da mesma maneira como o viram subir",
+   "feedbackCorrect": "Jesus prometeu voltar, e os dois homens confirmam essa promessa na subida.",
+   "feedbackWrong": {
+    "b": "Nos dois textos ele volta de verdade para buscar os seus.",
+    "c": "Quem volta é Jesus; os discípulos são recebidos por ele."
+   },
+   "hint": "Compare a promessa de Jesus com o anúncio.",
+   "learningObjective": "Relacionar a promessa de Jesus à confirmação em Atos.",
+   "evidence": [
+    "Atos 1:11",
+    "João 14:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Atos 1:14 mostra o grupo perseverando unânime em oração e súplicas depois da subida.",
+   "verseRef": "Atos 1:14",
+   "correctOptionId": "true",
+   "evidenceSpan": "Todos esses perseveravam unânimes em oração e súplicas",
+   "feedbackCorrect": "Depois da subida, o grupo se reúne e persevera unido em oração.",
+   "feedbackWrong": {
+    "false": "Veja a missão no versículo 8 e a oração no versículo 14."
+   },
+   "hint": "Junte o começo e o fim do trecho.",
+   "learningObjective": "Interpretar a espera da volta como vida orante.",
+   "evidence": [
+    "Atos 1:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 1:11, toque a palavra que sustenta a certeza da volta de Jesus.",
+   "verseRef": "Atos 1:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "olhando"
+    },
+    {
+     "id": "b",
+     "text": "voltará"
+    },
+    {
+     "id": "c",
+     "text": "céu"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "voltará da mesma maneira como o viram subir",
+   "feedbackCorrect": "O verbo anuncia com certeza o que vai acontecer com esse Jesus.",
+   "feedbackWrong": {
+    "a": "Isso descreve os discípulos, não a promessa feita a eles.",
+    "c": "Isso é o lugar para onde olhavam, não a promessa."
+   },
+   "hint": "Procure o verbo da promessa no fim.",
+   "learningObjective": "Sustentar com o texto a certeza da volta.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Atos 1:11 sustenta sobre a volta de Jesus?",
+   "verseRef": "Atos 1:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele voltará de verdade, como subiu"
+    },
+    {
+     "id": "b",
+     "text": "Ele voltará só no coração dos crentes"
+    },
+    {
+     "id": "c",
+     "text": "Ele já voltou e ninguém percebeu"
+    },
+    {
+     "id": "d",
+     "text": "Ele voltará em data que podemos marcar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Esse Jesus que foi elevado entre vocês voltará",
+   "feedbackCorrect": "O texto fala desse mesmo Jesus voltando do modo como foi visto subir.",
+   "feedbackWrong": {
+    "b": "A volta é ligada à subida visível que eles presenciaram.",
+    "c": "O anúncio aponta para uma volta futura, ainda esperada.",
+    "d": "O texto fala do modo da volta, sem revelar data."
+   },
+   "hint": "Veja quem volta e como ele volta.",
+   "learningObjective": "Escolher a leitura que o texto sustenta sobre a volta.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da promessa da volta de Jesus?",
+   "verseRef": "Atos 1:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus sobe ao céu diante deles"
+    },
+    {
+     "id": "b",
+     "text": "Jesus promete voltar para os seus"
+    },
+    {
+     "id": "c",
+     "text": "Quem crê vigia sem saber o dia"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "foi elevado às alturas diante deles",
+   "feedbackCorrect": "A subida gera a promessa, e a promessa pede vigilância sem data marcada.",
+   "feedbackWrong": {
+    "default": "Siga a ordem da Bíblia, de Atos aos Evangelhos."
+   },
+   "hint": "Comece pela subida que os discípulos viram.",
+   "learningObjective": "Ver a volta como promessa que pede vigilância.",
+   "evidence": [
+    "Atos 1:9–10",
+    "João 14:3",
+    "Mateus 24:42"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Atos 1:11, Jesus voltará de que maneira em relação à subida?",
+   "verseRef": "Atos 1:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "outra"
+    },
+    {
+     "id": "b",
+     "text": "mesma"
+    },
+    {
+     "id": "c",
+     "text": "qualquer"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "voltará da mesma maneira como o viram subir",
+   "feedbackCorrect": "A volta é anunciada em ligação direta com o modo da subida vista.",
+   "feedbackWrong": {
+    "a": "O texto liga a volta justamente ao modo já visto.",
+    "c": "Não é de qualquer jeito; é ligado à subida presenciada."
+   },
+   "hint": "Veja a comparação feita no fim do versículo.",
+   "learningObjective": "Lembrar o termo que liga a volta à subida.",
+   "evidence": [
+    "Atos 1:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Atos 1:11 a Mateus 24:42?",
+   "verseRef": "Atos 1:11",
+   "passageA": {
+    "ref": "Atos 1:11"
+   },
+   "passageB": {
+    "ref": "Mateus 24:42"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Marcar a data certa"
+    },
+    {
+     "id": "b",
+     "text": "Vigiar esperando a volta"
+    },
+    {
+     "id": "c",
+     "text": "Esquecer a promessa feita"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "voltará da mesma maneira como o viram subir",
+   "feedbackCorrect": "A volta é certa, mas o dia é desconhecido; por isso Jesus manda vigiar.",
+   "feedbackWrong": {
+    "a": "Mateus diz que não sabemos o dia em que o Senhor virá.",
+    "c": "A promessa pede atenção constante, não esquecimento."
+   },
+   "hint": "Veja o que fazer quando o dia é desconhecido.",
+   "learningObjective": "Ligar a certeza da volta à vigilância.",
+   "evidence": [
+    "Atos 1:11",
+    "Mateus 24:42"
+   ]
+  }
+ ]
+}

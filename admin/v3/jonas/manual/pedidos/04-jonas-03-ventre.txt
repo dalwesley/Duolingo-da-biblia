@@ -1,0 +1,59 @@
+Escreva a cena "jonas-03-ventre" da trilha "jonas" (Jonas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "jonas",
+  "title": "Jonas",
+  "description": "Profeta em fuga — misericórdia até para Nínive.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A misericórdia",
+ "mission": {
+  "slug": "jonas-03-ventre",
+  "title": "Do ventre do peixe",
+  "type": "lesson",
+  "intro": "Dentro do peixe, Jonas ora. Do Sheol ele grita, e diz que Jeová ouviu a sua voz.",
+  "hookRef": "Jonas 2:1–2",
+  "hookNote": "A oração não espera o templo. Nasce na aflição, no fundo, e ainda assim é ouvida.",
+  "centralInsight": "A oração pode nascer no fundo",
+  "objective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu."
+ },
+ "v2": {
+  "passageRef": "Jonas 2:1–2",
+  "context": "Jonas ora a Jeová de dentro do peixe e diz que o clamor foi ouvido.",
+  "keyword": "Ventre",
+  "verseRefs": [
+   "Jonas 2:1–2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Jonas 2:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "Jonas 2:1",
+   "text": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe."
+  },
+  {
+   "ref": "Jonas 2:2",
+   "text": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz."
+  },
+  {
+   "ref": "Jonas 2:3",
+   "text": "Tu me lançaste no profundo, no coração dos mares, e a corrente das águas me cercou; todas as tuas ondas e as tuas vagas passaram sobre mim."
+  },
+  {
+   "ref": "Jonas 2:4",
+   "text": "E eu disse: fui lançado de diante de tua presença; contudo, ainda verei o teu santo templo."
+  },
+  {
+   "ref": "Jonas 2:5",
+   "text": "As águas me cercaram até à alma, o abismo me rodeou; e as algas se enrolaram na minha cabeça."
+  }
+ ]
+}
+</cena>

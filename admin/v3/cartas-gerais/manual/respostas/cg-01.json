@@ -1,0 +1,329 @@
+{
+ "study": {
+  "passageRef": "1 Pedro 2:9–10",
+  "passages": [
+   { "ref": "1 Pedro 2:6–10" },
+   { "ref": "1 Pedro 2:11–12" }
+  ],
+  "context": "Pedro escreve a crentes espalhados, tratados como peregrinos. Antes de pedir um comportamento exemplar, ele lembra quem esse povo é: gente chamada por Deus das trevas para a luz.",
+  "keyword": "linhagem eleita",
+  "keywordGloss": "Pedro chama os crentes de povo escolhido por Deus para pertencer a ele e anunciar quem ele é.",
+  "focusQuestion": "Como muda o seu dia saber que você pertence a Deus e foi chamado para a luz dele?",
+  "reflectionPrompts": [
+   "Povo que pertence a Deus",
+   "Chamados para a luz",
+   "Vida que anuncia Deus"
+  ],
+  "facts": [
+   { "text": "Deus põe em Sião a pedra angular, eleita e preciosa.", "evidenceRef": "1 Pedro 2:6", "evidenceSpan": "ponho em Sião a pedra angular" },
+   { "text": "Quem crê na pedra não será decepcionado.", "evidenceRef": "1 Pedro 2:6", "evidenceSpan": "quem nela crer não será, de modo algum, decepcionado" },
+   { "text": "Para quem crê, a pedra é preciosa.", "evidenceRef": "1 Pedro 2:7", "evidenceSpan": "Para vocês, que creem, é preciosa" },
+   { "text": "Os crentes são linhagem eleita e sacerdócio real.", "evidenceRef": "1 Pedro 2:9", "evidenceSpan": "vocês são a linhagem eleita, o sacerdócio real" },
+   { "text": "Antes não eram povo, mas agora são povo de Deus.", "evidenceRef": "1 Pedro 2:10", "evidenceSpan": "antes não eram um povo, mas agora são o povo de Deus" },
+   { "text": "Os crentes devem manter comportamento exemplar entre os gentios.", "evidenceRef": "1 Pedro 2:12", "evidenceSpan": "Mantenham um comportamento exemplar entre os gentios" }
+  ],
+  "keyTerms": [
+   { "term": "pedra angular", "gloss": "A pedra principal da construção: no texto, Cristo é o centro que sustenta o povo de Deus." },
+   { "term": "linhagem eleita", "gloss": "Povo escolhido por Deus, não por merecimento próprio, para pertencer a ele." },
+   { "term": "misericórdia", "gloss": "O favor de Deus que alcançou quem antes não era povo dele." }
+  ],
+  "structure": [
+   { "label": "A pedra posta em Sião", "evidenceRef": "1 Pedro 2:6" },
+   { "label": "Preciosa para quem crê, tropeço para quem desobedece", "evidenceRef": "1 Pedro 2:7–8" },
+   { "label": "Um povo chamado das trevas para a luz", "evidenceRef": "1 Pedro 2:9" },
+   { "label": "Vida exemplar diante dos gentios", "evidenceRef": "1 Pedro 2:11–12" }
+  ],
+  "relations": [
+   { "kind": "contraste", "text": "A mesma pedra é preciosa para quem crê e motivo de tropeço para quem desobedece.", "marker": "mas", "evidenceRef": "1 Pedro 2:7" },
+   { "kind": "propósito", "text": "Deus forma um povo seu para que ele proclame as virtudes de quem o chamou.", "marker": "para que", "evidenceRef": "1 Pedro 2:9" },
+   { "kind": "contraste", "text": "Quem antes não era povo agora é povo de Deus e alcançou misericórdia.", "marker": "agora", "evidenceRef": "1 Pedro 2:10" }
+  ],
+  "crossRefs": [
+   { "ref": "Isaías 28:16", "bridge": "A pedra posta em Sião" },
+   { "ref": "Êxodo 19:6", "bridge": "Sacerdotes e nação santa" },
+   { "ref": "Efésios 2:20", "bridge": "Cristo como pedra angular" }
+  ],
+  "misreadings": [
+   { "text": "Ser povo eleito dispensa boas obras diante dos outros.", "why": "Pedro liga a identidade do povo a um comportamento exemplar entre os gentios (2:12)." },
+   { "text": "A pedra tem o mesmo valor para todos, crendo ou não.", "why": "O texto distingue quem crê, para quem ela é preciosa, de quem desobedece e tropeça (2:7–8)." },
+   { "text": "Ser peregrino é fugir das pessoas e viver isolado.", "why": "Os peregrinos de Pedro vivem entre os gentios de modo exemplar, para que Deus seja glorificado (2:11–12)." }
+  ],
+  "centralInsight": "Chamados das trevas para a luz, somos povo de Deus para viver e anunciar quem ele é.",
+  "anchorQuestion": "Segundo 1 Pedro 2:9, quem são os que creem e para que foram chamados?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em 1 Pedro 2:9, os crentes são chamados de linhagem eleita e sacerdócio real.",
+   "verseRef": "1 Pedro 2:9", "correctOptionId": "true",
+   "evidenceSpan": "vocês são a linhagem eleita, o sacerdócio real",
+   "feedbackCorrect": "Pedro chama os crentes de linhagem eleita e sacerdócio real.",
+   "feedbackWrong": { "false": "Releia 2:9: é assim que Pedro descreve os que creem." },
+   "hint": "Leia como Pedro descreve os crentes.",
+   "learningObjective": "Observar a identidade que Pedro dá aos crentes.",
+   "evidence": ["1 Pedro 2:9"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em 1 Pedro 2:6, toque onde Deus põe a pedra angular.",
+   "verseRef": "1 Pedro 2:6",
+   "options": [{ "id": "a", "text": "em Sião" }, { "id": "b", "text": "na Escritura" }, { "id": "c", "text": "preciosa" }],
+   "correctOptionId": "a",
+   "evidenceSpan": "ponho em Sião a pedra angular",
+   "feedbackCorrect": "Deus põe em Sião a pedra angular, eleita e preciosa.",
+   "feedbackWrong": { "b": "A Escritura é onde isso está escrito, não o lugar da pedra.", "c": "Preciosa descreve a pedra; o lugar vem antes." },
+   "hint": "Procure o lugar nomeado no versículo.",
+   "learningObjective": "Localizar onde Deus põe a pedra angular.",
+   "evidence": ["1 Pedro 2:6"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo 1 Pedro 2:10, o que mudou para os leitores de Pedro?",
+   "verseRef": "1 Pedro 2:10",
+   "options": [
+    { "id": "a", "text": "Antes não eram povo, agora são povo de Deus" },
+    { "id": "b", "text": "Antes eram sacerdotes, agora são reis" },
+    { "id": "c", "text": "Antes viviam em Sião, agora vivem entre gentios" },
+    { "id": "d", "text": "Antes rejeitavam a pedra, agora a constroem" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "antes não eram um povo, mas agora são o povo de Deus",
+   "feedbackCorrect": "Antes não eram povo; agora são povo de Deus e alcançaram misericórdia.",
+   "feedbackWrong": { "b": "O verso fala de passar a ser povo de Deus, não de trocar de cargo.", "c": "Sião aparece em 2:6; aqui a mudança é de não povo para povo.", "d": "Quem rejeita a pedra são os construtores de 2:7, não os leitores." },
+   "hint": "Compare o antes e o agora do versículo.",
+   "learningObjective": "Observar a mudança descrita em 1 Pedro 2:10.",
+   "evidence": ["1 Pedro 2:10"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte 1 Pedro 2:9 na ordem do texto.",
+   "verseRef": "1 Pedro 2:9",
+   "options": [
+    { "id": "a", "text": "Mas vocês são a linhagem eleita, o sacerdócio real" },
+    { "id": "b", "text": "a nação santa, o povo de propriedade exclusiva de Deus" },
+    { "id": "c", "text": "para que proclamem as virtudes daquele que os chamou das trevas" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "vocês são a linhagem eleita",
+   "feedbackCorrect": "Pedro nomeia o povo e depois diz para que ele foi chamado.",
+   "feedbackWrong": { "default": "Comece pela linhagem eleita; o chamado vem no fim." },
+   "hint": "O versículo começa nomeando quem os crentes são.",
+   "learningObjective": "Reconhecer a sequência de 1 Pedro 2:9.",
+   "evidence": ["1 Pedro 2:9"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em 1 Pedro 2:10, o que os crentes agora alcançaram?",
+   "verseRef": "1 Pedro 2:10",
+   "options": [{ "id": "a", "text": "justiça" }, { "id": "b", "text": "misericórdia" }, { "id": "c", "text": "glória" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "agora alcançaram misericórdia",
+   "feedbackCorrect": "Quem não havia alcançado misericórdia agora a alcançou.",
+   "feedbackWrong": { "a": "O verso não fala de alcançar justiça, e sim do favor de Deus.", "c": "A glória não é citada aqui; o verso repete o favor recebido." },
+   "hint": "Veja o fim do versículo 10.",
+   "learningObjective": "Lembrar o que os crentes alcançaram segundo 2:10.",
+   "evidence": ["1 Pedro 2:10"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+   "verseRef": "1 Pedro 2:9",
+   "passageA": { "ref": "1 Pedro 2:9" },
+   "passageB": { "ref": "Contexto", "text": "Deus chamou seu povo das trevas para a sua luz." },
+   "options": [
+    { "id": "a", "text": "Um povo para anunciar Deus" },
+    { "id": "b", "text": "Um povo escondido do mundo" },
+    { "id": "c", "text": "Um povo sem missão alguma" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que proclamem as virtudes daquele",
+   "feedbackCorrect": "O povo chamado para a luz existe para proclamar as virtudes de Deus.",
+   "feedbackWrong": { "b": "Quem é chamado para a luz deve anunciar, não se esconder.", "c": "O verso dá uma missão clara ao povo: proclamar Deus." },
+   "hint": "Veja para que Deus formou esse povo.",
+   "learningObjective": "Ligar a identidade do povo à sua missão de anunciar Deus.",
+   "evidence": ["1 Pedro 2:9"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em 1 Pedro 2:7–8, a pedra também é preciosa para os desobedientes.",
+   "verseRef": "1 Pedro 2:7–8", "correctOptionId": "false",
+   "evidenceSpan": "mas, para os desobedientes",
+   "feedbackCorrect": "Para os desobedientes, a pedra é tropeço e ofensa, não preciosidade.",
+   "feedbackWrong": { "true": "Releia 2:7–8: preciosa é para quem crê; para os outros, é tropeço." },
+   "hint": "Compare quem crê com quem desobedece.",
+   "learningObjective": "Compreender o contraste entre crer e desobedecer diante da pedra.",
+   "evidence": ["1 Pedro 2:7–8"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em 1 Pedro 2:7, toque a palavra que marca o contraste com quem crê.",
+   "verseRef": "1 Pedro 2:7",
+   "options": [{ "id": "a", "text": "Para" }, { "id": "b", "text": "mas" }, { "id": "c", "text": "pedra" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas, para os desobedientes",
+   "feedbackCorrect": "Depois de falar de quem crê, o texto vira para os desobedientes.",
+   "feedbackWrong": { "a": "Essa palavra abre o verso e fala de quem crê, sem virada.", "c": "A pedra é o assunto dos dois lados, não a virada entre eles." },
+   "hint": "Repare na virada entre as duas partes.",
+   "learningObjective": "Reconhecer a palavra que marca o contraste em 2:7.",
+   "evidence": ["1 Pedro 2:7"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como 1 Pedro 2:10 se relaciona com 2:9?",
+   "verseRef": "1 Pedro 2:9–10",
+   "options": [
+    { "id": "a", "text": "Mostra a mudança de quem foi chamado por Deus" },
+    { "id": "b", "text": "Anula a identidade dada no verso anterior" },
+    { "id": "c", "text": "Troca o povo de Deus por um outro povo" },
+    { "id": "d", "text": "Limita o chamado apenas aos sacerdotes" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "antes não eram um povo, mas agora são o povo de Deus",
+   "feedbackCorrect": "O verso 10 explica a mudança: de não povo a povo de Deus.",
+   "feedbackWrong": { "b": "O verso 10 confirma a identidade de 2:9, não a anula.", "c": "É o mesmo povo, agora alcançado pela misericórdia.", "d": "O chamado alcança todo o povo descrito em 2:9–10." },
+   "hint": "Pense na ligação entre ser povo e ter mudado.",
+   "learningObjective": "Relacionar a identidade de 2:9 com a mudança de 2:10.",
+   "evidence": ["1 Pedro 2:9–10"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança o pedido de Pedro em 1 Pedro 2:11–12?",
+   "verseRef": "1 Pedro 2:11–12",
+   "options": [
+    { "id": "a", "text": "Crentes vivem como peregrinos nesta terra" },
+    { "id": "b", "text": "Eles se afastam das paixões que guerreiam" },
+    { "id": "c", "text": "Sua vida exemplar leva gentios a glorificar Deus" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "a abster-vos das paixões carnais",
+   "feedbackCorrect": "Como peregrinos, eles fogem das paixões e vivem bem diante dos gentios.",
+   "feedbackWrong": { "default": "Comece pela vida de peregrino; o fruto entre os gentios vem depois." },
+   "hint": "A glorificação de Deus é o ponto de chegada.",
+   "learningObjective": "Compreender o caminho do pedido de Pedro em 2:11–12.",
+   "evidence": ["1 Pedro 2:11–12"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em 1 Pedro 2:11, como Pedro chama os crentes ao pedir distância das paixões?",
+   "verseRef": "1 Pedro 2:11",
+   "options": [{ "id": "a", "text": "malfeitores" }, { "id": "b", "text": "peregrinos" }, { "id": "c", "text": "construtores" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "como peregrinos e forasteiros que sois",
+   "feedbackCorrect": "Pedro chama os crentes de peregrinos e forasteiros nesta terra.",
+   "feedbackWrong": { "a": "Malfeitores é como os gentios falam deles, não quem são (2:12).", "c": "Construtores são os que rejeitaram a pedra em 2:7." },
+   "hint": "Veja como Pedro se dirige aos amados.",
+   "learningObjective": "Compreender a vida cristã como caminho de peregrino.",
+   "evidence": ["1 Pedro 2:11"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga 1 Pedro 2:9 a Êxodo 19:6?",
+   "verseRef": "1 Pedro 2:9",
+   "passageA": { "ref": "1 Pedro 2:9" },
+   "passageB": { "ref": "Êxodo 19:6" },
+   "options": [
+    { "id": "a", "text": "Sacerdócio e povo exclusivo" },
+    { "id": "b", "text": "Reis sem Deus presente" },
+    { "id": "c", "text": "Povo sem lei nem chamado" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o sacerdócio real, a nação santa",
+   "feedbackCorrect": "Pedro usa para a igreja as palavras ditas a Israel no Sinai.",
+   "feedbackWrong": { "b": "Nos dois textos, o povo pertence ao Deus que o chamou.", "c": "Êxodo e Pedro falam de um povo chamado e separado para Deus." },
+   "hint": "Compare os títulos dados ao povo nos dois textos.",
+   "learningObjective": "Relacionar o povo de Deus em Pedro e em Êxodo.",
+   "evidence": ["1 Pedro 2:9", "Êxodo 19:6"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "1 Pedro 2:12 sustenta que boas obras podem levar gentios a glorificar a Deus.",
+   "verseRef": "1 Pedro 2:12", "correctOptionId": "true",
+   "evidenceSpan": "glorifiquem a Deus no dia da visitação",
+   "feedbackCorrect": "Ao verem as boas obras, os gentios podem glorificar a Deus.",
+   "feedbackWrong": { "false": "Releia o fim de 2:12: as boas obras levam à glorificação de Deus." },
+   "hint": "Veja o resultado das boas obras no verso.",
+   "learningObjective": "Interpretar o efeito das boas obras diante dos gentios.",
+   "evidence": ["1 Pedro 2:12"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em 1 Pedro 2:8, toque o que os desobedientes fazem com a palavra.",
+   "verseRef": "1 Pedro 2:8",
+   "options": [{ "id": "a", "text": "pedra de tropeço" }, { "id": "b", "text": "tropeçam na palavra" }, { "id": "c", "text": "rocha de ofensa" }],
+   "correctOptionId": "b",
+   "evidenceSpan": "tropeçam na palavra, sendo desobedientes",
+   "feedbackCorrect": "Os desobedientes tropeçam na palavra, em vez de crer nela.",
+   "feedbackWrong": { "a": "Isso descreve a pedra para eles, não o que eles fazem.", "c": "Isso também descreve a pedra, não a ação deles." },
+   "hint": "Procure a ação ligada à desobediência.",
+   "learningObjective": "Sustentar com o texto a resposta dos desobedientes à palavra.",
+   "evidence": ["1 Pedro 2:8"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura 1 Pedro 2:6–7 sustenta sobre Cristo, a pedra?",
+   "verseRef": "1 Pedro 2:6–7",
+   "options": [
+    { "id": "a", "text": "Quem crê nele não será decepcionado" },
+    { "id": "b", "text": "Ele só importa para quem já obedece" },
+    { "id": "c", "text": "A rejeição humana anulou o seu valor" },
+    { "id": "d", "text": "Ele foi aceito por todos os construtores" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem nela crer não será, de modo algum, decepcionado",
+   "feedbackCorrect": "A promessa é para quem crê: não será decepcionado.",
+   "feedbackWrong": { "b": "Quem crê é justamente quem passa a obedecer; a pedra vem antes.", "c": "Rejeitada pelos construtores, ela se tornou a principal pedra.", "d": "O texto diz que os construtores a rejeitaram (2:7)." },
+   "hint": "Veja a promessa feita a quem crê na pedra.",
+   "learningObjective": "Escolher a leitura que o texto sustenta sobre a pedra.",
+   "evidence": ["1 Pedro 2:6–7"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o sentido de 1 Pedro 2:6–7?",
+   "verseRef": "1 Pedro 2:6–7",
+   "options": [
+    { "id": "a", "text": "Deus põe a pedra angular em Sião" },
+    { "id": "b", "text": "Construtores rejeitam essa mesma pedra" },
+    { "id": "c", "text": "Deus a faz principal pedra angular" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "a pedra que os construtores rejeitaram",
+   "feedbackCorrect": "Rejeitada pelos homens, a pedra é exaltada por Deus como principal.",
+   "feedbackWrong": { "default": "Comece por Deus pondo a pedra; a rejeição vem antes da exaltação." },
+   "hint": "A rejeição humana vem antes do lugar principal.",
+   "learningObjective": "Ver a rejeição e a exaltação da pedra no argumento de Pedro.",
+   "evidence": ["1 Pedro 2:6–7"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em 1 Pedro 2:6, que palavra mostra o lugar central da pedra de Deus?",
+   "verseRef": "1 Pedro 2:6",
+   "options": [{ "id": "a", "text": "angular" }, { "id": "b", "text": "viva" }, { "id": "c", "text": "final" }],
+   "correctOptionId": "a",
+   "evidenceSpan": "ponho em Sião a pedra angular",
+   "feedbackCorrect": "A pedra angular é a principal, que sustenta toda a construção.",
+   "feedbackWrong": { "b": "O verso 6 não chama a pedra assim; o centro está no outro termo.", "c": "O texto não fala de fim aqui, e sim do lugar principal da pedra." },
+   "hint": "Releia o nome dado à pedra em Sião.",
+   "learningObjective": "Lembrar o termo que mostra Cristo como centro do povo de Deus.",
+   "evidence": ["1 Pedro 2:6"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga 1 Pedro 2:6 a Isaías 28:16?",
+   "verseRef": "1 Pedro 2:6",
+   "passageA": { "ref": "1 Pedro 2:6" },
+   "passageB": { "ref": "Isaías 28:16" },
+   "options": [
+    { "id": "a", "text": "A pedra posta por Deus" },
+    { "id": "b", "text": "Uma pedra feita por homens" },
+    { "id": "c", "text": "Sião sem promessa de Deus" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Eis que ponho em Sião a pedra angular",
+   "feedbackCorrect": "Pedro cita a promessa de Isaías: Deus põe a pedra em Sião.",
+   "feedbackWrong": { "b": "Nos dois textos, quem põe a pedra em Sião é Deus.", "c": "Isaías traz justamente a promessa que Pedro retoma." },
+   "hint": "Veja quem põe a pedra nos dois textos.",
+   "learningObjective": "Ligar a pedra de Pedro à promessa de Isaías.",
+   "evidence": ["1 Pedro 2:6", "Isaías 28:16"]
+  }
+ ]
+}

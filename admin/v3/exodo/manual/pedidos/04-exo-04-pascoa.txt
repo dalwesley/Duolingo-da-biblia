@@ -1,0 +1,92 @@
+Escreva a cena "exo-04-pascoa" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A Libertação",
+ "mission": {
+  "slug": "exo-04-pascoa",
+  "title": "A Páscoa",
+  "type": "lesson",
+  "intro": "Deus institui a Páscoa: o sangue do cordeiro no lintel protegeria as casas. É memorial da libertação.",
+  "hookRef": "Êxodo 12:1–13",
+  "hookNote": "A Páscoa une sacrifício, proteção e memorial. Israel sai pela graça do cordeiro.",
+  "centralInsight": "A libertação tem custo",
+  "objective": "Por que o memorial exige sangue e partilha?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 12:1–13",
+  "context": "A Páscoa une sacrifício, proteção e memorial. Israel sai pela graça do cordeiro.",
+  "keyword": "Cordeiro / Páscoa",
+  "verseRefs": [
+   "Êxodo 12:13"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 12:1–13",
+  "Êxodo 12:13"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 12:1",
+   "text": "E o Senhor falou a Moisés e a Arão na terra do Egito:"
+  },
+  {
+   "ref": "Êxodo 12:2",
+   "text": "Este mês será para vocês o principal dos meses; será o primeiro mês do ano."
+  },
+  {
+   "ref": "Êxodo 12:3",
+   "text": "Digam a toda a congregação de Israel: No décimo dia deste mês, cada um tomará para si um cordeiro, conforme as casas, um cordeiro para cada casa."
+  },
+  {
+   "ref": "Êxodo 12:4",
+   "text": "Mas, se a casa for pequena para um cordeiro, então, ele convidará o seu vizinho mais próximo, conforme o número das almas; conforme o que cada um puder comer, de acordo com o cordeiro."
+  },
+  {
+   "ref": "Êxodo 12:5",
+   "text": "O cordeiro ou cabrito deve ser sem defeito, macho de um ano; podereis escolher entre as ovelhas ou as cabras."
+  },
+  {
+   "ref": "Êxodo 12:6",
+   "text": "E o guardarão até o décimo quarto dia deste mês, e toda a congregação de Israel o imolará no crepúsculo da tarde."
+  },
+  {
+   "ref": "Êxodo 12:7",
+   "text": "E pegarão o sangue e o colocarão em ambas as ombreiras e na verga da porta, nas casas em que o comerem."
+  },
+  {
+   "ref": "Êxodo 12:8",
+   "text": "Naquela noite, comerão a carne assada no fogo, com pães asmos; a comerão com ervas amargas."
+  },
+  {
+   "ref": "Êxodo 12:9",
+   "text": "Não comereis dele nada cru, nem cozido em água, mas assado no fogo: a cabeça, as patas e as vísceras."
+  },
+  {
+   "ref": "Êxodo 12:10",
+   "text": "E nada do que sobrar deixem até pela manhã; o que, porém, ficar até pela manhã, queimem no fogo."
+  },
+  {
+   "ref": "Êxodo 12:11",
+   "text": "Assim, vocês deverão comê-lo: com os lombos cingidos, os sapatos nos pés e o cajado na mão; vocês o comerão às pressas; essa é a Páscoa do Senhor."
+  },
+  {
+   "ref": "Êxodo 12:12",
+   "text": "E, nesta noite, passarei pela terra do Egito e ferirei todos os primogênitos na terra do Egito, desde os homens até os animais; e executarei juízo sobre todos os deuses do Egito. Eu sou o SENHOR."
+  },
+  {
+   "ref": "Êxodo 12:13",
+   "text": "O sangue será um sinal nas casas em que estiverdes; quando eu vir o sangue, passarei por vós, e não haverá entre vós praga destruidora, quando eu ferir a terra do Egito."
+  }
+ ]
+}
+</cena>

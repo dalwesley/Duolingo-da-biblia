@@ -1,0 +1,920 @@
+{
+ "study": {
+  "passageRef": "Levítico 17:8–11",
+  "passages": [
+   {
+    "ref": "Levítico 17:8–11"
+   },
+   {
+    "ref": "Levítico 16:7–10"
+   },
+   {
+    "ref": "Levítico 4:27–28"
+   }
+  ],
+  "context": "Este desafio revisa ofertas, sangue e expiação. O povo devia levar ofertas ao Senhor, respeitar o sangue dado no altar e seguir o caminho que Deus ordenou para o pecado.",
+  "keyword": "altar",
+  "keywordGloss": "No texto, o altar é o lugar onde Deus recebe a oferta e dá o sangue para expiar.",
+  "focusQuestion": "O que muda quando você se aproxima de Deus do jeito que ele ordenou?",
+  "reflectionPrompts": [
+   "O sangue no altar",
+   "Dois bodes, dois destinos",
+   "Pecado conhecido pede oferta"
+  ],
+  "facts": [
+   {
+    "text": "Quem não trouxer a oferta ao Senhor será eliminado do seu povo.",
+    "evidenceRef": "Levítico 17:9",
+    "evidenceSpan": "esse homem será eliminado do seu povo"
+   },
+   {
+    "text": "A vida da carne está no sangue, dado por Deus sobre o altar.",
+    "evidenceRef": "Levítico 17:11",
+    "evidenceSpan": "a vida da carne está no sangue"
+   },
+   {
+    "text": "Uma sorte era para o Senhor e a outra para o bode enviado ao deserto.",
+    "evidenceRef": "Levítico 16:8",
+    "evidenceSpan": "uma sorte para o Senhor e a outra para o bode que é enviado ao deserto"
+   },
+   {
+    "text": "O bode expiatório era apresentado vivo diante do Senhor e enviado ao deserto.",
+    "evidenceRef": "Levítico 16:10",
+    "evidenceSpan": "será apresentado vivo diante do Senhor"
+   },
+   {
+    "text": "Arão faria expiação por si e pela sua casa com o novilho.",
+    "evidenceRef": "Levítico 16:11",
+    "evidenceSpan": "fará expiação por si e pela sua casa"
+   },
+   {
+    "text": "Quem pecasse por ignorância e soubesse devia trazer uma cabra sem defeito.",
+    "evidenceRef": "Levítico 4:28",
+    "evidenceSpan": "trará como oferta uma cabra sem defeito"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sangue",
+    "gloss": "Carrega a vida da carne e foi dado por Deus sobre o altar."
+   },
+   {
+    "term": "bode expiatório",
+    "gloss": "O bode apresentado vivo e enviado ao deserto depois da expiação."
+   },
+   {
+    "term": "expiação",
+    "gloss": "O caminho dado por Deus para tratar o pecado diante dele."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A oferta levada ao Senhor",
+    "evidenceRef": "Levítico 17:9"
+   },
+   {
+    "label": "Dois bodes diante do Senhor",
+    "evidenceRef": "Levítico 16:7"
+   },
+   {
+    "label": "O sangue dado sobre o altar",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "label": "A oferta de quem soube do pecado",
+    "evidenceRef": "Levítico 4:28"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Deus deu o sangue sobre o altar para expiar pelo povo.",
+    "marker": "para",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois das sortes, Arão apresentava o bode que caiu para o Senhor.",
+    "marker": "Então",
+    "evidenceRef": "Levítico 16:9"
+   },
+   {
+    "kind": "resultado",
+    "text": "Por causa do que Deus explicou, nenhuma alma devia comer sangue.",
+    "marker": "Por isso",
+    "evidenceRef": "Levítico 17:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 9:7",
+    "bridge": "Entrada anual com sangue"
+   },
+   {
+    "ref": "Hebreus 9:14",
+    "bridge": "Sangue de Cristo purifica"
+   },
+   {
+    "ref": "Mateus 26:28",
+    "bridge": "Sangue derramado para perdão"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Cada pessoa podia oferecer onde quisesse, se a intenção fosse boa.",
+    "why": "O texto manda trazer a oferta à porta da Tenda da Congregação para oferecê-la ao Senhor."
+   },
+   {
+    "text": "O bode vivo era apenas solto, sem relação com a expiação.",
+    "why": "O texto diz que ele era apresentado vivo para fazer expiação por meio dele."
+   },
+   {
+    "text": "Pecar sem perceber nunca gerava culpa nem exigia oferta.",
+    "why": "Levítico 4 diz que a pessoa se tornava culpada e, ao saber, devia trazer oferta."
+   }
+  ],
+  "centralInsight": "Deus define o altar, o sangue e o caminho para tratar o pecado",
+  "anchorQuestion": "Como Deus tratava o sangue e o pecado segundo Levítico 16 e 17?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Levítico 17:11, a vida da carne está no sangue que Deus deu sobre o altar.",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "a vida da carne está no sangue",
+   "feedbackCorrect": "O texto une vida, sangue e altar na mesma explicação.",
+   "feedbackWrong": {
+    "false": "Releia Levítico 17:11 e ligue vida e sangue."
+   },
+   "hint": "Olhe o começo do versículo.",
+   "learningObjective": "Revisar a ligação entre vida e sangue.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:9, toque o lugar para onde a oferta devia ser trazida.",
+   "verseRef": "Levítico 17:9",
+   "evidenceSpan": "à porta da Tenda da Congregação, para oferecê-lo ao Senhor",
+   "feedbackCorrect": "A oferta ao Senhor devia ser trazida ao lugar indicado por ele.",
+   "feedbackWrong": {
+    "b": "Isso diz a quem a oferta era feita, não o lugar.",
+    "c": "Isso nomeia de onde o homem seria eliminado, não o lugar."
+   },
+   "hint": "Procure o lugar citado antes de oferecer.",
+   "learningObjective": "Revisar o lugar indicado para a oferta.",
+   "evidence": [
+    "Levítico 17:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "porta da Tenda"
+    },
+    {
+     "id": "b",
+     "text": "oferecê-lo ao Senhor"
+    },
+    {
+     "id": "c",
+     "text": "seu povo"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Levítico 16:9, como era apresentado o bode da sorte para o Senhor?",
+   "verseRef": "Levítico 16:9",
+   "evidenceSpan": "o oferecerá como oferta pelo pecado",
+   "feedbackCorrect": "O bode da sorte para o Senhor era oferecido pelo pecado.",
+   "feedbackWrong": {
+    "a": "Esse não é o nome dado ao bode da sorte para o Senhor.",
+    "c": "O bode vivo é o da outra sorte.",
+    "d": "Manjares não são o destino citado para esse bode."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Revisar o destino do bode oferecido.",
+   "evidence": [
+    "Levítico 16:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Holocausto ao Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Oferta pelo pecado"
+    },
+    {
+     "id": "c",
+     "text": "Bode enviado vivo"
+    },
+    {
+     "id": "d",
+     "text": "Oferta de manjares"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 16:8 na ordem do texto.",
+   "verseRef": "Levítico 16:8",
+   "evidenceSpan": "E Arão lançará sortes sobre os dois bodes",
+   "feedbackCorrect": "Arão lança as sortes e cada bode recebe um destino.",
+   "feedbackWrong": {
+    "default": "Comece pelas sortes lançadas sobre os bodes."
+   },
+   "hint": "O versículo começa com Arão e as sortes.",
+   "learningObjective": "Revisar a ordem das sortes.",
+   "evidence": [
+    "Levítico 16:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "E Arão lançará sortes sobre os dois bodes"
+    },
+    {
+     "id": "b",
+     "text": "uma sorte para o Senhor"
+    },
+    {
+     "id": "c",
+     "text": "a outra para o bode que é enviado ao deserto"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Levítico 4:28, como devia ser a cabra trazida pelo pecado, sem o quê?",
+   "verseRef": "Levítico 4:28",
+   "evidenceSpan": "uma cabra sem defeito",
+   "feedbackCorrect": "A cabra trazida pelo pecado devia ser sem defeito.",
+   "feedbackWrong": {
+    "a": "A frase pede uma qualidade do animal, não um sentimento.",
+    "b": "O texto não pede cabra sem medo e sim com outra qualidade."
+   },
+   "hint": "Veja a qualidade exigida do animal.",
+   "learningObjective": "Revisar a exigência para a oferta pelo pecado.",
+   "evidence": [
+    "Levítico 4:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "pressa"
+    },
+    {
+     "id": "b",
+     "text": "medo"
+    },
+    {
+     "id": "c",
+     "text": "defeito"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Levítico 17:11 comunica que se liga a este contexto?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "No altar, o sangue dado por Deus servia para expiar.",
+   "feedbackWrong": {
+    "b": "O sangue não foi dado ao povo como comida.",
+    "c": "O texto coloca o sangue justamente sobre o altar."
+   },
+   "hint": "Veja o que Deus faz com o sangue.",
+   "learningObjective": "Revisar o papel do sangue no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sangue dado para expiar"
+    },
+    {
+     "id": "b",
+     "text": "Sangue servido como comida"
+    },
+    {
+     "id": "c",
+     "text": "Altar sem sangue algum"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 17:11"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O altar recebia o sangue que Deus deu para expiar."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 16:10, toque como o bode expiatório era apresentado diante do Senhor.",
+   "verseRef": "Levítico 16:10",
+   "evidenceSpan": "será apresentado vivo diante do Senhor",
+   "feedbackCorrect": "Esse bode era apresentado vivo, diferente do bode oferecido.",
+   "feedbackWrong": {
+    "a": "Isso indica presença, não o estado do bode.",
+    "c": "Isso é o destino final, não como ele foi apresentado."
+   },
+   "hint": "Procure o estado dele ao ser apresentado.",
+   "learningObjective": "Revisar como o bode expiatório era apresentado.",
+   "evidence": [
+    "Levítico 16:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "diante"
+    },
+    {
+     "id": "b",
+     "text": "vivo"
+    },
+    {
+     "id": "c",
+     "text": "deserto"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 4:28 na ordem do texto.",
+   "verseRef": "Levítico 4:28",
+   "evidenceSpan": "trará como oferta uma cabra sem defeito",
+   "feedbackCorrect": "Ao saber do pecado, a pessoa trazia a cabra pelo pecado cometido.",
+   "feedbackWrong": {
+    "default": "Comece pelo pecado conhecido e notificado."
+   },
+   "hint": "O versículo começa quando o pecado é notificado.",
+   "learningObjective": "Revisar a sequência da oferta pelo pecado.",
+   "evidence": [
+    "Levítico 4:28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Se o pecado, do qual tomou conhecimento, lhe for notificado"
+    },
+    {
+     "id": "b",
+     "text": "então trará como oferta uma cabra sem defeito"
+    },
+    {
+     "id": "c",
+     "text": "pelo pecado que cometeu"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Levítico 17:10–11, saber que a vida está no sangue autorizava o povo a comê-lo como alimento.",
+   "verseRef": "Levítico 17:10–11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "A vida no sangue levava ao altar e à proibição, não à mesa.",
+   "feedbackWrong": {
+    "true": "Releia o destino dado ao sangue e a ordem sobre comê-lo."
+   },
+   "hint": "Compare comida e altar nos dois versículos.",
+   "learningObjective": "Compreender que a vida no sangue fundamenta a proibição.",
+   "evidence": [
+    "Levítico 17:10–11"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 16:9, toque a palavra que marca o passo depois das sortes.",
+   "verseRef": "Levítico 16:9",
+   "evidenceSpan": "Então Arão apresentará o bode",
+   "feedbackCorrect": "Essa palavra liga as sortes à apresentação do bode.",
+   "feedbackWrong": {
+    "a": "Isso é a ação, não a ligação com as sortes.",
+    "b": "Isso nomeia o dono da sorte, não a sequência."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de sequência.",
+   "evidence": [
+    "Levítico 16:9"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "apresentará"
+    },
+    {
+     "id": "b",
+     "text": "Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Então"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Levítico 16:11 se liga aos bodes dos versículos anteriores?",
+   "verseRef": "Levítico 16:11",
+   "evidenceSpan": "fará expiação por si e pela sua casa",
+   "feedbackCorrect": "Antes do povo em geral, o texto cita Arão e sua casa.",
+   "feedbackWrong": {
+    "b": "O texto inclui Arão trazendo oferta por si e sua casa.",
+    "c": "O versículo cita Arão e sua casa juntos.",
+    "d": "Há também o novilho da oferta de Arão."
+   },
+   "hint": "Veja por quem é o novilho neste versículo.",
+   "learningObjective": "Relacionar a oferta de Arão aos bodes.",
+   "evidence": [
+    "Levítico 16:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Arão e sua casa são tratados nesse cuidado"
+    },
+    {
+     "id": "b",
+     "text": "O povo dispensa qualquer oferta de Arão"
+    },
+    {
+     "id": "c",
+     "text": "A casa de Arão fica fora da expiação"
+    },
+    {
+     "id": "d",
+     "text": "Só o bode resolve sem novilho algum"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos em Levítico 16:9–10?",
+   "verseRef": "Levítico 16:9–10",
+   "evidenceSpan": "o oferecerá como oferta pelo pecado",
+   "feedbackCorrect": "Um bode é oferecido e o outro é apresentado vivo ao deserto.",
+   "feedbackWrong": {
+    "default": "O bode oferecido vem no versículo 9, antes do vivo."
+   },
+   "hint": "O versículo 9 vem antes do 10.",
+   "learningObjective": "Compreender os dois destinos dos bodes.",
+   "evidence": [
+    "Levítico 16:9–10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Um bode é oferecido pelo pecado"
+    },
+    {
+     "id": "b",
+     "text": "Outro bode é apresentado vivo"
+    },
+    {
+     "id": "c",
+     "text": "O bode vivo é enviado ao deserto"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Levítico 16:13, o que a nuvem do incenso devia cobrir?",
+   "verseRef": "Levítico 16:13",
+   "evidenceSpan": "cubra o propiciatório que está sobre o Testemunho",
+   "feedbackCorrect": "A nuvem cobriria aquilo que estava sobre o Testemunho.",
+   "feedbackWrong": {
+    "a": "Isso Arão tomava com brasas, não o que a nuvem cobria.",
+    "c": "O véu é o limite atravessado, não o que era coberto."
+   },
+   "hint": "Procure o que vem depois de cubra.",
+   "learningObjective": "Compreender o cuidado na entrada de Arão.",
+   "evidence": [
+    "Levítico 16:13"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "incensário"
+    },
+    {
+     "id": "b",
+     "text": "propiciatório"
+    },
+    {
+     "id": "c",
+     "text": "véu"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Levítico 16:10 a Hebreus 9:7?",
+   "verseRef": "Levítico 16:10",
+   "evidenceSpan": "para fazer expiação por meio dele",
+   "feedbackCorrect": "Hebreus retoma o dia anual em que o sacerdote entrava com sangue.",
+   "feedbackWrong": {
+    "a": "Hebreus fala da entrada anual, não de bode solto.",
+    "b": "Hebreus cita justamente o sumo sacerdote."
+   },
+   "hint": "Compare o rito anual nos dois trechos.",
+   "learningObjective": "Relacionar Levítico e Hebreus no Dia da Expiação.",
+   "evidence": [
+    "Levítico 16:10",
+    "Hebreus 9:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Bode solto sem expiação"
+    },
+    {
+     "id": "b",
+     "text": "Festa sem sacerdote algum"
+    },
+    {
+     "id": "c",
+     "text": "Entrada anual com sangue"
+    }
+   ],
+   "correctOptionId": "c",
+   "passageA": {
+    "ref": "Levítico 16:10"
+   },
+   "passageB": {
+    "ref": "Hebreus 9:7"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 16:12, toque o que era bem moído e levado para dentro do véu.",
+   "verseRef": "Levítico 16:12",
+   "evidenceSpan": "dois punhados de incenso aromático bem moído",
+   "feedbackCorrect": "Arão levaria brasas e esse material bem moído para dentro.",
+   "feedbackWrong": {
+    "b": "As brasas estavam no incensário, não eram o que foi moído.",
+    "c": "Isso mede a quantidade, não o que era aromático."
+   },
+   "hint": "Procure o que recebe a descrição bem moído.",
+   "learningObjective": "Identificar o material levado para dentro do véu.",
+   "evidence": [
+    "Levítico 16:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "incenso aromático"
+    },
+    {
+     "id": "b",
+     "text": "brasas do altar"
+    },
+    {
+     "id": "c",
+     "text": "dois punhados"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam as ideias em Levítico 17:10–11?",
+   "verseRef": "Levítico 17:10–11",
+   "evidenceSpan": "voltarei a minha face contra essa pessoa",
+   "feedbackCorrect": "Comer sangue traz juízo porque Deus explica a vida e o altar.",
+   "feedbackWrong": {
+    "default": "A proibição vem antes da explicação sobre a vida."
+   },
+   "hint": "Comece pelo que acontece com quem come sangue.",
+   "learningObjective": "Compreender proibição, vida e altar ligados.",
+   "evidence": [
+    "Levítico 17:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Comer sangue traz eliminação do povo"
+    },
+    {
+     "id": "b",
+     "text": "Deus explica a vida que há no sangue"
+    },
+    {
+     "id": "c",
+     "text": "O sangue é posto sobre o altar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Levítico 4:28 sustenta que, ao conhecer o pecado, a pessoa devia trazer oferta por ele.",
+   "verseRef": "Levítico 4:28",
+   "evidenceSpan": "pelo pecado que cometeu",
+   "feedbackCorrect": "Ao saber do pecado, a resposta era trazer a oferta indicada.",
+   "feedbackWrong": {
+    "false": "Releia o que a pessoa fazia quando o pecado era notificado."
+   },
+   "hint": "Veja a ação depois que o pecado é conhecido.",
+   "learningObjective": "Interpretar a resposta ao pecado conhecido.",
+   "evidence": [
+    "Levítico 4:28"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:14, toque o trecho que repete onde está a vida de toda carne.",
+   "verseRef": "Levítico 17:14",
+   "evidenceSpan": "a vida de toda carne está em seu sangue",
+   "feedbackCorrect": "O texto repete a ligação entre vida de toda carne e sangue.",
+   "feedbackWrong": {
+    "a": "Isso fala do que não comer, não de onde está a vida.",
+    "c": "Isso é consequência para quem come, não onde está a vida."
+   },
+   "hint": "Procure a segunda afirmação sobre a vida.",
+   "learningObjective": "Sustentar a ligação entre vida e sangue.",
+   "evidence": [
+    "Levítico 17:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "nenhuma carne"
+    },
+    {
+     "id": "b",
+     "text": "em seu sangue"
+    },
+    {
+     "id": "c",
+     "text": "será eliminado"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura reúne Levítico 16:10 e Levítico 17:11 sobre a expiação?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "Nos dois textos, Deus provê o meio para tratar o pecado.",
+   "feedbackWrong": {
+    "a": "O texto liga o bode vivo a fazer expiação.",
+    "b": "O sangue era proibido como comida e dado no altar.",
+    "d": "Tudo é apresentado como ordem do Senhor ao povo."
+   },
+   "hint": "Compare quem provê o meio nos dois trechos.",
+   "learningObjective": "Escolher a interpretação que reúne os textos.",
+   "evidence": [
+    "Levítico 16:10",
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O bode vivo era castigo sem expiação"
+    },
+    {
+     "id": "b",
+     "text": "O sangue podia ser comido pelo povo"
+    },
+    {
+     "id": "c",
+     "text": "Deus provê caminho para tratar o pecado"
+    },
+    {
+     "id": "d",
+     "text": "Arão agia sem ordem do Senhor"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do sangue que perdoa na Bíblia?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "Do altar de Levítico, Hebreus aponta o sangue que purifica.",
+   "feedbackWrong": {
+    "default": "Comece em Levítico e termine no sangue de Cristo."
+   },
+   "hint": "Siga Levítico e depois Hebreus.",
+   "learningObjective": "Ver o fio do sangue até Cristo em Hebreus.",
+   "evidence": [
+    "Levítico 17:11",
+    "Hebreus 9:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus dá o sangue sobre o altar"
+    },
+    {
+     "id": "b",
+     "text": "Hebreus fala de purificação pelo sangue"
+    },
+    {
+     "id": "c",
+     "text": "O sangue de Cristo purifica a consciência"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Levítico 16:10, para onde o bode expiatório era enviado depois de apresentado vivo?",
+   "verseRef": "Levítico 16:10",
+   "evidenceSpan": "enviado ao deserto como bode expiatório",
+   "feedbackCorrect": "Apresentado vivo, esse bode era enviado para longe do povo.",
+   "feedbackWrong": {
+    "b": "O bode vivo não ficava no acampamento e sim era enviado para fora.",
+    "c": "Para dentro do véu Arão levava incenso, não esse bode."
+   },
+   "hint": "Veja o destino no fim do versículo.",
+   "learningObjective": "Lembrar o destino do bode vivo.",
+   "evidence": [
+    "Levítico 16:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "deserto"
+    },
+    {
+     "id": "b",
+     "text": "acampamento"
+    },
+    {
+     "id": "c",
+     "text": "véu"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Levítico 17:11 a Hebreus 9:14?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "fará expiação em virtude da vida",
+   "feedbackCorrect": "Hebreus anuncia que o sangue de Cristo purifica a consciência.",
+   "feedbackWrong": {
+    "a": "Hebreus não trata o sangue de Cristo como comida comum.",
+    "c": "Hebreus lê o sangue antigo apontando para Cristo."
+   },
+   "hint": "Compare o efeito do sangue nos dois trechos.",
+   "learningObjective": "Ligar o sangue do altar ao sangue de Cristo.",
+   "evidence": [
+    "Levítico 17:11",
+    "Hebreus 9:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sangue comum como alimento"
+    },
+    {
+     "id": "b",
+     "text": "Sangue de Cristo purifica"
+    },
+    {
+     "id": "c",
+     "text": "Altar antigo sem futuro"
+    }
+   ],
+   "correctOptionId": "b",
+   "passageA": {
+    "ref": "Levítico 17:11"
+   },
+   "passageB": {
+    "ref": "Hebreus 9:14"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 16:13, toque o trecho que mostra o cuidado para Arão viver.",
+   "verseRef": "Levítico 16:13",
+   "evidenceSpan": "a fim de que não morra",
+   "feedbackCorrect": "A nuvem cobriria o propiciatório para Arão não morrer.",
+   "feedbackWrong": {
+    "a": "Isso é onde o incenso seria posto, não a finalidade.",
+    "b": "Isso é o que a nuvem cobriria, não o fim buscado."
+   },
+   "hint": "Procure a finalidade no fim do versículo.",
+   "learningObjective": "Sustentar o cuidado na entrada de Arão.",
+   "evidence": [
+    "Levítico 16:13"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre o fogo"
+    },
+    {
+     "id": "b",
+     "text": "o propiciatório"
+    },
+    {
+     "id": "c",
+     "text": "não morra"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho de quem descobre o pecado em Levítico 4:27–28?",
+   "verseRef": "Levítico 4:27–28",
+   "evidenceSpan": "pecar por ignorância",
+   "feedbackCorrect": "Pecar sem perceber gera culpa e, ao saber, a pessoa traz oferta.",
+   "feedbackWrong": {
+    "default": "Comece pelo pecado sem perceber e pela culpa."
+   },
+   "hint": "A culpa aparece antes de a oferta ser trazida.",
+   "learningObjective": "Ver culpa, conhecimento e oferta em sequência.",
+   "evidence": [
+    "Levítico 4:27–28"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O pecado sem perceber gera culpa"
+    },
+    {
+     "id": "b",
+     "text": "Ao saber, a pessoa traz oferta"
+    },
+    {
+     "id": "c",
+     "text": "A oferta é feita pelo pecado cometido"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

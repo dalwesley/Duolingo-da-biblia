@@ -1,0 +1,717 @@
+{
+ "study": {
+  "passageRef": "2 Timóteo 1:13–14",
+  "passages": [
+   {
+    "ref": "2 Timóteo 1:10–12"
+   },
+   {
+    "ref": "2 Timóteo 1:13–14"
+   },
+   {
+    "ref": "2 Timóteo 1:15–17"
+   }
+  ],
+  "context": "Paulo escreve preso, perto do fim da vida, a Timóteo. Ele lembra o evangelho, fala do próprio sofrimento sem vergonha e pede que o ensino recebido seja guardado.",
+  "keyword": "bom depósito",
+  "keywordGloss": "O evangelho confiado a Timóteo, que ele deve guardar por meio do Espírito Santo.",
+  "focusQuestion": "O que Deus já lhe confiou e que você precisa guardar com firmeza hoje?",
+  "reflectionPrompts": [
+   "Sem vergonha do evangelho",
+   "Guardar o ensino recebido",
+   "Ânimo em tempos difíceis"
+  ],
+  "facts": [
+   {
+    "text": "Cristo destruiu a morte e trouxe à luz a vida e a imortalidade.",
+    "evidenceRef": "2 Timóteo 1:10",
+    "evidenceSpan": "destruiu a morte"
+   },
+   {
+    "text": "Paulo foi designado pregador, apóstolo e mestre entre os gentios.",
+    "evidenceRef": "2 Timóteo 1:11",
+    "evidenceSpan": "fui designado pregador, apóstolo e mestre"
+   },
+   {
+    "text": "Paulo sofre, mas não se envergonha, pois sabe em quem crê.",
+    "evidenceRef": "2 Timóteo 1:12",
+    "evidenceSpan": "não me envergonho"
+   },
+   {
+    "text": "Timóteo deve conservar o padrão das sãs palavras ouvidas de Paulo.",
+    "evidenceRef": "2 Timóteo 1:13",
+    "evidenceSpan": "Conserva o padrão das sãs palavras"
+   },
+   {
+    "text": "O bom depósito é guardado por meio do Espírito Santo.",
+    "evidenceRef": "2 Timóteo 1:14",
+    "evidenceSpan": "Guarda o bom depósito"
+   },
+   {
+    "text": "Onesíforo deu ânimo a Paulo muitas vezes.",
+    "evidenceRef": "2 Timóteo 1:16",
+    "evidenceSpan": "muitas vezes, me deu ânimo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "bom depósito",
+    "gloss": "O evangelho confiado a Timóteo para ser guardado sem desvios."
+   },
+   {
+    "term": "sãs palavras",
+    "gloss": "O ensino saudável recebido de Paulo, padrão a conservar com fé e amor."
+   },
+   {
+    "term": "imortalidade",
+    "gloss": "A vida sem fim trazida à luz por Cristo por meio do evangelho."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Cristo vence a morte no evangelho",
+    "evidenceRef": "2 Timóteo 1:10"
+   },
+   {
+    "label": "Paulo chamado, sofredor e confiante",
+    "evidenceRef": "2 Timóteo 1:12"
+   },
+   {
+    "label": "Timóteo guarda o ensino recebido",
+    "evidenceRef": "2 Timóteo 1:13"
+   },
+   {
+    "label": "Abandono de uns e ânimo de outro",
+    "evidenceRef": "2 Timóteo 1:16"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "Paulo foi designado pregador, apóstolo e mestre para anunciar o evangelho aos gentios.",
+    "marker": "Para",
+    "evidenceRef": "2 Timóteo 1:11"
+   },
+   {
+    "kind": "causa",
+    "text": "Por causa do evangelho, Paulo sofre; ainda assim, não se envergonha.",
+    "marker": "Por isso",
+    "evidenceRef": "2 Timóteo 1:12"
+   },
+   {
+    "kind": "contraste",
+    "text": "Paulo sofre estas coisas, contudo não se envergonha de sua fé.",
+    "marker": "contudo",
+    "evidenceRef": "2 Timóteo 1:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "João 11:25",
+    "bridge": "Cristo traz vida verdadeira"
+   },
+   {
+    "ref": "Judas 1:3",
+    "bridge": "Fé transmitida aos santos"
+   },
+   {
+    "ref": "1 Coríntios 15:54",
+    "bridge": "Morte vencida por Cristo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Guardar o depósito é esconder o evangelho e nunca o anunciar.",
+    "why": "O padrão das sãs palavras foi ouvido de Paulo pregador, para ser conservado e vivido (1:11–13)."
+   },
+   {
+    "text": "Sofrer pelo evangelho é motivo de vergonha para quem crê.",
+    "why": "Paulo afirma o contrário sobre si: sofre, contudo não se envergonha (1:12)."
+   },
+   {
+    "text": "Timóteo guarda o depósito apenas com a própria força.",
+    "why": "O texto diz que a guarda é por meio do Espírito Santo que habita em nós (1:14)."
+   }
+  ],
+  "centralInsight": "Timóteo guarda o evangelho sem vergonha, pelo Espírito que habita nele",
+  "anchorQuestion": "Segundo 2 Timóteo 1:14, por meio de quem Timóteo guarda o bom depósito?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em 2 Timóteo 1:10, Jesus Cristo destruiu a morte e trouxe à luz a vida por meio do evangelho.",
+   "verseRef": "2 Timóteo 1:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "destruiu a morte",
+   "feedbackCorrect": "Paulo resume o evangelho assim: Cristo venceu a morte e revelou a vida.",
+   "feedbackWrong": {
+    "false": "Releia 1:10: Cristo destruiu a morte e trouxe vida à luz."
+   },
+   "hint": "Veja o que Cristo fez com a morte.",
+   "learningObjective": "Observar a vitória de Cristo no evangelho.",
+   "evidence": [
+    "2 Timóteo 1:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em 2 Timóteo 1:12, toque o trecho que mostra em quem Paulo confia.",
+   "verseRef": "2 Timóteo 1:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "meu depósito"
+    },
+    {
+     "id": "b",
+     "text": "quem tenho crido"
+    },
+    {
+     "id": "c",
+     "text": "aquele dia"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "sei em quem tenho crido",
+   "feedbackCorrect": "A confiança de Paulo tem um alvo certo: ele sabe em quem tem crido.",
+   "feedbackWrong": {
+    "a": "O depósito é o que Deus guarda; a confiança está em quem Paulo crê.",
+    "c": "Aquele dia é o horizonte futuro, não o alvo da confiança citada."
+   },
+   "hint": "Procure a frase depois de sei em.",
+   "learningObjective": "Identificar o alvo da confiança de Paulo.",
+   "evidence": [
+    "2 Timóteo 1:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo 2 Timóteo 1:10, o que Cristo trouxe à luz por meio do evangelho?",
+   "verseRef": "2 Timóteo 1:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "A vida e a imortalidade"
+    },
+    {
+     "id": "b",
+     "text": "A morte e o sofrimento"
+    },
+    {
+     "id": "c",
+     "text": "Leis e cerimônias novas"
+    },
+    {
+     "id": "d",
+     "text": "Riqueza e segurança terrena"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "trouxe à luz a vida e a imortalidade",
+   "feedbackCorrect": "Pelo evangelho, Cristo revelou a vida e a imortalidade aos que creem.",
+   "feedbackWrong": {
+    "b": "A morte é destruída por Cristo, e não trazida à luz como dom.",
+    "c": "O texto fala de vida e imortalidade, não de novas cerimônias.",
+    "d": "Nada aqui promete riqueza; o dom revelado é a vida."
+   },
+   "hint": "Leia o fim do versículo 10.",
+   "learningObjective": "Observar o que o evangelho revelou.",
+   "evidence": [
+    "2 Timóteo 1:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte 2 Timóteo 1:13 na ordem do texto.",
+   "verseRef": "2 Timóteo 1:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Conserva o padrão das sãs palavras"
+    },
+    {
+     "id": "b",
+     "text": "que de mim ouviste"
+    },
+    {
+     "id": "c",
+     "text": "com a fé e o amor que estão em Cristo Jesus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Conserva o padrão das sãs palavras",
+   "feedbackCorrect": "Conservar o ensino ouvido, com a fé e o amor que estão em Cristo.",
+   "feedbackWrong": {
+    "default": "Comece pelo padrão das sãs palavras; fé e amor fecham o verso."
+   },
+   "hint": "O versículo começa com um imperativo.",
+   "learningObjective": "Reconhecer a sequência de 2 Timóteo 1:13.",
+   "evidence": [
+    "2 Timóteo 1:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em 2 Timóteo 1:10, o que Cristo destruiu ao se manifestar?",
+   "verseRef": "2 Timóteo 1:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "vida"
+    },
+    {
+     "id": "b",
+     "text": "noite"
+    },
+    {
+     "id": "c",
+     "text": "morte"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "destruiu a morte",
+   "feedbackCorrect": "A manifestação de Cristo marca a derrota daquilo que parecia final.",
+   "feedbackWrong": {
+    "a": "A vida é trazida à luz por Cristo, e não destruída por ele.",
+    "b": "O texto nomeia outro inimigo vencido, ligado ao fim da vida."
+   },
+   "hint": "Veja o primeiro verbo sobre Cristo.",
+   "learningObjective": "Lembrar o que Cristo venceu no evangelho.",
+   "evidence": [
+    "2 Timóteo 1:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que 2 Timóteo 1:14 comunica que se liga a este contexto?",
+   "verseRef": "2 Timóteo 1:14",
+   "passageA": {
+    "ref": "2 Timóteo 1:14"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Timóteo deve guardar o evangelho que recebeu de Paulo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Esconder o evangelho dos outros"
+    },
+    {
+     "id": "b",
+     "text": "Guardar o evangelho recebido"
+    },
+    {
+     "id": "c",
+     "text": "Trocar o evangelho recebido"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Guarda o bom depósito",
+   "feedbackCorrect": "O evangelho recebido de Paulo deve ser guardado por Timóteo com cuidado.",
+   "feedbackWrong": {
+    "a": "Guardar aqui é conservar fiel, e não esconder de todos.",
+    "c": "O depósito deve ser guardado como foi recebido, sem troca."
+   },
+   "hint": "Veja o imperativo no começo do verso.",
+   "learningObjective": "Ligar a guarda do depósito ao evangelho recebido.",
+   "evidence": [
+    "2 Timóteo 1:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em 2 Timóteo 1:15 e 1:16, todos os companheiros de Paulo lhe deram ânimo e nenhum o abandonou.",
+   "verseRef": "2 Timóteo 1:15–16",
+   "correctOptionId": "false",
+   "evidenceSpan": "todos os da Ásia me abandonaram",
+   "feedbackCorrect": "Muitos abandonaram Paulo; Onesíforo foi exceção, dando-lhe ânimo.",
+   "feedbackWrong": {
+    "true": "Releia 1:15: Paulo diz que todos os da Ásia o abandonaram."
+   },
+   "hint": "Compare os versículos 15 e 16.",
+   "learningObjective": "Compreender o contraste entre abandono e ânimo.",
+   "evidence": [
+    "2 Timóteo 1:15–16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em 2 Timóteo 1:12, toque a palavra que marca a virada entre o sofrimento e a confiança de Paulo.",
+   "verseRef": "2 Timóteo 1:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "sofrendo"
+    },
+    {
+     "id": "b",
+     "text": "poderoso"
+    },
+    {
+     "id": "c",
+     "text": "contudo"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "contudo, não me envergonho",
+   "feedbackCorrect": "Mesmo sofrendo, Paulo vira a frase para a confiança: não se envergonha.",
+   "feedbackWrong": {
+    "a": "Sofrendo descreve a situação; a virada vem depois dela.",
+    "b": "Poderoso descreve Deus mais adiante; a virada está no meio."
+   },
+   "hint": "Repare na virada depois do sofrimento.",
+   "learningObjective": "Reconhecer o marcador de contraste em 1:12.",
+   "evidence": [
+    "2 Timóteo 1:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o sofrimento de Paulo se relaciona com sua confiança em 2 Timóteo 1:12?",
+   "verseRef": "2 Timóteo 1:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Paulo nega que esteja sofrendo por Cristo"
+    },
+    {
+     "id": "b",
+     "text": "Paulo sofre sem vergonha por confiar em Cristo"
+    },
+    {
+     "id": "c",
+     "text": "A confiança de Paulo elimina todo sofrimento"
+    },
+    {
+     "id": "d",
+     "text": "Paulo se envergonha, mas esconde de Timóteo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "não me envergonho",
+   "feedbackCorrect": "O sofrimento é real, mas a confiança em Cristo tira dele a vergonha.",
+   "feedbackWrong": {
+    "a": "Paulo assume que está sofrendo estas coisas, sem negar.",
+    "c": "A confiança não elimina a dor; ela sustenta Paulo dentro dela.",
+    "d": "Paulo declara abertamente que não se envergonha."
+   },
+   "hint": "Junte a primeira metade do verso com a segunda.",
+   "learningObjective": "Relacionar sofrimento e confiança em Paulo.",
+   "evidence": [
+    "2 Timóteo 1:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o movimento de 2 Timóteo 1:10–11?",
+   "verseRef": "2 Timóteo 1:10–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo se manifesta e vence a morte"
+    },
+    {
+     "id": "b",
+     "text": "Vida e imortalidade vêm à luz"
+    },
+    {
+     "id": "c",
+     "text": "Paulo é chamado a anunciar aos gentios"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "trouxe à luz a vida e a imortalidade",
+   "feedbackCorrect": "Cristo vence a morte, a vida vem à luz e Paulo é enviado a anunciar.",
+   "feedbackWrong": {
+    "default": "Comece pela obra de Cristo; o envio de Paulo vem depois."
+   },
+   "hint": "O chamado de Paulo fecha o trecho.",
+   "learningObjective": "Compreender o encadeamento entre Cristo e o chamado de Paulo.",
+   "evidence": [
+    "2 Timóteo 1:10–11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em 2 Timóteo 1:13, o que Timóteo deve conservar das sãs palavras que ouviu?",
+   "verseRef": "2 Timóteo 1:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "rumo"
+    },
+    {
+     "id": "b",
+     "text": "padrão"
+    },
+    {
+     "id": "c",
+     "text": "costume"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Conserva o padrão das sãs palavras",
+   "feedbackCorrect": "O ensino ouvido de Paulo forma uma medida a manter com fé e amor.",
+   "feedbackWrong": {
+    "a": "O texto usa uma palavra de medida e forma, não de direção.",
+    "c": "Não é hábito qualquer: é a forma do ensino recebido."
+   },
+   "hint": "Veja a palavra logo depois de conserva o.",
+   "learningObjective": "Compreender o ensino como padrão a conservar.",
+   "evidence": [
+    "2 Timóteo 1:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga 2 Timóteo 1:14 a Judas 1:3?",
+   "verseRef": "2 Timóteo 1:14",
+   "passageA": {
+    "ref": "2 Timóteo 1:14"
+   },
+   "passageB": {
+    "ref": "Judas 1:3"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Mudar a fé recebida"
+    },
+    {
+     "id": "b",
+     "text": "Guardar só para si"
+    },
+    {
+     "id": "c",
+     "text": "Guardar a fé recebida"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Guarda o bom depósito",
+   "feedbackCorrect": "Os dois textos tratam da fé entregue uma vez, a ser guardada com firmeza.",
+   "feedbackWrong": {
+    "a": "A fé recebida deve ser guardada, e não trocada por outra.",
+    "b": "Guardar a fé inclui anunciá-la, e não retê-la só para si."
+   },
+   "hint": "Compare o que foi entregue nos dois trechos.",
+   "learningObjective": "Relacionar a guarda do depósito à fé transmitida.",
+   "evidence": [
+    "2 Timóteo 1:14",
+    "Judas 1:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em 2 Timóteo 1:14, Timóteo guarda o bom depósito por meio do Espírito Santo que habita nele.",
+   "verseRef": "2 Timóteo 1:14",
+   "correctOptionId": "true",
+   "evidenceSpan": "Guarda o bom depósito",
+   "feedbackCorrect": "A guarda de Timóteo não depende só dele: é por meio do Espírito Santo.",
+   "feedbackWrong": {
+    "false": "Releia 1:14 inteiro: o meio da guarda é o Espírito Santo."
+   },
+   "hint": "Veja por meio de quem a guarda acontece.",
+   "learningObjective": "Interpretar a guarda do evangelho na força do Espírito.",
+   "evidence": [
+    "2 Timóteo 1:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em 2 Timóteo 1:14, toque o trecho que mostra por meio de quem o depósito é guardado.",
+   "verseRef": "2 Timóteo 1:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "bom depósito"
+    },
+    {
+     "id": "b",
+     "text": "Espírito Santo"
+    },
+    {
+     "id": "c",
+     "text": "nós"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "por meio do Espírito Santo que habita em nós",
+   "feedbackCorrect": "Quem habita em nós é o meio pelo qual o depósito é guardado.",
+   "feedbackWrong": {
+    "a": "O depósito é o que se guarda; o meio vem depois dele.",
+    "c": "Nós somos onde ele habita, não o meio da guarda em si."
+   },
+   "hint": "Procure uma pessoa, não uma coisa.",
+   "learningObjective": "Sustentar com o texto a ação do Espírito na guarda.",
+   "evidence": [
+    "2 Timóteo 1:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura 2 Timóteo 1:13–14 sustenta sobre guardar o evangelho?",
+   "verseRef": "2 Timóteo 1:13–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Guardar é esconder e nunca anunciar"
+    },
+    {
+     "id": "b",
+     "text": "A guarda depende só da força humana"
+    },
+    {
+     "id": "c",
+     "text": "O ensino recebido pode ser trocado"
+    },
+    {
+     "id": "d",
+     "text": "Guardar o ensino com fé e amor em Cristo"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "com a fé e o amor que estão em Cristo Jesus",
+   "feedbackCorrect": "Conservar o padrão anda junto com fé e amor, e a guarda é pelo Espírito.",
+   "feedbackWrong": {
+    "a": "O ensino ouvido de um pregador é para conservar, não esconder.",
+    "b": "O texto aponta o Espírito Santo como meio da guarda.",
+    "c": "O padrão deve ser conservado como foi ouvido de Paulo."
+   },
+   "hint": "Junte o modo de conservar com o meio de guardar.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre guardar.",
+   "evidence": [
+    "2 Timóteo 1:13–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a lógica de 2 Timóteo 1:10–14?",
+   "verseRef": "2 Timóteo 1:13–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo vence a morte pelo evangelho"
+    },
+    {
+     "id": "b",
+     "text": "Paulo anuncia sem se envergonhar"
+    },
+    {
+     "id": "c",
+     "text": "Timóteo guarda o depósito no Espírito"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Guarda o bom depósito",
+   "feedbackCorrect": "Da obra de Cristo ao anúncio de Paulo e à guarda confiada a Timóteo.",
+   "feedbackWrong": {
+    "default": "Comece pela obra de Cristo; a guarda de Timóteo é a chegada."
+   },
+   "hint": "Siga de Cristo a Paulo e a Timóteo.",
+   "learningObjective": "Ver a passagem do evangelho de Cristo a Timóteo.",
+   "evidence": [
+    "2 Timóteo 1:13–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em 2 Timóteo 1:14, o que Timóteo deve guardar por meio do Espírito Santo?",
+   "verseRef": "2 Timóteo 1:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "depósito"
+    },
+    {
+     "id": "b",
+     "text": "silêncio"
+    },
+    {
+     "id": "c",
+     "text": "costume"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Guarda o bom depósito",
+   "feedbackCorrect": "O evangelho confiado é tratado como algo precioso entregue a Timóteo.",
+   "feedbackWrong": {
+    "b": "Guardar aqui não é calar, mas conservar o que foi confiado.",
+    "c": "O texto usa uma imagem de valor confiado, não de hábito."
+   },
+   "hint": "Veja o que vem depois de guarda o bom.",
+   "learningObjective": "Lembrar o termo que nomeia o evangelho confiado.",
+   "evidence": [
+    "2 Timóteo 1:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga 2 Timóteo 1:10 a João 11:25?",
+   "verseRef": "2 Timóteo 1:10",
+   "passageA": {
+    "ref": "2 Timóteo 1:10"
+   },
+   "passageB": {
+    "ref": "João 11:25"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A morte vence no fim"
+    },
+    {
+     "id": "b",
+     "text": "Cristo traz vida verdadeira"
+    },
+    {
+     "id": "c",
+     "text": "Vida sem passar por Cristo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "trouxe à luz a vida e a imortalidade",
+   "feedbackCorrect": "Paulo e João apontam o mesmo: em Cristo, a vida vence a morte.",
+   "feedbackWrong": {
+    "a": "Os dois textos anunciam a derrota da morte, e não sua vitória.",
+    "c": "Nos dois trechos, a vida está ligada à pessoa de Cristo."
+   },
+   "hint": "Veja quem Jesus diz ser em João 11.",
+   "learningObjective": "Ligar a vitória sobre a morte à pessoa de Cristo.",
+   "evidence": [
+    "2 Timóteo 1:10",
+    "João 11:25"
+   ]
+  }
+ ]
+}

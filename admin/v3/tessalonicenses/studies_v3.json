@@ -1,0 +1,601 @@
+{
+  "studies": {
+    "ts-01-conversao": {
+      "slug": "ts-01-conversao",
+      "passageRef": "1 Tessalonicenses 1:6–10",
+      "passageText": "E vocês se tornaram nossos imitadores e do Senhor, ao receberem a Palavra, mesmo em meio a muita tribulação, com a alegria do Espírito Santo. Assim, vocês se tornaram o modelo para todos os crentes na Macedônia e na Acaia. Porque a palavra do Senhor repercutiu por meio de vocês, não apenas na Macedônia e na Acaia, mas também a fé que vocês têm em Deus se espalhou por toda parte, a tal ponto que já não precisamos acrescentar coisa alguma. Porque eles mesmos proclamam a respeito de nós, qual foi a repercussão da nossa entrada entre vocês e como, abandonando os ídolos, vocês se converteram a Deus, para servir ao Deus vivo e verdadeiro. E para aguardarem dos céus o seu Filho, a quem ele ressuscitou dentre os mortos, ou seja, Jesus, que nos livra da ira que está por vir.",
+      "passages": [
+        {
+          "ref": "1 Tessalonicenses 1:6–10",
+          "text": "E vocês se tornaram nossos imitadores e do Senhor, ao receberem a Palavra, mesmo em meio a muita tribulação, com a alegria do Espírito Santo. Assim, vocês se tornaram o modelo para todos os crentes na Macedônia e na Acaia. Porque a palavra do Senhor repercutiu por meio de vocês, não apenas na Macedônia e na Acaia, mas também a fé que vocês têm em Deus se espalhou por toda parte, a tal ponto que já não precisamos acrescentar coisa alguma. Porque eles mesmos proclamam a respeito de nós, qual foi a repercussão da nossa entrada entre vocês e como, abandonando os ídolos, vocês se converteram a Deus, para servir ao Deus vivo e verdadeiro. E para aguardarem dos céus o seu Filho, a quem ele ressuscitou dentre os mortos, ou seja, Jesus, que nos livra da ira que está por vir."
+        }
+      ],
+      "context": "Paulo lembra a igreja de Tessalônica: eles receberam o evangelho em sofrimento, viraram exemplo para outros e agora aguardam Jesus, o Filho ressuscitado.",
+      "keyword": "Conversão",
+      "keywordGloss": "Virar as costas aos ídolos para servir ao Deus vivo e aguardar o seu Filho.",
+      "focusQuestion": "De quais ídolos você precisa se afastar para servir a Deus com mais liberdade?",
+      "reflectionPrompts": [
+        "Deixar os ídolos",
+        "Servir ao Deus vivo",
+        "Aguardar o Filho"
+      ],
+      "facts": [
+        {
+          "text": "Os tessalonicenses se tornaram imitadores de Paulo e do Senhor.",
+          "evidenceRef": "1 Tessalonicenses 1:6",
+          "evidenceSpan": "vocês se tornaram nossos imitadores e do Senhor"
+        },
+        {
+          "text": "Eles receberam a Palavra em muita tribulação, com alegria do Espírito Santo.",
+          "evidenceRef": "1 Tessalonicenses 1:6",
+          "evidenceSpan": "ao receberem a Palavra, mesmo em meio a muita tribulação"
+        },
+        {
+          "text": "Eles se tornaram modelo para os crentes da Macedônia e da Acaia.",
+          "evidenceRef": "1 Tessalonicenses 1:7",
+          "evidenceSpan": "vocês se tornaram o modelo para todos os crentes"
+        },
+        {
+          "text": "Abandonando os ídolos, eles se converteram a Deus para servi-lo.",
+          "evidenceRef": "1 Tessalonicenses 1:9",
+          "evidenceSpan": "abandonando os ídolos, vocês se converteram a Deus"
+        },
+        {
+          "text": "Eles aguardam dos céus o Filho, ressuscitado dentre os mortos.",
+          "evidenceRef": "1 Tessalonicenses 1:10",
+          "evidenceSpan": "aguardarem dos céus o seu Filho"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "imitadores",
+          "gloss": "Quem segue um exemplo de perto, como eles seguiram Paulo e o Senhor."
+        },
+        {
+          "term": "ídolos",
+          "gloss": "O que ocupava o lugar de Deus e foi abandonado na conversão."
+        },
+        {
+          "term": "Espírito Santo",
+          "gloss": "Quem dá alegria mesmo em meio à tribulação."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Recebem a Palavra na tribulação",
+          "evidenceRef": "1 Tessalonicenses 1:6"
+        },
+        {
+          "label": "Tornam-se modelo para outros",
+          "evidenceRef": "1 Tessalonicenses 1:7"
+        },
+        {
+          "label": "A fé se espalha por toda parte",
+          "evidenceRef": "1 Tessalonicenses 1:8"
+        },
+        {
+          "label": "Converteram-se e aguardam o Filho",
+          "evidenceRef": "1 Tessalonicenses 1:9"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Receberam a Palavra em tribulação, mas com alegria do Espírito Santo.",
+          "marker": "mesmo",
+          "evidenceRef": "1 Tessalonicenses 1:6"
+        },
+        {
+          "kind": "causa",
+          "text": "A fé se espalhou porque a palavra do Senhor repercutiu por meio deles.",
+          "marker": "Porque",
+          "evidenceRef": "1 Tessalonicenses 1:8"
+        },
+        {
+          "kind": "propósito",
+          "text": "Converteram-se a Deus para servir ao Deus vivo e verdadeiro.",
+          "marker": "para",
+          "evidenceRef": "1 Tessalonicenses 1:9"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Romanos 1:8",
+          "bridge": "A fé anunciada por toda parte",
+          "text": "Primeiramente, dou graças ao meu Deus, por meio de Jesus Cristo, a respeito de todos vocês, porque, em todo o mundo, é proclamada a fé de vocês."
+        },
+        {
+          "ref": "1 Coríntios 11:1",
+          "bridge": "Imitar quem segue a Cristo",
+          "text": "Sejam meus imitadores, assim como eu também sou de Cristo."
+        },
+        {
+          "ref": "Atos 17:4",
+          "bridge": "O evangelho chega a Tessalônica",
+          "text": "E alguns deles creram e se uniram a Paulo e Silas, juntamente com uma numerosa multidão de gregos piedosos e muitas mulheres distintas."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Converter-se é só mudar de religião, sem mudar a vida.",
+          "why": "O texto liga a conversão a abandonar ídolos e servir ao Deus vivo."
+        },
+        {
+          "text": "Ter alegria significa que o sofrimento acabou.",
+          "why": "Eles receberam a Palavra em meio a muita tribulação, com alegria."
+        },
+        {
+          "text": "Aguardar Jesus é ficar parado, sem fazer nada.",
+          "why": "Eles serviam a Deus, eram modelo e a fé se espalhava por meio deles."
+        }
+      ],
+      "centralInsight": "Converter-se é deixar os ídolos, servir ao Deus vivo e aguardar Jesus",
+      "anchorQuestion": "O que os tessalonicenses abandonaram e a quem passaram a servir?",
+      "relatedVerses": [
+        {
+          "reference": "Romanos 1:8",
+          "reason": "A fé anunciada por toda parte"
+        },
+        {
+          "reference": "1 Coríntios 11:1",
+          "reason": "Imitar quem segue a Cristo"
+        },
+        {
+          "reference": "Atos 17:4",
+          "reason": "O evangelho chega a Tessalônica"
+        }
+      ]
+    },
+    "ts-02-santidade": {
+      "slug": "ts-02-santidade",
+      "passageRef": "1 Tessalonicenses 4:1–6",
+      "passageText": "Finalmente, irmãos, rogamos e exortamos vocês no Senhor Jesus a que, assim como de nós receberam, quanto à maneira de viver e agradar a Deus, continuem progredindo cada vez mais; Porque vocês estão plenamente cientes das instruções que lhes demos da parte do Senhor Jesus. Porque esta é a vontade de Deus: a santificação de vocês, que vocês se abstenham da prostituição; Que cada um de vocês saiba dominar o próprio corpo em santificação e honra; não segundo a paixão da lascívia, como os gentios que não conhecem a Deus; Ninguém prejudique nem engane seu irmão em negócio algum, pois o Senhor é vingador de todas essas coisas, como já havíamos avisado e testificado claramente.",
+      "passages": [
+        {
+          "ref": "1 Tessalonicenses 4:1–6",
+          "text": "Finalmente, irmãos, rogamos e exortamos vocês no Senhor Jesus a que, assim como de nós receberam, quanto à maneira de viver e agradar a Deus, continuem progredindo cada vez mais; Porque vocês estão plenamente cientes das instruções que lhes demos da parte do Senhor Jesus. Porque esta é a vontade de Deus: a santificação de vocês, que vocês se abstenham da prostituição; Que cada um de vocês saiba dominar o próprio corpo em santificação e honra; não segundo a paixão da lascívia, como os gentios que não conhecem a Deus; Ninguém prejudique nem engane seu irmão em negócio algum, pois o Senhor é vingador de todas essas coisas, como já havíamos avisado e testificado claramente."
+        }
+      ],
+      "context": "Paulo já havia ensinado como viver para agradar a Deus. Agora ele pede progresso: a vontade de Deus é a santificação, com corpo honrado e irmão respeitado.",
+      "keyword": "Santidade",
+      "keywordGloss": "Vida separada para Deus, vista no corpo e no trato com o irmão.",
+      "focusQuestion": "Em que área da sua vida Deus pede hoje um passo a mais de santidade?",
+      "reflectionPrompts": [
+        "Progredir cada vez mais",
+        "Corpo com honra",
+        "Não enganar o irmão"
+      ],
+      "facts": [
+        {
+          "text": "Eles devem continuar progredindo na maneira de viver e agradar a Deus.",
+          "evidenceRef": "1 Tessalonicenses 4:1",
+          "evidenceSpan": "continuem progredindo cada vez mais"
+        },
+        {
+          "text": "Eles conhecem as instruções dadas da parte do Senhor Jesus.",
+          "evidenceRef": "1 Tessalonicenses 4:2",
+          "evidenceSpan": "instruções que lhes demos da parte do Senhor Jesus"
+        },
+        {
+          "text": "A vontade de Deus é a santificação deles, longe da prostituição.",
+          "evidenceRef": "1 Tessalonicenses 4:3",
+          "evidenceSpan": "esta é a vontade de Deus: a santificação de vocês"
+        },
+        {
+          "text": "Cada um deve dominar o próprio corpo em santificação e honra.",
+          "evidenceRef": "1 Tessalonicenses 4:4",
+          "evidenceSpan": "dominar o próprio corpo em santificação e honra"
+        },
+        {
+          "text": "Ninguém deve prejudicar nem enganar o irmão em negócio algum.",
+          "evidenceRef": "1 Tessalonicenses 4:6",
+          "evidenceSpan": "Ninguém prejudique nem engane seu irmão em negócio algum"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "santificação",
+          "gloss": "Ser separado para Deus, com vida cada vez mais dele."
+        },
+        {
+          "term": "honra",
+          "gloss": "O valor com que o corpo deve ser tratado, não com desprezo."
+        },
+        {
+          "term": "prostituição",
+          "gloss": "A prática sexual fora do caminho de Deus, da qual devem se afastar."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Exortação a progredir mais",
+          "evidenceRef": "1 Tessalonicenses 4:1"
+        },
+        {
+          "label": "Instruções já conhecidas",
+          "evidenceRef": "1 Tessalonicenses 4:2"
+        },
+        {
+          "label": "A vontade de Deus é santificação",
+          "evidenceRef": "1 Tessalonicenses 4:3"
+        },
+        {
+          "label": "Corpo com honra, irmão respeitado",
+          "evidenceRef": "1 Tessalonicenses 4:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Depois do ensino já recebido, Paulo pede o passo seguinte de progresso.",
+          "marker": "Finalmente",
+          "evidenceRef": "1 Tessalonicenses 4:1"
+        },
+        {
+          "kind": "causa",
+          "text": "A santificação é pedida porque esta é a vontade de Deus.",
+          "marker": "Porque",
+          "evidenceRef": "1 Tessalonicenses 4:3"
+        },
+        {
+          "kind": "contraste",
+          "text": "O caminho deles não é o da lascívia, como o de quem não conhece a Deus.",
+          "marker": "não",
+          "evidenceRef": "1 Tessalonicenses 4:5"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Romanos 12:1",
+          "bridge": "Corpo oferecido a Deus",
+          "text": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional."
+        },
+        {
+          "ref": "1 Pedro 1:16",
+          "bridge": "Santos porque Deus é santo",
+          "text": "Sede santos, pois eu sou santo."
+        },
+        {
+          "ref": "Efésios 5:3",
+          "bridge": "Pureza entre o povo santo",
+          "text": "Mas a imoralidade, e toda sorte de impureza ou cobiça, nem mesmo seja nomeada entre vocês, como convém a santos."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Santidade é só uma regra externa, sem agradar a Deus.",
+          "why": "Paulo liga a maneira de viver a agradar a Deus e à vontade dele."
+        },
+        {
+          "text": "Santidade é só assunto individual e não toca o irmão.",
+          "why": "O mesmo trecho manda não prejudicar nem enganar o irmão."
+        },
+        {
+          "text": "Dominar o corpo significa desprezar o corpo.",
+          "why": "O texto pede domínio em santificação e honra, não com vergonha."
+        }
+      ],
+      "centralInsight": "A vontade de Deus é santidade com corpo honrado e irmão respeitado",
+      "anchorQuestion": "Qual é a vontade de Deus para eles, segundo 1 Tessalonicenses 4:3?",
+      "relatedVerses": [
+        {
+          "reference": "Romanos 12:1",
+          "reason": "Corpo oferecido a Deus"
+        },
+        {
+          "reference": "1 Pedro 1:16",
+          "reason": "Santos porque Deus é santo"
+        },
+        {
+          "reference": "Efésios 5:3",
+          "reason": "Pureza entre o povo santo"
+        }
+      ]
+    },
+    "ts-03-dia-senhor": {
+      "slug": "ts-03-dia-senhor",
+      "passageRef": "2 Tessalonicenses 2:1–5",
+      "passageText": "Irmãos, a respeito da vinda de nosso Senhor Jesus Cristo e da nossa reunião com Ele, nós vos exortamos Que não vos demovais da vossa mente, nem vos perturbeis, quer por espírito, quer por palavra, quer por epístola, como se procedesse de nós, supondo que já tenha chegado o Dia do Senhor. Ninguém de nenhum modo vos engane, pois aquele dia não virá sem que primeiro venha a apostasia e se manifeste o homem da iniquidade, o filho da perdição. Ele se opõe e se coloca acima de tudo o que se chama Deus ou é objeto de adoração; e assim se assentará no santuário de Deus, ostentando-se como se fosse o próprio Deus. Não vos lembrais de que eu costumava dizer-vos estas coisas enquanto estava ainda convosco?",
+      "passages": [
+        {
+          "ref": "2 Tessalonicenses 2:1–5",
+          "text": "Irmãos, a respeito da vinda de nosso Senhor Jesus Cristo e da nossa reunião com Ele, nós vos exortamos Que não vos demovais da vossa mente, nem vos perturbeis, quer por espírito, quer por palavra, quer por epístola, como se procedesse de nós, supondo que já tenha chegado o Dia do Senhor. Ninguém de nenhum modo vos engane, pois aquele dia não virá sem que primeiro venha a apostasia e se manifeste o homem da iniquidade, o filho da perdição. Ele se opõe e se coloca acima de tudo o que se chama Deus ou é objeto de adoração; e assim se assentará no santuário de Deus, ostentando-se como se fosse o próprio Deus. Não vos lembrais de que eu costumava dizer-vos estas coisas enquanto estava ainda convosco?"
+        }
+      ],
+      "context": "Circulava a ideia de que o Dia do Senhor já tinha chegado. Paulo exorta a igreja a não se perturbar nem se deixar enganar, lembrando o que já havia ensinado.",
+      "keyword": "Firmeza",
+      "keywordGloss": "Mente firme que não se abala com boato nem se deixa enganar.",
+      "focusQuestion": "Que boato ou medo sobre o futuro você precisa entregar à palavra de Deus?",
+      "reflectionPrompts": [
+        "Não se perturbar",
+        "Não se deixar enganar",
+        "Lembrar o ensino recebido"
+      ],
+      "facts": [
+        {
+          "text": "Paulo fala da vinda do Senhor Jesus Cristo e da reunião com ele.",
+          "evidenceRef": "2 Tessalonicenses 2:1",
+          "evidenceSpan": "a respeito da vinda de nosso Senhor Jesus Cristo e da nossa reunião com Ele"
+        },
+        {
+          "text": "Eles não devem se demover da mente nem se perturbar.",
+          "evidenceRef": "2 Tessalonicenses 2:2",
+          "evidenceSpan": "Que não vos demovais da vossa mente, nem vos perturbeis"
+        },
+        {
+          "text": "Alguns supunham que o Dia do Senhor já tinha chegado.",
+          "evidenceRef": "2 Tessalonicenses 2:2",
+          "evidenceSpan": "supondo que já tenha chegado o Dia do Senhor"
+        },
+        {
+          "text": "Aquele dia não virá sem que primeiro venha a apostasia.",
+          "evidenceRef": "2 Tessalonicenses 2:3",
+          "evidenceSpan": "aquele dia não virá sem que primeiro venha a apostasia"
+        },
+        {
+          "text": "O homem da iniquidade se opõe e se coloca acima do que se chama Deus.",
+          "evidenceRef": "2 Tessalonicenses 2:4",
+          "evidenceSpan": "Ele se opõe e se coloca acima de tudo o que se chama Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "vinda",
+          "gloss": "A volta do Senhor Jesus Cristo, esperada pelo seu povo."
+        },
+        {
+          "term": "apostasia",
+          "gloss": "O abandono da fé que o texto coloca antes daquele dia."
+        },
+        {
+          "term": "santuário",
+          "gloss": "O lugar de Deus onde o rebelde tenta se assentar como Deus."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O tema é a vinda e a reunião",
+          "evidenceRef": "2 Tessalonicenses 2:1"
+        },
+        {
+          "label": "Não se deixem perturbar",
+          "evidenceRef": "2 Tessalonicenses 2:2"
+        },
+        {
+          "label": "Não se deixem enganar",
+          "evidenceRef": "2 Tessalonicenses 2:3"
+        },
+        {
+          "label": "O rebelde se coloca acima de Deus",
+          "evidenceRef": "2 Tessalonicenses 2:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "A exortação existe para que não se demovam da mente nem se perturbem.",
+          "marker": "Que",
+          "evidenceRef": "2 Tessalonicenses 2:2"
+        },
+        {
+          "kind": "causa",
+          "text": "Não devem se enganar, pois aquele dia tem algo que vem primeiro.",
+          "marker": "pois",
+          "evidenceRef": "2 Tessalonicenses 2:3"
+        },
+        {
+          "kind": "sequência",
+          "text": "Antes daquele dia, primeiro vem a apostasia e o rebelde se manifesta.",
+          "marker": "primeiro",
+          "evidenceRef": "2 Tessalonicenses 2:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Mateus 24:4",
+          "bridge": "Cuidado para ninguém vos enganar",
+          "text": "E Jesus respondendo, disse-lhes: Tomem cuidado para que ninguém os engane."
+        },
+        {
+          "ref": "Atos 1:11",
+          "bridge": "Jesus voltará como subiu",
+          "text": "Homens da Galileia, por que vocês estão olhando para o céu? Esse Jesus que foi elevado entre vocês voltará da mesma maneira como o viram subir."
+        },
+        {
+          "ref": "Mateus 24:36",
+          "bridge": "O dia ninguém sabe",
+          "text": "Porém, a respeito daquele dia e hora, ninguém sabe, nem os anjos dos céus, exceto o Pai."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Dia do Senhor já chegou, então não há mais o que esperar.",
+          "why": "Paulo corrige justamente quem supunha que ele já tinha chegado."
+        },
+        {
+          "text": "Toda notícia sobre a vinda deve ser aceita sem exame.",
+          "why": "Ele manda não se perturbar por espírito, palavra ou suposta carta."
+        },
+        {
+          "text": "O texto permite apontar o rebelde numa pessoa de hoje.",
+          "why": "Paulo não nomeia pessoa nem data; ele chama a não se enganar."
+        }
+      ],
+      "centralInsight": "Diante da vinda do Senhor, firmeza sem perturbação nem engano",
+      "anchorQuestion": "O que Paulo pede que os irmãos não façam diante do boato sobre o Dia?",
+      "relatedVerses": [
+        {
+          "reference": "Mateus 24:4",
+          "reason": "Cuidado para ninguém vos enganar"
+        },
+        {
+          "reference": "Atos 1:11",
+          "reason": "Jesus voltará como subiu"
+        },
+        {
+          "reference": "Mateus 24:36",
+          "reason": "O dia ninguém sabe"
+        }
+      ]
+    },
+    "ts-04-desafio": {
+      "slug": "ts-04-desafio",
+      "passageRef": "1 Tessalonicenses 1:9–10",
+      "passageText": "Porque eles mesmos proclamam a respeito de nós, qual foi a repercussão da nossa entrada entre vocês e como, abandonando os ídolos, vocês se converteram a Deus, para servir ao Deus vivo e verdadeiro. E para aguardarem dos céus o seu Filho, a quem ele ressuscitou dentre os mortos, ou seja, Jesus, que nos livra da ira que está por vir.",
+      "passages": [
+        {
+          "ref": "1 Tessalonicenses 1:9–10",
+          "text": "Porque eles mesmos proclamam a respeito de nós, qual foi a repercussão da nossa entrada entre vocês e como, abandonando os ídolos, vocês se converteram a Deus, para servir ao Deus vivo e verdadeiro. E para aguardarem dos céus o seu Filho, a quem ele ressuscitou dentre os mortos, ou seja, Jesus, que nos livra da ira que está por vir."
+        },
+        {
+          "ref": "1 Tessalonicenses 4:3–4",
+          "text": "Porque esta é a vontade de Deus: a santificação de vocês, que vocês se abstenham da prostituição; Que cada um de vocês saiba dominar o próprio corpo em santificação e honra;"
+        },
+        {
+          "ref": "2 Tessalonicenses 2:1–2",
+          "text": "Irmãos, a respeito da vinda de nosso Senhor Jesus Cristo e da nossa reunião com Ele, nós vos exortamos Que não vos demovais da vossa mente, nem vos perturbeis, quer por espírito, quer por palavra, quer por epístola, como se procedesse de nós, supondo que já tenha chegado o Dia do Senhor."
+        }
+      ],
+      "context": "Este desafio revisa a trilha: conversão que deixa ídolos, santidade que honra o corpo e o irmão, e firmeza diante de boatos sobre a vinda do Senhor.",
+      "keyword": "Esperança",
+      "keywordGloss": "Aguardar o Filho servindo a Deus, com vida santa e mente firme.",
+      "focusQuestion": "Como a espera por Jesus muda o seu servir, o seu corpo e a sua mente hoje?",
+      "reflectionPrompts": [
+        "Servir aguardando o Filho",
+        "Corpo e irmão honrados",
+        "Mente firme sem boato"
+      ],
+      "facts": [
+        {
+          "text": "Abandonando os ídolos, eles se converteram a Deus para servi-lo.",
+          "evidenceRef": "1 Tessalonicenses 1:9",
+          "evidenceSpan": "abandonando os ídolos, vocês se converteram a Deus"
+        },
+        {
+          "text": "Eles aguardam dos céus o Filho, ressuscitado dentre os mortos.",
+          "evidenceRef": "1 Tessalonicenses 1:10",
+          "evidenceSpan": "aguardarem dos céus o seu Filho"
+        },
+        {
+          "text": "A vontade de Deus é a santificação deles, longe da prostituição.",
+          "evidenceRef": "1 Tessalonicenses 4:3",
+          "evidenceSpan": "esta é a vontade de Deus: a santificação de vocês"
+        },
+        {
+          "text": "Cada um deve dominar o próprio corpo em santificação e honra.",
+          "evidenceRef": "1 Tessalonicenses 4:4",
+          "evidenceSpan": "dominar o próprio corpo em santificação e honra"
+        },
+        {
+          "text": "Eles não devem se demover da mente nem se perturbar.",
+          "evidenceRef": "2 Tessalonicenses 2:2",
+          "evidenceSpan": "Que não vos demovais da vossa mente, nem vos perturbeis"
+        },
+        {
+          "text": "Aquele dia não virá sem que primeiro venha a apostasia.",
+          "evidenceRef": "2 Tessalonicenses 2:3",
+          "evidenceSpan": "aquele dia não virá sem que primeiro venha a apostasia"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ídolos",
+          "gloss": "O que ocupava o lugar de Deus e foi abandonado na conversão."
+        },
+        {
+          "term": "santificação",
+          "gloss": "Ser separado para Deus, com vida cada vez mais dele."
+        },
+        {
+          "term": "vinda",
+          "gloss": "A volta do Senhor Jesus Cristo, esperada pelo seu povo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Converteram-se e aguardam o Filho",
+          "evidenceRef": "1 Tessalonicenses 1:9"
+        },
+        {
+          "label": "A vontade de Deus é santificação",
+          "evidenceRef": "1 Tessalonicenses 4:3"
+        },
+        {
+          "label": "O tema é a vinda e a reunião",
+          "evidenceRef": "2 Tessalonicenses 2:1"
+        },
+        {
+          "label": "Não se deixem perturbar",
+          "evidenceRef": "2 Tessalonicenses 2:2"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Converteram-se a Deus para servir ao Deus vivo e verdadeiro.",
+          "marker": "para",
+          "evidenceRef": "1 Tessalonicenses 1:9"
+        },
+        {
+          "kind": "causa",
+          "text": "A santificação é pedida porque esta é a vontade de Deus.",
+          "marker": "Porque",
+          "evidenceRef": "1 Tessalonicenses 4:3"
+        },
+        {
+          "kind": "sequência",
+          "text": "Antes daquele dia, primeiro vem a apostasia e o rebelde se manifesta.",
+          "marker": "primeiro",
+          "evidenceRef": "2 Tessalonicenses 2:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Romanos 1:8",
+          "bridge": "A fé anunciada por toda parte",
+          "text": "Primeiramente, dou graças ao meu Deus, por meio de Jesus Cristo, a respeito de todos vocês, porque, em todo o mundo, é proclamada a fé de vocês."
+        },
+        {
+          "ref": "1 Pedro 1:16",
+          "bridge": "Santos porque Deus é santo",
+          "text": "Sede santos, pois eu sou santo."
+        },
+        {
+          "ref": "Mateus 24:4",
+          "bridge": "Cuidado para ninguém vos enganar",
+          "text": "E Jesus respondendo, disse-lhes: Tomem cuidado para que ninguém os engane."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Aguardar Jesus é ficar parado, sem fazer nada.",
+          "why": "Quem aguarda também serve a Deus e vive em santificação."
+        },
+        {
+          "text": "Santidade é só assunto individual e não toca o irmão.",
+          "why": "O mesmo ensino manda não prejudicar nem enganar o irmão."
+        },
+        {
+          "text": "Toda notícia sobre a vinda deve ser aceita sem exame.",
+          "why": "Paulo manda não se perturbar por espírito, palavra ou suposta carta."
+        }
+      ],
+      "centralInsight": "O que Jesus / a igreja revelam aqui?",
+      "anchorQuestion": "O que une deixar ídolos, viver em santidade e não se perturbar?",
+      "relatedVerses": [
+        {
+          "reference": "Romanos 1:8",
+          "reason": "A fé anunciada por toda parte"
+        },
+        {
+          "reference": "1 Pedro 1:16",
+          "reason": "Santos porque Deus é santo"
+        },
+        {
+          "reference": "Mateus 24:4",
+          "reason": "Cuidado para ninguém vos enganar"
+        }
+      ]
+    }
+  }
+}

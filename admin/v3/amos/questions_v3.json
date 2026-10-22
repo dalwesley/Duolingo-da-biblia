@@ -1,0 +1,4831 @@
+[
+  {
+    "id": "amos-sem-am-03-conhecido-01",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+    "prompt": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+    "cue": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Só Israel foi conhecido assim entre as gerações da terra.",
+    "feedbackWrong": {
+      "false": "O texto é claro: somente a vós eu conheci."
+    },
+    "hint": "Leia quem Deus conheceu em 3:2.",
+    "learningObjective": "Observar a eleição única de Israel.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-02",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 3:2, toque quem Deus conheceu de modo único.",
+    "prompt": "Em Amós 3:2, toque quem Deus conheceu de modo único.",
+    "cue": "Em Amós 3:2, toque quem Deus conheceu de modo único.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todas as gerações"
+      },
+      {
+        "id": "b",
+        "text": "a vós"
+      },
+      {
+        "id": "c",
+        "text": "da terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "É Israel, o povo que ouve a palavra: somente a vós.",
+    "feedbackWrong": {
+      "a": "Todas as gerações são o contraste; uma só foi conhecida.",
+      "c": "Da terra são todas as gerações comparadas, não o conhecido."
+    },
+    "hint": "Procure o pronome depois de somente.",
+    "learningObjective": "Identificar Israel como o povo conhecido.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-03",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Amós 3:1, contra quem o Senhor fala a palavra ouvida?",
+    "prompt": "Segundo Amós 3:1, contra quem o Senhor fala a palavra ouvida?",
+    "cue": "Segundo Amós 3:1, contra quem o Senhor fala a palavra ouvida?",
+    "verseRef": "Amós 3:1",
+    "passageText": "Ouvi a palavra que o Senhor fala contra vós, filhos de Israel, contra toda a família que Ele fez subir da terra do Egito, dizendo:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contra os povos vizinhos"
+      },
+      {
+        "id": "b",
+        "text": "Contra os reis do Egito"
+      },
+      {
+        "id": "c",
+        "text": "Contra os filhos de Israel"
+      },
+      {
+        "id": "d",
+        "text": "Contra os pastores de Judá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fala contra vós, filhos de Israel",
+    "feedbackCorrect": "A palavra é contra os filhos de Israel, o povo tirado do Egito.",
+    "feedbackWrong": {
+      "a": "Os vizinhos não são o alvo nomeado neste versículo.",
+      "b": "O Egito é o passado de onde Deus tirou o povo.",
+      "d": "Pastores não são citados como alvo aqui."
+    },
+    "hint": "Veja o nome dado ao povo no versículo.",
+    "learningObjective": "Observar o destinatário da palavra em 3:1.",
+    "evidence": [
+      "Amós 3:1"
+    ]
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-04",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 3:2 na ordem do texto.",
+    "prompt": "Monte Amós 3:2 na ordem do texto.",
+    "cue": "Monte Amós 3:2 na ordem do texto.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De todas as gerações da terra"
+      },
+      {
+        "id": "b",
+        "text": "somente a vós eu conheci"
+      },
+      {
+        "id": "c",
+        "text": "punirei todas as vossas iniquidades sobre vós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Eleição única primeiro; punição anunciada depois.",
+    "feedbackWrong": {
+      "default": "Comece pelas gerações da terra; a punição fecha."
+    },
+    "hint": "O versículo começa comparando gerações.",
+    "learningObjective": "Reconhecer a sequência de Amós 3:2.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-05",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Amós 3:3, dois só andam juntos se estiverem de quê?",
+    "prompt": "Em Amós 3:3, dois só andam juntos se estiverem de quê?",
+    "cue": "Em Amós 3:3, dois só andam juntos se estiverem de quê?",
+    "verseRef": "Amós 3:3",
+    "passageText": "Andarão dois juntos, se não estiverem de acordo?",
+    "template": "Andarão dois juntos, se não estiverem de ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "laço"
+      },
+      {
+        "id": "b",
+        "text": "covil"
+      },
+      {
+        "id": "c",
+        "text": "acordo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se não estiverem de acordo",
+    "feedbackCorrect": "Andar junto pede estarem alinhados um com o outro.",
+    "feedbackWrong": {
+      "a": "Laço é a armadilha da ave em 3:5, não o andar junto.",
+      "b": "Covil é o lugar do leão em 3:4, não a condição aqui."
+    },
+    "hint": "É a condição para caminhar lado a lado.",
+    "learningObjective": "Lembrar a imagem do andar juntos.",
+    "evidence": [
+      "Amós 3:3"
+    ]
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-06",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Amós 3:1 comunica que se liga a este contexto?",
+    "verseRef": "Amós 3:1",
+    "passageText": "Ouvi a palavra que o Senhor fala contra vós, filhos de Israel, contra toda a família que Ele fez subir da terra do Egito, dizendo:",
+    "passageA": {
+      "ref": "Amós 3:1",
+      "text": "Ouvi a palavra que o Senhor fala contra vós, filhos de Israel, contra toda a família que Ele fez subir da terra do Egito, dizendo:"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus fez Israel subir da terra do Egito e agora lhe fala."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo esquecido por Deus"
+      },
+      {
+        "id": "b",
+        "text": "Povo tirado do Egito"
+      },
+      {
+        "id": "c",
+        "text": "Povo igual ao Egito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que Ele fez subir da terra do Egito",
+    "feedbackCorrect": "A palavra chega ao povo que Deus tirou do Egito.",
+    "feedbackWrong": {
+      "a": "Deus fala a ele justamente por conhecê-lo de perto.",
+      "c": "Israel foi tirado do Egito, não se tornou igual a ele."
+    },
+    "hint": "Veja de onde Deus fez o povo subir.",
+    "learningObjective": "Ligar 3:1 ao povo tirado do Egito.",
+    "evidence": [
+      "Amós 3:1"
+    ]
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-01",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Amós 3:2, o fato de Deus conhecer Israel é apresentado como razão para punir suas iniquidades.",
+    "prompt": "Em Amós 3:2, o fato de Deus conhecer Israel é apresentado como razão para punir suas iniquidades.",
+    "cue": "Em Amós 3:2, o fato de Deus conhecer Israel é apresentado como razão para punir suas iniquidades.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+    "feedbackCorrect": "A ligação é direta: conheci, portanto punirei as iniquidades.",
+    "feedbackWrong": {
+      "false": "A palavra portanto liga o conhecer à punição."
+    },
+    "hint": "Repare na palavra que liga as duas partes.",
+    "learningObjective": "Compreender a ligação entre eleição e punição.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-02",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+    "prompt": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+    "cue": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "portanto"
+      },
+      {
+        "id": "b",
+        "text": "somente"
+      },
+      {
+        "id": "c",
+        "text": "sobre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+    "feedbackCorrect": "Essa palavra mostra o resultado de ser conhecido por Deus.",
+    "feedbackWrong": {
+      "b": "Somente destaca a eleição; a consequência vem depois.",
+      "c": "Sobre indica sobre quem cai a punição, não a ligação."
+    },
+    "hint": "Procure a palavra logo antes da punição.",
+    "learningObjective": "Reconhecer o marcador de resultado em 3:2.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-03",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Amós 3:2 se relaciona com a saída do Egito citada em 3:1?",
+    "prompt": "Como Amós 3:2 se relaciona com a saída do Egito citada em 3:1?",
+    "cue": "Como Amós 3:2 se relaciona com a saída do Egito citada em 3:1?",
+    "verseRef": "Amós 3:1–2",
+    "passageText": "Ouvi a palavra que o Senhor fala contra vós, filhos de Israel, contra toda a família que Ele fez subir da terra do Egito, dizendo: De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O passado apaga as iniquidades atuais"
+      },
+      {
+        "id": "b",
+        "text": "A eleição dispensa Israel de responder"
+      },
+      {
+        "id": "c",
+        "text": "A eleição aumenta a cobrança sobre Israel"
+      },
+      {
+        "id": "d",
+        "text": "O Egito torna Israel igual aos vizinhos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Tirado do Egito e conhecido, Israel é cobrado por isso.",
+    "feedbackWrong": {
+      "a": "As iniquidades atuais serão punidas, não apagadas.",
+      "b": "A resposta cobrada é justamente punir as iniquidades.",
+      "d": "O texto destaca Israel como único conhecido, não igual."
+    },
+    "hint": "Veja o efeito do portanto em 3:2.",
+    "learningObjective": "Relacionar êxodo, eleição e cobrança.",
+    "evidence": [
+      "Amós 3:1–2"
+    ]
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-04",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a palavra em Amós 3:1 a 2?",
+    "prompt": "Como avança a palavra em Amós 3:1 a 2?",
+    "cue": "Como avança a palavra em Amós 3:1 a 2?",
+    "verseRef": "Amós 3:1–2",
+    "passageText": "Ouvi a palavra que o Senhor fala contra vós, filhos de Israel, contra toda a família que Ele fez subir da terra do Egito, dizendo: De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus chama Israel a ouvir a palavra"
+      },
+      {
+        "id": "b",
+        "text": "Deus lembra que só o conheceu"
+      },
+      {
+        "id": "c",
+        "text": "Deus anuncia punição das iniquidades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ouvi a palavra que o Senhor fala contra vós",
+    "feedbackCorrect": "Chamado a ouvir, lembrança da eleição e anúncio de punição.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado a ouvir; a punição fecha."
+    },
+    "hint": "O chamado a ouvir abre o trecho.",
+    "learningObjective": "Compreender os movimentos de 3:1 a 2.",
+    "evidence": [
+      "Amós 3:1–2"
+    ]
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-05",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Amós 3:4, o leão só ruge na floresta quando tem o quê?",
+    "prompt": "Em Amós 3:4, o leão só ruge na floresta quando tem o quê?",
+    "cue": "Em Amós 3:4, o leão só ruge na floresta quando tem o quê?",
+    "verseRef": "Amós 3:4",
+    "passageText": "O leão rugirá na floresta sem que tenha presa? O filhote de leão levantará a sua voz do seu covil, se nada tiver apanhado?",
+    "template": "O leão rugirá na floresta sem que tenha ___? O filhote de leão levantará a sua voz do seu covil, se nada tiver apanhado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "presa"
+      },
+      {
+        "id": "b",
+        "text": "ave"
+      },
+      {
+        "id": "c",
+        "text": "armadilha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem que tenha presa",
+    "feedbackCorrect": "A imagem diz que todo rugido tem uma causa real.",
+    "feedbackWrong": {
+      "b": "Ave é a imagem do versículo seguinte, não desta.",
+      "c": "Armadilha é da ave em 3:5, não do leão aqui."
+    },
+    "hint": "Pense no motivo do rugido do leão.",
+    "learningObjective": "Compreender a lógica das imagens de 3:4.",
+    "evidence": [
+      "Amós 3:4"
+    ]
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-06",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Amós 3:2 a Deuteronômio 7:6?",
+    "prompt": "O que liga Amós 3:2 a Deuteronômio 7:6?",
+    "cue": "O que liga Amós 3:2 a Deuteronômio 7:6?",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 7:6",
+      "text": "Porque tu és um povo santo para o Senhor, teu Deus; o Senhor, teu Deus, te escolheu para que lhe fosses o seu povo especial dentre todos os povos que existem sobre a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo sem lei nem cobrança"
+      },
+      {
+        "id": "b",
+        "text": "Povo maior que os outros"
+      },
+      {
+        "id": "c",
+        "text": "Povo escolhido do Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Os dois textos chamam Israel de povo separado para Deus.",
+    "feedbackWrong": {
+      "a": "Escolhido, o povo recebe lei e cobrança, não dispensa.",
+      "b": "A escolha não vem de Israel ser maior que os outros."
+    },
+    "hint": "Veja como Deuteronômio nomeia Israel para Deus.",
+    "learningObjective": "Relacionar a eleição em Amós e Deuteronômio.",
+    "evidence": [
+      "Amós 3:2",
+      "Deuteronômio 7:6"
+    ]
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-01",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Amós 3:2 ensina que ser conhecido por Deus livra Israel de qualquer punição.",
+    "prompt": "Amós 3:2 ensina que ser conhecido por Deus livra Israel de qualquer punição.",
+    "cue": "Amós 3:2 ensina que ser conhecido por Deus livra Israel de qualquer punição.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "punirei todas as vossas iniquidades sobre vós",
+    "feedbackCorrect": "Ser conhecido aumenta a cobrança, não livra da punição.",
+    "feedbackWrong": {
+      "true": "O versículo anuncia punição justamente aos conhecidos."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Interpretar eleição como responsabilidade.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-02",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 3:5, toque o trecho que mostra que todo efeito tem uma causa.",
+    "prompt": "Em Amós 3:5, toque o trecho que mostra que todo efeito tem uma causa.",
+    "cue": "Em Amós 3:5, toque o trecho que mostra que todo efeito tem uma causa.",
+    "verseRef": "Amós 3:5",
+    "passageText": "Cairá a ave no laço da terra, se não houver armadilha para ela? Levantar-se-á o laço da terra, sem que tenha apanhado alguma coisa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "alguma coisa"
+      },
+      {
+        "id": "b",
+        "text": "no laço"
+      },
+      {
+        "id": "c",
+        "text": "da terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem que tenha apanhado alguma coisa",
+    "feedbackCorrect": "Nada é apanhado por acaso: a imagem liga causa e efeito.",
+    "feedbackWrong": {
+      "b": "Isso indica lugar; a causa apanhada vem no fim.",
+      "c": "Isso indica lugar; o que foi apanhado vem depois."
+    },
+    "hint": "Procure o fim da segunda pergunta do versículo.",
+    "learningObjective": "Sustentar no texto a lógica de causa e efeito.",
+    "evidence": [
+      "Amós 3:5"
+    ]
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-03",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Amós 3:2 sustenta sobre ser conhecido por Deus?",
+    "prompt": "Que leitura Amós 3:2 sustenta sobre ser conhecido por Deus?",
+    "cue": "Que leitura Amós 3:2 sustenta sobre ser conhecido por Deus?",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer é só Deus ter informações"
+      },
+      {
+        "id": "b",
+        "text": "Punição prova que não houve eleição"
+      },
+      {
+        "id": "c",
+        "text": "Eleição traz maior responsabilidade diante de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Eleição é privilégio sem nenhuma prestação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Conhecido de perto, o povo responde mais, não menos.",
+    "feedbackWrong": {
+      "a": "Conhecer aqui é relação única, não simples informação.",
+      "b": "A punição nasce da eleição, não a nega.",
+      "d": "Sem prestação contraria o portanto do versículo."
+    },
+    "hint": "Junte as duas metades ligadas pelo portanto.",
+    "learningObjective": "Escolher a leitura sustentada sobre eleição.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-04",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica da cobrança em Amós 3?",
+    "prompt": "Qual sequência revela a lógica da cobrança em Amós 3?",
+    "cue": "Qual sequência revela a lógica da cobrança em Amós 3?",
+    "verseRef": "Amós 3:3",
+    "passageText": "Andarão dois juntos, se não estiverem de acordo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus escolhe e conhece Israel"
+      },
+      {
+        "id": "b",
+        "text": "Israel responde com iniquidade"
+      },
+      {
+        "id": "c",
+        "text": "Deus cobra de quem ele conheceu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Andarão dois juntos, se não estiverem de acordo",
+    "feedbackCorrect": "Eleição, pecado do povo e cobrança de Deus, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela eleição; a cobrança é a conclusão."
+    },
+    "hint": "A cobrança fecha a lógica do versículo.",
+    "learningObjective": "Ver a lógica eleição, pecado e cobrança.",
+    "evidence": [
+      "Amós 3:2",
+      "Amós 3:3"
+    ]
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-05",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Amós 3:5, a ave só cai se houver o quê para ela na terra?",
+    "prompt": "Em Amós 3:5, a ave só cai se houver o quê para ela na terra?",
+    "cue": "Em Amós 3:5, a ave só cai se houver o quê para ela na terra?",
+    "verseRef": "Amós 3:5",
+    "passageText": "Cairá a ave no laço da terra, se não houver armadilha para ela? Levantar-se-á o laço da terra, sem que tenha apanhado alguma coisa?",
+    "template": "Cairá a ave no laço da terra, se não houver ___ para ela? Levantar-se-á o laço da terra, sem que tenha apanhado alguma coisa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "presa"
+      },
+      {
+        "id": "b",
+        "text": "armadilha"
+      },
+      {
+        "id": "c",
+        "text": "acordo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se não houver armadilha para ela",
+    "feedbackCorrect": "Sem causa preparada, não há queda: a imagem é lógica.",
+    "feedbackWrong": {
+      "a": "Isso é do leão em 3:4, não da ave aqui.",
+      "c": "Isso é da caminhada em 3:3, não desta imagem."
+    },
+    "hint": "É o instrumento escondido para a ave.",
+    "learningObjective": "Lembrar a imagem que fecha a lógica de Amós 3.",
+    "evidence": [
+      "Amós 3:5"
+    ]
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-06",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Amós 3:2 a Lucas 12:48?",
+    "prompt": "O que liga Amós 3:2 a Lucas 12:48?",
+    "cue": "O que liga Amós 3:2 a Lucas 12:48?",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós."
+    },
+    "passageB": {
+      "ref": "Lucas 12:48",
+      "text": "Mas aquele que não soube a vontade do seu senhor e cometeu atos dignos de reprovação, será flagelado com poucos açoites. Contudo, a quem muito foi dado, muito lhe será exigido; e a quem muito se confiou, muito mais será pedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleição sem responsabilidade"
+      },
+      {
+        "id": "b",
+        "text": "Muito dado, muito cobrado"
+      },
+      {
+        "id": "c",
+        "text": "Pouco dado, nada cobrado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+    "feedbackCorrect": "Jesus ensina o mesmo princípio: quem recebeu mais, responde mais.",
+    "feedbackWrong": {
+      "a": "Os dois textos ligam receber e responder, não separam.",
+      "c": "Israel recebeu muito; a cobrança acompanha o recebido."
+    },
+    "hint": "Veja a regra de Jesus sobre quem recebeu muito.",
+    "learningObjective": "Ligar eleição em Amós ao princípio de Jesus.",
+    "evidence": [
+      "Amós 3:2",
+      "Lucas 12:48"
+    ]
+  },
+  {
+    "id": "amos-sem-am-04-bem-01",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Amós 5:14, Deus manda buscar o bem e não o mal, para que o povo viva.",
+    "prompt": "Em Amós 5:14, Deus manda buscar o bem e não o mal, para que o povo viva.",
+    "cue": "Em Amós 5:14, Deus manda buscar o bem e não o mal, para que o povo viva.",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Busquem o bem e não o mal, para que vivam",
+    "feedbackCorrect": "Buscar o bem é o caminho de vida que Deus apresenta.",
+    "feedbackWrong": {
+      "false": "O versículo liga buscar o bem a viver diante de Deus."
+    },
+    "hint": "Veja o alvo de buscar o bem.",
+    "learningObjective": "Observar o chamado a buscar o bem.",
+    "evidence": [
+      "Amós 5:14"
+    ]
+  },
+  {
+    "id": "amos-sem-am-04-bem-02",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 5:15, toque onde o povo deve estabelecer o juízo.",
+    "prompt": "Em Amós 5:15, toque onde o povo deve estabelecer o juízo.",
+    "cue": "Em Amós 5:15, toque onde o povo deve estabelecer o juízo.",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "na porta"
+      },
+      {
+        "id": "b",
+        "text": "o mal"
+      },
+      {
+        "id": "c",
+        "text": "do remanescente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Na porta da cidade, onde as causas do povo eram julgadas.",
+    "feedbackWrong": {
+      "b": "O mal deve ser aborrecido, não é lugar de juízo.",
+      "c": "O remanescente recebe compaixão; o lugar é outro."
+    },
+    "hint": "Procure um lugar da cidade no versículo.",
+    "learningObjective": "Identificar a porta como lugar do juízo.",
+    "evidence": [
+      "Amós 5:15"
+    ]
+  },
+  {
+    "id": "amos-sem-am-04-bem-03",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Amós 5:12, o que o povo faz com os necessitados à porta?",
+    "prompt": "Segundo Amós 5:12, o que o povo faz com os necessitados à porta?",
+    "cue": "Segundo Amós 5:12, o que o povo faz com os necessitados à porta?",
+    "verseRef": "Amós 5:12",
+    "passageText": "Porque sei que são muitas as vossas transgressões e graves os vossos pecados; afligis o justo, aceitais suborno e rejeitais os necessitados à porta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defende a causa deles"
+      },
+      {
+        "id": "b",
+        "text": "Reparte trigo com eles"
+      },
+      {
+        "id": "c",
+        "text": "Rejeita os necessitados"
+      },
+      {
+        "id": "d",
+        "text": "Ouve o clamor deles"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "rejeitais os necessitados à porta",
+    "feedbackCorrect": "Na porta, onde devia haver justiça, o necessitado é rejeitado.",
+    "feedbackWrong": {
+      "a": "Defender seria o justo; o texto denuncia rejeição.",
+      "b": "Em vez de repartir, exigem tributos dos pobres.",
+      "d": "Ouvir seria compaixão; o texto mostra descaso."
+    },
+    "hint": "Leia o fim do versículo 12.",
+    "learningObjective": "Observar a injustiça na porta.",
+    "evidence": [
+      "Amós 5:12"
+    ]
+  },
+  {
+    "id": "amos-sem-am-04-bem-04",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 5:14 na ordem do texto.",
+    "prompt": "Monte Amós 5:14 na ordem do texto.",
+    "cue": "Monte Amós 5:14 na ordem do texto.",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Busquem o bem e não o mal"
+      },
+      {
+        "id": "b",
+        "text": "para que vivam"
+      },
+      {
+        "id": "c",
+        "text": "o Senhor, o Deus dos Exércitos, estará convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Busquem o bem e não o mal, para que vivam",
+    "feedbackCorrect": "Buscar o bem, viver e ter Deus presente: nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela busca do bem; a presença fecha."
+    },
+    "hint": "O versículo começa com um imperativo.",
+    "learningObjective": "Reconhecer a sequência de Amós 5:14.",
+    "evidence": [
+      "Amós 5:14"
+    ]
+  },
+  {
+    "id": "amos-sem-am-04-bem-05",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Amós 5:14, buscar o bem é o caminho para que o povo faça o quê?",
+    "prompt": "Em Amós 5:14, buscar o bem é o caminho para que o povo faça o quê?",
+    "cue": "Em Amós 5:14, buscar o bem é o caminho para que o povo faça o quê?",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "template": "Busquem o bem e não o mal, para que ___; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "afirmam"
+      },
+      {
+        "id": "b",
+        "text": "vivam"
+      },
+      {
+        "id": "c",
+        "text": "oprimem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que vivam",
+    "feedbackCorrect": "A vida diante de Deus passa por buscar o bem.",
+    "feedbackWrong": {
+      "a": "Afirmar é o que o povo diz de si no fim do versículo.",
+      "c": "Oprimir é o pecado denunciado, não o alvo do bem."
+    },
+    "hint": "É o resultado prometido no versículo.",
+    "learningObjective": "Lembrar o alvo de buscar o bem.",
+    "evidence": [
+      "Amós 5:14"
+    ]
+  },
+  {
+    "id": "amos-sem-am-04-bem-06",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 5:15 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:15 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:15 comunica que se liga a este contexto?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "passageA": {
+      "ref": "Amós 5:15",
+      "text": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pobre precisa encontrar justiça onde a cidade decide suas causas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Suborno na porta"
+      },
+      {
+        "id": "b",
+        "text": "Juízo na porta"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio na porta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "A porta deve voltar a ser lugar de justiça para o pobre.",
+    "feedbackWrong": {
+      "a": "Suborno é a injustiça denunciada em 5:12.",
+      "c": "Silêncio é fuga; Deus pede decisão justa."
+    },
+    "hint": "Veja o que deve ser estabelecido no versículo.",
+    "learningObjective": "Ligar 5:15 à justiça onde a cidade decide.",
+    "evidence": [
+      "Amós 5:15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-04-bem-01",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Amós 5:14 a 15, buscar o bem significa apenas frequentar mais o culto do povo.",
+    "prompt": "Em Amós 5:14 a 15, buscar o bem significa apenas frequentar mais o culto do povo.",
+    "cue": "Em Amós 5:14 a 15, buscar o bem significa apenas frequentar mais o culto do povo.",
+    "verseRef": "Amós 5:14–15",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam. Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Buscar o bem inclui odiar o mal e julgar com justiça.",
+    "feedbackWrong": {
+      "true": "O texto sai do culto e vai à porta da cidade."
+    },
+    "hint": "Veja onde o bem deve aparecer.",
+    "learningObjective": "Compreender buscar o bem como prática.",
+    "evidence": [
+      "Amós 5:14–15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-04-bem-02",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 5:14, toque a palavra que mostra o alvo de buscar o bem.",
+    "prompt": "Em Amós 5:14, toque a palavra que mostra o alvo de buscar o bem.",
+    "cue": "Em Amós 5:14, toque a palavra que mostra o alvo de buscar o bem.",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "como"
+      },
+      {
+        "id": "b",
+        "text": "para"
+      },
+      {
+        "id": "c",
+        "text": "assim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que vivam",
+    "feedbackCorrect": "Essa palavrinha liga a busca do bem ao viver do povo.",
+    "feedbackWrong": {
+      "a": "Como compara com o que o povo afirma, não marca alvo.",
+      "c": "Assim introduz a presença de Deus, não o alvo inicial."
+    },
+    "hint": "Procure a palavra antes de vivam.",
+    "learningObjective": "Reconhecer o marcador de propósito em 5:14.",
+    "evidence": [
+      "Amós 5:14"
+    ]
+  },
+  {
+    "id": "amos-cam-am-04-bem-03",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Amós 5:11 se relaciona com as casas e vinhas do povo rico?",
+    "prompt": "Como Amós 5:11 se relaciona com as casas e vinhas do povo rico?",
+    "cue": "Como Amós 5:11 se relaciona com as casas e vinhas do povo rico?",
+    "verseRef": "Amós 5:11",
+    "passageText": "Portanto, visto que vocês oprimem os pobres e exigem deles tributos de trigo, edificaram casas de pedra lavrada, mas não habitarão nelas; plantaram vinhas desejáveis, mas não beberão do seu vinho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem oprime o pobre perde o fruto do luxo"
+      },
+      {
+        "id": "b",
+        "text": "Casas de pedra provam o favor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "O pobre deve pagar mais tributos ao rico"
+      },
+      {
+        "id": "d",
+        "text": "Quem planta vinhas sempre beberá delas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vocês oprimem os pobres",
+    "feedbackCorrect": "Casas e vinhas feitas sobre opressão não serão aproveitadas.",
+    "feedbackWrong": {
+      "b": "As casas nascem da opressão, não provam favor.",
+      "c": "Exigir tributo do pobre é o pecado, não a solução.",
+      "d": "O texto diz que não beberão do vinho plantado."
+    },
+    "hint": "Veja o que não acontecerá com casas e vinhas.",
+    "learningObjective": "Relacionar opressão e perda do luxo.",
+    "evidence": [
+      "Amós 5:11"
+    ]
+  },
+  {
+    "id": "amos-cam-am-04-bem-04",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os mandamentos de Amós 5:14 a 15?",
+    "prompt": "Como se encadeiam os mandamentos de Amós 5:14 a 15?",
+    "cue": "Como se encadeiam os mandamentos de Amós 5:14 a 15?",
+    "verseRef": "Amós 5:14–15",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam. Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo deve buscar o bem"
+      },
+      {
+        "id": "b",
+        "text": "O povo deve amar o bem"
+      },
+      {
+        "id": "c",
+        "text": "O juízo deve estar na porta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Busquem o bem e não o mal, para que vivam",
+    "feedbackCorrect": "Buscar, amar o bem e julgar justo: um só caminho.",
+    "feedbackWrong": {
+      "default": "Comece pela busca de 5:14; a porta fecha em 5:15."
+    },
+    "hint": "A porta da cidade é o último passo.",
+    "learningObjective": "Compreender a sequência dos mandamentos.",
+    "evidence": [
+      "Amós 5:14–15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-04-bem-05",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Amós 5:15, o que talvez o Senhor tenha do remanescente de José?",
+    "prompt": "Em Amós 5:15, o que talvez o Senhor tenha do remanescente de José?",
+    "cue": "Em Amós 5:15, o que talvez o Senhor tenha do remanescente de José?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "template": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha ___ do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "compaixão"
+      },
+      {
+        "id": "b",
+        "text": "suborno"
+      },
+      {
+        "id": "c",
+        "text": "tributos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tenha compaixão do remanescente de José",
+    "feedbackCorrect": "Com juízo na porta, abre-se esperança de misericórdia.",
+    "feedbackWrong": {
+      "b": "Suborno é o pecado de 5:12, não dom de Deus.",
+      "c": "Tributos são a cobrança opressora de 5:11."
+    },
+    "hint": "É o que Deus pode ter pelo remanescente.",
+    "learningObjective": "Compreender a esperança ligada ao juízo justo.",
+    "evidence": [
+      "Amós 5:15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-04-bem-06",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Amós 5:15 a Isaías 1:17?",
+    "prompt": "O que liga Amós 5:15 a Isaías 1:17?",
+    "cue": "O que liga Amós 5:15 a Isaías 1:17?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "passageA": {
+      "ref": "Amós 5:15",
+      "text": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José."
+    },
+    "passageB": {
+      "ref": "Isaías 1:17",
+      "text": "Aprendam a fazer o bem; busquem a justiça; repreendam o opressor; defendam o direito do órfão; pleiteiem a causa das viúvas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar justiça na prática"
+      },
+      {
+        "id": "b",
+        "text": "Fechar os olhos ao pobre"
+      },
+      {
+        "id": "c",
+        "text": "Julgar sempre a favor do rico"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Isaías e Amós chamam a praticar a justiça pelo oprimido.",
+    "feedbackWrong": {
+      "b": "Os dois textos mandam abrir os olhos ao oprimido.",
+      "c": "A justiça pedida defende quem não tem força."
+    },
+    "hint": "Veja o verbo que Isaías usa para a justiça.",
+    "learningObjective": "Relacionar Amós e Isaías sobre justiça prática.",
+    "evidence": [
+      "Amós 5:15",
+      "Isaías 1:17"
+    ]
+  },
+  {
+    "id": "amos-pro-am-04-bem-01",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Amós 5:18 ensina que o Dia do Senhor será luz e festa para quem oprime os pobres.",
+    "prompt": "Amós 5:18 ensina que o Dia do Senhor será luz e festa para quem oprime os pobres.",
+    "cue": "Amós 5:18 ensina que o Dia do Senhor será luz e festa para quem oprime os pobres.",
+    "verseRef": "Amós 5:18",
+    "passageText": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de trevas e não de luz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Será dia de trevas e não de luz",
+    "feedbackCorrect": "Para a injustiça segura de si, o Dia será trevas.",
+    "feedbackWrong": {
+      "true": "O texto chama esse Dia de trevas, não de luz."
+    },
+    "hint": "Leia o fim do versículo 18.",
+    "learningObjective": "Interpretar o Dia do Senhor sem falsa segurança.",
+    "evidence": [
+      "Amós 5:18"
+    ]
+  },
+  {
+    "id": "amos-pro-am-04-bem-02",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 5:18, toque a palavra que mostra como será o Dia para esse povo.",
+    "prompt": "Em Amós 5:18, toque a palavra que mostra como será o Dia para esse povo.",
+    "cue": "Em Amós 5:18, toque a palavra que mostra como será o Dia para esse povo.",
+    "verseRef": "Amós 5:18",
+    "passageText": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de trevas e não de luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "a vocês"
+      },
+      {
+        "id": "c",
+        "text": "Dia do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Será dia de trevas e não de luz",
+    "feedbackCorrect": "Uma só palavra desfaz a festa imaginada: será escuridão.",
+    "feedbackWrong": {
+      "b": "Isso indica o destinatário; o caráter do Dia é outro.",
+      "c": "Isso nomeia o Dia; como ele será vem depois."
+    },
+    "hint": "Procure o contrário de luz no versículo.",
+    "learningObjective": "Sustentar no texto o Dia como trevas.",
+    "evidence": [
+      "Amós 5:18"
+    ]
+  },
+  {
+    "id": "amos-pro-am-04-bem-03",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Amós 5:18 sustenta sobre desejar o Dia do Senhor?",
+    "prompt": "Que leitura Amós 5:18 sustenta sobre desejar o Dia do Senhor?",
+    "cue": "Que leitura Amós 5:18 sustenta sobre desejar o Dia do Senhor?",
+    "verseRef": "Amós 5:18",
+    "passageText": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de trevas e não de luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejar o Dia sem justiça é engano"
+      },
+      {
+        "id": "b",
+        "text": "Desejar o Dia substitui buscar o bem"
+      },
+      {
+        "id": "c",
+        "text": "O Dia premiará quem oprime o pobre"
+      },
+      {
+        "id": "d",
+        "text": "O Dia será luz para todo Israel sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ai daqueles que desejam o Dia do Senhor",
+    "feedbackCorrect": "Sem justiça, desejar o Dia é desejar o próprio juízo.",
+    "feedbackWrong": {
+      "b": "O desejo não substitui a busca prática do bem.",
+      "c": "O opressor encontrará trevas, não prêmio algum.",
+      "d": "O texto limita: para esse povo, será trevas."
+    },
+    "hint": "Compare o desejo do povo com o anúncio de Deus.",
+    "learningObjective": "Escolher a leitura sustentada sobre o Dia.",
+    "evidence": [
+      "Amós 5:18"
+    ]
+  },
+  {
+    "id": "amos-pro-am-04-bem-04",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica de Amós 5:11 a 18?",
+    "prompt": "Qual sequência revela a lógica de Amós 5:11 a 18?",
+    "cue": "Qual sequência revela a lógica de Amós 5:11 a 18?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus denuncia a opressão do pobre"
+      },
+      {
+        "id": "b",
+        "text": "Deus chama o povo a buscar o bem"
+      },
+      {
+        "id": "c",
+        "text": "Deus anuncia trevas a quem recusa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Denúncia, chamado ao bem e anúncio de trevas.",
+    "feedbackWrong": {
+      "default": "Comece pela denúncia de 5:11; as trevas fecham."
+    },
+    "hint": "As trevas de 5:18 são a conclusão.",
+    "learningObjective": "Ver a lógica denúncia, chamado e juízo.",
+    "evidence": [
+      "Amós 5:11",
+      "Amós 5:14",
+      "Amós 5:18"
+    ]
+  },
+  {
+    "id": "amos-pro-am-04-bem-05",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Amós 5:15, Deus pode ter compaixão de quem sobra de José?",
+    "prompt": "Em Amós 5:15, Deus pode ter compaixão de quem sobra de José?",
+    "cue": "Em Amós 5:15, Deus pode ter compaixão de quem sobra de José?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "template": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do ___ de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "remanescente"
+      },
+      {
+        "id": "b",
+        "text": "necessitados"
+      },
+      {
+        "id": "c",
+        "text": "prudente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tenha compaixão do remanescente de José",
+    "feedbackCorrect": "Mesmo sob juízo, Deus deixa aberta a misericórdia.",
+    "feedbackWrong": {
+      "b": "Necessitados são os defendidos na porta, não os que sobram.",
+      "c": "Prudente é quem se cala em 5:13, não o restante aqui."
+    },
+    "hint": "É a palavra para quem sobra do povo.",
+    "learningObjective": "Lembrar a esperança do restante poupado.",
+    "evidence": [
+      "Amós 5:15"
+    ]
+  },
+  {
+    "id": "amos-pro-am-04-bem-06",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Amós 5:14 a Miquéias 6:8?",
+    "prompt": "O que liga Amós 5:14 a Miquéias 6:8?",
+    "cue": "O que liga Amós 5:14 a Miquéias 6:8?",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "passageA": {
+      "ref": "Amós 5:14",
+      "text": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam."
+    },
+    "passageB": {
+      "ref": "Miquéias 6:8",
+      "text": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar fama e segurança"
+      },
+      {
+        "id": "b",
+        "text": "Viver sem olhar o próximo"
+      },
+      {
+        "id": "c",
+        "text": "Praticar justiça e misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Busquem o bem e não o mal",
+    "feedbackCorrect": "Buscar o bem, em Miquéias, é justiça com misericórdia.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos promete fama a quem busca o bem.",
+      "b": "Os dois textos voltam o olhar para o próximo."
+    },
+    "hint": "Veja o que Miquéias diz que Deus exige.",
+    "learningObjective": "Ligar buscar o bem à justiça com misericórdia.",
+    "evidence": [
+      "Amós 5:14",
+      "Miquéias 6:8"
+    ]
+  },
+  {
+    "id": "amos-sem-am-05-pastor-01",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Amós 7:14, Amós diz que não é profeta nem filho de profeta.",
+    "prompt": "Em Amós 7:14, Amós diz que não é profeta nem filho de profeta.",
+    "cue": "Em Amós 7:14, Amós diz que não é profeta nem filho de profeta.",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Não sou profeta, nem filho de profeta",
+    "feedbackCorrect": "Amós não herdou o ofício: ele trabalhava no campo.",
+    "feedbackWrong": {
+      "false": "Ele nega os dois títulos: profeta e filho de profeta."
+    },
+    "hint": "Leia a primeira frase da resposta de Amós.",
+    "learningObjective": "Observar que Amós não era profeta de origem.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-sem-am-05-pastor-02",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 7:14, toque o trabalho de Amós com o gado.",
+    "prompt": "Em Amós 7:14, toque o trabalho de Amós com o gado.",
+    "cue": "Em Amós 7:14, toque o trabalho de Amós com o gado.",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "boieiro"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sou apenas um boieiro",
+    "feedbackCorrect": "Antes de profetizar, Amós cuidava de gado no campo.",
+    "feedbackWrong": {
+      "b": "Esse é o título que Amós diz não ter de origem.",
+      "c": "Filho aparece no título negado, não no trabalho dele."
+    },
+    "hint": "Procure o ofício depois de apenas um.",
+    "learningObjective": "Identificar o trabalho de Amós no campo.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-sem-am-05-pastor-03",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Amós 7:12, quem manda Amós fugir de Betel?",
+    "prompt": "Segundo Amós 7:12, quem manda Amós fugir de Betel?",
+    "cue": "Segundo Amós 7:12, quem manda Amós fugir de Betel?",
+    "verseRef": "Amós 7:12",
+    "passageText": "Então, Amazias disse a Amós: Vá-se, ó vidente, fuja para a terra de Judá; lá coma o seu pão e lá profetize.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeroboão"
+      },
+      {
+        "id": "b",
+        "text": "O próprio Amós"
+      },
+      {
+        "id": "c",
+        "text": "Isaque"
+      },
+      {
+        "id": "d",
+        "text": "Amazias"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Então, Amazias disse a Amós",
+    "feedbackCorrect": "Amazias, ligado ao santuário, tenta expulsar o profeta.",
+    "feedbackWrong": {
+      "a": "Jeroboão é citado na profecia, não quem expulsa aqui.",
+      "b": "Amós é quem recebe a ordem de fugir, não quem a dá.",
+      "c": "Isaque aparece depois, na casa citada em 7:16."
+    },
+    "hint": "Veja quem fala no início do versículo.",
+    "learningObjective": "Observar quem expulsa Amós.",
+    "evidence": [
+      "Amós 7:12"
+    ]
+  },
+  {
+    "id": "amos-sem-am-05-pastor-04",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 7:15 na ordem do texto.",
+    "prompt": "Monte Amós 7:15 na ordem do texto.",
+    "cue": "Monte Amós 7:15 na ordem do texto.",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o Senhor me tirou de trás do gado"
+      },
+      {
+        "id": "b",
+        "text": "e me disse"
+      },
+      {
+        "id": "c",
+        "text": "Vai, e profetiza ao meu povo de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "Tirado do gado, Amós recebe a ordem de profetizar.",
+    "feedbackWrong": {
+      "default": "Comece por ser tirado do gado; o envio fecha."
+    },
+    "hint": "O versículo começa com o Senhor agindo.",
+    "learningObjective": "Reconhecer a sequência de Amós 7:15.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-sem-am-05-pastor-05",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Amós 7:14, além de boieiro, Amós colhia fruto de quais árvores?",
+    "prompt": "Em Amós 7:14, além de boieiro, Amós colhia fruto de quais árvores?",
+    "cue": "Em Amós 7:14, além de boieiro, Amós colhia fruto de quais árvores?",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "template": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de ___.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "oliveiras"
+      },
+      {
+        "id": "b",
+        "text": "sicômoros"
+      },
+      {
+        "id": "c",
+        "text": "vinhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "colhedor de sicômoros",
+    "feedbackCorrect": "Trabalho simples no campo, antes do chamado de Deus.",
+    "feedbackWrong": {
+      "a": "Oliveiras não são citadas na resposta de Amós.",
+      "c": "Vinhas aparecem em outras cenas de Amós, não aqui."
+    },
+    "hint": "É a última palavra da resposta dele.",
+    "learningObjective": "Lembrar o segundo trabalho de Amós.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-sem-am-05-pastor-06",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 7:15 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 7:15 comunica que se liga a este contexto?",
+    "cue": "O que Amós 7:15 comunica que se liga a este contexto?",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "passageA": {
+      "ref": "Amós 7:15",
+      "text": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Amós não se ofereceu para profetizar; o Senhor o tirou do trabalho no campo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fama buscada pelo profeta"
+      },
+      {
+        "id": "b",
+        "text": "Chamado que vem de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Título herdado do pai"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "A iniciativa é do Senhor: ele tira e ele envia.",
+    "feedbackWrong": {
+      "a": "Nada aqui é busca de fama: Amós é tirado do campo.",
+      "c": "Amós nega ter herdado título de profeta."
+    },
+    "hint": "Veja quem age primeiro no versículo.",
+    "learningObjective": "Ligar 7:15 ao chamado que vem de Deus.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-05-pastor-01",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Amós 7:12 a 13, Amazias convida Amós a continuar profetizando em Betel.",
+    "prompt": "Em Amós 7:12 a 13, Amazias convida Amós a continuar profetizando em Betel.",
+    "cue": "Em Amós 7:12 a 13, Amazias convida Amós a continuar profetizando em Betel.",
+    "verseRef": "Amós 7:12–13",
+    "passageText": "Então, Amazias disse a Amós: Vá-se, ó vidente, fuja para a terra de Judá; lá coma o seu pão e lá profetize. Mas em Betel não profetizarás mais, pois é o santuário do rei e o templo do reino.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas em Betel não profetizarás mais",
+    "feedbackCorrect": "Amazias expulsa Amós: em Betel, ele não profetizará mais.",
+    "feedbackWrong": {
+      "true": "A fala é de expulsão, não de convite para ficar."
+    },
+    "hint": "Leia a ordem dada a Amós em Betel.",
+    "learningObjective": "Compreender a expulsão de Amós.",
+    "evidence": [
+      "Amós 7:12–13"
+    ]
+  },
+  {
+    "id": "amos-cam-am-05-pastor-02",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 7:15, toque a palavra que vira a cena depois da expulsão.",
+    "prompt": "Em Amós 7:15, toque a palavra que vira a cena depois da expulsão.",
+    "cue": "Em Amós 7:15, toque a palavra que vira a cena depois da expulsão.",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu"
+      },
+      {
+        "id": "b",
+        "text": "Mas"
+      },
+      {
+        "id": "c",
+        "text": "Vai"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "Contra a expulsão humana, entra a ação do Senhor.",
+    "feedbackWrong": {
+      "a": "Meu indica o povo de Deus, não marca a virada.",
+      "c": "Vai é a ordem final de Deus, não a virada da cena."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 7:15.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-05-pastor-03",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a origem de Amós se relaciona com o envio dele a Israel?",
+    "prompt": "Como a origem de Amós se relaciona com o envio dele a Israel?",
+    "cue": "Como a origem de Amós se relaciona com o envio dele a Israel?",
+    "verseRef": "Amós 7:14–15",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\" Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A origem simples torna o envio impossível"
+      },
+      {
+        "id": "b",
+        "text": "O envio depende do santuário do rei"
+      },
+      {
+        "id": "c",
+        "text": "O envio é prêmio pela fama de Amós"
+      },
+      {
+        "id": "d",
+        "text": "A origem simples não impede o envio de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Mas o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "Boieiro sem título, Amós é enviado pelo próprio Senhor.",
+    "feedbackWrong": {
+      "a": "O texto mostra o contrário: Deus envia o simples.",
+      "b": "O santuário do rei expulsa; quem envia é o Senhor.",
+      "c": "Não há fama anterior: há gado e sicômoros."
+    },
+    "hint": "Junte o trabalho de 7:14 com o envio de 7:15.",
+    "learningObjective": "Relacionar origem simples e envio divino.",
+    "evidence": [
+      "Amós 7:14–15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-05-pastor-04",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a resposta de Amós em 7:14 a 15?",
+    "prompt": "Como avança a resposta de Amós em 7:14 a 15?",
+    "cue": "Como avança a resposta de Amós em 7:14 a 15?",
+    "verseRef": "Amós 7:14–15",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\" Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amós nega título de profeta"
+      },
+      {
+        "id": "b",
+        "text": "Amós lembra o trabalho no campo"
+      },
+      {
+        "id": "c",
+        "text": "Amós afirma o envio do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não sou profeta, nem filho de profeta",
+    "feedbackCorrect": "Sem título, vindo do campo, enviado pelo Senhor.",
+    "feedbackWrong": {
+      "default": "Comece pela negação do título; o envio fecha."
+    },
+    "hint": "O envio é a última parte da resposta.",
+    "learningObjective": "Compreender os movimentos da resposta de Amós.",
+    "evidence": [
+      "Amós 7:14–15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-05-pastor-05",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Amós 7:15, o que o Senhor fez com Amós em relação ao gado?",
+    "prompt": "Em Amós 7:15, o que o Senhor fez com Amós em relação ao gado?",
+    "cue": "Em Amós 7:15, o que o Senhor fez com Amós em relação ao gado?",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "template": "Mas o Senhor me ___ de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tirou"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "chamou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "Deus interrompe a vida no campo e dá nova missão.",
+    "feedbackWrong": {
+      "b": "Dizer vem depois; antes, Deus age tirando Amós.",
+      "c": "A palavra usada é outra, ligada a sair do lugar."
+    },
+    "hint": "É a ação de Deus antes da fala dele.",
+    "learningObjective": "Compreender a ação de Deus no chamado.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-cam-am-05-pastor-06",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Amós 7:15 a Jeremias 1:7?",
+    "prompt": "O que liga Amós 7:15 a Jeremias 1:7?",
+    "cue": "O que liga Amós 7:15 a Jeremias 1:7?",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "passageA": {
+      "ref": "Amós 7:15",
+      "text": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel."
+    },
+    "passageB": {
+      "ref": "Jeremias 1:7",
+      "text": "Mas o Senhor me disse: Não digas que és apenas uma criança; porque aonde eu te enviar, irás; e tudo o que eu te mandar, falarás."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor envia quem chama"
+      },
+      {
+        "id": "b",
+        "text": "Rei nomeia o profeta"
+      },
+      {
+        "id": "c",
+        "text": "Profeta escolhe a si mesmo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Vai, e profetiza ao meu povo de Israel",
+    "feedbackCorrect": "Como Jeremias, Amós fala porque o Senhor o envia.",
+    "feedbackWrong": {
+      "b": "O rei, aqui, expulsa; quem nomeia é o Senhor.",
+      "c": "Nenhum dos dois se escolhe: Deus chama e manda."
+    },
+    "hint": "Veja quem manda nos dois textos.",
+    "learningObjective": "Relacionar o envio de Amós e Jeremias.",
+    "evidence": [
+      "Amós 7:15",
+      "Jeremias 1:7"
+    ]
+  },
+  {
+    "id": "amos-pro-am-05-pastor-01",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Amós 7:14 a 15 mostra que a autoridade de Amós vem do Senhor que o tirou do gado.",
+    "prompt": "Amós 7:14 a 15 mostra que a autoridade de Amós vem do Senhor que o tirou do gado.",
+    "cue": "Amós 7:14 a 15 mostra que a autoridade de Amós vem do Senhor que o tirou do gado.",
+    "verseRef": "Amós 7:14–15",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\" Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "Sem linhagem, a autoridade dele é o envio do Senhor.",
+    "feedbackWrong": {
+      "false": "A autoridade não é herança: é Deus quem tira e envia."
+    },
+    "hint": "Veja de quem vem a ordem de profetizar.",
+    "learningObjective": "Interpretar a fonte da autoridade de Amós.",
+    "evidence": [
+      "Amós 7:14–15"
+    ]
+  },
+  {
+    "id": "amos-pro-am-05-pastor-02",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 7:15, toque o trecho que mostra a ação do Senhor sobre Amós.",
+    "prompt": "Em Amós 7:15, toque o trecho que mostra a ação do Senhor sobre Amós.",
+    "cue": "Em Amós 7:15, toque o trecho que mostra a ação do Senhor sobre Amós.",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "me tirou"
+      },
+      {
+        "id": "b",
+        "text": "trás do gado"
+      },
+      {
+        "id": "c",
+        "text": "meu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "O Senhor age primeiro: ele é quem tira Amós do campo.",
+    "feedbackWrong": {
+      "b": "Isso diz de onde ele saiu; a ação vem antes.",
+      "c": "Isso diz o destino do envio, não a ação sobre Amós."
+    },
+    "hint": "Procure o verbo ligado ao Senhor.",
+    "learningObjective": "Sustentar no texto a iniciativa de Deus.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-pro-am-05-pastor-03",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Amós 7:14 a 15 sustenta sobre quem Deus chama?",
+    "prompt": "Que leitura Amós 7:14 a 15 sustenta sobre quem Deus chama?",
+    "cue": "Que leitura Amós 7:14 a 15 sustenta sobre quem Deus chama?",
+    "verseRef": "Amós 7:14–15",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\" Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Origem humilde anula a palavra"
+      },
+      {
+        "id": "b",
+        "text": "Deus chama quem não se candidatou"
+      },
+      {
+        "id": "c",
+        "text": "Só filhos de profetas podem falar"
+      },
+      {
+        "id": "d",
+        "text": "O santuário do rei manda em Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sou apenas um boieiro e colhedor de sicômoros",
+    "feedbackCorrect": "Deus tira do campo quem nunca se candidatou a profeta.",
+    "feedbackWrong": {
+      "a": "A origem humilde é o ponto de partida, não anulação.",
+      "c": "Amós não é filho de profeta, e Deus o envia.",
+      "d": "Betel expulsa, mas o envio do Senhor permanece."
+    },
+    "hint": "Junte a negação do título com o envio.",
+    "learningObjective": "Escolher a leitura sustentada sobre o chamado.",
+    "evidence": [
+      "Amós 7:14–15"
+    ]
+  },
+  {
+    "id": "amos-pro-am-05-pastor-04",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do chamado de Amós?",
+    "prompt": "Qual sequência revela o caminho do chamado de Amós?",
+    "cue": "Qual sequência revela o caminho do chamado de Amós?",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amós trabalha atrás do gado"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor o tira e o envia"
+      },
+      {
+        "id": "c",
+        "text": "Amós fala mesmo expulso de Betel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Vai, e profetiza ao meu povo de Israel",
+    "feedbackCorrect": "Do campo ao envio, e do envio à palavra corajosa.",
+    "feedbackWrong": {
+      "default": "Comece pelo campo; falar expulso é a conclusão."
+    },
+    "hint": "Betel, onde ele é expulso, vem no fim.",
+    "learningObjective": "Ver o caminho campo, envio e coragem.",
+    "evidence": [
+      "Amós 7:12",
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-pro-am-05-pastor-05",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Amós 7:15, qual é a ordem final do Senhor a Amós sobre Israel?",
+    "prompt": "Em Amós 7:15, qual é a ordem final do Senhor a Amós sobre Israel?",
+    "cue": "Em Amós 7:15, qual é a ordem final do Senhor a Amós sobre Israel?",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "template": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e ___ ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coma"
+      },
+      {
+        "id": "b",
+        "text": "profetiza"
+      },
+      {
+        "id": "c",
+        "text": "fuja"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Vai, e profetiza ao meu povo de Israel",
+    "feedbackCorrect": "A missão dada por Deus é falar ao seu povo.",
+    "feedbackWrong": {
+      "a": "Comer o pão em Judá é a sugestão de Amazias.",
+      "c": "Fugir é a ordem de Amazias, não a do Senhor."
+    },
+    "hint": "É a palavra que define a missão dele.",
+    "learningObjective": "Lembrar a ordem que define a missão.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-pro-am-05-pastor-06",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Amós 7:14 a 1 Coríntios 1:27?",
+    "prompt": "O que liga Amós 7:14 a 1 Coríntios 1:27?",
+    "cue": "O que liga Amós 7:14 a 1 Coríntios 1:27?",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "passageA": {
+      "ref": "Amós 7:14",
+      "text": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\""
+    },
+    "passageB": {
+      "ref": "1 Coríntios 1:27",
+      "text": "Deus, ao contrário, escolheu as coisas loucas deste mundo para envergonhar os sábios e as coisas fracas deste mundo para envergonhar as fortes;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Título garante o chamado"
+      },
+      {
+        "id": "b",
+        "text": "Deus escolhe os simples"
+      },
+      {
+        "id": "c",
+        "text": "Deus busca os famosos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sou apenas um boieiro e colhedor de sicômoros",
+    "feedbackCorrect": "Paulo e Amós mostram Deus agindo por quem é simples.",
+    "feedbackWrong": {
+      "a": "Amós não tem título herdado, e Deus o chama.",
+      "c": "Amós não tinha fama: tinha gado e sicômoros."
+    },
+    "hint": "Veja quem Paulo diz que Deus escolhe.",
+    "learningObjective": "Ligar Amós ao Deus que escolhe os simples.",
+    "evidence": [
+      "Amós 7:14",
+      "1 Coríntios 1:27"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-01",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Amós 1:2, o Senhor rugirá de Sião e fará ouvir a sua voz de Jerusalém.",
+    "prompt": "Em Amós 1:2, o Senhor rugirá de Sião e fará ouvir a sua voz de Jerusalém.",
+    "cue": "Em Amós 1:2, o Senhor rugirá de Sião e fará ouvir a sua voz de Jerusalém.",
+    "verseRef": "Amós 1:2",
+    "passageText": "E disse: O Senhor rugirá de Sião e de Jerusalém fará ouvir a sua voz; os pastores lamentarão, e se secará o cume do Carmelo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor rugirá de Sião",
+    "feedbackCorrect": "O rugido vem de Sião: é o próprio Senhor quem fala.",
+    "feedbackWrong": {
+      "false": "Releia Amós 1:2: o Senhor rugirá de Sião."
+    },
+    "hint": "Veja de onde vem a voz.",
+    "learningObjective": "Observar que o Senhor fala de Sião.",
+    "evidence": [
+      "Amós 1:2"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-02",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 1:2, toque quem rugirá de Sião.",
+    "prompt": "Em Amós 1:2, toque quem rugirá de Sião.",
+    "cue": "Em Amós 1:2, toque quem rugirá de Sião.",
+    "verseRef": "Amós 1:2",
+    "passageText": "E disse: O Senhor rugirá de Sião e de Jerusalém fará ouvir a sua voz; os pastores lamentarão, e se secará o cume do Carmelo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o cume"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor"
+      },
+      {
+        "id": "c",
+        "text": "os pastores"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor rugirá de Sião",
+    "feedbackCorrect": "Quem ruge é o Senhor, falando de Sião e de Jerusalém.",
+    "feedbackWrong": {
+      "a": "O cume do Carmelo seca; quem ruge é outro.",
+      "c": "Os pastores lamentam; quem ruge é outro."
+    },
+    "hint": "Procure quem faz a ação no início.",
+    "learningObjective": "Identificar o Senhor como quem ruge.",
+    "evidence": [
+      "Amós 1:2"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-03",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Amós 5:21, o que Deus diz das festas do povo?",
+    "prompt": "Segundo Amós 5:21, o que Deus diz das festas do povo?",
+    "cue": "Segundo Amós 5:21, o que Deus diz das festas do povo?",
+    "verseRef": "Amós 5:21",
+    "passageText": "Eu aborreço, desprezo as suas festas e não tenho nenhum prazer nas suas assembleias solenes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele pede festas ainda maiores"
+      },
+      {
+        "id": "b",
+        "text": "Ele nem percebe as festas"
+      },
+      {
+        "id": "c",
+        "text": "Ele as recebe com grande prazer"
+      },
+      {
+        "id": "d",
+        "text": "Ele as aborrece e despreza"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Eu aborreço, desprezo as suas festas",
+    "feedbackCorrect": "Deus rejeita as festas de um povo que vive longe da justiça.",
+    "feedbackWrong": {
+      "a": "Deus não pede mais festa; ele a rejeita.",
+      "b": "Ele percebe e responde com rejeição clara.",
+      "c": "O texto diz o contrário: nenhum prazer nelas."
+    },
+    "hint": "Leia os dois primeiros verbos do versículo.",
+    "learningObjective": "Observar a rejeição de Deus às festas.",
+    "evidence": [
+      "Amós 5:21"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-04",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 5:24 na ordem do texto.",
+    "prompt": "Monte Amós 5:24 na ordem do texto.",
+    "cue": "Monte Amós 5:24 na ordem do texto.",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que o juízo flua"
+      },
+      {
+        "id": "b",
+        "text": "como as águas"
+      },
+      {
+        "id": "c",
+        "text": "e a justiça, como um ribeiro perene"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Que o juízo flua como as águas",
+    "feedbackCorrect": "Juízo como águas e justiça como ribeiro que não seca.",
+    "feedbackWrong": {
+      "default": "Comece pelo juízo que flui; a justiça fecha o versículo."
+    },
+    "hint": "O versículo começa pelo juízo.",
+    "learningObjective": "Reconhecer a sequência de Amós 5:24.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-05",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Amós 5:23, o que Deus manda afastar dele junto com o estrépito?",
+    "prompt": "Em Amós 5:23, o que Deus manda afastar dele junto com o estrépito?",
+    "cue": "Em Amós 5:23, o que Deus manda afastar dele junto com o estrépito?",
+    "verseRef": "Amós 5:23",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos",
+    "template": "Afasta de mim o estrépito das suas ___ pois não ouvirei as melodias dos seus instrumentos",
+    "options": [
+      {
+        "id": "a",
+        "text": "festas"
+      },
+      {
+        "id": "b",
+        "text": "canções"
+      },
+      {
+        "id": "c",
+        "text": "ofertas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Afasta de mim o estrépito das suas canções",
+    "feedbackCorrect": "Deus afasta o barulho das canções de um culto sem justiça.",
+    "feedbackWrong": {
+      "a": "As festas estão em 5:21; aqui o foco é o som.",
+      "c": "As ofertas estão em 5:22; aqui Deus fala do canto."
+    },
+    "hint": "Pense no som que Deus não quer ouvir.",
+    "learningObjective": "Lembrar o que Deus afasta em 5:23.",
+    "evidence": [
+      "Amós 5:23"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-06",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "passageA": {
+      "ref": "Amós 5:24",
+      "text": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus quer uma vida justa, e não só festa e canto no culto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa sem justiça"
+      },
+      {
+        "id": "b",
+        "text": "Canto sem obediência"
+      },
+      {
+        "id": "c",
+        "text": "Justiça que flui sempre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e a justiça, como um ribeiro perene",
+    "feedbackCorrect": "Como rio que não seca, a justiça deve correr sempre.",
+    "feedbackWrong": {
+      "a": "Festa sem justiça é o que Deus rejeita antes.",
+      "b": "Canto sem obediência é o barulho afastado em 5:23."
+    },
+    "hint": "Veja a imagem das águas no versículo.",
+    "learningObjective": "Ligar Amós 5:24 a uma justiça contínua.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-01",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Amós 5:21 a 24, Deus rejeita as festas porque quer canções mais bonitas no culto.",
+    "prompt": "Em Amós 5:21 a 24, Deus rejeita as festas porque quer canções mais bonitas no culto.",
+    "cue": "Em Amós 5:21 a 24, Deus rejeita as festas porque quer canções mais bonitas no culto.",
+    "verseRef": "Amós 5:21–22",
+    "passageText": "Eu aborreço, desprezo as suas festas e não tenho nenhum prazer nas suas assembleias solenes. Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Eu aborreço, desprezo as suas festas",
+    "feedbackCorrect": "Deus não pede culto mais bonito: ele pede juízo e justiça.",
+    "feedbackWrong": {
+      "true": "O problema não é a beleza do culto, mas a falta de justiça."
+    },
+    "hint": "Compare o culto rejeitado com o pedido de 5:24.",
+    "learningObjective": "Compreender o motivo da rejeição do culto.",
+    "evidence": [
+      "Amós 5:21–22"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-02",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 5:27, toque a palavra que marca o resultado do que veio antes.",
+    "prompt": "Em Amós 5:27, toque a palavra que marca o resultado do que veio antes.",
+    "cue": "Em Amós 5:27, toque a palavra que marca o resultado do que veio antes.",
+    "verseRef": "Amós 5:27",
+    "passageText": "Portanto, eu os desterrarei além de Damasco, diz o SENHOR, cujo nome é Deus dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "além"
+      },
+      {
+        "id": "b",
+        "text": "Portanto"
+      },
+      {
+        "id": "c",
+        "text": "Damasco"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Portanto, eu os desterrarei além de Damasco",
+    "feedbackCorrect": "Essa palavra liga a denúncia anterior ao desterro anunciado.",
+    "feedbackWrong": {
+      "a": "Essa palavra indica lugar, não a ligação com o antes.",
+      "c": "Damasco é o destino; a ligação vem na primeira palavra."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de resultado em 5:27.",
+    "evidence": [
+      "Amós 5:27"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-03",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Amós 5:24 se relaciona com o culto rejeitado antes dele?",
+    "prompt": "Como Amós 5:24 se relaciona com o culto rejeitado antes dele?",
+    "cue": "Como Amós 5:24 se relaciona com o culto rejeitado antes dele?",
+    "verseRef": "Amós 5:23–24",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus aceita ofertas sem mudança de vida"
+      },
+      {
+        "id": "b",
+        "text": "Deus troca o culto vazio por justiça viva"
+      },
+      {
+        "id": "c",
+        "text": "Deus pede festas sem nenhum canto"
+      },
+      {
+        "id": "d",
+        "text": "Deus dispensa o juízo entre o povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Que o juízo flua como as águas",
+    "feedbackCorrect": "Depois de rejeitar o barulho, Deus pede justiça que flui.",
+    "feedbackWrong": {
+      "a": "Ofertas sem vida justa são justamente o rejeitado.",
+      "c": "Deus não regula o canto; ele pede justiça.",
+      "d": "O juízo é o centro do pedido, não algo dispensado."
+    },
+    "hint": "Pense no contraste entre barulho e rio.",
+    "learningObjective": "Relacionar o culto rejeitado ao pedido por justiça.",
+    "evidence": [
+      "Amós 5:23–24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-04",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Amós 5:23 a 24?",
+    "prompt": "Como avança a cena em Amós 5:23 a 24?",
+    "cue": "Como avança a cena em Amós 5:23 a 24?",
+    "verseRef": "Amós 5:23–24",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus afasta o barulho das canções"
+      },
+      {
+        "id": "b",
+        "text": "Deus pede que o juízo flua"
+      },
+      {
+        "id": "c",
+        "text": "Deus pede justiça como ribeiro contínuo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Que o juízo flua como as águas",
+    "feedbackCorrect": "Primeiro o barulho sai; depois, juízo e justiça fluem.",
+    "feedbackWrong": {
+      "default": "Comece pelo barulho afastado; o rio fecha a cena."
+    },
+    "hint": "O rio é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento do culto vazio à justiça.",
+    "evidence": [
+      "Amós 5:23–24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-05",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Amós 5:22, o que Deus não fará diante das ofertas do povo?",
+    "prompt": "Em Amós 5:22, o que Deus não fará diante das ofertas do povo?",
+    "cue": "Em Amós 5:22, o que Deus não fará diante das ofertas do povo?",
+    "verseRef": "Amós 5:22",
+    "passageText": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "template": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me ___ delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvirei"
+      },
+      {
+        "id": "b",
+        "text": "agradarei"
+      },
+      {
+        "id": "c",
+        "text": "rugirei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não me agradarei delas",
+    "feedbackCorrect": "Nem holocaustos nem ofertas agradam a Deus sem justiça.",
+    "feedbackWrong": {
+      "a": "Ouvir aparece nas canções de 5:23, não nas ofertas.",
+      "c": "Rugir é a voz de Deus em 1:2, não a resposta às ofertas."
+    },
+    "hint": "Leia a reação de Deus no meio do versículo.",
+    "learningObjective": "Compreender que ofertas não agradam sem justiça.",
+    "evidence": [
+      "Amós 5:22"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-06",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Amós 5:24 a Provérbios 21:3?",
+    "prompt": "O que liga Amós 5:24 a Provérbios 21:3?",
+    "cue": "O que liga Amós 5:24 a Provérbios 21:3?",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "passageA": {
+      "ref": "Amós 5:24",
+      "text": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene."
+    },
+    "passageB": {
+      "ref": "Provérbios 21:3",
+      "text": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor do que oferecer sacrifícios"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Justiça acima de sacrifícios"
+      },
+      {
+        "id": "b",
+        "text": "Oferta sem obediência"
+      },
+      {
+        "id": "c",
+        "text": "Sacrifício sem justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e a justiça, como um ribeiro perene",
+    "feedbackCorrect": "Nos dois textos, praticar a justiça vale mais que o rito.",
+    "feedbackWrong": {
+      "b": "A ponte afirma o valor da justiça, não a oferta vazia.",
+      "c": "Isso é o que os dois textos rejeitam, não a ponte."
+    },
+    "hint": "Compare o que os dois textos põem em primeiro lugar.",
+    "learningObjective": "Relacionar Amós e Provérbios sobre justiça e sacrifício.",
+    "evidence": [
+      "Amós 5:24",
+      "Provérbios 21:3"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-01",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Amós 5:24 mostra que Deus quer justiça contínua, e não apenas momentos de culto.",
+    "prompt": "Amós 5:24 mostra que Deus quer justiça contínua, e não apenas momentos de culto.",
+    "cue": "Amós 5:24 mostra que Deus quer justiça contínua, e não apenas momentos de culto.",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "como um ribeiro perene",
+    "feedbackCorrect": "Ribeiro que não seca: a justiça não é evento, é fluxo.",
+    "feedbackWrong": {
+      "false": "Perene quer dizer contínuo: não só no dia da festa."
+    },
+    "hint": "Repare na palavra que descreve o ribeiro.",
+    "learningObjective": "Interpretar a justiça como prática contínua.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-02",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 5:24, toque o trecho que mostra a justiça sem parar.",
+    "prompt": "Em Amós 5:24, toque o trecho que mostra a justiça sem parar.",
+    "cue": "Em Amós 5:24, toque o trecho que mostra a justiça sem parar.",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ribeiro perene"
+      },
+      {
+        "id": "b",
+        "text": "as águas"
+      },
+      {
+        "id": "c",
+        "text": "o juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como um ribeiro perene",
+    "feedbackCorrect": "O ribeiro que nunca seca sustenta a ideia de constância.",
+    "feedbackWrong": {
+      "b": "As águas mostram força; a constância está no fim.",
+      "c": "O juízo abre o pedido; a constância vem depois."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar no texto a justiça contínua.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-03",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Amós 5:21 a 22 sustenta sobre o culto do povo?",
+    "prompt": "Que leitura Amós 5:21 a 22 sustenta sobre o culto do povo?",
+    "cue": "Que leitura Amós 5:21 a 22 sustenta sobre o culto do povo?",
+    "verseRef": "Amós 5:21–22",
+    "passageText": "Eu aborreço, desprezo as suas festas e não tenho nenhum prazer nas suas assembleias solenes. Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Festas apagam os pecados do povo"
+      },
+      {
+        "id": "b",
+        "text": "Ofertas garantem o favor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus rejeita todo culto para sempre"
+      },
+      {
+        "id": "d",
+        "text": "Culto sem justiça não agrada a Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não me agradarei delas",
+    "feedbackCorrect": "O problema não é o culto em si, mas o culto sem justiça.",
+    "feedbackWrong": {
+      "a": "As festas são rejeitadas; não apagam pecado algum.",
+      "b": "As ofertas aqui não garantem nada: Deus não se agrada.",
+      "c": "Deus rejeita este culto vazio, não todo culto."
+    },
+    "hint": "Veja o que falta nas festas e ofertas.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Amós 5:21–22"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-04",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da denúncia em Amós 5?",
+    "prompt": "Qual sequência revela o fio da denúncia em Amós 5?",
+    "cue": "Qual sequência revela o fio da denúncia em Amós 5?",
+    "verseRef": "Amós 5:25–26",
+    "passageText": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante quarenta anos, ó casa de Israel? Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus denuncia ídolos no deserto"
+      },
+      {
+        "id": "b",
+        "text": "Deus anuncia desterro aos idólatras"
+      },
+      {
+        "id": "c",
+        "text": "Estêvão retoma a mesma denúncia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vocês levavam a tenda do Moloque",
+    "feedbackCorrect": "Denúncia no deserto, desterro anunciado e Estêvão retomando.",
+    "feedbackWrong": {
+      "default": "Siga a história: Amós denuncia, anuncia e é retomado em Atos."
+    },
+    "hint": "Estêvão vem por último, em Atos.",
+    "learningObjective": "Ver a denúncia de Amós retomada no Novo Testamento.",
+    "evidence": [
+      "Amós 5:25",
+      "Amós 5:27",
+      "Atos 7:42–43"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-05",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Amós 5:24, que palavra deve correr como um ribeiro perene?",
+    "prompt": "Em Amós 5:24, que palavra deve correr como um ribeiro perene?",
+    "cue": "Em Amós 5:24, que palavra deve correr como um ribeiro perene?",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "template": "Que o juízo flua como as águas; e a ___, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "canção"
+      },
+      {
+        "id": "b",
+        "text": "festa"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e a justiça, como um ribeiro perene",
+    "feedbackCorrect": "É a justiça que deve correr sem secar, como o rio.",
+    "feedbackWrong": {
+      "a": "A canção é o barulho afastado; o rio pede outra coisa.",
+      "b": "A festa é o culto rejeitado; o rio pede outra coisa."
+    },
+    "hint": "É o tema central de toda a cena.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-06",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Amós 5:26 a Atos 7:43?",
+    "prompt": "O que liga Amós 5:26 a Atos 7:43?",
+    "cue": "O que liga Amós 5:26 a Atos 7:43?",
+    "verseRef": "Amós 5:26",
+    "passageText": "Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos.",
+    "passageA": {
+      "ref": "Amós 5:26",
+      "text": "Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos."
+    },
+    "passageB": {
+      "ref": "Atos 7:43",
+      "text": "Antes, acolhestes o tabernáculo de Moloque e a estrela do deus Renfã, figuras que fizestes para as adorar; por isso, eu vos desterrarei para além da Babilônia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ídolos protegem Israel"
+      },
+      {
+        "id": "b",
+        "text": "Amós cita Estêvão"
+      },
+      {
+        "id": "c",
+        "text": "Estêvão cita Amós"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a tenda do Moloque",
+    "feedbackCorrect": "Séculos depois, Estêvão cita Amós contra a mesma idolatria.",
+    "feedbackWrong": {
+      "a": "Os ídolos levam ao desterro, não protegem ninguém.",
+      "b": "Amós é bem anterior a Estêvão: a citação é inversa."
+    },
+    "hint": "Veja quem fala depois, retomando o profeta.",
+    "learningObjective": "Ligar Amós à citação feita por Estêvão em Atos.",
+    "evidence": [
+      "Amós 5:26",
+      "Atos 7:43"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-01",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Amós 5:22, Deus diz que se agradará dos holocaustos e das ofertas de grãos.",
+    "prompt": "Em Amós 5:22, Deus diz que se agradará dos holocaustos e das ofertas de grãos.",
+    "cue": "Em Amós 5:22, Deus diz que se agradará dos holocaustos e das ofertas de grãos.",
+    "verseRef": "Amós 5:22",
+    "passageText": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não me agradarei delas",
+    "feedbackCorrect": "Deus afirma que não se agradará dessas ofertas.",
+    "feedbackWrong": {
+      "true": "Releia o meio de 5:22: ele não se agradará delas."
+    },
+    "hint": "Repare na negação no meio do versículo.",
+    "learningObjective": "Observar a rejeição das ofertas em 5:22.",
+    "evidence": [
+      "Amós 5:22"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-02",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 5:22, toque o que Deus diz que não atentará para ver.",
+    "prompt": "Em Amós 5:22, toque o que Deus diz que não atentará para ver.",
+    "cue": "Em Amós 5:22, toque o que Deus diz que não atentará para ver.",
+    "verseRef": "Amós 5:22",
+    "passageText": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "holocaustos"
+      },
+      {
+        "id": "b",
+        "text": "ofertas de grãos"
+      },
+      {
+        "id": "c",
+        "text": "ofertas pacíficas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nem atentarei para as ofertas pacíficas",
+    "feedbackCorrect": "Nem as ofertas pacíficas dos animais cevados Deus olhará.",
+    "feedbackWrong": {
+      "a": "Holocaustos abrem o versículo; o não atentar vem depois.",
+      "b": "Ofertas de grãos vêm antes; o não atentar é sobre outras."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Observar quais ofertas Deus não olhará.",
+    "evidence": [
+      "Amós 5:22"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-03",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Amós 5:23, o que Deus manda afastar dele?",
+    "prompt": "Segundo Amós 5:23, o que Deus manda afastar dele?",
+    "cue": "Segundo Amós 5:23, o que Deus manda afastar dele?",
+    "verseRef": "Amós 5:23",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos",
+    "options": [
+      {
+        "id": "a",
+        "text": "A justiça que continua"
+      },
+      {
+        "id": "b",
+        "text": "O juízo entre o povo"
+      },
+      {
+        "id": "c",
+        "text": "O estrépito das canções"
+      },
+      {
+        "id": "d",
+        "text": "As águas do ribeiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Afasta de mim o estrépito das suas canções",
+    "feedbackCorrect": "O barulho do culto sem justiça deve sair da frente de Deus.",
+    "feedbackWrong": {
+      "a": "A justiça contínua é o pedido, não o que sai.",
+      "b": "O juízo é justamente o que Deus pede em 5:24.",
+      "d": "As águas são imagem da justiça pedida, não do afastado."
+    },
+    "hint": "O versículo começa com um afastamento.",
+    "learningObjective": "Observar o que Deus manda afastar.",
+    "evidence": [
+      "Amós 5:23"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-04",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 5:21 na ordem do texto.",
+    "prompt": "Monte Amós 5:21 na ordem do texto.",
+    "cue": "Monte Amós 5:21 na ordem do texto.",
+    "verseRef": "Amós 5:21",
+    "passageText": "Eu aborreço, desprezo as suas festas e não tenho nenhum prazer nas suas assembleias solenes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eu aborreço, desprezo as suas festas"
+      },
+      {
+        "id": "b",
+        "text": "e não tenho nenhum prazer"
+      },
+      {
+        "id": "c",
+        "text": "nas suas assembleias solenes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu aborreço, desprezo as suas festas",
+    "feedbackCorrect": "Rejeição às festas e nenhum prazer nas assembleias.",
+    "feedbackWrong": {
+      "default": "Comece pela rejeição às festas; as assembleias fecham."
+    },
+    "hint": "O versículo começa pelas festas.",
+    "learningObjective": "Reconhecer a sequência de Amós 5:21.",
+    "evidence": [
+      "Amós 5:21"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-05",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Amós 5:21, o que Deus não tem nas assembleias solenes do povo?",
+    "prompt": "Em Amós 5:21, o que Deus não tem nas assembleias solenes do povo?",
+    "cue": "Em Amós 5:21, o que Deus não tem nas assembleias solenes do povo?",
+    "verseRef": "Amós 5:21",
+    "passageText": "Eu aborreço, desprezo as suas festas e não tenho nenhum prazer nas suas assembleias solenes.",
+    "template": "Eu aborreço, desprezo as suas festas e não tenho nenhum ___ nas suas assembleias solenes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desterro"
+      },
+      {
+        "id": "b",
+        "text": "juízo"
+      },
+      {
+        "id": "c",
+        "text": "prazer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não tenho nenhum prazer nas suas assembleias solenes",
+    "feedbackCorrect": "Deus não tem prazer algum naquele culto sem justiça.",
+    "feedbackWrong": {
+      "a": "Desterro é o anúncio de 5:27, não o sentimento aqui.",
+      "b": "Juízo é o que Deus pede em 5:24, não o que falta aqui."
+    },
+    "hint": "É o que Deus nega ter nas assembleias.",
+    "learningObjective": "Lembrar a reação de Deus em 5:21.",
+    "evidence": [
+      "Amós 5:21"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-06",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 5:23 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:23 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:23 comunica que se liga a este contexto?",
+    "verseRef": "Amós 5:23",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos",
+    "passageA": {
+      "ref": "Amós 5:23",
+      "text": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Um culto com muito barulho, mas sem justiça na vida do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Rio de justiça"
+      },
+      {
+        "id": "b",
+        "text": "Festa aprovada por Deus"
+      },
+      {
+        "id": "c",
+        "text": "Canto sem justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Afasta de mim o estrépito das suas canções",
+    "feedbackCorrect": "Canto sem justiça vira barulho que Deus manda afastar.",
+    "feedbackWrong": {
+      "a": "O rio aparece em 5:24 como pedido, não neste barulho.",
+      "b": "Esta festa é rejeitada, não aprovada por Deus."
+    },
+    "hint": "Junte o som do versículo com a falta do contexto.",
+    "learningObjective": "Ligar 5:23 ao culto barulhento sem justiça.",
+    "evidence": [
+      "Amós 5:23"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-01",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Amós 5:23 a 24, depois de afastar as canções, Deus pede juízo e justiça contínuos.",
+    "prompt": "Em Amós 5:23 a 24, depois de afastar as canções, Deus pede juízo e justiça contínuos.",
+    "cue": "Em Amós 5:23 a 24, depois de afastar as canções, Deus pede juízo e justiça contínuos.",
+    "verseRef": "Amós 5:23–24",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Que o juízo flua como as águas",
+    "feedbackCorrect": "O barulho sai e, no lugar, Deus pede justiça que flui.",
+    "feedbackWrong": {
+      "false": "Logo após afastar as canções, vem o pedido do rio."
+    },
+    "hint": "Leia 5:23 e 5:24 como uma só cena.",
+    "learningObjective": "Compreender a troca do barulho pelo rio de justiça.",
+    "evidence": [
+      "Amós 5:23–24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-02",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 5:24, toque a palavra que mostra que a justiça não deve parar.",
+    "prompt": "Em Amós 5:24, toque a palavra que mostra que a justiça não deve parar.",
+    "cue": "Em Amós 5:24, toque a palavra que mostra que a justiça não deve parar.",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "perene"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como um ribeiro perene",
+    "feedbackCorrect": "Essa palavra diz que o ribeiro não seca: justiça sempre.",
+    "feedbackWrong": {
+      "a": "Juízo é o que flui; a duração vem no fim do versículo.",
+      "b": "Águas mostram o fluir; a duração está no adjetivo final."
+    },
+    "hint": "Procure o adjetivo no fim do versículo.",
+    "learningObjective": "Reconhecer o sinal de continuidade em 5:24.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-03",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o pedido de Amós 5:24 responde ao culto dos versículos anteriores?",
+    "prompt": "Como o pedido de Amós 5:24 responde ao culto dos versículos anteriores?",
+    "cue": "Como o pedido de Amós 5:24 responde ao culto dos versículos anteriores?",
+    "verseRef": "Amós 5:23–24",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus quer mais volume nas próximas canções"
+      },
+      {
+        "id": "b",
+        "text": "Deus quer festas maiores no próximo ano"
+      },
+      {
+        "id": "c",
+        "text": "Deus quer justiça viva no lugar do rito vazio"
+      },
+      {
+        "id": "d",
+        "text": "Deus quer ofertas caras em vez de justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que o juízo flua como as águas",
+    "feedbackCorrect": "No lugar do rito vazio, Deus pede justiça viva e contínua.",
+    "feedbackWrong": {
+      "a": "Volume é o barulho que Deus acabou de afastar.",
+      "b": "Festas maiores repetiriam o culto já rejeitado.",
+      "d": "Ofertas caras sem justiça também foram rejeitadas."
+    },
+    "hint": "Contraste barulho afastado com rio pedido.",
+    "learningObjective": "Relacionar o rio de justiça ao culto rejeitado.",
+    "evidence": [
+      "Amós 5:23–24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-04",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Amós 5:23 a 24?",
+    "prompt": "Como avança o argumento em Amós 5:23 a 24?",
+    "cue": "Como avança o argumento em Amós 5:23 a 24?",
+    "verseRef": "Amós 5:23–24",
+    "passageText": "Afasta de mim o estrépito das suas canções pois não ouvirei as melodias dos seus instrumentos Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus não se agrada das ofertas"
+      },
+      {
+        "id": "b",
+        "text": "Deus afasta o som das canções"
+      },
+      {
+        "id": "c",
+        "text": "Deus pede justiça que continua"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e a justiça, como um ribeiro perene",
+    "feedbackCorrect": "Ofertas e cantos saem; a justiça contínua entra.",
+    "feedbackWrong": {
+      "default": "A justiça contínua é o destino; ofertas vêm antes dela."
+    },
+    "hint": "O rio fecha o argumento.",
+    "learningObjective": "Compreender o avanço de 5:22 a 5:24.",
+    "evidence": [
+      "Amós 5:23–24"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-05",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Amós 5:25, por quantos anos Deus pergunta dos sacrifícios no deserto?",
+    "prompt": "Em Amós 5:25, por quantos anos Deus pergunta dos sacrifícios no deserto?",
+    "cue": "Em Amós 5:25, por quantos anos Deus pergunta dos sacrifícios no deserto?",
+    "verseRef": "Amós 5:25",
+    "passageText": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante quarenta anos, ó casa de Israel?",
+    "template": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante ___ anos, ó casa de Israel?",
+    "options": [
+      {
+        "id": "a",
+        "text": "sete"
+      },
+      {
+        "id": "b",
+        "text": "quarenta"
+      },
+      {
+        "id": "c",
+        "text": "doze"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "durante quarenta anos, ó casa de Israel",
+    "feedbackCorrect": "São os anos do deserto, tempo longo de caminhada com Deus.",
+    "feedbackWrong": {
+      "a": "O texto fala de um tempo bem maior no deserto.",
+      "c": "Doze lembra tribos; o tempo citado é outro."
+    },
+    "hint": "É o tempo clássico da caminhada no deserto.",
+    "learningObjective": "Compreender a memória do deserto em 5:25.",
+    "evidence": [
+      "Amós 5:25"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-06",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Amós 5:24 a Miquéias 6:8?",
+    "prompt": "O que liga Amós 5:24 a Miquéias 6:8?",
+    "cue": "O que liga Amós 5:24 a Miquéias 6:8?",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "passageA": {
+      "ref": "Amós 5:24",
+      "text": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene."
+    },
+    "passageB": {
+      "ref": "Miquéias 6:8",
+      "text": "Já te foi declarado, ó homem, o que é bom; e o que o SENHOR exige de ti é que pratiques a justiça, ames a misericórdia e andes humildemente com o teu Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Multiplicar festas e ofertas"
+      },
+      {
+        "id": "b",
+        "text": "Cantar mais alto no culto"
+      },
+      {
+        "id": "c",
+        "text": "Praticar justiça com misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que o juízo flua como as águas",
+    "feedbackCorrect": "Miquéias resume o mesmo pedido: justiça praticada com misericórdia.",
+    "feedbackWrong": {
+      "a": "Festas e ofertas sem justiça são o problema em Amós.",
+      "b": "Cantar mais alto é o barulho que Deus afasta."
+    },
+    "hint": "Veja o que Miquéias diz que o Senhor exige.",
+    "learningObjective": "Relacionar Amós e Miquéias sobre o que Deus exige.",
+    "evidence": [
+      "Amós 5:24",
+      "Miquéias 6:8"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-01",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Amós 5:25 a 26 ensina que os sacrifícios no deserto impediram Israel de adorar ídolos.",
+    "prompt": "Amós 5:25 a 26 ensina que os sacrifícios no deserto impediram Israel de adorar ídolos.",
+    "cue": "Amós 5:25 a 26 ensina que os sacrifícios no deserto impediram Israel de adorar ídolos.",
+    "verseRef": "Amós 5:25–26",
+    "passageText": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante quarenta anos, ó casa de Israel? Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "vocês levavam a tenda do Moloque",
+    "feedbackCorrect": "Mesmo no deserto, o povo já levava seus ídolos consigo.",
+    "feedbackWrong": {
+      "true": "O versículo seguinte mostra ídolos levados no deserto."
+    },
+    "hint": "Leia o que o povo levava em 5:26.",
+    "learningObjective": "Interpretar a denúncia da idolatria no deserto.",
+    "evidence": [
+      "Amós 5:25–26"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-02",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 5:26, toque o trecho que mostra ídolos inventados pelo povo.",
+    "prompt": "Em Amós 5:26, toque o trecho que mostra ídolos inventados pelo povo.",
+    "cue": "Em Amós 5:26, toque o trecho que mostra ídolos inventados pelo povo.",
+    "verseRef": "Amós 5:26",
+    "passageText": "Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seus ídolos"
+      },
+      {
+        "id": "b",
+        "text": "tenda do Moloque"
+      },
+      {
+        "id": "c",
+        "text": "para si mesmos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que fizeram para si mesmos",
+    "feedbackCorrect": "O deus era invenção do próprio povo: feito por ele, para ele.",
+    "feedbackWrong": {
+      "a": "Isso cita os ídolos; quem os fez aparece no fim.",
+      "b": "Isso nomeia o ídolo; a invenção está no fim do versículo."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar no texto a idolatria inventada.",
+    "evidence": [
+      "Amós 5:26"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-03",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Amós 5:25 a 26 sustenta sobre o passado de Israel?",
+    "prompt": "Que leitura Amós 5:25 a 26 sustenta sobre o passado de Israel?",
+    "cue": "Que leitura Amós 5:25 a 26 sustenta sobre o passado de Israel?",
+    "verseRef": "Amós 5:25–26",
+    "passageText": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante quarenta anos, ó casa de Israel? Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O passado puro garante o presente de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Israel misturou o culto com ídolos próprios"
+      },
+      {
+        "id": "c",
+        "text": "Ídolos feitos pelo povo protegem a nação"
+      },
+      {
+        "id": "d",
+        "text": "Deus aprovou a estrela como seu sinal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a estrela do seu deus que fizeram para si mesmos",
+    "feedbackCorrect": "A história antiga já misturava culto a Deus com ídolos.",
+    "feedbackWrong": {
+      "a": "O passado citado expõe pecado, não garante pureza.",
+      "c": "Os ídolos levam ao desterro, não protegem a nação.",
+      "d": "A estrela era de um deus inventado, não sinal de Deus."
+    },
+    "hint": "Veja quem fez o deus da estrela.",
+    "learningObjective": "Escolher a leitura sustentada sobre o deserto.",
+    "evidence": [
+      "Amós 5:25–26"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-04",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio que vai do deserto a Atos?",
+    "prompt": "Qual sequência revela o fio que vai do deserto a Atos?",
+    "cue": "Qual sequência revela o fio que vai do deserto a Atos?",
+    "verseRef": "Amós 5:25–26",
+    "passageText": "Acaso vocês me trouxeram sacrifícios e ofertas de alimentos no deserto durante quarenta anos, ó casa de Israel? Antes, vocês levavam a tenda do Moloque e a imagem dos seus ídolos, a estrela do seu deus que fizeram para si mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pergunta pelos sacrifícios no deserto"
+      },
+      {
+        "id": "b",
+        "text": "Deus denuncia ídolos levados pelo povo"
+      },
+      {
+        "id": "c",
+        "text": "Estêvão retoma essa denúncia em Atos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Acaso vocês me trouxeram sacrifícios",
+    "feedbackCorrect": "Pergunta sobre o deserto, denúncia dos ídolos e Atos retomando.",
+    "feedbackWrong": {
+      "default": "Comece pela pergunta do deserto; Atos vem séculos depois."
+    },
+    "hint": "Atos é o ponto mais tardio da história.",
+    "learningObjective": "Ver o deserto de Amós retomado por Estêvão.",
+    "evidence": [
+      "Amós 5:25–26",
+      "Atos 7:42–43"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-05",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Amós 5:24, a justiça é comparada a que curso de água contínuo?",
+    "prompt": "Em Amós 5:24, a justiça é comparada a que curso de água contínuo?",
+    "cue": "Em Amós 5:24, a justiça é comparada a que curso de água contínuo?",
+    "verseRef": "Amós 5:24",
+    "passageText": "Que o juízo flua como as águas; e a justiça, como um ribeiro perene.",
+    "template": "Que o juízo flua como as águas; e a justiça, como um ___ perene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "templo"
+      },
+      {
+        "id": "b",
+        "text": "deserto"
+      },
+      {
+        "id": "c",
+        "text": "ribeiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como um ribeiro perene",
+    "feedbackCorrect": "Um curso contínuo de água: a justiça não pode secar.",
+    "feedbackWrong": {
+      "a": "Templo é lugar de culto; a imagem é um curso de água.",
+      "b": "Deserto é lugar seco; a imagem aqui é de água viva."
+    },
+    "hint": "Pense na água que não para de correr.",
+    "learningObjective": "Lembrar a imagem central da justiça contínua.",
+    "evidence": [
+      "Amós 5:24"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-06",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Amós 5:22 a 1 Samuel 15:22?",
+    "prompt": "O que liga Amós 5:22 a 1 Samuel 15:22?",
+    "cue": "O que liga Amós 5:22 a 1 Samuel 15:22?",
+    "verseRef": "Amós 5:22",
+    "passageText": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados.",
+    "passageA": {
+      "ref": "Amós 5:22",
+      "text": "Porque, mesmo que vocês me apresentem holocaustos e também suas ofertas de grãos, não me agradarei delas; nem atentarei para as ofertas pacíficas dos seus animais cevados."
+    },
+    "passageB": {
+      "ref": "1 Samuel 15:22",
+      "text": "Porém, Samuel disse: O Senhor tem realmente tanto prazer em holocaustos e sacrifícios quanto em que se obedeça à Sua palavra? Com certeza, obedecer é melhor do que sacrificar, e atender é superior à gordura de carneiros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oferta sem nenhuma obediência"
+      },
+      {
+        "id": "b",
+        "text": "Obedecer acima de sacrifícios"
+      },
+      {
+        "id": "c",
+        "text": "Sacrifício apaga desobediência"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não me agradarei delas",
+    "feedbackCorrect": "Samuel e Amós concordam: obedecer vale mais que sacrificar.",
+    "feedbackWrong": {
+      "a": "Isso é o que os dois textos condenam, não a ponte.",
+      "c": "Samuel diz o contrário: sacrificar não apaga desobedecer."
+    },
+    "hint": "Veja o que Samuel põe acima do sacrifício.",
+    "learningObjective": "Ligar Amós ao ensino de Samuel sobre obediência.",
+    "evidence": [
+      "Amós 5:22",
+      "1 Samuel 15:22"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-01",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+    "prompt": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+    "cue": "Em Amós 3:2, Deus diz que, de todas as gerações da terra, somente Israel ele conheceu.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Só Israel foi conhecido assim entre as gerações da terra.",
+    "feedbackWrong": {
+      "false": "O texto destaca um só povo conhecido assim."
+    },
+    "hint": "Leia quem Deus conheceu em 3:2.",
+    "learningObjective": "Revisar a eleição única de Israel.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-02",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 5:15, toque onde o povo deve estabelecer o juízo.",
+    "prompt": "Em Amós 5:15, toque onde o povo deve estabelecer o juízo.",
+    "cue": "Em Amós 5:15, toque onde o povo deve estabelecer o juízo.",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o bem"
+      },
+      {
+        "id": "b",
+        "text": "de José"
+      },
+      {
+        "id": "c",
+        "text": "na porta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Na porta, onde a cidade decidia as causas do povo.",
+    "feedbackWrong": {
+      "a": "O bem deve ser amado; o lugar do juízo é outro.",
+      "b": "José nomeia o remanescente; o lugar vem antes."
+    },
+    "hint": "Procure um lugar da cidade no versículo.",
+    "learningObjective": "Revisar a porta como lugar do juízo.",
+    "evidence": [
+      "Amós 5:15"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-03",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Amós 7:14, qual era o trabalho de Amós no campo?",
+    "prompt": "Segundo Amós 7:14, qual era o trabalho de Amós no campo?",
+    "cue": "Segundo Amós 7:14, qual era o trabalho de Amós no campo?",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdote em Betel"
+      },
+      {
+        "id": "b",
+        "text": "Boieiro e colhedor"
+      },
+      {
+        "id": "c",
+        "text": "Juiz na porta"
+      },
+      {
+        "id": "d",
+        "text": "Escriba do rei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sou apenas um boieiro e colhedor de sicômoros",
+    "feedbackCorrect": "Trabalho simples no campo, antes de Deus o enviar.",
+    "feedbackWrong": {
+      "a": "Sacerdote em Betel é Amazias, não Amós.",
+      "c": "Juiz na porta é chamado ao povo, não o trabalho dele.",
+      "d": "Escriba do rei não aparece na resposta de Amós."
+    },
+    "hint": "Leia o que ele diz depois de apenas um.",
+    "learningObjective": "Revisar a origem simples de Amós.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-04",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 3:2 na ordem do texto.",
+    "prompt": "Monte Amós 3:2 na ordem do texto.",
+    "cue": "Monte Amós 3:2 na ordem do texto.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De todas as gerações da terra"
+      },
+      {
+        "id": "b",
+        "text": "somente a vós eu conheci"
+      },
+      {
+        "id": "c",
+        "text": "punirei todas as vossas iniquidades sobre vós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Eleição única primeiro; punição anunciada depois.",
+    "feedbackWrong": {
+      "default": "Comece pelas gerações; a punição fecha o versículo."
+    },
+    "hint": "O versículo começa comparando gerações.",
+    "learningObjective": "Revisar a sequência de Amós 3:2.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-05",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Amós 5:18, o Dia do Senhor será dia de quê, e não de luz?",
+    "prompt": "Em Amós 5:18, o Dia do Senhor será dia de quê, e não de luz?",
+    "cue": "Em Amós 5:18, o Dia do Senhor será dia de quê, e não de luz?",
+    "verseRef": "Amós 5:18",
+    "passageText": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de trevas e não de luz.",
+    "template": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de ___ e não de luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "colheita"
+      },
+      {
+        "id": "c",
+        "text": "festa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Será dia de trevas e não de luz",
+    "feedbackCorrect": "Para a injustiça segura, o Dia esperado será escuridão.",
+    "feedbackWrong": {
+      "b": "Colheita não é a palavra que descreve esse Dia.",
+      "c": "Festa é o que o povo imagina; Deus anuncia outra coisa."
+    },
+    "hint": "É o contrário de luz no versículo.",
+    "learningObjective": "Revisar o Dia do Senhor como trevas.",
+    "evidence": [
+      "Amós 5:18"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-06",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 3:2 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 3:2 comunica que se liga a este contexto?",
+    "cue": "O que Amós 3:2 comunica que se liga a este contexto?",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ser conhecido por Deus traz cobrança sobre a vida, e não só honra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleição com responsabilidade"
+      },
+      {
+        "id": "b",
+        "text": "Povo como qualquer outro"
+      },
+      {
+        "id": "c",
+        "text": "Honra sem nenhuma conta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "somente a vós eu conheci",
+    "feedbackCorrect": "Conhecido de modo único, o povo responde por isso.",
+    "feedbackWrong": {
+      "b": "O texto destaca justamente a diferença deste povo.",
+      "c": "O mesmo versículo anuncia punição, não conta zero."
+    },
+    "hint": "Junte o conhecer com o portanto do versículo.",
+    "learningObjective": "Revisar eleição com responsabilidade.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-07",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Amós 7:15, toque quem tirou Amós de trás do gado.",
+    "prompt": "Em Amós 7:15, toque quem tirou Amós de trás do gado.",
+    "cue": "Em Amós 7:15, toque quem tirou Amós de trás do gado.",
+    "verseRef": "Amós 7:15",
+    "passageText": "Mas o Senhor me tirou de trás do gado e me disse: Vai, e profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "meu povo"
+      },
+      {
+        "id": "c",
+        "text": "do gado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor me tirou de trás do gado",
+    "feedbackCorrect": "Quem tira e envia é o Senhor, não Amazias nem o rei.",
+    "feedbackWrong": {
+      "b": "Meu povo é o destino; quem envia é outro.",
+      "c": "Do gado é de onde ele sai; quem o tira vem antes."
+    },
+    "hint": "Procure quem age no início do versículo.",
+    "learningObjective": "Revisar quem chamou Amós.",
+    "evidence": [
+      "Amós 7:15"
+    ]
+  },
+  {
+    "id": "amos-sem-amos-amos-03-desafio-amos-08",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Amós 7:14 na ordem do texto.",
+    "prompt": "Monte Amós 7:14 na ordem do texto.",
+    "cue": "Monte Amós 7:14 na ordem do texto.",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não sou profeta, nem filho de profeta"
+      },
+      {
+        "id": "b",
+        "text": "sou apenas um boieiro"
+      },
+      {
+        "id": "c",
+        "text": "e colhedor de sicômoros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não sou profeta, nem filho de profeta",
+    "feedbackCorrect": "Sem título herdado, boieiro e colhedor: é Amós.",
+    "feedbackWrong": {
+      "default": "Comece negando o título; o colhedor fecha."
+    },
+    "hint": "A resposta começa com uma negação.",
+    "learningObjective": "Revisar a sequência de Amós 7:14.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-01",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Amós 5:14, o povo pode buscar o bem e continuar no mal, e ainda assim viver.",
+    "prompt": "Em Amós 5:14, o povo pode buscar o bem e continuar no mal, e ainda assim viver.",
+    "cue": "Em Amós 5:14, o povo pode buscar o bem e continuar no mal, e ainda assim viver.",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Busquem o bem e não o mal, para que vivam",
+    "feedbackCorrect": "Buscar o bem exige deixar o mal: os dois não andam juntos.",
+    "feedbackWrong": {
+      "true": "O texto opõe bem e mal: um entra, o outro sai."
+    },
+    "hint": "Repare no e não o mal do versículo.",
+    "learningObjective": "Compreender que buscar o bem exclui o mal.",
+    "evidence": [
+      "Amós 5:14"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-02",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+    "prompt": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+    "cue": "Em Amós 3:2, toque a palavra que liga a eleição à punição.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "somente"
+      },
+      {
+        "id": "b",
+        "text": "portanto"
+      },
+      {
+        "id": "c",
+        "text": "sobre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+    "feedbackCorrect": "Essa palavra transforma eleição em cobrança anunciada.",
+    "feedbackWrong": {
+      "a": "Somente destaca quem foi conhecido, não a consequência.",
+      "c": "Sobre diz sobre quem cai a punição, não a ligação."
+    },
+    "hint": "Procure a palavra logo antes da punição.",
+    "learningObjective": "Revisar o marcador de resultado em 3:2.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-03",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Amós 5:12 mostra a injustiça do povo na prática?",
+    "prompt": "Como Amós 5:12 mostra a injustiça do povo na prática?",
+    "cue": "Como Amós 5:12 mostra a injustiça do povo na prática?",
+    "verseRef": "Amós 5:12",
+    "passageText": "Porque sei que são muitas as vossas transgressões e graves os vossos pecados; afligis o justo, aceitais suborno e rejeitais os necessitados à porta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O suborno protege o justo na porta da cidade"
+      },
+      {
+        "id": "b",
+        "text": "A injustiça é só um erro de culto no templo"
+      },
+      {
+        "id": "c",
+        "text": "O necessitado é defendido com justiça plena"
+      },
+      {
+        "id": "d",
+        "text": "A injustiça aparece onde o necessitado é rejeitado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "rejeitais os necessitados à porta",
+    "feedbackCorrect": "Suborno e rejeição na porta: a injustiça tem endereço.",
+    "feedbackWrong": {
+      "a": "Suborno aflige o justo; não protege ninguém com justiça.",
+      "b": "O endereço aqui é a porta, não só o templo.",
+      "c": "O texto denuncia rejeição, não defesa do necessitado."
+    },
+    "hint": "Veja o que acontece com o necessitado.",
+    "learningObjective": "Relacionar injustiça e rejeição na porta.",
+    "evidence": [
+      "Amós 5:12"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-04",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os mandamentos de Amós 5:14 a 15?",
+    "prompt": "Como se encadeiam os mandamentos de Amós 5:14 a 15?",
+    "cue": "Como se encadeiam os mandamentos de Amós 5:14 a 15?",
+    "verseRef": "Amós 5:14–15",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam. Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar o bem para viver"
+      },
+      {
+        "id": "b",
+        "text": "Aborrecer o mal e amar o bem"
+      },
+      {
+        "id": "c",
+        "text": "Estabelecer o juízo na porta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Busquem o bem e não o mal, para que vivam",
+    "feedbackCorrect": "Buscar, amar o bem e julgar justo: um só caminho.",
+    "feedbackWrong": {
+      "default": "Comece pela busca de 5:14; a porta fecha em 5:15."
+    },
+    "hint": "A porta da cidade é o último passo.",
+    "learningObjective": "Revisar a sequência dos mandamentos.",
+    "evidence": [
+      "Amós 5:14–15"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-05",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Amós 5:11, o que o povo faz com os pobres ao exigir tributos?",
+    "prompt": "Em Amós 5:11, o que o povo faz com os pobres ao exigir tributos?",
+    "cue": "Em Amós 5:11, o que o povo faz com os pobres ao exigir tributos?",
+    "verseRef": "Amós 5:11",
+    "passageText": "Portanto, visto que vocês oprimem os pobres e exigem deles tributos de trigo, edificaram casas de pedra lavrada, mas não habitarão nelas; plantaram vinhas desejáveis, mas não beberão do seu vinho.",
+    "template": "Portanto, visto que vocês ___ os pobres e exigem deles tributos de trigo, edificaram casas de pedra lavrada, mas não habitarão nelas; plantaram vinhas desejáveis, mas não beberão do seu vinho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alimentam"
+      },
+      {
+        "id": "b",
+        "text": "defendem"
+      },
+      {
+        "id": "c",
+        "text": "oprimem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês oprimem os pobres",
+    "feedbackCorrect": "A palavra é forte: tributo sobre o pobre é opressão.",
+    "feedbackWrong": {
+      "a": "Alimentar seria cuidado; eles exigem trigo do pobre.",
+      "b": "Defender seria justiça; o texto denuncia o contrário."
+    },
+    "hint": "É o verbo da denúncia no versículo.",
+    "learningObjective": "Revisar a denúncia da opressão.",
+    "evidence": [
+      "Amós 5:11"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-06",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Amós 5:15 a Isaías 1:17?",
+    "prompt": "O que liga Amós 5:15 a Isaías 1:17?",
+    "cue": "O que liga Amós 5:15 a Isaías 1:17?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "passageA": {
+      "ref": "Amós 5:15",
+      "text": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José."
+    },
+    "passageB": {
+      "ref": "Isaías 1:17",
+      "text": "Aprendam a fazer o bem; busquem a justiça; repreendam o opressor; defendam o direito do órfão; pleiteiem a causa das viúvas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Julgar a favor do mais forte"
+      },
+      {
+        "id": "b",
+        "text": "Buscar justiça na prática"
+      },
+      {
+        "id": "c",
+        "text": "Ignorar o órfão e a viúva"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Amós e Isaías chamam a praticar justiça pelo fraco.",
+    "feedbackWrong": {
+      "a": "A justiça pedida protege quem não tem força.",
+      "c": "Isaías manda defender órfão e viúva, não ignorar."
+    },
+    "hint": "Veja o que Isaías manda aprender a fazer.",
+    "learningObjective": "Revisar Amós e Isaías sobre justiça prática.",
+    "evidence": [
+      "Amós 5:15",
+      "Isaías 1:17"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-07",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Amós 5:14, toque a palavra que mostra o alvo de buscar o bem.",
+    "prompt": "Em Amós 5:14, toque a palavra que mostra o alvo de buscar o bem.",
+    "cue": "Em Amós 5:14, toque a palavra que mostra o alvo de buscar o bem.",
+    "verseRef": "Amós 5:14",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para"
+      },
+      {
+        "id": "b",
+        "text": "assim"
+      },
+      {
+        "id": "c",
+        "text": "como"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que vivam",
+    "feedbackCorrect": "A busca do bem tem um destino claro: que vivam.",
+    "feedbackWrong": {
+      "b": "Assim abre a promessa da presença, não o alvo inicial.",
+      "c": "Como compara com a afirmação do povo, não marca alvo."
+    },
+    "hint": "Procure a palavra antes de vivam.",
+    "learningObjective": "Revisar o marcador de propósito em 5:14.",
+    "evidence": [
+      "Amós 5:14"
+    ]
+  },
+  {
+    "id": "amos-cam-amos-amos-03-desafio-amos-08",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a expulsão de Amós em 7:12 a 13?",
+    "prompt": "Como se encadeia a expulsão de Amós em 7:12 a 13?",
+    "cue": "Como se encadeia a expulsão de Amós em 7:12 a 13?",
+    "verseRef": "Amós 7:12–13",
+    "passageText": "Então, Amazias disse a Amós: Vá-se, ó vidente, fuja para a terra de Judá; lá coma o seu pão e lá profetize. Mas em Betel não profetizarás mais, pois é o santuário do rei e o templo do reino.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amazias manda Amós fugir"
+      },
+      {
+        "id": "b",
+        "text": "Amazias aponta Judá para profetizar"
+      },
+      {
+        "id": "c",
+        "text": "Amazias fecha Betel ao profeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fuja para a terra de Judá",
+    "feedbackCorrect": "Fugir, profetizar longe e Betel fechado: expulsão completa.",
+    "feedbackWrong": {
+      "default": "Comece pela ordem de fugir; Betel fechado fecha."
+    },
+    "hint": "Betel fechado é a conclusão da fala.",
+    "learningObjective": "Revisar os passos da expulsão de Amós.",
+    "evidence": [
+      "Amós 7:12–13"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-01",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Amós 7:14 mostra que Amós herdou o ofício de profeta do seu pai.",
+    "prompt": "Amós 7:14 mostra que Amós herdou o ofício de profeta do seu pai.",
+    "cue": "Amós 7:14 mostra que Amós herdou o ofício de profeta do seu pai.",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não sou profeta, nem filho de profeta",
+    "feedbackCorrect": "Amós nega a herança: ele era boieiro, não filho de profeta.",
+    "feedbackWrong": {
+      "true": "Ele diz justamente que não é filho de profeta."
+    },
+    "hint": "Leia a negação no começo da resposta dele.",
+    "learningObjective": "Interpretar o chamado sem linhagem profética.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-02",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 3:2, toque o trecho que mostra o que Deus cobrará de Israel.",
+    "prompt": "Em Amós 3:2, toque o trecho que mostra o que Deus cobrará de Israel.",
+    "cue": "Em Amós 3:2, toque o trecho que mostra o que Deus cobrará de Israel.",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "da terra"
+      },
+      {
+        "id": "b",
+        "text": "vossas iniquidades"
+      },
+      {
+        "id": "c",
+        "text": "eu conheci"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "punirei todas as vossas iniquidades",
+    "feedbackCorrect": "A cobrança tem nome: os pecados concretos do povo.",
+    "feedbackWrong": {
+      "a": "Isso fala das gerações comparadas, não da cobrança.",
+      "c": "Isso é a eleição; a cobrança nomeia outra coisa."
+    },
+    "hint": "Procure o objeto da punição de Deus.",
+    "learningObjective": "Revisar o objeto da cobrança divina.",
+    "evidence": [
+      "Amós 3:2"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-03",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura reúne os três blocos deste desafio de Amós?",
+    "prompt": "Que leitura reúne os três blocos deste desafio de Amós?",
+    "cue": "Que leitura reúne os três blocos deste desafio de Amós?",
+    "verseRef": "Amós 5:14–15",
+    "passageText": "Busquem o bem e não o mal, para que vivam; assim, o Senhor, o Deus dos Exércitos, estará convosco, como afirmam. Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só profetas de família podem obedecer"
+      },
+      {
+        "id": "b",
+        "text": "Culto bonito substitui a justiça diária"
+      },
+      {
+        "id": "c",
+        "text": "Eleição dispensa qualquer vida justa"
+      },
+      {
+        "id": "d",
+        "text": "Eleição e culto cobram justiça vivida"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Conhecido, o povo deve viver o bem com juízo justo.",
+    "feedbackWrong": {
+      "a": "Amós, sem família profética, é quem obedece e fala.",
+      "b": "Culto sem justiça é rejeitado em todo o livro.",
+      "c": "Ser conhecido aumenta a cobrança, não dispensa."
+    },
+    "hint": "Junte eleição, culto e chamado das três cenas.",
+    "learningObjective": "Reunir a mensagem central do desafio.",
+    "evidence": [
+      "Amós 5:14–15"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-04",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica maior do livro de Amós aqui?",
+    "prompt": "Qual sequência revela a lógica maior do livro de Amós aqui?",
+    "cue": "Qual sequência revela a lógica maior do livro de Amós aqui?",
+    "verseRef": "Amós 5:15",
+    "passageText": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta; talvez o Senhor, o Deus dos Exércitos, tenha compaixão do remanescente de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus conhece Israel de modo único"
+      },
+      {
+        "id": "b",
+        "text": "Deus denuncia a opressão e o suborno"
+      },
+      {
+        "id": "c",
+        "text": "Deus manda estabelecer juízo justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "estabeleçam o juízo na porta",
+    "feedbackCorrect": "Eleição, denúncia da injustiça e chamado ao juízo.",
+    "feedbackWrong": {
+      "default": "Comece pela eleição de Amós 3; o juízo fecha."
+    },
+    "hint": "Siga Amós 3, depois 5:11 e 5:15.",
+    "learningObjective": "Ver a lógica eleição, denúncia e juízo.",
+    "evidence": [
+      "Amós 3:2",
+      "Amós 5:12",
+      "Amós 5:15"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-05",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Amós 7:14, além de boieiro, Amós diz ser o quê de sicômoros?",
+    "prompt": "Em Amós 7:14, além de boieiro, Amós diz ser o quê de sicômoros?",
+    "cue": "Em Amós 7:14, além de boieiro, Amós diz ser o quê de sicômoros?",
+    "verseRef": "Amós 7:14",
+    "passageText": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e colhedor de sicômoros.\"",
+    "template": "Amós respondeu a Amazias: \"Não sou profeta, nem filho de profeta, sou apenas um boieiro e ___ de sicômoros.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "lavrador"
+      },
+      {
+        "id": "b",
+        "text": "colhedor"
+      },
+      {
+        "id": "c",
+        "text": "vidente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "colhedor de sicômoros",
+    "feedbackCorrect": "Um trabalhador do campo, chamado sem se candidatar.",
+    "feedbackWrong": {
+      "a": "Lavrador é citado no pranto de 5:16, não aqui.",
+      "c": "Vidente é como Amazias chama Amós, não seu trabalho."
+    },
+    "hint": "É o ofício ligado aos sicômoros.",
+    "learningObjective": "Revisar o ofício simples de Amós.",
+    "evidence": [
+      "Amós 7:14"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-06",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Amós 3:2 a Lucas 12:48?",
+    "prompt": "O que liga Amós 3:2 a Lucas 12:48?",
+    "cue": "O que liga Amós 3:2 a Lucas 12:48?",
+    "verseRef": "Amós 3:2",
+    "passageText": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as gerações da terra, somente a vós eu conheci; portanto, punirei todas as vossas iniquidades sobre vós."
+    },
+    "passageB": {
+      "ref": "Lucas 12:48",
+      "text": "Mas aquele que não soube a vontade do seu senhor e cometeu atos dignos de reprovação, será flagelado com poucos açoites. Contudo, a quem muito foi dado, muito lhe será exigido; e a quem muito se confiou, muito mais será pedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Receber sem responder nunca"
+      },
+      {
+        "id": "b",
+        "text": "Nada dado, nada cobrado"
+      },
+      {
+        "id": "c",
+        "text": "Muito dado, muito cobrado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "portanto, punirei todas as vossas iniquidades",
+    "feedbackCorrect": "Jesus repete o princípio: quem recebeu mais, responde mais.",
+    "feedbackWrong": {
+      "a": "Os dois textos ligam o receber ao responder.",
+      "b": "Israel recebeu muito de Deus desde o Egito."
+    },
+    "hint": "Veja a regra de Jesus para quem recebeu muito.",
+    "learningObjective": "Ligar eleição em Amós ao princípio de Jesus.",
+    "evidence": [
+      "Amós 3:2",
+      "Lucas 12:48"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-07",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Amós 5:12, toque o trecho que mostra onde o necessitado é rejeitado.",
+    "prompt": "Em Amós 5:12, toque o trecho que mostra onde o necessitado é rejeitado.",
+    "cue": "Em Amós 5:12, toque o trecho que mostra onde o necessitado é rejeitado.",
+    "verseRef": "Amós 5:12",
+    "passageText": "Porque sei que são muitas as vossas transgressões e graves os vossos pecados; afligis o justo, aceitais suborno e rejeitais os necessitados à porta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os vossos pecados"
+      },
+      {
+        "id": "b",
+        "text": "o justo"
+      },
+      {
+        "id": "c",
+        "text": "à porta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "rejeitais os necessitados à porta",
+    "feedbackCorrect": "É justamente no lugar da justiça que ele é rejeitado.",
+    "feedbackWrong": {
+      "a": "Pecados descrevem o povo; o lugar da rejeição é outro.",
+      "b": "O justo é afligido; o lugar aparece no fim."
+    },
+    "hint": "Procure o lugar no fim do versículo.",
+    "learningObjective": "Sustentar onde acontece a injustiça.",
+    "evidence": [
+      "Amós 5:12"
+    ]
+  },
+  {
+    "id": "amos-pro-amos-amos-03-desafio-amos-08",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da palavra de Deus em Amós?",
+    "prompt": "Qual sequência revela o caminho da palavra de Deus em Amós?",
+    "cue": "Qual sequência revela o caminho da palavra de Deus em Amós?",
+    "verseRef": "Amós 5:18",
+    "passageText": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de trevas e não de luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cobra o povo que ele conheceu"
+      },
+      {
+        "id": "b",
+        "text": "Deus desmascara a segurança sem justiça"
+      },
+      {
+        "id": "c",
+        "text": "Deus envia até um boieiro a falar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Será dia de trevas e não de luz",
+    "feedbackCorrect": "Cobrança ao conhecido, falsa segurança e um boieiro enviado.",
+    "feedbackWrong": {
+      "default": "Comece por Amós 3; o boieiro enviado fecha o fio."
+    },
+    "hint": "O envio do boieiro é o último passo.",
+    "learningObjective": "Ver eleição, juízo e envio como um fio só.",
+    "evidence": [
+      "Amós 3:2",
+      "Amós 5:18",
+      "Amós 7:15"
+    ]
+  }
+]

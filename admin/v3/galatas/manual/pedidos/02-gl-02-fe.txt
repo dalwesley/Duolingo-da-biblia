@@ -1,0 +1,67 @@
+Escreva a cena "gl-02-fe" da trilha "galatas" (Gálatas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "galatas",
+  "title": "Gálatas",
+  "description": "Liberdade em Cristo — justificação pela fé, sem jugo da Lei.",
+  "realm": "novo-testamento"
+ },
+ "block": "Gálatas",
+ "mission": {
+  "slug": "gl-02-fe",
+  "title": "Fé e promessa",
+  "type": "lesson",
+  "intro": "A promessa dada a Abraão se cumpre em Cristo e é recebida pela fé.",
+  "hookRef": "Fé e promessa",
+  "hookNote": "A promessa dada a Abraão se cumpre em Cristo e é recebida pela fé.",
+  "centralInsight": "Paulo instrui a igreja em Gálatas 3-4 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+  "objective": "Gálatas 3-4"
+ },
+ "v2": {
+  "passageRef": "Fé e promessa",
+  "context": "A promessa dada a Abraão se cumpre em Cristo e é recebida pela fé.",
+  "keyword": "Promessa",
+  "verseRefs": [
+   "Gálatas 3:11"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Gálatas 3:8–14"
+ ],
+ "verses": [
+  {
+   "ref": "Gálatas 3:8",
+   "text": "E a Escritura, prevendo que Deus justificaria os gentios pela fé, proclamou primeiro o evangelho a Abraão, dizendo: Em ti, serão abençoados todos os povos."
+  },
+  {
+   "ref": "Gálatas 3:9",
+   "text": "Assim, os que são da fé são abençoados com o crente Abraão."
+  },
+  {
+   "ref": "Gálatas 3:10",
+   "text": "Todos aqueles que dependem das obras da lei estão sob maldição, pois está escrito: Maldito todo aquele que não permanece em todas as coisas escritas no livro da lei, para praticá-las."
+  },
+  {
+   "ref": "Gálatas 3:11",
+   "text": "Mas é evidente que, pela lei, ninguém é justificado diante de Deus, porque o justo viverá pela fé."
+  },
+  {
+   "ref": "Gálatas 3:12",
+   "text": "A lei não se fundamenta na fé; ao contrário, aquele que cumprir seus preceitos, por eles viverá."
+  },
+  {
+   "ref": "Gálatas 3:13",
+   "text": "Cristo nos redimiu da maldição da lei, tornando-se ele mesmo maldição em nosso lugar, pois está escrito: Maldito todo aquele que for pendurado em madeiro."
+  },
+  {
+   "ref": "Gálatas 3:14",
+   "text": "Para que a bênção de Abraão chegasse aos gentios, em Jesus Cristo, e para que recebêssemos, pela fé, o Espírito prometido."
+  }
+ ]
+}
+</cena>

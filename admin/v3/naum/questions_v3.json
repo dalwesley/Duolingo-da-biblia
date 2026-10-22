@@ -1,0 +1,2544 @@
+[
+  {
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-01",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 1:7, o Senhor é fortaleza no dia da angústia.",
+    "prompt": "Em Naum 1:7, o Senhor é fortaleza no dia da angústia.",
+    "cue": "Em Naum 1:7, o Senhor é fortaleza no dia da angústia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "O versículo chama o Senhor de fortaleza justamente no dia da angústia.",
+    "feedbackWrong": {
+      "false": "Releia Naum 1:7 e veja como o Senhor é descrito nesse dia."
+    },
+    "hint": "Leia a descrição do Senhor.",
+    "learningObjective": "Observar que o Senhor é fortaleza na angústia.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-02",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 1:7, toque quem o texto apresenta logo no começo.",
+    "prompt": "Em Naum 1:7, toque quem o texto apresenta logo no começo.",
+    "cue": "Em Naum 1:7, toque quem o texto apresenta logo no começo.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "angústia"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor"
+      },
+      {
+        "id": "c",
+        "text": "fortaleza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "O versículo começa apresentando o Senhor, que é bom.",
+    "feedbackWrong": {
+      "a": "Isso nomeia o dia difícil, e não quem protege.",
+      "c": "Isso diz como ele protege, e não quem ele é."
+    },
+    "hint": "Procure o sujeito da primeira parte.",
+    "learningObjective": "Identificar o Senhor como sujeito de Naum 1:7.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-03",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 1:4, o que acontece com o mar e os rios?",
+    "prompt": "Segundo Naum 1:4, o que acontece com o mar e os rios?",
+    "cue": "Segundo Naum 1:4, o que acontece com o mar e os rios?",
+    "verseRef": "Naum 1:4",
+    "passageText": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mudam de lugar sozinhos"
+      },
+      {
+        "id": "b",
+        "text": "Enchem-se de repente"
+      },
+      {
+        "id": "c",
+        "text": "Secam diante do Senhor"
+      },
+      {
+        "id": "d",
+        "text": "Cobrem os montes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele repreende o mar, e o faz secar",
+    "feedbackCorrect": "Ele repreende o mar e o faz secar, e exaure todos os rios.",
+    "feedbackWrong": {
+      "a": "Quem age sobre as águas é o Senhor, e não elas mesmas.",
+      "b": "O movimento é o contrário, pois as águas secam.",
+      "d": "Os montes tremem em outro versículo, sem serem cobertos."
+    },
+    "hint": "Veja a ação do Senhor sobre as águas.",
+    "learningObjective": "Observar o poder do Senhor sobre mar e rios.",
+    "evidence": [
+      "Naum 1:4"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-04",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 1:4 na ordem do texto.",
+    "prompt": "Monte Naum 1:4 na ordem do texto.",
+    "cue": "Monte Naum 1:4 na ordem do texto.",
+    "verseRef": "Naum 1:4",
+    "passageText": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele repreende o mar, e o faz secar"
+      },
+      {
+        "id": "b",
+        "text": "exaure todos os rios"
+      },
+      {
+        "id": "c",
+        "text": "As pastagens de Basã e do Carmelo murcham"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele repreende o mar, e o faz secar",
+    "feedbackCorrect": "Mar, rios e pastagens aparecem nessa ordem no versículo.",
+    "feedbackWrong": {
+      "default": "Comece pelo mar; as pastagens fecham o versículo."
+    },
+    "hint": "O versículo começa pelo mar.",
+    "learningObjective": "Reconhecer a sequência de Naum 1:4.",
+    "evidence": [
+      "Naum 1:4"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-05",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 1:5, o que tremem diante dele?",
+    "prompt": "Em Naum 1:5, o que tremem diante dele?",
+    "cue": "Em Naum 1:5, o que tremem diante dele?",
+    "verseRef": "Naum 1:5",
+    "passageText": "Os montes tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam.",
+    "template": "Os ___ tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "montes"
+      },
+      {
+        "id": "b",
+        "text": "ventos"
+      },
+      {
+        "id": "c",
+        "text": "rios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Os montes tremem diante dele",
+    "feedbackCorrect": "Os montes tremem diante dele e as colinas se derretem.",
+    "feedbackWrong": {
+      "b": "Essa palavra não aparece neste versículo.",
+      "c": "Os rios secam no versículo anterior, e não aqui."
+    },
+    "hint": "Olhe quem reage primeiro no versículo.",
+    "learningObjective": "Lembrar quem treme diante do Senhor.",
+    "evidence": [
+      "Naum 1:5"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-06",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Judá vive dias de aperto sob a opressão assíria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor protege quem confia"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona quem sofre"
+      },
+      {
+        "id": "c",
+        "text": "A força humana basta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Na angústia, o Senhor é fortaleza de quem nele se refugia.",
+    "feedbackWrong": {
+      "b": "O versículo diz o contrário sobre quem se refugia nele.",
+      "c": "A proteção vem do Senhor, e não da força do povo."
+    },
+    "hint": "Veja a promessa feita a quem confia.",
+    "learningObjective": "Ligar Naum 1:7 ao refúgio em dias difíceis.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-01",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 1:7, o Senhor é bom apenas com quem nunca passa por angústia.",
+    "prompt": "Em Naum 1:7, o Senhor é bom apenas com quem nunca passa por angústia.",
+    "cue": "Em Naum 1:7, o Senhor é bom apenas com quem nunca passa por angústia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Ele é fortaleza justamente no dia da angústia, para quem nele se refugia.",
+    "feedbackWrong": {
+      "true": "Releia Naum 1:7 e note em que dia ele é fortaleza."
+    },
+    "hint": "Note em que dia ele protege.",
+    "learningObjective": "Compreender que o refúgio vale na angústia.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-02",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 1:8, toque o que acabará com o lugar da cidade.",
+    "prompt": "Em Naum 1:8, toque o que acabará com o lugar da cidade.",
+    "cue": "Em Naum 1:8, toque o que acabará com o lugar da cidade.",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inundação"
+      },
+      {
+        "id": "b",
+        "text": "inimigos"
+      },
+      {
+        "id": "c",
+        "text": "trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Com uma inundação transbordante",
+    "feedbackCorrect": "Uma inundação transbordante marca o fim anunciado da cidade.",
+    "feedbackWrong": {
+      "b": "Esses são perseguidos, e não quem encerra a cidade.",
+      "c": "Isso persegue os inimigos, e não encerra a cidade."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Reconhecer como o juízo sobre a cidade é anunciado.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-03",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Naum 1:6 se relaciona com Naum 1:7?",
+    "prompt": "Como Naum 1:6 se relaciona com Naum 1:7?",
+    "cue": "Como Naum 1:6 se relaciona com Naum 1:7?",
+    "verseRef": "Naum 1:6–7",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso. O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A força de Deus assusta e também acolhe"
+      },
+      {
+        "id": "b",
+        "text": "Deus muda de ideia a cada versículo"
+      },
+      {
+        "id": "c",
+        "text": "Quem confia dispensa sua bondade"
+      },
+      {
+        "id": "d",
+        "text": "A ira dele anula sua bondade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "O Deus que ninguém enfrenta é o mesmo que acolhe quem se refugia.",
+    "feedbackWrong": {
+      "b": "Não há mudança de ideia, mas dois lados do mesmo Senhor.",
+      "c": "Quem se refugia recebe justamente a bondade dele.",
+      "d": "Juízo e bondade aparecem juntos, sem um apagar o outro."
+    },
+    "hint": "Compare os dois versículos em sequência.",
+    "learningObjective": "Relacionar juízo e refúgio em Naum 1:6–7.",
+    "evidence": [
+      "Naum 1:6–7"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-04",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Naum 1:6–7?",
+    "prompt": "Como avança a cena em Naum 1:6–7?",
+    "cue": "Como avança a cena em Naum 1:6–7?",
+    "verseRef": "Naum 1:6–7",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso. O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém resiste ao furor de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Sua indignação cai como fogo"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor acolhe quem nele confia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "Do furor temido, o texto chega ao refúgio de quem confia.",
+    "feedbackWrong": {
+      "default": "O acolhimento vem por último, depois do furor descrito."
+    },
+    "hint": "O refúgio é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento de Naum 1:6–7.",
+    "evidence": [
+      "Naum 1:6–7"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-05",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 1:8, o que as trevas farão aos inimigos?",
+    "prompt": "Em Naum 1:8, o que as trevas farão aos inimigos?",
+    "cue": "Em Naum 1:8, o que as trevas farão aos inimigos?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "template": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas ___ os seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perseguirão"
+      },
+      {
+        "id": "b",
+        "text": "iluminarão"
+      },
+      {
+        "id": "c",
+        "text": "protegerão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as trevas perseguirão os seus inimigos",
+    "feedbackCorrect": "As trevas perseguirão os inimigos do Senhor.",
+    "feedbackWrong": {
+      "b": "Trevas e luz se opõem; a ação aqui é perseguir.",
+      "c": "A ação anunciada contra eles é outra, bem diferente."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Compreender o desfecho dos inimigos em 1:8.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-06",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 1:7 a Salmos 46:1?",
+    "prompt": "O que liga Naum 1:7 a Salmos 46:1?",
+    "cue": "O que liga Naum 1:7 a Salmos 46:1?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Salmos 46:1",
+      "text": "Deus é nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A aflição nunca alcança ninguém"
+      },
+      {
+        "id": "b",
+        "text": "Deus é refúgio na aflição"
+      },
+      {
+        "id": "c",
+        "text": "O refúgio está nas muralhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Nos dois textos, Deus é refúgio presente na aflição.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de socorro dentro da aflição.",
+      "c": "O refúgio é o próprio Deus, e não muros humanos."
+    },
+    "hint": "Compare o que Deus é nos dois textos.",
+    "learningObjective": "Relacionar o refúgio em Naum e nos Salmos.",
+    "evidence": [
+      "Naum 1:7",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-01",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Naum 1:6–7 mostra o Senhor como juiz temível e, ao mesmo tempo, refúgio de quem nele confia.",
+    "prompt": "Naum 1:6–7 mostra o Senhor como juiz temível e, ao mesmo tempo, refúgio de quem nele confia.",
+    "cue": "Naum 1:6–7 mostra o Senhor como juiz temível e, ao mesmo tempo, refúgio de quem nele confia.",
+    "verseRef": "Naum 1:6–7",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso. O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "Os dois lados aparecem juntos, sem um apagar o outro.",
+    "feedbackWrong": {
+      "false": "Junte os dois versículos e veja juízo e acolhimento lado a lado."
+    },
+    "hint": "Leia os dois versículos juntos.",
+    "learningObjective": "Interpretar juízo e refúgio juntos em Naum.",
+    "evidence": [
+      "Naum 1:6–7"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-02",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 1:7, toque o trecho que mostra como Deus trata quem confia.",
+    "prompt": "Em Naum 1:7, toque o trecho que mostra como Deus trata quem confia.",
+    "cue": "Em Naum 1:7, toque o trecho que mostra como Deus trata quem confia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "da angústia"
+      },
+      {
+        "id": "b",
+        "text": "se refugiam"
+      },
+      {
+        "id": "c",
+        "text": "é bom"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Deus conhece de perto os que nele se refugiam.",
+    "feedbackWrong": {
+      "a": "Isso nomeia o tempo difícil, e não a ação dele.",
+      "c": "Isso descreve o caráter dele, e não a ação com quem confia."
+    },
+    "hint": "Procure pessoas, e não o tempo difícil.",
+    "learningObjective": "Sustentar que Deus conhece quem confia nele.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-03",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Naum 1:7 sustenta sobre o Senhor?",
+    "prompt": "Que leitura Naum 1:7 sustenta sobre o Senhor?",
+    "cue": "Que leitura Naum 1:7 sustenta sobre o Senhor?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiar significa nunca sofrer aperto"
+      },
+      {
+        "id": "b",
+        "text": "Ele é refúgio sem deixar de julgar"
+      },
+      {
+        "id": "c",
+        "text": "Ele protege sem nunca julgar ninguém"
+      },
+      {
+        "id": "d",
+        "text": "Sua bondade depende da força humana"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "O refúgio de 1:7 vem no meio de um anúncio de juízo.",
+    "feedbackWrong": {
+      "a": "A promessa é proteção no aperto, e não ausência dele.",
+      "c": "O capítulo inteiro anuncia juízo sobre a cidade violenta.",
+      "d": "Quem protege é o Senhor; a parte humana é refugiar-se."
+    },
+    "hint": "Lembre o assunto do capítulo inteiro.",
+    "learningObjective": "Escolher a leitura que o capítulo sustenta.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-04",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Nínive na Bíblia?",
+    "prompt": "Qual sequência revela o caminho de Nínive na Bíblia?",
+    "cue": "Qual sequência revela o caminho de Nínive na Bíblia?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive se converte e é poupada"
+      },
+      {
+        "id": "b",
+        "text": "Nínive volta à violência cruel"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor anuncia sua queda final"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+    "feedbackCorrect": "Poupada em Jonas, a cidade volta à violência e cai em Naum.",
+    "feedbackWrong": {
+      "default": "Comece por Jonas; a queda anunciada vem por último."
+    },
+    "hint": "Jonas vem gerações antes de Naum.",
+    "learningObjective": "Ver Nínive de Jonas a Naum na história bíblica.",
+    "evidence": [
+      "Naum 1:8",
+      "Jonas 3:10",
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-05",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 1:9, o que o Senhor fará com quem planeja contra ele?",
+    "prompt": "Em Naum 1:9, o que o Senhor fará com quem planeja contra ele?",
+    "cue": "Em Naum 1:9, o que o Senhor fará com quem planeja contra ele?",
+    "verseRef": "Naum 1:9",
+    "passageText": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "template": "O que pensais contra o SENHOR? Ele mesmo vos ___ de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poupará"
+      },
+      {
+        "id": "b",
+        "text": "esconderá"
+      },
+      {
+        "id": "c",
+        "text": "consumirá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele mesmo vos consumirá de todo",
+    "feedbackCorrect": "Ele mesmo consumirá de todo quem se levanta contra ele.",
+    "feedbackWrong": {
+      "a": "O contexto é de juízo, e não de livramento para eles.",
+      "b": "A ação dele é aberta e final, e não escondê-los."
+    },
+    "hint": "Leia a segunda frase do versículo.",
+    "learningObjective": "Lembrar o desfecho de quem se opõe ao Senhor.",
+    "evidence": [
+      "Naum 1:9"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-06",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 1:7 a Jonas 3:10?",
+    "prompt": "O que liga Naum 1:7 a Jonas 3:10?",
+    "cue": "O que liga Naum 1:7 a Jonas 3:10?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Jonas 3:10",
+      "text": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus poupa quem se converte"
+      },
+      {
+        "id": "b",
+        "text": "Mudar de caminho nada muda"
+      },
+      {
+        "id": "c",
+        "text": "Nínive nunca ouviu Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Em Jonas, Nínive se converte e é poupada pelo mesmo Senhor.",
+    "feedbackWrong": {
+      "b": "Em Jonas, a conversão muda o desfecho da cidade.",
+      "c": "Em Jonas, a cidade ouve e se converte do mau caminho."
+    },
+    "hint": "Veja o que a cidade faz em Jonas.",
+    "learningObjective": "Ligar o refúgio de Naum à misericórdia em Jonas.",
+    "evidence": [
+      "Naum 1:7",
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-01",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 3:1, a cidade é chamada de pacífica e justa.",
+    "prompt": "Em Naum 3:1, a cidade é chamada de pacífica e justa.",
+    "cue": "Em Naum 3:1, a cidade é chamada de pacífica e justa.",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ai da cidade sanguinária",
+    "feedbackCorrect": "A cidade é chamada de sanguinária, cheia de mentiras e roubo.",
+    "feedbackWrong": {
+      "true": "Releia Naum 3:1 e veja o nome dado à cidade."
+    },
+    "hint": "Veja o nome dado à cidade.",
+    "learningObjective": "Observar como Naum descreve a cidade.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-02",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 3:1, toque como a cidade é chamada logo de início.",
+    "prompt": "Em Naum 3:1, toque como a cidade é chamada logo de início.",
+    "cue": "Em Naum 3:1, toque como a cidade é chamada logo de início.",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "sanguinária"
+      },
+      {
+        "id": "b",
+        "text": "roubo"
+      },
+      {
+        "id": "c",
+        "text": "mentiras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ai da cidade sanguinária",
+    "feedbackCorrect": "Logo de início, a cidade é chamada de sanguinária.",
+    "feedbackWrong": {
+      "b": "Isso também a enche, mas vem depois do nome dela.",
+      "c": "Isso diz do que ela está cheia, depois do nome dela."
+    },
+    "hint": "Procure o primeiro adjetivo da cidade.",
+    "learningObjective": "Identificar o nome dado à cidade em 3:1.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-03",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 3:1, de que a cidade está cheia?",
+    "prompt": "Segundo Naum 3:1, de que a cidade está cheia?",
+    "cue": "Segundo Naum 3:1, de que a cidade está cheia?",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Templos e altares"
+      },
+      {
+        "id": "b",
+        "text": "Mentiras e roubo"
+      },
+      {
+        "id": "c",
+        "text": "Festas e cantos"
+      },
+      {
+        "id": "d",
+        "text": "Colheitas e rebanhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cheia de mentiras e de roubo",
+    "feedbackCorrect": "A cidade está cheia de mentiras e de roubo.",
+    "feedbackWrong": {
+      "a": "Templos não são o assunto deste versículo.",
+      "c": "Nada de festa é citado; o texto fala de engano e roubo.",
+      "d": "O campo não aparece; a cidade vive de mentira e roubo."
+    },
+    "hint": "Leia o meio do versículo.",
+    "learningObjective": "Observar do que a cidade está cheia.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-04",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 1:8 na ordem do texto.",
+    "prompt": "Monte Naum 1:8 na ordem do texto.",
+    "cue": "Monte Naum 1:8 na ordem do texto.",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com uma inundação transbordante"
+      },
+      {
+        "id": "b",
+        "text": "Ele acabará de uma vez com o lugar desta cidade"
+      },
+      {
+        "id": "c",
+        "text": "e as trevas perseguirão os seus inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Com uma inundação transbordante",
+    "feedbackCorrect": "Inundação, fim da cidade e inimigos perseguidos, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela inundação; os inimigos fecham o versículo."
+    },
+    "hint": "O versículo começa pela inundação.",
+    "learningObjective": "Reconhecer a sequência de Naum 1:8.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-05",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 1:9, a angústia não se levantará por duas o quê?",
+    "prompt": "Em Naum 1:9, a angústia não se levantará por duas o quê?",
+    "cue": "Em Naum 1:9, a angústia não se levantará por duas o quê?",
+    "verseRef": "Naum 1:9",
+    "passageText": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "template": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vezes"
+      },
+      {
+        "id": "b",
+        "text": "gerações"
+      },
+      {
+        "id": "c",
+        "text": "semanas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a angústia não se levantará por duas vezes",
+    "feedbackCorrect": "Por duas vezes ela não se levantará: o fim é definitivo.",
+    "feedbackWrong": {
+      "b": "A palavra do texto é curta e conta repetições.",
+      "c": "A contagem do texto não é de tempo semanal."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Lembrar a garantia de Naum 1:9.",
+    "evidence": [
+      "Naum 1:9"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-06",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:8 comunica que se liga a este contexto?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "passageA": {
+      "ref": "Naum 1:8",
+      "text": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A cidade opressora chega ao fim anunciado por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cidade sem fim anunciado"
+      },
+      {
+        "id": "b",
+        "text": "Opressão para sempre garantida"
+      },
+      {
+        "id": "c",
+        "text": "Fim anunciado da opressora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+    "feedbackCorrect": "De uma vez, o Senhor acabará com o lugar da cidade.",
+    "feedbackWrong": {
+      "a": "O anúncio é justamente de fim para a cidade.",
+      "b": "A garantia do livro é o contrário disso."
+    },
+    "hint": "Veja o verbo principal do versículo.",
+    "learningObjective": "Ligar Naum 1:8 ao fim da cidade opressora.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-01",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 1:9, a angústia se levantará repetidas vezes, sem fim para Judá.",
+    "prompt": "Em Naum 1:9, a angústia se levantará repetidas vezes, sem fim para Judá.",
+    "cue": "Em Naum 1:9, a angústia se levantará repetidas vezes, sem fim para Judá.",
+    "verseRef": "Naum 1:9",
+    "passageText": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a angústia não se levantará por duas vezes",
+    "feedbackCorrect": "A angústia não se levantará por duas vezes, diz o texto.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Naum 1:9 com atenção à negação."
+    },
+    "hint": "Repare na negação do versículo.",
+    "learningObjective": "Compreender o fim definitivo da opressão.",
+    "evidence": [
+      "Naum 1:9"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-02",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+    "prompt": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+    "cue": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+    "verseRef": "Naum 1:9",
+    "passageText": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "duas vezes"
+      },
+      {
+        "id": "b",
+        "text": "não"
+      },
+      {
+        "id": "c",
+        "text": "angústia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a angústia não se levantará por duas vezes",
+    "feedbackCorrect": "A negação garante que a opressão não volta a se levantar.",
+    "feedbackWrong": {
+      "a": "Isso conta as vezes, e não a palavra que nega.",
+      "c": "Isso nomeia o sofrimento, e não o que o nega."
+    },
+    "hint": "Procure uma palavra curta antes do verbo.",
+    "learningObjective": "Reconhecer a negação que encerra a opressão.",
+    "evidence": [
+      "Naum 1:9"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-03",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que, segundo Naum 3:1, a cidade enfrenta o juízo?",
+    "prompt": "Por que, segundo Naum 3:1, a cidade enfrenta o juízo?",
+    "cue": "Por que, segundo Naum 3:1, a cidade enfrenta o juízo?",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seu povo pediu para cair"
+      },
+      {
+        "id": "b",
+        "text": "Sua violência nunca foi abandonada"
+      },
+      {
+        "id": "c",
+        "text": "Seus muros já estavam velhos"
+      },
+      {
+        "id": "d",
+        "text": "Sua riqueza atraiu inveja alheia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não se libera de sua presa",
+    "feedbackCorrect": "A cidade não larga a presa: a violência persiste.",
+    "feedbackWrong": {
+      "a": "Nenhum pedido do povo aparece no texto.",
+      "c": "O motivo é moral, e não o estado dos muros.",
+      "d": "Inveja alheia não é citada como motivo algum."
+    },
+    "hint": "Veja o que a cidade se recusa a soltar.",
+    "learningObjective": "Relacionar o juízo à violência persistente.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-04",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como Naum 3:1 descreve a cidade, passo a passo?",
+    "prompt": "Como Naum 3:1 descreve a cidade, passo a passo?",
+    "cue": "Como Naum 3:1 descreve a cidade, passo a passo?",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade derrama sangue"
+      },
+      {
+        "id": "b",
+        "text": "A cidade vive de engano e roubo"
+      },
+      {
+        "id": "c",
+        "text": "A cidade não solta a presa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ai da cidade sanguinária",
+    "feedbackCorrect": "Sangue, engano com roubo e presa retida, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo sangue; a presa retida fecha a descrição."
+    },
+    "hint": "A presa aparece no fim.",
+    "learningObjective": "Compreender a descrição crescente da cidade.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-05",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 1:8, como é a inundação que põe fim à cidade?",
+    "prompt": "Em Naum 1:8, como é a inundação que põe fim à cidade?",
+    "cue": "Em Naum 1:8, como é a inundação que põe fim à cidade?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "template": "Com uma inundação ___, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "passageira"
+      },
+      {
+        "id": "b",
+        "text": "transbordante"
+      },
+      {
+        "id": "c",
+        "text": "distante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Com uma inundação transbordante",
+    "feedbackCorrect": "A inundação transbordante marca um fim sem retorno.",
+    "feedbackWrong": {
+      "a": "O fim é de uma vez, e não algo que logo passa.",
+      "c": "A imagem é de águas que chegam e cobrem tudo."
+    },
+    "hint": "Leia o adjetivo logo no começo.",
+    "learningObjective": "Compreender a força do fim anunciado.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-06",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 3:1 a Jonas 3:10?",
+    "prompt": "O que liga Naum 3:1 a Jonas 3:10?",
+    "cue": "O que liga Naum 3:1 a Jonas 3:10?",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "passageA": {
+      "ref": "Naum 3:1",
+      "text": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!"
+    },
+    "passageB": {
+      "ref": "Jonas 3:10",
+      "text": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus esqueceu a cidade"
+      },
+      {
+        "id": "b",
+        "text": "Nínive já fora poupada antes"
+      },
+      {
+        "id": "c",
+        "text": "Nínive nunca se converteu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ai da cidade sanguinária",
+    "feedbackCorrect": "A mesma cidade, poupada em Jonas, volta à violência.",
+    "feedbackWrong": {
+      "a": "Ele a chama de novo pelo nome, gerações depois.",
+      "c": "Em Jonas ela se converte e é poupada por Deus."
+    },
+    "hint": "Lembre o desfecho da cidade em Jonas.",
+    "learningObjective": "Relacionar a Nínive de Naum à de Jonas.",
+    "evidence": [
+      "Naum 3:1",
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-01",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Naum 3:1 apresenta a queda de Nínive como resposta à violência que a cidade não abandonou.",
+    "prompt": "Naum 3:1 apresenta a queda de Nínive como resposta à violência que a cidade não abandonou.",
+    "cue": "Naum 3:1 apresenta a queda de Nínive como resposta à violência que a cidade não abandonou.",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não se libera de sua presa",
+    "feedbackCorrect": "Sangue, mentira e presa retida sustentam o anúncio da queda.",
+    "feedbackWrong": {
+      "false": "Junte as três marcas da cidade citadas no versículo."
+    },
+    "hint": "Junte as marcas da cidade.",
+    "learningObjective": "Interpretar a queda como juízo sobre a violência.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-02",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+    "prompt": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+    "cue": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "mentiras"
+      },
+      {
+        "id": "b",
+        "text": "sua presa"
+      },
+      {
+        "id": "c",
+        "text": "roubo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não se libera de sua presa",
+    "feedbackCorrect": "A cidade não libera sua presa: não larga quem oprime.",
+    "feedbackWrong": {
+      "a": "Isso enche a cidade, mas não é o que ela retém.",
+      "c": "Isso é prática dela, e não quem ela segura."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Sustentar a violência persistente com o texto.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-03",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Naum sustenta sobre a queda de Nínive?",
+    "prompt": "Que leitura Naum sustenta sobre a queda de Nínive?",
+    "cue": "Que leitura Naum sustenta sobre a queda de Nínive?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Motivo para comemorar vingança"
+      },
+      {
+        "id": "b",
+        "text": "Convite a odiar povos atuais"
+      },
+      {
+        "id": "c",
+        "text": "Prova de que Deus abandonou Judá"
+      },
+      {
+        "id": "d",
+        "text": "Juízo sobre violência persistente"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+    "feedbackCorrect": "É juízo sobre violência antiga e persistente, e consolo a Judá.",
+    "feedbackWrong": {
+      "a": "O texto consola os oprimidos, sem festa de ódio.",
+      "b": "A Assíria antiga não representa povo algum de hoje.",
+      "c": "A queda do opressor é justamente cuidado com Judá."
+    },
+    "hint": "Pense em quem sofria sob essa cidade.",
+    "learningObjective": "Escolher a leitura fiel e cuidadosa da queda.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-04",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Nínive até a queda?",
+    "prompt": "Qual sequência revela o caminho de Nínive até a queda?",
+    "cue": "Qual sequência revela o caminho de Nínive até a queda?",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive ouve Jonas e se converte"
+      },
+      {
+        "id": "b",
+        "text": "Nínive volta à violência e ao roubo"
+      },
+      {
+        "id": "c",
+        "text": "Naum anuncia o fim da cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cheia de mentiras e de roubo",
+    "feedbackCorrect": "Conversão em Jonas, retorno à violência e anúncio em Naum.",
+    "feedbackWrong": {
+      "default": "Comece pela conversão antiga; Naum vem depois."
+    },
+    "hint": "Jonas é bem anterior a Naum.",
+    "learningObjective": "Ver a história longa de Nínive na Bíblia.",
+    "evidence": [
+      "Naum 3:1",
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-05",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 1:10, os inimigos serão consumidos como o que, já seco?",
+    "prompt": "Em Naum 1:10, os inimigos serão consumidos como o que, já seco?",
+    "cue": "Em Naum 1:10, os inimigos serão consumidos como o que, já seco?",
+    "verseRef": "Naum 1:10",
+    "passageText": "Porque, ainda que se entrelacem como espinhos e se embriaguem como bêbados, serão inteiramente consumidos como palha seca.",
+    "template": "Porque, ainda que se entrelacem como espinhos e se embriaguem como bêbados, serão inteiramente consumidos como ___ seca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palha"
+      },
+      {
+        "id": "b",
+        "text": "sombra"
+      },
+      {
+        "id": "c",
+        "text": "pedra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "serão inteiramente consumidos como palha seca",
+    "feedbackCorrect": "Como palha seca, eles serão inteiramente consumidos.",
+    "feedbackWrong": {
+      "b": "A imagem é de material seco que o fogo consome.",
+      "c": "Pedra não seca nem queima como a imagem do texto."
+    },
+    "hint": "Pense em algo seco que queima rápido.",
+    "learningObjective": "Lembrar a imagem do fim dos inimigos.",
+    "evidence": [
+      "Naum 1:10"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-06",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 1:8 a Jonas 3:7–8?",
+    "prompt": "O que liga Naum 1:8 a Jonas 3:7–8?",
+    "cue": "O que liga Naum 1:8 a Jonas 3:7–8?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "passageA": {
+      "ref": "Naum 1:8",
+      "text": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos."
+    },
+    "passageB": {
+      "ref": "Jonas 3:7–8",
+      "text": "E fez-se proclamar em Nínive, por mandado do rei e de seus grandes, que nem homens, nem animais, nem bois, nem ovelhas provem coisa alguma; nem a eles se dê pasto, nem bebam água. Mas os homens e os animais se cobrirão de pano de saco e clamarão fortemente a Deus; e cada um se converterá de seu mau caminho e da violência que está em suas mãos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Arrependimento sempre recusado"
+      },
+      {
+        "id": "b",
+        "text": "Chamado antigo ao arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Violência aprovada por Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+    "feedbackCorrect": "Em Jonas, até o rei chama a cidade a deixar a violência.",
+    "feedbackWrong": {
+      "a": "Naquela geração, a cidade atendeu ao chamado.",
+      "c": "Em Jonas, a ordem é deixar a violência das mãos."
+    },
+    "hint": "Veja o decreto do rei em Jonas.",
+    "learningObjective": "Ligar a queda ao chamado antigo de Jonas.",
+    "evidence": [
+      "Naum 1:8",
+      "Jonas 3:7–8"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-01",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 1:5, os montes tremem diante do Senhor.",
+    "prompt": "Em Naum 1:5, os montes tremem diante do Senhor.",
+    "cue": "Em Naum 1:5, os montes tremem diante do Senhor.",
+    "verseRef": "Naum 1:5",
+    "passageText": "Os montes tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Os montes tremem diante dele",
+    "feedbackCorrect": "Montes tremem e colinas se derretem diante dele.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Naum 1:5."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Observar a reação da terra diante do Senhor.",
+    "evidence": [
+      "Naum 1:5"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-02",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 1:4, toque o que ele faz secar ao repreender.",
+    "prompt": "Em Naum 1:4, toque o que ele faz secar ao repreender.",
+    "cue": "Em Naum 1:4, toque o que ele faz secar ao repreender.",
+    "verseRef": "Naum 1:4",
+    "passageText": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o mar"
+      },
+      {
+        "id": "b",
+        "text": "todos os rios"
+      },
+      {
+        "id": "c",
+        "text": "a flor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ele repreende o mar, e o faz secar",
+    "feedbackCorrect": "Ele repreende o mar e o faz secar.",
+    "feedbackWrong": {
+      "b": "Esses ele exaure, em outra ação do versículo.",
+      "c": "Essa murcha no fim, sem ser o alvo da repreensão."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Observar a ação do Senhor sobre o mar.",
+    "evidence": [
+      "Naum 1:4"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-03",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 1:6, quem consegue resistir ao furor do Senhor?",
+    "prompt": "Segundo Naum 1:6, quem consegue resistir ao furor do Senhor?",
+    "cue": "Segundo Naum 1:6, quem consegue resistir ao furor do Senhor?",
+    "verseRef": "Naum 1:6",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os reis da terra"
+      },
+      {
+        "id": "b",
+        "text": "A cidade murada"
+      },
+      {
+        "id": "c",
+        "text": "Os exércitos fortes"
+      },
+      {
+        "id": "d",
+        "text": "Ninguém consegue resistir"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Quem pode resistir ao seu furor",
+    "feedbackCorrect": "A pergunta do texto espera resposta negativa: ninguém.",
+    "feedbackWrong": {
+      "a": "Reis também estão sob o furor que ninguém enfrenta.",
+      "b": "Muros não aparecem como proteção neste versículo.",
+      "c": "Força militar não sustenta ninguém diante dele."
+    },
+    "hint": "Veja a pergunta que abre o versículo.",
+    "learningObjective": "Observar que ninguém resiste ao Senhor.",
+    "evidence": [
+      "Naum 1:6"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-04",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 1:7 na ordem do texto.",
+    "prompt": "Monte Naum 1:7 na ordem do texto.",
+    "cue": "Monte Naum 1:7 na ordem do texto.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é bom"
+      },
+      {
+        "id": "b",
+        "text": "é fortaleza no dia da angústia"
+      },
+      {
+        "id": "c",
+        "text": "e conhece os que nele se refugiam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "Bondade, proteção na angústia e cuidado, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela bondade; o cuidado fecha o versículo."
+    },
+    "hint": "O versículo começa pela bondade.",
+    "learningObjective": "Reconhecer a sequência de Naum 1:7.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-05",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 1:6, a indignação se derrama como o quê?",
+    "prompt": "Em Naum 1:6, a indignação se derrama como o quê?",
+    "cue": "Em Naum 1:6, a indignação se derrama como o quê?",
+    "verseRef": "Naum 1:6",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso.",
+    "template": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como ___, e as rochas são demolidas por causa disso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fogo"
+      },
+      {
+        "id": "b",
+        "text": "vento"
+      },
+      {
+        "id": "c",
+        "text": "água"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A sua indignação se derrama como fogo",
+    "feedbackCorrect": "A indignação se derrama como fogo sobre as rochas.",
+    "feedbackWrong": {
+      "b": "O vento não é a comparação usada aqui.",
+      "c": "Água é imagem de outro versículo, e não desta ira."
+    },
+    "hint": "Procure a comparação do fim.",
+    "learningObjective": "Lembrar a imagem da ira em Naum 1:6.",
+    "evidence": [
+      "Naum 1:6"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-06",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem confia no Senhor busca nele segurança no aperto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus acolhe quem confia"
+      },
+      {
+        "id": "b",
+        "text": "O aperto vence sempre"
+      },
+      {
+        "id": "c",
+        "text": "Confiar nunca é preciso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Ele conhece de perto os que nele se refugiam.",
+    "feedbackWrong": {
+      "b": "Na angústia, ele é fortaleza de quem confia.",
+      "c": "O versículo valoriza justamente quem se refugia nele."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Ligar Naum 1:7 à confiança no aperto.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-07",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 1:10, toque como os inimigos serão consumidos.",
+    "prompt": "Em Naum 1:10, toque como os inimigos serão consumidos.",
+    "cue": "Em Naum 1:10, toque como os inimigos serão consumidos.",
+    "verseRef": "Naum 1:10",
+    "passageText": "Porque, ainda que se entrelacem como espinhos e se embriaguem como bêbados, serão inteiramente consumidos como palha seca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "bêbados"
+      },
+      {
+        "id": "b",
+        "text": "espinhos"
+      },
+      {
+        "id": "c",
+        "text": "palha seca"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "serão inteiramente consumidos como palha seca",
+    "feedbackCorrect": "Como palha seca, serão inteiramente consumidos.",
+    "feedbackWrong": {
+      "a": "Isso descreve o estado deles, e não a comparação final.",
+      "b": "Isso descreve como se entrelaçam, e não a comparação final."
+    },
+    "hint": "Leia a comparação do fim.",
+    "learningObjective": "Observar a comparação final de Naum 1:10.",
+    "evidence": [
+      "Naum 1:10"
+    ]
+  },
+  {
+    "id": "naum-sem-naum-naum-03-desafio-naum-08",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 1:5 na ordem do texto.",
+    "prompt": "Monte Naum 1:5 na ordem do texto.",
+    "cue": "Monte Naum 1:5 na ordem do texto.",
+    "verseRef": "Naum 1:5",
+    "passageText": "Os montes tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os montes tremem diante dele"
+      },
+      {
+        "id": "b",
+        "text": "e as colinas se derretem"
+      },
+      {
+        "id": "c",
+        "text": "a terra se ergue diante dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Os montes tremem diante dele",
+    "feedbackCorrect": "Montes, colinas e terra reagem nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelos montes; a terra vem depois."
+    },
+    "hint": "O versículo começa pelos montes.",
+    "learningObjective": "Reconhecer a sequência de Naum 1:5.",
+    "evidence": [
+      "Naum 1:5"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-01",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 1:7–8, o refúgio prometido cancela o juízo anunciado sobre a cidade.",
+    "prompt": "Em Naum 1:7–8, o refúgio prometido cancela o juízo anunciado sobre a cidade.",
+    "cue": "Em Naum 1:7–8, o refúgio prometido cancela o juízo anunciado sobre a cidade.",
+    "verseRef": "Naum 1:7–8",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam. Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+    "feedbackCorrect": "Refúgio e juízo vêm juntos: um não cancela o outro.",
+    "feedbackWrong": {
+      "true": "Leia os dois versículos e veja os dois anúncios."
+    },
+    "hint": "Leia os dois anúncios juntos.",
+    "learningObjective": "Compreender refúgio e juízo lado a lado.",
+    "evidence": [
+      "Naum 1:7–8"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-02",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+    "prompt": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+    "cue": "Em Naum 1:9, toque a palavra curta que nega uma nova angústia.",
+    "verseRef": "Naum 1:9",
+    "passageText": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "duas vezes"
+      },
+      {
+        "id": "b",
+        "text": "não"
+      },
+      {
+        "id": "c",
+        "text": "angústia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a angústia não se levantará por duas vezes",
+    "feedbackCorrect": "A negação garante o fim definitivo da opressão.",
+    "feedbackWrong": {
+      "a": "Isso conta as vezes, e não a palavra que nega.",
+      "c": "Isso nomeia o sofrimento, e não o que o nega."
+    },
+    "hint": "Procure uma palavra curta antes do verbo.",
+    "learningObjective": "Reconhecer a negação que encerra a opressão.",
+    "evidence": [
+      "Naum 1:9"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-03",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Naum 1:8 se encadeia com Naum 1:9?",
+    "prompt": "Como Naum 1:8 se encadeia com Naum 1:9?",
+    "cue": "Como Naum 1:8 se encadeia com Naum 1:9?",
+    "verseRef": "Naum 1:8–9",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos. O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O fim da opressão não se repetirá"
+      },
+      {
+        "id": "b",
+        "text": "A cidade voltará ainda mais forte"
+      },
+      {
+        "id": "c",
+        "text": "Judá sofrerá o mesmo fim da cidade"
+      },
+      {
+        "id": "d",
+        "text": "O juízo fica só na ameaça vazia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a angústia não se levantará por duas vezes",
+    "feedbackCorrect": "Ao fim da cidade segue a garantia de que não se repete.",
+    "feedbackWrong": {
+      "b": "O texto anuncia fim de uma vez, e não retorno dela.",
+      "c": "Judá é consolada; o fim é da cidade opressora.",
+      "d": "Os verbos anunciam ação certa, e não ameaça vazia."
+    },
+    "hint": "Veja a garantia do segundo versículo.",
+    "learningObjective": "Relacionar o fim da cidade à garantia de 1:9.",
+    "evidence": [
+      "Naum 1:8–9"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-04",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o anúncio em Naum 1:8–9?",
+    "prompt": "Como avança o anúncio em Naum 1:8–9?",
+    "cue": "Como avança o anúncio em Naum 1:8–9?",
+    "verseRef": "Naum 1:8–9",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos. O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor põe fim à cidade"
+      },
+      {
+        "id": "b",
+        "text": "Trevas perseguem seus inimigos"
+      },
+      {
+        "id": "c",
+        "text": "A angústia não volta a levantar-se"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele acabará de uma vez com o lugar desta cidade",
+    "feedbackCorrect": "Fim da cidade, inimigos perseguidos e opressão sem retorno.",
+    "feedbackWrong": {
+      "default": "Comece pelo fim da cidade; a garantia fecha."
+    },
+    "hint": "A garantia de não repetir vem por último.",
+    "learningObjective": "Compreender o encadeamento de Naum 1:8–9.",
+    "evidence": [
+      "Naum 1:8–9"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-05",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 1:8, quem as trevas perseguirão?",
+    "prompt": "Em Naum 1:8, quem as trevas perseguirão?",
+    "cue": "Em Naum 1:8, quem as trevas perseguirão?",
+    "verseRef": "Naum 1:8",
+    "passageText": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus inimigos.",
+    "template": "Com uma inundação transbordante, Ele acabará de uma vez com o lugar desta cidade; e as trevas perseguirão os seus ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigos"
+      },
+      {
+        "id": "b",
+        "text": "amigos"
+      },
+      {
+        "id": "c",
+        "text": "vizinhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as trevas perseguirão os seus inimigos",
+    "feedbackCorrect": "As trevas perseguirão os inimigos do Senhor.",
+    "feedbackWrong": {
+      "b": "A relação citada no texto é de oposição a ele.",
+      "c": "Vizinhos não são citados neste versículo."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Compreender quem enfrenta o juízo em 1:8.",
+    "evidence": [
+      "Naum 1:8"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-06",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 1:7 a Jonas 3:10?",
+    "prompt": "O que liga Naum 1:7 a Jonas 3:10?",
+    "cue": "O que liga Naum 1:7 a Jonas 3:10?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Jonas 3:10",
+      "text": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive nunca ouviu Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus poupa quem se converte"
+      },
+      {
+        "id": "c",
+        "text": "Mudar de caminho nada muda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Em Jonas, a cidade se converte e é poupada por ele.",
+    "feedbackWrong": {
+      "a": "Em Jonas, a cidade ouve e muda de caminho.",
+      "c": "Em Jonas, a conversão muda o desfecho dela."
+    },
+    "hint": "Veja o desfecho da cidade em Jonas.",
+    "learningObjective": "Relacionar refúgio em Naum e misericórdia em Jonas.",
+    "evidence": [
+      "Naum 1:7",
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-07",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 1:4, toque o que ele faz com todos os rios.",
+    "prompt": "Em Naum 1:4, toque o que ele faz com todos os rios.",
+    "cue": "Em Naum 1:4, toque o que ele faz com todos os rios.",
+    "verseRef": "Naum 1:4",
+    "passageText": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "repreende"
+      },
+      {
+        "id": "b",
+        "text": "exaure"
+      },
+      {
+        "id": "c",
+        "text": "faz secar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "exaure todos os rios",
+    "feedbackCorrect": "Ele exaure todos os rios, além de secar o mar.",
+    "feedbackWrong": {
+      "a": "Isso ele faz com o mar, logo antes neste versículo.",
+      "c": "Isso também é com o mar, e não com os rios."
+    },
+    "hint": "Procure o verbo junto aos rios.",
+    "learningObjective": "Relacionar cada ação ao seu alvo em 1:4.",
+    "evidence": [
+      "Naum 1:4"
+    ]
+  },
+  {
+    "id": "naum-cam-naum-naum-03-desafio-naum-08",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Naum 1:4–5?",
+    "prompt": "Como avança a cena em Naum 1:4–5?",
+    "cue": "Como avança a cena em Naum 1:4–5?",
+    "verseRef": "Naum 1:4–5",
+    "passageText": "Ele repreende o mar, e o faz secar; exaure todos os rios. As pastagens de Basã e do Carmelo murcham, e a flor do Líbano se murcha. Os montes tremem diante dele, e as colinas se derretem; a terra se ergue diante dele, sim, o mundo e todos os que nele habitam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor seca mar e rios"
+      },
+      {
+        "id": "b",
+        "text": "Pastagens e flores murcham"
+      },
+      {
+        "id": "c",
+        "text": "Montes e colinas tremem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele repreende o mar, e o faz secar",
+    "feedbackCorrect": "Das águas à terra seca, até os montes que tremem.",
+    "feedbackWrong": {
+      "default": "Comece pelas águas; os montes fecham o trecho."
+    },
+    "hint": "Os montes aparecem no versículo seguinte.",
+    "learningObjective": "Compreender o avanço de Naum 1:4–5.",
+    "evidence": [
+      "Naum 1:4–5"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-01",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Naum 1:6–7 coloca lado a lado o temor do juízo e o refúgio em Deus.",
+    "prompt": "Naum 1:6–7 coloca lado a lado o temor do juízo e o refúgio em Deus.",
+    "cue": "Naum 1:6–7 coloca lado a lado o temor do juízo e o refúgio em Deus.",
+    "verseRef": "Naum 1:6–7",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso. O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "Furor temido e bondade que acolhe aparecem juntos.",
+    "feedbackWrong": {
+      "false": "Junte os dois versículos e veja os dois lados."
+    },
+    "hint": "Leia os dois versículos juntos.",
+    "learningObjective": "Interpretar juízo e refúgio juntos.",
+    "evidence": [
+      "Naum 1:6–7"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-02",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 1:7, toque o trecho que mostra como Deus trata quem confia.",
+    "prompt": "Em Naum 1:7, toque o trecho que mostra como Deus trata quem confia.",
+    "cue": "Em Naum 1:7, toque o trecho que mostra como Deus trata quem confia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "é bom"
+      },
+      {
+        "id": "b",
+        "text": "se refugiam"
+      },
+      {
+        "id": "c",
+        "text": "da angústia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Deus conhece de perto os que nele se refugiam.",
+    "feedbackWrong": {
+      "a": "Isso descreve o caráter dele, e não a ação com quem confia.",
+      "c": "Isso nomeia o tempo difícil, e não a ação dele."
+    },
+    "hint": "Procure pessoas, e não o tempo difícil.",
+    "learningObjective": "Sustentar que Deus conhece quem confia.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-03",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o conjunto de Naum sustenta sobre o Senhor?",
+    "prompt": "Que leitura o conjunto de Naum sustenta sobre o Senhor?",
+    "cue": "Que leitura o conjunto de Naum sustenta sobre o Senhor?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Distante de quem passa por aperto"
+      },
+      {
+        "id": "b",
+        "text": "Refúgio em Deus em meio ao juízo"
+      },
+      {
+        "id": "c",
+        "text": "Só acolhe, sem julgar a violência"
+      },
+      {
+        "id": "d",
+        "text": "Só ameaça, sem acolher ninguém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "Ele acolhe quem confia enquanto julga a cidade cruel.",
+    "feedbackWrong": {
+      "a": "Ele é fortaleza justamente no dia do aperto.",
+      "c": "A cidade violenta enfrenta juízo anunciado.",
+      "d": "Ele conhece quem nele se refugia, diz o texto."
+    },
+    "hint": "Junte a cena toda, e não um lado só.",
+    "learningObjective": "Escolher a leitura integral de Naum.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-04",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Nínive na Bíblia?",
+    "prompt": "Qual sequência revela o caminho de Nínive na Bíblia?",
+    "cue": "Qual sequência revela o caminho de Nínive na Bíblia?",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive se converte após Jonas"
+      },
+      {
+        "id": "b",
+        "text": "Nínive volta à violência cruel"
+      },
+      {
+        "id": "c",
+        "text": "Naum anuncia refúgio e juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ai da cidade sanguinária",
+    "feedbackCorrect": "Conversão, retorno à violência e anúncio de Naum.",
+    "feedbackWrong": {
+      "default": "Comece por Jonas; Naum vem gerações depois."
+    },
+    "hint": "Jonas é bem anterior a Naum.",
+    "learningObjective": "Ver a história longa de Nínive.",
+    "evidence": [
+      "Naum 3:1",
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-05",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 1:9, o que o Senhor fará com quem planeja contra ele?",
+    "prompt": "Em Naum 1:9, o que o Senhor fará com quem planeja contra ele?",
+    "cue": "Em Naum 1:9, o que o Senhor fará com quem planeja contra ele?",
+    "verseRef": "Naum 1:9",
+    "passageText": "O que pensais contra o SENHOR? Ele mesmo vos consumirá de todo; a angústia não se levantará por duas vezes.",
+    "template": "O que pensais contra o SENHOR? Ele mesmo vos ___ de todo; a angústia não se levantará por duas vezes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconderá"
+      },
+      {
+        "id": "b",
+        "text": "poupará"
+      },
+      {
+        "id": "c",
+        "text": "consumirá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele mesmo vos consumirá de todo",
+    "feedbackCorrect": "Ele mesmo consumirá de todo quem se levanta contra ele.",
+    "feedbackWrong": {
+      "a": "A ação dele é aberta e final, e não escondê-los.",
+      "b": "O contexto é de juízo, e não de livramento para eles."
+    },
+    "hint": "Leia a segunda frase do versículo.",
+    "learningObjective": "Lembrar o desfecho de quem se opõe ao Senhor.",
+    "evidence": [
+      "Naum 1:9"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-06",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 1:7 a Salmos 46:1?",
+    "prompt": "O que liga Naum 1:7 a Salmos 46:1?",
+    "cue": "O que liga Naum 1:7 a Salmos 46:1?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Salmos 46:1",
+      "text": "Deus é nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A aflição nunca alcança ninguém"
+      },
+      {
+        "id": "b",
+        "text": "O refúgio está nas muralhas"
+      },
+      {
+        "id": "c",
+        "text": "Deus é refúgio na aflição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Nos dois textos, Deus é refúgio presente na aflição.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam de socorro dentro da aflição.",
+      "b": "O refúgio é o próprio Deus, e não muros humanos."
+    },
+    "hint": "Compare o que Deus é nos dois textos.",
+    "learningObjective": "Relacionar o refúgio em Naum e nos Salmos.",
+    "evidence": [
+      "Naum 1:7",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-07",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+    "prompt": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+    "cue": "Em Naum 3:1, toque o que a cidade se recusa a liberar.",
+    "verseRef": "Naum 3:1",
+    "passageText": "Ai da cidade sanguinária, cheia de mentiras e de roubo que não se libera de sua presa!",
+    "options": [
+      {
+        "id": "a",
+        "text": "roubo"
+      },
+      {
+        "id": "b",
+        "text": "mentiras"
+      },
+      {
+        "id": "c",
+        "text": "sua presa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não se libera de sua presa",
+    "feedbackCorrect": "A cidade não libera sua presa: não larga quem oprime.",
+    "feedbackWrong": {
+      "a": "Isso é prática dela, e não quem ela segura.",
+      "b": "Isso enche a cidade, mas não é o que ela retém."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Sustentar a violência persistente com o texto.",
+    "evidence": [
+      "Naum 3:1"
+    ]
+  },
+  {
+    "id": "naum-pro-naum-naum-03-desafio-naum-08",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do anúncio de paz na Bíblia?",
+    "prompt": "Qual sequência revela o fio do anúncio de paz na Bíblia?",
+    "cue": "Qual sequência revela o fio do anúncio de paz na Bíblia?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isaías anuncia pés sobre os montes"
+      },
+      {
+        "id": "b",
+        "text": "Naum retoma o anúncio de paz"
+      },
+      {
+        "id": "c",
+        "text": "Paulo cita pés que anunciam o bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom",
+    "feedbackCorrect": "Isaías, Naum e Paulo ecoam os pés que anunciam o bem.",
+    "feedbackWrong": {
+      "default": "Siga Isaías, depois Naum, e por fim Paulo."
+    },
+    "hint": "Paulo vem séculos depois dos profetas.",
+    "learningObjective": "Ver o anúncio de paz de Isaías a Paulo.",
+    "evidence": [
+      "Naum 1:7",
+      "Isaías 52:7",
+      "Naum 1:15",
+      "Romanos 10:15"
+    ]
+  }
+]

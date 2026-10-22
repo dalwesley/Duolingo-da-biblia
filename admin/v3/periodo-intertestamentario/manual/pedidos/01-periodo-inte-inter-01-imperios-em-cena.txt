@@ -1,0 +1,71 @@
+Escreva a cena "periodo-inte-inter-01-imperios-em-cena" da trilha "periodo-intertestamentario" (Período Intertestamentário).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "periodo-intertestamentario",
+  "title": "Período Intertestamentário",
+  "description": "Os anos de silêncio profético — e a preparação do cenário.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Entre os testamentos",
+ "mission": {
+  "slug": "periodo-inte-inter-01-imperios-em-cena",
+  "title": "Impérios em cena",
+  "type": "lesson",
+  "intro": "Persas, gregos e romanos.",
+  "hookRef": "História / esperança messiânica",
+  "hookNote": "Persas, gregos e romanos.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre impérios?"
+ },
+ "v2": {
+  "passageRef": "História / esperança messiânica",
+  "context": "Persas, gregos e romanos.",
+  "keyword": "Impérios",
+  "verseRefs": [
+   "Daniel 8:20–21"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Daniel 8:17–24"
+ ],
+ "verses": [
+  {
+   "ref": "Daniel 8:17",
+   "text": "Ele se aproximou de onde eu estava; ao chegar, fiquei amedrontado e prostrei-me com o rosto em terra; mas ele me disse: \"Entende, filho do homem, pois essa visão se refere ao tempo do fim.\""
+  },
+  {
+   "ref": "Daniel 8:18",
+   "text": "E, enquanto ele falava comigo, caí sem sentidos com o rosto em terra; ele, porém, me tocou e me fez levantar da posição em que eu estava."
+  },
+  {
+   "ref": "Daniel 8:19",
+   "text": "E disse: Eis que vou te fazer saber o que acontecerá no último tempo da ira, porque esta visão se refere ao tempo determinado do fim."
+  },
+  {
+   "ref": "Daniel 8:20",
+   "text": "O carneiro que você viu com dois chifres representa os reis da Média e da Pérsia."
+  },
+  {
+   "ref": "Daniel 8:21",
+   "text": "Mas o bode peludo é o rei da Grécia; e o chifre grande que estava entre os olhos é o primeiro rei."
+  },
+  {
+   "ref": "Daniel 8:22",
+   "text": "E quando for quebrado, surgirão quatro em seu lugar, o que significa que quatro reinos se levantarão daquela mesma nação, mas não com a mesma força que ela tinha."
+  },
+  {
+   "ref": "Daniel 8:23",
+   "text": "Mas, no fim do seu reinado, quando os prevaricadores tiverem alcançado seu limite de transgressão, se levantará um rei de feroz catadura e mestre em intrigas."
+  },
+  {
+   "ref": "Daniel 8:24",
+   "text": "E a sua força será poderosa, mas não por sua própria força; ele causará destruições assombrosas, prosperará e realizará o que lhe apraz; destruirá os poderosos e o povo santo."
+  }
+ ]
+}
+</cena>

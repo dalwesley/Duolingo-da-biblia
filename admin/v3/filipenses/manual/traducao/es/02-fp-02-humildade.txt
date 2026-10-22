@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para espanhol (neutro da América Latina, com "tú").
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Génesis, Éxodo, Juan, Salmos, Romanos…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "filipenses-sem-fp-02-humildade-01": {
+  "question": "Em Filipenses 2:3, Paulo mandou cada um se considerar superior a todos os outros.",
+  "learningObjective": "Observar a ordem de Paulo sobre humildade.",
+  "feedbackCorrect": "É o contrário: considerar os outros superiores a si mesmo.",
+  "feedbackWrong": {
+   "true": "Releia Filipenses 2:3: a humildade olha para o outro."
+  },
+  "hint": "Veja a direção do considerar no versículo.",
+  "_verso": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo."
+ },
+ "filipenses-sem-fp-02-humildade-02": {
+  "question": "Em Filipenses 2:8, toque até onde foi a obediência de Cristo.",
+  "learningObjective": "Identificar o limite da obediência de Cristo.",
+  "feedbackCorrect": "A obediência dele não parou antes do fim mais duro.",
+  "feedbackWrong": {
+   "a": "Homem é a forma que ele assumiu, não o limite da obediência.",
+   "c": "Isso especifica o tipo de morte, depois do limite dito."
+  },
+  "hint": "Procure a palavra logo depois de até à.",
+  "_verso": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz."
+ },
+ "filipenses-sem-fp-02-humildade-03": {
+  "question": "Segundo Filipenses 2:8, como Cristo se humilhou?",
+  "learningObjective": "Observar a humilhação de Cristo em 2:8.",
+  "feedbackCorrect": "A descida dele vai até a obediência na cruz.",
+  "feedbackWrong": {
+   "a": "Ele assumiu o sofrimento, não o recusou.",
+   "b": "Ele não fugiu: ele se entregou em obediência.",
+   "c": "A cruz expôs, não escondeu, a missão dele."
+  },
+  "hint": "Veja o fim da trajetória de descida.",
+  "options": {
+   "a": "Recusando qualquer tipo de sofrimento",
+   "b": "Fugindo das pessoas que o rejeitaram",
+   "c": "Escondendo quem ele era até à velhice",
+   "d": "Tornando-se obediente até à morte de cruz"
+  },
+  "_verso": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz."
+ },
+ "filipenses-sem-fp-02-humildade-04": {
+  "question": "Monte Filipenses 2:7 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência da descida de Cristo.",
+  "feedbackCorrect": "Ele se esvazia, vira servo e se faz como os homens.",
+  "feedbackWrong": {
+   "default": "Comece pelo esvaziamento dele mesmo."
+  },
+  "hint": "A ordem começa com ele se esvaziando.",
+  "_verso": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+ },
+ "filipenses-sem-fp-02-humildade-05": {
+  "question": "Em Filipenses 2:7, que forma Cristo assumiu ao se esvaziar?",
+  "learningObjective": "Lembrar a forma assumida por Cristo.",
+  "feedbackCorrect": "Quem era Deus assume o lugar de quem serve.",
+  "feedbackWrong": {
+   "a": "O juízo não é a forma que ele assume ao descer.",
+   "b": "Ele será reconhecido Rei, mas aqui assume outro lugar."
+  },
+  "hint": "É o lugar de quem serve aos outros.",
+  "_verso": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+ },
+ "filipenses-sem-fp-02-humildade-06": {
+  "question": "O que Filipenses 2:5 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a vida da igreja ao sentimento de Cristo.",
+  "feedbackCorrect": "O remédio da rivalidade é ter o sentimento de Cristo.",
+  "feedbackWrong": {
+   "a": "Cristo se aproximou e serviu; não se distanciou.",
+   "c": "Rivalidade e vaidade são o problema, não o remédio."
+  },
+  "hint": "Veja de quem é o sentimento pedido.",
+  "options": {
+   "a": "Distância segura dos outros",
+   "b": "Mesma mente de Cristo",
+   "c": "Orgulho que vence debates"
+  },
+  "_verso": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus."
+ },
+ "filipenses-cam-fp-02-humildade-01": {
+  "question": "Em Filipenses 2:9, Deus exaltou Cristo porque ele se humilhou até à morte de cruz.",
+  "learningObjective": "Compreender a ligação entre humilhação e exaltação.",
+  "feedbackCorrect": "O por isso liga a exaltação à humilhação obediente dele.",
+  "feedbackWrong": {
+   "false": "O versículo começa ligando exaltação à descida dele."
+  },
+  "hint": "Veja as duas primeiras palavras do versículo.",
+  "_verso": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome"
+ },
+ "filipenses-cam-fp-02-humildade-02": {
+  "question": "Em Filipenses 2:3, toque a palavrinha que vira a ordem da rivalidade para a humildade.",
+  "learningObjective": "Reconhecer o marcador de contraste em 2:3.",
+  "feedbackCorrect": "Nada por rivalidade; com humildade, diz a virada.",
+  "feedbackWrong": {
+   "b": "Isso abre a proibição, não faz a virada dela.",
+   "c": "Isso é um dos males proibidos, não a virada."
+  },
+  "hint": "Procure a conjunção curta antes de humildade.",
+  "_verso": "Nada façam por rivalidade ou vaidade mas, com humildade, cada um considere os outros superiores a si mesmo."
+ },
+ "filipenses-cam-fp-02-humildade-03": {
+  "question": "Como o caminho de Cristo em Filipenses 2:6–8 responde à rivalidade de 2:3?",
+  "learningObjective": "Relacionar o exemplo de Cristo à vida da igreja.",
+  "feedbackCorrect": "O oposto da rivalidade: abrir mão e servir até à cruz.",
+  "feedbackWrong": {
+   "b": "Ele não disputa superioridade: ele desce a servo.",
+   "c": "Quem serve aqui é ele, não quem o cerca.",
+   "d": "Ele se fez como os homens, não se afastou deles."
+  },
+  "hint": "Compare apegar-se a direitos com esvaziar-se.",
+  "options": {
+   "a": "Em vez de se apegar ao seu direito, ele se fez servo",
+   "b": "Ele venceu os rivais mostrando ser superior a todos",
+   "c": "Ele exigiu que todos o servissem primeiro na terra",
+   "d": "Ele abandonou as pessoas para viver sozinho no céu"
+  },
+  "_verso": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz."
+ },
+ "filipenses-cam-fp-02-humildade-04": {
+  "question": "Como se encadeia a descida de Cristo em Filipenses 2:6–8?",
+  "learningObjective": "Compreender as etapas da descida de Cristo.",
+  "feedbackCorrect": "Não se apegar, esvaziar-se e obedecer até à cruz.",
+  "feedbackWrong": {
+   "default": "Comece pelo que ele não fez questão de segurar."
+  },
+  "hint": "A cruz é o ponto mais baixo da descida.",
+  "options": {
+   "a": "Ele não se apega ao ser igual a Deus",
+   "b": "Ele se esvazia e assume forma de servo",
+   "c": "Ele obedece até à morte de cruz"
+  },
+  "_verso": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar."
+ },
+ "filipenses-cam-fp-02-humildade-05": {
+  "question": "Em Filipenses 2:5, o que a igreja deve ter em si, como houve em Cristo?",
+  "learningObjective": "Compreender o que a igreja deve imitar em Cristo.",
+  "feedbackCorrect": "Não é só admirar: é ter o mesmo modo de sentir.",
+  "feedbackWrong": {
+   "a": "Debate por rivalidade é justamente o problema.",
+   "b": "Medo não é o que Paulo manda copiar de Cristo."
+  },
+  "hint": "É o modo interior de Cristo diante dos outros.",
+  "_verso": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus."
+ },
+ "filipenses-cam-fp-02-humildade-06": {
+  "question": "O que liga Filipenses 2:7 a Marcos 10:45?",
+  "learningObjective": "Relacionar a forma de servo às palavras de Jesus.",
+  "feedbackCorrect": "Jesus mesmo disse: ele veio não para ser servido, mas servir.",
+  "feedbackWrong": {
+   "a": "Ele serve até dar a vida; não foge de nada.",
+   "b": "Os dois textos invertem a grandeza pelo domínio."
+  },
+  "hint": "Veja para que o Filho do Homem veio.",
+  "options": {
+   "a": "Servo que foge do sofrimento",
+   "b": "Grandeza por dominar os outros",
+   "c": "Filho do Homem veio servir"
+  },
+  "_verso": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+ },
+ "filipenses-pro-fp-02-humildade-01": {
+  "question": "Filipenses 2:6–7 ensina que Jesus deixou de ser Deus ao assumir a forma de servo.",
+  "learningObjective": "Interpretar a descida sem apagar quem Cristo é.",
+  "feedbackCorrect": "Ele existia na forma de Deus e assume a de servo: soma, não troca.",
+  "feedbackWrong": {
+   "true": "O hino mantém as duas formas sobre o mesmo Cristo."
+  },
+  "hint": "Veja o que ele já era antes de descer.",
+  "_verso": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar. mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+ },
+ "filipenses-pro-fp-02-humildade-02": {
+  "question": "Em Filipenses 2:6, toque o que Cristo já existia sendo, antes de se esvaziar.",
+  "learningObjective": "Sustentar no texto quem Cristo era antes da descida.",
+  "feedbackCorrect": "A descida parte do alto: ele já existia como Deus.",
+  "feedbackWrong": {
+   "b": "Isso fala da igualdade que ele não usou para si.",
+   "c": "Isso é o que ele não considerou fazer, não o que era."
+  },
+  "hint": "Procure a primeira descrição dele no versículo.",
+  "_verso": "Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar."
+ },
+ "filipenses-pro-fp-02-humildade-03": {
+  "question": "Que leitura Filipenses 2:6–9 sustenta sobre humildade e exaltação?",
+  "learningObjective": "Escolher a interpretação que o hino sustenta.",
+  "feedbackCorrect": "A descida a servo termina em exaltação dada pelo Pai.",
+  "feedbackWrong": {
+   "b": "O hino começa afirmando que ele existia como Deus.",
+   "c": "A exaltação responde à obediência, não à sorte.",
+   "d": "Humildade aqui é servir o outro, não se odiar."
+  },
+  "hint": "Ligue o por isso à descida anterior.",
+  "options": {
+   "a": "Quem se humilha a servo é exaltado por Deus",
+   "b": "Cristo é só um exemplo moral, sem ser Deus",
+   "c": "Exaltação é prêmio de sorte para alguns poucos",
+   "d": "Humildade é pensar que você não vale nada"
+  },
+  "_verso": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome"
+ },
+ "filipenses-pro-fp-02-humildade-04": {
+  "question": "Qual sequência revela o sentido de Filipenses 2:6–11?",
+  "learningObjective": "Ver o arco completo do hino de Cristo.",
+  "feedbackCorrect": "De Deus a servo, de servo a Senhor confessado por todos.",
+  "feedbackWrong": {
+   "default": "Comece por quem ele era antes de descer."
+  },
+  "hint": "A confissão universal fecha o hino.",
+  "options": {
+   "a": "O Filho existe na forma de Deus",
+   "b": "Ele desce a servo obediente até à cruz",
+   "c": "Toda língua o confessa como Senhor"
+  },
+  "_verso": "E toda língua confesse que Jesus Cristo é Senhor, para a glória de Deus Pai."
+ },
+ "filipenses-pro-fp-02-humildade-05": {
+  "question": "Em Filipenses 2:9, o que Deus concedeu a Cristo acima de todos os outros?",
+  "learningObjective": "Lembrar o centro da exaltação de Cristo.",
+  "feedbackCorrect": "Ao nome dele todo joelho se dobrará, diz o hino.",
+  "feedbackWrong": {
+   "a": "Trono não é a palavra do hino nesta frase.",
+   "b": "Nenhum templo é concedido nesta exaltação."
+  },
+  "hint": "É diante dele que todo joelho se dobra.",
+  "_verso": "Por isso, Deus o exaltou sobremaneira e lhe concedeu o nome que está acima de todo nome"
+ },
+ "filipenses-pro-fp-02-humildade-06": {
+  "question": "O que liga Filipenses 2:7 a João 1:14?",
+  "learningObjective": "Ligar a descida de Cristo à encarnação em João.",
+  "feedbackCorrect": "João diz o mesmo mistério: o Verbo divino se fez carne.",
+  "feedbackWrong": {
+   "a": "A carne é assumida por amor, não uma prisão.",
+   "b": "Ele continua Deus ao se fazer carne, nos dois textos."
+  },
+  "hint": "Veja o que o Verbo se tornou em João.",
+  "options": {
+   "a": "Carne como prisão do espírito",
+   "b": "Deus desiste de ser Deus",
+   "c": "O Verbo se fez carne"
+  },
+  "_verso": "mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens;"
+ },
+ "estudo:fp-02-humildade": {
+  "context": "Paulo quer uma igreja unida, sem rivalidade nem vaidade. Para isso, ele não dá só uma ordem: ele mostra o caminho do próprio Cristo, que desceu de Deus a servo e à cruz.",
+  "focusQuestion": "Em que relação você precisa parar de se defender e começar a servir?",
+  "keywordGloss": "O sentimento de Cristo: em vez de se apegar ao que é seu, ele se esvazia e serve até o fim.",
+  "reflectionPrompts": [
+   "Considerar o outro",
+   "Descer para servir",
+   "Exaltação vem de Deus"
+  ],
+  "facts": [
+   "Paulo pede que a igreja compartilhe o mesmo sentimento e esteja unida em alma.",
+   "Com humildade, cada um deve considerar os outros superiores a si mesmo.",
+   "Cada um deve cuidar também do que é dos outros, não só do seu.",
+   "Cristo, existindo na forma de Deus, não se apegou ao ser igual a Deus.",
+   "Ele se esvaziou, assumindo a forma de servo.",
+   "Ele se humilhou, obediente até à morte, e morte de cruz."
+  ],
+  "_verso": "Tenham em vocês o mesmo sentimento que existia em Cristo Jesus. Ele, que existia na forma de Deus, não considerou o ser igual a Deus como algo a se apropriar. mas a si mesmo se esvaziou assumindo a forma de servo, tornando-se em semelhança de homens; E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz."
+ }
+}

@@ -1,0 +1,67 @@
+Escreva a cena "lm-04-palavra" da trilha "lamentacoes" (Lamentações).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "lamentacoes",
+  "title": "Lamentações",
+  "description": "Luto de Jerusalém — e misericórdias que se renovam.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A cidade",
+ "mission": {
+  "slug": "lm-04-palavra",
+  "title": "Cumpriu a sua palavra",
+  "type": "lesson",
+  "intro": "O desastre não foi acidente. O poema diz que Jeová fez o que intentou e cumpriu a palavra antiga.",
+  "hookRef": "Lamentações 2:17",
+  "hookNote": "O inimigo se alegra, mas o versículo não entrega o roteiro ao inimigo. A palavra de Jeová se cumpre.",
+  "centralInsight": "O juízo cumpre a palavra antiga",
+  "objective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado."
+ },
+ "v2": {
+  "passageRef": "Lamentações 2:17",
+  "context": "Jeová cumpre a palavra, derruba sem piedade e o inimigo se alegra.",
+  "keyword": "Palavra",
+  "verseRefs": [
+   "Lamentações 2:17"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Lamentações 2:14–20"
+ ],
+ "verses": [
+  {
+   "ref": "Lamentações 2:14",
+   "text": "Os teus profetas te disseram coisas vãs e insensatas e não revelaram a tua maldade, para que não restaurasses a tua sorte; ao contrário, anunciaram visões de sentenças falsas, que te levaram para o cativeiro."
+  },
+  {
+   "ref": "Lamentações 2:15",
+   "text": "Todos os que passam pelo caminho aplaudem, assobiam e balançam a cabeça em relação à filha de Jerusalém, dizendo: É esta a cidade que era chamada a perfeição da formosura, a alegria de toda a terra?"
+  },
+  {
+   "ref": "Lamentações 2:16",
+   "text": "Todos os seus inimigos abrem a boca contra você, assobiam e rangem os dentes; dizem: Devoramo-la; certamente, este é o dia que esperávamos; finalmente a encontrámos e a vimos."
+  },
+  {
+   "ref": "Lamentações 2:17",
+   "text": "O Senhor executou o que havia planejado, cumpriu a Sua palavra que proclamou desde os tempos antigos; derrubou e não teve compaixão; fez com que o inimigo se alegrasse por sua causa e exaltou o poder de seus adversários."
+  },
+  {
+   "ref": "Lamentações 2:18",
+   "text": "O coração de Jerusalém clama ao Senhor: Ó muralha da filha de Sião, corram as tuas lágrimas como um ribeiro, de dia e de noite; não te dês descanso, nem cessem as meninas dos teus olhos!"
+  },
+  {
+   "ref": "Lamentações 2:19",
+   "text": "Levanta-te, clama de noite no princípio das vigílias; derrama, como água, teu coração diante do Senhor; eleva a ele as tuas mãos, pela vida de teus filhinhos que desfalecem de fome à entrada de todas as ruas."
+  },
+  {
+   "ref": "Lamentações 2:20",
+   "text": "Vê, ó Senhor, e considera a quem fizeste assim: as mulheres comerão o fruto de suas entranhas, as crianças que acariciam? Ou será que o sacerdote e o profeta morrerão no santuário do Senhor?"
+  }
+ ]
+}
+</cena>

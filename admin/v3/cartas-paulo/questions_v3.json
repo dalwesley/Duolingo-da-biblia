@@ -1,0 +1,2537 @@
+[
+  {
+    "id": "cartas-paulo-sem-cp-01-apostolo-01",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 9:15, o Senhor chama Saulo de instrumento escolhido para levar o seu nome.",
+    "prompt": "Em Atos 9:15, o Senhor chama Saulo de instrumento escolhido para levar o seu nome.",
+    "cue": "Em Atos 9:15, o Senhor chama Saulo de instrumento escolhido para levar o seu nome.",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "este é um instrumento escolhido para levar o meu nome",
+    "feedbackCorrect": "É assim que o Senhor apresenta Saulo a Ananias, apesar do passado dele.",
+    "feedbackWrong": {
+      "false": "Releia Atos 9:15 e veja como o Senhor apresenta Saulo."
+    },
+    "hint": "Veja como o Senhor fala de Saulo.",
+    "learningObjective": "Observar como o Senhor apresenta Saulo a Ananias.",
+    "evidence": [
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-01-apostolo-02",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 9:15, toque como o Senhor chama Saulo.",
+    "prompt": "Em Atos 9:15, toque como o Senhor chama Saulo.",
+    "cue": "Em Atos 9:15, toque como o Senhor chama Saulo.",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instrumento escolhido"
+      },
+      {
+        "id": "b",
+        "text": "gentios"
+      },
+      {
+        "id": "c",
+        "text": "filhos de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "este é um instrumento escolhido",
+    "feedbackCorrect": "O Senhor não chama Saulo pelo passado, mas pela tarefa que lhe dá.",
+    "feedbackWrong": {
+      "b": "Os gentios são parte de quem ouviria; não é como Saulo é chamado.",
+      "c": "Os filhos de Israel também ouviriam; não é o nome dado a Saulo."
+    },
+    "hint": "Procure o que o Senhor diz que Saulo é.",
+    "learningObjective": "Identificar como o Senhor apresenta Saulo.",
+    "evidence": [
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-01-apostolo-03",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Atos 9:18, o que acontece logo que Ananias impõe as mãos em Saulo?",
+    "prompt": "Segundo Atos 9:18, o que acontece logo que Ananias impõe as mãos em Saulo?",
+    "cue": "Segundo Atos 9:18, o que acontece logo que Ananias impõe as mãos em Saulo?",
+    "verseRef": "Atos 9:18",
+    "passageText": "E imediatamente, como que umas escamas caíram dos seus olhos, e ele passou a ver; a seguir, levantando-se foi batizado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele parte para Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Ele prende Ananias"
+      },
+      {
+        "id": "c",
+        "text": "Ele foge de Damasco"
+      },
+      {
+        "id": "d",
+        "text": "Ele volta a ver"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "ele passou a ver",
+    "feedbackCorrect": "Como escamas caem dos olhos de Saulo, ele volta a ver e é batizado.",
+    "feedbackWrong": {
+      "a": "A ida a Jerusalém só acontece mais tarde, em Atos 9:26.",
+      "b": "Ananias vem em obediência, e Saulo o recebe.",
+      "c": "Saulo não foge; ele fica e depois prega em Damasco."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Observar a recuperação da vista de Saulo.",
+    "evidence": [
+      "Atos 9:18"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-01-apostolo-04",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 9:8 na ordem do texto.",
+    "prompt": "Monte Atos 9:8 na ordem do texto.",
+    "cue": "Monte Atos 9:8 na ordem do texto.",
+    "verseRef": "Atos 9:8",
+    "passageText": "E Saulo se levantou do chão e, ao abrir os olhos, não conseguia ver nada. E, guiando-o pela mão, levaram-no a Damasco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Saulo se levantou do chão"
+      },
+      {
+        "id": "b",
+        "text": "ao abrir os olhos, não conseguia ver nada"
+      },
+      {
+        "id": "c",
+        "text": "guiando-o pela mão, levaram-no a Damasco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E Saulo se levantou do chão",
+    "feedbackCorrect": "Saulo se levanta, percebe que não vê e é guiado pela mão até Damasco.",
+    "feedbackWrong": {
+      "default": "Comece por Saulo se levantando; a ida a Damasco fecha o versículo."
+    },
+    "hint": "O versículo começa com Saulo no chão.",
+    "learningObjective": "Reconhecer a sequência de Atos 9:8.",
+    "evidence": [
+      "Atos 9:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-01-apostolo-05",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 9:3, o que rodeou Saulo no caminho para Damasco?",
+    "prompt": "Em Atos 9:3, o que rodeou Saulo no caminho para Damasco?",
+    "cue": "Em Atos 9:3, o que rodeou Saulo no caminho para Damasco?",
+    "verseRef": "Atos 9:3",
+    "passageText": "E, enquanto viajava, ao se aproximar de Damasco, de repente foi rodeado por uma luz brilhante que veio do céu.",
+    "template": "E, enquanto viajava, ao se aproximar de Damasco, de repente foi rodeado por uma ___ brilhante que veio do céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nuvem"
+      },
+      {
+        "id": "b",
+        "text": "voz"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "foi rodeado por uma luz brilhante que veio do céu",
+    "feedbackCorrect": "De repente, uma vinda do céu cerca Saulo e muda a viagem.",
+    "feedbackWrong": {
+      "a": "O texto não fala de nuvem; fala do que veio do céu.",
+      "b": "A voz vem depois, quando Saulo já caiu por terra."
+    },
+    "hint": "Veja o que veio do céu de repente.",
+    "learningObjective": "Lembrar o sinal que cerca Saulo no caminho.",
+    "evidence": [
+      "Atos 9:3"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-01-apostolo-06",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Atos 9:15 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 9:15 comunica que se liga a este contexto?",
+    "cue": "O que Atos 9:15 comunica que se liga a este contexto?",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "passageA": {
+      "ref": "Atos 9:15",
+      "text": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo foi alcançado por Cristo e enviado para anunciar o evangelho entre os povos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado para perseguir cristãos"
+      },
+      {
+        "id": "b",
+        "text": "Enviado aos gentios e reis"
+      },
+      {
+        "id": "c",
+        "text": "Enviado apenas a Jerusalém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para levar o meu nome diante dos gentios, dos reis",
+    "feedbackCorrect": "O Senhor envia Saulo a gentios, reis e filhos de Israel.",
+    "feedbackWrong": {
+      "a": "Perseguir era o passado de Saulo; agora ele é enviado a anunciar.",
+      "c": "A missão alcança gentios e reis, não só uma cidade."
+    },
+    "hint": "Veja diante de quem Saulo levaria o nome.",
+    "learningObjective": "Ligar Atos 9:15 à missão entre os povos.",
+    "evidence": [
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-01-apostolo-01",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 9:17-18, Saulo volta a ver antes de Ananias chegar à casa onde ele estava.",
+    "prompt": "Em Atos 9:17-18, Saulo volta a ver antes de Ananias chegar à casa onde ele estava.",
+    "cue": "Em Atos 9:17-18, Saulo volta a ver antes de Ananias chegar à casa onde ele estava.",
+    "verseRef": "Atos 9:17–18",
+    "passageText": "E Ananias foi, entrou na casa e, impondo-lhe as mãos, disse: Irmão Saulo, o Senhor me enviou, isto é, o próprio Jesus que te apareceu no caminho por onde vinhas, para que recuperasses a visão e ficasses cheio do Espírito Santo. E imediatamente, como que umas escamas caíram dos seus olhos, e ele passou a ver; a seguir, levantando-se foi batizado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "impondo-lhe as mãos, disse",
+    "feedbackCorrect": "Ananias entra, impõe as mãos e só então Saulo volta a ver.",
+    "feedbackWrong": {
+      "true": "Releia a ordem dos fatos em Atos 9:17-18."
+    },
+    "hint": "Compare a chegada de Ananias com a cura.",
+    "learningObjective": "Compreender a ordem entre a visita de Ananias e a cura.",
+    "evidence": [
+      "Atos 9:17–18"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-01-apostolo-02",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 9:15, toque a palavra que vira a conversa depois do medo de Ananias.",
+    "prompt": "Em Atos 9:15, toque a palavra que vira a conversa depois do medo de Ananias.",
+    "cue": "Em Atos 9:15, toque a palavra que vira a conversa depois do medo de Ananias.",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Vai"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Disse-lhe, porém, o Senhor",
+    "feedbackCorrect": "Apesar do que Ananias ouviu sobre Saulo, o Senhor o apresenta de outro modo.",
+    "feedbackWrong": {
+      "a": "Esse é quem fala; a virada está na palavrinha que liga as ideias.",
+      "b": "Essa é a ordem dada a Ananias; a virada vem logo depois dela."
+    },
+    "hint": "Procure uma palavra curta logo depois de quem fala.",
+    "learningObjective": "Reconhecer a palavra que marca a virada na fala do Senhor.",
+    "evidence": [
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-01-apostolo-03",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Atos 9:27 se liga ao medo dos discípulos em Atos 9:26?",
+    "prompt": "Como Atos 9:27 se liga ao medo dos discípulos em Atos 9:26?",
+    "cue": "Como Atos 9:27 se liga ao medo dos discípulos em Atos 9:26?",
+    "verseRef": "Atos 9:26–27",
+    "passageText": "Quando Saulo chegou a Jerusalém, tentou se juntar aos discípulos; no entanto, todos o temiam, pois não acreditavam que ele fosse um dos discípulos. Mas Barnabé, levando-o, apresentou-o aos apóstolos e lhes contou como havia visto o Senhor no caminho, e que Ele lhe tinha falado, e como, em Damasco, pregara ousadamente em nome de Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ananias volta e obriga todos a aceitar Saulo"
+      },
+      {
+        "id": "b",
+        "text": "Barnabé acolhe Saulo e conta o que Jesus lhe fez"
+      },
+      {
+        "id": "c",
+        "text": "Os apóstolos prendem Saulo para testar sua fé"
+      },
+      {
+        "id": "d",
+        "text": "Saulo prova sua fé pagando aos discípulos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas Barnabé, levando-o, apresentou-o aos apóstolos",
+    "feedbackCorrect": "Onde havia medo, Barnabé faz a ponte e apresenta Saulo aos apóstolos.",
+    "feedbackWrong": {
+      "a": "Quem age em Jerusalém é Barnabé, não Ananias.",
+      "c": "Ninguém prende Saulo; Barnabé o apresenta aos apóstolos.",
+      "d": "Não há pagamento; há o testemunho do que Jesus fez."
+    },
+    "hint": "Veja quem toma a iniciativa no versículo 27.",
+    "learningObjective": "Relacionar o medo dos discípulos à acolhida de Barnabé.",
+    "evidence": [
+      "Atos 9:26–27"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-01-apostolo-04",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena de Atos 9:4-5?",
+    "prompt": "Como avança a cena de Atos 9:4-5?",
+    "cue": "Como avança a cena de Atos 9:4-5?",
+    "verseRef": "Atos 9:4–5",
+    "passageText": "Caindo por terra, ele ouviu uma voz que dizia: Saulo, Saulo, por que me persegues? Ele perguntou: Quem és, Senhor? E a resposta foi: Eu sou Jesus, a quem você persegue. Duro é para você recalcitrar contra os aguilhões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Saulo cai e ouve uma voz"
+      },
+      {
+        "id": "b",
+        "text": "Saulo pergunta quem está falando"
+      },
+      {
+        "id": "c",
+        "text": "Jesus se apresenta a Saulo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+    "feedbackCorrect": "Saulo ouve, pergunta quem fala e então Jesus diz quem ele é.",
+    "feedbackWrong": {
+      "default": "Comece pela voz ouvida; Jesus se apresenta por último."
+    },
+    "hint": "A apresentação de Jesus é o ponto de chegada.",
+    "learningObjective": "Compreender o avanço do encontro no caminho.",
+    "evidence": [
+      "Atos 9:4–5"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-01-apostolo-05",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Atos 9:16, o que o Senhor diz que Saulo fará por causa do seu nome?",
+    "prompt": "Em Atos 9:16, o que o Senhor diz que Saulo fará por causa do seu nome?",
+    "cue": "Em Atos 9:16, o que o Senhor diz que Saulo fará por causa do seu nome?",
+    "verseRef": "Atos 9:16",
+    "passageText": "Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome.",
+    "template": "Pois eu lhe mostrarei quanto é necessário que ele ___ por causa do meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sofra"
+      },
+      {
+        "id": "b",
+        "text": "fuja"
+      },
+      {
+        "id": "c",
+        "text": "viva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quanto é necessário que ele sofra por causa do meu nome",
+    "feedbackCorrect": "A missão dada a Saulo inclui pagar um preço pelo nome do Senhor.",
+    "feedbackWrong": {
+      "b": "Saulo não é chamado a fugir; ele enfrentará o custo.",
+      "c": "O Senhor fala do preço da missão, não só de viver por ele."
+    },
+    "hint": "Veja o preço ligado à missão no versículo.",
+    "learningObjective": "Compreender que a missão de Saulo inclui sofrimento.",
+    "evidence": [
+      "Atos 9:16"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-01-apostolo-06",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 9:20 a Atos 9:15?",
+    "prompt": "O que liga Atos 9:20 a Atos 9:15?",
+    "cue": "O que liga Atos 9:20 a Atos 9:15?",
+    "verseRef": "Atos 9:20",
+    "passageText": "E logo, nas sinagogas, pregava a Jesus, afirmando que Ele é o Filho de Deus.",
+    "passageA": {
+      "ref": "Atos 9:20",
+      "text": "E logo, nas sinagogas, pregava a Jesus, afirmando que Ele é o Filho de Deus."
+    },
+    "passageB": {
+      "ref": "Atos 9:15",
+      "text": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Saulo desiste da missão"
+      },
+      {
+        "id": "b",
+        "text": "Ananias prega em Damasco"
+      },
+      {
+        "id": "c",
+        "text": "O enviado começa a pregar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pregava a Jesus, afirmando que Ele é o Filho de Deus",
+    "feedbackCorrect": "O instrumento escolhido já aparece pregando Jesus em Damasco.",
+    "feedbackWrong": {
+      "a": "Saulo faz o contrário; logo prega nas sinagogas.",
+      "b": "Quem prega em Atos 9:20 é Saulo, não Ananias."
+    },
+    "hint": "Compare a tarefa anunciada com o que Saulo faz.",
+    "learningObjective": "Relacionar a escolha de Saulo ao início da sua pregação.",
+    "evidence": [
+      "Atos 9:20",
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-01-apostolo-01",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Atos 9:15-16, a missão de Saulo inclui levar o nome do Senhor e também sofrer por esse nome.",
+    "prompt": "Em Atos 9:15-16, a missão de Saulo inclui levar o nome do Senhor e também sofrer por esse nome.",
+    "cue": "Em Atos 9:15-16, a missão de Saulo inclui levar o nome do Senhor e também sofrer por esse nome.",
+    "verseRef": "Atos 9:15–16",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel. Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quanto é necessário que ele sofra por causa do meu nome",
+    "feedbackCorrect": "Envio e sofrimento vêm juntos na mesma fala do Senhor.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos; a tarefa e o preço aparecem juntos."
+    },
+    "hint": "Junte o que os dois versículos dizem.",
+    "learningObjective": "Interpretar missão e sofrimento como partes do mesmo chamado.",
+    "evidence": [
+      "Atos 9:15–16"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-01-apostolo-02",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 9:20, toque o título que Saulo afirma sobre Jesus.",
+    "prompt": "Em Atos 9:20, toque o título que Saulo afirma sobre Jesus.",
+    "cue": "Em Atos 9:20, toque o título que Saulo afirma sobre Jesus.",
+    "verseRef": "Atos 9:20",
+    "passageText": "E logo, nas sinagogas, pregava a Jesus, afirmando que Ele é o Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sinagogas"
+      },
+      {
+        "id": "b",
+        "text": "Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Filho de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "afirmando que Ele é o Filho de Deus",
+    "feedbackCorrect": "O antigo perseguidor agora anuncia quem Jesus é.",
+    "feedbackWrong": {
+      "a": "Esse é o lugar da pregação, não o título de Jesus.",
+      "b": "Esse é o nome; o título afirmado vem no fim do versículo."
+    },
+    "hint": "Procure o que Saulo afirma que Jesus é.",
+    "learningObjective": "Sustentar com o texto a confissão de Saulo sobre Jesus.",
+    "evidence": [
+      "Atos 9:20"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-01-apostolo-03",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Atos 9:15-16 sustenta sobre o chamado de Saulo?",
+    "prompt": "Que leitura Atos 9:15-16 sustenta sobre o chamado de Saulo?",
+    "cue": "Que leitura Atos 9:15-16 sustenta sobre o chamado de Saulo?",
+    "verseRef": "Atos 9:15–16",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel. Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus o escolhe e o envio inclui sofrimento"
+      },
+      {
+        "id": "b",
+        "text": "O envio vale apenas para os de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Deus o escolhe só porque ele era justo"
+      },
+      {
+        "id": "d",
+        "text": "Saulo se escolhe e garante uma vida sem dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "este é um instrumento escolhido para levar o meu nome",
+    "feedbackCorrect": "A escolha é de Deus, o alcance é amplo e o caminho inclui sofrimento.",
+    "feedbackWrong": {
+      "b": "Gentios e reis também estão entre os que ouviriam.",
+      "c": "Saulo perseguia os discípulos; a escolha vem da graça do Senhor.",
+      "d": "Quem escolhe é o Senhor, e ele anuncia sofrimento, não conforto."
+    },
+    "hint": "Junte quem escolhe, quem ouvirá e o que custará.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o chamado.",
+    "evidence": [
+      "Atos 9:15–16"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-01-apostolo-04",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Atos 9:28?",
+    "prompt": "Qual sequência revela o sentido de Atos 9:28?",
+    "cue": "Qual sequência revela o sentido de Atos 9:28?",
+    "verseRef": "Atos 9:28",
+    "passageText": "E se apresentava livremente com eles em Jerusalém, entrando e saindo, pregando com ousadia em nome do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus chama Saulo no caminho"
+      },
+      {
+        "id": "b",
+        "text": "Saulo anuncia Jesus nas sinagogas"
+      },
+      {
+        "id": "c",
+        "text": "Saulo prega com ousadia em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pregando com ousadia em nome do Senhor",
+    "feedbackCorrect": "Quem ia prender discípulos agora prega com ousadia onde os perseguia.",
+    "feedbackWrong": {
+      "default": "Siga a história do chamado à pregação em Jerusalém."
+    },
+    "hint": "Siga a ordem da história de Saulo.",
+    "learningObjective": "Ver a mudança de Saulo do caminho até Jerusalém.",
+    "evidence": [
+      "Atos 9:28"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-01-apostolo-05",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Atos 9:22, que título Saulo demonstra que Jesus é?",
+    "prompt": "Em Atos 9:22, que título Saulo demonstra que Jesus é?",
+    "cue": "Em Atos 9:22, que título Saulo demonstra que Jesus é?",
+    "verseRef": "Atos 9:22",
+    "passageText": "Porém, Saulo se fortalecia cada vez mais e confundia os judeus que moravam em Damasco, demonstrando que Jesus é o Cristo.",
+    "template": "Porém, Saulo se fortalecia cada vez mais e confundia os judeus que moravam em Damasco, demonstrando que Jesus é o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "demonstrando que Jesus é o Cristo",
+    "feedbackCorrect": "Saulo passa a demonstrar às pessoas o que antes combatia.",
+    "feedbackWrong": {
+      "a": "O texto não usa esse título aqui; veja o fim do versículo.",
+      "b": "O título demonstrado em Damasco é mais específico."
+    },
+    "hint": "Veja o título no fim do versículo.",
+    "learningObjective": "Lembrar o título que carrega a confissão sobre Jesus.",
+    "evidence": [
+      "Atos 9:22"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-01-apostolo-06",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Atos 9:15 a Gálatas 1:15?",
+    "prompt": "O que liga Atos 9:15 a Gálatas 1:15?",
+    "cue": "O que liga Atos 9:15 a Gálatas 1:15?",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "passageA": {
+      "ref": "Atos 9:15",
+      "text": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel."
+    },
+    "passageB": {
+      "ref": "Gálatas 1:15",
+      "text": "Mas, quando agradou a Deus, que me separou desde o ventre de minha mãe e me chamou pela sua graça, aprouve"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado feito pelos apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "Missão limitada a Damasco"
+      },
+      {
+        "id": "c",
+        "text": "Chamado para anunciar aos gentios"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para levar o meu nome diante dos gentios",
+    "feedbackCorrect": "Paulo relê o próprio chamado como graça de Deus para anunciar Cristo.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, quem chama e separa é Deus.",
+      "b": "O alcance inclui gentios e reis, não uma só cidade."
+    },
+    "hint": "Veja para quem Paulo diz que foi separado.",
+    "learningObjective": "Ligar o chamado de Atos à leitura que Paulo faz dele.",
+    "evidence": [
+      "Atos 9:15",
+      "Gálatas 1:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-02-evangelho-01",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 1:7, Paulo diz que alguns perturbavam os gálatas e queriam perverter o evangelho.",
+    "prompt": "Em Gálatas 1:7, Paulo diz que alguns perturbavam os gálatas e queriam perverter o evangelho.",
+    "cue": "Em Gálatas 1:7, Paulo diz que alguns perturbavam os gálatas e queriam perverter o evangelho.",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "há alguns que vos perturbam e querem perverter o evangelho de Cristo",
+    "feedbackCorrect": "O problema não era só dúvida; havia quem virasse o evangelho do avesso.",
+    "feedbackWrong": {
+      "false": "Releia Gálatas 1:7 e veja o que essas pessoas faziam."
+    },
+    "hint": "Veja o que algumas pessoas faziam.",
+    "learningObjective": "Observar a perturbação causada nos gálatas.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-02-evangelho-02",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 1:6, toque como aquele que chamou os gálatas os chamou.",
+    "prompt": "Em Gálatas 1:6, toque como aquele que chamou os gálatas os chamou.",
+    "cue": "Em Gálatas 1:6, toque como aquele que chamou os gálatas os chamou.",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "tão rapidamente"
+      },
+      {
+        "id": "c",
+        "text": "outro evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os chamou na graça de Cristo",
+    "feedbackCorrect": "Os gálatas foram chamados sem merecer, pelo favor de Cristo.",
+    "feedbackWrong": {
+      "b": "Isso diz a velocidade do afastamento, não como foram chamados.",
+      "c": "Isso é para onde eles estavam indo, não como foram chamados."
+    },
+    "hint": "Procure o meio pelo qual eles foram chamados.",
+    "learningObjective": "Identificar o meio pelo qual os gálatas foram chamados.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-02-evangelho-03",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 1:8, quem também não poderia anunciar um evangelho diferente?",
+    "prompt": "Segundo Gálatas 1:8, quem também não poderia anunciar um evangelho diferente?",
+    "cue": "Segundo Gálatas 1:8, quem também não poderia anunciar um evangelho diferente?",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um discípulo novo"
+      },
+      {
+        "id": "b",
+        "text": "Um líder da sinagoga"
+      },
+      {
+        "id": "c",
+        "text": "Um viajante estrangeiro"
+      },
+      {
+        "id": "d",
+        "text": "Um anjo vindo do céu"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "ainda que nós ou mesmo um anjo vindo do céu",
+    "feedbackCorrect": "Nem a autoridade mais alta imaginável pode trocar o evangelho.",
+    "feedbackWrong": {
+      "a": "O texto sobe a aposta até alguém vindo do céu.",
+      "b": "O texto não cita esse líder; cita até um anjo.",
+      "c": "O ponto é que ninguém, nem do céu, pode mudar a mensagem."
+    },
+    "hint": "Veja quem Paulo cita além de si mesmo.",
+    "learningObjective": "Observar o alcance do aviso de Paulo.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-02-evangelho-04",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 1:6 na ordem do texto.",
+    "prompt": "Monte Gálatas 1:6 na ordem do texto.",
+    "cue": "Monte Gálatas 1:6 na ordem do texto.",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estou surpreso de que vocês tenham se afastado tão rapidamente"
+      },
+      {
+        "id": "b",
+        "text": "daquele que os chamou na graça de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "para seguir um outro evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Estou surpreso de que vocês tenham se afastado tão rapidamente",
+    "feedbackCorrect": "Paulo estranha a rapidez de quem deixa quem o chamou por outra mensagem.",
+    "feedbackWrong": {
+      "default": "Comece pela surpresa de Paulo; a nova mensagem fecha o versículo."
+    },
+    "hint": "O versículo começa com a surpresa de Paulo.",
+    "learningObjective": "Reconhecer a sequência de Gálatas 1:6.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-02-evangelho-05",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 1:7, o que algumas pessoas queriam fazer com o evangelho de Cristo?",
+    "prompt": "Em Gálatas 1:7, o que algumas pessoas queriam fazer com o evangelho de Cristo?",
+    "cue": "Em Gálatas 1:7, o que algumas pessoas queriam fazer com o evangelho de Cristo?",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "template": "Que não é outro, mas há alguns que vos perturbam e querem ___ o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perverter"
+      },
+      {
+        "id": "b",
+        "text": "anunciar"
+      },
+      {
+        "id": "c",
+        "text": "defender"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "querem perverter o evangelho de Cristo",
+    "feedbackCorrect": "A intenção era virar o evangelho do avesso, não só explicá-lo.",
+    "feedbackWrong": {
+      "b": "Anunciar é o que Paulo fazia; o grupo queria outra coisa.",
+      "c": "Defender é o papel de Paulo aqui, não o desse grupo."
+    },
+    "hint": "Veja a intenção desse grupo no versículo.",
+    "learningObjective": "Lembrar a intenção de quem perturbava os gálatas.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-02-evangelho-06",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "passageA": {
+      "ref": "Gálatas 1:6",
+      "text": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os gálatas estavam deixando rapidamente quem os chamou pelo favor de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Firmeza dos gálatas na fé"
+      },
+      {
+        "id": "b",
+        "text": "Paulo aprova a mudança"
+      },
+      {
+        "id": "c",
+        "text": "Afastamento rápido do evangelho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tenham se afastado tão rapidamente",
+    "feedbackCorrect": "A surpresa de Paulo é com a velocidade da troca de mensagem.",
+    "feedbackWrong": {
+      "a": "O problema é justamente a falta de firmeza dos gálatas.",
+      "b": "Paulo está surpreso e corrige; ele não aprova a troca."
+    },
+    "hint": "Veja a velocidade com que eles mudaram.",
+    "learningObjective": "Ligar Gálatas 1:6 ao afastamento rápido dos gálatas.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-02-evangelho-01",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 1:6-9, Paulo aceita um evangelho diferente quando ele é pregado por um anjo.",
+    "prompt": "Em Gálatas 1:6-9, Paulo aceita um evangelho diferente quando ele é pregado por um anjo.",
+    "cue": "Em Gálatas 1:6-9, Paulo aceita um evangelho diferente quando ele é pregado por um anjo.",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho",
+    "feedbackCorrect": "Mesmo um anjo não tem licença para anunciar outra mensagem.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 1:8 até o fim do versículo."
+    },
+    "hint": "Leia o aviso até o fim.",
+    "learningObjective": "Compreender que o aviso não abre exceção para ninguém.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-02-evangelho-02",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 1:8, toque quem Paulo inclui no aviso, além dele mesmo.",
+    "prompt": "Em Gálatas 1:8, toque quem Paulo inclui no aviso, além dele mesmo.",
+    "cue": "Em Gálatas 1:8, toque quem Paulo inclui no aviso, além dele mesmo.",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um anjo"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ou mesmo um anjo vindo do céu",
+    "feedbackCorrect": "Paulo fecha todas as portas, até a de uma mensagem vinda do céu.",
+    "feedbackWrong": {
+      "b": "Esse é o lugar de onde viria o mensageiro citado.",
+      "c": "Esse pronome é o próprio Paulo e sua equipe, citados antes."
+    },
+    "hint": "Procure o mensageiro mais inesperado do versículo.",
+    "learningObjective": "Reconhecer quem Paulo inclui no aviso.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-02-evangelho-03",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 1:7 corrige a ideia de haver outro evangelho?",
+    "prompt": "Como Gálatas 1:7 corrige a ideia de haver outro evangelho?",
+    "cue": "Como Gálatas 1:7 corrige a ideia de haver outro evangelho?",
+    "verseRef": "Gálatas 1:6–7",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho. Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra que é uma distorção feita por pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Mostra que cada igreja pode criar o seu"
+      },
+      {
+        "id": "c",
+        "text": "Mostra que Paulo mudou de ideia depois"
+      },
+      {
+        "id": "d",
+        "text": "Mostra que é uma versão mais madura da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Que não é outro, mas há alguns que vos perturbam",
+    "feedbackCorrect": "Não existe um segundo evangelho; existe gente virando o único do avesso.",
+    "feedbackWrong": {
+      "b": "A mensagem é uma só e já foi recebida pelas igrejas.",
+      "c": "Paulo repete o mesmo aviso, sem mudar de posição.",
+      "d": "Paulo não trata a troca como amadurecimento, mas como distorção."
+    },
+    "hint": "Veja a palavrinha que corrige a ideia anterior.",
+    "learningObjective": "Compreender a correção que Paulo faz sobre outro evangelho.",
+    "evidence": [
+      "Gálatas 1:6–7"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-02-evangelho-04",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento de Gálatas 1:6-9?",
+    "prompt": "Como avança o argumento de Gálatas 1:6-9?",
+    "cue": "Como avança o argumento de Gálatas 1:6-9?",
+    "verseRef": "Gálatas 1:6–7",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho. Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo estranha o afastamento rápido"
+      },
+      {
+        "id": "b",
+        "text": "Alguns perturbam e distorcem a mensagem"
+      },
+      {
+        "id": "c",
+        "text": "Paulo repete o aviso sem exceção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Estou surpreso de que vocês tenham se afastado tão rapidamente",
+    "feedbackCorrect": "Da surpresa, Paulo mostra a distorção e repete o aviso com firmeza.",
+    "feedbackWrong": {
+      "default": "Comece pela surpresa de Paulo; a repetição do aviso vem por último."
+    },
+    "hint": "A repetição do aviso fecha o trecho.",
+    "learningObjective": "Compreender os movimentos do argumento de Paulo.",
+    "evidence": [
+      "Gálatas 1:6–7"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-02-evangelho-05",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 15:3, o que Paulo diz que Cristo fez por nossos pecados?",
+    "prompt": "Em 1 Coríntios 15:3, o que Paulo diz que Cristo fez por nossos pecados?",
+    "cue": "Em 1 Coríntios 15:3, o que Paulo diz que Cristo fez por nossos pecados?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "template": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo ___ por nossos pecados, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morreu"
+      },
+      {
+        "id": "b",
+        "text": "voltou"
+      },
+      {
+        "id": "c",
+        "text": "viveu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que Cristo morreu por nossos pecados",
+    "feedbackCorrect": "O centro entregue por Paulo começa pela entrega de Cristo por nós.",
+    "feedbackWrong": {
+      "b": "A volta pertence ao versículo seguinte, sobre a ressurreição.",
+      "c": "A vida de Cristo importa, mas aqui Paulo destaca sua entrega final."
+    },
+    "hint": "Veja o que Cristo fez pelos pecados.",
+    "learningObjective": "Compreender o centro do evangelho entregue por Paulo.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-02-evangelho-06",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 1:8 a 1 Coríntios 15:3?",
+    "prompt": "O que liga Gálatas 1:8 a 1 Coríntios 15:3?",
+    "cue": "O que liga Gálatas 1:8 a 1 Coríntios 15:3?",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "passageA": {
+      "ref": "Gálatas 1:8",
+      "text": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:3",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só evangelho entregue"
+      },
+      {
+        "id": "b",
+        "text": "Cada apóstolo tem sua mensagem"
+      },
+      {
+        "id": "c",
+        "text": "O evangelho muda com o tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "um evangelho que seja diferente do que já vos temos anunciado",
+    "feedbackCorrect": "Paulo defende a mesma mensagem que ele mesmo entregou às igrejas.",
+    "feedbackWrong": {
+      "b": "Paulo recebeu e entregou a mesma mensagem, sem versões rivais.",
+      "c": "O aviso existe justamente porque a mensagem não muda."
+    },
+    "hint": "Compare a mensagem anunciada com a entregue.",
+    "learningObjective": "Relacionar a defesa do evangelho ao seu conteúdo entregue.",
+    "evidence": [
+      "Gálatas 1:8",
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-02-evangelho-01",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 15:3-4, o centro do evangelho é o esforço dos crentes para merecer perdão.",
+    "prompt": "Em 1 Coríntios 15:3-4, o centro do evangelho é o esforço dos crentes para merecer perdão.",
+    "cue": "Em 1 Coríntios 15:3-4, o centro do evangelho é o esforço dos crentes para merecer perdão.",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "O centro é o que Cristo fez por nós, não o que fazemos por ele.",
+    "feedbackWrong": {
+      "true": "Releia quem age nos dois versículos de 1 Coríntios 15."
+    },
+    "hint": "Veja quem é o sujeito das ações.",
+    "learningObjective": "Interpretar Cristo como o centro do evangelho.",
+    "evidence": [
+      "1 Coríntios 15:3–4"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-02-evangelho-02",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 15:4, toque quando Cristo ressuscitou.",
+    "prompt": "Em 1 Coríntios 15:4, toque quando Cristo ressuscitou.",
+    "cue": "Em 1 Coríntios 15:4, toque quando Cristo ressuscitou.",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "sepultado"
+      },
+      {
+        "id": "c",
+        "text": "terceiro dia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "A ressurreição tem tempo marcado no evangelho entregue por Paulo.",
+    "feedbackWrong": {
+      "a": "Esse é o fato; o tempo dele vem logo em seguida.",
+      "b": "Isso é o que acontece antes, com o corpo de Cristo."
+    },
+    "hint": "Procure a marca de tempo do versículo.",
+    "learningObjective": "Sustentar com o texto o tempo da ressurreição.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-02-evangelho-03",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 1:8-9 sustenta sobre mensagens novas nas igrejas?",
+    "prompt": "Que leitura Gálatas 1:8-9 sustenta sobre mensagens novas nas igrejas?",
+    "cue": "Que leitura Gálatas 1:8-9 sustenta sobre mensagens novas nas igrejas?",
+    "verseRef": "Gálatas 1:8–9",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema. Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado anátema.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja deve seguir a maioria do momento"
+      },
+      {
+        "id": "b",
+        "text": "A mensagem recebida é a medida das outras"
+      },
+      {
+        "id": "c",
+        "text": "Toda novidade deve ser aceita sem exame"
+      },
+      {
+        "id": "d",
+        "text": "Quem prega com autoridade pode inovar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se alguém vos pregar um evangelho diferente do que já recebestes",
+    "feedbackCorrect": "O evangelho já recebido mede qualquer mensagem que chegue depois.",
+    "feedbackWrong": {
+      "a": "Os gálatas eram maioria mudando, e Paulo os corrige.",
+      "c": "Paulo manda rejeitar o que difere do evangelho recebido.",
+      "d": "Nem um anjo pode anunciar algo diferente do recebido."
+    },
+    "hint": "Veja com o que Paulo compara toda nova pregação.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre novidades.",
+    "evidence": [
+      "Gálatas 1:8–9"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-02-evangelho-04",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 15:3-4?",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 15:3-4?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 15:3-4?",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morre pelos pecados do seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Cristo é sepultado após a morte"
+      },
+      {
+        "id": "c",
+        "text": "Cristo ressuscita ao terceiro dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "Morte, sepultamento e ressurreição formam o coração do evangelho.",
+    "feedbackWrong": {
+      "default": "Comece pela morte de Cristo; a ressurreição fecha a sequência."
+    },
+    "hint": "A ressurreição é o ponto de chegada.",
+    "learningObjective": "Ver a sequência central do evangelho anunciado.",
+    "evidence": [
+      "1 Coríntios 15:3–4"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-02-evangelho-05",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 1:9, como Paulo diz que deve ser tratado quem prega outro evangelho?",
+    "prompt": "Em Gálatas 1:9, como Paulo diz que deve ser tratado quem prega outro evangelho?",
+    "cue": "Em Gálatas 1:9, como Paulo diz que deve ser tratado quem prega outro evangelho?",
+    "verseRef": "Gálatas 1:9",
+    "passageText": "Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado anátema.",
+    "template": "Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "anátema"
+      },
+      {
+        "id": "c",
+        "text": "apóstolo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que seja considerado anátema",
+    "feedbackCorrect": "A palavra é forte porque trocar o evangelho é assunto sério.",
+    "feedbackWrong": {
+      "a": "Paulo não trata a distorção como assunto de família sem gravidade.",
+      "c": "Esse título é de Paulo; quem troca a mensagem recebe outro nome."
+    },
+    "hint": "Veja a palavra forte no fim do versículo.",
+    "learningObjective": "Lembrar o termo que mostra a gravidade de trocar o evangelho.",
+    "evidence": [
+      "Gálatas 1:9"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-02-evangelho-06",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 15:3 a Romanos 5:8?",
+    "prompt": "O que liga 1 Coríntios 15:3 a Romanos 5:8?",
+    "cue": "O que liga 1 Coríntios 15:3 a Romanos 5:8?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "passageA": {
+      "ref": "1 Coríntios 15:3",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+    },
+    "passageB": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morreu por nós"
+      },
+      {
+        "id": "b",
+        "text": "O perdão depende de nós"
+      },
+      {
+        "id": "c",
+        "text": "Nós morremos por Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "Nos dois textos, a iniciativa do amor é de Deus em Cristo.",
+    "feedbackWrong": {
+      "b": "Os dois textos põem o peso no que Cristo fez, não em nós.",
+      "c": "A direção é contrária; Cristo é quem morre pelo seu povo."
+    },
+    "hint": "Veja quem morre e por quem, nos dois textos.",
+    "learningObjective": "Ligar a morte de Cristo ao amor de Deus em Romanos.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-01",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 9:15, o Senhor diz que Saulo levaria o seu nome diante dos gentios e dos reis.",
+    "prompt": "Em Atos 9:15, o Senhor diz que Saulo levaria o seu nome diante dos gentios e dos reis.",
+    "cue": "Em Atos 9:15, o Senhor diz que Saulo levaria o seu nome diante dos gentios e dos reis.",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para levar o meu nome diante dos gentios, dos reis",
+    "feedbackCorrect": "A missão de Saulo alcançaria povos, governantes e israelitas.",
+    "feedbackWrong": {
+      "false": "Releia Atos 9:15 e veja diante de quem ele iria."
+    },
+    "hint": "Veja diante de quem Saulo iria.",
+    "learningObjective": "Revisar o alcance da missão de Saulo.",
+    "evidence": [
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-02",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 9:15, toque como o Senhor chama Saulo.",
+    "prompt": "Em Atos 9:15, toque como o Senhor chama Saulo.",
+    "cue": "Em Atos 9:15, toque como o Senhor chama Saulo.",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gentios"
+      },
+      {
+        "id": "b",
+        "text": "instrumento escolhido"
+      },
+      {
+        "id": "c",
+        "text": "reis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "este é um instrumento escolhido",
+    "feedbackCorrect": "Saulo é apresentado pela tarefa que o Senhor lhe confia.",
+    "feedbackWrong": {
+      "a": "Os gentios são parte de quem ouviria a mensagem.",
+      "c": "Os reis também ouviriam; não é como Saulo é chamado."
+    },
+    "hint": "Procure o que o Senhor diz que Saulo é.",
+    "learningObjective": "Revisar como o Senhor apresenta Saulo.",
+    "evidence": [
+      "Atos 9:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-03",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Coríntios 15:4, o que aconteceu depois que Cristo foi sepultado?",
+    "prompt": "Segundo 1 Coríntios 15:4, o que aconteceu depois que Cristo foi sepultado?",
+    "cue": "Segundo 1 Coríntios 15:4, o que aconteceu depois que Cristo foi sepultado?",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele ressuscitou ao terceiro dia"
+      },
+      {
+        "id": "b",
+        "text": "Ele ficou no sepulcro"
+      },
+      {
+        "id": "c",
+        "text": "Ele apareceu só em sonho"
+      },
+      {
+        "id": "d",
+        "text": "Ele foi levado a Damasco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "O evangelho entregue por Paulo não para no sepulcro.",
+    "feedbackWrong": {
+      "b": "O texto afirma que ele ressuscitou ao terceiro dia.",
+      "c": "Paulo anuncia um fato, não um sonho dos discípulos.",
+      "d": "Damasco pertence à história de Saulo, não a este versículo."
+    },
+    "hint": "Leia o versículo até o fim.",
+    "learningObjective": "Revisar a ressurreição no evangelho anunciado.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-04",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 9:8 na ordem do texto.",
+    "prompt": "Monte Atos 9:8 na ordem do texto.",
+    "cue": "Monte Atos 9:8 na ordem do texto.",
+    "verseRef": "Atos 9:8",
+    "passageText": "E Saulo se levantou do chão e, ao abrir os olhos, não conseguia ver nada. E, guiando-o pela mão, levaram-no a Damasco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Saulo se levantou do chão"
+      },
+      {
+        "id": "b",
+        "text": "ao abrir os olhos, não conseguia ver nada"
+      },
+      {
+        "id": "c",
+        "text": "guiando-o pela mão, levaram-no a Damasco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E Saulo se levantou do chão",
+    "feedbackCorrect": "Saulo se levanta sem ver e é guiado pela mão até Damasco.",
+    "feedbackWrong": {
+      "default": "Comece por Saulo se levantando; Damasco fecha o versículo."
+    },
+    "hint": "O versículo começa com Saulo no chão.",
+    "learningObjective": "Revisar a sequência de Atos 9:8.",
+    "evidence": [
+      "Atos 9:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-05",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 9:3, o que rodeou Saulo de repente no caminho?",
+    "prompt": "Em Atos 9:3, o que rodeou Saulo de repente no caminho?",
+    "cue": "Em Atos 9:3, o que rodeou Saulo de repente no caminho?",
+    "verseRef": "Atos 9:3",
+    "passageText": "E, enquanto viajava, ao se aproximar de Damasco, de repente foi rodeado por uma luz brilhante que veio do céu.",
+    "template": "E, enquanto viajava, ao se aproximar de Damasco, de repente foi rodeado por uma ___ brilhante que veio do céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "voz"
+      },
+      {
+        "id": "b",
+        "text": "luz"
+      },
+      {
+        "id": "c",
+        "text": "poeira"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "foi rodeado por uma luz brilhante que veio do céu",
+    "feedbackCorrect": "Algo vindo do céu cerca Saulo e interrompe a viagem.",
+    "feedbackWrong": {
+      "a": "A voz vem depois que Saulo cai por terra.",
+      "c": "O texto fala do que veio do céu, não da poeira do caminho."
+    },
+    "hint": "Veja o que veio do céu de repente.",
+    "learningObjective": "Revisar o sinal no caminho de Damasco.",
+    "evidence": [
+      "Atos 9:3"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-06",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "passageA": {
+      "ref": "Gálatas 1:6",
+      "text": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma igreja estava trocando rapidamente a mensagem que havia recebido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aprovação de Paulo à troca"
+      },
+      {
+        "id": "b",
+        "text": "Firmeza exemplar da igreja"
+      },
+      {
+        "id": "c",
+        "text": "Troca rápida de mensagem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tenham se afastado tão rapidamente",
+    "feedbackCorrect": "Paulo estranha a velocidade com que a igreja mudava de mensagem.",
+    "feedbackWrong": {
+      "a": "Paulo corrige a troca; ele não a aprova.",
+      "b": "O problema é justamente a falta de firmeza da igreja."
+    },
+    "hint": "Veja a velocidade da mudança citada.",
+    "learningObjective": "Ligar Gálatas 1:6 à troca rápida de mensagem.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-07",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 9:18, toque o que caiu dos olhos de Saulo.",
+    "prompt": "Em Atos 9:18, toque o que caiu dos olhos de Saulo.",
+    "cue": "Em Atos 9:18, toque o que caiu dos olhos de Saulo.",
+    "verseRef": "Atos 9:18",
+    "passageText": "E imediatamente, como que umas escamas caíram dos seus olhos, e ele passou a ver; a seguir, levantando-se foi batizado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "batizado"
+      },
+      {
+        "id": "b",
+        "text": "olhos"
+      },
+      {
+        "id": "c",
+        "text": "escamas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como que umas escamas caíram dos seus olhos",
+    "feedbackCorrect": "Como escamas caem, e Saulo volta a ver o mundo ao redor.",
+    "feedbackWrong": {
+      "a": "O batismo vem depois que Saulo volta a ver.",
+      "b": "Os olhos são de onde algo cai, não o que cai."
+    },
+    "hint": "Procure a comparação usada no versículo.",
+    "learningObjective": "Revisar a recuperação da vista de Saulo.",
+    "evidence": [
+      "Atos 9:18"
+    ]
+  },
+  {
+    "id": "cartas-paulo-sem-cp-03-desafio-08",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 1:6 na ordem do texto.",
+    "prompt": "Monte Gálatas 1:6 na ordem do texto.",
+    "cue": "Monte Gálatas 1:6 na ordem do texto.",
+    "verseRef": "Gálatas 1:6",
+    "passageText": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estou surpreso de que vocês tenham se afastado tão rapidamente"
+      },
+      {
+        "id": "b",
+        "text": "daquele que os chamou na graça de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "para seguir um outro evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Estou surpreso de que vocês tenham se afastado tão rapidamente",
+    "feedbackCorrect": "Paulo estranha quem deixa quem o chamou por outra mensagem.",
+    "feedbackWrong": {
+      "default": "Comece pela surpresa de Paulo; a outra mensagem fecha."
+    },
+    "hint": "O versículo começa com a surpresa de Paulo.",
+    "learningObjective": "Revisar a sequência de Gálatas 1:6.",
+    "evidence": [
+      "Gálatas 1:6"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-01",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 9:26-27, Barnabé ajudou os discípulos a superar o medo que tinham de Saulo.",
+    "prompt": "Em Atos 9:26-27, Barnabé ajudou os discípulos a superar o medo que tinham de Saulo.",
+    "cue": "Em Atos 9:26-27, Barnabé ajudou os discípulos a superar o medo que tinham de Saulo.",
+    "verseRef": "Atos 9:26–27",
+    "passageText": "Quando Saulo chegou a Jerusalém, tentou se juntar aos discípulos; no entanto, todos o temiam, pois não acreditavam que ele fosse um dos discípulos. Mas Barnabé, levando-o, apresentou-o aos apóstolos e lhes contou como havia visto o Senhor no caminho, e que Ele lhe tinha falado, e como, em Damasco, pregara ousadamente em nome de Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Mas Barnabé, levando-o, apresentou-o aos apóstolos",
+    "feedbackCorrect": "Barnabé faz a ponte entre Saulo e os discípulos que o temiam.",
+    "feedbackWrong": {
+      "false": "Releia o papel de Barnabé em Atos 9:27."
+    },
+    "hint": "Veja quem apresenta Saulo em Jerusalém.",
+    "learningObjective": "Compreender o papel de Barnabé na acolhida de Saulo.",
+    "evidence": [
+      "Atos 9:26–27"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-02",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "prompt": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "cue": "Em Gálatas 1:7, toque a palavra que diz que o evangelho anunciado não é outro.",
+    "verseRef": "Gálatas 1:7",
+    "passageText": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alguns"
+      },
+      {
+        "id": "b",
+        "text": "outro"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que não é outro, mas há alguns",
+    "feedbackCorrect": "Paulo corrige na hora, não há um segundo evangelho válido.",
+    "feedbackWrong": {
+      "a": "Esses são os que perturbam; a correção vem antes deles.",
+      "b": "Essa palavra é justamente a ideia que Paulo corrige."
+    },
+    "hint": "Procure a palavrinha que nega a ideia anterior.",
+    "learningObjective": "Reconhecer a correção de Paulo sobre outro evangelho.",
+    "evidence": [
+      "Gálatas 1:7"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-03",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Atos 9:20 se liga ao que o Senhor disse em Atos 9:15?",
+    "prompt": "Como Atos 9:20 se liga ao que o Senhor disse em Atos 9:15?",
+    "cue": "Como Atos 9:20 se liga ao que o Senhor disse em Atos 9:15?",
+    "verseRef": "Atos 9:20",
+    "passageText": "E logo, nas sinagogas, pregava a Jesus, afirmando que Ele é o Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O escolhido já anuncia Jesus ao povo"
+      },
+      {
+        "id": "b",
+        "text": "Saulo volta a perseguir os discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Ananias assume a pregação por Saulo"
+      },
+      {
+        "id": "d",
+        "text": "Saulo adia a missão por muitos anos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pregava a Jesus, afirmando que Ele é o Filho de Deus",
+    "feedbackCorrect": "A tarefa anunciada começa a se cumprir logo em Damasco.",
+    "feedbackWrong": {
+      "b": "Saulo faz o contrário do seu passado de perseguidor.",
+      "c": "Quem prega nas sinagogas aqui é Saulo, não Ananias.",
+      "d": "O texto diz logo, sem demora, Saulo pregava a Jesus."
+    },
+    "hint": "Compare a tarefa recebida com a primeira ação.",
+    "learningObjective": "Relacionar o chamado de Saulo ao início da pregação.",
+    "evidence": [
+      "Atos 9:20"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-04",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a história de Saulo em Atos 9?",
+    "prompt": "Como avança a história de Saulo em Atos 9?",
+    "cue": "Como avança a história de Saulo em Atos 9?",
+    "verseRef": "Atos 9:15–16",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel. Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Saulo persegue os discípulos do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Jesus aparece a Saulo no caminho"
+      },
+      {
+        "id": "c",
+        "text": "Saulo prega a Jesus em Damasco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "este é um instrumento escolhido para levar o meu nome",
+    "feedbackCorrect": "De perseguidor a pregador, a virada passa pelo encontro com Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo perseguidor; a pregação é o ponto de chegada."
+    },
+    "hint": "A pregação em Damasco fecha o avanço.",
+    "learningObjective": "Compreender o avanço da história de Saulo.",
+    "evidence": [
+      "Atos 9:15–16"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-05",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Coríntios 15:4, o que Paulo diz que Cristo fez ao terceiro dia?",
+    "prompt": "Em 1 Coríntios 15:4, o que Paulo diz que Cristo fez ao terceiro dia?",
+    "cue": "Em 1 Coríntios 15:4, o que Paulo diz que Cristo fez ao terceiro dia?",
+    "verseRef": "1 Coríntios 15:4",
+    "passageText": "e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "template": "e que foi sepultado, e que ___ ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "apareceu"
+      },
+      {
+        "id": "b",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "c",
+        "text": "permaneceu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ressuscitou ao terceiro dia, conforme as Escrituras",
+    "feedbackCorrect": "O terceiro dia marca a vitória anunciada no evangelho.",
+    "feedbackWrong": {
+      "a": "As aparições vêm depois no capítulo; aqui é o fato central.",
+      "c": "Ele não permaneceu no sepulcro; o texto diz o contrário."
+    },
+    "hint": "Veja o fato ligado ao terceiro dia.",
+    "learningObjective": "Compreender a ressurreição como centro do evangelho.",
+    "evidence": [
+      "1 Coríntios 15:4"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-06",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 9:15 a Gálatas 1:15?",
+    "prompt": "O que liga Atos 9:15 a Gálatas 1:15?",
+    "cue": "O que liga Atos 9:15 a Gálatas 1:15?",
+    "verseRef": "Atos 9:15",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel.",
+    "passageA": {
+      "ref": "Atos 9:15",
+      "text": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel."
+    },
+    "passageB": {
+      "ref": "Gálatas 1:15",
+      "text": "Mas, quando agradou a Deus, que me separou desde o ventre de minha mãe e me chamou pela sua graça, aprouve"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado para anunciar aos gentios"
+      },
+      {
+        "id": "b",
+        "text": "Chamado feito pelos discípulos"
+      },
+      {
+        "id": "c",
+        "text": "Missão restrita a Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para levar o meu nome diante dos gentios",
+    "feedbackCorrect": "Paulo entende o próprio chamado como graça para anunciar Cristo.",
+    "feedbackWrong": {
+      "b": "Nos dois textos, quem chama e envia é Deus.",
+      "c": "O alcance inclui os gentios, não uma só cidade."
+    },
+    "hint": "Veja para quem Paulo foi separado.",
+    "learningObjective": "Relacionar o chamado em Atos à carta aos Gálatas.",
+    "evidence": [
+      "Atos 9:15",
+      "Gálatas 1:15"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-07",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 9:27, toque quem apresentou Saulo aos apóstolos.",
+    "prompt": "Em Atos 9:27, toque quem apresentou Saulo aos apóstolos.",
+    "cue": "Em Atos 9:27, toque quem apresentou Saulo aos apóstolos.",
+    "verseRef": "Atos 9:27",
+    "passageText": "Mas Barnabé, levando-o, apresentou-o aos apóstolos e lhes contou como havia visto o Senhor no caminho, e que Ele lhe tinha falado, e como, em Damasco, pregara ousadamente em nome de Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "Barnabé"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas Barnabé, levando-o, apresentou-o aos apóstolos",
+    "feedbackCorrect": "Um irmão corajoso faz a ponte quando todos ainda temiam Saulo.",
+    "feedbackWrong": {
+      "a": "Esses são os que recebem Saulo, não quem o apresenta.",
+      "c": "O Senhor aparece na história contada, não como quem apresenta."
+    },
+    "hint": "Procure o nome próprio no começo do versículo.",
+    "learningObjective": "Reconhecer quem acolheu Saulo em Jerusalém.",
+    "evidence": [
+      "Atos 9:27"
+    ]
+  },
+  {
+    "id": "cartas-paulo-cam-cp-03-desafio-08",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os fatos de 1 Coríntios 15:3-4?",
+    "prompt": "Como se encadeiam os fatos de 1 Coríntios 15:3-4?",
+    "cue": "Como se encadeiam os fatos de 1 Coríntios 15:3-4?",
+    "verseRef": "1 Coríntios 15:3–4",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras. e que foi sepultado, e que ressuscitou ao terceiro dia, conforme as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo entrega o que também recebeu"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morre pelos nossos pecados"
+      },
+      {
+        "id": "c",
+        "text": "Cristo ressuscita ao terceiro dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Entreguei a vocês, em primeiro lugar, o que também recebi",
+    "feedbackCorrect": "Paulo não inventa a mensagem; ele a recebe e a entrega às igrejas.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Paulo recebeu e entregou às igrejas."
+    },
+    "hint": "Comece pelo que Paulo recebeu de outros.",
+    "learningObjective": "Compreender a entrega do evangelho por Paulo.",
+    "evidence": [
+      "1 Coríntios 15:3–4"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-01",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Atos 9 e Gálatas 1, Paulo pode aceitar outra mensagem se ela vier de um anjo.",
+    "prompt": "Em Atos 9 e Gálatas 1, Paulo pode aceitar outra mensagem se ela vier de um anjo.",
+    "cue": "Em Atos 9 e Gálatas 1, Paulo pode aceitar outra mensagem se ela vier de um anjo.",
+    "verseRef": "Gálatas 1:8",
+    "passageText": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho",
+    "feedbackCorrect": "Nem uma mensagem do céu pode substituir o evangelho recebido.",
+    "feedbackWrong": {
+      "true": "Releia Gálatas 1:8 até o fim do versículo."
+    },
+    "hint": "Leia o aviso de Paulo até o fim.",
+    "learningObjective": "Interpretar a firmeza de Paulo sobre o evangelho único.",
+    "evidence": [
+      "Gálatas 1:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-02",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Coríntios 15:3, toque por quem Cristo morreu.",
+    "prompt": "Em 1 Coríntios 15:3, toque por quem Cristo morreu.",
+    "cue": "Em 1 Coríntios 15:3, toque por quem Cristo morreu.",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "primeiro lugar"
+      },
+      {
+        "id": "c",
+        "text": "nossos pecados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "A morte de Cristo tem endereço certo, os nossos pecados.",
+    "feedbackWrong": {
+      "a": "Isso mostra que a morte cumpre o que estava escrito.",
+      "b": "Isso diz a importância do que Paulo entregou às igrejas."
+    },
+    "hint": "Procure o motivo da morte de Cristo.",
+    "learningObjective": "Sustentar com o texto o motivo da morte de Cristo.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-03",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o conjunto dos textos sustenta sobre Paulo e o evangelho?",
+    "prompt": "Que leitura o conjunto dos textos sustenta sobre Paulo e o evangelho?",
+    "cue": "Que leitura o conjunto dos textos sustenta sobre Paulo e o evangelho?",
+    "verseRef": "Atos 9:15–16",
+    "passageText": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel. Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escolhido por Deus para anunciar Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Livre para mudar a mensagem quando quer"
+      },
+      {
+        "id": "c",
+        "text": "Enviado apenas aos que já criam nele"
+      },
+      {
+        "id": "d",
+        "text": "Criador de uma mensagem só dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "este é um instrumento escolhido para levar o meu nome",
+    "feedbackCorrect": "Paulo é mensageiro escolhido, e a mensagem que anuncia não é dele.",
+    "feedbackWrong": {
+      "b": "Ele rejeita até um anjo que pregue algo diferente.",
+      "c": "Ele é enviado a gentios, reis e filhos de Israel.",
+      "d": "Ele entregou o que também recebeu, sem inventar a mensagem."
+    },
+    "hint": "Junte o chamado de Atos com a entrega de Coríntios.",
+    "learningObjective": "Escolher a interpretação que o conjunto sustenta.",
+    "evidence": [
+      "Atos 9:15–16"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-04",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do chamado à missão?",
+    "prompt": "Qual sequência revela o fio do chamado à missão?",
+    "cue": "Qual sequência revela o fio do chamado à missão?",
+    "verseRef": "Atos 9:20",
+    "passageText": "E logo, nas sinagogas, pregava a Jesus, afirmando que Ele é o Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus chama o perseguidor no caminho"
+      },
+      {
+        "id": "b",
+        "text": "O chamado vira pregação em Damasco"
+      },
+      {
+        "id": "c",
+        "text": "A mensagem é defendida nas igrejas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pregava a Jesus, afirmando que Ele é o Filho de Deus",
+    "feedbackCorrect": "O chamado pessoal vira missão, e a missão guarda a mesma mensagem.",
+    "feedbackWrong": {
+      "default": "Siga do caminho de Damasco à defesa nas igrejas."
+    },
+    "hint": "Siga do chamado pessoal à vida das igrejas.",
+    "learningObjective": "Ver o fio entre chamado, pregação e defesa do evangelho.",
+    "evidence": [
+      "Atos 9:20"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-05",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 1:9, como deve ser tratado quem prega um evangelho diferente?",
+    "prompt": "Em Gálatas 1:9, como deve ser tratado quem prega um evangelho diferente?",
+    "cue": "Em Gálatas 1:9, como deve ser tratado quem prega um evangelho diferente?",
+    "verseRef": "Gálatas 1:9",
+    "passageText": "Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado anátema.",
+    "template": "Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mestre"
+      },
+      {
+        "id": "b",
+        "text": "anátema"
+      },
+      {
+        "id": "c",
+        "text": "apóstolo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que seja considerado anátema",
+    "feedbackCorrect": "Trocar o evangelho é grave demais para ser tratado como detalhe.",
+    "feedbackWrong": {
+      "a": "Quem distorce a mensagem não recebe título de honra aqui.",
+      "c": "Esse é o título de Paulo, não o de quem distorce a mensagem."
+    },
+    "hint": "Veja a palavra forte no fim do versículo.",
+    "learningObjective": "Lembrar o termo que mostra a gravidade da distorção.",
+    "evidence": [
+      "Gálatas 1:9"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-06",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Coríntios 15:3 a Romanos 5:8?",
+    "prompt": "O que liga 1 Coríntios 15:3 a Romanos 5:8?",
+    "cue": "O que liga 1 Coríntios 15:3 a Romanos 5:8?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "passageA": {
+      "ref": "1 Coríntios 15:3",
+      "text": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras."
+    },
+    "passageB": {
+      "ref": "Romanos 5:8",
+      "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morreu por nós"
+      },
+      {
+        "id": "b",
+        "text": "Nós morremos por Cristo"
+      },
+      {
+        "id": "c",
+        "text": "O perdão depende de nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Cristo morreu por nossos pecados, conforme as Escrituras",
+    "feedbackCorrect": "Nos dois textos, o amor de Deus age antes da nossa resposta.",
+    "feedbackWrong": {
+      "b": "A direção é contrária; Cristo morre pelo seu povo.",
+      "c": "Os dois textos põem o peso no que Cristo fez por nós."
+    },
+    "hint": "Veja quem morre e por quem, nos dois.",
+    "learningObjective": "Ligar a morte de Cristo ao amor de Deus.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "Romanos 5:8"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-07",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 9:31, toque o que acompanhava as igrejas junto com a paz.",
+    "prompt": "Em Atos 9:31, toque o que acompanhava as igrejas junto com a paz.",
+    "cue": "Em Atos 9:31, toque o que acompanhava as igrejas junto com a paz.",
+    "verseRef": "Atos 9:31",
+    "passageText": "Então, as igrejas em toda a Judeia, Galileia e Samaria gozavam de paz, eram edificadas e cresciam em número, caminhando no temor do Senhor e na consolação do Espírito Santo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "consolação"
+      },
+      {
+        "id": "b",
+        "text": "número"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "na consolação do Espírito Santo",
+    "feedbackCorrect": "As igrejas cresciam com o consolo dado pelo Espírito Santo.",
+    "feedbackWrong": {
+      "b": "O número é o resultado do crescimento das igrejas.",
+      "c": "A paz é o cenário; o acompanhamento vem no fim do versículo."
+    },
+    "hint": "Procure o que vem do Espírito Santo.",
+    "learningObjective": "Sustentar com o texto a ação do Espírito nas igrejas.",
+    "evidence": [
+      "Atos 9:31"
+    ]
+  },
+  {
+    "id": "cartas-paulo-pro-cp-03-desafio-08",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do evangelho nas igrejas?",
+    "prompt": "Qual sequência revela o caminho do evangelho nas igrejas?",
+    "cue": "Qual sequência revela o caminho do evangelho nas igrejas?",
+    "verseRef": "1 Coríntios 15:3",
+    "passageText": "Entreguei a vocês, em primeiro lugar, o que também recebi: que Cristo morreu por nossos pecados, conforme as Escrituras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo recebe a mensagem do evangelho"
+      },
+      {
+        "id": "b",
+        "text": "Paulo entrega a mensagem às igrejas"
+      },
+      {
+        "id": "c",
+        "text": "Paulo defende a mensagem sem mudanças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Entreguei a vocês, em primeiro lugar, o que também recebi",
+    "feedbackCorrect": "Receber, entregar e guardar formam o caminho fiel do evangelho.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Paulo recebeu antes de entregar."
+    },
+    "hint": "Comece antes da entrega às igrejas.",
+    "learningObjective": "Ver o caminho de receber, entregar e guardar o evangelho.",
+    "evidence": [
+      "1 Coríntios 15:3"
+    ]
+  }
+]

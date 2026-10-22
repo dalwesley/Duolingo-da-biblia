@@ -2782,6 +2782,9 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get homeReviewMistakesCaption => 'Errores para reforzar';
+
+  @override
   String get homeReviewTitle => 'Repaso';
 
   @override
@@ -9142,11 +9145,28 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get widgetBackToTrail => 'Vuelve a la ruta';
+
+  @override
   String get widgetBehindCaravan =>
       'Quedándote atrás en la caravana — camina hoy';
 
   @override
+  String widgetDaysInRow(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días seguidos',
+      one: '1 día seguido',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get widgetGoalDone => 'Meta completada';
+
+  @override
+  String get widgetKeepStreak => 'Mantén tu racha';
 
   @override
   String widgetProgressScenes(int done, int goal) {
@@ -9155,6 +9175,17 @@ class AppLocalizationsEs extends AppLocalizations {
       locale: localeName,
       other: '$done/$goal escenas',
       one: '$done/1 escena',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String widgetScenesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'faltan $count escenas',
+      one: 'falta 1 escena',
     );
     return '$_temp0';
   }
@@ -9169,6 +9200,12 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get widgetStartStreak => 'Empieza tu racha';
+
+  @override
+  String get widgetStreakSafe => 'Racha asegurada hoy';
 
   @override
   String widgetTodayTitle(String title) {

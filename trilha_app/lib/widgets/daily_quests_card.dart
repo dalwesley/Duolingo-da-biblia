@@ -16,17 +16,20 @@ class DailyQuestsCard extends StatelessWidget {
 
   const DailyQuestsCard({super.key, this.onQuestTap});
 
+  /// Quantas tarefas do dia já estão feitas (resgatadas ou no alvo).
+  static int doneCount(ProgressService progress) => DailyQuestDefs.all
+      .where(
+        (q) =>
+            progress.isQuestClaimed(q.id) ||
+            progress.questProgress(q.id) >= q.target,
+      )
+      .length;
+
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final quests = DailyQuestDefs.all;
-    final doneCount = quests
-        .where(
-          (q) =>
-              progress.isQuestClaimed(q.id) ||
-              progress.questProgress(q.id) >= q.target,
-        )
-        .length;
+    final doneCount = DailyQuestsCard.doneCount(progress);
 
     // Fundo próprio + sombra: também abre numa folha transparente.
     return GlassCard(

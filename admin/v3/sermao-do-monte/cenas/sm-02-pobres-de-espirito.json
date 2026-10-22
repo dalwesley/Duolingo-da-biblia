@@ -1,0 +1,901 @@
+{
+  "study": {
+    "slug": "sm-02-pobres-de-espirito",
+    "passageRef": "Mateus 5:2–3",
+    "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "passages": [
+      {
+        "ref": "Mateus 5:2–3",
+        "text": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+      },
+      {
+        "ref": "Mateus 5:4–6",
+        "text": "Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+      }
+    ],
+    "context": "Jesus acabou de se assentar no monte e abre o Sermão com uma bênção inesperada: o Reino pertence a quem reconhece a própria pobreza diante de Deus, não a quem se acha suficiente.",
+    "keyword": "Humildes de espírito",
+    "keywordGloss": "Quem reconhece que, diante de Deus, não tem riqueza espiritual própria e depende dele.",
+    "focusQuestion": "Em que área você ainda confia na sua suficiência em vez de depender de Deus?",
+    "reflectionPrompts": [
+      "Depender de Deus",
+      "Reconhecer a pobreza",
+      "Receber o Reino"
+    ],
+    "facts": [
+      {
+        "text": "Jesus passa a ensinar os discípulos no monte.",
+        "evidenceRef": "Mateus 5:2",
+        "evidenceSpan": "passou a ensiná-los"
+      },
+      {
+        "text": "Os humildes de espírito são bem-aventurados.",
+        "evidenceRef": "Mateus 5:3",
+        "evidenceSpan": "Bem-aventurados os humildes de espírito"
+      },
+      {
+        "text": "Dos humildes de espírito é o reino dos céus.",
+        "evidenceRef": "Mateus 5:3",
+        "evidenceSpan": "deles é o reino dos céus"
+      },
+      {
+        "text": "Os que choram serão consolados.",
+        "evidenceRef": "Mateus 5:4",
+        "evidenceSpan": "serão consolados"
+      },
+      {
+        "text": "Os que têm fome de justiça serão fartos.",
+        "evidenceRef": "Mateus 5:6",
+        "evidenceSpan": "pois serão fartos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "humildes",
+        "gloss": "Quem se reconhece pequeno e dependente diante de Deus."
+      },
+      {
+        "term": "espírito",
+        "gloss": "Aqui marca a pobreza interior, não a falta de dinheiro."
+      },
+      {
+        "term": "reino dos céus",
+        "gloss": "O governo de Deus que Jesus anuncia e ao qual os humildes pertencem."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus abre o ensino no monte",
+        "evidenceRef": "Mateus 5:2"
+      },
+      {
+        "label": "A bênção aos humildes de espírito",
+        "evidenceRef": "Mateus 5:3"
+      },
+      {
+        "label": "A promessa do reino dos céus",
+        "evidenceRef": "Mateus 5:3"
+      },
+      {
+        "label": "Bênçãos que seguem no Sermão",
+        "evidenceRef": "Mateus 5:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A promessa vem ligada à condição: porque deles é o reino dos céus.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 5:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "O Reino é dos humildes, não de quem se apresenta cheio de si.",
+        "marker": null,
+        "evidenceRef": "Mateus 5:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 34:18",
+        "bridge": "Deus perto dos quebrantados",
+        "text": "Perto está o Senhor dos que têm o coração quebrantado e salva os que são de espírito oprimido."
+      },
+      {
+        "ref": "Lucas 18:14",
+        "bridge": "Humilde exaltado por Deus",
+        "text": "Eu vos digo que este desceu justificado para sua casa, e não aquele; porque todo o que se exalta a si mesmo será humilhado, mas quem a si mesmo se humilha será exaltado."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Pobre de espírito é quem tem pouco dinheiro e nada mais.",
+        "why": "O texto fala de humildade de espírito, uma postura interior diante de Deus."
+      },
+      {
+        "text": "O Reino pertence a quem prova ser espiritualmente forte.",
+        "why": "Jesus abençoa os humildes de espírito; a lógica é de dependência, não de prova."
+      },
+      {
+        "text": "Bem-aventurado significa apenas um sentimento de alegria.",
+        "why": "Jesus declara um estado diante de Deus, com promessa concreta do Reino."
+      }
+    ],
+    "centralInsight": "O Reino começa de joelhos",
+    "anchorQuestion": "A quem Jesus diz que pertence o reino dos céus em Mateus 5:3?",
+    "relatedVerses": [
+      {
+        "reference": "Salmos 34:18",
+        "reason": "Deus perto dos quebrantados"
+      },
+      {
+        "reference": "Lucas 18:14",
+        "reason": "Humilde exaltado por Deus"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "sermao-do-monte-sem-sm-02-pobres-de-espirito-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Mateus 5:3, Jesus chama de bem-aventurados os ricos de espírito",
+      "prompt": "Em Mateus 5:3, Jesus chama de bem-aventurados os ricos de espírito",
+      "cue": "Em Mateus 5:3, Jesus chama de bem-aventurados os ricos de espírito",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Bem-aventurados os humildes de espírito",
+      "feedbackCorrect": "Jesus abençoa os humildes de espírito, não quem se acha rico diante de Deus.",
+      "feedbackWrong": {
+        "true": "Releia o começo de 5:3: a palavra é humildes, não ricos."
+      },
+      "hint": "Olhe o adjetivo ligado a espírito.",
+      "learningObjective": "Observar quem Jesus abençoa em Mateus 5:3.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-02-pobres-de-espirito-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Mateus 5:3, toque quem Jesus chama de bem-aventurados.",
+      "prompt": "Em Mateus 5:3, toque quem Jesus chama de bem-aventurados.",
+      "cue": "Em Mateus 5:3, toque quem Jesus chama de bem-aventurados.",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "humildes de espírito"
+        },
+        {
+          "id": "b",
+          "text": "Bem-aventurados"
+        },
+        {
+          "id": "c",
+          "text": "reino dos céus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Bem-aventurados os humildes de espírito",
+      "feedbackCorrect": "A primeira bênção do Sermão é para quem se reconhece pobre diante de Deus.",
+      "feedbackWrong": {
+        "b": "Isso é a declaração de Jesus, não o grupo abençoado.",
+        "c": "Isso é o que pertence a eles, não quem eles são."
+      },
+      "hint": "Procure o grupo descrito antes da vírgula.",
+      "learningObjective": "Identificar os abençoados de Mateus 5:3.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-02-pobres-de-espirito-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Mateus 5:3, o que pertence aos humildes de espírito?",
+      "prompt": "Segundo Mateus 5:3, o que pertence aos humildes de espírito?",
+      "cue": "Segundo Mateus 5:3, o que pertence aos humildes de espírito?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O consolo dos que choram"
+        },
+        {
+          "id": "b",
+          "text": "A terra como herança imediata"
+        },
+        {
+          "id": "c",
+          "text": "Ser chamados filhos de Deus"
+        },
+        {
+          "id": "d",
+          "text": "O reino dos céus"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "deles é o reino dos céus",
+      "feedbackCorrect": "A promessa ligada aos humildes é pertencer ao reino dos céus.",
+      "feedbackWrong": {
+        "a": "Consolo é a promessa de 5:4, aos que choram.",
+        "b": "Herdar a terra é a promessa aos mansos (5:5).",
+        "c": "Filhos de Deus é a promessa aos pacificadores (5:9)."
+      },
+      "hint": "Leia depois da palavra porque.",
+      "learningObjective": "Observar a promessa de Mateus 5:3.",
+      "evidence": [
+        "Mateus 5:2–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-02-pobres-de-espirito-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Mateus 5:3 na ordem do texto.",
+      "prompt": "Monte Mateus 5:3 na ordem do texto.",
+      "cue": "Monte Mateus 5:3 na ordem do texto.",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os humildes de espírito"
+        },
+        {
+          "id": "b",
+          "text": "porque deles é"
+        },
+        {
+          "id": "c",
+          "text": "o reino dos céus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "o reino dos céus",
+      "feedbackCorrect": "Bênção, motivo e promessa aparecem nessa ordem no versículo.",
+      "feedbackWrong": {
+        "default": "Comece pela declaração de bem-aventurados; a promessa fecha."
+      },
+      "hint": "A promessa vem no fim do versículo.",
+      "learningObjective": "Reconhecer a sequência de Mateus 5:3.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-02-pobres-de-espirito-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Mateus 5:3, de onde é o reino que pertence aos humildes?",
+      "prompt": "Em Mateus 5:3, de onde é o reino que pertence aos humildes?",
+      "cue": "Em Mateus 5:3, de onde é o reino que pertence aos humildes?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "template": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "terra"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "céus"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "reino dos céus",
+      "feedbackCorrect": "Jesus chama esse governo de reino vindo de Deus, não de projeto humano.",
+      "feedbackWrong": {
+        "a": "Terra aparece na promessa aos mansos, em 5:5.",
+        "b": "O reino não é dos homens; é dado por Deus aos humildes."
+      },
+      "hint": "Veja a origem do reino no fim da frase.",
+      "learningObjective": "Lembrar a origem do reino prometido.",
+      "evidence": [
+        "Mateus 5:2–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-02-pobres-de-espirito-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Mateus 5:3 comunica que se liga a este contexto?",
+      "prompt": "O que Mateus 5:3 comunica que se liga a este contexto?",
+      "cue": "O que Mateus 5:3 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "passageA": {
+        "ref": "Mateus 5:3",
+        "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Sermão começa abençoando quem reconhece a própria pobreza diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino para quem se basta"
+        },
+        {
+          "id": "b",
+          "text": "Reino só para os fortes"
+        },
+        {
+          "id": "c",
+          "text": "Reino para quem depende"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "humildes de espírito",
+      "feedbackCorrect": "A porta do Reino, no Sermão, é a dependência humilde de Deus.",
+      "feedbackWrong": {
+        "a": "Quem se basta não é o abençoado de 5:3.",
+        "b": "A força própria não abre o Sermão; a humildade, sim."
+      },
+      "hint": "Pense na postura interior abençoada.",
+      "learningObjective": "Ligar Mateus 5:3 à dependência de Deus.",
+      "evidence": [
+        "Mateus 5:1–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-02-pobres-de-espirito-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Mateus 5:3, a promessa do reino dos céus está ligada a reconhecer a pobreza de espírito",
+      "prompt": "Em Mateus 5:3, a promessa do reino dos céus está ligada a reconhecer a pobreza de espírito",
+      "cue": "Em Mateus 5:3, a promessa do reino dos céus está ligada a reconhecer a pobreza de espírito",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "porque deles é o reino dos céus",
+      "feedbackCorrect": "O porque do versículo liga a condição humilde à promessa do Reino.",
+      "feedbackWrong": {
+        "false": "A ligação está explícita: deles é o reino dos céus."
+      },
+      "hint": "Repare na palavrinha que dá o motivo.",
+      "learningObjective": "Compreender a ligação entre humildade e Reino.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-02-pobres-de-espirito-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Mateus 5:3, toque a palavra que apresenta o motivo da promessa.",
+      "prompt": "Em Mateus 5:3, toque a palavra que apresenta o motivo da promessa.",
+      "cue": "Em Mateus 5:3, toque a palavra que apresenta o motivo da promessa.",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "céus"
+        },
+        {
+          "id": "c",
+          "text": "deles"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "porque deles é",
+      "feedbackCorrect": "Essa palavrinha costura a condição dos humildes à promessa que recebem.",
+      "feedbackWrong": {
+        "b": "Isso nomeia a origem do reino, não a ligação lógica.",
+        "c": "Isso aponta para quem recebe, não para o motivo."
+      },
+      "hint": "Procure uma palavra curta depois da vírgula.",
+      "learningObjective": "Reconhecer o marcador de motivo em 5:3.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-02-pobres-de-espirito-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como a segunda parte de Mateus 5:3 explica a primeira?",
+      "prompt": "Como a segunda parte de Mateus 5:3 explica a primeira?",
+      "cue": "Como a segunda parte de Mateus 5:3 explica a primeira?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promete fama a quem se humilha em público"
+        },
+        {
+          "id": "b",
+          "text": "Mostra que o Reino pertence a quem depende de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Diz que humildade garante riqueza material"
+        },
+        {
+          "id": "d",
+          "text": "Afirma que os humildes não precisam do Reino"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "deles é o reino dos céus",
+      "feedbackCorrect": "A segunda parte dá o motivo: o Reino é de quem chega pobre diante de Deus.",
+      "feedbackWrong": {
+        "a": "Não há promessa de fama; há pertencimento ao Reino.",
+        "c": "Riqueza material não aparece no versículo.",
+        "d": "É o contrário: o Reino é justamente deles."
+      },
+      "hint": "Pergunte a quem o Reino pertence e por quê.",
+      "learningObjective": "Relacionar condição e promessa em 5:3.",
+      "evidence": [
+        "Mateus 5:2–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-02-pobres-de-espirito-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como se encadeia a lógica de Mateus 5:3?",
+      "prompt": "Como se encadeia a lógica de Mateus 5:3?",
+      "cue": "Como se encadeia a lógica de Mateus 5:3?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus declara quem é abençoado"
+        },
+        {
+          "id": "b",
+          "text": "Ele apresenta o motivo da bênção"
+        },
+        {
+          "id": "c",
+          "text": "Ele nomeia a promessa do Reino"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "porque deles é o reino dos céus",
+      "feedbackCorrect": "Declaração, motivo e promessa formam o coração da bem-aventurança.",
+      "feedbackWrong": {
+        "default": "A promessa só faz sentido depois do motivo introduzido."
+      },
+      "hint": "O meio da frase costura as duas pontas.",
+      "learningObjective": "Compreender a estrutura interna da bem-aventurança.",
+      "evidence": [
+        "Mateus 5:1–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-02-pobres-de-espirito-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Mateus 5:4, o que Jesus promete aos que choram?",
+      "prompt": "Em Mateus 5:4, o que Jesus promete aos que choram?",
+      "cue": "Em Mateus 5:4, o que Jesus promete aos que choram?",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "template": "Bem-aventurados os que choram, porque serão ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "julgados"
+        },
+        {
+          "id": "b",
+          "text": "esquecidos"
+        },
+        {
+          "id": "c",
+          "text": "consolados"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "Logo depois dos humildes, Jesus promete consolo a quem chora.",
+      "feedbackWrong": {
+        "a": "A palavra de Jesus aqui é de consolo, não de juízo.",
+        "b": "O choro diante de Deus não é esquecido por ele."
+      },
+      "hint": "Pense no que o choro recebe de Deus.",
+      "learningObjective": "Relacionar a bênção seguinte à abertura do Sermão.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-02-pobres-de-espirito-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Mateus 5:3 a Salmos 34:18?",
+      "prompt": "O que liga Mateus 5:3 a Salmos 34:18?",
+      "cue": "O que liga Mateus 5:3 a Salmos 34:18?",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "passageA": {
+        "ref": "Mateus 5:3",
+        "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+      },
+      "passageB": {
+        "ref": "Salmos 34:18",
+        "text": "Perto está o Senhor dos que têm o coração quebrantado e salva os que são de espírito oprimido."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus longe de quem sofre"
+        },
+        {
+          "id": "b",
+          "text": "Orgulho aproxima de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Deus perto dos quebrantados"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "humildes de espírito",
+      "feedbackCorrect": "O Salmo e Jesus concordam: Deus se aproxima de quem está quebrantado.",
+      "feedbackWrong": {
+        "a": "O Salmo diz o contrário: o Senhor está perto deles.",
+        "b": "Quem Deus acolhe é o coração quebrantado, não o orgulhoso."
+      },
+      "hint": "Veja quem o Salmo diz estar perto do Senhor.",
+      "learningObjective": "Relacionar humildade de espírito e proximidade de Deus.",
+      "evidence": [
+        "Mateus 5:3",
+        "Salmos 34:18"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-02-pobres-de-espirito-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Mateus 5:3 ensina que o Reino pertence a quem prova ser espiritualmente autossuficiente",
+      "prompt": "Mateus 5:3 ensina que o Reino pertence a quem prova ser espiritualmente autossuficiente",
+      "cue": "Mateus 5:3 ensina que o Reino pertence a quem prova ser espiritualmente autossuficiente",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "humildes de espírito",
+      "feedbackCorrect": "O texto abençoa a pobreza de espírito, não a autossuficiência espiritual.",
+      "feedbackWrong": {
+        "true": "Troque a prova de força pela humildade: é dela o Reino."
+      },
+      "hint": "Compare autossuficiência com a condição abençoada.",
+      "learningObjective": "Rejeitar a leitura de autossuficiência em 5:3.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-02-pobres-de-espirito-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Mateus 5:3, toque o trecho que mostra o que os humildes recebem.",
+      "prompt": "Em Mateus 5:3, toque o trecho que mostra o que os humildes recebem.",
+      "cue": "Em Mateus 5:3, toque o trecho que mostra o que os humildes recebem.",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "de espírito"
+        },
+        {
+          "id": "b",
+          "text": "reino dos céus"
+        },
+        {
+          "id": "c",
+          "text": "Bem-aventurados"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "o reino dos céus",
+      "feedbackCorrect": "O que está do outro lado da dependência é pertencer ao governo de Deus.",
+      "feedbackWrong": {
+        "a": "Isso descreve a pobreza interior, não a promessa.",
+        "c": "Isso declara a felicidade deles, não o que recebem."
+      },
+      "hint": "Procure o bem prometido no fim do versículo.",
+      "learningObjective": "Sustentar no texto a promessa aos humildes.",
+      "evidence": [
+        "Mateus 5:2–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-02-pobres-de-espirito-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Mateus 5:3 sustenta sobre a entrada no Reino?",
+      "prompt": "Que leitura Mateus 5:3 sustenta sobre a entrada no Reino?",
+      "cue": "Que leitura Mateus 5:3 sustenta sobre a entrada no Reino?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Reino começa com dependência de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Quem tem pouco dinheiro entra sem fé"
+        },
+        {
+          "id": "c",
+          "text": "O Reino é prêmio de quem acumula méritos"
+        },
+        {
+          "id": "d",
+          "text": "Humildade é só um sentimento passageiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "humildes de espírito",
+      "feedbackCorrect": "Jesus põe a dependência humilde na porta do Reino, não o acúmulo de méritos.",
+      "feedbackWrong": {
+        "b": "A pobreza aqui é de espírito, não só de bolso.",
+        "c": "Mérito próprio contradiz a pobreza de espírito abençoada.",
+        "d": "É postura diante de Deus, com promessa real do Reino."
+      },
+      "hint": "Veja qual postura Jesus coloca na porta do Sermão.",
+      "learningObjective": "Escolher a interpretação sustentada por 5:3.",
+      "evidence": [
+        "Mateus 5:1–3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-02-pobres-de-espirito-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho aberto em Mateus 5:3?",
+      "prompt": "Qual sequência revela o caminho aberto em Mateus 5:3?",
+      "cue": "Qual sequência revela o caminho aberto em Mateus 5:3?",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reconhecer a pobreza diante de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Pertencer ao reino dos céus"
+        },
+        {
+          "id": "c",
+          "text": "Viver sob o governo do Rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "deles é o reino dos céus",
+      "feedbackCorrect": "Dependência, pertencimento e vida sob o Rei: esse é o caminho do Sermão.",
+      "feedbackWrong": {
+        "default": "Comece pela condição abençoada; o pertencimento vem dela."
+      },
+      "hint": "A condição vem antes da promessa.",
+      "learningObjective": "Ver 5:3 como porta de entrada do Sermão.",
+      "evidence": [
+        "Mateus 5:3",
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-02-pobres-de-espirito-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Mateus 5:3, que palavra marca que a pobreza é interior?",
+      "prompt": "Em Mateus 5:3, que palavra marca que a pobreza é interior?",
+      "cue": "Em Mateus 5:3, que palavra marca que a pobreza é interior?",
+      "verseRef": "Mateus 5:3",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "template": "Bem-aventurados os humildes de ___, porque deles é o reino dos céus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "nome"
+        },
+        {
+          "id": "b",
+          "text": "bolso"
+        },
+        {
+          "id": "c",
+          "text": "espírito"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "humildes de espírito",
+      "feedbackCorrect": "A pobreza abençoada é interior: uma postura do coração diante de Deus.",
+      "feedbackWrong": {
+        "a": "Não é questão de reputação, mas de postura interior.",
+        "b": "O texto não localiza a pobreza no bolso."
+      },
+      "hint": "Veja o que acompanha a palavra humildes.",
+      "learningObjective": "Lembrar o termo que define a pobreza abençoada.",
+      "evidence": [
+        "Mateus 5:3"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-02-pobres-de-espirito-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-02-pobres-de-espirito",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Mateus 5:3 a Lucas 18:14?",
+      "prompt": "O que liga Mateus 5:3 a Lucas 18:14?",
+      "cue": "O que liga Mateus 5:3 a Lucas 18:14?",
+      "verseRef": "Mateus 5:2–3",
+      "passageText": "E, abrindo a boca, passou a ensiná-los, dizendo: Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+      "passageA": {
+        "ref": "Mateus 5:3",
+        "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+      },
+      "passageB": {
+        "ref": "Lucas 18:14",
+        "text": "Eu vos digo que este desceu justificado para sua casa, e não aquele; porque todo o que se exalta a si mesmo será humilhado, mas quem a si mesmo se humilha será exaltado."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Riqueza prova favor divino"
+        },
+        {
+          "id": "b",
+          "text": "Humilde exaltado por Deus"
+        },
+        {
+          "id": "c",
+          "text": "Orgulhoso justificado por Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "humildes de espírito",
+      "feedbackCorrect": "O publicano humilde volta justificado: Deus acolhe quem se reconhece pobre.",
+      "feedbackWrong": {
+        "a": "O tema é humildade diante de Deus, não riqueza.",
+        "c": "Quem se exalta é humilhado na parábola de Jesus."
+      },
+      "hint": "Veja o fim da parábola do fariseu e do publicano.",
+      "learningObjective": "Ligar a humildade abençoada à justificação do humilde.",
+      "evidence": [
+        "Mateus 5:2–3",
+        "Lucas 18:14"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3300 @@
+[
+  {
+    "id": "oracao-sem-or-01-pai-nosso-01",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 6:9, Jesus ensina a orar ao Pai que está nos céus pedindo que o nome dele seja santificado.",
+    "prompt": "Em Mateus 6:9, Jesus ensina a orar ao Pai que está nos céus pedindo que o nome dele seja santificado.",
+    "cue": "Em Mateus 6:9, Jesus ensina a orar ao Pai que está nos céus pedindo que o nome dele seja santificado.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Pai nosso, que estás nos céus, santificado seja o teu nome",
+    "feedbackCorrect": "A oração abre com o Pai e com a santidade do nome dele.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 6:9: é a abertura exata da oração ensinada."
+    },
+    "hint": "Veja as primeiras palavras da oração.",
+    "learningObjective": "Observar a abertura do Pai Nosso.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-01-pai-nosso-02",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 6:9, toque a quem a oração é dirigida logo no começo.",
+    "prompt": "Em Mateus 6:9, toque a quem a oração é dirigida logo no começo.",
+    "cue": "Em Mateus 6:9, toque a quem a oração é dirigida logo no começo.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "céus"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "A oração não começa em nós: começa no Pai.",
+    "feedbackWrong": {
+      "a": "Isso é o que se pede santificado, depois do Pai.",
+      "b": "Isso é onde ele está, não a quem se fala."
+    },
+    "hint": "É a primeira palavra da oração.",
+    "learningObjective": "Identificar a quem a oração se dirige.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-01-pai-nosso-03",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 6:10, o que se pede que venha e que seja feita?",
+    "prompt": "Segundo Mateus 6:10, o que se pede que venha e que seja feita?",
+    "cue": "Segundo Mateus 6:10, o que se pede que venha e que seja feita?",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que venha vingança e seja feita justiça humana"
+      },
+      {
+        "id": "b",
+        "text": "Que venha riqueza e seja feita nossa vontade"
+      },
+      {
+        "id": "c",
+        "text": "Que venha silêncio e seja feita a vontade dos líderes"
+      },
+      {
+        "id": "d",
+        "text": "Que venha o reino e seja feita a vontade de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Venha o teu reino; que a tua vontade seja feita",
+    "feedbackCorrect": "Reino e vontade dele vêm antes dos nossos pedidos.",
+    "feedbackWrong": {
+      "a": "Vingança não aparece em nenhum pedido da oração.",
+      "b": "A vontade posta é a de Deus, não a nossa.",
+      "c": "Nenhum líder humano é posto no centro aqui."
+    },
+    "hint": "Veja de quem é o reino e a vontade.",
+    "learningObjective": "Observar os pedidos de Mateus 6:10.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-01-pai-nosso-04",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 6:9 na ordem do texto.",
+    "prompt": "Monte Mateus 6:9 na ordem do texto.",
+    "cue": "Monte Mateus 6:9 na ordem do texto.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai nosso"
+      },
+      {
+        "id": "b",
+        "text": "que estás nos céus"
+      },
+      {
+        "id": "c",
+        "text": "santificado seja o teu nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "Pai, nos céus, nome santificado: é a abertura ensinada.",
+    "feedbackWrong": {
+      "default": "Comece chamando Deus de Pai."
+    },
+    "hint": "A oração começa com um chamado ao Pai.",
+    "learningObjective": "Reconhecer a ordem da abertura da oração.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-01-pai-nosso-05",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 6:10, o que pedimos que venha antes de qualquer necessidade nossa?",
+    "prompt": "Em Mateus 6:10, o que pedimos que venha antes de qualquer necessidade nossa?",
+    "cue": "Em Mateus 6:10, o que pedimos que venha antes de qualquer necessidade nossa?",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "template": "Venha o teu ___; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perdão"
+      },
+      {
+        "id": "b",
+        "text": "reino"
+      },
+      {
+        "id": "c",
+        "text": "pão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Venha o teu reino",
+    "feedbackCorrect": "O governo de Deus é pedido antes do pão de cada dia.",
+    "feedbackWrong": {
+      "a": "O perdão é pedido mais adiante na oração.",
+      "c": "O pão vem no versículo seguinte, depois do reino."
+    },
+    "hint": "É o governo de Deus chegando.",
+    "learningObjective": "Lembrar a prioridade da oração ensinada.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-01-pai-nosso-06",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 6:10 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:10 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:10 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "passageA": {
+      "ref": "Mateus 6:10",
+      "text": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus ensina os discípulos a orar começando por Deus, antes de apresentarem suas necessidades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino antes das necessidades"
+      },
+      {
+        "id": "b",
+        "text": "Começa pedindo coisas urgentes"
+      },
+      {
+        "id": "c",
+        "text": "Necessidades antes do reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Venha o teu reino",
+    "feedbackCorrect": "Reino e vontade dele vêm antes de pão, perdão e livramento.",
+    "feedbackWrong": {
+      "b": "Os pedidos urgentes vêm na segunda metade da oração.",
+      "c": "A ordem é inversa: Deus e o reino vêm primeiro."
+    },
+    "hint": "Veja o que é pedido neste versículo.",
+    "learningObjective": "Ligar Mateus 6:10 à prioridade do reino.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-01-pai-nosso-01",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 6:11–12, pão diário e perdão mostram dependência de Deus para o corpo e para a alma.",
+    "prompt": "Em Mateus 6:11–12, pão diário e perdão mostram dependência de Deus para o corpo e para a alma.",
+    "cue": "Em Mateus 6:11–12, pão diário e perdão mostram dependência de Deus para o corpo e para a alma.",
+    "verseRef": "Mateus 6:11–12",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia; E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia",
+    "feedbackCorrect": "Comer e ser perdoado: dependência completa, todo dia.",
+    "feedbackWrong": {
+      "false": "Os dois pedidos são de recebimento diário das mãos de Deus."
+    },
+    "hint": "Junte os pedidos dos dois versículos.",
+    "learningObjective": "Compreender a dependência diária na oração.",
+    "evidence": [
+      "Mateus 6:11–12"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-01-pai-nosso-02",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 6:10, toque a palavrinha que compara terra e céu no pedido pela vontade de Deus.",
+    "prompt": "Em Mateus 6:10, toque a palavrinha que compara terra e céu no pedido pela vontade de Deus.",
+    "cue": "Em Mateus 6:10, toque a palavrinha que compara terra e céu no pedido pela vontade de Deus.",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "como"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assim na terra como no céu",
+    "feedbackCorrect": "A vontade feita no céu é a medida para a terra.",
+    "feedbackWrong": {
+      "a": "Isso é o lugar onde ela deve ser feita, não a comparação.",
+      "b": "Isso é o modelo, não a palavra que compara."
+    },
+    "hint": "Procure a palavra curta entre terra e céu.",
+    "learningObjective": "Reconhecer a comparação em Mateus 6:10.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-01-pai-nosso-03",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 6:12 liga o perdão que pedimos ao perdão que damos?",
+    "prompt": "Como Mateus 6:12 liga o perdão que pedimos ao perdão que damos?",
+    "cue": "Como Mateus 6:12 liga o perdão que pedimos ao perdão que damos?",
+    "verseRef": "Mateus 6:12",
+    "passageText": "E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedimos na medida em que também perdoamos outros"
+      },
+      {
+        "id": "b",
+        "text": "Deus perdoa só quem nunca foi ofendido por ninguém"
+      },
+      {
+        "id": "c",
+        "text": "Nosso perdão compra o perdão de Deus na hora"
+      },
+      {
+        "id": "d",
+        "text": "Perdoar outros é assunto separado desta oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim como nós temos perdoado aos nossos devedores",
+    "feedbackCorrect": "Receber e dar perdão caminham amarrados na mesma frase.",
+    "feedbackWrong": {
+      "b": "A oração é para devedores perdoados, não perfeitos.",
+      "c": "Não é compra: é o coração formado pelo perdão recebido.",
+      "d": "Estão na mesma frase, ligados, não separados."
+    },
+    "hint": "Veja a ligação no meio do versículo.",
+    "learningObjective": "Compreender a ligação entre receber e dar perdão.",
+    "evidence": [
+      "Mateus 6:12"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-01-pai-nosso-04",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os pedidos de Mateus 6:9–10?",
+    "prompt": "Como se encadeiam os pedidos de Mateus 6:9–10?",
+    "cue": "Como se encadeiam os pedidos de Mateus 6:9–10?",
+    "verseRef": "Mateus 6:9–10",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Pai nos céus tem o nome santificado"
+      },
+      {
+        "id": "b",
+        "text": "O reino dele é pedido para vir"
+      },
+      {
+        "id": "c",
+        "text": "A vontade dele desce à terra como no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "Nome, reino e vontade: Deus no centro, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo nome santificado do Pai."
+    },
+    "hint": "A vontade na terra fecha a primeira parte.",
+    "learningObjective": "Compreender a ordem da primeira metade da oração.",
+    "evidence": [
+      "Mateus 6:9–10"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-01-pai-nosso-05",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 6:11, o que pedimos que Deus nos dê hoje?",
+    "prompt": "Em Mateus 6:11, o que pedimos que Deus nos dê hoje?",
+    "cue": "Em Mateus 6:11, o que pedimos que Deus nos dê hoje?",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "template": "Dá-nos hoje o nosso ___ de cada dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "pão"
+      },
+      {
+        "id": "c",
+        "text": "vinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia",
+    "feedbackCorrect": "O básico de cada dia, pedido hoje, sem acumular.",
+    "feedbackWrong": {
+      "a": "O pedido é simples e diário, não um banquete.",
+      "c": "Nenhuma bebida é citada neste pedido diário."
+    },
+    "hint": "É o alimento básico de todos os dias.",
+    "learningObjective": "Compreender o pedido diário e suficiente.",
+    "evidence": [
+      "Mateus 6:11"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-01-pai-nosso-06",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 6:9 a Salmos 103:13?",
+    "prompt": "O que liga Mateus 6:9 a Salmos 103:13?",
+    "cue": "O que liga Mateus 6:9 a Salmos 103:13?",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "passageA": {
+      "ref": "Mateus 6:9",
+      "text": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+    },
+    "passageB": {
+      "ref": "Salmos 103:13",
+      "text": "Como um pai se compadece de seus filhos, assim o Senhor se compadece dos que o temem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oração sem chamar Deus Pai"
+      },
+      {
+        "id": "b",
+        "text": "Deus como Pai compassivo"
+      },
+      {
+        "id": "c",
+        "text": "Deus distante dos filhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "O salmo já chamava Deus de Pai que se compadece dos filhos.",
+    "feedbackWrong": {
+      "a": "Os dois textos chamam Deus justamente de Pai.",
+      "c": "O salmo mostra proximidade compassiva, não distância."
+    },
+    "hint": "Compare o nome dado a Deus nos dois.",
+    "learningObjective": "Relacionar o Pai do Pai Nosso ao dos Salmos.",
+    "evidence": [
+      "Mateus 6:9",
+      "Salmos 103:13"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-01-pai-nosso-01",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O Pai Nosso ensina que orar é só listar nossas vontades, sem lugar para o reino de Deus.",
+    "prompt": "O Pai Nosso ensina que orar é só listar nossas vontades, sem lugar para o reino de Deus.",
+    "cue": "O Pai Nosso ensina que orar é só listar nossas vontades, sem lugar para o reino de Deus.",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Venha o teu reino; que a tua vontade seja feita",
+    "feedbackCorrect": "Reino e vontade dele vêm antes das nossas necessidades.",
+    "feedbackWrong": {
+      "true": "A primeira metade da oração é toda sobre Deus e o reino."
+    },
+    "hint": "Confira a ordem dos pedidos na oração.",
+    "learningObjective": "Interpretar a prioridade do reino na oração.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-01-pai-nosso-02",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 6:12, toque a quem nós também perdoamos, segundo a oração.",
+    "prompt": "Em Mateus 6:12, toque a quem nós também perdoamos, segundo a oração.",
+    "cue": "Em Mateus 6:12, toque a quem nós também perdoamos, segundo a oração.",
+    "verseRef": "Mateus 6:12",
+    "passageText": "E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nossos devedores"
+      },
+      {
+        "id": "b",
+        "text": "nossas dívidas"
+      },
+      {
+        "id": "c",
+        "text": "perdoa-nos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nós temos perdoado aos nossos devedores",
+    "feedbackCorrect": "Quem pede perdão também é quem perdoa os que lhe devem.",
+    "feedbackWrong": {
+      "b": "Isso é o que pedimos sobre nós, não quem perdoamos.",
+      "c": "Isso é o pedido feito a Deus, não o nosso ato."
+    },
+    "hint": "Procure as pessoas no fim do versículo.",
+    "learningObjective": "Sustentar no texto o perdão dado aos outros.",
+    "evidence": [
+      "Mateus 6:12"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-01-pai-nosso-03",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o Pai Nosso sustenta sobre como devemos orar?",
+    "prompt": "Que leitura o Pai Nosso sustenta sobre como devemos orar?",
+    "cue": "Que leitura o Pai Nosso sustenta sobre como devemos orar?",
+    "verseRef": "Mateus 6:9–10",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar sozinho, sem nunca usar a palavra nós"
+      },
+      {
+        "id": "b",
+        "text": "Pedir primeiro riqueza para depois louvar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Repetir palavras até Deus ser obrigado a atender"
+      },
+      {
+        "id": "d",
+        "text": "Começar por Deus e seu reino, depois nossas necessidades"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "santificado seja o teu nome",
+    "feedbackCorrect": "Nome, reino e vontade vêm antes de pão e perdão.",
+    "feedbackWrong": {
+      "a": "A oração é toda no plural: Pai nosso, dá-nos.",
+      "b": "Nenhuma riqueza é pedida nesta oração de Jesus.",
+      "c": "Não é fórmula de pressão: é forma de um coração filho."
+    },
+    "hint": "Observe a ordem das duas metades da oração.",
+    "learningObjective": "Escolher a interpretação que a ordem da oração sustenta.",
+    "evidence": [
+      "Mateus 6:9–10"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-01-pai-nosso-04",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido do Pai Nosso inteiro?",
+    "prompt": "Qual sequência revela o sentido do Pai Nosso inteiro?",
+    "cue": "Qual sequência revela o sentido do Pai Nosso inteiro?",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome santificado e reino de Deus primeiro"
+      },
+      {
+        "id": "b",
+        "text": "Pão diário e perdão mútuo no meio"
+      },
+      {
+        "id": "c",
+        "text": "Livramento da tentação e do mal no fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "santificado seja o teu nome",
+    "feedbackCorrect": "Deus primeiro, nossas necessidades depois, livramento no fim.",
+    "feedbackWrong": {
+      "default": "Comece pela santidade do nome de Deus."
+    },
+    "hint": "O livramento é o pedido que fecha a oração.",
+    "learningObjective": "Ver a arquitetura completa da oração de Jesus.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-01-pai-nosso-05",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 6:13, de que pedimos para não cair, antes do livramento do mal?",
+    "prompt": "Em Mateus 6:13, de que pedimos para não cair, antes do livramento do mal?",
+    "cue": "Em Mateus 6:13, de que pedimos para não cair, antes do livramento do mal?",
+    "verseRef": "Mateus 6:13",
+    "passageText": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!",
+    "template": "E não nos deixes cair em ___, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "doença"
+      },
+      {
+        "id": "b",
+        "text": "tentação"
+      },
+      {
+        "id": "c",
+        "text": "tristeza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não nos deixes cair em tentação",
+    "feedbackCorrect": "A oração termina pedindo guarda na hora da prova.",
+    "feedbackWrong": {
+      "a": "A guarda pedida é moral e espiritual, neste verso.",
+      "c": "Tristeza não é o nome dado a esse perigo aqui."
+    },
+    "hint": "É a prova que pode nos fazer cair.",
+    "learningObjective": "Lembrar o perigo nomeado no fim da oração.",
+    "evidence": [
+      "Mateus 6:13"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-01-pai-nosso-06",
+    "trail": "oracao",
+    "section": "or-01-pai-nosso",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 6:9 a Romanos 8:15?",
+    "prompt": "O que liga Mateus 6:9 a Romanos 8:15?",
+    "cue": "O que liga Mateus 6:9 a Romanos 8:15?",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "passageA": {
+      "ref": "Mateus 6:9",
+      "text": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+    },
+    "passageB": {
+      "ref": "Romanos 8:15",
+      "text": "Pois vocês não receberam um espírito de escravidão, para voltarem a viver com medo, mas receberam o espírito de adoção, pelo qual clamamos: Aba, Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oração sem o Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "Filhos que clamam Pai"
+      },
+      {
+        "id": "c",
+        "text": "Escravos com medo de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "Pelo Espírito de adoção, clamamos como Jesus ensinou: Pai.",
+    "feedbackWrong": {
+      "a": "É justamente o Espírito que nos faz clamar assim.",
+      "c": "Romanos troca o espírito de escravidão pelo de adoção."
+    },
+    "hint": "Veja o clamor que o Espírito produz em nós.",
+    "learningObjective": "Ligar o Pai Nosso à adoção no Espírito.",
+    "evidence": [
+      "Mateus 6:9",
+      "Romanos 8:15"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-02-persistencia-01",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lucas 18:2, o juiz da parábola temia a Deus e respeitava todas as pessoas.",
+    "prompt": "Em Lucas 18:2, o juiz da parábola temia a Deus e respeitava todas as pessoas.",
+    "cue": "Em Lucas 18:2, o juiz da parábola temia a Deus e respeitava todas as pessoas.",
+    "verseRef": "Lucas 18:2",
+    "passageText": "Havia em certa cidade um juiz que não temia a Deus, nem respeitava homem algum.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "um juiz que não temia a Deus, nem respeitava homem algum",
+    "feedbackCorrect": "Ele é descrito justamente como quem não teme nem respeita.",
+    "feedbackWrong": {
+      "true": "Releia Lucas 18:2: o juiz é o oposto disso."
+    },
+    "hint": "Veja como o juiz é apresentado.",
+    "learningObjective": "Observar o caráter do juiz da parábola.",
+    "evidence": [
+      "Lucas 18:2"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-02-persistencia-02",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 18:3, toque quem foi até o juiz pedir justiça.",
+    "prompt": "Em Lucas 18:3, toque quem foi até o juiz pedir justiça.",
+    "cue": "Em Lucas 18:3, toque quem foi até o juiz pedir justiça.",
+    "verseRef": "Lucas 18:3",
+    "passageText": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "options": [
+      {
+        "id": "a",
+        "text": "adversário"
+      },
+      {
+        "id": "b",
+        "text": "viúva"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "uma viúva que veio até ele",
+    "feedbackCorrect": "Sem poder nem defensor, é ela quem vai e insiste.",
+    "feedbackWrong": {
+      "a": "Ele é o outro lado da causa dela.",
+      "c": "Isso é o lugar da história, não quem foi pedir."
+    },
+    "hint": "Procure a mulher na mesma cidade.",
+    "learningObjective": "Identificar a personagem que pede justiça.",
+    "evidence": [
+      "Lucas 18:3"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-02-persistencia-03",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 18:3, o que a viúva pedia ao juiz?",
+    "prompt": "Segundo Lucas 18:3, o que a viúva pedia ao juiz?",
+    "cue": "Segundo Lucas 18:3, o que a viúva pedia ao juiz?",
+    "verseRef": "Lucas 18:3",
+    "passageText": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dinheiro emprestado para pagar dívidas"
+      },
+      {
+        "id": "b",
+        "text": "Que julgasse a causa dela contra o adversário"
+      },
+      {
+        "id": "c",
+        "text": "Um emprego na casa do juiz da cidade"
+      },
+      {
+        "id": "d",
+        "text": "Permissão para deixar aquela cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Julga a minha causa contra o meu adversário",
+    "feedbackCorrect": "O pedido dela é justiça numa causa, não favores.",
+    "feedbackWrong": {
+      "a": "Nenhum empréstimo aparece no pedido dela.",
+      "c": "Emprego não é citado em nenhum momento.",
+      "d": "Ela não quer sair: ela quer justiça ali."
+    },
+    "hint": "Ouça as palavras dela ao juiz.",
+    "learningObjective": "Observar o pedido da viúva.",
+    "evidence": [
+      "Lucas 18:3"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-02-persistencia-04",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lucas 18:2–3 na ordem do texto.",
+    "prompt": "Monte Lucas 18:2–3 na ordem do texto.",
+    "cue": "Monte Lucas 18:2–3 na ordem do texto.",
+    "verseRef": "Lucas 18:2–3",
+    "passageText": "Havia em certa cidade um juiz que não temia a Deus, nem respeitava homem algum. Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Havia em certa cidade um juiz"
+      },
+      {
+        "id": "b",
+        "text": "Havia também, naquela mesma cidade, uma viúva"
+      },
+      {
+        "id": "c",
+        "text": "Julga a minha causa contra o meu adversário"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Havia em certa cidade um juiz",
+    "feedbackCorrect": "Primeiro o juiz, depois a viúva, então o pedido dela.",
+    "feedbackWrong": {
+      "default": "Comece pela apresentação do juiz."
+    },
+    "hint": "A parábola apresenta as pessoas antes do pedido.",
+    "learningObjective": "Reconhecer a abertura da parábola.",
+    "evidence": [
+      "Lucas 18:2–3"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-02-persistencia-05",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lucas 18:1, Jesus ensina a orar sempre e nunca fazer o quê?",
+    "prompt": "Em Lucas 18:1, Jesus ensina a orar sempre e nunca fazer o quê?",
+    "cue": "Em Lucas 18:1, Jesus ensina a orar sempre e nunca fazer o quê?",
+    "verseRef": "Lucas 18:1",
+    "passageText": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar.",
+    "template": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desanimar"
+      },
+      {
+        "id": "b",
+        "text": "parar"
+      },
+      {
+        "id": "c",
+        "text": "calar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "orar sempre e nunca desanimar",
+    "feedbackCorrect": "Persistir é continuar sem perder o ânimo na espera.",
+    "feedbackWrong": {
+      "b": "A palavra do texto nomeia o ânimo, não só a ação.",
+      "c": "Falar com Deus é justamente o que devemos manter."
+    },
+    "hint": "É perder o ânimo no meio da espera.",
+    "learningObjective": "Lembrar o alvo declarado da parábola.",
+    "evidence": [
+      "Lucas 18:1"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-02-persistencia-06",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 18:3 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 18:3 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 18:3 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 18:3",
+    "passageText": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "passageA": {
+      "ref": "Lucas 18:3",
+      "text": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus contou a parábola para ensinar sobre a necessidade de orar sempre e nunca desanimar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desistência na primeira porta fechada"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio de quem aceitou tudo"
+      },
+      {
+        "id": "c",
+        "text": "Insistência que não desiste"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "uma viúva que veio até ele",
+    "feedbackCorrect": "Ela volta ao juiz de novo: é o retrato de não desanimar.",
+    "feedbackWrong": {
+      "a": "Ela faz o oposto: ela não para de voltar.",
+      "b": "Ela fala e pede, não se cala diante da injustiça."
+    },
+    "hint": "Veja o que a viúva faz repetidamente.",
+    "learningObjective": "Ligar a viúva ao ensino sobre persistir.",
+    "evidence": [
+      "Lucas 18:3"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-02-persistencia-01",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 18, Jesus compara Deus ao juiz injusto para ensinar que Deus atende de má vontade.",
+    "prompt": "Em Lucas 18, Jesus compara Deus ao juiz injusto para ensinar que Deus atende de má vontade.",
+    "cue": "Em Lucas 18, Jesus compara Deus ao juiz injusto para ensinar que Deus atende de má vontade.",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E Deus não fará justiça aos seus escolhidos",
+    "feedbackCorrect": "O juiz é contraste: Deus fará justiça aos seus, sim.",
+    "feedbackWrong": {
+      "true": "A pergunta de Jesus espera um sim sobre Deus agir."
+    },
+    "hint": "Veja se o juiz é modelo ou contraste.",
+    "learningObjective": "Compreender o contraste entre o juiz e Deus.",
+    "evidence": [
+      "Lucas 18:7"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-02-persistencia-02",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lucas 18:5, toque a palavra que explica por que o juiz finalmente atendeu a viúva.",
+    "prompt": "Em Lucas 18:5, toque a palavra que explica por que o juiz finalmente atendeu a viúva.",
+    "cue": "Em Lucas 18:5, toque a palavra que explica por que o juiz finalmente atendeu a viúva.",
+    "verseRef": "Lucas 18:5",
+    "passageText": "Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar",
+    "options": [
+      {
+        "id": "a",
+        "text": "insistência"
+      },
+      {
+        "id": "b",
+        "text": "causa"
+      },
+      {
+        "id": "c",
+        "text": "viúva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "devido à insistência desta viúva",
+    "feedbackCorrect": "Não foi bondade do juiz: foi a constância dela.",
+    "feedbackWrong": {
+      "b": "Isso é o pedido dela, não o motivo dele ceder.",
+      "c": "Ela é a pessoa; o motivo é o que ela fez sem parar."
+    },
+    "hint": "Procure o motivo depois de devido à.",
+    "learningObjective": "Reconhecer o que moveu a decisão do juiz.",
+    "evidence": [
+      "Lucas 18:5"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-02-persistencia-03",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jesus usa o juiz injusto em Lucas 18:6–7 para falar de Deus?",
+    "prompt": "Como Jesus usa o juiz injusto em Lucas 18:6–7 para falar de Deus?",
+    "cue": "Como Jesus usa o juiz injusto em Lucas 18:6–7 para falar de Deus?",
+    "verseRef": "Lucas 18:6–7",
+    "passageText": "E disse o Senhor: Ouvi o que diz o juiz injusto. Considerai o que ele diz. E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se até ele atende, Deus fará justiça aos seus escolhidos"
+      },
+      {
+        "id": "b",
+        "text": "Deus respeita menos as pessoas do que aquele juiz"
+      },
+      {
+        "id": "c",
+        "text": "Só quem grita mais alto é ouvido no céu por Deus"
+      },
+      {
+        "id": "d",
+        "text": "Deus também precisa ser cansado para finalmente ouvir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E Deus não fará justiça aos seus escolhidos",
+    "feedbackCorrect": "Do pior juiz ao Pai justo: o argumento sobe, não desce.",
+    "feedbackWrong": {
+      "b": "Deus escolhe e defende os seus; o juiz não respeitava ninguém.",
+      "c": "O ponto é justiça de Deus, não volume da voz.",
+      "d": "Deus não é o juiz relutante: ele é o contraste dele."
+    },
+    "hint": "Pense do menor para o maior no argumento.",
+    "learningObjective": "Compreender o argumento do contraste na parábola.",
+    "evidence": [
+      "Lucas 18:6–7"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-02-persistencia-04",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Lucas 18:4–5?",
+    "prompt": "Como se encadeiam os eventos de Lucas 18:4–5?",
+    "cue": "Como se encadeiam os eventos de Lucas 18:4–5?",
+    "verseRef": "Lucas 18:4–5",
+    "passageText": "Por algum tempo, ele não quis atendê-la; mas, depois, disse para si mesmo: Embora eu não tema a Deus, nem tenha respeito por homem algum, Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juiz se recusa a atendê-la por um tempo"
+      },
+      {
+        "id": "b",
+        "text": "A viúva continua vindo e insistindo nele"
+      },
+      {
+        "id": "c",
+        "text": "Ele decide julgar a causa dela de uma vez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele não quis atendê-la",
+    "feedbackCorrect": "Recusa, insistência e decisão: é a virada da história.",
+    "feedbackWrong": {
+      "default": "Comece pela recusa inicial do juiz."
+    },
+    "hint": "A decisão dele é o último passo.",
+    "learningObjective": "Compreender a virada da parábola.",
+    "evidence": [
+      "Lucas 18:4–5"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-02-persistencia-05",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 18:7, o que Jesus afirma que Deus fará aos seus escolhidos?",
+    "prompt": "Em Lucas 18:7, o que Jesus afirma que Deus fará aos seus escolhidos?",
+    "cue": "Em Lucas 18:7, o que Jesus afirma que Deus fará aos seus escolhidos?",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "template": "E Deus não fará ___ aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "espera"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus não fará justiça aos seus escolhidos",
+    "feedbackCorrect": "A resposta de Deus ao clamor é fazer justiça.",
+    "feedbackWrong": {
+      "b": "Ele responde ao clamor, não com silêncio final.",
+      "c": "Esperar é o nosso lado; o dele é agir com justiça."
+    },
+    "hint": "É a mesma palavra do pedido da viúva.",
+    "learningObjective": "Compreender a promessa central da parábola.",
+    "evidence": [
+      "Lucas 18:7"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-02-persistencia-06",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lucas 18:3 a Lucas 11:9?",
+    "prompt": "O que liga Lucas 18:3 a Lucas 11:9?",
+    "cue": "O que liga Lucas 18:3 a Lucas 11:9?",
+    "verseRef": "Lucas 18:3",
+    "passageText": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "passageA": {
+      "ref": "Lucas 18:3",
+      "text": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+    },
+    "passageB": {
+      "ref": "Lucas 11:9",
+      "text": "Peçam, e será-lhes dado; busquem e encontrarão; batam, e a porta se abrirá"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedir, buscar e bater"
+      },
+      {
+        "id": "b",
+        "text": "Pedir uma vez e calar"
+      },
+      {
+        "id": "c",
+        "text": "Bater só em portas humanas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Julga a minha causa contra o meu adversário",
+    "feedbackCorrect": "A viúva vive o pedir, buscar e bater sem desistir.",
+    "feedbackWrong": {
+      "b": "Ela pediu muitas vezes, e Jesus manda continuar.",
+      "c": "A perseverança dela aponta para orar a Deus."
+    },
+    "hint": "Veja os três verbos do ensino de Jesus.",
+    "learningObjective": "Relacionar a parábola ao ensino de Lucas 11.",
+    "evidence": [
+      "Lucas 18:3",
+      "Lucas 11:9"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-02-persistencia-01",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lucas 18 ensina a persistir confiando que Deus, diferente do juiz, fará justiça aos que clamam dia e noite.",
+    "prompt": "Lucas 18 ensina a persistir confiando que Deus, diferente do juiz, fará justiça aos que clamam dia e noite.",
+    "cue": "Lucas 18 ensina a persistir confiando que Deus, diferente do juiz, fará justiça aos que clamam dia e noite.",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "que clamam a Ele dia e noite",
+    "feedbackCorrect": "Persistência com confiança: é fé, não técnica de pressão.",
+    "feedbackWrong": {
+      "false": "A pergunta final de Jesus é se haverá fé, não força."
+    },
+    "hint": "Junte o clamor com a pergunta sobre fé.",
+    "learningObjective": "Interpretar a persistência como expressão de fé.",
+    "evidence": [
+      "Lucas 18:7"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-02-persistencia-02",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 18:7, toque a quem Deus fará justiça, segundo Jesus.",
+    "prompt": "Em Lucas 18:7, toque a quem Deus fará justiça, segundo Jesus.",
+    "cue": "Em Lucas 18:7, toque a quem Deus fará justiça, segundo Jesus.",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "seus escolhidos"
+      },
+      {
+        "id": "c",
+        "text": "dia e noite"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fará justiça aos seus escolhidos",
+    "feedbackCorrect": "Não é qualquer pressão: é o povo dele clamando a ele.",
+    "feedbackWrong": {
+      "a": "Ele é quem faz a justiça, não quem a recebe.",
+      "c": "Isso é quando eles clamam, não quem recebe justiça."
+    },
+    "hint": "Procure o grupo depois de justiça aos.",
+    "learningObjective": "Sustentar no texto quem Deus defende.",
+    "evidence": [
+      "Lucas 18:7"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-02-persistencia-03",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lucas 18:8 sustenta sobre persistir em oração?",
+    "prompt": "Que leitura Lucas 18:8 sustenta sobre persistir em oração?",
+    "cue": "Que leitura Lucas 18:8 sustenta sobre persistir em oração?",
+    "verseRef": "Lucas 18:8",
+    "passageText": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?",
+    "options": [
+      {
+        "id": "a",
+        "text": "É prova de que Deus demora por não se importar"
+      },
+      {
+        "id": "b",
+        "text": "É fé que continua clamando ao Deus justo"
+      },
+      {
+        "id": "c",
+        "text": "É desnecessário depois da primeira oração feita"
+      },
+      {
+        "id": "d",
+        "text": "É um jeito de cansar Deus até ele ceder a nós"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "encontrará, porventura, fé na terra?",
+    "feedbackCorrect": "Jesus fecha falando de fé: persistir é continuar crendo.",
+    "feedbackWrong": {
+      "a": "Ele promete justiça rapidamente aos que clamam.",
+      "c": "O ensino de abertura é orar sempre, sem parar.",
+      "d": "Deus não é o juiz cansado: ele é o justo que defende."
+    },
+    "hint": "Veja a última pergunta de Jesus na parábola.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lucas 18:8"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-02-persistencia-04",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Lucas 18:3–8?",
+    "prompt": "Qual sequência revela o sentido de Lucas 18:3–8?",
+    "cue": "Qual sequência revela o sentido de Lucas 18:3–8?",
+    "verseRef": "Lucas 18:8",
+    "passageText": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A viúva insiste diante do juiz injusto"
+      },
+      {
+        "id": "b",
+        "text": "Deus fará justiça aos seus que clamam"
+      },
+      {
+        "id": "c",
+        "text": "O Filho do Homem procura fé na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "rapidamente, lhes fará justiça",
+    "feedbackCorrect": "Insistência, justiça de Deus e a pergunta sobre a fé.",
+    "feedbackWrong": {
+      "default": "Comece pela viúva diante do juiz."
+    },
+    "hint": "A pergunta sobre fé fecha a parábola.",
+    "learningObjective": "Ver o arco da parábola até a fé.",
+    "evidence": [
+      "Lucas 18:8"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-02-persistencia-05",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lucas 18:8, o que o Filho do Homem espera encontrar na terra quando vier?",
+    "prompt": "Em Lucas 18:8, o que o Filho do Homem espera encontrar na terra quando vier?",
+    "cue": "Em Lucas 18:8, o que o Filho do Homem espera encontrar na terra quando vier?",
+    "verseRef": "Lucas 18:8",
+    "passageText": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, fé na terra?",
+    "template": "Digo a vocês que, rapidamente, lhes fará justiça. Mas, quando o Filho do Homem vier, encontrará, porventura, ___ na terra?",
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "encontrará, porventura, fé na terra?",
+    "feedbackCorrect": "A persistência que ele procura tem nome: fé que não desiste.",
+    "feedbackWrong": {
+      "a": "Reconhecimento humano não é o que ele procura.",
+      "b": "A viúva não tinha força: ela tinha perseverança crente."
+    },
+    "hint": "É a palavra final da pergunta de Jesus.",
+    "learningObjective": "Lembrar o que Jesus procura: fé perseverante.",
+    "evidence": [
+      "Lucas 18:8"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-02-persistencia-06",
+    "trail": "oracao",
+    "section": "or-02-persistencia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 18:7 a Salmos 88:1?",
+    "prompt": "O que liga Lucas 18:7 a Salmos 88:1?",
+    "cue": "O que liga Lucas 18:7 a Salmos 88:1?",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "passageA": {
+      "ref": "Lucas 18:7",
+      "text": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?"
+    },
+    "passageB": {
+      "ref": "Salmos 88:1",
+      "text": "Ó Senhor, Deus da minha salvação, clamo a Ti dia e noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio aceito sem clamar"
+      },
+      {
+        "id": "b",
+        "text": "Clamor de dia e noite"
+      },
+      {
+        "id": "c",
+        "text": "Justiça feita pelas próprias mãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que clamam a Ele dia e noite",
+    "feedbackCorrect": "O salmista também clama de dia e de noite, sem parar.",
+    "feedbackWrong": {
+      "a": "Os dois textos clamam, não se calam na dor.",
+      "c": "A justiça é pedida a Deus, não feita à força."
+    },
+    "hint": "Compare os horários do clamor nos dois textos.",
+    "learningObjective": "Ligar o clamor da parábola ao dos Salmos.",
+    "evidence": [
+      "Lucas 18:7",
+      "Salmos 88:1"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-03-espirito-01",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 8:26, o Espírito nos auxilia em nossas fraquezas na hora de orar.",
+    "prompt": "Em Romanos 8:26, o Espírito nos auxilia em nossas fraquezas na hora de orar.",
+    "cue": "Em Romanos 8:26, o Espírito nos auxilia em nossas fraquezas na hora de orar.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "A ajuda dele chega justamente onde somos fracos.",
+    "feedbackWrong": {
+      "false": "Releia o começo de Romanos 8:26: o auxílio é declarado."
+    },
+    "hint": "Veja o começo do versículo.",
+    "learningObjective": "Observar o auxílio do Espírito em Romanos 8:26.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-03-espirito-02",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 8:26, toque quem intercede por nós com gemidos inexprimíveis.",
+    "prompt": "Em Romanos 8:26, toque quem intercede por nós com gemidos inexprimíveis.",
+    "cue": "Em Romanos 8:26, toque quem intercede por nós com gemidos inexprimíveis.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fraquezas"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "gemidos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o próprio Espírito intercede por nós",
+    "feedbackCorrect": "É o próprio dele quem assume nossa causa em oração.",
+    "feedbackWrong": {
+      "a": "Isso é onde precisamos de ajuda, não quem ajuda.",
+      "c": "Isso é o modo da intercessão, não quem intercede."
+    },
+    "hint": "Procure o sujeito da segunda metade do versículo.",
+    "learningObjective": "Identificar quem intercede em Romanos 8:26.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-03-espirito-03",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 8:27, quem conhece o propósito do Espírito ao interceder?",
+    "prompt": "Segundo Romanos 8:27, quem conhece o propósito do Espírito ao interceder?",
+    "cue": "Segundo Romanos 8:27, quem conhece o propósito do Espírito ao interceder?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém, nem mesmo o próprio Deus Pai"
+      },
+      {
+        "id": "b",
+        "text": "Aquele que examina os corações dos homens"
+      },
+      {
+        "id": "c",
+        "text": "Somente quem ouve gemidos em voz alta"
+      },
+      {
+        "id": "d",
+        "text": "Apenas os líderes da igreja de Roma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "aquele que examina os corações conhece o propósito do Espírito",
+    "feedbackCorrect": "Deus, que examina corações, entende a intercessão dele.",
+    "feedbackWrong": {
+      "a": "O texto afirma que Deus conhece esse propósito.",
+      "c": "Os gemidos são inexprimíveis: não dependem de audição.",
+      "d": "Nenhum grupo humano é citado como intérprete aqui."
+    },
+    "hint": "Veja quem examina os corações.",
+    "learningObjective": "Observar quem conhece a intercessão do Espírito.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-03-espirito-04",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 8:26–27 na ordem do texto.",
+    "prompt": "Monte Romanos 8:26–27 na ordem do texto.",
+    "cue": "Monte Romanos 8:26–27 na ordem do texto.",
+    "verseRef": "Romanos 8:26–27",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Espírito nos auxilia em nossas fraquezas"
+      },
+      {
+        "id": "b",
+        "text": "intercede por nós com gemidos inexprimíveis"
+      },
+      {
+        "id": "c",
+        "text": "intercede pelos santos de acordo com a vontade de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "Auxílio na fraqueza, gemidos e intercessão segundo Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo auxílio em nossas fraquezas."
+    },
+    "hint": "A vontade de Deus fecha os dois versículos.",
+    "learningObjective": "Reconhecer a sequência de Romanos 8:26–27.",
+    "evidence": [
+      "Romanos 8:26–27"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-03-espirito-05",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 8:27, o que aquele que examina conhece sobre os nossos interiores?",
+    "prompt": "Em Romanos 8:27, o que aquele que examina conhece sobre os nossos interiores?",
+    "cue": "Em Romanos 8:27, o que aquele que examina conhece sobre os nossos interiores?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "template": "E aquele que examina os ___ conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "corações"
+      },
+      {
+        "id": "b",
+        "text": "propósito"
+      },
+      {
+        "id": "c",
+        "text": "santos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "aquele que examina os corações",
+    "feedbackCorrect": "Nada em nós é segredo para quem examina por dentro.",
+    "feedbackWrong": {
+      "b": "Isso é o que Deus conhece do Espírito, não de nós.",
+      "c": "Isso é por quem ele intercede, não o que Deus examina."
+    },
+    "hint": "É o nosso interior, no começo do versículo.",
+    "learningObjective": "Lembrar o que Deus examina em Romanos 8:27.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-03-espirito-06",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 8:27 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 8:27 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 8:27 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "passageA": {
+      "ref": "Romanos 8:27",
+      "text": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Crentes fracos e sem palavras certas continuam sendo ouvidos por Deus em oração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus sem conhecer nosso interior"
+      },
+      {
+        "id": "b",
+        "text": "Intercessão segundo a vontade dele"
+      },
+      {
+        "id": "c",
+        "text": "Oração só de quem sabe falar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "intercede pelos santos de acordo com a vontade de Deus",
+    "feedbackCorrect": "Ele intercede pelos santos do jeito de Deus, não do nosso.",
+    "feedbackWrong": {
+      "a": "Ele examina corações: conhece tudo em nós.",
+      "c": "Justamente quem não sabe orar é auxiliado aqui."
+    },
+    "hint": "Veja a medida da intercessão no fim.",
+    "learningObjective": "Ligar Romanos 8:27 à intercessão segundo Deus.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-03-espirito-01",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 8:26–27, o Espírito só auxilia quem já sabe orar muito bem e sem fraqueza.",
+    "prompt": "Em Romanos 8:26–27, o Espírito só auxilia quem já sabe orar muito bem e sem fraqueza.",
+    "cue": "Em Romanos 8:26–27, o Espírito só auxilia quem já sabe orar muito bem e sem fraqueza.",
+    "verseRef": "Romanos 8:26–27",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "É o contrário: o auxílio é para fracos que não sabem orar.",
+    "feedbackWrong": {
+      "true": "Não saber orar como convém é o ponto de partida do texto."
+    },
+    "hint": "Veja para quem o auxílio é prometido.",
+    "learningObjective": "Compreender que o auxílio é para a fraqueza.",
+    "evidence": [
+      "Romanos 8:26–27"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-03-espirito-02",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 8:26, toque o que nós não sabemos fazer como convém.",
+    "prompt": "Em Romanos 8:26, toque o que nós não sabemos fazer como convém.",
+    "cue": "Em Romanos 8:26, toque o que nós não sabemos fazer como convém.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gemidos"
+      },
+      {
+        "id": "b",
+        "text": "orar"
+      },
+      {
+        "id": "c",
+        "text": "fraquezas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não sabemos orar como convém",
+    "feedbackCorrect": "A confissão é honesta: nem orar sabemos direito.",
+    "feedbackWrong": {
+      "a": "Isso é como ele intercede, não nossa incapacidade.",
+      "c": "Isso é onde somos ajudados, não o que não sabemos fazer."
+    },
+    "hint": "Procure o verbo depois de não sabemos.",
+    "learningObjective": "Reconhecer nossa limitação declarada na oração.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-03-espirito-03",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 8:27 completa o que 8:26 diz sobre os gemidos do Espírito?",
+    "prompt": "Como Romanos 8:27 completa o que 8:26 diz sobre os gemidos do Espírito?",
+    "cue": "Como Romanos 8:27 completa o que 8:26 diz sobre os gemidos do Espírito?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus conhece o propósito dele, mesmo sem palavras"
+      },
+      {
+        "id": "b",
+        "text": "Deus só entende orações bem formuladas e longas"
+      },
+      {
+        "id": "c",
+        "text": "O propósito dele é contrário à vontade de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Os gemidos precisam de um tradutor humano presente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conhece o propósito do Espírito",
+    "feedbackCorrect": "Inexprimível para nós, perfeitamente claro para Deus.",
+    "feedbackWrong": {
+      "b": "Gemidos sem palavras são justamente o que ele entende.",
+      "c": "É de acordo com a vontade de Deus, diz o texto.",
+      "d": "Quem conhece é Deus examinando corações, não um tradutor."
+    },
+    "hint": "Veja quem entende o que não tem palavras.",
+    "learningObjective": "Relacionar gemidos inexprimíveis e o conhecer de Deus.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-03-espirito-04",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia o argumento de Romanos 8:27?",
+    "prompt": "Como se encadeia o argumento de Romanos 8:27?",
+    "cue": "Como se encadeia o argumento de Romanos 8:27?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus examina os corações dos seus"
+      },
+      {
+        "id": "b",
+        "text": "Ele conhece o propósito do Espírito"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito intercede conforme a vontade dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "aquele que examina os corações",
+    "feedbackCorrect": "Examinar, conhecer e interceder segundo a vontade dele.",
+    "feedbackWrong": {
+      "default": "Comece por quem examina os corações."
+    },
+    "hint": "A vontade de Deus é o fecho do versículo.",
+    "learningObjective": "Compreender o encadeamento de Romanos 8:27.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-03-espirito-05",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 8:26, em que área o Espírito nos auxilia quando vamos orar?",
+    "prompt": "Em Romanos 8:26, em que área o Espírito nos auxilia quando vamos orar?",
+    "cue": "Em Romanos 8:26, em que área o Espírito nos auxilia quando vamos orar?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "template": "Da mesma forma, o Espírito nos auxilia em nossas ___, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vitórias"
+      },
+      {
+        "id": "b",
+        "text": "discursos"
+      },
+      {
+        "id": "c",
+        "text": "fraquezas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "A ajuda dele mira exatamente o nosso ponto fraco.",
+    "feedbackWrong": {
+      "a": "O texto fala de auxílio na fraqueza, não em vitórias.",
+      "b": "Não é eloquência que ele supre: é a fraqueza."
+    },
+    "hint": "É o nosso ponto fraco, logo no começo.",
+    "learningObjective": "Compreender onde atua o auxílio do Espírito.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-03-espirito-06",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 8:26 a João 14:16?",
+    "prompt": "O que liga Romanos 8:26 a João 14:16?",
+    "cue": "O que liga Romanos 8:26 a João 14:16?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "passageA": {
+      "ref": "Romanos 8:26",
+      "text": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis."
+    },
+    "passageB": {
+      "ref": "João 14:16",
+      "text": "E eu pedirei ao Pai, e Ele vos dará outro Consolador, para que esteja convosco para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oração sem presença do Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Ajuda que abandona na fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "Auxiliador que fica com os discípulos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "Jesus prometeu outro Auxiliador para estar sempre conosco.",
+    "feedbackWrong": {
+      "a": "Os dois textos põem ele bem no centro da ajuda.",
+      "b": "Ele fica para sempre, não abandona ninguém."
+    },
+    "hint": "Veja por quanto tempo o Auxiliador fica.",
+    "learningObjective": "Relacionar o auxílio do Espírito à promessa de Jesus.",
+    "evidence": [
+      "Romanos 8:26",
+      "João 14:16"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-03-espirito-01",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 8:26–27 ensina que nossa fraqueza ao orar não nos afasta de Deus, pois o Espírito intercede por nós.",
+    "prompt": "Romanos 8:26–27 ensina que nossa fraqueza ao orar não nos afasta de Deus, pois o Espírito intercede por nós.",
+    "cue": "Romanos 8:26–27 ensina que nossa fraqueza ao orar não nos afasta de Deus, pois o Espírito intercede por nós.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o próprio Espírito intercede por nós",
+    "feedbackCorrect": "Sem palavras certas, temos um intercessor perfeito.",
+    "feedbackWrong": {
+      "false": "A fraqueza é justamente onde a intercessão acontece."
+    },
+    "hint": "Veja o que acontece quando não sabemos orar.",
+    "learningObjective": "Interpretar a fraqueza como lugar de intercessão.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-03-espirito-02",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 8:27, toque segundo o que o Espírito intercede pelos santos.",
+    "prompt": "Em Romanos 8:27, toque segundo o que o Espírito intercede pelos santos.",
+    "cue": "Em Romanos 8:27, toque segundo o que o Espírito intercede pelos santos.",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vontade de Deus"
+      },
+      {
+        "id": "b",
+        "text": "santos"
+      },
+      {
+        "id": "c",
+        "text": "propósito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "de acordo com a vontade de Deus",
+    "feedbackCorrect": "A intercessão dele é perfeita porque segue a vontade do Pai.",
+    "feedbackWrong": {
+      "b": "Isso é por quem ele intercede, não segundo o quê.",
+      "c": "Isso é o que Deus conhece dele, não a medida final."
+    },
+    "hint": "Procure a medida no fim do versículo.",
+    "learningObjective": "Sustentar no texto a medida da intercessão.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-03-espirito-03",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 8:26–27 sustenta sobre orar em fraqueza?",
+    "prompt": "Que leitura Romanos 8:26–27 sustenta sobre orar em fraqueza?",
+    "cue": "Que leitura Romanos 8:26–27 sustenta sobre orar em fraqueza?",
+    "verseRef": "Romanos 8:26–27",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis. E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus só ouve quem formula orações perfeitas sempre"
+      },
+      {
+        "id": "b",
+        "text": "Mesmo sem palavras, somos ouvidos e auxiliados nele"
+      },
+      {
+        "id": "c",
+        "text": "Devemos produzir gemidos audíveis como técnica certa"
+      },
+      {
+        "id": "d",
+        "text": "Podemos parar de orar, pois ele faz tudo sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não sabemos orar como convém; mas o próprio Espírito intercede por nós",
+    "feedbackCorrect": "Nossa falta de palavras encontra a intercessão dele.",
+    "feedbackWrong": {
+      "a": "O texto consola justamente quem não sabe formular.",
+      "c": "Quem geme é o Espírito em nós, não uma técnica nossa.",
+      "d": "Auxiliar na fraqueza supõe que continuamos orando fracos."
+    },
+    "hint": "Junte nossa incapacidade com a ação dele.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Romanos 8:26–27"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-03-espirito-04",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Romanos 8:26?",
+    "prompt": "Qual sequência revela o sentido de Romanos 8:26?",
+    "cue": "Qual sequência revela o sentido de Romanos 8:26?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não sabemos orar como deveríamos orar"
+      },
+      {
+        "id": "b",
+        "text": "O próprio Espírito assume nossa intercessão"
+      },
+      {
+        "id": "c",
+        "text": "Gemidos sem palavras chegam ao coração de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não sabemos orar como convém",
+    "feedbackCorrect": "Da nossa falta de palavras à intercessão que Deus entende.",
+    "feedbackWrong": {
+      "default": "Comece pela nossa incapacidade de orar."
+    },
+    "hint": "Os gemidos entendidos por Deus fecham o caminho.",
+    "learningObjective": "Ver o caminho da fraqueza à intercessão perfeita.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-03-espirito-05",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 8:26, com que o Espírito intercede quando faltam palavras expressas?",
+    "prompt": "Em Romanos 8:26, com que o Espírito intercede quando faltam palavras expressas?",
+    "cue": "Em Romanos 8:26, com que o Espírito intercede quando faltam palavras expressas?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "template": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com ___ inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gemidos"
+      },
+      {
+        "id": "b",
+        "text": "gritos"
+      },
+      {
+        "id": "c",
+        "text": "discursos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "intercede por nós com gemidos inexprimíveis",
+    "feedbackCorrect": "Além das palavras, a intercessão dele continua perfeita.",
+    "feedbackWrong": {
+      "b": "O texto não fala de volume, mas de profundidade.",
+      "c": "Discurso bem montado é justamente o que nos falta."
+    },
+    "hint": "É profundo demais para virar palavras.",
+    "learningObjective": "Lembrar o modo da intercessão do Espírito.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-03-espirito-06",
+    "trail": "oracao",
+    "section": "or-03-espirito",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 8:27 a Romanos 8:34?",
+    "prompt": "O que liga Romanos 8:27 a Romanos 8:34?",
+    "cue": "O que liga Romanos 8:27 a Romanos 8:34?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "passageA": {
+      "ref": "Romanos 8:27",
+      "text": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus."
+    },
+    "passageB": {
+      "ref": "Romanos 8:34",
+      "text": "Quem poderá nos condenar? É Cristo Jesus quem morreu, ou antes, quem ressuscitou dentre os mortos; ele está à direita de Deus e também intercede por nós."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém intercede pelos santos"
+      },
+      {
+        "id": "b",
+        "text": "Intercessão contra a vontade de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Cristo também intercede por nós"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele intercede pelos santos",
+    "feedbackCorrect": "Espírito em nós e Cristo à direita de Deus: dupla intercessão.",
+    "feedbackWrong": {
+      "a": "Os dois textos afirmam intercessão a nosso favor.",
+      "b": "Toda intercessão aqui é segundo a vontade de Deus."
+    },
+    "hint": "Veja quem mais intercede no mesmo capítulo.",
+    "learningObjective": "Ligar as duas intercessões de Romanos 8.",
+    "evidence": [
+      "Romanos 8:27",
+      "Romanos 8:34"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-01",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Neste desafio, Jesus ensina a começar a oração pelos nossos pedidos urgentes, antes de falar do Pai.",
+    "prompt": "Neste desafio, Jesus ensina a começar a oração pelos nossos pedidos urgentes, antes de falar do Pai.",
+    "cue": "Neste desafio, Jesus ensina a começar a oração pelos nossos pedidos urgentes, antes de falar do Pai.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Pai nosso, que estás nos céus, santificado seja o teu nome",
+    "feedbackCorrect": "A oração começa no Pai e no nome dele, não nas urgências.",
+    "feedbackWrong": {
+      "true": "Nome santificado e reino vêm antes dos nossos pedidos."
+    },
+    "hint": "Lembre a primeira linha da oração ensinada.",
+    "learningObjective": "Revisar a abertura do Pai Nosso.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-02",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 6:9, toque a quem Jesus manda dirigir a oração.",
+    "prompt": "Em Mateus 6:9, toque a quem Jesus manda dirigir a oração.",
+    "cue": "Em Mateus 6:9, toque a quem Jesus manda dirigir a oração.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "céus"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "Toda a vida de oração começa chamando Deus assim.",
+    "feedbackWrong": {
+      "a": "Isso é o primeiro pedido, depois de chamá-lo.",
+      "b": "Isso é onde ele está, não a quem falamos."
+    },
+    "hint": "É a palavra que abre a oração.",
+    "learningObjective": "Revisar o destinatário da oração de Jesus.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-03",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lucas 18:1, para que Jesus contou a parábola do juiz e da viúva?",
+    "prompt": "Segundo Lucas 18:1, para que Jesus contou a parábola do juiz e da viúva?",
+    "cue": "Segundo Lucas 18:1, para que Jesus contou a parábola do juiz e da viúva?",
+    "verseRef": "Lucas 18:1",
+    "passageText": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para ensinar a orar sempre e nunca desanimar"
+      },
+      {
+        "id": "b",
+        "text": "Para mostrar que viúvas devem ficar caladas"
+      },
+      {
+        "id": "c",
+        "text": "Para encerrar o assunto da oração de uma vez"
+      },
+      {
+        "id": "d",
+        "text": "Para ensinar a evitar juízes das cidades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a necessidade de orar sempre e nunca desanimar",
+    "feedbackCorrect": "O alvo é declarado antes da história começar.",
+    "feedbackWrong": {
+      "b": "A viúva fala e insiste: é o exemplo a seguir.",
+      "c": "A parábola abre a persistência, não a encerra.",
+      "d": "O juiz é personagem da lição, não um aviso prático."
+    },
+    "hint": "O objetivo está no primeiro versículo.",
+    "learningObjective": "Revisar o propósito da parábola da viúva.",
+    "evidence": [
+      "Lucas 18:1"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-04",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 6:9 na ordem do texto.",
+    "prompt": "Monte Mateus 6:9 na ordem do texto.",
+    "cue": "Monte Mateus 6:9 na ordem do texto.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai nosso"
+      },
+      {
+        "id": "b",
+        "text": "que estás nos céus"
+      },
+      {
+        "id": "c",
+        "text": "santificado seja o teu nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "Pai, céus e nome santificado: a abertura continua a mesma.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado ao Pai nosso."
+    },
+    "hint": "Siga a oração palavra por palavra.",
+    "learningObjective": "Revisar a ordem da abertura do Pai Nosso.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-05",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 6:10, pedimos que venha o governo de Deus chamado de quê?",
+    "prompt": "Em Mateus 6:10, pedimos que venha o governo de Deus chamado de quê?",
+    "cue": "Em Mateus 6:10, pedimos que venha o governo de Deus chamado de quê?",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "template": "Venha o teu ___; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pão"
+      },
+      {
+        "id": "b",
+        "text": "reino"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Venha o teu reino",
+    "feedbackCorrect": "Antes do pão de cada dia, o governo dele é pedido.",
+    "feedbackWrong": {
+      "a": "Isso é pedido no versículo seguinte, depois dele.",
+      "c": "Do mal pedimos livramento, no fim da oração."
+    },
+    "hint": "É o que deve vir à terra.",
+    "learningObjective": "Revisar a prioridade do reino na oração.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-06",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lucas 18:3 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 18:3 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 18:3 comunica que se liga a este contexto?",
+    "verseRef": "Lucas 18:3",
+    "passageText": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "passageA": {
+      "ref": "Lucas 18:3",
+      "text": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Três ensinos formam uma vida de oração: a forma de Jesus, a persistência e o auxílio do Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Insistência que nunca desanima"
+      },
+      {
+        "id": "b",
+        "text": "Desistência na primeira recusa"
+      },
+      {
+        "id": "c",
+        "text": "Oração feita uma única vez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "uma viúva que veio até ele",
+    "feedbackCorrect": "Ela é a parte da persistência nesta vida de oração.",
+    "feedbackWrong": {
+      "b": "Ela voltou de novo ao juiz, sem desistir.",
+      "c": "A lição dela é justamente voltar sempre."
+    },
+    "hint": "Veja o papel da viúva entre os três ensinos.",
+    "learningObjective": "Revisar a persistência dentro da vida de oração.",
+    "evidence": [
+      "Lucas 18:3"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-07",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lucas 18:3, toque quem foi pedir justiça ao juiz da cidade.",
+    "prompt": "Em Lucas 18:3, toque quem foi pedir justiça ao juiz da cidade.",
+    "cue": "Em Lucas 18:3, toque quem foi pedir justiça ao juiz da cidade.",
+    "verseRef": "Lucas 18:3",
+    "passageText": "Havia também, naquela mesma cidade, uma viúva que veio até ele, dizendo: Julga a minha causa contra o meu adversário.",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "cidade"
+      },
+      {
+        "id": "c",
+        "text": "adversário"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "uma viúva que veio até ele",
+    "feedbackCorrect": "Sem defensor, ela mesma vai, volta e insiste.",
+    "feedbackWrong": {
+      "b": "Isso é o cenário da história, não a pessoa.",
+      "c": "Ele é o outro lado da causa que ela leva."
+    },
+    "hint": "Procure a mulher da mesma cidade.",
+    "learningObjective": "Revisar a personagem da persistência.",
+    "evidence": [
+      "Lucas 18:3"
+    ]
+  },
+  {
+    "id": "oracao-sem-or-04-desafio-08",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 8:26 na ordem do texto.",
+    "prompt": "Monte Romanos 8:26 na ordem do texto.",
+    "cue": "Monte Romanos 8:26 na ordem do texto.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Espírito nos auxilia em nossas fraquezas"
+      },
+      {
+        "id": "b",
+        "text": "não sabemos orar como convém"
+      },
+      {
+        "id": "c",
+        "text": "intercede por nós com gemidos inexprimíveis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "Auxílio, nossa falta de saber e a intercessão dele.",
+    "feedbackWrong": {
+      "default": "Comece pelo auxílio em nossas fraquezas."
+    },
+    "hint": "Os gemidos fecham o versículo.",
+    "learningObjective": "Revisar a sequência de Romanos 8:26.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-01",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lucas 18:7, a parábola trata Deus como um Pai justo que defende os seus, e não como um juiz relutante.",
+    "prompt": "Em Lucas 18:7, a parábola trata Deus como um Pai justo que defende os seus, e não como um juiz relutante.",
+    "cue": "Em Lucas 18:7, a parábola trata Deus como um Pai justo que defende os seus, e não como um juiz relutante.",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "E Deus não fará justiça aos seus escolhidos",
+    "feedbackCorrect": "O juiz injusto é o contraste que faz Deus brilhar.",
+    "feedbackWrong": {
+      "false": "A pergunta de Jesus espera confiança na justiça de Deus."
+    },
+    "hint": "Separe o personagem do contraste de Deus.",
+    "learningObjective": "Revisar o contraste entre juiz e Deus.",
+    "evidence": [
+      "Lucas 18:7"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-02",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 6:10, toque a palavrinha que iguala terra e céu na vontade de Deus.",
+    "prompt": "Em Mateus 6:10, toque a palavrinha que iguala terra e céu na vontade de Deus.",
+    "cue": "Em Mateus 6:10, toque a palavrinha que iguala terra e céu na vontade de Deus.",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "como"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assim na terra como no céu",
+    "feedbackCorrect": "O céu é a medida do que se pede para a terra.",
+    "feedbackWrong": {
+      "a": "Isso é o governo pedido, não a palavra de comparação.",
+      "b": "Isso é o lugar carente, não a comparação."
+    },
+    "hint": "Procure a palavra curta entre os dois lugares.",
+    "learningObjective": "Revisar a comparação de Mateus 6:10.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-03",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o Pai Nosso e a parábola da viúva se completam nesta trilha?",
+    "prompt": "Como o Pai Nosso e a parábola da viúva se completam nesta trilha?",
+    "cue": "Como o Pai Nosso e a parábola da viúva se completam nesta trilha?",
+    "verseRef": "Lucas 18:1",
+    "passageText": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os dois dispensam qualquer forma de oração"
+      },
+      {
+        "id": "b",
+        "text": "Um é para líderes, a outra só para viúvas"
+      },
+      {
+        "id": "c",
+        "text": "Os dois tratam de assuntos sem nenhuma ligação"
+      },
+      {
+        "id": "d",
+        "text": "Um ensina como orar, a outra ensina a continuar"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "a necessidade de orar sempre e nunca desanimar",
+    "feedbackCorrect": "Forma de Jesus e perseverança andam juntas na vida de oração.",
+    "feedbackWrong": {
+      "a": "Um dá a forma; a outra, a constância nela.",
+      "b": "Os ensinos são para discípulos em geral, sem restrição.",
+      "c": "A trilha inteira os junta num mesmo caminho."
+    },
+    "hint": "Pense em forma e constância juntas.",
+    "learningObjective": "Relacionar os ensinos de Jesus sobre orar.",
+    "evidence": [
+      "Lucas 18:1"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-04",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os pedidos iniciais do Pai Nosso?",
+    "prompt": "Como se encadeiam os pedidos iniciais do Pai Nosso?",
+    "cue": "Como se encadeiam os pedidos iniciais do Pai Nosso?",
+    "verseRef": "Mateus 6:9–10",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A santidade do nome vem em primeiro lugar"
+      },
+      {
+        "id": "b",
+        "text": "O reino de Deus é pedido logo em seguida"
+      },
+      {
+        "id": "c",
+        "text": "A vontade dele é feita na terra como no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "santificado seja o teu nome",
+    "feedbackCorrect": "Nome, reino e vontade: a primeira metade é toda dele.",
+    "feedbackWrong": {
+      "default": "Comece pela santidade do nome do Pai."
+    },
+    "hint": "Nossas necessidades ainda nem apareceram.",
+    "learningObjective": "Revisar a ordem da primeira metade da oração.",
+    "evidence": [
+      "Mateus 6:9–10"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-05",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lucas 18:1, orar sempre é o oposto de perder o ânimo chamado de quê?",
+    "prompt": "Em Lucas 18:1, orar sempre é o oposto de perder o ânimo chamado de quê?",
+    "cue": "Em Lucas 18:1, orar sempre é o oposto de perder o ânimo chamado de quê?",
+    "verseRef": "Lucas 18:1",
+    "passageText": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar.",
+    "template": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desanimar"
+      },
+      {
+        "id": "b",
+        "text": "descansar"
+      },
+      {
+        "id": "c",
+        "text": "silenciar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "orar sempre e nunca desanimar",
+    "feedbackCorrect": "A perseverança da viúva é a prática desse nunca.",
+    "feedbackWrong": {
+      "b": "Descansar em Deus é bom; o proibido é outro.",
+      "c": "Silenciar pode ser oração; o contrário aqui é ânimo perdido."
+    },
+    "hint": "É perder o ânimo no meio do caminho.",
+    "learningObjective": "Revisar o alvo da parábola da persistência.",
+    "evidence": [
+      "Lucas 18:1"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-06",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 6:9 a Romanos 8:15?",
+    "prompt": "O que liga Mateus 6:9 a Romanos 8:15?",
+    "cue": "O que liga Mateus 6:9 a Romanos 8:15?",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "passageA": {
+      "ref": "Mateus 6:9",
+      "text": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+    },
+    "passageB": {
+      "ref": "Romanos 8:15",
+      "text": "Pois vocês não receberam um espírito de escravidão, para voltarem a viver com medo, mas receberam o espírito de adoção, pelo qual clamamos: Aba, Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos que clamam Pai"
+      },
+      {
+        "id": "b",
+        "text": "Oração sem família de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Medo servil diante de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "O Espírito da adoção faz o clamor que Jesus ensinou.",
+    "feedbackWrong": {
+      "b": "É Pai nosso: oração de filhos e de família.",
+      "c": "Romanos troca escravidão e medo por adoção."
+    },
+    "hint": "Veja o clamor de quem foi adotado.",
+    "learningObjective": "Relacionar Pai Nosso e adoção no Espírito.",
+    "evidence": [
+      "Mateus 6:9",
+      "Romanos 8:15"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-07",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 8:26, toque o que confessamos não saber fazer como convém.",
+    "prompt": "Em Romanos 8:26, toque o que confessamos não saber fazer como convém.",
+    "cue": "Em Romanos 8:26, toque o que confessamos não saber fazer como convém.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "orar"
+      },
+      {
+        "id": "b",
+        "text": "gemidos"
+      },
+      {
+        "id": "c",
+        "text": "fraquezas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não sabemos orar como convém",
+    "feedbackCorrect": "A vida de oração inclui admitir essa falta de saber.",
+    "feedbackWrong": {
+      "b": "Isso é o modo dele interceder, não nossa tarefa.",
+      "c": "Isso é o terreno da ajuda, não o ato confessado."
+    },
+    "hint": "Procure o verbo depois de não sabemos.",
+    "learningObjective": "Revisar nossa limitação na oração.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-cam-or-04-desafio-08",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a história da viúva em Lucas 18:4–5?",
+    "prompt": "Como avança a história da viúva em Lucas 18:4–5?",
+    "cue": "Como avança a história da viúva em Lucas 18:4–5?",
+    "verseRef": "Lucas 18:4–5",
+    "passageText": "Por algum tempo, ele não quis atendê-la; mas, depois, disse para si mesmo: Embora eu não tema a Deus, nem tenha respeito por homem algum, Entretanto, devido à insistência desta viúva eu julgarei a sua causa, para que ela não venha a me molestar",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juiz se recusa a atender no começo"
+      },
+      {
+        "id": "b",
+        "text": "A viúva continua vindo até ele sem parar"
+      },
+      {
+        "id": "c",
+        "text": "Ele decide julgar a causa dela por fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele não quis atendê-la",
+    "feedbackCorrect": "Recusa, retorno insistente e decisão do juiz.",
+    "feedbackWrong": {
+      "default": "Comece pela recusa inicial do juiz."
+    },
+    "hint": "A decisão dele é a última parte.",
+    "learningObjective": "Revisar a virada da parábola da viúva.",
+    "evidence": [
+      "Lucas 18:4–5"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-01",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Nesta trilha, orar bem é sempre falar perfeito, nunca desanimar por dentro e nunca precisar do Espírito.",
+    "prompt": "Nesta trilha, orar bem é sempre falar perfeito, nunca desanimar por dentro e nunca precisar do Espírito.",
+    "cue": "Nesta trilha, orar bem é sempre falar perfeito, nunca desanimar por dentro e nunca precisar do Espírito.",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não sabemos orar como convém; mas o próprio Espírito intercede por nós",
+    "feedbackCorrect": "A trilha assume fraqueza e promete auxílio, não perfeição.",
+    "feedbackWrong": {
+      "true": "Não saber orar é o ponto onde o Espírito nos auxilia."
+    },
+    "hint": "Lembre a confissão de Romanos 8:26.",
+    "learningObjective": "Interpretar a vida de oração sem perfeccionismo.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-02",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lucas 18:7, toque a quem Deus promete fazer justiça quando clamam a ele.",
+    "prompt": "Em Lucas 18:7, toque a quem Deus promete fazer justiça quando clamam a ele.",
+    "cue": "Em Lucas 18:7, toque a quem Deus promete fazer justiça quando clamam a ele.",
+    "verseRef": "Lucas 18:7",
+    "passageText": "E Deus não fará justiça aos seus escolhidos, que clamam a Ele dia e noite, embora pareça demorado em defendê-los?",
+    "options": [
+      {
+        "id": "a",
+        "text": "dia e noite"
+      },
+      {
+        "id": "b",
+        "text": "seus escolhidos"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fará justiça aos seus escolhidos",
+    "feedbackCorrect": "A persistência se apoia em quem Deus é para os seus.",
+    "feedbackWrong": {
+      "a": "Isso é a constância do clamor, não quem o recebe.",
+      "c": "Isso é o que Deus faz, não a quem ele faz."
+    },
+    "hint": "Procure o grupo depois de justiça aos.",
+    "learningObjective": "Revisar a promessa de justiça aos escolhidos.",
+    "evidence": [
+      "Lucas 18:7"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-03",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura resume a vida de oração ensinada nesta trilha inteira?",
+    "prompt": "Que leitura resume a vida de oração ensinada nesta trilha inteira?",
+    "cue": "Que leitura resume a vida de oração ensinada nesta trilha inteira?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dominar técnicas até Deus ser obrigado a responder"
+      },
+      {
+        "id": "b",
+        "text": "Cada um ora sozinho, sem forma nem comunidade alguma"
+      },
+      {
+        "id": "c",
+        "text": "Orar como filhos, persistir com fé e depender do Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Desistir cedo prova maturidade espiritual verdadeira"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "Forma de filhos, constância de fé e auxílio na fraqueza.",
+    "feedbackWrong": {
+      "a": "Os três textos falam de relação, não de técnica.",
+      "b": "É Pai nosso, no plural, com forma ensinada.",
+      "d": "A viúva é elogiada justamente por não desistir."
+    },
+    "hint": "Junte os três ensinos da trilha.",
+    "learningObjective": "Escolher a síntese que a trilha sustenta.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-04",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a teologia da oração nesta trilha?",
+    "prompt": "Qual sequência revela a teologia da oração nesta trilha?",
+    "cue": "Qual sequência revela a teologia da oração nesta trilha?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos chamam Deus de Pai na oração"
+      },
+      {
+        "id": "b",
+        "text": "Eles clamam dia e noite pedindo justiça"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito intercede na fraqueza deles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Espírito nos auxilia em nossas fraquezas",
+    "feedbackCorrect": "Filhos que clamam e são auxiliados pelo Espírito.",
+    "feedbackWrong": {
+      "default": "Comece pelo Pai a quem os filhos chamam."
+    },
+    "hint": "A intercessão na fraqueza fecha o caminho.",
+    "learningObjective": "Ver os três ensinos como um caminho só.",
+    "evidence": [
+      "Romanos 8:26",
+      "Lucas 18:7",
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-05",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 8:26, o Espírito intercede por nós com o que vai além das palavras?",
+    "prompt": "Em Romanos 8:26, o Espírito intercede por nós com o que vai além das palavras?",
+    "cue": "Em Romanos 8:26, o Espírito intercede por nós com o que vai além das palavras?",
+    "verseRef": "Romanos 8:26",
+    "passageText": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com gemidos inexprimíveis.",
+    "template": "Da mesma forma, o Espírito nos auxilia em nossas fraquezas, pois não sabemos orar como convém; mas o próprio Espírito intercede por nós com ___ inexprimíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gemidos"
+      },
+      {
+        "id": "b",
+        "text": "gritos"
+      },
+      {
+        "id": "c",
+        "text": "poemas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "intercede por nós com gemidos inexprimíveis",
+    "feedbackCorrect": "Quando a palavra acaba, a intercessão continua nele.",
+    "feedbackWrong": {
+      "b": "Volume não é a medida dessa intercessão profunda.",
+      "c": "Nenhuma composição nossa é exigida neste texto."
+    },
+    "hint": "É inexprimível, maior que palavras.",
+    "learningObjective": "Revisar o modo da intercessão do Espírito.",
+    "evidence": [
+      "Romanos 8:26"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-06",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lucas 18:1 a Efésios 6:18?",
+    "prompt": "O que liga Lucas 18:1 a Efésios 6:18?",
+    "cue": "O que liga Lucas 18:1 a Efésios 6:18?",
+    "verseRef": "Lucas 18:1",
+    "passageText": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar.",
+    "passageA": {
+      "ref": "Lucas 18:1",
+      "text": "E também lhes contou uma parábola sobre a necessidade de orar sempre e nunca desanimar."
+    },
+    "passageB": {
+      "ref": "Efésios 6:18",
+      "text": "Orando em todo o tempo com toda oração e súplica, no Espírito e vigiando com toda perseverança e súplica por todos os santos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar uma vez só"
+      },
+      {
+        "id": "b",
+        "text": "Orar no Espírito em todo tempo"
+      },
+      {
+        "id": "c",
+        "text": "Persistência sem o Espírito Santo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a necessidade de orar sempre e nunca desanimar",
+    "feedbackCorrect": "Sempre, em todo tempo e no Espírito: a mesma perseverança.",
+    "feedbackWrong": {
+      "a": "Os dois textos mandam continuar, não parar.",
+      "c": "A perseverança cristã é justamente no Espírito."
+    },
+    "hint": "Compare o sempre dos dois textos.",
+    "learningObjective": "Ligar persistência e oração no Espírito.",
+    "evidence": [
+      "Lucas 18:1",
+      "Efésios 6:18"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-07",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 6:13, toque de onde pedimos para não cair, no fim da oração.",
+    "prompt": "Em Mateus 6:13, toque de onde pedimos para não cair, no fim da oração.",
+    "cue": "Em Mateus 6:13, toque de onde pedimos para não cair, no fim da oração.",
+    "verseRef": "Mateus 6:13",
+    "passageText": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "mal"
+      },
+      {
+        "id": "c",
+        "text": "tentação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não nos deixes cair em tentação",
+    "feedbackCorrect": "A vida de oração também pede guarda na hora da prova.",
+    "feedbackWrong": {
+      "a": "Isso é a declaração final de confiança, não o perigo.",
+      "b": "Do mal pedimos livramento, um passo depois."
+    },
+    "hint": "Procure a prova que pode nos derrubar.",
+    "learningObjective": "Revisar o pedido de guarda no Pai Nosso.",
+    "evidence": [
+      "Mateus 6:13"
+    ]
+  },
+  {
+    "id": "oracao-pro-or-04-desafio-08",
+    "trail": "oracao",
+    "section": "or-04-desafio",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica completa de uma vida de oração?",
+    "prompt": "Qual sequência revela a lógica completa de uma vida de oração?",
+    "cue": "Qual sequência revela a lógica completa de uma vida de oração?",
+    "verseRef": "Romanos 8:27",
+    "passageText": "E aquele que examina os corações conhece o propósito do Espírito, pois Ele intercede pelos santos de acordo com a vontade de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Começar pelo Pai e pelo reino dele"
+      },
+      {
+        "id": "b",
+        "text": "Persistir sem desanimar durante a espera"
+      },
+      {
+        "id": "c",
+        "text": "Depender dele segundo a vontade de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "intercede pelos santos de acordo com a vontade de Deus",
+    "feedbackCorrect": "Reino primeiro, constância na espera e vontade dele no fim.",
+    "feedbackWrong": {
+      "default": "Comece onde Jesus começa: pelo Pai."
+    },
+    "hint": "A vontade de Deus é a medida final.",
+    "learningObjective": "Compreender a lógica completa da vida de oração.",
+    "evidence": [
+      "Romanos 8:27"
+    ]
+  }
+]

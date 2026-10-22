@@ -1,0 +1,784 @@
+{
+  "studies": {
+    "mt-01-rei-prometido": {
+      "slug": "mt-01-rei-prometido",
+      "passageRef": "Mateus 1:20–23",
+      "passageText": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo. Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados. Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta: A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+      "passages": [
+        {
+          "ref": "Mateus 1:20–23",
+          "text": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo. Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados. Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta: A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+        },
+        {
+          "ref": "Mateus 1:18–19",
+          "text": "O nascimento de Jesus Cristo ocorreu da seguinte maneira: Maria, sua mãe, estava desposada com José; sem que tivessem coabitado, ela achou-se grávida pelo Espírito Santo. Então José, seu esposo, sendo justo e não querendo infamá-la, resolveu deixá-la secretamente."
+        },
+        {
+          "ref": "Mateus 1:24–25",
+          "text": "E José, ao acordar do sono, fez como o anjo do Senhor lhe havia ordenado e recebeu sua esposa. E não a conheceu até que ela deu à luz seu filho, o primogênito; e lhe pôs o nome de Jesus."
+        }
+      ],
+      "context": "Mateus abre o evangelho ligando Jesus à história de Israel. Antes de contar o nascimento, ele mostra José diante de uma gravidez que não consegue explicar e Deus falando com ele em sonho.",
+      "keyword": "Emanuel",
+      "keywordGloss": "Nome que significa Deus conosco: Deus presente com seu povo no filho que nasce.",
+      "focusQuestion": "O que muda para você saber que, em Jesus, Deus está conosco?",
+      "reflectionPrompts": [
+        "Deus fala com José",
+        "Jesus salva dos pecados",
+        "Deus conosco"
+      ],
+      "facts": [
+        {
+          "text": "Maria achou-se grávida pelo Espírito Santo antes de coabitar com José.",
+          "evidenceRef": "Mateus 1:18",
+          "evidenceSpan": "ela achou-se grávida pelo Espírito Santo"
+        },
+        {
+          "text": "José era justo e resolveu deixar Maria secretamente, sem infamá-la.",
+          "evidenceRef": "Mateus 1:19",
+          "evidenceSpan": "sendo justo e não querendo infamá-la"
+        },
+        {
+          "text": "Um anjo do Senhor apareceu a José em um sonho.",
+          "evidenceRef": "Mateus 1:20",
+          "evidenceSpan": "em um sonho lhe apareceu um anjo do Senhor"
+        },
+        {
+          "text": "O filho salvará o seu povo dos seus pecados.",
+          "evidenceRef": "Mateus 1:21",
+          "evidenceSpan": "ele salvará o seu povo dos seus pecados"
+        },
+        {
+          "text": "José obedeceu ao anjo e recebeu sua esposa.",
+          "evidenceRef": "Mateus 1:24",
+          "evidenceSpan": "fez como o anjo do Senhor lhe havia ordenado"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Espírito Santo",
+          "gloss": "É por ele que o filho é gerado em Maria, como o anjo anuncia a José."
+        },
+        {
+          "term": "Emanuel",
+          "gloss": "Nome do filho anunciado pelo profeta e explicado no texto como Deus conosco."
+        },
+        {
+          "term": "Jesus",
+          "gloss": "Nome dado ao filho porque ele salvará o seu povo dos seus pecados."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Maria grávida pelo Espírito Santo",
+          "evidenceRef": "Mateus 1:18"
+        },
+        {
+          "label": "José pensa em deixar Maria",
+          "evidenceRef": "Mateus 1:19"
+        },
+        {
+          "label": "O anjo anuncia nome e missão",
+          "evidenceRef": "Mateus 1:21"
+        },
+        {
+          "label": "José obedece e recebe Maria",
+          "evidenceRef": "Mateus 1:24"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "O nome Jesus é dado porque o filho salvará o seu povo dos seus pecados.",
+          "marker": "porque",
+          "evidenceRef": "Mateus 1:21"
+        },
+        {
+          "kind": "propósito",
+          "text": "Tudo acontece para que se cumpra o que o Senhor disse pelo profeta.",
+          "marker": "para",
+          "evidenceRef": "Mateus 1:22"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois do sonho, José acorda e faz o que o anjo ordenou.",
+          "marker": null,
+          "evidenceRef": "Mateus 1:24"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 7:14",
+          "bridge": "Emanuel anunciado pelo profeta",
+          "text": "Portanto, o próprio Senhor vos dará um sinal: Eis que a virgem conceberá e dará à luz um filho, e lhe porá o nome de Emanuel."
+        },
+        {
+          "ref": "Lucas 1:31",
+          "bridge": "O nome anunciado pelo anjo",
+          "text": "Eis que você conceberá e dará à luz um filho, a quem dará o nome de Jesus."
+        },
+        {
+          "ref": "Lucas 2:11",
+          "bridge": "Nasce o Salvador Jesus",
+          "text": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "José escolheu o nome Jesus por gosto pessoal.",
+          "why": "O anjo ordena o nome e explica o motivo ligado à missão do filho (1:21)."
+        },
+        {
+          "text": "Emanuel é só um título bonito, sem presença real de Deus.",
+          "why": "O próprio texto explica o nome como Deus conosco (1:23)."
+        },
+        {
+          "text": "O nascimento cumpre uma ideia inventada por Mateus depois.",
+          "why": "Mateus aponta o profeta citado e mostra a palavra anterior ao nascimento (1:22-23)."
+        }
+      ],
+      "centralInsight": "A genealogia liga Jesus a Abraão e Davi. Seu nascimento pelo Espírito Santo cumpre a promessa de Emanuel: Deus conosco.",
+      "anchorQuestion": "Por que o filho de Maria recebe o nome de Jesus, segundo Mateus 1:21?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 7:14",
+          "reason": "Emanuel anunciado pelo profeta"
+        },
+        {
+          "reference": "Lucas 1:31",
+          "reason": "O nome anunciado pelo anjo"
+        },
+        {
+          "reference": "Lucas 2:11",
+          "reason": "Nasce o Salvador Jesus"
+        }
+      ]
+    },
+    "mt-02-reino-ensino": {
+      "slug": "mt-02-reino-ensino",
+      "passageRef": "Mateus 5:3–6",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, pois serão fartos.",
+      "passages": [
+        {
+          "ref": "Mateus 5:3–6",
+          "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+        },
+        {
+          "ref": "Mateus 5:1–2",
+          "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos. E, abrindo a boca, passou a ensiná-los, dizendo:"
+        },
+        {
+          "ref": "Mateus 5:7–9",
+          "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia. Bem-aventurados os puros de coração, pois verão a Deus. Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+        }
+      ],
+      "context": "Jesus sobe a um monte e ensina os discípulos diante das multidões. As primeiras palavras descrevem quem é bem-aventurado no Reino e que promessa acompanha cada um.",
+      "keyword": "Bem-aventurados",
+      "keywordGloss": "Palavra que abre cada frase e liga um traço do discípulo a uma promessa de Deus.",
+      "focusQuestion": "Em qual promessa de Jesus você mais precisa descansar hoje?",
+      "reflectionPrompts": [
+        "Humildes recebem o Reino",
+        "Fome e sede de justiça",
+        "Pacificador filho de Deus"
+      ],
+      "facts": [
+        {
+          "text": "Jesus subiu a um monte e os discípulos se aproximaram dele.",
+          "evidenceRef": "Mateus 5:1",
+          "evidenceSpan": "subiu a um monte"
+        },
+        {
+          "text": "Dos humildes de espírito é o reino dos céus.",
+          "evidenceRef": "Mateus 5:3",
+          "evidenceSpan": "deles é o reino dos céus"
+        },
+        {
+          "text": "Os que choram serão consolados.",
+          "evidenceRef": "Mateus 5:4",
+          "evidenceSpan": "porque serão consolados"
+        },
+        {
+          "text": "Os que têm fome e sede de justiça serão fartos.",
+          "evidenceRef": "Mateus 5:6",
+          "evidenceSpan": "têm fome e sede de justiça"
+        },
+        {
+          "text": "Os pacificadores serão chamados filhos de Deus.",
+          "evidenceRef": "Mateus 5:9",
+          "evidenceSpan": "serão chamados filhos de Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Bem-aventurados",
+          "gloss": "Palavra que apresenta quem Jesus declara favorecido no Reino."
+        },
+        {
+          "term": "reino dos céus",
+          "gloss": "O Reino que pertence aos humildes de espírito, segundo Jesus."
+        },
+        {
+          "term": "justiça",
+          "gloss": "Aquilo de que os discípulos têm fome e sede e que Deus promete fartar."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus sobe ao monte e ensina",
+          "evidenceRef": "Mateus 5:1"
+        },
+        {
+          "label": "Humildes e enlutados recebem promessa",
+          "evidenceRef": "Mateus 5:3"
+        },
+        {
+          "label": "Fome e sede de justiça",
+          "evidenceRef": "Mateus 5:6"
+        },
+        {
+          "label": "Pacificador chamado filho de Deus",
+          "evidenceRef": "Mateus 5:9"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Aos humildes de espírito pertence o reino dos céus.",
+          "marker": "porque",
+          "evidenceRef": "Mateus 5:3"
+        },
+        {
+          "kind": "resultado",
+          "text": "Quem tem fome e sede de justiça será farto.",
+          "marker": "pois",
+          "evidenceRef": "Mateus 5:6"
+        },
+        {
+          "kind": "sequência",
+          "text": "Jesus vê as multidões, sobe ao monte e começa a ensinar.",
+          "marker": null,
+          "evidenceRef": "Mateus 5:1"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Lucas 6:20",
+          "bridge": "O reino pertence aos pobres",
+          "text": "E, erguendo os olhos para os seus discípulos, disse-lhes: Bem-aventurados sois vós, os pobres, porque vosso é o reino de Deus."
+        },
+        {
+          "ref": "Salmos 37:11",
+          "bridge": "Os mansos herdarão a terra",
+          "text": "Mas os humildes herdarão a terra e se deleitarão na abundância de paz."
+        },
+        {
+          "ref": "Isaías 61:1",
+          "bridge": "Boas novas aos pobres",
+          "text": "O Espírito do Senhor Deus está sobre mim, porque o Senhor me ungiu para anunciar boas-novas aos quebrantados; enviou-me a curar os que têm o coração ferido, a proclamar libertação aos cativos e a pôr em liberdade os algemados;"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Ser humilde de espírito é um preço pago para comprar o Reino.",
+          "why": "Jesus declara que o Reino já é dos humildes; ele descreve quem pertence ao Reino, não um pagamento."
+        },
+        {
+          "text": "Bem-aventurado significa apenas sentir-se feliz por dentro.",
+          "why": "Cada frase traz uma promessa concreta de Deus, como consolo, terra e Reino."
+        },
+        {
+          "text": "Os mansos são pessoas fracas que nunca agem.",
+          "why": "O texto promete a terra aos mansos dentro do ensino de Jesus sobre a vida do Reino."
+        }
+      ],
+      "centralInsight": "No Sermão do Monte, Jesus não oferece um caminho para merecer Deus; ele descreve a vida daqueles que pertencem ao Reino e dependem dele.",
+      "anchorQuestion": "O que Jesus promete aos que têm fome e sede de justiça em Mateus 5:6?",
+      "relatedVerses": [
+        {
+          "reference": "Lucas 6:20",
+          "reason": "O reino pertence aos pobres"
+        },
+        {
+          "reference": "Salmos 37:11",
+          "reason": "Os mansos herdarão a terra"
+        },
+        {
+          "reference": "Isaías 61:1",
+          "reason": "Boas novas aos pobres"
+        }
+      ]
+    },
+    "mt-03-autoridade": {
+      "slug": "mt-03-autoridade",
+      "passageRef": "Mateus 8:24–27",
+      "passageText": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia. E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo! E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança. E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?",
+      "passages": [
+        {
+          "ref": "Mateus 8:24–27",
+          "text": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia. E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo! E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança. E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?"
+        },
+        {
+          "ref": "Mateus 8:23",
+          "text": "E, ao entrar no barco, os seus discípulos o acompanharam."
+        },
+        {
+          "ref": "Mateus 8:28–30",
+          "text": "Ao chegarem à outra margem, na terra dos gadarenos, saíram ao encontro dele dois endemoniados, saindo dos sepulcros, tão furiosos que ninguém podia passar por aquele caminho. E clamaram, dizendo: O que temos nós a ver contigo, ó Filho de Deus? Vieste aqui para nos atormentar antes do tempo? E havia uma grande manada de porcos pastando não muito longe deles."
+        }
+      ],
+      "context": "Depois do ensino do Reino, Mateus mostra Jesus agindo. No mar da Galileia, uma tempestade ameaça o barco enquanto Jesus dorme, e os discípulos acordam o Mestre em pânico.",
+      "keyword": "Autoridade",
+      "keywordGloss": "Poder de Jesus reconhecido quando ventos, mar e até demônios lhe obedecem.",
+      "focusQuestion": "Em que tempestade da sua vida você precisa clamar a Jesus hoje?",
+      "reflectionPrompts": [
+        "Jesus presente na tempestade",
+        "Pequena fé e clamor",
+        "Ventos e mar obedecem"
+      ],
+      "facts": [
+        {
+          "text": "Os discípulos acompanharam Jesus ao entrar no barco.",
+          "evidenceRef": "Mateus 8:23",
+          "evidenceSpan": "os seus discípulos o acompanharam"
+        },
+        {
+          "text": "Uma grande tempestade agitou o barco enquanto Jesus dormia.",
+          "evidenceRef": "Mateus 8:24",
+          "evidenceSpan": "uma grande tempestade se levantou sobre o mar"
+        },
+        {
+          "text": "Os discípulos acordaram Jesus clamando por socorro.",
+          "evidenceRef": "Mateus 8:25",
+          "evidenceSpan": "Senhor, salva-nos"
+        },
+        {
+          "text": "Jesus repreendeu os ventos e o mar, e houve grande bonança.",
+          "evidenceRef": "Mateus 8:26",
+          "evidenceSpan": "repreendeu os ventos e o mar"
+        },
+        {
+          "text": "Os homens se maravilharam porque ventos e mar obedecem a Jesus.",
+          "evidenceRef": "Mateus 8:27",
+          "evidenceSpan": "até os ventos e o mar lhe obedecem"
+        },
+        {
+          "text": "Os demônios chamam Jesus de Filho de Deus.",
+          "evidenceRef": "Mateus 8:29",
+          "evidenceSpan": "ó Filho de Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "pequena fé",
+          "gloss": "Expressão de Jesus para o medo dos discípulos diante da tempestade."
+        },
+        {
+          "term": "bonança",
+          "gloss": "A grande calmaria que segue à ordem de Jesus aos ventos e ao mar."
+        },
+        {
+          "term": "Filho de Deus",
+          "gloss": "Título com que os demônios se dirigem a Jesus na outra margem."
+        }
+      ],
+      "structure": [
+        {
+          "label": "No barco com os discípulos",
+          "evidenceRef": "Mateus 8:23"
+        },
+        {
+          "label": "Tempestade e clamor por socorro",
+          "evidenceRef": "Mateus 8:25"
+        },
+        {
+          "label": "Jesus repreende e acalma o mar",
+          "evidenceRef": "Mateus 8:26"
+        },
+        {
+          "label": "Reconhecimento na outra margem",
+          "evidenceRef": "Mateus 8:29"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O barco é agitado pelas ondas enquanto Jesus dorme em paz.",
+          "marker": "entretanto",
+          "evidenceRef": "Mateus 8:24"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois de falar da fé dos discípulos, Jesus se levanta e repreende o mar.",
+          "marker": "Então",
+          "evidenceRef": "Mateus 8:26"
+        },
+        {
+          "kind": "resultado",
+          "text": "A palavra de Jesus aos ventos produz uma grande calmaria.",
+          "marker": null,
+          "evidenceRef": "Mateus 8:26"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 107:29",
+          "bridge": "Deus acalma a tempestade",
+          "text": "Ele faz cessar a tempestade e as suas ondas se aquietam."
+        },
+        {
+          "ref": "Salmos 89:9",
+          "bridge": "Deus domina o mar bravio",
+          "text": "Tu dominas o ímpeto do mar; quando suas ondas se levantam, tu as acalmas"
+        },
+        {
+          "ref": "Marcos 5:7",
+          "bridge": "Demônios reconhecem o Filho",
+          "text": "E, clamando com alta voz, disse: Que tenho eu contigo, Jesus, Filho do Deus Altíssimo? Conjuro-te por Deus que não me atormentes!"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O milagre no mar é um truque para impressionar a multidão.",
+          "why": "Não há multidão no barco; os discípulos se maravilham e perguntam quem é Jesus (8:27)."
+        },
+        {
+          "text": "Pequena fé significa que os discípulos não tinham fé alguma.",
+          "why": "Eles clamam a Jesus por socorro; a fé é pequena e medrosa, não ausente (8:25-26)."
+        },
+        {
+          "text": "A autoridade de Jesus vale só para a natureza, não para os espíritos.",
+          "why": "Na outra margem, os demônios o reconhecem como Filho de Deus (8:29)."
+        }
+      ],
+      "centralInsight": "Os milagres em Mateus não são truques: revelam a autoridade do Messias e apontam para sua compaixão e seu Reino.",
+      "anchorQuestion": "O que os homens perguntam depois que Jesus acalma o mar em Mateus 8:27?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 107:29",
+          "reason": "Deus acalma a tempestade"
+        },
+        {
+          "reference": "Salmos 89:9",
+          "reason": "Deus domina o mar bravio"
+        },
+        {
+          "reference": "Marcos 5:7",
+          "reason": "Demônios reconhecem o Filho"
+        }
+      ]
+    },
+    "mt-04-cruz-vitoria": {
+      "slug": "mt-04-cruz-vitoria",
+      "passageRef": "Mateus 28:18–20",
+      "passageText": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém.",
+      "passages": [
+        {
+          "ref": "Mateus 28:18–20",
+          "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+        },
+        {
+          "ref": "Mateus 28:15–17",
+          "text": "E eles, recebendo o dinheiro, agiram conforme as instruções que receberam. E essa informação se propagou entre os judeus até os dias atuais. Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado. Quando o viram, adoraram-no; mas alguns hesitaram."
+        }
+      ],
+      "context": "Após a ressurreição, uma versão falsa sobre o túmulo se espalha, mas os onze discípulos vão à Galileia ao encontro de Jesus, que os envia a todas as nações.",
+      "keyword": "Autoridade",
+      "keywordGloss": "Toda a autoridade no céu e na terra que Jesus declara ter recebido antes de enviar os discípulos.",
+      "focusQuestion": "A que pessoa ou lugar Jesus está enviando você para testemunhar?",
+      "reflectionPrompts": [
+        "Toda a autoridade de Jesus",
+        "Discípulos de todas as nações",
+        "Jesus presente todos os dias"
+      ],
+      "facts": [
+        {
+          "text": "Os onze discípulos seguiram para a Galileia, ao monte designado por Jesus.",
+          "evidenceRef": "Mateus 28:16",
+          "evidenceSpan": "Os onze discípulos seguiram para a Galileia"
+        },
+        {
+          "text": "Ao ver Jesus, os discípulos o adoraram, mas alguns hesitaram.",
+          "evidenceRef": "Mateus 28:17",
+          "evidenceSpan": "adoraram-no; mas alguns hesitaram"
+        },
+        {
+          "text": "Jesus declara que toda a autoridade lhe foi dada no céu e na terra.",
+          "evidenceRef": "Mateus 28:18",
+          "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra"
+        },
+        {
+          "text": "Os discípulos devem fazer discípulos de todas as nações.",
+          "evidenceRef": "Mateus 28:19",
+          "evidenceSpan": "façam discípulos de todas as nações"
+        },
+        {
+          "text": "Jesus promete estar com os discípulos todos os dias.",
+          "evidenceRef": "Mateus 28:20",
+          "evidenceSpan": "estou convosco todos os dias"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "autoridade",
+          "gloss": "O poder que Jesus declara ter no céu e na terra ao enviar os discípulos."
+        },
+        {
+          "term": "discípulos",
+          "gloss": "Quem os enviados devem fazer em todas as nações, batizando e ensinando."
+        },
+        {
+          "term": "todas as nações",
+          "gloss": "O alcance do envio declarado por Jesus na Galileia."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Uma versão falsa se espalha",
+          "evidenceRef": "Mateus 28:15"
+        },
+        {
+          "label": "Os onze vão à Galileia",
+          "evidenceRef": "Mateus 28:16"
+        },
+        {
+          "label": "Autoridade declarada e envio",
+          "evidenceRef": "Mateus 28:19"
+        },
+        {
+          "label": "Presença prometida até o fim",
+          "evidenceRef": "Mateus 28:20"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Os discípulos adoram Jesus, mas alguns ainda hesitam ao vê-lo.",
+          "marker": "mas",
+          "evidenceRef": "Mateus 28:17"
+        },
+        {
+          "kind": "resultado",
+          "text": "Porque toda a autoridade foi dada a Jesus, os discípulos são enviados.",
+          "marker": "Portanto",
+          "evidenceRef": "Mateus 28:19"
+        },
+        {
+          "kind": "sequência",
+          "text": "Ao verem Jesus, os discípulos o adoram no monte.",
+          "marker": "Quando",
+          "evidenceRef": "Mateus 28:17"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Atos 1:8",
+          "bridge": "Missão alcança todas as nações",
+          "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+        },
+        {
+          "ref": "Daniel 7:14",
+          "bridge": "Autoridade dada ao Filho",
+          "text": "Foi-lhe dado domínio, glória e reino, para que todos os povos, nações e homens de todas as línguas o servissem; seu domínio é um domínio eterno, que não passará, e seu reino não será destruído."
+        },
+        {
+          "ref": "Josué 1:9",
+          "bridge": "Deus promete estar presente",
+          "text": "Não to mandei eu? Sê forte e corajoso; não temas, nem te espantes; porque o Senhor, teu Deus, está contigo por onde quer que andares."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O envio de Jesus valia só para os onze que estavam no monte.",
+          "why": "A ordem alcança todas as nações e a presença é prometida até o fim dos tempos (28:19-20)."
+        },
+        {
+          "text": "Autoridade de Jesus é licença para dominar outras pessoas.",
+          "why": "No texto, a autoridade sustenta fazer discípulos batizando e ensinando, não dominar (28:19)."
+        },
+        {
+          "text": "Jesus acompanha os discípulos só quando eles não hesitam.",
+          "why": "Mesmo com alguns hesitando (28:17), ele promete estar com eles todos os dias (28:20)."
+        }
+      ],
+      "centralInsight": "A morte de Jesus é voluntária e sacrificial. Sua ressurreição confirma sua vitória e fundamenta a missão da igreja.",
+      "anchorQuestion": "Que promessa Jesus faz aos discípulos ao enviá-los em Mateus 28:20?",
+      "relatedVerses": [
+        {
+          "reference": "Atos 1:8",
+          "reason": "Missão alcança todas as nações"
+        },
+        {
+          "reference": "Daniel 7:14",
+          "reason": "Autoridade dada ao Filho"
+        },
+        {
+          "reference": "Josué 1:9",
+          "reason": "Deus promete estar presente"
+        }
+      ]
+    },
+    "mt-boss-revisao": {
+      "slug": "mt-boss-revisao",
+      "passageRef": "Mateus 1:21–23",
+      "passageText": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados. Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta: A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco).",
+      "passages": [
+        {
+          "ref": "Mateus 1:21–23",
+          "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados. Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta: A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+        },
+        {
+          "ref": "Mateus 5:3–6",
+          "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados. Bem-aventurados os mansos, porque herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+        },
+        {
+          "ref": "Mateus 8:24–27",
+          "text": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia. E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo! E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança. E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?"
+        },
+        {
+          "ref": "Mateus 28:18–20",
+          "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo; Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+        }
+      ],
+      "context": "Este desafio revisa o Rei prometido em Mateus: seu nascimento anunciado, seu ensino do Reino, sua autoridade no mar e seu envio dos discípulos a todas as nações.",
+      "keyword": "Rei",
+      "keywordGloss": "Jesus apresentado por Mateus como o Rei prometido que salva, ensina, acalma e envia.",
+      "focusQuestion": "Qual palavra de Jesus revisada aqui você precisa guardar nesta semana?",
+      "reflectionPrompts": [
+        "O Rei que salva dos pecados",
+        "O Reino dos humildes",
+        "O Rei presente todos os dias"
+      ],
+      "facts": [
+        {
+          "text": "O filho de Maria salvará o seu povo dos seus pecados.",
+          "evidenceRef": "Mateus 1:21",
+          "evidenceSpan": "ele salvará o seu povo dos seus pecados"
+        },
+        {
+          "text": "Dos humildes de espírito é o reino dos céus.",
+          "evidenceRef": "Mateus 5:3",
+          "evidenceSpan": "deles é o reino dos céus"
+        },
+        {
+          "text": "Os que têm fome e sede de justiça serão fartos.",
+          "evidenceRef": "Mateus 5:6",
+          "evidenceSpan": "têm fome e sede de justiça"
+        },
+        {
+          "text": "Jesus repreendeu os ventos e o mar, e houve bonança.",
+          "evidenceRef": "Mateus 8:26",
+          "evidenceSpan": "repreendeu os ventos e o mar"
+        },
+        {
+          "text": "Ventos e mar obedecem a Jesus.",
+          "evidenceRef": "Mateus 8:27",
+          "evidenceSpan": "até os ventos e o mar lhe obedecem"
+        },
+        {
+          "text": "Toda a autoridade foi dada a Jesus no céu e na terra.",
+          "evidenceRef": "Mateus 28:18",
+          "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Emanuel",
+          "gloss": "Nome do filho anunciado, explicado como Deus conosco."
+        },
+        {
+          "term": "reino dos céus",
+          "gloss": "O Reino que Jesus anuncia como dos humildes de espírito."
+        },
+        {
+          "term": "autoridade",
+          "gloss": "Poder de Jesus sobre o mar e base do envio às nações."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Rei prometido é anunciado",
+          "evidenceRef": "Mateus 1:21"
+        },
+        {
+          "label": "O Reino é ensinado no monte",
+          "evidenceRef": "Mateus 5:3"
+        },
+        {
+          "label": "Autoridade sobre ventos e mar",
+          "evidenceRef": "Mateus 8:26"
+        },
+        {
+          "label": "Envio a todas as nações",
+          "evidenceRef": "Mateus 28:19"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "O nome Jesus é dado porque o filho salvará o seu povo dos pecados.",
+          "marker": "porque",
+          "evidenceRef": "Mateus 1:21"
+        },
+        {
+          "kind": "resultado",
+          "text": "Quem tem fome e sede de justiça será farto.",
+          "marker": "pois",
+          "evidenceRef": "Mateus 5:6"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois de falar da fé, Jesus se levanta e repreende o mar.",
+          "marker": "Então",
+          "evidenceRef": "Mateus 8:26"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 7:14",
+          "bridge": "Emanuel anunciado pelo profeta",
+          "text": "Portanto, o próprio Senhor vos dará um sinal: Eis que a virgem conceberá e dará à luz um filho, e lhe porá o nome de Emanuel."
+        },
+        {
+          "ref": "Salmos 107:29",
+          "bridge": "Deus acalma a tempestade",
+          "text": "Ele faz cessar a tempestade e as suas ondas se aquietam."
+        },
+        {
+          "ref": "Atos 1:8",
+          "bridge": "Missão alcança todas as nações",
+          "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "As bem-aventuranças são um preço pago para merecer o Reino.",
+          "why": "Jesus declara que o Reino já é dos humildes de espírito (5:3)."
+        },
+        {
+          "text": "Os milagres de Jesus são truques para impressionar multidões.",
+          "why": "No barco não há multidão; os discípulos perguntam quem é Jesus (8:27)."
+        },
+        {
+          "text": "O envio final valia só para os onze que estavam no monte.",
+          "why": "A ordem alcança todas as nações e a presença vai até o fim (28:19-20)."
+        }
+      ],
+      "centralInsight": "O que Jesus / a igreja revelam aqui?",
+      "anchorQuestion": "Como Mateus apresenta Jesus do nascimento anunciado ao envio final?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 7:14",
+          "reason": "Emanuel anunciado pelo profeta"
+        },
+        {
+          "reference": "Salmos 107:29",
+          "reason": "Deus acalma a tempestade"
+        },
+        {
+          "reference": "Atos 1:8",
+          "reason": "Missão alcança todas as nações"
+        }
+      ]
+    }
+  }
+}

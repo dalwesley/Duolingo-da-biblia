@@ -1,0 +1,715 @@
+{
+ "study": {
+  "passageRef": "Miqueias 5:2",
+  "passages": [
+   {
+    "ref": "Miqueias 5:1–5"
+   }
+  ],
+  "context": "Em tempo de cerco e humilhação do juiz de Israel, Miqueias anuncia que o reinante virá de Belém. Ele cuidará do povo na força do Senhor e trará segurança.",
+  "keyword": "Belém",
+  "keywordGloss": "Cidade pequena de Judá de onde sai o reinante que cuida do povo na força do Senhor.",
+  "focusQuestion": "Em que área da sua vida você precisa confiar no cuidado de Deus hoje?",
+  "reflectionPrompts": [
+   "Pequena entre milhares",
+   "Cuidará na força do Senhor",
+   "Este será a nossa paz"
+  ],
+  "facts": [
+   {
+    "text": "Um cerco se levantará e ferirão com vara a face do juiz de Israel.",
+    "evidenceRef": "Miqueias 5:1",
+    "evidenceSpan": "ferirão com a vara a face do juiz de Israel"
+   },
+   {
+    "text": "De Belém sairá aquele que deve reinar em Israel.",
+    "evidenceRef": "Miqueias 5:2",
+    "evidenceSpan": "de você me sairá aquele que deve reinar em Israel"
+   },
+   {
+    "text": "Depois do nascimento, o restante dos irmãos voltará aos filhos de Israel.",
+    "evidenceRef": "Miqueias 5:3",
+    "evidenceSpan": "o restante de seus irmãos voltará aos filhos de Israel"
+   },
+   {
+    "text": "O reinante cuidará do povo na força do Senhor e na majestade do seu nome.",
+    "evidenceRef": "Miqueias 5:4",
+    "evidenceSpan": "cuidará do povo na força do Senhor"
+   },
+   {
+    "text": "O povo habitará seguro porque o reinante será engrandecido até os confins da terra.",
+    "evidenceRef": "Miqueias 5:4",
+    "evidenceSpan": "eles habitarão seguros"
+   },
+   {
+    "text": "Contra a Assíria serão levantados sete pastores e oito príncipes.",
+    "evidenceRef": "Miqueias 5:5",
+    "evidenceSpan": "levantaremos contra ela sete pastores e oito príncipes dentre os homens"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Belém",
+    "gloss": "Lugar pequeno de onde vem o reinante prometido para Israel."
+   },
+   {
+    "term": "paz",
+    "gloss": "Em Miqueias 5:5, a paz não é só ausência de guerra: está ligada ao reinante prometido."
+   },
+   {
+    "term": "majestade",
+    "gloss": "Grandeza do nome do Senhor, na qual o reinante cuida do povo."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Cerco e humilhação do juiz",
+    "evidenceRef": "Miqueias 5:1"
+   },
+   {
+    "label": "Belém recebe a promessa do reinante",
+    "evidenceRef": "Miqueias 5:2"
+   },
+   {
+    "label": "O restante volta aos filhos de Israel",
+    "evidenceRef": "Miqueias 5:3"
+   },
+   {
+    "label": "O reinante cuida e traz segurança",
+    "evidenceRef": "Miqueias 5:4"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Embora Belém seja pequena, dela sai quem deve reinar em Israel.",
+    "marker": "embora",
+    "evidenceRef": "Miqueias 5:2"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois do tempo de espera e do nascimento, o restante dos irmãos voltará.",
+    "marker": "então",
+    "evidenceRef": "Miqueias 5:3"
+   },
+   {
+    "kind": "causa",
+    "text": "O povo habitará seguro porque o reinante será engrandecido até os confins da terra.",
+    "marker": "porque",
+    "evidenceRef": "Miqueias 5:4"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 2:5–6",
+    "bridge": "Escribas citam Belém do profeta"
+   },
+   {
+    "ref": "João 7:42",
+    "bridge": "Cristo vem de Belém de Davi"
+   },
+   {
+    "ref": "Lucas 2:7",
+    "bridge": "O menino nasce em humildade"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O reinante cuidará do povo só com força humana.",
+    "why": "O texto diz que ele cuidará na força do Senhor e na majestade do seu nome (5:4)."
+   },
+   {
+    "text": "A segurança prometida depende do tamanho de Belém.",
+    "why": "Belém é pequena; a segurança vem do reinante engrandecido pelo Senhor."
+   },
+   {
+    "text": "A paz de 5:5 é só uma estratégia militar humana.",
+    "why": "O texto começa dizendo que o prometido será a paz do povo, antes de falar de pastores."
+   }
+  ],
+  "centralInsight": "O reinante prometido nasce pequeno",
+  "anchorQuestion": "Com que força o reinante cuidará do povo, segundo Miqueias 5:4?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Miqueias 5:4, o reinante cuidará do povo apenas com a própria força humana.",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "false",
+   "evidenceSpan": "cuidará do povo na força do Senhor",
+   "feedbackCorrect": "O cuidado acontece apoiado no Senhor, não só em força própria.",
+   "feedbackWrong": {
+    "true": "Releia onde está a força do reinante em Miqueias 5:4."
+   },
+   "hint": "",
+   "learningObjective": "Observar a fonte da força do reinante.",
+   "evidence": [
+    "Miqueias 5:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Miqueias 5:4, toque a força com que o reinante cuidará do povo.",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "cuidará do povo na força do Senhor",
+   "feedbackCorrect": "O cuidado do reinante depende dessa força maior.",
+   "feedbackWrong": {
+    "b": "O nome acompanha a força, mas a pergunta pede a primeira expressão.",
+    "c": "Confins mostram alcance, não a força do cuidado."
+   },
+   "hint": "Procure a expressão logo depois do verbo cuidar.",
+   "learningObjective": "Identificar a força do reinante prometido.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "força do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "nome do Senhor"
+    },
+    {
+     "id": "c",
+     "text": "confins da terra"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Miqueias 5:5, quem será levantado quando a Assíria vier à terra?",
+   "verseRef": "Miqueias 5:5",
+   "correctOptionId": "b",
+   "evidenceSpan": "levantaremos contra ela sete pastores e oito príncipes dentre os homens",
+   "feedbackCorrect": "O texto nomeia dois grupos levantados contra a invasão.",
+   "feedbackWrong": {
+    "a": "Ferreiros não são citados na resposta à Assíria.",
+    "c": "Sacerdotes não aparecem neste versículo como defesa.",
+    "d": "Mensageiros não são levantados contra a Assíria aqui."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a resposta à vinda da Assíria.",
+   "evidence": [
+    "Miqueias 5:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ferreiros e construtores"
+    },
+    {
+     "id": "b",
+     "text": "Sete pastores e oito príncipes"
+    },
+    {
+     "id": "c",
+     "text": "Sacerdotes do templo"
+    },
+    {
+     "id": "d",
+     "text": "Mensageiros de outras terras"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Miqueias 5:4 na ordem do texto.",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele se manterá firme e cuidará do povo",
+   "feedbackCorrect": "A ordem mostra firmeza, cuidado apoiado e povo seguro.",
+   "feedbackWrong": {
+    "default": "Comece pela firmeza do reinante."
+   },
+   "hint": "O versículo começa com ele se mantendo firme.",
+   "learningObjective": "Reconhecer a sequência de Miqueias 5:4.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele se manterá firme e cuidará do povo"
+    },
+    {
+     "id": "b",
+     "text": "na força do Senhor, na majestade do nome do Senhor"
+    },
+    {
+     "id": "c",
+     "text": "e eles habitarão seguros"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Miqueias 5:4, como o povo habitará sob o cuidado do reinante?",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "e eles habitarão seguros",
+   "feedbackCorrect": "A promessa inclui viver sem o medo do cerco.",
+   "feedbackWrong": {
+    "b": "Sozinhos não descreve o resultado do cuidado dele.",
+    "c": "Escondidos lembra medo; o texto fala de segurança."
+   },
+   "hint": "Olhe o resultado depois do cuidado do reinante.",
+   "learningObjective": "Lembrar a segurança do povo.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "seguros"
+    },
+    {
+     "id": "b",
+     "text": "sozinhos"
+    },
+    {
+     "id": "c",
+     "text": "escondidos"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Miqueias 5:4 comunica que se liga a este contexto?",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "cuidará do povo na força do Senhor",
+   "feedbackCorrect": "O reinante de Belém não governa sozinho: cuida apoiado em Deus.",
+   "feedbackWrong": {
+    "b": "A segurança não vem do tamanho do lugar de origem.",
+    "c": "O alcance dele chega longe, não fica preso a Belém."
+   },
+   "hint": "Veja quem sustenta o cuidado do reinante.",
+   "learningObjective": "Ligar o reinante à segurança do povo.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O pastor prometido traz segurança"
+    },
+    {
+     "id": "b",
+     "text": "Segurança vem do tamanho de Belém"
+    },
+    {
+     "id": "c",
+     "text": "Seu cuidado fica só em Belém"
+    }
+   ],
+   "passageA": {
+    "ref": "Miqueias 5:4"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo cercado precisa de um governante que cuide dele com segurança."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Miqueias 5:3, depois do nascimento anunciado, o restante dos irmãos voltará aos filhos de Israel.",
+   "verseRef": "Miqueias 5:3",
+   "correctOptionId": "true",
+   "evidenceSpan": "o restante de seus irmãos voltará aos filhos de Israel",
+   "feedbackCorrect": "O retorno aparece ligado ao tempo do nascimento.",
+   "feedbackWrong": {
+    "false": "Releia a segunda metade de Miqueias 5:3."
+   },
+   "hint": "",
+   "learningObjective": "Compreender a sequência de espera e retorno.",
+   "evidence": [
+    "Miqueias 5:3"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Miqueias 5:3, toque a palavra que marca o passo seguinte depois da espera.",
+   "verseRef": "Miqueias 5:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "então, o restante de seus irmãos voltará",
+   "feedbackCorrect": "Essa palavra liga o nascimento ao retorno do restante.",
+   "feedbackWrong": {
+    "b": "Isso abre o versículo explicando a entrega, não o passo seguinte.",
+    "c": "Até marca limite de tempo, não a virada para o retorno."
+   },
+   "hint": "Procure a palavra curta depois do ponto e vírgula.",
+   "learningObjective": "Reconhecer o marcador de sequência.",
+   "evidence": [
+    "Miqueias 5:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "então"
+    },
+    {
+     "id": "b",
+     "text": "Por isso"
+    },
+    {
+     "id": "c",
+     "text": "até"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Segundo Miqueias 5:4, por que o povo habitará seguro?",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "eles habitarão seguros, porque agora ele será engrandecido",
+   "feedbackCorrect": "A segurança está ligada ao alcance dado ao reinante.",
+   "feedbackWrong": {
+    "b": "Belém pequena não é apresentada como muralha protetora.",
+    "c": "O texto não diz que inimigos somem por esforço do povo.",
+    "d": "A força citada apoia o reinante; não é força isolada do povo."
+   },
+   "hint": "Procure a explicação depois da palavra seguro.",
+   "learningObjective": "Relacionar cuidado do reinante e segurança.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele será engrandecido até longe"
+    },
+    {
+     "id": "b",
+     "text": "Belém tinha muralhas enormes"
+    },
+    {
+     "id": "c",
+     "text": "O povo venceu sozinho os inimigos"
+    },
+    {
+     "id": "d",
+     "text": "Cada família se defendeu por si"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a promessa em Miqueias 5:3–4?",
+   "verseRef": "Miqueias 5:3–4",
+   "correctOptionId": "a",
+   "evidenceSpan": "o restante de seus irmãos voltará aos filhos de Israel",
+   "feedbackCorrect": "Espera, retorno e cuidado seguro formam o caminho.",
+   "feedbackWrong": {
+    "default": "O cuidado seguro do reinante fecha o trecho."
+   },
+   "hint": "O fim mostra o povo habitando seguro.",
+   "learningObjective": "Compreender espera, retorno e cuidado.",
+   "evidence": [
+    "Miqueias 5:3–4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo espera o tempo do nascimento"
+    },
+    {
+     "id": "b",
+     "text": "O restante dos irmãos retorna a Israel"
+    },
+    {
+     "id": "c",
+     "text": "O reinante cuida e traz segurança"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Miqueias 5:3, o que o restante dos irmãos fará depois do nascimento?",
+   "verseRef": "Miqueias 5:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "o restante de seus irmãos voltará aos filhos de Israel",
+   "feedbackCorrect": "O retorno reúne de novo os irmãos ao povo.",
+   "feedbackWrong": {
+    "b": "Partir repete a dispersão, não o retorno anunciado.",
+    "c": "Ficar parado não é o movimento do fim do versículo."
+   },
+   "hint": "Olhe o verbo logo depois da palavra então.",
+   "learningObjective": "Lembrar o retorno do restante.",
+   "evidence": [
+    "Miqueias 5:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "voltará"
+    },
+    {
+     "id": "b",
+     "text": "partirá"
+    },
+    {
+     "id": "c",
+     "text": "ficará"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Miqueias 5:2 a Mateus 2:5–6?",
+   "verseRef": "Miqueias 5:2",
+   "correctOptionId": "a",
+   "evidenceSpan": "de você me sairá aquele que deve reinar em Israel",
+   "feedbackCorrect": "O Evangelho cita a promessa quando perguntam onde Cristo nasceria.",
+   "feedbackWrong": {
+    "b": "Mateus mantém o lugar citado pelos escribas.",
+    "c": "A pergunta de Herodes recebe resposta da Escritura antiga."
+   },
+   "hint": "Veja a resposta dos conhecedores da Escritura.",
+   "learningObjective": "Relacionar promessa de Belém e Evangelho.",
+   "evidence": [
+    "Miqueias 5:2",
+    "Mateus 2:5–6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Escribas citam Belém prometida"
+    },
+    {
+     "id": "b",
+     "text": "Mateus aponta outra cidade"
+    },
+    {
+     "id": "c",
+     "text": "A Escritura não responde a Herodes"
+    }
+   ],
+   "passageA": {
+    "ref": "Miqueias 5:2"
+   },
+   "passageB": {
+    "ref": "Mateus 2:5–6"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Segundo Miqueias 5:5, a paz prometida depende somente de exércitos levantados contra a Assíria.",
+   "verseRef": "Miqueias 5:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "E este será a nossa paz",
+   "feedbackCorrect": "Antes dos pastores, o texto aponta o prometido como a paz.",
+   "feedbackWrong": {
+    "true": "Releia a primeira frase de Miqueias 5:5."
+   },
+   "hint": "",
+   "learningObjective": "Avaliar onde Miqueias coloca a paz do povo.",
+   "evidence": [
+    "Miqueias 5:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Miqueias 5:5, toque o que o prometido será para o povo.",
+   "verseRef": "Miqueias 5:5",
+   "correctOptionId": "a",
+   "evidenceSpan": "E este será a nossa paz",
+   "feedbackCorrect": "A paz está ligada à pessoa prometida, não só a uma tática.",
+   "feedbackWrong": {
+    "b": "Pastores são levantados depois; não resumem a primeira afirmação.",
+    "c": "Príncipes aparecem na defesa, mas a abertura aponta outra coisa."
+   },
+   "hint": "Olhe a primeira afirmação do versículo.",
+   "learningObjective": "Sustentar a ligação entre prometido e paz.",
+   "evidence": [
+    "Miqueias 5:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "nossa paz"
+    },
+    {
+     "id": "b",
+     "text": "sete pastores"
+    },
+    {
+     "id": "c",
+     "text": "oito príncipes"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Miqueias 5:4 sustenta sobre o alcance do reinante?",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "ele será engrandecido até os confins da terra",
+   "feedbackCorrect": "Quem nasce pequeno recebe alcance que vai muito além de Belém.",
+   "feedbackWrong": {
+    "b": "O texto amplia o alcance até os confins, não o limita.",
+    "c": "A segurança do povo nasce dele, não apesar dele.",
+    "d": "A grandeza vem ligada ao nome do Senhor, não a propaganda."
+   },
+   "hint": "Compare o lugar pequeno com o fim do versículo.",
+   "learningObjective": "Escolher a leitura do alcance do reinante.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Seu alcance chega aos confins"
+    },
+    {
+     "id": "b",
+     "text": "Ele fica limitado a Belém"
+    },
+    {
+     "id": "c",
+     "text": "O povo fica seguro sem ele"
+    },
+    {
+     "id": "d",
+     "text": "Sua fama depende de propaganda"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido de Miqueias 5:2–4?",
+   "verseRef": "Miqueias 5:2–3",
+   "correctOptionId": "a",
+   "evidenceSpan": "de você me sairá aquele que deve reinar em Israel",
+   "feedbackCorrect": "O caminho une origem humilde, força de Deus e alcance amplo.",
+   "feedbackWrong": {
+    "default": "Comece pela promessa ligada a Belém."
+   },
+   "hint": "Siga do nascimento pequeno ao alcance amplo.",
+   "learningObjective": "Ver a lógica da promessa do reinante.",
+   "evidence": [
+    "Miqueias 5:2",
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Belém pequena recebe a promessa do reinante"
+    },
+    {
+     "id": "b",
+     "text": "O reinante cuida do povo apoiado em Deus"
+    },
+    {
+     "id": "c",
+     "text": "Seu alcance chega aos confins da terra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Miqueias 5:4, na grandeza de que nome o reinante cuidará do povo?",
+   "verseRef": "Miqueias 5:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "na majestade do nome do Senhor",
+   "feedbackCorrect": "O cuidado acontece sob a grandeza do nome de Deus.",
+   "feedbackWrong": {
+    "b": "Presença é verdade vizinha, mas não é a palavra retirada.",
+    "c": "Bondade não é o substantivo usado nesta parte."
+   },
+   "hint": "Procure o substantivo depois da preposição na.",
+   "learningObjective": "Lembrar o termo ligado ao nome do Senhor.",
+   "evidence": [
+    "Miqueias 5:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "majestade"
+    },
+    {
+     "id": "b",
+     "text": "presença"
+    },
+    {
+     "id": "c",
+     "text": "bondade"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Miqueias 5:2 a João 7:42?",
+   "verseRef": "Miqueias 5:2",
+   "correctOptionId": "a",
+   "evidenceSpan": "de você me sairá aquele que deve reinar em Israel",
+   "feedbackCorrect": "A expectativa sobre Cristo passa pela aldeia de Davi.",
+   "feedbackWrong": {
+    "b": "João mostra gente debatendo, sem apagar a Escritura citada.",
+    "c": "A origem pequena continua ligada à promessa."
+   },
+   "hint": "Compare o lugar esperado nos dois trechos.",
+   "learningObjective": "Ligar Belém prometida à expectativa sobre Cristo.",
+   "evidence": [
+    "Miqueias 5:2",
+    "João 7:42"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo vem de Belém de Davi"
+    },
+    {
+     "id": "b",
+     "text": "Cristo viria sem ligação com Davi"
+    },
+    {
+     "id": "c",
+     "text": "Belém some da expectativa do povo"
+    }
+   ],
+   "passageA": {
+    "ref": "Miqueias 5:2"
+   },
+   "passageB": {
+    "ref": "João 7:42"
+   }
+  }
+ ]
+}

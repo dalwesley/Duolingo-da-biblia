@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "oracao-sem-or-01-pai-nosso-01": {
+  "question": "Em Mateus 6:9, Jesus ensina a orar ao Pai que está nos céus pedindo que o nome dele seja santificado.",
+  "learningObjective": "Observar a abertura do Pai Nosso.",
+  "feedbackCorrect": "A oração abre com o Pai e com a santidade do nome dele.",
+  "feedbackWrong": {
+   "false": "Releia Mateus 6:9: é a abertura exata da oração ensinada."
+  },
+  "hint": "Veja as primeiras palavras da oração.",
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-sem-or-01-pai-nosso-02": {
+  "question": "Em Mateus 6:9, toque a quem a oração é dirigida logo no começo.",
+  "learningObjective": "Identificar a quem a oração se dirige.",
+  "feedbackCorrect": "A oração não começa em nós: começa no Pai.",
+  "feedbackWrong": {
+   "a": "Isso é o que se pede santificado, depois do Pai.",
+   "b": "Isso é onde ele está, não a quem se fala."
+  },
+  "hint": "É a primeira palavra da oração.",
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-sem-or-01-pai-nosso-03": {
+  "question": "Segundo Mateus 6:10, o que se pede que venha e que seja feita?",
+  "learningObjective": "Observar os pedidos de Mateus 6:10.",
+  "feedbackCorrect": "Reino e vontade dele vêm antes dos nossos pedidos.",
+  "feedbackWrong": {
+   "a": "Vingança não aparece em nenhum pedido da oração.",
+   "b": "A vontade posta é a de Deus, não a nossa.",
+   "c": "Nenhum líder humano é posto no centro aqui."
+  },
+  "hint": "Veja de quem é o reino e a vontade.",
+  "options": {
+   "a": "Que venha vingança e seja feita justiça humana",
+   "b": "Que venha riqueza e seja feita nossa vontade",
+   "c": "Que venha silêncio e seja feita a vontade dos líderes",
+   "d": "Que venha o reino e seja feita a vontade de Deus"
+  },
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-sem-or-01-pai-nosso-04": {
+  "question": "Monte Mateus 6:9 na ordem do texto.",
+  "learningObjective": "Reconhecer a ordem da abertura da oração.",
+  "feedbackCorrect": "Pai, nos céus, nome santificado: é a abertura ensinada.",
+  "feedbackWrong": {
+   "default": "Comece chamando Deus de Pai."
+  },
+  "hint": "A oração começa com um chamado ao Pai.",
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-sem-or-01-pai-nosso-05": {
+  "question": "Em Mateus 6:10, o que pedimos que venha antes de qualquer necessidade nossa?",
+  "learningObjective": "Lembrar a prioridade da oração ensinada.",
+  "feedbackCorrect": "O governo de Deus é pedido antes do pão de cada dia.",
+  "feedbackWrong": {
+   "a": "O perdão é pedido mais adiante na oração.",
+   "c": "O pão vem no versículo seguinte, depois do reino."
+  },
+  "hint": "É o governo de Deus chegando.",
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-sem-or-01-pai-nosso-06": {
+  "question": "O que Mateus 6:10 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar Mateus 6:10 à prioridade do reino.",
+  "feedbackCorrect": "Reino e vontade dele vêm antes de pão, perdão e livramento.",
+  "feedbackWrong": {
+   "b": "Os pedidos urgentes vêm na segunda metade da oração.",
+   "c": "A ordem é inversa: Deus e o reino vêm primeiro."
+  },
+  "hint": "Veja o que é pedido neste versículo.",
+  "options": {
+   "a": "Reino antes das necessidades",
+   "b": "Começa pedindo coisas urgentes",
+   "c": "Necessidades antes do reino"
+  },
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-cam-or-01-pai-nosso-01": {
+  "question": "Em Mateus 6:11–12, pão diário e perdão mostram dependência de Deus para o corpo e para a alma.",
+  "learningObjective": "Compreender a dependência diária na oração.",
+  "feedbackCorrect": "Comer e ser perdoado: dependência completa, todo dia.",
+  "feedbackWrong": {
+   "false": "Os dois pedidos são de recebimento diário das mãos de Deus."
+  },
+  "hint": "Junte os pedidos dos dois versículos.",
+  "_verso": "Dá-nos hoje o nosso pão de cada dia; E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;"
+ },
+ "oracao-cam-or-01-pai-nosso-02": {
+  "question": "Em Mateus 6:10, toque a palavrinha que compara terra e céu no pedido pela vontade de Deus.",
+  "learningObjective": "Reconhecer a comparação em Mateus 6:10.",
+  "feedbackCorrect": "A vontade feita no céu é a medida para a terra.",
+  "feedbackWrong": {
+   "a": "Isso é o lugar onde ela deve ser feita, não a comparação.",
+   "b": "Isso é o modelo, não a palavra que compara."
+  },
+  "hint": "Procure a palavra curta entre terra e céu.",
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-cam-or-01-pai-nosso-03": {
+  "question": "Como Mateus 6:12 liga o perdão que pedimos ao perdão que damos?",
+  "learningObjective": "Compreender a ligação entre receber e dar perdão.",
+  "feedbackCorrect": "Receber e dar perdão caminham amarrados na mesma frase.",
+  "feedbackWrong": {
+   "b": "A oração é para devedores perdoados, não perfeitos.",
+   "c": "Não é compra: é o coração formado pelo perdão recebido.",
+   "d": "Estão na mesma frase, ligados, não separados."
+  },
+  "hint": "Veja a ligação no meio do versículo.",
+  "options": {
+   "a": "Pedimos na medida em que também perdoamos outros",
+   "b": "Deus perdoa só quem nunca foi ofendido por ninguém",
+   "c": "Nosso perdão compra o perdão de Deus na hora",
+   "d": "Perdoar outros é assunto separado desta oração"
+  },
+  "_verso": "E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;"
+ },
+ "oracao-cam-or-01-pai-nosso-04": {
+  "question": "Como se encadeiam os pedidos de Mateus 6:9–10?",
+  "learningObjective": "Compreender a ordem da primeira metade da oração.",
+  "feedbackCorrect": "Nome, reino e vontade: Deus no centro, nessa ordem.",
+  "feedbackWrong": {
+   "default": "Comece pelo nome santificado do Pai."
+  },
+  "hint": "A vontade na terra fecha a primeira parte.",
+  "options": {
+   "a": "O Pai nos céus tem o nome santificado",
+   "b": "O reino dele é pedido para vir",
+   "c": "A vontade dele desce à terra como no céu"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-cam-or-01-pai-nosso-05": {
+  "question": "Em Mateus 6:11, o que pedimos que Deus nos dê hoje?",
+  "learningObjective": "Compreender o pedido diário e suficiente.",
+  "feedbackCorrect": "O básico de cada dia, pedido hoje, sem acumular.",
+  "feedbackWrong": {
+   "a": "O pedido é simples e diário, não um banquete.",
+   "c": "Nenhuma bebida é citada neste pedido diário."
+  },
+  "hint": "É o alimento básico de todos os dias.",
+  "_verso": "Dá-nos hoje o nosso pão de cada dia;"
+ },
+ "oracao-cam-or-01-pai-nosso-06": {
+  "question": "O que liga Mateus 6:9 a Salmos 103:13?",
+  "learningObjective": "Relacionar o Pai do Pai Nosso ao dos Salmos.",
+  "feedbackCorrect": "O salmo já chamava Deus de Pai que se compadece dos filhos.",
+  "feedbackWrong": {
+   "a": "Os dois textos chamam Deus justamente de Pai.",
+   "c": "O salmo mostra proximidade compassiva, não distância."
+  },
+  "hint": "Compare o nome dado a Deus nos dois.",
+  "options": {
+   "a": "Oração sem chamar Deus Pai",
+   "b": "Deus como Pai compassivo",
+   "c": "Deus distante dos filhos"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-pro-or-01-pai-nosso-01": {
+  "question": "O Pai Nosso ensina que orar é só listar nossas vontades, sem lugar para o reino de Deus.",
+  "learningObjective": "Interpretar a prioridade do reino na oração.",
+  "feedbackCorrect": "Reino e vontade dele vêm antes das nossas necessidades.",
+  "feedbackWrong": {
+   "true": "A primeira metade da oração é toda sobre Deus e o reino."
+  },
+  "hint": "Confira a ordem dos pedidos na oração.",
+  "_verso": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-pro-or-01-pai-nosso-02": {
+  "question": "Em Mateus 6:12, toque a quem nós também perdoamos, segundo a oração.",
+  "learningObjective": "Sustentar no texto o perdão dado aos outros.",
+  "feedbackCorrect": "Quem pede perdão também é quem perdoa os que lhe devem.",
+  "feedbackWrong": {
+   "b": "Isso é o que pedimos sobre nós, não quem perdoamos.",
+   "c": "Isso é o pedido feito a Deus, não o nosso ato."
+  },
+  "hint": "Procure as pessoas no fim do versículo.",
+  "_verso": "E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;"
+ },
+ "oracao-pro-or-01-pai-nosso-03": {
+  "question": "Que leitura o Pai Nosso sustenta sobre como devemos orar?",
+  "learningObjective": "Escolher a interpretação que a ordem da oração sustenta.",
+  "feedbackCorrect": "Nome, reino e vontade vêm antes de pão e perdão.",
+  "feedbackWrong": {
+   "a": "A oração é toda no plural: Pai nosso, dá-nos.",
+   "b": "Nenhuma riqueza é pedida nesta oração de Jesus.",
+   "c": "Não é fórmula de pressão: é forma de um coração filho."
+  },
+  "hint": "Observe a ordem das duas metades da oração.",
+  "options": {
+   "a": "Orar sozinho, sem nunca usar a palavra nós",
+   "b": "Pedir primeiro riqueza para depois louvar a Deus",
+   "c": "Repetir palavras até Deus ser obrigado a atender",
+   "d": "Começar por Deus e seu reino, depois nossas necessidades"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ },
+ "oracao-pro-or-01-pai-nosso-04": {
+  "question": "Qual sequência revela o sentido do Pai Nosso inteiro?",
+  "learningObjective": "Ver a arquitetura completa da oração de Jesus.",
+  "feedbackCorrect": "Deus primeiro, nossas necessidades depois, livramento no fim.",
+  "feedbackWrong": {
+   "default": "Comece pela santidade do nome de Deus."
+  },
+  "hint": "O livramento é o pedido que fecha a oração.",
+  "options": {
+   "a": "Nome santificado e reino de Deus primeiro",
+   "b": "Pão diário e perdão mútuo no meio",
+   "c": "Livramento da tentação e do mal no fim"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "oracao-pro-or-01-pai-nosso-05": {
+  "question": "Em Mateus 6:13, de que pedimos para não cair, antes do livramento do mal?",
+  "learningObjective": "Lembrar o perigo nomeado no fim da oração.",
+  "feedbackCorrect": "A oração termina pedindo guarda na hora da prova.",
+  "feedbackWrong": {
+   "a": "A guarda pedida é moral e espiritual, neste verso.",
+   "c": "Tristeza não é o nome dado a esse perigo aqui."
+  },
+  "hint": "É a prova que pode nos fazer cair.",
+  "_verso": "E não nos deixes cair em tentação, mas livra-nos do mal, pois teu é o reino, o poder e a glória para sempre. Amém!"
+ },
+ "oracao-pro-or-01-pai-nosso-06": {
+  "question": "O que liga Mateus 6:9 a Romanos 8:15?",
+  "learningObjective": "Ligar o Pai Nosso à adoção no Espírito.",
+  "feedbackCorrect": "Pelo Espírito de adoção, clamamos como Jesus ensinou: Pai.",
+  "feedbackWrong": {
+   "a": "É justamente o Espírito que nos faz clamar assim.",
+   "c": "Romanos troca o espírito de escravidão pelo de adoção."
+  },
+  "hint": "Veja o clamor que o Espírito produz em nós.",
+  "options": {
+   "a": "Oração sem o Espírito Santo",
+   "b": "Filhos que clamam Pai",
+   "c": "Escravos com medo de Deus"
+  },
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;"
+ },
+ "estudo:or-01-pai-nosso": {
+  "context": "Os discípulos veem Jesus orar e querem aprender. Em vez de uma fórmula mágica, Jesus lhes dá uma oração curta que começa pelo Pai e pelo reino, antes de qualquer necessidade deles.",
+  "focusQuestion": "Como suas orações mudariam se começassem pelo reino, e não pela pressa?",
+  "keywordGloss": "A oração de Jesus começa chamando Deus de Pai, e Pai nosso: de todos, não só meu.",
+  "reflectionPrompts": [
+   "Nome santificado primeiro",
+   "Pão de cada dia",
+   "Perdoar para ser perdoado"
+  ],
+  "facts": [
+   "A oração começa com o Pai que está nos céus e o nome dele santificado.",
+   "Pede-se que venha o reino e que a vontade de Deus seja feita na terra como no céu.",
+   "O pão pedido é o de cada dia, dado hoje.",
+   "O perdão é pedido como nós temos perdoado aos nossos devedores.",
+   "Pede-se para não cair em tentação, mas ser livre do mal.",
+   "A oração fecha declarando que o reino, o poder e a glória são de Deus para sempre."
+  ],
+  "_verso": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu."
+ }
+}

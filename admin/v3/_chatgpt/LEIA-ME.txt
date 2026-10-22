@@ -1,0 +1,10 @@
+Configurar o ChatGPT (uma vez)
+
+1. No ChatGPT, crie um Projeto chamado "STWAY V3" (ou um GPT personalizado).
+2. Em Instruções, cole todo o conteúdo de instrucoes.txt (2225 caracteres).
+3. Em Arquivos, envie especificacao.md, exemplo_licao.json e exemplo_desafio.json.
+4. Use o modelo mais forte disponível no seu plano.
+
+Depois, para cada cena: uma conversa nova dentro do projeto, cole o pedido
+(v3/<trilha>/manual/pedidos/<nn>-<cena>.txt) e salve a resposta inteira em
+v3/<trilha>/manual/respostas/<cena>.json.

@@ -1,0 +1,105 @@
+Escreva a cena "periodo-inte-inter-03-desafio-a-espera" da trilha "periodo-intertestamentario" (Período Intertestamentário).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "periodo-intertestamentario",
+  "title": "Período Intertestamentário",
+  "description": "Os anos de silêncio profético — e a preparação do cenário.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Entre os testamentos",
+ "mission": {
+  "slug": "periodo-inte-inter-03-desafio-a-espera",
+  "title": "Desafio: A espera",
+  "type": "boss",
+  "intro": "História e expectativa do Messias.",
+  "hookRef": "Referência: Período Intertestamentário",
+  "hookNote": "História e expectativa do Messias.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre espera?"
+ },
+ "v2": {
+  "passageRef": "Referência: Período Intertestamentário",
+  "context": "História e expectativa do Messias.",
+  "keyword": "Espera",
+  "verseRefs": [
+   "Isaías 40:3"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "periodo-inte-inter-01-imperios-em-cena",
+   "title": "Impérios em cena",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Daniel 8:17–24"
+  },
+  {
+   "slug": "periodo-inte-inter-02-esperanca-messianica",
+   "title": "Esperança messiânica",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Malaquias 4:2–6"
+  }
+ ],
+ "ranges": [
+  "Daniel 8:17–24",
+  "Malaquias 4:2–6"
+ ],
+ "verses": [
+  {
+   "ref": "Daniel 8:17",
+   "text": "Ele se aproximou de onde eu estava; ao chegar, fiquei amedrontado e prostrei-me com o rosto em terra; mas ele me disse: \"Entende, filho do homem, pois essa visão se refere ao tempo do fim.\""
+  },
+  {
+   "ref": "Daniel 8:18",
+   "text": "E, enquanto ele falava comigo, caí sem sentidos com o rosto em terra; ele, porém, me tocou e me fez levantar da posição em que eu estava."
+  },
+  {
+   "ref": "Daniel 8:19",
+   "text": "E disse: Eis que vou te fazer saber o que acontecerá no último tempo da ira, porque esta visão se refere ao tempo determinado do fim."
+  },
+  {
+   "ref": "Daniel 8:20",
+   "text": "O carneiro que você viu com dois chifres representa os reis da Média e da Pérsia."
+  },
+  {
+   "ref": "Daniel 8:21",
+   "text": "Mas o bode peludo é o rei da Grécia; e o chifre grande que estava entre os olhos é o primeiro rei."
+  },
+  {
+   "ref": "Daniel 8:22",
+   "text": "E quando for quebrado, surgirão quatro em seu lugar, o que significa que quatro reinos se levantarão daquela mesma nação, mas não com a mesma força que ela tinha."
+  },
+  {
+   "ref": "Daniel 8:23",
+   "text": "Mas, no fim do seu reinado, quando os prevaricadores tiverem alcançado seu limite de transgressão, se levantará um rei de feroz catadura e mestre em intrigas."
+  },
+  {
+   "ref": "Daniel 8:24",
+   "text": "E a sua força será poderosa, mas não por sua própria força; ele causará destruições assombrosas, prosperará e realizará o que lhe apraz; destruirá os poderosos e o povo santo."
+  },
+  {
+   "ref": "Malaquias 4:2",
+   "text": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria."
+  },
+  {
+   "ref": "Malaquias 4:3",
+   "text": "E pisareis os ímpios, pois se tornarão cinzas sob as plantas dos vossos pés, no dia em que eu fizer isso, diz o Senhor dos Exércitos."
+  },
+  {
+   "ref": "Malaquias 4:4",
+   "text": "Lembrem-se da Lei de Moisés, meu servo, que lhe prescrevi em Horebe para todo o Israel, ou seja, estatutos e juízos."
+  },
+  {
+   "ref": "Malaquias 4:5",
+   "text": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR."
+  },
+  {
+   "ref": "Malaquias 4:6",
+   "text": "Ele converterá o coração dos pais aos filhos, e o coração dos filhos aos pais; para que eu não venha e fira a terra com maldição."
+  }
+ ]
+}
+</cena>

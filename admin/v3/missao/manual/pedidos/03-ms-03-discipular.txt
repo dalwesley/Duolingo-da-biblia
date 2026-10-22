@@ -1,0 +1,59 @@
+Escreva a cena "ms-03-discipular" da trilha "missao" (Missão e Evangelismo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "missao",
+  "title": "Missão e Evangelismo",
+  "description": "Anunciar Cristo — testemunho, discipulado e envio.",
+  "realm": "vida-crista"
+ },
+ "block": "Missão",
+ "mission": {
+  "slug": "ms-03-discipular",
+  "title": "Discipular as nações",
+  "type": "lesson",
+  "intro": "O evangelho é transmitido a pessoas fiéis que também poderão ensinar outros.",
+  "hookRef": "2 Timóteo 2:2",
+  "hookNote": "O evangelho é transmitido a pessoas fiéis que também poderão ensinar outros.",
+  "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+  "objective": "2 Timóteo 2:2"
+ },
+ "v2": {
+  "passageRef": "2 Timóteo 2:2",
+  "context": "O evangelho é transmitido a pessoas fiéis que também poderão ensinar outros.",
+  "keyword": "Discipular",
+  "verseRefs": [
+   "2 Timóteo 2:2"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "2 Timóteo 2:1–5"
+ ],
+ "verses": [
+  {
+   "ref": "2 Timóteo 2:1",
+   "text": "Fortifica-te, pois, meu filho, na graça que está em Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 2:2",
+   "text": "E o que de mim ouviste por meio de muitas testemunhas, isso confia a homens fiéis e também idôneos para instruir a outros."
+  },
+  {
+   "ref": "2 Timóteo 2:3",
+   "text": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 2:4",
+   "text": "Ninguém que milita se envolve em assuntos desta vida, pois o seu objetivo é agradar àquele que o recrutou para a batalha."
+  },
+  {
+   "ref": "2 Timóteo 2:5",
+   "text": "E, se alguém também compete, não é coroado se não o fizer de acordo com as normas."
+  }
+ ]
+}
+</cena>

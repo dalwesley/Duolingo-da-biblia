@@ -1,0 +1,922 @@
+{
+ "study": {
+  "passageRef": "Levítico 19:1–5",
+  "passages": [
+   {
+    "ref": "Levítico 19:1–5"
+   },
+   {
+    "ref": "Levítico 17:10–14"
+   },
+   {
+    "ref": "Levítico 18:1–5"
+   }
+  ],
+  "context": "Este desafio revisa o chamado a ser santo, o sangue dado no altar e a vida distinta das nações. O povo devia refletir o Senhor em casa, no culto e entre os povos.",
+  "keyword": "santo",
+  "keywordGloss": "No texto, Deus é santo e, por isso, chama todo o seu povo a ser santo.",
+  "focusQuestion": "Onde Deus quer refletir a santidade dele na sua rotina?",
+  "reflectionPrompts": [
+   "Santos porque Deus é santo",
+   "Sangue respeitado no altar",
+   "Não copiar as nações"
+  ],
+  "facts": [
+   {
+    "text": "Os filhos de Israel deviam ser santos porque o Senhor, seu Deus, é santo.",
+    "evidenceRef": "Levítico 19:2",
+    "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo"
+   },
+   {
+    "text": "Cada um devia respeitar sua mãe e seu pai e guardar os sábados do Senhor.",
+    "evidenceRef": "Levítico 19:3",
+    "evidenceSpan": "Cada um respeitará sua mãe e seu pai"
+   },
+   {
+    "text": "A vida da carne está no sangue, dado por Deus sobre o altar.",
+    "evidenceRef": "Levítico 17:11",
+    "evidenceSpan": "a vida da carne está no sangue"
+   },
+   {
+    "text": "O povo nunca mais devia oferecer sacrifícios aos demônios.",
+    "evidenceRef": "Levítico 17:7",
+    "evidenceSpan": "nunca mais oferecerão seus sacrifícios aos demônios"
+   },
+   {
+    "text": "Israel não devia fazer segundo as práticas do Egito nem de Canaã.",
+    "evidenceRef": "Levítico 18:3",
+    "evidenceSpan": "Não fareis segundo as práticas da terra do Egito"
+   },
+   {
+    "text": "Ao cumprir os estatutos e juízos, o homem viveria por meio deles.",
+    "evidenceRef": "Levítico 18:5",
+    "evidenceSpan": "ao cumpri-los, o homem viverá por meio deles"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "santos",
+    "gloss": "Chamado de todo o povo a refletir quem o Senhor é."
+   },
+   {
+    "term": "sangue",
+    "gloss": "Carrega a vida e foi dado por Deus sobre o altar."
+   },
+   {
+    "term": "estatutos",
+    "gloss": "Ordens do Senhor para guardar, andar nelas e viver por elas."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Chamado a ser santo como Deus",
+    "evidenceRef": "Levítico 19:2"
+   },
+   {
+    "label": "O sangue dado sobre o altar",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "label": "Nada de copiar Egito ou Canaã",
+    "evidenceRef": "Levítico 18:3"
+   },
+   {
+    "label": "Sacrifício pacífico para ser aceito",
+    "evidenceRef": "Levítico 19:5"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "O povo devia ser santo porque o Senhor, seu Deus, é santo.",
+    "marker": "porque",
+    "evidenceRef": "Levítico 19:2"
+   },
+   {
+    "kind": "propósito",
+    "text": "Deus deu o sangue sobre o altar para expiar pelo povo.",
+    "marker": "para",
+    "evidenceRef": "Levítico 17:11"
+   },
+   {
+    "kind": "propósito",
+    "text": "Os sacrifícios do campo deviam ser trazidos para serem oferecidos ao Senhor.",
+    "marker": "Para",
+    "evidenceRef": "Levítico 17:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Pedro 1:16",
+    "bridge": "Sede santos porque sou santo"
+   },
+   {
+    "ref": "Hebreus 9:22",
+    "bridge": "Sangue e perdão dos pecados"
+   },
+   {
+    "ref": "Efésios 1:4",
+    "bridge": "Escolhidos para ser santos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Santidade era chamado só para sacerdotes, não para todo o povo.",
+    "why": "A ordem é falada a toda a congregação dos filhos de Israel."
+   },
+   {
+    "text": "O sangue podia ser comido porque a vida estava nele.",
+    "why": "Justamente por isso ele foi dado no altar e proibido como comida."
+   },
+   {
+    "text": "As práticas do Egito e de Canaã eram neutras para Israel.",
+    "why": "O Senhor manda não fazer segundo essas práticas nem seguir seus estatutos."
+   }
+  ],
+  "centralInsight": "Ser santo é refletir o Senhor no culto, em casa e entre as nações",
+  "anchorQuestion": "Como a santidade aparece em Levítico 19, 17 e 18 juntos?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Levítico 19:2, ser santo era um chamado apenas para Arão e seus filhos.",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Falem a toda a congregação dos filhos de Israel",
+   "feedbackCorrect": "O chamado é falado a toda a congregação de Israel.",
+   "feedbackWrong": {
+    "true": "Releia a quem a fala devia ser dirigida."
+   },
+   "hint": "Veja o público da fala.",
+   "learningObjective": "Revisar quem recebe o chamado à santidade.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 19:3, toque quem cada um devia respeitar em primeiro lugar.",
+   "verseRef": "Levítico 19:3",
+   "evidenceSpan": "Cada um respeitará sua mãe e seu pai",
+   "feedbackCorrect": "A primeira pessoa citada no respeito é a mãe.",
+   "feedbackWrong": {
+    "b": "O pai é citado logo depois, não em primeiro lugar.",
+    "c": "Isso é o que guardar, não quem respeitar primeiro."
+   },
+   "hint": "Procure a primeira pessoa citada.",
+   "learningObjective": "Revisar a santidade dentro de casa.",
+   "evidence": [
+    "Levítico 19:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sua mãe"
+    },
+    {
+     "id": "b",
+     "text": "seu pai"
+    },
+    {
+     "id": "c",
+     "text": "meus sábados"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Levítico 17:6, o que o sacerdote faria com o sangue no altar?",
+   "verseRef": "Levítico 17:6",
+   "evidenceSpan": "o sacerdote aspergirá o sangue sobre o altar do SENHOR",
+   "feedbackCorrect": "No altar, o sangue era aspergido pelo sacerdote ao Senhor.",
+   "feedbackWrong": {
+    "a": "O sangue ia sobre o altar, não para o povo guardar.",
+    "c": "O sacrifício devia sair do campo para o altar.",
+    "d": "Cobrir com pó era para sangue da caça, não do altar."
+   },
+   "hint": "Veja a ação do sacerdote com o sangue.",
+   "learningObjective": "Revisar o destino do sangue no altar.",
+   "evidence": [
+    "Levítico 17:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Guardar numa vasilha para o povo"
+    },
+    {
+     "id": "b",
+     "text": "Aspergir sobre o altar do Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Derramar no campo aberto"
+    },
+    {
+     "id": "d",
+     "text": "Cobrir com pó junto à caça"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 19:2 na ordem do texto.",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Falem a toda a congregação dos filhos de Israel e digam-lhes",
+   "feedbackCorrect": "A fala vai a toda a congregação e anuncia o chamado e o motivo.",
+   "feedbackWrong": {
+    "default": "Comece pela fala a toda a congregação."
+   },
+   "hint": "O versículo começa com o público da fala.",
+   "learningObjective": "Revisar a ordem do chamado à santidade.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Falem a toda a congregação dos filhos de Israel e digam-lhes"
+    },
+    {
+     "id": "b",
+     "text": "Serão santos porque eu, o SENHOR, seu Deus"
+    },
+    {
+     "id": "c",
+     "text": "sou santo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Levítico 19:4, de que metal eram os deuses que o povo não devia fazer?",
+   "verseRef": "Levítico 19:4",
+   "evidenceSpan": "nem se façam deuses de metal fundido",
+   "feedbackCorrect": "Fazer deuses desse jeito trocaria o Senhor por obra humana.",
+   "feedbackWrong": {
+    "a": "O metal dos deuses proibidos não recebe esse nome aqui.",
+    "b": "Perpétuo descreve estatuto, não o metal dos deuses."
+   },
+   "hint": "Veja como o metal é descrito.",
+   "learningObjective": "Revisar a proibição de deuses fabricados.",
+   "evidence": [
+    "Levítico 19:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sagrado"
+    },
+    {
+     "id": "b",
+     "text": "perpétuo"
+    },
+    {
+     "id": "c",
+     "text": "fundido"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Levítico 19:2 comunica que se liga a este contexto?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Todo o povo é chamado a refletir a santidade de Deus.",
+   "feedbackWrong": {
+    "b": "O motivo é quem Deus é, não orgulho do povo.",
+    "c": "O chamado nasce do Senhor ser santo."
+   },
+   "hint": "Veja o motivo depois do chamado.",
+   "learningObjective": "Revisar o fundamento do chamado.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Santos porque Deus é santo"
+    },
+    {
+     "id": "b",
+     "text": "Santos por serem melhores"
+    },
+    {
+     "id": "c",
+     "text": "Separados sem nenhum Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 19:2"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus, que é santo, chama todo o povo a ser santo."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:11, toque onde está a vida da carne.",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "a vida da carne está no sangue",
+   "feedbackCorrect": "A vida da carne está ligada ao que Deus deu no altar.",
+   "feedbackWrong": {
+    "a": "O altar é o destino dado, não onde a vida está.",
+    "c": "Carne é de quem a vida é descrita, não onde ela está."
+   },
+   "hint": "Procure o que vem depois de está.",
+   "learningObjective": "Revisar onde o texto coloca a vida.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre o altar"
+    },
+    {
+     "id": "b",
+     "text": "no sangue"
+    },
+    {
+     "id": "c",
+     "text": "da carne"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Levítico 18:5 na ordem do texto.",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "vocês guardarão os meus estatutos e os meus juízos",
+   "feedbackCorrect": "Guardar os estatutos, viver por eles e reconhecer o Senhor.",
+   "feedbackWrong": {
+    "default": "Comece por guardar estatutos e juízos."
+   },
+   "hint": "O versículo começa com guardar.",
+   "learningObjective": "Revisar a sequência de Levítico 18:5.",
+   "evidence": [
+    "Levítico 18:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Portanto, vocês guardarão os meus estatutos e os meus juízos"
+    },
+    {
+     "id": "b",
+     "text": "ao cumpri-los, o homem viverá por meio deles"
+    },
+    {
+     "id": "c",
+     "text": "Eu sou o Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Levítico 18:5, ao cumprir os estatutos e juízos do Senhor, o homem viverá por meio deles.",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "ao cumpri-los, o homem viverá por meio deles",
+   "feedbackCorrect": "Cumprir o que Deus ordenou aparece ligado à vida.",
+   "feedbackWrong": {
+    "false": "Releia o resultado de cumprir neste versículo."
+   },
+   "hint": "Veja o resultado depois de cumprir.",
+   "learningObjective": "Compreender a promessa ligada à obediência.",
+   "evidence": [
+    "Levítico 18:5"
+   ],
+   "correctOptionId": "true"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 19:2, toque a palavra que liga o chamado à santidade ao seu motivo.",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Essa palavra mostra que ser santo nasce de quem Deus é.",
+   "feedbackWrong": {
+    "b": "Isso é o chamado, não a palavra que traz o motivo.",
+    "c": "Isso é o público, não a ligação de causa."
+   },
+   "hint": "Procure a ligação entre chamado e motivo.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "porque"
+    },
+    {
+     "id": "b",
+     "text": "santos"
+    },
+    {
+     "id": "c",
+     "text": "toda a congregação"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Levítico 17:11 explica o papel do sangue no altar?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "Deus mesmo destina o sangue ao altar em favor do povo.",
+   "feedbackWrong": {
+    "a": "O sangue era proibido como comida.",
+    "c": "O texto fala de expiação, não de enfeite.",
+    "d": "No altar, o sangue tem papel dado por Deus."
+   },
+   "hint": "Veja quem dá o sangue e com que fim.",
+   "learningObjective": "Compreender o propósito do sangue no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O povo podia comê-lo como alimento santo"
+    },
+    {
+     "id": "b",
+     "text": "Deus o reservou para expiar pelo povo"
+    },
+    {
+     "id": "c",
+     "text": "Ele servia só para enfeitar o altar"
+    },
+    {
+     "id": "d",
+     "text": "Ele lembrava apenas a caça no campo"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam as ideias em Levítico 18:4–5?",
+   "verseRef": "Levítico 18:4–5",
+   "evidenceSpan": "Cumprireis os meus juízos e guardareis os meus estatutos",
+   "feedbackCorrect": "Cumprir e guardar viram andar e viver nos estatutos.",
+   "feedbackWrong": {
+    "default": "Comece por cumprir os juízos de Deus."
+   },
+   "hint": "Guardar vem antes de viver por eles.",
+   "learningObjective": "Compreender guardar, andar e viver ligados.",
+   "evidence": [
+    "Levítico 18:4–5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cumprir os juízos do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Guardar os estatutos e andar neles"
+    },
+    {
+     "id": "c",
+     "text": "Viver por meio do que foi cumprido"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Levítico 18:3, segundo o que Israel não devia fazer, seguindo Egito e Canaã?",
+   "verseRef": "Levítico 18:3",
+   "evidenceSpan": "Não fareis segundo as práticas da terra do Egito",
+   "feedbackCorrect": "O povo devia recusar o modo de viver dessas terras.",
+   "feedbackWrong": {
+    "a": "Terras são os lugares citados, não o que seguir.",
+    "b": "Gerações aparecem em estatuto perpétuo, não aqui."
+   },
+   "hint": "Veja o que vem depois de segundo.",
+   "learningObjective": "Compreender a vida distinta pedida ao povo.",
+   "evidence": [
+    "Levítico 18:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "terras"
+    },
+    {
+     "id": "b",
+     "text": "gerações"
+    },
+    {
+     "id": "c",
+     "text": "práticas"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Levítico 19:2 a 1 Pedro 1:16?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Pedro cita o chamado de Levítico para os crentes.",
+   "feedbackWrong": {
+    "b": "Pedro repete o chamado ao povo de Deus.",
+    "c": "Pedro cita o Deus santo contra ídolos."
+   },
+   "hint": "Compare a frase nos dois trechos.",
+   "learningObjective": "Relacionar o chamado em Levítico e Pedro.",
+   "evidence": [
+    "Levítico 19:2",
+    "1 Pedro 1:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sede santos, Deus é santo"
+    },
+    {
+     "id": "b",
+     "text": "Santidade só de sacerdotes"
+    },
+    {
+     "id": "c",
+     "text": "Deuses feitos pelo povo"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 19:2"
+   },
+   "passageB": {
+    "ref": "1 Pedro 1:16"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:5, toque a palavra que abre a finalidade de trazer os sacrifícios.",
+   "verseRef": "Levítico 17:5",
+   "evidenceSpan": "Para que os filhos de Israel tragam seus sacrifícios",
+   "feedbackCorrect": "Essa palavra mostra que trazer ao Senhor tinha um fim.",
+   "feedbackWrong": {
+    "a": "Isso é a ação esperada, não a finalidade inicial.",
+    "c": "Isso é de onde os sacrifícios saíam, não a finalidade."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de propósito.",
+   "evidence": [
+    "Levítico 17:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "tragam"
+    },
+    {
+     "id": "b",
+     "text": "Para"
+    },
+    {
+     "id": "c",
+     "text": "campo aberto"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam as ideias em Levítico 17:10–11?",
+   "verseRef": "Levítico 17:10–11",
+   "evidenceSpan": "voltarei a minha face contra essa pessoa",
+   "feedbackCorrect": "Comer sangue traz juízo e Deus explica vida e altar.",
+   "feedbackWrong": {
+    "default": "Comece pela proibição de comer sangue."
+   },
+   "hint": "A explicação da vida vem no versículo seguinte.",
+   "learningObjective": "Compreender proibição, vida e altar.",
+   "evidence": [
+    "Levítico 17:10–11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Comer sangue traz eliminação do povo"
+    },
+    {
+     "id": "b",
+     "text": "Deus explica a vida que há no sangue"
+    },
+    {
+     "id": "c",
+     "text": "O sangue é dado sobre o altar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Levítico 19:4 sustenta que o povo podia fazer deuses de metal se os guardasse dentro de casa.",
+   "verseRef": "Levítico 19:4",
+   "evidenceSpan": "nem se façam deuses de metal fundido",
+   "feedbackCorrect": "O texto proíbe fazer esses deuses, sem abrir exceção caseira.",
+   "feedbackWrong": {
+    "true": "Releia a proibição completa em Levítico 19:4."
+   },
+   "hint": "Veja se há exceção na proibição.",
+   "learningObjective": "Interpretar a proibição sem exceções inventadas.",
+   "evidence": [
+    "Levítico 19:4"
+   ],
+   "correctOptionId": "false"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 17:14, toque o trecho que repete onde está a vida de toda carne.",
+   "verseRef": "Levítico 17:14",
+   "evidenceSpan": "a vida de toda carne está em seu sangue",
+   "feedbackCorrect": "O texto repete a ligação entre vida de toda carne e sangue.",
+   "feedbackWrong": {
+    "b": "Isso fala do que não comer, não de onde está a vida.",
+    "c": "Isso é consequência de comer, não onde está a vida."
+   },
+   "hint": "Procure a segunda afirmação sobre a vida.",
+   "learningObjective": "Sustentar vida e sangue ligados.",
+   "evidence": [
+    "Levítico 17:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "em seu sangue"
+    },
+    {
+     "id": "b",
+     "text": "nenhuma carne"
+    },
+    {
+     "id": "c",
+     "text": "será eliminado"
+    }
+   ],
+   "correctOptionId": "a"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Levítico 19:2 sustenta sobre a origem da santidade pedida?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "O chamado não vem do povo e sim de quem Deus é.",
+   "feedbackWrong": {
+    "a": "O motivo citado é Deus ser santo, não orgulho nacional.",
+    "c": "O respeito aos pais vem dentro do mesmo chamado.",
+    "d": "Quem chama e fundamenta é o Senhor."
+   },
+   "hint": "Veja o motivo depois do chamado.",
+   "learningObjective": "Escolher o fundamento da santidade.",
+   "evidence": [
+    "Levítico 19:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A santidade nasce de Israel ser melhor que outros"
+    },
+    {
+     "id": "b",
+     "text": "A santidade do povo nasce de quem Deus é"
+    },
+    {
+     "id": "c",
+     "text": "Ser santo dispensa respeitar pai e mãe"
+    },
+    {
+     "id": "d",
+     "text": "Cada um define santidade do seu jeito"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o chamado à santidade na Bíblia?",
+   "verseRef": "Levítico 19:2",
+   "evidenceSpan": "Serão santos porque eu, o SENHOR, seu Deus, sou santo",
+   "feedbackCorrect": "Levítico chama, Pedro repete e Paulo fala de escolhidos santos.",
+   "feedbackWrong": {
+    "default": "Comece por Levítico e siga pelas cartas."
+   },
+   "hint": "Siga Levítico, Pedro e depois Efésios.",
+   "learningObjective": "Ver o fio da santidade nas cartas.",
+   "evidence": [
+    "Levítico 19:2",
+    "1 Pedro 1:16",
+    "Efésios 1:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus é santo e chama o seu povo"
+    },
+    {
+     "id": "b",
+     "text": "Pedro repete sede santos aos crentes"
+    },
+    {
+     "id": "c",
+     "text": "Paulo fala de escolhidos para ser santos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Levítico 17:11, que palavra explica por que o sangue faz expiação?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "fará expiação em virtude da vida",
+   "feedbackCorrect": "A expiação acontece em virtude do que o sangue carrega.",
+   "feedbackWrong": {
+    "a": "Fome não explica o sangue neste texto.",
+    "b": "O texto usa outra palavra para a expiação."
+   },
+   "hint": "Veja a última parte do versículo.",
+   "learningObjective": "Lembrar o termo central do sangue no altar.",
+   "evidence": [
+    "Levítico 17:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "fome"
+    },
+    {
+     "id": "b",
+     "text": "força"
+    },
+    {
+     "id": "c",
+     "text": "vida"
+    }
+   ],
+   "correctOptionId": "c"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Levítico 18:5 a Romanos 10:5?",
+   "verseRef": "Levítico 18:5",
+   "evidenceSpan": "o homem viverá por meio deles",
+   "feedbackCorrect": "Paulo cita Moisés e a frase sobre viver pelos preceitos.",
+   "feedbackWrong": {
+    "b": "Paulo cita Levítico, não aprova copiar as nações.",
+    "c": "O texto citado liga cumprir e viver."
+   },
+   "hint": "Compare a frase sobre viver nos dois trechos.",
+   "learningObjective": "Ligar Levítico 18:5 à citação em Romanos.",
+   "evidence": [
+    "Levítico 18:5",
+    "Romanos 10:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Viver pelos preceitos de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Copiar Egito e Canaã"
+    },
+    {
+     "id": "c",
+     "text": "Regras sem nenhuma vida"
+    }
+   ],
+   "correctOptionId": "a",
+   "passageA": {
+    "ref": "Levítico 18:5"
+   },
+   "passageB": {
+    "ref": "Romanos 10:5"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Levítico 19:5, toque o resultado buscado ao oferecer o sacrifício pacífico.",
+   "verseRef": "Levítico 19:5",
+   "evidenceSpan": "oferecê-lo-eis para que sejais aceitos",
+   "feedbackCorrect": "Oferecer do modo certo buscava ser aceito pelo Senhor.",
+   "feedbackWrong": {
+    "a": "Isso é a oferta citada, não o fim buscado.",
+    "c": "Isso indica a quem oferecer, não o resultado."
+   },
+   "hint": "Procure o fim depois de para que.",
+   "learningObjective": "Sustentar o propósito do sacrifício pacífico.",
+   "evidence": [
+    "Levítico 19:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "sacrifício pacífico"
+    },
+    {
+     "id": "b",
+     "text": "sejais aceitos"
+    },
+    {
+     "id": "c",
+     "text": "ao SENHOR"
+    }
+   ],
+   "correctOptionId": "b"
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do sangue que perdoa na Bíblia?",
+   "verseRef": "Levítico 17:11",
+   "evidenceSpan": "eu o dei sobre o altar para expiar por vocês",
+   "feedbackCorrect": "Do altar em Levítico, Hebreus chega ao sangue que purifica.",
+   "feedbackWrong": {
+    "default": "Comece em Levítico e termine em Hebreus."
+   },
+   "hint": "Siga o sangue do altar até Hebreus.",
+   "learningObjective": "Ver o sangue do altar até Cristo.",
+   "evidence": [
+    "Levítico 17:11",
+    "Hebreus 9:22",
+    "Hebreus 9:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus dá o sangue sobre o altar"
+    },
+    {
+     "id": "b",
+     "text": "Hebreus liga sangue e perdão dos pecados"
+    },
+    {
+     "id": "c",
+     "text": "O sangue de Cristo purifica a consciência"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

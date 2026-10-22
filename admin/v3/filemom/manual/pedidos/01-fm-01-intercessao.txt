@@ -1,0 +1,71 @@
+Escreva a cena "fm-01-intercessao" da trilha "filemom" (Filemom).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "filemom",
+  "title": "Filemom",
+  "description": "Graça que transforma relacionamentos — perdão e irmãos em Cristo.",
+  "realm": "novo-testamento"
+ },
+ "block": "Filemom",
+ "mission": {
+  "slug": "fm-01-intercessao",
+  "title": "Intercessão por Onésimo",
+  "type": "lesson",
+  "intro": "Paulo apela por Onésimo, agora irmão amado em Cristo.",
+  "hookRef": "Intercessão por Onésimo",
+  "hookNote": "Paulo apela por Onésimo, agora irmão amado em Cristo.",
+  "centralInsight": "Paulo instrui a igreja em Filemom 1:1-16 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+  "objective": "Filemom 1:1-16"
+ },
+ "v2": {
+  "passageRef": "Intercessão por Onésimo",
+  "context": "Paulo apela por Onésimo, agora irmão amado em Cristo.",
+  "keyword": "Intercessão",
+  "verseRefs": [
+   "Filemom 1:10–11"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Filemom 1:7–14"
+ ],
+ "verses": [
+  {
+   "ref": "Filemom 1:7",
+   "text": "Pois, irmão, tive grande alegria e consolo pelo seu amor, pois o coração dos santos tem sido reanimado por meio de você."
+  },
+  {
+   "ref": "Filemom 1:8",
+   "text": "Por isso, embora eu tenha plena liberdade em Cristo para te mandar o que é apropriado,"
+  },
+  {
+   "ref": "Filemom 1:9",
+   "text": "Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;"
+  },
+  {
+   "ref": "Filemom 1:10",
+   "text": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas."
+  },
+  {
+   "ref": "Filemom 1:11",
+   "text": "o qual antes era inútil para ti; mas agora é muito útil, tanto para ti quanto para mim. Eu to estou enviando de volta."
+  },
+  {
+   "ref": "Filemom 1:12",
+   "text": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu coração."
+  },
+  {
+   "ref": "Filemom 1:13",
+   "text": "Eu gostaria de mantê-lo comigo, para que me auxiliasse nas algemas que carrego por causa do evangelho."
+  },
+  {
+   "ref": "Filemom 1:14",
+   "text": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade."
+  }
+ ]
+}
+</cena>

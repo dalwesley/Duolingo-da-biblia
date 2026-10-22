@@ -1,0 +1,709 @@
+{
+ "study": {
+  "passageRef": "Jonas 3:1–6",
+  "passages": [
+   {
+    "ref": "Jonas 3:1–10"
+   }
+  ],
+  "context": "A palavra do Senhor vem a Jonas pela segunda vez. Agora ele vai a Nínive, prega o juízo anunciado, e a cidade inteira responde com jejum, pano de saco e mudança de caminho.",
+  "keyword": "converterá",
+  "keywordGloss": "Virar de direção: deixar o mau caminho e a violência, como pede o decreto do rei.",
+  "focusQuestion": "O que você precisaria deixar para trás se levasse a sério um chamado de Deus?",
+  "reflectionPrompts": [
+   "A segunda vez",
+   "A cidade crê",
+   "Deus vê a mudança"
+  ],
+  "facts": [
+   {
+    "text": "A palavra do Senhor veio a Jonas pela segunda vez.",
+    "evidenceRef": "Jonas 3:1",
+    "evidenceSpan": "a palavra do Senhor veio a Jonas pela segunda vez"
+   },
+   {
+    "text": "Jonas se levantou e foi a Nínive conforme a palavra do Senhor.",
+    "evidenceRef": "Jonas 3:3",
+    "evidenceSpan": "Jonas se levantou e foi a Nínive, conforme a palavra do Senhor"
+   },
+   {
+    "text": "Jonas pregava que em quarenta dias Nínive seria subvertida.",
+    "evidenceRef": "Jonas 3:4",
+    "evidenceSpan": "Ainda quarenta dias, e Nínive será subvertida"
+   },
+   {
+    "text": "Os habitantes de Nínive creram em Deus e proclamaram um jejum.",
+    "evidenceRef": "Jonas 3:5",
+    "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum"
+   },
+   {
+    "text": "O rei de Nínive se cobriu de pano de saco e sentou-se sobre cinzas.",
+    "evidenceRef": "Jonas 3:6",
+    "evidenceSpan": "cobriu-se com pano de saco e sentou-se sobre cinzas"
+   },
+   {
+    "text": "Deus viu que eles se converteram do mau caminho e não fez o mal anunciado.",
+    "evidenceRef": "Jonas 3:10",
+    "evidenceSpan": "como se converteram de seu mau caminho"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "creram",
+    "gloss": "Os habitantes creram em Deus ao ouvir a pregação de Jonas."
+   },
+   {
+    "term": "jejum",
+    "gloss": "Prática com que Nínive acompanha o luto e o pedido a Deus."
+   },
+   {
+    "term": "converterá",
+    "gloss": "Cada um deve converter-se do mau caminho e da violência das mãos."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A palavra vem pela segunda vez",
+    "evidenceRef": "Jonas 3:1"
+   },
+   {
+    "label": "Jonas vai e prega em Nínive",
+    "evidenceRef": "Jonas 3:4"
+   },
+   {
+    "label": "A cidade crê e faz jejum",
+    "evidenceRef": "Jonas 3:5"
+   },
+   {
+    "label": "Deus vê a conversão e não destrói",
+    "evidenceRef": "Jonas 3:10"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Depois de ouvir a palavra pela segunda vez, Jonas se levanta e vai a Nínive.",
+    "marker": "conforme",
+    "evidenceRef": "Jonas 3:3"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao ouvir a pregação, os habitantes creem em Deus e proclamam um jejum.",
+    "marker": null,
+    "evidenceRef": "Jonas 3:5"
+   },
+   {
+    "kind": "propósito",
+    "text": "O rei manda clamar a Deus para que o furor se afaste e não sejam destruídos.",
+    "marker": "para",
+    "evidenceRef": "Jonas 3:9"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 12:41",
+    "bridge": "Nínive se arrependeu com Jonas"
+   },
+   {
+    "ref": "Lucas 11:32",
+    "bridge": "Jesus cita o arrependimento"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Nínive só teve medo, sem nenhuma mudança real de caminho.",
+    "why": "O texto diz que Deus viu as obras deles e como se converteram do mau caminho."
+   },
+   {
+    "text": "Jonas pregou uma mensagem longa e detalhada à cidade.",
+    "why": "A mensagem registrada é curta: ainda quarenta dias, e Nínive será subvertida."
+   },
+   {
+    "text": "Deus mudou de ideia porque foi pego de surpresa.",
+    "why": "O próprio rei espera que Deus se afaste do furor ao ver a conversão da cidade."
+   }
+  ],
+  "centralInsight": "A cidade estrangeira ouve Deus e se converte do mau caminho",
+  "anchorQuestion": "Como Nínive respondeu à pregação de Jonas?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jonas 3:5, os habitantes de Nínive creram em Deus e proclamaram um jejum.",
+   "verseRef": "Jonas 3:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum",
+   "feedbackCorrect": "A cidade crê em Deus e proclama jejum, do maior ao menor.",
+   "feedbackWrong": {
+    "false": "Releia Jonas 3:5 sobre a fé e o jejum da cidade."
+   },
+   "hint": "Olhe a resposta dos habitantes.",
+   "learningObjective": "Observar a resposta de fé de Nínive.",
+   "evidence": [
+    "Jonas 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jonas 3:4, toque o prazo anunciado antes de Nínive ser subvertida.",
+   "verseRef": "Jonas 3:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "um dia"
+    },
+    {
+     "id": "b",
+     "text": "quarenta dias"
+    },
+    {
+     "id": "c",
+     "text": "Nínive"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ainda quarenta dias, e Nínive será subvertida",
+   "feedbackCorrect": "A mensagem anuncia quarenta dias antes da subversão de Nínive.",
+   "feedbackWrong": {
+    "a": "Um dia é o caminho que Jonas já percorreu na cidade.",
+    "c": "Nínive é a cidade anunciada, não o prazo da mensagem."
+   },
+   "hint": "Leia a frase pregada por Jonas.",
+   "learningObjective": "Identificar o prazo anunciado por Jonas.",
+   "evidence": [
+    "Jonas 3:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jonas 3:6, o que o rei de Nínive fez ao ouvir a notícia?",
+   "verseRef": "Jonas 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mandou prender Jonas na cidade"
+    },
+    {
+     "id": "b",
+     "text": "Fugiu do palácio para o campo"
+    },
+    {
+     "id": "c",
+     "text": "Cobriu-se de pano de saco e sentou nas cinzas"
+    },
+    {
+     "id": "d",
+     "text": "Ignorou a mensagem do profeta"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "cobriu-se com pano de saco e sentou-se sobre cinzas",
+   "feedbackCorrect": "O rei desce do trono, cobre-se de saco e senta sobre cinzas.",
+   "feedbackWrong": {
+    "a": "O rei não prende Jonas; ele mesmo se humilha diante de Deus.",
+    "b": "Ele não foge; levanta-se do trono para se humilhar.",
+    "d": "Ele responde com pano de saco, cinzas e um decreto."
+   },
+   "hint": "Veja o que ele faz com as vestes reais.",
+   "learningObjective": "Observar a reação do rei de Nínive.",
+   "evidence": [
+    "Jonas 3:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jonas 3:5 na ordem do texto.",
+   "verseRef": "Jonas 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Os habitantes de Nínive creram em Deus"
+    },
+    {
+     "id": "b",
+     "text": "proclamaram um jejum e se vestiram de panos de saco"
+    },
+    {
+     "id": "c",
+     "text": "desde o maior até o menor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum",
+   "feedbackCorrect": "Eles creem, proclamam jejum e se vestem de saco, todos juntos.",
+   "feedbackWrong": {
+    "default": "Comece pela fé dos habitantes; o alcance total fecha o versículo."
+   },
+   "hint": "O versículo começa pela fé da cidade.",
+   "learningObjective": "Reconhecer a sequência de Jonas 3:5.",
+   "evidence": [
+    "Jonas 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jonas 3:5, de que os habitantes se vestiram após crer em Deus?",
+   "verseRef": "Jonas 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "saco"
+    },
+    {
+     "id": "b",
+     "text": "cinzas"
+    },
+    {
+     "id": "c",
+     "text": "jejum"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se vestiram de panos de saco",
+   "feedbackCorrect": "Eles se vestiram de panos de saco, sinal visível de luto.",
+   "feedbackWrong": {
+    "b": "Cinzas são onde o rei se senta no versículo seguinte.",
+    "c": "Jejum é proclamado, não vestido pelo corpo."
+   },
+   "hint": "Pense na roupa de luto citada aqui.",
+   "learningObjective": "Lembrar o sinal visível da resposta de Nínive.",
+   "evidence": [
+    "Jonas 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jonas 3:5 comunica que se liga a este contexto?",
+   "verseRef": "Jonas 3:5",
+   "passageA": {
+    "ref": "Jonas 3:5"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jonas pregou juízo em Nínive e a cidade inteira respondeu."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A cidade ignorou a pregação"
+    },
+    {
+     "id": "b",
+     "text": "A cidade creu em Deus"
+    },
+    {
+     "id": "c",
+     "text": "Jonas fugiu da cidade"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+   "feedbackCorrect": "A pregação curta de Jonas leva a cidade inteira a crer em Deus.",
+   "feedbackWrong": {
+    "a": "Ela responde com fé, jejum e pano de saco.",
+    "c": "Desta vez Jonas entra na cidade e prega nela."
+   },
+   "hint": "Veja o primeiro verbo dos habitantes.",
+   "learningObjective": "Ligar a pregação de Jonas à fé de Nínive.",
+   "evidence": [
+    "Jonas 3:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jonas 3:10, Deus viu que eles se converteram do mau caminho e não fez o mal anunciado.",
+   "verseRef": "Jonas 3:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "como se converteram de seu mau caminho",
+   "feedbackCorrect": "Deus vê a conversão do mau caminho e não executa o mal anunciado.",
+   "feedbackWrong": {
+    "false": "Releia Jonas 3:10 sobre o que Deus viu e não fez."
+   },
+   "hint": "Veja o que Deus observa nas obras deles.",
+   "learningObjective": "Compreender a ligação entre conversão e o mal não feito.",
+   "evidence": [
+    "Jonas 3:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jonas 3:8, toque a palavra que marca a virada que o rei pede a cada um.",
+   "verseRef": "Jonas 3:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "converterá"
+    },
+    {
+     "id": "b",
+     "text": "clamarão"
+    },
+    {
+     "id": "c",
+     "text": "violência"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "cada um se converterá de seu mau caminho",
+   "feedbackCorrect": "Converter-se é virar do mau caminho e da violência das mãos.",
+   "feedbackWrong": {
+    "b": "Clamar é o grito a Deus; a virada de caminho vem depois.",
+    "c": "Violência é o que deve ser deixado, não a virada pedida."
+   },
+   "hint": "Procure o verbo da mudança de direção.",
+   "learningObjective": "Reconhecer a conversão pedida no decreto do rei.",
+   "evidence": [
+    "Jonas 3:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jonas 3:10 se relaciona com o decreto do rei em Jonas 3:8–9?",
+   "verseRef": "Jonas 3:9–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ignora a mudança e destrói a cidade"
+    },
+    {
+     "id": "b",
+     "text": "Deus vê a conversão e afasta o mal anunciado"
+    },
+    {
+     "id": "c",
+     "text": "O rei desiste antes de Deus responder"
+    },
+    {
+     "id": "d",
+     "text": "A cidade volta à violência no mesmo dia"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "como se converteram de seu mau caminho",
+   "feedbackCorrect": "O rei espera essa virada; Deus a vê e não faz o mal anunciado.",
+   "feedbackWrong": {
+    "a": "O texto diz o contrário, que Deus não fez o mal dito.",
+    "c": "O decreto é cumprido; Deus vê as obras da cidade.",
+    "d": "O texto registra conversão do mau caminho, não retorno a ele."
+   },
+   "hint": "Compare a esperança do rei com o que Deus vê.",
+   "learningObjective": "Relacionar o decreto do rei à resposta de Deus.",
+   "evidence": [
+    "Jonas 3:9–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Jonas 3:3–5?",
+   "verseRef": "Jonas 3:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jonas prega o prazo em Nínive"
+    },
+    {
+     "id": "b",
+     "text": "Os habitantes creem em Deus"
+    },
+    {
+     "id": "c",
+     "text": "A cidade proclama jejum e veste saco"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Jonas começou a entrar na cidade",
+   "feedbackCorrect": "Primeiro a pregação, depois a fé, e então jejum e pano de saco.",
+   "feedbackWrong": {
+    "default": "A pregação de Jonas vem antes da resposta da cidade."
+   },
+   "hint": "A resposta vem depois da pregação.",
+   "learningObjective": "Compreender a sequência pregação e resposta em Nínive.",
+   "evidence": [
+    "Jonas 3:4–5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jonas 3:1, pela quanta vez a palavra do Senhor veio a Jonas?",
+   "verseRef": "Jonas 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "primeira"
+    },
+    {
+     "id": "b",
+     "text": "segunda"
+    },
+    {
+     "id": "c",
+     "text": "terceira"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "veio a Jonas pela segunda vez",
+   "feedbackCorrect": "É a segunda vez; Deus chama de novo o profeta que fugiu.",
+   "feedbackWrong": {
+    "a": "A primeira chamada está em Jonas 1 e foi recusada.",
+    "c": "O texto fala da segunda vez, não de uma terceira."
+   },
+   "hint": "Compare com o chamado do capítulo um.",
+   "learningObjective": "Compreender que Deus chama Jonas outra vez.",
+   "evidence": [
+    "Jonas 3:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jonas 3:5 a Mateus 12:41?",
+   "verseRef": "Jonas 3:5",
+   "passageA": {
+    "ref": "Jonas 3:5"
+   },
+   "passageB": {
+    "ref": "Mateus 12:41"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Nínive se arrependeu ouvindo Jonas"
+    },
+    {
+     "id": "b",
+     "text": "Nínive rejeitou a pregação"
+    },
+    {
+     "id": "c",
+     "text": "Jonas ficou em Nínive"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+   "evidence": [
+    "Jonas 3:5",
+    "Mateus 12:41"
+   ],
+   "feedbackCorrect": "Jesus confirma que os ninivitas se arrependeram com Jonas.",
+   "feedbackWrong": {
+    "b": "Jesus diz que eles se arrependeram, não que rejeitaram.",
+    "c": "Jesus cita a resposta deles, não a moradia de Jonas."
+   },
+   "hint": "Veja o que Jesus diz dos ninivitas.",
+   "learningObjective": "Relacionar a fé de Nínive ao ensino de Jesus."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jonas 3, a resposta de Nínive ficou só em palavras sem mudança de caminho.",
+   "verseRef": "Jonas 3:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "como se converteram de seu mau caminho",
+   "feedbackCorrect": "Deus viu obras e conversão do mau caminho, não só palavras.",
+   "feedbackWrong": {
+    "true": "Releia Jonas 3:10 sobre as obras que Deus viu."
+   },
+   "hint": "Veja o que Deus observa nas obras deles.",
+   "learningObjective": "Interpretar a conversão de Nínive pelo que o texto mostra.",
+   "evidence": [
+    "Jonas 3:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jonas 3:10, toque o trecho que sustenta a mudança de Nínive.",
+   "verseRef": "Jonas 3:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus viu"
+    },
+    {
+     "id": "b",
+     "text": "se converteram"
+    },
+    {
+     "id": "c",
+     "text": "havia dito"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "como se converteram de seu mau caminho",
+   "feedbackCorrect": "Eles se converteram do mau caminho; Deus vê essa virada.",
+   "feedbackWrong": {
+    "a": "Isso mostra Deus observando, não a mudança deles.",
+    "c": "Isso lembra o anúncio anterior, não a virada da cidade."
+   },
+   "hint": "Procure o verbo da virada da cidade.",
+   "learningObjective": "Sustentar a conversão de Nínive com o texto.",
+   "evidence": [
+    "Jonas 3:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jonas 3:5–10 sustenta sobre a resposta de Nínive?",
+   "verseRef": "Jonas 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Houve só medo passageiro, sem obras"
+    },
+    {
+     "id": "b",
+     "text": "Houve fé acompanhada de jejum e virada"
+    },
+    {
+     "id": "c",
+     "text": "Houve obediência perfeita para sempre"
+    },
+    {
+     "id": "d",
+     "text": "Houve festa pela chegada do profeta"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum",
+   "feedbackCorrect": "Fé, jejum, pano de saco e conversão do mau caminho aparecem juntos.",
+   "feedbackWrong": {
+    "a": "Deus vê obras de conversão, não só medo passageiro.",
+    "c": "O texto não promete perfeição futura da cidade.",
+    "d": "A reação é luto e jejum, não festa pela visita."
+   },
+   "hint": "Junte fé, jejum e obras citadas no trecho.",
+   "learningObjective": "Escolher a leitura sustentada da resposta de Nínive.",
+   "evidence": [
+    "Jonas 3:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho de Nínive até o ensino de Jesus?",
+   "verseRef": "Jonas 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nínive crê e se converte ouvindo Jonas"
+    },
+    {
+     "id": "b",
+     "text": "Deus não executa o mal anunciado"
+    },
+    {
+     "id": "c",
+     "text": "Jesus apresenta Nínive como exemplo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+   "evidence": [
+    "Jonas 3:5",
+    "Jonas 3:10",
+    "Mateus 12:41"
+   ],
+   "feedbackCorrect": "A cidade se converte, Deus poupa, e Jesus a cita como exemplo.",
+   "feedbackWrong": {
+    "default": "Comece pela conversão; Jesus é o ponto de chegada."
+   },
+   "hint": "Siga de Jonas até as palavras de Jesus.",
+   "learningObjective": "Ver Nínive como exemplo citado pelo próprio Jesus."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jonas 3:5, em quem os habitantes de Nínive creram ao ouvir Jonas?",
+   "verseRef": "Jonas 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jonas"
+    },
+    {
+     "id": "b",
+     "text": "rei"
+    },
+    {
+     "id": "c",
+     "text": "Deus"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+   "feedbackCorrect": "Eles creram em Deus, não no profeta que pregava a mensagem.",
+   "feedbackWrong": {
+    "a": "Jonas prega, mas a fé da cidade se dirige a Deus.",
+    "b": "O rei só entra na cena no versículo seguinte."
+   },
+   "hint": "Veja o objeto da fé dos habitantes.",
+   "learningObjective": "Lembrar que a fé de Nínive se volta para Deus.",
+   "evidence": [
+    "Jonas 3:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jonas 3:10 a Lucas 11:32?",
+   "verseRef": "Jonas 3:10",
+   "passageA": {
+    "ref": "Jonas 3:10"
+   },
+   "passageB": {
+    "ref": "Lucas 11:32"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A cidade foi destruída"
+    },
+    {
+     "id": "b",
+     "text": "Arrependimento ao ouvir Jonas"
+    },
+    {
+     "id": "c",
+     "text": "Jonas amou a cidade"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "como se converteram de seu mau caminho",
+   "evidence": [
+    "Jonas 3:10",
+    "Lucas 11:32"
+   ],
+   "feedbackCorrect": "Jesus diz que eles se arrependeram com a pregação de Jonas.",
+   "feedbackWrong": {
+    "a": "Deus não fez o mal anunciado contra a cidade.",
+    "c": "Jonas se ira depois; Jesus destaca a resposta deles."
+   },
+   "hint": "Veja o verbo que Jesus usa para Nínive.",
+   "learningObjective": "Ligar a conversão de Nínive à citação de Jesus em Lucas."
+  }
+ ]
+}

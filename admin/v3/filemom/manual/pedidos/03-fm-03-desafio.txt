@@ -1,0 +1,105 @@
+Escreva a cena "fm-03-desafio" da trilha "filemom" (Filemom).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "filemom",
+  "title": "Filemom",
+  "description": "Graça que transforma relacionamentos — perdão e irmãos em Cristo.",
+  "realm": "novo-testamento"
+ },
+ "block": "Filemom",
+ "mission": {
+  "slug": "fm-03-desafio",
+  "title": "Desafio: Graça que reconcilia",
+  "type": "boss",
+  "intro": "Revise a intercessão de Paulo e a nova relação criada pelo evangelho.",
+  "hookRef": "Desafio: Graça que reconcilia",
+  "hookNote": "Revise a intercessão de Paulo e a nova relação criada pelo evangelho.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Filemom 1"
+ },
+ "v2": {
+  "passageRef": "Desafio: Graça que reconcilia",
+  "context": "Revise a intercessão de Paulo e a nova relação criada pelo evangelho.",
+  "keyword": "Graça",
+  "verseRefs": [
+   "Filemom 1:17–18"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "fm-01-intercessao",
+   "title": "Intercessão por Onésimo",
+   "centralInsight": "Paulo instrui a igreja em Filemom 1:1-16 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele…",
+   "ref": "Filemom 1:7–14"
+  },
+  {
+   "slug": "fm-02-reconciliacao",
+   "title": "Receber como a Paulo",
+   "centralInsight": "Paulo instrui a igreja em Filemom 1:17-25 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. El…",
+   "ref": "Filemom 1:12–19"
+  }
+ ],
+ "ranges": [
+  "Filemom 1:7–14",
+  "Filemom 1:12–19"
+ ],
+ "verses": [
+  {
+   "ref": "Filemom 1:7",
+   "text": "Pois, irmão, tive grande alegria e consolo pelo seu amor, pois o coração dos santos tem sido reanimado por meio de você."
+  },
+  {
+   "ref": "Filemom 1:8",
+   "text": "Por isso, embora eu tenha plena liberdade em Cristo para te mandar o que é apropriado,"
+  },
+  {
+   "ref": "Filemom 1:9",
+   "text": "Peço-te, portanto, em nome do amor, sendo eu Paulo, o velho, e agora até prisioneiro de Cristo Jesus;"
+  },
+  {
+   "ref": "Filemom 1:10",
+   "text": "Peço-te em favor de meu filho Onésimo, que gerei entre algemas."
+  },
+  {
+   "ref": "Filemom 1:11",
+   "text": "o qual antes era inútil para ti; mas agora é muito útil, tanto para ti quanto para mim. Eu to estou enviando de volta."
+  },
+  {
+   "ref": "Filemom 1:12",
+   "text": "Recebe-o de volta como se fosse a minha própria pessoa, quero dizer, meu coração."
+  },
+  {
+   "ref": "Filemom 1:13",
+   "text": "Eu gostaria de mantê-lo comigo, para que me auxiliasse nas algemas que carrego por causa do evangelho."
+  },
+  {
+   "ref": "Filemom 1:14",
+   "text": "Porém, não quis fazer nada sem o teu consentimento, para que a tua bondade não fosse por obrigação, mas de livre vontade."
+  },
+  {
+   "ref": "Filemom 1:15",
+   "text": "Pois pode ser que ele tenha se distanciado de ti temporariamente, para que o recebas para sempre."
+  },
+  {
+   "ref": "Filemom 1:16",
+   "text": "não mais como um escravo; antes, muito mais do que um escravo, como um irmão muito amado, especialmente por mim, e com ainda mais razão por ti, tanto na carne quanto no Senhor."
+  },
+  {
+   "ref": "Filemom 1:17",
+   "text": "Se, portanto, tu me consideras um companheiro, recebe-o, como se fosse eu."
+  },
+  {
+   "ref": "Filemom 1:18",
+   "text": "Se ele te causou algum dano ou te deve algo, coloca tudo em minha conta."
+  },
+  {
+   "ref": "Filemom 1:19",
+   "text": "Eu, Paulo, escrevi isto com a minha própria mão; eu pagarei — para não mencionar que também tu és devedor de ti mesmo para comigo."
+  }
+ ]
+}
+</cena>

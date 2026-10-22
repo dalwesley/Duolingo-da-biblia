@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Mateus 28:5–10",
+  "passages": [
+   {
+    "ref": "Mateus 28:1–20"
+   }
+  ],
+  "context": "Após o sábado, mulheres vão ao sepulcro e ouvem do anjo que Jesus ressuscitou. Com medo e alegria, correm a anunciar; Jesus as encontra e envia os discípulos à Galileia.",
+  "keyword": "Ressuscitou",
+  "keywordGloss": "Jesus não está no sepulcro; ele vive, como havia dito aos discípulos.",
+  "focusQuestion": "Como a certeza de que Jesus vive muda a sua missão nesta semana?",
+  "reflectionPrompts": [
+   "Ele não está aqui",
+   "Não tenham medo",
+   "Estou convosco todos os dias"
+  ],
+  "facts": [
+   {
+    "text": "Maria Madalena e a outra Maria foram ver o sepulcro ao raiar do dia.",
+    "evidenceRef": "Mateus 28:1",
+    "evidenceSpan": "Maria Madalena e a outra Maria foram ver o sepulcro"
+   },
+   {
+    "text": "Um anjo rolou a pedra e sentou-se sobre ela.",
+    "evidenceRef": "Mateus 28:2",
+    "evidenceSpan": "rolou a pedra da entrada e sentou-se sobre ela"
+   },
+   {
+    "text": "O anjo disse às mulheres para não terem medo.",
+    "evidenceRef": "Mateus 28:5",
+    "evidenceSpan": "Não tenham medo; pois sei que vocês buscam Jesus"
+   },
+   {
+    "text": "Jesus não estava no sepulcro, pois já ressuscitou.",
+    "evidenceRef": "Mateus 28:6",
+    "evidenceSpan": "Não está aqui, pois já ressuscitou, como ele havia dito"
+   },
+   {
+    "text": "Jesus prometeu estar com os discípulos todos os dias.",
+    "evidenceRef": "Mateus 28:20",
+    "evidenceSpan": "eis que estou convosco todos os dias"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "ressuscitou",
+    "gloss": "Jesus voltou à vida; o sepulcro vazio confirma o que ele havia dito."
+   },
+   {
+    "term": "discípulos",
+    "gloss": "Seguidores enviados a fazer discípulos de todas as nações."
+   },
+   {
+    "term": "autoridade",
+    "gloss": "Toda autoridade no céu e na terra foi dada a Jesus ressuscitado."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Mulheres chegam ao sepulcro vazio",
+    "evidenceRef": "Mateus 28:1–6"
+   },
+   {
+    "label": "Anúncio e encontro com Jesus vivo",
+    "evidenceRef": "Mateus 28:7–10"
+   },
+   {
+    "label": "Mentira dos guardas espalhada",
+    "evidenceRef": "Mateus 28:11–15"
+   },
+   {
+    "label": "Comissão e promessa na Galileia",
+    "evidenceRef": "Mateus 28:16–20"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "As mulheres saem com medo e alegria pois o anjo anunciou a ressurreição.",
+    "marker": "pois",
+    "evidenceRef": "Mateus 28:6"
+   },
+   {
+    "kind": "resultado",
+    "text": "Porque toda autoridade foi dada a Jesus, os discípulos devem ir e fazer discípulos.",
+    "marker": "Portanto",
+    "evidenceRef": "Mateus 28:19"
+   },
+   {
+    "kind": "contraste",
+    "text": "Ao verem Jesus, alguns adoraram, mas alguns hesitaram.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 28:17"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Coríntios 15:20",
+    "bridge": "Primícias dos que dormem"
+   },
+   {
+    "ref": "Salmos 16:10",
+    "bridge": "Não abandonado na morte"
+   },
+   {
+    "ref": "João 20:18",
+    "bridge": "Mulheres anunciam o Senhor"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Os discípulos roubaram o corpo de Jesus durante a noite.",
+    "why": "Essa é a versão comprada dos guardas; o anjo e o próprio Jesus anunciam a ressurreição (28:6,9-10,13)."
+   },
+   {
+    "text": "A ressurreição é só uma ideia no coração dos discípulos.",
+    "why": "O anjo mostra o lugar vazio e Jesus encontra as mulheres, que abraçam seus pés (28:6,9)."
+   },
+   {
+    "text": "A missão depende da força dos discípulos sozinhos.",
+    "why": "Jesus promete estar com eles todos os dias até o fim (28:20)."
+   }
+  ],
+  "centralInsight": "Ele vive",
+  "anchorQuestion": "O que o anjo disse às mulheres sobre Jesus no sepulcro?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 28:6, o anjo disse que Jesus não estava no sepulcro porque já ressuscitou.",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou, como ele havia dito",
+   "feedbackCorrect": "O sepulcro vazio é explicado pelo anjo com a ressurreição.",
+   "feedbackWrong": {
+    "false": "Releia o anúncio do anjo em Mateus 28:6."
+   },
+   "hint": "",
+   "learningObjective": "Observar o anúncio da ressurreição.",
+   "evidence": [
+    "Mateus 28:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 28:6, toque o que o anjo diz que Jesus já fez.",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "A ação anunciada explica por que o corpo não está lá.",
+   "feedbackWrong": {
+    "b": "O texto nega justamente que ele esteja lá.",
+    "c": "Isso lembra a promessa, não a ação cumprida."
+   },
+   "hint": "Procure o verbo cumprido no anúncio.",
+   "learningObjective": "Identificar a ressurreição anunciada.",
+   "evidence": [
+    "Mateus 28:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "já ressuscitou"
+    },
+    {
+     "id": "b",
+     "text": "estava"
+    },
+    {
+     "id": "c",
+     "text": "havia dito"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 28:1, quem foi ver o sepulcro ao raiar do primeiro dia?",
+   "verseRef": "Mateus 28:1",
+   "correctOptionId": "b",
+   "evidenceSpan": "Maria Madalena e a outra Maria foram ver o sepulcro",
+   "feedbackCorrect": "As primeiras a chegar são as duas Marias, após o sábado.",
+   "feedbackWrong": {
+    "a": "Os onze vão depois para a Galileia.",
+    "c": "Guardas já estavam lá e tremeram.",
+    "d": "Sacerdotes aparecem depois, com os guardas."
+   },
+   "hint": "Veja os nomes no primeiro versículo.",
+   "learningObjective": "Observar quem chega primeiro ao sepulcro.",
+   "evidence": [
+    "Mateus 28:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Os onze discípulos juntos"
+    },
+    {
+     "id": "b",
+     "text": "Maria Madalena e a outra Maria"
+    },
+    {
+     "id": "c",
+     "text": "Os guardas do sepulcro"
+    },
+    {
+     "id": "d",
+     "text": "Os principais sacerdotes"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 28:6 na ordem do texto.",
+   "verseRef": "Mateus 28:5–6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "Ausência, cumprimento da palavra e convite a ver formam o anúncio.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela ausência de Jesus no sepulcro."
+    }
+   },
+   "hint": "Comece pelo que o anjo nega.",
+   "learningObjective": "Reconhecer a sequência do anúncio.",
+   "evidence": [
+    "Mateus 28:5–6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Não está aqui, pois já ressuscitou"
+    },
+    {
+     "id": "b",
+     "text": "como ele havia dito"
+    },
+    {
+     "id": "c",
+     "text": "Venham ver onde ele estava"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 28:5, o que o anjo pede às mulheres logo ao falar com elas?",
+   "verseRef": "Mateus 28:5",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não tenham medo; pois sei que vocês buscam Jesus",
+   "feedbackCorrect": "Antes do anúncio, o anjo acalma as mulheres assustadas.",
+   "feedbackWrong": {
+    "b": "Silêncio seria o contrário de anunciar depois.",
+    "c": "Pressa vem na ordem de ir depressa, depois."
+   },
+   "hint": "Veja a primeira ordem do anjo.",
+   "learningObjective": "Lembrar a palavra de calma do anjo.",
+   "evidence": [
+    "Mateus 28:5"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "medo"
+    },
+    {
+     "id": "b",
+     "text": "silêncio"
+    },
+    {
+     "id": "c",
+     "text": "pressa"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 28:6 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "b",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "O túmulo vazio anuncia que a morte não tem a última palavra.",
+   "feedbackWrong": {
+    "a": "Ressuscitou mostra o contrário da derrota.",
+    "c": "Ele não está mais onde o puseram."
+   },
+   "hint": "Ouça a explicação do sepulcro vazio.",
+   "learningObjective": "Ligar o túmulo vazio a Jesus vivo.",
+   "evidence": [
+    "Mateus 28:6"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "A morte venceu Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Ele vive e venceu a morte"
+    },
+    {
+     "id": "c",
+     "text": "O sepulcro guardou Jesus"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 28:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O túmulo vazio lança a missão do Senhor vivo."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 28:19, o envio dos discípulos vem porque toda autoridade foi dada a Jesus.",
+   "verseRef": "Mateus 28:18–19",
+   "correctOptionId": "true",
+   "evidenceSpan": "Portanto, vão e façam discípulos de todas as nações",
+   "feedbackCorrect": "A autoridade de Jesus é a base do portanto que envia os discípulos.",
+   "feedbackWrong": {
+    "false": "Note a ligação entre autoridade e envio em 28:18 e 19."
+   },
+   "hint": "",
+   "learningObjective": "Compreender autoridade como base da missão.",
+   "evidence": [
+    "Mateus 28:18–19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 28:19, toque a palavra que liga a autoridade de Jesus ao envio.",
+   "verseRef": "Mateus 28:19",
+   "correctOptionId": "a",
+   "evidenceSpan": "Portanto, vão e façam discípulos",
+   "feedbackCorrect": "Essa palavra transforma a autoridade declarada em missão.",
+   "feedbackWrong": {
+    "b": "Isso é quem deve ser feito, não a ligação.",
+    "c": "Isso é o alcance, não a ligação lógica."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de resultado.",
+   "evidence": [
+    "Mateus 28:19"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Portanto"
+    },
+    {
+     "id": "b",
+     "text": "discípulos"
+    },
+    {
+     "id": "c",
+     "text": "nações"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como as mulheres reagem ao sair do sepulcro em Mateus 28?",
+   "verseRef": "Mateus 28:8",
+   "correctOptionId": "b",
+   "evidenceSpan": "tomadas de medo e grande alegria, correram a anunciar",
+   "feedbackCorrect": "Medo e alegria juntos as fazem correr para anunciar aos discípulos.",
+   "feedbackWrong": {
+    "a": "Elas correm para anunciar, não ignoram.",
+    "c": "Raiva não descreve a reação delas no texto.",
+    "d": "Elas anunciam depressa, não guardam silêncio."
+   },
+   "hint": "Veja os sentimentos e a ação delas.",
+   "learningObjective": "Compreender a reação das mulheres.",
+   "evidence": [
+    "Mateus 28:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Com indiferença total ao anúncio"
+    },
+    {
+     "id": "b",
+     "text": "Com medo e grande alegria, correndo"
+    },
+    {
+     "id": "c",
+     "text": "Com raiva dos discípulos incrédulos"
+    },
+    {
+     "id": "d",
+     "text": "Com silêncio absoluto por dias"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o anúncio em Mateus 28:5 a 8?",
+   "verseRef": "Mateus 28:5–6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não tenham medo; pois sei que vocês buscam Jesus",
+   "feedbackCorrect": "Calma, anúncio e corrida para contar formam o movimento.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O anúncio vem antes da corrida das mulheres."
+    }
+   },
+   "hint": "Comece pela calma pedida pelo anjo.",
+   "learningObjective": "Compreender calma, anúncio e missão.",
+   "evidence": [
+    "Mateus 28:5",
+    "Mateus 28:8"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O anjo acalma as mulheres assustadas"
+    },
+    {
+     "id": "b",
+     "text": "O anjo anuncia que Jesus ressuscitou"
+    },
+    {
+     "id": "c",
+     "text": "As mulheres correm a anunciar aos discípulos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 28:7, para onde o anjo diz que Jesus vai adiante dos discípulos?",
+   "verseRef": "Mateus 28:7",
+   "correctOptionId": "a",
+   "evidenceSpan": "vai adiante de vocês para a Galileia",
+   "feedbackCorrect": "O encontro com o Ressuscitado é marcado na Galileia.",
+   "feedbackWrong": {
+    "b": "Jerusalém é onde estão, não o destino marcado.",
+    "c": "Belém pertence ao nascimento, não a este encontro."
+   },
+   "hint": "Veja o destino no fim da fala do anjo.",
+   "learningObjective": "Compreender o destino do encontro.",
+   "evidence": [
+    "Mateus 28:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Galileia"
+    },
+    {
+     "id": "b",
+     "text": "Jerusalém"
+    },
+    {
+     "id": "c",
+     "text": "Belém"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 28:6 a 1 Coríntios 15:20?",
+   "verseRef": "Mateus 28:6",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não está aqui, pois já ressuscitou",
+   "feedbackCorrect": "Paulo chama o Cristo ressuscitado de primícias dos que dormem.",
+   "feedbackWrong": {
+    "b": "O sepulcro vazio nega que a morte o prenda.",
+    "c": "Paulo trata a ressurreição como fato inicial."
+   },
+   "hint": "Compare o anúncio com a confissão de Paulo.",
+   "learningObjective": "Relacionar a ressurreição em Mateus e Paulo.",
+   "evidence": [
+    "Mateus 28:6",
+    "1 Coríntios 15:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo ressuscitou de verdade"
+    },
+    {
+     "id": "b",
+     "text": "A morte prendeu Cristo"
+    },
+    {
+     "id": "c",
+     "text": "Ressurreição só como símbolo"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 28:6"
+   },
+   "passageB": {
+    "ref": "1 Coríntios 15:20"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 28:13, a versão de que os discípulos roubaram o corpo veio do anjo como verdade oficial.",
+   "verseRef": "Mateus 28:13",
+   "correctOptionId": "false",
+   "evidenceSpan": "Digam: Os discípulos dele vieram de noite e o roubaram",
+   "feedbackCorrect": "Essa versão foi instruída aos soldados pelos líderes, com dinheiro.",
+   "feedbackWrong": {
+    "true": "Releia quem entrega dinheiro e instruções em 28:12 e 13."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar a versão comprada dos guardas.",
+   "evidence": [
+    "Mateus 28:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 28:20, toque o trecho que sustenta a presença de Jesus na missão.",
+   "verseRef": "Mateus 28:20",
+   "correctOptionId": "b",
+   "evidenceSpan": "e eis que estou convosco todos os dias",
+   "feedbackCorrect": "A missão não é solitária, pois Jesus promete presença diária.",
+   "feedbackWrong": {
+    "a": "Isso é a duração, sem dizer quem está presente.",
+    "c": "Isso remete às ordens, não à presença prometida."
+   },
+   "hint": "Procure a promessa de companhia de Jesus.",
+   "learningObjective": "Sustentar a presença prometida.",
+   "evidence": [
+    "Mateus 28:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "todos os dias"
+    },
+    {
+     "id": "b",
+     "text": "estou convosco"
+    },
+    {
+     "id": "c",
+     "text": "vos ordenei"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 28:18 a 20 sustenta sobre a missão dos discípulos?",
+   "verseRef": "Mateus 28:18–19",
+   "correctOptionId": "a",
+   "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "Autoridade universal, alcance universal e presença prometida sustentam o envio.",
+   "feedbackWrong": {
+    "b": "A base declarada é a autoridade dele, não a coragem.",
+    "c": "O alcance é todas as nações, sem fechamento.",
+    "d": "Ensinar a observar tudo faz parte do envio."
+   },
+   "hint": "Junte autoridade, alcance e presença prometida.",
+   "learningObjective": "Escolher a leitura sustentada da missão.",
+   "evidence": [
+    "Mateus 28:18",
+    "Mateus 28:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Missão nasce da autoridade de Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Missão depende só da coragem humana"
+    },
+    {
+     "id": "c",
+     "text": "Missão é só para uma nação fechada"
+    },
+    {
+     "id": "d",
+     "text": "Missão dispensa ensinar o que Jesus mandou"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do capítulo final de Mateus?",
+   "verseRef": "Mateus 28:20",
+   "correctOptionId": "a",
+   "evidenceSpan": "e eis que estou convosco todos os dias",
+   "feedbackCorrect": "Ressurreição, autoridade e envio com presença formam o fecho de Mateus.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A promessa de presença fecha o evangelho."
+    }
+   },
+   "hint": "Termine com a presença prometida.",
+   "learningObjective": "Ver ressurreição, autoridade e envio.",
+   "evidence": [
+    "Mateus 28:6",
+    "Mateus 28:20"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus ressuscita e o sepulcro fica vazio"
+    },
+    {
+     "id": "b",
+     "text": "Jesus declara toda a autoridade dele"
+    },
+    {
+     "id": "c",
+     "text": "Jesus envia e promete estar presente"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 28:18, o que Jesus diz que lhe foi dada no céu e na terra?",
+   "verseRef": "Mateus 28:18",
+   "correctOptionId": "a",
+   "evidenceSpan": "Toda a autoridade me foi dada no céu e na terra",
+   "feedbackCorrect": "A autoridade total do Ressuscitado fundamenta o envio.",
+   "feedbackWrong": {
+    "b": "Missão é o que ele dá aos discípulos, não recebe.",
+    "c": "Glória é tema próximo, mas a palavra é outra."
+   },
+   "hint": "Veja o substantivo no começo da fala.",
+   "learningObjective": "Lembrar a base do envio.",
+   "evidence": [
+    "Mateus 28:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "autoridade"
+    },
+    {
+     "id": "b",
+     "text": "missão"
+    },
+    {
+     "id": "c",
+     "text": "glória"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 28:9 a João 20:18?",
+   "verseRef": "Mateus 28:9",
+   "correctOptionId": "a",
+   "evidenceSpan": "Jesus veio ao seu encontro",
+   "feedbackCorrect": "Nos dois relatos, mulheres encontram o Senhor vivo e anunciam.",
+   "feedbackWrong": {
+    "b": "Elas correm a anunciar aos discípulos.",
+    "c": "As mulheres são as primeiras mensageiras aqui."
+   },
+   "hint": "Compare quem encontra Jesus primeiro.",
+   "learningObjective": "Ligar as mulheres mensageiras da ressurreição.",
+   "evidence": [
+    "Mateus 28:9",
+    "João 20:18"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulheres encontram e anunciam"
+    },
+    {
+     "id": "b",
+     "text": "Mulheres guardam total silêncio"
+    },
+    {
+     "id": "c",
+     "text": "Discípulos veem primeiro sozinhos"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 28:9"
+   },
+   "passageB": {
+    "ref": "João 20:18"
+   }
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+Escreva a cena "so-03-nascimento" da trilha "soteriologia" (Soteriologia).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "soteriologia",
+  "title": "Soteriologia",
+  "description": "A salvação — eleição, regeneração, justificação e santificação.",
+  "realm": "teologia"
+ },
+ "block": "Salvação",
+ "mission": {
+  "slug": "so-03-nascimento",
+  "title": "Nascidos de novo",
+  "type": "lesson",
+  "intro": "O Espírito dá nova vida a quem crê em Jesus.",
+  "hookRef": "João 3:3",
+  "hookNote": "O Espírito dá nova vida a quem crê em Jesus.",
+  "centralInsight": "Esta missão apresenta nascidos de novo de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer melhor a De…",
+  "objective": "João 3:3"
+ },
+ "v2": {
+  "passageRef": "João 3:3",
+  "context": "O Espírito dá nova vida a quem crê em Jesus.",
+  "keyword": "Nascidos",
+  "verseRefs": [
+   "João 3:3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "João 3:1–6"
+ ],
+ "verses": [
+  {
+   "ref": "João 3:1",
+   "text": "Havia entre os fariseus um homem chamado Nicodemos, um dos principais líderes dos judeus."
+  },
+  {
+   "ref": "João 3:2",
+   "text": "Este, de noite, foi ter com Jesus e lhe disse: Rabi, sabemos que és Mestre vindo da parte de Deus; porque ninguém pode fazer estes sinais que tu fazes, se Deus não estiver com ele."
+  },
+  {
+   "ref": "João 3:3",
+   "text": "Jesus respondeu: \"Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.\""
+  },
+  {
+   "ref": "João 3:4",
+   "text": "Nicodemos perguntou: Como pode um homem nascer, sendo velho? Poderá ele, porventura, entrar novamente no ventre de sua mãe e nascer uma segunda vez?"
+  },
+  {
+   "ref": "João 3:5",
+   "text": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus."
+  },
+  {
+   "ref": "João 3:6",
+   "text": "O que é nascido da carne é carne; e o que é nascido do Espírito é espírito."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,908 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:28–32",
+  "passages": [
+   {
+    "ref": "Mateus 5:28–32"
+   },
+   {
+    "ref": "Mateus 5:43–48"
+   }
+  ],
+  "context": "Este desafio revisa as relações do Reino: coração guardado no olhar, palavra simples sem juramento, mal respondido sem vingança e amor que alcança inimigos como o Pai alcança maus e bons.",
+  "keyword": "Amor radical",
+  "keywordGloss": "Coração, palavra e resposta ao mal formados pelo Pai, até amar quem se opõe ao discípulo.",
+  "focusQuestion": "Seu coração, sua palavra e sua resposta ao mal refletem o Pai ou só a cultura ao redor?",
+  "reflectionPrompts": [
+   "Guardar o olhar e o coração",
+   "Falar sim com verdade",
+   "Amar quem se opõe"
+  ],
+  "facts": [
+   {
+    "text": "Olhar com intenção impura já adultera no coração.",
+    "evidenceRef": "Mateus 5:28",
+    "evidenceSpan": "já adulterou com ela em seu coração"
+   },
+   {
+    "text": "A palavra deve ser sim, sim e não, não.",
+    "evidenceRef": "Mateus 5:37",
+    "evidenceSpan": "Seja, portanto, a palavra de vocês"
+   },
+   {
+    "text": "A quem ferir a face direita, ofereça também a outra.",
+    "evidenceRef": "Mateus 5:39",
+    "evidenceSpan": "ofereça também a outra"
+   },
+   {
+    "text": "Jesus manda amar inimigos e orar por perseguidores.",
+    "evidenceRef": "Mateus 5:44",
+    "evidenceSpan": "Amem os seus inimigos, orem por aqueles que os perseguem"
+   },
+   {
+    "text": "O Pai faz o sol nascer sobre maus e bons.",
+    "evidenceRef": "Mateus 5:45",
+    "evidenceSpan": "ele faz nascer o seu sol sobre maus e bons"
+   },
+   {
+    "text": "Os discípulos devem ser perfeitos como o Pai celeste.",
+    "evidenceRef": "Mateus 5:48",
+    "evidenceSpan": "Sejam perfeitos, assim como é perfeito o seu Pai"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "coração",
+    "gloss": "Onde desejo, palavra e reação ao mal nascem antes de aparecer."
+   },
+   {
+    "term": "perfeitos",
+    "gloss": "Inteiros no amor como o Pai, que abençoa maus e bons sem exceção."
+   },
+   {
+    "term": "inimigos",
+    "gloss": "Quem se opõe ao discípulo e mesmo assim entra no alcance do amor."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Desejo tratado no coração",
+    "evidenceRef": "Mateus 5:28"
+   },
+   {
+    "label": "Palavra simples sem juramento",
+    "evidenceRef": "Mateus 5:37"
+   },
+   {
+    "label": "Mal respondido sem vingança",
+    "evidenceRef": "Mateus 5:39"
+   },
+   {
+    "label": "Amor completo como o do Pai",
+    "evidenceRef": "Mateus 5:48"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Amar só quem ama é comum; amar inimigos distingue os filhos do Pai.",
+    "marker": "somente",
+    "evidenceRef": "Mateus 5:46"
+   },
+   {
+    "kind": "propósito",
+    "text": "Amar os inimigos é para se tornarem filhos do Pai nos céus.",
+    "marker": "Para",
+    "evidenceRef": "Mateus 5:45"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Jó 31:1",
+    "bridge": "Aliança com os olhos"
+   },
+   {
+    "ref": "Romanos 12:20",
+    "bridge": "Bem ao inimigo faminto"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Arrancar o olho é ordem médica literal para resolver o desejo.",
+    "why": "É linguagem forte sobre cortar o que faz tropeçar, com foco no coração (5:28)."
+   },
+   {
+    "text": "Oferecer a outra face é aprovar o mal que o outro pratica.",
+    "why": "O ensino recusa a vingança pessoal; não chama o mal de bem nem cancela a justiça."
+   },
+   {
+    "text": "Sede perfeitos é nunca falhar, sem relação com amar pessoas difíceis.",
+    "why": "No contexto, o Pai perfeito é o que abençoa maus e bons (5:45–48)."
+   }
+  ],
+  "centralInsight": "Amar só os amigos não distingue o discípulo",
+  "anchorQuestion": "Que três áreas o bloco revisa do coração até o amor aos inimigos?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:28, olhar com intenção impura já é adultério no coração",
+   "verseRef": "Mateus 5:28",
+   "correctOptionId": "true",
+   "evidenceSpan": "já adulterou com ela em seu coração",
+   "feedbackCorrect": "O bloco começa onde ninguém vê: no desejo alimentado dentro da pessoa.",
+   "feedbackWrong": {
+    "false": "O fim de 5:28 localiza o adultério no coração."
+   },
+   "hint": "Veja onde Jesus localiza o adultério aqui.",
+   "learningObjective": "Revisar o adultério do coração no bloco.",
+   "evidence": [
+    "Mateus 5:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:28, toque onde o adultério já acontece segundo Jesus.",
+   "verseRef": "Mateus 5:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "em seu coração"
+    },
+    {
+     "id": "b",
+     "text": "uma mulher"
+    },
+    {
+     "id": "c",
+     "text": "Eu, porém"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em seu coração",
+   "feedbackCorrect": "Todas as relações do bloco nascem desse lugar escondido que Deus vê.",
+   "feedbackWrong": {
+    "b": "Ela é a pessoa olhada, não o lugar interior citado.",
+    "c": "Isso introduz a fala de Jesus, não localiza o pecado."
+   },
+   "hint": "Procure o lugar interior no fim do versículo.",
+   "learningObjective": "Revisar o coração como ponto de partida.",
+   "evidence": [
+    "Mateus 5:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:44, o que Jesus manda fazer pelos perseguidores?",
+   "verseRef": "Mateus 5:44",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ignorá-los para sempre em silêncio"
+    },
+    {
+     "id": "b",
+     "text": "Orar por eles diante de Deus"
+    },
+    {
+     "id": "c",
+     "text": "Expor cada um diante da multidão"
+    },
+    {
+     "id": "d",
+     "text": "Esperar que peçam perdão primeiro"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "orem por aqueles que os perseguem",
+   "feedbackCorrect": "Oração pelo perseguidor é o primeiro passo prático do amor radical.",
+   "feedbackWrong": {
+    "a": "Jesus manda amar e fazer bem, não virar as costas.",
+    "c": "Exposição pública não é o caminho ensinado em 5:44.",
+    "d": "A iniciativa é do discípulo, sem esperar o outro mudar."
+   },
+   "hint": "Veja o segundo verbo de Jesus no versículo.",
+   "learningObjective": "Revisar a oração pelos perseguidores.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:44 na ordem do texto.",
+   "verseRef": "Mateus 5:44",
+   "options": [
+    {
+     "id": "a",
+     "text": "Amem os seus inimigos"
+    },
+    {
+     "id": "b",
+     "text": "orem por aqueles que os perseguem"
+    },
+    {
+     "id": "c",
+     "text": "pratiquem o bem para os que os odeiam"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "Amar, orar e praticar o bem fecham o bloco com o chamado mais alto.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor aos inimigos citado primeiro."
+   },
+   "hint": "A oração fica no meio dos três verbos.",
+   "learningObjective": "Reconhecer a sequência final do bloco.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:29, que parte do corpo Jesus cita na primeira imagem radical?",
+   "verseRef": "Mateus 5:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "olho"
+    },
+    {
+     "id": "b",
+     "text": "ouvido"
+    },
+    {
+     "id": "c",
+     "text": "pé"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se o teu olho direito",
+   "feedbackCorrect": "O olho abre a imagem porque o ensino nasceu do olhar com intenção impura.",
+   "feedbackWrong": {
+    "b": "Ouvido não é citado nessa imagem forte de Jesus.",
+    "c": "Pé não aparece aqui; a mão vem no versículo seguinte."
+   },
+   "hint": "Volte ao sentido ligado ao olhar de 5:28.",
+   "learningObjective": "Revisar a imagem radical do bloco.",
+   "evidence": [
+    "Mateus 5:29"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:28 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:28",
+   "passageA": {
+    "ref": "Mateus 5:28"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Neste bloco, Jesus forma por dentro as relações: desejo, palavra, reação ao mal e amor."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Relações nascem no coração"
+    },
+    {
+     "id": "b",
+     "text": "Só atos externos importam"
+    },
+    {
+     "id": "c",
+     "text": "Coração nunca aparece fora"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em seu coração",
+   "feedbackCorrect": "Do olhar ao amor aos inimigos, tudo passa pelo coração tratado por Deus.",
+   "feedbackWrong": {
+    "b": "O bloco inteiro desmente essa redução ao externo.",
+    "c": "O coração aparece em palavra, generosidade e oração."
+   },
+   "hint": "Pense de onde saem palavra e reação ao mal.",
+   "learningObjective": "Ligar o bloco à formação do coração.",
+   "evidence": [
+    "Mateus 5:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:37, toque de quem vem o que passar do sim e do não.",
+   "verseRef": "Mateus 5:37",
+   "options": [
+    {
+     "id": "a",
+     "text": "do maligno"
+    },
+    {
+     "id": "b",
+     "text": "a palavra"
+    },
+    {
+     "id": "c",
+     "text": "de vocês"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o que passar disso vem do maligno",
+   "feedbackCorrect": "Palavra inchada para forçar confiança não nasce do caráter do Reino.",
+   "feedbackWrong": {
+    "b": "Isso deve ser simples, não é a origem do excesso.",
+    "c": "Isso é de quem fala, não a fonte do exagero citado."
+   },
+   "hint": "Procure a origem citada no fim do versículo.",
+   "learningObjective": "Revisar a palavra simples do bloco.",
+   "evidence": [
+    "Mateus 5:37"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:39 na ordem do texto.",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "não resistam ao perverso"
+    },
+    {
+     "id": "b",
+     "text": "se alguém lhe ferir a face direita"
+    },
+    {
+     "id": "c",
+     "text": "ofereça também a outra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "A resposta ao mal do bloco recusa a moeda da vingança pessoal.",
+   "feedbackWrong": {
+    "default": "Comece pelo princípio de não resistir com vingança."
+   },
+   "hint": "A outra face oferecida fecha o versículo.",
+   "learningObjective": "Reconhecer a não-retaliação revisada no bloco.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:37, uma palavra de sim e não dispensa juramentos de reforço no discípulo",
+   "verseRef": "Mateus 5:37",
+   "correctOptionId": "true",
+   "evidenceSpan": "Seja, portanto, a palavra de vocês",
+   "feedbackCorrect": "Caráter verdadeiro torna o juramento desnecessário na conversa diária.",
+   "feedbackWrong": {
+    "false": "A conclusão de Jesus é palavra simples: sim, sim; não, não."
+   },
+   "hint": "Veja a conclusão do ensino sobre juramentos.",
+   "learningObjective": "Compreender a palavra simples no bloco.",
+   "evidence": [
+    "Mateus 5:37"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:39, toque o que se oferece a quem fere a face direita.",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "também a outra"
+    },
+    {
+     "id": "b",
+     "text": "face direita"
+    },
+    {
+     "id": "c",
+     "text": "ao perverso"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "A outra face é a assinatura do bloco contra o ciclo da vingança.",
+   "feedbackWrong": {
+    "b": "Essa é a face atingida, não a resposta oferecida.",
+    "c": "Ele é o agressor, não o que o discípulo oferece."
+   },
+   "hint": "Procure o fim da frase, depois do golpe.",
+   "learningObjective": "Reconhecer a resposta ao mal no bloco.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "O que une olhar, palavra e reação ao mal neste bloco do Sermão?",
+   "verseRef": "Mateus 5:37–38",
+   "options": [
+    {
+     "id": "a",
+     "text": "São áreas onde o coração aparece nas relações"
+    },
+    {
+     "id": "b",
+     "text": "São assuntos sem relação com a vida interior"
+    },
+    {
+     "id": "c",
+     "text": "São regras só para momentos de culto público"
+    },
+    {
+     "id": "d",
+     "text": "São testes para excluir pessoas do Reino"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Seja, portanto, a palavra de vocês",
+   "feedbackCorrect": "Desejo, fala e vingança revelam o mesmo coração diante de Deus e das pessoas.",
+   "feedbackWrong": {
+    "b": "Jesus desce ao coração em cada um desses temas.",
+    "c": "São cenas de rua, casa e relação, não só de culto.",
+    "d": "O alvo é formar filhos do Pai, não excluir por prazer."
+   },
+   "hint": "Pergunte onde cada prática nasce dentro da pessoa.",
+   "learningObjective": "Compreender a unidade interior do bloco.",
+   "evidence": [
+    "Mateus 5:37–38"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o bloco das relações de Mateus 5:28 a 5:44?",
+   "verseRef": "Mateus 5:28–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "Coração guardado no olhar"
+    },
+    {
+     "id": "b",
+     "text": "Palavra simples e reação sem vingança"
+    },
+    {
+     "id": "c",
+     "text": "Amor que alcança inimigos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "em seu coração",
+   "feedbackCorrect": "O bloco sobe do desejo escondido ao amor mais visível e difícil.",
+   "feedbackWrong": {
+    "default": "O amor aos inimigos é o ponto mais alto e final."
+   },
+   "hint": "O último passo envolve quem se opõe ao discípulo.",
+   "learningObjective": "Compreender a progressão do bloco de relações.",
+   "evidence": [
+    "Mateus 5:28–29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:40, o que entregar além da túnica a quem demanda?",
+   "verseRef": "Mateus 5:40",
+   "options": [
+    {
+     "id": "a",
+     "text": "manto"
+    },
+    {
+     "id": "b",
+     "text": "sandália"
+    },
+    {
+     "id": "c",
+     "text": "cinto"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "entregue também o manto",
+   "feedbackCorrect": "A generosidade dobrada quebra disputas também na área dos bens.",
+   "feedbackWrong": {
+    "b": "Sandália não é citada nessa cena de Jesus.",
+    "c": "Cinto não aparece ao lado da túnica em 5:40."
+   },
+   "hint": "Pense na peça maior citada depois da túnica.",
+   "learningObjective": "Revisar a generosidade do bloco.",
+   "evidence": [
+    "Mateus 5:40"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:28 a Jó 31:1?",
+   "verseRef": "Mateus 5:28",
+   "passageA": {
+    "ref": "Mateus 5:28"
+   },
+   "passageB": {
+    "ref": "Jó 31:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Aliança com os olhos"
+    },
+    {
+     "id": "b",
+     "text": "Olhar sem limite algum"
+    },
+    {
+     "id": "c",
+     "text": "Desejo alimenta fidelidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "olhar para uma mulher com intenção impura",
+   "feedbackCorrect": "Jó fez aliança com os olhos; Jesus guarda o olhar a partir do coração.",
+   "feedbackWrong": {
+    "b": "Os dois textos põem limite santo sobre o olhar.",
+    "c": "Desejo impuro trai a aliança, não a fortalece."
+   },
+   "hint": "Veja o compromisso de Jó com o próprio olhar.",
+   "learningObjective": "Relacionar olhar guardado em Jesus e Jó.",
+   "evidence": [
+    "Mateus 5:28",
+    "Jó 31:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:41, toque a distância total que o discípulo anda com o outro.",
+   "verseRef": "Mateus 5:41",
+   "options": [
+    {
+     "id": "a",
+     "text": "duas"
+    },
+    {
+     "id": "b",
+     "text": "uma milha"
+    },
+    {
+     "id": "c",
+     "text": "ele"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vai com ele duas",
+   "feedbackCorrect": "A segunda milha mostra no caminho a generosidade que o bloco pede.",
+   "feedbackWrong": {
+    "b": "Uma é o trecho forçado; Jesus pede o dobro livre.",
+    "c": "Ele é quem força, não a distância caminhada."
+   },
+   "hint": "Procure o número no fim do versículo.",
+   "learningObjective": "Reconhecer a segunda milha no bloco.",
+   "evidence": [
+    "Mateus 5:41"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam palavra e reação em Mateus 5:37 a 5:40?",
+   "verseRef": "Mateus 5:37–38",
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra fica no sim e no não"
+    },
+    {
+     "id": "b",
+     "text": "Olho por olho é retomado por Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Manto é entregue sem disputa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Olho por olho, dente por dente",
+   "feedbackCorrect": "Da fala simples à recusa da vingança nos bens: um só coração íntegro.",
+   "feedbackWrong": {
+    "default": "Comece pela conclusão sobre a palavra em 5:37."
+   },
+   "hint": "O dito antigo aparece logo depois, em 5:38.",
+   "learningObjective": "Compreender a costura entre os ensinos do bloco.",
+   "evidence": [
+    "Mateus 5:37–38"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 5:43–48 sustenta que amar somente quem ama já distingue o discípulo dos demais",
+   "verseRef": "Mateus 5:46–47",
+   "correctOptionId": "false",
+   "evidenceSpan": "que recompensa vocês têm?",
+   "feedbackCorrect": "Jesus diz o contrário: isso até os publicanos fazem sem distinção.",
+   "feedbackWrong": {
+    "true": "A pergunta de 5:46 espera a resposta nenhuma distinção."
+   },
+   "hint": "Ouça as perguntas de Jesus em 5:46 e 5:47.",
+   "learningObjective": "Rejeitar o amor limitado como marca do Reino.",
+   "evidence": [
+    "Mateus 5:46–47"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:44, toque quem entra no alcance do amor por ordem de Jesus.",
+   "verseRef": "Mateus 5:44",
+   "options": [
+    {
+     "id": "a",
+     "text": "os seus inimigos"
+    },
+    {
+     "id": "b",
+     "text": "os perseguem"
+    },
+    {
+     "id": "c",
+     "text": "os odeiam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Amem os seus inimigos",
+   "feedbackCorrect": "O ponto mais alto do bloco é amar justamente quem se opõe ao discípulo.",
+   "feedbackWrong": {
+    "b": "Por eles se ora, na segunda parte do versículo.",
+    "c": "Para eles se faz o bem, no fim do versículo."
+   },
+   "hint": "Procure o primeiro grupo amado por ordem dele.",
+   "learningObjective": "Sustentar o alcance radical do amor.",
+   "evidence": [
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o bloco de Mateus 5:27–48 sustenta sobre as relações do Reino?",
+   "verseRef": "Mateus 5:44–45",
+   "options": [
+    {
+     "id": "a",
+     "text": "Valem só os atos que outras pessoas conseguem ver"
+    },
+    {
+     "id": "b",
+     "text": "Coração, palavra e amor refletem o Pai generoso"
+    },
+    {
+     "id": "c",
+     "text": "Vingança moderada continua sendo marca do discípulo"
+    },
+    {
+     "id": "d",
+     "text": "Perfeição é imagem sem relação com pessoas difíceis"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "filhos do seu Pai que está nos céus",
+   "feedbackCorrect": "Do desejo escondido ao inimigo amado, o retrato é de filhos parecidos com o Pai.",
+   "feedbackWrong": {
+    "a": "O coração invisível é o começo de todo o bloco.",
+    "c": "A outra face quebra a vingança também na versão moderada.",
+    "d": "Ser como o Pai é justamente amar maus e bons (5:45)."
+   },
+   "hint": "Junte o coração de 5:28 com o Pai de 5:45.",
+   "learningObjective": "Interpretar o bloco completo de relações.",
+   "evidence": [
+    "Mateus 5:44–45"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do amor completo no bloco?",
+   "verseRef": "Mateus 5:45",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pai abençoa maus e bons"
+    },
+    {
+     "id": "b",
+     "text": "Filhos amam os inimigos"
+    },
+    {
+     "id": "c",
+     "text": "Amor amadurece como o do Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ele faz nascer o seu sol sobre maus e bons",
+   "feedbackCorrect": "Modelo no Pai, prática nos filhos e maturidade no amor fecham o bloco.",
+   "feedbackWrong": {
+    "default": "Comece pelo modelo do Pai em 5:45."
+   },
+   "hint": "A imitação vem depois do modelo apresentado.",
+   "learningObjective": "Ver o bloco como caminho de maturidade no amor.",
+   "evidence": [
+    "Mateus 5:45",
+    "Lucas 6:35"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:48, como os discípulos devem ser, assim como o Pai?",
+   "verseRef": "Mateus 5:48",
+   "options": [
+    {
+     "id": "a",
+     "text": "perfeitos"
+    },
+    {
+     "id": "b",
+     "text": "famosos"
+    },
+    {
+     "id": "c",
+     "text": "temidos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Sejam perfeitos, assim como é perfeito o seu Pai",
+   "feedbackCorrect": "No contexto, perfeição é amor completo e sem exceção, como o do Pai.",
+   "feedbackWrong": {
+    "b": "Fama não é o alvo do chamado final do bloco.",
+    "c": "Medo das pessoas não resume o Pai que abençoa todos."
+   },
+   "hint": "É o adjetivo que descreve o Pai no versículo.",
+   "learningObjective": "Lembrar o chamado final do bloco de relações.",
+   "evidence": [
+    "Mateus 5:48"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:44 a Romanos 12:20?",
+   "verseRef": "Mateus 5:44",
+   "passageA": {
+    "ref": "Mateus 5:44"
+   },
+   "passageB": {
+    "ref": "Romanos 12:20"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Bem ao inimigo faminto"
+    },
+    {
+     "id": "b",
+     "text": "Fome como castigo merecido"
+    },
+    {
+     "id": "c",
+     "text": "Inimigo longe da mesa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pratiquem o bem para os que os odeiam",
+   "feedbackCorrect": "Paulo põe o amor ao inimigo na mesa: comida e bebida em vez de desprezo.",
+   "feedbackWrong": {
+    "b": "A fome vira oportunidade de bem, não de vingança.",
+    "c": "Os dois textos aproximam o inimigo com generosidade."
+   },
+   "hint": "Veja o que dar ao inimigo que tem fome.",
+   "learningObjective": "Ligar o bloco ao bem prático ao inimigo.",
+   "evidence": [
+    "Mateus 5:44",
+    "Romanos 12:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:45, toque os grupos alcançados juntos pelo sol do Pai.",
+   "verseRef": "Mateus 5:45",
+   "options": [
+    {
+     "id": "a",
+     "text": "maus e bons"
+    },
+    {
+     "id": "b",
+     "text": "seu sol"
+    },
+    {
+     "id": "c",
+     "text": "nos céus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sobre maus e bons e faz chover sobre justos e injustos",
+   "feedbackCorrect": "O espelho dos filhos é um Pai que não distribui sol por merecimento.",
+   "feedbackWrong": {
+    "b": "Isso é o que nasce sobre os grupos citados.",
+    "c": "Isso é onde o Pai está, não quem ele alcança."
+   },
+   "hint": "Procure o par de opostos no meio do versículo.",
+   "learningObjective": "Sustentar a generosidade ampla do Pai.",
+   "evidence": [
+    "Mateus 5:45"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio da não-retaliação na Bíblia?",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus manda não resistir ao perverso"
+    },
+    {
+     "id": "b",
+     "text": "Paulo proíbe pagar mal com mal"
+    },
+    {
+     "id": "c",
+     "text": "Pedro manda responder com bênção"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "não resistam ao perverso",
+   "feedbackCorrect": "Jesus ensina, Paulo resume e Pedro aplica: o mal se vence sem imitar o mal.",
+   "feedbackWrong": {
+    "default": "Comece pela palavra de Jesus no Sermão."
+   },
+   "hint": "A ordem segue Evangelho, carta a Roma e carta de Pedro.",
+   "learningObjective": "Ver a não-retaliação como fio do Novo Testamento.",
+   "evidence": [
+    "Mateus 5:39",
+    "Romanos 12:17",
+    "1 Pedro 3:9"
+   ]
+  }
+ ]
+}

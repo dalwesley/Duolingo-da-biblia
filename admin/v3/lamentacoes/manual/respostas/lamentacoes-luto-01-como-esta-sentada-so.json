@@ -1,0 +1,498 @@
+{
+ "study": {
+  "passageRef": "Lamentações 3:22–23",
+  "passages": [
+   { "ref": "Lamentações 3:19–26" },
+   { "ref": "Lamentações 1:1" }
+  ],
+  "context": "Jerusalém caiu e o povo vive o luto do exílio. No meio do livro, o poeta lembra a aflição, sente a alma abatida e, ainda assim, decide trazer à memória o que Deus é.",
+  "keyword": "Misericórdias",
+  "keywordGloss": "As misericórdias do Senhor não têm fim e se renovam a cada manhã, mesmo no luto.",
+  "focusQuestion": "No seu luto ou na sua espera, o que você precisa trazer à memória sobre Deus?",
+  "reflectionPrompts": [
+   "Lembrar sem negar a dor",
+   "Misericórdias a cada manhã",
+   "Esperar no Senhor"
+  ],
+  "facts": [
+   {
+    "text": "O poeta pede que Deus se lembre da sua aflição e do seu pranto.",
+    "evidenceRef": "Lamentações 3:19",
+    "evidenceSpan": "minha aflição e do meu pranto"
+   },
+   {
+    "text": "A alma do poeta se abate dentro dele ao lembrar da dor.",
+    "evidenceRef": "Lamentações 3:20",
+    "evidenceSpan": "se abate dentro de mim"
+   },
+   {
+    "text": "O povo não é consumido por causa das misericórdias do Senhor.",
+    "evidenceRef": "Lamentações 3:22",
+    "evidenceSpan": "não somos consumidos"
+   },
+   {
+    "text": "As misericórdias do Senhor se renovam a cada manhã.",
+    "evidenceRef": "Lamentações 3:23",
+    "evidenceSpan": "Renovam-se a cada manhã"
+   },
+   {
+    "text": "A cidade que outrora foi populosa está solitária.",
+    "evidenceRef": "Lamentações 1:1",
+    "evidenceSpan": "Como está solitária a cidade que outrora foi populosa"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "misericórdias",
+    "gloss": "Bondade fiel de Deus que não tem fim e impede que o povo seja consumido."
+   },
+   {
+    "term": "fidelidade",
+    "gloss": "O poeta declara que a fidelidade de Deus é grande, mesmo depois da queda."
+   },
+   {
+    "term": "solitária",
+    "gloss": "A cidade cheia de gente agora está só, como viúva sem quem a console."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Memória da aflição e do pranto",
+    "evidenceRef": "Lamentações 3:19"
+   },
+   {
+    "label": "A alma abatida que se lembra",
+    "evidenceRef": "Lamentações 3:20"
+   },
+   {
+    "label": "Esperança trazida à memória",
+    "evidenceRef": "Lamentações 3:21"
+   },
+   {
+    "label": "Misericórdias que se renovam",
+    "evidenceRef": "Lamentações 3:22"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Trazer à memória o que Deus fez é a causa de o poeta encontrar esperança.",
+    "marker": "por isso",
+    "evidenceRef": "Lamentações 3:21"
+   },
+   {
+    "kind": "causa",
+    "text": "As misericórdias do Senhor são a causa pela qual o povo não é consumido.",
+    "marker": "causa",
+    "evidenceRef": "Lamentações 3:22"
+   },
+   {
+    "kind": "contraste",
+    "text": "A cidade que outrora foi populosa agora está solitária e como viúva.",
+    "marker": "outrora",
+    "evidenceRef": "Lamentações 1:1"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 30:5",
+    "bridge": "Choro à noite, alegria de manhã"
+   },
+   {
+    "ref": "Lucas 19:41",
+    "bridge": "Jesus chora sobre Jerusalém"
+   },
+   {
+    "ref": "Salmos 42:11",
+    "bridge": "Alma abatida que espera"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A esperança do poeta significa que a dor já acabou e o luto passou.",
+    "why": "Ele ainda lembra a aflição e sente a alma abatida; a esperança nasce no meio da dor, não depois dela."
+   },
+   {
+    "text": "As misericórdias se renovam porque o povo mereceu uma nova chance.",
+    "why": "O texto atribui a renovação à fidelidade de Deus, não a um mérito do povo caído."
+   },
+   {
+    "text": "Lembrar do passado só aumenta o desespero e deve ser evitado.",
+    "why": "O poeta decide trazer à memória justamente o que sustenta a esperança no Senhor."
+   }
+  ],
+  "centralInsight": "No luto, a esperança se lembra da fidelidade de Deus",
+  "anchorQuestion": "Segundo Lamentações 3:22–23, por que o povo não é consumido?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Lamentações 1:1, a cidade que outrora foi populosa está solitária.",
+   "verseRef": "Lamentações 1:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "Como está solitária a cidade que outrora foi populosa",
+   "feedbackCorrect": "O livro abre com a cidade antes cheia de gente, agora solitária.",
+   "feedbackWrong": {
+    "false": "Releia a abertura: a cidade populosa está solitária, como viúva."
+   },
+   "hint": "Leia a primeira frase do versículo.",
+   "learningObjective": "Observar a solidão da cidade em Lamentações 1:1.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Lamentações 3:23, toque o que se renova a cada manhã.",
+   "verseRef": "Lamentações 3:23",
+   "options": [
+    { "id": "a", "text": "Renovam-se" },
+    { "id": "b", "text": "manhã" },
+    { "id": "c", "text": "fidelidade" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Renovam-se a cada manhã",
+   "feedbackCorrect": "As misericórdias se renovam a cada manhã: Deus recomeça com o seu povo.",
+   "feedbackWrong": {
+    "b": "A manhã é quando acontece; o que se renova vem antes.",
+    "c": "A fidelidade é declarada grande; o que se renova são as misericórdias."
+   },
+   "hint": "Veja o verbo no começo do versículo.",
+   "learningObjective": "Identificar o que se renova a cada manhã.",
+   "evidence": ["Lamentações 3:23"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Lamentações 3:22, por que o povo não é consumido?",
+   "verseRef": "Lamentações 3:22",
+   "options": [
+    { "id": "a", "text": "Porque o exército resistiu" },
+    { "id": "b", "text": "Porque as muralhas resistiram" },
+    { "id": "c", "text": "Porque há alimento guardado" },
+    { "id": "d", "text": "Pelas misericórdias do Senhor" }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "não somos consumidos",
+   "feedbackCorrect": "O povo permanece por causa das misericórdias do Senhor, que não têm fim.",
+   "feedbackWrong": {
+    "a": "O texto não fala de resistência militar; fala das misericórdias do Senhor.",
+    "b": "As muralhas caíram; quem sustenta o povo é a misericórdia de Deus.",
+    "c": "Nada de provisão humana é citado; a causa é a misericórdia do Senhor."
+   },
+   "hint": "Leia a primeira parte do versículo.",
+   "learningObjective": "Observar a causa de o povo não ser consumido.",
+   "evidence": ["Lamentações 3:22"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Lamentações 1:1 na ordem do texto.",
+   "verseRef": "Lamentações 1:1",
+   "options": [
+    { "id": "a", "text": "Como está solitária a cidade" },
+    { "id": "b", "text": "a que foi grande entre as nações" },
+    { "id": "c", "text": "agora está sujeita a trabalhos forçados" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Como está solitária a cidade",
+   "feedbackCorrect": "A sequência mostra a queda: solidão, perda da grandeza e trabalho forçado.",
+   "feedbackWrong": {
+    "default": "Comece pela cidade solitária; o trabalho forçado fecha o versículo."
+   },
+   "hint": "O versículo começa pela solidão da cidade.",
+   "learningObjective": "Reconhecer a sequência de Lamentações 1:1.",
+   "evidence": ["Lamentações 1:1"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Lamentações 3:22, o que as misericórdias impedem que aconteça ao povo?",
+   "verseRef": "Lamentações 3:22",
+   "options": [
+    { "id": "a", "text": "consumidos" },
+    { "id": "b", "text": "esquecidos" },
+    { "id": "c", "text": "abandonados" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não somos consumidos",
+   "feedbackCorrect": "As misericórdias impedem que o povo seja consumido por completo.",
+   "feedbackWrong": {
+    "b": "Deus não esquece; o texto diz que o povo não é consumido.",
+    "c": "O abandono não é afirmado; as misericórdias não têm fim."
+   },
+   "hint": "Pense no que as misericórdias evitam.",
+   "learningObjective": "Lembrar o efeito das misericórdias do Senhor.",
+   "evidence": ["Lamentações 3:22"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Lamentações 3:21 comunica que se liga a este contexto?",
+   "verseRef": "Lamentações 3:21",
+   "passageA": { "ref": "Lamentações 3:21" },
+   "passageB": { "ref": "Contexto", "text": "Mesmo abatido, o poeta decide lembrar o que Deus fez." },
+   "options": [
+    { "id": "a", "text": "Esquecer o passado por completo" },
+    { "id": "b", "text": "Lembrar e encontrar esperança" },
+    { "id": "c", "text": "Negar a dor que sente" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Isso trarei à memória",
+   "feedbackCorrect": "Trazer à memória o que Deus fez é o caminho para encontrar esperança.",
+   "feedbackWrong": {
+    "a": "O poeta faz o contrário: decide lembrar, e não esquecer.",
+    "c": "Ele não nega a dor; lembra dela e, ainda assim, espera."
+   },
+   "hint": "Veja o que o poeta decide trazer à memória.",
+   "learningObjective": "Ligar a memória do poeta à esperança no Senhor.",
+   "evidence": ["Lamentações 3:21"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Lamentações 3:19–20, lembrar da aflição faz o poeta perder toda a esperança.",
+   "verseRef": "Lamentações 3:19–20",
+   "correctOptionId": "false",
+   "evidenceSpan": "Minha alma, continuamente, se lembra disso",
+   "feedbackCorrect": "A lembrança abate a alma, mas o poeta ainda encontra esperança ao lembrar de Deus.",
+   "feedbackWrong": {
+    "true": "A alma se abate, mas em 3:21 o poeta diz que encontra esperança."
+   },
+   "hint": "Veja o que acontece logo depois, em 3:21.",
+   "learningObjective": "Compreender que a memória da dor não apaga a esperança.",
+   "evidence": ["Lamentações 3:19–20"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Lamentações 3:21, toque a palavra que liga a memória à esperança.",
+   "verseRef": "Lamentações 3:21",
+   "options": [
+    { "id": "a", "text": "Isso" },
+    { "id": "b", "text": "por isso" },
+    { "id": "c", "text": "memória" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "é por isso que encontro esperança",
+   "feedbackCorrect": "É por trazer à memória que o poeta encontra esperança no meio do luto.",
+   "feedbackWrong": {
+    "a": "\"Isso\" aponta o que será lembrado; a ligação com a esperança vem depois.",
+    "c": "A memória é o meio; a palavra que liga memória e esperança é outra."
+   },
+   "hint": "Procure a ligação entre lembrar e esperar.",
+   "learningObjective": "Reconhecer o marcador de causa em Lamentações 3:21.",
+   "evidence": ["Lamentações 3:21"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Lamentações 3:21 se liga a Lamentações 3:22?",
+   "verseRef": "Lamentações 3:21–22",
+   "options": [
+    { "id": "a", "text": "A lembrança apaga a dor do passado" },
+    { "id": "b", "text": "A memória abre caminho para confiar nas misericórdias" },
+    { "id": "c", "text": "A esperança dispensa lembrar de Deus" },
+    { "id": "d", "text": "A dor prova que Deus abandonou o povo" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "é por isso que encontro esperança",
+   "feedbackCorrect": "Lembrar o que Deus é conduz o poeta às misericórdias que não têm fim.",
+   "feedbackWrong": {
+    "a": "A dor continua lembrada; a memória não a apaga, mas sustenta a esperança.",
+    "c": "A esperança nasce justamente de lembrar quem Deus é.",
+    "d": "As misericórdias sem fim desmentem um abandono definitivo."
+   },
+   "hint": "Pense no que o poeta lembra em 3:22.",
+   "learningObjective": "Relacionar a memória de 3:21 com as misericórdias de 3:22.",
+   "evidence": ["Lamentações 3:21–22"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Lamentações 3:19–21?",
+   "verseRef": "Lamentações 3:20–21",
+   "options": [
+    { "id": "a", "text": "O poeta pede que Deus se lembre da aflição" },
+    { "id": "b", "text": "A alma se abate ao lembrar da dor" },
+    { "id": "c", "text": "Ele traz à memória e encontra esperança" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Isso trarei à memória",
+   "feedbackCorrect": "Primeiro a dor lembrada, depois a alma abatida, e então a esperança.",
+   "feedbackWrong": {
+    "default": "A esperança vem por último, depois da aflição e do abatimento."
+   },
+   "hint": "A esperança é o ponto de chegada.",
+   "learningObjective": "Compreender o movimento da dor à esperança.",
+   "evidence": ["Lamentações 3:19–21"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Lamentações 3:24, o que o Senhor é para a alma do poeta?",
+   "verseRef": "Lamentações 3:24",
+   "options": [
+    { "id": "a", "text": "porção" },
+    { "id": "b", "text": "herança" },
+    { "id": "c", "text": "refúgio" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Senhor é a minha porção",
+   "feedbackCorrect": "O Senhor é a porção do poeta: por isso, ele espera nele.",
+   "feedbackWrong": {
+    "b": "O texto usa outra palavra para dizer o que o Senhor é para ele.",
+    "c": "Refúgio é imagem de outros salmos; aqui o poeta fala de porção."
+   },
+   "hint": "Veja como o poeta chama o Senhor.",
+   "learningObjective": "Compreender o Senhor como porção de quem espera.",
+   "evidence": ["Lamentações 3:24"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Lamentações 3:23 a Salmos 30:5?",
+   "verseRef": "Lamentações 3:23",
+   "passageA": { "ref": "Lamentações 3:23" },
+   "passageB": { "ref": "Salmos 30:5" },
+   "options": [
+    { "id": "a", "text": "O choro dura para sempre" },
+    { "id": "b", "text": "A manhã traz nova misericórdia" },
+    { "id": "c", "text": "Deus esquece quem chora" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Renovam-se a cada manhã",
+   "feedbackCorrect": "Nos dois textos, a manhã marca um novo começo dado por Deus.",
+   "feedbackWrong": {
+    "a": "O salmo diz que o choro pode durar uma noite, não para sempre.",
+    "c": "Deus renova as misericórdias justamente sobre quem chora."
+   },
+   "hint": "Compare o que acontece a cada manhã.",
+   "learningObjective": "Relacionar a manhã de Lamentações com a manhã do Salmo 30.",
+   "evidence": ["Lamentações 3:23", "Salmos 30:5"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Lamentações 3:22–23, a esperança se apoia na fidelidade de Deus, e não no fim da dor.",
+   "verseRef": "Lamentações 3:22–23",
+   "correctOptionId": "true",
+   "evidenceSpan": "Renovam-se a cada manhã",
+   "feedbackCorrect": "A dor continua; a esperança se apoia na fidelidade de Deus a cada manhã.",
+   "feedbackWrong": {
+    "false": "O luto continua, mas as misericórdias se renovam e a fidelidade é grande."
+   },
+   "hint": "Veja em que a esperança se apoia.",
+   "learningObjective": "Interpretar a esperança como dom da fidelidade de Deus.",
+   "evidence": ["Lamentações 3:22–23"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Lamentações 3:22, toque o trecho que mostra por que o povo não é consumido.",
+   "verseRef": "Lamentações 3:22",
+   "options": [
+    { "id": "a", "text": "não somos consumidos" },
+    { "id": "b", "text": "misericórdias do Senhor" },
+    { "id": "c", "text": "não têm fim" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "As misericórdias do Senhor são a causa",
+   "feedbackCorrect": "A causa de o povo permanecer são as misericórdias do Senhor.",
+   "feedbackWrong": {
+    "a": "Isso é o efeito; a causa vem no começo do versículo.",
+    "c": "Isso diz que as misericórdias continuam; a causa é quem as dá."
+   },
+   "hint": "Procure a causa, não o efeito.",
+   "learningObjective": "Sustentar com o texto a causa da permanência do povo.",
+   "evidence": ["Lamentações 3:22"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Lamentações 3:22–23 sustenta no meio do luto?",
+   "verseRef": "Lamentações 3:22–23",
+   "options": [
+    { "id": "a", "text": "A dor prova que Deus perdeu o controle" },
+    { "id": "b", "text": "Deus abandonou o povo sem deixar esperança" },
+    { "id": "c", "text": "A fidelidade de Deus sustenta a esperança" },
+    { "id": "d", "text": "A esperança exige negar o sofrimento" }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "grande é a tua fidelidade",
+   "feedbackCorrect": "Grande é a fidelidade de Deus: é nela que a esperança se apoia no luto.",
+   "feedbackWrong": {
+    "a": "As misericórdias renovadas mostram um Deus presente, não ausente.",
+    "b": "Misericórdias sem fim desmentem um abandono sem esperança.",
+    "d": "O poeta lembra a dor com honestidade e, ainda assim, espera."
+   },
+   "hint": "Compare cada opção com o fim de 3:23.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta no luto.",
+   "evidence": ["Lamentações 3:22–23"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da manhã na história da Bíblia?",
+   "verseRef": "Lamentações 3:23",
+   "options": [
+    { "id": "a", "text": "A fidelidade de Deus se renova de manhã" },
+    { "id": "b", "text": "O choro da noite dá lugar à alegria" },
+    { "id": "c", "text": "Deus enxuga toda lágrima para sempre" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Renovam-se a cada manhã",
+   "feedbackCorrect": "A manhã renovada aponta para o dia em que Deus enxugará toda lágrima.",
+   "feedbackWrong": {
+    "default": "Siga a história: Lamentações, Salmos e, por fim, Apocalipse."
+   },
+   "hint": "Siga a ordem: luto, louvor e eternidade.",
+   "learningObjective": "Ver a manhã de Lamentações como começo de um fio bíblico.",
+   "evidence": ["Lamentações 3:23", "Salmos 30:5", "Apocalipse 21:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Lamentações 3:23, o que o poeta declara ser grande?",
+   "verseRef": "Lamentações 3:23",
+   "options": [
+    { "id": "a", "text": "fidelidade" },
+    { "id": "b", "text": "paciência" },
+    { "id": "c", "text": "bondade" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "grande é a tua fidelidade",
+   "feedbackCorrect": "Grande é a fidelidade de Deus: ela sustenta quem espera no luto.",
+   "feedbackWrong": {
+    "b": "O texto celebra outra qualidade de Deus neste versículo.",
+    "c": "A palavra do versículo nomeia o compromisso fiel de Deus."
+   },
+   "hint": "Veja a segunda parte do versículo.",
+   "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+   "evidence": ["Lamentações 3:23"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Lamentações 1:1 a Lucas 19:41?",
+   "verseRef": "Lamentações 1:1",
+   "passageA": { "ref": "Lamentações 1:1" },
+   "passageB": { "ref": "Lucas 19:41" },
+   "options": [
+    { "id": "a", "text": "Jesus chora sobre Jerusalém" },
+    { "id": "b", "text": "A cidade nunca mais chorará" },
+    { "id": "c", "text": "O luto não cabe na fé" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Como está solitária a cidade",
+   "feedbackCorrect": "Séculos depois, Jesus também chora ao ver Jerusalém: o luto continua ouvido.",
+   "feedbackWrong": {
+    "b": "Jesus chora sobre a cidade; o pranto não é negado.",
+    "c": "O próprio Jesus chora: o luto tem lugar diante de Deus."
+   },
+   "hint": "Veja o que Jesus faz ao ver a cidade.",
+   "learningObjective": "Ligar o luto de Jerusalém ao pranto de Jesus sobre a cidade.",
+   "evidence": ["Lamentações 1:1", "Lucas 19:41"]
+  }
+ ]
+}

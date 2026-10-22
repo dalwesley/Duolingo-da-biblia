@@ -1,0 +1,96 @@
+Escreva a cena "exo-02-moises" da trilha "exodo" (Êxodo).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "exodo",
+  "title": "Êxodo",
+  "description": "Do Egito à entrega da Lei — libertação e aliança.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Opressão no Egito",
+ "mission": {
+  "slug": "exo-02-moises",
+  "title": "O chamado de Moisés",
+  "type": "lesson",
+  "intro": "Deus chama Moisés na sarça ardente. Ele hesita, mas Deus promete estar com ele.",
+  "hookRef": "Êxodo 3:1–14",
+  "hookNote": "No deserto, Deus chama um fugitivo. A presença santa (sarça) e o Nome revelado sustentam a missão.",
+  "centralInsight": "Deus chama os hesitantes",
+  "objective": "Por que Deus revela o Nome antes de enviar Moisés?"
+ },
+ "v2": {
+  "passageRef": "Êxodo 3:1–14",
+  "context": "No deserto, Deus chama um fugitivo. A presença santa (sarça) e o Nome revelado sustentam a missão.",
+  "keyword": "EU SOU (YHWH)",
+  "verseRefs": [
+   "Êxodo 3:13–14"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Êxodo 3:1–14",
+  "Êxodo 3:13–14"
+ ],
+ "verses": [
+  {
+   "ref": "Êxodo 3:1",
+   "text": "E Moisés apascentava o rebanho de Jetro, seu sogro, sacerdote de Midiã; e, levando o rebanho para o lado ocidental do deserto, chegou ao monte de Deus, a Horebe."
+  },
+  {
+   "ref": "Êxodo 3:2",
+   "text": "E o Anjo do Senhor apareceu-lhe numa chama de fogo, no meio de uma sarça; Moisés olhou e viu que a sarça ardia no fogo, mas não se consumia."
+  },
+  {
+   "ref": "Êxodo 3:3",
+   "text": "E Moisés disse consigo mesmo: \"Agora vou me aproximar e ver esta grande maravilha; por que a sarça não se queima?\""
+  },
+  {
+   "ref": "Êxodo 3:4",
+   "text": "E, ao ver que Moisés se voltava para olhar, Deus, do meio da sarça, o chamou e disse: “Moisés! Moisés!” Ele respondeu: “Eis-me aqui!”"
+  },
+  {
+   "ref": "Êxodo 3:5",
+   "text": "E disse: Não te chegues para cá; tira as sandálias dos pés, pois o lugar em que estás é terra santa."
+  },
+  {
+   "ref": "Êxodo 3:6",
+   "text": "Disse ainda: Eu sou o Deus de seu pai, o Deus de Abraão, o Deus de Isaque e o Deus de Jacó. Então Moisés escondeu o rosto, pois temeu olhar para Deus."
+  },
+  {
+   "ref": "Êxodo 3:7",
+   "text": "Disse ainda o Senhor: Certamente, tenho visto a aflição do meu povo que está no Egito, e ouvi o seu clamor por causa dos seus exatores, pois conheço seu sofrimento."
+  },
+  {
+   "ref": "Êxodo 3:8",
+   "text": "Portanto, desci para livrá-lo das mãos dos egípcios e para fazê-lo subir daquela terra a uma terra boa e ampla, uma terra que mana leite e mel, ao lugar dos cananeus, dos heteus, dos amorreus, dos ferezeus, dos heveus e dos jebuseus."
+  },
+  {
+   "ref": "Êxodo 3:9",
+   "text": "Eis que o clamor dos filhos de Israel chegou até mim, e também vejo a opressão com que os egípcios os estão oprimindo."
+  },
+  {
+   "ref": "Êxodo 3:10",
+   "text": "Vem agora, e eu te enviarei ao Faraó, para que tires o meu povo, os filhos de Israel, do Egito."
+  },
+  {
+   "ref": "Êxodo 3:11",
+   "text": "Então, Moisés disse a Deus: Quem sou eu para ir até Faraó e tirar os filhos de Israel do Egito?"
+  },
+  {
+   "ref": "Êxodo 3:12",
+   "text": "E Deus lhe respondeu: Certamente estarei contigo; e este será o sinal de que eu te enviei: após haveres tirado este povo do Egito, servireis a Deus neste monte."
+  },
+  {
+   "ref": "Êxodo 3:13",
+   "text": "Então Moisés disse a Deus: Se eu for até os filhos de Israel e lhes disser: O Deus de seus pais me enviou a vocês; e eles me perguntarem: Qual é o seu nome? O que eu lhes direi?"
+  },
+  {
+   "ref": "Êxodo 3:14",
+   "text": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,708 @@
+{
+ "study": {
+  "passageRef": "Malaquias 3:1–4",
+  "passages": [
+   {
+    "ref": "Malaquias 3:1–4"
+   }
+  ],
+  "context": "O povo espera a vinda do Senhor ao templo. Malaquias anuncia que, antes dessa vinda, um mensageiro preparará o caminho, e que a chegada do Senhor purificará o seu povo.",
+  "keyword": "mensageiro",
+  "keywordGloss": "Quem é enviado antes do Senhor para preparar o caminho da sua vinda.",
+  "focusQuestion": "O que em sua vida precisa ser preparado antes de buscar mais de Deus?",
+  "reflectionPrompts": [
+   "Preparar o caminho",
+   "Uma vinda que purifica",
+   "Ofertas que agradam"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor envia seu mensageiro para preparar o caminho.",
+    "evidenceRef": "Malaquias 3:1",
+    "evidenceSpan": "eu envio o meu mensageiro"
+   },
+   {
+    "text": "O Senhor virá ao seu templo.",
+    "evidenceRef": "Malaquias 3:1",
+    "evidenceSpan": "virá ao seu templo o Senhor"
+   },
+   {
+    "text": "Quem vem é comparado ao fogo do ourives.",
+    "evidenceRef": "Malaquias 3:2",
+    "evidenceSpan": "ele é como o fogo do ourives"
+   },
+   {
+    "text": "Os filhos de Levi serão purificados.",
+    "evidenceRef": "Malaquias 3:3",
+    "evidenceSpan": "purificará os filhos de Levi"
+   },
+   {
+    "text": "A oferta de Judá e Jerusalém agradará ao Senhor.",
+    "evidenceRef": "Malaquias 3:4",
+    "evidenceSpan": "a oferta de Judá e de Jerusalém será agradável ao Senhor"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "mensageiro",
+    "gloss": "Quem vai adiante do Senhor preparando o caminho para a sua vinda."
+   },
+   {
+    "term": "fogo do ourives",
+    "gloss": "Imagem do fogo que limpa o metal, usada para a purificação do povo."
+   },
+   {
+    "term": "filhos de Levi",
+    "gloss": "Os responsáveis pelo serviço no templo, citados como alvo da purificação."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Um mensageiro prepara o caminho",
+    "evidenceRef": "Malaquias 3:1"
+   },
+   {
+    "label": "O Senhor vem ao templo",
+    "evidenceRef": "Malaquias 3:1"
+   },
+   {
+    "label": "Sua vinda purifica como fogo",
+    "evidenceRef": "Malaquias 3:2–3"
+   },
+   {
+    "label": "Ofertas justas voltam a agradar",
+    "evidenceRef": "Malaquias 3:4"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "propósito",
+    "text": "O mensageiro é enviado para preparar o caminho diante do Senhor.",
+    "marker": "preparará",
+    "evidenceRef": "Malaquias 3:1"
+   },
+   {
+    "kind": "sequência",
+    "text": "Purificados, os filhos de Levi então trarão ofertas justas ao Senhor.",
+    "marker": "então",
+    "evidenceRef": "Malaquias 3:3"
+   },
+   {
+    "kind": "contraste",
+    "text": "Após o anúncio da vinda, o texto pergunta quem poderá suportá-la.",
+    "marker": "Mas",
+    "evidenceRef": "Malaquias 3:2"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 11:10",
+    "bridge": "Jesus cita o mensageiro prometido"
+   },
+   {
+    "ref": "Isaías 40:3",
+    "bridge": "Preparar o caminho do Senhor"
+   },
+   {
+    "ref": "Zacarias 13:9",
+    "bridge": "Deus purifica como prata"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O mensageiro anunciado é o próprio Senhor que vem ao templo.",
+    "why": "O texto distingue quem é enviado antes daquele que virá depois."
+   },
+   {
+    "text": "A vinda do Senhor será leve e confortável para todos.",
+    "why": "O texto pergunta quem poderá suportá-la e a compara a fogo que limpa."
+   },
+   {
+    "text": "A purificação é só castigo, sem restauração do culto.",
+    "why": "O fim do processo são ofertas justas e agradáveis ao Senhor."
+   }
+  ],
+  "centralInsight": "Antes de vir ao templo, o Senhor envia quem prepare o caminho",
+  "anchorQuestion": "Quem o Senhor envia antes de vir ao seu templo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Malaquias 3:1, o Senhor vem ao templo antes de enviar qualquer mensageiro.",
+   "verseRef": "Malaquias 3:1",
+   "correctOptionId": "false",
+   "evidenceSpan": "eu envio o meu mensageiro",
+   "feedbackCorrect": "Primeiro o mensageiro é enviado; a vinda ao templo é anunciada depois.",
+   "feedbackWrong": {
+    "true": "Releia a ordem do versículo, que começa pelo envio."
+   },
+   "hint": "Veja o que acontece primeiro no versículo.",
+   "learningObjective": "Observar a ordem entre o envio e a vinda anunciada.",
+   "evidence": [
+    "Malaquias 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Malaquias 3:1, toque quem o Senhor diz que envia.",
+   "verseRef": "Malaquias 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "caminho"
+    },
+    {
+     "id": "b",
+     "text": "mensageiro"
+    },
+    {
+     "id": "c",
+     "text": "templo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "eu envio o meu mensageiro",
+   "feedbackCorrect": "O enviado vai adiante, preparando tudo para a vinda do Senhor.",
+   "feedbackWrong": {
+    "a": "Isso é o que será preparado, não quem é enviado.",
+    "c": "Isso é o lugar da vinda, não o enviado."
+   },
+   "hint": "Procure o objeto direto do verbo enviar.",
+   "learningObjective": "Identificar quem o Senhor envia em Malaquias 3:1.",
+   "evidence": [
+    "Malaquias 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Malaquias 3:1, a quem o povo busca e deseja?",
+   "verseRef": "Malaquias 3:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Um rei guerreiro de Judá"
+    },
+    {
+     "id": "b",
+     "text": "O Senhor que vem ao templo"
+    },
+    {
+     "id": "c",
+     "text": "Um sacerdote de outro povo"
+    },
+    {
+     "id": "d",
+     "text": "O profeta que escreveu o livro"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "virá ao seu templo o Senhor, a quem vós buscais",
+   "feedbackCorrect": "A expectativa do povo é pela vinda do próprio Senhor ao templo.",
+   "feedbackWrong": {
+    "a": "O texto fala do Senhor vindo, não de um rei de Judá.",
+    "c": "Nenhum sacerdote estrangeiro é citado neste anúncio.",
+    "d": "O profeta anuncia a vinda; ele não é o esperado."
+   },
+   "hint": "Leia os títulos dados a quem vem no versículo.",
+   "learningObjective": "Observar quem o povo espera em Malaquias 3:1.",
+   "evidence": [
+    "Malaquias 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Malaquias 3:1 na ordem do texto.",
+   "verseRef": "Malaquias 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que eu envio o meu mensageiro"
+    },
+    {
+     "id": "b",
+     "text": "que preparará o caminho diante de mim"
+    },
+    {
+     "id": "c",
+     "text": "virá ao seu templo o Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Eis que eu envio o meu mensageiro",
+   "feedbackCorrect": "O envio vem primeiro, a preparação em seguida e a vinda por último.",
+   "feedbackWrong": {
+    "default": "Comece pelo envio; a vinda ao templo fecha essa parte."
+   },
+   "hint": "O versículo começa com um envio.",
+   "learningObjective": "Reconhecer a sequência de Malaquias 3:1.",
+   "evidence": [
+    "Malaquias 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Malaquias 3:1, o que o mensageiro preparará diante do Senhor?",
+   "verseRef": "Malaquias 3:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "templo"
+    },
+    {
+     "id": "b",
+     "text": "caminho"
+    },
+    {
+     "id": "c",
+     "text": "mensageiro"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "que preparará o caminho diante de mim",
+   "feedbackCorrect": "A tarefa do enviado é deixar tudo pronto para quem vem depois.",
+   "feedbackWrong": {
+    "a": "Esse é o lugar da vinda, não o que será preparado.",
+    "c": "Esse é quem prepara, não o que ele prepara."
+   },
+   "hint": "Leia a tarefa dada ao enviado.",
+   "learningObjective": "Lembrar a tarefa do mensageiro em Malaquias 3:1.",
+   "evidence": [
+    "Malaquias 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+   "verseRef": "Malaquias 3:1–2",
+   "passageA": {
+    "ref": "Malaquias 3:1"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O povo espera a vinda do Senhor ao templo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Um mensageiro vem antes"
+    },
+    {
+     "id": "b",
+     "text": "O templo será abandonado"
+    },
+    {
+     "id": "c",
+     "text": "O povo dispensa preparo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "eu envio o meu mensageiro",
+   "feedbackCorrect": "A vinda esperada é precedida por alguém que prepara tudo.",
+   "feedbackWrong": {
+    "b": "O anúncio é de vinda ao templo, não de abandono dele.",
+    "c": "O preparo é justamente o centro do anúncio."
+   },
+   "hint": "Veja o que acontece antes da vinda.",
+   "learningObjective": "Ligar Malaquias 3:1 à preparação que antecede a vinda.",
+   "evidence": [
+    "Malaquias 3:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Malaquias 3:3, depois de purificar os filhos de Levi, eles trarão ofertas justas ao Senhor.",
+   "verseRef": "Malaquias 3:3",
+   "correctOptionId": "true",
+   "evidenceSpan": "então eles trarão ao SENHOR ofertas justas",
+   "feedbackCorrect": "A purificação vem antes, e o resultado são ofertas justas.",
+   "feedbackWrong": {
+    "false": "Releia a ordem do versículo, do refino às ofertas."
+   },
+   "hint": "Siga a ordem das ações no versículo.",
+   "learningObjective": "Compreender a sequência entre purificação e ofertas justas.",
+   "evidence": [
+    "Malaquias 3:3"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Malaquias 3:3, toque a palavra que marca o resultado da purificação.",
+   "verseRef": "Malaquias 3:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "prata"
+    },
+    {
+     "id": "b",
+     "text": "Levi"
+    },
+    {
+     "id": "c",
+     "text": "então"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "então eles trarão ao SENHOR ofertas justas",
+   "feedbackCorrect": "Essa palavrinha liga o refino ao novo modo de oferecer.",
+   "feedbackWrong": {
+    "a": "Esse metal ilustra o processo, não marca o resultado.",
+    "b": "Esse nome indica quem será purificado."
+   },
+   "hint": "Procure a palavra logo antes das ofertas.",
+   "learningObjective": "Reconhecer o marcador de resultado em Malaquias 3:3.",
+   "evidence": [
+    "Malaquias 3:3"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Malaquias 3:2 se relaciona com Malaquias 3:1?",
+   "verseRef": "Malaquias 3:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cancela a vinda anunciada antes"
+    },
+    {
+     "id": "b",
+     "text": "Mostra que a vinda desejada também purifica"
+    },
+    {
+     "id": "c",
+     "text": "Troca o templo por outro lugar"
+    },
+    {
+     "id": "d",
+     "text": "Adia a vinda para outro povo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "quem poderá suportar o dia da sua vinda?",
+   "feedbackCorrect": "A vinda tão desejada chega com força para limpar o seu povo.",
+   "feedbackWrong": {
+    "a": "A vinda continua anunciada; o tom é que fica mais sério.",
+    "c": "O templo segue no centro; nada muda de lugar aqui.",
+    "d": "O povo continua sendo o alvo da vinda anunciada."
+   },
+   "hint": "Compare o desejo do verso 1 com a pergunta do verso 2.",
+   "learningObjective": "Relacionar o anúncio da vinda com o aviso sobre ela.",
+   "evidence": [
+    "Malaquias 3:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o anúncio em Malaquias 3:1–3?",
+   "verseRef": "Malaquias 3:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Um enviado prepara o caminho"
+    },
+    {
+     "id": "b",
+     "text": "O Senhor vem ao seu templo"
+    },
+    {
+     "id": "c",
+     "text": "Seu povo é purificado como metal"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "eu envio o meu mensageiro",
+   "feedbackCorrect": "Preparo, vinda e purificação formam um só movimento no anúncio.",
+   "feedbackWrong": {
+    "default": "Comece pelo preparo; a purificação vem com a chegada."
+   },
+   "hint": "O preparo vem antes da chegada.",
+   "learningObjective": "Compreender o avanço do anúncio em Malaquias 3.",
+   "evidence": [
+    "Malaquias 3:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Malaquias 3:3, o que o Senhor fará com os filhos de Levi?",
+   "verseRef": "Malaquias 3:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "esquecerá"
+    },
+    {
+     "id": "b",
+     "text": "expulsará"
+    },
+    {
+     "id": "c",
+     "text": "purificará"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "purificará os filhos de Levi",
+   "feedbackCorrect": "O alvo não é descartar essas pessoas, mas limpá-las por dentro.",
+   "feedbackWrong": {
+    "a": "O texto anuncia ação cuidadosa, não esquecimento.",
+    "b": "Depois disso eles oferecem; não são expulsos do serviço."
+   },
+   "hint": "Leia o verbo ligado aos levitas.",
+   "learningObjective": "Compreender o que a vinda do Senhor faz com os levitas.",
+   "evidence": [
+    "Malaquias 3:3"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Malaquias 3:1 a Mateus 11:10?",
+   "verseRef": "Malaquias 3:1",
+   "passageA": {
+    "ref": "Malaquias 3:1"
+   },
+   "passageB": {
+    "ref": "Mateus 11:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus descarta o profeta"
+    },
+    {
+     "id": "b",
+     "text": "Jesus cita o mensageiro prometido"
+    },
+    {
+     "id": "c",
+     "text": "O caminho dispensa preparo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "eu envio o meu mensageiro",
+   "feedbackCorrect": "Jesus usa as palavras de Malaquias ao falar de João Batista.",
+   "feedbackWrong": {
+    "a": "Jesus cita o texto com respeito, ao falar de João.",
+    "c": "Nos dois textos, alguém vai adiante preparando tudo."
+   },
+   "hint": "Veja quem Jesus está descrevendo em Mateus.",
+   "learningObjective": "Relacionar a promessa de Malaquias com as palavras de Jesus.",
+   "evidence": [
+    "Malaquias 3:1",
+    "Mateus 11:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Malaquias 3:2 apresenta a vinda do Senhor como algo fácil de suportar para todos.",
+   "verseRef": "Malaquias 3:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "quem poderá suportar o dia da sua vinda?",
+   "feedbackCorrect": "A pergunta do texto mostra uma vinda séria, que expõe e limpa.",
+   "feedbackWrong": {
+    "true": "Releia a pergunta que abre o versículo com atenção."
+   },
+   "hint": "Preste atenção à pergunta inicial do versículo.",
+   "learningObjective": "Interpretar a seriedade da vinda anunciada em Malaquias 3:2.",
+   "evidence": [
+    "Malaquias 3:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Malaquias 3:2, toque a palavra que dá nome à imagem de limpeza profunda.",
+   "verseRef": "Malaquias 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "fogo"
+    },
+    {
+     "id": "b",
+     "text": "dia"
+    },
+    {
+     "id": "c",
+     "text": "ourives"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ele é como o fogo do ourives",
+   "feedbackCorrect": "Essa imagem mostra uma presença que limpa por dentro, como calor no metal.",
+   "feedbackWrong": {
+    "b": "Esse termo marca o tempo da vinda, não a imagem pedida.",
+    "c": "Esse é o artesão da comparação, não a imagem central."
+   },
+   "hint": "Procure o elemento comparado a quem vem.",
+   "learningObjective": "Sustentar com o texto a imagem da purificação.",
+   "evidence": [
+    "Malaquias 3:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Malaquias 3:2–3 sustenta sobre a vinda do Senhor?",
+   "verseRef": "Malaquias 3:2–3",
+   "options": [
+    {
+     "id": "a",
+     "text": "A vinda dispensa qualquer mudança"
+    },
+    {
+     "id": "b",
+     "text": "Deus purifica para abandonar seu povo"
+    },
+    {
+     "id": "c",
+     "text": "A vinda purifica para restaurar o culto"
+    },
+    {
+     "id": "d",
+     "text": "Só importa o templo, não as pessoas"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "purificará os filhos de Levi",
+   "feedbackCorrect": "A limpeza das pessoas leva a ofertas justas e agradáveis.",
+   "feedbackWrong": {
+    "a": "As imagens de limpeza mostram mudança real e profunda.",
+    "b": "O resultado é um culto renovado, não abandono do povo.",
+    "d": "O texto começa pelas pessoas que servem no templo."
+   },
+   "hint": "Siga até o resultado final do processo descrito.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre a purificação.",
+   "evidence": [
+    "Malaquias 3:2–3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do mensageiro na Bíblia?",
+   "verseRef": "Malaquias 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Malaquias anuncia um mensageiro"
+    },
+    {
+     "id": "b",
+     "text": "Jesus aponta João nessa promessa"
+    },
+    {
+     "id": "c",
+     "text": "João prepara o povo para o Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "que preparará o caminho diante de mim",
+   "feedbackCorrect": "A promessa antiga é citada por Jesus e ligada ao ministério de João.",
+   "feedbackWrong": {
+    "default": "Siga a ordem, da promessa antiga até João Batista."
+   },
+   "hint": "Comece pela promessa mais antiga.",
+   "learningObjective": "Ver o mensageiro de Malaquias ligado a João Batista no NT.",
+   "evidence": [
+    "Malaquias 3:1",
+    "Mateus 11:10",
+    "Lucas 1:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Malaquias 3:3, como serão as ofertas trazidas após a purificação?",
+   "verseRef": "Malaquias 3:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "antigas"
+    },
+    {
+     "id": "b",
+     "text": "justas"
+    },
+    {
+     "id": "c",
+     "text": "grandes"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "eles trarão ao SENHOR ofertas justas",
+   "feedbackCorrect": "Pessoas purificadas passam a oferecer do jeito certo ao Senhor.",
+   "feedbackWrong": {
+    "a": "O passado é lembrado no verso 4, não descreve estas ofertas.",
+    "c": "O texto valoriza o modo de oferecer, não o tamanho."
+   },
+   "hint": "Leia o adjetivo no fim do versículo.",
+   "learningObjective": "Lembrar o fruto da purificação nas ofertas ao Senhor.",
+   "evidence": [
+    "Malaquias 3:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Malaquias 3:1 a Lucas 1:17?",
+   "verseRef": "Malaquias 3:1",
+   "passageA": {
+    "ref": "Malaquias 3:1"
+   },
+   "passageB": {
+    "ref": "Lucas 1:17"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "João prepara o povo"
+    },
+    {
+     "id": "b",
+     "text": "Elias dispensa João"
+    },
+    {
+     "id": "c",
+     "text": "O povo se prepara sozinho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que preparará o caminho diante de mim",
+   "feedbackCorrect": "Lucas descreve João indo adiante para deixar um povo preparado.",
+   "feedbackWrong": {
+    "b": "Lucas liga João ao espírito e poder de Elias.",
+    "c": "Nos dois textos, Deus envia quem prepara o povo."
+   },
+   "hint": "Veja a missão dada a João em Lucas.",
+   "learningObjective": "Ligar o mensageiro de Malaquias a João Batista em Lucas.",
+   "evidence": [
+    "Malaquias 3:1",
+    "Lucas 1:17"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4832 @@
+[
+  {
+    "id": "joel-sem-jl-03-gafanhoto-01",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 1:4, o que o gafanhoto deixou foi comido pelo gafanhoto migrador.",
+    "prompt": "Em Joel 1:4, o que o gafanhoto deixou foi comido pelo gafanhoto migrador.",
+    "cue": "Em Joel 1:4, o que o gafanhoto deixou foi comido pelo gafanhoto migrador.",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o que o gafanhoto deixou, comeu o gafanhoto migrador",
+    "feedbackCorrect": "A cadeia segue do gafanhoto para o migrador, sem interrupção.",
+    "feedbackWrong": {
+      "false": "Releia a sequência do meio de Joel 1:4 com atenção."
+    },
+    "hint": "Siga a cadeia a partir do segundo devorador.",
+    "learningObjective": "Observar a cadeia de devoradores em Joel 1:4.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-02",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 1:1, toque a quem a palavra do Senhor foi dirigida.",
+    "prompt": "Em Joel 1:1, toque a quem a palavra do Senhor foi dirigida.",
+    "cue": "Em Joel 1:1, toque a quem a palavra do Senhor foi dirigida.",
+    "verseRef": "Joel 1:1",
+    "passageText": "A palavra do Senhor que foi dirigida a Joel, filho de Petuel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Joel"
+      },
+      {
+        "id": "c",
+        "text": "Petuel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "dirigida a Joel, filho de Petuel",
+    "feedbackCorrect": "Joel é quem recebe a palavra que abre o livro.",
+    "feedbackWrong": {
+      "a": "Isso é o que foi dirigido, não a pessoa que recebeu.",
+      "c": "Petuel é o pai de quem recebe a palavra, não o destinatário."
+    },
+    "hint": "Procure um nome de pessoa no fim do versículo.",
+    "learningObjective": "Identificar quem recebe a palavra em Joel 1:1.",
+    "evidence": [
+      "Joel 1:1"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-03",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 1:3, o que o povo deve fazer com o que aconteceu?",
+    "prompt": "Segundo Joel 1:3, o que o povo deve fazer com o que aconteceu?",
+    "cue": "Segundo Joel 1:3, o que o povo deve fazer com o que aconteceu?",
+    "verseRef": "Joel 1:3",
+    "passageText": "Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contar somente aos anciãos da terra"
+      },
+      {
+        "id": "b",
+        "text": "Esquecer antes da próxima colheita"
+      },
+      {
+        "id": "c",
+        "text": "Guardar em segredo dentro da família"
+      },
+      {
+        "id": "d",
+        "text": "Contar aos filhos, de geração em geração"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Contem isso a seus filhos",
+    "feedbackCorrect": "A memória deve atravessar as gerações, sem se perder.",
+    "feedbackWrong": {
+      "a": "Anciãos ouvem em 1:2, mas contar é para os filhos.",
+      "b": "O texto manda contar adiante, não esquecer o ocorrido.",
+      "c": "O texto manda transmitir adiante, não guardar segredo."
+    },
+    "hint": "Veja a cadeia de pessoas citada no versículo.",
+    "learningObjective": "Observar o dever de transmitir a memória em Joel 1:3.",
+    "evidence": [
+      "Joel 1:3"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-04",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 1:4 na ordem do texto.",
+    "prompt": "Monte Joel 1:4 na ordem do texto.",
+    "cue": "Monte Joel 1:4 na ordem do texto.",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O que a lagarta deixou, comeu o gafanhoto"
+      },
+      {
+        "id": "b",
+        "text": "o que o gafanhoto deixou, comeu o gafanhoto migrador"
+      },
+      {
+        "id": "c",
+        "text": "o que o gafanhoto migrador deixou, comeu o gafanhoto devorador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O que a lagarta deixou, comeu o gafanhoto",
+    "feedbackCorrect": "Lagarta, gafanhoto e migrador se sucedem comendo o que resta.",
+    "feedbackWrong": {
+      "default": "Comece pelo que a lagarta deixou, no início do versículo."
+    },
+    "hint": "O versículo começa pelo primeiro devorador.",
+    "learningObjective": "Reconhecer a ordem da cadeia em Joel 1:4.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-05",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 1:7, o que secou, além da videira destruída?",
+    "prompt": "Em Joel 1:7, o que secou, além da videira destruída?",
+    "cue": "Em Joel 1:7, o que secou, além da videira destruída?",
+    "verseRef": "Joel 1:7",
+    "passageText": "Destruiu minha videira e secou minha figueira; dela arrancou a casca e a lançou ao chão; seus ramos estão se tornando brancos.",
+    "template": "Destruiu minha videira e secou minha ___; dela arrancou a casca e a lançou ao chão; seus ramos estão se tornando brancos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "figueira"
+      },
+      {
+        "id": "b",
+        "text": "vinha"
+      },
+      {
+        "id": "c",
+        "text": "oliveira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "secou minha figueira",
+    "feedbackCorrect": "Videira destruída e figueira seca mostram a colheita perdida.",
+    "feedbackWrong": {
+      "b": "Vinha aponta para a videira já citada, não para a segunda planta.",
+      "c": "A planta nomeada ao lado da videira é outra, frutífera."
+    },
+    "hint": "Leia as duas plantas nomeadas no começo do verso.",
+    "learningObjective": "Lembrar as plantas atingidas em Joel 1:7.",
+    "evidence": [
+      "Joel 1:7"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-06",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "passageA": {
+      "ref": "Joel 1:4",
+      "text": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A perda passou de um devorador para outro até não restar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Colheita que se guarda"
+      },
+      {
+        "id": "b",
+        "text": "Perda que se completa"
+      },
+      {
+        "id": "c",
+        "text": "Plantio que recomeça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "comeu o gafanhoto destruidor",
+    "feedbackCorrect": "Um devorador após outro, até a perda se completar na terra.",
+    "feedbackWrong": {
+      "a": "Nada é guardado aqui; cada resto é comido pelo próximo.",
+      "c": "O versículo descreve perda, não um novo plantio começando."
+    },
+    "hint": "Veja o que acontece com cada resto deixado.",
+    "learningObjective": "Ligar Joel 1:4 à perda que se completa aos poucos.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-01",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 1:2–3, a memória do que aconteceu deve passar dos pais aos filhos e às gerações seguintes.",
+    "prompt": "Em Joel 1:2–3, a memória do que aconteceu deve passar dos pais aos filhos e às gerações seguintes.",
+    "cue": "Em Joel 1:2–3, a memória do que aconteceu deve passar dos pais aos filhos e às gerações seguintes.",
+    "verseRef": "Joel 1:3",
+    "passageText": "Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "que estes também o transmitam à próxima geração",
+    "feedbackCorrect": "Ouvir em 1:2 vira contar adiante em 1:3, geração após geração.",
+    "feedbackWrong": {
+      "false": "Releia 1:3 e a cadeia de filhos até a próxima geração."
+    },
+    "hint": "Junte o chamado a ouvir com o chamado a contar.",
+    "learningObjective": "Compreender a transmissão da memória em Joel 1:2–3.",
+    "evidence": [
+      "Joel 1:3"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-02",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 1:4, toque a palavra que marca o que cada devorador passa adiante.",
+    "prompt": "Em Joel 1:4, toque a palavra que marca o que cada devorador passa adiante.",
+    "cue": "Em Joel 1:4, toque a palavra que marca o que cada devorador passa adiante.",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gafanhoto"
+      },
+      {
+        "id": "b",
+        "text": "comeu"
+      },
+      {
+        "id": "c",
+        "text": "deixou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O que a lagarta deixou",
+    "feedbackCorrect": "Cada sobra deixada vira comida do devorador seguinte.",
+    "feedbackWrong": {
+      "a": "Isso nomeia quem devora, não o que é passado adiante.",
+      "b": "Comer é a ação de todos, não o que passa de um a outro."
+    },
+    "hint": "Procure o verbo que liga um devorador ao próximo.",
+    "learningObjective": "Reconhecer o elo da cadeia em Joel 1:4.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-03",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 1:4 descreve o avanço da perda na terra?",
+    "prompt": "Como Joel 1:4 descreve o avanço da perda na terra?",
+    "cue": "Como Joel 1:4 descreve o avanço da perda na terra?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A perda para logo no primeiro inseto"
+      },
+      {
+        "id": "b",
+        "text": "A colheita volta entre um inseto e outro"
+      },
+      {
+        "id": "c",
+        "text": "Cada devorador come o resto do anterior"
+      },
+      {
+        "id": "d",
+        "text": "Os devoradores disputam a mesma folha"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "comeu o gafanhoto migrador",
+    "feedbackCorrect": "A sobra de um vira o alimento do próximo, até esvaziar.",
+    "feedbackWrong": {
+      "a": "A cadeia continua por vários devoradores seguidos.",
+      "b": "Nada volta a crescer entre um devorador e outro aqui.",
+      "d": "Não há disputa descrita, e sim sucessão de devoradores."
+    },
+    "hint": "Acompanhe o resto que sobra em cada etapa.",
+    "learningObjective": "Compreender o avanço progressivo da perda.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-04",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a abertura em Joel 1:2–4?",
+    "prompt": "Como avança a abertura em Joel 1:2–4?",
+    "cue": "Como avança a abertura em Joel 1:2–4?",
+    "verseRef": "Joel 1:2–3",
+    "passageText": "Ouçam isto, anciãos, e escutem, todos os habitantes da terra: Aconteceu isso em seus dias? Ou também nos dias de seus pais? Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anciãos são chamados a ouvir"
+      },
+      {
+        "id": "b",
+        "text": "Pais contam o fato aos filhos"
+      },
+      {
+        "id": "c",
+        "text": "Perda devora o que resta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Contem isso a seus filhos",
+    "feedbackCorrect": "Primeiro ouvir, depois contar, com a perda descrita em seguida.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado aos anciãos, no início de 1:2."
+    },
+    "hint": "Ouvir vem antes de contar às gerações.",
+    "learningObjective": "Compreender a sequência ouvir, contar e descrever.",
+    "evidence": [
+      "Joel 1:2–3",
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-05",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 1:6, os dentes do invasor são comparados aos dentes de quem?",
+    "prompt": "Em Joel 1:6, os dentes do invasor são comparados aos dentes de quem?",
+    "cue": "Em Joel 1:6, os dentes do invasor são comparados aos dentes de quem?",
+    "verseRef": "Joel 1:6",
+    "passageText": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa.",
+    "template": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de ___, e têm queixais de uma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "leão"
+      },
+      {
+        "id": "b",
+        "text": "urso"
+      },
+      {
+        "id": "c",
+        "text": "leoa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "dentes de leão",
+    "feedbackCorrect": "A comparação mostra força devoradora contra a terra.",
+    "feedbackWrong": {
+      "b": "Esse animal não é citado na comparação do versículo.",
+      "c": "Leoa aparece nos queixais, não nos dentes citados antes."
+    },
+    "hint": "Distinga dentes e queixais na mesma frase.",
+    "learningObjective": "Lembrar a comparação de força em Joel 1:6.",
+    "evidence": [
+      "Joel 1:6"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-06",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 1:4 a Êxodo 10:15?",
+    "prompt": "O que liga Joel 1:4 a Êxodo 10:15?",
+    "cue": "O que liga Joel 1:4 a Êxodo 10:15?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "passageA": {
+      "ref": "Joel 1:4",
+      "text": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor."
+    },
+    "passageB": {
+      "ref": "Êxodo 10:15",
+      "text": "Porque cobriram a superfície de toda a terra, de modo que a terra se escureceu; devoraram toda a erva da terra e todo o fruto das árvores que deixara a chuva de pedras; e não restou nada verde nas árvores, nem na erva do campo, em toda a terra do Egito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Insetos que poupam a terra"
+      },
+      {
+        "id": "b",
+        "text": "Gafanhotos devoram a terra"
+      },
+      {
+        "id": "c",
+        "text": "Colheita protegida da praga"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "comeu o gafanhoto",
+    "feedbackCorrect": "Nos dois textos, gafanhotos consomem o verde da terra.",
+    "feedbackWrong": {
+      "a": "Os insetos não poupam planta alguma nos dois textos.",
+      "c": "Nos dois relatos a terra é devorada, não protegida."
+    },
+    "hint": "Compare o efeito dos insetos sobre as plantas.",
+    "learningObjective": "Relacionar a praga de Joel à do Êxodo.",
+    "evidence": [
+      "Joel 1:4",
+      "Êxodo 10:15"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-01",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Joel 1:1–4, a praga é apresentada como assunto sem relação com a palavra do Senhor.",
+    "prompt": "Em Joel 1:1–4, a praga é apresentada como assunto sem relação com a palavra do Senhor.",
+    "cue": "Em Joel 1:1–4, a praga é apresentada como assunto sem relação com a palavra do Senhor.",
+    "verseRef": "Joel 1:1",
+    "passageText": "A palavra do Senhor que foi dirigida a Joel, filho de Petuel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "A palavra do Senhor que foi dirigida a Joel",
+    "feedbackCorrect": "O livro abre ligando tudo à palavra do Senhor dada a Joel.",
+    "feedbackWrong": {
+      "true": "Releia a primeira frase do livro, antes da praga descrita."
+    },
+    "hint": "Comece pela frase que abre o livro inteiro.",
+    "learningObjective": "Interpretar a praga dentro da palavra do Senhor.",
+    "evidence": [
+      "Joel 1:1"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-02",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 1:6, toque o trecho que mostra a força devoradora do invasor.",
+    "prompt": "Em Joel 1:6, toque o trecho que mostra a força devoradora do invasor.",
+    "cue": "Em Joel 1:6, toque o trecho que mostra a força devoradora do invasor.",
+    "verseRef": "Joel 1:6",
+    "passageText": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "minha terra"
+      },
+      {
+        "id": "b",
+        "text": "dentes de leão"
+      },
+      {
+        "id": "c",
+        "text": "uma nação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "seus dentes são como os dentes de leão",
+    "feedbackCorrect": "Dentes de leão retratam uma força que devora sem piedade.",
+    "feedbackWrong": {
+      "a": "Isso nomeia o alvo atingido, não a força do invasor.",
+      "c": "Isso nomeia quem veio, não a força devoradora comparada."
+    },
+    "hint": "Procure a comparação com um animal forte.",
+    "learningObjective": "Sustentar a força do invasor com Joel 1:6.",
+    "evidence": [
+      "Joel 1:6"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-03",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 1:4 sustenta sobre o juízo descrito no trecho?",
+    "prompt": "Que leitura Joel 1:4 sustenta sobre o juízo descrito no trecho?",
+    "cue": "Que leitura Joel 1:4 sustenta sobre o juízo descrito no trecho?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele nomeia um país atual específico"
+      },
+      {
+        "id": "b",
+        "text": "Ele acontece longe da palavra de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ele chega como perda que se completa"
+      },
+      {
+        "id": "d",
+        "text": "Ele prova o pecado de uma só pessoa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "comeu o gafanhoto destruidor",
+    "feedbackCorrect": "A perda avança em cadeia, chamando o povo a ouvir Deus.",
+    "feedbackWrong": {
+      "a": "Nenhum povo de hoje é nomeado ou descrito no texto.",
+      "b": "O livro abre com a palavra do Senhor dirigida a Joel.",
+      "d": "O texto chama o povo inteiro a ouvir, sem isolar um culpado."
+    },
+    "hint": "Veja o efeito acumulado da cadeia de devoradores.",
+    "learningObjective": "Escolher a leitura que Joel 1:4 sustenta sobre o juízo.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-04",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da abertura de Joel?",
+    "prompt": "Qual sequência revela o sentido da abertura de Joel?",
+    "cue": "Qual sequência revela o sentido da abertura de Joel?",
+    "verseRef": "Joel 1:1",
+    "passageText": "A palavra do Senhor que foi dirigida a Joel, filho de Petuel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra do Senhor chega a Joel"
+      },
+      {
+        "id": "b",
+        "text": "Povo é chamado a ouvir e contar"
+      },
+      {
+        "id": "c",
+        "text": "Perda chama a atenção para Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A palavra do Senhor",
+    "feedbackCorrect": "A palavra vem primeiro e dá sentido ao chamado e à perda.",
+    "feedbackWrong": {
+      "default": "Comece pela palavra que abre o livro, em 1:1."
+    },
+    "hint": "Siga de 1:1 ao chamado e depois à praga.",
+    "learningObjective": "Ver a abertura de Joel como palavra que interpreta a perda.",
+    "evidence": [
+      "Joel 1:1",
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-05",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 1:5, quem é chamado a despertar e chorar pelo vinho retirado?",
+    "prompt": "Em Joel 1:5, quem é chamado a despertar e chorar pelo vinho retirado?",
+    "cue": "Em Joel 1:5, quem é chamado a despertar e chorar pelo vinho retirado?",
+    "verseRef": "Joel 1:5",
+    "passageText": "Despertai, bêbados, e chorai; uivai, todos vós que bebeis vinho novo, pois foi retirado da vossa boca.",
+    "template": "Despertai, ___, e chorai; uivai, todos vós que bebeis vinho novo, pois foi retirado da vossa boca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "habitantes"
+      },
+      {
+        "id": "b",
+        "text": "bêbados"
+      },
+      {
+        "id": "c",
+        "text": "anciãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Despertai, bêbados, e chorai",
+    "feedbackCorrect": "Até quem vivia para beber é chamado a acordar e lamentar.",
+    "feedbackWrong": {
+      "a": "Habitantes ouvem em 1:2; aqui o chamado é mais direto.",
+      "c": "Anciãos são chamados a ouvir em 1:2, não neste grito."
+    },
+    "hint": "Leia o primeiro chamado direto do versículo.",
+    "learningObjective": "Lembrar quem é despertado em Joel 1:5.",
+    "evidence": [
+      "Joel 1:5"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-06",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 1:3 a Salmos 78:4?",
+    "prompt": "O que liga Joel 1:3 a Salmos 78:4?",
+    "cue": "O que liga Joel 1:3 a Salmos 78:4?",
+    "verseRef": "Joel 1:3",
+    "passageText": "Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração.",
+    "passageA": {
+      "ref": "Joel 1:3",
+      "text": "Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração."
+    },
+    "passageB": {
+      "ref": "Salmos 78:4",
+      "text": "Não os ocultaremos de nossos filhos; antes, anunciaremos à geração vindoura os louvores do Senhor, sua força e as maravilhas que fez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Contar aos que vêm depois"
+      },
+      {
+        "id": "b",
+        "text": "Guardar silêncio entre gerações"
+      },
+      {
+        "id": "c",
+        "text": "Esconder dos filhos o fato"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Contem isso a seus filhos",
+    "feedbackCorrect": "Nos dois textos, a geração atual conta à que vem depois.",
+    "feedbackWrong": {
+      "b": "Os dois textos mandam falar, não guardar silêncio sobre Deus.",
+      "c": "Salmos diz não ocultar dos filhos, e sim anunciar adiante."
+    },
+    "hint": "Veja o destino dado à memória nos dois trechos.",
+    "learningObjective": "Ligar o contar de Joel ao contar dos Salmos.",
+    "evidence": [
+      "Joel 1:3",
+      "Salmos 78:4"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-01",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 2:13, Joel manda rasgar as vestes e não o coração.",
+    "prompt": "Em Joel 2:13, Joel manda rasgar as vestes e não o coração.",
+    "cue": "Em Joel 2:13, Joel manda rasgar as vestes e não o coração.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "A ordem do texto é o contrário do gesto apenas externo.",
+    "feedbackWrong": {
+      "true": "Releia o começo de 2:13 e a ordem entre coração e vestes."
+    },
+    "hint": "Veja qual dos dois vem primeiro na ordem.",
+    "learningObjective": "Observar a ordem coração e vestes em Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-02",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 2:12, toque de onde deve vir a conversão a Deus.",
+    "prompt": "Em Joel 2:12, toque de onde deve vir a conversão a Deus.",
+    "cue": "Em Joel 2:12, toque de onde deve vir a conversão a Deus.",
+    "verseRef": "Joel 2:12",
+    "passageText": "Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "choro"
+      },
+      {
+        "id": "b",
+        "text": "vosso coração"
+      },
+      {
+        "id": "c",
+        "text": "jejum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "de todo o vosso coração",
+    "feedbackCorrect": "A conversão pedida nasce do interior, de todo o coração.",
+    "feedbackWrong": {
+      "a": "Choro acompanha a volta, mas a fonte citada é mais funda.",
+      "c": "Jejum acompanha a volta, mas não é a fonte interior citada."
+    },
+    "hint": "Procure a parte interior da pessoa citada.",
+    "learningObjective": "Identificar a fonte da conversão em Joel 2:12.",
+    "evidence": [
+      "Joel 2:12"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-03",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 2:15, o que deve acontecer em Sião?",
+    "prompt": "Segundo Joel 2:15, o que deve acontecer em Sião?",
+    "cue": "Segundo Joel 2:15, o que deve acontecer em Sião?",
+    "verseRef": "Joel 2:15",
+    "passageText": "Toquem a trombeta em Sião, proclamem um santo jejum, convoquem uma assembleia solene.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Silenciar o povo por sete dias"
+      },
+      {
+        "id": "b",
+        "text": "Tocar trombeta e proclamar jejum"
+      },
+      {
+        "id": "c",
+        "text": "Fechar as portas da assembleia"
+      },
+      {
+        "id": "d",
+        "text": "Celebrar colheita com festa longa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Toquem a trombeta em Sião",
+    "feedbackCorrect": "Trombeta e jejum solene convocam todo o povo em Sião.",
+    "feedbackWrong": {
+      "a": "O povo é convocado a se reunir, não a se calar por dias.",
+      "c": "A assembleia é convocada, não fechada ao povo aqui.",
+      "d": "O momento é de jejum solene, não de festa de colheita."
+    },
+    "hint": "Leia os dois primeiros chamados do versículo.",
+    "learningObjective": "Observar a convocação de Joel 2:15.",
+    "evidence": [
+      "Joel 2:15"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-04",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:13 na ordem do texto.",
+    "prompt": "Monte Joel 2:13 na ordem do texto.",
+    "cue": "Monte Joel 2:13 na ordem do texto.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o coração e não as vestes"
+      },
+      {
+        "id": "b",
+        "text": "convertei-vos ao Senhor, vosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "pois ele é misericordioso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "Coração rasgado, volta ao Senhor e o motivo no caráter dele.",
+    "feedbackWrong": {
+      "default": "Comece pelo que deve ser rasgado, no início do verso."
+    },
+    "hint": "O versículo começa pelo gesto interior pedido.",
+    "learningObjective": "Reconhecer a sequência de Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-05",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 2:10, o que a terra faz diante dele?",
+    "prompt": "Em Joel 2:10, o que a terra faz diante dele?",
+    "cue": "Em Joel 2:10, o que a terra faz diante dele?",
+    "verseRef": "Joel 2:10",
+    "passageText": "Diante dele, a terra treme, os céus se abalam, o sol e a lua se escurecem, e as estrelas deixarão de brilhar.",
+    "template": "Diante dele, a terra ___, os céus se abalam, o sol e a lua se escurecem, e as estrelas deixarão de brilhar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "floresce"
+      },
+      {
+        "id": "b",
+        "text": "brilha"
+      },
+      {
+        "id": "c",
+        "text": "treme"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a terra treme",
+    "feedbackCorrect": "Terra que treme e céus abalados marcam a chegada do Dia.",
+    "feedbackWrong": {
+      "a": "Nada floresce neste versículo de sinais do Dia.",
+      "b": "O cenário é de abalo e escurecimento, não de brilho aqui."
+    },
+    "hint": "Leia a primeira reação citada da terra.",
+    "learningObjective": "Lembrar o abalo da terra em Joel 2:10.",
+    "evidence": [
+      "Joel 2:10"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-06",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus não se contenta com gesto externo sem volta interior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aparência em vez de coração"
+      },
+      {
+        "id": "b",
+        "text": "Coração em vez de aparência"
+      },
+      {
+        "id": "c",
+        "text": "Vestes rasgadas bastam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "Deus não se contenta com gesto externo sem volta interior.",
+    "feedbackWrong": {
+      "a": "O texto inverte essa ordem e pede o interior primeiro.",
+      "c": "O versículo diz justamente que as vestes não bastam."
+    },
+    "hint": "Veja o que é pedido no lugar do gesto visível.",
+    "learningObjective": "Ligar Joel 2:13 à volta interior, não só externa.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-01",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 2:12, a conversão pedida inclui jejum, choro e lamento junto com todo o coração.",
+    "prompt": "Em Joel 2:12, a conversão pedida inclui jejum, choro e lamento junto com todo o coração.",
+    "cue": "Em Joel 2:12, a conversão pedida inclui jejum, choro e lamento junto com todo o coração.",
+    "verseRef": "Joel 2:12",
+    "passageText": "Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e isso com jejum, com choro e com lamento",
+    "feedbackCorrect": "Coração inteiro e sinais de luto andam juntos no chamado.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 2:12, com jejum, choro e lamento."
+    },
+    "hint": "Leia o versículo até o fim, sem parar no meio.",
+    "learningObjective": "Compreender os acompanhamentos da conversão em Joel 2:12.",
+    "evidence": [
+      "Joel 2:12"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-02",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:13, toque a palavrinha que separa o interior do exterior.",
+    "prompt": "Em Joel 2:13, toque a palavrinha que separa o interior do exterior.",
+    "cue": "Em Joel 2:13, toque a palavrinha que separa o interior do exterior.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vestes"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "não"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "e não as vestes",
+    "feedbackCorrect": "O interior é afirmado e o gesto só externo é recusado.",
+    "feedbackWrong": {
+      "a": "Vestes são o gesto recusado, não a palavrinha de separação.",
+      "b": "Coração é o que se pede, não a palavrinha de separação."
+    },
+    "hint": "Procure a palavrinha curta entre o pedido e as vestes.",
+    "learningObjective": "Reconhecer o contraste marcado em Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-03",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o caráter de Deus em Joel 2:13 sustenta o chamado a voltar?",
+    "prompt": "Como o caráter de Deus em Joel 2:13 sustenta o chamado a voltar?",
+    "cue": "Como o caráter de Deus em Joel 2:13 sustenta o chamado a voltar?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sua paciência e bondade abrem espaço para voltar"
+      },
+      {
+        "id": "b",
+        "text": "Sua indiferença deixa o povo sem motivo"
+      },
+      {
+        "id": "c",
+        "text": "Sua pressa em punir fecha a porta ao povo"
+      },
+      {
+        "id": "d",
+        "text": "Sua distância torna inútil qualquer volta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tardio em se irar e grande em bondade",
+    "feedbackCorrect": "Voltar faz sentido porque Deus é paciente e cheio de bondade.",
+    "feedbackWrong": {
+      "b": "O texto destaca bondade ativa, não indiferença de Deus.",
+      "c": "Ele é tardio em irar-se, não apressado em punir o povo.",
+      "d": "Ele chama o povo a si, não se mostra distante aqui."
+    },
+    "hint": "Leia como Deus é descrito na segunda metade do verso.",
+    "learningObjective": "Relacionar o caráter de Deus ao chamado à conversão.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-04",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o chamado em Joel 2:11–15?",
+    "prompt": "Como avança o chamado em Joel 2:11–15?",
+    "cue": "Como avança o chamado em Joel 2:11–15?",
+    "verseRef": "Joel 2:11–12",
+    "passageText": "E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui terrível! Quem o poderá suportar? Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia do Senhor é anunciado"
+      },
+      {
+        "id": "b",
+        "text": "Deus chama a voltar de coração"
+      },
+      {
+        "id": "c",
+        "text": "Povo se reúne em jejum solene"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Grande é o Dia do Senhor",
+    "feedbackCorrect": "Do anúncio do Dia, o texto passa ao chamado e à reunião.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio do Dia, antes do chamado a voltar."
+    },
+    "hint": "O Dia anunciado vem antes da resposta do povo.",
+    "learningObjective": "Compreender a sequência anúncio, chamado e reunião.",
+    "evidence": [
+      "Joel 2:11–12",
+      "Joel 2:15"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-05",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 2:14, o que Deus pode deixar após si ao se voltar?",
+    "prompt": "Em Joel 2:14, o que Deus pode deixar após si ao se voltar?",
+    "cue": "Em Joel 2:14, o que Deus pode deixar após si ao se voltar?",
+    "verseRef": "Joel 2:14",
+    "passageText": "Quem sabe se não se voltará, se se arrependerá e deixará após si uma bênção, uma oferta de manjares e libação para o SENHOR, o vosso Deus?",
+    "template": "Quem sabe se não se voltará, se se arrependerá e deixará após si uma ___, uma oferta de manjares e libação para o SENHOR, o vosso Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "bênção"
+      },
+      {
+        "id": "b",
+        "text": "colheita"
+      },
+      {
+        "id": "c",
+        "text": "chuva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "deixará após si uma bênção",
+    "feedbackCorrect": "A esperança de Joel 2:14 inclui uma bênção deixada por Deus.",
+    "feedbackWrong": {
+      "b": "Colheita pode vir da bênção, mas não é a palavra do verso.",
+      "c": "Chuva é dom de outro trecho, não a palavra usada aqui."
+    },
+    "hint": "Leia a esperança expressa com quem sabe, no verso.",
+    "learningObjective": "Lembrar a bênção esperada em Joel 2:14.",
+    "evidence": [
+      "Joel 2:14"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-06",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:13 a Salmos 51:17?",
+    "prompt": "O que liga Joel 2:13 a Salmos 51:17?",
+    "cue": "O que liga Joel 2:13 a Salmos 51:17?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Salmos 51:17",
+      "text": "Os sacrifícios a Deus consistem em um espírito quebrantado; a um coração compungido e contrito, não o desprezarás, ó Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Gesto externo substitui o coração"
+      },
+      {
+        "id": "b",
+        "text": "Coração quebrantado agrada a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Roupa rasgada impressiona Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Rasgai o coração",
+    "feedbackCorrect": "Nos dois textos, Deus valoriza o coração quebrantado e sincero.",
+    "feedbackWrong": {
+      "a": "Os dois textos recusam trocar o interior pelo exterior.",
+      "c": "Joel pede o coração, não a roupa como prova de volta."
+    },
+    "hint": "Compare o que Deus não despreza no Salmo.",
+    "learningObjective": "Relacionar o coração rasgado ao coração quebrantado.",
+    "evidence": [
+      "Joel 2:13",
+      "Salmos 51:17"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-01",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Joel 2:13 ensina que o jejum externo, por si só, garante que Deus mudará a situação.",
+    "prompt": "Joel 2:13 ensina que o jejum externo, por si só, garante que Deus mudará a situação.",
+    "cue": "Joel 2:13 ensina que o jejum externo, por si só, garante que Deus mudará a situação.",
+    "verseRef": "Joel 2:12–13",
+    "passageText": "Agora, assim, diz o Senhor: Convertei-vos a Mim de todo o vosso coração; e isso com jejum, com choro e com lamento. Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "Sem coração voltado, o gesto externo não garante coisa alguma.",
+    "feedbackWrong": {
+      "true": "Releia o contraste entre coração e vestes no começo do verso."
+    },
+    "hint": "Veja o que o texto pede antes de qualquer gesto.",
+    "learningObjective": "Interpretar o jejum à luz do coração em Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-02",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:13, toque o trecho que descreve a bondade de Deus.",
+    "prompt": "Em Joel 2:13, toque o trecho que descreve a bondade de Deus.",
+    "cue": "Em Joel 2:13, toque o trecho que descreve a bondade de Deus.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em se irar"
+      },
+      {
+        "id": "b",
+        "text": "grande em bondade"
+      },
+      {
+        "id": "c",
+        "text": "as vestes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "grande em bondade",
+    "feedbackCorrect": "A grandeza de Deus aqui é medida pela bondade que ele tem.",
+    "feedbackWrong": {
+      "a": "Isso fala da ira contida, não da bondade nomeada no fim.",
+      "c": "Vestes são o gesto externo, não a descrição de Deus."
+    },
+    "hint": "Procure a última qualidade atribuída a Deus.",
+    "learningObjective": "Sustentar a bondade de Deus com Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-03",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 2:13 sustenta sobre voltar para Deus?",
+    "prompt": "Que leitura Joel 2:13 sustenta sobre voltar para Deus?",
+    "cue": "Que leitura Joel 2:13 sustenta sobre voltar para Deus?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rituais externos bastam sem o coração"
+      },
+      {
+        "id": "b",
+        "text": "Arrependimento compra bênção certa"
+      },
+      {
+        "id": "c",
+        "text": "Deus nunca se ira diante do pecado"
+      },
+      {
+        "id": "d",
+        "text": "A volta sincera se apoia em quem Deus é"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "convertei-vos ao Senhor, vosso Deus",
+    "feedbackCorrect": "Voltar de coração faz sentido pelo caráter misericordioso dele.",
+    "feedbackWrong": {
+      "a": "O texto pede o coração e recusa só o gesto externo.",
+      "b": "Joel 2:14 diz quem sabe, sem prometer bênção automática.",
+      "c": "O Dia é chamado terrível em 2:11, logo Deus se ira sim."
+    },
+    "hint": "Junte o pedido feito ao povo com quem Deus é.",
+    "learningObjective": "Escolher a leitura sustentada por Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-04",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica do chamado em Joel 2?",
+    "prompt": "Qual sequência revela a lógica do chamado em Joel 2?",
+    "cue": "Qual sequência revela a lógica do chamado em Joel 2?",
+    "verseRef": "Joel 2:11",
+    "passageText": "E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui terrível! Quem o poderá suportar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus anuncia um Dia terrível"
+      },
+      {
+        "id": "b",
+        "text": "Deus chama a rasgar o coração"
+      },
+      {
+        "id": "c",
+        "text": "Deus se mostra tardio em irar-se"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Grande é o Dia do Senhor e mui terrível",
+    "feedbackCorrect": "O anúncio do Dia leva ao chamado, sustentado pelo caráter de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo Dia anunciado, antes de qualquer resposta."
+    },
+    "hint": "Siga de 2:11 ao chamado e ao motivo em 2:13.",
+    "learningObjective": "Ver a lógica entre juízo anunciado e misericórdia.",
+    "evidence": [
+      "Joel 2:11",
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-05",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:11, o Dia do Senhor é grande e como mais?",
+    "prompt": "Em Joel 2:11, o Dia do Senhor é grande e como mais?",
+    "cue": "Em Joel 2:11, o Dia do Senhor é grande e como mais?",
+    "verseRef": "Joel 2:11",
+    "passageText": "E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui terrível! Quem o poderá suportar?",
+    "template": "E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui ___! Quem o poderá suportar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "distante"
+      },
+      {
+        "id": "b",
+        "text": "terrível"
+      },
+      {
+        "id": "c",
+        "text": "suportável"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e mui terrível",
+    "feedbackCorrect": "Grande e terrível é como o próprio texto qualifica o Dia.",
+    "feedbackWrong": {
+      "a": "O Dia é anunciado como presente e pesado, não distante aqui.",
+      "c": "O texto pergunta quem poderá suportá-lo, sem chamá-lo assim."
+    },
+    "hint": "Leia o segundo adjetivo dado ao Dia.",
+    "learningObjective": "Lembrar como Joel 2:11 qualifica o Dia do Senhor.",
+    "evidence": [
+      "Joel 2:11"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-06",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 2:13 a Salmos 34:18?",
+    "prompt": "O que liga Joel 2:13 a Salmos 34:18?",
+    "cue": "O que liga Joel 2:13 a Salmos 34:18?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Salmos 34:18",
+      "text": "Perto está o Senhor dos que têm o coração quebrantado e salva os que são de espírito oprimido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor longe de quem chora"
+      },
+      {
+        "id": "b",
+        "text": "Senhor perto do quebrantado"
+      },
+      {
+        "id": "c",
+        "text": "Coração inteiro sem quebranto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Rasgai o coração",
+    "feedbackCorrect": "Quem rasga o coração encontra um Senhor que está perto.",
+    "feedbackWrong": {
+      "a": "O Salmo diz que o Senhor está perto, não longe de quem sofre.",
+      "c": "Os dois textos valorizam o coração quebrantado diante de Deus."
+    },
+    "hint": "Veja a proximidade de Deus no outro trecho.",
+    "learningObjective": "Ligar o coração rasgado à proximidade do Senhor.",
+    "evidence": [
+      "Joel 2:13",
+      "Salmos 34:18"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-05-anos-01",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 2:25, Deus promete restituir os anos consumidos pelo gafanhoto e por outros devoradores.",
+    "prompt": "Em Joel 2:25, Deus promete restituir os anos consumidos pelo gafanhoto e por outros devoradores.",
+    "cue": "Em Joel 2:25, Deus promete restituir os anos consumidos pelo gafanhoto e por outros devoradores.",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "A promessa devolve justamente os anos que a praga consumiu.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 2:25 e o objeto da promessa de Deus."
+    },
+    "hint": "Veja o que Deus promete devolver ao povo.",
+    "learningObjective": "Observar a promessa de restituição em Joel 2:25.",
+    "evidence": [
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-05-anos-02",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 2:24, toque o que as eiras se encherão.",
+    "prompt": "Em Joel 2:24, toque o que as eiras se encherão.",
+    "cue": "Em Joel 2:24, toque o que as eiras se encherão.",
+    "verseRef": "Joel 2:24",
+    "passageText": "As eiras se encherão de trigo, e os lagares transbordarão de vinho e de óleo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trigo"
+      },
+      {
+        "id": "b",
+        "text": "vinho"
+      },
+      {
+        "id": "c",
+        "text": "óleo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se encherão de trigo",
+    "feedbackCorrect": "Eiras cheias de trigo marcam a volta da fartura ao povo.",
+    "feedbackWrong": {
+      "b": "Vinho transborda nos lagares, não enche as eiras aqui.",
+      "c": "Óleo também é dos lagares, não das eiras neste verso."
+    },
+    "hint": "Distinga o que vai para as eiras e para os lagares.",
+    "learningObjective": "Identificar a fartura das eiras em Joel 2:24.",
+    "evidence": [
+      "Joel 2:24"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-05-anos-03",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 2:22, o que acontecerá com os pastos e as árvores?",
+    "prompt": "Segundo Joel 2:22, o que acontecerá com os pastos e as árvores?",
+    "cue": "Segundo Joel 2:22, o que acontecerá com os pastos e as árvores?",
+    "verseRef": "Joel 2:22",
+    "passageText": "Não temam, animais do campo, pois os pastos do deserto reverdecerão, as árvores darão seus frutos, a figueira e a videira produzirão com abundância.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pastos verdejarão e árvores darão frutos"
+      },
+      {
+        "id": "b",
+        "text": "Os pastos secarão de vez"
+      },
+      {
+        "id": "c",
+        "text": "O deserto ficará sem vida"
+      },
+      {
+        "id": "d",
+        "text": "As árvores perderão os frutos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os pastos do deserto reverdecerão",
+    "feedbackCorrect": "A vida volta ao campo, dos pastos às árvores frutíferas.",
+    "feedbackWrong": {
+      "b": "O texto anuncia pastos reverdecendo, não secando de vez.",
+      "c": "Até o deserto volta a ter pasto verde neste anúncio.",
+      "d": "Figueira e videira produzirão com fartura, diz o verso."
+    },
+    "hint": "Leia o destino dado aos pastos logo no começo.",
+    "learningObjective": "Observar a volta da vida ao campo em Joel 2:22.",
+    "evidence": [
+      "Joel 2:22"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-05-anos-04",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:26 na ordem do texto.",
+    "prompt": "Monte Joel 2:26 na ordem do texto.",
+    "cue": "Monte Joel 2:26 na ordem do texto.",
+    "verseRef": "Joel 2:26",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E vocês comerão em abundância"
+      },
+      {
+        "id": "b",
+        "text": "se fartarão e louvarão o nome do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "e o meu povo jamais será envergonhado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E vocês comerão em abundância",
+    "feedbackCorrect": "Comer, louvar e nunca mais ser envergonhado, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo comer em abundância, no início do verso."
+    },
+    "hint": "O versículo começa pela mesa cheia do povo.",
+    "learningObjective": "Reconhecer a sequência de Joel 2:26.",
+    "evidence": [
+      "Joel 2:26"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-05-anos-05",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 2:23, o que Deus dará ao povo em justa medida?",
+    "prompt": "Em Joel 2:23, o que Deus dará ao povo em justa medida?",
+    "cue": "Em Joel 2:23, o que Deus dará ao povo em justa medida?",
+    "verseRef": "Joel 2:23",
+    "passageText": "Alegrai-vos, pois, filhos de Sião; regozijai-vos no Senhor, vosso Deus, porque Ele vos dará, em justa medida, a chuva; fará descer sobre vós, como outrora, a chuva temporã e a serôdia no primeiro mês.",
+    "template": "Alegrai-vos, pois, filhos de Sião; regozijai-vos no Senhor, vosso Deus, porque Ele vos dará, em justa medida, a ___; fará descer sobre vós, como outrora, a chuva temporã e a serôdia no primeiro mês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chuva"
+      },
+      {
+        "id": "b",
+        "text": "colheita"
+      },
+      {
+        "id": "c",
+        "text": "força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a chuva; fará descer",
+    "feedbackCorrect": "A água que o campo perdeu volta como presente de Deus.",
+    "feedbackWrong": {
+      "b": "Colheita é resultado posterior, não o dom nomeado aqui.",
+      "c": "O dom nomeado tem a ver com água para a terra seca."
+    },
+    "hint": "Pense no que a terra seca mais espera receber.",
+    "learningObjective": "Lembrar o dom da chuva em Joel 2:23.",
+    "evidence": [
+      "Joel 2:23"
+    ]
+  },
+  {
+    "id": "joel-sem-jl-05-anos-06",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 2:25 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:25 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:25 comunica que se liga a este contexto?",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "passageA": {
+      "ref": "Joel 2:25",
+      "text": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus promete fartura depois dos anos de perda pela praga."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Anos perdidos para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Praga tem a última palavra"
+      },
+      {
+        "id": "c",
+        "text": "Deus devolve anos perdidos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "Os anos comidos pela praga são devolvidos por Deus ao povo.",
+    "feedbackWrong": {
+      "a": "A promessa é de devolução, não de perda definitiva aqui.",
+      "b": "Quem fala por último neste versículo é Deus, restituindo."
+    },
+    "hint": "Veja o verbo que Deus usa sobre os anos.",
+    "learningObjective": "Ligar Joel 2:25 à restauração dos anos perdidos.",
+    "evidence": [
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-05-anos-01",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 2:22–24, a volta da vida ao campo acontece sem qualquer ação de Deus.",
+    "prompt": "Em Joel 2:22–24, a volta da vida ao campo acontece sem qualquer ação de Deus.",
+    "cue": "Em Joel 2:22–24, a volta da vida ao campo acontece sem qualquer ação de Deus.",
+    "verseRef": "Joel 2:23",
+    "passageText": "Alegrai-vos, pois, filhos de Sião; regozijai-vos no Senhor, vosso Deus, porque Ele vos dará, em justa medida, a chuva; fará descer sobre vós, como outrora, a chuva temporã e a serôdia no primeiro mês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "porque Ele vos dará",
+    "feedbackCorrect": "É Deus quem dá a chuva e faz o campo voltar a produzir.",
+    "feedbackWrong": {
+      "true": "Releia 2:23 e veja quem dá a chuva ao povo."
+    },
+    "hint": "Procure quem age como sujeito em 2:23.",
+    "learningObjective": "Compreender a ação de Deus na restauração do campo.",
+    "evidence": [
+      "Joel 2:23"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-05-anos-02",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:28, toque a palavra que marca o que vem após a restauração.",
+    "prompt": "Em Joel 2:28, toque a palavra que marca o que vem após a restauração.",
+    "cue": "Em Joel 2:28, toque a palavra que marca o que vem após a restauração.",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobre"
+      },
+      {
+        "id": "b",
+        "text": "toda"
+      },
+      {
+        "id": "c",
+        "text": "depois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "depois, derramarei",
+    "feedbackCorrect": "Após restituir, Deus promete algo ainda maior ao povo.",
+    "feedbackWrong": {
+      "a": "Sobre mostra sobre quem, não a ordem dos acontecimentos.",
+      "b": "Toda mostra o alcance, não a ordem dos acontecimentos."
+    },
+    "hint": "Procure a palavra de tempo no começo do verso.",
+    "learningObjective": "Reconhecer a sequência após a restauração.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-05-anos-03",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 2:26 se relaciona com a promessa de Joel 2:25?",
+    "prompt": "Como Joel 2:26 se relaciona com a promessa de Joel 2:25?",
+    "cue": "Como Joel 2:26 se relaciona com a promessa de Joel 2:25?",
+    "verseRef": "Joel 2:25–26",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fartura apaga a presença de Deus"
+      },
+      {
+        "id": "b",
+        "text": "A restituição dispensa o louvor a Deus"
+      },
+      {
+        "id": "c",
+        "text": "O louvor é trocado por vergonha futura"
+      },
+      {
+        "id": "d",
+        "text": "A restituição termina em louvor, não só fartura"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "louvarão o nome do Senhor",
+    "feedbackCorrect": "Comer e se fartar desembocam em louvar o nome do Senhor.",
+    "feedbackWrong": {
+      "a": "Em 2:27 Deus se mostra no meio do povo, presente.",
+      "b": "O próprio versículo seguinte inclui louvor ao Senhor.",
+      "c": "O texto diz que o povo jamais será envergonhado."
+    },
+    "hint": "Veja onde a fartura de 2:26 desemboca.",
+    "learningObjective": "Relacionar restituição e louvor em Joel 2:25–26.",
+    "evidence": [
+      "Joel 2:25–26"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-05-anos-04",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a restauração em Joel 2:22–24?",
+    "prompt": "Como avança a restauração em Joel 2:22–24?",
+    "cue": "Como avança a restauração em Joel 2:22–24?",
+    "verseRef": "Joel 2:22–23",
+    "passageText": "Não temam, animais do campo, pois os pastos do deserto reverdecerão, as árvores darão seus frutos, a figueira e a videira produzirão com abundância. Alegrai-vos, pois, filhos de Sião; regozijai-vos no Senhor, vosso Deus, porque Ele vos dará, em justa medida, a chuva; fará descer sobre vós, como outrora, a chuva temporã e a serôdia no primeiro mês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pastos voltam a verdejar"
+      },
+      {
+        "id": "b",
+        "text": "Chuva desce na medida certa"
+      },
+      {
+        "id": "c",
+        "text": "Eiras e lagares se enchem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "os pastos do deserto reverdecerão",
+    "feedbackCorrect": "Do pasto verde à chuva, o texto chega às eiras cheias.",
+    "feedbackWrong": {
+      "default": "Comece pelos pastos, citados no primeiro versículo."
+    },
+    "hint": "Siga a ordem dos três versículos seguidos.",
+    "learningObjective": "Compreender o avanço da restauração do campo.",
+    "evidence": [
+      "Joel 2:22–24"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-05-anos-05",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 2:22, o que os pastos do deserto farão?",
+    "prompt": "Em Joel 2:22, o que os pastos do deserto farão?",
+    "cue": "Em Joel 2:22, o que os pastos do deserto farão?",
+    "verseRef": "Joel 2:22",
+    "passageText": "Não temam, animais do campo, pois os pastos do deserto reverdecerão, as árvores darão seus frutos, a figueira e a videira produzirão com abundância.",
+    "template": "Não temam, animais do campo, pois os pastos do deserto ___, as árvores darão seus frutos, a figueira e a videira produzirão com abundância.",
+    "options": [
+      {
+        "id": "a",
+        "text": "secarão"
+      },
+      {
+        "id": "b",
+        "text": "reverdecerão"
+      },
+      {
+        "id": "c",
+        "text": "sumirão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os pastos do deserto reverdecerão",
+    "feedbackCorrect": "Até o deserto volta a ter pasto verde pela ação de Deus.",
+    "feedbackWrong": {
+      "a": "Secar descreve o tempo da praga, não a promessa daqui.",
+      "c": "Os pastos reaparecem verdes, não somem da terra aqui."
+    },
+    "hint": "Leia o futuro prometido para os pastos.",
+    "learningObjective": "Lembrar o destino dos pastos em Joel 2:22.",
+    "evidence": [
+      "Joel 2:22"
+    ]
+  },
+  {
+    "id": "joel-cam-jl-05-anos-06",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:25 a Salmos 126:5?",
+    "prompt": "O que liga Joel 2:25 a Salmos 126:5?",
+    "cue": "O que liga Joel 2:25 a Salmos 126:5?",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "passageA": {
+      "ref": "Joel 2:25",
+      "text": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês."
+    },
+    "passageB": {
+      "ref": "Salmos 126:5",
+      "text": "Os que semeiam com lágrimas, com júbilo colherão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Choro que nunca termina"
+      },
+      {
+        "id": "b",
+        "text": "Perda sem qualquer colheita"
+      },
+      {
+        "id": "c",
+        "text": "Lágrimas viram colheita alegre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "O tempo de perda e choro é seguido de colheita com júbilo.",
+    "feedbackWrong": {
+      "a": "O Salmo promete júbilo depois das lágrimas semeadas.",
+      "b": "Os dois textos terminam em colheita e fartura do povo."
+    },
+    "hint": "Compare o fim de quem passou pela perda.",
+    "learningObjective": "Relacionar a restituição de Joel ao Salmo 126.",
+    "evidence": [
+      "Joel 2:25",
+      "Salmos 126:5"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-05-anos-01",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Joel 2:25 chama a praga de grande exército enviado por Deus, e não de acaso fora do seu governo.",
+    "prompt": "Joel 2:25 chama a praga de grande exército enviado por Deus, e não de acaso fora do seu governo.",
+    "cue": "Joel 2:25 chama a praga de grande exército enviado por Deus, e não de acaso fora do seu governo.",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "meu grande exército que enviei contra vocês",
+    "feedbackCorrect": "A praga é descrita como exército do próprio Deus, enviado por ele.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 2:25 e como Deus nomeia a praga."
+    },
+    "hint": "Veja o nome que Deus dá à praga no fim do verso.",
+    "learningObjective": "Interpretar a praga sob o governo de Deus em Joel 2:25.",
+    "evidence": [
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-05-anos-02",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:27, toque o trecho que mostra onde Deus está em relação ao povo.",
+    "prompt": "Em Joel 2:27, toque o trecho que mostra onde Deus está em relação ao povo.",
+    "cue": "Em Joel 2:27, toque o trecho que mostra onde Deus está em relação ao povo.",
+    "verseRef": "Joel 2:27",
+    "passageText": "E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outro"
+      },
+      {
+        "id": "b",
+        "text": "seu Deus"
+      },
+      {
+        "id": "c",
+        "text": "meio de Israel"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "estou no meio de Israel",
+    "feedbackCorrect": "Deus se faz conhecer presente, no meio do seu povo.",
+    "feedbackWrong": {
+      "a": "Isso nega outro deus, não mostra o lugar da presença.",
+      "b": "Isso diz quem Deus é, não onde ele se mostra presente."
+    },
+    "hint": "Procure a expressão de lugar com Israel.",
+    "learningObjective": "Sustentar a presença de Deus no meio do povo.",
+    "evidence": [
+      "Joel 2:27"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-05-anos-03",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 2:26–27 sustenta sobre a restauração prometida?",
+    "prompt": "Que leitura Joel 2:26–27 sustenta sobre a restauração prometida?",
+    "cue": "Que leitura Joel 2:26–27 sustenta sobre a restauração prometida?",
+    "verseRef": "Joel 2:26–27",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo volta atrás e apaga o passado"
+      },
+      {
+        "id": "b",
+        "text": "O povo restaurado já não louva a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus restaura e se faz conhecer ao povo"
+      },
+      {
+        "id": "d",
+        "text": "Ela garante riqueza a qualquer leitor hoje"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E vocês saberão que estou no meio de Israel",
+    "feedbackCorrect": "Restituir anos leva o povo a louvar e conhecer seu Deus.",
+    "feedbackWrong": {
+      "a": "O texto segue para colheitas futuras, sem reverter o tempo.",
+      "b": "Em 2:26 o povo louva o nome do Senhor ao se fartar.",
+      "d": "A promessa é ao povo do texto e leva ao louvor, não à riqueza certa."
+    },
+    "hint": "Junte fartura, louvor e presença nos três versículos.",
+    "learningObjective": "Escolher a leitura sustentada pela restauração de Joel.",
+    "evidence": [
+      "Joel 2:25–27"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-05-anos-04",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido da restauração em Joel 2?",
+    "prompt": "Qual sequência revela o sentido da restauração em Joel 2?",
+    "cue": "Qual sequência revela o sentido da restauração em Joel 2?",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anos são consumidos pela praga"
+      },
+      {
+        "id": "b",
+        "text": "Deus restitui os anos perdidos"
+      },
+      {
+        "id": "c",
+        "text": "Povo louva e conhece seu Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "Da perda à restituição, o caminho termina em conhecer a Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos anos consumidos, antes da promessa feita."
+    },
+    "hint": "Siga de 2:25 ao louvor e ao saber de 2:27.",
+    "learningObjective": "Ver a restauração como caminho até conhecer a Deus.",
+    "evidence": [
+      "Joel 2:25",
+      "Joel 2:27"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-05-anos-05",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:26, o que o povo fará depois de se fartar?",
+    "prompt": "Em Joel 2:26, o que o povo fará depois de se fartar?",
+    "cue": "Em Joel 2:26, o que o povo fará depois de se fartar?",
+    "verseRef": "Joel 2:26",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "template": "E vocês comerão em abundância, se fartarão e ___ o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "temerão"
+      },
+      {
+        "id": "b",
+        "text": "louvarão"
+      },
+      {
+        "id": "c",
+        "text": "esquecerão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se fartarão e louvarão o nome do Senhor",
+    "feedbackCorrect": "A mesa cheia se transforma em louvor ao nome do Senhor.",
+    "feedbackWrong": {
+      "a": "O povo envergonhado é negado; o louvor é o que vem aqui.",
+      "c": "Quem se farta reconhece Deus, não o apaga da memória."
+    },
+    "hint": "Leia o verbo que acompanha o fartar-se.",
+    "learningObjective": "Lembrar o louvor que segue a fartura em Joel 2:26.",
+    "evidence": [
+      "Joel 2:26"
+    ]
+  },
+  {
+    "id": "joel-pro-jl-05-anos-06",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 2:27 a Êxodo 29:45?",
+    "prompt": "O que liga Joel 2:27 a Êxodo 29:45?",
+    "cue": "O que liga Joel 2:27 a Êxodo 29:45?",
+    "verseRef": "Joel 2:27",
+    "passageText": "E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+    "passageA": {
+      "ref": "Joel 2:27",
+      "text": "E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado."
+    },
+    "passageB": {
+      "ref": "Êxodo 29:45",
+      "text": "E habitarei no meio dos filhos de Israel e serei o seu Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus habita com seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus se afasta de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Povo dispensa a presença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "estou no meio de Israel",
+    "feedbackCorrect": "Nos dois textos, Deus se mostra presente no meio do povo.",
+    "feedbackWrong": {
+      "b": "Êxodo diz que Deus habitará no meio deles, não longe.",
+      "c": "Conhecer Deus no meio é o centro dos dois trechos."
+    },
+    "hint": "Veja onde Deus está nos dois trechos citados.",
+    "learningObjective": "Ligar a presença de Deus em Joel à promessa do Êxodo.",
+    "evidence": [
+      "Joel 2:27",
+      "Êxodo 29:45"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-01",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 2:26, o povo comerá em abundância e louvará o nome do Senhor.",
+    "prompt": "Em Joel 2:26, o povo comerá em abundância e louvará o nome do Senhor.",
+    "cue": "Em Joel 2:26, o povo comerá em abundância e louvará o nome do Senhor.",
+    "verseRef": "Joel 2:26",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "comerão em abundância",
+    "feedbackCorrect": "O texto liga a fartura ao louvor pelo nome do Senhor, seu Deus.",
+    "feedbackWrong": {
+      "false": "Releia Joel 2:26 e veja a fartura seguida de louvor ao Senhor."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar a promessa de fartura e louvor em Joel 2:26.",
+    "evidence": [
+      "Joel 2:26"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-02",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 1:6, toque quem veio contra a terra de Deus.",
+    "prompt": "Em Joel 1:6, toque quem veio contra a terra de Deus.",
+    "cue": "Em Joel 1:6, toque quem veio contra a terra de Deus.",
+    "verseRef": "Joel 1:6",
+    "passageText": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "leão"
+      },
+      {
+        "id": "b",
+        "text": "minha terra"
+      },
+      {
+        "id": "c",
+        "text": "uma nação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "uma nação veio contra a minha terra",
+    "feedbackCorrect": "Uma nação poderosa e inumerável é quem sobe contra a terra.",
+    "feedbackWrong": {
+      "a": "Leão compara os dentes do invasor, não nomeia quem veio.",
+      "b": "A terra é o alvo atingido, não quem veio contra ela."
+    },
+    "hint": "Procure quem subiu contra a terra.",
+    "learningObjective": "Identificar quem invade a terra em Joel 1:6.",
+    "evidence": [
+      "Joel 1:6"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-03",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 2:31, o que acontece antes do grande Dia do Senhor?",
+    "prompt": "Segundo Joel 2:31, o que acontece antes do grande Dia do Senhor?",
+    "cue": "Segundo Joel 2:31, o que acontece antes do grande Dia do Senhor?",
+    "verseRef": "Joel 2:31",
+    "passageText": "O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O sol vira trevas e a lua, sangue"
+      },
+      {
+        "id": "b",
+        "text": "Os gafanhotos deixam a terra"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito é derramado sobre os servos"
+      },
+      {
+        "id": "d",
+        "text": "O povo volta a plantar a terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O sol se tornará em trevas e a lua em sangue",
+    "feedbackCorrect": "Sol e lua mudam antes que venha o grande e temível Dia.",
+    "feedbackWrong": {
+      "b": "A saída da praga não é o sinal que o versículo anuncia.",
+      "c": "Os servos recebem o Espírito em 2:29, não neste sinal.",
+      "d": "Plantar de novo não é o sinal citado neste versículo."
+    },
+    "hint": "Olhe os dois astros citados no versículo.",
+    "learningObjective": "Observar os sinais que antecedem o Dia do Senhor.",
+    "evidence": [
+      "Joel 2:31"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-04",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:28 na ordem do texto.",
+    "prompt": "Monte Joel 2:28 na ordem do texto.",
+    "cue": "Monte Joel 2:28 na ordem do texto.",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "derramarei o meu Espírito sobre toda a carne"
+      },
+      {
+        "id": "b",
+        "text": "os vossos filhos e filhas profetizarão"
+      },
+      {
+        "id": "c",
+        "text": "os vossos velhos sonharão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+    "feedbackCorrect": "Primeiro o derramamento, depois filhos profetizando e velhos sonhando.",
+    "feedbackWrong": {
+      "default": "Comece pelo derramamento sobre toda a carne, no início do verso."
+    },
+    "hint": "O versículo começa com a ação de Deus.",
+    "learningObjective": "Reconhecer a sequência de Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-05",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 2:30, o que Deus mostrará no céu e na terra?",
+    "prompt": "Em Joel 2:30, o que Deus mostrará no céu e na terra?",
+    "cue": "Em Joel 2:30, o que Deus mostrará no céu e na terra?",
+    "verseRef": "Joel 2:30",
+    "passageText": "Mostrarei prodígios no céu e na terra: sangue, fogo e colunas de fumaça.",
+    "template": "Mostrarei ___ no céu e na terra: sangue, fogo e colunas de fumaça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prodígios"
+      },
+      {
+        "id": "b",
+        "text": "castigos"
+      },
+      {
+        "id": "c",
+        "text": "exércitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mostrarei prodígios no céu e na terra",
+    "feedbackCorrect": "Deus anuncia sinais extraordinários no céu e também na terra.",
+    "feedbackWrong": {
+      "b": "O texto fala do que Deus mostrará, não de castigos nomeados assim.",
+      "c": "Exército nomeia a praga em 2:25, não o que Deus mostra aqui."
+    },
+    "hint": "Leia o primeiro verbo e o que vem logo depois dele.",
+    "learningObjective": "Lembrar o que Deus mostrará em Joel 2:30.",
+    "evidence": [
+      "Joel 2:30"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-06",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Joel 1:6",
+    "passageText": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa.",
+    "passageA": {
+      "ref": "Joel 1:6",
+      "text": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma praga devoradora atingiu a terra como força invasora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Exército que protege a terra"
+      },
+      {
+        "id": "b",
+        "text": "Invasão que devora a terra"
+      },
+      {
+        "id": "c",
+        "text": "Colheita guardada com fartura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "uma nação veio contra a minha terra",
+    "feedbackCorrect": "A força invasora devora a terra como a praga devora a colheita.",
+    "feedbackWrong": {
+      "a": "Quem vem contra a terra a devora, não a protege.",
+      "c": "O versículo fala de invasão, não de colheita guardada."
+    },
+    "hint": "Veja o efeito de quem veio contra a terra.",
+    "learningObjective": "Ligar Joel 1:6 à perda que atinge a terra.",
+    "evidence": [
+      "Joel 1:6"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-01",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 2:25–26, a restauração prometida termina no comer, sem louvor a Deus.",
+    "prompt": "Em Joel 2:25–26, a restauração prometida termina no comer, sem louvor a Deus.",
+    "cue": "Em Joel 2:25–26, a restauração prometida termina no comer, sem louvor a Deus.",
+    "verseRef": "Joel 2:26",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "louvarão o nome do Senhor",
+    "feedbackCorrect": "A fartura não termina em si mesma, pois o povo louva o Senhor.",
+    "feedbackWrong": {
+      "true": "Releia o meio de 2:26, onde comer vem junto com louvar."
+    },
+    "hint": "Não pare na primeira parte do versículo.",
+    "learningObjective": "Compreender que a restauração leva ao louvor.",
+    "evidence": [
+      "Joel 2:26"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-02",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:28, toque a palavra que marca o tempo da promessa do Espírito.",
+    "prompt": "Em Joel 2:28, toque a palavra que marca o tempo da promessa do Espírito.",
+    "cue": "Em Joel 2:28, toque a palavra que marca o tempo da promessa do Espírito.",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "depois"
+      },
+      {
+        "id": "b",
+        "text": "toda"
+      },
+      {
+        "id": "c",
+        "text": "sobre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "depois, derramarei",
+    "feedbackCorrect": "A promessa é situada num tempo posterior ao que veio antes.",
+    "feedbackWrong": {
+      "b": "Toda indica o alcance, não o momento da promessa.",
+      "c": "Sobre indica sobre quem, não o momento da promessa."
+    },
+    "hint": "Procure a palavra de tempo logo no começo.",
+    "learningObjective": "Reconhecer o marcador de tempo em Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-03",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 2:27 se relaciona com a promessa de Joel 2:26?",
+    "prompt": "Como Joel 2:27 se relaciona com a promessa de Joel 2:26?",
+    "cue": "Como Joel 2:27 se relaciona com a promessa de Joel 2:26?",
+    "verseRef": "Joel 2:26–27",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado. E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fartura prova que Deus se afastou de Israel"
+      },
+      {
+        "id": "b",
+        "text": "O louvor é trocado pela vergonha do povo"
+      },
+      {
+        "id": "c",
+        "text": "Depois da fartura, o povo saberá que Deus está com ele"
+      },
+      {
+        "id": "d",
+        "text": "Depois da fartura, o povo já não precisa de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E vocês saberão que estou no meio de Israel",
+    "feedbackCorrect": "À fartura segue o reconhecimento de que Deus está no meio do povo.",
+    "feedbackWrong": {
+      "a": "Deus se mostra presente no meio de Israel, não ausente.",
+      "b": "O texto diz que o povo jamais será envergonhado.",
+      "d": "O texto aproxima o povo de Deus, não o afasta dele."
+    },
+    "hint": "Leia o começo do versículo seguinte ao da fartura.",
+    "learningObjective": "Relacionar fartura, louvor e presença de Deus.",
+    "evidence": [
+      "Joel 2:26–27"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-04",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a promessa em Joel 2:25–27?",
+    "prompt": "Como avança a promessa em Joel 2:25–27?",
+    "cue": "Como avança a promessa em Joel 2:25–27?",
+    "verseRef": "Joel 2:25–26",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês. E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anos consumidos pela praga"
+      },
+      {
+        "id": "b",
+        "text": "Comer com fartura e louvar"
+      },
+      {
+        "id": "c",
+        "text": "Saber que Deus está no meio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "Da perda dos anos, o texto passa à fartura e à presença de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos anos consumidos, citados no primeiro versículo."
+    },
+    "hint": "Siga a ordem dos três versículos seguidos.",
+    "learningObjective": "Compreender o avanço da promessa de restauração.",
+    "evidence": [
+      "Joel 2:25–27"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-05",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 2:27, como o povo de Deus nunca será, segundo a promessa?",
+    "prompt": "Em Joel 2:27, como o povo de Deus nunca será, segundo a promessa?",
+    "cue": "Em Joel 2:27, como o povo de Deus nunca será, segundo a promessa?",
+    "verseRef": "Joel 2:27",
+    "passageText": "E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+    "template": "E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "envergonhado"
+      },
+      {
+        "id": "b",
+        "text": "abandonado"
+      },
+      {
+        "id": "c",
+        "text": "esquecido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o meu povo nunca será envergonhado",
+    "feedbackCorrect": "A presença de Deus no meio do povo afasta a vergonha prometida.",
+    "feedbackWrong": {
+      "b": "Deus afirma estar no meio de Israel, não ter abandonado o povo.",
+      "c": "O povo saberá quem Deus é, não será deixado sem memória dele."
+    },
+    "hint": "Leia a última afirmação do versículo.",
+    "learningObjective": "Lembrar o fim da vergonha prometido em Joel 2:27.",
+    "evidence": [
+      "Joel 2:27"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-06",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:28 a Atos 2:17?",
+    "prompt": "O que liga Joel 2:28 a Atos 2:17?",
+    "cue": "O que liga Joel 2:28 a Atos 2:17?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+    },
+    "passageB": {
+      "ref": "Atos 2:17",
+      "text": "E nos últimos dias, diz o Senhor, derramarei do meu Espírito sobre toda a carne, vossos filhos e vossas filhas profetizarão, vossos jovens terão visões, e sonharão sonhos vossos idosos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito só para sacerdotes"
+      },
+      {
+        "id": "b",
+        "text": "Espírito derramado sobre todos"
+      },
+      {
+        "id": "c",
+        "text": "Sinais sem o Espírito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+    "feedbackCorrect": "Pedro cita Joel para falar do Espírito derramado no Pentecostes.",
+    "feedbackWrong": {
+      "a": "Joel fala de toda a carne, não de um grupo restrito.",
+      "c": "Nos dois textos o centro é o Espírito derramado por Deus."
+    },
+    "hint": "Compare quem recebe, nos dois trechos.",
+    "learningObjective": "Relacionar a promessa de Joel ao Pentecostes em Atos.",
+    "evidence": [
+      "Joel 2:28",
+      "Atos 2:17"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-01",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Joel 2:30–31 apresenta sinais no céu antes do grande e temível Dia do Senhor.",
+    "prompt": "Joel 2:30–31 apresenta sinais no céu antes do grande e temível Dia do Senhor.",
+    "cue": "Joel 2:30–31 apresenta sinais no céu antes do grande e temível Dia do Senhor.",
+    "verseRef": "Joel 2:31",
+    "passageText": "O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "antes que venha o grande e temível Dia do Senhor",
+    "feedbackCorrect": "Os sinais são colocados antes da vinda do grande Dia.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 2:31 e a ordem entre sinais e o Dia."
+    },
+    "hint": "Repare na palavra que marca o que vem primeiro.",
+    "learningObjective": "Interpretar os sinais como anteriores ao Dia do Senhor.",
+    "evidence": [
+      "Joel 2:31"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-02",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:29, toque um grupo que também recebe o Espírito.",
+    "prompt": "Em Joel 2:29, toque um grupo que também recebe o Espírito.",
+    "cue": "Em Joel 2:29, toque um grupo que também recebe o Espírito.",
+    "verseRef": "Joel 2:29",
+    "passageText": "E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "naqueles dias"
+      },
+      {
+        "id": "b",
+        "text": "meu Espírito"
+      },
+      {
+        "id": "c",
+        "text": "os servos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sobre os servos e sobre as servas",
+    "feedbackCorrect": "Até quem servia recebe o Espírito prometido por Deus.",
+    "feedbackWrong": {
+      "a": "Isso marca o tempo, não um grupo que recebe o Espírito.",
+      "b": "O Espírito é o que é derramado, não um grupo de pessoas."
+    },
+    "hint": "Procure pessoas, não o dom nem o tempo.",
+    "learningObjective": "Sustentar que servos também recebem o Espírito.",
+    "evidence": [
+      "Joel 2:29"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-03",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 2:28 sustenta sobre quem recebe o Espírito?",
+    "prompt": "Que leitura Joel 2:28 sustenta sobre quem recebe o Espírito?",
+    "cue": "Que leitura Joel 2:28 sustenta sobre quem recebe o Espírito?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos, filhas, velhos e jovens são alcançados"
+      },
+      {
+        "id": "b",
+        "text": "Só profetas de profissão recebem o Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Só homens adultos recebem o Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Só os líderes do povo recebem o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "A lista mistura idade e sexo para mostrar alcance amplo.",
+    "feedbackWrong": {
+      "b": "Filhos, filhas, velhos e jovens entram, não só profetas.",
+      "c": "Filhas são nomeadas junto com filhos no versículo.",
+      "d": "O texto abre a promessa para muito além dos líderes."
+    },
+    "hint": "Veja a variedade de pessoas nomeadas no versículo.",
+    "learningObjective": "Escolher a leitura que o alcance de Joel 2:28 sustenta.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-04",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da restauração em Joel?",
+    "prompt": "Qual sequência revela o caminho da restauração em Joel?",
+    "cue": "Qual sequência revela o caminho da restauração em Joel?",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Praga consome os anos da terra"
+      },
+      {
+        "id": "b",
+        "text": "Deus promete restituir os anos"
+      },
+      {
+        "id": "c",
+        "text": "Deus derrama o Espírito sobre todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "A perda não fecha a história, pois Deus restitui e derrama o Espírito.",
+    "feedbackWrong": {
+      "default": "Comece pela perda dos anos, antes de qualquer promessa."
+    },
+    "hint": "Siga o movimento de Joel 2:25 até 2:28.",
+    "learningObjective": "Ver a restauração como caminho que culmina no Espírito.",
+    "evidence": [
+      "Joel 2:25",
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-05",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:31, como é chamado o Dia do Senhor que vem?",
+    "prompt": "Em Joel 2:31, como é chamado o Dia do Senhor que vem?",
+    "cue": "Em Joel 2:31, como é chamado o Dia do Senhor que vem?",
+    "verseRef": "Joel 2:31",
+    "passageText": "O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor.",
+    "template": "O sol se tornará em trevas e a lua em sangue antes que venha o grande e ___ Dia do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "próximo"
+      },
+      {
+        "id": "b",
+        "text": "temível"
+      },
+      {
+        "id": "c",
+        "text": "esperado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o grande e temível Dia do Senhor",
+    "feedbackCorrect": "O Dia é grande e inspira temor, segundo o próprio texto.",
+    "feedbackWrong": {
+      "a": "O texto qualifica o Dia pelo seu peso, não pela distância.",
+      "c": "Esperado não é a palavra que o versículo usa para o Dia."
+    },
+    "hint": "Leia os dois adjetivos dados ao Dia.",
+    "learningObjective": "Lembrar como Joel qualifica o Dia do Senhor.",
+    "evidence": [
+      "Joel 2:31"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-06",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 2:28 a Isaías 44:3?",
+    "prompt": "O que liga Joel 2:28 a Isaías 44:3?",
+    "cue": "O que liga Joel 2:28 a Isaías 44:3?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+    },
+    "passageB": {
+      "ref": "Isaías 44:3",
+      "text": "Pois derramarei água sobre o sedento e torrentes sobre a terra seca; derramarei o meu Espírito sobre a tua posteridade e a minha bênção sobre os teus descendentes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus derrama o seu Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Deus retém o seu Espírito"
+      },
+      {
+        "id": "c",
+        "text": "O povo produz o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "derramarei o meu Espírito",
+    "feedbackCorrect": "Nos dois textos é Deus quem toma a iniciativa de derramar.",
+    "feedbackWrong": {
+      "b": "Os dois textos falam de derramar, não de reter o dom.",
+      "c": "O Espírito é dom de Deus, não produção do povo."
+    },
+    "hint": "Veja quem age do mesmo modo nos dois trechos.",
+    "learningObjective": "Ligar a promessa do Espírito em Joel e em Isaías.",
+    "evidence": [
+      "Joel 2:28",
+      "Isaías 44:3"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-01",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 2:28, Deus derramará o seu Espírito apenas sobre os velhos.",
+    "prompt": "Em Joel 2:28, Deus derramará o seu Espírito apenas sobre os velhos.",
+    "cue": "Em Joel 2:28, Deus derramará o seu Espírito apenas sobre os velhos.",
+    "verseRef": "Joel 2:28–29",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões; E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "O alcance anunciado é toda a carne, não um só grupo de idade.",
+    "feedbackWrong": {
+      "true": "Releia sobre quem o Espírito é derramado no começo do verso."
+    },
+    "hint": "Veja o alcance dito logo após o verbo derramar.",
+    "learningObjective": "Observar o alcance universal de Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-02",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 2:28, toque sobre quem Deus derramará o seu Espírito.",
+    "prompt": "Em Joel 2:28, toque sobre quem Deus derramará o seu Espírito.",
+    "cue": "Em Joel 2:28, toque sobre quem Deus derramará o seu Espírito.",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "vossos filhos"
+      },
+      {
+        "id": "b",
+        "text": "toda a carne"
+      },
+      {
+        "id": "c",
+        "text": "vossos velhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "A promessa abrange todas as pessoas, sem recorte de grupo.",
+    "feedbackWrong": {
+      "a": "Filhos são parte do alcance, mas a frase maior vem antes.",
+      "c": "Velhos sonham dentro da promessa, mas o alcance é maior."
+    },
+    "hint": "Procure a expressão mais ampla do versículo.",
+    "learningObjective": "Identificar o alcance da promessa em Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-03",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 2:29, quem também receberá o Espírito naqueles dias?",
+    "prompt": "Segundo Joel 2:29, quem também receberá o Espírito naqueles dias?",
+    "cue": "Segundo Joel 2:29, quem também receberá o Espírito naqueles dias?",
+    "verseRef": "Joel 2:29",
+    "passageText": "E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente os filhos mais velhos"
+      },
+      {
+        "id": "b",
+        "text": "Somente os profetas antigos"
+      },
+      {
+        "id": "c",
+        "text": "Somente os moradores de Sião"
+      },
+      {
+        "id": "d",
+        "text": "Os servos e as servas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "sobre os servos e sobre as servas",
+    "feedbackCorrect": "Quem servia, muitas vezes esquecido, também é incluído.",
+    "feedbackWrong": {
+      "a": "Filhos aparecem em 2:28; aqui outros são acrescentados.",
+      "b": "Profetas antigos não são o acréscimo deste versículo.",
+      "c": "O versículo não limita o dom a moradores de um lugar."
+    },
+    "hint": "Leia quem é acrescentado com a palavra também.",
+    "learningObjective": "Observar a inclusão dos servos em Joel 2:29.",
+    "evidence": [
+      "Joel 2:29"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-04",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:28 na ordem do texto.",
+    "prompt": "Monte Joel 2:28 na ordem do texto.",
+    "cue": "Monte Joel 2:28 na ordem do texto.",
+    "verseRef": "Joel 2:28–29",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões; E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "derramarei o meu Espírito sobre toda a carne"
+      },
+      {
+        "id": "b",
+        "text": "os vossos filhos e filhas profetizarão"
+      },
+      {
+        "id": "c",
+        "text": "os jovens terão visões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+    "feedbackCorrect": "Derramamento, filhos profetizando e jovens com visões, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo derramamento, que abre a promessa do versículo."
+    },
+    "hint": "O versículo abre com a ação de Deus.",
+    "learningObjective": "Reconhecer a sequência de Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-05",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 2:28, o que os jovens terão, segundo a promessa?",
+    "prompt": "Em Joel 2:28, o que os jovens terão, segundo a promessa?",
+    "cue": "Em Joel 2:28, o que os jovens terão, segundo a promessa?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "template": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão ___;",
+    "options": [
+      {
+        "id": "a",
+        "text": "cargos"
+      },
+      {
+        "id": "b",
+        "text": "sonhos"
+      },
+      {
+        "id": "c",
+        "text": "visões"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os jovens terão visões",
+    "feedbackCorrect": "Aos jovens cabem visões, dentro da mesma promessa ampla.",
+    "feedbackWrong": {
+      "a": "A promessa não fala de cargos para os jovens aqui.",
+      "b": "Sonhar é dito dos velhos; aos jovens cabe outra palavra."
+    },
+    "hint": "Compare o que cabe aos velhos e o que cabe aos jovens.",
+    "learningObjective": "Lembrar o que os jovens terão em Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-06",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa alcança gente comum de todas as idades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito sem profecia"
+      },
+      {
+        "id": "b",
+        "text": "Espírito para toda a carne"
+      },
+      {
+        "id": "c",
+        "text": "Espírito só para reis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "A promessa alcança gente comum, de idades e condições variadas.",
+    "feedbackWrong": {
+      "a": "Filhos e filhas profetizarão, diz o próprio versículo.",
+      "c": "Reis nem são nomeados; o alcance é bem mais amplo."
+    },
+    "hint": "Veja a amplitude de quem é alcançado.",
+    "learningObjective": "Ligar Joel 2:28 à inclusão de todas as pessoas.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-01",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 2:28–29, os servos e as servas ficam de fora do derramamento do Espírito.",
+    "prompt": "Em Joel 2:28–29, os servos e as servas ficam de fora do derramamento do Espírito.",
+    "cue": "Em Joel 2:28–29, os servos e as servas ficam de fora do derramamento do Espírito.",
+    "verseRef": "Joel 2:29",
+    "passageText": "E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "também derramarei o meu Espírito sobre os servos",
+    "feedbackCorrect": "A palavra também inclui servos e servas na mesma promessa.",
+    "feedbackWrong": {
+      "true": "Releia 2:29, onde servos e servas são acrescentados."
+    },
+    "hint": "Preste atenção em quem o segundo versículo acrescenta.",
+    "learningObjective": "Compreender que Joel 2:29 amplia o alcance de 2:28.",
+    "evidence": [
+      "Joel 2:29"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-02",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:29, toque a palavra que acrescenta servos e servas à promessa.",
+    "prompt": "Em Joel 2:29, toque a palavra que acrescenta servos e servas à promessa.",
+    "cue": "Em Joel 2:29, toque a palavra que acrescenta servos e servas à promessa.",
+    "verseRef": "Joel 2:29",
+    "passageText": "E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sobre"
+      },
+      {
+        "id": "b",
+        "text": "naqueles"
+      },
+      {
+        "id": "c",
+        "text": "também"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E também derramarei",
+    "feedbackCorrect": "A promessa se alarga e inclui quem antes não era contado.",
+    "feedbackWrong": {
+      "a": "Sobre indica sobre quem, não o acréscimo à promessa.",
+      "b": "Naqueles marca o tempo, não o acréscimo de pessoas."
+    },
+    "hint": "Procure a palavra que soma gente nova à lista.",
+    "learningObjective": "Reconhecer o marcador de inclusão em Joel 2:29.",
+    "evidence": [
+      "Joel 2:29"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-03",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 2:29 se relaciona com Joel 2:28?",
+    "prompt": "Como Joel 2:29 se relaciona com Joel 2:28?",
+    "cue": "Como Joel 2:29 se relaciona com Joel 2:28?",
+    "verseRef": "Joel 2:28–29",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões; E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limita a promessa a um grupo menor"
+      },
+      {
+        "id": "b",
+        "text": "Encerra a promessa antes dos sinais"
+      },
+      {
+        "id": "c",
+        "text": "Troca o Espírito por sinais no céu"
+      },
+      {
+        "id": "d",
+        "text": "Amplia a promessa para quem servia"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E também derramarei o meu Espírito sobre os servos",
+    "feedbackCorrect": "O segundo versículo alarga a lista e inclui os servos.",
+    "feedbackWrong": {
+      "a": "A lista cresce em 2:29, não diminui o alcance.",
+      "b": "A promessa continua e se amplia no versículo seguinte.",
+      "c": "O Espírito continua no centro; sinais vêm em 2:30."
+    },
+    "hint": "Veja o que muda na lista de pessoas entre os versos.",
+    "learningObjective": "Relacionar a ampliação de Joel 2:29 com 2:28.",
+    "evidence": [
+      "Joel 2:28–29"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-04",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a promessa em Joel 2:28–29?",
+    "prompt": "Como avança a promessa em Joel 2:28–29?",
+    "cue": "Como avança a promessa em Joel 2:28–29?",
+    "verseRef": "Joel 2:28–29",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões; E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus anuncia um tempo depois"
+      },
+      {
+        "id": "b",
+        "text": "Espírito sobre toda a carne"
+      },
+      {
+        "id": "c",
+        "text": "Servos e servas incluídos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E acontecerá que, depois, derramarei",
+    "feedbackCorrect": "Do anúncio do depois, o texto chega aos servos incluídos.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio que abre 2:28, antes da lista."
+    },
+    "hint": "Siga a ordem em que as pessoas são nomeadas.",
+    "learningObjective": "Compreender o movimento de ampliação da promessa.",
+    "evidence": [
+      "Joel 2:28–29"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-05",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 2:29, sobre os servos e sobre quem mais Deus derramará o Espírito?",
+    "prompt": "Em Joel 2:29, sobre os servos e sobre quem mais Deus derramará o Espírito?",
+    "cue": "Em Joel 2:29, sobre os servos e sobre quem mais Deus derramará o Espírito?",
+    "verseRef": "Joel 2:29",
+    "passageText": "E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "template": "E também derramarei o meu Espírito sobre os servos e sobre as ___ naqueles dias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhas"
+      },
+      {
+        "id": "b",
+        "text": "servas"
+      },
+      {
+        "id": "c",
+        "text": "jovens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sobre as servas naqueles dias",
+    "feedbackCorrect": "Servas são nomeadas ao lado dos servos, no mesmo derramamento.",
+    "feedbackWrong": {
+      "a": "Filhas aparecem em 2:28; aqui o par é com os servos.",
+      "c": "Jovens aparecem em 2:28; aqui quem acompanha os servos é outro grupo."
+    },
+    "hint": "Leia o par que o versículo forma com os servos.",
+    "learningObjective": "Lembrar quem acompanha os servos em Joel 2:29.",
+    "evidence": [
+      "Joel 2:29"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-06",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:28 a Números 11:29?",
+    "prompt": "O que liga Joel 2:28 a Números 11:29?",
+    "cue": "O que liga Joel 2:28 a Números 11:29?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+    },
+    "passageB": {
+      "ref": "Números 11:29",
+      "text": "Porém Moisés lhe disse: Você tem ciúmes por mim? Tomara que todo o povo do Senhor fosse profeta e que o Senhor lhes desse o seu Espírito sobre eles!"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Profecia sem o Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Espírito além de um líder"
+      },
+      {
+        "id": "c",
+        "text": "Espírito restrito a Moisés"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "Moisés deseja que todo o povo receba o Espírito de Deus.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, profetizar vem do Espírito dado por Deus.",
+      "c": "Moisés deseja justamente o contrário de um dom restrito."
+    },
+    "hint": "Veja o desejo que Moisés expressa no outro trecho.",
+    "learningObjective": "Relacionar o desejo de Moisés à promessa de Joel.",
+    "evidence": [
+      "Joel 2:28",
+      "Números 11:29"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-01",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Joel 2:28–31 liga o derramamento do Espírito a sinais que vêm antes do Dia do Senhor.",
+    "prompt": "Joel 2:28–31 liga o derramamento do Espírito a sinais que vêm antes do Dia do Senhor.",
+    "cue": "Joel 2:28–31 liga o derramamento do Espírito a sinais que vêm antes do Dia do Senhor.",
+    "verseRef": "Joel 2:31",
+    "passageText": "O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "antes que venha o grande e temível Dia do Senhor",
+    "feedbackCorrect": "Espírito derramado e sinais aparecem na mesma sequência do texto.",
+    "feedbackWrong": {
+      "false": "Leia 2:28 a 2:31 em sequência e veja os sinais antes do Dia."
+    },
+    "hint": "Leia os quatro versículos como uma sequência só.",
+    "learningObjective": "Interpretar Espírito e sinais dentro da mesma promessa.",
+    "evidence": [
+      "Joel 2:31"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-02",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:30, toque o que Deus mostrará no céu e na terra.",
+    "prompt": "Em Joel 2:30, toque o que Deus mostrará no céu e na terra.",
+    "cue": "Em Joel 2:30, toque o que Deus mostrará no céu e na terra.",
+    "verseRef": "Joel 2:30",
+    "passageText": "Mostrarei prodígios no céu e na terra: sangue, fogo e colunas de fumaça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fogo"
+      },
+      {
+        "id": "b",
+        "text": "prodígios"
+      },
+      {
+        "id": "c",
+        "text": "sangue"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mostrarei prodígios no céu e na terra",
+    "feedbackCorrect": "Sinais extraordinários acompanham a promessa do Espírito.",
+    "feedbackWrong": {
+      "a": "Fogo é um dos sinais listados, não o nome dado a todos.",
+      "c": "Sangue é um dos sinais listados, não o nome dado a todos."
+    },
+    "hint": "Procure a palavra que resume todos os sinais.",
+    "learningObjective": "Sustentar com o texto os sinais de Joel 2:30.",
+    "evidence": [
+      "Joel 2:30"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-03",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 2:28 sustenta sobre o alcance do Espírito?",
+    "prompt": "Que leitura Joel 2:28 sustenta sobre o alcance do Espírito?",
+    "cue": "Que leitura Joel 2:28 sustenta sobre o alcance do Espírito?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus entrega o dom só a quem governa"
+      },
+      {
+        "id": "b",
+        "text": "Deus restringe o dom a profetas de profissão"
+      },
+      {
+        "id": "c",
+        "text": "Deus limita o dom a homens já idosos"
+      },
+      {
+        "id": "d",
+        "text": "Deus inclui idades e condições diferentes"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "Jovens e velhos, filhos e filhas aparecem na mesma promessa.",
+    "feedbackWrong": {
+      "a": "Servos em 2:29 mostram que governar não é condição.",
+      "b": "A lista vai muito além de profetas de profissão.",
+      "c": "Jovens e filhas desmentem um dom só para idosos."
+    },
+    "hint": "Compare a lista inteira de pessoas do trecho.",
+    "learningObjective": "Escolher a leitura sustentada pelo alcance de Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-04",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da promessa do Espírito na Bíblia?",
+    "prompt": "Qual sequência revela o caminho da promessa do Espírito na Bíblia?",
+    "cue": "Qual sequência revela o caminho da promessa do Espírito na Bíblia?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus promete derramar o Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Pedro reconhece Joel no Pentecostes"
+      },
+      {
+        "id": "c",
+        "text": "A promessa alcança os que Deus chama"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+    "feedbackCorrect": "Joel promete, Pedro reconhece em Atos e a promessa se alarga.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa em Joel, antes do Pentecostes."
+    },
+    "hint": "Siga a ordem entre Antigo e Novo Testamento.",
+    "learningObjective": "Ver Joel 2:28 dentro do fio que chega a Atos 2.",
+    "evidence": [
+      "Joel 2:28",
+      "Atos 2:17",
+      "Atos 2:39"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-05",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:31, em que a lua se tornará antes do Dia do Senhor?",
+    "prompt": "Em Joel 2:31, em que a lua se tornará antes do Dia do Senhor?",
+    "cue": "Em Joel 2:31, em que a lua se tornará antes do Dia do Senhor?",
+    "verseRef": "Joel 2:31",
+    "passageText": "O sol se tornará em trevas e a lua em sangue antes que venha o grande e temível Dia do Senhor.",
+    "template": "O sol se tornará em trevas e a lua em ___ antes que venha o grande e temível Dia do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a lua em sangue",
+    "feedbackCorrect": "A lua em sangue é um dos sinais antes do grande Dia.",
+    "feedbackWrong": {
+      "b": "Trevas é o que acontece com o sol, não com a lua aqui.",
+      "c": "O texto não fala de mais luz, e sim de mudança na lua."
+    },
+    "hint": "Não confunda o que acontece com o sol e com a lua.",
+    "learningObjective": "Lembrar o sinal da lua em Joel 2:31.",
+    "evidence": [
+      "Joel 2:31"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-06",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 2:28 a Atos 2:17?",
+    "prompt": "O que liga Joel 2:28 a Atos 2:17?",
+    "cue": "O que liga Joel 2:28 a Atos 2:17?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+    },
+    "passageB": {
+      "ref": "Atos 2:17",
+      "text": "E nos últimos dias, diz o Senhor, derramarei do meu Espírito sobre toda a carne, vossos filhos e vossas filhas profetizarão, vossos jovens terão visões, e sonharão sonhos vossos idosos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito dado só aos apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "Pedro cita Joel em Pentecostes"
+      },
+      {
+        "id": "c",
+        "text": "Uma promessa sem cumprimento citado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "derramarei o meu Espírito",
+    "feedbackCorrect": "No Pentecostes, Pedro lê o acontecimento com as palavras de Joel.",
+    "feedbackWrong": {
+      "a": "Atos repete a promessa sobre toda a carne, sem restringir.",
+      "c": "Pedro apresenta o Pentecostes com a profecia de Joel."
+    },
+    "hint": "Veja como Pedro explica o Pentecostes em Atos.",
+    "learningObjective": "Ligar Joel 2:28 ao Pentecostes, como o Novo Testamento faz.",
+    "evidence": [
+      "Joel 2:28",
+      "Atos 2:17"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-01",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 1:4, o que o gafanhoto deixou foi comido pela lagarta.",
+    "prompt": "Em Joel 1:4, o que o gafanhoto deixou foi comido pela lagarta.",
+    "cue": "Em Joel 1:4, o que o gafanhoto deixou foi comido pela lagarta.",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O que a lagarta deixou, comeu o gafanhoto",
+    "feedbackCorrect": "A ordem é inversa, pois a lagarta vem antes do gafanhoto.",
+    "feedbackWrong": {
+      "true": "Releia o começo da cadeia e quem come primeiro."
+    },
+    "hint": "Veja quem aparece primeiro na cadeia do verso.",
+    "learningObjective": "Observar a ordem da cadeia em Joel 1:4.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-02",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 2:13, toque o que Deus manda rasgar.",
+    "prompt": "Em Joel 2:13, toque o que Deus manda rasgar.",
+    "cue": "Em Joel 2:13, toque o que Deus manda rasgar.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o coração"
+      },
+      {
+        "id": "b",
+        "text": "as vestes"
+      },
+      {
+        "id": "c",
+        "text": "vosso Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Rasgai o coração",
+    "feedbackCorrect": "É o interior, e não a roupa, que Deus quer ver rasgado.",
+    "feedbackWrong": {
+      "b": "Vestes são justamente o que não deve ser o centro aqui.",
+      "c": "Deus é quem recebe a volta, não o que se rasga aqui."
+    },
+    "hint": "Procure a parte interior da pessoa, no início.",
+    "learningObjective": "Identificar o que rasgar em Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-03",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 2:25, o que Deus promete restituir ao povo?",
+    "prompt": "Segundo Joel 2:25, o que Deus promete restituir ao povo?",
+    "cue": "Segundo Joel 2:25, o que Deus promete restituir ao povo?",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os nomes das gerações passadas"
+      },
+      {
+        "id": "b",
+        "text": "As trombetas tocadas em Sião"
+      },
+      {
+        "id": "c",
+        "text": "As vestes rasgadas no jejum"
+      },
+      {
+        "id": "d",
+        "text": "Os anos consumidos pela praga"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "restituirei a vocês os anos",
+    "feedbackCorrect": "Os anos devorados pelos insetos são o objeto da promessa.",
+    "feedbackWrong": {
+      "a": "Gerações aparecem em Joel 1:3, não como objeto devolvido.",
+      "b": "Trombeta aparece em 2:15, convocando, não sendo devolvida.",
+      "c": "Vestes pertencem ao chamado de 2:13, não a esta promessa."
+    },
+    "hint": "Leia o objeto direto da promessa feita por Deus.",
+    "learningObjective": "Observar o objeto da restituição em Joel 2:25.",
+    "evidence": [
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-04",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 1:4 na ordem do texto.",
+    "prompt": "Monte Joel 1:4 na ordem do texto.",
+    "cue": "Monte Joel 1:4 na ordem do texto.",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O que a lagarta deixou, comeu o gafanhoto"
+      },
+      {
+        "id": "b",
+        "text": "o que o gafanhoto deixou, comeu o gafanhoto migrador"
+      },
+      {
+        "id": "c",
+        "text": "o que o gafanhoto migrador deixou, comeu o gafanhoto devorador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O que a lagarta deixou, comeu o gafanhoto",
+    "feedbackCorrect": "A cadeia avança da lagarta ao migrador, comendo cada resto.",
+    "feedbackWrong": {
+      "default": "Comece pelo resto que a lagarta deixou para trás."
+    },
+    "hint": "O primeiro elo da cadeia abre o versículo.",
+    "learningObjective": "Reconhecer a sequência da perda em Joel 1:4.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-05",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 2:28, o que os vossos filhos e filhas farão?",
+    "prompt": "Em Joel 2:28, o que os vossos filhos e filhas farão?",
+    "cue": "Em Joel 2:28, o que os vossos filhos e filhas farão?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "template": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas ___, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "profetizarão"
+      },
+      {
+        "id": "b",
+        "text": "cantarão"
+      },
+      {
+        "id": "c",
+        "text": "sonharão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "filhas profetizarão",
+    "feedbackCorrect": "Filhos e filhas falarão movidos pelo Espírito derramado.",
+    "feedbackWrong": {
+      "b": "O texto não usa esse verbo para filhos e filhas aqui.",
+      "c": "Sonhar cabe aos velhos, dentro da mesma promessa ampla."
+    },
+    "hint": "Compare a parte de filhos e filhas com a dos velhos.",
+    "learningObjective": "Lembrar a ação de filhos e filhas em Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-06",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "passageA": {
+      "ref": "Joel 1:4",
+      "text": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A perda se completou de devorador em devorador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Plantio que recomeça"
+      },
+      {
+        "id": "b",
+        "text": "Perda que se completa"
+      },
+      {
+        "id": "c",
+        "text": "Colheita que se guarda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "comeu o gafanhoto destruidor",
+    "feedbackCorrect": "Um devorador após outro esvazia a terra, sem deixar resto.",
+    "feedbackWrong": {
+      "a": "O versículo descreve perda contínua, não novo plantio.",
+      "c": "Nenhum resto é guardado; cada sobra é comida adiante."
+    },
+    "hint": "Acompanhe o resto deixado em cada etapa.",
+    "learningObjective": "Ligar Joel 1:4 à perda progressiva da colheita.",
+    "evidence": [
+      "Joel 1:4"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-07",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 2:26, toque como o povo comerá após a restauração.",
+    "prompt": "Em Joel 2:26, toque como o povo comerá após a restauração.",
+    "cue": "Em Joel 2:26, toque como o povo comerá após a restauração.",
+    "verseRef": "Joel 2:26",
+    "passageText": "E vocês comerão em abundância, se fartarão e louvarão o nome do Senhor, seu Deus, que agiu maravilhosamente a seu favor; e o meu povo jamais será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em abundância"
+      },
+      {
+        "id": "b",
+        "text": "seu Deus"
+      },
+      {
+        "id": "c",
+        "text": "nome do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "comerão em abundância",
+    "feedbackCorrect": "A mesa restaurada é farta, depois dos anos de escassez.",
+    "feedbackWrong": {
+      "b": "Isso nomeia Deus, não o modo de comer do povo aqui.",
+      "c": "Isso é louvado pelo povo, não o modo de comer citado."
+    },
+    "hint": "Procure a expressão ligada ao verbo comer.",
+    "learningObjective": "Observar a fartura prometida em Joel 2:26.",
+    "evidence": [
+      "Joel 2:26"
+    ]
+  },
+  {
+    "id": "joel-sem-joel-joel-03-desafio-joel-08",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:13 na ordem do texto.",
+    "prompt": "Monte Joel 2:13 na ordem do texto.",
+    "cue": "Monte Joel 2:13 na ordem do texto.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o coração e não as vestes"
+      },
+      {
+        "id": "b",
+        "text": "convertei-vos ao Senhor, vosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "pois ele é misericordioso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "Coração rasgado, volta a Deus e o motivo em quem ele é.",
+    "feedbackWrong": {
+      "default": "Comece pelo que deve ser rasgado, logo no início."
+    },
+    "hint": "O chamado interior abre o versículo inteiro.",
+    "learningObjective": "Reconhecer a ordem do chamado em Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-01",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 2:12–13, Deus pede primeiro as vestes rasgadas e só depois o coração voltado.",
+    "prompt": "Em Joel 2:12–13, Deus pede primeiro as vestes rasgadas e só depois o coração voltado.",
+    "cue": "Em Joel 2:12–13, Deus pede primeiro as vestes rasgadas e só depois o coração voltado.",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "O coração vem primeiro e as vestes não substituem a volta.",
+    "feedbackWrong": {
+      "true": "Releia a ordem direta do começo de Joel 2:13."
+    },
+    "hint": "Veja a prioridade dada logo na primeira frase.",
+    "learningObjective": "Compreender a prioridade do coração em Joel 2:13.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-02",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:28, toque a palavra que marca o tempo posterior da promessa.",
+    "prompt": "Em Joel 2:28, toque a palavra que marca o tempo posterior da promessa.",
+    "cue": "Em Joel 2:28, toque a palavra que marca o tempo posterior da promessa.",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda"
+      },
+      {
+        "id": "b",
+        "text": "depois"
+      },
+      {
+        "id": "c",
+        "text": "sobre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "depois, derramarei",
+    "feedbackCorrect": "A promessa do Espírito vem após a restauração anunciada.",
+    "feedbackWrong": {
+      "a": "Toda indica o alcance, não o momento da promessa.",
+      "c": "Sobre indica sobre quem, não o momento da promessa."
+    },
+    "hint": "Procure a palavra de tempo logo no início.",
+    "learningObjective": "Reconhecer o marcador temporal em Joel 2:28.",
+    "evidence": [
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-03",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 2:13 explica por que o povo pode voltar para Deus?",
+    "prompt": "Como Joel 2:13 explica por que o povo pode voltar para Deus?",
+    "cue": "Como Joel 2:13 explica por que o povo pode voltar para Deus?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sua indiferença dispensa o coração"
+      },
+      {
+        "id": "b",
+        "text": "Sua paciência e bondade abrem a volta"
+      },
+      {
+        "id": "c",
+        "text": "Sua distância torna a volta inútil"
+      },
+      {
+        "id": "d",
+        "text": "Sua pressa em punir fecha a volta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tardio em se irar e grande em bondade",
+    "feedbackCorrect": "Deus é paciente e bondoso, por isso voltar faz sentido.",
+    "feedbackWrong": {
+      "a": "Bondade ativa é o oposto de indiferença neste texto.",
+      "c": "Ele chama o povo a si, mostrando-se bem presente aqui.",
+      "d": "Ele é tardio em irar-se, não apressado em fechar portas."
+    },
+    "hint": "Leia as qualidades de Deus na segunda metade.",
+    "learningObjective": "Relacionar o caráter de Deus ao chamado à volta.",
+    "evidence": [
+      "Joel 2:13"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-04",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o fio de Joel da perda à promessa?",
+    "prompt": "Como avança o fio de Joel da perda à promessa?",
+    "cue": "Como avança o fio de Joel da perda à promessa?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Praga devora a terra em cadeia"
+      },
+      {
+        "id": "b",
+        "text": "Deus chama o povo ao coração"
+      },
+      {
+        "id": "c",
+        "text": "Deus promete restituir os anos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "comeu o gafanhoto",
+    "feedbackCorrect": "Da perda descrita, o livro passa ao chamado e à restituição.",
+    "feedbackWrong": {
+      "default": "Comece pela perda de Joel 1, antes do chamado."
+    },
+    "hint": "Siga a ordem dos grandes momentos do livro.",
+    "learningObjective": "Compreender o fio perda, chamado e promessa em Joel.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-05",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 1:6, como é descrita a nação que veio contra a terra?",
+    "prompt": "Em Joel 1:6, como é descrita a nação que veio contra a terra?",
+    "cue": "Em Joel 1:6, como é descrita a nação que veio contra a terra?",
+    "verseRef": "Joel 1:6",
+    "passageText": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa.",
+    "template": "Porque uma nação veio contra a minha terra, poderosa e ___; seus dentes são como os dentes de leão, e têm queixais de uma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequena"
+      },
+      {
+        "id": "b",
+        "text": "passageira"
+      },
+      {
+        "id": "c",
+        "text": "inumerável"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "poderosa e inumerável",
+    "feedbackCorrect": "Poderosa e sem número é como o invasor é apresentado.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário sobre o tamanho dessa força.",
+      "b": "A força devasta a terra, não passa sem deixar marca."
+    },
+    "hint": "Leia os dois adjetivos dados à nação invasora.",
+    "learningObjective": "Lembrar a descrição do invasor em Joel 1:6.",
+    "evidence": [
+      "Joel 1:6"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-06",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:13 a Salmos 51:17?",
+    "prompt": "O que liga Joel 2:13 a Salmos 51:17?",
+    "cue": "O que liga Joel 2:13 a Salmos 51:17?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Salmos 51:17",
+      "text": "Os sacrifícios a Deus consistem em um espírito quebrantado; a um coração compungido e contrito, não o desprezarás, ó Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Roupa rasgada impressiona Deus"
+      },
+      {
+        "id": "b",
+        "text": "Coração quebrantado agrada a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Gesto externo substitui o interior"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Rasgai o coração",
+    "feedbackCorrect": "Deus não despreza o coração quebrantado e contrito.",
+    "feedbackWrong": {
+      "a": "Joel pede o coração, não a roupa como prova de volta.",
+      "c": "Os dois textos recusam trocar o interior pelo exterior."
+    },
+    "hint": "Veja o que Deus não despreza no Salmo citado.",
+    "learningObjective": "Relacionar coração rasgado e coração quebrantado.",
+    "evidence": [
+      "Joel 2:13",
+      "Salmos 51:17"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-07",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 1:3, toque o destino final da memória que deve ser contada.",
+    "prompt": "Em Joel 1:3, toque o destino final da memória que deve ser contada.",
+    "cue": "Em Joel 1:3, toque o destino final da memória que deve ser contada.",
+    "verseRef": "Joel 1:3",
+    "passageText": "Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contem isso"
+      },
+      {
+        "id": "b",
+        "text": "próxima geração"
+      },
+      {
+        "id": "c",
+        "text": "seus filhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "à próxima geração",
+    "feedbackCorrect": "A memória atravessa filhos e chega à geração seguinte.",
+    "feedbackWrong": {
+      "a": "Isso é o chamado a contar, não o destino final da memória.",
+      "c": "Filhos são um elo da cadeia, não o destino final citado."
+    },
+    "hint": "Procure o fim da cadeia de transmissão citada.",
+    "learningObjective": "Reconhecer a transmissão às gerações em Joel 1:3.",
+    "evidence": [
+      "Joel 1:3"
+    ]
+  },
+  {
+    "id": "joel-cam-joel-joel-03-desafio-joel-08",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Joel 1:2–3?",
+    "prompt": "Como se encadeiam os passos de Joel 1:2–3?",
+    "cue": "Como se encadeiam os passos de Joel 1:2–3?",
+    "verseRef": "Joel 1:2–3",
+    "passageText": "Ouçam isto, anciãos, e escutem, todos os habitantes da terra: Aconteceu isso em seus dias? Ou também nos dias de seus pais? Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anciãos ouvem o que aconteceu"
+      },
+      {
+        "id": "b",
+        "text": "Pais contam o fato aos filhos"
+      },
+      {
+        "id": "c",
+        "text": "Filhos transmitem à geração seguinte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ouçam isto, anciãos",
+    "feedbackCorrect": "Ouvir, contar aos filhos e transmitir adiante, nesta ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado a ouvir, dirigido aos anciãos."
+    },
+    "hint": "Ouvir vem antes de contar e transmitir adiante.",
+    "learningObjective": "Compreender a cadeia de memória em Joel 1:2–3.",
+    "evidence": [
+      "Joel 1:2–3"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-01",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Joel 2:29, os servos e as servas também recebem o Espírito derramado por Deus.",
+    "prompt": "Em Joel 2:29, os servos e as servas também recebem o Espírito derramado por Deus.",
+    "cue": "Em Joel 2:29, os servos e as servas também recebem o Espírito derramado por Deus.",
+    "verseRef": "Joel 2:29",
+    "passageText": "E também derramarei o meu Espírito sobre os servos e sobre as servas naqueles dias.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "também derramarei o meu Espírito sobre os servos",
+    "feedbackCorrect": "A inclusão dos servos faz parte da própria promessa ampla.",
+    "feedbackWrong": {
+      "false": "Releia 2:29 e quem a palavra também acrescenta."
+    },
+    "hint": "Veja quem o segundo versículo da promessa inclui.",
+    "learningObjective": "Interpretar a inclusão dos servos em Joel 2:29.",
+    "evidence": [
+      "Joel 2:29"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-02",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:25, toque como Deus chama a praga que consumiu os anos.",
+    "prompt": "Em Joel 2:25, toque como Deus chama a praga que consumiu os anos.",
+    "cue": "Em Joel 2:25, toque como Deus chama a praga que consumiu os anos.",
+    "verseRef": "Joel 2:25",
+    "passageText": "E eu restituirei a vocês os anos que foram consumidos pelo gafanhoto, pela locusta, pelo pulgão e pela lagarta, meu grande exército que enviei contra vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meu grande exército"
+      },
+      {
+        "id": "b",
+        "text": "os anos"
+      },
+      {
+        "id": "c",
+        "text": "contra vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "meu grande exército que enviei",
+    "feedbackCorrect": "A praga é apresentada sob o governo e envio de Deus.",
+    "feedbackWrong": {
+      "b": "Anos são o que foi consumido, não o nome dado à praga.",
+      "c": "Isso diz o alvo do envio, não o nome dado à praga."
+    },
+    "hint": "Procure o nome que Deus dá a quem devorou.",
+    "learningObjective": "Sustentar o governo de Deus sobre a praga.",
+    "evidence": [
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-03",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura reúne bem a perda, o chamado e a promessa de Joel?",
+    "prompt": "Que leitura reúne bem a perda, o chamado e a promessa de Joel?",
+    "cue": "Que leitura reúne bem a perda, o chamado e a promessa de Joel?",
+    "verseRef": "Joel 2:13",
+    "passageText": "Rasgai o coração e não as vestes; convertei-vos ao Senhor, vosso Deus, pois ele é misericordioso, compassivo, tardio em se irar e grande em bondade. Ele se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo chama ao coração e Deus restaura"
+      },
+      {
+        "id": "b",
+        "text": "Espírito fica só com os líderes"
+      },
+      {
+        "id": "c",
+        "text": "Ritual externo basta sem o coração"
+      },
+      {
+        "id": "d",
+        "text": "Restituição garante riqueza automática"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Rasgai o coração e não as vestes",
+    "feedbackCorrect": "Joel liga juízo, volta sincera, restauração e Espírito.",
+    "feedbackWrong": {
+      "b": "Filhos, servos e servas desmentem um dom restrito.",
+      "c": "O coração é pedido no lugar do gesto só externo.",
+      "d": "A promessa conduz a louvor, não a riqueza garantida."
+    },
+    "hint": "Junte Joel 1, o chamado de 2:13 e as promessas.",
+    "learningObjective": "Escolher a leitura que reúne o fio do livro de Joel.",
+    "evidence": [
+      "Joel 2:13",
+      "Joel 2:25"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-04",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do livro de Joel?",
+    "prompt": "Qual sequência revela o caminho do livro de Joel?",
+    "cue": "Qual sequência revela o caminho do livro de Joel?",
+    "verseRef": "Joel 1:4",
+    "passageText": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perda revela a gravidade do juízo"
+      },
+      {
+        "id": "b",
+        "text": "Coração se volta para Deus"
+      },
+      {
+        "id": "c",
+        "text": "Espírito é derramado sobre todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "comeu o gafanhoto destruidor",
+    "feedbackCorrect": "Da perda ao coração voltado, o livro chega ao Espírito para todos.",
+    "feedbackWrong": {
+      "default": "Comece pela perda que abre o livro de Joel."
+    },
+    "hint": "Siga da praga ao chamado e à maior promessa.",
+    "learningObjective": "Ver o caminho perda, conversão e Espírito em Joel.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:28"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-05",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:11, quem poderá fazer o quê diante do Dia do Senhor?",
+    "prompt": "Em Joel 2:11, quem poderá fazer o quê diante do Dia do Senhor?",
+    "cue": "Em Joel 2:11, quem poderá fazer o quê diante do Dia do Senhor?",
+    "verseRef": "Joel 2:11",
+    "passageText": "E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui terrível! Quem o poderá suportar?",
+    "template": "E o Senhor levanta a sua voz diante do seu exército, pois muitíssimo grande é o seu arraial; porque é poderoso quem executa a sua palavra. Grande é o Dia do Senhor e mui terrível! Quem o poderá ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "evitar"
+      },
+      {
+        "id": "b",
+        "text": "suportar"
+      },
+      {
+        "id": "c",
+        "text": "ignorar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Quem o poderá suportar",
+    "feedbackCorrect": "A pergunta do texto mostra o peso insuportável daquele Dia.",
+    "feedbackWrong": {
+      "a": "O texto não fala de escapar, e sim de aguentar o Dia.",
+      "c": "Ignorar é o contrário da atenção que Joel pede ao povo."
+    },
+    "hint": "Leia a pergunta que fecha o versículo inteiro.",
+    "learningObjective": "Lembrar o peso do Dia em Joel 2:11.",
+    "evidence": [
+      "Joel 2:11"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-06",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 2:28 a Atos 2:17?",
+    "prompt": "O que liga Joel 2:28 a Atos 2:17?",
+    "cue": "O que liga Joel 2:28 a Atos 2:17?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;"
+    },
+    "passageB": {
+      "ref": "Atos 2:17",
+      "text": "E nos últimos dias, diz o Senhor, derramarei do meu Espírito sobre toda a carne, vossos filhos e vossas filhas profetizarão, vossos jovens terão visões, e sonharão sonhos vossos idosos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessa sem palavra profética"
+      },
+      {
+        "id": "b",
+        "text": "Espírito só para apóstolos"
+      },
+      {
+        "id": "c",
+        "text": "Pedro cita Joel em Pentecostes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "derramarei o meu Espírito",
+    "feedbackCorrect": "Pedro explica o Pentecostes com as palavras do profeta Joel.",
+    "feedbackWrong": {
+      "a": "Atos apresenta o fato como palavra de Joel cumprida ali.",
+      "b": "A citação repete o alcance sobre toda a carne, sem corte."
+    },
+    "hint": "Veja como Pedro introduz a citação em Atos.",
+    "learningObjective": "Ligar a promessa de Joel ao Pentecostes em Atos.",
+    "evidence": [
+      "Joel 2:28",
+      "Atos 2:17"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-07",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:27, toque a promessa final feita ao povo de Deus.",
+    "prompt": "Em Joel 2:27, toque a promessa final feita ao povo de Deus.",
+    "cue": "Em Joel 2:27, toque a promessa final feita ao povo de Deus.",
+    "verseRef": "Joel 2:27",
+    "passageText": "E vocês saberão que estou no meio de Israel, que eu sou o Senhor, o seu Deus, e não há outro; e o meu povo nunca será envergonhado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nunca será envergonhado"
+      },
+      {
+        "id": "b",
+        "text": "meio de Israel"
+      },
+      {
+        "id": "c",
+        "text": "seu Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o meu povo nunca será envergonhado",
+    "feedbackCorrect": "Presença de Deus no meio afasta a vergonha do seu povo.",
+    "feedbackWrong": {
+      "b": "Isso mostra onde Deus está, não a promessa final citada.",
+      "c": "Isso afirma quem Deus é, não a promessa final ao povo."
+    },
+    "hint": "Leia a última afirmação feita sobre o povo.",
+    "learningObjective": "Sustentar o fim da vergonha prometido em Joel 2:27.",
+    "evidence": [
+      "Joel 2:27"
+    ]
+  },
+  {
+    "id": "joel-pro-joel-joel-03-desafio-joel-08",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o alcance da promessa do Espírito?",
+    "prompt": "Qual sequência revela o alcance da promessa do Espírito?",
+    "cue": "Qual sequência revela o alcance da promessa do Espírito?",
+    "verseRef": "Joel 2:28",
+    "passageText": "E acontecerá que, depois, derramarei o meu Espírito sobre toda a carne; os vossos filhos e filhas profetizarão, os vossos velhos sonharão e os jovens terão visões;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito sobre toda a carne"
+      },
+      {
+        "id": "b",
+        "text": "Filhos e filhas profetizam"
+      },
+      {
+        "id": "c",
+        "text": "Servos e servas também recebem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sobre toda a carne",
+    "feedbackCorrect": "Do alcance total, o texto chega até servos e servas incluídos.",
+    "feedbackWrong": {
+      "default": "Comece pelo alcance mais amplo, dito em 2:28."
+    },
+    "hint": "Siga de 2:28 até o acréscimo de 2:29.",
+    "learningObjective": "Ver o alcance crescente da promessa do Espírito.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ]
+  }
+]

@@ -1,0 +1,210 @@
+Escreva a cena "numeros-murmuracao-04-desafio-no-deserto" da trilha "numeros" (Números).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "numeros",
+  "title": "Números",
+  "description": "No deserto: censo, murmuração, serpente e a porta da terra.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Murmurações",
+ "mission": {
+  "slug": "numeros-murmuracao-04-desafio-no-deserto",
+  "title": "Desafio: No deserto",
+  "type": "boss",
+  "intro": "Fé, medo e provisão no caminho.",
+  "hookRef": "Referência: Números",
+  "hookNote": "Fé, medo e provisão no caminho.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre deserto?"
+ },
+ "v2": {
+  "passageRef": "Referência: Números",
+  "context": "Fé, medo e provisão no caminho.",
+  "keyword": "Deserto",
+  "verseRefs": [
+   "Números 14:22–23"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "numeros-murmuracao-01-espias-em-canaa",
+   "title": "Espias em Canaã",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Números 13:1–16"
+  },
+  {
+   "slug": "numeros-murmuracao-02-quarenta-anos",
+   "title": "Quarenta anos",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Números 16:28–36"
+  },
+  {
+   "slug": "numeros-murmuracao-03-a-serpente-de-bronze",
+   "title": "A serpente de bronze",
+   "centralInsight": "O que isso revela sobre a aliança de Deus?",
+   "ref": "Números 21:5–12"
+  }
+ ],
+ "ranges": [
+  "Números 13:1–16",
+  "Números 13:30–31",
+  "Números 16:28–36",
+  "Números 14:33–34",
+  "Números 21:5–12"
+ ],
+ "verses": [
+  {
+   "ref": "Números 13:1",
+   "text": "E o Senhor disse a Moisés:"
+  },
+  {
+   "ref": "Números 13:2",
+   "text": "Envie homens para espiar a terra de Canaã, que eu prometo dar aos filhos de Israel; de cada tribo de seus pais, vocês enviarão um homem, sendo cada um príncipe entre eles."
+  },
+  {
+   "ref": "Números 13:3",
+   "text": "E Moisés os enviou do deserto de Parã, conforme o mandado do Senhor; todos aqueles homens eram líderes dos filhos de Israel."
+  },
+  {
+   "ref": "Números 13:4",
+   "text": "E estes são os nomes: da tribo de Rúben, Samua, filho de Zacur."
+  },
+  {
+   "ref": "Números 13:5",
+   "text": "Da tribo de Simeão, Safate, filho de Hori;"
+  },
+  {
+   "ref": "Números 13:6",
+   "text": "Calebe, filho de Jefoné; da tribo de Judá;"
+  },
+  {
+   "ref": "Números 13:7",
+   "text": "Da tribo de Issacar, Igal, filho de José;"
+  },
+  {
+   "ref": "Números 13:8",
+   "text": "Da tribo de Efraim, Oséias, filho de Num;"
+  },
+  {
+   "ref": "Números 13:9",
+   "text": "Da tribo de Benjamim, Palti, filho de Rafu;"
+  },
+  {
+   "ref": "Números 13:10",
+   "text": "Da tribo de Zebulom, Gadiel, filho de Sodi;"
+  },
+  {
+   "ref": "Números 13:11",
+   "text": "Da tribo de José, da tribo de Manassés, Gadi, filho de Susi;"
+  },
+  {
+   "ref": "Números 13:12",
+   "text": "Da tribo de Dã, Amiel, filho de Gemali;"
+  },
+  {
+   "ref": "Números 13:13",
+   "text": "Da tribo de Aser, Setur, filho de Micael;"
+  },
+  {
+   "ref": "Números 13:14",
+   "text": "Da tribo de Naftali, Nabi, filho de Vofsi;"
+  },
+  {
+   "ref": "Números 13:15",
+   "text": "Da tribo de Gade, Geuel, filho de Maqui."
+  },
+  {
+   "ref": "Números 13:16",
+   "text": "Estes são os nomes dos homens que Moisés enviou a espiar a terra; e a Oséias, filho de Num, Moisés chamou Josué."
+  },
+  {
+   "ref": "Números 13:30",
+   "text": "Então, Calebe fez o povo silenciar diante de Moisés e disse: Vamos subir e possuí-la, pois com certeza prevaleceremos contra ela."
+  },
+  {
+   "ref": "Números 13:31",
+   "text": "Porém os homens que estavam com ele disseram: Não conseguiremos subir contra aquele povo, porque é mais forte do que nós."
+  },
+  {
+   "ref": "Números 16:28",
+   "text": "Então, Moisés disse: Nisto saberão que o Senhor me enviou para realizar todas essas obras, que não são fruto da minha própria vontade."
+  },
+  {
+   "ref": "Números 16:29",
+   "text": "Se esses morrerem como todos os homens e forem afligidos de igual modo que se dá com todos os homens, então, não sou enviado do Senhor."
+  },
+  {
+   "ref": "Números 16:30",
+   "text": "Mas, se o Senhor criar algo inaudito, e a terra abrir sua boca para os engolir com tudo o que possuem, e eles descerem vivos ao abismo, então saberão que estes homens desprezaram o Senhor."
+  },
+  {
+   "ref": "Números 16:31",
+   "text": "E aconteceu que, quando ele terminou de proferir todas aquelas palavras, a terra sob eles se fendeu."
+  },
+  {
+   "ref": "Números 16:32",
+   "text": "A terra se abriu e os tragou com suas famílias assim como todos os homens que pertenciam a Corá e todos os seus bens."
+  },
+  {
+   "ref": "Números 16:33",
+   "text": "E eles e tudo o que lhes pertencia desceram vivos ao abismo, e a terra os cobriu, e pereceram do meio da congregação."
+  },
+  {
+   "ref": "Números 16:34",
+   "text": "E todo Israel, que estava ao redor deles, fugiu de seu clamor, pois diziam: Não suceda que a terra nos trague também."
+  },
+  {
+   "ref": "Números 16:35",
+   "text": "Então saiu fogo do SENHOR e consumiu os duzentos e cinquenta homens que ofereciam o incenso."
+  },
+  {
+   "ref": "Números 16:36",
+   "text": "E o Senhor disse a Moisés:"
+  },
+  {
+   "ref": "Números 14:33",
+   "text": "E seus filhos serão pastores neste deserto por quarenta anos e levarão sobre si as consequências das suas infidelidades, até que os seus cadáveres se consumam neste deserto."
+  },
+  {
+   "ref": "Números 14:34",
+   "text": "Segundo o número de dias em que exploraram a terra, quarenta dias; cada dia representando um ano, levareis sobre vós as vossas iniquidades durante quarenta anos e sentireis o meu desagrado."
+  },
+  {
+   "ref": "Números 21:5",
+   "text": "E o povo falou contra Deus e contra Moisés: \"Por que nos fizestes subir do Egito, para que morramos neste deserto? Onde não há pão nem água? E nossa alma tem fastio deste pão vil.\""
+  },
+  {
+   "ref": "Números 21:6",
+   "text": "Então, o Senhor enviou entre o povo serpentes ardentes que morderam o povo; e muitos do povo de Israel faleceram."
+  },
+  {
+   "ref": "Números 21:7",
+   "text": "Portanto, o povo se aproximou de Moisés e disse: Pecamos, pois falamos contra o Senhor e contra você; ore ao Senhor para que afaste de nós essas serpentes. Então, Moisés intercedeu pelo povo."
+  },
+  {
+   "ref": "Números 21:8",
+   "text": "E o Senhor disse a Moisés: Faze uma serpente abrasadora e a coloca sobre uma haste; todo aquele que for mordido e a mirar viverá."
+  },
+  {
+   "ref": "Números 21:9",
+   "text": "E Moisés fez uma serpente de bronze e a colocou sobre uma haste; e quando alguém era mordido por uma serpente, se olhava para a serpente de bronze, sarava."
+  },
+  {
+   "ref": "Números 21:10",
+   "text": "Então, os filhos de Israel partiram e se acamparam em Obote."
+  },
+  {
+   "ref": "Números 21:11",
+   "text": "Partiram de Obote e acamparam em Ijé-Abarim, no deserto que está diante de Moabe, a leste."
+  },
+  {
+   "ref": "Números 21:12",
+   "text": "Partiram dali e se acamparam no vale de Zered."
+  }
+ ]
+}
+</cena>

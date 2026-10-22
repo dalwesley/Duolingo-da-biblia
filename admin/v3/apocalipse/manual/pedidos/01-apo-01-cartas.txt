@@ -1,0 +1,67 @@
+Escreva a cena "apo-01-cartas" da trilha "apocalipse" (Apocalipse).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "apocalipse",
+  "title": "Apocalipse",
+  "description": "Revelação de Jesus: cartas, trono, conflito e nova criação.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cartas e trono",
+ "mission": {
+  "slug": "apo-01-cartas",
+  "title": "Cartas às igrejas",
+  "type": "lesson",
+  "intro": "Jesus fala às sete igrejas: ânimo, correção e promessa aos que vencem.",
+  "hookRef": "Apocalipse 2:7",
+  "hookNote": "Antes de visões cósmicas, Jesus pastoreia igrejas reais sob pressão (império, idolatria, acomodação). Cada carta combina conhecimento íntim…",
+  "centralInsight": "Ouvir o Espírito",
+  "objective": "Que palavra Jesus falaria à sua igreja — e a você — hoje?"
+ },
+ "v2": {
+  "passageRef": "Apocalipse 2:7",
+  "context": "Antes de visões cósmicas, Jesus pastoreia igrejas reais sob pressão (império, idolatria, acomodação). Cada carta combina conhecimento íntimo, elogio e/ou repreensão, chamado ao arrependimento e promessa ao vencedor. Ouvir o Espírito é questão de sobrevivência fiel — não de curiosidade apocalíptica.",
+  "keyword": "Vencedor",
+  "verseRefs": [
+   "Apocalipse 2:7"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Apocalipse 2:4–10"
+ ],
+ "verses": [
+  {
+   "ref": "Apocalipse 2:4",
+   "text": "Tenho, porém, contra você que deixou o seu primeiro amor."
+  },
+  {
+   "ref": "Apocalipse 2:5",
+   "text": "Lembre-se, portanto, de onde você caiu, arrependa-se e volte a praticar as primeiras obras; caso contrário, em breve virei a você e moverei o seu candelabro do seu lugar, se não se arrepender."
+  },
+  {
+   "ref": "Apocalipse 2:6",
+   "text": "Você, porém, tem isso: que odeia as obras dos nicolaitas, as quais eu também odeio."
+  },
+  {
+   "ref": "Apocalipse 2:7",
+   "text": "Quem tem ouvidos, ouça o que o Espírito diz às igrejas: Ao que vencer, dar-lhe-ei que se alimente da árvore da vida, que se encontra no paraíso de Deus."
+  },
+  {
+   "ref": "Apocalipse 2:8",
+   "text": "E ao anjo da igreja que está em Esmirna, escreva: Assim diz o Primeiro e o Último, que esteve morto e tornou a viver:"
+  },
+  {
+   "ref": "Apocalipse 2:9",
+   "text": "Conheço a sua tribulação, a sua pobreza (mas você é rico) e a blasfêmia dos que se proclamam judeus e não são, antes, são uma sinagoga de Satanás."
+  },
+  {
+   "ref": "Apocalipse 2:10",
+   "text": "Não tema as coisas que você ainda vai sofrer. Eis que o diabo está prestes a lançar em prisão alguns de vocês, para que sejam provados. E vocês terão uma tribulação de dez dias. Seja fiel até a morte, e eu lhe darei a coroa da vida."
+  }
+ ]
+}
+</cena>

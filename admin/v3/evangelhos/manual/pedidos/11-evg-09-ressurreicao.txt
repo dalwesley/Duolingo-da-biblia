@@ -1,0 +1,120 @@
+Escreva a cena "evg-09-ressurreicao" da trilha "evangelhos" (Os Quatro Evangelhos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "evangelhos",
+  "title": "Os Quatro Evangelhos",
+  "description": "Panorama de Mateus a João — vida, morte e ressurreição de Jesus.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cruz e Ressurreição",
+ "mission": {
+  "slug": "evg-09-ressurreicao",
+  "title": "Ele ressuscitou",
+  "type": "lesson",
+  "intro": "O túmulo vazio e as aparições mudam tudo: a morte não tem a última palavra.",
+  "hookRef": "Mateus 28:1–20",
+  "hookNote": "O túmulo vazio lança a missão: o Senhor vivo envia Seu povo.",
+  "centralInsight": "Ele vive",
+  "objective": "Como a ressurreição muda sua missão hoje?"
+ },
+ "v2": {
+  "passageRef": "Mateus 28:1–20",
+  "context": "O túmulo vazio lança a missão: o Senhor vivo envia Seu povo.",
+  "keyword": "Ressurreição",
+  "verseRefs": [
+   "Mateus 28:5–6"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 28:1–20",
+  "Mateus 28:5–6"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 28:1",
+   "text": "Após o sábado, ao raiar do primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro."
+  },
+  {
+   "ref": "Mateus 28:2",
+   "text": "E ocorreu um grande terremoto, pois um anjo do Senhor desceu do céu, aproximou-se, rolou a pedra da entrada e sentou-se sobre ela."
+  },
+  {
+   "ref": "Mateus 28:3",
+   "text": "E o seu aspecto era como um relâmpago, e suas vestes eram brancas como a neve."
+  },
+  {
+   "ref": "Mateus 28:4",
+   "text": "E os guardas tremeram espavoridos e ficaram como se estivessem mortos."
+  },
+  {
+   "ref": "Mateus 28:5",
+   "text": "Mas o anjo, dirigindo-se às mulheres, disse: Não tenham medo; pois sei que vocês buscam Jesus, que foi crucificado."
+  },
+  {
+   "ref": "Mateus 28:6",
+   "text": "Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava."
+  },
+  {
+   "ref": "Mateus 28:7",
+   "text": "Vão depressa e digam aos seus discípulos que Ele ressuscitou dos mortos e vai adiante de vocês para a Galileia; lá vocês o verão, como já lhes disse."
+  },
+  {
+   "ref": "Mateus 28:8",
+   "text": "E, saindo apressadamente do sepulcro, tomadas de medo e grande alegria, correram a anunciar aos discípulos."
+  },
+  {
+   "ref": "Mateus 28:9",
+   "text": "E, ao irem anunciá-lo aos seus discípulos, Jesus veio ao seu encontro e disse: \"Saudações!\" E elas, aproximando-se, adoraram-no abraçando seus pés."
+  },
+  {
+   "ref": "Mateus 28:10",
+   "text": "Então, Jesus lhes disse: Não temais! Vão e avisem a meus irmãos que se dirijam à Galileia, lá me verão."
+  },
+  {
+   "ref": "Mateus 28:11",
+   "text": "Enquanto elas iam, alguns dos guardas chegaram à cidade e relataram aos principais sacerdotes tudo o que tinha acontecido."
+  },
+  {
+   "ref": "Mateus 28:12",
+   "text": "Reunindo-se em conselho com os líderes e, após deliberarem entre si, entregaram uma considerável quantia em dinheiro aos soldados, dizendo:"
+  },
+  {
+   "ref": "Mateus 28:13",
+   "text": "Digam: Os discípulos dele vieram de noite e o roubaram enquanto estávamos dormindo."
+  },
+  {
+   "ref": "Mateus 28:14",
+   "text": "E, se isso chegar ao conhecimento do governador, nós o persuadiremos e vocês estarão em segurança."
+  },
+  {
+   "ref": "Mateus 28:15",
+   "text": "E eles, recebendo o dinheiro, agiram conforme as instruções que receberam. E essa informação se propagou entre os judeus até os dias atuais."
+  },
+  {
+   "ref": "Mateus 28:16",
+   "text": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado."
+  },
+  {
+   "ref": "Mateus 28:17",
+   "text": "Quando o viram, adoraram-no; mas alguns hesitaram."
+  },
+  {
+   "ref": "Mateus 28:18",
+   "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra."
+  },
+  {
+   "ref": "Mateus 28:19",
+   "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+  },
+  {
+   "ref": "Mateus 28:20",
+   "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+  }
+ ]
+}
+</cena>

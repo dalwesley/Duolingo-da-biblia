@@ -1,0 +1,3304 @@
+[
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:13, temer a Deus e guardar seus mandamentos é o dever de todo homem.",
+    "prompt": "Em Eclesiastes 12:13, temer a Deus e guardar seus mandamentos é o dever de todo homem.",
+    "cue": "Em Eclesiastes 12:13, temer a Deus e guardar seus mandamentos é o dever de todo homem.",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "este é o dever de todo homem",
+    "feedbackCorrect": "Esse é o resumo final do livro para todo homem.",
+    "feedbackWrong": {
+      "false": "Releia Eclesiastes 12:13 e veja o dever de todo homem."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar a conclusão de Eclesiastes 12:13.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:13, toque a quem o homem deve temer.",
+    "prompt": "Em Eclesiastes 12:13, toque a quem o homem deve temer.",
+    "cue": "Em Eclesiastes 12:13, toque a quem o homem deve temer.",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "homem"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tema a Deus",
+    "feedbackCorrect": "O essencial é temer a Deus e guardar seus mandamentos.",
+    "feedbackWrong": {
+      "a": "Mandamentos são o que se guarda; quem se teme vem antes.",
+      "b": "Homem é quem tem o dever, não quem deve ser temido."
+    },
+    "hint": "Procure o objeto do temor.",
+    "learningObjective": "Identificar Deus como quem deve ser temido.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Eclesiastes 12:10, o que o pregador escreveu com precisão?",
+    "prompt": "Segundo Eclesiastes 12:10, o que o pregador escreveu com precisão?",
+    "cue": "Segundo Eclesiastes 12:10, o que o pregador escreveu com precisão?",
+    "verseRef": "Eclesiastes 12:10",
+    "passageText": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavras de verdade"
+      },
+      {
+        "id": "b",
+        "text": "Sentenças como pregos"
+      },
+      {
+        "id": "c",
+        "text": "Livros sem limite"
+      },
+      {
+        "id": "d",
+        "text": "Fardo para a carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "escreveu com precisão palavras de verdade",
+    "feedbackCorrect": "Ele procurou palavras agradáveis e escreveu palavras de verdade.",
+    "feedbackWrong": {
+      "b": "Pregos bem fixados são imagem de 12:11.",
+      "c": "Livros sem limite aparecem em 12:12, não aqui.",
+      "d": "Fardo para a carne é o muito estudar de 12:12."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar o que o pregador escreveu em 12:10.",
+    "evidence": [
+      "Eclesiastes 12:10"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Eclesiastes 12:11 na ordem do texto.",
+    "prompt": "Monte Eclesiastes 12:11 na ordem do texto.",
+    "cue": "Monte Eclesiastes 12:11 na ordem do texto.",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As palavras dos sábios são como aguilhões"
+      },
+      {
+        "id": "b",
+        "text": "e como pregos bem fixados são as sentenças coligidas"
+      },
+      {
+        "id": "c",
+        "text": "dadas pelo único Pastor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "As palavras dos sábios são como aguilhões",
+    "feedbackCorrect": "Palavras sábias despertam e firmam, dadas pelo único Pastor.",
+    "feedbackWrong": {
+      "default": "Comece pelos aguilhões; o único Pastor fecha o versículo."
+    },
+    "hint": "O versículo começa pelas palavras dos sábios.",
+    "learningObjective": "Reconhecer a sequência de Eclesiastes 12:11.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:12, o que o muito estudar é para a carne?",
+    "prompt": "Em Eclesiastes 12:12, o que o muito estudar é para a carne?",
+    "cue": "Em Eclesiastes 12:12, o que o muito estudar é para a carne?",
+    "verseRef": "Eclesiastes 12:12",
+    "passageText": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne.",
+    "template": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um ___ para a carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fardo"
+      },
+      {
+        "id": "b",
+        "text": "descanso"
+      },
+      {
+        "id": "c",
+        "text": "limite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o muito estudar é um fardo para a carne",
+    "feedbackCorrect": "Livros não têm fim, e estudar muito pesa sobre a carne.",
+    "feedbackWrong": {
+      "b": "O texto chama o estudo excessivo de peso, não de descanso.",
+      "c": "Limite é dito da produção de livros, não do estudar."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Lembrar o peso do muito estudar em 12:12.",
+    "evidence": [
+      "Eclesiastes 12:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de tudo o que se ouviu, o livro resume o dever humano."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Estudar até se cansar"
+      },
+      {
+        "id": "b",
+        "text": "Produzir livros sem limite"
+      },
+      {
+        "id": "c",
+        "text": "Temer a Deus e obedecer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "Após tudo, o essencial é temer a Deus e guardar seus mandamentos.",
+    "feedbackWrong": {
+      "a": "Estudar muito é fardo; o essencial é temer a Deus.",
+      "b": "Livros sem fim são advertência de 12:12, não o essencial."
+    },
+    "hint": "Veja o resumo após tudo o que se ouviu.",
+    "learningObjective": "Ligar Eclesiastes 12:13 ao dever de temer a Deus.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Eclesiastes 12:12, produzir muitos livros é apresentado como descanso para a carne.",
+    "prompt": "Em Eclesiastes 12:12, produzir muitos livros é apresentado como descanso para a carne.",
+    "cue": "Em Eclesiastes 12:12, produzir muitos livros é apresentado como descanso para a carne.",
+    "verseRef": "Eclesiastes 12:12",
+    "passageText": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o muito estudar é um fardo para a carne",
+    "feedbackCorrect": "Não há descanso aí: o muito estudar é fardo para a carne.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 12:12: estudar muito é fardo, não descanso."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Compreender a advertência sobre livros e estudo sem fim.",
+    "evidence": [
+      "Eclesiastes 12:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Eclesiastes 12:11, toque a palavra que marca a comparação das palavras dos sábios.",
+    "prompt": "Em Eclesiastes 12:11, toque a palavra que marca a comparação das palavras dos sábios.",
+    "cue": "Em Eclesiastes 12:11, toque a palavra que marca a comparação das palavras dos sábios.",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aguilhões"
+      },
+      {
+        "id": "b",
+        "text": "como"
+      },
+      {
+        "id": "c",
+        "text": "pregos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "são como aguilhões",
+    "feedbackCorrect": "Como liga as palavras dos sábios a aguilhões e pregos.",
+    "feedbackWrong": {
+      "a": "Aguilhões são a imagem comparada, não a marca da comparação.",
+      "c": "Pregos são a segunda imagem, não a palavra que compara."
+    },
+    "hint": "Procure uma palavra curta antes das imagens.",
+    "learningObjective": "Reconhecer o marcador de comparação em 12:11.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como as palavras dos sábios funcionam segundo Eclesiastes 12:11?",
+    "prompt": "Como as palavras dos sábios funcionam segundo Eclesiastes 12:11?",
+    "cue": "Como as palavras dos sábios funcionam segundo Eclesiastes 12:11?",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elas substituem o dever de obedecer"
+      },
+      {
+        "id": "b",
+        "text": "Elas foram dadas por muitos pastores"
+      },
+      {
+        "id": "c",
+        "text": "Elas servem só para enfeitar livros"
+      },
+      {
+        "id": "d",
+        "text": "Elas firmam e despertam quem ouve"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "como pregos bem fixados são as sentenças coligidas",
+    "feedbackCorrect": "Como aguilhões, despertam; como pregos fixados, firmam quem ouve.",
+    "feedbackWrong": {
+      "a": "Palavras sábias conduzem à obediência, não a substituem.",
+      "b": "O texto fala do único Pastor, não de muitos.",
+      "c": "A imagem é de efeito firme em quem ouve, não de enfeite."
+    },
+    "hint": "Pense no efeito de aguilhões e pregos fixados.",
+    "learningObjective": "Compreender o efeito das palavras dos sábios.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as ideias de Eclesiastes 12:13–14?",
+    "prompt": "Como se encadeiam as ideias de Eclesiastes 12:13–14?",
+    "cue": "Como se encadeiam as ideias de Eclesiastes 12:13–14?",
+    "verseRef": "Eclesiastes 12:13–14",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem. Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depois de tudo ouvido, vem o resumo"
+      },
+      {
+        "id": "b",
+        "text": "O resumo aponta para Deus"
+      },
+      {
+        "id": "c",
+        "text": "O dever alcança todo homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "após tudo o que se tem ouvido",
+    "feedbackCorrect": "Após tudo, o resumo aponta para Deus e alcança todo homem.",
+    "feedbackWrong": {
+      "default": "Comece pelo que vem após tudo o que se ouviu."
+    },
+    "hint": "Comece pelo fim de toda a busca.",
+    "learningObjective": "Compreender o encadeamento da conclusão do livro.",
+    "evidence": [
+      "Eclesiastes 12:13–14"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Eclesiastes 12:11, a que as palavras dos sábios são comparadas primeiro?",
+    "prompt": "Em Eclesiastes 12:11, a que as palavras dos sábios são comparadas primeiro?",
+    "cue": "Em Eclesiastes 12:11, a que as palavras dos sábios são comparadas primeiro?",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "template": "As palavras dos sábios são como ___, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "aguilhões"
+      },
+      {
+        "id": "c",
+        "text": "livros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "As palavras dos sábios são como aguilhões",
+    "feedbackCorrect": "Primeiro aguilhões, que despertam; depois pregos, que firmam.",
+    "feedbackWrong": {
+      "a": "Mandamentos aparecem em 12:13, não nesta imagem.",
+      "c": "Livros aparecem em 12:12, não nesta comparação."
+    },
+    "hint": "Leia a primeira imagem do versículo.",
+    "learningObjective": "Compreender a primeira imagem das palavras sábias.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Eclesiastes 12:13 a Deuteronômio 10:12?",
+    "prompt": "O que liga Eclesiastes 12:13 a Deuteronômio 10:12?",
+    "cue": "O que liga Eclesiastes 12:13 a Deuteronômio 10:12?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 10:12",
+      "text": "Agora, pois, ó Israel, o que o SENHOR, teu Deus, requer de ti é que o temas, andes em todos os seus caminhos, o ames e sirvas ao SENHOR, teu Deus, com todo o teu coração e com toda a tua alma."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acumular livros e estudos"
+      },
+      {
+        "id": "b",
+        "text": "Temer e obedecer ao Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Julgar só obras públicas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "Nos dois textos, Deus pede temor que anda em seus caminhos.",
+    "feedbackWrong": {
+      "a": "Livros são advertência em Eclesiastes, não a ponte aqui.",
+      "c": "O juízo de obras escondidas está em 12:14, não nesta ponte."
+    },
+    "hint": "Veja o que Deus requer nos dois textos.",
+    "learningObjective": "Relacionar temer a Deus em Eclesiastes e Deuteronômio.",
+    "evidence": [
+      "Eclesiastes 12:13",
+      "Deuteronômio 10:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Eclesiastes 12:14 sustenta que Deus julgará também as obras escondidas, boas ou más.",
+    "prompt": "Eclesiastes 12:14 sustenta que Deus julgará também as obras escondidas, boas ou más.",
+    "cue": "Eclesiastes 12:14 sustenta que Deus julgará também as obras escondidas, boas ou más.",
+    "verseRef": "Eclesiastes 12:14",
+    "passageText": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "até as que estão escondidas, quer sejam boas, quer sejam más",
+    "feedbackCorrect": "Nenhuma obra escapa: Deus trará todas a juízo.",
+    "feedbackWrong": {
+      "false": "Releia 12:14: até as obras escondidas serão julgadas."
+    },
+    "hint": "Veja o alcance do juízo descrito.",
+    "learningObjective": "Interpretar o alcance do juízo em Eclesiastes 12:14.",
+    "evidence": [
+      "Eclesiastes 12:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 12:14, toque o trecho que mostra o alcance do juízo de Deus.",
+    "prompt": "Em Eclesiastes 12:14, toque o trecho que mostra o alcance do juízo de Deus.",
+    "cue": "Em Eclesiastes 12:14, toque o trecho que mostra o alcance do juízo de Deus.",
+    "verseRef": "Eclesiastes 12:14",
+    "passageText": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "más"
+      },
+      {
+        "id": "b",
+        "text": "todas as obras"
+      },
+      {
+        "id": "c",
+        "text": "boas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus há de trazer a juízo todas as obras",
+    "feedbackCorrect": "Todas as obras, sem exceção, Deus trará a juízo.",
+    "feedbackWrong": {
+      "a": "Más descreve outro tipo, não o alcance total.",
+      "c": "Boas descreve um tipo de obra, não o alcance total."
+    },
+    "hint": "Procure o que Deus trará a juízo.",
+    "learningObjective": "Sustentar com o texto o alcance total do juízo.",
+    "evidence": [
+      "Eclesiastes 12:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Eclesiastes 12:13 sustenta sobre o fim da busca do Pregador?",
+    "prompt": "Que leitura Eclesiastes 12:13 sustenta sobre o fim da busca do Pregador?",
+    "cue": "Que leitura Eclesiastes 12:13 sustenta sobre o fim da busca do Pregador?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O sentido está em acumular muitos livros"
+      },
+      {
+        "id": "b",
+        "text": "Nada precisa ser feito após ouvir tudo"
+      },
+      {
+        "id": "c",
+        "text": "O sentido está em temer a Deus e obedecer"
+      },
+      {
+        "id": "d",
+        "text": "Temer a Deus vale só para quem é sábio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois este é o dever de todo homem",
+    "feedbackCorrect": "Após a busca sob o sol, o essencial é temer a Deus e obedecer.",
+    "feedbackWrong": {
+      "a": "Livros sem fim foram tratados como peso, não como sentido.",
+      "b": "O resumo traz um dever claro para todo homem.",
+      "d": "O dever é de todo homem, não só de sábios."
+    },
+    "hint": "Veja o que o livro chama de essencial.",
+    "learningObjective": "Escolher a interpretação final sustentada por 12:13.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Eclesiastes 12:13–14?",
+    "prompt": "Qual sequência revela o sentido de Eclesiastes 12:13–14?",
+    "cue": "Qual sequência revela o sentido de Eclesiastes 12:13–14?",
+    "verseRef": "Eclesiastes 12:13–14",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem. Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O essencial é reverenciar a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Guardar seus caminhos é o dever humano"
+      },
+      {
+        "id": "c",
+        "text": "Deus julgará obras boas e más"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "Temor e obediência têm peso porque Deus julgará todas as obras.",
+    "feedbackWrong": {
+      "default": "Comece pelo essencial de 12:13; o juízo vem em 12:14."
+    },
+    "hint": "Siga de 12:13 para 12:14.",
+    "learningObjective": "Ver como temor, dever e juízo se ligam no fim.",
+    "evidence": [
+      "Eclesiastes 12:13–14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 12:14, como estão algumas obras que Deus também julgará?",
+    "prompt": "Em Eclesiastes 12:14, como estão algumas obras que Deus também julgará?",
+    "cue": "Em Eclesiastes 12:14, como estão algumas obras que Deus também julgará?",
+    "verseRef": "Eclesiastes 12:14",
+    "passageText": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "template": "Porque Deus há de trazer a juízo todas as obras, até as que estão ___, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "más"
+      },
+      {
+        "id": "b",
+        "text": "escondidas"
+      },
+      {
+        "id": "c",
+        "text": "boas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "até as que estão escondidas",
+    "feedbackCorrect": "Até obras escondidas Deus trará a juízo, boas ou más.",
+    "feedbackWrong": {
+      "a": "Más também qualifica, mas não é a palavra retirada.",
+      "c": "Boas qualifica obras já citadas; a palavra que falta fala de ocultas."
+    },
+    "hint": "Pense no que ninguém mais viu.",
+    "learningObjective": "Lembrar o termo que amplia o juízo às obras ocultas.",
+    "evidence": [
+      "Eclesiastes 12:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Eclesiastes 12:13 a Salmos 111:10?",
+    "prompt": "O que liga Eclesiastes 12:13 a Salmos 111:10?",
+    "cue": "O que liga Eclesiastes 12:13 a Salmos 111:10?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+    },
+    "passageB": {
+      "ref": "Salmos 111:10",
+      "text": "O temor do Senhor é o princípio da sabedoria; revelam prudência todos os que o praticam. O seu louvor permanece para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabedoria dispensa temer a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Temor é princípio da sabedoria"
+      },
+      {
+        "id": "c",
+        "text": "Livros dão sabedoria sem fim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "O salmo chama o temor do Senhor de princípio da sabedoria.",
+    "feedbackWrong": {
+      "a": "O salmo une sabedoria ao temor, não o dispensa.",
+      "c": "Eclesiastes vê livros sem fim como peso, não sabedoria plena."
+    },
+    "hint": "Veja como o salmo define o começo da sabedoria.",
+    "learningObjective": "Ligar o temor final de Eclesiastes ao princípio da sabedoria.",
+    "evidence": [
+      "Eclesiastes 12:13",
+      "Salmos 111:10"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:13, o dever de todo homem é produzir livros sem limite.",
+    "prompt": "Em Eclesiastes 12:13, o dever de todo homem é produzir livros sem limite.",
+    "cue": "Em Eclesiastes 12:13, o dever de todo homem é produzir livros sem limite.",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "este é o dever de todo homem",
+    "feedbackCorrect": "O dever de todo homem é temer a Deus e guardar seus mandamentos.",
+    "feedbackWrong": {
+      "true": "Livros sem limite são de 12:12; o dever em 12:13 é temer a Deus."
+    },
+    "hint": "Veja o que 12:13 chama de dever.",
+    "learningObjective": "Observar o dever afirmado em Eclesiastes 12:13.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:10, toque quem procurou palavras agradáveis e verdadeiras.",
+    "prompt": "Em Eclesiastes 12:10, toque quem procurou palavras agradáveis e verdadeiras.",
+    "cue": "Em Eclesiastes 12:10, toque quem procurou palavras agradáveis e verdadeiras.",
+    "verseRef": "Eclesiastes 12:10",
+    "passageText": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdade"
+      },
+      {
+        "id": "b",
+        "text": "palavras"
+      },
+      {
+        "id": "c",
+        "text": "pregador"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Procurou o pregador encontrar palavras agradáveis",
+    "feedbackCorrect": "O pregador procurou palavras agradáveis e escreveu a verdade.",
+    "feedbackWrong": {
+      "a": "Verdade é o conteúdo escrito, não quem escreve.",
+      "b": "Palavras são o que ele procurou, não quem procurou."
+    },
+    "hint": "Procure quem faz a ação no versículo.",
+    "learningObjective": "Identificar o pregador em Eclesiastes 12:10.",
+    "evidence": [
+      "Eclesiastes 12:10"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Eclesiastes 12:11, a que as palavras dos sábios são comparadas primeiro?",
+    "prompt": "Segundo Eclesiastes 12:11, a que as palavras dos sábios são comparadas primeiro?",
+    "cue": "Segundo Eclesiastes 12:11, a que as palavras dos sábios são comparadas primeiro?",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A livros sem fim"
+      },
+      {
+        "id": "b",
+        "text": "A aguilhões"
+      },
+      {
+        "id": "c",
+        "text": "A mandamentos guardados"
+      },
+      {
+        "id": "d",
+        "text": "A um fardo pesado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "As palavras dos sábios são como aguilhões",
+    "feedbackCorrect": "Primeiro aguilhões, que despertam; depois pregos bem fixados.",
+    "feedbackWrong": {
+      "a": "Livros sem fim aparecem em 12:12, não aqui.",
+      "c": "Mandamentos aparecem em 12:13, não nesta imagem.",
+      "d": "Fardo é o muito estudar de 12:12."
+    },
+    "hint": "Leia a primeira imagem do versículo.",
+    "learningObjective": "Observar a primeira comparação de 12:11.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Eclesiastes 12:13 na ordem do texto.",
+    "prompt": "Monte Eclesiastes 12:13 na ordem do texto.",
+    "cue": "Monte Eclesiastes 12:13 na ordem do texto.",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O essencial, após tudo o que se tem ouvido"
+      },
+      {
+        "id": "b",
+        "text": "tema a Deus e guarde os seus mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "pois este é o dever de todo homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O essencial, após tudo o que se tem ouvido",
+    "feedbackCorrect": "Após tudo, o essencial é temer a Deus: dever de todo homem.",
+    "feedbackWrong": {
+      "default": "Comece pelo essencial após tudo; o dever fecha o versículo."
+    },
+    "hint": "O versículo começa pelo resumo final.",
+    "learningObjective": "Reconhecer a sequência de Eclesiastes 12:13.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:10, que tipo de palavras o pregador escreveu com precisão?",
+    "prompt": "Em Eclesiastes 12:10, que tipo de palavras o pregador escreveu com precisão?",
+    "cue": "Em Eclesiastes 12:10, que tipo de palavras o pregador escreveu com precisão?",
+    "verseRef": "Eclesiastes 12:10",
+    "passageText": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de verdade.",
+    "template": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mentira"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "vaidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "escreveu com precisão palavras de verdade",
+    "feedbackCorrect": "Ele escreveu com precisão palavras que dizem a verdade.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário do engano: escreveu a verdade.",
+      "c": "Vaidade resume a busca sob o sol, não estas palavras finais."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Lembrar as palavras escritas em Eclesiastes 12:10.",
+    "evidence": [
+      "Eclesiastes 12:10"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Eclesiastes 12:14 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 12:14 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 12:14 comunica que se liga a este contexto?",
+    "verseRef": "Eclesiastes 12:14",
+    "passageText": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "passageA": {
+      "ref": "Eclesiastes 12:14",
+      "text": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus vê também o que ninguém mais viu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o público será julgado"
+      },
+      {
+        "id": "b",
+        "text": "O escondido escapa de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus julga o escondido"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "até as que estão escondidas",
+    "feedbackCorrect": "Até obras escondidas Deus trará a juízo.",
+    "feedbackWrong": {
+      "a": "Todas as obras serão julgadas, não só as públicas.",
+      "b": "O texto diz que até o escondido será trazido a juízo."
+    },
+    "hint": "Veja o alcance do juízo no versículo.",
+    "learningObjective": "Ligar Eclesiastes 12:14 ao olhar de Deus sobre o escondido.",
+    "evidence": [
+      "Eclesiastes 12:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-07",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Eclesiastes 12:12, toque o que não tem limite para ser produzido.",
+    "prompt": "Em Eclesiastes 12:12, toque o que não tem limite para ser produzido.",
+    "cue": "Em Eclesiastes 12:12, toque o que não tem limite para ser produzido.",
+    "verseRef": "Eclesiastes 12:12",
+    "passageText": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "livros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não há limite para a produção de livros",
+    "feedbackCorrect": "Não há limite para a produção de livros, segundo o texto.",
+    "feedbackWrong": {
+      "a": "Filho é quem recebe a advertência, não o que se produz.",
+      "b": "Carne é quem sente o fardo do estudo, não o produzido."
+    },
+    "hint": "Leia a parte sobre produção sem fim.",
+    "learningObjective": "Observar a produção sem limite em 12:12.",
+    "evidence": [
+      "Eclesiastes 12:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-08",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Eclesiastes 12:14 na ordem do texto.",
+    "prompt": "Monte Eclesiastes 12:14 na ordem do texto.",
+    "cue": "Monte Eclesiastes 12:14 na ordem do texto.",
+    "verseRef": "Eclesiastes 12:14",
+    "passageText": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Deus há de trazer a juízo todas as obras"
+      },
+      {
+        "id": "b",
+        "text": "até as que estão escondidas"
+      },
+      {
+        "id": "c",
+        "text": "quer sejam boas, quer sejam más"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porque Deus há de trazer a juízo todas as obras",
+    "feedbackCorrect": "Deus trará a juízo todas as obras, até as escondidas.",
+    "feedbackWrong": {
+      "default": "Comece por Deus trazendo tudo a juízo; boas e más fecham."
+    },
+    "hint": "O versículo começa pela ação de Deus.",
+    "learningObjective": "Reconhecer a sequência de Eclesiastes 12:14.",
+    "evidence": [
+      "Eclesiastes 12:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Eclesiastes 12:11 apresenta sentenças dos sábios como pregos bem fixados dadas pelo único Pastor.",
+    "prompt": "Eclesiastes 12:11 apresenta sentenças dos sábios como pregos bem fixados dadas pelo único Pastor.",
+    "cue": "Eclesiastes 12:11 apresenta sentenças dos sábios como pregos bem fixados dadas pelo único Pastor.",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "como pregos bem fixados são as sentenças coligidas",
+    "feedbackCorrect": "Sentenças sábias firmam como pregos dados pelo único Pastor.",
+    "feedbackWrong": {
+      "false": "Releia 12:11 e veja pregos fixados e o único Pastor."
+    },
+    "hint": "Olhe as duas imagens do versículo.",
+    "learningObjective": "Compreender as imagens de Eclesiastes 12:11.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Eclesiastes 12:11, toque a palavra que marca a comparação das palavras dos sábios.",
+    "prompt": "Em Eclesiastes 12:11, toque a palavra que marca a comparação das palavras dos sábios.",
+    "cue": "Em Eclesiastes 12:11, toque a palavra que marca a comparação das palavras dos sábios.",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "como"
+      },
+      {
+        "id": "b",
+        "text": "aguilhões"
+      },
+      {
+        "id": "c",
+        "text": "sentenças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "são como aguilhões",
+    "feedbackCorrect": "Como liga palavras dos sábios a aguilhões e pregos.",
+    "feedbackWrong": {
+      "b": "Aguilhões são a imagem, não a palavra que compara.",
+      "c": "Sentenças são o que é comparado, não a marca da comparação."
+    },
+    "hint": "Procure uma palavra curta antes das imagens.",
+    "learningObjective": "Reconhecer o marcador de comparação em 12:11.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Eclesiastes 12:13 se relaciona com a advertência de 12:12?",
+    "prompt": "Como Eclesiastes 12:13 se relaciona com a advertência de 12:12?",
+    "cue": "Como Eclesiastes 12:13 se relaciona com a advertência de 12:12?",
+    "verseRef": "Eclesiastes 12:12–13",
+    "passageText": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne. O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Após livros sem fim, ele resume o essencial"
+      },
+      {
+        "id": "b",
+        "text": "Ele encerra sem dar nenhum dever"
+      },
+      {
+        "id": "c",
+        "text": "Ele diz que estudar substitui obedecer"
+      },
+      {
+        "id": "d",
+        "text": "Ele troca o essencial por mais livros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O essencial, após tudo o que se tem ouvido",
+    "feedbackCorrect": "Livros não têm fim, mas o livro termina com um resumo essencial.",
+    "feedbackWrong": {
+      "b": "Há um dever claro: temer a Deus e obedecer.",
+      "c": "Estudar muito é fardo; obedecer é o dever final.",
+      "d": "O essencial não é trocado: ele é anunciado em 12:13."
+    },
+    "hint": "Compare o peso de 12:12 com o resumo de 12:13.",
+    "learningObjective": "Relacionar a advertência de 12:12 com o resumo de 12:13.",
+    "evidence": [
+      "Eclesiastes 12:12–13"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Eclesiastes 12:10–11 sobre as palavras sábias?",
+    "prompt": "Como avança Eclesiastes 12:10–11 sobre as palavras sábias?",
+    "cue": "Como avança Eclesiastes 12:10–11 sobre as palavras sábias?",
+    "verseRef": "Eclesiastes 12:10–11",
+    "passageText": "Procurou o pregador encontrar palavras agradáveis e escreveu com precisão palavras de verdade. As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavras agradáveis são procuradas"
+      },
+      {
+        "id": "b",
+        "text": "Palavras de verdade são escritas"
+      },
+      {
+        "id": "c",
+        "text": "Sentenças firmam quem ouve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Procurou o pregador encontrar palavras agradáveis",
+    "feedbackCorrect": "Ele procura, escreve a verdade, e as sentenças firmam o ouvinte.",
+    "feedbackWrong": {
+      "default": "Comece pela procura do pregador em 12:10."
+    },
+    "hint": "Comece pelo versículo 10.",
+    "learningObjective": "Compreender o movimento de 12:10 a 12:11.",
+    "evidence": [
+      "Eclesiastes 12:10–11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Eclesiastes 12:11, como são os pregos das sentenças coligidas?",
+    "prompt": "Em Eclesiastes 12:11, como são os pregos das sentenças coligidas?",
+    "cue": "Em Eclesiastes 12:11, como são os pregos das sentenças coligidas?",
+    "verseRef": "Eclesiastes 12:11",
+    "passageText": "As palavras dos sábios são como aguilhões, e como pregos bem fixados são as sentenças coligidas, dadas pelo único Pastor.",
+    "template": "As palavras dos sábios são como aguilhões, e como pregos bem ___ são as sentenças coligidas, dadas pelo único Pastor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dados"
+      },
+      {
+        "id": "b",
+        "text": "coligidos"
+      },
+      {
+        "id": "c",
+        "text": "fixados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como pregos bem fixados são as sentenças coligidas",
+    "feedbackCorrect": "Pregos bem fixados: palavras sábias firmam quem as recebe.",
+    "feedbackWrong": {
+      "a": "Dadas descreve a origem das sentenças, não os pregos.",
+      "b": "Coligidas descreve as sentenças, não os pregos."
+    },
+    "hint": "Leia o meio do versículo.",
+    "learningObjective": "Compreender a imagem dos pregos em 12:11.",
+    "evidence": [
+      "Eclesiastes 12:11"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Eclesiastes 12:13 a Deuteronômio 10:12?",
+    "prompt": "O que liga Eclesiastes 12:13 a Deuteronômio 10:12?",
+    "cue": "O que liga Eclesiastes 12:13 a Deuteronômio 10:12?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 10:12",
+      "text": "Agora, pois, ó Israel, o que o SENHOR, teu Deus, requer de ti é que o temas, andes em todos os seus caminhos, o ames e sirvas ao SENHOR, teu Deus, com todo o teu coração e com toda a tua alma."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esconder as próprias obras"
+      },
+      {
+        "id": "b",
+        "text": "Temer e obedecer ao Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Acumular livros e estudos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "Nos dois textos, Deus pede temor que anda em seus caminhos.",
+    "feedbackWrong": {
+      "a": "Deus trará o escondido a juízo, não pede escondê-lo.",
+      "c": "Livros sem fim são peso em Eclesiastes, não a ponte."
+    },
+    "hint": "Veja o que Deus requer nos dois textos.",
+    "learningObjective": "Relacionar temer a Deus em Eclesiastes e Deuteronômio.",
+    "evidence": [
+      "Eclesiastes 12:13",
+      "Deuteronômio 10:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-07",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Eclesiastes 12:13, toque a quem alcança o dever de temer a Deus.",
+    "prompt": "Em Eclesiastes 12:13, toque a quem alcança o dever de temer a Deus.",
+    "cue": "Em Eclesiastes 12:13, toque a quem alcança o dever de temer a Deus.",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "todo homem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "este é o dever de todo homem",
+    "feedbackCorrect": "O dever de temer a Deus alcança todo homem.",
+    "feedbackWrong": {
+      "a": "Mandamentos são o que se guarda dentro desse dever.",
+      "b": "Deus é quem deve ser temido, não quem tem o dever."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Reconhecer o alcance universal do dever em 12:13.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-08",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as ideias de Eclesiastes 12:12–13?",
+    "prompt": "Como se encadeiam as ideias de Eclesiastes 12:12–13?",
+    "cue": "Como se encadeiam as ideias de Eclesiastes 12:12–13?",
+    "verseRef": "Eclesiastes 12:12–13",
+    "passageText": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne. O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Livros e estudo não têm fim"
+      },
+      {
+        "id": "b",
+        "text": "Após tudo ouvido vem o essencial"
+      },
+      {
+        "id": "c",
+        "text": "Temer a Deus é o dever final"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não há limite para a produção de livros",
+    "feedbackCorrect": "Do acúmulo sem fim, o texto chega ao essencial: temer a Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos livros sem limite de 12:12."
+    },
+    "hint": "Comece pelo versículo 12.",
+    "learningObjective": "Compreender a passagem do acúmulo ao essencial.",
+    "evidence": [
+      "Eclesiastes 12:12–13"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Eclesiastes 12:13 ensina que acumular conhecimento é, por si só, o sentido final do homem.",
+    "prompt": "Eclesiastes 12:13 ensina que acumular conhecimento é, por si só, o sentido final do homem.",
+    "cue": "Eclesiastes 12:13 ensina que acumular conhecimento é, por si só, o sentido final do homem.",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "O sentido final é temer a Deus e obedecer, não acumular.",
+    "feedbackWrong": {
+      "true": "Acúmulo sem fim é peso em 12:12; o essencial está em 12:13."
+    },
+    "hint": "Veja o que o livro chama de essencial.",
+    "learningObjective": "Distinguir acúmulo de conhecimento do sentido final.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 12:14, toque o trecho que mostra o alcance do juízo de Deus.",
+    "prompt": "Em Eclesiastes 12:14, toque o trecho que mostra o alcance do juízo de Deus.",
+    "cue": "Em Eclesiastes 12:14, toque o trecho que mostra o alcance do juízo de Deus.",
+    "verseRef": "Eclesiastes 12:14",
+    "passageText": "Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todas as obras"
+      },
+      {
+        "id": "b",
+        "text": "boas"
+      },
+      {
+        "id": "c",
+        "text": "escondidas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Deus há de trazer a juízo todas as obras",
+    "feedbackCorrect": "Todas as obras Deus trará a juízo, sem exceção.",
+    "feedbackWrong": {
+      "b": "Boas descreve um tipo de obra, não o alcance total.",
+      "c": "Escondidas ampliam o alcance, mas o total vem antes."
+    },
+    "hint": "Procure o que Deus trará a juízo.",
+    "learningObjective": "Sustentar com o texto o alcance total do juízo.",
+    "evidence": [
+      "Eclesiastes 12:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Eclesiastes 12:13–14 sustenta sobre viver diante de Deus?",
+    "prompt": "Que leitura Eclesiastes 12:13–14 sustenta sobre viver diante de Deus?",
+    "cue": "Que leitura Eclesiastes 12:13–14 sustenta sobre viver diante de Deus?",
+    "verseRef": "Eclesiastes 12:13–14",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem. Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver sem medo porque o escondido escapa"
+      },
+      {
+        "id": "b",
+        "text": "Obedecer só importa para quem é sábio"
+      },
+      {
+        "id": "c",
+        "text": "Buscar livros é o dever final do homem"
+      },
+      {
+        "id": "d",
+        "text": "Viver com temor, sabendo que Deus julgará tudo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "pois este é o dever de todo homem",
+    "feedbackCorrect": "Temor e obediência ganham peso porque Deus julgará tudo.",
+    "feedbackWrong": {
+      "a": "Até o escondido será julgado; nada escapa de Deus.",
+      "b": "O dever é de todo homem, não só de sábios.",
+      "c": "Livros sem fim são peso, não o dever final."
+    },
+    "hint": "Junte o dever de 12:13 com o juízo de 12:14.",
+    "learningObjective": "Escolher a interpretação sustentada pelo fim do livro.",
+    "evidence": [
+      "Eclesiastes 12:13–14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Eclesiastes 12:13–14?",
+    "prompt": "Qual sequência revela o sentido de Eclesiastes 12:13–14?",
+    "cue": "Qual sequência revela o sentido de Eclesiastes 12:13–14?",
+    "verseRef": "Eclesiastes 12:13–14",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem. Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O essencial é reverenciar a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Guardar seus caminhos é o dever humano"
+      },
+      {
+        "id": "c",
+        "text": "Deus julgará obras boas e más"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "Temor e obediência têm peso porque Deus julgará todas as obras.",
+    "feedbackWrong": {
+      "default": "Comece pelo essencial de 12:13; o juízo vem em 12:14."
+    },
+    "hint": "Siga de 12:13 para 12:14.",
+    "learningObjective": "Ver como temor, dever e juízo se ligam no fim.",
+    "evidence": [
+      "Eclesiastes 12:13–14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 12:13, que palavra resume tudo após o que se ouviu?",
+    "prompt": "Em Eclesiastes 12:13, que palavra resume tudo após o que se ouviu?",
+    "cue": "Em Eclesiastes 12:13, que palavra resume tudo após o que se ouviu?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "template": "O ___, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dever"
+      },
+      {
+        "id": "b",
+        "text": "essencial"
+      },
+      {
+        "id": "c",
+        "text": "juízo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O essencial, após tudo o que se tem ouvido",
+    "feedbackCorrect": "Após toda a busca, essa palavra abre o resumo final do livro.",
+    "feedbackWrong": {
+      "a": "Dever nomeia a obrigação que vem depois do resumo.",
+      "c": "Juízo aparece em 12:14, não como abertura do resumo."
+    },
+    "hint": "Leia a primeira palavra do versículo.",
+    "learningObjective": "Lembrar o termo que abre a conclusão final.",
+    "evidence": [
+      "Eclesiastes 12:13"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Eclesiastes 12:13 a Salmos 111:10?",
+    "prompt": "O que liga Eclesiastes 12:13 a Salmos 111:10?",
+    "cue": "O que liga Eclesiastes 12:13 a Salmos 111:10?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem."
+    },
+    "passageB": {
+      "ref": "Salmos 111:10",
+      "text": "O temor do Senhor é o princípio da sabedoria; revelam prudência todos os que o praticam. O seu louvor permanece para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Livros dão sabedoria sem fim"
+      },
+      {
+        "id": "b",
+        "text": "Temor é princípio da sabedoria"
+      },
+      {
+        "id": "c",
+        "text": "Sabedoria dispensa temer a Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "O salmo chama o temor do Senhor de princípio da sabedoria.",
+    "feedbackWrong": {
+      "a": "Livros sem fim são peso, não sabedoria plena.",
+      "c": "O salmo une sabedoria ao temor, não o dispensa."
+    },
+    "hint": "Veja como o salmo define o começo da sabedoria.",
+    "learningObjective": "Ligar o temor final ao princípio da sabedoria.",
+    "evidence": [
+      "Eclesiastes 12:13",
+      "Salmos 111:10"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-07",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 12:12, toque o que o muito estudar é para a carne.",
+    "prompt": "Em Eclesiastes 12:12, toque o que o muito estudar é para a carne.",
+    "cue": "Em Eclesiastes 12:12, toque o que o muito estudar é para a carne.",
+    "verseRef": "Eclesiastes 12:12",
+    "passageText": "Além disso, filho meu, atenta: não há limite para a produção de livros, e o muito estudar é um fardo para a carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fardo"
+      },
+      {
+        "id": "b",
+        "text": "livros"
+      },
+      {
+        "id": "c",
+        "text": "limite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o muito estudar é um fardo para a carne",
+    "feedbackCorrect": "Estudar sem fim pesa sobre a carne: é fardo, não sentido final.",
+    "feedbackWrong": {
+      "b": "Livros são produzidos sem limite, não o peso sentido na carne.",
+      "c": "Limite falta aos livros; o estudo em si pesa como outra coisa."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Sustentar com o texto o peso do acúmulo sem fim.",
+    "evidence": [
+      "Eclesiastes 12:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-08",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do temor que começa em Eclesiastes 12:13?",
+    "prompt": "Qual sequência revela o caminho do temor que começa em Eclesiastes 12:13?",
+    "cue": "Qual sequência revela o caminho do temor que começa em Eclesiastes 12:13?",
+    "verseRef": "Eclesiastes 12:13",
+    "passageText": "O essencial, após tudo o que se tem ouvido, é: tema a Deus e guarde os seus mandamentos, pois este é o dever de todo homem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temer a Deus é o dever de todo homem"
+      },
+      {
+        "id": "b",
+        "text": "O temor é o princípio da sabedoria"
+      },
+      {
+        "id": "c",
+        "text": "Deus requer andar em seus caminhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tema a Deus e guarde os seus mandamentos",
+    "feedbackCorrect": "O dever final se apoia no temor que funda a sabedoria e o andar com Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela conclusão de Eclesiastes e siga pelo temor sábio."
+    },
+    "hint": "Comece pela conclusão do Pregador.",
+    "learningObjective": "Ver o temor final ligado à sabedoria e ao andar com Deus.",
+    "evidence": [
+      "Eclesiastes 12:13",
+      "Salmos 111:10",
+      "Deuteronômio 10:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Eclesiastes 1:2, o Pregador diz que tudo é vaidade.",
+    "prompt": "Em Eclesiastes 1:2, o Pregador diz que tudo é vaidade.",
+    "cue": "Em Eclesiastes 1:2, o Pregador diz que tudo é vaidade.",
+    "verseRef": "Eclesiastes 1:2",
+    "passageText": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "tudo é vaidade",
+    "feedbackCorrect": "A frase resume a observação do Pregador sobre a vida debaixo do sol.",
+    "feedbackWrong": {
+      "false": "Releia Eclesiastes 1:2 e veja a conclusão repetida pelo Pregador."
+    },
+    "hint": "Olhe a conclusão do versículo.",
+    "learningObjective": "Observar a conclusão do Pregador em Eclesiastes 1:2.",
+    "evidence": [
+      "Eclesiastes 1:2"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Eclesiastes 1:2, toque quem diz que tudo é vaidade.",
+    "prompt": "Em Eclesiastes 1:2, toque quem diz que tudo é vaidade.",
+    "cue": "Em Eclesiastes 1:2, toque quem diz que tudo é vaidade.",
+    "verseRef": "Eclesiastes 1:2",
+    "passageText": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!",
+    "options": [
+      {
+        "id": "a",
+        "text": "tudo"
+      },
+      {
+        "id": "b",
+        "text": "vaidades"
+      },
+      {
+        "id": "c",
+        "text": "Pregador"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "diz o Pregador",
+    "feedbackCorrect": "Quem fala é o Pregador, e ele repete sua conclusão sobre tudo.",
+    "feedbackWrong": {
+      "a": "Tudo é o alcance da afirmação, não quem a faz.",
+      "b": "Vaidades é o que ele anuncia, não quem fala."
+    },
+    "hint": "Procure quem fala no versículo.",
+    "learningObjective": "Identificar o Pregador como quem anuncia a vaidade.",
+    "evidence": [
+      "Eclesiastes 1:2"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Eclesiastes 1:9, o que acontecerá com o que já foi?",
+    "prompt": "Segundo Eclesiastes 1:9, o que acontecerá com o que já foi?",
+    "cue": "Segundo Eclesiastes 1:9, o que acontecerá com o que já foi?",
+    "verseRef": "Eclesiastes 1:9",
+    "passageText": "O que foi, isso é o que há de ser; e o que se fez, isso se repetirá; nada há, portanto, de novo debaixo do sol.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isso ficará esquecido para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Isso será totalmente novo"
+      },
+      {
+        "id": "c",
+        "text": "Isso nunca mais acontecerá"
+      },
+      {
+        "id": "d",
+        "text": "Isso é o que há de ser"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O que foi, isso é o que há de ser",
+    "feedbackCorrect": "O texto vê repetição debaixo do sol: o que foi é o que há de ser.",
+    "feedbackWrong": {
+      "a": "A falta de memória aparece em 1:11, não neste versículo.",
+      "b": "O versículo nega novidade absoluta debaixo do sol.",
+      "c": "O texto afirma o contrário: o que foi volta a ser."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar a repetição afirmada em Eclesiastes 1:9.",
+    "evidence": [
+      "Eclesiastes 1:9"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Eclesiastes 1:14 na ordem do texto.",
+    "prompt": "Monte Eclesiastes 1:14 na ordem do texto.",
+    "cue": "Monte Eclesiastes 1:14 na ordem do texto.",
+    "verseRef": "Eclesiastes 1:14",
+    "passageText": "Observei todas as obras que são realizadas debaixo do sol, e percebi que tudo é vaidade e uma busca vã.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Observei todas as obras que são realizadas debaixo do sol"
+      },
+      {
+        "id": "b",
+        "text": "e percebi que tudo é vaidade"
+      },
+      {
+        "id": "c",
+        "text": "e uma busca vã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Observei todas as obras que são realizadas debaixo do sol",
+    "feedbackCorrect": "Ele observa as obras debaixo do sol e conclui que tudo é vaidade.",
+    "feedbackWrong": {
+      "default": "Comece pela observação das obras; a conclusão vem depois."
+    },
+    "hint": "Comece pelo que o Pregador observou.",
+    "learningObjective": "Reconhecer a sequência de Eclesiastes 1:14.",
+    "evidence": [
+      "Eclesiastes 1:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Eclesiastes 1:9, o que o texto diz que não há debaixo do sol?",
+    "prompt": "Em Eclesiastes 1:9, o que o texto diz que não há debaixo do sol?",
+    "cue": "Em Eclesiastes 1:9, o que o texto diz que não há debaixo do sol?",
+    "verseRef": "Eclesiastes 1:9",
+    "passageText": "O que foi, isso é o que há de ser; e o que se fez, isso se repetirá; nada há, portanto, de novo debaixo do sol.",
+    "template": "O que foi, isso é o que há de ser; e o que se fez, isso se repetirá; nada há, portanto, de ___ debaixo do sol.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pleno"
+      },
+      {
+        "id": "b",
+        "text": "novo"
+      },
+      {
+        "id": "c",
+        "text": "eterno"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nada há, portanto, de novo debaixo do sol",
+    "feedbackCorrect": "Debaixo do sol, o Pregador não encontra novidade que rompa os ciclos.",
+    "feedbackWrong": {
+      "a": "A palavra que falta nomeia algo inédito, não algo pleno.",
+      "c": "O texto fala de novidade, não de eternidade neste versículo."
+    },
+    "hint": "Pense no contrário de repetição.",
+    "learningObjective": "Lembrar que não há novidade debaixo do sol.",
+    "evidence": [
+      "Eclesiastes 1:9"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "verseRef": "Eclesiastes 1:2",
+    "passageText": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!",
+    "passageA": {
+      "ref": "Eclesiastes 1:2",
+      "text": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Pregador resume a vida debaixo do sol antes de iniciar sua busca."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo permanece para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Tudo passa como vapor"
+      },
+      {
+        "id": "c",
+        "text": "Nada precisa ser buscado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tudo é vaidade",
+    "feedbackCorrect": "Vaidade aponta para o que passa e não se deixa reter.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário sobre as coisas debaixo do sol.",
+      "c": "Depois dessa conclusão, o Pregador ainda inicia sua busca."
+    },
+    "hint": "Veja o sentido da palavra repetida.",
+    "learningObjective": "Ligar Eclesiastes 1:2 à brevidade da vida debaixo do sol.",
+    "evidence": [
+      "Eclesiastes 1:2"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Eclesiastes 1:4, as gerações passam, mas a terra permanece para sempre.",
+    "prompt": "Em Eclesiastes 1:4, as gerações passam, mas a terra permanece para sempre.",
+    "cue": "Em Eclesiastes 1:4, as gerações passam, mas a terra permanece para sempre.",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mas a terra permanece para sempre",
+    "feedbackCorrect": "Há contraste entre gerações que passam e a terra que permanece.",
+    "feedbackWrong": {
+      "false": "Releia Eclesiastes 1:4 e repare no contraste marcado por mas."
+    },
+    "hint": "Repare no contraste do versículo.",
+    "learningObjective": "Compreender o contraste entre gerações e terra.",
+    "evidence": [
+      "Eclesiastes 1:4"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Eclesiastes 1:4, toque a palavra que marca o contraste entre gerações e terra.",
+    "prompt": "Em Eclesiastes 1:4, toque a palavra que marca o contraste entre gerações e terra.",
+    "cue": "Em Eclesiastes 1:4, toque a palavra que marca o contraste entre gerações e terra.",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "geração"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas a terra permanece para sempre",
+    "feedbackCorrect": "A pequena palavra mas separa o que passa do que permanece.",
+    "feedbackWrong": {
+      "a": "Geração é o que passa, não a marca do contraste.",
+      "c": "Sempre diz por quanto tempo a terra fica, não o contraste."
+    },
+    "hint": "Procure uma palavra curta de oposição.",
+    "learningObjective": "Reconhecer o marcador de contraste em Eclesiastes 1:4.",
+    "evidence": [
+      "Eclesiastes 1:4"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Eclesiastes 1:14 se relaciona com a busca descrita em 1:13?",
+    "prompt": "Como Eclesiastes 1:14 se relaciona com a busca descrita em 1:13?",
+    "cue": "Como Eclesiastes 1:14 se relaciona com a busca descrita em 1:13?",
+    "verseRef": "Eclesiastes 1:13–14",
+    "passageText": "Dediquei meu coração a esquadrinhar e a buscar sabedoria sobre tudo o que se passa debaixo do céu; este trabalho enfadonho Deus impôs aos filhos dos homens para que nele se aflijam. Observei todas as obras que são realizadas debaixo do sol, e percebi que tudo é vaidade e uma busca vã.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele afirma que Deus impediu sua busca"
+      },
+      {
+        "id": "b",
+        "text": "Ele desiste de buscar antes de observar"
+      },
+      {
+        "id": "c",
+        "text": "Depois de buscar, ele conclui que tudo escapa"
+      },
+      {
+        "id": "d",
+        "text": "Depois de buscar, ele encontra proveito permanente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Observei todas as obras que são realizadas debaixo do sol",
+    "feedbackCorrect": "Ele busca com o coração e, ao observar tudo, conclui que nada se retém.",
+    "feedbackWrong": {
+      "a": "O texto não diz que Deus impediu a busca dele.",
+      "b": "Ele observa todas as obras antes de concluir.",
+      "d": "A conclusão não é proveito permanente, mas vaidade."
+    },
+    "hint": "Siga a ordem entre buscar e concluir.",
+    "learningObjective": "Relacionar a busca de 1:13 com a conclusão de 1:14.",
+    "evidence": [
+      "Eclesiastes 1:13–14"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a abertura em Eclesiastes 1:2–3?",
+    "prompt": "Como avança a abertura em Eclesiastes 1:2–3?",
+    "cue": "Como avança a abertura em Eclesiastes 1:2–3?",
+    "verseRef": "Eclesiastes 1:2–3",
+    "passageText": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade! Qual é o proveito do homem em todo o seu trabalho, com que se afadiga debaixo do sol?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Pregador anuncia sua conclusão"
+      },
+      {
+        "id": "b",
+        "text": "Ele pergunta pelo proveito do trabalho"
+      },
+      {
+        "id": "c",
+        "text": "Ele observa o esforço debaixo do sol"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Qual é o proveito do homem em todo o seu trabalho",
+    "feedbackCorrect": "Primeiro a conclusão, depois a pergunta que move a investigação.",
+    "feedbackWrong": {
+      "default": "A conclusão de 1:2 vem antes da pergunta de 1:3."
+    },
+    "hint": "Comece pelo versículo 2.",
+    "learningObjective": "Compreender o movimento da abertura do livro.",
+    "evidence": [
+      "Eclesiastes 1:2–3"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Eclesiastes 1:8, o que os olhos nunca fazem ao ver?",
+    "prompt": "Em Eclesiastes 1:8, o que os olhos nunca fazem ao ver?",
+    "cue": "Em Eclesiastes 1:8, o que os olhos nunca fazem ao ver?",
+    "verseRef": "Eclesiastes 1:8",
+    "passageText": "Todas essas coisas são tão cansativas que ninguém pode expressar; os olhos nunca se fartam de ver, nem os ouvidos se satisfazem de ouvir.",
+    "template": "Todas essas coisas são tão cansativas que ninguém pode expressar; os olhos nunca se ___ de ver, nem os ouvidos se satisfazem de ouvir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fartam"
+      },
+      {
+        "id": "b",
+        "text": "cansam"
+      },
+      {
+        "id": "c",
+        "text": "fecham"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os olhos nunca se fartam de ver",
+    "feedbackCorrect": "Ver muito não sacia: os olhos continuam querendo mais.",
+    "feedbackWrong": {
+      "b": "O cansaço é das coisas em geral; dos olhos o texto fala outra coisa.",
+      "c": "O texto não fala de olhos fechados, mas insatisfeitos."
+    },
+    "hint": "Procure o verbo ligado a ver.",
+    "learningObjective": "Compreender a insatisfação descrita em Eclesiastes 1:8.",
+    "evidence": [
+      "Eclesiastes 1:8"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Eclesiastes 1:2 a Tiago 4:14?",
+    "prompt": "O que liga Eclesiastes 1:2 a Tiago 4:14?",
+    "cue": "O que liga Eclesiastes 1:2 a Tiago 4:14?",
+    "verseRef": "Eclesiastes 1:2",
+    "passageText": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!",
+    "passageA": {
+      "ref": "Eclesiastes 1:2",
+      "text": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!"
+    },
+    "passageB": {
+      "ref": "Tiago 4:14",
+      "text": "Vocês não sabem o que ocorrerá amanhã. Afinal, o que é a sua vida? É apenas uma névoa que aparece por um instante e logo se dissipa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A vida dura para sempre"
+      },
+      {
+        "id": "b",
+        "text": "A vida passa depressa"
+      },
+      {
+        "id": "c",
+        "text": "O trabalho nunca cansa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tudo é vaidade",
+    "feedbackCorrect": "Tiago compara a vida a uma névoa breve; o Pregador a chama de vaidade.",
+    "feedbackWrong": {
+      "a": "Os dois textos destacam brevidade, não permanência.",
+      "c": "O cansaço aparece em Eclesiastes 1:8, não é a ponte aqui."
+    },
+    "hint": "Compare as imagens de brevidade.",
+    "learningObjective": "Relacionar vaidade e névoa como imagens de brevidade.",
+    "evidence": [
+      "Eclesiastes 1:2",
+      "Tiago 4:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Eclesiastes 1:14 afirma que tudo debaixo do sol é inútil e por isso Deus não merece ser buscado.",
+    "prompt": "Eclesiastes 1:14 afirma que tudo debaixo do sol é inútil e por isso Deus não merece ser buscado.",
+    "cue": "Eclesiastes 1:14 afirma que tudo debaixo do sol é inútil e por isso Deus não merece ser buscado.",
+    "verseRef": "Eclesiastes 1:14",
+    "passageText": "Observei todas as obras que são realizadas debaixo do sol, e percebi que tudo é vaidade e uma busca vã.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "tudo é vaidade e uma busca vã",
+    "feedbackCorrect": "O versículo resume o que escapa ao homem; não ordena abandonar a Deus.",
+    "feedbackWrong": {
+      "true": "A conclusão trata das obras sob o sol, não diz para deixar de buscar a Deus."
+    },
+    "hint": "Veja até onde vai a afirmação do versículo.",
+    "learningObjective": "Distinguir a observação sob o sol da conclusão final do livro.",
+    "evidence": [
+      "Eclesiastes 1:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 1:14, toque o trecho que mostra que o esforço humano não se deixa reter.",
+    "prompt": "Em Eclesiastes 1:14, toque o trecho que mostra que o esforço humano não se deixa reter.",
+    "cue": "Em Eclesiastes 1:14, toque o trecho que mostra que o esforço humano não se deixa reter.",
+    "verseRef": "Eclesiastes 1:14",
+    "passageText": "Observei todas as obras que são realizadas debaixo do sol, e percebi que tudo é vaidade e uma busca vã.",
+    "options": [
+      {
+        "id": "a",
+        "text": "debaixo do sol"
+      },
+      {
+        "id": "b",
+        "text": "todas as obras"
+      },
+      {
+        "id": "c",
+        "text": "busca vã"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tudo é vaidade e uma busca vã",
+    "feedbackCorrect": "A busca é vã porque seu alvo escapa, como vapor ao vento.",
+    "feedbackWrong": {
+      "a": "Debaixo do sol indica o campo da observação, não o escape.",
+      "b": "Obras são o que ele observa; o escape aparece na conclusão."
+    },
+    "hint": "Procure o fim da conclusão do Pregador.",
+    "learningObjective": "Sustentar com o texto que o esforço sob o sol não se retém.",
+    "evidence": [
+      "Eclesiastes 1:14"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Eclesiastes 1:9 sustenta sobre a novidade debaixo do sol?",
+    "prompt": "Que leitura Eclesiastes 1:9 sustenta sobre a novidade debaixo do sol?",
+    "cue": "Que leitura Eclesiastes 1:9 sustenta sobre a novidade debaixo do sol?",
+    "verseRef": "Eclesiastes 1:9",
+    "passageText": "O que foi, isso é o que há de ser; e o que se fez, isso se repetirá; nada há, portanto, de novo debaixo do sol.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda repetição torna a vida sem valor"
+      },
+      {
+        "id": "b",
+        "text": "O novo que vemos repete o que já houve"
+      },
+      {
+        "id": "c",
+        "text": "O passado deve ser esquecido pelo leitor"
+      },
+      {
+        "id": "d",
+        "text": "Deus nunca fará nada novo em sua obra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nada há, portanto, de novo debaixo do sol",
+    "feedbackCorrect": "Debaixo do sol, o que parece novo repete padrões que já existiram.",
+    "feedbackWrong": {
+      "a": "Repetir não é o mesmo que não ter valor algum.",
+      "c": "O assunto é novidade, não um dever de esquecer o passado.",
+      "d": "O limite é debaixo do sol; o texto não fecha a obra de Deus."
+    },
+    "hint": "Repare no limite da frase do Pregador.",
+    "learningObjective": "Interpretar a novidade dentro do limite debaixo do sol.",
+    "evidence": [
+      "Eclesiastes 1:9"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da brevidade que começa em Eclesiastes 1:14?",
+    "prompt": "Qual sequência revela o caminho da brevidade que começa em Eclesiastes 1:14?",
+    "cue": "Qual sequência revela o caminho da brevidade que começa em Eclesiastes 1:14?",
+    "verseRef": "Eclesiastes 1:14",
+    "passageText": "Observei todas as obras que são realizadas debaixo do sol, e percebi que tudo é vaidade e uma busca vã.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Pregador vê tudo passar debaixo do sol"
+      },
+      {
+        "id": "b",
+        "text": "A vida humana é como névoa passageira"
+      },
+      {
+        "id": "c",
+        "text": "O olhar se volta ao que é eterno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tudo é vaidade e uma busca vã",
+    "feedbackCorrect": "Da vaidade sob o sol, a Bíblia leva o olhar ao que não passa.",
+    "feedbackWrong": {
+      "default": "Siga a ordem: Eclesiastes, Tiago e depois 2 Coríntios."
+    },
+    "hint": "Comece debaixo do sol e termine no eterno.",
+    "learningObjective": "Ver a brevidade sob o sol em contraste com o eterno.",
+    "evidence": [
+      "Eclesiastes 1:14",
+      "Tiago 4:14",
+      "2 Coríntios 4:18"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 1:18, o que quem multiplica o conhecimento também multiplica?",
+    "prompt": "Em Eclesiastes 1:18, o que quem multiplica o conhecimento também multiplica?",
+    "cue": "Em Eclesiastes 1:18, o que quem multiplica o conhecimento também multiplica?",
+    "verseRef": "Eclesiastes 1:18",
+    "passageText": "Porque quanto mais sabedoria, mais enfado; e quem multiplica o conhecimento, multiplica a tristeza.",
+    "template": "Porque quanto mais sabedoria, mais enfado; e quem multiplica o conhecimento, multiplica a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "descanso"
+      },
+      {
+        "id": "b",
+        "text": "alegria"
+      },
+      {
+        "id": "c",
+        "text": "tristeza"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "quem multiplica o conhecimento, multiplica a tristeza",
+    "feedbackCorrect": "Saber mais, sob o sol, também faz enxergar mais limites e dores.",
+    "feedbackWrong": {
+      "a": "Descanso é o contrário do enfado descrito no versículo.",
+      "b": "O texto liga conhecimento a enfado, não a alegria fácil."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Lembrar o termo que carrega o custo da sabedoria sob o sol.",
+    "evidence": [
+      "Eclesiastes 1:18"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Eclesiastes 1:2 a 2 Coríntios 4:18?",
+    "prompt": "O que liga Eclesiastes 1:2 a 2 Coríntios 4:18?",
+    "cue": "O que liga Eclesiastes 1:2 a 2 Coríntios 4:18?",
+    "verseRef": "Eclesiastes 1:2",
+    "passageText": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!",
+    "passageA": {
+      "ref": "Eclesiastes 1:2",
+      "text": "Vaidade de vaidades, diz o Pregador; vaidade de vaidades, tudo é vaidade!"
+    },
+    "passageB": {
+      "ref": "2 Coríntios 4:18",
+      "text": "Não fixamos os olhos nas coisas que são visíveis, mas nas que são invisíveis, pois as que são visíveis são temporais, enquanto as que são invisíveis são eternas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O passageiro pede olhar eterno"
+      },
+      {
+        "id": "b",
+        "text": "O eterno pode ser visto"
+      },
+      {
+        "id": "c",
+        "text": "O visível dura para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tudo é vaidade",
+    "feedbackCorrect": "Paulo contrasta o visível passageiro com o invisível eterno.",
+    "feedbackWrong": {
+      "b": "O eterno, para Paulo, é justamente o que não se vê.",
+      "c": "Paulo chama o visível de passageiro, não de permanente."
+    },
+    "hint": "Compare passageiro e eterno nos dois textos.",
+    "learningObjective": "Ligar a vaidade sob o sol ao contraste entre visível e eterno.",
+    "evidence": [
+      "Eclesiastes 1:2",
+      "2 Coríntios 4:18"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Eclesiastes 3:1, cada propósito pode acontecer em qualquer momento, sem hora apropriada.",
+    "prompt": "Em Eclesiastes 3:1, cada propósito pode acontecer em qualquer momento, sem hora apropriada.",
+    "cue": "Em Eclesiastes 3:1, cada propósito pode acontecer em qualquer momento, sem hora apropriada.",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "há um momento apropriado",
+    "feedbackCorrect": "Para cada propósito há um momento apropriado, não qualquer hora.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Eclesiastes 3:1: há um momento apropriado."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar que cada propósito tem momento apropriado.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Eclesiastes 3:1, toque o que há para tudo.",
+    "prompt": "Em Eclesiastes 3:1, toque o que há para tudo.",
+    "cue": "Em Eclesiastes 3:1, toque o que há para tudo.",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tempo designado"
+      },
+      {
+        "id": "b",
+        "text": "debaixo do céu"
+      },
+      {
+        "id": "c",
+        "text": "propósito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Para tudo há um tempo designado",
+    "feedbackCorrect": "Para tudo há um tempo designado: nada foge a uma estação.",
+    "feedbackWrong": {
+      "b": "Debaixo do céu indica onde a vida acontece, não o que há para tudo.",
+      "c": "Propósito é o assunto que tem seu momento, não o que há para tudo."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Identificar o tempo designado para tudo.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Eclesiastes 1:3, em que o homem se afadiga debaixo do sol?",
+    "prompt": "Segundo Eclesiastes 1:3, em que o homem se afadiga debaixo do sol?",
+    "cue": "Segundo Eclesiastes 1:3, em que o homem se afadiga debaixo do sol?",
+    "verseRef": "Eclesiastes 1:3",
+    "passageText": "Qual é o proveito do homem em todo o seu trabalho, com que se afadiga debaixo do sol?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em suas viagens"
+      },
+      {
+        "id": "b",
+        "text": "Em seu trabalho"
+      },
+      {
+        "id": "c",
+        "text": "Em seus estudos"
+      },
+      {
+        "id": "d",
+        "text": "Em suas guerras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em todo o seu trabalho, com que se afadiga debaixo do sol",
+    "feedbackCorrect": "A pergunta pelo proveito nasce do trabalho com que o homem se afadiga.",
+    "feedbackWrong": {
+      "a": "O texto fala de trabalho debaixo do sol, não de viagens.",
+      "c": "Estudo aparece depois; aqui o foco é o trabalho.",
+      "d": "Guerras não são o assunto deste versículo."
+    },
+    "hint": "Veja a atividade citada no versículo.",
+    "learningObjective": "Observar o trabalho humano debaixo do sol.",
+    "evidence": [
+      "Eclesiastes 1:3"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Eclesiastes 1:4 na ordem do texto.",
+    "prompt": "Monte Eclesiastes 1:4 na ordem do texto.",
+    "cue": "Monte Eclesiastes 1:4 na ordem do texto.",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma geração se vai"
+      },
+      {
+        "id": "b",
+        "text": "e outra geração surge"
+      },
+      {
+        "id": "c",
+        "text": "mas a terra permanece para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Uma geração se vai e outra geração surge",
+    "feedbackCorrect": "Gerações se sucedem, mas a terra permanece para sempre.",
+    "feedbackWrong": {
+      "default": "Comece pela geração que se vai; a terra fecha o versículo."
+    },
+    "hint": "O versículo começa pelas gerações.",
+    "learningObjective": "Reconhecer a sequência de Eclesiastes 1:4.",
+    "evidence": [
+      "Eclesiastes 1:4"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Eclesiastes 3:1, como é o momento para cada propósito?",
+    "prompt": "Em Eclesiastes 3:1, como é o momento para cada propósito?",
+    "cue": "Em Eclesiastes 3:1, como é o momento para cada propósito?",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "template": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apropriado"
+      },
+      {
+        "id": "b",
+        "text": "imediato"
+      },
+      {
+        "id": "c",
+        "text": "eterno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "há um momento apropriado",
+    "feedbackCorrect": "Cada propósito tem um momento apropriado, na hora certa.",
+    "feedbackWrong": {
+      "b": "Nem tudo é imediato: há hora certa para cada propósito.",
+      "c": "O momento não é chamado de eterno, mas de apropriado."
+    },
+    "hint": "Leia a última palavra do versículo.",
+    "learningObjective": "Lembrar que o momento de cada propósito é apropriado.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Eclesiastes 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 1:4 comunica que se liga a este contexto?",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "passageA": {
+      "ref": "Eclesiastes 1:4",
+      "text": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Gerações vêm e vão, mas cada uma vive seu tempo na terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhuma geração passa"
+      },
+      {
+        "id": "b",
+        "text": "A terra acaba com a geração"
+      },
+      {
+        "id": "c",
+        "text": "Cada geração tem seu tempo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Uma geração se vai e outra geração surge",
+    "feedbackCorrect": "Uma geração se vai e outra surge: cada uma tem seu tempo.",
+    "feedbackWrong": {
+      "a": "O texto diz que uma geração se vai e outra surge.",
+      "b": "A terra permanece, não acaba com a geração."
+    },
+    "hint": "Veja o que acontece com cada geração.",
+    "learningObjective": "Ligar as gerações de 1:4 ao tempo de cada uma.",
+    "evidence": [
+      "Eclesiastes 1:4"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Eclesiastes 3:1 liga cada propósito debaixo do céu a um momento apropriado.",
+    "prompt": "Eclesiastes 3:1 liga cada propósito debaixo do céu a um momento apropriado.",
+    "cue": "Eclesiastes 3:1 liga cada propósito debaixo do céu a um momento apropriado.",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para cada propósito debaixo do céu há um momento apropriado",
+    "feedbackCorrect": "Cada propósito tem sua hora apropriada debaixo do céu.",
+    "feedbackWrong": {
+      "false": "Releia Eclesiastes 3:1: cada propósito tem momento apropriado."
+    },
+    "hint": "Olhe a segunda metade do versículo.",
+    "learningObjective": "Compreender a ligação entre propósito e momento.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Eclesiastes 1:4, toque a palavra que marca o contraste entre gerações e terra.",
+    "prompt": "Em Eclesiastes 1:4, toque a palavra que marca o contraste entre gerações e terra.",
+    "cue": "Em Eclesiastes 1:4, toque a palavra que marca o contraste entre gerações e terra.",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas a terra permanece para sempre",
+    "feedbackCorrect": "Mas separa gerações passageiras da terra que permanece.",
+    "feedbackWrong": {
+      "b": "Sempre indica duração, não a virada do contraste.",
+      "c": "Terra é o que permanece, não a marca do contraste."
+    },
+    "hint": "Procure uma palavra curta de oposição.",
+    "learningObjective": "Reconhecer o marcador de contraste em Eclesiastes 1:4.",
+    "evidence": [
+      "Eclesiastes 1:4"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Eclesiastes 1:4 ajuda a entender o trabalho de 1:3?",
+    "prompt": "Como Eclesiastes 1:4 ajuda a entender o trabalho de 1:3?",
+    "cue": "Como Eclesiastes 1:4 ajuda a entender o trabalho de 1:3?",
+    "verseRef": "Eclesiastes 1:3–4",
+    "passageText": "Qual é o proveito do homem em todo o seu trabalho, com que se afadiga debaixo do sol? Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O trabalho torna o homem permanente na terra"
+      },
+      {
+        "id": "b",
+        "text": "A terra depende do trabalho para permanecer"
+      },
+      {
+        "id": "c",
+        "text": "O trabalhador passa, mas a terra continua"
+      },
+      {
+        "id": "d",
+        "text": "Cada geração guarda para sempre seu trabalho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Uma geração se vai e outra geração surge",
+    "feedbackCorrect": "Quem trabalha pertence a uma geração que passa; a terra continua.",
+    "feedbackWrong": {
+      "a": "As gerações se vão; o homem não permanece como a terra.",
+      "b": "A terra permanece por si no texto, não pelo trabalho humano.",
+      "d": "O texto não promete permanência ao trabalho de cada geração."
+    },
+    "hint": "Compare quem passa e o que fica.",
+    "learningObjective": "Relacionar o trabalho humano às gerações que passam.",
+    "evidence": [
+      "Eclesiastes 1:3–4"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam as afirmações de Eclesiastes 3:1?",
+    "prompt": "Como se encadeiam as afirmações de Eclesiastes 3:1?",
+    "cue": "Como se encadeiam as afirmações de Eclesiastes 3:1?",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo recebe um tempo designado"
+      },
+      {
+        "id": "b",
+        "text": "Cada propósito é considerado por vez"
+      },
+      {
+        "id": "c",
+        "text": "Há um momento apropriado para ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Para tudo há um tempo designado",
+    "feedbackCorrect": "Do geral ao particular: tudo tem tempo, e cada propósito, seu momento.",
+    "feedbackWrong": {
+      "default": "Comece pela afirmação geral sobre tudo; o momento fecha."
+    },
+    "hint": "Comece pela afirmação mais ampla.",
+    "learningObjective": "Compreender o movimento de Eclesiastes 3:1.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Eclesiastes 1:3, o que o Pregador pergunta sobre o trabalho do homem?",
+    "prompt": "Em Eclesiastes 1:3, o que o Pregador pergunta sobre o trabalho do homem?",
+    "cue": "Em Eclesiastes 1:3, o que o Pregador pergunta sobre o trabalho do homem?",
+    "verseRef": "Eclesiastes 1:3",
+    "passageText": "Qual é o proveito do homem em todo o seu trabalho, com que se afadiga debaixo do sol?",
+    "template": "Qual é o ___ do homem em todo o seu trabalho, com que se afadiga debaixo do sol?",
+    "options": [
+      {
+        "id": "a",
+        "text": "tesouro"
+      },
+      {
+        "id": "b",
+        "text": "descanso"
+      },
+      {
+        "id": "c",
+        "text": "proveito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Qual é o proveito do homem em todo o seu trabalho",
+    "feedbackCorrect": "A pergunta é pelo proveito de tanto esforço debaixo do sol.",
+    "feedbackWrong": {
+      "a": "Tesouro não é a palavra da pergunta do Pregador.",
+      "b": "O texto pergunta por ganho do trabalho, não por descanso."
+    },
+    "hint": "Leia a primeira palavra da pergunta dele.",
+    "learningObjective": "Compreender a pergunta pelo proveito do trabalho.",
+    "evidence": [
+      "Eclesiastes 1:3"
+    ]
+  },
+  {
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Eclesiastes 3:1 a Salmos 90:12?",
+    "prompt": "O que liga Eclesiastes 3:1 a Salmos 90:12?",
+    "cue": "O que liga Eclesiastes 3:1 a Salmos 90:12?",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "passageA": {
+      "ref": "Eclesiastes 3:1",
+      "text": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado."
+    },
+    "passageB": {
+      "ref": "Salmos 90:12",
+      "text": "Ensina-nos a contar os nossos dias, para que alcancemos coração sábio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Contar os dias com sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "Controlar todos os tempos"
+      },
+      {
+        "id": "c",
+        "text": "Ignorar os dias que passam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "há um momento apropriado",
+    "feedbackCorrect": "Quem reconhece seu tempo aprende a contar os dias com sabedoria.",
+    "feedbackWrong": {
+      "b": "Contar os dias é sabedoria, não controle sobre os tempos.",
+      "c": "O salmo pede atenção aos dias, não que sejam ignorados."
+    },
+    "hint": "Veja o pedido que o salmo faz a Deus.",
+    "learningObjective": "Relacionar o tempo designado à sabedoria de contar os dias.",
+    "evidence": [
+      "Eclesiastes 3:1",
+      "Salmos 90:12"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-01",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Eclesiastes 1:4 ensina que, porque a terra permanece, o trabalho humano também permanece para sempre.",
+    "prompt": "Eclesiastes 1:4 ensina que, porque a terra permanece, o trabalho humano também permanece para sempre.",
+    "cue": "Eclesiastes 1:4 ensina que, porque a terra permanece, o trabalho humano também permanece para sempre.",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Uma geração se vai e outra geração surge",
+    "feedbackCorrect": "A terra permanece, mas cada geração se vai com seu tempo.",
+    "feedbackWrong": {
+      "true": "O versículo contrasta a terra que fica com gerações que se vão."
+    },
+    "hint": "Compare o destino das gerações e da terra.",
+    "learningObjective": "Distinguir a permanência da terra da brevidade humana.",
+    "evidence": [
+      "Eclesiastes 1:4"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-02",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 3:1, toque o trecho que mostra a hora certa de cada propósito.",
+    "prompt": "Em Eclesiastes 3:1, toque o trecho que mostra a hora certa de cada propósito.",
+    "cue": "Em Eclesiastes 3:1, toque o trecho que mostra a hora certa de cada propósito.",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "debaixo do céu"
+      },
+      {
+        "id": "b",
+        "text": "tempo designado"
+      },
+      {
+        "id": "c",
+        "text": "momento apropriado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "há um momento apropriado",
+    "feedbackCorrect": "Cada propósito tem um momento apropriado, sua hora certa.",
+    "feedbackWrong": {
+      "a": "Debaixo do céu é o campo da vida, não a hora certa.",
+      "b": "Tempo designado é a afirmação geral; a hora de cada propósito vem depois."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar com o texto a hora certa de cada propósito.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-03",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Eclesiastes 3:1 sustenta sobre os tempos da vida?",
+    "prompt": "Que leitura Eclesiastes 3:1 sustenta sobre os tempos da vida?",
+    "cue": "Que leitura Eclesiastes 3:1 sustenta sobre os tempos da vida?",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda escolha pode ser feita a qualquer hora"
+      },
+      {
+        "id": "b",
+        "text": "O homem define sozinho quando tudo acontece"
+      },
+      {
+        "id": "c",
+        "text": "Cada estação pede resposta sábia e oportuna"
+      },
+      {
+        "id": "d",
+        "text": "Esperar o momento anula qualquer responsabilidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para cada propósito debaixo do céu há um momento apropriado",
+    "feedbackCorrect": "Há hora apropriada para cada propósito: isso pede discernimento.",
+    "feedbackWrong": {
+      "a": "Momento apropriado nega que qualquer hora sirva igual.",
+      "b": "O tempo é designado, não criado pela vontade humana.",
+      "d": "Reconhecer a hora pede resposta, não omissão."
+    },
+    "hint": "Pense no que um momento apropriado exige de nós.",
+    "learningObjective": "Escolher a interpretação que Eclesiastes 3:1 sustenta.",
+    "evidence": [
+      "Eclesiastes 3:1"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-04",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do tempo que começa em Eclesiastes 1:4?",
+    "prompt": "Qual sequência revela o caminho do tempo que começa em Eclesiastes 1:4?",
+    "cue": "Qual sequência revela o caminho do tempo que começa em Eclesiastes 1:4?",
+    "verseRef": "Eclesiastes 1:4",
+    "passageText": "Uma geração se vai e outra geração surge, mas a terra permanece para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gerações passam e a terra permanece"
+      },
+      {
+        "id": "b",
+        "text": "O sábio aprende a contar os dias"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor dirige os passos do homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Uma geração se vai e outra geração surge",
+    "feedbackCorrect": "Gerações breves pedem sabedoria para viver sob a direção do Senhor.",
+    "feedbackWrong": {
+      "default": "Siga a ordem: Eclesiastes, Salmos e depois Provérbios."
+    },
+    "hint": "Comece pelas gerações que passam.",
+    "learningObjective": "Ver o tempo breve como chamado à sabedoria.",
+    "evidence": [
+      "Eclesiastes 1:4",
+      "Salmos 90:12",
+      "Provérbios 16:9"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-05",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Eclesiastes 1:9, o que acontecerá com o que já se fez?",
+    "prompt": "Em Eclesiastes 1:9, o que acontecerá com o que já se fez?",
+    "cue": "Em Eclesiastes 1:9, o que acontecerá com o que já se fez?",
+    "verseRef": "Eclesiastes 1:9",
+    "passageText": "O que foi, isso é o que há de ser; e o que se fez, isso se repetirá; nada há, portanto, de novo debaixo do sol.",
+    "template": "O que foi, isso é o que há de ser; e o que se fez, isso se ___; nada há, portanto, de novo debaixo do sol.",
+    "options": [
+      {
+        "id": "a",
+        "text": "repetirá"
+      },
+      {
+        "id": "b",
+        "text": "acabará"
+      },
+      {
+        "id": "c",
+        "text": "mudará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o que se fez, isso se repetirá",
+    "feedbackCorrect": "Debaixo do sol, o que se fez se repetirá em novas gerações.",
+    "feedbackWrong": {
+      "b": "O texto não diz que acabará, mas que se repetirá.",
+      "c": "A ideia é repetição do mesmo, não mudança total."
+    },
+    "hint": "Leia a segunda parte do versículo.",
+    "learningObjective": "Lembrar o termo que carrega a repetição dos ciclos.",
+    "evidence": [
+      "Eclesiastes 1:9"
+    ]
+  },
+  {
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-06",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Eclesiastes 3:1 a Provérbios 16:9?",
+    "prompt": "O que liga Eclesiastes 3:1 a Provérbios 16:9?",
+    "cue": "O que liga Eclesiastes 3:1 a Provérbios 16:9?",
+    "verseRef": "Eclesiastes 3:1",
+    "passageText": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado.",
+    "passageA": {
+      "ref": "Eclesiastes 3:1",
+      "text": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado."
+    },
+    "passageB": {
+      "ref": "Provérbios 16:9",
+      "text": "O coração do homem traça o seu caminho, mas o Senhor dirige os seus passos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os planos humanos nunca falham"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor dirige os passos"
+      },
+      {
+        "id": "c",
+        "text": "O homem controla cada estação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Para tudo há um tempo designado",
+    "feedbackCorrect": "O homem planeja o caminho, mas quem dirige seus passos é o Senhor.",
+    "feedbackWrong": {
+      "a": "Planos humanos existem, mas não dirigem sozinhos os passos.",
+      "c": "Provérbios mostra o Senhor dirigindo, não o homem controlando."
+    },
+    "hint": "Veja quem dirige os passos em Provérbios.",
+    "learningObjective": "Ligar o tempo designado à direção do Senhor.",
+    "evidence": [
+      "Eclesiastes 3:1",
+      "Provérbios 16:9"
+    ]
+  }
+]

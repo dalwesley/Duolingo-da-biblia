@@ -1,0 +1,937 @@
+{
+ "study": {
+  "passageRef": "João 1:1–5",
+  "passages": [
+   {
+    "ref": "João 1:1–14"
+   },
+   {
+    "ref": "Mateus 3:13–17"
+   },
+   {
+    "ref": "Mateus 4:1–11"
+   }
+  ],
+  "context": "Este desafio revisa o início dos evangelhos: o Verbo se faz carne, Jesus é declarado Filho amado no batismo e permanece fiel no deserto, respondendo com a Escritura.",
+  "keyword": "Filho fiel",
+  "keywordGloss": "Declarado Filho amado, Jesus obedece ao Pai também na provação do deserto.",
+  "focusQuestion": "Como lembrar quem Jesus é muda a sua obediência nas provações?",
+  "reflectionPrompts": [
+   "Verbo feito carne",
+   "Filho amado declarado",
+   "Fiel no deserto"
+  ],
+  "facts": [
+   {
+    "text": "O Verbo se fez carne e habitou entre os homens.",
+    "evidenceRef": "João 1:14",
+    "evidenceSpan": "E o Verbo se fez carne e habitou entre nós"
+   },
+   {
+    "text": "A voz dos céus chamou Jesus de Filho amado.",
+    "evidenceRef": "Mateus 3:17",
+    "evidenceSpan": "Este é o meu Filho amado, em quem me agrado"
+   },
+   {
+    "text": "Jesus foi conduzido pelo Espírito ao deserto.",
+    "evidenceRef": "Mateus 4:1",
+    "evidenceSpan": "Jesus foi conduzido pelo Espírito ao deserto"
+   },
+   {
+    "text": "O homem viverá de toda palavra que procede de Deus.",
+    "evidenceRef": "Mateus 4:4",
+    "evidenceSpan": "mas de toda palavra que procede da boca de Deus"
+   },
+   {
+    "text": "Após a prova, anjos vieram e serviram Jesus.",
+    "evidenceRef": "Mateus 4:11",
+    "evidenceSpan": "apareceram anjos e o serviram"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Verbo",
+    "gloss": "Deus que se faz carne em Jesus e habita entre os homens."
+   },
+   {
+    "term": "Filho amado",
+    "gloss": "A identidade declarada pelo Pai antes da missão e da prova."
+   },
+   {
+    "term": "deserto",
+    "gloss": "O lugar da prova onde Jesus permanece fiel pela palavra."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O Verbo se faz carne",
+    "evidenceRef": "João 1:14"
+   },
+   {
+    "label": "O Pai declara o Filho amado",
+    "evidenceRef": "Mateus 3:17"
+   },
+   {
+    "label": "O Espírito conduz ao deserto",
+    "evidenceRef": "Mateus 4:1"
+   },
+   {
+    "label": "Jesus vence fiel pela palavra",
+    "evidenceRef": "Mateus 4:10–11"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Depois do batismo, Jesus é conduzido pelo Espírito ao deserto.",
+    "marker": "Então",
+    "evidenceRef": "Mateus 4:1"
+   },
+   {
+    "kind": "contraste",
+    "text": "O homem não vive só de pão, mas da palavra de Deus.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 4:4"
+   },
+   {
+    "kind": "resultado",
+    "text": "Após recusar adorar outro, o diabo abandona Jesus.",
+    "marker": "Então",
+    "evidenceRef": "Mateus 4:11"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gênesis 1:1",
+    "bridge": "Deus no princípio"
+   },
+   {
+    "ref": "Hebreus 4:15",
+    "bridge": "Tentado sem pecado"
+   },
+   {
+    "ref": "Deuteronômio 8:3",
+    "bridge": "Nem só de pão"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jesus só se torna Filho depois de vencer no deserto.",
+    "why": "A voz do Pai já o declara Filho amado no batismo, antes do deserto (Mt 3:17)."
+   },
+   {
+    "text": "O Verbo era um homem comum promovido a Deus.",
+    "why": "João diz que no princípio o Verbo já era Deus (Jo 1:1)."
+   },
+   {
+    "text": "Usar a Bíblia para testar Deus é fé verdadeira.",
+    "why": "Jesus recusa pôr o Senhor à prova ao responder no templo (Mt 4:7)."
+   }
+  ],
+  "centralInsight": "Jesus é o Filho fiel",
+  "anchorQuestion": "Que fio une o batismo e a tentação de Jesus?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em João 1:8, João Batista afirmou ser ele mesmo a verdadeira luz do mundo.",
+   "verseRef": "João 1:8",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não era ele a luz, mas veio para que testificasse da luz",
+   "feedbackCorrect": "João veio dar testemunho da luz, sem ser ele a luz.",
+   "feedbackWrong": {
+    "true": "Releia a negação clara de João 1:8."
+   },
+   "hint": "",
+   "learningObjective": "Revisar o papel de João Batista.",
+   "evidence": [
+    "João 1:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 3:16, toque o que desceu como pomba sobre Jesus.",
+   "verseRef": "Mateus 3:16",
+   "correctOptionId": "a",
+   "evidenceSpan": "o Espírito de Deus descendo como uma pomba",
+   "feedbackCorrect": "O Espírito desce visivelmente sobre Jesus no batismo.",
+   "feedbackWrong": {
+    "b": "Os céus se abrem, mas quem desce é outro.",
+    "c": "Isso é o momento da saída, não quem desce."
+   },
+   "hint": "Procure quem faz a ação de descer.",
+   "learningObjective": "Revisar a descida do Espírito.",
+   "evidence": [
+    "Mateus 3:16"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Espírito de Deus"
+    },
+    {
+     "id": "b",
+     "text": "os céus"
+    },
+    {
+     "id": "c",
+     "text": "logo da água"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 4:2, o que Jesus sentiu após jejuar quarenta dias e noites?",
+   "verseRef": "Mateus 4:2",
+   "correctOptionId": "b",
+   "evidenceSpan": "teve fome",
+   "feedbackCorrect": "A fome após o jejum prepara a primeira tentação do pão.",
+   "feedbackWrong": {
+    "a": "O texto nomeia outra necessidade física.",
+    "c": "Medo não é citado neste versículo.",
+    "d": "A necessidade citada prepara a tentação do pão."
+   },
+   "hint": "Veja a palavra final do versículo.",
+   "learningObjective": "Revisar o jejum de Jesus.",
+   "evidence": [
+    "Mateus 4:2"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Sono profundo"
+    },
+    {
+     "id": "b",
+     "text": "Fome"
+    },
+    {
+     "id": "c",
+     "text": "Medo do deserto"
+    },
+    {
+     "id": "d",
+     "text": "Sede apenas"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 3:17 na ordem do texto.",
+   "verseRef": "Mateus 3:17",
+   "correctOptionId": "a",
+   "evidenceSpan": "Eis que uma voz dos céus dizia",
+   "feedbackCorrect": "A voz apresenta o Filho e declara o agrado do Pai.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela voz que vem dos céus."
+    }
+   },
+   "hint": "Comece por quem fala dos céus.",
+   "learningObjective": "Reconhecer a declaração do Pai.",
+   "evidence": [
+    "Mateus 3:17"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que uma voz dos céus dizia"
+    },
+    {
+     "id": "b",
+     "text": "Este é o meu Filho amado"
+    },
+    {
+     "id": "c",
+     "text": "em quem me agrado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em João 1:12, o que receberam os que creem no nome do Verbo?",
+   "verseRef": "João 1:12",
+   "correctOptionId": "a",
+   "evidenceSpan": "deu-lhes o poder de se tornarem filhos de Deus",
+   "feedbackCorrect": "Receber e crer estão ligados a tornar-se filho de Deus.",
+   "feedbackWrong": {
+    "b": "Nome é em quem eles creem, não o que recebem.",
+    "c": "Isso é quem recebe, não o resultado de crer."
+   },
+   "hint": "Veja o presente dado a quem recebe.",
+   "learningObjective": "Revisar o dom de filiação.",
+   "evidence": [
+    "João 1:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "poder"
+    },
+    {
+     "id": "b",
+     "text": "nome"
+    },
+    {
+     "id": "c",
+     "text": "sangue"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que João 1:1 comunica que se liga a este contexto?",
+   "verseRef": "João 1:1",
+   "correctOptionId": "b",
+   "evidenceSpan": "No princípio, era o Verbo",
+   "feedbackCorrect": "Antes de tudo, o Verbo já estava com Deus e era Deus.",
+   "feedbackWrong": {
+    "a": "No princípio ele já era, antes de nascer.",
+    "c": "Era indica existência anterior, não criação."
+   },
+   "hint": "Veja o verbo usado no princípio.",
+   "learningObjective": "Ligar encarnação à eternidade do Verbo.",
+   "evidence": [
+    "João 1:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus começa no nascimento"
+    },
+    {
+     "id": "b",
+     "text": "Deus já presente no princípio"
+    },
+    {
+     "id": "c",
+     "text": "O Verbo foi criado primeiro"
+    }
+   ],
+   "passageA": {
+    "ref": "João 1:1"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jesus é o Filho eterno que se fez carne e foi declarado amado."
+   }
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 4:10, toque a quem Jesus diz que se deve adorar.",
+   "verseRef": "Mateus 4:10",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ao Senhor, seu Deus, adorarás",
+   "feedbackCorrect": "A adoração final da tentação pertence só ao Senhor.",
+   "feedbackWrong": {
+    "b": "Satanás pede adoração e é rejeitado.",
+    "c": "Culto é a ação devida, não a pessoa adorada."
+   },
+   "hint": "Procure o destinatário da adoração.",
+   "learningObjective": "Revisar a adoração exclusiva.",
+   "evidence": [
+    "Mateus 4:10"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ao Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Satanás"
+    },
+    {
+     "id": "c",
+     "text": "culto"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte João 1:14 na ordem do texto.",
+   "verseRef": "João 1:14",
+   "correctOptionId": "a",
+   "evidenceSpan": "E o Verbo se fez carne e habitou entre nós",
+   "feedbackCorrect": "Carne, graça e verdade, e glória vista formam o versículo.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pelo Verbo se fazendo carne."
+    }
+   },
+   "hint": "Comece pela vinda em carne.",
+   "learningObjective": "Reconhecer a sequência da encarnação.",
+   "evidence": [
+    "João 1:14"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "E o Verbo se fez carne e habitou entre nós"
+    },
+    {
+     "id": "b",
+     "text": "cheio de graça e de verdade"
+    },
+    {
+     "id": "c",
+     "text": "e vimos a sua glória"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 3:17 e 4:1, a declaração de Filho amado vem antes de Jesus ser conduzido ao deserto.",
+   "verseRef": "Mateus 3:17",
+   "correctOptionId": "true",
+   "evidenceSpan": "Este é o meu Filho amado, em quem me agrado",
+   "feedbackCorrect": "Identidade declarada no batismo precede a prova no deserto.",
+   "feedbackWrong": {
+    "false": "Compare a ordem de Mateus 3:17 com Mateus 4:1."
+   },
+   "hint": "",
+   "learningObjective": "Compreender identidade antes da prova.",
+   "evidence": [
+    "Mateus 3:17",
+    "Mateus 4:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 4:7, toque o trecho que Jesus opõe à proposta de pular do templo.",
+   "verseRef": "Mateus 4:7",
+   "correctOptionId": "b",
+   "evidenceSpan": "Não colocarás à prova o Senhor, teu Deus",
+   "feedbackCorrect": "Jesus responde a uma citação com outra Escritura.",
+   "feedbackWrong": {
+    "a": "Isso introduz a resposta, não o conteúdo dela.",
+    "c": "Isso nomeia Deus, não a proibição citada."
+   },
+   "hint": "Procure a proibição dentro da resposta.",
+   "learningObjective": "Reconhecer a resposta com Escritura.",
+   "evidence": [
+    "Mateus 4:7"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Também está escrito"
+    },
+    {
+     "id": "b",
+     "text": "à prova"
+    },
+    {
+     "id": "c",
+     "text": "teu Deus"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como o batismo e a tentação se ligam em Mateus 3 e 4?",
+   "verseRef": "Mateus 4:3",
+   "correctOptionId": "a",
+   "evidenceSpan": "Se você é Filho de Deus",
+   "feedbackCorrect": "O tentador questiona justamente o Filho declarado no Jordão.",
+   "feedbackWrong": {
+    "b": "A ordem é batismo primeiro, deserto depois.",
+    "c": "A voz é ouvida no batismo, em Mateus 3.",
+    "d": "Quem conduz ao deserto é o Espírito."
+   },
+   "hint": "Compare a frase do tentador com a voz.",
+   "learningObjective": "Compreender o elo entre batismo e tentação.",
+   "evidence": [
+    "Mateus 3:17",
+    "Mateus 4:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O tentador duvida da identidade já declarada"
+    },
+    {
+     "id": "b",
+     "text": "O batismo acontece depois da tentação"
+    },
+    {
+     "id": "c",
+     "text": "A voz do Pai surge só no deserto"
+    },
+    {
+     "id": "d",
+     "text": "João conduz Jesus ao deserto"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o início do ministério de Jesus?",
+   "verseRef": "Mateus 3:16–17",
+   "correctOptionId": "a",
+   "evidenceSpan": "E, ao ser batizado, Jesus saiu logo da água",
+   "feedbackCorrect": "Batismo, Espírito e voz do Pai se encadeiam na mesma cena.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A voz do Pai fecha a cena do batismo."
+    }
+   },
+   "hint": "Termine com a voz dos céus.",
+   "learningObjective": "Compreender a sequência do batismo.",
+   "evidence": [
+    "Mateus 3:16–17"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus é batizado e sai da água"
+    },
+    {
+     "id": "b",
+     "text": "O Espírito desce sobre Jesus"
+    },
+    {
+     "id": "c",
+     "text": "A voz declara o Filho amado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 4:4, de quem procede a palavra que sustenta o homem?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "toda palavra que procede da boca de Deus",
+   "feedbackCorrect": "O sustento vem da palavra que sai da boca de Deus.",
+   "feedbackWrong": {
+    "b": "O homem vive dela, mas não é sua fonte.",
+    "c": "O tentador propõe pão, não palavra de vida."
+   },
+   "hint": "Veja a origem indicada no fim.",
+   "learningObjective": "Compreender a fonte do sustento.",
+   "evidence": [
+    "Mateus 4:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "homem"
+    },
+    {
+     "id": "c",
+     "text": "tentador"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 4:4 a Deuteronômio 8:3?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Não só de pão viverá o homem",
+   "feedbackCorrect": "Jesus cita a lição de Israel sobre viver da palavra de Deus.",
+   "feedbackWrong": {
+    "b": "Os dois textos colocam a palavra acima do pão só.",
+    "c": "A palavra de Deus sustenta no deserto."
+   },
+   "hint": "Compare a frase citada por Jesus.",
+   "learningObjective": "Relacionar tentação e deserto de Israel.",
+   "evidence": [
+    "Mateus 4:4",
+    "Deuteronômio 8:3"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Nem só de pão"
+    },
+    {
+     "id": "b",
+     "text": "Pão acima da palavra"
+    },
+    {
+     "id": "c",
+     "text": "Deserto sem palavra"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 4:4"
+   },
+   "passageB": {
+    "ref": "Deuteronômio 8:3"
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em João 1:11, toque o que os seus fizeram com o Verbo que veio.",
+   "verseRef": "João 1:11",
+   "correctOptionId": "b",
+   "evidenceSpan": "mas os seus não o receberam",
+   "feedbackCorrect": "A vinda aos seus encontra rejeição, antes do contraste da fé.",
+   "feedbackWrong": {
+    "a": "Isso indica posse, não a resposta deles.",
+    "c": "Isso inicia a vinda, não a reação."
+   },
+   "hint": "Procure a resposta negativa dos seus.",
+   "learningObjective": "Revisar a rejeição do Verbo.",
+   "evidence": [
+    "João 1:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "era seu"
+    },
+    {
+     "id": "b",
+     "text": "não o receberam"
+    },
+    {
+     "id": "c",
+     "text": "Veio para"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam as tentações finais em Mateus 4:8 a 11?",
+   "verseRef": "Mateus 4:10–11",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, Jesus lhe disse: Retire-se, Satanás",
+   "feedbackCorrect": "Reinos oferecidos, ordem de retirada e serviço dos anjos.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Os anjos servem só após a retirada do diabo."
+    }
+   },
+   "hint": "Termine com o serviço dos anjos.",
+   "learningObjective": "Compreender o desfecho da tentação.",
+   "evidence": [
+    "Mateus 4:8",
+    "Mateus 4:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O diabo mostra os reinos do mundo"
+    },
+    {
+     "id": "b",
+     "text": "Jesus manda Satanás se retirar"
+    },
+    {
+     "id": "c",
+     "text": "Anjos vêm e servem Jesus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em João 1:14, o Verbo deixou de ser Deus ao se fazer carne entre os homens.",
+   "verseRef": "João 1:14",
+   "correctOptionId": "false",
+   "evidenceSpan": "glória como do unigênito do Pai",
+   "feedbackCorrect": "O Verbo se faz carne sem deixar de ser o unigênito do Pai.",
+   "feedbackWrong": {
+    "true": "João mantém a glória divina do Verbo feito carne."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar encarnação sem perda divina.",
+   "evidence": [
+    "João 1:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em João 1:12, toque o trecho que sustenta a filiação de quem crê.",
+   "verseRef": "João 1:12",
+   "correctOptionId": "b",
+   "evidenceSpan": "poder de se tornarem filhos de Deus",
+   "feedbackCorrect": "Crer no nome está ligado a tornar-se filho de Deus.",
+   "feedbackWrong": {
+    "a": "Isso é o objeto da fé, não o resultado dela.",
+    "c": "Isso é quem recebe, não o resultado de crer."
+   },
+   "hint": "Procure o resultado de receber e crer.",
+   "learningObjective": "Sustentar a filiação com o texto.",
+   "evidence": [
+    "João 1:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "no seu nome"
+    },
+    {
+     "id": "b",
+     "text": "filhos de Deus"
+    },
+    {
+     "id": "c",
+     "text": "quantos o receberam"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura une batismo e tentação nos evangelhos?",
+   "verseRef": "Mateus 3:17",
+   "correctOptionId": "a",
+   "evidenceSpan": "Este é o meu Filho amado, em quem me agrado",
+   "feedbackCorrect": "Declarado Filho, Jesus é conduzido pelo Espírito e não cede.",
+   "feedbackWrong": {
+    "b": "A declaração vem antes da prova do deserto.",
+    "c": "O Espírito conduz, o Pai já declarou seu agrado.",
+    "d": "Quem tenta é o diabo; o Espírito conduz."
+   },
+   "hint": "Junte voz do Pai e condução do Espírito.",
+   "learningObjective": "Escolher o fio do início do ministério.",
+   "evidence": [
+    "Mateus 3:17",
+    "Mateus 4:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Filho declarado permanece fiel na prova"
+    },
+    {
+     "id": "b",
+     "text": "Filho se define só após vencer"
+    },
+    {
+     "id": "c",
+     "text": "Pai abandona Jesus no deserto"
+    },
+    {
+     "id": "d",
+     "text": "Espírito tenta Jesus no deserto"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o Filho fiel do início ao deserto?",
+   "verseRef": "Mateus 4:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então o diabo o abandonou",
+   "feedbackCorrect": "Encarnação, declaração e fidelidade formam um só fio.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A vitória no deserto fecha a sequência."
+    }
+   },
+   "hint": "Termine na partida do diabo.",
+   "learningObjective": "Ver o fio completo do bloco.",
+   "evidence": [
+    "João 1:14",
+    "Mateus 4:11"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O Verbo eterno se faz carne"
+    },
+    {
+     "id": "b",
+     "text": "O Pai declara o Filho amado"
+    },
+    {
+     "id": "c",
+     "text": "O Filho fiel vence no deserto"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 3:15, o que Jesus cumpre ao aceitar ser batizado por João?",
+   "verseRef": "Mateus 3:15",
+   "correctOptionId": "a",
+   "evidenceSpan": "assim nos convém cumprir toda a justiça",
+   "feedbackCorrect": "Mesmo sem precisar, Jesus entra no caminho justo por obediência.",
+   "feedbackWrong": {
+    "b": "Batismo é o ato, não o que se cumpre segundo ele.",
+    "c": "Vontade não é o substantivo usado aqui."
+   },
+   "hint": "Veja o alvo no fim da resposta.",
+   "learningObjective": "Lembrar o cumprimento na obediência.",
+   "evidence": [
+    "Mateus 3:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "justiça"
+    },
+    {
+     "id": "b",
+     "text": "batismo"
+    },
+    {
+     "id": "c",
+     "text": "vontade"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 4:11 a Hebreus 4:15?",
+   "verseRef": "Mateus 4:11",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então o diabo o abandonou",
+   "feedbackCorrect": "Hebreus confessa Jesus tentado como nós, mas sem pecado.",
+   "feedbackWrong": {
+    "b": "O diabo parte sem vitória sobre Jesus.",
+    "c": "Fome e propostas mostram prova concreta."
+   },
+   "hint": "Veja o resultado final da prova.",
+   "learningObjective": "Ligar a tentação à vitória de Jesus.",
+   "evidence": [
+    "Mateus 4:11",
+    "Hebreus 4:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Tentado sem pecado algum"
+    },
+    {
+     "id": "b",
+     "text": "Tentado e derrotado"
+    },
+    {
+     "id": "c",
+     "text": "Prova apenas imaginada"
+    }
+   ],
+   "passageA": {
+    "ref": "Mateus 4:11"
+   },
+   "passageB": {
+    "ref": "Hebreus 4:15"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 3:15, toque a palavra que mostra a concordância de João após a resposta.",
+   "verseRef": "Mateus 3:15",
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, ele o permitiu",
+   "feedbackCorrect": "Após a explicação de Jesus, João permite o batismo.",
+   "feedbackWrong": {
+    "b": "Isso é o motivo de Jesus, não a ação de João.",
+    "c": "Isso marca o momento, não a concordância."
+   },
+   "hint": "Procure a ação final de João Batista.",
+   "learningObjective": "Revisar a concordância de João.",
+   "evidence": [
+    "Mateus 3:15"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "permitiu"
+    },
+    {
+     "id": "b",
+     "text": "convém"
+    },
+    {
+     "id": "c",
+     "text": "por enquanto"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a palavra como defesa de Jesus?",
+   "verseRef": "Mateus 4:4",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele, porém, respondeu: Está escrito",
+   "feedbackCorrect": "Proposta, resposta escritural e sustento pela palavra.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela proposta ligada à fome de Jesus."
+    }
+   },
+   "hint": "Comece pela proposta do tentador.",
+   "learningObjective": "Ver a defesa pela Escritura.",
+   "evidence": [
+    "Mateus 4:3",
+    "Mateus 4:4"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O tentador propõe pão das pedras"
+    },
+    {
+     "id": "b",
+     "text": "Jesus responde com Está escrito"
+    },
+    {
+     "id": "c",
+     "text": "O homem vive da palavra de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  }
+ ]
+}

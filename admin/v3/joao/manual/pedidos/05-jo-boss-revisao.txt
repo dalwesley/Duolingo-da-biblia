@@ -1,0 +1,179 @@
+Escreva a cena "jo-boss-revisao" da trilha "joao" (João).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "joao",
+  "title": "João",
+  "description": "O Verbo eterno — sinais, “Eu Sou” e a vida eterna.",
+  "realm": "novo-testamento"
+ },
+ "block": "João",
+ "mission": {
+  "slug": "jo-boss-revisao",
+  "title": "Desafio: Creia e tenha vida",
+  "type": "boss",
+  "intro": "Revise o Verbo feito carne, os sinais, as declarações Eu Sou, o Espírito e a fé no Ressuscitado.",
+  "hookRef": "Desafio: Creia e tenha vida",
+  "hookNote": "Revise o Verbo feito carne, os sinais, as declarações Eu Sou, o Espírito e a fé no Ressuscitado.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Revisão de João"
+ },
+ "v2": {
+  "passageRef": "Desafio: Creia e tenha vida",
+  "context": "Revise o Verbo feito carne, os sinais, as declarações Eu Sou, o Espírito e a fé no Ressuscitado.",
+  "keyword": "Creia",
+  "verseRefs": [
+   "João 20:31"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "jo-01-verbo-sinais",
+   "title": "O Verbo e os sinais",
+   "centralInsight": "João começa antes da criação: o Filho eterno estava com Deus e é Deus. Ao tornar-se homem, ele revela o Pai sem deixar de ser Deus.",
+   "ref": "João 1:11–17"
+  },
+  {
+   "slug": "jo-02-eu-sou",
+   "title": "Eu Sou",
+   "centralInsight": "As declarações Eu Sou mostram que Jesus é suficiente para seu povo e compartilham ecos do nome de Deus revelado no Antigo Testamento.",
+   "ref": "João 14:3–9"
+  },
+  {
+   "slug": "jo-03-adeus-espirito",
+   "title": "Permaneçam em mim",
+   "centralInsight": "Nos discursos de despedida, Jesus não deixa seus discípulos órfãos. O Espírito aplica a obra de Cristo e os conduz na verdade.",
+   "ref": "João 15:2–8"
+  },
+  {
+   "slug": "jo-04-cruz-tome",
+   "title": "O Crucificado e o Ressuscitado",
+   "centralInsight": "João mostra a cruz como a hora da glorificação de Jesus. O Ressuscitado aparece aos discípulos e transforma dúvida em confissão de fé.",
+   "ref": "João 19:27–33"
+  }
+ ],
+ "ranges": [
+  "João 1:11–17",
+  "João 14:3–9",
+  "João 15:2–8",
+  "João 19:27–33"
+ ],
+ "verses": [
+  {
+   "ref": "João 1:11",
+   "text": "Veio para o que era seu, mas os seus não o receberam."
+  },
+  {
+   "ref": "João 1:12",
+   "text": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;"
+  },
+  {
+   "ref": "João 1:13",
+   "text": "Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus."
+  },
+  {
+   "ref": "João 1:14",
+   "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+  },
+  {
+   "ref": "João 1:15",
+   "text": "João testemunhou a respeito d'Ele e exclamou: \"Este é aquele de quem eu falei: o que vem depois de mim tem, contudo, a primazia, porquanto já existia antes de mim."
+  },
+  {
+   "ref": "João 1:16",
+   "text": "E todos nós temos recebido da sua plenitude, graça sobre graça."
+  },
+  {
+   "ref": "João 1:17",
+   "text": "Porque a lei foi dada por intermédio de Moisés; a graça e a verdade chegaram por meio de Jesus Cristo."
+  },
+  {
+   "ref": "João 14:3",
+   "text": "E, quando eu for e vos preparar um lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós."
+  },
+  {
+   "ref": "João 14:4",
+   "text": "E vós sabeis o caminho para onde eu vou."
+  },
+  {
+   "ref": "João 14:5",
+   "text": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho?"
+  },
+  {
+   "ref": "João 14:6",
+   "text": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim."
+  },
+  {
+   "ref": "João 14:7",
+   "text": "Se vós me tivésseis conhecido, também conheceríeis a meu Pai; agora, porém, o conheceis e o tendes visto."
+  },
+  {
+   "ref": "João 14:8",
+   "text": "Disse-lhe Filipe: Senhor, mostra-nos o Pai, e isso nos basta."
+  },
+  {
+   "ref": "João 14:9",
+   "text": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?"
+  },
+  {
+   "ref": "João 15:2",
+   "text": "Toda ramagem que, estando em mim, não dá frutos, ele a corta; e toda a que dá frutos, ele a limpa, para que produza mais frutos ainda."
+  },
+  {
+   "ref": "João 15:3",
+   "text": "Vocês já estão purificados pela palavra que lhes disse."
+  },
+  {
+   "ref": "João 15:4",
+   "text": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim."
+  },
+  {
+   "ref": "João 15:5",
+   "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+  },
+  {
+   "ref": "João 15:6",
+   "text": "Se alguém não permanecer em mim, será lançado fora, à semelhança do ramo, e secará; e os apanham, lançam no fogo e os queimam."
+  },
+  {
+   "ref": "João 15:7",
+   "text": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito."
+  },
+  {
+   "ref": "João 15:8",
+   "text": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos."
+  },
+  {
+   "ref": "João 19:27",
+   "text": "Disse então ao discípulo: \"Eis aí a tua mãe.\" E a partir daquela hora em diante, o discípulo a recebeu em sua casa."
+  },
+  {
+   "ref": "João 19:28",
+   "text": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\""
+  },
+  {
+   "ref": "João 19:29",
+   "text": "Estava ali um vaso cheio de vinagre. Então, embeberam uma esponja em vinagre e, fixando-a em uma vara de hissopo, ofereceram-na à sua boca."
+  },
+  {
+   "ref": "João 19:30",
+   "text": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito."
+  },
+  {
+   "ref": "João 19:31",
+   "text": "Os judeus, portanto, pediram a Pilatos que se lhes quebrassem as pernas e que fossem tirados os corpos da cruz, para que não ficassem pendurados nela durante o sábado, pois era o dia da preparação; e era grande o dia daquele sábado."
+  },
+  {
+   "ref": "João 19:32",
+   "text": "Os soldados foram e realmente quebraram as pernas do primeiro e do outro que tinham sido crucificados com ele."
+  },
+  {
+   "ref": "João 19:33",
+   "text": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas."
+  }
+ ]
+}
+</cena>

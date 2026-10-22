@@ -1,0 +1,697 @@
+{
+ "study": {
+  "passageRef": "Mateus 5:38–42",
+  "passages": [
+   {
+    "ref": "Mateus 5:38–42"
+   }
+  ],
+  "context": "Jesus retoma o olho por olho, que limitava a vingança, e o transcende: o discípulo não paga o mal na mesma moeda. Oferecer a outra face, o manto e a segunda milha é linguagem forte contra a retaliação.",
+  "keyword": "Não retaliar",
+  "keywordGloss": "Responder ao mal sem vingança pessoal, quebrando o ciclo de pagar na mesma moeda.",
+  "focusQuestion": "Quando ofendido, sua primeira reação é vingar ou espelhar o Reino?",
+  "reflectionPrompts": [
+   "Não pagar na mesma moeda",
+   "Generosidade que desarma",
+   "Segunda milha por amor"
+  ],
+  "facts": [
+   {
+    "text": "Aos antigos foi dito olho por olho e dente por dente.",
+    "evidenceRef": "Mateus 5:38",
+    "evidenceSpan": "Olho por olho, dente por dente"
+   },
+   {
+    "text": "Jesus manda não resistir ao perverso com vingança.",
+    "evidenceRef": "Mateus 5:39",
+    "evidenceSpan": "não resistam ao perverso"
+   },
+   {
+    "text": "A quem ferir a face direita, ofereça também a outra.",
+    "evidenceRef": "Mateus 5:39",
+    "evidenceSpan": "ofereça também a outra"
+   },
+   {
+    "text": "A quem tomar a túnica, entregue também o manto.",
+    "evidenceRef": "Mateus 5:40",
+    "evidenceSpan": "entregue também o manto"
+   },
+   {
+    "text": "Forçado a uma milha, vá com ele duas, diz Jesus.",
+    "evidenceRef": "Mateus 5:41",
+    "evidenceSpan": "vai com ele duas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "perverso",
+    "gloss": "Quem pratica o mal contra o discípulo, alvo da não-retaliação ensinada."
+   },
+   {
+    "term": "manto",
+    "gloss": "Peça entregue além da túnica, sinal de generosidade que quebra a disputa."
+   },
+   {
+    "term": "milha",
+    "gloss": "Distância imposta que o discípulo dobra por vontade própria e amor."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O dito antigo olho por olho",
+    "evidenceRef": "Mateus 5:38"
+   },
+   {
+    "label": "Jesus nega a retaliação pessoal",
+    "evidenceRef": "Mateus 5:39"
+   },
+   {
+    "label": "Túnica e manto entregues sem disputa",
+    "evidenceRef": "Mateus 5:40"
+   },
+   {
+    "label": "Segunda milha e generosidade aberta",
+    "evidenceRef": "Mateus 5:41"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Ao olho por olho antigo, Jesus contrapõe oferecer também a outra face.",
+    "marker": "porém",
+    "evidenceRef": "Mateus 5:39"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quem pede recebe, e quem quer empréstimo não é repelido pelo discípulo.",
+    "marker": null,
+    "evidenceRef": "Mateus 5:42"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 12:17",
+    "bridge": "Não pagar mal com mal"
+   },
+   {
+    "ref": "1 Pedro 3:9",
+    "bridge": "Responder mal com bênção"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Oferecer a outra face obriga aceitar qualquer violência sem jamais buscar justiça.",
+    "why": "O ensino mira a vingança pessoal do discípulo; a justiça de Deus segue de pé no Sermão (5:6)."
+   },
+   {
+    "text": "Olho por olho era convite à vingança ilimitada dos ofendidos.",
+    "why": "A fórmula limitava a pena ao tamanho da ofensa; Jesus a transcende no discípulo."
+   },
+   {
+    "text": "Dar a quem pede é ingenuidade que Jesus pede sem pensar nas pessoas.",
+    "why": "É retrato do coração generoso do Reino, não técnica de manipulação por aproveitadores."
+   }
+  ],
+  "centralInsight": "Lei limitava vingança; Jesus transcende",
+  "anchorQuestion": "O que Jesus manda fazer a quem for forçado a andar uma milha?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 5:39, Jesus manda oferecer também a outra face a quem ferir a direita",
+   "verseRef": "Mateus 5:39",
+   "correctOptionId": "true",
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "A resposta do discípulo ao golpe não é outro golpe, diz Jesus.",
+   "feedbackWrong": {
+    "false": "Releia o fim de 5:39: ofereça também a outra."
+   },
+   "hint": "Veja a ordem dada depois do golpe citado.",
+   "learningObjective": "Observar a outra face em 5:39.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:39, toque qual face foi ferida na cena que Jesus descreve.",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "face direita"
+    },
+    {
+     "id": "b",
+     "text": "ao perverso"
+    },
+    {
+     "id": "c",
+     "text": "também a outra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se alguém lhe ferir a face direita",
+   "feedbackCorrect": "Jesus parte de uma ofensa concreta para ensinar a não retaliação.",
+   "feedbackWrong": {
+    "b": "Isso é quem não deve ser resistido com vingança.",
+    "c": "Isso é o que se oferece em resposta, não o lado ferido."
+   },
+   "hint": "Procure o lado atingido antes da resposta.",
+   "learningObjective": "Identificar a ofensa descrita em 5:39.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 5:41, o que fazer se alguém forçar você a andar uma milha?",
+   "verseRef": "Mateus 5:40–41",
+   "options": [
+    {
+     "id": "a",
+     "text": "Parar exatamente na metade do caminho"
+    },
+    {
+     "id": "b",
+     "text": "Ir com ele duas milhas"
+    },
+    {
+     "id": "c",
+     "text": "Exigir o manto dele em troca"
+    },
+    {
+     "id": "d",
+     "text": "Denunciar a pessoa à multidão reunida"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "vai com ele duas",
+   "feedbackCorrect": "A segunda milha transforma obrigação imposta em generosidade livre.",
+   "feedbackWrong": {
+    "a": "Jesus pede dobrar o caminho, não encurtá-lo.",
+    "c": "Manto é o que o discípulo entrega em 5:40, não exige.",
+    "d": "Exposição pública do outro não é a resposta do Reino."
+   },
+   "hint": "Veja o dobro citado no fim do versículo.",
+   "learningObjective": "Observar a segunda milha em 5:41.",
+   "evidence": [
+    "Mateus 5:40–41"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 5:39 na ordem do texto.",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "não resistam ao perverso"
+    },
+    {
+     "id": "b",
+     "text": "se alguém lhe ferir a face direita"
+    },
+    {
+     "id": "c",
+     "text": "ofereça também a outra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "Princípio, cena de ofensa e resposta do Reino, nessa ordem forte.",
+   "feedbackWrong": {
+    "default": "Comece pelo princípio de não resistir com vingança."
+   },
+   "hint": "A resposta generosa fecha o versículo.",
+   "learningObjective": "Reconhecer a sequência de Mateus 5:39.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 5:40, o que entregar além da túnica a quem quer demandar?",
+   "verseRef": "Mateus 5:39–40",
+   "options": [
+    {
+     "id": "a",
+     "text": "manto"
+    },
+    {
+     "id": "b",
+     "text": "sandália"
+    },
+    {
+     "id": "c",
+     "text": "cinto"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "entregue também o manto",
+   "feedbackCorrect": "Jesus dobra a entrega para quebrar a lógica da disputa judicial.",
+   "feedbackWrong": {
+    "b": "Sandália não aparece nessa cena ensinada por Jesus.",
+    "c": "Cinto não é a peça citada ao lado da túnica."
+   },
+   "hint": "Pense na peça de roupa maior citada depois.",
+   "learningObjective": "Lembrar a entrega dobrada em 5:40.",
+   "evidence": [
+    "Mateus 5:39–40"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 5:39 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 5:39–40",
+   "passageA": {
+    "ref": "Mateus 5:39"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "No Reino, quem é ofendido não precisa provar força pagando o mal na mesma moeda."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Vingança prova força do Reino"
+    },
+    {
+     "id": "b",
+     "text": "Não retaliar quebra o ciclo"
+    },
+    {
+     "id": "c",
+     "text": "Face oferecida é derrota total"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "Oferecer a outra face interrompe a corrente de golpe contra golpe.",
+   "feedbackWrong": {
+    "a": "Jesus manda justamente não resistir com esse espírito.",
+    "c": "É força sob senhorio de Deus, não derrota sem sentido."
+   },
+   "hint": "Pense no que acontece com o ciclo de golpes.",
+   "learningObjective": "Ligar a outra face ao fim da retaliação.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 5:38–39, Jesus confirma o olho por olho como prática pessoal dos discípulos",
+   "verseRef": "Mateus 5:38–39",
+   "correctOptionId": "false",
+   "evidenceSpan": "Eu, porém, lhes digo",
+   "feedbackCorrect": "O porém de Jesus muda a prática: nada de pagar ofensa com ofensa.",
+   "feedbackWrong": {
+    "true": "Depois do dito antigo vem o ensino contrário de Jesus."
+   },
+   "hint": "Repare na palavra que vira o ensino em 5:39.",
+   "learningObjective": "Compreender a virada de Jesus sobre retaliação.",
+   "evidence": [
+    "Mateus 5:38–39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:39, toque o que o discípulo oferece em resposta ao golpe.",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "também a outra"
+    },
+    {
+     "id": "b",
+     "text": "face direita"
+    },
+    {
+     "id": "c",
+     "text": "ao perverso"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "A outra face oferecida é a imagem central da não-retaliação de Jesus.",
+   "feedbackWrong": {
+    "b": "Essa é a face ferida, não a resposta oferecida.",
+    "c": "Ele é quem agride, não o que o discípulo oferece."
+   },
+   "hint": "Procure o fim da frase, depois do golpe.",
+   "learningObjective": "Reconhecer a resposta ensinada em 5:39.",
+   "evidence": [
+    "Mateus 5:39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 5:40–42 amplia Mateus 5:39 no mesmo ensino?",
+   "verseRef": "Mateus 5:39–40",
+   "options": [
+    {
+     "id": "a",
+     "text": "Troca generosidade por disputas mais longas"
+    },
+    {
+     "id": "b",
+     "text": "Leva a não-retaliação a bens, caminho e pedidos"
+    },
+    {
+     "id": "c",
+     "text": "Limita o ensino a ofensas físicas no rosto"
+    },
+    {
+     "id": "d",
+     "text": "Manda negar todo pedido feito ao discípulo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "entregue também o manto",
+   "feedbackCorrect": "Túnica, milha e empréstimo: o mesmo coração aparece em cada área da vida.",
+   "feedbackWrong": {
+    "a": "Entregar também o manto encerra a disputa, não a prolonga.",
+    "c": "Jesus sai do rosto para roupas, estrada e bolso.",
+    "d": "Dar a quem pede é justamente o fecho em 5:42."
+   },
+   "hint": "Veja quantas áreas da vida os exemplos tocam.",
+   "learningObjective": "Compreender a ampliação do ensino da outra face.",
+   "evidence": [
+    "Mateus 5:39–40"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os exemplos de Mateus 5:39 a 5:42?",
+   "verseRef": "Mateus 5:39–40",
+   "options": [
+    {
+     "id": "a",
+     "text": "Face oferecida sem vingança"
+    },
+    {
+     "id": "b",
+     "text": "Manto entregue além da túnica"
+    },
+    {
+     "id": "c",
+     "text": "Ajuda dada a quem pede"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "entregue também o manto",
+   "feedbackCorrect": "Pessoa, bens e pedidos: a generosidade do Reino não tem compartimento fechado.",
+   "feedbackWrong": {
+    "default": "Comece pela face, o primeiro exemplo de Jesus."
+   },
+   "hint": "O pedido atendido fecha a série de exemplos.",
+   "learningObjective": "Compreender a série de exemplos de generosidade.",
+   "evidence": [
+    "Mateus 5:39–40"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 5:42, não volte as costas ao que deseja que você lhe faça o quê?",
+   "verseRef": "Mateus 5:42",
+   "options": [
+    {
+     "id": "a",
+     "text": "empreste"
+    },
+    {
+     "id": "b",
+     "text": "condene"
+    },
+    {
+     "id": "c",
+     "text": "ignore"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ao que deseja que lhe empreste",
+   "feedbackCorrect": "A generosidade do Reino chega também ao bolso de quem segue Jesus.",
+   "feedbackWrong": {
+    "b": "Condenar quem pede é o contrário do coração ensinado.",
+    "c": "Voltar as costas é justamente o que Jesus proíbe aqui."
+   },
+   "hint": "Pense em ajuda material pedida por alguém.",
+   "learningObjective": "Lembrar a generosidade prática de 5:42.",
+   "evidence": [
+    "Mateus 5:42"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 5:39 a Romanos 12:17?",
+   "verseRef": "Mateus 5:39",
+   "passageA": {
+    "ref": "Mateus 5:39"
+   },
+   "passageB": {
+    "ref": "Romanos 12:17"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Não pagar mal com mal"
+    },
+    {
+     "id": "b",
+     "text": "Pagar mal na mesma moeda"
+    },
+    {
+     "id": "c",
+     "text": "Mal deve ser celebrado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não resistam ao perverso",
+   "feedbackCorrect": "Paulo resume Jesus: a ninguém se retribui mal por mal no povo de Deus.",
+   "feedbackWrong": {
+    "b": "É exatamente a moeda que Jesus e Paulo mandam quebrar.",
+    "c": "O mal é vencido sem ser imitado pelo discípulo."
+   },
+   "hint": "Veja a retribuição que Paulo proíbe aos crentes.",
+   "learningObjective": "Relacionar não-retaliação em Jesus e Paulo.",
+   "evidence": [
+    "Mateus 5:39",
+    "Romanos 12:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 5:38–42 apresenta uma resposta ao mal que supera a lógica da vingança pessoal",
+   "verseRef": "Mateus 5:38–39",
+   "correctOptionId": "true",
+   "evidenceSpan": "não resistam ao perverso",
+   "feedbackCorrect": "Jesus não nega a justiça de Deus; ele tira a vingança das mãos do discípulo.",
+   "feedbackWrong": {
+    "false": "O porém de 5:39 supera o olho por olho como prática pessoal."
+   },
+   "hint": "Compare o dito antigo com a palavra de Jesus.",
+   "learningObjective": "Interpretar a superação da vingança pessoal.",
+   "evidence": [
+    "Mateus 5:38–39"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 5:41, toque quantas milhas o discípulo anda com quem o forçou.",
+   "verseRef": "Mateus 5:41",
+   "options": [
+    {
+     "id": "a",
+     "text": "duas"
+    },
+    {
+     "id": "b",
+     "text": "uma milha"
+    },
+    {
+     "id": "c",
+     "text": "ele"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vai com ele duas",
+   "feedbackCorrect": "A segunda milha é o retrato mais simples de liberdade generosa do Reino.",
+   "feedbackWrong": {
+    "b": "Uma é o que foi forçado; Jesus pede o dobro livre.",
+    "c": "Ele é quem força o caminho, não a distância andada."
+   },
+   "hint": "Procure o número no fim do versículo.",
+   "learningObjective": "Sustentar no texto a segunda milha.",
+   "evidence": [
+    "Mateus 5:41"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 5:38–42 sustenta sobre responder a quem faz o mal?",
+   "verseRef": "Mateus 5:39–40",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pagar na mesma moeda até a conta empatar"
+    },
+    {
+     "id": "b",
+     "text": "Quebrar o ciclo com generosidade inesperada"
+    },
+    {
+     "id": "c",
+     "text": "Aceitar tudo por medo de quem é mais forte"
+    },
+    {
+     "id": "d",
+     "text": "Negar ajuda a qualquer pessoa que pedir algo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ofereça também a outra",
+   "feedbackCorrect": "Face, manto, milha e empréstimo desenham um coração que desarma o mal.",
+   "feedbackWrong": {
+    "a": "Empatar a conta é a lógica que Jesus transcende aqui.",
+    "c": "É força sob o senhorio de Deus, não medo de pessoas.",
+    "d": "Dar a quem pede fecha o ensino em 5:42."
+   },
+   "hint": "Junte os quatro exemplos num só retrato de coração.",
+   "learningObjective": "Escolher a interpretação sustentada por 5:38–42.",
+   "evidence": [
+    "Mateus 5:39–40"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho de vencer o mal no Sermão?",
+   "verseRef": "Mateus 5:39",
+   "options": [
+    {
+     "id": "a",
+     "text": "Discípulo não paga mal com mal"
+    },
+    {
+     "id": "b",
+     "text": "Ele oferece também a outra face"
+    },
+    {
+     "id": "c",
+     "text": "O bem vence o mal no fim"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "não resistam ao perverso",
+   "feedbackCorrect": "Da recusa da vingança ao bem que vence: Jesus e Paulo andam juntos aqui.",
+   "feedbackWrong": {
+    "default": "Comece pela recusa de Jesus em 5:39."
+   },
+   "hint": "O último passo é a vitória citada por Paulo.",
+   "learningObjective": "Ver a não-retaliação no fio bíblico maior.",
+   "evidence": [
+    "Mateus 5:39",
+    "Romanos 12:21"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 5:38, que palavra repete a medida do dito olho por olho, ___ por ___?",
+   "verseRef": "Mateus 5:38",
+   "options": [
+    {
+     "id": "a",
+     "text": "dente"
+    },
+    {
+     "id": "b",
+     "text": "mão"
+    },
+    {
+     "id": "c",
+     "text": "pé"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "dente por dente",
+   "feedbackCorrect": "A fórmula antiga limitava a pena; Jesus vai além dela com o discípulo.",
+   "feedbackWrong": {
+    "b": "Mão aparece no ensino do tropeço, não nessa fórmula.",
+    "c": "Pé não faz parte do dito citado por Jesus aqui."
+   },
+   "hint": "É a segunda parte do dito antigo conhecido.",
+   "learningObjective": "Lembrar a fórmula antiga citada em 5:38.",
+   "evidence": [
+    "Mateus 5:38"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 5:39 a 1 Pedro 3:9?",
+   "verseRef": "Mateus 5:38–39",
+   "passageA": {
+    "ref": "Mateus 5:39"
+   },
+   "passageB": {
+    "ref": "1 Pedro 3:9"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Responder mal com bênção"
+    },
+    {
+     "id": "b",
+     "text": "Responder bênção com mal"
+    },
+    {
+     "id": "c",
+     "text": "Injúria pede outra injúria"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não resistam ao perverso",
+   "feedbackCorrect": "Pedro chama os crentes a abençoar quem os injuria, como Jesus ensinou.",
+   "feedbackWrong": {
+    "b": "A direção é inversa: bênção responde ao mal recebido.",
+    "c": "É justamente essa troca que Pedro e Jesus recusam."
+   },
+   "hint": "Veja a resposta que Pedro pede diante da injúria.",
+   "learningObjective": "Ligar a outra face à bênção em resposta ao mal.",
+   "evidence": [
+    "Mateus 5:38–39",
+    "1 Pedro 3:9"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,272 @@
+Você traduz conteúdo de um app de formação bíblica (STWAY) do português do Brasil para inglês.
+
+Regras:
+- O versículo na tela continua em PORTUGUÊS. Quando um texto cita ou aponta palavra ou trecho do versículo da cena (campo "_verso"), mantenha essa citação em português, exatamente como está, entre aspas. Ex.: "\"Porém\" vira a página" → em inglês "\"Porém\" turns the page".
+- Citações de outros livros da Bíblia (que não estão no "_verso") vão traduzidas.
+- Referências bíblicas no idioma de destino (Genesis, Exodus, John, Psalms, Romans…). Mantenha o travessão nas faixas (1:1–2).
+- Afirmações de verdadeiro ou falso continuam afirmações, nunca perguntas.
+- Tamanho parecido com o original: feedbackCorrect até 100 caracteres, hint até 90, opções até 80. Uma linha cada.
+- Tom claro e respeitoso, sem arcaísmos. Deus com pronome ele/him/él, como no original.
+- Não acrescente nem tire chaves. Não traduza ids nem chaves.
+
+Responda só com um objeto JSON: as mesmas chaves do pedido, cada valor com os campos traduzidos (sem "_verso").
+
+{
+ "filipenses-sem-fp-01-alegria-01": {
+  "question": "Em Filipenses 1:18, Paulo se alegra desde que Cristo seja proclamado.",
+  "learningObjective": "Observar a causa da alegria de Paulo.",
+  "feedbackCorrect": "Por pretexto ou por verdade, Cristo proclamado alegra Paulo.",
+  "feedbackWrong": {
+   "false": "Releia o fim de Filipenses 1:18: nisso me alegro, diz ele."
+  },
+  "hint": "Veja a condição da alegria dele.",
+  "_verso": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar."
+ },
+ "filipenses-sem-fp-01-alegria-02": {
+  "question": "Em Filipenses 1:21, toque quem é o viver de Paulo.",
+  "learningObjective": "Identificar o centro da vida de Paulo.",
+  "feedbackCorrect": "Para ele, viver não é um projeto: é uma pessoa.",
+  "feedbackWrong": {
+   "b": "Esse é o verbo; quem preenche o viver vem depois.",
+   "c": "Isso é o que morrer é para ele, não o viver."
+  },
+  "hint": "Procure o nome depois do verbo é.",
+  "_verso": "Porque, para mim, viver é Cristo, e morrer é lucro."
+ },
+ "filipenses-sem-fp-01-alegria-03": {
+  "question": "Segundo Filipenses 1:21, o que Paulo diz sobre viver e morrer?",
+  "learningObjective": "Observar a declaração de Filipenses 1:21.",
+  "feedbackCorrect": "As duas metades giram em torno de Cristo, não do medo.",
+  "feedbackWrong": {
+   "a": "Ele tem certeza sobre os dois lados da frase.",
+   "b": "Morrer, para ele, é lucro, não fracasso algum.",
+   "d": "Ele não foge: ele julga ficar mais necessário."
+  },
+  "hint": "Compare as duas metades do versículo.",
+  "options": {
+   "a": "Viver é incerto, e morrer é esquecer",
+   "b": "Viver é sofrer, e morrer é fracassar",
+   "c": "Viver é Cristo, e morrer é lucro",
+   "d": "Viver é fugir, e morrer é perder tudo"
+  },
+  "_verso": "Porque, para mim, viver é Cristo, e morrer é lucro."
+ },
+ "filipenses-sem-fp-01-alegria-04": {
+  "question": "Monte Filipenses 1:20 na ordem do texto.",
+  "learningObjective": "Reconhecer a sequência da esperança de Paulo.",
+  "feedbackCorrect": "Sem vergonha, Cristo engrandecido, na vida ou na morte.",
+  "feedbackWrong": {
+   "default": "Comece pela esperança de não ser envergonhado."
+  },
+  "hint": "A frase fecha com vida e morte.",
+  "_verso": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte."
+ },
+ "filipenses-sem-fp-01-alegria-05": {
+  "question": "Em Filipenses 1:18, o que Paulo faz quando Cristo é proclamado, mesmo por pretexto?",
+  "learningObjective": "Lembrar a reação de Paulo à proclamação.",
+  "feedbackCorrect": "A proclamação de Cristo alegra Paulo, venha como vier.",
+  "feedbackWrong": {
+   "a": "Ele não briga pelo motivo: ele celebra o anúncio.",
+   "b": "Choro não aparece: ele diz que continuará a se alegrar."
+  },
+  "hint": "É a reação dele ao evangelho anunciado.",
+  "_verso": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar."
+ },
+ "filipenses-sem-fp-01-alegria-06": {
+  "question": "O que Filipenses 1:18 comunica que se liga a este contexto?",
+  "learningObjective": "Ligar a alegria de Paulo à proclamação de Cristo.",
+  "feedbackCorrect": "Mesmo preso, ele se alegra: o anúncio continua andando.",
+  "feedbackWrong": {
+   "b": "Ele não se ira: ele diz que continuará a se alegrar.",
+   "c": "O evangelho avança; não há fim anunciado aqui."
+  },
+  "hint": "Veja a reação dele ao anúncio de Cristo.",
+  "options": {
+   "a": "Alegria enquanto Cristo é proclamado",
+   "b": "Raiva de quem prega diferente",
+   "c": "Tristeza pelo fim do evangelho"
+  },
+  "_verso": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar."
+ },
+ "filipenses-cam-fp-01-alegria-01": {
+  "question": "Em Filipenses 1:23–24, Paulo decidiu partir porque ficar na carne já não servia para a igreja.",
+  "learningObjective": "Compreender o dilema entre partir e ficar.",
+  "feedbackCorrect": "Ele deseja partir, mas julga ficar mais necessário por eles.",
+  "feedbackWrong": {
+   "true": "O desejo é partir; o juízo dele é ficar por causa deles."
+  },
+  "hint": "Separe o desejo dele do juízo dele.",
+  "_verso": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor. Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne."
+ },
+ "filipenses-cam-fp-01-alegria-02": {
+  "question": "Em Filipenses 1:23, toque a palavra que mostra o que Paulo sente sobre partir.",
+  "learningObjective": "Reconhecer o desejo declarado por Paulo.",
+  "feedbackCorrect": "Ele sente desejo de partir e estar com Cristo.",
+  "feedbackWrong": {
+   "a": "Ele é o destino do desejo, não a palavra do sentir.",
+   "c": "Isso nomeia a tensão dele, não o desejo em si."
+  },
+  "hint": "Procure o verbo sentir e o que vem depois.",
+  "_verso": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor."
+ },
+ "filipenses-cam-fp-01-alegria-03": {
+  "question": "Como a alegria de Paulo se relaciona com o futuro dele em Filipenses 1:18–19?",
+  "learningObjective": "Relacionar alegria presente e esperança futura.",
+  "feedbackCorrect": "Alegria presente e confiança na súplica e no Espírito.",
+  "feedbackWrong": {
+   "a": "Ele confia na oração e no Espírito, não em rivais.",
+   "b": "Ele já se alegra, preso, antes de qualquer saída.",
+   "c": "Medo não domina: há expectativa e esperança nele."
+  },
+  "hint": "Junte a alegria de hoje com a esperança dele.",
+  "options": {
+   "a": "Ele deixa o futuro nas mãos dos seus rivais",
+   "b": "Ele só se alegrará depois de sair da prisão",
+   "c": "Ele troca a alegria por medo do julgamento",
+   "d": "Ele se alegra agora e confia na oração da igreja"
+  },
+  "_verso": "Mas o que isso importa? Desde que Cristo seja proclamado de qualquer modo, seja por pretexto ou por verdade, nisso me alegro, e sempre continuarei a me alegrar. Estou certo de que isto resultará em minha libertação, graças à vossa súplica e pela provisão do Espírito de Jesus Cristo."
+ },
+ "filipenses-cam-fp-01-alegria-04": {
+  "question": "Como se encadeiam os pensamentos de Paulo em Filipenses 1:23–24?",
+  "learningObjective": "Compreender o encadeamento do dilema de Paulo.",
+  "feedbackCorrect": "Desejo, reconhecimento e juízo pelos outros: é a ordem.",
+  "feedbackWrong": {
+   "default": "Comece pelo desejo que ele sente."
+  },
+  "hint": "O juízo pela igreja fecha o raciocínio.",
+  "options": {
+   "a": "Ele deseja partir e estar com Cristo",
+   "b": "Ele reconhece que partir seria muito melhor",
+   "c": "Ele julga mais necessário ficar pela igreja"
+  },
+  "_verso": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor. Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne."
+ },
+ "filipenses-cam-fp-01-alegria-05": {
+  "question": "Em Filipenses 1:24, como Paulo avalia ficar na carne por causa da igreja?",
+  "learningObjective": "Compreender por que Paulo aceita ficar.",
+  "feedbackCorrect": "O bem da igreja pesa mais que o desejo dele.",
+  "feedbackWrong": {
+   "a": "Vergonha é o que ele espera justamente não ter.",
+   "b": "Ele vê fruto e necessidade em ficar, não inutilidade."
+  },
+  "hint": "É um juízo sobre o bem dos outros.",
+  "_verso": "Todavia, julgo ser mais necessário, por causa de vocês, ficar na carne."
+ },
+ "filipenses-cam-fp-01-alegria-06": {
+  "question": "O que liga Filipenses 1:23 a 2 Coríntios 5:8?",
+  "learningObjective": "Relacionar o desejo de Paulo em duas cartas.",
+  "feedbackCorrect": "Nos dois textos, partir é estar presente com o Senhor.",
+  "feedbackWrong": {
+   "a": "Não há medo: há desejo e confiança nos dois.",
+   "b": "A missão continua; o ponto comum é estar com ele."
+  },
+  "hint": "Compare o destino do partir nos dois textos.",
+  "options": {
+   "a": "Medo de deixar o corpo",
+   "b": "Fim da missão na terra",
+   "c": "Desejo de estar com o Senhor"
+  },
+  "_verso": "Estou em um conflito, pois sinto o desejo de partir e estar com Cristo, o que é incomparavelmente melhor."
+ },
+ "filipenses-pro-fp-01-alegria-01": {
+  "question": "Filipenses 1:21 mostra a morte sem ser perda final, porque viver e morrer giram em torno de Cristo.",
+  "learningObjective": "Interpretar a morte na perspectiva de Paulo.",
+  "feedbackCorrect": "Cristo é o centro dos dois lados: vida e morte.",
+  "feedbackWrong": {
+   "false": "Ele chama morrer de lucro, não de perda final."
+  },
+  "hint": "Veja o que ocupa o centro da frase.",
+  "_verso": "Porque, para mim, viver é Cristo, e morrer é lucro."
+ },
+ "filipenses-pro-fp-01-alegria-02": {
+  "question": "Em Filipenses 1:20, toque onde Cristo será engrandecido, segundo Paulo.",
+  "learningObjective": "Sustentar no texto onde Cristo é engrandecido.",
+  "feedbackCorrect": "Vivo ou morto, o corpo dele é o palco de Cristo.",
+  "feedbackWrong": {
+   "a": "Isso é o modo da proclamação, não o lugar dela.",
+   "b": "Isso é o sentimento dele, não onde Cristo aparece."
+  },
+  "hint": "Procure o lugar depois de engrandecido no.",
+  "_verso": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte."
+ },
+ "filipenses-pro-fp-01-alegria-03": {
+  "question": "Que leitura Filipenses 1:20–21 sustenta sobre a vida de Paulo?",
+  "learningObjective": "Escolher a interpretação que o texto sustenta.",
+  "feedbackCorrect": "Nos dois desfechos, o que importa é Cristo engrandecido.",
+  "feedbackWrong": {
+   "b": "Ele não mede sucesso pela saída: Cristo é a medida.",
+   "c": "Ficar é juízo de amor pela igreja, não falta de fé.",
+   "d": "Ele chama morrer de lucro, não de fracasso."
+  },
+  "hint": "Veja o que é igual na vida e na morte dele.",
+  "options": {
+   "a": "Cristo é o centro na vida e também na morte",
+   "b": "Sucesso é sair da prisão a qualquer custo",
+   "c": "Ficar vivo prova que lhe faltou fé para partir",
+   "d": "Morrer seria o fracasso total do evangelho"
+  },
+  "_verso": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte. Porque, para mim, viver é Cristo, e morrer é lucro."
+ },
+ "filipenses-pro-fp-01-alegria-04": {
+  "question": "Qual sequência revela o sentido de Filipenses 1:18–23?",
+  "learningObjective": "Ver Cristo como fio de todo o trecho.",
+  "feedbackCorrect": "Da proclamação ao estar com Cristo: o fio é o mesmo nome.",
+  "feedbackWrong": {
+   "default": "Comece pela alegria com a proclamação na prisão."
+  },
+  "hint": "Estar com Cristo é o ponto de chegada.",
+  "options": {
+   "a": "Cristo proclamado alegra o preso Paulo",
+   "b": "Cristo engrandecido nele, vivo ou morto",
+   "c": "Estar com Cristo é o melhor destino"
+  },
+  "_verso": "Porque, para mim, viver é Cristo, e morrer é lucro."
+ },
+ "filipenses-pro-fp-01-alegria-05": {
+  "question": "Em Filipenses 1:21, o que Paulo diz que morrer é para ele?",
+  "learningObjective": "Lembrar o termo que carrega a esperança de Paulo.",
+  "feedbackCorrect": "Estar com Cristo faz da morte ganho, não perda.",
+  "feedbackWrong": {
+   "b": "Perda é o contrário do que ele declara aqui.",
+   "c": "Castigo não aparece: ele fala de estar com Cristo."
+  },
+  "hint": "É uma palavra do mundo dos ganhos.",
+  "_verso": "Porque, para mim, viver é Cristo, e morrer é lucro."
+ },
+ "filipenses-pro-fp-01-alegria-06": {
+  "question": "O que liga Filipenses 1:20 a Gálatas 2:20?",
+  "learningObjective": "Ligar viver é Cristo à fé de Gálatas.",
+  "feedbackCorrect": "Em Gálatas, Paulo diz o mesmo: já não vivo eu, vive Cristo.",
+  "feedbackWrong": {
+   "a": "Os dois textos põem Cristo bem no centro da vida.",
+   "c": "A lei não é o centro declarado nesses versículos."
+  },
+  "hint": "Veja quem vive, segundo os dois textos.",
+  "options": {
+   "a": "Vida sem Cristo no centro",
+   "b": "Cristo vive em mim",
+   "c": "Lei como centro da vida"
+  },
+  "_verso": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte."
+ },
+ "estudo:fp-01-alegria": {
+  "context": "Paulo escreve preso, sem saber se sairá vivo. Alguns pregam Cristo até por motivos tortos, e a igreja de Filipos ora por ele. Mesmo assim, o tom da carta é de alegria, não de reclamação.",
+  "focusQuestion": "O que continuaria sendo alegria para você se tudo o mais fosse tirado?",
+  "keywordGloss": "Em Paulo, alegria não depende das circunstâncias: ela vem de Cristo ser proclamado e engrandecido.",
+  "reflectionPrompts": [
+   "Alegria na prisão",
+   "Viver é Cristo",
+   "Ficar pelos outros"
+  ],
+  "facts": [
+   "Paulo se alegra desde que Cristo seja proclamado, por pretexto ou por verdade.",
+   "Ele espera libertação graças à súplica da igreja e à provisão do Espírito.",
+   "Cristo será engrandecido no corpo de Paulo, pela vida ou pela morte.",
+   "Para Paulo, viver é Cristo, e morrer é lucro.",
+   "Ele deseja partir e estar com Cristo, o que é incomparavelmente melhor.",
+   "Ele julga mais necessário ficar na carne por causa da igreja."
+  ],
+  "_verso": "conforme a minha ardente expectativa e esperança de que em nada serei envergonhado; antes, com toda a ousadia, como sempre, também agora, será Cristo engrandecido no meu corpo, quer pela vida, quer pela morte. Porque, para mim, viver é Cristo, e morrer é lucro."
+ }
+}

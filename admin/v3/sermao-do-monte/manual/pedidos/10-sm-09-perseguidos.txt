@@ -1,0 +1,76 @@
+Escreva a cena "sm-09-perseguidos" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "O Caráter do Reino",
+ "mission": {
+  "slug": "sm-09-perseguidos",
+  "title": "Perseguidos por causa da justiça",
+  "type": "lesson",
+  "intro": "Viver como cidadão do Reino pode gerar oposição. Jesus não esconde isso — e ainda chama de bem-aventurados os que sofrem por causa da justiça. A perseguição não anula a alegria nem a esperança do discípulo.",
+  "hookRef": "Mateus 5:10–12",
+  "hookNote": "As bem-aventuranças terminam com um choque: o caminho do Reino pode custar rejeição. Jesus liga a perseguição à justiça e a si mesmo (“por…",
+  "centralInsight": "Fidelidade pode custar aprovação humana",
+  "objective": "Estou disposto a permanecer fiel a Jesus mesmo quando isso me custar aprovação das pessoas?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:10–12",
+  "context": "As bem-aventuranças terminam com um choque: o caminho do Reino pode custar rejeição. Jesus liga a perseguição à justiça e a si mesmo (“por minha causa”). Não é qualquer sofrimento — é oposição por fidelidade a Deus. A promessa ecoa a dos pobres de espírito: “deles é o Reino”. Os discípulos entram na linhagem dos profetas perseguidos. A alegria não nega a dor; nasce da esperança do galardão e da comunhão com Cristo.",
+  "keyword": "Perseguição",
+  "verseRefs": [
+   "Mateus 5:10"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:7–15",
+  "Mateus 5:10"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:7",
+   "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+  },
+  {
+   "ref": "Mateus 5:8",
+   "text": "Bem-aventurados os puros de coração, pois verão a Deus."
+  },
+  {
+   "ref": "Mateus 5:9",
+   "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+  },
+  {
+   "ref": "Mateus 5:10",
+   "text": "Bem-aventurados os que são perseguidos por causa da justiça, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:11",
+   "text": "Bem-aventurados sois, quando vos injuriarem e vos perseguirem, e, mentindo, disserem todo mal contra vós, por minha causa."
+  },
+  {
+   "ref": "Mateus 5:12",
+   "text": "Alegrem-se e exultem, pois grande é o galardão de vocês nos céus; pois assim também perseguiram os profetas que viveram antes de vocês."
+  },
+  {
+   "ref": "Mateus 5:13",
+   "text": "Vocês são o sal da terra; contudo, se o sal se tornar insípido, como poderá recuperar o seu sabor? Para nada mais serve, senão para ser lançado fora e pisado pelos homens."
+  },
+  {
+   "ref": "Mateus 5:14",
+   "text": "Vocês são a luz do mundo. Não se pode ocultar a cidade que está situada sobre um monte."
+  },
+  {
+   "ref": "Mateus 5:15",
+   "text": "Nem se acende uma candeia para colocá-la debaixo do alqueire, mas sim no velador, e ilumina todos os que estão na casa."
+  }
+ ]
+}
+</cena>

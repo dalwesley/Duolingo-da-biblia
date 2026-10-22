@@ -1,0 +1,217 @@
+{
+  "trail": {
+    "slug": "evangelhos",
+    "title": "Os Quatro Evangelhos",
+    "description": "Panorama de Mateus a João — vida, morte e ressurreição de Jesus.",
+    "realm": "novo-testamento"
+  },
+  "block": "Ensino e Sinais",
+  "mission": {
+    "slug": "evg-boss-02",
+    "title": "Desafio: Ensino e Sinais",
+    "type": "boss",
+    "intro": "Una bem-aventuranças, parábolas e milagres: como o Reino se revela.",
+    "hookRef": "Mateus 5; 13",
+    "hookNote": "Bem-aventuranças, parábolas e milagres pintam o mesmo Reino.",
+    "centralInsight": "Palavra que frutifica",
+    "objective": "Como o Reino se mostra no ensino e nos sinais?"
+  },
+  "v2": {
+    "passageRef": "Mateus 5; 13",
+    "context": "Bem-aventuranças, parábolas e milagres pintam o mesmo Reino.",
+    "keyword": "Reino",
+    "verseRefs": [
+      "Mateus 5:3; 13:3"
+    ]
+  },
+  "earlierScenes": [
+    {
+      "slug": "evg-04-sermao",
+      "title": "As bem-aventuranças",
+      "centralInsight": "Pobreza de espírito",
+      "ref": "Mateus 5:1–16"
+    },
+    {
+      "slug": "evg-05-parabolas",
+      "title": "As parábolas do Reino",
+      "centralInsight": "Ouvir e entender",
+      "ref": "Mateus 13:1–23"
+    },
+    {
+      "slug": "evg-06-milagres",
+      "title": "Sinais e compaixão",
+      "centralInsight": "Reino que cura",
+      "ref": "Marcos 6:30–44"
+    }
+  ],
+  "ranges": [
+    "Mateus 5:1–16",
+    "Mateus 5:3–6",
+    "Mateus 13:1–23",
+    "Mateus 13:3–8",
+    "Marcos 6:30–44",
+    "Marcos 6:41–42"
+  ],
+  "verses": [
+    {
+      "ref": "Mateus 5:1",
+      "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+    },
+    {
+      "ref": "Mateus 5:2",
+      "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+    },
+    {
+      "ref": "Mateus 5:3",
+      "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+    },
+    {
+      "ref": "Mateus 5:4",
+      "text": "Bem-aventurados os que choram, porque serão consolados."
+    },
+    {
+      "ref": "Mateus 5:5",
+      "text": "Bem-aventurados os mansos, porque herdarão a terra."
+    },
+    {
+      "ref": "Mateus 5:6",
+      "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+    },
+    {
+      "ref": "Mateus 5:7",
+      "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+    },
+    {
+      "ref": "Mateus 5:8",
+      "text": "Bem-aventurados os puros de coração, pois verão a Deus."
+    },
+    {
+      "ref": "Mateus 5:9",
+      "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+    },
+    {
+      "ref": "Mateus 5:10",
+      "text": "Bem-aventurados os que são perseguidos por causa da justiça, porque deles é o reino dos céus."
+    },
+    {
+      "ref": "Mateus 5:11",
+      "text": "Bem-aventurados sois, quando vos injuriarem e vos perseguirem, e, mentindo, disserem todo mal contra vós, por minha causa."
+    },
+    {
+      "ref": "Mateus 5:12",
+      "text": "Alegrem-se e exultem, pois grande é o galardão de vocês nos céus; pois assim também perseguiram os profetas que viveram antes de vocês."
+    },
+    {
+      "ref": "Mateus 5:13",
+      "text": "Vocês são o sal da terra; contudo, se o sal se tornar insípido, como poderá recuperar o seu sabor? Para nada mais serve, senão para ser lançado fora e pisado pelos homens."
+    },
+    {
+      "ref": "Mateus 5:14",
+      "text": "Vocês são a luz do mundo. Não se pode ocultar a cidade que está situada sobre um monte."
+    },
+    {
+      "ref": "Mateus 5:15",
+      "text": "Nem se acende uma candeia para colocá-la debaixo do alqueire, mas sim no velador, e ilumina todos os que estão na casa."
+    },
+    {
+      "ref": "Mateus 5:16",
+      "text": "Assim resplandeça a sua luz diante dos homens, para que vejam as suas boas obras e glorifiquem a seu Pai que está nos céus."
+    },
+    {
+      "ref": "Mateus 13:1",
+      "text": "Naquele dia, saindo Jesus de casa, assentou-se à beira-mar;"
+    },
+    {
+      "ref": "Mateus 13:2",
+      "text": "E grandes multidões se reuniram ao seu redor, de modo que, entrando em um barco se assentou; e toda a multidão permanecia em pé na praia."
+    },
+    {
+      "ref": "Mateus 13:3",
+      "text": "E lhes falou de muitas coisas por parábolas, dizendo: Eis que o semeador saiu a semear."
+    },
+    {
+      "ref": "Mateus 13:4",
+      "text": "E, ao semear, uma parte da semente caiu à beira do caminho, e, vindo as aves, a comeram."
+    },
+    {
+      "ref": "Mateus 13:5",
+      "text": "E outra parte caiu em solo rochoso, onde a terra era pouca, e logo nasceu, pois a terra não era profunda."
+    },
+    {
+      "ref": "Mateus 13:6",
+      "text": "Mas, ao sair o sol, secou-se e murchou, porque não tinha raiz."
+    },
+    {
+      "ref": "Mateus 13:7",
+      "text": "E outra caiu entre os espinhos, e os espinhos brotaram e a sufocaram."
+    },
+    {
+      "ref": "Mateus 13:8",
+      "text": "E outra caiu em boa terra e produziu fruto: um grão produziu cem, outro sessenta e outro trinta."
+    },
+    {
+      "ref": "Mateus 13:9",
+      "text": "Quem tem ouvidos para ouvir, que ouça."
+    },
+    {
+      "ref": "Mateus 13:10",
+      "text": "E, ao se aproximarem dele, os discípulos perguntaram: Por que lhes falas em parábolas?"
+    },
+    {
+      "ref": "Mateus 13:11",
+      "text": "Ele, respondendo, disse-lhes: Porque a vocês é concedido conhecer os mistérios do reino dos céus, mas a eles não é isso dado"
+    },
+    {
+      "ref": "Mateus 13:12",
+      "text": "Porque ao que já possui, se lhe dará, e terá em abundância, mas ao que não possui, até o que tem, lhe será tirado."
+    },
+    {
+      "ref": "Mateus 13:13",
+      "text": "Por isso, lhes falo por meio de parábolas, pois, vendo, não veem; e, ouvindo, não ouvem, nem entendem."
+    },
+    {
+      "ref": "Mateus 13:14",
+      "text": "E assim se cumpre neles a profecia de Isaías, que diz: Ouvindo, ouvireis, mas não compreendereis; e vendo, vereis, mas não percebereis."
+    },
+    {
+      "ref": "Mateus 13:15",
+      "text": "Porque o coração deste povo está endurecido; relutam em ouvir com os ouvidos e fecham os olhos, para que não vejam com os olhos, não ouçam com os ouvidos, nem entendam com o coração e se convertam e sejam por mim curados."
+    },
+    {
+      "ref": "Mateus 13:16",
+      "text": "Bem-aventurados, porém, são os vossos olhos, porque veem; e os vossos ouvidos, porque ouvem."
+    },
+    {
+      "ref": "Mateus 13:17",
+      "text": "Porque em verdade vos digo que muitos profetas e justos desejaram ver o que vós vedes, e não viram; e ouvir o que vós ouvis, e não ouviram."
+    },
+    {
+      "ref": "Mateus 13:18",
+      "text": "Ouçam, portanto, a parábola do semeador."
+    },
+    {
+      "ref": "Mateus 13:19",
+      "text": "Quando alguém ouve a palavra do reino e não a compreende, o maligno vem e arranca o que foi semeado em seu coração; este é o que foi semeado à beira do caminho."
+    },
+    {
+      "ref": "Mateus 13:20",
+      "text": "Mas o que foi semeado em solo rochoso, é aquele que ouve a palavra e a recebe imediatamente, com alegria;"
+    },
+    {
+      "ref": "Mateus 13:21",
+      "text": "Mas não tem raiz em si mesmo, sendo, antes, de pouca duração; e, quando lhe chega a angústia ou a perseguição por causa da palavra, logo se escandaliza."
+    },
+    {
+      "ref": "Mateus 13:22",
+      "text": "O que foi semeado entre espinhos é aquele que ouve a palavra, mas os cuidados deste mundo e a sedução das riquezas sufocam a palavra, e ela fica infrutífera."
+    },
+    {
+      "ref": "Mateus 13:23",
+      "text": "Mas o que foi semeado em boa terra é aquele que ouve a palavra e a compreende; esse frutifica e produz a cem, a sessenta e a trinta por um."
+    },
+    {
+      "ref": "Marcos 6:30",
+      "text": "Os apóstolos voltaram-se para Jesus e lhe relataram tudo o que haviam feito e ensinado."
+    }
+  ]
+}

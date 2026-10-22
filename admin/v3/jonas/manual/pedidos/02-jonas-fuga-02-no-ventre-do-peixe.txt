@@ -1,0 +1,68 @@
+Escreva a cena "jonas-fuga-02-no-ventre-do-peixe" da trilha "jonas" (Jonas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "jonas",
+  "title": "Jonas",
+  "description": "Profeta em fuga — misericórdia até para Nínive.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Fuga e peixe",
+ "mission": {
+  "slug": "jonas-fuga-02-no-ventre-do-peixe",
+  "title": "No ventre do peixe",
+  "type": "lesson",
+  "intro": "Oração desde o abismo.",
+  "hookRef": "Jonas 1:3",
+  "hookNote": "Oração desde o abismo.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre ventre?"
+ },
+ "v2": {
+  "passageRef": "Jonas 1:3",
+  "context": "Oração desde o abismo.",
+  "keyword": "Ventre",
+  "verseRefs": [
+   "Jonas 1:17"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Jonas 1:1–6",
+  "Jonas 1:17"
+ ],
+ "verses": [
+  {
+   "ref": "Jonas 1:1",
+   "text": "Veio a palavra do Senhor à Jonas, filho de Amitai, dizendo:"
+  },
+  {
+   "ref": "Jonas 1:2",
+   "text": "Levante-se e vá à grande cidade de Nínive e clame contra ela, porque a sua malícia subiu até mim."
+  },
+  {
+   "ref": "Jonas 1:3",
+   "text": "Jonas se dispôs a fugir da presença do Senhor e partiu para Társis. Desceu a Jope, onde encontrou um navio que ia para Társis. Pagou a passagem e embarcou, com a intenção de ir com eles para Társis, distante da presença do Senhor."
+  },
+  {
+   "ref": "Jonas 1:4",
+   "text": "Mas o Senhor lançou um forte vento sobre o mar, e houve uma tempestade tão intensa que o navio estava a ponto de se despedaçar."
+  },
+  {
+   "ref": "Jonas 1:5",
+   "text": "Os marinheiros, apavorados, clamavam, cada um ao seu deus, e lançavam ao mar as mercadorias que estavam no navio, para o aliviarem do peso; enquanto isso, Jonas desceu ao porão, deitou-se e dormia profundamente."
+  },
+  {
+   "ref": "Jonas 1:6",
+   "text": "E o capitão do navio aproximou-se dele e disse: Que tens, dorminhoco? Levanta-te, clama ao teu deus; talvez esse deus se lembre de nós, para que não pereçamos."
+  },
+  {
+   "ref": "Jonas 1:17",
+   "text": "O Senhor designou um grande peixe para que engolisse Jonas; e ele ficou três dias e três noites no ventre do peixe."
+  }
+ ]
+}
+</cena>

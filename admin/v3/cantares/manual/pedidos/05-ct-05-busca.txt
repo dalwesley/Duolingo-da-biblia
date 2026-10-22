@@ -1,0 +1,67 @@
+Escreva a cena "ct-05-busca" da trilha "cantares" (Cantares).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "cantares",
+  "title": "Cantares",
+  "description": "Amor fiel — poesia da aliança e do desejo santo.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A busca",
+ "mission": {
+  "slug": "ct-05-busca",
+  "title": "Busquei o que a alma ama",
+  "type": "lesson",
+  "intro": "De noite ela procura. Não acha no leito, pergunta aos guardas e, quando acha, não solta.",
+  "hookRef": "Cantares 3:1–4",
+  "hookNote": "O amor do cântico não é só declaração. É busca que atravessa a cidade até achar.",
+  "centralInsight": "Quem ama procura até achar",
+  "objective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta."
+ },
+ "v2": {
+  "passageRef": "Cantares 3:1–4",
+  "context": "Ela busca na cama, rodeia a cidade, pergunta aos guardas e agarra o amado.",
+  "keyword": "Busca",
+  "verseRefs": [
+   "Cantares 3:1–4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Cantares 3:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Cantares 3:1",
+   "text": "Na noite, busquei em meu leito aquele a quem minha alma ama; busquei-o, mas não o encontrei"
+  },
+  {
+   "ref": "Cantares 3:2",
+   "text": "Levantar-me-ei, pois, e rodearei a cidade; pelas ruas e pelas praças buscarei o amado da minha alma. Busquei-o, mas não o encontrei"
+  },
+  {
+   "ref": "Cantares 3:3",
+   "text": "Encontraram-me os guardas que rondavam pela cidade. Então, perguntei-lhes: Vistes o amado da minha alma?"
+  },
+  {
+   "ref": "Cantares 3:4",
+   "text": "Afastei-me um pouco deles, e logo encontrei o amado da minha alma; agarrei-me a ele e não o deixei, até que o fiz entrar na casa de minha mãe, na câmara daquela que me gerou"
+  },
+  {
+   "ref": "Cantares 3:5",
+   "text": "Conjuro-vos, ó filhas de Jerusalém, pelas gazelas e cervas do campo, que não acordeis nem desperteis o amor, até que este o queira"
+  },
+  {
+   "ref": "Cantares 3:6",
+   "text": "Quem é esta que sobe do deserto, como colunas de fumo, perfumada de mirra, e de incenso, e de toda sorte de pós aromáticos?"
+  },
+  {
+   "ref": "Cantares 3:7",
+   "text": "Eis a liteira de Salomão; ao seu redor estão sessenta valentes, dos valentes de Israel"
+  }
+ ]
+}
+</cena>

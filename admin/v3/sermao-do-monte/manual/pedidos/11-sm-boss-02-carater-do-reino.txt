@@ -1,0 +1,116 @@
+Escreva a cena "sm-boss-02-carater-do-reino" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "O Caráter do Reino",
+ "mission": {
+  "slug": "sm-boss-02-carater-do-reino",
+  "title": "Desafio: O Caráter do Reino",
+  "type": "boss",
+  "intro": "Você chegou ao desafio da Cena 2. Mostre que compreendeu como o cidadão do Reino vive: misericórdia, pureza de coração, paz e fidelidade sob pressão.",
+  "hookRef": "Mateus 5:7–12",
+  "hookNote": "A segunda parte das bem-aventuranças mostra como o cidadão do Reino vive entre as pessoas: misericórdia recebida e repassada, pureza interi…",
+  "centralInsight": "Quem foi alcançado pela graça aprende a oferecer graça",
+  "objective": "Minha compaixão, pureza e paz vêm do Reino — ou só quando é conveniente?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:7–12",
+  "context": "A segunda parte das bem-aventuranças mostra como o cidadão do Reino vive entre as pessoas: misericórdia recebida e repassada, pureza interior, paz restauradora e fidelidade quando a justiça custa. Jesus não promete vida fácil — promete alegria mesmo sob pressão, porque o Reino não depende da aprovação humana.",
+  "keyword": "Caráter",
+  "verseRefs": [
+   "Mateus 5:7–10"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "sm-06-misericordiosos",
+   "title": "Os Misericordiosos",
+   "centralInsight": "Quem foi alcançado pela graça aprende a oferecer graça",
+   "ref": "Mateus 5:4–10"
+  },
+  {
+   "slug": "sm-07-limpos-de-coracao",
+   "title": "Os Limpos de Coração",
+   "centralInsight": "Deus transforma primeiro o interior",
+   "ref": "Mateus 5:5–11"
+  },
+  {
+   "slug": "sm-08-pacificadores",
+   "title": "Os Pacificadores",
+   "centralInsight": "A paz verdadeira começa na reconciliação com Deus",
+   "ref": "Mateus 5:6–12"
+  },
+  {
+   "slug": "sm-09-perseguidos",
+   "title": "Perseguidos por causa da justiça",
+   "centralInsight": "Fidelidade pode custar aprovação humana",
+   "ref": "Mateus 5:7–15"
+  }
+ ],
+ "ranges": [
+  "Mateus 5:4–10",
+  "Mateus 5:5–11",
+  "Mateus 5:6–12",
+  "Mateus 5:7–15",
+  "Mateus 5:10"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:4",
+   "text": "Bem-aventurados os que choram, porque serão consolados."
+  },
+  {
+   "ref": "Mateus 5:5",
+   "text": "Bem-aventurados os mansos, porque herdarão a terra."
+  },
+  {
+   "ref": "Mateus 5:6",
+   "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+  },
+  {
+   "ref": "Mateus 5:7",
+   "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+  },
+  {
+   "ref": "Mateus 5:8",
+   "text": "Bem-aventurados os puros de coração, pois verão a Deus."
+  },
+  {
+   "ref": "Mateus 5:9",
+   "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+  },
+  {
+   "ref": "Mateus 5:10",
+   "text": "Bem-aventurados os que são perseguidos por causa da justiça, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:11",
+   "text": "Bem-aventurados sois, quando vos injuriarem e vos perseguirem, e, mentindo, disserem todo mal contra vós, por minha causa."
+  },
+  {
+   "ref": "Mateus 5:12",
+   "text": "Alegrem-se e exultem, pois grande é o galardão de vocês nos céus; pois assim também perseguiram os profetas que viveram antes de vocês."
+  },
+  {
+   "ref": "Mateus 5:13",
+   "text": "Vocês são o sal da terra; contudo, se o sal se tornar insípido, como poderá recuperar o seu sabor? Para nada mais serve, senão para ser lançado fora e pisado pelos homens."
+  },
+  {
+   "ref": "Mateus 5:14",
+   "text": "Vocês são a luz do mundo. Não se pode ocultar a cidade que está situada sobre um monte."
+  },
+  {
+   "ref": "Mateus 5:15",
+   "text": "Nem se acende uma candeia para colocá-la debaixo do alqueire, mas sim no velador, e ilumina todos os que estão na casa."
+  }
+ ]
+}
+</cena>

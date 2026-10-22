@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Marcos 15:34–39",
+  "passages": [
+   {
+    "ref": "Marcos 15:22–39"
+   }
+  ],
+  "context": "Jesus é levado ao Gólgota, crucificado entre dois ladrões e insultado por quem passa. Trevas cobrem a terra, Jesus clama, expira, o véu se rasga e um centurião confessa.",
+  "keyword": "Filho de Deus",
+  "keywordGloss": "Ao ver como Jesus expirou, o centurião o reconhece como Filho de Deus.",
+  "focusQuestion": "O que a entrega de Jesus na cruz diz sobre o valor que Deus dá a você?",
+  "reflectionPrompts": [
+   "Amor que se entrega",
+   "Véu rasgado de cima a baixo",
+   "Verdadeiramente Filho de Deus"
+  ],
+  "facts": [
+   {
+    "text": "Sobre Jesus foi posta a acusação de Rei dos judeus.",
+    "evidenceRef": "Marcos 15:26",
+    "evidenceSpan": "estava em epígrafe a sua acusação, escrita: O REI DOS JUDEUS"
+   },
+   {
+    "text": "Jesus foi crucificado com dois ladrões, um de cada lado.",
+    "evidenceRef": "Marcos 15:27",
+    "evidenceSpan": "crucificaram com ele dois ladrões, um à sua direita e outro à sua esquerda"
+   },
+   {
+    "text": "Houve trevas sobre toda a terra da sexta até a nona hora.",
+    "evidenceRef": "Marcos 15:33",
+    "evidenceSpan": "houve trevas sobre toda a terra até a nona hora"
+   },
+   {
+    "text": "Jesus soltou um grande brado e expirou.",
+    "evidenceRef": "Marcos 15:37",
+    "evidenceSpan": "E Jesus, soltando um grande brado, expirou"
+   },
+   {
+    "text": "O véu do templo rasgou-se em duas partes, de cima para baixo.",
+    "evidenceRef": "Marcos 15:38",
+    "evidenceSpan": "E o véu do templo rasgou-se em duas partes, de cima para baixo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Gólgota",
+    "gloss": "Lugar da Caveira, onde Jesus foi crucificado fora da cidade."
+   },
+   {
+    "term": "véu",
+    "gloss": "A cortina do templo que se rasga de cima para baixo na morte de Jesus."
+   },
+   {
+    "term": "centurião",
+    "gloss": "O oficial romano que, vendo Jesus expirar, o confessa Filho de Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Crucificado no Gólgota entre ladrões",
+    "evidenceRef": "Marcos 15:22–27"
+   },
+   {
+    "label": "Insultos de quem passa e dos chefes",
+    "evidenceRef": "Marcos 15:29–32"
+   },
+   {
+    "label": "Trevas e o clamor de Jesus",
+    "evidenceRef": "Marcos 15:33–34"
+   },
+   {
+    "label": "Morte, véu rasgado e confissão",
+    "evidenceRef": "Marcos 15:37–39"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Ao ver como Jesus expirou, o centurião confessa que ele era Filho de Deus.",
+    "marker": "ao ver",
+    "evidenceRef": "Marcos 15:39"
+   },
+   {
+    "kind": "sequência",
+    "text": "Jesus expira e, em seguida, o véu do templo se rasga.",
+    "marker": "E",
+    "evidenceRef": "Marcos 15:38"
+   },
+   {
+    "kind": "contraste",
+    "text": "Chef escarnecem dizendo que ele salvou outros, mas não a si mesmo.",
+    "marker": "mas",
+    "evidenceRef": "Marcos 15:31"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 22:1",
+    "bridge": "Clamor do abandonado"
+   },
+   {
+    "ref": "Isaías 53:12",
+    "bridge": "Contado com malfeitores"
+   },
+   {
+    "ref": "Salmos 22:18",
+    "bridge": "Vestes repartidas por sorte"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jesus descer da cruz provaria melhor que ele é o Cristo.",
+    "why": "Os zombadores pedem isso, mas o texto mostra o Cristo permanecendo até expirar (15:32-37)."
+   },
+   {
+    "text": "A cruz foi um acidente que interrompeu o plano de Jesus.",
+    "why": "Marcos mostra Escritura cumprida e o véu rasgado na sua morte (15:28,38)."
+   },
+   {
+    "text": "Ninguém reconheceu Jesus na cruz.",
+    "why": "O centurião, ao vê-lo expirar, confessa que ele era Filho de Deus (15:39)."
+   }
+  ],
+  "centralInsight": "Amor que se entrega",
+  "anchorQuestion": "O que o centurião declarou ao ver como Jesus expirou?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Marcos 15:26, a acusação sobre Jesus dizia que ele era um ladrão perigoso.",
+   "verseRef": "Marcos 15:26",
+   "correctOptionId": "false",
+   "evidenceSpan": "estava em epígrafe a sua acusação, escrita: O REI DOS JUDEUS",
+   "feedbackCorrect": "A acusação escrita chamava Jesus de Rei dos judeus.",
+   "feedbackWrong": {
+    "true": "Releia o letreiro posto sobre Jesus em Marcos 15:26."
+   },
+   "hint": "",
+   "learningObjective": "Observar a acusação posta sobre Jesus.",
+   "evidence": [
+    "Marcos 15:26"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Marcos 15:22, toque o lugar para onde levaram Jesus.",
+   "verseRef": "Marcos 15:22",
+   "correctOptionId": "a",
+   "evidenceSpan": "E o levaram para o Gólgota",
+   "feedbackCorrect": "O Gólgota é o cenário da crucificação em Marcos.",
+   "feedbackWrong": {
+    "b": "Isso traduz o nome do lugar, não é o nome dito primeiro.",
+    "c": "Isso não aparece neste versículo."
+   },
+   "hint": "Procure o nome próprio do lugar.",
+   "learningObjective": "Identificar o lugar da crucificação.",
+   "evidence": [
+    "Marcos 15:22"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "o Gólgota"
+    },
+    {
+     "id": "b",
+     "text": "Lugar da Caveira"
+    },
+    {
+     "id": "c",
+     "text": "levaram"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Marcos 15:27, quem foi crucificado com Jesus?",
+   "verseRef": "Marcos 15:27",
+   "correctOptionId": "b",
+   "evidenceSpan": "crucificaram com ele dois ladrões",
+   "feedbackCorrect": "Jesus é colocado no meio de dois ladrões crucificados.",
+   "feedbackWrong": {
+    "a": "Discípulos não são crucificados com ele aqui.",
+    "c": "Soldados executam, não são crucificados ao lado.",
+    "d": "Profetas antigos não estão nesta cena."
+   },
+   "hint": "Veja quem está à direita e à esquerda.",
+   "learningObjective": "Observar a companhia de Jesus na cruz.",
+   "evidence": [
+    "Marcos 15:27"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Dois discípulos fiéis"
+    },
+    {
+     "id": "b",
+     "text": "Dois ladrões, um de cada lado"
+    },
+    {
+     "id": "c",
+     "text": "Dois soldados romanos"
+    },
+    {
+     "id": "d",
+     "text": "Dois profetas antigos"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Marcos 15:37 e 38 na ordem do texto.",
+   "verseRef": "Marcos 15:37–38",
+   "correctOptionId": "a",
+   "evidenceSpan": "E Jesus, soltando um grande brado, expirou",
+   "feedbackCorrect": "Jesus expira e o véu se rasga de cima para baixo.",
+   "feedbackWrong": {
+    "default": {
+     "default": "Comece pela morte de Jesus, antes do véu."
+    }
+   },
+   "hint": "Comece pelo brado final de Jesus.",
+   "learningObjective": "Reconhecer morte e véu rasgado.",
+   "evidence": [
+    "Marcos 15:37–38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "E Jesus, soltando um grande brado, expirou"
+    },
+    {
+     "id": "b",
+     "text": "E o véu do templo rasgou-se em duas partes"
+    },
+    {
+     "id": "c",
+     "text": "de cima para baixo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Marcos 15:33, o que houve sobre toda a terra até a nona hora?",
+   "verseRef": "Marcos 15:33",
+   "correctOptionId": "a",
+   "evidenceSpan": "houve trevas sobre toda a terra até a nona hora",
+   "feedbackCorrect": "Trevas marcam as horas finais de Jesus na cruz.",
+   "feedbackWrong": {
+    "b": "Silêncio não é o fenômeno descrito aqui.",
+    "c": "Chuva não é citada neste versículo."
+   },
+   "hint": "Veja o fenômeno no início do trecho final.",
+   "learningObjective": "Lembrar as trevas sobre a terra.",
+   "evidence": [
+    "Marcos 15:33"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "trevas"
+    },
+    {
+     "id": "b",
+     "text": "silêncio"
+    },
+    {
+     "id": "c",
+     "text": "chuva"
+    }
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Marcos 15:39 comunica que se liga a este contexto?",
+   "verseRef": "Marcos 15:39",
+   "correctOptionId": "b",
+   "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus",
+   "feedbackCorrect": "Até um oficial romano reconhece Jesus na cruz.",
+   "feedbackWrong": {
+    "a": "O centurião faz justamente esse reconhecimento.",
+    "c": "Jesus permanece na cruz até expirar."
+   },
+   "hint": "Ouça a fala final da cena.",
+   "learningObjective": "Ligar a cruz ao reconhecimento de Jesus.",
+   "evidence": [
+    "Marcos 15:39"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ninguém reconheceu Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Um romano reconheceu o Filho"
+    },
+    {
+     "id": "c",
+     "text": "Jesus desceu da cruz"
+    }
+   ],
+   "passageA": {
+    "ref": "Marcos 15:39"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Na cruz, o amor se entrega até o fim, sem descer dela."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Marcos 15:31 e 32, os chefes reconhecem com fé que Jesus salvou os outros e creem nele.",
+   "verseRef": "Marcos 15:31–32",
+   "correctOptionId": "false",
+   "evidenceSpan": "Ele salvou os outros, mas a si mesmo não pode salvar-se",
+   "feedbackCorrect": "Eles escarnecem de Jesus e pedem um sinal para crer, sem fé.",
+   "feedbackWrong": {
+    "true": "O texto diz que falavam escarnecendo, não crendo."
+   },
+   "hint": "",
+   "learningObjective": "Compreender a zombaria dos chefes.",
+   "evidence": [
+    "Marcos 15:31–32"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Marcos 15:31, toque a palavra que marca o contraste na zombaria dos chefes.",
+   "verseRef": "Marcos 15:31",
+   "correctOptionId": "b",
+   "evidenceSpan": "Ele salvou os outros, mas a si mesmo não pode salvar-se",
+   "feedbackCorrect": "A zombaria opõe salvar outros a não salvar a si mesmo.",
+   "feedbackWrong": {
+    "a": "Isso introduz a fala deles, não o contraste.",
+    "c": "Isso indica a conversa interna deles."
+   },
+   "hint": "Procure a oposição no meio da frase.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Marcos 15:31"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Da mesma forma"
+    },
+    {
+     "id": "b",
+     "text": "mas"
+    },
+    {
+     "id": "c",
+     "text": "entre si"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Marcos liga a morte de Jesus ao véu do templo?",
+   "verseRef": "Marcos 15:37–38",
+   "correctOptionId": "a",
+   "evidenceSpan": "E o véu do templo rasgou-se em duas partes",
+   "feedbackCorrect": "A sequência coloca o véu rasgado imediatamente após a morte.",
+   "feedbackWrong": {
+    "b": "O texto diz rasgou-se, não foi costurado.",
+    "c": "O rasgo acontece na mesma sequência da morte.",
+    "d": "O véu está no templo, não junto à cruz."
+   },
+   "hint": "Veja a ordem dos versículos 37 e 38.",
+   "learningObjective": "Compreender a sequência morte e véu.",
+   "evidence": [
+    "Marcos 15:37–38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "O véu se rasga logo após Jesus expirar"
+    },
+    {
+     "id": "b",
+     "text": "O véu é costurado após a morte dele"
+    },
+    {
+     "id": "c",
+     "text": "O véu cai semanas depois da cruz"
+    },
+    {
+     "id": "d",
+     "text": "O véu protege Jesus dos insultos"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o fim da cena em Marcos 15:33 a 39?",
+   "verseRef": "Marcos 15:33–34",
+   "correctOptionId": "a",
+   "evidenceSpan": "houve trevas sobre toda a terra até a nona hora",
+   "feedbackCorrect": "Trevas, clamor e morte com o véu rasgado encerram a cena.",
+   "feedbackWrong": {
+    "default": {
+     "default": "O clamor vem depois das trevas e antes da morte."
+    }
+   },
+   "hint": "Comece pelas trevas da sexta hora.",
+   "learningObjective": "Compreender o encadeamento final.",
+   "evidence": [
+    "Marcos 15:33",
+    "Marcos 15:38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Trevas cobrem a terra por três horas"
+    },
+    {
+     "id": "b",
+     "text": "Jesus clama a Deus em alta voz"
+    },
+    {
+     "id": "c",
+     "text": "Jesus expira e o véu se rasga"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Marcos 15:38, de onde até onde o véu do templo se rasgou?",
+   "verseRef": "Marcos 15:38",
+   "correctOptionId": "b",
+   "evidenceSpan": "rasgou-se em duas partes, de cima para baixo",
+   "feedbackCorrect": "A direção do rasgo é apresentada de cima para baixo.",
+   "feedbackWrong": {
+    "a": "Baixo é o fim do movimento, não o começo pedido.",
+    "c": "Meio não é o ponto de partida citado."
+   },
+   "hint": "Veja a direção completa do rasgo.",
+   "learningObjective": "Compreender a direção do véu rasgado.",
+   "evidence": [
+    "Marcos 15:38"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "baixo"
+    },
+    {
+     "id": "b",
+     "text": "cima"
+    },
+    {
+     "id": "c",
+     "text": "meio"
+    }
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Marcos 15:34 a Salmos 22:1?",
+   "verseRef": "Marcos 15:34",
+   "correctOptionId": "a",
+   "evidenceSpan": "Meu Deus, meu Deus, por que me desamparaste",
+   "feedbackCorrect": "Jesus toma nos lábios o clamor inicial do salmo 22.",
+   "feedbackWrong": {
+    "b": "O clamor expressa abandono, não vitória fácil.",
+    "c": "Nos dois textos há palavras de clamor a Deus."
+   },
+   "hint": "Compare a frase de Jesus com o salmo.",
+   "learningObjective": "Relacionar o clamor à Escritura citada.",
+   "evidence": [
+    "Marcos 15:34",
+    "Salmos 22:1"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Clamor do justo abandonado"
+    },
+    {
+     "id": "b",
+     "text": "Grito de vitória fácil"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio total do salmista"
+    }
+   ],
+   "passageA": {
+    "ref": "Marcos 15:34"
+   },
+   "passageB": {
+    "ref": "Salmos 22:1"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Marcos 15:39, o centurião confessa Jesus como Filho de Deus ao ver como ele expirou.",
+   "verseRef": "Marcos 15:39",
+   "correctOptionId": "true",
+   "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus",
+   "feedbackCorrect": "A confissão nasce de ver Jesus morrer sem descer da cruz.",
+   "feedbackWrong": {
+    "false": "Releia a fala do centurião diante da cruz em 15:39."
+   },
+   "hint": "",
+   "learningObjective": "Interpretar a confissão na cruz.",
+   "evidence": [
+    "Marcos 15:39"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Marcos 15:39, toque o trecho que sustenta o reconhecimento de Jesus.",
+   "verseRef": "Marcos 15:39",
+   "correctOptionId": "b",
+   "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus",
+   "feedbackCorrect": "A fala do centurião nomeia quem Jesus é, visto na cruz.",
+   "feedbackWrong": {
+    "a": "Isso é a posição do oficial, não a confissão.",
+    "c": "Isso é o motivo, não o conteúdo confessado."
+   },
+   "hint": "Procure a declaração sobre Jesus.",
+   "learningObjective": "Sustentar o reconhecimento com o texto.",
+   "evidence": [
+    "Marcos 15:39"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "diante dele"
+    },
+    {
+     "id": "b",
+     "text": "Filho de Deus"
+    },
+    {
+     "id": "c",
+     "text": "ao ver"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Marcos 15:31 a 39 sustenta sobre Jesus não descer da cruz?",
+   "verseRef": "Marcos 15:31–32",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele salvou os outros, mas a si mesmo não pode salvar-se",
+   "feedbackCorrect": "A zombaria diz sem querer a verdade, pois salvar outros pede permanecer.",
+   "feedbackWrong": {
+    "b": "O texto não trata a permanência como incapacidade.",
+    "c": "Ele não condiciona sua entrega à fé dos chefes.",
+    "d": "Ele expira na cruz; quem confessa é o centurião."
+   },
+   "hint": "Junte a zombaria à morte e à confissão.",
+   "learningObjective": "Escolher a leitura da permanência na cruz.",
+   "evidence": [
+    "Marcos 15:31",
+    "Marcos 15:39"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele permanece para se entregar até o fim"
+    },
+    {
+     "id": "b",
+     "text": "Ele não consegue responder aos insultos"
+    },
+    {
+     "id": "c",
+     "text": "Ele espera os chefes crerem primeiro"
+    },
+    {
+     "id": "d",
+     "text": "Ele desce escondido após expirar"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o sentido da cruz em Marcos 15?",
+   "verseRef": "Marcos 15:38–39",
+   "correctOptionId": "a",
+   "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus",
+   "feedbackCorrect": "Insulto, entrega até a morte e reconhecimento fecham o arco.",
+   "feedbackWrong": {
+    "default": {
+     "default": "A confissão do centurião é o ponto final."
+    }
+   },
+   "hint": "Termine com a confissão diante da cruz.",
+   "learningObjective": "Ver insulto, entrega e reconhecimento.",
+   "evidence": [
+    "Marcos 15:26",
+    "Marcos 15:39"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus é insultado como Rei na cruz"
+    },
+    {
+     "id": "b",
+     "text": "Jesus expira sem descer dela"
+    },
+    {
+     "id": "c",
+     "text": "O centurião o confessa Filho de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Marcos 15:39, que título o centurião dá a Jesus ao vê-lo expirar?",
+   "verseRef": "Marcos 15:39",
+   "correctOptionId": "a",
+   "evidenceSpan": "este homem era o Filho de Deus",
+   "feedbackCorrect": "O reconhecimento final nomeia Jesus como Filho de Deus.",
+   "feedbackWrong": {
+    "b": "Rei foi o letreiro de acusação, não esta confissão.",
+    "c": "Profeta não é a palavra do centurião aqui."
+   },
+   "hint": "Ouça o título central da confissão.",
+   "learningObjective": "Lembrar o título confessado na cruz.",
+   "evidence": [
+    "Marcos 15:39"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Filho"
+    },
+    {
+     "id": "b",
+     "text": "Rei"
+    },
+    {
+     "id": "c",
+     "text": "Profeta"
+    }
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Marcos 15:28 a Isaías 53:12?",
+   "verseRef": "Marcos 15:28",
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele foi contado com os malfeitores",
+   "feedbackCorrect": "Marcos diz que se cumpriu a Escritura sobre ser contado com transgressores.",
+   "feedbackWrong": {
+    "b": "Ele é crucificado entre dois ladrões.",
+    "c": "O próprio Marcos fala em Escritura cumprida."
+   },
+   "hint": "Veja a citação que Marcos apresenta.",
+   "learningObjective": "Ligar a cruz ao servo de Isaías.",
+   "evidence": [
+    "Marcos 15:28",
+    "Isaías 53:12"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Contado com os malfeitores"
+    },
+    {
+     "id": "b",
+     "text": "Rei longe dos malfeitores"
+    },
+    {
+     "id": "c",
+     "text": "Cruz sem Escritura cumprida"
+    }
+   ],
+   "passageA": {
+    "ref": "Marcos 15:28"
+   },
+   "passageB": {
+    "ref": "Isaías 53:12"
+   }
+  }
+ ]
+}

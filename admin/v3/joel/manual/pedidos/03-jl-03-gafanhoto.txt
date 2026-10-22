@@ -1,0 +1,67 @@
+Escreva a cena "jl-03-gafanhoto" da trilha "joel" (Joel).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "joel",
+  "title": "Joel",
+  "description": "O dia do Senhor e o derramar do Espírito.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A volta",
+ "mission": {
+  "slug": "jl-03-gafanhoto",
+  "title": "O que o gafanhoto deixou",
+  "type": "lesson",
+  "intro": "Joel abre com uma cadeia de perda: o que um inseto deixa, o outro come.",
+  "hookRef": "Joel 1:4",
+  "hookNote": "O juízo chega como colheita que some de mão em mão, até não restar.",
+  "centralInsight": "O juízo pode chegar como perda",
+  "objective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa."
+ },
+ "v2": {
+  "passageRef": "Joel 1:4",
+  "context": "Gafanhoto, brugo e hasil comem em sequência o que o anterior deixou.",
+  "keyword": "Perda",
+  "verseRefs": [
+   "Joel 1:4"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Joel 1:1–7"
+ ],
+ "verses": [
+  {
+   "ref": "Joel 1:1",
+   "text": "A palavra do Senhor que foi dirigida a Joel, filho de Petuel."
+  },
+  {
+   "ref": "Joel 1:2",
+   "text": "Ouçam isto, anciãos, e escutem, todos os habitantes da terra: Aconteceu isso em seus dias? Ou também nos dias de seus pais?"
+  },
+  {
+   "ref": "Joel 1:3",
+   "text": "Contem isso a seus filhos, e que seus filhos o relatem a seus filhos, e que estes também o transmitam à próxima geração."
+  },
+  {
+   "ref": "Joel 1:4",
+   "text": "O que a lagarta deixou, comeu o gafanhoto; o que o gafanhoto deixou, comeu o gafanhoto migrador; e o que o gafanhoto migrador deixou, comeu o gafanhoto devorador; o que o gafanhoto devorador deixou, comeu o gafanhoto destruidor."
+  },
+  {
+   "ref": "Joel 1:5",
+   "text": "Despertai, bêbados, e chorai; uivai, todos vós que bebeis vinho novo, pois foi retirado da vossa boca."
+  },
+  {
+   "ref": "Joel 1:6",
+   "text": "Porque uma nação veio contra a minha terra, poderosa e inumerável; seus dentes são como os dentes de leão, e têm queixais de uma leoa."
+  },
+  {
+   "ref": "Joel 1:7",
+   "text": "Destruiu minha videira e secou minha figueira; dela arrancou a casca e a lançou ao chão; seus ramos estão se tornando brancos."
+  }
+ ]
+}
+</cena>

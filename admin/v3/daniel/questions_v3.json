@@ -1,0 +1,4060 @@
+[
+  {
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Daniel 1:8, Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei.",
+    "prompt": "Em Daniel 1:8, Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei.",
+    "cue": "Em Daniel 1:8, Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei.",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Daniel decidiu firmemente em seu coração",
+    "feedbackCorrect": "A decisão nasce no coração de Daniel, antes de qualquer pedido ao chefe.",
+    "feedbackWrong": {
+      "false": "Releia Daniel 1:8 e veja onde a decisão de Daniel acontece primeiro."
+    },
+    "hint": "Olhe o começo do versículo 8.",
+    "learningObjective": "Observar a decisão de Daniel em Daniel 1:8.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Daniel 1:6, toque o nome do jovem que depois pede para não se contaminar.",
+    "prompt": "Em Daniel 1:6, toque o nome do jovem que depois pede para não se contaminar.",
+    "cue": "Em Daniel 1:6, toque o nome do jovem que depois pede para não se contaminar.",
+    "verseRef": "Daniel 1:6",
+    "passageText": "Entre eles estavam, dos filhos de Judá, Daniel, Hananias, Misael e Azarias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Judá"
+      },
+      {
+        "id": "b",
+        "text": "Daniel"
+      },
+      {
+        "id": "c",
+        "text": "filhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Daniel, Hananias, Misael e Azarias",
+    "feedbackCorrect": "É Daniel quem, no versículo 8, pede para não se contaminar.",
+    "feedbackWrong": {
+      "a": "Judá é a origem dos jovens, não o nome de um deles.",
+      "c": "O texto chama os quatro de filhos de Judá; o nome pedido é de um deles."
+    },
+    "hint": "É o primeiro nome da lista do versículo.",
+    "learningObjective": "Identificar Daniel entre os jovens de Judá.",
+    "evidence": [
+      "Daniel 1:6"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Daniel 1:5, por quanto tempo os jovens seriam mantidos antes de servir diante do rei?",
+    "prompt": "Segundo Daniel 1:5, por quanto tempo os jovens seriam mantidos antes de servir diante do rei?",
+    "cue": "Segundo Daniel 1:5, por quanto tempo os jovens seriam mantidos antes de servir diante do rei?",
+    "verseRef": "Daniel 1:5",
+    "passageText": "E o rei determinou que eles recebessem a ração diária das finas iguarias da mesa real e do vinho que ele bebia, e que assim fossem mantidos por três anos, ao cabo dos quais serviriam diante do rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por seis meses"
+      },
+      {
+        "id": "b",
+        "text": "Por três anos"
+      },
+      {
+        "id": "c",
+        "text": "Por sete anos"
+      },
+      {
+        "id": "d",
+        "text": "Por um ano"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fossem mantidos por três anos",
+    "feedbackCorrect": "O prazo definido pelo rei é de três anos de preparo.",
+    "feedbackWrong": {
+      "a": "O rei define anos de preparo, não meses.",
+      "c": "Sete anos não aparecem neste trecho; o prazo é outro.",
+      "d": "O texto não fala de um ano; leia o fim do versículo 5."
+    },
+    "hint": "Leia o fim do versículo 5.",
+    "learningObjective": "Observar o prazo de formação definido pelo rei.",
+    "evidence": [
+      "Daniel 1:5"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Daniel 1:8 na ordem do texto.",
+    "prompt": "Monte Daniel 1:8 na ordem do texto.",
+    "cue": "Monte Daniel 1:8 na ordem do texto.",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Daniel decidiu firmemente em seu coração"
+      },
+      {
+        "id": "b",
+        "text": "não se contaminar com as finas iguarias do rei"
+      },
+      {
+        "id": "c",
+        "text": "nem com o vinho que ele bebia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não se contaminar com as finas iguarias do rei",
+    "feedbackCorrect": "A decisão vem primeiro, depois aquilo que Daniel recusa: comida e vinho do rei.",
+    "feedbackWrong": {
+      "default": "Comece pela decisão no coração; comida e vinho vêm depois."
+    },
+    "hint": "O versículo começa pela decisão.",
+    "learningObjective": "Reconhecer a sequência de Daniel 1:8.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Daniel 1:9, o que Deus concedeu a Daniel diante do chefe, junto com entendimento?",
+    "prompt": "Em Daniel 1:9, o que Deus concedeu a Daniel diante do chefe, junto com entendimento?",
+    "cue": "Em Daniel 1:9, o que Deus concedeu a Daniel diante do chefe, junto com entendimento?",
+    "verseRef": "Daniel 1:9",
+    "passageText": "E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "template": "E Deus concedeu a Daniel ___ e entendimento diante do chefe dos eunucos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "liberdade"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus concedeu a Daniel misericórdia e entendimento",
+    "feedbackCorrect": "O favor de Daniel diante do chefe é presente de Deus, não conquista dele.",
+    "feedbackWrong": {
+      "a": "Daniel continua no palácio; o que ele recebe é favor diante do chefe.",
+      "c": "O texto não fala de bens; fala do favor de Deus diante do chefe."
+    },
+    "hint": "Leia o começo do versículo 9.",
+    "learningObjective": "Lembrar o que Deus concedeu a Daniel.",
+    "evidence": [
+      "Daniel 1:9"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "passageA": {
+      "ref": "Daniel 1:8",
+      "text": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel decide ser fiel a Deus mesmo longe de casa, no palácio do rei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade decidida no coração"
+      },
+      {
+        "id": "b",
+        "text": "Obediência por medo do rei"
+      },
+      {
+        "id": "c",
+        "text": "Recusa por gosto pessoal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "decidiu firmemente em seu coração",
+    "feedbackCorrect": "A fidelidade de Daniel é decidida por dentro, antes de virar atitude.",
+    "feedbackWrong": {
+      "b": "Daniel não age por medo do rei; ele decide diante de Deus.",
+      "c": "O texto fala de não se contaminar, não de gosto pessoal."
+    },
+    "hint": "Veja onde a decisão acontece no versículo.",
+    "learningObjective": "Ligar Daniel 1:8 à decisão interior de fidelidade.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Daniel 1:8, Daniel pediu para não se contaminar porque o chefe dos eunucos lhe ordenou isso.",
+    "prompt": "Em Daniel 1:8, Daniel pediu para não se contaminar porque o chefe dos eunucos lhe ordenou isso.",
+    "cue": "Em Daniel 1:8, Daniel pediu para não se contaminar porque o chefe dos eunucos lhe ordenou isso.",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "por isso, pediu ao chefe dos eunucos",
+    "feedbackCorrect": "O pedido nasce da decisão de Daniel; o chefe apenas recebe o pedido.",
+    "feedbackWrong": {
+      "true": "Releia a ordem do versículo: primeiro Daniel decide, depois ele pede."
+    },
+    "hint": "Veja quem decide antes do pedido.",
+    "learningObjective": "Compreender a causa do pedido de Daniel.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Daniel 1:8, toque a expressão que liga a decisão de Daniel ao pedido que ele faz.",
+    "prompt": "Em Daniel 1:8, toque a expressão que liga a decisão de Daniel ao pedido que ele faz.",
+    "cue": "Em Daniel 1:8, toque a expressão que liga a decisão de Daniel ao pedido que ele faz.",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em seu coração"
+      },
+      {
+        "id": "b",
+        "text": "do rei"
+      },
+      {
+        "id": "c",
+        "text": "por isso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por isso, pediu ao chefe dos eunucos",
+    "feedbackCorrect": "A decisão no coração leva ao pedido: uma coisa vem da outra.",
+    "feedbackWrong": {
+      "a": "Isso mostra onde Daniel decide, não o que liga decisão e pedido.",
+      "b": "Isso indica de quem é a comida, não a ligação entre decisão e pedido."
+    },
+    "hint": "Procure as palavras logo antes do pedido.",
+    "learningObjective": "Reconhecer a ligação entre decisão e pedido.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Daniel 1:9 ajuda a entender a abertura do chefe para ouvir Daniel?",
+    "prompt": "Como Daniel 1:9 ajuda a entender a abertura do chefe para ouvir Daniel?",
+    "cue": "Como Daniel 1:9 ajuda a entender a abertura do chefe para ouvir Daniel?",
+    "verseRef": "Daniel 1:9",
+    "passageText": "E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O chefe deixa de temer qualquer reação do rei"
+      },
+      {
+        "id": "b",
+        "text": "Os outros jovens convencem o chefe antes"
+      },
+      {
+        "id": "c",
+        "text": "Daniel promete comer escondido no futuro"
+      },
+      {
+        "id": "d",
+        "text": "Deus concede favor a Daniel diante dele"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Deus concedeu a Daniel misericórdia e entendimento",
+    "feedbackCorrect": "Antes da conversa avançar, o texto mostra Deus agindo a favor de Daniel.",
+    "feedbackWrong": {
+      "a": "Em 1:10 o chefe ainda teme o rei; o favor vem de Deus.",
+      "b": "Quem fala com o chefe é Daniel, não os outros jovens.",
+      "c": "Daniel não negocia escondido; ele pede permissão abertamente."
+    },
+    "hint": "Veja quem age no versículo 9.",
+    "learningObjective": "Relacionar o favor de Deus com a conversa de Daniel.",
+    "evidence": [
+      "Daniel 1:9"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Daniel 1:8–9?",
+    "prompt": "Como avança a cena em Daniel 1:8–9?",
+    "cue": "Como avança a cena em Daniel 1:8–9?",
+    "verseRef": "Daniel 1:8–9",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar. E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel decide no coração"
+      },
+      {
+        "id": "b",
+        "text": "Daniel pede ao chefe"
+      },
+      {
+        "id": "c",
+        "text": "Deus concede favor a Daniel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus concedeu a Daniel misericórdia e entendimento",
+    "feedbackCorrect": "Decisão, pedido e favor de Deus: a cena anda nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pela decisão de Daniel; o favor de Deus é citado em seguida."
+    },
+    "hint": "O versículo 9 vem depois do pedido.",
+    "learningObjective": "Compreender o movimento de Daniel 1:8–9.",
+    "evidence": [
+      "Daniel 1:8–9"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Daniel 1:10, o que o chefe dos eunucos diz sentir em relação ao rei?",
+    "prompt": "Em Daniel 1:10, o que o chefe dos eunucos diz sentir em relação ao rei?",
+    "cue": "Em Daniel 1:10, o que o chefe dos eunucos diz sentir em relação ao rei?",
+    "verseRef": "Daniel 1:10",
+    "passageText": "O chefe dos eunucos disse a Daniel: Tenho medo do meu senhor, o rei, que determinou a vossa comida e a vossa bebida; pois, se ele vir o vosso rosto mais abatido do que o dos outros jovens da vossa idade, arriscarei a minha vida por causa do rei.",
+    "template": "O chefe dos eunucos disse a Daniel: Tenho ___ do meu senhor, o rei, que determinou a vossa comida e a vossa bebida; pois, se ele vir o vosso rosto mais abatido do que o dos outros jovens da vossa idade, arriscarei a minha vida por causa do rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "orgulho"
+      },
+      {
+        "id": "b",
+        "text": "pressa"
+      },
+      {
+        "id": "c",
+        "text": "medo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tenho medo do meu senhor, o rei",
+    "feedbackCorrect": "O chefe teme o rei, que definiu a comida e pode puni-lo.",
+    "feedbackWrong": {
+      "a": "O chefe não se gaba; ele teme arriscar a própria vida.",
+      "b": "Ele não fala de urgência, e sim do risco diante do rei."
+    },
+    "hint": "Leia a primeira fala do chefe.",
+    "learningObjective": "Compreender o temor do chefe diante do rei.",
+    "evidence": [
+      "Daniel 1:10"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Daniel 1:9 a Provérbios 16:7?",
+    "prompt": "O que liga Daniel 1:9 a Provérbios 16:7?",
+    "cue": "O que liga Daniel 1:9 a Provérbios 16:7?",
+    "verseRef": "Daniel 1:9",
+    "passageText": "E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "passageA": {
+      "ref": "Daniel 1:9",
+      "text": "E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos."
+    },
+    "passageB": {
+      "ref": "Provérbios 16:7",
+      "text": "Quando os caminhos do homem agradam ao Senhor, até mesmo seus inimigos Ele reconcilia com ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel dispensa a ajuda de Deus"
+      },
+      {
+        "id": "b",
+        "text": "O favor depende só de simpatia"
+      },
+      {
+        "id": "c",
+        "text": "Deus concede favor diante de pessoas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus concedeu a Daniel misericórdia e entendimento",
+    "feedbackCorrect": "Nos dois textos, é Deus quem muda o coração de quem está diante do fiel.",
+    "feedbackWrong": {
+      "a": "Daniel recebe justamente aquilo que vem de Deus.",
+      "b": "O texto atribui o favor a Deus, não a uma simpatia natural."
+    },
+    "hint": "Veja quem concede algo em Daniel 1:9.",
+    "learningObjective": "Relacionar o favor de Daniel à ação de Deus.",
+    "evidence": [
+      "Daniel 1:9",
+      "Provérbios 16:7"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Daniel 1:8–9 mostra a fidelidade de Daniel começando numa decisão interior antes de qualquer resultado visível.",
+    "prompt": "Daniel 1:8–9 mostra a fidelidade de Daniel começando numa decisão interior antes de qualquer resultado visível.",
+    "cue": "Daniel 1:8–9 mostra a fidelidade de Daniel começando numa decisão interior antes de qualquer resultado visível.",
+    "verseRef": "Daniel 1:8–9",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar. E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Daniel decidiu firmemente em seu coração",
+    "feedbackCorrect": "Antes de favor ou resposta, há uma decisão tomada no coração.",
+    "feedbackWrong": {
+      "false": "A ordem do texto é decisão no coração, pedido e favor de Deus."
+    },
+    "hint": "Siga a ordem dos versículos 8 e 9.",
+    "learningObjective": "Interpretar a fidelidade como decisão interior.",
+    "evidence": [
+      "Daniel 1:8–9"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Daniel 1:9, toque o trecho que mostra a ação de Deus a favor de Daniel.",
+    "prompt": "Em Daniel 1:9, toque o trecho que mostra a ação de Deus a favor de Daniel.",
+    "cue": "Em Daniel 1:9, toque o trecho que mostra a ação de Deus a favor de Daniel.",
+    "verseRef": "Daniel 1:9",
+    "passageText": "E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chefe dos eunucos"
+      },
+      {
+        "id": "b",
+        "text": "Deus concedeu"
+      },
+      {
+        "id": "c",
+        "text": "diante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus concedeu a Daniel misericórdia e entendimento",
+    "feedbackCorrect": "Quem concede o favor é Deus; o chefe é quem está diante de Daniel.",
+    "feedbackWrong": {
+      "a": "O chefe recebe Daniel; quem concede o favor é outro.",
+      "c": "Essa palavra só indica posição, não uma ação de Deus."
+    },
+    "hint": "Procure quem faz algo por Daniel.",
+    "learningObjective": "Sustentar com o texto a ação de Deus por Daniel.",
+    "evidence": [
+      "Daniel 1:9"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Daniel 1:8 sustenta sobre a fidelidade de Daniel?",
+    "prompt": "Que leitura Daniel 1:8 sustenta sobre a fidelidade de Daniel?",
+    "cue": "Que leitura Daniel 1:8 sustenta sobre a fidelidade de Daniel?",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nasce de decisão firme, não de improviso"
+      },
+      {
+        "id": "b",
+        "text": "Nasce de nojo pela comida estrangeira"
+      },
+      {
+        "id": "c",
+        "text": "Depende de o chefe ser simpático"
+      },
+      {
+        "id": "d",
+        "text": "Exige abandonar o palácio e fugir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "decidiu firmemente em seu coração",
+    "feedbackCorrect": "Daniel decide antes de agir: a fidelidade dele tem raiz no coração.",
+    "feedbackWrong": {
+      "b": "O motivo dado é não se contaminar, não desgosto pela comida.",
+      "c": "O favor do chefe vem depois, e o texto o atribui a Deus.",
+      "d": "Daniel permanece no palácio; ele pede, não foge."
+    },
+    "hint": "Volte à primeira parte do versículo 8.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre Daniel.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Daniel 1:8–9?",
+    "prompt": "Qual sequência revela o sentido de Daniel 1:8–9?",
+    "cue": "Qual sequência revela o sentido de Daniel 1:8–9?",
+    "verseRef": "Daniel 1:8–9",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar. E Deus concedeu a Daniel misericórdia e entendimento diante do chefe dos eunucos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A decisão é tomada no coração"
+      },
+      {
+        "id": "b",
+        "text": "O pedido é feito com respeito"
+      },
+      {
+        "id": "c",
+        "text": "O favor vem de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "decidiu firmemente em seu coração",
+    "feedbackCorrect": "Coração, pedido e favor de Deus: assim o texto apresenta a fidelidade.",
+    "feedbackWrong": {
+      "default": "Comece pelo coração de Daniel e termine no que Deus concede."
+    },
+    "hint": "O favor de Deus fecha a sequência.",
+    "learningObjective": "Ver o encadeamento entre decisão, pedido e favor.",
+    "evidence": [
+      "Daniel 1:8–9"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Daniel 1:8, onde Daniel toma a decisão de não se contaminar?",
+    "prompt": "Em Daniel 1:8, onde Daniel toma a decisão de não se contaminar?",
+    "cue": "Em Daniel 1:8, onde Daniel toma a decisão de não se contaminar?",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "template": "E Daniel decidiu firmemente em seu ___ não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palácio"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "exílio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "decidiu firmemente em seu coração",
+    "feedbackCorrect": "A decisão é interior: nasce no coração antes de virar palavras.",
+    "feedbackWrong": {
+      "a": "O palácio é onde Daniel está, não onde a decisão é localizada.",
+      "c": "O exílio é o cenário, não o lugar onde o texto põe a decisão."
+    },
+    "hint": "Leia onde a decisão é localizada no versículo.",
+    "learningObjective": "Lembrar o termo que mostra a decisão interior.",
+    "evidence": [
+      "Daniel 1:8"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Daniel 1:8 a Romanos 12:2?",
+    "prompt": "O que liga Daniel 1:8 a Romanos 12:2?",
+    "cue": "O que liga Daniel 1:8 a Romanos 12:2?",
+    "verseRef": "Daniel 1:8",
+    "passageText": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar.",
+    "passageA": {
+      "ref": "Daniel 1:8",
+      "text": "E Daniel decidiu firmemente em seu coração não se contaminar com as finas iguarias do rei nem com o vinho que ele bebia; por isso, pediu ao chefe dos eunucos que lhe permitisse não se contaminar."
+    },
+    "passageB": {
+      "ref": "Romanos 12:2",
+      "text": "E não se conformem com este mundo, mas transformem-se pela renovação da sua mente, para que possam experimentar qual é a boa, agradável e perfeita vontade de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fugir de toda autoridade humana"
+      },
+      {
+        "id": "b",
+        "text": "Não se conformar com o mundo"
+      },
+      {
+        "id": "c",
+        "text": "Buscar aprovação do palácio real"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não se contaminar com as finas iguarias do rei",
+    "feedbackCorrect": "Daniel e Paulo apontam o mesmo caminho: não tomar a forma do ambiente.",
+    "feedbackWrong": {
+      "a": "Daniel respeita o chefe e pede; ele não foge da autoridade.",
+      "c": "Daniel não busca aprovação; ele decide não se contaminar."
+    },
+    "hint": "Compare a atitude de Daniel com o conselho de Paulo.",
+    "learningObjective": "Ligar a decisão de Daniel ao ensino de Paulo.",
+    "evidence": [
+      "Daniel 1:8",
+      "Romanos 12:2"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Daniel 3:17, os jovens afirmam que Deus pode livrá-los da fornalha de fogo ardente.",
+    "prompt": "Em Daniel 3:17, os jovens afirmam que Deus pode livrá-los da fornalha de fogo ardente.",
+    "cue": "Em Daniel 3:17, os jovens afirmam que Deus pode livrá-los da fornalha de fogo ardente.",
+    "verseRef": "Daniel 3:17",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ele certamente nos livrará da fornalha de fogo ardente",
+    "feedbackCorrect": "Eles declaram ao rei a confiança de que Deus pode e vai livrá-los.",
+    "feedbackWrong": {
+      "false": "Releia Daniel 3:17 e veja o que eles dizem sobre o livramento."
+    },
+    "hint": "Olhe a segunda parte do versículo 17.",
+    "learningObjective": "Observar a confiança declarada pelos três jovens.",
+    "evidence": [
+      "Daniel 3:17"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Daniel 3:17, toque quem os jovens dizem que pode livrá-los.",
+    "prompt": "Em Daniel 3:17, toque quem os jovens dizem que pode livrá-los.",
+    "cue": "Em Daniel 3:17, toque quem os jovens dizem que pode livrá-los.",
+    "verseRef": "Daniel 3:17",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ó rei"
+      },
+      {
+        "id": "b",
+        "text": "sua mão"
+      },
+      {
+        "id": "c",
+        "text": "nosso Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Se o nosso Deus, a quem servimos, pode nos livrar",
+    "feedbackCorrect": "A confiança deles está no Deus a quem eles servem.",
+    "feedbackWrong": {
+      "a": "O rei é quem ouve a resposta, não quem pode livrar.",
+      "b": "A mão citada é a do rei, de quem Deus os livraria."
+    },
+    "hint": "Procure quem eles servem.",
+    "learningObjective": "Identificar em quem os jovens confiam.",
+    "evidence": [
+      "Daniel 3:17"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Daniel 3:18, o que os jovens se recusam a fazer mesmo sem garantia de livramento?",
+    "prompt": "Segundo Daniel 3:18, o que os jovens se recusam a fazer mesmo sem garantia de livramento?",
+    "cue": "Segundo Daniel 3:18, o que os jovens se recusam a fazer mesmo sem garantia de livramento?",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adorar a imagem de ouro"
+      },
+      {
+        "id": "b",
+        "text": "Pedir ajuda aos outros jovens"
+      },
+      {
+        "id": "c",
+        "text": "Deixar o serviço real e fugir"
+      },
+      {
+        "id": "d",
+        "text": "Falar novamente com o rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nem adoraremos a imagem de ouro que levantaste",
+    "feedbackCorrect": "A recusa é clara: a imagem de ouro não será adorada por eles.",
+    "feedbackWrong": {
+      "b": "Nenhum pedido de ajuda aparece na fala deles.",
+      "c": "Eles não anunciam fuga; permanecem diante do rei e respondem.",
+      "d": "É justamente falando ao rei que eles declaram a recusa."
+    },
+    "hint": "Leia o fim do versículo 18.",
+    "learningObjective": "Observar a recusa dos jovens diante da imagem.",
+    "evidence": [
+      "Daniel 3:18"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Daniel 3:17 na ordem do texto.",
+    "prompt": "Monte Daniel 3:17 na ordem do texto.",
+    "cue": "Monte Daniel 3:17 na ordem do texto.",
+    "verseRef": "Daniel 3:17",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se o nosso Deus"
+      },
+      {
+        "id": "b",
+        "text": "a quem servimos"
+      },
+      {
+        "id": "c",
+        "text": "pode nos livrar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se o nosso Deus, a quem servimos, pode nos livrar",
+    "feedbackCorrect": "A frase apresenta Deus, a relação com ele e o livramento que ele pode dar.",
+    "feedbackWrong": {
+      "default": "Comece por quem Deus é para eles; o livramento vem depois."
+    },
+    "hint": "O versículo começa pelo Deus deles.",
+    "learningObjective": "Reconhecer a sequência de Daniel 3:17.",
+    "evidence": [
+      "Daniel 3:17"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Daniel 3:18, a quem os jovens afirmam que não servirão?",
+    "prompt": "Em Daniel 3:18, a quem os jovens afirmam que não servirão?",
+    "cue": "Em Daniel 3:18, a quem os jovens afirmam que não servirão?",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "template": "E, se não for assim, saiba, ó rei, que não serviremos a teus ___, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "deuses"
+      },
+      {
+        "id": "b",
+        "text": "profetas"
+      },
+      {
+        "id": "c",
+        "text": "guardas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não serviremos a teus deuses",
+    "feedbackCorrect": "Eles servem a Deus, e por isso não servem aos deuses do rei.",
+    "feedbackWrong": {
+      "b": "Profetas não aparecem na fala; a disputa é sobre quem eles servem.",
+      "c": "Guardas não são citados; a recusa é sobre adoração."
+    },
+    "hint": "Veja o que vem depois de não serviremos.",
+    "learningObjective": "Lembrar a quem os jovens não servirão.",
+    "evidence": [
+      "Daniel 3:18"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Daniel 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 3:18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 3:18 comunica que se liga a este contexto?",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 3:18",
+      "text": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os jovens são ameaçados por se recusarem a adorar a imagem levantada pelo rei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Busca por favor do rei"
+      },
+      {
+        "id": "b",
+        "text": "Recusa de adorar outro deus"
+      },
+      {
+        "id": "c",
+        "text": "Medo de perder o cargo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nem adoraremos a imagem de ouro que levantaste",
+    "feedbackCorrect": "A imagem levantada pelo rei não recebe a adoração dos três.",
+    "feedbackWrong": {
+      "a": "Eles não buscam agradar o rei; respondem com uma recusa.",
+      "c": "A fala deles não é cálculo de cargo, e sim fidelidade a Deus."
+    },
+    "hint": "Veja o que eles negam à imagem.",
+    "learningObjective": "Ligar Daniel 3:18 à recusa da idolatria.",
+    "evidence": [
+      "Daniel 3:18"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Daniel 3:17–18, os jovens só aceitam obedecer a Deus se ele garantir o livramento da fornalha.",
+    "prompt": "Em Daniel 3:17–18, os jovens só aceitam obedecer a Deus se ele garantir o livramento da fornalha.",
+    "cue": "Em Daniel 3:17–18, os jovens só aceitam obedecer a Deus se ele garantir o livramento da fornalha.",
+    "verseRef": "Daniel 3:17–18",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei. E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E, se não for assim",
+    "feedbackCorrect": "Mesmo na hipótese de não serem livrados, a decisão deles não muda.",
+    "feedbackWrong": {
+      "true": "Leia o começo de 3:18: a decisão continua mesmo sem livramento."
+    },
+    "hint": "Compare os dois versículos.",
+    "learningObjective": "Compreender que a obediência não é condicional.",
+    "evidence": [
+      "Daniel 3:17–18"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Daniel 3:18, toque a expressão que abre a possibilidade de Deus não os livrar.",
+    "prompt": "Em Daniel 3:18, toque a expressão que abre a possibilidade de Deus não os livrar.",
+    "cue": "Em Daniel 3:18, toque a expressão que abre a possibilidade de Deus não os livrar.",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não for assim"
+      },
+      {
+        "id": "b",
+        "text": "teus deuses"
+      },
+      {
+        "id": "c",
+        "text": "imagem de ouro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E, se não for assim, saiba, ó rei",
+    "feedbackCorrect": "Eles consideram esse caso e, ainda assim, mantêm a recusa.",
+    "feedbackWrong": {
+      "b": "Isso nomeia quem não será servido, não a hipótese aberta.",
+      "c": "Isso nomeia o que não será adorado, não a hipótese aberta."
+    },
+    "hint": "Procure logo no começo do versículo.",
+    "learningObjective": "Reconhecer a hipótese considerada pelos jovens.",
+    "evidence": [
+      "Daniel 3:18"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a segunda parte da fala em Daniel 3:18 completa a primeira, em Daniel 3:17?",
+    "prompt": "Como a segunda parte da fala em Daniel 3:18 completa a primeira, em Daniel 3:17?",
+    "cue": "Como a segunda parte da fala em Daniel 3:18 completa a primeira, em Daniel 3:17?",
+    "verseRef": "Daniel 3:17–18",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei. E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eles aceitam adorar se o rei insistir mais"
+      },
+      {
+        "id": "b",
+        "text": "Eles pedem mais tempo para decidir juntos"
+      },
+      {
+        "id": "c",
+        "text": "Eles obedecem mesmo sem garantia de livramento"
+      },
+      {
+        "id": "d",
+        "text": "Eles retiram a confiança que tinham em Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses",
+    "feedbackCorrect": "A confiança do v. 17 não vira condição: sem garantia, eles obedecem.",
+    "feedbackWrong": {
+      "a": "A resposta é o contrário: a imagem não será adorada.",
+      "b": "A decisão já está tomada quando eles falam ao rei.",
+      "d": "A confiança permanece; o que muda é só o cenário pensado."
+    },
+    "hint": "Veja o que continua igual nos dois casos.",
+    "learningObjective": "Relacionar confiança e obediência em Daniel 3.",
+    "evidence": [
+      "Daniel 3:17–18"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a resposta dos jovens em Daniel 3:17–18?",
+    "prompt": "Como se encadeia a resposta dos jovens em Daniel 3:17–18?",
+    "cue": "Como se encadeia a resposta dos jovens em Daniel 3:17–18?",
+    "verseRef": "Daniel 3:17–18",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei. E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pode livrar da fornalha"
+      },
+      {
+        "id": "b",
+        "text": "Mesmo sem livramento, decisão mantida"
+      },
+      {
+        "id": "c",
+        "text": "Nenhum outro deus será adorado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nem adoraremos a imagem de ouro que levantaste",
+    "feedbackCorrect": "Primeiro a confiança em Deus, depois a decisão para qualquer resultado.",
+    "feedbackWrong": {
+      "default": "A confiança em Deus vem em 3:17; a recusa fecha a fala."
+    },
+    "hint": "A recusa é o ponto de chegada.",
+    "learningObjective": "Compreender o encadeamento da resposta ao rei.",
+    "evidence": [
+      "Daniel 3:17–18"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Daniel 3:17, o que os jovens creem que Deus certamente fará por eles?",
+    "prompt": "Em Daniel 3:17, o que os jovens creem que Deus certamente fará por eles?",
+    "cue": "Em Daniel 3:17, o que os jovens creem que Deus certamente fará por eles?",
+    "verseRef": "Daniel 3:17",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei.",
+    "template": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos ___ da fornalha de fogo ardente e da sua mão, ó rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "abandonará"
+      },
+      {
+        "id": "b",
+        "text": "livrará"
+      },
+      {
+        "id": "c",
+        "text": "silenciará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele certamente nos livrará da fornalha de fogo ardente",
+    "feedbackCorrect": "Eles declaram que Deus os livrará da fornalha e da mão do rei.",
+    "feedbackWrong": {
+      "a": "A confiança deles é justamente o contrário de abandono.",
+      "c": "Deus não é apresentado em silêncio, e sim como quem livra."
+    },
+    "hint": "Leia o verbo central do versículo 17.",
+    "learningObjective": "Compreender a confiança declarada em Daniel 3:17.",
+    "evidence": [
+      "Daniel 3:17"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Daniel 3:18 a Êxodo 20:5?",
+    "prompt": "O que liga Daniel 3:18 a Êxodo 20:5?",
+    "cue": "O que liga Daniel 3:18 a Êxodo 20:5?",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 3:18",
+      "text": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste."
+    },
+    "passageB": {
+      "ref": "Êxodo 20:5",
+      "text": "Não te prostrarás diante delas nem as adorarás, pois eu, o Senhor, teu Deus, sou um Deus zeloso, que visita a iniquidade dos pais sobre os filhos até a terceira e quarta geração daqueles que me aborrecem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Servir a todos os deuses"
+      },
+      {
+        "id": "b",
+        "text": "Não adorar outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "Adorar para evitar punição"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não serviremos a teus deuses",
+    "feedbackCorrect": "O mandamento e a resposta dos jovens guardam a mesma recusa.",
+    "feedbackWrong": {
+      "a": "Eles declaram que não servirão aos deuses do rei.",
+      "c": "Os jovens recusam justamente a adoração exigida pela ameaça."
+    },
+    "hint": "Compare quem não deve ser adorado nos dois textos.",
+    "learningObjective": "Relacionar a recusa dos jovens ao primeiro mandamento.",
+    "evidence": [
+      "Daniel 3:18",
+      "Êxodo 20:5"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Daniel 3:17–18 ensina que Deus sempre livrará do sofrimento toda pessoa fiel a ele.",
+    "prompt": "Daniel 3:17–18 ensina que Deus sempre livrará do sofrimento toda pessoa fiel a ele.",
+    "cue": "Daniel 3:17–18 ensina que Deus sempre livrará do sofrimento toda pessoa fiel a ele.",
+    "verseRef": "Daniel 3:17–18",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei. E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E, se não for assim, saiba, ó rei",
+    "feedbackCorrect": "Os próprios jovens admitem o caso de não serem livrados e seguem fiéis.",
+    "feedbackWrong": {
+      "true": "Em 3:18 eles mantêm a fé mesmo considerando não haver livramento."
+    },
+    "hint": "Ouça a hipótese que os próprios jovens fazem.",
+    "learningObjective": "Interpretar a fidelidade sem promessa automática.",
+    "evidence": [
+      "Daniel 3:17–18"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Daniel 3:17, toque o trecho que sustenta a confiança dos jovens em Deus.",
+    "prompt": "Em Daniel 3:17, toque o trecho que sustenta a confiança dos jovens em Deus.",
+    "cue": "Em Daniel 3:17, toque o trecho que sustenta a confiança dos jovens em Deus.",
+    "verseRef": "Daniel 3:17",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ó rei"
+      },
+      {
+        "id": "b",
+        "text": "pode nos livrar"
+      },
+      {
+        "id": "c",
+        "text": "sua mão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pode nos livrar",
+    "feedbackCorrect": "A confiança se apoia no que Deus pode fazer, não no que o rei fará.",
+    "feedbackWrong": {
+      "a": "O rei é o destinatário da fala, não o fundamento da confiança.",
+      "c": "A mão do rei é a ameaça, não o fundamento da confiança."
+    },
+    "hint": "Procure a capacidade de Deus no versículo.",
+    "learningObjective": "Sustentar com o texto a base da confiança.",
+    "evidence": [
+      "Daniel 3:17"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Daniel 3:17–18 sustenta sobre a fidelidade dos jovens?",
+    "prompt": "Que leitura Daniel 3:17–18 sustenta sobre a fidelidade dos jovens?",
+    "cue": "Que leitura Daniel 3:17–18 sustenta sobre a fidelidade dos jovens?",
+    "verseRef": "Daniel 3:17–18",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei. E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade comprada por promessa de livramento"
+      },
+      {
+        "id": "b",
+        "text": "Desobediência por orgulho pessoal ferido"
+      },
+      {
+        "id": "c",
+        "text": "Confiança de que o fogo não era real"
+      },
+      {
+        "id": "d",
+        "text": "Fidelidade que não depende do resultado imediato"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "que não serviremos a teus deuses, nem adoraremos a imagem de ouro",
+    "feedbackCorrect": "Com livramento ou sem ele, a adoração continua sendo só de Deus.",
+    "feedbackWrong": {
+      "a": "Eles permanecem fiéis mesmo na hipótese de não haver livramento.",
+      "b": "A fala é sobre adoração a Deus, não sobre orgulho ferido.",
+      "c": "A fornalha é ameaça real; a fé deles não nega o perigo."
+    },
+    "hint": "Veja o que não muda entre 3:17 e 3:18.",
+    "learningObjective": "Escolher a interpretação sustentada por Daniel 3.",
+    "evidence": [
+      "Daniel 3:17–18"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Daniel 3:17–18?",
+    "prompt": "Qual sequência revela o sentido de Daniel 3:17–18?",
+    "cue": "Qual sequência revela o sentido de Daniel 3:17–18?",
+    "verseRef": "Daniel 3:17–18",
+    "passageText": "Se o nosso Deus, a quem servimos, pode nos livrar, ele certamente nos livrará da fornalha de fogo ardente e da sua mão, ó rei. E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é servido pelos jovens"
+      },
+      {
+        "id": "b",
+        "text": "A imagem de ouro é recusada"
+      },
+      {
+        "id": "c",
+        "text": "A fidelidade permanece sem garantia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se o nosso Deus, a quem servimos, pode nos livrar",
+    "feedbackCorrect": "Serviço a Deus, recusa da imagem e fé sem garantia: esse é o fio da fala.",
+    "feedbackWrong": {
+      "default": "Comece pelo Deus a quem servem; a fé sem garantia fecha o sentido."
+    },
+    "hint": "Comece pela relação deles com Deus.",
+    "learningObjective": "Ver a lógica da fidelidade em Daniel 3.",
+    "evidence": [
+      "Daniel 3:17–18"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Daniel 3:18, que verbo mostra o ato que os jovens recusam diante da imagem?",
+    "prompt": "Em Daniel 3:18, que verbo mostra o ato que os jovens recusam diante da imagem?",
+    "cue": "Em Daniel 3:18, que verbo mostra o ato que os jovens recusam diante da imagem?",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "template": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem ___ a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "levantaremos"
+      },
+      {
+        "id": "b",
+        "text": "olharemos"
+      },
+      {
+        "id": "c",
+        "text": "adoraremos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nem adoraremos a imagem de ouro que levantaste",
+    "feedbackCorrect": "Adorar é o ato reservado a Deus; à imagem, eles o negam.",
+    "feedbackWrong": {
+      "a": "Quem levanta a imagem é o rei, não os jovens.",
+      "b": "O texto não fala de olhar, e sim de adorar ou não adorar."
+    },
+    "hint": "É o segundo verbo negado do versículo.",
+    "learningObjective": "Lembrar o termo central da recusa dos jovens.",
+    "evidence": [
+      "Daniel 3:18"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Daniel 3:18 a Atos 5:29?",
+    "prompt": "O que liga Daniel 3:18 a Atos 5:29?",
+    "cue": "O que liga Daniel 3:18 a Atos 5:29?",
+    "verseRef": "Daniel 3:18",
+    "passageText": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 3:18",
+      "text": "E, se não for assim, saiba, ó rei, que não serviremos a teus deuses, nem adoraremos a imagem de ouro que levantaste."
+    },
+    "passageB": {
+      "ref": "Atos 5:29",
+      "text": "Pedro e os apóstolos afirmaram: \"É mais importante obedecer a Deus do que aos homens.\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obedecer ao rei acima de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Evitar qualquer sofrimento por fé"
+      },
+      {
+        "id": "c",
+        "text": "Obedecer a Deus antes de homens"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não serviremos a teus deuses",
+    "feedbackCorrect": "Séculos depois, os apóstolos fazem a mesma escolha diante de autoridades.",
+    "feedbackWrong": {
+      "a": "Os dois textos põem Deus acima da ordem humana contrária.",
+      "b": "Nenhum dos textos promete fugir do sofrimento."
+    },
+    "hint": "Veja a quem cada texto obedece primeiro.",
+    "learningObjective": "Ligar a fidelidade dos jovens à dos apóstolos.",
+    "evidence": [
+      "Daniel 3:18",
+      "Atos 5:29"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Daniel 6:19, o rei foi à cova dos leões logo pela manhã, ao romper do dia.",
+    "prompt": "Em Daniel 6:19, o rei foi à cova dos leões logo pela manhã, ao romper do dia.",
+    "cue": "Em Daniel 6:19, o rei foi à cova dos leões logo pela manhã, ao romper do dia.",
+    "verseRef": "Daniel 6:19",
+    "passageText": "Pela manhã, ao romper do dia, o rei levantou-se e, apressadamente, foi até a cova dos leões.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Pela manhã, ao romper do dia, o rei levantou-se",
+    "feedbackCorrect": "Ao romper do dia, o rei se levanta e corre até a cova dos leões.",
+    "feedbackWrong": {
+      "false": "Releia Daniel 6:19 e veja quando o rei vai até a cova."
+    },
+    "hint": "Veja o horário citado no versículo 19.",
+    "learningObjective": "Observar a ida do rei à cova pela manhã.",
+    "evidence": [
+      "Daniel 6:19"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Daniel 6:22, toque quem Daniel diz que Deus enviou à cova.",
+    "prompt": "Em Daniel 6:22, toque quem Daniel diz que Deus enviou à cova.",
+    "cue": "Em Daniel 6:22, toque quem Daniel diz que Deus enviou à cova.",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dano"
+      },
+      {
+        "id": "b",
+        "text": "seu anjo"
+      },
+      {
+        "id": "c",
+        "text": "boca dos leões"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Meu Deus enviou o seu anjo",
+    "feedbackCorrect": "Deus enviou seu anjo, e os leões não fizeram dano a Daniel.",
+    "feedbackWrong": {
+      "a": "Dano é o que os leões não puderam fazer, não quem foi enviado.",
+      "c": "A boca dos leões foi fechada; quem foi enviado é outro."
+    },
+    "hint": "Procure quem foi enviado por Deus.",
+    "learningObjective": "Identificar quem Deus enviou à cova.",
+    "evidence": [
+      "Daniel 6:22"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Daniel 6:23, por que nenhum dano se achou em Daniel ao sair da cova?",
+    "prompt": "Segundo Daniel 6:23, por que nenhum dano se achou em Daniel ao sair da cova?",
+    "cue": "Segundo Daniel 6:23, por que nenhum dano se achou em Daniel ao sair da cova?",
+    "verseRef": "Daniel 6:23",
+    "passageText": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque tinha fé em seu Deus"
+      },
+      {
+        "id": "b",
+        "text": "Porque a cova estava vazia naquela noite"
+      },
+      {
+        "id": "c",
+        "text": "Porque os leões dormiram a noite toda"
+      },
+      {
+        "id": "d",
+        "text": "Porque o rei desceu antes à cova"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque tinha fé em seu Deus",
+    "feedbackCorrect": "O texto liga a saída sem dano à fé de Daniel em seu Deus.",
+    "feedbackWrong": {
+      "b": "Havia leões: em 6:24 eles atacam os acusadores.",
+      "c": "O texto fala do anjo de Deus, não do sono dos leões.",
+      "d": "O rei manda tirar Daniel, mas não entra na cova."
+    },
+    "hint": "Leia o fim do versículo 23.",
+    "learningObjective": "Observar a fé de Daniel citada no livramento.",
+    "evidence": [
+      "Daniel 6:23"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Daniel 6:22 na ordem do texto.",
+    "prompt": "Monte Daniel 6:22 na ordem do texto.",
+    "cue": "Monte Daniel 6:22 na ordem do texto.",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meu Deus enviou o seu anjo"
+      },
+      {
+        "id": "b",
+        "text": "e fechou a boca dos leões"
+      },
+      {
+        "id": "c",
+        "text": "para que não me fizessem dano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e fechou a boca dos leões",
+    "feedbackCorrect": "Deus envia o anjo, a boca dos leões é fechada e Daniel fica sem dano.",
+    "feedbackWrong": {
+      "default": "Comece pelo envio do anjo; o dano evitado fecha a frase."
+    },
+    "hint": "O versículo começa com o que Deus fez.",
+    "learningObjective": "Reconhecer a sequência de Daniel 6:22.",
+    "evidence": [
+      "Daniel 6:22"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Daniel 6:20, como o rei chama o Deus de Daniel ao falar da cova?",
+    "prompt": "Em Daniel 6:20, como o rei chama o Deus de Daniel ao falar da cova?",
+    "cue": "Em Daniel 6:20, como o rei chama o Deus de Daniel ao falar da cova?",
+    "verseRef": "Daniel 6:20",
+    "passageText": "E, ao se aproximar da cova, o rei chamou Daniel com voz angustiada; e, falando, disse: Daniel, servo do Deus vivo! Será que o teu Deus, a quem tu serves de maneira constante, conseguiu livrar-te dos leões?",
+    "template": "E, ao se aproximar da cova, o rei chamou Daniel com voz angustiada; e, falando, disse: Daniel, servo do Deus ___! Será que o teu Deus, a quem tu serves de maneira constante, conseguiu livrar-te dos leões?",
+    "options": [
+      {
+        "id": "a",
+        "text": "vivo"
+      },
+      {
+        "id": "b",
+        "text": "distante"
+      },
+      {
+        "id": "c",
+        "text": "silencioso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Daniel, servo do Deus vivo",
+    "feedbackCorrect": "Mesmo sem saber o resultado, o rei fala do Deus de Daniel como vivo.",
+    "feedbackWrong": {
+      "b": "O rei não chama Deus de distante; ele corre à cova esperando resposta.",
+      "c": "O silêncio é quebrado pela voz de Daniel, vivo na cova."
+    },
+    "hint": "Leia o título que o rei dá a Deus.",
+    "learningObjective": "Lembrar como o rei chama o Deus de Daniel.",
+    "evidence": [
+      "Daniel 6:20"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "passageA": {
+      "ref": "Daniel 6:22",
+      "text": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel foi lançado na cova dos leões e o rei volta de manhã para saber se ele vive."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus guardou Daniel na cova"
+      },
+      {
+        "id": "b",
+        "text": "Os leões protegeram Daniel sozinhos"
+      },
+      {
+        "id": "c",
+        "text": "O rei lutou na cova"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "fechou a boca dos leões, para que não me fizessem dano",
+    "feedbackCorrect": "Na cova, foi Deus quem guardou Daniel, por meio do seu anjo.",
+    "feedbackWrong": {
+      "b": "Os leões foram impedidos por Deus; não agiram por conta própria.",
+      "c": "O rei fica fora da cova e chama Daniel de cima."
+    },
+    "hint": "Veja quem age a favor de Daniel.",
+    "learningObjective": "Ligar Daniel 6:22 à proteção de Deus.",
+    "evidence": [
+      "Daniel 6:22"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Daniel 6:22, Daniel atribui sua saída sem dano à ação de Deus, e não à força do rei.",
+    "prompt": "Em Daniel 6:22, Daniel atribui sua saída sem dano à ação de Deus, e não à força do rei.",
+    "cue": "Em Daniel 6:22, Daniel atribui sua saída sem dano à ação de Deus, e não à força do rei.",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Meu Deus enviou o seu anjo",
+    "feedbackCorrect": "Daniel credita o livramento a Deus, que enviou o seu anjo.",
+    "feedbackWrong": {
+      "false": "Na fala de Daniel, quem age na cova é Deus, pelo seu anjo."
+    },
+    "hint": "Veja a quem Daniel dá o crédito.",
+    "learningObjective": "Compreender a quem Daniel atribui o livramento.",
+    "evidence": [
+      "Daniel 6:22"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Daniel 6:23, toque a palavra que marca a causa de nenhum dano se achar em Daniel.",
+    "prompt": "Em Daniel 6:23, toque a palavra que marca a causa de nenhum dano se achar em Daniel.",
+    "cue": "Em Daniel 6:23, toque a palavra que marca a causa de nenhum dano se achar em Daniel.",
+    "verseRef": "Daniel 6:23",
+    "passageText": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porque"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "assim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque tinha fé em seu Deus",
+    "feedbackCorrect": "A causa apontada pelo texto é a fé de Daniel em seu Deus.",
+    "feedbackWrong": {
+      "b": "Essa palavra abre o versículo, mas não explica a causa.",
+      "c": "Isso marca a retirada de Daniel, não a causa do livramento."
+    },
+    "hint": "Procure no fim do versículo.",
+    "learningObjective": "Reconhecer o marcador de causa em Daniel 6:23.",
+    "evidence": [
+      "Daniel 6:23"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a resposta de Daniel em Daniel 6:21 se relaciona com a pergunta do rei em Daniel 6:20?",
+    "prompt": "Como a resposta de Daniel em Daniel 6:21 se relaciona com a pergunta do rei em Daniel 6:20?",
+    "cue": "Como a resposta de Daniel em Daniel 6:21 se relaciona com a pergunta do rei em Daniel 6:20?",
+    "verseRef": "Daniel 6:20–21",
+    "passageText": "E, ao se aproximar da cova, o rei chamou Daniel com voz angustiada; e, falando, disse: Daniel, servo do Deus vivo! Será que o teu Deus, a quem tu serves de maneira constante, conseguiu livrar-te dos leões? Então, Daniel falou ao rei: Ó rei, vive eternamente!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra Daniel negando servir a Deus ainda"
+      },
+      {
+        "id": "b",
+        "text": "Mostra Daniel reclamando da noite na cova"
+      },
+      {
+        "id": "c",
+        "text": "Mostra Daniel pedindo vingança ao rei"
+      },
+      {
+        "id": "d",
+        "text": "Mostra Daniel vivo, saudando o rei da cova"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Então, Daniel falou ao rei: Ó rei, vive eternamente",
+    "feedbackCorrect": "À pergunta angustiada, a resposta é uma saudação de alguém vivo.",
+    "feedbackWrong": {
+      "a": "Daniel segue reconhecendo o Deus a quem serve sem cessar.",
+      "b": "Não há reclamação na fala de Daniel ao rei.",
+      "c": "Daniel não pede vingança; ele saúda o rei e explica o livramento."
+    },
+    "hint": "Compare o tom da pergunta com o da resposta.",
+    "learningObjective": "Relacionar a pergunta do rei e a resposta de Daniel.",
+    "evidence": [
+      "Daniel 6:20–21"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia o livramento em Daniel 6:22–23?",
+    "prompt": "Como se encadeia o livramento em Daniel 6:22–23?",
+    "cue": "Como se encadeia o livramento em Daniel 6:22–23?",
+    "verseRef": "Daniel 6:22–23",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum. Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fecha a boca dos leões"
+      },
+      {
+        "id": "b",
+        "text": "O rei manda tirar Daniel"
+      },
+      {
+        "id": "c",
+        "text": "Nenhum dano se acha nele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nenhum dano se achou nele",
+    "feedbackCorrect": "Proteção na cova, ordem do rei e constatação: Daniel está ileso.",
+    "feedbackWrong": {
+      "default": "A proteção de Deus na cova vem antes da retirada de Daniel."
+    },
+    "hint": "A constatação final vem em 6:23.",
+    "learningObjective": "Compreender os passos do livramento de Daniel.",
+    "evidence": [
+      "Daniel 6:22–23"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Daniel 6:23, o que Daniel tinha em seu Deus, segundo o fim do versículo?",
+    "prompt": "Em Daniel 6:23, o que Daniel tinha em seu Deus, segundo o fim do versículo?",
+    "cue": "Em Daniel 6:23, o que Daniel tinha em seu Deus, segundo o fim do versículo?",
+    "verseRef": "Daniel 6:23",
+    "passageText": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "template": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha ___ em seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "dúvida"
+      },
+      {
+        "id": "c",
+        "text": "medo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque tinha fé em seu Deus",
+    "feedbackCorrect": "O texto resume a postura de Daniel numa palavra: fé em seu Deus.",
+    "feedbackWrong": {
+      "b": "A dúvida não aparece; o texto destaca o contrário dela.",
+      "c": "Quem demonstra angústia é o rei, não Daniel."
+    },
+    "hint": "É a última qualidade citada no versículo.",
+    "learningObjective": "Compreender o papel da fé de Daniel.",
+    "evidence": [
+      "Daniel 6:23"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Daniel 6:22 a Salmos 34:7?",
+    "prompt": "O que liga Daniel 6:22 a Salmos 34:7?",
+    "cue": "O que liga Daniel 6:22 a Salmos 34:7?",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "passageA": {
+      "ref": "Daniel 6:22",
+      "text": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum."
+    },
+    "passageB": {
+      "ref": "Salmos 34:7",
+      "text": "O anjo do SENHOR acampa-se ao redor daqueles que o temem e os livra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O fiel dispensa qualquer ajuda"
+      },
+      {
+        "id": "b",
+        "text": "O perigo nunca alcança o fiel"
+      },
+      {
+        "id": "c",
+        "text": "O anjo do Senhor guarda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Meu Deus enviou o seu anjo",
+    "feedbackCorrect": "Nos dois textos, Deus guarda os seus por meio do seu anjo.",
+    "feedbackWrong": {
+      "a": "Daniel é guardado justamente pela ajuda enviada por Deus.",
+      "b": "Daniel entrou na cova; a guarda de Deus foi dentro do perigo."
+    },
+    "hint": "Veja quem Deus envia nos dois textos.",
+    "learningObjective": "Relacionar a guarda do anjo em Daniel e nos Salmos.",
+    "evidence": [
+      "Daniel 6:22",
+      "Salmos 34:7"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-01",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Daniel 6:23 ensina que quem tem fé nunca passará por perigo ou noite difícil.",
+    "prompt": "Daniel 6:23 ensina que quem tem fé nunca passará por perigo ou noite difícil.",
+    "cue": "Daniel 6:23 ensina que quem tem fé nunca passará por perigo ou noite difícil.",
+    "verseRef": "Daniel 6:23",
+    "passageText": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Daniel foi retirado da cova",
+    "feedbackCorrect": "Daniel atravessou a noite na cova; a fé não o poupou do perigo.",
+    "feedbackWrong": {
+      "true": "Daniel só é retirado de manhã: ele passou pela cova, não ao redor dela."
+    },
+    "hint": "Veja de onde Daniel é retirado.",
+    "learningObjective": "Interpretar a fé sem promessa de fuga do perigo.",
+    "evidence": [
+      "Daniel 6:23"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-02",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Daniel 6:22, toque o trecho em que Daniel fala de sua posição diante de Deus.",
+    "prompt": "Em Daniel 6:22, toque o trecho em que Daniel fala de sua posição diante de Deus.",
+    "cue": "Em Daniel 6:22, toque o trecho em que Daniel fala de sua posição diante de Deus.",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dano"
+      },
+      {
+        "id": "b",
+        "text": "ó rei"
+      },
+      {
+        "id": "c",
+        "text": "inocência diante dele"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois em mim foi achada inocência diante dele",
+    "feedbackCorrect": "Daniel se sabe sem culpa diante de Deus, e também diante do rei.",
+    "feedbackWrong": {
+      "a": "Dano é o que os leões não puderam causar a Daniel.",
+      "b": "Isso é a forma de Daniel se dirigir ao rei, não sua posição diante de Deus."
+    },
+    "hint": "Procure como Daniel se descreve diante de Deus.",
+    "learningObjective": "Sustentar com o texto a inocência de Daniel.",
+    "evidence": [
+      "Daniel 6:22"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-03",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Daniel 6:22–23 sustenta sobre a fé de Daniel?",
+    "prompt": "Que leitura Daniel 6:22–23 sustenta sobre a fé de Daniel?",
+    "cue": "Que leitura Daniel 6:22–23 sustenta sobre a fé de Daniel?",
+    "verseRef": "Daniel 6:22–23",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum. Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os leões já estavam sem fome naquela noite"
+      },
+      {
+        "id": "b",
+        "text": "Deus guarda, mas Daniel atravessa a cova"
+      },
+      {
+        "id": "c",
+        "text": "O rei salva Daniel pela própria força"
+      },
+      {
+        "id": "d",
+        "text": "A fé impede qualquer perigo na vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Meu Deus enviou o seu anjo e fechou a boca dos leões",
+    "feedbackCorrect": "A guarda de Deus acontece dentro da cova, não longe dela.",
+    "feedbackWrong": {
+      "a": "Em 6:24 os leões atacam de imediato os acusadores.",
+      "c": "O rei só manda tirar Daniel; o livramento é atribuído a Deus.",
+      "d": "Daniel entrou na cova e passou a noite entre leões."
+    },
+    "hint": "Veja onde a proteção de Deus acontece.",
+    "learningObjective": "Escolher a interpretação sustentada por Daniel 6.",
+    "evidence": [
+      "Daniel 6:22–23"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-04",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da fé que atravessa Daniel 6:20–23?",
+    "prompt": "Qual sequência revela o fio da fé que atravessa Daniel 6:20–23?",
+    "cue": "Qual sequência revela o fio da fé que atravessa Daniel 6:20–23?",
+    "verseRef": "Daniel 6:20",
+    "passageText": "E, ao se aproximar da cova, o rei chamou Daniel com voz angustiada; e, falando, disse: Daniel, servo do Deus vivo! Será que o teu Deus, a quem tu serves de maneira constante, conseguiu livrar-te dos leões?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel serve a Deus constantemente"
+      },
+      {
+        "id": "b",
+        "text": "Deus envia seu anjo na cova"
+      },
+      {
+        "id": "c",
+        "text": "A fé é lembrada ao fechar leões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a quem tu serves de maneira constante",
+    "feedbackCorrect": "Serviço constante, guarda de Deus e memória da fé: o fio segue até Hebreus.",
+    "feedbackWrong": {
+      "default": "Comece pelo serviço constante citado pelo rei em 6:20."
+    },
+    "hint": "Comece pelo que o rei diz do hábito de Daniel.",
+    "learningObjective": "Ver a fé de Daniel como fio lembrado nas Escrituras.",
+    "evidence": [
+      "Daniel 6:20",
+      "Hebreus 11:33"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-05",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Daniel 6:23, o que não se achou em Daniel ao sair da cova?",
+    "prompt": "Em Daniel 6:23, o que não se achou em Daniel ao sair da cova?",
+    "cue": "Em Daniel 6:23, o que não se achou em Daniel ao sair da cova?",
+    "verseRef": "Daniel 6:23",
+    "passageText": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum dano se achou nele, porque tinha fé em seu Deus.",
+    "template": "Então o rei se alegrou sobremaneira e ordenou que tirassem Daniel da cova; assim, Daniel foi retirado da cova, e nenhum ___ se achou nele, porque tinha fé em seu Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "dano"
+      },
+      {
+        "id": "c",
+        "text": "ossos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nenhum dano se achou nele",
+    "feedbackCorrect": "Depois de uma noite entre leões, nenhum dano se achou em Daniel.",
+    "feedbackWrong": {
+      "a": "O texto usa outra palavra para dizer que Daniel saiu ileso.",
+      "c": "Ossos quebrados são o fim dos acusadores em 6:24, não de Daniel."
+    },
+    "hint": "Leia o que foi verificado em Daniel ao sair.",
+    "learningObjective": "Lembrar o termo que resume a proteção de Daniel.",
+    "evidence": [
+      "Daniel 6:23"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-06",
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Daniel 6:22 a Hebreus 11:33?",
+    "prompt": "O que liga Daniel 6:22 a Hebreus 11:33?",
+    "cue": "O que liga Daniel 6:22 a Hebreus 11:33?",
+    "verseRef": "Daniel 6:22",
+    "passageText": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum.",
+    "passageA": {
+      "ref": "Daniel 6:22",
+      "text": "Meu Deus enviou o seu anjo e fechou a boca dos leões, para que não me fizessem dano, pois em mim foi achada inocência diante dele; e também contra ti, ó rei, não cometi delito algum."
+    },
+    "passageB": {
+      "ref": "Hebreus 11:33",
+      "text": "Os quais, pela fé, subjugaram reinos, praticaram a justiça, obtiveram promessas, e fecharam a boca dos leões."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé fecha boca de leões"
+      },
+      {
+        "id": "b",
+        "text": "Força humana vence os leões"
+      },
+      {
+        "id": "c",
+        "text": "Fé garante escapar de tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "fechou a boca dos leões",
+    "feedbackCorrect": "Hebreus relê a história de Daniel como exemplo de fé que Deus honrou.",
+    "feedbackWrong": {
+      "b": "Quem fecha a boca dos leões é Deus, não a força de Daniel.",
+      "c": "Daniel atravessou a cova; Hebreus celebra a fé, não uma fuga geral."
+    },
+    "hint": "Veja o que Hebreus diz que a fé alcançou.",
+    "learningObjective": "Ligar Daniel 6 à memória da fé em Hebreus.",
+    "evidence": [
+      "Daniel 6:22",
+      "Hebreus 11:33"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-01",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Daniel 2:44, o reino levantado pelo Deus do céu será destruído depois de consumir os outros reinos.",
+    "prompt": "Em Daniel 2:44, o reino levantado pelo Deus do céu será destruído depois de consumir os outros reinos.",
+    "cue": "Em Daniel 2:44, o reino levantado pelo Deus do céu será destruído depois de consumir os outros reinos.",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "um reino que nunca será destruído",
+    "feedbackCorrect": "O texto diz o contrário: esse reino nunca será destruído.",
+    "feedbackWrong": {
+      "true": "Releia Daniel 2:44 e veja o destino desse reino."
+    },
+    "hint": "Olhe o destino final citado em 2:44.",
+    "learningObjective": "Observar a permanência do reino de Deus.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-02",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Daniel 2:41, toque o material fraco misturado ao ferro nos pés da estátua.",
+    "prompt": "Em Daniel 2:41, toque o material fraco misturado ao ferro nos pés da estátua.",
+    "cue": "Em Daniel 2:41, toque o material fraco misturado ao ferro nos pés da estátua.",
+    "verseRef": "Daniel 2:41",
+    "passageText": "E a respeito do que você viu dos pés e dos artelhos, que eram em parte de barro e em parte de ferro, isso será um reino dividido; contudo, haverá nele algo da firmeza do ferro, pois você viu o ferro misturado com barro de lodo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino dividido"
+      },
+      {
+        "id": "b",
+        "text": "de barro"
+      },
+      {
+        "id": "c",
+        "text": "de ferro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em parte de barro e em parte de ferro",
+    "feedbackCorrect": "Barro e ferro se misturam nos pés: firmeza e fragilidade juntas.",
+    "feedbackWrong": {
+      "a": "Isso é o que os pés significam, não um material deles.",
+      "c": "O ferro é o material firme; o fraco misturado a ele é outro."
+    },
+    "hint": "Procure o material que não combina com ferro.",
+    "learningObjective": "Identificar os materiais dos pés da estátua.",
+    "evidence": [
+      "Daniel 2:41"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-03",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Daniel 2:42, como será o reino indicado pelos dedos dos pés?",
+    "prompt": "Segundo Daniel 2:42, como será o reino indicado pelos dedos dos pés?",
+    "cue": "Segundo Daniel 2:42, como será o reino indicado pelos dedos dos pés?",
+    "verseRef": "Daniel 2:42",
+    "passageText": "E os dedos dos pés, sendo em parte de ferro e em parte de barro, indicam que, de um lado, o reino será forte, mas, de outro, será frágil.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Igual em força em todas as partes"
+      },
+      {
+        "id": "b",
+        "text": "Totalmente forte, sem fraqueza alguma"
+      },
+      {
+        "id": "c",
+        "text": "Forte de um lado e frágil de outro"
+      },
+      {
+        "id": "d",
+        "text": "Frágil por completo, sem firmeza"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "de um lado, o reino será forte, mas, de outro, será frágil",
+    "feedbackCorrect": "Ferro e barro juntos: força de um lado, fragilidade de outro.",
+    "feedbackWrong": {
+      "a": "O texto contrasta os dois lados do mesmo reino.",
+      "b": "O barro da mistura traz fragilidade ao reino.",
+      "d": "O ferro da mistura traz firmeza ao reino."
+    },
+    "hint": "Leia os dois lados citados em 2:42.",
+    "learningObjective": "Observar o contraste forte e frágil.",
+    "evidence": [
+      "Daniel 2:42"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-04",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Daniel 2:44 na ordem do texto.",
+    "prompt": "Monte Daniel 2:44 na ordem do texto.",
+    "cue": "Monte Daniel 2:44 na ordem do texto.",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Deus do céu levantará um reino"
+      },
+      {
+        "id": "b",
+        "text": "que nunca será destruído"
+      },
+      {
+        "id": "c",
+        "text": "mas ele mesmo subsistirá para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas ele mesmo subsistirá para sempre",
+    "feedbackCorrect": "Deus levanta o reino, que não será destruído e subsiste para sempre.",
+    "feedbackWrong": {
+      "default": "Comece por quem levanta o reino; a permanência fecha o versículo."
+    },
+    "hint": "O versículo termina falando de permanência.",
+    "learningObjective": "Reconhecer a sequência de Daniel 2:44.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-05",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Daniel 2:45, o que foi cortado do monte sem auxílio de mãos?",
+    "prompt": "Em Daniel 2:45, o que foi cortado do monte sem auxílio de mãos?",
+    "cue": "Em Daniel 2:45, o que foi cortado do monte sem auxílio de mãos?",
+    "verseRef": "Daniel 2:45",
+    "passageText": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "template": "Assim como viste que do monte foi cortada uma ___, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pedra"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "coroa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "do monte foi cortada uma pedra, sem auxílio de mãos",
+    "feedbackCorrect": "A pedra cortada sem mãos humanas esmiúça os materiais da estátua.",
+    "feedbackWrong": {
+      "b": "Não há arma humana: o corte acontece sem auxílio de mãos.",
+      "c": "Coroa não aparece aqui; o que é cortado do monte é outra coisa."
+    },
+    "hint": "Leia o começo do versículo 45.",
+    "learningObjective": "Lembrar a pedra do sonho de Nabucodonosor.",
+    "evidence": [
+      "Daniel 2:45"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-06",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel interpreta o sonho de Nabucodonosor sobre pés de ferro e barro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus levanta reino eterno"
+      },
+      {
+        "id": "b",
+        "text": "O barro vence o ferro sozinho"
+      },
+      {
+        "id": "c",
+        "text": "Reinos humanos duram para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Deus do céu levantará um reino",
+    "feedbackCorrect": "Depois dos pés frágeis da estátua, Daniel anuncia o reino de Deus.",
+    "feedbackWrong": {
+      "b": "Quem age no fim é Deus, não o barro por conta própria.",
+      "c": "Os reinos da estátua serão consumidos; não duram para sempre."
+    },
+    "hint": "Veja quem levanta um reino no versículo.",
+    "learningObjective": "Ligar Daniel 2:44 ao reino levantado por Deus.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-01",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Daniel 2:42–43, o ferro misturado ao barro mostra um reino ao mesmo tempo forte e frágil.",
+    "prompt": "Em Daniel 2:42–43, o ferro misturado ao barro mostra um reino ao mesmo tempo forte e frágil.",
+    "cue": "Em Daniel 2:42–43, o ferro misturado ao barro mostra um reino ao mesmo tempo forte e frágil.",
+    "verseRef": "Daniel 2:42–43",
+    "passageText": "E os dedos dos pés, sendo em parte de ferro e em parte de barro, indicam que, de um lado, o reino será forte, mas, de outro, será frágil. Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de alianças, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "em parte de ferro e em parte de barro",
+    "feedbackCorrect": "A mistura explica o contraste: força de um lado, fragilidade de outro.",
+    "feedbackWrong": {
+      "false": "Os dois materiais juntos mostram as duas faces do mesmo reino."
+    },
+    "hint": "Junte o que 2:42 e 2:43 dizem da mistura.",
+    "learningObjective": "Compreender o contraste ferro e barro.",
+    "evidence": [
+      "Daniel 2:42–43"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-02",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Daniel 2:43, toque a expressão que compara o ferro e o barro que não se misturam.",
+    "prompt": "Em Daniel 2:43, toque a expressão que compara o ferro e o barro que não se misturam.",
+    "cue": "Em Daniel 2:43, toque a expressão que compara o ferro e o barro que não se misturam.",
+    "verseRef": "Daniel 2:43",
+    "passageText": "Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de alianças, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "por meio"
+      },
+      {
+        "id": "b",
+        "text": "um ao outro"
+      },
+      {
+        "id": "c",
+        "text": "assim como"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assim como o ferro não se mistura com o barro",
+    "feedbackCorrect": "A comparação fecha o sentido: alianças não viram unidade de verdade.",
+    "feedbackWrong": {
+      "a": "Isso fala do meio das alianças, não da comparação final.",
+      "b": "Isso fala de quem não se liga, não da comparação usada."
+    },
+    "hint": "Procure perto do fim do versículo.",
+    "learningObjective": "Reconhecer a comparação em Daniel 2:43.",
+    "evidence": [
+      "Daniel 2:43"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-03",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a mistura de ferro e barro em Daniel 2:43 mostra sobre as alianças daquele reino?",
+    "prompt": "O que a mistura de ferro e barro em Daniel 2:43 mostra sobre as alianças daquele reino?",
+    "cue": "O que a mistura de ferro e barro em Daniel 2:43 mostra sobre as alianças daquele reino?",
+    "verseRef": "Daniel 2:43",
+    "passageText": "Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de alianças, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elas eliminam toda fraqueza do reino"
+      },
+      {
+        "id": "b",
+        "text": "Elas tornam o reino impossível de dividir"
+      },
+      {
+        "id": "c",
+        "text": "Elas unem os povos com firmeza total"
+      },
+      {
+        "id": "d",
+        "text": "Elas tentam unir, mas não ligam de verdade"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "mas não se ligarão um ao outro",
+    "feedbackCorrect": "Há tentativa de união, mas ferro e barro não se ligam um ao outro.",
+    "feedbackWrong": {
+      "a": "A fragilidade do barro permanece na mistura.",
+      "b": "O reino já foi anunciado como dividido em 2:41.",
+      "c": "A comparação mostra justamente que a união não se firma."
+    },
+    "hint": "Veja o que acontece com a tentativa de união.",
+    "learningObjective": "Relacionar ferro e barro com as alianças.",
+    "evidence": [
+      "Daniel 2:43"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-04",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a interpretação em Daniel 2:41–42?",
+    "prompt": "Como se encadeia a interpretação em Daniel 2:41–42?",
+    "cue": "Como se encadeia a interpretação em Daniel 2:41–42?",
+    "verseRef": "Daniel 2:41–42",
+    "passageText": "E a respeito do que você viu dos pés e dos artelhos, que eram em parte de barro e em parte de ferro, isso será um reino dividido; contudo, haverá nele algo da firmeza do ferro, pois você viu o ferro misturado com barro de lodo. E os dedos dos pés, sendo em parte de ferro e em parte de barro, indicam que, de um lado, o reino será forte, mas, de outro, será frágil.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pés de ferro e barro aparecem"
+      },
+      {
+        "id": "b",
+        "text": "Um reino dividido é anunciado"
+      },
+      {
+        "id": "c",
+        "text": "Forte e frágil ao mesmo tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "isso será um reino dividido",
+    "feedbackCorrect": "O sinal nos pés, o anúncio de divisão e o contraste de força e fraqueza.",
+    "feedbackWrong": {
+      "default": "Comece pelo que o rei viu nos pés da estátua."
+    },
+    "hint": "O que o rei viu vem antes do significado.",
+    "learningObjective": "Compreender os passos de Daniel 2:41–42.",
+    "evidence": [
+      "Daniel 2:41–42"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-05",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Daniel 2:43, por meio de que eles tentarão se unir naquele reino?",
+    "prompt": "Em Daniel 2:43, por meio de que eles tentarão se unir naquele reino?",
+    "cue": "Em Daniel 2:43, por meio de que eles tentarão se unir naquele reino?",
+    "verseRef": "Daniel 2:43",
+    "passageText": "Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de alianças, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "template": "Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de ___, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alianças"
+      },
+      {
+        "id": "b",
+        "text": "guerras"
+      },
+      {
+        "id": "c",
+        "text": "leis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eles se unirão por meio de alianças",
+    "feedbackCorrect": "A união tentada é por alianças, mas não se firma como o ferro no barro.",
+    "feedbackWrong": {
+      "b": "O texto não fala de união pela guerra, e sim de outro meio.",
+      "c": "Leis não são o meio citado para essa união."
+    },
+    "hint": "Leia o meio citado no começo de 2:43.",
+    "learningObjective": "Compreender o meio de união em Daniel 2:43.",
+    "evidence": [
+      "Daniel 2:43"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-06",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Daniel 2:44 a Salmos 145:13?",
+    "prompt": "O que liga Daniel 2:44 a Salmos 145:13?",
+    "cue": "O que liga Daniel 2:44 a Salmos 145:13?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre."
+    },
+    "passageB": {
+      "ref": "Salmos 145:13",
+      "text": "O teu reino é reino eterno, e o teu domínio dura por todas as gerações. O Senhor é fiel em todas as suas palavras e santo em todas as suas obras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino dispensa um rei"
+      },
+      {
+        "id": "b",
+        "text": "Todo reino humano é eterno"
+      },
+      {
+        "id": "c",
+        "text": "Reino de Deus dura para sempre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas ele mesmo subsistirá para sempre",
+    "feedbackCorrect": "Daniel e o salmo olham o mesmo reino que não passa com o tempo.",
+    "feedbackWrong": {
+      "a": "Nos dois textos há um Rei por trás do reino que permanece.",
+      "b": "Os reinos da estátua são consumidos; o eterno é o de Deus."
+    },
+    "hint": "Compare a duração do reino nos dois textos.",
+    "learningObjective": "Relacionar o reino eterno em Daniel e nos Salmos.",
+    "evidence": [
+      "Daniel 2:44",
+      "Salmos 145:13"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-01",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Daniel 2:45 autoriza identificar com certeza os reinos do sonho com países dos dias atuais.",
+    "prompt": "Daniel 2:45 autoriza identificar com certeza os reinos do sonho com países dos dias atuais.",
+    "cue": "Daniel 2:45 autoriza identificar com certeza os reinos do sonho com países dos dias atuais.",
+    "verseRef": "Daniel 2:45",
+    "passageText": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o Grande Deus fez saber ao rei o que há de ser futuramente",
+    "feedbackCorrect": "O trecho não nomeia países de hoje; aponta para o reino de Deus.",
+    "feedbackWrong": {
+      "true": "A interpretação dada fala de reino dividido e do reino de Deus, sem nomes atuais."
+    },
+    "hint": "Veja o que a interpretação realmente nomeia.",
+    "learningObjective": "Interpretar o sonho sem forçar identificações atuais.",
+    "evidence": [
+      "Daniel 2:45"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-02",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Daniel 2:44, toque o trecho que mostra a permanência do reino de Deus.",
+    "prompt": "Em Daniel 2:44, toque o trecho que mostra a permanência do reino de Deus.",
+    "cue": "Em Daniel 2:44, toque o trecho que mostra a permanência do reino de Deus.",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outro povo"
+      },
+      {
+        "id": "b",
+        "text": "desses reis"
+      },
+      {
+        "id": "c",
+        "text": "subsistirá para sempre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas ele mesmo subsistirá para sempre",
+    "feedbackCorrect": "A permanência é o fecho do anúncio: o reino de Deus subsiste.",
+    "feedbackWrong": {
+      "a": "Isso fala a quem o reino não será passado, não de sua duração.",
+      "b": "Isso marca o tempo dos reis humanos, não a permanência."
+    },
+    "hint": "Procure o fim do versículo 44.",
+    "learningObjective": "Sustentar com o texto a permanência do reino.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-03",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Daniel 2:44–45 sustenta sobre os reinos humanos diante de Deus?",
+    "prompt": "Que leitura Daniel 2:44–45 sustenta sobre os reinos humanos diante de Deus?",
+    "cue": "Que leitura Daniel 2:44–45 sustenta sobre os reinos humanos diante de Deus?",
+    "verseRef": "Daniel 2:44–45",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre. Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escapam do governo do Deus do céu"
+      },
+      {
+        "id": "b",
+        "text": "Permanecem intactos para outro povo herdar"
+      },
+      {
+        "id": "c",
+        "text": "São eternos quando unem ferro e barro"
+      },
+      {
+        "id": "d",
+        "text": "São passageiros diante do reino de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "esmiuçará e consumirá todos esses reinos",
+    "feedbackCorrect": "Os reinos da estátua passam; só o de Deus subsiste para sempre.",
+    "feedbackWrong": {
+      "a": "É o Deus do céu quem levanta o reino que consome os outros.",
+      "b": "O reino de Deus não será passado a outro povo (2:44).",
+      "c": "Ferro com barro é sinal de fragilidade, não de eternidade."
+    },
+    "hint": "Compare o destino dos dois tipos de reino.",
+    "learningObjective": "Escolher a interpretação sustentada por Daniel 2.",
+    "evidence": [
+      "Daniel 2:44–45"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-04",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Daniel 2:44?",
+    "prompt": "Qual sequência revela o sentido de Daniel 2:44?",
+    "cue": "Qual sequência revela o sentido de Daniel 2:44?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reinos humanos se dividem e enfraquecem"
+      },
+      {
+        "id": "b",
+        "text": "Deus levanta seu reino no seu tempo"
+      },
+      {
+        "id": "c",
+        "text": "O reino de Deus subsiste para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Nos dias desses reis, o Deus do céu levantará um reino",
+    "feedbackCorrect": "Reinos frágeis, ação de Deus e permanência: esse é o movimento do texto.",
+    "feedbackWrong": {
+      "default": "Comece pelos reinos humanos; a permanência de Deus fecha tudo."
+    },
+    "hint": "A permanência é o ponto de chegada.",
+    "learningObjective": "Ver o contraste entre reinos humanos e o de Deus.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-05",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Daniel 2:47, como o rei chama Deus em relação aos mistérios?",
+    "prompt": "Em Daniel 2:47, como o rei chama Deus em relação aos mistérios?",
+    "cue": "Em Daniel 2:47, como o rei chama Deus em relação aos mistérios?",
+    "verseRef": "Daniel 2:47",
+    "passageText": "O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o revelador de mistérios, pois você pôde desvendar este mistério.\"",
+    "template": "O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o ___ de mistérios, pois você pôde desvendar este mistério.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "revelador"
+      },
+      {
+        "id": "b",
+        "text": "escritor"
+      },
+      {
+        "id": "c",
+        "text": "guardião"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e o revelador de mistérios",
+    "feedbackCorrect": "O mistério do sonho chega a Daniel porque Deus o revela.",
+    "feedbackWrong": {
+      "b": "Deus não escreve o sonho; ele revela o seu mistério.",
+      "c": "O rei usa outra palavra para o que Deus faz com mistérios."
+    },
+    "hint": "Leia o último título dado a Deus em 2:47.",
+    "learningObjective": "Lembrar Deus como quem revela mistérios.",
+    "evidence": [
+      "Daniel 2:47"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-06",
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Daniel 2:44 a Lucas 1:33?",
+    "prompt": "O que liga Daniel 2:44 a Lucas 1:33?",
+    "cue": "O que liga Daniel 2:44 a Lucas 1:33?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre."
+    },
+    "passageB": {
+      "ref": "Lucas 1:33",
+      "text": "E reinará eternamente sobre a casa de Jacó, e o seu reino não conhecerá fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus recebe reino passageiro"
+      },
+      {
+        "id": "b",
+        "text": "Reino humano sem fim algum"
+      },
+      {
+        "id": "c",
+        "text": "Reino de Jesus sem fim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "um reino que nunca será destruído",
+    "feedbackCorrect": "O anjo anuncia a Maria um reino sem fim, como o de Daniel 2:44.",
+    "feedbackWrong": {
+      "a": "Lucas diz que o reino de Jesus não terá fim.",
+      "b": "Reinos humanos passam; o reino sem fim é o de Deus."
+    },
+    "hint": "Veja a duração do reino anunciado em Lucas.",
+    "learningObjective": "Ligar o reino de Daniel ao reino de Jesus.",
+    "evidence": [
+      "Daniel 2:44",
+      "Lucas 1:33"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-01",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Daniel 2:47, Nabucodonosor reconhece que o Deus de Daniel é o Deus dos deuses e o Senhor dos reis.",
+    "prompt": "Em Daniel 2:47, Nabucodonosor reconhece que o Deus de Daniel é o Deus dos deuses e o Senhor dos reis.",
+    "cue": "Em Daniel 2:47, Nabucodonosor reconhece que o Deus de Daniel é o Deus dos deuses e o Senhor dos reis.",
+    "verseRef": "Daniel 2:47",
+    "passageText": "O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o revelador de mistérios, pois você pôde desvendar este mistério.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o seu Deus é o Deus dos deuses, o Senhor dos reis",
+    "feedbackCorrect": "É a confissão do rei ao fim da interpretação do sonho.",
+    "feedbackWrong": {
+      "false": "Releia a fala final do rei em Daniel 2:47."
+    },
+    "hint": "Ouça a última fala do rei.",
+    "learningObjective": "Observar a confissão de Nabucodonosor.",
+    "evidence": [
+      "Daniel 2:47"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-02",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Daniel 2:45, toque o que foi cortado do monte sem auxílio de mãos.",
+    "prompt": "Em Daniel 2:45, toque o que foi cortado do monte sem auxílio de mãos.",
+    "cue": "Em Daniel 2:45, toque o que foi cortado do monte sem auxílio de mãos.",
+    "verseRef": "Daniel 2:45",
+    "passageText": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o ferro"
+      },
+      {
+        "id": "b",
+        "text": "uma pedra"
+      },
+      {
+        "id": "c",
+        "text": "o ouro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "do monte foi cortada uma pedra, sem auxílio de mãos",
+    "feedbackCorrect": "Sem mãos humanas, a pedra é cortada e esmiúça a estátua.",
+    "feedbackWrong": {
+      "a": "O ferro é um dos materiais esmiuçados, não o que é cortado do monte.",
+      "c": "O ouro também é esmiuçado; quem o vence vem do monte."
+    },
+    "hint": "Procure o que sai do monte.",
+    "learningObjective": "Identificar a pedra do sonho.",
+    "evidence": [
+      "Daniel 2:45"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-03",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Daniel 2:41, o que significam os pés em parte de barro e em parte de ferro?",
+    "prompt": "Segundo Daniel 2:41, o que significam os pés em parte de barro e em parte de ferro?",
+    "cue": "Segundo Daniel 2:41, o que significam os pés em parte de barro e em parte de ferro?",
+    "verseRef": "Daniel 2:41",
+    "passageText": "E a respeito do que você viu dos pés e dos artelhos, que eram em parte de barro e em parte de ferro, isso será um reino dividido; contudo, haverá nele algo da firmeza do ferro, pois você viu o ferro misturado com barro de lodo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um reino unido e inabalável"
+      },
+      {
+        "id": "b",
+        "text": "Um reino sem rei definido"
+      },
+      {
+        "id": "c",
+        "text": "Um reino formado só de barro"
+      },
+      {
+        "id": "d",
+        "text": "Um reino dividido, com alguma firmeza"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "isso será um reino dividido",
+    "feedbackCorrect": "A mistura nos pés anuncia divisão, mesmo havendo firmeza do ferro.",
+    "feedbackWrong": {
+      "a": "O anúncio é de divisão, não de unidade inabalável.",
+      "b": "O texto fala da unidade do reino, não da falta de rei.",
+      "c": "Os pés têm ferro e barro juntos, não só barro."
+    },
+    "hint": "Leia o significado dado no próprio versículo.",
+    "learningObjective": "Observar o sentido dos pés da estátua.",
+    "evidence": [
+      "Daniel 2:41"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-04",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Daniel 2:47 na ordem do texto.",
+    "prompt": "Monte Daniel 2:47 na ordem do texto.",
+    "cue": "Monte Daniel 2:47 na ordem do texto.",
+    "verseRef": "Daniel 2:47",
+    "passageText": "O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o revelador de mistérios, pois você pôde desvendar este mistério.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "o seu Deus é o Deus dos deuses"
+      },
+      {
+        "id": "b",
+        "text": "o Senhor dos reis"
+      },
+      {
+        "id": "c",
+        "text": "e o revelador de mistérios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor dos reis e o revelador de mistérios",
+    "feedbackCorrect": "A confissão do rei cresce: Deus dos deuses, Senhor dos reis, revelador.",
+    "feedbackWrong": {
+      "default": "Comece pelo primeiro título que o rei dá a Deus."
+    },
+    "hint": "Siga a ordem dos títulos na fala do rei.",
+    "learningObjective": "Reconhecer a sequência de Daniel 2:47.",
+    "evidence": [
+      "Daniel 2:47"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-05",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Daniel 2:46, o que o rei ordenou que fossem feitas a Daniel?",
+    "prompt": "Em Daniel 2:46, o que o rei ordenou que fossem feitas a Daniel?",
+    "cue": "Em Daniel 2:46, o que o rei ordenou que fossem feitas a Daniel?",
+    "verseRef": "Daniel 2:46",
+    "passageText": "Então, o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel, e ordenou que lhe fossem feitas ofertas de manjares e suaves perfumes.",
+    "template": "Então, o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel, e ordenou que lhe fossem feitas ___ de manjares e suaves perfumes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ofertas"
+      },
+      {
+        "id": "b",
+        "text": "perguntas"
+      },
+      {
+        "id": "c",
+        "text": "visitas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ordenou que lhe fossem feitas ofertas de manjares",
+    "feedbackCorrect": "O rei honra Daniel após a interpretação, mandando fazer-lhe ofertas.",
+    "feedbackWrong": {
+      "b": "As perguntas já foram respondidas pelo sonho interpretado.",
+      "c": "Não é visita que o rei ordena, e sim honra a Daniel."
+    },
+    "hint": "Veja a ordem do rei no fim de 2:46.",
+    "learningObjective": "Lembrar a reação de Nabucodonosor.",
+    "evidence": [
+      "Daniel 2:46"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-06",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Daniel 2:45 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 2:45 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 2:45 comunica que se liga a este contexto?",
+    "verseRef": "Daniel 2:45",
+    "passageText": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "passageA": {
+      "ref": "Daniel 2:45",
+      "text": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel explicou ao rei o sonho da estátua e o que aconteceria no futuro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O sonho foi inventado por Daniel"
+      },
+      {
+        "id": "b",
+        "text": "O sonho é certo e fiel"
+      },
+      {
+        "id": "c",
+        "text": "A interpretação depende do rei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Certo é o sonho, e fiel é a sua interpretação",
+    "feedbackCorrect": "Daniel encerra garantindo o sonho e sua interpretação ao rei.",
+    "feedbackWrong": {
+      "a": "Daniel atribui o sonho e seu sentido a Deus, não a si mesmo.",
+      "c": "A certeza vem de Deus, não da aprovação do rei."
+    },
+    "hint": "Leia o fecho do versículo 45.",
+    "learningObjective": "Ligar Daniel 2:45 à certeza do sonho.",
+    "evidence": [
+      "Daniel 2:45"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-07",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Daniel 2:42, toque a palavra que diz como o reino será de um lado.",
+    "prompt": "Em Daniel 2:42, toque a palavra que diz como o reino será de um lado.",
+    "cue": "Em Daniel 2:42, toque a palavra que diz como o reino será de um lado.",
+    "verseRef": "Daniel 2:42",
+    "passageText": "E os dedos dos pés, sendo em parte de ferro e em parte de barro, indicam que, de um lado, o reino será forte, mas, de outro, será frágil.",
+    "options": [
+      {
+        "id": "a",
+        "text": "forte"
+      },
+      {
+        "id": "b",
+        "text": "de ferro"
+      },
+      {
+        "id": "c",
+        "text": "frágil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o reino será forte, mas, de outro, será frágil",
+    "feedbackCorrect": "De um lado o reino será forte, sustentado pela parte de ferro.",
+    "feedbackWrong": {
+      "b": "Isso indica o material, não a qualidade citada primeiro.",
+      "c": "Essa palavra descreve o outro lado do mesmo reino."
+    },
+    "hint": "Leia a primeira qualidade citada em 2:42.",
+    "learningObjective": "Observar os dois lados do reino dos pés.",
+    "evidence": [
+      "Daniel 2:42"
+    ]
+  },
+  {
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-08",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Daniel 2:43 na ordem do texto.",
+    "prompt": "Monte Daniel 2:43 na ordem do texto.",
+    "cue": "Monte Daniel 2:43 na ordem do texto.",
+    "verseRef": "Daniel 2:43",
+    "passageText": "Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de alianças, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eles se unirão por meio de alianças"
+      },
+      {
+        "id": "b",
+        "text": "mas não se ligarão um ao outro"
+      },
+      {
+        "id": "c",
+        "text": "assim como o ferro não se mistura com o barro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eles se unirão por meio de alianças",
+    "feedbackCorrect": "Tentativa de união, falta de ligação e a comparação ferro e barro.",
+    "feedbackWrong": {
+      "default": "Comece pela tentativa de união citada no versículo."
+    },
+    "hint": "A comparação com ferro e barro fecha a frase.",
+    "learningObjective": "Reconhecer a sequência de Daniel 2:43.",
+    "evidence": [
+      "Daniel 2:43"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-01",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Daniel 2:43, as alianças conseguem ligar firmemente o ferro ao barro naquele reino.",
+    "prompt": "Em Daniel 2:43, as alianças conseguem ligar firmemente o ferro ao barro naquele reino.",
+    "cue": "Em Daniel 2:43, as alianças conseguem ligar firmemente o ferro ao barro naquele reino.",
+    "verseRef": "Daniel 2:43",
+    "passageText": "Quanto ao que você viu do ferro misturado com barro de lodo, eles se unirão por meio de alianças, mas não se ligarão um ao outro, assim como o ferro não se mistura com o barro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas não se ligarão um ao outro",
+    "feedbackCorrect": "As alianças tentam unir, mas ferro e barro não se ligam.",
+    "feedbackWrong": {
+      "true": "Releia o meio de 2:43: a ligação não acontece."
+    },
+    "hint": "Veja o resultado das alianças.",
+    "learningObjective": "Compreender o limite das alianças em Daniel 2.",
+    "evidence": [
+      "Daniel 2:43"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-02",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Daniel 2:42, toque a palavra que marca o contraste entre os dois lados do reino.",
+    "prompt": "Em Daniel 2:42, toque a palavra que marca o contraste entre os dois lados do reino.",
+    "cue": "Em Daniel 2:42, toque a palavra que marca o contraste entre os dois lados do reino.",
+    "verseRef": "Daniel 2:42",
+    "passageText": "E os dedos dos pés, sendo em parte de ferro e em parte de barro, indicam que, de um lado, o reino será forte, mas, de outro, será frágil.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em parte"
+      },
+      {
+        "id": "b",
+        "text": "de um lado"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o reino será forte, mas, de outro, será frágil",
+    "feedbackCorrect": "Entre forte e frágil, uma palavrinha vira o sentido da frase.",
+    "feedbackWrong": {
+      "a": "Isso indica mistura parcial, não o contraste entre qualidades.",
+      "b": "Isso apresenta um dos lados, mas não marca a virada."
+    },
+    "hint": "É a palavra mais curta do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Daniel 2:42"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-03",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Daniel 2:42 explica o sinal dos pés apresentado em Daniel 2:41?",
+    "prompt": "Como Daniel 2:42 explica o sinal dos pés apresentado em Daniel 2:41?",
+    "cue": "Como Daniel 2:42 explica o sinal dos pés apresentado em Daniel 2:41?",
+    "verseRef": "Daniel 2:41–42",
+    "passageText": "E a respeito do que você viu dos pés e dos artelhos, que eram em parte de barro e em parte de ferro, isso será um reino dividido; contudo, haverá nele algo da firmeza do ferro, pois você viu o ferro misturado com barro de lodo. E os dedos dos pés, sendo em parte de ferro e em parte de barro, indicam que, de um lado, o reino será forte, mas, de outro, será frágil.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra o barro vencendo o ferro depressa"
+      },
+      {
+        "id": "b",
+        "text": "Mostra um reino sem mistura alguma"
+      },
+      {
+        "id": "c",
+        "text": "Mostra força e fragilidade no mesmo reino"
+      },
+      {
+        "id": "d",
+        "text": "Mostra reinos distantes um do outro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o reino será forte, mas, de outro, será frágil",
+    "feedbackCorrect": "O v. 42 traduz a mistura dos pés: um reino, duas faces.",
+    "feedbackWrong": {
+      "a": "O texto não anuncia vitória rápida do barro sobre o ferro.",
+      "b": "A mistura de ferro e barro é justamente o centro do sinal.",
+      "d": "Ferro e barro estão no mesmo reino, não em reinos distantes."
+    },
+    "hint": "Veja as duas qualidades citadas em 2:42.",
+    "learningObjective": "Relacionar o sinal e sua explicação.",
+    "evidence": [
+      "Daniel 2:41–42"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-04",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a interpretação em Daniel 2:44–45?",
+    "prompt": "Como avança a interpretação em Daniel 2:44–45?",
+    "cue": "Como avança a interpretação em Daniel 2:44–45?",
+    "verseRef": "Daniel 2:44–45",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre. Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus levanta um reino eterno"
+      },
+      {
+        "id": "b",
+        "text": "A pedra esmiúça os materiais"
+      },
+      {
+        "id": "c",
+        "text": "Daniel declara o sonho certo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Certo é o sonho, e fiel é a sua interpretação",
+    "feedbackCorrect": "Reino anunciado, pedra lembrada e garantia final ao rei.",
+    "feedbackWrong": {
+      "default": "Comece pelo reino de 2:44; a garantia fecha 2:45."
+    },
+    "hint": "A declaração de certeza é o fecho.",
+    "learningObjective": "Compreender o avanço de Daniel 2:44–45.",
+    "evidence": [
+      "Daniel 2:44–45"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-05",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Daniel 2:44, o que o reino de Deus fará com todos os outros reinos?",
+    "prompt": "Em Daniel 2:44, o que o reino de Deus fará com todos os outros reinos?",
+    "cue": "Em Daniel 2:44, o que o reino de Deus fará com todos os outros reinos?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "template": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e ___ todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "consumirá"
+      },
+      {
+        "id": "b",
+        "text": "poupará"
+      },
+      {
+        "id": "c",
+        "text": "unirá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esmiuçará e consumirá todos esses reinos",
+    "feedbackCorrect": "Os reinos da estátua serão consumidos; o de Deus subsiste.",
+    "feedbackWrong": {
+      "b": "O texto anuncia o fim desses reinos, não sua preservação.",
+      "c": "Unir é o que ferro e barro tentam e não conseguem."
+    },
+    "hint": "É o segundo verbo aplicado aos reinos em 2:44.",
+    "learningObjective": "Compreender o destino dos reinos humanos.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-06",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Daniel 2:44 a Daniel 7:14?",
+    "prompt": "O que liga Daniel 2:44 a Daniel 7:14?",
+    "cue": "O que liga Daniel 2:44 a Daniel 7:14?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre."
+    },
+    "passageB": {
+      "ref": "Daniel 7:14",
+      "text": "Foi-lhe dado domínio, glória e reino, para que todos os povos, nações e homens de todas as línguas o servissem; seu domínio é um domínio eterno, que não passará, e seu reino não será destruído."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Domínio humano sem fim"
+      },
+      {
+        "id": "b",
+        "text": "Reino que não será destruído"
+      },
+      {
+        "id": "c",
+        "text": "Reino passado a outro povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um reino que nunca será destruído",
+    "feedbackCorrect": "Em outra visão, Daniel ouve do mesmo reino que nunca será destruído.",
+    "feedbackWrong": {
+      "a": "O domínio sem fim no texto é o de Deus, não o humano.",
+      "c": "Daniel 2:44 diz justamente que ele não será passado a outro povo."
+    },
+    "hint": "Compare o destino do reino nos dois textos.",
+    "learningObjective": "Relacionar o reino em duas visões de Daniel.",
+    "evidence": [
+      "Daniel 2:44",
+      "Daniel 7:14"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-07",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Daniel 2:46, toque a ação do rei que mostra sua reverência diante de Daniel.",
+    "prompt": "Em Daniel 2:46, toque a ação do rei que mostra sua reverência diante de Daniel.",
+    "cue": "Em Daniel 2:46, toque a ação do rei que mostra sua reverência diante de Daniel.",
+    "verseRef": "Daniel 2:46",
+    "passageText": "Então, o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel, e ordenou que lhe fossem feitas ofertas de manjares e suaves perfumes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "suaves perfumes"
+      },
+      {
+        "id": "b",
+        "text": "se prostrou"
+      },
+      {
+        "id": "c",
+        "text": "ofertas de manjares"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel",
+    "feedbackCorrect": "O rei se prostra rosto em terra: a grandeza dele se curva.",
+    "feedbackWrong": {
+      "a": "Isso acompanha as ofertas ordenadas, não a reverência do rei.",
+      "c": "Isso é o que ele ordena fazer, não a postura do próprio corpo."
+    },
+    "hint": "Veja a postura do rei no começo de 2:46.",
+    "learningObjective": "Relacionar a postura do rei com a interpretação.",
+    "evidence": [
+      "Daniel 2:46"
+    ]
+  },
+  {
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-08",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a reação do rei em Daniel 2:46–47?",
+    "prompt": "Como se encadeia a reação do rei em Daniel 2:46–47?",
+    "cue": "Como se encadeia a reação do rei em Daniel 2:46–47?",
+    "verseRef": "Daniel 2:46–47",
+    "passageText": "Então, o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel, e ordenou que lhe fossem feitas ofertas de manjares e suaves perfumes. O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o revelador de mistérios, pois você pôde desvendar este mistério.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei se prostra diante de Daniel"
+      },
+      {
+        "id": "b",
+        "text": "O rei ordena ofertas a Daniel"
+      },
+      {
+        "id": "c",
+        "text": "O rei confessa quem é Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel",
+    "feedbackCorrect": "Postura, ordem e confissão: a reação do rei cresce em 2:46–47.",
+    "feedbackWrong": {
+      "default": "Comece pela postura do rei; a confissão é a fala final."
+    },
+    "hint": "A fala do rei fecha o trecho.",
+    "learningObjective": "Compreender a reação de Nabucodonosor.",
+    "evidence": [
+      "Daniel 2:46–47"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-01",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Daniel 2:44–45 apresenta o reino de Deus como obra dele, lembrada pela pedra cortada sem auxílio de mãos.",
+    "prompt": "Daniel 2:44–45 apresenta o reino de Deus como obra dele, lembrada pela pedra cortada sem auxílio de mãos.",
+    "cue": "Daniel 2:44–45 apresenta o reino de Deus como obra dele, lembrada pela pedra cortada sem auxílio de mãos.",
+    "verseRef": "Daniel 2:44–45",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre. Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "sem auxílio de mãos",
+    "feedbackCorrect": "Sem mãos humanas: quem levanta o reino que permanece é Deus.",
+    "feedbackWrong": {
+      "false": "A pedra sem auxílio de mãos aponta para ação de Deus, não humana."
+    },
+    "hint": "Veja como a pedra é cortada em 2:45.",
+    "learningObjective": "Interpretar a pedra como obra de Deus.",
+    "evidence": [
+      "Daniel 2:44–45"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-02",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Daniel 2:44, toque o trecho que nega um fim para o reino de Deus.",
+    "prompt": "Em Daniel 2:44, toque o trecho que nega um fim para o reino de Deus.",
+    "cue": "Em Daniel 2:44, toque o trecho que nega um fim para o reino de Deus.",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outro povo"
+      },
+      {
+        "id": "b",
+        "text": "nunca será destruído"
+      },
+      {
+        "id": "c",
+        "text": "desses reis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um reino que nunca será destruído",
+    "feedbackCorrect": "A negação é direta: esse reino nunca será destruído.",
+    "feedbackWrong": {
+      "a": "Isso fala da sucessão do reino, não diretamente de sua duração.",
+      "c": "Isso situa o tempo dos reis humanos, não a permanência."
+    },
+    "hint": "Procure a negação sobre o destino do reino.",
+    "learningObjective": "Sustentar com o texto a eternidade do reino.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-03",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a reação de Nabucodonosor em Daniel 2:46–47 sustenta?",
+    "prompt": "Que leitura a reação de Nabucodonosor em Daniel 2:46–47 sustenta?",
+    "cue": "Que leitura a reação de Nabucodonosor em Daniel 2:46–47 sustenta?",
+    "verseRef": "Daniel 2:46–47",
+    "passageText": "Então, o rei Nabucodonosor se inclinou e se prostrou rosto em terra diante de Daniel, e ordenou que lhe fossem feitas ofertas de manjares e suaves perfumes. O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o revelador de mistérios, pois você pôde desvendar este mistério.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel deve ser adorado como um deus"
+      },
+      {
+        "id": "b",
+        "text": "O mistério veio só da sabedoria humana"
+      },
+      {
+        "id": "c",
+        "text": "Até o rei reconhece o Deus revelador"
+      },
+      {
+        "id": "d",
+        "text": "O sonho perde importância após a interpretação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois você pôde desvendar este mistério",
+    "feedbackCorrect": "A confissão final aponta para Deus como revelador, não para Daniel.",
+    "feedbackWrong": {
+      "a": "O rei honra Daniel, mas confessa o Deus de Daniel.",
+      "b": "O rei conclui que Deus revelou o mistério por meio de Daniel.",
+      "d": "A reação do rei mostra o peso que o sonho ganha para ele."
+    },
+    "hint": "Leia para quem aponta a última frase do rei.",
+    "learningObjective": "Interpretar a confissão de Nabucodonosor.",
+    "evidence": [
+      "Daniel 2:46–47"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-04",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Daniel 2:44 na história?",
+    "prompt": "Qual sequência revela o sentido de Daniel 2:44 na história?",
+    "cue": "Qual sequência revela o sentido de Daniel 2:44 na história?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reinos humanos chegam ao seu limite"
+      },
+      {
+        "id": "b",
+        "text": "Deus levanta reino que não passa"
+      },
+      {
+        "id": "c",
+        "text": "Seu reino subsiste para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas ele mesmo subsistirá para sempre",
+    "feedbackCorrect": "Limite humano, ação de Deus e permanência: o sentido do anúncio.",
+    "feedbackWrong": {
+      "default": "Comece pelo limite dos reinos da estátua."
+    },
+    "hint": "A permanência de Deus é o destino final.",
+    "learningObjective": "Ver o sentido maior de Daniel 2:44.",
+    "evidence": [
+      "Daniel 2:44"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-05",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Daniel 2:45, como Daniel qualifica a interpretação do sonho ao rei?",
+    "prompt": "Em Daniel 2:45, como Daniel qualifica a interpretação do sonho ao rei?",
+    "cue": "Em Daniel 2:45, como Daniel qualifica a interpretação do sonho ao rei?",
+    "verseRef": "Daniel 2:45",
+    "passageText": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "template": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e ___ é a sua interpretação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fiel"
+      },
+      {
+        "id": "b",
+        "text": "humana"
+      },
+      {
+        "id": "c",
+        "text": "secreta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e fiel é a sua interpretação",
+    "feedbackCorrect": "Sonho certo e interpretação fiel: Daniel entrega a palavra com firmeza.",
+    "feedbackWrong": {
+      "b": "A interpretação vem de Deus; não é invenção humana de Daniel.",
+      "c": "O mistério foi justamente revelado ao rei, não mantido secreto."
+    },
+    "hint": "Leia o último adjetivo de 2:45.",
+    "learningObjective": "Lembrar a firmeza da palavra dada ao rei.",
+    "evidence": [
+      "Daniel 2:45"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-06",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Daniel 2:44 a Lucas 1:33?",
+    "prompt": "O que liga Daniel 2:44 a Lucas 1:33?",
+    "cue": "O que liga Daniel 2:44 a Lucas 1:33?",
+    "verseRef": "Daniel 2:44",
+    "passageText": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre.",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "Nos dias desses reis, o Deus do céu levantará um reino que nunca será destruído; esse reino não será passado a outro povo: esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre."
+    },
+    "passageB": {
+      "ref": "Lucas 1:33",
+      "text": "E reinará eternamente sobre a casa de Jacó, e o seu reino não conhecerá fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino de Jesus sem fim"
+      },
+      {
+        "id": "b",
+        "text": "Reino humano sem fim algum"
+      },
+      {
+        "id": "c",
+        "text": "Jesus recebe reino passageiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "um reino que nunca será destruído",
+    "feedbackCorrect": "O reino anunciado a Maria não terá fim, como o de Daniel 2:44.",
+    "feedbackWrong": {
+      "b": "Os reinos humanos da estátua são consumidos no texto.",
+      "c": "Lucas anuncia um reino sem fim para Jesus."
+    },
+    "hint": "Compare a duração do reino nos dois anúncios.",
+    "learningObjective": "Ligar o reino de Daniel ao de Jesus.",
+    "evidence": [
+      "Daniel 2:44",
+      "Lucas 1:33"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-07",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Daniel 2:47, toque o título de Deus ligado ao governo sobre os reis.",
+    "prompt": "Em Daniel 2:47, toque o título de Deus ligado ao governo sobre os reis.",
+    "cue": "Em Daniel 2:47, toque o título de Deus ligado ao governo sobre os reis.",
+    "verseRef": "Daniel 2:47",
+    "passageText": "O rei respondeu a Daniel: \"Certamente, o seu Deus é o Deus dos deuses, o Senhor dos reis e o revelador de mistérios, pois você pôde desvendar este mistério.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor dos reis"
+      },
+      {
+        "id": "b",
+        "text": "revelador de mistérios"
+      },
+      {
+        "id": "c",
+        "text": "Deus dos deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor dos reis e o revelador de mistérios",
+    "feedbackCorrect": "Acima de todos os reis, inclusive Nabucodonosor, está o Senhor.",
+    "feedbackWrong": {
+      "b": "Esse título fala de mistérios revelados, não do governo sobre reis.",
+      "c": "Esse título fala da grandeza de Deus sobre outros deuses, não sobre reis."
+    },
+    "hint": "Procure o título que cita reis diretamente.",
+    "learningObjective": "Sustentar o senhorio de Deus sobre reis.",
+    "evidence": [
+      "Daniel 2:47"
+    ]
+  },
+  {
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-08",
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a garantia dada em Daniel 2:45?",
+    "prompt": "Qual sequência revela a garantia dada em Daniel 2:45?",
+    "cue": "Qual sequência revela a garantia dada em Daniel 2:45?",
+    "verseRef": "Daniel 2:45",
+    "passageText": "Assim como viste que do monte foi cortada uma pedra, sem auxílio de mãos, e ela esmiuçou o ferro, o bronze, o barro, a prata e o ouro, o Grande Deus fez saber ao rei o que há de ser futuramente. Certo é o sonho, e fiel é a sua interpretação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus faz saber o que há de ser"
+      },
+      {
+        "id": "b",
+        "text": "O sonho é declarado certo"
+      },
+      {
+        "id": "c",
+        "text": "Sua interpretação é declarada fiel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Grande Deus fez saber ao rei o que há de ser futuramente",
+    "feedbackCorrect": "Deus revela, o sonho é certo e a interpretação é fiel ao rei.",
+    "feedbackWrong": {
+      "default": "Comece por quem faz saber o futuro ao rei."
+    },
+    "hint": "Siga o fim do versículo 45.",
+    "learningObjective": "Ver a garantia final da interpretação.",
+    "evidence": [
+      "Daniel 2:45"
+    ]
+  }
+]

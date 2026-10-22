@@ -1,0 +1,148 @@
+Escreva a cena "rf-04-desafio" da trilha "reforma" (Reforma).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "reforma",
+  "title": "Reforma",
+  "description": "Sola Scriptura e o reavivamento do evangelho no século XVI.",
+  "realm": "vida-crista"
+ },
+ "block": "Reforma",
+ "mission": {
+  "slug": "rf-04-desafio",
+  "title": "Desafio: Graça que permanece",
+  "type": "boss",
+  "intro": "Revise a autoridade da Escritura, a salvação pela graça e a centralidade do evangelho.",
+  "hookRef": "2Timóteo 3; Efésios 2; Romanos 1",
+  "hookNote": "Revise a autoridade da Escritura, a salvação pela graça e a centralidade do evangelho.",
+  "centralInsight": "O que este treino pede na prática?",
+  "objective": "2Timóteo 3; Efésios 2; Romanos 1"
+ },
+ "v2": {
+  "passageRef": "2Timóteo 3; Efésios 2; Romanos 1",
+  "context": "Revise a autoridade da Escritura, a salvação pela graça e a centralidade do evangelho.",
+  "keyword": "Graça",
+  "verseRefs": [
+   "2 Timóteo 3:16; Efésios 2:8; Romanos 1:17"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "rf-01-escritura",
+   "title": "Sola Scriptura",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "2 Timóteo 3:13–17"
+  },
+  {
+   "slug": "rf-02-fe-graca",
+   "title": "Sola fide, sola gratia",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Efésios 2:5–13"
+  },
+  {
+   "slug": "rf-03-legado",
+   "title": "Volta ao evangelho",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Romanos 1:13–20"
+  }
+ ],
+ "ranges": [
+  "2 Timóteo 3:13–17",
+  "Efésios 2:5–13",
+  "Romanos 1:13–20"
+ ],
+ "verses": [
+  {
+   "ref": "2 Timóteo 3:13",
+   "text": "Contudo, os homens perversos e impostores irão de mal a pior, enganando e sendo enganados."
+  },
+  {
+   "ref": "2 Timóteo 3:14",
+   "text": "Tu, porém, permanece firme nas coisas que aprendeste e das quais te tornaste plenamente ciente, sabendo de quem as aprendeste."
+  },
+  {
+   "ref": "2 Timóteo 3:15",
+   "text": "E desde a infância, tu conheces as sagradas letras, que podem tornar-te sábio para a salvação pela fé em Cristo Jesus."
+  },
+  {
+   "ref": "2 Timóteo 3:16",
+   "text": "Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça;"
+  },
+  {
+   "ref": "2 Timóteo 3:17",
+   "text": "Para que o homem de Deus seja perfeito e completamente preparado para toda boa obra."
+  },
+  {
+   "ref": "Efésios 2:5",
+   "text": "Estando nós mortos em nossas transgressões, nos deu vida juntamente com Cristo — pela graça sois salvos."
+  },
+  {
+   "ref": "Efésios 2:6",
+   "text": "E nos ressuscitou juntamente com Ele, e nos fez assentar nos lugares celestiais em Cristo Jesus;"
+  },
+  {
+   "ref": "Efésios 2:7",
+   "text": "Para revelar, nos séculos futuros, a incomparável riqueza da sua graça, por sua bondade para conosco, em Cristo Jesus."
+  },
+  {
+   "ref": "Efésios 2:8",
+   "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus."
+  },
+  {
+   "ref": "Efésios 2:9",
+   "text": "não é resultado de obras, para que ninguém se glorie."
+  },
+  {
+   "ref": "Efésios 2:10",
+   "text": "Porque somos obra de Deus, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas."
+  },
+  {
+   "ref": "Efésios 2:11",
+   "text": "Portanto, lembrem-se de que, outrora, vocês eram gentios na carne, chamados de incircuncisão por aqueles que se dizem circuncisão, feita por mãos humanas."
+  },
+  {
+   "ref": "Efésios 2:12",
+   "text": "Naquele tempo, vocês estavam sem Cristo, afastados da comunidade de Israel e estranhos às alianças da promessa, sem esperança e sem Deus no mundo."
+  },
+  {
+   "ref": "Efésios 2:13",
+   "text": "Mas agora, em Cristo Jesus, vocês que antes estavam distantes, foram aproximados pelo sangue de Cristo."
+  },
+  {
+   "ref": "Romanos 1:13",
+   "text": "Irmãos, não quero que ignorem que, muitas vezes, me propus ir ter convosco, mas até agora tenho sido impedido, para também conseguir entre vocês algum fruto, assim como entre os demais gentios."
+  },
+  {
+   "ref": "Romanos 1:14",
+   "text": "Eu sou devedor tanto a gregos como a bárbaros, tanto a sábios como a ignorantes."
+  },
+  {
+   "ref": "Romanos 1:15",
+   "text": "Por isso, estou preparado para anunciar o evangelho também a vocês que estão em Roma."
+  },
+  {
+   "ref": "Romanos 1:16",
+   "text": "Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê, primeiramente do judeu e também do grego."
+  },
+  {
+   "ref": "Romanos 1:17",
+   "text": "Porque nele é revelada a justiça de Deus, de fé em fé, como está escrito: \"O justo viverá pela fé.\""
+  },
+  {
+   "ref": "Romanos 1:18",
+   "text": "Porque a ira de Deus se revela do céu contra toda impiedade e injustiça dos homens que detêm a verdade pela injustiça."
+  },
+  {
+   "ref": "Romanos 1:19",
+   "text": "Porque o que se pode conhecer a respeito de Deus está claramente revelado entre eles, pois Deus o tornou conhecido"
+  },
+  {
+   "ref": "Romanos 1:20",
+   "text": "Pois, desde a criação do mundo, os atributos invisíveis de Deus, seu eterno poder e sua própria divindade, podem ser reconhecidos e percebidos nas coisas que foram criadas, de modo que tais homens são, portanto, indesculpáveis;"
+  }
+ ]
+}
+</cena>

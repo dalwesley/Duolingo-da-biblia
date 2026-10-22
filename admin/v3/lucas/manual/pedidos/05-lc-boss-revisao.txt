@@ -1,0 +1,187 @@
+Escreva a cena "lc-boss-revisao" da trilha "lucas" (Lucas).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "lucas",
+  "title": "Lucas",
+  "description": "O Salvador dos perdidos — misericórdia e o caminho ao pai.",
+  "realm": "novo-testamento"
+ },
+ "block": "Lucas",
+ "mission": {
+  "slug": "lc-boss-revisao",
+  "title": "Desafio: O Salvador que busca",
+  "type": "boss",
+  "intro": "Revise as boas-novas aos humildes, a misericórdia, o caminho de Jerusalém e a vitória de Cristo.",
+  "hookRef": "Desafio: O Salvador que busca",
+  "hookNote": "Revise as boas-novas aos humildes, a misericórdia, o caminho de Jerusalém e a vitória de Cristo.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Revisão de Lucas"
+ },
+ "v2": {
+  "passageRef": "Desafio: O Salvador que busca",
+  "context": "Revise as boas-novas aos humildes, a misericórdia, o caminho de Jerusalém e a vitória de Cristo.",
+  "keyword": "Salvador",
+  "verseRefs": [
+   "Lucas 19:10"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "lc-01-salvador-humilde",
+   "title": "O Salvador dos humildes",
+   "centralInsight": "O nascimento de Jesus é anunciado a pastores. Lucas destaca a alegria da salvação e a graça de Deus que alcança os humildes.",
+   "ref": "Lucas 2:7–14"
+  },
+  {
+   "slug": "lc-02-misericordia",
+   "title": "A misericórdia que busca",
+   "centralInsight": "As parábolas da ovelha, da moeda e do filho perdido revelam o coração de Deus. Jesus recebe pecadores e os chama ao arrependimento.",
+   "ref": "Lucas 15:4–10"
+  },
+  {
+   "slug": "lc-03-caminho-jerusalem",
+   "title": "Rumo a Jerusalém",
+   "centralInsight": "A viagem a Jerusalém organiza grande parte de Lucas. Jesus sabe que sua missão envolve sofrimento, mas segue obediente ao plano do Pai.",
+   "ref": "Lucas 9:48–54"
+  },
+  {
+   "slug": "lc-04-vitoria-ressurreicao",
+   "title": "A vitória do Cristo",
+   "centralInsight": "O Cristo não foi derrotado pela cruz. Seu sofrimento e sua glória cumprem o plano de Deus anunciado nas Escrituras.",
+   "ref": "Lucas 24:43–50"
+  }
+ ],
+ "ranges": [
+  "Lucas 2:7–14",
+  "Lucas 15:4–10",
+  "Lucas 9:48–54",
+  "Lucas 24:43–50"
+ ],
+ "verses": [
+  {
+   "ref": "Lucas 2:7",
+   "text": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria."
+  },
+  {
+   "ref": "Lucas 2:8",
+   "text": "Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite."
+  },
+  {
+   "ref": "Lucas 2:9",
+   "text": "E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor."
+  },
+  {
+   "ref": "Lucas 2:10",
+   "text": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo:"
+  },
+  {
+   "ref": "Lucas 2:11",
+   "text": "Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor."
+  },
+  {
+   "ref": "Lucas 2:12",
+   "text": "E isto servirá de sinal para vocês: encontrarão o menino envolto em faixas e deitado em uma manjedoura."
+  },
+  {
+   "ref": "Lucas 2:13",
+   "text": "E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo:"
+  },
+  {
+   "ref": "Lucas 2:14",
+   "text": "Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem."
+  },
+  {
+   "ref": "Lucas 15:4",
+   "text": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la?"
+  },
+  {
+   "ref": "Lucas 15:5",
+   "text": "E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo."
+  },
+  {
+   "ref": "Lucas 15:6",
+   "text": "E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida."
+  },
+  {
+   "ref": "Lucas 15:7",
+   "text": "Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento."
+  },
+  {
+   "ref": "Lucas 15:8",
+   "text": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la?"
+  },
+  {
+   "ref": "Lucas 15:9",
+   "text": "E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a dracma que tinha perdido."
+  },
+  {
+   "ref": "Lucas 15:10",
+   "text": "Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende."
+  },
+  {
+   "ref": "Lucas 9:48",
+   "text": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande."
+  },
+  {
+   "ref": "Lucas 9:49",
+   "text": "João respondeu: Mestre, vimos certo homem expulsando demônios em teu nome, e o proibimos, porque não anda conosco."
+  },
+  {
+   "ref": "Lucas 9:50",
+   "text": "Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês."
+  },
+  {
+   "ref": "Lucas 9:51",
+   "text": "Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho."
+  },
+  {
+   "ref": "Lucas 9:52",
+   "text": "E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada."
+  },
+  {
+   "ref": "Lucas 9:53",
+   "text": "Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém."
+  },
+  {
+   "ref": "Lucas 9:54",
+   "text": "E os seus discípulos, Tiago e João, vendo isso, perguntaram: Senhor, queres que mandemos descer fogo do céu para consumi-los?"
+  },
+  {
+   "ref": "Lucas 24:43",
+   "text": "E ele o pegou e comeu na presença deles."
+  },
+  {
+   "ref": "Lucas 24:44",
+   "text": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos."
+  },
+  {
+   "ref": "Lucas 24:45",
+   "text": "Então, lhes abriu o entendimento para que pudessem compreender as Escrituras."
+  },
+  {
+   "ref": "Lucas 24:46",
+   "text": "E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia;"
+  },
+  {
+   "ref": "Lucas 24:47",
+   "text": "E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém."
+  },
+  {
+   "ref": "Lucas 24:48",
+   "text": "E vocês são testemunhas dessas coisas."
+  },
+  {
+   "ref": "Lucas 24:49",
+   "text": "Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de poder."
+  },
+  {
+   "ref": "Lucas 24:50",
+   "text": "E os levou para fora, até Betânia; e, erguendo as mãos, os abençoou."
+  }
+ ]
+}
+</cena>

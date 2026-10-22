@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Joel 2:28–29",
+  "passages": [
+   {
+    "ref": "Joel 2:28–29"
+   },
+   {
+    "ref": "Joel 2:25–27"
+   },
+   {
+    "ref": "Joel 2:30–31"
+   }
+  ],
+  "context": "Depois de anunciar restauração ao povo, Joel traz a promessa maior do livro: Deus derramará o seu Espírito sobre toda a carne, sem deixar servos e servas de fora.",
+  "keyword": "derramarei",
+  "keywordGloss": "Verbo de Deus na promessa: é ele quem derrama o Espírito, em abundância e por iniciativa própria.",
+  "focusQuestion": "Quem você costuma deixar de fora quando pensa em quem Deus alcança, e o que Joel 2 muda nisso?",
+  "reflectionPrompts": [
+   "Toda a carne alcançada",
+   "Filhos, velhos e servos",
+   "Espírito dado por Deus"
+  ],
+  "facts": [
+   {
+    "text": "Deus derramará o Espírito sobre toda a carne.",
+    "evidenceRef": "Joel 2:28",
+    "evidenceSpan": "derramarei o meu Espírito sobre toda a carne"
+   },
+   {
+    "text": "Filhos e filhas profetizarão.",
+    "evidenceRef": "Joel 2:28",
+    "evidenceSpan": "os vossos filhos e filhas profetizarão"
+   },
+   {
+    "text": "Velhos sonharão e jovens terão visões.",
+    "evidenceRef": "Joel 2:28",
+    "evidenceSpan": "os vossos velhos sonharão e os jovens terão visões"
+   },
+   {
+    "text": "Servos e servas também receberão o Espírito.",
+    "evidenceRef": "Joel 2:29",
+    "evidenceSpan": "também derramarei o meu Espírito sobre os servos"
+   },
+   {
+    "text": "Deus mostrará prodígios no céu e na terra.",
+    "evidenceRef": "Joel 2:30",
+    "evidenceSpan": "Mostrarei prodígios no céu e na terra"
+   },
+   {
+    "text": "O sol se tornará em trevas antes do Dia do Senhor.",
+    "evidenceRef": "Joel 2:31",
+    "evidenceSpan": "O sol se tornará em trevas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "derramarei",
+    "gloss": "Ação futura de Deus: ele mesmo derrama o Espírito, sem intermediário humano."
+   },
+   {
+    "term": "toda a carne",
+    "gloss": "Expressão de alcance total: a promessa não fica restrita a um grupo."
+   },
+   {
+    "term": "profetizarão",
+    "gloss": "Filhos e filhas falarão movidos pelo Espírito que Deus derrama."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus anuncia um depois",
+    "evidenceRef": "Joel 2:28"
+   },
+   {
+    "label": "Espírito sobre toda a carne",
+    "evidenceRef": "Joel 2:28"
+   },
+   {
+    "label": "Servos e servas incluídos",
+    "evidenceRef": "Joel 2:29"
+   },
+   {
+    "label": "Sinais antes do grande Dia",
+    "evidenceRef": "Joel 2:31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "A promessa do Espírito é situada depois da restauração anunciada.",
+    "marker": "depois",
+    "evidenceRef": "Joel 2:28"
+   },
+   {
+    "kind": "sequência",
+    "text": "Os sinais no sol e na lua vêm antes da vinda do Dia do Senhor.",
+    "marker": "antes",
+    "evidenceRef": "Joel 2:31"
+   },
+   {
+    "kind": "resultado",
+    "text": "Com o Espírito derramado, filhos e filhas profetizam e jovens veem.",
+    "marker": null,
+    "evidenceRef": "Joel 2:28"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Atos 2:17",
+    "bridge": "Pedro cita Joel no Pentecostes"
+   },
+   {
+    "ref": "Ezequiel 36:27",
+    "bridge": "Espírito dentro do povo"
+   },
+   {
+    "ref": "Números 11:29",
+    "bridge": "Moisés deseja todos profetizando"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O Espírito prometido é só para líderes e profetas de profissão.",
+    "why": "O texto nomeia filhos, filhas, velhos, jovens, servos e servas."
+   },
+   {
+    "text": "A promessa alcança só homens adultos.",
+    "why": "Filhas e servas são nomeadas ao lado de filhos e servos."
+   },
+   {
+    "text": "Os sinais de Joel 2 permitem marcar a data do Dia do Senhor.",
+    "why": "O texto anuncia sinais antes do Dia, sem dar data alguma ao leitor."
+   }
+  ],
+  "centralInsight": "Deus derrama o Espírito sobre toda a carne, sem excluir ninguém",
+  "anchorQuestion": "Quem Joel 2:28–29 diz que receberá o Espírito que Deus derrama?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Joel 2:28, Deus derramará o seu Espírito apenas sobre os velhos.",
+   "verseRef": "Joel 2:28–29",
+   "correctOptionId": "false",
+   "evidenceSpan": "sobre toda a carne",
+   "feedbackCorrect": "O alcance anunciado é toda a carne, não um só grupo de idade.",
+   "feedbackWrong": {
+    "true": "Releia sobre quem o Espírito é derramado no começo do verso."
+   },
+   "hint": "Veja o alcance dito logo após o verbo derramar.",
+   "learningObjective": "Observar o alcance universal de Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Joel 2:28, toque sobre quem Deus derramará o seu Espírito.",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "toda a carne"
+    },
+    {
+     "id": "b",
+     "text": "vossos filhos"
+    },
+    {
+     "id": "c",
+     "text": "vossos velhos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sobre toda a carne",
+   "feedbackCorrect": "A promessa abrange todas as pessoas, sem recorte de grupo.",
+   "feedbackWrong": {
+    "b": "Filhos são parte do alcance, mas a frase maior vem antes.",
+    "c": "Velhos sonham dentro da promessa, mas o alcance é maior."
+   },
+   "hint": "Procure a expressão mais ampla do versículo.",
+   "learningObjective": "Identificar o alcance da promessa em Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Joel 2:29, quem também receberá o Espírito naqueles dias?",
+   "verseRef": "Joel 2:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "Somente os filhos mais velhos"
+    },
+    {
+     "id": "b",
+     "text": "Somente os profetas antigos"
+    },
+    {
+     "id": "c",
+     "text": "Os servos e as servas"
+    },
+    {
+     "id": "d",
+     "text": "Somente os moradores de Sião"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "sobre os servos e sobre as servas",
+   "feedbackCorrect": "Quem servia, muitas vezes esquecido, também é incluído.",
+   "feedbackWrong": {
+    "a": "Filhos aparecem em 2:28; aqui outros são acrescentados.",
+    "b": "Profetas antigos não são o acréscimo deste versículo.",
+    "d": "O versículo não limita o dom a moradores de um lugar."
+   },
+   "hint": "Leia quem é acrescentado com a palavra também.",
+   "learningObjective": "Observar a inclusão dos servos em Joel 2:29.",
+   "evidence": [
+    "Joel 2:29"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Joel 2:28 na ordem do texto.",
+   "verseRef": "Joel 2:28–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "derramarei o meu Espírito sobre toda a carne"
+    },
+    {
+     "id": "b",
+     "text": "os vossos filhos e filhas profetizarão"
+    },
+    {
+     "id": "c",
+     "text": "os jovens terão visões"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+   "feedbackCorrect": "Derramamento, filhos profetizando e jovens com visões, nesta ordem.",
+   "feedbackWrong": {
+    "default": "Comece pelo derramamento, que abre a promessa do versículo."
+   },
+   "hint": "O versículo abre com a ação de Deus.",
+   "learningObjective": "Reconhecer a sequência de Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Joel 2:28, o que os jovens terão, segundo a promessa?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "sonhos"
+    },
+    {
+     "id": "b",
+     "text": "visões"
+    },
+    {
+     "id": "c",
+     "text": "cargos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "os jovens terão visões",
+   "feedbackCorrect": "Aos jovens cabem visões, dentro da mesma promessa ampla.",
+   "feedbackWrong": {
+    "a": "Sonhar é dito dos velhos; aos jovens cabe outra palavra.",
+    "c": "A promessa não fala de cargos para os jovens aqui."
+   },
+   "hint": "Compare o que cabe aos velhos e o que cabe aos jovens.",
+   "learningObjective": "Lembrar o que os jovens terão em Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Joel 2:28 comunica que se liga a este contexto?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Espírito para toda a carne"
+    },
+    {
+     "id": "b",
+     "text": "Espírito só para reis"
+    },
+    {
+     "id": "c",
+     "text": "Espírito sem profecia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sobre toda a carne",
+   "feedbackCorrect": "A promessa alcança gente comum, de idades e condições variadas.",
+   "feedbackWrong": {
+    "b": "Reis nem são nomeados; o alcance é bem mais amplo.",
+    "c": "Filhos e filhas profetizarão, diz o próprio versículo."
+   },
+   "hint": "Veja a amplitude de quem é alcançado.",
+   "learningObjective": "Ligar Joel 2:28 à inclusão de todas as pessoas.",
+   "evidence": [
+    "Joel 2:28"
+   ],
+   "passageA": {
+    "ref": "Joel 2:28"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A promessa alcança gente comum de todas as idades."
+   }
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Joel 2:28–29, os servos e as servas ficam de fora do derramamento do Espírito.",
+   "verseRef": "Joel 2:29",
+   "correctOptionId": "false",
+   "evidenceSpan": "também derramarei o meu Espírito sobre os servos",
+   "feedbackCorrect": "A palavra também inclui servos e servas na mesma promessa.",
+   "feedbackWrong": {
+    "true": "Releia 2:29, onde servos e servas são acrescentados."
+   },
+   "hint": "Preste atenção em quem o segundo versículo acrescenta.",
+   "learningObjective": "Compreender que Joel 2:29 amplia o alcance de 2:28.",
+   "evidence": [
+    "Joel 2:29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Joel 2:29, toque a palavra que acrescenta servos e servas à promessa.",
+   "verseRef": "Joel 2:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre"
+    },
+    {
+     "id": "b",
+     "text": "também"
+    },
+    {
+     "id": "c",
+     "text": "naqueles"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "E também derramarei",
+   "feedbackCorrect": "A promessa se alarga e inclui quem antes não era contado.",
+   "feedbackWrong": {
+    "a": "Sobre indica sobre quem, não o acréscimo à promessa.",
+    "c": "Naqueles marca o tempo, não o acréscimo de pessoas."
+   },
+   "hint": "Procure a palavra que soma gente nova à lista.",
+   "learningObjective": "Reconhecer o marcador de inclusão em Joel 2:29.",
+   "evidence": [
+    "Joel 2:29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Joel 2:29 se relaciona com Joel 2:28?",
+   "verseRef": "Joel 2:28–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "Limita a promessa a um grupo menor"
+    },
+    {
+     "id": "b",
+     "text": "Troca o Espírito por sinais no céu"
+    },
+    {
+     "id": "c",
+     "text": "Encerra a promessa antes dos sinais"
+    },
+    {
+     "id": "d",
+     "text": "Amplia a promessa para quem servia"
+    }
+   ],
+   "correctOptionId": "d",
+   "evidenceSpan": "E também derramarei o meu Espírito sobre os servos",
+   "feedbackCorrect": "O segundo versículo alarga a lista e inclui os servos.",
+   "feedbackWrong": {
+    "a": "A lista cresce em 2:29, não diminui o alcance.",
+    "b": "O Espírito continua no centro; sinais vêm em 2:30.",
+    "c": "A promessa continua e se amplia no versículo seguinte."
+   },
+   "hint": "Veja o que muda na lista de pessoas entre os versos.",
+   "learningObjective": "Relacionar a ampliação de Joel 2:29 com 2:28.",
+   "evidence": [
+    "Joel 2:28–29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a promessa em Joel 2:28–29?",
+   "verseRef": "Joel 2:28–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus anuncia um tempo depois"
+    },
+    {
+     "id": "b",
+     "text": "Espírito sobre toda a carne"
+    },
+    {
+     "id": "c",
+     "text": "Servos e servas incluídos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E acontecerá que, depois, derramarei",
+   "feedbackCorrect": "Do anúncio do depois, o texto chega aos servos incluídos.",
+   "feedbackWrong": {
+    "default": "Comece pelo anúncio que abre 2:28, antes da lista."
+   },
+   "hint": "Siga a ordem em que as pessoas são nomeadas.",
+   "learningObjective": "Compreender o movimento de ampliação da promessa.",
+   "evidence": [
+    "Joel 2:28–29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Joel 2:29, sobre os servos e sobre quem mais Deus derramará o Espírito?",
+   "verseRef": "Joel 2:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "filhas"
+    },
+    {
+     "id": "b",
+     "text": "jovens"
+    },
+    {
+     "id": "c",
+     "text": "servas"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "sobre as servas naqueles dias",
+   "feedbackCorrect": "Servas são nomeadas ao lado dos servos, no mesmo derramamento.",
+   "feedbackWrong": {
+    "a": "Filhas aparecem em 2:28; aqui o par é com os servos.",
+    "b": "Jovens aparecem em 2:28; aqui quem acompanha os servos é outro grupo."
+   },
+   "hint": "Leia o par que o versículo forma com os servos.",
+   "learningObjective": "Lembrar quem acompanha os servos em Joel 2:29.",
+   "evidence": [
+    "Joel 2:29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Joel 2:28 a Números 11:29?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Espírito restrito a Moisés"
+    },
+    {
+     "id": "b",
+     "text": "Espírito além de um líder"
+    },
+    {
+     "id": "c",
+     "text": "Profecia sem o Espírito"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "sobre toda a carne",
+   "feedbackCorrect": "Moisés deseja que todo o povo receba o Espírito de Deus.",
+   "feedbackWrong": {
+    "a": "Moisés deseja justamente o contrário de um dom restrito.",
+    "c": "Nos dois textos, profetizar vem do Espírito dado por Deus."
+   },
+   "hint": "Veja o desejo que Moisés expressa no outro trecho.",
+   "learningObjective": "Relacionar o desejo de Moisés à promessa de Joel.",
+   "evidence": [
+    "Joel 2:28",
+    "Números 11:29"
+   ],
+   "passageA": {
+    "ref": "Joel 2:28"
+   },
+   "passageB": {
+    "ref": "Números 11:29"
+   }
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Joel 2:28–31 liga o derramamento do Espírito a sinais que vêm antes do Dia do Senhor.",
+   "verseRef": "Joel 2:31",
+   "correctOptionId": "true",
+   "evidenceSpan": "antes que venha o grande e temível Dia do Senhor",
+   "feedbackCorrect": "Espírito derramado e sinais aparecem na mesma sequência do texto.",
+   "feedbackWrong": {
+    "false": "Leia 2:28 a 2:31 em sequência e veja os sinais antes do Dia."
+   },
+   "hint": "Leia os quatro versículos como uma sequência só.",
+   "learningObjective": "Interpretar Espírito e sinais dentro da mesma promessa.",
+   "evidence": [
+    "Joel 2:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Joel 2:30, toque o que Deus mostrará no céu e na terra.",
+   "verseRef": "Joel 2:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "prodígios"
+    },
+    {
+     "id": "b",
+     "text": "sangue"
+    },
+    {
+     "id": "c",
+     "text": "fogo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mostrarei prodígios no céu e na terra",
+   "feedbackCorrect": "Sinais extraordinários acompanham a promessa do Espírito.",
+   "feedbackWrong": {
+    "b": "Sangue é um dos sinais listados, não o nome dado a todos.",
+    "c": "Fogo é um dos sinais listados, não o nome dado a todos."
+   },
+   "hint": "Procure a palavra que resume todos os sinais.",
+   "learningObjective": "Sustentar com o texto os sinais de Joel 2:30.",
+   "evidence": [
+    "Joel 2:30"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Joel 2:28 sustenta sobre o alcance do Espírito?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus restringe o dom a profetas de profissão"
+    },
+    {
+     "id": "b",
+     "text": "Deus limita o dom a homens já idosos"
+    },
+    {
+     "id": "c",
+     "text": "Deus inclui idades e condições diferentes"
+    },
+    {
+     "id": "d",
+     "text": "Deus entrega o dom só a quem governa"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "sobre toda a carne",
+   "feedbackCorrect": "Jovens e velhos, filhos e filhas aparecem na mesma promessa.",
+   "feedbackWrong": {
+    "a": "A lista vai muito além de profetas de profissão.",
+    "b": "Jovens e filhas desmentem um dom só para idosos.",
+    "d": "Servos em 2:29 mostram que governar não é condição."
+   },
+   "hint": "Compare a lista inteira de pessoas do trecho.",
+   "learningObjective": "Escolher a leitura sustentada pelo alcance de Joel 2:28.",
+   "evidence": [
+    "Joel 2:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da promessa do Espírito na Bíblia?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus promete derramar o Espírito"
+    },
+    {
+     "id": "b",
+     "text": "Pedro reconhece Joel no Pentecostes"
+    },
+    {
+     "id": "c",
+     "text": "A promessa alcança os que Deus chama"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "derramarei o meu Espírito sobre toda a carne",
+   "feedbackCorrect": "Joel promete, Pedro reconhece em Atos e a promessa se alarga.",
+   "feedbackWrong": {
+    "default": "Comece pela promessa em Joel, antes do Pentecostes."
+   },
+   "hint": "Siga a ordem entre Antigo e Novo Testamento.",
+   "learningObjective": "Ver Joel 2:28 dentro do fio que chega a Atos 2.",
+   "evidence": [
+    "Joel 2:28",
+    "Atos 2:17",
+    "Atos 2:39"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Joel 2:31, em que a lua se tornará antes do Dia do Senhor?",
+   "verseRef": "Joel 2:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "sangue"
+    },
+    {
+     "id": "b",
+     "text": "trevas"
+    },
+    {
+     "id": "c",
+     "text": "luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a lua em sangue",
+   "feedbackCorrect": "A lua em sangue é um dos sinais antes do grande Dia.",
+   "feedbackWrong": {
+    "b": "Trevas é o que acontece com o sol, não com a lua aqui.",
+    "c": "O texto não fala de mais luz, e sim de mudança na lua."
+   },
+   "hint": "Não confunda o que acontece com o sol e com a lua.",
+   "learningObjective": "Lembrar o sinal da lua em Joel 2:31.",
+   "evidence": [
+    "Joel 2:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Joel 2:28 a Atos 2:17?",
+   "verseRef": "Joel 2:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Uma promessa sem cumprimento citado"
+    },
+    {
+     "id": "b",
+     "text": "Pedro cita Joel em Pentecostes"
+    },
+    {
+     "id": "c",
+     "text": "Espírito dado só aos apóstolos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "derramarei o meu Espírito",
+   "feedbackCorrect": "No Pentecostes, Pedro lê o acontecimento com as palavras de Joel.",
+   "feedbackWrong": {
+    "a": "Pedro apresenta o Pentecostes com a profecia de Joel.",
+    "c": "Atos repete a promessa sobre toda a carne, sem restringir."
+   },
+   "hint": "Veja como Pedro explica o Pentecostes em Atos.",
+   "learningObjective": "Ligar Joel 2:28 ao Pentecostes, como o Novo Testamento faz.",
+   "evidence": [
+    "Joel 2:28",
+    "Atos 2:17"
+   ],
+   "passageA": {
+    "ref": "Joel 2:28"
+   },
+   "passageB": {
+    "ref": "Atos 2:17"
+   }
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+Escreva a cena "samuel-davi-01-davi-ungido" da trilha "samuel" (1–2 Samuel).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "samuel",
+  "title": "1–2 Samuel",
+  "description": "De Samuel a Saul e Davi — rei segundo o coração de Deus.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Davi",
+ "mission": {
+  "slug": "samuel-davi-01-davi-ungido",
+  "title": "Davi ungido",
+  "type": "lesson",
+  "intro": "O Senhor vê o coração.",
+  "hookRef": "1 Samuel 16:13",
+  "hookNote": "O Senhor vê o coração.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre davi?"
+ },
+ "v2": {
+  "passageRef": "1 Samuel 16:13",
+  "context": "O Senhor vê o coração.",
+  "keyword": "Davi",
+  "verseRefs": [
+   "1 Samuel 16:13"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "1 Samuel 16:10–16"
+ ],
+ "verses": [
+  {
+   "ref": "1 Samuel 16:10",
+   "text": "Jessé fez passar seus sete filhos diante de Samuel; porém Samuel disse a Jessé: \"O Senhor não escolheu estes.\""
+  },
+  {
+   "ref": "1 Samuel 16:11",
+   "text": "Disse Samuel a Jessé: Acabaram-se os teus filhos? Ele respondeu: Ainda falta o mais moço, que está apascentando as ovelhas. Então Samuel disse a Jessé: Manda chamá-lo, pois não nos assentaremos à mesa enquanto ele não vier."
+  },
+  {
+   "ref": "1 Samuel 16:12",
+   "text": "Então mandou que o chamassem e o fizessem entrar. Ele era ruivo, de olhos formosos e boa aparência. Disse o SENHOR: Levanta-te e unge-o, pois este é ele."
+  },
+  {
+   "ref": "1 Samuel 16:13",
+   "text": "Então Samuel tomou o chifre de azeite e ungiu Davi na presença de seus irmãos; e, a partir daquele dia, o Espírito do Senhor se apossou de Davi. Então, Samuel se levantou e foi para Ramá."
+  },
+  {
+   "ref": "1 Samuel 16:14",
+   "text": "E o Espírito do Senhor se retirou de Saul, e um espírito maligno enviado pelo Senhor, o atormentava."
+  },
+  {
+   "ref": "1 Samuel 16:15",
+   "text": "Então, os servos de Saul disseram-lhe: Vê que agora um espírito maligno, enviado de Deus, te atormenta."
+  },
+  {
+   "ref": "1 Samuel 16:16",
+   "text": "Mande, pois, nosso senhor, que teus servos, que estão em tua presença, procurem um homem que saiba tocar harpa; e será que, quando o espírito maligno da parte do SENHOR vier sobre ti, então, ele a dedilhará, e tu te sentirás melhor."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,67 @@
+Escreva a cena "an-02-queda" da trilha "antropologia" (Antropologia).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "antropologia",
+  "title": "Antropologia",
+  "description": "O ser humano — imagem de Deus, queda e responsabilidade.",
+  "realm": "teologia"
+ },
+ "block": "Antropologia Bíblica",
+ "mission": {
+  "slug": "an-02-queda",
+  "title": "O pecado entrou no mundo",
+  "type": "lesson",
+  "intro": "O pecado rompeu nossa comunhão com Deus e afeta toda a humanidade.",
+  "hookRef": "Romanos 3:23",
+  "hookNote": "O pecado rompeu nossa comunhão com Deus e afeta toda a humanidade.",
+  "centralInsight": "Esta missão apresenta o pecado entrou no mundo de modo claro, a partir da Bíblia. O objetivo não é apenas aprender termos, mas conhecer mel…",
+  "objective": "Romanos 3:23"
+ },
+ "v2": {
+  "passageRef": "Romanos 3:23",
+  "context": "O pecado rompeu nossa comunhão com Deus e afeta toda a humanidade.",
+  "keyword": "Pecado",
+  "verseRefs": [
+   "Romanos 3:23"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 3:20–26"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 3:20",
+   "text": "Portanto, ninguém será justificado diante dele por meio das obras da lei, pois é pela lei que se obtém o pleno conhecimento do pecado."
+  },
+  {
+   "ref": "Romanos 3:21",
+   "text": "Mas agora a justiça de Deus, testemunhada pela lei e pelos profetas, se manifestou de forma independente da lei."
+  },
+  {
+   "ref": "Romanos 3:22",
+   "text": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção."
+  },
+  {
+   "ref": "Romanos 3:23",
+   "text": "Porque todos pecaram e carecem da glória de Deus,"
+  },
+  {
+   "ref": "Romanos 3:24",
+   "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+  },
+  {
+   "ref": "Romanos 3:25",
+   "text": "A quem Deus propôs, por meio da fé no seu sangue, como propiciação para manifestar a sua justiça, visto que, na sua tolerância, deixou impunes os pecados cometidos anteriormente;"
+  },
+  {
+   "ref": "Romanos 3:26",
+   "text": "Para demonstrar a sua justiça no tempo presente, a fim de que ele mesmo seja justo e justificador de quem tem fé em Jesus."
+  }
+ ]
+}
+</cena>

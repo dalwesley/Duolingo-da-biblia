@@ -1,0 +1,60 @@
+Escreva a cena "juizes-ciclo-02-deus-levanta-juizes" da trilha "juizes" (Juízes).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "juizes",
+  "title": "Juízes",
+  "description": "Ciclo de pecado, opressão, clamor e livramento.",
+  "realm": "antigo-testamento"
+ },
+ "block": "O ciclo",
+ "mission": {
+  "slug": "juizes-ciclo-02-deus-levanta-juizes",
+  "title": "Deus levanta juízes",
+  "type": "lesson",
+  "intro": "Livradores no meio da crise.",
+  "hookRef": "Juízes 21:25",
+  "hookNote": "Livradores no meio da crise.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre deus?"
+ },
+ "v2": {
+  "passageRef": "Juízes 21:25",
+  "context": "Livradores no meio da crise.",
+  "keyword": "Deus",
+  "verseRefs": [
+   "Juízes 2:16"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Juízes 21:22–25",
+  "Juízes 2:16"
+ ],
+ "verses": [
+  {
+   "ref": "Juízes 21:22",
+   "text": "E, quando seus pais ou irmãos vierem a nos reclamar, diremos: Por amor a nós, tenham compaixão deles, pois, nesta guerra não obtivemos mulheres para cada um deles; e vocês também não lhes deram, pois neste caso seriam culpados?"
+  },
+  {
+   "ref": "Juízes 21:23",
+   "text": "E os filhos de Benjamim fizeram assim, levaram as mulheres necessárias entre aquelas que haviam sido raptadas nas danças, partiram, retornaram para suas propriedades, reconstruíram as cidades e habitaram nelas."
+  },
+  {
+   "ref": "Juízes 21:24",
+   "text": "Então, os filhos de Israel partiram dali, cada um para a sua tribo, para a sua família e para a sua herança."
+  },
+  {
+   "ref": "Juízes 21:25",
+   "text": "Naqueles dias, não havia rei em Israel; cada um fazia o que lhe parecia mais reto."
+  },
+  {
+   "ref": "Juízes 2:16",
+   "text": "Então o Senhor levantou juízes que os libertaram das mãos dos que os saqueavam."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,191 @@
+Escreva a cena "mt-boss-revisao" da trilha "mateus" (Mateus).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "mateus",
+  "title": "Mateus",
+  "description": "O Rei prometido — cumprimento e o Sermão do Monte.",
+  "realm": "novo-testamento"
+ },
+ "block": "Mateus",
+ "mission": {
+  "slug": "mt-boss-revisao",
+  "title": "Desafio: O Rei e seu Reino",
+  "type": "boss",
+  "intro": "Revise Jesus, o Rei prometido, seu ensino, sua autoridade, sua morte e ressurreição.",
+  "hookRef": "Desafio: O Rei e seu Reino",
+  "hookNote": "Revise Jesus, o Rei prometido, seu ensino, sua autoridade, sua morte e ressurreição.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Revisão de Mateus"
+ },
+ "v2": {
+  "passageRef": "Desafio: O Rei e seu Reino",
+  "context": "Revise Jesus, o Rei prometido, seu ensino, sua autoridade, sua morte e ressurreição.",
+  "keyword": "Rei",
+  "verseRefs": [
+   "Mateus 1:21; 28:18"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "mt-01-rei-prometido",
+   "title": "O Rei prometido",
+   "centralInsight": "A genealogia liga Jesus a Abraão e Davi. Seu nascimento pelo Espírito Santo cumpre a promessa de Emanuel: Deus conosco.",
+   "ref": "Mateus 1:18–25"
+  },
+  {
+   "slug": "mt-02-reino-ensino",
+   "title": "O Reino e seu ensino",
+   "centralInsight": "No Sermão do Monte, Jesus não oferece um caminho para merecer Deus; ele descreve a vida daqueles que pertencem ao Reino e dependem dele.",
+   "ref": "Mateus 5:1–9"
+  },
+  {
+   "slug": "mt-03-autoridade",
+   "title": "Autoridade do Rei",
+   "centralInsight": "Os milagres em Mateus não são truques: revelam a autoridade do Messias e apontam para sua compaixão e seu Reino.",
+   "ref": "Mateus 8:23–30"
+  },
+  {
+   "slug": "mt-04-cruz-vitoria",
+   "title": "A cruz e a vitória",
+   "centralInsight": "A morte de Jesus é voluntária e sacrificial. Sua ressurreição confirma sua vitória e fundamenta a missão da igreja.",
+   "ref": "Mateus 28:15–20"
+  }
+ ],
+ "ranges": [
+  "Mateus 1:18–25",
+  "Mateus 5:1–9",
+  "Mateus 8:23–30",
+  "Mateus 28:15–20"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 1:18",
+   "text": "O nascimento de Jesus Cristo ocorreu da seguinte maneira: Maria, sua mãe, estava desposada com José; sem que tivessem coabitado, ela achou-se grávida pelo Espírito Santo."
+  },
+  {
+   "ref": "Mateus 1:19",
+   "text": "Então José, seu esposo, sendo justo e não querendo infamá-la, resolveu deixá-la secretamente."
+  },
+  {
+   "ref": "Mateus 1:20",
+   "text": "E, enquanto ele refletia sobre isso, eis que em um sonho lhe apareceu um anjo do Senhor, dizendo: José, filho de Davi, não temas receber Maria, sua mulher, porque o que nela foi gerado é do Espírito Santo."
+  },
+  {
+   "ref": "Mateus 1:21",
+   "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+  },
+  {
+   "ref": "Mateus 1:22",
+   "text": "Tudo isso aconteceu para que se cumprisse o que havia sido dito pelo Senhor, por intermédio do profeta:"
+  },
+  {
+   "ref": "Mateus 1:23",
+   "text": "A virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que quer dizer: Deus conosco)."
+  },
+  {
+   "ref": "Mateus 1:24",
+   "text": "E José, ao acordar do sono, fez como o anjo do Senhor lhe havia ordenado e recebeu sua esposa."
+  },
+  {
+   "ref": "Mateus 1:25",
+   "text": "E não a conheceu até que ela deu à luz seu filho, o primogênito; e lhe pôs o nome de Jesus."
+  },
+  {
+   "ref": "Mateus 5:1",
+   "text": "E, vendo Jesus as multidões, subiu a um monte, e, ao se assentar, aproximaram-se dele os seus discípulos."
+  },
+  {
+   "ref": "Mateus 5:2",
+   "text": "E, abrindo a boca, passou a ensiná-los, dizendo:"
+  },
+  {
+   "ref": "Mateus 5:3",
+   "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus."
+  },
+  {
+   "ref": "Mateus 5:4",
+   "text": "Bem-aventurados os que choram, porque serão consolados."
+  },
+  {
+   "ref": "Mateus 5:5",
+   "text": "Bem-aventurados os mansos, porque herdarão a terra."
+  },
+  {
+   "ref": "Mateus 5:6",
+   "text": "Bem-aventurados os que têm fome e sede de justiça, pois serão fartos."
+  },
+  {
+   "ref": "Mateus 5:7",
+   "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+  },
+  {
+   "ref": "Mateus 5:8",
+   "text": "Bem-aventurados os puros de coração, pois verão a Deus."
+  },
+  {
+   "ref": "Mateus 5:9",
+   "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+  },
+  {
+   "ref": "Mateus 8:23",
+   "text": "E, ao entrar no barco, os seus discípulos o acompanharam."
+  },
+  {
+   "ref": "Mateus 8:24",
+   "text": "E uma grande tempestade se levantou sobre o mar, de modo que o barco era agitado pelas ondas; entretanto, Jesus dormia."
+  },
+  {
+   "ref": "Mateus 8:25",
+   "text": "E os seus discípulos se aproximaram dele e o acordaram, clamando: Senhor, salva-nos! Estamos perecendo!"
+  },
+  {
+   "ref": "Mateus 8:26",
+   "text": "E ele lhes disse: Por que estais com medo, homens de pequena fé? Então, levantando-se, repreendeu os ventos e o mar, e houve uma grande bonança."
+  },
+  {
+   "ref": "Mateus 8:27",
+   "text": "E aqueles homens ficaram maravilhados dizendo: Quem é este que até os ventos e o mar lhe obedecem?"
+  },
+  {
+   "ref": "Mateus 8:28",
+   "text": "Ao chegarem à outra margem, na terra dos gadarenos, saíram ao encontro dele dois endemoniados, saindo dos sepulcros, tão furiosos que ninguém podia passar por aquele caminho."
+  },
+  {
+   "ref": "Mateus 8:29",
+   "text": "E clamaram, dizendo: O que temos nós a ver contigo, ó Filho de Deus? Vieste aqui para nos atormentar antes do tempo?"
+  },
+  {
+   "ref": "Mateus 8:30",
+   "text": "E havia uma grande manada de porcos pastando não muito longe deles."
+  },
+  {
+   "ref": "Mateus 28:15",
+   "text": "E eles, recebendo o dinheiro, agiram conforme as instruções que receberam. E essa informação se propagou entre os judeus até os dias atuais."
+  },
+  {
+   "ref": "Mateus 28:16",
+   "text": "Os onze discípulos seguiram para a Galileia, rumo ao monte que Jesus lhes havia designado."
+  },
+  {
+   "ref": "Mateus 28:17",
+   "text": "Quando o viram, adoraram-no; mas alguns hesitaram."
+  },
+  {
+   "ref": "Mateus 28:18",
+   "text": "E, aproximando-se de Jesus, Ele lhes disse: Toda a autoridade me foi dada no céu e na terra."
+  },
+  {
+   "ref": "Mateus 28:19",
+   "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+  },
+  {
+   "ref": "Mateus 28:20",
+   "text": "Ensinando-os a observar tudo o que vos ordenei; e eis que estou convosco todos os dias até a consumação do século. Amém."
+  }
+ ]
+}
+</cena>

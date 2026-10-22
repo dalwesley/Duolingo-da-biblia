@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Rute 2:8–9",
+    "passages": [
+      {
+        "ref": "Rute 2:8–9"
+      }
+    ],
+    "context": "Rute, a viúva moabita que acompanhou Noemi até Belém, saiu para colher as espigas que sobrassem num campo. O campo era de Boaz, parente do falecido marido de Noemi, e ele a notou entre os trabalhadores.",
+    "keyword": "Ficar perto",
+    "keywordGloss": "Boaz não manda Rute embora: ele a coloca junto das suas servas, sob sua proteção.",
+    "focusQuestion": "Onde Deus já colocou proteção e sustento no seu caminho sem você perceber?",
+    "reflectionPrompts": [
+      "Favor que não mereci",
+      "Proteção no trabalho",
+      "Ficar onde Deus pôs"
+    ],
+    "facts": [
+      {
+        "text": "Boaz mandou Rute não colher em outro campo.",
+        "evidenceRef": "Rute 2:8",
+        "evidenceSpan": "não vá colher em outro campo"
+      },
+      {
+        "text": "Boaz mandou Rute ficar perto das suas servas.",
+        "evidenceRef": "Rute 2:8",
+        "evidenceSpan": "fique perto das minhas servas"
+      },
+      {
+        "text": "Boaz deu ordem aos moços para que não tocassem em Rute.",
+        "evidenceRef": "Rute 2:9",
+        "evidenceSpan": "para que não te toquem"
+      },
+      {
+        "text": "Rute podia beber da água que os moços tiravam, quando tivesse sede.",
+        "evidenceRef": "Rute 2:9",
+        "evidenceSpan": "bebe do que os moços tiraram"
+      },
+      {
+        "text": "Rute tinha chegado a Belém acompanhando Noemi.",
+        "evidenceRef": "Rute 1:19",
+        "evidenceSpan": "chegaram a Belém"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "campo",
+        "gloss": "O lugar de trabalho de Rute vira também lugar de proteção, por ordem de Boaz."
+      },
+      {
+        "term": "filha",
+        "gloss": "Boaz chama a estrangeira de minha filha: acolhida, não rejeição."
+      },
+      {
+        "term": "servas",
+        "gloss": "Rute não fica sozinha no campo: ela é posta junto ao grupo das servas de Boaz."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Boaz chama Rute de filha",
+        "evidenceRef": "Rute 2:8"
+      },
+      {
+        "label": "Ela deve ficar neste campo",
+        "evidenceRef": "Rute 2:8"
+      },
+      {
+        "label": "Os moços não podem tocá-la",
+        "evidenceRef": "Rute 2:9"
+      },
+      {
+        "label": "Ela pode beber dos vasos",
+        "evidenceRef": "Rute 2:9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Boaz fecha outros campos para Rute, mas abre o dele: ela não deve passar daqui, e sim ficar perto das servas.",
+        "marker": "mas",
+        "evidenceRef": "Rute 2:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "A ordem aos moços tem um fim claro: que ninguém toque em Rute enquanto ela colhe.",
+        "marker": "para",
+        "evidenceRef": "Rute 2:9"
+      },
+      {
+        "kind": "sequência",
+        "text": "Quando a sede vier, Rute deve ir aos vasos: Boaz já deixa a provisão pronta antes da necessidade.",
+        "marker": "Quando",
+        "evidenceRef": "Rute 2:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Levítico 19:9",
+        "bridge": "Colheita deixada ao estrangeiro"
+      },
+      {
+        "ref": "Salmos 68:5",
+        "bridge": "Deus defensor das viúvas"
+      },
+      {
+        "ref": "Mateus 1:5",
+        "bridge": "Boaz na linhagem de Davi"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Boaz já está pedindo Rute em casamento neste encontro.",
+        "why": "Ele só lhe garante campo, proteção e água; nenhum pedido é feito aqui."
+      },
+      {
+        "text": "Rute conquistou esse favor manipulando Boaz.",
+        "why": "Quem toma a iniciativa é Boaz: ele a chama, a instrui e a protege antes de qualquer pedido dela."
+      },
+      {
+        "text": "A proteção era automática e igual para qualquer pessoa no campo.",
+        "why": "Boaz se dirige a ela pelo nome de filha e dá ordens específicas aos moços por causa dela."
+      }
+    ],
+    "centralInsight": "Deus provê proteção e sustento para Rute no campo de Boaz",
+    "anchorQuestion": "O que Boaz garantiu a Rute em Rute 2:8–9?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Rute 2:8, Boaz mandou Rute colher em outro campo, longe das servas dele.",
+      "verseRef": "Rute 2:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "não vá colher em outro campo",
+      "feedbackCorrect": "Ele disse o contrário: nada de outro campo; fique perto das servas.",
+      "feedbackWrong": {
+        "true": "Releia Rute 2:8: ele proíbe outro campo e manda ficar perto das servas."
+      },
+      "hint": "Veja o primeiro conselho de Boaz.",
+      "learningObjective": "Observar que Boaz manteve Rute no campo dele.",
+      "evidence": [
+        "Rute 2:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Rute 2:8, toque junto de quem Boaz mandou Rute ficar.",
+      "verseRef": "Rute 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "campo"
+        },
+        {
+          "id": "b",
+          "text": "servas"
+        },
+        {
+          "id": "c",
+          "text": "filha"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fique perto das minhas servas",
+      "feedbackCorrect": "Ela devia ficar perto das servas dele, não sozinha.",
+      "feedbackWrong": {
+        "a": "O campo é o lugar; ela devia ficar junto de pessoas.",
+        "c": "Filha é como Boaz a chama, não junto de quem ficar."
+      },
+      "hint": "Procure o grupo que trabalhava com Boaz.",
+      "learningObjective": "Identificar junto de quem Rute devia ficar.",
+      "evidence": [
+        "Rute 2:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Rute 2:9, o que Rute podia fazer quando tivesse sede?",
+      "verseRef": "Rute 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voltar a Belém para beber em casa"
+        },
+        {
+          "id": "b",
+          "text": "Beber da água tirada pelos moços"
+        },
+        {
+          "id": "c",
+          "text": "Pedir que Noemi lhe trouxesse água"
+        },
+        {
+          "id": "d",
+          "text": "Esperar a chuva molhar o campo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "bebe do que os moços tiraram",
+      "feedbackCorrect": "Ela podia ir aos vasos e beber do que os moços tiraram.",
+      "feedbackWrong": {
+        "a": "Ela não precisava sair do campo: havia vasos ali.",
+        "c": "Noemi nem é citada nesta fala de Boaz.",
+        "d": "A água já estava tirada nos vasos, à disposição dela."
+      },
+      "hint": "Veja o que já estava pronto nos vasos.",
+      "learningObjective": "Observar a provisão de água em Rute 2:9.",
+      "evidence": [
+        "Rute 2:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Rute 2:9 na ordem do texto.",
+      "verseRef": "Rute 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os teus olhos estarão atentos ao campo"
+        },
+        {
+          "id": "b",
+          "text": "e irás atrás delas"
+        },
+        {
+          "id": "c",
+          "text": "vai aos vasos e bebe do que os moços tiraram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os teus olhos estarão atentos ao campo",
+      "feedbackCorrect": "Olhos no campo, atrás das servas, e água nos vasos: é a ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelos olhos atentos ao campo que ceifam."
+      },
+      "hint": "A fala começa com os olhos dela no campo.",
+      "learningObjective": "Reconhecer a sequência da instrução de Rute 2:9.",
+      "evidence": [
+        "Rute 2:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Rute 2:9, o que Rute podia saciar bebendo dos vasos?",
+      "verseRef": "Rute 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "fome"
+        },
+        {
+          "id": "b",
+          "text": "sede"
+        },
+        {
+          "id": "c",
+          "text": "sono"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Quando tiveres sede",
+      "feedbackCorrect": "Boaz pensou até na sede dela durante o trabalho.",
+      "feedbackWrong": {
+        "a": "Comida não é citada aqui; a fala é sobre beber.",
+        "c": "Descanso não aparece nesta instrução de Boaz."
+      },
+      "hint": "É a necessidade de quem trabalha ao sol.",
+      "learningObjective": "Lembrar a necessidade que Boaz previu em Rute 2:9.",
+      "evidence": [
+        "Rute 2:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Rute 2:8 comunica que se liga a este contexto?",
+      "verseRef": "Rute 2:8",
+      "passageA": {
+        "ref": "Rute 2:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Uma viúva estrangeira chegou a Belém sem sustento e foi colher num campo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Volta para Moabe"
+        },
+        {
+          "id": "b",
+          "text": "Proteção no campo de Boaz"
+        },
+        {
+          "id": "c",
+          "text": "Fim da colheita em Belém"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fique perto das minhas servas",
+      "feedbackCorrect": "O dono do campo a mantém ali, junto das servas: proteção.",
+      "feedbackWrong": {
+        "a": "Boaz a mantém em Belém, não a manda de volta.",
+        "c": "A colheita está começando para ela, não terminando."
+      },
+      "hint": "Veja o que o dono do campo oferece a ela.",
+      "learningObjective": "Ligar Rute 2:8 à proteção recebida no campo.",
+      "evidence": [
+        "Rute 2:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Rute 2:8–9, Boaz protege Rute ao mandá-la ficar com as servas e ao proibir os moços de tocá-la.",
+      "verseRef": "Rute 2:8–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que não te toquem",
+      "feedbackCorrect": "Lugar junto às servas e ordem aos moços: proteção completa.",
+      "feedbackWrong": {
+        "false": "Releia os dois versículos: há lugar definido e ordem de proteção."
+      },
+      "hint": "Junte as instruções dos dois versículos.",
+      "learningObjective": "Compreender as duas formas de proteção de Boaz.",
+      "evidence": [
+        "Rute 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Rute 2:9, toque a palavra que abre a instrução sobre a sede de Rute.",
+      "verseRef": "Rute 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "vasos"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "moços"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Quando tiveres sede",
+      "feedbackCorrect": "A provisão já fica combinada para o momento da necessidade.",
+      "feedbackWrong": {
+        "a": "Os vasos são o meio, não a palavra que abre a instrução.",
+        "c": "Os moços tiram a água; a instrução começa antes deles."
+      },
+      "hint": "Procure a primeira palavra da segunda metade.",
+      "learningObjective": "Reconhecer como Boaz antecipa a necessidade de Rute.",
+      "evidence": [
+        "Rute 2:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Rute 2:9 completa a instrução dada em Rute 2:8?",
+      "verseRef": "Rute 2:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acrescenta proteção e água ao lugar onde ela ficará"
+        },
+        {
+          "id": "b",
+          "text": "Troca o campo de Boaz por outro campo melhor"
+        },
+        {
+          "id": "c",
+          "text": "Dispensa Rute do trabalho no fim do dia"
+        },
+        {
+          "id": "d",
+          "text": "Manda Rute trabalhar longe das servas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "bebe do que os moços tiraram",
+      "feedbackCorrect": "Primeiro o lugar, depois proteção dos moços e água nos vasos.",
+      "feedbackWrong": {
+        "b": "O campo continua o mesmo; nada de troca é dito.",
+        "c": "Ela continua colhendo; não há dispensa alguma.",
+        "d": "É o contrário: ela deve ficar perto das servas."
+      },
+      "hint": "Compare o que cada versículo acrescenta.",
+      "learningObjective": "Relacionar lugar, proteção e provisão nos dois versículos.",
+      "evidence": [
+        "Rute 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os cuidados de Boaz em Rute 2:8–9?",
+      "verseRef": "Rute 2:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela fica neste campo, junto das servas"
+        },
+        {
+          "id": "b",
+          "text": "Os moços são proibidos de tocá-la"
+        },
+        {
+          "id": "c",
+          "text": "Ela pode beber da água dos vasos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "fique perto das minhas servas",
+      "feedbackCorrect": "Lugar, proteção e água: os cuidados vêm nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo lugar onde ela deve ficar."
+      },
+      "hint": "A água é o último cuidado citado.",
+      "learningObjective": "Compreender a sequência dos cuidados de Boaz.",
+      "evidence": [
+        "Rute 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Rute 2:9, o que os moços receberam ordem de não fazer com Rute?",
+      "verseRef": "Rute 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "olhem"
+        },
+        {
+          "id": "b",
+          "text": "toquem"
+        },
+        {
+          "id": "c",
+          "text": "sigam"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que não te toquem",
+      "feedbackCorrect": "A ordem protege o corpo e a honra da estrangeira no campo.",
+      "feedbackWrong": {
+        "a": "Olhar não é proibido; a ordem é sobre contato.",
+        "c": "Seguir é o que as servas fariam; a ordem é outra."
+      },
+      "hint": "É um limite físico posto aos trabalhadores.",
+      "learningObjective": "Compreender o conteúdo da ordem dada aos moços.",
+      "evidence": [
+        "Rute 2:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Rute 2:8 a Levítico 19:9?",
+      "verseRef": "Rute 2:8",
+      "passageA": {
+        "ref": "Rute 2:8"
+      },
+      "passageB": {
+        "ref": "Levítico 19:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Colheita deixada ao estrangeiro"
+        },
+        {
+          "id": "b",
+          "text": "Colheita guardada só ao dono"
+        },
+        {
+          "id": "c",
+          "text": "Trabalho proibido na colheita"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não vá colher em outro campo",
+      "feedbackCorrect": "A lei deixava parte da colheita ao pobre e ao estrangeiro.",
+      "feedbackWrong": {
+        "b": "A lei faz o oposto: manda não colher tudo.",
+        "c": "A lei regula a colheita, não a proíbe."
+      },
+      "hint": "Veja para quem sobrava parte da colheita.",
+      "learningObjective": "Relacionar o respigar de Rute à lei da colheita.",
+      "evidence": [
+        "Rute 2:8",
+        "Levítico 19:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Rute 2:8–9 ensina que Rute pagou pelo favor de Boaz com um dia inteiro de trabalho naquele campo.",
+      "verseRef": "Rute 2:8–9",
+      "correctOptionId": "false",
+      "evidenceSpan": "fique perto das minhas servas",
+      "feedbackCorrect": "O favor vem antes: ele a chama e protege sem exigir pagamento.",
+      "feedbackWrong": {
+        "true": "Nenhum pagamento é citado: Boaz oferece antes de ela produzir."
+      },
+      "hint": "Veja quem toma a iniciativa na cena.",
+      "learningObjective": "Interpretar o favor de Boaz como dom, não pagamento.",
+      "evidence": [
+        "Rute 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Rute 2:8, toque o trecho que mostra Rute acolhida junto ao grupo de Boaz.",
+      "verseRef": "Rute 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "outro campo"
+        },
+        {
+          "id": "b",
+          "text": "minhas servas"
+        },
+        {
+          "id": "c",
+          "text": "minha filha"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fique perto das minhas servas",
+      "feedbackCorrect": "Ela não colhe isolada: é posta junto às servas dele.",
+      "feedbackWrong": {
+        "a": "Outro campo é o que ela deve evitar, não acolhida.",
+        "c": "Isso mostra carinho de Boaz, mas a acolhida no grupo é outra."
+      },
+      "hint": "Procure o grupo ao qual ela é incorporada.",
+      "learningObjective": "Sustentar no texto a acolhida de Rute no grupo.",
+      "evidence": [
+        "Rute 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Rute 2:8–9 sustenta sobre o que acontece com Rute no campo?",
+      "verseRef": "Rute 2:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma estrangeira vulnerável recebe proteção imerecida"
+        },
+        {
+          "id": "b",
+          "text": "Boaz já a pede em casamento neste encontro"
+        },
+        {
+          "id": "c",
+          "text": "Rute manipula Boaz para garantir um lugar"
+        },
+        {
+          "id": "d",
+          "text": "Estrangeiras deviam colher sempre sozinhas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouve, minha filha",
+      "feedbackCorrect": "Chamada de filha e protegida: favor para quem nada tinha.",
+      "feedbackWrong": {
+        "b": "Nenhum pedido é feito neste encontro do campo.",
+        "c": "Quem age primeiro é Boaz; ela nem pediu ainda.",
+        "d": "Boaz faz o oposto: põe ela junto das servas."
+      },
+      "hint": "Veja como Boaz a trata desde a primeira palavra.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre o favor.",
+      "evidence": [
+        "Rute 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido de Rute 2:8 na história maior?",
+      "verseRef": "Rute 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "A lei deixa colheita ao estrangeiro"
+        },
+        {
+          "id": "b",
+          "text": "Boaz protege a estrangeira no campo dele"
+        },
+        {
+          "id": "c",
+          "text": "Deus sustenta as duas viúvas em Belém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "bebe do que os moços tiraram",
+      "feedbackCorrect": "Da lei ao gesto de Boaz, Deus sustenta quem voltou vazia.",
+      "feedbackWrong": {
+        "default": "Comece pela lei antiga; o sustento das viúvas é o fruto."
+      },
+      "hint": "Siga da lei antiga ao fruto na vida das viúvas.",
+      "learningObjective": "Ver o cuidado de Deus por trás do gesto de Boaz.",
+      "evidence": [
+        "Rute 2:9",
+        "Levítico 19:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Rute 2:8, como Boaz chama Rute logo no começo da fala?",
+      "verseRef": "Rute 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "serva"
+        },
+        {
+          "id": "b",
+          "text": "filha"
+        },
+        {
+          "id": "c",
+          "text": "viúva"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ouve, minha filha",
+      "feedbackCorrect": "Uma estrangeira é chamada de filha pelo dono do campo.",
+      "feedbackWrong": {
+        "a": "Serva é como ela se chamará depois, não aqui.",
+        "c": "Ela é viúva, mas Boaz a chama de outro jeito."
+      },
+      "hint": "É um nome de família, não de trabalho.",
+      "learningObjective": "Lembrar o nome que carrega a acolhida de Boaz.",
+      "evidence": [
+        "Rute 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Rute 2:8 a Salmos 68:5?",
+      "verseRef": "Rute 2:9",
+      "passageA": {
+        "ref": "Rute 2:9"
+      },
+      "passageB": {
+        "ref": "Salmos 68:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus defensor das viúvas"
+        },
+        {
+          "id": "b",
+          "text": "Viúvas sem nenhum defensor"
+        },
+        {
+          "id": "c",
+          "text": "Colheita como castigo divino"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que não te toquem",
+      "feedbackCorrect": "O salmo chama Deus de juiz das viúvas; aqui ele age por Boaz.",
+      "feedbackWrong": {
+        "b": "O salmo afirma justamente que elas têm defensor.",
+        "c": "Nenhum dos textos trata a colheita como castigo."
+      },
+      "hint": "Veja quem o salmo diz que Deus defende.",
+      "learningObjective": "Ligar a proteção de Rute ao Deus defensor das viúvas.",
+      "evidence": [
+        "Rute 2:9",
+        "Salmos 68:5"
+      ]
+    }
+  ]
+}

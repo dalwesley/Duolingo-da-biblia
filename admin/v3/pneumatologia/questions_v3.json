@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "pneumatologia-sem-pn-01-pessoa-01",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 5:3, Pedro diz que Ananias mentiu ao Espírito Santo.",
+    "prompt": "Em Atos 5:3, Pedro diz que Ananias mentiu ao Espírito Santo.",
+    "cue": "Em Atos 5:3, Pedro diz que Ananias mentiu ao Espírito Santo.",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mentir ao Espírito Santo",
+    "feedbackCorrect": "Pedro confronta Ananias por mentir ao Espírito Santo, retendo parte do valor.",
+    "feedbackWrong": {
+      "false": "Releia Atos 5:3, onde Pedro nomeia a quem Ananias mentiu."
+    },
+    "hint": "Olhe a fala de Pedro.",
+    "learningObjective": "Observar a quem Pedro diz que Ananias mentiu.",
+    "evidence": [
+      "Atos 5:3"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-01-pessoa-02",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Atos 5:1, toque o nome do homem que vendeu uma propriedade com sua mulher.",
+    "prompt": "Em Atos 5:1, toque o nome do homem que vendeu uma propriedade com sua mulher.",
+    "cue": "Em Atos 5:1, toque o nome do homem que vendeu uma propriedade com sua mulher.",
+    "verseRef": "Atos 5:1",
+    "passageText": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "propriedade"
+      },
+      {
+        "id": "b",
+        "text": "Safira"
+      },
+      {
+        "id": "c",
+        "text": "Ananias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "chamado Ananias",
+    "feedbackCorrect": "Ananias, com Safira, vendeu a propriedade no começo do relato.",
+    "feedbackWrong": {
+      "a": "A propriedade é o bem vendido, não uma pessoa.",
+      "b": "Safira é a mulher de Ananias, não o homem."
+    },
+    "hint": "Procure o nome masculino no começo do versículo.",
+    "learningObjective": "Identificar quem vende a propriedade em Atos 5:1.",
+    "evidence": [
+      "Atos 5:1"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-01-pessoa-03",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Atos 5:2, o que Ananias fez com parte do preço da propriedade?",
+    "prompt": "Segundo Atos 5:2, o que Ananias fez com parte do preço da propriedade?",
+    "cue": "Segundo Atos 5:2, o que Ananias fez com parte do preço da propriedade?",
+    "verseRef": "Atos 5:2",
+    "passageText": "E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Devolveu tudo ao comprador"
+      },
+      {
+        "id": "b",
+        "text": "Repartiu o valor entre os jovens"
+      },
+      {
+        "id": "c",
+        "text": "Reteve uma parte do preço"
+      },
+      {
+        "id": "d",
+        "text": "Entregou tudo aos apóstolos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "reteve parte do preço",
+    "feedbackCorrect": "Ele reteve parte do preço e depositou só o restante aos pés dos apóstolos.",
+    "feedbackWrong": {
+      "a": "O texto não fala de devolução ao comprador.",
+      "b": "Os jovens aparecem só depois, para sepultar (5:6).",
+      "d": "Ele depositou só o restante, não o valor inteiro."
+    },
+    "hint": "Leia o que ele faz antes de depositar o restante.",
+    "learningObjective": "Observar o que Ananias faz com parte do preço.",
+    "evidence": [
+      "Atos 5:2"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-01-pessoa-04",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 5:2 na ordem do texto.",
+    "prompt": "Monte Atos 5:2 na ordem do texto.",
+    "cue": "Monte Atos 5:2 na ordem do texto.",
+    "verseRef": "Atos 5:2",
+    "passageText": "E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E reteve parte do preço"
+      },
+      {
+        "id": "b",
+        "text": "com o conhecimento de sua mulher"
+      },
+      {
+        "id": "c",
+        "text": "a depositou aos pés dos apóstolos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "reteve parte do preço",
+    "feedbackCorrect": "Ele retém parte, com a mulher sabendo, e deposita o restante aos apóstolos.",
+    "feedbackWrong": {
+      "default": "Comece pelo que ele reteve; o depósito vem no fim do versículo."
+    },
+    "hint": "O versículo começa pelo que ele guardou.",
+    "learningObjective": "Reconhecer a sequência de Atos 5:2.",
+    "evidence": [
+      "Atos 5:2"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-01-pessoa-05",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Atos 5:4, Pedro diz que a propriedade estava em poder de quem?",
+    "prompt": "Em Atos 5:4, Pedro diz que a propriedade estava em poder de quem?",
+    "cue": "Em Atos 5:4, Pedro diz que a propriedade estava em poder de quem?",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "template": "Não estava ela em ___ poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nosso"
+      },
+      {
+        "id": "b",
+        "text": "seu"
+      },
+      {
+        "id": "c",
+        "text": "deles"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não estava ela em seu poder após a venda",
+    "feedbackCorrect": "Pedro lembra que o bem estava em poder do próprio Ananias.",
+    "feedbackWrong": {
+      "a": "Pedro fala com Ananias sobre o bem dele, não da igreja.",
+      "c": "O poder sobre o bem era de Ananias, não de outras pessoas."
+    },
+    "hint": "Veja a quem Pedro atribui o poder sobre o bem vendido.",
+    "learningObjective": "Lembrar que a propriedade estava em poder de Ananias.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-01-pessoa-06",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Atos 5:4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:4 comunica que se liga a este contexto?",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "passageA": {
+      "ref": "Atos 5:4",
+      "text": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedro confronta Ananias por enganar a igreja com uma oferta parcial."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mentira ao Espírito atinge Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus não vê o coração"
+      },
+      {
+        "id": "c",
+        "text": "Ananias mentiu só aos homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Para Pedro, mentir ao Espírito é mentir ao próprio Deus.",
+    "feedbackWrong": {
+      "b": "Pedro expõe o que estava escondido no coração dele.",
+      "c": "Pedro diz exatamente o contrário no fim do versículo."
+    },
+    "hint": "Compare os dois destinos da mentira no versículo.",
+    "learningObjective": "Ligar Atos 5:4 à ideia de que mentir ao Espírito é mentir a Deus.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-01-pessoa-01",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Atos 5:4, os apóstolos obrigaram Ananias a vender sua propriedade e entregar todo o valor.",
+    "prompt": "Em Atos 5:4, os apóstolos obrigaram Ananias a vender sua propriedade e entregar todo o valor.",
+    "cue": "Em Atos 5:4, os apóstolos obrigaram Ananias a vender sua propriedade e entregar todo o valor.",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não estava ela em seu poder após a venda",
+    "feedbackCorrect": "Pedro diz que o bem era dele e estava à sua disposição, sem obrigação de entregar tudo.",
+    "feedbackWrong": {
+      "true": "Releia a pergunta de Pedro sobre o bem estar em poder de Ananias."
+    },
+    "hint": "Repare no que Pedro diz sobre o poder de Ananias.",
+    "learningObjective": "Compreender que a entrega era livre, não obrigatória.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-01-pessoa-02",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 5:3, toque a palavra que liga a cena anterior à fala de Pedro.",
+    "prompt": "Em Atos 5:3, toque a palavra que liga a cena anterior à fala de Pedro.",
+    "cue": "Em Atos 5:3, toque a palavra que liga a cena anterior à fala de Pedro.",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "então"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "propriedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Disse então Pedro",
+    "feedbackCorrect": "A palavra marca a passagem da oferta para o confronto de Pedro.",
+    "feedbackWrong": {
+      "b": "Coração é onde o desígnio nasce, não a ligação entre cenas.",
+      "c": "A propriedade é o bem vendido, não a ligação entre cenas."
+    },
+    "hint": "Procure a palavra logo antes do nome de Pedro.",
+    "learningObjective": "Reconhecer o marcador de sequência em Atos 5:3.",
+    "evidence": [
+      "Atos 5:3"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-01-pessoa-03",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Atos 5:2 se relaciona com a fala de Pedro em Atos 5:3?",
+    "prompt": "Como Atos 5:2 se relaciona com a fala de Pedro em Atos 5:3?",
+    "cue": "Como Atos 5:2 se relaciona com a fala de Pedro em Atos 5:3?",
+    "verseRef": "Atos 5:2–3",
+    "passageText": "E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos. Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra uma doação completa e sincera"
+      },
+      {
+        "id": "b",
+        "text": "Mostra Safira discordando do marido"
+      },
+      {
+        "id": "c",
+        "text": "Mostra Pedro pedindo mais dinheiro"
+      },
+      {
+        "id": "d",
+        "text": "Mostra o engano que Pedro depois expõe"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "reteve parte do preço",
+    "feedbackCorrect": "O versículo 2 narra a retenção escondida que Pedro expõe no versículo 3.",
+    "feedbackWrong": {
+      "a": "Parte do preço ficou retida, sem ser declarada.",
+      "b": "Safira sabia da retenção, conforme o versículo 2.",
+      "c": "Pedro não pede dinheiro; ele confronta a mentira."
+    },
+    "hint": "Compare o que é feito em segredo e o que Pedro revela.",
+    "learningObjective": "Relacionar a ação escondida de Atos 5:2 ao confronto de 5:3.",
+    "evidence": [
+      "Atos 5:2–3"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-01-pessoa-04",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os fatos iniciais de Atos 5?",
+    "prompt": "Como se encadeiam os fatos iniciais de Atos 5?",
+    "cue": "Como se encadeiam os fatos iniciais de Atos 5?",
+    "verseRef": "Atos 5:1–2",
+    "passageText": "Um certo homem, chamado Ananias, e sua mulher Safira, venderam uma propriedade. E reteve parte do preço, com o conhecimento de sua mulher, e, trazendo o restante, a depositou aos pés dos apóstolos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um casal vende uma propriedade"
+      },
+      {
+        "id": "b",
+        "text": "Uma parte do preço fica retida"
+      },
+      {
+        "id": "c",
+        "text": "O restante é depositado aos apóstolos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "venderam uma propriedade",
+    "feedbackCorrect": "Primeiro a venda, depois a retenção escondida, e então o depósito do restante.",
+    "feedbackWrong": {
+      "default": "Comece pela venda; o depósito do restante fecha a sequência."
+    },
+    "hint": "O depósito só vem depois da venda e da retenção.",
+    "learningObjective": "Compreender o encadeamento de Atos 5:1–2.",
+    "evidence": [
+      "Atos 5:1–2"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-01-pessoa-05",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Atos 5:3, segundo Pedro, quem encheu o coração de Ananias para mentir?",
+    "prompt": "Em Atos 5:3, segundo Pedro, quem encheu o coração de Ananias para mentir?",
+    "cue": "Em Atos 5:3, segundo Pedro, quem encheu o coração de Ananias para mentir?",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "template": "Disse então Pedro: Ananias, por que ___ encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Safira"
+      },
+      {
+        "id": "b",
+        "text": "Satanás"
+      },
+      {
+        "id": "c",
+        "text": "Pedro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por que Satanás encheu seu coração",
+    "feedbackCorrect": "Pedro aponta a influência por trás do desígnio de mentir ao Espírito.",
+    "feedbackWrong": {
+      "a": "Safira sabia da retenção, mas não é apontada assim por Pedro.",
+      "c": "Pedro é quem confronta a mentira, não quem a inspira."
+    },
+    "hint": "Veja quem Pedro aponta como influência sobre Ananias.",
+    "learningObjective": "Compreender a origem do desígnio segundo Pedro.",
+    "evidence": [
+      "Atos 5:3"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-01-pessoa-06",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Atos 5:3 a João 14:26?",
+    "prompt": "O que liga Atos 5:3 a João 14:26?",
+    "cue": "O que liga Atos 5:3 a João 14:26?",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "passageA": {
+      "ref": "Atos 5:3",
+      "text": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?"
+    },
+    "passageB": {
+      "ref": "João 14:26",
+      "text": "Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas e vos lembrará de tudo o que tenho dito a vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito é pessoa atuante"
+      },
+      {
+        "id": "b",
+        "text": "Uma força sem vontade própria"
+      },
+      {
+        "id": "c",
+        "text": "Um símbolo apenas literário"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mentir ao Espírito Santo",
+    "feedbackCorrect": "Mentir ao Espírito e ser ensinado por ele mostram alguém que age, não uma força vaga.",
+    "feedbackWrong": {
+      "b": "Quem ensina e pode ser alvo de mentira não é força sem vontade.",
+      "c": "Nos dois textos o Espírito age de modo real e pessoal."
+    },
+    "hint": "Veja o que o Espírito faz nos dois trechos.",
+    "learningObjective": "Relacionar a ação pessoal do Espírito em Atos e em João.",
+    "evidence": [
+      "Atos 5:3",
+      "João 14:26"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-01-pessoa-01",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Atos 5:3–4 trata mentir ao Espírito Santo como mentir ao próprio Deus.",
+    "prompt": "Atos 5:3–4 trata mentir ao Espírito Santo como mentir ao próprio Deus.",
+    "cue": "Atos 5:3–4 trata mentir ao Espírito Santo como mentir ao próprio Deus.",
+    "verseRef": "Atos 5:3–4",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Pedro troca o nome sem trocar o ato, mostrando quem o Espírito é.",
+    "feedbackWrong": {
+      "false": "Compare o alvo da mentira nos versículos 3 e 4."
+    },
+    "hint": "Compare os versículos 3 e 4.",
+    "learningObjective": "Interpretar Atos 5:3–4 sobre quem o Espírito Santo é.",
+    "evidence": [
+      "Atos 5:3–4"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-01-pessoa-02",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+    "prompt": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+    "cue": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aos homens"
+      },
+      {
+        "id": "b",
+        "text": "seu coração"
+      },
+      {
+        "id": "c",
+        "text": "a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas a Deus",
+    "feedbackCorrect": "Pedro conclui que a mentira foi feita a Deus, não só às pessoas.",
+    "feedbackWrong": {
+      "a": "Pedro nega que a mentira tenha ficado só entre homens.",
+      "b": "O coração é onde o desígnio nasceu, não o alvo da mentira."
+    },
+    "hint": "Leia a conclusão de Pedro no fim do versículo.",
+    "learningObjective": "Sustentar com o texto que a mentira foi feita a Deus.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-01-pessoa-03",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Atos 5:3–4 sustenta sobre o Espírito Santo?",
+    "prompt": "Que leitura Atos 5:3–4 sustenta sobre o Espírito Santo?",
+    "cue": "Que leitura Atos 5:3–4 sustenta sobre o Espírito Santo?",
+    "verseRef": "Atos 5:3–4",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade? Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é Deus e age pessoalmente"
+      },
+      {
+        "id": "b",
+        "text": "Ele é uma criação posterior de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ele é uma força sem mente própria"
+      },
+      {
+        "id": "d",
+        "text": "Ele é inferior aos apóstolos reunidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Mentir a ele é mentir a Deus, e ele é alvo pessoal do engano.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta o Espírito como criatura, mas como Deus.",
+      "c": "Uma força sem mente não seria alvo de mentira como Deus é.",
+      "d": "Pedro não coloca o Espírito abaixo dos apóstolos; ele o iguala a Deus no ato."
+    },
+    "hint": "Veja como Pedro nomeia o alvo da mentira nos dois versículos.",
+    "learningObjective": "Escolher a interpretação que Atos 5:3–4 sustenta sobre o Espírito.",
+    "evidence": [
+      "Atos 5:3–4"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-01-pessoa-04",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da identidade do Espírito?",
+    "prompt": "Qual sequência revela o caminho da identidade do Espírito?",
+    "cue": "Qual sequência revela o caminho da identidade do Espírito?",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus promete o Consolador enviado pelo Pai"
+      },
+      {
+        "id": "b",
+        "text": "Ananias mente ao Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Pedro chama essa mentira de mentira a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mentir ao Espírito Santo",
+    "feedbackCorrect": "O Consolador prometido é Deus, a quem Ananias mente em Atos 5.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa de Jesus; Atos 5 vem depois, na igreja nascente."
+    },
+    "hint": "Siga a ordem da história, da promessa ao Pentecostes e depois.",
+    "learningObjective": "Ver a identidade do Espírito da promessa de Jesus a Atos 5.",
+    "evidence": [
+      "Atos 5:3",
+      "João 14:26"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-01-pessoa-05",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Atos 5:4, Pedro diz primeiro que Ananias não mentiu a quem?",
+    "prompt": "Em Atos 5:4, Pedro diz primeiro que Ananias não mentiu a quem?",
+    "cue": "Em Atos 5:4, Pedro diz primeiro que Ananias não mentiu a quem?",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "template": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos ___, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "profetas"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "anjos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Pedro contrasta o alvo aparente com o alvo real da mentira.",
+    "feedbackWrong": {
+      "a": "Profetas não são citados por Pedro neste confronto.",
+      "c": "Anjos não são citados por Pedro neste confronto."
+    },
+    "hint": "Veja o contraste que Pedro faz no fim do versículo.",
+    "learningObjective": "Lembrar o contraste entre o alvo aparente e o real.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-01-pessoa-06",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Atos 5:4 a Mateus 28:19?",
+    "prompt": "O que liga Atos 5:4 a Mateus 28:19?",
+    "cue": "O que liga Atos 5:4 a Mateus 28:19?",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "passageA": {
+      "ref": "Atos 5:4",
+      "text": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+    },
+    "passageB": {
+      "ref": "Mateus 28:19",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito junto ao Pai e Filho"
+      },
+      {
+        "id": "b",
+        "text": "Espírito abaixo dos seres humanos"
+      },
+      {
+        "id": "c",
+        "text": "Espírito separado do único Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Atos chama o Espírito de Deus, e Jesus o nomeia com o Pai e o Filho.",
+    "feedbackWrong": {
+      "b": "Em Atos ele é Deus, não alguém abaixo dos homens.",
+      "c": "Mateus o coloca no único nome, com o Pai e o Filho."
+    },
+    "hint": "Veja com quem o Espírito é nomeado por Jesus.",
+    "learningObjective": "Ligar Atos 5:4 ao batismo em nome do Pai, do Filho e do Espírito.",
+    "evidence": [
+      "Atos 5:4",
+      "Mateus 28:19"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-02-vida-01",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Romanos 8:6, a inclinação da carne conduz à vida e à paz.",
+    "prompt": "Em Romanos 8:6, a inclinação da carne conduz à vida e à paz.",
+    "cue": "Em Romanos 8:6, a inclinação da carne conduz à vida e à paz.",
+    "verseRef": "Romanos 8:6",
+    "passageText": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a inclinação da carne conduz à morte",
+    "feedbackCorrect": "A carne conduz à morte; vida e paz vêm da inclinação do Espírito.",
+    "feedbackWrong": {
+      "true": "Releia os dois destinos que Paulo contrasta em Romanos 8:6."
+    },
+    "hint": "Compare os destinos dos dois lados do versículo.",
+    "learningObjective": "Observar os destinos opostos em Romanos 8:6.",
+    "evidence": [
+      "Romanos 8:6"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-02-vida-02",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 8:9, toque quem habita em vocês, segundo Paulo.",
+    "prompt": "Em Romanos 8:9, toque quem habita em vocês, segundo Paulo.",
+    "cue": "Em Romanos 8:9, toque quem habita em vocês, segundo Paulo.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito de Deus"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Espírito de Deus habita em vocês",
+    "feedbackCorrect": "Paulo diz que o Espírito de Deus habita em quem é de Cristo.",
+    "feedbackWrong": {
+      "b": "A carne é o lado do qual os leitores já não vivem mais.",
+      "c": "Cristo aparece ligado ao Espírito neste versículo, não nesta frase."
+    },
+    "hint": "Procure o sujeito do verbo habitar.",
+    "learningObjective": "Identificar quem habita em quem crê.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-02-vida-03",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Romanos 8:14, quem são os filhos de Deus?",
+    "prompt": "Segundo Romanos 8:14, quem são os filhos de Deus?",
+    "cue": "Segundo Romanos 8:14, quem são os filhos de Deus?",
+    "verseRef": "Romanos 8:14",
+    "passageText": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que nunca ouvem a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Os que vivem só para si mesmos"
+      },
+      {
+        "id": "c",
+        "text": "Os conduzidos pela própria carne"
+      },
+      {
+        "id": "d",
+        "text": "Os conduzidos pelo Espírito de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "todos os que são conduzidos pelo Espírito de Deus são filhos de Deus",
+    "feedbackCorrect": "Paulo chama de filhos os que são conduzidos pelo Espírito de Deus.",
+    "feedbackWrong": {
+      "a": "Filhos são os conduzidos por Deus, não os distantes dele.",
+      "b": "Viver só para si é o caminho da carne, não o dos filhos.",
+      "c": "A carne conduz à morte, não à filiação (8:6)."
+    },
+    "hint": "Leia quem recebe esse nome no versículo.",
+    "learningObjective": "Observar quem Paulo chama de filhos de Deus.",
+    "evidence": [
+      "Romanos 8:14"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-02-vida-04",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Romanos 8:6 na ordem do texto.",
+    "prompt": "Monte Romanos 8:6 na ordem do texto.",
+    "cue": "Monte Romanos 8:6 na ordem do texto.",
+    "verseRef": "Romanos 8:6",
+    "passageText": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque a inclinação da carne conduz à morte"
+      },
+      {
+        "id": "b",
+        "text": "mas a inclinação do Espírito"
+      },
+      {
+        "id": "c",
+        "text": "conduz à vida e à paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a inclinação da carne conduz à morte",
+    "feedbackCorrect": "Paulo põe morte e vida lado a lado, e o Espírito conduz à vida e à paz.",
+    "feedbackWrong": {
+      "default": "Comece pelo destino da carne; a vida e a paz fecham o versículo."
+    },
+    "hint": "O versículo começa pelo destino da carne.",
+    "learningObjective": "Reconhecer a sequência de Romanos 8:6.",
+    "evidence": [
+      "Romanos 8:6"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-02-vida-05",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Romanos 8:6, além da vida, a que conduz a inclinação do Espírito?",
+    "prompt": "Em Romanos 8:6, além da vida, a que conduz a inclinação do Espírito?",
+    "cue": "Em Romanos 8:6, além da vida, a que conduz a inclinação do Espírito?",
+    "verseRef": "Romanos 8:6",
+    "passageText": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz.",
+    "template": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "guerra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conduz à vida e à paz",
+    "feedbackCorrect": "A inclinação do Espírito conduz à vida e também a esse outro presente.",
+    "feedbackWrong": {
+      "a": "Morte é o destino da carne, não o do Espírito.",
+      "c": "Guerra não é citada por Paulo neste contraste."
+    },
+    "hint": "Leia o fim do segundo lado do versículo.",
+    "learningObjective": "Lembrar o destino de quem anda no Espírito.",
+    "evidence": [
+      "Romanos 8:6"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-02-vida-06",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Romanos 8:11 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 8:11 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 8:11 comunica que se liga a este contexto?",
+    "verseRef": "Romanos 8:11",
+    "passageText": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita.",
+    "passageA": {
+      "ref": "Romanos 8:11",
+      "text": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus ressuscitou Jesus dentre os mortos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus dará vida ao corpo"
+      },
+      {
+        "id": "b",
+        "text": "O corpo nunca importará"
+      },
+      {
+        "id": "c",
+        "text": "Jesus continua entre mortos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também vivificará os vossos corpos mortais",
+    "feedbackCorrect": "O Deus que ressuscitou Jesus dará vida também aos corpos de quem crê.",
+    "feedbackWrong": {
+      "b": "Paulo inclui os corpos mortais na promessa de vida.",
+      "c": "O texto parte da ressurreição de Jesus como fato cumprido."
+    },
+    "hint": "Veja o que Deus fará, segundo o fim do versículo.",
+    "learningObjective": "Ligar Romanos 8:11 à promessa de vida para o corpo.",
+    "evidence": [
+      "Romanos 8:11"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-02-vida-01",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 8:9, estar no Espírito depende de o Espírito de Deus habitar na pessoa.",
+    "prompt": "Em Romanos 8:9, estar no Espírito depende de o Espírito de Deus habitar na pessoa.",
+    "cue": "Em Romanos 8:9, estar no Espírito depende de o Espírito de Deus habitar na pessoa.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Espírito de Deus habita em vocês",
+    "feedbackCorrect": "Paulo condiciona estar no Espírito ao Espírito de Deus habitar na pessoa.",
+    "feedbackWrong": {
+      "false": "Releia a condição que Paulo põe no meio de Romanos 8:9."
+    },
+    "hint": "Repare na condição no meio do versículo.",
+    "learningObjective": "Compreender a condição posta em Romanos 8:9.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-02-vida-02",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Romanos 8:9, toque a palavra que marca a virada para os leitores de Paulo.",
+    "prompt": "Em Romanos 8:9, toque a palavra que marca a virada para os leitores de Paulo.",
+    "cue": "Em Romanos 8:9, toque a palavra que marca a virada para os leitores de Paulo.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "Porém"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porém, vocês não estão na carne",
+    "feedbackCorrect": "A palavra abre a virada, dos que estão na carne para os leitores em Cristo.",
+    "feedbackWrong": {
+      "a": "Carne é um dos lados do contraste, não a palavra de virada.",
+      "c": "Espírito nomeia o novo lado, não a palavra que vira a frase."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Romanos 8:9.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-02-vida-03",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 8:9 aplica aos leitores o contraste de Romanos 8:6?",
+    "prompt": "Como Romanos 8:9 aplica aos leitores o contraste de Romanos 8:6?",
+    "cue": "Como Romanos 8:9 aplica aos leitores o contraste de Romanos 8:6?",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eles estão no Espírito, pois ele habita neles"
+      },
+      {
+        "id": "b",
+        "text": "Eles continuam na carne como antes"
+      },
+      {
+        "id": "c",
+        "text": "Eles agradam a Deus pela própria força"
+      },
+      {
+        "id": "d",
+        "text": "Eles não precisam mais do Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vocês não estão na carne, mas no Espírito",
+    "feedbackCorrect": "Depois do contraste, Paulo inclui os leitores no lado da vida, no Espírito.",
+    "feedbackWrong": {
+      "b": "Paulo diz que eles não estão mais na carne.",
+      "c": "Quem está na carne não pode agradar a Deus (8:8).",
+      "d": "É justamente por ele habitar neles que estão no Espírito."
+    },
+    "hint": "Veja de que lado do contraste Paulo coloca os leitores.",
+    "learningObjective": "Relacionar o contraste de Romanos 8:6 aos leitores de 8:9.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-02-vida-04",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento de Paulo em Romanos 8?",
+    "prompt": "Como avança o argumento de Paulo em Romanos 8?",
+    "cue": "Como avança o argumento de Paulo em Romanos 8?",
+    "verseRef": "Romanos 8:6",
+    "passageText": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A carne conduz à morte"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito conduz à vida"
+      },
+      {
+        "id": "c",
+        "text": "Os conduzidos são filhos de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a inclinação do Espírito conduz à vida e à paz",
+    "feedbackCorrect": "Do contraste dos destinos, Paulo chega aos conduzidos, chamados filhos.",
+    "feedbackWrong": {
+      "default": "Comece pelos dois destinos; os filhos de Deus são a chegada."
+    },
+    "hint": "Os filhos de Deus são o ponto de chegada do trecho.",
+    "learningObjective": "Compreender o movimento do contraste à filiação.",
+    "evidence": [
+      "Romanos 8:6",
+      "Romanos 8:14"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-02-vida-05",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 8:13, o que fazer pelo Espírito às obras do corpo para viver?",
+    "prompt": "Em Romanos 8:13, o que fazer pelo Espírito às obras do corpo para viver?",
+    "cue": "Em Romanos 8:13, o que fazer pelo Espírito às obras do corpo para viver?",
+    "verseRef": "Romanos 8:13",
+    "passageText": "Porque, se viverdes segundo a carne, morrereis; mas, se, pelo Espírito, mortificardes as obras do corpo, certamente, vivereis.",
+    "template": "Porque, se viverdes segundo a carne, morrereis; mas, se, pelo Espírito, ___ as obras do corpo, certamente, vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mortificardes"
+      },
+      {
+        "id": "b",
+        "text": "repetirdes"
+      },
+      {
+        "id": "c",
+        "text": "admirardes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pelo Espírito, mortificardes as obras do corpo",
+    "feedbackCorrect": "Pelo Espírito, as obras do corpo são enfrentadas, e o destino é viver.",
+    "feedbackWrong": {
+      "b": "Repetir essas obras leva à morte, segundo o mesmo versículo.",
+      "c": "Admirar as obras do corpo é o contrário do que Paulo pede."
+    },
+    "hint": "É um verbo forte, ligado a fazer morrer.",
+    "learningObjective": "Compreender a ação do crente pelo Espírito em Romanos 8:13.",
+    "evidence": [
+      "Romanos 8:13"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-02-vida-06",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 8:14 a 1 Coríntios 6:19?",
+    "prompt": "O que liga Romanos 8:14 a 1 Coríntios 6:19?",
+    "cue": "O que liga Romanos 8:14 a 1 Coríntios 6:19?",
+    "verseRef": "Romanos 8:14",
+    "passageText": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus.",
+    "passageA": {
+      "ref": "Romanos 8:14",
+      "text": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 6:19",
+      "text": "Ou não sabeis que o vosso corpo é o templo do Espírito Santo, que habita em vós, o qual recebestes da parte de Deus, e que não sois de vós mesmos?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos vivem sem o Espírito"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito habita e conduz"
+      },
+      {
+        "id": "c",
+        "text": "O corpo impede Deus de agir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "são conduzidos pelo Espírito de Deus",
+    "feedbackCorrect": "Nos dois textos, o Espírito está presente por dentro, guiando os filhos.",
+    "feedbackWrong": {
+      "a": "Ser filho e ser conduzido pelo Espírito andam juntos.",
+      "c": "O corpo é chamado templo, não obstáculo à ação de Deus."
+    },
+    "hint": "Veja onde o Espírito está nos dois trechos.",
+    "learningObjective": "Relacionar a condução e a habitação do Espírito.",
+    "evidence": [
+      "Romanos 8:14",
+      "1 Coríntios 6:19"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-02-vida-01",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Romanos 8:9 ensina que alguém pode ser de Cristo mesmo sem ter o Espírito de Cristo.",
+    "prompt": "Romanos 8:9 ensina que alguém pode ser de Cristo mesmo sem ter o Espírito de Cristo.",
+    "cue": "Romanos 8:9 ensina que alguém pode ser de Cristo mesmo sem ter o Espírito de Cristo.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se alguém não tem o Espírito de Cristo, esse não é dele",
+    "feedbackCorrect": "Para Paulo, pertencer a Cristo e ter o seu Espírito vêm sempre juntos.",
+    "feedbackWrong": {
+      "true": "Releia o fim de Romanos 8:9 sobre quem não tem o Espírito."
+    },
+    "hint": "Leia a condição no fim do versículo.",
+    "learningObjective": "Interpretar a ligação entre ter o Espírito e ser de Cristo.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-02-vida-02",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 8:11, toque a palavra que afirma o que Deus fará aos corpos mortais.",
+    "prompt": "Em Romanos 8:11, toque a palavra que afirma o que Deus fará aos corpos mortais.",
+    "cue": "Em Romanos 8:11, toque a palavra que afirma o que Deus fará aos corpos mortais.",
+    "verseRef": "Romanos 8:11",
+    "passageText": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "vivificará"
+      },
+      {
+        "id": "c",
+        "text": "mortais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "também vivificará os vossos corpos mortais",
+    "feedbackCorrect": "A mesma ação que levantou Jesus alcançará os corpos de quem crê.",
+    "feedbackWrong": {
+      "a": "Esse verbo fala do que já houve com Jesus, não da promessa futura.",
+      "c": "Mortais descreve os corpos, não o que Deus fará com eles."
+    },
+    "hint": "Procure o verbo voltado para o futuro dos leitores.",
+    "learningObjective": "Sustentar com o texto a promessa de vida para o corpo.",
+    "evidence": [
+      "Romanos 8:11"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-02-vida-03",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Romanos 8:11 sustenta sobre o futuro de quem crê?",
+    "prompt": "Que leitura Romanos 8:11 sustenta sobre o futuro de quem crê?",
+    "cue": "Que leitura Romanos 8:11 sustenta sobre o futuro de quem crê?",
+    "verseRef": "Romanos 8:11",
+    "passageText": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O corpo ficará para sempre na morte"
+      },
+      {
+        "id": "b",
+        "text": "Deus vivificará também o corpo de quem crê"
+      },
+      {
+        "id": "c",
+        "text": "Ressuscitar Jesus foi só um exemplo moral"
+      },
+      {
+        "id": "d",
+        "text": "Só a parte interior importa para Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "também vivificará os vossos corpos mortais",
+    "feedbackCorrect": "O Espírito que levantou Jesus dará vida também aos corpos mortais.",
+    "feedbackWrong": {
+      "a": "O texto promete vida aos corpos, não abandono na morte.",
+      "c": "A ressurreição de Jesus é a base real da promessa, não só exemplo.",
+      "d": "Paulo inclui os corpos mortais na obra futura de Deus."
+    },
+    "hint": "Siga o que o Espírito já fez e o que ainda fará.",
+    "learningObjective": "Escolher a interpretação que Romanos 8:11 sustenta sobre o corpo.",
+    "evidence": [
+      "Romanos 8:11"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-02-vida-04",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a obra do Espírito em Romanos 8:11?",
+    "prompt": "Qual sequência revela a obra do Espírito em Romanos 8:11?",
+    "cue": "Qual sequência revela a obra do Espírito em Romanos 8:11?",
+    "verseRef": "Romanos 8:11",
+    "passageText": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito participa em levantar Jesus"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito habita em quem crê"
+      },
+      {
+        "id": "c",
+        "text": "Deus vivificará os corpos mortais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "também vivificará os vossos corpos mortais",
+    "feedbackCorrect": "Do Jesus levantado ao crente habitado, e daí aos corpos vivificados.",
+    "feedbackWrong": {
+      "default": "Comece pelo que houve com Jesus; a promessa aos corpos vem por último."
+    },
+    "hint": "A promessa sobre os corpos é o ponto de chegada.",
+    "learningObjective": "Ver o encadeamento da obra do Espírito em Romanos 8:11.",
+    "evidence": [
+      "Romanos 8:11"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-02-vida-05",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 8:10, por causa de que o espírito é vida, segundo Paulo?",
+    "prompt": "Em Romanos 8:10, por causa de que o espírito é vida, segundo Paulo?",
+    "cue": "Em Romanos 8:10, por causa de que o espírito é vida, segundo Paulo?",
+    "verseRef": "Romanos 8:10",
+    "passageText": "E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da justiça.",
+    "template": "E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "pecado"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o espírito é vida, por causa da justiça",
+    "feedbackCorrect": "A vida interior vem da nova posição de quem está em Cristo.",
+    "feedbackWrong": {
+      "a": "Morte descreve o corpo, não a causa da vida do espírito.",
+      "b": "O pecado é ligado à morte do corpo neste versículo."
+    },
+    "hint": "Leia a causa no fim do versículo.",
+    "learningObjective": "Lembrar a causa da vida em Romanos 8:10.",
+    "evidence": [
+      "Romanos 8:10"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-02-vida-06",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Romanos 8:9 a João 3:5?",
+    "prompt": "O que liga Romanos 8:9 a João 3:5?",
+    "cue": "O que liga Romanos 8:9 a João 3:5?",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "passageA": {
+      "ref": "Romanos 8:9",
+      "text": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele."
+    },
+    "passageB": {
+      "ref": "João 3:5",
+      "text": "Jesus respondeu: Em verdade, em verdade, te digo que quem não nascer da água e do Espírito não pode entrar no reino de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova vida vem pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Reino dispensa novo nascimento"
+      },
+      {
+        "id": "c",
+        "text": "Espírito é desnecessário para crer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Espírito de Deus habita em vocês",
+    "feedbackCorrect": "Jesus fala de nascer do Espírito, e Paulo, de viver habitado por ele.",
+    "feedbackWrong": {
+      "b": "Jesus condiciona entrar no reino a nascer do Espírito.",
+      "c": "Nos dois textos, o Espírito é indispensável à vida nova."
+    },
+    "hint": "Veja o que os dois textos pedem do Espírito.",
+    "learningObjective": "Ligar a habitação do Espírito ao novo nascimento.",
+    "evidence": [
+      "Romanos 8:9",
+      "João 3:5"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-03-fruto-01",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Gálatas 5:24, os que pertencem a Cristo Jesus crucificaram a carne.",
+    "prompt": "Em Gálatas 5:24, os que pertencem a Cristo Jesus crucificaram a carne.",
+    "cue": "Em Gálatas 5:24, os que pertencem a Cristo Jesus crucificaram a carne.",
+    "verseRef": "Gálatas 5:24",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os que pertencem a Cristo Jesus crucificaram a carne",
+    "feedbackCorrect": "Paulo liga pertencer a Cristo a essa ruptura com a carne.",
+    "feedbackWrong": {
+      "false": "Releia Gálatas 5:24 sobre os que pertencem a Cristo."
+    },
+    "hint": "Veja o que os que pertencem a Cristo fizeram.",
+    "learningObjective": "Observar o que marca quem pertence a Cristo.",
+    "evidence": [
+      "Gálatas 5:24"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-03-fruto-02",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Gálatas 5:22, toque a primeira qualidade citada do fruto do Espírito.",
+    "prompt": "Em Gálatas 5:22, toque a primeira qualidade citada do fruto do Espírito.",
+    "cue": "Em Gálatas 5:22, toque a primeira qualidade citada do fruto do Espírito.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "A lista abre com essa qualidade, antes de alegria e paz.",
+    "feedbackWrong": {
+      "b": "Paz é a terceira qualidade da lista.",
+      "c": "Alegria vem logo depois da primeira qualidade citada."
+    },
+    "hint": "É a palavra logo depois do verbo ser.",
+    "learningObjective": "Identificar a primeira qualidade do fruto.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-03-fruto-03",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 5:23, o que Paulo diz sobre as qualidades do fruto?",
+    "prompt": "Segundo Gálatas 5:23, o que Paulo diz sobre as qualidades do fruto?",
+    "cue": "Segundo Gálatas 5:23, o que Paulo diz sobre as qualidades do fruto?",
+    "verseRef": "Gálatas 5:23",
+    "passageText": "Contra essas coisas não existe lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elas são proibidas pela lei"
+      },
+      {
+        "id": "b",
+        "text": "Só algumas delas são aprovadas"
+      },
+      {
+        "id": "c",
+        "text": "Contra elas não existe lei"
+      },
+      {
+        "id": "d",
+        "text": "Elas valem só em dias santos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Contra essas coisas não existe lei",
+    "feedbackCorrect": "Paulo fecha a lista dizendo que nenhuma lei condena esse caráter.",
+    "feedbackWrong": {
+      "a": "Ele diz o contrário, que contra elas não há lei.",
+      "b": "A frase vale para todas as qualidades citadas.",
+      "d": "Paulo não liga o fruto a dias especiais."
+    },
+    "hint": "Leia a frase curta depois da lista.",
+    "learningObjective": "Observar o que Paulo afirma sobre o fruto.",
+    "evidence": [
+      "Gálatas 5:23"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-03-fruto-04",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 5:22 na ordem do texto.",
+    "prompt": "Monte Gálatas 5:22 na ordem do texto.",
+    "cue": "Monte Gálatas 5:22 na ordem do texto.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o fruto do Espírito é amor"
+      },
+      {
+        "id": "b",
+        "text": "alegria, paz, longanimidade"
+      },
+      {
+        "id": "c",
+        "text": "benignidade, bondade, fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "A lista começa no amor e segue com qualidades ligadas aos outros.",
+    "feedbackWrong": {
+      "default": "Comece pela fonte do fruto; a lista vem depois dela."
+    },
+    "hint": "O versículo começa nomeando a fonte do fruto.",
+    "learningObjective": "Reconhecer a sequência da lista em Gálatas 5:22.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-03-fruto-05",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 5:22, que qualidade vem logo antes de autocontrole na lista?",
+    "prompt": "Em Gálatas 5:22, que qualidade vem logo antes de autocontrole na lista?",
+    "cue": "Em Gálatas 5:22, que qualidade vem logo antes de autocontrole na lista?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "template": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, ___ e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "inveja"
+      },
+      {
+        "id": "c",
+        "text": "mansidão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fidelidade, mansidão e autocontrole",
+    "feedbackCorrect": "A lista fecha com fidelidade, essa qualidade e autocontrole.",
+    "feedbackWrong": {
+      "a": "Ira pertence às obras da carne, não ao fruto.",
+      "b": "Inveja aparece nas obras da carne em 5:21."
+    },
+    "hint": "Leia as duas últimas palavras da lista.",
+    "learningObjective": "Lembrar o fim da lista do fruto do Espírito.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-03-fruto-06",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Gálatas 5:25 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:25 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:25 comunica que se liga a este contexto?",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "passageA": {
+      "ref": "Gálatas 5:25",
+      "text": "Se vivemos no Espírito, andemos também pelo Espírito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo fala de uma vida que começa e continua guiada pelo Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver pede andar pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Viver dispensa andar guiado"
+      },
+      {
+        "id": "c",
+        "text": "Espírito só aparece no começo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Quem vive no Espírito é chamado a andar por ele cada dia.",
+    "feedbackWrong": {
+      "b": "Paulo junta viver e andar, não os separa.",
+      "c": "O chamado é continuar andando, não só começar."
+    },
+    "hint": "Veja o segundo verbo que Paulo liga ao Espírito.",
+    "learningObjective": "Ligar Gálatas 5:25 à vida diária guiada pelo Espírito.",
+    "evidence": [
+      "Gálatas 5:25"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-03-fruto-01",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Gálatas 5:22, Paulo chama amor, alegria e paz de obras da carne.",
+    "prompt": "Em Gálatas 5:22, Paulo chama amor, alegria e paz de obras da carne.",
+    "cue": "Em Gálatas 5:22, Paulo chama amor, alegria e paz de obras da carne.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "Paulo muda de fonte e chama essas qualidades de fruto do Espírito.",
+    "feedbackWrong": {
+      "true": "Repare na palavra que abre o versículo e muda a fonte."
+    },
+    "hint": "Veja a fonte citada no começo do versículo.",
+    "learningObjective": "Compreender a troca de fonte entre carne e Espírito.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-03-fruto-02",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "prompt": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "cue": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "fruto"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "A palavra abre o contraste com tudo que veio antes na lista da carne.",
+    "feedbackWrong": {
+      "b": "Fruto nomeia o que o Espírito produz, não a virada da frase.",
+      "c": "Espírito nomeia a fonte, não a palavra de virada."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Gálatas 5:22.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-03-fruto-03",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Gálatas 5:22 se relaciona com as obras da carne de 5:19–21?",
+    "prompt": "Como Gálatas 5:22 se relaciona com as obras da carne de 5:19–21?",
+    "cue": "Como Gálatas 5:22 se relaciona com as obras da carne de 5:19–21?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Continua a mesma lista sem nenhuma virada"
+      },
+      {
+        "id": "b",
+        "text": "Troca o tema para regras de comida"
+      },
+      {
+        "id": "c",
+        "text": "Contrasta outra fonte, o agir do Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Cancela o que foi dito sobre a carne"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "Depois da carne, Paulo apresenta outra fonte de vida, o Espírito.",
+    "feedbackWrong": {
+      "a": "A primeira palavra do versículo marca virada clara.",
+      "b": "O tema segue sendo a vida guiada por Deus.",
+      "d": "O alerta sobre a carne continua valendo no trecho."
+    },
+    "hint": "Repare na primeira palavra e na fonte citada.",
+    "learningObjective": "Relacionar o fruto do Espírito às obras da carne.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-03-fruto-04",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino de Paulo em Gálatas 5?",
+    "prompt": "Como avança o ensino de Paulo em Gálatas 5?",
+    "cue": "Como avança o ensino de Paulo em Gálatas 5?",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo expõe as obras da carne"
+      },
+      {
+        "id": "b",
+        "text": "Paulo apresenta o fruto do Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Paulo chama a andar pelo Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Da exposição da carne ao fruto, e do fruto ao chamado para andar nele.",
+    "feedbackWrong": {
+      "default": "Comece pela carne exposta; o andar pelo Espírito é a chegada."
+    },
+    "hint": "O chamado para andar vem no fim do trecho.",
+    "learningObjective": "Compreender o movimento de Gálatas 5:19–25.",
+    "evidence": [
+      "Gálatas 5:25"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-03-fruto-05",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Gálatas 5:25, Paulo diz que, se vivemos no Espírito, devemos fazer o quê?",
+    "prompt": "Em Gálatas 5:25, Paulo diz que, se vivemos no Espírito, devemos fazer o quê?",
+    "cue": "Em Gálatas 5:25, Paulo diz que, se vivemos no Espírito, devemos fazer o quê?",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "template": "Se vivemos no Espírito, ___ também pelo Espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "andemos"
+      },
+      {
+        "id": "b",
+        "text": "corramos"
+      },
+      {
+        "id": "c",
+        "text": "durmamos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Viver no Espírito pede um andar diário guiado por ele.",
+    "feedbackWrong": {
+      "b": "Correr não é a palavra que Paulo usa para a vida guiada.",
+      "c": "Dormir não é o chamado de Paulo neste versículo."
+    },
+    "hint": "É um verbo de caminhada diária.",
+    "learningObjective": "Compreender o chamado de andar pelo Espírito.",
+    "evidence": [
+      "Gálatas 5:25"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-03-fruto-06",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Gálatas 5:25 a Romanos 8:14?",
+    "prompt": "O que liga Gálatas 5:25 a Romanos 8:14?",
+    "cue": "O que liga Gálatas 5:25 a Romanos 8:14?",
+    "verseRef": "Gálatas 5:25",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito.",
+    "passageA": {
+      "ref": "Gálatas 5:25",
+      "text": "Se vivemos no Espírito, andemos também pelo Espírito."
+    },
+    "passageB": {
+      "ref": "Romanos 8:14",
+      "text": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida conduzida pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Vida sem direção de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Carne guiando os filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "andemos também pelo Espírito",
+    "feedbackCorrect": "Andar pelo Espírito e ser conduzido por ele descrevem a mesma vida.",
+    "feedbackWrong": {
+      "b": "Nos dois textos há direção clara de Deus pelo Espírito.",
+      "c": "A carne conduz à morte, não à vida dos filhos (Rm 8:6)."
+    },
+    "hint": "Compare o verbo dos dois trechos sobre o Espírito.",
+    "learningObjective": "Relacionar andar e ser conduzido pelo Espírito.",
+    "evidence": [
+      "Gálatas 5:25",
+      "Romanos 8:14"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-03-fruto-01",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Gálatas 5:24–25 liga pertencer a Cristo a crucificar a carne e andar pelo Espírito.",
+    "prompt": "Gálatas 5:24–25 liga pertencer a Cristo a crucificar a carne e andar pelo Espírito.",
+    "cue": "Gálatas 5:24–25 liga pertencer a Cristo a crucificar a carne e andar pelo Espírito.",
+    "verseRef": "Gálatas 5:24–25",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências. Se vivemos no Espírito, andemos também pelo Espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os que pertencem a Cristo Jesus crucificaram a carne",
+    "feedbackCorrect": "Pertencer a Cristo aparece junto com carne crucificada e andar guiado.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos em sequência, 24 e 25."
+    },
+    "hint": "Leia os versículos 24 e 25 como um só movimento.",
+    "learningObjective": "Interpretar a ligação entre pertencer a Cristo e andar no Espírito.",
+    "evidence": [
+      "Gálatas 5:24–25"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-03-fruto-02",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Gálatas 5:24, toque a palavra que mostra o que os de Cristo fizeram com a carne.",
+    "prompt": "Em Gálatas 5:24, toque a palavra que mostra o que os de Cristo fizeram com a carne.",
+    "cue": "Em Gálatas 5:24, toque a palavra que mostra o que os de Cristo fizeram com a carne.",
+    "verseRef": "Gálatas 5:24",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências.",
+    "options": [
+      {
+        "id": "a",
+        "text": "paixões"
+      },
+      {
+        "id": "b",
+        "text": "crucificaram"
+      },
+      {
+        "id": "c",
+        "text": "concupiscências"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "crucificaram a carne",
+    "feedbackCorrect": "O verbo mostra ruptura decisiva com a vida guiada pela carne.",
+    "feedbackWrong": {
+      "a": "Paixões descrevem o que vem com a carne, não a ação feita.",
+      "c": "Concupiscências também descrevem a carne, não a ação dos crentes."
+    },
+    "hint": "Procure o verbo que os de Cristo praticam.",
+    "learningObjective": "Sustentar com o texto a ruptura com a carne.",
+    "evidence": [
+      "Gálatas 5:24"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-03-fruto-03",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Gálatas 5:22–23 sustenta sobre o caráter de quem crê?",
+    "prompt": "Que leitura Gálatas 5:22–23 sustenta sobre o caráter de quem crê?",
+    "cue": "Que leitura Gálatas 5:22–23 sustenta sobre o caráter de quem crê?",
+    "verseRef": "Gálatas 5:22–23",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É obra do Espírito na vida da pessoa"
+      },
+      {
+        "id": "b",
+        "text": "Serve para provar superioridade aos outros"
+      },
+      {
+        "id": "c",
+        "text": "Cada pessoa escolhe só um item da lista"
+      },
+      {
+        "id": "d",
+        "text": "Basta fugir da lei para ter esse caráter"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "Paulo atribui o caráter ao Espírito que produz, como árvore dá fruto.",
+    "feedbackWrong": {
+      "b": "Paulo fecha o trecho contra vaidade e provocação (5:26).",
+      "c": "A lista vem junta, como um só fruto com várias qualidades.",
+      "d": "A fonte citada é o Espírito, não a fuga de regras."
+    },
+    "hint": "Veja a quem Paulo atribui a lista inteira.",
+    "learningObjective": "Escolher a interpretação que Gálatas 5:22–23 sustenta.",
+    "evidence": [
+      "Gálatas 5:22–23"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-03-fruto-04",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do fruto em Gálatas 5?",
+    "prompt": "Qual sequência revela o caminho do fruto em Gálatas 5?",
+    "cue": "Qual sequência revela o caminho do fruto em Gálatas 5?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito produz amor e paz"
+      },
+      {
+        "id": "b",
+        "text": "Quem é de Cristo crucifica a carne"
+      },
+      {
+        "id": "c",
+        "text": "Quem vive no Espírito anda por ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "Fruto produzido, carne crucificada e um andar diário pelo Espírito.",
+    "feedbackWrong": {
+      "default": "Comece pelo fruto de 5:22; o andar de 5:25 fecha o caminho."
+    },
+    "hint": "Siga a ordem dos versículos 22, 24 e 25.",
+    "learningObjective": "Ver o encadeamento entre fruto, ruptura e andar.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:24–25"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-03-fruto-05",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Gálatas 5:24, a quem pertencem os que crucificaram a carne?",
+    "prompt": "Em Gálatas 5:24, a quem pertencem os que crucificaram a carne?",
+    "cue": "Em Gálatas 5:24, a quem pertencem os que crucificaram a carne?",
+    "verseRef": "Gálatas 5:24",
+    "passageText": "Mas os que pertencem a Cristo Jesus crucificaram a carne, com suas paixões e concupiscências.",
+    "template": "Mas os que pertencem a ___ Jesus crucificaram a carne, com suas paixões e concupiscências.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Pedro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os que pertencem a Cristo Jesus crucificaram a carne",
+    "feedbackCorrect": "A ruptura com a carne marca quem pertence a ele.",
+    "feedbackWrong": {
+      "a": "Paulo escreve a carta, mas a pertença é ao Senhor citado.",
+      "c": "Pedro não é citado neste versículo de Gálatas."
+    },
+    "hint": "Veja o nome ligado ao verbo pertencer.",
+    "learningObjective": "Lembrar a quem pertence quem crucificou a carne.",
+    "evidence": [
+      "Gálatas 5:24"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-03-fruto-06",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 5:22 a João 15:5?",
+    "prompt": "O que liga Gálatas 5:22 a João 15:5?",
+    "cue": "O que liga Gálatas 5:22 a João 15:5?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "passageA": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "passageB": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto nasce longe de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ramos produzem sem a videira"
+      },
+      {
+        "id": "c",
+        "text": "Fruto nasce de permanecer em Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "Jesus liga fruto a permanecer nele, e Paulo o chama de fruto do Espírito.",
+    "feedbackWrong": {
+      "a": "Jesus diz que sem ele nada pode ser feito (Jo 15:5).",
+      "b": "O ramo só frutifica ligado à videira, diz Jesus."
+    },
+    "hint": "Veja a condição que Jesus põe para haver fruto.",
+    "learningObjective": "Ligar o fruto do Espírito a permanecer em Cristo.",
+    "evidence": [
+      "Gálatas 5:22",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-01",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Atos 5:4, Pedro diz que Ananias mentiu apenas aos homens, e não a Deus.",
+    "prompt": "Em Atos 5:4, Pedro diz que Ananias mentiu apenas aos homens, e não a Deus.",
+    "cue": "Em Atos 5:4, Pedro diz que Ananias mentiu apenas aos homens, e não a Deus.",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Pedro afirma o contrário, que a mentira foi feita a Deus.",
+    "feedbackWrong": {
+      "true": "Releia a conclusão de Pedro no fim de Atos 5:4."
+    },
+    "hint": "Leia a conclusão de Pedro no versículo.",
+    "learningObjective": "Revisar a quem Ananias mentiu segundo Pedro.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-02",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 8:9, toque quem habita em vocês, segundo Paulo.",
+    "prompt": "Em Romanos 8:9, toque quem habita em vocês, segundo Paulo.",
+    "cue": "Em Romanos 8:9, toque quem habita em vocês, segundo Paulo.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Espírito de Deus"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Espírito de Deus habita em vocês",
+    "feedbackCorrect": "Paulo liga estar no Espírito a ele habitar na pessoa.",
+    "feedbackWrong": {
+      "a": "Cristo aparece ligado ao Espírito aqui, não nesta frase.",
+      "c": "A carne é o lado deixado por quem está em Cristo."
+    },
+    "hint": "Procure o sujeito do verbo habitar.",
+    "learningObjective": "Revisar quem habita em quem é de Cristo.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-03",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Gálatas 5:22, quais qualidades abrem o fruto do Espírito?",
+    "prompt": "Segundo Gálatas 5:22, quais qualidades abrem o fruto do Espírito?",
+    "cue": "Segundo Gálatas 5:22, quais qualidades abrem o fruto do Espírito?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor, alegria e paz"
+      },
+      {
+        "id": "b",
+        "text": "Inveja, embriaguez e glutonarias"
+      },
+      {
+        "id": "c",
+        "text": "Idolatria, feitiçarias e inimizades"
+      },
+      {
+        "id": "d",
+        "text": "Ira, ciúmes e discórdias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o fruto do Espírito é amor, alegria, paz",
+    "feedbackCorrect": "A lista do fruto abre com essas três qualidades juntas.",
+    "feedbackWrong": {
+      "b": "Essas aparecem nas obras da carne em 5:21.",
+      "c": "Essas abrem a lista das obras da carne em 5:20.",
+      "d": "Essas pertencem às obras da carne em 5:20."
+    },
+    "hint": "Separe a lista do fruto da lista da carne.",
+    "learningObjective": "Revisar o começo da lista do fruto do Espírito.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-04",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Atos 5:3 na ordem do texto.",
+    "prompt": "Monte Atos 5:3 na ordem do texto.",
+    "cue": "Monte Atos 5:3 na ordem do texto.",
+    "verseRef": "Atos 5:3",
+    "passageText": "Disse então Pedro: Ananias, por que Satanás encheu seu coração para mentir ao Espírito Santo, retendo parte do valor da propriedade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse então Pedro"
+      },
+      {
+        "id": "b",
+        "text": "Ananias, por que Satanás encheu seu coração"
+      },
+      {
+        "id": "c",
+        "text": "para mentir ao Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mentir ao Espírito Santo",
+    "feedbackCorrect": "Pedro fala, pergunta pelo coração cheio e nomeia a mentira.",
+    "feedbackWrong": {
+      "default": "Comece pela fala de Pedro; a mentira fecha o versículo."
+    },
+    "hint": "O versículo começa com quem fala.",
+    "learningObjective": "Reconhecer a sequência de Atos 5:3.",
+    "evidence": [
+      "Atos 5:3"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-05",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Gálatas 5:22, que qualidade vem logo depois de bondade na lista?",
+    "prompt": "Em Gálatas 5:22, que qualidade vem logo depois de bondade na lista?",
+    "cue": "Em Gálatas 5:22, que qualidade vem logo depois de bondade na lista?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "template": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, ___, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fidelidade"
+      },
+      {
+        "id": "b",
+        "text": "iras"
+      },
+      {
+        "id": "c",
+        "text": "invejas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "bondade, fidelidade, mansidão e autocontrole",
+    "feedbackCorrect": "Depois de bondade, a lista segue com essa qualidade e fecha no autocontrole.",
+    "feedbackWrong": {
+      "b": "Iras pertencem às obras da carne em 5:20.",
+      "c": "Invejas aparecem nas obras da carne em 5:21."
+    },
+    "hint": "Leia a parte final da lista do fruto.",
+    "learningObjective": "Revisar a ordem da lista do fruto.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-06",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Atos 5:4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:4 comunica que se liga a este contexto?",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "passageA": {
+      "ref": "Atos 5:4",
+      "text": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedro confronta uma mentira apresentada diante dos apóstolos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ignora ofertas parciais"
+      },
+      {
+        "id": "b",
+        "text": "Ananias mentiu só aos homens"
+      },
+      {
+        "id": "c",
+        "text": "Mentira ao Espírito atinge Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Para Pedro, a mentira ao Espírito alcança o próprio Deus.",
+    "feedbackWrong": {
+      "a": "Pedro expõe a oferta parcial em vez de ignorá-la.",
+      "b": "Pedro nega que a mentira tenha ficado só entre homens."
+    },
+    "hint": "Compare os dois destinos da mentira citados.",
+    "learningObjective": "Ligar Atos 5:4 à identidade do Espírito como Deus.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-07",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Romanos 8:14, toque como são chamados os conduzidos pelo Espírito de Deus.",
+    "prompt": "Em Romanos 8:14, toque como são chamados os conduzidos pelo Espírito de Deus.",
+    "cue": "Em Romanos 8:14, toque como são chamados os conduzidos pelo Espírito de Deus.",
+    "verseRef": "Romanos 8:14",
+    "passageText": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conduzidos"
+      },
+      {
+        "id": "b",
+        "text": "Espírito de Deus"
+      },
+      {
+        "id": "c",
+        "text": "filhos de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "são filhos de Deus",
+    "feedbackCorrect": "Os conduzidos pelo Espírito recebem esse nome de família.",
+    "feedbackWrong": {
+      "a": "Conduzidos descreve como vivem, não o nome que recebem.",
+      "b": "Esse é quem conduz, não o nome dos conduzidos."
+    },
+    "hint": "Leia o nome no fim do versículo.",
+    "learningObjective": "Revisar o nome dos conduzidos pelo Espírito.",
+    "evidence": [
+      "Romanos 8:14"
+    ]
+  },
+  {
+    "id": "pneumatologia-sem-pn-boss-08",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Gálatas 5:22 na ordem do texto.",
+    "prompt": "Monte Gálatas 5:22 na ordem do texto.",
+    "cue": "Monte Gálatas 5:22 na ordem do texto.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o fruto do Espírito é amor"
+      },
+      {
+        "id": "b",
+        "text": "alegria, paz, longanimidade"
+      },
+      {
+        "id": "c",
+        "text": "benignidade, bondade, fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "A lista começa na fonte e no amor, e segue em qualidades relacionais.",
+    "feedbackWrong": {
+      "default": "Comece pela fonte do fruto; a lista vem depois."
+    },
+    "hint": "O versículo começa nomeando a fonte.",
+    "learningObjective": "Reconhecer a sequência da lista do fruto.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-01",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Romanos 8:9, quem não tem o Espírito de Cristo não pertence a Cristo.",
+    "prompt": "Em Romanos 8:9, quem não tem o Espírito de Cristo não pertence a Cristo.",
+    "cue": "Em Romanos 8:9, quem não tem o Espírito de Cristo não pertence a Cristo.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "se alguém não tem o Espírito de Cristo, esse não é dele",
+    "feedbackCorrect": "Paulo junta pertencer a Cristo e ter o Espírito dele, sem separar.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Romanos 8:9 sobre quem não tem o Espírito."
+    },
+    "hint": "Leia a condição no fim do versículo.",
+    "learningObjective": "Compreender a ligação entre ter o Espírito e ser de Cristo.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-02",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "prompt": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "cue": "Em Gálatas 5:22, toque a palavra que marca a virada depois das obras da carne.",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fruto"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas o fruto do Espírito é amor",
+    "feedbackCorrect": "A palavra abre o contraste com a lista anterior da carne.",
+    "feedbackWrong": {
+      "a": "Fruto nomeia o resultado, não a palavra de virada.",
+      "b": "Espírito nomeia a fonte, não a palavra de virada."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o contraste entre carne e Espírito.",
+    "evidence": [
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-03",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Romanos 8:9 se relaciona com Atos 5:3–4 sobre o Espírito?",
+    "prompt": "Como Romanos 8:9 se relaciona com Atos 5:3–4 sobre o Espírito?",
+    "cue": "Como Romanos 8:9 se relaciona com Atos 5:3–4 sobre o Espírito?",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um nega o que o outro afirma sobre ele"
+      },
+      {
+        "id": "b",
+        "text": "Um fala de força e outro de uma pessoa"
+      },
+      {
+        "id": "c",
+        "text": "Só um dos trechos fala da vida interior"
+      },
+      {
+        "id": "d",
+        "text": "Ambos tratam o Espírito como Deus presente"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "o Espírito de Deus habita em vocês",
+    "feedbackCorrect": "Em Atos ele é Deus, e em Romanos ele habita nos que são de Cristo.",
+    "feedbackWrong": {
+      "a": "Os trechos se completam sobre quem ele é e onde ele age.",
+      "b": "Nos dois trechos ele age de modo pessoal, não como força vaga.",
+      "c": "Romanos fala da habitação interior, e Atos, da presença na igreja."
+    },
+    "hint": "Junte quem ele é em Atos com onde ele está em Romanos.",
+    "learningObjective": "Relacionar a identidade e a habitação do Espírito.",
+    "evidence": [
+      "Romanos 8:9",
+      "Atos 5:3–4"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-04",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a revisão da trilha sobre o Espírito?",
+    "prompt": "Como avança a revisão da trilha sobre o Espírito?",
+    "cue": "Como avança a revisão da trilha sobre o Espírito?",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito é Deus diante de Ananias"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito habita em quem é de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito produz fruto em quem crê"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Espírito de Deus habita em vocês",
+    "feedbackCorrect": "De quem ele é, para onde ele mora, até o que ele produz.",
+    "feedbackWrong": {
+      "default": "Comece por Atos 5; o fruto de Gálatas 5 fecha a revisão."
+    },
+    "hint": "Siga a ordem das cenas, de Atos a Gálatas.",
+    "learningObjective": "Compreender o fio da trilha sobre o Espírito.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-05",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Romanos 8:13, o que Paulo afirma de quem mortifica as obras do corpo pelo Espírito?",
+    "prompt": "Em Romanos 8:13, o que Paulo afirma de quem mortifica as obras do corpo pelo Espírito?",
+    "cue": "Em Romanos 8:13, o que Paulo afirma de quem mortifica as obras do corpo pelo Espírito?",
+    "verseRef": "Romanos 8:13",
+    "passageText": "Porque, se viverdes segundo a carne, morrereis; mas, se, pelo Espírito, mortificardes as obras do corpo, certamente, vivereis.",
+    "template": "Porque, se viverdes segundo a carne, morrereis; mas, se, pelo Espírito, mortificardes as obras do corpo, certamente, ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "morrereis"
+      },
+      {
+        "id": "b",
+        "text": "vivereis"
+      },
+      {
+        "id": "c",
+        "text": "ficareis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "certamente, vivereis",
+    "feedbackCorrect": "Mortificar pelo Espírito tem como destino certo a vida.",
+    "feedbackWrong": {
+      "a": "Morrer é o destino de viver segundo a carne neste versículo.",
+      "c": "Paulo usa um verbo de vida futura, não de permanência parada."
+    },
+    "hint": "Compare os dois destinos no mesmo versículo.",
+    "learningObjective": "Compreender os destinos contrastados em Romanos 8:13.",
+    "evidence": [
+      "Romanos 8:13"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-06",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Romanos 8:14 a 1 Coríntios 6:19?",
+    "prompt": "O que liga Romanos 8:14 a 1 Coríntios 6:19?",
+    "cue": "O que liga Romanos 8:14 a 1 Coríntios 6:19?",
+    "verseRef": "Romanos 8:14",
+    "passageText": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus.",
+    "passageA": {
+      "ref": "Romanos 8:14",
+      "text": "Pois todos os que são conduzidos pelo Espírito de Deus são filhos de Deus."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 6:19",
+      "text": "Ou não sabeis que o vosso corpo é o templo do Espírito Santo, que habita em vós, o qual recebestes da parte de Deus, e que não sois de vós mesmos?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos vivem sem o Espírito"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito habita e conduz"
+      },
+      {
+        "id": "c",
+        "text": "O corpo impede Deus de agir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "são conduzidos pelo Espírito de Deus",
+    "feedbackCorrect": "Conduzidos por fora e templo por dentro mostram a mesma presença.",
+    "feedbackWrong": {
+      "a": "Ser filho vem junto com ser conduzido por ele.",
+      "c": "O corpo é chamado templo do Espírito, não obstáculo."
+    },
+    "hint": "Veja onde o Espírito está nos dois trechos.",
+    "learningObjective": "Relacionar condução e habitação do Espírito.",
+    "evidence": [
+      "Romanos 8:14",
+      "1 Coríntios 6:19"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-07",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+    "prompt": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+    "cue": "Em Atos 5:4, toque o trecho que mostra a quem Ananias realmente mentiu.",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a Deus"
+      },
+      {
+        "id": "b",
+        "text": "aos homens"
+      },
+      {
+        "id": "c",
+        "text": "seu coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas a Deus",
+    "feedbackCorrect": "Pedro conclui que a mentira ultrapassou as pessoas e chegou a Deus.",
+    "feedbackWrong": {
+      "b": "Pedro nega que a mentira tenha ficado só entre homens.",
+      "c": "O coração é onde o desígnio nasceu, não o alvo final."
+    },
+    "hint": "Leia a conclusão de Pedro no fim do versículo.",
+    "learningObjective": "Relacionar a mentira de Ananias ao seu alvo real.",
+    "evidence": [
+      "Atos 5:4"
+    ]
+  },
+  {
+    "id": "pneumatologia-cam-pn-boss-08",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os destinos em Romanos 8?",
+    "prompt": "Como se encadeiam os destinos em Romanos 8?",
+    "cue": "Como se encadeiam os destinos em Romanos 8?",
+    "verseRef": "Romanos 8:6",
+    "passageText": "Porque a inclinação da carne conduz à morte, mas a inclinação do Espírito conduz à vida e à paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A carne conduz à morte"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito conduz à vida"
+      },
+      {
+        "id": "c",
+        "text": "Conduzidos pelo Espírito são filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a inclinação do Espírito conduz à vida e à paz",
+    "feedbackCorrect": "Dos dois destinos contrastados, Paulo chega aos filhos conduzidos.",
+    "feedbackWrong": {
+      "default": "Comece pelo destino da carne; os filhos são a chegada."
+    },
+    "hint": "Os filhos de Deus fecham o movimento do trecho.",
+    "learningObjective": "Compreender o encadeamento de Romanos 8:6 a 8:14.",
+    "evidence": [
+      "Romanos 8:6",
+      "Romanos 8:14"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-01",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Gálatas 5:25–26, andar pelo Espírito leva a provocar e a invejar os outros.",
+    "prompt": "Em Gálatas 5:25–26, andar pelo Espírito leva a provocar e a invejar os outros.",
+    "cue": "Em Gálatas 5:25–26, andar pelo Espírito leva a provocar e a invejar os outros.",
+    "verseRef": "Gálatas 5:25–26",
+    "passageText": "Se vivemos no Espírito, andemos também pelo Espírito. Não nos deixemos dominar pela vaidade, provocando uns aos outros e nutrindo inveja uns dos outros.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não nos deixemos dominar pela vaidade",
+    "feedbackCorrect": "O andar guiado é ligado ao oposto de vaidade, provocação e inveja.",
+    "feedbackWrong": {
+      "true": "Releia o pedido que Paulo faz logo depois de falar do andar."
+    },
+    "hint": "Leia o versículo 26 depois do chamado de 25.",
+    "learningObjective": "Interpretar o andar pelo Espírito nas relações.",
+    "evidence": [
+      "Gálatas 5:25–26"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-02",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 8:11, toque a palavra que afirma o que Deus fará aos corpos mortais.",
+    "prompt": "Em Romanos 8:11, toque a palavra que afirma o que Deus fará aos corpos mortais.",
+    "cue": "Em Romanos 8:11, toque a palavra que afirma o que Deus fará aos corpos mortais.",
+    "verseRef": "Romanos 8:11",
+    "passageText": "E, se o Espírito daquele que ressuscitou a Jesus dentre os mortos habita em vocês, aquele que ressuscitou a Cristo Jesus também vivificará os vossos corpos mortais por meio do seu Espírito que em vocês habita.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "mortais"
+      },
+      {
+        "id": "c",
+        "text": "vivificará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "também vivificará os vossos corpos mortais",
+    "feedbackCorrect": "A promessa futura repete, nos crentes, o que houve com Jesus.",
+    "feedbackWrong": {
+      "a": "Esse verbo fala do passado de Jesus, não do futuro dos crentes.",
+      "b": "Mortais descreve os corpos, não a ação prometida."
+    },
+    "hint": "Procure o verbo voltado ao futuro dos leitores.",
+    "learningObjective": "Sustentar a promessa de vida para o corpo.",
+    "evidence": [
+      "Romanos 8:11"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-03",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura conjunta os textos da trilha sustentam sobre o Espírito?",
+    "prompt": "Que leitura conjunta os textos da trilha sustentam sobre o Espírito?",
+    "cue": "Que leitura conjunta os textos da trilha sustentam sobre o Espírito?",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É Deus presente que habita e transforma"
+      },
+      {
+        "id": "b",
+        "text": "É força impessoal sem ação própria"
+      },
+      {
+        "id": "c",
+        "text": "Seu fruto depende só do esforço humano"
+      },
+      {
+        "id": "d",
+        "text": "Sua habitação é só para alguns líderes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Deus em Atos, habitando em Romanos e frutificando em Gálatas.",
+    "feedbackWrong": {
+      "b": "Mentir a ele como a Deus desmente uma força impessoal.",
+      "c": "Paulo chama o caráter de fruto do Espírito, não só de esforço.",
+      "d": "Romanos liga ter o Espírito a todo aquele que é de Cristo."
+    },
+    "hint": "Junte Atos 5, Romanos 8 e Gálatas 5 numa só frase.",
+    "learningObjective": "Sintetizar a leitura da trilha sobre o Espírito.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-04",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido conjunto da trilha?",
+    "prompt": "Qual sequência revela o sentido conjunto da trilha?",
+    "cue": "Qual sequência revela o sentido conjunto da trilha?",
+    "verseRef": "Atos 5:4",
+    "passageText": "Não estava ela em seu poder após a venda? E, ao ser vendida, não estaria à sua disposição? Por que você concebeu esse desígnio em seu coração? Você não mentiu aos homens, mas a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mentir ao Espírito é mentir a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Quem é de Cristo tem o Espírito habitando"
+      },
+      {
+        "id": "c",
+        "text": "O fruto do Espírito aparece na vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Você não mentiu aos homens, mas a Deus",
+    "feedbackCorrect": "Identidade, habitação e fruto formam o retrato da trilha.",
+    "feedbackWrong": {
+      "default": "Comece por quem o Espírito é; o fruto é a chegada visível."
+    },
+    "hint": "Siga de Atos a Romanos e depois a Gálatas.",
+    "learningObjective": "Ver o encadeamento identidade, habitação e fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-05",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Romanos 8:10, por causa de que o espírito é vida, segundo Paulo?",
+    "prompt": "Em Romanos 8:10, por causa de que o espírito é vida, segundo Paulo?",
+    "cue": "Em Romanos 8:10, por causa de que o espírito é vida, segundo Paulo?",
+    "verseRef": "Romanos 8:10",
+    "passageText": "E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da justiça.",
+    "template": "E se Cristo está em vocês, o corpo, de fato, está morto por causa do pecado, mas o espírito é vida, por causa da ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o espírito é vida, por causa da justiça",
+    "feedbackCorrect": "A vida de quem está em Cristo vem da nova posição diante de Deus.",
+    "feedbackWrong": {
+      "a": "O pecado é ligado à morte do corpo neste versículo.",
+      "c": "Morte descreve o corpo, não a causa da vida interior."
+    },
+    "hint": "Leia a causa no fim do versículo.",
+    "learningObjective": "Lembrar a causa da vida em Romanos 8:10.",
+    "evidence": [
+      "Romanos 8:10"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-06",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Gálatas 5:22 a João 15:5?",
+    "prompt": "O que liga Gálatas 5:22 a João 15:5?",
+    "cue": "O que liga Gálatas 5:22 a João 15:5?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "passageA": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "passageB": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto nasce de permanecer em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ramos produzem sem a videira"
+      },
+      {
+        "id": "c",
+        "text": "Fruto nasce longe de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "Jesus liga fruto a permanecer nele, e Paulo o atribui ao Espírito.",
+    "feedbackWrong": {
+      "b": "O ramo só frutifica ligado à videira, ensina Jesus.",
+      "c": "Jesus diz que sem ele nada pode ser feito (Jo 15:5)."
+    },
+    "hint": "Veja a condição de Jesus para haver fruto.",
+    "learningObjective": "Ligar o fruto do Espírito a permanecer em Cristo.",
+    "evidence": [
+      "Gálatas 5:22",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-07",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Romanos 8:9, toque o nome do Espírito que marca quem pertence a Cristo.",
+    "prompt": "Em Romanos 8:9, toque o nome do Espírito que marca quem pertence a Cristo.",
+    "cue": "Em Romanos 8:9, toque o nome do Espírito que marca quem pertence a Cristo.",
+    "verseRef": "Romanos 8:9",
+    "passageText": "Porém, vocês não estão na carne, mas no Espírito, se, de fato, o Espírito de Deus habita em vocês. E, se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "habita"
+      },
+      {
+        "id": "b",
+        "text": "Espírito de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se alguém não tem o Espírito de Cristo, esse não é dele",
+    "feedbackCorrect": "Ter esse Espírito é a marca de pertencer a Cristo, diz Paulo.",
+    "feedbackWrong": {
+      "a": "Esse verbo diz onde o Espírito está, não o nome procurado.",
+      "c": "Carne é o lado oposto ao de quem pertence a Cristo."
+    },
+    "hint": "Leia o fim do versículo, sobre pertencer.",
+    "learningObjective": "Sustentar quem marca pertencer a Cristo.",
+    "evidence": [
+      "Romanos 8:9"
+    ]
+  },
+  {
+    "id": "pneumatologia-pro-pn-boss-08",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus no fim da trilha?",
+    "prompt": "Qual sequência revela o cuidado de Deus no fim da trilha?",
+    "cue": "Qual sequência revela o cuidado de Deus no fim da trilha?",
+    "verseRef": "Gálatas 5:22",
+    "passageText": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus promete um Espírito que ensina"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito habita em quem crê"
+      },
+      {
+        "id": "c",
+        "text": "O Espírito produz amor e autocontrole"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o fruto do Espírito é amor",
+    "feedbackCorrect": "Da promessa de Jesus à habitação, e da habitação ao fruto visível.",
+    "feedbackWrong": {
+      "default": "Comece pela promessa nos Evangelhos; o fruto fecha a sequência."
+    },
+    "hint": "Siga Evangelhos, cartas e fruto no caráter.",
+    "learningObjective": "Ver o fio da promessa ao fruto na vida cristã.",
+    "evidence": [
+      "Gálatas 5:22",
+      "João 14:26"
+    ]
+  }
+]

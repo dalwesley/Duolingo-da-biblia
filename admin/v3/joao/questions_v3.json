@@ -1,0 +1,4068 @@
+[
+  {
+    "id": "joao-sem-jo-01-verbo-sinais-01",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 1:14, o Verbo se fez carne e habitou entre nós.",
+    "prompt": "Em João 1:14, o Verbo se fez carne e habitou entre nós.",
+    "cue": "Em João 1:14, o Verbo se fez carne e habitou entre nós.",
+    "verseRef": "João 1:13–14",
+    "passageText": "Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "João afirma que o Verbo se fez carne e habitou entre nós, cheio de graça.",
+    "feedbackWrong": {
+      "false": "Releia João 1:14, o Verbo se fez carne e habitou entre nós."
+    },
+    "hint": "Leia o começo do versículo.",
+    "learningObjective": "Observar que o Verbo se fez carne.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-01-verbo-sinais-02",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 1:14, toque o nome que João dá a Jesus neste capítulo.",
+    "prompt": "Em João 1:14, toque o nome que João dá a Jesus neste capítulo.",
+    "cue": "Em João 1:14, toque o nome que João dá a Jesus neste capítulo.",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "Verbo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E o Verbo se fez carne",
+    "feedbackCorrect": "João chama Jesus de o Verbo que se fez carne entre nós.",
+    "feedbackWrong": {
+      "a": "Graça descreve como ele é, e não o nome dele.",
+      "b": "Carne é o que o Verbo se tornou, e não o nome dele."
+    },
+    "hint": "Procure o nome no começo do versículo.",
+    "learningObjective": "Identificar Jesus como o Verbo em João 1:14.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-01-verbo-sinais-03",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 1:12, o que recebem os que creem no nome de Jesus?",
+    "prompt": "Segundo João 1:12, o que recebem os que creem no nome de Jesus?",
+    "cue": "Segundo João 1:12, o que recebem os que creem no nome de Jesus?",
+    "verseRef": "João 1:12",
+    "passageText": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O direito de julgar os outros"
+      },
+      {
+        "id": "b",
+        "text": "Uma posição entre os líderes"
+      },
+      {
+        "id": "c",
+        "text": "O nome de uma família humana"
+      },
+      {
+        "id": "d",
+        "text": "O poder de se tornarem filhos de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "deu-lhes o poder de se tornarem filhos de Deus",
+    "feedbackCorrect": "Quem recebe Jesus e crê no seu nome recebe o poder de ser filho de Deus.",
+    "feedbackWrong": {
+      "a": "O texto fala de se tornar filho de Deus, e não de julgar.",
+      "b": "O presente é filiação a Deus, e não uma posição de honra.",
+      "c": "O novo nascimento vem de Deus, e não de uma linhagem."
+    },
+    "hint": "Veja o que Deus dá a quem o recebe.",
+    "learningObjective": "Observar o presente dado a quem crê em Jesus.",
+    "evidence": [
+      "João 1:12"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-01-verbo-sinais-04",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 1:14 na ordem do texto.",
+    "prompt": "Monte João 1:14 na ordem do texto.",
+    "cue": "Monte João 1:14 na ordem do texto.",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E o Verbo se fez carne e habitou entre nós"
+      },
+      {
+        "id": "b",
+        "text": "cheio de graça e de verdade"
+      },
+      {
+        "id": "c",
+        "text": "e vimos a sua glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "O Verbo se faz carne, cheio de graça e verdade, e sua glória é vista.",
+    "feedbackWrong": {
+      "default": "Comece pelo Verbo que se fez carne; a glória vista fecha o versículo."
+    },
+    "hint": "O versículo começa pelo Verbo.",
+    "learningObjective": "Reconhecer a sequência de João 1:14.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-01-verbo-sinais-05",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 1:11, o que os seus não fizeram com Jesus?",
+    "prompt": "Em João 1:11, o que os seus não fizeram com Jesus?",
+    "cue": "Em João 1:11, o que os seus não fizeram com Jesus?",
+    "verseRef": "João 1:11",
+    "passageText": "Veio para o que era seu, mas os seus não o receberam.",
+    "template": "Veio para o que era seu, mas os seus não o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouviram"
+      },
+      {
+        "id": "b",
+        "text": "receberam"
+      },
+      {
+        "id": "c",
+        "text": "seguiram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os seus não o receberam",
+    "feedbackCorrect": "Jesus veio para o que era seu, mas os seus não o receberam.",
+    "feedbackWrong": {
+      "a": "O texto fala de não receber Jesus, e não apenas de ouvir.",
+      "c": "O texto fala de não receber Jesus quando ele veio."
+    },
+    "hint": "Leia o fim do versículo 11.",
+    "learningObjective": "Lembrar que os seus não receberam Jesus.",
+    "evidence": [
+      "João 1:11"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-01-verbo-sinais-06",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 1:14 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:14 comunica que se liga a este contexto?",
+    "cue": "O que João 1:14 comunica que se liga a este contexto?",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "passageA": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se faz presente entre os seres humanos em Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo se fez carne"
+      },
+      {
+        "id": "b",
+        "text": "A lei basta por si"
+      },
+      {
+        "id": "c",
+        "text": "Deus se afasta dos humanos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "O Verbo se fez carne e habitou entre nós, presente no meio humano.",
+    "feedbackWrong": {
+      "b": "O centro aqui é o Verbo presente, e não a lei sozinha.",
+      "c": "O texto mostra Deus presente entre nós, e não afastado."
+    },
+    "hint": "Veja o que o Verbo se tornou.",
+    "learningObjective": "Ligar João 1:14 à presença de Deus em Jesus.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-01-verbo-sinais-01",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 1:11–12, todos os que eram de Jesus o receberam sem exceção.",
+    "prompt": "Em João 1:11–12, todos os que eram de Jesus o receberam sem exceção.",
+    "cue": "Em João 1:11–12, todos os que eram de Jesus o receberam sem exceção.",
+    "verseRef": "João 1:11–12",
+    "passageText": "Veio para o que era seu, mas os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "os seus não o receberam",
+    "feedbackCorrect": "O texto diz que os seus não o receberam; só quem o recebe é filho.",
+    "feedbackWrong": {
+      "true": "Releia João 1:11, os seus não o receberam quando ele veio."
+    },
+    "hint": "Compare o versículo 11 com o 12.",
+    "learningObjective": "Compreender o contraste entre rejeição e recepção.",
+    "evidence": [
+      "João 1:11–12"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-01-verbo-sinais-02",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 1:12, toque a palavra que marca o contraste com a rejeição anterior.",
+    "prompt": "Em João 1:12, toque a palavra que marca o contraste com a rejeição anterior.",
+    "cue": "Em João 1:12, toque a palavra que marca o contraste com a rejeição anterior.",
+    "verseRef": "João 1:12",
+    "passageText": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "Mas"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas a todos quantos o receberam",
+    "feedbackCorrect": "Depois da rejeição, o texto vira a página para quem o recebe.",
+    "feedbackWrong": {
+      "a": "Nome diz em quem creem; o contraste está no início.",
+      "c": "Todos diz quantos recebem; o contraste está na primeira palavra."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em João 1:12.",
+    "evidence": [
+      "João 1:12"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-01-verbo-sinais-03",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 1:12 se relaciona com João 1:11?",
+    "prompt": "Como João 1:12 se relaciona com João 1:11?",
+    "cue": "Como João 1:12 se relaciona com João 1:11?",
+    "verseRef": "João 1:11–12",
+    "passageText": "Veio para o que era seu, mas os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O nascimento humano garante a fé"
+      },
+      {
+        "id": "b",
+        "text": "Quem rejeita Jesus torna-se seu filho"
+      },
+      {
+        "id": "c",
+        "text": "Crer é desnecessário para ser filho"
+      },
+      {
+        "id": "d",
+        "text": "Quem recebe Jesus torna-se filho de Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Mas a todos quantos o receberam",
+    "feedbackCorrect": "Ao lado da rejeição, o texto mostra quem recebe Jesus como filho de Deus.",
+    "feedbackWrong": {
+      "a": "O nascimento como filho de Deus vem de Deus, em 1:13.",
+      "b": "Filho de Deus é quem recebe Jesus, e não quem o rejeita.",
+      "c": "O texto liga a filiação a receber Jesus e crer nele."
+    },
+    "hint": "Pense no contraste entre os dois versículos.",
+    "learningObjective": "Relacionar rejeição e recepção em João 1:11–12.",
+    "evidence": [
+      "João 1:11–12"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-01-verbo-sinais-04",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em João 1:11–12?",
+    "prompt": "Como avança a cena em João 1:11–12?",
+    "cue": "Como avança a cena em João 1:11–12?",
+    "verseRef": "João 1:11–12",
+    "passageText": "Veio para o que era seu, mas os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus vem e não é recebido"
+      },
+      {
+        "id": "b",
+        "text": "Quem o recebe crê no seu nome"
+      },
+      {
+        "id": "c",
+        "text": "Eles se tornam filhos de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas a todos quantos o receberam",
+    "feedbackCorrect": "Primeiro a rejeição, depois a recepção de quem crê e se torna filho.",
+    "feedbackWrong": {
+      "default": "Comece pela vinda sem recepção; tornar-se filho é o resultado."
+    },
+    "hint": "O resultado de crer vem por último.",
+    "learningObjective": "Compreender o movimento de João 1:11–12.",
+    "evidence": [
+      "João 1:11–12"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-01-verbo-sinais-05",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 1:16, de onde vem a graça sobre graça que todos receberam?",
+    "prompt": "Em João 1:16, de onde vem a graça sobre graça que todos receberam?",
+    "cue": "Em João 1:16, de onde vem a graça sobre graça que todos receberam?",
+    "verseRef": "João 1:16",
+    "passageText": "E todos nós temos recebido da sua plenitude, graça sobre graça.",
+    "template": "E todos nós temos recebido da sua ___, graça sobre graça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "plenitude"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "temos recebido da sua plenitude",
+    "feedbackCorrect": "Todos receberam da plenitude de Jesus, graça sobre graça sem medida.",
+    "feedbackWrong": {
+      "b": "A glória é vista em 1:14; aqui todos recebem de sua fonte cheia.",
+      "c": "A verdade aparece em 1:14 e 1:17; aqui a fonte é outra palavra."
+    },
+    "hint": "Procure a palavra ligada a receber.",
+    "learningObjective": "Relacionar a graça recebida à plenitude de Jesus.",
+    "evidence": [
+      "João 1:16"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-01-verbo-sinais-06",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 1:12 a João 20:31?",
+    "prompt": "O que liga João 1:12 a João 20:31?",
+    "cue": "O que liga João 1:12 a João 20:31?",
+    "verseRef": "João 1:12",
+    "passageText": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "passageA": {
+      "ref": "João 1:12",
+      "text": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;"
+    },
+    "passageB": {
+      "ref": "João 20:31",
+      "text": "Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Crer no nome de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Rejeitar o Verbo enviado"
+      },
+      {
+        "id": "c",
+        "text": "Nascer de linhagem humana"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "aos que creem no seu nome",
+    "feedbackCorrect": "Nos dois textos, crer em Jesus está no centro do que João anuncia.",
+    "feedbackWrong": {
+      "b": "Rejeitar é o oposto do crer que os dois textos destacam.",
+      "c": "João 1:13 nega que a filiação venha da linhagem humana."
+    },
+    "hint": "Veja o alvo que João dá ao seu livro.",
+    "learningObjective": "Relacionar crer em Jesus no começo e no fim de João.",
+    "evidence": [
+      "João 1:12",
+      "João 20:31"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-01-verbo-sinais-01",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 1:13, ser filho de Deus não depende da vontade humana.",
+    "prompt": "Em João 1:13, ser filho de Deus não depende da vontade humana.",
+    "cue": "Em João 1:13, ser filho de Deus não depende da vontade humana.",
+    "verseRef": "João 1:13",
+    "passageText": "Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "nem da vontade do homem, mas de Deus",
+    "feedbackCorrect": "O nascimento como filho de Deus vem de Deus, e não da vontade humana.",
+    "feedbackWrong": {
+      "false": "Releia João 1:13, não da vontade do homem, mas de Deus."
+    },
+    "hint": "Veja de onde esse nascimento vem.",
+    "learningObjective": "Interpretar a origem divina da filiação em João 1:13.",
+    "evidence": [
+      "João 1:13"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-01-verbo-sinais-02",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 1:14, toque o trecho que mostra Jesus se tornando humano.",
+    "prompt": "Em João 1:14, toque o trecho que mostra Jesus se tornando humano.",
+    "cue": "Em João 1:14, toque o trecho que mostra Jesus se tornando humano.",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "habitou entre nós"
+      },
+      {
+        "id": "b",
+        "text": "cheio de graça"
+      },
+      {
+        "id": "c",
+        "text": "se fez carne"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "O Verbo se fez carne, tornando-se humano sem deixar de ser quem é.",
+    "feedbackWrong": {
+      "a": "Habitar entre nós diz onde ele viveu; tornar-se humano vem antes.",
+      "b": "Cheio de graça descreve como ele é; tornar-se humano vem antes."
+    },
+    "hint": "Procure o verbo que fala de tornar-se.",
+    "learningObjective": "Sustentar com o texto que o Verbo se fez humano.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-01-verbo-sinais-03",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 1:13–14 sustenta sobre Jesus?",
+    "prompt": "Que leitura João 1:13–14 sustenta sobre Jesus?",
+    "cue": "Que leitura João 1:13–14 sustenta sobre Jesus?",
+    "verseRef": "João 1:13–14",
+    "passageText": "Os quais não nasceram do sangue, nem da vontade da carne, nem da vontade do homem, mas de Deus. E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ser filho de Deus vem da linhagem"
+      },
+      {
+        "id": "b",
+        "text": "O Verbo é só uma ideia abstrata"
+      },
+      {
+        "id": "c",
+        "text": "Jesus é apenas um mestre humano comum"
+      },
+      {
+        "id": "d",
+        "text": "O Filho eterno se tornou humano"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "O Verbo que estava com Deus se fez carne e habitou entre nós.",
+    "feedbackWrong": {
+      "a": "João 1:13 diz que esse nascimento vem de Deus.",
+      "b": "Uma ideia não se faz carne nem habita entre pessoas.",
+      "c": "O texto mostra sua glória como do unigênito do Pai."
+    },
+    "hint": "Compare cada opção com João 1:13–14.",
+    "learningObjective": "Escolher a interpretação que João 1:11–14 sustenta.",
+    "evidence": [
+      "João 1:11–14"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-01-verbo-sinais-04",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do Verbo na história da Bíblia?",
+    "prompt": "Qual sequência revela o caminho do Verbo na história da Bíblia?",
+    "cue": "Qual sequência revela o caminho do Verbo na história da Bíblia?",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio, Deus cria céus e terra"
+      },
+      {
+        "id": "b",
+        "text": "O Verbo se faz carne entre nós"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê tem vida no nome dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "Da criação ao Verbo feito carne, até a vida dada a quem crê nele.",
+    "feedbackWrong": {
+      "default": "Siga a história, da criação em Gênesis à vida em João 20:31."
+    },
+    "hint": "Siga a ordem, de Gênesis ao fim de João.",
+    "learningObjective": "Ver o Verbo feito carne dentro da história bíblica.",
+    "evidence": [
+      "João 1:14",
+      "Gênesis 1:1",
+      "João 20:31"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-01-verbo-sinais-05",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 1:17, o que chegou por meio de Jesus Cristo junto com a verdade?",
+    "prompt": "Em João 1:17, o que chegou por meio de Jesus Cristo junto com a verdade?",
+    "cue": "Em João 1:17, o que chegou por meio de Jesus Cristo junto com a verdade?",
+    "verseRef": "João 1:17",
+    "passageText": "Porque a lei foi dada por intermédio de Moisés; a graça e a verdade chegaram por meio de Jesus Cristo.",
+    "template": "Porque a lei foi dada por intermédio de Moisés; a ___ e a verdade chegaram por meio de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a graça e a verdade chegaram por meio de Jesus Cristo",
+    "feedbackCorrect": "Por meio de Jesus Cristo chegaram a graça e a verdade juntas.",
+    "feedbackWrong": {
+      "a": "Vida é tema de João, mas aqui o par é com a verdade.",
+      "b": "A glória é vista em 1:14; aqui o par é com a verdade."
+    },
+    "hint": "É a palavra que vem antes de verdade.",
+    "learningObjective": "Lembrar o termo que chega com a verdade em Jesus.",
+    "evidence": [
+      "João 1:17"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-01-verbo-sinais-06",
+    "trail": "joao",
+    "section": "jo-01-verbo-sinais",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 1:14 a Gênesis 1:1?",
+    "prompt": "O que liga João 1:14 a Gênesis 1:1?",
+    "cue": "O que liga João 1:14 a Gênesis 1:1?",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "passageA": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "passageB": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, Deus criou os céus e a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus começa só no nascimento"
+      },
+      {
+        "id": "b",
+        "text": "Deus presente desde o princípio"
+      },
+      {
+        "id": "c",
+        "text": "A matéria existe desde sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E o Verbo se fez carne",
+    "feedbackCorrect": "O Verbo que se fez carne já estava com Deus no princípio de tudo.",
+    "feedbackWrong": {
+      "a": "O Verbo já existia antes de se fazer carne em João 1:14.",
+      "c": "Gênesis começa com Deus criando; a matéria não é eterna."
+    },
+    "hint": "Veja quem já está presente no princípio.",
+    "learningObjective": "Ligar o Verbo de João ao Deus do princípio.",
+    "evidence": [
+      "João 1:14",
+      "Gênesis 1:1"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-02-eu-sou-01",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 14:6, Jesus diz que Tomé é o caminho, a verdade e a vida.",
+    "prompt": "Em João 14:6, Jesus diz que Tomé é o caminho, a verdade e a vida.",
+    "cue": "Em João 14:6, Jesus diz que Tomé é o caminho, a verdade e a vida.",
+    "verseRef": "João 14:5–6",
+    "passageText": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho? Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Quem diz ser o caminho, a verdade e a vida é o próprio Jesus.",
+    "feedbackWrong": {
+      "true": "Releia João 14:6, é Jesus quem diz ser o caminho."
+    },
+    "hint": "Veja quem fala e de quem ele fala.",
+    "learningObjective": "Observar quem se apresenta como o caminho.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-02-eu-sou-02",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 14:6, toque a primeira palavra com que Jesus se apresenta.",
+    "prompt": "Em João 14:6, toque a primeira palavra com que Jesus se apresenta.",
+    "cue": "Em João 14:6, toque a primeira palavra com que Jesus se apresenta.",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "caminho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Jesus se apresenta primeiro como o caminho até o Pai.",
+    "feedbackWrong": {
+      "a": "Vida é a terceira palavra; a primeira vem logo após Eu sou.",
+      "b": "Verdade é a segunda palavra; a primeira vem logo após Eu sou."
+    },
+    "hint": "Leia logo depois de Eu sou.",
+    "learningObjective": "Identificar Jesus como o caminho em João 14:6.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-02-eu-sou-03",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 14:8, o que Filipe pede a Jesus?",
+    "prompt": "Segundo João 14:8, o que Filipe pede a Jesus?",
+    "cue": "Segundo João 14:8, o que Filipe pede a Jesus?",
+    "verseRef": "João 14:8",
+    "passageText": "Disse-lhe Filipe: Senhor, mostra-nos o Pai, e isso nos basta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que adie a sua partida"
+      },
+      {
+        "id": "b",
+        "text": "Que mostre o Pai a eles"
+      },
+      {
+        "id": "c",
+        "text": "Que explique uma parábola difícil"
+      },
+      {
+        "id": "d",
+        "text": "Que os leve ao templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mostra-nos o Pai",
+    "feedbackCorrect": "Filipe pede que Jesus lhes mostre o Pai, e diz que isso basta.",
+    "feedbackWrong": {
+      "a": "Filipe não pede adiamento; pede para ver o Pai.",
+      "c": "Filipe não pede explicação; pede para ver o Pai.",
+      "d": "O pedido de Filipe é ver o Pai, e não ir ao templo."
+    },
+    "hint": "Leia o pedido curto de Filipe.",
+    "learningObjective": "Observar o pedido de Filipe em João 14:8.",
+    "evidence": [
+      "João 14:8"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-02-eu-sou-04",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 14:6 na ordem do texto.",
+    "prompt": "Monte João 14:6 na ordem do texto.",
+    "cue": "Monte João 14:6 na ordem do texto.",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse-lhe Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Eu sou o caminho, a verdade e a vida"
+      },
+      {
+        "id": "c",
+        "text": "ninguém vem ao Pai, senão por mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Jesus se apresenta como caminho, verdade e vida, e aponta ao Pai.",
+    "feedbackWrong": {
+      "default": "Comece por quem fala; a chegada ao Pai fecha o versículo."
+    },
+    "hint": "O versículo começa com quem fala.",
+    "learningObjective": "Reconhecer a sequência de João 14:6.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-02-eu-sou-05",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 14:3, o que Jesus vai preparar para os discípulos?",
+    "prompt": "Em João 14:3, o que Jesus vai preparar para os discípulos?",
+    "cue": "Em João 14:3, o que Jesus vai preparar para os discípulos?",
+    "verseRef": "João 14:3",
+    "passageText": "E, quando eu for e vos preparar um lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós.",
+    "template": "E, quando eu for e vos preparar um ___, voltarei e vos receberei para mim mesmo, para que, onde eu estiver estejais também vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lugar"
+      },
+      {
+        "id": "b",
+        "text": "reino"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vos preparar um lugar",
+    "feedbackCorrect": "Jesus vai preparar um lugar e voltará para receber os seus.",
+    "feedbackWrong": {
+      "b": "O texto fala de preparar um lugar, e de voltar por eles.",
+      "c": "O texto fala de preparar um lugar para os discípulos."
+    },
+    "hint": "Leia a promessa do versículo 3.",
+    "learningObjective": "Lembrar o lugar que Jesus prepara.",
+    "evidence": [
+      "João 14:3"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-02-eu-sou-06",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 14:6 comunica que se liga a este contexto?",
+    "prompt": "O que João 14:6 comunica que se liga a este contexto?",
+    "cue": "O que João 14:6 comunica que se liga a este contexto?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "passageA": {
+      "ref": "João 14:6",
+      "text": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus consola os discípulos antes de partir para o Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Pai está longe de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Muitos caminhos levam ao Pai"
+      },
+      {
+        "id": "c",
+        "text": "Jesus é o caminho ao Pai"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ninguém vem ao Pai, senão por mim",
+    "feedbackCorrect": "Antes de partir, Jesus mostra que ele mesmo é o caminho ao Pai.",
+    "feedbackWrong": {
+      "a": "Quem vê Jesus vê o Pai; ele não está longe de Deus.",
+      "b": "Jesus diz que ninguém vem ao Pai senão por ele."
+    },
+    "hint": "Veja aonde o caminho leva.",
+    "learningObjective": "Ligar João 14:6 ao consolo de Jesus aos discípulos.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-02-eu-sou-01",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 14:5–6, Tomé já sabe para onde Jesus vai e não faz perguntas.",
+    "prompt": "Em João 14:5–6, Tomé já sabe para onde Jesus vai e não faz perguntas.",
+    "cue": "Em João 14:5–6, Tomé já sabe para onde Jesus vai e não faz perguntas.",
+    "verseRef": "João 14:5–6",
+    "passageText": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho? Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não sabemos para onde estás indo",
+    "feedbackCorrect": "Tomé confessa que não sabe o caminho, e Jesus responde a ele.",
+    "feedbackWrong": {
+      "true": "Releia João 14:5, Tomé diz que não sabe para onde Jesus vai."
+    },
+    "hint": "Leia a fala de Tomé.",
+    "learningObjective": "Compreender a pergunta de Tomé em João 14:5.",
+    "evidence": [
+      "João 14:5–6"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-02-eu-sou-02",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 14:9, toque o trecho que mostra a longa convivência de Jesus com eles.",
+    "prompt": "Em João 14:9, toque o trecho que mostra a longa convivência de Jesus com eles.",
+    "cue": "Em João 14:9, toque o trecho que mostra a longa convivência de Jesus com eles.",
+    "verseRef": "João 14:9",
+    "passageText": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filipe"
+      },
+      {
+        "id": "b",
+        "text": "tanto tempo"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "há tanto tempo estou convosco",
+    "feedbackCorrect": "Jesus lembra que está com os discípulos há tanto tempo.",
+    "feedbackWrong": {
+      "a": "Filipe é quem pergunta; o tempo de convivência vem depois.",
+      "c": "Pai é quem Filipe quer ver; o tempo vem antes disso."
+    },
+    "hint": "Procure uma expressão de tempo.",
+    "learningObjective": "Reconhecer o tempo de convivência em João 14:9.",
+    "evidence": [
+      "João 14:9"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-02-eu-sou-03",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a pergunta de Tomé em João 14:5 prepara a resposta de Jesus?",
+    "prompt": "Como a pergunta de Tomé em João 14:5 prepara a resposta de Jesus?",
+    "cue": "Como a pergunta de Tomé em João 14:5 prepara a resposta de Jesus?",
+    "verseRef": "João 14:5–6",
+    "passageText": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho? Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela abre espaço para Jesus se revelar"
+      },
+      {
+        "id": "b",
+        "text": "Ela prova que Tomé já compreendeu"
+      },
+      {
+        "id": "c",
+        "text": "Ela encerra a conversa dos discípulos"
+      },
+      {
+        "id": "d",
+        "text": "Ela muda o assunto para o templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como podemos saber o caminho?",
+    "feedbackCorrect": "A dúvida de Tomé abre espaço para Jesus se declarar o caminho.",
+    "feedbackWrong": {
+      "b": "Tomé confessa que não sabe; ainda não compreendeu.",
+      "c": "A pergunta não encerra; ela recebe a grande resposta de Jesus.",
+      "d": "O assunto continua sendo o caminho até o Pai."
+    },
+    "hint": "Veja o que Jesus declara logo em seguida.",
+    "learningObjective": "Relacionar a pergunta de Tomé à resposta de Jesus.",
+    "evidence": [
+      "João 14:5–6"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-02-eu-sou-04",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a conversa em João 14:5–6?",
+    "prompt": "Como avança a conversa em João 14:5–6?",
+    "cue": "Como avança a conversa em João 14:5–6?",
+    "verseRef": "João 14:5–6",
+    "passageText": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho? Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomé confessa não saber o caminho"
+      },
+      {
+        "id": "b",
+        "text": "Jesus se declara caminho, verdade e vida"
+      },
+      {
+        "id": "c",
+        "text": "Só por Jesus se chega ao Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Da dúvida de Tomé à declaração de Jesus como único caminho ao Pai.",
+    "feedbackWrong": {
+      "default": "Comece pela pergunta de Tomé; a chegada ao Pai fecha a resposta."
+    },
+    "hint": "A pergunta vem antes da declaração.",
+    "learningObjective": "Compreender o encadeamento de João 14:5–6.",
+    "evidence": [
+      "João 14:5–6"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-02-eu-sou-05",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 14:5, para onde Tomé diz não saber que Jesus está indo?",
+    "prompt": "Em João 14:5, para onde Tomé diz não saber que Jesus está indo?",
+    "cue": "Em João 14:5, para onde Tomé diz não saber que Jesus está indo?",
+    "verseRef": "João 14:5",
+    "passageText": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho?",
+    "template": "Disse-lhe Tomé: Senhor, não sabemos para onde estás ___; como podemos saber o caminho?",
+    "options": [
+      {
+        "id": "a",
+        "text": "falando"
+      },
+      {
+        "id": "b",
+        "text": "indo"
+      },
+      {
+        "id": "c",
+        "text": "voltando"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para onde estás indo",
+    "feedbackCorrect": "Tomé não sabe para onde Jesus está indo, e por isso pergunta.",
+    "feedbackWrong": {
+      "a": "A dúvida de Tomé é sobre o destino de Jesus, não sua fala.",
+      "c": "Tomé fala da ida de Jesus, e não de uma volta naquele momento."
+    },
+    "hint": "Leia o verbo da pergunta de Tomé.",
+    "learningObjective": "Compreender a dúvida de Tomé sobre o destino de Jesus.",
+    "evidence": [
+      "João 14:5"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-02-eu-sou-06",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 14:6 a Êxodo 3:14?",
+    "prompt": "O que liga João 14:6 a Êxodo 3:14?",
+    "cue": "O que liga João 14:6 a Êxodo 3:14?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "passageA": {
+      "ref": "João 14:6",
+      "text": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim."
+    },
+    "passageB": {
+      "ref": "Êxodo 3:14",
+      "text": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se revela como Eu Sou"
+      },
+      {
+        "id": "b",
+        "text": "Um nome humano para Deus"
+      },
+      {
+        "id": "c",
+        "text": "Jesus nega o Deus antigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "O Eu sou de Jesus ecoa o nome com que Deus se revelou a Moisés.",
+    "feedbackWrong": {
+      "b": "Nos dois textos, quem se apresenta é o próprio Deus.",
+      "c": "Jesus não nega Deus; ele se apresenta nas palavras dele."
+    },
+    "hint": "Compare como Deus e Jesus se apresentam.",
+    "learningObjective": "Relacionar o Eu sou de Jesus ao nome de Deus.",
+    "evidence": [
+      "João 14:6",
+      "Êxodo 3:14"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-02-eu-sou-01",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 14:9, quem vê Jesus vê também o Pai.",
+    "prompt": "Em João 14:9, quem vê Jesus vê também o Pai.",
+    "cue": "Em João 14:9, quem vê Jesus vê também o Pai.",
+    "verseRef": "João 14:9",
+    "passageText": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Quem me vê vê o Pai",
+    "feedbackCorrect": "Jesus responde a Filipe que quem o vê já está vendo o Pai.",
+    "feedbackWrong": {
+      "false": "Releia João 14:9, quem me vê vê o Pai, diz Jesus."
+    },
+    "hint": "Leia a resposta de Jesus a Filipe.",
+    "learningObjective": "Interpretar que ver Jesus é ver o Pai.",
+    "evidence": [
+      "João 14:9"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-02-eu-sou-02",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 14:6, toque o trecho que mostra que o caminho ao Pai passa por Jesus.",
+    "prompt": "Em João 14:6, toque o trecho que mostra que o caminho ao Pai passa por Jesus.",
+    "cue": "Em João 14:6, toque o trecho que mostra que o caminho ao Pai passa por Jesus.",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a vida"
+      },
+      {
+        "id": "b",
+        "text": "a verdade"
+      },
+      {
+        "id": "c",
+        "text": "senão por mim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ninguém vem ao Pai, senão por mim",
+    "feedbackCorrect": "Jesus afirma que ninguém vem ao Pai senão por meio dele.",
+    "feedbackWrong": {
+      "a": "Vida diz quem Jesus é; a passagem ao Pai vem no fim.",
+      "b": "Verdade diz quem Jesus é; a passagem ao Pai vem no fim."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Sustentar com o texto que o Pai é alcançado por Jesus.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-02-eu-sou-03",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 14:6 sustenta sobre chegar ao Pai?",
+    "prompt": "Que leitura João 14:6 sustenta sobre chegar ao Pai?",
+    "cue": "Que leitura João 14:6 sustenta sobre chegar ao Pai?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há caminhos ao Pai sem Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus é o único caminho ao Pai"
+      },
+      {
+        "id": "c",
+        "text": "Tomé já conhecia todo o caminho"
+      },
+      {
+        "id": "d",
+        "text": "Basta conhecer ideias sobre Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ninguém vem ao Pai, senão por mim",
+    "feedbackCorrect": "Jesus se apresenta como o caminho, e ninguém vai ao Pai sem ele.",
+    "feedbackWrong": {
+      "a": "Jesus diz que ninguém vem ao Pai senão por ele.",
+      "c": "Tomé acaba de dizer que não sabe o caminho.",
+      "d": "O texto aponta uma pessoa, Jesus, e não só ideias."
+    },
+    "hint": "Veja a frase final de João 14:6.",
+    "learningObjective": "Escolher a interpretação que João 14:6 sustenta.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-02-eu-sou-04",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do Eu sou na história da Bíblia?",
+    "prompt": "Qual sequência revela o fio do Eu sou na história da Bíblia?",
+    "cue": "Qual sequência revela o fio do Eu sou na história da Bíblia?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se apresenta como Eu Sou"
+      },
+      {
+        "id": "b",
+        "text": "Jesus diz ser o caminho ao Pai"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê chega ao Pai nele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Do nome de Deus em Êxodo à declaração de Jesus e à fé nele.",
+    "feedbackWrong": {
+      "default": "Siga a história, de Êxodo ao evangelho de João."
+    },
+    "hint": "Comece por Deus se revelando a Moisés.",
+    "learningObjective": "Ver o Eu sou de Jesus ligado ao nome de Deus.",
+    "evidence": [
+      "João 14:6",
+      "Êxodo 3:14"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-02-eu-sou-05",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 14:9, que verbo Jesus repete ao falar de ver o Pai?",
+    "prompt": "Em João 14:9, que verbo Jesus repete ao falar de ver o Pai?",
+    "cue": "Em João 14:9, que verbo Jesus repete ao falar de ver o Pai?",
+    "verseRef": "João 14:9",
+    "passageText": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?",
+    "template": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me ___ vê o Pai; como dizes: Mostra-nos o Pai?",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhece"
+      },
+      {
+        "id": "b",
+        "text": "ouve"
+      },
+      {
+        "id": "c",
+        "text": "vê"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Quem me vê vê o Pai",
+    "feedbackCorrect": "Quem vê Jesus vê o Pai, pois ele revela Deus aos discípulos.",
+    "feedbackWrong": {
+      "a": "Conhecer aparece no versículo, mas o verbo repetido é outro.",
+      "b": "O texto não fala de ouvir aqui, e sim de ver Jesus."
+    },
+    "hint": "É o verbo ligado a Jesus e ao Pai.",
+    "learningObjective": "Lembrar o verbo que liga ver Jesus a ver o Pai.",
+    "evidence": [
+      "João 14:9"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-02-eu-sou-06",
+    "trail": "joao",
+    "section": "jo-02-eu-sou",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 14:9 a João 1:18?",
+    "prompt": "O que liga João 14:9 a João 1:18?",
+    "cue": "O que liga João 14:9 a João 1:18?",
+    "verseRef": "João 14:9",
+    "passageText": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?",
+    "passageA": {
+      "ref": "João 14:9",
+      "text": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?"
+    },
+    "passageB": {
+      "ref": "João 1:18",
+      "text": "A Deus ninguém jamais viu. O Filho unigênito que está no seio do Pai é quem o revelou"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filipe não precisava de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus revela o Pai invisível"
+      },
+      {
+        "id": "c",
+        "text": "O Pai pode ser visto sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Quem me vê vê o Pai",
+    "feedbackCorrect": "Ninguém viu Deus, mas Jesus o revela; por isso ver Jesus é ver o Pai.",
+    "feedbackWrong": {
+      "a": "É justamente em Jesus que Filipe vê o Pai, em 14:9.",
+      "c": "João 1:18 diz que ninguém jamais viu a Deus diretamente."
+    },
+    "hint": "Veja quem, segundo João, revela Deus.",
+    "learningObjective": "Ligar ver o Pai em Jesus ao começo do evangelho.",
+    "evidence": [
+      "João 14:9",
+      "João 1:18"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-03-adeus-espirito-01",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 15:5, Jesus diz que ele é a videira e os discípulos são os ramos.",
+    "prompt": "Em João 15:5, Jesus diz que ele é a videira e os discípulos são os ramos.",
+    "cue": "Em João 15:5, Jesus diz que ele é a videira e os discípulos são os ramos.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Eu sou a videira, vocês são os ramos",
+    "feedbackCorrect": "Jesus se apresenta como a videira, e os discípulos como os ramos.",
+    "feedbackWrong": {
+      "false": "Releia João 15:5, eu sou a videira, vocês são os ramos."
+    },
+    "hint": "Leia a primeira frase do versículo.",
+    "learningObjective": "Observar a imagem da videira e dos ramos.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-03-adeus-espirito-02",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 15:5, toque quem os discípulos são na imagem de Jesus.",
+    "prompt": "Em João 15:5, toque quem os discípulos são na imagem de Jesus.",
+    "cue": "Em João 15:5, toque quem os discípulos são na imagem de Jesus.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fruto"
+      },
+      {
+        "id": "b",
+        "text": "videira"
+      },
+      {
+        "id": "c",
+        "text": "ramos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês são os ramos",
+    "feedbackCorrect": "Os discípulos são os ramos ligados a Jesus, a videira.",
+    "feedbackWrong": {
+      "a": "Fruto é o resultado dos ramos, e não quem eles são.",
+      "b": "A videira é Jesus; os discípulos têm outro papel na imagem."
+    },
+    "hint": "Veja o que Jesus diz após vocês são.",
+    "learningObjective": "Identificar os discípulos como ramos em João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-03-adeus-espirito-03",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 15:2, o que acontece com a ramagem que não dá frutos?",
+    "prompt": "Segundo João 15:2, o que acontece com a ramagem que não dá frutos?",
+    "cue": "Segundo João 15:2, o que acontece com a ramagem que não dá frutos?",
+    "verseRef": "João 15:2",
+    "passageText": "Toda ramagem que, estando em mim, não dá frutos, ele a corta; e toda a que dá frutos, ele a limpa, para que produza mais frutos ainda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela é cortada"
+      },
+      {
+        "id": "b",
+        "text": "Ela é deixada sem limpeza"
+      },
+      {
+        "id": "c",
+        "text": "Ela produz mais sozinha"
+      },
+      {
+        "id": "d",
+        "text": "Ela é plantada de novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não dá frutos, ele a corta",
+    "feedbackCorrect": "A ramagem que está em Jesus e não dá frutos é cortada.",
+    "feedbackWrong": {
+      "b": "A limpeza é para quem dá fruto, para produzir mais.",
+      "c": "Sem fruto, a ramagem é cortada; não produz sozinha.",
+      "d": "O texto não fala de replantar, e sim de cortar."
+    },
+    "hint": "Leia a primeira parte do versículo.",
+    "learningObjective": "Observar o destino da ramagem sem frutos.",
+    "evidence": [
+      "João 15:2"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-03-adeus-espirito-04",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 15:5 na ordem do texto.",
+    "prompt": "Monte João 15:5 na ordem do texto.",
+    "cue": "Monte João 15:5 na ordem do texto.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eu sou a videira, vocês são os ramos"
+      },
+      {
+        "id": "b",
+        "text": "Aquele que permanece em mim, e eu nele"
+      },
+      {
+        "id": "c",
+        "text": "esse dá muito fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou a videira, vocês são os ramos",
+    "feedbackCorrect": "Jesus é a videira, e quem permanece nele dá muito fruto.",
+    "feedbackWrong": {
+      "default": "Comece por Jesus e os ramos; o fruto fecha o versículo."
+    },
+    "hint": "O versículo começa pela videira.",
+    "learningObjective": "Reconhecer a sequência de João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-03-adeus-espirito-05",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 15:4, em que o ramo precisa permanecer para dar fruto?",
+    "prompt": "Em João 15:4, em que o ramo precisa permanecer para dar fruto?",
+    "cue": "Em João 15:4, em que o ramo precisa permanecer para dar fruto?",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "template": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na ___, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "videira"
+      },
+      {
+        "id": "b",
+        "text": "fonte"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se não permanecer na videira",
+    "feedbackCorrect": "O ramo só dá fruto se permanecer na videira, que é Jesus.",
+    "feedbackWrong": {
+      "b": "A imagem de Jesus é uma planta, e não uma fonte de água.",
+      "c": "A imagem é da videira e dos ramos, e não de uma casa."
+    },
+    "hint": "Pense na planta da imagem de Jesus.",
+    "learningObjective": "Lembrar que o ramo permanece na videira.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-03-adeus-espirito-06",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 15:5 comunica que se liga a este contexto?",
+    "prompt": "O que João 15:5 comunica que se liga a este contexto?",
+    "cue": "O que João 15:5 comunica que se liga a este contexto?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "passageA": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O discípulo só frutifica ligado a Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ligados a Jesus, frutificamos"
+      },
+      {
+        "id": "b",
+        "text": "Fruto sem permanecer em Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Sozinhos, produzimos tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esse dá muito fruto",
+    "feedbackCorrect": "Ligado a Jesus como ramo à videira, o discípulo dá muito fruto.",
+    "feedbackWrong": {
+      "b": "O fruto vem de permanecer em Jesus, em João 15:4–5.",
+      "c": "Jesus diz que sem ele nada podemos fazer."
+    },
+    "hint": "Veja de onde o ramo recebe vida.",
+    "learningObjective": "Ligar João 15:5 à necessidade de permanecer em Jesus.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-03-adeus-espirito-01",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 15:4, o ramo só produz fruto se permanecer na videira.",
+    "prompt": "Em João 15:4, o ramo só produz fruto se permanecer na videira.",
+    "cue": "Em João 15:4, o ramo só produz fruto se permanecer na videira.",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o ramo não pode produzir fruto por si mesmo, se não permanecer na videira",
+    "feedbackCorrect": "Por si mesmo o ramo não frutifica; precisa permanecer na videira.",
+    "feedbackWrong": {
+      "false": "Releia João 15:4, o ramo não produz fruto por si mesmo."
+    },
+    "hint": "Veja a condição que Jesus apresenta.",
+    "learningObjective": "Compreender a condição para frutificar em João 15:4.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-03-adeus-espirito-02",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 15:2, toque a expressão que mostra a finalidade da limpeza do ramo.",
+    "prompt": "Em João 15:2, toque a expressão que mostra a finalidade da limpeza do ramo.",
+    "cue": "Em João 15:2, toque a expressão que mostra a finalidade da limpeza do ramo.",
+    "verseRef": "João 15:2",
+    "passageText": "Toda ramagem que, estando em mim, não dá frutos, ele a corta; e toda a que dá frutos, ele a limpa, para que produza mais frutos ainda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "limpa"
+      },
+      {
+        "id": "b",
+        "text": "para que"
+      },
+      {
+        "id": "c",
+        "text": "frutos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele a limpa, para que produza mais frutos ainda",
+    "feedbackCorrect": "O ramo é limpo com uma finalidade, produzir mais frutos ainda.",
+    "feedbackWrong": {
+      "a": "Limpa é a ação feita; a finalidade vem logo depois.",
+      "c": "Frutos é o resultado buscado; a finalidade vem logo antes."
+    },
+    "hint": "Procure duas palavrinhas antes de produza.",
+    "learningObjective": "Reconhecer o marcador de propósito em João 15:2.",
+    "evidence": [
+      "João 15:2"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-03-adeus-espirito-03",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 15:2 se relaciona com João 15:5?",
+    "prompt": "Como João 15:2 se relaciona com João 15:5?",
+    "cue": "Como João 15:2 se relaciona com João 15:5?",
+    "verseRef": "João 15:2",
+    "passageText": "Toda ramagem que, estando em mim, não dá frutos, ele a corta; e toda a que dá frutos, ele a limpa, para que produza mais frutos ainda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A limpeza prepara ramos para frutificar"
+      },
+      {
+        "id": "b",
+        "text": "A limpeza substitui permanecer em Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Frutificar dispensa qualquer limpeza"
+      },
+      {
+        "id": "d",
+        "text": "Ramos cortados dão mais fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele a limpa, para que produza mais frutos ainda",
+    "feedbackCorrect": "A limpeza prepara o ramo que permanece em Jesus para mais fruto.",
+    "feedbackWrong": {
+      "b": "A limpeza não substitui o permanecer; ela prepara para frutificar.",
+      "c": "O ramo frutífero é justamente o que é limpo, em 15:2.",
+      "d": "Ramos cortados são os sem fruto; os limpos produzem mais."
+    },
+    "hint": "Veja para que o ramo é limpo.",
+    "learningObjective": "Relacionar limpeza e fruto em João 15:2–5.",
+    "evidence": [
+      "João 15:2–5"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-03-adeus-espirito-04",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em João 15:4–5?",
+    "prompt": "Como avança o ensino em João 15:4–5?",
+    "cue": "Como avança o ensino em João 15:4–5?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ramo precisa permanecer na videira"
+      },
+      {
+        "id": "b",
+        "text": "Jesus se apresenta como a videira"
+      },
+      {
+        "id": "c",
+        "text": "Quem permanece dá muito fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele que permanece em mim, e eu nele, esse dá muito fruto",
+    "feedbackCorrect": "Do chamado a permanecer à promessa de muito fruto em Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado a permanecer; o fruto é o resultado final."
+    },
+    "hint": "O resultado vem no fim do versículo 5.",
+    "learningObjective": "Compreender o movimento de João 15:4–5.",
+    "evidence": [
+      "João 15:4–5"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-03-adeus-espirito-05",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 15:8, o que acontece com o Pai quando os discípulos dão muito fruto?",
+    "prompt": "Em João 15:8, o que acontece com o Pai quando os discípulos dão muito fruto?",
+    "cue": "Em João 15:8, o que acontece com o Pai quando os discípulos dão muito fruto?",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "template": "Nisto é ___ meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "chamado"
+      },
+      {
+        "id": "b",
+        "text": "lembrado"
+      },
+      {
+        "id": "c",
+        "text": "glorificado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Nisto é glorificado meu Pai, quando derem muito fruto",
+    "feedbackCorrect": "Quando os discípulos dão muito fruto, o Pai é glorificado nisso.",
+    "feedbackWrong": {
+      "a": "O texto não fala de chamar o Pai, e sim de glorificá-lo.",
+      "b": "O texto fala do Pai recebendo glória pelo fruto dos discípulos."
+    },
+    "hint": "Veja o que o fruto produz em relação ao Pai.",
+    "learningObjective": "Relacionar o fruto dos discípulos à glória do Pai.",
+    "evidence": [
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-03-adeus-espirito-06",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 15:5 a Gálatas 5:22?",
+    "prompt": "O que liga João 15:5 a Gálatas 5:22?",
+    "cue": "O que liga João 15:5 a Gálatas 5:22?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "passageA": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "passageB": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito dispensa Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Fruto vem de esforço isolado"
+      },
+      {
+        "id": "c",
+        "text": "Fruto nasce de vida ligada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "esse dá muito fruto",
+    "feedbackCorrect": "Em João o fruto vem de permanecer em Jesus; em Paulo, do Espírito.",
+    "feedbackWrong": {
+      "a": "O fruto do Espírito anda junto com permanecer em Jesus.",
+      "b": "Jesus diz que sem ele o ramo nada pode fazer."
+    },
+    "hint": "Compare de onde o fruto nasce nos dois textos.",
+    "learningObjective": "Relacionar o fruto em João e em Paulo.",
+    "evidence": [
+      "João 15:5",
+      "Gálatas 5:22"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-03-adeus-espirito-01",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 15:5, os discípulos podem produzir tudo sem Jesus.",
+    "prompt": "Em João 15:5, os discípulos podem produzir tudo sem Jesus.",
+    "cue": "Em João 15:5, os discípulos podem produzir tudo sem Jesus.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sem mim nada podem fazer",
+    "feedbackCorrect": "Jesus diz o contrário, sem ele os discípulos nada podem fazer.",
+    "feedbackWrong": {
+      "true": "Releia o fim de João 15:5, sem mim nada podem fazer."
+    },
+    "hint": "Leia as últimas palavras do versículo.",
+    "learningObjective": "Interpretar a dependência total de Jesus em João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-03-adeus-espirito-02",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 15:5, toque o trecho que mostra a dependência dos discípulos.",
+    "prompt": "Em João 15:5, toque o trecho que mostra a dependência dos discípulos.",
+    "cue": "Em João 15:5, toque o trecho que mostra a dependência dos discípulos.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "muito fruto"
+      },
+      {
+        "id": "b",
+        "text": "sem mim"
+      },
+      {
+        "id": "c",
+        "text": "os ramos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois sem mim nada podem fazer",
+    "feedbackCorrect": "Sem Jesus nada podem fazer; toda a vida do ramo vem dele.",
+    "feedbackWrong": {
+      "a": "Muito fruto é o resultado; a dependência aparece no fim.",
+      "c": "Os ramos são os discípulos; a dependência vem depois."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar com o texto a dependência de Jesus.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-03-adeus-espirito-03",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 15:4–5 sustenta sobre a vida do discípulo?",
+    "prompt": "Que leitura João 15:4–5 sustenta sobre a vida do discípulo?",
+    "cue": "Que leitura João 15:4–5 sustenta sobre a vida do discípulo?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta um contato passageiro inicial"
+      },
+      {
+        "id": "b",
+        "text": "A vida frutífera depende de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer não exige suas palavras"
+      },
+      {
+        "id": "d",
+        "text": "O fruto prova autonomia do ramo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se não permanecerem em mim",
+    "feedbackCorrect": "Sem permanecer em Jesus não há fruto; a vida depende dele.",
+    "feedbackWrong": {
+      "a": "Jesus chama a permanecer de modo contínuo, e não passageiro.",
+      "c": "Em 15:7, as palavras de Jesus também permanecem nos discípulos.",
+      "d": "O ramo não é autônomo; por si mesmo não produz fruto."
+    },
+    "hint": "Veja o que acontece sem permanecer nele.",
+    "learningObjective": "Escolher a interpretação que João 15:4–5 sustenta.",
+    "evidence": [
+      "João 15:4–5"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-03-adeus-espirito-04",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de João 15:5?",
+    "prompt": "Qual sequência revela o sentido de João 15:5?",
+    "cue": "Qual sequência revela o sentido de João 15:5?",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ramo permanece em Jesus"
+      },
+      {
+        "id": "b",
+        "text": "A vida de Jesus sustenta o ramo"
+      },
+      {
+        "id": "c",
+        "text": "O fruto glorifica o Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele que permanece em mim, e eu nele, esse dá muito fruto",
+    "feedbackCorrect": "Permanecer em Jesus sustenta o ramo, e o fruto glorifica o Pai.",
+    "feedbackWrong": {
+      "default": "Comece pelo permanecer; glorificar o Pai é o ponto de chegada."
+    },
+    "hint": "Siga do ramo ao fruto, e do fruto ao Pai.",
+    "learningObjective": "Ver o fruto como caminho até a glória do Pai.",
+    "evidence": [
+      "João 15:5",
+      "João 15:8"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-03-adeus-espirito-05",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 15:7, o que de Jesus deve permanecer nos discípulos?",
+    "prompt": "Em João 15:7, o que de Jesus deve permanecer nos discípulos?",
+    "cue": "Em João 15:7, o que de Jesus deve permanecer nos discípulos?",
+    "verseRef": "João 15:7",
+    "passageText": "Se vocês permanecerem em mim, e as minhas palavras permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito.",
+    "template": "Se vocês permanecerem em mim, e as minhas ___ permanecerem em vocês, pedirão o que desejarem, e isso lhes será feito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "palavras"
+      },
+      {
+        "id": "c",
+        "text": "promessas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "as minhas palavras permanecerem em vocês",
+    "feedbackCorrect": "As palavras de Jesus permanecem em quem permanece nele.",
+    "feedbackWrong": {
+      "a": "O texto fala do que Jesus disse permanecendo nos discípulos.",
+      "c": "O texto liga a oração às palavras dele permanecendo neles."
+    },
+    "hint": "É o que Jesus disse aos discípulos.",
+    "learningObjective": "Lembrar o termo que permanece nos discípulos.",
+    "evidence": [
+      "João 15:7"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-03-adeus-espirito-06",
+    "trail": "joao",
+    "section": "jo-03-adeus-espirito",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 15:8 a Salmos 1:3?",
+    "prompt": "O que liga João 15:8 a Salmos 1:3?",
+    "cue": "O que liga João 15:8 a Salmos 1:3?",
+    "verseRef": "João 15:8",
+    "passageText": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos.",
+    "passageA": {
+      "ref": "João 15:8",
+      "text": "Nisto é glorificado meu Pai, quando derem muito fruto; e assim vocês se tornarão meus discípulos."
+    },
+    "passageB": {
+      "ref": "Salmos 1:3",
+      "text": "Pois será como uma árvore plantada junto a ribeiros de águas, que, no tempo certo, dá o seu fruto, e cujas folhas não murcham; e tudo o que fizer prosperará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem está plantado frutifica"
+      },
+      {
+        "id": "b",
+        "text": "Folhas bastam sem fruto algum"
+      },
+      {
+        "id": "c",
+        "text": "Fruto sem raiz nem água"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quando derem muito fruto",
+    "feedbackCorrect": "Plantado junto às águas ou ligado à videira, o fiel frutifica.",
+    "feedbackWrong": {
+      "b": "Os dois textos valorizam o fruto, e não só folhas.",
+      "c": "Nos dois textos o fruto nasce de estar bem plantado e ligado."
+    },
+    "hint": "Compare a árvore do Salmo com a videira de João.",
+    "learningObjective": "Ligar o frutificar em João ao Salmo 1.",
+    "evidence": [
+      "João 15:8",
+      "Salmos 1:3"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-04-cruz-tome-01",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 19:32–33, os soldados quebraram as pernas de Jesus como fizeram com os outros.",
+    "prompt": "Em João 19:32–33, os soldados quebraram as pernas de Jesus como fizeram com os outros.",
+    "cue": "Em João 19:32–33, os soldados quebraram as pernas de Jesus como fizeram com os outros.",
+    "verseRef": "João 19:32–33",
+    "passageText": "Os soldados foram e realmente quebraram as pernas do primeiro e do outro que tinham sido crucificados com ele. Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não lhe quebraram as pernas",
+    "feedbackCorrect": "Jesus já estava morto, e por isso suas pernas não foram quebradas.",
+    "feedbackWrong": {
+      "true": "Releia João 19:33, não lhe quebraram as pernas."
+    },
+    "hint": "Veja o que os soldados percebem em Jesus.",
+    "learningObjective": "Observar que as pernas de Jesus não foram quebradas.",
+    "evidence": [
+      "João 19:32–33"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-04-cruz-tome-02",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 19:30, toque a declaração de Jesus ao tomar o vinagre.",
+    "prompt": "Em João 19:30, toque a declaração de Jesus ao tomar o vinagre.",
+    "cue": "Em João 19:30, toque a declaração de Jesus ao tomar o vinagre.",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Está consumado"
+      },
+      {
+        "id": "b",
+        "text": "o vinagre"
+      },
+      {
+        "id": "c",
+        "text": "a cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Jesus declara sua obra consumada antes de render o espírito.",
+    "feedbackWrong": {
+      "b": "Vinagre é o que ele toma; a declaração vem logo depois.",
+      "c": "Cabeça é o que ele inclina; a declaração vem antes disso."
+    },
+    "hint": "Procure a fala entre aspas do versículo.",
+    "learningObjective": "Identificar a declaração de Jesus em João 19:30.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-04-cruz-tome-03",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 19:27, o que o discípulo fez com a mãe de Jesus?",
+    "prompt": "Segundo João 19:27, o que o discípulo fez com a mãe de Jesus?",
+    "cue": "Segundo João 19:27, o que o discípulo fez com a mãe de Jesus?",
+    "verseRef": "João 19:27",
+    "passageText": "Disse então ao discípulo: \"Eis aí a tua mãe.\" E a partir daquela hora em diante, o discípulo a recebeu em sua casa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levou-a ao templo naquela hora"
+      },
+      {
+        "id": "b",
+        "text": "Mandou-a voltar para Nazaré"
+      },
+      {
+        "id": "c",
+        "text": "Deixou-a sozinha junto à cruz"
+      },
+      {
+        "id": "d",
+        "text": "Recebeu-a em sua própria casa"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "o discípulo a recebeu em sua casa",
+    "feedbackCorrect": "Daquela hora em diante, o discípulo a recebeu em sua casa.",
+    "feedbackWrong": {
+      "a": "O texto diz que ele a recebeu em casa, e não no templo.",
+      "b": "O texto diz que o discípulo a levou para a casa dele.",
+      "c": "Jesus a entrega ao discípulo; ela não fica sozinha."
+    },
+    "hint": "Leia o fim do versículo 27.",
+    "learningObjective": "Observar o cuidado de Jesus com sua mãe.",
+    "evidence": [
+      "João 19:27"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-04-cruz-tome-04",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 19:30 na ordem do texto.",
+    "prompt": "Monte João 19:30 na ordem do texto.",
+    "cue": "Monte João 19:30 na ordem do texto.",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E, quando Jesus tomou o vinagre, disse"
+      },
+      {
+        "id": "b",
+        "text": "\"Está consumado!\""
+      },
+      {
+        "id": "c",
+        "text": "E, inclinando a cabeça, rendeu o espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Jesus toma o vinagre, declara tudo consumado e rende o espírito.",
+    "feedbackWrong": {
+      "default": "Comece por Jesus tomando o vinagre; render o espírito fecha."
+    },
+    "hint": "A declaração vem no meio do versículo.",
+    "learningObjective": "Reconhecer a sequência de João 19:30.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-04-cruz-tome-05",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 19:29, o que embeberam em vinagre para levar a Jesus?",
+    "prompt": "Em João 19:29, o que embeberam em vinagre para levar a Jesus?",
+    "cue": "Em João 19:29, o que embeberam em vinagre para levar a Jesus?",
+    "verseRef": "João 19:29",
+    "passageText": "Estava ali um vaso cheio de vinagre. Então, embeberam uma esponja em vinagre e, fixando-a em uma vara de hissopo, ofereceram-na à sua boca.",
+    "template": "Estava ali um vaso cheio de vinagre. Então, embeberam uma ___ em vinagre e, fixando-a em uma vara de hissopo, ofereceram-na à sua boca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esponja"
+      },
+      {
+        "id": "b",
+        "text": "taça"
+      },
+      {
+        "id": "c",
+        "text": "pano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "embeberam uma esponja em vinagre",
+    "feedbackCorrect": "Uma esponja embebida em vinagre é levada à boca de Jesus.",
+    "feedbackWrong": {
+      "b": "O vinagre estava num vaso; o que molham nele é outro objeto.",
+      "c": "O texto nomeia o objeto molhado no vinagre e posto no hissopo."
+    },
+    "hint": "É um objeto que absorve o vinagre.",
+    "learningObjective": "Lembrar como o vinagre foi levado a Jesus.",
+    "evidence": [
+      "João 19:29"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-04-cruz-tome-06",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 19:30 comunica que se liga a este contexto?",
+    "prompt": "O que João 19:30 comunica que se liga a este contexto?",
+    "cue": "O que João 19:30 comunica que se liga a este contexto?",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "passageA": {
+      "ref": "João 19:30",
+      "text": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na cruz, Jesus completa o que veio fazer e entrega a vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A obra de Jesus se completa"
+      },
+      {
+        "id": "b",
+        "text": "Jesus desiste de sua missão"
+      },
+      {
+        "id": "c",
+        "text": "A cruz interrompe o plano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Na cruz Jesus completa sua obra e então rende o espírito.",
+    "feedbackWrong": {
+      "b": "Ele não desiste; declara a obra consumada e se entrega.",
+      "c": "A cruz não interrompe; nela a obra chega ao cumprimento."
+    },
+    "hint": "Ouça a declaração de Jesus na cruz.",
+    "learningObjective": "Ligar João 19:30 à obra completa de Jesus.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-04-cruz-tome-01",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 19:28, Jesus diz que tem sede sem relação com o cumprimento da Escritura.",
+    "prompt": "Em João 19:28, Jesus diz que tem sede sem relação com o cumprimento da Escritura.",
+    "cue": "Em João 19:28, Jesus diz que tem sede sem relação com o cumprimento da Escritura.",
+    "verseRef": "João 19:28",
+    "passageText": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que se cumprisse a Escritura",
+    "feedbackCorrect": "A sede de Jesus é dita para que a Escritura se cumprisse.",
+    "feedbackWrong": {
+      "true": "Releia João 19:28, para que se cumprisse a Escritura."
+    },
+    "hint": "Veja a finalidade indicada no versículo.",
+    "learningObjective": "Compreender a ligação da sede com a Escritura.",
+    "evidence": [
+      "João 19:28"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-04-cruz-tome-02",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 19:28, toque a expressão que mostra a finalidade da fala de Jesus.",
+    "prompt": "Em João 19:28, toque a expressão que mostra a finalidade da fala de Jesus.",
+    "cue": "Em João 19:28, toque a expressão que mostra a finalidade da fala de Jesus.",
+    "verseRef": "João 19:28",
+    "passageText": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "para que"
+      },
+      {
+        "id": "b",
+        "text": "Depois"
+      },
+      {
+        "id": "c",
+        "text": "Escritura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que se cumprisse a Escritura",
+    "feedbackCorrect": "Jesus fala para que a Escritura se cumprisse naquele momento.",
+    "feedbackWrong": {
+      "b": "Depois marca o momento; a finalidade vem logo depois dele.",
+      "c": "Escritura é o que se cumpre; a finalidade vem antes dela."
+    },
+    "hint": "Procure duas palavrinhas antes de se cumprisse.",
+    "learningObjective": "Reconhecer o marcador de propósito em João 19:28.",
+    "evidence": [
+      "João 19:28"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-04-cruz-tome-03",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 19:28 liga a sede de Jesus à Escritura?",
+    "prompt": "Como João 19:28 liga a sede de Jesus à Escritura?",
+    "cue": "Como João 19:28 liga a sede de Jesus à Escritura?",
+    "verseRef": "João 19:28",
+    "passageText": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sua fala cumpre o que foi escrito"
+      },
+      {
+        "id": "b",
+        "text": "O cumprimento depende dos soldados"
+      },
+      {
+        "id": "c",
+        "text": "A Escritura explica só o vinagre"
+      },
+      {
+        "id": "d",
+        "text": "Jesus cita a Escritura por acaso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que se cumprisse a Escritura",
+    "feedbackCorrect": "Ao dizer que tem sede, Jesus cumpre o que a Escritura anunciava.",
+    "feedbackWrong": {
+      "b": "Quem cumpre a Escritura é Jesus ao falar, não os soldados.",
+      "c": "A Escritura está ligada à fala de Jesus, e não só ao vinagre.",
+      "d": "O texto dá uma finalidade clara, e não um acaso qualquer."
+    },
+    "hint": "Veja a finalidade que o versículo declara.",
+    "learningObjective": "Relacionar a fala de Jesus ao cumprimento da Escritura.",
+    "evidence": [
+      "João 19:28"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-04-cruz-tome-04",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os fatos em João 19:28–29?",
+    "prompt": "Como se encadeiam os fatos em João 19:28–29?",
+    "cue": "Como se encadeiam os fatos em João 19:28–29?",
+    "verseRef": "João 19:28–29",
+    "passageText": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\" Estava ali um vaso cheio de vinagre. Então, embeberam uma esponja em vinagre e, fixando-a em uma vara de hissopo, ofereceram-na à sua boca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus anuncia que tem sede"
+      },
+      {
+        "id": "b",
+        "text": "Uma esponja é embebida em vinagre"
+      },
+      {
+        "id": "c",
+        "text": "A esponja é levada à boca dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tenho sede",
+    "feedbackCorrect": "Jesus diz ter sede, molham a esponja e a levam à sua boca.",
+    "feedbackWrong": {
+      "default": "Comece pela fala de Jesus; levar à boca é o último passo."
+    },
+    "hint": "A fala de Jesus vem primeiro.",
+    "learningObjective": "Compreender o encadeamento de João 19:28–29.",
+    "evidence": [
+      "João 19:28–29"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-04-cruz-tome-05",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 19:30, o que Jesus inclina antes de render o espírito?",
+    "prompt": "Em João 19:30, o que Jesus inclina antes de render o espírito?",
+    "cue": "Em João 19:30, o que Jesus inclina antes de render o espírito?",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "template": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a ___, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "voz"
+      },
+      {
+        "id": "b",
+        "text": "mão"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "inclinando a cabeça, rendeu o espírito",
+    "feedbackCorrect": "Inclinando a cabeça, Jesus rende o espírito por vontade própria.",
+    "feedbackWrong": {
+      "a": "A voz declara tudo consumado; o gesto final é outro.",
+      "b": "O texto não fala da mão; fala do gesto final de Jesus."
+    },
+    "hint": "Leia o gesto final do versículo.",
+    "learningObjective": "Compreender o gesto final de Jesus em João 19:30.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-04-cruz-tome-06",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 19:28 a Salmos 69:21?",
+    "prompt": "O que liga João 19:28 a Salmos 69:21?",
+    "cue": "O que liga João 19:28 a Salmos 69:21?",
+    "verseRef": "João 19:28–29",
+    "passageText": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\" Estava ali um vaso cheio de vinagre. Então, embeberam uma esponja em vinagre e, fixando-a em uma vara de hissopo, ofereceram-na à sua boca.",
+    "passageA": {
+      "ref": "João 19:28",
+      "text": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\""
+    },
+    "passageB": {
+      "ref": "Salmos 69:21",
+      "text": "Deram-me fel como alimento e, na minha sede, ofereceram-me vinagre para beber."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A sede prova falta de fé"
+      },
+      {
+        "id": "b",
+        "text": "Sede anunciada nas Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "Vinagre cura o sofrimento dele"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tenho sede",
+    "feedbackCorrect": "A sede e o vinagre na cruz ecoam o sofrimento anunciado no Salmo.",
+    "feedbackWrong": {
+      "a": "A sede cumpre a Escritura; não é sinal de falta de fé.",
+      "c": "O vinagre não cura; ele faz parte do sofrimento de Jesus."
+    },
+    "hint": "Compare a sede nos dois textos.",
+    "learningObjective": "Relacionar a sede de Jesus ao Salmo 69.",
+    "evidence": [
+      "João 19:28",
+      "Salmos 69:21"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-04-cruz-tome-01",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 19:30, Jesus entrega a própria vida ao declarar a obra consumada.",
+    "prompt": "Em João 19:30, Jesus entrega a própria vida ao declarar a obra consumada.",
+    "cue": "Em João 19:30, Jesus entrega a própria vida ao declarar a obra consumada.",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Declarada a obra consumada, Jesus inclina a cabeça e se entrega.",
+    "feedbackWrong": {
+      "false": "Releia João 19:30, ele declara e então rende o espírito."
+    },
+    "hint": "Veja a ordem dos gestos no versículo.",
+    "learningObjective": "Interpretar a entrega voluntária de Jesus na cruz.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-04-cruz-tome-02",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 19:33, toque o trecho que mostra que Jesus já tinha morrido.",
+    "prompt": "Em João 19:33, toque o trecho que mostra que Jesus já tinha morrido.",
+    "cue": "Em João 19:33, toque o trecho que mostra que Jesus já tinha morrido.",
+    "verseRef": "João 19:33",
+    "passageText": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "já estava morto"
+      },
+      {
+        "id": "c",
+        "text": "as pernas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ele já estava morto",
+    "feedbackCorrect": "Jesus já estava morto, e por isso suas pernas não são quebradas.",
+    "feedbackWrong": {
+      "a": "De Jesus diz de quem se fala; o estado dele vem depois.",
+      "c": "As pernas são o que não quebram; a morte vem antes disso."
+    },
+    "hint": "Procure como os soldados encontram Jesus.",
+    "learningObjective": "Sustentar com o texto que Jesus já estava morto.",
+    "evidence": [
+      "João 19:33"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-04-cruz-tome-03",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 19:30 sustenta sobre a declaração de Jesus?",
+    "prompt": "Que leitura João 19:30 sustenta sobre a declaração de Jesus?",
+    "cue": "Que leitura João 19:30 sustenta sobre a declaração de Jesus?",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele desiste antes de terminar"
+      },
+      {
+        "id": "b",
+        "text": "Ele anuncia só o fim da dor"
+      },
+      {
+        "id": "c",
+        "text": "Ele aguarda os soldados terminarem"
+      },
+      {
+        "id": "d",
+        "text": "Sua obra chegou ao cumprimento"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Está consumado declara a obra cumprida, e Jesus rende o espírito.",
+    "feedbackWrong": {
+      "a": "Ele não desiste; declara tudo consumado e se entrega.",
+      "b": "A declaração fala da obra cumprida, e não só da dor.",
+      "c": "Ele já está morto antes de os soldados chegarem, em 19:33."
+    },
+    "hint": "Ligue a declaração ao gesto que vem depois.",
+    "learningObjective": "Escolher a interpretação que João 19:30 sustenta.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-04-cruz-tome-04",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da cruz na história da Bíblia?",
+    "prompt": "Qual sequência revela o caminho da cruz na história da Bíblia?",
+    "cue": "Qual sequência revela o caminho da cruz na história da Bíblia?",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Escritura anuncia o justo sofredor"
+      },
+      {
+        "id": "b",
+        "text": "Jesus declara a obra consumada"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê nele tem vida eterna"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Do anúncio nas Escrituras à cruz consumada e à vida de quem crê.",
+    "feedbackWrong": {
+      "default": "Siga a história, das Escrituras à cruz e à fé do leitor."
+    },
+    "hint": "Comece pelo que foi anunciado antes da cruz.",
+    "learningObjective": "Ver a cruz como cumprimento que convida à fé.",
+    "evidence": [
+      "João 19:30",
+      "Salmos 69:21",
+      "João 20:31"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-04-cruz-tome-05",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 19:28, o que se cumpre quando Jesus diz ter sede?",
+    "prompt": "Em João 19:28, o que se cumpre quando Jesus diz ter sede?",
+    "cue": "Em João 19:28, o que se cumpre quando Jesus diz ter sede?",
+    "verseRef": "João 19:28",
+    "passageText": "Depois de ver que tudo estava consumado, para que se cumprisse a Escritura, Jesus disse: \"Tenho sede.\"",
+    "template": "Depois de ver que tudo estava consumado, para que se cumprisse a ___, Jesus disse: \"Tenho sede.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "Escritura"
+      },
+      {
+        "id": "c",
+        "text": "profecia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que se cumprisse a Escritura",
+    "feedbackCorrect": "Até a sede de Jesus cumpre a Escritura, como João destaca.",
+    "feedbackWrong": {
+      "a": "O texto não fala da lei aqui, e sim do escrito cumprido.",
+      "c": "O texto usa outra palavra para o que se cumpre na cruz."
+    },
+    "hint": "É a palavra ligada a se cumprisse.",
+    "learningObjective": "Lembrar o termo do cumprimento em João 19:28.",
+    "evidence": [
+      "João 19:28"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-04-cruz-tome-06",
+    "trail": "joao",
+    "section": "jo-04-cruz-tome",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 19:33 a Êxodo 12:46?",
+    "prompt": "O que liga João 19:33 a Êxodo 12:46?",
+    "cue": "O que liga João 19:33 a Êxodo 12:46?",
+    "verseRef": "João 19:33",
+    "passageText": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas.",
+    "passageA": {
+      "ref": "João 19:33",
+      "text": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas."
+    },
+    "passageB": {
+      "ref": "Êxodo 12:46",
+      "text": "O cordeiro deve ser comido em uma só casa; não levarás a carne para fora, nem quebrarás nenhum osso dela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pernas quebradas apressam tudo"
+      },
+      {
+        "id": "b",
+        "text": "Nenhum osso dele é quebrado"
+      },
+      {
+        "id": "c",
+        "text": "O cordeiro dispensa a cruz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não lhe quebraram as pernas",
+    "feedbackCorrect": "Como no cordeiro da Páscoa, nenhum osso de Jesus é quebrado.",
+    "feedbackWrong": {
+      "a": "Com Jesus acontece o contrário, suas pernas não são quebradas.",
+      "c": "A cruz acontece; o ponto é o osso que não é quebrado."
+    },
+    "hint": "Compare o que não acontece com os ossos.",
+    "learningObjective": "Ligar as pernas não quebradas ao cordeiro pascal.",
+    "evidence": [
+      "João 19:33",
+      "Êxodo 12:46"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-01",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em João 1:16, todos receberam da plenitude de Jesus, graça sobre graça.",
+    "prompt": "Em João 1:16, todos receberam da plenitude de Jesus, graça sobre graça.",
+    "cue": "Em João 1:16, todos receberam da plenitude de Jesus, graça sobre graça.",
+    "verseRef": "João 1:16",
+    "passageText": "E todos nós temos recebido da sua plenitude, graça sobre graça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "graça sobre graça",
+    "feedbackCorrect": "Todos receberam da plenitude de Jesus, graça sobre graça.",
+    "feedbackWrong": {
+      "false": "Releia João 1:16, temos recebido graça sobre graça."
+    },
+    "hint": "Leia a fala sobre a plenitude dele.",
+    "learningObjective": "Revisar a graça recebida da plenitude de Jesus.",
+    "evidence": [
+      "João 1:16"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-02",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 1:14, toque o nome que João dá a Jesus neste capítulo.",
+    "prompt": "Em João 1:14, toque o nome que João dá a Jesus neste capítulo.",
+    "cue": "Em João 1:14, toque o nome que João dá a Jesus neste capítulo.",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "Verbo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E o Verbo se fez carne",
+    "feedbackCorrect": "João chama Jesus de o Verbo que se fez carne entre nós.",
+    "feedbackWrong": {
+      "a": "Graça descreve como ele é, e não o nome dele.",
+      "b": "Carne é o que o Verbo se tornou, e não o nome dele."
+    },
+    "hint": "Procure o nome no começo do versículo.",
+    "learningObjective": "Revisar Jesus como o Verbo em João 1:14.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-03",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo João 14:8, o que Filipe pede que Jesus mostre?",
+    "prompt": "Segundo João 14:8, o que Filipe pede que Jesus mostre?",
+    "cue": "Segundo João 14:8, o que Filipe pede que Jesus mostre?",
+    "verseRef": "João 14:8",
+    "passageText": "Disse-lhe Filipe: Senhor, mostra-nos o Pai, e isso nos basta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O lugar preparado no céu"
+      },
+      {
+        "id": "b",
+        "text": "O Pai, e isso lhes basta"
+      },
+      {
+        "id": "c",
+        "text": "O caminho de volta para casa"
+      },
+      {
+        "id": "d",
+        "text": "Um sinal novo no céu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mostra-nos o Pai",
+    "feedbackCorrect": "Filipe pede que Jesus lhes mostre o Pai, e diz que isso basta.",
+    "feedbackWrong": {
+      "a": "O lugar é promessa de 14:3; o pedido aqui é ver o Pai.",
+      "c": "O pedido de Filipe é ver o Pai, e não voltar para casa.",
+      "d": "Filipe não pede um sinal; pede para ver o Pai."
+    },
+    "hint": "Leia o pedido curto de Filipe.",
+    "learningObjective": "Revisar o pedido de Filipe em João 14:8.",
+    "evidence": [
+      "João 14:8"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-04",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 1:14 na ordem do texto.",
+    "prompt": "Monte João 1:14 na ordem do texto.",
+    "cue": "Monte João 1:14 na ordem do texto.",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E o Verbo se fez carne e habitou entre nós"
+      },
+      {
+        "id": "b",
+        "text": "cheio de graça e de verdade"
+      },
+      {
+        "id": "c",
+        "text": "e vimos a sua glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "O Verbo se faz carne, cheio de graça e verdade, e é visto.",
+    "feedbackWrong": {
+      "default": "Comece pelo Verbo que se fez carne; a glória fecha."
+    },
+    "hint": "O versículo começa pelo Verbo.",
+    "learningObjective": "Revisar a sequência de João 1:14.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-05",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em João 14:6, o que Jesus diz ser, além do caminho e da verdade?",
+    "prompt": "Em João 14:6, o que Jesus diz ser, além do caminho e da verdade?",
+    "cue": "Em João 14:6, o que Jesus diz ser, além do caminho e da verdade?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "template": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a ___; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "vida"
+      },
+      {
+        "id": "c",
+        "text": "porta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Jesus é o caminho, a verdade e a vida, como ele mesmo diz.",
+    "feedbackWrong": {
+      "a": "Luz é outra imagem de Jesus; aqui a terceira palavra é outra.",
+      "c": "Porta aparece em João 10; aqui a terceira palavra é outra."
+    },
+    "hint": "É a terceira palavra de Jesus sobre si.",
+    "learningObjective": "Revisar a declaração de Jesus em João 14:6.",
+    "evidence": [
+      "João 14:6"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-06",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que João 1:14 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:14 comunica que se liga a este contexto?",
+    "cue": "O que João 1:14 comunica que se liga a este contexto?",
+    "verseRef": "João 1:14",
+    "passageText": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai.",
+    "passageA": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se faz presente entre os seres humanos em Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo se fez carne"
+      },
+      {
+        "id": "b",
+        "text": "Deus se afasta dos humanos"
+      },
+      {
+        "id": "c",
+        "text": "A lei basta por si"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Verbo se fez carne e habitou entre nós",
+    "feedbackCorrect": "O Verbo se fez carne e habitou entre nós, presente no meio humano.",
+    "feedbackWrong": {
+      "b": "O texto mostra Deus presente entre nós, e não afastado.",
+      "c": "O centro aqui é o Verbo presente, e não a lei sozinha."
+    },
+    "hint": "Veja o que o Verbo se tornou.",
+    "learningObjective": "Revisar a presença de Deus em Jesus.",
+    "evidence": [
+      "João 1:14"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-07",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em João 15:5, toque quem os discípulos são na imagem de Jesus.",
+    "prompt": "Em João 15:5, toque quem os discípulos são na imagem de Jesus.",
+    "cue": "Em João 15:5, toque quem os discípulos são na imagem de Jesus.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "videira"
+      },
+      {
+        "id": "b",
+        "text": "fruto"
+      },
+      {
+        "id": "c",
+        "text": "ramos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês são os ramos",
+    "feedbackCorrect": "Os discípulos são os ramos ligados a Jesus, a videira.",
+    "feedbackWrong": {
+      "a": "A videira é Jesus; os discípulos têm outro papel na imagem.",
+      "b": "Fruto é o resultado dos ramos, e não quem eles são."
+    },
+    "hint": "Veja o que Jesus diz após vocês são.",
+    "learningObjective": "Revisar os discípulos como ramos em João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-sem-jo-boss-revisao-08",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte João 19:30 na ordem do texto.",
+    "prompt": "Monte João 19:30 na ordem do texto.",
+    "cue": "Monte João 19:30 na ordem do texto.",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E, quando Jesus tomou o vinagre, disse"
+      },
+      {
+        "id": "b",
+        "text": "\"Está consumado!\""
+      },
+      {
+        "id": "c",
+        "text": "E, inclinando a cabeça, rendeu o espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Jesus toma o vinagre, declara tudo consumado e rende o espírito.",
+    "feedbackWrong": {
+      "default": "Comece por Jesus tomando o vinagre; render o espírito fecha."
+    },
+    "hint": "A declaração vem no meio do versículo.",
+    "learningObjective": "Revisar a sequência de João 19:30.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-01",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em João 15:4, o ramo produz fruto por si mesmo mesmo sem permanecer na videira.",
+    "prompt": "Em João 15:4, o ramo produz fruto por si mesmo mesmo sem permanecer na videira.",
+    "cue": "Em João 15:4, o ramo produz fruto por si mesmo mesmo sem permanecer na videira.",
+    "verseRef": "João 15:4",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o ramo não pode produzir fruto por si mesmo",
+    "feedbackCorrect": "Por si mesmo o ramo não frutifica; precisa permanecer na videira.",
+    "feedbackWrong": {
+      "true": "Releia João 15:4, o ramo não produz fruto por si mesmo."
+    },
+    "hint": "Veja a condição que Jesus apresenta.",
+    "learningObjective": "Revisar a condição para frutificar em João 15:4.",
+    "evidence": [
+      "João 15:4"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-02",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 1:12, toque a palavra que marca o contraste com a rejeição anterior.",
+    "prompt": "Em João 1:12, toque a palavra que marca o contraste com a rejeição anterior.",
+    "cue": "Em João 1:12, toque a palavra que marca o contraste com a rejeição anterior.",
+    "verseRef": "João 1:12",
+    "passageText": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "Mas"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas a todos quantos o receberam",
+    "feedbackCorrect": "Depois da rejeição, o texto vira a página para quem o recebe.",
+    "feedbackWrong": {
+      "a": "Nome diz em quem creem; o contraste está no início.",
+      "c": "Todos diz quantos recebem; o contraste está na primeira palavra."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Revisar o contraste em João 1:12.",
+    "evidence": [
+      "João 1:12"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-03",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como João 1:12 se relaciona com João 1:11?",
+    "prompt": "Como João 1:12 se relaciona com João 1:11?",
+    "cue": "Como João 1:12 se relaciona com João 1:11?",
+    "verseRef": "João 1:11–12",
+    "passageText": "Veio para o que era seu, mas os seus não o receberam. Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O nascimento humano garante a fé"
+      },
+      {
+        "id": "b",
+        "text": "Quem rejeita Jesus torna-se seu filho"
+      },
+      {
+        "id": "c",
+        "text": "Quem recebe Jesus torna-se filho de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Crer é desnecessário para ser filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas a todos quantos o receberam",
+    "feedbackCorrect": "Ao lado da rejeição, o texto mostra quem recebe Jesus como filho.",
+    "feedbackWrong": {
+      "a": "O nascimento como filho de Deus vem de Deus, em 1:13.",
+      "b": "Filho de Deus é quem recebe Jesus, e não quem o rejeita.",
+      "d": "O texto liga a filiação a receber Jesus e crer nele."
+    },
+    "hint": "Pense no contraste entre os dois versículos.",
+    "learningObjective": "Revisar rejeição e recepção em João 1:11–12.",
+    "evidence": [
+      "João 1:11–12"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-04",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a conversa em João 14:5–6?",
+    "prompt": "Como avança a conversa em João 14:5–6?",
+    "cue": "Como avança a conversa em João 14:5–6?",
+    "verseRef": "João 14:5–6",
+    "passageText": "Disse-lhe Tomé: Senhor, não sabemos para onde estás indo; como podemos saber o caminho? Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomé confessa não saber o caminho"
+      },
+      {
+        "id": "b",
+        "text": "Jesus se declara caminho, verdade e vida"
+      },
+      {
+        "id": "c",
+        "text": "Só por Jesus se chega ao Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Da dúvida de Tomé à declaração de Jesus como único caminho ao Pai.",
+    "feedbackWrong": {
+      "default": "Comece pela pergunta de Tomé; a chegada ao Pai fecha."
+    },
+    "hint": "A pergunta vem antes da declaração.",
+    "learningObjective": "Revisar o encadeamento de João 14:5–6.",
+    "evidence": [
+      "João 14:5–6"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-05",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em João 19:30, o que Jesus toma antes de declarar tudo consumado?",
+    "prompt": "Em João 19:30, o que Jesus toma antes de declarar tudo consumado?",
+    "cue": "Em João 19:30, o que Jesus toma antes de declarar tudo consumado?",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "template": "E, quando Jesus tomou o ___, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vinho"
+      },
+      {
+        "id": "b",
+        "text": "vinagre"
+      },
+      {
+        "id": "c",
+        "text": "água"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quando Jesus tomou o vinagre",
+    "feedbackCorrect": "Jesus toma o vinagre e então declara que está consumado.",
+    "feedbackWrong": {
+      "a": "Não é vinho comum; o texto nomeia o líquido da esponja.",
+      "c": "O texto diz que ele tomou o que estava na esponja embebida."
+    },
+    "hint": "Lembre o que a esponja continha.",
+    "learningObjective": "Revisar o momento da declaração na cruz.",
+    "evidence": [
+      "João 19:30"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-06",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga João 14:6 a Êxodo 3:14?",
+    "prompt": "O que liga João 14:6 a Êxodo 3:14?",
+    "cue": "O que liga João 14:6 a Êxodo 3:14?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "passageA": {
+      "ref": "João 14:6",
+      "text": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim."
+    },
+    "passageB": {
+      "ref": "Êxodo 3:14",
+      "text": "E Deus disse a Moisés: “EU SOU O QUE SOU.” E acrescentou: “Assim dirás aos filhos de Israel: ‘EU SOU me enviou a vocês.’”"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um nome humano para Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus se revela como Eu Sou"
+      },
+      {
+        "id": "c",
+        "text": "Jesus nega o Deus antigo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "O Eu sou de Jesus ecoa o nome com que Deus se revelou a Moisés.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, quem se apresenta é o próprio Deus.",
+      "c": "Jesus não nega Deus; ele se apresenta nas palavras dele."
+    },
+    "hint": "Compare como Deus e Jesus se apresentam.",
+    "learningObjective": "Revisar o Eu sou de Jesus e o nome de Deus.",
+    "evidence": [
+      "João 14:6",
+      "Êxodo 3:14"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-07",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em João 14:9, toque o trecho que mostra a longa convivência de Jesus com eles.",
+    "prompt": "Em João 14:9, toque o trecho que mostra a longa convivência de Jesus com eles.",
+    "cue": "Em João 14:9, toque o trecho que mostra a longa convivência de Jesus com eles.",
+    "verseRef": "João 14:9",
+    "passageText": "Disse-lhe Jesus: Filipe, há tanto tempo estou convosco, e não me conheces? Quem me vê vê o Pai; como dizes: Mostra-nos o Pai?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filipe"
+      },
+      {
+        "id": "b",
+        "text": "Pai"
+      },
+      {
+        "id": "c",
+        "text": "tanto tempo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "há tanto tempo estou convosco",
+    "feedbackCorrect": "Jesus lembra que está com os discípulos há tanto tempo.",
+    "feedbackWrong": {
+      "a": "Filipe é quem pergunta; o tempo de convivência vem depois.",
+      "b": "Pai é quem Filipe quer ver; o tempo vem antes disso."
+    },
+    "hint": "Procure uma expressão de tempo.",
+    "learningObjective": "Revisar o tempo de convivência em João 14:9.",
+    "evidence": [
+      "João 14:9"
+    ]
+  },
+  {
+    "id": "joao-cam-jo-boss-revisao-08",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o ensino em João 15:4–5?",
+    "prompt": "Como avança o ensino em João 15:4–5?",
+    "cue": "Como avança o ensino em João 15:4–5?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ramo precisa permanecer na videira"
+      },
+      {
+        "id": "b",
+        "text": "Jesus se apresenta como a videira"
+      },
+      {
+        "id": "c",
+        "text": "Quem permanece dá muito fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele que permanece em mim, e eu nele, esse dá muito fruto",
+    "feedbackCorrect": "Do chamado a permanecer à promessa de muito fruto em Jesus.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado a permanecer; o fruto é o resultado."
+    },
+    "hint": "O resultado vem no fim do versículo 5.",
+    "learningObjective": "Revisar o movimento de João 15:4–5.",
+    "evidence": [
+      "João 15:4–5"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-01",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em João 19:33, os soldados não quebram as pernas de Jesus porque ele já está morto.",
+    "prompt": "Em João 19:33, os soldados não quebram as pernas de Jesus porque ele já está morto.",
+    "cue": "Em João 19:33, os soldados não quebram as pernas de Jesus porque ele já está morto.",
+    "verseRef": "João 19:33",
+    "passageText": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não lhe quebraram as pernas",
+    "feedbackCorrect": "Jesus já estava morto, e por isso suas pernas não são quebradas.",
+    "feedbackWrong": {
+      "false": "Releia João 19:33, ele já estava morto ao chegarem."
+    },
+    "hint": "Veja como os soldados encontram Jesus.",
+    "learningObjective": "Revisar a morte de Jesus antes dos soldados.",
+    "evidence": [
+      "João 19:33"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-02",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 15:5, toque o trecho que mostra a dependência dos discípulos.",
+    "prompt": "Em João 15:5, toque o trecho que mostra a dependência dos discípulos.",
+    "cue": "Em João 15:5, toque o trecho que mostra a dependência dos discípulos.",
+    "verseRef": "João 15:5",
+    "passageText": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sem mim"
+      },
+      {
+        "id": "b",
+        "text": "muito fruto"
+      },
+      {
+        "id": "c",
+        "text": "os ramos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois sem mim nada podem fazer",
+    "feedbackCorrect": "Sem Jesus nada podem fazer; toda a vida do ramo vem dele.",
+    "feedbackWrong": {
+      "b": "Muito fruto é o resultado; a dependência aparece no fim.",
+      "c": "Os ramos são os discípulos; a dependência vem depois."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Revisar a dependência de Jesus em João 15:5.",
+    "evidence": [
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-03",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura João 15:4–5 sustenta sobre a vida do discípulo?",
+    "prompt": "Que leitura João 15:4–5 sustenta sobre a vida do discípulo?",
+    "cue": "Que leitura João 15:4–5 sustenta sobre a vida do discípulo?",
+    "verseRef": "João 15:4–5",
+    "passageText": "Permaneçam em mim, e eu permanecerei em vocês. Assim como o ramo não pode produzir fruto por si mesmo, se não permanecer na videira, também vocês não podem dar fruto, se não permanecerem em mim. Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O fruto prova autonomia do ramo"
+      },
+      {
+        "id": "b",
+        "text": "Basta um contato passageiro inicial"
+      },
+      {
+        "id": "c",
+        "text": "A vida frutífera depende de Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Permanecer não exige suas palavras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se não permanecerem em mim",
+    "feedbackCorrect": "Sem permanecer em Jesus não há fruto; a vida depende dele.",
+    "feedbackWrong": {
+      "a": "O ramo não é autônomo; por si mesmo não produz fruto.",
+      "b": "Jesus chama a permanecer de modo contínuo, e não passageiro.",
+      "d": "Em 15:7, as palavras de Jesus também permanecem neles."
+    },
+    "hint": "Veja o que acontece sem permanecer nele.",
+    "learningObjective": "Revisar a interpretação de João 15:4–5.",
+    "evidence": [
+      "João 15:4–5"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-04",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do Eu sou na história da Bíblia?",
+    "prompt": "Qual sequência revela o fio do Eu sou na história da Bíblia?",
+    "cue": "Qual sequência revela o fio do Eu sou na história da Bíblia?",
+    "verseRef": "João 14:6",
+    "passageText": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se apresenta como Eu Sou"
+      },
+      {
+        "id": "b",
+        "text": "Jesus diz ser o caminho ao Pai"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê chega ao Pai nele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu sou o caminho, a verdade e a vida",
+    "feedbackCorrect": "Do nome de Deus em Êxodo à declaração de Jesus e à fé nele.",
+    "feedbackWrong": {
+      "default": "Siga a história, de Êxodo ao evangelho de João."
+    },
+    "hint": "Comece por Deus se revelando a Moisés.",
+    "learningObjective": "Revisar o Eu sou ligado ao nome de Deus.",
+    "evidence": [
+      "João 14:6",
+      "Êxodo 3:14"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-05",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em João 1:17, por intermédio de quem a lei foi dada?",
+    "prompt": "Em João 1:17, por intermédio de quem a lei foi dada?",
+    "cue": "Em João 1:17, por intermédio de quem a lei foi dada?",
+    "verseRef": "João 1:17",
+    "passageText": "Porque a lei foi dada por intermédio de Moisés; a graça e a verdade chegaram por meio de Jesus Cristo.",
+    "template": "Porque a lei foi dada por intermédio de ___; a graça e a verdade chegaram por meio de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Pai"
+      },
+      {
+        "id": "c",
+        "text": "João"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a lei foi dada por intermédio de Moisés",
+    "feedbackCorrect": "A lei foi dada por intermédio de Moisés, como João afirma.",
+    "feedbackWrong": {
+      "b": "O Pai é citado em 1:14; a lei veio por outro nome aqui.",
+      "c": "João testemunha de Jesus; a lei veio por outro nome aqui."
+    },
+    "hint": "É um nome do Antigo Testamento.",
+    "learningObjective": "Revisar o contraste entre Moisés e Jesus.",
+    "evidence": [
+      "João 1:17"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-06",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga João 19:33 a Êxodo 12:46?",
+    "prompt": "O que liga João 19:33 a Êxodo 12:46?",
+    "cue": "O que liga João 19:33 a Êxodo 12:46?",
+    "verseRef": "João 19:33",
+    "passageText": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas.",
+    "passageA": {
+      "ref": "João 19:33",
+      "text": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas."
+    },
+    "passageB": {
+      "ref": "Êxodo 12:46",
+      "text": "O cordeiro deve ser comido em uma só casa; não levarás a carne para fora, nem quebrarás nenhum osso dela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhum osso dele é quebrado"
+      },
+      {
+        "id": "b",
+        "text": "Pernas quebradas apressam tudo"
+      },
+      {
+        "id": "c",
+        "text": "O cordeiro dispensa a cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não lhe quebraram as pernas",
+    "feedbackCorrect": "Como no cordeiro da Páscoa, nenhum osso de Jesus é quebrado.",
+    "feedbackWrong": {
+      "b": "Com Jesus acontece o contrário, suas pernas não são quebradas.",
+      "c": "A cruz acontece; o ponto é o osso que não é quebrado."
+    },
+    "hint": "Compare o que não acontece com os ossos.",
+    "learningObjective": "Revisar as pernas não quebradas e o cordeiro pascal.",
+    "evidence": [
+      "João 19:33",
+      "Êxodo 12:46"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-07",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em João 19:33, toque o trecho que mostra que Jesus já tinha morrido.",
+    "prompt": "Em João 19:33, toque o trecho que mostra que Jesus já tinha morrido.",
+    "cue": "Em João 19:33, toque o trecho que mostra que Jesus já tinha morrido.",
+    "verseRef": "João 19:33",
+    "passageText": "Mas, ao se aproximarem de Jesus e perceberem que ele já estava morto, não lhe quebraram as pernas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "de Jesus"
+      },
+      {
+        "id": "b",
+        "text": "as pernas"
+      },
+      {
+        "id": "c",
+        "text": "já estava morto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele já estava morto",
+    "feedbackCorrect": "Jesus já estava morto, e por isso suas pernas não são quebradas.",
+    "feedbackWrong": {
+      "a": "De Jesus diz de quem se fala; o estado dele vem depois.",
+      "b": "As pernas são o que não quebram; a morte vem antes disso."
+    },
+    "hint": "Procure como os soldados encontram Jesus.",
+    "learningObjective": "Revisar que Jesus já estava morto em João 19:33.",
+    "evidence": [
+      "João 19:33"
+    ]
+  },
+  {
+    "id": "joao-pro-jo-boss-revisao-08",
+    "trail": "joao",
+    "section": "jo-boss-revisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho inteiro de Jesus em João?",
+    "prompt": "Qual sequência revela o caminho inteiro de Jesus em João?",
+    "cue": "Qual sequência revela o caminho inteiro de Jesus em João?",
+    "verseRef": "João 19:30",
+    "passageText": "E, quando Jesus tomou o vinagre, disse: \"Está consumado!\" E, inclinando a cabeça, rendeu o espírito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo se faz carne entre nós"
+      },
+      {
+        "id": "b",
+        "text": "Permanecendo nele, o ramo frutifica"
+      },
+      {
+        "id": "c",
+        "text": "Na cruz, Jesus declara tudo consumado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Está consumado",
+    "feedbackCorrect": "Do Verbo feito carne à vida nele e à cruz consumada por nós.",
+    "feedbackWrong": {
+      "default": "Siga João, do começo do evangelho à cruz no capítulo 19."
+    },
+    "hint": "Comece pelo começo do evangelho de João.",
+    "learningObjective": "Revisar o arco de Jesus no evangelho de João.",
+    "evidence": [
+      "João 19:30",
+      "João 1:14",
+      "João 15:5"
+    ]
+  }
+]

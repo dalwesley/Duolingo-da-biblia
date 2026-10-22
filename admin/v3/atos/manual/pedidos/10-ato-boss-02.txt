@@ -1,0 +1,175 @@
+Escreva a cena "ato-boss-02" da trilha "atos" (Atos dos Apóstolos).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Até os confins",
+ "mission": {
+  "slug": "ato-boss-02",
+  "title": "Desafio: Até os confins",
+  "type": "boss",
+  "intro": "Revise o avanço: Saulo, gentios, envio e testemunho em Roma.",
+  "hookRef": "Atos 9:15",
+  "hookNote": "Revise o avanço: Saulo, gentios, envio e testemunho em Roma.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Atos 8–28"
+ },
+ "v2": {
+  "passageRef": "Atos 9:15",
+  "context": "Revise o avanço: Saulo, gentios, envio e testemunho em Roma.",
+  "keyword": "Até",
+  "verseRefs": [
+   "Atos 9:15"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "ato-05-saulo",
+   "title": "Saulo encontrado",
+   "centralInsight": "Graça alcança inimigos",
+   "ref": "Atos 9:12–19"
+  },
+  {
+   "slug": "ato-06-gentios",
+   "title": "Porta aos gentios",
+   "centralInsight": "Deus corrige preconceito",
+   "ref": "Atos 10:31–38"
+  },
+  {
+   "slug": "ato-07-missoes",
+   "title": "Missão desde Antioquia",
+   "centralInsight": "Jejuar e ouvir o Espírito",
+   "ref": "Atos 13:1–6"
+  },
+  {
+   "slug": "ato-08-roma",
+   "title": "Até Roma",
+   "centralInsight": "Palavra não acorrentada",
+   "ref": "Atos 28:27–31"
+  }
+ ],
+ "ranges": [
+  "Atos 9:12–19",
+  "Atos 10:31–38",
+  "Atos 13:1–6",
+  "Atos 28:27–31"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 9:12",
+   "text": "E viu em uma visão um homem chamado Ananias entrar e impor-lhe as mãos, para que recuperasse a vista."
+  },
+  {
+   "ref": "Atos 9:13",
+   "text": "E Ananias, porém, respondeu: Senhor, de muitas coisas ouvi a respeito deste homem, quantos males ele tem feito aos teus santos em Jerusalém;"
+  },
+  {
+   "ref": "Atos 9:14",
+   "text": "E aqui ele tem a autorização dos principais sacerdotes para prender todos os que invocam o teu nome."
+  },
+  {
+   "ref": "Atos 9:15",
+   "text": "Disse-lhe, porém, o Senhor: Vai, pois este é um instrumento escolhido para levar o meu nome diante dos gentios, dos reis e também dos filhos de Israel."
+  },
+  {
+   "ref": "Atos 9:16",
+   "text": "Pois eu lhe mostrarei quanto é necessário que ele sofra por causa do meu nome."
+  },
+  {
+   "ref": "Atos 9:17",
+   "text": "E Ananias foi, entrou na casa e, impondo-lhe as mãos, disse: Irmão Saulo, o Senhor me enviou, isto é, o próprio Jesus que te apareceu no caminho por onde vinhas, para que recuperasses a visão e ficasses cheio do Espírito Santo."
+  },
+  {
+   "ref": "Atos 9:18",
+   "text": "E imediatamente, como que umas escamas caíram dos seus olhos, e ele passou a ver; a seguir, levantando-se foi batizado."
+  },
+  {
+   "ref": "Atos 9:19",
+   "text": "E, depois de ter se alimentado, sentiu-se fortalecido. Então, permaneceu em Damasco alguns dias com os discípulos."
+  },
+  {
+   "ref": "Atos 10:31",
+   "text": "E, eis que diante de mim se apresentou um homem com vestes resplandecentes, e disse: Cornélio, a sua oração foi ouvida, e suas esmolas foram lembradas na presença de Deus."
+  },
+  {
+   "ref": "Atos 10:32",
+   "text": "Envie, portanto, a Jope e chame Simão, que é conhecido como Pedro; ele está hospedado na casa de Simão, o curtidor, à beira-mar."
+  },
+  {
+   "ref": "Atos 10:33",
+   "text": "Por isso, mandei chamá-lo, e você fez bem em vir. Agora, estamos todos aqui na presença de Deus, prontos para ouvir tudo o que te foi ordenado pelo Senhor."
+  },
+  {
+   "ref": "Atos 10:34",
+   "text": "E Pedro, tomando a palavra, declarou: Na verdade, reconheço que Deus não faz acepção de pessoas;"
+  },
+  {
+   "ref": "Atos 10:35",
+   "text": "Mas, em qualquer nação, Deus aceita aquele que o teme e pratica a justiça."
+  },
+  {
+   "ref": "Atos 10:36",
+   "text": "A palavra que Ele enviou aos filhos de Israel, anunciando-lhes o evangelho da paz por meio de Jesus Cristo; este é o Senhor de todos."
+  },
+  {
+   "ref": "Atos 10:37",
+   "text": "Essa palavra, vocês sabem, se divulgou por toda a Judeia, começando na Galileia, após o batismo que João pregou."
+  },
+  {
+   "ref": "Atos 10:38",
+   "text": "A respeito de Jesus de Nazaré, como Deus o ungiu com o Espírito Santo e poder; ele andou por toda parte, fazendo o bem e curando todos os oprimidos pelo diabo, porque Deus estava com ele."
+  },
+  {
+   "ref": "Atos 13:1",
+   "text": "Na igreja que estava em Antioquia, havia profetas e mestres: Barnabé, Simeão, por sobrenome Níger, Lúcio de Cirene, Manaém, colaço de Herodes, o tetrarca, e Saulo."
+  },
+  {
+   "ref": "Atos 13:2",
+   "text": "Enquanto serviam ao Senhor e jejuavam, o Espírito Santo falou: \"Separem-me, agora, Barnabé e Saulo, para a obra a que os tenho chamado.\""
+  },
+  {
+   "ref": "Atos 13:3",
+   "text": "Então, jejuando e orando, impuseram as mãos sobre eles e os despediram."
+  },
+  {
+   "ref": "Atos 13:4",
+   "text": "Eles, então, enviados pelo Espírito Santo, desceram a Selêucia e dali navegaram para Chipre."
+  },
+  {
+   "ref": "Atos 13:5",
+   "text": "Chegando a Salamina, proclamavam a palavra de Deus nas sinagogas judaicas; e tinham também João como colaborador."
+  },
+  {
+   "ref": "Atos 13:6",
+   "text": "E, tendo atravessado toda a ilha até Pafos, encontraram certo judeu, mágico, falso profeta, chamado Barjesus."
+  },
+  {
+   "ref": "Atos 28:27",
+   "text": "Porque o coração deste povo se tornou endurecido; e com os ouvidos ouviram tardiamente, e fecharam os olhos, para que nunca vejam com os olhos, nem ouçam com os ouvidos, nem entendam com o coração, e se convertam, e eu os cure."
+  },
+  {
+   "ref": "Atos 28:28",
+   "text": "Saiba, portanto, que a salvação de Deus foi enviada aos gentios, e eles a ouvirão."
+  },
+  {
+   "ref": "Atos 28:29",
+   "text": "Depois de dizer essas palavras, os judeus se afastaram, tendo entre si uma grande discussão."
+  },
+  {
+   "ref": "Atos 28:30",
+   "text": "E Paulo permaneceu dois anos inteiros em sua própria casa, que havia alugado, e recebia todos os que o procuravam."
+  },
+  {
+   "ref": "Atos 28:31",
+   "text": "Pregando o Reino de Deus e, com toda a ousadia, ensinava as coisas que se referem ao Senhor Jesus Cristo sem nenhum impedimento"
+  }
+ ]
+}
+</cena>

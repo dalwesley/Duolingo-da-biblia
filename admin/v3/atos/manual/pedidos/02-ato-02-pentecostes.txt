@@ -1,0 +1,60 @@
+Escreva a cena "ato-02-pentecostes" da trilha "atos" (Atos dos Apóstolos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "atos",
+  "title": "Atos dos Apóstolos",
+  "description": "Do Espírito em Jerusalém até o testemunho nos confins da terra.",
+  "realm": "novo-testamento"
+ },
+ "block": "Jerusalém",
+ "mission": {
+  "slug": "ato-02-pentecostes",
+  "title": "Pentecostes",
+  "type": "lesson",
+  "intro": "O Espírito é derramado. Línguas, ousadia e o primeiro sermão público: Jesus é Senhor e Cristo.",
+  "hookRef": "Atos 2:32–36",
+  "hookNote": "Pentecostes cumpre a promessa e reverte Babel: povos ouvem as grandezas de Deus. Pedro interpreta a Escritura (Joel, Salmos) e centra tudo…",
+  "centralInsight": "Ousadia no anúncio",
+  "objective": "Minha busca de “poder” aponta para Cristo — ou para experiência sem cruz?"
+ },
+ "v2": {
+  "passageRef": "Atos 2:32–36",
+  "context": "Pentecostes cumpre a promessa e reverte Babel: povos ouvem as grandezas de Deus. Pedro interpreta a Escritura (Joel, Salmos) e centra tudo em Jesus. O resultado não é espetáculo vazio — é arrependimento, batismo e cerca de três mil adicionados. Poder do Espírito serve ao anúncio de Cristo.",
+  "keyword": "Espírito Santo",
+  "verseRefs": [
+   "Atos 2:32–33"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Atos 2:32–36",
+  "Atos 2:32–33"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 2:32",
+   "text": "Deus ressuscitou Jesus, e todos nós somos testemunhas disso."
+  },
+  {
+   "ref": "Atos 2:33",
+   "text": "Portanto, exaltado à direita de Deus, tendo recebido do Pai a promessa do Espírito Santo, ele derramou o que agora vocês veem e ouvem."
+  },
+  {
+   "ref": "Atos 2:34",
+   "text": "Pois Davi não subiu aos céus, mas ele mesmo declarou: O Senhor disse ao meu Senhor: Assenta-te à minha direita,"
+  },
+  {
+   "ref": "Atos 2:35",
+   "text": "Até que eu coloque os teus inimigos como um apoio sob os teus pés."
+  },
+  {
+   "ref": "Atos 2:36",
+   "text": "Estejam, portanto, certos de que toda a casa de Israel reconhece que a esse Jesus, a quem vocês crucificaram, Deus o tornou Senhor e Cristo."
+  }
+ ]
+}
+</cena>

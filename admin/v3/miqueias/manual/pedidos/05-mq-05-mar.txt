@@ -1,0 +1,63 @@
+Escreva a cena "mq-05-mar" da trilha "miqueias" (Miqueias).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "miqueias",
+  "title": "Miqueias",
+  "description": "Agir com justiça, amar a misericórdia, andar com Deus.",
+  "realm": "antigo-testamento"
+ },
+ "block": "A promessa",
+ "mission": {
+  "slug": "mq-05-mar",
+  "title": "No fundo do mar",
+  "type": "lesson",
+  "intro": "Miquéias fecha perguntando quem é semelhante a Deus: ele perdoa, não retém a ira e lança os pecados no mar.",
+  "hookRef": "Miquéias 7:18–19",
+  "hookNote": "A misericórdia não é esquecimento vago. É perdão que pisa a iniquidade e a lança no fundo.",
+  "centralInsight": "Deus lança os pecados no fundo do mar",
+  "objective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira."
+ },
+ "v2": {
+  "passageRef": "Miquéias 7:18–19",
+  "context": "Deus perdoa, deleita-se na misericórdia e lança os pecados no fundo do mar.",
+  "keyword": "Mar",
+  "verseRefs": [
+   "Miquéias 7:18–19"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Miqueias 7:15–20"
+ ],
+ "verses": [
+  {
+   "ref": "Miqueias 7:15",
+   "text": "Mostrarei maravilhas a vocês, como nos dias em que saíram da terra do Egito."
+  },
+  {
+   "ref": "Miqueias 7:16",
+   "text": "As nações o verão e se envergonharão de todo o seu poder; colocarão a mão sobre a boca, e os seus ouvidos permanecerão surdos."
+  },
+  {
+   "ref": "Miqueias 7:17",
+   "text": "Lamberão o pó como serpentes; como répteis da terra, tremendo, sairão dos seus esconderijos e, aterrorizados, virão diante do Senhor, nosso Deus; e terão medo de ti."
+  },
+  {
+   "ref": "Miqueias 7:18",
+   "text": "Quem é Deus como você, que perdoa a iniquidade e esquece a transgressão do restante da sua herança? Não retém sua ira para sempre, porque se alegra em demonstrar misericórdia."
+  },
+  {
+   "ref": "Miqueias 7:19",
+   "text": "Terá compaixão de nós; pisará aos pés as nossas iniquidades e lançará todos os nossos pecados nas profundezas do mar."
+  },
+  {
+   "ref": "Miqueias 7:20",
+   "text": "Mostrarás a Jacó a fidelidade e a Abraão a misericórdia, que prometeste a nossos pais desde os tempos antigos."
+  }
+ ]
+}
+</cena>

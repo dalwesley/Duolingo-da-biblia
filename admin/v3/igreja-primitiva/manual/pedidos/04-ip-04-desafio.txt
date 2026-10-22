@@ -1,0 +1,161 @@
+Escreva a cena "ip-04-desafio" da trilha "igreja-primitiva" (Igreja Primitiva).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "igreja-primitiva",
+  "title": "Igreja Primitiva",
+  "description": "Dos apóstolos aos pais da igreja — fé sob pressão romana.",
+  "realm": "vida-crista"
+ },
+ "block": "Igreja Primitiva",
+ "mission": {
+  "slug": "ip-04-desafio",
+  "title": "Desafio: Igreja em movimento",
+  "type": "boss",
+  "intro": "Revise comunhão, coragem e expansão missionária da igreja primitiva.",
+  "hookRef": "Atos 2; 4; 8; 11",
+  "hookNote": "Revise comunhão, coragem e expansão missionária da igreja primitiva.",
+  "centralInsight": "O que este treino pede na prática?",
+  "objective": "Atos 2; 4; 8; 11"
+ },
+ "v2": {
+  "passageRef": "Atos 2; 4; 8; 11",
+  "context": "Revise comunhão, coragem e expansão missionária da igreja primitiva.",
+  "keyword": "Igreja",
+  "verseRefs": [
+   "Atos 2:42; 4:31; 8:4"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "ip-01-vida-comum",
+   "title": "Vida comum em Atos",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Atos 2:42–47"
+  },
+  {
+   "slug": "ip-02-perseguicao",
+   "title": "Fé em meio à perseguição",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Atos 4:26–34"
+  },
+  {
+   "slug": "ip-03-expansao",
+   "title": "O evangelho se espalha",
+   "centralInsight": "Este texto chama a igreja a viver a fé recebida de Deus. A obra de Cristo está no centro, e sua graça forma discípulos que respondem com hu…",
+   "ref": "Atos 8:1–7"
+  }
+ ],
+ "ranges": [
+  "Atos 2:42–47",
+  "Atos 4:26–34",
+  "Atos 8:1–7",
+  "Atos 11:19–21"
+ ],
+ "verses": [
+  {
+   "ref": "Atos 2:42",
+   "text": "E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+  },
+  {
+   "ref": "Atos 2:43",
+   "text": "Em cada alma havia temor; e muitos prodígios e sinais eram feitos por intermédio dos apóstolos."
+  },
+  {
+   "ref": "Atos 2:44",
+   "text": "Todos os que criam estavam juntos e tinham tudo em comum."
+  },
+  {
+   "ref": "Atos 2:45",
+   "text": "E vendiam suas propriedades e bens, distribuindo o produto entre todos, à medida que alguém tinha necessidade."
+  },
+  {
+   "ref": "Atos 2:46",
+   "text": "Perseverando todos os dias unânimes no templo e repartindo pão de casa em casa, tomavam suas refeições com alegria e singeleza de coração."
+  },
+  {
+   "ref": "Atos 2:47",
+   "text": "Louvando a Deus e contando com a simpatia de todo o povo. E dia a dia, o Senhor acrescentava à igreja aqueles que iam sendo salvos."
+  },
+  {
+   "ref": "Atos 4:26",
+   "text": "Levantaram-se os reis da terra, e as autoridades se reuniram à uma contra o Senhor e contra o seu Ungido;"
+  },
+  {
+   "ref": "Atos 4:27",
+   "text": "Porque verdadeiramente se uniram nesta cidade contra o teu santo Servo Jesus, a quem ungiste, Herodes e Pôncio Pilatos, com os gentios e os povos de Israel;"
+  },
+  {
+   "ref": "Atos 4:28",
+   "text": "Para realizarem tudo o que a tua mão e o teu propósito já haviam determinado"
+  },
+  {
+   "ref": "Atos 4:29",
+   "text": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que anunciem com toda a intrepidez a tua palavra."
+  },
+  {
+   "ref": "Atos 4:30",
+   "text": "Estendendo a tua mão para realizar curas, sinais e prodígios pelo nome do teu santo Servo Jesus."
+  },
+  {
+   "ref": "Atos 4:31",
+   "text": "E, depois de orarem, o lugar onde estavam reunidos tremeu; todos ficaram cheios do Espírito Santo e anunciavam com intrepidez a palavra de Deus."
+  },
+  {
+   "ref": "Atos 4:32",
+   "text": "A multidão dos que criam era de um só coração e de uma só alma; ninguém considerava exclusivamente sua nem uma das coisas que possuía, mas tudo, entre eles, lhes era comum."
+  },
+  {
+   "ref": "Atos 4:33",
+   "text": "Os apóstolos davam testemunho da ressurreição do Senhor Jesus com grande poder e havia abundante graça sobre todos eles."
+  },
+  {
+   "ref": "Atos 4:34",
+   "text": "Não havia, portanto, entre eles, nenhum necessitado, pois todos os que possuíam terrenos ou casas, vendendo-os, traziam o valor correspondente e o depositavam aos pés dos apóstolos."
+  },
+  {
+   "ref": "Atos 8:1",
+   "text": "E Saulo consentia na sua morte. Naquele dia, levantou-se grande perseguição contra a igreja em Jerusalém; todos, exceto os apóstolos, foram dispersos pelas regiões da Judeia e Samaria."
+  },
+  {
+   "ref": "Atos 8:2",
+   "text": "Alguns homens piedosos sepultaram Estêvão e fizeram grande pranto sobre ele."
+  },
+  {
+   "ref": "Atos 8:3",
+   "text": "Saulo, porém, assolava a igreja, entrando nas casas e arrastando homens e mulheres, encerrando-os na prisão."
+  },
+  {
+   "ref": "Atos 8:4",
+   "text": "Os que estavam dispersos percorriam todas as regiões, proclamando a palavra."
+  },
+  {
+   "ref": "Atos 8:5",
+   "text": "E Filipe desceu à cidade de Samaria, e lhes anunciou a Cristo."
+  },
+  {
+   "ref": "Atos 8:6",
+   "text": "E as multidões estavam atentas, unânimes, às coisas que Filipe dizia, ouvindo-as e vendo os sinais que ele operava."
+  },
+  {
+   "ref": "Atos 8:7",
+   "text": "Pois os espíritos imundos de muitos que os possuíam saíam, gritando em alta voz; e muitos paralíticos e coxos eram curados."
+  },
+  {
+   "ref": "Atos 11:19",
+   "text": "Os que foram dispersos pela tribulação que sobreveio a Estêvão se espalharam pela Fenícia, Chipre e Antioquia, não anunciando a palavra a ninguém, senão somente aos judeus."
+  },
+  {
+   "ref": "Atos 11:20",
+   "text": "Entre eles, estavam alguns homens de Chipre e de Cirene, que ao chegarem a Antioquia, também falavam aos gregos, anunciando-lhes o evangelho do Senhor Jesus."
+  },
+  {
+   "ref": "Atos 11:21",
+   "text": "E a mão do Senhor estava com eles; e um grande número de pessoas creu e se converteu ao Senhor."
+  }
+ ]
+}
+</cena>

@@ -1,0 +1,67 @@
+Escreva a cena "proverbios-pratica-01-palavras-e-trabalho" da trilha "proverbios" (Provérbios).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "proverbios",
+  "title": "Provérbios",
+  "description": "Sabedoria prática para o temor do Senhor.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Vida prática",
+ "mission": {
+  "slug": "proverbios-pratica-01-palavras-e-trabalho",
+  "title": "Palavras e trabalho",
+  "type": "lesson",
+  "intro": "Língua, preguiça e diligência.",
+  "hookRef": "Provérbios",
+  "hookNote": "Língua, preguiça e diligência.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre palavras?"
+ },
+ "v2": {
+  "passageRef": "Provérbios",
+  "context": "Língua, preguiça e diligência.",
+  "keyword": "Palavras",
+  "verseRefs": [
+   "Provérbios 10:19"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Provérbios 10:16–22"
+ ],
+ "verses": [
+  {
+   "ref": "Provérbios 10:16",
+   "text": "A obra do justo conduz à vida, mas os rendimentos do ímpio resultam em pecado."
+  },
+  {
+   "ref": "Provérbios 10:17",
+   "text": "O caminho da vida pertence àquele que guarda o ensinamento, mas quem abandona a correção anda em erro."
+  },
+  {
+   "ref": "Provérbios 10:18",
+   "text": "Aquele que oculta o ódio tem lábios falsos, e quem dissemina calúnias é um insensato."
+  },
+  {
+   "ref": "Provérbios 10:19",
+   "text": "Quando há muita fala, não faltam transgressões, mas quem modera os lábios é prudente."
+  },
+  {
+   "ref": "Provérbios 10:20",
+   "text": "A língua do justo é como prata escolhida, mas o coração dos ímpios tem muito pouco valor."
+  },
+  {
+   "ref": "Provérbios 10:21",
+   "text": "Os lábios do justo apascentam a muitos, mas os tolos, por falta de senso, perecem."
+  },
+  {
+   "ref": "Provérbios 10:22",
+   "text": "A bênção do Senhor enriquece, e não traz desgosto."
+  }
+ ]
+}
+</cena>

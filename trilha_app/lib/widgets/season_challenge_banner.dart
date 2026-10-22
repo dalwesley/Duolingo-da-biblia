@@ -22,11 +22,12 @@ class SeasonChallengeBanner extends StatelessWidget {
 
   const SeasonChallengeBanner({super.key, required this.catalog});
 
-  @override
-  Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
+  /// Cofre da estação ativo — null fora da janela ou sem trilho.
+  static PilgrimVaultState? seasonVault(
+    BuildContext context,
+    List<Trail> catalog, {
+    required ProgressService progress,
+  }) {
     final uid = context.read<BackendService>().uid ?? '';
     final profile = CaravanPilgrimProfile.fromProgress(
       progress: progress,
@@ -38,14 +39,27 @@ class SeasonChallengeBanner extends StatelessWidget {
       catalog: catalog,
       ctx: ctx,
     );
-
-    PilgrimVaultState? season;
     for (final v in vaults) {
-      if (v.vault.kind == PilgrimVaultKind.season) {
-        season = v;
-        break;
+      if (v.vault.kind == PilgrimVaultKind.season && v.tracks.isNotEmpty) {
+        return v;
       }
     }
+    return null;
+  }
+
+  /// Cor do próximo nível do trilho (a mesma da barra do banner).
+  static Color trackAccent(PilgrimTrackState track) => tierColor(
+    track.nextLevel?.tier ??
+        track.currentLevel?.tier ??
+        PilgrimMedalTier.bronze,
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final season = seasonVault(context, catalog, progress: progress);
     // Abre numa folha: nunca fica vazio — mostra um estado calmo.
     if (season == null || season.tracks.isEmpty) {
       return _SeasonQuietCard(
@@ -64,9 +78,7 @@ class SeasonChallengeBanner extends StatelessWidget {
     final vaultTitle = season.vault.title;
 
     final next = track.nextLevel;
-    final accent = tierColor(
-      next?.tier ?? track.currentLevel?.tier ?? PilgrimMedalTier.bronze,
-    );
+    final accent = trackAccent(track);
 
     return Semantics(
       container: true,

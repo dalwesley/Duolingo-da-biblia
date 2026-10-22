@@ -1,0 +1,67 @@
+Escreva a cena "rm-04-israel" da trilha "romanos" (Romanos).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "romanos",
+  "title": "Romanos",
+  "description": "O evangelho da justiça de Deus — pecado, graça e nova vida.",
+  "realm": "novo-testamento"
+ },
+ "block": "Romanos",
+ "mission": {
+  "slug": "rm-04-israel",
+  "title": "Israel e a fidelidade de Deus",
+  "type": "lesson",
+  "intro": "Paulo contempla a soberania, a misericórdia e a fidelidade de Deus em seu plano redentor.",
+  "hookRef": "Israel e a fidelidade de Deus",
+  "hookNote": "Paulo contempla a soberania, a misericórdia e a fidelidade de Deus em seu plano redentor.",
+  "centralInsight": "Paulo instrui a igreja em Romanos 9-11 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele c…",
+  "objective": "Romanos 9-11"
+ },
+ "v2": {
+  "passageRef": "Israel e a fidelidade de Deus",
+  "context": "Paulo contempla a soberania, a misericórdia e a fidelidade de Deus em seu plano redentor.",
+  "keyword": "Israel",
+  "verseRefs": [
+   "Romanos 11:33"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Romanos 11:30–36"
+ ],
+ "verses": [
+  {
+   "ref": "Romanos 11:30",
+   "text": "Pois assim como vocês, outrora, foram desobedientes a Deus, agora conseguiram misericórdia em razão da desobediência deles."
+  },
+  {
+   "ref": "Romanos 11:31",
+   "text": "Assim, estes também agora se tornaram desobedientes, para que, por meio da misericórdia que vos foi demonstrada, possam alcançar a misericórdia."
+  },
+  {
+   "ref": "Romanos 11:32",
+   "text": "Pois Deus colocou todos sob a desobediência, a fim de poder demonstrar misericórdia para com todos."
+  },
+  {
+   "ref": "Romanos 11:33",
+   "text": "Ó profundidade das riquezas tanto da sabedoria quanto do conhecimento de Deus! Quão insondáveis são os Seus juízos e quão inescrutáveis os Seus caminhos!"
+  },
+  {
+   "ref": "Romanos 11:34",
+   "text": "Porque quem conheceu a mente do Senhor? Ou quem foi o seu conselheiro?"
+  },
+  {
+   "ref": "Romanos 11:35",
+   "text": "Ou quem primeiro lhe deu algo, de modo que isso lhe seja restituído?"
+  },
+  {
+   "ref": "Romanos 11:36",
+   "text": "Porque dele, por meio dele, e para ele são todas as coisas; a ele, portanto, seja a glória eternamente. Amém!"
+  }
+ ]
+}
+</cena>

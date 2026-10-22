@@ -1,0 +1,2544 @@
+[
+  {
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Sofonias 1:14, o Dia do Senhor é amargo e nele clama até o homem poderoso.",
+    "prompt": "Em Sofonias 1:14, o Dia do Senhor é amargo e nele clama até o homem poderoso.",
+    "cue": "Em Sofonias 1:14, o Dia do Senhor é amargo e nele clama até o homem poderoso.",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Dia do Senhor é amargo",
+    "feedbackCorrect": "O texto chama esse dia de amargo e diz que até o homem poderoso clama nele.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Sofonias 1:14, onde o dia é chamado de amargo."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar como Sofonias descreve o Dia do Senhor.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Sofonias 1:14, toque quem também clama no Dia do Senhor.",
+    "prompt": "Em Sofonias 1:14, toque quem também clama no Dia do Senhor.",
+    "cue": "Em Sofonias 1:14, toque quem também clama no Dia do Senhor.",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "homem poderoso"
+      },
+      {
+        "id": "b",
+        "text": "rapidamente"
+      },
+      {
+        "id": "c",
+        "text": "muito próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nele clama até o homem poderoso",
+    "feedbackCorrect": "Nem a força livra do clamor naquele dia, pois até ele clama.",
+    "feedbackWrong": {
+      "b": "Isso diz sobre a pressa do dia, não sobre quem clama.",
+      "c": "Isso diz sobre a proximidade do dia, não sobre quem clama."
+    },
+    "hint": "Procure quem aparece no fim do versículo.",
+    "learningObjective": "Identificar quem clama no Dia do Senhor.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Sofonias 1:15, como será aquele dia?",
+    "prompt": "Segundo Sofonias 1:15, como será aquele dia?",
+    "cue": "Segundo Sofonias 1:15, como será aquele dia?",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um dia calmo e silencioso"
+      },
+      {
+        "id": "b",
+        "text": "Um dia de indignação e aflição"
+      },
+      {
+        "id": "c",
+        "text": "Um dia de festa e colheita"
+      },
+      {
+        "id": "d",
+        "text": "Um dia comum como os outros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um dia de indignação",
+    "feedbackCorrect": "O versículo acumula palavras solenes para mostrar a gravidade daquele dia.",
+    "feedbackWrong": {
+      "a": "O texto fala de alvoroço e desolação, e não de calma.",
+      "c": "O texto fala de angústia e trevas, e não de festa.",
+      "d": "O texto o separa dos outros dias pela sua gravidade."
+    },
+    "hint": "Leia as primeiras descrições do versículo.",
+    "learningObjective": "Observar as descrições do dia em Sofonias 1:15.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Sofonias 1:15 na ordem do texto.",
+    "prompt": "Monte Sofonias 1:15 na ordem do texto.",
+    "cue": "Monte Sofonias 1:15 na ordem do texto.",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aquele dia será um dia de indignação"
+      },
+      {
+        "id": "b",
+        "text": "um dia de angústia e aflição"
+      },
+      {
+        "id": "c",
+        "text": "um dia de alvoroço e desolação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele dia será um dia de indignação",
+    "feedbackCorrect": "O versículo abre com indignação e segue com angústia e alvoroço.",
+    "feedbackWrong": {
+      "default": "Comece pela indignação, que abre a lista do versículo."
+    },
+    "hint": "O versículo começa nomeando o dia.",
+    "learningObjective": "Reconhecer a sequência de Sofonias 1:15.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Sofonias 1:14, como é descrito o Dia do Senhor?",
+    "prompt": "Em Sofonias 1:14, como é descrito o Dia do Senhor?",
+    "cue": "Em Sofonias 1:14, como é descrito o Dia do Senhor?",
+    "verseRef": "Sofonias 1:14–15",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "template": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é ___, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amargo"
+      },
+      {
+        "id": "b",
+        "text": "doce"
+      },
+      {
+        "id": "c",
+        "text": "distante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Dia do Senhor é amargo",
+    "feedbackCorrect": "O dia é chamado assim para mostrar que trará dor, e não alívio fácil.",
+    "feedbackWrong": {
+      "b": "O texto usa a palavra oposta para descrever esse dia.",
+      "c": "O texto diz que o dia está próximo, e não longe."
+    },
+    "hint": "Veja a palavra usada depois de Dia do Senhor é.",
+    "learningObjective": "Lembrar a descrição do Dia do Senhor.",
+    "evidence": [
+      "Sofonias 1:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Sofonias 1:14 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14 comunica que se liga a este contexto?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "passageA": {
+      "ref": "Sofonias 1:14",
+      "text": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Dia do Senhor não está longe e exige atenção agora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia está muito próximo"
+      },
+      {
+        "id": "b",
+        "text": "O dia nunca chegará"
+      },
+      {
+        "id": "c",
+        "text": "Só os fracos temem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "está próximo, muito próximo",
+    "feedbackCorrect": "A repetição da proximidade torna o aviso urgente para quem ouve.",
+    "feedbackWrong": {
+      "b": "O texto afirma o contrário, pois o dia se apressa.",
+      "c": "O texto diz que até o homem poderoso clama naquele dia."
+    },
+    "hint": "Repare na repetição sobre a distância do dia.",
+    "learningObjective": "Ligar Sofonias 1:14 à urgência do aviso.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Sofonias 1:14, o Dia do Senhor ainda demora e por isso o aviso pode ser adiado sem pressa.",
+    "prompt": "Em Sofonias 1:14, o Dia do Senhor ainda demora e por isso o aviso pode ser adiado sem pressa.",
+    "cue": "Em Sofonias 1:14, o Dia do Senhor ainda demora e por isso o aviso pode ser adiado sem pressa.",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "e se apressa rapidamente",
+    "feedbackCorrect": "O texto insiste na proximidade do dia, o que torna o aviso urgente.",
+    "feedbackWrong": {
+      "true": "Releia o começo do versículo, que repete a proximidade do dia."
+    },
+    "hint": "Repare nas palavras sobre tempo.",
+    "learningObjective": "Compreender a urgência do aviso de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Sofonias 1:14, toque a palavra que mostra a pressa do Dia do Senhor.",
+    "prompt": "Em Sofonias 1:14, toque a palavra que mostra a pressa do Dia do Senhor.",
+    "cue": "Em Sofonias 1:14, toque a palavra que mostra a pressa do Dia do Senhor.",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amargo"
+      },
+      {
+        "id": "b",
+        "text": "rapidamente"
+      },
+      {
+        "id": "c",
+        "text": "Atenção"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e se apressa rapidamente",
+    "feedbackCorrect": "Essa palavra mostra que o dia não anda devagar, mas se apressa.",
+    "feedbackWrong": {
+      "a": "Essa palavra descreve o sabor do dia, não a sua pressa.",
+      "c": "Essa palavra pede atenção, mas não indica a velocidade do dia."
+    },
+    "hint": "Procure como o dia se move.",
+    "learningObjective": "Reconhecer a palavra que marca a urgência.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a repetição em Sofonias 1:14 funciona no aviso?",
+    "prompt": "Como a repetição em Sofonias 1:14 funciona no aviso?",
+    "cue": "Como a repetição em Sofonias 1:14 funciona no aviso?",
+    "verseRef": "Sofonias 1:14–15",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Torna urgente ouvir antes que o dia chegue"
+      },
+      {
+        "id": "b",
+        "text": "Adia o aviso para um futuro sem importância"
+      },
+      {
+        "id": "c",
+        "text": "Mostra que só alguns precisam prestar atenção"
+      },
+      {
+        "id": "d",
+        "text": "Transforma o dia em motivo de festa imediata"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "está próximo, muito próximo",
+    "feedbackCorrect": "Repetir a proximidade aperta o aviso sobre quem ouve agora.",
+    "feedbackWrong": {
+      "b": "A repetição aproxima o dia, e não o empurra para longe.",
+      "c": "Até o homem poderoso clama, sem exceção pela força.",
+      "d": "O dia é chamado de amargo, e não de festa."
+    },
+    "hint": "Pense no efeito de repetir a mesma ideia.",
+    "learningObjective": "Compreender o efeito da repetição em Sofonias 1:14.",
+    "evidence": [
+      "Sofonias 1:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o aviso em Sofonias 1:14-15?",
+    "prompt": "Como avança o aviso em Sofonias 1:14-15?",
+    "cue": "Como avança o aviso em Sofonias 1:14-15?",
+    "verseRef": "Sofonias 1:14–15",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia do Senhor é anunciado como próximo"
+      },
+      {
+        "id": "b",
+        "text": "Até o homem poderoso clama nesse dia"
+      },
+      {
+        "id": "c",
+        "text": "O dia traz angústia e densas trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O grande Dia do Senhor está próximo",
+    "feedbackCorrect": "Primeiro a proximidade, depois quem clama, e então o retrato do dia.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio da proximidade, no início de 1:14."
+    },
+    "hint": "O retrato com trevas fecha o trecho.",
+    "learningObjective": "Compreender o avanço do aviso em Sofonias 1.",
+    "evidence": [
+      "Sofonias 1:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Sofonias 1:15, que palavra nomeia a reação de Deus naquele dia?",
+    "prompt": "Em Sofonias 1:15, que palavra nomeia a reação de Deus naquele dia?",
+    "cue": "Em Sofonias 1:15, que palavra nomeia a reação de Deus naquele dia?",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "template": "Aquele dia será um dia de ___, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "indiferença"
+      },
+      {
+        "id": "b",
+        "text": "indignação"
+      },
+      {
+        "id": "c",
+        "text": "demora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um dia de indignação",
+    "feedbackCorrect": "Essa palavra abre a lista e mostra a seriedade do juízo naquele dia.",
+    "feedbackWrong": {
+      "a": "O texto mostra Deus agindo com seriedade, e não sem se importar.",
+      "c": "O texto fala de pressa do dia, e não de demora de Deus."
+    },
+    "hint": "É a primeira descrição depois de aquele dia será.",
+    "learningObjective": "Compreender o peso da primeira descrição do dia.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Sofonias 1:14 a Joel 2:1?",
+    "prompt": "O que liga Sofonias 1:14 a Joel 2:1?",
+    "cue": "O que liga Sofonias 1:14 a Joel 2:1?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "passageA": {
+      "ref": "Sofonias 1:14",
+      "text": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso."
+    },
+    "passageB": {
+      "ref": "Joel 2:1",
+      "text": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia do Senhor se aproxima"
+      },
+      {
+        "id": "b",
+        "text": "Festa sem nenhum aviso"
+      },
+      {
+        "id": "c",
+        "text": "Um dia comum sem juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O grande Dia do Senhor está próximo",
+    "feedbackCorrect": "Os dois profetas anunciam a chegada próxima do dia do Senhor.",
+    "feedbackWrong": {
+      "b": "Os dois textos soam um alerta, e não anunciam só festa.",
+      "c": "Os dois textos tratam esse dia com solenidade e aviso."
+    },
+    "hint": "Compare o que os dois dizem sobre a chegada.",
+    "learningObjective": "Relacionar o aviso de Sofonias ao de Joel.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Sofonias 1:14-15 apresenta o Dia do Senhor como juízo próximo que alcança também quem se julga forte.",
+    "prompt": "Sofonias 1:14-15 apresenta o Dia do Senhor como juízo próximo que alcança também quem se julga forte.",
+    "cue": "Sofonias 1:14-15 apresenta o Dia do Senhor como juízo próximo que alcança também quem se julga forte.",
+    "verseRef": "Sofonias 1:14–15",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "nele clama até o homem poderoso",
+    "feedbackCorrect": "A proximidade e o clamor do poderoso mostram um juízo sem atalho pela força.",
+    "feedbackWrong": {
+      "false": "O texto diz que até o homem poderoso clama naquele dia próximo."
+    },
+    "hint": "Junte a proximidade com quem clama.",
+    "learningObjective": "Interpretar o alcance do juízo anunciado.",
+    "evidence": [
+      "Sofonias 1:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Sofonias 1:15, toque o trecho que mostra a escuridão daquele dia.",
+    "prompt": "Em Sofonias 1:15, toque o trecho que mostra a escuridão daquele dia.",
+    "cue": "Em Sofonias 1:15, toque o trecho que mostra a escuridão daquele dia.",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "densas trevas"
+      },
+      {
+        "id": "b",
+        "text": "angústia e aflição"
+      },
+      {
+        "id": "c",
+        "text": "alvoroço e desolação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "um dia de nuvens e densas trevas",
+    "feedbackCorrect": "As palavras de escuridão fecham o retrato solene daquele dia.",
+    "feedbackWrong": {
+      "b": "Isso nomeia a dor do dia, não a sua escuridão.",
+      "c": "Isso nomeia a confusão do dia, não a sua escuridão."
+    },
+    "hint": "Procure o fim da lista de descrições.",
+    "learningObjective": "Sustentar com o texto a escuridão do dia.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Sofonias 1:14-15 sustenta sobre o Dia do Senhor?",
+    "prompt": "Que leitura Sofonias 1:14-15 sustenta sobre o Dia do Senhor?",
+    "cue": "Que leitura Sofonias 1:14-15 sustenta sobre o Dia do Senhor?",
+    "verseRef": "Sofonias 1:14–15",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É um dia próximo e sério que pede atenção agora"
+      },
+      {
+        "id": "b",
+        "text": "É um dia que a força humana consegue evitar"
+      },
+      {
+        "id": "c",
+        "text": "É um dia distante que permite adiar a resposta"
+      },
+      {
+        "id": "d",
+        "text": "É um dia leve que só assusta quem é fraco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O grande Dia do Senhor está próximo",
+    "feedbackCorrect": "Proximidade, amargura e trevas pedem uma resposta de atenção agora.",
+    "feedbackWrong": {
+      "b": "Nenhuma força é apresentada como escape naquele dia.",
+      "c": "O texto repete que o dia está muito próximo.",
+      "d": "Até o homem poderoso clama, sem exceção pela força."
+    },
+    "hint": "Junte proximidade, amargura e trevas.",
+    "learningObjective": "Escolher a interpretação sustentada por Sofonias 1.",
+    "evidence": [
+      "Sofonias 1:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do aviso ao consolo em Sofonias?",
+    "prompt": "Qual sequência revela o caminho do aviso ao consolo em Sofonias?",
+    "cue": "Qual sequência revela o caminho do aviso ao consolo em Sofonias?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofonias anuncia o Dia do Senhor próximo"
+      },
+      {
+        "id": "b",
+        "text": "Joel convida o povo a voltar ao Senhor"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor está no meio para salvar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O grande Dia do Senhor está próximo",
+    "feedbackCorrect": "O aviso do juízo convida à volta, e o livro termina com Deus no meio para salvar.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio de Sofonias e termine com Deus no meio do povo."
+    },
+    "hint": "Termine com a presença que salva.",
+    "learningObjective": "Ver o aviso dentro do movimento do livro até a restauração.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Joel 2:13",
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Sofonias 1:15, que palavra completa o retrato de escuridão do dia?",
+    "prompt": "Em Sofonias 1:15, que palavra completa o retrato de escuridão do dia?",
+    "cue": "Em Sofonias 1:15, que palavra completa o retrato de escuridão do dia?",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "template": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de ___ e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "claridade"
+      },
+      {
+        "id": "b",
+        "text": "escuridade"
+      },
+      {
+        "id": "c",
+        "text": "bonança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "um dia de escuridade e negrume",
+    "feedbackCorrect": "Essa palavra abre a parte final do retrato, antes do negrume e das trevas.",
+    "feedbackWrong": {
+      "a": "O texto descreve o dia com palavras opostas à claridade.",
+      "c": "O texto fala de alvoroço e desolação, e não de bonança."
+    },
+    "hint": "Veja a palavra ligada ao negrume no fim.",
+    "learningObjective": "Lembrar o termo que carrega a escuridão do dia.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Sofonias 1:14 a Amós 5:18?",
+    "prompt": "O que liga Sofonias 1:14 a Amós 5:18?",
+    "cue": "O que liga Sofonias 1:14 a Amós 5:18?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "passageA": {
+      "ref": "Sofonias 1:14",
+      "text": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso."
+    },
+    "passageB": {
+      "ref": "Amós 5:18",
+      "text": "Ai daqueles que desejam o Dia do Senhor! Para que serve a vocês o Dia do Senhor? Será dia de trevas e não de luz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Poder garante escapar do dia"
+      },
+      {
+        "id": "b",
+        "text": "O dia é só alegria"
+      },
+      {
+        "id": "c",
+        "text": "O dia pode trazer trevas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O Dia do Senhor é amargo",
+    "feedbackCorrect": "Amós corrige quem espera só luz, e Sofonias chama o dia de amargo.",
+    "feedbackWrong": {
+      "a": "Sofonias diz que até o homem poderoso clama naquele dia.",
+      "b": "Os dois textos ligam esse dia a trevas, e não só a alegria."
+    },
+    "hint": "Veja o que Amós diz a quem deseja esse dia.",
+    "learningObjective": "Ligar Sofonias e Amós no aviso sobre o dia.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Amós 5:18"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Sofonias 3:17, o Senhor está longe do povo e apenas observa sem agir.",
+    "prompt": "Em Sofonias 3:17, o Senhor está longe do povo e apenas observa sem agir.",
+    "cue": "Em Sofonias 3:17, o Senhor está longe do povo e apenas observa sem agir.",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor, teu Deus, está no meio de ti",
+    "feedbackCorrect": "O texto coloca o Senhor no meio do povo, poderoso para salvar.",
+    "feedbackWrong": {
+      "true": "Releia o começo de Sofonias 3:17, que mostra onde o Senhor está."
+    },
+    "hint": "Veja onde o texto coloca o Senhor.",
+    "learningObjective": "Observar a presença do Senhor no meio do povo.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Sofonias 3:14, toque quem é chamada a cantar no começo do versículo.",
+    "prompt": "Em Sofonias 3:14, toque quem é chamada a cantar no começo do versículo.",
+    "cue": "Em Sofonias 3:14, toque quem é chamada a cantar no começo do versículo.",
+    "verseRef": "Sofonias 3:14",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "todo o coração"
+      },
+      {
+        "id": "b",
+        "text": "ó Israel"
+      },
+      {
+        "id": "c",
+        "text": "filha de Sião"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Canta, ó filha de Sião",
+    "feedbackCorrect": "O canto começa com o chamado à filha de Sião.",
+    "feedbackWrong": {
+      "a": "Isso diz como alegrar-se, não quem é chamada a cantar.",
+      "b": "Israel é chamado a rejubilar, mas o canto abre com outro nome."
+    },
+    "hint": "Leia as primeiras palavras do versículo.",
+    "learningObjective": "Identificar quem é chamada a cantar.",
+    "evidence": [
+      "Sofonias 3:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Sofonias 3:15, o que o Senhor fez com as sentenças contra o povo?",
+    "prompt": "Segundo Sofonias 3:15, o que o Senhor fez com as sentenças contra o povo?",
+    "cue": "Segundo Sofonias 3:15, o que o Senhor fez com as sentenças contra o povo?",
+    "verseRef": "Sofonias 3:15",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entregou as sentenças ao inimigo"
+      },
+      {
+        "id": "b",
+        "text": "Afastou as sentenças que eram contra o povo"
+      },
+      {
+        "id": "c",
+        "text": "Escondeu as sentenças sem resolvê-las"
+      },
+      {
+        "id": "d",
+        "text": "Aumentou as sentenças contra o povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+    "feedbackCorrect": "Antes do canto, o Senhor remove o que condenava o povo.",
+    "feedbackWrong": {
+      "a": "O texto diz que ele lançou fora o inimigo, não as sentenças a ele.",
+      "c": "O texto diz que ele as afastou, e não que as escondeu.",
+      "d": "O texto usa o verbo oposto sobre as sentenças."
+    },
+    "hint": "Leia o primeiro verbo do versículo.",
+    "learningObjective": "Observar a ação do Senhor pelas sentenças.",
+    "evidence": [
+      "Sofonias 3:15"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Sofonias 3:17 na ordem do texto.",
+    "prompt": "Monte Sofonias 3:17 na ordem do texto.",
+    "cue": "Monte Sofonias 3:17 na ordem do texto.",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor, teu Deus, está no meio de ti"
+      },
+      {
+        "id": "b",
+        "text": "poderoso para salvar-te"
+      },
+      {
+        "id": "c",
+        "text": "Ele se deleitará em ti com alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor, teu Deus, está no meio de ti",
+    "feedbackCorrect": "Presença, poder para salvar e alegria aparecem nessa ordem no versículo.",
+    "feedbackWrong": {
+      "default": "Comece pela presença do Senhor no meio do povo."
+    },
+    "hint": "O versículo começa dizendo onde Deus está.",
+    "learningObjective": "Reconhecer a sequência de Sofonias 3:17.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Sofonias 3:14, como a filha de Jerusalém deve se alegrar e celebrar?",
+    "prompt": "Em Sofonias 3:14, como a filha de Jerusalém deve se alegrar e celebrar?",
+    "cue": "Em Sofonias 3:14, como a filha de Jerusalém deve se alegrar e celebrar?",
+    "verseRef": "Sofonias 3:14",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém!",
+    "template": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e ___ de todo o coração, ó filha de Jerusalém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "duvida"
+      },
+      {
+        "id": "b",
+        "text": "esconde"
+      },
+      {
+        "id": "c",
+        "text": "exulta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Alegra-te e exulta de todo o coração",
+    "feedbackCorrect": "O convite é para uma alegria inteira, de todo o coração.",
+    "feedbackWrong": {
+      "a": "O texto chama para se alegrar, e não para duvidar.",
+      "b": "O texto chama para cantar abertamente, e não para se esconder."
+    },
+    "hint": "Veja o verbo ligado a de todo o coração.",
+    "learningObjective": "Lembrar o convite à alegria em Sofonias 3:14.",
+    "evidence": [
+      "Sofonias 3:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Sofonias 3:15 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 3:15 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 3:15 comunica que se liga a este contexto?",
+    "verseRef": "Sofonias 3:15",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "passageA": {
+      "ref": "Sofonias 3:15",
+      "text": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O povo pode cantar porque Deus removeu o que o condenava."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O medo deve continuar"
+      },
+      {
+        "id": "b",
+        "text": "Deus lançou fora o inimigo"
+      },
+      {
+        "id": "c",
+        "text": "O povo continua condenado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "lançou fora o seu inimigo",
+    "feedbackCorrect": "Sem sentenças e sem inimigo, o povo tem motivo para cantar.",
+    "feedbackWrong": {
+      "a": "No versículo seguinte, o povo ouve para não temer.",
+      "c": "O texto diz que o Senhor afastou as sentenças contra o povo."
+    },
+    "hint": "Veja o que Deus fez com quem acusava.",
+    "learningObjective": "Ligar Sofonias 3:15 ao motivo do canto.",
+    "evidence": [
+      "Sofonias 3:15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Sofonias 3:14-15, o povo canta porque primeiro conseguiu afastar sozinho as próprias sentenças.",
+    "prompt": "Em Sofonias 3:14-15, o povo canta porque primeiro conseguiu afastar sozinho as próprias sentenças.",
+    "cue": "Em Sofonias 3:14-15, o povo canta porque primeiro conseguiu afastar sozinho as próprias sentenças.",
+    "verseRef": "Sofonias 3:14–15",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém! O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+    "feedbackCorrect": "Quem afasta as sentenças é o Senhor, e por isso o povo pode cantar.",
+    "feedbackWrong": {
+      "true": "Releia quem faz a ação em Sofonias 3:15, logo após o convite ao canto."
+    },
+    "hint": "Veja quem age no segundo versículo.",
+    "learningObjective": "Compreender a causa do canto do povo.",
+    "evidence": [
+      "Sofonias 3:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+    "prompt": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+    "cue": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+    "verseRef": "Sofonias 3:15",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "contra você"
+      },
+      {
+        "id": "b",
+        "text": "seu inimigo"
+      },
+      {
+        "id": "c",
+        "text": "no meio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "está no meio de você",
+    "feedbackCorrect": "O Rei não está longe, mas presente no meio do povo.",
+    "feedbackWrong": {
+      "a": "Isso fala das sentenças afastadas, não do lugar do Rei.",
+      "b": "Isso fala de quem foi lançado fora, não do lugar do Rei."
+    },
+    "hint": "Procure a expressão de lugar depois de Rei de Israel.",
+    "learningObjective": "Reconhecer a presença do Senhor no meio.",
+    "evidence": [
+      "Sofonias 3:15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Sofonias 3:16 se relaciona com Sofonias 3:15?",
+    "prompt": "Como Sofonias 3:16 se relaciona com Sofonias 3:15?",
+    "cue": "Como Sofonias 3:16 se relaciona com Sofonias 3:15?",
+    "verseRef": "Sofonias 3:15–16",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum. Naquele dia, se dirá a Jerusalém: Não temas, ó Sião, não se afrouxem os teus braços.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra a resposta ao medo depois da ação de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Troca o Rei de Israel por outro rei"
+      },
+      {
+        "id": "c",
+        "text": "Anula a promessa de Deus estar no meio"
+      },
+      {
+        "id": "d",
+        "text": "Manda o povo temer mais do que antes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Não temas, ó Sião",
+    "feedbackCorrect": "Depois que Deus age e está no meio, o povo ouve para não temer.",
+    "feedbackWrong": {
+      "b": "O Rei continua sendo o Senhor, presente no meio.",
+      "c": "O não temas confirma a presença, e não a anula.",
+      "d": "O texto manda não temer, com os braços firmes."
+    },
+    "hint": "Veja a ordem entre agir de Deus e não temer.",
+    "learningObjective": "Relacionar a ação de Deus com o fim do medo.",
+    "evidence": [
+      "Sofonias 3:15–16"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Sofonias 3:14-15?",
+    "prompt": "Como avança a cena em Sofonias 3:14-15?",
+    "cue": "Como avança a cena em Sofonias 3:14-15?",
+    "verseRef": "Sofonias 3:14–15",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém! O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo é chamado a cantar"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor afasta as sentenças"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor está no meio do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Canta, ó filha de Sião",
+    "feedbackCorrect": "O canto é anunciado, e então o texto mostra o Deus que age e está presente.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado ao canto, no início de 3:14."
+    },
+    "hint": "A presença do Senhor fecha o trecho.",
+    "learningObjective": "Compreender o movimento do canto à presença.",
+    "evidence": [
+      "Sofonias 3:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Sofonias 3:16, o que os braços de Sião não devem fazer?",
+    "prompt": "Em Sofonias 3:16, o que os braços de Sião não devem fazer?",
+    "cue": "Em Sofonias 3:16, o que os braços de Sião não devem fazer?",
+    "verseRef": "Sofonias 3:16",
+    "passageText": "Naquele dia, se dirá a Jerusalém: Não temas, ó Sião, não se afrouxem os teus braços.",
+    "template": "Naquele dia, se dirá a Jerusalém: Não temas, ó Sião, não se ___ os teus braços.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cantar"
+      },
+      {
+        "id": "b",
+        "text": "trabalhar"
+      },
+      {
+        "id": "c",
+        "text": "afrouxem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não se afrouxem os teus braços",
+    "feedbackCorrect": "Braços firmes são a imagem de um povo que não desiste pelo medo.",
+    "feedbackWrong": {
+      "a": "Cantar é o convite de 3:14, não o proibido aqui.",
+      "b": "O texto não proíbe trabalhar, mas perder a firmeza."
+    },
+    "hint": "Leia a segunda parte da frase a Jerusalém.",
+    "learningObjective": "Compreender a imagem dos braços firmes.",
+    "evidence": [
+      "Sofonias 3:16"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Sofonias 3:17 a Isaías 12:6?",
+    "prompt": "O que liga Sofonias 3:17 a Isaías 12:6?",
+    "cue": "O que liga Sofonias 3:17 a Isaías 12:6?",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 3:17",
+      "text": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Isaías 12:6",
+      "text": "Exulta e canta com fervor, ó habitante de Sião, porque grande é o Santo de Israel no meio de ti."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus está longe do povo"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor está no meio"
+      },
+      {
+        "id": "c",
+        "text": "O povo canta sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "está no meio de ti",
+    "feedbackCorrect": "Os dois textos celebram o Senhor presente no meio do seu povo.",
+    "feedbackWrong": {
+      "a": "Os dois textos afirmam a presença de Deus, e não a distância.",
+      "c": "Nos dois, o canto nasce da presença de Deus."
+    },
+    "hint": "Compare a expressão sobre o lugar de Deus.",
+    "learningObjective": "Relacionar a presença de Deus em Sofonias e Isaías.",
+    "evidence": [
+      "Sofonias 3:17",
+      "Isaías 12:6"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Sofonias 3:17 apresenta Deus salvando o povo e também se alegrando sobre ele com júbilo.",
+    "prompt": "Sofonias 3:17 apresenta Deus salvando o povo e também se alegrando sobre ele com júbilo.",
+    "cue": "Sofonias 3:17 apresenta Deus salvando o povo e também se alegrando sobre ele com júbilo.",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "regozijando-se em ti com júbilo",
+    "feedbackCorrect": "O mesmo versículo junta poder para salvar e alegria sobre o povo.",
+    "feedbackWrong": {
+      "false": "Releia o versículo inteiro, do salvar até o júbilo final."
+    },
+    "hint": "Leia o versículo até o fim.",
+    "learningObjective": "Interpretar salvação e alegria juntas em Deus.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Sofonias 3:17, toque o trecho que mostra a alegria de Deus pelo povo.",
+    "prompt": "Em Sofonias 3:17, toque o trecho que mostra a alegria de Deus pelo povo.",
+    "cue": "Em Sofonias 3:17, toque o trecho que mostra a alegria de Deus pelo povo.",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "teu Deus"
+      },
+      {
+        "id": "b",
+        "text": "com alegria"
+      },
+      {
+        "id": "c",
+        "text": "para salvar-te"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele se deleitará em ti com alegria",
+    "feedbackCorrect": "A alegria aqui não é só do povo, mas do próprio Deus por ele.",
+    "feedbackWrong": {
+      "a": "Isso nomeia quem Deus é para o povo, não a sua alegria.",
+      "c": "Isso mostra o poder de Deus, não diretamente a sua alegria."
+    },
+    "hint": "Procure a parte ligada ao deleite de Deus.",
+    "learningObjective": "Sustentar com o texto a alegria de Deus.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Sofonias 3:14-17 sustenta sobre o fim do livro?",
+    "prompt": "Que leitura Sofonias 3:14-17 sustenta sobre o fim do livro?",
+    "cue": "Que leitura Sofonias 3:14-17 sustenta sobre o fim do livro?",
+    "verseRef": "Sofonias 3:14–15",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém! O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus salva de longe, sem se alegrar pelo povo"
+      },
+      {
+        "id": "b",
+        "text": "O juízo anterior torna impossível qualquer canto"
+      },
+      {
+        "id": "c",
+        "text": "Deus está presente, salva e se alegra pelo povo"
+      },
+      {
+        "id": "d",
+        "text": "O povo se salva sozinho e depois convida Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+    "feedbackCorrect": "Presença, salvação e alegria de Deus aparecem juntas no desfecho.",
+    "feedbackWrong": {
+      "a": "O texto o coloca no meio e se deleitando com alegria.",
+      "b": "O canto vem justamente depois que Deus afasta as sentenças.",
+      "d": "Quem afasta sentenças e salva é o Senhor."
+    },
+    "hint": "Junte presença, salvação e alegria.",
+    "learningObjective": "Escolher a interpretação do desfecho de Sofonias.",
+    "evidence": [
+      "Sofonias 3:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Sofonias 3:15-17?",
+    "prompt": "Qual sequência revela o sentido de Sofonias 3:15-17?",
+    "cue": "Qual sequência revela o sentido de Sofonias 3:15-17?",
+    "verseRef": "Sofonias 3:15–16",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum. Naquele dia, se dirá a Jerusalém: Não temas, ó Sião, não se afrouxem os teus braços.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor afasta as sentenças contra o povo"
+      },
+      {
+        "id": "b",
+        "text": "O povo deixa de temer o mal"
+      },
+      {
+        "id": "c",
+        "text": "Deus se alegra sobre o povo restaurado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+    "feedbackCorrect": "Deus age, o medo cai, e a alegria de Deus coroa a restauração.",
+    "feedbackWrong": {
+      "default": "Comece pela ação de Deus contra as sentenças, em 3:15."
+    },
+    "hint": "A alegria de Deus fecha a sequência.",
+    "learningObjective": "Compreender a lógica da restauração em Sofonias 3.",
+    "evidence": [
+      "Sofonias 3:15–16",
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+    "prompt": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+    "cue": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "template": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se ___ em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "afastará"
+      },
+      {
+        "id": "b",
+        "text": "deleitará"
+      },
+      {
+        "id": "c",
+        "text": "temerá"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele se deleitará em ti com alegria",
+    "feedbackCorrect": "Esse verbo mostra que a salvação vem com o prazer de Deus pelo povo.",
+    "feedbackWrong": {
+      "a": "Afastar fala das sentenças em 3:15, não do prazer em 3:17.",
+      "c": "Temer é o que o povo é chamado a não fazer em 3:16."
+    },
+    "hint": "Procure o verbo ligado à alegria de Deus.",
+    "learningObjective": "Lembrar o termo da alegria de Deus pelo povo.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Sofonias 3:17 a Isaías 62:5?",
+    "prompt": "O que liga Sofonias 3:17 a Isaías 62:5?",
+    "cue": "O que liga Sofonias 3:17 a Isaías 62:5?",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 3:17",
+      "text": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Isaías 62:5",
+      "text": "Pois, assim como o jovem desposa a donzela, assim teus filhos se unirão a ti; e, assim como o noivo se alegra com a noiva, assim se alegrará o teu Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se alegra pelo povo"
+      },
+      {
+        "id": "b",
+        "text": "A alegria é só do povo"
+      },
+      {
+        "id": "c",
+        "text": "Deus se alegra sem salvar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ele se deleitará em ti com alegria",
+    "feedbackCorrect": "Nos dois textos, Deus mesmo se alegra sobre o seu povo.",
+    "feedbackWrong": {
+      "b": "Em Sofonias, Deus se regozija, e não apenas o povo.",
+      "c": "Em Sofonias, a alegria vem com o Deus poderoso para salvar."
+    },
+    "hint": "Veja quem se alegra nos dois textos.",
+    "learningObjective": "Ligar a alegria de Deus em Sofonias e Isaías.",
+    "evidence": [
+      "Sofonias 3:17",
+      "Isaías 62:5"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Sofonias 3:19, Deus promete salvar os que estão mancando e reunir os que foram expulsos.",
+    "prompt": "Em Sofonias 3:19, Deus promete salvar os que estão mancando e reunir os que foram expulsos.",
+    "cue": "Em Sofonias 3:19, Deus promete salvar os que estão mancando e reunir os que foram expulsos.",
+    "verseRef": "Sofonias 3:19",
+    "passageText": "Eis que, naquele tempo, enfrentarei todos os que te oprimem; salvarei os que estão mancando e reunirei os que foram expulsos; farei deles um louvor e um nome em toda a terra onde sofreram vergonha.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "salvarei os que estão mancando e reunirei os que foram expulsos",
+    "feedbackCorrect": "A restauração alcança justamente os fracos e os que foram expulsos.",
+    "feedbackWrong": {
+      "false": "Releia o meio de Sofonias 3:19, com salvar e reunir."
+    },
+    "hint": "Veja quem Deus alcança no versículo.",
+    "learningObjective": "Observar quem Deus reúne na restauração.",
+    "evidence": [
+      "Sofonias 3:19"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Sofonias 1:14, toque o trecho que mostra quão perto está o Dia do Senhor.",
+    "prompt": "Em Sofonias 1:14, toque o trecho que mostra quão perto está o Dia do Senhor.",
+    "cue": "Em Sofonias 1:14, toque o trecho que mostra quão perto está o Dia do Senhor.",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Atenção"
+      },
+      {
+        "id": "b",
+        "text": "muito próximo"
+      },
+      {
+        "id": "c",
+        "text": "homem poderoso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "está próximo, muito próximo",
+    "feedbackCorrect": "A repetição mostra que o dia não está longe, mas muito perto.",
+    "feedbackWrong": {
+      "a": "Isso pede atenção, mas não mede a proximidade.",
+      "c": "Isso mostra quem clama, não a proximidade do dia."
+    },
+    "hint": "Procure a repetição sobre a distância.",
+    "learningObjective": "Identificar a proximidade do Dia do Senhor.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Sofonias 3:20, o que Deus fará com o povo no fim?",
+    "prompt": "Segundo Sofonias 3:20, o que Deus fará com o povo no fim?",
+    "cue": "Segundo Sofonias 3:20, o que Deus fará com o povo no fim?",
+    "verseRef": "Sofonias 3:20",
+    "passageText": "Naquele tempo, eu vos farei voltar e vos reunirei; certamente, farei de vós um nome e um louvor entre todos os povos da terra, quando eu mudar a sorte de vossos cativos diante dos vossos olhos, diz o SENHOR.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espalhará o povo para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Deixará os cativos sem mudança"
+      },
+      {
+        "id": "c",
+        "text": "Esconderá a sorte dos cativos"
+      },
+      {
+        "id": "d",
+        "text": "Fará o povo voltar e o reunirá"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "eu vos farei voltar e vos reunirei",
+    "feedbackCorrect": "O fim do livro é reunião e volta, diante dos olhos do povo.",
+    "feedbackWrong": {
+      "a": "O texto fala de reunir, e não de espalhar para sempre.",
+      "b": "O texto promete mudar a sorte dos cativos.",
+      "c": "A mudança será diante dos olhos deles, e não escondida."
+    },
+    "hint": "Leia os primeiros verbos do versículo final.",
+    "learningObjective": "Observar a promessa final de reunião.",
+    "evidence": [
+      "Sofonias 3:20"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Sofonias 1:15 na ordem do texto.",
+    "prompt": "Monte Sofonias 1:15 na ordem do texto.",
+    "cue": "Monte Sofonias 1:15 na ordem do texto.",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aquele dia será um dia de indignação"
+      },
+      {
+        "id": "b",
+        "text": "um dia de angústia e aflição"
+      },
+      {
+        "id": "c",
+        "text": "um dia de nuvens e densas trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele dia será um dia de indignação",
+    "feedbackCorrect": "A lista vai da indignação à angústia e fecha nas densas trevas.",
+    "feedbackWrong": {
+      "default": "Comece pela indignação, que abre o versículo."
+    },
+    "hint": "As trevas fecham o versículo.",
+    "learningObjective": "Reconhecer a sequência de Sofonias 1:15.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Sofonias 1:14, como é descrito o Dia do Senhor?",
+    "prompt": "Em Sofonias 1:14, como é descrito o Dia do Senhor?",
+    "cue": "Em Sofonias 1:14, como é descrito o Dia do Senhor?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "template": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é ___, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "doce"
+      },
+      {
+        "id": "b",
+        "text": "amargo"
+      },
+      {
+        "id": "c",
+        "text": "distante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Dia do Senhor é amargo",
+    "feedbackCorrect": "A palavra mostra que aquele dia trará dor, e não alívio fácil.",
+    "feedbackWrong": {
+      "a": "O texto usa a palavra oposta para esse dia.",
+      "c": "O texto diz que o dia está próximo, e não longe."
+    },
+    "hint": "Veja a palavra depois de Dia do Senhor é.",
+    "learningObjective": "Lembrar a descrição do Dia do Senhor.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Sofonias 3:19 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 3:19 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 3:19 comunica que se liga a este contexto?",
+    "verseRef": "Sofonias 3:19",
+    "passageText": "Eis que, naquele tempo, enfrentarei todos os que te oprimem; salvarei os que estão mancando e reunirei os que foram expulsos; farei deles um louvor e um nome em toda a terra onde sofreram vergonha.",
+    "passageA": {
+      "ref": "Sofonias 3:19",
+      "text": "Eis que, naquele tempo, enfrentarei todos os que te oprimem; salvarei os que estão mancando e reunirei os que foram expulsos; farei deles um louvor e um nome em toda a terra onde sofreram vergonha."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus não deixa de fora os fracos e os expulsos da restauração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus reúne quem foi expulso"
+      },
+      {
+        "id": "b",
+        "text": "Os expulsos ficarão longe"
+      },
+      {
+        "id": "c",
+        "text": "Só os fortes serão reunidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reunirei os que foram expulsos",
+    "feedbackCorrect": "A restauração inclui salvar quem manca e reunir quem foi expulso.",
+    "feedbackWrong": {
+      "b": "O texto promete reunir os expulsos, e não deixá-los longe.",
+      "c": "O texto inclui os que estão mancando, e não só os fortes."
+    },
+    "hint": "Veja quem aparece depois de salvarei.",
+    "learningObjective": "Ligar Sofonias 3:19 à restauração dos fracos.",
+    "evidence": [
+      "Sofonias 3:19"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-07",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Sofonias 3:14, toque quem também é chamada no fim do versículo.",
+    "prompt": "Em Sofonias 3:14, toque quem também é chamada no fim do versículo.",
+    "cue": "Em Sofonias 3:14, toque quem também é chamada no fim do versículo.",
+    "verseRef": "Sofonias 3:14",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rejubila"
+      },
+      {
+        "id": "b",
+        "text": "filha de Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "ó Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ó filha de Jerusalém",
+    "feedbackCorrect": "O versículo fecha chamando a filha de Jerusalém a exultar.",
+    "feedbackWrong": {
+      "a": "Isso diz como se alegrar, não quem é chamada no fim.",
+      "c": "Israel aparece no meio, chamado a rejubilar."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar os nomes do povo chamado a cantar.",
+    "evidence": [
+      "Sofonias 3:14"
+    ]
+  },
+  {
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-08",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Sofonias 3:19 na ordem do texto.",
+    "prompt": "Monte Sofonias 3:19 na ordem do texto.",
+    "cue": "Monte Sofonias 3:19 na ordem do texto.",
+    "verseRef": "Sofonias 3:19",
+    "passageText": "Eis que, naquele tempo, enfrentarei todos os que te oprimem; salvarei os que estão mancando e reunirei os que foram expulsos; farei deles um louvor e um nome em toda a terra onde sofreram vergonha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvarei os que estão mancando"
+      },
+      {
+        "id": "b",
+        "text": "reunirei os que foram expulsos"
+      },
+      {
+        "id": "c",
+        "text": "farei deles um louvor e um nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "salvarei os que estão mancando",
+    "feedbackCorrect": "Salvar, reunir e fazer deles um louvor aparecem nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece por salvar os que estão mancando."
+    },
+    "hint": "O louvor e o nome fecham a promessa.",
+    "learningObjective": "Reconhecer a sequência de Sofonias 3:19.",
+    "evidence": [
+      "Sofonias 3:19"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Sofonias 1 e 3, o canto final acontece porque o povo nunca esteve sob sentenças de Deus.",
+    "prompt": "Em Sofonias 1 e 3, o canto final acontece porque o povo nunca esteve sob sentenças de Deus.",
+    "cue": "Em Sofonias 1 e 3, o canto final acontece porque o povo nunca esteve sob sentenças de Deus.",
+    "verseRef": "Sofonias 3:15",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+    "feedbackCorrect": "Havia sentenças contra o povo, e o Senhor é quem as afasta.",
+    "feedbackWrong": {
+      "true": "Releia Sofonias 3:15, que fala de sentenças afastadas por Deus."
+    },
+    "hint": "Veja o que Deus afasta em 3:15.",
+    "learningObjective": "Compreender que o canto vem após Deus agir.",
+    "evidence": [
+      "Sofonias 3:15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Sofonias 1:14, toque a palavra que mostra a pressa do Dia do Senhor.",
+    "prompt": "Em Sofonias 1:14, toque a palavra que mostra a pressa do Dia do Senhor.",
+    "cue": "Em Sofonias 1:14, toque a palavra que mostra a pressa do Dia do Senhor.",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rapidamente"
+      },
+      {
+        "id": "b",
+        "text": "amargo"
+      },
+      {
+        "id": "c",
+        "text": "Atenção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e se apressa rapidamente",
+    "feedbackCorrect": "Essa palavra mostra que o dia se apressa, e não anda devagar.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve o dia, não a sua pressa.",
+      "c": "Essa palavra pede atenção, mas não indica velocidade."
+    },
+    "hint": "Procure como o dia se move.",
+    "learningObjective": "Reconhecer a urgência no aviso.",
+    "evidence": [
+      "Sofonias 1:14"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Sofonias 3:15 explica o canto de Sofonias 3:14?",
+    "prompt": "Como Sofonias 3:15 explica o canto de Sofonias 3:14?",
+    "cue": "Como Sofonias 3:15 explica o canto de Sofonias 3:14?",
+    "verseRef": "Sofonias 3:14–15",
+    "passageText": "Canta, ó filha de Sião! Rejubila, ó Israel! Alegra-te e exulta de todo o coração, ó filha de Jerusalém! O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo canta porque o Rei saiu do seu meio"
+      },
+      {
+        "id": "b",
+        "text": "O povo canta porque Deus afastou as sentenças"
+      },
+      {
+        "id": "c",
+        "text": "O povo canta porque esqueceu o juízo sem Deus agir"
+      },
+      {
+        "id": "d",
+        "text": "O povo canta porque o inimigo ficou mais forte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor afastou as sentenças que eram contra você",
+    "feedbackCorrect": "O motivo do canto é a ação de Deus que remove a condenação.",
+    "feedbackWrong": {
+      "a": "O texto diz que o Rei está no meio do povo.",
+      "c": "O canto tem causa na ação de Deus, e não em esquecimento.",
+      "d": "O texto diz que Deus lançou fora o inimigo."
+    },
+    "hint": "Procure a ação de Deus entre o canto e a presença.",
+    "learningObjective": "Relacionar o canto à ação salvadora de Deus.",
+    "evidence": [
+      "Sofonias 3:14–15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Sofonias do aviso ao canto?",
+    "prompt": "Como avança Sofonias do aviso ao canto?",
+    "cue": "Como avança Sofonias do aviso ao canto?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia do Senhor é anunciado como próximo"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor afasta as sentenças do povo"
+      },
+      {
+        "id": "c",
+        "text": "O povo é chamado a cantar com alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O grande Dia do Senhor está próximo",
+    "feedbackCorrect": "O livro vai do aviso próximo à ação de Deus e ao canto do povo.",
+    "feedbackWrong": {
+      "default": "Comece pelo anúncio do dia, em Sofonias 1:14."
+    },
+    "hint": "O canto fecha o movimento do livro.",
+    "learningObjective": "Compreender o movimento de Sofonias 1 a 3.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:15",
+      "Sofonias 3:14"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Sofonias 1:15, que palavra abre a lista de descrições daquele dia?",
+    "prompt": "Em Sofonias 1:15, que palavra abre a lista de descrições daquele dia?",
+    "cue": "Em Sofonias 1:15, que palavra abre a lista de descrições daquele dia?",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "template": "Aquele dia será um dia de ___, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "indignação"
+      },
+      {
+        "id": "b",
+        "text": "demora"
+      },
+      {
+        "id": "c",
+        "text": "indiferença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "um dia de indignação",
+    "feedbackCorrect": "Essa palavra abre a lista e dá o tom sério de todo o versículo.",
+    "feedbackWrong": {
+      "b": "O livro fala da pressa do dia, e não de demora.",
+      "c": "O texto mostra seriedade de Deus, e não falta de interesse."
+    },
+    "hint": "É a primeira descrição do dia no versículo.",
+    "learningObjective": "Compreender o tom do retrato de Sofonias 1:15.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Sofonias 1:14 a Joel 2:1?",
+    "prompt": "O que liga Sofonias 1:14 a Joel 2:1?",
+    "cue": "O que liga Sofonias 1:14 a Joel 2:1?",
+    "verseRef": "Sofonias 1:14",
+    "passageText": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso.",
+    "passageA": {
+      "ref": "Sofonias 1:14",
+      "text": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso."
+    },
+    "passageB": {
+      "ref": "Joel 2:1",
+      "text": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia do Senhor se aproxima"
+      },
+      {
+        "id": "b",
+        "text": "Festa sem nenhum juízo"
+      },
+      {
+        "id": "c",
+        "text": "Um dia comum sem aviso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O grande Dia do Senhor está próximo",
+    "feedbackCorrect": "Os dois profetas anunciam a chegada próxima do dia do Senhor.",
+    "feedbackWrong": {
+      "b": "Os dois ligam esse dia a juízo, e não só a festa.",
+      "c": "Os dois textos soam um alerta solene ao povo."
+    },
+    "hint": "Compare a chegada anunciada nos dois.",
+    "learningObjective": "Relacionar Sofonias e Joel no mesmo aviso.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-07",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+    "prompt": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+    "cue": "Em Sofonias 3:15, toque o trecho que mostra onde o Senhor Rei está.",
+    "verseRef": "Sofonias 3:15",
+    "passageText": "O Senhor afastou as sentenças que eram contra você e lançou fora o seu inimigo. O Senhor, o Rei de Israel, está no meio de você; você não verá mais mal algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "contra você"
+      },
+      {
+        "id": "b",
+        "text": "está no meio"
+      },
+      {
+        "id": "c",
+        "text": "seu inimigo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "está no meio de você",
+    "feedbackCorrect": "O Rei está presente no meio, e não distante do povo restaurado.",
+    "feedbackWrong": {
+      "a": "Isso fala das sentenças afastadas, não do lugar do Rei.",
+      "c": "Isso fala de quem foi lançado fora, não do lugar do Rei."
+    },
+    "hint": "Procure a expressão de lugar do Rei.",
+    "learningObjective": "Reconhecer a presença do Rei no meio.",
+    "evidence": [
+      "Sofonias 3:15"
+    ]
+  },
+  {
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-08",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos em Sofonias 3:19-20?",
+    "prompt": "Como se encadeiam os passos em Sofonias 3:19-20?",
+    "cue": "Como se encadeiam os passos em Sofonias 3:19-20?",
+    "verseRef": "Sofonias 3:19–20",
+    "passageText": "Eis que, naquele tempo, enfrentarei todos os que te oprimem; salvarei os que estão mancando e reunirei os que foram expulsos; farei deles um louvor e um nome em toda a terra onde sofreram vergonha. Naquele tempo, eu vos farei voltar e vos reunirei; certamente, farei de vós um nome e um louvor entre todos os povos da terra, quando eu mudar a sorte de vossos cativos diante dos vossos olhos, diz o SENHOR.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus enfrenta quem oprime o povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus salva e reúne os dispersos"
+      },
+      {
+        "id": "c",
+        "text": "Deus faz do povo um louvor entre povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "enfrentarei todos os que te oprimem",
+    "feedbackCorrect": "Deus enfrenta opressores, reúne dispersos e levanta o nome do povo.",
+    "feedbackWrong": {
+      "default": "Comece por Deus enfrentando os opressores, em 3:19."
+    },
+    "hint": "O louvor entre os povos fecha o livro.",
+    "learningObjective": "Compreender o encadeamento da restauração final.",
+    "evidence": [
+      "Sofonias 3:19–20"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-01",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Sofonias termina mostrando Deus reunindo os expulsos e se alegrando no meio do povo restaurado.",
+    "prompt": "Sofonias termina mostrando Deus reunindo os expulsos e se alegrando no meio do povo restaurado.",
+    "cue": "Sofonias termina mostrando Deus reunindo os expulsos e se alegrando no meio do povo restaurado.",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Ele se deleitará em ti com alegria",
+    "feedbackCorrect": "O desfecho junta reunião dos dispersos e alegria de Deus no meio.",
+    "feedbackWrong": {
+      "false": "Releia Sofonias 3:17 e 3:19, com alegria e reunião."
+    },
+    "hint": "Junte o meio do povo com os expulsos.",
+    "learningObjective": "Interpretar o desfecho completo de Sofonias.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-02",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Sofonias 1:15, toque o trecho que mostra a escuridão daquele dia.",
+    "prompt": "Em Sofonias 1:15, toque o trecho que mostra a escuridão daquele dia.",
+    "cue": "Em Sofonias 1:15, toque o trecho que mostra a escuridão daquele dia.",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alvoroço e desolação"
+      },
+      {
+        "id": "b",
+        "text": "angústia e aflição"
+      },
+      {
+        "id": "c",
+        "text": "densas trevas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "um dia de nuvens e densas trevas",
+    "feedbackCorrect": "As palavras finais do versículo pintam o dia com escuridão densa.",
+    "feedbackWrong": {
+      "a": "Isso nomeia a confusão do dia, não a sua escuridão.",
+      "b": "Isso nomeia a dor do dia, não a sua escuridão."
+    },
+    "hint": "Procure o fim da lista do versículo.",
+    "learningObjective": "Sustentar a escuridão do dia com o texto.",
+    "evidence": [
+      "Sofonias 1:15"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-03",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura de Sofonias inteiro o texto sustenta?",
+    "prompt": "Que leitura de Sofonias inteiro o texto sustenta?",
+    "cue": "Que leitura de Sofonias inteiro o texto sustenta?",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só há juízo, sem nenhuma restauração no fim"
+      },
+      {
+        "id": "b",
+        "text": "Há juízo anunciado e restauração com Deus presente"
+      },
+      {
+        "id": "c",
+        "text": "Há restauração apenas para os fortes do povo"
+      },
+      {
+        "id": "d",
+        "text": "Só há alegria, sem aviso sério no começo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "poderoso para salvar-te",
+    "feedbackCorrect": "Sofonias segura o aviso de 1 e a presença salvadora de 3 juntos.",
+    "feedbackWrong": {
+      "a": "O livro termina com Deus reunindo e se alegrando pelo povo.",
+      "c": "Deus salva os que mancam e reúne os expulsos.",
+      "d": "O livro começa com o dia amargo, próximo e de trevas."
+    },
+    "hint": "Não apague nem o começo nem o fim.",
+    "learningObjective": "Escolher a leitura que respeita o livro inteiro.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-04",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Sofonias como um todo?",
+    "prompt": "Qual sequência revela o sentido de Sofonias como um todo?",
+    "cue": "Qual sequência revela o sentido de Sofonias como um todo?",
+    "verseRef": "Sofonias 1:15",
+    "passageText": "Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia de trevas é anunciado ao povo"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor afasta as sentenças contra o povo"
+      },
+      {
+        "id": "c",
+        "text": "Deus se alegra sobre o povo reunido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "um dia de escuridade e negrume",
+    "feedbackCorrect": "Trevas anunciadas, sentenças afastadas e alegria de Deus formam o arco.",
+    "feedbackWrong": {
+      "default": "Comece pelas trevas de Sofonias 1 e termine na alegria de 3."
+    },
+    "hint": "A alegria de Deus fecha o arco do livro.",
+    "learningObjective": "Ver o arco completo de Sofonias.",
+    "evidence": [
+      "Sofonias 1:15",
+      "Sofonias 3:15",
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-05",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+    "prompt": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+    "cue": "Em Sofonias 3:17, que verbo mostra o prazer de Deus no seu povo?",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "template": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se ___ em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "temerá"
+      },
+      {
+        "id": "b",
+        "text": "deleitará"
+      },
+      {
+        "id": "c",
+        "text": "afastará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele se deleitará em ti com alegria",
+    "feedbackCorrect": "Esse verbo mostra Deus salvando com prazer pelo povo restaurado.",
+    "feedbackWrong": {
+      "a": "Temer é o que o povo ouve para não fazer em 3:16.",
+      "c": "Afastar fala das sentenças em 3:15, não do prazer aqui."
+    },
+    "hint": "Procure o verbo ligado à alegria dele.",
+    "learningObjective": "Lembrar o termo da alegria de Deus.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-06",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Sofonias 3:17 a Isaías 62:5?",
+    "prompt": "O que liga Sofonias 3:17 a Isaías 62:5?",
+    "cue": "O que liga Sofonias 3:17 a Isaías 62:5?",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 3:17",
+      "text": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Isaías 62:5",
+      "text": "Pois, assim como o jovem desposa a donzela, assim teus filhos se unirão a ti; e, assim como o noivo se alegra com a noiva, assim se alegrará o teu Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se alegra sem salvar"
+      },
+      {
+        "id": "b",
+        "text": "Deus se alegra pelo povo"
+      },
+      {
+        "id": "c",
+        "text": "A alegria é só do povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ele se deleitará em ti com alegria",
+    "feedbackCorrect": "Nos dois textos, Deus mesmo se alegra sobre o seu povo.",
+    "feedbackWrong": {
+      "a": "Em Sofonias, ele é poderoso para salvar enquanto se alegra.",
+      "c": "Em Sofonias, Deus se regozija, e não apenas o povo."
+    },
+    "hint": "Veja quem se alegra nos dois textos.",
+    "learningObjective": "Ligar a alegria de Deus em Sofonias e Isaías.",
+    "evidence": [
+      "Sofonias 3:17",
+      "Isaías 62:5"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-07",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Sofonias 3:17, toque o trecho final que mostra a celebração de Deus.",
+    "prompt": "Em Sofonias 3:17, toque o trecho final que mostra a celebração de Deus.",
+    "cue": "Em Sofonias 3:17, toque o trecho final que mostra a celebração de Deus.",
+    "verseRef": "Sofonias 3:17",
+    "passageText": "O Senhor, teu Deus, está no meio de ti, poderoso para salvar-te; Ele se deleitará em ti com alegria; renovará o seu amor, regozijando-se em ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para salvar-te"
+      },
+      {
+        "id": "b",
+        "text": "com júbilo"
+      },
+      {
+        "id": "c",
+        "text": "teu Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "regozijando-se em ti com júbilo",
+    "feedbackCorrect": "O versículo termina com Deus se regozijando sobre o povo.",
+    "feedbackWrong": {
+      "a": "Isso mostra onde Deus está, não como ele celebra.",
+      "c": "Isso nomeia quem Deus é, não a celebração final."
+    },
+    "hint": "Procure as últimas palavras do versículo.",
+    "learningObjective": "Sustentar a celebração de Deus com o texto.",
+    "evidence": [
+      "Sofonias 3:17"
+    ]
+  },
+  {
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-08",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o cuidado de Deus que termina em Sofonias 3:20?",
+    "prompt": "Qual sequência revela o cuidado de Deus que termina em Sofonias 3:20?",
+    "cue": "Qual sequência revela o cuidado de Deus que termina em Sofonias 3:20?",
+    "verseRef": "Sofonias 3:20",
+    "passageText": "Naquele tempo, eu vos farei voltar e vos reunirei; certamente, farei de vós um nome e um louvor entre todos os povos da terra, quando eu mudar a sorte de vossos cativos diante dos vossos olhos, diz o SENHOR.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus faz o povo voltar de onde estava"
+      },
+      {
+        "id": "b",
+        "text": "Deus reúne o povo disperso"
+      },
+      {
+        "id": "c",
+        "text": "Deus muda a sorte dos cativos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eu vos farei voltar e vos reunirei",
+    "feedbackCorrect": "Voltar, reunir e ver a sorte mudada fecham a promessa do livro.",
+    "feedbackWrong": {
+      "default": "Comece por fazer voltar, no início de Sofonias 3:20."
+    },
+    "hint": "A sorte mudada fecha o versículo e o livro.",
+    "learningObjective": "Ver o cuidado final de Deus em Sofonias 3:20.",
+    "evidence": [
+      "Sofonias 3:20"
+    ]
+  }
+]

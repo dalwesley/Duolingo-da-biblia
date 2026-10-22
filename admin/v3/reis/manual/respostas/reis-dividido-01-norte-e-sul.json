@@ -1,0 +1,320 @@
+{
+ "study": {
+  "passageRef": "1 Reis 12:16–20",
+  "passages": [{"ref": "1 Reis 12:16–20"}, {"ref": "1 Reis 12:4–8"}, {"ref": "1 Reis 12:21–24"}],
+  "context": "Salomão morreu e o povo pede a Roboão alívio do jugo pesado. Roboão ouve dois conselhos opostos em Siquém. A resposta dele parte Israel em dois reinos, o norte com Jeroboão e Judá com a casa de Davi.",
+  "keyword": "Jugo",
+  "keywordGloss": "Imagem do peso do governo de Salomão sobre o povo, que pede alívio a Roboão.",
+  "focusQuestion": "Quando você recebe um conselho que custa o seu orgulho, o que costuma pesar mais na sua decisão?",
+  "reflectionPrompts": ["Ouvir antes de decidir", "Servir em vez de pesar", "Deus governa a história"],
+  "facts": [
+   {"text": "O povo pede a Roboão que alivie a dura servidão imposta por Salomão.", "evidenceRef": "1 Reis 12:4", "evidenceSpan": "alivia a dura servidão que ele nos impôs"},
+   {"text": "Os anciãos aconselham Roboão a servir ao povo e falar boas palavras.", "evidenceRef": "1 Reis 12:7", "evidenceSpan": "lhes falares boas palavras, eles se tornarão teus servos para sempre"},
+   {"text": "O povo rompe com a casa de Davi ao ver que o rei não lhe dava ouvidos.", "evidenceRef": "1 Reis 12:16", "evidenceSpan": "Que parte temos nós com Davi"},
+   {"text": "Somente a tribo de Judá permanece fiel à casa de Davi.", "evidenceRef": "1 Reis 12:20", "evidenceSpan": "somente a tribo de Judá permaneceu fiel à casa de Davi"},
+   {"text": "Deus manda Roboão não subir para pelejar contra os irmãos de Israel.", "evidenceRef": "1 Reis 12:24", "evidenceSpan": "Não subam nem pelejem contra seus irmãos"}
+  ],
+  "keyTerms": [
+   {"term": "jugo", "gloss": "Peso do governo sobre o povo, imagem da servidão imposta por Salomão."},
+   {"term": "conselho", "gloss": "Orientação ouvida por Roboão, dos anciãos e depois dos jovens."},
+   {"term": "herança", "gloss": "Parte do povo em Davi, que Israel declara não ter mais ao romper."}
+  ],
+  "structure": [
+   {"label": "O povo pede alívio do jugo", "evidenceRef": "1 Reis 12:4"},
+   {"label": "Anciãos aconselham servir ao povo", "evidenceRef": "1 Reis 12:7"},
+   {"label": "Roboão responde com dureza", "evidenceRef": "1 Reis 12:14"},
+   {"label": "O povo rompe com Davi", "evidenceRef": "1 Reis 12:16"}
+  ],
+  "relations": [
+   {"kind": "contraste", "text": "Roboão despreza o conselho dos anciãos e prefere ouvir os jovens que cresceram com ele.", "marker": "porém", "evidenceRef": "1 Reis 12:8"},
+   {"kind": "causa", "text": "A recusa do rei acontece dentro de um agir do Senhor para confirmar sua palavra a Jeroboão.", "marker": "pois", "evidenceRef": "1 Reis 12:15"},
+   {"kind": "resultado", "text": "Diante da recusa do rei, Israel se vai às suas tendas e rompe com a casa de Davi.", "marker": "Então", "evidenceRef": "1 Reis 12:16"}
+  ],
+  "crossRefs": [
+   {"ref": "Ezequiel 37:22", "bridge": "Deus promete um só reino"},
+   {"ref": "Salmos 133:1", "bridge": "Irmãos unidos em um povo"}
+  ],
+  "misreadings": [
+   {"text": "A divisão foi culpa apenas dos jovens conselheiros de Roboão.", "why": "O texto diz que Roboão desprezou o conselho dos anciãos, a escolha dura foi dele."},
+   {"text": "Deus perdeu o controle da história quando o reino se partiu.", "why": "O texto afirma que o acontecimento vinha do Senhor e depois Deus manda não pelejar."},
+   {"text": "Todas as tribos abandonaram a casa de Davi do mesmo modo.", "why": "Somente Judá permaneceu fiel à casa de Davi, e Roboão reinou sobre Judá."}
+  ],
+  "centralInsight": "Reinar é servir, quem pesa o jugo divide o povo",
+  "anchorQuestion": "Que conselho os anciãos deram a Roboão em Siquém?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente", "type": "true_false",
+   "question": "Em 1 Reis 12:7, os anciãos aconselham Roboão a servir ao povo e falar boas palavras para ser servido para sempre.",
+   "verseRef": "1 Reis 12:7", "correctOptionId": "true",
+   "evidenceSpan": "eles se tornarão teus servos para sempre",
+   "feedbackCorrect": "O conselho é servir primeiro, quem serve ao povo é servido por ele para sempre.",
+   "feedbackWrong": {"false": "Releia 12:7, os anciãos ligam servir ao povo a ser servido para sempre."},
+   "hint": "Veja a condição e a promessa dos anciãos.",
+   "learningObjective": "Observar o conselho dos anciãos a Roboão.",
+   "evidence": ["1 Reis 12:7"]
+  },
+  {
+   "difficulty": "semente", "type": "find_in_text",
+   "question": "Em 1 Reis 12:16, toque como o povo se refere a Davi ao romper com ele.",
+   "verseRef": "1 Reis 12:16",
+   "options": [{"id": "a", "text": "filho de Jessé"}, {"id": "b", "text": "Davi"}, {"id": "c", "text": "Israel"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não há herança para nós no filho de Jessé",
+   "feedbackCorrect": "O povo chama Davi de filho de Jessé ao declarar que não tem herança nele.",
+   "feedbackWrong": {"b": "Davi é o nome citado antes, a forma pedida vem na frase da herança.", "c": "Israel é o povo que está falando, não o nome dado a Davi aqui."},
+   "hint": "Leia a frase sobre a herança do povo.",
+   "learningObjective": "Identificar a fala de ruptura do povo em Siquém.",
+   "evidence": ["1 Reis 12:16"]
+  },
+  {
+   "difficulty": "semente", "type": "choice",
+   "question": "Segundo 1 Reis 12:16, o que Israel faz ao ver que o rei não lhe dava ouvidos?",
+   "verseRef": "1 Reis 12:16",
+   "options": [
+    {"id": "a", "text": "Vai às suas tendas e deixa Davi"},
+    {"id": "b", "text": "Pede mais três dias de prazo"},
+    {"id": "c", "text": "Aceita o jugo ainda mais pesado"},
+    {"id": "d", "text": "Coroa Roboão rei em Siquém"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, Israel se foi às suas tendas",
+   "feedbackCorrect": "A resposta do povo é romper, Israel se vai às suas tendas e deixa a casa de Davi.",
+   "feedbackWrong": {"b": "O prazo de três dias já passou, agora o povo reage à resposta dura.", "c": "O povo rejeita justamente o jugo mais pesado prometido por Roboão.", "d": "Quem é proclamado rei no norte é Jeroboão, não Roboão."},
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a reação de Israel à recusa de Roboão.",
+   "evidence": ["1 Reis 12:16"]
+  },
+  {
+   "difficulty": "semente", "type": "order",
+   "question": "Monte 1 Reis 12:16 na ordem do texto.",
+   "verseRef": "1 Reis 12:16",
+   "options": [
+    {"id": "a", "text": "Que parte temos nós com Davi"},
+    {"id": "b", "text": "Não há herança para nós no filho de Jessé"},
+    {"id": "c", "text": "Às vossas tendas, ó Israel"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Que parte temos nós com Davi",
+   "feedbackCorrect": "A fala de ruptura vem nesta ordem, sem parte com Davi, sem herança e às tendas.",
+   "feedbackWrong": {"default": "Comece pela pergunta sobre a parte com Davi, as tendas fecham a fala."},
+   "hint": "A fala começa com uma pergunta do povo.",
+   "learningObjective": "Reconhecer a sequência da ruptura em 1 Reis 12:16.",
+   "evidence": ["1 Reis 12:16"]
+  },
+  {
+   "difficulty": "semente", "type": "complete",
+   "question": "Em 1 Reis 12:4, além do fardo, que imagem o povo usa para a servidão de Salomão?",
+   "verseRef": "1 Reis 12:4",
+   "options": [{"id": "a", "text": "jugo"}, {"id": "b", "text": "fardo"}, {"id": "c", "text": "povo"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "o pesado jugo que nos impôs",
+   "feedbackCorrect": "O povo chama a servidão de jugo pesado e pede que Roboão o alivie.",
+   "feedbackWrong": {"b": "Fardo é a primeira imagem do versículo, a segunda é a pedida aqui.", "c": "Povo é quem está falando com o rei, não a imagem da servidão."},
+   "hint": "Veja a segunda imagem usada pelo povo.",
+   "learningObjective": "Lembrar a imagem do peso sobre o povo.",
+   "evidence": ["1 Reis 12:4"]
+  },
+  {
+   "difficulty": "semente", "type": "connect",
+   "question": "O que 1 Reis 12:20 comunica que se liga a este contexto?",
+   "verseRef": "1 Reis 12:20",
+   "passageA": {"ref": "1 Reis 12:20"},
+   "passageB": {"ref": "Contexto", "text": "Dez tribos seguem Jeroboão e rompem com a casa de Davi."},
+   "options": [
+    {"id": "a", "text": "Só Judá permanece com Davi"},
+    {"id": "b", "text": "Todas tribos ficam com Roboão"},
+    {"id": "c", "text": "Benjamim lidera o norte rebelde"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente a tribo de Judá permaneceu fiel à casa de Davi",
+   "feedbackCorrect": "No meio da ruptura geral, somente Judá permanece fiel à casa de Davi.",
+   "feedbackWrong": {"b": "Todo Israel segue Jeroboão, só Judá fica com a casa de Davi.", "c": "Benjamim aparece com Judá ao lado de Roboão, não liderando o norte."},
+   "hint": "Veja a exceção no fim do versículo.",
+   "learningObjective": "Ligar a proclamação de Jeroboão à fidelidade de Judá.",
+   "evidence": ["1 Reis 12:20"]
+  },
+  {
+   "difficulty": "caminhada", "type": "true_false",
+   "question": "Em 1 Reis 12:15, a recusa de Roboão acontece dentro de um agir do Senhor para confirmar a palavra dita a Jeroboão.",
+   "verseRef": "1 Reis 12:15", "correctOptionId": "true",
+   "evidenceSpan": "esse acontecimento vinha do Senhor",
+   "feedbackCorrect": "Mesmo na dureza de Roboão, o texto vê a mão do Senhor confirmando sua palavra anterior.",
+   "feedbackWrong": {"false": "Releia 12:15, o acontecimento vinha do Senhor para confirmar sua palavra."},
+   "hint": "Veja de onde o texto diz que vinha o acontecimento.",
+   "learningObjective": "Compreender o governo de Deus sobre a divisão do reino.",
+   "evidence": ["1 Reis 12:15"]
+  },
+  {
+   "difficulty": "caminhada", "type": "find_in_text",
+   "question": "Em 1 Reis 12:8, toque a palavra que marca o contraste com o conselho dos anciãos.",
+   "verseRef": "1 Reis 12:8",
+   "options": [{"id": "a", "text": "porém"}, {"id": "b", "text": "desprezou"}, {"id": "c", "text": "jovens"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele, porém, desprezou o conselho que os anciãos lhe haviam dado",
+   "feedbackCorrect": "A palavra marca a virada, em vez de ouvir os anciãos Roboão os despreza.",
+   "feedbackWrong": {"b": "Desprezar é a ação de Roboão, a marca do contraste vem antes dela.", "c": "Os jovens são o novo conselho ouvido, não a marca da virada."},
+   "hint": "Procure uma palavra curta entre vírgulas.",
+   "learningObjective": "Reconhecer o marcador de contraste em 1 Reis 12:8.",
+   "evidence": ["1 Reis 12:8"]
+  },
+  {
+   "difficulty": "caminhada", "type": "choice",
+   "question": "Como 1 Reis 12:8 se relaciona com o conselho de 1 Reis 12:7?",
+   "verseRef": "1 Reis 12:7–8",
+   "options": [
+    {"id": "a", "text": "Roboão rejeita o conselho de servir ao povo"},
+    {"id": "b", "text": "Roboão segue os anciãos e alivia o jugo"},
+    {"id": "c", "text": "Os anciãos pedem castigo maior ao povo"},
+    {"id": "d", "text": "Os jovens mandam ouvir os anciãos antigos"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele, porém, desprezou o conselho que os anciãos lhe haviam dado",
+   "feedbackCorrect": "O porém marca a rejeição, Roboão deixa o conselho de servir e ouve os jovens.",
+   "feedbackWrong": {"b": "Ele faz o contrário, despreza os anciãos e aumenta o jugo prometido.", "c": "Castigo maior é ideia dos jovens, os anciãos pediram boas palavras.", "d": "Os jovens puxam Roboão para longe do conselho dos anciãos."},
+   "hint": "Compare quem Roboão ouve em cada versículo.",
+   "learningObjective": "Relacionar o conselho rejeitado à resposta de Roboão.",
+   "evidence": ["1 Reis 12:7–8"]
+  },
+  {
+   "difficulty": "caminhada", "type": "order",
+   "question": "Como avança a cena em 1 Reis 12:13–14?",
+   "verseRef": "1 Reis 12:13–14",
+   "options": [
+    {"id": "a", "text": "O rei despreza o conselho dos anciãos"},
+    {"id": "b", "text": "O rei responde de maneira severa"},
+    {"id": "c", "text": "O jugo prometido fica mais pesado"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "O rei respondeu ao povo de maneira severa",
+   "feedbackCorrect": "O rei despreza os anciãos, responde com severidade e promete um jugo mais pesado.",
+   "feedbackWrong": {"default": "Comece pelo conselho desprezado, o jugo mais pesado fecha a fala."},
+   "hint": "O conselho desprezado abre a sequência.",
+   "learningObjective": "Compreender o movimento da resposta severa de Roboão.",
+   "evidence": ["1 Reis 12:13–14"]
+  },
+  {
+   "difficulty": "caminhada", "type": "complete",
+   "question": "Em 1 Reis 12:15, de quem o texto diz que vinha aquele acontecimento?",
+   "verseRef": "1 Reis 12:15",
+   "options": [{"id": "a", "text": "Senhor"}, {"id": "b", "text": "povo"}, {"id": "c", "text": "rei"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "esse acontecimento vinha do Senhor",
+   "feedbackCorrect": "O texto atribui o acontecimento ao Senhor, cumprindo a palavra dita a Jeroboão.",
+   "feedbackWrong": {"b": "O povo é quem reage ao rei, a origem apontada pelo texto é outra.", "c": "O rei não atendeu ao povo, mas o acontecimento vinha de Deus segundo o texto."},
+   "hint": "Veja quem confirma a palavra anterior.",
+   "learningObjective": "Compreender que Deus governa até a divisão do reino.",
+   "evidence": ["1 Reis 12:15"]
+  },
+  {
+   "difficulty": "caminhada", "type": "connect",
+   "question": "O que liga 1 Reis 12:16 a Ezequiel 37:22?",
+   "verseRef": "1 Reis 12:16",
+   "passageA": {"ref": "1 Reis 12:16"},
+   "passageB": {"ref": "Ezequiel 37:22"},
+   "options": [
+    {"id": "a", "text": "Deus promete um só reino"},
+    {"id": "b", "text": "Divisão é plano final de Deus"},
+    {"id": "c", "text": "Tribos nunca serão reunidas"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Que parte temos nós com Davi",
+   "feedbackCorrect": "Onde o povo rompe em dois, Ezequiel ouve de Deus a promessa de um só reino de novo.",
+   "feedbackWrong": {"b": "A divisão é juízo e dor na história, Deus promete reunir o povo depois.", "c": "Ezequiel promete justamente o contrário, um só rei para todos."},
+   "hint": "Veja o que Deus promete fazer com os reinos.",
+   "learningObjective": "Relacionar a divisão do reino à promessa de reunião.",
+   "evidence": ["1 Reis 12:16", "Ezequiel 37:22"]
+  },
+  {
+   "difficulty": "profundezas", "type": "true_false",
+   "question": "Em 1 Reis 12:24, Deus manda Roboão reconquistar o reino do norte pela guerra para manter Israel unido.",
+   "verseRef": "1 Reis 12:24", "correctOptionId": "false",
+   "evidenceSpan": "Não subam nem pelejem contra seus irmãos",
+   "feedbackCorrect": "Deus faz o contrário, manda cada um voltar para casa e não pelejar contra os irmãos.",
+   "feedbackWrong": {"true": "Releia 12:24, a ordem é não subir nem pelejar contra os irmãos."},
+   "hint": "Veja a ordem que Deus dá aos soldados.",
+   "learningObjective": "Interpretar a palavra de Deus que impede a guerra civil.",
+   "evidence": ["1 Reis 12:24"]
+  },
+  {
+   "difficulty": "profundezas", "type": "find_in_text",
+   "question": "Em 1 Reis 12:24, toque o trecho que mostra o povo obedecendo à palavra do Senhor.",
+   "verseRef": "1 Reis 12:24",
+   "options": [{"id": "a", "text": "obedecendo à palavra"}, {"id": "b", "text": "voltaram"}, {"id": "c", "text": "casa"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "obedecendo à palavra do Senhor, voltaram",
+   "feedbackCorrect": "O exército volta para casa obedecendo à palavra do Senhor dada por Semaías.",
+   "feedbackWrong": {"b": "Voltar é o movimento feito, a obediência à palavra vem expressa antes.", "c": "Casa é o destino de cada soldado, não a atitude de obediência."},
+   "hint": "Procure a atitude antes do movimento de voltar.",
+   "learningObjective": "Sustentar com o texto a obediência à palavra de Deus.",
+   "evidence": ["1 Reis 12:24"]
+  },
+  {
+   "difficulty": "profundezas", "type": "choice",
+   "question": "Que leitura 1 Reis 12:24 sustenta sobre o governo de Deus?",
+   "verseRef": "1 Reis 12:24",
+   "options": [
+    {"id": "a", "text": "Deus impede uma guerra entre irmãos"},
+    {"id": "b", "text": "Deus manda reconquistar o norte à força"},
+    {"id": "c", "text": "Roboão desiste por medo do exército"},
+    {"id": "d", "text": "Semaías apoia um ataque imediato"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não subam nem pelejem contra seus irmãos",
+   "feedbackCorrect": "Deus assume a divisão como obra sua e barra a guerra de Roboão contra os irmãos.",
+   "feedbackWrong": {"b": "A ordem é justamente não subir nem pelejar contra Israel.", "c": "O texto liga a volta à obediência à palavra, não ao medo de Roboão.", "d": "Semaías traz a ordem de voltar para casa, não de atacar."},
+   "hint": "Veja quem Deus chama de irmãos no versículo.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta sobre Deus.",
+   "evidence": ["1 Reis 12:24"]
+  },
+  {
+   "difficulty": "profundezas", "type": "order",
+   "question": "Qual sequência revela o agir de Deus na divisão do reino?",
+   "verseRef": "1 Reis 12:15",
+   "options": [
+    {"id": "a", "text": "Roboão não atende ao povo"},
+    {"id": "b", "text": "A palavra do Senhor se confirma"},
+    {"id": "c", "text": "Deus manda não guerrear irmãos"}
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "esse acontecimento vinha do Senhor",
+   "feedbackCorrect": "A recusa do rei confirma a palavra anterior e Deus então barra a guerra entre irmãos.",
+   "feedbackWrong": {"default": "Comece pela recusa de Roboão, a ordem de não guerrear fecha a sequência."},
+   "hint": "Siga a ordem dos capítulos, recusa, palavra e ordem.",
+   "learningObjective": "Ver o governo de Deus antes e depois da divisão.",
+   "evidence": ["1 Reis 12:15", "1 Reis 12:24"]
+  },
+  {
+   "difficulty": "profundezas", "type": "complete",
+   "question": "Em 1 Reis 12:20, qual tribo permaneceu fiel à casa de Davi?",
+   "verseRef": "1 Reis 12:20",
+   "options": [{"id": "a", "text": "Judá"}, {"id": "b", "text": "Israel"}, {"id": "c", "text": "Davi"}],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente a tribo de Judá permaneceu fiel à casa de Davi",
+   "feedbackCorrect": "Somente Judá permanece com a casa de Davi quando Israel segue Jeroboão.",
+   "feedbackWrong": {"b": "Israel é o conjunto que segue Jeroboão, a exceção é outra tribo.", "c": "Davi é a casa servida pela tribo fiel, não o nome da tribo."},
+   "hint": "Veja a exceção no fim do versículo.",
+   "learningObjective": "Lembrar quem permaneceu fiel à casa de Davi.",
+   "evidence": ["1 Reis 12:20"]
+  },
+  {
+   "difficulty": "profundezas", "type": "connect",
+   "question": "O que liga 1 Reis 12:20 a Salmos 133:1?",
+   "verseRef": "1 Reis 12:20",
+   "passageA": {"ref": "1 Reis 12:20"},
+   "passageB": {"ref": "Salmos 133:1"},
+   "options": [
+    {"id": "a", "text": "Irmãos unidos são uma bênção"},
+    {"id": "b", "text": "Divisão é sempre uma bênção"},
+    {"id": "c", "text": "Unidade dispensa ouvir a Deus"}
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "somente a tribo de Judá permaneceu fiel à casa de Davi",
+   "feedbackCorrect": "Contra o pano de fundo da divisão, o Salmo celebra irmãos vivendo unidos como bênção.",
+   "feedbackWrong": {"b": "A divisão parte o povo de Deus, o Salmo chama de bom o contrário dela.", "c": "A unidade celebrada nasce de ouvir a Deus juntos, não de dispensá-lo."},
+   "hint": "Veja o que o Salmo chama de bom e agradável.",
+   "learningObjective": "Ligar a divisão do reino ao valor da unidade do povo.",
+   "evidence": ["1 Reis 12:20", "Salmos 133:1"]
+  }
+ ]
+}

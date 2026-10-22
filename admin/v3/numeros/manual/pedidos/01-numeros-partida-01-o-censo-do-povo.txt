@@ -1,0 +1,84 @@
+Escreva a cena "numeros-partida-01-o-censo-do-povo" da trilha "numeros" (Números).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "numeros",
+  "title": "Números",
+  "description": "No deserto: censo, murmuração, serpente e a porta da terra.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Partida",
+ "mission": {
+  "slug": "numeros-partida-01-o-censo-do-povo",
+  "title": "O censo do povo",
+  "type": "lesson",
+  "intro": "Organização das tribos em marcha.",
+  "hookRef": "Números 9:15–23",
+  "hookNote": "Organização das tribos em marcha.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre censo?"
+ },
+ "v2": {
+  "passageRef": "Números 9:15–23",
+  "context": "Organização das tribos em marcha.",
+  "keyword": "Censo",
+  "verseRefs": [
+   "Números 1:2–3"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Números 9:15–23",
+  "Números 1:2–3"
+ ],
+ "verses": [
+  {
+   "ref": "Números 9:15",
+   "text": "E no dia em que o tabernáculo foi erguido, a nuvem o cobriu, ou seja, a tenda do Testemunho; e, à tarde, havia sobre o tabernáculo uma aparência de fogo até a manhã."
+  },
+  {
+   "ref": "Números 9:16",
+   "text": "Assim era continuamente: a nuvem o cobria, e, à noite, havia uma aparência de fogo."
+  },
+  {
+   "ref": "Números 9:17",
+   "text": "Sempre que a nuvem se erguia sobre a tenda, os filhos de Israel partiam. No local onde a nuvem parava, ali os filhos de Israel armavam o seu acampamento."
+  },
+  {
+   "ref": "Números 9:18",
+   "text": "Conforme o mandado do Senhor, os filhos de Israel partiam; e conforme o mandado do Senhor, montavam o acampamento: todos os dias em que a nuvem permanecia sobre o tabernáculo, eles permaneciam acampados."
+  },
+  {
+   "ref": "Números 9:19",
+   "text": "E, quando a nuvem se detinha muitos dias sobre o tabernáculo, os filhos de Israel cumpriam a ordem do Senhor e não partiam."
+  },
+  {
+   "ref": "Números 9:20",
+   "text": "E, quando a nuvem permanecia sobre o tabernáculo por poucos dias, conforme o mandado do SENHOR, os israelitas se estabeleciam; e segundo a ordem do SENHOR, partiam."
+  },
+  {
+   "ref": "Números 9:21",
+   "text": "Quando a nuvem permanecia ali da tarde até a manhã, e se erguia pela manhã, então partiam; tanto de dia como de noite, ao se elevar a nuvem, partiam."
+  },
+  {
+   "ref": "Números 9:22",
+   "text": "Quando a nuvem permanecia sobre o tabernáculo por dois dias, um mês ou por um período maior, os filhos de Israel acampavam e não se moviam; mas, assim que a nuvem se levantava, partiam."
+  },
+  {
+   "ref": "Números 9:23",
+   "text": "Segundo o mandado do Senhor, se alojavam e, segundo o mandado do Senhor, partiam; cumpriam seu dever em relação ao Senhor conforme a instrução que recebiam por intermédio de Moisés."
+  },
+  {
+   "ref": "Números 1:2",
+   "text": "Levantai o censo de toda a congregação dos filhos de Israel, segundo as suas famílias, segundo a casa de seus pais, contando todos os homens, nominalmente, cabeça por cabeça."
+  },
+  {
+   "ref": "Números 1:3",
+   "text": "Contai todos os homens de vinte anos ou mais que são capazes de ir à guerra em Israel; a estes vocês contarão segundo os seus exércitos, tu e Arão."
+  }
+ ]
+}
+</cena>

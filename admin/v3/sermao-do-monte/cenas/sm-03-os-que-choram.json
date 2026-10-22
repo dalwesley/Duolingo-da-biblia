@@ -1,0 +1,902 @@
+{
+  "study": {
+    "slug": "sm-03-os-que-choram",
+    "passageRef": "Mateus 5:3–4",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+    "passages": [
+      {
+        "ref": "Mateus 5:3–4",
+        "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados."
+      },
+      {
+        "ref": "Mateus 5:5–7",
+        "text": "Bem-aventurados os mansos, porque herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, pois serão fartos. Bem-aventurados os misericordiosos, porque alcançarão misericórdia."
+      }
+    ],
+    "context": "Depois de abençoar os humildes de espírito, Jesus abençoa os que choram. No Sermão, o lamento não é anestesiado: ele abre espaço para o consolo que vem de Deus.",
+    "keyword": "Lamento",
+    "keywordGloss": "Chorar diante de Deus pelo que está quebrado, em vez de fingir que está tudo bem.",
+    "focusQuestion": "Há algo que Deus quer que você lamente de verdade, em vez de anestesiar?",
+    "reflectionPrompts": [
+      "Chorar diante de Deus",
+      "Não fingir força",
+      "Esperar o consolo"
+    ],
+    "facts": [
+      {
+        "text": "Os humildes de espírito recebem o reino dos céus.",
+        "evidenceRef": "Mateus 5:3",
+        "evidenceSpan": "deles é o reino dos céus"
+      },
+      {
+        "text": "Os que choram são bem-aventurados.",
+        "evidenceRef": "Mateus 5:4",
+        "evidenceSpan": "Bem-aventurados os que choram"
+      },
+      {
+        "text": "Os que choram serão consolados.",
+        "evidenceRef": "Mateus 5:4",
+        "evidenceSpan": "serão consolados"
+      },
+      {
+        "text": "Os mansos herdarão a terra.",
+        "evidenceRef": "Mateus 5:5",
+        "evidenceSpan": "herdarão a terra"
+      },
+      {
+        "text": "Os misericordiosos alcançarão misericórdia.",
+        "evidenceRef": "Mateus 5:7",
+        "evidenceSpan": "alcançarão misericórdia"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "choram",
+        "gloss": "Quem sente e lamenta o que está quebrado, diante de Deus."
+      },
+      {
+        "term": "consolados",
+        "gloss": "Receber de Deus conforto real, não apenas distração da dor."
+      },
+      {
+        "term": "mansos",
+        "gloss": "Quem entrega a força a Deus em vez de reagir com violência."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A bênção aos humildes de espírito",
+        "evidenceRef": "Mateus 5:3"
+      },
+      {
+        "label": "A bênção aos que choram",
+        "evidenceRef": "Mateus 5:4"
+      },
+      {
+        "label": "A promessa de consolo futuro",
+        "evidenceRef": "Mateus 5:4"
+      },
+      {
+        "label": "A bênção aos mansos",
+        "evidenceRef": "Mateus 5:5"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Ao choro corresponde uma promessa: serão consolados.",
+        "marker": "serão",
+        "evidenceRef": "Mateus 5:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "Humildade, choro e mansidão se sucedem como retrato do cidadão do Reino.",
+        "marker": null,
+        "evidenceRef": "Mateus 5:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 61:2",
+        "bridge": "Consolo aos que choram",
+        "text": "A proclamar o ano aceitável do Senhor e o dia da vingança do nosso Deus, para consolar todos os que choram"
+      },
+      {
+        "ref": "Salmos 126:5",
+        "bridge": "Choro que vira alegria",
+        "text": "Os que semeiam com lágrimas, com júbilo colherão."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Chorar é falta de fé e deve ser escondido sempre.",
+        "why": "Jesus chama de bem-aventurados os que choram e promete consolo a eles."
+      },
+      {
+        "text": "O consolo prometido é só esquecer rápido a dor.",
+        "why": "A promessa é ação futura de Deus sobre quem chora, não negação da dor."
+      },
+      {
+        "text": "Bem-aventurados são apenas os fortes que não se abalam.",
+        "why": "O Sermão abençoa humildes, chorosos e mansos, não os inabaláveis."
+      }
+    ],
+    "centralInsight": "Lamento santo abre espaço ao consolo",
+    "anchorQuestion": "O que Jesus promete aos que choram em Mateus 5:4?",
+    "relatedVerses": [
+      {
+        "reference": "Isaías 61:2",
+        "reason": "Consolo aos que choram"
+      },
+      {
+        "reference": "Salmos 126:5",
+        "reason": "Choro que vira alegria"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "sermao-do-monte-sem-sm-03-os-que-choram-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Mateus 5:4, Jesus promete que os que choram serão consolados",
+      "prompt": "Em Mateus 5:4, Jesus promete que os que choram serão consolados",
+      "cue": "Em Mateus 5:4, Jesus promete que os que choram serão consolados",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "O choro abençoado por Jesus não termina em si mesmo: Deus consola.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 5:4: a promessa é de consolo."
+      },
+      "hint": "Olhe a promessa no fim do versículo.",
+      "learningObjective": "Observar a promessa aos que choram.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-03-os-que-choram-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Mateus 5:4, toque quem Jesus chama de bem-aventurados.",
+      "prompt": "Em Mateus 5:4, toque quem Jesus chama de bem-aventurados.",
+      "cue": "Em Mateus 5:4, toque quem Jesus chama de bem-aventurados.",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "os que choram"
+        },
+        {
+          "id": "b",
+          "text": "consolados"
+        },
+        {
+          "id": "c",
+          "text": "Bem-aventurados"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Bem-aventurados os que choram",
+      "feedbackCorrect": "Jesus abençoa justamente quem está chorando diante de Deus.",
+      "feedbackWrong": {
+        "b": "Isso é o que eles serão, não quem eles são agora.",
+        "c": "Isso é a declaração, não o grupo abençoado."
+      },
+      "hint": "Procure o grupo logo após a declaração inicial.",
+      "learningObjective": "Identificar os abençoados de Mateus 5:4.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-03-os-que-choram-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Mateus 5:4, o que acontecerá com os que choram?",
+      "prompt": "Segundo Mateus 5:4, o que acontecerá com os que choram?",
+      "cue": "Segundo Mateus 5:4, o que acontecerá com os que choram?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serão consolados"
+        },
+        {
+          "id": "b",
+          "text": "Verão a Deus ainda hoje"
+        },
+        {
+          "id": "c",
+          "text": "Serão chamados filhos de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Herdarão a terra de imediato"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "A promessa específica para quem chora é receber consolo de Deus.",
+      "feedbackWrong": {
+        "b": "Ver a Deus é promessa aos puros de coração (5:8).",
+        "c": "Filhos de Deus é promessa aos pacificadores (5:9).",
+        "d": "Herdar a terra é promessa aos mansos (5:5)."
+      },
+      "hint": "Cada bem-aventurança tem sua promessa própria.",
+      "learningObjective": "Observar a promessa de Mateus 5:4.",
+      "evidence": [
+        "Mateus 5:3–4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-03-os-que-choram-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Mateus 5:4 na ordem do texto.",
+      "prompt": "Monte Mateus 5:4 na ordem do texto.",
+      "cue": "Monte Mateus 5:4 na ordem do texto.",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os que choram"
+        },
+        {
+          "id": "b",
+          "text": "porque serão"
+        },
+        {
+          "id": "c",
+          "text": "consolados"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "porque serão consolados",
+      "feedbackCorrect": "Quem chora é abençoado porque Deus promete consolá-lo.",
+      "feedbackWrong": {
+        "default": "Comece por quem chora; o consolo fecha o versículo."
+      },
+      "hint": "A promessa vem depois do porque.",
+      "learningObjective": "Reconhecer a sequência de Mateus 5:4.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-03-os-que-choram-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Mateus 5:4, como Deus responderá aos que choram?",
+      "prompt": "Em Mateus 5:4, como Deus responderá aos que choram?",
+      "cue": "Em Mateus 5:4, como Deus responderá aos que choram?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "template": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "punidos"
+        },
+        {
+          "id": "b",
+          "text": "consolados"
+        },
+        {
+          "id": "c",
+          "text": "ignorados"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "Deus não ignora o choro do seu povo: ele promete consolo.",
+      "feedbackWrong": {
+        "a": "A resposta prometida é consolo, não punição.",
+        "c": "O choro abençoado não é ignorado por Deus."
+      },
+      "hint": "Pense numa resposta acolhedora de Deus.",
+      "learningObjective": "Lembrar a resposta de Deus aos que choram.",
+      "evidence": [
+        "Mateus 5:3–4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-sem-sm-03-os-que-choram-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Mateus 5:4 comunica que se liga a este contexto?",
+      "prompt": "O que Mateus 5:4 comunica que se liga a este contexto?",
+      "cue": "O que Mateus 5:4 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "passageA": {
+        "ref": "Mateus 5:4",
+        "text": "Bem-aventurados os que choram, porque serão consolados."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No Reino, chorar diante de Deus não é fraqueza escondida, mas caminho para o consolo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lamento abre espaço ao consolo"
+        },
+        {
+          "id": "b",
+          "text": "Dor deve ser anestesiada"
+        },
+        {
+          "id": "c",
+          "text": "Choro sempre é vergonha"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "os que choram",
+      "feedbackCorrect": "Jesus coloca o lamento dentro da bem-aventurança, não fora dela.",
+      "feedbackWrong": {
+        "b": "O texto promete consolo, não anestesia da dor.",
+        "c": "Jesus abençoa quem chora; não há vergonha nisso."
+      },
+      "hint": "Veja o destino de quem chora no versículo.",
+      "learningObjective": "Ligar o choro abençoado ao consolo de Deus.",
+      "evidence": [
+        "Mateus 5:1–4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-03-os-que-choram-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Mateus 5:4, o consolo é apresentado como algo que os que choram já possuem por completo agora",
+      "prompt": "Em Mateus 5:4, o consolo é apresentado como algo que os que choram já possuem por completo agora",
+      "cue": "Em Mateus 5:4, o consolo é apresentado como algo que os que choram já possuem por completo agora",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "O verbo está no futuro: o consolo é promessa de Deus a quem chora.",
+      "feedbackWrong": {
+        "true": "Note o tempo do verbo: serão, não já foram consolados."
+      },
+      "hint": "Repare no tempo do verbo da promessa.",
+      "learningObjective": "Compreender o consolo como promessa futura.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-03-os-que-choram-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Mateus 5:4, toque a palavra que liga o choro à promessa.",
+      "prompt": "Em Mateus 5:4, toque a palavra que liga o choro à promessa.",
+      "cue": "Em Mateus 5:4, toque a palavra que liga o choro à promessa.",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "serão"
+        },
+        {
+          "id": "b",
+          "text": "que"
+        },
+        {
+          "id": "c",
+          "text": "porque"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "porque serão consolados",
+      "feedbackCorrect": "É essa ligação que transforma choro em bem-aventurança: há motivo.",
+      "feedbackWrong": {
+        "a": "Isso marca o futuro da promessa, não a ligação lógica.",
+        "b": "Isso só aponta o grupo; a ligação vem depois."
+      },
+      "hint": "Procure a palavra que dá o motivo da bênção.",
+      "learningObjective": "Reconhecer o marcador de motivo em 5:4.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-03-os-que-choram-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Mateus 5:4 se relaciona com Mateus 5:3 dentro do Sermão?",
+      "prompt": "Como Mateus 5:4 se relaciona com Mateus 5:3 dentro do Sermão?",
+      "cue": "Como Mateus 5:4 se relaciona com Mateus 5:3 dentro do Sermão?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promete consolo só a quem nunca pecou"
+        },
+        {
+          "id": "b",
+          "text": "Troca a humildade por tristeza permanente"
+        },
+        {
+          "id": "c",
+          "text": "Mostra outro traço de quem depende de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Encerra as bem-aventuranças com o choro"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "os que choram",
+      "feedbackCorrect": "Humildade e choro retratam o mesmo coração que se volta para Deus.",
+      "feedbackWrong": {
+        "a": "O texto não limita o consolo a pessoas perfeitas.",
+        "b": "O Sermão continua; o choro não substitui a humildade.",
+        "d": "Outras bem-aventuranças vêm depois de 5:4."
+      },
+      "hint": "Veja as duas bênçãos como retrato de um mesmo povo.",
+      "learningObjective": "Relacionar as duas primeiras bem-aventuranças.",
+      "evidence": [
+        "Mateus 5:3–4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-03-os-que-choram-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o retrato do Reino de Mateus 5:3 a 5:5?",
+      "prompt": "Como avança o retrato do Reino de Mateus 5:3 a 5:5?",
+      "cue": "Como avança o retrato do Reino de Mateus 5:3 a 5:5?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humildes recebem o Reino"
+        },
+        {
+          "id": "b",
+          "text": "Quem chora recebe consolo"
+        },
+        {
+          "id": "c",
+          "text": "Mansos herdam a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "O Sermão vai desenhando o cidadão do Reino traço por traço.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos versículos 3, 4 e 5."
+      },
+      "hint": "Acompanhe a numeração dos versículos.",
+      "learningObjective": "Compreender a progressão das bem-aventuranças.",
+      "evidence": [
+        "Mateus 5:3–5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-03-os-que-choram-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Mateus 5:5, o que os mansos farão com a terra?",
+      "prompt": "Em Mateus 5:5, o que os mansos farão com a terra?",
+      "cue": "Em Mateus 5:5, o que os mansos farão com a terra?",
+      "verseRef": "Mateus 5:5",
+      "passageText": "Bem-aventurados os mansos, porque herdarão a terra.",
+      "template": "Bem-aventurados os mansos, porque ___ a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "herdarão"
+        },
+        {
+          "id": "b",
+          "text": "perderão"
+        },
+        {
+          "id": "c",
+          "text": "venderão"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "herdarão a terra",
+      "feedbackCorrect": "Depois do consolo, Jesus promete herança aos mansos, não aos violentos.",
+      "feedbackWrong": {
+        "b": "A promessa aos mansos é receber a terra.",
+        "c": "Herança não se vende como conquista própria aqui."
+      },
+      "hint": "Pense em algo recebido como presente.",
+      "learningObjective": "Relacionar choro consolado e mansidão abençoada.",
+      "evidence": [
+        "Mateus 5:5"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-cam-sm-03-os-que-choram-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Mateus 5:4 a Isaías 61:2?",
+      "prompt": "O que liga Mateus 5:4 a Isaías 61:2?",
+      "cue": "O que liga Mateus 5:4 a Isaías 61:2?",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "passageA": {
+        "ref": "Mateus 5:4",
+        "text": "Bem-aventurados os que choram, porque serão consolados."
+      },
+      "passageB": {
+        "ref": "Isaías 61:2",
+        "text": "A proclamar o ano aceitável do Senhor e o dia da vingança do nosso Deus, para consolar todos os que choram"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus consola quem chora"
+        },
+        {
+          "id": "b",
+          "text": "Consolo só para os fortes"
+        },
+        {
+          "id": "c",
+          "text": "Choro afasta o consolo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "Isaías já anunciava consolo aos enlutados; Jesus o retoma na bênção.",
+      "feedbackWrong": {
+        "b": "O consolo alcança justamente quem está abatido.",
+        "c": "Nos dois textos o choro é alcançado pelo consolo."
+      },
+      "hint": "Compare a promessa feita a quem está de luto.",
+      "learningObjective": "Relacionar o consolo de Jesus ao anúncio de Isaías.",
+      "evidence": [
+        "Mateus 5:4",
+        "Isaías 61:2"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-03-os-que-choram-01",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Mateus 5:4 trata o choro diante de Deus como caminho abençoado, e não como falta de fé",
+      "prompt": "Mateus 5:4 trata o choro diante de Deus como caminho abençoado, e não como falta de fé",
+      "cue": "Mateus 5:4 trata o choro diante de Deus como caminho abençoado, e não como falta de fé",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Bem-aventurados os que choram",
+      "feedbackCorrect": "Jesus coloca quem chora entre os bem-aventurados: lamentar é fé honesta.",
+      "feedbackWrong": {
+        "false": "Se fosse falta de fé, Jesus não chamaria essas pessoas de felizes."
+      },
+      "hint": "Veja o título que Jesus dá a quem chora.",
+      "learningObjective": "Interpretar o lamento como fé honesta.",
+      "evidence": [
+        "Mateus 5:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-03-os-que-choram-02",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Mateus 5:4, toque o trecho que mostra a ação futura de Deus.",
+      "prompt": "Em Mateus 5:4, toque o trecho que mostra a ação futura de Deus.",
+      "cue": "Em Mateus 5:4, toque o trecho que mostra a ação futura de Deus.",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "serão consolados"
+        },
+        {
+          "id": "b",
+          "text": "Bem-aventurados"
+        },
+        {
+          "id": "c",
+          "text": "os que choram"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "A esperança de quem chora está no que Deus ainda vai fazer por ele.",
+      "feedbackWrong": {
+        "b": "Isso declara a bênção, não a promessa futura.",
+        "c": "Isso descreve a condição presente, não a ação futura."
+      },
+      "hint": "Procure o verbo no futuro no fim da frase.",
+      "learningObjective": "Sustentar no texto a esperança do consolo.",
+      "evidence": [
+        "Mateus 5:3–4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-03-os-que-choram-03",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Mateus 5:4 sustenta sobre chorar diante de Deus?",
+      "prompt": "Que leitura Mateus 5:4 sustenta sobre chorar diante de Deus?",
+      "cue": "Que leitura Mateus 5:4 sustenta sobre chorar diante de Deus?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Só chora quem ainda não pertence ao Reino"
+        },
+        {
+          "id": "b",
+          "text": "O consolo dispensa lamentar o que está errado"
+        },
+        {
+          "id": "c",
+          "text": "Quem chora deve esconder a dor para ter fé"
+        },
+        {
+          "id": "d",
+          "text": "Lamentar com Deus abre espaço ao consolo dele"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "os que choram",
+      "feedbackCorrect": "No Sermão, o lamento honesto não é o oposto da fé: é porta para o consolo.",
+      "feedbackWrong": {
+        "a": "Quem chora está justamente entre os bem-aventurados.",
+        "b": "O consolo prometido alcança quem chora, não quem nega.",
+        "c": "Jesus abençoa o choro em vez de mandá-lo esconder."
+      },
+      "hint": "Veja onde Jesus coloca quem chora no Reino.",
+      "learningObjective": "Escolher a interpretação sustentada por 5:4.",
+      "evidence": [
+        "Mateus 5:1–4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-03-os-que-choram-04",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho do consolo na Bíblia?",
+      "prompt": "Qual sequência revela o caminho do consolo na Bíblia?",
+      "cue": "Qual sequência revela o caminho do consolo na Bíblia?",
+      "verseRef": "Mateus 5:4",
+      "passageText": "Bem-aventurados os que choram, porque serão consolados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo chora diante de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Deus promete consolo aos enlutados"
+        },
+        {
+          "id": "c",
+          "text": "Deus enxuga toda lágrima no fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "Do lamento presente à promessa e, por fim, ao fim de toda lágrima.",
+      "feedbackWrong": {
+        "default": "Siga: choro, promessa em Isaías e cumprimento final em Apocalipse."
+      },
+      "hint": "O último passo está no fim da Bíblia.",
+      "learningObjective": "Ver o consolo como fio que atravessa a Bíblia.",
+      "evidence": [
+        "Mateus 5:4",
+        "Isaías 61:2",
+        "Apocalipse 21:4"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-03-os-que-choram-05",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+      "prompt": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+      "cue": "Em Mateus 5:7, o que os misericordiosos alcançarão?",
+      "verseRef": "Mateus 5:7",
+      "passageText": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "template": "Bem-aventurados os misericordiosos, porque alcançarão ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vingança"
+        },
+        {
+          "id": "b",
+          "text": "riqueza"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "alcançarão misericórdia",
+      "feedbackCorrect": "A mesma lógica do consolo aparece aqui: Deus responde ao coração voltado a ele.",
+      "feedbackWrong": {
+        "a": "Quem pratica misericórdia recebe misericórdia, não vingança.",
+        "b": "A promessa é relacional com Deus, não material."
+      },
+      "hint": "É o mesmo nome da qualidade abençoada.",
+      "learningObjective": "Lembrar a promessa ligada ao coração compassivo.",
+      "evidence": [
+        "Mateus 5:7"
+      ]
+    },
+    {
+      "id": "sermao-do-monte-pro-sm-03-os-que-choram-06",
+      "trail": "sermao-do-monte",
+      "section": "sm-03-os-que-choram",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Mateus 5:4 a Salmos 126:5?",
+      "prompt": "O que liga Mateus 5:4 a Salmos 126:5?",
+      "cue": "O que liga Mateus 5:4 a Salmos 126:5?",
+      "verseRef": "Mateus 5:3–4",
+      "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque serão consolados.",
+      "passageA": {
+        "ref": "Mateus 5:4",
+        "text": "Bem-aventurados os que choram, porque serão consolados."
+      },
+      "passageB": {
+        "ref": "Salmos 126:5",
+        "text": "Os que semeiam com lágrimas, com júbilo colherão."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lágrimas sem qualquer esperança"
+        },
+        {
+          "id": "b",
+          "text": "Alegria sem passar pela dor"
+        },
+        {
+          "id": "c",
+          "text": "Choro que vira alegria"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "serão consolados",
+      "feedbackCorrect": "O Salmo semeia em lágrimas e colhe com alegria; Jesus promete consolo.",
+      "feedbackWrong": {
+        "a": "Os dois textos dão futuro ao choro diante de Deus.",
+        "b": "A alegria prometida atravessa a dor, não a ignora."
+      },
+      "hint": "Veja o que nasce de semear chorando no Salmo.",
+      "learningObjective": "Ligar o choro abençoado à alegria prometida.",
+      "evidence": [
+        "Mateus 5:3–4",
+        "Salmos 126:5"
+      ]
+    }
+  ]
+}

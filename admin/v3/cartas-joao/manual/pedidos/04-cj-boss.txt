@@ -1,0 +1,156 @@
+Escreva a cena "cj-boss" da trilha "cartas-joao" (1–3 João).
+Tipo: desafio — 8 perguntas por modo, misturando as cenas anteriores do bloco.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "cartas-joao",
+  "title": "1–3 João",
+  "description": "Amor, verdade e comunhão — quem permanece em Cristo.",
+  "realm": "novo-testamento"
+ },
+ "block": "Cartas de Joao",
+ "mission": {
+  "slug": "cj-boss",
+  "title": "Revisao: Cartas de Joao",
+  "type": "boss",
+  "intro": "Revise a comunhao na luz, o amor que vem de Deus e a firmeza na verdade de Cristo.",
+  "hookRef": "Revisao: Cartas de Joao",
+  "hookNote": "Revise a comunhao na luz, o amor que vem de Deus e a firmeza na verdade de Cristo.",
+  "centralInsight": "O que Jesus / a igreja revelam aqui?",
+  "objective": "Ande na luz e no amor"
+ },
+ "v2": {
+  "passageRef": "Revisao: Cartas de Joao",
+  "context": "Revise a comunhao na luz, o amor que vem de Deus e a firmeza na verdade de Cristo.",
+  "keyword": "Revisao",
+  "verseRefs": [
+   "1 João 5:13"
+  ]
+ },
+ "earlierScenes": [
+  {
+   "slug": "cj-01",
+   "title": "Luz e comunhao",
+   "centralInsight": "A comunhao com Deus nao combina com esconder o pecado. A luz revela, e o sangue de Jesus purifica os que confessam.",
+   "ref": "1 João 1:2–10"
+  },
+  {
+   "slug": "cj-02",
+   "title": "Amor e verdade",
+   "centralInsight": "O amor cristao nasce do Deus que enviou seu Filho como propiciacao. Ao mesmo tempo, a igreja deve provar os espiritos e confessar o Cristo…",
+   "ref": "1 João 4:4–11"
+  },
+  {
+   "slug": "cj-03",
+   "title": "Verdade que recebe e envia",
+   "centralInsight": "2 Joao alerta contra apoiar falsos mestres. 3 Joao elogia Gaio por hospedar missionarios e repreende a ambicao de Diotrefes.",
+   "ref": "2 João 1:3–9"
+  }
+ ],
+ "ranges": [
+  "1 João 1:2–10",
+  "1 João 4:4–11",
+  "2 João 1:3–9"
+ ],
+ "verses": [
+  {
+   "ref": "1 João 1:2",
+   "text": "Porque a vida se manifestou, e nós a vimos, e dela damos testemunho e anunciamos a vida eterna, que estava com o Pai e nos foi manifestada."
+  },
+  {
+   "ref": "1 João 1:3",
+   "text": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo."
+  },
+  {
+   "ref": "1 João 1:4",
+   "text": "Escrevemos estas coisas para que a nossa alegria seja completa."
+  },
+  {
+   "ref": "1 João 1:5",
+   "text": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma."
+  },
+  {
+   "ref": "1 João 1:6",
+   "text": "Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade."
+  },
+  {
+   "ref": "1 João 1:7",
+   "text": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado."
+  },
+  {
+   "ref": "1 João 1:8",
+   "text": "Se dissermos que não temos pecado nenhum, enganamos a nós mesmos, e a verdade não habita em nós."
+  },
+  {
+   "ref": "1 João 1:9",
+   "text": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça."
+  },
+  {
+   "ref": "1 João 1:10",
+   "text": "Se dissermos que não pecamos, fazemo-lo mentiroso, e a sua palavra não está em nós."
+  },
+  {
+   "ref": "1 João 4:4",
+   "text": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo."
+  },
+  {
+   "ref": "1 João 4:5",
+   "text": "Eles vêm do mundo; portanto, falam como o mundo fala, e o mundo os escuta."
+  },
+  {
+   "ref": "1 João 4:6",
+   "text": "Nós somos de Deus; aquele que conhece a Deus nos ouve; aquele que não é da parte de Deus não nos escuta. Nisto reconhecemos o espírito da verdade e o espírito do erro."
+  },
+  {
+   "ref": "1 João 4:7",
+   "text": "Amados, amemo-nos uns aos outros, porque o amor vem de Deus; e todo aquele que ama é nascido de Deus e conhece a Deus."
+  },
+  {
+   "ref": "1 João 4:8",
+   "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+  },
+  {
+   "ref": "1 João 4:9",
+   "text": "Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos."
+  },
+  {
+   "ref": "1 João 4:10",
+   "text": "Nisto consiste o amor: não que tenhamos amado a Deus, mas que Ele nos amou e enviou Seu Filho como propiciação pelos nossos pecados."
+  },
+  {
+   "ref": "1 João 4:11",
+   "text": "Amados, se Deus nos amou de tal maneira, devemos nós também amar uns aos outros."
+  },
+  {
+   "ref": "2 João 1:3",
+   "text": "Graça, misericórdia e paz da parte de Deus Pai e do Senhor Jesus Cristo, o Filho do Pai, sejam com vocês em verdade e amor."
+  },
+  {
+   "ref": "2 João 1:4",
+   "text": "Fiquei sobremodo alegre em saber que alguns dos teus filhos andam na verdade, conforme o mandamento que recebemos do Pai."
+  },
+  {
+   "ref": "2 João 1:5",
+   "text": "E agora, senhora, peço-te, não como escrevendo-te um mandamento novo, mas aquilo que recebemos desde o princípio: que nos amemos uns aos outros."
+  },
+  {
+   "ref": "2 João 1:6",
+   "text": "E o amor é este: que andemos segundo os seus mandamentos. Este é o mandamento, como ouvistes desde o princípio, que andeis nesse amor."
+  },
+  {
+   "ref": "2 João 1:7",
+   "text": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo."
+  },
+  {
+   "ref": "2 João 1:8",
+   "text": "Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo."
+  },
+  {
+   "ref": "2 João 1:9",
+   "text": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho."
+  }
+ ]
+}
+</cena>

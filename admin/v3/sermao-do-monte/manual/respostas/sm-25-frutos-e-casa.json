@@ -1,0 +1,703 @@
+{
+ "study": {
+  "passageRef": "Mateus 7:24–25",
+  "passages": [
+   {
+    "ref": "Mateus 7:24–25"
+   },
+   {
+    "ref": "Mateus 7:15–17"
+   },
+   {
+    "ref": "Mateus 7:21–23"
+   }
+  ],
+  "context": "Jesus fecha o Sermão com frutos que revelam árvores e casas que revelam fundamentos. Não basta chamar Senhor, Senhor: quem ouve as palavras dele e as pratica é como casa edificada sobre a rocha.",
+  "keyword": "Rocha",
+  "keywordGloss": "Fundamento de quem ouve as palavras de Jesus e as coloca em prática, permanecendo na tempestade.",
+  "focusQuestion": "Sua fé é só linguagem religiosa ou permanece quando a tempestade prova o fundamento?",
+  "reflectionPrompts": [
+   "Fruto que revela a árvore",
+   "Ouvir e praticar a palavra",
+   "Fundamento que aguenta chuva"
+  ],
+  "facts": [
+   {
+    "text": "Pelos frutos se conhecem os falsos profetas, diz Jesus.",
+    "evidenceRef": "Mateus 7:16",
+    "evidenceSpan": "Pelos seus frutos vocês os conhecerão"
+   },
+   {
+    "text": "Árvore boa produz bons frutos, e a má, frutos maus.",
+    "evidenceRef": "Mateus 7:17",
+    "evidenceSpan": "toda árvore boa produz bons frutos"
+   },
+   {
+    "text": "Entrará no Reino quem pratica a vontade do Pai nos céus.",
+    "evidenceRef": "Mateus 7:21",
+    "evidenceSpan": "aquele que pratica a vontade de meu Pai"
+   },
+   {
+    "text": "Quem ouve e pratica é prudente que edifica sobre a rocha.",
+    "evidenceRef": "Mateus 7:24",
+    "evidenceSpan": "que ouve estas minhas palavras e as coloca em prática"
+   },
+   {
+    "text": "A casa na rocha não caiu na chuva, nos rios e nos ventos.",
+    "evidenceRef": "Mateus 7:25",
+    "evidenceSpan": "mas ela não caiu, porque estava edificada sobre a rocha"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "frutos",
+    "gloss": "Resultados visíveis que revelam a natureza verdadeira de quem fala de Deus."
+   },
+   {
+    "term": "prática",
+    "gloss": "Obediência concreta às palavras de Jesus, além de ouvi-las e repeti-las."
+   },
+   {
+    "term": "rocha",
+    "gloss": "Base firme da vida que ouve e pratica, capaz de permanecer na tempestade."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Frutos revelam falsos e verdadeiros",
+    "evidenceRef": "Mateus 7:16"
+   },
+   {
+    "label": "Chamar Senhor sem praticar não basta",
+    "evidenceRef": "Mateus 7:21"
+   },
+   {
+    "label": "Prudente edifica a casa sobre a rocha",
+    "evidenceRef": "Mateus 7:24"
+   },
+   {
+    "label": "Tempestade prova e a casa permanece",
+    "evidenceRef": "Mateus 7:25"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A casa não caiu porque estava edificada sobre a rocha firme.",
+    "marker": "porque",
+    "evidenceRef": "Mateus 7:25"
+   },
+   {
+    "kind": "contraste",
+    "text": "Chamar Senhor contrasta com praticar a vontade do Pai nos céus.",
+    "marker": "mas",
+    "evidenceRef": "Mateus 7:21"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Tiago 1:22",
+    "bridge": "Ouvir e praticar a palavra"
+   },
+   {
+    "ref": "Lucas 6:48",
+    "bridge": "Casa fundada na rocha"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Profetizar e fazer maravilhas no nome de Jesus garantem entrada no Reino.",
+    "why": "Jesus diz que nunca conheceu quem pratica a iniquidade, apesar das maravilhas (7:22–23)."
+   },
+   {
+    "text": "Ouvir muitos sermões equivale a ter a casa sobre a rocha firme.",
+    "why": "A rocha é ouvir e colocar em prática, não só ouvir (7:24)."
+   },
+   {
+    "text": "Casa na rocha é promessa de nunca enfrentar chuva, rio ou vento.",
+    "why": "A tempestade vem sobre as duas casas; a diferença é o fundamento (7:25–27)."
+   }
+  ],
+  "centralInsight": "Fruto revela o que aparência pode esconder",
+  "anchorQuestion": "A que Jesus compara quem ouve suas palavras e as pratica, em Mateus 7:24?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 7:16, pelos frutos se conhecem os falsos profetas, diz Jesus no Sermão",
+   "verseRef": "Mateus 7:16",
+   "correctOptionId": "true",
+   "evidenceSpan": "Pelos seus frutos vocês os conhecerão",
+   "feedbackCorrect": "Tempo e fruto desmascaram quem o disfarce de ovelha tenta esconder.",
+   "feedbackWrong": {
+    "false": "É o teste que Jesus entrega logo após a porta estreita."
+   },
+   "hint": "Veja o teste ligado às árvores no versículo.",
+   "learningObjective": "Observar o teste dos frutos em 7:16.",
+   "evidence": [
+    "Mateus 7:16"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 7:16, toque por onde Jesus manda conhecer os falsos profetas.",
+   "verseRef": "Mateus 7:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "seus frutos"
+    },
+    {
+     "id": "b",
+     "text": "abrolhos"
+    },
+    {
+     "id": "c",
+     "text": "uvas dos espinheiros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pelos seus frutos vocês os conhecerão",
+   "feedbackCorrect": "Fruto demora, mas não mente: é o RG de quem fala em nome de Deus.",
+   "feedbackWrong": {
+    "b": "Isso é planta da ilustração de Jesus, não o meio de conhecer.",
+    "c": "Isso é a pergunta ilustrativa sobre plantas, não o teste."
+   },
+   "hint": "Procure o meio de conhecimento no começo.",
+   "learningObjective": "Identificar o teste dos frutos.",
+   "evidence": [
+    "Mateus 7:16"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 7:24, a que Jesus compara quem ouve e pratica suas palavras?",
+   "verseRef": "Mateus 7:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "A um homem prudente que edificou sobre a rocha"
+    },
+    {
+     "id": "b",
+     "text": "A um profeta disfarçado de ovelha mansa"
+    },
+    {
+     "id": "c",
+     "text": "A uma árvore que nunca produz fruto algum"
+    },
+    {
+     "id": "d",
+     "text": "A um ouvinte que só chama Senhor, Senhor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será comparado a um homem prudente que edificou sua casa sobre a rocha",
+   "feedbackCorrect": "A última imagem do Sermão premia a prática: ouvir e fazer é ser prudente.",
+   "feedbackWrong": {
+    "b": "Disfarce de ovelha é perigo de 7:15, não prudência.",
+    "c": "Árvore sem fruto bom é cortada em 7:19.",
+    "d": "Chamar sem praticar é recusado por Jesus em 7:21."
+   },
+   "hint": "Veja a profissão do homem sábio no versículo.",
+   "learningObjective": "Observar a comparação final de 7:24.",
+   "evidence": [
+    "Mateus 7:24"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 7:25 na ordem do texto.",
+   "verseRef": "Mateus 7:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "E desceu a chuva"
+    },
+    {
+     "id": "b",
+     "text": "transbordaram os rios"
+    },
+    {
+     "id": "c",
+     "text": "sopraram os ventos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "E desceu a chuva",
+   "feedbackCorrect": "Chuva, rios e ventos provam as duas casas do mesmo jeito impiedoso.",
+   "feedbackWrong": {
+    "default": "Comece pela chuva que desce primeiro na cena."
+   },
+   "hint": "Os ventos sopram por último nessa lista.",
+   "learningObjective": "Reconhecer a sequência da tempestade.",
+   "evidence": [
+    "Mateus 7:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 7:15, de que os falsos profetas se disfarçam diante das pessoas?",
+   "verseRef": "Mateus 7:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "ovelhas"
+    },
+    {
+     "id": "b",
+     "text": "cordeiros"
+    },
+    {
+     "id": "c",
+     "text": "pastores"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "disfarçados de ovelhas, mas, interiormente, são lobos devoradores",
+   "feedbackCorrect": "Por fora ovelha, por dentro lobo: só o fruto com o tempo revela a verdade.",
+   "feedbackWrong": {
+    "b": "A palavra usada por Jesus é a do rebanho em geral.",
+    "c": "Pastor é ofício, não o disfarce animal citado aqui."
+   },
+   "hint": "Pense no animal manso do rebanho citado.",
+   "learningObjective": "Lembrar o disfarce dos falsos em 7:15.",
+   "evidence": [
+    "Mateus 7:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 7:16 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 7:16–17",
+   "passageA": {
+    "ref": "Mateus 7:16"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "No fim do Sermão, o fruto de uma vida revela o que a aparência consegue esconder por um tempo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Fruto revela a verdade"
+    },
+    {
+     "id": "b",
+     "text": "Aparência esconde para sempre"
+    },
+    {
+     "id": "c",
+     "text": "Disfarce prova a árvore"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pelos seus frutos vocês os conhecerão",
+   "feedbackCorrect": "Jesus fecha o Sermão com teste de realidade: tempo, fruto e fundamento.",
+   "feedbackWrong": {
+    "b": "O fruto chega e a verdade aparece com ele.",
+    "c": "Disfarce é casca; fruto é quem a árvore é de verdade."
+   },
+   "hint": "Pense no que uma estação inteira revela.",
+   "learningObjective": "Ligar frutos à verdade revelada com o tempo.",
+   "evidence": [
+    "Mateus 7:16–17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 7:21, basta chamar Jesus de Senhor para entrar no reino dos céus",
+   "verseRef": "Mateus 7:21",
+   "correctOptionId": "false",
+   "evidenceSpan": "Nem todo aquele que me chama: Senhor, Senhor! entrará no reino dos céus",
+   "feedbackCorrect": "Jesus pede prática da vontade do Pai, não só vocabulário religioso correto.",
+   "feedbackWrong": {
+    "true": "O versículo começa justamente com um nem todo que nega isso."
+   },
+   "hint": "Veja quem Jesus diz que entrará de fato.",
+   "learningObjective": "Compreender o limite do só chamar Senhor.",
+   "evidence": [
+    "Mateus 7:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 7:24, toque o que o prudente faz além de ouvir as palavras.",
+   "verseRef": "Mateus 7:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "em prática"
+    },
+    {
+     "id": "b",
+     "text": "minhas palavras"
+    },
+    {
+     "id": "c",
+     "text": "um homem prudente"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "e as coloca em prática",
+   "feedbackCorrect": "Ouvir todo mundo ouve até na areia; praticar é o que muda o fundamento.",
+   "feedbackWrong": {
+    "b": "Ouvir as palavras é o passo comum dos dois homens.",
+    "c": "Isso é quem ele é chamado, não o que ele faz a mais."
+   },
+   "hint": "Procure o segundo verbo ligado às palavras.",
+   "learningObjective": "Reconhecer a prática como diferença em 7:24.",
+   "evidence": [
+    "Mateus 7:24"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 7:25 se relaciona com Mateus 7:24 na parábola final?",
+   "verseRef": "Mateus 7:24–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra a casa poupada de qualquer tempestade"
+    },
+    {
+     "id": "b",
+     "text": "Mostra a prova que a casa fundada aguenta firme"
+    },
+    {
+     "id": "c",
+     "text": "Troca a rocha por areia sem mudar o destino"
+    },
+    {
+     "id": "d",
+     "text": "Encerra sem dizer se a casa caiu ou ficou"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "mas ela não caiu, porque estava edificada sobre a rocha",
+   "feedbackCorrect": "A tempestade não é evitada: ela revela por que a casa fica de pé.",
+   "feedbackWrong": {
+    "a": "Chuva, rios e ventos atingem essa casa também.",
+    "c": "A fundação é justamente o que decide o fim da história.",
+    "d": "Jesus afirma com clareza que ela não caiu na prova."
+   },
+   "hint": "Veja o efeito da mesma tempestade nessa casa.",
+   "learningObjective": "Relacionar fundamento e prova na parábola.",
+   "evidence": [
+    "Mateus 7:24–25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeia a parábola de Mateus 7:24 a 7:25?",
+   "verseRef": "Mateus 7:24–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Homem ouve e pratica a palavra"
+    },
+    {
+     "id": "b",
+     "text": "Ele edifica a casa sobre a rocha"
+    },
+    {
+     "id": "c",
+     "text": "Tempestade bate e a casa permanece"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "e as coloca em prática",
+   "feedbackCorrect": "Prática, fundamento e permanência: Jesus fecha o Sermão com construção de vida.",
+   "feedbackWrong": {
+    "default": "Comece pela atitude diante das palavras de Jesus."
+   },
+   "hint": "A permanência na tempestade é o fim da história.",
+   "learningObjective": "Compreender o encadeamento da casa prudente.",
+   "evidence": [
+    "Mateus 7:24–25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 7:26, sobre o que o insensato edificou a casa dele?",
+   "verseRef": "Mateus 7:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "areia"
+    },
+    {
+     "id": "b",
+     "text": "rocha"
+    },
+    {
+     "id": "c",
+     "text": "argila"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "edificou sua casa sobre a areia",
+   "feedbackCorrect": "Ouvir sem praticar constrói bonito por cima e frágil por baixo do chão.",
+   "feedbackWrong": {
+    "b": "Rocha é o fundamento de quem pratica em 7:24.",
+    "c": "Argila não é o material citado por Jesus aqui."
+   },
+   "hint": "É o chão que a água leva embora na cena.",
+   "learningObjective": "Lembrar o fundamento do insensato.",
+   "evidence": [
+    "Mateus 7:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 7:24 a Tiago 1:22?",
+   "verseRef": "Mateus 7:24",
+   "passageA": {
+    "ref": "Mateus 7:24"
+   },
+   "passageB": {
+    "ref": "Tiago 1:22"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ouvir e praticar a palavra"
+    },
+    {
+     "id": "b",
+     "text": "Ouvir dispensa qualquer prática"
+    },
+    {
+     "id": "c",
+     "text": "Praticar sem ouvir a palavra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ouve estas minhas palavras e as coloca em prática",
+   "feedbackCorrect": "Tiago chama de praticantes da palavra os mesmos prudentes do fim do Sermão.",
+   "feedbackWrong": {
+    "b": "Os dois textos recusam o ouvinte que só escuta.",
+    "c": "Ouvir vem primeiro; praticar é a resposta a ele."
+   },
+   "hint": "Veja o título que Tiago dá a quem obedece.",
+   "learningObjective": "Relacionar prática da palavra em Jesus e Tiago.",
+   "evidence": [
+    "Mateus 7:24",
+    "Tiago 1:22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Mateus 7:22–23 sustenta que fazer maravilhas no nome de Jesus garante ser conhecido por ele",
+   "verseRef": "Mateus 7:22–23",
+   "correctOptionId": "false",
+   "evidenceSpan": "Nunca os conheci; afastem-se de mim",
+   "feedbackCorrect": "Atividade religiosa sem obediência ouve a frase mais dura do Sermão inteiro.",
+   "feedbackWrong": {
+    "true": "A resposta de Jesus em 7:23 desmente essa garantia automática."
+   },
+   "hint": "Ouça a resposta final de Jesus nessa cena.",
+   "learningObjective": "Rejeitar garantia por atividade religiosa.",
+   "evidence": [
+    "Mateus 7:21–22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 7:25, toque sobre o que a casa que não caiu estava edificada.",
+   "verseRef": "Mateus 7:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre a rocha"
+    },
+    {
+     "id": "b",
+     "text": "contra aquela casa"
+    },
+    {
+     "id": "c",
+     "text": "os ventos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "estava edificada sobre a rocha",
+   "feedbackCorrect": "Três palavras sustentam a casa e fecham sete capítulos de ensino de Jesus.",
+   "feedbackWrong": {
+    "b": "Isso é a direção do ataque da tempestade, não a base.",
+    "c": "Eles atacam a casa; não são o fundamento dela."
+   },
+   "hint": "Procure a base citada no fim do versículo.",
+   "learningObjective": "Sustentar no texto o fundamento que permanece.",
+   "evidence": [
+    "Mateus 7:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o fim do Sermão em Mateus 7:15–27 sustenta sobre a fé verdadeira?",
+   "verseRef": "Mateus 7:24–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ela se prova em palavras bonitas sobre Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Ela ouve Jesus e pratica, permanecendo na prova"
+    },
+    {
+     "id": "c",
+     "text": "Ela evita tempestades por ser casa na rocha"
+    },
+    {
+     "id": "d",
+     "text": "Ela depende de disfarces que impressionam pessoas"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ouve estas minhas palavras e as coloca em prática",
+   "feedbackCorrect": "Fruto, obediência e fundamento dizem o mesmo: fé verdadeira aparece agindo e fica.",
+   "feedbackWrong": {
+    "a": "Chamar Senhor sem praticar é recusado em 7:21.",
+    "c": "A tempestade bate nas duas casas do mesmo jeito.",
+    "d": "Disfarce de ovelha é o perigo condenado em 7:15."
+   },
+   "hint": "Junte fruto, prática e casa que não cai.",
+   "learningObjective": "Escolher a interpretação do fim do Sermão.",
+   "evidence": [
+    "Mateus 7:24–25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da casa que permanece?",
+   "verseRef": "Mateus 7:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ouvinte escuta as palavras de Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Ele coloca cada palavra em prática"
+    },
+    {
+     "id": "c",
+     "text": "Vida permanece firme na tempestade"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "e as coloca em prática",
+   "feedbackCorrect": "Ouvir, praticar e permanecer: Jesus assina o Sermão com esse caminho completo.",
+   "feedbackWrong": {
+    "default": "Comece pelo ouvir, o passo comum a todos aqui."
+   },
+   "hint": "Permanecer é o fruto final da prática fiel.",
+   "learningObjective": "Ver o fim do Sermão como chamado à prática.",
+   "evidence": [
+    "Mateus 7:24",
+    "Lucas 6:48"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 7:27, como foi a ruína da casa edificada sobre a areia?",
+   "verseRef": "Mateus 7:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "grande"
+    },
+    {
+     "id": "b",
+     "text": "pequena"
+    },
+    {
+     "id": "c",
+     "text": "lenta"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sendo grande a sua ruína",
+   "feedbackCorrect": "A última palavra do ensino é um alerta do tamanho da queda de quem só ouve.",
+   "feedbackWrong": {
+    "b": "Jesus usa justamente o adjetivo contrário para assustar.",
+    "c": "A cena é de colapso total, não de desgaste lento."
+   },
+   "hint": "É o tamanho que fecha o Sermão inteiro.",
+   "learningObjective": "Lembrar o fim da casa insensata.",
+   "evidence": [
+    "Mateus 7:27"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 7:24 a Lucas 6:48?",
+   "verseRef": "Mateus 7:24–25",
+   "passageA": {
+    "ref": "Mateus 7:24"
+   },
+   "passageB": {
+    "ref": "Lucas 6:48"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Casa fundada na rocha"
+    },
+    {
+     "id": "b",
+     "text": "Casa sem fundamento algum"
+    },
+    {
+     "id": "c",
+     "text": "Rocha impede qualquer chuva"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "edificou sua casa sobre a rocha",
+   "feedbackCorrect": "Lucas conta a mesma parábola final de Jesus cavando fundo até a rocha firme.",
+   "feedbackWrong": {
+    "b": "Os dois textos exaltam o fundamento bem cavado e firme.",
+    "c": "A chuva bate; a diferença é onde a casa se apoia."
+   },
+   "hint": "Veja onde o construtor de Lucas chega cavando.",
+   "learningObjective": "Ligar a casa na rocha nos Evangelhos.",
+   "evidence": [
+    "Mateus 7:24–25",
+    "Lucas 6:48"
+   ]
+  }
+ ]
+}

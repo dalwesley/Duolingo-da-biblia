@@ -62,67 +62,81 @@ class HomeWidgetService {
 
     final l = L10n.current;
     final goal = progress.settings.dailyGoal.clamp(1, 99);
-    final done = progress.walkedToday ? progress.missionsToday : 0;
+    final walked = progress.walkedToday;
+    final done = walked ? progress.missionsToday : 0;
     final streak = progress.streak;
     final goalMet = progress.dailyGoalMet;
-    final atRisk = progress.isStreakAtRisk;
+    final atRisk =
+        progress.isStreakAtRisk ||
+        (streak > 0 && !walked && progress.yesterdayWasFrozen);
 
-    final statusLine = _statusLine(
-      goalMet: goalMet,
-      atRisk: atRisk,
-      streak: streak,
-      goal: goal,
-      done: done,
-      nextTitle: progress.nextSceneTitle,
-      nextTease: progress.nextSceneTease,
-    );
-    final streakLabel = l.commonDays(streak);
     final nextTitle = (progress.nextSceneTitle ?? '').trim();
-    final progressLabel = nextTitle.isNotEmpty
-        ? (goalMet
-            ? l.widgetTomorrowTitle(nextTitle)
-            : l.widgetTodayTitle(nextTitle))
-        : (goalMet
-            ? l.widgetGoalDone
-            : l.widgetProgressScenes(done, goal));
+    final todayLabel = nextTitle.isNotEmpty
+        ? l.widgetTodayTitle(nextTitle)
+        : l.widgetScenesLeftToday(goal - done);
+    final progressLabel = goalMet
+        ? (nextTitle.isNotEmpty
+              ? l.widgetTomorrowTitle(nextTitle)
+              : l.widgetGoalDone)
+        : (nextTitle.isNotEmpty
+              ? l.widgetTodayTitle(nextTitle)
+              : l.widgetProgressScenes(done, goal));
+    final days = l.widgetDaysInRow(streak);
+
+    // O card: o widget nativo conta até [dayEnd] sozinho e, se o app não
+    // abrir, vira o dia com os textos `next_*` (garantida → em risco) ou
+    // `away_*` (dia perdido).
+    final String state;
+    final String headline;
+    final String big;
+    final String sub;
+    if (walked) {
+      state = 'safe';
+      headline = l.widgetStreakSafe;
+      big = progressLabel;
+      sub = goalMet ? days : '$days · ${l.widgetScenesLeft(goal - done)}';
+    } else if (atRisk) {
+      state = 'risk';
+      headline = l.widgetKeepStreak;
+      big = '';
+      sub = '$days · ${l.widgetScenesLeft(goal)}';
+    } else if (streak <= 0) {
+      state = 'start';
+      headline = l.widgetStartStreak;
+      big = '';
+      sub = todayLabel;
+    } else {
+      state = 'away';
+      headline = l.widgetBackToTrail;
+      big = todayLabel;
+      sub = l.widgetBehindCaravan;
+    }
+
+    final now = DateTime.now();
+    final dayEnd = DateTime(now.year, now.month, now.day + 1);
 
     await HomeWidget.saveWidgetData('streak', streak);
-    await HomeWidget.saveWidgetData('missions_done', done);
-    await HomeWidget.saveWidgetData('daily_goal', goal);
-    await HomeWidget.saveWidgetData('goal_met', goalMet);
-    await HomeWidget.saveWidgetData('streak_at_risk', atRisk);
-    await HomeWidget.saveWidgetData('status_line', statusLine);
-    await HomeWidget.saveWidgetData('streak_label', streakLabel);
-    await HomeWidget.saveWidgetData('progress_label', progressLabel);
+    await HomeWidget.saveWidgetData('card_state', state);
+    await HomeWidget.saveWidgetData(
+      'card_day_end',
+      dayEnd.millisecondsSinceEpoch,
+    );
+    await HomeWidget.saveWidgetData('card_headline', headline);
+    await HomeWidget.saveWidgetData('card_big', big);
+    await HomeWidget.saveWidgetData('card_sub', sub);
+    await HomeWidget.saveWidgetData('card_next_headline', l.widgetKeepStreak);
+    await HomeWidget.saveWidgetData(
+      'card_next_sub',
+      '$days · ${l.widgetScenesLeft(goal)}',
+    );
+    await HomeWidget.saveWidgetData('card_away_headline', l.widgetBackToTrail);
+    await HomeWidget.saveWidgetData('card_away_big', todayLabel);
+    await HomeWidget.saveWidgetData('card_away_sub', l.widgetBehindCaravan);
 
     await HomeWidget.updateWidget(
       androidName: _androidProvider,
       iOSName: _iosKind,
       qualifiedAndroidName: 'com.trilha.trilha_app.$_androidProvider',
     );
-  }
-
-  static String _statusLine({
-    required bool goalMet,
-    required bool atRisk,
-    required int streak,
-    required int goal,
-    required int done,
-    String? nextTitle,
-    String? nextTease,
-  }) {
-    final l = L10n.current;
-    final tease = (nextTease ?? '').trim();
-    if (goalMet) {
-      return tease.isEmpty ? l.widgetTrailWaitsTomorrow : tease;
-    }
-    if (atRisk && streak > 0) {
-      return l.widgetBehindCaravan;
-    }
-    if (tease.isNotEmpty) return tease;
-    final title = (nextTitle ?? '').trim();
-    if (title.isNotEmpty) return title;
-    final left = (goal - done).clamp(1, goal);
-    return l.widgetScenesLeftToday(left);
   }
 }

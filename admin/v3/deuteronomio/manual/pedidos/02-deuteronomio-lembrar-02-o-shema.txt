@@ -1,0 +1,80 @@
+Escreva a cena "deuteronomio-lembrar-02-o-shema" da trilha "deuteronomio" (Deuteronômio).
+Tipo: lição — 6 perguntas por modo.
+V/F: 1 das 3 afirmações (uma por modo) deve ser verdadeira.
+
+<cena>
+{
+ "trail": {
+  "slug": "deuteronomio",
+  "title": "Deuteronômio",
+  "description": "Moisés repete a Lei: amar ao Senhor de todo o coração.",
+  "realm": "antigo-testamento"
+ },
+ "block": "Lembrar",
+ "mission": {
+  "slug": "deuteronomio-lembrar-02-o-shema",
+  "title": "O Shemá",
+  "type": "lesson",
+  "intro": "Ouve, Israel — amar a Deus acima de tudo.",
+  "hookRef": "Deuteronômio 31:7–8",
+  "hookNote": "Ouve, Israel — amar a Deus acima de tudo.",
+  "centralInsight": "O que isso revela sobre a aliança de Deus?",
+  "objective": "O que este passo ensina sobre shemá?"
+ },
+ "v2": {
+  "passageRef": "Deuteronômio 31:7–8",
+  "context": "Ouve, Israel — amar a Deus acima de tudo.",
+  "keyword": "Shemá",
+  "verseRefs": [
+   "Deuteronômio 6:4–5"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Deuteronômio 31:4–11",
+  "Deuteronômio 6:4–5"
+ ],
+ "verses": [
+  {
+   "ref": "Deuteronômio 31:4",
+   "text": "E o Senhor fará com eles o que fez com Seom e Ogue, reis dos amorreus, destruindo também a terra deles."
+  },
+  {
+   "ref": "Deuteronômio 31:5",
+   "text": "Quando, portanto, o Senhor os entregar diante de vocês, farão com eles de acordo com todo o mandamento que lhes tenho ordenado."
+  },
+  {
+   "ref": "Deuteronômio 31:6",
+   "text": "Esforcem-se e sejam corajosos; não temam nem se aterrorizem diante deles, pois o Senhor, seu Deus, está com vocês; Ele não os abandonará nem os deixará."
+  },
+  {
+   "ref": "Deuteronômio 31:7",
+   "text": "E Moisés chamou a Josué e lhe disse na presença de todo o Israel: Sê forte e corajoso, porque com este povo entrarás na terra que o Senhor, sob juramento, prometeu dar a teus pais; e tu os farás herdá-la."
+  },
+  {
+   "ref": "Deuteronômio 31:8",
+   "text": "O Senhor vai adiante de ti; Ele estará contigo, não te deixará, nem te abandonará; não temas, nem te atemorizes."
+  },
+  {
+   "ref": "Deuteronômio 31:9",
+   "text": "E Moisés escreveu esta lei e a entregou aos sacerdotes, filhos de Levi, que transportavam a arca da aliança do Senhor, e a todos os anciãos de Israel."
+  },
+  {
+   "ref": "Deuteronômio 31:10",
+   "text": "Moisés deu-lhes ordem, dizendo: Ao final de cada sete anos, precisamente no ano da remissão, durante a Festa dos Tabernáculos,"
+  },
+  {
+   "ref": "Deuteronômio 31:11",
+   "text": "Quando todo o Israel se apresentar diante do Senhor, seu Deus, no lugar que Ele escolher, você lerá esta lei perante todo o Israel."
+  },
+  {
+   "ref": "Deuteronômio 6:4",
+   "text": "Ouve, Israel: o Senhor, nosso Deus, é o único Senhor."
+  },
+  {
+   "ref": "Deuteronômio 6:5",
+   "text": "Amarás, portanto, o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e de toda a tua força."
+  }
+ ]
+}
+</cena>

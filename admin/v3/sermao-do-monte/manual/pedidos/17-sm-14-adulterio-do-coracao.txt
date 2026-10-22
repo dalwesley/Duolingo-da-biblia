@@ -1,0 +1,64 @@
+Escreva a cena "sm-14-adulterio-do-coracao" da trilha "sermao-do-monte" (Sermão do Monte).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "sermao-do-monte",
+  "title": "Sermão do Monte",
+  "description": "Aprenda a viver como cidadão do Reino de Deus através dos ensinamentos de Jesus em Mateus 5–7.",
+  "realm": "vida-crista"
+ },
+ "block": "Relações do Reino",
+ "mission": {
+  "slug": "sm-14-adulterio-do-coracao",
+  "title": "Adultério do coração",
+  "type": "lesson",
+  "intro": "A segunda antítese aprofunda o sétimo mandamento. Jesus não relaxa a ética sexual — a leva ao olhar e ao desejo. Fidelidade no Reino começa no coração e protege o casamento.",
+  "hookRef": "Mateus 5:27–32",
+  "hookNote": "Jesus aprofunda Êxodo 20:14. O adultério não começa só no ato — começa no olhar com desejo possessivo (epithymēsai). As imagens fortes de “…",
+  "centralInsight": "O desejo pode adulterar antes do ato",
+  "objective": "Meus olhos e minha fidelidade protegem o que Deus uniu — ou negociam com o desejo?"
+ },
+ "v2": {
+  "passageRef": "Mateus 5:27–32",
+  "context": "Jesus aprofunda Êxodo 20:14. O adultério não começa só no ato — começa no olhar com desejo possessivo (epithymēsai). As imagens fortes de “arrancar o olho” e “cortar a mão” ensinam radicalidade contra o pecado, não automutilação literal. Em seguida, Jesus confronta o divórcio fácil: o casamento não é descartável; repudiar por qualquer motivo gera adultério. Pureza e fidelidade andam juntas.",
+  "keyword": "Coração",
+  "verseRefs": [
+   "Mateus 5:28"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Mateus 5:27–32",
+  "Mateus 5:28"
+ ],
+ "verses": [
+  {
+   "ref": "Mateus 5:27",
+   "text": "Vocês ouviram o que foi dito aos antigos: Não cometerás adultério."
+  },
+  {
+   "ref": "Mateus 5:28",
+   "text": "Eu, porém, lhes digo que qualquer que olhar para uma mulher com intenção impura, já adulterou com ela em seu coração."
+  },
+  {
+   "ref": "Mateus 5:29",
+   "text": "Se o teu olho direito te faz tropeçar, arranca-o e lança-o longe de ti; pois é melhor que se perca um dos teus membros do que todo o teu corpo ser lançado no inferno."
+  },
+  {
+   "ref": "Mateus 5:30",
+   "text": "E, se a tua mão direita te faz tropeçar, corta-a e lança-a de ti; pois te convém que se perca um dos teus membros e não vá todo o teu corpo para o inferno."
+  },
+  {
+   "ref": "Mateus 5:31",
+   "text": "Também foi dito: Aquele que repudiar sua mulher, deve dar-lhe uma carta de divórcio."
+  },
+  {
+   "ref": "Mateus 5:32",
+   "text": "Eu, porém, vos digo que qualquer que repudiar sua mulher, exceto em caso de infidelidade, a faz tornar-se adúltera; e aquele que se casar com a repudiada comete adultério."
+  }
+ ]
+}
+</cena>

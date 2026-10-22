@@ -1,0 +1,786 @@
+{
+  "studies": {
+    "lc-01-salvador-humilde": {
+      "slug": "lc-01-salvador-humilde",
+      "passageRef": "Lucas 2:7–12",
+      "passageText": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria. Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor. E isto servirá de sinal para vocês: encontrarão o menino envolto em faixas e deitado em uma manjedoura.",
+      "passages": [
+        {
+          "ref": "Lucas 2:7–12",
+          "text": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria. Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor. E isto servirá de sinal para vocês: encontrarão o menino envolto em faixas e deitado em uma manjedoura."
+        },
+        {
+          "ref": "Lucas 2:13–14",
+          "text": "E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo: Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem."
+        }
+      ],
+      "context": "Maria e José estão em Belém e não encontram lugar na hospedaria. Nos campos perto dali, pastores comuns passam a noite cuidando dos rebanhos quando recebem a grande notícia.",
+      "keyword": "Salvador",
+      "keywordGloss": "Nome dado ao menino nascido em Belém, que traz a salvação de Deus ao povo.",
+      "focusQuestion": "Como você recebe a notícia de que o Salvador também nasceu para você?",
+      "reflectionPrompts": [
+        "Boas novas aos simples",
+        "Alegria para todo o povo",
+        "Deus chega sem grandeza humana"
+      ],
+      "facts": [
+        {
+          "text": "O menino foi deitado em uma manjedoura porque não havia lugar na hospedaria.",
+          "evidenceRef": "Lucas 2:7",
+          "evidenceSpan": "o deitou em uma manjedoura"
+        },
+        {
+          "text": "Havia pastores nos campos cuidando dos rebanhos de noite.",
+          "evidenceRef": "Lucas 2:8",
+          "evidenceSpan": "havia pastores que estavam nos campos"
+        },
+        {
+          "text": "A glória do Senhor envolveu os pastores em luz e eles tiveram grande temor.",
+          "evidenceRef": "Lucas 2:9",
+          "evidenceSpan": "a glória do Senhor os envolveu em luz"
+        },
+        {
+          "text": "O anjo anuncia boas novas de grande alegria para todo o povo.",
+          "evidenceRef": "Lucas 2:10",
+          "evidenceSpan": "boas novas de grande alegria"
+        },
+        {
+          "text": "Na cidade de Davi nasceu o Salvador, que é Cristo, o Senhor.",
+          "evidenceRef": "Lucas 2:11",
+          "evidenceSpan": "nasceu para vocês o Salvador"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Salvador",
+          "gloss": "Aquele que Deus envia para salvar o seu povo, anunciado no nascimento de Jesus."
+        },
+        {
+          "term": "manjedoura",
+          "gloss": "Lugar simples onde o menino foi deitado, sinal para os pastores o reconhecerem."
+        },
+        {
+          "term": "pastores",
+          "gloss": "Trabalhadores simples do campo que recebem primeiro o anúncio do nascimento."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Nascimento em lugar simples",
+          "evidenceRef": "Lucas 2:7"
+        },
+        {
+          "label": "Pastores trabalhando à noite",
+          "evidenceRef": "Lucas 2:8"
+        },
+        {
+          "label": "Anjo anuncia boas novas",
+          "evidenceRef": "Lucas 2:10"
+        },
+        {
+          "label": "Louvor e paz anunciada",
+          "evidenceRef": "Lucas 2:14"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "O menino fica na manjedoura porque não havia lugar para eles na hospedaria.",
+          "marker": "porque",
+          "evidenceRef": "Lucas 2:7"
+        },
+        {
+          "kind": "causa",
+          "text": "Os pastores não precisam temer pois o anjo traz boas novas de alegria.",
+          "marker": "pois",
+          "evidenceRef": "Lucas 2:10"
+        },
+        {
+          "kind": "sequência",
+          "text": "Naquele momento, à voz do anjo se junta a multidão celestial em louvor.",
+          "marker": "naquele momento",
+          "evidenceRef": "Lucas 2:13"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Mateus 1:21",
+          "bridge": "Jesus salvará seu povo",
+          "text": "Ela dará à luz um filho e você lhe porá o nome de Jesus, porque ele salvará o seu povo dos seus pecados."
+        },
+        {
+          "ref": "Miquéias 5:2",
+          "bridge": "De Belém sai o governante",
+          "text": "E você, Belém, embora sejas pequena demais para ser contada entre os milhares de Judá, de você me sairá aquele que deve reinar em Israel, cujas origens são desde os tempos antigos, desde os dias da eternidade."
+        },
+        {
+          "ref": "Isaías 9:6",
+          "bridge": "Um menino nos nasceu",
+          "text": "Porque um menino nos nasceu, um filho se nos deu; e o governo está sobre os seus ombros; e seu nome será: Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz;"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Salvador foi anunciado primeiro às pessoas mais importantes e religiosas.",
+          "why": "O anúncio chega a pastores no campo, e a alegria é para todo o povo (2:8-10)."
+        },
+        {
+          "text": "A manjedoura mostra que Deus estava ausente daquele nascimento humilde.",
+          "why": "A manjedoura é dada como sinal para encontrar o menino, e os céus louvam a Deus (2:12-14)."
+        },
+        {
+          "text": "O anjo veio principalmente assustar os pastores.",
+          "why": "Ele começa dizendo para não terem medo e traz boas novas de grande alegria (2:10)."
+        }
+      ],
+      "centralInsight": "O nascimento de Jesus é anunciado a pastores. Lucas destaca a alegria da salvação e a graça de Deus que alcança os humildes.",
+      "anchorQuestion": "A quem o anjo anunciou o nascimento do Salvador e o que ele disse?",
+      "relatedVerses": [
+        {
+          "reference": "Mateus 1:21",
+          "reason": "Jesus salvará seu povo"
+        },
+        {
+          "reference": "Miquéias 5:2",
+          "reason": "De Belém sai o governante"
+        },
+        {
+          "reference": "Isaías 9:6",
+          "reason": "Um menino nos nasceu"
+        }
+      ]
+    },
+    "lc-02-misericordia": {
+      "slug": "lc-02-misericordia",
+      "passageRef": "Lucas 15:4–7",
+      "passageText": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la? E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo. E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida. Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento.",
+      "passages": [
+        {
+          "ref": "Lucas 15:4–7",
+          "text": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la? E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo. E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida. Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento."
+        },
+        {
+          "ref": "Lucas 15:8–10",
+          "text": "Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la? E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a dracma que tinha perdido. Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende."
+        }
+      ],
+      "context": "Lucas 15 reúne histórias de busca: uma ovelha entre cem e uma moeda entre dez. Quem perde não desiste do que se perdeu e celebra ao encontrar.",
+      "keyword": "Misericórdia",
+      "keywordGloss": "Deus vai ao encontro de quem se perdeu e se alegra quando há arrependimento.",
+      "focusQuestion": "Como você responde a um Deus que busca quem se perdeu?",
+      "reflectionPrompts": [
+        "Deus busca o perdido",
+        "Alegria pelo arrependido",
+        "Celebrar quem volta"
+      ],
+      "facts": [
+        {
+          "text": "O homem com cem ovelhas perde uma e vai buscá-la até encontrar.",
+          "evidenceRef": "Lucas 15:4",
+          "evidenceSpan": "possui cem ovelhas e perde uma delas"
+        },
+        {
+          "text": "Ao encontrar a ovelha, ele a coloca sobre os ombros com júbilo.",
+          "evidenceRef": "Lucas 15:5",
+          "evidenceSpan": "a coloca sobre os ombros"
+        },
+        {
+          "text": "Ele reúne amigos e vizinhos para se alegrarem com ele.",
+          "evidenceRef": "Lucas 15:6",
+          "evidenceSpan": "reúne os amigos e vizinhos"
+        },
+        {
+          "text": "Há maior júbilo no céu por um pecador que se arrepende.",
+          "evidenceRef": "Lucas 15:7",
+          "evidenceSpan": "haverá maior júbilo no céu"
+        },
+        {
+          "text": "A mulher acende a candeia, varre a casa e procura a dracma com empenho.",
+          "evidenceRef": "Lucas 15:8",
+          "evidenceSpan": "acende a candeia, varre a casa"
+        },
+        {
+          "text": "Há júbilo diante dos anjos de Deus por um pecador que se arrepende.",
+          "evidenceRef": "Lucas 15:10",
+          "evidenceSpan": "há júbilo diante dos anjos de Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "perdida",
+          "gloss": "Condição da ovelha e da dracma, e imagem de quem se afastou de Deus."
+        },
+        {
+          "term": "arrepende",
+          "gloss": "Mudança de rumo de quem se perdeu e volta para Deus."
+        },
+        {
+          "term": "júbilo",
+          "gloss": "Alegria grande na terra e no céu quando o perdido é encontrado."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Uma ovelha se perde entre cem",
+          "evidenceRef": "Lucas 15:4"
+        },
+        {
+          "label": "Busca até encontrar e carregar",
+          "evidenceRef": "Lucas 15:5"
+        },
+        {
+          "label": "Amigos celebram o achado",
+          "evidenceRef": "Lucas 15:6"
+        },
+        {
+          "label": "Céu se alegra pelo arrependido",
+          "evidenceRef": "Lucas 15:7"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Ao encontrar a ovelha, o homem a coloca sobre os ombros.",
+          "marker": "ao encontrá-la",
+          "evidenceRef": "Lucas 15:5"
+        },
+        {
+          "kind": "causa",
+          "text": "Ele chama os amigos porque já achou a ovelha perdida.",
+          "marker": "porque",
+          "evidenceRef": "Lucas 15:6"
+        },
+        {
+          "kind": "resultado",
+          "text": "Assim, do achado na terra Jesus aponta o júbilo diante dos anjos.",
+          "marker": "Assim",
+          "evidenceRef": "Lucas 15:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ezequiel 34:11",
+          "bridge": "O Senhor busca suas ovelhas",
+          "text": "Porque assim diz o Senhor Deus: Eis que eu mesmo buscarei as minhas ovelhas e as procurarei."
+        },
+        {
+          "ref": "Mateus 18:14",
+          "bridge": "O Pai não quer perdidos",
+          "text": "Assim também não é da vontade do seu Pai celeste que está nos céus que um só desses pequeninos se perca."
+        },
+        {
+          "ref": "1 Timóteo 1:15",
+          "bridge": "Cristo veio salvar pecadores",
+          "text": "Esta é uma palavra fiel e digna de toda aceitação: Cristo Jesus veio ao mundo para salvar os pecadores, dos quais eu sou o principal."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Deus espera o perdido voltar sozinho, sem ir buscá-lo.",
+          "why": "Nas duas histórias, quem perde vai procurar com empenho até encontrar (15:4,8)."
+        },
+        {
+          "text": "A alegria fica só na terra, sem relação com o céu.",
+          "why": "Jesus liga o achado ao júbilo no céu e diante dos anjos de Deus (15:7,10)."
+        },
+        {
+          "text": "Celebrar um arrependido significa desprezar os que permaneceram.",
+          "why": "O foco do texto é o valor do perdido encontrado, não desprezo pelos outros."
+        }
+      ],
+      "centralInsight": "As parábolas da ovelha, da moeda e do filho perdido revelam o coração de Deus. Jesus recebe pecadores e os chama ao arrependimento.",
+      "anchorQuestion": "O que acontece no céu quando um pecador se arrepende, segundo Lucas 15?",
+      "relatedVerses": [
+        {
+          "reference": "Ezequiel 34:11",
+          "reason": "O Senhor busca suas ovelhas"
+        },
+        {
+          "reference": "Mateus 18:14",
+          "reason": "O Pai não quer perdidos"
+        },
+        {
+          "reference": "1 Timóteo 1:15",
+          "reason": "Cristo veio salvar pecadores"
+        }
+      ]
+    },
+    "lc-03-caminho-jerusalem": {
+      "slug": "lc-03-caminho-jerusalem",
+      "passageRef": "Lucas 9:48–53",
+      "passageText": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande. João respondeu: Mestre, vimos certo homem expulsando demônios em teu nome, e o proibimos, porque não anda conosco. Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês. Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho. E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada. Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém.",
+      "passages": [
+        {
+          "ref": "Lucas 9:48–53",
+          "text": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande. João respondeu: Mestre, vimos certo homem expulsando demônios em teu nome, e o proibimos, porque não anda conosco. Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês. Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho. E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada. Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém."
+        },
+        {
+          "ref": "Lucas 9:54",
+          "text": "E os seus discípulos, Tiago e João, vendo isso, perguntaram: Senhor, queres que mandemos descer fogo do céu para consumi-los?"
+        }
+      ],
+      "context": "Os discípulos discutem grandeza e exclusividade enquanto Jesus se aproxima do tempo decisivo. Ele corrige os dois impulsos e decide firmemente ir para Jerusalém.",
+      "keyword": "Jerusalém",
+      "keywordGloss": "Destino para onde Jesus caminha com decisão firme, em obediência ao Pai.",
+      "focusQuestion": "O que significa, para você, grandeza no caminho com Jesus?",
+      "reflectionPrompts": [
+        "O menor é grande",
+        "Caminho com decisão firme",
+        "Sem vingança contra quem rejeita"
+      ],
+      "facts": [
+        {
+          "text": "Quem recebe uma criança em nome de Jesus recebe o próprio Jesus.",
+          "evidenceRef": "Lucas 9:48",
+          "evidenceSpan": "Aquele que receber esta criança em meu nome"
+        },
+        {
+          "text": "O menor entre todos é quem realmente é grande.",
+          "evidenceRef": "Lucas 9:48",
+          "evidenceSpan": "o menor entre vocês é quem realmente é grande"
+        },
+        {
+          "text": "João diz que proibiram um homem porque ele não andava com o grupo.",
+          "evidenceRef": "Lucas 9:49",
+          "evidenceSpan": "o proibimos, porque não anda conosco"
+        },
+        {
+          "text": "Jesus diz que quem não é contra os discípulos é a favor deles.",
+          "evidenceRef": "Lucas 9:50",
+          "evidenceSpan": "quem não é contra vocês é a favor de vocês"
+        },
+        {
+          "text": "Jesus decidiu firmemente ir para Jerusalém ao se aproximar sua ascensão.",
+          "evidenceRef": "Lucas 9:51",
+          "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém"
+        },
+        {
+          "text": "Os samaritanos não receberam Jesus porque ele ia para Jerusalém.",
+          "evidenceRef": "Lucas 9:53",
+          "evidenceSpan": "Mas não o receberam"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "menor",
+          "gloss": "Aquele sem destaque, que Jesus apresenta como realmente grande."
+        },
+        {
+          "term": "receber",
+          "gloss": "Acolher em nome de Jesus, gesto que alcança o próprio Jesus e o Pai."
+        },
+        {
+          "term": "Jerusalém",
+          "gloss": "Cidade para onde Jesus caminha decidido, apesar da rejeição no caminho."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Grandeza no menor e na criança",
+          "evidenceRef": "Lucas 9:48"
+        },
+        {
+          "label": "Jesus corrige a exclusividade",
+          "evidenceRef": "Lucas 9:50"
+        },
+        {
+          "label": "Decisão firme rumo a Jerusalém",
+          "evidenceRef": "Lucas 9:51"
+        },
+        {
+          "label": "Rejeição samaritana no caminho",
+          "evidenceRef": "Lucas 9:53"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "João explica que proibiram o homem porque ele não andava com o grupo.",
+          "marker": "porque",
+          "evidenceRef": "Lucas 9:49"
+        },
+        {
+          "kind": "contraste",
+          "text": "Mensageiros preparam pousada, mas os samaritanos não recebem Jesus.",
+          "marker": "Mas",
+          "evidenceRef": "Lucas 9:53"
+        },
+        {
+          "kind": "propósito",
+          "text": "Mensageiros entram na aldeia para preparar pousada para Jesus.",
+          "marker": "para",
+          "evidenceRef": "Lucas 9:52"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Marcos 10:45",
+          "bridge": "Grandeza servindo e salvando",
+          "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+        },
+        {
+          "ref": "Isaías 50:7",
+          "bridge": "Rosto firme no caminho",
+          "text": "Porque o Senhor Deus me ajuda, por isso não me sinto envergonhado; por isso, firmei o meu rosto como uma pedra pois sei que não serei humilhado."
+        },
+        {
+          "ref": "Filipenses 2:8",
+          "bridge": "Obediência até a morte",
+          "text": "E, reconhecendo-se como homem, humilhou-se a si mesmo, tornando-se obediente até à morte, e morte de cruz."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Grandeza no Reino se mede por mandar e ter destaque.",
+          "why": "Jesus afirma que o menor entre todos é quem realmente é grande (9:48)."
+        },
+        {
+          "text": "Quem não está no nosso grupo deve ser tratado como inimigo.",
+          "why": "Jesus manda não proibir, pois quem não é contra é a favor (9:50)."
+        },
+        {
+          "text": "A rejeição justifica responder com fogo e vingança.",
+          "why": "O desejo de fogo é pergunta de Tiago e João, não ensino nem ordem de Jesus (9:54)."
+        }
+      ],
+      "centralInsight": "A viagem a Jerusalém organiza grande parte de Lucas. Jesus sabe que sua missão envolve sofrimento, mas segue obediente ao plano do Pai.",
+      "anchorQuestion": "Para onde Jesus decidiu firmemente ir e o que ele ensina sobre grandeza?",
+      "relatedVerses": [
+        {
+          "reference": "Marcos 10:45",
+          "reason": "Grandeza servindo e salvando"
+        },
+        {
+          "reference": "Isaías 50:7",
+          "reason": "Rosto firme no caminho"
+        },
+        {
+          "reference": "Filipenses 2:8",
+          "reason": "Obediência até a morte"
+        }
+      ]
+    },
+    "lc-04-vitoria-ressurreicao": {
+      "slug": "lc-04-vitoria-ressurreicao",
+      "passageRef": "Lucas 24:44–49",
+      "passageText": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras. E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém. E vocês são testemunhas dessas coisas. Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de poder.",
+      "passages": [
+        {
+          "ref": "Lucas 24:44–49",
+          "text": "E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras. E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém. E vocês são testemunhas dessas coisas. Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de poder."
+        },
+        {
+          "ref": "Lucas 24:43",
+          "text": "E ele o pegou e comeu na presença deles."
+        },
+        {
+          "ref": "Lucas 24:50",
+          "text": "E os levou para fora, até Betânia; e, erguendo as mãos, os abençoou."
+        }
+      ],
+      "context": "Depois da ressurreição, Jesus está com os discípulos, come diante deles e volta às Escrituras. Antes de partir, ele anuncia a missão que começará em Jerusalém.",
+      "keyword": "Vitória",
+      "keywordGloss": "O Cristo sofre, ressuscita no terceiro dia e envia testemunhas a todas as nações.",
+      "focusQuestion": "Como as Escrituras ajudam você a entender quem Jesus é hoje?",
+      "reflectionPrompts": [
+        "Cristo sofreu e ressuscitou",
+        "Escrituras abertas por Jesus",
+        "Testemunhas a todas as nações"
+      ],
+      "facts": [
+        {
+          "text": "Jesus pegou o alimento e comeu na presença dos discípulos.",
+          "evidenceRef": "Lucas 24:43",
+          "evidenceSpan": "comeu na presença deles"
+        },
+        {
+          "text": "Tudo sobre Jesus escrito na Lei, nos Profetas e nos Salmos devia se cumprir.",
+          "evidenceRef": "Lucas 24:44",
+          "evidenceSpan": "está escrito na Lei de Moisés, nos Profetas e nos Salmos"
+        },
+        {
+          "text": "Jesus abriu o entendimento dos discípulos para compreenderem as Escrituras.",
+          "evidenceRef": "Lucas 24:45",
+          "evidenceSpan": "lhes abriu o entendimento para que pudessem compreender as Escrituras"
+        },
+        {
+          "text": "Era necessário o Cristo sofrer e ressuscitar dos mortos no terceiro dia.",
+          "evidenceRef": "Lucas 24:46",
+          "evidenceSpan": "era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia"
+        },
+        {
+          "text": "Arrependimento para remissão dos pecados seria proclamado a todas as nações.",
+          "evidenceRef": "Lucas 24:47",
+          "evidenceSpan": "se proclamará arrependimento para a remissão dos pecados a todas as nações"
+        },
+        {
+          "text": "Os discípulos são testemunhas dessas coisas.",
+          "evidenceRef": "Lucas 24:48",
+          "evidenceSpan": "vocês são testemunhas dessas coisas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Escrituras",
+          "gloss": "Lei, Profetas e Salmos, que Jesus abre para os discípulos entenderem."
+        },
+        {
+          "term": "arrependimento",
+          "gloss": "Mudança proclamada em nome de Cristo para remissão dos pecados."
+        },
+        {
+          "term": "testemunhas",
+          "gloss": "Quem viu o Cristo ressuscitado e anuncia o que aconteceu."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus come diante dos discípulos",
+          "evidenceRef": "Lucas 24:43"
+        },
+        {
+          "label": "Escrituras apontam para Cristo",
+          "evidenceRef": "Lucas 24:44"
+        },
+        {
+          "label": "Sofrimento e ressurreição necessários",
+          "evidenceRef": "Lucas 24:46"
+        },
+        {
+          "label": "Missão a todas as nações",
+          "evidenceRef": "Lucas 24:47"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Então Jesus abre o entendimento depois de lembrar suas palavras.",
+          "marker": "Então",
+          "evidenceRef": "Lucas 24:45"
+        },
+        {
+          "kind": "propósito",
+          "text": "Arrependimento é proclamado para remissão dos pecados.",
+          "marker": "para",
+          "evidenceRef": "Lucas 24:47"
+        },
+        {
+          "kind": "propósito",
+          "text": "Os discípulos permanecem na cidade até serem revestidos de poder do alto.",
+          "marker": "até que",
+          "evidenceRef": "Lucas 24:49"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 53:5",
+          "bridge": "O servo sofre pelos outros",
+          "text": "Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados."
+        },
+        {
+          "ref": "Atos 1:8",
+          "bridge": "Testemunhas até os confins",
+          "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+        },
+        {
+          "ref": "Mateus 28:19",
+          "bridge": "Missão a todas as nações",
+          "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo;"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O Cristo ressuscitado era apenas um espírito que não podia comer.",
+          "why": "Lucas diz que ele pegou o alimento e comeu na presença deles (24:43)."
+        },
+        {
+          "text": "O sofrimento de Cristo foi um acidente fora do plano de Deus.",
+          "why": "Jesus afirma que estava escrito e era necessário que ele sofresse (24:46)."
+        },
+        {
+          "text": "A missão deveria ficar restrita a Jerusalém para sempre.",
+          "why": "A proclamação é a todas as nações, começando por Jerusalém (24:47)."
+        }
+      ],
+      "centralInsight": "O Cristo não foi derrotado pela cruz. Seu sofrimento e sua glória cumprem o plano de Deus anunciado nas Escrituras.",
+      "anchorQuestion": "O que Jesus disse que estava escrito sobre o Cristo e sua missão?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 53:5",
+          "reason": "O servo sofre pelos outros"
+        },
+        {
+          "reference": "Atos 1:8",
+          "reason": "Testemunhas até os confins"
+        },
+        {
+          "reference": "Mateus 28:19",
+          "reason": "Missão a todas as nações"
+        }
+      ]
+    },
+    "lc-boss-revisao": {
+      "slug": "lc-boss-revisao",
+      "passageRef": "Lucas 2:10–11",
+      "passageText": "E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor.",
+      "passages": [
+        {
+          "ref": "Lucas 2:7–14",
+          "text": "E deu à luz o seu filho primogênito, enfaixou-o e o deitou em uma manjedoura, porque não havia lugar para eles na hospedaria. Naquela região, havia pastores que estavam nos campos, cuidando de seus rebanhos durante as vigílias da noite. E um anjo do Senhor desceu aonde eles estavam, e a glória do Senhor os envolveu em luz; e ficaram tomados de grande temor. E o anjo lhes disse: Não tenham medo, pois aqui trago boas novas de grande alegria, que serão para todo o povo: Hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor. E isto servirá de sinal para vocês: encontrarão o menino envolto em faixas e deitado em uma manjedoura. E, naquele momento, apareceu com o anjo uma multidão da milícia celestial, louvando a Deus e dizendo: Glória a Deus nas maiores alturas, e paz na terra entre os homens a quem ele quer bem."
+        },
+        {
+          "ref": "Lucas 15:4–10",
+          "text": "Qual de vós, que possui cem ovelhas e perde uma delas, não deixa as noventa e nove e vai em busca daquela que se perdeu, até encontrá-la? E, ao encontrá-la, a coloca sobre os ombros, transbordando de júbilo. E, ao chegar em casa, reúne os amigos e vizinhos, dizendo: Alegrem-se comigo, porque já achei a minha ovelha perdida. Digo a vocês que, assim, haverá maior júbilo no céu por causa de um pecador que se arrepende do que por noventa e nove justos que não precisam de arrependimento. Ou qual é a mulher que, tendo dez dracmas, se perde uma, não acende a candeia, varre a casa e a procura diligentemente até encontrá-la? E, ao encontrá-la, reúne as amigas e vizinhas, dizendo: Alegrem-se comigo, porque eu já achei a dracma que tinha perdido. Assim, lhes afirmo que, da mesma maneira, há júbilo diante dos anjos de Deus por um pecador que se arrepende."
+        },
+        {
+          "ref": "Lucas 9:48–54",
+          "text": "E lhes disse: Aquele que receber esta criança em meu nome, a mim me recebe; e quem me recebe, recebe aquele que me enviou; pois o menor entre vocês é quem realmente é grande. João respondeu: Mestre, vimos certo homem expulsando demônios em teu nome, e o proibimos, porque não anda conosco. Jesus lhes disse: Não proibam; pois quem não é contra vocês é a favor de vocês. Ao se aproximar o tempo da sua ascensão, Jesus decidiu firmemente que era necessário ir para Jerusalém demonstrando em seu semblante a intrépida determinação de seguir esse caminho. E enviou mensageiros à sua frente; indo eles, entraram em uma aldeia de samaritanos para preparar-lhe pousada. Mas não o receberam, pois o aspecto dele era de alguém que ia decisivamente para Jerusalém. E os seus discípulos, Tiago e João, vendo isso, perguntaram: Senhor, queres que mandemos descer fogo do céu para consumi-los?"
+        },
+        {
+          "ref": "Lucas 24:43–50",
+          "text": "E ele o pegou e comeu na presença deles. E disse-lhes: Estas são as palavras que lhes falei enquanto ainda estava com vocês: É indispensável que se cumpra tudo o que a meu respeito está escrito na Lei de Moisés, nos Profetas e nos Salmos. Então, lhes abriu o entendimento para que pudessem compreender as Escrituras. E lhes disse: Assim está escrito, que era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia; E em seu nome se proclamará arrependimento para a remissão dos pecados a todas as nações, começando por Jerusalém. E vocês são testemunhas dessas coisas. Eis que envio a vocês a promessa de meu Pai; permaneçam portanto, na cidade de Jerusalém, até que do alto sejam revestidos de poder. E os levou para fora, até Betânia; e, erguendo as mãos, os abençoou."
+        }
+      ],
+      "context": "Este desafio revisita Lucas: o Salvador anunciado a pastores, a busca pelos perdidos, a decisão de ir a Jerusalém e o Cristo ressuscitado que envia testemunhas.",
+      "keyword": "Salvador",
+      "keywordGloss": "Jesus nasce humilde, busca os perdidos, segue a Jerusalém e vence ressuscitando.",
+      "focusQuestion": "Qual parte do caminho de Jesus em Lucas mais chama você a segui-lo hoje?",
+      "reflectionPrompts": [
+        "Salvador dos humildes",
+        "Deus busca os perdidos",
+        "Testemunhas do ressuscitado"
+      ],
+      "facts": [
+        {
+          "text": "Na cidade de Davi nasceu o Salvador, que é Cristo, o Senhor.",
+          "evidenceRef": "Lucas 2:11",
+          "evidenceSpan": "nasceu para vocês o Salvador"
+        },
+        {
+          "text": "Há maior júbilo no céu por um pecador que se arrepende.",
+          "evidenceRef": "Lucas 15:7",
+          "evidenceSpan": "haverá maior júbilo no céu"
+        },
+        {
+          "text": "Jesus decidiu firmemente ir para Jerusalém.",
+          "evidenceRef": "Lucas 9:51",
+          "evidenceSpan": "Jesus decidiu firmemente que era necessário ir para Jerusalém"
+        },
+        {
+          "text": "Era necessário o Cristo sofrer e ressuscitar no terceiro dia.",
+          "evidenceRef": "Lucas 24:46",
+          "evidenceSpan": "era necessário que o Cristo sofresse e ressuscitasse dos mortos no terceiro dia"
+        },
+        {
+          "text": "Arrependimento seria proclamado a todas as nações, começando por Jerusalém.",
+          "evidenceRef": "Lucas 24:47",
+          "evidenceSpan": "se proclamará arrependimento para a remissão dos pecados a todas as nações"
+        },
+        {
+          "text": "Os discípulos são testemunhas dessas coisas.",
+          "evidenceRef": "Lucas 24:48",
+          "evidenceSpan": "vocês são testemunhas dessas coisas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Salvador",
+          "gloss": "Jesus, anunciado no nascimento como quem vem salvar o povo."
+        },
+        {
+          "term": "arrepende",
+          "gloss": "Mudança de quem se perdeu e volta, motivo de júbilo no céu."
+        },
+        {
+          "term": "testemunhas",
+          "gloss": "Discípulos que viram o ressuscitado e anunciam a todas as nações."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Nascimento anunciado aos pastores",
+          "evidenceRef": "Lucas 2:11"
+        },
+        {
+          "label": "Perdidos buscados com alegria",
+          "evidenceRef": "Lucas 15:7"
+        },
+        {
+          "label": "Caminho firme para Jerusalém",
+          "evidenceRef": "Lucas 9:51"
+        },
+        {
+          "label": "Cristo ressuscitado envia testemunhas",
+          "evidenceRef": "Lucas 24:48"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "O menino fica na manjedoura porque não havia lugar na hospedaria.",
+          "marker": "porque",
+          "evidenceRef": "Lucas 2:7"
+        },
+        {
+          "kind": "contraste",
+          "text": "Mensageiros preparam pousada, mas samaritanos não recebem Jesus.",
+          "marker": "Mas",
+          "evidenceRef": "Lucas 9:53"
+        },
+        {
+          "kind": "propósito",
+          "text": "Arrependimento é proclamado para remissão dos pecados a todas as nações.",
+          "marker": "para",
+          "evidenceRef": "Lucas 24:47"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ezequiel 34:11",
+          "bridge": "O Senhor busca suas ovelhas",
+          "text": "Porque assim diz o Senhor Deus: Eis que eu mesmo buscarei as minhas ovelhas e as procurarei."
+        },
+        {
+          "ref": "Marcos 10:45",
+          "bridge": "Grandeza servindo e salvando",
+          "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+        },
+        {
+          "ref": "Atos 1:8",
+          "bridge": "Testemunhas até os confins",
+          "text": "Mas recebereis poder, ao descer sobre vós o Espírito Santo; e sereis minhas testemunhas tanto em Jerusalém como em toda a Judéia e Samaria, e até os confins da terra."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Deus anuncia salvação só para pessoas importantes.",
+          "why": "O nascimento é anunciado a pastores e a alegria é para todo o povo (Lc 2)."
+        },
+        {
+          "text": "O perdido deve voltar sozinho, sem ser buscado.",
+          "why": "Lucas 15 mostra busca empenhada até encontrar o que se perdeu."
+        },
+        {
+          "text": "A cruz foi derrota fora do plano de Deus.",
+          "why": "Jesus afirma que estava escrito que o Cristo sofresse e ressuscitasse (24:46)."
+        }
+      ],
+      "centralInsight": "O que Jesus / a igreja revelam aqui?",
+      "anchorQuestion": "Como Lucas apresenta Jesus do nascimento humilde à ressurreição?",
+      "relatedVerses": [
+        {
+          "reference": "Ezequiel 34:11",
+          "reason": "O Senhor busca suas ovelhas"
+        },
+        {
+          "reference": "Marcos 10:45",
+          "reason": "Grandeza servindo e salvando"
+        },
+        {
+          "reference": "Atos 1:8",
+          "reason": "Testemunhas até os confins"
+        }
+      ]
+    }
+  }
+}

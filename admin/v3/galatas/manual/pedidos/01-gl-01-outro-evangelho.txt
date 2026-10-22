@@ -1,0 +1,75 @@
+Escreva a cena "gl-01-outro-evangelho" da trilha "galatas" (Gálatas).
+Tipo: lição — 6 perguntas por modo.
+V/F: 2 das 3 afirmações (uma por modo) devem ser verdadeiras.
+
+<cena>
+{
+ "trail": {
+  "slug": "galatas",
+  "title": "Gálatas",
+  "description": "Liberdade em Cristo — justificação pela fé, sem jugo da Lei.",
+  "realm": "novo-testamento"
+ },
+ "block": "Gálatas",
+ "mission": {
+  "slug": "gl-01-outro-evangelho",
+  "title": "Nenhum outro evangelho",
+  "type": "lesson",
+  "intro": "Paulo rejeita qualquer mensagem que acrescente obras à aceitação diante de Deus.",
+  "hookRef": "Nenhum outro evangelho",
+  "hookNote": "Paulo rejeita qualquer mensagem que acrescente obras à aceitação diante de Deus.",
+  "centralInsight": "Paulo instrui a igreja em Gálatas 1-2 com o evangelho no centro. O texto une a obra de Cristo à transformação concreta do discípulo. Ele ch…",
+  "objective": "Gálatas 1-2"
+ },
+ "v2": {
+  "passageRef": "Nenhum outro evangelho",
+  "context": "Paulo rejeita qualquer mensagem que acrescente obras à aceitação diante de Deus.",
+  "keyword": "Nenhum",
+  "verseRefs": [
+   "Gálatas 1:6–8"
+  ]
+ },
+ "earlierScenes": [],
+ "ranges": [
+  "Gálatas 1:3–11"
+ ],
+ "verses": [
+  {
+   "ref": "Gálatas 1:3",
+   "text": "Graça a vós e paz, da parte de Deus, nosso Pai, e de nosso Senhor Jesus Cristo."
+  },
+  {
+   "ref": "Gálatas 1:4",
+   "text": "O qual se entregou a si mesmo pelos nossos pecados, para nos desarraigar deste mundo perverso, conforme a vontade de Deus, nosso Pai."
+  },
+  {
+   "ref": "Gálatas 1:5",
+   "text": "A ele seja dada a glória pelos séculos dos séculos. Amém!"
+  },
+  {
+   "ref": "Gálatas 1:6",
+   "text": "Estou surpreso de que vocês tenham se afastado tão rapidamente daquele que os chamou na graça de Cristo para seguir um outro evangelho."
+  },
+  {
+   "ref": "Gálatas 1:7",
+   "text": "Que não é outro, mas há alguns que vos perturbam e querem perverter o evangelho de Cristo."
+  },
+  {
+   "ref": "Gálatas 1:8",
+   "text": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema."
+  },
+  {
+   "ref": "Gálatas 1:9",
+   "text": "Assim como já dissemos, e agora repito, se alguém vos pregar um evangelho diferente do que já recebestes, que seja considerado anátema."
+  },
+  {
+   "ref": "Gálatas 1:10",
+   "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria servo de Cristo."
+  },
+  {
+   "ref": "Gálatas 1:11",
+   "text": "Mas quero que vocês saibam, irmãos, que o evangelho que eu lhes anunciei não é de origem humana."
+  }
+ ]
+}
+</cena>
