@@ -78,4 +78,9 @@ void main() {
     expect(PlusAccess.isPioneerProduct('plus_founder_annual_x'), isFalse);
     expect(PlusAccess.isPioneerProduct(null), isFalse);
   });
+
+  test('id base ignora o plano base do Android', () {
+    expect(PlusAccess.baseProductId('plus_annual:annual'), 'plus_annual');
+    expect(PlusAccess.baseProductId('plus_annual'), 'plus_annual');
+  });
 }

@@ -467,13 +467,11 @@ exports.revenueCatWebhook = functions
     }
     try {
       const db = getFirestore();
+      let stale = false;
       if (state) {
-        await db
-          .doc(`users/${state.uid}`)
-          .set(
-            { ...state.fields, plusUpdatedAt: FieldValue.serverTimestamp() },
-            { merge: true },
-          );
+        stale = await writePlusState(db, state.uid, state.fields, event);
+      }
+      if (state && !stale) {
         // Escritas companheiras (TRANSFER: desligar a conta de origem).
         // Só em doc que já existe: evento atrasado não cria doc-zumbi de
         // conta excluída só com os campos do Plus.
@@ -492,6 +490,7 @@ exports.revenueCatWebhook = functions
         uid: (state && state.uid) || slot.uid,
         type: event && event.type,
         pioneer: Boolean(slot),
+        stale,
       });
       res.status(200).json({ ok: true });
     } catch (err) {
@@ -499,6 +498,37 @@ exports.revenueCatWebhook = functions
       res.status(500).json({ ok: false, error: 'Falha ao gravar.' });
     }
   });
+
+/**
+ * Grava o estado Plus só se o evento não for mais velho que o último
+ * aplicado: a RevenueCat pode entregar fora de ordem (reenvio de falha),
+ * e uma EXPIRATION atrasada não pode desligar quem já renovou.
+ * A marca fica em `users/{uid}/server/revenuecat`, fora do alcance do
+ * cliente (sem regra = negado) e apagada junto com a conta.
+ * Devolve true quando o evento era velho e nada foi gravado.
+ */
+async function writePlusState(db, uid, fields, event) {
+  const userRef = db.doc(`users/${uid}`);
+  const markRef = db.doc(`users/${uid}/server/revenuecat`);
+  const at =
+    event && typeof event.event_timestamp_ms === 'number'
+      ? event.event_timestamp_ms
+      : null;
+  return db.runTransaction(async (tx) => {
+    const mark = await tx.get(markRef);
+    const last = mark.get('lastEventAtMs');
+    if (at != null && typeof last === 'number' && at < last) return true;
+    tx.set(
+      userRef,
+      { ...fields, plusUpdatedAt: FieldValue.serverTimestamp() },
+      { merge: true },
+    );
+    if (at != null) {
+      tx.set(markRef, { lastEventAtMs: at, lastEventType: String(event.type || '') });
+    }
+    return false;
+  });
+}
 
 /**
  * Primeiro pagamento do Pioneiro soma 1 em `stats/pioneer`. A mesma conta
@@ -535,31 +565,10 @@ async function claimPioneerSlot(db, slot) {
   });
 }
 
-// ---- Caravana: salas e fechamento semanal (ver league.js) -----------------
-
-const league = require('./league');
-
-/** 1º placar da semana numa divisão: senta a pessoa na primeira sala aberta. */
-exports.onLeaguePlayerCreate = functions.firestore
-  .document('leagues/{week}/tiers/{tier}/players/{uid}')
-  .onCreate(async (snap, context) => {
-    const { week, tier, uid } = context.params;
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(week) || !/^[0-4]$/.test(tier)) return;
-    const cohort = await league.assignCohort(getFirestore(), { week, tier, uid });
-    logger.info('caravana: sala', { week, tier, uid, cohort });
-  });
-
-/** Segunda 00:10 (São Paulo): fecha a semana que acabou. */
-exports.settleLeagueWeek = functions
-  .runWith({ timeoutSeconds: 540, memory: '512MB' })
-  .pubsub.schedule('10 0 * * 1')
-  .timeZone(league.TIME_ZONE)
-  .onRun(async () => {
-    const today = league.ymdInZone(new Date());
-    const currentWeek = league.mondayOf(today);
-    const closedWeek = league.addDays(currentWeek, -7);
-    await league.settleWeek(getFirestore(), { closedWeek, currentWeek, logger });
-  });
+// ---- Caravana: salas e fechamento semanal (league.js) — em pausa ------------
+// Com a base pequena a Caravana é um ranking só, o do mês, e o nível sobe no
+// app por semanas firmes. As salas semanais (`assignCohort`, `settleWeek`)
+// ficam em league.js para voltar quando houver gente para encher salas.
 
 // ---- Exclusão de conta (ver account.js) -----------------------------------
 

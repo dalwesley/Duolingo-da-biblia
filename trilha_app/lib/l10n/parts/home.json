@@ -72,48 +72,55 @@
     "en": "Daily chest",
     "es": "Cofre del día"
   },
-  "chestReady": {
-    "pt": "Sua recompensa de hoje está pronta",
-    "en": "Today's reward is ready",
-    "es": "Tu recompensa de hoy está lista"
-  },
-  "chestLocked": {
-    "pt": "Complete a cena de hoje para abrir",
-    "en": "Finish today's scene to open it",
-    "es": "Completa la escena de hoy para abrirlo"
-  },
   "chestOpen": {
     "pt": "Abrir o baú",
     "en": "Open the chest",
     "es": "Abrir el cofre"
   },
-  "chestSheetTitle": {
-    "pt": "A sequência de hoje guarda uma recompensa.",
-    "en": "Today's streak holds a reward.",
-    "es": "La racha de hoy guarda una recompensa."
+  "chestTapHint": {
+    "pt": "Toque rápido na tela para abrir",
+    "en": "Tap fast to open it",
+    "es": "Toca rápido para abrirlo"
+  },
+  "chestOfferTitle": {
+    "pt": "Seu baú do dia chegou",
+    "en": "Your daily chest is here",
+    "es": "Llegó tu cofre del día"
+  },
+  "chestOfferBody": {
+    "pt": "Você terminou a cena de hoje. Abra e veja o que o caminho guardou.",
+    "en": "You finished today's scene. Open it and see what the path kept for you.",
+    "es": "Terminaste la escena de hoy. Ábrelo y mira lo que el camino guardó."
   },
   "chestOpening": {
     "pt": "Abrindo…",
     "en": "Opening…",
     "es": "Abriendo…"
   },
-  "chestRevealStarts": {
-    "pt": "A revelação começa agora.",
-    "en": "The reveal starts now.",
-    "es": "La revelación empieza ahora."
+  "chestRarityCommon": {
+    "pt": "Comum",
+    "en": "Common",
+    "es": "Común"
   },
-  "chestVeryRare": {
-    "pt": "Raríssimo",
+  "chestRarityUncommon": {
+    "pt": "Incomum",
+    "en": "Uncommon",
+    "es": "Poco común"
+  },
+  "chestRarityRare": {
+    "pt": "Rara",
+    "en": "Rare",
+    "es": "Rara"
+  },
+  "chestRarityVeryRare": {
+    "pt": "Muito rara",
     "en": "Very rare",
-    "es": "Rarísimo"
+    "es": "Muy rara"
   },
-  "chestTierToday": {
-    "pt": "{tier} de hoje",
-    "en": "Today's {tier}",
-    "es": "{tier} de hoy",
-    "placeholders": {
-      "tier": "String"
-    }
+  "chestRarityUltra": {
+    "pt": "Raríssima",
+    "en": "Ultra rare",
+    "es": "Rarísima"
   },
   "questDailyTitle": {
     "pt": "Tarefas do dia",
@@ -207,7 +214,9 @@
     "pt": "{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}",
     "en": "{count, plural, =1{1 scene left for your goal} other{{count} scenes left for your goal}}",
     "es": "{count, plural, =1{Falta 1 escena para la meta} other{Faltan {count} escenas para la meta}}",
-    "placeholders": {"count": "int"}
+    "placeholders": {
+      "count": "int"
+    }
   },
   "homeGoalMet": {
     "pt": "Meta do dia cumprida",
@@ -218,7 +227,9 @@
     "pt": "{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}",
     "en": "{count, plural, =1{1 step on the journey} other{{count} steps on the journey}}",
     "es": "{count, plural, =1{1 paso en el camino} other{{count} pasos en el camino}}",
-    "placeholders": {"count": "int"}
+    "placeholders": {
+      "count": "int"
+    }
   },
   "homeStatFreezeUsed": {
     "pt": "gelo usado",

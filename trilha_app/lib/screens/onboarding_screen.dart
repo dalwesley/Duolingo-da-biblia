@@ -5,10 +5,13 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../cinematic/cinematic_resolver.dart';
+import '../data/entry_trails.dart';
 import '../l10n/app_language.dart';
+import '../models/user_intent.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
+import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/tilt_parallax.dart';
 import '../theme/app_theme.dart';
@@ -26,6 +29,7 @@ import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/anan_speech.dart';
+import '../widgets/intent_selector.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 
@@ -62,6 +66,8 @@ enum _Intent {
   final CinematicGlyph glyph;
 
   const _Intent(this.glyph);
+
+  UserIntent get value => UserIntent.values.byName(name);
 
   String title(AppLocalizations l10n) => switch (this) {
     _Intent.know => l10n.onboardingIntentKnowTitle,
@@ -119,6 +125,15 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   /// Mesmos horários da folha de lembrete da Home.
   static const reminderHours = [7, 12, 20];
   static const streakGoals = [7, 14, 30];
+
+  /// "Criar uma sequência": a primeira meta é curta, para ser cumprida.
+  static const habitStreakGoals = [3, 7, 14];
+
+  List<int> get _streakOptions =>
+      _intent == _Intent.habit ? habitStreakGoals : streakGoals;
+
+  /// A pessoa já mexeu na meta de sequência — o motivo não a troca mais.
+  bool _streakTouched = false;
 
   TrailShot _fromWorld = GenesisHero.endShot;
   TrailShot _toWorld = _worldFor(_Beat.origin);
@@ -216,14 +231,23 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   void _pickIntent(_Intent intent) {
     if (intent == _intent) return;
     ActHaptics.tap();
-    setState(() => _intent = intent);
+    setState(() {
+      _intent = intent;
+      if (!_streakOptions.contains(_streakGoal) ||
+          (!_streakTouched && intent == _Intent.habit)) {
+        _streakGoal = _streakOptions.first;
+      }
+    });
     _logChoice('intent', intent.name);
   }
 
   void _pickStreak(int goal) {
     if (goal == _streakGoal) return;
     ActHaptics.tap();
-    setState(() => _streakGoal = goal);
+    setState(() {
+      _streakGoal = goal;
+      _streakTouched = true;
+    });
     _logChoice('streak_goal', goal);
   }
 
@@ -293,7 +317,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         if (reminderHours.contains(settings.reminderHour)) {
           _reminderHour = settings.reminderHour;
         }
-        if (streakGoals.contains(settings.streakGoal)) {
+        final intent = settings.intent;
+        if (intent != null) _intent = _Intent.values.byName(intent.name);
+        if (_streakOptions.contains(settings.streakGoal)) {
           _streakGoal = settings.streakGoal;
         }
       });
@@ -432,8 +458,17 @@ class _OnboardingScreenState extends State<OnboardingScreen>
           streakGoal: _streakGoal,
           appearanceMode: _sky,
           reminderHour: _reminderHour,
+          intent: _intent?.value,
         ),
       );
+      // Quem veio criar sequência firma o lembrete já, não depois da 1ª cena.
+      if (_intent == _Intent.habit && !progress.notificationsPrompted) {
+        await progress.markNotificationsPrompted(enabled: true);
+        unawaited(() async {
+          await NotificationService.instance.requestOsPermission();
+          await NotificationService.instance.syncFromProgress(progress);
+        }());
+      }
       await progress.setHasSeenOnboarding(true);
       // Pular/terminar → Home abre a 1ª cena sozinha (time-to-value).
       progress.requestOpenFirstScene();
@@ -591,56 +626,60 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       ),
                     ),
                     Expanded(child: _buildBeat()),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        AppSpace.screen,
-                        8,
-                        AppSpace.screen,
-                        AppSpace.screen,
-                      ),
-                      child: IgnorePointer(
-                        ignoring: _transitioning || _finishing || cta < 0.45,
-                        child: Opacity(
-                          opacity: _finishing ? 1 : cta,
-                          child: Transform.translate(
-                            offset: Offset(0, 18 * (1 - cta)),
-                            child: _beat == _Beat.rhythm && !_finishing
-                                ? _HoldCta(
-                                    label: ctaLabel,
-                                    holdingLabel: l10n.onboardingHolding,
-                                    onDone: _goNext,
-                                  )
-                                : Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      // Na pergunta do Anan, o ouro é começar
-                                      // já (com os padrões); ajustar é o
-                                      // secundário.
-                                      CopperCta(
-                                        label: _finishing
-                                            ? l10n.onboardingOpening
-                                            : ctaLabel,
-                                        busy: _finishing,
-                                        onTap: _finishing || !_canAdvance
-                                            ? null
-                                            : _ananAsks
-                                            ? _skipToThreshold
-                                            : _goNext,
-                                      ),
-                                      if (_ananAsks) ...[
-                                        const SizedBox(height: AppSpace.sm),
-                                        GhostCta(
-                                          label: l10n.onboardingAnanSetupNow,
-                                          expanded: true,
-                                          onTap: _goNext,
+                    // Motivo: CTA vive no carrossel — sem faixa vazia embaixo.
+                    if (_beat != _Beat.intent)
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpace.screen,
+                          8,
+                          AppSpace.screen,
+                          AppSpace.screen,
+                        ),
+                        child: IgnorePointer(
+                          ignoring: _transitioning || _finishing || cta < 0.45,
+                          child: Opacity(
+                            opacity: _finishing ? 1 : cta,
+                            child: Transform.translate(
+                              offset: Offset(0, 18 * (1 - cta)),
+                              child: _beat == _Beat.rhythm && !_finishing
+                                  ? _HoldCta(
+                                      label: ctaLabel,
+                                      holdingLabel: l10n.onboardingHolding,
+                                      onDone: _goNext,
+                                    )
+                                  : Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        // Na pergunta do Anan, o ouro é começar
+                                        // já (com os padrões); ajustar é o
+                                        // secundário.
+                                        CopperCta(
+                                          label: _finishing
+                                              ? l10n.onboardingOpening
+                                              : ctaLabel,
+                                          busy: _finishing,
+                                          onTap: _finishing || !_canAdvance
+                                              ? null
+                                              : _ananAsks
+                                              ? _skipToThreshold
+                                              : _goNext,
                                         ),
+                                        if (_ananAsks) ...[
+                                          const SizedBox(height: AppSpace.sm),
+                                          GhostCta(
+                                            label: l10n.onboardingAnanSetupNow,
+                                            expanded: true,
+                                            onTap: _goNext,
+                                          ),
+                                        ],
                                       ],
-                                    ],
-                                  ),
+                                    ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
+                    if (_beat == _Beat.intent)
+                      const SizedBox(height: AppSpace.screen),
                   ],
                 ),
               );
@@ -678,6 +717,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         scene: _scene,
         intent: _intent,
         onIntent: _pickIntent,
+        onCommitted: (i) {
+          _pickIntent(i);
+          _goNext();
+        },
       ),
       _Beat.sky => _SkyBeat(scene: _scene, sky: _sky, onSky: _pickSky),
       _Beat.rhythm => _TomorrowBeat(
@@ -689,7 +732,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         hours: reminderHours,
         onHour: _pickHour,
         streak: _streakGoal,
-        streaks: streakGoals,
+        streaks: _streakOptions,
         onStreak: _pickStreak,
       ),
       _Beat.threshold => _ThresholdBeat(
@@ -1785,16 +1828,18 @@ class _OptionList extends StatelessWidget {
   }
 }
 
-/// "O que te traz aqui?" — a resposta volta no último ato.
+/// "O que te traz aqui?" — mesmos portais do modo de estudo.
 class _IntentBeat extends StatelessWidget {
   final Animation<double> scene;
   final _Intent? intent;
   final ValueChanged<_Intent> onIntent;
+  final ValueChanged<_Intent> onCommitted;
 
   const _IntentBeat({
     required this.scene,
     required this.intent,
     required this.onIntent,
+    required this.onCommitted,
   });
 
   @override
@@ -1802,14 +1847,22 @@ class _IntentBeat extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final short = MediaQuery.sizeOf(context).height < 740;
+    final h = MediaQuery.sizeOf(context).height;
+    // Portal + CTA do carrossel cabem sob o título; em tela curta
+    // o Anan sai para não cortar o portal.
+    final portalH = (h * (short ? 0.36 : 0.40)).clamp(
+      240.0,
+      short ? 280.0 : 320.0,
+    );
 
     return _Stage(
+      lift: false,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          _AnanGuide(scene: scene),
+          if (!short) _AnanGuide(scene: scene),
           _Kicker(text: l10n.onboardingKickerIntent, scene: scene),
-          SizedBox(height: short ? 16 : 24),
+          SizedBox(height: short ? 8 : 12),
           _Reveal(
             scene: scene,
             from: 0.14,
@@ -1818,47 +1871,29 @@ class _IntentBeat extends StatelessWidget {
               l10n.onboardingIntentQuestion,
               textAlign: TextAlign.center,
               style: AppTypography.display(
-                size: short ? 28 : 32,
+                size: short ? 26 : 30,
                 height: 1.05,
                 weight: FontWeight.w900,
                 color: a.text,
               ),
             ),
           ),
-          const SizedBox(height: 12),
+          SizedBox(height: short ? 12 : 16),
           _Reveal(
             scene: scene,
-            from: 0.3,
-            to: 0.58,
-            child: Text(
-              l10n.onboardingIntentBody,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 14,
-                height: 1.45,
-                weight: FontWeight.w600,
-                color: a.textSecondary,
-              ),
-            ),
-          ),
-          SizedBox(height: short ? 20 : 28),
-          _Reveal(
-            scene: scene,
-            from: 0.46,
-            to: 0.8,
+            from: 0.36,
+            to: 0.78,
             rise: 22,
-            child: _OptionList(
-              children: [
-                for (final i in _Intent.values)
-                  _OptionCard(
-                    glyph: i.glyph,
-                    title: i.title(l10n),
-                    caption: i.caption(l10n),
-                    semantics: i.title(l10n),
-                    on: i == intent,
-                    onTap: () => onIntent(i),
-                  ),
-              ],
+            child: IntentCarousel(
+              selected: intent?.value,
+              height: portalH,
+              onFocused: (u) {
+                final match = _Intent.values.byName(u.name);
+                onIntent(match);
+              },
+              onCommitted: (u) {
+                onCommitted(_Intent.values.byName(u.name));
+              },
             ),
           ),
         ],
@@ -2018,7 +2053,7 @@ class _StreakPath extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    const dots = 7;
+    final dots = goal < 7 ? goal : 7;
     return Column(
       children: [
         SizedBox(
@@ -2344,7 +2379,7 @@ class _ThresholdBeat extends StatelessWidget {
               to: 0.78,
               rise: 28,
               scaleFrom: 0.97,
-              child: _FirstMissionHero(breath: breath),
+              child: _FirstMissionHero(breath: breath, intent: intent),
             ),
           ),
         ],
@@ -2355,21 +2390,30 @@ class _ThresholdBeat extends StatelessWidget {
 
 class _FirstMissionHero extends StatelessWidget {
   final Animation<double> breath;
+  final _Intent? intent;
 
-  const _FirstMissionHero({required this.breath});
+  const _FirstMissionHero({required this.breath, this.intent});
 
-  static const _slug = 'genesis-1-11';
+  static const _genesis = 'genesis-1-11';
 
   @override
   Widget build(BuildContext context) {
     // Prévia do cartão herói: arte escura fixa — tinta clara em qualquer look.
     final a = AppearanceStyle.resolve(AppearanceMode.night);
     final l10n = context.l10n;
-    final title = l10n.onboardingFirstSceneTitle;
-    final visuals = TrailVisuals.forSlug(_slug);
+    // A mesma cena que a Home vai abrir: a 1ª da trilha do motivo.
+    final slug = intent?.value.entryTrailSlug ?? _genesis;
+    final entry = EntryTrails.overlay.where((t) => t.slug == slug).firstOrNull;
+    final mission = entry?.modules.first.missions.first;
+    final title = mission?.localizedTitle ?? l10n.onboardingFirstSceneTitle;
+    final trailTitle = entry?.title ?? l10n.settingsGenesisTitle;
+    final visuals = entry == null
+        ? TrailVisuals.forSlug(_genesis)
+        : TrailVisuals.forSlug(entry.slug, categoryId: entry.categoryId);
     final world = CinematicResolver.ambientForHome(
-      trailSlug: _slug,
+      trailSlug: entry == null ? _genesis : entry.slug,
       missionTitle: title,
+      missionSlug: mission?.slug,
     );
     final style = HeroCardMoodStyle.of(HeroCardMood.alive, a);
 
@@ -2434,10 +2478,7 @@ class _FirstMissionHero extends StatelessWidget {
                       spacing: 8,
                       runSpacing: 6,
                       children: [
-                        _HeroChip(
-                          glyph: visuals.glyph,
-                          label: l10n.settingsGenesisTitle,
-                        ),
+                        _HeroChip(glyph: visuals.glyph, label: trailTitle),
                         _HeroChip(
                           glyph: CinematicGlyph.lamp,
                           label: l10n.onboardingFiveLamps,

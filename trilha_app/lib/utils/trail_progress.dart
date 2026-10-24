@@ -1,3 +1,4 @@
+import '../data/entry_trails.dart';
 import '../l10n/l10n_global.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
@@ -7,6 +8,14 @@ import 'difficulty_trails.dart';
 import 'plus_access.dart';
 
 class TrailProgress {
+  /// Trilha do motivo do onboarding ([UserIntent]); o [ProgressService]
+  /// atualiza a cada troca de settings. Vem antes da ordem do catálogo.
+  static String? preferredTrailSlug;
+
+  /// Última cena nova concluída; o [ProgressService] atualiza. A trilha dela
+  /// vem antes de tudo: o CTA fica onde a pessoa está andando.
+  static String? lastPlayedMissionSlug;
+
   static List<String> missionSlugs(Trail trail) => trail.missionSlugs;
 
   /// Progresso vivo do modo atual — sem “completar” via modos já limpos.
@@ -193,6 +202,8 @@ class TrailProgress {
     Map<String, List<String>> clearedTrailModes = const {},
   }) {
     if (CatalogAccess.openAllForTesting) return true;
+    // Trilha do motivo do onboarding é porta: nunca espera outra trilha.
+    if (EntryTrails.intentOnly.contains(trail.slug)) return true;
     if (_alreadyWalked(
       trail,
       completed,
@@ -268,6 +279,7 @@ class TrailProgress {
     for (final peer in peers) {
       if (peer.slug == trail.slug) return previous;
       if (peer.comingSoon || peer.missionSlugs.isEmpty) continue;
+      if (EntryTrails.intentOnly.contains(peer.slug)) continue;
       previous = peer;
     }
     return null;
@@ -290,8 +302,7 @@ class TrailProgress {
     if (trail.realmId == TrailRealm.novoTestamento.id) return true;
     if (PlusAccess.trailIsPlus(trail)) return true;
     return trail.slug == 'sermao-do-monte' ||
-        trail.slug == 'ansiedade' ||
-        trail.slug == 'recomeco';
+        EntryTrails.slugs.contains(trail.slug);
   }
 
   /// A próxima cena desta trilha pede o Peregrino+? Falso quando a trilha
@@ -322,8 +333,46 @@ class TrailProgress {
     List<String> completed, {
     Map<String, List<String>> clearedTrailModes = const {},
   }) {
+    bool open(Trail? trail) =>
+        trail != null &&
+        !trail.comingSoon &&
+        trail.missionSlugs.isNotEmpty &&
+        isTrailUnlocked(
+          trail,
+          trails,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        ) &&
+        !isTrailCompleted(
+          trail,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        );
+    Trail? bySlug(String? slug) =>
+        slug == null ? null : trails.where((t) => t.slug == slug).firstOrNull;
+
+    // 1. A trilha da última cena; terminada, a que ela continua.
+    final lastSlug = lastPlayedMissionSlug;
+    final last = lastSlug == null
+        ? null
+        : trails.where((t) => t.missionSlugs.contains(lastSlug)).firstOrNull;
+    if (open(last)) return last;
+    if (last != null) {
+      final next = bySlug(EntryTrails.continuesTo[last.missionSlugs.last]);
+      if (open(next)) return next;
+    }
+    // 2. A do motivo do onboarding.
+    final preferred = preferredTrailSlug;
+    final chosen = bySlug(preferred);
+    if (open(chosen)) return chosen;
+    // 3. A ordem do catálogo.
     for (final trail in trails) {
       if (trail.comingSoon || trail.missionSlugs.isEmpty) continue;
+      // Trilhas de um motivo só entram quando são a escolha da pessoa.
+      if (EntryTrails.intentOnly.contains(trail.slug) &&
+          trail.slug != preferred) {
+        continue;
+      }
       if (!isTrailUnlocked(
         trail,
         trails,
@@ -341,6 +390,46 @@ class TrailProgress {
       }
     }
     return trails.where((t) => t.missionSlugs.isNotEmpty).firstOrNull;
+  }
+
+  /// Trilhas começadas e não terminadas, a mais recente primeiro: a da
+  /// última cena, depois pelo dia da última cena feita ([completedOn]).
+  /// Cena só emprestada ([borrowed]) não abre a trilha.
+  static List<Trail> startedTrails(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, String> completedOn = const {},
+    Iterable<String> borrowed = const [],
+    Map<String, List<String>> clearedTrailModes = const {},
+  }) {
+    final lastSlug = lastPlayedMissionSlug;
+    String lastDay(Trail t) {
+      var day = '';
+      for (final slug in t.missionSlugs) {
+        final d = completedOn[slug] ?? '';
+        if (d.compareTo(day) > 0) day = d;
+      }
+      return day;
+    }
+
+    final skip = borrowed.toSet();
+    final played = _doneSet(completed).difference(skip);
+    final started = [
+      for (final t in trails)
+        if (!t.comingSoon &&
+            t.missionSlugs.any(played.contains) &&
+            !isTrailCompleted(
+              t,
+              completed,
+              clearedTrailModes: clearedTrailModes,
+            ))
+          (trail: t, day: lastDay(t), last: t.missionSlugs.contains(lastSlug)),
+    ];
+    started.sort((x, y) {
+      if (x.last != y.last) return x.last ? -1 : 1;
+      return y.day.compareTo(x.day);
+    });
+    return [for (final s in started) s.trail];
   }
 
   static bool isMissionUnlocked(

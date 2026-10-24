@@ -340,65 +340,20 @@
     "en": "Challenge",
     "es": "Desafío"
   },
-  "juntosThisMonth": {
-    "pt": "Este mês",
-    "en": "This month",
-    "es": "Este mes"
-  },
   "juntosThisWeek": {
     "pt": "Esta semana",
     "en": "This week",
     "es": "Esta semana"
-  },
-  "juntosCaravanWeekTitle": {
-    "pt": "O ranking da semana",
-    "en": "The weekly ranking",
-    "es": "El ranking de la semana"
   },
   "juntosCaravanMonthTitle": {
     "pt": "Quem mais caminhou neste mês?",
     "en": "Who walked the most this month?",
     "es": "¿Quién caminó más este mes?"
   },
-  "juntosCaravanWeekBody": {
-    "pt": "É aqui que tudo acontece. Os passos de cenas novas, de segunda a domingo, decidem quem sobe e quem desce.",
-    "en": "This is where it happens. Steps from new scenes, Monday to Sunday, decide who moves up and who moves down.",
-    "es": "Aquí es donde todo pasa. Los pasos de escenas nuevas, de lunes a domingo, deciden quién sube y quién baja."
-  },
   "juntosCaravanMonthBody": {
-    "pt": "Tudo conta: cenas, tarefas do dia, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.",
-    "en": "Everything counts: scenes, daily tasks, chests and companion. It resets on the 1st — newcomers can lead too.",
-    "es": "Todo cuenta: escenas, tareas del día, cofres y compañía. Se reinicia cada día 1 — quien acaba de llegar también puede liderar."
-  },
-  "juntosCaravanWeekStep1": {
-    "pt": "Passos\nda semana",
-    "en": "Steps\nthis week",
-    "es": "Pasos\nde la semana"
-  },
-  "juntosCaravanWeekStep2": {
-    "pt": "Quem\nsobe",
-    "en": "Who moves\nup",
-    "es": "Quién\nsube"
-  },
-  "juntosCaravanWeekStep3": {
-    "pt": "Quem\ndesce",
-    "en": "Who moves\ndown",
-    "es": "Quién\nbaja"
-  },
-  "juntosCaravanMonthStep1": {
-    "pt": "Estude\numa cena",
-    "en": "Study\na scene",
-    "es": "Estudia\nuna escena"
-  },
-  "juntosCaravanMonthStep2": {
-    "pt": "Some\npassos",
-    "en": "Add up\nsteps",
-    "es": "Suma\npasos"
-  },
-  "juntosCaravanMonthStep3": {
-    "pt": "Veja o\ncaminho",
-    "en": "See the\npath",
-    "es": "Mira el\ncamino"
+    "pt": "Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.",
+    "en": "Every new scene adds steps. The green arrow shows who moved up today. It resets on the 1st — newcomers can lead too.",
+    "es": "Cada escena nueva suma pasos. La flecha verde muestra quién subió hoy. Se reinicia cada día 1 — quien acaba de llegar también puede liderar."
   },
   "juntosCompanionExplainerTitle": {
     "pt": "Quem caminha ao seu lado?",
@@ -667,32 +622,6 @@
       "countLabel": "String"
     }
   },
-  "juntosWeekRankingEmptyTitle": {
-    "pt": "Ainda só você",
-    "en": "Still just you",
-    "es": "Todavía solo tú"
-  },
-  "juntosWeekRankingEmpty": {
-    "pt": "O ranking começa quando outra pessoa entra na caravana.",
-    "en": "The ranking starts when someone else joins the caravan.",
-    "es": "El ranking empieza cuando otra persona entra en la caravana."
-  },
-  "juntosPromoteZone": {
-    "pt": "Zona de subida · {tier}",
-    "en": "Promotion zone · {tier}",
-    "es": "Zona de ascenso · {tier}",
-    "placeholders": {
-      "tier": "String"
-    }
-  },
-  "juntosDemoteZone": {
-    "pt": "Zona de descida · {tier}",
-    "en": "Demotion zone · {tier}",
-    "es": "Zona de descenso · {tier}",
-    "placeholders": {
-      "tier": "String"
-    }
-  },
   "juntosCaravanPilgrimsCount": {
     "pt": "{count, plural, =1{1 peregrino da caravana} other{{count} peregrinos da caravana}}",
     "en": "{count, plural, =1{1 pilgrim in the caravan} other{{count} pilgrims in the caravan}}",
@@ -715,21 +644,6 @@
     "pt": "Visto hoje",
     "en": "Seen today",
     "es": "Visto hoy"
-  },
-  "juntosTie": {
-    "pt": "Empate",
-    "en": "Tie",
-    "es": "Empate"
-  },
-  "juntosGapToAbove": {
-    "pt": "{gap} do {place}º",
-    "en": "{gap} behind #{place}",
-    "es": "{gap} del {place}º",
-    "placeholders": {
-      "gap": "int",
-      "place": "int"
-    },
-    "description": "Steps behind the person ranked just above (place = their position)."
   },
   "juntosCompanionsOfflineTitle": {
     "pt": "Companhia precisa da nuvem",
@@ -897,5 +811,55 @@
     "pt": "O ranking aparece com pelo menos mais uma pessoa caminhando. Chame alguém para a caravana — ou comece por uma companhia.",
     "en": "The leaderboard shows up once at least one more person is walking. Invite someone to the caravan — or start with a companion.",
     "es": "El ranking aparece con al menos una persona más caminando. Invita a alguien a la caravana — o empieza con una compañía."
+  },
+  "juntosLevelTitle": {
+    "pt": "Seu nível · {tier}",
+    "en": "Your level · {tier}",
+    "es": "Tu nivel · {tier}",
+    "placeholders": {
+      "tier": "String"
+    }
+  },
+  "juntosLevelSteady": {
+    "pt": "{count} de {total} semanas firmes para {next}",
+    "en": "{count} of {total} steady weeks to {next}",
+    "es": "{count} de {total} semanas firmes para {next}",
+    "placeholders": {
+      "count": "int",
+      "total": "int",
+      "next": "String"
+    }
+  },
+  "juntosLevelTop": {
+    "pt": "Você chegou ao nível mais alto",
+    "en": "You reached the top level",
+    "es": "Llegaste al nivel más alto"
+  },
+  "juntosLevelWeek": {
+    "pt": "Esta semana: {count} de {goal} cenas novas",
+    "en": "This week: {count} of {goal} new scenes",
+    "es": "Esta semana: {count} de {goal} escenas nuevas",
+    "placeholders": {
+      "count": "int",
+      "goal": "int"
+    }
+  },
+  "juntosLevelWeekDone": {
+    "pt": "Semana firme garantida",
+    "en": "Steady week secured",
+    "es": "Semana firme asegurada"
+  },
+  "juntosWeekHighlight": {
+    "pt": "Destaque da semana",
+    "en": "Top this week",
+    "es": "Destacado de la semana"
+  },
+  "juntosWeekGain": {
+    "pt": "+{count} na semana",
+    "en": "+{count} this week",
+    "es": "+{count} esta semana",
+    "placeholders": {
+      "count": "int"
+    }
   }
 }

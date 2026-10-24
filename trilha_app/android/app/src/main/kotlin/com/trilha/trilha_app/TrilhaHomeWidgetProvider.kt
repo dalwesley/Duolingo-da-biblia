@@ -1,154 +1,87 @@
 package com.trilha.trilha_app
 
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.appwidget.AppWidgetManager
-import android.content.ComponentName
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
-import android.os.SystemClock
 import android.view.View
 import android.widget.RemoteViews
-import es.antonborri.home_widget.HomeWidgetLaunchIntent
-import es.antonborri.home_widget.HomeWidgetProvider
-import java.util.Calendar
 
-/**
- * Card da sequência. O app grava o estado do dia (`card_*`); aqui ele vira
- * o card e, se o app não abrir, o próprio widget vira o dia à meia-noite.
- */
-class TrilhaHomeWidgetProvider : HomeWidgetProvider() {
+/** Card largo (4x2): 🔥 em destaque, chamada, contagem ou "Amanhã: X" e a semana. */
+class TrilhaHomeWidgetProvider : StreakWidgetProvider() {
 
-    private data class Card(
-        val state: String,
-        val headline: String,
-        val big: String,
-        val sub: String,
-        val deadline: Long,
-    ) {
-        val counts get() = state == "risk" || state == "start"
-    }
+    override val layout = R.layout.trilha_home_widget
 
-    override fun onUpdate(
+    override fun RemoteViews.bind(
         context: Context,
-        appWidgetManager: AppWidgetManager,
-        appWidgetIds: IntArray,
-        widgetData: SharedPreferences,
+        card: Card,
+        data: SharedPreferences,
+        now: Long,
+        heightDp: Int,
     ) {
-        val streak = widgetData.getInt("streak", 0)
-        val card = resolve(widgetData, System.currentTimeMillis())
+        val warm = card.counts
+        // Número só quando é certo e vale algo: em "começar" seria 0 e em
+        // "sumido" o widget não sabe se a sequência caiu ou se o gelo segurou.
+        // Nesses dois a chamada sobe para o destaque.
+        val showCount = card.state == "safe" || card.state == "risk"
+        val streak = data.getString("streak_label", null) ?: "${data.getInt("streak", 0)}"
+        setTextViewText(R.id.widget_streak, "🔥 ${if (showCount) streak else card.headline}")
+        setTextColor(
+            R.id.widget_streak,
+            if (warm) 0xFFFFFFFF.toInt() else context.getColor(R.color.trilha_accent),
+        )
+        setTextViewText(R.id.widget_headline, card.headline)
+        // Card baixo não cabe destaque + chamada + contagem + semana.
+        val compact = heightDp in 1 until COMPACT_HEIGHT_DP
+        setViewVisibility(
+            R.id.widget_headline,
+            if (showCount && !compact) View.VISIBLE else View.GONE,
+        )
 
-        appWidgetIds.forEach { widgetId ->
-            val views = RemoteViews(context.packageName, R.layout.trilha_home_widget).apply {
-                val warm = card.counts
-                setInt(
-                    R.id.widget_root,
-                    "setBackgroundResource",
-                    if (warm) R.drawable.widget_card_warm else R.drawable.widget_background,
-                )
-                setInt(
-                    R.id.widget_pill,
-                    "setBackgroundResource",
-                    if (warm) R.drawable.widget_pill else R.drawable.widget_pill_dim,
-                )
-                setTextColor(
-                    R.id.widget_pill,
-                    context.getColor(if (warm) R.color.widget_warm_ink else R.color.trilha_accent),
-                )
-                setTextViewText(R.id.widget_pill, "🔥 $streak")
-                setTextViewText(R.id.widget_headline, card.headline)
-                setTextViewText(R.id.widget_sub, card.sub)
-
-                if (card.counts) {
-                    val base = SystemClock.elapsedRealtime() +
-                        (card.deadline - System.currentTimeMillis()).coerceAtLeast(0)
-                    setChronometer(R.id.widget_timer, base, null, true)
-                    setChronometerCountDown(R.id.widget_timer, true)
-                    setViewVisibility(R.id.widget_timer, View.VISIBLE)
-                    setViewVisibility(R.id.widget_big, View.GONE)
-                } else {
-                    setChronometer(R.id.widget_timer, SystemClock.elapsedRealtime(), null, false)
-                    setViewVisibility(R.id.widget_timer, View.GONE)
-                    setTextViewText(R.id.widget_big, card.big)
-                    setViewVisibility(R.id.widget_big, View.VISIBLE)
-                }
-
-                setImageViewResource(
-                    R.id.widget_anan,
-                    if (card.state == "safe") R.drawable.widget_anan_sucesso
-                    else R.drawable.widget_anan_triste,
-                )
-
-                val pendingIntent =
-                    HomeWidgetLaunchIntent.getActivity(context, MainActivity::class.java)
-                setOnClickPendingIntent(R.id.widget_root, pendingIntent)
-            }
-
-            appWidgetManager.updateAppWidget(widgetId, views)
+        if (bindTimer(card, now)) {
+            setViewVisibility(R.id.widget_big, View.GONE)
+        } else {
+            setTextViewText(R.id.widget_big, card.big)
+            setViewVisibility(R.id.widget_big, View.VISIBLE)
         }
 
-        scheduleRollover(context, card.deadline)
-    }
-
-    /** Estado gravado pelo app, avançado para [now] se o dia já virou. */
-    private fun resolve(data: SharedPreferences, now: Long): Card {
-        val dayEnd = data.getLong("card_day_end", 0L)
-        val state = data.getString("card_state", null) ?: "start"
-        val headline = data.getString("card_headline", null) ?: "Stway"
-        val big = data.getString("card_big", null) ?: ""
-        val sub = data.getString("card_sub", null) ?: ""
-        val nextMidnight = nextMidnight(now)
-
-        if (now < dayEnd) return Card(state, headline, big, sub, dayEnd)
-        if (state == "safe" && now < dayEnd + DAY_MS) {
-            return Card(
-                "risk",
-                data.getString("card_next_headline", null) ?: headline,
-                "",
-                data.getString("card_next_sub", null) ?: sub,
-                nextMidnight,
+        val labels = (data.getString("week_labels", null) ?: "S,T,Q,Q,S,S,D").split(',')
+        val ink = context.getColor(if (warm) R.color.widget_warm_ink else R.color.widget_night_ink)
+        week(data, now).forEachIndexed { i, mark ->
+            setTextViewText(DAY_LABELS[i], labels.getOrElse(i) { "" })
+            setTextColor(
+                DAY_LABELS[i],
+                if (mark == Mark.TODAY || mark == Mark.DONE) 0xFFFFFFFF.toInt() else 0xB3FFFFFF.toInt(),
+            )
+            setInt(
+                DAY_DOTS[i],
+                "setBackgroundResource",
+                when (mark) {
+                    Mark.DONE ->
+                        if (warm) R.drawable.widget_dot_done_warm else R.drawable.widget_dot_done_night
+                    Mark.FROZEN -> R.drawable.widget_dot_frozen
+                    Mark.TODAY -> R.drawable.widget_dot_today
+                    Mark.MISSED, Mark.LATER -> R.drawable.widget_dot_empty
+                },
+            )
+            setTextViewText(DAY_DOTS[i], if (mark == Mark.DONE || mark == Mark.FROZEN) "✓" else "")
+            setTextColor(
+                DAY_DOTS[i],
+                if (mark == Mark.FROZEN) context.getColor(R.color.widget_night_ink) else ink,
             )
         }
-        if (state == "start") return Card(state, headline, big, sub, nextMidnight)
-        return Card(
-            "away",
-            data.getString("card_away_headline", null) ?: headline,
-            data.getString("card_away_big", null) ?: big,
-            data.getString("card_away_sub", null) ?: sub,
-            nextMidnight,
+    }
+
+    private companion object {
+        const val COMPACT_HEIGHT_DP = 150
+
+        val DAY_LABELS = intArrayOf(
+            R.id.widget_day_label_0, R.id.widget_day_label_1, R.id.widget_day_label_2,
+            R.id.widget_day_label_3, R.id.widget_day_label_4, R.id.widget_day_label_5,
+            R.id.widget_day_label_6,
         )
-    }
-
-    private fun nextMidnight(now: Long): Long = Calendar.getInstance().run {
-        timeInMillis = now
-        add(Calendar.DAY_OF_YEAR, 1)
-        set(Calendar.HOUR_OF_DAY, 0)
-        set(Calendar.MINUTE, 0)
-        set(Calendar.SECOND, 0)
-        set(Calendar.MILLISECOND, 0)
-        timeInMillis
-    }
-
-    /** Redesenha o card logo depois da meia-noite, com ou sem o app aberto. */
-    private fun scheduleRollover(context: Context, at: Long) {
-        val manager = AppWidgetManager.getInstance(context)
-        val ids = manager.getAppWidgetIds(ComponentName(context, javaClass))
-        val intent = Intent(context, javaClass).apply {
-            action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
-            putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids)
-        }
-        val pending = PendingIntent.getBroadcast(
-            context,
-            0,
-            intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
+        val DAY_DOTS = intArrayOf(
+            R.id.widget_day_dot_0, R.id.widget_day_dot_1, R.id.widget_day_dot_2,
+            R.id.widget_day_dot_3, R.id.widget_day_dot_4, R.id.widget_day_dot_5,
+            R.id.widget_day_dot_6,
         )
-        val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        alarms.setWindow(AlarmManager.RTC, at + 1_000, 60_000, pending)
-    }
-
-    companion object {
-        private const val DAY_MS = 24L * 60 * 60 * 1000
     }
 }

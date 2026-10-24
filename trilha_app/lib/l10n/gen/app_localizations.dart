@@ -100,6 +100,90 @@ abstract class AppLocalizations {
     Locale('pt'),
   ];
 
+  /// No description provided for @appReportCategoryAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conta e progresso'**
+  String get appReportCategoryAccount;
+
+  /// No description provided for @appReportCategoryBug.
+  ///
+  /// In pt, this message translates to:
+  /// **'Algo não funciona'**
+  String get appReportCategoryBug;
+
+  /// No description provided for @appReportCategoryOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Outro'**
+  String get appReportCategoryOther;
+
+  /// No description provided for @appReportCategorySubscription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Assinatura e compras'**
+  String get appReportCategorySubscription;
+
+  /// No description provided for @appReportCategorySuggestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sugestão'**
+  String get appReportCategorySuggestion;
+
+  /// No description provided for @appReportCommentHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que você estava fazendo e o que deu errado…'**
+  String get appReportCommentHint;
+
+  /// No description provided for @appReportHintAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Login, sincronização ou progresso perdido'**
+  String get appReportHintAccount;
+
+  /// No description provided for @appReportHintBug.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tela travou, botão não responde, algo some ou fecha'**
+  String get appReportHintBug;
+
+  /// No description provided for @appReportHintOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Algo mais que não se encaixa acima'**
+  String get appReportHintOther;
+
+  /// No description provided for @appReportHintSubscription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+, cobrança ou restaurar compra'**
+  String get appReportHintSubscription;
+
+  /// No description provided for @appReportHintSuggestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma ideia para o Stway ficar melhor'**
+  String get appReportHintSuggestion;
+
+  /// No description provided for @appReportIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conte o que aconteceu. A versão do app e o aparelho vão junto, para a gente conseguir reproduzir.'**
+  String get appReportIntro;
+
+  /// No description provided for @appReportSent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Relato enviado. Obrigado.'**
+  String get appReportSent;
+
+  /// No description provided for @appReportTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Relatar um problema'**
+  String get appReportTitle;
+
   /// No description provided for @authAccountExists.
   ///
   /// In pt, this message translates to:
@@ -279,6 +363,84 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Novo Testamento'**
   String get bibleNewTestament;
+
+  /// No description provided for @bibleNoteDelete.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apagar anotação'**
+  String get bibleNoteDelete;
+
+  /// No description provided for @bibleNoteHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que este versículo fala com você? (opcional)'**
+  String get bibleNoteHint;
+
+  /// No description provided for @bibleNoteSave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salvar anotação'**
+  String get bibleNoteSave;
+
+  /// No description provided for @bibleNoteSaved.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anotação salva'**
+  String get bibleNoteSaved;
+
+  /// No description provided for @bibleNoteTagDeus.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus falando'**
+  String get bibleNoteTagDeus;
+
+  /// No description provided for @bibleNoteTagFamilia.
+  ///
+  /// In pt, this message translates to:
+  /// **'Família'**
+  String get bibleNoteTagFamilia;
+
+  /// No description provided for @bibleNoteTagJesus.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jesus falando'**
+  String get bibleNoteTagJesus;
+
+  /// No description provided for @bibleNoteTagMandamento.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mandamento'**
+  String get bibleNoteTagMandamento;
+
+  /// No description provided for @bibleNoteTagOracao.
+  ///
+  /// In pt, this message translates to:
+  /// **'Oração'**
+  String get bibleNoteTagOracao;
+
+  /// No description provided for @bibleNoteTagPessoal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pessoal'**
+  String get bibleNoteTagPessoal;
+
+  /// No description provided for @bibleNoteTagProfecia.
+  ///
+  /// In pt, this message translates to:
+  /// **'Profecia'**
+  String get bibleNoteTagProfecia;
+
+  /// No description provided for @bibleNoteTagPromessa.
+  ///
+  /// In pt, this message translates to:
+  /// **'Promessa'**
+  String get bibleNoteTagPromessa;
+
+  /// No description provided for @bibleNoteTheme.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tema'**
+  String get bibleNoteTheme;
 
   /// No description provided for @bibleOldTestament.
   ///
@@ -603,6 +765,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Leitura em voz alta, versículo a versículo'**
   String get bibleVerseListenFromHereDetail;
+
+  /// No description provided for @bibleVerseNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anotar'**
+  String get bibleVerseNote;
+
+  /// No description provided for @bibleVerseNoted.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anotado'**
+  String get bibleVerseNoted;
 
   /// No description provided for @bibleVerseSave.
   ///
@@ -1270,12 +1444,6 @@ abstract class AppLocalizations {
   /// **'Lâmpada acesa'**
   String get chestLampadaTitle;
 
-  /// No description provided for @chestLocked.
-  ///
-  /// In pt, this message translates to:
-  /// **'Complete a cena de hoje para abrir'**
-  String get chestLocked;
-
   /// No description provided for @chestLockedShort.
   ///
   /// In pt, this message translates to:
@@ -1293,6 +1461,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Mapa do dia'**
   String get chestMapaTitle;
+
+  /// No description provided for @chestOfferBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você terminou a cena de hoje. Abra e veja o que o caminho guardou.'**
+  String get chestOfferBody;
+
+  /// No description provided for @chestOfferTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu baú do dia chegou'**
+  String get chestOfferTitle;
 
   /// No description provided for @chestOpen.
   ///
@@ -1330,11 +1510,35 @@ abstract class AppLocalizations {
   /// **'Passo firme'**
   String get chestPassoTitle;
 
-  /// No description provided for @chestReady.
+  /// No description provided for @chestRarityCommon.
   ///
   /// In pt, this message translates to:
-  /// **'Sua recompensa de hoje está pronta'**
-  String get chestReady;
+  /// **'Comum'**
+  String get chestRarityCommon;
+
+  /// No description provided for @chestRarityRare.
+  ///
+  /// In pt, this message translates to:
+  /// **'Rara'**
+  String get chestRarityRare;
+
+  /// No description provided for @chestRarityUltra.
+  ///
+  /// In pt, this message translates to:
+  /// **'Raríssima'**
+  String get chestRarityUltra;
+
+  /// No description provided for @chestRarityUncommon.
+  ///
+  /// In pt, this message translates to:
+  /// **'Incomum'**
+  String get chestRarityUncommon;
+
+  /// No description provided for @chestRarityVeryRare.
+  ///
+  /// In pt, this message translates to:
+  /// **'Muito rara'**
+  String get chestRarityVeryRare;
 
   /// No description provided for @chestReadyShort.
   ///
@@ -1342,35 +1546,17 @@ abstract class AppLocalizations {
   /// **'Pronto para abrir'**
   String get chestReadyShort;
 
-  /// No description provided for @chestRevealStarts.
-  ///
-  /// In pt, this message translates to:
-  /// **'A revelação começa agora.'**
-  String get chestRevealStarts;
-
   /// No description provided for @chestRewards.
   ///
   /// In pt, this message translates to:
   /// **'Recompensas'**
   String get chestRewards;
 
-  /// No description provided for @chestSheetTitle.
+  /// No description provided for @chestTapHint.
   ///
   /// In pt, this message translates to:
-  /// **'A sequência de hoje guarda uma recompensa.'**
-  String get chestSheetTitle;
-
-  /// No description provided for @chestTierToday.
-  ///
-  /// In pt, this message translates to:
-  /// **'{tier} de hoje'**
-  String chestTierToday(String tier);
-
-  /// No description provided for @chestVeryRare.
-  ///
-  /// In pt, this message translates to:
-  /// **'Raríssimo'**
-  String get chestVeryRare;
+  /// **'Toque rápido na tela para abrir'**
+  String get chestTapHint;
 
   /// No description provided for @chestVozMessage.
   ///
@@ -3064,6 +3250,366 @@ abstract class AppLocalizations {
   /// **'Os que choram'**
   String get entryMissionDorRecome05Title;
 
+  /// No description provided for @entryMissionEntradaBiblia01CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'A história começa em Deus'**
+  String get entryMissionEntradaBiblia01CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia01HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toda a Bíblia parte daqui: um só Deus, um mundo feito por ele.'**
+  String get entryMissionEntradaBiblia01HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia01Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'A história começa com Deus fazendo um mundo bom.'**
+  String get entryMissionEntradaBiblia01Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia01Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver a criação como o ponto de partida de toda a Bíblia.'**
+  String get entryMissionEntradaBiblia01Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia01Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Criação'**
+  String get entryMissionEntradaBiblia01Title;
+
+  /// No description provided for @entryMissionEntradaBiblia02CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'A ruptura começa na desconfiança'**
+  String get entryMissionEntradaBiblia02CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia02HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'O problema da Bíblia começa com desconfiar da palavra de Deus.'**
+  String get entryMissionEntradaBiblia02HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia02Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma pergunta da serpente, e tudo se quebra.'**
+  String get entryMissionEntradaBiblia02Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia02Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entender a queda como o problema que o resto da Bíblia resolve.'**
+  String get entryMissionEntradaBiblia02Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia02Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Queda'**
+  String get entryMissionEntradaBiblia02Title;
+
+  /// No description provided for @entryMissionEntradaBiblia03CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus responde com uma promessa'**
+  String get entryMissionEntradaBiblia03CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia03HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Depois da queda, Deus não desiste: começa a resposta por uma família.'**
+  String get entryMissionEntradaBiblia03HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia03Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus chama um homem para abençoar todas as famílias.'**
+  String get entryMissionEntradaBiblia03Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia03Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver em Abraão o começo do plano de Deus para todos os povos.'**
+  String get entryMissionEntradaBiblia03Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia03Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Promessa'**
+  String get entryMissionEntradaBiblia03Title;
+
+  /// No description provided for @entryMissionEntradaBiblia04CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'A salvação vem do Senhor'**
+  String get entryMissionEntradaBiblia04CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia04HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'O êxodo vira o molde da salvação na Bíblia: Deus liberta quem não pode se salvar.'**
+  String get entryMissionEntradaBiblia04HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia04Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entre o exército e o mar, Deus abre um caminho.'**
+  String get entryMissionEntradaBiblia04Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia04Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entender o êxodo como o retrato da salvação que a Bíblia repete.'**
+  String get entryMissionEntradaBiblia04Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia04Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Libertação'**
+  String get entryMissionEntradaBiblia04Title;
+
+  /// No description provided for @entryMissionEntradaBiblia05CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguém leva a culpa no nosso lugar'**
+  String get entryMissionEntradaBiblia05CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia05HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Séculos antes de Jesus, Isaías descreve um Servo que leva a culpa do povo.'**
+  String get entryMissionEntradaBiblia05HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia05Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um profeta vê alguém ferido no lugar dos outros.'**
+  String get entryMissionEntradaBiblia05Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia05Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver como os profetas apontam para um Salvador que sofre.'**
+  String get entryMissionEntradaBiblia05Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia05Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Servo'**
+  String get entryMissionEntradaBiblia05Title;
+
+  /// No description provided for @entryMissionEntradaBiblia06CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'A morte não tem a última palavra'**
+  String get entryMissionEntradaBiblia06CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia06HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tudo o que veio antes converge aqui: Jesus vence a morte que entrou na queda.'**
+  String get entryMissionEntradaBiblia06HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia06Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'O túmulo está vazio. A história vira.'**
+  String get entryMissionEntradaBiblia06Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia06Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entender a ressurreição como o centro da história bíblica.'**
+  String get entryMissionEntradaBiblia06Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia06Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ressurreição'**
+  String get entryMissionEntradaBiblia06Title;
+
+  /// No description provided for @entryMissionEntradaBiblia07CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus faz novas todas as coisas'**
+  String get entryMissionEntradaBiblia07CentralInsight;
+
+  /// No description provided for @entryMissionEntradaBiblia07HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Bíblia abre com um jardim e fecha com uma cidade. Deus refaz o que a queda quebrou.'**
+  String get entryMissionEntradaBiblia07HookNote;
+
+  /// No description provided for @entryMissionEntradaBiblia07Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'A história termina onde começou: Deus com o seu povo.'**
+  String get entryMissionEntradaBiblia07Intro;
+
+  /// No description provided for @entryMissionEntradaBiblia07Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver o fim da Bíblia como a restauração do começo.'**
+  String get entryMissionEntradaBiblia07Objective;
+
+  /// No description provided for @entryMissionEntradaBiblia07Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nova criação'**
+  String get entryMissionEntradaBiblia07Title;
+
+  /// No description provided for @entryMissionEntradaDeus01CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus vem antes de tudo'**
+  String get entryMissionEntradaDeus01CentralInsight;
+
+  /// No description provided for @entryMissionEntradaDeus01HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'A primeira frase da Bíblia não fala de nós: fala de Deus, que cria.'**
+  String get entryMissionEntradaDeus01HookNote;
+
+  /// No description provided for @entryMissionEntradaDeus01Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Antes de tudo, Deus. A Bíblia começa por quem ele é.'**
+  String get entryMissionEntradaDeus01Intro;
+
+  /// No description provided for @entryMissionEntradaDeus01Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver que conhecer a Deus começa por ele, não por nós.'**
+  String get entryMissionEntradaDeus01Objective;
+
+  /// No description provided for @entryMissionEntradaDeus01Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'No princípio, Deus'**
+  String get entryMissionEntradaDeus01Title;
+
+  /// No description provided for @entryMissionEntradaDeus02CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus se dá a conhecer pelo nome'**
+  String get entryMissionEntradaDeus02CentralInsight;
+
+  /// No description provided for @entryMissionEntradaDeus02HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Moisés pergunta quem o envia. Deus responde com um nome que não depende de ninguém.'**
+  String get entryMissionEntradaDeus02HookNote;
+
+  /// No description provided for @entryMissionEntradaDeus02Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Na sarça, Deus diz o seu nome a um fugitivo.'**
+  String get entryMissionEntradaDeus02Intro;
+
+  /// No description provided for @entryMissionEntradaDeus02Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entender o que o nome EU SOU revela sobre Deus.'**
+  String get entryMissionEntradaDeus02Objective;
+
+  /// No description provided for @entryMissionEntradaDeus02Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'EU SOU'**
+  String get entryMissionEntradaDeus02Title;
+
+  /// No description provided for @entryMissionEntradaDeus03CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus é santo'**
+  String get entryMissionEntradaDeus03CentralInsight;
+
+  /// No description provided for @entryMissionEntradaDeus03HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus não é uma versão maior de nós. A santidade é o que o separa de tudo.'**
+  String get entryMissionEntradaDeus03HookNote;
+
+  /// No description provided for @entryMissionEntradaDeus03Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Isaías vê o Senhor no trono, e o templo treme.'**
+  String get entryMissionEntradaDeus03Intro;
+
+  /// No description provided for @entryMissionEntradaDeus03Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver por que a santidade de Deus muda quem se aproxima dele.'**
+  String get entryMissionEntradaDeus03Objective;
+
+  /// No description provided for @entryMissionEntradaDeus03Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'Santo, santo, santo'**
+  String get entryMissionEntradaDeus03Title;
+
+  /// No description provided for @entryMissionEntradaDeus04CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'O santo cuida de perto'**
+  String get entryMissionEntradaDeus04CentralInsight;
+
+  /// No description provided for @entryMissionEntradaDeus04HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Davi chama o Deus do trono de pastor. O santo não fica longe.'**
+  String get entryMissionEntradaDeus04HookNote;
+
+  /// No description provided for @entryMissionEntradaDeus04Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Deus santo também cuida de perto.'**
+  String get entryMissionEntradaDeus04Intro;
+
+  /// No description provided for @entryMissionEntradaDeus04Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ligar a santidade de Deus ao cuidado dele no dia a dia.'**
+  String get entryMissionEntradaDeus04Objective;
+
+  /// No description provided for @entryMissionEntradaDeus04Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Senhor é o meu pastor'**
+  String get entryMissionEntradaDeus04Title;
+
+  /// No description provided for @entryMissionEntradaDeus05CentralInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em Jesus, Deus se aproximou'**
+  String get entryMissionEntradaDeus05CentralInsight;
+
+  /// No description provided for @entryMissionEntradaDeus05HookNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'João começa como Gênesis: “No princípio”. Agora o Criador vem morar entre nós.'**
+  String get entryMissionEntradaDeus05HookNote;
+
+  /// No description provided for @entryMissionEntradaDeus05Intro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em Jesus, Deus chega mais perto do que nunca.'**
+  String get entryMissionEntradaDeus05Intro;
+
+  /// No description provided for @entryMissionEntradaDeus05Objective.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver em Jesus a forma mais clara de conhecer a Deus.'**
+  String get entryMissionEntradaDeus05Objective;
+
+  /// No description provided for @entryMissionEntradaDeus05Title.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Verbo se fez carne'**
+  String get entryMissionEntradaDeus05Title;
+
   /// No description provided for @entryTrailAnsiedadeDescription.
   ///
   /// In pt, this message translates to:
@@ -3081,6 +3627,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ansiedade'**
   String get entryTrailAnsiedadeTitle;
+
+  /// No description provided for @entryTrailConhecerADeusDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cinco cenas do Criador ao Verbo feito carne — e seguir nos Evangelhos.'**
+  String get entryTrailConhecerADeusDescription;
+
+  /// No description provided for @entryTrailConhecerADeusModuleTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deus se aproxima'**
+  String get entryTrailConhecerADeusModuleTitle;
+
+  /// No description provided for @entryTrailConhecerADeusTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conhecer a Deus'**
+  String get entryTrailConhecerADeusTitle;
+
+  /// No description provided for @entryTrailEntenderABibliaDescription.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sete cenas da criação à nova criação — e de volta a Gênesis 1–11.'**
+  String get entryTrailEntenderABibliaDescription;
+
+  /// No description provided for @entryTrailEntenderABibliaModuleTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma só história'**
+  String get entryTrailEntenderABibliaModuleTitle;
+
+  /// No description provided for @entryTrailEntenderABibliaTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entender a Bíblia'**
+  String get entryTrailEntenderABibliaTitle;
 
   /// No description provided for @entryTrailRecomecoDescription.
   ///
@@ -4486,6 +5068,192 @@ abstract class AppLocalizations {
   /// **'Palavra'**
   String get homeWordWord;
 
+  /// No description provided for @intentBadgeCurrent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Atual'**
+  String get intentBadgeCurrent;
+
+  /// No description provided for @intentBadgeHere.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você está aqui'**
+  String get intentBadgeHere;
+
+  /// No description provided for @intentBannerHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para trocar de motivo'**
+  String get intentBannerHint;
+
+  /// No description provided for @intentBannerSemantics.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu motivo: {name}. {tagline}.'**
+  String intentBannerSemantics(String name, String tagline);
+
+  /// No description provided for @intentCtaChoose.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolher {name}'**
+  String intentCtaChoose(String name);
+
+  /// No description provided for @intentCtaContinue.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continuar com {name}'**
+  String intentCtaContinue(String name);
+
+  /// No description provided for @intentHabitBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um passo por dia: a sequência nasce de voltar amanhã.'**
+  String get intentHabitBlurb;
+
+  /// No description provided for @intentHabitSkill1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Voltar'**
+  String get intentHabitSkill1;
+
+  /// No description provided for @intentHabitSkill2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Persistir'**
+  String get intentHabitSkill2;
+
+  /// No description provided for @intentHabitSkill3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Crescer'**
+  String get intentHabitSkill3;
+
+  /// No description provided for @intentKnowBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aproxime-se: quem Ele é, e o que isso muda em você.'**
+  String get intentKnowBlurb;
+
+  /// No description provided for @intentKnowSkill1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aproximar'**
+  String get intentKnowSkill1;
+
+  /// No description provided for @intentKnowSkill2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Adorar'**
+  String get intentKnowSkill2;
+
+  /// No description provided for @intentKnowSkill3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Confiar'**
+  String get intentKnowSkill3;
+
+  /// No description provided for @intentNoneTagline.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para escolher'**
+  String get intentNoneTagline;
+
+  /// No description provided for @intentNoneTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda não escolhido'**
+  String get intentNoneTitle;
+
+  /// No description provided for @intentOpensTrail.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abre: {trail}'**
+  String intentOpensTrail(String trail);
+
+  /// No description provided for @intentOrdinal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Motivo {ordinal}'**
+  String intentOrdinal(String ordinal);
+
+  /// No description provided for @intentOrdinalBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Motivo {ordinal} · {badge}'**
+  String intentOrdinalBadge(String ordinal, String badge);
+
+  /// No description provided for @intentPeaceBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um respiro no meio do dia: lance a ansiedade e siga.'**
+  String get intentPeaceBlurb;
+
+  /// No description provided for @intentPeaceSkill1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Respirar'**
+  String get intentPeaceSkill1;
+
+  /// No description provided for @intentPeaceSkill2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lançar'**
+  String get intentPeaceSkill2;
+
+  /// No description provided for @intentPeaceSkill3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Descansar'**
+  String get intentPeaceSkill3;
+
+  /// No description provided for @intentRuleFootnote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Define a trilha de entrada · depois o app segue a última que você andou'**
+  String get intentRuleFootnote;
+
+  /// No description provided for @intentSheetEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu motivo'**
+  String get intentSheetEyebrow;
+
+  /// No description provided for @intentSheetTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que te traz aqui?'**
+  String get intentSheetTitle;
+
+  /// No description provided for @intentSwitch.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trocar'**
+  String get intentSwitch;
+
+  /// No description provided for @intentUnderstandBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma história só: do começo ao fio que une a Bíblia.'**
+  String get intentUnderstandBlurb;
+
+  /// No description provided for @intentUnderstandSkill1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ler'**
+  String get intentUnderstandSkill1;
+
+  /// No description provided for @intentUnderstandSkill2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ligar'**
+  String get intentUnderstandSkill2;
+
+  /// No description provided for @intentUnderstandSkill3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Guardar'**
+  String get intentUnderstandSkill3;
+
   /// No description provided for @inviteAcceptCta.
   ///
   /// In pt, this message translates to:
@@ -4819,26 +5587,8 @@ abstract class AppLocalizations {
   /// No description provided for @juntosCaravanMonthBody.
   ///
   /// In pt, this message translates to:
-  /// **'Tudo conta: cenas, tarefas do dia, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.'**
+  /// **'Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.'**
   String get juntosCaravanMonthBody;
-
-  /// No description provided for @juntosCaravanMonthStep1.
-  ///
-  /// In pt, this message translates to:
-  /// **'Estude\numa cena'**
-  String get juntosCaravanMonthStep1;
-
-  /// No description provided for @juntosCaravanMonthStep2.
-  ///
-  /// In pt, this message translates to:
-  /// **'Some\npassos'**
-  String get juntosCaravanMonthStep2;
-
-  /// No description provided for @juntosCaravanMonthStep3.
-  ///
-  /// In pt, this message translates to:
-  /// **'Veja o\ncaminho'**
-  String get juntosCaravanMonthStep3;
 
   /// No description provided for @juntosCaravanMonthTitle.
   ///
@@ -4875,36 +5625,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'A caravana demorou para responder. Puxe para atualizar.'**
   String get juntosCaravanTimeout;
-
-  /// No description provided for @juntosCaravanWeekBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'É aqui que tudo acontece. Os passos de cenas novas, de segunda a domingo, decidem quem sobe e quem desce.'**
-  String get juntosCaravanWeekBody;
-
-  /// No description provided for @juntosCaravanWeekStep1.
-  ///
-  /// In pt, this message translates to:
-  /// **'Passos\nda semana'**
-  String get juntosCaravanWeekStep1;
-
-  /// No description provided for @juntosCaravanWeekStep2.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quem\nsobe'**
-  String get juntosCaravanWeekStep2;
-
-  /// No description provided for @juntosCaravanWeekStep3.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quem\ndesce'**
-  String get juntosCaravanWeekStep3;
-
-  /// No description provided for @juntosCaravanWeekTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'O ranking da semana'**
-  String get juntosCaravanWeekTitle;
 
   /// No description provided for @juntosChallengeExplainerBody.
   ///
@@ -5080,12 +5800,6 @@ abstract class AppLocalizations {
   /// **'Não foi possível recusar o convite. Tente de novo.'**
   String get juntosDeclineInviteError;
 
-  /// No description provided for @juntosDemoteZone.
-  ///
-  /// In pt, this message translates to:
-  /// **'Zona de descida · {tier}'**
-  String juntosDemoteZone(String tier);
-
   /// No description provided for @juntosEditRoomTitle.
   ///
   /// In pt, this message translates to:
@@ -5097,12 +5811,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Primeiro marco: {count} dias juntos'**
   String juntosFirstMilestone(int count);
-
-  /// Steps behind the person ranked just above (place = their position).
-  ///
-  /// In pt, this message translates to:
-  /// **'{gap} do {place}º'**
-  String juntosGapToAbove(int gap, int place);
 
   /// No description provided for @juntosHaveCode.
   ///
@@ -5224,6 +5932,36 @@ abstract class AppLocalizations {
   /// **'Sair do grupo?'**
   String get juntosLeaveRoomTitle;
 
+  /// No description provided for @juntosLevelSteady.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} de {total} semanas firmes para {next}'**
+  String juntosLevelSteady(int count, int total, String next);
+
+  /// No description provided for @juntosLevelTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu nível · {tier}'**
+  String juntosLevelTitle(String tier);
+
+  /// No description provided for @juntosLevelTop.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você chegou ao nível mais alto'**
+  String get juntosLevelTop;
+
+  /// No description provided for @juntosLevelWeek.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta semana: {count} de {goal} cenas novas'**
+  String juntosLevelWeek(int count, int goal);
+
+  /// No description provided for @juntosLevelWeekDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Semana firme garantida'**
+  String get juntosLevelWeekDone;
+
   /// No description provided for @juntosMilestoneLeft.
   ///
   /// In pt, this message translates to:
@@ -5271,12 +6009,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ou chamar um companheiro'**
   String get juntosOrInviteCompanion;
-
-  /// No description provided for @juntosPromoteZone.
-  ///
-  /// In pt, this message translates to:
-  /// **'Zona de subida · {tier}'**
-  String juntosPromoteZone(String tier);
 
   /// No description provided for @juntosRoomAllStudied.
   ///
@@ -5595,23 +6327,11 @@ abstract class AppLocalizations {
   /// **'Grupos'**
   String get juntosTabGroups;
 
-  /// No description provided for @juntosThisMonth.
-  ///
-  /// In pt, this message translates to:
-  /// **'Este mês'**
-  String get juntosThisMonth;
-
   /// No description provided for @juntosThisWeek.
   ///
   /// In pt, this message translates to:
   /// **'Esta semana'**
   String get juntosThisWeek;
-
-  /// No description provided for @juntosTie.
-  ///
-  /// In pt, this message translates to:
-  /// **'Empate'**
-  String get juntosTie;
 
   /// No description provided for @juntosTogetherLegend.
   ///
@@ -5685,17 +6405,17 @@ abstract class AppLocalizations {
   /// **'{name} acenou para você'**
   String juntosWavedAtYou(String name);
 
-  /// No description provided for @juntosWeekRankingEmpty.
+  /// No description provided for @juntosWeekGain.
   ///
   /// In pt, this message translates to:
-  /// **'O ranking começa quando outra pessoa entra na caravana.'**
-  String get juntosWeekRankingEmpty;
+  /// **'+{count} na semana'**
+  String juntosWeekGain(int count);
 
-  /// No description provided for @juntosWeekRankingEmptyTitle.
+  /// No description provided for @juntosWeekHighlight.
   ///
   /// In pt, this message translates to:
-  /// **'Ainda só você'**
-  String get juntosWeekRankingEmptyTitle;
+  /// **'Destaque da semana'**
+  String get juntosWeekHighlight;
 
   /// No description provided for @juntosWeekTogetherBonus.
   ///
@@ -5763,6 +6483,12 @@ abstract class AppLocalizations {
   /// **'Deslize ou toque para escolher o idioma'**
   String get languageSemanticsHint;
 
+  /// No description provided for @languageSheetTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em que língua a gente conversa?'**
+  String get languageSheetTitle;
+
   /// No description provided for @languageShortDevice.
   ///
   /// In pt, this message translates to:
@@ -5805,30 +6531,6 @@ abstract class AppLocalizations {
   /// **'+{count} passos de encorajamento'**
   String leagueBonusEncourage(int count);
 
-  /// No description provided for @leagueDemotedBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ficou em {rank}º. No nível {tier}, dá para subir de novo.'**
-  String leagueDemotedBody(int rank, String tier);
-
-  /// No description provided for @leagueDemotedTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você desceu para {tier}'**
-  String leagueDemotedTitle(String tier);
-
-  /// No description provided for @leagueDriftDown.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Desceu 1 posição hoje} other{Desceu {count} posições hoje}}'**
-  String leagueDriftDown(int count);
-
-  /// No description provided for @leagueDriftStable.
-  ///
-  /// In pt, this message translates to:
-  /// **'Posição estável hoje'**
-  String get leagueDriftStable;
-
   /// No description provided for @leagueDriftUp.
   ///
   /// In pt, this message translates to:
@@ -5840,12 +6542,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Agora você caminha no nível\n{tier}'**
   String leagueLevelUpBodyOnly(String tier);
-
-  /// No description provided for @leagueLevelUpBodyRank.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ficou em {rank}º · agora caminha no nível\n{tier}'**
-  String leagueLevelUpBodyRank(int rank, String tier);
 
   /// No description provided for @leagueLevelUpTitle.
   ///
@@ -5859,41 +6555,11 @@ abstract class AppLocalizations {
   /// **'Agora no nível {tier}'**
   String leaguePromotedLevelOnly(String tier);
 
-  /// No description provided for @leaguePromotedRankLine.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ficou em {rank}º · agora no nível {tier}'**
-  String leaguePromotedRankLine(int rank, String tier);
-
   /// No description provided for @leaguePromotedTitle.
   ///
   /// In pt, this message translates to:
   /// **'Você subiu para {tier}'**
   String leaguePromotedTitle(String tier);
-
-  /// No description provided for @leagueRiskBodyClosing.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você está em {rank}º no nível {tier}. A caravana fecha em breve.'**
-  String leagueRiskBodyClosing(int rank, String tier);
-
-  /// No description provided for @leagueRiskBodyHold.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você está em {rank}º no nível {tier}. Um passo pode segurar o lugar.'**
-  String leagueRiskBodyHold(int rank, String tier);
-
-  /// No description provided for @leagueRiskNear.
-  ///
-  /// In pt, this message translates to:
-  /// **'Perto da descida · {closes}'**
-  String leagueRiskNear(String closes);
-
-  /// No description provided for @leagueRiskZone.
-  ///
-  /// In pt, this message translates to:
-  /// **'Zona de descida · {closes}'**
-  String leagueRiskZone(String closes);
 
   /// No description provided for @leagueRoleLeader.
   ///
@@ -5936,12 +6602,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Visto hoje · caminhou {date}'**
   String leagueSeenTodayWalked(String date);
-
-  /// No description provided for @leagueStayedBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você ficou em {rank}º no nível {tier}. Nova semana — continue caminhando.'**
-  String leagueStayedBody(int rank, String tier);
 
   /// No description provided for @leagueStudying.
   ///
@@ -6002,12 +6662,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Caminhou hoje'**
   String get leagueWalkedToday;
-
-  /// No description provided for @leagueWeekEndedTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Semana da caravana encerrada'**
-  String get leagueWeekEndedTitle;
 
   /// No description provided for @legalPrivacy.
   ///
@@ -9495,11 +10149,23 @@ abstract class AppLocalizations {
   /// **'Restaurar compra'**
   String get paywallRestore;
 
+  /// No description provided for @paywallRestoreDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Assinatura restaurada. Que bom ter você de volta!'**
+  String get paywallRestoreDone;
+
   /// No description provided for @paywallRestoreFailed.
   ///
   /// In pt, this message translates to:
   /// **'Não foi possível restaurar a compra.'**
   String get paywallRestoreFailed;
+
+  /// No description provided for @paywallRestoreNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma assinatura ativa nesta conta da loja.'**
+  String get paywallRestoreNone;
 
   /// No description provided for @paywallSave.
   ///
@@ -10554,7 +11220,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileInTheWordWhisper.
   ///
   /// In pt, this message translates to:
-  /// **'Versos que você guarda e os que já saíram daqui.'**
+  /// **'Versos que você guarda, anota e os que já saíram daqui.'**
   String get profileInTheWordWhisper;
 
   /// No description provided for @profileLampHelp.
@@ -10574,6 +11240,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{rank}º no ranking do mês'**
   String profileMonthRank(int rank);
+
+  /// No description provided for @profileNotes.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anotações'**
+  String get profileNotes;
+
+  /// No description provided for @profileNotesAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Todas'**
+  String get profileNotesAll;
 
   /// No description provided for @profileOfSevenDays.
   ///
@@ -12531,6 +13209,24 @@ abstract class AppLocalizations {
   /// **'Na nuvem'**
   String get settingsInCloud;
 
+  /// No description provided for @settingsIntentHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Define a trilha de entrada. Depois, o app segue a última trilha que você andou.'**
+  String get settingsIntentHint;
+
+  /// No description provided for @settingsIntentLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu motivo'**
+  String get settingsIntentLabel;
+
+  /// No description provided for @settingsIntentNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda não escolhido'**
+  String get settingsIntentNone;
+
   /// No description provided for @settingsLastBackup.
   ///
   /// In pt, this message translates to:
@@ -12638,6 +13334,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'A apresentação do começo, de novo'**
   String get settingsReplayIntroSubtitle;
+
+  /// No description provided for @settingsReportProblem.
+  ///
+  /// In pt, this message translates to:
+  /// **'Relatar um problema'**
+  String get settingsReportProblem;
+
+  /// No description provided for @settingsReportProblemSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Algo não funcionou? Conte para nós'**
+  String get settingsReportProblemSubtitle;
 
   /// No description provided for @settingsRestoreFromClipboard.
   ///
@@ -12765,6 +13473,18 @@ abstract class AppLocalizations {
   /// **'Ajude a continuar'**
   String get settingsSupport;
 
+  /// No description provided for @settingsTabAccountAbout.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conta e sobre'**
+  String get settingsTabAccountAbout;
+
+  /// No description provided for @settingsTabPreferences.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preferências'**
+  String get settingsTabPreferences;
+
   /// No description provided for @settingsTextSize.
   ///
   /// In pt, this message translates to:
@@ -12782,6 +13502,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Automático'**
   String get settingsThemeAuto;
+
+  /// No description provided for @settingsThemeBlurbAuto.
+  ///
+  /// In pt, this message translates to:
+  /// **'Manhã, tarde e noite acompanham o horário do seu dia.'**
+  String get settingsThemeBlurbAuto;
+
+  /// No description provided for @settingsThemeBlurbDark.
+  ///
+  /// In pt, this message translates to:
+  /// **'Céu de noite: menos brilho para ler antes de dormir.'**
+  String get settingsThemeBlurbDark;
+
+  /// No description provided for @settingsThemeBlurbLight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Papel claro e céu de manhã — bom para ler de dia.'**
+  String get settingsThemeBlurbLight;
+
+  /// No description provided for @settingsThemeBlurbMedium.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meia-luz azul: descansa os olhos sem apagar a tela.'**
+  String get settingsThemeBlurbMedium;
 
   /// No description provided for @settingsThemeCaptionAuto.
   ///
@@ -12837,6 +13581,12 @@ abstract class AppLocalizations {
   /// **'Médio'**
   String get settingsThemeMedium;
 
+  /// No description provided for @settingsThemeOrdinal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tema {ordinal}'**
+  String settingsThemeOrdinal(String ordinal);
+
   /// No description provided for @settingsThemeSemantics.
   ///
   /// In pt, this message translates to:
@@ -12848,6 +13598,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Toque ou deslize para escolher'**
   String get settingsThemeSemanticsHint;
+
+  /// No description provided for @settingsThemeSheetTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como você quer ver o app?'**
+  String get settingsThemeSheetTitle;
 
   /// No description provided for @settingsTitle.
   ///
@@ -13605,6 +14361,24 @@ abstract class AppLocalizations {
   /// **'{modes} concluídas'**
   String trailsModesCleared(String modes);
 
+  /// No description provided for @trailsOpenMore.
+  ///
+  /// In pt, this message translates to:
+  /// **'{first} e mais {count}'**
+  String trailsOpenMore(String first, int count);
+
+  /// No description provided for @trailsOpenSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha por onde continuar.'**
+  String get trailsOpenSubtitle;
+
+  /// No description provided for @trailsOpenTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Suas trilhas abertas'**
+  String get trailsOpenTitle;
+
   /// No description provided for @trailsPlusHeading.
   ///
   /// In pt, this message translates to:
@@ -14085,18 +14859,6 @@ abstract class AppLocalizations {
   /// **'Volte para a trilha'**
   String get widgetBackToTrail;
 
-  /// No description provided for @widgetBehindCaravan.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ficando para trás na caravana — caminhe hoje'**
-  String get widgetBehindCaravan;
-
-  /// No description provided for @widgetDaysInRow.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}'**
-  String widgetDaysInRow(int count);
-
   /// No description provided for @widgetGoalDone.
   ///
   /// In pt, this message translates to:
@@ -14115,17 +14877,23 @@ abstract class AppLocalizations {
   /// **'{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}'**
   String widgetProgressScenes(int done, int goal);
 
-  /// No description provided for @widgetScenesLeft.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{falta 1 cena} other{faltam {count} cenas}}'**
-  String widgetScenesLeft(int count);
-
   /// No description provided for @widgetScenesLeftToday.
   ///
   /// In pt, this message translates to:
   /// **'{count, plural, =1{Falta 1 cena hoje} other{Faltam {count} cenas hoje}}'**
   String widgetScenesLeftToday(int count);
+
+  /// No description provided for @widgetShortAway.
+  ///
+  /// In pt, this message translates to:
+  /// **'Volte hoje'**
+  String get widgetShortAway;
+
+  /// No description provided for @widgetShortSafe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Feito hoje'**
+  String get widgetShortSafe;
 
   /// No description provided for @widgetStartStreak.
   ///
@@ -14156,6 +14924,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'A trilha espera amanhã'**
   String get widgetTrailWaitsTomorrow;
+
+  /// No description provided for @widgetWeekdayInitials.
+  ///
+  /// In pt, this message translates to:
+  /// **'S,T,Q,Q,S,S,D'**
+  String get widgetWeekdayInitials;
 }
 
 class _AppLocalizationsDelegate

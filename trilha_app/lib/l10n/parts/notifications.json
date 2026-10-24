@@ -200,11 +200,6 @@
     "en": "The trail waits tomorrow",
     "es": "La ruta espera mañana"
   },
-  "widgetBehindCaravan": {
-    "pt": "Ficando para trás na caravana — caminhe hoje",
-    "en": "Falling behind the caravan — walk today",
-    "es": "Quedándote atrás en la caravana — camina hoy"
-  },
   "widgetScenesLeftToday": {
     "pt": "{count, plural, =1{Falta 1 cena hoje} other{Faltam {count} cenas hoje}}",
     "en": "{count, plural, =1{1 scene left today} other{{count} scenes left today}}",
@@ -233,20 +228,19 @@
     "en": "Back to the trail",
     "es": "Vuelve a la ruta"
   },
-  "widgetDaysInRow": {
-    "pt": "{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}",
-    "en": "{count, plural, =1{1 day in a row} other{{count} days in a row}}",
-    "es": "{count, plural, =1{1 día seguido} other{{count} días seguidos}}",
-    "placeholders": {
-      "count": "int"
-    }
+  "widgetShortSafe": {
+    "pt": "Feito hoje",
+    "en": "Done today",
+    "es": "Hecho hoy"
   },
-  "widgetScenesLeft": {
-    "pt": "{count, plural, =1{falta 1 cena} other{faltam {count} cenas}}",
-    "en": "{count, plural, =1{1 scene left} other{{count} scenes left}}",
-    "es": "{count, plural, =1{falta 1 escena} other{faltan {count} escenas}}",
-    "placeholders": {
-      "count": "int"
-    }
+  "widgetShortAway": {
+    "pt": "Volte hoje",
+    "en": "Come back today",
+    "es": "Vuelve hoy"
+  },
+  "widgetWeekdayInitials": {
+    "pt": "S,T,Q,Q,S,S,D",
+    "en": "M,T,W,T,F,S,S",
+    "es": "L,M,X,J,V,S,D"
   }
 }

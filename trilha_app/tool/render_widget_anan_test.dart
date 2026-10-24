@@ -10,7 +10,6 @@
 // da lista de widgets do Android (drawable-nodpi/widget_preview.png).
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
@@ -89,137 +88,209 @@ void main() {
     });
   }
 
-  // Prévia da lista "Adicionar widgets": o card em risco, como no aparelho.
-  testWidgets('render preview', (tester) async {
-    final fonts =
-        '${Platform.environment['FLUTTER_ROOT']}/bin/cache/artifacts/material_fonts';
-    await tester.runAsync(() async {
-      await _loadFont('Roboto', '$fonts/Roboto-Bold.ttf');
-      await _loadFont('MaterialIcons', '$fonts/MaterialIcons-Regular.otf');
-    });
-    const scale = 2.0;
-    final key = GlobalKey();
-    await tester.binding.setSurfaceSize(const Size(320 * scale, 130 * scale));
-    await tester.pumpWidget(
-      MediaQuery(
-        data: const MediaQueryData(disableAnimations: true),
-        child: Directionality(
-          textDirection: TextDirection.ltr,
-          child: Center(
-            child: RepaintBoundary(
-              key: key,
-              child: Transform.scale(scale: scale, child: const _PreviewCard()),
+  // Prévias da lista "Adicionar widgets": os dois cards em risco, como no
+  // aparelho.
+  const previews = {
+    'widget_preview': Size(320, 146),
+    'widget_preview_small': Size(170, 72),
+  };
+  for (final MapEntry(key: name, value: size) in previews.entries) {
+    testWidgets('render $name', (tester) async {
+      final fonts =
+          '${Platform.environment['FLUTTER_ROOT']}/bin/cache/artifacts/material_fonts';
+      await tester.runAsync(() async {
+        await _loadFont('Roboto', '$fonts/Roboto-Bold.ttf');
+        await _loadFont('MaterialIcons', '$fonts/MaterialIcons-Regular.otf');
+      });
+      const scale = 2.0;
+      final key = GlobalKey();
+      await tester.binding.setSurfaceSize(size * scale);
+      await tester.pumpWidget(
+        MediaQuery(
+          data: const MediaQueryData(disableAnimations: true),
+          child: Directionality(
+            textDirection: TextDirection.ltr,
+            child: Center(
+              child: RepaintBoundary(
+                key: key,
+                child: SizedBox.fromSize(
+                  size: size * scale,
+                  child: Center(
+                    child: Transform.scale(
+                      scale: scale,
+                      child: _PreviewCard(size: size, small: size.width < 200),
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
         ),
-      ),
-    );
-    await tester.runAsync(() async {
-      await precacheImage(
-        AssetImage(CloudFace.triste.body),
-        tester.element(find.byKey(key)),
       );
+      await tester.runAsync(() async {
+        await precacheImage(
+          AssetImage(CloudFace.triste.body),
+          tester.element(find.byKey(key)),
+        );
+      });
+      await tester.pump();
+      File(
+        'android/app/src/main/res/drawable-nodpi/$name.png',
+      ).writeAsBytesSync(await _capture(tester, key));
     });
-    await tester.pump();
-    File(
-      'android/app/src/main/res/drawable-nodpi/widget_preview.png',
-    ).writeAsBytesSync(await _capture(tester, key));
-  });
+  }
 }
 
+const _white = Color(0xFFFFFFFF);
+const _ink = Color(0xFFD9634A);
+
 class _PreviewCard extends StatelessWidget {
-  const _PreviewCard();
+  const _PreviewCard({required this.size, required this.small});
+
+  final Size size;
+  final bool small;
 
   @override
   Widget build(BuildContext context) {
-    const white = Color(0xFFFFFFFF);
-    const ink = Color(0xFFD9634A);
-    return SizedBox(
-      width: 320 * 2,
-      height: 130 * 2,
-      child: Center(
+    const decoration = BoxDecoration(
+      borderRadius: BorderRadius.all(Radius.circular(22)),
+      gradient: LinearGradient(
+        colors: [Color(0xFFE9795A), Color(0xFFF6B784)],
+      ),
+    );
+    const style = TextStyle(fontFamily: 'Roboto', color: _white);
+    if (!small) {
+      // Igual ao trilha_home_widget.xml: Anan grande saindo pela borda.
+      final anan = size.height.clamp(0.0, 140.0);
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(22),
         child: Container(
-          width: 320,
-          height: 130,
-          padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(22),
-            gradient: const LinearGradient(
-              colors: [Color(0xFFE9795A), Color(0xFFF6B784)],
-            ),
-          ),
+          width: size.width,
+          height: size.height,
+          decoration: decoration,
           child: DefaultTextStyle(
-            style: const TextStyle(fontFamily: 'Roboto', color: white),
-            child: Row(
+            style: style,
+            child: Stack(
               children: [
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 2,
-                            ),
-                            decoration: BoxDecoration(
-                              color: const Color(0xF2FFFFFF),
-                              borderRadius: BorderRadius.circular(99),
-                            ),
-                            child: const Row(
-                              children: [
-                                Icon(
-                                  Icons.local_fire_department,
-                                  size: 14,
-                                  color: ink,
-                                ),
-                                SizedBox(width: 2),
-                                Text(
-                                  '12',
-                                  style: TextStyle(fontSize: 13, color: ink),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          const Expanded(
-                            child: Text(
-                              'MANTENHA SUA SEQUÊNCIA',
-                              maxLines: 2,
-                              style: TextStyle(
-                                fontSize: 11,
-                                letterSpacing: 0.66,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 4),
-                      const Text('12:10:53', style: TextStyle(fontSize: 36)),
-                      const SizedBox(height: 4),
-                      const Text(
-                        '12 dias seguidos · falta 1 cena',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Color(0xE6FFFFFF),
-                        ),
-                      ),
-                    ],
+                Positioned(
+                  right: -14,
+                  bottom: -18,
+                  child: CloudMascot(
+                    face: CloudFace.triste,
+                    size: anan,
+                    react: false,
                   ),
                 ),
-                const SizedBox(width: 4),
-                const CloudMascot(
-                  face: CloudFace.triste,
-                  size: 84,
-                  react: false,
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(16, 14, 124, 14),
+                  child: _LargeText(),
                 ),
               ],
             ),
           ),
         ),
+      );
+    }
+    return Container(
+      width: size.width,
+      height: size.height,
+      padding: const EdgeInsets.fromLTRB(14, 6, 6, 6),
+      decoration: decoration,
+      child: DefaultTextStyle(
+        style: style,
+        child: const Row(
+          children: [
+            Expanded(child: _SmallText()),
+            SizedBox(width: 4),
+            CloudMascot(face: CloudFace.triste, size: 60, react: false),
+          ],
+        ),
       ),
+    );
+  }
+}
+
+class _SmallText extends StatelessWidget {
+  const _SmallText();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(Icons.local_fire_department, size: 24, color: _white),
+            SizedBox(width: 2),
+            Text('12', style: TextStyle(fontSize: 24)),
+          ],
+        ),
+        SizedBox(height: 2),
+        Text('12:10:53', style: TextStyle(fontSize: 13)),
+      ],
+    );
+  }
+}
+
+class _LargeText extends StatelessWidget {
+  const _LargeText();
+
+  @override
+  Widget build(BuildContext context) {
+    const labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Row(
+          children: [
+            Icon(Icons.local_fire_department, size: 26, color: _white),
+            SizedBox(width: 2),
+            Text('12 dias', style: TextStyle(fontSize: 26, height: 1)),
+          ],
+        ),
+        const SizedBox(height: 4),
+        const Text(
+          'Mantenha sua sequência',
+          maxLines: 1,
+          style: TextStyle(fontSize: 13, color: Color(0xE6FFFFFF)),
+        ),
+        const SizedBox(height: 2),
+        const Text('12:10:53', style: TextStyle(fontSize: 22)),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            for (var i = 0; i < 7; i++)
+              Expanded(
+                child: Column(
+                  children: [
+                    Text(labels[i], style: const TextStyle(fontSize: 10)),
+                    const SizedBox(height: 3),
+                    Container(
+                      width: 18,
+                      height: 18,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: i < 3
+                            ? const Color(0xF2FFFFFF)
+                            : i == 3
+                            ? null
+                            : const Color(0x33FFFFFF),
+                        border: i == 3
+                            ? Border.all(color: _white, width: 2)
+                            : null,
+                      ),
+                      child: i < 3
+                          ? const Icon(Icons.check, size: 12, color: _ink)
+                          : null,
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
+      ],
     );
   }
 }

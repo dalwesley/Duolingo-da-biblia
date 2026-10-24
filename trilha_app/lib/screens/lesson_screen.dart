@@ -1700,8 +1700,8 @@ class _InsightPanel extends StatefulWidget {
 class _InsightPanelState extends State<_InsightPanel> {
   int? _active;
 
-  Widget _insight({required bool expand}) {
-    final plate = _WitnessPlate(
+  Widget _insightPlate() {
+    return _WitnessPlate(
       accent: widget.accent,
       child: Text(
         widget.text,
@@ -1713,7 +1713,22 @@ class _InsightPanelState extends State<_InsightPanel> {
         ),
       ),
     );
-    return expand ? SizedBox.expand(child: plate) : plate;
+  }
+
+  /// Sem fatos: a frase curta sozinha na placa alta. O Anan fala o que ficou.
+  Widget _insightSpeech() {
+    return AnanSpeech(
+      face: CloudFace.sucesso,
+      child: Text(
+        widget.text,
+        textAlign: TextAlign.center,
+        style: AppTypography.title(
+          size: 20,
+          height: 1.32,
+          color: AnanSpeechBubble.ink,
+        ),
+      ),
+    );
   }
 
   @override
@@ -1743,11 +1758,11 @@ class _InsightPanelState extends State<_InsightPanel> {
                     children: [
                       Flexible(
                         fit: FlexFit.loose,
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(
-                            maxHeight: stageMaxHeight,
+                        child: Center(
+                          child: SingleChildScrollView(
+                            physics: const BouncingScrollPhysics(),
+                            child: _insightSpeech(),
                           ),
-                          child: _insight(expand: true),
                         ),
                       ),
                       const SizedBox(height: 10),
@@ -1763,7 +1778,7 @@ class _InsightPanelState extends State<_InsightPanel> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              _insight(expand: false),
+                              _insightPlate(),
                               const SizedBox(height: AppSpace.lg),
                               SectionLabel(
                                 context.l10n.lessonFactsLabel,

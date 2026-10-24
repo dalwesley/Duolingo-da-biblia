@@ -263,7 +263,11 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
               face: unlocked ? CloudFace.sucesso : CloudFace.carregando,
               child: ScaleTransition(
                 scale: _heroScale,
-                child: MedalVaultMedallion(tile: tile, size: 104),
+                child: MedalVaultMedallion(
+                  tile: tile,
+                  size: 104,
+                  ribbons: true,
+                ),
               ),
             )
           else
@@ -288,7 +292,11 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                     ),
               medal: ScaleTransition(
                 scale: _heroScale,
-                child: MedalVaultMedallion(tile: tile, size: 104),
+                child: MedalVaultMedallion(
+                  tile: tile,
+                  size: 104,
+                  ribbons: true,
+                ),
               ),
             ),
           const SizedBox(height: 18),
@@ -454,7 +462,9 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
             children: [
               SectionLabel(headline, color: accent),
               const SizedBox(height: 28),
-              if (widget.celebration || current == null || !trackState.hasStarted)
+              if (widget.celebration ||
+                  current == null ||
+                  !trackState.hasStarted)
                 AnanBeside(
                   face: widget.celebration
                       ? CloudFace.sucesso
@@ -462,6 +472,7 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                   child: MedalVaultMedallion(
                     tile: PilgrimMedalTile.fromTrack(trackState),
                     size: widget.celebration ? 112 : 104,
+                    ribbons: true,
                   ),
                 )
               else
@@ -487,6 +498,7 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                   medal: MedalVaultMedallion(
                     tile: PilgrimMedalTile.fromTrack(trackState),
                     size: 104,
+                    ribbons: true,
                   ),
                 ),
               const SizedBox(height: 14),
@@ -761,6 +773,7 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
                 unlocked: true,
               ),
               size: 96,
+              ribbons: true,
             ),
           ),
           const SizedBox(height: 18),
@@ -829,11 +842,9 @@ class _MedalCompany extends StatelessWidget {
           top: -anan * 0.34,
           child: CloudMascot(face: face, size: anan),
         ),
-        Positioned(
-          right: -18,
-          bottom: 14,
-          child: heart,
-        ),
+        // A moeda tem fitas embaixo (um quarto da altura): o coração sobe
+        // junto para ficar ao lado do disco.
+        Positioned(right: -18, bottom: 40, child: heart),
       ],
     );
   }

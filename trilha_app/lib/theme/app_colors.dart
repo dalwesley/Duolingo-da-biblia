@@ -232,6 +232,13 @@ class AppRoles {
   /// da lanterna, que segue no azul de presença.
   static const lamp = Color(0xFFFFB547);
 
+  /// Tom de cada aba da nav inferior — só acende na aba ativa; as inativas
+  /// ficam em [AppearanceStyle.iconMuted]. Ajustes usa o próprio chrome.
+  static const navToday = lamp;
+  static const navTrails = Color(0xFFE0915E);
+  static const navBible = AppColors.primaryLight;
+  static const navTogether = AppColors.cedar;
+
   static const observation = AppColors.sprout;
   static const comprehension = AppColors.coral;
   static const interpretation = AppColors.orchid;

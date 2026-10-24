@@ -143,6 +143,120 @@
     "en": "Each scene: read, answer, understand.\nYour reason opens the path.",
     "es": "Cada escena: lee, responde, entiende.\nTu motivo abre el camino."
   },
+  "intentKnowBlurb": {
+    "pt": "Aproxime-se: quem Ele é, e o que isso muda em você.",
+    "en": "Draw near: who He is, and what that changes in you.",
+    "es": "Acércate: quién es Él, y qué cambia eso en ti."
+  },
+  "intentHabitBlurb": {
+    "pt": "Um passo por dia: a sequência nasce de voltar amanhã.",
+    "en": "One step a day: the streak is born from coming back tomorrow.",
+    "es": "Un paso al día: la racha nace de volver mañana."
+  },
+  "intentUnderstandBlurb": {
+    "pt": "Uma história só: do começo ao fio que une a Bíblia.",
+    "en": "One story: from the beginning to the thread that holds the Bible.",
+    "es": "Una sola historia: desde el principio al hilo que une la Biblia."
+  },
+  "intentPeaceBlurb": {
+    "pt": "Um respiro no meio do dia: lance a ansiedade e siga.",
+    "en": "A breath in the middle of the day: cast anxiety and keep going.",
+    "es": "Un respiro en medio del día: echa la ansiedad y sigue."
+  },
+  "intentKnowSkill1": {"pt": "Aproximar", "en": "Draw near", "es": "Acercarse"},
+  "intentKnowSkill2": {"pt": "Adorar", "en": "Worship", "es": "Adorar"},
+  "intentKnowSkill3": {"pt": "Confiar", "en": "Trust", "es": "Confiar"},
+  "intentHabitSkill1": {"pt": "Voltar", "en": "Return", "es": "Volver"},
+  "intentHabitSkill2": {"pt": "Persistir", "en": "Persist", "es": "Persistir"},
+  "intentHabitSkill3": {"pt": "Crescer", "en": "Grow", "es": "Crecer"},
+  "intentUnderstandSkill1": {"pt": "Ler", "en": "Read", "es": "Leer"},
+  "intentUnderstandSkill2": {"pt": "Ligar", "en": "Connect", "es": "Conectar"},
+  "intentUnderstandSkill3": {"pt": "Guardar", "en": "Keep", "es": "Guardar"},
+  "intentPeaceSkill1": {"pt": "Respirar", "en": "Breathe", "es": "Respirar"},
+  "intentPeaceSkill2": {"pt": "Lançar", "en": "Cast", "es": "Echar"},
+  "intentPeaceSkill3": {"pt": "Descansar", "en": "Rest", "es": "Descansar"},
+  "intentOrdinal": {
+    "pt": "Motivo {ordinal}",
+    "en": "Reason {ordinal}",
+    "es": "Motivo {ordinal}",
+    "placeholders": {"ordinal": "String"}
+  },
+  "intentOrdinalBadge": {
+    "pt": "Motivo {ordinal} · {badge}",
+    "en": "Reason {ordinal} · {badge}",
+    "es": "Motivo {ordinal} · {badge}",
+    "placeholders": {"ordinal": "String", "badge": "String"}
+  },
+  "intentBadgeHere": {
+    "pt": "Você está aqui",
+    "en": "You are here",
+    "es": "Estás aquí"
+  },
+  "intentBadgeCurrent": {
+    "pt": "Atual",
+    "en": "Current",
+    "es": "Actual"
+  },
+  "intentSheetEyebrow": {
+    "pt": "Seu motivo",
+    "en": "Your reason",
+    "es": "Tu motivo"
+  },
+  "intentSheetTitle": {
+    "pt": "O que te traz aqui?",
+    "en": "What brings you here?",
+    "es": "¿Qué te trae aquí?"
+  },
+  "intentCtaChoose": {
+    "pt": "Escolher {name}",
+    "en": "Choose {name}",
+    "es": "Elegir {name}",
+    "placeholders": {"name": "String"}
+  },
+  "intentCtaContinue": {
+    "pt": "Continuar com {name}",
+    "en": "Continue with {name}",
+    "es": "Continuar con {name}",
+    "placeholders": {"name": "String"}
+  },
+  "intentRuleFootnote": {
+    "pt": "Define a trilha de entrada · depois o app segue a última que você andou",
+    "en": "Sets your entry trail · then the app follows the last one you walked",
+    "es": "Define tu ruta de entrada · después la app sigue la última que recorriste"
+  },
+  "intentOpensTrail": {
+    "pt": "Abre: {trail}",
+    "en": "Opens: {trail}",
+    "es": "Abre: {trail}",
+    "placeholders": {"trail": "String"}
+  },
+  "intentBannerSemantics": {
+    "pt": "Seu motivo: {name}. {tagline}.",
+    "en": "Your reason: {name}. {tagline}.",
+    "es": "Tu motivo: {name}. {tagline}.",
+    "placeholders": {"name": "String", "tagline": "String"}
+  },
+  "intentBannerHint": {
+    "pt": "Toque para trocar de motivo",
+    "en": "Tap to change reason",
+    "es": "Toca para cambiar de motivo"
+  },
+  "intentSwitch": {
+    "pt": "Trocar",
+    "en": "Change",
+    "es": "Cambiar"
+  },
+  "intentNoneTitle": {
+    "pt": "Ainda não escolhido",
+    "en": "Not chosen yet",
+    "es": "Aún sin elegir"
+  },
+  "intentNoneTagline": {
+    "pt": "Toque para escolher",
+    "en": "Tap to choose",
+    "es": "Toca para elegir"
+  },
+
   "onboardingAppearanceTitle": {
     "pt": "Escolha a aparência.",
     "en": "Choose your appearance.",

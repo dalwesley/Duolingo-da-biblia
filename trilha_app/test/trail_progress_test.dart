@@ -462,4 +462,147 @@ void main() {
     expect(TrailProgress.isTrailUnlocked(historia, all, []), isTrue);
     expect(TrailProgress.isTrailUnlocked(primitiva, all, []), isFalse);
   });
+
+  test('intent trail leads only for whoever chose that reason', () {
+    final anxiety = contentTrail(
+      slug: 'ansiedade',
+      mission: 'a1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final knowGod = contentTrail(
+      slug: 'conhecer-a-deus',
+      mission: 'k1',
+      order: 2,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final sermon = contentTrail(
+      slug: 'sermao-do-monte',
+      mission: 's1',
+      order: 199,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final all = [anxiety, knowGod, sermon];
+    addTearDown(() => TrailProgress.preferredTrailSlug = null);
+
+    TrailProgress.preferredTrailSlug = null;
+    expect(TrailProgress.findActiveTrail(all, [])?.slug, 'ansiedade');
+    // Sem motivo, a trilha do motivo não entra na fila de ninguém.
+    expect(
+      TrailProgress.findActiveTrail(all, ['a1'])?.slug,
+      isNot('conhecer-a-deus'),
+    );
+    expect(TrailProgress.isTrailUnlocked(knowGod, all, []), isTrue);
+
+    TrailProgress.preferredTrailSlug = 'conhecer-a-deus';
+    expect(TrailProgress.findActiveTrail(all, [])?.slug, 'conhecer-a-deus');
+    // Terminada, volta para a ordem do caminho.
+    expect(TrailProgress.findActiveTrail(all, ['k1'])?.slug, 'ansiedade');
+  });
+
+  test('Home follows the last trail walked, then where it continues', () {
+    final anxiety = contentTrail(
+      slug: 'ansiedade',
+      mission: 'a1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final knowGod = contentTrail(
+      slug: 'conhecer-a-deus',
+      mission: 'entrada-deus-05',
+      order: 2,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final gospels = contentTrail(
+      slug: 'evangelhos',
+      mission: 'e1',
+      order: 50,
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+    );
+    final exodus = contentTrail(slug: 'exodo', mission: 'x1', order: 2);
+    final all = [anxiety, knowGod, gospels, exodus];
+    addTearDown(() {
+      TrailProgress.preferredTrailSlug = null;
+      TrailProgress.lastPlayedMissionSlug = null;
+    });
+
+    TrailProgress.preferredTrailSlug = 'conhecer-a-deus';
+    TrailProgress.lastPlayedMissionSlug = null;
+    expect(TrailProgress.findActiveTrail(all, [])?.slug, 'conhecer-a-deus');
+
+    // Andou em Êxodo pela aba Trilhas: o CTA vai junto.
+    TrailProgress.lastPlayedMissionSlug = 'x1';
+    expect(TrailProgress.findActiveTrail(all, [])?.slug, 'exodo');
+
+    // Terminou a trilha do motivo: segue para onde ela continua.
+    TrailProgress.lastPlayedMissionSlug = 'entrada-deus-05';
+    expect(
+      TrailProgress.findActiveTrail(all, ['entrada-deus-05'])?.slug,
+      'evangelhos',
+    );
+  });
+
+  test('started trails list the last walked first, then by day', () {
+    final genesis = contentTrail(slug: 'genesis-1-11', mission: 'g1');
+    final exodus = contentTrail(slug: 'exodo', mission: 'x1', order: 2);
+    final psalms = contentTrail(slug: 'salmos', mission: 'p1', order: 3);
+    final untouched = contentTrail(slug: 'rute', mission: 'r1', order: 4);
+    addTearDown(() => TrailProgress.lastPlayedMissionSlug = null);
+    // Duas cenas por trilha, para "começada" não virar "terminada".
+    Trail twoScenes(Trail t) => Trail(
+      slug: t.slug,
+      title: t.title,
+      description: '',
+      icon: t.icon,
+      order: t.order,
+      comingSoon: false,
+      color: t.color,
+      realmId: t.realmId,
+      categoryId: t.categoryId,
+      modules: [
+        TrailModule(
+          title: '',
+          icon: '',
+          missions: [
+            ...t.modules.first.missions,
+            Mission(
+              slug: '${t.slug}-2',
+              title: '',
+              intro: '',
+              type: 'lesson',
+              stepsReward: 50,
+              questions: const [],
+            ),
+          ],
+        ),
+      ],
+    );
+    final all = [genesis, exodus, psalms, untouched].map(twoScenes).toList();
+
+    TrailProgress.lastPlayedMissionSlug = 'x1';
+    final started = TrailProgress.startedTrails(
+      all,
+      ['g1', 'x1', 'p1'],
+      completedOn: {
+        'g1': '2026-10-20',
+        'x1': '2026-10-01',
+        'p1': '2026-10-21',
+      },
+    );
+    expect(started.map((t) => t.slug), ['exodo', 'salmos', 'genesis-1-11']);
+
+    // Salmos só tem cena emprestada de uma trilha de entrada: não abre.
+    final withBorrowed = TrailProgress.startedTrails(
+      all,
+      ['g1', 'x1', 'p1'],
+      borrowed: ['p1'],
+    );
+    expect(withBorrowed.map((t) => t.slug), ['exodo', 'genesis-1-11']);
+  });
 }

@@ -7,7 +7,7 @@ import '../models/pilgrim_medals.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
-import 'embossed_glyph.dart';
+import 'medal_art.dart';
 import 'recognition_heart_badge.dart';
 
 /// Halo radial + raios suaves — fundo de sheets e tiles de medalha.
@@ -288,12 +288,14 @@ class _MedalRingPainter extends CustomPainter {
       old.stroke != stroke;
 }
 
-/// Medallion compacto para o grid do cofre — moeda metálica por material.
+/// A medalha do cofre — a mesma [MedalArt] do baú, no metal do nível;
+/// trancada, apagada na noite. [ribbons] nas folhas de destaque.
 class MedalVaultMedallion extends StatelessWidget {
   final PilgrimMedalTile tile;
   final VoidCallback? onTap;
   final double? size;
   final bool mystery;
+  final bool ribbons;
 
   const MedalVaultMedallion({
     super.key,
@@ -301,41 +303,24 @@ class MedalVaultMedallion extends StatelessWidget {
     this.onTap,
     this.size,
     this.mystery = false,
+    this.ribbons = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final unlocked = tile.unlocked;
-    final palette = _MedalTierPalette.forTier(tile.tier, unlocked: unlocked);
     final diameter = size ?? 52;
-    final iconSize = diameter * (unlocked ? 0.38 : 0.32);
+    final metal = MedalArt.metalFor(tile.tier);
 
-    final coin = SizedBox(
-      width: diameter,
-      height: diameter,
-      child: Stack(
-        alignment: Alignment.center,
-        clipBehavior: Clip.none,
-        children: [
-          CustomPaint(
-            size: Size.square(diameter),
-            painter: _MedallionCoinPainter(
-              palette: palette,
-              unlocked: unlocked,
-            ),
-          ),
-          if (unlocked || mystery)
-            EmbossedGlyph(
-              glyph: mystery ? CinematicGlyph.spark : tile.glyph,
-              size: iconSize,
-              fill: palette.glyph,
-              groove: palette.faceDark,
-              ridge: palette.rimLight,
-              depth: unlocked ? 1.15 : 0.7,
-              opacity: mystery && !unlocked ? 0.55 : 1,
-            ),
-        ],
-      ),
+    final coin = MedalArt(
+      metal: metal,
+      size: diameter,
+      locked: !unlocked,
+      ribbons: ribbons,
+      glyph: unlocked || mystery
+          ? (mystery && !unlocked ? CinematicGlyph.spark : tile.glyph)
+          : null,
+      glyphOpacity: mystery && !unlocked ? 0.55 : 1,
     );
 
     if (onTap == null) return coin;
@@ -345,226 +330,12 @@ class MedalVaultMedallion extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         customBorder: const CircleBorder(),
-        splashColor: palette.glow.withValues(alpha: 0.2),
-        highlightColor: palette.glow.withValues(alpha: 0.08),
+        splashColor: metal.withValues(alpha: 0.2),
+        highlightColor: metal.withValues(alpha: 0.08),
         child: coin,
       ),
     );
   }
-}
-
-class _MedalTierPalette {
-  final Color rimLight;
-  final Color rimMid;
-  final Color rimDark;
-  final Color faceLight;
-  final Color faceMid;
-  final Color faceDark;
-  final Color glyph;
-  final Color glow;
-
-  const _MedalTierPalette({
-    required this.rimLight,
-    required this.rimMid,
-    required this.rimDark,
-    required this.faceLight,
-    required this.faceMid,
-    required this.faceDark,
-    required this.glyph,
-    required this.glow,
-  });
-
-  factory _MedalTierPalette.forTier(
-    PilgrimMedalTier tier, {
-    required bool unlocked,
-  }) {
-    if (!unlocked) return _MedalTierPalette.locked();
-    return _MedalTierPalette.metal(switch (tier) {
-      PilgrimMedalTier.iron => AppColors.medalIron,
-      PilgrimMedalTier.bronze => AppColors.medalBronze,
-      PilgrimMedalTier.silver => AppColors.medalSilver,
-      PilgrimMedalTier.gold => AppColors.medalGold,
-      PilgrimMedalTier.platinum => AppColors.medalPlatinum,
-      PilgrimMedalTier.diamond => AppColors.medalDiamond,
-      PilgrimMedalTier.mirra => AppColors.medalMirra,
-      PilgrimMedalTier.aurora => AppColors.medalAurora,
-    });
-  }
-
-  /// Aro e face derivados do metal do token ([AppColors].medal*):
-  /// luz rumo ao branco, sombra rumo ao preto — sem hex duplicado.
-  factory _MedalTierPalette.metal(Color m) => _MedalTierPalette(
-    rimLight: Color.lerp(m, Colors.white, 0.35)!,
-    rimMid: m,
-    rimDark: Color.lerp(m, Colors.black, 0.32)!,
-    faceLight: Color.lerp(m, Colors.white, 0.17)!,
-    faceMid: Color.lerp(m, Colors.black, 0.08)!,
-    faceDark: Color.lerp(m, Colors.black, 0.48)!,
-    glyph: Color.lerp(m, Colors.white, 0.78)!,
-    glow: m,
-  );
-
-  /// Ferro apagado na noite — medalha ainda não conquistada.
-  factory _MedalTierPalette.locked() {
-    Color dim(double t) => Color.lerp(AppColors.medalIron, AppColors.night, t)!;
-    return _MedalTierPalette(
-      rimLight: dim(0.47),
-      rimMid: dim(0.7),
-      rimDark: dim(0.88),
-      faceLight: dim(0.65),
-      faceMid: dim(0.8),
-      faceDark: dim(0.92),
-      glyph: AppColors.textOnDark.withValues(alpha: 0.35),
-      glow: dim(0.6),
-    );
-  }
-}
-
-class _MedallionCoinPainter extends CustomPainter {
-  final _MedalTierPalette palette;
-  final bool unlocked;
-
-  const _MedallionCoinPainter({required this.palette, required this.unlocked});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final outerR = size.width / 2;
-    final rimR = outerR * 0.96;
-    final faceR = outerR * 0.74;
-    final innerR = outerR * 0.58;
-
-    canvas.drawCircle(
-      center + const Offset(0, 2.2),
-      outerR * 0.9,
-      Paint()
-        ..color = Colors.black.withValues(alpha: unlocked ? 0.48 : 0.3)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3.2),
-    );
-
-    _drawOuterRim(canvas, center, rimR);
-    _drawFace(canvas, center, faceR, innerR);
-    _drawReeding(canvas, center, rimR);
-    if (unlocked) _drawSpecular(canvas, center, faceR);
-  }
-
-  void _drawOuterRim(Canvas canvas, Offset center, double radius) {
-    final rect = Rect.fromCircle(center: center, radius: radius);
-    canvas.drawCircle(
-      center,
-      radius,
-      Paint()
-        ..shader = SweepGradient(
-          colors: [
-            palette.rimDark,
-            palette.rimMid,
-            palette.rimLight,
-            palette.rimMid,
-            palette.rimDark,
-          ],
-          stops: const [0.0, 0.22, 0.48, 0.78, 1.0],
-        ).createShader(rect),
-    );
-
-    canvas.drawCircle(
-      center,
-      radius * 0.86,
-      Paint()
-        ..shader = RadialGradient(
-          center: const Alignment(-0.35, -0.4),
-          colors: [palette.faceMid, palette.rimDark],
-          stops: const [0.72, 1.0],
-        ).createShader(rect),
-    );
-
-    canvas.drawCircle(
-      center,
-      radius,
-      Paint()
-        ..color = palette.rimDark.withValues(alpha: 0.7)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.0,
-    );
-  }
-
-  void _drawFace(Canvas canvas, Offset center, double faceR, double innerR) {
-    final rect = Rect.fromCircle(center: center, radius: faceR);
-    canvas.drawCircle(
-      center,
-      faceR,
-      Paint()
-        ..shader = RadialGradient(
-          center: const Alignment(-0.38, -0.48),
-          radius: 1.1,
-          colors: [palette.faceLight, palette.faceMid, palette.faceDark],
-          stops: const [0.0, 0.5, 1.0],
-        ).createShader(rect),
-    );
-
-    canvas.drawCircle(
-      center,
-      innerR,
-      Paint()
-        ..color = palette.rimDark.withValues(alpha: 0.4)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.3,
-    );
-
-    canvas.drawCircle(
-      center,
-      faceR * 0.93,
-      Paint()
-        ..color = palette.rimLight.withValues(alpha: unlocked ? 0.22 : 0.08)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 0.7,
-    );
-  }
-
-  void _drawReeding(Canvas canvas, Offset center, double rimR) {
-    final tickPaint = Paint()
-      ..color = palette.rimLight.withValues(alpha: unlocked ? 0.62 : 0.18)
-      ..strokeWidth = 0.85
-      ..strokeCap = StrokeCap.round;
-    const count = 28;
-    for (var i = 0; i < count; i++) {
-      final angle = (i / count) * math.pi * 2 - math.pi / 2;
-      final cos = math.cos(angle);
-      final sin = math.sin(angle);
-      canvas.drawLine(
-        center + Offset(cos * rimR * 0.88, sin * rimR * 0.88),
-        center + Offset(cos * rimR * 0.99, sin * rimR * 0.99),
-        tickPaint,
-      );
-    }
-  }
-
-  void _drawSpecular(Canvas canvas, Offset center, double faceR) {
-    canvas.save();
-    canvas.clipPath(
-      Path()..addOval(Rect.fromCircle(center: center, radius: faceR)),
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: center + Offset(-faceR * 0.18, -faceR * 0.32),
-        width: faceR * 1.35,
-        height: faceR * 0.62,
-      ),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            palette.rimLight.withValues(alpha: 0.42),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromCircle(center: center, radius: faceR)),
-    );
-    canvas.restore();
-  }
-
-  @override
-  bool shouldRepaint(covariant _MedallionCoinPainter old) =>
-      old.palette.rimMid != palette.rimMid || old.unlocked != unlocked;
 }
 
 /// Emblema da família — moeda no centro, halo com o avanço na escada

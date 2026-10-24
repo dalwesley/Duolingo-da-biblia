@@ -1,6 +1,20 @@
 {
   "@@locale": "pt",
   "@@x-generated": "tool/l10n_merge.py — edit lib/l10n/parts",
+  "appReportCategoryAccount": "Conta e progresso",
+  "appReportCategoryBug": "Algo não funciona",
+  "appReportCategoryOther": "Outro",
+  "appReportCategorySubscription": "Assinatura e compras",
+  "appReportCategorySuggestion": "Sugestão",
+  "appReportCommentHint": "O que você estava fazendo e o que deu errado…",
+  "appReportHintAccount": "Login, sincronização ou progresso perdido",
+  "appReportHintBug": "Tela travou, botão não responde, algo some ou fecha",
+  "appReportHintOther": "Algo mais que não se encaixa acima",
+  "appReportHintSubscription": "Peregrino+, cobrança ou restaurar compra",
+  "appReportHintSuggestion": "Uma ideia para o Stway ficar melhor",
+  "appReportIntro": "Conte o que aconteceu. A versão do app e o aparelho vão junto, para a gente conseguir reproduzir.",
+  "appReportSent": "Relato enviado. Obrigado.",
+  "appReportTitle": "Relatar um problema",
   "authAccountExists": "Já existe uma conta com este e-mail usando outro método de login.",
   "authEnableProviders": "Ative os provedores no Firebase Console: Authentication → Sign-in method → Anonymous e/ou Google.",
   "authFirebaseNotReady": "Firebase ainda não está pronto.",
@@ -106,6 +120,19 @@
   "bibleIntroWho": "Quem",
   "bibleLoadError": "Não foi possível abrir a Bíblia.",
   "bibleNewTestament": "Novo Testamento",
+  "bibleNoteDelete": "Apagar anotação",
+  "bibleNoteHint": "O que este versículo fala com você? (opcional)",
+  "bibleNoteSave": "Salvar anotação",
+  "bibleNoteSaved": "Anotação salva",
+  "bibleNoteTagDeus": "Deus falando",
+  "bibleNoteTagFamilia": "Família",
+  "bibleNoteTagJesus": "Jesus falando",
+  "bibleNoteTagMandamento": "Mandamento",
+  "bibleNoteTagOracao": "Oração",
+  "bibleNoteTagPessoal": "Pessoal",
+  "bibleNoteTagProfecia": "Profecia",
+  "bibleNoteTagPromessa": "Promessa",
+  "bibleNoteTheme": "Tema",
   "bibleOldTestament": "Antigo Testamento",
   "biblePaperAuto": "Automático",
   "biblePaperLight": "Clara",
@@ -256,6 +283,8 @@
   },
   "bibleVerseListenFromHere": "Ouvir daqui em diante",
   "bibleVerseListenFromHereDetail": "Leitura em voz alta, versículo a versículo",
+  "bibleVerseNote": "Anotar",
+  "bibleVerseNoted": "Anotado",
   "bibleVerseSave": "Guardar",
   "bibleVerseSaved": "Guardado",
   "bibleVerseSemantics": "Versículo {number}. {text}",
@@ -481,30 +510,25 @@
   "chestGuardadaTitle": "Palavra guardada",
   "chestLampadaMessage": "\"Lâmpada para os meus pés é a tua palavra\" — Salmos 119:105.",
   "chestLampadaTitle": "Lâmpada acesa",
-  "chestLocked": "Complete a cena de hoje para abrir",
   "chestLockedShort": "Trancado",
   "chestMapaMessage": "Uma curiosidade guardada: cada capítulo lido soma na sua trilha.",
   "chestMapaTitle": "Mapa do dia",
+  "chestOfferBody": "Você terminou a cena de hoje. Abra e veja o que o caminho guardou.",
+  "chestOfferTitle": "Seu baú do dia chegou",
   "chestOpen": "Abrir o baú",
   "chestOpenShort": "Abrir",
   "chestOpened": "Aberto",
   "chestOpening": "Abrindo…",
   "chestPassoMessage": "Mais um dia caminhando — é isso que forma um peregrino.",
   "chestPassoTitle": "Passo firme",
-  "chestReady": "Sua recompensa de hoje está pronta",
+  "chestRarityCommon": "Comum",
+  "chestRarityRare": "Rara",
+  "chestRarityUltra": "Raríssima",
+  "chestRarityUncommon": "Incomum",
+  "chestRarityVeryRare": "Muito rara",
   "chestReadyShort": "Pronto para abrir",
-  "chestRevealStarts": "A revelação começa agora.",
   "chestRewards": "Recompensas",
-  "chestSheetTitle": "A sequência de hoje guarda uma recompensa.",
-  "chestTierToday": "{tier} de hoje",
-  "@chestTierToday": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "chestVeryRare": "Raríssimo",
+  "chestTapHint": "Toque rápido na tela para abrir",
   "chestVozMessage": "Sua sequência já fala mais alto que qualquer palavra.",
   "chestVozTitle": "Voz da caravana",
   "comebackEyebrow": "O peregrino",
@@ -1350,9 +1374,75 @@
   "entryMissionDorRecome05Intro": "Quem chora o que morreu é bem-aventurado. Continue em Gênesis 1–11.",
   "entryMissionDorRecome05Objective": "Sair da trilha de dor para o currículo: Gênesis 1–11.",
   "entryMissionDorRecome05Title": "Os que choram",
+  "entryMissionEntradaBiblia01CentralInsight": "A história começa em Deus",
+  "entryMissionEntradaBiblia01HookNote": "Toda a Bíblia parte daqui: um só Deus, um mundo feito por ele.",
+  "entryMissionEntradaBiblia01Intro": "A história começa com Deus fazendo um mundo bom.",
+  "entryMissionEntradaBiblia01Objective": "Ver a criação como o ponto de partida de toda a Bíblia.",
+  "entryMissionEntradaBiblia01Title": "Criação",
+  "entryMissionEntradaBiblia02CentralInsight": "A ruptura começa na desconfiança",
+  "entryMissionEntradaBiblia02HookNote": "O problema da Bíblia começa com desconfiar da palavra de Deus.",
+  "entryMissionEntradaBiblia02Intro": "Uma pergunta da serpente, e tudo se quebra.",
+  "entryMissionEntradaBiblia02Objective": "Entender a queda como o problema que o resto da Bíblia resolve.",
+  "entryMissionEntradaBiblia02Title": "Queda",
+  "entryMissionEntradaBiblia03CentralInsight": "Deus responde com uma promessa",
+  "entryMissionEntradaBiblia03HookNote": "Depois da queda, Deus não desiste: começa a resposta por uma família.",
+  "entryMissionEntradaBiblia03Intro": "Deus chama um homem para abençoar todas as famílias.",
+  "entryMissionEntradaBiblia03Objective": "Ver em Abraão o começo do plano de Deus para todos os povos.",
+  "entryMissionEntradaBiblia03Title": "Promessa",
+  "entryMissionEntradaBiblia04CentralInsight": "A salvação vem do Senhor",
+  "entryMissionEntradaBiblia04HookNote": "O êxodo vira o molde da salvação na Bíblia: Deus liberta quem não pode se salvar.",
+  "entryMissionEntradaBiblia04Intro": "Entre o exército e o mar, Deus abre um caminho.",
+  "entryMissionEntradaBiblia04Objective": "Entender o êxodo como o retrato da salvação que a Bíblia repete.",
+  "entryMissionEntradaBiblia04Title": "Libertação",
+  "entryMissionEntradaBiblia05CentralInsight": "Alguém leva a culpa no nosso lugar",
+  "entryMissionEntradaBiblia05HookNote": "Séculos antes de Jesus, Isaías descreve um Servo que leva a culpa do povo.",
+  "entryMissionEntradaBiblia05Intro": "Um profeta vê alguém ferido no lugar dos outros.",
+  "entryMissionEntradaBiblia05Objective": "Ver como os profetas apontam para um Salvador que sofre.",
+  "entryMissionEntradaBiblia05Title": "O Servo",
+  "entryMissionEntradaBiblia06CentralInsight": "A morte não tem a última palavra",
+  "entryMissionEntradaBiblia06HookNote": "Tudo o que veio antes converge aqui: Jesus vence a morte que entrou na queda.",
+  "entryMissionEntradaBiblia06Intro": "O túmulo está vazio. A história vira.",
+  "entryMissionEntradaBiblia06Objective": "Entender a ressurreição como o centro da história bíblica.",
+  "entryMissionEntradaBiblia06Title": "Ressurreição",
+  "entryMissionEntradaBiblia07CentralInsight": "Deus faz novas todas as coisas",
+  "entryMissionEntradaBiblia07HookNote": "A Bíblia abre com um jardim e fecha com uma cidade. Deus refaz o que a queda quebrou.",
+  "entryMissionEntradaBiblia07Intro": "A história termina onde começou: Deus com o seu povo.",
+  "entryMissionEntradaBiblia07Objective": "Ver o fim da Bíblia como a restauração do começo.",
+  "entryMissionEntradaBiblia07Title": "Nova criação",
+  "entryMissionEntradaDeus01CentralInsight": "Deus vem antes de tudo",
+  "entryMissionEntradaDeus01HookNote": "A primeira frase da Bíblia não fala de nós: fala de Deus, que cria.",
+  "entryMissionEntradaDeus01Intro": "Antes de tudo, Deus. A Bíblia começa por quem ele é.",
+  "entryMissionEntradaDeus01Objective": "Ver que conhecer a Deus começa por ele, não por nós.",
+  "entryMissionEntradaDeus01Title": "No princípio, Deus",
+  "entryMissionEntradaDeus02CentralInsight": "Deus se dá a conhecer pelo nome",
+  "entryMissionEntradaDeus02HookNote": "Moisés pergunta quem o envia. Deus responde com um nome que não depende de ninguém.",
+  "entryMissionEntradaDeus02Intro": "Na sarça, Deus diz o seu nome a um fugitivo.",
+  "entryMissionEntradaDeus02Objective": "Entender o que o nome EU SOU revela sobre Deus.",
+  "entryMissionEntradaDeus02Title": "EU SOU",
+  "entryMissionEntradaDeus03CentralInsight": "Deus é santo",
+  "entryMissionEntradaDeus03HookNote": "Deus não é uma versão maior de nós. A santidade é o que o separa de tudo.",
+  "entryMissionEntradaDeus03Intro": "Isaías vê o Senhor no trono, e o templo treme.",
+  "entryMissionEntradaDeus03Objective": "Ver por que a santidade de Deus muda quem se aproxima dele.",
+  "entryMissionEntradaDeus03Title": "Santo, santo, santo",
+  "entryMissionEntradaDeus04CentralInsight": "O santo cuida de perto",
+  "entryMissionEntradaDeus04HookNote": "Davi chama o Deus do trono de pastor. O santo não fica longe.",
+  "entryMissionEntradaDeus04Intro": "O Deus santo também cuida de perto.",
+  "entryMissionEntradaDeus04Objective": "Ligar a santidade de Deus ao cuidado dele no dia a dia.",
+  "entryMissionEntradaDeus04Title": "O Senhor é o meu pastor",
+  "entryMissionEntradaDeus05CentralInsight": "Em Jesus, Deus se aproximou",
+  "entryMissionEntradaDeus05HookNote": "João começa como Gênesis: “No princípio”. Agora o Criador vem morar entre nós.",
+  "entryMissionEntradaDeus05Intro": "Em Jesus, Deus chega mais perto do que nunca.",
+  "entryMissionEntradaDeus05Objective": "Ver em Jesus a forma mais clara de conhecer a Deus.",
+  "entryMissionEntradaDeus05Title": "O Verbo se fez carne",
   "entryTrailAnsiedadeDescription": "Cinco cenas para lançar o amanhã no Pai — e seguir no cânon.",
   "entryTrailAnsiedadeModuleTitle": "Lançar a ansiedade",
   "entryTrailAnsiedadeTitle": "Ansiedade",
+  "entryTrailConhecerADeusDescription": "Cinco cenas do Criador ao Verbo feito carne — e seguir nos Evangelhos.",
+  "entryTrailConhecerADeusModuleTitle": "Deus se aproxima",
+  "entryTrailConhecerADeusTitle": "Conhecer a Deus",
+  "entryTrailEntenderABibliaDescription": "Sete cenas da criação à nova criação — e de volta a Gênesis 1–11.",
+  "entryTrailEntenderABibliaModuleTitle": "Uma só história",
+  "entryTrailEntenderABibliaTitle": "Entender a Bíblia",
   "entryTrailRecomecoDescription": "Cinco cenas da queda ao chamado — e de volta a Gênesis 1–11.",
   "entryTrailRecomecoModuleTitle": "Do rompimento ao chamado",
   "entryTrailRecomecoTitle": "Recomeço",
@@ -1981,6 +2071,85 @@
     }
   },
   "homeWordWord": "Palavra",
+  "intentBadgeCurrent": "Atual",
+  "intentBadgeHere": "Você está aqui",
+  "intentBannerHint": "Toque para trocar de motivo",
+  "intentBannerSemantics": "Seu motivo: {name}. {tagline}.",
+  "@intentBannerSemantics": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "tagline": {
+        "type": "String"
+      }
+    }
+  },
+  "intentCtaChoose": "Escolher {name}",
+  "@intentCtaChoose": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "intentCtaContinue": "Continuar com {name}",
+  "@intentCtaContinue": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "intentHabitBlurb": "Um passo por dia: a sequência nasce de voltar amanhã.",
+  "intentHabitSkill1": "Voltar",
+  "intentHabitSkill2": "Persistir",
+  "intentHabitSkill3": "Crescer",
+  "intentKnowBlurb": "Aproxime-se: quem Ele é, e o que isso muda em você.",
+  "intentKnowSkill1": "Aproximar",
+  "intentKnowSkill2": "Adorar",
+  "intentKnowSkill3": "Confiar",
+  "intentNoneTagline": "Toque para escolher",
+  "intentNoneTitle": "Ainda não escolhido",
+  "intentOpensTrail": "Abre: {trail}",
+  "@intentOpensTrail": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
+  "intentOrdinal": "Motivo {ordinal}",
+  "@intentOrdinal": {
+    "placeholders": {
+      "ordinal": {
+        "type": "String"
+      }
+    }
+  },
+  "intentOrdinalBadge": "Motivo {ordinal} · {badge}",
+  "@intentOrdinalBadge": {
+    "placeholders": {
+      "ordinal": {
+        "type": "String"
+      },
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "intentPeaceBlurb": "Um respiro no meio do dia: lance a ansiedade e siga.",
+  "intentPeaceSkill1": "Respirar",
+  "intentPeaceSkill2": "Lançar",
+  "intentPeaceSkill3": "Descansar",
+  "intentRuleFootnote": "Define a trilha de entrada · depois o app segue a última que você andou",
+  "intentSheetEyebrow": "Seu motivo",
+  "intentSheetTitle": "O que te traz aqui?",
+  "intentSwitch": "Trocar",
+  "intentUnderstandBlurb": "Uma história só: do começo ao fio que une a Bíblia.",
+  "intentUnderstandSkill1": "Ler",
+  "intentUnderstandSkill2": "Ligar",
+  "intentUnderstandSkill3": "Guardar",
   "inviteAcceptCta": "Aceitar convite",
   "inviteCalledYou": "{name} te chamou",
   "@inviteCalledYou": {
@@ -2125,10 +2294,7 @@
   "juntosCaravanEmptyTitle": "A caravana ainda é pequena",
   "juntosCaravanInviteCta": "Chamar para a caravana",
   "juntosCaravanLoadError": "Não foi possível carregar a caravana. Puxe para atualizar.",
-  "juntosCaravanMonthBody": "Tudo conta: cenas, tarefas do dia, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.",
-  "juntosCaravanMonthStep1": "Estude\numa cena",
-  "juntosCaravanMonthStep2": "Some\npassos",
-  "juntosCaravanMonthStep3": "Veja o\ncaminho",
+  "juntosCaravanMonthBody": "Cada cena nova soma passos. A seta verde mostra quem subiu hoje. Zera todo dia 1 — quem chegou agora também pode liderar.",
   "juntosCaravanMonthTitle": "Quem mais caminhou neste mês?",
   "juntosCaravanPilgrimsCount": "{count, plural, =1{1 peregrino da caravana} other{{count} peregrinos da caravana}}",
   "@juntosCaravanPilgrimsCount": {
@@ -2153,11 +2319,6 @@
   },
   "juntosCaravanSignInLive": "Entre com Google para ver a caravana ao vivo.",
   "juntosCaravanTimeout": "A caravana demorou para responder. Puxe para atualizar.",
-  "juntosCaravanWeekBody": "É aqui que tudo acontece. Os passos de cenas novas, de segunda a domingo, decidem quem sobe e quem desce.",
-  "juntosCaravanWeekStep1": "Passos\nda semana",
-  "juntosCaravanWeekStep2": "Quem\nsobe",
-  "juntosCaravanWeekStep3": "Quem\ndesce",
-  "juntosCaravanWeekTitle": "O ranking da semana",
   "juntosChallengeExplainerBody": "Mesma cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
   "@juntosChallengeExplainerBody": {
     "placeholders": {
@@ -2223,31 +2384,11 @@
     }
   },
   "juntosDeclineInviteError": "Não foi possível recusar o convite. Tente de novo.",
-  "juntosDemoteZone": "Zona de descida · {tier}",
-  "@juntosDemoteZone": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
   "juntosEditRoomTitle": "Editar grupo",
   "juntosFirstMilestone": "Primeiro marco: {count} dias juntos",
   "@juntosFirstMilestone": {
     "placeholders": {
       "count": {
-        "type": "int"
-      }
-    }
-  },
-  "juntosGapToAbove": "{gap} do {place}º",
-  "@juntosGapToAbove": {
-    "description": "Steps behind the person ranked just above (place = their position).",
-    "placeholders": {
-      "gap": {
-        "type": "int"
-      },
-      "place": {
         "type": "int"
       }
     }
@@ -2286,6 +2427,41 @@
   "juntosLeaveConfirm": "Sair",
   "juntosLeaveRoomBody": "Você sai da lista. Para voltar, use o código de novo.",
   "juntosLeaveRoomTitle": "Sair do grupo?",
+  "juntosLevelSteady": "{count} de {total} semanas firmes para {next}",
+  "@juntosLevelSteady": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "next": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosLevelTitle": "Seu nível · {tier}",
+  "@juntosLevelTitle": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosLevelTop": "Você chegou ao nível mais alto",
+  "juntosLevelWeek": "Esta semana: {count} de {goal} cenas novas",
+  "@juntosLevelWeek": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosLevelWeekDone": "Semana firme garantida",
   "juntosMilestoneLeft": "{count, plural, =1{Falta 1 para o marco de {next}} other{Faltam {count} para o marco de {next}}}",
   "@juntosMilestoneLeft": {
     "placeholders": {
@@ -2326,14 +2502,6 @@
   "juntosOpenInvite": "Convite aberto",
   "juntosOpenInviteMissing": "Falta uma pessoa do outro lado",
   "juntosOrInviteCompanion": "Ou chamar um companheiro",
-  "juntosPromoteZone": "Zona de subida · {tier}",
-  "@juntosPromoteZone": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
   "juntosRoomAllStudied": "O grupo inteiro estudou nesta semana.",
   "juntosRoomBenefitList": "Lista",
   "juntosRoomBenefitListDetail": "Quem estudou",
@@ -2468,9 +2636,7 @@
   "juntosTabChallenge": "Desafio",
   "juntosTabCompanion": "Companhia",
   "juntosTabGroups": "Grupos",
-  "juntosThisMonth": "Este mês",
   "juntosThisWeek": "Esta semana",
-  "juntosTie": "Empate",
   "juntosTogetherLegend": "juntos",
   "juntosTogetherOfSeven": "{count} de 7 juntos",
   "@juntosTogetherOfSeven": {
@@ -2518,8 +2684,15 @@
       }
     }
   },
-  "juntosWeekRankingEmpty": "O ranking começa quando outra pessoa entra na caravana.",
-  "juntosWeekRankingEmptyTitle": "Ainda só você",
+  "juntosWeekGain": "+{count} na semana",
+  "@juntosWeekGain": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosWeekHighlight": "Destaque da semana",
   "juntosWeekTogetherBonus": "A companhia ganhou +{count} passos na jornada",
   "@juntosWeekTogetherBonus": {
     "placeholders": {
@@ -2541,6 +2714,7 @@
   "languageHint": "Os textos das trilhas e a Bíblia continuam em português por enquanto.",
   "languageSemantics": "Idioma da interface",
   "languageSemanticsHint": "Deslize ou toque para escolher o idioma",
+  "languageSheetTitle": "Em que língua a gente conversa?",
   "languageShortDevice": "Auto",
   "languageShortEn": "EN",
   "languageShortEs": "ES",
@@ -2555,34 +2729,6 @@
       }
     }
   },
-  "leagueDemotedBody": "Ficou em {rank}º. No nível {tier}, dá para subir de novo.",
-  "@leagueDemotedBody": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      },
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueDemotedTitle": "Você desceu para {tier}",
-  "@leagueDemotedTitle": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueDriftDown": "{count, plural, =1{Desceu 1 posição hoje} other{Desceu {count} posições hoje}}",
-  "@leagueDriftDown": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "leagueDriftStable": "Posição estável hoje",
   "leagueDriftUp": "{count, plural, =1{Subiu 1 posição hoje} other{Subiu {count} posições hoje}}",
   "@leagueDriftUp": {
     "placeholders": {
@@ -2599,17 +2745,6 @@
       }
     }
   },
-  "leagueLevelUpBodyRank": "Ficou em {rank}º · agora caminha no nível\n{tier}",
-  "@leagueLevelUpBodyRank": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      },
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
   "leagueLevelUpTitle": "Você subiu de nível",
   "leaguePromotedLevelOnly": "Agora no nível {tier}",
   "@leaguePromotedLevelOnly": {
@@ -2619,59 +2754,10 @@
       }
     }
   },
-  "leaguePromotedRankLine": "Ficou em {rank}º · agora no nível {tier}",
-  "@leaguePromotedRankLine": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      },
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
   "leaguePromotedTitle": "Você subiu para {tier}",
   "@leaguePromotedTitle": {
     "placeholders": {
       "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueRiskBodyClosing": "Você está em {rank}º no nível {tier}. A caravana fecha em breve.",
-  "@leagueRiskBodyClosing": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      },
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueRiskBodyHold": "Você está em {rank}º no nível {tier}. Um passo pode segurar o lugar.",
-  "@leagueRiskBodyHold": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      },
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueRiskNear": "Perto da descida · {closes}",
-  "@leagueRiskNear": {
-    "placeholders": {
-      "closes": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueRiskZone": "Zona de descida · {closes}",
-  "@leagueRiskZone": {
-    "placeholders": {
-      "closes": {
         "type": "String"
       }
     }
@@ -2700,17 +2786,6 @@
   "@leagueSeenTodayWalked": {
     "placeholders": {
       "date": {
-        "type": "String"
-      }
-    }
-  },
-  "leagueStayedBody": "Você ficou em {rank}º no nível {tier}. Nova semana — continue caminhando.",
-  "@leagueStayedBody": {
-    "placeholders": {
-      "rank": {
-        "type": "int"
-      },
-      "tier": {
         "type": "String"
       }
     }
@@ -2756,7 +2831,6 @@
     }
   },
   "leagueWalkedToday": "Caminhou hoje",
-  "leagueWeekEndedTitle": "Semana da caravana encerrada",
   "legalPrivacy": "Privacidade",
   "legalTerms": "Termos de uso",
   "lessonBackToQuestion": "Voltar à pergunta",
@@ -4241,7 +4315,9 @@
     }
   },
   "paywallRestore": "Restaurar compra",
+  "paywallRestoreDone": "Assinatura restaurada. Que bom ter você de volta!",
   "paywallRestoreFailed": "Não foi possível restaurar a compra.",
+  "paywallRestoreNone": "Nenhuma assinatura ativa nesta conta da loja.",
   "paywallSave": "Economize {percent}%",
   "@paywallSave": {
     "placeholders": {
@@ -4768,7 +4844,7 @@
   },
   "profileDaysPerWeek": "dias por semana",
   "profileInTheWord": "Na Palavra",
-  "profileInTheWordWhisper": "Versos que você guarda e os que já saíram daqui.",
+  "profileInTheWordWhisper": "Versos que você guarda, anota e os que já saíram daqui.",
   "profileLampHelp": "Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.",
   "profileLastThreeMonths": "Últimos 3 meses",
   "profileMonthRank": "{rank}º no ranking do mês",
@@ -4779,6 +4855,8 @@
       }
     }
   },
+  "profileNotes": "Anotações",
+  "profileNotesAll": "Todas",
   "profileOfSevenDays": "{count} de 7 dias",
   "@profileOfSevenDays": {
     "placeholders": {
@@ -5574,6 +5652,9 @@
   "settingsFontSmall": "Pequeno",
   "settingsGenesisTitle": "Gênesis 1–11",
   "settingsInCloud": "Na nuvem",
+  "settingsIntentHint": "Define a trilha de entrada. Depois, o app segue a última trilha que você andou.",
+  "settingsIntentLabel": "Seu motivo",
+  "settingsIntentNone": "Ainda não escolhido",
   "settingsLastBackup": "Último backup · {date}",
   "@settingsLastBackup": {
     "placeholders": {
@@ -5620,6 +5701,8 @@
   "settingsRemindersTitle": "Lembretes",
   "settingsReplayIntro": "Rever introdução",
   "settingsReplayIntroSubtitle": "A apresentação do começo, de novo",
+  "settingsReportProblem": "Relatar um problema",
+  "settingsReportProblemSubtitle": "Algo não funcionou? Conte para nós",
   "settingsRestoreFromClipboard": "Restaurar da área de transferência",
   "settingsRhythmSubtitle": "Quantas cenas cabem no seu dia.",
   "settingsRhythmTitle": "Ritmo diário",
@@ -5676,9 +5759,15 @@
   "settingsSubscriptionActive": "Assinatura ativa",
   "settingsSubtitle": "Conta, aparência e lembretes",
   "settingsSupport": "Ajude a continuar",
+  "settingsTabAccountAbout": "Conta e sobre",
+  "settingsTabPreferences": "Preferências",
   "settingsTextSize": "Tamanho do texto",
   "settingsTextSizeHint": "O versículo abaixo muda junto.",
   "settingsThemeAuto": "Automático",
+  "settingsThemeBlurbAuto": "Manhã, tarde e noite acompanham o horário do seu dia.",
+  "settingsThemeBlurbDark": "Céu de noite: menos brilho para ler antes de dormir.",
+  "settingsThemeBlurbLight": "Papel claro e céu de manhã — bom para ler de dia.",
+  "settingsThemeBlurbMedium": "Meia-luz azul: descansa os olhos sem apagar a tela.",
   "settingsThemeCaptionAuto": "Muda com o horário",
   "settingsThemeCaptionDark": "Sempre escuro",
   "settingsThemeCaptionLight": "Sempre claro",
@@ -5688,8 +5777,17 @@
   "settingsThemeLabel": "Tema",
   "settingsThemeLight": "Claro",
   "settingsThemeMedium": "Médio",
+  "settingsThemeOrdinal": "Tema {ordinal}",
+  "@settingsThemeOrdinal": {
+    "placeholders": {
+      "ordinal": {
+        "type": "String"
+      }
+    }
+  },
   "settingsThemeSemantics": "Tema da tela",
   "settingsThemeSemanticsHint": "Toque ou deslize para escolher",
+  "settingsThemeSheetTitle": "Como você quer ver o app?",
   "settingsTitle": "Ajustes",
   "settingsUpToDate": "Você está na versão mais recente · {version}",
   "@settingsUpToDate": {
@@ -6052,6 +6150,19 @@
       }
     }
   },
+  "trailsOpenMore": "{first} e mais {count}",
+  "@trailsOpenMore": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsOpenSubtitle": "Escolha por onde continuar.",
+  "trailsOpenTitle": "Suas trilhas abertas",
   "trailsPlusHeading": "Peregrino+",
   "trailsRealmOpenCount": "{count, plural, =1{1 aberta} other{{count} abertas}}",
   "@trailsRealmOpenCount": {
@@ -6283,15 +6394,6 @@
     }
   },
   "widgetBackToTrail": "Volte para a trilha",
-  "widgetBehindCaravan": "Ficando para trás na caravana — caminhe hoje",
-  "widgetDaysInRow": "{count, plural, =1{1 dia seguido} other{{count} dias seguidos}}",
-  "@widgetDaysInRow": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "widgetGoalDone": "Meta concluída",
   "widgetKeepStreak": "Mantenha sua sequência",
   "widgetProgressScenes": "{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}",
@@ -6305,14 +6407,6 @@
       }
     }
   },
-  "widgetScenesLeft": "{count, plural, =1{falta 1 cena} other{faltam {count} cenas}}",
-  "@widgetScenesLeft": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "widgetScenesLeftToday": "{count, plural, =1{Falta 1 cena hoje} other{Faltam {count} cenas hoje}}",
   "@widgetScenesLeftToday": {
     "placeholders": {
@@ -6321,6 +6415,8 @@
       }
     }
   },
+  "widgetShortAway": "Volte hoje",
+  "widgetShortSafe": "Feito hoje",
   "widgetStartStreak": "Comece sua sequência",
   "widgetStreakSafe": "Sequência garantida hoje",
   "widgetTodayTitle": "Hoje: {title}",
@@ -6339,5 +6435,6 @@
       }
     }
   },
-  "widgetTrailWaitsTomorrow": "A trilha espera amanhã"
+  "widgetTrailWaitsTomorrow": "A trilha espera amanhã",
+  "widgetWeekdayInitials": "S,T,Q,Q,S,S,D"
 }

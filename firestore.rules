@@ -235,8 +235,11 @@ service cloud.firestore {
     match /monthlyLeagues/{month}/players/{uid} {
       allow read: if isSignedIn();
       allow delete: if ownRankingDelete(uid);
+      // weekXp (passos da semana na mesma linha) também vem de users/{uid}.
       allow create, update: if isYearMonth(month)
         && rankingScoreMatches(userMonthlySteps(), uid)
+        && (!('weekXp' in request.resource.data)
+            || scoresEqual(request.resource.data.weekXp, userWeeklySteps()))
         && (!userExists()
             || !('monthlyMonth' in userData())
             || userData().monthlyMonth == null
@@ -553,6 +556,28 @@ service cloud.firestore {
         && (!('comment' in request.resource.data)
             || (request.resource.data.comment is string
                 && request.resource.data.comment.size() <= 800));
+      allow update, delete: if isContentEditor();
+    }
+
+    // Relatos sobre o app — erro, conta, assinatura, sugestão (usuários
+    // autenticados criam; editores revisam).
+    match /app_reports/{id} {
+      allow read: if isContentEditor();
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'open'
+        && request.resource.data.category in [
+          'bug', 'account', 'subscription', 'suggestion', 'other'
+        ]
+        && request.resource.data.comment is string
+        && request.resource.data.comment.size() <= 800
+        && request.resource.data.appVersion is string
+        && request.resource.data.appVersion.size() < 40
+        && request.resource.data.platform is string
+        && request.resource.data.platform.size() < 20
+        && (!('osVersion' in request.resource.data)
+            || (request.resource.data.osVersion is string
+                && request.resource.data.osVersion.size() <= 120));
       allow update, delete: if isContentEditor();
     }
 

@@ -15,9 +15,8 @@ import '../models/portrait_style.dart';
 import 'analytics_service.dart';
 import 'league_service.dart';
 import 'progress_service.dart';
-import 'remote_config_service.dart';
 
-/// Jogador real vindo da nuvem (liga da semana).
+/// Jogador real vindo da nuvem (ranking da Caravana).
 class CloudPlayer {
   final String uid;
   final String name;
@@ -27,6 +26,12 @@ class CloudPlayer {
   final String? photoUrl;
   final PortraitStyle portraitStyle;
 
+  /// Passos de cenas novas nesta semana (0 se o doc é de outra semana).
+  final int weekSteps;
+
+  /// Passos no começo de hoje (`null` = sem passo hoje).
+  final int? dayStartSteps;
+
   const CloudPlayer({
     required this.uid,
     required this.name,
@@ -35,6 +40,8 @@ class CloudPlayer {
     this.lastSeenDate,
     this.photoUrl,
     this.portraitStyle = PortraitStyle.photo,
+    this.weekSteps = 0,
+    this.dayStartSteps,
   });
 
   CloudPlayer withPhoto(String? url) {
@@ -48,6 +55,8 @@ class CloudPlayer {
       lastSeenDate: lastSeenDate,
       photoUrl: url,
       portraitStyle: portraitStyle,
+      weekSteps: weekSteps,
+      dayStartSteps: dayStartSteps,
     );
   }
 
@@ -62,6 +71,8 @@ class CloudPlayer {
       lastSeenDate: lastSeenDate,
       photoUrl: photoUrl,
       portraitStyle: style,
+      weekSteps: weekSteps,
+      dayStartSteps: dayStartSteps,
     );
   }
 }
@@ -851,9 +862,11 @@ class BackendService extends ChangeNotifier {
     'answerCorrect',
     'answerTotal',
     'missionCompletedOn',
+    'borrowedMissions',
     'weeklyReviewsDone',
     'memoryScores',
     'bibleBookmarks',
+    'bibleNotes',
     'sharedVerses',
     'settings',
     'bibleReadingPlan',
@@ -1034,35 +1047,6 @@ class BackendService extends ChangeNotifier {
     final today = _todayKey();
     final tier = (league?.tierIndex ?? 0).clamp(0, 4);
     final portraitStyle = progress.settings.portraitStyle;
-    final weeklyPayload = _rankingPayload(
-      name: progress.userName,
-      score: progress.weeklySteps,
-      lastWalkDate: progress.lastPlayedDate,
-      lastSeenDate: today,
-      portraitStyle: portraitStyle,
-      extra: {'tier': tier},
-    );
-    // Fechamento no servidor ainda não aplicado: a divisão pode mudar —
-    // não senta a pessoa numa sala da divisão antiga.
-    final tierPending =
-        RemoteConfigService.instance.leagueServerSettlement &&
-        league != null &&
-        league.processedWeek != null &&
-        league.processedWeek != LeagueService.weekKey();
-    if (!tierPending) {
-      await _putRankingDoc(
-        'leagues/$rankingWeek/tiers/$tier/players/$_uid',
-        weeklyPayload,
-      );
-    }
-    await _putRankingDoc('leagues/$rankingWeek/players/$_uid', weeklyPayload);
-    final groupCode = league?.groupCode;
-    if (groupCode != null && groupCode.isNotEmpty) {
-      await _putRankingDoc(
-        'leagueGroups/$groupCode/weeks/$rankingWeek/players/$_uid',
-        weeklyPayload,
-      );
-    }
     await _putRankingDoc(
       'monthlyLeagues/$rankingMonth/players/$_uid',
       _rankingPayload(
@@ -1071,6 +1055,17 @@ class BackendService extends ChangeNotifier {
         lastWalkDate: progress.lastPlayedDate,
         lastSeenDate: today,
         portraitStyle: portraitStyle,
+        // Semana e começo do dia: a Caravana mostra quem subiu hoje e
+        // quem mais somou na semana sem um segundo ranking.
+        extra: {
+          'tier': tier,
+          'week': rankingWeek,
+          'weekXp': progress.weeklySteps,
+          if (progress.monthDayKey != null) ...{
+            'dayKey': progress.monthDayKey,
+            'dayStartXp': progress.monthDayStartSteps,
+          },
+        },
       ),
     );
     await _putRankingDoc(
@@ -1805,150 +1800,11 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  /// Jogadores reais da liga desta semana nesta divisão (exclui o próprio usuário).
-  ///
-  /// Mescla `tiers/{tier}/players` com o board flat legado — senão quem já
-  /// gravou no path novo “esconde” os demais e a lista fica diferente por login.
-  Future<List<CloudPlayer>> fetchWeekPlayers(
-    String week, {
-    required int tier,
-    int limit = 30,
-  }) async {
-    if (!isActive) return const [];
-    final seated = await _fetchCohortPlayers(week, tier: tier);
-    if (seated != null) return seated;
-    final byUid = <String, CloudPlayer>{};
-
-    void put(CloudPlayer p) {
-      final prev = byUid[p.uid];
-      if (prev == null || p.steps > prev.steps) {
-        byUid[p.uid] = p
-            .withPhoto(prev?.photoUrl)
-            .withStyle(prev?.portraitStyle);
-      } else if (prev.steps == p.steps &&
-          ProgressService.isPlaceholderUserName(prev.name) &&
-          !ProgressService.isPlaceholderUserName(p.name)) {
-        byUid[p.uid] = p.withPhoto(prev.photoUrl).withStyle(prev.portraitStyle);
-      } else {
-        byUid[p.uid] = prev.withPhoto(p.photoUrl).withStyle(p.portraitStyle);
-      }
-    }
-
-    try {
-      final tierSnap = await _db
-          .collection('leagues/$week/tiers/$tier/players')
-          .orderBy('xp', descending: true)
-          .limit(limit)
-          .get();
-      for (final p in _mapCloudPlayers(tierSnap.docs)) {
-        put(p);
-      }
-    } catch (e) {
-      debugPrint('Liga tier/$tier falhou: $e');
-    }
-
-    try {
-      final legacy = await _db
-          .collection('leagues/$week/players')
-          .orderBy('xp', descending: true)
-          .limit(limit * 2)
-          .get();
-      for (final d in legacy.docs) {
-        if (d.id == _uid) continue;
-        final data = d.data();
-        final docTier = (data['tier'] as num?)?.toInt();
-        // Sem tier (legado antigo) entra em qualquer divisão na migração.
-        if (docTier != null && docTier != tier) continue;
-        put(
-          CloudPlayer(
-            uid: d.id,
-            name: (data['name'] as String?)?.trim().isNotEmpty == true
-                ? data['name'] as String
-                : 'Aprendiz',
-            steps: (data['xp'] as num?)?.toInt() ?? 0,
-            lastWalkDate: _readActivityDate(data, 'lastWalkDate'),
-            lastSeenDate: _readActivityDate(data, 'lastSeenDate'),
-            photoUrl: _readPhotoUrl(data),
-            portraitStyle: _readPortraitStyle(data) ?? PortraitStyle.photo,
-          ),
-        );
-      }
-    } catch (e) {
-      debugPrint('Liga flat legado falhou: $e');
-    }
-
-    final list = byUid.values.toList()
-      ..sort((a, b) {
-        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
-        return a.name.compareTo(b.name);
-      });
-    return list.take(limit).toList();
-  }
-
-  /// Sala da semana (Cloud Function `onLeaguePlayerCreate`): só as pessoas
-  /// da sua sala, sem você. `null` = ainda sem sala (cai no top da divisão).
-  Future<List<CloudPlayer>?> _fetchCohortPlayers(
-    String week, {
-    required int tier,
-  }) async {
-    final uid = _uid;
-    if (uid == null) return null;
-    try {
-      final seat = await _db
-          .collection('leagues/$week/tiers/$tier/cohorts')
-          .where('members', arrayContains: uid)
-          .limit(1)
-          .get();
-      if (seat.docs.isEmpty) return null;
-      final members = [
-        for (final m
-            in (seat.docs.first.data()['members'] as List? ?? const []))
-          if (m is String && m != uid) m,
-      ];
-      final players = <CloudPlayer>[];
-      for (var i = 0; i < members.length; i += 30) {
-        final part = members.sublist(i, min(i + 30, members.length));
-        final snap = await _db
-            .collection('leagues/$week/tiers/$tier/players')
-            .where(FieldPath.documentId, whereIn: part)
-            .get();
-        players.addAll(_mapCloudPlayers(snap.docs));
-      }
-      players.sort((a, b) {
-        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
-        return a.name.compareTo(b.name);
-      });
-      return players;
-    } catch (e) {
-      debugPrint('Liga: sala da semana falhou: $e');
-      return null;
-    }
-  }
-
-  /// Jogadores reais de um grupo fechado de liga (célula/paróquia/amigos)
-  /// nesta semana — sem filtro de tier, exclui o próprio usuário.
-  Future<List<CloudPlayer>> fetchGroupWeekPlayers(
-    String groupCode,
-    String week, {
-    int limit = 30,
-  }) async {
-    if (!isActive) return const [];
-    try {
-      final snap = await _db
-          .collection('leagueGroups/$groupCode/weeks/$week/players')
-          .orderBy('xp', descending: true)
-          .limit(limit)
-          .get();
-      return _mapCloudPlayers(snap.docs);
-    } catch (e) {
-      debugPrint('Grupo de liga $groupCode falhou: $e');
-      return const [];
-    }
-  }
-
   List<CloudPlayer> _mapCloudPlayers(
     List<QueryDocumentSnapshot<Map<String, dynamic>>> docs,
   ) {
+    final week = LeagueService.weekKey();
+    final today = _todayKey();
     return [
       for (final d in docs)
         if (d.id != _uid)
@@ -1962,52 +1818,25 @@ class BackendService extends ChangeNotifier {
             lastSeenDate: _readActivityDate(d.data(), 'lastSeenDate'),
             photoUrl: _readPhotoUrl(d.data()),
             portraitStyle: _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
+            weekSteps: d.data()['week'] == week
+                ? (d.data()['weekXp'] as num?)?.toInt() ?? 0
+                : 0,
+            dayStartSteps: d.data()['dayKey'] == today
+                ? (d.data()['dayStartXp'] as num?)?.toInt()
+                : null,
           ),
     ];
   }
 
-  /// Fecha a semana da caravana (se preciso) e sincroniza tier/outcome na nuvem.
+  /// Fecha a semana da caravana (se preciso) e sincroniza nível/resultado.
   Future<void> settleAndSyncLeague(
     ProgressService progress,
     LeagueService league, {
     String? roomCode,
   }) async {
-    final closed = league.processedWeek;
-    final current = LeagueService.weekKey();
-    if (RemoteConfigService.instance.leagueServerSettlement) {
-      if (isActive && closed != null && closed != current) {
-        Map<String, dynamic>? result;
-        try {
-          final snap = await _db.doc('users/$_uid').get();
-          final raw = snap.data()?['leagueResult'];
-          if (raw is Map) result = Map<String, dynamic>.from(raw);
-        } catch (e) {
-          debugPrint('Liga: leitura do resultado falhou: $e');
-          return;
-        }
-        await league.applyServerResult(
-          result,
-          hadStepsInClosedWeek:
-              progress.lastWeekKey == closed && progress.lastWeekSteps > 0,
-        );
-      }
-      if (isActive) {
-        await saveNow(progress, current, roomCode: roomCode, league: league);
-      }
-      return;
-    }
-    var peerSteps = const <int>[];
-    if (isActive && closed != null && closed != current) {
-      final groupCode = league.groupCode;
-      final peers = groupCode != null
-          ? await fetchGroupWeekPlayers(groupCode, closed)
-          : await fetchWeekPlayers(closed, tier: league.tierIndex);
-      peerSteps = [for (final p in peers) p.steps];
-    }
     await league.settleWeekIfNeeded(
-      lastWeekSteps: progress.lastWeekSteps,
+      lastWeekScenes: progress.lastWeekScenes,
       lastWeekKey: progress.lastWeekKey,
-      peerSteps: peerSteps,
     );
     if (isActive) {
       await saveNow(

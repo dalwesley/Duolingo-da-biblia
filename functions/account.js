@@ -151,6 +151,7 @@ async function sentRecognitionRefs(db, uid, logger) {
 async function detachAuthorship(db, uid) {
   for (const [name, field] of [
     ['content_question_reports', 'uid'],
+    ['app_reports', 'uid'],
     ['content_trail_suggestions', 'uid'],
     ['content_author_suggestions', 'uid'],
     ['user_reports', 'reporterUid'],
@@ -159,6 +160,12 @@ async function detachAuthorship(db, uid) {
     for (const doc of snap.docs) {
       if (name === 'content_author_suggestions') {
         await doc.ref.delete();
+      } else if (name === 'app_reports') {
+        await doc.ref.update({
+          uid: FieldValue.delete(),
+          email: FieldValue.delete(),
+          displayName: FieldValue.delete(),
+        });
       } else {
         await doc.ref.update({ [field]: FieldValue.delete() });
       }

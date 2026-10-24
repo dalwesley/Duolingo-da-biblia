@@ -15,6 +15,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'medal_art.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 import 'user_moderation_sheet.dart';
@@ -209,13 +210,13 @@ class _SenderCard extends StatelessWidget {
     }
     final whenText = whenLabel(first.createdAt);
     final today = whenText == l10n.commonToday;
-    final discs = <({CinematicGlyph glyph, Color accent})>[
+    final discs = <({CinematicGlyph glyph, Color accent, bool medal})>[
       for (final medal in medals)
-        (glyph: medal.glyph, accent: tierColor(medal.tier)),
+        (glyph: medal.glyph, accent: tierColor(medal.tier), medal: true),
       for (final _ in walks)
-        (glyph: CinematicGlyph.path, accent: AppRoles.presence),
+        (glyph: CinematicGlyph.path, accent: AppRoles.presence, medal: false),
       for (final _ in unknown)
-        (glyph: CinematicGlyph.gem, accent: AppColors.medalGold),
+        (glyph: CinematicGlyph.gem, accent: AppColors.medalGold, medal: false),
     ];
     final caption = medals.length == 1 && walks.isEmpty && unknown.isEmpty
         ? medals.first.coinTitle
@@ -304,7 +305,7 @@ class _SenderCard extends StatelessWidget {
 
 /// Discos do que a pessoa viu, no mesmo tamanho da linha de medalhas da trilha.
 class _SeenLine extends StatelessWidget {
-  final List<({CinematicGlyph glyph, Color accent})> discs;
+  final List<({CinematicGlyph glyph, Color accent, bool medal})> discs;
   final String? caption;
 
   const _SeenLine({required this.discs, this.caption});
@@ -329,10 +330,13 @@ class _SeenLine extends StatelessWidget {
                 for (var i = 0; i < shown.length; i++)
                   Positioned(
                     left: i * overlap,
-                    child: _Disc(
-                      glyph: shown[i].glyph,
-                      accent: shown[i].accent,
-                    ),
+                    child: shown[i].medal
+                        ? MedalArt(
+                            metal: shown[i].accent,
+                            size: 24,
+                            glyph: shown[i].glyph,
+                          )
+                        : _Disc(glyph: shown[i].glyph, accent: shown[i].accent),
                   ),
                 if (extra > 0)
                   Positioned(

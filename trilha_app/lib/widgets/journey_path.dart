@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../data/trail_art.dart';
 import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
@@ -11,7 +12,6 @@ import '../utils/trail_visuals.dart';
 import 'cloud_mascot.dart';
 import 'journey_phase_card.dart';
 import 'journey_station_card.dart';
-import 'mode_emblem.dart';
 import 'winding_trail.dart';
 
 export 'journey_station_card.dart'
@@ -217,20 +217,12 @@ class _TrailStation extends StatelessWidget {
       eyebrow: context.l10n.trailsTrailNumber(roman),
       watermark: roman,
       glyph: visuals.glyph,
+      art: TrailArt.of(item.trail.slug),
       state: item.state,
       accent: accent,
       glow: glow,
       chrome: tone,
       onTap: onTap,
-      leading: mode == null
-          ? null
-          : ModeEmblem(
-              key: ValueKey('mode-emblem-${mode.id}'),
-              difficulty: mode,
-              size: 22,
-              cleared: item.clearedModeIds.contains(mode.id),
-              active: !item.clearedModeIds.contains(mode.id),
-            ),
       currentSubtitle: isCurrent && mode != null
           ? context.l10n.modeNamed(mode.labelPt)
           : null,

@@ -2,135 +2,26 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/l10n_global.dart';
-import 'remote_config_service.dart';
 import '../models/portrait_style.dart';
 
-/// Divisões da caravana semanal — jornada coletiva, tema bíblico.
+/// Níveis da caravana — sobem com semanas firmes, nunca descem.
 enum LeagueTier { semente, videira, oliveira, cedro, estrela }
 
 extension LeagueTierX on LeagueTier {
   String get label => switch (this) {
-        LeagueTier.semente => L10n.current.leagueTierSemente,
-        LeagueTier.videira => L10n.current.leagueTierVideira,
-        LeagueTier.oliveira => L10n.current.leagueTierOliveira,
-        LeagueTier.cedro => L10n.current.leagueTierCedro,
-        LeagueTier.estrela => L10n.current.leagueTierEstrela,
-      };
+    LeagueTier.semente => L10n.current.leagueTierSemente,
+    LeagueTier.videira => L10n.current.leagueTierVideira,
+    LeagueTier.oliveira => L10n.current.leagueTierOliveira,
+    LeagueTier.cedro => L10n.current.leagueTierCedro,
+    LeagueTier.estrela => L10n.current.leagueTierEstrela,
+  };
 
   /// Nome curto para zonas do ranking.
   String get shortLabel => label;
 }
 
 /// Resultado da semana anterior, aguardando o usuário ver.
-enum LeagueOutcome { promoted, stayed, demoted }
-
-/// Fechamento de uma semana — puro, testável, sem persistência.
-class LeagueWeekSettlement {
-  final LeagueOutcome? outcome;
-  final int rank;
-  final int tierDelta;
-
-  const LeagueWeekSettlement({
-    required this.outcome,
-    required this.rank,
-    required this.tierDelta,
-  });
-}
-
-/// Movimento da posição semanal desde o âncora do dia (ontem, ou a 1ª leitura de hoje).
-enum RankDrift { up, down, stable }
-
-class WeeklyRankTrend {
-  final RankDrift drift;
-  final int places;
-  final int rank;
-  final int baseline;
-
-  const WeeklyRankTrend({
-    required this.drift,
-    required this.places,
-    required this.rank,
-    required this.baseline,
-  });
-
-  String get label => switch (drift) {
-        RankDrift.up => L10n.current.leagueDriftUp(places),
-        RankDrift.down => L10n.current.leagueDriftDown(places),
-        RankDrift.stable => L10n.current.leagueDriftStable,
-      };
-}
-
-/// Compara a posição atual com o âncora do dia. Semana nova zera.
-class WeeklyRankSnapshot {
-  String? weekKey;
-  String? dateKey;
-  int baseline = 0;
-  int last = 0;
-  bool anchoredFromPriorDay = false;
-
-  WeeklyRankTrend? trendFor(int liveRank, {required String week}) {
-    if (liveRank <= 0 || baseline <= 0) return null;
-    if (weekKey != week) return null;
-    final delta = baseline - liveRank;
-    if (delta > 0) {
-      return WeeklyRankTrend(
-        drift: RankDrift.up,
-        places: delta,
-        rank: liveRank,
-        baseline: baseline,
-      );
-    }
-    if (delta < 0) {
-      return WeeklyRankTrend(
-        drift: RankDrift.down,
-        places: -delta,
-        rank: liveRank,
-        baseline: baseline,
-      );
-    }
-    if (!anchoredFromPriorDay) return null;
-    return WeeklyRankTrend(
-      drift: RankDrift.stable,
-      places: 0,
-      rank: liveRank,
-      baseline: baseline,
-    );
-  }
-
-  /// Atualiza o âncora. `true` se o estado mudou.
-  bool observe(int rank, {required String week, required String today}) {
-    if (rank <= 0) return false;
-
-    if (weekKey != week) {
-      weekKey = week;
-      dateKey = today;
-      baseline = rank;
-      last = rank;
-      anchoredFromPriorDay = false;
-      return true;
-    }
-
-    if (dateKey != today) {
-      baseline = last > 0 ? last : rank;
-      last = rank;
-      dateKey = today;
-      anchoredFromPriorDay = true;
-      return true;
-    }
-
-    if (last == rank) return false;
-    last = rank;
-    return true;
-  }
-
-  void clear() {
-    weekKey = null;
-    dateKey = null;
-    baseline = 0;
-    last = 0;
-    anchoredFromPriorDay = false;
-  }
-}
+enum LeagueOutcome { promoted }
 
 enum LeaguePillKind { role, walk, online }
 
@@ -151,12 +42,20 @@ class LeagueEntry {
   final String name;
   final int steps;
   final bool isUser;
+
   /// Última caminhada (`YYYY-MM-DD`).
   final String? lastWalkDate;
+
   /// Último dia online (`YYYY-MM-DD`).
   final String? lastSeenDate;
   final String? photoUrl;
   final PortraitStyle portraitStyle;
+
+  /// Passos de cenas novas nesta semana.
+  final int weekSteps;
+
+  /// Passos do mês no começo de hoje (`null` = sem passo hoje = [steps]).
+  final int? dayStartSteps;
 
   const LeagueEntry({
     this.uid,
@@ -167,7 +66,11 @@ class LeagueEntry {
     this.lastSeenDate,
     this.photoUrl,
     this.portraitStyle = PortraitStyle.photo,
+    this.weekSteps = 0,
+    this.dayStartSteps,
   });
+
+  int get stepsAtDayStart => dayStartSteps ?? steps;
 
   static String? formatShortBrDate(String? yyyyMmDd) {
     if (yyyyMmDd == null || yyyyMmDd.isEmpty) return null;
@@ -240,9 +143,7 @@ class LeagueEntry {
           emphasis: true,
         ),
       );
-    } else if (seenBr != null &&
-        !onlineToday &&
-        lastSeenDate != lastWalkDate) {
+    } else if (seenBr != null && !onlineToday && lastSeenDate != lastWalkDate) {
       pills.add(
         LeagueMetaPill(
           kind: LeaguePillKind.online,
@@ -308,46 +209,29 @@ class LeagueEntry {
   }
 }
 
-/// Caravana semanal: jogadores reais do Firestore + o usuário, ranqueados
-/// por passos. Tier e settlement sincronizam em users/{uid}.
+/// Caravana: um ranking só, o do mês (jogadores reais do Firestore + o
+/// usuário). O nível sobe com semanas firmes e sincroniza em users/{uid}.
 class LeagueService extends ChangeNotifier {
   static const _keyTier = 'leagueTier';
+  static const _keySteadyWeeks = 'leagueSteadyWeeks';
   static const _keyProcessedWeek = 'leagueProcessedWeek';
   static const _keyOutcome = 'leaguePendingOutcome';
-  static const _keyOutcomeRank = 'leaguePendingRank';
-  static const _keyTrendWeek = 'leagueTrendWeek';
-  static const _keyTrendDate = 'leagueTrendDate';
-  static const _keyTrendBaseline = 'leagueTrendBaseline';
-  static const _keyTrendLast = 'leagueTrendLast';
-  static const _keyTrendAnchored = 'leagueTrendAnchored';
-  static const _keyGroupCode = 'leagueGroupCode';
 
-  /// Tamanho do grupo (pool) por divisão — calibrável via [RemoteConfigService].
-  static int get groupSize => RemoteConfigService.instance.leagueGroupSize;
   static const promotionBonusXp = 50;
 
-  /// Quantos sobem num campo de [fieldSize] pessoas (você incluso): ~25%,
-  /// mínimo 1. 20 → 5 · 10 → 3 · 5 → 1.
-  static int promoteCountFor(int fieldSize) {
-    if (fieldSize < 2) return 0;
-    final n = (fieldSize * 0.25).round();
-    return n < 1 ? 1 : n;
-  }
+  /// Cenas novas que firmam uma semana.
+  static const steadyWeekScenes = 5;
 
-  /// Quantos descem num campo de [fieldSize] pessoas: ~15%, mínimo 1;
-  /// ninguém desce com menos de 5. 20 → 3 · 10 → 2 · 5 → 1.
-  static int demoteCountFor(int fieldSize) {
-    if (fieldSize < 5) return 0;
-    final n = (fieldSize * 0.15).round();
-    return n < 1 ? 1 : n;
-  }
+  /// Semanas firmes (seguidas ou não) para subir um nível.
+  static const steadyWeeksToRise = 3;
+
+  static int get maxTierIndex => LeagueTier.values.length - 1;
 
   /// Outros peregrinos mínimos para o ranking ter tensão (você + 1).
   static const minPeerCount = 1;
 
   /// Campo competitivo: pelo menos [minPeerCount] par real.
-  static bool fieldIsCompetitive(int peerCount) =>
-      peerCount >= minPeerCount;
+  static bool fieldIsCompetitive(int peerCount) => peerCount >= minPeerCount;
 
   /// Peregrinos vistos hoje, na ordem do ranking (posição original).
   static List<({LeagueEntry entry, int rank})> onlineNow(
@@ -361,26 +245,54 @@ class LeagueService extends ChangeNotifier {
 
   static String onlineCountLabel(int n) => L10n.current.leagueStudying(n);
 
+  /// Posições ganhas hoje por linha de [sorted] (já ordenada pelo placar):
+  /// compara com a ordem pelos passos do começo do dia. Só subida — quem
+  /// ficou para trás não ganha seta.
+  static List<int> placesUpToday(List<LeagueEntry> sorted) {
+    final before = [...sorted]
+      ..sort((a, b) => _compareBy(a, b, (e) => e.stepsAtDayStart));
+    return [
+      for (var i = 0; i < sorted.length; i++)
+        (before.indexOf(sorted[i]) - i).clamp(0, sorted.length),
+    ];
+  }
+
+  /// Fecha uma semana: [scenes] cenas novas nela. Puro, testável.
+  static ({int tierIndex, int steadyWeeks, bool promoted}) settleSteadyWeek({
+    required int scenes,
+    required int tierIndex,
+    required int steadyWeeks,
+  }) {
+    if (scenes < steadyWeekScenes || tierIndex >= maxTierIndex) {
+      return (tierIndex: tierIndex, steadyWeeks: steadyWeeks, promoted: false);
+    }
+    final firm = steadyWeeks + 1;
+    if (firm < steadyWeeksToRise) {
+      return (tierIndex: tierIndex, steadyWeeks: firm, promoted: false);
+    }
+    return (tierIndex: tierIndex + 1, steadyWeeks: 0, promoted: true);
+  }
+
   int tierIndex = 0;
 
-  /// Código de grupo fechado (célula/paróquia/amigos) — quando definido, o
-  /// ranking semanal usa o pool do grupo em vez do pool público por tier.
-  String? groupCode;
+  /// Semanas firmes acumuladas no nível atual (0…[steadyWeeksToRise] − 1).
+  int steadyWeeks = 0;
   LeagueOutcome? pendingOutcome;
-  int pendingRank = 0;
   String? _processedWeek;
   bool _loaded = false;
   bool _cloudHydrated = false;
-  bool _rcListening = false;
-  final WeeklyRankSnapshot _weeklyTrend = WeeklyRankSnapshot();
 
   bool get isLoaded => _loaded;
   LeagueTier get tier => LeagueTier.values[tierIndex];
+  bool get isMaxTier => tierIndex >= maxTierIndex;
 
   static String weekKey([DateTime? now]) {
     final d = now ?? DateTime.now();
-    final monday = DateTime(d.year, d.month, d.day)
-        .subtract(Duration(days: d.weekday - 1));
+    final monday = DateTime(
+      d.year,
+      d.month,
+      d.day,
+    ).subtract(Duration(days: d.weekday - 1));
     return monday.toIso8601String().substring(0, 10);
   }
 
@@ -389,50 +301,29 @@ class LeagueService extends ChangeNotifier {
     return '${d.year}-${d.month.toString().padLeft(2, '0')}';
   }
 
-  /// Dias restantes até a caravana fechar (domingo inclui hoje).
+  /// Dias restantes até a semana fechar (domingo inclui hoje).
   static int daysLeft([DateTime? now]) {
     final d = now ?? DateTime.now();
     return 8 - d.weekday;
   }
 
-  /// Zona de descida (últimos [demoteCountFor] de [fieldSize]).
-  bool isInDemotionZone(int rank, int fieldSize) {
-    final demote = demoteCountFor(fieldSize);
-    if (tierIndex <= 0 || rank <= 0 || demote == 0) return false;
-    return rank > fieldSize - demote;
-  }
-
-  /// Perto da zona de descida (2 posições acima + a zona).
-  bool isNearDemotion(int rank, int fieldSize) {
-    final demote = demoteCountFor(fieldSize);
-    if (tierIndex <= 0 || rank <= 0 || demote == 0) return false;
-    return rank > fieldSize - demote - 2;
-  }
-
   Future<void> init() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      _readTrend(prefs);
       // Cloud (hydrate) tem prioridade se ja chegou enquanto o prefs carregava.
       if (_cloudHydrated) return;
-      tierIndex = (prefs.getInt(_keyTier) ?? 0).clamp(0, LeagueTier.values.length - 1);
-      groupCode = prefs.getString(_keyGroupCode);
+      tierIndex = (prefs.getInt(_keyTier) ?? 0).clamp(0, maxTierIndex);
+      steadyWeeks = prefs.getInt(_keySteadyWeeks) ?? 0;
       _processedWeek = prefs.getString(_keyProcessedWeek);
       final rawOutcome = prefs.getString(_keyOutcome);
       if (rawOutcome != null) {
         for (final o in LeagueOutcome.values) {
           if (o.name == rawOutcome) pendingOutcome = o;
         }
-        pendingRank = prefs.getInt(_keyOutcomeRank) ?? 0;
       }
-      if (_cloudHydrated) return;
     } catch (e) {
       debugPrint('LeagueService.init falhou: $e');
     } finally {
-      if (!_rcListening) {
-        _rcListening = true;
-        RemoteConfigService.instance.addListener(notifyListeners);
-      }
       // Nunca deixar a aba Caravana em spinner eterno.
       if (!_loaded && !_cloudHydrated) {
         _loaded = true;
@@ -445,22 +336,22 @@ class LeagueService extends ChangeNotifier {
   Map<String, dynamic> toCloudMap() {
     return {
       'leagueTier': tierIndex,
-      'leagueGroupCode': groupCode,
+      'leagueSteadyWeeks': steadyWeeks,
       'leagueProcessedWeek': _processedWeek,
       'leaguePendingOutcome': pendingOutcome?.name,
-      'leaguePendingRank': pendingRank,
     };
   }
 
   /// Aplica estado da nuvem (fonte da verdade entre dispositivos).
   Future<void> applyFromCloud(Map<String, dynamic> data) async {
     if (data.containsKey('leagueTier')) {
-      tierIndex = ((data['leagueTier'] as num?)?.toInt() ?? tierIndex)
-          .clamp(0, LeagueTier.values.length - 1);
+      tierIndex = ((data['leagueTier'] as num?)?.toInt() ?? tierIndex).clamp(
+        0,
+        maxTierIndex,
+      );
     }
-    if (data.containsKey('leagueGroupCode')) {
-      final code = (data['leagueGroupCode'] as String?)?.trim();
-      groupCode = (code == null || code.isEmpty) ? null : code.toUpperCase();
+    if (data.containsKey('leagueSteadyWeeks')) {
+      steadyWeeks = (data['leagueSteadyWeeks'] as num?)?.toInt() ?? steadyWeeks;
     }
     if (data.containsKey('leagueProcessedWeek')) {
       _processedWeek = data['leagueProcessedWeek'] as String? ?? _processedWeek;
@@ -474,9 +365,6 @@ class LeagueService extends ChangeNotifier {
         }
       }
     }
-    if (data.containsKey('leaguePendingRank')) {
-      pendingRank = (data['leaguePendingRank'] as num?)?.toInt() ?? pendingRank;
-    }
     _cloudHydrated = true;
     _loaded = true;
     await _persist();
@@ -485,54 +373,11 @@ class LeagueService extends ChangeNotifier {
 
   String? get processedWeek => _processedWeek;
 
-  /// Fecha a semana anterior se virou a semana. [lastWeekSteps] é o XP final do
-  /// usuário na semana [lastWeekKey] (vindos do ProgressService).
-  /// [peerSteps] = XP dos outros jogadores reais daquela semana/tier.
-  static LeagueWeekSettlement settleClosedWeek({
-    required int userXp,
-    required List<int> peerSteps,
-    required int tierIndex,
-    required int groupSize,
-    required int maxTierIndex,
-  }) {
-    if (userXp <= 0) {
-      return const LeagueWeekSettlement(
-        outcome: null,
-        rank: 0,
-        tierDelta: 0,
-      );
-    }
-    final peer = peerSteps.take(groupSize - 1).toList();
-    if (!fieldIsCompetitive(peer.length)) {
-      return const LeagueWeekSettlement(
-        outcome: null,
-        rank: 0,
-        tierDelta: 0,
-      );
-    }
-    final finalXp = <int>[...peer, userXp]..sort((a, b) => b.compareTo(a));
-    final rank = finalXp.indexOf(userXp) + 1;
-    final fieldSize = finalXp.length;
-    var outcome = LeagueOutcome.stayed;
-    var delta = 0;
-    if (rank <= promoteCountFor(fieldSize) && tierIndex < maxTierIndex) {
-      outcome = LeagueOutcome.promoted;
-      delta = 1;
-    } else if (rank > fieldSize - demoteCountFor(fieldSize) && tierIndex > 0) {
-      outcome = LeagueOutcome.demoted;
-      delta = -1;
-    }
-    return LeagueWeekSettlement(
-      outcome: outcome,
-      rank: rank,
-      tierDelta: delta,
-    );
-  }
-
+  /// Fecha a semana anterior se virou a semana. [lastWeekScenes] são as
+  /// cenas novas da semana [lastWeekKey] (vindas do ProgressService).
   Future<void> settleWeekIfNeeded({
-    required int lastWeekSteps,
+    required int lastWeekScenes,
     required String? lastWeekKey,
-    List<int> peerSteps = const [],
   }) async {
     final current = weekKey();
     if (_processedWeek == current) return;
@@ -546,84 +391,15 @@ class LeagueService extends ChangeNotifier {
     }
 
     final closedWeek = _processedWeek!;
-    // XP do usuário na semana fechada (0 se o registro não bate).
-    final userXp = (lastWeekKey == closedWeek) ? lastWeekSteps : 0;
-
-    final settled = settleClosedWeek(
-      userXp: userXp,
-      peerSteps: peerSteps,
+    final settled = settleSteadyWeek(
+      scenes: lastWeekKey == closedWeek ? lastWeekScenes : 0,
       tierIndex: tierIndex,
-      groupSize: groupSize,
-      maxTierIndex: LeagueTier.values.length - 1,
+      steadyWeeks: steadyWeeks,
     );
-    tierIndex += settled.tierDelta;
-
-    // Sem campo competitivo não inventa promoção. Sem XP, não mostra card.
-    pendingOutcome = settled.outcome;
-    pendingRank = settled.rank;
+    tierIndex = settled.tierIndex;
+    steadyWeeks = settled.steadyWeeks;
+    if (settled.promoted) pendingOutcome = LeagueOutcome.promoted;
     _processedWeek = current;
-    await _persist();
-    notifyListeners();
-  }
-
-  /// Aplica o fechamento feito no servidor (`users/{uid}.leagueResult`).
-  ///
-  /// - Resultado da semana fechada (ou mais novo, ex.: descida por ausência):
-  ///   vale a divisão do servidor e mostra o card.
-  /// - Sem passos na semana fechada: não há resultado a esperar — só avança.
-  /// - Com passos e sem resultado: espera o servidor (tenta de novo depois);
-  ///   passadas 2 semanas, desiste e avança sem card.
-  Future<bool> applyServerResult(
-    Map<String, dynamic>? result, {
-    required bool hadStepsInClosedWeek,
-    DateTime? now,
-  }) async {
-    final current = weekKey(now);
-    if (_processedWeek == current) return false;
-    if (_processedWeek == null) {
-      _processedWeek = current;
-      await _persist();
-      notifyListeners();
-      return true;
-    }
-    final closedWeek = _processedWeek!;
-    final resultWeek = result?['week'] as String?;
-    if (result != null &&
-        resultWeek != null &&
-        resultWeek.compareTo(closedWeek) >= 0) {
-      final tier = (result['tier'] as num?)?.toInt();
-      if (tier != null) {
-        tierIndex = tier.clamp(0, LeagueTier.values.length - 1);
-      }
-      final raw = result['outcome'] as String?;
-      LeagueOutcome? outcome;
-      for (final o in LeagueOutcome.values) {
-        if (o.name == raw) outcome = o;
-      }
-      pendingOutcome = outcome;
-      pendingRank = (result['rank'] as num?)?.toInt() ?? 0;
-      _processedWeek = current;
-      await _persist();
-      notifyListeners();
-      return true;
-    }
-    final stale = closedWeek.compareTo(
-          weekKey((now ?? DateTime.now()).subtract(const Duration(days: 14))),
-        ) <=
-        0;
-    if (!hadStepsInClosedWeek || stale) {
-      _processedWeek = current;
-      await _persist();
-      notifyListeners();
-      return true;
-    }
-    return false;
-  }
-
-  /// Define (ou limpa, com `null`) o grupo fechado de liga (célula/paróquia/amigos).
-  Future<void> setGroupCode(String? code) async {
-    final normalized = code?.trim().toUpperCase();
-    groupCode = (normalized == null || normalized.isEmpty) ? null : normalized;
     await _persist();
     notifyListeners();
   }
@@ -637,128 +413,39 @@ class LeagueService extends ChangeNotifier {
   /// Limpa estado local (logout / troca de conta).
   Future<void> resetForLogout() async {
     tierIndex = 0;
-    groupCode = null;
+    steadyWeeks = 0;
     pendingOutcome = null;
-    pendingRank = 0;
     _processedWeek = null;
     _cloudHydrated = false;
     _loaded = true;
-    _weeklyTrend.clear();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyTier);
-    await prefs.remove(_keyGroupCode);
+    await prefs.remove(_keySteadyWeeks);
     await prefs.remove(_keyProcessedWeek);
     await prefs.remove(_keyOutcome);
-    await prefs.remove(_keyOutcomeRank);
-    await prefs.remove(_keyTrendWeek);
-    await prefs.remove(_keyTrendDate);
-    await prefs.remove(_keyTrendBaseline);
-    await prefs.remove(_keyTrendLast);
-    await prefs.remove(_keyTrendAnchored);
     notifyListeners();
-  }
-
-  /// Posição na caravana semanal vs. o âncora do dia. Só para o próprio usuário.
-  WeeklyRankTrend? weeklyTrendFor(int liveRank, {DateTime? now}) {
-    final d = now ?? DateTime.now();
-    return _weeklyTrend.trendFor(liveRank, week: weekKey(d));
-  }
-
-  /// Grava a posição atual. No 1º olhar da semana não há tendência.
-  Future<WeeklyRankTrend?> observeWeeklyRank(int rank, {DateTime? now}) async {
-    final d = now ?? DateTime.now();
-    final changed = _weeklyTrend.observe(
-      rank,
-      week: weekKey(d),
-      today: d.toIso8601String().substring(0, 10),
-    );
-    if (changed) {
-      await _persistTrend();
-      notifyListeners();
-    }
-    return weeklyTrendFor(rank, now: d);
-  }
-
-  void _readTrend(SharedPreferences prefs) {
-    _weeklyTrend.weekKey = prefs.getString(_keyTrendWeek);
-    _weeklyTrend.dateKey = prefs.getString(_keyTrendDate);
-    _weeklyTrend.baseline = prefs.getInt(_keyTrendBaseline) ?? 0;
-    _weeklyTrend.last = prefs.getInt(_keyTrendLast) ?? 0;
-    _weeklyTrend.anchoredFromPriorDay =
-        prefs.getBool(_keyTrendAnchored) ?? false;
-  }
-
-  Future<void> _persistTrend() async {
-    final prefs = await SharedPreferences.getInstance();
-    if (_weeklyTrend.weekKey == null) {
-      await prefs.remove(_keyTrendWeek);
-      await prefs.remove(_keyTrendDate);
-      await prefs.remove(_keyTrendBaseline);
-      await prefs.remove(_keyTrendLast);
-      await prefs.remove(_keyTrendAnchored);
-      return;
-    }
-    await prefs.setString(_keyTrendWeek, _weeklyTrend.weekKey!);
-    if (_weeklyTrend.dateKey != null) {
-      await prefs.setString(_keyTrendDate, _weeklyTrend.dateKey!);
-    }
-    await prefs.setInt(_keyTrendBaseline, _weeklyTrend.baseline);
-    await prefs.setInt(_keyTrendLast, _weeklyTrend.last);
-    await prefs.setBool(_keyTrendAnchored, _weeklyTrend.anchoredFromPriorDay);
   }
 
   Future<void> _persist() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt(_keyTier, tierIndex);
-    if (groupCode != null) {
-      await prefs.setString(_keyGroupCode, groupCode!);
-    } else {
-      await prefs.remove(_keyGroupCode);
-    }
+    await prefs.setInt(_keySteadyWeeks, steadyWeeks);
     if (_processedWeek != null) {
       await prefs.setString(_keyProcessedWeek, _processedWeek!);
     }
     if (pendingOutcome != null) {
       await prefs.setString(_keyOutcome, pendingOutcome!.name);
-      await prefs.setInt(_keyOutcomeRank, pendingRank);
     } else {
       await prefs.remove(_keyOutcome);
-      await prefs.remove(_keyOutcomeRank);
     }
   }
 
-  /// Classificação da semana: só jogadores reais da nuvem + o usuário.
-  List<LeagueEntry> standings({
+  /// Classificação do mês. Só pessoas reais do Firebase + o usuário.
+  List<LeagueEntry> monthStandings({
     required String userName,
-    required int userWeeklySteps,
-    String? userUid,
-    String? userLastWalkDate,
-    String? userLastSeenDate,
-    String? userPhotoUrl,
-    PortraitStyle userPortraitStyle = PortraitStyle.photo,
-    List<LeagueEntry> realPlayers = const [],
-  }) {
-    final real = realPlayers.take(groupSize - 1).toList();
-    final entries = [
-      ...real,
-      LeagueEntry(
-        uid: userUid,
-        name: userName,
-        steps: userWeeklySteps,
-        isUser: true,
-        lastWalkDate: userLastWalkDate,
-        lastSeenDate: userLastSeenDate,
-        photoUrl: userPhotoUrl,
-        portraitStyle: userPortraitStyle,
-      ),
-    ]..sort(_compareEntries);
-    return entries;
-  }
-
-  /// Classificação geral (passos totais). Só pessoas reais do Firebase.
-  List<LeagueEntry> overallStandings({
-    required String userName,
-    required int userTotalSteps,
+    required int userMonthSteps,
+    required int userWeekSteps,
+    required int userDayStartSteps,
     String? userUid,
     String? userLastWalkDate,
     String? userLastSeenDate,
@@ -771,12 +458,14 @@ class LeagueService extends ChangeNotifier {
       LeagueEntry(
         uid: userUid,
         name: userName,
-        steps: userTotalSteps,
+        steps: userMonthSteps,
         isUser: true,
         lastWalkDate: userLastWalkDate,
         lastSeenDate: userLastSeenDate,
         photoUrl: userPhotoUrl,
         portraitStyle: userPortraitStyle,
+        weekSteps: userWeekSteps,
+        dayStartSteps: userDayStartSteps,
       ),
     ]..sort(_compareEntries);
     return entries;
@@ -785,20 +474,20 @@ class LeagueService extends ChangeNotifier {
   int userRank(List<LeagueEntry> entries) =>
       entries.indexWhere((e) => e.isUser) + 1;
 
-  static int _compareEntries(LeagueEntry a, LeagueEntry b) {
-    if (b.steps != a.steps) return b.steps.compareTo(a.steps);
+  static int _compareEntries(LeagueEntry a, LeagueEntry b) =>
+      _compareBy(a, b, (e) => e.steps);
+
+  static int _compareBy(
+    LeagueEntry a,
+    LeagueEntry b,
+    int Function(LeagueEntry) score,
+  ) {
+    final sa = score(a);
+    final sb = score(b);
+    if (sb != sa) return sb.compareTo(sa);
     // Empate: usuário fica na frente (gentileza de produto).
     if (a.isUser) return -1;
     if (b.isUser) return 1;
     return a.name.compareTo(b.name);
-  }
-
-  @override
-  void dispose() {
-    if (_rcListening) {
-      RemoteConfigService.instance.removeListener(notifyListeners);
-      _rcListening = false;
-    }
-    super.dispose();
   }
 }

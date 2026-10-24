@@ -259,7 +259,8 @@ class SubscriptionService extends ChangeNotifier {
   List<Package> get packagesForSale => [
     for (final p in availablePackages)
       if (pioneerOnSale
-          ? p.storeProduct.identifier != annualProductId
+          ? PlusAccess.baseProductId(p.storeProduct.identifier) !=
+                annualProductId
           : !isFounderPackage(p))
         p,
   ];
@@ -303,7 +304,17 @@ class SubscriptionService extends ChangeNotifier {
     super.dispose();
   }
 
-  Future<void> init({String? uid}) async {
+  /// Entra na mesma fila de [bindUid]: o `init()` do provider e o primeiro
+  /// `bindUid(uid)` chegam juntos, e sem fila o `logIn` corria antes de o
+  /// SDK terminar de configurar — a compra ficava num id anônimo, sem
+  /// webhook (servidor ignora anônimo) e sem vaga de Pioneiro.
+  Future<void> init({String? uid}) {
+    final run = _bindChain.then((_) => _initNow(uid));
+    _bindChain = run.catchError((Object _) {});
+    return run;
+  }
+
+  Future<void> _initNow(String? uid) async {
     if (!isConfigured) {
       PlusLog.log(
         'loja',
@@ -313,7 +324,7 @@ class SubscriptionService extends ChangeNotifier {
       return;
     }
     if (_initialized) {
-      await bindUid(uid);
+      await _bindNow(uid);
       return;
     }
     _initialized = true;
@@ -362,7 +373,7 @@ class SubscriptionService extends ChangeNotifier {
     }
     if (!isConfigured) return;
     if (!_initialized) {
-      await init(uid: uid);
+      await _initNow(uid);
       return;
     }
     if (uid == _boundUid) return;
@@ -583,12 +594,23 @@ class SubscriptionService extends ChangeNotifier {
   /// só com elegibilidade confirmada. Quem já testou/assinou (o público
   /// do winback!) ou está em status desconhecido vê a assinatura direta
   /// — prometer trial para inelegível é cobrança-surpresa e reembolso.
+  ///
+  /// No Android o status vem sempre "desconhecido", mas o Google Play só
+  /// devolve na opção padrão do produto as ofertas a que a conta tem
+  /// direito: se o preço de entrada grátis veio, ele vale para esta conta.
+  /// Sem isso o Android nunca mostrava o teste de 14 dias.
   int? trialDaysFor(Package p) {
     final status = _trialEligibility[p.storeProduct.identifier];
-    if (status != IntroEligibilityStatus.introEligibilityStatusEligible) {
-      return null;
+    if (status == IntroEligibilityStatus.introEligibilityStatusEligible) {
+      return trialDays(p);
     }
-    return trialDays(p);
+    if (defaultTargetPlatform == TargetPlatform.android &&
+        !_debugFakeStore &&
+        (status == null ||
+            status == IntroEligibilityStatus.introEligibilityStatusUnknown)) {
+      return trialDays(p);
+    }
+    return null;
   }
 
   void _onCustomerInfo(CustomerInfo info) {
@@ -657,6 +679,11 @@ class SubscriptionService extends ChangeNotifier {
       final result = await Purchases.purchase(PurchaseParams.package(package));
       _onCustomerInfo(result.customerInfo);
       track(isPeregrinoPlus ? 'success' : 'fail');
+      // O paywall prometeu avisar 1 dia antes da cobrança: sem permissão
+      // de notificação esse aviso nunca aparece. Pede aqui, uma vez.
+      if (plusInTrial) {
+        unawaited(NotificationService.instance.requestOsPermission());
+      }
       PlusLog.log(
         'compra',
         '$productId ${isPeregrinoPlus ? 'concluída' : 'sem entitlement'}',
@@ -725,8 +752,12 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
-  Future<void> restore() async {
-    if (!isConfigured || _debugFakeStore) return;
+  /// `true` achou o Plus, `false` a loja respondeu sem assinatura ativa,
+  /// `null` falhou (o motivo fica em [lastError]) ou não há loja.
+  Future<bool?> restore() async {
+    lastError = null;
+    if (!isConfigured) return null;
+    if (_debugFakeStore) return isPeregrinoPlus;
     loading = true;
     notifyListeners();
     try {
@@ -740,10 +771,12 @@ class SubscriptionService extends ChangeNotifier {
       unawaited(
         AnalyticsService.instance.logRestore(isPeregrinoPlus ? 'plus' : 'none'),
       );
+      return isPeregrinoPlus;
     } catch (e) {
       lastError = L10n.current.paywallRestoreFailed;
       unawaited(AnalyticsService.instance.logRestore('error'));
       PlusLog.log('restaurar', 'falhou: $e');
+      return null;
     } finally {
       loading = false;
       notifyListeners();
@@ -769,10 +802,17 @@ class SubscriptionService extends ChangeNotifier {
   Package? get annualOnSale => founderPackage ?? annualPackage;
 
   /// Tipo do plano ativo (anual, mensal…), pelo produto da oferta.
-  PackageType? get plusPackageType => availablePackages
-      .where((p) => p.storeProduct.identifier == plusProductId)
-      .firstOrNull
-      ?.packageType;
+  PackageType? get plusPackageType {
+    final active = plusProductId;
+    if (active == null) return null;
+    final base = PlusAccess.baseProductId(active);
+    return availablePackages
+        .where(
+          (p) => PlusAccess.baseProductId(p.storeProduct.identifier) == base,
+        )
+        .firstOrNull
+        ?.packageType;
+  }
 
   /// Abre a tela da loja para mudar de plano ou cancelar.
   Future<void> openManagement() async {

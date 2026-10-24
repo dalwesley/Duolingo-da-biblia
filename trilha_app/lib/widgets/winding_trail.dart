@@ -32,6 +32,9 @@ class FlowingWindingTrail extends StatefulWidget {
   /// card, ou na base quando o trilho nasce nele.
   final Widget? walker;
 
+  /// Respiro entre o card e a borda da coluna. Menor encosta o card na borda.
+  final double edgeInset;
+
   const FlowingWindingTrail({
     super.key,
     required this.walked,
@@ -39,6 +42,7 @@ class FlowingWindingTrail extends StatefulWidget {
     this.waveOffset = 0,
     this.showAhead = true,
     this.walker,
+    this.edgeInset = 12,
     required this.stops,
   });
 
@@ -84,6 +88,7 @@ class _FlowingWindingTrailState extends State<FlowingWindingTrail>
       waveOffset: widget.waveOffset,
       showAhead: widget.showAhead,
       flow: _flow,
+      edgeInset: widget.edgeInset,
       stops: [...widget.stops, if (widget.walker != null) widget.walker!],
     );
   }
@@ -95,6 +100,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
   final Color track;
   final int waveOffset;
   final bool showAhead;
+  final double edgeInset;
 
   /// Quando ligado, o picote do trecho andado corre com o ticker.
   final Animation<double>? flow;
@@ -105,6 +111,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
     required this.track,
     this.waveOffset = 0,
     this.showAhead = true,
+    this.edgeInset = 12,
     this.flow,
     required List<Widget> stops,
   }) : super(children: stops);
@@ -116,6 +123,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       track: track,
       waveOffset: waveOffset,
       showAhead: showAhead,
+      edgeInset: edgeInset,
       flow: flow,
     );
   }
@@ -130,6 +138,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       ..track = track
       ..waveOffset = waveOffset
       ..showAhead = showAhead
+      ..edgeInset = edgeInset
       ..flow = flow;
   }
 }
@@ -250,6 +259,7 @@ class RenderWindingTrail extends RenderBox
     required this._track,
     required this._waveOffset,
     required this._showAhead,
+    required this._edgeInset,
     this._flow,
   });
 
@@ -257,6 +267,7 @@ class RenderWindingTrail extends RenderBox
   Color _track;
   int _waveOffset;
   bool _showAhead;
+  double _edgeInset;
   Animation<double>? _flow;
   bool _walkerVisible = false;
   final List<Offset> _anchors = [];
@@ -269,6 +280,7 @@ class RenderWindingTrail extends RenderBox
   final List<_TrailStroke> _strokes = [];
   Path? _clip;
   bool _linkEdges = false;
+  double _layoutWidth = 360;
 
   final Paint _foot = Paint()..isAntiAlias = true;
 
@@ -300,6 +312,13 @@ class RenderWindingTrail extends RenderBox
     if (value == _showAhead) return;
     _showAhead = value;
     markNeedsPaint();
+  }
+
+  double get edgeInset => _edgeInset;
+  set edgeInset(double value) {
+    if (value == _edgeInset) return;
+    _edgeInset = value;
+    markNeedsLayout();
   }
 
   Animation<double>? get flow => _flow;
@@ -335,6 +354,10 @@ class RenderWindingTrail extends RenderBox
   @override
   void performLayout() {
     final width = constraints.maxWidth.isFinite ? constraints.maxWidth : 360.0;
+    _layoutWidth = width;
+    // Tem tamanho desde já: _leave roda antes do altura final, e ler
+    // `size` aqui derruba o mapa inteiro.
+    size = constraints.constrain(Size(width, constraints.minHeight));
     final loose = BoxConstraints(maxWidth: width);
     final boxes = <RenderBox>[];
     RenderBox? walker;
@@ -389,7 +412,7 @@ class RenderWindingTrail extends RenderBox
         // O card desliza de uma borda à outra. A amplitude antiga usava o
         // tamanho do círculo e, com o card largo, tudo caía no meio.
         // Respiro lateral — o marco de fase (gate) ocupa a largura toda.
-        const inset = 12.0;
+        final inset = _edgeInset;
         final travel = math.max(0.0, width - box.size.width - inset * 2);
         final shift = _cardSpread(spread);
         left = inset + travel * (shift + 1) / 2;
@@ -669,12 +692,16 @@ class RenderWindingTrail extends RenderBox
     }
   }
 
-  /// Base do card — no marco de fase, o centro da base.
+  /// Base do card, na extremidade de fora — o trilho desce pela quina,
+  /// não pelo meio. No marco de fase, o centro da base.
   Offset _leave(int i) {
     final shaft = _openings[i];
     if (shaft != null) return Offset(shaft.center.dx, shaft.bottom);
     final bounds = _bounds[i];
-    return Offset(bounds.center.dx, bounds.bottom);
+    final onLeft = bounds.center.dx <= _layoutWidth / 2;
+    const tuck = 22.0;
+    final x = onLeft ? bounds.left + tuck : bounds.right - tuck;
+    return Offset(x, bounds.bottom);
   }
 
   /// Lateral do próximo card — no marco de fase, o centro do topo.

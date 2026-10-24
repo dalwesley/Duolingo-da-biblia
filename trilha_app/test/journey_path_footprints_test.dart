@@ -162,10 +162,14 @@ void main() {
     final anan = tester.getRect(find.byType(CloudMascot));
     final card = cardOf(tester, 'Gênesis 1-11');
     final next = cardOf(tester, 'Gênesis 12-50');
+    final edge = (anan.center.dx - card.left).abs() <
+            (anan.center.dx - card.right).abs()
+        ? card.left
+        : card.right;
     expect(
-      (anan.center.dx - card.center.dx).abs(),
-      lessThan(8),
-      reason: 'Anan fora do conector da base\nanan=$anan\ncard=$card',
+      (anan.center.dx - edge).abs(),
+      lessThan(36),
+      reason: 'Anan fora da extremidade da base\nanan=$anan\ncard=$card',
     );
     expect((anan.top - card.bottom).abs(), lessThan(16));
     expect(anan.bottom, lessThanOrEqualTo(next.top + 1));

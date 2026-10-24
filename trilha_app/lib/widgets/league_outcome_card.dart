@@ -12,10 +12,10 @@ import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'confetti_overlay.dart';
-import 'immersive_background.dart';
 import 'ui_primitives.dart';
+import 'medal_art.dart';
 
-/// Resultado da semana da caravana — mora na Home até coletar / dispensar.
+/// Subida de nível da caravana — mora na Home até coletar.
 class LeagueOutcomeCard extends StatelessWidget {
   const LeagueOutcomeCard({super.key});
 
@@ -25,88 +25,23 @@ class LeagueOutcomeCard extends StatelessWidget {
     final outcome = league.pendingOutcome;
     if (outcome == null) return const SizedBox.shrink();
 
-    if (outcome == LeagueOutcome.promoted) {
-      return _PromotionBanner(
-        rank: league.pendingRank,
-        tierLabel: league.tier.label,
-        bonusSteps: LeagueService.promotionBonusXp,
-        onCollect: () => _claim(context, league, outcome),
-      );
-    }
-
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final demoted = outcome == LeagueOutcome.demoted;
-    final title = demoted
-        ? l10n.leagueDemotedTitle(league.tier.label)
-        : l10n.leagueWeekEndedTitle;
-    final message = demoted
-        ? l10n.leagueDemotedBody(league.pendingRank, league.tier.label)
-        : l10n.leagueStayedBody(league.pendingRank, league.tier.label);
-
-    return GlassCard(
-      padding: AppMetrics.cardPadding,
-      child: Row(
-        children: [
-          if (demoted)
-            const CloudMascot(face: CloudFace.triste, size: 56)
-          else
-            CinematicIcon(
-              glyph: CinematicGlyph.rise,
-              size: AppMetrics.leadingIcon,
-              accent: a.chrome,
-              glowing: false,
-            ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: AppTypography.title(size: 16, color: a.text),
-                ),
-                const SizedBox(height: 3),
-                Text(
-                  message,
-                  style: AppTypography.body(
-                    size: 12,
-                    height: 1.35,
-                    weight: FontWeight.w600,
-                    color: a.textSecondary,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(width: 8),
-          _CollectButton(
-            label: l10n.commonGotIt,
-            onDarkGold: false,
-            onTap: () => _claim(context, league, outcome),
-          ),
-        ],
-      ),
+    return _PromotionBanner(
+      tierLabel: league.tier.label,
+      bonusSteps: LeagueService.promotionBonusXp,
+      onCollect: () => _claim(context, league),
     );
   }
 
-  static Future<void> _claim(
-    BuildContext context,
-    LeagueService league,
-    LeagueOutcome outcome,
-  ) async {
-    if (outcome == LeagueOutcome.promoted) {
-      await showLeaguePromotionSheet(
-        context,
-        tierLabel: league.tier.label,
-        rank: league.pendingRank,
-        bonusSteps: LeagueService.promotionBonusXp,
-      );
-      if (!context.mounted) return;
-      await context.read<ProgressService>().grantBonusSteps(
-        LeagueService.promotionBonusXp,
-      );
-    }
+  static Future<void> _claim(BuildContext context, LeagueService league) async {
+    await showLeaguePromotionSheet(
+      context,
+      tierLabel: league.tier.label,
+      bonusSteps: LeagueService.promotionBonusXp,
+    );
+    if (!context.mounted) return;
+    await context.read<ProgressService>().grantBonusSteps(
+      LeagueService.promotionBonusXp,
+    );
 
     await league.dismissOutcome();
     if (!context.mounted) return;
@@ -125,13 +60,11 @@ class LeagueOutcomeCard extends StatelessWidget {
 
 /// Banner de promoção — medalha dourada + confete, sem poço preto.
 class _PromotionBanner extends StatefulWidget {
-  final int rank;
   final String tierLabel;
   final int bonusSteps;
   final VoidCallback onCollect;
 
   const _PromotionBanner({
-    required this.rank,
     required this.tierLabel,
     required this.bonusSteps,
     required this.onCollect,
@@ -163,9 +96,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
-    final rankLine = widget.rank > 0
-        ? l10n.leaguePromotedRankLine(widget.rank, widget.tierLabel)
-        : l10n.leaguePromotedLevelOnly(widget.tierLabel);
+    final rankLine = l10n.leaguePromotedLevelOnly(widget.tierLabel);
 
     // Só a medalha respira; o cartão (gradientes, confete, textos) não é
     // reconstruído a cada frame.
@@ -216,7 +147,6 @@ class _PromotionBannerState extends State<_PromotionBanner>
                     child: AnimatedBuilder(
                       animation: _breathe,
                       builder: (context, _) => _PromotionMedal(
-                        rank: widget.rank,
                         pulse: AppMotion.move.transform(_breathe.value),
                       ),
                     ),
@@ -265,10 +195,9 @@ class _PromotionBannerState extends State<_PromotionBanner>
 }
 
 class _PromotionMedal extends StatelessWidget {
-  final int rank;
   final double pulse;
 
-  const _PromotionMedal({required this.rank, required this.pulse});
+  const _PromotionMedal({required this.pulse});
 
   @override
   Widget build(BuildContext context) {
@@ -277,44 +206,10 @@ class _PromotionMedal extends StatelessWidget {
       child: SizedBox(
         width: 52,
         height: 52,
-        child: Stack(
-          clipBehavior: Clip.none,
-          alignment: Alignment.center,
-          children: [
-            Container(
-              width: 48,
-              height: 48,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppRoles.onReward,
-                border: Border.all(color: AppColors.medalGold, width: 1.75),
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.dropShadow,
-                    blurRadius: 6,
-                    offset: const Offset(0, 3),
-                  ),
-                ],
-              ),
-              child: const CinematicIcon(
-                glyph: CinematicGlyph.crown,
-                size: AppMetrics.iconLg,
-                accent: AppRoles.reward,
-                framed: false,
-              ),
-            ),
-            if (rank > 0)
-              Positioned(
-                right: -2,
-                bottom: -2,
-                child: SoftBadge(
-                  text: context.l10n.pilgrimRankOrdinal(rank),
-                  accent: AppColors.medalGold,
-                  solid: true,
-                ),
-              ),
-          ],
+        child: const MedalArt(
+          metal: AppColors.accent,
+          size: 50,
+          glyph: CinematicGlyph.crown,
         ),
       ),
     );
@@ -368,28 +263,22 @@ class _CollectButton extends StatelessWidget {
 Future<void> showLeaguePromotionSheet(
   BuildContext context, {
   required String tierLabel,
-  required int rank,
   required int bonusSteps,
 }) {
   ActHaptics.success();
   return showAppSheet<void>(
     context,
-    builder: (ctx) => _LeaguePromotionSheet(
-      tierLabel: tierLabel,
-      rank: rank,
-      bonusSteps: bonusSteps,
-    ),
+    builder: (ctx) =>
+        _LeaguePromotionSheet(tierLabel: tierLabel, bonusSteps: bonusSteps),
   );
 }
 
 class _LeaguePromotionSheet extends StatelessWidget {
   final String tierLabel;
-  final int rank;
   final int bonusSteps;
 
   const _LeaguePromotionSheet({
     required this.tierLabel,
-    required this.rank,
     required this.bonusSteps,
   });
 
@@ -443,9 +332,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            rank > 0
-                ? l10n.leagueLevelUpBodyRank(rank, tierLabel)
-                : l10n.leagueLevelUpBodyOnly(tierLabel),
+            l10n.leagueLevelUpBodyOnly(tierLabel),
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,

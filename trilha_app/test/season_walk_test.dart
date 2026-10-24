@@ -94,15 +94,35 @@ void main() {
   });
 
   group('Entry trails and seals', () {
-    test('anxiety and restart overlay have 5 missions each', () {
-      expect(EntryTrails.overlay, hasLength(2));
+    test('pain and intent overlays borrow every scene from a bank', () {
+      final bySlug = {for (final t in EntryTrails.overlay) t.slug: t};
+      expect(bySlug.keys.toSet(), EntryTrails.slugs);
+      expect(bySlug['ansiedade']!.missionSlugs, hasLength(5));
+      expect(bySlug['recomeco']!.missionSlugs, hasLength(5));
+      expect(bySlug['conhecer-a-deus']!.missionSlugs, hasLength(5));
+      expect(bySlug['entender-a-biblia']!.missionSlugs, hasLength(7));
       for (final t in EntryTrails.overlay) {
-        expect(t.missionSlugs, hasLength(5));
+        expect(EntryTrails.continuesTo[t.missionSlugs.last], isNotNull);
         for (final m in t.modules.expand((mod) => mod.missions)) {
           expect(m.bankSection, isNotEmpty);
           expect(m.bankTrailSlug, isNotEmpty);
         }
       }
+    });
+
+    test('scenes on the same bank complete together', () {
+      expect(EntryTrails.linkedScenes('dor-ansia-01'), {
+        'sm-21-tesouros-e-ansiedade',
+      });
+      expect(EntryTrails.linkedScenes('gen-01-criador'), {
+        'entrada-deus-01',
+        'entrada-biblia-01',
+      });
+      expect(EntryTrails.linkedScenes('entrada-deus-04'), {
+        'salmos-louvor-02-o-senhor-e-o-meu-pas',
+        'dor-ansia-03',
+      });
+      expect(EntryTrails.linkedScenes('gen-02-dias'), isEmpty);
     });
 
     test('entry overlay wins over empty remote stub', () {

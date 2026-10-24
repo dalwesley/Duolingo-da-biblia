@@ -361,6 +361,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             isReplay: _noProgress,
             correct: widget.correct,
             total: widget.total,
+            alsoComplete: EntryTrails.linkedScenes(widget.missionSlug),
           )
           .then((awarded) async {
             if (mounted && awarded > 0) {
@@ -840,6 +841,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                     top: 0,
                     child: SizedBox(
                       width: 320,
+                      height: 320,
                       child: RepaintBoundary(
                         key: _insightShareKey,
                         child: ShareInsightCard(

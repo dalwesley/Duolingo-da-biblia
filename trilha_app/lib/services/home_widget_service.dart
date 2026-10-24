@@ -10,7 +10,11 @@ import 'progress_service.dart';
 class HomeWidgetService {
   HomeWidgetService._();
 
-  static const _androidProvider = 'TrilhaHomeWidgetProvider';
+  /// Card largo (4x2) e selo pequeno (2x1), como os dois do Duolingo.
+  static const _androidProviders = [
+    'TrilhaHomeWidgetProvider',
+    'TrilhaStreakWidgetProvider',
+  ];
   static const _iosKind = 'TrilhaHomeWidget';
   static const iosAppGroupId = 'group.ZS7LYV9Y7U.stway';
   static const _debounce = Duration(seconds: 2);
@@ -81,41 +85,51 @@ class HomeWidgetService {
         : (nextTitle.isNotEmpty
               ? l.widgetTodayTitle(nextTitle)
               : l.widgetProgressScenes(done, goal));
-    final days = l.widgetDaysInRow(streak);
-
     // O card: o widget nativo conta até [dayEnd] sozinho e, se o app não
     // abrir, vira o dia com os textos `next_*` (garantida → em risco) ou
-    // `away_*` (dia perdido).
+    // `away_*` (dia perdido). `short` é a linha do selo pequeno.
     final String state;
     final String headline;
     final String big;
-    final String sub;
+    final String short;
     if (walked) {
       state = 'safe';
       headline = l.widgetStreakSafe;
       big = progressLabel;
-      sub = goalMet ? days : '$days · ${l.widgetScenesLeft(goal - done)}';
+      short = l.widgetShortSafe;
     } else if (atRisk) {
       state = 'risk';
       headline = l.widgetKeepStreak;
       big = '';
-      sub = '$days · ${l.widgetScenesLeft(goal)}';
+      short = '';
     } else if (streak <= 0) {
       state = 'start';
       headline = l.widgetStartStreak;
       big = '';
-      sub = todayLabel;
+      short = '';
     } else {
       state = 'away';
       headline = l.widgetBackToTrail;
       big = todayLabel;
-      sub = l.widgetBehindCaravan;
+      short = l.widgetShortAway;
     }
 
     final now = DateTime.now();
     final dayEnd = DateTime(now.year, now.month, now.day + 1);
 
+    // Faixa da semana: o widget marca os dias sozinho a partir destas datas,
+    // inclusive depois da meia-noite.
+    final played = <String>[];
+    final frozen = <String>[];
+    for (var i = 13; i >= 0; i--) {
+      final day = DateTime(now.year, now.month, now.day - i);
+      final key = day.toIso8601String().substring(0, 10);
+      if (progress.playedOnDate(day)) played.add(key);
+      if (progress.wasFrozenOnDate(day)) frozen.add(key);
+    }
+
     await HomeWidget.saveWidgetData('streak', streak);
+    await HomeWidget.saveWidgetData('streak_label', l.commonDays(streak));
     await HomeWidget.saveWidgetData('card_state', state);
     await HomeWidget.saveWidgetData(
       'card_day_end',
@@ -123,20 +137,24 @@ class HomeWidgetService {
     );
     await HomeWidget.saveWidgetData('card_headline', headline);
     await HomeWidget.saveWidgetData('card_big', big);
-    await HomeWidget.saveWidgetData('card_sub', sub);
+    await HomeWidget.saveWidgetData('card_short', short);
     await HomeWidget.saveWidgetData('card_next_headline', l.widgetKeepStreak);
-    await HomeWidget.saveWidgetData(
-      'card_next_sub',
-      '$days · ${l.widgetScenesLeft(goal)}',
-    );
     await HomeWidget.saveWidgetData('card_away_headline', l.widgetBackToTrail);
     await HomeWidget.saveWidgetData('card_away_big', todayLabel);
-    await HomeWidget.saveWidgetData('card_away_sub', l.widgetBehindCaravan);
+    await HomeWidget.saveWidgetData('card_away_short', l.widgetShortAway);
+    await HomeWidget.saveWidgetData('played_days', played.join(','));
+    await HomeWidget.saveWidgetData('frozen_days', frozen.join(','));
+    await HomeWidget.saveWidgetData('week_labels', l.widgetWeekdayInitials);
 
-    await HomeWidget.updateWidget(
-      androidName: _androidProvider,
-      iOSName: _iosKind,
-      qualifiedAndroidName: 'com.trilha.trilha_app.$_androidProvider',
-    );
+    if (Platform.isIOS) {
+      await HomeWidget.updateWidget(iOSName: _iosKind);
+      return;
+    }
+    for (final name in _androidProviders) {
+      await HomeWidget.updateWidget(
+        androidName: name,
+        qualifiedAndroidName: 'com.trilha.trilha_app.$name',
+      );
+    }
   }
 }

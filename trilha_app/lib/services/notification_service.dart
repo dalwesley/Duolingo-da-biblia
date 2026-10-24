@@ -283,10 +283,10 @@ class NotificationService {
     final enabled =
         progress.notificationsPrompted && progress.settings.notifications;
     await _cancelAll();
-    if (!enabled) {
-      await cancelTrialEndingReminder();
-      return;
-    }
+    // O aviso do fim do teste não é lembrete de estudo: o paywall promete
+    // ("lembramos 1 dia antes da cobrança") e ele fica mesmo com os
+    // lembretes desligados. Quem cancela é a assinatura (SubscriptionService).
+    if (!enabled) return;
 
     final hooks = _buildHooks(progress);
     if (hooks.isEmpty) {

@@ -751,7 +751,7 @@ class _SearchButton extends StatelessWidget {
   }
 }
 
-/// Herói — onde a leitura parou, com o primeiro versículo à vista.
+/// Herói — onde a leitura parou.
 /// Sem histórico, convida a começar pelo Evangelho de João.
 class _ContinueHero extends StatelessWidget {
   final List<BibleBook> books;
@@ -779,15 +779,19 @@ class _ContinueHero extends StatelessWidget {
     }
     final book = books[bookIndex];
     chapter = chapter.clamp(1, book.chapters.length);
-    final preview = book.chapters[chapter - 1].first;
     final total = book.chapters.length;
     final read = context.select(
       (ProgressService p) => p.readChaptersInBook(book.abbrev),
     );
     final reference = '${book.name} $chapter';
 
+    // Lâmpada acesa: o card inteiro é o convite — sem botão dentro.
+    const tone = AppRoles.lamp;
     return GlassCard(
       radius: AppMetrics.heroRadius,
+      glow: 1,
+      tint: tone,
+      color: Color.lerp(a.cardFill, tone, a.onDark ? 0.2 : 0.14),
       onTap: () => onOpenReference(reference),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -810,9 +814,16 @@ class _ContinueHero extends StatelessWidget {
             ],
           ),
           const SizedBox(height: AppSpace.xs),
-          Text(
-            reference,
-            style: AppTypography.display(size: 24, color: a.text),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  reference,
+                  style: AppTypography.display(size: 24, color: a.text),
+                ),
+              ),
+              const ListChevron(color: tone, size: 22),
+            ],
           ),
           if (fresh) ...[
             const SizedBox(height: 4),
@@ -821,44 +832,14 @@ class _ContinueHero extends StatelessWidget {
               style: AppTypography.body(size: 13, color: a.textSecondary),
             ),
           ],
-          const SizedBox(height: AppSpace.sm),
-          Container(
-            padding: const EdgeInsets.only(left: AppSpace.md),
-            decoration: BoxDecoration(
-              border: Border(left: BorderSide(color: a.chrome, width: 2)),
-            ),
-            child: Text(
-              preview,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.verse(
-                size: 16,
-                height: 1.4,
-                weight: FontWeight.w500,
-                fontStyle: FontStyle.italic,
-                color: a.text,
-              ),
-            ),
-          ),
-          const SizedBox(height: AppSpace.md),
           if (!fresh && read > 0) ...[
+            const SizedBox(height: AppSpace.md),
             AppProgressBar(
               value: read / total,
               height: 4,
               color: AppRoles.success,
             ),
-            const SizedBox(height: AppSpace.md),
           ],
-          CopperCta(
-            label: fresh
-                ? context.l10n.bibleHeroStartReading
-                : context.l10n.commonContinue,
-            leading: CinematicGlyph.book,
-            trailing: null,
-            expanded: true,
-            dense: true,
-            onTap: () => onOpenReference(reference),
-          ),
         ],
       ),
     );

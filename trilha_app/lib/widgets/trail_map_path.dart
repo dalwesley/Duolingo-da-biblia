@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../data/trail_art.dart';
 import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
@@ -31,14 +32,22 @@ class TrailMapPath extends StatelessWidget {
   /// Toque numa cena que pede o Plus: abre a compra, não a cena.
   final void Function(String slug)? onPlusTap;
 
+  /// Trilha dona destas cenas — a pintura do card.
+  final String trailSlug;
+
+  /// Nome do modo ativo ("Observação"), sob o título de cada cena.
+  final String? modeLabel;
+
   const TrailMapPath({
     super.key,
     required this.missions,
     required this.startGlobalIndex,
     required this.allSlugs,
     required this.completedMissions,
+    required this.trailSlug,
     this.theme,
     this.modeAccent,
+    this.modeLabel,
     this.onMissionTap,
     this.currentKey,
     this.currentSlug,
@@ -71,6 +80,7 @@ class TrailMapPath extends StatelessWidget {
       walked: accent,
       track: track,
       waveOffset: startGlobalIndex,
+      edgeInset: 2,
       // Pegadas só no trecho concluído. À frente, tracejado fino.
       showAhead: false,
       walker: const WindingWalker(
@@ -116,6 +126,7 @@ class TrailMapPath extends StatelessWidget {
         eyebrow: eyebrow,
         watermark: roman,
         glyph: glyph,
+        art: TrailArt.ofScene(trailSlug, mission.slug),
         state: state,
         accent: accent,
         glow: glow,
@@ -126,6 +137,12 @@ class TrailMapPath extends StatelessWidget {
             ? () => onPlusTap!(mission.slug)
             : () => onMissionTap?.call(mission.slug),
         plusLocked: needsPlus,
+        showMeter: true,
+        currentSubtitle: modeLabel == null
+            ? null
+            : context.l10n.modeNamed(modeLabel!),
+        done: completed ? 1 : 0,
+        total: 1,
         statusLine: completed
             ? context.l10n.trailsCleared
             : needsPlus

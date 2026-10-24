@@ -38,7 +38,8 @@ são matéria-prima do tema, não se usam direto em tela nova.
 |---|---|---|
 | Ação principal | `AppRoles.action` (ouro `#F4A80C`) | `CopperCta`. Um ouro por tela, o do botão |
 | Recompensa | `AppRoles.reward` (ouro) | **só** o número de passos |
-| Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | nav, TopBar, ícone idle — **igual em todas as abas** |
+| Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | TopBar, ícone idle e abas inativas da nav — **igual em todas as abas** |
+| Aba ativa da nav | `AppRoles.navToday/navTrails/navBible/navTogether` (Ajustes = chrome) | só a aba ativa acende no seu tom (pílula com gradiente e brilho) |
 | Seleção (cena) | fill branco (`selected`) | **só** opção tocada na cena (gesto); nunca aba do shell |
 | Aba ativa (shell) | fill escuro + rim do `accent` | `AppSegmentedTabs(accent:)` — presença do bloco |
 | Idle (cena) | `nightElevated` + texto claro | placas de resposta no céu escuro |
@@ -264,8 +265,8 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Tarefas diárias | **Tarefas do dia** | gestos (colide com os 6 gestos) |
 | Revisar | **revisar / revisão** | revisitar |
 | Aba social | **Juntos** (Companhia · Caravana · Grupos) | — |
-| Liga semanal | **caravana** — só o grupo da semana | liga, divisão; caravana como nível ou sequência |
-| Nível da caravana | **nível**; nome da árvore sozinho ("Você subiu para Oliveira") | "Caravana da Oliveira", divisão |
+| Ranking | **caravana** — um ranking só, o do mês (cenas novas); seta verde = subiu hoje; subtítulo = presença (`Hoje` / data). Sem placar semanal por enquanto | liga, divisão, sala; caravana como nível ou sequência; "destaque da semana" / "+N na semana" no placar |
+| Nível da caravana | **nível**; nome da árvore sozinho ("Você subiu para Oliveira"). Sobe com 3 **semanas firmes** (5 cenas novas cada), nunca desce | "Caravana da Oliveira", divisão, rebaixar |
 | Par 1:1 | **companhia**; a pessoa é **companheiro(a)** | dupla, parceria, par, amizade, amigo |
 | Grupo de estudo | **grupo** | sala |
 | Peer challenge (mesma cena até domingo) | **desafio** — é disputa: ganhar, perder, empate | esquina, PvP; "não é duelo" |

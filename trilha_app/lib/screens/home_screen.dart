@@ -31,7 +31,7 @@ import '../widgets/juntos_inbox.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/comeback_sheet.dart';
-import '../widgets/daily_chest_card.dart';
+import '../widgets/daily_chest_sheet.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/home_player_header.dart';
@@ -85,6 +85,7 @@ class _HomeScreenState extends State<HomeScreen>
   bool _plusOfferChecked = false;
   bool _firstSceneChecked = false;
   bool _geloTeachChecked = false;
+  bool _chestOfferPending = false;
   bool _retryingCatalog = false;
   bool _offlineDialogShown = false;
 
@@ -317,6 +318,25 @@ class _HomeScreenState extends State<HomeScreen>
     });
   }
 
+  /// O baú do dia chega sozinho (1×/dia) quando fica pronto, sem disputar
+  /// a tela com outra folha; depois espera em "Mais para hoje".
+  void _maybeOfferChest(ProgressService progress) {
+    if (_chestOfferPending || !progress.dailyChestAvailable) return;
+    if (progress.shouldShowComeback || !progress.notificationsPrompted) return;
+    _chestOfferPending = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      final route = mounted ? ModalRoute.of(context) : null;
+      if (route == null || !route.isCurrent) {
+        _chestOfferPending = false;
+        return;
+      }
+      if (await takeDailyChestOffer() && mounted) {
+        await showDailyChestSheet(context);
+      }
+      _chestOfferPending = false;
+    });
+  }
+
   void _openBible([String? reference]) {
     if ((reference == null || reference.isEmpty) &&
         widget.onOpenBible != null) {
@@ -491,7 +511,7 @@ class _HomeScreenState extends State<HomeScreen>
           caption: l10n.chestReadyShort,
           color: AppRoles.presence,
           hot: true,
-          onTap: () => _openCardSheet(const DailyChestCard()),
+          onTap: () => showDailyChestSheet(context),
         ),
       if (juntos > 0)
         _MoreTile(
@@ -629,6 +649,7 @@ class _HomeScreenState extends State<HomeScreen>
       _maybePromptReminders(progress);
       _maybeOfferPlus(progress);
       _maybeTeachGelo(progress);
+      _maybeOfferChest(progress);
     }
 
     final nudge = listen

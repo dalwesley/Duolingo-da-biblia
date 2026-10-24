@@ -31,7 +31,8 @@
     "v3:merge": "node scripts/merge_pilot_v3.mjs",
     "v3:translate": "node scripts/v3_translate.mjs",
     "v3:publish": "node scripts/publish_pilot_v3.mjs",
-    "v3:manual": "node scripts/v3_manual.mjs"
+    "v3:manual": "node scripts/v3_manual.mjs",
+    "arte:cenas": "node scripts/scene_art_prompts.mjs"
   },
   "dependencies": {
     "firebase": "^11.10.0"

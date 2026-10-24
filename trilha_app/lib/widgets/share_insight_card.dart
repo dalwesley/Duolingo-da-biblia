@@ -32,96 +32,101 @@ class ShareInsightCard extends StatelessWidget {
     final line = insight.trim();
     final ref = (verseRef ?? '').trim();
     final verse = (verseText ?? '').trim();
+    // Altura finita obrigatória: Spacers no Column quebram com h=∞
+    // (ex.: Positioned off-screen só com width na celebration).
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(minHeight: 280, minWidth: 280),
-        child: Stack(
-          children: [
-            const Positioned.fill(
-              child: ColoredBox(color: AppColors.primaryDark),
-            ),
-            Positioned.fill(
-              child: Opacity(
-                opacity: 0.32,
-                child: Image.asset(
-                  'assets/icon/splash_bg.png',
-                  fit: BoxFit.cover,
-                  alignment: const Alignment(0, -0.12),
-                  filterQuality: FilterQuality.high,
-                  errorBuilder: (_, _, _) =>
-                      const ColoredBox(color: AppColors.primaryDark),
-                ),
+      child: AspectRatio(
+        aspectRatio: 1,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 280, minWidth: 280),
+          child: Stack(
+            children: [
+              const Positioned.fill(
+                child: ColoredBox(color: AppColors.primaryDark),
               ),
-            ),
-            Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.lg),
-                  border: Border.all(
-                    color: AppRoles.reward.withValues(alpha: 0.55),
+              Positioned.fill(
+                child: Opacity(
+                  opacity: 0.32,
+                  child: Image.asset(
+                    'assets/icon/splash_bg.png',
+                    fit: BoxFit.cover,
+                    alignment: const Alignment(0, -0.12),
+                    filterQuality: FilterQuality.high,
+                    errorBuilder: (_, _, _) =>
+                        const ColoredBox(color: AppColors.primaryDark),
                   ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(22, 18, 22, 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Row(
-                    children: [
-                      const StwayLogo(size: 26),
-                      const SizedBox(width: 10),
-                      StwayWordmark(
-                        fontSize: 14,
-                        letterSpacing: 2.2,
-                        letterColor: a.text,
-                        aColor: AppColors.accent,
-                      ),
-                    ],
-                  ),
-                  const Spacer(),
-                  SectionLabel(
-                    context.l10n.commonToday,
-                    color: AppRoles.reward,
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    line,
-                    style: AppTypography.title(
-                      size: 22,
-                      height: 1.28,
-                      color: a.text,
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(AppRadii.lg),
+                    border: Border.all(
+                      color: AppRoles.reward.withValues(alpha: 0.55),
                     ),
                   ),
-                  if (verse.isNotEmpty) ...[
-                    const SizedBox(height: 18),
-                    Text(
-                      '“$verse”',
-                      style: AppTypography.verse(
-                        size: 15,
-                        height: 1.4,
-                        color: a.textSecondary,
-                      ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(22, 18, 22, 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Row(
+                      children: [
+                        const StwayLogo(size: 26),
+                        const SizedBox(width: 10),
+                        StwayWordmark(
+                          fontSize: 14,
+                          letterSpacing: 2.2,
+                          letterColor: a.text,
+                          aColor: AppColors.accent,
+                        ),
+                      ],
                     ),
-                  ],
-                  if (ref.isNotEmpty) ...[
+                    const Spacer(),
+                    SectionLabel(
+                      context.l10n.commonToday,
+                      color: AppRoles.reward,
+                    ),
                     const SizedBox(height: 10),
                     Text(
-                      ref,
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w700,
-                        color: a.textFaint,
+                      line,
+                      style: AppTypography.title(
+                        size: 22,
+                        height: 1.28,
+                        color: a.text,
                       ),
                     ),
+                    if (verse.isNotEmpty) ...[
+                      const SizedBox(height: 18),
+                      Text(
+                        '“$verse”',
+                        style: AppTypography.verse(
+                          size: 15,
+                          height: 1.4,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ],
+                    if (ref.isNotEmpty) ...[
+                      const SizedBox(height: 10),
+                      Text(
+                        ref,
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w700,
+                          color: a.textFaint,
+                        ),
+                      ),
+                    ],
+                    const Spacer(),
                   ],
-                  const Spacer(),
-                ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

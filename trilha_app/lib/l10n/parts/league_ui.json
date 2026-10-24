@@ -32,19 +32,6 @@
       "count": "int"
     }
   },
-  "leagueDriftDown": {
-    "pt": "{count, plural, =1{Desceu 1 posição hoje} other{Desceu {count} posições hoje}}",
-    "en": "{count, plural, =1{Dropped 1 place today} other{Dropped {count} places today}}",
-    "es": "{count, plural, =1{Bajó 1 puesto hoy} other{Bajó {count} puestos hoy}}",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "leagueDriftStable": {
-    "pt": "Posição estável hoje",
-    "en": "Position steady today",
-    "es": "Posición estable hoy"
-  },
   "leagueRoleLeader": {
     "pt": "Líder",
     "en": "Leader",
@@ -132,51 +119,11 @@
       "count": "int"
     }
   },
-  "leagueDemotedTitle": {
-    "pt": "Você desceu para {tier}",
-    "en": "You dropped to {tier}",
-    "es": "Bajaste a {tier}",
-    "placeholders": {
-      "tier": "String"
-    }
-  },
-  "leagueWeekEndedTitle": {
-    "pt": "Semana da caravana encerrada",
-    "en": "Caravan week closed",
-    "es": "Semana de la caravana cerrada"
-  },
-  "leagueDemotedBody": {
-    "pt": "Ficou em {rank}º. No nível {tier}, dá para subir de novo.",
-    "en": "You finished #{rank}. In the {tier} level, you can climb again.",
-    "es": "Quedaste {rank}.º. En el nivel {tier}, puedes subir de nuevo.",
-    "placeholders": {
-      "rank": "int",
-      "tier": "String"
-    }
-  },
-  "leagueStayedBody": {
-    "pt": "Você ficou em {rank}º no nível {tier}. Nova semana — continue caminhando.",
-    "en": "You finished #{rank} in the {tier} level. New week — keep walking.",
-    "es": "Quedaste {rank}.º en el nivel {tier}. Nueva semana — sigue caminando.",
-    "placeholders": {
-      "rank": "int",
-      "tier": "String"
-    }
-  },
   "leaguePromotedTitle": {
     "pt": "Você subiu para {tier}",
     "en": "You rose to {tier}",
     "es": "Subiste a {tier}",
     "placeholders": {
-      "tier": "String"
-    }
-  },
-  "leaguePromotedRankLine": {
-    "pt": "Ficou em {rank}º · agora no nível {tier}",
-    "en": "Finished #{rank} · now in the {tier} level",
-    "es": "Quedaste {rank}.º · ahora en el nivel {tier}",
-    "placeholders": {
-      "rank": "int",
       "tier": "String"
     }
   },
@@ -193,15 +140,6 @@
     "en": "You leveled up",
     "es": "Subiste de nivel"
   },
-  "leagueLevelUpBodyRank": {
-    "pt": "Ficou em {rank}º · agora caminha no nível\n{tier}",
-    "en": "Finished #{rank} · now you walk in the\n{tier} level",
-    "es": "Quedaste {rank}.º · ahora caminas en el nivel\n{tier}",
-    "placeholders": {
-      "rank": "int",
-      "tier": "String"
-    }
-  },
   "leagueLevelUpBodyOnly": {
     "pt": "Agora você caminha no nível\n{tier}",
     "en": "Now you walk in the\n{tier} level",
@@ -216,40 +154,6 @@
     "es": "+{count} pasos de ánimo",
     "placeholders": {
       "count": "int"
-    }
-  },
-  "leagueRiskZone": {
-    "pt": "Zona de descida · {closes}",
-    "en": "Drop zone · {closes}",
-    "es": "Zona de bajada · {closes}",
-    "placeholders": {
-      "closes": "String"
-    }
-  },
-  "leagueRiskNear": {
-    "pt": "Perto da descida · {closes}",
-    "en": "Near the drop · {closes}",
-    "es": "Cerca de la bajada · {closes}",
-    "placeholders": {
-      "closes": "String"
-    }
-  },
-  "leagueRiskBodyHold": {
-    "pt": "Você está em {rank}º no nível {tier}. Um passo pode segurar o lugar.",
-    "en": "You're #{rank} in the {tier} level. One step can hold your place.",
-    "es": "Estás {rank}.º en el nivel {tier}. Un paso puede asegurar el puesto.",
-    "placeholders": {
-      "rank": "int",
-      "tier": "String"
-    }
-  },
-  "leagueRiskBodyClosing": {
-    "pt": "Você está em {rank}º no nível {tier}. A caravana fecha em breve.",
-    "en": "You're #{rank} in the {tier} level. The caravan closes soon.",
-    "es": "Estás {rank}.º en el nivel {tier}. La caravana cierra pronto.",
-    "placeholders": {
-      "rank": "int",
-      "tier": "String"
     }
   }
 }

@@ -838,6 +838,8 @@ bool _isLetterAt(String text, int i) {
 }
 
 /// Casa opções no trecho por frase inteira, sem cortar no meio da palavra.
+/// Só a primeira ocorrência de cada opção vira alvo — palavra repetida
+/// ("sobre … sobre") não acende duas marcas com um toque.
 List<TapSpan> buildTapSpans(String passage, List<QuestionOption> options) {
   if (passage.isEmpty) return const [];
   final sorted = List<QuestionOption>.from(
@@ -859,6 +861,7 @@ List<TapSpan> buildTapSpans(String passage, List<QuestionOption> options) {
       final overlaps = hits.any((h) => i < h.end && end > h.start);
       if (bounded && !overlaps) {
         hits.add((start: i, end: end, id: o.id));
+        break;
       }
       from = i + 1;
     }

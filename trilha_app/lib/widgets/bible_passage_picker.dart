@@ -460,32 +460,53 @@ class _BookRow extends StatelessWidget {
                 ),
                 const SizedBox(width: AppSpace.sm),
                 Expanded(
-                  child: Text(
-                    book.name,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.title(size: 14, color: a.text),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              book.name,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.title(
+                                size: 14,
+                                color: a.text,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: AppSpace.sm),
+                          if (done) ...[
+                            const CinematicIcon(
+                              glyph: CinematicGlyph.check,
+                              size: AppMetrics.chipIcon,
+                              accent: AppRoles.success,
+                              framed: false,
+                            ),
+                            const SizedBox(width: AppSpace.xs),
+                          ],
+                          Text(
+                            detail,
+                            style: AppTypography.body(
+                              size: 12,
+                              color: read == 0 ? a.textFaint : a.textSecondary,
+                            ),
+                          ),
+                          const SizedBox(width: AppSpace.xs),
+                          ListChevron(color: a.textFaint),
+                        ],
+                      ),
+                      // Capítulos lidos do livro — trilho fino, quase sumido.
+                      const SizedBox(height: 6),
+                      AppProgressBar(
+                        value: total == 0 ? 0 : read / total,
+                        height: 3,
+                        color: AppRoles.presence,
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(width: AppSpace.sm),
-                if (done) ...[
-                  const CinematicIcon(
-                    glyph: CinematicGlyph.check,
-                    size: AppMetrics.chipIcon,
-                    accent: AppRoles.success,
-                    framed: false,
-                  ),
-                  const SizedBox(width: AppSpace.xs),
-                ],
-                Text(
-                  detail,
-                  style: AppTypography.body(
-                    size: 12,
-                    color: read == 0 ? a.textFaint : a.textSecondary,
-                  ),
-                ),
-                const SizedBox(width: AppSpace.xs),
-                ListChevron(color: a.textFaint),
               ],
             ),
           ),

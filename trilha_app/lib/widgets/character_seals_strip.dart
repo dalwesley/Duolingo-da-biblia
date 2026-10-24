@@ -11,6 +11,7 @@ import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'embossed_glyph.dart';
+import 'medal_art.dart';
 import 'share_seal_card.dart';
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
@@ -299,14 +300,12 @@ class CharacterSealMark extends StatelessWidget {
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
-        child: Transform.rotate(
-          angle: ((seal.id.hashCode % 9) - 4) * 0.028,
-          child: _EncounterSeal(
-            glyph: seal.glyph,
-            size: size,
-            unlocked: unlocked,
-            next: !unlocked,
-          ),
+        child: MedalArt(
+          metal: AppColors.medalGold,
+          size: size,
+          glyph: seal.glyph,
+          locked: !unlocked,
+          glyphOpacity: unlocked ? 1 : 0.55,
         ),
       ),
     );
@@ -317,13 +316,11 @@ class _EncounterSeal extends StatelessWidget {
   final CinematicGlyph glyph;
   final double size;
   final bool unlocked;
-  final bool next;
 
   const _EncounterSeal({
     required this.glyph,
     required this.size,
     required this.unlocked,
-    this.next = false,
   });
 
   @override
@@ -337,23 +334,16 @@ class _EncounterSeal extends StatelessWidget {
         children: [
           CustomPaint(
             size: Size.square(size),
-            painter: _WaxSealPainter(unlocked: unlocked, next: next),
+            painter: _WaxSealPainter(unlocked: unlocked),
           ),
-          if (unlocked || next)
+          if (unlocked)
             EmbossedGlyph(
               glyph: glyph,
               size: glyphSize,
-              fill: unlocked
-                  ? const Color(0xFFE8C878)
-                  : const Color(0xFF8A7050),
-              groove: unlocked
-                  ? const Color(0xFF3A1808)
-                  : const Color(0xFF121018),
-              ridge: unlocked
-                  ? const Color(0xFFFFF0C8)
-                  : const Color(0xFF6A5A40),
-              depth: unlocked ? 1.2 : 0.7,
-              opacity: unlocked ? 1 : 0.38,
+              fill: const Color(0xFFE8C878),
+              groove: const Color(0xFF3A1808),
+              ridge: const Color(0xFFFFF0C8),
+              depth: 1.2,
             ),
         ],
       ),
@@ -364,9 +354,8 @@ class _EncounterSeal extends StatelessWidget {
 /// Cera recortada — lóbulos de lacre, não um poço de ícone.
 class _WaxSealPainter extends CustomPainter {
   final bool unlocked;
-  final bool next;
 
-  const _WaxSealPainter({required this.unlocked, required this.next});
+  const _WaxSealPainter({required this.unlocked});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -376,13 +365,9 @@ class _WaxSealPainter extends CustomPainter {
 
     final waxLight = unlocked
         ? const Color(0xFFB24A28)
-        : next
-        ? const Color(0xFF5A3A28)
         : const Color(0xFF2E323A);
     final waxMid = unlocked
         ? const Color(0xFF7A2414)
-        : next
-        ? const Color(0xFF3A2418)
         : const Color(0xFF1A1E26);
     final waxDark = unlocked
         ? const Color(0xFF2C0C08)
@@ -421,7 +406,7 @@ class _WaxSealPainter extends CustomPainter {
         ).createShader(Rect.fromCircle(center: center, radius: pressR)),
     );
 
-    if (unlocked || next) {
+    if (unlocked) {
       final thread = Paint()
         ..color = (unlocked ? AppRoles.reward : const Color(0xFF8A7048))
             .withValues(alpha: unlocked ? 0.85 : 0.35)
@@ -482,5 +467,5 @@ class _WaxSealPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _WaxSealPainter old) =>
-      old.unlocked != unlocked || old.next != next;
+      old.unlocked != unlocked;
 }

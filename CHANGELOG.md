@@ -9,16 +9,31 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.36] — 2026-10-24
+
 ### Added
 - **Anan**, a nuvem companheira: o corpo é imagem e o rosto é desenhado. Ele reage ao aparecer, pisca, faz um gesto parado e responde ao toque. Entra em avisos, sheets, diálogos, travessia, vazios de Juntos, erros de tela e no começo da jornada
+- **Arte das cenas e das jornadas** em `assets/art` — pintura própria no mapa, nas estações e nos hubs de Trilhas
+- **Widget de sequência** (Android/iOS) ao lado do widget da home, com a semana e o Anan
+- **Anotações na Bíblia** com tags coloridas (promessa, Jesus, oração…) no leitor
+- **Relatar o app** (erro, conta, assinatura, sugestão): sheet no app e fila no painel admin (`app_reports`)
+- Onboarding grava o **motivo** (conhecer, hábito, entender, paz) e abre a trilha de entrada correspondente
+- Banco **V3** completo: 84 trilhas, 459 cenas, 8.856 perguntas; piloto EN/ES (Gênesis 1–11, Filipenses, Oração)
 
 ### Changed
 - **Aparência** passa a mudar céu e cards juntos, na família azul da logo. Antes só o fundo andava; o papel continuava o mesmo navy
-- **Claro:** céu claro, cards em papel claro, texto escuro. Chip selecionado no azul da marca. Ícones da barra de status escuros
-- **Médio:** céu e cards no azul do meio, texto claro
-- **Escuro:** céu da noite e cards mais escuros que o Médio, texto claro
-- Trilha de fundo ganha arte clara e neutra para acompanhar o céu
-- Placas da cena, barra, chrome e o tema do Material seguem o papel de cada aparência
+- **Claro / Médio / Escuro:** céu e papel andam juntos; chip selecionado no azul da marca; ícones de status escuros no Claro
+- Trilha de fundo, placas da cena, barra e tema Material seguem o papel de cada aparência
+- **Caravana** vira um ranking só (o do mês); nível sobe no app por semanas firmes. Salas semanais e settle no servidor ficam em pausa
+- Ajustes reorganizados (tema, idioma, relatos e conta em sheets próprios)
+- Baú do dia vira sheet; medalhas e selos com arte dedicada
+- Trilhas: hubs com pintura, progresso e portas alinhadas ao motivo do onboarding
+- Cena V3: dica, trecho aceso e fatos no palco
+- Webhook RevenueCat ignora evento atrasado (EXPIRATION antiga não desliga quem já renovou)
+
+### Fixed
+- Placares mensais aceitam `weekXp` espelhado dos passos da semana
+- Relatos de pergunta e denúncias compartilham o mesmo padrão de sheet
 
 ## [1.0.35] — 2026-10-05
 

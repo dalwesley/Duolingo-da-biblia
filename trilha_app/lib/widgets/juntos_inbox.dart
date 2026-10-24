@@ -4,26 +4,22 @@ import 'package:provider/provider.dart';
 import '../l10n/app_language.dart';
 import '../services/companion_service.dart';
 import '../services/league_service.dart';
-import '../services/progress_service.dart';
 import '../services/recognition_service.dart';
 import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import 'league_outcome_card.dart';
-import 'league_risk_card.dart';
 import 'recognition_home_card.dart';
 import 'ui_primitives.dart';
 
-/// Novidades da caravana, no topo da aba Caravana: resultado da semana,
-/// risco de descer e reconhecimentos.
+/// Novidades da caravana, no topo da aba Caravana: subida de nível e
+/// reconhecimentos.
 ///
 /// O desafio vive sob Companhia. O aceno da companhia já tem banner no
 /// card da Companhia. Nada fica acima das abas; um ponto na aba avisa.
 /// Na Home, o desafio aparece como linha em "Mais para hoje".
 class JuntosInbox extends StatelessWidget {
-  final VoidCallback onOpenCaravana;
-
-  const JuntosInbox({super.key, required this.onOpenCaravana});
+  const JuntosInbox({super.key});
 
   /// Novidades de Juntos para o cartão da Home. O desafio tem linha própria.
   static int pending(BuildContext context) {
@@ -53,24 +49,10 @@ class JuntosInbox extends StatelessWidget {
   Widget build(BuildContext context) {
     final league = context.watch<LeagueService>();
     final recognitions = context.watch<RecognitionService>().incoming;
-    final progress = context.watch<ProgressService>();
-
-    var nearDemotion = false;
-    if (league.isLoaded) {
-      final entries = league.standings(
-        userName: progress.userName,
-        userWeeklySteps: progress.weeklySteps,
-      );
-      nearDemotion = league.isNearDemotion(
-        league.userRank(entries),
-        entries.length,
-      );
-    }
 
     final items = <Widget>[
       if (league.isLoaded && league.pendingOutcome != null)
         const LeagueOutcomeCard(),
-      if (nearDemotion) LeagueRiskCard(onOpenLeague: onOpenCaravana),
       if (recognitions.isNotEmpty) RecognitionHomeCard(items: recognitions),
     ];
     if (items.isEmpty) return const SizedBox.shrink();

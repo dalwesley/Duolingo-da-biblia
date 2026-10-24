@@ -132,14 +132,22 @@ class AppearanceStyle {
     AppearanceLook.night => AppColors.nightElevated,
   };
 
+  /// Cor para a qual a arte escura sobe. Nulo no Escuro — a pintura fica
+  /// como foi feita.
+  Color? get artLiftColor => switch (look) {
+    AppearanceLook.morning => const Color(0xFF2A5C92),
+    AppearanceLook.afternoon => const Color(0xFF173F6C),
+    AppearanceLook.night => null,
+  };
+
   /// Arte de cena escura fixa (hero, pôsteres, banner de modo) sobe para o
   /// azul do look, como a trilha do fundo: screen linear `c·(1−k) + k`.
   /// Escuro mantém a arte como foi pintada.
-  ColorFilter? get artLift => switch (look) {
-    AppearanceLook.morning => _screen(const Color(0xFF2A5C92)),
-    AppearanceLook.afternoon => _screen(const Color(0xFF173F6C)),
-    AppearanceLook.night => null,
-  };
+  ColorFilter? get artLift {
+    final k = artLiftColor;
+    if (k == null) return null;
+    return _screen(k);
+  }
 
   static ColorFilter _screen(Color k) => ColorFilter.matrix([
     1 - k.r, 0, 0, 0, k.r * 255, //

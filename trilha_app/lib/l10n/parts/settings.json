@@ -37,6 +37,21 @@
     "en": "How many days you want to keep your streak going.",
     "es": "Hasta cuántos días quieres llevar tu racha."
   },
+  "settingsIntentLabel": {
+    "pt": "Seu motivo",
+    "en": "Your reason",
+    "es": "Tu motivo"
+  },
+  "settingsIntentNone": {
+    "pt": "Ainda não escolhido",
+    "en": "Not chosen yet",
+    "es": "Aún sin elegir"
+  },
+  "settingsIntentHint": {
+    "pt": "Define a trilha de entrada. Depois, o app segue a última trilha que você andou.",
+    "en": "Sets your entry trail. After that, the app follows the last trail you walked.",
+    "es": "Define tu ruta de entrada. Después, la app sigue la última ruta que recorriste."
+  },
   "settingsDays": {
     "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
     "en": "{count, plural, =1{1 day} other{{count} days}}",
@@ -479,5 +494,133 @@
     "pt": "Grátis",
     "en": "Free",
     "es": "Gratis"
+  },
+  "settingsReportProblem": {
+    "pt": "Relatar um problema",
+    "en": "Report a problem",
+    "es": "Reportar un problema"
+  },
+  "settingsReportProblemSubtitle": {
+    "pt": "Algo não funcionou? Conte para nós",
+    "en": "Something didn't work? Let us know",
+    "es": "¿Algo no funcionó? Cuéntanos"
+  },
+  "appReportTitle": {
+    "pt": "Relatar um problema",
+    "en": "Report a problem",
+    "es": "Reportar un problema"
+  },
+  "appReportIntro": {
+    "pt": "Conte o que aconteceu. A versão do app e o aparelho vão junto, para a gente conseguir reproduzir.",
+    "en": "Tell us what happened. The app version and device go along so we can reproduce it.",
+    "es": "Cuéntanos qué pasó. La versión de la app y el dispositivo van junto para que podamos reproducirlo."
+  },
+  "appReportCommentHint": {
+    "pt": "O que você estava fazendo e o que deu errado…",
+    "en": "What you were doing and what went wrong…",
+    "es": "Qué estabas haciendo y qué salió mal…"
+  },
+  "appReportSent": {
+    "pt": "Relato enviado. Obrigado.",
+    "en": "Report sent. Thank you.",
+    "es": "Reporte enviado. Gracias."
+  },
+  "appReportCategoryBug": {
+    "pt": "Algo não funciona",
+    "en": "Something doesn't work",
+    "es": "Algo no funciona"
+  },
+  "appReportCategoryAccount": {
+    "pt": "Conta e progresso",
+    "en": "Account and progress",
+    "es": "Cuenta y progreso"
+  },
+  "appReportCategorySubscription": {
+    "pt": "Assinatura e compras",
+    "en": "Subscription and purchases",
+    "es": "Suscripción y compras"
+  },
+  "appReportCategorySuggestion": {
+    "pt": "Sugestão",
+    "en": "Suggestion",
+    "es": "Sugerencia"
+  },
+  "appReportCategoryOther": {
+    "pt": "Outro",
+    "en": "Other",
+    "es": "Otro"
+  },
+  "appReportHintBug": {
+    "pt": "Tela travou, botão não responde, algo some ou fecha",
+    "en": "A screen froze, a button doesn't respond, something vanishes or closes",
+    "es": "Una pantalla se trabó, un botón no responde, algo desaparece o se cierra"
+  },
+  "appReportHintAccount": {
+    "pt": "Login, sincronização ou progresso perdido",
+    "en": "Sign-in, sync, or lost progress",
+    "es": "Inicio de sesión, sincronización o progreso perdido"
+  },
+  "appReportHintSubscription": {
+    "pt": "Peregrino+, cobrança ou restaurar compra",
+    "en": "Peregrino+, billing, or restoring a purchase",
+    "es": "Peregrino+, cobro o restaurar una compra"
+  },
+  "appReportHintSuggestion": {
+    "pt": "Uma ideia para o Stway ficar melhor",
+    "en": "An idea to make Stway better",
+    "es": "Una idea para mejorar Stway"
+  },
+  "appReportHintOther": {
+    "pt": "Algo mais que não se encaixa acima",
+    "en": "Something else that doesn't fit above",
+    "es": "Otra cosa que no encaja arriba"
+  },
+  "settingsTabPreferences": {
+    "pt": "Preferências",
+    "en": "Preferences",
+    "es": "Preferencias"
+  },
+  "settingsTabAccountAbout": {
+    "pt": "Conta e sobre",
+    "en": "Account & about",
+    "es": "Cuenta e info"
+  },
+  "settingsThemeSheetTitle": {
+    "pt": "Como você quer ver o app?",
+    "en": "How should the app look?",
+    "es": "¿Cómo quieres ver la app?"
+  },
+  "settingsThemeOrdinal": {
+    "pt": "Tema {ordinal}",
+    "en": "Theme {ordinal}",
+    "es": "Tema {ordinal}",
+    "placeholders": {
+      "ordinal": "String"
+    }
+  },
+  "settingsThemeBlurbLight": {
+    "pt": "Papel claro e céu de manhã — bom para ler de dia.",
+    "en": "Light paper and a morning sky — easy reading by day.",
+    "es": "Papel claro y cielo de mañana: ideal para leer de día."
+  },
+  "settingsThemeBlurbMedium": {
+    "pt": "Meia-luz azul: descansa os olhos sem apagar a tela.",
+    "en": "Blue half-light: easy on the eyes without dimming the screen.",
+    "es": "Media luz azul: descansa la vista sin apagar la pantalla."
+  },
+  "settingsThemeBlurbDark": {
+    "pt": "Céu de noite: menos brilho para ler antes de dormir.",
+    "en": "Night sky: less glare for reading before bed.",
+    "es": "Cielo de noche: menos brillo para leer antes de dormir."
+  },
+  "settingsThemeBlurbAuto": {
+    "pt": "Manhã, tarde e noite acompanham o horário do seu dia.",
+    "en": "Morning, afternoon and night follow the time of your day.",
+    "es": "Mañana, tarde y noche siguen la hora de tu día."
+  },
+  "languageSheetTitle": {
+    "pt": "Em que língua a gente conversa?",
+    "en": "Which language should we speak?",
+    "es": "¿En qué idioma hablamos?"
   }
 }

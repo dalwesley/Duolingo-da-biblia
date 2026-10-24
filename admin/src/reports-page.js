@@ -51,6 +51,14 @@ const USER_STATUS_LABELS = {
   dismissed: 'Descartada',
 };
 
+const APP_CATEGORY_LABELS = {
+  bug: 'Algo não funciona',
+  account: 'Conta e progresso',
+  subscription: 'Assinatura e compras',
+  suggestion: 'Sugestão',
+  other: 'Outro',
+};
+
 const STATUS_LABELS = {
   open: 'Aberto',
   reviewed: 'Revisado',
@@ -120,12 +128,14 @@ export async function renderReportsPage(root) {
   let suggestions = [];
   let authors = [];
   let userReports = [];
+  let appReports = [];
   try {
-    [items, suggestions, authors, userReports] = await Promise.all([
+    [items, suggestions, authors, userReports, appReports] = await Promise.all([
       loadOrdered(COL.reports),
       loadOrdered(COL.suggestions),
       loadOrdered(COL.authorSuggestions),
       loadOrdered(COL.userReports),
+      loadOrdered(COL.appReports),
     ]);
   } catch (err) {
     root.innerHTML = `<div class="card"><p>Erro ao carregar relatos: ${escapeHtml(err.message || String(err))}</p></div>`;
@@ -137,6 +147,65 @@ export async function renderReportsPage(root) {
   let filterSuggestionStatus = 'open';
   let filterAuthorStatus = 'open';
   let filterUserStatus = 'open';
+  let filterAppStatus = 'open';
+
+  async function setAppReportStatus(id, status) {
+    try {
+      await updateDoc(doc(db, COL.appReports, id), {
+        status,
+        reviewedAt: Timestamp.now(),
+      });
+      const item = appReports.find((r) => r.id === id);
+      if (item) item.status = status;
+      showToast('Status atualizado', 'success');
+      render();
+    } catch (err) {
+      showToast(err.message || 'Falha ao atualizar', 'error');
+    }
+  }
+
+  function appReportsHtml() {
+    const list = appReports.filter(
+      (r) => !filterAppStatus || (r.status || 'open') === filterAppStatus,
+    );
+    if (list.length === 0) {
+      return '<p class="field-hint">Nenhum relato neste filtro.</p>';
+    }
+    return list
+      .map((r) => {
+        const cat = APP_CATEGORY_LABELS[r.category] || r.category || '—';
+        const status = STATUS_LABELS[r.status] || r.status || 'Aberto';
+        const device = [
+          r.platform,
+          r.osVersion,
+          r.appVersion ? `v${r.appVersion}${r.buildNumber ? ` (${r.buildNumber})` : ''}` : '',
+          r.locale,
+        ]
+          .filter(Boolean)
+          .join(' · ');
+        return `
+            <article class="ez-panel" style="margin-bottom:12px">
+              <div class="row-between" style="gap:12px;flex-wrap:wrap">
+                <div>
+                  <strong>${escapeHtml(cat)}</strong>
+                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(status)}</span>
+                  <p class="field-hint" style="margin:6px 0 0">
+                    ${escapeHtml(formatDate(r.createdAt))} · ${escapeHtml(device || '—')}
+                  </p>
+                </div>
+                <div class="td-actions">
+                  ${statusButtons(r.id, r.status, 'data-app-status')}
+                </div>
+              </div>
+              <p style="margin-top:8px">${r.comment ? `<em>“${escapeHtml(r.comment)}”</em>` : '<span class="field-hint">Sem comentário</span>'}</p>
+              <p class="field-hint" style="margin-top:8px">
+                ${escapeHtml(r.displayName || r.email || r.uid || 'conta excluída')}
+                ${r.email && r.displayName ? ` · ${escapeHtml(r.email)}` : ''}
+              </p>
+            </article>`;
+      })
+      .join('');
+  }
 
   async function setUserReportStatus(id, status) {
     try {
@@ -277,12 +346,13 @@ export async function renderReportsPage(root) {
     const openSuggestions = suggestions.filter((r) => (r.status || 'open') === 'open').length;
     const openAuthors = authors.filter((r) => (r.status || 'open') === 'open').length;
     const openUserReports = userReports.filter((r) => (r.status || 'open') === 'open').length;
+    const openAppReports = appReports.filter((r) => (r.status || 'open') === 'open').length;
 
     root.innerHTML = `
       <div class="page-header row-between">
         <div>
           <h1>Relatos e sugestões</h1>
-          <p class="page-sub">Denúncias, erros de perguntas e caminhos pedidos pelo mapa — ${openUserReports} denúncias, ${openCount} relatos, ${openSuggestions} trilhas e ${openAuthors} autores abertos</p>
+          <p class="page-sub">Denúncias, problemas do app, erros de perguntas e caminhos pedidos pelo mapa — ${openUserReports} denúncias, ${openAppReports} do app, ${openCount} relatos, ${openSuggestions} trilhas e ${openAuthors} autores abertos</p>
         </div>
       </div>
       <div class="card filters-bar">
@@ -303,6 +373,21 @@ export async function renderReportsPage(root) {
           e nos placares, ou desativar a conta no Firebase Auth.
         </p>
         ${userReportsHtml()}
+      </div>
+      <div class="card filters-bar" style="margin-top:18px">
+        <select id="f-app-status">
+          <option value="">Todos status</option>
+          ${Object.entries(STATUS_LABELS)
+            .map(
+              ([k, v]) =>
+                `<option value="${k}" ${filterAppStatus === k ? 'selected' : ''}>${v}</option>`,
+            )
+            .join('')}
+        </select>
+      </div>
+      <div class="card">
+        <h2 style="margin:0 0 12px;font-size:1.05rem">Problemas do app · ${openAppReports} abertos</h2>
+        ${appReportsHtml()}
       </div>
       <div class="card filters-bar" style="margin-top:18px">
         <select id="f-status">
@@ -470,6 +555,15 @@ export async function renderReportsPage(root) {
     root.querySelectorAll('[data-user-status]').forEach((btn) => {
       btn.addEventListener('click', () =>
         setUserReportStatus(btn.dataset.id, btn.dataset.userStatus),
+      );
+    });
+    document.getElementById('f-app-status')?.addEventListener('change', (e) => {
+      filterAppStatus = e.target.value;
+      render();
+    });
+    root.querySelectorAll('[data-app-status]').forEach((btn) => {
+      btn.addEventListener('click', () =>
+        setAppReportStatus(btn.dataset.id, btn.dataset.appStatus),
       );
     });
     document.getElementById('f-status')?.addEventListener('change', (e) => {

@@ -28,6 +28,7 @@ import '../utils/layout_utils.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/corner_board.dart';
 import '../widgets/juntos_chrome.dart';
+import '../widgets/medal_art.dart';
 import '../widgets/juntos_inbox.dart';
 import '../widgets/caravan_pilgrim_sheet.dart';
 import '../widgets/accept_invite_sheet.dart';
@@ -87,11 +88,9 @@ class LeagueScreen extends StatefulWidget {
 class _LeagueScreenState extends State<LeagueScreen>
     with SingleTickerProviderStateMixin, ShellTabFreezeMixin {
   late final AnimationController _enter;
-  List<LeagueEntry> _loadedRealPlayers = const [];
   List<LeagueEntry> _loadedOverallPlayers = const [];
 
   /// Placar sem quem eu bloqueei.
-  List<LeagueEntry> get _realPlayers => _withoutBlocked(_loadedRealPlayers);
   List<LeagueEntry> get _overallPlayers =>
       _withoutBlocked(_loadedOverallPlayers);
 
@@ -110,7 +109,6 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   int _tab = _tabCaravana;
   int _companhiaPane = 0; // 0 = amizade, 1 = desafio
-  int _caravanPane = 0; // 0 = semana, 1 = mês
   bool _handlingInvite = false;
   bool _playersLoading = false;
   bool _playersLoadedOnce = false;
@@ -135,7 +133,6 @@ class _LeagueScreenState extends State<LeagueScreen>
     super.didUpdateWidget(oldWidget);
     if (widget.caravanaVisit != oldWidget.caravanaVisit) {
       _tab = _tabCaravana;
-      _caravanPane = 0;
     }
     if (widget.active && !oldWidget.active) {
       _consumePendingInvite();
@@ -249,31 +246,12 @@ class _LeagueScreenState extends State<LeagueScreen>
         return;
       }
 
-      final week = LeagueService.weekKey();
-      final groupCode = league.groupCode;
-      final fetched = await Future.wait<List<CloudPlayer>>([
-        groupCode != null
-            ? backend.fetchGroupWeekPlayers(groupCode, week)
-            : backend.fetchWeekPlayers(week, tier: league.tierIndex),
-        backend.fetchMonthlyPlayers(),
-      ]).timeout(const Duration(seconds: 12));
-      final players = fetched[0];
-      final overallPlayers = fetched[1];
+      final overallPlayers = await backend.fetchMonthlyPlayers().timeout(
+        const Duration(seconds: 12),
+      );
 
       if (!mounted) return;
       setState(() {
-        _loadedRealPlayers = [
-          for (final p in players)
-            LeagueEntry(
-              uid: p.uid,
-              name: p.name,
-              steps: p.steps,
-              lastWalkDate: p.lastWalkDate,
-              lastSeenDate: p.lastSeenDate,
-              photoUrl: p.photoUrl,
-              portraitStyle: p.portraitStyle,
-            ),
-        ];
         _loadedOverallPlayers = [
           for (final p in overallPlayers)
             LeagueEntry(
@@ -284,26 +262,14 @@ class _LeagueScreenState extends State<LeagueScreen>
               lastSeenDate: p.lastSeenDate,
               photoUrl: p.photoUrl,
               portraitStyle: p.portraitStyle,
+              weekSteps: p.weekSteps,
+              dayStartSteps: p.dayStartSteps,
             ),
         ];
         _playersLoading = false;
         _playersLoadedOnce = true;
         _playersError = null;
       });
-
-      final weeklyRank = league.userRank(
-        league.standings(
-          userName: progress.userName,
-          userWeeklySteps: progress.weeklySteps,
-          userUid: backend.uid,
-          userLastWalkDate: progress.lastPlayedDate,
-          userPhotoUrl: backend.userPhotoUrl,
-          realPlayers: _realPlayers,
-        ),
-      );
-      if (weeklyRank > 0) {
-        await league.observeWeeklyRank(weeklyRank);
-      }
 
       // Salas/companhia não devem travar o spinner da Caravana.
       final companionSvc = context.read<CompanionService>();
@@ -505,10 +471,7 @@ class _LeagueScreenState extends State<LeagueScreen>
                             children: switch (tab) {
                               _tabCompanhia => _buildCompanions(context),
                               _tabCaravana => [
-                                JuntosInbox(
-                                  onOpenCaravana: () =>
-                                      setState(() => _tab = _tabCaravana),
-                                ),
+                                const JuntosInbox(),
                                 ..._buildLeague(context),
                               ],
                               _ => _buildRooms(context),
@@ -532,8 +495,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     context.select(
       (ProgressService p) => (
         p.userName,
-        p.weeklySteps,
+        p.currentWeekSteps,
+        p.currentWeekScenes,
         p.currentMonthSteps,
+        p.monthStartOfToday,
         p.lastPlayedDate,
         p.settings.portraitStyle,
       ),
@@ -564,44 +529,24 @@ class _LeagueScreenState extends State<LeagueScreen>
     final today = DateTime.now().toIso8601String().substring(0, 10);
     context.select((BackendService b) => (b.uid, b.userPhotoUrl));
     final backend = context.read<BackendService>();
-    final pane = _caravanPane.clamp(0, 1);
-    final weekly = pane == 0;
     final children = <Widget>[
       _reveal(
         1,
         _CaravanStageCard(
-          pane: pane,
-          onPaneChanged: (value) =>
-              setState(() => _caravanPane = value.clamp(0, 1)),
+          tier: league.tier,
+          isMaxTier: league.isMaxTier,
+          steadyWeeks: league.steadyWeeks,
+          weekScenes: progress.currentWeekScenes,
         ),
       ),
       const SizedBox(height: AppSpace.md),
     ];
 
-    final weeklyEntries = league.standings(
+    final entries = league.monthStandings(
       userName: progress.userName,
-      userWeeklySteps: progress.weeklySteps,
-      userUid: backend.uid,
-      userLastWalkDate: progress.lastPlayedDate,
-      userLastSeenDate: today,
-      userPhotoUrl: backend.userPhotoUrl,
-      userPortraitStyle: progress.settings.portraitStyle,
-      realPlayers: _realPlayers,
-    );
-    final weeklyRank = league.userRank(weeklyEntries);
-    final weeklyCompetitive = LeagueService.fieldIsCompetitive(
-      _realPlayers.length,
-    );
-    if (weeklyRank > 0 && _playersLoadedOnce && weeklyCompetitive) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) return;
-        context.read<LeagueService>().observeWeeklyRank(weeklyRank);
-      });
-    }
-
-    final entries = league.overallStandings(
-      userName: progress.userName,
-      userTotalSteps: progress.currentMonthSteps,
+      userMonthSteps: progress.currentMonthSteps,
+      userWeekSteps: progress.currentWeekSteps,
+      userDayStartSteps: progress.monthStartOfToday,
       userUid: backend.uid,
       userLastWalkDate: progress.lastPlayedDate,
       userLastSeenDate: today,
@@ -617,8 +562,6 @@ class _LeagueScreenState extends State<LeagueScreen>
       });
     }
 
-    final canPromote = league.tierIndex < LeagueTier.values.length - 1;
-    final canDemote = league.tierIndex > 0;
     final overallCompetitive = LeagueService.fieldIsCompetitive(
       _overallPlayers.length,
     );
@@ -642,12 +585,6 @@ class _LeagueScreenState extends State<LeagueScreen>
           2,
           _LeaderboardBoard(
             entries: entries,
-            weeklyEntries: weeklyEntries,
-            weekly: weekly,
-            weeklyCompetitive: weeklyCompetitive,
-            canPromote: canPromote,
-            canDemote: canDemote,
-            tierIndex: league.tierIndex,
             onOpenOwnProfile: widget.onOpenOwnProfile,
           ),
         ),
@@ -1190,7 +1127,7 @@ class _LeagueScreenState extends State<LeagueScreen>
   List<LeagueEntry> _caravanPeople(String? myUid) {
     final seen = <String>{};
     final people = <LeagueEntry>[];
-    for (final person in [..._realPlayers, ..._overallPlayers]) {
+    for (final person in _overallPlayers) {
       final uid = person.uid;
       if (uid == null || uid.isEmpty || uid == myUid || person.isUser) continue;
       if (!seen.add(uid)) continue;
@@ -1680,97 +1617,157 @@ class _CompanhiaStageCard extends StatelessWidget {
 
 /// Stage da Caravana — mesmo padrão da Companhia: abas + descrição.
 class _CaravanStageCard extends StatelessWidget {
-  final int pane;
-  final ValueChanged<int> onPaneChanged;
+  final LeagueTier tier;
+  final bool isMaxTier;
+  final int steadyWeeks;
+  final int weekScenes;
 
-  const _CaravanStageCard({required this.pane, required this.onPaneChanged});
+  const _CaravanStageCard({
+    required this.tier,
+    required this.isMaxTier,
+    required this.steadyWeeks,
+    required this.weekScenes,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final weekly = pane == 0;
-    // Submenu semana/mês = presença; ouro do ranking fica na lista.
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
     return GlassCard(
       tint: AppRoles.presence,
       glow: 0.32,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          AppSegmentedTabs(
-            index: pane,
-            accent: AppRoles.presence,
-            onChanged: (i) {
-              ActHaptics.tap();
-              onPaneChanged(i);
-            },
-            items: [
-              (
-                label: context.l10n.juntosThisWeek,
-                glyph: CinematicGlyph.calendar,
-                mark: null,
-                alert: false,
-              ),
-              (
-                label: context.l10n.juntosThisMonth,
-                glyph: CinematicGlyph.path,
-                mark: null,
-                alert: false,
-              ),
-            ],
+          Text(
+            l10n.juntosCaravanMonthTitle,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 24, color: a.text),
+          ),
+          const SizedBox(height: AppSpace.sm),
+          Text(
+            l10n.juntosCaravanMonthBody,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.45,
+              color: a.textSecondary,
+            ),
           ),
           const SizedBox(height: AppSpace.lg),
-          _CaravanExplainer(weekly: weekly),
+          const ListDivider(),
+          const SizedBox(height: AppSpace.md),
+          _CaravanLevel(
+            tier: tier,
+            isMaxTier: isMaxTier,
+            steadyWeeks: steadyWeeks,
+            weekScenes: weekScenes,
+          ),
         ],
       ),
     );
   }
 }
 
-class _CaravanExplainer extends StatelessWidget {
-  final bool weekly;
+/// Seu nível: semanas firmes rumo ao próximo (nunca desce).
+class _CaravanLevel extends StatelessWidget {
+  final LeagueTier tier;
+  final bool isMaxTier;
+  final int steadyWeeks;
+  final int weekScenes;
 
-  const _CaravanExplainer({required this.weekly});
+  const _CaravanLevel({
+    required this.tier,
+    required this.isMaxTier,
+    required this.steadyWeeks,
+    required this.weekScenes,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final title = weekly
-        ? l10n.juntosCaravanWeekTitle
-        : l10n.juntosCaravanMonthTitle;
-    final body = weekly
-        ? l10n.juntosCaravanWeekBody
-        : l10n.juntosCaravanMonthBody;
-    final steps = weekly
-        ? [
-            (CinematicGlyph.calendar, l10n.juntosCaravanWeekStep1),
-            (CinematicGlyph.rise, l10n.juntosCaravanWeekStep2),
-            (CinematicGlyph.demote, l10n.juntosCaravanWeekStep3),
-          ]
-        : [
-            (CinematicGlyph.path, l10n.juntosCaravanMonthStep1),
-            (CinematicGlyph.rise, l10n.juntosCaravanMonthStep2),
-            (CinematicGlyph.podium, l10n.juntosCaravanMonthStep3),
-          ];
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+    const goal = LeagueService.steadyWeekScenes;
+    const total = LeagueService.steadyWeeksToRise;
+    final weekFirm = weekScenes >= goal;
+    final steadyLine = isMaxTier
+        ? l10n.juntosLevelTop
+        : l10n.juntosLevelSteady(
+            steadyWeeks,
+            total,
+            LeagueTier.values[tier.index + 1].label,
+          );
+    final weekLine = weekFirm
+        ? l10n.juntosLevelWeekDone
+        : l10n.juntosLevelWeek(weekScenes, goal);
+
+    return Row(
       children: [
-        Text(
-          title,
-          textAlign: TextAlign.center,
-          style: AppTypography.display(size: 24, color: a.text),
-        ),
-        const SizedBox(height: AppSpace.sm),
-        Text(
-          body,
-          textAlign: TextAlign.center,
-          style: AppTypography.body(
-            size: 13,
-            height: 1.45,
-            color: a.textSecondary,
+        IconWell(
+          size: 44,
+          accent: AppRoles.presence,
+          glowing: true,
+          child: CinematicIcon(
+            glyph: CinematicGlyph.tree,
+            size: AppMetrics.iconMd,
+            accent: AppRoles.presence,
+            framed: false,
           ),
         ),
-        const SizedBox(height: AppSpace.lg),
-        _ExplainerSteps(steps: steps, accent: AppRoles.presence),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SectionLabel(
+                l10n.juntosLevelTitle(tier.label),
+                size: 10,
+                color: AppRoles.presence,
+              ),
+              const SizedBox(height: 3),
+              Text(
+                steadyLine,
+                style: AppTypography.title(size: 14, color: a.text),
+              ),
+              if (!isMaxTier) ...[
+                const SizedBox(height: 2),
+                Text(
+                  weekLine,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w700,
+                    color: weekFirm ? AppRoles.success : a.textFaint,
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+        if (!isMaxTier) ...[
+          const SizedBox(width: 8),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (var i = 0; i < total; i++)
+                Container(
+                  width: 10,
+                  height: 10,
+                  margin: const EdgeInsets.only(left: 4),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: i < steadyWeeks
+                        ? AppRoles.success
+                        : a.chrome.withValues(alpha: 0.18),
+                    border: Border.all(
+                      color: i < steadyWeeks
+                          ? AppRoles.success
+                          : a.chrome.withValues(alpha: 0.4),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        ],
       ],
     );
   }
@@ -2580,41 +2577,16 @@ class _TextInputDialogState extends State<_TextInputDialog> {
 
 class _LeaderboardBoard extends StatelessWidget {
   final List<LeagueEntry> entries;
-  final List<LeagueEntry> weeklyEntries;
-  final bool weekly;
-  final bool weeklyCompetitive;
-  final bool canPromote;
-  final bool canDemote;
-  final int tierIndex;
   final VoidCallback? onOpenOwnProfile;
 
-  const _LeaderboardBoard({
-    required this.entries,
-    required this.weeklyEntries,
-    required this.weekly,
-    required this.weeklyCompetitive,
-    required this.canPromote,
-    required this.canDemote,
-    required this.tierIndex,
-    this.onOpenOwnProfile,
-  });
+  const _LeaderboardBoard({required this.entries, this.onOpenOwnProfile});
 
   @override
   Widget build(BuildContext context) {
-    final list = weekly ? weeklyEntries : entries;
-    // Sem outro peregrino o ranking semanal não existe: o Anan ocupa o lugar.
-    if (weekly && (!weeklyCompetitive || list.isEmpty)) {
-      return GlassCard(
-        padding: EdgeInsets.zero,
-        child: EmptyState(
-          title: context.l10n.juntosWeekRankingEmptyTitle,
-          body: context.l10n.juntosWeekRankingEmpty,
-        ),
-      );
-    }
-
+    final list = entries;
     final a = Appearance.of(context);
-    final online = LeagueService.onlineNow(entries);
+    final online = LeagueService.onlineNow(list);
+    final upToday = LeagueService.placesUpToday(list);
     final countLabel = LeagueService.onlineCountLabel(online.length);
 
     final onlineChip = Row(
@@ -2693,115 +2665,20 @@ class _LeaderboardBoard extends StatelessWidget {
     ];
 
     for (var i = 0; i < list.length; i++) {
-      final rank = i + 1;
-      if (weekly && rank == 1 && canPromote) {
-        rows.add(
-          _WeekZoneLabel(
-            text: context.l10n.juntosPromoteZone(
-              LeagueTier.values[tierIndex + 1].shortLabel,
-            ),
-            up: true,
-          ),
-        );
-      }
-      if (weekly &&
-          LeagueService.demoteCountFor(list.length) > 0 &&
-          rank ==
-              list.length - LeagueService.demoteCountFor(list.length) + 1 &&
-          canDemote) {
-        rows.add(
-          _WeekZoneLabel(
-            text: context.l10n.juntosDemoteZone(
-              LeagueTier.values[tierIndex - 1].shortLabel,
-            ),
-            up: false,
-          ),
-        );
-      }
       rows.add(
         _StandingRow(
           entry: list[i],
-          rank: rank,
-          weeklySteps: weekly,
-          gapToAbove: i == 0 ? 0 : list[i - 1].steps - list[i].steps,
+          rank: i + 1,
+          placesUpToday: upToday[i],
           showDivider: i < list.length - 1 && !list[i + 1].isUser,
           onOpenOwnProfile: onOpenOwnProfile,
         ),
       );
-      if (weekly &&
-          rank == LeagueService.promoteCountFor(list.length) &&
-          rank < list.length &&
-          canPromote) {
-        rows.add(const _WeekZoneDivider());
-      }
     }
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(6, 12, 6, 8),
       child: Column(children: rows),
-    );
-  }
-}
-
-class _WeekZoneLabel extends StatelessWidget {
-  final String text;
-  final bool up;
-
-  const _WeekZoneLabel({required this.text, required this.up});
-
-  @override
-  Widget build(BuildContext context) {
-    final color = up ? AppRoles.success : AppRoles.risk;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 6, 12, 2),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: up ? CinematicGlyph.rise : CinematicGlyph.demote,
-            size: AppMetrics.iconSm,
-            accent: color,
-            framed: false,
-          ),
-          const SizedBox(width: 6),
-          Expanded(child: SectionLabel(text, size: 10, color: color)),
-        ],
-      ),
-    );
-  }
-}
-
-class _WeekZoneDivider extends StatelessWidget {
-  const _WeekZoneDivider();
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      child: Row(
-        children: [
-          Expanded(
-            child: Container(
-              height: 1,
-              color: AppRoles.success.withValues(alpha: 0.35),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: CinematicIcon(
-              glyph: CinematicGlyph.rise,
-              size: AppMetrics.chipIcon,
-              accent: AppRoles.success.withValues(alpha: 0.7),
-              framed: false,
-            ),
-          ),
-          Expanded(
-            child: Container(
-              height: 1,
-              color: AppRoles.success.withValues(alpha: 0.35),
-            ),
-          ),
-        ],
-      ),
     );
   }
 }
@@ -2956,27 +2833,21 @@ class _OnlineSheetRow extends StatelessWidget {
 class _StandingRow extends StatelessWidget {
   final LeagueEntry entry;
   final int rank;
-  final bool weeklySteps;
-  final int gapToAbove;
+
+  /// Posições ganhas hoje (0 = sem seta).
+  final int placesUpToday;
   final bool showDivider;
   final VoidCallback? onOpenOwnProfile;
 
   const _StandingRow({
     required this.entry,
     required this.rank,
-    this.weeklySteps = false,
-    this.gapToAbove = 0,
+    this.placesUpToday = 0,
     this.showDivider = false,
     this.onOpenOwnProfile,
   });
 
   Color _stepsTone(AppearanceStyle a, Color? medal) => medal ?? a.text;
-
-  String _gapLabel(AppLocalizations l10n) {
-    if (rank == 1) return l10n.juntosLeader;
-    if (gapToAbove <= 0) return l10n.juntosTie;
-    return l10n.juntosGapToAbove(gapToAbove, rank - 1);
-  }
 
   String? _presenceShort(BuildContext context) {
     if (entry.walkedToday) return context.l10n.commonToday;
@@ -3005,7 +2876,37 @@ class _StandingRow extends StatelessWidget {
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        _RankMark(rank: rank),
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _RankMark(rank: rank),
+            if (placesUpToday > 0)
+              Semantics(
+                label: context.l10n.leagueDriftUp(placesUpToday),
+                excludeSemantics: true,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    CinematicIcon(
+                      glyph: CinematicGlyph.rise,
+                      size: 10,
+                      accent: AppRoles.success,
+                      framed: false,
+                    ),
+                    Text(
+                      '$placesUpToday',
+                      style: AppTypography.label(
+                        size: 10,
+                        letterSpacing: 0,
+                        weight: FontWeight.w900,
+                        color: AppRoles.success,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
         const SizedBox(width: 10),
         UserAvatar(
           name: entry.name,
@@ -3027,11 +2928,10 @@ class _StandingRow extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.title(size: 14, color: a.text),
               ),
-              if (!weeklySteps)
-                Padding(
-                  padding: const EdgeInsets.only(top: 4),
-                  child: _StandingMedalLine(entry: entry),
-                ),
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: _StandingMedalLine(entry: entry),
+              ),
             ],
           ),
         ),
@@ -3048,16 +2948,7 @@ class _StandingRow extends StatelessWidget {
                 color: stepsTone,
               ),
             ),
-            if (weeklySteps)
-              Text(
-                _gapLabel(context.l10n),
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0.2,
-                  color: muted,
-                ),
-              )
-            else if (presence != null)
+            if (presence != null)
               Text(
                 presence,
                 style: AppTypography.label(
@@ -3204,39 +3095,24 @@ class _MedalDisc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 24,
-      height: 24,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Appearance.of(context).cardFill,
-        border: Border.all(color: accent, width: 1.4),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.28),
-            blurRadius: 3,
-            offset: const Offset(0, 1),
+    // A medalha do app em miniatura; "+N" vai gravado num disco de ouro.
+    if (overlay == null) {
+      return MedalArt(metal: accent, size: 24, glyph: glyph);
+    }
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        const MedalArt(metal: AppColors.accent, size: 24),
+        Text(
+          overlay!,
+          style: AppTypography.label(
+            size: 9,
+            letterSpacing: 0,
+            weight: FontWeight.w900,
+            color: AppColors.inkOnAccent,
           ),
-        ],
-      ),
-      child: Center(
-        child: overlay != null
-            ? Text(
-                overlay!,
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0,
-                  weight: FontWeight.w900,
-                  color: AppColors.medalGold,
-                ),
-              )
-            : CinematicIcon(
-                glyph: glyph,
-                size: AppMetrics.chipIcon,
-                accent: accent,
-                framed: false,
-              ),
-      ),
+        ),
+      ],
     );
   }
 }

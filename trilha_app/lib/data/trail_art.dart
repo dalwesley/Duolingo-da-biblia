@@ -1,0 +1,108 @@
+import 'scene_art.dart';
+
+/// Pintura de cada trilha: a faixa no topo do card no caminho do grupo.
+/// Trilha fora da lista fica sem faixa.
+class TrailArt {
+  TrailArt._();
+
+  static const _painted = {
+    'ageu',
+    'amos',
+    'ansiedade',
+    'antropologia',
+    'apocalipse',
+    'atos',
+    'cantares',
+    'cartas-gerais',
+    'cartas-joao',
+    'cartas-paulo',
+    'colossenses',
+    'conhecer-a-deus',
+    'corintios',
+    'cronicas',
+    'daniel',
+    'deuteronomio',
+    'doutrina-de-deus',
+    'eclesiastes',
+    'eclesiologia',
+    'efesios',
+    'entender-a-biblia',
+    'escatologia',
+    'esdras',
+    'ester',
+    'evangelhos',
+    'exodo',
+    'ezequiel',
+    'familia',
+    'filemom',
+    'filipenses',
+    'galatas',
+    'genesis-1-11',
+    'genesis-12-50',
+    'grego',
+    'habacuque',
+    'hebraico',
+    'hebreus',
+    'hermeneutica',
+    'historia-igreja',
+    'igreja-primitiva',
+    'isaias',
+    'jejum',
+    'jeremias',
+    'jo',
+    'joao',
+    'joel',
+    'jonas',
+    'josue',
+    'judas',
+    'juizes',
+    'lamentacoes',
+    'levitico',
+    'linguas-originais',
+    'lucas',
+    'malaquias',
+    'marcos',
+    'mateus',
+    'miqueias',
+    'naum',
+    'neemias',
+    'numeros',
+    'obadias',
+    'oracao',
+    'oseias',
+    'pedro',
+    'periodo-intertestamentario',
+    'pneumatologia',
+    'proverbios',
+    'recomeco',
+    'reforma',
+    'reis',
+    'romanos',
+    'rute',
+    'salmos',
+    'samuel',
+    'sermao-do-monte',
+    'sofonias',
+    'soteriologia',
+    'teologia-biblica',
+    'teologia-sistematica',
+    'tessalonicenses',
+    'tiago',
+    'timoteo',
+    'tito',
+    'vida-crista',
+  };
+
+  static String? of(String slug) => switch (slug) {
+    // Única trilha do grupo: usa a pintura do card do grupo.
+    'cristologia' => 'assets/art/journey_cristologia.jpg',
+    _ when _painted.contains(slug) => 'assets/art/trail_$slug.jpg',
+    _ => null,
+  };
+
+  /// Pintura da cena; sem arte própria, a da trilha.
+  static String? ofScene(String trailSlug, String sceneSlug) =>
+      scenesWithArt.contains(sceneSlug)
+      ? 'assets/art/scene_$sceneSlug.jpg'
+      : of(trailSlug);
+}

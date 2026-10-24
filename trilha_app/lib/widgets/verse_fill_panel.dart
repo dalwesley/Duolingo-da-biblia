@@ -39,6 +39,10 @@ class _VerseFillPanelState extends State<VerseFillPanel>
   late final List<int> _blankIndexes;
   late final List<String> _options;
   final Map<int, String?> _picked = {};
+
+  /// Lacuna → índice da ficha usada. A palavra pode repetir nas opções
+  /// (duas lacunas "seja"): o que apaga é a ficha tocada, não o texto.
+  final Map<int, int> _pickedOption = {};
   bool _revealed = false;
   bool _correct = false;
 
@@ -195,12 +199,15 @@ class _VerseFillPanelState extends State<VerseFillPanel>
 
   int get _filledCount => _blankIndexes.where((i) => _picked[i] != null).length;
 
-  void _select(String option) {
+  void _select(int option) {
     if (_revealed) return;
     final nextBlank = _activeBlank;
     if (nextBlank == null) return;
     ActHaptics.tap();
-    setState(() => _picked[nextBlank] = option);
+    setState(() {
+      _picked[nextBlank] = _options[option];
+      _pickedOption[nextBlank] = option;
+    });
     if (_blankIndexes.every((i) => _picked[i] != null)) {
       _submit();
     }
@@ -232,13 +239,16 @@ class _VerseFillPanelState extends State<VerseFillPanel>
   void _clearSlot(int index) {
     if (_revealed) return;
     ActHaptics.tap();
-    setState(() => _picked.remove(index));
+    setState(() {
+      _picked.remove(index);
+      _pickedOption.remove(index);
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     final accent = widget.accent;
-    final used = _picked.values.whereType<String>().toSet();
+    final used = _pickedOption.values.toSet();
     final active = _activeBlank;
 
     return LayoutBuilder(
@@ -355,16 +365,15 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                                         ? const SizedBox.shrink()
                                         : _WordChip(
                                             label: _options[i],
-                                            used: used.contains(_options[i]),
+                                            used: used.contains(i),
                                             stagger: _stagger,
                                             index: i,
-                                            onTap: used.contains(_options[i])
+                                            onTap: used.contains(i)
                                                 ? () {
-                                                    final slot = _picked.entries
+                                                    final slot = _pickedOption
+                                                        .entries
                                                         .where(
-                                                          (e) =>
-                                                              e.value ==
-                                                              _options[i],
+                                                          (e) => e.value == i,
                                                         )
                                                         .map((e) => e.key)
                                                         .firstOrNull;
@@ -372,7 +381,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                                                       _clearSlot(slot);
                                                     }
                                                   }
-                                                : () => _select(_options[i]),
+                                                : () => _select(i),
                                           ),
                                   ),
                                 ],

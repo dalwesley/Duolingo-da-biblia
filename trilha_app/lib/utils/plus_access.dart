@@ -1,3 +1,4 @@
+import '../data/entry_trails.dart';
 import '../models/trail.dart';
 
 /// Regras puras do Peregrino+: quando o recurso fica aberto.
@@ -14,8 +15,10 @@ class PlusAccess {
 
   /// O card da Bíblia (Antigo e Novo Testamento) é grátis. Sabedoria, os
   /// outros temas, Vida Cristã e Teologia são Peregrino+. As cenas do
-  /// Sermão continuam grátis pela trilha de Mateus.
-  static bool trailIsPlus(Trail trail) => trail.journey.requiresPlus;
+  /// Sermão continuam grátis pela trilha de Mateus. As trilhas de entrada
+  /// (motivo do onboarding e dores) são a porta do app: grátis inteiras.
+  static bool trailIsPlus(Trail trail) =>
+      trail.journey.requiresPlus && !EntryTrails.slugs.contains(trail.slug);
 
   /// A cena pede Plus? Numa trilha Plus, a 1ª cena é amostra grátis.
   static bool missionNeedsPlus(Trail trail, String missionSlug) {
@@ -27,6 +30,11 @@ class PlusAccess {
   static bool isPioneerProduct(String? id) =>
       id != null &&
       (id == pioneerProductId || id.startsWith('$pioneerProductId:'));
+
+  /// Id do produto sem o plano base do Android (`plus_annual:annual` →
+  /// `plus_annual`). Comparar ids de loja sempre por aqui: o pacote da
+  /// oferta traz o plano base e o entitlement às vezes não.
+  static String baseProductId(String id) => id.split(':').first;
 
   /// Aberto para quem tem Plus (assinatura, promoção ou graça do cache).
   ///

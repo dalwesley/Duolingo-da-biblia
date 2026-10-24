@@ -18,6 +18,9 @@ class GenesisModuleScenery extends StatelessWidget {
   final int? missionsTotal;
   final Color? modeAccent;
 
+  /// Pintura da trilha, no card da etapa em curso.
+  final String? art;
+
   /// Marca no canto do cartão da etapa (o selo de personagem dela).
   final Widget? badge;
 
@@ -31,6 +34,7 @@ class GenesisModuleScenery extends StatelessWidget {
     this.missionsDone,
     this.missionsTotal,
     this.modeAccent,
+    this.art,
     this.badge,
   });
 
@@ -38,22 +42,29 @@ class GenesisModuleScenery extends StatelessWidget {
   Widget build(BuildContext context) {
     final accent = modeAccent ?? AppRoles.chrome;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(18, 8, 18, 36),
+      padding: const EdgeInsets.only(top: 8, bottom: 36),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          _ChapterTitleCard(
-            title: moduleTitle,
-            sectionIndex: sectionIndex,
-            theme: theme,
-            highlighted: isActiveChapter,
-            missionsDone: missionsDone,
-            missionsTotal: missionsTotal,
-            accent: accent,
-            badge: badge,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18),
+            child: _ChapterTitleCard(
+              title: moduleTitle,
+              sectionIndex: sectionIndex,
+              theme: theme,
+              highlighted: isActiveChapter,
+              missionsDone: missionsDone,
+              missionsTotal: missionsTotal,
+              accent: accent,
+              art: art,
+              badge: badge,
+            ),
           ),
           SizedBox(height: isActiveChapter ? 28 : 18),
-          child,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6),
+            child: child,
+          ),
         ],
       ),
     );
@@ -69,6 +80,7 @@ class _ChapterTitleCard extends StatelessWidget {
   final int? missionsDone;
   final int? missionsTotal;
   final Color accent;
+  final String? art;
   final Widget? badge;
 
   const _ChapterTitleCard({
@@ -79,6 +91,7 @@ class _ChapterTitleCard extends StatelessWidget {
     this.missionsDone,
     this.missionsTotal,
     required this.accent,
+    this.art,
     this.badge,
   });
 
@@ -89,28 +102,12 @@ class _ChapterTitleCard extends StatelessWidget {
     final pct = total > 0 ? done / total : 0.0;
     final onSky = DifficultyVisuals.onSky(accent);
     final a = Appearance.of(context);
-
-    return AnimatedContainer(
-      duration: AppMotion.gentle,
-      curve: AppMotion.enter,
-      padding: EdgeInsets.fromLTRB(
-        22,
-        highlighted ? 20 : 16,
-        22,
-        highlighted ? 20 : 16,
-      ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(StagePlate.radius),
-        // Painel do visual atual (não o noturno fixo), translúcido sobre o céu.
-        color: a.cardFill.withValues(alpha: highlighted ? 0.78 : 0.55),
-        border: Border.all(
-          color: highlighted
-              ? AppMetrics.accentBorder(color: accent, alpha: 0.55)
-              : a.cardBorder,
-          width: 1,
-        ),
-      ),
-      child: Column(
+    final morning = a.look == AppearanceLook.morning;
+    final veil = morning ? const Color(0xFFF7FBFE) : a.cardFill;
+    final veilAlphas = morning
+        ? const [0.46, 0.20, 0.04]
+        : const [0.72, 0.58, 0.46];
+    final content = Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
@@ -190,11 +187,64 @@ class _ChapterTitleCard extends StatelessWidget {
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w600,
-                color: onSky.withValues(alpha: 0.55),
+                color: onSky,
               ),
             ),
           ],
         ],
+      );
+
+    return AnimatedContainer(
+      duration: AppMotion.gentle,
+      curve: AppMotion.enter,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(StagePlate.radius),
+        color: a.cardFill,
+        border: Border.all(
+          color: highlighted
+              ? AppMetrics.accentBorder(color: accent, alpha: 0.55)
+              : a.cardBorder,
+          width: 1,
+        ),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(StagePlate.radius),
+        child: Stack(
+          children: [
+            if (art != null) ...[
+              Positioned.fill(
+                child: Image.asset(
+                  art!,
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
+                ),
+              ),
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        veil.withValues(alpha: veilAlphas[0]),
+                        veil.withValues(alpha: veilAlphas[1]),
+                        veil.withValues(alpha: veilAlphas[2]),
+                      ],
+                      stops: const [0.0, 0.5, 1.0],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+            Padding(
+              padding: EdgeInsets.fromLTRB(
+                22,
+                highlighted ? 20 : 16,
+                22,
+                highlighted ? 20 : 16,
+              ),
+              child: content,
+            ),
+          ],
+        ),
       ),
     );
   }

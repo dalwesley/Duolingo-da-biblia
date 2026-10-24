@@ -4,6 +4,7 @@ import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../models/user_intent.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -264,6 +265,66 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     );
   }
 
+  /// Folha das trilhas abertas — escolhe uma e abre o mapa dela.
+  void _showOpenTrails(List<Trail> trails, ProgressService progress) {
+    ActHaptics.tap();
+    showAppSheet<void>(
+      context,
+      builder: (sheetContext) => AppSheetPanel(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // O Anan apresenta a escolha, como na abertura da cena.
+            AnanSideSpeech(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    sheetContext.l10n.trailsOpenTitle,
+                    style: AppTypography.title(
+                      size: 18,
+                      height: 1.15,
+                      color: AnanSpeechBubble.ink,
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.xs),
+                  Text(
+                    sheetContext.l10n.trailsOpenSubtitle,
+                    style: AppTypography.body(
+                      size: 14,
+                      color: AnanSpeechBubble.muted,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: AppSpace.lg),
+            Flexible(
+              child: SingleChildScrollView(
+                child: _OpenTrailsList(
+                  trails: trails,
+                  completed: progress.completedMissions,
+                  intentSlug: progress.settings.intent?.entryTrailSlug,
+                  onOpen: (trail) {
+                    Navigator.of(sheetContext).pop();
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => TrailMapScreen(slug: trail.slug),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+            SizedBox(height: MediaQuery.viewPaddingOf(sheetContext).bottom),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return freezeTab(() => _buildTrilhas(context));
@@ -317,6 +378,17 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         ? null
         : TrailProgress.getCurrentMission(active, progress.completedMissions);
     final activeJourney = active?.journey;
+    // Trilhas abertas: a da faixa primeiro, depois as começadas.
+    final openTrails = [
+      ?active,
+      ...TrailProgress.startedTrails(
+        trails,
+        progress.completedMissions,
+        completedOn: progress.missionCompletedOn,
+        borrowed: progress.borrowedMissions,
+        clearedTrailModes: progress.clearedTrailModes,
+      ).where((t) => t.slug != active?.slug),
+    ];
     // Todo card aparece; sem trilha publicada ainda, fica "Em breve"
     // (como Teologia hoje) e vai para o fim da linha — o que já dá para
     // andar vem primeiro, na ordem do catálogo.
@@ -381,15 +453,18 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                         active,
                         progress.completedMissions,
                       ),
-                      atRisk: progress.isStreakAtRisk,
-                      countdown: progress.streakRiskCountdown,
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (_) => TrailMapScreen(slug: active.slug),
-                          ),
-                        );
-                      },
+                      openCount: openTrails.length,
+                      // Mais de uma aberta: escolhe na folha; senão, o mapa.
+                      onTap: openTrails.length > 1
+                          ? () => _showOpenTrails(openTrails, progress)
+                          : () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) =>
+                                      TrailMapScreen(slug: active.slug),
+                                ),
+                              );
+                            },
                     ),
                   ),
                 ),
@@ -467,6 +542,14 @@ extension on _TrailHub {
     _TrailHub.themes => CinematicGlyph.path,
     _TrailHub.life => CinematicGlyph.seed,
     _TrailHub.study => CinematicGlyph.scroll,
+  };
+
+  /// Paisagem pintada do card: esquerda vazia para o texto, luz à direita.
+  String get art => switch (this) {
+    _TrailHub.bible => 'assets/art/hub_biblia.jpg',
+    _TrailHub.themes => 'assets/art/hub_temas.jpg',
+    _TrailHub.life => 'assets/art/hub_vida_crista.jpg',
+    _TrailHub.study => 'assets/art/hub_estudo.jpg',
   };
 }
 
@@ -585,6 +668,7 @@ class _TrailHubGrid extends StatelessWidget {
             if (i > 0) const SizedBox(height: AppSpace.md),
             _PathCard(
               sky: tiles[i].hub.sky,
+              art: tiles[i].hub.art,
               glyph: tiles[i].hub.glyph,
               title: tiles[i].title,
               subtitle: tiles[i].subtitle,
@@ -609,6 +693,9 @@ class _TrailHubGrid extends StatelessWidget {
 /// estoura em telas pequenas nem sobra vazio nas grandes.
 class _PathCard extends StatefulWidget {
   final TrailRealm sky;
+
+  /// Paisagem pintada no lugar do céu animado, quando o card tem uma.
+  final String? art;
   final CinematicGlyph glyph;
   final String? eyebrow;
   final String title;
@@ -626,6 +713,7 @@ class _PathCard extends StatefulWidget {
 
   const _PathCard({
     required this.sky,
+    this.art,
     required this.glyph,
     this.eyebrow,
     required this.title,
@@ -654,7 +742,12 @@ class _PathCardState extends State<_PathCard> {
   Widget build(BuildContext context) {
     final card = widget;
     final visuals = RealmVisuals.of(card.sky);
-    final night = AppearanceStyle.resolve(AppearanceMode.night);
+    final page = Appearance.of(context);
+    // No Claro o texto senta no papel. Médio e Escuro continuam com tinta clara
+    // sobre o véu da pintura.
+    final ink = page.look == AppearanceLook.morning
+        ? page
+        : AppearanceStyle.resolve(AppearanceMode.night);
     final plusTag =
         !card.locked &&
         card.plus &&
@@ -682,7 +775,7 @@ class _PathCardState extends State<_PathCard> {
             card.eyebrow!,
             size: 10,
             maxLines: 1,
-            color: night.textSecondary,
+            color: ink.textSecondary,
           ),
           const SizedBox(height: 2),
         ],
@@ -696,7 +789,7 @@ class _PathCardState extends State<_PathCard> {
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.display(
                   size: 24,
-                  color: night.text,
+                  color: ink.text,
                   height: 1.05,
                 ),
               ),
@@ -717,37 +810,31 @@ class _PathCardState extends State<_PathCard> {
       subtitle,
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
-      style: AppTypography.body(size: 14, color: night.textSecondary),
+      style: AppTypography.body(
+        size: 14,
+        color: page.look == AppearanceLook.morning
+            ? AppColors.text
+            : ink.textSecondary,
+      ),
     );
-    final footer = Row(
-      children: [
-        Flexible(
-          // Com barra, o rótulo fica inteiro; a barra cede.
-          flex: card.locked ? 1 : 0,
-          child: Text(
-            progressLabel,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w700,
-              color: card.locked ? night.textSecondary : night.text,
-            ),
-          ),
-        ),
-        if (!card.locked) ...[
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: AppProgressBar(
-              value: card.ratio,
-              height: 6,
-              color: visuals.accent,
-              trackColor: visuals.accent.withValues(alpha: 0.28),
-            ),
-          ),
-        ],
-      ],
+    final footer = Text(
+      progressLabel,
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+      style: AppTypography.body(
+        size: 13,
+        weight: FontWeight.w700,
+        color: card.locked ? ink.textSecondary : ink.text,
+      ),
     );
+    final bar = card.locked
+        ? null
+        : AppProgressBar(
+            value: card.ratio,
+            height: 6,
+            color: visuals.accent,
+            trackColor: visuals.accent.withValues(alpha: 0.28),
+          );
 
     return Semantics(
       button: true,
@@ -774,6 +861,7 @@ class _PathCardState extends State<_PathCard> {
           curve: AppMotion.enter,
           child: _JourneyCardFace(
             realm: card.sky,
+            art: card.art,
             accent: visuals.accent,
             locked: card.locked,
             featured: card.featured,
@@ -792,12 +880,32 @@ class _PathCardState extends State<_PathCard> {
                           Expanded(child: header),
                         ],
                       ),
-                      if (subtitle.isNotEmpty) ...[
-                        const SizedBox(height: AppSpace.md),
-                        description(5),
-                      ],
-                      const SizedBox(height: AppSpace.md),
-                      footer,
+                      // O texto para antes da pintura. O véu abre na direita,
+                      // como nos cards da lista.
+                      LayoutBuilder(
+                        builder: (context, constraints) {
+                          return Padding(
+                            padding: EdgeInsets.only(
+                              right: constraints.maxWidth * 0.32,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (subtitle.isNotEmpty) ...[
+                                  const SizedBox(height: AppSpace.md),
+                                  description(5),
+                                ],
+                                const SizedBox(height: AppSpace.md),
+                                footer,
+                                if (bar != null) ...[
+                                  const SizedBox(height: AppSpace.sm),
+                                  bar,
+                                ],
+                              ],
+                            ),
+                          );
+                        },
+                      ),
                     ],
                   )
                 : Row(
@@ -810,12 +918,16 @@ class _PathCardState extends State<_PathCard> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             header,
+                            const SizedBox(height: 2),
+                            footer,
                             if (subtitle.isNotEmpty) ...[
-                              const SizedBox(height: 4),
+                              const SizedBox(height: AppSpace.sm),
                               description(2),
                             ],
-                            const SizedBox(height: AppSpace.md),
-                            footer,
+                            if (bar != null) ...[
+                              const SizedBox(height: AppSpace.sm),
+                              bar,
+                            ],
                           ],
                         ),
                       ),
@@ -935,6 +1047,7 @@ class _TrailDoorScreen extends StatelessWidget {
                     final whole = journey.categories.length > 1;
                     return _PathCard(
                       sky: journey.realm,
+                      art: 'assets/art/journey_${journey.name}.jpg',
                       glyph: whole
                           ? visuals.glyph
                           : TrailVisuals.forCategory(
@@ -1054,16 +1167,17 @@ class _NowPlayingStrip extends StatefulWidget {
   final Trail trail;
   final Mission mission;
   final ({int done, int total, int pct}) progress;
-  final bool atRisk;
-  final String countdown;
   final VoidCallback onTap;
+
+  /// Trilhas abertas (com esta). Com 2 ou mais o card vira "Suas trilhas
+  /// abertas" e o toque abre a escolha.
+  final int openCount;
 
   const _NowPlayingStrip({
     required this.trail,
     required this.mission,
     required this.progress,
-    required this.atRisk,
-    required this.countdown,
+    this.openCount = 1,
     required this.onTap,
   });
 
@@ -1093,17 +1207,30 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
     final a = Appearance.of(context);
     final visuals = TrailVisuals.forTrail(widget.trail);
     final accent = visuals.accent;
-    final label = widget.atRisk
-        ? context.l10n.trailsStreakAtRisk(widget.countdown)
+    final many = widget.openCount > 1;
+    final label = many
+        ? context.l10n.trailsOpenTitle
         : context.l10n.trailsInProgress;
-    final labelColor = widget.atRisk ? AppRoles.risk : accent;
     final p = widget.progress;
+    final title = many
+        ? context.l10n.trailsOpenMore(
+            widget.trail.localizedTitle,
+            widget.openCount - 1,
+          )
+        : widget.mission.localizedTitle;
+    final subtitle = many
+        ? context.l10n.trailsOpenSubtitle
+        : context.l10n.trailsLabeledScenesOf(
+            widget.trail.localizedTitle,
+            p.done,
+            p.total,
+          );
 
     return Semantics(
       button: true,
-      label: context.l10n.trailsContinueSemantics(
-        widget.mission.localizedTitle,
-      ),
+      label: many
+          ? context.l10n.trailsOpenTitle
+          : context.l10n.trailsContinueSemantics(widget.mission.localizedTitle),
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
         onTapUp: (_) => setState(() => _pressed = false),
@@ -1163,10 +1290,15 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              SectionLabel(label, size: 10, color: labelColor),
+                              SectionLabel(
+                                label,
+                                size: 10,
+                                color: accent,
+                                maxLines: 1,
+                              ),
                               const SizedBox(height: 4),
                               Text(
-                                widget.mission.localizedTitle,
+                                title,
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.title(
@@ -1176,11 +1308,7 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                               ),
                               const SizedBox(height: 2),
                               Text(
-                                context.l10n.trailsLabeledScenesOf(
-                                  widget.trail.localizedTitle,
-                                  p.done,
-                                  p.total,
-                                ),
+                                subtitle,
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.body(
@@ -1188,13 +1316,16 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                                   color: a.textSecondary,
                                 ),
                               ),
-                              const SizedBox(height: 10),
-                              AppProgressBar(
-                                value: p.total == 0 ? 0 : p.done / p.total,
-                                height: 6,
-                                color: accent,
-                                trackColor: accent.withValues(alpha: 0.18),
-                              ),
+                              // Várias trilhas: o progresso fica na folha.
+                              if (!many) ...[
+                                const SizedBox(height: 10),
+                                AppProgressBar(
+                                  value: p.total == 0 ? 0 : p.done / p.total,
+                                  height: 6,
+                                  color: accent,
+                                  trackColor: accent.withValues(alpha: 0.18),
+                                ),
+                              ],
                             ],
                           ),
                         ),
@@ -1261,10 +1392,119 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
   }
 }
 
-/// Fundo do card: o céu da área (o mesmo dos pôsteres antigos), escurecido
-/// embaixo para o texto. Só o card onde a pessoa está anima o céu.
+/// Trilhas abertas na folha: uma linha por trilha, com o progresso; toque
+/// abre o mapa dela.
+class _OpenTrailsList extends StatelessWidget {
+  final List<Trail> trails;
+  final List<String> completed;
+  final ValueChanged<Trail> onOpen;
+
+  /// Trilha do motivo do onboarding — ganha o selo "Seu motivo".
+  final String? intentSlug;
+
+  const _OpenTrailsList({
+    required this.trails,
+    required this.completed,
+    required this.onOpen,
+    this.intentSlug,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    // Direto na folha, sem card: o painel já é a superfície.
+    return Column(
+      children: [
+        for (var i = 0; i < trails.length; i++) ...[
+          if (i > 0)
+            const ListDivider(indent: AppMetrics.leadingIcon + AppSpace.md),
+          _row(context, a, trails[i]),
+        ],
+      ],
+    );
+  }
+
+  Widget _row(BuildContext context, AppearanceStyle a, Trail trail) {
+    final visuals = TrailVisuals.forTrail(trail);
+    final p = TrailProgress.getLiveProgress(trail, completed);
+    return Semantics(
+      button: true,
+      child: InkWell(
+        onTap: () {
+          ActHaptics.tap();
+          onOpen(trail);
+        },
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: visuals.glyph,
+                size: AppMetrics.leadingIcon,
+                accent: visuals.accent,
+                glowing: false,
+              ),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            trail.localizedTitle,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.title(size: 14, color: a.text),
+                          ),
+                        ),
+                        if (trail.slug == intentSlug) ...[
+                          const SizedBox(width: AppSpace.sm),
+                          SoftBadge(
+                            text: context.l10n.settingsIntentLabel,
+                            accent: visuals.accent,
+                          ),
+                        ],
+                      ],
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      context.l10n.trailsScenesOf(p.done, p.total),
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    AppProgressBar(
+                      value: p.total == 0 ? 0 : p.done / p.total,
+                      height: 4,
+                      color: visuals.accent,
+                      trackColor: visuals.accent.withValues(alpha: 0.18),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpace.md),
+              ListChevron(color: a.textFaint),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Fundo do card: paisagem pintada, ou o céu da área quando não há arte.
+/// No Escuro a pintura fica como foi feita, com véu preto. No Claro e no
+/// Médio a tinta da pintura não muda — só o véu acompanha o papel do céu,
+/// para o card sentar na página sem lavar a ilustração de azul.
 class _JourneyCardFace extends StatelessWidget {
   final TrailRealm realm;
+  final String? art;
   final Color accent;
   final bool locked;
   final bool featured;
@@ -1274,6 +1514,7 @@ class _JourneyCardFace extends StatelessWidget {
 
   const _JourneyCardFace({
     required this.realm,
+    this.art,
     required this.accent,
     required this.locked,
     required this.featured,
@@ -1284,6 +1525,10 @@ class _JourneyCardFace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final page = Appearance.of(context);
+    if (art case final asset? when page.look != AppearanceLook.night) {
+      return _skyPlate(page, asset);
+    }
     final night = AppearanceStyle.resolve(AppearanceMode.night);
     return GlassCard(
       padding: EdgeInsets.zero,
@@ -1296,34 +1541,170 @@ class _JourneyCardFace extends StatelessWidget {
         child: Stack(
           fit: StackFit.passthrough,
           children: [
-            Positioned.fill(
-              child: RealmWorldAtmosphere(
-                realm: realm,
-                animate: animate && featured && !locked,
-                locked: locked,
-                featured: featured,
-              ),
-            ),
-            const Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color(0x5906080C),
-                      Color(0x8C06080C),
-                      Color(0xE606080C),
-                    ],
-                    stops: [0.0, 0.42, 1.0],
+            if (art case final asset?) ...[
+              // A luz da pintura fica à direita; o card mostra esse lado.
+              Positioned.fill(
+                child: Opacity(
+                  opacity: locked ? 0.45 : 1,
+                  child: Image.asset(
+                    asset,
+                    fit: BoxFit.cover,
+                    alignment: _artFrame(asset),
                   ),
                 ),
               ),
-            ),
+              // Escurece da esquerda, onde ficam glifo e título, até a luz.
+              const Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        Color(0xE606080C),
+                        Color(0x9906080C),
+                        Color(0x2606080C),
+                      ],
+                      stops: [0.0, 0.5, 1.0],
+                    ),
+                  ),
+                ),
+              ),
+              // E o pé, onde a descrição e a barra correm pela largura toda.
+              const Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Color(0x0006080C), Color(0xB306080C)],
+                      stops: [0.35, 1.0],
+                    ),
+                  ),
+                ),
+              ),
+            ] else ...[
+              Positioned.fill(
+                child: RealmWorldAtmosphere(
+                  realm: realm,
+                  animate: animate && featured && !locked,
+                  locked: locked,
+                  featured: featured,
+                ),
+              ),
+              const Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color(0x5906080C),
+                        Color(0x8C06080C),
+                        Color(0xE606080C),
+                      ],
+                      stops: [0.0, 0.42, 1.0],
+                    ),
+                  ),
+                ),
+              ),
+            ],
             Padding(padding: padding, child: child),
           ],
         ),
       ),
+    );
+  }
+
+  /// Claro e Médio: a ilustração fica na cor em que foi pintada.
+  /// No Claro ela entra pela direita e o papel do céu guarda o texto.
+  /// No Médio um véu da cor do card cobre a esquerda, e a luz da pintura
+  /// à direita permanece sem filtro.
+  Widget _skyPlate(AppearanceStyle page, String asset) {
+    final morning = page.look == AppearanceLook.morning;
+    // Sem opacidade: no "Em breve" o azul do card vazava pela pintura
+    // e o véu parecia ir até a borda.
+    final image = Image.asset(
+      asset,
+      fit: BoxFit.cover,
+      alignment: _artFrame(asset),
+    );
+    final scene = morning ? _paperWindow(image) : _afternoonVeil(page, image);
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      tint: accent,
+      elevated: true,
+      color: morning ? const Color(0xFFE7F0F8) : page.cardFill,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(
+          AppMetrics.cardRadius - AppMetrics.cardBorderWidth,
+        ),
+        child: Stack(
+          fit: StackFit.passthrough,
+          children: [
+            Positioned.fill(child: scene),
+            Padding(padding: padding, child: child),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Os cards da lista foram pintados com a luz à direita.
+  /// No caminho, o assunto (rede, lâmpada, cidade) está à esquerda e a
+  /// ponta direita é sempre um caminho ao anoitecer — por isso dois
+  /// cards pareciam a mesma imagem.
+  Alignment _artFrame(String asset) => asset.contains('/journey_')
+      ? const Alignment(-0.55, 0)
+      : Alignment.centerRight;
+
+  /// Véu forte no ícone e caindo para a direita. No pé, um branco cobre
+  /// a descrição — é a linha que entrava na pintura.
+  Widget _paperWindow(Widget image) {
+    const mist = Color(0xFFE7F0F8);
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        _veilFromIcon(image, mist, const [0.92, 0.90, 0.46, 0.04]),
+        const DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color(0x00FFFFFF),
+                Color(0x00FFFFFF),
+                Color(0xF5FFFFFF),
+                Color(0xFFFFFFFF),
+              ],
+              stops: [0.0, 0.58, 0.82, 1.0],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _afternoonVeil(AppearanceStyle page, Widget image) {
+    return _veilFromIcon(image, page.cardFill, const [0.98, 0.97, 0.50, 0.0]);
+  }
+
+  /// O pico fica na faixa do ícone (~22% da largura) e o véu diminui dali
+  /// até a luz da pintura.
+  Widget _veilFromIcon(Widget image, Color veil, List<double> alphas) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        image,
+        DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                for (final alpha in alphas) veil.withValues(alpha: alpha),
+              ],
+              stops: const [0.0, 0.22, 0.55, 1.0],
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

@@ -20,7 +20,6 @@ class JourneyStationCard extends StatelessWidget {
   final Color accent;
   final Color glow;
   final VoidCallback? onTap;
-  final Widget? leading;
   final String? currentSubtitle;
   final String? statusLine;
   final int done;
@@ -33,12 +32,19 @@ class JourneyStationCard extends StatelessWidget {
   /// Glifo da trilha / cena — identidade à esquerda.
   final CinematicGlyph? glyph;
 
+  /// Pintura da trilha, em faixa no topo do card.
+  final String? art;
+
   /// Numeral romano grande no fundo (I, II…).
   final String? watermark;
 
   /// Cena que pede o Peregrino+: o botão, na largura do card, diz
   /// "Continuar" / "com o Peregrino+" (o toque leva ao paywall).
   final bool plusLocked;
+
+  /// Modo sob o título e a barra no pé, mesmo fora da estação em curso.
+  /// Usado nas cenas de cada trilha.
+  final bool showMeter;
 
   const JourneyStationCard({
     super.key,
@@ -48,7 +54,6 @@ class JourneyStationCard extends StatelessWidget {
     required this.accent,
     required this.glow,
     this.onTap,
-    this.leading,
     this.currentSubtitle,
     this.statusLine,
     this.done = 0,
@@ -56,8 +61,10 @@ class JourneyStationCard extends StatelessWidget {
     this.semanticsLabel,
     this.chrome,
     this.glyph,
+    this.art,
     this.watermark,
     this.plusLocked = false,
+    this.showMeter = false,
   });
 
   @override
@@ -65,6 +72,8 @@ class JourneyStationCard extends StatelessWidget {
     final isCurrent = state == JourneyNodeState.current;
     final isDone = state == JourneyNodeState.completed;
     final isLocked = state == JourneyNodeState.locked;
+    // Fechada não mostra barra: "Falta 1 cena" fazia parecer aberta.
+    final meter = isCurrent || (showMeter && !isLocked);
     final isSoon = state == JourneyNodeState.soon;
     final a = Appearance.of(context);
     final tone = chrome;
@@ -80,20 +89,23 @@ class JourneyStationCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              if (leading != null) ...[leading!, const SizedBox(width: 6)],
               // Rótulo inteiro numa linha; o estado à direita é que encolhe
               // (dividir a largura meio a meio quebrava "TRILHA III").
               // Com Peregrino+, o nome mora no botão — aqui ele virava
               // "Peregr…".
-              SectionLabel(
-                eyebrow,
-                size: 10,
+              Text(
+                eyebrow.toUpperCase(),
                 maxLines: 1,
-                color: isCurrent
-                    ? ink
-                    : quiet
-                    ? Color.lerp(a.textFaint, accent, 0.4)!
-                    : a.textFaint,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 1.3,
+                  color: isCurrent
+                      ? ink
+                      : quiet
+                      ? Color.lerp(a.textFaint, accent, 0.4)!
+                      : a.textFaint,
+                ).copyWith(height: 1),
               ),
               if (isCurrent && !plusLocked) ...[
                 const SizedBox(width: 6),
@@ -103,25 +115,28 @@ class JourneyStationCard extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.right,
-                    style: AppTypography.label(size: 11, color: ink),
+                    style: AppTypography.label(
+                      size: 11,
+                      color: ink,
+                    ).copyWith(height: 1),
                   ),
                 ),
               ],
             ],
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: 1),
           Text(
             title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: AppTypography.display(
               size: isCurrent ? 20 : (quiet ? 16 : 18),
-              height: 1.1,
+              height: 1.0,
               color: quiet ? a.textSecondary : a.text,
             ),
           ),
-          const SizedBox(height: 4),
-          if (isCurrent && currentSubtitle != null)
+          if (meter && currentSubtitle != null) ...[
+            const SizedBox(height: 2),
             Text(
               currentSubtitle!,
               maxLines: 1,
@@ -132,10 +147,12 @@ class JourneyStationCard extends StatelessWidget {
                 color: ink,
               ),
             ),
-          if (!isCurrent)
+          ],
+          if (!meter) ...[
+            const SizedBox(height: 4),
             Text(
               statusLine ?? _defaultStatus(context, isLocked, isSoon, isDone),
-              maxLines: quiet ? 2 : 2,
+              maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: AppTypography.body(
                 size: quiet ? 11 : 12,
@@ -143,37 +160,6 @@ class JourneyStationCard extends StatelessWidget {
                 height: 1.25,
                 color: quiet ? Color.lerp(a.textFaint, accent, 0.32)! : ink,
               ),
-            ),
-          if (isCurrent && total > 0) ...[
-            const SizedBox(height: 8),
-            AppProgressBar(
-              value: done / total,
-              color: ink,
-              trackColor: a.progressTrack,
-              height: 6,
-            ),
-            const SizedBox(height: 6),
-            Text(
-              left > 0
-                  ? context.l10n.journeyScenesLeft(left)
-                  : (statusLine ?? context.l10n.trailsScenesOf(done, total)),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 12,
-                weight: FontWeight.w700,
-                color: a.text,
-              ),
-            ),
-          ],
-          if (isCurrent && !plusLocked) ...[
-            const SizedBox(height: 10),
-            CopperCta(
-              label: context.l10n.journeyPlay,
-              dense: true,
-              decorative: true,
-              showGlow: false,
-              expanded: true,
             ),
           ],
         ],
@@ -204,11 +190,12 @@ class JourneyStationCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 if (glyph != null) ...[
                   _GlyphPlate(
-                    glyph: glyph!,
+                    // Fechada: o cadeado no lugar do glifo da cena.
+                    glyph: isLocked ? CinematicGlyph.lock : glyph!,
                     size: plateSize,
                     ink: quiet ? accent : ink,
                     quiet: quiet,
@@ -238,16 +225,83 @@ class JourneyStationCard extends StatelessWidget {
                 ),
               ),
             ],
+            if (meter && total > 0) ...[
+              const Spacer(),
+              Text(
+                left > 0
+                    ? context.l10n.journeyScenesLeft(left)
+                    : (statusLine ?? context.l10n.trailsScenesOf(done, total)),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w700,
+                  color: a.text,
+                ),
+              ),
+              const SizedBox(height: 2),
+              AppProgressBar(
+                value: done / total,
+                color: ink,
+                trackColor: a.progressTrack,
+                height: 6,
+              ),
+            ],
           ],
         ),
       ],
     );
 
+    // A pintura é o card, não uma faixa. O véu segura o texto e a cena
+    // aparece no card inteiro.
+    Widget withArt(Widget content) {
+      if (art == null) return content;
+      final morning = a.look == AppearanceLook.morning;
+      final veil = morning ? const Color(0xFFF7FBFE) : a.cardFill;
+      // Trilha em curso ou já feita: o véu claro cobre demais a pintura.
+      final alphas = morning && (isCurrent || isDone)
+          ? const [0.34, 0.14, 0.04]
+          : isLocked
+          ? const [0.82, 0.70, 0.60]
+          : const [0.55, 0.28, 0.16];
+      final painting = Image.asset(
+        art!,
+        fit: BoxFit.cover,
+        alignment: Alignment.center,
+      );
+      return Stack(
+        fit: StackFit.expand,
+        children: [
+          Positioned.fill(
+            // Fechada: pintura sem cor, apagada sob o véu.
+            child: isLocked
+                ? ColorFiltered(colorFilter: _grayscale, child: painting)
+                : painting,
+          ),
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    veil.withValues(alpha: alphas[0]),
+                    veil.withValues(alpha: alphas[1]),
+                    veil.withValues(alpha: alphas[2]),
+                  ],
+                  stops: const [0.0, 0.55, 1.0],
+                ),
+              ),
+            ),
+          ),
+          content,
+        ],
+      );
+    }
+
     final pad = EdgeInsets.fromLTRB(
       quiet ? 12 : 14,
       quiet ? 10 : 12,
       quiet ? 12 : 14,
-      quiet ? 10 : 12,
+      meter && total > 0 ? 8 : (quiet ? 10 : 12),
     );
 
     final Widget card;
@@ -275,21 +329,24 @@ class JourneyStationCard extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(AppRadii.lg),
             child: Stack(
+              fit: StackFit.expand,
               children: [
+                withArt(
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      14,
+                      isCurrent ? 14 : 12,
+                      14,
+                      meter && total > 0 ? 8 : 12,
+                    ),
+                    child: body,
+                  ),
+                ),
                 Positioned(
                   top: 0,
                   left: 18,
                   right: 18,
                   child: CardFilament(color: ink, height: 2),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(
-                    14,
-                    isCurrent ? 14 : 12,
-                    14,
-                    isCurrent ? 12 : 12,
-                  ),
-                  child: body,
                 ),
               ],
             ),
@@ -303,6 +360,7 @@ class JourneyStationCard extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
           child: Stack(
+            fit: StackFit.expand,
             children: [
               Positioned(
                 left: 0,
@@ -324,7 +382,7 @@ class JourneyStationCard extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(padding: pad, child: body),
+              withArt(Padding(padding: pad, child: body)),
             ],
           ),
         ),
@@ -341,33 +399,26 @@ class JourneyStationCard extends StatelessWidget {
             child: beacon,
           );
 
-    return Opacity(
-      opacity: quiet ? 0.62 : 1,
-      child: Semantics(
-        label: semanticsLabel ?? title,
-        button: onTap != null,
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            final room = constraints.maxWidth;
-            // No tablet a coluna é mais larga: o teto do celular corta
-            // o título ("Deuteronômio") e deixa o card minúsculo no vão.
-            final wide = room >= 440;
-            final fraction = isCurrent
-                ? 0.72
-                : quiet
-                ? 0.48
-                : 0.56;
-            final cap = wide
-                ? (isCurrent ? 320.0 : (quiet ? 248.0 : 280.0))
-                : (isCurrent ? 220.0 : (quiet ? 152.0 : 176.0));
-            final floor = wide
-                ? (quiet ? 200.0 : 220.0)
-                : (quiet ? 128.0 : 148.0);
-            final preferred = math.min(cap, math.max(floor, room * fraction));
-            final width = math.min(preferred, constraints.maxWidth);
-            return SizedBox(width: width, child: tappable);
-          },
-        ),
+    return Semantics(
+      label: semanticsLabel ?? title,
+      button: onTap != null,
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final room = constraints.maxWidth;
+          // No tablet a coluna é mais larga: o teto do celular corta
+          // o título ("Deuteronômio") e deixa o card minúsculo no vão.
+          // Todas as estações usam o tamanho da trilha em curso.
+          final wide = room >= 440;
+          const fraction = 0.72;
+          final cap = wide ? 320.0 : 220.0;
+          final floor = wide ? 220.0 : 148.0;
+          final preferred = math.min(cap, math.max(floor, room * fraction));
+          final width = math.min(preferred, constraints.maxWidth);
+          // Altura medida no card em curso (título, modo, barra, cenas).
+          // O Peregrino+ soma o botão e passa desse piso.
+          final height = isCurrent && plusLocked ? 182.0 : 129.0;
+          return SizedBox(width: width, height: height, child: tappable);
+        },
       ),
     );
   }
@@ -385,6 +436,13 @@ class JourneyStationCard extends StatelessWidget {
     return '';
   }
 }
+
+const _grayscale = ColorFilter.matrix(<double>[
+  0.2126, 0.7152, 0.0722, 0, 0, //
+  0.2126, 0.7152, 0.0722, 0, 0, //
+  0.2126, 0.7152, 0.0722, 0, 0, //
+  0, 0, 0, 1, 0,
+]);
 
 class _GlyphPlate extends StatelessWidget {
   final CinematicGlyph glyph;
@@ -486,6 +544,7 @@ class _CurrentBeaconState extends State<_CurrentBeacon>
     // O halo é uma camada parada. O pulso só muda a opacidade — o desfoque
     // do BoxShadow não se recalcula a cada frame.
     return Stack(
+      fit: StackFit.expand,
       clipBehavior: Clip.none,
       children: [
         Positioned.fill(

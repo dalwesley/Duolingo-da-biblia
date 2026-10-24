@@ -9,6 +9,51 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get appReportCategoryAccount => 'Account and progress';
+
+  @override
+  String get appReportCategoryBug => 'Something doesn\'t work';
+
+  @override
+  String get appReportCategoryOther => 'Other';
+
+  @override
+  String get appReportCategorySubscription => 'Subscription and purchases';
+
+  @override
+  String get appReportCategorySuggestion => 'Suggestion';
+
+  @override
+  String get appReportCommentHint => 'What you were doing and what went wrong…';
+
+  @override
+  String get appReportHintAccount => 'Sign-in, sync, or lost progress';
+
+  @override
+  String get appReportHintBug =>
+      'A screen froze, a button doesn\'t respond, something vanishes or closes';
+
+  @override
+  String get appReportHintOther => 'Something else that doesn\'t fit above';
+
+  @override
+  String get appReportHintSubscription =>
+      'Peregrino+, billing, or restoring a purchase';
+
+  @override
+  String get appReportHintSuggestion => 'An idea to make Stway better';
+
+  @override
+  String get appReportIntro =>
+      'Tell us what happened. The app version and device go along so we can reproduce it.';
+
+  @override
+  String get appReportSent => 'Report sent. Thank you.';
+
+  @override
+  String get appReportTitle => 'Report a problem';
+
+  @override
   String get authAccountExists =>
       'An account already exists with this email using another sign-in method.';
 
@@ -135,6 +180,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bibleNewTestament => 'New Testament';
+
+  @override
+  String get bibleNoteDelete => 'Delete note';
+
+  @override
+  String get bibleNoteHint => 'What does this verse say to you? (optional)';
+
+  @override
+  String get bibleNoteSave => 'Save note';
+
+  @override
+  String get bibleNoteSaved => 'Note saved';
+
+  @override
+  String get bibleNoteTagDeus => 'God speaking';
+
+  @override
+  String get bibleNoteTagFamilia => 'Family';
+
+  @override
+  String get bibleNoteTagJesus => 'Jesus speaking';
+
+  @override
+  String get bibleNoteTagMandamento => 'Commandment';
+
+  @override
+  String get bibleNoteTagOracao => 'Prayer';
+
+  @override
+  String get bibleNoteTagPessoal => 'Personal';
+
+  @override
+  String get bibleNoteTagProfecia => 'Prophecy';
+
+  @override
+  String get bibleNoteTagPromessa => 'Promise';
+
+  @override
+  String get bibleNoteTheme => 'Theme';
 
   @override
   String get bibleOldTestament => 'Old Testament';
@@ -331,6 +415,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bibleVerseListenFromHereDetail => 'Read aloud, verse by verse';
+
+  @override
+  String get bibleVerseNote => 'Note';
+
+  @override
+  String get bibleVerseNoted => 'Noted';
 
   @override
   String get bibleVerseSave => 'Save';
@@ -734,9 +824,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chestLampadaTitle => 'Lit lamp';
 
   @override
-  String get chestLocked => 'Finish today\'s scene to open it';
-
-  @override
   String get chestLockedShort => 'Locked';
 
   @override
@@ -745,6 +832,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chestMapaTitle => 'Map of the day';
+
+  @override
+  String get chestOfferBody =>
+      'You finished today\'s scene. Open it and see what the path kept for you.';
+
+  @override
+  String get chestOfferTitle => 'Your daily chest is here';
 
   @override
   String get chestOpen => 'Open the chest';
@@ -766,27 +860,28 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chestPassoTitle => 'Steady step';
 
   @override
-  String get chestReady => 'Today\'s reward is ready';
+  String get chestRarityCommon => 'Common';
+
+  @override
+  String get chestRarityRare => 'Rare';
+
+  @override
+  String get chestRarityUltra => 'Ultra rare';
+
+  @override
+  String get chestRarityUncommon => 'Uncommon';
+
+  @override
+  String get chestRarityVeryRare => 'Very rare';
 
   @override
   String get chestReadyShort => 'Ready to open';
 
   @override
-  String get chestRevealStarts => 'The reveal starts now.';
-
-  @override
   String get chestRewards => 'Rewards';
 
   @override
-  String get chestSheetTitle => 'Today\'s streak holds a reward.';
-
-  @override
-  String chestTierToday(String tier) {
-    return 'Today\'s $tier';
-  }
-
-  @override
-  String get chestVeryRare => 'Very rare';
+  String get chestTapHint => 'Tap fast to open it';
 
   @override
   String get chestVozMessage =>
@@ -1969,6 +2064,233 @@ class AppLocalizationsEn extends AppLocalizations {
   String get entryMissionDorRecome05Title => 'Those who mourn';
 
   @override
+  String get entryMissionEntradaBiblia01CentralInsight =>
+      'The story begins with God';
+
+  @override
+  String get entryMissionEntradaBiblia01HookNote =>
+      'The whole Bible starts here: one God, a world made by him.';
+
+  @override
+  String get entryMissionEntradaBiblia01Intro =>
+      'The story begins with God making a good world.';
+
+  @override
+  String get entryMissionEntradaBiblia01Objective =>
+      'See creation as the starting point of the whole Bible.';
+
+  @override
+  String get entryMissionEntradaBiblia01Title => 'Creation';
+
+  @override
+  String get entryMissionEntradaBiblia02CentralInsight =>
+      'The break begins with distrust';
+
+  @override
+  String get entryMissionEntradaBiblia02HookNote =>
+      'The Bible\'s problem begins with doubting God\'s word.';
+
+  @override
+  String get entryMissionEntradaBiblia02Intro =>
+      'One question from the serpent, and everything breaks.';
+
+  @override
+  String get entryMissionEntradaBiblia02Objective =>
+      'Understand the fall as the problem the rest of the Bible resolves.';
+
+  @override
+  String get entryMissionEntradaBiblia02Title => 'The fall';
+
+  @override
+  String get entryMissionEntradaBiblia03CentralInsight =>
+      'God answers with a promise';
+
+  @override
+  String get entryMissionEntradaBiblia03HookNote =>
+      'After the fall, God does not give up: he starts the answer with one family.';
+
+  @override
+  String get entryMissionEntradaBiblia03Intro =>
+      'God calls one man to bless every family.';
+
+  @override
+  String get entryMissionEntradaBiblia03Objective =>
+      'See in Abraham the start of God\'s plan for every people.';
+
+  @override
+  String get entryMissionEntradaBiblia03Title => 'Promise';
+
+  @override
+  String get entryMissionEntradaBiblia04CentralInsight =>
+      'Salvation comes from the Lord';
+
+  @override
+  String get entryMissionEntradaBiblia04HookNote =>
+      'The exodus becomes the Bible\'s pattern of salvation: God rescues those who cannot save themselves.';
+
+  @override
+  String get entryMissionEntradaBiblia04Intro =>
+      'Between the army and the sea, God opens a way.';
+
+  @override
+  String get entryMissionEntradaBiblia04Objective =>
+      'Understand the exodus as the picture of salvation the Bible repeats.';
+
+  @override
+  String get entryMissionEntradaBiblia04Title => 'Rescue';
+
+  @override
+  String get entryMissionEntradaBiblia05CentralInsight =>
+      'Someone carries the guilt in our place';
+
+  @override
+  String get entryMissionEntradaBiblia05HookNote =>
+      'Centuries before Jesus, Isaiah describes a Servant who carries the people\'s guilt.';
+
+  @override
+  String get entryMissionEntradaBiblia05Intro =>
+      'A prophet sees someone wounded in the place of others.';
+
+  @override
+  String get entryMissionEntradaBiblia05Objective =>
+      'See how the prophets point to a Savior who suffers.';
+
+  @override
+  String get entryMissionEntradaBiblia05Title => 'The Servant';
+
+  @override
+  String get entryMissionEntradaBiblia06CentralInsight =>
+      'Death does not have the last word';
+
+  @override
+  String get entryMissionEntradaBiblia06HookNote =>
+      'Everything before meets here: Jesus defeats the death that came in with the fall.';
+
+  @override
+  String get entryMissionEntradaBiblia06Intro =>
+      'The tomb is empty. The story turns.';
+
+  @override
+  String get entryMissionEntradaBiblia06Objective =>
+      'Understand the resurrection as the center of the Bible\'s story.';
+
+  @override
+  String get entryMissionEntradaBiblia06Title => 'Resurrection';
+
+  @override
+  String get entryMissionEntradaBiblia07CentralInsight =>
+      'God makes all things new';
+
+  @override
+  String get entryMissionEntradaBiblia07HookNote =>
+      'The Bible opens with a garden and closes with a city. God remakes what the fall broke.';
+
+  @override
+  String get entryMissionEntradaBiblia07Intro =>
+      'The story ends where it began: God with his people.';
+
+  @override
+  String get entryMissionEntradaBiblia07Objective =>
+      'See the end of the Bible as the restoring of the beginning.';
+
+  @override
+  String get entryMissionEntradaBiblia07Title => 'New creation';
+
+  @override
+  String get entryMissionEntradaDeus01CentralInsight =>
+      'God comes before everything';
+
+  @override
+  String get entryMissionEntradaDeus01HookNote =>
+      'The Bible\'s first sentence is not about us: it is about God, who creates.';
+
+  @override
+  String get entryMissionEntradaDeus01Intro =>
+      'Before everything, God. The Bible starts with who he is.';
+
+  @override
+  String get entryMissionEntradaDeus01Objective =>
+      'See that knowing God starts with him, not with us.';
+
+  @override
+  String get entryMissionEntradaDeus01Title => 'In the beginning, God';
+
+  @override
+  String get entryMissionEntradaDeus02CentralInsight =>
+      'God makes himself known by name';
+
+  @override
+  String get entryMissionEntradaDeus02HookNote =>
+      'Moses asks who is sending him. God answers with a name that depends on no one.';
+
+  @override
+  String get entryMissionEntradaDeus02Intro =>
+      'At the bush, God tells a fugitive his name.';
+
+  @override
+  String get entryMissionEntradaDeus02Objective =>
+      'Understand what the name I AM reveals about God.';
+
+  @override
+  String get entryMissionEntradaDeus02Title => 'I AM';
+
+  @override
+  String get entryMissionEntradaDeus03CentralInsight => 'God is holy';
+
+  @override
+  String get entryMissionEntradaDeus03HookNote =>
+      'God is not a bigger version of us. Holiness is what sets him apart from everything.';
+
+  @override
+  String get entryMissionEntradaDeus03Intro =>
+      'Isaiah sees the Lord on the throne, and the temple shakes.';
+
+  @override
+  String get entryMissionEntradaDeus03Objective =>
+      'See why God\'s holiness changes whoever comes near him.';
+
+  @override
+  String get entryMissionEntradaDeus03Title => 'Holy, holy, holy';
+
+  @override
+  String get entryMissionEntradaDeus04CentralInsight =>
+      'The Holy One cares up close';
+
+  @override
+  String get entryMissionEntradaDeus04HookNote =>
+      'David calls the God of the throne a shepherd. The Holy One does not stay far away.';
+
+  @override
+  String get entryMissionEntradaDeus04Intro =>
+      'The holy God also cares up close.';
+
+  @override
+  String get entryMissionEntradaDeus04Objective =>
+      'Connect God\'s holiness to his care in everyday life.';
+
+  @override
+  String get entryMissionEntradaDeus04Title => 'The Lord is my shepherd';
+
+  @override
+  String get entryMissionEntradaDeus05CentralInsight =>
+      'In Jesus, God came near';
+
+  @override
+  String get entryMissionEntradaDeus05HookNote =>
+      'John starts like Genesis: “In the beginning”. Now the Creator comes to live among us.';
+
+  @override
+  String get entryMissionEntradaDeus05Intro =>
+      'In Jesus, God comes closer than ever.';
+
+  @override
+  String get entryMissionEntradaDeus05Objective =>
+      'See in Jesus the clearest way to know God.';
+
+  @override
+  String get entryMissionEntradaDeus05Title => 'The Word became flesh';
+
+  @override
   String get entryTrailAnsiedadeDescription =>
       'Five scenes to cast tomorrow on the Father — then continue in the canon.';
 
@@ -1977,6 +2299,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get entryTrailAnsiedadeTitle => 'Anxiety';
+
+  @override
+  String get entryTrailConhecerADeusDescription =>
+      'Five scenes from the Creator to the Word made flesh — then on to the Gospels.';
+
+  @override
+  String get entryTrailConhecerADeusModuleTitle => 'God comes near';
+
+  @override
+  String get entryTrailConhecerADeusTitle => 'Know God';
+
+  @override
+  String get entryTrailEntenderABibliaDescription =>
+      'Seven scenes from creation to new creation — and back to Genesis 1–11.';
+
+  @override
+  String get entryTrailEntenderABibliaModuleTitle => 'One story';
+
+  @override
+  String get entryTrailEntenderABibliaTitle => 'Understand the Bible';
 
   @override
   String get entryTrailRecomecoDescription =>
@@ -2866,6 +3208,116 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeWordWord => 'Word';
 
   @override
+  String get intentBadgeCurrent => 'Current';
+
+  @override
+  String get intentBadgeHere => 'You are here';
+
+  @override
+  String get intentBannerHint => 'Tap to change reason';
+
+  @override
+  String intentBannerSemantics(String name, String tagline) {
+    return 'Your reason: $name. $tagline.';
+  }
+
+  @override
+  String intentCtaChoose(String name) {
+    return 'Choose $name';
+  }
+
+  @override
+  String intentCtaContinue(String name) {
+    return 'Continue with $name';
+  }
+
+  @override
+  String get intentHabitBlurb =>
+      'One step a day: the streak is born from coming back tomorrow.';
+
+  @override
+  String get intentHabitSkill1 => 'Return';
+
+  @override
+  String get intentHabitSkill2 => 'Persist';
+
+  @override
+  String get intentHabitSkill3 => 'Grow';
+
+  @override
+  String get intentKnowBlurb =>
+      'Draw near: who He is, and what that changes in you.';
+
+  @override
+  String get intentKnowSkill1 => 'Draw near';
+
+  @override
+  String get intentKnowSkill2 => 'Worship';
+
+  @override
+  String get intentKnowSkill3 => 'Trust';
+
+  @override
+  String get intentNoneTagline => 'Tap to choose';
+
+  @override
+  String get intentNoneTitle => 'Not chosen yet';
+
+  @override
+  String intentOpensTrail(String trail) {
+    return 'Opens: $trail';
+  }
+
+  @override
+  String intentOrdinal(String ordinal) {
+    return 'Reason $ordinal';
+  }
+
+  @override
+  String intentOrdinalBadge(String ordinal, String badge) {
+    return 'Reason $ordinal · $badge';
+  }
+
+  @override
+  String get intentPeaceBlurb =>
+      'A breath in the middle of the day: cast anxiety and keep going.';
+
+  @override
+  String get intentPeaceSkill1 => 'Breathe';
+
+  @override
+  String get intentPeaceSkill2 => 'Cast';
+
+  @override
+  String get intentPeaceSkill3 => 'Rest';
+
+  @override
+  String get intentRuleFootnote =>
+      'Sets your entry trail · then the app follows the last one you walked';
+
+  @override
+  String get intentSheetEyebrow => 'Your reason';
+
+  @override
+  String get intentSheetTitle => 'What brings you here?';
+
+  @override
+  String get intentSwitch => 'Change';
+
+  @override
+  String get intentUnderstandBlurb =>
+      'One story: from the beginning to the thread that holds the Bible.';
+
+  @override
+  String get intentUnderstandSkill1 => 'Read';
+
+  @override
+  String get intentUnderstandSkill2 => 'Connect';
+
+  @override
+  String get intentUnderstandSkill3 => 'Keep';
+
+  @override
   String get inviteAcceptCta => 'Accept invite';
 
   @override
@@ -3070,16 +3522,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get juntosCaravanMonthBody =>
-      'Everything counts: scenes, daily tasks, chests and companion. It resets on the 1st — newcomers can lead too.';
-
-  @override
-  String get juntosCaravanMonthStep1 => 'Study\na scene';
-
-  @override
-  String get juntosCaravanMonthStep2 => 'Add up\nsteps';
-
-  @override
-  String get juntosCaravanMonthStep3 => 'See the\npath';
+      'Every new scene adds steps. The green arrow shows who moved up today. It resets on the 1st — newcomers can lead too.';
 
   @override
   String get juntosCaravanMonthTitle => 'Who walked the most this month?';
@@ -3110,22 +3553,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get juntosCaravanTimeout =>
       'The caravan took too long to respond. Pull to refresh.';
-
-  @override
-  String get juntosCaravanWeekBody =>
-      'This is where it happens. Steps from new scenes, Monday to Sunday, decide who moves up and who moves down.';
-
-  @override
-  String get juntosCaravanWeekStep1 => 'Steps\nthis week';
-
-  @override
-  String get juntosCaravanWeekStep2 => 'Who moves\nup';
-
-  @override
-  String get juntosCaravanWeekStep3 => 'Who moves\ndown';
-
-  @override
-  String get juntosCaravanWeekTitle => 'The weekly ranking';
 
   @override
   String juntosChallengeExplainerBody(String reward) {
@@ -3236,21 +3663,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'Couldn\'t decline the invite. Try again.';
 
   @override
-  String juntosDemoteZone(String tier) {
-    return 'Demotion zone · $tier';
-  }
-
-  @override
   String get juntosEditRoomTitle => 'Edit group';
 
   @override
   String juntosFirstMilestone(int count) {
     return 'First milestone: $count days together';
-  }
-
-  @override
-  String juntosGapToAbove(int gap, int place) {
-    return '$gap behind #$place';
   }
 
   @override
@@ -3326,6 +3743,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String get juntosLeaveRoomTitle => 'Leave the group?';
 
   @override
+  String juntosLevelSteady(int count, int total, String next) {
+    return '$count of $total steady weeks to $next';
+  }
+
+  @override
+  String juntosLevelTitle(String tier) {
+    return 'Your level · $tier';
+  }
+
+  @override
+  String get juntosLevelTop => 'You reached the top level';
+
+  @override
+  String juntosLevelWeek(int count, int goal) {
+    return 'This week: $count of $goal new scenes';
+  }
+
+  @override
+  String get juntosLevelWeekDone => 'Steady week secured';
+
+  @override
   String juntosMilestoneLeft(int count, int next) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -3362,11 +3800,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get juntosOrInviteCompanion => 'Or invite a companion';
-
-  @override
-  String juntosPromoteZone(String tier) {
-    return 'Promotion zone · $tier';
-  }
 
   @override
   String get juntosRoomAllStudied => 'The whole group studied this week.';
@@ -3570,13 +4003,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get juntosTabGroups => 'Groups';
 
   @override
-  String get juntosThisMonth => 'This month';
-
-  @override
   String get juntosThisWeek => 'This week';
-
-  @override
-  String get juntosTie => 'Tie';
 
   @override
   String get juntosTogetherLegend => 'together';
@@ -3627,11 +4054,12 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get juntosWeekRankingEmpty =>
-      'The ranking starts when someone else joins the caravan.';
+  String juntosWeekGain(int count) {
+    return '+$count this week';
+  }
 
   @override
-  String get juntosWeekRankingEmptyTitle => 'Still just you';
+  String get juntosWeekHighlight => 'Top this week';
 
   @override
   String juntosWeekTogetherBonus(int count) {
@@ -3670,6 +4098,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get languageSemanticsHint => 'Swipe or tap to choose the language';
 
   @override
+  String get languageSheetTitle => 'Which language should we speak?';
+
+  @override
   String get languageShortDevice => 'Auto';
 
   @override
@@ -3693,30 +4124,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String leagueDemotedBody(int rank, String tier) {
-    return 'You finished #$rank. In the $tier level, you can climb again.';
-  }
-
-  @override
-  String leagueDemotedTitle(String tier) {
-    return 'You dropped to $tier';
-  }
-
-  @override
-  String leagueDriftDown(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Dropped $count places today',
-      one: 'Dropped 1 place today',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get leagueDriftStable => 'Position steady today';
-
-  @override
   String leagueDriftUp(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -3733,11 +4140,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String leagueLevelUpBodyRank(int rank, String tier) {
-    return 'Finished #$rank · now you walk in the\n$tier level';
-  }
-
-  @override
   String get leagueLevelUpTitle => 'You leveled up';
 
   @override
@@ -3746,33 +4148,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String leaguePromotedRankLine(int rank, String tier) {
-    return 'Finished #$rank · now in the $tier level';
-  }
-
-  @override
   String leaguePromotedTitle(String tier) {
     return 'You rose to $tier';
-  }
-
-  @override
-  String leagueRiskBodyClosing(int rank, String tier) {
-    return 'You\'re #$rank in the $tier level. The caravan closes soon.';
-  }
-
-  @override
-  String leagueRiskBodyHold(int rank, String tier) {
-    return 'You\'re #$rank in the $tier level. One step can hold your place.';
-  }
-
-  @override
-  String leagueRiskNear(String closes) {
-    return 'Near the drop · $closes';
-  }
-
-  @override
-  String leagueRiskZone(String closes) {
-    return 'Drop zone · $closes';
   }
 
   @override
@@ -3800,11 +4177,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String leagueSeenTodayWalked(String date) {
     return 'Seen today · walked $date';
-  }
-
-  @override
-  String leagueStayedBody(int rank, String tier) {
-    return 'You finished #$rank in the $tier level. New week — keep walking.';
   }
 
   @override
@@ -3851,9 +4223,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get leagueWalkedToday => 'Walked today';
-
-  @override
-  String get leagueWeekEndedTitle => 'Caravan week closed';
 
   @override
   String get legalPrivacy => 'Privacy';
@@ -6087,7 +6456,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallRestore => 'Restore purchase';
 
   @override
+  String get paywallRestoreDone => 'Subscription restored. Welcome back!';
+
+  @override
   String get paywallRestoreFailed => 'Couldn\'t restore the purchase.';
+
+  @override
+  String get paywallRestoreNone =>
+      'No active subscription on this store account.';
 
   @override
   String paywallSave(int percent) {
@@ -6845,7 +7221,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profileInTheWordWhisper =>
-      'Verses you save and the ones you\'ve sent.';
+      'Verses you save, annotate and the ones you\'ve sent.';
 
   @override
   String get profileLampHelp =>
@@ -6858,6 +7234,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String profileMonthRank(int rank) {
     return '#$rank in this month\'s ranking';
   }
+
+  @override
+  String get profileNotes => 'Notes';
+
+  @override
+  String get profileNotesAll => 'All';
 
   @override
   String profileOfSevenDays(int count) {
@@ -8069,6 +8451,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsInCloud => 'In the cloud';
 
   @override
+  String get settingsIntentHint =>
+      'Sets your entry trail. After that, the app follows the last trail you walked.';
+
+  @override
+  String get settingsIntentLabel => 'Your reason';
+
+  @override
+  String get settingsIntentNone => 'Not chosen yet';
+
+  @override
   String settingsLastBackup(String date) {
     return 'Last backup · $date';
   }
@@ -8131,6 +8523,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsReplayIntroSubtitle => 'The opening walkthrough, again';
+
+  @override
+  String get settingsReportProblem => 'Report a problem';
+
+  @override
+  String get settingsReportProblemSubtitle =>
+      'Something didn\'t work? Let us know';
 
   @override
   String get settingsRestoreFromClipboard => 'Restore from clipboard';
@@ -8221,6 +8620,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsSupport => 'Help keep it going';
 
   @override
+  String get settingsTabAccountAbout => 'Account & about';
+
+  @override
+  String get settingsTabPreferences => 'Preferences';
+
+  @override
   String get settingsTextSize => 'Text size';
 
   @override
@@ -8228,6 +8633,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsThemeAuto => 'Automatic';
+
+  @override
+  String get settingsThemeBlurbAuto =>
+      'Morning, afternoon and night follow the time of your day.';
+
+  @override
+  String get settingsThemeBlurbDark =>
+      'Night sky: less glare for reading before bed.';
+
+  @override
+  String get settingsThemeBlurbLight =>
+      'Light paper and a morning sky — easy reading by day.';
+
+  @override
+  String get settingsThemeBlurbMedium =>
+      'Blue half-light: easy on the eyes without dimming the screen.';
 
   @override
   String get settingsThemeCaptionAuto => 'Changes with the time of day';
@@ -8257,10 +8678,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsThemeMedium => 'Medium';
 
   @override
+  String settingsThemeOrdinal(String ordinal) {
+    return 'Theme $ordinal';
+  }
+
+  @override
   String get settingsThemeSemantics => 'Screen theme';
 
   @override
   String get settingsThemeSemanticsHint => 'Tap or swipe to choose';
+
+  @override
+  String get settingsThemeSheetTitle => 'How should the app look?';
 
   @override
   String get settingsTitle => 'Settings';
@@ -8758,6 +9187,17 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String trailsOpenMore(String first, int count) {
+    return '$first and $count more';
+  }
+
+  @override
+  String get trailsOpenSubtitle => 'Choose where to pick up.';
+
+  @override
+  String get trailsOpenTitle => 'Your open trails';
+
+  @override
   String get trailsPlusHeading => 'Peregrino+';
 
   @override
@@ -9093,20 +9533,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get widgetBackToTrail => 'Back to the trail';
 
   @override
-  String get widgetBehindCaravan => 'Falling behind the caravan — walk today';
-
-  @override
-  String widgetDaysInRow(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count days in a row',
-      one: '1 day in a row',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get widgetGoalDone => 'Goal complete';
 
   @override
@@ -9124,17 +9550,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String widgetScenesLeft(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count scenes left',
-      one: '1 scene left',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String widgetScenesLeftToday(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -9144,6 +9559,12 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get widgetShortAway => 'Come back today';
+
+  @override
+  String get widgetShortSafe => 'Done today';
 
   @override
   String get widgetStartStreak => 'Start your streak';
@@ -9163,4 +9584,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get widgetTrailWaitsTomorrow => 'The trail waits tomorrow';
+
+  @override
+  String get widgetWeekdayInitials => 'M,T,W,T,F,S,S';
 }

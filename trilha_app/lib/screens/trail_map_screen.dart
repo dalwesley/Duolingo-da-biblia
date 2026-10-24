@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/entry_trails.dart';
+import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
 import '../services/plus_log.dart';
 import '../services/subscription_service.dart';
@@ -123,36 +124,31 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
   }
 
   /// Abre com a cena atual à vista — não nas já concluídas lá em cima.
+  /// Salto no primeiro frame, sem animar: a tela não rola sozinha.
   void _maybeScrollToActive(int moduleIndex) {
     if (_didAutoScroll) return;
     _didAutoScroll = true;
-    final still = MediaQuery.of(context).disableAnimations;
-    // Espera o 1º layout assentar — animar no primeiro frame compete com paint.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Future<void>.delayed(const Duration(milliseconds: 280), () async {
-        if (!mounted || !_scrollController.hasClients) return;
-        // Etapa longe do topo ainda não foi montada: chega perto antes.
-        if (moduleIndex > 0 && _currentKey.currentContext == null) {
-          final target = (160.0 + moduleIndex * 520).clamp(
+      if (!mounted || !_scrollController.hasClients) return;
+      // Etapa longe do topo ainda não foi montada: chega perto antes.
+      if (moduleIndex > 0 && _currentKey.currentContext == null) {
+        _scrollController.jumpTo(
+          (160.0 + moduleIndex * 520).clamp(
             0.0,
             _scrollController.position.maxScrollExtent,
-          );
-          await _scrollController.animateTo(
-            target,
-            duration: still ? const Duration(milliseconds: 1) : AppMotion.scene,
-            curve: AppMotion.enter,
-          );
-        }
-        final current = _currentKey.currentContext;
-        if (!mounted || current == null) return;
-        await Scrollable.ensureVisible(
-          current,
-          alignment: 0.4,
-          duration: still ? Duration.zero : AppMotion.slow,
-          curve: AppMotion.enter,
+          ),
         );
-      });
+        WidgetsBinding.instance.addPostFrameCallback((_) => _revealCurrent());
+        return;
+      }
+      _revealCurrent();
     });
+  }
+
+  void _revealCurrent() {
+    final current = _currentKey.currentContext;
+    if (!mounted || current == null) return;
+    Scrollable.ensureVisible(current, alignment: 0.4);
   }
 
   TrailRealm get _realm => _trail != null
@@ -404,6 +400,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             startGlobalIndex: start,
                             allSlugs: allSlugs,
                             completedMissions: completed,
+                            trailSlug: trail.slug,
+                            modeLabel: modeName,
                             theme: moduleTheme,
                             modeAccent: modeAccent,
                             onMissionTap: (slug) => Navigator.of(
@@ -438,6 +436,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             missionsDone: modDone,
                             missionsTotal: mod.missions.length,
                             modeAccent: modeAccent,
+                            art: isActive ? TrailArt.of(trail.slug) : null,
                             badge: _sealMarkFor(progress, trail, mod),
                             child: path,
                           );

@@ -11,6 +11,7 @@ import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'anan_speech.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'stage_plate.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
@@ -1765,18 +1766,18 @@ class _InsightView extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Expanded(
-            child: StagePlate(
-              accent: accent,
-              child: Center(
-                child: SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(),
+            child: Center(
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: AnanSpeech(
+                  face: CloudFace.sucesso,
                   child: Text(
                     text,
                     textAlign: TextAlign.center,
                     style: AppTypography.title(
                       size: 20,
                       height: 1.32,
-                      color: accent,
+                      color: AnanSpeechBubble.ink,
                     ),
                   ),
                 ),

@@ -7,7 +7,8 @@ import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Nav inferior — chrome neutro ([AppRoles.chrome]) igual em todas as abas.
+/// Nav inferior — cada aba tem seu tom (`AppRoles.nav*`), aceso só na aba
+/// ativa (pílula com gradiente e brilho); as inativas ficam neutras.
 ///
 /// Glifo sem poço (`framed: false`) dentro da pílula da aba ativa; o poço
 /// emoldurado fica só na marca da [TopBar]. Mesmo raio da cápsula da TopBar
@@ -35,16 +36,36 @@ class MainBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+    final style = appearance ?? Appearance.of(context);
     final tabs = [
-      (glyph: CinematicGlyph.home, label: l10n.commonToday),
-      (glyph: CinematicGlyph.path, label: l10n.navTrails),
-      (glyph: CinematicGlyph.book, label: l10n.navBible),
-      (glyph: CinematicGlyph.people, label: l10n.navTogether),
-      (glyph: CinematicGlyph.tune, label: l10n.settingsTitle),
+      (
+        glyph: CinematicGlyph.home,
+        label: l10n.commonToday,
+        tone: AppRoles.navToday,
+      ),
+      (
+        glyph: CinematicGlyph.path,
+        label: l10n.navTrails,
+        tone: AppRoles.navTrails,
+      ),
+      (
+        glyph: CinematicGlyph.book,
+        label: l10n.navBible,
+        tone: AppRoles.navBible,
+      ),
+      (
+        glyph: CinematicGlyph.people,
+        label: l10n.navTogether,
+        tone: AppRoles.navTogether,
+      ),
+      (
+        glyph: CinematicGlyph.tune,
+        label: l10n.settingsTitle,
+        tone: style.chrome,
+      ),
     ];
 
     final bottomInset = MediaQuery.of(context).padding.bottom;
-    final style = appearance ?? Appearance.of(context);
     final wide = MediaQuery.sizeOf(context).width > contentMaxWidth;
     final side = wide ? AppSpace.screen : AppSpace.md;
 
@@ -76,7 +97,7 @@ class MainBottomNav extends StatelessWidget {
               children: List.generate(tabs.length, (i) {
                 final active = currentIndex == i;
                 final tab = tabs[i];
-                final tone = style.chrome;
+                final tone = style.ink(tab.tone);
                 final color = active ? tone : style.iconMuted;
 
                 return Expanded(
@@ -111,17 +132,33 @@ class MainBottomNav extends StatelessWidget {
                                 width: active ? 56 : 40,
                                 height: 32,
                                 decoration: BoxDecoration(
-                                  color: active
-                                      ? tone.withValues(alpha: 0.18)
-                                      : Colors.transparent,
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      tone.withValues(alpha: active ? 0.32 : 0),
+                                      tone.withValues(alpha: active ? 0.12 : 0),
+                                    ],
+                                  ),
                                   borderRadius: BorderRadius.circular(
                                     AppRadii.pill,
                                   ),
                                   border: Border.all(
-                                    color: active
-                                        ? tone.withValues(alpha: 0.55)
-                                        : Colors.transparent,
+                                    color: tone.withValues(
+                                      alpha: active ? 0.6 : 0,
+                                    ),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: tone.withValues(
+                                        alpha: active
+                                            ? (style.onDark ? 0.35 : 0.22)
+                                            : 0,
+                                      ),
+                                      blurRadius: 16,
+                                      spreadRadius: -2,
+                                    ),
+                                  ],
                                 ),
                                 child: Stack(
                                   clipBehavior: Clip.none,

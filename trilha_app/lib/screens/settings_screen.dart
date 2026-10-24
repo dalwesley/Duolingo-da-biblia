@@ -1,5 +1,3 @@
-import 'dart:math' as math;
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,7 +8,8 @@ import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
-import '../l10n/l10n_global.dart';
+import '../models/difficulty.dart';
+import '../models/user_intent.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -28,7 +27,10 @@ import '../services/sync_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_visuals.dart';
+import '../utils/trail_progress.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/app_report_sheet.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../utils/layout_utils.dart';
@@ -38,7 +40,10 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/juntos_chrome.dart';
+import '../widgets/appearance_selector.dart';
 import '../widgets/language_flag.dart';
+import '../widgets/language_selector.dart';
+import '../widgets/intent_selector.dart';
 import '../widgets/mode_selector.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/reset_progress_sheet.dart';
@@ -108,6 +113,10 @@ class _SettingsScreenState extends State<SettingsScreen>
   late final AnimationController _entrance;
   String? _versionLabel;
   bool _checkingUpdate = false;
+
+  /// 0 = Preferências (o que se ajusta), 1 = Conta e sobre.
+  int _tab = 0;
+  final _scroll = ScrollController();
   final _sectionKeys = {
     for (final s in _SettingsSection.values) s: GlobalKey(),
   };
@@ -175,6 +184,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   @override
   void dispose() {
     _entrance.dispose();
+    _scroll.dispose();
     _nameController.removeListener(_onNameChanged);
     _nameController.dispose();
     super.dispose();
@@ -233,6 +243,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         final fixed = topBarStaysFixed(widget.topBar);
         final topInset = MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
         final list = ListView(
+          controller: _scroll,
           padding: EdgeInsets.fromLTRB(
             0,
             fixed
@@ -261,67 +272,11 @@ class _SettingsScreenState extends State<SettingsScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  _reveal(0, _passportCard(progress, a)),
-
-                  // Sua jornada — como você estuda e em que ritmo.
-                  const SizedBox(height: AppSpace.xl),
-                  _reveal(2, _studyModeCard(progress, a)),
-                  const SizedBox(height: AppSpace.md),
-                  _reveal(
-                    3,
-                    _groupedCard(
-                      a,
-                      title: context.l10n.settingsRhythmTitle,
-                      subtitle: context.l10n.settingsRhythmSubtitle,
-                      children: [
-                        _RhythmPath(progress: progress),
-                        const _SettingsDivider(),
-                        _fieldLabel(a, context.l10n.settingsStreakGoalLabel),
-                        const SizedBox(height: AppSpace.xs),
-                        _fieldHint(a, context.l10n.settingsStreakGoalHint),
-                        const SizedBox(height: AppSpace.md),
-                        _streakGoalPicker(progress),
-                      ],
-                    ),
-                  ),
-
-                  // Neste aparelho — o que se vê e o que se ouve.
-                  const SizedBox(height: AppSpace.xl),
-                  _reveal(
-                    5,
-                    KeyedSubtree(
-                      key: _sectionKeys[_SettingsSection.aparencia],
-                      child: _appearanceCard(progress, a),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  _reveal(6, _languageCard(progress, a)),
-                  const SizedBox(height: AppSpace.md),
-                  _reveal(
-                    6,
-                    KeyedSubtree(
-                      key: _sectionKeys[_SettingsSection.lembretes],
-                      child: _remindersCard(progress, a),
-                    ),
-                  ),
-
-                  // Conta e dados — o dia a dia em cima; o que apaga, à
-                  // parte e por último.
-                  const SizedBox(height: AppSpace.xl),
-                  _reveal(
-                    8,
-                    KeyedSubtree(
-                      key: _sectionKeys[_SettingsSection.conta],
-                      child: _accountCard(a, sync),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  _reveal(8, _dangerCard(a, progress)),
-
-                  // Sobre — o Stway em poucas linhas; versão e termos no pé.
-                  const SizedBox(height: AppSpace.xl),
-                  _reveal(9, _aboutBlock(a)),
-                  _reveal(10, _footer(a)),
+                  _reveal(0, _tabs()),
+                  const SizedBox(height: AppSpace.lg),
+                  ..._tab == 0
+                      ? _preferencesTab(progress, a)
+                      : _accountAboutTab(progress, sync, a),
                 ],
               ),
             ),
@@ -345,6 +300,137 @@ class _SettingsScreenState extends State<SettingsScreen>
         );
       },
     );
+  }
+
+  Widget _tabs() {
+    return AppSegmentedTabs(
+      index: _tab,
+      onChanged: (i) {
+        if (i == _tab) return;
+        ActHaptics.tap();
+        setState(() => _tab = i);
+        // A outra aba começa do topo, não no meio do que se rolou aqui.
+        if (_scroll.hasClients) _scroll.jumpTo(0);
+      },
+      items: [
+        (
+          label: context.l10n.settingsTabPreferences,
+          glyph: CinematicGlyph.tune,
+          mark: null,
+          alert: false,
+        ),
+        (
+          label: context.l10n.settingsTabAccountAbout,
+          glyph: CinematicGlyph.shield,
+          mark: null,
+          alert: false,
+        ),
+      ],
+    );
+  }
+
+  /// Preferências: como você estuda, em que ritmo, e o que se vê e ouve.
+  List<Widget> _preferencesTab(ProgressService progress, AppearanceStyle a) {
+    final mode = _currentStudyMode(progress);
+    final intent = progress.settings.intent;
+    return [
+      // Sua jornada — ritmo, modo e motivo.
+      _reveal(
+        2,
+        _groupedCard(
+          a,
+          title: context.l10n.settingsRhythmTitle,
+          subtitle: context.l10n.settingsRhythmSubtitle,
+          children: [
+            _RhythmPath(progress: progress),
+            const _SettingsDivider(),
+            _fieldLabel(a, context.l10n.settingsStreakGoalLabel),
+            const SizedBox(height: AppSpace.xs),
+            _fieldHint(a, context.l10n.settingsStreakGoalHint),
+            const SizedBox(height: AppSpace.md),
+            _streakGoalPicker(progress),
+            const _SettingsDivider(compact: true),
+            _navRow(
+              a,
+              context.l10n.modeSheetEyebrow,
+              mode.labelPt,
+              glyph: DifficultyVisuals.glyphFor(mode),
+              accent: DifficultyVisuals.accentFor(mode),
+              onTap: () => showModeSheet(
+                context,
+                trailSlug: _genesisTrailSlug,
+                trailTitle: context.l10n.settingsGenesisTitle,
+                missionSlugs: _genesisMissionSlugs,
+                tint: DifficultyVisuals.accentFor(mode),
+              ),
+            ),
+            const _SettingsDivider(compact: true),
+            _navRow(
+              a,
+              context.l10n.settingsIntentLabel,
+              intent?.title ?? context.l10n.settingsIntentNone,
+              glyph: intent?.glyph ?? CinematicGlyph.path,
+              accent: intent?.accent,
+              onTap: () => showIntentSheet(context, tint: intent?.accent),
+            ),
+          ],
+        ),
+      ),
+
+      // Neste aparelho — o que se vê e o que se ouve.
+      const SizedBox(height: AppSpace.xl),
+      _reveal(
+        3,
+        KeyedSubtree(
+          key: _sectionKeys[_SettingsSection.aparencia],
+          child: _appearanceCard(progress, a),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        5,
+        KeyedSubtree(
+          key: _sectionKeys[_SettingsSection.lembretes],
+          child: _remindersCard(progress, a),
+        ),
+      ),
+    ];
+  }
+
+  /// Modo ativo da trilha de referência (Gênesis 1–11).
+  TrailDifficulty _currentStudyMode(ProgressService progress) {
+    final id =
+        TrailProgress.resolvedDifficultyId(
+          _genesisTrailSlug,
+          progress.difficultyForTrail(_genesisTrailSlug),
+        ) ??
+        TrailDifficulty.semente.id;
+    return TrailDifficulty.fromId(id) ?? TrailDifficulty.semente;
+  }
+
+  /// Conta e sobre: quem você é e seus dados; o que apaga, à parte; o
+  /// Stway em poucas linhas, versão e termos no pé.
+  List<Widget> _accountAboutTab(
+    ProgressService progress,
+    SyncService sync,
+    AppearanceStyle a,
+  ) {
+    return [
+      _reveal(1, _passportCard(progress, a)),
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        KeyedSubtree(
+          key: _sectionKeys[_SettingsSection.conta],
+          child: _accountCard(a, sync),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      _reveal(3, _dangerCard(a, progress)),
+      const SizedBox(height: AppSpace.xl),
+      _reveal(4, _aboutBlock(a)),
+      _reveal(5, _footer(a)),
+    ];
   }
 
   /// Lembrete e sons: só os interruptores. Ligar o lembrete abre a
@@ -385,25 +471,6 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   /// Idioma da interface. O conteúdo (trilhas, Bíblia) ainda é só pt-BR.
-  Widget _languageCard(ProgressService progress, AppearanceStyle a) {
-    final l10n = context.l10n;
-    final current = progress.settings.language;
-    return _groupedCard(
-      a,
-      title: l10n.languageTitle,
-      subtitle: l10n.languageHint,
-      children: [
-        _LanguageSwitch(
-          selected: current,
-          onChanged: (lang) {
-            if (lang == current) return;
-            progress.updateSettings(progress.settings.copyWith(language: lang));
-          },
-        ),
-      ],
-    );
-  }
-
   Future<void> _pickReminderHour(ProgressService progress) async {
     ActHaptics.tap();
     final hour = await showReminderHourSheet(context);
@@ -440,8 +507,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  /// Mesmas escolhas do onboarding: 7 / 14 / 30 dias.
-  static const _streakGoals = [7, 14, 30];
+  /// Escolhas do onboarding: 3 dias (quem veio criar sequência), 7 / 14 / 30.
+  static const _streakGoals = [3, 7, 14, 30];
 
   Widget _streakGoalPicker(ProgressService progress) {
     final current = progress.settings.streakGoal;
@@ -488,26 +555,37 @@ class _SettingsScreenState extends State<SettingsScreen>
     (1.3, context.l10n.settingsFontExtra),
   ];
 
-  /// Modo de estudo: o mesmo banner do mapa da trilha ([ModeBanner]).
-  Widget _studyModeCard(ProgressService progress, AppearanceStyle a) {
-    return ModeBanner(
-      trailSlug: _genesisTrailSlug,
-      trailTitle: context.l10n.settingsGenesisTitle,
-      missionSlugs: _genesisMissionSlugs,
-    );
-  }
-
-  /// Céu e tamanho do texto direto no card — muda e já se vê, sem sheet.
+  /// Tema e idioma abrem os portais (mesma forma do modo e do motivo);
+  /// o tamanho do texto muda direto no card.
   Widget _appearanceCard(ProgressService progress, AppearanceStyle a) {
+    final mode = progress.settings.appearanceMode;
+    final lang = progress.settings.language;
     return _groupedCard(
       a,
       title: context.l10n.settingsAppearanceTitle,
       children: [
-        _fieldLabel(a, context.l10n.settingsThemeLabel),
-        const SizedBox(height: AppSpace.xs),
-        _fieldHint(a, context.l10n.settingsThemeHint),
-        const SizedBox(height: AppSpace.md),
-        _skyPicker(progress),
+        _navRow(
+          a,
+          context.l10n.settingsThemeLabel,
+          '${mode.label} · ${mode.caption(context.l10n)}',
+          glyph: mode.glyph,
+          accent: mode.accent,
+          onTap: () => showAppearanceSheet(context),
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.languageTitle,
+          lang.label(context.l10n),
+          glyph: CinematicGlyph.flag,
+          leading: SizedBox(
+            width: AppMetrics.leadingIcon,
+            child: Center(
+              child: LanguageFlag.forAppLanguage(lang, width: 26, height: 18),
+            ),
+          ),
+          onTap: () => showLanguageSheet(context),
+        ),
         const _SettingsDivider(),
         _fieldLabel(a, context.l10n.settingsTextSize),
         const SizedBox(height: AppSpace.xs),
@@ -563,6 +641,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     required VoidCallback? onTap,
     Color? accent,
     Color? labelColor,
+    Widget? leading,
     Widget? trailing,
   }) {
     return MergeSemantics(
@@ -577,12 +656,13 @@ class _SettingsScreenState extends State<SettingsScreen>
             constraints: const BoxConstraints(minHeight: 52),
             child: Row(
               children: [
-                CinematicIcon(
-                  glyph: glyph,
-                  size: AppMetrics.leadingIcon,
-                  accent: accent ?? a.chrome,
-                  glowing: false,
-                ),
+                leading ??
+                    CinematicIcon(
+                      glyph: glyph,
+                      size: AppMetrics.leadingIcon,
+                      accent: accent ?? a.chrome,
+                      glowing: false,
+                    ),
                 const SizedBox(width: AppSpace.md),
                 Expanded(
                   child: Column(
@@ -635,19 +715,6 @@ class _SettingsScreenState extends State<SettingsScreen>
             },
           ),
       ],
-    );
-  }
-
-  Widget _skyPicker(ProgressService progress) {
-    final selected = progress.settings.appearanceMode;
-    return _SkySwitch(
-      selected: selected,
-      onChanged: (mode) {
-        if (mode == selected) return;
-        progress.updateSettings(
-          progress.settings.copyWith(appearanceMode: mode),
-        );
-      },
     );
   }
 
@@ -1250,6 +1317,14 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsCreditsRowSubtitle,
           glyph: CinematicGlyph.book,
           onTap: () => _openCreditsSheet(credits),
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.settingsReportProblem,
+          context.l10n.settingsReportProblemSubtitle,
+          glyph: CinematicGlyph.flag,
+          onTap: () => showAppReportSheet(context),
         ),
         if (kDebugMode) ...[
           const _SettingsDivider(compact: true),
@@ -1924,972 +1999,4 @@ class _RhythmCaption extends StatelessWidget {
       ],
     );
   }
-}
-
-/// Switch do céu — quatro estágios, de ponta a ponta do card.
-class _SkySwitch extends StatefulWidget {
-  final AppearanceMode selected;
-  final ValueChanged<AppearanceMode> onChanged;
-
-  const _SkySwitch({required this.selected, required this.onChanged});
-
-  static const modes = AppearanceMode.values;
-  static const trackHeight = 100.0;
-
-  @override
-  State<_SkySwitch> createState() => _SkySwitchState();
-}
-
-/// Idioma — mesmo gesto do tema: trilho com 4 células, bandeira + rótulo.
-class _LanguageSwitch extends StatefulWidget {
-  final AppLanguage selected;
-  final ValueChanged<AppLanguage> onChanged;
-
-  const _LanguageSwitch({required this.selected, required this.onChanged});
-
-  static const langs = AppLanguage.values;
-  static const trackHeight = 100.0;
-
-  @override
-  State<_LanguageSwitch> createState() => _LanguageSwitchState();
-}
-
-class _LanguageSwitchState extends State<_LanguageSwitch>
-    with SingleTickerProviderStateMixin {
-  static const _langs = _LanguageSwitch.langs;
-  static const _slideDuration = Duration(milliseconds: 520);
-  static const _slideCurve = AppMotion.enter;
-
-  late final AnimationController _slide;
-  double _downX = 0;
-  int _lastSlot = -1;
-
-  int get _index {
-    final i = _langs.indexOf(widget.selected);
-    return i < 0 ? 0 : i;
-  }
-
-  double get _visual => _slide.value;
-
-  AppLanguage get _visualLang {
-    final i = _visual.round().clamp(0, _langs.length - 1);
-    return _langs[i];
-  }
-
-  String _shortLabel(AppLanguage lang) {
-    final l10n = context.l10n;
-    return switch (lang) {
-      AppLanguage.device => l10n.languageShortDevice,
-      AppLanguage.pt => l10n.languageShortPt,
-      AppLanguage.en => l10n.languageShortEn,
-      AppLanguage.es => l10n.languageShortEs,
-    };
-  }
-
-  String _captionFor(AppLanguage lang) {
-    final l10n = context.l10n;
-    if (lang == AppLanguage.device) {
-      final resolved = L10n.resolve(AppLanguage.device);
-      final name = switch (resolved.languageCode) {
-        'en' => 'English',
-        'es' => 'Español',
-        _ => 'Português',
-      };
-      return '${l10n.languageCaptionDevice} · $name';
-    }
-    return switch (lang) {
-      AppLanguage.pt => l10n.languageCaptionPt,
-      AppLanguage.en => l10n.languageCaptionEn,
-      AppLanguage.es => l10n.languageCaptionEs,
-      AppLanguage.device => l10n.languageCaptionDevice,
-    };
-  }
-
-  String _titleFor(AppLanguage lang) => lang.label(context.l10n);
-
-  Color _washFor(AppLanguage lang) {
-    final id = LanguageFlagIdX.forAppLanguage(lang);
-    return switch (id) {
-      LanguageFlagId.br => const Color(0xFF009C3B),
-      LanguageFlagId.us => const Color(0xFF3C3B6E),
-      LanguageFlagId.es => const Color(0xFFAA151B),
-    };
-  }
-
-  double _focus(int i) {
-    final d = (_visual - i).abs();
-    return (1.0 - d).clamp(0.0, 1.0);
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _slide = AnimationController(
-      vsync: this,
-      duration: _slideDuration,
-      lowerBound: 0,
-      upperBound: (_langs.length - 1).toDouble(),
-      value: _index.toDouble(),
-    );
-    _lastSlot = _index;
-  }
-
-  @override
-  void didUpdateWidget(covariant _LanguageSwitch oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    if (oldWidget.selected == widget.selected) return;
-    _lastSlot = _index;
-    if (!_slide.isAnimating) {
-      _slide.animateTo(
-        _index.toDouble(),
-        duration: _slideDuration,
-        curve: _slideCurve,
-      );
-    }
-  }
-
-  @override
-  void dispose() {
-    _slide.dispose();
-    super.dispose();
-  }
-
-  void _commit(int index) {
-    final next = _langs[index.clamp(0, _langs.length - 1)];
-    if (next != widget.selected) {
-      if (_lastSlot != index) ActHaptics.tap();
-      widget.onChanged(next);
-    }
-    _lastSlot = index;
-  }
-
-  void _goTo(int index) {
-    _slide.animateTo(
-      index.toDouble(),
-      duration: _slideDuration,
-      curve: _slideCurve,
-    );
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _commit(index);
-    });
-  }
-
-  void _pickSnap(double localX, double width) {
-    if (width <= 0) return;
-    final i = (localX / width * _langs.length).floor().clamp(
-      0,
-      _langs.length - 1,
-    );
-    _goTo(i);
-  }
-
-  void _follow(double localX, double width) {
-    if (width <= 0) return;
-    final v = ((localX / width) * _langs.length - 0.5).clamp(
-      0.0,
-      (_langs.length - 1).toDouble(),
-    );
-    final slot = v.round();
-    if (slot != _lastSlot) {
-      _lastSlot = slot;
-      ActHaptics.tap();
-    }
-    _slide.stop();
-    _slide.value = v;
-  }
-
-  void _endDrag() {
-    final snap = _visual.round().clamp(0, _langs.length - 1);
-    _goTo(snap);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-
-    return Column(
-      children: [
-        Semantics(
-          container: true,
-          label: context.l10n.languageSemantics,
-          value:
-              '${_titleFor(widget.selected)}. ${_captionFor(widget.selected)}',
-          hint: context.l10n.languageSemanticsHint,
-          child: MediaQuery.withClampedTextScaling(
-            maxScaleFactor: 1.05,
-            child: SizedBox(
-              height: _LanguageSwitch.trackHeight,
-              width: double.infinity,
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  final w = constraints.maxWidth;
-                  return GestureDetector(
-                    behavior: HitTestBehavior.opaque,
-                    onTapDown: (d) => _downX = d.localPosition.dx,
-                    onTap: () => _pickSnap(_downX, w),
-                    onHorizontalDragStart: (d) =>
-                        _follow(d.localPosition.dx, w),
-                    onHorizontalDragUpdate: (d) =>
-                        _follow(d.localPosition.dx, w),
-                    onHorizontalDragEnd: (_) => _endDrag(),
-                    onHorizontalDragCancel: _endDrag,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadii.md),
-                        border: Border.all(color: a.cardBorder, width: 1.2),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(AppRadii.md - 0.6),
-                        child: AnimatedBuilder(
-                          animation: _slide,
-                          builder: (context, _) {
-                            return Stack(
-                              children: [
-                                Row(
-                                  children: [
-                                    for (var i = 0; i < _langs.length; i++)
-                                      Expanded(
-                                        child: _LanguageStageWash(
-                                          wash: _washFor(_langs[i]),
-                                          focus: _focus(i),
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    for (var i = 0; i < _langs.length; i++)
-                                      Expanded(
-                                        child: _LanguageStageFace(
-                                          lang: _langs[i],
-                                          label: _shortLabel(_langs[i]),
-                                          focus: _focus(i),
-                                          selected: i == _visual.round(),
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              ],
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        AnimatedBuilder(
-          animation: _slide,
-          builder: (context, _) {
-            return Column(
-              children: [
-                Text(
-                  _titleFor(_visualLang),
-                  style: AppTypography.title(size: 14, color: a.text),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  _captionFor(_visualLang),
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(size: 12, color: a.textSecondary),
-                ),
-              ],
-            );
-          },
-        ),
-      ],
-    );
-  }
-}
-
-class _LanguageStageWash extends StatelessWidget {
-  final Color wash;
-  final double focus;
-
-  const _LanguageStageWash({required this.wash, required this.focus});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        ColoredBox(color: Color.lerp(a.cardFill, wash, 0.14 + 0.22 * focus)!),
-        IgnorePointer(
-          child: ColoredBox(color: Color.fromRGBO(0, 0, 0, 0.42 * (1 - focus))),
-        ),
-      ],
-    );
-  }
-}
-
-class _LanguageStageFace extends StatelessWidget {
-  final AppLanguage lang;
-  final String label;
-  final double focus;
-  final bool selected;
-
-  const _LanguageStageFace({
-    required this.lang,
-    required this.label,
-    required this.focus,
-    required this.selected,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final color = Color.lerp(
-      a.textSecondary,
-      a.text,
-      AppMotion.enter.transform(focus),
-    )!;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
-      child: Column(
-        children: [
-          Expanded(
-            child: Center(
-              child: Transform.scale(
-                scale: 0.86 + 0.22 * focus,
-                child: DecoratedBox(
-                  decoration: selected
-                      ? BoxDecoration(
-                          borderRadius: BorderRadius.circular(6),
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppRoles.presence.withValues(alpha: 0.35),
-                              blurRadius: 10,
-                              spreadRadius: 0.5,
-                            ),
-                          ],
-                        )
-                      : const BoxDecoration(),
-                  child: LanguageFlag.forAppLanguage(
-                    lang,
-                    width: 40,
-                    height: 28,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          Text(
-            label,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.label(
-              size: 11,
-              letterSpacing: 0.2,
-              color: color,
-              weight: focus > 0.55 ? FontWeight.w800 : FontWeight.w600,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
-  static const _modes = _SkySwitch.modes;
-  static const _slideDuration = Duration(milliseconds: 520);
-  static const _slideCurve = AppMotion.enter;
-
-  late final AnimationController _slide;
-  late final AnimationController _life;
-  double _downX = 0;
-  int _lastSlot = -1;
-
-  int get _index {
-    final i = _modes.indexOf(widget.selected);
-    return i < 0 ? 0 : i;
-  }
-
-  double get _visual => _slide.value;
-
-  AppearanceMode get _visualMode {
-    final i = _visual.round().clamp(0, _modes.length - 1);
-    return _modes[i];
-  }
-
-  String get _caption => _captionFor(_visualMode);
-
-  String _captionFor(AppearanceMode mode) => switch (mode) {
-    AppearanceMode.morning => context.l10n.settingsThemeCaptionLight,
-    AppearanceMode.afternoon => context.l10n.settingsThemeCaptionMedium,
-    AppearanceMode.night => context.l10n.settingsThemeCaptionDark,
-    AppearanceMode.automatic => context.l10n.settingsThemeCaptionAuto,
-  };
-
-  // Paleta da ilustração (sol, entardecer, lua, ciclo) — cenário do switch,
-  // não papel de UI; o rótulo abaixo usa [AppearanceStyle.text].
-  Color _accentFor(AppearanceMode mode) => switch (mode) {
-    AppearanceMode.morning => AppColors.accent,
-    AppearanceMode.afternoon => AppColors.ember,
-    AppearanceMode.night => AppColors.orchid,
-    AppearanceMode.automatic => AppColors.slate,
-  };
-
-  String _shortLabel(AppearanceMode mode) => switch (mode) {
-    AppearanceMode.morning => context.l10n.settingsThemeLight,
-    AppearanceMode.afternoon => context.l10n.settingsThemeMedium,
-    AppearanceMode.night => context.l10n.settingsThemeDark,
-    AppearanceMode.automatic => context.l10n.settingsThemeAuto,
-  };
-
-  double _focus(int i) {
-    final d = (_visual - i).abs();
-    return (1.0 - d).clamp(0.0, 1.0);
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _slide = AnimationController(
-      vsync: this,
-      duration: _slideDuration,
-      lowerBound: 0,
-      upperBound: (_modes.length - 1).toDouble(),
-      value: _index.toDouble(),
-    );
-    _life = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 10),
-    )..repeat();
-    _lastSlot = _index;
-  }
-
-  @override
-  void didUpdateWidget(covariant _SkySwitch oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    if (oldWidget.selected == widget.selected) return;
-    _lastSlot = _index;
-    if (!_slide.isAnimating) {
-      _slide.animateTo(
-        _index.toDouble(),
-        duration: _slideDuration,
-        curve: _slideCurve,
-      );
-    }
-  }
-
-  @override
-  void dispose() {
-    _slide.dispose();
-    _life.dispose();
-    super.dispose();
-  }
-
-  void _commit(int index) {
-    final next = _modes[index.clamp(0, _modes.length - 1)];
-    if (next != widget.selected) {
-      if (_lastSlot != index) ActHaptics.tap();
-      widget.onChanged(next);
-    }
-    _lastSlot = index;
-  }
-
-  void _goTo(int index) {
-    _slide.animateTo(
-      index.toDouble(),
-      duration: _slideDuration,
-      curve: _slideCurve,
-    );
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _commit(index);
-    });
-  }
-
-  void _pickSnap(double localX, double width) {
-    if (width <= 0) return;
-    final i = (localX / width * _modes.length).floor().clamp(
-      0,
-      _modes.length - 1,
-    );
-    _goTo(i);
-  }
-
-  void _follow(double localX, double width) {
-    if (width <= 0) return;
-    final v = ((localX / width) * _modes.length - 0.5).clamp(
-      0.0,
-      (_modes.length - 1).toDouble(),
-    );
-    final slot = v.round();
-    if (slot != _lastSlot) {
-      _lastSlot = slot;
-      ActHaptics.tap();
-    }
-    _slide.stop();
-    _slide.value = v;
-  }
-
-  void _endDrag() {
-    final snap = _visual.round().clamp(0, _modes.length - 1);
-    _goTo(snap);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-
-    return Column(
-      children: [
-        Semantics(
-          container: true,
-          label: context.l10n.settingsThemeSemantics,
-          value:
-              '${_shortLabel(widget.selected)}. ${_captionFor(widget.selected)}',
-          hint: context.l10n.settingsThemeSemanticsHint,
-          child: MediaQuery.withClampedTextScaling(
-            maxScaleFactor: 1.05,
-            child: SizedBox(
-              height: _SkySwitch.trackHeight,
-              width: double.infinity,
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  final w = constraints.maxWidth;
-                  return GestureDetector(
-                    behavior: HitTestBehavior.opaque,
-                    onTapDown: (d) => _downX = d.localPosition.dx,
-                    onTap: () => _pickSnap(_downX, w),
-                    onHorizontalDragStart: (d) =>
-                        _follow(d.localPosition.dx, w),
-                    onHorizontalDragUpdate: (d) =>
-                        _follow(d.localPosition.dx, w),
-                    onHorizontalDragEnd: (_) => _endDrag(),
-                    onHorizontalDragCancel: _endDrag,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadii.md),
-                        border: Border.all(color: a.cardBorder, width: 1.2),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(AppRadii.md - 0.6),
-                        child: AnimatedBuilder(
-                          animation: _slide,
-                          builder: (context, _) {
-                            return Stack(
-                              children: [
-                                Row(
-                                  children: [
-                                    for (var i = 0; i < _modes.length; i++)
-                                      Expanded(
-                                        child: _SkyStageSky(
-                                          mode: _modes[i],
-                                          focus: _focus(i),
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    for (var i = 0; i < _modes.length; i++)
-                                      Expanded(
-                                        child: _SkyStageFace(
-                                          mode: _modes[i],
-                                          label: _shortLabel(_modes[i]),
-                                          accent: _accentFor(_modes[i]),
-                                          focus: _focus(i),
-                                          selected: i == _visual.round(),
-                                          life: _life,
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              ],
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        AnimatedBuilder(
-          animation: _slide,
-          builder: (context, _) {
-            return Column(
-              children: [
-                Text(
-                  _shortLabel(_visualMode),
-                  style: AppTypography.title(size: 14, color: a.text),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  _caption,
-                  style: AppTypography.body(size: 12, color: a.textSecondary),
-                ),
-              ],
-            );
-          },
-        ),
-      ],
-    );
-  }
-}
-
-class _SkyStageSky extends StatelessWidget {
-  final AppearanceMode mode;
-  final double focus;
-
-  const _SkyStageSky({required this.mode, required this.focus});
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        AmbientAtmosphere(phase: AppearanceStyle.resolve(mode).phase),
-        IgnorePointer(
-          child: ColoredBox(color: Color.fromRGBO(0, 0, 0, 0.46 * (1 - focus))),
-        ),
-      ],
-    );
-  }
-}
-
-class _SkyStageFace extends StatelessWidget {
-  final AppearanceMode mode;
-  final String label;
-  final Color accent;
-  final double focus;
-  final bool selected;
-  final Animation<double> life;
-
-  const _SkyStageFace({
-    required this.mode,
-    required this.label,
-    required this.accent,
-    required this.focus,
-    required this.selected,
-    required this.life,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final tile = AppearanceStyle.resolve(mode);
-    final idle = tile.onDark
-        ? AppColors.textOnDark.withValues(alpha: 0.72)
-        : const Color(0xFF1A3350);
-    final color = Color.lerp(idle, accent, AppMotion.enter.transform(focus))!;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
-      child: Column(
-        children: [
-          Expanded(
-            child: Center(
-              child: Transform.scale(
-                scale: 0.86 + 0.22 * focus,
-                child: selected
-                    ? AnimatedBuilder(
-                        animation: life,
-                        builder: (context, _) {
-                          return CustomPaint(
-                            size: const Size(38, 38),
-                            painter: _SkyMarkPainter(
-                              mode: mode,
-                              color: color,
-                              t: life.value,
-                              alive: true,
-                              amp: 1,
-                            ),
-                          );
-                        },
-                      )
-                    : CustomPaint(
-                        size: const Size(38, 38),
-                        painter: _SkyMarkPainter(
-                          mode: mode,
-                          color: color,
-                          t: 0,
-                          alive: false,
-                          amp: 0,
-                        ),
-                      ),
-              ),
-            ),
-          ),
-          Text(
-            label,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.label(
-              size: 11,
-              letterSpacing: 0.2,
-              color: color,
-              weight: focus > 0.55 ? FontWeight.w800 : FontWeight.w600,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Marcas do switch: sol entre nuvens, sol, lua entre nuvens, ciclo.
-class _SkyMarkPainter extends CustomPainter {
-  final AppearanceMode mode;
-  final Color color;
-  final double t;
-  final bool alive;
-  final double amp;
-
-  _SkyMarkPainter({
-    required this.mode,
-    required this.color,
-    required this.t,
-    required this.alive,
-    this.amp = 1,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final c = Offset(size.width / 2, size.height / 2);
-    final s = size.shortestSide;
-    final wave = t * math.pi * 2;
-    final breathe = 0.5 + 0.5 * math.sin(wave);
-    final drift = math.sin(wave) * amp;
-    final drift2 = math.cos(wave) * amp;
-    final fill = Paint()
-      ..color = color
-      ..style = PaintingStyle.fill
-      ..isAntiAlias = true;
-    final soft = Paint()
-      ..color = color.withValues(alpha: 0.86)
-      ..style = PaintingStyle.fill
-      ..isAntiAlias = true;
-
-    if (alive) {
-      canvas.drawCircle(
-        c,
-        s * (0.46 + breathe * 0.05 * amp),
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              color.withValues(alpha: (0.16 + breathe * 0.12) * amp),
-              color.withValues(alpha: 0),
-            ],
-          ).createShader(Rect.fromCircle(center: c, radius: s * 0.52)),
-      );
-    }
-
-    switch (mode) {
-      case AppearanceMode.morning:
-        _sun(
-          canvas,
-          c + Offset(0, -s * 0.08),
-          s * (0.9 + breathe * 0.04 * amp),
-          fill,
-          spin: wave,
-        );
-        _cloud(
-          canvas,
-          c + Offset(-s * 0.08 + drift * s * 0.05, s * 0.18),
-          s * 0.72,
-          fill,
-        );
-        _cloud(
-          canvas,
-          c + Offset(s * 0.18 + drift2 * s * 0.04, s * 0.22),
-          s * 0.5,
-          soft,
-        );
-      case AppearanceMode.afternoon:
-        _sun(
-          canvas,
-          c + Offset(0, -s * 0.06),
-          s * (0.94 + breathe * 0.05 * amp),
-          fill,
-          spin: wave * 0.7,
-        );
-        _cloud(
-          canvas,
-          c + Offset(s * 0.02 + drift * s * 0.04, s * 0.28),
-          s * 0.55,
-          soft,
-        );
-      case AppearanceMode.night:
-        _star(
-          canvas,
-          c + Offset(s * 0.28, -s * 0.28),
-          s * (0.08 + breathe * 0.025 * amp),
-          Paint()
-            ..color = color.withValues(alpha: 0.4 + breathe * 0.6 * amp)
-            ..isAntiAlias = true,
-        );
-        _moon(
-          canvas,
-          c + Offset(-s * 0.04, -s * 0.08 + drift * s * 0.025),
-          s * 0.88,
-          fill,
-        );
-        _cloud(
-          canvas,
-          c + Offset(-s * 0.06 + drift * s * 0.04, s * 0.2),
-          s * 0.7,
-          fill,
-        );
-        _cloud(
-          canvas,
-          c + Offset(s * 0.2 + drift2 * s * 0.03, s * 0.24),
-          s * 0.48,
-          soft,
-        );
-      case AppearanceMode.automatic:
-        _clock(canvas, c, s, fill, alive: alive);
-    }
-  }
-
-  void _sun(Canvas canvas, Offset c, double s, Paint paint, {double spin = 0}) {
-    canvas.save();
-    canvas.translate(c.dx, c.dy);
-    canvas.rotate(spin);
-    canvas.drawCircle(Offset.zero, s * 0.16, paint);
-    for (var i = 0; i < 8; i++) {
-      final a = i * math.pi / 4 - math.pi / 2;
-      final len = s * (i.isEven ? 0.13 : 0.09);
-      final inner = s * 0.22;
-      final p1 = Offset(math.cos(a) * inner, math.sin(a) * inner);
-      final p2 = Offset(
-        math.cos(a) * (inner + len),
-        math.sin(a) * (inner + len),
-      );
-      final perp = Offset(-math.sin(a), math.cos(a)) * s * 0.04;
-      canvas.drawPath(
-        Path()
-          ..moveTo(p1.dx + perp.dx, p1.dy + perp.dy)
-          ..lineTo(p2.dx + perp.dx, p2.dy + perp.dy)
-          ..lineTo(p2.dx - perp.dx, p2.dy - perp.dy)
-          ..lineTo(p1.dx - perp.dx, p1.dy - perp.dy)
-          ..close(),
-        paint,
-      );
-    }
-    canvas.restore();
-  }
-
-  void _cloud(Canvas canvas, Offset c, double s, Paint paint) {
-    canvas.drawCircle(c + Offset(-s * 0.18, 0), s * 0.16, paint);
-    canvas.drawCircle(c + Offset(s * 0.02, -s * 0.08), s * 0.2, paint);
-    canvas.drawCircle(c + Offset(s * 0.2, 0), s * 0.14, paint);
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.06),
-          width: s * 0.62,
-          height: s * 0.2,
-        ),
-        Radius.circular(s * 0.1),
-      ),
-      paint,
-    );
-  }
-
-  void _moon(Canvas canvas, Offset c, double s, Paint paint) {
-    final moon = Path()..addOval(Rect.fromCircle(center: c, radius: s * 0.2));
-    final cut = Path()
-      ..addOval(
-        Rect.fromCircle(
-          center: c + Offset(s * 0.1, -s * 0.05),
-          radius: s * 0.17,
-        ),
-      );
-    canvas.drawPath(Path.combine(PathOperation.difference, moon, cut), paint);
-  }
-
-  void _star(Canvas canvas, Offset c, double r, Paint paint) {
-    final path = Path();
-    for (var i = 0; i < 4; i++) {
-      final a = i * math.pi / 2 - math.pi / 2;
-      final p = c + Offset(math.cos(a) * r, math.sin(a) * r);
-      if (i == 0) {
-        path.moveTo(p.dx, p.dy);
-      } else {
-        path.lineTo(p.dx, p.dy);
-      }
-      final b = a + math.pi / 4;
-      final q = c + Offset(math.cos(b) * r * 0.35, math.sin(b) * r * 0.35);
-      path.lineTo(q.dx, q.dy);
-    }
-    path.close();
-    canvas.drawPath(path, paint);
-  }
-
-  void _clock(
-    Canvas canvas,
-    Offset c,
-    double s,
-    Paint paint, {
-    required bool alive,
-  }) {
-    final ring = Paint()
-      ..color = paint.color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = s * 0.07
-      ..strokeCap = StrokeCap.round
-      ..isAntiAlias = true;
-    canvas.drawCircle(c, s * 0.32, ring);
-
-    final tick = Paint()
-      ..color = paint.color
-      ..strokeWidth = s * 0.045
-      ..strokeCap = StrokeCap.round
-      ..isAntiAlias = true;
-    for (var i = 0; i < 4; i++) {
-      final a = i * math.pi / 2 - math.pi / 2;
-      final inner = s * 0.24;
-      final outer = s * 0.32;
-      canvas.drawLine(
-        c + Offset(math.cos(a) * inner, math.sin(a) * inner),
-        c + Offset(math.cos(a) * outer, math.sin(a) * outer),
-        tick,
-      );
-    }
-
-    final now = DateTime.now();
-    final hour =
-        ((now.hour % 12) + now.minute / 60) / 12 * math.pi * 2 - math.pi / 2;
-    final minute =
-        (now.minute + now.second / 60) / 60 * math.pi * 2 - math.pi / 2;
-    final second = alive
-        ? (now.second + now.millisecond / 1000) / 60 * math.pi * 2 - math.pi / 2
-        : minute;
-
-    void hand(double angle, double len, double weight) {
-      canvas.drawLine(
-        c,
-        c + Offset(math.cos(angle) * s * len, math.sin(angle) * s * len),
-        Paint()
-          ..color = paint.color
-          ..strokeWidth = s * weight
-          ..strokeCap = StrokeCap.round
-          ..isAntiAlias = true,
-      );
-    }
-
-    hand(hour, 0.16, 0.07);
-    hand(minute, 0.24, 0.05);
-    if (alive) {
-      hand(second, 0.26, 0.03);
-    }
-    canvas.drawCircle(c, s * 0.035, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant _SkyMarkPainter old) =>
-      old.mode != mode ||
-      old.color != color ||
-      old.t != t ||
-      old.alive != alive ||
-      old.amp != amp;
 }

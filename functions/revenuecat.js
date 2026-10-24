@@ -37,8 +37,10 @@ const ACTIVATE = new Set([
   'UNCANCELLATION',
   'SUBSCRIPTION_EXTENDED',
 ]);
-const STILL_ACTIVE = new Set(['CANCELLATION']);
-const DEACTIVATE = new Set(['EXPIRATION', 'SUBSCRIPTION_PAUSED']);
+// Pausa (Play) é agendada para o fim do período: o acesso vai até lá,
+// e a loja manda EXPIRATION quando a pausa começar de fato.
+const STILL_ACTIVE = new Set(['CANCELLATION', 'SUBSCRIPTION_PAUSED']);
+const DEACTIVATE = new Set(['EXPIRATION']);
 
 /**
  * Estado Plus a gravar para um evento, ou null se o evento não muda nada.
@@ -143,9 +145,13 @@ function pioneerSlotFromEvent(event) {
   if (String(event.environment || '') === 'SANDBOX') return null;
   const type = String(event.type || '');
   if (!PIONEER_SLOT_TYPES.has(type)) return null;
-  if (!isPioneerProduct(event.product_id) && !isPioneerProduct(event.new_product_id)) {
-    return null;
-  }
+  // Troca de plano conta só quando o destino é o Pioneiro: sair dele
+  // (Pioneiro → mensal) não ocupa vaga.
+  const pioneer =
+    type === 'PRODUCT_CHANGE'
+      ? isPioneerProduct(event.new_product_id)
+      : isPioneerProduct(event.product_id);
+  if (!pioneer) return null;
   const inTrial = String(event.period_type || '') === 'TRIAL';
   if (type === 'RENEWAL' && event.is_trial_conversion !== true) return null;
   if ((type === 'INITIAL_PURCHASE' || type === 'PRODUCT_CHANGE') && inTrial) {

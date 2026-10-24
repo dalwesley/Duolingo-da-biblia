@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
+import '../models/bible_note.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../services/bible_service.dart';
@@ -15,6 +16,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/bible_note_tag.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/milestone_chests.dart';
@@ -374,6 +376,7 @@ class _NaPalavraBlock extends StatelessWidget {
     final progress = context.watch<ProgressService>();
     final hasBookmarks = progress.parseBookmarks().isNotEmpty;
     final hasShared = progress.sharedVerses.isNotEmpty;
+    final hasNotes = progress.parseNotes().isNotEmpty;
 
     return RelicPanel(
       accent: AppRoles.presence,
@@ -384,12 +387,18 @@ class _NaPalavraBlock extends StatelessWidget {
           RelicChapter(
             title: context.l10n.profileInTheWord,
             accent: AppRoles.presence,
-            whisper: hasBookmarks || hasShared
+            whisper: hasBookmarks || hasShared || hasNotes
                 ? null
                 : context.l10n.profileInTheWordWhisper,
           ),
           const SizedBox(height: AppSpace.md),
           const _FavoritesSection(embedded: true),
+          if (hasNotes) ...[
+            const SizedBox(height: AppSpace.sm),
+            const RelicHairline(),
+            const SizedBox(height: AppSpace.sm),
+            const _NotesSection(),
+          ],
           if (hasShared && hasBookmarks) ...[
             const SizedBox(height: AppSpace.sm),
             const RelicHairline(),
@@ -516,6 +525,199 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
     if (widget.embedded) return content;
 
     return RelicPanel(child: content);
+  }
+}
+
+/// Anotações por tema — filtro pela cor (ex.: só as promessas).
+class _NotesSection extends StatefulWidget {
+  const _NotesSection();
+
+  @override
+  State<_NotesSection> createState() => _NotesSectionState();
+}
+
+class _NotesSectionState extends State<_NotesSection> {
+  Map<String, String> _namesByAbbrev = const {};
+  bool _open = false;
+  bool _namesRequested = false;
+  BibleNoteTag? _filter;
+
+  Future<void> _loadNames() async {
+    final books = await BibleService.instance.books();
+    if (!mounted) return;
+    setState(() {
+      _namesByAbbrev = {for (final b in books) b.abbrev.toLowerCase(): b.name};
+    });
+  }
+
+  String _label(String abbrev, int chapter, int verse) {
+    final name = _namesByAbbrev[abbrev.toLowerCase()] ?? abbrev.toUpperCase();
+    return '$name $chapter:$verse';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final all = context.watch<ProgressService>().parseNotes();
+    if (_open && !_namesRequested) {
+      _namesRequested = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) => _loadNames());
+    }
+    final a = Appearance.of(context);
+    final used = {for (final n in all) n.note.tag};
+    final filter = used.contains(_filter) ? _filter : null;
+    final shown = [
+      for (final n in all)
+        if (filter == null || n.note.tag == filter) n,
+    ].take(20).toList();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _FoldHeader(
+          label: context.l10n.profileNotes,
+          count: all.length,
+          open: _open,
+          onTap: () => setState(() => _open = !_open),
+        ),
+        _FoldBody(
+          open: _open,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (used.length > 1) ...[
+                const SizedBox(height: AppSpace.sm),
+                Wrap(
+                  spacing: AppSpace.xs,
+                  runSpacing: AppSpace.xs,
+                  children: [
+                    BibleNoteTagChip(
+                      label: context.l10n.profileNotesAll,
+                      color: null,
+                      selected: filter == null,
+                      ink: a.text,
+                      idleFill: a.text.withValues(alpha: 0.04),
+                      idleBorder: a.cardBorder,
+                      onTap: () => setState(() => _filter = null),
+                    ),
+                    for (final t in BibleNoteTag.values)
+                      if (used.contains(t))
+                        BibleNoteTagChip(
+                          label: bibleNoteTagLabel(context, t),
+                          color: t.color,
+                          selected: filter == t,
+                          ink: a.text,
+                          idleFill: a.text.withValues(alpha: 0.04),
+                          idleBorder: a.cardBorder,
+                          onTap: () {
+                            ActHaptics.tap();
+                            setState(() => _filter = t);
+                          },
+                        ),
+                  ],
+                ),
+                const SizedBox(height: AppSpace.xs),
+              ],
+              for (var i = 0; i < shown.length; i++) ...[
+                if (i > 0) const RelicHairline(),
+                _NoteRow(
+                  reference: _label(
+                    shown[i].abbrev,
+                    shown[i].chapter,
+                    shown[i].verse,
+                  ),
+                  note: shown[i].note,
+                  onTap: () => BibleReaderScreen.open(
+                    context,
+                    _label(shown[i].abbrev, shown[i].chapter, shown[i].verse),
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _NoteRow extends StatelessWidget {
+  final String reference;
+  final BibleNote note;
+  final VoidCallback onTap;
+
+  const _NoteRow({
+    required this.reference,
+    required this.note,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final tag = note.tag;
+    final color = tag?.color ?? a.textFaint;
+    return Semantics(
+      button: true,
+      label: context.l10n.profileOpenRef(reference),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        onTap: onTap,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 48),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+            child: Row(
+              children: [
+                Container(
+                  width: 3,
+                  height: note.text.isEmpty ? 20 : 40,
+                  decoration: BoxDecoration(
+                    color: color,
+                    borderRadius: BorderRadius.circular(AppRadii.pill),
+                  ),
+                ),
+                const SizedBox(width: AppSpace.sm),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        [
+                          reference,
+                          if (tag != null) bibleNoteTagLabel(context, tag),
+                        ].join(' · '),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w800,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                      if (note.text.isNotEmpty) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          note.text,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 14,
+                            height: 1.35,
+                            color: a.text,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+                const SizedBox(width: AppSpace.sm),
+                ListChevron(color: a.textFaint),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 

@@ -1,7 +1,7 @@
 name: trilha_app
 description: STWAY — missões diárias para criar hábito de ler e estudar a Bíblia.
 publish_to: 'none'
-version: 1.0.35+35
+version: 1.0.36+36
 
 environment:
   sdk: ^3.12.0
@@ -66,6 +66,7 @@ flutter:
     - assets/icon/trail_bg_light.jpg
     - assets/icon/trail_bg_neutral.jpg
     - assets/mascot/
+    - assets/art/
     # Bíblia e estudo Strong vão no binário. Currículo (trilhas/perguntas)
     # vem do Firestore; os *_questions.json em assets/data/ são só seed/admin.
     - assets/data/bible_tb.json

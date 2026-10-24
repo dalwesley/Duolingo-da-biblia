@@ -348,6 +348,25 @@
     "en": "In progress",
     "es": "En curso"
   },
+  "trailsOpenTitle": {
+    "pt": "Suas trilhas abertas",
+    "en": "Your open trails",
+    "es": "Tus rutas abiertas"
+  },
+  "trailsOpenSubtitle": {
+    "pt": "Escolha por onde continuar.",
+    "en": "Choose where to pick up.",
+    "es": "Elige por dónde seguir."
+  },
+  "trailsOpenMore": {
+    "pt": "{first} e mais {count}",
+    "en": "{first} and {count} more",
+    "es": "{first} y {count} más",
+    "placeholders": {
+      "first": "String",
+      "count": "int"
+    }
+  },
   "trailsContinueSemantics": {
     "pt": "Continuar · {title}",
     "en": "Continue · {title}",

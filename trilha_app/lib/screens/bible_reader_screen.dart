@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../l10n/app_language.dart';
+import '../models/bible_note.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../services/tts_service.dart';
@@ -13,6 +14,7 @@ import '../utils/bible_reading_theme.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/bible_note_tag.dart';
 import '../widgets/bible_passage_picker.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/relic_panel.dart';
@@ -654,6 +656,7 @@ class _ChapterPageState extends State<_ChapterPage> {
     BibleReadingStyle reading, {
     required bool highlighted,
     required bool saved,
+    required Color? noteColor,
   }) {
     final number = i + 1;
     final sig = (
@@ -663,6 +666,7 @@ class _ChapterPageState extends State<_ChapterPage> {
       _selected == number,
       _speaking == number,
       saved,
+      noteColor,
       _verseKeys[i],
     );
     final hit = _blocks[i];
@@ -676,6 +680,7 @@ class _ChapterPageState extends State<_ChapterPage> {
       selected: _selected == number,
       speaking: _speaking == number,
       saved: saved,
+      noteColor: noteColor,
       onTap: () => _openVerse(number),
     );
     _blocks[i] = (sig, block);
@@ -697,6 +702,21 @@ class _ChapterPageState extends State<_ChapterPage> {
     final saved = <int>{
       for (final k in bmSig.split('|'))
         if (k.isNotEmpty) int.tryParse(k.split(':').last) ?? -1,
+    };
+    final noteSig = context.select((ProgressService p) {
+      final prefix = '${_book.abbrev.toLowerCase()}:${widget.chapter}:';
+      return [
+        for (final e in p.bibleNotes.entries)
+          if (e.key.startsWith(prefix) && e.value.tag != null)
+            '${e.key.split(':').last}=${e.value.tag!.id}',
+      ].join('|');
+    });
+    final noteColors = <int, Color>{
+      for (final pair in noteSig.split('|'))
+        if (pair.contains('='))
+          int.tryParse(pair.split('=').first) ?? -1:
+              BibleNoteTag.fromId(pair.split('=').last)?.color ??
+              reading.verseNumber,
     };
     if (!identical(_wordsFor, verses)) {
       _wordsFor = verses;
@@ -746,6 +766,7 @@ class _ChapterPageState extends State<_ChapterPage> {
                   i + 1 >= widget.highlightStart! &&
                   i + 1 <= (widget.highlightEnd ?? widget.highlightStart!),
               saved: saved.contains(i + 1),
+              noteColor: noteColors[i + 1],
             ),
           const SizedBox(height: AppSpace.xxxl),
           _ChapterEnd(
@@ -772,6 +793,9 @@ class _VerseBlock extends StatelessWidget {
   final bool selected;
   final bool speaking;
   final bool saved;
+
+  /// Cor do tema da anotação — pinta fundo e fio, por cima do favorito.
+  final Color? noteColor;
   final VoidCallback onTap;
 
   const _VerseBlock({
@@ -783,14 +807,18 @@ class _VerseBlock extends StatelessWidget {
     required this.selected,
     required this.speaking,
     required this.saved,
+    required this.noteColor,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     final lit = selected || speaking || highlighted;
+    final note = noteColor;
     final fill = lit
         ? reading.highlightFill
+        : note != null
+        ? note.withValues(alpha: reading.isDay ? 0.16 : 0.24)
         : saved
         ? reading.savedFill
         : reading.page.withValues(alpha: 0);
@@ -814,10 +842,12 @@ class _VerseBlock extends StatelessWidget {
             borderRadius: BorderRadius.circular(AppRadii.sm),
             border: Border(
               left: BorderSide(
-                width: 2,
-                color: saved
-                    ? reading.verseNumber
-                    : reading.verseNumber.withValues(alpha: 0),
+                width: note != null ? 3 : 2,
+                color:
+                    note ??
+                    (saved
+                        ? reading.verseNumber
+                        : reading.verseNumber.withValues(alpha: 0)),
               ),
             ),
           ),
@@ -1180,6 +1210,8 @@ Future<void> _showVerseActions(
   final progress = context.read<ProgressService>();
   final citation = '${book.name} $chapter:$verse';
   var saved = progress.isVerseBookmarked(book.abbrev, chapter, verse);
+  final note = progress.verseNote(book.abbrev, chapter, verse);
+  var openNote = false;
 
   Widget action({
     required CinematicGlyph glyph,
@@ -1244,6 +1276,17 @@ Future<void> _showVerseActions(
                 color: reading.ink,
               ),
             ),
+            if (note != null) ...[
+              const SizedBox(height: AppSpace.md),
+              _NoteCard(
+                reading: reading,
+                note: note,
+                onTap: () {
+                  openNote = true;
+                  Navigator.pop(ctx);
+                },
+              ),
+            ],
             const SizedBox(height: AppSpace.lg),
             Row(
               children: [
@@ -1262,6 +1305,18 @@ Future<void> _showVerseActions(
                       );
                       ActHaptics.light();
                       setSheetState(() => saved = added);
+                    },
+                  ),
+                  (
+                    glyph: CinematicGlyph.pencil,
+                    label: note != null
+                        ? context.l10n.bibleVerseNoted
+                        : context.l10n.bibleVerseNote,
+                    lit: note != null,
+                    onTap: () {
+                      ActHaptics.tap();
+                      openNote = true;
+                      Navigator.pop(ctx);
                     },
                   ),
                   (
@@ -1308,7 +1363,10 @@ Future<void> _showVerseActions(
                         onTap: q.onTap,
                         borderRadius: BorderRadius.circular(AppRadii.md),
                         child: Ink(
-                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 12,
+                            horizontal: 4,
+                          ),
                           decoration: BoxDecoration(
                             color: q.lit
                                 ? reading.highlightFill
@@ -1329,11 +1387,16 @@ Future<void> _showVerseActions(
                                 framed: false,
                               ),
                               const SizedBox(height: 6),
-                              Text(
-                                q.label,
-                                style: AppTypography.label(
-                                  size: 12,
-                                  color: reading.ink,
+                              // Quatro lado a lado: o rótulo encolhe, não quebra.
+                              FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(
+                                  q.label,
+                                  maxLines: 1,
+                                  style: AppTypography.label(
+                                    size: 12,
+                                    color: reading.ink,
+                                  ),
                                 ),
                               ),
                             ],
@@ -1379,6 +1442,301 @@ Future<void> _showVerseActions(
       ),
     ),
   );
+
+  if (openNote && context.mounted) {
+    await _showNoteEditor(
+      context,
+      reading: reading,
+      book: book,
+      chapter: chapter,
+      verse: verse,
+      text: text,
+    );
+  }
+}
+
+/// Último tema escolhido — a próxima anotação já nasce nele.
+BibleNoteTag? _lastNoteTag;
+
+/// Anotar: tema com cor (pinta o versículo) e texto opcional.
+Future<void> _showNoteEditor(
+  BuildContext context, {
+  required BibleReadingStyle reading,
+  required BibleBook book,
+  required int chapter,
+  required int verse,
+  required String text,
+}) async {
+  final progress = context.read<ProgressService>();
+  final existing = progress.verseNote(book.abbrev, chapter, verse);
+
+  final saved = await showAppSheet<bool>(
+    context,
+    builder: (ctx) => _NoteEditorSheet(
+      reading: reading,
+      book: book,
+      chapter: chapter,
+      verse: verse,
+      text: text,
+      existing: existing,
+    ),
+  );
+  if (saved == true && context.mounted) {
+    showAppToastFor(
+      context,
+      message: context.l10n.bibleNoteSaved,
+      glyph: CinematicGlyph.pencil,
+    );
+  }
+}
+
+/// Sheet de anotação — controller vive no State até o unmount (após animação).
+class _NoteEditorSheet extends StatefulWidget {
+  final BibleReadingStyle reading;
+  final BibleBook book;
+  final int chapter;
+  final int verse;
+  final String text;
+  final BibleNote? existing;
+
+  const _NoteEditorSheet({
+    required this.reading,
+    required this.book,
+    required this.chapter,
+    required this.verse,
+    required this.text,
+    required this.existing,
+  });
+
+  @override
+  State<_NoteEditorSheet> createState() => _NoteEditorSheetState();
+}
+
+class _NoteEditorSheetState extends State<_NoteEditorSheet> {
+  late final TextEditingController _controller;
+  late BibleNoteTag? _tag;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController(text: widget.existing?.text ?? '');
+    _tag = widget.existing?.tag ?? _lastNoteTag;
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final reading = widget.reading;
+    final book = widget.book;
+    final existing = widget.existing;
+    final progress = context.read<ProgressService>();
+    final border = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(AppRadii.sm),
+      borderSide: BorderSide(color: reading.pageBorder),
+    );
+    return Padding(
+      padding: EdgeInsets.only(bottom: MediaQuery.viewInsetsOf(context).bottom),
+      child: SingleChildScrollView(
+        child: _paperSheet(
+          reading,
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              SectionLabel(
+                '${book.name} ${widget.chapter}:${widget.verse}',
+                color: reading.verseNumber,
+              ),
+              const SizedBox(height: AppSpace.sm),
+              Text(
+                widget.text,
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.verse(
+                  size: 16,
+                  height: 1.4,
+                  weight: FontWeight.w500,
+                  color: reading.ink,
+                ),
+              ),
+              const SizedBox(height: AppSpace.lg),
+              SectionLabel(
+                context.l10n.bibleNoteTheme,
+                color: reading.verseNumber,
+              ),
+              const SizedBox(height: AppSpace.sm),
+              Wrap(
+                spacing: AppSpace.sm,
+                runSpacing: AppSpace.sm,
+                children: [
+                  for (final t in BibleNoteTag.values)
+                    BibleNoteTagChip(
+                      label: bibleNoteTagLabel(context, t),
+                      color: t.color,
+                      selected: _tag == t,
+                      ink: reading.ink,
+                      idleFill: reading.chipFill.withValues(alpha: 0.7),
+                      idleBorder: reading.pageBorder,
+                      onTap: () {
+                        ActHaptics.tap();
+                        setState(() => _tag = t);
+                      },
+                    ),
+                ],
+              ),
+              const SizedBox(height: AppSpace.lg),
+              TextField(
+                controller: _controller,
+                minLines: 2,
+                maxLines: 5,
+                maxLength: 500,
+                textCapitalization: TextCapitalization.sentences,
+                style: AppTypography.body(size: 15, color: reading.ink),
+                decoration: InputDecoration(
+                  hintText: context.l10n.bibleNoteHint,
+                  hintStyle: AppTypography.body(
+                    size: 15,
+                    color: reading.inkMuted,
+                  ),
+                  filled: true,
+                  fillColor: reading.chipFill.withValues(alpha: 0.5),
+                  counterStyle: reading.metaStyle,
+                  border: border,
+                  enabledBorder: border,
+                  focusedBorder: border.copyWith(
+                    borderSide: BorderSide(
+                      color: _tag?.color ?? reading.highlightBorder,
+                      width: 1.5,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: AppSpace.md),
+              CopperCta(
+                label: context.l10n.bibleNoteSave,
+                trailing: null,
+                onTap: _tag == null
+                    ? null
+                    : () async {
+                        _lastNoteTag = _tag;
+                        await progress.setVerseNote(
+                          book.abbrev,
+                          widget.chapter,
+                          widget.verse,
+                          tag: _tag,
+                          text: _controller.text,
+                        );
+                        ActHaptics.light();
+                        if (context.mounted) Navigator.pop(context, true);
+                      },
+              ),
+              if (existing != null) ...[
+                const SizedBox(height: AppSpace.sm),
+                GhostCta(
+                  label: context.l10n.bibleNoteDelete,
+                  danger: true,
+                  expanded: true,
+                  borderColor: reading.pageBorder,
+                  onTap: () async {
+                    await progress.setVerseNote(
+                      book.abbrev,
+                      widget.chapter,
+                      widget.verse,
+                      tag: null,
+                      text: '',
+                    );
+                    ActHaptics.light();
+                    if (context.mounted) Navigator.pop(context, false);
+                  },
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Anotação já feita, no topo das ações do versículo — toque para editar.
+class _NoteCard extends StatelessWidget {
+  final BibleReadingStyle reading;
+  final BibleNote note;
+  final VoidCallback onTap;
+
+  const _NoteCard({
+    required this.reading,
+    required this.note,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final color = note.tag?.color ?? reading.verseNumber;
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        child: Ink(
+          padding: const EdgeInsets.all(AppSpace.md),
+          decoration: BoxDecoration(
+            color: color.withValues(alpha: reading.isDay ? 0.12 : 0.2),
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            border: Border(left: BorderSide(color: color, width: 3)),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: color,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  if (note.tag != null)
+                    Text(
+                      bibleNoteTagLabel(context, note.tag!),
+                      style: AppTypography.label(
+                        size: 12,
+                        letterSpacing: 0.3,
+                        color: reading.ink,
+                      ),
+                    ),
+                  const Spacer(),
+                  CinematicIcon(
+                    glyph: CinematicGlyph.pencil,
+                    size: AppMetrics.iconMd,
+                    accent: reading.inkMuted,
+                    framed: false,
+                  ),
+                ],
+              ),
+              if (note.text.isNotEmpty) ...[
+                const SizedBox(height: 6),
+                Text(
+                  note.text,
+                  maxLines: 4,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(size: 14, color: reading.ink),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 /// "Aa" — tamanho do texto, papel e versão, com prévia ao vivo.

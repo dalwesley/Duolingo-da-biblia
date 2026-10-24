@@ -14,6 +14,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/plus_offers.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/daily_chest_sheet.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/plus_offer_sheet.dart';
 import '../widgets/relic_panel.dart';
@@ -428,6 +429,25 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         button(
                           'Mostrar: promoção encerrada',
                           () => _offer(PlusOfferKind.promoEnded),
+                        ),
+                      ]),
+                      section('Baú do dia', [
+                        line(
+                          'Rearmar marca a missão de hoje (sem passos), '
+                          'esquece a abertura de hoje e deixa a folha '
+                          'automática aparecer de novo. Volte para a Hoje '
+                          'para vê-la chegar sozinha.',
+                        ),
+                        button('Rearmar o baú de hoje', () async {
+                          await context
+                              .read<ProgressService>()
+                              .debugRearmDailyChest();
+                          await resetDailyChestOffer();
+                          _toast('Baú rearmado');
+                        }),
+                        button(
+                          'Mostrar a folha do baú',
+                          () => showDailyChestSheet(context),
                         ),
                       ]),
                       section('Abrir telas', [

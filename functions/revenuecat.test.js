@@ -237,6 +237,16 @@ test('Pioneiro: troca para o produto e transferência anônima contam uma vez', 
     environment: 'PRODUCTION',
   });
   assert.equal(changed.uid, 'uid1');
+  assert.equal(
+    RC.pioneerSlotFromEvent({
+      type: 'PRODUCT_CHANGE',
+      app_user_id: 'uid1',
+      product_id: 'plus_founder_annual',
+      new_product_id: 'plus_monthly',
+      environment: 'PRODUCTION',
+    }),
+    null,
+  );
 
   assert.equal(
     RC.pioneerSlotFromEvent({
@@ -287,4 +297,16 @@ test('problema de cobrança mantém ativo (graça da loja)', () => {
   });
   assert.equal(out.fields.plusActive, true);
   assert.equal(out.fields.plusWillRenew, false);
+});
+
+test('pausa agendada mantém ativo até vencer, sem renovar', () => {
+  const r = RC.plusStateFromEvent({
+    type: 'SUBSCRIPTION_PAUSED',
+    app_user_id: 'uid1',
+    entitlement_ids: ['peregrino_plus'],
+    product_id: 'plus_monthly',
+    expiration_at_ms: future,
+  });
+  assert.equal(r.fields.plusActive, true);
+  assert.equal(r.fields.plusWillRenew, false);
 });

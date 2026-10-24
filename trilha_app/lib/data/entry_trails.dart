@@ -7,13 +7,52 @@ import '../widgets/cinematic_icon.dart';
 class EntryTrails {
   EntryTrails._();
 
-  /// Última missão da trilha de dor → trilha canônica.
+  /// Última missão da trilha de entrada → trilha canônica.
   static const continuesTo = {
     'dor-ansia-05': 'sermao-do-monte',
     'dor-recome-05': 'genesis-1-11',
+    'entrada-deus-05': 'evangelhos',
+    'entrada-biblia-07': 'genesis-1-11',
   };
 
-  static List<Trail> get overlay => [_anxiety, _restart];
+  /// Todas as trilhas de entrada: grátis inteiras ([PlusAccess]) e sem
+  /// pré-requisito de outra área ([TrailProgress]).
+  static const slugs = {
+    'ansiedade',
+    'recomeco',
+    'conhecer-a-deus',
+    'entender-a-biblia',
+  };
+
+  /// Trilhas de um motivo só: viram a ativa da Home só para quem o escolheu,
+  /// e ficam fora da fila Ansiedade → Recomeço → Sermão (sempre abertas).
+  static const intentOnly = {'conhecer-a-deus', 'entender-a-biblia'};
+
+  static List<Trail> get overlay => [_anxiety, _restart, _knowGod, _bible];
+
+  /// Banco de origem → cenas de entrada que tocam o mesmo banco.
+  static final Map<String, Set<String>> _byBank = () {
+    final map = <String, Set<String>>{};
+    for (final trail in overlay) {
+      for (final mod in trail.modules) {
+        for (final m in mod.missions) {
+          if (m.resolvedBankSection == m.slug) continue;
+          (map[m.resolvedBankSection] ??= {}).add(m.slug);
+        }
+      }
+    }
+    return map;
+  }();
+
+  /// Cenas que mostram as mesmas perguntas de [missionSlug] (a cena de
+  /// origem e as outras entradas no mesmo banco), sem ela mesma.
+  static Set<String> linkedScenes(String missionSlug) {
+    for (final entry in _byBank.entries) {
+      final group = {entry.key, ...entry.value};
+      if (group.contains(missionSlug)) return group..remove(missionSlug);
+    }
+    return const {};
+  }
 
   static Trail get _anxiety {
     final l = L10n.current;
@@ -218,6 +257,240 @@ class EntryTrails {
               objective: l.entryMissionDorRecome05Objective,
               bankSection: 'sm-03-os-que-choram',
               bankTrailSlug: 'sermao-do-monte',
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  static Trail get _knowGod {
+    final l = L10n.current;
+    return Trail(
+      slug: 'conhecer-a-deus',
+      title: l.entryTrailConhecerADeusTitle,
+      description: l.entryTrailConhecerADeusDescription,
+      icon: '✨',
+      order: 2,
+      comingSoon: false,
+      color: '#E67700',
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+      modules: [
+        TrailModule(
+          title: l.entryTrailConhecerADeusModuleTitle,
+          icon: '✨',
+          missions: [
+            Mission(
+              slug: 'entrada-deus-01',
+              title: l.entryMissionEntradaDeus01Title,
+              intro: l.entryMissionEntradaDeus01Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Gênesis 1:1–3',
+              hookVerse: 'No princípio, Deus criou os céus e a terra.',
+              hookNote: l.entryMissionEntradaDeus01HookNote,
+              centralInsight: l.entryMissionEntradaDeus01CentralInsight,
+              objective: l.entryMissionEntradaDeus01Objective,
+              bankSection: 'gen-01-criador',
+              bankTrailSlug: 'genesis-1-11',
+            ),
+            Mission(
+              slug: 'entrada-deus-02',
+              title: l.entryMissionEntradaDeus02Title,
+              intro: l.entryMissionEntradaDeus02Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Êxodo 3:13–14',
+              hookVerse: 'E Deus disse a Moisés: “EU SOU O QUE SOU.”',
+              hookNote: l.entryMissionEntradaDeus02HookNote,
+              centralInsight: l.entryMissionEntradaDeus02CentralInsight,
+              objective: l.entryMissionEntradaDeus02Objective,
+              bankSection: 'exo-02-moises',
+              bankTrailSlug: 'exodo',
+            ),
+            Mission(
+              slug: 'entrada-deus-03',
+              title: l.entryMissionEntradaDeus03Title,
+              intro: l.entryMissionEntradaDeus03Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Isaías 6:1–3',
+              hookVerse:
+                  'Santo, santo, santo é o SENHOR dos Exércitos; toda a terra está repleta da sua glória.',
+              hookNote: l.entryMissionEntradaDeus03HookNote,
+              centralInsight: l.entryMissionEntradaDeus03CentralInsight,
+              objective: l.entryMissionEntradaDeus03Objective,
+              bankSection: 'dd-02-santo',
+              bankTrailSlug: 'doutrina-de-deus',
+            ),
+            Mission(
+              slug: 'entrada-deus-04',
+              title: l.entryMissionEntradaDeus04Title,
+              intro: l.entryMissionEntradaDeus04Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Salmo 23:1–3',
+              hookVerse:
+                  'O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.',
+              hookNote: l.entryMissionEntradaDeus04HookNote,
+              centralInsight: l.entryMissionEntradaDeus04CentralInsight,
+              objective: l.entryMissionEntradaDeus04Objective,
+              bankSection: 'salmos-louvor-02-o-senhor-e-o-meu-pas',
+              bankTrailSlug: 'salmos',
+            ),
+            Mission(
+              slug: 'entrada-deus-05',
+              title: l.entryMissionEntradaDeus05Title,
+              intro: l.entryMissionEntradaDeus05Intro,
+              type: 'lesson',
+              stepsReward: 70,
+              questions: const [],
+              hookRef: 'João 1:1–14',
+              hookVerse:
+                  'E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade.',
+              hookNote: l.entryMissionEntradaDeus05HookNote,
+              centralInsight: l.entryMissionEntradaDeus05CentralInsight,
+              objective: l.entryMissionEntradaDeus05Objective,
+              bankSection: 'evg-01-encarnacao',
+              bankTrailSlug: 'evangelhos',
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  static Trail get _bible {
+    final l = L10n.current;
+    return Trail(
+      slug: 'entender-a-biblia',
+      title: l.entryTrailEntenderABibliaTitle,
+      description: l.entryTrailEntenderABibliaDescription,
+      icon: '📜',
+      order: 3,
+      comingSoon: false,
+      color: '#1971C2',
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+      modules: [
+        TrailModule(
+          title: l.entryTrailEntenderABibliaModuleTitle,
+          icon: '📜',
+          missions: [
+            Mission(
+              slug: 'entrada-biblia-01',
+              title: l.entryMissionEntradaBiblia01Title,
+              intro: l.entryMissionEntradaBiblia01Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Gênesis 1:1–3',
+              hookVerse: 'No princípio, Deus criou os céus e a terra.',
+              hookNote: l.entryMissionEntradaBiblia01HookNote,
+              centralInsight: l.entryMissionEntradaBiblia01CentralInsight,
+              objective: l.entryMissionEntradaBiblia01Objective,
+              bankSection: 'gen-01-criador',
+              bankTrailSlug: 'genesis-1-11',
+            ),
+            Mission(
+              slug: 'entrada-biblia-02',
+              title: l.entryMissionEntradaBiblia02Title,
+              intro: l.entryMissionEntradaBiblia02Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Gênesis 3:1–6',
+              hookVerse:
+                  'Então, a serpente disse à mulher: É certo que vocês não morrerão.',
+              hookNote: l.entryMissionEntradaBiblia02HookNote,
+              centralInsight: l.entryMissionEntradaBiblia02CentralInsight,
+              objective: l.entryMissionEntradaBiblia02Objective,
+              bankSection: 'gen-06-queda',
+              bankTrailSlug: 'genesis-1-11',
+            ),
+            Mission(
+              slug: 'entrada-biblia-03',
+              title: l.entryMissionEntradaBiblia03Title,
+              intro: l.entryMissionEntradaBiblia03Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Gênesis 12:1–3',
+              hookVerse:
+                  'Farei de você uma grande nação… e em você todas as famílias da terra serão benditas.',
+              hookNote: l.entryMissionEntradaBiblia03HookNote,
+              centralInsight: l.entryMissionEntradaBiblia03CentralInsight,
+              objective: l.entryMissionEntradaBiblia03Objective,
+              bankSection: 'gen-11-abraao',
+              bankTrailSlug: 'genesis-1-11',
+            ),
+            Mission(
+              slug: 'entrada-biblia-04',
+              title: l.entryMissionEntradaBiblia04Title,
+              intro: l.entryMissionEntradaBiblia04Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Êxodo 14:13–14',
+              hookVerse: 'O Senhor lutará por vocês, e vocês se calarão.',
+              hookNote: l.entryMissionEntradaBiblia04HookNote,
+              centralInsight: l.entryMissionEntradaBiblia04CentralInsight,
+              objective: l.entryMissionEntradaBiblia04Objective,
+              bankSection: 'exo-05-mar',
+              bankTrailSlug: 'exodo',
+            ),
+            Mission(
+              slug: 'entrada-biblia-05',
+              title: l.entryMissionEntradaBiblia05Title,
+              intro: l.entryMissionEntradaBiblia05Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Isaías 53:5–6',
+              hookVerse:
+                  'Ele, porém, foi traspassado por nossas transgressões e moído por nossas iniquidades; o castigo que nos trouxe paz estava sobre ele, e pelas suas feridas fomos curados.',
+              hookNote: l.entryMissionEntradaBiblia05HookNote,
+              centralInsight: l.entryMissionEntradaBiblia05CentralInsight,
+              objective: l.entryMissionEntradaBiblia05Objective,
+              bankSection: 'isaias-esperanca--02-o-servo-sofredor',
+              bankTrailSlug: 'isaias',
+            ),
+            Mission(
+              slug: 'entrada-biblia-06',
+              title: l.entryMissionEntradaBiblia06Title,
+              intro: l.entryMissionEntradaBiblia06Intro,
+              type: 'lesson',
+              stepsReward: 60,
+              questions: const [],
+              hookRef: 'Mateus 28:5–6',
+              hookVerse:
+                  'Não está aqui, pois já ressuscitou, como ele havia dito. Venham ver onde ele estava.',
+              hookNote: l.entryMissionEntradaBiblia06HookNote,
+              centralInsight: l.entryMissionEntradaBiblia06CentralInsight,
+              objective: l.entryMissionEntradaBiblia06Objective,
+              bankSection: 'evg-09-ressurreicao',
+              bankTrailSlug: 'evangelhos',
+            ),
+            Mission(
+              slug: 'entrada-biblia-07',
+              title: l.entryMissionEntradaBiblia07Title,
+              intro: l.entryMissionEntradaBiblia07Intro,
+              type: 'lesson',
+              stepsReward: 70,
+              questions: const [],
+              hookRef: 'Apocalipse 21:3–5',
+              hookVerse:
+                  'Eis o tabernáculo de Deus com os homens. Ele habitará com eles, e eles serão o Seu povo.',
+              hookNote: l.entryMissionEntradaBiblia07HookNote,
+              centralInsight: l.entryMissionEntradaBiblia07CentralInsight,
+              objective: l.entryMissionEntradaBiblia07Objective,
+              bankSection: 'apo-03-novo',
+              bankTrailSlug: 'apocalipse',
             ),
           ],
         ),

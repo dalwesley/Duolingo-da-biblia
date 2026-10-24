@@ -15,8 +15,6 @@ class RemoteConfigService extends ChangeNotifier {
 
   static const _keyReferralBonus = 'referral_first_mission_bonus';
   static const _keyRoomChestBonus = 'room_chest_bonus_steps';
-  static const _keyLeagueGroupSize = 'league_group_size';
-  static const _keyLeagueServerSettlement = 'league_server_settlement';
   static const _keyPlusLaunchFreeUntil = 'plus_launch_free_until';
   static const _keyPioneerUntil = 'pioneer_until';
   static const _keyGroupsEnabled = 'groups_enabled';
@@ -26,8 +24,6 @@ class RemoteConfigService extends ChangeNotifier {
   static const _defaults = <String, Object>{
     _keyReferralBonus: 50,
     _keyRoomChestBonus: 15,
-    _keyLeagueGroupSize: 20,
-    _keyLeagueServerSettlement: false,
     _keyPlusLaunchFreeUntil: '',
     _keyPioneerUntil: '',
     _keyGroupsEnabled: false,
@@ -87,13 +83,6 @@ class RemoteConfigService extends ChangeNotifier {
 
   /// Recompensa do baú de grupo na sala de estudo.
   int get roomChestBonusSteps => _int(_keyRoomChestBonus);
-
-  /// Tamanho do grupo (pool) de cada divisão da Caravana.
-  int get leagueGroupSize => _int(_keyLeagueGroupSize);
-
-  /// Subida/descida decidida pela Cloud Function `settleLeagueWeek`
-  /// (`users/{uid}.leagueResult`). Desligado: o app fecha a semana sozinho.
-  bool get leagueServerSettlement => _bool(_keyLeagueServerSettlement);
 
   /// Grupos (criar, entrar, convites). Desligado: a aba mostra "em breve"
   /// até existirem os planos Líder/Igreja. [debugGroupsEnabled] força no

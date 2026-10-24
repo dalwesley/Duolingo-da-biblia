@@ -38,6 +38,23 @@ void main() {
       ]);
     });
 
+    test('marks only the first occurrence of a repeated word', () {
+      const passage =
+          'havia trevas sobre a face do abismo, e o Espírito de Deus '
+          'pairava sobre as águas.';
+      final spans = buildTapSpans(passage, const [
+        QuestionOption(id: 'a', text: 'sobre'),
+        QuestionOption(id: 'b', text: 'havia'),
+      ]);
+
+      final taps = spans.where((s) => s.optionId != null).toList();
+      expect(taps.map((s) => '${s.optionId}:${s.text}'), [
+        'b:havia',
+        'a:sobre',
+      ]);
+      expect(spans.map((s) => s.text).join(), passage);
+    });
+
     test('does not match a word inside another word', () {
       const passage = 'Houve tarde e houve manhã, dia primeiro.';
       final spans = buildTapSpans(passage, const [

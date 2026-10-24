@@ -6,6 +6,7 @@ import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
 import '../models/pilgrim_chest.dart';
 import '../models/pilgrim_medals.dart';
+import '../models/bible_note.dart';
 import '../models/bible_reading_plan.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../models/daily_quest.dart';
@@ -18,6 +19,7 @@ import '../utils/content_filter.dart';
 import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
 import '../models/portrait_style.dart';
+import '../models/user_intent.dart';
 import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
 import 'remote_config_service.dart';
@@ -27,7 +29,7 @@ class AppSettings {
   final bool notifications;
   final int dailyGoal;
 
-  /// Compromisso de sequência (7 / 14 / 30). A meta diária continua 1 missão.
+  /// Compromisso de sequência (3 / 7 / 14 / 30). A meta diária continua 1 missão.
   final int streakGoal;
 
   /// Hora local do lembrete principal (6–22).
@@ -47,6 +49,9 @@ class AppSettings {
   /// Idioma da interface. [AppLanguage.device] segue o aparelho.
   final AppLanguage language;
 
+  /// "O que te traz aqui?" do onboarding. `null` = ainda não respondeu.
+  final UserIntent? intent;
+
   const AppSettings({
     this.sound = true,
     this.notifications = true,
@@ -59,6 +64,7 @@ class AppSettings {
     this.bibleReadingNight,
     this.portraitStyle = PortraitStyle.photo,
     this.language = AppLanguage.device,
+    this.intent,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -76,6 +82,7 @@ class AppSettings {
     bool? bibleReadingNight,
     PortraitStyle? portraitStyle,
     AppLanguage? language,
+    UserIntent? intent,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -89,6 +96,7 @@ class AppSettings {
       bibleReadingNight: bibleReadingNight ?? this.bibleReadingNight,
       portraitStyle: portraitStyle ?? this.portraitStyle,
       language: language ?? this.language,
+      intent: intent ?? this.intent,
     );
   }
 }
@@ -118,6 +126,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyLanguage = 'appLanguage';
   static const _keyBibleReadingNight = 'bibleReadingNight';
   static const _keyPortraitStyle = 'portraitStyle';
+  static const _keyIntent = 'intent';
 
   /// Legado — migrado para [_keyFontScale].
   static const _keyBibleFontScale = 'bibleFontScale';
@@ -202,7 +211,15 @@ class ProgressService extends ChangeNotifier {
     return trimmed.isEmpty || placeholderUserNames.contains(trimmed);
   }
 
-  AppSettings settings = const AppSettings();
+  AppSettings _settings = const AppSettings();
+  AppSettings get settings => _settings;
+
+  /// O motivo do onboarding decide a trilha ativa ([TrailProgress]).
+  set settings(AppSettings value) {
+    _settings = value;
+    TrailProgress.preferredTrailSlug = value.intent?.entryTrailSlug;
+  }
+
   String? nextSceneTitle;
   String? nextSceneTease;
   String? lastInsight;
@@ -275,6 +292,9 @@ class ProgressService extends ChangeNotifier {
   /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
   List<String> bibleBookmarks = [];
 
+  /// Anotações por versículo (mesma chave dos favoritos), com lápides.
+  Map<String, BibleNote> bibleNotes = {};
+
   /// Último capítulo aberto no leitor ("abbrev:capítulo", ex.: "gn:1").
   String? lastBibleSpot;
 
@@ -289,6 +309,11 @@ class ProgressService extends ChangeNotifier {
 
   /// Missões concluídas com 100% de acertos (slug, 1ª vez).
   List<String> perfectMissions = [];
+
+  /// Cenas concluídas por empréstimo: o mesmo banco foi feito em outra cena
+  /// ([completeMission] `alsoComplete`). Contam no progresso, mas não abrem
+  /// a trilha ([TrailProgress.startedTrails]).
+  List<String> borrowedMissions = [];
 
   /// Medalhas já exibidas na celebração (ids de [PilgrimMedals.defs]).
   List<String> celebratedMedalIds = [];
@@ -315,13 +340,22 @@ class ProgressService extends ChangeNotifier {
   /// Passos acumulados só nesta semana (comunidade / salas).
   int weeklySteps = 0;
 
+  /// Cenas novas concluídas nesta semana — firmam o nível da caravana.
+  int weeklyScenes = 0;
+
   /// Passos finais da semana anterior.
   int lastWeekSteps = 0;
+  int lastWeekScenes = 0;
   String? lastWeekKey;
 
-  /// Passos acumulados no mês atual (ranking mensal).
+  /// Passos de cenas novas no mês atual (ranking da Caravana).
   int monthlySteps = 0;
   String? monthlyMonth;
+
+  /// Passos do mês antes do 1º passo de [monthDayKey] — a Caravana compara
+  /// com eles para mostrar quem subiu hoje.
+  String? monthDayKey;
+  int monthDayStartSteps = 0;
   bool _loaded = false;
 
   /// Só persiste na nuvem depois de hidratar com sucesso (ou usuário novo).
@@ -378,7 +412,16 @@ class ProgressService extends ChangeNotifier {
   /// dia. Regra de produto: no máximo um fluxo de revisão por dia —
   /// as ofertas das outras revisões somem até amanhã.
   List<String> reviewSlotDays = [];
-  String? lastMissionSlug;
+
+  String? _lastMissionSlug;
+  String? get lastMissionSlug => _lastMissionSlug;
+
+  /// A última cena nova decide a trilha do CTA da Home ([TrailProgress]).
+  set lastMissionSlug(String? value) {
+    _lastMissionSlug = value;
+    TrailProgress.lastPlayedMissionSlug = value;
+  }
+
   String? lastMissionCompletedDate;
   String? lastBibleReadDate;
   bool bibleBeforeMission = false;
@@ -648,6 +691,17 @@ class ProgressService extends ChangeNotifier {
     await _save();
   }
 
+  /// Laboratório (debug): deixa o baú de hoje pronto de novo — marca a
+  /// missão do dia (sem dar passos) e esquece a abertura de hoje.
+  Future<void> debugRearmDailyChest() async {
+    if (!kDebugMode) return;
+    _ensureQuestDay();
+    if (!isQuestClaimed('mission')) questClaimed = [...questClaimed, 'mission'];
+    dailyChestOpenedDay = null;
+    await _save();
+    notifyListeners();
+  }
+
   /// Há revisão da semana pendente hoje.
   bool get weeklyReviewReady {
     final week = weeklyReviewWeekKey();
@@ -672,6 +726,17 @@ class ProgressService extends ChangeNotifier {
 
   /// Passos do mês corrente (0 se o contador ainda é de um mês anterior).
   int get currentMonthSteps => monthlyMonth == _monthKey() ? monthlySteps : 0;
+
+  /// Passos do mês no começo de hoje (sem passo hoje = o placar atual).
+  int get monthStartOfToday =>
+      monthDayKey == _todayKey() && monthlyMonth == _monthKey()
+      ? monthDayStartSteps
+      : currentMonthSteps;
+
+  /// Passos e cenas novas desta semana (0 se o contador ainda é da passada).
+  int get currentWeekSteps => weeklyWeek == _weekMondayKey() ? weeklySteps : 0;
+  int get currentWeekScenes =>
+      weeklyWeek == _weekMondayKey() ? weeklyScenes : 0;
 
   Future<void> load() async {
     // Progresso vive no Firebase após o login. Cold start usa defaults em memória.
@@ -728,7 +793,7 @@ class ProgressService extends ChangeNotifier {
       sound: prefs.getBool(_keySound) ?? true,
       notifications: prefs.getBool(_keyNotifications) ?? true,
       dailyGoal: prefs.getInt(_keyDailyGoal) ?? 1,
-      streakGoal: (prefs.getInt(_keyStreakGoal) ?? 7).clamp(7, 30),
+      streakGoal: (prefs.getInt(_keyStreakGoal) ?? 7).clamp(3, 30),
       reminderHour: (prefs.getInt(_keyReminderHour) ?? 10).clamp(6, 22),
       appearanceMode: AppearanceModeX.fromStorage(
         prefs.getString(_keyAppearanceMode),
@@ -749,6 +814,7 @@ class ProgressService extends ChangeNotifier {
         prefs.getString(_keyPortraitStyle),
       ),
       language: AppLanguageX.fromStorage(prefs.getString(_keyLanguage)),
+      intent: UserIntentX.tryParse(prefs.getString(_keyIntent)),
     );
   }
 
@@ -775,6 +841,11 @@ class ProgressService extends ChangeNotifier {
     }
     await prefs.setString(_keyPortraitStyle, settings.portraitStyle.storageKey);
     await prefs.setString(_keyLanguage, settings.language.storageKey);
+    if (settings.intent == null) {
+      await prefs.remove(_keyIntent);
+    } else {
+      await prefs.setString(_keyIntent, settings.intent!.storageKey);
+    }
     await prefs.setString(_keyBibleBrowseOrder, bibleBrowseOrder.storageKey);
   }
 
@@ -1019,10 +1090,12 @@ class ProgressService extends ChangeNotifier {
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
+    bibleNotes = {};
     lastBibleSpot = null;
     sharedVerses = [];
     sharedVerseCount = 0;
     perfectMissions = [];
+    borrowedMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
     claimedCornerRewards = [];
@@ -1035,10 +1108,14 @@ class ProgressService extends ChangeNotifier {
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;
+    weeklyScenes = 0;
     lastWeekSteps = 0;
+    lastWeekScenes = 0;
     lastWeekKey = null;
     monthlySteps = 0;
     monthlyMonth = null;
+    monthDayKey = null;
+    monthDayStartSteps = 0;
     goalJustReached = false;
     streakRepairAvailable = true;
     streakRepairMonth = null;
@@ -1100,11 +1177,13 @@ class ProgressService extends ChangeNotifier {
     } else {
       // Virada real de semana civil.
       lastWeekSteps = weeklySteps;
+      lastWeekScenes = weeklyScenes;
       lastWeekKey = weeklyWeek;
       weeklyWeek = week;
       weeklyProgressMap = {};
       weeklyClaimed = [];
       weeklySteps = 0;
+      weeklyScenes = 0;
     }
     _ensureStreakFreezeWeek();
   }
@@ -1228,22 +1307,28 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Passos de estudo (cena nova concluída): somam no total, no mês e na
-  /// semana — só eles decidem subida/descida na Caravana.
+  /// semana — só eles contam no ranking da Caravana.
   void _gainSceneSteps(int amount) {
     _ensureWeeklyWeek();
-    _gainSteps(amount);
+    _ensureMonthlyMonth();
+    final today = _todayKey();
+    if (monthDayKey != today) {
+      monthDayKey = today;
+      monthDayStartSteps = monthlySteps;
+    }
+    steps += amount;
+    monthlySteps += amount;
     weeklySteps += amount;
+    weeklyScenes += 1;
   }
 
   /// Passos de participação (missões, baús, bônus sociais, replay): somam
-  /// na jornada (total + mês), nunca na semana da Caravana.
+  /// só na jornada (total), nunca no ranking da Caravana.
   void _gainSteps(int amount) {
-    _ensureMonthlyMonth();
     steps += amount;
-    monthlySteps += amount;
   }
 
-  /// Bônus avulso (ex.: prêmio de promoção na liga). Não conta na semana.
+  /// Bônus avulso (ex.: prêmio ao subir de nível). Não conta no ranking.
   Future<void> grantBonusSteps(int amount) async {
     _gainSteps(amount);
     await _save();
@@ -1539,6 +1624,72 @@ class ProgressService extends ChangeNotifier {
     await _save();
     notifyListeners();
     return true;
+  }
+
+  BibleNote? verseNote(String bookAbbrev, int chapter, int verse) {
+    final note = bibleNotes[bibleBookmarkKey(bookAbbrev, chapter, verse)];
+    return note == null || note.deleted ? null : note;
+  }
+
+  /// Grava (ou troca) a anotação; [tag] nulo e texto vazio apagam.
+  Future<void> setVerseNote(
+    String bookAbbrev,
+    int chapter,
+    int verse, {
+    required BibleNoteTag? tag,
+    required String text,
+  }) async {
+    final key = bibleBookmarkKey(bookAbbrev, chapter, verse);
+    final trimmed = text.trim();
+    if (tag == null && trimmed.isEmpty && bibleNotes[key] == null) return;
+    bibleNotes = {
+      ...bibleNotes,
+      key: BibleNote(
+        tag: tag,
+        text: tag == null ? '' : trimmed,
+        updatedAtMs: DateTime.now().millisecondsSinceEpoch,
+      ),
+    };
+    await _save();
+    notifyListeners();
+  }
+
+  /// Anotações vivas, mais recentes primeiro.
+  List<({String abbrev, int chapter, int verse, BibleNote note})> parseNotes() {
+    final out = <({String abbrev, int chapter, int verse, BibleNote note})>[];
+    for (final e in bibleNotes.entries) {
+      if (e.value.deleted) continue;
+      final parts = e.key.split(':');
+      if (parts.length != 3) continue;
+      final chapter = int.tryParse(parts[1]);
+      final verse = int.tryParse(parts[2]);
+      if (chapter == null || verse == null) continue;
+      out.add((
+        abbrev: parts[0],
+        chapter: chapter,
+        verse: verse,
+        note: e.value,
+      ));
+    }
+    out.sort((a, b) => b.note.updatedAtMs.compareTo(a.note.updatedAtMs));
+    return out;
+  }
+
+  /// Por chave, a edição mais recente vence (lápides inclusive).
+  static Map<String, BibleNote> _mergeBibleNotes(
+    Map<String, BibleNote> local,
+    dynamic cloud,
+  ) {
+    if (cloud is! Map) return local;
+    final out = Map<String, BibleNote>.from(local);
+    for (final e in cloud.entries) {
+      final note = BibleNote.fromJson(e.value);
+      if (note == null) continue;
+      final key = e.key.toString();
+      final mine = out[key];
+      if (mine == null || note.updatedAtMs > mine.updatedAtMs) out[key] = note;
+    }
+    return out;
   }
 
   /// Favoritos recentes primeiro (já ordenados).
@@ -2300,12 +2451,17 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Retorna os passos efetivamente concedidos (já com fator de replay).
+  ///
+  /// [alsoComplete]: cenas com o mesmo banco de perguntas (trilha de entrada
+  /// ↔ cena de origem). Ficam concluídas junto, sem passos nem quests — senão
+  /// a pessoa reencontra as mesmas perguntas e ganha a cena duas vezes.
   Future<int> completeMission(
     String slug,
     int rewardSteps, {
     bool isReplay = false,
     int correct = 0,
     int total = 0,
+    Iterable<String> alsoComplete = const [],
   }) async {
     var awarded = 0;
     await _batch(() async {
@@ -2343,10 +2499,23 @@ class ProgressService extends ChangeNotifier {
           // Replay de modo selado (sessão) ou passo já limpo: não grava progresso.
           isReplay = true;
         } else {
-          completedMissions = [...completedMissions, slug];
-          if (!missionCompletedOn.containsKey(slug)) {
-            missionCompletedOn = {...missionCompletedOn, slug: today};
+          final linked = [
+            for (final s in alsoComplete)
+              if (s != slug && !completedMissions.contains(s)) s,
+          ];
+          completedMissions = [...completedMissions, slug, ...linked];
+          // Jogada de verdade deixa de ser empréstimo (ex.: após trocar
+          // de modo, que zera as cenas da trilha).
+          if (linked.isNotEmpty || borrowedMissions.contains(slug)) {
+            borrowedMissions = {
+              ...borrowedMissions.where((s) => s != slug),
+              ...linked,
+            }.toList();
           }
+          missionCompletedOn = {
+            for (final s in [slug, ...linked]) s: today,
+            ...missionCompletedOn,
+          };
         }
       }
 
@@ -2577,12 +2746,16 @@ class ProgressService extends ChangeNotifier {
       'hasSeenOnboarding': hasSeenOnboarding,
       'weeklyXp': weeklySteps,
       'weeklySteps': weeklySteps,
+      'weeklyScenes': weeklyScenes,
       'lastWeekXp': lastWeekSteps,
       'lastWeekSteps': lastWeekSteps,
+      'lastWeekScenes': lastWeekScenes,
       'lastWeekKey': lastWeekKey,
       'weeklyWeek': weeklyWeek,
       'monthlySteps': monthlySteps,
       'monthlyMonth': monthlyMonth,
+      'monthDayKey': monthDayKey,
+      'monthDayStartSteps': monthDayStartSteps,
       'streakFreezeAvailable': streakFreezeAvailable,
       'streakFreezeWeek': streakFreezeWeek,
       'frozenDates': frozenDates,
@@ -2605,9 +2778,13 @@ class ProgressService extends ChangeNotifier {
       'memoryRewardDay': memoryRewardDay,
       'readBibleChapters': readBibleChapters,
       'bibleBookmarks': bibleBookmarks,
+      'bibleNotes': {
+        for (final e in bibleNotes.entries) e.key: e.value.toJson(),
+      },
       'sharedVerses': sharedVerses,
       'sharedVerseCount': sharedVerseCount,
       'perfectMissions': perfectMissions,
+      'borrowedMissions': borrowedMissions,
       'celebratedMedalIds': celebratedMedalIds,
       'medalCelebrationSeeded': medalCelebrationSeeded,
       'medalVaultCompleteCelebrated': medalVaultCompleteCelebrated,
@@ -2664,6 +2841,7 @@ class ProgressService extends ChangeNotifier {
         if (settings.bibleReadingNight != null)
           'bibleReadingNight': settings.bibleReadingNight,
         'portraitStyle': settings.portraitStyle.storageKey,
+        if (settings.intent != null) 'intent': settings.intent!.storageKey,
       },
     };
   }
@@ -2796,6 +2974,12 @@ class ProgressService extends ChangeNotifier {
         weeklySteps = cloudWeekly;
       }
     }
+    if (data.containsKey('weeklyScenes')) {
+      final cloudScenes = (data['weeklyScenes'] as num?)?.toInt();
+      if (cloudScenes != null && cloudScenes > weeklyScenes) {
+        weeklyScenes = cloudScenes;
+      }
+    }
     if (data.containsKey('weeklyWeek')) {
       weeklyWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
     }
@@ -2835,12 +3019,26 @@ class ProgressService extends ChangeNotifier {
           (data['lastWeekSteps'] as num?)?.toInt() ??
           (data['lastWeekXp'] as num?)?.toInt() ??
           lastWeekSteps;
+      lastWeekScenes =
+          (data['lastWeekScenes'] as num?)?.toInt() ?? lastWeekScenes;
       lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
       final cloudMonthly = (data['monthlySteps'] as num?)?.toInt();
       if (cloudMonthly != null && cloudMonthly > monthlySteps) {
         monthlySteps = cloudMonthly;
       }
       monthlyMonth = data['monthlyMonth'] as String? ?? monthlyMonth;
+      // Âncora mais nova vence; no mesmo dia, a mais baixa (a do 1º passo).
+      final cloudDay = data['monthDayKey'] as String?;
+      final cloudDayStart = (data['monthDayStartSteps'] as num?)?.toInt();
+      if (cloudDay != null && cloudDayStart != null) {
+        final local = monthDayKey;
+        if (local == null || cloudDay.compareTo(local) > 0) {
+          monthDayKey = cloudDay;
+          monthDayStartSteps = cloudDayStart;
+        } else if (cloudDay == local && cloudDayStart < monthDayStartSteps) {
+          monthDayStartSteps = cloudDayStart;
+        }
+      }
       streakFreezeAvailable =
           data['streakFreezeAvailable'] as bool? ?? streakFreezeAvailable;
       streakFreezeWeek =
@@ -2963,6 +3161,9 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['bibleBookmarks']),
         );
       }
+      if (data.containsKey('bibleNotes')) {
+        bibleNotes = _mergeBibleNotes(bibleNotes, data['bibleNotes']);
+      }
       if (data.containsKey('sharedVerses')) {
         sharedVerses = _unionStringLists(
           sharedVerses,
@@ -2989,6 +3190,12 @@ class ProgressService extends ChangeNotifier {
         } else if (cloudPerfect.isNotEmpty) {
           perfectMissions = {...perfectMissions, ...cloudPerfect}.toList();
         }
+      }
+      if (data.containsKey('borrowedMissions')) {
+        borrowedMissions = {
+          ...borrowedMissions,
+          ..._asStringList(data['borrowedMissions']),
+        }.toList();
       }
       if (data.containsKey('celebratedMedalIds')) {
         final cloudCelebrated = _asStringList(data['celebratedMedalIds']);
@@ -3305,7 +3512,7 @@ class ProgressService extends ChangeNotifier {
           dailyGoal: (s['dailyGoal'] as num?)?.toInt() ?? settings.dailyGoal,
           streakGoal:
               ((s['streakGoal'] as num?)?.toInt() ?? settings.streakGoal).clamp(
-                7,
+                3,
                 30,
               ),
           reminderHour:
@@ -3331,6 +3538,8 @@ class ProgressService extends ChangeNotifier {
           language: s.containsKey('language')
               ? AppLanguageX.fromStorage(s['language'] as String?)
               : settings.language,
+          intent:
+              UserIntentX.tryParse(s['intent'] as String?) ?? settings.intent,
         );
       }
     }
@@ -3538,9 +3747,11 @@ class ProgressService extends ChangeNotifier {
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
+    bibleNotes = {};
     sharedVerses = [];
     sharedVerseCount = 0;
     perfectMissions = [];
+    borrowedMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
     claimedCornerRewards = [];
@@ -3553,10 +3764,14 @@ class ProgressService extends ChangeNotifier {
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;
+    weeklyScenes = 0;
     lastWeekSteps = 0;
+    lastWeekScenes = 0;
     lastWeekKey = null;
     monthlySteps = 0;
     monthlyMonth = _monthKey();
+    monthDayKey = null;
+    monthDayStartSteps = 0;
     _dropOrphanedWalkStats();
     await _persistSettingsLocal();
     await _save();

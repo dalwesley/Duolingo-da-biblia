@@ -819,6 +819,26 @@ class _LegalLinks extends StatelessWidget {
 
   const _LegalLinks({required this.sub});
 
+  /// Restaurar sempre responde: achou, não achou ou falhou. Calado, a
+  /// pessoa não sabe se o toque funcionou (e a Apple testa este botão).
+  Future<void> _restore(BuildContext context) async {
+    final l10n = context.l10n;
+    final found = await sub.restore();
+    if (!context.mounted) return;
+    final failed = found == null && sub.lastError != null;
+    if (found == null && !failed) return;
+    await showAppToastFor(
+      context,
+      message: failed
+          ? sub.lastError!
+          : found!
+          ? l10n.paywallRestoreDone
+          : l10n.paywallRestoreNone,
+      glyph: found == true ? CinematicGlyph.check : CinematicGlyph.wrong,
+      tone: found == true ? AppToastTone.accent : AppToastTone.warn,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
@@ -828,7 +848,7 @@ class _LegalLinks extends StatelessWidget {
       children: [
         TextCta(
           label: l10n.paywallRestore,
-          onTap: sub.loading ? null : () => sub.restore(),
+          onTap: sub.loading ? null : () => _restore(context),
           color: a.text,
         ),
         TextCta(
