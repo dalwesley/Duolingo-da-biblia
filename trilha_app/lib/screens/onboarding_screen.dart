@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:math' as math;
-import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -1054,15 +1053,7 @@ class _OriginBeat extends StatelessWidget {
             offset: Offset(0, -48 * out),
             child: Transform.scale(scale: 1 - 0.02 * out, child: child),
           );
-          if (out > 0.01) {
-            verse = ImageFiltered(
-              imageFilter: ui.ImageFilter.blur(
-                sigmaX: 10 * out,
-                sigmaY: 10 * out,
-              ),
-              child: verse,
-            );
-          }
+          // Blur animado é caro demais no prólogo — dissolve só com opacity.
           return Opacity(opacity: 1 - out, child: verse);
         },
         child: Column(
@@ -1269,7 +1260,6 @@ class _Mist extends StatelessWidget {
   final Animation<double> scene;
   final double from;
   final double to;
-  final double blur;
   final double rise;
   final Widget child;
 
@@ -1278,7 +1268,8 @@ class _Mist extends StatelessWidget {
     required this.from,
     required this.to,
     required this.child,
-    this.blur = 8,
+    // ignore: unused_element_parameter — API antiga; blur saiu por perf.
+    double blur = 8,
     this.rise = 10,
   });
 
@@ -1289,17 +1280,11 @@ class _Mist extends StatelessWidget {
       builder: (context, child) {
         final raw = ((scene.value - from) / (to - from)).clamp(0.0, 1.0);
         final t = AppMotion.enter.transform(raw);
-        final sigma = blur * (1 - t);
-        Widget out = Transform.translate(
+        // Sem blur por frame — fade + rise bastam e mantêm 60fps.
+        final out = Transform.translate(
           offset: Offset(0, rise * (1 - t)),
           child: child,
         );
-        if (sigma > 0.05) {
-          out = ImageFiltered(
-            imageFilter: ui.ImageFilter.blur(sigmaX: sigma, sigmaY: sigma),
-            child: out,
-          );
-        }
         return Opacity(opacity: t, child: out);
       },
       child: child,

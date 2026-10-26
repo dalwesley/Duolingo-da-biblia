@@ -124,6 +124,7 @@
   "bibleNoteHint": "O que este versículo fala com você? (opcional)",
   "bibleNoteSave": "Salvar anotação",
   "bibleNoteSaved": "Anotação salva",
+  "bibleNoteShare": "Compartilhar anotação",
   "bibleNoteTagDeus": "Deus falando",
   "bibleNoteTagFamilia": "Família",
   "bibleNoteTagJesus": "Jesus falando",
@@ -246,6 +247,16 @@
   },
   "bibleShareAsText": "Compartilhar como texto",
   "bibleShareImage": "Compartilhar imagem",
+  "bibleShareIncludeNote": "Incluir minha anotação",
+  "bibleShareNoteBy": "Anotação de {name}",
+  "@bibleShareNoteBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleShareNoteMine": "Minha anotação",
   "bibleSharePreparing": "Preparando…",
   "bibleShareTextFooter": "Via Stway",
   "bibleShareTitle": "Compartilhar versículo",
@@ -1929,9 +1940,26 @@
     }
   },
   "homeLampsTitle": "Lâmpadas",
+  "homeLiturgyReadCaption": "Ler {ref}",
+  "@homeLiturgyReadCaption": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
   "homeMoodAlive": "Em dia",
   "homeMoodDusty": "Sequência em risco",
   "homeMoodFrozen": "Protegido pelo gelo",
+  "homeMoreSeeLess": "Ver menos",
+  "homeMoreSeeMore": "Ver mais · {count}",
+  "@homeMoreSeeMore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "homeMoreToday": "Mais para hoje",
   "homeOpenProfile": "Abrir perfil de {name}",
   "@homeOpenProfile": {
@@ -1950,8 +1978,15 @@
       }
     }
   },
-  "homeReviewMistakesCaption": "Erros para reforçar",
-  "homeReviewTitle": "Revisão",
+  "homeReviewMistakesCaption": "{count, plural, =1{1 pergunta para refazer} other{{count} perguntas para refazer}}",
+  "@homeReviewMistakesCaption": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeReviewTitle": "Revisar erros",
   "homeSeasonChipDoneSemantics": "{season}. Dia {day} feito: {dayTitle}",
   "@homeSeasonChipDoneSemantics": {
     "placeholders": {
@@ -3932,6 +3967,7 @@
       }
     }
   },
+  "notifMedalNearTitle": "Uma medalha está perto",
   "notifMemoryBody": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar reforça o aprendizado.}}",
   "@notifMemoryBody": {
     "placeholders": {
@@ -4015,6 +4051,22 @@
   "notifTomorrowTitle": "Amanhã",
   "notifTrialEndingBody": "Gerencie sua assinatura Peregrino+ nas configurações se não quiser continuar.",
   "notifTrialEndingTitle": "Seu teste grátis termina amanhã",
+  "notifWalkStartsBody": "Dia 1 de {total}: hoje a caravana caminha junto.",
+  "@notifWalkStartsBody": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "notifWalkStartsTitle": "{title} começou",
+  "@notifWalkStartsTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
   "notifWeeklyLeftBody": "{count, plural, =1{Falta 1 passo semanal. Feche o ciclo com calma.} other{Ainda faltam {count} passos semanais. A semana ainda é sua.}}",
   "@notifWeeklyLeftBody": {
     "placeholders": {
@@ -6334,6 +6386,79 @@
   "verseStudyTabWord": "Palavra",
   "verseStudyThisForm": "Nesta forma",
   "verseStudyVerseUnavailable": "Versículo indisponível nesta tradução.",
+  "walkTogetherDayOf": "Dia {day} de {total}",
+  "@walkTogetherDayOf": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTogetherDays": "{count, plural, =1{1 dia caminhado juntos} other{{count} dias caminhados juntos}}",
+  "@walkTogetherDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTogetherInvite": "Chamar alguém",
+  "walkTogetherJoin": "Entrar na caminhada",
+  "walkTogetherJoined": "Você está dentro",
+  "walkTogetherKicker": "Caminhada coletiva",
+  "walkTogetherOpen": "Abrir a caminhada",
+  "walkTogetherPitch": "{count} dias, uma cena por dia, com a caravana inteira.",
+  "@walkTogetherPitch": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTogetherShareText": "{name} vai fazer a caminhada {title} no Stway: uma cena por dia, a partir de {start}. Vem junto?\n\nBaixe: {url}",
+  "@walkTogetherShareText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      },
+      "start": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "walkTogetherStartsIn": "{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}",
+  "@walkTogetherStartsIn": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTogetherToday": "{count, plural, =0{ninguém caminhou hoje ainda} =1{1 caminhou hoje} other{{count} caminharam hoje}}",
+  "@walkTogetherToday": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTogetherWalkers": "{count, plural, =0{Seja o primeiro a entrar} =1{1 peregrino na caminhada} other{{count} peregrinos na caminhada}}",
+  "@walkTogetherWalkers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "waveCta": "Acenar",
   "weeklyReviewDoneBody": "Revisão feita. Na próxima semana tem outra.",
   "weeklyReviewEmptyBody": "{count, plural, =1{Faça pelo menos 1 cena nova na semana para ter a revisão.} other{Faça pelo menos {count} cenas novas na semana para ter a revisão.}}",

@@ -557,6 +557,7 @@ class _ChapterPage extends StatefulWidget {
 
 class _ChapterPageState extends State<_ChapterPage> {
   late List<GlobalKey> _verseKeys;
+  final _scroll = ScrollController();
   int? _selected;
   int? _speaking;
   bool _jumpedToHighlight = false;
@@ -588,6 +589,7 @@ class _ChapterPageState extends State<_ChapterPage> {
 
   @override
   void dispose() {
+    _scroll.dispose();
     TtsService.instance.removeListener(_onTts);
     super.dispose();
   }
@@ -605,15 +607,30 @@ class _ChapterPageState extends State<_ChapterPage> {
   void _reveal(int verse, {bool animate = true}) {
     if (verse < 1 || verse > _verseKeys.length) return;
     final ctx = _verseKeys[verse - 1].currentContext;
-    if (ctx == null) return;
-    Scrollable.ensureVisible(
-      ctx,
-      alignment: 0.28,
-      duration: animate && !MediaQuery.disableAnimationsOf(context)
-          ? const Duration(milliseconds: 420)
-          : Duration.zero,
-      curve: AppMotion.move,
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        alignment: 0.28,
+        duration: animate && !MediaQuery.disableAnimationsOf(context)
+            ? const Duration(milliseconds: 420)
+            : Duration.zero,
+        curve: AppMotion.move,
+      );
+      return;
+    }
+    // Versículo ainda não montado (lista virtualizada): aproxima e tenta de novo.
+    if (!_scroll.hasClients) return;
+    final estimate = (180.0 + (verse - 1) * 72.0).clamp(
+      0.0,
+      _scroll.position.maxScrollExtent,
     );
+    _scroll.jumpTo(estimate);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final again = _verseKeys[verse - 1].currentContext;
+      if (again == null) return;
+      Scrollable.ensureVisible(again, alignment: 0.28, duration: Duration.zero);
+    });
   }
 
   void _onTts() {
@@ -727,60 +744,77 @@ class _ChapterPageState extends State<_ChapterPage> {
     final width = MediaQuery.sizeOf(context).width;
     final side = width > 720 ? (width - 640) / 2 : AppSpace.xl + 4;
 
-    return SingleChildScrollView(
+    // +2: cabeçalho (0) e rodapé (último). Versos no meio, sob demanda.
+    return ListView.builder(
+      controller: _scroll,
       padding: EdgeInsets.fromLTRB(side, pad.top + 96, side, pad.bottom + 120),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            _book.name,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 28, color: reading.ink),
-          ),
-          const SizedBox(height: AppSpace.xs),
-          Text(
-            context.l10n.bibleChapterLabel(widget.chapter),
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 16, color: reading.verseNumber),
-          ),
-          const SizedBox(height: AppSpace.sm),
-          Text(
-            [
-              context.l10n.bibleVerseCount(verses.length),
-              context.l10n.planMinutes(minutes),
-              if (alreadyRead) context.l10n.bibleReaderReadTag,
-            ].join(' · '),
-            textAlign: TextAlign.center,
-            style: reading.metaStyle,
-          ),
-          const SizedBox(height: AppSpace.lg),
-          RelicHairline(accent: reading.verseNumber),
-          const SizedBox(height: AppSpace.xl),
-          for (var i = 0; i < verses.length; i++)
-            _verseBlock(
-              i,
-              verses[i],
-              reading,
-              highlighted:
-                  widget.highlightStart != null &&
-                  i + 1 >= widget.highlightStart! &&
-                  i + 1 <= (widget.highlightEnd ?? widget.highlightStart!),
-              saved: saved.contains(i + 1),
-              noteColor: noteColors[i + 1],
-            ),
-          const SizedBox(height: AppSpace.xxxl),
-          _ChapterEnd(
-            reading: reading,
-            books: widget.books,
-            bookName: _book.name,
-            chapter: widget.chapter,
-            alreadyRead: alreadyRead,
-            next: widget.next,
-            onComplete: widget.onComplete,
-            onNext: widget.onNext,
-          ),
-        ],
-      ),
+      itemCount: verses.length + 2,
+      itemBuilder: (context, index) {
+        if (index == 0) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                _book.name,
+                textAlign: TextAlign.center,
+                style: AppTypography.display(size: 28, color: reading.ink),
+              ),
+              const SizedBox(height: AppSpace.xs),
+              Text(
+                context.l10n.bibleChapterLabel(widget.chapter),
+                textAlign: TextAlign.center,
+                style: AppTypography.title(
+                  size: 16,
+                  color: reading.verseNumber,
+                ),
+              ),
+              const SizedBox(height: AppSpace.sm),
+              Text(
+                [
+                  context.l10n.bibleVerseCount(verses.length),
+                  context.l10n.planMinutes(minutes),
+                  if (alreadyRead) context.l10n.bibleReaderReadTag,
+                ].join(' · '),
+                textAlign: TextAlign.center,
+                style: reading.metaStyle,
+              ),
+              const SizedBox(height: AppSpace.lg),
+              RelicHairline(accent: reading.verseNumber),
+              const SizedBox(height: AppSpace.xl),
+            ],
+          );
+        }
+        if (index == verses.length + 1) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const SizedBox(height: AppSpace.xxxl),
+              _ChapterEnd(
+                reading: reading,
+                books: widget.books,
+                bookName: _book.name,
+                chapter: widget.chapter,
+                alreadyRead: alreadyRead,
+                next: widget.next,
+                onComplete: widget.onComplete,
+                onNext: widget.onNext,
+              ),
+            ],
+          );
+        }
+        final i = index - 1;
+        return _verseBlock(
+          i,
+          verses[i],
+          reading,
+          highlighted:
+              widget.highlightStart != null &&
+              i + 1 >= widget.highlightStart! &&
+              i + 1 <= (widget.highlightEnd ?? widget.highlightStart!),
+          saved: saved.contains(i + 1),
+          noteColor: noteColors[i + 1],
+        );
+      },
     );
   }
 }
@@ -1350,6 +1384,7 @@ Future<void> _showVerseActions(
                         chapter: chapter,
                         verse: verse,
                         text: text,
+                        note: progress.verseNote(book.abbrev, chapter, verse),
                       );
                     },
                   ),
@@ -1458,6 +1493,8 @@ Future<void> _showVerseActions(
 /// Último tema escolhido — a próxima anotação já nasce nele.
 BibleNoteTag? _lastNoteTag;
 
+enum _NoteOutcome { saved, share, deleted }
+
 /// Anotar: tema com cor (pinta o versículo) e texto opcional.
 Future<void> _showNoteEditor(
   BuildContext context, {
@@ -1470,7 +1507,7 @@ Future<void> _showNoteEditor(
   final progress = context.read<ProgressService>();
   final existing = progress.verseNote(book.abbrev, chapter, verse);
 
-  final saved = await showAppSheet<bool>(
+  final outcome = await showAppSheet<_NoteOutcome>(
     context,
     builder: (ctx) => _NoteEditorSheet(
       reading: reading,
@@ -1481,7 +1518,17 @@ Future<void> _showNoteEditor(
       existing: existing,
     ),
   );
-  if (saved == true && context.mounted) {
+  if (!context.mounted) return;
+  if (outcome == _NoteOutcome.share) {
+    await showShareVerseSheet(
+      context,
+      bookName: book.name,
+      chapter: chapter,
+      verse: verse,
+      text: text,
+      note: progress.verseNote(book.abbrev, chapter, verse),
+    );
+  } else if (outcome == _NoteOutcome.saved) {
     showAppToastFor(
       context,
       message: context.l10n.bibleNoteSaved,
@@ -1535,6 +1582,20 @@ class _NoteEditorSheetState extends State<_NoteEditorSheet> {
     final book = widget.book;
     final existing = widget.existing;
     final progress = context.read<ProgressService>();
+
+    Future<void> save(_NoteOutcome outcome) async {
+      _lastNoteTag = _tag;
+      await progress.setVerseNote(
+        book.abbrev,
+        widget.chapter,
+        widget.verse,
+        tag: _tag,
+        text: _controller.text,
+      );
+      ActHaptics.light();
+      if (context.mounted) Navigator.pop(context, outcome);
+    }
+
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.circular(AppRadii.sm),
       borderSide: BorderSide(color: reading.pageBorder),
@@ -1620,20 +1681,14 @@ class _NoteEditorSheetState extends State<_NoteEditorSheet> {
               CopperCta(
                 label: context.l10n.bibleNoteSave,
                 trailing: null,
-                onTap: _tag == null
-                    ? null
-                    : () async {
-                        _lastNoteTag = _tag;
-                        await progress.setVerseNote(
-                          book.abbrev,
-                          widget.chapter,
-                          widget.verse,
-                          tag: _tag,
-                          text: _controller.text,
-                        );
-                        ActHaptics.light();
-                        if (context.mounted) Navigator.pop(context, true);
-                      },
+                onTap: _tag == null ? null : () => save(_NoteOutcome.saved),
+              ),
+              const SizedBox(height: AppSpace.xs),
+              TextCta(
+                label: context.l10n.bibleNoteShare,
+                leading: CinematicGlyph.share,
+                color: reading.ink,
+                onTap: _tag == null ? null : () => save(_NoteOutcome.share),
               ),
               if (existing != null) ...[
                 const SizedBox(height: AppSpace.sm),
@@ -1651,7 +1706,9 @@ class _NoteEditorSheetState extends State<_NoteEditorSheet> {
                       text: '',
                     );
                     ActHaptics.light();
-                    if (context.mounted) Navigator.pop(context, false);
+                    if (context.mounted) {
+                      Navigator.pop(context, _NoteOutcome.deleted);
+                    }
                   },
                 ),
               ],

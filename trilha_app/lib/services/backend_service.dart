@@ -6,12 +6,14 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../data/season_walk_catalog.dart';
 import '../firebase_options.dart';
 import '../l10n/l10n_global.dart';
 import '../models/recognition.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../models/portrait_style.dart';
+import '../utils/test_device.dart';
 import 'analytics_service.dart';
 import 'league_service.dart';
 import 'progress_service.dart';
@@ -75,6 +77,21 @@ class CloudPlayer {
       dayStartSteps: dayStartSteps,
     );
   }
+}
+
+/// Pulso da Caminhada coletiva da temporada (`seasonWalks/{id}/walkers`).
+class SeasonWalkPulse {
+  final int walkers;
+  final int walkedToday;
+
+  /// Soma dos dias caminhados por todo mundo.
+  final int daysTogether;
+
+  const SeasonWalkPulse({
+    required this.walkers,
+    required this.walkedToday,
+    required this.daysTogether,
+  });
 }
 
 /// Resultado de uma tentativa de login (Google ou Apple).
@@ -808,12 +825,6 @@ class BackendService extends ChangeNotifier {
 
   String _todayKey() => DateTime.now().toIso8601String().substring(0, 10);
 
-  static String? _fresherDateKey(String? a, String? b) {
-    if (a == null || a.isEmpty) return b;
-    if (b == null || b.isEmpty) return a;
-    return a.compareTo(b) >= 0 ? a : b;
-  }
-
   static String? _readPhotoUrl(Map<String, dynamic> data) {
     final raw = (data['photoUrl'] as String?)?.trim();
     return (raw != null && raw.isNotEmpty) ? raw : null;
@@ -1042,6 +1053,8 @@ class BackendService extends ChangeNotifier {
     }
 
     // 2) Rankings — best-effort. Um doc recusado não pode derrubar os outros.
+    // Robô de teste automático não entra em placar nenhum.
+    if (await TestDevice.isTestLab()) return true;
     final rankingWeek = _rankingWeekKey(progress, week);
     final rankingMonth = progress.monthlyMonth ?? LeagueService.monthKey();
     final today = _todayKey();
@@ -1078,6 +1091,21 @@ class BackendService extends ChangeNotifier {
         portraitStyle: portraitStyle,
       ),
     );
+    // Caminhada coletiva: um doc por peregrino que entrou, para a Caravana
+    // contar quem está junto e quem caminhou hoje.
+    final walk = SeasonWalkCatalog.current();
+    if (progress.hasJoinedWalk(walk.id) &&
+        !DateTime.now().isAfter(walk.end.add(const Duration(days: 1)))) {
+      final dates = [...progress.walkDatesFor(walk.id)]..sort();
+      await _putRankingDoc('seasonWalks/${walk.id}/walkers/$_uid', {
+        'uid': _uid,
+        'name': progress.userName,
+        'portraitStyle': portraitStyle.storageKey,
+        'days': dates.length,
+        'lastDay': dates.isEmpty ? null : dates.last,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+    }
     final effectiveRoom = roomCode ?? progress.activeRoomCode;
     if (effectiveRoom != null && effectiveRoom.isNotEmpty) {
       await _putRankingDoc('rooms/$effectiveRoom/members/$_uid', {
@@ -1848,120 +1876,29 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  /// Jogadores reais do ranking geral (exclui o próprio usuário).
-  ///
-  /// Prefere o espelho leve `overallPlayers` (ordenado por xp). `users/` entra
-  /// só como complemento — docs cheios sem orderBy falhavam em aparelhos
-  /// lentos e devolviam um recorte arbitrário (listas diferentes por login).
-  Future<List<CloudPlayer>> fetchOverallPlayers({int limit = 50}) async {
-    if (!isActive) return const [];
+  /// Quantos entraram na Caminhada, quantos caminharam hoje e quantos dias
+  /// foram caminhados juntos. `null` sem rede.
+  Future<SeasonWalkPulse?> fetchSeasonWalkPulse(String campaignId) async {
+    if (!isActive) return null;
     try {
-      final byUid = <String, CloudPlayer>{};
-      final fetchLimit = limit + 5;
-
-      void ingest(QueryDocumentSnapshot<Map<String, dynamic>> d) {
-        if (d.id == _uid) return;
-        final data = d.data();
-        final steps =
-            (data['steps'] as num?)?.toInt() ??
-            (data['xp'] as num?)?.toInt() ??
-            0;
-        final rawName = (data['userName'] as String?)?.trim().isNotEmpty == true
-            ? data['userName'] as String
-            : (data['name'] as String?)?.trim().isNotEmpty == true
-            ? data['name'] as String
-            : 'Aprendiz';
-        final lastWalk = _readActivityDate(data, 'lastWalkDate');
-        final lastSeen = _readActivityDate(data, 'lastSeenDate');
-        final photo = _readPhotoUrl(data);
-        final style = _readPortraitStyle(data);
-        final prev = byUid[d.id];
-        if (prev == null || steps > prev.steps) {
-          byUid[d.id] = CloudPlayer(
-            uid: d.id,
-            name: rawName,
-            steps: steps,
-            lastWalkDate: lastWalk ?? prev?.lastWalkDate,
-            lastSeenDate: _fresherDateKey(prev?.lastSeenDate, lastSeen),
-            photoUrl: photo ?? prev?.photoUrl,
-            portraitStyle: style ?? prev?.portraitStyle ?? PortraitStyle.photo,
-          );
-        } else if (prev.steps == steps &&
-            ProgressService.isPlaceholderUserName(prev.name) &&
-            !ProgressService.isPlaceholderUserName(rawName)) {
-          byUid[d.id] = CloudPlayer(
-            uid: d.id,
-            name: rawName,
-            steps: steps,
-            lastWalkDate: lastWalk ?? prev.lastWalkDate,
-            lastSeenDate: _fresherDateKey(prev.lastSeenDate, lastSeen),
-            photoUrl: photo ?? prev.photoUrl,
-            portraitStyle: style ?? prev.portraitStyle,
-          );
-        } else if (prev.steps == steps) {
-          byUid[d.id] = CloudPlayer(
-            uid: d.id,
-            name: prev.name,
-            steps: prev.steps,
-            lastWalkDate: prev.lastWalkDate ?? lastWalk,
-            lastSeenDate: _fresherDateKey(prev.lastSeenDate, lastSeen),
-            photoUrl: prev.photoUrl ?? photo,
-            portraitStyle: prev.portraitStyle != PortraitStyle.photo
-                ? prev.portraitStyle
-                : (style ?? prev.portraitStyle),
-          );
-        } else {
-          byUid[d.id] = prev.withPhoto(photo).withStyle(style);
-        }
-      }
-
-      try {
-        final overallSnap = await _db
-            .collection('overallPlayers')
-            .orderBy('xp', descending: true)
-            .limit(fetchLimit)
-            .get();
-        for (final d in overallSnap.docs) {
-          ingest(d);
-        }
-      } catch (e) {
-        debugPrint('Ranking geral via overallPlayers (orderBy) falhou: $e');
-        try {
-          final overallSnap = await _db
-              .collection('overallPlayers')
-              .limit(fetchLimit)
-              .get();
-          for (final d in overallSnap.docs) {
-            ingest(d);
-          }
-        } catch (e2) {
-          debugPrint('Ranking geral via overallPlayers falhou: $e2');
-        }
-      }
-
-      // Complementa nome/foto a partir de users/ — docs já têm photoUrl do Auth.
-      try {
-        final usersSnap = await _db
-            .collection('users')
-            .orderBy('steps', descending: true)
-            .limit(fetchLimit)
-            .get();
-        for (final d in usersSnap.docs) {
-          ingest(d);
-        }
-      } catch (e) {
-        debugPrint('Ranking geral via users/ falhou: $e');
-      }
-
-      final list = byUid.values.toList()
-        ..sort((a, b) {
-          if (b.steps != a.steps) return b.steps.compareTo(a.steps);
-          return a.name.compareTo(b.name);
-        });
-      return list.take(limit).toList();
+      final walkers = _db.collection('seasonWalks/$campaignId/walkers');
+      final all = await walkers
+          .aggregate(count(), sum('days'))
+          .get()
+          .timeout(const Duration(seconds: 10));
+      final today = await walkers
+          .where('lastDay', isEqualTo: _todayKey())
+          .count()
+          .get()
+          .timeout(const Duration(seconds: 10));
+      return SeasonWalkPulse(
+        walkers: all.count ?? 0,
+        walkedToday: today.count ?? 0,
+        daysTogether: (all.getSum('days') ?? 0).round(),
+      );
     } catch (e) {
-      debugPrint('Falha ao buscar ranking geral: $e');
-      return const [];
+      debugPrint('Pulso da Caminhada falhou: $e');
+      return null;
     }
   }
 

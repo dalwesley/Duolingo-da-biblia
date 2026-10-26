@@ -8,8 +8,12 @@ import 'package:timezone/timezone.dart' as tz;
 
 import '../data/guided_reading_plans.dart';
 import '../data/memory_verses.dart';
+import '../data/season_walk_catalog.dart';
+import '../data/trail_repository.dart';
 import '../l10n/l10n_global.dart';
+import '../models/caravan_pilgrim_profile.dart';
 import '../models/daily_quest.dart';
+import '../models/pilgrim_medals.dart';
 import '../utils/dust_copy.dart';
 import 'progress_service.dart';
 
@@ -102,6 +106,7 @@ class NotificationService {
   static const _idTrialEnding = 108;
   static const _idWeeklyReview = 109;
   static const _idReadingPlan = 110;
+  static const _idWalkStart = 111;
   static const _legacyDaily = 1;
 
   static const _allIds = [
@@ -115,6 +120,7 @@ class NotificationService {
     _idLost2,
     _idWeeklyReview,
     _idReadingPlan,
+    _idWalkStart,
   ];
 
   Future<void> init({bool requestPermission = false}) async {
@@ -288,7 +294,7 @@ class NotificationService {
     // lembretes desligados. Quem cancela é a assinatura (SubscriptionService).
     if (!enabled) return;
 
-    final hooks = _buildHooks(progress);
+    final hooks = _buildHooks(progress, medal: await _nearMedal(progress));
     if (hooks.isEmpty) {
       await _schedule(
         id: _idMorning,
@@ -309,6 +315,7 @@ class NotificationService {
       await _scheduleWeeklyReview(progress);
       await _scheduleReadingPlan(progress);
       await _scheduleLostLearner(progress);
+      await _scheduleWalkStart(progress);
       return;
     }
 
@@ -349,6 +356,7 @@ class NotificationService {
     await _scheduleWeeklyReview(progress);
     await _scheduleReadingPlan(progress);
     await _scheduleLostLearner(progress);
+    await _scheduleWalkStart(progress);
   }
 
   /// Lembrete diário do plano de leitura, na hora escolhida. Se o dia já foi
@@ -401,6 +409,32 @@ class NotificationService {
         body: L10n.current.notifWeeklyReviewBody,
         action: ReminderAction.weeklyReview,
         priority: 4,
+      ),
+    );
+  }
+
+  /// Quem entrou na Caminhada coletiva antes do início: aviso no 1º dia,
+  /// na hora do lembrete.
+  Future<void> _scheduleWalkStart(ProgressService progress) async {
+    final walk = SeasonWalkCatalog.current();
+    if (!progress.joinedWalks.contains(walk.id)) return;
+    final hour = progress.settings.reminderHour.clamp(6, 22);
+    final when = tz.TZDateTime(
+      tz.local,
+      walk.start.year,
+      walk.start.month,
+      walk.start.day,
+      hour,
+    );
+    if (!when.isAfter(tz.TZDateTime.now(tz.local))) return;
+    await _schedule(
+      id: _idWalkStart,
+      when: when,
+      copy: _ReminderCopy(
+        title: L10n.current.notifWalkStartsTitle(walk.title),
+        body: L10n.current.notifWalkStartsBody(walk.length),
+        action: ReminderAction.home,
+        priority: 0,
       ),
     );
   }
@@ -472,7 +506,30 @@ class NotificationService {
     }
   }
 
-  List<_ReminderCopy> _buildHooks(ProgressService progress) {
+  /// Medalha a 1–3 passos de distância (a mesma linha do Hoje).
+  Future<PilgrimTrackProximity?> _nearMedal(ProgressService progress) async {
+    try {
+      final catalog = await TrailRepository().getTrails();
+      if (catalog.isEmpty) return null;
+      final near = PilgrimMedals.nearestLocked(
+        profile: CaravanPilgrimProfile.fromProgress(
+          progress: progress,
+          uid: '',
+        ),
+        catalog: catalog,
+        ctx: PilgrimMedalEvalContext.fromProgress(progress),
+      );
+      return near != null && near.isNearMiss ? near : null;
+    } catch (e) {
+      debugPrint('Lembrete de medalha falhou: $e');
+      return null;
+    }
+  }
+
+  List<_ReminderCopy> _buildHooks(
+    ProgressService progress, {
+    PilgrimTrackProximity? medal,
+  }) {
     final hooks = <_ReminderCopy>[];
     final l = L10n.current;
     final name = progress.userName.trim().isEmpty
@@ -578,6 +635,19 @@ class NotificationService {
           body: l.notifWeeklyLeftBody(left),
           action: ReminderAction.weekly,
           priority: 50,
+        ),
+      );
+    }
+
+    if (medal != null) {
+      hooks.add(
+        _ReminderCopy(
+          title: l.notifMedalNearTitle,
+          body: medal.message,
+          action: medal.ctaKind == MedalCtaKind.memory
+              ? ReminderAction.memory
+              : ReminderAction.home,
+          priority: 85,
         ),
       );
     }

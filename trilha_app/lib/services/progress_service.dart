@@ -186,6 +186,10 @@ class ProgressService extends ChangeNotifier {
   static int questionCountForMission({required bool isBoss}) =>
       isBoss ? bossQuestionCount : normalQuestionCount;
   static const comebackBonusSteps = 15;
+
+  /// Dias de caminhada guardados: cobre as 12 semanas da lamparina e uma
+  /// Quaresma inteira.
+  static const maxPlayDates = 120;
   static const minStreakForRepair = 3;
 
   /// Bônus ao host quando o convidado completa a 1ª missão (referral).
@@ -196,6 +200,10 @@ class ProgressService extends ChangeNotifier {
   /// Unidade do produto: passos (legado local/cloud ainda usa a chave `xp`).
   int steps = 0;
   int streak = 0;
+
+  /// Maior sequência já alcançada — medalhas do Caminho não somem quando a
+  /// sequência atual quebra.
+  int bestStreak = 0;
   String? lastPlayedDate;
   List<String> completedMissions = [];
   int missionsToday = 0;
@@ -242,6 +250,9 @@ class ProgressService extends ChangeNotifier {
 
   /// Dias da Caminhada concluídos: `{ campaignId: ['YYYY-MM-DD', ...] }`.
   Map<String, List<String>> seasonWalkDays = {};
+
+  /// Caminhadas em que a pessoa entrou (antes ou durante a temporada).
+  List<String> joinedWalks = [];
   List<String> usedQuestionIds = [];
   List<String> mistakeQuestionIds = [];
 
@@ -309,6 +320,10 @@ class ProgressService extends ChangeNotifier {
 
   /// Missões concluídas com 100% de acertos (slug, 1ª vez).
   List<String> perfectMissions = [];
+
+  /// Cenas que já pagaram no ranking (`slug` ou `slug@modo`). Trocar de modo
+  /// zera a trilha, mas cada cena só conta de novo num modo ainda não feito.
+  List<String> rankedScenes = [];
 
   /// Cenas concluídas por empréstimo: o mesmo banco foi feito em outra cena
   /// ([completeMission] `alsoComplete`). Contam no progresso, mas não abrem
@@ -1039,6 +1054,7 @@ class ProgressService extends ChangeNotifier {
   Future<void> resetMemoryToDefaults() async {
     steps = 0;
     streak = 0;
+    bestStreak = 0;
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
@@ -1068,6 +1084,7 @@ class ProgressService extends ChangeNotifier {
     _sessionReplayMissionSlugs = {};
     clearedTrailModes = {};
     seasonWalkDays = {};
+    joinedWalks = [];
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     mistakeAnswers = {};
@@ -1095,6 +1112,7 @@ class ProgressService extends ChangeNotifier {
     sharedVerses = [];
     sharedVerseCount = 0;
     perfectMissions = [];
+    rankedScenes = [];
     borrowedMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
@@ -1772,6 +1790,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> _save({bool notify = true}) async {
+    if (streak > bestStreak) bestStreak = streak;
     // Espelho local adiado: uma ação chama _save várias vezes; um só
     // jsonEncode depois do gesto. Pausa do app força o flush (MainShell).
     _schedulePersist();
@@ -1824,8 +1843,8 @@ class ProgressService extends ChangeNotifier {
     missionsToday = 0;
     if (!playDates.contains(today)) {
       playDates = [...playDates, today];
-      if (playDates.length > 60) {
-        playDates = playDates.sublist(playDates.length - 60);
+      if (playDates.length > maxPlayDates) {
+        playDates = playDates.sublist(playDates.length - maxPlayDates);
       }
     }
   }
@@ -2462,8 +2481,10 @@ class ProgressService extends ChangeNotifier {
     int correct = 0,
     int total = 0,
     Iterable<String> alsoComplete = const [],
+    String? mode,
   }) async {
     var awarded = 0;
+    var ranked = false;
     await _batch(() async {
       _ensureQuestDay();
       if (slug.startsWith(weeklyReviewSlugPrefix)) {
@@ -2516,17 +2537,23 @@ class ProgressService extends ChangeNotifier {
             for (final s in [slug, ...linked]) s: today,
             ...missionCompletedOn,
           };
+          final rankKey = mode == null ? slug : '$slug@$mode';
+          if (!rankedScenes.contains(rankKey)) {
+            rankedScenes = [...rankedScenes, rankKey];
+            ranked = true;
+          }
         }
       }
 
       awarded = isReplay
           ? (rewardSteps * 0.35).round().clamp(5, rewardSteps)
           : rewardSteps;
-      // Replay rende só na jornada — semana mede cena nova, não repetição.
-      if (isReplay) {
-        _gainSteps(awarded);
-      } else {
+      // Replay e cena refeita num modo já pago rendem só na jornada — o
+      // ranking mede cena nova, não repetição.
+      if (ranked) {
         _gainSceneSteps(awarded);
+      } else {
+        _gainSteps(awarded);
       }
 
       if (!alreadyToday) {
@@ -2580,6 +2607,17 @@ class ProgressService extends ChangeNotifier {
 
   bool isWalkDateDone(String campaignId, String ymd) =>
       walkDatesFor(campaignId).contains(ymd);
+
+  /// Está na Caminhada coletiva: entrou pelo convite ou já caminhou um dia.
+  bool hasJoinedWalk(String campaignId) =>
+      joinedWalks.contains(campaignId) || walkDatesFor(campaignId).isNotEmpty;
+
+  Future<void> joinWalk(String campaignId) async {
+    if (joinedWalks.contains(campaignId)) return;
+    joinedWalks = [...joinedWalks, campaignId];
+    await _save();
+    notifyListeners();
+  }
 
   Future<void> markWalkDate(String campaignId, String ymd) async {
     final cur = walkDatesFor(campaignId);
@@ -2740,6 +2778,7 @@ class ProgressService extends ChangeNotifier {
       'xp': steps,
       'steps': steps,
       'streak': streak,
+      'bestStreak': bestStreak,
       'lastPlayedDate': lastPlayedDate,
       'completedMissions': completedMissions,
       'missionsToday': missionsToday,
@@ -2784,6 +2823,7 @@ class ProgressService extends ChangeNotifier {
       'sharedVerses': sharedVerses,
       'sharedVerseCount': sharedVerseCount,
       'perfectMissions': perfectMissions,
+      'rankedScenes': rankedScenes,
       'borrowedMissions': borrowedMissions,
       'celebratedMedalIds': celebratedMedalIds,
       'medalCelebrationSeeded': medalCelebrationSeeded,
@@ -2801,6 +2841,7 @@ class ProgressService extends ChangeNotifier {
       'pinnedTrailDifficulties': pinnedTrailDifficulties,
       'clearedTrailModes': clearedTrailModes,
       'seasonWalkDays': seasonWalkDays,
+      'joinedWalks': joinedWalks,
       'missionReflections': missionReflections,
       'companionCodes': companionCodes,
       'activeRoomCode': activeRoomCode,
@@ -2931,6 +2972,12 @@ class ProgressService extends ChangeNotifier {
         streak = cloudStreak;
       }
     }
+    final cloudBest = (data['bestStreak'] as num?)?.toInt() ?? 0;
+    bestStreak = [
+      bestStreak,
+      cloudBest,
+      streak,
+    ].reduce((a, b) => a > b ? a : b);
     if (data.containsKey('lastPlayedDate')) {
       final cloudLast = (data['lastPlayedDate'] as String?)?.trim();
       // null/vazio na nuvem não apaga; só avança se a data da nuvem for mais nova.
@@ -2992,8 +3039,8 @@ class ProgressService extends ChangeNotifier {
         playDates = cloudDates;
       } else {
         final merged = {...playDates, ...cloudDates}.toList()..sort();
-        playDates = merged.length > 60
-            ? merged.sublist(merged.length - 60)
+        playDates = merged.length > maxPlayDates
+            ? merged.sublist(merged.length - maxPlayDates)
             : merged;
       }
     }
@@ -3183,6 +3230,12 @@ class ProgressService extends ChangeNotifier {
           sharedVerses.length,
         ].reduce((a, b) => a > b ? a : b);
       }
+      if (data.containsKey('rankedScenes')) {
+        rankedScenes = {
+          ...rankedScenes,
+          ..._asStringList(data['rankedScenes']),
+        }.toList();
+      }
       if (data.containsKey('perfectMissions')) {
         final cloudPerfect = _asStringList(data['perfectMissions']);
         if (perfectMissions.isEmpty) {
@@ -3330,6 +3383,12 @@ class ProgressService extends ChangeNotifier {
           }
           clearedTrailModes = merged;
         }
+      }
+      if (data.containsKey('joinedWalks')) {
+        joinedWalks = _unionStringLists(
+          joinedWalks,
+          _asStringList(data['joinedWalks']),
+        );
       }
       if (data.containsKey('seasonWalkDays')) {
         final cloudWalk = _asStringListMap(data['seasonWalkDays']);
@@ -3698,6 +3757,7 @@ class ProgressService extends ChangeNotifier {
   Future<void> resetProgress() async {
     steps = 0;
     streak = 0;
+    bestStreak = 0;
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
@@ -3716,6 +3776,7 @@ class ProgressService extends ChangeNotifier {
     playDates = [];
     frozenDates = [];
     seasonWalkDays = {};
+    joinedWalks = [];
     streakFreezeAvailable = true;
     streakFreezeWeek = null;
     streakRepairAvailable = true;
@@ -3751,6 +3812,7 @@ class ProgressService extends ChangeNotifier {
     sharedVerses = [];
     sharedVerseCount = 0;
     perfectMissions = [];
+    rankedScenes = [];
     borrowedMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
@@ -3809,6 +3871,7 @@ class ProgressService extends ChangeNotifier {
     bibleBeforeMission = false;
     clearedTrailModes = {};
     seasonWalkDays = {};
+    joinedWalks = [];
     trailDifficulties = {};
     pinnedTrailDifficulties = {};
     _sessionTrailDifficulties = {};

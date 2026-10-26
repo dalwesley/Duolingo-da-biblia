@@ -56,6 +56,12 @@ class CaravanPilgrimProfile {
   final String name;
   final int steps;
   final int streak;
+
+  /// Maior sequência já feita (0 em docs antigos — cai na atual).
+  final int bestStreak;
+
+  /// Sequência que conta para medalha: a melhor já feita.
+  int get streakRecord => bestStreak > streak ? bestStreak : streak;
   final String? lastWalkDate;
   final String? lastSeenDate;
   final List<String> completedMissions;
@@ -106,6 +112,7 @@ class CaravanPilgrimProfile {
     required this.name,
     required this.steps,
     this.streak = 0,
+    this.bestStreak = 0,
     this.lastWalkDate,
     this.lastSeenDate,
     this.completedMissions = const [],
@@ -188,6 +195,7 @@ class CaravanPilgrimProfile {
       name: progress.userName,
       steps: progress.steps,
       streak: progress.streak,
+      bestStreak: progress.bestStreak,
       lastWalkDate: progress.lastPlayedDate,
       lastSeenDate: DateTime.now().toIso8601String().substring(0, 10),
       completedMissions: List<String>.from(progress.completedMissions),
@@ -248,6 +256,7 @@ class CaravanPilgrimProfile {
       name: name,
       steps: _asInt(data['steps']) ?? _asInt(data['xp']) ?? 0,
       streak: _asInt(data['streak']) ?? 0,
+      bestStreak: _asInt(data['bestStreak']) ?? 0,
       lastWalkDate:
           _asDateKey(data['lastWalkDate']) ??
           _asDateKey(data['lastPlayedDate']),
@@ -391,6 +400,7 @@ class CaravanPilgrimProfile {
       name: name,
       steps: steps,
       streak: streak,
+      bestStreak: bestStreak,
       lastWalkDate: lastWalkDate,
       lastSeenDate: lastSeenDate,
       completedMissions: completedMissions,

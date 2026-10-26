@@ -264,10 +264,15 @@ class JourneyStationCard extends StatelessWidget {
           : isLocked
           ? const [0.82, 0.70, 0.60]
           : const [0.55, 0.28, 0.16];
+      final dpr = MediaQuery.devicePixelRatioOf(context);
+      final cacheW = (MediaQuery.sizeOf(context).width * dpr).round();
       final painting = Image.asset(
         art!,
         fit: BoxFit.cover,
         alignment: Alignment.center,
+        // Decode na resolução do card — JPGs de cena são bem maiores.
+        cacheWidth: cacheW,
+        cacheHeight: (160 * dpr).round(),
       );
       return Stack(
         fit: StackFit.expand,

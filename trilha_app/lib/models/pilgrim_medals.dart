@@ -474,9 +474,9 @@ class PilgrimMedals {
 
   static bool _pathLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
-        0 => profile.streak >= 3,
-        1 => profile.streak >= 14,
-        2 => profile.streak >= 30,
+        0 => profile.streakRecord >= 3,
+        1 => profile.streakRecord >= 14,
+        2 => profile.streakRecord >= 30,
         _ => false,
       };
 
@@ -585,9 +585,7 @@ class PilgrimMedals {
     'discovery:andando_na_luz' =>
       profile.lifetimeQuestionsAnswered >= 50 &&
           (profile.accuracyPercent ?? 0) >= 85,
-    'discovery:perfect_boss' => profile.perfectMissions.any(
-      (s) => s.contains('boss'),
-    ),
+    'discovery:perfect_boss' => _hasPerfectBoss(profile, catalog),
     'discovery:leader' => profile.daysAsCaravanLeader >= 1,
     'discovery:accuracy_elite' => _hasAccuracyElite(profile),
     'discovery:trail_flawless' => _hasFlawlessTrail(profile, catalog),
@@ -659,6 +657,25 @@ class PilgrimMedals {
   static bool _hasAccuracyElite(CaravanPilgrimProfile profile) =>
       profile.lifetimeQuestionsAnswered >= 150 &&
       (profile.accuracyPercent ?? 0) >= 95;
+
+  /// Travessia perfeita: a cena é travessia pelo tipo (`boss`) no catálogo —
+  /// o slug nem sempre diz "boss".
+  static bool _hasPerfectBoss(
+    CaravanPilgrimProfile profile,
+    List<Trail> catalog,
+  ) {
+    if (profile.perfectMissions.isEmpty) return false;
+    final perfect = profile.perfectMissions.toSet();
+    for (final trail in catalog) {
+      for (final module in trail.modules) {
+        for (final m in module.missions) {
+          if (m.isBoss && perfect.contains(m.slug)) return true;
+        }
+      }
+    }
+    // Catálogo ainda sem missões carregadas: o slug antigo ainda vale.
+    return perfect.any((s) => s.contains('boss'));
+  }
 
   static bool _hasFlawlessTrail(
     CaravanPilgrimProfile profile,

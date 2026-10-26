@@ -88,20 +88,24 @@ class _MeScreenState extends State<MeScreen> {
     try {
       final profile = await loadEnrichedOwnerProfile(progress, backend);
       var rank = 0;
+      // Mesma conta da Caravana: ranking do mês com você dentro.
       if (backend.isActive) {
-        final overall = await backend.fetchOverallPlayers();
-        final entries = [
-          for (final p in overall)
-            LeagueEntry(
-              uid: p.uid,
-              name: p.name,
-              steps: p.steps,
-              lastWalkDate: p.lastWalkDate,
-              lastSeenDate: p.lastSeenDate,
-              photoUrl: p.photoUrl,
-            ),
-        ];
-        rank = league.userRank(entries);
+        final month = await backend.fetchMonthlyPlayers();
+        final entries = league.monthStandings(
+          userName: progress.userName,
+          userMonthSteps: progress.currentMonthSteps,
+          userWeekSteps: progress.currentWeekSteps,
+          userDayStartSteps: progress.monthStartOfToday,
+          userUid: backend.uid,
+          realPlayers: [
+            for (final p in month)
+              LeagueEntry(uid: p.uid, name: p.name, steps: p.steps),
+          ],
+        );
+        // Sozinho no mês não é ranking — sem epíteto de 1º lugar.
+        if (month.isNotEmpty && progress.currentMonthSteps > 0) {
+          rank = league.userRank(entries);
+        }
       }
       if (!mounted) return;
       setState(() {

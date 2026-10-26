@@ -388,6 +388,12 @@ abstract class AppLocalizations {
   /// **'Anotação salva'**
   String get bibleNoteSaved;
 
+  /// No description provided for @bibleNoteShare.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar anotação'**
+  String get bibleNoteShare;
+
   /// No description provided for @bibleNoteTagDeus.
   ///
   /// In pt, this message translates to:
@@ -675,6 +681,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Compartilhar imagem'**
   String get bibleShareImage;
+
+  /// No description provided for @bibleShareIncludeNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Incluir minha anotação'**
+  String get bibleShareIncludeNote;
+
+  /// No description provided for @bibleShareNoteBy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anotação de {name}'**
+  String bibleShareNoteBy(String name);
+
+  /// No description provided for @bibleShareNoteMine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Minha anotação'**
+  String get bibleShareNoteMine;
 
   /// No description provided for @bibleSharePreparing.
   ///
@@ -4900,6 +4924,12 @@ abstract class AppLocalizations {
   /// **'Lâmpadas'**
   String get homeLampsTitle;
 
+  /// No description provided for @homeLiturgyReadCaption.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ler {ref}'**
+  String homeLiturgyReadCaption(String ref);
+
   /// No description provided for @homeMoodAlive.
   ///
   /// In pt, this message translates to:
@@ -4917,6 +4947,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Protegido pelo gelo'**
   String get homeMoodFrozen;
+
+  /// No description provided for @homeMoreSeeLess.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver menos'**
+  String get homeMoreSeeLess;
+
+  /// No description provided for @homeMoreSeeMore.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver mais · {count}'**
+  String homeMoreSeeMore(int count);
 
   /// No description provided for @homeMoreToday.
   ///
@@ -4945,13 +4987,13 @@ abstract class AppLocalizations {
   /// No description provided for @homeReviewMistakesCaption.
   ///
   /// In pt, this message translates to:
-  /// **'Erros para reforçar'**
-  String get homeReviewMistakesCaption;
+  /// **'{count, plural, =1{1 pergunta para refazer} other{{count} perguntas para refazer}}'**
+  String homeReviewMistakesCaption(int count);
 
   /// No description provided for @homeReviewTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão'**
+  /// **'Revisar erros'**
   String get homeReviewTitle;
 
   /// No description provided for @homeSeasonChipDoneSemantics.
@@ -9249,6 +9291,12 @@ abstract class AppLocalizations {
   /// **'{left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para fechar a meta de hoje.'**
   String notifGoalLeftBody(int left);
 
+  /// No description provided for @notifMedalNearTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma medalha está perto'**
+  String get notifMedalNearTitle;
+
   /// No description provided for @notifMemoryBody.
   ///
   /// In pt, this message translates to:
@@ -9362,6 +9410,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Seu teste grátis termina amanhã'**
   String get notifTrialEndingTitle;
+
+  /// No description provided for @notifWalkStartsBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia 1 de {total}: hoje a caravana caminha junto.'**
+  String notifWalkStartsBody(int total);
+
+  /// No description provided for @notifWalkStartsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{title} começou'**
+  String notifWalkStartsTitle(String title);
 
   /// No description provided for @notifWeeklyLeftBody.
   ///
@@ -14744,6 +14804,83 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Versículo indisponível nesta tradução.'**
   String get verseStudyVerseUnavailable;
+
+  /// No description provided for @walkTogetherDayOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day} de {total}'**
+  String walkTogetherDayOf(int day, int total);
+
+  /// No description provided for @walkTogetherDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia caminhado juntos} other{{count} dias caminhados juntos}}'**
+  String walkTogetherDays(int count);
+
+  /// No description provided for @walkTogetherInvite.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chamar alguém'**
+  String get walkTogetherInvite;
+
+  /// No description provided for @walkTogetherJoin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entrar na caminhada'**
+  String get walkTogetherJoin;
+
+  /// No description provided for @walkTogetherJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você está dentro'**
+  String get walkTogetherJoined;
+
+  /// No description provided for @walkTogetherKicker.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminhada coletiva'**
+  String get walkTogetherKicker;
+
+  /// No description provided for @walkTogetherOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abrir a caminhada'**
+  String get walkTogetherOpen;
+
+  /// No description provided for @walkTogetherPitch.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} dias, uma cena por dia, com a caravana inteira.'**
+  String walkTogetherPitch(int count);
+
+  /// No description provided for @walkTogetherShareText.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} vai fazer a caminhada {title} no Stway: uma cena por dia, a partir de {start}. Vem junto?\n\nBaixe: {url}'**
+  String walkTogetherShareText(
+    String name,
+    String title,
+    String start,
+    String url,
+  );
+
+  /// No description provided for @walkTogetherStartsIn.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}'**
+  String walkTogetherStartsIn(int days);
+
+  /// No description provided for @walkTogetherToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{ninguém caminhou hoje ainda} =1{1 caminhou hoje} other{{count} caminharam hoje}}'**
+  String walkTogetherToday(int count);
+
+  /// No description provided for @walkTogetherWalkers.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{Seja o primeiro a entrar} =1{1 peregrino na caminhada} other{{count} peregrinos na caminhada}}'**
+  String walkTogetherWalkers(int count);
 
   /// No description provided for @waveCta.
   ///

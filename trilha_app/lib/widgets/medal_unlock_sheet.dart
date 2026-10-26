@@ -248,16 +248,34 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          FadeTransition(
-            opacity: _titleOpacity,
-            child: SlideTransition(
-              position: _titleSlide,
-              child: SectionLabel(headline, color: accent),
+          _HeaderWithHeart(
+            heart: widget.celebration || !unlocked
+                ? null
+                : widget.recognizeToUid == null
+                ? ReceivedHeartBadge(
+                    subjectKeys: {tile.id},
+                    onTap: () {
+                      ActHaptics.tap();
+                      showRecognitionHistorySheet(context, medalIds: {tile.id});
+                    },
+                  )
+                : RecognizeHeartButton(
+                    toUid: widget.recognizeToUid,
+                    kind: RecognitionKind.medal,
+                    subjectKey: tile.id,
+                    padding: EdgeInsets.zero,
+                  ),
+            label: FadeTransition(
+              opacity: _titleOpacity,
+              child: SlideTransition(
+                position: _titleSlide,
+                child: SectionLabel(headline, color: accent),
+              ),
             ),
           ),
           const SizedBox(height: 28),
           // Medalha nova: o Anan comemora; ainda trancada: espera junto.
-          // Aberto, o coração ocupa o canto do Anan e o Anan sobe.
+          // Aberto, o Anan sobe e o coração vai para a linha do título.
           if (widget.celebration || !unlocked)
             AnanBeside(
               face: unlocked ? CloudFace.sucesso : CloudFace.carregando,
@@ -273,23 +291,6 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
           else
             _MedalCompany(
               face: CloudFace.sucesso,
-              heart: widget.recognizeToUid == null
-                  ? ReceivedHeartBadge(
-                      subjectKeys: {tile.id},
-                      onTap: () {
-                        ActHaptics.tap();
-                        showRecognitionHistorySheet(
-                          context,
-                          medalIds: {tile.id},
-                        );
-                      },
-                    )
-                  : RecognizeHeartButton(
-                      toUid: widget.recognizeToUid,
-                      kind: RecognitionKind.medal,
-                      subjectKey: tile.id,
-                      padding: EdgeInsets.zero,
-                    ),
               medal: ScaleTransition(
                 scale: _heroScale,
                 child: MedalVaultMedallion(
@@ -460,7 +461,31 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              SectionLabel(headline, color: accent),
+              _HeaderWithHeart(
+                heart:
+                    widget.celebration ||
+                        current == null ||
+                        !trackState.hasStarted
+                    ? null
+                    : widget.recognizeToUid == null
+                    ? ReceivedHeartBadge(
+                        subjectKeys: trackState.earnedMedalIds,
+                        onTap: () {
+                          ActHaptics.tap();
+                          showRecognitionHistorySheet(
+                            context,
+                            medalIds: trackState.earnedMedalIds,
+                          );
+                        },
+                      )
+                    : RecognizeHeartButton(
+                        toUid: widget.recognizeToUid,
+                        kind: RecognitionKind.medal,
+                        subjectKey: current.id,
+                        padding: EdgeInsets.zero,
+                      ),
+                label: SectionLabel(headline, color: accent),
+              ),
               const SizedBox(height: 28),
               if (widget.celebration ||
                   current == null ||
@@ -478,23 +503,6 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
               else
                 _MedalCompany(
                   face: CloudFace.feliz,
-                  heart: widget.recognizeToUid == null
-                      ? ReceivedHeartBadge(
-                          subjectKeys: trackState.earnedMedalIds,
-                          onTap: () {
-                            ActHaptics.tap();
-                            showRecognitionHistorySheet(
-                              context,
-                              medalIds: trackState.earnedMedalIds,
-                            );
-                          },
-                        )
-                      : RecognizeHeartButton(
-                          toUid: widget.recognizeToUid,
-                          kind: RecognitionKind.medal,
-                          subjectKey: current.id,
-                          padding: EdgeInsets.zero,
-                        ),
                   medal: MedalVaultMedallion(
                     tile: PilgrimMedalTile.fromTrack(trackState),
                     size: 104,
@@ -815,20 +823,39 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
   }
 }
 
-/// Medalha aberta: o Anan fica no alto, à esquerda. O coração senta na
-/// lateral direita da moeda, pouco abaixo do meio.
+/// Linha do título: o rótulo fica centrado e o coração (quando há) senta
+/// no canto direito, longe da moeda.
+class _HeaderWithHeart extends StatelessWidget {
+  final Widget label;
+  final Widget? heart;
+
+  const _HeaderWithHeart({required this.label, this.heart});
+
+  @override
+  Widget build(BuildContext context) {
+    if (heart == null) return label;
+    return SizedBox(
+      width: double.infinity,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
+        children: [
+          label,
+          Positioned(right: 0, child: heart!),
+        ],
+      ),
+    );
+  }
+}
+
+/// Medalha aberta: o Anan fica no alto, à esquerda.
 class _MedalCompany extends StatelessWidget {
   static const anan = 64.0;
 
   final Widget medal;
   final CloudFace face;
-  final Widget heart;
 
-  const _MedalCompany({
-    required this.medal,
-    required this.face,
-    required this.heart,
-  });
+  const _MedalCompany({required this.medal, required this.face});
 
   @override
   Widget build(BuildContext context) {
@@ -842,9 +869,6 @@ class _MedalCompany extends StatelessWidget {
           top: -anan * 0.34,
           child: CloudMascot(face: face, size: anan),
         ),
-        // A moeda tem fitas embaixo (um quarto da altura): o coração sobe
-        // junto para ficar ao lado do disco.
-        Positioned(right: -18, bottom: 40, child: heart),
       ],
     );
   }

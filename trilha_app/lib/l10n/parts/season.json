@@ -162,5 +162,106 @@
     "pt": "Três perguntas dos textos que você já estudou.",
     "en": "Three questions from the texts you've already studied.",
     "es": "Tres preguntas de los textos que ya estudiaste."
+  },
+  "walkTogetherKicker": {
+    "pt": "Caminhada coletiva",
+    "en": "Walk together",
+    "es": "Caminata en grupo"
+  },
+  "walkTogetherStartsIn": {
+    "pt": "{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}",
+    "en": "{days, plural, =0{Starts today} =1{Starts tomorrow} other{Starts in {days} days}}",
+    "es": "{days, plural, =0{Empieza hoy} =1{Empieza mañana} other{Empieza en {days} días}}",
+    "placeholders": {
+      "days": "int"
+    }
+  },
+  "walkTogetherPitch": {
+    "pt": "{count} dias, uma cena por dia, com a caravana inteira.",
+    "en": "{count} days, one scene a day, with the whole caravan.",
+    "es": "{count} días, una escena por día, con toda la caravana.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "walkTogetherDayOf": {
+    "pt": "Dia {day} de {total}",
+    "en": "Day {day} of {total}",
+    "es": "Día {day} de {total}",
+    "placeholders": {
+      "day": "int",
+      "total": "int"
+    }
+  },
+  "walkTogetherWalkers": {
+    "pt": "{count, plural, =0{Seja o primeiro a entrar} =1{1 peregrino na caminhada} other{{count} peregrinos na caminhada}}",
+    "en": "{count, plural, =0{Be the first to join} =1{1 pilgrim on the walk} other{{count} pilgrims on the walk}}",
+    "es": "{count, plural, =0{Sé el primero en unirte} =1{1 peregrino en la caminata} other{{count} peregrinos en la caminata}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "walkTogetherToday": {
+    "pt": "{count, plural, =0{ninguém caminhou hoje ainda} =1{1 caminhou hoje} other{{count} caminharam hoje}}",
+    "en": "{count, plural, =0{nobody has walked today yet} =1{1 walked today} other{{count} walked today}}",
+    "es": "{count, plural, =0{nadie caminó hoy todavía} =1{1 caminó hoy} other{{count} caminaron hoy}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "walkTogetherDays": {
+    "pt": "{count, plural, =1{1 dia caminhado juntos} other{{count} dias caminhados juntos}}",
+    "en": "{count, plural, =1{1 day walked together} other{{count} days walked together}}",
+    "es": "{count, plural, =1{1 día caminado juntos} other{{count} días caminados juntos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "walkTogetherJoin": {
+    "pt": "Entrar na caminhada",
+    "en": "Join the walk",
+    "es": "Unirme a la caminata"
+  },
+  "walkTogetherJoined": {
+    "pt": "Você está dentro",
+    "en": "You're in",
+    "es": "Estás dentro"
+  },
+  "walkTogetherInvite": {
+    "pt": "Chamar alguém",
+    "en": "Invite someone",
+    "es": "Invitar a alguien"
+  },
+  "walkTogetherOpen": {
+    "pt": "Abrir a caminhada",
+    "en": "Open the walk",
+    "es": "Abrir la caminata"
+  },
+  "walkTogetherShareText": {
+    "pt": "{name} vai fazer a caminhada {title} no Stway: uma cena por dia, a partir de {start}. Vem junto?\n\nBaixe: {url}",
+    "en": "{name} is doing the {title} walk on Stway: one scene a day, starting {start}. Come along?\n\nDownload: {url}",
+    "es": "{name} hará la caminata {title} en Stway: una escena por día, desde el {start}. ¿Vienes?\n\nDescarga: {url}",
+    "placeholders": {
+      "name": "String",
+      "title": "String",
+      "start": "String",
+      "url": "String"
+    }
+  },
+  "notifWalkStartsTitle": {
+    "pt": "{title} começou",
+    "en": "{title} has begun",
+    "es": "{title} comenzó",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "notifWalkStartsBody": {
+    "pt": "Dia 1 de {total}: hoje a caravana caminha junto.",
+    "en": "Day 1 of {total}: today the caravan walks together.",
+    "es": "Día 1 de {total}: hoy la caravana camina junta.",
+    "placeholders": {
+      "total": "int"
+    }
   }
 }

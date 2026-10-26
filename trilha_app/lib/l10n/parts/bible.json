@@ -140,6 +140,24 @@
     "en": "Share as text",
     "es": "Compartir como texto"
   },
+  "bibleShareIncludeNote": {
+    "pt": "Incluir minha anotação",
+    "en": "Include my note",
+    "es": "Incluir mi nota"
+  },
+  "bibleShareNoteMine": {
+    "pt": "Minha anotação",
+    "en": "My note",
+    "es": "Mi nota"
+  },
+  "bibleShareNoteBy": {
+    "pt": "Anotação de {name}",
+    "en": "{name}'s note",
+    "es": "Nota de {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
   "biblePickerTitle": {
     "pt": "Ir para",
     "en": "Go to",
@@ -684,6 +702,11 @@
     "pt": "Anotação salva",
     "en": "Note saved",
     "es": "Nota guardada"
+  },
+  "bibleNoteShare": {
+    "pt": "Compartilhar anotação",
+    "en": "Share note",
+    "es": "Compartir nota"
   },
   "bibleNoteTagPromessa": {
     "pt": "Promessa",

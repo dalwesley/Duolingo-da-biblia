@@ -15,7 +15,8 @@ String cornerWeekStart([DateTime? now]) {
   return monday.toIso8601String().substring(0, 10);
 }
 
-/// Quem chega (faz a cena combinada até domingo) ganha isto na caravana.
+/// Quem chega (faz a cena combinada até domingo) ganha isto na jornada —
+/// soma no total, não no ranking da Caravana.
 const cornerArrivalBonusSteps = 10;
 
 /// Textos do Desafio — duas pessoas, a mesma cena, até domingo.

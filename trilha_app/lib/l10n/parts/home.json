@@ -545,9 +545,9 @@
     "es": "Pasos extra"
   },
   "homeReviewTitle": {
-    "pt": "Revisão",
-    "en": "Review",
-    "es": "Repaso"
+    "pt": "Revisar erros",
+    "en": "Review mistakes",
+    "es": "Repasar errores"
   },
   "homeReviewCaption": {
     "pt": "{count, plural, =1{1 para reforçar} other{{count} para reforçar}}",
@@ -736,8 +736,32 @@
     "es": "100% — sigue caminando"
   },
   "homeReviewMistakesCaption": {
-    "pt": "Erros para reforçar",
-    "en": "Mistakes to strengthen",
-    "es": "Errores para reforzar"
+    "pt": "{count, plural, =1{1 pergunta para refazer} other{{count} perguntas para refazer}}",
+    "en": "{count, plural, =1{1 question to retry} other{{count} questions to retry}}",
+    "es": "{count, plural, =1{1 pregunta para rehacer} other{{count} preguntas para rehacer}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "homeLiturgyReadCaption": {
+    "pt": "Ler {ref}",
+    "en": "Read {ref}",
+    "es": "Leer {ref}",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "homeMoreSeeMore": {
+    "pt": "Ver mais · {count}",
+    "en": "See more · {count}",
+    "es": "Ver más · {count}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "homeMoreSeeLess": {
+    "pt": "Ver menos",
+    "en": "See less",
+    "es": "Ver menos"
   }
 }

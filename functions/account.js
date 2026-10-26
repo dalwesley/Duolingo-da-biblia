@@ -38,6 +38,10 @@ async function rankingRefs(db, uid) {
     refs.push(month.collection('players').doc(uid));
   }
 
+  for (const walk of await db.collection('seasonWalks').listDocuments()) {
+    refs.push(walk.collection('walkers').doc(uid));
+  }
+
   for (const group of await db.collection('leagueGroups').listDocuments()) {
     for (const week of await group.collection('weeks').listDocuments()) {
       refs.push(week.collection('players').doc(uid));

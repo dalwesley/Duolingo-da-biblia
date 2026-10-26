@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/pilgrim_medal_models.dart';
@@ -43,6 +44,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/season_walk_together.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
@@ -529,7 +531,13 @@ class _LeagueScreenState extends State<LeagueScreen>
     final today = DateTime.now().toIso8601String().substring(0, 10);
     context.select((BackendService b) => (b.uid, b.userPhotoUrl));
     final backend = context.read<BackendService>();
+    final walk = SeasonWalkCatalog.current();
     final children = <Widget>[
+      // Caminhada coletiva da temporada: a caravana inteira no mesmo roteiro.
+      if (SeasonWalkTogetherCard.visibleOn(walk, DateTime.now())) ...[
+        _reveal(1, const SeasonWalkTogetherCard()),
+        const SizedBox(height: AppSpace.md),
+      ],
       _reveal(
         1,
         _CaravanStageCard(

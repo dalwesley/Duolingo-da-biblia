@@ -56,7 +56,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
   final _scrollController = ScrollController();
   final _currentKey = GlobalKey();
   Trail? _trail;
-  bool _didAutoScroll = false;
   bool _checkingDifficulty = true;
 
   @override
@@ -123,45 +122,28 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     return (trail.modules.length - 1).clamp(0, trail.modules.length);
   }
 
-  /// Abre com a cena atual à vista — não nas já concluídas lá em cima.
-  /// Salto no primeiro frame, sem animar: a tela não rola sozinha.
-  void _maybeScrollToActive(int moduleIndex) {
-    if (_didAutoScroll) return;
-    _didAutoScroll = true;
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted || !_scrollController.hasClients) return;
-      // Etapa longe do topo ainda não foi montada: chega perto antes.
-      if (moduleIndex > 0 && _currentKey.currentContext == null) {
-        _scrollController.jumpTo(
-          (160.0 + moduleIndex * 520).clamp(
-            0.0,
-            _scrollController.position.maxScrollExtent,
-          ),
-        );
-        WidgetsBinding.instance.addPostFrameCallback((_) => _revealCurrent());
-        return;
-      }
-      _revealCurrent();
-    });
-  }
-
-  void _revealCurrent() {
-    final current = _currentKey.currentContext;
-    if (!mounted || current == null) return;
-    Scrollable.ensureVisible(current, alignment: 0.4);
-  }
-
   TrailRealm get _realm => _trail != null
       ? TrailRealm.fromId(_trail!.realmId)
       : TrailRealm.antigoTestamento;
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    // Só o que o mapa usa — watch amplo reconstruía arte + winding a cada XP.
+    final appearanceMode = context.select(
+      (ProgressService p) => p.settings.appearanceMode,
+    );
+    final difficultyId = context.select(
+      (ProgressService p) => p.difficultyForTrail(widget.slug),
+    );
+    final clearedSig = context.select(
+      (ProgressService p) => p.clearedModesFor(widget.slug).join('|'),
+    );
+    final plusOpen = context.select(
+      (SubscriptionService s) => s.plusFeaturesOpen,
+    );
 
     if (_trail == null || _checkingDifficulty) {
-      final mode = progress.settings.appearanceMode;
-      final appearance = AppearanceStyle.resolve(mode);
+      final appearance = AppearanceStyle.resolve(appearanceMode);
       return Scaffold(
         backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
         body: ImmersiveBackground(
@@ -172,16 +154,25 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     }
 
     final trail = _trail!;
-    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
     final allSlugs = trail.missionSlugs;
-    final completed = progress.completedMissionsForTrail(
-      trailSlug: widget.slug,
-      missionSlugs: allSlugs,
-    );
+    final completedSig = context.select((ProgressService p) {
+      final done = p.completedMissionsForTrail(
+        trailSlug: widget.slug,
+        missionSlugs: allSlugs,
+      );
+      final set = done.toSet();
+      return allSlugs.where(set.contains).join('|');
+    });
+    final completed = completedSig.isEmpty
+        ? const <String>[]
+        : completedSig.split('|');
+    // ProgressService ainda precisa para medal/selo (leituras pontuais).
+    final progress = context.read<ProgressService>();
     final live = TrailProgress.getLiveProgress(trail, completed);
     final prog = live; // mapa da trilha = modo ativo
-    final difficultyId = progress.difficultyForTrail(widget.slug);
-    final cleared = progress.clearedModesFor(widget.slug);
+    final cleared = clearedSig.isEmpty
+        ? const <String>[]
+        : clearedSig.split('|');
     final replaying = TrailProgress.isReplayingUnclearedMode(
       clearedModes: cleared,
       activeDifficultyId: difficultyId,
@@ -207,7 +198,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     );
 
     if (allSlugs.isEmpty) {
-      final mode = progress.settings.appearanceMode;
+      final mode = appearanceMode;
       final appearance = AppearanceStyle.resolve(mode);
       return Appearance(
         mode: mode,
@@ -261,11 +252,74 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     }
 
     final activeModule = _activeModuleIndex(trail, completed);
-    _maybeScrollToActive(activeModule);
-    final mode = progress.settings.appearanceMode;
+    final mode = appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
     final currentSlug = TrailProgress.getCurrentMission(trail, completed)?.slug;
+    final medalChip = _trailMedalChip(progress, trail);
+
+    // Cabeçalhos antes dos módulos (virtualizados com ListView.builder).
+    final headers = <Widget>[
+      if (_fromBank)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            AppSpace.md,
+            AppSpace.screen,
+            AppSpace.sm,
+          ),
+          child: ModeBanner(
+            trailSlug: widget.slug,
+            trailTitle: trail.localizedTitle,
+            missionSlugs: allSlugs,
+            caption: modeBanner,
+          ),
+        )
+      else if (modeBanner != null)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            0,
+            AppSpace.screen,
+            0,
+          ),
+          child: _ModeReplayBanner(
+            text: modeBanner,
+            difficultyId: difficultyId,
+            sealed: sealedHint != null,
+          ),
+        ),
+      if (!_fromBank)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            AppSpace.md,
+            AppSpace.screen,
+            AppSpace.sm,
+          ),
+          child: _TrailJourneyIntro(
+            difficultyId: null,
+            clearedModeIds: const [],
+            progressCaption: context.l10n.trailsLabeledScenesOf(
+              modeName,
+              prog.done,
+              prog.total,
+            ),
+          ),
+        ),
+      if (medalChip != null)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            0,
+            AppSpace.screen,
+            AppSpace.md,
+          ),
+          child: medalChip,
+        ),
+    ];
+    final moduleCount = trail.modules.length;
+    final itemCount = headers.length + moduleCount + 1;
 
     return Appearance(
       mode: mode,
@@ -317,118 +371,44 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                 ),
                 Expanded(
                   child: ContentFrame(
-                    child: ListView(
+                    child: ListView.builder(
                       controller: _scrollController,
                       padding: const EdgeInsets.fromLTRB(0, AppSpace.md, 0, 64),
-                      children: [
-                        if (_fromBank)
-                          Padding(
+                      itemCount: itemCount,
+                      itemBuilder: (context, index) {
+                        if (index < headers.length) return headers[index];
+                        final mi = index - headers.length;
+                        if (mi >= moduleCount) {
+                          return Padding(
                             padding: const EdgeInsets.fromLTRB(
                               AppSpace.screen,
                               AppSpace.md,
                               AppSpace.screen,
-                              AppSpace.sm,
+                              AppSpace.lg,
                             ),
-                            child: ModeBanner(
-                              trailSlug: widget.slug,
-                              trailTitle: trail.localizedTitle,
-                              missionSlugs: allSlugs,
-                              caption: modeBanner,
+                            child: MilestoneChestsCard(
+                              trailSlug: trail.slug,
+                              done: prog.done,
+                              total: prog.total,
                             ),
-                          )
-                        else if (modeBanner != null)
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(
-                              AppSpace.screen,
-                              0,
-                              AppSpace.screen,
-                              0,
-                            ),
-                            child: _ModeReplayBanner(
-                              text: modeBanner,
-                              difficultyId: difficultyId,
-                              sealed: sealedHint != null,
-                            ),
-                          ),
-                        if (!_fromBank)
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(
-                              AppSpace.screen,
-                              AppSpace.md,
-                              AppSpace.screen,
-                              AppSpace.sm,
-                            ),
-                            child: _TrailJourneyIntro(
-                              difficultyId: null,
-                              clearedModeIds: const [],
-                              progressCaption: context.l10n
-                                  .trailsLabeledScenesOf(
-                                    modeName,
-                                    prog.done,
-                                    prog.total,
-                                  ),
-                            ),
-                          ),
-                        if (_trailMedalChip(progress, trail) != null)
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(
-                              AppSpace.screen,
-                              0,
-                              AppSpace.screen,
-                              AppSpace.md,
-                            ),
-                            child: _trailMedalChip(progress, trail)!,
-                          ),
-                        ...trail.modules.asMap().entries.map((entry) {
-                          final mi = entry.key;
-                          final mod = entry.value;
-                          final start = trail.modules
-                              .take(mi)
-                              .fold(0, (sum, m) => sum + m.missions.length);
-                          final moduleTheme = GenesisModuleTheme.forModule(
-                            mod.localizedTitle,
-                            realm: _realm,
-                            trailSlug: trail.slug,
                           );
-                          final isActive = mi == activeModule;
-                          final modDone = mod.missions
-                              .where((m) => completed.contains(m.slug))
-                              .length;
+                        }
+                        final mod = trail.modules[mi];
+                        final start = trail.modules
+                            .take(mi)
+                            .fold(0, (sum, m) => sum + m.missions.length);
+                        final moduleTheme = GenesisModuleTheme.forModule(
+                          mod.localizedTitle,
+                          realm: _realm,
+                          trailSlug: trail.slug,
+                        );
+                        final isActive = mi == activeModule;
+                        final modDone = mod.missions
+                            .where((m) => completed.contains(m.slug))
+                            .length;
 
-                          final path = TrailMapPath(
-                            missions: mod.missions,
-                            startGlobalIndex: start,
-                            allSlugs: allSlugs,
-                            completedMissions: completed,
-                            trailSlug: trail.slug,
-                            modeLabel: modeName,
-                            theme: moduleTheme,
-                            modeAccent: modeAccent,
-                            onMissionTap: (slug) => Navigator.of(
-                              context,
-                            ).pushNamed('/lesson', arguments: slug),
-                            currentKey: _currentKey,
-                            currentSlug: currentSlug,
-                            plusLocked: plusOpen
-                                ? null
-                                : (slug) =>
-                                      PlusAccess.missionNeedsPlus(trail, slug),
-                            onPlusTap: (slug) {
-                              PlusLog.log(
-                                'trava',
-                                'mapa ${trail.slug} · cena $slug: '
-                                    'sem Plus, paywall',
-                              );
-                              Navigator.of(context).push(
-                                MaterialPageRoute<void>(
-                                  builder: (_) =>
-                                      const PaywallScreen(source: 'trail'),
-                                ),
-                              );
-                            },
-                          );
-
-                          return GenesisModuleScenery(
+                        return RepaintBoundary(
+                          child: GenesisModuleScenery(
                             theme: moduleTheme,
                             moduleTitle: mod.localizedTitle,
                             sectionIndex: mi + 1,
@@ -438,23 +418,43 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             modeAccent: modeAccent,
                             art: isActive ? TrailArt.of(trail.slug) : null,
                             badge: _sealMarkFor(progress, trail, mod),
-                            child: path,
-                          );
-                        }),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            AppSpace.md,
-                            AppSpace.screen,
-                            AppSpace.lg,
+                            child: TrailMapPath(
+                              missions: mod.missions,
+                              startGlobalIndex: start,
+                              allSlugs: allSlugs,
+                              completedMissions: completed,
+                              trailSlug: trail.slug,
+                              modeLabel: modeName,
+                              theme: moduleTheme,
+                              modeAccent: modeAccent,
+                              onMissionTap: (slug) => Navigator.of(
+                                context,
+                              ).pushNamed('/lesson', arguments: slug),
+                              currentKey: _currentKey,
+                              currentSlug: currentSlug,
+                              plusLocked: plusOpen
+                                  ? null
+                                  : (slug) => PlusAccess.missionNeedsPlus(
+                                      trail,
+                                      slug,
+                                    ),
+                              onPlusTap: (slug) {
+                                PlusLog.log(
+                                  'trava',
+                                  'mapa ${trail.slug} · cena $slug: '
+                                      'sem Plus, paywall',
+                                );
+                                Navigator.of(context).push(
+                                  MaterialPageRoute<void>(
+                                    builder: (_) =>
+                                        const PaywallScreen(source: 'trail'),
+                                  ),
+                                );
+                              },
+                            ),
                           ),
-                          child: MilestoneChestsCard(
-                            trailSlug: trail.slug,
-                            done: prog.done,
-                            total: prog.total,
-                          ),
-                        ),
-                      ],
+                        );
+                      },
                     ),
                   ),
                 ),

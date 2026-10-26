@@ -196,6 +196,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bibleNoteSaved => 'Anotação salva';
 
   @override
+  String get bibleNoteShare => 'Compartilhar anotação';
+
+  @override
   String get bibleNoteTagDeus => 'Deus falando';
 
   @override
@@ -360,6 +363,17 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get bibleShareImage => 'Compartilhar imagem';
+
+  @override
+  String get bibleShareIncludeNote => 'Incluir minha anotação';
+
+  @override
+  String bibleShareNoteBy(String name) {
+    return 'Anotação de $name';
+  }
+
+  @override
+  String get bibleShareNoteMine => 'Minha anotação';
 
   @override
   String get bibleSharePreparing => 'Preparando…';
@@ -3084,6 +3098,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get homeLampsTitle => 'Lâmpadas';
 
   @override
+  String homeLiturgyReadCaption(String ref) {
+    return 'Ler $ref';
+  }
+
+  @override
   String get homeMoodAlive => 'Em dia';
 
   @override
@@ -3091,6 +3110,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeMoodFrozen => 'Protegido pelo gelo';
+
+  @override
+  String get homeMoreSeeLess => 'Ver menos';
+
+  @override
+  String homeMoreSeeMore(int count) {
+    return 'Ver mais · $count';
+  }
 
   @override
   String get homeMoreToday => 'Mais para hoje';
@@ -3115,10 +3142,18 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get homeReviewMistakesCaption => 'Erros para reforçar';
+  String homeReviewMistakesCaption(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count perguntas para refazer',
+      one: '1 pergunta para refazer',
+    );
+    return '$_temp0';
+  }
 
   @override
-  String get homeReviewTitle => 'Revisão';
+  String get homeReviewTitle => 'Revisar erros';
 
   @override
   String homeSeasonChipDoneSemantics(String season, int day, String dayTitle) {
@@ -5894,6 +5929,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get notifMedalNearTitle => 'Uma medalha está perto';
+
+  @override
   String notifMemoryBody(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6002,6 +6040,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get notifTrialEndingTitle => 'Seu teste grátis termina amanhã';
+
+  @override
+  String notifWalkStartsBody(int total) {
+    return 'Dia 1 de $total: hoje a caravana caminha junto.';
+  }
+
+  @override
+  String notifWalkStartsTitle(String title) {
+    return '$title começou';
+  }
 
   @override
   String notifWeeklyLeftBody(int count) {
@@ -9473,6 +9521,88 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get verseStudyVerseUnavailable =>
       'Versículo indisponível nesta tradução.';
+
+  @override
+  String walkTogetherDayOf(int day, int total) {
+    return 'Dia $day de $total';
+  }
+
+  @override
+  String walkTogetherDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dias caminhados juntos',
+      one: '1 dia caminhado juntos',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get walkTogetherInvite => 'Chamar alguém';
+
+  @override
+  String get walkTogetherJoin => 'Entrar na caminhada';
+
+  @override
+  String get walkTogetherJoined => 'Você está dentro';
+
+  @override
+  String get walkTogetherKicker => 'Caminhada coletiva';
+
+  @override
+  String get walkTogetherOpen => 'Abrir a caminhada';
+
+  @override
+  String walkTogetherPitch(int count) {
+    return '$count dias, uma cena por dia, com a caravana inteira.';
+  }
+
+  @override
+  String walkTogetherShareText(
+    String name,
+    String title,
+    String start,
+    String url,
+  ) {
+    return '$name vai fazer a caminhada $title no Stway: uma cena por dia, a partir de $start. Vem junto?\n\nBaixe: $url';
+  }
+
+  @override
+  String walkTogetherStartsIn(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Começa em $days dias',
+      one: 'Começa amanhã',
+      zero: 'Começa hoje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String walkTogetherToday(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count caminharam hoje',
+      one: '1 caminhou hoje',
+      zero: 'ninguém caminhou hoje ainda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String walkTogetherWalkers(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count peregrinos na caminhada',
+      one: '1 peregrino na caminhada',
+      zero: 'Seja o primeiro a entrar',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get waveCta => 'Acenar';

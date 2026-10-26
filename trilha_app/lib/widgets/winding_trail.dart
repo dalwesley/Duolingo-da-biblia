@@ -4,7 +4,6 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import '../theme/app_theme.dart';
 import 'journey_phase_card.dart';
 
 /// Onde o nó senta na curva. Positivo = direita.
@@ -17,9 +16,8 @@ double windingShift(int index) => math.sin(index * math.pi / 4);
 /// Quanto o Anan entra no card. O resto fica na trilha, fora do título.
 const _walkerTuck = 10.0;
 
-/// Curva de pegadas; as andadas avançam no trecho percorrido.
-/// Anima só a pintura; os cards não rebuildam.
-class FlowingWindingTrail extends StatefulWidget {
+/// Curva de pegadas no trecho percorrido — estáticas (sem ticker).
+class FlowingWindingTrail extends StatelessWidget {
   final Color walked;
   final Color track;
   final int waveOffset;
@@ -47,49 +45,14 @@ class FlowingWindingTrail extends StatefulWidget {
   });
 
   @override
-  State<FlowingWindingTrail> createState() => _FlowingWindingTrailState();
-}
-
-class _FlowingWindingTrailState extends State<FlowingWindingTrail>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _flow;
-
-  @override
-  void initState() {
-    super.initState();
-    _flow = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 2800),
-    );
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (AppMotion.reduced(context)) {
-      _flow.stop();
-      _flow.value = 0;
-    } else if (!_flow.isAnimating) {
-      _flow.repeat();
-    }
-  }
-
-  @override
-  void dispose() {
-    _flow.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return WindingTrail(
-      walked: widget.walked,
-      track: widget.track,
-      waveOffset: widget.waveOffset,
-      showAhead: widget.showAhead,
-      flow: _flow,
-      edgeInset: widget.edgeInset,
-      stops: [...widget.stops, if (widget.walker != null) widget.walker!],
+      walked: walked,
+      track: track,
+      waveOffset: waveOffset,
+      showAhead: showAhead,
+      edgeInset: edgeInset,
+      stops: [...stops, ?walker],
     );
   }
 }
@@ -102,9 +65,6 @@ class WindingTrail extends MultiChildRenderObjectWidget {
   final bool showAhead;
   final double edgeInset;
 
-  /// Quando ligado, o picote do trecho andado corre com o ticker.
-  final Animation<double>? flow;
-
   const WindingTrail({
     super.key,
     required this.walked,
@@ -112,7 +72,6 @@ class WindingTrail extends MultiChildRenderObjectWidget {
     this.waveOffset = 0,
     this.showAhead = true,
     this.edgeInset = 12,
-    this.flow,
     required List<Widget> stops,
   }) : super(children: stops);
 
@@ -124,7 +83,6 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       waveOffset: waveOffset,
       showAhead: showAhead,
       edgeInset: edgeInset,
-      flow: flow,
     );
   }
 
@@ -138,8 +96,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       ..track = track
       ..waveOffset = waveOffset
       ..showAhead = showAhead
-      ..edgeInset = edgeInset
-      ..flow = flow;
+      ..edgeInset = edgeInset;
   }
 }
 
@@ -239,7 +196,7 @@ class WindingParentData extends ContainerBoxParentData<RenderBox> {
   bool walker = false;
 }
 
-/// Trecho já medido. O ticker só desloca as pegadas; a curva não se refaz.
+/// Trecho já medido. A curva não se refaz a cada paint.
 class _TrailStroke {
   _TrailStroke({required this.path, required this.lit, required this.width})
     : metrics = path.computeMetrics().toList(growable: false);
@@ -260,7 +217,6 @@ class RenderWindingTrail extends RenderBox
     required this._waveOffset,
     required this._showAhead,
     required this._edgeInset,
-    this._flow,
   });
 
   Color _walked;
@@ -268,7 +224,6 @@ class RenderWindingTrail extends RenderBox
   int _waveOffset;
   bool _showAhead;
   double _edgeInset;
-  Animation<double>? _flow;
   bool _walkerVisible = false;
   final List<Offset> _anchors = [];
   final List<bool> _passed = [];
@@ -283,8 +238,6 @@ class RenderWindingTrail extends RenderBox
   double _layoutWidth = 360;
 
   final Paint _foot = Paint()..isAntiAlias = true;
-
-  double get _dashPhase => -(_flow?.value ?? 0) * 13;
 
   Color get walked => _walked;
   set walked(Color value) {
@@ -319,29 +272,6 @@ class RenderWindingTrail extends RenderBox
     if (value == _edgeInset) return;
     _edgeInset = value;
     markNeedsLayout();
-  }
-
-  Animation<double>? get flow => _flow;
-  set flow(Animation<double>? value) {
-    if (identical(value, _flow)) return;
-    if (attached) _flow?.removeListener(_onFlow);
-    _flow = value;
-    if (attached) _flow?.addListener(_onFlow);
-    markNeedsPaint();
-  }
-
-  void _onFlow() => markNeedsPaint();
-
-  @override
-  void attach(PipelineOwner owner) {
-    super.attach(owner);
-    _flow?.addListener(_onFlow);
-  }
-
-  @override
-  void detach() {
-    _flow?.removeListener(_onFlow);
-    super.detach();
   }
 
   @override
@@ -636,7 +566,6 @@ class RenderWindingTrail extends RenderBox
   }
 
   void _paintStrokes(Canvas canvas) {
-    final phase = _dashPhase;
     for (final stroke in _strokes) {
       if (!stroke.lit && !_showAhead) {
         _paintOpenPath(canvas, stroke);
@@ -644,12 +573,7 @@ class RenderWindingTrail extends RenderBox
       }
       final color = stroke.lit ? _walked : _track;
       _foot.color = color.withValues(alpha: stroke.lit ? 0.95 : 0.55);
-      _stampFeet(
-        canvas,
-        stroke.metrics,
-        phase: stroke.lit ? phase : 0,
-        lit: stroke.lit,
-      );
+      _stampFeet(canvas, stroke.metrics, lit: stroke.lit);
     }
   }
 
@@ -804,26 +728,23 @@ class RenderWindingTrail extends RenderBox
   void _stampFeet(
     Canvas canvas,
     List<ui.PathMetric> metrics, {
-    double phase = 0,
     required bool lit,
   }) {
     const step = 20.0;
     for (final metric in metrics) {
-      var distance = -((phase % step) + step) % step;
+      var distance = 0.0;
       var leftFoot = true;
       while (distance < metric.length) {
-        if (distance >= 0) {
-          final tangent = metric.getTangentForOffset(distance);
-          if (tangent != null) {
-            _drawFootprint(
-              canvas,
-              tangent.position,
-              tangent.angle,
-              left: leftFoot,
-              paint: _foot,
-              lit: lit,
-            );
-          }
+        final tangent = metric.getTangentForOffset(distance);
+        if (tangent != null) {
+          _drawFootprint(
+            canvas,
+            tangent.position,
+            tangent.angle,
+            left: leftFoot,
+            paint: _foot,
+            lit: lit,
+          );
         }
         leftFoot = !leftFoot;
         distance += step;

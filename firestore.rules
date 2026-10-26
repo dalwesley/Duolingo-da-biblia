@@ -129,6 +129,7 @@ service cloud.firestore {
         && (!('weeklyXp' in request.resource.data) || nonNegInt(request.resource.data.weeklyXp))
         && (!('monthlySteps' in request.resource.data) || nonNegInt(request.resource.data.monthlySteps))
         && (!('streak' in request.resource.data) || nonNegInt(request.resource.data.streak))
+        && (!('bestStreak' in request.resource.data) || nonNegInt(request.resource.data.bestStreak))
         && (!('steps' in request.resource.data) || !('xp' in request.resource.data)
             || request.resource.data.steps == request.resource.data.xp)
         && (!('weeklySteps' in request.resource.data) || !('weeklyXp' in request.resource.data)
@@ -244,6 +245,25 @@ service cloud.firestore {
             || !('monthlyMonth' in userData())
             || userData().monthlyMonth == null
             || userData().monthlyMonth == month);
+    }
+
+    // Caminhada coletiva da temporada: cada peregrino escreve só a própria
+    // linha; todos leem para contar quem está junto.
+    match /seasonWalks/{campaign}/walkers/{uid} {
+      allow read: if isSignedIn();
+      allow delete: if isSignedIn() && request.auth.uid == uid;
+      allow create, update: if isSignedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(
+          ['uid', 'name', 'portraitStyle', 'days', 'lastDay', 'updatedAt'])
+        && request.resource.data.uid == uid
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.days is int
+        && request.resource.data.days >= 0
+        && request.resource.data.days <= 40
+        && (request.resource.data.lastDay == null
+            || isYmd(request.resource.data.lastDay));
     }
 
     // Salas de estudo privadas.

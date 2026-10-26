@@ -26,6 +26,7 @@ import '../utils/tomorrow_hook.dart';
 import '../models/daily_quest.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/corner_board.dart';
+import '../widgets/season_walk_together.dart';
 import '../widgets/corner_home_card.dart';
 import '../widgets/juntos_inbox.dart';
 import '../widgets/cinematic_icon.dart';
@@ -490,10 +491,30 @@ class _HomeScreenState extends State<HomeScreen>
           progress.isWalkDateDone(campaign.id, ymdOf(d.dateOn(campaign.start))),
       isReviewDone: (w) => progress.isSeasonReviewDone(campaign.id, w),
     );
-    return [
-      if (reviewScenes > 0 &&
-          !seasonReviewPending &&
-          !progress.isReviewDoneToday)
+    final weeklyReview =
+        reviewScenes > 0 && !seasonReviewPending && !progress.isReviewDoneToday;
+    // Caminhada coletiva antes do 1º dia; durante, o card da temporada
+    // abaixo da missão já leva ao dia.
+    final walkSoon =
+        SeasonWalkTogetherCard.visibleOn(campaign, now) &&
+        campaign.dayIndexOn(now) == null;
+    final walkJoined = progress.hasJoinedWalk(campaign.id);
+    final walkStartsIn = l10n.walkTogetherStartsIn(
+      SeasonWalkTogetherCard.daysUntilStart(campaign, now),
+    );
+    final tiles = [
+      if (walkSoon)
+        _MoreTile(
+          glyph: CinematicGlyph.path,
+          title: campaign.title,
+          caption: walkJoined
+              ? '${l10n.walkTogetherJoined} · $walkStartsIn'
+              : walkStartsIn,
+          color: AppRoles.presence,
+          hot: !walkJoined,
+          onTap: () => _openCardSheet(const SeasonWalkTogetherCard()),
+        ),
+      if (weeklyReview)
         _MoreTile(
           glyph: CinematicGlyph.scroll,
           title: l10n.weeklyReviewTitle,
@@ -563,13 +584,13 @@ class _HomeScreenState extends State<HomeScreen>
           onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
       // A fila de erros é grátis para todo mundo — inclusive assinante.
-      if (mistakes > 0)
+      // Uma revisão por vez: com a da semana na lista, os erros esperam.
+      if (mistakes > 0 && !weeklyReview)
         _MoreTile(
           glyph: CinematicGlyph.refresh,
           title: l10n.homeReviewTitle,
-          caption: l10n.homeReviewMistakesCaption,
+          caption: l10n.homeReviewMistakesCaption(mistakes),
           color: a.chrome,
-          badge: '$mistakes',
           onTap: () => Navigator.of(
             context,
           ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
@@ -578,11 +599,13 @@ class _HomeScreenState extends State<HomeScreen>
       _MoreTile(
         glyph: CinematicGlyph.calendar,
         title: liturgy.title,
-        caption: liturgy.subtitle,
+        caption: l10n.homeLiturgyReadCaption(liturgy.focusRef),
         color: LiturgicalCalendar.accentOf(liturgy.season),
         onTap: () => _openBible(liturgy.focusRef),
       ),
     ];
+    // O que pede atenção sobe; o resto mantém a ordem acima.
+    return [...tiles.where((t) => t.hot), ...tiles.where((t) => !t.hot)];
   }
 
   Future<void> _openCardSheet(Widget card) {
@@ -1112,64 +1135,126 @@ class _MoreTile {
 /// "Mais para hoje": um painel só, com linhas — lista de ações, não
 /// mosaico de cartões soltos. O humor da trilha (borda da sequência) fica
 /// no card da missão; aqui o painel é neutro para não disputar.
-class _MoreToday extends StatelessWidget {
+/// Mostra até [_visible] linhas; o resto abre em "Ver mais".
+class _MoreToday extends StatefulWidget {
   final List<_MoreTile> tiles;
 
   const _MoreToday({required this.tiles});
 
   @override
+  State<_MoreToday> createState() => _MoreTodayState();
+}
+
+class _MoreTodayState extends State<_MoreToday> {
+  static const _visible = 3;
+  bool _open = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final still = MediaQuery.disableAnimationsOf(context);
+    const radius = AppRadii.xl;
+    final all = widget.tiles;
+    final folds = all.length > _visible;
+    final tiles = folds && !_open ? all.take(_visible).toList() : all;
+    // Título dentro do painel: o rótulo e as linhas são um bloco só.
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      radius: radius,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(radius),
+        child: AnimatedSize(
+          duration: still ? Duration.zero : AppMotion.quick,
+          curve: AppMotion.enter,
+          alignment: Alignment.topCenter,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.lg,
+                  AppSpace.lg,
+                  AppSpace.lg,
+                  0,
+                ),
+                child: Semantics(
+                  header: true,
+                  child: SectionLabel(context.l10n.homeMoreToday),
+                ),
+              ),
+              for (var i = 0; i < tiles.length; i++) ...[
+                if (i > 0)
+                  const ListDivider(
+                    indent: ListDivider.iconIndent,
+                    endIndent: AppSpace.lg,
+                  ),
+                _MoreTileRow(tile: tiles[i]),
+              ],
+              if (folds) ...[
+                const ListDivider(endIndent: AppSpace.lg),
+                _MoreFoldRow(
+                  open: _open,
+                  hidden: all.length - _visible,
+                  onTap: () => setState(() => _open = !_open),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Rodapé do painel: abre e fecha as linhas além das primeiras.
+class _MoreFoldRow extends StatelessWidget {
+  final bool open;
+  final int hidden;
+  final VoidCallback onTap;
+
+  const _MoreFoldRow({
+    required this.open,
+    required this.hidden,
+    required this.onTap,
+  });
+
+  @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    const radius = AppRadii.xl;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpace.xs),
+    final l10n = context.l10n;
+    final still = MediaQuery.disableAnimationsOf(context);
+    return Semantics(
+      button: true,
+      expanded: open,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          ActHaptics.tap();
+          onTap();
+        },
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 44),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Semantics(
-                header: true,
-                child: SectionLabel(context.l10n.homeMoreToday),
-              ),
-              const SizedBox(width: AppSpace.sm),
-              Expanded(
-                child: Container(
-                  height: 1,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        a.text.withValues(alpha: 0.14),
-                        a.text.withValues(alpha: 0),
-                      ],
-                    ),
-                  ),
+              Text(
+                open ? l10n.homeMoreSeeLess : l10n.homeMoreSeeMore(hidden),
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w700,
+                  color: a.textSecondary,
                 ),
+              ),
+              const SizedBox(width: AppSpace.xs),
+              AnimatedRotation(
+                turns: open ? -0.25 : 0.25,
+                duration: still ? Duration.zero : AppMotion.quick,
+                curve: AppMotion.enter,
+                child: ListChevron(color: a.textSecondary, size: 14),
               ),
             ],
           ),
         ),
-        const SizedBox(height: AppSpace.md),
-        GlassCard(
-          padding: EdgeInsets.zero,
-          radius: radius,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(radius),
-            child: Column(
-              children: [
-                for (var i = 0; i < tiles.length; i++) ...[
-                  if (i > 0)
-                    const ListDivider(
-                      indent: ListDivider.iconIndent,
-                      endIndent: AppSpace.lg,
-                    ),
-                  _MoreTileRow(tile: tiles[i]),
-                ],
-              ],
-            ),
-          ),
-        ),
-      ],
+      ),
     );
   }
 }

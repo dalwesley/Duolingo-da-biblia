@@ -47,14 +47,12 @@ class RealmJourneyScreen extends StatefulWidget {
 class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   final _scroll = ScrollController();
   final _currentKey = GlobalKey();
-  bool _jumped = false;
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      _scheduleJumpToCurrent();
       // Depois do fade de entrada, para não reconstruir a lista no meio dele.
       final wait = MediaQuery.disableAnimationsOf(context)
           ? Duration.zero
@@ -82,31 +80,6 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     super.dispose();
   }
 
-  void _jumpToCurrent() {
-    if (!mounted) return;
-    final ctx = _currentKey.currentContext;
-    if (ctx == null) return;
-    Scrollable.ensureVisible(
-      ctx,
-      alignment: 0.28,
-      duration: MediaQuery.of(context).disableAnimations
-          ? Duration.zero
-          : AppMotion.slow,
-      curve: AppMotion.enter,
-    );
-  }
-
-  void _scheduleJumpToCurrent() {
-    if (!mounted || _jumped) return;
-    // A completed realm may have no current node. Do not reschedule forever.
-    if (_currentKey.currentContext == null) return;
-    _jumped = true;
-    final wait = MediaQuery.disableAnimationsOf(context)
-        ? Duration.zero
-        : AppMotion.standard;
-    Future<void>.delayed(wait, _jumpToCurrent);
-  }
-
   void _onNodeTap(JourneyPathItem item) => openJourneyItem(context, item);
 
   @override
@@ -120,12 +93,6 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       allTrails: widget.allTrails,
       progress: progress,
     );
-    if (!_jumped &&
-        items.any((item) => item.state == JourneyNodeState.current)) {
-      WidgetsBinding.instance.addPostFrameCallback(
-        (_) => _scheduleJumpToCurrent(),
-      );
-    }
     final bottom = MediaQuery.of(context).padding.bottom;
     final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);

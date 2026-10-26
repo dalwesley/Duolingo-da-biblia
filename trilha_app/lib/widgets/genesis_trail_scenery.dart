@@ -108,91 +108,88 @@ class _ChapterTitleCard extends StatelessWidget {
         ? const [0.46, 0.20, 0.04]
         : const [0.72, 0.58, 0.46];
     final content = Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      context.l10n.trailsStage(_roman(sectionIndex)),
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w700,
-                        color: a.textFaint,
-                      ),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    context.l10n.trailsStage(_roman(sectionIndex)),
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w700,
+                      color: a.textFaint,
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      title,
-                      style: AppTypography.display(
-                        size: highlighted ? 24 : 20,
-                        weight: FontWeight.w600,
-                        height: 1.12,
-                        color: highlighted ? a.text : a.textSecondary,
-                      ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    title,
+                    style: AppTypography.display(
+                      size: highlighted ? 24 : 20,
+                      weight: FontWeight.w600,
+                      height: 1.12,
+                      color: highlighted ? a.text : a.textSecondary,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              if (badge != null) ...[
-                const SizedBox(width: AppSpace.md),
-                badge!,
-              ],
-            ],
+            ),
+            if (badge != null) ...[const SizedBox(width: AppSpace.md), badge!],
+          ],
+        ),
+        if (highlighted) ...[
+          const SizedBox(height: 12),
+          Text(
+            theme.narrative,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.5,
+              weight: FontWeight.w500,
+              color: a.textSecondary,
+            ),
           ),
-          if (highlighted) ...[
-            const SizedBox(height: 12),
-            Text(
-              theme.narrative,
-              style: AppTypography.body(
-                size: 14,
-                height: 1.5,
-                weight: FontWeight.w500,
-                color: a.textSecondary,
-              ),
+          const SizedBox(height: 14),
+          Text(
+            theme.verse,
+            style: AppTypography.verse(size: 16, height: 1.4, color: a.text),
+          ),
+          if (total > 0) ...[
+            const SizedBox(height: 16),
+            AppProgressBar(
+              value: pct,
+              color: onSky,
+              trackColor: a.progressTrack,
+              height: 6,
             ),
-            const SizedBox(height: 14),
-            Text(
-              theme.verse,
-              style: AppTypography.verse(size: 16, height: 1.4, color: a.text),
-            ),
-            if (total > 0) ...[
-              const SizedBox(height: 16),
-              AppProgressBar(
-                value: pct,
-                color: onSky,
-                trackColor: a.progressTrack,
-                height: 6,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                context.l10n.trailsScenesOf(done, total),
-                style: AppTypography.body(
-                  size: 12,
-                  weight: FontWeight.w600,
-                  color: a.textFaint,
-                ),
-              ),
-            ],
-          ] else if (total > 0) ...[
             const SizedBox(height: 8),
             Text(
-              done >= total
-                  ? context.l10n.trailsCleared
-                  : context.l10n.trailsDoneOfTotal(done, total),
+              context.l10n.trailsScenesOf(done, total),
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w600,
-                color: onSky,
+                color: a.textFaint,
               ),
             ),
           ],
+        ] else if (total > 0) ...[
+          const SizedBox(height: 8),
+          Text(
+            done >= total
+                ? context.l10n.trailsCleared
+                : context.l10n.trailsDoneOfTotal(done, total),
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w600,
+              color: onSky,
+            ),
+          ),
         ],
-      );
+      ],
+    );
 
     return AnimatedContainer(
       duration: AppMotion.gentle,
@@ -213,10 +210,19 @@ class _ChapterTitleCard extends StatelessWidget {
           children: [
             if (art != null) ...[
               Positioned.fill(
-                child: Image.asset(
-                  art!,
-                  fit: BoxFit.cover,
-                  alignment: Alignment.center,
+                child: Builder(
+                  builder: (context) {
+                    final dpr = MediaQuery.devicePixelRatioOf(context);
+                    final cacheW = (MediaQuery.sizeOf(context).width * dpr)
+                        .round();
+                    return Image.asset(
+                      art!,
+                      fit: BoxFit.cover,
+                      alignment: Alignment.center,
+                      cacheWidth: cacheW,
+                      cacheHeight: (120 * dpr).round(),
+                    );
+                  },
                 ),
               ),
               Positioned.fill(

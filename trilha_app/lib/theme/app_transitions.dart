@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'app_motion.dart';
 
-/// Transição padrão entre telas — aproximação de câmera (dolly-in).
+/// Transição padrão entre telas — dissolve leve.
 ///
-/// A nova tela entra de leve, crescendo de 97% e acendendo; a de trás recua
-/// um pouco e escurece. Sem slide lateral nem corte seco. Com "reduzir
-/// movimento", vira só um dissolve.
+/// Antes: Opacity + Transform.scale em página inteira (saveLayer + escala
+/// a cada frame no Android → abertura travada em mapa/lição/celebração).
+/// Agora: só FadeTransition (composited), sem scale. Com "reduzir
+/// movimento", dissolve imediato.
 class CinematicPageTransitionsBuilder extends PageTransitionsBuilder {
   const CinematicPageTransitionsBuilder();
 
@@ -29,22 +30,20 @@ class CinematicPageTransitionsBuilder extends PageTransitionsBuilder {
       curve: AppMotion.move,
     );
 
+    // Isola a página: o fade não suja o painter das telas pesadas.
+    final page = RepaintBoundary(child: child);
+
     if (reduced) {
-      return FadeTransition(opacity: inCurve, child: child);
+      return FadeTransition(opacity: inCurve, child: page);
     }
 
-    return AnimatedBuilder(
-      animation: Listenable.merge([inCurve, outCurve]),
-      child: child,
-      builder: (context, child) {
-        final t = inCurve.value;
-        final back = outCurve.value;
-        final scale = (0.97 + 0.03 * t) * (1 - 0.02 * back);
-        return Opacity(
-          opacity: (t.clamp(0.0, 1.0)) * (1 - 0.35 * back),
-          child: Transform.scale(scale: scale, child: child),
-        );
-      },
+    // Entrada acende; a de trás só escurece um pouco quando algo sobe.
+    return FadeTransition(
+      opacity: inCurve,
+      child: FadeTransition(
+        opacity: Tween<double>(begin: 1, end: 0.92).animate(outCurve),
+        child: page,
+      ),
     );
   }
 }

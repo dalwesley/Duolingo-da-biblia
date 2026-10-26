@@ -1527,7 +1527,7 @@ class _JourneyCardFace extends StatelessWidget {
   Widget build(BuildContext context) {
     final page = Appearance.of(context);
     if (art case final asset? when page.look != AppearanceLook.night) {
-      return _skyPlate(page, asset);
+      return _skyPlate(context, page, asset);
     }
     final night = AppearanceStyle.resolve(AppearanceMode.night);
     return GlassCard(
@@ -1544,13 +1544,19 @@ class _JourneyCardFace extends StatelessWidget {
             if (art case final asset?) ...[
               // A luz da pintura fica à direita; o card mostra esse lado.
               Positioned.fill(
-                child: Opacity(
-                  opacity: locked ? 0.45 : 1,
-                  child: Image.asset(
-                    asset,
-                    fit: BoxFit.cover,
-                    alignment: _artFrame(asset),
-                  ),
+                // modulate evita saveLayer do Opacity em cima do bitmap.
+                child: Image.asset(
+                  asset,
+                  fit: BoxFit.cover,
+                  alignment: _artFrame(asset),
+                  color: locked ? const Color(0x73FFFFFF) : null,
+                  colorBlendMode: locked ? BlendMode.modulate : null,
+                  cacheWidth:
+                      (MediaQuery.sizeOf(context).width *
+                              MediaQuery.devicePixelRatioOf(context))
+                          .round(),
+                  cacheHeight: (200 * MediaQuery.devicePixelRatioOf(context))
+                      .round(),
                 ),
               ),
               // Escurece da esquerda, onde ficam glifo e título, até a luz.
@@ -1618,14 +1624,17 @@ class _JourneyCardFace extends StatelessWidget {
   /// No Claro ela entra pela direita e o papel do céu guarda o texto.
   /// No Médio um véu da cor do card cobre a esquerda, e a luz da pintura
   /// à direita permanece sem filtro.
-  Widget _skyPlate(AppearanceStyle page, String asset) {
+  Widget _skyPlate(BuildContext context, AppearanceStyle page, String asset) {
     final morning = page.look == AppearanceLook.morning;
     // Sem opacidade: no "Em breve" o azul do card vazava pela pintura
     // e o véu parecia ir até a borda.
+    final dpr = MediaQuery.devicePixelRatioOf(context);
     final image = Image.asset(
       asset,
       fit: BoxFit.cover,
       alignment: _artFrame(asset),
+      cacheWidth: (MediaQuery.sizeOf(context).width * dpr).round(),
+      cacheHeight: (200 * dpr).round(),
     );
     final scene = morning ? _paperWindow(image) : _afternoonVeil(page, image);
     return GlassCard(

@@ -6,22 +6,27 @@ import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../l10n/app_language.dart';
+import '../models/bible_note.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'app_sheet.dart';
+import 'bible_note_tag.dart';
 import 'stway_brand.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
 /// Abre sheet para compartilhar um versículo (imagem com marca Stway, ou texto).
+///
+/// Com [note], a anotação vai junto (o peregrino pode tirar antes de enviar).
 Future<void> showShareVerseSheet(
   BuildContext context, {
   required String bookName,
   required int chapter,
   required int verse,
   required String text,
+  BibleNote? note,
 }) {
   return showAppSheet<void>(
     context,
@@ -30,6 +35,7 @@ Future<void> showShareVerseSheet(
       chapter: chapter,
       verse: verse,
       text: text,
+      note: note?.tag == null ? null : note,
     ),
   );
 }
@@ -39,12 +45,14 @@ class _ShareVerseSheet extends StatefulWidget {
   final int chapter;
   final int verse;
   final String text;
+  final BibleNote? note;
 
   const _ShareVerseSheet({
     required this.bookName,
     required this.chapter,
     required this.verse,
     required this.text,
+    this.note,
   });
 
   @override
@@ -54,8 +62,19 @@ class _ShareVerseSheet extends StatefulWidget {
 class _ShareVerseSheetState extends State<_ShareVerseSheet> {
   final _boundaryKey = GlobalKey();
   bool _busy = false;
+  bool _withNote = true;
 
   String get _ref => '${widget.bookName} ${widget.chapter}:${widget.verse}';
+
+  BibleNote? get _note => _withNote ? widget.note : null;
+
+  /// "Anotação de Ana" — sem nome real, "Minha anotação".
+  String _noteAuthor() {
+    final name = context.read<ProgressService>().userName;
+    return ProgressService.isPlaceholderUserName(name)
+        ? context.l10n.bibleShareNoteMine
+        : context.l10n.bibleShareNoteBy(name.trim());
+  }
 
   @override
   void initState() {
@@ -105,13 +124,22 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
   }
 
   Future<void> _shareText() async {
+    final note = _note;
+    final noteBlock = note == null
+        ? ''
+        : [
+            '',
+            '${_noteAuthor()} · ${bibleNoteTagLabel(context, note.tag!)}',
+            if (note.text.isNotEmpty) note.text,
+            '',
+          ].join('\n');
     final body =
         '''
 “${widget.text}”
 
 — $_ref
 ${BibleService.translationName}
-
+$noteBlock
 ${context.l10n.bibleShareTextFooter}
 '''
             .trim();
@@ -136,8 +164,17 @@ ${context.l10n.bibleShareTextFooter}
               chapter: widget.chapter,
               verse: widget.verse,
               text: widget.text,
+              note: _note,
+              noteAuthor: _note == null ? null : _noteAuthor(),
             ),
           ),
+          if (widget.note != null) ...[
+            const SizedBox(height: AppSpace.sm),
+            _IncludeNoteRow(
+              value: _withNote,
+              onChanged: _busy ? null : (v) => setState(() => _withNote = v),
+            ),
+          ],
           const SizedBox(height: 16),
           CopperCta(
             label: _busy
@@ -160,6 +197,45 @@ ${context.l10n.bibleShareTextFooter}
   }
 }
 
+class _IncludeNoteRow extends StatelessWidget {
+  final bool value;
+  final ValueChanged<bool>? onChanged;
+
+  const _IncludeNoteRow({required this.value, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            context.l10n.bibleShareIncludeNote,
+            style: AppTypography.body(
+              size: 14,
+              weight: FontWeight.w600,
+              color: a.text,
+            ),
+          ),
+        ),
+        Switch.adaptive(
+          value: value,
+          onChanged: onChanged,
+          activeThumbColor: AppRoles.selected,
+          activeTrackColor: AppRoles.success,
+          inactiveThumbColor: a.textSecondary,
+          inactiveTrackColor: a.insetFill,
+          trackOutlineColor: WidgetStateProperty.resolveWith(
+            (states) => states.contains(WidgetState.selected)
+                ? AppRoles.success
+                : a.cardBorder,
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 /// Card visual usado na imagem compartilhada.
 class ShareVerseCard extends StatelessWidget {
   final String bookName;
@@ -167,12 +243,18 @@ class ShareVerseCard extends StatelessWidget {
   final int verse;
   final String text;
 
+  /// Anotação do peregrino, abaixo da referência, no fio da cor do tema.
+  final BibleNote? note;
+  final String? noteAuthor;
+
   const ShareVerseCard({
     super.key,
     required this.bookName,
     required this.chapter,
     required this.verse,
     required this.text,
+    this.note,
+    this.noteAuthor,
   });
 
   @override
@@ -281,11 +363,74 @@ class ShareVerseCard extends StatelessWidget {
                       color: a.textFaint,
                     ).copyWith(fontStyle: FontStyle.italic),
                   ),
+                  if (note?.tag case final tag?) ...[
+                    const SizedBox(height: 18),
+                    _CardNote(tag: tag, text: note!.text, author: noteAuthor),
+                  ],
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _CardNote extends StatelessWidget {
+  final BibleNoteTag tag;
+  final String text;
+  final String? author;
+
+  const _CardNote({required this.tag, required this.text, this.author});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.32),
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border(left: BorderSide(color: tag.color, width: 3)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  color: tag.color,
+                  shape: BoxShape.circle,
+                ),
+              ),
+              const SizedBox(width: 6),
+              Flexible(
+                child: Text(
+                  [bibleNoteTagLabel(context, tag), ?author].join(' · '),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 0.4,
+                    color: a.textSecondary,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          if (text.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text(
+              text,
+              style: AppTypography.body(size: 14, height: 1.4, color: a.text),
+            ),
+          ],
+        ],
       ),
     );
   }

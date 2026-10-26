@@ -141,6 +141,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       vsync: this,
       duration: const Duration(milliseconds: 2800),
     )..repeat();
+    // Após a entrada, congela o fôlego da atmosfera — loop infinito
+    // competia com I/O de completeMission e com o restante da UI.
+    Future<void>.delayed(const Duration(milliseconds: 4200), () {
+      if (!mounted || !_pulse.isAnimating) return;
+      _pulse.stop();
+      _pulse.value = 0.5;
+    });
     _count = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1100),
@@ -362,6 +369,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             correct: widget.correct,
             total: widget.total,
             alsoComplete: EntryTrails.linkedScenes(widget.missionSlug),
+            mode: trailUsesDifficultyBank(widget.trailSlug)
+                ? progress.difficultyForTrail(widget.trailSlug) ??
+                      TrailDifficulty.semente.id
+                : null,
           )
           .then((awarded) async {
             if (mounted && awarded > 0) {

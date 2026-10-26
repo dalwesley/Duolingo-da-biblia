@@ -144,15 +144,14 @@ class MedalEngagementService {
   }
 
   static List<String> _allCelebrationIds(List<PilgrimVaultState> vaults) => [
-        for (final vault in vaults)
-          for (final track in vault.tracks)
-            if (track.hasStarted)
-              for (var i = 0; i <= track.levelIndex; i++)
-                track.track.levels[i].id,
-        for (final vault in vaults)
-          for (final rare in vault.rareMedals)
-            if (rare.unlocked) rare.def.id,
-      ];
+    for (final vault in vaults)
+      for (final track in vault.tracks)
+        if (track.hasStarted)
+          for (var i = 0; i <= track.levelIndex; i++) track.track.levels[i].id,
+    for (final vault in vaults)
+      for (final rare in vault.rareMedals)
+        if (rare.unlocked) rare.def.id,
+  ];
 
   Future<void> _celebrateTierUps(
     BuildContext context,
@@ -186,14 +185,14 @@ class MedalEngagementService {
     }
   }
 
-  Future<({
-    CaravanPilgrimProfile profile,
-    List<Trail> catalog,
-    PilgrimMedalEvalContext ctx,
-  })> _buildBundle(
-    ProgressService progress,
-    BackendService backend,
-  ) async {
+  Future<
+    ({
+      CaravanPilgrimProfile profile,
+      List<Trail> catalog,
+      PilgrimMedalEvalContext ctx,
+    })
+  >
+  _buildBundle(ProgressService progress, BackendService backend) async {
     _catalog = await TrailRepository().getTrails();
     final base = CaravanPilgrimProfile.fromProgress(
       progress: progress,
@@ -219,8 +218,8 @@ class MedalEngagementService {
 
   static Future<int> unlockedCountCached(ProgressService progress, String uid) {
     return TrailRepository().getTrails().then(
-          (catalog) => unlockedCountForProgress(progress, uid, catalog),
-        );
+      (catalog) => unlockedCountForProgress(progress, uid, catalog),
+    );
   }
 
   /// Só as medalhas raras "Mirra" já desbloqueadas (não a soma de tudo).
@@ -246,8 +245,8 @@ class MedalEngagementService {
     String uid,
   ) {
     return TrailRepository().getTrails().then(
-          (catalog) => unlockedRareMedalsForProgress(progress, uid, catalog),
-        );
+      (catalog) => unlockedRareMedalsForProgress(progress, uid, catalog),
+    );
   }
 
   static final _standingMedals =
@@ -255,23 +254,47 @@ class MedalEngagementService {
 
   /// Medalhas do card do ranking (eu: local; outros: perfil público).
   static Future<({List<PilgrimMedalDef> rares, int total})>
-      standingMedalsCached({
+  standingMedalsCached({
     required bool isUser,
     required String uid,
     required String name,
     required ProgressService progress,
     required BackendService backend,
   }) {
-    final key = isUser ? 'self:$uid' : uid;
+    // Eu: a chave muda com o progresso — medalha nova aparece na hora.
+    final key = isUser
+        ? 'self:$uid:${progress.steps}:${progress.readBibleChapters.length}:'
+              '${progress.sharedVerseCount}:${progress.memoryMastered.length}'
+        : uid;
     if (key.isEmpty) {
       return Future.value((rares: <PilgrimMedalDef>[], total: 0));
     }
+    if (isUser) {
+      _standingMedals.removeWhere((k, _) => k.startsWith('self:') && k != key);
+    }
     return _standingMedals.putIfAbsent(key, () async {
       if (isUser) {
+        // Perfil enriquecido como o dos outros: capítulos lidos (Palavra)
+        // só existem depois de cruzar com os livros da Bíblia.
         final catalog = await TrailRepository().getTrails();
+        final books = await BibleService.instance.books();
+        final profile = await CaravanPilgrimProfile.fromProgress(
+          progress: progress,
+          uid: uid,
+        ).enriched(catalog: catalog, bibleBooks: books);
+        final ctx = PilgrimMedalEvalContext.fromProgress(progress);
+        final vaults = medals.PilgrimMedals.evaluateVaults(
+          profile: profile,
+          catalog: catalog,
+          ctx: ctx,
+        );
         return (
-          rares: unlockedRareMedalsForProgress(progress, uid, catalog),
-          total: unlockedCountForProgress(progress, uid, catalog),
+          rares: [
+            for (final vault in vaults)
+              for (final status in vault.rareMedals)
+                if (status.unlocked) status.def,
+          ],
+          total: medals.PilgrimMedals.unlockedCount(profile, catalog, ctx: ctx),
         );
       }
 
@@ -305,11 +328,7 @@ class MedalEngagementService {
             for (final status in vault.rareMedals)
               if (status.unlocked) status.def,
         ],
-        total: medals.PilgrimMedals.unlockedCount(
-          profile,
-          catalog,
-          ctx: ctx,
-        ),
+        total: medals.PilgrimMedals.unlockedCount(profile, catalog, ctx: ctx),
       );
     });
   }
