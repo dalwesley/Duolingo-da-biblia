@@ -361,8 +361,11 @@ class _DayTile extends StatelessWidget {
     if (!context.mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) =>
-            LessonScreen(missionSlug: day.missionSlug, skipTrailLock: true),
+        builder: (_) => LessonScreen(
+          missionSlug: day.missionSlug,
+          skipTrailLock: true,
+          plusGateDone: true,
+        ),
       ),
     );
     if (!context.mounted) return;

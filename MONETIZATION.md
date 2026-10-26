@@ -120,10 +120,23 @@ calendário de temporadas), montada de cenas que já existem nas trilhas:
 | Planos de formação | Bíblia inteira + amostra dos guiados | Guiados completos e planos por objetivo |
 | Conexões bíblicas | Dentro das missões (gesto connect) | Estudos e explorações aprofundadas |
 | Caminhadas | Dias 1–3 de cada temporada | Temporadas completas + Caminhadas Premium |
-| Trilhas temáticas (Vida Cristã, Teologia, por dor, Sermão do Monte) | 1ª cena de cada trilha | Trilhas temáticas completas (passagens sempre grátis pelo AT/NT) |
+| Trilhas temáticas (Vida Cristã, Teologia, Sermão do Monte) | 1ª cena de cada trilha | Trilhas temáticas completas (passagens sempre grátis pelo AT/NT) |
 | Desafios e conquistas | Regulares | Experiências especiais |
 | Comunidade | Grupos e interação básica | Jornadas cooperativas especiais (Fase 3) |
 | Progresso | XP, sequência e trilhas | Análise de aprendizagem por tema (Fase 2) |
+
+Todos os livros da Bíblia são grátis, os poéticos (Jó, Salmos, Provérbios,
+Eclesiastes, Cantares) inclusive: ficam no card do Antigo Testamento. As
+trilhas de entrada (Ansiedade, Recomeço, Conhecer a Deus, Entender a
+Bíblia) são grátis inteiras.
+
+**Cena Plus liberada por quem paga.** A trava do Peregrino+ vale em todo
+caminho (mapa, Home, deep link, grupo, Travessia). Duas exceções, uma cena
+por vez: no grupo, a cena que o líder marcou como estudo da semana abre
+para todos se o líder tem o Plus; na Travessia, a cena abre se o par tem
+o Plus. A cena seguinte da trilha volta a pedir o Plus. Cena já concluída
+sempre se pode repetir. O Plus de quem libera vem do doc público
+(`plusActive` + `plusExpiresAt`, gravados só pelo webhook).
 
 ---
 

@@ -2962,7 +2962,7 @@ class AppLocalizationsPt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Próximo: $stage · faltam $count dias na sequência',
-      one: 'Próximo: $stage · faltam 1 dia na sequência',
+      one: 'Próximo: $stage · falta 1 dia na sequência',
     );
     return '$_temp0';
   }
@@ -3480,7 +3480,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get journeyAntigoTestamentoBody =>
-      'De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.';
+      'De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.';
 
   @override
   String get journeyBeyondHorizon => 'Ainda além do horizonte';
@@ -3524,13 +3524,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get journeyPlusCtaDetail => 'com o Peregrino+';
-
-  @override
-  String get journeySabedoriaBody =>
-      'Jó, Salmos, Provérbios, Eclesiastes e Cantares. A dor que pergunta, a oração que canta, o conselho para cada dia e o amor: a fé vivida no chão da vida.';
-
-  @override
-  String get journeySabedoriaTitle => 'Sabedoria';
 
   @override
   String journeyScenesLeft(int count) {
@@ -4423,6 +4416,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get lessonPassageTitle => 'Texto da cena';
+
+  @override
+  String lessonPlusGrantedBy(String name) {
+    return '$name liberou esta cena do Peregrino+ para você.';
+  }
 
   @override
   String get lessonPractice => 'Treino';
@@ -6511,7 +6509,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermão do Monte, Oração, Família, Ansiedade e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.';
+      'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.';
 
   @override
   String get paywallPerkThemesTitle => 'Trilhas por tema';
@@ -7489,7 +7487,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String profileStreakRemaining(int left, int goal) {
-    return 'Faltam $left para o compromisso de $goal dias.';
+    String _temp0 = intl.Intl.pluralLogic(
+      left,
+      locale: localeName,
+      other: 'Faltam $left para o compromisso de $goal dias.',
+      one: 'Falta 1 para o compromisso de $goal dias.',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -9242,7 +9246,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get trailsDoorIntroThemes =>
-      'A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas, as parábolas e a sabedoria. Cada trilha segue um fio por vários livros.';
+      'A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.';
 
   @override
   String get trailsDownloading => 'Baixando…';

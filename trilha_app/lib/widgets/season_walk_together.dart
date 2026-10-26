@@ -28,8 +28,13 @@ import 'ui_primitives.dart';
 /// quantos estão juntos e quantos caminharam hoje, chamar alguém.
 ///
 /// Aparece [leadDays] dias antes do 1º dia e some quando a temporada acaba.
+///
+/// [bare] — só pulso e CTAs, para encaixar na [PathPreviewSheet] (a arte
+/// e o título já estão no topo da folha).
 class SeasonWalkTogetherCard extends StatefulWidget {
-  const SeasonWalkTogetherCard({super.key});
+  final bool bare;
+
+  const SeasonWalkTogetherCard({super.key, this.bare = false});
 
   static const leadDays = 21;
 
@@ -152,6 +157,86 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
             SeasonWalkTogetherCard.daysUntilStart(campaign, now),
           );
 
+    final pulseAndCtas = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FutureBuilder<SeasonWalkPulse?>(
+          future: _pulse,
+          builder: (context, snap) {
+            final pulse = snap.data;
+            if (pulse == null) return const SizedBox.shrink();
+            // Pré-início: só mostra quando já há companhia de verdade.
+            if (!running && pulse.walkers < 2) {
+              return const SizedBox.shrink();
+            }
+            final lines = [
+              if (running)
+                '${l10n.walkTogetherWalkers(pulse.walkers)} · '
+                    '${l10n.walkTogetherToday(pulse.walkedToday)}'
+              else
+                l10n.walkTogetherWalkers(pulse.walkers),
+              if (running && pulse.daysTogether > 0)
+                l10n.walkTogetherDays(pulse.daysTogether),
+            ];
+            return Padding(
+              padding: const EdgeInsets.only(bottom: AppSpace.md),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const CinematicIcon(
+                    glyph: CinematicGlyph.people,
+                    size: AppMetrics.iconSm,
+                    accent: AppRoles.presence,
+                    framed: false,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      lines.join('\n'),
+                      style: AppTypography.body(
+                        size: 12,
+                        height: 1.4,
+                        weight: FontWeight.w700,
+                        color: AppRoles.presence,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+        if (!joined)
+          CopperCta(
+            label: l10n.walkTogetherJoin,
+            leading: CinematicGlyph.path,
+            expanded: true,
+            onTap: _joining ? null : () => _join(campaign),
+          )
+        else ...[
+          if (running)
+            Padding(
+              padding: const EdgeInsets.only(bottom: AppSpace.sm),
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: TextCta(
+                  label: l10n.walkTogetherOpen,
+                  onTap: () => openSeasonWalk(context),
+                ),
+              ),
+            ),
+          GhostCta(
+            label: l10n.walkTogetherInvite,
+            leading: CinematicGlyph.share,
+            expanded: true,
+            onTap: () => _invite(campaign),
+          ),
+        ],
+      ],
+    );
+
+    if (widget.bare) return pulseAndCtas;
+
     return GlassCard(
       tint: AppRoles.presence,
       glow: 0.28,
@@ -197,78 +282,7 @@ class _SeasonWalkTogetherCardState extends State<SeasonWalkTogetherCard> {
             ],
           ),
           const SizedBox(height: AppSpace.md),
-          FutureBuilder<SeasonWalkPulse?>(
-            future: _pulse,
-            builder: (context, snap) {
-              final pulse = snap.data;
-              if (pulse == null) return const SizedBox.shrink();
-              // Pré-início: só mostra quando já há companhia de verdade.
-              if (!running && pulse.walkers < 2) {
-                return const SizedBox.shrink();
-              }
-              final lines = [
-                if (running)
-                  '${l10n.walkTogetherWalkers(pulse.walkers)} · '
-                      '${l10n.walkTogetherToday(pulse.walkedToday)}'
-                else
-                  l10n.walkTogetherWalkers(pulse.walkers),
-                if (running && pulse.daysTogether > 0)
-                  l10n.walkTogetherDays(pulse.daysTogether),
-              ];
-              return Padding(
-                padding: const EdgeInsets.only(bottom: AppSpace.md),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const CinematicIcon(
-                      glyph: CinematicGlyph.people,
-                      size: AppMetrics.iconSm,
-                      accent: AppRoles.presence,
-                      framed: false,
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        lines.join('\n'),
-                        style: AppTypography.body(
-                          size: 12,
-                          height: 1.4,
-                          weight: FontWeight.w700,
-                          color: AppRoles.presence,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
-          ),
-          if (!joined)
-            CopperCta(
-              label: l10n.walkTogetherJoin,
-              leading: CinematicGlyph.path,
-              expanded: true,
-              onTap: _joining ? null : () => _join(campaign),
-            )
-          else ...[
-            if (running)
-              Padding(
-                padding: const EdgeInsets.only(bottom: AppSpace.sm),
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: TextCta(
-                    label: l10n.walkTogetherOpen,
-                    onTap: () => openSeasonWalk(context),
-                  ),
-                ),
-              ),
-            GhostCta(
-              label: l10n.walkTogetherInvite,
-              leading: CinematicGlyph.share,
-              expanded: true,
-              onTap: () => _invite(campaign),
-            ),
-          ],
+          pulseAndCtas,
         ],
       ),
     );

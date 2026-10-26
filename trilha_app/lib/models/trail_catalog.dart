@@ -160,6 +160,7 @@ enum TrailJourney {
   antigoTestamento(TrailShelf.biblia, TrailRealm.antigoTestamento, [
     TrailCategory.pentateuco,
     TrailCategory.historicosAt,
+    TrailCategory.poeticos,
     TrailCategory.profetasMaiores,
     TrailCategory.profetasMenores,
     TrailCategory.intertestamentario,
@@ -169,11 +170,6 @@ enum TrailJourney {
     TrailCategory.historicosNt,
     TrailCategory.epistolas,
     TrailCategory.apocalipse,
-  ]),
-  // Poéticos saem do card do AT: Jó, Salmos, Provérbios, Eclesiastes e
-  // Cantares são o card Sabedoria, no carrossel Temáticos (Peregrino+).
-  sabedoria(TrailShelf.tematicos, TrailRealm.antigoTestamento, [
-    TrailCategory.poeticos,
   ]),
   panorama(TrailShelf.tematicos, TrailRealm.antigoTestamento, [
     TrailCategory.panorama,
@@ -216,7 +212,6 @@ enum TrailJourney {
   final List<TrailCategory> categories;
 
   String get label => switch (this) {
-    sabedoria => L10n.current.journeySabedoriaTitle,
     _ => categories.length > 1 ? realm.label : categories.single.label,
   };
 
@@ -224,12 +219,11 @@ enum TrailJourney {
   String get description => switch (this) {
     antigoTestamento => L10n.current.journeyAntigoTestamentoBody,
     novoTestamento => L10n.current.journeyNovoTestamentoBody,
-    sabedoria => L10n.current.journeySabedoriaBody,
     _ => categories.single.description,
   };
 
-  /// Só o card da Bíblia (AT e NT) é grátis. Temáticos — inclusive Sabedoria —,
-  /// Vida Cristã e Teologia são Peregrino+.
+  /// Só o card da Bíblia (AT e NT) é grátis: todos os livros, poéticos
+  /// inclusive. Temáticos, Vida Cristã e Teologia são Peregrino+.
   bool get requiresPlus => shelf != TrailShelf.biblia;
 
   /// Cards temáticos que atravessam os dois Testamentos: a trilha pode estar

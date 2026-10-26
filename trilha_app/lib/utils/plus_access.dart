@@ -13,8 +13,8 @@ class PlusAccess {
   /// com o plano base (`plus_founder_annual:annual`).
   static const pioneerProductId = 'plus_founder_annual';
 
-  /// O card da Bíblia (Antigo e Novo Testamento) é grátis. Sabedoria, os
-  /// outros temas, Vida Cristã e Teologia são Peregrino+. As cenas do
+  /// O card da Bíblia (Antigo e Novo Testamento, todos os livros) é grátis.
+  /// Os temas, Vida Cristã e Teologia são Peregrino+. As cenas do
   /// Sermão continuam grátis pela trilha de Mateus. As trilhas de entrada
   /// (motivo do onboarding e dores) são a porta do app: grátis inteiras.
   static bool trailIsPlus(Trail trail) =>
@@ -25,6 +25,20 @@ class PlusAccess {
     if (!trailIsPlus(trail)) return false;
     final slugs = trail.missionSlugs;
     return slugs.isNotEmpty && slugs.first != missionSlug;
+  }
+
+  /// Peregrino+ de outra pessoa pelo doc público `users/{uid}`
+  /// (`plusActive` e `plusExpiresAt`, gravados só pelo webhook). Data de
+  /// fim vencida além da graça não conta, mesmo com `plusActive` atrasado.
+  static bool profileHasPlus(
+    Map<String, dynamic>? data, {
+    required DateTime now,
+  }) {
+    if (data == null || data['plusActive'] != true) return false;
+    final raw = data['plusExpiresAt'];
+    final expires = raw is String ? DateTime.tryParse(raw) : null;
+    if (expires == null) return true;
+    return now.isBefore(expires.add(const Duration(days: graceDays)));
   }
 
   static bool isPioneerProduct(String? id) =>

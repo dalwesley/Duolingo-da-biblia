@@ -83,10 +83,18 @@ class CornerService extends ChangeNotifier {
     return null;
   }
 
-  bool opensMission(String missionSlug) {
+  bool opensMission(String missionSlug) =>
+      challengeOpening(missionSlug) != null;
+
+  /// Travessia ativa que abre [missionSlug] para mim, ou `null`. Se o par
+  /// tem o Peregrino+, a cena abre para mim também.
+  CornerChallenge? challengeOpening(String missionSlug) {
     final uid = _uid;
-    if (uid == null || uid.isEmpty) return false;
-    return CornerChallenge.authorizes(missionSlug, uid, mine);
+    if (uid == null || uid.isEmpty) return null;
+    for (final c in mine) {
+      if (c.opensFor(uid, missionSlug)) return c;
+    }
+    return null;
   }
 
   /// Limite: 1 travessia por pessoa. [except] ignora o próprio convite ao aceitar.

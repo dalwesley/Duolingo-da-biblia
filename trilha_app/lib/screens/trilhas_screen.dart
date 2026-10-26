@@ -23,6 +23,7 @@ import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/offline_curriculum_dialog.dart';
+import '../widgets/path_preview_sheet.dart';
 import '../widgets/realm_world_atmosphere.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/trail_suggestion_sheet.dart';
@@ -195,50 +196,24 @@ class _TrilhasScreenState extends State<TrilhasScreen>
 
   void _showSoonSheet(TrailJourney journey) {
     final visuals = RealmVisuals.of(journey.realm);
-    _showSoonCopy(
-      title: journey.label,
-      subtitle: journey.description.trim().isEmpty
-          ? context.l10n.trailsJourneySoonBody
-          : journey.description,
-      accent: visuals.accent,
-    );
-  }
-
-  void _showSoonCopy({
-    required String title,
-    required String subtitle,
-    required Color accent,
-  }) {
-    showAppSheet<void>(
+    final whole = journey.categories.length > 1;
+    final description = journey.description.trim().isEmpty
+        ? context.l10n.trailsJourneySoonBody
+        : journey.description;
+    showPathPreviewSheet(
       context,
-      builder: (ctx) {
-        return AppSheetPanel(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpace.xxl,
-            AppSpace.md,
-            AppSpace.xxl,
-            AppSpace.xxl,
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const SizedBox(height: AppSpace.sm),
-              AppSheetHeader(
-                face: CloudFace.triste,
-                title: title,
-                subtitle: subtitle,
-                center: true,
-              ),
-              const SizedBox(height: AppSpace.lg),
-              SoftBadge(
-                text: ctx.l10n.commonComingSoon,
-                accent: accent,
-                textColor: accent,
-              ),
-            ],
-          ),
-        );
-      },
+      title: journey.label,
+      description: description,
+      art: 'assets/art/journey_${journey.name}.jpg',
+      accent: visuals.accent,
+      eyebrow: visuals.eyebrow,
+      statusLabel: context.l10n.commonComingSoon,
+      glyph: whole
+          ? visuals.glyph
+          : TrailVisuals.forCategory(journey.categories.single.id),
+      outline: [
+        for (final category in journey.categories) category.label,
+      ],
     );
   }
 

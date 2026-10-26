@@ -23,11 +23,11 @@ void main() {
     expect(of('teologia', 'linguas'), TrailJourney.linguas);
   });
 
-  test('poetic books get their own Sabedoria card', () {
-    expect(of('antigo-testamento', 'poeticos'), TrailJourney.sabedoria);
+  test('poetic books live in the free AT card', () {
+    expect(of('antigo-testamento', 'poeticos'), TrailJourney.antigoTestamento);
     expect(
       TrailJourney.antigoTestamento.categories,
-      isNot(contains(TrailCategory.poeticos)),
+      contains(TrailCategory.poeticos),
     );
   });
 
@@ -42,7 +42,6 @@ void main() {
 
   test('themes and the other plus shelves keep their card order', () {
     expect(TrailJourney.forShelf(TrailShelf.tematicos), [
-      TrailJourney.sabedoria,
       TrailJourney.panorama,
       TrailJourney.personagens,
       TrailJourney.promessaCumprimento,

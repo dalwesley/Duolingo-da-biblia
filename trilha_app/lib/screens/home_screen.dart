@@ -736,7 +736,7 @@ class _HomeScreenState extends State<HomeScreen>
                         const SizedBox(height: AppSpace.section),
                         _reveal(
                           2,
-                          SeasonWalkFeatureCard(onOpenSheet: _openCardSheet),
+                          const SeasonWalkFeatureCard(),
                         ),
                       ],
                       if (cornerFace != null) ...[

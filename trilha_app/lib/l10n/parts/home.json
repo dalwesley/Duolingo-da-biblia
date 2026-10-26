@@ -178,7 +178,7 @@
     }
   },
   "growthNextIn": {
-    "pt": "{count, plural, =1{Próximo: {stage} · faltam 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}",
+    "pt": "{count, plural, =1{Próximo: {stage} · falta 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}",
     "en": "{count, plural, =1{Next: {stage} · 1 streak day to go} other{Next: {stage} · {count} streak days to go}}",
     "es": "{count, plural, =1{Próximo: {stage} · falta 1 día de racha} other{Próximo: {stage} · faltan {count} días de racha}}",
     "placeholders": {

@@ -3477,7 +3477,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get journeyAntigoTestamentoBody =>
-      'From Genesis to Malachi: creation, the patriarchs, the Law, the conquest, the kings and the prophets. Each book is a trail, from the Pentateuch to the silence between the Testaments.';
+      'From Genesis to Malachi: creation, the patriarchs, the Law, the conquest, the kings, the psalms, wisdom and the prophets. Each book is a trail, from the Pentateuch to the silence between the Testaments.';
 
   @override
   String get journeyBeyondHorizon => 'Still beyond the horizon';
@@ -3521,13 +3521,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get journeyPlusCtaDetail => 'with Pilgrim+';
-
-  @override
-  String get journeySabedoriaBody =>
-      'Job, Psalms, Proverbs, Ecclesiastes and Song of Songs. Pain that asks, prayer that sings, counsel for each day and love: faith lived in ordinary life.';
-
-  @override
-  String get journeySabedoriaTitle => 'Wisdom';
 
   @override
   String journeyScenesLeft(int count) {
@@ -4420,6 +4413,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lessonPassageTitle => 'Scene text';
+
+  @override
+  String lessonPlusGrantedBy(String name) {
+    return '$name unlocked this Peregrino+ scene for you.';
+  }
 
   @override
   String get lessonPractice => 'Practice';
@@ -6479,7 +6477,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermon on the Mount, Prayer, Family, Anxiety and other Christian life paths. The first scene of each is free.';
+      'Sermon on the Mount, Prayer, Family and other Christian life paths. The first scene of each is free.';
 
   @override
   String get paywallPerkThemesTitle => 'Theme trails';
@@ -9217,7 +9215,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get trailsDoorIntroThemes =>
-      'The Bible read by threads, not by books: the big picture, the people who carry the story, promise and fulfillment, the great themes, the parables, and wisdom. Each trail follows one thread across many books.';
+      'The Bible read by threads, not by books: the big picture, the people who carry the story, promise and fulfillment, the great themes, and the parables. Each trail follows one thread across many books.';
 
   @override
   String get trailsDownloading => 'Downloading…';

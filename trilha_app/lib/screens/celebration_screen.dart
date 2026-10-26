@@ -282,13 +282,18 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   /// Replay e tentativa sem lâmpadas: não gravam progresso da cena.
   bool get _noProgress => widget.isReplay || widget.failed;
 
+  /// Mesma cena que acabou de passar pelas travas: nem progresso nem Plus
+  /// se aplicam de novo (dia grátis da Caminhada, cena liberada pelo líder).
   void _retryScene() {
     if (_leaving) return;
     _leaving = true;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (_) =>
-            LessonScreen(missionSlug: widget.missionSlug, skipTrailLock: true),
+        builder: (_) => LessonScreen(
+          missionSlug: widget.missionSlug,
+          skipTrailLock: true,
+          plusGateDone: true,
+        ),
       ),
     );
   }

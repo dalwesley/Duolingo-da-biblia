@@ -1,0 +1,3817 @@
+[
+  {
+    "id": "ansiedade-sem-dor-ansia-01-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 6:28, Jesus manda observar como os lírios do campo crescem.",
+    "prompt": "Em Mateus 6:28, Jesus manda observar como os lírios do campo crescem.",
+    "cue": "Em Mateus 6:28, Jesus manda observar como os lírios do campo crescem.",
+    "verseRef": "Mateus 6:28",
+    "passageText": "E quanto à roupa, por que vocês estão ansiosos? Observem como os lírios do campo crescem; eles não trabalham nem fiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Observem como os lírios do campo crescem",
+    "feedbackCorrect": "Jesus aponta os lírios: eles não trabalham nem fiam, e mesmo assim crescem.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 6:28: \"Observem como os lírios do campo crescem\"."
+    },
+    "hint": "Veja a segunda frase do versículo.",
+    "learningObjective": "Observar a imagem que Jesus usa contra a ansiedade pela roupa.",
+    "evidence": [
+      "Mateus 6:28"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-01-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 6:24, toque o outro senhor que Jesus põe ao lado de Deus.",
+    "prompt": "Em Mateus 6:24, toque o outro senhor que Jesus põe ao lado de Deus.",
+    "cue": "Em Mateus 6:24, toque o outro senhor que Jesus põe ao lado de Deus.",
+    "verseRef": "Mateus 6:24",
+    "passageText": "Ninguém pode servir a dois senhores; porque ou há de aborrecer-se de um e amar ao outro, ou se devotará a um e desprezará ao outro. Não podem servir a Deus e às riquezas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desprezará"
+      },
+      {
+        "id": "b",
+        "text": "riquezas"
+      },
+      {
+        "id": "c",
+        "text": "Ninguém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não podem servir a Deus e às riquezas",
+    "feedbackCorrect": "As riquezas aparecem como senhor rival: quem as serve não serve a Deus por inteiro.",
+    "feedbackWrong": {
+      "a": "\"Desprezará\" é o que acontece com um dos senhores, não o nome dele.",
+      "c": "\"Ninguém\" abre a frase; não é o senhor rival de Deus."
+    },
+    "hint": "Olhe a última frase do versículo.",
+    "learningObjective": "Identificar as riquezas como senhor rival de Deus.",
+    "evidence": [
+      "Mateus 6:24"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-01-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 6:27, o que a preocupação não consegue acrescentar?",
+    "prompt": "Segundo Mateus 6:27, o que a preocupação não consegue acrescentar?",
+    "cue": "Segundo Mateus 6:27, o que a preocupação não consegue acrescentar?",
+    "verseRef": "Mateus 6:27",
+    "passageText": "E qual de vocês, por mais que se preocupe, pode acrescentar um côvado à duração da sua vida?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mais beleza que a de Salomão"
+      },
+      {
+        "id": "b",
+        "text": "Mais comida ao celeiro"
+      },
+      {
+        "id": "c",
+        "text": "Um côvado à duração da vida"
+      },
+      {
+        "id": "d",
+        "text": "Mais fé ao coração"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pode acrescentar um côvado à duração da sua vida",
+    "feedbackCorrect": "Jesus pergunta quem, por mais que se preocupe, aumenta a própria vida: ninguém.",
+    "feedbackWrong": {
+      "a": "Salomão aparece em 6:29, comparado aos lírios.",
+      "b": "Celeiros aparecem em 6:26, ligados às aves, não à preocupação.",
+      "d": "O versículo fala da duração da vida, não de fé."
+    },
+    "hint": "Leia o fim da pergunta de Jesus.",
+    "learningObjective": "Observar o que Jesus diz sobre o limite da preocupação.",
+    "evidence": [
+      "Mateus 6:27"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-01-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 6:34 na ordem do texto.",
+    "prompt": "Monte Mateus 6:34 na ordem do texto.",
+    "cue": "Monte Mateus 6:34 na ordem do texto.",
+    "verseRef": "Mateus 6:34",
+    "passageText": "Não se preocupem com o amanhã, pois o amanhã trará suas próprias preocupações; basta a cada dia o seu próprio mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não se preocupem com o amanhã"
+      },
+      {
+        "id": "b",
+        "text": "pois o amanhã trará suas próprias preocupações"
+      },
+      {
+        "id": "c",
+        "text": "basta a cada dia o seu próprio mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "basta a cada dia o seu próprio mal",
+    "feedbackCorrect": "Primeiro o pedido, depois o motivo, e por fim o limite: cada dia com o seu mal.",
+    "feedbackWrong": {
+      "default": "Comece pelo pedido de não se preocupar; o \"basta a cada dia\" fecha o versículo."
+    },
+    "hint": "O versículo começa com um pedido.",
+    "learningObjective": "Reconhecer a sequência de Mateus 6:34.",
+    "evidence": [
+      "Mateus 6:34"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-01-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 6:26, onde as aves não ajuntam nada?",
+    "prompt": "Em Mateus 6:26, onde as aves não ajuntam nada?",
+    "cue": "Em Mateus 6:26, onde as aves não ajuntam nada?",
+    "verseRef": "Mateus 6:26",
+    "passageText": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?",
+    "template": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em ___; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "campos"
+      },
+      {
+        "id": "b",
+        "text": "celeiros"
+      },
+      {
+        "id": "c",
+        "text": "ninhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nem ajuntam em celeiros",
+    "feedbackCorrect": "As aves não guardam colheita, e mesmo assim o Pai as sustenta.",
+    "feedbackWrong": {
+      "a": "Os campos aparecem com os lírios, em 6:28.",
+      "c": "Ninhos não aparecem no versículo; o texto fala de onde se guarda colheita."
+    },
+    "hint": "Pense no lugar onde se guarda a colheita.",
+    "learningObjective": "Lembrar o detalhe que liga as aves ao tema de acumular.",
+    "evidence": [
+      "Mateus 6:26"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-01-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 6:32 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:32 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:32 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 6:32",
+    "passageText": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+    "passageA": {
+      "ref": "Mateus 6:32",
+      "text": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os ouvintes de Jesus viviam do trabalho do dia e se perguntavam o que iam comer e vestir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem crê não tem necessidades"
+      },
+      {
+        "id": "b",
+        "text": "O Pai conhece essas necessidades"
+      },
+      {
+        "id": "c",
+        "text": "Essas necessidades não importam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o seu Pai celeste sabe",
+    "feedbackCorrect": "Jesus não diz que comida e roupa não importam: diz que o Pai sabe que precisamos delas.",
+    "feedbackWrong": {
+      "a": "O texto diz \"vocês necessitam\": a necessidade é real.",
+      "c": "Jesus chama essas coisas de necessidades; ele não as despreza."
+    },
+    "hint": "Repare no que o Pai sabe.",
+    "learningObjective": "Ligar Mateus 6:32 às preocupações concretas dos ouvintes.",
+    "evidence": [
+      "Mateus 6:32"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-01-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 6:24–25, o pedido de não ficar ansioso aparece solto, sem ligação com o que Jesus disse sobre as riquezas.",
+    "prompt": "Em Mateus 6:24–25, o pedido de não ficar ansioso aparece solto, sem ligação com o que Jesus disse sobre as riquezas.",
+    "cue": "Em Mateus 6:24–25, o pedido de não ficar ansioso aparece solto, sem ligação com o que Jesus disse sobre as riquezas.",
+    "verseRef": "Mateus 6:24–25",
+    "passageText": "Ninguém pode servir a dois senhores; porque ou há de aborrecer-se de um e amar ao outro, ou se devotará a um e desprezará ao outro. Não podem servir a Deus e às riquezas. Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Por isso, eu digo a vocês",
+    "feedbackCorrect": "O \"Por isso\" amarra os dois: quem serve às riquezas acaba ansioso pelo amanhã.",
+    "feedbackWrong": {
+      "true": "Repare no começo de 6:25: \"Por isso\" liga a ansiedade ao que veio antes."
+    },
+    "hint": "Olhe as duas primeiras palavras de 6:25.",
+    "learningObjective": "Compreender a ligação entre servir às riquezas e viver ansioso.",
+    "evidence": [
+      "Mateus 6:24–25"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-01-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 6:30, toque as palavras que levam o argumento do menor para o maior.",
+    "prompt": "Em Mateus 6:30, toque as palavras que levam o argumento do menor para o maior.",
+    "cue": "Em Mateus 6:30, toque as palavras que levam o argumento do menor para o maior.",
+    "verseRef": "Mateus 6:30",
+    "passageText": "Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no forno, quanto mais a vocês, homens de pequena fé?",
+    "options": [
+      {
+        "id": "a",
+        "text": "quanto mais"
+      },
+      {
+        "id": "b",
+        "text": "hoje existe"
+      },
+      {
+        "id": "c",
+        "text": "pequena fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quanto mais a vocês",
+    "feedbackCorrect": "Se Deus cuida da erva de um dia, cuidará muito mais dos seus filhos.",
+    "feedbackWrong": {
+      "b": "\"Hoje existe\" descreve a erva passageira; o argumento vira depois.",
+      "c": "\"Pequena fé\" é o diagnóstico de Jesus, não o ponto de virada do argumento."
+    },
+    "hint": "Procure a comparação perto do fim do versículo.",
+    "learningObjective": "Reconhecer o argumento do menor para o maior.",
+    "evidence": [
+      "Mateus 6:30"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-01-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Mateus 6:24 prepara o que Jesus diz sobre ansiedade em 6:25?",
+    "prompt": "Como Mateus 6:24 prepara o que Jesus diz sobre ansiedade em 6:25?",
+    "cue": "Como Mateus 6:24 prepara o que Jesus diz sobre ansiedade em 6:25?",
+    "verseRef": "Mateus 6:24–25",
+    "passageText": "Ninguém pode servir a dois senhores; porque ou há de aborrecer-se de um e amar ao outro, ou se devotará a um e desprezará ao outro. Não podem servir a Deus e às riquezas. Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todo dinheiro é pecado e deve ser evitado"
+      },
+      {
+        "id": "b",
+        "text": "Trabalhar mais é o caminho para não temer"
+      },
+      {
+        "id": "c",
+        "text": "O assunto muda do coração para o corpo"
+      },
+      {
+        "id": "d",
+        "text": "Quem serve às riquezas vive ansioso por elas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Não podem servir a Deus e às riquezas",
+    "feedbackCorrect": "O senhor que domina o coração também dita as preocupações; por isso Jesus liga os dois.",
+    "feedbackWrong": {
+      "a": "Jesus fala de servir às riquezas como senhor, não de condenar todo dinheiro.",
+      "b": "O texto não manda trabalhar mais; aponta para o Pai que sustenta.",
+      "c": "Corpo e vestes entram como exemplo de preocupação, não como novo assunto."
+    },
+    "hint": "Pense no que significa ter as riquezas como senhor.",
+    "learningObjective": "Relacionar o senhorio das riquezas com a ansiedade.",
+    "evidence": [
+      "Mateus 6:24–25"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-01-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os passos de Mateus 6:31–33?",
+    "prompt": "Como se encadeiam os passos de Mateus 6:31–33?",
+    "cue": "Como se encadeiam os passos de Mateus 6:31–33?",
+    "verseRef": "Mateus 6:31–32",
+    "passageText": "Portanto, não se preocupem, dizendo: O que comeremos? O que beberemos? Ou com que nos vestiremos? Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Parar as perguntas aflitas sobre comida e roupa"
+      },
+      {
+        "id": "b",
+        "text": "Lembrar que o Pai já conhece cada necessidade"
+      },
+      {
+        "id": "c",
+        "text": "Pôr o reino de Deus em primeiro lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pois o seu Pai celeste sabe",
+    "feedbackCorrect": "Jesus troca as perguntas aflitas pela lembrança do Pai, e daí pela busca do reino.",
+    "feedbackWrong": {
+      "default": "O motivo vem no meio (o Pai sabe); a busca do reino é o ponto de chegada."
+    },
+    "hint": "O \"Pois\" de 6:32 explica o pedido de 6:31.",
+    "learningObjective": "Compreender como o argumento passa da preocupação à busca do reino.",
+    "evidence": [
+      "Mateus 6:31–33"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-01-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 6:33, o que acontece com as outras coisas para quem busca primeiro o reino?",
+    "prompt": "Em Mateus 6:33, o que acontece com as outras coisas para quem busca primeiro o reino?",
+    "cue": "Em Mateus 6:33, o que acontece com as outras coisas para quem busca primeiro o reino?",
+    "verseRef": "Mateus 6:33",
+    "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+    "template": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cobradas"
+      },
+      {
+        "id": "b",
+        "text": "tiradas"
+      },
+      {
+        "id": "c",
+        "text": "acrescentadas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todas essas coisas lhes serão acrescentadas",
+    "feedbackCorrect": "Elas vêm junto: o reino não tira o sustento, ele o põe no lugar certo.",
+    "feedbackWrong": {
+      "a": "Não há cobrança; o verbo fala de algo dado a mais.",
+      "b": "O texto promete o contrário: nada é tirado de quem busca o reino."
+    },
+    "hint": "O verbo indica algo que vem a mais.",
+    "learningObjective": "Compreender o resultado de buscar primeiro o reino.",
+    "evidence": [
+      "Mateus 6:33"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-01-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 6:26 a Salmos 147:9?",
+    "prompt": "O que liga Mateus 6:26 a Salmos 147:9?",
+    "cue": "O que liga Mateus 6:26 a Salmos 147:9?",
+    "verseRef": "Mateus 6:26",
+    "passageText": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?",
+    "passageA": {
+      "ref": "Mateus 6:26",
+      "text": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?"
+    },
+    "passageB": {
+      "ref": "Salmos 147:9",
+      "text": "Ele dá alimento aos animais e sustento aos filhotes dos corvos quando estes clamam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "As aves trabalham pelo sustento"
+      },
+      {
+        "id": "b",
+        "text": "Deus sustenta até os filhotes"
+      },
+      {
+        "id": "c",
+        "text": "Os animais valem mais que nós"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o seu Pai celestial as sustenta",
+    "feedbackCorrect": "Jesus ecoa o salmo: Deus alimenta até os filhotes dos corvos, e muito mais seus filhos.",
+    "feedbackWrong": {
+      "a": "Os dois textos destacam o sustento dado por Deus, não o esforço das aves.",
+      "c": "Jesus diz o contrário: vocês valem muito mais do que elas."
+    },
+    "hint": "Compare quem alimenta as aves nos dois textos.",
+    "learningObjective": "Relacionar o cuidado do Pai em Mateus com o louvor do salmo.",
+    "evidence": [
+      "Mateus 6:26",
+      "Salmos 147:9"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-01-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Mateus 6:31–32, Jesus não nega as necessidades; ele as coloca sob o cuidado do Pai que as conhece.",
+    "prompt": "Em Mateus 6:31–32, Jesus não nega as necessidades; ele as coloca sob o cuidado do Pai que as conhece.",
+    "cue": "Em Mateus 6:31–32, Jesus não nega as necessidades; ele as coloca sob o cuidado do Pai que as conhece.",
+    "verseRef": "Mateus 6:31–32",
+    "passageText": "Portanto, não se preocupem, dizendo: O que comeremos? O que beberemos? Ou com que nos vestiremos? Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas",
+    "feedbackCorrect": "O texto chama comida e roupa de necessidades reais e as entrega ao Pai que sabe delas.",
+    "feedbackWrong": {
+      "false": "Jesus diz \"vocês necessitam\": a necessidade é real; a resposta é o Pai, não a negação."
+    },
+    "hint": "Veja quem sabe das necessidades em 6:32.",
+    "learningObjective": "Interpretar que o cuidado do Pai, e não a ausência de necessidade, responde à ansiedade.",
+    "evidence": [
+      "Mateus 6:31–32"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-01-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 6:24, toque o trecho que mostra as riquezas disputando o lugar de Deus.",
+    "prompt": "Em Mateus 6:24, toque o trecho que mostra as riquezas disputando o lugar de Deus.",
+    "cue": "Em Mateus 6:24, toque o trecho que mostra as riquezas disputando o lugar de Deus.",
+    "verseRef": "Mateus 6:24",
+    "passageText": "Ninguém pode servir a dois senhores; porque ou há de aborrecer-se de um e amar ao outro, ou se devotará a um e desprezará ao outro. Não podem servir a Deus e às riquezas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém"
+      },
+      {
+        "id": "b",
+        "text": "dois senhores"
+      },
+      {
+        "id": "c",
+        "text": "aborrecer-se"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ninguém pode servir a dois senhores",
+    "feedbackCorrect": "As riquezas não são só coisas: podem virar um senhor que pede o coração.",
+    "feedbackWrong": {
+      "a": "\"Ninguém\" diz que é impossível; quem disputa o lugar de Deus vem depois.",
+      "c": "\"Aborrecer-se\" mostra o efeito da divisão, não quem está em disputa."
+    },
+    "hint": "Procure quem está em disputa no começo do versículo.",
+    "learningObjective": "Sustentar com o texto que as riquezas podem virar senhor.",
+    "evidence": [
+      "Mateus 6:24"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-01-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 6:34 sustenta para quem vive ansioso pelo amanhã?",
+    "prompt": "Que leitura Mateus 6:34 sustenta para quem vive ansioso pelo amanhã?",
+    "cue": "Que leitura Mateus 6:34 sustenta para quem vive ansioso pelo amanhã?",
+    "verseRef": "Mateus 6:33–34",
+    "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas. Não se preocupem com o amanhã, pois o amanhã trará suas próprias preocupações; basta a cada dia o seu próprio mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hoje se vive o dia; o amanhã fica com o Pai"
+      },
+      {
+        "id": "b",
+        "text": "Cada um carrega sozinho os males de cada dia"
+      },
+      {
+        "id": "c",
+        "text": "Planejar o futuro é sempre falta de fé"
+      },
+      {
+        "id": "d",
+        "text": "Quem confia em Deus não terá problemas amanhã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Não se preocupem com o amanhã",
+    "feedbackCorrect": "Jesus admite que cada dia tem seu mal, mas tira do hoje o peso do amanhã.",
+    "feedbackWrong": {
+      "b": "O contexto é o Pai que sabe e sustenta; ninguém está sozinho.",
+      "c": "Jesus fala da ansiedade que domina, não proíbe planejar com cuidado.",
+      "d": "O próprio versículo diz que cada dia traz o seu mal."
+    },
+    "hint": "Repare no que Jesus admite sobre cada dia.",
+    "learningObjective": "Escolher a leitura de Mateus 6:34 que o texto sustenta.",
+    "evidence": [
+      "Mateus 6:33–34"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-01-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a lógica de Mateus 6:21–25?",
+    "prompt": "Qual sequência revela a lógica de Mateus 6:21–25?",
+    "cue": "Qual sequência revela a lógica de Mateus 6:21–25?",
+    "verseRef": "Mateus 6:21",
+    "passageText": "Pois onde estiver o seu tesouro, ali estará também o seu coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O que eu guardo como tesouro puxa meu coração"
+      },
+      {
+        "id": "b",
+        "text": "O coração puxado escolhe a quem servir"
+      },
+      {
+        "id": "c",
+        "text": "Servir às riquezas gera ansiedade pelo sustento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ali estará também o seu coração",
+    "feedbackCorrect": "Tesouro, senhor e ansiedade formam uma corrente: o que guardo decide o que temo.",
+    "feedbackWrong": {
+      "default": "Comece pelo tesouro (6:21); a ansiedade (6:25) é o fim da corrente."
+    },
+    "hint": "Siga o texto: tesouro, depois senhores, depois ansiedade.",
+    "learningObjective": "Ver a lógica que liga tesouro, senhorio e ansiedade.",
+    "evidence": [
+      "Mateus 6:21",
+      "Mateus 6:24",
+      "Mateus 6:25"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-01-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 6:33, o que se busca junto com o reino de Deus?",
+    "prompt": "Em Mateus 6:33, o que se busca junto com o reino de Deus?",
+    "cue": "Em Mateus 6:33, o que se busca junto com o reino de Deus?",
+    "verseRef": "Mateus 6:33",
+    "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+    "template": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua ___, e todas essas coisas lhes serão acrescentadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "riqueza"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o reino de Deus e a sua justiça",
+    "feedbackCorrect": "Reino e justiça andam juntos: buscar a Deus é querer o que ele considera certo.",
+    "feedbackWrong": {
+      "a": "Riqueza é justamente o senhor rival de 6:24.",
+      "b": "O texto fala do que Deus considera reto, não de glória."
+    },
+    "hint": "É o que Deus considera reto.",
+    "learningObjective": "Lembrar o termo que acompanha o reino na busca do discípulo.",
+    "evidence": [
+      "Mateus 6:33"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-01-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-01",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+    "prompt": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+    "cue": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+    "verseRef": "Mateus 6:32",
+    "passageText": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+    "passageA": {
+      "ref": "Mateus 6:32",
+      "text": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;"
+    },
+    "passageB": {
+      "ref": "1 Pedro 5:7",
+      "text": "Lancem sobre ele toda a sua preocupação porque ele se importa com vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Preocupar-se é proibido para cristãos"
+      },
+      {
+        "id": "b",
+        "text": "Deus ignora as nossas preocupações"
+      },
+      {
+        "id": "c",
+        "text": "Preocupação entregue a quem se importa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o seu Pai celeste sabe",
+    "feedbackCorrect": "Pedro ecoa Jesus: a preocupação vai para Deus, porque ele se importa com vocês.",
+    "feedbackWrong": {
+      "a": "Pedro não proíbe; convida a lançar a preocupação sobre Deus.",
+      "b": "Os dois textos dizem o contrário: o Pai sabe e se importa."
+    },
+    "hint": "Veja o motivo que Pedro dá para lançar a preocupação.",
+    "learningObjective": "Ligar o cuidado do Pai em Mateus ao convite de 1 Pedro.",
+    "evidence": [
+      "Mateus 6:32",
+      "1 Pedro 5:7"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-02-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 4:6, Paulo manda apresentar a Deus só os pedidos mais importantes.",
+    "prompt": "Em Filipenses 4:6, Paulo manda apresentar a Deus só os pedidos mais importantes.",
+    "cue": "Em Filipenses 4:6, Paulo manda apresentar a Deus só os pedidos mais importantes.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "em tudo, porém, apresentem suas petições a Deus",
+    "feedbackCorrect": "Paulo diz \"em tudo\": nenhuma preocupação é pequena demais para ir a Deus.",
+    "feedbackWrong": {
+      "true": "Releia: \"em tudo\" apresentem suas petições, não só nas coisas grandes."
+    },
+    "hint": "Repare em quanto entra na oração.",
+    "learningObjective": "Observar o alcance do convite à oração.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-02-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 4:7, toque o que a paz de Deus protegerá junto com o coração.",
+    "prompt": "Em Filipenses 4:7, toque o que a paz de Deus protegerá junto com o coração.",
+    "cue": "Em Filipenses 4:7, toque o que a paz de Deus protegerá junto com o coração.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ultrapassa"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "mente"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o seu coração e a sua mente",
+    "feedbackCorrect": "A paz de Deus guarda o coração e também os pensamentos.",
+    "feedbackWrong": {
+      "a": "\"Ultrapassa\" descreve a paz, não o que ela protege.",
+      "b": "A paz é quem protege; o que ela guarda vem depois."
+    },
+    "hint": "Procure o que vem logo depois de \"coração\".",
+    "learningObjective": "Identificar o que a paz de Deus protege.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-02-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 4:6, com que atitude as petições devem ir a Deus?",
+    "prompt": "Segundo Filipenses 4:6, com que atitude as petições devem ir a Deus?",
+    "cue": "Segundo Filipenses 4:6, com que atitude as petições devem ir a Deus?",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com muitas repetições"
+      },
+      {
+        "id": "b",
+        "text": "Com medo de incomodar"
+      },
+      {
+        "id": "c",
+        "text": "Com ações de graças"
+      },
+      {
+        "id": "d",
+        "text": "Com promessas em troca"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com ações de graças",
+    "feedbackCorrect": "Paulo pede oração e súplica com ações de graças: o pedido vem junto com gratidão.",
+    "feedbackWrong": {
+      "a": "O texto não fala em repetir; fala em agradecer.",
+      "b": "Paulo convida a levar tudo; não há medo de incomodar.",
+      "d": "Não há troca: as petições vão a Deus com gratidão."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar a atitude que acompanha a oração.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-02-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 4:6 na ordem do texto.",
+    "prompt": "Monte Filipenses 4:6 na ordem do texto.",
+    "cue": "Monte Filipenses 4:6 na ordem do texto.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não estejam ansiosos por nada"
+      },
+      {
+        "id": "b",
+        "text": "em tudo, porém, apresentem suas petições a Deus"
+      },
+      {
+        "id": "c",
+        "text": "pela oração e pela súplica, com ações de graças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não estejam ansiosos por nada",
+    "feedbackCorrect": "Primeiro o \"não\" à ansiedade, depois o \"em tudo\" da oração, e por fim o modo de orar.",
+    "feedbackWrong": {
+      "default": "Comece pela ansiedade; o modo de orar, com gratidão, fecha o versículo."
+    },
+    "hint": "O versículo começa com uma proibição.",
+    "learningObjective": "Reconhecer a sequência de Filipenses 4:6.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-02-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 4:12, o que Paulo diz que também já foi, além de humilhado?",
+    "prompt": "Em Filipenses 4:12, o que Paulo diz que também já foi, além de humilhado?",
+    "cue": "Em Filipenses 4:12, o que Paulo diz que também já foi, além de humilhado?",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "template": "Sei o que é estar humilhado e também o que é ser ___; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rico"
+      },
+      {
+        "id": "b",
+        "text": "amado"
+      },
+      {
+        "id": "c",
+        "text": "honrado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "também o que é ser honrado",
+    "feedbackCorrect": "Paulo conheceu os dois lados: a humilhação e a honra.",
+    "feedbackWrong": {
+      "a": "Riqueza aparece como \"abundância\" mais adiante; o par de humilhado é outro.",
+      "b": "O texto fala de posição diante dos outros, não de afeto."
+    },
+    "hint": "É o contrário de humilhado.",
+    "learningObjective": "Lembrar os extremos que Paulo viveu.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-02-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 4:12 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 4:12",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez.",
+    "passageA": {
+      "ref": "Filipenses 4:12",
+      "text": "tanto de fartura quanto de fome"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo escreve da prisão e agradece uma ajuda que os filipenses lhe enviaram."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo conhece a falta por dentro"
+      },
+      {
+        "id": "b",
+        "text": "Paulo nunca passou necessidade"
+      },
+      {
+        "id": "c",
+        "text": "Paulo despreza a ajuda recebida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tanto de fartura quanto de fome",
+    "feedbackCorrect": "Paulo não fala de longe: ele já passou fome e sabe o que é depender de ajuda.",
+    "feedbackWrong": {
+      "b": "O versículo diz o contrário: ele já teve experiência de fome e escassez.",
+      "c": "Ele se alegra com a ajuda (4:10); só não depende dela para ter paz."
+    },
+    "hint": "Veja que experiências Paulo diz já ter.",
+    "learningObjective": "Ligar Filipenses 4:12 à situação real de Paulo.",
+    "evidence": [
+      "Filipenses 4:12"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-02-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 4:6–7, a paz de Deus aparece como resultado de levar tudo a Deus em oração.",
+    "prompt": "Em Filipenses 4:6–7, a paz de Deus aparece como resultado de levar tudo a Deus em oração.",
+    "cue": "Em Filipenses 4:6–7, a paz de Deus aparece como resultado de levar tudo a Deus em oração.",
+    "verseRef": "Filipenses 4:6–7",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças. E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "E a paz de Deus",
+    "feedbackCorrect": "O \"E\" de 4:7 liga os dois: quem apresenta tudo a Deus recebe a paz que guarda.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 4:7: a paz vem ligada à oração de 4:6."
+    },
+    "hint": "Veja como 4:7 começa.",
+    "learningObjective": "Compreender a relação entre oração e paz em Filipenses 4:6–7.",
+    "evidence": [
+      "Filipenses 4:6–7"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-02-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 4:6, toque a palavra que vira a frase da ansiedade para a oração.",
+    "prompt": "Em Filipenses 4:6, toque a palavra que vira a frase da ansiedade para a oração.",
+    "cue": "Em Filipenses 4:6, toque a palavra que vira a frase da ansiedade para a oração.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não estejam"
+      },
+      {
+        "id": "b",
+        "text": "súplica"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "em tudo, porém, apresentem",
+    "feedbackCorrect": "\"Porém\" faz a curva: em vez de ansiedade por nada, oração em tudo.",
+    "feedbackWrong": {
+      "a": "\"Não estejam\" é a proibição; a virada vem depois.",
+      "b": "\"Súplica\" é parte da oração, não a palavra que faz a virada."
+    },
+    "hint": "Procure a palavra entre vírgulas, no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em Filipenses 4:6.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-02-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que Paulo diz em Filipenses 4:11 que não fala \"por necessidade\"?",
+    "prompt": "Por que Paulo diz em Filipenses 4:11 que não fala \"por necessidade\"?",
+    "cue": "Por que Paulo diz em Filipenses 4:11 que não fala \"por necessidade\"?",
+    "verseRef": "Filipenses 4:10–11",
+    "passageText": "Alegrei-me sobremaneira no Senhor porque, finalmente, vocês se lembraram de mim; pois haviam-se lembrado antes, mas não tiveram a oportunidade. Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sua paz não depende de receber ajuda"
+      },
+      {
+        "id": "b",
+        "text": "Ele nunca passou nenhuma necessidade"
+      },
+      {
+        "id": "c",
+        "text": "Ele tinha bens guardados na prisão"
+      },
+      {
+        "id": "d",
+        "text": "Ele não queria a ajuda dos filipenses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "aprendi a viver contente em toda e qualquer situação",
+    "feedbackCorrect": "Paulo se alegra com a ajuda, mas sua paz vem de ter aprendido a estar contente.",
+    "feedbackWrong": {
+      "b": "Em 4:12 ele conta que já passou fome e escassez.",
+      "c": "O texto não fala de bens guardados; fala de contentamento aprendido.",
+      "d": "Ele se alegra de verdade com a ajuda (4:10)."
+    },
+    "hint": "Leia o \"pois\" de 4:11.",
+    "learningObjective": "Relacionar a gratidão de Paulo com o contentamento que não depende da ajuda.",
+    "evidence": [
+      "Filipenses 4:10–11"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-02-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os movimentos de Filipenses 4:4–6?",
+    "prompt": "Como se encadeiam os movimentos de Filipenses 4:4–6?",
+    "cue": "Como se encadeiam os movimentos de Filipenses 4:4–6?",
+    "verseRef": "Filipenses 4:5–6",
+    "passageText": "Seja a sua moderação conhecida de todos. O Senhor está próximo. Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegrar-se no Senhor sempre"
+      },
+      {
+        "id": "b",
+        "text": "Lembrar que o Senhor está perto"
+      },
+      {
+        "id": "c",
+        "text": "Trocar a ansiedade pela oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor está próximo",
+    "feedbackCorrect": "O Senhor perto vem antes do pedido: por ele estar perto, a ansiedade vira oração.",
+    "feedbackWrong": {
+      "default": "A oração vem por último; antes, a alegria e a lembrança de que o Senhor está perto."
+    },
+    "hint": "A ansiedade aparece depois da proximidade do Senhor.",
+    "learningObjective": "Compreender que a proximidade do Senhor prepara o convite contra a ansiedade.",
+    "evidence": [
+      "Filipenses 4:4–6"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-02-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 4:7, o que a paz de Deus fará com o coração e a mente?",
+    "prompt": "Em Filipenses 4:7, o que a paz de Deus fará com o coração e a mente?",
+    "cue": "Em Filipenses 4:7, o que a paz de Deus fará com o coração e a mente?",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "template": "E a paz de Deus, que ultrapassa toda compreensão, ___ o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "testará"
+      },
+      {
+        "id": "b",
+        "text": "cobrará"
+      },
+      {
+        "id": "c",
+        "text": "protegerá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "protegerá o seu coração e a sua mente",
+    "feedbackCorrect": "A paz age como guarda: cuida do coração e da mente de quem leva tudo a Deus.",
+    "feedbackWrong": {
+      "a": "O texto não fala de teste; fala de guarda.",
+      "b": "A paz é dom, não cobrança."
+    },
+    "hint": "Pense numa sentinela à porta.",
+    "learningObjective": "Compreender o efeito da paz de Deus sobre quem ora.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-02-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 4:7 a Isaías 26:3?",
+    "prompt": "O que liga Filipenses 4:7 a Isaías 26:3?",
+    "cue": "O que liga Filipenses 4:7 a Isaías 26:3?",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 4:7",
+      "text": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Isaías 26:3",
+      "text": "Tu, SENHOR, manterás em plena paz aquele cujo propósito é firme; porque ele confia em ti."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz que dispensa a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Paz conquistada por esforço"
+      },
+      {
+        "id": "c",
+        "text": "Paz guardada em quem confia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a paz de Deus",
+    "feedbackCorrect": "Nos dois textos, a paz vem de Deus e guarda quem se apoia nele.",
+    "feedbackWrong": {
+      "a": "Os dois põem a paz em Deus: \"paz de Deus\" e \"confia em ti\".",
+      "b": "Nenhum dos textos fala de esforço; a paz vem de Deus."
+    },
+    "hint": "Compare de onde vem a paz e quem a recebe.",
+    "learningObjective": "Relacionar a paz de Filipenses com a promessa de Isaías.",
+    "evidence": [
+      "Filipenses 4:7",
+      "Isaías 26:3"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-02-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:11, o contentamento de Paulo é um traço de temperamento com que ele já nasceu.",
+    "prompt": "Em Filipenses 4:11, o contentamento de Paulo é um traço de temperamento com que ele já nasceu.",
+    "cue": "Em Filipenses 4:11, o contentamento de Paulo é um traço de temperamento com que ele já nasceu.",
+    "verseRef": "Filipenses 4:11",
+    "passageText": "Não digo isso por necessidade, pois aprendi a viver contente em toda e qualquer situação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "aprendi a viver contente",
+    "feedbackCorrect": "Paulo diz \"aprendi\": contentamento se aprende, nas situações, com Cristo.",
+    "feedbackWrong": {
+      "true": "O verbo de 4:11 é \"aprendi\": não é jeito de nascença, é aprendizado."
+    },
+    "hint": "Repare no verbo antes de \"a viver contente\".",
+    "learningObjective": "Interpretar o contentamento como aprendizado, não como temperamento.",
+    "evidence": [
+      "Filipenses 4:11"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-02-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:7, toque em quem o coração e a mente ficam guardados.",
+    "prompt": "Em Filipenses 4:7, toque em quem o coração e a mente ficam guardados.",
+    "cue": "Em Filipenses 4:7, toque em quem o coração e a mente ficam guardados.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "seu coração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em Cristo Jesus",
+    "feedbackCorrect": "A guarda acontece em Cristo: a paz não é técnica, é estar unido a ele.",
+    "feedbackWrong": {
+      "a": "A paz de Deus é quem protege; o lugar onde se fica guardado vem no fim.",
+      "c": "O coração é o que está sendo guardado, não onde."
+    },
+    "hint": "Olhe as últimas palavras do versículo.",
+    "learningObjective": "Sustentar com o texto que a paz está ligada a estar em Cristo.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-02-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Para quem vive ansioso com o que falta, que leitura Filipenses 4:12–13 sustenta?",
+    "prompt": "Para quem vive ansioso com o que falta, que leitura Filipenses 4:12–13 sustenta?",
+    "cue": "Para quem vive ansioso com o que falta, que leitura Filipenses 4:12–13 sustenta?",
+    "verseRef": "Filipenses 4:12–13",
+    "passageText": "Sei o que é estar humilhado e também o que é ser honrado; em todas as circunstâncias e em tudo já tenho experiência, tanto de fartura quanto de fome, assim como de abundância e de escassez. Posso todas as coisas por meio daquele que me dá força.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com fé, vou alcançar qualquer meta que eu quiser"
+      },
+      {
+        "id": "b",
+        "text": "Contentamento é não precisar de ninguém"
+      },
+      {
+        "id": "c",
+        "text": "Cristo sustenta mesmo quando a falta continua"
+      },
+      {
+        "id": "d",
+        "text": "Quem confia nunca mais sente fome ou falta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Posso todas as coisas por meio daquele que me dá força",
+    "feedbackCorrect": "O \"todas as coisas\" inclui a fome e a escassez de 4:12, vividas com a força de Cristo.",
+    "feedbackWrong": {
+      "a": "Lido com 4:12, o versículo fala de atravessar fartura e fome, não de metas pessoais.",
+      "b": "Paulo se alegra com a ajuda da igreja (4:10); contentamento não é isolamento.",
+      "d": "Paulo diz que conhece a fome; a força de Cristo não apaga isso."
+    },
+    "hint": "Leia 4:13 junto com as situações de 4:12.",
+    "learningObjective": "Escolher a leitura de Filipenses 4:13 que o contexto sustenta.",
+    "evidence": [
+      "Filipenses 4:12–13"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-02-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Filipenses 4:6–9?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 4:6–9?",
+    "cue": "Qual sequência revela o sentido de Filipenses 4:6–9?",
+    "verseRef": "Filipenses 4:6–7",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças. E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levar tudo a Deus em oração grata"
+      },
+      {
+        "id": "b",
+        "text": "Receber a paz que vem de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Ter o próprio Deus da paz por perto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E a paz de Deus",
+    "feedbackCorrect": "Do pedido à paz, e da paz ao próprio Deus da paz: o dom leva a quem dá.",
+    "feedbackWrong": {
+      "default": "A oração vem primeiro (4:6); o Deus da paz presente (4:9) é o ponto de chegada."
+    },
+    "hint": "Siga de 4:6 a 4:9: o pedido, o dom, quem dá.",
+    "learningObjective": "Ver como Paulo leva da paz de Deus ao Deus da paz.",
+    "evidence": [
+      "Filipenses 4:6",
+      "Filipenses 4:7",
+      "Filipenses 4:9"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-02-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:7, o que a paz de Deus ultrapassa?",
+    "prompt": "Em Filipenses 4:7, o que a paz de Deus ultrapassa?",
+    "cue": "Em Filipenses 4:7, o que a paz de Deus ultrapassa?",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "template": "E a paz de Deus, que ultrapassa toda ___, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "distância"
+      },
+      {
+        "id": "b",
+        "text": "compreensão"
+      },
+      {
+        "id": "c",
+        "text": "tristeza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que ultrapassa toda compreensão",
+    "feedbackCorrect": "A paz de Deus vai além do que a mente consegue explicar: chega antes das respostas.",
+    "feedbackWrong": {
+      "a": "Não é distância: é o limite do que conseguimos entender.",
+      "c": "O texto fala de algo que a mente tenta alcançar, não de um sentimento."
+    },
+    "hint": "Pense no que a mente tenta alcançar ao explicar.",
+    "learningObjective": "Lembrar o termo que mostra que a paz de Deus vai além do entendimento.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-02-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-02",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 4:13 a João 15:5?",
+    "prompt": "O que liga Filipenses 4:13 a João 15:5?",
+    "cue": "O que liga Filipenses 4:13 a João 15:5?",
+    "verseRef": "Filipenses 4:13",
+    "passageText": "Posso todas as coisas por meio daquele que me dá força.",
+    "passageA": {
+      "ref": "Filipenses 4:13",
+      "text": "Posso todas as coisas por meio daquele que me dá força."
+    },
+    "passageB": {
+      "ref": "João 15:5",
+      "text": "Eu sou a videira, vocês são os ramos. Aquele que permanece em mim, e eu nele, esse dá muito fruto; pois sem mim nada podem fazer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto sem depender de ninguém"
+      },
+      {
+        "id": "b",
+        "text": "Força que vem de dentro"
+      },
+      {
+        "id": "c",
+        "text": "Força que vem de Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por meio daquele que me dá força",
+    "feedbackCorrect": "Paulo pode por meio de Cristo; Jesus diz que sem ele nada podemos: a força vem dele.",
+    "feedbackWrong": {
+      "a": "Jesus diz o contrário: sem ele nada podemos fazer.",
+      "b": "Os dois textos põem a fonte fora de nós: \"daquele\" e \"em mim\"."
+    },
+    "hint": "Compare de onde vem a capacidade nos dois textos.",
+    "learningObjective": "Ligar a força de Filipenses 4:13 à união com Cristo em João 15.",
+    "evidence": [
+      "Filipenses 4:13",
+      "João 15:5"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-03-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Salmos 23:2, o salmista é quem procura sozinho os pastos verdejantes.",
+    "prompt": "Em Salmos 23:2, o salmista é quem procura sozinho os pastos verdejantes.",
+    "cue": "Em Salmos 23:2, o salmista é quem procura sozinho os pastos verdejantes.",
+    "verseRef": "Salmos 23:2",
+    "passageText": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ele me faz repousar em pastos verdejantes",
+    "feedbackCorrect": "Quem age é o pastor: \"Ele me faz repousar\" e \"leva-me\" até as águas.",
+    "feedbackWrong": {
+      "true": "Releia 23:2: é ele, o pastor, quem faz repousar e leva às águas."
+    },
+    "hint": "Repare em quem é o sujeito dos verbos.",
+    "learningObjective": "Observar que o descanso é obra do pastor.",
+    "evidence": [
+      "Salmos 23:2"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-03-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Salmos 23:2, toque o que o pastor faz o salmista fazer nos pastos.",
+    "prompt": "Em Salmos 23:2, toque o que o pastor faz o salmista fazer nos pastos.",
+    "cue": "Em Salmos 23:2, toque o que o pastor faz o salmista fazer nos pastos.",
+    "verseRef": "Salmos 23:2",
+    "passageText": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "águas"
+      },
+      {
+        "id": "b",
+        "text": "leva-me"
+      },
+      {
+        "id": "c",
+        "text": "repousar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ele me faz repousar",
+    "feedbackCorrect": "Nos pastos, o pastor faz a ovelha descansar: o descanso é dado.",
+    "feedbackWrong": {
+      "a": "\"Águas\" é o lugar para onde ele leva, não a ação nos pastos.",
+      "b": "\"Leva-me\" é o pastor conduzindo às águas, não o que a ovelha faz no pasto."
+    },
+    "hint": "Procure o verbo logo depois de \"Ele me faz\".",
+    "learningObjective": "Identificar o descanso como cuidado do pastor.",
+    "evidence": [
+      "Salmos 23:2"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-03-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Salmos 23:4, o que conforta o salmista no vale?",
+    "prompt": "Segundo Salmos 23:4, o que conforta o salmista no vale?",
+    "cue": "Segundo Salmos 23:4, o que conforta o salmista no vale?",
+    "verseRef": "Salmos 23:4",
+    "passageText": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A companhia dos amigos"
+      },
+      {
+        "id": "b",
+        "text": "A saída rápida do perigo"
+      },
+      {
+        "id": "c",
+        "text": "A vara e o cajado do pastor"
+      },
+      {
+        "id": "d",
+        "text": "A luz que afasta a sombra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a tua vara e o teu cajado me confortam",
+    "feedbackCorrect": "Os instrumentos do pastor, que guia e protege, são o conforto no vale.",
+    "feedbackWrong": {
+      "a": "Os amigos não aparecem; quem está com ele é o pastor.",
+      "b": "Não há saída rápida no versículo; ele anda pelo vale.",
+      "d": "O texto não diz que a sombra some; diz que o pastor está ali."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Observar o que traz conforto ao salmista no vale.",
+    "evidence": [
+      "Salmos 23:4"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-03-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Salmos 23:5 na ordem do texto.",
+    "prompt": "Monte Salmos 23:5 na ordem do texto.",
+    "cue": "Monte Salmos 23:5 na ordem do texto.",
+    "verseRef": "Salmos 23:5",
+    "passageText": "Preparas-me um banquete na presença dos meus inimigos, unges a minha cabeça com óleo; o meu cálice transborda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparas-me um banquete na presença dos meus inimigos"
+      },
+      {
+        "id": "b",
+        "text": "unges a minha cabeça com óleo"
+      },
+      {
+        "id": "c",
+        "text": "o meu cálice transborda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o meu cálice transborda",
+    "feedbackCorrect": "Banquete, óleo e cálice cheio: o cuidado aparece com os inimigos ainda por perto.",
+    "feedbackWrong": {
+      "default": "Comece pelo banquete; o cálice que transborda fecha o versículo."
+    },
+    "hint": "O versículo começa com uma mesa preparada.",
+    "learningObjective": "Reconhecer a sequência de Salmos 23:5.",
+    "evidence": [
+      "Salmos 23:5"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-03-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Salmos 23:1, o que o salmista diz de si mesmo, tendo o Senhor como pastor?",
+    "prompt": "Em Salmos 23:1, o que o salmista diz de si mesmo, tendo o Senhor como pastor?",
+    "cue": "Em Salmos 23:1, o que o salmista diz de si mesmo, tendo o Senhor como pastor?",
+    "verseRef": "Salmos 23:1",
+    "passageText": "O Senhor é o meu pastor; nada me faltará.",
+    "template": "O Senhor é o meu pastor; nada me ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "custará"
+      },
+      {
+        "id": "b",
+        "text": "sobrará"
+      },
+      {
+        "id": "c",
+        "text": "faltará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nada me faltará",
+    "feedbackCorrect": "Com o Senhor como pastor, não lhe falta o cuidado de que precisa.",
+    "feedbackWrong": {
+      "a": "Nada é cobrado da ovelha; o cuidado vem do pastor.",
+      "b": "O texto fala de falta, não de sobra."
+    },
+    "hint": "Pense no que uma ovelha bem cuidada não sente.",
+    "learningObjective": "Lembrar a confiança que abre o salmo.",
+    "evidence": [
+      "Salmos 23:1"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-03-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Salmos 23:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que Salmos 23:1–2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 23:1–2 comunica que se liga a este contexto?",
+    "verseRef": "Salmos 23:1–2",
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.",
+    "passageA": {
+      "ref": "Salmos 23:1–2",
+      "text": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi conhecia o ofício de pastor: guiar, alimentar e proteger as ovelhas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A ovelha se vira sozinha"
+      },
+      {
+        "id": "b",
+        "text": "Deus guia e protege de perto"
+      },
+      {
+        "id": "c",
+        "text": "Deus vigia de longe"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor é o meu pastor",
+    "feedbackCorrect": "Davi sabia o que é pastorear: ao chamar o Senhor de pastor, fala de cuidado próximo.",
+    "feedbackWrong": {
+      "a": "No salmo, todos os verbos de cuidado são do pastor.",
+      "c": "Pastor anda com o rebanho; não vigia de longe."
+    },
+    "hint": "Pense no que um pastor faz com as ovelhas.",
+    "learningObjective": "Ligar a imagem do pastor em Salmos 23:1–2 ao que Davi conhecia.",
+    "evidence": [
+      "Salmos 23:1–2"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-03-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Salmos 23:1–2, o descanso nos pastos mostra na prática o que significa \"nada me faltará\".",
+    "prompt": "Em Salmos 23:1–2, o descanso nos pastos mostra na prática o que significa \"nada me faltará\".",
+    "cue": "Em Salmos 23:1–2, o descanso nos pastos mostra na prática o que significa \"nada me faltará\".",
+    "verseRef": "Salmos 23:1–2",
+    "passageText": "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Ele me faz repousar em pastos verdejantes",
+    "feedbackCorrect": "O versículo 2 explica o 1: o que não falta é descanso, pasto e água dados pelo pastor.",
+    "feedbackWrong": {
+      "false": "Leia 23:1 e 23:2 juntos: o descanso e as águas mostram o que não falta."
+    },
+    "hint": "Leia o versículo 2 como explicação do 1.",
+    "learningObjective": "Compreender como Salmos 23:2 explica 23:1.",
+    "evidence": [
+      "Salmos 23:1–2"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-03-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Salmos 23:4, toque as palavras que admitem que o vale vai acontecer.",
+    "prompt": "Em Salmos 23:4, toque as palavras que admitem que o vale vai acontecer.",
+    "cue": "Em Salmos 23:4, toque as palavras que admitem que o vale vai acontecer.",
+    "verseRef": "Salmos 23:4",
+    "passageText": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "me confortam"
+      },
+      {
+        "id": "b",
+        "text": "Ainda que"
+      },
+      {
+        "id": "c",
+        "text": "não temerei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ainda que eu ande pelo vale",
+    "feedbackCorrect": "A confiança não nega o perigo: o salmista admite o vale e convive com ele.",
+    "feedbackWrong": {
+      "a": "\"Me confortam\" fala do conforto, que vem depois.",
+      "c": "\"Não temerei\" é a resposta ao vale, não a admissão de que ele existe."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Reconhecer o marcador de concessão em Salmos 23:4.",
+    "evidence": [
+      "Salmos 23:4"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-03-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como o vale de Salmos 23:4 se liga às veredas da justiça de 23:3?",
+    "prompt": "Como o vale de Salmos 23:4 se liga às veredas da justiça de 23:3?",
+    "cue": "Como o vale de Salmos 23:4 se liga às veredas da justiça de 23:3?",
+    "verseRef": "Salmos 23:3–4",
+    "passageText": "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome. Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O caminho certo do pastor também passa pelo vale"
+      },
+      {
+        "id": "b",
+        "text": "As veredas certas evitam qualquer vale escuro"
+      },
+      {
+        "id": "c",
+        "text": "O vale é castigo por sair das veredas"
+      },
+      {
+        "id": "d",
+        "text": "O vale fica longe do caminho do pastor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "guia-me pelas veredas da justiça",
+    "feedbackCorrect": "O pastor guia pelas veredas certas, e o vale está no caminho; ele não abandona ali.",
+    "feedbackWrong": {
+      "b": "O salmista anda pelo vale mesmo sendo guiado pelas veredas.",
+      "c": "O texto não liga o vale a castigo; o salmista anda nele guiado.",
+      "d": "O pastor está no vale: \"tu estás comigo\"."
+    },
+    "hint": "Veja quem guia em 23:3 e quem está junto em 23:4.",
+    "learningObjective": "Relacionar a condução do pastor com a passagem pelo vale.",
+    "evidence": [
+      "Salmos 23:3–4"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-03-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Em que ordem o pastor cuida da ovelha em Salmos 23:1–3?",
+    "prompt": "Em que ordem o pastor cuida da ovelha em Salmos 23:1–3?",
+    "cue": "Em que ordem o pastor cuida da ovelha em Salmos 23:1–3?",
+    "verseRef": "Salmos 23:2–3",
+    "passageText": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso. Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O salmista declara quem cuida dele"
+      },
+      {
+        "id": "b",
+        "text": "O pastor dá descanso e água"
+      },
+      {
+        "id": "c",
+        "text": "O pastor conduz pelo caminho certo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "guia-me pelas veredas da justiça",
+    "feedbackCorrect": "Primeiro quem cuida, depois o descanso, então a direção: do repouso ao caminho.",
+    "feedbackWrong": {
+      "default": "Comece por quem cuida (23:1); a direção pelo caminho certo vem por último."
+    },
+    "hint": "O salmo começa dizendo quem é o pastor.",
+    "learningObjective": "Compreender o movimento do cuidado em Salmos 23:1–3.",
+    "evidence": [
+      "Salmos 23:1–3"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-03-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Salmos 23:3, o que o pastor faz com a alma do salmista?",
+    "prompt": "Em Salmos 23:3, o que o pastor faz com a alma do salmista?",
+    "cue": "Em Salmos 23:3, o que o pastor faz com a alma do salmista?",
+    "verseRef": "Salmos 23:3",
+    "passageText": "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome.",
+    "template": "___ a minha alma; guia-me pelas veredas da justiça, por amor do teu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entristece"
+      },
+      {
+        "id": "b",
+        "text": "Examina"
+      },
+      {
+        "id": "c",
+        "text": "Refrigera"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Refrigera a minha alma",
+    "feedbackCorrect": "O pastor refresca a alma cansada, como água fresca depois do caminho.",
+    "feedbackWrong": {
+      "a": "O pastor faz o contrário: renova a alma.",
+      "b": "O texto fala de alívio, não de exame."
+    },
+    "hint": "É um verbo de alívio, como água fresca.",
+    "learningObjective": "Compreender a ação do pastor sobre a alma.",
+    "evidence": [
+      "Salmos 23:3"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-03-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Salmos 23:1 a Filipenses 4:19?",
+    "prompt": "O que liga Salmos 23:1 a Filipenses 4:19?",
+    "cue": "O que liga Salmos 23:1 a Filipenses 4:19?",
+    "verseRef": "Salmos 23:1",
+    "passageText": "O Senhor é o meu pastor; nada me faltará.",
+    "passageA": {
+      "ref": "Salmos 23:1",
+      "text": "O Senhor é o meu pastor; nada me faltará."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:19",
+      "text": "E o meu Deus, segundo a sua riqueza em glória, há de suprir todas as suas necessidades por meio de Cristo Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus espera nossa riqueza"
+      },
+      {
+        "id": "b",
+        "text": "Deus supre as necessidades"
+      },
+      {
+        "id": "c",
+        "text": "Deus realiza todo desejo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nada me faltará",
+    "feedbackCorrect": "Os dois textos põem o sustento em Deus: o que falta, ele supre.",
+    "feedbackWrong": {
+      "a": "A riqueza é de Deus (\"sua riqueza em glória\"); ele supre, não cobra.",
+      "c": "Paulo fala de necessidades, não de todo desejo."
+    },
+    "hint": "Compare o que não falta e o que Deus supre.",
+    "learningObjective": "Relacionar a confiança do salmo com a promessa de Filipenses.",
+    "evidence": [
+      "Salmos 23:1",
+      "Filipenses 4:19"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-03-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Salmos 23:1, \"nada me faltará\" é confiança no pastor, não uma fórmula para recitar contra problemas.",
+    "prompt": "Em Salmos 23:1, \"nada me faltará\" é confiança no pastor, não uma fórmula para recitar contra problemas.",
+    "cue": "Em Salmos 23:1, \"nada me faltará\" é confiança no pastor, não uma fórmula para recitar contra problemas.",
+    "verseRef": "Salmos 23:1",
+    "passageText": "O Senhor é o meu pastor; nada me faltará.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor é o meu pastor",
+    "feedbackCorrect": "A segurança está em quem pastoreia, não nas palavras; o salmo é relação, não amuleto.",
+    "feedbackWrong": {
+      "false": "O salmo põe a confiança no pastor; repetir palavras não substitui confiar nele."
+    },
+    "hint": "Repare em quem o versículo põe no centro.",
+    "learningObjective": "Interpretar o Salmo 23 como confiança, não como amuleto.",
+    "evidence": [
+      "Salmos 23:1"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-03-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Salmos 23:6, toque o trecho que mostra a bondade de Deus indo atrás do salmista.",
+    "prompt": "Em Salmos 23:6, toque o trecho que mostra a bondade de Deus indo atrás do salmista.",
+    "cue": "Em Salmos 23:6, toque o trecho que mostra a bondade de Deus indo atrás do salmista.",
+    "verseRef": "Salmos 23:6",
+    "passageText": "Certamente, a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por toda a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos os dias"
+      },
+      {
+        "id": "b",
+        "text": "casa do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "me seguirão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a bondade e a misericórdia me seguirão",
+    "feedbackCorrect": "A bondade de Deus vai atrás do salmista, como quem não o perde de vista.",
+    "feedbackWrong": {
+      "a": "\"Todos os dias\" diz por quanto tempo, não o movimento de ir atrás.",
+      "b": "\"Casa do Senhor\" é o destino, não o movimento da bondade."
+    },
+    "hint": "Procure o verbo de movimento.",
+    "learningObjective": "Sustentar com o texto que o cuidado de Deus acompanha o salmista.",
+    "evidence": [
+      "Salmos 23:6"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-03-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Salmos 23:2 sustenta sobre o descanso?",
+    "prompt": "Que leitura Salmos 23:2 sustenta sobre o descanso?",
+    "cue": "Que leitura Salmos 23:2 sustenta sobre o descanso?",
+    "verseRef": "Salmos 23:2",
+    "passageText": "Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Descansar é falta de fé de quem devia lutar"
+      },
+      {
+        "id": "b",
+        "text": "Quem tem fé nunca se sente cansado"
+      },
+      {
+        "id": "c",
+        "text": "O descanso só vem quando os problemas acabam"
+      },
+      {
+        "id": "d",
+        "text": "O descanso é dado pelo pastor, que conduz até ele"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Ele me faz repousar",
+    "feedbackCorrect": "O pastor faz repousar e leva: descanso é cuidado recebido, não prêmio conquistado.",
+    "feedbackWrong": {
+      "a": "O próprio pastor conduz ao repouso; descansar faz parte do cuidado.",
+      "b": "Ovelhas precisam de repouso; o salmo supõe cansaço e cuida dele.",
+      "c": "O salmo põe o descanso antes do vale e dos inimigos, não depois."
+    },
+    "hint": "Veja quem faz o descanso acontecer.",
+    "learningObjective": "Escolher a leitura do descanso que o texto sustenta.",
+    "evidence": [
+      "Salmos 23:2"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-03-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela como o Salmo 23 trata o medo?",
+    "prompt": "Qual sequência revela como o Salmo 23 trata o medo?",
+    "cue": "Qual sequência revela como o Salmo 23 trata o medo?",
+    "verseRef": "Salmos 23:4",
+    "passageText": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiar em quem cuida antes do perigo"
+      },
+      {
+        "id": "b",
+        "text": "Atravessar o vale sem negar a sombra"
+      },
+      {
+        "id": "c",
+        "text": "Esperar a bondade que segue até o fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não temerei mal nenhum",
+    "feedbackCorrect": "O salmo começa na confiança, atravessa o vale e termina na bondade que acompanha.",
+    "feedbackWrong": {
+      "default": "Siga o salmo: confiança (23:1), vale (23:4), bondade até o fim (23:6)."
+    },
+    "hint": "Siga do começo ao fim do salmo.",
+    "learningObjective": "Ver o caminho do medo à confiança no Salmo 23.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:4",
+      "Salmos 23:6"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-03-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Salmos 23:4, por onde o salmista admite que anda?",
+    "prompt": "Em Salmos 23:4, por onde o salmista admite que anda?",
+    "cue": "Em Salmos 23:4, por onde o salmista admite que anda?",
+    "verseRef": "Salmos 23:4",
+    "passageText": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam.",
+    "template": "Ainda que eu ande pelo ___ da sombra da morte, não temerei mal nenhum, porque tu estás comigo; a tua vara e o teu cajado me confortam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserto"
+      },
+      {
+        "id": "b",
+        "text": "monte"
+      },
+      {
+        "id": "c",
+        "text": "vale"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pelo vale da sombra da morte",
+    "feedbackCorrect": "O lugar escuro é real no salmo: o pastor não tira a ovelha de lá, anda com ela.",
+    "feedbackWrong": {
+      "a": "O lugar é marcado pela sombra da morte, entre encostas.",
+      "b": "O texto fala de um lugar baixo e escuro, não de um alto."
+    },
+    "hint": "Pense num lugar baixo, estreito e escuro.",
+    "learningObjective": "Lembrar o termo que mostra onde o pastor acompanha.",
+    "evidence": [
+      "Salmos 23:4"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-03-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-03",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Salmos 23:3 a Mateus 11:29?",
+    "prompt": "O que liga Salmos 23:3 a Mateus 11:29?",
+    "cue": "O que liga Salmos 23:3 a Mateus 11:29?",
+    "verseRef": "Salmos 23:3",
+    "passageText": "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome.",
+    "passageA": {
+      "ref": "Salmos 23:3",
+      "text": "Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do teu nome."
+    },
+    "passageB": {
+      "ref": "Mateus 11:29",
+      "text": "Tomem sobre vocês o meu jugo e aprendam de mim, porque sou manso e humilde de coração; e encontrarão descanso para a alma de vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jugo pesado para os fortes"
+      },
+      {
+        "id": "b",
+        "text": "Alma salva por esforço"
+      },
+      {
+        "id": "c",
+        "text": "Descanso para a alma"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Refrigera a minha alma",
+    "feedbackCorrect": "O pastor refrigera a alma; Jesus promete descanso para a alma de quem vem a ele.",
+    "feedbackWrong": {
+      "a": "Jesus diz que é manso e humilde; ele chama os cansados.",
+      "b": "Nenhum dos textos fala de esforço; os dois falam de alívio dado."
+    },
+    "hint": "Compare o que os dois textos prometem à alma.",
+    "learningObjective": "Ligar o pastor do salmo ao descanso que Jesus oferece.",
+    "evidence": [
+      "Salmos 23:3",
+      "Mateus 11:29"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-04-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Mateus 6:7, Jesus manda não usar vãs repetições ao orar.",
+    "prompt": "Em Mateus 6:7, Jesus manda não usar vãs repetições ao orar.",
+    "cue": "Em Mateus 6:7, Jesus manda não usar vãs repetições ao orar.",
+    "verseRef": "Mateus 6:7",
+    "passageText": "E, ao orar, não empreguem vãs repetições, como os gentios, que presumem que, pelo seu muito falar, serão ouvidos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não empreguem vãs repetições",
+    "feedbackCorrect": "Jesus corta a ideia de que muitas palavras garantem ser ouvido.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 6:7: \"não empreguem vãs repetições\"."
+    },
+    "hint": "Veja o começo do versículo.",
+    "learningObjective": "Observar o que Jesus diz para evitar na oração.",
+    "evidence": [
+      "Mateus 6:7"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-04-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Mateus 6:9, toque onde está o Pai a quem se dirige a oração.",
+    "prompt": "Em Mateus 6:9, toque onde está o Pai a quem se dirige a oração.",
+    "cue": "Em Mateus 6:9, toque onde está o Pai a quem se dirige a oração.",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "teu nome"
+      },
+      {
+        "id": "b",
+        "text": "nos céus"
+      },
+      {
+        "id": "c",
+        "text": "desta forma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que estás nos céus",
+    "feedbackCorrect": "O Pai é \"nosso\", próximo, e está acima de tudo ao mesmo tempo.",
+    "feedbackWrong": {
+      "a": "\"Teu nome\" é o que se pede que seja santificado, não onde o Pai está.",
+      "c": "\"Desta forma\" introduz a oração, não diz onde está o Pai."
+    },
+    "hint": "Procure um lugar logo depois de \"que estás\".",
+    "learningObjective": "Identificar a quem e onde a oração se dirige.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-04-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Mateus 6:7, o que os gentios presumiam ao orar?",
+    "prompt": "Segundo Mateus 6:7, o que os gentios presumiam ao orar?",
+    "cue": "Segundo Mateus 6:7, o que os gentios presumiam ao orar?",
+    "verseRef": "Mateus 6:7",
+    "passageText": "E, ao orar, não empreguem vãs repetições, como os gentios, que presumem que, pelo seu muito falar, serão ouvidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que deviam orar em segredo"
+      },
+      {
+        "id": "b",
+        "text": "Que o perdão vinha antes do pão"
+      },
+      {
+        "id": "c",
+        "text": "Que Deus já sabia de tudo"
+      },
+      {
+        "id": "d",
+        "text": "Que seriam ouvidos por falar muito"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "pelo seu muito falar, serão ouvidos",
+    "feedbackCorrect": "Eles achavam que a quantidade de palavras garantia a resposta.",
+    "feedbackWrong": {
+      "a": "Orar em segredo é ensino de Jesus (6:6), não ideia dos gentios.",
+      "b": "O versículo não fala de perdão; fala de muito falar.",
+      "c": "Isso é o que Jesus diz do Pai em 6:8, não o que os gentios pensavam."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar o erro que Jesus corrige na oração.",
+    "evidence": [
+      "Mateus 6:7"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-04-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Mateus 6:8 na ordem do texto.",
+    "prompt": "Monte Mateus 6:8 na ordem do texto.",
+    "cue": "Monte Mateus 6:8 na ordem do texto.",
+    "verseRef": "Mateus 6:8",
+    "passageText": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não vos assemelheis a eles"
+      },
+      {
+        "id": "b",
+        "text": "pois o vosso Pai sabe do que tendes necessidade"
+      },
+      {
+        "id": "c",
+        "text": "antes mesmo de lho pedirdes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "antes mesmo de lho pedirdes",
+    "feedbackCorrect": "A ordem, o motivo e o detalhe: o Pai sabe antes mesmo do pedido.",
+    "feedbackWrong": {
+      "default": "Comece por \"Não vos assemelheis a eles\"; o \"antes mesmo\" fecha o versículo."
+    },
+    "hint": "O versículo começa com uma proibição.",
+    "learningObjective": "Reconhecer a sequência de Mateus 6:8.",
+    "evidence": [
+      "Mateus 6:8"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-04-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Mateus 6:11, para quando se pede o pão?",
+    "prompt": "Em Mateus 6:11, para quando se pede o pão?",
+    "cue": "Em Mateus 6:11, para quando se pede o pão?",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "template": "Dá-nos ___ o nosso pão de cada dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "logo"
+      },
+      {
+        "id": "b",
+        "text": "hoje"
+      },
+      {
+        "id": "c",
+        "text": "sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Dá-nos hoje",
+    "feedbackCorrect": "Jesus ensina a pedir o pão deste dia, não o estoque do mês.",
+    "feedbackWrong": {
+      "a": "O texto não pede pressa; pede o pão deste dia.",
+      "c": "\"Sempre\" pediria tudo de uma vez; o texto pede o pão do dia."
+    },
+    "hint": "Pense no tempo mais curto possível.",
+    "learningObjective": "Lembrar para quando Jesus ensina a pedir o pão.",
+    "evidence": [
+      "Mateus 6:11"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-04-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Mateus 6:11 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:11 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:11 comunica que se liga a este contexto?",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "passageA": {
+      "ref": "Mateus 6:11",
+      "text": "Dá-nos hoje o nosso pão de cada dia;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No tempo de Jesus, muitos trabalhadores recebiam por dia e compravam o pão daquele dia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Depender de Deus a cada dia"
+      },
+      {
+        "id": "b",
+        "text": "Pedir só pelas necessidades alheias"
+      },
+      {
+        "id": "c",
+        "text": "Garantir estoque para o mês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o nosso pão de cada dia",
+    "feedbackCorrect": "Para quem vivia da diária, pedir o pão de cada dia era entregar o hoje ao Pai.",
+    "feedbackWrong": {
+      "b": "O texto diz \"Dá-nos\": o pedido inclui quem ora.",
+      "c": "O pedido é pelo pão do dia, não por estoque."
+    },
+    "hint": "Repare na medida de tempo do pedido.",
+    "learningObjective": "Ligar Mateus 6:11 à vida de quem dependia da diária.",
+    "evidence": [
+      "Mateus 6:11"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-04-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Mateus 6:8, Jesus diz que devemos orar bastante para que o Pai fique sabendo do que precisamos.",
+    "prompt": "Em Mateus 6:8, Jesus diz que devemos orar bastante para que o Pai fique sabendo do que precisamos.",
+    "cue": "Em Mateus 6:8, Jesus diz que devemos orar bastante para que o Pai fique sabendo do que precisamos.",
+    "verseRef": "Mateus 6:8",
+    "passageText": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o vosso Pai sabe do que tendes necessidade",
+    "feedbackCorrect": "É o contrário: oramos porque o Pai já sabe, não para informá-lo.",
+    "feedbackWrong": {
+      "true": "Releia 6:8: o Pai sabe \"antes mesmo de lho pedirdes\"."
+    },
+    "hint": "Veja quando o Pai sabe.",
+    "learningObjective": "Compreender a relação entre o saber do Pai e a oração.",
+    "evidence": [
+      "Mateus 6:8"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-04-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Mateus 6:8, toque a palavra que introduz o motivo para não orar como os gentios.",
+    "prompt": "Em Mateus 6:8, toque a palavra que introduz o motivo para não orar como os gentios.",
+    "cue": "Em Mateus 6:8, toque a palavra que introduz o motivo para não orar como os gentios.",
+    "verseRef": "Mateus 6:8",
+    "passageText": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "antes"
+      },
+      {
+        "id": "b",
+        "text": "Não"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois o vosso Pai sabe",
+    "feedbackCorrect": "Ela traz a razão: não imitem os gentios, porque o Pai já sabe.",
+    "feedbackWrong": {
+      "a": "\"Antes\" diz quando o Pai sabe; o motivo começa antes disso.",
+      "b": "\"Não\" abre a proibição; o motivo vem depois."
+    },
+    "hint": "Olhe logo após a primeira vírgula.",
+    "learningObjective": "Reconhecer o marcador de causa em Mateus 6:8.",
+    "evidence": [
+      "Mateus 6:8"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-04-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Em Mateus 6:10–11, o que a ordem dos pedidos ensina sobre o pão?",
+    "prompt": "Em Mateus 6:10–11, o que a ordem dos pedidos ensina sobre o pão?",
+    "cue": "Em Mateus 6:10–11, o que a ordem dos pedidos ensina sobre o pão?",
+    "verseRef": "Mateus 6:10–11",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu. Dá-nos hoje o nosso pão de cada dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O pão é pedido dentro do reino, não no lugar dele"
+      },
+      {
+        "id": "b",
+        "text": "O pão importa pouco para Deus"
+      },
+      {
+        "id": "c",
+        "text": "O pão deve ser pedido antes de tudo"
+      },
+      {
+        "id": "d",
+        "text": "O reino só vem quando o pão sobra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Venha o teu reino",
+    "feedbackCorrect": "Reino e vontade vêm primeiro; o pão entra depois, dentro desse cuidado.",
+    "feedbackWrong": {
+      "b": "Jesus manda pedir o pão: ele importa ao Pai.",
+      "c": "No texto, o pão vem depois do nome, do reino e da vontade.",
+      "d": "O texto não liga a vinda do reino a sobra de pão."
+    },
+    "hint": "Veja a ordem: reino e vontade, depois pão.",
+    "learningObjective": "Relacionar a ordem dos pedidos com o lugar do pão.",
+    "evidence": [
+      "Mateus 6:10–11"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-04-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Em que ordem a oração vai do Pai ao pão em Mateus 6:9–11?",
+    "prompt": "Em que ordem a oração vai do Pai ao pão em Mateus 6:9–11?",
+    "cue": "Em que ordem a oração vai do Pai ao pão em Mateus 6:9–11?",
+    "verseRef": "Mateus 6:9–10",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome; Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamar a Deus de Pai nos céus"
+      },
+      {
+        "id": "b",
+        "text": "Pedir que o reino de Deus chegue à terra"
+      },
+      {
+        "id": "c",
+        "text": "Pedir o pão só para este dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pai nosso, que estás nos céus",
+    "feedbackCorrect": "Primeiro quem Deus é, depois o reino dele, e só então o pão de hoje.",
+    "feedbackWrong": {
+      "default": "O pão vem por último; a oração começa por quem Deus é."
+    },
+    "hint": "A oração começa pelo nome de quem ouve.",
+    "learningObjective": "Compreender o movimento da oração do Pai ao pão.",
+    "evidence": [
+      "Mateus 6:9–11"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-04-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Mateus 6:9, que palavra liga o ensino de 6:8 à oração que vem?",
+    "prompt": "Em Mateus 6:9, que palavra liga o ensino de 6:8 à oração que vem?",
+    "cue": "Em Mateus 6:9, que palavra liga o ensino de 6:8 à oração que vem?",
+    "verseRef": "Mateus 6:9",
+    "passageText": "Portanto, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "template": "___, vocês devem orar desta forma: Pai nosso, que estás nos céus, santificado seja o teu nome;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Portanto"
+      },
+      {
+        "id": "b",
+        "text": "Todavia"
+      },
+      {
+        "id": "c",
+        "text": "Contudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Portanto, vocês devem orar desta forma",
+    "feedbackCorrect": "A oração é consequência: o Pai sabe, então orem assim, com confiança.",
+    "feedbackWrong": {
+      "b": "\"Todavia\" indica oposição; o texto tira uma conclusão.",
+      "c": "\"Contudo\" faria oposição; a oração é consequência de 6:8, não contraste."
+    },
+    "hint": "É uma palavra de conclusão.",
+    "learningObjective": "Compreender a oração como consequência do cuidado do Pai.",
+    "evidence": [
+      "Mateus 6:9"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-04-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Mateus 6:11 a Êxodo 16:4?",
+    "prompt": "O que liga Mateus 6:11 a Êxodo 16:4?",
+    "cue": "O que liga Mateus 6:11 a Êxodo 16:4?",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "passageA": {
+      "ref": "Mateus 6:11",
+      "text": "Dá-nos hoje o nosso pão de cada dia;"
+    },
+    "passageB": {
+      "ref": "Êxodo 16:4",
+      "text": "Então, disse o Senhor a Moisés: Eis que vos farei chover do céu pão, e o povo sairá e colherá diariamente a porção de cada dia, para que eu o coloque à prova, a fim de saber se anda segundo a minha lei ou não."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pão ganho por mérito"
+      },
+      {
+        "id": "b",
+        "text": "Pão guardado para o ano"
+      },
+      {
+        "id": "c",
+        "text": "Provisão dada dia a dia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o nosso pão de cada dia",
+    "feedbackCorrect": "No deserto, o maná vinha na porção de cada dia; Jesus ensina a pedir assim.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, o pão é dado por Deus, não merecido.",
+      "b": "O maná não era para estocar; vinha a porção de cada dia."
+    },
+    "hint": "Compare de quanto em quanto tempo o pão chega.",
+    "learningObjective": "Relacionar o pão de cada dia com o maná do deserto.",
+    "evidence": [
+      "Mateus 6:11",
+      "Êxodo 16:4"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-04-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Mateus 6:11, pedir o pão \"hoje\" significa que é errado planejar ou guardar para o futuro.",
+    "prompt": "Em Mateus 6:11, pedir o pão \"hoje\" significa que é errado planejar ou guardar para o futuro.",
+    "cue": "Em Mateus 6:11, pedir o pão \"hoje\" significa que é errado planejar ou guardar para o futuro.",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia",
+    "feedbackCorrect": "O pedido ensina dependência diária, não proíbe planejar; o que sai é o estoque do medo.",
+    "feedbackWrong": {
+      "true": "Jesus ensina a confiar no Pai hoje; o texto não condena planejar com prudência."
+    },
+    "hint": "Pense no que o pedido ensina, não no que proíbe.",
+    "learningObjective": "Interpretar o pão de hoje como dependência, não como proibição de planejar.",
+    "evidence": [
+      "Mateus 6:11"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-04-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Mateus 6:11, toque o trecho que mostra que o sustento é pedido de novo a cada manhã.",
+    "prompt": "Em Mateus 6:11, toque o trecho que mostra que o sustento é pedido de novo a cada manhã.",
+    "cue": "Em Mateus 6:11, toque o trecho que mostra que o sustento é pedido de novo a cada manhã.",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "de cada dia"
+      },
+      {
+        "id": "b",
+        "text": "Dá-nos"
+      },
+      {
+        "id": "c",
+        "text": "nosso pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "de cada dia",
+    "feedbackCorrect": "A provisão se renova no ritmo do dia, como o maná no deserto.",
+    "feedbackWrong": {
+      "b": "\"Dá-nos\" mostra que é dom, mas não o ritmo diário.",
+      "c": "\"Nosso pão\" diz o que se pede, não o ritmo do pedido."
+    },
+    "hint": "Procure a expressão de tempo no fim do versículo.",
+    "learningObjective": "Sustentar com o texto que a dependência é diária.",
+    "evidence": [
+      "Mateus 6:11"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-04-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Mateus 6:8 sustenta para quem ora com ansiedade?",
+    "prompt": "Que leitura Mateus 6:8 sustenta para quem ora com ansiedade?",
+    "cue": "Que leitura Mateus 6:8 sustenta para quem ora com ansiedade?",
+    "verseRef": "Mateus 6:8",
+    "passageText": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posso orar com poucas palavras, pois o Pai já sabe"
+      },
+      {
+        "id": "b",
+        "text": "Se o Pai já sabe, não preciso orar"
+      },
+      {
+        "id": "c",
+        "text": "Deus só ouve pedidos bem formulados"
+      },
+      {
+        "id": "d",
+        "text": "Quanto mais eu repetir, mais serei ouvido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o vosso Pai sabe do que tendes necessidade",
+    "feedbackCorrect": "Quem ora não precisa convencer: o Pai já conhece a necessidade antes do pedido.",
+    "feedbackWrong": {
+      "b": "Jesus conclui o oposto: \"Portanto\", orem assim (6:9).",
+      "c": "O texto põe a segurança no Pai que sabe, não na forma do pedido.",
+      "d": "Jesus rejeita a ideia de ser ouvido pelo muito falar (6:7)."
+    },
+    "hint": "Leia 6:8 junto com 6:7 e 6:9.",
+    "learningObjective": "Escolher a leitura de Mateus 6:8 que o contexto sustenta.",
+    "evidence": [
+      "Mateus 6:7–9"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-04-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do pão de cada dia na Bíblia?",
+    "prompt": "Qual sequência revela o fio do pão de cada dia na Bíblia?",
+    "cue": "Qual sequência revela o fio do pão de cada dia na Bíblia?",
+    "verseRef": "Mateus 6:11",
+    "passageText": "Dá-nos hoje o nosso pão de cada dia;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus manda maná dia após dia no deserto"
+      },
+      {
+        "id": "b",
+        "text": "Jesus ensina a pedir o pão de hoje"
+      },
+      {
+        "id": "c",
+        "text": "Jesus se apresenta como o pão da vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o nosso pão de cada dia",
+    "feedbackCorrect": "O maná diário prepara o pedido do pão, e os dois apontam para Jesus, o pão da vida.",
+    "feedbackWrong": {
+      "default": "Comece no deserto (Êx 16); o pão da vida (Jo 6:35) é o ponto de chegada."
+    },
+    "hint": "Siga a história bíblica: deserto, Sermão do Monte, João 6.",
+    "learningObjective": "Ver Mateus 6:11 dentro do fio do pão na Bíblia.",
+    "evidence": [
+      "Êxodo 16:4",
+      "Mateus 6:11",
+      "João 6:35"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-04-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Mateus 6:10, o que se pede que seja feito na terra como no céu?",
+    "prompt": "Em Mateus 6:10, o que se pede que seja feito na terra como no céu?",
+    "cue": "Em Mateus 6:10, o que se pede que seja feito na terra como no céu?",
+    "verseRef": "Mateus 6:10",
+    "passageText": "Venha o teu reino; que a tua vontade seja feita, assim na terra como no céu.",
+    "template": "Venha o teu reino; que a tua ___ seja feita, assim na terra como no céu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "obra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que a tua vontade seja feita",
+    "feedbackCorrect": "Pedir que Deus reine também sobre o que não controlamos tira do medo o comando.",
+    "feedbackWrong": {
+      "a": "O texto não fala de palavra; fala do querer de Deus.",
+      "c": "O que se pede que seja feito é o querer de Deus, não uma obra."
+    },
+    "hint": "É o querer de Deus.",
+    "learningObjective": "Lembrar o termo que carrega a entrega a Deus na oração.",
+    "evidence": [
+      "Mateus 6:10"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-04-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-04",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Mateus 6:8 a Isaías 65:24?",
+    "prompt": "O que liga Mateus 6:8 a Isaías 65:24?",
+    "cue": "O que liga Mateus 6:8 a Isaías 65:24?",
+    "verseRef": "Mateus 6:8",
+    "passageText": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes.",
+    "passageA": {
+      "ref": "Mateus 6:8",
+      "text": "Não vos assemelheis a eles, pois o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes."
+    },
+    "passageB": {
+      "ref": "Isaías 65:24",
+      "text": "Antes que clamem, eu responderei; enquanto ainda estão falando, eu os ouvirei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ouve quem fala mais"
+      },
+      {
+        "id": "b",
+        "text": "Deus ouve antes do pedido"
+      },
+      {
+        "id": "c",
+        "text": "Deus demora para responder"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "antes mesmo de lho pedirdes",
+    "feedbackCorrect": "Isaías e Jesus dizem o mesmo: Deus conhece e responde antes de terminarmos de pedir.",
+    "feedbackWrong": {
+      "a": "Jesus rejeita o muito falar; Isaías diz que Deus ouve enquanto ainda falam.",
+      "c": "Os dois textos dizem o contrário: Deus responde antes."
+    },
+    "hint": "Compare quando Deus ouve nos dois textos.",
+    "learningObjective": "Ligar o Pai que sabe em Mateus à promessa de Isaías.",
+    "evidence": [
+      "Mateus 6:8",
+      "Isaías 65:24"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-05-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:6, Pedro diz que os leitores estão entristecidos por diversas provações.",
+    "prompt": "Em 1 Pedro 1:6, Pedro diz que os leitores estão entristecidos por diversas provações.",
+    "cue": "Em 1 Pedro 1:6, Pedro diz que os leitores estão entristecidos por diversas provações.",
+    "verseRef": "1 Pedro 1:6",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "entristecidos por diversas provações",
+    "feedbackCorrect": "Pedro não esconde a dor: os leitores estão tristes por causa de diversas provações.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1 Pedro 1:6: \"entristecidos por diversas provações\"."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Observar que Pedro reconhece a tristeza dos leitores.",
+    "evidence": [
+      "1 Pedro 1:6"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-05-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:3, toque a medida segundo a qual Deus nos regenerou.",
+    "prompt": "Em 1 Pedro 1:3, toque a medida segundo a qual Deus nos regenerou.",
+    "cue": "Em 1 Pedro 1:3, toque a medida segundo a qual Deus nos regenerou.",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nosso Senhor"
+      },
+      {
+        "id": "b",
+        "text": "dentre os mortos"
+      },
+      {
+        "id": "c",
+        "text": "muita misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "segundo a sua muita misericórdia",
+    "feedbackCorrect": "O novo nascimento vem da grandeza do amor de Deus: é dom, não mérito.",
+    "feedbackWrong": {
+      "a": "\"Nosso Senhor\" nomeia Jesus; a medida do novo nascimento é outra.",
+      "b": "\"Dentre os mortos\" fala da ressurreição de Jesus, não da medida de Deus."
+    },
+    "hint": "Procure o que vem depois de \"segundo a sua\".",
+    "learningObjective": "Identificar a misericórdia de Deus como origem do novo nascimento.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-05-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Pedro 1:7, com o que Pedro compara a fé provada?",
+    "prompt": "Segundo 1 Pedro 1:7, com o que Pedro compara a fé provada?",
+    "cue": "Segundo 1 Pedro 1:7, com o que Pedro compara a fé provada?",
+    "verseRef": "1 Pedro 1:7",
+    "passageText": "Para que a prova da vossa fé, muito mais preciosa do que o ouro que perece e é provado pelo fogo, redunde em louvor, glória e honra na revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com o ouro provado pelo fogo"
+      },
+      {
+        "id": "b",
+        "text": "Com a casa firmada na rocha"
+      },
+      {
+        "id": "c",
+        "text": "Com a prata guardada no templo"
+      },
+      {
+        "id": "d",
+        "text": "Com a semente lançada na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "do que o ouro que perece e é provado pelo fogo",
+    "feedbackCorrect": "A fé provada é como ouro no fogo, e ainda mais preciosa que ele.",
+    "feedbackWrong": {
+      "b": "A casa na rocha é imagem de Jesus em Mateus 7, não deste versículo.",
+      "c": "O texto não fala de prata nem de templo.",
+      "d": "A imagem da semente não está aqui; Pedro usa um metal no fogo."
+    },
+    "hint": "Pense num metal que passa pelo fogo.",
+    "learningObjective": "Observar a imagem que Pedro usa para a fé provada.",
+    "evidence": [
+      "1 Pedro 1:7"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-05-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Pedro 1:8 na ordem do texto.",
+    "prompt": "Monte 1 Pedro 1:8 na ordem do texto.",
+    "cue": "Monte 1 Pedro 1:8 na ordem do texto.",
+    "verseRef": "1 Pedro 1:8",
+    "passageText": "A quem, não o tendo visto, amais; no qual, não vendo agora, mas crendo, exultais com uma alegria indizível e cheia de glória;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A quem, não o tendo visto, amais"
+      },
+      {
+        "id": "b",
+        "text": "no qual, não vendo agora, mas crendo"
+      },
+      {
+        "id": "c",
+        "text": "exultais com uma alegria indizível e cheia de glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "exultais com uma alegria indizível",
+    "feedbackCorrect": "Amar sem ver, crer sem ver, e então a alegria: é a sequência do versículo.",
+    "feedbackWrong": {
+      "default": "Comece por \"A quem, não o tendo visto, amais\"; a alegria fecha o versículo."
+    },
+    "hint": "O versículo começa falando de amar.",
+    "learningObjective": "Reconhecer a sequência de 1 Pedro 1:8.",
+    "evidence": [
+      "1 Pedro 1:8"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-05-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Pedro 1:4, como está a herança nos céus?",
+    "prompt": "Em 1 Pedro 1:4, como está a herança nos céus?",
+    "cue": "Em 1 Pedro 1:4, como está a herança nos céus?",
+    "verseRef": "1 Pedro 1:4",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês.",
+    "template": "Para uma herança incorruptível, sem mácula e imarcescível, ___ nos céus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reservada"
+      },
+      {
+        "id": "b",
+        "text": "adiada"
+      },
+      {
+        "id": "c",
+        "text": "escondida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reservada nos céus para vocês",
+    "feedbackCorrect": "A herança tem dono e lugar garantidos, longe do que estraga.",
+    "feedbackWrong": {
+      "b": "O texto não fala de adiamento; fala de algo guardado.",
+      "c": "Não está escondida; está separada para vocês."
+    },
+    "hint": "Pense numa mesa separada com o seu nome.",
+    "learningObjective": "Lembrar onde e como está a herança.",
+    "evidence": [
+      "1 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "ansiedade-sem-dor-ansia-05-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Pedro 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Pedro 1:6 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 1:6 comunica que se liga a este contexto?",
+    "verseRef": "1 Pedro 1:6",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações.",
+    "passageA": {
+      "ref": "1 Pedro 1:6",
+      "text": "estejam por breve tempo entristecidos por diversas provações"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedro escreve a cristãos espalhados, que sofriam hostilidade por causa da fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristãos não devem ficar tristes"
+      },
+      {
+        "id": "b",
+        "text": "As provações já tinham acabado"
+      },
+      {
+        "id": "c",
+        "text": "Pedro leva a dor a sério"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "entristecidos por diversas provações",
+    "feedbackCorrect": "Pedro nomeia a tristeza e as provações: a esperança não começa negando a dor.",
+    "feedbackWrong": {
+      "a": "O texto diz que eles estão entristecidos, e Pedro não os repreende por isso.",
+      "b": "Pedro fala \"no presente\": as provações estão acontecendo."
+    },
+    "hint": "Veja como Pedro descreve o que eles sentem.",
+    "learningObjective": "Ligar 1 Pedro 1:6 à situação dos leitores.",
+    "evidence": [
+      "1 Pedro 1:6"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-05-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Pedro 1:5, a salvação já foi toda revelada, e não há mais nada a esperar.",
+    "prompt": "Em 1 Pedro 1:5, a salvação já foi toda revelada, e não há mais nada a esperar.",
+    "cue": "Em 1 Pedro 1:5, a salvação já foi toda revelada, e não há mais nada a esperar.",
+    "verseRef": "1 Pedro 1:5",
+    "passageText": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "prestes a se revelar no último tempo",
+    "feedbackCorrect": "A salvação está \"prestes a se revelar\": há um futuro guardado por Deus.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1:5: a salvação ainda vai se revelar no último tempo."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Compreender que a guarda de Deus aponta para um futuro.",
+    "evidence": [
+      "1 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-05-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Pedro 1:6, toque a palavra que junta alegria e tristeza no mesmo tempo.",
+    "prompt": "Em 1 Pedro 1:6, toque a palavra que junta alegria e tristeza no mesmo tempo.",
+    "cue": "Em 1 Pedro 1:6, toque a palavra que junta alegria e tristeza no mesmo tempo.",
+    "verseRef": "1 Pedro 1:6",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "embora"
+      },
+      {
+        "id": "b",
+        "text": "breve tempo"
+      },
+      {
+        "id": "c",
+        "text": "Nisso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "embora, no presente",
+    "feedbackCorrect": "A palavra segura as duas coisas juntas: eles exultam e estão tristes.",
+    "feedbackWrong": {
+      "b": "\"Breve tempo\" diz quanto dura a tristeza, não liga as duas.",
+      "c": "\"Nisso\" aponta para o motivo da alegria, não para o contraste."
+    },
+    "hint": "Procure a palavra entre vírgulas depois de \"exultam\".",
+    "learningObjective": "Reconhecer o marcador de contraste em 1 Pedro 1:6.",
+    "evidence": [
+      "1 Pedro 1:6"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-05-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Pedro 1:5 completa o que 1:4 diz sobre a herança?",
+    "prompt": "Como 1 Pedro 1:5 completa o que 1:4 diz sobre a herança?",
+    "cue": "Como 1 Pedro 1:5 completa o que 1:4 diz sobre a herança?",
+    "verseRef": "1 Pedro 1:4–5",
+    "passageText": "Para uma herança incorruptível, sem mácula e imarcescível, reservada nos céus para vocês. Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só a herança está segura; o resto é conosco"
+      },
+      {
+        "id": "b",
+        "text": "A fé de quem crê é o que segura tudo"
+      },
+      {
+        "id": "c",
+        "text": "A herança está guardada, e os herdeiros também"
+      },
+      {
+        "id": "d",
+        "text": "A herança será entregue toda nesta vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vocês estão sendo guardados",
+    "feedbackCorrect": "A herança está reservada nos céus, e quem crê está sendo guardado até chegar lá.",
+    "feedbackWrong": {
+      "a": "1:5 diz que os que creem também estão sendo guardados.",
+      "b": "A fé é o meio; quem guarda é Deus.",
+      "d": "A salvação se revela \"no último tempo\", não toda agora."
+    },
+    "hint": "Veja quem está sendo guardado em 1:5.",
+    "learningObjective": "Relacionar a herança guardada com os herdeiros guardados.",
+    "evidence": [
+      "1 Pedro 1:4–5"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-05-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os movimentos de 1 Pedro 1:5–7?",
+    "prompt": "Como se encadeiam os movimentos de 1 Pedro 1:5–7?",
+    "cue": "Como se encadeiam os movimentos de 1 Pedro 1:5–7?",
+    "verseRef": "1 Pedro 1:6–7",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações. Para que a prova da vossa fé, muito mais preciosa do que o ouro que perece e é provado pelo fogo, redunde em louvor, glória e honra na revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus guarda os que creem até o fim"
+      },
+      {
+        "id": "b",
+        "text": "Os que creem passam por provações"
+      },
+      {
+        "id": "c",
+        "text": "A fé provada termina em louvor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "redunde em louvor, glória e honra",
+    "feedbackCorrect": "Guardados por Deus, provados por um tempo, e a fé termina em louvor.",
+    "feedbackWrong": {
+      "default": "A guarda de Deus vem primeiro (1:5); o louvor (1:7) é o ponto de chegada."
+    },
+    "hint": "Comece pelo que Deus faz em 1:5.",
+    "learningObjective": "Compreender o movimento da guarda à fé provada.",
+    "evidence": [
+      "1 Pedro 1:5–7"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-05-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Pedro 1:7, o que acontece com o ouro, em contraste com a fé?",
+    "prompt": "Em 1 Pedro 1:7, o que acontece com o ouro, em contraste com a fé?",
+    "cue": "Em 1 Pedro 1:7, o que acontece com o ouro, em contraste com a fé?",
+    "verseRef": "1 Pedro 1:7",
+    "passageText": "Para que a prova da vossa fé, muito mais preciosa do que o ouro que perece e é provado pelo fogo, redunde em louvor, glória e honra na revelação de Jesus Cristo.",
+    "template": "Para que a prova da vossa fé, muito mais preciosa do que o ouro que ___ e é provado pelo fogo, redunde em louvor, glória e honra na revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "brilha"
+      },
+      {
+        "id": "b",
+        "text": "cresce"
+      },
+      {
+        "id": "c",
+        "text": "perece"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o ouro que perece",
+    "feedbackCorrect": "O ouro acaba; a fé provada vale mais porque permanece.",
+    "feedbackWrong": {
+      "a": "Brilhar seria elogio; o texto mostra o limite do ouro.",
+      "b": "O ouro não cresce; o contraste é com algo que acaba."
+    },
+    "hint": "É o contrário de durar.",
+    "learningObjective": "Compreender o contraste entre o ouro e a fé provada.",
+    "evidence": [
+      "1 Pedro 1:7"
+    ]
+  },
+  {
+    "id": "ansiedade-cam-dor-ansia-05-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Pedro 1:6 a 2 Coríntios 4:17?",
+    "prompt": "O que liga 1 Pedro 1:6 a 2 Coríntios 4:17?",
+    "cue": "O que liga 1 Pedro 1:6 a 2 Coríntios 4:17?",
+    "verseRef": "1 Pedro 1:6",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações.",
+    "passageA": {
+      "ref": "1 Pedro 1:6",
+      "text": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 4:17",
+      "text": "Porque a nossa leve e momentânea tribulação produz para nós um eterno peso de glória, que excede toda comparação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória sem passar por aflição"
+      },
+      {
+        "id": "b",
+        "text": "Aflição sem nenhum sentido"
+      },
+      {
+        "id": "c",
+        "text": "Aflição breve, glória eterna"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por breve tempo",
+    "feedbackCorrect": "Pedro e Paulo medem a dor diante do futuro: breve perto da glória que vem.",
+    "feedbackWrong": {
+      "a": "Os dois admitem a aflição; a glória vem depois dela.",
+      "b": "Os dois textos dão sentido à aflição: ela não é a palavra final."
+    },
+    "hint": "Compare quanto dura a tristeza nos dois textos.",
+    "learningObjective": "Relacionar a tristeza breve de 1 Pedro com a glória de 2 Coríntios.",
+    "evidence": [
+      "1 Pedro 1:6",
+      "2 Coríntios 4:17"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-05-01",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "1 Pedro 1:6–7 permite ver a provação como algo que Deus usa, e não como sinal de que ele abandonou quem sofre.",
+    "prompt": "1 Pedro 1:6–7 permite ver a provação como algo que Deus usa, e não como sinal de que ele abandonou quem sofre.",
+    "cue": "1 Pedro 1:6–7 permite ver a provação como algo que Deus usa, e não como sinal de que ele abandonou quem sofre.",
+    "verseRef": "1 Pedro 1:6–7",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações. Para que a prova da vossa fé, muito mais preciosa do que o ouro que perece e é provado pelo fogo, redunde em louvor, glória e honra na revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Para que a prova da vossa fé",
+    "feedbackCorrect": "O \"para que\" dá propósito à provação: ela não é abandono, acontece sob a guarda de Deus.",
+    "feedbackWrong": {
+      "false": "Pedro dá um propósito à provação (\"para que\"); o texto não a trata como abandono."
+    },
+    "hint": "Repare em como começa 1:7.",
+    "learningObjective": "Interpretar a provação dentro da guarda de Deus.",
+    "evidence": [
+      "1 Pedro 1:6–7"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-05-02",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 1:5, toque o trecho que mostra de quem é a força que guarda os que creem.",
+    "prompt": "Em 1 Pedro 1:5, toque o trecho que mostra de quem é a força que guarda os que creem.",
+    "cue": "Em 1 Pedro 1:5, toque o trecho que mostra de quem é a força que guarda os que creem.",
+    "verseRef": "1 Pedro 1:5",
+    "passageText": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder de Deus"
+      },
+      {
+        "id": "b",
+        "text": "pela fé"
+      },
+      {
+        "id": "c",
+        "text": "último tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "guardados pelo poder de Deus",
+    "feedbackCorrect": "A segurança não depende da força de quem crê: quem guarda é Deus.",
+    "feedbackWrong": {
+      "b": "A fé é o meio pelo qual se recebe a guarda; a força vem de outro.",
+      "c": "\"Último tempo\" diz quando a salvação se revela, não quem guarda."
+    },
+    "hint": "Procure quem guarda, não o meio.",
+    "learningObjective": "Sustentar com o texto que Deus é quem guarda os que creem.",
+    "evidence": [
+      "1 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-05-03",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Pedro 1:6 sustenta sobre tristeza e esperança?",
+    "prompt": "Que leitura 1 Pedro 1:6 sustenta sobre tristeza e esperança?",
+    "cue": "Que leitura 1 Pedro 1:6 sustenta sobre tristeza e esperança?",
+    "verseRef": "1 Pedro 1:6",
+    "passageText": "Nisso vocês exultam, embora, no presente, se necessário, estejam por breve tempo entristecidos por diversas provações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A esperança pode exultar mesmo com lágrimas"
+      },
+      {
+        "id": "b",
+        "text": "A tristeza prova que a fé é fraca"
+      },
+      {
+        "id": "c",
+        "text": "A provação mostra que Deus se afastou"
+      },
+      {
+        "id": "d",
+        "text": "Quem tem esperança não deveria ficar triste"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Nisso vocês exultam, embora",
+    "feedbackCorrect": "Pedro junta alegria e tristeza no mesmo versículo, sem repreender quem chora.",
+    "feedbackWrong": {
+      "b": "Pedro não chama a tristeza de fé fraca; chama a fé de preciosa (1:7).",
+      "c": "Os que sofrem estão sendo guardados por Deus (1:5).",
+      "d": "O texto diz que eles exultam embora entristecidos; as duas convivem."
+    },
+    "hint": "Veja as duas coisas que o versículo junta.",
+    "learningObjective": "Escolher a leitura de 1 Pedro 1:6 que o texto sustenta.",
+    "evidence": [
+      "1 Pedro 1:6"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-05-04",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da fé em 1 Pedro 1:3–9?",
+    "prompt": "Qual sequência revela o caminho da fé em 1 Pedro 1:3–9?",
+    "cue": "Qual sequência revela o caminho da fé em 1 Pedro 1:3–9?",
+    "verseRef": "1 Pedro 1:8–9",
+    "passageText": "A quem, não o tendo visto, amais; no qual, não vendo agora, mas crendo, exultais com uma alegria indizível e cheia de glória; Alcançando o fim da vossa fé: a salvação das vossas almas",
+    "options": [
+      {
+        "id": "a",
+        "text": "A misericórdia de Deus dá um novo começo"
+      },
+      {
+        "id": "b",
+        "text": "A fé é provada em meio à tristeza"
+      },
+      {
+        "id": "c",
+        "text": "A fé chega ao seu fim, a salvação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Alcançando o fim da vossa fé",
+    "feedbackCorrect": "Do novo nascimento à salvação final, passando pela prova: a fé tem começo, caminho e fim.",
+    "feedbackWrong": {
+      "default": "Comece pela misericórdia (1:3); a salvação das almas (1:9) é o fim do caminho."
+    },
+    "hint": "Siga de 1:3 a 1:9.",
+    "learningObjective": "Ver o caminho da fé do começo ao fim em 1 Pedro 1.",
+    "evidence": [
+      "1 Pedro 1:3",
+      "1 Pedro 1:6–7",
+      "1 Pedro 1:9"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-05-05",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Pedro 1:3, que tipo de esperança Deus nos dá ao nos regenerar?",
+    "prompt": "Em 1 Pedro 1:3, que tipo de esperança Deus nos dá ao nos regenerar?",
+    "cue": "Em 1 Pedro 1:3, que tipo de esperança Deus nos dá ao nos regenerar?",
+    "verseRef": "1 Pedro 1:3",
+    "passageText": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma viva esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "template": "Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua muita misericórdia, nos regenerou para uma ___ esperança, mediante a ressurreição de Jesus Cristo dentre os mortos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vaga"
+      },
+      {
+        "id": "b",
+        "text": "frágil"
+      },
+      {
+        "id": "c",
+        "text": "viva"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos regenerou para uma viva esperança",
+    "feedbackCorrect": "A esperança não morre porque se apoia em Jesus, que ressuscitou dentre os mortos.",
+    "feedbackWrong": {
+      "a": "Não é vaga: tem fundamento na ressurreição de Jesus.",
+      "b": "Não é frágil: nasce do poder que ressuscitou Jesus."
+    },
+    "hint": "Pense no que a ressurreição traz de volta.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da esperança cristã.",
+    "evidence": [
+      "1 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "ansiedade-pro-dor-ansia-05-06",
+    "trail": "ansiedade",
+    "section": "dor-ansia-05",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Pedro 1:5 a João 10:28?",
+    "prompt": "O que liga 1 Pedro 1:5 a João 10:28?",
+    "cue": "O que liga 1 Pedro 1:5 a João 10:28?",
+    "verseRef": "1 Pedro 1:5",
+    "passageText": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo.",
+    "passageA": {
+      "ref": "1 Pedro 1:5",
+      "text": "Que, pela fé, vocês estão sendo guardados pelo poder de Deus, para a salvação que está prestes a se revelar no último tempo."
+    },
+    "passageB": {
+      "ref": "João 10:28",
+      "text": "E lhes dou a vida eterna; jamais se perderão, e ninguém as arrebatará da minha mão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A salvação depende só de nós"
+      },
+      {
+        "id": "b",
+        "text": "Ninguém arranca quem Deus guarda"
+      },
+      {
+        "id": "c",
+        "text": "Deus guarda só os mais fortes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "guardados pelo poder de Deus",
+    "feedbackCorrect": "Pedro diz que Deus guarda; Jesus diz que ninguém arrebata suas ovelhas da sua mão.",
+    "feedbackWrong": {
+      "a": "Os dois textos põem a guarda em Deus, não em nós.",
+      "c": "Jesus fala de todas as suas ovelhas, não só das fortes."
+    },
+    "hint": "Compare quem segura e quem tenta tirar.",
+    "learningObjective": "Ligar a guarda de 1 Pedro à promessa de Jesus em João 10.",
+    "evidence": [
+      "1 Pedro 1:5",
+      "João 10:28"
+    ]
+  }
+]

@@ -58,6 +58,7 @@ void main() {
   test('card da Bíblia é grátis: AT e NT não pedem Plus', () {
     for (final (realm, category) in [
       (TrailRealm.antigoTestamento.id, 'pentateuco'),
+      (TrailRealm.antigoTestamento.id, 'poeticos'),
       (TrailRealm.antigoTestamento.id, 'profetas-menores'),
       (TrailRealm.novoTestamento.id, 'evangelhos'),
       (TrailRealm.novoTestamento.id, 'epistolas'),
@@ -69,19 +70,12 @@ void main() {
     }
   });
 
-  test('Sabedoria e os temas são Plus, com a 1ª cena de amostra', () {
-    final wisdom = _trail(
-      TrailRealm.antigoTestamento.id,
-      categoryId: 'poeticos',
-    );
-    expect(wisdom.journey, TrailJourney.sabedoria);
-    expect(PlusAccess.trailIsPlus(wisdom), isTrue);
-    expect(PlusAccess.missionNeedsPlus(wisdom, 'm1'), isFalse);
-    expect(PlusAccess.missionNeedsPlus(wisdom, 'm2'), isTrue);
-
+  test('temáticos são Plus, com a 1ª cena de amostra', () {
     final themes = _trail(TrailRealm.novoTestamento.id, categoryId: 'panorama');
     expect(themes.journey, TrailJourney.panorama);
     expect(PlusAccess.trailIsPlus(themes), isTrue);
+    expect(PlusAccess.missionNeedsPlus(themes, 'm1'), isFalse);
+    expect(PlusAccess.missionNeedsPlus(themes, 'm2'), isTrue);
   });
 
   test('tema é Plus, com a 1ª cena de amostra', () {

@@ -1,0 +1,410 @@
+{
+ "study": {
+  "passageRef": "Mateus 6:25–30",
+  "passages": [
+   { "ref": "Mateus 6:25–30" },
+   { "ref": "Mateus 6:31–34" },
+   { "ref": "Mateus 6:19–24" }
+  ],
+  "context": "Jesus fala no Sermão do Monte a gente simples, que dependia da colheita e do salário do dia. Antes de falar de ansiedade, ele fala de tesouros e de senhores: o que a pessoa guarda como tesouro acaba governando o coração.",
+  "keyword": "Tesouro",
+  "keywordGloss": "Aquilo que a pessoa guarda como mais valioso; para Jesus, ele puxa o coração e pode virar senhor.",
+  "focusQuestion": "O que você tem guardado como tesouro, e que preocupação isso traz para o seu amanhã?",
+  "reflectionPrompts": ["O que puxa meu coração", "O Pai sabe", "Um dia de cada vez"],
+  "facts": [
+   { "text": "Onde está o tesouro, ali está o coração.", "evidenceRef": "Mateus 6:21", "evidenceSpan": "onde estiver o seu tesouro, ali estará também o seu coração" },
+   { "text": "Ninguém pode servir a Deus e às riquezas.", "evidenceRef": "Mateus 6:24", "evidenceSpan": "Não podem servir a Deus e às riquezas" },
+   { "text": "As aves não semeiam nem colhem, e o Pai as sustenta.", "evidenceRef": "Mateus 6:26", "evidenceSpan": "o seu Pai celestial as sustenta" },
+   { "text": "A preocupação não acrescenta um côvado à vida.", "evidenceRef": "Mateus 6:27", "evidenceSpan": "pode acrescentar um côvado à duração da sua vida" },
+   { "text": "O Pai sabe do que os discípulos necessitam.", "evidenceRef": "Mateus 6:32", "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas" },
+   { "text": "Cada dia já traz o seu próprio mal.", "evidenceRef": "Mateus 6:34", "evidenceSpan": "basta a cada dia o seu próprio mal" }
+  ],
+  "keyTerms": [
+   { "term": "tesouro", "gloss": "O que a pessoa guarda como mais valioso; para onde ele vai, o coração vai junto." },
+   { "term": "ansiosos", "gloss": "Preocupação que domina e divide a pessoa, puxada para o amanhã." },
+   { "term": "justiça", "gloss": "O que Deus considera reto; buscá-la junto com o reino é querer o que ele quer." }
+  ],
+  "structure": [
+   { "label": "O tesouro decide para onde vai o coração", "evidenceRef": "Mateus 6:21" },
+   { "label": "As riquezas disputam o lugar de Deus", "evidenceRef": "Mateus 6:24" },
+   { "label": "O Pai que sustenta aves e veste lírios", "evidenceRef": "Mateus 6:26–30" },
+   { "label": "Buscar o reino e viver um dia de cada vez", "evidenceRef": "Mateus 6:33–34" }
+  ],
+  "relations": [
+   { "kind": "causa", "text": "O \"Por isso\" faz da ansiedade uma consequência de servir às riquezas: quem tem dois senhores vive dividido.", "marker": "Por isso", "evidenceRef": "Mateus 6:25" },
+   { "kind": "contraste", "text": "Se Deus veste a erva que dura um dia, quanto mais cuidará dos seus filhos.", "marker": "quanto mais", "evidenceRef": "Mateus 6:30" },
+   { "kind": "resultado", "text": "Quem busca primeiro o reino recebe também o que precisa para viver.", "marker": null, "evidenceRef": "Mateus 6:33" }
+  ],
+  "crossRefs": [
+   { "ref": "Salmos 147:9", "bridge": "Deus sustenta até os filhotes" },
+   { "ref": "1 Pedro 5:7", "bridge": "Preocupação entregue a quem se importa" },
+   { "ref": "Lucas 12:15", "bridge": "A vida não está nos bens" }
+  ],
+  "misreadings": [
+   { "text": "Jesus proíbe trabalhar, planejar ou poupar.", "why": "O alvo é a ansiedade que governa a vida, não o trabalho; as aves são exemplo do cuidado do Pai, não ordem para parar." },
+   { "text": "Quem busca o reino nunca mais vai passar necessidade.", "why": "Jesus diz que cada dia traz seu próprio mal; a promessa é o cuidado do Pai, não a ausência de luta." },
+   { "text": "Sentir preocupação é sinal de que a pessoa não tem fé nenhuma.", "why": "Jesus fala com discípulos de \"pequena fé\", não sem fé; ele os chama a olhar para o Pai, não os rejeita." }
+  ],
+  "centralInsight": "O tesouro puxa o coração",
+  "anchorQuestion": "Segundo Mateus 6:32, por que os discípulos não precisam viver ansiosos pelo sustento?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 6:28, Jesus manda observar como os lírios do campo crescem.",
+   "verseRef": "Mateus 6:28",
+   "correctOptionId": "true",
+   "evidenceSpan": "Observem como os lírios do campo crescem",
+   "feedbackCorrect": "Jesus aponta os lírios: eles não trabalham nem fiam, e mesmo assim crescem.",
+   "feedbackWrong": { "false": "Releia Mateus 6:28: \"Observem como os lírios do campo crescem\"." },
+   "hint": "Veja a segunda frase do versículo.",
+   "learningObjective": "Observar a imagem que Jesus usa contra a ansiedade pela roupa.",
+   "evidence": ["Mateus 6:28"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:24, toque o outro senhor que Jesus põe ao lado de Deus.",
+   "verseRef": "Mateus 6:24",
+   "options": [
+    { "id": "a", "text": "Ninguém" },
+    { "id": "b", "text": "riquezas" },
+    { "id": "c", "text": "desprezará" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Não podem servir a Deus e às riquezas",
+   "feedbackCorrect": "As riquezas aparecem como senhor rival: quem as serve não serve a Deus por inteiro.",
+   "feedbackWrong": {
+    "a": "\"Ninguém\" abre a frase; não é o senhor rival de Deus.",
+    "c": "\"Desprezará\" é o que acontece com um dos senhores, não o nome dele."
+   },
+   "hint": "Olhe a última frase do versículo.",
+   "learningObjective": "Identificar as riquezas como senhor rival de Deus.",
+   "evidence": ["Mateus 6:24"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 6:27, o que a preocupação não consegue acrescentar?",
+   "verseRef": "Mateus 6:27",
+   "options": [
+    { "id": "a", "text": "Um côvado à duração da vida" },
+    { "id": "b", "text": "Mais comida ao celeiro" },
+    { "id": "c", "text": "Mais beleza que a de Salomão" },
+    { "id": "d", "text": "Mais fé ao coração" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pode acrescentar um côvado à duração da sua vida",
+   "feedbackCorrect": "Jesus pergunta quem, por mais que se preocupe, aumenta a própria vida: ninguém.",
+   "feedbackWrong": {
+    "b": "Celeiros aparecem em 6:26, ligados às aves, não à preocupação.",
+    "c": "Salomão aparece em 6:29, comparado aos lírios.",
+    "d": "O versículo fala da duração da vida, não de fé."
+   },
+   "hint": "Leia o fim da pergunta de Jesus.",
+   "learningObjective": "Observar o que Jesus diz sobre o limite da preocupação.",
+   "evidence": ["Mateus 6:27"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 6:34 na ordem do texto.",
+   "verseRef": "Mateus 6:34",
+   "options": [
+    { "id": "a", "text": "Não se preocupem com o amanhã" },
+    { "id": "b", "text": "pois o amanhã trará suas próprias preocupações" },
+    { "id": "c", "text": "basta a cada dia o seu próprio mal" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "basta a cada dia o seu próprio mal",
+   "feedbackCorrect": "Primeiro o pedido, depois o motivo, e por fim o limite: cada dia com o seu mal.",
+   "feedbackWrong": { "default": "Comece pelo pedido de não se preocupar; o \"basta a cada dia\" fecha o versículo." },
+   "hint": "O versículo começa com um pedido.",
+   "learningObjective": "Reconhecer a sequência de Mateus 6:34.",
+   "evidence": ["Mateus 6:34"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 6:26, onde as aves não ajuntam nada?",
+   "verseRef": "Mateus 6:26",
+   "options": [
+    { "id": "a", "text": "celeiros" },
+    { "id": "b", "text": "ninhos" },
+    { "id": "c", "text": "campos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nem ajuntam em celeiros",
+   "feedbackCorrect": "As aves não guardam colheita, e mesmo assim o Pai as sustenta.",
+   "feedbackWrong": {
+    "b": "Ninhos não aparecem no versículo; o texto fala de onde se guarda colheita.",
+    "c": "Os campos aparecem com os lírios, em 6:28."
+   },
+   "hint": "Pense no lugar onde se guarda a colheita.",
+   "learningObjective": "Lembrar o detalhe que liga as aves ao tema de acumular.",
+   "evidence": ["Mateus 6:26"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 6:32 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 6:32",
+   "passageA": { "ref": "Mateus 6:32" },
+   "passageB": { "ref": "Contexto", "text": "Os ouvintes de Jesus viviam do trabalho do dia e se perguntavam o que iam comer e vestir." },
+   "options": [
+    { "id": "a", "text": "O Pai conhece essas necessidades" },
+    { "id": "b", "text": "Essas necessidades não importam" },
+    { "id": "c", "text": "Quem crê não tem necessidades" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o seu Pai celeste sabe",
+   "feedbackCorrect": "Jesus não diz que comida e roupa não importam: diz que o Pai sabe que precisamos delas.",
+   "feedbackWrong": {
+    "b": "Jesus chama essas coisas de necessidades; ele não as despreza.",
+    "c": "O texto diz \"vocês necessitam\": a necessidade é real."
+   },
+   "hint": "Repare no que o Pai sabe.",
+   "learningObjective": "Ligar Mateus 6:32 às preocupações concretas dos ouvintes.",
+   "evidence": ["Mateus 6:32"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 6:24–25, o pedido de não ficar ansioso aparece solto, sem ligação com o que Jesus disse sobre as riquezas.",
+   "verseRef": "Mateus 6:24–25",
+   "correctOptionId": "false",
+   "evidenceSpan": "Por isso, eu digo a vocês",
+   "feedbackCorrect": "O \"Por isso\" amarra os dois: quem serve às riquezas acaba ansioso pelo amanhã.",
+   "feedbackWrong": { "true": "Repare no começo de 6:25: \"Por isso\" liga a ansiedade ao que veio antes." },
+   "hint": "Olhe as duas primeiras palavras de 6:25.",
+   "learningObjective": "Compreender a ligação entre servir às riquezas e viver ansioso.",
+   "evidence": ["Mateus 6:24–25"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:30, toque as palavras que levam o argumento do menor para o maior.",
+   "verseRef": "Mateus 6:30",
+   "options": [
+    { "id": "a", "text": "hoje existe" },
+    { "id": "b", "text": "quanto mais" },
+    { "id": "c", "text": "pequena fé" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "quanto mais a vocês",
+   "feedbackCorrect": "Se Deus cuida da erva de um dia, cuidará muito mais dos seus filhos.",
+   "feedbackWrong": {
+    "a": "\"Hoje existe\" descreve a erva passageira; o argumento vira depois.",
+    "c": "\"Pequena fé\" é o diagnóstico de Jesus, não o ponto de virada do argumento."
+   },
+   "hint": "Procure a comparação perto do fim do versículo.",
+   "learningObjective": "Reconhecer o argumento do menor para o maior.",
+   "evidence": ["Mateus 6:30"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Mateus 6:24 prepara o que Jesus diz sobre ansiedade em 6:25?",
+   "verseRef": "Mateus 6:24–25",
+   "options": [
+    { "id": "a", "text": "Quem serve às riquezas vive ansioso por elas" },
+    { "id": "b", "text": "Todo dinheiro é pecado e deve ser evitado" },
+    { "id": "c", "text": "Trabalhar mais é o caminho para não temer" },
+    { "id": "d", "text": "O assunto muda do coração para o corpo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não podem servir a Deus e às riquezas",
+   "feedbackCorrect": "O senhor que domina o coração também dita as preocupações; por isso Jesus liga os dois.",
+   "feedbackWrong": {
+    "b": "Jesus fala de servir às riquezas como senhor, não de condenar todo dinheiro.",
+    "c": "O texto não manda trabalhar mais; aponta para o Pai que sustenta.",
+    "d": "Corpo e vestes entram como exemplo de preocupação, não como novo assunto."
+   },
+   "hint": "Pense no que significa ter as riquezas como senhor.",
+   "learningObjective": "Relacionar o senhorio das riquezas com a ansiedade.",
+   "evidence": ["Mateus 6:24–25"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos de Mateus 6:31–33?",
+   "verseRef": "Mateus 6:31–32",
+   "options": [
+    { "id": "a", "text": "Parar as perguntas aflitas sobre comida e roupa" },
+    { "id": "b", "text": "Lembrar que o Pai já conhece cada necessidade" },
+    { "id": "c", "text": "Pôr o reino de Deus em primeiro lugar" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Pois o seu Pai celeste sabe",
+   "feedbackCorrect": "Jesus troca as perguntas aflitas pela lembrança do Pai, e daí pela busca do reino.",
+   "feedbackWrong": { "default": "O motivo vem no meio (o Pai sabe); a busca do reino é o ponto de chegada." },
+   "hint": "O \"Pois\" de 6:32 explica o pedido de 6:31.",
+   "learningObjective": "Compreender como o argumento passa da preocupação à busca do reino.",
+   "evidence": ["Mateus 6:31–33"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 6:33, o que acontece com as outras coisas para quem busca primeiro o reino?",
+   "verseRef": "Mateus 6:33",
+   "options": [
+    { "id": "a", "text": "acrescentadas" },
+    { "id": "b", "text": "tiradas" },
+    { "id": "c", "text": "cobradas" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todas essas coisas lhes serão acrescentadas",
+   "feedbackCorrect": "Elas vêm junto: o reino não tira o sustento, ele o põe no lugar certo.",
+   "feedbackWrong": {
+    "b": "O texto promete o contrário: nada é tirado de quem busca o reino.",
+    "c": "Não há cobrança; o verbo fala de algo dado a mais."
+   },
+   "hint": "O verbo indica algo que vem a mais.",
+   "learningObjective": "Compreender o resultado de buscar primeiro o reino.",
+   "evidence": ["Mateus 6:33"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 6:26 a Salmos 147:9?",
+   "verseRef": "Mateus 6:26",
+   "passageA": { "ref": "Mateus 6:26" },
+   "passageB": { "ref": "Salmos 147:9" },
+   "options": [
+    { "id": "a", "text": "Deus sustenta até os filhotes" },
+    { "id": "b", "text": "As aves trabalham pelo sustento" },
+    { "id": "c", "text": "Os animais valem mais que nós" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o seu Pai celestial as sustenta",
+   "feedbackCorrect": "Jesus ecoa o salmo: Deus alimenta até os filhotes dos corvos, e muito mais seus filhos.",
+   "feedbackWrong": {
+    "b": "Os dois textos destacam o sustento dado por Deus, não o esforço das aves.",
+    "c": "Jesus diz o contrário: vocês valem muito mais do que elas."
+   },
+   "hint": "Compare quem alimenta as aves nos dois textos.",
+   "learningObjective": "Relacionar o cuidado do Pai em Mateus com o louvor do salmo.",
+   "evidence": ["Mateus 6:26", "Salmos 147:9"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 6:31–32, Jesus não nega as necessidades; ele as coloca sob o cuidado do Pai que as conhece.",
+   "verseRef": "Mateus 6:31–32",
+   "correctOptionId": "true",
+   "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas",
+   "feedbackCorrect": "O texto chama comida e roupa de necessidades reais e as entrega ao Pai que sabe delas.",
+   "feedbackWrong": { "false": "Jesus diz \"vocês necessitam\": a necessidade é real; a resposta é o Pai, não a negação." },
+   "hint": "Veja quem sabe das necessidades em 6:32.",
+   "learningObjective": "Interpretar que o cuidado do Pai, e não a ausência de necessidade, responde à ansiedade.",
+   "evidence": ["Mateus 6:31–32"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:24, toque o trecho que mostra as riquezas disputando o lugar de Deus.",
+   "verseRef": "Mateus 6:24",
+   "options": [
+    { "id": "a", "text": "Ninguém" },
+    { "id": "b", "text": "dois senhores" },
+    { "id": "c", "text": "aborrecer-se" }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Ninguém pode servir a dois senhores",
+   "feedbackCorrect": "As riquezas não são só coisas: podem virar um senhor que pede o coração.",
+   "feedbackWrong": {
+    "a": "\"Ninguém\" diz que é impossível; quem disputa o lugar de Deus vem depois.",
+    "c": "\"Aborrecer-se\" mostra o efeito da divisão, não quem está em disputa."
+   },
+   "hint": "Procure quem está em disputa no começo do versículo.",
+   "learningObjective": "Sustentar com o texto que as riquezas podem virar senhor.",
+   "evidence": ["Mateus 6:24"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 6:34 sustenta para quem vive ansioso pelo amanhã?",
+   "verseRef": "Mateus 6:33–34",
+   "options": [
+    { "id": "a", "text": "Hoje se vive o dia; o amanhã fica com o Pai" },
+    { "id": "b", "text": "Planejar o futuro é sempre falta de fé" },
+    { "id": "c", "text": "Quem confia em Deus não terá problemas amanhã" },
+    { "id": "d", "text": "Cada um carrega sozinho os males de cada dia" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não se preocupem com o amanhã",
+   "feedbackCorrect": "Jesus admite que cada dia tem seu mal, mas tira do hoje o peso do amanhã.",
+   "feedbackWrong": {
+    "b": "Jesus fala da ansiedade que domina, não proíbe planejar com cuidado.",
+    "c": "O próprio versículo diz que cada dia traz o seu mal.",
+    "d": "O contexto é o Pai que sabe e sustenta; ninguém está sozinho."
+   },
+   "hint": "Repare no que Jesus admite sobre cada dia.",
+   "learningObjective": "Escolher a leitura de Mateus 6:34 que o texto sustenta.",
+   "evidence": ["Mateus 6:33–34"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a lógica de Mateus 6:21–25?",
+   "verseRef": "Mateus 6:21",
+   "options": [
+    { "id": "a", "text": "O que eu guardo como tesouro puxa meu coração" },
+    { "id": "b", "text": "O coração puxado escolhe a quem servir" },
+    { "id": "c", "text": "Servir às riquezas gera ansiedade pelo sustento" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "ali estará também o seu coração",
+   "feedbackCorrect": "Tesouro, senhor e ansiedade formam uma corrente: o que guardo decide o que temo.",
+   "feedbackWrong": { "default": "Comece pelo tesouro (6:21); a ansiedade (6:25) é o fim da corrente." },
+   "hint": "Siga o texto: tesouro, depois senhores, depois ansiedade.",
+   "learningObjective": "Ver a lógica que liga tesouro, senhorio e ansiedade.",
+   "evidence": ["Mateus 6:21", "Mateus 6:24", "Mateus 6:25"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 6:33, o que se busca junto com o reino de Deus?",
+   "verseRef": "Mateus 6:33",
+   "options": [
+    { "id": "a", "text": "justiça" },
+    { "id": "b", "text": "riqueza" },
+    { "id": "c", "text": "glória" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o reino de Deus e a sua justiça",
+   "feedbackCorrect": "Reino e justiça andam juntos: buscar a Deus é querer o que ele considera certo.",
+   "feedbackWrong": {
+    "b": "Riqueza é justamente o senhor rival de 6:24.",
+    "c": "O texto fala do que Deus considera reto, não de glória."
+   },
+   "hint": "É o que Deus considera reto.",
+   "learningObjective": "Lembrar o termo que acompanha o reino na busca do discípulo.",
+   "evidence": ["Mateus 6:33"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+   "verseRef": "Mateus 6:32",
+   "passageA": { "ref": "Mateus 6:32" },
+   "passageB": { "ref": "1 Pedro 5:7" },
+   "options": [
+    { "id": "a", "text": "Preocupação entregue a quem se importa" },
+    { "id": "b", "text": "Deus ignora as nossas preocupações" },
+    { "id": "c", "text": "Preocupar-se é proibido para cristãos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o seu Pai celeste sabe",
+   "feedbackCorrect": "Pedro ecoa Jesus: a preocupação vai para Deus, porque ele se importa com vocês.",
+   "feedbackWrong": {
+    "b": "Os dois textos dizem o contrário: o Pai sabe e se importa.",
+    "c": "Pedro não proíbe; convida a lançar a preocupação sobre Deus."
+   },
+   "hint": "Veja o motivo que Pedro dá para lançar a preocupação.",
+   "learningObjective": "Ligar o cuidado do Pai em Mateus ao convite de 1 Pedro.",
+   "evidence": ["Mateus 6:32", "1 Pedro 5:7"]
+  }
+ ]
+}

@@ -1821,7 +1821,7 @@
     }
   },
   "growthHintDayZero": "dia 0",
-  "growthNextIn": "{count, plural, =1{Próximo: {stage} · faltam 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}",
+  "growthNextIn": "{count, plural, =1{Próximo: {stage} · falta 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}",
   "@growthNextIn": {
     "placeholders": {
       "stage": {
@@ -2258,7 +2258,7 @@
   "inviteSomeone": "Alguém",
   "journalEmpty": "Ao fixar uma cena, sua resposta fica registrada aqui.",
   "journalTitle": "Anotações de estudo",
-  "journeyAntigoTestamentoBody": "De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.",
+  "journeyAntigoTestamentoBody": "De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.",
   "journeyBeyondHorizon": "Ainda além do horizonte",
   "@journeyBeyondHorizon": {
     "description": "Locked trail on the area path"
@@ -2311,8 +2311,6 @@
   "@journeyPlusCtaDetail": {
     "description": "Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue."
   },
-  "journeySabedoriaBody": "Jó, Salmos, Provérbios, Eclesiastes e Cantares. A dor que pergunta, a oração que canta, o conselho para cada dia e o amor: a fé vivida no chão da vida.",
-  "journeySabedoriaTitle": "Sabedoria",
   "journeyScenesLeft": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
   "@journeyScenesLeft": {
     "placeholders": {
@@ -2978,6 +2976,14 @@
   "lessonLocked": "Esta cena ainda está bloqueada.",
   "lessonMicroSubtitle": "Complete o verso",
   "lessonPassageTitle": "Texto da cena",
+  "lessonPlusGrantedBy": "{name} liberou esta cena do Peregrino+ para você.",
+  "@lessonPlusGrantedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "lessonPractice": "Treino",
   "lessonQuestionProgress": "Pergunta {current} de {total}",
   "@lessonQuestionProgress": {
@@ -4313,7 +4319,7 @@
   "paywallPerkSeasonTitle": "Trilhas da estação",
   "paywallPerkStreakBody": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
   "paywallPerkStreakTitle": "Seus dias",
-  "paywallPerkThemesBody": "Sermão do Monte, Oração, Família, Ansiedade e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.",
+  "paywallPerkThemesBody": "Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.",
   "paywallPerkThemesTitle": "Trilhas por tema",
   "paywallPerkWeeklyBody": "Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.",
   "paywallPerkWeeklyTitle": "Revisão da semana",
@@ -5039,7 +5045,7 @@
       }
     }
   },
-  "profileStreakRemaining": "Faltam {left} para o compromisso de {goal} dias.",
+  "profileStreakRemaining": "{left, plural, =1{Falta 1 para o compromisso de {goal} dias.} other{Faltam {left} para o compromisso de {goal} dias.}}",
   "@profileStreakRemaining": {
     "placeholders": {
       "left": {
@@ -6160,7 +6166,7 @@
   "trailsDoorIntroLabel": "Antes de começar",
   "trailsDoorIntroLife": "A fé no dia a dia. Discipulado, oração e a história da igreja: como seguir Jesus hoje, como orar e como a fé chegou até nós.",
   "trailsDoorIntroStudy": "Ferramentas para ler a Bíblia com mais cuidado: hermenêutica, hebraico e grego, doutrina e a pessoa de Cristo, sempre a partir do próprio texto.",
-  "trailsDoorIntroThemes": "A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas, as parábolas e a sabedoria. Cada trilha segue um fio por vários livros.",
+  "trailsDoorIntroThemes": "A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.",
   "trailsDownloading": "Baixando…",
   "trailsEmptyBody": "O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.",
   "trailsEmptyTitle": "As cenas ainda não chegaram",

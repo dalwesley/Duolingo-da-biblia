@@ -1,0 +1,408 @@
+{
+ "study": {
+  "passageRef": "1 Pedro 1:3–7",
+  "passages": [
+   { "ref": "1 Pedro 1:3–7" },
+   { "ref": "1 Pedro 1:8–9" }
+  ],
+  "context": "Pedro escreve a cristãos espalhados pela Ásia Menor (1 Pedro 1:1), que sofriam hostilidade por causa da fé. Antes de falar do sofrimento, ele os lembra do que nada pode tirar deles.",
+  "keyword": "Herança guardada",
+  "keywordGloss": "O que Deus reservou para os seus nos céus, guardado por ele, assim como ele guarda os próprios herdeiros.",
+  "focusQuestion": "Que preocupação perde força quando você lembra que Deus guarda a sua herança e guarda você?",
+  "reflectionPrompts": ["Uma esperança viva", "Guardados por Deus", "Tristeza por breve tempo"],
+  "facts": [
+   { "text": "Deus nos regenerou segundo a sua muita misericórdia.", "evidenceRef": "1 Pedro 1:3", "evidenceSpan": "segundo a sua muita misericórdia, nos regenerou" },
+   { "text": "A herança está reservada nos céus.", "evidenceRef": "1 Pedro 1:4", "evidenceSpan": "reservada nos céus para vocês" },
+   { "text": "Os que creem estão sendo guardados pelo poder de Deus.", "evidenceRef": "1 Pedro 1:5", "evidenceSpan": "vocês estão sendo guardados pelo poder de Deus" },
+   { "text": "Os leitores exultam, embora entristecidos por provações.", "evidenceRef": "1 Pedro 1:6", "evidenceSpan": "estejam por breve tempo entristecidos por diversas provações" },
+   { "text": "A fé provada é mais preciosa que o ouro.", "evidenceRef": "1 Pedro 1:7", "evidenceSpan": "muito mais preciosa do que o ouro que perece" }
+  ],
+  "keyTerms": [
+   { "term": "viva esperança", "gloss": "Esperança que não morre, porque se apoia em Jesus, que ressuscitou e vive." },
+   { "term": "herança", "gloss": "O que Deus reservou para os seus; não se estraga, não se mancha, não murcha." },
+   { "term": "guardados", "gloss": "Protegidos pelo poder de Deus, como uma cidade vigiada, até a salvação final." }
+  ],
+  "structure": [
+   { "label": "Louvor pelo novo nascimento", "evidenceRef": "1 Pedro 1:3" },
+   { "label": "Uma herança que não se estraga", "evidenceRef": "1 Pedro 1:4" },
+   { "label": "Guardados até a salvação final", "evidenceRef": "1 Pedro 1:5" },
+   { "label": "Alegria que atravessa a tristeza", "evidenceRef": "1 Pedro 1:6–7" }
+  ],
+  "relations": [
+   { "kind": "contraste", "text": "A alegria convive com a tristeza das provações.", "marker": "embora", "evidenceRef": "1 Pedro 1:6" },
+   { "kind": "propósito", "text": "As provações servem para que a fé provada resulte em louvor.", "marker": "Para que", "evidenceRef": "1 Pedro 1:7" },
+   { "kind": "causa", "text": "A esperança é viva porque Jesus ressuscitou dentre os mortos.", "marker": "mediante", "evidenceRef": "1 Pedro 1:3" }
+  ],
+  "crossRefs": [
+   { "ref": "2 Coríntios 4:17", "bridge": "Aflição breve, glória eterna" },
+   { "ref": "João 10:28", "bridge": "Ninguém arranca quem Deus guarda" },
+   { "ref": "Romanos 8:18", "bridge": "Sofrimento presente, glória revelada" }
+  ],
+  "misreadings": [
+   { "text": "Quem tem esperança não deveria ficar triste.", "why": "Pedro diz que eles exultam embora estejam entristecidos: as duas coisas convivem." },
+   { "text": "A segurança da salvação depende da força dos meus sentimentos.", "why": "Os crentes são guardados \"pelo poder de Deus\"; a fé recebe essa guarda, não a produz." },
+   { "text": "As provações mostram que Deus abandonou quem sofre.", "why": "Pedro fala das provações dentro da guarda de Deus e com um propósito: a fé provada resulta em louvor." }
+  ],
+  "centralInsight": "A herança está guardada",
+  "anchorQuestion": "Em 1 Pedro 1:4–5, o que está guardado além da herança?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em 1 Pedro 1:6, Pedro diz que os leitores estão entristecidos por diversas provações.",
+   "verseRef": "1 Pedro 1:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "entristecidos por diversas provações",
+   "feedbackCorrect": "Pedro não esconde a dor: os leitores estão tristes por causa de diversas provações.",
+   "feedbackWrong": { "false": "Releia o fim de 1 Pedro 1:6: \"entristecidos por diversas provações\"." },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Observar que Pedro reconhece a tristeza dos leitores.",
+   "evidence": ["1 Pedro 1:6"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em 1 Pedro 1:3, toque a medida segundo a qual Deus nos regenerou.",
+   "verseRef": "1 Pedro 1:3",
+   "options": [
+    { "id": "a", "text": "muita misericórdia" },
+    { "id": "b", "text": "nosso Senhor" },
+    { "id": "c", "text": "dentre os mortos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "segundo a sua muita misericórdia",
+   "feedbackCorrect": "O novo nascimento vem da grandeza do amor de Deus: é dom, não mérito.",
+   "feedbackWrong": {
+    "b": "\"Nosso Senhor\" nomeia Jesus; a medida do novo nascimento é outra.",
+    "c": "\"Dentre os mortos\" fala da ressurreição de Jesus, não da medida de Deus."
+   },
+   "hint": "Procure o que vem depois de \"segundo a sua\".",
+   "learningObjective": "Identificar a misericórdia de Deus como origem do novo nascimento.",
+   "evidence": ["1 Pedro 1:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo 1 Pedro 1:7, com o que Pedro compara a fé provada?",
+   "verseRef": "1 Pedro 1:7",
+   "options": [
+    { "id": "a", "text": "Com o ouro provado pelo fogo" },
+    { "id": "b", "text": "Com a prata guardada no templo" },
+    { "id": "c", "text": "Com a semente lançada na terra" },
+    { "id": "d", "text": "Com a casa firmada na rocha" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "do que o ouro que perece e é provado pelo fogo",
+   "feedbackCorrect": "A fé provada é como ouro no fogo, e ainda mais preciosa que ele.",
+   "feedbackWrong": {
+    "b": "O texto não fala de prata nem de templo.",
+    "c": "A imagem da semente não está aqui; Pedro usa um metal no fogo.",
+    "d": "A casa na rocha é imagem de Jesus em Mateus 7, não deste versículo."
+   },
+   "hint": "Pense num metal que passa pelo fogo.",
+   "learningObjective": "Observar a imagem que Pedro usa para a fé provada.",
+   "evidence": ["1 Pedro 1:7"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte 1 Pedro 1:8 na ordem do texto.",
+   "verseRef": "1 Pedro 1:8",
+   "options": [
+    { "id": "a", "text": "A quem, não o tendo visto, amais" },
+    { "id": "b", "text": "no qual, não vendo agora, mas crendo" },
+    { "id": "c", "text": "exultais com uma alegria indizível e cheia de glória" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "exultais com uma alegria indizível",
+   "feedbackCorrect": "Amar sem ver, crer sem ver, e então a alegria: é a sequência do versículo.",
+   "feedbackWrong": { "default": "Comece por \"A quem, não o tendo visto, amais\"; a alegria fecha o versículo." },
+   "hint": "O versículo começa falando de amar.",
+   "learningObjective": "Reconhecer a sequência de 1 Pedro 1:8.",
+   "evidence": ["1 Pedro 1:8"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em 1 Pedro 1:4, como está a herança nos céus?",
+   "verseRef": "1 Pedro 1:4",
+   "options": [
+    { "id": "a", "text": "reservada" },
+    { "id": "b", "text": "escondida" },
+    { "id": "c", "text": "adiada" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "reservada nos céus para vocês",
+   "feedbackCorrect": "A herança tem dono e lugar garantidos, longe do que estraga.",
+   "feedbackWrong": {
+    "b": "Não está escondida; está separada para vocês.",
+    "c": "O texto não fala de adiamento; fala de algo guardado."
+   },
+   "hint": "Pense numa mesa separada com o seu nome.",
+   "learningObjective": "Lembrar onde e como está a herança.",
+   "evidence": ["1 Pedro 1:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que 1 Pedro 1:6 comunica que se liga a este contexto?",
+   "verseRef": "1 Pedro 1:6",
+   "passageA": { "ref": "1 Pedro 1:6", "text": "estejam por breve tempo entristecidos por diversas provações" },
+   "passageB": { "ref": "Contexto", "text": "Pedro escreve a cristãos espalhados, que sofriam hostilidade por causa da fé." },
+   "options": [
+    { "id": "a", "text": "Pedro leva a dor a sério" },
+    { "id": "b", "text": "Cristãos não devem ficar tristes" },
+    { "id": "c", "text": "As provações já tinham acabado" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "entristecidos por diversas provações",
+   "feedbackCorrect": "Pedro nomeia a tristeza e as provações: a esperança não começa negando a dor.",
+   "feedbackWrong": {
+    "b": "O texto diz que eles estão entristecidos, e Pedro não os repreende por isso.",
+    "c": "Pedro fala \"no presente\": as provações estão acontecendo."
+   },
+   "hint": "Veja como Pedro descreve o que eles sentem.",
+   "learningObjective": "Ligar 1 Pedro 1:6 à situação dos leitores.",
+   "evidence": ["1 Pedro 1:6"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em 1 Pedro 1:5, a salvação já foi toda revelada, e não há mais nada a esperar.",
+   "verseRef": "1 Pedro 1:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "prestes a se revelar no último tempo",
+   "feedbackCorrect": "A salvação está \"prestes a se revelar\": há um futuro guardado por Deus.",
+   "feedbackWrong": { "true": "Releia o fim de 1:5: a salvação ainda vai se revelar no último tempo." },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Compreender que a guarda de Deus aponta para um futuro.",
+   "evidence": ["1 Pedro 1:5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em 1 Pedro 1:6, toque a palavra que junta alegria e tristeza no mesmo tempo.",
+   "verseRef": "1 Pedro 1:6",
+   "options": [
+    { "id": "a", "text": "embora" },
+    { "id": "b", "text": "Nisso" },
+    { "id": "c", "text": "breve tempo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "embora, no presente",
+   "feedbackCorrect": "A palavra segura as duas coisas juntas: eles exultam e estão tristes.",
+   "feedbackWrong": {
+    "b": "\"Nisso\" aponta para o motivo da alegria, não para o contraste.",
+    "c": "\"Breve tempo\" diz quanto dura a tristeza, não liga as duas."
+   },
+   "hint": "Procure a palavra entre vírgulas depois de \"exultam\".",
+   "learningObjective": "Reconhecer o marcador de contraste em 1 Pedro 1:6.",
+   "evidence": ["1 Pedro 1:6"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como 1 Pedro 1:5 completa o que 1:4 diz sobre a herança?",
+   "verseRef": "1 Pedro 1:4–5",
+   "options": [
+    { "id": "a", "text": "A herança está guardada, e os herdeiros também" },
+    { "id": "b", "text": "Só a herança está segura; o resto é conosco" },
+    { "id": "c", "text": "A fé de quem crê é o que segura tudo" },
+    { "id": "d", "text": "A herança será entregue toda nesta vida" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vocês estão sendo guardados",
+   "feedbackCorrect": "A herança está reservada nos céus, e quem crê está sendo guardado até chegar lá.",
+   "feedbackWrong": {
+    "b": "1:5 diz que os que creem também estão sendo guardados.",
+    "c": "A fé é o meio; quem guarda é Deus.",
+    "d": "A salvação se revela \"no último tempo\", não toda agora."
+   },
+   "hint": "Veja quem está sendo guardado em 1:5.",
+   "learningObjective": "Relacionar a herança guardada com os herdeiros guardados.",
+   "evidence": ["1 Pedro 1:4–5"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os movimentos de 1 Pedro 1:5–7?",
+   "verseRef": "1 Pedro 1:6–7",
+   "options": [
+    { "id": "a", "text": "Deus guarda os que creem até o fim" },
+    { "id": "b", "text": "Os que creem passam por provações" },
+    { "id": "c", "text": "A fé provada termina em louvor" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "redunde em louvor, glória e honra",
+   "feedbackCorrect": "Guardados por Deus, provados por um tempo, e a fé termina em louvor.",
+   "feedbackWrong": { "default": "A guarda de Deus vem primeiro (1:5); o louvor (1:7) é o ponto de chegada." },
+   "hint": "Comece pelo que Deus faz em 1:5.",
+   "learningObjective": "Compreender o movimento da guarda à fé provada.",
+   "evidence": ["1 Pedro 1:5–7"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em 1 Pedro 1:7, o que acontece com o ouro, em contraste com a fé?",
+   "verseRef": "1 Pedro 1:7",
+   "options": [
+    { "id": "a", "text": "perece" },
+    { "id": "b", "text": "brilha" },
+    { "id": "c", "text": "cresce" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o ouro que perece",
+   "feedbackCorrect": "O ouro acaba; a fé provada vale mais porque permanece.",
+   "feedbackWrong": {
+    "b": "Brilhar seria elogio; o texto mostra o limite do ouro.",
+    "c": "O ouro não cresce; o contraste é com algo que acaba."
+   },
+   "hint": "É o contrário de durar.",
+   "learningObjective": "Compreender o contraste entre o ouro e a fé provada.",
+   "evidence": ["1 Pedro 1:7"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga 1 Pedro 1:6 a 2 Coríntios 4:17?",
+   "verseRef": "1 Pedro 1:6",
+   "passageA": { "ref": "1 Pedro 1:6" },
+   "passageB": { "ref": "2 Coríntios 4:17" },
+   "options": [
+    { "id": "a", "text": "Aflição breve, glória eterna" },
+    { "id": "b", "text": "Aflição sem nenhum sentido" },
+    { "id": "c", "text": "Glória sem passar por aflição" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por breve tempo",
+   "feedbackCorrect": "Pedro e Paulo medem a dor diante do futuro: breve perto da glória que vem.",
+   "feedbackWrong": {
+    "b": "Os dois textos dão sentido à aflição: ela não é a palavra final.",
+    "c": "Os dois admitem a aflição; a glória vem depois dela."
+   },
+   "hint": "Compare quanto dura a tristeza nos dois textos.",
+   "learningObjective": "Relacionar a tristeza breve de 1 Pedro com a glória de 2 Coríntios.",
+   "evidence": ["1 Pedro 1:6", "2 Coríntios 4:17"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "1 Pedro 1:6–7 permite ver a provação como algo que Deus usa, e não como sinal de que ele abandonou quem sofre.",
+   "verseRef": "1 Pedro 1:6–7",
+   "correctOptionId": "true",
+   "evidenceSpan": "Para que a prova da vossa fé",
+   "feedbackCorrect": "O \"para que\" dá propósito à provação: ela não é abandono, acontece sob a guarda de Deus.",
+   "feedbackWrong": { "false": "Pedro dá um propósito à provação (\"para que\"); o texto não a trata como abandono." },
+   "hint": "Repare em como começa 1:7.",
+   "learningObjective": "Interpretar a provação dentro da guarda de Deus.",
+   "evidence": ["1 Pedro 1:6–7"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em 1 Pedro 1:5, toque o trecho que mostra de quem é a força que guarda os que creem.",
+   "verseRef": "1 Pedro 1:5",
+   "options": [
+    { "id": "a", "text": "poder de Deus" },
+    { "id": "b", "text": "pela fé" },
+    { "id": "c", "text": "último tempo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "guardados pelo poder de Deus",
+   "feedbackCorrect": "A segurança não depende da força de quem crê: quem guarda é Deus.",
+   "feedbackWrong": {
+    "b": "A fé é o meio pelo qual se recebe a guarda; a força vem de outro.",
+    "c": "\"Último tempo\" diz quando a salvação se revela, não quem guarda."
+   },
+   "hint": "Procure quem guarda, não o meio.",
+   "learningObjective": "Sustentar com o texto que Deus é quem guarda os que creem.",
+   "evidence": ["1 Pedro 1:5"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura 1 Pedro 1:6 sustenta sobre tristeza e esperança?",
+   "verseRef": "1 Pedro 1:6",
+   "options": [
+    { "id": "a", "text": "A esperança pode exultar mesmo com lágrimas" },
+    { "id": "b", "text": "Quem tem esperança não deveria ficar triste" },
+    { "id": "c", "text": "A tristeza prova que a fé é fraca" },
+    { "id": "d", "text": "A provação mostra que Deus se afastou" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Nisso vocês exultam, embora",
+   "feedbackCorrect": "Pedro junta alegria e tristeza no mesmo versículo, sem repreender quem chora.",
+   "feedbackWrong": {
+    "b": "O texto diz que eles exultam embora entristecidos; as duas convivem.",
+    "c": "Pedro não chama a tristeza de fé fraca; chama a fé de preciosa (1:7).",
+    "d": "Os que sofrem estão sendo guardados por Deus (1:5)."
+   },
+   "hint": "Veja as duas coisas que o versículo junta.",
+   "learningObjective": "Escolher a leitura de 1 Pedro 1:6 que o texto sustenta.",
+   "evidence": ["1 Pedro 1:6"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da fé em 1 Pedro 1:3–9?",
+   "verseRef": "1 Pedro 1:8–9",
+   "options": [
+    { "id": "a", "text": "A misericórdia de Deus dá um novo começo" },
+    { "id": "b", "text": "A fé é provada em meio à tristeza" },
+    { "id": "c", "text": "A fé chega ao seu fim, a salvação" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Alcançando o fim da vossa fé",
+   "feedbackCorrect": "Do novo nascimento à salvação final, passando pela prova: a fé tem começo, caminho e fim.",
+   "feedbackWrong": { "default": "Comece pela misericórdia (1:3); a salvação das almas (1:9) é o fim do caminho." },
+   "hint": "Siga de 1:3 a 1:9.",
+   "learningObjective": "Ver o caminho da fé do começo ao fim em 1 Pedro 1.",
+   "evidence": ["1 Pedro 1:3", "1 Pedro 1:6–7", "1 Pedro 1:9"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em 1 Pedro 1:3, que tipo de esperança Deus nos dá ao nos regenerar?",
+   "verseRef": "1 Pedro 1:3",
+   "options": [
+    { "id": "a", "text": "viva" },
+    { "id": "b", "text": "vaga" },
+    { "id": "c", "text": "frágil" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nos regenerou para uma viva esperança",
+   "feedbackCorrect": "A esperança não morre porque se apoia em Jesus, que ressuscitou dentre os mortos.",
+   "feedbackWrong": {
+    "b": "Não é vaga: tem fundamento na ressurreição de Jesus.",
+    "c": "Não é frágil: nasce do poder que ressuscitou Jesus."
+   },
+   "hint": "Pense no que a ressurreição traz de volta.",
+   "learningObjective": "Lembrar o termo que carrega o sentido da esperança cristã.",
+   "evidence": ["1 Pedro 1:3"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga 1 Pedro 1:5 a João 10:28?",
+   "verseRef": "1 Pedro 1:5",
+   "passageA": { "ref": "1 Pedro 1:5" },
+   "passageB": { "ref": "João 10:28" },
+   "options": [
+    { "id": "a", "text": "Ninguém arranca quem Deus guarda" },
+    { "id": "b", "text": "A salvação depende só de nós" },
+    { "id": "c", "text": "Deus guarda só os mais fortes" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "guardados pelo poder de Deus",
+   "feedbackCorrect": "Pedro diz que Deus guarda; Jesus diz que ninguém arrebata suas ovelhas da sua mão.",
+   "feedbackWrong": {
+    "b": "Os dois textos põem a guarda em Deus, não em nós.",
+    "c": "Jesus fala de todas as suas ovelhas, não só das fortes."
+   },
+   "hint": "Compare quem segura e quem tenta tirar.",
+   "learningObjective": "Ligar a guarda de 1 Pedro à promessa de Jesus em João 10.",
+   "evidence": ["1 Pedro 1:5", "João 10:28"]
+  }
+ ]
+}

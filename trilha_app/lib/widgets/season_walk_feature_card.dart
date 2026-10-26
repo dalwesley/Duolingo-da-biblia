@@ -12,6 +12,7 @@ import '../utils/liturgical_calendar.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'path_preview_sheet.dart';
 import 'season_walk_together.dart';
 import 'ui_primitives.dart';
 
@@ -20,9 +21,7 @@ import 'ui_primitives.dart';
 /// Mesmo espírito do fluxo de Trilhas: paisagem, título grande, CTA dourado.
 /// Aparece na janela de [SeasonWalkTogetherCard.leadDays] até o fim.
 class SeasonWalkFeatureCard extends StatefulWidget {
-  final void Function(Widget card)? onOpenSheet;
-
-  const SeasonWalkFeatureCard({super.key, this.onOpenSheet});
+  const SeasonWalkFeatureCard({super.key});
 
   /// Visível na Home (pré-início ou durante a temporada).
   static bool visible(ProgressService progress) {
@@ -59,7 +58,24 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
       openSeasonWalk(context);
       return;
     }
-    widget.onOpenSheet?.call(const SeasonWalkTogetherCard());
+    final l10n = context.l10n;
+    final accent = LiturgicalCalendar.accentOf(
+      campaign.kind == SeasonWalkKind.advent
+          ? LiturgicalSeason.advent
+          : LiturgicalSeason.lent,
+    );
+    final daysUntil = SeasonWalkTogetherCard.daysUntilStart(campaign, today);
+    showPathPreviewSheet(
+      context,
+      title: campaign.title,
+      description:
+          '${l10n.walkTogetherStartsIn(daysUntil)}. ${campaign.subtitle}',
+      art: SeasonWalkCatalog.artAsset(campaign.kind),
+      accent: accent,
+      eyebrow: l10n.walkTogetherKicker,
+      glyph: CinematicGlyph.calendar,
+      footer: const SeasonWalkTogetherCard(bare: true),
+    );
   }
 
   @override
@@ -136,22 +152,27 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                           (220 * MediaQuery.devicePixelRatioOf(context)).round(),
                     ),
                   ),
+                  // Véu só sob o texto — a pintura abre cedo à direita.
+                  // Antes o Claro ia a 0xF5 até a metade e o pé ainda
+                  // cobria de branco: a estação sumia.
                   Positioned.fill(
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: morning
                               ? const [
-                                  Color(0xF5E7F0F8),
-                                  Color(0xCCE7F0F8),
-                                  Color(0x33E7F0F8),
+                                  Color(0xE0E7F0F8),
+                                  Color(0x99E7F0F8),
+                                  Color(0x28E7F0F8),
+                                  Color(0x00E7F0F8),
                                 ]
                               : const [
-                                  Color(0xE606080C),
-                                  Color(0x9906080C),
-                                  Color(0x3306080C),
+                                  Color(0xD906080C),
+                                  Color(0x8006080C),
+                                  Color(0x2606080C),
+                                  Color(0x0006080C),
                                 ],
-                          stops: const [0.0, 0.52, 1.0],
+                          stops: const [0.0, 0.32, 0.62, 1.0],
                         ),
                       ),
                     ),
@@ -165,13 +186,13 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                           colors: morning
                               ? const [
                                   Color(0x00FFFFFF),
-                                  Color(0xE6FFFFFF),
+                                  Color(0x59FFFFFF),
                                 ]
                               : const [
                                   Color(0x0006080C),
-                                  Color(0xB306080C),
+                                  Color(0x7306080C),
                                 ],
-                          stops: const [0.4, 1.0],
+                          stops: const [0.55, 1.0],
                         ),
                       ),
                     ),
@@ -181,13 +202,13 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
                     top: -50,
                     child: IgnorePointer(
                       child: Container(
-                        width: 200,
-                        height: 200,
+                        width: 160,
+                        height: 160,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           gradient: RadialGradient(
                             colors: [
-                              accent.withValues(alpha: 0.34),
+                              accent.withValues(alpha: 0.22),
                               accent.withValues(alpha: 0),
                             ],
                           ),

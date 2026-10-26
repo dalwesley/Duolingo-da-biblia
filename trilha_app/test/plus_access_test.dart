@@ -83,4 +83,36 @@ void main() {
     expect(PlusAccess.baseProductId('plus_annual:annual'), 'plus_annual');
     expect(PlusAccess.baseProductId('plus_annual'), 'plus_annual');
   });
+
+  group('Plus de quem libera a cena (doc público)', () {
+    final now = DateTime(2026, 11, 10);
+
+    test('sem doc ou sem plusActive não libera', () {
+      expect(PlusAccess.profileHasPlus(null, now: now), isFalse);
+      expect(PlusAccess.profileHasPlus({}, now: now), isFalse);
+      expect(
+        PlusAccess.profileHasPlus({'plusActive': false}, now: now),
+        isFalse,
+      );
+    });
+
+    test('plusActive sem data de fim libera', () {
+      expect(PlusAccess.profileHasPlus({'plusActive': true}, now: now), isTrue);
+    });
+
+    test('plusActive atrasado não vale depois do fim + graça', () {
+      Map<String, dynamic> doc(String end) => {
+        'plusActive': true,
+        'plusExpiresAt': end,
+      };
+      expect(
+        PlusAccess.profileHasPlus(doc('2026-11-05T12:00:00.000Z'), now: now),
+        isTrue,
+      );
+      expect(
+        PlusAccess.profileHasPlus(doc('2026-11-01T12:00:00.000Z'), now: now),
+        isFalse,
+      );
+    });
+  });
 }

@@ -1,0 +1,408 @@
+{
+ "study": {
+  "passageRef": "Mateus 6:7–11",
+  "passages": [
+   { "ref": "Mateus 6:7–11" },
+   { "ref": "Mateus 6:12–13" }
+  ],
+  "context": "Jesus ensina a orar no Sermão do Monte, para gente que conhecia orações longas feitas para impressionar. Pouco depois, no mesmo sermão, ele fala da ansiedade pelo amanhã (Mateus 6:34).",
+  "keyword": "Pão de cada dia",
+  "keywordGloss": "O sustento pedido para o dia; Jesus ensina a depender do Pai hoje, sem estocar o medo do amanhã.",
+  "focusQuestion": "O que você pediria a Deus se orasse só pelo dia de hoje?",
+  "reflectionPrompts": ["O Pai já sabe", "O reino antes do pão", "Só o pão de hoje"],
+  "facts": [
+   { "text": "Jesus manda não usar vãs repetições ao orar.", "evidenceRef": "Mateus 6:7", "evidenceSpan": "não empreguem vãs repetições" },
+   { "text": "O Pai sabe do que precisamos antes do pedido.", "evidenceRef": "Mateus 6:8", "evidenceSpan": "o vosso Pai sabe do que tendes necessidade, antes mesmo de lho pedirdes" },
+   { "text": "A oração começa chamando Deus de Pai que está nos céus.", "evidenceRef": "Mateus 6:9", "evidenceSpan": "Pai nosso, que estás nos céus" },
+   { "text": "Pede-se que a vontade de Deus seja feita na terra.", "evidenceRef": "Mateus 6:10", "evidenceSpan": "que a tua vontade seja feita, assim na terra como no céu" },
+   { "text": "O pão é pedido para hoje.", "evidenceRef": "Mateus 6:11", "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia" }
+  ],
+  "keyTerms": [
+   { "term": "Pai", "gloss": "Jesus ensina a chamar Deus de Pai: alguém que conhece e cuida, não um juiz distante." },
+   { "term": "vontade", "gloss": "O querer de Deus; pedir que ela seja feita é entregar a ele também o que não controlamos." },
+   { "term": "pão", "gloss": "O sustento concreto do dia; Jesus ensina a pedi-lo sem vergonha e sem estoque." }
+  ],
+  "structure": [
+   { "label": "Não orar como quem quer impressionar", "evidenceRef": "Mateus 6:7–8" },
+   { "label": "Chamar a Deus de Pai", "evidenceRef": "Mateus 6:9" },
+   { "label": "Pedir o reino e a vontade dele", "evidenceRef": "Mateus 6:10" },
+   { "label": "Pedir o pão do dia", "evidenceRef": "Mateus 6:11" }
+  ],
+  "relations": [
+   { "kind": "causa", "text": "Não é preciso imitar os gentios, porque o Pai já sabe do que precisamos.", "marker": "pois", "evidenceRef": "Mateus 6:8" },
+   { "kind": "resultado", "text": "Como o Pai já sabe, Jesus ensina uma oração curta e confiante.", "marker": "Portanto", "evidenceRef": "Mateus 6:9" },
+   { "kind": "sequência", "text": "O pão vem depois do nome, do reino e da vontade de Deus.", "marker": null, "evidenceRef": "Mateus 6:10–11" }
+  ],
+  "crossRefs": [
+   { "ref": "Êxodo 16:4", "bridge": "Provisão dada dia a dia" },
+   { "ref": "Isaías 65:24", "bridge": "Deus ouve antes do pedido" },
+   { "ref": "Provérbios 30:8", "bridge": "Pedir o necessário, não o estoque" }
+  ],
+  "misreadings": [
+   { "text": "Se o Pai já sabe, não preciso orar.", "why": "Jesus tira daí o contrário: \"Portanto\", orem assim. Saber que o Pai sabe é motivo para pedir." },
+   { "text": "Quanto mais eu repetir, mais Deus vai me ouvir.", "why": "Jesus rejeita a ideia de ser ouvido \"pelo seu muito falar\"." },
+   { "text": "Pedir o pão de hoje significa que é errado planejar o futuro.", "why": "O pedido ensina dependência diária; a Bíblia elogia a previdência (Provérbios 6:6–8)." }
+  ],
+  "centralInsight": "O pão é de hoje",
+  "anchorQuestion": "Em Mateus 6:11, para quando Jesus ensina a pedir o pão?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Mateus 6:7, Jesus manda não usar vãs repetições ao orar.",
+   "verseRef": "Mateus 6:7",
+   "correctOptionId": "true",
+   "evidenceSpan": "não empreguem vãs repetições",
+   "feedbackCorrect": "Jesus corta a ideia de que muitas palavras garantem ser ouvido.",
+   "feedbackWrong": { "false": "Releia Mateus 6:7: \"não empreguem vãs repetições\"." },
+   "hint": "Veja o começo do versículo.",
+   "learningObjective": "Observar o que Jesus diz para evitar na oração.",
+   "evidence": ["Mateus 6:7"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:9, toque onde está o Pai a quem se dirige a oração.",
+   "verseRef": "Mateus 6:9",
+   "options": [
+    { "id": "a", "text": "nos céus" },
+    { "id": "b", "text": "teu nome" },
+    { "id": "c", "text": "desta forma" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que estás nos céus",
+   "feedbackCorrect": "O Pai é \"nosso\", próximo, e está acima de tudo ao mesmo tempo.",
+   "feedbackWrong": {
+    "b": "\"Teu nome\" é o que se pede que seja santificado, não onde o Pai está.",
+    "c": "\"Desta forma\" introduz a oração, não diz onde está o Pai."
+   },
+   "hint": "Procure um lugar logo depois de \"que estás\".",
+   "learningObjective": "Identificar a quem e onde a oração se dirige.",
+   "evidence": ["Mateus 6:9"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Mateus 6:7, o que os gentios presumiam ao orar?",
+   "verseRef": "Mateus 6:7",
+   "options": [
+    { "id": "a", "text": "Que seriam ouvidos por falar muito" },
+    { "id": "b", "text": "Que Deus já sabia de tudo" },
+    { "id": "c", "text": "Que deviam orar em segredo" },
+    { "id": "d", "text": "Que o perdão vinha antes do pão" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pelo seu muito falar, serão ouvidos",
+   "feedbackCorrect": "Eles achavam que a quantidade de palavras garantia a resposta.",
+   "feedbackWrong": {
+    "b": "Isso é o que Jesus diz do Pai em 6:8, não o que os gentios pensavam.",
+    "c": "Orar em segredo é ensino de Jesus (6:6), não ideia dos gentios.",
+    "d": "O versículo não fala de perdão; fala de muito falar."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar o erro que Jesus corrige na oração.",
+   "evidence": ["Mateus 6:7"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Mateus 6:8 na ordem do texto.",
+   "verseRef": "Mateus 6:8",
+   "options": [
+    { "id": "a", "text": "Não vos assemelheis a eles" },
+    { "id": "b", "text": "pois o vosso Pai sabe do que tendes necessidade" },
+    { "id": "c", "text": "antes mesmo de lho pedirdes" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "antes mesmo de lho pedirdes",
+   "feedbackCorrect": "A ordem, o motivo e o detalhe: o Pai sabe antes mesmo do pedido.",
+   "feedbackWrong": { "default": "Comece por \"Não vos assemelheis a eles\"; o \"antes mesmo\" fecha o versículo." },
+   "hint": "O versículo começa com uma proibição.",
+   "learningObjective": "Reconhecer a sequência de Mateus 6:8.",
+   "evidence": ["Mateus 6:8"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Mateus 6:11, para quando se pede o pão?",
+   "verseRef": "Mateus 6:11",
+   "options": [
+    { "id": "a", "text": "hoje" },
+    { "id": "b", "text": "sempre" },
+    { "id": "c", "text": "logo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Dá-nos hoje",
+   "feedbackCorrect": "Jesus ensina a pedir o pão deste dia, não o estoque do mês.",
+   "feedbackWrong": {
+    "b": "\"Sempre\" pediria tudo de uma vez; o texto pede o pão do dia.",
+    "c": "O texto não pede pressa; pede o pão deste dia."
+   },
+   "hint": "Pense no tempo mais curto possível.",
+   "learningObjective": "Lembrar para quando Jesus ensina a pedir o pão.",
+   "evidence": ["Mateus 6:11"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Mateus 6:11 comunica que se liga a este contexto?",
+   "verseRef": "Mateus 6:11",
+   "passageA": { "ref": "Mateus 6:11" },
+   "passageB": { "ref": "Contexto", "text": "No tempo de Jesus, muitos trabalhadores recebiam por dia e compravam o pão daquele dia." },
+   "options": [
+    { "id": "a", "text": "Depender de Deus a cada dia" },
+    { "id": "b", "text": "Garantir estoque para o mês" },
+    { "id": "c", "text": "Pedir só pelas necessidades alheias" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o nosso pão de cada dia",
+   "feedbackCorrect": "Para quem vivia da diária, pedir o pão de cada dia era entregar o hoje ao Pai.",
+   "feedbackWrong": {
+    "b": "O pedido é pelo pão do dia, não por estoque.",
+    "c": "O texto diz \"Dá-nos\": o pedido inclui quem ora."
+   },
+   "hint": "Repare na medida de tempo do pedido.",
+   "learningObjective": "Ligar Mateus 6:11 à vida de quem dependia da diária.",
+   "evidence": ["Mateus 6:11"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Mateus 6:8, Jesus diz que devemos orar bastante para que o Pai fique sabendo do que precisamos.",
+   "verseRef": "Mateus 6:8",
+   "correctOptionId": "false",
+   "evidenceSpan": "o vosso Pai sabe do que tendes necessidade",
+   "feedbackCorrect": "É o contrário: oramos porque o Pai já sabe, não para informá-lo.",
+   "feedbackWrong": { "true": "Releia 6:8: o Pai sabe \"antes mesmo de lho pedirdes\"." },
+   "hint": "Veja quando o Pai sabe.",
+   "learningObjective": "Compreender a relação entre o saber do Pai e a oração.",
+   "evidence": ["Mateus 6:8"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:8, toque a palavra que introduz o motivo para não orar como os gentios.",
+   "verseRef": "Mateus 6:8",
+   "options": [
+    { "id": "a", "text": "pois" },
+    { "id": "b", "text": "antes" },
+    { "id": "c", "text": "Não" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pois o vosso Pai sabe",
+   "feedbackCorrect": "Ela traz a razão: não imitem os gentios, porque o Pai já sabe.",
+   "feedbackWrong": {
+    "b": "\"Antes\" diz quando o Pai sabe; o motivo começa antes disso.",
+    "c": "\"Não\" abre a proibição; o motivo vem depois."
+   },
+   "hint": "Olhe logo após a primeira vírgula.",
+   "learningObjective": "Reconhecer o marcador de causa em Mateus 6:8.",
+   "evidence": ["Mateus 6:8"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Em Mateus 6:10–11, o que a ordem dos pedidos ensina sobre o pão?",
+   "verseRef": "Mateus 6:10–11",
+   "options": [
+    { "id": "a", "text": "O pão é pedido dentro do reino, não no lugar dele" },
+    { "id": "b", "text": "O pão importa pouco para Deus" },
+    { "id": "c", "text": "O pão deve ser pedido antes de tudo" },
+    { "id": "d", "text": "O reino só vem quando o pão sobra" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Venha o teu reino",
+   "feedbackCorrect": "Reino e vontade vêm primeiro; o pão entra depois, dentro desse cuidado.",
+   "feedbackWrong": {
+    "b": "Jesus manda pedir o pão: ele importa ao Pai.",
+    "c": "No texto, o pão vem depois do nome, do reino e da vontade.",
+    "d": "O texto não liga a vinda do reino a sobra de pão."
+   },
+   "hint": "Veja a ordem: reino e vontade, depois pão.",
+   "learningObjective": "Relacionar a ordem dos pedidos com o lugar do pão.",
+   "evidence": ["Mateus 6:10–11"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Em que ordem a oração vai do Pai ao pão em Mateus 6:9–11?",
+   "verseRef": "Mateus 6:9–10",
+   "options": [
+    { "id": "a", "text": "Chamar a Deus de Pai nos céus" },
+    { "id": "b", "text": "Pedir que o reino de Deus chegue à terra" },
+    { "id": "c", "text": "Pedir o pão só para este dia" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Pai nosso, que estás nos céus",
+   "feedbackCorrect": "Primeiro quem Deus é, depois o reino dele, e só então o pão de hoje.",
+   "feedbackWrong": { "default": "O pão vem por último; a oração começa por quem Deus é." },
+   "hint": "A oração começa pelo nome de quem ouve.",
+   "learningObjective": "Compreender o movimento da oração do Pai ao pão.",
+   "evidence": ["Mateus 6:9–11"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Mateus 6:9, que palavra liga o ensino de 6:8 à oração que vem?",
+   "verseRef": "Mateus 6:9",
+   "options": [
+    { "id": "a", "text": "Portanto" },
+    { "id": "b", "text": "Contudo" },
+    { "id": "c", "text": "Todavia" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Portanto, vocês devem orar desta forma",
+   "feedbackCorrect": "A oração é consequência: o Pai sabe, então orem assim, com confiança.",
+   "feedbackWrong": {
+    "b": "\"Contudo\" faria oposição; a oração é consequência de 6:8, não contraste.",
+    "c": "\"Todavia\" indica oposição; o texto tira uma conclusão."
+   },
+   "hint": "É uma palavra de conclusão.",
+   "learningObjective": "Compreender a oração como consequência do cuidado do Pai.",
+   "evidence": ["Mateus 6:9"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Mateus 6:11 a Êxodo 16:4?",
+   "verseRef": "Mateus 6:11",
+   "passageA": { "ref": "Mateus 6:11" },
+   "passageB": { "ref": "Êxodo 16:4" },
+   "options": [
+    { "id": "a", "text": "Provisão dada dia a dia" },
+    { "id": "b", "text": "Pão guardado para o ano" },
+    { "id": "c", "text": "Pão ganho por mérito" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o nosso pão de cada dia",
+   "feedbackCorrect": "No deserto, o maná vinha na porção de cada dia; Jesus ensina a pedir assim.",
+   "feedbackWrong": {
+    "b": "O maná não era para estocar; vinha a porção de cada dia.",
+    "c": "Nos dois textos, o pão é dado por Deus, não merecido."
+   },
+   "hint": "Compare de quanto em quanto tempo o pão chega.",
+   "learningObjective": "Relacionar o pão de cada dia com o maná do deserto.",
+   "evidence": ["Mateus 6:11", "Êxodo 16:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Mateus 6:11, pedir o pão \"hoje\" significa que é errado planejar ou guardar para o futuro.",
+   "verseRef": "Mateus 6:11",
+   "correctOptionId": "false",
+   "evidenceSpan": "Dá-nos hoje o nosso pão de cada dia",
+   "feedbackCorrect": "O pedido ensina dependência diária, não proíbe planejar; o que sai é o estoque do medo.",
+   "feedbackWrong": { "true": "Jesus ensina a confiar no Pai hoje; o texto não condena planejar com prudência." },
+   "hint": "Pense no que o pedido ensina, não no que proíbe.",
+   "learningObjective": "Interpretar o pão de hoje como dependência, não como proibição de planejar.",
+   "evidence": ["Mateus 6:11"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Mateus 6:11, toque o trecho que mostra que o sustento é pedido de novo a cada manhã.",
+   "verseRef": "Mateus 6:11",
+   "options": [
+    { "id": "a", "text": "de cada dia" },
+    { "id": "b", "text": "nosso pão" },
+    { "id": "c", "text": "Dá-nos" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "de cada dia",
+   "feedbackCorrect": "A provisão se renova no ritmo do dia, como o maná no deserto.",
+   "feedbackWrong": {
+    "b": "\"Nosso pão\" diz o que se pede, não o ritmo do pedido.",
+    "c": "\"Dá-nos\" mostra que é dom, mas não o ritmo diário."
+   },
+   "hint": "Procure a expressão de tempo no fim do versículo.",
+   "learningObjective": "Sustentar com o texto que a dependência é diária.",
+   "evidence": ["Mateus 6:11"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Mateus 6:8 sustenta para quem ora com ansiedade?",
+   "verseRef": "Mateus 6:8",
+   "options": [
+    { "id": "a", "text": "Posso orar com poucas palavras, pois o Pai já sabe" },
+    { "id": "b", "text": "Se o Pai já sabe, não preciso orar" },
+    { "id": "c", "text": "Quanto mais eu repetir, mais serei ouvido" },
+    { "id": "d", "text": "Deus só ouve pedidos bem formulados" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o vosso Pai sabe do que tendes necessidade",
+   "feedbackCorrect": "Quem ora não precisa convencer: o Pai já conhece a necessidade antes do pedido.",
+   "feedbackWrong": {
+    "b": "Jesus conclui o oposto: \"Portanto\", orem assim (6:9).",
+    "c": "Jesus rejeita a ideia de ser ouvido pelo muito falar (6:7).",
+    "d": "O texto põe a segurança no Pai que sabe, não na forma do pedido."
+   },
+   "hint": "Leia 6:8 junto com 6:7 e 6:9.",
+   "learningObjective": "Escolher a leitura de Mateus 6:8 que o contexto sustenta.",
+   "evidence": ["Mateus 6:7–9"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o fio do pão de cada dia na Bíblia?",
+   "verseRef": "Mateus 6:11",
+   "options": [
+    { "id": "a", "text": "Deus manda maná dia após dia no deserto" },
+    { "id": "b", "text": "Jesus ensina a pedir o pão de hoje" },
+    { "id": "c", "text": "Jesus se apresenta como o pão da vida" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "o nosso pão de cada dia",
+   "feedbackCorrect": "O maná diário prepara o pedido do pão, e os dois apontam para Jesus, o pão da vida.",
+   "feedbackWrong": { "default": "Comece no deserto (Êx 16); o pão da vida (Jo 6:35) é o ponto de chegada." },
+   "hint": "Siga a história bíblica: deserto, Sermão do Monte, João 6.",
+   "learningObjective": "Ver Mateus 6:11 dentro do fio do pão na Bíblia.",
+   "evidence": ["Êxodo 16:4", "Mateus 6:11", "João 6:35"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Mateus 6:10, o que se pede que seja feito na terra como no céu?",
+   "verseRef": "Mateus 6:10",
+   "options": [
+    { "id": "a", "text": "vontade" },
+    { "id": "b", "text": "palavra" },
+    { "id": "c", "text": "obra" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "que a tua vontade seja feita",
+   "feedbackCorrect": "Pedir que Deus reine também sobre o que não controlamos tira do medo o comando.",
+   "feedbackWrong": {
+    "b": "O texto não fala de palavra; fala do querer de Deus.",
+    "c": "O que se pede que seja feito é o querer de Deus, não uma obra."
+   },
+   "hint": "É o querer de Deus.",
+   "learningObjective": "Lembrar o termo que carrega a entrega a Deus na oração.",
+   "evidence": ["Mateus 6:10"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Mateus 6:8 a Isaías 65:24?",
+   "verseRef": "Mateus 6:8",
+   "passageA": { "ref": "Mateus 6:8" },
+   "passageB": { "ref": "Isaías 65:24" },
+   "options": [
+    { "id": "a", "text": "Deus ouve antes do pedido" },
+    { "id": "b", "text": "Deus demora para responder" },
+    { "id": "c", "text": "Deus ouve quem fala mais" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "antes mesmo de lho pedirdes",
+   "feedbackCorrect": "Isaías e Jesus dizem o mesmo: Deus conhece e responde antes de terminarmos de pedir.",
+   "feedbackWrong": {
+    "b": "Os dois textos dizem o contrário: Deus responde antes.",
+    "c": "Jesus rejeita o muito falar; Isaías diz que Deus ouve enquanto ainda falam."
+   },
+   "hint": "Compare quando Deus ouve nos dois textos.",
+   "learningObjective": "Ligar o Pai que sabe em Mateus à promessa de Isaías.",
+   "evidence": ["Mateus 6:8", "Isaías 65:24"]
+  }
+ ]
+}

@@ -9,6 +9,24 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.37] — 2026-10-26
+
+### Added
+- **Prévia do caminho** (`PathPreviewSheet`): folha com arte, chips e roteiro ao abrir tema, trilha ou estação
+- **Cena Plus liberada por quem paga**: estudo da semana no grupo (líder Plus) e Travessia (par Plus) abrem uma cena por vez; a seguinte volta a pedir assinatura
+- Banco **V3 da trilha Ansiedade** (entrada): 5 cenas, perguntas e estudos, com piloto EN/ES
+- Analytics de abertura e uso do **estudo do versículo**
+- Regras Firestore e limpeza na exclusão de conta para **seasonWalks**
+
+### Changed
+- **Poéticos no Antigo Testamento** (Jó, Salmos, Provérbios, Eclesiastes, Cantares): saem do card Sabedoria (Plus) e ficam grátis com o cânon; trilhas de entrada (Ansiedade, Recomeço…) continuam grátis inteiras
+- Home: CTA com a cena, caminhada coletiva (juntar-se antes do 1º dia), Travessia e perfil alinhados ao humor do dia
+- Caminhada de temporada: card e fluxo “juntos” mais claros
+- Monetização: documentação das exceções de liberação e da regra “livro = território, tema = rota”
+
+### Fixed
+- Gate do Peregrino+ vale em mapa, Home, deep link, grupo e Travessia (exceto as liberações acima e cena já concluída)
+
 ## [1.0.36] — 2026-10-24
 
 ### Added

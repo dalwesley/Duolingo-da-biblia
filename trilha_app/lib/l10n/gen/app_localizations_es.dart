@@ -3490,7 +3490,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get journeyAntigoTestamentoBody =>
-      'De Génesis a Malaquías: la creación, los patriarcas, la Ley, la conquista, los reyes y los profetas. Cada libro es una ruta, del Pentateuco al silencio entre los Testamentos.';
+      'De Génesis a Malaquías: la creación, los patriarcas, la Ley, la conquista, los reyes, los salmos, la sabiduría y los profetas. Cada libro es una ruta, del Pentateuco al silencio entre los Testamentos.';
 
   @override
   String get journeyBeyondHorizon => 'Aún más allá del horizonte';
@@ -3534,13 +3534,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get journeyPlusCtaDetail => 'con Peregrino+';
-
-  @override
-  String get journeySabedoriaBody =>
-      'Job, Salmos, Proverbios, Eclesiastés y Cantares. El dolor que pregunta, la oración que canta, el consejo para cada día y el amor: la fe vivida en lo cotidiano.';
-
-  @override
-  String get journeySabedoriaTitle => 'Sabiduría';
 
   @override
   String journeyScenesLeft(int count) {
@@ -4436,6 +4429,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get lessonPassageTitle => 'Texto de la escena';
+
+  @override
+  String lessonPlusGrantedBy(String name) {
+    return '$name te liberó esta escena de Peregrino+.';
+  }
 
   @override
   String get lessonPractice => 'Práctica';
@@ -6529,7 +6527,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkThemesBody =>
-      'Sermón del Monte, Oración, Familia, Ansiedad y otras rutas de Vida Cristiana. La primera escena de cada una es gratis.';
+      'Sermón del Monte, Oración, Familia y otras rutas de Vida Cristiana. La primera escena de cada una es gratis.';
 
   @override
   String get paywallPerkThemesTitle => 'Rutas por tema';
@@ -7510,7 +7508,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String profileStreakRemaining(int left, int goal) {
-    return 'Faltan $left para el compromiso de $goal días.';
+    String _temp0 = intl.Intl.pluralLogic(
+      left,
+      locale: localeName,
+      other: 'Faltan $left para el compromiso de $goal días.',
+      one: 'Falta 1 para el compromiso de $goal días.',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -9269,7 +9273,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get trailsDoorIntroThemes =>
-      'La Biblia leída por hilos, no por libros: el panorama de la historia, las personas que la cargan, la promesa y su cumplimiento, los grandes temas, las parábolas y la sabiduría. Cada ruta sigue un hilo por varios libros.';
+      'La Biblia leída por hilos, no por libros: el panorama de la historia, las personas que la cargan, la promesa y su cumplimiento, los grandes temas y las parábolas. Cada ruta sigue un hilo por varios libros.';
 
   @override
   String get trailsDownloading => 'Descargando…';

@@ -4723,7 +4723,7 @@ abstract class AppLocalizations {
   /// No description provided for @growthNextIn.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{Próximo: {stage} · faltam 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}'**
+  /// **'{count, plural, =1{Próximo: {stage} · falta 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}'**
   String growthNextIn(String stage, int count);
 
   /// No description provided for @growthNextMilestone.
@@ -5509,7 +5509,7 @@ abstract class AppLocalizations {
   /// No description provided for @journeyAntigoTestamentoBody.
   ///
   /// In pt, this message translates to:
-  /// **'De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.'**
+  /// **'De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis, os salmos, a sabedoria e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.'**
   String get journeyAntigoTestamentoBody;
 
   /// Locked trail on the area path
@@ -5577,18 +5577,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'com o Peregrino+'**
   String get journeyPlusCtaDetail;
-
-  /// No description provided for @journeySabedoriaBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Jó, Salmos, Provérbios, Eclesiastes e Cantares. A dor que pergunta, a oração que canta, o conselho para cada dia e o amor: a fé vivida no chão da vida.'**
-  String get journeySabedoriaBody;
-
-  /// No description provided for @journeySabedoriaTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sabedoria'**
-  String get journeySabedoriaTitle;
 
   /// No description provided for @journeyScenesLeft.
   ///
@@ -6938,6 +6926,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Texto da cena'**
   String get lessonPassageTitle;
+
+  /// No description provided for @lessonPlusGrantedBy.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} liberou esta cena do Peregrino+ para você.'**
+  String lessonPlusGrantedBy(String name);
 
   /// No description provided for @lessonPractice.
   ///
@@ -10188,7 +10182,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkThemesBody.
   ///
   /// In pt, this message translates to:
-  /// **'Sermão do Monte, Oração, Família, Ansiedade e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.'**
+  /// **'Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.'**
   String get paywallPerkThemesBody;
 
   /// No description provided for @paywallPerkThemesTitle.
@@ -11586,7 +11580,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileStreakRemaining.
   ///
   /// In pt, this message translates to:
-  /// **'Faltam {left} para o compromisso de {goal} dias.'**
+  /// **'{left, plural, =1{Falta 1 para o compromisso de {goal} dias.} other{Faltam {left} para o compromisso de {goal} dias.}}'**
   String profileStreakRemaining(int left, int goal);
 
   /// No description provided for @profileStreakStart.
@@ -14400,7 +14394,7 @@ abstract class AppLocalizations {
   /// No description provided for @trailsDoorIntroThemes.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas, as parábolas e a sabedoria. Cada trilha segue um fio por vários livros.'**
+  /// **'A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.'**
   String get trailsDoorIntroThemes;
 
   /// No description provided for @trailsDownloading.

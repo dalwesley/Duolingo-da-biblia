@@ -72,6 +72,11 @@ class RoomService extends ChangeNotifier {
   /// Estudo marcado para a semana corrente (ou `null`).
   RoomStudy? get currentStudy => activeRoom?.studyFor(LeagueService.weekKey());
 
+  /// Grupo que tem [missionSlug] como estudo desta semana, ou `null`. Se
+  /// o líder tem o Peregrino+, a cena abre para o grupo inteiro.
+  StudyRoom? roomStudying(String missionSlug) =>
+      currentStudy?.missionSlug == missionSlug ? activeRoom : null;
+
   Future<void> init() async {
     final prefs = await SharedPreferences.getInstance();
     final code = prefs.getString(_keyActiveCode);

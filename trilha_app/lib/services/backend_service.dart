@@ -13,6 +13,7 @@ import '../models/recognition.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../models/portrait_style.dart';
+import '../utils/plus_access.dart';
 import '../utils/test_device.dart';
 import 'analytics_service.dart';
 import 'league_service.dart';
@@ -1808,6 +1809,13 @@ class BackendService extends ChangeNotifier {
     }
     if (private == null || private.isEmpty) return public;
     return UserBackupResult.found({...?public.data, ...private});
+  }
+
+  /// Outro peregrino tem o Peregrino+? Lê o doc público (webhook). Falha
+  /// de rede conta como não: a cena cai no paywall, não abre de graça.
+  Future<bool> pilgrimHasPlus(String uid) async {
+    final result = await fetchPilgrimProfile(uid);
+    return PlusAccess.profileHasPlus(result.data, now: DateTime.now());
   }
 
   /// Perfil público de outro peregrino (`users/{uid}`) — ranking + jornada.

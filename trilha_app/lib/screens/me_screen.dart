@@ -19,6 +19,7 @@ import '../widgets/act_feel.dart';
 import '../widgets/bible_note_tag.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
@@ -231,11 +232,18 @@ class _MeScreenState extends State<MeScreen> {
           ),
         ),
         const SizedBox(height: AppSpace.md),
+        // Marcos da sequência (Semente → Fruto): os mesmos que a caravana
+        // mostra ao abrir o seu perfil.
+        pad(const LivingSeedCard()),
+        const SizedBox(height: AppSpace.md),
         pad(const ProfileAccuracyCard()),
         const SizedBox(height: AppSpace.md),
         pad(const ExplainedErrorsCard()),
-      ] else
+      ] else ...[
+        pad(const LivingSeedCard()),
+        const SizedBox(height: AppSpace.md),
         pad(const ProfilePlusTeaser()),
+      ],
       if (progress.hasOpenWeeklyQuests) ...[
         const SizedBox(height: AppSpace.md),
         pad(const WeeklyQuestsCard()),

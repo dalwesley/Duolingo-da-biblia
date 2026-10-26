@@ -742,9 +742,9 @@
     "es": "Una escena hoy enciende el primer día."
   },
   "profileStreakRemaining": {
-    "pt": "Faltam {left} para o compromisso de {goal} dias.",
+    "pt": "{left, plural, =1{Falta 1 para o compromisso de {goal} dias.} other{Faltam {left} para o compromisso de {goal} dias.}}",
     "en": "{left} left for the {goal}-day commitment.",
-    "es": "Faltan {left} para el compromiso de {goal} días.",
+    "es": "{left, plural, =1{Falta 1 para el compromiso de {goal} días.} other{Faltan {left} para el compromiso de {goal} días.}}",
     "placeholders": {
       "left": "int",
       "goal": "int"
@@ -943,9 +943,9 @@
     "es": "Rutas por tema"
   },
   "paywallPerkThemesBody": {
-    "pt": "Sermão do Monte, Oração, Família, Ansiedade e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.",
-    "en": "Sermon on the Mount, Prayer, Family, Anxiety and other Christian life paths. The first scene of each is free.",
-    "es": "Sermón del Monte, Oración, Familia, Ansiedad y otras rutas de Vida Cristiana. La primera escena de cada una es gratis."
+    "pt": "Sermão do Monte, Oração, Família e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.",
+    "en": "Sermon on the Mount, Prayer, Family and other Christian life paths. The first scene of each is free.",
+    "es": "Sermón del Monte, Oración, Familia y otras rutas de Vida Cristiana. La primera escena de cada una es gratis."
   },
   "paywallPerkSeasonTitle": {
     "pt": "Trilhas da estação",

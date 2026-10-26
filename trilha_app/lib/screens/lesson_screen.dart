@@ -8,13 +8,17 @@ import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
+import '../models/corner_challenge.dart';
+import '../models/study_room.dart';
 import '../models/trail.dart';
 import '../services/plus_log.dart';
 import '../services/analytics_service.dart';
+import '../services/backend_service.dart';
 import '../services/bible_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/corner_service.dart';
 import '../services/progress_service.dart';
+import '../services/room_service.dart';
 import '../services/session_composer.dart';
 import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
@@ -73,6 +77,11 @@ class LessonScreen extends StatefulWidget {
   /// aqui também — não só no botão que empurra a rota.
   final bool requiresPlus;
 
+  /// O fluxo que abriu a cena já decidiu o Peregrino+ (Caminhada: dias
+  /// 1–3 grátis, 4+ conferido na tela da temporada; tentar de novo a cena
+  /// que acabou de passar pela trava).
+  final bool plusGateDone;
+
   const LessonScreen({
     super.key,
     required this.missionSlug,
@@ -81,6 +90,7 @@ class LessonScreen extends StatefulWidget {
     this.missionOverride,
     this.questionIdsOverride,
     this.requiresPlus = false,
+    this.plusGateDone = false,
   });
 
   @override
@@ -163,6 +173,66 @@ class _LessonScreenState extends State<LessonScreen>
     super.dispose();
   }
 
+  /// A cena pode abrir pelo lado do Peregrino+? Sim com o Plus, na
+  /// amostra (1ª cena da trilha) ou quando quem paga a liberou: o líder no
+  /// estudo da semana do grupo, o par na Travessia. Uma cena por vez — a
+  /// seguinte da trilha volta a pedir o Plus.
+  Future<bool> _plusAllows(
+    Trail trail, {
+    CornerChallenge? corner,
+    StudyRoom? roomStudy,
+  }) async {
+    if (!PlusAccess.trailIsPlus(trail)) return true;
+    final slug = widget.missionSlug;
+    if (!PlusAccess.missionNeedsPlus(trail, slug)) {
+      PlusLog.log(
+        'trava',
+        'trilha temática ${trail.slug} · cena $slug: amostra grátis (1ª cena)',
+      );
+      return true;
+    }
+    if (context.read<SubscriptionService>().plusFeaturesOpen) {
+      PlusLog.log(
+        'trava',
+        'trilha temática ${trail.slug} · cena $slug: Plus aberto, liberada',
+      );
+      return true;
+    }
+    final backend = context.read<BackendService>();
+    final uid = backend.uid;
+    final grantor = roomStudy != null
+        ? (id: roomStudy.ownerId, name: roomStudy.ownerName)
+        : corner != null && uid != null
+        ? (id: corner.peerId(uid), name: corner.peerName(uid))
+        : null;
+    if (grantor == null || grantor.id.isEmpty || grantor.id == uid) {
+      PlusLog.log(
+        'trava',
+        'trilha temática ${trail.slug} · cena $slug: sem Plus, paywall',
+      );
+      return false;
+    }
+    final granted = await backend.pilgrimHasPlus(grantor.id);
+    PlusLog.log(
+      'trava',
+      'trilha temática ${trail.slug} · cena $slug: '
+          '${roomStudy != null ? 'estudo do grupo' : 'Travessia'} de '
+          '${PlusLog.shortUid(grantor.id)} — '
+          '${granted ? 'tem Plus, liberada' : 'sem Plus, paywall'}',
+    );
+    if (granted && mounted) {
+      unawaited(
+        showAppToastFor(
+          context,
+          message: context.l10n.lessonPlusGrantedBy(grantor.name),
+          glyph: CinematicGlyph.gift,
+          tone: AppToastTone.accent,
+        ),
+      );
+    }
+    return granted;
+  }
+
   Future<void> _load() async {
     if (widget.requiresPlus) {
       final open = context.read<SubscriptionService>().plusFeaturesOpen;
@@ -230,64 +300,59 @@ class _LessonScreenState extends State<LessonScreen>
       );
     }
     // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
-    // Caminhada e Esquina ativa já autorizaram a cena.
-    final cornerOpens =
-        !widget.practiceMode &&
-        context.read<CornerService>().opensMission(widget.missionSlug);
+    // Caminhada, repetir, estudo do grupo e Travessia ativa já autorizaram
+    // a cena — a trava de progresso não se aplica. A do Peregrino+ sim.
+    final corner = widget.practiceMode
+        ? null
+        : context.read<CornerService>().challengeOpening(widget.missionSlug);
+    final roomStudy = widget.practiceMode
+        ? null
+        : context.read<RoomService>().roomStudying(widget.missionSlug);
     if (!widget.practiceMode &&
-        !widget.skipTrailLock &&
-        !cornerOpens &&
         widget.missionOverride == null &&
         trailSlug != null) {
       final trails = await _repo.getTrails();
+      if (!mounted) return;
       final trail = trails.where((t) => t.slug == trailSlug).firstOrNull;
       if (trail != null) {
         final visibleCompleted = progress.completedMissionsForTrail(
           trailSlug: trail.slug,
           missionSlugs: trail.missionSlugs,
         );
-        final unlockedTrail = TrailProgress.isTrailUnlocked(
-          trail,
-          trails,
-          visibleCompleted,
-          clearedTrailModes: progress.clearedTrailModes,
-        );
-        final unlockedMission = TrailProgress.isMissionUnlocked(
-          widget.missionSlug,
-          trail.missionSlugs,
-          visibleCompleted,
-        );
         final alreadyDone = visibleCompleted.contains(widget.missionSlug);
-        if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
-          if (!mounted) return;
-          await showAppToastFor(
-            context,
-            message: context.l10n.lessonLocked,
-            glyph: CinematicGlyph.lock,
-            tone: AppToastTone.warn,
+        if (!widget.skipTrailLock && corner == null && roomStudy == null) {
+          final unlockedTrail = TrailProgress.isTrailUnlocked(
+            trail,
+            trails,
+            visibleCompleted,
+            clearedTrailModes: progress.clearedTrailModes,
           );
-          if (!mounted) return;
-          Navigator.of(context).pop();
-          return;
-        }
-        // Trilha temática: da 2ª cena em diante só com o Peregrino+.
-        // A checagem mora aqui para valer no mapa, na Home e no deep link.
-        if (!mounted) return;
-        if (PlusAccess.trailIsPlus(trail)) {
-          final needs = PlusAccess.missionNeedsPlus(trail, widget.missionSlug);
-          final open = context.read<SubscriptionService>().plusFeaturesOpen;
-          PlusLog.log(
-            'trava',
-            'trilha temática ${trail.slug} · cena ${widget.missionSlug}: '
-                '${!needs
-                    ? 'amostra grátis (1ª cena)'
-                    : open
-                    ? 'Plus aberto, liberada'
-                    : 'sem Plus, paywall'}',
+          final unlockedMission = TrailProgress.isMissionUnlocked(
+            widget.missionSlug,
+            trail.missionSlugs,
+            visibleCompleted,
           );
+          if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
+            await showAppToastFor(
+              context,
+              message: context.l10n.lessonLocked,
+              glyph: CinematicGlyph.lock,
+              tone: AppToastTone.warn,
+            );
+            if (!mounted) return;
+            Navigator.of(context).pop();
+            return;
+          }
         }
-        if (PlusAccess.missionNeedsPlus(trail, widget.missionSlug) &&
-            !context.read<SubscriptionService>().plusFeaturesOpen) {
+        // Trilha temática: da 2ª cena em diante só com o Peregrino+, em
+        // qualquer caminho (mapa, Home, deep link, grupo, Travessia). Fica
+        // de fora o que o fluxo já decidiu (Caminhada, [requiresPlus]) e a
+        // cena já feita, que sempre se pode repetir.
+        if (!widget.plusGateDone &&
+            !widget.requiresPlus &&
+            !alreadyDone &&
+            !await _plusAllows(trail, corner: corner, roomStudy: roomStudy)) {
+          if (!mounted) return;
           await Navigator.of(context).pushReplacement(
             MaterialPageRoute<void>(
               builder: (_) => const PaywallScreen(source: 'trail'),
@@ -295,6 +360,7 @@ class _LessonScreenState extends State<LessonScreen>
           );
           return;
         }
+        if (!mounted) return;
       }
     }
 

@@ -320,6 +320,10 @@ class _HeroContinueCardState extends State<HeroContinueCard>
               curve: AppMotion.enter,
               height: heroHeight,
               decoration: BoxDecoration(
+                // Chão sólido: sem ele, enquanto a pintura decodifica, a
+                // sombra (escura + ouro) aparece por dentro e o card fica
+                // marrom. Mesmo fundo dos cards de Trilhas.
+                color: const Color(0xFF0A1018),
                 borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
                 border: Border.all(color: style.border, width: borderWidth),
                 boxShadow: [
@@ -355,6 +359,17 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               alignment: const Alignment(0, -0.1),
                               gaplessPlayback: true,
                               filterQuality: FilterQuality.medium,
+                              // Já em cache: aparece direto. Primeira vez:
+                              // entra suave sobre o chão escuro.
+                              frameBuilder: (context, child, frame, sync) =>
+                                  sync
+                                  ? child
+                                  : AnimatedOpacity(
+                                      opacity: frame == null ? 0 : 1,
+                                      duration: AppMotion.slow,
+                                      curve: AppMotion.enter,
+                                      child: child,
+                                    ),
                             )
                           else
                             ArtLift(

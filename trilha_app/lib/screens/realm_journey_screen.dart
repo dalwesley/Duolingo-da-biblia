@@ -15,17 +15,18 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/plus_access.dart';
+import '../data/bible_book_intros.dart';
+import '../data/trail_art.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
+import '../utils/trail_visuals.dart';
 import '../widgets/act_feel.dart';
-import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/journey_path.dart';
 import '../widgets/journey_sky.dart';
+import '../widgets/path_preview_sheet.dart';
 import '../widgets/top_bar.dart';
-import '../widgets/cloud_mascot.dart';
-import '../widgets/ui_primitives.dart';
 import 'paywall_screen.dart';
 import 'trail_map_screen.dart';
 
@@ -336,43 +337,103 @@ void openJourneyItem(BuildContext context, JourneyPathItem item) {
   }
 
   final visuals = RealmVisuals.of(TrailRealm.fromId(trail.realmId));
-  showAppSheet<void>(
+  final l10n = context.l10n;
+  final status = item.state == JourneyNodeState.locked
+      ? (item.lockedBy != null
+            ? l10n.journeyLockedFinish(item.lockedBy!)
+            : l10n.journeyLockedHint)
+      : l10n.journeySoonHint;
+  final missions = [
+    for (final module in trail.modules) ...module.missions,
+  ];
+  final sceneCount = missions.length;
+  final chips = <String>[
+    if (sceneCount > 0) l10n.commonScenes(sceneCount),
+  ];
+  // Roteiro: títulos das cenas (ou módulos, se forem muitos).
+  final outline = sceneCount <= 8
+      ? [
+          for (final mission in missions.take(6)) mission.localizedTitle,
+          if (sceneCount > 6) '…',
+        ]
+      : [for (final module in trail.modules) module.title];
+  final abbrev = _bibleAbbrevForTrail(trail.slug);
+  final bookIntro = abbrev == null
+      ? null
+      : BibleBookIntros.of(abbrev, bookName: trail.localizedTitle);
+  showPathPreviewSheet(
     context,
-    builder: (ctx) {
-      return AppSheetPanel(
-        padding: const EdgeInsets.fromLTRB(
-          AppSpace.xxl,
-          AppSpace.md,
-          AppSpace.xxl,
-          AppSpace.xxl,
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const SizedBox(height: AppSpace.sm),
-            AppSheetHeader(
-              face: CloudFace.triste,
-              title: trail.localizedTitle,
-              subtitle: trail.localizedDescription,
-              center: true,
-            ),
-            const SizedBox(height: AppSpace.xxl),
-            Text(
-              item.state == JourneyNodeState.locked
-                  ? (item.lockedBy != null
-                        ? ctx.l10n.journeyLockedFinish(item.lockedBy!)
-                        : ctx.l10n.journeyLockedHint)
-                  : ctx.l10n.journeySoonHint,
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 13,
-                color: visuals.accent.withValues(alpha: 0.9),
-                letterSpacing: 0.3,
-              ),
-            ),
-          ],
-        ),
-      );
-    },
+    title: trail.localizedTitle,
+    description: trail.localizedDescription,
+    art: TrailArt.of(trail.slug),
+    accent: visuals.accent,
+    eyebrow: visuals.eyebrow,
+    statusLabel: status,
+    glyph: TrailVisuals.forTrail(trail).glyph,
+    chips: chips,
+    detail: bookIntro?.summary,
+    outline: outline,
   );
 }
+
+/// Abreviação canônica quando a trilha é um livro (Salmos → sl).
+String? _bibleAbbrevForTrail(String slug) => switch (slug) {
+  'genesis-1-11' || 'genesis-12-50' => 'gn',
+  'exodo' => 'ex',
+  'levitico' => 'lv',
+  'numeros' => 'nm',
+  'deuteronomio' => 'dt',
+  'josue' => 'js',
+  'juizes' => 'jz',
+  'rute' => 'rt',
+  'samuel' => '1sm',
+  'reis' => '1rs',
+  'cronicas' => '1cr',
+  'esdras' => 'ed',
+  'neemias' => 'ne',
+  'ester' => 'et',
+  'jo' => 'jo',
+  'salmos' => 'sl',
+  'proverbios' => 'pv',
+  'eclesiastes' => 'ec',
+  'cantares' => 'ct',
+  'isaias' => 'is',
+  'jeremias' => 'jr',
+  'lamentacoes' => 'lm',
+  'ezequiel' => 'ez',
+  'daniel' => 'dn',
+  'oseias' => 'os',
+  'joel' => 'jl',
+  'amos' => 'am',
+  'obadias' => 'ob',
+  'jonas' => 'jn',
+  'miqueias' => 'mq',
+  'naum' => 'na',
+  'habacuque' => 'hc',
+  'sofonias' => 'sf',
+  'ageu' => 'ag',
+  'zacarias' => 'zc',
+  'malaquias' => 'ml',
+  'mateus' => 'mt',
+  'marcos' => 'mc',
+  'lucas' => 'lc',
+  'joao' => 'joao',
+  'atos' => 'at',
+  'romanos' => 'rm',
+  'corintios' => '1co',
+  'galatas' => 'gl',
+  'efesios' => 'ef',
+  'filipenses' => 'fp',
+  'colossenses' => 'cl',
+  'tessalonicenses' => '1ts',
+  'timoteo' => '1tm',
+  'tito' => 'tt',
+  'filemom' => 'fm',
+  'hebreus' => 'hb',
+  'tiago' => 'tg',
+  'pedro' => '1pe',
+  'cartas-joao' => '1jo',
+  'judas' => 'jd',
+  'apocalipse' => 'ap',
+  _ => null,
+};
