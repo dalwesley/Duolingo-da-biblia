@@ -48,3 +48,6 @@ admin/exports/desbravadores.json
 # Snapshots locais do publish V3 (regeneráveis; não versionar)
 admin/**/backup/
 admin/v3/_publish_log.txt
+
+# Staging de arte das cenas (instalada em trilha_app/assets/art/)
+admin/arte/cenas/provisorio/
