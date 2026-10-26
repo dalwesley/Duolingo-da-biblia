@@ -1468,6 +1468,7 @@ Future<void> _showVerseActions(
                   chapter: chapter,
                   verse: verse,
                   text: text,
+                  source: 'bible',
                   onOpenRef: onOpenRef,
                 );
               },

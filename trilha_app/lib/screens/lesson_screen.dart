@@ -895,7 +895,7 @@ class _LessonScreenState extends State<LessonScreen>
       ),
     );
     if (open == true && mounted) {
-      await showVerseStudyFromReference(context, ref);
+      await showVerseStudyFromReference(context, ref, source: 'lesson_teach');
     }
   }
 
@@ -903,7 +903,7 @@ class _LessonScreenState extends State<LessonScreen>
     final ref = reference.trim();
     if (ref.isEmpty) return;
     ActHaptics.tap();
-    await showVerseStudyFromReference(context, ref);
+    await showVerseStudyFromReference(context, ref, source: 'lesson_ref');
   }
 
   /// [skip]: o aluno escolheu deixar a pergunta para o fim da cena.
@@ -1495,7 +1495,11 @@ class _PassageSheet extends StatelessWidget {
               expanded: true,
               onTap: () async {
                 Navigator.pop(context);
-                await showVerseStudyFromReference(context, reference);
+                await showVerseStudyFromReference(
+                  context,
+                  reference,
+                  source: 'lesson_feedback',
+                );
               },
             ),
           ],

@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
 
+import '../services/analytics_service.dart';
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
 import '../theme/app_theme.dart';
@@ -29,8 +30,15 @@ Future<void> showVerseStudySheet(
   required int chapter,
   required int verse,
   required String text,
+  required String source,
   void Function(int bookIndex, int chapter, int verse)? onOpenRef,
 }) {
+  unawaited(
+    AnalyticsService.instance.logEvent('verse_study_open', {
+      'source': source,
+      'book_index': bookIndex,
+    }),
+  );
   return showAppSheet<void>(
     context,
     builder: (_) => _VerseStudySheet(
@@ -39,6 +47,7 @@ Future<void> showVerseStudySheet(
       chapter: chapter,
       verse: verse,
       text: text,
+      source: source,
       onOpenRef: onOpenRef,
     ),
   );
@@ -47,8 +56,9 @@ Future<void> showVerseStudySheet(
 /// Abre o estudo Strong a partir de uma referência textual ("Êxodo 16:4").
 Future<void> showVerseStudyFromReference(
   BuildContext context,
-  String reference,
-) async {
+  String reference, {
+  required String source,
+}) async {
   final ref = await BibleService.instance.resolve(reference);
   if (ref == null || !context.mounted) return;
 
@@ -70,6 +80,7 @@ Future<void> showVerseStudyFromReference(
     chapter: ref.chapter,
     verse: verse,
     text: text,
+    source: source,
   );
 }
 
@@ -188,6 +199,9 @@ class _VerseStudySheet extends StatefulWidget {
   final int chapter;
   final int verse;
   final String text;
+
+  /// De onde o estudo foi aberto (analytics).
+  final String source;
   final void Function(int bookIndex, int chapter, int verse)? onOpenRef;
 
   const _VerseStudySheet({
@@ -196,6 +210,7 @@ class _VerseStudySheet extends StatefulWidget {
     required this.chapter,
     required this.verse,
     required this.text,
+    required this.source,
     this.onOpenRef,
   });
 
@@ -215,6 +230,19 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   final _tokenKeys = <int, GlobalKey>{};
 
   String get _ref => '${widget.bookName} ${widget.chapter}:${widget.verse}';
+
+  static const _tabIds = ['word', 'uses', 'links'];
+
+  void _setTab(int i) {
+    if (i == _tab) return;
+    setState(() => _tab = i);
+    unawaited(
+      AnalyticsService.instance.logEvent('verse_study_tab', {
+        'tab': _tabIds[i],
+        'source': widget.source,
+      }),
+    );
+  }
 
   @override
   void initState() {
@@ -331,6 +359,12 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   }
 
   void _openRef(int bookIndex, int chapter, int verse, {int? verseEnd}) {
+    unawaited(
+      AnalyticsService.instance.logEvent('verse_study_ref_open', {
+        'tab': _tabIds[_tab],
+        'source': widget.source,
+      }),
+    );
     showVersePreviewDialog(
       context,
       bookIndex: bookIndex,
@@ -483,7 +517,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                           index: _tab,
                           xrefCount: study.crossRefs.length,
                           occ: _strong?.occurrences,
-                          onChanged: (i) => setState(() => _tab = i),
+                          onChanged: _setTab,
                         ),
                       Expanded(
                         child: SingleChildScrollView(
