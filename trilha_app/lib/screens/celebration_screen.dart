@@ -544,11 +544,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     final pieces = <SetPiece>[];
     final l10n = context.l10n;
 
+    final ids = <String>[];
     final streak = progress.streak;
     final goal = progress.settings.streakGoal;
+    final streakId = 'streak:$streak';
     if (_streakUp &&
         SetPieceMemory.isStreakMilestone(streak, goal: goal) &&
-        await SetPieceMemory.claim('streak:$streak')) {
+        !await SetPieceMemory.seen(streakId)) {
+      ids.add(streakId);
       pieces.add(
         SetPiece(
           eyebrow: l10n.setPieceStreakEyebrow,
@@ -573,9 +576,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 TrailDifficulty.semente.id)
           : null;
       final mode = modeId == null ? null : TrailDifficulty.fromId(modeId);
-      if (await SetPieceMemory.claim(
-        'trailEnd:${widget.trailSlug}:${modeId ?? 'base'}',
-      )) {
+      final trailId = 'trailEnd:${widget.trailSlug}:${modeId ?? 'base'}';
+      if (!await SetPieceMemory.seen(trailId)) {
+        ids.add(trailId);
         pieces.add(
           SetPiece(
             eyebrow: l10n.setPieceTrailEyebrow,
@@ -595,9 +598,11 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (pieces.isEmpty) return;
     // Deixa a celebração contar os passos antes de chamar a cena grande.
     await Future<void>.delayed(const Duration(milliseconds: 2600));
-    for (final piece in pieces) {
+    for (var i = 0; i < pieces.length; i++) {
       if (!mounted) return;
-      await showSetPiece(context, piece);
+      if (await showSetPiece(context, pieces[i])) {
+        await SetPieceMemory.claim(ids[i]);
+      }
     }
   }
 

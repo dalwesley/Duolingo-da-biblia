@@ -117,6 +117,11 @@ class SubscriptionService extends ChangeNotifier {
   String? lastError;
   bool _initialized = false;
   String? _boundUid;
+
+  /// Alguma conta já foi ligada nesta abertura (com ou sem loja). Sem
+  /// isto, o `bindUid(null)` do boot — antes de o login restaurar —
+  /// era lido como "saiu da conta" e apagava o cache de graça offline.
+  bool _hadAccount = false;
   Future<void> _bindChain = Future<void>.value();
 
   /// A oferta da loja chegou com planos. Falha ou lista vazia não trava nada.
@@ -362,6 +367,7 @@ class SubscriptionService extends ChangeNotifier {
       await _endSession();
       return;
     }
+    _hadAccount = true;
     // Cache de outra conta neste aparelho não atravessa a troca: sem
     // isto, a pessoa nova herdava o Plus até a loja responder — e para
     // sempre, se a resposta falhasse.
@@ -408,6 +414,10 @@ class SubscriptionService extends ChangeNotifier {
   Future<void> logOut() => bindUid(null);
 
   Future<void> _endSession() async {
+    // Boot sem conta ainda: nada a encerrar, o cache fica para a conta
+    // que o login trouxer (o [_bindNow] confere o dono dele).
+    if (!_hadAccount) return;
+    _hadAccount = false;
     final wasBound = _boundUid != null;
     _boundUid = null;
     _clearLocalPlus();

@@ -664,7 +664,7 @@ class _AlloyStep extends StatelessWidget {
             id: level.id,
             title: level.title,
             hint: level.hint,
-            glyph: track.glyph,
+            glyph: level.glyph,
             tier: level.tier,
             unlocked: unlocked,
           ),

@@ -39,8 +39,8 @@ void openSeasonPaywall(BuildContext context) {
 }
 
 void openSeasonWalk(BuildContext context) {
-  final now = DateTime.now();
-  final today = DateTime(now.year, now.month, now.day);
+  final progress = context.read<ProgressService>();
+  final today = progress.seasonToday;
   final campaign = SeasonWalkCatalog.current(today);
   final index = campaign.dayIndexOn(today);
   final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
@@ -48,7 +48,6 @@ void openSeasonWalk(BuildContext context) {
     openSeasonPaywall(context);
     return;
   }
-  final progress = context.read<ProgressService>();
   final mode = progress.settings.appearanceMode;
   final appearance = AppearanceStyle.resolve(mode);
   Navigator.of(context).push(
@@ -70,8 +69,7 @@ class SeasonWalkScreen extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
+    final today = progress.seasonToday;
     final campaign = SeasonWalkCatalog.current(today);
     final todayIndex = campaign.dayIndexOn(today);
     final done = progress.walkDatesFor(campaign.id).length;
@@ -282,52 +280,67 @@ class _DayTile extends StatelessWidget {
     );
     final isToday = todayIndex == day.index;
     final locked = !access.playable;
+    final daysUntil = date.difference(today).inDays;
+    final trailName = SeasonWalkCatalog.trailTeaser(day.trailSlug);
+    final title = access.future
+        ? l10n.seasonDayTrailLocked(day.index, trailName)
+        : l10n.seasonDayLine(day.index, day.title);
+    final subtitle = access.future
+        ? l10n.seasonOpensIn(daysUntil)
+        : access.needsPlus
+        ? l10n.seasonPlusFromDay(SeasonWalkAccess.freeDays + 1)
+        : day.insight;
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
-      child: GlassCard(
-        padding: AppMetrics.cardPaddingCompact,
-        onTap: () => _open(context, access, done),
-        child: Row(
-          children: [
-            CinematicIcon(
-              glyph: locked
-                  ? CinematicGlyph.lock
-                  : done
-                  ? CinematicGlyph.check
-                  : CinematicGlyph.calendar,
-              size: AppMetrics.leadingIcon,
-              accent: done
-                  ? AppRoles.success
-                  : isToday
-                  ? a.chrome
-                  : a.textFaint,
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    l10n.seasonDayLine(day.index, day.title),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.title(size: 14, color: a.text),
-                  ),
-                  Text(
-                    access.future
-                        ? l10n.seasonNotTodayYet
-                        : access.needsPlus
-                        ? l10n.seasonPlusFromDay(SeasonWalkAccess.freeDays + 1)
-                        : day.insight,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(size: 12, color: a.textSecondary),
-                  ),
-                ],
+      child: Opacity(
+        opacity: access.future ? 0.72 : 1,
+        child: GlassCard(
+          padding: AppMetrics.cardPaddingCompact,
+          onTap: access.future ? null : () => _open(context, access, done),
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: locked
+                    ? CinematicGlyph.lock
+                    : done
+                    ? CinematicGlyph.check
+                    : CinematicGlyph.calendar,
+                size: AppMetrics.leadingIcon,
+                accent: done
+                    ? AppRoles.success
+                    : isToday
+                    ? a.chrome
+                    : a.textFaint,
               ),
-            ),
-          ],
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.title(
+                        size: 14,
+                        color: access.future ? a.textSecondary : a.text,
+                      ),
+                    ),
+                    Text(
+                      subtitle,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

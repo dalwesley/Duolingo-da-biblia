@@ -251,7 +251,7 @@ List<RecognizableMedal> recognizableMedals({
       final last = trackState.levelIndex;
       for (var i = 0; i <= last && i < track.levels.length; i++) {
         final level = track.levels[i];
-        add(level.id, level.title, track.title, track.glyph, level.tier);
+        add(level.id, level.title, track.title, level.glyph, level.tier);
       }
     }
     for (final rare in vault.rareMedals) {
@@ -271,7 +271,7 @@ RecognizableMedal? medalById(String id, {DateTime? now}) {
     id: level.id,
     title: level.title,
     group: track.title,
-    glyph: track.glyph,
+    glyph: level.glyph,
     tier: level.tier,
   );
 
@@ -326,7 +326,12 @@ RecognizableMedal? medalById(String id, {DateTime? now}) {
     return RecognizableMedal(
       id: id,
       title: title,
-      glyph: CinematicGlyph.book,
+      glyph: switch (index) {
+        1 => CinematicGlyph.seed,
+        2 => CinematicGlyph.path,
+        3 => CinematicGlyph.depths,
+        _ => CinematicGlyph.spark,
+      },
       tier: PilgrimMedalTier.bronze,
     );
   }

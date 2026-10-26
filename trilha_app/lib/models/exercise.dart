@@ -477,7 +477,7 @@ class Exercise {
   }
 
   /// Dica em texto (banco V3): aponta onde olhar sem dizer a resposta.
-  /// Com ela, o botão Dica mostra a frase em vez de apagar uma opção.
+  /// Mora no verso do balão da pergunta; toque vira em vez de apagar opção.
   String? get textHint {
     final t = (retryHint ?? '').trim();
     return t.isEmpty ? null : t;

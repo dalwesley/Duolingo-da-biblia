@@ -42,6 +42,7 @@ class EmbossedGlyph extends StatelessWidget {
                 accent: groove,
                 framed: false,
                 glowing: false,
+                line: true,
               ),
             ),
             Transform.translate(
@@ -52,6 +53,7 @@ class EmbossedGlyph extends StatelessWidget {
                 accent: ridge,
                 framed: false,
                 glowing: false,
+                line: true,
               ),
             ),
             CinematicIcon(
@@ -60,6 +62,7 @@ class EmbossedGlyph extends StatelessWidget {
               accent: fill,
               framed: false,
               glowing: false,
+              line: true,
             ),
           ],
         ),

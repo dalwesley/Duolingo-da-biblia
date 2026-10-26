@@ -18,7 +18,7 @@ import 'ui_primitives.dart';
 
 /// Modo de estudo — uma escolha, uma regra, uma aparência.
 ///
-/// - [ModeBanner]: resumo vivo no mapa da trilha; abre [showModeSheet].
+/// - [ModeBanner]: faixa compacta no mapa da trilha; abre [showModeSheet].
 /// - [ModeCarousel]: os três portais (sheet e primeira escolha).
 /// - [ModeSwitch.select]: a única regra de troca.
 
@@ -806,12 +806,10 @@ class _GlassPill extends StatelessWidget {
 class _PortalProgress extends StatelessWidget {
   final ModeStatus status;
   final Color accent;
-  final String? line;
 
   const _PortalProgress({
     required this.status,
     required this.accent,
-    this.line,
   });
 
   @override
@@ -820,7 +818,7 @@ class _PortalProgress extends StatelessWidget {
     final fill = status.locked && prev != null
         ? DifficultyVisuals.accentFor(prev)
         : accent;
-    final text = line ?? status.progressLine;
+    final text = status.progressLine;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -902,7 +900,7 @@ class _ModeDots extends StatelessWidget {
   }
 }
 
-/// Botão que assume a cor do portal em foco.
+/// Faixa compacta do modo no mapa da trilha — sem cena animada.
 class ModeBanner extends StatefulWidget {
   final String trailSlug;
   final String trailTitle;
@@ -923,25 +921,8 @@ class ModeBanner extends StatefulWidget {
   State<ModeBanner> createState() => _ModeBannerState();
 }
 
-class _ModeBannerState extends State<ModeBanner>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _life;
+class _ModeBannerState extends State<ModeBanner> {
   bool _down = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _life = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 8),
-    )..repeat();
-  }
-
-  @override
-  void dispose() {
-    _life.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -955,9 +936,8 @@ class _ModeBannerState extends State<ModeBanner>
       (s) => s.current,
       orElse: () => statuses.first,
     );
-    // Faixa = cena escura + véu noturno: tinta clara fixa em todos os looks.
+    // Faixa = noite fixa: tinta clara em todos os looks.
     final a = AppearanceStyle.resolve(AppearanceMode.night);
-    final page = Appearance.of(context);
     final d = current.difficulty;
     final accent = DifficultyVisuals.accentFor(d);
     final onSky = DifficultyVisuals.onSky(accent);
@@ -988,146 +968,102 @@ class _ModeBannerState extends State<ModeBanner>
           duration: AppMotion.quick,
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               border: Border.all(
-                color: onSky.withValues(alpha: 0.6),
-                width: 1.4,
+                color: onSky.withValues(alpha: 0.45),
+                width: 1,
+              ),
+              gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [
+                  Color.lerp(AppColors.night, accent, 0.22)!,
+                  Color.lerp(AppColors.night, accent, 0.08)!,
+                ],
               ),
               boxShadow: [
                 BoxShadow(
-                  color: accent.withValues(alpha: 0.24),
-                  blurRadius: 26,
-                  spreadRadius: -6,
-                  offset: const Offset(0, 10),
+                  color: accent.withValues(alpha: 0.14),
+                  blurRadius: 12,
+                  offset: const Offset(0, 4),
                 ),
               ],
             ),
             child: Appearance(
               style: a,
               mode: AppearanceMode.night,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
-                child: Stack(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                child: Row(
                   children: [
-                    Positioned.fill(
-                      child: ArtLift(
-                        page: page,
-                        child: Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            RepaintBoundary(
-                              child: AnimatedBuilder(
-                                animation: _life,
-                                builder: (context, _) => CustomPaint(
-                                  painter: ModeScenePainter(
-                                    difficulty: d,
-                                    color: accent,
-                                    t: _life.value,
-                                    intensity: 0.85,
-                                  ),
-                                ),
-                              ),
+                    _Halo(
+                      difficulty: d,
+                      accent: accent,
+                      size: 40,
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            context.l10n.modeOrdinalBadge(
+                              d.ordinalPt,
+                              current.badge ??
+                                  context.l10n.modeBadgeCurrent,
                             ),
-                            DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.centerLeft,
-                                  end: Alignment.centerRight,
-                                  colors: [
-                                    AppColors.night.withValues(alpha: 0.85),
-                                    AppColors.night.withValues(alpha: 0.2),
-                                  ],
-                                ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.label(
+                              size: 9,
+                              letterSpacing: 1.4,
+                              color: onSky.withValues(alpha: 0.9),
+                            ),
+                          ),
+                          Text(
+                            d.labelPt,
+                            style: AppTypography.display(
+                              size: 17,
+                              height: 1.1,
+                              color: a.text,
+                            ),
+                          ),
+                          if (current.total > 0) ...[
+                            const SizedBox(height: 6),
+                            _BannerProgress(
+                              status: current,
+                              accent: accent,
+                              line: line,
+                            ),
+                          ] else if (line != null) ...[
+                            const SizedBox(height: 2),
+                            Text(
+                              line,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.label(
+                                size: 10,
+                                color: a.textFaint,
                               ),
                             ),
                           ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
-                      child: Row(
-                        children: [
-                          _Halo(
-                            difficulty: d,
-                            accent: accent,
-                            life: _life,
-                            size: 64,
-                          ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Text(
-                                  context.l10n.modeOrdinalBadge(
-                                    d.ordinalPt,
-                                    current.badge ??
-                                        context.l10n.modeBadgeCurrent,
-                                  ),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.label(
-                                    size: 10,
-                                    letterSpacing: 1.6,
-                                    color: onSky.withValues(alpha: 0.9),
-                                  ),
-                                ),
-                                const SizedBox(height: 3),
-                                Text(
-                                  d.labelPt,
-                                  style: AppTypography.display(
-                                    size: 20,
-                                    height: 1.05,
-                                    color: a.text,
-                                  ),
-                                ),
-                                const SizedBox(height: 2),
-                                Text(
-                                  d.taglinePt,
-                                  style: AppTypography.body(
-                                    size: 12,
-                                    weight: FontWeight.w700,
-                                    color: a.textSecondary,
-                                  ),
-                                ),
-                                if (current.total > 0) ...[
-                                  const SizedBox(height: 10),
-                                  _PortalProgress(
-                                    status: current,
-                                    accent: accent,
-                                    line: line,
-                                  ),
-                                ] else if (line != null) ...[
-                                  const SizedBox(height: 6),
-                                  Text(
-                                    line,
-                                    style: AppTypography.label(
-                                      size: 11,
-                                      color: a.textFaint,
-                                    ),
-                                  ),
-                                ],
-                              ],
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              _ModeLadder(statuses: statuses),
-                              const SizedBox(height: 12),
-                              _GlassPill(
-                                text: context.l10n.modeSwitch,
-                                accent: accent,
-                                solid: false,
-                              ),
-                            ],
-                          ),
                         ],
                       ),
+                    ),
+                    const SizedBox(width: 8),
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        _ModeLadder(statuses: statuses),
+                        const SizedBox(height: 8),
+                        _GlassPill(
+                          text: context.l10n.modeSwitch,
+                          accent: accent,
+                          solid: false,
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -1136,6 +1072,48 @@ class _ModeBannerState extends State<ModeBanner>
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Barra fina do banner — sem tween (mapa já carrega pesado).
+class _BannerProgress extends StatelessWidget {
+  final ModeStatus status;
+  final Color accent;
+  final String? line;
+
+  const _BannerProgress({
+    required this.status,
+    required this.accent,
+    this.line,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final prev = status.difficulty.previous;
+    final fill = status.locked && prev != null
+        ? DifficultyVisuals.accentFor(prev)
+        : accent;
+    final text = line ?? status.progressLine;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        AppProgressBar(value: status.fraction, color: fill, height: 4),
+        if (text != null) ...[
+          const SizedBox(height: 4),
+          Text(
+            text,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0.2,
+              color: Appearance.of(context).textSecondary,
+            ),
+          ),
+        ],
+      ],
     );
   }
 }
@@ -1156,8 +1134,8 @@ class _ModeLadder extends StatelessWidget {
       if (i < statuses.length - 1) {
         children.add(
           Container(
-            width: 2,
-            height: 8,
+            width: 1.5,
+            height: 5,
             color: s.cleared
                 ? accent.withValues(alpha: 0.8)
                 : AppRoles.chrome.withValues(alpha: 0.18),
@@ -1166,8 +1144,8 @@ class _ModeLadder extends StatelessWidget {
       }
       children.add(
         Container(
-          width: 14,
-          height: 14,
+          width: 11,
+          height: 11,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: s.cleared
@@ -1179,13 +1157,13 @@ class _ModeLadder extends StatelessWidget {
               color: s.locked
                   ? AppRoles.chrome.withValues(alpha: 0.25)
                   : accent,
-              width: s.current ? 2.2 : 1.4,
+              width: s.current ? 2 : 1.2,
             ),
             boxShadow: s.current
                 ? [
                     BoxShadow(
-                      color: accent.withValues(alpha: 0.6),
-                      blurRadius: 8,
+                      color: accent.withValues(alpha: 0.5),
+                      blurRadius: 5,
                     ),
                   ]
                 : null,
@@ -1194,7 +1172,7 @@ class _ModeLadder extends StatelessWidget {
           child: s.cleared
               ? CinematicIcon(
                   glyph: CinematicGlyph.check,
-                  size: 8,
+                  size: 7,
                   accent: DifficultyVisuals.inkOn(s.difficulty),
                   framed: false,
                 )

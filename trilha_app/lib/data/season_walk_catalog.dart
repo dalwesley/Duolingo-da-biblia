@@ -1,11 +1,37 @@
 import '../l10n/app_language.dart';
+import '../l10n/content_overlay.dart';
 import '../l10n/l10n_global.dart';
 import '../models/season_walk.dart';
 import '../utils/liturgical_calendar.dart';
+import '../utils/season_walk_debug.dart';
 
 /// Playlists da Caminhada — só temporadas litúrgicas. Missões já no cânon.
 class SeasonWalkCatalog {
   SeasonWalkCatalog._();
+
+  /// Arte de fundo do card e do compartilhamento da estação.
+  static String artAsset(SeasonWalkKind kind) => switch (kind) {
+    SeasonWalkKind.advent => 'assets/art/journey_novoTestamento.jpg',
+    SeasonWalkKind.lent => 'assets/art/journey_oracao.jpg',
+  };
+
+  /// Nome da trilha no teaser de dia bloqueado (curiosidade, sem spoiler da cena).
+  /// EN/ES vêm do overlay; PT cai no rótulo canônico do banco.
+  static String trailTeaser(String slug) {
+    final overlay = ContentOverlay.instance.trailField(slug, 'title');
+    if (overlay != null && overlay.isNotEmpty) return overlay;
+    return switch (slug) {
+      'genesis-1-11' => 'Gênesis 1–11',
+      'genesis-12-50' => 'Gênesis 12–50',
+      'exodo' => 'Êxodo',
+      'evangelhos' => 'Os Quatro Evangelhos',
+      'sermao-do-monte' => 'Sermão do Monte',
+      'oracao' => 'Oração',
+      'salmos' => 'Salmos',
+      'filipenses' => 'Filipenses',
+      _ => slug,
+    };
+  }
 
   static SeasonWalkDay _day(
     int i,
@@ -35,15 +61,19 @@ class SeasonWalkCatalog {
   }
 
   static List<SeasonWalkCampaign> all([DateTime? now]) {
-    final day = now ?? DateTime.now();
+    final day = now == null
+        ? SeasonWalkDebug.today()
+        : DateTime(now.year, now.month, now.day);
     final adventStart = LiturgicalCalendar.adventStart(day.year);
     return [advent(adventStart)];
   }
 
   /// Campanha visível: janela ativa, senão a próxima.
+  /// Sem [now], usa o relógio da Caminhada ([SeasonWalkDebug.today]).
   static SeasonWalkCampaign current([DateTime? now]) {
-    final raw = now ?? DateTime.now();
-    final day = DateTime(raw.year, raw.month, raw.day);
+    final day = now == null
+        ? SeasonWalkDebug.today()
+        : DateTime(now.year, now.month, now.day);
     final campaigns = all(day);
     for (final c in campaigns) {
       if (c.contains(day)) return c;

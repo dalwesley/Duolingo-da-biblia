@@ -53,6 +53,12 @@ class MainShell extends StatefulWidget {
 
   const MainShell({super.key, this.initialTrailSlug});
 
+  /// Shell ativo — rotas empilhadas usam pra voltar à aba Hoje.
+  static _MainShellState? _active;
+
+  /// Fecha rotas acima e mostra a aba Hoje.
+  static void goToday() => _active?._goToday();
+
   @override
   State<MainShell> createState() => _MainShellState();
 }
@@ -139,6 +145,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    MainShell._active = this;
     WidgetsBinding.instance.addObserver(this);
     _lastClockPhase = DayPhaseHelper.current();
     _phaseTimer = Timer.periodic(const Duration(minutes: 1), (_) {
@@ -454,6 +461,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   @override
   void dispose() {
+    if (MainShell._active == this) MainShell._active = null;
     WidgetsBinding.instance.removeObserver(this);
     _phaseTimer?.cancel();
     _presenceTimer?.cancel();
@@ -466,6 +474,11 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _backendRef?.removeListener(_onBackendChanged);
     _cornerRef?.removeListener(_onCornerChanged);
     super.dispose();
+  }
+
+  void _goToday() {
+    if (!mounted) return;
+    setState(() => _index = 0);
   }
 
   void _openTrail(String slug) {

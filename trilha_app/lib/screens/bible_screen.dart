@@ -29,6 +29,7 @@ import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_reader_screen.dart';
 import 'bible_reading_plan_screen.dart';
+import 'coming_soon_screen.dart';
 
 export 'bible_reader_screen.dart' show BibleReaderScreen;
 
@@ -425,6 +426,8 @@ class _BibleLibrary extends StatelessWidget {
             const SizedBox(height: AppSpace.md),
             // Navegação livre: retoma de onde parou no leitor.
             _ContinueHero(books: books, onOpenReference: onOpenReference),
+            const SizedBox(height: AppSpace.sm),
+            const _ExploreSoonRow(),
             const SizedBox(height: AppSpace.md),
             _OrderChips(order: order),
           ],
@@ -746,6 +749,51 @@ class _SearchButton extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Linha do tempo, mapas e personagens ainda não existem: a linha abre o
+/// aviso e mede qual ferramenta interessa.
+class _ExploreSoonRow extends StatelessWidget {
+  const _ExploreSoonRow();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return GlassCard(
+      onTap: () {
+        ActHaptics.tap();
+        openComingSoon(context, ComingSoonFeature.explore, source: 'bible');
+      },
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.hourglass,
+            size: AppMetrics.iconMd,
+            accent: a.textSecondary,
+            framed: false,
+          ),
+          const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: Text(
+              context.l10n.exploreSoonEntryTitle,
+              style: AppTypography.body(size: 14, color: a.textSecondary),
+            ),
+          ),
+          const SizedBox(width: AppSpace.sm),
+          Text(
+            context.l10n.exploreSoonEntryBadge.toUpperCase(),
+            style: AppTypography.body(
+              size: 11,
+              weight: FontWeight.w800,
+              color: AppRoles.reward,
+            ),
+          ),
+          const SizedBox(width: AppSpace.xs),
+          ListChevron(color: a.textFaint, size: 18),
+        ],
       ),
     );
   }

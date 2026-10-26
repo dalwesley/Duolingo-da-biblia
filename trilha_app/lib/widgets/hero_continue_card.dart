@@ -4,6 +4,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../cinematic/cinematic_resolver.dart';
+import '../data/trail_art.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -179,11 +180,9 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final mission = widget.mission;
     if (mission == null) return _completedState(context);
 
-    // Palco pintado (arte escura fixa): tinta clara e véus escuros em todos
-    // os looks — no Claro o scrim com `cardFill` clareava o rodapé.
+    // Palco escuro pra texto/scrim. Foto da cena fica fora do ArtLift
+    // (cores naturais); só o mundo pintado sobe com o azul do look.
     final a = AppearanceStyle.resolve(AppearanceMode.night);
-    // Fora do Escuro, o cenário sobe para o azul do look ([ArtLift]) —
-    // senão o hero vira laje preta no céu claro.
     final page = Appearance.of(context);
     final scrimBase = a.cardFill;
     final visuals = TrailVisuals.forSlug(
@@ -249,11 +248,15 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     };
     // Rodapé só é recompensa quando promete passos extras.
     final footerColor = resting ? AppRoles.reward : style.footer;
-    final world = CinematicResolver.ambientForHome(
-      trailSlug: widget.trailSlug,
-      missionTitle: mission.localizedTitle,
-      missionSlug: mission.slug,
-    );
+    // Mesma pintura do card da cena no mapa; sem arte de cena, a da trilha.
+    final sceneArt = TrailArt.ofScene(widget.trailSlug, mission.slug);
+    final world = sceneArt == null
+        ? CinematicResolver.ambientForHome(
+            trailSlug: widget.trailSlug,
+            missionTitle: mission.localizedTitle,
+            missionSlug: mission.slug,
+          )
+        : null;
 
     final countdown = progress.streakRiskCountdown;
     final riskLine = switch (mood) {
@@ -340,27 +343,38 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                 child: Stack(
                   children: [
                     Positioned.fill(
-                      child: ArtLift(
-                        page: page,
-                        child: Stack(
-                          fit: StackFit.expand,
-                          children: [
-                            HeroCardColorGrade(
-                              mood: mood,
-                              child: CinematicBackdrop(world: world),
-                            ),
-                            DecoratedBox(
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: _scrimColors(mood, scrimBase),
-                                  stops: const [0.0, 0.38, 1.0],
-                                ),
+                      // Foto da cena: cores naturais (sem ArtLift azul do
+                      // tema). Mundo pintado ainda sobe com o look.
+                      child: Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          if (sceneArt != null)
+                            Image.asset(
+                              sceneArt,
+                              fit: BoxFit.cover,
+                              alignment: const Alignment(0, -0.1),
+                              gaplessPlayback: true,
+                              filterQuality: FilterQuality.medium,
+                            )
+                          else
+                            ArtLift(
+                              page: page,
+                              child: HeroCardColorGrade(
+                                mood: mood,
+                                child: CinematicBackdrop(world: world!),
                               ),
                             ),
-                          ],
-                        ),
+                          DecoratedBox(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: _scrimColors(mood, scrimBase),
+                                stops: const [0.0, 0.38, 1.0],
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     // Peso da atmosfera sob o texto; só partículas finas por cima.

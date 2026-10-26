@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 
-/// Poço circular — fill suave + borda na cor (padrão tipo Duo, cores STWAY).
+/// Poço circular — fill tingido suave + contorno fino quase invisível.
 class IconWell extends StatelessWidget {
   final double size;
   final Color? accent;
@@ -21,7 +21,7 @@ class IconWell extends StatelessWidget {
     this.onDark,
   });
 
-  static double borderWidth(double size) => (size * 0.06).clamp(1.8, 2.6);
+  static double borderWidth(double size) => (size * 0.025).clamp(0.8, 1.2);
 
   static BoxDecoration decoration({
     required double size,
@@ -36,9 +36,9 @@ class IconWell extends StatelessWidget {
 
     return BoxDecoration(
       shape: BoxShape.circle,
-      color: tone.withValues(alpha: glowing ? 0.32 : 0.22),
+      color: tone.withValues(alpha: glowing ? 0.24 : 0.15),
       border: Border.all(
-        color: tone.withValues(alpha: 0.95),
+        color: tone.withValues(alpha: glowing ? 0.4 : 0.22),
         width: borderWidth(size),
       ),
     );

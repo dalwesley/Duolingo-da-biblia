@@ -120,10 +120,19 @@ class ExercisePanel extends StatefulWidget {
   final bool showFeedback;
   final ValueChanged<String> onSelect;
   final Color accent;
-  final bool hintUsed;
+
+  /// Verso do balão (banco V3). Toque vira; o 1º verso chama [onRevealHint].
+  final String? hintText;
+  final VoidCallback? onRevealHint;
   final Set<String> eliminatedIds;
-  final VoidCallback? onHint;
   final bool outOfLamps;
+
+  /// Toque no Anan: abre o texto da cena (ouvir, estudar).
+  final VoidCallback? onAnan;
+
+  /// O Anan chama a pessoa: balança e escreve [ananCaption] embaixo dele.
+  final bool ananBeckon;
+  final String? ananCaption;
 
   /// Erro que já revela a resposta: a opção certa acende junto da errada.
   final bool revealCorrect;
@@ -145,10 +154,13 @@ class ExercisePanel extends StatefulWidget {
     required this.index,
     required this.total,
     this.accent = AppRoles.chrome,
-    this.hintUsed = false,
+    this.hintText,
+    this.onRevealHint,
     this.eliminatedIds = const {},
-    this.onHint,
     this.outOfLamps = false,
+    this.onAnan,
+    this.ananBeckon = false,
+    this.ananCaption,
     this.revealCorrect = false,
     this.insightFallback,
     this.boardText,
@@ -346,7 +358,11 @@ class _ExercisePanelState extends State<ExercisePanel>
                       : ex.instructionTitle,
                   isPrompt: ex.showsStagePrompt,
                   picked: widget.selected ?? _picked,
-                  hint: widget.hintUsed ? ex.textHint : null,
+                  hint: widget.hintText,
+                  onRevealHint: widget.onRevealHint,
+                  onAnan: widget.onAnan,
+                  beckon: widget.ananBeckon,
+                  caption: widget.ananCaption,
                 ),
               ),
               if (_showNote(ex)) ...[
@@ -877,27 +893,13 @@ class _ExercisePanelState extends State<ExercisePanel>
     ];
   }
 
+  /// A dica mora no Anan (toque nele); aqui fica só o Verificar.
   Widget _footer(Exercise ex, bool canConfirm) {
-    final hintAvailable = widget.onHint != null && ex.supportsHint;
     final waiting = _confirming || widget.selected != null;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (hintAvailable)
-          Align(
-            alignment: Alignment.centerLeft,
-            // Dica é apoio: tinta de legenda — o ouro fica só no Verificar.
-            child: TextCta(
-              label: widget.hintUsed
-                  ? context.l10n.exerciseHintUsed
-                  : context.l10n.exerciseHint,
-              onTap: widget.hintUsed || _locked ? null : widget.onHint,
-              color: widget.hintUsed || _locked
-                  ? Appearance.of(context).textFaint
-                  : Appearance.of(context).textSecondary,
-            ),
-          ),
         // Ao armar, o botão dá um pulinho: a resposta escolhida pede o toque.
         TweenAnimationBuilder<double>(
           key: ValueKey(canConfirm),
@@ -966,19 +968,27 @@ TextStyle _filledWordStyle(TextStyle base, _OptState state) {
 
 /// O enunciado como fala do Anan. O tipo do gesto fica na barra de cima.
 ///
-/// Pedida a dica (banco V3), o balão vira e mostra a frase. Daí em diante
-/// um toque no balão alterna entre a dica e a pergunta.
+/// Com dica (banco V3), o verso já está no balão: toque vira pergunta ↔ dica.
+/// O primeiro verso dispara [onRevealHint].
 class _GestureSeal extends StatefulWidget {
   final String title;
   final bool isPrompt;
   final String? picked;
   final String? hint;
+  final VoidCallback? onRevealHint;
+  final VoidCallback? onAnan;
+  final bool beckon;
+  final String? caption;
 
   const _GestureSeal({
     required this.title,
     required this.isPrompt,
     this.picked,
     this.hint,
+    this.onRevealHint,
+    this.onAnan,
+    this.beckon = false,
+    this.caption,
   });
 
   @override
@@ -986,16 +996,18 @@ class _GestureSeal extends StatefulWidget {
 }
 
 class _GestureSealState extends State<_GestureSeal> {
-  late bool _onHint = _tip.isNotEmpty;
+  bool _onHint = false;
+  bool _revealed = false;
 
   String get _tip => (widget.hint ?? '').trim();
 
   @override
   void didUpdateWidget(covariant _GestureSeal oldWidget) {
     super.didUpdateWidget(oldWidget);
-    final had = (oldWidget.hint ?? '').trim().isNotEmpty;
-    if (!had && _tip.isNotEmpty) _onHint = true;
-    if (_tip.isEmpty) _onHint = false;
+    if (_tip.isEmpty) {
+      _onHint = false;
+      _revealed = false;
+    }
   }
 
   @override
@@ -1005,13 +1017,22 @@ class _GestureSealState extends State<_GestureSeal> {
     final tip = _tip;
     return AnanSideSpeech(
       hop: widget.picked,
+      onAnanTap: widget.onAnan,
+      ananLabel: context.l10n.lessonAnanHelpLabel,
+      beckon: widget.beckon,
+      caption: widget.caption,
       flipped: tip.isNotEmpty && _onHint,
       back: tip.isEmpty ? null : _hintFace(tip),
       onTap: tip.isEmpty
           ? null
           : () {
               ActHaptics.tap();
-              setState(() => _onHint = !_onHint);
+              final showHint = !_onHint;
+              setState(() => _onHint = showHint);
+              if (showHint && !_revealed) {
+                _revealed = true;
+                widget.onRevealHint?.call();
+              }
             },
       // A pergunta inteira, sempre: afirmação longa (V/F do banco V3) desce
       // um passo no tamanho em vez de ser cortada.

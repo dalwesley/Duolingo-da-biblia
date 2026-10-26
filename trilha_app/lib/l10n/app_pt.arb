@@ -1579,6 +1579,16 @@
       }
     }
   },
+  "exploreSoonBody": "Estamos pensando em ferramentas para ver quando, onde e com quem cada cena aconteceu. Marque o que você mais quer usar: isso decide o que vem primeiro.",
+  "exploreSoonEntryBadge": "Em breve",
+  "exploreSoonEntryTitle": "Linha do tempo, mapas e personagens",
+  "exploreSoonItemAtlas": "Mapas: cidades, viagens e onde cada cena aconteceu",
+  "exploreSoonItemCharacters": "Personagens: quem é quem, famílias e histórias",
+  "exploreSoonItemTimeline": "Linha do tempo: reis, profetas e impérios lado a lado",
+  "exploreSoonJoined": "Combinado! Avisaremos você quando abrir.",
+  "exploreSoonMeanwhile": "Enquanto isso, na Bíblia, toque num versículo e em \"Estudar este versículo\" para ver a palavra original e as conexões com outros textos.",
+  "exploreSoonPickHeader": "O que você quer usar?",
+  "exploreSoonTitle": "Explorar a Bíblia está chegando",
   "feedbackAlmost": "Quase",
   "feedbackAnswer": "Resposta",
   "feedbackCheer1": "Isso.",
@@ -2868,6 +2878,19 @@
   "leagueWalkedToday": "Caminhou hoje",
   "legalPrivacy": "Privacidade",
   "legalTerms": "Termos de uso",
+  "lessonAnanHelpLabel": "Pedir ajuda ao Anan",
+  "@lessonAnanHelpLabel": {
+    "description": "Leitor de tela: o Anan da pergunta é um botão"
+  },
+  "lessonAnanHintCta": "Quero uma dica",
+  "lessonAnanStuck": "Ajuda?",
+  "@lessonAnanStuck": {
+    "description": "Legenda sob o Anan depois de um erro ou de um tempo parado"
+  },
+  "lessonAnanTeach": "Toque em mim",
+  "@lessonAnanTeach": {
+    "description": "Legenda sob o Anan até a primeira vez que a pessoa toca nele"
+  },
   "lessonBackToQuestion": "Voltar à pergunta",
   "lessonBonus": "Bônus",
   "lessonBoss": "Travessia",
@@ -2908,6 +2931,7 @@
     }
   },
   "lessonExitTitle": "Sair da cena?",
+  "lessonExploreSoonCta": "Onde e quando isso aconteceu?",
   "lessonFactsLabel": "O que o texto diz",
   "lessonInsightSubtitle": "O que ficou",
   "lessonIntroBossPulse": "{count, plural, =1{Travessia · 1 pergunta} other{Travessia · {count} perguntas}}",
@@ -4051,7 +4075,7 @@
   "notifTomorrowTitle": "Amanhã",
   "notifTrialEndingBody": "Gerencie sua assinatura Peregrino+ nas configurações se não quiser continuar.",
   "notifTrialEndingTitle": "Seu teste grátis termina amanhã",
-  "notifWalkStartsBody": "Dia 1 de {total}: hoje a caravana caminha junto.",
+  "notifWalkStartsBody": "Dia 1 de {total}: hoje a estação abre para todo mundo.",
   "@notifWalkStartsBody": {
     "placeholders": {
       "total": {
@@ -5505,6 +5529,17 @@
       }
     }
   },
+  "seasonDayTrailLocked": "Dia {day} · {trail}",
+  "@seasonDayTrailLocked": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
   "seasonDaysWalked": "{done} / {total} dias caminhados",
   "@seasonDaysWalked": {
     "placeholders": {
@@ -5518,6 +5553,14 @@
   },
   "seasonEnded": "Estação encerrada",
   "seasonNotTodayYet": "Ainda não é hoje",
+  "seasonOpensIn": "{days, plural, =0{Abre hoje} =1{Abre amanhã} other{Abre em {days} dias}}",
+  "@seasonOpensIn": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
   "seasonPlusFromDay": "Peregrino+ a partir do dia {day}.",
   "@seasonPlusFromDay": {
     "placeholders": {
@@ -6397,7 +6440,7 @@
       }
     }
   },
-  "walkTogetherDays": "{count, plural, =1{1 dia caminhado juntos} other{{count} dias caminhados juntos}}",
+  "walkTogetherDays": "{count, plural, =1{1 dia no mesmo ritmo} other{{count} dias no mesmo ritmo}}",
   "@walkTogetherDays": {
     "placeholders": {
       "count": {
@@ -6406,11 +6449,10 @@
     }
   },
   "walkTogetherInvite": "Chamar alguém",
-  "walkTogetherJoin": "Entrar na caminhada",
-  "walkTogetherJoined": "Você está dentro",
-  "walkTogetherKicker": "Caminhada coletiva",
-  "walkTogetherOpen": "Abrir a caminhada",
-  "walkTogetherPitch": "{count} dias, uma cena por dia, com a caravana inteira.",
+  "walkTogetherJoin": "Contar comigo",
+  "walkTogetherKicker": "Estação",
+  "walkTogetherOpen": "Abrir o calendário",
+  "walkTogetherPitch": "{count} dias · uma cena por dia.",
   "@walkTogetherPitch": {
     "placeholders": {
       "count": {
@@ -6418,13 +6460,24 @@
       }
     }
   },
-  "walkTogetherShareText": "{name} vai fazer a caminhada {title} no Stway: uma cena por dia, a partir de {start}. Vem junto?\n\nBaixe: {url}",
+  "walkTogetherShareSubject": "{title} · Stway",
+  "@walkTogetherShareSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "walkTogetherShareText": "{name} te chama para a estação {title} no Stway.\n\n{pitch}\nComeça em {start}.\n\nVem junto nesta espera?\n\nAinda não tem o app?\n{url}",
   "@walkTogetherShareText": {
     "placeholders": {
       "name": {
         "type": "String"
       },
       "title": {
+        "type": "String"
+      },
+      "pitch": {
         "type": "String"
       },
       "start": {
@@ -6443,7 +6496,7 @@
       }
     }
   },
-  "walkTogetherToday": "{count, plural, =0{ninguém caminhou hoje ainda} =1{1 caminhou hoje} other{{count} caminharam hoje}}",
+  "walkTogetherToday": "{count, plural, =0{ninguém fez o dia ainda} =1{1 fez o dia de hoje} other{{count} fizeram o dia de hoje}}",
   "@walkTogetherToday": {
     "placeholders": {
       "count": {
@@ -6451,7 +6504,7 @@
       }
     }
   },
-  "walkTogetherWalkers": "{count, plural, =0{Seja o primeiro a entrar} =1{1 peregrino na caminhada} other{{count} peregrinos na caminhada}}",
+  "walkTogetherWalkers": "{count, plural, =0{Ninguém ainda} =1{1 peregrino} other{{count} peregrinos}}",
   "@walkTogetherWalkers": {
     "placeholders": {
       "count": {

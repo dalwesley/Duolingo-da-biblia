@@ -16,6 +16,7 @@ import '../models/corner_challenge.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
 import '../utils/content_filter.dart';
+import '../utils/season_walk_debug.dart';
 import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
 import '../models/portrait_style.dart';
@@ -175,6 +176,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyStrongTeachOffered = 'strongTeachOffered';
   static const _keyGeloTeachSeen = 'geloTeachSeen';
   static const _keyLampsTeachSeen = 'lampsTeachSeen';
+  static const _keyAnanHelpFound = 'ananHelpFound';
 
   static const maxLamps = 5;
 
@@ -484,6 +486,10 @@ class ProgressService extends ChangeNotifier {
   /// Toast "restam N lâmpadas" já foi mostrado neste aparelho.
   bool lampsTeachSeen = false;
 
+  /// A pessoa já tocou no Anan para pedir ajuda numa cena — ele para de
+  /// chamar com "Toque em mim".
+  bool ananHelpFound = false;
+
   /// Gelo acabou de cobrir ontem neste boot — Home consome 1×.
   bool _pendingGeloTeach = false;
 
@@ -717,6 +723,40 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  static const _keyLabSeasonToday = 'labSeasonToday';
+
+  /// Dia civil usado pela Caminhada (respeita o relógio do laboratório).
+  DateTime get seasonToday => SeasonWalkDebug.today();
+
+  bool get debugSeasonTodayActive => SeasonWalkDebug.active;
+
+  /// Laboratório: força a data da Caminhada (card na home, calendário).
+  /// `null` volta ao relógio real. Fica salvo no aparelho.
+  Future<void> debugSetSeasonToday(DateTime? day) async {
+    if (!kDebugMode) return;
+    SeasonWalkDebug.bind(day);
+    final prefs = await SharedPreferences.getInstance();
+    if (day == null) {
+      await prefs.remove(_keyLabSeasonToday);
+    } else {
+      final d = DateTime(day.year, day.month, day.day);
+      await prefs.setString(
+        _keyLabSeasonToday,
+        d.toIso8601String().substring(0, 10),
+      );
+    }
+    notifyListeners();
+  }
+
+  Future<void> _debugRestoreSeasonToday(SharedPreferences prefs) async {
+    if (!kDebugMode) return;
+    final raw = prefs.getString(_keyLabSeasonToday);
+    final parsed = raw == null ? null : DateTime.tryParse(raw);
+    SeasonWalkDebug.bind(
+      parsed == null ? null : DateTime(parsed.year, parsed.month, parsed.day),
+    );
+  }
+
   /// Há revisão da semana pendente hoje.
   bool get weeklyReviewReady {
     final week = weeklyReviewWeekKey();
@@ -779,6 +819,7 @@ class ProgressService extends ChangeNotifier {
     strongTeachOffered = prefs.getBool(_keyStrongTeachOffered) ?? false;
     geloTeachSeen = prefs.getBool(_keyGeloTeachSeen) ?? false;
     lampsTeachSeen = prefs.getBool(_keyLampsTeachSeen) ?? false;
+    ananHelpFound = prefs.getBool(_keyAnanHelpFound) ?? false;
     nextSceneTitle = prefs.getString(_keyNextSceneTitle);
     nextSceneTease = prefs.getString(_keyNextSceneTease);
     lastInsight = prefs.getString(_keyLastInsight);
@@ -791,6 +832,7 @@ class ProgressService extends ChangeNotifier {
     );
     lastBibleSpot = prefs.getString(_keyLastBibleSpot);
     bibleSepia = prefs.getBool(_keyBibleSepia) ?? false;
+    await _debugRestoreSeasonToday(prefs);
     // Instalação nova sem preferência salva → Automático (segue o horário).
     if (_freshInstall && prefs.getString(_keyAppearanceMode) == null) {
       settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
@@ -3679,6 +3721,16 @@ class ProgressService extends ChangeNotifier {
       await prefs.setBool(_keyLampsTeachSeen, true);
     }());
     return true;
+  }
+
+  /// Lição: primeiro toque no Anan — some o convite da primeira vez.
+  void markAnanHelpFound() {
+    if (ananHelpFound) return;
+    ananHelpFound = true;
+    unawaited(() async {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(_keyAnanHelpFound, true);
+    }());
   }
 
   /// Ainda há quest semanal aberta (não reclamada).

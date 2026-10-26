@@ -1,4 +1,3 @@
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -76,6 +75,32 @@ enum CinematicGlyph {
   // Marca do Peregrino+: o Anan com um +. Só para o Plus (selo, cartões,
   // paywall); a coroa fica com Travessia, perfeição e liderança.
   plus,
+  // Medalhas — cada medalha tem o seu; não reaproveitar fora do cofre.
+  bookmarked,
+  glasses,
+  library,
+  mortarboard,
+  eye,
+  seal,
+  sneaker,
+  bolt,
+  trophy,
+  plane,
+  megaphone,
+  quote,
+  mind,
+  door,
+  night,
+  cactus,
+  walker,
+  calendarCheck,
+  tent,
+  cross,
+  compass,
+  returning,
+  dawn,
+  notebook,
+  trailMap,
 }
 
 class CinematicGlyphResolver {
@@ -259,11 +284,39 @@ class CinematicGlyphResolver {
       CinematicGlyph.back ||
       CinematicGlyph.chevron => accent ?? AppColors.accent,
       CinematicGlyph.stop => AppColors.ember,
+      CinematicGlyph.bookmarked => AppColors.accent,
+      CinematicGlyph.glasses => AppColors.accent,
+      CinematicGlyph.library => AppColors.accent,
+      CinematicGlyph.mortarboard => AppColors.coral,
+      CinematicGlyph.eye => AppColors.coral,
+      CinematicGlyph.seal => AppColors.medalGold,
+      CinematicGlyph.sneaker => AppColors.ember,
+      CinematicGlyph.bolt => AppColors.ember,
+      CinematicGlyph.trophy => AppColors.medalGold,
+      CinematicGlyph.plane => AppColors.accent,
+      CinematicGlyph.megaphone => AppColors.accent,
+      CinematicGlyph.quote => AppColors.clay,
+      CinematicGlyph.mind => AppColors.clay,
+      CinematicGlyph.door => AppColors.sand,
+      CinematicGlyph.night => AppColors.iceSoft,
+      CinematicGlyph.cactus => AppColors.sand,
+      CinematicGlyph.walker => AppColors.sand,
+      CinematicGlyph.calendarCheck => AppColors.sand,
+      CinematicGlyph.tent => AppColors.sand,
+      CinematicGlyph.cross => AppColors.clay,
+      CinematicGlyph.compass => AppColors.medalGold,
+      CinematicGlyph.returning => AppColors.accent,
+      CinematicGlyph.dawn => AppColors.accent,
+      CinematicGlyph.notebook => AppColors.clay,
+      CinematicGlyph.trailMap => AppColors.accent,
     };
   }
 }
 
-/// Ícone premium — silhuetas sólidas em poço circular limpo (sem selo dourado).
+/// Ícone da marca — Phosphor duotone (MIT), num poço circular suave.
+///
+/// O enum segue sendo a fonte de significado; aqui só se troca o desenho.
+/// Lanterna (vidas) e a marca do Plus (Anan com +) seguem desenhadas à mão.
 class CinematicIcon extends StatelessWidget {
   final CinematicGlyph glyph;
   final double size;
@@ -271,6 +324,10 @@ class CinematicIcon extends StatelessWidget {
   final bool framed;
   final bool glowing;
   final bool animate;
+
+  /// Traço único (sem a camada de fundo do duotone). Para glifos gravados ou
+  /// sobrepostos, onde duas camadas embaralham o desenho.
+  final bool line;
 
   const CinematicIcon({
     super.key,
@@ -280,6 +337,7 @@ class CinematicIcon extends StatelessWidget {
     this.framed = true,
     this.glowing = false,
     this.animate = false,
+    this.line = false,
   });
 
   factory CinematicIcon.mission(
@@ -307,18 +365,10 @@ class CinematicIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = accent ?? CinematicGlyphResolver.paletteFor(glyph);
     final onDark = Appearance.of(context).onDark;
-    final glyphSize = framed
-        ? (size - IconWell.borderWidth(size) * 2) * 0.82
-        : size;
-    final child = CustomPaint(
-      size: Size.square(glyphSize),
-      painter: _GlyphPainter(
-        glyph: glyph,
-        color: color,
-        premium: true,
-        onDark: onDark,
-      ),
-    );
+    final ink = onDark
+        ? AppColors.glyphInk(color)
+        : AppColors.glyphInkOnLight(color);
+    final child = _glyph(ink);
 
     if (!framed) {
       return SizedBox(
@@ -328,1593 +378,598 @@ class CinematicIcon extends StatelessWidget {
       );
     }
 
-    final well = IconWell(
+    return IconWell(
       size: size,
       accent: color,
       glowing: glowing,
       onDark: onDark,
       child: child,
     );
-
-    return well;
   }
+
+  Widget _glyph(Color ink) {
+    final codes = _phosphor(glyph);
+    if (codes == null) {
+      final glyphSize = framed ? size * 0.72 : size;
+      return CustomPaint(
+        size: Size.square(glyphSize),
+        painter: _GlyphPainter(glyph: glyph, ink: ink),
+      );
+    }
+    final (bold, base, top) = codes;
+    final glyphSize = framed ? size * 0.58 : size * 0.9;
+    // Chrome e tamanhos pequenos: traço bold, que segura melhor que o duotone.
+    if (line || glyphSize < 20 || _chrome.contains(glyph)) {
+      return Icon(bold, size: glyphSize, color: ink);
+    }
+    return SizedBox.square(
+      dimension: glyphSize,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Icon(base, size: glyphSize, color: ink.withValues(alpha: 0.3)),
+          Icon(top, size: glyphSize, color: ink),
+        ],
+      ),
+    );
+  }
+
+  static const _chrome = {
+    CinematicGlyph.back,
+    CinematicGlyph.forward,
+    CinematicGlyph.chevron,
+    CinematicGlyph.close,
+  };
+
+  static const _bold = 'PhosphorBold';
+  static const _duo = 'PhosphorDuotone';
+
+  /// (bold, fundo do duotone, frente do duotone). Nulo = desenho próprio.
+  /// Tudo const: o build release só embute os glifos usados.
+  static (IconData, IconData, IconData)? _phosphor(CinematicGlyph g) =>
+      switch (g) {
+        CinematicGlyph.cosmos => const (
+          // planet
+          IconData(0xe652, fontFamily: _bold),
+          IconData(0xe652, fontFamily: _duo),
+          IconData(0xe653, fontFamily: _duo),
+        ),
+        CinematicGlyph.sun => const (
+          // sun
+          IconData(0xe472, fontFamily: _bold),
+          IconData(0xe472, fontFamily: _duo),
+          IconData(0xe473, fontFamily: _duo),
+        ),
+        CinematicGlyph.humanity => const (
+          // personArmsSpread
+          IconData(0xecfe, fontFamily: _bold),
+          IconData(0xecfe, fontFamily: _duo),
+          IconData(0xecff, fontFamily: _duo),
+        ),
+        CinematicGlyph.dove => const (
+          // bird
+          IconData(0xe72c, fontFamily: _bold),
+          IconData(0xe72c, fontFamily: _duo),
+          IconData(0xe72d, fontFamily: _duo),
+        ),
+        CinematicGlyph.tree => const (
+          // tree
+          IconData(0xe6da, fontFamily: _bold),
+          IconData(0xe6da, fontFamily: _duo),
+          IconData(0xe6db, fontFamily: _duo),
+        ),
+        CinematicGlyph.fall => const (
+          // orange
+          IconData(0xee40, fontFamily: _bold),
+          IconData(0xee40, fontFamily: _duo),
+          IconData(0xee41, fontFamily: _duo),
+        ),
+        CinematicGlyph.tears => const (
+          // drop
+          IconData(0xe210, fontFamily: _bold),
+          IconData(0xe210, fontFamily: _duo),
+          IconData(0xe211, fontFamily: _duo),
+        ),
+        CinematicGlyph.scales => const (
+          // scales
+          IconData(0xe750, fontFamily: _bold),
+          IconData(0xe750, fontFamily: _duo),
+          IconData(0xe751, fontFamily: _duo),
+        ),
+        CinematicGlyph.flood => const (
+          // boat
+          IconData(0xe786, fontFamily: _bold),
+          IconData(0xe786, fontFamily: _duo),
+          IconData(0xe787, fontFamily: _duo),
+        ),
+        CinematicGlyph.tower => const (
+          // castleTurret
+          IconData(0xe9d0, fontFamily: _bold),
+          IconData(0xe9d0, fontFamily: _duo),
+          IconData(0xe9d1, fontFamily: _duo),
+        ),
+        CinematicGlyph.star => const (
+          // star
+          IconData(0xe46a, fontFamily: _bold),
+          IconData(0xe46a, fontFamily: _duo),
+          IconData(0xe46b, fontFamily: _duo),
+        ),
+        CinematicGlyph.crown => const (
+          // crown
+          IconData(0xe614, fontFamily: _bold),
+          IconData(0xe614, fontFamily: _duo),
+          IconData(0xe615, fontFamily: _duo),
+        ),
+        CinematicGlyph.chain => const (
+          // linkBreak
+          IconData(0xe2e4, fontFamily: _bold),
+          IconData(0xe2e4, fontFamily: _duo),
+          IconData(0xe2e5, fontFamily: _duo),
+        ),
+        CinematicGlyph.sea => const (
+          // waves
+          IconData(0xe6de, fontFamily: _bold),
+          IconData(0xe6de, fontFamily: _duo),
+          IconData(0xe6df, fontFamily: _duo),
+        ),
+        CinematicGlyph.flame => const (
+          // flame
+          IconData(0xe624, fontFamily: _bold),
+          IconData(0xe624, fontFamily: _duo),
+          IconData(0xe625, fontFamily: _duo),
+        ),
+        CinematicGlyph.scroll => const (
+          // scroll
+          IconData(0xeb7a, fontFamily: _bold),
+          IconData(0xeb7a, fontFamily: _duo),
+          IconData(0xeb7b, fontFamily: _duo),
+        ),
+        CinematicGlyph.seed => const (
+          // grains
+          IconData(0xec68, fontFamily: _bold),
+          IconData(0xec68, fontFamily: _duo),
+          IconData(0xec69, fontFamily: _duo),
+        ),
+        CinematicGlyph.path => const (
+          // footprints
+          IconData(0xea88, fontFamily: _bold),
+          IconData(0xea88, fontFamily: _duo),
+          IconData(0xea89, fontFamily: _duo),
+        ),
+        CinematicGlyph.depths => const (
+          // anchor
+          IconData(0xe514, fontFamily: _bold),
+          IconData(0xe514, fontFamily: _duo),
+          IconData(0xe515, fontFamily: _duo),
+        ),
+        CinematicGlyph.spark => const (
+          // sparkle
+          IconData(0xe6a2, fontFamily: _bold),
+          IconData(0xe6a2, fontFamily: _duo),
+          IconData(0xe6a3, fontFamily: _duo),
+        ),
+        CinematicGlyph.heart => const (
+          // heart
+          IconData(0xe2a8, fontFamily: _bold),
+          IconData(0xe2a8, fontFamily: _duo),
+          IconData(0xe2a9, fontFamily: _duo),
+        ),
+        CinematicGlyph.mountain => const (
+          // mountains
+          IconData(0xe7ae, fontFamily: _bold),
+          IconData(0xe7ae, fontFamily: _duo),
+          IconData(0xe7af, fontFamily: _duo),
+        ),
+        CinematicGlyph.book => const (
+          // bookOpenText
+          IconData(0xe8f2, fontFamily: _bold),
+          IconData(0xe8f2, fontFamily: _duo),
+          IconData(0xe8f3, fontFamily: _duo),
+        ),
+        CinematicGlyph.calendar => const (
+          // calendarDots
+          IconData(0xe7b4, fontFamily: _bold),
+          IconData(0xe7b4, fontFamily: _duo),
+          IconData(0xe7b5, fontFamily: _duo),
+        ),
+        CinematicGlyph.gem => const (
+          // diamond
+          IconData(0xe1ec, fontFamily: _bold),
+          IconData(0xe1ec, fontFamily: _duo),
+          IconData(0xe1ed, fontFamily: _duo),
+        ),
+        CinematicGlyph.check => const (
+          // checkCircle
+          IconData(0xe184, fontFamily: _bold),
+          IconData(0xe184, fontFamily: _duo),
+          IconData(0xe185, fontFamily: _duo),
+        ),
+        CinematicGlyph.echo => const (
+          // speakerHigh
+          IconData(0xe44a, fontFamily: _bold),
+          IconData(0xe44a, fontFamily: _duo),
+          IconData(0xe44b, fontFamily: _duo),
+        ),
+        CinematicGlyph.target => const (
+          // target
+          IconData(0xe47c, fontFamily: _bold),
+          IconData(0xe47c, fontFamily: _duo),
+          IconData(0xe47d, fontFamily: _duo),
+        ),
+        CinematicGlyph.tune => const (
+          // slidersHorizontal
+          IconData(0xe434, fontFamily: _bold),
+          IconData(0xe434, fontFamily: _duo),
+          IconData(0xe435, fontFamily: _duo),
+        ),
+        CinematicGlyph.pencil => const (
+          // pencilSimple
+          IconData(0xe3b4, fontFamily: _bold),
+          IconData(0xe3b4, fontFamily: _duo),
+          IconData(0xe3b5, fontFamily: _duo),
+        ),
+        CinematicGlyph.lock => const (
+          // lock
+          IconData(0xe2fa, fontFamily: _bold),
+          IconData(0xe2fa, fontFamily: _duo),
+          IconData(0xe2fb, fontFamily: _duo),
+        ),
+        CinematicGlyph.search => const (
+          // magnifyingGlass
+          IconData(0xe30c, fontFamily: _bold),
+          IconData(0xe30c, fontFamily: _duo),
+          IconData(0xe30d, fontFamily: _duo),
+        ),
+        CinematicGlyph.shield => const (
+          // shieldCheck
+          IconData(0xe40c, fontFamily: _bold),
+          IconData(0xe40c, fontFamily: _duo),
+          IconData(0xe40f, fontFamily: _duo),
+        ),
+        CinematicGlyph.mail => const (
+          // envelopeSimple
+          IconData(0xe218, fontFamily: _bold),
+          IconData(0xe218, fontFamily: _duo),
+          IconData(0xe219, fontFamily: _duo),
+        ),
+        CinematicGlyph.frost => const (
+          // snowflake
+          IconData(0xe5aa, fontFamily: _bold),
+          IconData(0xe5aa, fontFamily: _duo),
+          IconData(0xe5ab, fontFamily: _duo),
+        ),
+        CinematicGlyph.share => const (
+          // shareNetwork
+          IconData(0xe408, fontFamily: _bold),
+          IconData(0xe408, fontFamily: _duo),
+          IconData(0xe40b, fontFamily: _duo),
+        ),
+        CinematicGlyph.qr => const (
+          // qrCode
+          IconData(0xe3e6, fontFamily: _bold),
+          IconData(0xe3e6, fontFamily: _duo),
+          IconData(0xe3e7, fontFamily: _duo),
+        ),
+        CinematicGlyph.copy => const (
+          // copy
+          IconData(0xe1ca, fontFamily: _bold),
+          IconData(0xe1ca, fontFamily: _duo),
+          IconData(0xe1cb, fontFamily: _duo),
+        ),
+        CinematicGlyph.podium => const (
+          // ranking
+          IconData(0xed62, fontFamily: _bold),
+          IconData(0xed62, fontFamily: _duo),
+          IconData(0xed63, fontFamily: _duo),
+        ),
+        CinematicGlyph.rise => const (
+          // arrowFatUp
+          IconData(0xe52e, fontFamily: _bold),
+          IconData(0xe52e, fontFamily: _duo),
+          IconData(0xe52f, fontFamily: _duo),
+        ),
+        CinematicGlyph.demote => const (
+          // arrowFatDown
+          IconData(0xe518, fontFamily: _bold),
+          IconData(0xe518, fontFamily: _duo),
+          IconData(0xe519, fontFamily: _duo),
+        ),
+        CinematicGlyph.people => const (
+          // usersThree
+          IconData(0xe68e, fontFamily: _bold),
+          IconData(0xe68e, fontFamily: _duo),
+          IconData(0xe68f, fontFamily: _duo),
+        ),
+        CinematicGlyph.home => const (
+          // house
+          IconData(0xe2c2, fontFamily: _bold),
+          IconData(0xe2c2, fontFamily: _duo),
+          IconData(0xe2c3, fontFamily: _duo),
+        ),
+        CinematicGlyph.back => const (
+          // caretLeft
+          IconData(0xe138, fontFamily: _bold),
+          IconData(0xe138, fontFamily: _duo),
+          IconData(0xe139, fontFamily: _duo),
+        ),
+        CinematicGlyph.tap => const (
+          // handTap
+          IconData(0xec90, fontFamily: _bold),
+          IconData(0xec90, fontFamily: _duo),
+          IconData(0xec91, fontFamily: _duo),
+        ),
+        CinematicGlyph.stack => const (
+          // listNumbers
+          IconData(0xe2f6, fontFamily: _bold),
+          IconData(0xe2f6, fontFamily: _duo),
+          IconData(0xe2f7, fontFamily: _duo),
+        ),
+        CinematicGlyph.gap => const (
+          // textbox
+          IconData(0xeb0a, fontFamily: _bold),
+          IconData(0xeb0a, fontFamily: _duo),
+          IconData(0xeb0b, fontFamily: _duo),
+        ),
+        CinematicGlyph.link => const (
+          // link
+          IconData(0xe2e2, fontFamily: _bold),
+          IconData(0xe2e2, fontFamily: _duo),
+          IconData(0xe2e3, fontFamily: _duo),
+        ),
+        CinematicGlyph.forward => const (
+          // arrowRight
+          IconData(0xe06c, fontFamily: _bold),
+          IconData(0xe06c, fontFamily: _duo),
+          IconData(0xe06d, fontFamily: _duo),
+        ),
+        CinematicGlyph.chevron => const (
+          // caretRight
+          IconData(0xe13a, fontFamily: _bold),
+          IconData(0xe13a, fontFamily: _duo),
+          IconData(0xe13b, fontFamily: _duo),
+        ),
+        CinematicGlyph.close => const (
+          // x
+          IconData(0xe4f6, fontFamily: _bold),
+          IconData(0xe4f6, fontFamily: _duo),
+          IconData(0xe4f7, fontFamily: _duo),
+        ),
+        CinematicGlyph.bookmark => const (
+          // bookmarkSimple
+          IconData(0xe0ea, fontFamily: _bold),
+          IconData(0xe0ea, fontFamily: _duo),
+          IconData(0xe0eb, fontFamily: _duo),
+        ),
+        CinematicGlyph.gift => const (
+          // gift
+          IconData(0xe276, fontFamily: _bold),
+          IconData(0xe276, fontFamily: _duo),
+          IconData(0xe277, fontFamily: _duo),
+        ),
+        CinematicGlyph.bell => const (
+          // bell
+          IconData(0xe0ce, fontFamily: _bold),
+          IconData(0xe0ce, fontFamily: _duo),
+          IconData(0xe0cf, fontFamily: _duo),
+        ),
+        CinematicGlyph.wrong => const (
+          // xCircle
+          IconData(0xe4f8, fontFamily: _bold),
+          IconData(0xe4f8, fontFamily: _duo),
+          IconData(0xe4f9, fontFamily: _duo),
+        ),
+        CinematicGlyph.flag => const (
+          // flag
+          IconData(0xe244, fontFamily: _bold),
+          IconData(0xe244, fontFamily: _duo),
+          IconData(0xe245, fontFamily: _duo),
+        ),
+        CinematicGlyph.refresh => const (
+          // arrowClockwise
+          IconData(0xe036, fontFamily: _bold),
+          IconData(0xe036, fontFamily: _duo),
+          IconData(0xe037, fontFamily: _duo),
+        ),
+        CinematicGlyph.stop => const (
+          // stop
+          IconData(0xe46c, fontFamily: _bold),
+          IconData(0xe46c, fontFamily: _duo),
+          IconData(0xe46d, fontFamily: _duo),
+        ),
+        CinematicGlyph.sprout => const (
+          // plant
+          IconData(0xebae, fontFamily: _bold),
+          IconData(0xebae, fontFamily: _duo),
+          IconData(0xebaf, fontFamily: _duo),
+        ),
+        CinematicGlyph.hourglass => const (
+          // hourglassHigh
+          IconData(0xe2b4, fontFamily: _bold),
+          IconData(0xe2b4, fontFamily: _duo),
+          IconData(0xe2b5, fontFamily: _duo),
+        ),
+        CinematicGlyph.bookmarked => const (
+          // bookBookmark
+          IconData(0xe0e4, fontFamily: _bold),
+          IconData(0xe0e4, fontFamily: _duo),
+          IconData(0xe0e5, fontFamily: _duo),
+        ),
+        CinematicGlyph.glasses => const (
+          // eyeglasses
+          IconData(0xe7ba, fontFamily: _bold),
+          IconData(0xe7ba, fontFamily: _duo),
+          IconData(0xe7bb, fontFamily: _duo),
+        ),
+        CinematicGlyph.library => const (
+          // books
+          IconData(0xe758, fontFamily: _bold),
+          IconData(0xe758, fontFamily: _duo),
+          IconData(0xe759, fontFamily: _duo),
+        ),
+        CinematicGlyph.mortarboard => const (
+          // graduationCap
+          IconData(0xe62c, fontFamily: _bold),
+          IconData(0xe62c, fontFamily: _duo),
+          IconData(0xe62d, fontFamily: _duo),
+        ),
+        CinematicGlyph.eye => const (
+          // eye
+          IconData(0xe220, fontFamily: _bold),
+          IconData(0xe220, fontFamily: _duo),
+          IconData(0xe221, fontFamily: _duo),
+        ),
+        CinematicGlyph.seal => const (
+          // sealCheck
+          IconData(0xe606, fontFamily: _bold),
+          IconData(0xe606, fontFamily: _duo),
+          IconData(0xe607, fontFamily: _duo),
+        ),
+        CinematicGlyph.sneaker => const (
+          // sneakerMove
+          IconData(0xed60, fontFamily: _bold),
+          IconData(0xed60, fontFamily: _duo),
+          IconData(0xed61, fontFamily: _duo),
+        ),
+        CinematicGlyph.bolt => const (
+          // lightning
+          IconData(0xe2de, fontFamily: _bold),
+          IconData(0xe2de, fontFamily: _duo),
+          IconData(0xe2df, fontFamily: _duo),
+        ),
+        CinematicGlyph.trophy => const (
+          // trophy
+          IconData(0xe67e, fontFamily: _bold),
+          IconData(0xe67e, fontFamily: _duo),
+          IconData(0xe67f, fontFamily: _duo),
+        ),
+        CinematicGlyph.plane => const (
+          // paperPlaneTilt
+          IconData(0xe398, fontFamily: _bold),
+          IconData(0xe398, fontFamily: _duo),
+          IconData(0xe399, fontFamily: _duo),
+        ),
+        CinematicGlyph.megaphone => const (
+          // megaphone
+          IconData(0xe324, fontFamily: _bold),
+          IconData(0xe324, fontFamily: _duo),
+          IconData(0xe325, fontFamily: _duo),
+        ),
+        CinematicGlyph.quote => const (
+          // quotes
+          IconData(0xe660, fontFamily: _bold),
+          IconData(0xe660, fontFamily: _duo),
+          IconData(0xe661, fontFamily: _duo),
+        ),
+        CinematicGlyph.mind => const (
+          // brain
+          IconData(0xe74e, fontFamily: _bold),
+          IconData(0xe74e, fontFamily: _duo),
+          IconData(0xe74f, fontFamily: _duo),
+        ),
+        CinematicGlyph.door => const (
+          // doorOpen
+          IconData(0xe7e6, fontFamily: _bold),
+          IconData(0xe7e6, fontFamily: _duo),
+          IconData(0xe7e7, fontFamily: _duo),
+        ),
+        CinematicGlyph.night => const (
+          // moonStars
+          IconData(0xe58e, fontFamily: _bold),
+          IconData(0xe58e, fontFamily: _duo),
+          IconData(0xe58f, fontFamily: _duo),
+        ),
+        CinematicGlyph.cactus => const (
+          // cactus
+          IconData(0xe918, fontFamily: _bold),
+          IconData(0xe918, fontFamily: _duo),
+          IconData(0xe919, fontFamily: _duo),
+        ),
+        CinematicGlyph.walker => const (
+          // personSimpleWalk
+          IconData(0xe73a, fontFamily: _bold),
+          IconData(0xe73a, fontFamily: _duo),
+          IconData(0xe73b, fontFamily: _duo),
+        ),
+        CinematicGlyph.calendarCheck => const (
+          // calendarCheck
+          IconData(0xe712, fontFamily: _bold),
+          IconData(0xe712, fontFamily: _duo),
+          IconData(0xe713, fontFamily: _duo),
+        ),
+        CinematicGlyph.tent => const (
+          // tent
+          IconData(0xe8ba, fontFamily: _bold),
+          IconData(0xe8ba, fontFamily: _duo),
+          IconData(0xe8bb, fontFamily: _duo),
+        ),
+        CinematicGlyph.cross => const (
+          // cross
+          IconData(0xe8a0, fontFamily: _bold),
+          IconData(0xe8a0, fontFamily: _duo),
+          IconData(0xe8a1, fontFamily: _duo),
+        ),
+        CinematicGlyph.compass => const (
+          // compass
+          IconData(0xe1c8, fontFamily: _bold),
+          IconData(0xe1c8, fontFamily: _duo),
+          IconData(0xe1c9, fontFamily: _duo),
+        ),
+        CinematicGlyph.returning => const (
+          // arrowUUpLeft
+          IconData(0xe08a, fontFamily: _bold),
+          IconData(0xe08a, fontFamily: _duo),
+          IconData(0xe08b, fontFamily: _duo),
+        ),
+        CinematicGlyph.dawn => const (
+          // sunHorizon
+          IconData(0xe5b6, fontFamily: _bold),
+          IconData(0xe5b6, fontFamily: _duo),
+          IconData(0xe5b7, fontFamily: _duo),
+        ),
+        CinematicGlyph.notebook => const (
+          // notebook
+          IconData(0xe34e, fontFamily: _bold),
+          IconData(0xe34e, fontFamily: _duo),
+          IconData(0xe34f, fontFamily: _duo),
+        ),
+        CinematicGlyph.trailMap => const (
+          // mapTrifold
+          IconData(0xe31a, fontFamily: _bold),
+          IconData(0xe31a, fontFamily: _duo),
+          IconData(0xe31b, fontFamily: _duo),
+        ),
+        CinematicGlyph.lamp || CinematicGlyph.plus => null,
+      };
 }
 
-/// Silhuetas sólidas — fill denso, legível em fundos escuros.
+/// Os dois glifos que não vêm do Phosphor: lanterna e marca do Plus.
 class _GlyphPainter extends CustomPainter {
   final CinematicGlyph glyph;
-  final Color color;
-  final bool premium;
-  final bool onDark;
+  final Color ink;
 
-  _GlyphPainter({
-    required this.glyph,
-    required this.color,
-    this.premium = true,
-    this.onDark = true,
-  });
+  _GlyphPainter({required this.glyph, required this.ink});
 
-  late Color _ink;
   late Paint _solid;
-  late Paint _soft;
 
   @override
   void paint(Canvas canvas, Size size) {
     final c = Offset(size.width / 2, size.height / 2);
     final s = size.shortestSide;
-
-    _ink = onDark
-        ? AppColors.glyphInk(color)
-        : AppColors.glyphInkOnLight(color);
-    _solid = Paint()..color = _ink;
-    _soft = Paint()..color = _ink.withValues(alpha: 0.82);
+    _solid = Paint()..color = ink;
 
     switch (glyph) {
-      case CinematicGlyph.sun:
-        _sun(canvas, c, s);
-      case CinematicGlyph.cosmos:
-        _cosmos(canvas, c, s);
-      case CinematicGlyph.humanity:
-        _humanity(canvas, c, s);
-      case CinematicGlyph.dove:
-        _dove(canvas, c, s);
-      case CinematicGlyph.tree:
-        _tree(canvas, c, s);
-      case CinematicGlyph.fall:
-        _fall(canvas, c, s);
-      case CinematicGlyph.tears:
-        _tears(canvas, c, s);
-      case CinematicGlyph.scales:
-        _scales(canvas, c, s);
-      case CinematicGlyph.flood:
-        _flood(canvas, c, s);
-      case CinematicGlyph.sea:
-        _sea(canvas, c, s);
-      case CinematicGlyph.tower:
-        _tower(canvas, c, s);
-      case CinematicGlyph.star:
-        _star(canvas, c, s);
-      case CinematicGlyph.crown:
-        _crown(canvas, c, s);
-      case CinematicGlyph.chain:
-        _chain(canvas, c, s);
-      case CinematicGlyph.flame:
-        _flame(canvas, c, s);
-      case CinematicGlyph.book:
-        _book(canvas, c, s);
-      case CinematicGlyph.scroll:
-        _scroll(canvas, c, s);
-      case CinematicGlyph.seed:
-        _seed(canvas, c, s);
-      case CinematicGlyph.path:
-        _path(canvas, c, s);
-      case CinematicGlyph.depths:
-        _depths(canvas, c, s);
-      case CinematicGlyph.spark:
-        _spark(canvas, c, s);
-      case CinematicGlyph.heart:
-        _heart(canvas, c, s);
-      case CinematicGlyph.mountain:
-        _mountain(canvas, c, s);
-      case CinematicGlyph.calendar:
-        _calendar(canvas, c, s);
-      case CinematicGlyph.gem:
-        _gem(canvas, c, s);
       case CinematicGlyph.lamp:
-        _lamp(canvas, c, s);
-      case CinematicGlyph.check:
-        _check(canvas, c, s);
-      case CinematicGlyph.echo:
-        _echo(canvas, c, s);
-      case CinematicGlyph.target:
-        _target(canvas, c, s);
-      case CinematicGlyph.tune:
-        _tune(canvas, c, s);
-      case CinematicGlyph.pencil:
-        _pencil(canvas, c, s);
-      case CinematicGlyph.lock:
-        _lock(canvas, c, s);
-      case CinematicGlyph.search:
-        _search(canvas, c, s);
-      case CinematicGlyph.shield:
-        _shield(canvas, c, s);
-      case CinematicGlyph.mail:
-        _mail(canvas, c, s);
-      case CinematicGlyph.frost:
-        _frost(canvas, c, s);
-      case CinematicGlyph.share:
-        _share(canvas, c, s);
-      case CinematicGlyph.qr:
-        _qr(canvas, c, s);
-      case CinematicGlyph.copy:
-        _copy(canvas, c, s);
-      case CinematicGlyph.podium:
-        _podium(canvas, c, s);
-      case CinematicGlyph.rise:
-        _arrow(canvas, c, s, up: true);
-      case CinematicGlyph.demote:
-        _arrow(canvas, c, s, up: false);
-      case CinematicGlyph.people:
-        _people(canvas, c, s);
-      case CinematicGlyph.home:
-        _home(canvas, c, s);
-      case CinematicGlyph.back:
-        _back(canvas, c, s);
-      case CinematicGlyph.tap:
-        _tap(canvas, c, s);
-      case CinematicGlyph.stack:
-        _stack(canvas, c, s);
-      case CinematicGlyph.gap:
-        _gap(canvas, c, s);
-      case CinematicGlyph.link:
-        _link(canvas, c, s);
-      case CinematicGlyph.forward:
-        _forward(canvas, c, s);
-      case CinematicGlyph.chevron:
-        _chevron(canvas, c, s);
-      case CinematicGlyph.close:
-        _close(canvas, c, s);
-      case CinematicGlyph.bookmark:
-        _bookmark(canvas, c, s);
-      case CinematicGlyph.gift:
-        _gift(canvas, c, s);
-      case CinematicGlyph.bell:
-        _bell(canvas, c, s);
-      case CinematicGlyph.wrong:
-        _wrong(canvas, c, s);
-      case CinematicGlyph.flag:
-        _flag(canvas, c, s);
-      case CinematicGlyph.refresh:
-        _refresh(canvas, c, s);
-      case CinematicGlyph.stop:
-        _stop(canvas, c, s);
-      case CinematicGlyph.sprout:
-        _sprout(canvas, c, s);
-      case CinematicGlyph.hourglass:
-        _hourglass(canvas, c, s);
+        canvas.save();
+        canvas.translate(c.dx - s * 0.5, c.dy - s * 0.5);
+        LanternGlyph.paintSolid(canvas, Size(s, s), ink);
+        canvas.restore();
       case CinematicGlyph.plus:
         _plusMark(canvas, c, s);
+      default:
+        break;
     }
   }
 
-  Paint _stroke(double w, [double a = 1]) => Paint()
-    ..color = _ink.withValues(alpha: a)
-    ..style = PaintingStyle.stroke
-    ..strokeWidth = math.max(w, 1.45)
-    ..strokeCap = StrokeCap.round
-    ..strokeJoin = StrokeJoin.round;
-
-  void _ring(Canvas canvas, Offset c, double outer, double inner) {
-    final path = Path()
-      ..addOval(Rect.fromCircle(center: c, radius: outer))
-      ..addOval(Rect.fromCircle(center: c, radius: inner))
-      ..fillType = PathFillType.evenOdd;
-    canvas.drawPath(path, _solid);
-  }
-
-  void _rect(Canvas canvas, Rect r, [double radius = 0]) {
-    if (radius > 0) {
-      canvas.drawRRect(
-        RRect.fromRectAndRadius(r, Radius.circular(radius)),
-        _solid,
-      );
-    } else {
-      canvas.drawRect(r, _solid);
-    }
-  }
-
-  // —— Glifos ——
-
-  void _sun(Canvas canvas, Offset c, double s) {
-    canvas.drawCircle(c, s * 0.17, _solid);
-    for (var i = 0; i < 8; i++) {
-      final a = i * math.pi / 4 - math.pi / 2;
-      final len = s * (i.isEven ? 0.14 : 0.1);
-      final inner = s * 0.22;
-      final outer = inner + len;
-      final p1 = c + Offset(math.cos(a) * inner, math.sin(a) * inner);
-      final p2 = c + Offset(math.cos(a) * outer, math.sin(a) * outer);
-      final perp = Offset(-math.sin(a), math.cos(a)) * s * 0.045;
-      final ray = Path()
-        ..moveTo(p1.dx + perp.dx, p1.dy + perp.dy)
-        ..lineTo(p2.dx + perp.dx, p2.dy + perp.dy)
-        ..lineTo(p2.dx - perp.dx, p2.dy - perp.dy)
-        ..lineTo(p1.dx - perp.dx, p1.dy - perp.dy)
-        ..close();
-      canvas.drawPath(ray, _solid);
-    }
-  }
-
-  void _cosmos(Canvas canvas, Offset c, double s) {
-    canvas.drawCircle(c, s * 0.22, _solid);
-    canvas.save();
-    canvas.translate(c.dx, c.dy);
-    canvas.rotate(-0.5);
-    final ring = Path()
-      ..addOval(
-        Rect.fromCenter(center: Offset.zero, width: s * 0.76, height: s * 0.24),
-      );
-    final hole = Path()
-      ..addOval(
-        Rect.fromCenter(center: Offset.zero, width: s * 0.54, height: s * 0.1),
-      );
-    canvas.drawPath(Path.combine(PathOperation.difference, ring, hole), _solid);
-    canvas.restore();
-    canvas.drawCircle(c + Offset(s * 0.3, -s * 0.24), s * 0.05, _soft);
-  }
-
-  void _humanity(Canvas canvas, Offset c, double s) {
-    canvas.drawCircle(c + Offset(0, -s * 0.18), s * 0.12, _solid);
-    final body = Path()
-      ..moveTo(c.dx - s * 0.28, c.dy + s * 0.34)
-      ..quadraticBezierTo(
-        c.dx - s * 0.22,
-        c.dy + s * 0.04,
-        c.dx,
-        c.dy - s * 0.04,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.22,
-        c.dy + s * 0.04,
-        c.dx + s * 0.28,
-        c.dy + s * 0.34,
-      )
-      ..close();
-    canvas.drawPath(body, _solid);
-    final halo = Path()
-      ..addArc(
-        Rect.fromCircle(center: c + Offset(0, -s * 0.18), radius: s * 0.22),
-        math.pi * 1.1,
-        math.pi * 0.8,
-      );
-    canvas.drawPath(halo, _stroke(s * 0.07, 0.6));
-  }
-
-  void _dove(Canvas canvas, Offset c, double s) {
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(s * 0.04, s * 0.04),
-        width: s * 0.44,
-        height: s * 0.28,
-      ),
-      _solid,
-    );
-    canvas.drawCircle(c + Offset(s * 0.22, -s * 0.04), s * 0.1, _solid);
-    final wing = Path()
-      ..moveTo(c.dx - s * 0.02, c.dy)
-      ..quadraticBezierTo(
-        c.dx - s * 0.08,
-        c.dy - s * 0.32,
-        c.dx - s * 0.34,
-        c.dy - s * 0.18,
-      )
-      ..quadraticBezierTo(
-        c.dx - s * 0.16,
-        c.dy - s * 0.04,
-        c.dx - s * 0.02,
-        c.dy,
-      )
-      ..close();
-    canvas.drawPath(wing, _soft);
-    final tail = Path()
-      ..moveTo(c.dx - s * 0.16, c.dy + s * 0.08)
-      ..lineTo(c.dx - s * 0.36, c.dy + s * 0.2)
-      ..lineTo(c.dx - s * 0.12, c.dy + s * 0.16)
-      ..close();
-    canvas.drawPath(tail, _solid);
-    final beak = Path()
-      ..moveTo(c.dx + s * 0.3, c.dy - s * 0.04)
-      ..lineTo(c.dx + s * 0.42, c.dy - s * 0.08)
-      ..lineTo(c.dx + s * 0.3, c.dy + s * 0.04)
-      ..close();
-    canvas.drawPath(beak, _solid);
-  }
-
-  void _tree(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.26),
-        width: s * 0.12,
-        height: s * 0.22,
-      ),
-      s * 0.03,
-    );
-    canvas.drawCircle(c + Offset(0, -s * 0.08), s * 0.24, _solid);
-    canvas.drawCircle(c + Offset(-s * 0.18, s * 0.02), s * 0.14, _soft);
-    canvas.drawCircle(c + Offset(s * 0.18, s * 0.02), s * 0.14, _soft);
-  }
-
-  void _fall(Canvas canvas, Offset c, double s) {
-    final fruit = Path()
-      ..addOval(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.04),
-          width: s * 0.36,
-          height: s * 0.42,
-        ),
-      );
-    final bite = Path()
-      ..addOval(
-        Rect.fromCircle(
-          center: c + Offset(s * 0.16, -s * 0.04),
-          radius: s * 0.11,
-        ),
-      );
-    canvas.drawPath(
-      Path.combine(PathOperation.difference, fruit, bite),
-      _solid,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(s * 0.01, -s * 0.24),
-        width: s * 0.05,
-        height: s * 0.1,
-      ),
-      s * 0.02,
-    );
-  }
-
-  void _tears(Canvas canvas, Offset c, double s) {
-    final drop = Path()
-      ..moveTo(c.dx, c.dy - s * 0.32)
-      ..quadraticBezierTo(c.dx + s * 0.22, c.dy, c.dx, c.dy + s * 0.32)
-      ..quadraticBezierTo(c.dx - s * 0.22, c.dy, c.dx, c.dy - s * 0.32)
-      ..close();
-    canvas.drawPath(drop, _solid);
-  }
-
-  void _scales(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, -s * 0.1),
-        width: s * 0.62,
-        height: s * 0.08,
-      ),
-      s * 0.03,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(center: c, width: s * 0.08, height: s * 0.58),
-      s * 0.03,
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(-s * 0.26, s * 0.12),
-        width: s * 0.26,
-        height: s * 0.2,
-      ),
-      _solid,
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(s * 0.26, s * 0.12),
-        width: s * 0.26,
-        height: s * 0.2,
-      ),
-      _solid,
-    );
-    canvas.drawCircle(c + Offset(0, -s * 0.3), s * 0.05, _solid);
-  }
-
-  void _flood(Canvas canvas, Offset c, double s) {
-    final hull = Path()
-      ..moveTo(c.dx - s * 0.28, c.dy + s * 0.02)
-      ..lineTo(c.dx + s * 0.28, c.dy + s * 0.02)
-      ..lineTo(c.dx + s * 0.18, c.dy + s * 0.16)
-      ..lineTo(c.dx - s * 0.18, c.dy + s * 0.16)
-      ..close();
-    canvas.drawPath(hull, _solid);
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, -s * 0.08),
-        width: s * 0.22,
-        height: s * 0.16,
-      ),
-      s * 0.03,
-    );
-    _sea(canvas, c + Offset(0, s * 0.18), s * 0.72);
-  }
-
-  void _sea(Canvas canvas, Offset c, double s) {
-    for (var i = 0; i < 3; i++) {
-      final y = c.dy - s * 0.12 + i * s * 0.14;
-      final wave = Path()..moveTo(c.dx - s * 0.36, y);
-      for (var x = -0.36; x <= 0.36; x += 0.09) {
-        wave.lineTo(
-          c.dx + s * x,
-          y + math.sin((x + 0.36) * math.pi * 2.4 + i * 0.8) * s * 0.055,
-        );
-      }
-      wave
-        ..lineTo(c.dx + s * 0.36, y + s * 0.12)
-        ..lineTo(c.dx - s * 0.36, y + s * 0.12)
-        ..close();
-      canvas.drawPath(wave, i == 1 ? _solid : _soft);
-    }
-  }
-
-  void _tower(Canvas canvas, Offset c, double s) {
-    final tiers = [
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.2),
-        width: s * 0.52,
-        height: s * 0.18,
-      ),
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.02),
-        width: s * 0.38,
-        height: s * 0.18,
-      ),
-      Rect.fromCenter(
-        center: c + Offset(0, -s * 0.16),
-        width: s * 0.26,
-        height: s * 0.18,
-      ),
-    ];
-    for (final r in tiers) {
-      canvas.drawRRect(
-        RRect.fromRectAndRadius(r, Radius.circular(s * 0.03)),
-        _solid,
-      );
-    }
-    canvas.drawCircle(c + Offset(0, -s * 0.32), s * 0.05, _solid);
-  }
-
-  void _star(Canvas canvas, Offset c, double s) {
-    final path = Path();
-    for (var i = 0; i < 5; i++) {
-      final a = -math.pi / 2 + i * 4 * math.pi / 5;
-      final p = c + Offset(math.cos(a) * s * 0.36, math.sin(a) * s * 0.36);
-      if (i == 0) {
-        path.moveTo(p.dx, p.dy);
-      } else {
-        path.lineTo(p.dx, p.dy);
-      }
-    }
-    path.close();
-    canvas.drawPath(path, _solid);
-  }
-
-  void _crown(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx - s * 0.34, c.dy + s * 0.16)
-      ..lineTo(c.dx - s * 0.3, c.dy - s * 0.2)
-      ..lineTo(c.dx - s * 0.12, c.dy - s * 0.02)
-      ..lineTo(c.dx, c.dy - s * 0.3)
-      ..lineTo(c.dx + s * 0.12, c.dy - s * 0.02)
-      ..lineTo(c.dx + s * 0.3, c.dy - s * 0.2)
-      ..lineTo(c.dx + s * 0.34, c.dy + s * 0.16)
-      ..close();
-    canvas.drawPath(path, _solid);
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.24),
-          width: s * 0.72,
-          height: s * 0.12,
-        ),
-        Radius.circular(s * 0.04),
-      ),
-      _solid,
-    );
-    for (final x in [-0.3, 0.0, 0.3]) {
-      canvas.drawCircle(c + Offset(s * x, -s * 0.2), s * 0.045, _soft);
-    }
-  }
-
-  void _chain(Canvas canvas, Offset c, double s) {
-    // Elos sólidos (anel com miolo) — sem stroke fino.
-    void link(Offset o, double rot) {
-      canvas.save();
-      canvas.translate(o.dx, o.dy);
-      canvas.rotate(rot);
-      final outer = Path()
-        ..addRRect(
-          RRect.fromRectAndRadius(
-            Rect.fromCenter(
-              center: Offset.zero,
-              width: s * 0.28,
-              height: s * 0.4,
-            ),
-            Radius.circular(s * 0.14),
-          ),
-        );
-      final inner = Path()
-        ..addRRect(
-          RRect.fromRectAndRadius(
-            Rect.fromCenter(
-              center: Offset.zero,
-              width: s * 0.12,
-              height: s * 0.24,
-            ),
-            Radius.circular(s * 0.06),
-          ),
-        );
-      canvas.drawPath(
-        Path.combine(PathOperation.difference, outer, inner),
-        _solid,
-      );
-      canvas.restore();
-    }
-
-    link(c + Offset(-s * 0.12, -s * 0.08), -0.35);
-    link(c + Offset(s * 0.12, s * 0.08), 0.35);
-  }
-
-  void _flame(Canvas canvas, Offset c, double s) {
-    final flame = Path()
-      ..moveTo(c.dx, c.dy + s * 0.34)
-      ..quadraticBezierTo(
-        c.dx - s * 0.32,
-        c.dy + s * 0.06,
-        c.dx - s * 0.08,
-        c.dy - s * 0.18,
-      )
-      ..quadraticBezierTo(
-        c.dx,
-        c.dy - s * 0.04,
-        c.dx + s * 0.06,
-        c.dy - s * 0.12,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.1,
-        c.dy - s * 0.38,
-        c.dx + s * 0.02,
-        c.dy - s * 0.4,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.34,
-        c.dy - s * 0.04,
-        c.dx,
-        c.dy + s * 0.34,
-      )
-      ..close();
-    canvas.drawPath(flame, _solid);
-    final inner = Path()
-      ..moveTo(c.dx, c.dy + s * 0.22)
-      ..quadraticBezierTo(
-        c.dx - s * 0.12,
-        c.dy + s * 0.04,
-        c.dx,
-        c.dy - s * 0.1,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.12,
-        c.dy + s * 0.04,
-        c.dx,
-        c.dy + s * 0.22,
-      )
-      ..close();
-    canvas.drawPath(inner, _soft);
-  }
-
-  void _book(Canvas canvas, Offset c, double s) {
-    final left = Path()
-      ..moveTo(c.dx, c.dy - s * 0.2)
-      ..lineTo(c.dx - s * 0.34, c.dy - s * 0.28)
-      ..lineTo(c.dx - s * 0.34, c.dy + s * 0.24)
-      ..lineTo(c.dx, c.dy + s * 0.34)
-      ..close();
-    final right = Path()
-      ..moveTo(c.dx, c.dy - s * 0.2)
-      ..lineTo(c.dx + s * 0.34, c.dy - s * 0.28)
-      ..lineTo(c.dx + s * 0.34, c.dy + s * 0.24)
-      ..lineTo(c.dx, c.dy + s * 0.34)
-      ..close();
-    canvas.drawPath(left, _solid);
-    canvas.drawPath(right, _solid);
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.02),
-        width: s * 0.08,
-        height: s * 0.56,
-      ),
-      s * 0.02,
-    );
-  }
-
-  void _scroll(Canvas canvas, Offset c, double s) {
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c, width: s * 0.42, height: s * 0.5),
-        Radius.circular(s * 0.04),
-      ),
-      _solid,
-    );
-    for (final y in [-0.28, 0.28]) {
-      canvas.drawOval(
-        Rect.fromCenter(
-          center: c + Offset(0, s * y),
-          width: s * 0.56,
-          height: s * 0.16,
-        ),
-        _solid,
-      );
-    }
-  }
-
-  void _seed(Canvas canvas, Offset c, double s) {
-    final seed = Path()
-      ..moveTo(c.dx, c.dy + s * 0.22)
-      ..quadraticBezierTo(
-        c.dx - s * 0.14,
-        c.dy + s * 0.08,
-        c.dx,
-        c.dy - s * 0.08,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.14,
-        c.dy + s * 0.08,
-        c.dx,
-        c.dy + s * 0.22,
-      )
-      ..close();
-    canvas.drawPath(seed, _solid);
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.24),
-        width: s * 0.06,
-        height: s * 0.12,
-      ),
-      s * 0.02,
-    );
-    final left = Path()
-      ..moveTo(c.dx, c.dy - s * 0.02)
-      ..quadraticBezierTo(
-        c.dx - s * 0.3,
-        c.dy - s * 0.06,
-        c.dx - s * 0.2,
-        c.dy - s * 0.3,
-      )
-      ..quadraticBezierTo(
-        c.dx - s * 0.1,
-        c.dy - s * 0.14,
-        c.dx,
-        c.dy - s * 0.02,
-      )
-      ..close();
-    final right = Path()
-      ..moveTo(c.dx, c.dy - s * 0.02)
-      ..quadraticBezierTo(
-        c.dx + s * 0.3,
-        c.dy - s * 0.06,
-        c.dx + s * 0.2,
-        c.dy - s * 0.3,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.1,
-        c.dy - s * 0.14,
-        c.dx,
-        c.dy - s * 0.02,
-      )
-      ..close();
-    canvas.drawPath(left, _solid);
-    canvas.drawPath(right, _soft);
-  }
-
-  /// Trilha — três marcos numa diagonal, lê em 16px.
-  void _path(Canvas canvas, Offset c, double s) {
-    final pts = [Offset(-0.22, 0.24), Offset(0.0, 0.0), Offset(0.22, -0.24)];
-    final line = Path()
-      ..moveTo(c.dx + pts[0].dx * s, c.dy + pts[0].dy * s)
-      ..lineTo(c.dx + pts[1].dx * s, c.dy + pts[1].dy * s)
-      ..lineTo(c.dx + pts[2].dx * s, c.dy + pts[2].dy * s);
-    canvas.drawPath(
-      line,
-      Paint()
-        ..color = _ink
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = s * 0.12
-        ..strokeCap = StrokeCap.round
-        ..strokeJoin = StrokeJoin.round,
-    );
-    for (final o in pts) {
-      canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.1, _solid);
-    }
-  }
-
-  void _people(Canvas canvas, Offset c, double s) {
-    void bust(Offset o, double scale, Paint paint) {
-      canvas.drawCircle(
-        o + Offset(0, -s * 0.2 * scale),
-        s * 0.1 * scale,
-        paint,
-      );
-      canvas.drawRRect(
-        RRect.fromRectAndRadius(
-          Rect.fromCenter(
-            center: o + Offset(0, s * 0.14 * scale),
-            width: s * 0.36 * scale,
-            height: s * 0.32 * scale,
-          ),
-          Radius.circular(s * 0.16 * scale),
-        ),
-        paint,
-      );
-    }
-
-    bust(c + Offset(-s * 0.16, s * 0.06), 0.86, _soft);
-    bust(c + Offset(s * 0.14, 0), 1.0, _solid);
-  }
-
-  void _home(Canvas canvas, Offset c, double s) {
-    final roof = Path()
-      ..moveTo(c.dx, c.dy - s * 0.36)
-      ..lineTo(c.dx + s * 0.38, c.dy - s * 0.02)
-      ..lineTo(c.dx - s * 0.38, c.dy - s * 0.02)
-      ..close();
-    canvas.drawPath(roof, _solid);
-    final wall = Path()
-      ..addRRect(
-        RRect.fromRectAndRadius(
-          Rect.fromCenter(
-            center: c + Offset(0, s * 0.16),
-            width: s * 0.56,
-            height: s * 0.36,
-          ),
-          Radius.circular(s * 0.04),
-        ),
-      );
-    final door = Path()
-      ..addRRect(
-        RRect.fromRectAndRadius(
-          Rect.fromCenter(
-            center: c + Offset(0, s * 0.2),
-            width: s * 0.16,
-            height: s * 0.28,
-          ),
-          Radius.circular(s * 0.03),
-        ),
-      );
-    canvas.drawPath(Path.combine(PathOperation.difference, wall, door), _solid);
-  }
-
-  void _back(Canvas canvas, Offset c, double s) {
-    final chevron = Path()
-      ..moveTo(c.dx + s * 0.14, c.dy - s * 0.26)
-      ..lineTo(c.dx - s * 0.18, c.dy)
-      ..lineTo(c.dx + s * 0.14, c.dy + s * 0.26)
-      ..lineTo(c.dx + s * 0.02, c.dy + s * 0.14)
-      ..lineTo(c.dx - s * 0.08, c.dy)
-      ..lineTo(c.dx + s * 0.02, c.dy - s * 0.14)
-      ..close();
-    canvas.drawPath(chevron, _solid);
-  }
-
-  void _depths(Canvas canvas, Offset c, double s) {
-    for (var i = 0; i < 3; i++) {
-      final inset = i * s * 0.1;
-      final rect = Rect.fromCenter(
-        center: c + Offset(0, s * 0.06 * i),
-        width: s * 0.68 - inset * 2,
-        height: s * 0.52 - inset,
-      );
-      canvas.drawArc(
-        rect,
-        math.pi * 0.12,
-        math.pi * 0.76,
-        false,
-        _stroke(s * 0.09, i == 1 ? 1 : 0.55),
-      );
-    }
-  }
-
-  /// Faísca ✦ — só eixos ortogonais (não parece ✕ nem alvo).
-  void _spark(Canvas canvas, Offset c, double s) {
-    void diamond(double angle, double outer, double halfW) {
-      final tip = c + Offset(math.cos(angle) * outer, math.sin(angle) * outer);
-      final perp = Offset(-math.sin(angle), math.cos(angle)) * halfW;
-      final path = Path()
-        ..moveTo(c.dx, c.dy)
-        ..lineTo(tip.dx + perp.dx, tip.dy + perp.dy)
-        ..lineTo(tip.dx, tip.dy)
-        ..lineTo(tip.dx - perp.dx, tip.dy - perp.dy)
-        ..close();
-      canvas.drawPath(path, _solid);
-    }
-
-    for (var i = 0; i < 4; i++) {
-      final a = i * math.pi / 2 - math.pi / 2;
-      diamond(a, s * (i.isEven ? 0.4 : 0.28), s * 0.08);
-    }
-    canvas.drawCircle(c, s * 0.06, _solid);
-  }
-
-  void _heart(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx, c.dy + s * 0.32)
-      ..cubicTo(
-        c.dx - s * 0.42,
-        c.dy + s * 0.04,
-        c.dx - s * 0.38,
-        c.dy - s * 0.3,
-        c.dx,
-        c.dy - s * 0.1,
-      )
-      ..cubicTo(
-        c.dx + s * 0.38,
-        c.dy - s * 0.3,
-        c.dx + s * 0.42,
-        c.dy + s * 0.04,
-        c.dx,
-        c.dy + s * 0.32,
-      )
-      ..close();
-    canvas.drawPath(path, _solid);
-  }
-
-  void _mountain(Canvas canvas, Offset c, double s) {
-    final back = Path()
-      ..moveTo(c.dx - s * 0.38, c.dy + s * 0.3)
-      ..lineTo(c.dx - s * 0.1, c.dy - s * 0.16)
-      ..lineTo(c.dx + s * 0.2, c.dy + s * 0.3)
-      ..close();
-    final front = Path()
-      ..moveTo(c.dx - s * 0.18, c.dy + s * 0.3)
-      ..lineTo(c.dx + s * 0.1, c.dy - s * 0.32)
-      ..lineTo(c.dx + s * 0.38, c.dy + s * 0.3)
-      ..close();
-    canvas.drawPath(back, _soft);
-    canvas.drawPath(front, _solid);
-  }
-
-  void _calendar(Canvas canvas, Offset c, double s) {
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.04),
-          width: s * 0.54,
-          height: s * 0.48,
-        ),
-        Radius.circular(s * 0.06),
-      ),
-      _solid,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, -s * 0.12),
-        width: s * 0.54,
-        height: s * 0.12,
-      ),
-      s * 0.03,
-    );
-    for (final x in [-0.14, 0.0, 0.14]) {
-      _rect(
-        canvas,
-        Rect.fromCenter(
-          center: c + Offset(s * x, -s * 0.24),
-          width: s * 0.06,
-          height: s * 0.1,
-        ),
-        s * 0.02,
-      );
-    }
-    canvas.drawCircle(c + Offset(s * 0.1, s * 0.1), s * 0.05, _soft);
-  }
-
-  void _gem(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx, c.dy - s * 0.34)
-      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.06)
-      ..lineTo(c.dx, c.dy + s * 0.34)
-      ..lineTo(c.dx - s * 0.28, c.dy - s * 0.06)
-      ..close();
-    canvas.drawPath(path, _solid);
-    final facet = Path()
-      ..moveTo(c.dx - s * 0.16, c.dy - s * 0.06)
-      ..lineTo(c.dx, c.dy - s * 0.22)
-      ..lineTo(c.dx + s * 0.16, c.dy - s * 0.06)
-      ..close();
-    canvas.drawPath(facet, _soft);
-  }
-
-  /// Lanterna clássica — mesma forma das vidas na pergunta.
-  void _lamp(Canvas canvas, Offset c, double s) {
-    canvas.save();
-    canvas.translate(c.dx - s * 0.5, c.dy - s * 0.5);
-    LanternGlyph.paintSolid(canvas, Size(s, s), _ink);
-    canvas.restore();
-  }
-
-  void _check(Canvas canvas, Offset c, double s) {
-    // Disco sólido + check grosso — mesmo peso visual da lanterna.
-    canvas.drawCircle(c, s * 0.36, _solid);
-    final markInk = _ink.computeLuminance() > 0.42
-        ? Color.lerp(_ink, const Color(0xFF1A1208), 0.72)!
-        : Colors.white.withValues(alpha: 0.92);
-    final mark = Path()
-      ..moveTo(c.dx - s * 0.16, c.dy + s * 0.02)
-      ..lineTo(c.dx - s * 0.02, c.dy + s * 0.16)
-      ..lineTo(c.dx + s * 0.2, c.dy - s * 0.14);
-    canvas.drawPath(
-      mark,
-      Paint()
-        ..color = markInk
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = s * 0.11
-        ..strokeCap = StrokeCap.round
-        ..strokeJoin = StrokeJoin.round,
-    );
-  }
-
-  void _echo(Canvas canvas, Offset c, double s) {
-    final body = Path()
-      ..moveTo(c.dx - s * 0.26, c.dy - s * 0.1)
-      ..lineTo(c.dx - s * 0.06, c.dy - s * 0.1)
-      ..lineTo(c.dx + s * 0.16, c.dy - s * 0.28)
-      ..lineTo(c.dx + s * 0.16, c.dy + s * 0.28)
-      ..lineTo(c.dx - s * 0.06, c.dy + s * 0.1)
-      ..lineTo(c.dx - s * 0.26, c.dy + s * 0.1)
-      ..close();
-    canvas.drawPath(body, _solid);
-    for (final r in [0.2, 0.32]) {
-      canvas.drawArc(
-        Rect.fromCircle(center: c + Offset(s * 0.1, 0), radius: s * r),
-        -math.pi * 0.42,
-        math.pi * 0.84,
-        false,
-        _stroke(s * 0.07),
-      );
-    }
-  }
-
-  void _target(Canvas canvas, Offset c, double s) {
-    _ring(canvas, c, s * 0.34, s * 0.24);
-    _ring(canvas, c, s * 0.2, s * 0.1);
-    canvas.drawCircle(c, s * 0.08, _solid);
-  }
-
-  void _pencil(Canvas canvas, Offset c, double s) {
-    canvas.save();
-    canvas.translate(c.dx, c.dy);
-    canvas.rotate(-math.pi / 4);
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: Offset(0, -s * 0.02),
-        width: s * 0.2,
-        height: s * 0.5,
-      ),
-      s * 0.04,
-    );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: Offset(0, -s * 0.32),
-          width: s * 0.22,
-          height: s * 0.12,
-        ),
-        Radius.circular(s * 0.03),
-      ),
-      _solid,
-    );
-    final tip = Path()
-      ..moveTo(-s * 0.1, s * 0.22)
-      ..lineTo(0, s * 0.4)
-      ..lineTo(s * 0.1, s * 0.22)
-      ..close();
-    canvas.drawPath(tip, _solid);
-    canvas.restore();
-  }
-
-  void _tune(Canvas canvas, Offset c, double s) {
-    final rows = [-0.2, 0.0, 0.2];
-    final knobs = [-0.16, 0.18, -0.04];
-    for (var i = 0; i < 3; i++) {
-      final y = c.dy + s * rows[i];
-      _rect(
-        canvas,
-        Rect.fromCenter(
-          center: Offset(c.dx, y),
-          width: s * 0.66,
-          height: s * 0.11,
-        ),
-        s * 0.055,
-      );
-      canvas.drawCircle(
-        c + Offset(s * knobs[i], s * rows[i]),
-        s * 0.11,
-        _solid,
-      );
-    }
-  }
-
-  void _lock(Canvas canvas, Offset c, double s) {
-    final shackle = Path()
-      ..addArc(
-        Rect.fromCenter(
-          center: c + Offset(0, -s * 0.04),
-          width: s * 0.32,
-          height: s * 0.36,
-        ),
-        math.pi,
-        math.pi,
-      );
-    canvas.drawPath(shackle, _stroke(s * 0.09));
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.12),
-          width: s * 0.48,
-          height: s * 0.36,
-        ),
-        Radius.circular(s * 0.06),
-      ),
-      _solid,
-    );
-    canvas.drawCircle(c + Offset(0, s * 0.12), s * 0.05, _soft);
-  }
-
-  void _search(Canvas canvas, Offset c, double s) {
-    _ring(canvas, c + Offset(-s * 0.06, -s * 0.06), s * 0.22, s * 0.1);
-    final handle = Path()
-      ..moveTo(c.dx + s * 0.1, c.dy + s * 0.1)
-      ..lineTo(c.dx + s * 0.32, c.dy + s * 0.32)
-      ..lineTo(c.dx + s * 0.24, c.dy + s * 0.4)
-      ..lineTo(c.dx + s * 0.02, c.dy + s * 0.18)
-      ..close();
-    canvas.drawPath(handle, _solid);
-  }
-
-  void _shield(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx, c.dy - s * 0.36)
-      ..quadraticBezierTo(
-        c.dx + s * 0.34,
-        c.dy - s * 0.28,
-        c.dx + s * 0.32,
-        c.dy,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.28,
-        c.dy + s * 0.22,
-        c.dx,
-        c.dy + s * 0.36,
-      )
-      ..quadraticBezierTo(
-        c.dx - s * 0.28,
-        c.dy + s * 0.22,
-        c.dx - s * 0.32,
-        c.dy,
-      )
-      ..quadraticBezierTo(
-        c.dx - s * 0.34,
-        c.dy - s * 0.28,
-        c.dx,
-        c.dy - s * 0.36,
-      )
-      ..close();
-    canvas.drawPath(path, _solid);
-    final cross = Path()
-      ..moveTo(c.dx, c.dy - s * 0.16)
-      ..lineTo(c.dx, c.dy + s * 0.18)
-      ..moveTo(c.dx - s * 0.12, c.dy - s * 0.02)
-      ..lineTo(c.dx + s * 0.12, c.dy - s * 0.02);
-    canvas.drawPath(cross, _stroke(s * 0.07, 0.55));
-  }
-
-  void _mail(Canvas canvas, Offset c, double s) {
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c, width: s * 0.62, height: s * 0.44),
-        Radius.circular(s * 0.06),
-      ),
-      _solid,
-    );
-    final flap = Path()
-      ..moveTo(c.dx - s * 0.3, c.dy - s * 0.14)
-      ..lineTo(c.dx, c.dy + s * 0.08)
-      ..lineTo(c.dx + s * 0.3, c.dy - s * 0.14)
-      ..close();
-    canvas.drawPath(flap, _soft);
-  }
-
-  /// Floco — 6 braços, sem ramos laterais (não parece #).
-  void _frost(Canvas canvas, Offset c, double s) {
-    canvas.drawCircle(c, s * 0.08, _solid);
-    for (var i = 0; i < 6; i++) {
-      final a = i * math.pi / 3;
-      final tip = c + Offset(math.cos(a) * s * 0.36, math.sin(a) * s * 0.36);
-      final perp = Offset(-math.sin(a), math.cos(a));
-      final arm = Path()
-        ..moveTo(c.dx + perp.dx * s * 0.045, c.dy + perp.dy * s * 0.045)
-        ..lineTo(tip.dx + perp.dx * s * 0.04, tip.dy + perp.dy * s * 0.04)
-        ..lineTo(tip.dx - perp.dx * s * 0.04, tip.dy - perp.dy * s * 0.04)
-        ..lineTo(c.dx - perp.dx * s * 0.045, c.dy - perp.dy * s * 0.045)
-        ..close();
-      canvas.drawPath(arm, _solid);
-    }
-  }
-
-  void _share(Canvas canvas, Offset c, double s) {
-    final nodes = [Offset(-0.18, -0.2), Offset(0.22, 0.0), Offset(-0.18, 0.2)];
-    canvas.drawLine(
-      c + Offset(nodes[0].dx * s, nodes[0].dy * s),
-      c + Offset(nodes[1].dx * s, nodes[1].dy * s),
-      _stroke(s * 0.08),
-    );
-    canvas.drawLine(
-      c + Offset(nodes[2].dx * s, nodes[2].dy * s),
-      c + Offset(nodes[1].dx * s, nodes[1].dy * s),
-      _stroke(s * 0.08),
-    );
-    for (final o in nodes) {
-      canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.09, _solid);
-    }
-  }
-
-  void _qr(Canvas canvas, Offset c, double s) {
-    void corner(Offset o) {
-      canvas.drawRRect(
-        RRect.fromRectAndRadius(
-          Rect.fromCenter(center: c + o, width: s * 0.22, height: s * 0.22),
-          Radius.circular(s * 0.03),
-        ),
-        _solid,
-      );
-      _rect(
-        canvas,
-        Rect.fromCenter(center: c + o, width: s * 0.1, height: s * 0.1),
-        s * 0.02,
-      );
-    }
-
-    corner(Offset(-s * 0.15, -s * 0.15));
-    corner(Offset(s * 0.15, -s * 0.15));
-    corner(Offset(-s * 0.15, s * 0.15));
-    for (final o in [
-      Offset(0.08, 0.08),
-      Offset(0.18, 0.08),
-      Offset(0.08, 0.18),
-      Offset(0.18, 0.18),
-    ]) {
-      _rect(
-        canvas,
-        Rect.fromCenter(
-          center: c + Offset(o.dx * s, o.dy * s),
-          width: s * 0.07,
-          height: s * 0.07,
-        ),
-        s * 0.015,
-      );
-    }
-  }
-
-  void _copy(Canvas canvas, Offset c, double s) {
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(s * 0.06, s * 0.06),
-          width: s * 0.36,
-          height: s * 0.44,
-        ),
-        Radius.circular(s * 0.05),
-      ),
-      _soft,
-    );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(-s * 0.06, -s * 0.06),
-          width: s * 0.36,
-          height: s * 0.44,
-        ),
-        Radius.circular(s * 0.05),
-      ),
-      _solid,
-    );
-  }
-
-  void _podium(Canvas canvas, Offset c, double s) {
-    final steps = [
-      (Offset(-0.2, 0.12), 0.28, 0.34),
-      (Offset(0.0, 0.0), 0.28, 0.52),
-      (Offset(0.2, 0.16), 0.28, 0.3),
-    ];
-    for (var i = 0; i < steps.length; i++) {
-      final (o, ww, h) = steps[i];
-      canvas.drawRRect(
-        RRect.fromRectAndRadius(
-          Rect.fromCenter(
-            center: c + Offset(o.dx * s, o.dy * s),
-            width: s * ww,
-            height: s * h,
-          ),
-          Radius.circular(s * 0.03),
-        ),
-        i == 1 ? _solid : _soft,
-      );
-    }
-  }
-
-  void _arrow(Canvas canvas, Offset c, double s, {required bool up}) {
-    final dir = up ? -1.0 : 1.0;
-    final path = Path()
-      ..moveTo(c.dx, c.dy + dir * s * 0.28)
-      ..lineTo(c.dx - s * 0.18, c.dy + dir * s * 0.04)
-      ..lineTo(c.dx - s * 0.06, c.dy + dir * s * 0.04)
-      ..lineTo(c.dx - s * 0.06, c.dy - dir * s * 0.28)
-      ..lineTo(c.dx + s * 0.06, c.dy - dir * s * 0.28)
-      ..lineTo(c.dx + s * 0.06, c.dy + dir * s * 0.04)
-      ..lineTo(c.dx + s * 0.18, c.dy + dir * s * 0.04)
-      ..close();
-    canvas.drawPath(path, _solid);
-  }
-
-  void _tap(Canvas canvas, Offset c, double s) {
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(0, -s * 0.1),
-          width: s * 0.2,
-          height: s * 0.46,
-        ),
-        Radius.circular(s * 0.1),
-      ),
-      _solid,
-    );
-    canvas.drawCircle(c + Offset(0, s * 0.16), s * 0.14, _solid);
-    canvas.drawArc(
-      Rect.fromCircle(center: c + Offset(s * 0.12, s * 0.08), radius: s * 0.22),
-      -math.pi * 0.2,
-      math.pi * 0.7,
-      false,
-      _stroke(s * 0.06, 0.7),
-    );
-  }
-
-  void _stack(Canvas canvas, Offset c, double s) {
-    const widths = [0.58, 0.46, 0.34];
-    for (var i = 0; i < 3; i++) {
-      _rect(
-        canvas,
-        Rect.fromCenter(
-          center: c + Offset(0, (i - 1) * s * 0.2),
-          width: s * widths[i],
-          height: s * 0.12,
-        ),
-        s * 0.04,
-      );
-    }
-  }
-
-  void _gap(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, -s * 0.16),
-        width: s * 0.62,
-        height: s * 0.1,
-      ),
-      s * 0.04,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(-s * 0.2, s * 0.04),
-        width: s * 0.22,
-        height: s * 0.1,
-      ),
-      s * 0.04,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(s * 0.2, s * 0.04),
-        width: s * 0.22,
-        height: s * 0.1,
-      ),
-      s * 0.04,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.22),
-        width: s * 0.18,
-        height: s * 0.05,
-      ),
-      s * 0.02,
-    );
-  }
-
-  void _link(Canvas canvas, Offset c, double s) {
-    _ring(canvas, c + Offset(-s * 0.12, 0), s * 0.2, s * 0.1);
-    _ring(canvas, c + Offset(s * 0.12, 0), s * 0.2, s * 0.1);
-  }
-
-  void _forward(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx - s * 0.08, c.dy - s * 0.26)
-      ..lineTo(c.dx + s * 0.24, c.dy)
-      ..lineTo(c.dx - s * 0.08, c.dy + s * 0.26)
-      ..lineTo(c.dx - s * 0.2, c.dy + s * 0.12)
-      ..lineTo(c.dx + s * 0.04, c.dy)
-      ..lineTo(c.dx - s * 0.2, c.dy - s * 0.12)
-      ..close();
-    canvas.drawPath(path, _solid);
-  }
-
-  void _chevron(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx - s * 0.12, c.dy - s * 0.22)
-      ..lineTo(c.dx + s * 0.14, c.dy)
-      ..lineTo(c.dx - s * 0.12, c.dy + s * 0.22)
-      ..lineTo(c.dx - s * 0.24, c.dy + s * 0.1)
-      ..lineTo(c.dx - s * 0.02, c.dy)
-      ..lineTo(c.dx - s * 0.24, c.dy - s * 0.1)
-      ..close();
-    canvas.drawPath(path, _solid);
-  }
-
-  void _close(Canvas canvas, Offset c, double s) {
-    void arm(double angle) {
-      canvas.save();
-      canvas.translate(c.dx, c.dy);
-      canvas.rotate(angle);
-      _rect(
-        canvas,
-        Rect.fromCenter(center: Offset.zero, width: s * 0.62, height: s * 0.12),
-        s * 0.06,
-      );
-      canvas.restore();
-    }
-
-    arm(math.pi / 4);
-    arm(-math.pi / 4);
-  }
-
-  void _bookmark(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx - s * 0.22, c.dy - s * 0.34)
-      ..lineTo(c.dx + s * 0.22, c.dy - s * 0.34)
-      ..lineTo(c.dx + s * 0.22, c.dy + s * 0.34)
-      ..lineTo(c.dx, c.dy + s * 0.12)
-      ..lineTo(c.dx - s * 0.22, c.dy + s * 0.34)
-      ..close();
-    canvas.drawPath(path, _solid);
-  }
-
-  void _gift(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.1),
-        width: s * 0.54,
-        height: s * 0.4,
-      ),
-      s * 0.05,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, -s * 0.16),
-        width: s * 0.62,
-        height: s * 0.14,
-      ),
-      s * 0.04,
-    );
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.06),
-        width: s * 0.1,
-        height: s * 0.48,
-      ),
-      s * 0.03,
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(-s * 0.12, -s * 0.26),
-        width: s * 0.2,
-        height: s * 0.14,
-      ),
-      _soft,
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(s * 0.12, -s * 0.26),
-        width: s * 0.2,
-        height: s * 0.14,
-      ),
-      _soft,
-    );
-  }
-
-  void _bell(Canvas canvas, Offset c, double s) {
-    final body = Path()
-      ..moveTo(c.dx - s * 0.26, c.dy + s * 0.12)
-      ..quadraticBezierTo(
-        c.dx - s * 0.24,
-        c.dy - s * 0.18,
-        c.dx,
-        c.dy - s * 0.22,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.24,
-        c.dy - s * 0.18,
-        c.dx + s * 0.26,
-        c.dy + s * 0.12,
-      )
-      ..close();
-    canvas.drawPath(body, _solid);
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.18),
-        width: s * 0.56,
-        height: s * 0.12,
-      ),
-      s * 0.06,
-    );
-    canvas.drawCircle(c + Offset(0, -s * 0.28), s * 0.06, _solid);
-    canvas.drawCircle(c + Offset(0, s * 0.3), s * 0.055, _solid);
-  }
-
-  void _wrong(Canvas canvas, Offset c, double s) {
-    canvas.drawCircle(c, s * 0.36, _solid);
-    final markInk = _ink.computeLuminance() > 0.42
-        ? Color.lerp(_ink, const Color(0xFF1A1208), 0.72)!
-        : Colors.white.withValues(alpha: 0.92);
-    final stroke = Paint()
-      ..color = markInk
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = s * 0.1
-      ..strokeCap = StrokeCap.round;
-    canvas.drawLine(
-      c + Offset(-s * 0.14, -s * 0.14),
-      c + Offset(s * 0.14, s * 0.14),
-      stroke,
-    );
-    canvas.drawLine(
-      c + Offset(s * 0.14, -s * 0.14),
-      c + Offset(-s * 0.14, s * 0.14),
-      stroke,
-    );
-  }
-
-  void _flag(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(-s * 0.2, 0),
-        width: s * 0.08,
-        height: s * 0.64,
-      ),
-      s * 0.03,
-    );
-    final flag = Path()
-      ..moveTo(c.dx - s * 0.16, c.dy - s * 0.3)
-      ..lineTo(c.dx + s * 0.32, c.dy - s * 0.1)
-      ..lineTo(c.dx - s * 0.16, c.dy + s * 0.08)
-      ..close();
-    canvas.drawPath(flag, _solid);
-  }
-
-  void _refresh(Canvas canvas, Offset c, double s) {
-    final arc = Path()
-      ..addArc(
-        Rect.fromCircle(center: c, radius: s * 0.26),
-        math.pi * 0.2,
-        math.pi * 1.45,
-      );
-    canvas.drawPath(arc, _stroke(s * 0.1));
-    final head = Path()
-      ..moveTo(c.dx + s * 0.22, c.dy - s * 0.16)
-      ..lineTo(c.dx + s * 0.38, c.dy)
-      ..lineTo(c.dx + s * 0.08, c.dy + s * 0.02)
-      ..close();
-    canvas.drawPath(head, _solid);
-  }
-
-  void _stop(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(center: c, width: s * 0.42, height: s * 0.42),
-      s * 0.08,
-    );
-  }
-
-  void _sprout(Canvas canvas, Offset c, double s) {
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(0, s * 0.16),
-        width: s * 0.08,
-        height: s * 0.4,
-      ),
-      s * 0.04,
-    );
-    final left = Path()
-      ..moveTo(c.dx, c.dy + s * 0.04)
-      ..quadraticBezierTo(
-        c.dx - s * 0.32,
-        c.dy,
-        c.dx - s * 0.22,
-        c.dy - s * 0.28,
-      )
-      ..quadraticBezierTo(
-        c.dx - s * 0.08,
-        c.dy - s * 0.1,
-        c.dx,
-        c.dy + s * 0.04,
-      )
-      ..close();
-    final right = Path()
-      ..moveTo(c.dx, c.dy)
-      ..quadraticBezierTo(
-        c.dx + s * 0.3,
-        c.dy - s * 0.08,
-        c.dx + s * 0.18,
-        c.dy - s * 0.32,
-      )
-      ..quadraticBezierTo(c.dx + s * 0.06, c.dy - s * 0.12, c.dx, c.dy)
-      ..close();
-    canvas.drawPath(left, _solid);
-    canvas.drawPath(right, _soft);
-  }
-
-  void _hourglass(Canvas canvas, Offset c, double s) {
-    final stroke = _stroke(s * 0.07);
-    // Tampas superior e inferior.
-    canvas.drawLine(
-      c + Offset(-s * 0.22, -s * 0.32),
-      c + Offset(s * 0.22, -s * 0.32),
-      stroke,
-    );
-    canvas.drawLine(
-      c + Offset(-s * 0.22, s * 0.32),
-      c + Offset(s * 0.22, s * 0.32),
-      stroke,
-    );
-    // Bulbos (X).
-    final glass = Path()
-      ..moveTo(c.dx - s * 0.2, c.dy - s * 0.3)
-      ..lineTo(c.dx + s * 0.2, c.dy - s * 0.3)
-      ..lineTo(c.dx + s * 0.06, c.dy)
-      ..lineTo(c.dx + s * 0.2, c.dy + s * 0.3)
-      ..lineTo(c.dx - s * 0.2, c.dy + s * 0.3)
-      ..lineTo(c.dx - s * 0.06, c.dy)
-      ..close();
-    canvas.drawPath(glass, stroke);
-    // Areia no bulbo de baixo.
-    final sand = Path()
-      ..moveTo(c.dx - s * 0.12, c.dy + s * 0.3)
-      ..lineTo(c.dx + s * 0.12, c.dy + s * 0.3)
-      ..lineTo(c.dx + s * 0.04, c.dy + s * 0.08)
-      ..lineTo(c.dx - s * 0.04, c.dy + s * 0.08)
-      ..close();
-    canvas.drawPath(sand, _solid);
-  }
-
-  /// Anan em silhueta (três bolhas sobre a base) com o + no alto, à
-  /// direita, como no nome "Peregrino+". Um respiro separa o + da nuvem.
   void _plusMark(Canvas canvas, Offset c, double s) {
     final o = c + Offset(-s * 0.05, s * 0.08);
     Path circle(double dx, double dy, double r) => Path()
@@ -1964,8 +1019,5 @@ class _GlyphPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _GlyphPainter old) =>
-      old.glyph != glyph ||
-      old.color != color ||
-      old.premium != premium ||
-      old.onDark != onDark;
+      old.glyph != glyph || old.ink != ink;
 }

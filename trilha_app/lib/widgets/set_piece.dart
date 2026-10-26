@@ -37,10 +37,12 @@ class SetPiece {
   });
 }
 
-/// Mostra [piece] por cima de tudo. Resolve quando a pessoa segue.
-Future<void> showSetPiece(BuildContext context, SetPiece piece) {
-  return Navigator.of(context, rootNavigator: true).push(
-    PageRouteBuilder<void>(
+/// Mostra [piece] por cima de tudo.
+///
+/// Retorna `true` só se a pessoa tocou o CTA — voltar / dismiss não conta.
+Future<bool> showSetPiece(BuildContext context, SetPiece piece) async {
+  final confirmed = await Navigator.of(context, rootNavigator: true).push<bool>(
+    PageRouteBuilder<bool>(
       opaque: false,
       barrierDismissible: false,
       transitionDuration: AppMotion.gentle,
@@ -56,6 +58,7 @@ Future<void> showSetPiece(BuildContext context, SetPiece piece) {
       ),
     ),
   );
+  return confirmed ?? false;
 }
 
 /// Lembra quais momentos já foram vistos — cada um acontece uma vez.
@@ -65,13 +68,25 @@ class SetPieceMemory {
   static const _prefix = 'setPiece:';
   static const _seasonKey = 'setPiece:lastSeason';
 
-  /// `true` na primeira vez que [id] é pedido; marca como visto.
+  /// Já foi confirmado (CTA) alguma vez?
+  static Future<bool> seen(String id) async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool('$_prefix$id') ?? false;
+  }
+
+  /// Marca como visto. `true` se ainda não estava marcado.
   static Future<bool> claim(String id) async {
     final prefs = await SharedPreferences.getInstance();
     final key = '$_prefix$id';
     if (prefs.getBool(key) ?? false) return false;
     await prefs.setBool(key, true);
     return true;
+  }
+
+  /// Esquece um momento — útil pra retestar o palco.
+  static Future<void> forget(String id) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('$_prefix$id');
   }
 
   /// Estação nova desde a última abertura? A primeira abertura só anota
@@ -159,116 +174,159 @@ class _SetPieceStageState extends State<_SetPieceStage>
   static double _span(double t, double a, double b) =>
       ((t - a) / (b - a)).clamp(0.0, 1.0);
 
-  void _skipOrClose() {
-    if (_t.value < 0.8) {
-      _t.value = 1;
-      if (!_struck) _strike();
-      return;
-    }
-    Navigator.of(context).pop();
+  void _skipIntro() {
+    if (_t.value >= 0.8) return;
+    _t.value = 1;
+    if (!_struck) _strike();
   }
+
+  void _dismiss() => Navigator.of(context).pop(false);
+
+  void _confirm() => Navigator.of(context).pop(true);
 
   @override
   Widget build(BuildContext context) {
     final piece = widget.piece;
     // O véu é sempre noite: texto claro, independente da aparência.
     const ink = AppColors.textOnDark;
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: _skipOrClose,
-      child: AnimatedBuilder(
-        animation: _t,
-        builder: (context, _) {
-          final t = _t.value;
-          final veil = AppMotion.enter.transform(_span(t, 0, 0.18));
-          final light = AppMotion.enter.transform(_span(t, 0.08, 0.55));
-          final emblem = AppMotion.pop.transform(_span(t, 0.22, 0.42));
-          final words = AppMotion.enter.transform(_span(t, 0.40, 0.66));
-          final line = AppMotion.enter.transform(_span(t, 0.56, 0.80));
-          final cta = AppMotion.enter.transform(_span(t, 0.78, 1));
-          return Stack(
-            fit: StackFit.expand,
-            children: [
-              ColoredBox(color: AppColors.night.withValues(alpha: 0.86 * veil)),
-              IgnorePointer(
-                child: CustomPaint(
-                  painter: _LightPainter(
-                    color: piece.light,
-                    light: light,
-                    drift: t,
+    // Sem decoração herdada — o merge do TextStyle senão puxa
+    // sublinhado (e corta descendentes da serifa).
+    const clean = TextStyle(
+      decoration: TextDecoration.none,
+      decorationColor: Color(0x00000000),
+      decorationThickness: 0,
+    );
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _dismiss();
+      },
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: _skipIntro,
+        child: AnimatedBuilder(
+          animation: _t,
+          builder: (context, _) {
+            final t = _t.value;
+            final veil = AppMotion.enter.transform(_span(t, 0, 0.18));
+            final light = AppMotion.enter.transform(_span(t, 0.08, 0.55));
+            final emblem = AppMotion.pop.transform(_span(t, 0.22, 0.42));
+            final words = AppMotion.enter.transform(_span(t, 0.40, 0.66));
+            final line = AppMotion.enter.transform(_span(t, 0.56, 0.80));
+            final cta = AppMotion.enter.transform(_span(t, 0.78, 1));
+            return Stack(
+              fit: StackFit.expand,
+              children: [
+                // Opaco: a intro da cena não compete com o momento.
+                ColoredBox(
+                  color: AppColors.night.withValues(alpha: 0.97 * veil),
+                ),
+                IgnorePointer(
+                  child: CustomPaint(
+                    painter: _LightPainter(
+                      color: piece.light,
+                      light: light,
+                      drift: t,
+                    ),
                   ),
                 ),
-              ),
-              SafeArea(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpace.screen,
-                  ),
-                  child: Column(
-                    children: [
-                      const Spacer(flex: 3),
-                      Transform.scale(
-                        scale: 0.6 + 0.4 * emblem,
-                        child: Opacity(
-                          opacity: emblem.clamp(0.0, 1.0),
-                          child: _Emblem(
-                            glyph: piece.glyph,
-                            color: piece.light,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: AppSpace.xxl),
-                      _Rise(
-                        t: words,
-                        child: SectionLabel(piece.eyebrow, color: piece.light),
-                      ),
-                      const SizedBox(height: AppSpace.sm),
-                      _Rise(
-                        t: words,
-                        child: Text(
-                          piece.title,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.display(
-                            size: 40,
-                            color: ink,
-                            height: 1.05,
-                          ),
-                        ),
-                      ),
-                      if ((piece.line ?? '').isNotEmpty) ...[
-                        const SizedBox(height: AppSpace.md),
-                        _Rise(
-                          t: line,
-                          child: Text(
-                            piece.line!,
-                            textAlign: TextAlign.center,
-                            style: AppTypography.body(
-                              size: 16,
-                              height: 1.45,
-                              color: ink.withValues(alpha: 0.78),
+                SafeArea(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpace.screen,
+                    ),
+                    child: DefaultTextStyle.merge(
+                      style: clean,
+                      child: Column(
+                        children: [
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: IconButton(
+                              onPressed: _dismiss,
+                              tooltip: MaterialLocalizations.of(
+                                context,
+                              ).backButtonTooltip,
+                              padding: EdgeInsets.zero,
+                              constraints: const BoxConstraints(
+                                minWidth: 44,
+                                minHeight: 44,
+                              ),
+                              icon: CinematicIcon(
+                                glyph: CinematicGlyph.back,
+                                size: 36,
+                                accent: ink.withValues(alpha: 0.85),
+                                glowing: false,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
-                      const Spacer(flex: 4),
-                      IgnorePointer(
-                        ignoring: cta < 0.5,
-                        child: Opacity(
-                          opacity: cta,
-                          child: CopperCta(
-                            label: piece.cta,
-                            onTap: () => Navigator.of(context).pop(),
+                          const Spacer(flex: 3),
+                          Transform.scale(
+                            scale: 0.6 + 0.4 * emblem,
+                            child: Opacity(
+                              opacity: emblem.clamp(0.0, 1.0),
+                              child: _Emblem(
+                                glyph: piece.glyph,
+                                color: piece.light,
+                              ),
+                            ),
                           ),
-                        ),
+                          const SizedBox(height: AppSpace.xxl),
+                          _Rise(
+                            t: words,
+                            child: SectionLabel(
+                              piece.eyebrow,
+                              color: piece.light,
+                            ),
+                          ),
+                          const SizedBox(height: AppSpace.sm),
+                          _Rise(
+                            t: words,
+                            child: Text(
+                              piece.title,
+                              textAlign: TextAlign.center,
+                              style: AppTypography.display(
+                                size: 40,
+                                color: ink,
+                                height: 1.2,
+                              ).merge(clean),
+                            ),
+                          ),
+                          if ((piece.line ?? '').isNotEmpty) ...[
+                            const SizedBox(height: AppSpace.md),
+                            _Rise(
+                              t: line,
+                              child: Text(
+                                piece.line!,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.body(
+                                  size: 16,
+                                  height: 1.45,
+                                  color: ink.withValues(alpha: 0.78),
+                                ).merge(clean),
+                              ),
+                            ),
+                          ],
+                          const Spacer(flex: 4),
+                          IgnorePointer(
+                            ignoring: cta < 0.5,
+                            child: Opacity(
+                              opacity: cta,
+                              child: CopperCta(
+                                label: piece.cta,
+                                onTap: _confirm,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: AppSpace.lg),
+                        ],
                       ),
-                      const SizedBox(height: AppSpace.lg),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            ],
-          );
-        },
+              ],
+            );
+          },
+        ),
       ),
     );
   }

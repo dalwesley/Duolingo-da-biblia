@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../data/season_walk_catalog.dart';
 import '../data/trail_repository.dart';
 import '../services/league_service.dart';
 import '../services/plus_log.dart';
@@ -12,7 +13,9 @@ import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../utils/liturgical_calendar.dart';
 import '../utils/plus_offers.dart';
+import '../utils/season_walk_debug.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/daily_chest_sheet.dart';
 import '../widgets/immersive_background.dart';
@@ -153,8 +156,49 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
   }
 
   Future<void> _clear() async {
-    await context.read<ProgressService>().debugClearLab();
+    final progress = context.read<ProgressService>();
+    await progress.debugClearLab();
+    await progress.debugSetSeasonToday(null);
     _toast('Dados do laboratório limpos');
+  }
+
+  Future<void> _setSeasonClock(DateTime? day, String label) async {
+    await context.read<ProgressService>().debugSetSeasonToday(day);
+    _toast(day == null ? 'Relógio real' : 'Caminhada em $label — volte à Home');
+  }
+
+  /// Pré-Advento (card na home), dia 1, meio da campanha, relógio real.
+  List<(String id, String label, DateTime? day)> _seasonChoices() {
+    final year = DateTime.now().year;
+    final start = LiturgicalCalendar.adventStart(year);
+    // Se o Advento deste ano já passou, usa o do ano que vem.
+    final advent = start.isBefore(DateTime.now())
+        ? LiturgicalCalendar.adventStart(year + 1)
+        : start;
+    return [
+      (
+        'card',
+        'Card na home (7 dias antes)',
+        advent.subtract(const Duration(days: 7)),
+      ),
+      ('day1', 'Dia 1 da caminhada', advent),
+      ('day10', 'Dia 10 (calendário aberto)', advent.add(const Duration(days: 9))),
+      ('real', 'Relógio real', null),
+    ];
+  }
+
+  String _seasonChoiceId(ProgressService progress) {
+    if (!progress.debugSeasonTodayActive) return 'real';
+    final today = progress.seasonToday;
+    for (final (id, _, day) in _seasonChoices()) {
+      if (day != null &&
+          day.year == today.year &&
+          day.month == today.month &&
+          day.day == today.day) {
+        return id;
+      }
+    }
+    return 'other';
   }
 
   Future<void> _offer(PlusOfferKind kind) async {
@@ -264,10 +308,33 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           '${sub.debugPromoOverride ? ' (simulada)' : ''}',
                         ),
                         line(
+                          'Caminhada (relógio): ${_ymd(progress.seasonToday)}'
+                          '${progress.debugSeasonTodayActive ? ' (simulado)' : ''}',
+                        ),
+                        line(
                           'Semana da revisão: $week · '
                           'cenas: ${progress.missionsCompletedInWeek(week).length} · '
                           'feita: ${progress.isWeeklyReviewDone(week)}',
                         ),
+                      ]),
+                      section('Caminhada sazonal', [
+                        line(
+                          'Simula a data da Caminhada do Advento neste '
+                          'aparelho (fica salva). “Card na home” mostra o '
+                          'card destaque abaixo da missão. Volte à Home '
+                          'depois de escolher.',
+                        ),
+                        for (final (id, label, day) in _seasonChoices())
+                          button(
+                            _seasonChoiceId(progress) == id
+                                ? '● $label'
+                                : label,
+                            () => _setSeasonClock(day, _ymd(day)),
+                          ),
+                        if (SeasonWalkDebug.active)
+                          line(
+                            'Campanha: ${SeasonWalkCatalog.current(progress.seasonToday).title}',
+                          ),
                       ]),
                       section('Registro do Plus', [
                         line(

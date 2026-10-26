@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
@@ -44,6 +45,9 @@ class HomePlayerHeader extends StatelessWidget {
         freezeUsed: p.streakFreezeUsedThisWeek,
         freezeAvailable: p.streakFreezeAvailable,
         portraitStyle: p.settings.portraitStyle,
+        walkedToday: p.walkedToday,
+        yesterdayFrozen: p.yesterdayWasFrozen,
+        returningAfterGap: p.isReturningAfterGap,
       ),
     );
     final b = context.select(
@@ -64,10 +68,23 @@ class HomePlayerHeader extends StatelessWidget {
     final freezeCount = freezeUsed || p.freezeAvailable ? 1 : 0;
     final goalFill = goal <= 0 ? 0.0 : done / goal;
     final barColor = AppRoles.presence;
+    // Mesma borda do CTA do hero (ouro / risco / neutro).
+    final mood = resolveHeroCardMood(
+      atRisk: atRisk,
+      yesterdayFrozen: p.yesterdayFrozen,
+      walkedToday: p.walkedToday,
+      returningAfterGap: p.returningAfterGap,
+    );
+    final ctaBorder = HeroCardMoodStyle.of(
+      mood,
+      a,
+      atRisk: atRisk,
+    ).border;
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),
-      tint: goalMet ? AppRoles.presence : null,
+      borderColor: ctaBorder,
+      tint: goalMet ? ctaBorder : null,
       glow: goalMet ? 0.45 : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

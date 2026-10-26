@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
@@ -154,5 +156,49 @@ void main() {
     ]);
     expect(sub.isPeregrinoPlus, isTrue);
     expect(sub.lastPlusEndedAt, isNull);
+  });
+
+  List<String> validCache() => [
+    'plus=true',
+    'supporter=false',
+    'product=plus_annual',
+    'expires=${DateTime.now().add(const Duration(days: 30)).toIso8601String()}',
+    'willRenew=true',
+    'trial=false',
+    'billing=false',
+    'uid=uid-1',
+  ];
+
+  test('boot antes do login (bindUid null) não apaga o cache', () async {
+    SharedPreferences.setMockInitialValues({
+      'plusEntitlementCache': validCache(),
+    });
+    final sub = SubscriptionService();
+    // Como no main.dart: o provider liga antes de o auth restaurar.
+    unawaited(sub.init());
+    unawaited(sub.bindUid(null));
+    await Future<void>.delayed(const Duration(milliseconds: 50));
+    expect(sub.isPeregrinoPlus, isTrue);
+    await sub.bindUid('uid-1');
+    expect(sub.isPeregrinoPlus, isTrue);
+    final prefs = await SharedPreferences.getInstance();
+    expect(prefs.getStringList('plusEntitlementCache'), isNotNull);
+  });
+
+  test('sair da conta depois do login apaga o cache', () async {
+    final sub = await bootWithCache(validCache());
+    await sub.bindUid('uid-1');
+    expect(sub.isPeregrinoPlus, isTrue);
+    await sub.logOut();
+    expect(sub.isPeregrinoPlus, isFalse);
+    final prefs = await SharedPreferences.getInstance();
+    expect(prefs.getStringList('plusEntitlementCache'), isNull);
+  });
+
+  test('cache de outra conta não passa para quem entra', () async {
+    final sub = await bootWithCache(validCache());
+    await sub.bindUid(null);
+    await sub.bindUid('uid-2');
+    expect(sub.isPeregrinoPlus, isFalse);
   });
 }

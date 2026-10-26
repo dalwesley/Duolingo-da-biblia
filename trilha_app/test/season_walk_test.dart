@@ -7,7 +7,9 @@ import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/models/season_walk.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/utils/liturgical_calendar.dart';
+import 'package:trilha_app/utils/season_walk_debug.dart';
 import 'package:trilha_app/widgets/mission_listen_button.dart';
+import 'package:trilha_app/widgets/season_walk_together.dart';
 
 void main() {
   group('SeasonWalkCatalog', () {
@@ -84,6 +86,27 @@ void main() {
       expect(access.future, isTrue);
       expect(access.playable, isFalse);
       expect(access.needsPlus, isFalse);
+    });
+
+    test('locked days tease the trail without spoiling the scene title', () {
+      expect(SeasonWalkCatalog.trailTeaser('evangelhos'), 'Os Quatro Evangelhos');
+      expect(SeasonWalkCatalog.trailTeaser('genesis-1-11'), 'Gênesis 1–11');
+      final start = LiturgicalCalendar.adventStart(2026);
+      final c = SeasonWalkCatalog.advent(start);
+      final day = c.dayAt(2)!;
+      expect(day.trailSlug, 'genesis-1-11');
+      expect(day.title, isNot(contains('Gênesis')));
+    });
+
+    test('lab clock shows the home card before Advent starts', () {
+      final start = LiturgicalCalendar.adventStart(2026);
+      final cardDay = start.subtract(const Duration(days: 7));
+      SeasonWalkDebug.bind(cardDay);
+      addTearDown(() => SeasonWalkDebug.bind(null));
+      final c = SeasonWalkCatalog.current();
+      expect(SeasonWalkTogetherCard.visibleOn(c, SeasonWalkDebug.today()), isTrue);
+      expect(c.dayIndexOn(SeasonWalkDebug.today()), isNull);
+      expect(c.start, start);
     });
 
     test('in September the 40-day walk is gone; Advent is next', () {

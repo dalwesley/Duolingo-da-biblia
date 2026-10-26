@@ -18,6 +18,7 @@ import '../services/progress_service.dart';
 import '../services/session_composer.dart';
 import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
+import 'coming_soon_screen.dart';
 import 'paywall_screen.dart';
 import '../theme/app_theme.dart';
 import '../utils/plus_access.dart';
@@ -44,6 +45,7 @@ import '../widgets/top_bar.dart';
 import '../widgets/verse_fill_panel.dart';
 import '../widgets/mission_listen_button.dart';
 import '../screens/celebration_screen.dart';
+import '../screens/main_shell.dart';
 import '../services/tts_service.dart';
 import '../widgets/set_piece.dart';
 import '../widgets/relic_panel.dart';
@@ -53,6 +55,12 @@ import '../screens/difficulty_picker_screen.dart';
 /// Sessão única: entrada → atos → (micro) → insight → saída.
 /// Estudo longo pré-quiz removido ([docs/SESSAO_TREINO.md]).
 enum _Phase { intro, quiz, micro, insight }
+
+/// O Anan chamando: na primeira vez (ensina o toque) ou quando a pessoa
+/// travou (erro, ou parada há um tempo).
+enum _AnanCall { none, teach, stuck }
+
+/// O que a pessoa escolheu na ajuda do Anan e precisa voltar para a cena.
 
 class LessonScreen extends StatefulWidget {
   final String missionSlug;
@@ -121,6 +129,10 @@ class _LessonScreenState extends State<LessonScreen>
   int _lampCount = ProgressService.maxLamps;
   bool _hintUsed = false;
   Set<String> _eliminated = {};
+
+  _AnanCall _ananCall = _AnanCall.none;
+  Timer? _ananIdle;
+  static const _ananIdleAfter = Duration(seconds: 18);
   bool _outOfLamps = false;
 
   /// Índice da lâmpada que acabou de apagar — flash vermelho no HUD.
@@ -146,6 +158,7 @@ class _LessonScreenState extends State<LessonScreen>
   @override
   void dispose() {
     _impactFlash.dispose();
+    _ananIdle?.cancel();
     TtsService.instance.stop();
     super.dispose();
   }
@@ -388,11 +401,13 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   /// Travessia: o primeiro passo em cada uma abre como um grande momento.
+  /// Só marca como visto no Começar. Voltar fecha cena + mapa e vai à Hoje.
   Future<void> _openCrossing(Mission mission) async {
-    if (!await SetPieceMemory.claim('crossing:${mission.slug}')) return;
+    final id = 'crossing:${mission.slug}';
+    if (await SetPieceMemory.seen(id)) return;
     if (!mounted) return;
     final l10n = context.l10n;
-    await showSetPiece(
+    final confirmed = await showSetPiece(
       context,
       SetPiece(
         eyebrow: l10n.setPieceCrossingEyebrow,
@@ -403,6 +418,13 @@ class _LessonScreenState extends State<LessonScreen>
         cta: l10n.commonStart,
       ),
     );
+    if (!mounted) return;
+    if (confirmed) {
+      await SetPieceMemory.claim(id);
+      return;
+    }
+    Navigator.of(context).popUntil((r) => r.isFirst);
+    MainShell.goToday();
   }
 
   /// Entrada bíblica: missão → estudo → atos. Leitura na tradução escolhida.
@@ -484,26 +506,85 @@ class _LessonScreenState extends State<LessonScreen>
     return _microVerse();
   }
 
-  /// Texto da cena por cima da pergunta — reler sem sair do fluxo.
-  Future<void> _openPassage() async {
+  /// A dica existe neste gesto (some na Travessia).
+  bool get _hintOffered =>
+      !(_mission?.isBoss ?? false) && _exercise.supportsHint;
+
+  /// A dica ainda pode ser pedida agora.
+  bool get _hintOpen =>
+      _hintOffered && !_hintUsed && _selected == null && !_showFeedback;
+
+  /// O Anan abre o texto da cena. A dica mora no verso do balão.
+  bool get _ananHelps => _board != null;
+
+  /// Pergunta nova (ou de volta): o Anan convida até o primeiro toque e,
+  /// se a pessoa ficar parada, oferece ajuda.
+  void _armAnan({bool stuck = false}) {
+    _ananIdle?.cancel();
+    if (_phase != _Phase.quiz || !_ananHelps) {
+      if (_ananCall != _AnanCall.none) {
+        setState(() => _ananCall = _AnanCall.none);
+      }
+      return;
+    }
+    final found = context.read<ProgressService>().ananHelpFound;
+    final call = !found
+        ? _AnanCall.teach
+        : (stuck ? _AnanCall.stuck : _AnanCall.none);
+    if (call != _ananCall) setState(() => _ananCall = call);
+    if (call != _AnanCall.none) return;
+    _ananIdle = Timer(_ananIdleAfter, () {
+      if (!mounted || _phase != _Phase.quiz) return;
+      if (_selected != null || _showFeedback) return;
+      setState(() => _ananCall = _AnanCall.stuck);
+    });
+  }
+
+  /// Texto da cena no Anan: reler, ouvir e estudar — sem sair do fluxo.
+  Future<void> _openHelp(String source) async {
     final board = _board;
     if (board == null) return;
+    final from = switch (_ananCall) {
+      _AnanCall.teach => 'teach',
+      _AnanCall.stuck => 'nudge',
+      _AnanCall.none => source,
+    };
+    context.read<ProgressService>().markAnanHelpFound();
+    _ananIdle?.cancel();
+    if (_ananCall != _AnanCall.none) {
+      setState(() => _ananCall = _AnanCall.none);
+    }
     unawaited(
-      AnalyticsService.instance.logEvent('passage_open', {
+      AnalyticsService.instance.logEvent('anan_help_open', {
         'mission_slug': widget.missionSlug,
         'index': _questionIndex,
-        'after_error': _isCorrect == false ? 1 : 0,
+        'source': from,
+        'after_error': _isCorrect == false || _wrongsHere > 0 ? 1 : 0,
+        'hint_open': _hintOpen ? 1 : 0,
       }),
     );
     await showAppSheet<void>(
       context,
-      builder: (_) => _PassageSheet(
+      builder: (_) => _AnanHelpSheet(
         reference: board.reference,
         text: board.text,
         accent: _gestureChrome,
       ),
     );
     TtsService.instance.stop();
+  }
+
+  /// Primeiro verso do balão: marca a dica como usada (analytics + estado).
+  void _revealHint() {
+    if (!_hintOpen) return;
+    unawaited(
+      AnalyticsService.instance.logEvent('anan_hint_use', {
+        'mission_slug': widget.missionSlug,
+        'index': _questionIndex,
+        'source': 'bubble',
+      }),
+    );
+    _useHint();
   }
 
   Future<void> _select(String optionId) async {
@@ -518,6 +599,8 @@ class _LessonScreenState extends State<LessonScreen>
     if (!ex.type.isRevealOnly && _outOfLamps) return;
     if (_eliminated.contains(optionId)) return;
     _busy = true;
+    _ananIdle?.cancel();
+    if (_ananCall == _AnanCall.stuck) _ananCall = _AnanCall.none;
 
     if (ex.type.isRevealOnly) {
       SoundService.instance.playCorrect();
@@ -654,20 +737,18 @@ class _LessonScreenState extends State<LessonScreen>
   void _useHint() {
     if (_mission?.isBoss == true) return;
     if (_hintUsed || _selected != null || _showFeedback) return;
-    // Toque já vibra no TextCta da dica.
     final ex = _exercise;
-    // Banco V3: a dica é uma frase de onde olhar; nenhuma opção some.
+    // Banco V3: frase no verso do balão; nenhuma opção some.
     if (ex.textHint != null) {
       setState(() => _hintUsed = true);
       return;
     }
+    // Banco antigo sem frase: remove um distrator.
     final correctId = ex.resolvedCorrectAnswer.trim();
     final wrong = ex.effectiveOptions
         .where((o) => o.id != correctId && !_eliminated.contains(o.id))
         .toList();
-    // Sem distrator eliminável — não marca dica como usada.
     if (wrong.isEmpty || correctId.isEmpty) return;
-    // Garante que a resposta certa existe nas opções (evita eliminar o acerto).
     final hasCorrect = ex.effectiveOptions.any((o) => o.id == correctId);
     if (!hasCorrect) return;
     wrong.shuffle();
@@ -854,6 +935,7 @@ class _LessonScreenState extends State<LessonScreen>
       _phase = _Phase.quiz;
     });
     _logExerciseStart();
+    _armAnan();
     unawaited(_maybeTeachStrong());
   }
 
@@ -928,6 +1010,7 @@ class _LessonScreenState extends State<LessonScreen>
           _hintUsed = false;
           _eliminated = {};
         });
+        _armAnan(stuck: true);
         return;
       }
       // Pular: a pergunta volta no fim da cena (uma vez só).
@@ -961,6 +1044,7 @@ class _LessonScreenState extends State<LessonScreen>
         _revealNow = false;
       });
       _logExerciseStart();
+      _armAnan();
     } else if (_mistakeInSession &&
         !_reviewInserted &&
         _requeuedSlots.isEmpty) {
@@ -1008,6 +1092,7 @@ class _LessonScreenState extends State<LessonScreen>
       _revealNow = false;
     });
     _logExerciseStart();
+    _armAnan();
   }
 
   /// Sair no meio da missão perde o progresso de hoje — pergunta antes.
@@ -1148,42 +1233,18 @@ class _LessonScreenState extends State<LessonScreen>
                                 isBoss: mission.isBoss,
                               ),
                               chromeAccent: accent,
+                              // O texto da cena e a dica moram no Anan.
                               trailing: _phase == _Phase.quiz
                                   ? Padding(
                                       padding: const EdgeInsets.only(right: 8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          if (_board != null)
-                                            IconButton(
-                                              tooltip: context
-                                                  .l10n
-                                                  .lessonPassageTitle,
-                                              onPressed: () {
-                                                ActHaptics.tap();
-                                                _openPassage();
-                                              },
-                                              visualDensity:
-                                                  VisualDensity.compact,
-                                              icon: CinematicIcon(
-                                                glyph: CinematicGlyph.book,
-                                                size: AppMetrics.iconMd,
-                                                accent: Appearance.of(
-                                                  context,
-                                                ).chrome,
-                                                framed: false,
-                                              ),
-                                            ),
-                                          LampsBar(
-                                            current: _lamps,
-                                            max: _maxLamps,
-                                            accent: AppRoles.presence,
-                                            flame: AppRoles.lamp,
-                                            compact: true,
-                                            atRisk: _lamps <= 1 && !_outOfLamps,
-                                            flashOffIndex: _lampFlashOff,
-                                          ),
-                                        ],
+                                      child: LampsBar(
+                                        current: _lamps,
+                                        max: _maxLamps,
+                                        accent: AppRoles.presence,
+                                        flame: AppRoles.lamp,
+                                        compact: true,
+                                        atRisk: _lamps <= 1 && !_outOfLamps,
+                                        flashOffIndex: _lampFlashOff,
                                       ),
                                     )
                                   : null,
@@ -1241,12 +1302,22 @@ class _LessonScreenState extends State<LessonScreen>
                                   showFeedback: _showFeedback,
                                   onSelect: _select,
                                   accent: _modeLight,
-                                  hintUsed: _hintUsed,
+                                  hintText: _hintOffered || _hintUsed
+                                      ? _exercise.textHint
+                                      : null,
+                                  onRevealHint: _hintOpen ? _revealHint : null,
                                   eliminatedIds: _eliminated,
-                                  onHint:
-                                      mission.isBoss || !_exercise.supportsHint
-                                      ? null
-                                      : _useHint,
+                                  onAnan: _ananHelps
+                                      ? () => _openHelp('tap')
+                                      : null,
+                                  ananBeckon: _ananCall != _AnanCall.none,
+                                  ananCaption: switch (_ananCall) {
+                                    _AnanCall.teach =>
+                                      context.l10n.lessonAnanTeach,
+                                    _AnanCall.stuck =>
+                                      context.l10n.lessonAnanStuck,
+                                    _AnanCall.none => null,
+                                  },
                                   outOfLamps: _outOfLamps,
                                   revealCorrect:
                                       _revealNow && _isCorrect == false,
@@ -1360,7 +1431,9 @@ class _LessonScreenState extends State<LessonScreen>
                       willRequeue: _skipNow,
                       onContinue: _continue,
                       onSkip: () => _continue(skip: true),
-                      onReadPassage: _board == null ? null : _openPassage,
+                      onReadPassage: _board == null
+                          ? null
+                          : () => _openHelp('feedback'),
                       missionSlug: widget.missionSlug,
                       trailSlug: _trailSlug,
                       difficulty: _difficultyMeta?.difficulty.id,
@@ -1438,13 +1511,13 @@ class _ActProgress extends StatelessWidget {
   }
 }
 
-/// Texto da cena aberto por cima da pergunta.
-class _PassageSheet extends StatelessWidget {
+/// Texto da cena no Anan: reler, ouvir e estudar — um CTA ouro volta à pergunta.
+class _AnanHelpSheet extends StatelessWidget {
   final String reference;
   final String text;
   final Color accent;
 
-  const _PassageSheet({
+  const _AnanHelpSheet({
     required this.reference,
     required this.text,
     required this.accent,
@@ -1452,7 +1525,10 @@ class _PassageSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    final hasText = text.trim().isNotEmpty;
+    final ref = reference.trim();
+    final maxVerseH = MediaQuery.sizeOf(context).height * 0.28;
+
     return AppSheetPanel(
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xl,
@@ -1463,47 +1539,100 @@ class _PassageSheet extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          AppSheetHeader(
-            center: true,
-            eyebrow: context.l10n.lessonPassageTitle,
-            eyebrowColor: accent,
-            title: reference.isNotEmpty
-                ? reference
-                : context.l10n.lessonPassageTitle,
-          ),
-          const SizedBox(height: 16),
-          Flexible(
-            child: SingleChildScrollView(
-              child: Text(
-                text,
-                textAlign: TextAlign.center,
-                style: AppTypography.verse(
-                  size: 20,
-                  height: 1.5,
-                  color: a.text,
-                ),
+          if (!hasText)
+            AppSheetHeader(
+              center: true,
+              title: context.l10n.lessonAnanHelpLabel,
+            )
+          else ...[
+            AnanSpeech(
+              face: CloudFace.feliz,
+              ananSize: 64,
+              padding: const EdgeInsets.fromLTRB(18, 14, 18, 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    context.l10n.lessonPassageTitle.toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w800,
+                      color: AnanSpeechBubble.mark,
+                    ),
+                  ),
+                  if (ref.isNotEmpty) ...[
+                    const SizedBox(height: 6),
+                    Text(
+                      ref,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.title(
+                        size: 18,
+                        color: AnanSpeechBubble.ink,
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: AppSpace.sm),
+                  ConstrainedBox(
+                    constraints: BoxConstraints(maxHeight: maxVerseH),
+                    child: SingleChildScrollView(
+                      child: Text(
+                        text,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.verse(
+                          size: 18,
+                          weight: FontWeight.w600,
+                          height: 1.55,
+                          color: AnanSpeechBubble.ink,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-          ),
-          const SizedBox(height: 12),
-          MissionListenButton(verse: text, accent: accent),
-          if (reference.trim().isNotEmpty) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpace.md),
+            Row(
+              children: [
+                Expanded(
+                  child: MissionListenButton(verse: text, accent: accent),
+                ),
+                if (ref.isNotEmpty) ...[
+                  const SizedBox(width: AppSpace.sm),
+                  Expanded(
+                    child: GhostCta(
+                      label: context.l10n.lessonStudyRefCta,
+                      leading: CinematicGlyph.book,
+                      expanded: true,
+                      onTap: () async {
+                        Navigator.pop(context);
+                        await showVerseStudyFromReference(
+                          context,
+                          reference,
+                          source: 'lesson_passage',
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ],
+            ),
+            const SizedBox(height: AppSpace.sm),
             GhostCta(
-              label: context.l10n.lessonStudyRefCta,
-              leading: CinematicGlyph.book,
+              label: context.l10n.lessonExploreSoonCta,
+              leading: CinematicGlyph.compass,
               expanded: true,
-              onTap: () async {
+              onTap: () {
                 Navigator.pop(context);
-                await showVerseStudyFromReference(
+                openComingSoon(
                   context,
-                  reference,
-                  source: 'lesson_feedback',
+                  ComingSoonFeature.explore,
+                  source: 'lesson_passage',
                 );
               },
             ),
           ],
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpace.lg),
           CopperCta(
             label: context.l10n.lessonBackToQuestion,
             trailing: null,

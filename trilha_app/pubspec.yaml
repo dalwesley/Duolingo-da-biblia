@@ -78,3 +78,12 @@ flutter:
     # Fontes principais embutidas: o google_fonts acha pelo nome do arquivo
     # (sem baixar na 1ª abertura / offline — sem troca de fonte no versículo).
     - assets/fonts/
+  # Ícones Phosphor (MIT) — só os glifos usados entram no release
+  # (tree-shake de ícones). Mapeamento em lib/widgets/cinematic_icon.dart.
+  fonts:
+    - family: PhosphorBold
+      fonts:
+        - asset: assets/fonts/phosphor/Phosphor-Bold.ttf
+    - family: PhosphorDuotone
+      fonts:
+        - asset: assets/fonts/phosphor/Phosphor-Duotone.ttf

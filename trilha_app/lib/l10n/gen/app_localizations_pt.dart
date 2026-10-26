@@ -2562,6 +2562,41 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get exploreSoonBody =>
+      'Estamos pensando em ferramentas para ver quando, onde e com quem cada cena aconteceu. Marque o que você mais quer usar: isso decide o que vem primeiro.';
+
+  @override
+  String get exploreSoonEntryBadge => 'Em breve';
+
+  @override
+  String get exploreSoonEntryTitle => 'Linha do tempo, mapas e personagens';
+
+  @override
+  String get exploreSoonItemAtlas =>
+      'Mapas: cidades, viagens e onde cada cena aconteceu';
+
+  @override
+  String get exploreSoonItemCharacters =>
+      'Personagens: quem é quem, famílias e histórias';
+
+  @override
+  String get exploreSoonItemTimeline =>
+      'Linha do tempo: reis, profetas e impérios lado a lado';
+
+  @override
+  String get exploreSoonJoined => 'Combinado! Avisaremos você quando abrir.';
+
+  @override
+  String get exploreSoonMeanwhile =>
+      'Enquanto isso, na Bíblia, toque num versículo e em \"Estudar este versículo\" para ver a palavra original e as conexões com outros textos.';
+
+  @override
+  String get exploreSoonPickHeader => 'O que você quer usar?';
+
+  @override
+  String get exploreSoonTitle => 'Explorar a Bíblia está chegando';
+
+  @override
   String get feedbackAlmost => 'Quase';
 
   @override
@@ -4268,6 +4303,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get legalTerms => 'Termos de uso';
 
   @override
+  String get lessonAnanHelpLabel => 'Pedir ajuda ao Anan';
+
+  @override
+  String get lessonAnanHintCta => 'Quero uma dica';
+
+  @override
+  String get lessonAnanStuck => 'Ajuda?';
+
+  @override
+  String get lessonAnanTeach => 'Toque em mim';
+
+  @override
   String get lessonBackToQuestion => 'Voltar à pergunta';
 
   @override
@@ -4299,6 +4346,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get lessonExitTitle => 'Sair da cena?';
+
+  @override
+  String get lessonExploreSoonCta => 'Onde e quando isso aconteceu?';
 
   @override
   String get lessonFactsLabel => 'O que o texto diz';
@@ -6043,7 +6093,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String notifWalkStartsBody(int total) {
-    return 'Dia 1 de $total: hoje a caravana caminha junto.';
+    return 'Dia 1 de $total: hoje a estação abre para todo mundo.';
   }
 
   @override
@@ -8125,6 +8175,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String seasonDayTrailLocked(int day, String trail) {
+    return 'Dia $day · $trail';
+  }
+
+  @override
   String seasonDaysWalked(int done, int total) {
     return '$done / $total dias caminhados';
   }
@@ -8134,6 +8189,18 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get seasonNotTodayYet => 'Ainda não é hoje';
+
+  @override
+  String seasonOpensIn(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Abre em $days dias',
+      one: 'Abre amanhã',
+      zero: 'Abre hoje',
+    );
+    return '$_temp0';
+  }
 
   @override
   String seasonPlusFromDay(int day) {
@@ -9532,8 +9599,8 @@ class AppLocalizationsPt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count dias caminhados juntos',
-      one: '1 dia caminhado juntos',
+      other: '$count dias no mesmo ritmo',
+      one: '1 dia no mesmo ritmo',
     );
     return '$_temp0';
   }
@@ -9542,30 +9609,33 @@ class AppLocalizationsPt extends AppLocalizations {
   String get walkTogetherInvite => 'Chamar alguém';
 
   @override
-  String get walkTogetherJoin => 'Entrar na caminhada';
+  String get walkTogetherJoin => 'Contar comigo';
 
   @override
-  String get walkTogetherJoined => 'Você está dentro';
+  String get walkTogetherKicker => 'Estação';
 
   @override
-  String get walkTogetherKicker => 'Caminhada coletiva';
-
-  @override
-  String get walkTogetherOpen => 'Abrir a caminhada';
+  String get walkTogetherOpen => 'Abrir o calendário';
 
   @override
   String walkTogetherPitch(int count) {
-    return '$count dias, uma cena por dia, com a caravana inteira.';
+    return '$count dias · uma cena por dia.';
+  }
+
+  @override
+  String walkTogetherShareSubject(String title) {
+    return '$title · Stway';
   }
 
   @override
   String walkTogetherShareText(
     String name,
     String title,
+    String pitch,
     String start,
     String url,
   ) {
-    return '$name vai fazer a caminhada $title no Stway: uma cena por dia, a partir de $start. Vem junto?\n\nBaixe: $url';
+    return '$name te chama para a estação $title no Stway.\n\n$pitch\nComeça em $start.\n\nVem junto nesta espera?\n\nAinda não tem o app?\n$url';
   }
 
   @override
@@ -9585,9 +9655,9 @@ class AppLocalizationsPt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count caminharam hoje',
-      one: '1 caminhou hoje',
-      zero: 'ninguém caminhou hoje ainda',
+      other: '$count fizeram o dia de hoje',
+      one: '1 fez o dia de hoje',
+      zero: 'ninguém fez o dia ainda',
     );
     return '$_temp0';
   }
@@ -9597,9 +9667,9 @@ class AppLocalizationsPt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count peregrinos na caminhada',
-      one: '1 peregrino na caminhada',
-      zero: 'Seja o primeiro a entrar',
+      other: '$count peregrinos',
+      one: '1 peregrino',
+      zero: 'Ninguém ainda',
     );
     return '$_temp0';
   }

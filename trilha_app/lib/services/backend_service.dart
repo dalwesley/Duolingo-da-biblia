@@ -930,13 +930,18 @@ class BackendService extends ChangeNotifier {
   }
 
   /// "Quero ser avisado" do que ainda não abriu (`groups`, `companion`,
-  /// `challenge`): guarda `{feature}WaitlistAt` no doc privado, para avisar
-  /// quem pediu quando abrir.
-  Future<bool> joinWaitlist(String feature) async {
+  /// `challenge`, `explore`): guarda `{feature}WaitlistAt` no doc privado,
+  /// para avisar quem pediu quando abrir. [picks] (só `explore`) guarda as
+  /// ferramentas marcadas em `{feature}Picks`.
+  Future<bool> joinWaitlist(
+    String feature, {
+    List<String> picks = const [],
+  }) async {
     if (!isActive) return false;
     try {
       await _db.doc(_privatePath).set({
         '${feature}WaitlistAt': FieldValue.serverTimestamp(),
+        if (picks.isNotEmpty) '${feature}Picks': FieldValue.arrayUnion(picks),
       }, SetOptions(merge: true));
       return true;
     } catch (e) {

@@ -26,7 +26,7 @@ import '../utils/tomorrow_hook.dart';
 import '../models/daily_quest.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/corner_board.dart';
-import '../widgets/season_walk_together.dart';
+import '../widgets/season_walk_feature_card.dart';
 import '../widgets/corner_home_card.dart';
 import '../widgets/juntos_inbox.dart';
 import '../widgets/cinematic_icon.dart';
@@ -480,7 +480,7 @@ class _HomeScreenState extends State<HomeScreen>
     // Hierarquia da revisão (1 fluxo de revisão por dia): fechamento da
     // temporada pendente silencia a oferta da semana; qualquer revisão
     // feita hoje encerra as ofertas até amanhã.
-    final now = DateTime.now();
+    final now = progress.seasonToday;
     final campaign = SeasonWalkCatalog.current(now);
     final liturgy = LiturgicalCalendar.momentFor(now);
     String ymdOf(DateTime d) => d.toIso8601String().substring(0, 10);
@@ -493,27 +493,8 @@ class _HomeScreenState extends State<HomeScreen>
     );
     final weeklyReview =
         reviewScenes > 0 && !seasonReviewPending && !progress.isReviewDoneToday;
-    // Caminhada coletiva antes do 1º dia; durante, o card da temporada
-    // abaixo da missão já leva ao dia.
-    final walkSoon =
-        SeasonWalkTogetherCard.visibleOn(campaign, now) &&
-        campaign.dayIndexOn(now) == null;
-    final walkJoined = progress.hasJoinedWalk(campaign.id);
-    final walkStartsIn = l10n.walkTogetherStartsIn(
-      SeasonWalkTogetherCard.daysUntilStart(campaign, now),
-    );
+    // Caminhada sazonal tem card próprio abaixo da missão — não entra aqui.
     final tiles = [
-      if (walkSoon)
-        _MoreTile(
-          glyph: CinematicGlyph.path,
-          title: campaign.title,
-          caption: walkJoined
-              ? '${l10n.walkTogetherJoined} · $walkStartsIn'
-              : walkStartsIn,
-          color: AppRoles.presence,
-          hot: !walkJoined,
-          onTap: () => _openCardSheet(const SeasonWalkTogetherCard()),
-        ),
       if (weeklyReview)
         _MoreTile(
           glyph: CinematicGlyph.scroll,
@@ -686,8 +667,8 @@ class _HomeScreenState extends State<HomeScreen>
         : listen
         ? context.watch<CornerService>().face
         : context.read<CornerService>().face;
-    // Fundo = gradiente da fase do dia do shell (ImmersiveScaffold); a arte
-    // da trilha vive só dentro do card herói. Cards comuns ficam neutros.
+    // Fundo = céu do shell. A pintura da trilha vive só no card herói
+    // (com gelo/poeira por cima).
     return Stack(
       children: [
         LayoutBuilder(
@@ -744,10 +725,20 @@ class _HomeScreenState extends State<HomeScreen>
                               goalMet: goalMet,
                               atRisk: progress.isStreakAtRisk,
                             ),
-                            _WalkHomeCard(heroMissionSlug: current?.slug),
+                            // Chip só quando a temporada já começou e o
+                            // card destaque não está cobrindo o dia.
+                            if (!SeasonWalkFeatureCard.visible(progress))
+                              _WalkHomeCard(heroMissionSlug: current?.slug),
                           ],
                         ),
                       ),
+                      if (SeasonWalkFeatureCard.visible(progress)) ...[
+                        const SizedBox(height: AppSpace.section),
+                        _reveal(
+                          2,
+                          SeasonWalkFeatureCard(onOpenSheet: _openCardSheet),
+                        ),
+                      ],
                       if (cornerFace != null) ...[
                         const SizedBox(height: AppSpace.section),
                         _reveal(
@@ -985,8 +976,7 @@ class _WalkHomeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
+    final today = context.select((ProgressService p) => p.seasonToday);
     final campaign = SeasonWalkCatalog.current(today);
     if (!campaign.contains(today)) return const SizedBox.shrink();
     final index = campaign.dayIndexOn(today);

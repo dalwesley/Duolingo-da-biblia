@@ -141,6 +141,9 @@ class GlassCard extends StatelessWidget {
   final Color? color;
   final Color? tint;
 
+  /// Borda explícita — ex.: espelhar o CTA do hero (ouro / risco / gelo).
+  final Color? borderColor;
+
   /// Palco: com valor (0–1), o card ganha brilho de [tint] no topo e um
   /// filamento aceso na borda — para cards que são “lugar”, não lista
   /// (duelo, dupla, passaporte). Sobe o tom quando o card pede ação.
@@ -156,6 +159,7 @@ class GlassCard extends StatelessWidget {
     this.accent = false,
     this.color,
     this.tint,
+    this.borderColor,
     this.glow,
   });
 
@@ -169,11 +173,13 @@ class GlassCard extends StatelessWidget {
         (tint != null
             ? Color.lerp(style.cardFill, tint, 0.12)!
             : style.cardFill);
-    final borderColor = (accent
-        ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
-        : tint != null
-        ? tint!.withValues(alpha: 0.45)
-        : style.cardBorder);
+    final edge =
+        borderColor ??
+        (accent
+            ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
+            : tint != null
+            ? tint!.withValues(alpha: 0.45)
+            : style.cardBorder);
 
     final content = Container(
       padding: padding,
@@ -187,15 +193,15 @@ class GlassCard extends StatelessWidget {
           stops: const [0, 0.45],
         ),
         border: Border.all(
-          color: borderColor,
-          width: accent || tint != null
+          color: edge,
+          width: accent || tint != null || borderColor != null
               ? AppMetrics.cardBorderWidth + 0.25
               : AppMetrics.cardBorderWidth,
         ),
         boxShadow: AppMetrics.cardShadow(
           elevated: elevated,
           accent: accent,
-          tint: tint,
+          tint: tint ?? borderColor,
         ),
       ),
       child: child,
@@ -217,10 +223,11 @@ class GlassCard extends StatelessWidget {
   }
 
   Widget _stage(AppearanceStyle style) {
-    final tone = tint ?? style.chrome;
+    final tone = tint ?? borderColor ?? style.chrome;
     final g = glow!.clamp(0.0, 1.0);
     final base = color ?? style.cardFill;
     const border = AppMetrics.cardBorderWidth;
+    final edge = borderColor ?? tone.withValues(alpha: 0.3 + 0.4 * g);
     final content = Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
@@ -235,7 +242,7 @@ class GlassCard extends StatelessWidget {
           stops: const [0.0, 0.5, 1.0],
         ),
         border: Border.all(
-          color: tone.withValues(alpha: 0.3 + 0.4 * g),
+          color: edge,
           width: border,
         ),
         boxShadow: [

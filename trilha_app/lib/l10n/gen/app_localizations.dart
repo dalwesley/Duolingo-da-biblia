@@ -4114,6 +4114,66 @@ abstract class AppLocalizations {
   /// **'Sua resposta: {text}'**
   String explainYourAnswer(String text);
 
+  /// No description provided for @exploreSoonBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estamos pensando em ferramentas para ver quando, onde e com quem cada cena aconteceu. Marque o que você mais quer usar: isso decide o que vem primeiro.'**
+  String get exploreSoonBody;
+
+  /// No description provided for @exploreSoonEntryBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em breve'**
+  String get exploreSoonEntryBadge;
+
+  /// No description provided for @exploreSoonEntryTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Linha do tempo, mapas e personagens'**
+  String get exploreSoonEntryTitle;
+
+  /// No description provided for @exploreSoonItemAtlas.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mapas: cidades, viagens e onde cada cena aconteceu'**
+  String get exploreSoonItemAtlas;
+
+  /// No description provided for @exploreSoonItemCharacters.
+  ///
+  /// In pt, this message translates to:
+  /// **'Personagens: quem é quem, famílias e histórias'**
+  String get exploreSoonItemCharacters;
+
+  /// No description provided for @exploreSoonItemTimeline.
+  ///
+  /// In pt, this message translates to:
+  /// **'Linha do tempo: reis, profetas e impérios lado a lado'**
+  String get exploreSoonItemTimeline;
+
+  /// No description provided for @exploreSoonJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Combinado! Avisaremos você quando abrir.'**
+  String get exploreSoonJoined;
+
+  /// No description provided for @exploreSoonMeanwhile.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enquanto isso, na Bíblia, toque num versículo e em \"Estudar este versículo\" para ver a palavra original e as conexões com outros textos.'**
+  String get exploreSoonMeanwhile;
+
+  /// No description provided for @exploreSoonPickHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que você quer usar?'**
+  String get exploreSoonPickHeader;
+
+  /// No description provided for @exploreSoonTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Explorar a Bíblia está chegando'**
+  String get exploreSoonTitle;
+
   /// No description provided for @feedbackAlmost.
   ///
   /// In pt, this message translates to:
@@ -6717,6 +6777,30 @@ abstract class AppLocalizations {
   /// **'Termos de uso'**
   String get legalTerms;
 
+  /// Leitor de tela: o Anan da pergunta é um botão
+  ///
+  /// In pt, this message translates to:
+  /// **'Pedir ajuda ao Anan'**
+  String get lessonAnanHelpLabel;
+
+  /// No description provided for @lessonAnanHintCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quero uma dica'**
+  String get lessonAnanHintCta;
+
+  /// Legenda sob o Anan depois de um erro ou de um tempo parado
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajuda?'**
+  String get lessonAnanStuck;
+
+  /// Legenda sob o Anan até a primeira vez que a pessoa toca nele
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque em mim'**
+  String get lessonAnanTeach;
+
   /// No description provided for @lessonBackToQuestion.
   ///
   /// In pt, this message translates to:
@@ -6770,6 +6854,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sair da cena?'**
   String get lessonExitTitle;
+
+  /// No description provided for @lessonExploreSoonCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Onde e quando isso aconteceu?'**
+  String get lessonExploreSoonCta;
 
   /// No description provided for @lessonFactsLabel.
   ///
@@ -9414,7 +9504,7 @@ abstract class AppLocalizations {
   /// No description provided for @notifWalkStartsBody.
   ///
   /// In pt, this message translates to:
-  /// **'Dia 1 de {total}: hoje a caravana caminha junto.'**
+  /// **'Dia 1 de {total}: hoje a estação abre para todo mundo.'**
   String notifWalkStartsBody(int total);
 
   /// No description provided for @notifWalkStartsTitle.
@@ -12597,6 +12687,12 @@ abstract class AppLocalizations {
   /// **'Dia {day} de {total}'**
   String seasonDayOf(String day, int total);
 
+  /// No description provided for @seasonDayTrailLocked.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day} · {trail}'**
+  String seasonDayTrailLocked(int day, String trail);
+
   /// No description provided for @seasonDaysWalked.
   ///
   /// In pt, this message translates to:
@@ -12614,6 +12710,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ainda não é hoje'**
   String get seasonNotTodayYet;
+
+  /// No description provided for @seasonOpensIn.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =0{Abre hoje} =1{Abre amanhã} other{Abre em {days} dias}}'**
+  String seasonOpensIn(int days);
 
   /// No description provided for @seasonPlusFromDay.
   ///
@@ -14814,7 +14916,7 @@ abstract class AppLocalizations {
   /// No description provided for @walkTogetherDays.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 dia caminhado juntos} other{{count} dias caminhados juntos}}'**
+  /// **'{count, plural, =1{1 dia no mesmo ritmo} other{{count} dias no mesmo ritmo}}'**
   String walkTogetherDays(int count);
 
   /// No description provided for @walkTogetherInvite.
@@ -14826,40 +14928,41 @@ abstract class AppLocalizations {
   /// No description provided for @walkTogetherJoin.
   ///
   /// In pt, this message translates to:
-  /// **'Entrar na caminhada'**
+  /// **'Contar comigo'**
   String get walkTogetherJoin;
-
-  /// No description provided for @walkTogetherJoined.
-  ///
-  /// In pt, this message translates to:
-  /// **'Você está dentro'**
-  String get walkTogetherJoined;
 
   /// No description provided for @walkTogetherKicker.
   ///
   /// In pt, this message translates to:
-  /// **'Caminhada coletiva'**
+  /// **'Estação'**
   String get walkTogetherKicker;
 
   /// No description provided for @walkTogetherOpen.
   ///
   /// In pt, this message translates to:
-  /// **'Abrir a caminhada'**
+  /// **'Abrir o calendário'**
   String get walkTogetherOpen;
 
   /// No description provided for @walkTogetherPitch.
   ///
   /// In pt, this message translates to:
-  /// **'{count} dias, uma cena por dia, com a caravana inteira.'**
+  /// **'{count} dias · uma cena por dia.'**
   String walkTogetherPitch(int count);
+
+  /// No description provided for @walkTogetherShareSubject.
+  ///
+  /// In pt, this message translates to:
+  /// **'{title} · Stway'**
+  String walkTogetherShareSubject(String title);
 
   /// No description provided for @walkTogetherShareText.
   ///
   /// In pt, this message translates to:
-  /// **'{name} vai fazer a caminhada {title} no Stway: uma cena por dia, a partir de {start}. Vem junto?\n\nBaixe: {url}'**
+  /// **'{name} te chama para a estação {title} no Stway.\n\n{pitch}\nComeça em {start}.\n\nVem junto nesta espera?\n\nAinda não tem o app?\n{url}'**
   String walkTogetherShareText(
     String name,
     String title,
+    String pitch,
     String start,
     String url,
   );
@@ -14873,13 +14976,13 @@ abstract class AppLocalizations {
   /// No description provided for @walkTogetherToday.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =0{ninguém caminhou hoje ainda} =1{1 caminhou hoje} other{{count} caminharam hoje}}'**
+  /// **'{count, plural, =0{ninguém fez o dia ainda} =1{1 fez o dia de hoje} other{{count} fizeram o dia de hoje}}'**
   String walkTogetherToday(int count);
 
   /// No description provided for @walkTogetherWalkers.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =0{Seja o primeiro a entrar} =1{1 peregrino na caminhada} other{{count} peregrinos na caminhada}}'**
+  /// **'{count, plural, =0{Ninguém ainda} =1{1 peregrino} other{{count} peregrinos}}'**
   String walkTogetherWalkers(int count);
 
   /// No description provided for @waveCta.

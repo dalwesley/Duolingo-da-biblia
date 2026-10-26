@@ -48,6 +48,10 @@ class AnanSpeech extends StatelessWidget {
 ///
 /// Com [back], o balão tem verso: [flipped] o vira na vertical para mostrar
 /// [back] (ex.: a dica) e [onTap] deixa a pessoa virar de volta.
+///
+/// Com [onAnanTap], o próprio Anan vira botão (ajuda da cena): leva um selo
+/// "!" em cima. [beckon] o faz balançar de tempos em tempos e [caption]
+/// escreve o convite embaixo dele ("Toque em mim", "Ajuda?").
 class AnanSideSpeech extends StatefulWidget {
   final Widget child;
   final Object? hop;
@@ -55,6 +59,10 @@ class AnanSideSpeech extends StatefulWidget {
   final Widget? back;
   final bool flipped;
   final VoidCallback? onTap;
+  final VoidCallback? onAnanTap;
+  final String? ananLabel;
+  final bool beckon;
+  final String? caption;
 
   const AnanSideSpeech({
     super.key,
@@ -64,6 +72,10 @@ class AnanSideSpeech extends StatefulWidget {
     this.back,
     this.flipped = false,
     this.onTap,
+    this.onAnanTap,
+    this.ananLabel,
+    this.beckon = false,
+    this.caption,
   });
 
   static const ananSize = 52.0;
@@ -84,6 +96,12 @@ class _AnanSideSpeechState extends State<AnanSideSpeech>
   // valor final e o balão trocaria de lado sem girar.
   late final AnimationController _flip;
 
+  /// Balanço de chamar: um ciclo a cada 2,4 s enquanto [beckon].
+  late final AnimationController _beckon = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 2400),
+  );
+
   @override
   void initState() {
     super.initState();
@@ -95,12 +113,30 @@ class _AnanSideSpeechState extends State<AnanSideSpeech>
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _syncBeckon();
+  }
+
+  void _syncBeckon() {
+    final still = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
+    if (widget.beckon && !still) {
+      if (!_beckon.isAnimating) _beckon.repeat();
+    } else if (_beckon.isAnimating || _beckon.value != 0) {
+      _beckon
+        ..stop()
+        ..value = 0;
+    }
+  }
+
+  @override
   void didUpdateWidget(covariant AnanSideSpeech oldWidget) {
     super.didUpdateWidget(oldWidget);
     final still = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
     if (!still && widget.hop != null && widget.hop != oldWidget.hop) {
       _hop.forward(from: 0);
     }
+    if (widget.beckon != oldWidget.beckon) _syncBeckon();
     if (widget.flipped != oldWidget.flipped) {
       final target = widget.flipped ? 1.0 : 0.0;
       if (still) {
@@ -115,6 +151,7 @@ class _AnanSideSpeechState extends State<AnanSideSpeech>
   void dispose() {
     _hop.dispose();
     _flip.dispose();
+    _beckon.dispose();
     super.dispose();
   }
 
@@ -172,28 +209,170 @@ class _AnanSideSpeechState extends State<AnanSideSpeech>
     );
   }
 
+  Widget _anan() {
+    Widget anan = AnimatedBuilder(
+      animation: _hop,
+      builder: (context, child) {
+        final t = math.sin(_hop.value * math.pi);
+        return Transform.translate(
+          offset: Offset(0, -6 * t),
+          child: Transform.scale(scale: 1 + 0.06 * t, child: child),
+        );
+      },
+      child: CloudMascot(
+        face: widget.face,
+        size: AnanSideSpeech.ananSize,
+        react: false,
+      ),
+    );
+    final tap = widget.onAnanTap;
+    if (tap == null) return anan;
+
+    anan = AnimatedBuilder(
+      animation: _beckon,
+      builder: (context, child) {
+        // Balança no primeiro terço do ciclo e descansa no resto.
+        final p = (_beckon.value / 0.34).clamp(0.0, 1.0);
+        final w = p >= 1 ? 0.0 : math.sin(p * math.pi * 4) * (1 - p);
+        return Transform.rotate(angle: 0.14 * w, child: child);
+      },
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          anan,
+          Positioned(
+            top: -6,
+            right: -6,
+            child: _HelpSeal(pulse: _beckon, lit: widget.beckon),
+          ),
+        ],
+      ),
+    );
+    final caption = widget.caption?.trim() ?? '';
+    return Semantics(
+      button: true,
+      label: widget.ananLabel,
+      // O rótulo já diz tudo; o "!" e o convite são só para o olho.
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: tap,
+        child: ConstrainedBox(
+          // Alvo de toque confortável mesmo com a nuvem pequena.
+          constraints: const BoxConstraints(minWidth: 56, minHeight: 56),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              anan,
+              AnimatedSize(
+                duration: AppMotion.standard,
+                curve: AppMotion.enter,
+                alignment: Alignment.topCenter,
+                child: caption.isEmpty
+                    ? const SizedBox(width: AnanSideSpeech.ananSize)
+                    : Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: _Caption(text: caption),
+                      ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        AnimatedBuilder(
-          animation: _hop,
-          builder: (context, child) {
-            final t = math.sin(_hop.value * math.pi);
-            return Transform.translate(
-              offset: Offset(0, -6 * t),
-              child: Transform.scale(scale: 1 + 0.06 * t, child: child),
-            );
-          },
-          child: CloudMascot(
-            face: widget.face,
-            size: AnanSideSpeech.ananSize,
-            react: false,
-          ),
-        ),
+        _anan(),
         const SizedBox(width: 14),
         Expanded(child: _bubble()),
       ],
+    );
+  }
+}
+
+/// Selo "!" em cima do Anan: diz que ele atende ao toque. Chamando, brilha.
+class _HelpSeal extends StatelessWidget {
+  final Animation<double> pulse;
+  final bool lit;
+
+  const _HelpSeal({required this.pulse, required this.lit});
+
+  static const _size = 20.0;
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: pulse,
+      builder: (context, child) {
+        final glow = lit ? 0.35 + 0.4 * math.sin(pulse.value * math.pi) : 0.0;
+        return Container(
+          width: _size,
+          height: _size,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: AnanSpeechBubble.fill,
+            border: Border.all(color: AnanSpeechBubble.rim, width: 1.5),
+            boxShadow: [
+              BoxShadow(
+                color: AppRoles.action.withValues(alpha: glow),
+                blurRadius: 10,
+                spreadRadius: 1,
+              ),
+            ],
+          ),
+          child: child,
+        );
+      },
+      child: Text(
+        '!',
+        style: AppTypography.title(
+          size: 13,
+          height: 1,
+          exact: true,
+          color: AnanSpeechBubble.mark,
+        ),
+      ),
+    );
+  }
+}
+
+/// Convite curto embaixo do Anan, no mesmo papel do balão.
+class _Caption extends StatelessWidget {
+  final String text;
+
+  const _Caption({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 76),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+        decoration: BoxDecoration(
+          color: AnanSpeechBubble.fill,
+          borderRadius: BorderRadius.circular(AppRadii.pill),
+          border: Border.all(color: AnanSpeechBubble.rim, width: 1),
+        ),
+        child: Text(
+          text,
+          maxLines: 2,
+          textAlign: TextAlign.center,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.body(
+            size: 11,
+            height: 1.15,
+            exact: true,
+            weight: FontWeight.w800,
+            color: AnanSpeechBubble.mark,
+          ),
+        ),
+      ),
     );
   }
 }

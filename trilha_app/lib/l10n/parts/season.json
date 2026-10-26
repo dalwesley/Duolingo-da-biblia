@@ -109,6 +109,23 @@
     "en": "Not today yet",
     "es": "Todavía no es hoy"
   },
+  "seasonOpensIn": {
+    "pt": "{days, plural, =0{Abre hoje} =1{Abre amanhã} other{Abre em {days} dias}}",
+    "en": "{days, plural, =0{Opens today} =1{Opens tomorrow} other{Opens in {days} days}}",
+    "es": "{days, plural, =0{Abre hoy} =1{Abre mañana} other{Abre en {days} días}}",
+    "placeholders": {
+      "days": "int"
+    }
+  },
+  "seasonDayTrailLocked": {
+    "pt": "Dia {day} · {trail}",
+    "en": "Day {day} · {trail}",
+    "es": "Día {day} · {trail}",
+    "placeholders": {
+      "day": "int",
+      "trail": "String"
+    }
+  },
   "seasonPlusFromDay": {
     "pt": "Peregrino+ a partir do dia {day}.",
     "en": "Pilgrim+ from day {day}.",
@@ -164,9 +181,9 @@
     "es": "Tres preguntas de los textos que ya estudiaste."
   },
   "walkTogetherKicker": {
-    "pt": "Caminhada coletiva",
-    "en": "Walk together",
-    "es": "Caminata en grupo"
+    "pt": "Estação",
+    "en": "Season",
+    "es": "Estación"
   },
   "walkTogetherStartsIn": {
     "pt": "{days, plural, =0{Começa hoje} =1{Começa amanhã} other{Começa em {days} dias}}",
@@ -177,9 +194,9 @@
     }
   },
   "walkTogetherPitch": {
-    "pt": "{count} dias, uma cena por dia, com a caravana inteira.",
-    "en": "{count} days, one scene a day, with the whole caravan.",
-    "es": "{count} días, una escena por día, con toda la caravana.",
+    "pt": "{count} dias · uma cena por dia.",
+    "en": "{count} days · one scene a day.",
+    "es": "{count} días · una escena por día.",
     "placeholders": {
       "count": "int"
     }
@@ -194,38 +211,33 @@
     }
   },
   "walkTogetherWalkers": {
-    "pt": "{count, plural, =0{Seja o primeiro a entrar} =1{1 peregrino na caminhada} other{{count} peregrinos na caminhada}}",
-    "en": "{count, plural, =0{Be the first to join} =1{1 pilgrim on the walk} other{{count} pilgrims on the walk}}",
-    "es": "{count, plural, =0{Sé el primero en unirte} =1{1 peregrino en la caminata} other{{count} peregrinos en la caminata}}",
+    "pt": "{count, plural, =0{Ninguém ainda} =1{1 peregrino} other{{count} peregrinos}}",
+    "en": "{count, plural, =0{Nobody yet} =1{1 pilgrim} other{{count} pilgrims}}",
+    "es": "{count, plural, =0{Nadie aún} =1{1 peregrino} other{{count} peregrinos}}",
     "placeholders": {
       "count": "int"
     }
   },
   "walkTogetherToday": {
-    "pt": "{count, plural, =0{ninguém caminhou hoje ainda} =1{1 caminhou hoje} other{{count} caminharam hoje}}",
-    "en": "{count, plural, =0{nobody has walked today yet} =1{1 walked today} other{{count} walked today}}",
-    "es": "{count, plural, =0{nadie caminó hoy todavía} =1{1 caminó hoy} other{{count} caminaron hoy}}",
+    "pt": "{count, plural, =0{ninguém fez o dia ainda} =1{1 fez o dia de hoje} other{{count} fizeram o dia de hoje}}",
+    "en": "{count, plural, =0{nobody has done today's scene yet} =1{1 did today's scene} other{{count} did today's scene}}",
+    "es": "{count, plural, =0{nadie hizo el día aún} =1{1 hizo el día de hoy} other{{count} hicieron el día de hoy}}",
     "placeholders": {
       "count": "int"
     }
   },
   "walkTogetherDays": {
-    "pt": "{count, plural, =1{1 dia caminhado juntos} other{{count} dias caminhados juntos}}",
-    "en": "{count, plural, =1{1 day walked together} other{{count} days walked together}}",
-    "es": "{count, plural, =1{1 día caminado juntos} other{{count} días caminados juntos}}",
+    "pt": "{count, plural, =1{1 dia no mesmo ritmo} other{{count} dias no mesmo ritmo}}",
+    "en": "{count, plural, =1{1 day in the same rhythm} other{{count} days in the same rhythm}}",
+    "es": "{count, plural, =1{1 día al mismo ritmo} other{{count} días al mismo ritmo}}",
     "placeholders": {
       "count": "int"
     }
   },
   "walkTogetherJoin": {
-    "pt": "Entrar na caminhada",
-    "en": "Join the walk",
-    "es": "Unirme a la caminata"
-  },
-  "walkTogetherJoined": {
-    "pt": "Você está dentro",
-    "en": "You're in",
-    "es": "Estás dentro"
+    "pt": "Contar comigo",
+    "en": "Count me in",
+    "es": "Cuenten conmigo"
   },
   "walkTogetherInvite": {
     "pt": "Chamar alguém",
@@ -233,19 +245,28 @@
     "es": "Invitar a alguien"
   },
   "walkTogetherOpen": {
-    "pt": "Abrir a caminhada",
-    "en": "Open the walk",
-    "es": "Abrir la caminata"
+    "pt": "Abrir o calendário",
+    "en": "Open the calendar",
+    "es": "Abrir el calendario"
   },
   "walkTogetherShareText": {
-    "pt": "{name} vai fazer a caminhada {title} no Stway: uma cena por dia, a partir de {start}. Vem junto?\n\nBaixe: {url}",
-    "en": "{name} is doing the {title} walk on Stway: one scene a day, starting {start}. Come along?\n\nDownload: {url}",
-    "es": "{name} hará la caminata {title} en Stway: una escena por día, desde el {start}. ¿Vienes?\n\nDescarga: {url}",
+    "pt": "{name} te chama para a estação {title} no Stway.\n\n{pitch}\nComeça em {start}.\n\nVem junto nesta espera?\n\nAinda não tem o app?\n{url}",
+    "en": "{name} is inviting you to the {title} season on Stway.\n\n{pitch}\nStarts {start}.\n\nCome along?\n\nDon't have the app yet?\n{url}",
+    "es": "{name} te invita a la estación {title} en Stway.\n\n{pitch}\nEmpieza el {start}.\n\n¿Vienes?\n\n¿Aún no tienes la app?\n{url}",
     "placeholders": {
       "name": "String",
       "title": "String",
+      "pitch": "String",
       "start": "String",
       "url": "String"
+    }
+  },
+  "walkTogetherShareSubject": {
+    "pt": "{title} · Stway",
+    "en": "{title} · Stway",
+    "es": "{title} · Stway",
+    "placeholders": {
+      "title": "String"
     }
   },
   "notifWalkStartsTitle": {
@@ -257,9 +278,9 @@
     }
   },
   "notifWalkStartsBody": {
-    "pt": "Dia 1 de {total}: hoje a caravana caminha junto.",
-    "en": "Day 1 of {total}: today the caravan walks together.",
-    "es": "Día 1 de {total}: hoy la caravana camina junta.",
+    "pt": "Dia 1 de {total}: hoje a estação abre para todo mundo.",
+    "en": "Day 1 of {total}: today the season opens for everyone.",
+    "es": "Día 1 de {total}: hoy la estación abre para todos.",
     "placeholders": {
       "total": "int"
     }

@@ -121,6 +121,7 @@ class AppTypography {
         height: height,
         fontStyle: fontStyle,
         letterSpacing: 0,
+        decoration: TextDecoration.none,
       ),
     );
   }
@@ -143,6 +144,7 @@ class AppTypography {
         color: color,
         height: height,
         fontStyle: fontStyle,
+        decoration: TextDecoration.none,
       ),
     );
   }
@@ -189,6 +191,7 @@ class AppTypography {
         color: color,
         height: height,
         letterSpacing: -0.1,
+        decoration: TextDecoration.none,
       ),
     );
   }
@@ -208,6 +211,7 @@ class AppTypography {
         fontWeight: weight,
         color: color,
         height: height,
+        decoration: TextDecoration.none,
       ),
     );
   }
@@ -227,6 +231,7 @@ class AppTypography {
         fontWeight: weight,
         color: color,
         letterSpacing: letterSpacing,
+        decoration: TextDecoration.none,
       ),
     );
   }
@@ -244,6 +249,7 @@ class AppTypography {
         fontWeight: FontWeight.w800,
         color: color,
         letterSpacing: 0.4,
+        decoration: TextDecoration.none,
       ),
     );
   }
