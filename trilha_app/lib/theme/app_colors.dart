@@ -81,7 +81,8 @@ class AppColors {
   static const dropShadow = Color(0x59000000);
 
   /// Véu atrás de sheets e diálogos — o mesmo em todo o app.
-  static const scrim = Color(0x9E000000);
+  /// Opacidade alta: nas telas escuras, ~60% quase não se nota.
+  static const scrim = Color(0xCC000000);
   static const errorSoft = Color(0xFFFFC4CC);
 
   /// Ouro, mint, coral, lilac e o vermelho da curtida — chrome chapado,

@@ -7,6 +7,8 @@ import '../data/question_bank.dart';
 import '../data/entry_trails.dart';
 import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
+import '../services/backend_service.dart';
+import '../services/league_service.dart';
 import '../services/plus_log.dart';
 import '../services/subscription_service.dart';
 import '../utils/plus_access.dart';
@@ -36,6 +38,7 @@ import '../widgets/medal_unlock_sheet.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/mode_emblem.dart';
 import '../widgets/mode_selector.dart';
+import '../widgets/reset_progress_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
 import '../widgets/ui_primitives.dart';
@@ -386,10 +389,22 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                               AppSpace.screen,
                               AppSpace.lg,
                             ),
-                            child: MilestoneChestsCard(
-                              trailSlug: trail.slug,
-                              done: prog.done,
-                              total: prog.total,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                MilestoneChestsCard(
+                                  trailSlug: trail.slug,
+                                  done: prog.done,
+                                  total: prog.total,
+                                ),
+                                const SizedBox(height: AppSpace.lg),
+                                GhostCta(
+                                  label: context.l10n.trailsLeaveCta,
+                                  danger: true,
+                                  expanded: true,
+                                  onTap: () => _confirmLeaveTrail(trail),
+                                ),
+                              ],
                             ),
                           );
                         }
@@ -464,6 +479,24 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> _confirmLeaveTrail(Trail trail) async {
+    final leave = await showLeaveTrailSheet(context);
+    if (!leave || !mounted) return;
+
+    final progress = context.read<ProgressService>();
+    await progress.leaveTrail(
+      trailSlug: trail.slug,
+      missionSlugs: trail.missionSlugs,
+    );
+    if (!mounted) return;
+
+    final backend = context.read<BackendService>();
+    final league = context.read<LeagueService>();
+    await backend.saveNow(progress, LeagueService.weekKey(), league: league);
+    if (!mounted) return;
+    Navigator.pop(context);
   }
 
   Widget? _trailMedalChip(ProgressService progress, Trail trail) {

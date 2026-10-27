@@ -505,6 +505,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
   Future<void> _resolveTomorrowHook(ProgressService progress) async {
     if (_hookResolved && _hook != null) return;
+    final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
     try {
       final catalog = await TrailRepository().getTrails();
       final completed = [
@@ -517,6 +518,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         completed: completed,
         clearedTrailModes: progress.clearedTrailModes,
         justFinishedSlug: widget.missionSlug,
+        plusOpen: plusOpen,
       );
       if (hook == null) {
         if (mounted) setState(() => _hookResolved = true);

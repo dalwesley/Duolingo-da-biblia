@@ -290,6 +290,7 @@ class TomorrowHook {
     required List<String> completed,
     Map<String, List<String>> clearedTrailModes = const {},
     String? justFinishedSlug,
+    bool plusOpen = true,
   }) {
     if (trails.isEmpty) return null;
     final finished = (justFinishedSlug ?? '').trim();
@@ -297,15 +298,23 @@ class TomorrowHook {
 
     // Celebração: o amanhã é a próxima cena DA trilha que acabou —
     // não a primeira trilha "ativa" do catálogo (Ansiedade vinha antes).
+    // Sem Plus, a próxima cena paga não vira promessa de amanhã.
     final homeTrail = finished.isEmpty
         ? null
-        : trails.where((t) => t.missionSlugs.contains(finished)).firstOrNull;
+        : trails
+              .where((t) => t.missionSlugs.contains(finished))
+              .where(
+                (t) =>
+                    plusOpen || !TrailProgress.nextSceneNeedsPlus(t, completed),
+              )
+              .firstOrNull;
     final active =
         homeTrail ??
         TrailProgress.findActiveTrail(
           trails,
           completed,
           clearedTrailModes: clearedTrailModes,
+          plusOpen: plusOpen,
         );
     if (active == null) return null;
 
@@ -333,6 +342,7 @@ class TomorrowHook {
       trails.where((t) => t.slug != active.slug).toList(),
       completed,
       clearedTrailModes: clearedTrailModes,
+      plusOpen: plusOpen,
     );
     if (successor == null) return null;
     final first = TrailProgress.getCurrentMission(successor, completed);

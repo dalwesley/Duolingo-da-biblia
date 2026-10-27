@@ -9347,6 +9347,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String get trailsLearnMore => 'Más información';
 
   @override
+  String get trailsLeaveAwareness =>
+      'Entiendo que perderé el progreso de esta ruta';
+
+  @override
+  String get trailsLeaveBody =>
+      'El progreso en esta ruta se reiniciará — escenas, modos y cofres. Tus pasos y racha se mantienen. No se puede deshacer.';
+
+  @override
+  String get trailsLeaveConfirm => 'Salir';
+
+  @override
+  String get trailsLeaveCta => 'Salir de la ruta';
+
+  @override
+  String get trailsLeaveTitle => '¿Salir de la ruta?';
+
+  @override
   String trailsModeAllSealed(String mode) {
     return '$mode completada · los tres modos de esta ruta están sellados';
   }

@@ -328,13 +328,20 @@ class TrailProgress {
     return null;
   }
 
+  /// Trilha do CTA da Home e da faixa da aba Trilhas. Sem Peregrino+
+  /// ([plusOpen] falso), pula a trilha Plus cuja próxima cena pede o Plus:
+  /// o CTA sempre abre uma cena jogável, nunca o paywall.
   static Trail? findActiveTrail(
     List<Trail> trails,
     List<String> completed, {
     Map<String, List<String>> clearedTrailModes = const {},
+    bool plusOpen = true,
   }) {
+    bool playable(Trail trail) =>
+        plusOpen || !nextSceneNeedsPlus(trail, completed);
     bool open(Trail? trail) =>
         trail != null &&
+        playable(trail) &&
         !trail.comingSoon &&
         trail.missionSlugs.isNotEmpty &&
         isTrailUnlocked(
@@ -368,6 +375,7 @@ class TrailProgress {
     // 3. A ordem do catálogo.
     for (final trail in trails) {
       if (trail.comingSoon || trail.missionSlugs.isEmpty) continue;
+      if (!playable(trail)) continue;
       // Trilhas de um motivo só entram quando são a escolha da pessoa.
       if (EntryTrails.intentOnly.contains(trail.slug) &&
           trail.slug != preferred) {
@@ -389,7 +397,9 @@ class TrailProgress {
         return trail;
       }
     }
-    return trails.where((t) => t.missionSlugs.isNotEmpty).firstOrNull;
+    return trails
+        .where((t) => t.missionSlugs.isNotEmpty && playable(t))
+        .firstOrNull;
   }
 
   /// Trilhas começadas e não terminadas, a mais recente primeiro: a da

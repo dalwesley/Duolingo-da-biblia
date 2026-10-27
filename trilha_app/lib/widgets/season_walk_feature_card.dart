@@ -39,11 +39,24 @@ class _SeasonWalkFeatureCardState extends State<SeasonWalkFeatureCard>
   late final AnimationController _pulse = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 1800),
-  )..repeat(reverse: true);
+  );
   late final Animation<double> _glow = _pulse.drive(
     Tween<double>(begin: 0.4, end: 1).chain(CurveTween(curve: AppMotion.move)),
   );
   bool _pressed = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final reduced = AppMotion.reduced(context);
+    final tickersOn = TickerMode.valuesOf(context).enabled;
+    if (reduced || !tickersOn) {
+      _pulse.stop();
+      _pulse.value = 0.7;
+    } else if (!_pulse.isAnimating) {
+      _pulse.repeat(reverse: true);
+    }
+  }
 
   @override
   void dispose() {

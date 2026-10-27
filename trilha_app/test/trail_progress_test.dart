@@ -619,4 +619,60 @@ void main() {
     );
     expect(withBorrowed.map((t) => t.slug), ['exodo', 'genesis-1-11']);
   });
+
+  test('without Plus the CTA skips a Plus trail past its sample', () {
+    final genesis = contentTrail(slug: 'genesis-12-50', mission: 'g1');
+    final base = contentTrail(
+      slug: 'sermao-do-monte',
+      mission: 's1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final sermon = Trail(
+      slug: base.slug,
+      title: base.title,
+      description: '',
+      icon: base.icon,
+      order: base.order,
+      comingSoon: false,
+      color: base.color,
+      realmId: base.realmId,
+      categoryId: base.categoryId,
+      modules: [
+        TrailModule(
+          title: '',
+          icon: '',
+          missions: [
+            ...base.modules.first.missions,
+            Mission(
+              slug: 's2',
+              title: '',
+              intro: '',
+              type: 'lesson',
+              stepsReward: 50,
+              questions: const [],
+            ),
+          ],
+        ),
+      ],
+    );
+    final all = [sermon, genesis];
+    addTearDown(() => TrailProgress.lastPlayedMissionSlug = null);
+    TrailProgress.lastPlayedMissionSlug = 's1';
+
+    // Com Plus, segue no Sermão.
+    expect(TrailProgress.findActiveTrail(all, ['s1'])?.slug, 'sermao-do-monte');
+    // Sem Plus, a 2ª cena pede o Plus: o CTA vai para a trilha grátis.
+    expect(
+      TrailProgress.findActiveTrail(all, ['s1'], plusOpen: false)?.slug,
+      'genesis-12-50',
+    );
+    // A amostra (1ª cena) continua oferecida sem Plus.
+    TrailProgress.lastPlayedMissionSlug = null;
+    expect(
+      TrailProgress.findActiveTrail(all, [], plusOpen: false)?.slug,
+      'sermao-do-monte',
+    );
+  });
 }

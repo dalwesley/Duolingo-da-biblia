@@ -212,12 +212,13 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       walkedToday: walkedToday,
       returningAfterGap: returningAfterGap,
     );
-    if (mood == HeroCardMood.alive) {
+    if (mood == HeroCardMood.alive && !AppMotion.reduced(context)) {
       if (!_pulseController.isAnimating) {
         _pulseController.repeat(reverse: true);
       }
     } else if (_pulseController.isAnimating) {
       _pulseController.stop();
+      if (mood == HeroCardMood.alive) _pulseController.value = 0.55;
     }
     final style = HeroCardMoodStyle.of(mood, a, atRisk: widget.atRisk);
 
@@ -359,6 +360,18 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               alignment: const Alignment(0, -0.1),
                               gaplessPlayback: true,
                               filterQuality: FilterQuality.medium,
+                              cacheWidth:
+                                  (MediaQuery.sizeOf(context).width *
+                                          MediaQuery.devicePixelRatioOf(
+                                            context,
+                                          ))
+                                      .round(),
+                              cacheHeight:
+                                  (heroHeight *
+                                          MediaQuery.devicePixelRatioOf(
+                                            context,
+                                          ))
+                                      .round(),
                               // Já em cache: aparece direto. Primeira vez:
                               // entra suave sobre o chão escuro.
                               frameBuilder: (context, child, frame, sync) =>

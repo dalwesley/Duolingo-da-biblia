@@ -159,10 +159,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       final progress = context.read<ProgressService>();
       final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
       if (!plusOpen &&
-          TrailProgress.nextSceneNeedsPlus(
-            trail,
-            progress.completedMissions,
-          )) {
+          TrailProgress.nextSceneNeedsPlus(trail, progress.completedMissions)) {
         Navigator.of(context).push(
           MaterialPageRoute<void>(
             builder: (_) => const PaywallScreen(source: 'trail'),
@@ -319,6 +316,9 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                   trails: trails,
                   completed: progress.completedMissions,
                   intentSlug: progress.settings.intent?.entryTrailSlug,
+                  plusOpen: context
+                      .read<SubscriptionService>()
+                      .plusFeaturesOpen,
                   onOpen: (trail) {
                     Navigator.of(sheetContext).pop();
                     Navigator.of(context).push(
@@ -381,10 +381,14 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     }
 
     final trails = _trails!;
+    final plusOpen = tabListens
+        ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
+        : context.read<SubscriptionService>().plusFeaturesOpen;
     final active = TrailProgress.findActiveTrail(
       trails,
       progress.completedMissions,
       clearedTrailModes: progress.clearedTrailModes,
+      plusOpen: plusOpen,
     );
     final current = active == null
         ? null
@@ -976,6 +980,7 @@ class _TrailDoorScreen extends StatelessWidget {
       trails,
       progress.completedMissions,
       clearedTrailModes: progress.clearedTrailModes,
+      plusOpen: context.select((SubscriptionService s) => s.plusFeaturesOpen),
     );
     final activeJourney = active?.journey;
     final shelfCards = () {
@@ -1202,11 +1207,24 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
   late final AnimationController _pulse = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 1800),
-  )..repeat(reverse: true);
+  );
   late final Animation<double> _glow = _pulse.drive(
     Tween<double>(begin: 0.4, end: 1).chain(CurveTween(curve: AppMotion.move)),
   );
   bool _pressed = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final reduced = AppMotion.reduced(context);
+    final tickersOn = TickerMode.valuesOf(context).enabled;
+    if (reduced || !tickersOn) {
+      _pulse.stop();
+      _pulse.value = 0.7;
+    } else if (!_pulse.isAnimating) {
+      _pulse.repeat(reverse: true);
+    }
+  }
 
   @override
   void dispose() {
@@ -1414,11 +1432,15 @@ class _OpenTrailsList extends StatelessWidget {
   /// Trilha do motivo do onboarding — ganha o selo "Seu motivo".
   final String? intentSlug;
 
+  /// Sem Plus, a trilha cuja próxima cena pede o Plus ganha o selo dele.
+  final bool plusOpen;
+
   const _OpenTrailsList({
     required this.trails,
     required this.completed,
     required this.onOpen,
     this.intentSlug,
+    this.plusOpen = true,
   });
 
   @override
@@ -1439,8 +1461,11 @@ class _OpenTrailsList extends StatelessWidget {
   Widget _row(BuildContext context, AppearanceStyle a, Trail trail) {
     final visuals = TrailVisuals.forTrail(trail);
     final p = TrailProgress.getLiveProgress(trail, completed);
+    final plusTag =
+        !plusOpen && TrailProgress.nextSceneNeedsPlus(trail, completed);
     return Semantics(
       button: true,
+      label: plusTag ? context.l10n.paywallTitle : null,
       child: InkWell(
         onTap: () {
           ActHaptics.tap();
@@ -1478,6 +1503,14 @@ class _OpenTrailsList extends StatelessWidget {
                           SoftBadge(
                             text: context.l10n.settingsIntentLabel,
                             accent: visuals.accent,
+                          ),
+                        ],
+                        if (plusTag) ...[
+                          const SizedBox(width: AppSpace.xs),
+                          const CinematicIcon(
+                            glyph: CinematicGlyph.plus,
+                            size: 18,
+                            framed: false,
                           ),
                         ],
                       ],

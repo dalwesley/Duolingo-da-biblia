@@ -322,6 +322,7 @@ class AppTheme {
         onSurface: ink,
         tertiary: AppColors.teal,
         onTertiary: AppColors.textOnDark,
+        scrim: AppColors.scrim,
       ),
       scaffoldBackgroundColor: light
           ? const Color(0xFF6AABDE)
@@ -438,6 +439,10 @@ class AppTheme {
           ),
         ),
         insetPadding: const EdgeInsets.fromLTRB(16, 8, 16, 96),
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+        modalBarrierColor: AppColors.scrim,
+        backgroundColor: Colors.transparent,
       ),
     );
   }

@@ -2201,6 +2201,71 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Abandona a trilha: zera cenas, modos selados, baús e modo gravado.
+  /// Passos e sequência do app permanecem — só o caminho desta trilha some.
+  Future<void> leaveTrail({
+    required String trailSlug,
+    required List<String> missionSlugs,
+  }) async {
+    final drop = missionSlugs.toSet();
+    bool onTrail(String key) {
+      if (drop.contains(key)) return true;
+      final at = key.indexOf('@');
+      return at > 0 && drop.contains(key.substring(0, at));
+    }
+
+    completedMissions = [
+      for (final s in completedMissions)
+        if (!drop.contains(s)) s,
+    ];
+    missionCompletedOn = {
+      for (final e in missionCompletedOn.entries)
+        if (!drop.contains(e.key)) e.key: e.value,
+    };
+    perfectMissions = [
+      for (final s in perfectMissions)
+        if (!drop.contains(s)) s,
+    ];
+    rankedScenes = [
+      for (final s in rankedScenes)
+        if (!onTrail(s)) s,
+    ];
+    borrowedMissions = [
+      for (final s in borrowedMissions)
+        if (!drop.contains(s)) s,
+    ];
+    missionReflections = {
+      for (final e in missionReflections.entries)
+        if (!drop.contains(e.key)) e.key: e.value,
+    };
+
+    final chestIds = {
+      for (final m in TrailMilestone.all) m.chestId(trailSlug),
+    };
+    claimedChests = [
+      for (final id in claimedChests)
+        if (!chestIds.contains(id)) id,
+    ];
+
+    clearedTrailModes = {...clearedTrailModes}..remove(trailSlug);
+    trailDifficulties = {...trailDifficulties}..remove(trailSlug);
+    pinnedTrailDifficulties = {...pinnedTrailDifficulties}..remove(trailSlug);
+    _sessionTrailDifficulties = {..._sessionTrailDifficulties}
+      ..remove(trailSlug);
+    _sessionReplayMissionSlugs = {..._sessionReplayMissionSlugs}
+      ..remove(trailSlug);
+
+    trailAnswerCorrect = {...trailAnswerCorrect}..remove(trailSlug);
+    trailAnswerTotal = {...trailAnswerTotal}..remove(trailSlug);
+
+    if (lastMissionSlug != null && drop.contains(lastMissionSlug)) {
+      lastMissionSlug = null;
+    }
+
+    await _save();
+    notifyListeners();
+  }
+
   /// Troca de modo só enquanto o app estiver aberto.
   /// Fecha o app → volta ao [canonicalDifficultyId]. Não zera o progresso gravado.
   void setSessionTrailDifficulty(

@@ -92,8 +92,10 @@ class SubscriptionService extends ChangeNotifier {
   static const supportOfferingId = 'apoio';
   static const _supportProductPrefix = 'apoio';
 
-  // Preencher ao criar o projeto no dashboard da RevenueCat.
-  static const _apiKeyAndroid = '';
+  // Chaves públicas do RevenueCat (projeto STWAY). O iOS fica vazio até a
+  // conta da Apple ser transferida: sem chave, o Plus abre no iPhone e o
+  // Remote Config `plus_launch_free_until` (condição iOS) mostra o aviso.
+  static const _apiKeyAndroid = 'goog_SaudhoOjsmMDPRRDFJmxoouyUzd';
   static const _apiKeyIos = '';
 
   bool isPeregrinoPlus = false;

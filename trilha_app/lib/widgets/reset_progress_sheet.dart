@@ -30,7 +30,12 @@ Future<bool> showDeleteAccountSheet(
   );
 }
 
-enum _DangerKind { resetProgress, deleteAccount }
+/// Sai da trilha e zera o progresso dela — mesmo ritual (checkbox + contagem).
+Future<bool> showLeaveTrailSheet(BuildContext context) {
+  return _showDangerSheet(context, _DangerKind.leaveTrail);
+}
+
+enum _DangerKind { resetProgress, deleteAccount, leaveTrail }
 
 Future<bool> _showDangerSheet(
   BuildContext context,
@@ -92,10 +97,25 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
     const accent = AppRoles.risk;
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final deletesAccount = widget.kind == _DangerKind.deleteAccount;
-    final awareness = deletesAccount
-        ? l10n.deleteAccountAwareness
-        : l10n.resetAwareness;
+    final kind = widget.kind;
+    final deletesAccount = kind == _DangerKind.deleteAccount;
+    final (title, subtitle, awareness) = switch (kind) {
+      _DangerKind.deleteAccount => (
+        l10n.deleteAccountTitle,
+        l10n.deleteAccountBody,
+        l10n.deleteAccountAwareness,
+      ),
+      _DangerKind.leaveTrail => (
+        l10n.trailsLeaveTitle,
+        l10n.trailsLeaveBody,
+        l10n.trailsLeaveAwareness,
+      ),
+      _DangerKind.resetProgress => (
+        l10n.resetTitle,
+        l10n.resetBody,
+        l10n.resetAwareness,
+      ),
+    };
 
     return AppSheetPanel(
       tint: accent,
@@ -106,8 +126,8 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
           AppSheetHeader(
             center: true,
             leading: const CloudMascot(face: CloudFace.triste, size: 112),
-            title: deletesAccount ? l10n.deleteAccountTitle : l10n.resetTitle,
-            subtitle: deletesAccount ? l10n.deleteAccountBody : l10n.resetBody,
+            title: title,
+            subtitle: subtitle,
           ),
           if (deletesAccount && widget.subscriptionNote) ...[
             const SizedBox(height: AppSpace.md),

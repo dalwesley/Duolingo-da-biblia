@@ -9292,6 +9292,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String get trailsLearnMore => 'Learn more';
 
   @override
+  String get trailsLeaveAwareness =>
+      'I understand I\'ll lose this trail\'s progress';
+
+  @override
+  String get trailsLeaveBody =>
+      'Progress on this trail will be cleared — scenes, modes and chests. Your steps and streak stay. This can\'t be undone.';
+
+  @override
+  String get trailsLeaveConfirm => 'Leave';
+
+  @override
+  String get trailsLeaveCta => 'Leave trail';
+
+  @override
+  String get trailsLeaveTitle => 'Leave this trail?';
+
+  @override
   String trailsModeAllSealed(String mode) {
     return '$mode complete · all three modes of this trail are sealed';
   }

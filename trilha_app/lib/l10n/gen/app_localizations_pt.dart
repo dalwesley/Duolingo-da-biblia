@@ -9324,6 +9324,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trailsLearnMore => 'Saiba mais';
 
   @override
+  String get trailsLeaveAwareness =>
+      'Estou ciente de que vou perder o progresso desta trilha';
+
+  @override
+  String get trailsLeaveBody =>
+      'O progresso nesta trilha será zerado — cenas, modos e baús. Passos e sequência do app permanecem. Não dá para desfazer.';
+
+  @override
+  String get trailsLeaveConfirm => 'Sair';
+
+  @override
+  String get trailsLeaveCta => 'Sair da trilha';
+
+  @override
+  String get trailsLeaveTitle => 'Sair da trilha?';
+
+  @override
   String trailsModeAllSealed(String mode) {
     return '$mode concluída · os três modos desta trilha estão selados';
   }

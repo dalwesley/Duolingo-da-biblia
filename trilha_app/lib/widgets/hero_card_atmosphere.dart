@@ -56,7 +56,6 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
     );
     _coarse = _CoarseClock(_pulse, steps: 156);
     _specs = _buildSpecs(widget.mood);
-    _syncMotion(respectTickerMode: false);
   }
 
   @override
@@ -76,15 +75,17 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
       widget.layer != HeroAtmosphereLayer.back ||
       widget.mood == HeroCardMood.alive;
 
-  void _syncMotion({bool respectTickerMode = true}) {
+  void _syncMotion() {
     // TickerMode do shell já pausa; aqui evitamos restart inútil ao rebuildar.
-    final tickersOn =
-        !respectTickerMode || TickerMode.valuesOf(context).enabled;
-    if (_animated && tickersOn) {
+    // Só chamar após initState (didChangeDependencies / didUpdateWidget):
+    // AppMotion.reduced e TickerMode leem InheritedWidgets.
+    final tickersOn = TickerMode.valuesOf(context).enabled;
+    final reduced = AppMotion.reduced(context);
+    if (_animated && tickersOn && !reduced) {
       if (!_pulse.isAnimating) _pulse.repeat();
     } else {
       _pulse.stop();
-      if (!_animated) _pulse.value = 0;
+      if (!_animated || reduced) _pulse.value = 0;
     }
   }
 

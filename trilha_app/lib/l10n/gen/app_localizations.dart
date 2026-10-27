@@ -14517,6 +14517,36 @@ abstract class AppLocalizations {
   /// **'Saiba mais'**
   String get trailsLearnMore;
 
+  /// No description provided for @trailsLeaveAwareness.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estou ciente de que vou perder o progresso desta trilha'**
+  String get trailsLeaveAwareness;
+
+  /// No description provided for @trailsLeaveBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O progresso nesta trilha será zerado — cenas, modos e baús. Passos e sequência do app permanecem. Não dá para desfazer.'**
+  String get trailsLeaveBody;
+
+  /// No description provided for @trailsLeaveConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair'**
+  String get trailsLeaveConfirm;
+
+  /// Danger CTA at the end of the trail map
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair da trilha'**
+  String get trailsLeaveCta;
+
+  /// No description provided for @trailsLeaveTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair da trilha?'**
+  String get trailsLeaveTitle;
+
   /// No description provided for @trailsModeAllSealed.
   ///
   /// In pt, this message translates to:

@@ -94,6 +94,32 @@
     "es": "Completada",
     "description": "Status of a scene, stage or trail (feminine in pt/es)"
   },
+  "trailsLeaveCta": {
+    "pt": "Sair da trilha",
+    "en": "Leave trail",
+    "es": "Salir de la ruta",
+    "description": "Danger CTA at the end of the trail map"
+  },
+  "trailsLeaveTitle": {
+    "pt": "Sair da trilha?",
+    "en": "Leave this trail?",
+    "es": "¿Salir de la ruta?"
+  },
+  "trailsLeaveBody": {
+    "pt": "O progresso nesta trilha será zerado — cenas, modos e baús. Passos e sequência do app permanecem. Não dá para desfazer.",
+    "en": "Progress on this trail will be cleared — scenes, modes and chests. Your steps and streak stay. This can't be undone.",
+    "es": "El progreso en esta ruta se reiniciará — escenas, modos y cofres. Tus pasos y racha se mantienen. No se puede deshacer."
+  },
+  "trailsLeaveAwareness": {
+    "pt": "Estou ciente de que vou perder o progresso desta trilha",
+    "en": "I understand I'll lose this trail's progress",
+    "es": "Entiendo que perderé el progreso de esta ruta"
+  },
+  "trailsLeaveConfirm": {
+    "pt": "Sair",
+    "en": "Leave",
+    "es": "Salir"
+  },
   "trailsDoneOfTotal": {
     "pt": "{done} de {total}",
     "en": "{done} of {total}",

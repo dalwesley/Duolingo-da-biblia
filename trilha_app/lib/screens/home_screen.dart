@@ -123,10 +123,12 @@ class _HomeScreenState extends State<HomeScreen>
       } else {
         _offlineDialogShown = false;
         final progress = context.read<ProgressService>();
+        final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
         final hook = TomorrowHook.resolve(
           trails: trails,
           completed: progress.completedMissions,
           clearedTrailModes: progress.clearedTrailModes,
+          plusOpen: plusOpen,
         );
         if (hook != null) {
           unawaited(() async {
@@ -141,6 +143,7 @@ class _HomeScreenState extends State<HomeScreen>
             trails,
             progress.completedMissions,
             clearedTrailModes: progress.clearedTrailModes,
+            plusOpen: plusOpen,
           );
           if (active != null) {
             unawaited(
@@ -621,9 +624,37 @@ class _HomeScreenState extends State<HomeScreen>
 
   Widget _buildHome(BuildContext context) {
     final listen = tabListens;
-    final progress = listen
-        ? context.watch<ProgressService>()
-        : context.read<ProgressService>();
+    final progress = context.read<ProgressService>();
+    // Assina só o que muda o layout da Home. Header/hero/banners fazem
+    // select próprio — sync de streak/cloud não reconstrói a ListView.
+    if (listen) {
+      context.select(
+        (ProgressService p) => (
+          completedLen: p.completedMissions.length,
+          completedTail: p.completedMissions.isEmpty
+              ? ''
+              : p.completedMissions.last,
+          clearedSig: Object.hashAll(
+            p.clearedTrailModes.entries.map(
+              (e) => Object.hash(e.key, e.value.length),
+            ),
+          ),
+          goalMet: p.dailyGoalMet,
+          atRisk: p.isStreakAtRisk,
+          streakRepair: p.showStreakRepairOffer,
+          pendingFirst: p.pendingOpenFirstScene,
+          comeback: p.shouldShowComeback,
+          notif: p.notificationsPrompted,
+          chest: p.dailyChestAvailable,
+          weeklyReview: p.weeklyReviewReady,
+          reviewDoneToday: p.isReviewDoneToday,
+          mistakes: p.mistakeQuestionIds.length,
+          missionsToday: p.missionsToday,
+          walkedToday: p.walkedToday,
+          seasonWalk: SeasonWalkFeatureCard.visible(p),
+        ),
+      );
+    }
 
     if (_trails == null) {
       return const _HomeSkeleton();
@@ -637,10 +668,15 @@ class _HomeScreenState extends State<HomeScreen>
     }
 
     final trails = _trails!;
+    // Sem Plus, o herói não oferece cena que abre o paywall.
+    final plusOpen = listen
+        ? context.select((SubscriptionService s) => s.plusFeaturesOpen)
+        : context.read<SubscriptionService>().plusFeaturesOpen;
     final active = TrailProgress.findActiveTrail(
       trails,
       progress.completedMissions,
       clearedTrailModes: progress.clearedTrailModes,
+      plusOpen: plusOpen,
     );
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)
@@ -657,15 +693,15 @@ class _HomeScreenState extends State<HomeScreen>
     }
 
     final nudge = listen
-        ? context.watch<CompanionService>().incomingNudge
+        ? context.select((CompanionService c) => c.incomingNudge)
         : context.read<CompanionService>().incomingNudge;
     final challengeOn = listen
-        ? context.watch<RemoteConfigService>().challengeEnabled
+        ? context.select((RemoteConfigService r) => r.challengeEnabled)
         : context.read<RemoteConfigService>().challengeEnabled;
     final cornerFace = !challengeOn
         ? null
         : listen
-        ? context.watch<CornerService>().face
+        ? context.select((CornerService c) => c.face)
         : context.read<CornerService>().face;
     // Fundo = céu do shell. A pintura da trilha vive só no card herói
     // (com gelo/poeira por cima).
@@ -734,10 +770,7 @@ class _HomeScreenState extends State<HomeScreen>
                       ),
                       if (SeasonWalkFeatureCard.visible(progress)) ...[
                         const SizedBox(height: AppSpace.section),
-                        _reveal(
-                          2,
-                          const SeasonWalkFeatureCard(),
-                        ),
+                        _reveal(2, const SeasonWalkFeatureCard()),
                       ],
                       if (cornerFace != null) ...[
                         const SizedBox(height: AppSpace.section),

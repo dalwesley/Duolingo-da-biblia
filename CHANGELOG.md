@@ -9,6 +9,31 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.39] — 2026-10-27
+
+### Added
+- `quiz_layout_smoke_test`: os 6 gestos (aberto/certo/errado), o retorno e o Bônus em tela pequena, Redmi e texto 140% — falha em qualquer erro de layout
+
+### Changed
+- **CTA sem Peregrino+ nunca abre o paywall**: Home, faixa da aba Trilhas e o “amanhã” da celebração pulam a trilha Plus cuja próxima cena pede assinatura (a amostra segue oferecida)
+
+### Fixed
+- **Tela “Hoje” vazia no fim da cena**: com fatos (banco V3), a placa do insight esticava dentro da rolagem e o layout quebrava — em release sumiam frase, fatos e versículo; agora usa `StagePlate` direto
+
+## [1.0.38] — 2026-10-27
+
+### Added
+- **Sair da trilha**: CTA no fim do mapa zera cenas, modos e baús daquela trilha (passos e sequência do app ficam); sheet com checkbox e contagem, pt/en/es
+
+### Changed
+- Peregrino+: chave pública Android do RevenueCat no app (compras no teste interno da Play)
+- Home: assina só o que muda o layout — sync de streak/nuvem não reconstrói a lista inteira
+- Imagens do herói e do fundo da marca com `cacheWidth`/`cacheHeight` na resolução da tela
+- Scrim de sheets e diálogos mais escuro (e alinhado no tema Material)
+
+### Fixed
+- Animações do herói, strip “agora” e card de temporada respeitam redução de movimento e `TickerMode`
+
 ## [1.0.37] — 2026-10-26
 
 ### Added

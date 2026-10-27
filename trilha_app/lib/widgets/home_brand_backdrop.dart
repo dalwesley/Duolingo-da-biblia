@@ -86,12 +86,16 @@ class _PaperArt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final morning = look == AppearanceLook.morning;
+    final dpr = MediaQuery.devicePixelRatioOf(context);
+    final size = MediaQuery.sizeOf(context);
     Widget art = Image.asset(
       morning ? HomeBrandBackdrop.lightAsset : HomeBrandBackdrop.neutralAsset,
       fit: BoxFit.cover,
       alignment: Alignment.bottomCenter,
       gaplessPlayback: true,
       filterQuality: FilterQuality.medium,
+      cacheWidth: (size.width * dpr).round(),
+      cacheHeight: (size.height * dpr).round(),
     );
     if (!morning) art = ColorFiltered(colorFilter: _afternoon, child: art);
 

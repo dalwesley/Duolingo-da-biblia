@@ -1899,9 +1899,13 @@ class _InsightPanel extends StatefulWidget {
 class _InsightPanelState extends State<_InsightPanel> {
   int? _active;
 
+  /// Placa direta: a [_WitnessPlate] estica com Expanded e, dentro da
+  /// rolagem dos fatos (altura sem limite), quebrava o layout e a tela
+  /// ficava vazia.
   Widget _insightPlate() {
-    return _WitnessPlate(
+    return StagePlate(
       accent: widget.accent,
+      tint: true,
       child: Text(
         widget.text,
         textAlign: TextAlign.center,
